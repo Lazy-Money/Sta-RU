@@ -325,10 +325,19 @@ def time_fit(audio: np.ndarray, sr: int, target_duration: float) -> tuple[np.nda
 
 
 def _generate_tts_raw(
-    subs: list, tts: TTS, lang: str, ref_path: Path, seg_dir: Path
+    subs: list, tts: TTS, lang: str, ref_path: Path, seg_dir: Path,
+    hq_mode: bool = False,
 ) -> list[tuple[np.ndarray, int] | None]:
-    """Generate TTS per segment at natural speed (no time-fit)."""
-    print("  Generating TTS...", flush=True)
+    """Generate TTS per segment at natural speed (no time-fit).
+    hq_mode enables beam search + lower temperature for higher quality (slower)."""
+    tts_kwargs: dict = {}
+    if hq_mode:
+        tts_kwargs = {
+            "temperature": 0.6,
+            "num_beams": 3,
+            "repetition_penalty": 10.0,
+        }
+    print(f"  Generating TTS{' (HQ mode)' if hq_mode else ''}...", flush=True)
     raw: list[tuple[np.ndarray, int] | None] = []
     for i, sub in enumerate(subs):
         text = sub.content.strip()
@@ -343,6 +352,7 @@ def _generate_tts_raw(
                 speaker_wav=str(ref_path),
                 language=lang,
                 split_sentences=False,
+                **tts_kwargs,
             )
             audio, sr_seg = sf.read(seg_path)
             raw.append((audio, sr_seg))
@@ -575,6 +585,8 @@ def dub_one(
     output_path: Path,
     remove_voice: bool,
     dynamic_duration: bool = True,
+    hq_mode: bool = False,
+    custom_voice_ref: Path | None = None,
 ) -> None:
     work_dir.mkdir(parents=True, exist_ok=True)
     seg_dir = work_dir / "segments"
@@ -582,7 +594,12 @@ def dub_one(
 
     # 1. Parse SRT
     subs = list(srt.parse(item.srt_path.read_text(encoding="utf-8")))
-    print(f"  SRT: {len(subs)} segments  |  mode: {'dynamic-duration' if dynamic_duration else 'classic'}")
+    mode_tags = ["dynamic-duration" if dynamic_duration else "classic"]
+    if hq_mode:
+        mode_tags.append("HQ")
+    if custom_voice_ref:
+        mode_tags.append("custom-ref")
+    print(f"  SRT: {len(subs)} segments  |  mode: {' + '.join(mode_tags)}")
 
     # 2. Download video
     video_path = work_dir / "video.mp4"
@@ -594,10 +611,23 @@ def dub_one(
     orig_audio = work_dir / "orig.wav"
     extract_audio(video_path, orig_audio)
 
-    # 4. Voice reference (always from voiced audio, pre-demucs)
+    # 4. Voice reference: custom uploaded sample if provided, else extract from video
     ref_path = work_dir / "ref.wav"
-    ref_s, ref_e = extract_voice_ref(orig_audio, subs, ref_path)
-    print(f"  Voice ref: {ref_s:.1f}-{ref_e:.1f}s")
+    if custom_voice_ref is not None and Path(custom_voice_ref).exists():
+        # Normalize the external sample to mono 24kHz so it matches the model's sr
+        subprocess.run(
+            [
+                "ffmpeg", "-y", "-loglevel", "error",
+                "-i", str(custom_voice_ref),
+                "-ac", "1", "-ar", str(SAMPLE_RATE), str(ref_path),
+            ],
+            check=True,
+        )
+        amb_meta = sf.info(ref_path)
+        print(f"  Voice ref (custom): {custom_voice_ref.name} ({amb_meta.duration:.1f}s)")
+    else:
+        ref_s, ref_e = extract_voice_ref(orig_audio, subs, ref_path)
+        print(f"  Voice ref (from video): {ref_s:.1f}-{ref_e:.1f}s")
 
     # 5. Optional: vocal removal for ambient bed
     ambient_path: Path | None = None
@@ -608,7 +638,7 @@ def dub_one(
             ambient_path = stripped
 
     # 6. Generate TTS at natural speed
-    raw_tts = _generate_tts_raw(subs, tts, lang, ref_path, seg_dir)
+    raw_tts = _generate_tts_raw(subs, tts, lang, ref_path, seg_dir, hq_mode=hq_mode)
     if not any(r is not None for r in raw_tts):
         raise RuntimeError("No TTS generated for any segment")
     sr_master = next(r[1] for r in raw_tts if r is not None)
@@ -665,6 +695,8 @@ def run_batch(
     range_expr: str = "all",
     work_root: str | Path = "/tmp/sta-ru-work",
     dynamic_duration: bool = True,
+    hq_mode: bool = False,
+    custom_voice_ref: str | Path | None = None,
 ) -> list[VideoItem]:
     """Main entry point. Returns the items list with final statuses."""
     lang_lc = lang.lower()
@@ -741,6 +773,8 @@ def run_batch(
                 output_path=it.output_path,
                 remove_voice=remove_voice,
                 dynamic_duration=dynamic_duration,
+                hq_mode=hq_mode,
+                custom_voice_ref=Path(custom_voice_ref) if custom_voice_ref else None,
             )
             it.status = "done"
             print(f"  Elapsed: {time.time() - t0:.1f}s")
@@ -772,6 +806,10 @@ def _cli() -> None:
     ap.add_argument("--no-remove-voice", action="store_true", help="Skip Demucs vocal removal")
     ap.add_argument("--no-dynamic-duration", action="store_true",
                     help="Disable dynamic duration (stretches video to fit dubbed audio); falls back to classic time-fit on audio")
+    ap.add_argument("--hq", action="store_true",
+                    help="High-quality TTS mode: beam search + low temperature (~3x slower, better dubbing)")
+    ap.add_argument("--voice-ref", type=str, default=None,
+                    help="Optional .wav with a clean voice sample to clone from (replaces auto-extraction from video)")
     ap.add_argument("--range", dest="range_expr", default="all", help="e.g. 'all', '1-10', '47', '1-5,12'")
     ap.add_argument("--work-root", default="/tmp/sta-ru-work")
     args = ap.parse_args()
@@ -786,6 +824,8 @@ def _cli() -> None:
         range_expr=args.range_expr,
         work_root=args.work_root,
         dynamic_duration=not args.no_dynamic_duration,
+        hq_mode=args.hq,
+        custom_voice_ref=args.voice_ref,
     )
 
 
