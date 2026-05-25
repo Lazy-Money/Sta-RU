@@ -1,0 +1,135 @@
+1
+00:00:01,040 --> 00:00:04,500
+Let's test our coil, so to speak, for fitness for duty.
+
+2
+00:00:05,680 --> 00:00:11,740
+So, we have a digital signal generator, an oscilloscope, and an ammeter.
+
+3
+00:00:12,640 --> 00:00:25,820
+For the DC ammeter to register the high-frequency AC signal, we put in a fast diode, we'll cut off one half-cycle.
+
+4
+00:00:26,700 --> 00:00:31,560
+We can't count on accuracy, so we'll track by divisions.
+
+5
+00:00:32,940 --> 00:00:33,960
+So, let's watch.
+
+6
+00:00:35,500 --> 00:00:45,280
+This system of ours is not a step-down transformer, since the number of turns and wire here is more than on the inductor.
+
+7
+00:00:46,080 --> 00:00:54,940
+Accordingly, we send a half-volt amplitude sine wave signal from the signal generator.
+
+8
+00:00:56,320 --> 00:01:01,160
+This is the blue trace, yellow, accordingly, on the grenade.
+
+9
+00:01:02,380 --> 00:01:06,140
+On these capacitors here, the ones in parallel.
+
+10
+00:01:07,560 --> 00:01:11,260
+It turns out we see that our voltage amplitude is higher.
+
+11
+00:01:11,540 --> 00:01:12,240
+Everything's normal.
+
+12
+00:01:14,200 --> 00:01:16,040
+The transformer is not step-down.
+
+13
+00:01:16,040 --> 00:01:20,420
+So, now we measure the current that the signal generator delivers.
+
+14
+00:01:22,500 --> 00:01:29,200
+We connect our ammeter, disconnect.
+
+15
+00:01:29,400 --> 00:01:32,220
+There, the signal probe from the generator went to the ammeter.
+
+16
+00:01:33,080 --> 00:01:40,620
+We see the current matches 13 divisions.
+
+17
+00:01:42,160 --> 00:01:48,000
+OK, now we measure the current that will be in the same mode on the grenade.
+
+18
+00:01:49,040 --> 00:02:01,480
+We hook up to the output of the grenade, put the signal probe in place and lock it in.
+
+19
+00:02:03,020 --> 00:02:10,760
+The current at the grenade output is 21 divisions for us.
+
+20
+00:02:15,520 --> 00:02:17,200
+The picture is the same.
+
+21
+00:02:18,180 --> 00:02:27,780
+Which means we're recording the moment when the current at the output of this coil exceeds the input current.
+
+22
+00:02:27,880 --> 00:02:31,300
+And on top of that we have a voltage gain.
+
+23
+00:02:31,920 --> 00:02:36,280
+Now the tuning accuracy.
+
+24
+00:02:36,660 --> 00:02:38,600
+Why do many people miss?
+
+25
+00:02:39,120 --> 00:02:40,400
+Here's our frequency.
+
+26
+00:02:41,420 --> 00:02:46,300
+For example, let's nudge it, say, 300 Hz.
+
+27
+00:02:47,320 --> 00:02:52,820
+We see our current has already dropped, and the amplitude there is falling.
+
+28
+00:02:53,500 --> 00:03:07,280
+Let's nudge the frequency a bit more and we see, there goes the voltage gain, and the current is much less than what's coming from the generator.
+
+29
+00:03:07,840 --> 00:03:10,080
+That's why the tuning has to be precise.
+
+30
+00:03:14,180 --> 00:03:17,320
+The same thing happens if we add frequency.
+
+31
+00:03:18,280 --> 00:03:19,620
+For example, we'll overshoot.
+
+32
+00:03:28,300 --> 00:03:29,700
+The current is also small.
+
+33
+00:03:31,180 --> 00:03:38,620
+Let's return the frequency to the one we need, the one this coil will operate at.
+
+34
+00:03:39,420 --> 00:03:48,100
+And we'll see that the trace divisions are the same, the voltage gain is also there.

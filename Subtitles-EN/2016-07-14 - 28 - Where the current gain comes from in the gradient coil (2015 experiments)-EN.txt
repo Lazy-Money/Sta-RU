@@ -1,0 +1,371 @@
+1
+00:00:01,230 --> 00:00:16,690
+So, in this experiment we have the same coil that was shown in the first video, only now we've tinkered with it a bit, rewound the inductor and added a couple of things.
+
+2
+00:00:18,870 --> 00:00:33,550
+We have a milliammeter, but in this case its readings won't be correct, we'll just use it to indicate current by the division scale.
+
+3
+00:00:34,490 --> 00:00:50,790
+For this DC milliammeter to respond to AC current, with this fast diode here we'll cut off one half-cycle and direct the current in one direction.
+
+4
+00:00:53,210 --> 00:00:59,610
+We're also using a digital signal generator and a digital oscilloscope.
+
+5
+00:01:00,470 --> 00:01:08,370
+Here we see the signal generator is currently outputting half a volt, peak-to-peak amplitude.
+
+6
+00:01:08,770 --> 00:01:16,570
+It outputs from these probe ends, and it goes to the coil's inductor.
+
+7
+00:01:17,110 --> 00:01:33,130
+At the output we see an amplitude of around 440-400 mV, that is, practically the same.
+
+8
+00:01:34,930 --> 00:01:41,550
+We confirm that this kind of coil is not a step-down transformer.
+
+9
+00:01:43,610 --> 00:01:48,990
+Here the inductor is half the wire length of what's wound here.
+
+10
+00:01:49,670 --> 00:01:57,210
+So it turns out, in addition, here it should have, accordingly, fewer turns here, more on the primary coil.
+
+11
+00:01:57,370 --> 00:02:02,270
+In theory we should get a step-up transformer, but that doesn't happen.
+
+12
+00:02:04,270 --> 00:02:05,250
+Let's keep watching.
+
+13
+00:02:06,310 --> 00:02:18,990
+We measure the current in divisions using our milliammeter, which the generator is now feeding directly.
+
+14
+00:02:19,190 --> 00:02:35,290
+For this we disconnect the probe from the generator and attach the clip to it, which will go to the ammeter.
+
+15
+00:02:38,670 --> 00:02:40,070
+Hooked up.
+
+16
+00:02:40,070 --> 00:02:43,210
+We lock in the readings.
+
+17
+00:02:46,230 --> 00:02:50,230
+Right now we have 14 divisions,
+
+18
+00:02:53,710 --> 00:03:04,550
+accordingly, 14 divisions of current at half-volt amplitude.
+
+19
+00:03:07,930 --> 00:03:13,890
+We return the signal generator back to the inductor.
+
+20
+00:03:15,170 --> 00:03:16,370
+Hooking it up.
+
+21
+00:03:30,050 --> 00:03:31,130
+Hooked up.
+
+22
+00:03:31,250 --> 00:03:34,130
+There, we see the output amplitude is back.
+
+23
+00:03:34,890 --> 00:03:44,570
+We take the amplitude from the bank of capacitors that's connected through the slider to the secondary coil's output.
+
+24
+00:03:45,730 --> 00:03:54,510
+Now we move our milliammeter to the output in short-circuit mode.
+
+25
+00:03:54,690 --> 00:04:00,610
+We attach one probe, attach the other.
+
+26
+00:04:02,830 --> 00:04:15,350
+And we see the current readings match 23.5, a tiny bit more than the division.
+
+27
+00:04:17,390 --> 00:04:19,370
+Why is this happening?
+
+28
+00:04:20,390 --> 00:04:22,470
+What kind of tuning is this?
+
+29
+00:04:23,070 --> 00:04:28,070
+Why is the coil giving more than what's being sent to it?
+
+30
+00:04:29,230 --> 00:04:38,510
+I repeat, we're taking readings using a sine wave, so there's no debate about whether there are signals with steep edges here.
+
+31
+00:04:39,510 --> 00:04:41,670
+You could of course do it with this too.
+
+32
+00:04:41,750 --> 00:04:44,970
+Let's switch to a square wave, for example.
+
+33
+00:04:46,130 --> 00:04:58,010
+We see the current has gone up even more, from which we'll understand that this coil will be driven by a steep-edged signal.
+
+34
+00:04:59,030 --> 00:05:00,930
+Switching back to sine.
+
+35
+00:05:03,910 --> 00:05:19,670
+So what is it that we did here that made the output current in short-circuit mode exceed the current supplied by the generator, while the output voltage practically matches the voltage supplied by the generator?
+
+36
+00:05:23,410 --> 00:05:24,530
+The answer is this.
+
+37
+00:05:24,670 --> 00:05:44,710
+We synchronized this coil of ours, through geometric proportions, wire cross-sections, wire lengths, with the natural vibrations that exist in our space.
+
+38
+00:05:45,670 --> 00:05:47,570
+At this frequency.
+
+39
+00:05:48,850 --> 00:05:57,110
+You don't need to memorize this frequency, for each region it'll be individual, and specifically for each coil.
+
+40
+00:05:58,230 --> 00:06:04,310
+For that, these frequencies are searched out and specifically tuned, and coils are built for them.
+
+41
+00:06:05,670 --> 00:06:08,130
+So now we'll show what's happening for us.
+
+42
+00:06:08,270 --> 00:06:10,770
+This is the carrier signal at this frequency.
+
+43
+00:06:12,090 --> 00:06:15,710
+We zoom out the trace per division.
+
+44
+00:06:16,370 --> 00:06:19,610
+Right here it says "time" for us.
+
+45
+00:06:21,470 --> 00:06:23,050
+Compressing the trace.
+
+46
+00:06:24,410 --> 00:06:28,090
+We see a low-frequency component appearing in our spectrum.
+
+47
+00:06:28,090 --> 00:06:30,150
+Next.
+
+48
+00:06:32,810 --> 00:06:38,010
+Here we can lock in the amplitude modulation.
+
+49
+00:06:38,750 --> 00:06:55,850
+And this means that this coil is being synchronized with an external frequency, which amplitude-modulates its oscillations initiated by our signal generator.
+
+50
+00:06:55,890 --> 00:06:59,450
+We can take a closer look at what this is.
+
+51
+00:07:04,580 --> 00:07:08,360
+This is this type of traveling wave.
+
+52
+00:07:09,260 --> 00:07:11,040
+This is the first synchronization.
+
+53
+00:07:12,940 --> 00:07:15,060
+Next we zoom out the trace further.
+
+54
+00:07:17,280 --> 00:07:20,360
+Here we have a trace of half a second per division.
+
+55
+00:07:25,970 --> 00:07:27,950
+Here, half a second per division.
+
+56
+00:07:31,090 --> 00:07:33,210
+We extend the trace.
+
+57
+00:07:34,410 --> 00:07:37,170
+Up to two seconds per division.
+
+58
+00:07:40,240 --> 00:07:46,000
+Now the device will reconfigure for low-frequency signals.
+
+59
+00:07:47,580 --> 00:07:50,980
+And we see the next synchronization moment.
+
+60
+00:07:52,760 --> 00:08:00,540
+This is the low-frequency component of space in this region where I live.
+
+61
+00:08:02,020 --> 00:08:09,080
+Now we'll determine the frequency of space.
+
+62
+00:08:10,740 --> 00:08:16,540
+We press pause and
+
+63
+00:08:20,310 --> 00:08:25,810
+switch the device to cursor change mode.
+
+64
+00:08:28,310 --> 00:08:29,690
+Manual.
+
+65
+00:08:30,250 --> 00:08:32,390
+We see two markers have appeared.
+
+66
+00:08:42,330 --> 00:08:47,430
+We move cursor A to the middle of the wave.
+
+67
+00:08:48,430 --> 00:08:53,210
+We move cursor B also to the middle of the wave.
+
+68
+00:08:55,390 --> 00:08:58,590
+This way we'll be determining the period of the oscillation.
+
+69
+00:08:59,990 --> 00:09:00,630
+Let's see.
+
+70
+00:09:00,630 --> 00:09:10,870
+The frequency is 235.8 MHz.
+
+71
+00:09:12,110 --> 00:09:17,670
+That is, the frequency of these oscillations is 0.23 Hz.
+
+72
+00:09:19,410 --> 00:09:24,350
+This coil synchronized with this frequency.
+
+73
+00:09:25,830 --> 00:09:28,650
+Without synchronization, a gain is impossible.
+
+74
+00:09:30,350 --> 00:09:38,050
+The coil cannot take energy from the generator, accordingly it cannot add more.
+
+75
+00:09:38,130 --> 00:09:40,990
+But we're recording a larger current.
+
+76
+00:09:42,150 --> 00:09:48,050
+So what'll happen if we reset our tuning.
+
+77
+00:09:50,270 --> 00:09:53,170
+Now we'll return our signal.
+
+78
+00:09:58,210 --> 00:10:09,830
+We brought back our signal and, say, with the generator we switch it to frequency mode and start detuning.
+
+79
+00:10:13,340 --> 00:10:15,280
+Now we'll bring back what was.
+
+80
+00:10:18,820 --> 00:10:30,680
+We brought back our 23.5 division and, for example, let's nudge by 300 Hz.
+
+81
+00:10:32,380 --> 00:10:34,200
+We see, the current dropped.
+
+82
+00:10:36,610 --> 00:10:39,000
+Let's nudge the frequency lower still.
+
+83
+00:10:42,160 --> 00:10:45,020
+We see, there's practically no current.
+
+84
+00:10:48,660 --> 00:10:57,520
+We can move higher or lower from our tuning and we see that there's no current.
+
+85
+00:10:59,320 --> 00:11:09,100
+But now, if let's say at this frequency we hook up our ammeter, we'll be recording a larger current.
+
+86
+00:11:09,720 --> 00:11:16,940
+In particular, we see that the tuning has slipped and the voltage amplitude on the output coil has also dropped.
+
+87
+00:11:18,100 --> 00:11:23,780
+Now we'll switch the ammeter to the signal generator.
+
+88
+00:11:24,980 --> 00:11:26,080
+Switching.
+
+89
+00:11:27,440 --> 00:11:34,280
+We see that
+
+90
+00:11:38,810 --> 00:11:49,410
+the current readings from the signal generator have stayed unchanged.
+
+91
+00:11:49,910 --> 00:11:58,050
+The same 14 divisions, but with the frequency slipping, as we saw, the current in the system dropped significantly.
+
+92
+00:11:59,290 --> 00:12:07,450
+These capacitors with respect to the output coil's inductance are not resonant.
+
+93
+00:12:11,430 --> 00:12:31,130
+And this is the type of tuning that needs to be done for this system to start giving more than what we pump into it with this low-voltage drive, the push-pull-type generator.
