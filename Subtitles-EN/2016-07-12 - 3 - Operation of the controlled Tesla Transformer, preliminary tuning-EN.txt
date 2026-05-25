@@ -1,0 +1,131 @@
+1
+00:00:07,110 --> 00:00:17,530
+Now we're going to look at this — it's the generator controlling the power switch of the Tesla transformer, the controlled one, this thing here.
+
+2
+00:00:19,270 --> 00:00:22,770
+The oscilloscope probe is on the gate of the transistor.
+
+3
+00:00:24,630 --> 00:00:30,750
+Here we can see the bursts of pulses coming in, let's expand the view now.
+
+4
+00:00:34,580 --> 00:00:46,180
+We're using 4 pulses per burst, duty cycle 40%, 4 pulses is enough to ramp up the system.
+
+5
+00:00:48,340 --> 00:01:13,360
+Next, the ammeter will track the consumption current, we move the probe to the antenna, we'll bring the voltage up a bit, and we apply power.
+
+6
+00:01:13,440 --> 00:01:23,160
+Power from the inverter, under the insulator so it doesn't short out the ammeter, 12-volt power.
+
+7
+00:01:24,420 --> 00:01:28,620
+This is the power inverter, that is...
+
+8
+00:01:30,240 --> 00:01:35,180
+Right now it's 130 volts, fed to this power switch here.
+
+9
+00:01:35,800 --> 00:01:47,440
+The schematic — we have the power switch, the Schottky diode, the current-limiting resistors, and this output here goes to the inductor.
+
+10
+00:01:48,980 --> 00:01:50,460
+We apply power.
+
+11
+00:01:55,720 --> 00:02:02,180
+Here we see that in this mode it's consuming almost 1 amp, that is...
+
+12
+00:02:02,600 --> 00:02:05,160
+12 watts.
+
+13
+00:02:05,520 --> 00:02:07,960
+Let's see what's going on here.
+
+14
+00:02:09,580 --> 00:02:13,900
+And here we have signals like this.
+
+15
+00:02:17,440 --> 00:02:20,440
+Like this, that's how the bursts of pulses come.
+
+16
+00:02:21,040 --> 00:02:33,260
+Now we can expand this signal, and we see this retina-shaped signal here.
+
+17
+00:02:35,980 --> 00:02:38,760
+We can lock it in.
+
+18
+00:02:39,620 --> 00:02:43,300
+That's how it ramps up with just 4 pulses.
+
+19
+00:02:46,640 --> 00:02:49,420
+The system came out good, balanced.
+
+20
+00:02:51,140 --> 00:02:58,140
+The lamps are lit, it's sparking nicely on the screwdriver.
+
+21
+00:03:07,890 --> 00:03:11,390
+Looking good, the neon bulbs are lit too, but basically standard.
+
+22
+00:03:16,710 --> 00:03:20,270
+Expand it, and we see a sine wave here.
+
+23
+00:03:21,970 --> 00:03:24,570
+Just 4 ramping-up oscillations.
+
+24
+00:03:24,730 --> 00:03:33,590
+Well, we saw this same thing with Ruslan, he showed us this kind of retina-shaped signal.
+
+25
+00:03:38,150 --> 00:03:42,970
+It's assumed that this isn't the working mode.
+
+26
+00:03:44,250 --> 00:03:48,990
+This is just a balanced tuning of the system at the moment.
+
+27
+00:03:49,110 --> 00:03:53,170
+That is, here we see a counter transformer on ferrite.
+
+28
+00:03:54,110 --> 00:04:09,730
+Apparently this ferrite isn't living up to its parameters, the ones it should have to give us any kind of pulse signal on the antenna.
+
+29
+00:04:10,510 --> 00:04:12,610
+We'll be changing it, trying different ones.
+
+30
+00:04:12,950 --> 00:04:16,170
+Let's see what happens next.
+
+31
+00:04:18,010 --> 00:04:26,150
+Here the system adjusts frequency and the duty cycle of the signal, of those four pulses.
+
+32
+00:04:26,510 --> 00:04:34,150
+And here, the system adjusts the length of the burst and where the burst lands.
+
+33
+00:04:34,410 --> 00:04:35,490
+All standard.
