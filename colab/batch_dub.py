@@ -160,19 +160,18 @@ def build_items(urls: list[str], translate_titles: bool, target_lang: str) -> li
 
 
 def _translate_titles_inplace(items: list[VideoItem], target_lang: str) -> None:
-    """Translate each item.title → item.title_translated using googletrans."""
+    """Translate each item.title → item.title_translated using deep-translator."""
     try:
-        from googletrans import Translator
+        from deep_translator import GoogleTranslator
     except ImportError:
-        print("[WARN] googletrans not installed; titles will not be translated")
+        print("[WARN] deep-translator not installed; titles will not be translated")
         return
-    tr = Translator()
+    translator = GoogleTranslator(source="auto", target=target_lang)
     for it in items:
         if not it.title:
             continue
         try:
-            r = tr.translate(it.title, dest=target_lang)
-            it.title_translated = (r.text or "").strip()
+            it.title_translated = (translator.translate(it.title) or "").strip()
         except Exception as e:
             print(f"[WARN] N#{it.n}: title translation failed ({e})")
 
