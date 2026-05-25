@@ -1,0 +1,2011 @@
+1
+00:00:00,830 --> 00:00:02,210
+Greetings everyone.
+
+2
+00:00:02,850 --> 00:00:04,230
+Free day came up.
+
+3
+00:00:05,010 --> 00:00:06,690
+Filming February 23.
+
+4
+00:00:06,990 --> 00:00:08,390
+Happy holiday to all the men.
+
+5
+00:00:09,870 --> 00:00:19,610
+So, before you is the schematic of improved version of pulse amplifier for signal generator.
+
+6
+00:00:20,070 --> 00:00:23,390
+My previous schematic shown here.
+
+7
+00:00:24,090 --> 00:00:26,010
+Video on it also on my channel.
+
+8
+00:00:27,910 --> 00:00:30,650
+Why I decided to improve this schematic?
+
+9
+00:00:31,410 --> 00:00:36,870
+The thing is, schematic itself is very interesting and helps in work.
+
+10
+00:00:36,990 --> 00:00:46,210
+But it has common point with inductor that drives coil.
+
+11
+00:00:47,550 --> 00:00:55,890
+If this coil in grenade form, then nothing scary and everything's normal.
+
+12
+00:00:56,150 --> 00:01:15,630
+But if put Tesla here, then at some operating modes, if you hit the effect, for example, tune frequency and duty cycle of control signals so you hit some harmonic from
+
+13
+00:01:15,630 --> 00:01:21,550
+wave resonance, you'll see interesting effects.
+
+14
+00:01:22,530 --> 00:01:34,510
+And with these interesting effects, if power of this key will be about 50 V, you can say goodbye to lab signal generator.
+
+15
+00:01:35,510 --> 00:01:42,870
+Generally, our experiments for oscilloscopes and signal generators are quite dangerous.
+
+16
+00:01:44,010 --> 00:01:56,010
+Therefore, to avoid such moment, devices expensive, I developed upgrade of this schematic, which is now shown before you.
+
+17
+00:01:58,770 --> 00:02:01,150
+So, look at schematic in more detail.
+
+18
+00:02:02,150 --> 00:02:07,530
+From chips set is same, TC4093BP.
+
+19
+00:02:09,030 --> 00:02:18,190
+Chip is mediator between lab signal generator and TC4420 driver.
+
+20
+00:02:18,930 --> 00:02:29,370
+Generally, if you need this schematic to work in continuous mode, this mediator can be removed.
+
+21
+00:02:29,370 --> 00:02:44,310
+Or if you have a quite good lab signal generator that can output not only pulses with set frequency and duty cycle parameters but also say, cut these pulses
+
+22
+00:02:44,310 --> 00:02:49,950
+into bursts, then this chip will not be needed for you.
+
+23
+00:02:50,070 --> 00:03:01,490
+Can directly from such lab signal generator feed to second pin of driver controlling transistor through isolation transformer.
+
+24
+00:03:02,950 --> 00:03:06,310
+And schematic is thereby simplified.
+
+25
+00:03:07,210 --> 00:03:23,290
+But I still leave this chip because in practice have to use such moments that lab signal generator is disconnected, say, this node is moved to another place so
+
+26
+00:03:23,530 --> 00:03:27,130
+there's no influence from Tesla on nearby devices.
+
+27
+00:03:28,110 --> 00:03:43,010
+And here visible that there are three inputs, one of them common, and two inputs connected to first and second leads of TC4093 chip.
+
+28
+00:03:44,670 --> 00:03:50,670
+Logical element of this chip is Schmitt trigger.
+
+29
+00:03:51,890 --> 00:04:03,070
+Its input done with 2-input AND logic, and next happens signal inversion after Schmitt trigger.
+
+30
+00:04:03,430 --> 00:04:25,330
+So if we use separately output 1 and 2, then can do very interesting thing — when one of generators, say, on logic assembled, sets frequency for us, let's say 100 kHz, feed it
+
+31
+00:04:25,330 --> 00:04:35,910
+to one of chip inputs, and second generator on logic creates frequency for us, say, 1 kHz.
+
+32
+00:04:36,510 --> 00:04:47,590
+And this chip with this logic will make for us bursts with frequency 1 kHz, and filling of these bursts will be 100 kHz.
+
+33
+00:04:47,590 --> 00:05:04,170
+And if these signal generators that control this chip will also have duty cycle, say, of low-frequency generator, then all these parameters this chip will do in form of
+
+34
+00:05:04,170 --> 00:05:08,010
+bursts and send to control driver.
+
+35
+00:05:09,070 --> 00:05:11,170
+This very convenient in work.
+
+36
+00:05:13,210 --> 00:05:34,190
+If you need this schematic to give continuous signal, you unite input 1 and 2 in this little terminal together, and chip transmits unobstructed signal from controlling signal generator
+
+37
+00:05:34,190 --> 00:05:35,530
+directly to driver.
+
+38
+00:05:36,430 --> 00:05:46,470
+Here visible that second inversion done to return signal to original as at input, and control transitions to second pin of driver.
+
+39
+00:05:48,870 --> 00:05:57,490
+Also can note that in this schematic principle implemented that common wire only at controlling part.
+
+40
+00:05:57,990 --> 00:06:09,670
+That is, united directly driving generator or lab generator, mediator chip, driver, DC-DC converter and power source.
+
+41
+00:06:10,270 --> 00:06:13,630
+This whole part has common wire.
+
+42
+00:06:14,310 --> 00:06:22,450
+All other part is absolutely galvanically isolated from controlling block.
+
+43
+00:06:23,050 --> 00:06:33,220
+This way we prevent through transformer isolation any galvanic connection of controlling block with power part.
+
+44
+00:06:35,990 --> 00:06:43,470
+Examine this node that does galvanic isolation of controlling block and power part in more detail.
+
+45
+00:06:44,210 --> 00:06:48,870
+Visible that driver works on inductive load.
+
+46
+00:06:50,150 --> 00:06:59,150
+To prevent driver shorting directly to common wire, capacitance of 1 µF 50 V included in series.
+
+47
+00:06:59,970 --> 00:07:04,410
+Also this capacitance removes DC component from signal.
+
+48
+00:07:05,410 --> 00:07:15,810
+And in series 12.4 Ω resistance added that controls current passing through primary winding.
+
+49
+00:07:16,650 --> 00:07:21,610
+Next signal from primary winding perceives secondary winding.
+
+50
+00:07:22,170 --> 00:07:28,290
+Also through same 1 µF capacitance feeds it to transistor gate.
+
+51
+00:07:28,290 --> 00:07:45,630
+But here we see some wiring that ultimately controls signal form, gives it square form and limits maximum voltage so transistor isn't broken through.
+
+52
+00:07:46,610 --> 00:07:53,510
+To remove negative component, this UF 4005 diode included.
+
+53
+00:07:55,490 --> 00:08:05,770
+Instead of this diode, can use other fast-acting diodes, for example, SF, HER and other similar diodes.
+
+54
+00:08:07,030 --> 00:08:12,410
+Next we see gate discharge resistance 1 kΩ.
+
+55
+00:08:12,910 --> 00:08:20,410
+And mandatory in this schematic need to use zener diodes connected counter at 15 V.
+
+56
+00:08:20,410 --> 00:08:33,330
+These zener diodes cut off spikes that can form at frequency changes on secondary winding, thereby protecting transistor gate from breakdown.
+
+57
+00:08:34,910 --> 00:08:45,210
+As core of isolation transformer that controls power key gate, I took such ferrite ring.
+
+58
+00:08:46,150 --> 00:08:51,050
+Here I outlined it so its true dimensions are clear.
+
+59
+00:08:51,590 --> 00:09:01,910
+So, inner diameter of hole 10 mm, outer diameter 20 mm and ring width is 10 mm.
+
+60
+00:09:02,590 --> 00:09:04,870
+Its permeability mark 2000.
+
+61
+00:09:06,250 --> 00:09:18,950
+Such ring enough for controlling quite powerful power keys, and can use in this schematic not only IRF series transistors.
+
+62
+00:09:19,830 --> 00:09:27,130
+If will be available, instead of IRF840, advise to substitute IRF510.
+
+63
+00:09:27,590 --> 00:09:32,990
+This transistor has gate capacitance only 15 pF.
+
+64
+00:09:32,990 --> 00:09:42,280
+And IRF510 capable of working at frequencies with proper its control wiring up to 30 MHz.
+
+65
+00:09:46,470 --> 00:09:50,410
+Into this schematic I introduced terminal block.
+
+66
+00:09:51,270 --> 00:10:02,690
+Done this so could commute for different schemes of transistor leads and power source.
+
+67
+00:10:03,690 --> 00:10:22,630
+Say, if we connect on this terminal block minus of key power source with its source, then we get standard schematic where minus for us reaches directly transistor source, and transistor drain
+
+68
+00:10:22,630 --> 00:10:34,050
+loaded with inductive load that in Tesla schemes is primary winding.
+
+69
+00:10:34,770 --> 00:10:52,770
+If however we connect on this terminal block transistor drain with plus of power source, then accordingly we get circuit 2 of inductor inclusion, where minus of power source connects to inductor
+
+70
+00:10:52,770 --> 00:11:01,710
+of Tesla coil, and second end of free inductor connects to source of this key.
+
+71
+00:11:02,070 --> 00:11:13,330
+Want to immediately note that these schemes behave absolutely differently when working with Tesla coil and show various effects.
+
+72
+00:11:14,550 --> 00:11:20,350
+Few people know about this and most often this schematic is used.
+
+73
+00:11:20,350 --> 00:11:21,010
+Why?
+
+74
+00:11:21,270 --> 00:11:34,780
+Because it's always convenient to put driver, no need for isolation transformer and load is in drain circuit of power key.
+
+75
+00:11:36,770 --> 00:11:44,670
+And many schemes that some inventors give, draw just, say, key.
+
+76
+00:11:44,670 --> 00:11:51,630
+But often there specifically this control schematic may be used.
+
+77
+00:11:52,910 --> 00:11:55,990
+These two schematics work absolutely differently.
+
+78
+00:11:56,310 --> 00:12:00,570
+And phenomena happening on Tesla coil are different.
+
+79
+00:12:01,510 --> 00:12:05,670
+This is advice for future experimenters.
+
+80
+00:12:05,670 --> 00:12:22,030
+And, by the way, want to say that all interesting effects in Tesla coils, and generally in systems we assemble of free-energy generators, manifest only when three frequencies operate in the
+
+81
+00:12:22,030 --> 00:12:22,630
+system.
+
+82
+00:12:23,530 --> 00:12:39,450
+Well, let's say, for example, frequency in burst, frequency of burst repetition and third frequency that forms in us, say, in Tesla coil.
+
+83
+00:12:40,830 --> 00:12:44,010
+Free oscillations, frequency beats.
+
+84
+00:12:44,690 --> 00:12:50,570
+All interesting effects can be seen only at interaction of three frequencies.
+
+85
+00:12:51,450 --> 00:12:58,770
+If we just feed one frequency or, say, two, nothing interesting we get from this.
+
+86
+00:13:00,010 --> 00:13:16,110
+As power source for power key load in this schematic can serve as battery, and inverter connected to battery, which is preferable for raising supply voltage.
+
+87
+00:13:16,710 --> 00:13:25,210
+And less preferable system, when we power this schematic from lab power source.
+
+88
+00:13:25,210 --> 00:13:31,270
+This convenient, there is, like for me, regulation from zero to 300 V.
+
+89
+00:13:32,270 --> 00:13:38,570
+But with such connection to mains can't tune system.
+
+90
+00:13:39,550 --> 00:13:46,330
+All effects manifest in most cases when we have isolation from mains.
+
+91
+00:13:46,930 --> 00:14:06,890
+And even if we put filter that's shown schematically here, still can note that during system operation, if we touch hand to key heat sink, we'll feel 50
+
+92
+00:14:06,890 --> 00:14:12,690
+Hz, this can be felt, despite presence of filtering part.
+
+93
+00:14:12,690 --> 00:14:16,850
+This brings own corrections to system.
+
+94
+00:14:17,850 --> 00:14:35,670
+Therefore at precise tunings, especially work with Tesla coils, advise to use specifically power from separate blocks that don't take energy source from mains.
+
+95
+00:14:36,670 --> 00:14:39,210
+Now examine this filter.
+
+96
+00:14:39,850 --> 00:14:42,670
+It's shown on board.
+
+97
+00:14:44,650 --> 00:15:00,890
+These inductive filters can be obtained from old TVs, old power blocks, or wound on yellow rings, homemade.
+
+98
+00:15:01,010 --> 00:15:05,350
+That is two windings, take two wires and wind in parallel.
+
+99
+00:15:06,030 --> 00:15:08,570
+Will get analog of this filter.
+
+100
+00:15:09,390 --> 00:15:13,750
+This is first capacitance value 2 µF.
+
+101
+00:15:14,210 --> 00:15:20,310
+Next filter itself, then next capacitance 0.68 µF.
+
+102
+00:15:20,310 --> 00:15:26,530
+Then main accumulator capacitance, it's shown 230 µF.
+
+103
+00:15:27,410 --> 00:15:30,530
+Values can be in wide limits other.
+
+104
+00:15:31,170 --> 00:15:36,510
+Main thing voltage was 400 V because feed here up to 300 V power.
+
+105
+00:15:37,510 --> 00:15:44,010
+In this case capacitances at 200 V, included them in series and capacitance divided in half.
+
+106
+00:15:44,010 --> 00:15:53,470
+Well and filtering capacitance after electrolytics is 28 nF.
+
+107
+00:15:54,150 --> 00:15:59,910
+Were capacitors at 2000 V with reserve, but by dimensions they fit.
+
+108
+00:16:00,550 --> 00:16:05,230
+Nothing complicated in this filter, assembles fast enough.
+
+109
+00:16:07,590 --> 00:16:18,410
+Here I already on my experienced box acquired last circuit-technical embodiment.
+
+110
+00:16:18,750 --> 00:16:21,790
+Visible previous holes from work.
+
+111
+00:16:23,290 --> 00:16:26,030
+Installed power key on heat sink.
+
+112
+00:16:27,990 --> 00:16:31,650
+Installed terminal block carrier.
+
+113
+00:16:32,370 --> 00:16:41,430
+And drilled holes through which wires will pass according to commutation scheme.
+
+114
+00:16:44,250 --> 00:16:58,930
+And here's the scheme that connects with lab signal generator and controls power key.
+
+115
+00:16:58,930 --> 00:17:04,310
+See what isolation control transformer looks like.
+
+116
+00:17:05,150 --> 00:17:06,890
+Wound immediately in two wires.
+
+117
+00:17:08,070 --> 00:17:13,410
+Turn count of primary and secondary winding same and is 11 turns.
+
+118
+00:17:14,190 --> 00:17:34,970
+At that if we use in input circuit voltage stabilizer, namely DC-DC converter on LM2596, this chip, we can set voltage point and without unwinding turns set
+
+119
+00:17:34,970 --> 00:17:38,870
+desired voltage on transistor gate.
+
+120
+00:17:39,030 --> 00:17:41,150
+Thus can do correction.
+
+121
+00:17:42,790 --> 00:17:49,530
+There's certain prejudice in people regarding pulse transformers.
+
+122
+00:17:49,530 --> 00:17:52,350
+But thing, I'll tell you, very good.
+
+123
+00:17:52,490 --> 00:18:00,510
+If you learn to tune it, even can forget about drivers of power keys.
+
+124
+00:18:00,950 --> 00:18:02,870
+Awesome harmonic isolation.
+
+125
+00:18:04,150 --> 00:18:06,730
+Works this ferrite.
+
+126
+00:18:07,030 --> 00:18:09,750
+Tested it above 2 MHz.
+
+127
+00:18:10,390 --> 00:18:14,010
+Signal from it will show later on oscilloscope.
+
+128
+00:18:14,010 --> 00:18:19,850
+Well and visible that this part, little terminal block shown here.
+
+129
+00:18:20,150 --> 00:18:23,490
+This is TC4093 chip.
+
+130
+00:18:24,010 --> 00:18:37,390
+And want to draw your attention that TC4420 driver has heat sink that I with help of two little wires soldered to board.
+
+131
+00:18:38,510 --> 00:18:41,170
+Under heat sink we have thermal paste.
+
+132
+00:18:41,170 --> 00:18:43,070
+What's the purpose?
+
+133
+00:18:44,030 --> 00:18:51,410
+These drivers aren't developed at all by manufacturer for work in such high frequencies.
+
+134
+00:18:51,570 --> 00:19:00,230
+And this schematic can be used freely up to 2.5 MHz depending, well maybe even above.
+
+135
+00:19:00,670 --> 00:19:02,430
+Because transistors allow.
+
+136
+00:19:03,130 --> 00:19:06,950
+And this chip also allows working at these frequencies.
+
+137
+00:19:06,950 --> 00:19:17,350
+And driver itself, it starts heating somewhere when frequency approaches range 1.6-1.7 MHz.
+
+138
+00:19:18,150 --> 00:19:22,340
+Its heating already noticeable, is about 50 degrees.
+
+139
+00:19:23,110 --> 00:19:25,330
+But still I used heat sink.
+
+140
+00:19:25,570 --> 00:19:29,790
+Heat sink uses from cable clamps.
+
+141
+00:19:30,550 --> 00:19:36,770
+Can buy and it very well fits on surface of these chips.
+
+142
+00:19:37,930 --> 00:19:43,070
+Well and basically, nothing super-complex here.
+
+143
+00:19:44,310 --> 00:19:51,450
+Visible that zener diodes I raised higher because in experiments anything can happen.
+
+144
+00:19:51,590 --> 00:19:57,150
+If power key blows, may blow zener diode pair.
+
+145
+00:19:57,310 --> 00:20:06,930
+Therefore, to not disassemble whole circuit, enough to just clip wires with little pieces and solder new zener diodes here.
+
+146
+00:20:06,950 --> 00:20:09,170
+Well, circuit again operational.
+
+147
+00:20:09,750 --> 00:20:18,890
+With key blowing nothing happens to driver, to transformer, much less to control block.
+
+148
+00:20:19,750 --> 00:20:21,690
+Circuit reliably isolated.
+
+149
+00:20:25,300 --> 00:20:27,240
+Assembled circuit for demonstration.
+
+150
+00:20:27,660 --> 00:20:31,080
+Now will show frequency capabilities of circuit.
+
+151
+00:20:34,880 --> 00:20:42,680
+Oscilloscope probe will be on output of secondary winding now.
+
+152
+00:20:43,220 --> 00:20:45,780
+Subsequent whole circuit disabled.
+
+153
+00:20:46,480 --> 00:20:53,860
+Will show what signal form will be, so it doesn't scare you, while this whole part isn't there.
+
+154
+00:20:55,000 --> 00:20:58,740
+Will start specifically with frequency 1 kHz.
+
+155
+00:21:01,900 --> 00:21:04,620
+So, power applied to circuit.
+
+156
+00:21:07,740 --> 00:21:08,520
+There we see.
+
+157
+00:21:10,840 --> 00:21:13,280
+Now I'll enlarge screen.
+
+158
+00:21:17,400 --> 00:21:23,540
+So, watching, pulse repetition frequency is 1 kHz.
+
+159
+00:21:24,420 --> 00:21:27,180
+Remind that secondary not connected anywhere.
+
+160
+00:21:27,720 --> 00:21:29,880
+And start smoothly increasing frequency.
+
+161
+00:21:29,880 --> 00:21:35,440
+1, 2, 3, 4, 5.
+
+162
+00:21:37,800 --> 00:21:47,000
+And also can observe maximum amplitude of positive half-period and negative half-period.
+
+163
+00:21:47,840 --> 00:21:50,380
+Now sweep is 5 V per division.
+
+164
+00:21:51,720 --> 00:21:56,360
+5 kHz, 6, 7, 8, 9, 10.
+
+165
+00:21:56,520 --> 00:21:58,100
+Look how signal changes.
+
+166
+00:21:59,880 --> 00:22:08,320
+I show these frequencies to understand one important moment.
+
+167
+00:22:08,920 --> 00:22:12,480
+This ferrite has minimum operating frequency.
+
+168
+00:22:13,660 --> 00:22:28,220
+And if you want to make scheme that should work in frequencies up to 15 kHz, then you should apply ferrite with lower permeability mark.
+
+169
+00:22:28,220 --> 00:22:34,460
+That is not 2000, but take lower permeability so it can work at low frequencies.
+
+170
+00:22:35,260 --> 00:22:38,960
+This 2000 ferrite behaves well.
+
+171
+00:22:39,080 --> 00:22:46,180
+Now bring frequency to 15 kHz.
+
+172
+00:22:47,140 --> 00:22:52,900
+And see signals acquire more square shape.
+
+173
+00:22:54,240 --> 00:23:02,160
+And starting from 20 kHz, already on this ferrite can stably work.
+
+174
+00:23:03,100 --> 00:23:05,900
+Now raise frequency faster.
+
+175
+00:23:06,900 --> 00:23:12,900
+See frequency 70, well say 50 kHz.
+
+176
+00:23:15,060 --> 00:23:20,880
+Signal plateau already nice, starts forming.
+
+177
+00:23:20,880 --> 00:23:22,760
+Now 100 kHz.
+
+178
+00:23:24,880 --> 00:23:29,460
+Signal of this form, quite nice.
+
+179
+00:23:30,040 --> 00:23:37,240
+By the way, note that edge of signal also rise, but later will look bigger.
+
+180
+00:23:37,880 --> 00:23:40,200
+Now will change frequency right away.
+
+181
+00:23:40,680 --> 00:23:43,640
+Now 600 kHz.
+
+182
+00:23:46,880 --> 00:23:49,000
+Here frequency 1 MHz.
+
+183
+00:23:54,840 --> 00:24:02,480
+Add 1.5 MHz such signal.
+
+184
+00:24:02,900 --> 00:24:07,540
+Remind that winding now not connected to further scheme.
+
+185
+00:24:09,440 --> 00:24:11,700
+And here set frequency 2 MHz.
+
+186
+00:24:11,800 --> 00:24:16,980
+See ferrite quite well copes, 2 MHz.
+
+187
+00:24:16,980 --> 00:24:19,760
+Now look at rise edge.
+
+188
+00:24:21,040 --> 00:24:25,140
+We have 10 ns per division.
+
+189
+00:24:25,380 --> 00:24:26,380
+That is, one division.
+
+190
+00:24:27,440 --> 00:24:33,420
+Two divisions, 20 ns rise edge at frequency 2 MHz.
+
+191
+00:24:34,700 --> 00:24:43,440
+Now return winding connection to scheme and examine how it works with further chains.
+
+192
+00:24:46,440 --> 00:24:52,660
+So, returned secondary winding connection to subsequent chain.
+
+193
+00:24:53,040 --> 00:24:58,780
+And now will observe signal that will control power key gate later.
+
+194
+00:24:59,620 --> 00:25:02,280
+Probe itself will stand at this point.
+
+195
+00:25:03,480 --> 00:25:06,900
+Common wire of oscilloscope at this point.
+
+196
+00:25:07,560 --> 00:25:12,800
+Will observe signal, connecting to zener diodes.
+
+197
+00:25:12,800 --> 00:25:16,320
+See probe connection to zener diodes.
+
+198
+00:25:16,740 --> 00:25:20,980
+Transfer image to oscilloscope screen.
+
+199
+00:25:22,060 --> 00:25:24,260
+And start again from 1 kHz.
+
+200
+00:25:25,920 --> 00:25:29,240
+There, such mess for us.
+
+201
+00:25:29,880 --> 00:25:31,440
+How can work with this?
+
+202
+00:25:32,140 --> 00:25:35,820
+All again connected with ferrite frequency characteristic.
+
+203
+00:25:39,920 --> 00:25:41,120
+10 kHz.
+
+204
+00:25:43,600 --> 00:25:46,500
+Sweep returned to 5 V per division.
+
+205
+00:25:48,480 --> 00:25:51,180
+See 10 kHz too little.
+
+206
+00:25:51,680 --> 00:25:52,900
+Switch to 20.
+
+207
+00:25:53,420 --> 00:26:04,220
+And here already start observing that signal acquires quite normal shape for controlling key.
+
+208
+00:26:04,220 --> 00:26:08,960
+Here already about 40 kHz and above.
+
+209
+00:26:09,840 --> 00:26:10,800
+Now 50.
+
+210
+00:26:11,580 --> 00:26:15,700
+Can freely control key.
+
+211
+00:26:16,860 --> 00:26:26,220
+That is, generally this circuit-technical solution with such ferrite, starting from 15 kHz, can control well.
+
+212
+00:26:26,940 --> 00:26:29,260
+So, run quickly through frequencies.
+
+213
+00:26:30,230 --> 00:26:37,400
+See that subsequent connection chain already removed negative half-period.
+
+214
+00:26:37,540 --> 00:26:40,620
+It's only minus 1.4 V.
+
+215
+00:26:41,700 --> 00:26:48,340
+And positive half-period amplitude is 10-13 V.
+
+216
+00:26:49,280 --> 00:26:50,750
+And raise frequency.
+
+217
+00:26:51,260 --> 00:26:52,380
+100 kHz.
+
+218
+00:26:54,260 --> 00:26:54,860
+300.
+
+219
+00:26:57,680 --> 00:27:04,100
+Want to draw attention to what I said, at some frequencies ferrite gives spike.
+
+220
+00:27:04,720 --> 00:27:16,000
+And this spike can be very big, but since in gate circuit of power key zener diodes, these spikes are cut.
+
+221
+00:27:16,560 --> 00:27:23,180
+And see now maximum amplitude 15-16 V where zener diodes work here.
+
+222
+00:27:24,680 --> 00:27:27,160
+500 kHz.
+
+223
+00:27:31,690 --> 00:27:33,550
+1 MHz.
+
+224
+00:27:35,890 --> 00:27:37,130
+Frequency.
+
+225
+00:27:38,510 --> 00:27:46,070
+Observe, there's small transient process but doesn't affect key operation.
+
+226
+00:27:47,210 --> 00:27:50,230
+And here set immediately 2 MHz.
+
+227
+00:27:50,770 --> 00:27:51,470
+Circuit.
+
+228
+00:27:52,470 --> 00:27:54,590
+Now look higher.
+
+229
+00:27:55,450 --> 00:27:57,810
+2.2 MHz.
+
+230
+00:27:59,260 --> 00:28:00,510
+2.4 MHz.
+
+231
+00:28:01,230 --> 00:28:02,150
+2.5 MHz.
+
+232
+00:28:02,910 --> 00:28:12,070
+That is, see that rise edge and signal amplitude have quite good parameters.
+
+233
+00:28:12,070 --> 00:28:18,970
+That is 20 ns per division rise during one division.
+
+234
+00:28:23,870 --> 00:28:28,070
+Observe at frequency 3 MHz.
+
+235
+00:28:29,190 --> 00:28:36,970
+That is circuit works and for our solutions it very suits.
+
+236
+00:28:36,970 --> 00:28:40,330
+And now I return to typical range.
+
+237
+00:28:40,510 --> 00:28:47,950
+Approximately at MHz examine duty cycle regulation of signal.
+
+238
+00:28:48,550 --> 00:28:52,310
+Now signal duty cycle is 50%.
+
+239
+00:28:52,550 --> 00:28:54,010
+Will lower it.
+
+240
+00:28:54,510 --> 00:28:55,170
+40%.
+
+241
+00:28:55,170 --> 00:28:56,850
+30%.
+
+242
+00:28:56,850 --> 00:28:58,930
+20%.
+
+243
+00:28:58,930 --> 00:29:00,270
+10%.
+
+244
+00:29:01,390 --> 00:29:09,890
+And now show, for example, 9, 8, 7, 6, 5, 4, 3.
+
+245
+00:29:11,170 --> 00:29:19,490
+Well and so duty cycle 3% at 1 MHz, what can allow lab signal generator.
+
+246
+00:29:21,610 --> 00:29:23,730
+We have such signal.
+
+247
+00:29:24,770 --> 00:29:27,030
+20 ns per division.
+
+248
+00:29:27,830 --> 00:29:34,030
+That is rise of edge in range of tens.
+
+249
+00:29:34,130 --> 00:29:35,070
+Now 10 ns.
+
+250
+00:29:36,510 --> 00:29:38,750
+Well yes, somewhere 10-12 ns.
+
+251
+00:29:42,170 --> 00:29:46,430
+And regulate duty cycle in bigger direction.
+
+252
+00:29:50,940 --> 00:29:54,720
+Now set 90%.
+
+253
+00:29:55,260 --> 00:29:57,760
+90% duty cycle.
+
+254
+00:29:57,760 --> 00:30:03,900
+That is practically circuit operational from 1% duty cycle to 90%.
+
+255
+00:30:08,340 --> 00:30:12,520
+80, 70, 50, 40.
+
+256
+00:30:12,980 --> 00:30:21,920
+That is see that in frequency range isolation transformer behaves quite predictably and stably.
+
+257
+00:30:24,820 --> 00:30:30,340
+Will do duty cycle regulation at frequency 2 MHz.
+
+258
+00:30:30,620 --> 00:30:32,620
+Now observe 50%.
+
+259
+00:30:32,620 --> 00:30:38,680
+40, 30, 20, 10%.
+
+260
+00:30:42,350 --> 00:30:43,750
+5%.
+
+261
+00:30:45,930 --> 00:30:48,290
+And now increase.
+
+262
+00:30:52,240 --> 00:30:55,860
+60, 70, 80.
+
+263
+00:31:02,890 --> 00:31:16,650
+Observe that at 2 MHz at duty cycle 80% we already have signal distortion.
+
+264
+00:31:16,810 --> 00:31:20,070
+That is some frequency characteristics overlap.
+
+265
+00:31:20,070 --> 00:31:22,930
+Frequency range quite high.
+
+266
+00:31:23,030 --> 00:31:27,090
+Think you'll appreciate in work this circuit.
+
+267
+00:31:32,330 --> 00:31:37,750
+So, I performed assembly of attachment to lab signal generator.
+
+268
+00:31:38,390 --> 00:31:43,550
+Applied graphic marking of terminal block lead pinout.
+
+269
+00:31:44,730 --> 00:31:52,850
+Connected power block and connected BNC connector for lab signal generator.
+
+270
+00:31:52,970 --> 00:31:56,870
+So construction looks from inside.
+
+271
+00:31:58,070 --> 00:32:01,970
+Boards fixed with help of screws.
+
+272
+00:32:03,150 --> 00:32:07,470
+This board fixed with two bolts, this with one.
+
+273
+00:32:07,870 --> 00:32:11,310
+And here we have power key leads.
+
+274
+00:32:12,390 --> 00:32:18,210
+Drain output red, source output blue wire.
+
+275
+00:32:19,350 --> 00:32:29,670
+Now do system start and see how it works on ohmic active load.
+
+276
+00:32:33,380 --> 00:32:35,240
+So, for test assembled stand.
+
+277
+00:32:35,840 --> 00:32:38,600
+Load will be 200 W lamp.
+
+278
+00:32:39,600 --> 00:32:48,320
+Power will be at its nominal voltage for lamp 220 V from DC of lab power source.
+
+279
+00:32:49,520 --> 00:32:55,000
+Oscillogram will observe with help of oscilloscope and control with help of signal generator.
+
+280
+00:32:55,560 --> 00:32:58,000
+Now see jumper is set.
+
+281
+00:32:58,200 --> 00:33:04,480
+This corresponds to jumper included between source and minus of power source.
+
+282
+00:33:05,040 --> 00:33:12,020
+Accordingly load inclusion scheme will be included by drain of power key.
+
+283
+00:33:13,160 --> 00:33:16,140
+Raise supply voltage for nominal.
+
+284
+00:33:21,610 --> 00:33:23,390
+Won't drive at small.
+
+285
+00:33:25,070 --> 00:33:29,770
+Immediately give nominal 220 V.
+
+286
+00:33:30,390 --> 00:33:35,870
+Now duty cycle, control 5%, at frequency 100 kHz.
+
+287
+00:33:36,630 --> 00:33:37,990
+Doing work.
+
+288
+00:33:41,640 --> 00:33:45,140
+Now will smoothly raise duty cycle, in steps.
+
+289
+00:33:47,200 --> 00:33:48,880
+Observe lamp.
+
+290
+00:33:55,760 --> 00:34:16,880
+10%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85% duty cycle.
+
+291
+00:34:16,880 --> 00:34:18,580
+Now same.
+
+292
+00:34:18,920 --> 00:34:23,340
+Will do oscillogram observation.
+
+293
+00:34:24,240 --> 00:34:28,360
+Return to 5% duty cycle.
+
+294
+00:34:28,880 --> 00:34:34,700
+Want to note that by voltage, if look at output where our probe is.
+
+295
+00:34:35,140 --> 00:34:38,240
+Probe now on transistor drain.
+
+296
+00:34:38,860 --> 00:34:42,580
+And common oscilloscope probe on power source minus.
+
+297
+00:34:42,580 --> 00:34:51,580
+By voltage we'll have inverted signal relative to signal that controls.
+
+298
+00:34:52,560 --> 00:35:00,940
+Turns out at minimum control signal duty cycle we'll have maximum voltage duty cycle at output.
+
+299
+00:35:06,420 --> 00:35:24,680
+10%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85% duty cycle.
+
+300
+00:35:27,920 --> 00:35:40,740
+At good parts, quality assembly, power key heats very weakly.
+
+301
+00:35:40,860 --> 00:35:45,640
+Slightly above temperature in room.
+
+302
+00:35:45,740 --> 00:35:49,840
+About 30 degrees at such load.
+
+303
+00:35:49,840 --> 00:36:01,700
+This circuit enough nominal now at 85% of system consumption.
+
+304
+00:36:01,780 --> 00:36:08,280
+That is, for tests of this circuit enough with big reserve.
+
+305
+00:36:11,680 --> 00:36:19,460
+Now switch duty cycle to 55% and go through frequency.
+
+306
+00:36:20,940 --> 00:36:24,740
+200 kHz, 300, 400, 500.
+
+307
+00:36:25,880 --> 00:36:28,840
+See lamp glows.
+
+308
+00:36:33,550 --> 00:36:35,930
+Say, test at megahertz.
+
+309
+00:36:38,390 --> 00:36:43,410
+Now switched to radio frequency already.
+
+310
+00:36:45,150 --> 00:36:51,610
+Can observe signal MHz, 55% duty cycle.
+
+311
+00:36:54,290 --> 00:37:05,150
+65, 75, 85% at MHz consumption.
+
+312
+00:37:13,480 --> 00:37:19,380
+Next want to advise you the channel of a person on YouTube under nickname Ruslan X.
+
+313
+00:37:20,220 --> 00:37:25,520
+He sets quality experiments in alternative energy area.
+
+314
+00:37:26,620 --> 00:37:28,660
+Advise everyone to repeat them at home.
+
+315
+00:37:29,120 --> 00:37:31,180
+Lots of new things you'll see.
+
+316
+00:37:32,480 --> 00:37:36,300
+And also visit Zaryad forum.
+
+317
+00:37:37,300 --> 00:37:40,720
+Thread "Generator BTG by Ruslan Akulabukhov."
+
+318
+00:37:41,240 --> 00:37:44,420
+Setup prototype BTG Akula 0083.
+
+319
+00:37:45,060 --> 00:37:49,600
+Starting from page 161 read his posts.
+
+320
+00:37:49,680 --> 00:37:54,560
+He recently registered here, also under nickname Ruslan X.
+
+321
+00:37:54,900 --> 00:37:57,800
+And also brings his videos here.
+
+322
+00:37:57,800 --> 00:38:00,960
+Here's this video for Brovin.
+
+323
+00:38:02,020 --> 00:38:05,800
+I'll embed my video.
+
+324
+00:38:06,780 --> 00:38:20,300
+Here very clearly Ruslan shows what will happen when powering Tesla coil in Kacher mode from battery.
+
+325
+00:38:21,320 --> 00:38:27,260
+And why at such inclusion can't connect measuring devices.
+
+326
+00:38:27,800 --> 00:38:30,580
+That is, oscilloscope and so on.
+
+327
+00:38:31,520 --> 00:38:32,960
+How can lose.
+
+328
+00:38:33,460 --> 00:38:42,040
+This very consonant with what I showed you, attachment to lab signal generator, its schematic.
+
+329
+00:38:42,620 --> 00:38:44,480
+For what particular I make it.
+
+330
+00:38:46,700 --> 00:38:50,540
+Advise to study his video clips very carefully.
+
+331
+00:38:56,620 --> 00:38:59,780
+Hello, dear Vladimir Ilyich Brovin.
+
+332
+00:39:00,730 --> 00:39:02,660
+Well and the rest.
+
+333
+00:39:02,840 --> 00:39:05,780
+Now I'll demonstrate one thing.
+
+334
+00:39:06,540 --> 00:39:09,380
+And then you decide yourself what your measurements are.
+
+335
+00:39:09,480 --> 00:39:10,720
+Correct or incorrect.
+
+336
+00:39:11,440 --> 00:39:13,080
+So, here's what we have.
+
+337
+00:39:13,360 --> 00:39:16,400
+We have Tesla, here it is.
+
+338
+00:39:19,700 --> 00:39:21,100
+Regular your Kacher.
+
+339
+00:39:21,540 --> 00:39:22,360
+Here Kacher.
+
+340
+00:39:22,880 --> 00:39:24,980
+Kacher transistor 805.
+
+341
+00:39:25,560 --> 00:39:26,360
+It stands.
+
+342
+00:39:28,160 --> 00:39:32,640
+This is voltage step-up converter.
+
+343
+00:39:33,580 --> 00:39:36,860
+At 2.5 amps up to 30 V.
+
+344
+00:39:36,980 --> 00:39:41,640
+In this case here is set 25 V.
+
+345
+00:39:42,200 --> 00:39:44,760
+So, there's power source for us with you.
+
+346
+00:39:45,040 --> 00:39:46,300
+Here's power source.
+
+347
+00:39:47,180 --> 00:39:48,760
+And battery.
+
+348
+00:39:49,640 --> 00:39:51,360
+Now I'll show difference.
+
+349
+00:39:52,010 --> 00:39:57,300
+And yours then themselves understand what to what.
+
+350
+00:39:57,760 --> 00:39:59,690
+Also there's oscilloscope probe.
+
+351
+00:40:00,320 --> 00:40:00,580
+Here it is.
+
+352
+00:40:00,920 --> 00:40:02,300
+Won't be connected anywhere.
+
+353
+00:40:02,860 --> 00:40:08,360
+I just bring this probe to Kacher points.
+
+354
+00:40:11,140 --> 00:40:13,390
+Well, now let's try.
+
+355
+00:40:14,480 --> 00:40:19,140
+Connect power source to Kacher.
+
+356
+00:40:20,620 --> 00:40:25,320
+At 12 V that I now set here, current isn't required.
+
+357
+00:40:26,940 --> 00:40:29,900
+Little spark will arise at end here.
+
+358
+00:40:30,580 --> 00:40:30,960
+Kacher.
+
+359
+00:40:31,300 --> 00:40:33,800
+Transistor will transition to Kacher mode work.
+
+360
+00:40:34,640 --> 00:40:35,520
+And start working.
+
+361
+00:40:35,740 --> 00:40:40,940
+Here clear that conversion goes from 12 to 25 V.
+
+362
+00:40:41,040 --> 00:40:43,980
+And Kacher at moment will work at 25 V.
+
+363
+00:40:44,780 --> 00:40:46,880
+Battery so far we don't use.
+
+364
+00:40:46,880 --> 00:40:47,500
+Here we have.
+
+365
+00:40:48,540 --> 00:40:51,360
+This is screwdriver for us.
+
+366
+00:40:52,900 --> 00:40:55,760
+It'll serve us as indicator.
+
+367
+00:40:56,920 --> 00:40:58,700
+What you'll see yourselves.
+
+368
+00:41:00,140 --> 00:41:01,240
+So, let's go.
+
+369
+00:41:02,320 --> 00:41:03,080
+Add.
+
+370
+00:41:05,300 --> 00:41:06,620
+Think visible there.
+
+371
+00:41:09,840 --> 00:41:12,160
+Hear, started.
+
+372
+00:41:12,780 --> 00:41:14,960
+Set here 12 V.
+
+373
+00:41:15,180 --> 00:41:16,540
+Hear, little spark works.
+
+374
+00:41:16,880 --> 00:41:17,800
+Here's little spark.
+
+375
+00:41:18,740 --> 00:41:20,620
+And here our Kacher.
+
+376
+00:41:21,000 --> 00:41:22,060
+So, I just now...
+
+377
+00:41:26,040 --> 00:41:28,220
+Apparently, transistor cut out.
+
+378
+00:41:29,140 --> 00:41:29,720
+Most likely.
+
+379
+00:41:29,880 --> 00:41:30,540
+Or something else.
+
+380
+00:41:32,380 --> 00:41:33,180
+There, well, works.
+
+381
+00:41:33,760 --> 00:41:35,020
+Visible, yes?
+
+382
+00:41:35,340 --> 00:41:36,100
+All works.
+
+383
+00:41:37,480 --> 00:41:38,720
+Transfer to scheme.
+
+384
+00:41:38,900 --> 00:41:40,140
+Approach heat sink.
+
+385
+00:41:41,080 --> 00:41:42,180
+See heat sink.
+
+386
+00:41:42,760 --> 00:41:44,060
+Here can touch.
+
+387
+00:41:44,060 --> 00:41:44,400
+Here.
+
+388
+00:41:45,180 --> 00:41:48,610
+That is at any Kacher point we touch it with screwdriver.
+
+389
+00:41:49,180 --> 00:41:53,740
+And nothing special such we observe.
+
+390
+00:41:54,340 --> 00:41:55,380
+Great.
+
+391
+00:41:56,060 --> 00:41:57,180
+Turn off Kacher.
+
+392
+00:41:58,680 --> 00:42:10,490
+And now will connect this same Kacher to source of autonomous battery power.
+
+393
+00:42:12,130 --> 00:42:14,830
+This for one-eyed Volodya.
+
+394
+00:42:15,430 --> 00:42:19,230
+I want him also pay attention to this.
+
+395
+00:42:19,370 --> 00:42:27,550
+When he asks someone do for him and show some measurements of some working device there.
+
+396
+00:42:28,250 --> 00:42:29,190
+Well so, for future.
+
+397
+00:42:30,010 --> 00:42:34,250
+So he understands what's talked about.
+
+398
+00:42:34,890 --> 00:42:36,510
+I'm doing switch now.
+
+399
+00:42:37,410 --> 00:42:38,770
+So, plus end.
+
+400
+00:42:39,770 --> 00:42:40,410
+Connect.
+
+401
+00:42:44,860 --> 00:42:45,780
+So, all ready.
+
+402
+00:42:45,840 --> 00:42:46,840
+Only remains to turn on.
+
+403
+00:42:48,630 --> 00:42:50,940
+Take little screwdriver in hand.
+
+404
+00:42:52,490 --> 00:42:53,960
+Well, turn on.
+
+405
+00:42:54,120 --> 00:42:55,720
+12 V.
+
+406
+00:42:56,180 --> 00:43:00,500
+Here we have little spark.
+
+407
+00:43:01,800 --> 00:43:03,020
+Kacher works.
+
+408
+00:43:03,420 --> 00:43:04,440
+Take little screwdriver.
+
+409
+00:43:05,340 --> 00:43:05,900
+And see.
+
+410
+00:43:07,460 --> 00:43:09,640
+Take little screwdriver here.
+
+411
+00:43:10,280 --> 00:43:10,840
+See.
+
+412
+00:43:12,200 --> 00:43:15,580
+Take oscilloscope probe not connected anywhere.
+
+413
+00:43:15,820 --> 00:43:16,680
+One little end.
+
+414
+00:43:17,760 --> 00:43:18,480
+See.
+
+415
+00:43:20,020 --> 00:43:23,180
+And now tell me, one-eyed Volodya.
+
+416
+00:43:23,740 --> 00:43:25,460
+How will you measure?
+
+417
+00:43:26,780 --> 00:43:31,320
+You want what, that these devices all go to dump?
+
+418
+00:43:32,100 --> 00:43:33,800
+From your want to measure?
+
+419
+00:43:36,060 --> 00:43:37,820
+Even this here.
+
+420
+00:43:38,500 --> 00:43:40,220
+Such things don't withstand.
+
+421
+00:43:41,900 --> 00:43:43,760
+Thanks for attention.
+
+422
+00:43:48,450 --> 00:43:55,570
+And also in our free-energy community an interesting thing happened.
+
+423
+00:43:55,690 --> 00:43:59,450
+Knew, of course, about this long ago, already about half year.
+
+424
+00:44:00,330 --> 00:44:11,150
+Well, the person still didn't agree with our famous inventor Ruslan Kulabukhov.
+
+425
+00:44:12,290 --> 00:44:14,430
+And decided to sue him.
+
+426
+00:44:15,810 --> 00:44:19,530
+Came to my channel such comment.
+
+427
+00:44:20,150 --> 00:44:21,350
+Now I'll show you.
+
+428
+00:44:21,530 --> 00:44:25,930
+Here already start all kinds of interesting comments.
+
+429
+00:44:26,170 --> 00:44:28,550
+Kulabukhov setup turned out fake.
+
+430
+00:44:29,330 --> 00:44:34,430
+And here's post of Sergey himself under nickname Sergey Sergey.
+
+431
+00:44:35,570 --> 00:44:39,310
+Gives little link to his video clip.
+
+432
+00:44:40,650 --> 00:44:42,310
+Cross by it.
+
+433
+00:44:45,430 --> 00:44:56,190
+And in this video called "How my family was deceived" with free energy apparatus.
+
+434
+00:44:56,550 --> 00:45:02,770
+He tells how acquired non-working sample from Ruslan.
+
+435
+00:45:03,270 --> 00:45:06,930
+Video about 44 minutes long.
+
+436
+00:45:06,930 --> 00:45:15,310
+Of course we can only sympathize with Sergey that he was deceived.
+
+437
+00:45:16,570 --> 00:45:21,950
+But I'd advise not to start special hysteria about this.
+
+438
+00:45:22,610 --> 00:45:30,090
+Because if one person dishonest decided to earn this way.
+
+439
+00:45:30,670 --> 00:45:33,830
+This doesn't mean this technology doesn't exist.
+
+440
+00:45:33,830 --> 00:45:37,170
+And this doesn't mean need to lower hands.
+
+441
+00:45:39,570 --> 00:45:43,890
+Because working systems exist.
+
+442
+00:45:46,850 --> 00:45:51,130
+And a little will tell now on such moment.
+
+443
+00:45:51,830 --> 00:45:58,950
+People who contact me via Skype often ask how much output there.
+
+444
+00:45:58,950 --> 00:46:04,330
+How much can hang, can buy.
+
+445
+00:46:04,990 --> 00:46:06,170
+And all in such spirit.
+
+446
+00:46:06,810 --> 00:46:08,670
+Guys, I'll tell you this.
+
+447
+00:46:09,610 --> 00:46:12,130
+Like many others who contacted me.
+
+448
+00:46:12,810 --> 00:46:15,850
+I think people will confirm my words if anything.
+
+449
+00:46:17,110 --> 00:46:24,610
+At this moment internet has built some halo around this topic.
+
+450
+00:46:24,610 --> 00:46:28,890
+That technology exists, it works for long.
+
+451
+00:46:29,170 --> 00:46:35,010
+And only some ignorance doesn't allow embodying it in life.
+
+452
+00:46:35,570 --> 00:46:38,930
+Actually technology really works.
+
+453
+00:46:39,150 --> 00:46:43,790
+Many directions of how to implement these devices.
+
+454
+00:46:44,890 --> 00:46:48,010
+And they're implemented by different variants.
+
+455
+00:46:48,010 --> 00:46:55,390
+But they now share moment that technology is in earliest stage.
+
+456
+00:46:55,930 --> 00:46:57,450
+That is, output unstable.
+
+457
+00:46:57,910 --> 00:47:05,310
+What you observe on internet in form of clips where lamps light up.
+
+458
+00:47:06,670 --> 00:47:08,410
+These are single launches.
+
+459
+00:47:09,190 --> 00:47:15,830
+Before this author doesn't say that he can tune this device for several hours.
+
+460
+00:47:15,830 --> 00:47:18,100
+Before it successfully launches.
+
+461
+00:47:18,530 --> 00:47:22,850
+After this he films it and say posts on internet.
+
+462
+00:47:22,970 --> 00:47:26,750
+We of course look at this and think.
+
+463
+00:47:27,310 --> 00:47:31,770
+Now only remains a bit and we'll start doing all this.
+
+464
+00:47:33,550 --> 00:47:35,650
+Want to advise such moment.
+
+465
+00:47:35,790 --> 00:47:43,710
+Treat this not as magic box that can give electric energy like from outlet.
+
+466
+00:47:43,710 --> 00:47:48,810
+Treat this as research of surrounding world.
+
+467
+00:47:49,370 --> 00:47:56,710
+This is hobby, scientific work, research.
+
+468
+00:47:57,890 --> 00:48:02,250
+Fast results here won't be.
+
+469
+00:48:03,690 --> 00:48:11,130
+Personally I worked on this direction about 8.5 years.
+
+470
+00:48:11,470 --> 00:48:15,290
+Soon will be 9, lost count, but very long.
+
+471
+00:48:16,090 --> 00:48:18,690
+To get some results.
+
+472
+00:48:19,690 --> 00:48:23,410
+Therefore will have to work.
+
+473
+00:48:23,490 --> 00:48:25,050
+And each will have to work.
+
+474
+00:48:26,210 --> 00:48:32,230
+And biggest problem that these devices aren't sold.
+
+475
+00:48:32,250 --> 00:48:38,270
+Is in that there's no notorious conspiracy.
+
+476
+00:48:38,770 --> 00:48:41,250
+That is sell you'll be able.
+
+477
+00:48:41,970 --> 00:48:44,150
+Dangerous enough business.
+
+478
+00:48:44,850 --> 00:48:49,610
+No one will hinder you selling single specimen.
+
+479
+00:48:50,270 --> 00:48:56,330
+Hindrance starts at level when you want to patent, introduce to production.
+
+480
+00:48:57,410 --> 00:48:58,090
+Then yes.
+
+481
+00:48:58,590 --> 00:49:08,590
+But making for someone there or warming own house, if you don't attract attention to this.
+
+482
+00:49:09,750 --> 00:49:12,370
+This is quite possible.
+
+483
+00:49:14,530 --> 00:49:25,410
+And turns out such situation that at moment these devices are very unstable.
+
+484
+00:49:25,410 --> 00:49:34,010
+And this is the very reason we still can't buy them.
+
+485
+00:49:35,630 --> 00:49:50,590
+That is, there are objective reasons at which, say, person made this device while being at his home, and coming to another place, his re-tunings required.
+
+486
+00:49:50,590 --> 00:50:00,670
+That is, I'd compare buying such device with moment when you buy satellite TV receiver.
+
+487
+00:50:01,110 --> 00:50:13,830
+If you don't have certain skills, you must mandatory call master at installation location who'll tune this receiver for you, orient antenna to satellite.
+
+488
+00:50:13,830 --> 00:50:15,990
+All in such manner.
+
+489
+00:50:16,350 --> 00:50:20,630
+This is objective reasons that devices aren't sold.
+
+490
+00:50:21,230 --> 00:50:24,570
+Can't currently sell unstable device.
+
+491
+00:50:24,710 --> 00:50:27,190
+That is no one needs it essentially.
+
+492
+00:50:27,790 --> 00:50:33,030
+Even if it starts there once in five-ten, started and all.
+
+493
+00:50:33,570 --> 00:50:37,310
+That is work and work on this technology.
+
+494
+00:50:38,630 --> 00:50:41,630
+Wish you persistence, not lose heart.
+
+495
+00:50:41,630 --> 00:50:44,630
+These are trifles, what's happening now.
+
+496
+00:50:45,310 --> 00:50:50,250
+To our great specialist Ruslan big greetings.
+
+497
+00:50:51,590 --> 00:50:59,670
+Because beating yourself on chest, shouting at every corner that I'm specialist, now clear for what purposes he did this.
+
+498
+00:51:00,430 --> 00:51:04,130
+Create around himself such movement.
+
+499
+00:51:05,850 --> 00:51:14,330
+And when such amount of people follows you, of course halo creates that you have many things.
+
+500
+00:51:15,630 --> 00:51:19,670
+Well and as we see, person went on slippery path of fraud.
+
+501
+00:51:21,510 --> 00:51:27,250
+Not us to judge him, to judge him is Sergey's, and god his judge.
+
+502
+00:51:27,250 --> 00:51:29,710
+And we continue doing further.
+
+503
+00:51:30,610 --> 00:51:37,410
+And on this note, wish everyone successful experiments and all the best.
