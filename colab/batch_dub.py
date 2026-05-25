@@ -81,40 +81,53 @@ class VideoItem:
 # ============================================================
 #  URL loading
 # ============================================================
-def load_urls(source: str | Path | list[str]) -> list[str]:
-    """Load URLs from a list, .txt or .csv file, or a multiline string."""
+_NUM_URL_PREFIX = re.compile(r"^\s*(\d+)\s*[:=>\-]\s*(https?://\S+)\s*$")
+
+
+def load_urls(source: str | Path | list[str]) -> list[tuple[int | None, str]]:
+    """Load URL entries from a list, .txt or .csv file, or a multiline string.
+
+    Each entry is returned as (n_override, url). If a line uses the
+    'N#: URL' / 'N#= URL' / 'N#- URL' / 'N#> URL' form, n_override is set
+    to that number; otherwise it's None and the caller assigns one
+    sequentially.
+    """
     if isinstance(source, list):
-        urls = source
+        lines = source
     elif isinstance(source, (str, Path)) and Path(source).is_file():
         path = Path(source)
         if path.suffix.lower() == ".csv":
             with path.open(newline="", encoding="utf-8-sig") as f:
                 reader = csv.reader(f)
-                first = next(reader, None)
-                # Treat as headerless if first row's first cell looks like a URL
-                if first and first[0].strip().startswith("http"):
-                    urls = [first[0].strip()]
-                else:
-                    urls = []
+                # Treat anything that looks like a URL as data
+                lines = []
                 for row in reader:
                     if row and row[0].strip():
-                        urls.append(row[0].strip())
+                        lines.append(row[0].strip())
         else:
-            urls = path.read_text(encoding="utf-8").splitlines()
+            lines = path.read_text(encoding="utf-8").splitlines()
     else:
-        urls = str(source).splitlines()
+        lines = str(source).splitlines()
 
-    # Clean: strip, drop empties and comments
-    clean = []
-    for u in urls:
-        u = u.strip()
-        if not u or u.startswith("#"):
+    entries: list[tuple[int | None, str]] = []
+    for raw in lines:
+        line = raw.strip()
+        if not line or line.startswith("#"):
             continue
-        if not u.startswith("http"):
-            print(f"[WARN] skipping non-URL line: {u[:60]}")
-            continue
-        clean.append(u)
-    return clean
+        m = _NUM_URL_PREFIX.match(line)
+        if m:
+            entries.append((int(m.group(1)), m.group(2)))
+        elif line.startswith("http"):
+            entries.append((None, line))
+        else:
+            print(f"[WARN] skipping non-URL line: {line[:60]}")
+    return entries
+
+
+def load_url_strings(source) -> list[str]:
+    """Convenience helper: just the URLs (drops any N# override). Kept for callers
+    that only need a list of URLs, e.g. the preview cell."""
+    return [u for _, u in load_urls(source)]
 
 
 # ============================================================
@@ -143,14 +156,38 @@ def _fmt_date(raw: str) -> str:
     return raw or ""
 
 
-def build_items(urls: list[str], translate_titles: bool, target_lang: str) -> list[VideoItem]:
+def build_items(
+    entries: list[tuple[int | None, str]] | list[str],
+    translate_titles: bool,
+    target_lang: str,
+) -> list[VideoItem]:
     """Build VideoItem list with metadata for each URL. Metadata failure is non-fatal:
     the item keeps status 'pending' with an empty title; output naming falls back to
-    {N#}-{LANG}.mp4."""
+    {N#}-{LANG}.mp4.
+
+    `entries` is either a list of (n_override, url) tuples (output of load_urls) or
+    a plain list of URLs (back-compat)."""
     items: list[VideoItem] = []
-    for i, url in enumerate(urls, start=1):
+    auto_n = 0
+    used_ns: set[int] = set()
+    for entry in entries:
+        if isinstance(entry, tuple):
+            n_override, url = entry
+        else:
+            n_override, url = None, entry
+        if n_override is not None:
+            n = n_override
+        else:
+            auto_n += 1
+            while auto_n in used_ns:
+                auto_n += 1
+            n = auto_n
+        if n in used_ns:
+            print(f"[WARN] duplicate N#{n}; will overwrite output if not skipped")
+        used_ns.add(n)
+
         meta = fetch_metadata(url)
-        item = VideoItem(n=i, url=url)
+        item = VideoItem(n=n, url=url)
         if "_error" in meta:
             item.error = f"metadata unavailable: {meta['_error'][:120]}"
             items.append(item)
