@@ -387,34 +387,18 @@ def dub_one(
     generated = sum(1 for f in fitted if f is not None)
     print(f"  Generated: {generated}/{len(subs)} (capped at {MAX_SPEED_RATIO}x: {n_capped})")
 
-    # Build master track — clip each segment so it never spills into the next one
+    # Build master track
     video_duration = get_video_duration(video_path)
     sr_master = next(f[1] for f in fitted if f is not None)
     total_samples = int(video_duration * sr_master) + sr_master
     master = np.zeros(total_samples, dtype=np.float32)
-    fade_samples = int(0.05 * sr_master)  # 50ms fade-out when we have to cut
-    n_truncated = 0
-    for i, (sub, fit) in enumerate(zip(subs, fitted)):
+    for sub, fit in zip(subs, fitted):
         if fit is None:
             continue
         audio, _ = fit
         start = int(sub.start.total_seconds() * sr_master)
-        # Find the start of the next *non-empty* segment to use as a hard wall
-        next_start = len(master)
-        for j in range(i + 1, len(subs)):
-            if fitted[j] is not None:
-                next_start = int(subs[j].start.total_seconds() * sr_master)
-                break
-        max_end = min(next_start, len(master))
-        end = min(start + len(audio), max_end)
-        chunk = audio[:end - start].astype(np.float32)
-        if len(audio) > end - start:
-            n_truncated += 1
-            if len(chunk) > fade_samples:
-                chunk[-fade_samples:] *= np.linspace(1.0, 0.0, fade_samples)
-        master[start:end] += chunk
-    if n_truncated:
-        print(f"  Truncated {n_truncated} segments to prevent overlap with the next one")
+        end = min(start + len(audio), len(master))
+        master[start:end] += audio[:end - start].astype(np.float32)
 
     # Mix ambient if available
     if ambient_path is not None:
