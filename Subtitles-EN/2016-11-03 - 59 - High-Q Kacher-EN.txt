@@ -1,0 +1,1399 @@
+1
+00:00:00,750 --> 00:00:02,210
+Greetings everyone.
+
+2
+00:00:03,170 --> 00:00:10,210
+Today we'll look at a quite well-known and interesting circuit called Kacher.
+
+3
+00:00:12,370 --> 00:00:26,890
+This circuit is an autogenerator built on one transistor with feedback that goes directly from the cold end of the high-voltage coil to the base of this transistor.
+
+4
+00:00:27,530 --> 00:00:29,250
+Why do we need this circuit?
+
+5
+00:00:29,910 --> 00:00:41,110
+This circuit will help us answer the question of what frequency to tune the Tesla coil at relative to our resonator in the grenade.
+
+6
+00:00:43,130 --> 00:00:45,930
+This question is often asked by subscribers.
+
+7
+00:00:47,170 --> 00:00:51,250
+So, we'll assemble this circuit on this transistor.
+
+8
+00:00:51,330 --> 00:00:52,830
+Think everyone has it.
+
+9
+00:00:53,870 --> 00:00:54,490
+2SC5200.
+
+10
+00:00:56,550 --> 00:01:01,450
+Basically we'll take it, since it's widespread and can be bought.
+
+11
+00:01:02,870 --> 00:01:06,330
+And look at this system's operation.
+
+12
+00:01:06,750 --> 00:01:12,670
+What we know and what's still unknown about how to tune these systems.
+
+13
+00:01:13,590 --> 00:01:14,910
+Starting our circuit.
+
+14
+00:01:15,450 --> 00:01:20,490
+Power input we have plus-minus DC power source.
+
+15
+00:01:21,810 --> 00:01:27,410
+And power reaches immediately the first filtering capacitor.
+
+16
+00:01:29,490 --> 00:01:33,110
+Capacitor is 100 nF, 275 V.
+
+17
+00:01:33,470 --> 00:01:37,950
+Next reaches the mains filter with counter windings.
+
+18
+00:01:38,650 --> 00:01:44,970
+It's specifically made for DC voltage to pass through the mains filtering capacitance.
+
+19
+00:01:44,970 --> 00:01:49,890
+Unimpeded, any variable component is suppressed.
+
+20
+00:01:50,510 --> 00:01:55,950
+After, power output reaches one more filtering capacitance.
+
+21
+00:01:56,350 --> 00:01:58,870
+Also 100 nF, 275 V.
+
+22
+00:02:00,110 --> 00:02:05,970
+And then power reaches the main accumulator.
+
+23
+00:02:06,310 --> 00:02:07,910
+Electrolytic capacitor.
+
+24
+00:02:08,670 --> 00:02:11,510
+Its capacitance 47 µF at 400 V.
+
+25
+00:02:12,050 --> 00:02:27,410
+Voltage here should be taken on this capacitor no less than 400 V, because in the whole system already there may be high-voltage potential, so this capacitor doesn't blow, isn't
+
+26
+00:02:27,410 --> 00:02:29,590
+broken from high-voltage pickup.
+
+27
+00:02:30,650 --> 00:02:37,990
+Then in parallel with it a capacitor is installed, which also has special requirements.
+
+28
+00:02:38,370 --> 00:02:40,150
+Also no less than 400 V.
+
+29
+00:02:41,250 --> 00:02:44,090
+Capacitance in this case 155 nF.
+
+30
+00:02:45,970 --> 00:02:47,990
+But requirements are these.
+
+31
+00:02:48,170 --> 00:02:52,290
+Must be film capacitor, high-frequency.
+
+32
+00:02:52,370 --> 00:02:55,450
+CBB81 mark fits.
+
+33
+00:02:56,770 --> 00:03:07,670
+It's needed for forming a sharp pulse that'll be on the collector of this transistor.
+
+34
+00:03:09,090 --> 00:03:15,090
+This pulse is sent subsequently to the inductor of the Tesla high-voltage coil.
+
+35
+00:03:17,050 --> 00:03:29,530
+System is assembled on a transistor and two resistors that form a voltage divider.
+
+36
+00:03:30,470 --> 00:03:40,870
+One resistor connects directly between minus power and transistor base, second resistor between plus power and transistor base.
+
+37
+00:03:41,390 --> 00:03:49,090
+A voltage divider is formed that creates an offset point on this transistor's base.
+
+38
+00:03:49,850 --> 00:04:04,450
+But what needs to not be forgotten here is that not only two resistors work, but also a resistor formed by the base-emitter junction in the transistor's semiconductor itself.
+
+39
+00:04:05,670 --> 00:04:09,410
+Such complex divider relative to minus we get.
+
+40
+00:04:09,630 --> 00:04:12,250
+Three resistances participate.
+
+41
+00:04:13,070 --> 00:04:19,670
+In this case resistance between base and emitter is 2.7 kΩ.
+
+42
+00:04:20,010 --> 00:04:26,710
+Resistance included between plus power and base is 3.3 kΩ.
+
+43
+00:04:27,430 --> 00:04:32,350
+Tested, works at resistance 1-10 kΩ.
+
+44
+00:04:34,350 --> 00:04:44,430
+The higher the value of this resistance, the less the whole system as a whole will consume.
+
+45
+00:04:45,030 --> 00:04:47,470
+What interesting work.
+
+46
+00:04:48,250 --> 00:04:51,970
+This will be considered later, for now just explaining.
+
+47
+00:04:52,570 --> 00:04:57,570
+Here by oscillogram we should get this signal.
+
+48
+00:04:58,530 --> 00:05:08,530
+Width of this signal corresponds to half period of high-voltage coil oscillation.
+
+49
+00:05:09,310 --> 00:05:15,630
+And inside this signal should be as many high-frequency peaks as possible.
+
+50
+00:05:16,430 --> 00:05:29,070
+They practically descend to zero of supply by voltage scale width.
+
+51
+00:05:29,990 --> 00:05:33,670
+But slightly not all the way.
+
+52
+00:05:33,870 --> 00:05:44,190
+And this forms such moment that the system ramps up with high-voltage high-frequency pulses.
+
+53
+00:05:44,310 --> 00:05:49,870
+But overall the high-voltage coil perceives this as one pulse.
+
+54
+00:05:51,210 --> 00:05:56,110
+And the more peaks here, the better this system's ramp-up happens.
+
+55
+00:05:58,230 --> 00:06:15,790
+Also, if this system is used directly on installation, one of moments how to synchronize it simply, here schematically presented our pot core, the system deflecting from the TV
+
+56
+00:06:15,790 --> 00:06:16,470
+screen.
+
+57
+00:06:17,830 --> 00:06:28,410
+Here 28 turns, say, whoever fits how much on half, we put on this output or this fast-acting diode.
+
+58
+00:06:29,710 --> 00:06:43,590
+This way we cut off the half from such signal, pass half-period of this signal and send to power input.
+
+59
+00:06:44,550 --> 00:06:49,830
+Exactly this capacitor will block this high-voltage spike.
+
+60
+00:06:51,270 --> 00:06:59,770
+Well as high-voltage, may be from 100 to 350-400 volts.
+
+61
+00:06:59,870 --> 00:07:03,350
+That is when system absorbs, it doesn't rise higher.
+
+62
+00:07:03,350 --> 00:07:06,290
+Also some drop happens on the diode.
+
+63
+00:07:07,590 --> 00:07:15,510
+And main part, what this filter is for — it removes all error.
+
+64
+00:07:16,130 --> 00:07:25,830
+And power reaching the system is already single-polar, synchronously with one half-period of push-pull.
+
+65
+00:07:26,350 --> 00:07:38,890
+When it works, we need, for example, to switch the diode either here or here, swap these wires, and can run this system on half-period positive or, say, by half-period
+
+66
+00:07:38,890 --> 00:07:39,610
+negative.
+
+67
+00:07:39,710 --> 00:07:41,290
+Simplest synchronization.
+
+68
+00:07:41,870 --> 00:07:43,470
+Of course not the most efficient.
+
+69
+00:07:44,130 --> 00:07:52,030
+Much more efficient of course will be electronic synchronization, but nevertheless work with this synchronization is possible.
+
+70
+00:07:54,930 --> 00:08:08,290
+Use of such filter of two capacitances and counter-wound transformer on a single core provides some decoupling from the power source.
+
+71
+00:08:08,530 --> 00:08:18,910
+And main thing, if we use this synchronization system, it removes interference present at input.
+
+72
+00:08:19,630 --> 00:08:32,270
+And it also filters interference that can come from Tesla high-voltage coil operation to power source back.
+
+73
+00:08:32,870 --> 00:08:37,750
+We also see we have grounding.
+
+74
+00:08:38,050 --> 00:08:42,030
+It's connected directly to the emitter of this transistor.
+
+75
+00:08:44,970 --> 00:08:51,550
+And if we look, the minus goes through filter to grounding.
+
+76
+00:08:52,230 --> 00:08:56,610
+Also our grounding isn't directly connected.
+
+77
+00:08:56,830 --> 00:09:05,230
+Galvanic connection exists, but connection by high-frequency part is absent.
+
+78
+00:09:05,350 --> 00:09:15,430
+This way we protect our common system from interference that may be during coil operation itself.
+
+79
+00:09:16,890 --> 00:09:18,690
+Here another interesting moment.
+
+80
+00:09:19,250 --> 00:09:24,750
+This transistor has quite high parameters.
+
+81
+00:09:25,270 --> 00:09:33,330
+That is voltage between collector and base 230 volts max possible.
+
+82
+00:09:33,830 --> 00:09:38,090
+Voltage between collector and emitter 230 volts also.
+
+83
+00:09:38,590 --> 00:09:45,950
+And voltage between emitter and base only 5 volts ultimate control possible.
+
+84
+00:09:47,110 --> 00:09:54,970
+How does it work that we connect our transistor directly to cold end of high-voltage coil?
+
+85
+00:09:55,150 --> 00:09:57,530
+Seemingly kilovolts here.
+
+86
+00:09:58,250 --> 00:10:03,330
+Why ultimate voltage 5 volts, this transistor works?
+
+87
+00:10:04,230 --> 00:10:13,990
+The whole thing is during Tesla high-voltage coil operation we have phase shift between current and voltage.
+
+88
+00:10:14,570 --> 00:10:22,130
+And it turns out at this point, base-emitter junction, as such no high-voltage exists.
+
+89
+00:10:23,410 --> 00:10:38,190
+There depending on mode may be tenths of volts, well or it all depends on offset point and coil ramp-up to 2-2.5 volts.
+
+90
+00:10:38,330 --> 00:10:50,070
+And need to understand, so our transistor doesn't fail, we created here with divider from resistors some offset, positive potential.
+
+91
+00:10:50,430 --> 00:11:02,270
+And also our transistor starts, since it's NPN polarity, conductivity of this transistor, it triggers by positive half-period.
+
+92
+00:11:02,370 --> 00:11:15,590
+And need to watch so at this point on base voltage of offset plus voltage potential present in positive half-period don't exceed 5 volts.
+
+93
+00:11:16,250 --> 00:11:19,570
+After exceeding this transistor fails.
+
+94
+00:11:21,370 --> 00:11:38,170
+Works up to plus 150 degrees Celsius, and this means need to understand temperature, these 150 degrees Celsius, is temperature directly in semiconductor crystal.
+
+95
+00:11:38,570 --> 00:11:53,490
+If we examine our transistor, semiconductor crystal is in this zone, mounted on this metal pad which is for us both pad for heat removal and it's
+
+96
+00:11:53,490 --> 00:11:58,650
+galvanically connected directly with collector of this transistor.
+
+97
+00:11:59,530 --> 00:12:07,350
+That is in this case 150 degrees is exactly crystal temperature, not heat sink.
+
+98
+00:12:07,970 --> 00:12:23,370
+Need to watch this transistor's heat sink temperature and approximately if our heat sink temperature rises to 120 degrees, we'll have danger that this transistor will fail
+
+99
+00:12:23,370 --> 00:12:32,630
+since crystal temperature itself at 120 degrees of heat sink will already be in area 145 degrees inside transistor.
+
+100
+00:12:33,130 --> 00:12:41,910
+Well and this circuit is designed so we won't have big temperature rises here.
+
+101
+00:12:42,110 --> 00:12:51,670
+At 24-volt power, I tested it also at 50 volts, heat sink handles great and basically no heating.
+
+102
+00:12:52,310 --> 00:13:07,610
+We saw this system in some videos tunes so here's a single pulse, get maximum amplitude at this system's output.
+
+103
+00:13:08,110 --> 00:13:15,290
+Want to say from practice it turned out this isn't the operating mode we need.
+
+104
+00:13:15,890 --> 00:13:33,330
+Maximum output from coil at minimum consumption can only be at such pulse high-frequency operation of this transistor relative to high-voltage coil's frequency itself.
+
+105
+00:13:34,450 --> 00:13:40,630
+Now we'll look at how system is implemented in metal.
+
+106
+00:13:42,210 --> 00:13:50,910
+Before you the circuit layout on which all parts are mounted.
+
+107
+00:13:52,350 --> 00:13:54,930
+What do we see here first?
+
+108
+00:13:55,610 --> 00:13:59,310
+Power input terminals, plus and minus.
+
+109
+00:14:00,350 --> 00:14:16,250
+First filter capacitance 100 nF, filter itself with counter windings, after it second capacitance, main accumulator and main fast-acting reset capacitor.
+
+110
+00:14:17,030 --> 00:14:20,390
+From it there's plus output, here minus.
+
+111
+00:14:20,810 --> 00:14:25,470
+From minus lead wire went directly to grounding.
+
+112
+00:14:26,790 --> 00:14:36,270
+So assembled for fitting system of divider that creates offset on transistor base.
+
+113
+00:14:37,870 --> 00:14:45,390
+One transistor fits to plus, another connects to minus, directly to emitter.
+
+114
+00:14:45,450 --> 00:14:46,870
+This wire goes to base.
+
+115
+00:14:47,410 --> 00:14:54,190
+Divider is selected for optimal operation, after which mounted on circuit.
+
+116
+00:14:55,070 --> 00:15:00,590
+Transistor is on massive heat sink.
+
+117
+00:15:00,770 --> 00:15:03,970
+As it turned out, such big heat sink isn't needed.
+
+118
+00:15:04,510 --> 00:15:12,690
+This system, heat sink at 24-volt supply voltage doesn't heat above 45 degrees.
+
+119
+00:15:12,850 --> 00:15:14,410
+Heat sink can be reduced.
+
+120
+00:15:15,010 --> 00:15:36,310
+I didn't use thermal insulating pad, which is galvanic isolation between heat sink and transistor itself, in order that in system better cooling is organized.
+
+121
+00:15:37,550 --> 00:15:42,250
+This system is heat sink-collector of this transistor.
+
+122
+00:15:42,430 --> 00:15:46,870
+Can track oscillogram directly on it.
+
+123
+00:15:48,730 --> 00:15:54,570
+Moving to, in my view, most important part of our system.
+
+124
+00:15:55,050 --> 00:15:57,710
+This is our high-voltage coil.
+
+125
+00:16:00,110 --> 00:16:11,650
+We often see in video clips from internet when these coils are wound on tubes taken from sewage, that is plastics.
+
+126
+00:16:12,510 --> 00:16:19,390
+As turned out in practice, plastic isn't suitable at all for winding these coils.
+
+127
+00:16:20,490 --> 00:16:21,490
+What happens?
+
+128
+00:16:22,890 --> 00:16:25,350
+Such experiment was set up.
+
+129
+00:16:26,050 --> 00:16:48,350
+On this carcass, which is cardboard, can easily get baking foil, and there are very good, quality-made carcasses there.
+
+130
+00:16:48,970 --> 00:16:49,890
+One of methods.
+
+131
+00:16:49,910 --> 00:16:54,090
+Or any other cardboard tubes you can find.
+
+132
+00:16:54,970 --> 00:17:05,790
+On this carcass winding was done over length 30 cm, wire cross-section 0.75 mm.
+
+133
+00:17:08,130 --> 00:17:17,490
+And this coil was connected to such quite large in dimensions antenna.
+
+134
+00:17:17,990 --> 00:17:26,730
+Antenna is made of aluminum wire, 7 turns, winding diameter 135 mm.
+
+135
+00:17:27,910 --> 00:17:42,030
+Expected, by analogy with windings on plastic tubes, to see frequency in area 600 to 750 kHz.
+
+136
+00:17:42,190 --> 00:17:56,530
+When system was started and frequency characteristic was taken, turned out for such long winding frequency together of whole system was 1.2 MHz.
+
+137
+00:17:57,530 --> 00:18:15,610
+After which on carcass of equivalent diameter from plastic, like sewage tube, this same wire was wound and frequency characteristic was compared.
+
+138
+00:18:16,470 --> 00:18:28,030
+And turned out to achieve on this same system frequency 1.2 MHz, we needed to wind 9.5 mm on plastic tube.
+
+139
+00:18:29,070 --> 00:18:33,670
+From which conclusion was made that plastic isn't suitable at all for these windings.
+
+140
+00:18:34,890 --> 00:18:38,770
+Another negative feature of plastic tubes turns out.
+
+141
+00:18:38,950 --> 00:18:43,790
+It very strongly suppresses both system frequency and its Q-factor.
+
+142
+00:18:45,230 --> 00:18:48,050
+High-voltage coil works much worse.
+
+143
+00:18:48,650 --> 00:18:57,810
+Need to apply greater supply voltage for ramping up high-voltage Tesla coil specifically on plastic tube.
+
+144
+00:18:58,570 --> 00:19:12,450
+We'll see this system that's assembled like this can already be operational from 1.6 V applied voltage at system power input.
+
+145
+00:19:12,710 --> 00:19:31,790
+Already autogenerator starts and we have on... if we lay probe near this antenna, we'll see that clean nice sine already exists even at this supply voltage.
+
+146
+00:19:31,990 --> 00:19:35,230
+That is the Q-factor of the system comes out very high.
+
+147
+00:19:36,410 --> 00:19:40,290
+Now another interesting question often asked.
+
+148
+00:19:41,250 --> 00:19:47,010
+Can you wind these coils by soldering the wire?
+
+149
+00:19:47,870 --> 00:19:55,890
+Here on this coil can see 1, 2, 3, 4 and on this side one more, fifth solder.
+
+150
+00:19:56,650 --> 00:20:03,330
+During frequency fitting I used wire unwinding method.
+
+151
+00:20:04,390 --> 00:20:14,070
+During this wire naturally had to be cut and for retuning to other frequencies wire was soldered.
+
+152
+00:20:14,930 --> 00:20:30,350
+As turned out, if you have good grounding in this case, here it's very good, welding cable 25 sq, but I tried also on 4 sq mm wire.
+
+153
+00:20:30,730 --> 00:20:40,070
+Special difference I didn't see particularly, so don't need to chase welding cable for improving these systems.
+
+154
+00:20:40,230 --> 00:20:41,870
+But nevertheless, good grounding.
+
+155
+00:20:42,410 --> 00:20:59,930
+And if grounding is good, good contact with soil, then deterioration of operation or any harmonics, distortion of sine signal and other things on wire that's soldered isn't observed.
+
+156
+00:21:00,090 --> 00:21:01,710
+That is coil works cleanly.
+
+157
+00:21:02,170 --> 00:21:15,130
+Main thing to do is clean both wires of lacquer qualitatively, directly twist them between each other and only after this tin with solder.
+
+158
+00:21:15,130 --> 00:21:20,850
+Then heat-shrink is put on and this wire works without problems.
+
+159
+00:21:24,990 --> 00:21:28,710
+Now another important moment.
+
+160
+00:21:30,770 --> 00:21:45,390
+Few know that Tesla coils work, if you can put it this way, perceive electromagnetic radiation from inductor by volume.
+
+161
+00:21:46,070 --> 00:21:56,270
+That is for these inductor dimensions there are minimum allowable geometric dimensions of Tesla coil itself.
+
+162
+00:21:56,970 --> 00:22:12,990
+In case these minimum dimensions aren't maintained, system inductor will already enter excitation, its own oscillations will form on it, it'll interfere with whole system operation and
+
+163
+00:22:12,990 --> 00:22:19,670
+high-voltage coil will already be much worse coordinated with the inductor itself.
+
+164
+00:22:20,310 --> 00:22:33,690
+Don't, for purposes of reducing frequency, wind with very thin wire, that is use wires less than 0.5 mm cross-section.
+
+165
+00:22:34,590 --> 00:22:42,470
+These Tesla coils on tubes diameter from 40 to 50 mm aren't advisable to make with thin wires.
+
+166
+00:22:42,990 --> 00:22:54,230
+We need some volume occupied by this coil in space to perceive electromagnetic wave from this inductor.
+
+167
+00:22:55,630 --> 00:22:58,490
+Need to understand this and coordinate.
+
+168
+00:22:59,170 --> 00:23:03,050
+Also there are two variants of frequency fitting.
+
+169
+00:23:03,890 --> 00:23:12,130
+First we discussed, when we unwind wire, that way with unwinding wire we'll increase frequency.
+
+170
+00:23:12,830 --> 00:23:15,810
+Either we can go another direction.
+
+171
+00:23:16,170 --> 00:23:35,210
+We can leave wire length in system, that which filled this carcass, and change frequency directly with help of geometric dimensions, say stretching, increasing diameter or increasing
+
+172
+00:23:35,210 --> 00:23:37,650
+turn count of antenna itself.
+
+173
+00:23:38,410 --> 00:23:43,010
+In some cases in these systems we work with, it's advisable.
+
+174
+00:23:43,090 --> 00:23:58,810
+Say, if we consider moment that need to leave certain length of high-voltage coil wire that correlates with receiving coil wire length, and frequency needs to be
+
+175
+00:23:58,810 --> 00:24:01,650
+changed, that is fit by frequency.
+
+176
+00:24:02,250 --> 00:24:09,670
+Wire length stays unchanged, and frequency we change exactly with help of our antenna.
+
+177
+00:24:10,750 --> 00:24:14,450
+About the antenna, very important information.
+
+178
+00:24:16,810 --> 00:24:20,810
+Antenna can't be wound with copper wire.
+
+179
+00:24:21,610 --> 00:24:30,370
+First thing that happens, copper wire very hard parts with static.
+
+180
+00:24:31,370 --> 00:24:45,390
+It more, our material is intended for working exactly with direct current movement, that is heavy charge movement directly along surface or in crystal lattice of this
+
+181
+00:24:45,390 --> 00:24:46,510
+conductor.
+
+182
+00:24:47,130 --> 00:24:52,310
+This material is good to use where you need to create magnetic field.
+
+183
+00:24:52,870 --> 00:25:00,110
+Where work with static is needed, recommend using exactly aluminum.
+
+184
+00:25:00,550 --> 00:25:03,370
+First, such a test was conducted.
+
+185
+00:25:04,170 --> 00:25:12,910
+Wound antenna of aluminum and wound with same cross-section was antenna of copper wire.
+
+186
+00:25:13,370 --> 00:25:19,630
+Dimensions, wire length, diameter were identical and frequency measurements were done.
+
+187
+00:25:20,030 --> 00:25:34,030
+And turned out that with copper antenna system frequency was 150 kHz lower than with antenna of equivalent geometric dimensions of aluminum.
+
+188
+00:25:35,270 --> 00:25:38,350
+Can conduct these experiments and confirm yourself.
+
+189
+00:25:39,270 --> 00:25:42,470
+That is, I don't recommend using copper for antenna.
+
+190
+00:25:43,170 --> 00:25:48,110
+Copper creates, by the way, strong magnetic field.
+
+191
+00:25:48,350 --> 00:25:57,610
+When our systems work, we can't have magnetic field here in this zone right on the antenna.
+
+192
+00:25:58,090 --> 00:26:09,750
+We need exactly alternating electric potential that'll act later, interact with magnetic field in our resonator.
+
+193
+00:26:10,270 --> 00:26:12,730
+That's why use aluminum.
+
+194
+00:26:15,270 --> 00:26:18,150
+Moving to our device's operation.
+
+195
+00:26:18,290 --> 00:26:21,570
+Now look at power oscillograms.
+
+196
+00:26:23,590 --> 00:26:28,390
+Will start this system from lab power source.
+
+197
+00:26:28,750 --> 00:26:36,490
+Now see voltage supply is 1.3 V and consumption is zero.
+
+198
+00:26:36,630 --> 00:26:38,830
+That is system isn't started yet.
+
+199
+00:26:40,930 --> 00:26:47,790
+Connected yellow oscilloscope channel, probe itself to collector of this transistor.
+
+200
+00:26:48,950 --> 00:26:57,890
+Oscilloscope common connected to grounding wire, actually to transistor's emitter and wire going to ground.
+
+201
+00:26:59,890 --> 00:27:09,850
+Now I'll smoothly raise supply voltage and we'll see voltage at which system starts.
+
+202
+00:27:10,210 --> 00:27:18,530
+That is we'll see on blue oscilloscope channel oscillations of sine form.
+
+203
+00:27:20,170 --> 00:27:21,390
+Raising voltage.
+
+204
+00:27:22,970 --> 00:27:32,890
+And here we see voltage was raised by just some tenths of volt.
+
+205
+00:27:33,150 --> 00:27:37,850
+Now it's 1.3 V.
+
+206
+00:27:37,950 --> 00:27:42,610
+And see practically no consumption from system at all.
+
+207
+00:27:42,890 --> 00:27:46,070
+But system already works.
+
+208
+00:27:47,990 --> 00:27:55,470
+That is, wound on cardboard carcass provides very high system Q-factor.
+
+209
+00:27:55,570 --> 00:27:59,950
+It can work with minimum consumption.
+
+210
+00:28:02,130 --> 00:28:04,190
+Raising consumption.
+
+211
+00:28:05,350 --> 00:28:06,890
+Now steadily visible.
+
+212
+00:28:07,170 --> 00:28:09,210
+1.4 V.
+
+213
+00:28:09,970 --> 00:28:11,330
+1.5 V.
+
+214
+00:28:11,330 --> 00:28:13,610
+1.6 V.
+
+215
+00:28:13,630 --> 00:28:14,670
+1.7 V.
+
+216
+00:28:14,670 --> 00:28:16,550
+1.8 V.
+
+217
+00:28:17,250 --> 00:28:35,270
+At such 1.8 V consumption, 0.03 A, on the antenna we already have some potential that can be fixed with neon bulb.
+
+218
+00:28:36,170 --> 00:28:38,870
+See lamp glows when touching wire.
+
+219
+00:28:40,090 --> 00:28:43,290
+System starts showing our properties.
+
+220
+00:28:44,050 --> 00:28:48,410
+Of course at such values we don't exploit it.
+
+221
+00:28:49,510 --> 00:28:51,630
+Now I'll raise supply voltage.
+
+222
+00:28:54,250 --> 00:29:00,350
+And we'll examine oscillogram of transistor operation directly on collector.
+
+223
+00:29:00,470 --> 00:29:14,460
+So we see how system works, synchronize and examine.
+
+224
+00:29:14,900 --> 00:29:25,420
+Here we see our peaks I talked about, high-frequency on collector.
+
+225
+00:29:27,320 --> 00:29:37,220
+See synchronization, transistor startup happens at positive half-period of coil oscillation itself.
+
+226
+00:29:39,300 --> 00:29:51,260
+Now system operating frequency, can see in upper right corner, 1.33 MHz.
+
+227
+00:29:52,780 --> 00:30:02,640
+Winding now is on coil carcass 4.5 cm.
+
+228
+00:30:03,320 --> 00:30:08,140
+Diameter of carcass itself is 25 cm winding.
+
+229
+00:30:08,840 --> 00:30:15,400
+At such antenna visible frequency quite high.
+
+230
+00:30:16,420 --> 00:30:21,800
+And see our transistor starts working.
+
+231
+00:30:22,080 --> 00:30:31,080
+First spike, then voltage level drop, then another spike and another.
+
+232
+00:30:31,440 --> 00:30:34,100
+Now I'll raise supply voltage too.
+
+233
+00:30:34,100 --> 00:30:36,260
+Now it's 7.5 V.
+
+234
+00:30:36,480 --> 00:30:40,300
+And we'll see number of these spikes will increase.
+
+235
+00:30:40,960 --> 00:30:43,420
+But with this amplitude will grow.
+
+236
+00:30:44,480 --> 00:30:46,020
+Bring to nominal.
+
+237
+00:30:46,900 --> 00:30:48,020
+Now 9 V.
+
+238
+00:30:49,880 --> 00:30:57,020
+And look at spike amplitude when supply is 24 V.
+
+239
+00:31:02,840 --> 00:31:06,760
+Now precisely set 24 V supply.
+
+240
+00:31:07,400 --> 00:31:12,760
+See another peak appeared.
+
+241
+00:31:13,860 --> 00:31:22,100
+That is with raising specifically amplitude of supply voltage, number of such spikes will be higher.
+
+242
+00:31:22,940 --> 00:31:31,560
+And the more number of these spikes, the better our system works, more economically.
+
+243
+00:31:31,840 --> 00:31:36,000
+Than when we tune system to have only one peak.
+
+244
+00:31:36,600 --> 00:31:42,760
+In this case spike amplitude visible.
+
+245
+00:31:43,940 --> 00:31:51,080
+It's, highest amplitude by first pulse is 136 V.
+
+246
+00:31:51,080 --> 00:31:54,260
+At 24 V supply.
+
+247
+00:31:55,240 --> 00:32:03,920
+And see voltage corresponds to 24 V applied to input.
+
+248
+00:32:04,760 --> 00:32:11,000
+And consumes just 0.6 A.
+
+249
+00:32:11,640 --> 00:32:21,240
+Also can note lamp that's near antenna burns.
+
+250
+00:32:21,920 --> 00:32:25,380
+Fluorescent burns brightly, very well.
+
+251
+00:32:26,460 --> 00:32:32,840
+That is all effects accompanying normal mode operation, we have.
+
+252
+00:32:33,500 --> 00:32:37,600
+Neon lamp glows at big distance.
+
+253
+00:32:37,700 --> 00:32:39,540
+Now look at distance.
+
+254
+00:32:39,840 --> 00:32:45,620
+Starts glowing somewhere from 35 cm to antenna itself.
+
+255
+00:32:47,920 --> 00:32:54,900
+Also there's stable discharge to metal objects.
+
+256
+00:32:56,680 --> 00:32:58,220
+Now examining it.
+
+257
+00:33:03,440 --> 00:33:10,020
+It corresponds... Length about a centimeter.
+
+258
+00:33:15,120 --> 00:33:17,840
+Can stretch stable arc.
+
+259
+00:33:21,490 --> 00:33:26,570
+That is all accompanying effects with such tuning system has.
+
+260
+00:33:27,670 --> 00:33:35,310
+It works no worse than when we have only one spike, but in much more economical mode.
+
+261
+00:33:36,230 --> 00:33:39,050
+Recommend exactly such operating mode on Kacher.
+
+262
+00:33:39,690 --> 00:33:40,730
+You'll see difference.
+
+263
+00:33:42,330 --> 00:33:44,650
+It's brightly noticeable.
+
+264
+00:33:48,190 --> 00:34:00,930
+Also can verify interesting moment of operation if we synchronize oscilloscope not relative to grounding wire but relative to plus supply.
+
+265
+00:34:01,150 --> 00:34:03,710
+Our grounding was now synchronization.
+
+266
+00:34:03,930 --> 00:34:11,430
+Now we'll hang on plus supply and look what'll be on collector.
+
+267
+00:34:12,850 --> 00:34:24,190
+Hooked common on plus, attached to heat sink, to eye, since it's galvanically not connected with collector.
+
+268
+00:34:26,370 --> 00:34:33,050
+And now examining operation in such measurement.
+
+269
+00:34:37,650 --> 00:34:39,170
+Raising voltage.
+
+270
+00:34:42,110 --> 00:34:49,310
+Now 19, 20, 24 V supply.
+
+271
+00:34:50,850 --> 00:34:56,910
+What's interesting to note in such mode?
+
+272
+00:34:56,990 --> 00:35:17,130
+Since we now synchronize relative to plus supply, see our maximum amplitude is less, 106 V, but we can also see that drop amplitude in minus common, which
+
+273
+00:35:17,130 --> 00:35:24,230
+goes, since synchronization by plus, it corresponds approximately to supply voltage.
+
+274
+00:35:25,170 --> 00:35:31,430
+Now 24 V, but we fix here about 27 V drop.
+
+275
+00:35:31,550 --> 00:35:44,350
+That is some shift to minus observed, but peaks are also positive even relative to plus supply of system.
+
+276
+00:35:47,190 --> 00:36:03,120
+Nothing mysterious here, because spike amplitude itself has positive potential much greater than potential of supply applied to plus input.
+
+277
+00:36:03,380 --> 00:36:09,280
+So relative to plus we see our drop, practically equal to supply voltage.
+
+278
+00:36:10,120 --> 00:36:15,320
+Well and pulse itself goes to positive half-period.
+
+279
+00:36:16,640 --> 00:36:33,460
+Here marker under number one, yellow, shows us moment of beginning of zero of scale, relative to which oscillogram is centered on screen.
+
+280
+00:36:36,630 --> 00:36:55,130
+Can also, without fear of burning oscilloscope course, do measurements on transistor base when system is connected to grounding.
+
+281
+00:36:55,530 --> 00:37:01,190
+Nothing scary, oscillogram can be observed there.
+
+282
+00:37:01,330 --> 00:37:15,090
+Now I'll connect second oscilloscope probe directly to base and look at signal coming to us from coil to base of this transistor.
+
+283
+00:37:16,610 --> 00:37:21,790
+Connected second oscilloscope channel directly to transistor base.
+
+284
+00:37:22,070 --> 00:37:29,190
+See it's at middle point of connection on resistor divider.
+
+285
+00:37:30,070 --> 00:37:34,090
+That is connected here.
+
+286
+00:37:35,330 --> 00:37:40,390
+Actually connected with cold end from high-voltage coil.
+
+287
+00:37:41,110 --> 00:37:54,970
+Such measurements can be done with oscilloscope at this point provided you have good grounding of high-voltage coil.
+
+288
+00:37:56,470 --> 00:38:05,370
+If you doubt your grounding, need to assemble here, look at something.
+
+289
+00:38:05,890 --> 00:38:09,830
+Need device, oscilloscope itself, not be grounded.
+
+290
+00:38:10,910 --> 00:38:12,870
+This is important for work.
+
+291
+00:38:13,610 --> 00:38:18,750
+Also I recommend for device powering.
+
+292
+00:38:19,170 --> 00:38:25,090
+They're usually quite expensive for us and we don't want to part with them.
+
+293
+00:38:25,650 --> 00:38:32,590
+Need device power be decoupled from grounding.
+
+294
+00:38:33,490 --> 00:38:40,970
+That is on device plug we can always see grounding contact.
+
+295
+00:38:41,310 --> 00:38:47,230
+So it shouldn't be connected to grounding during work with high-voltage coil.
+
+296
+00:38:47,750 --> 00:38:48,110
+That's one.
+
+297
+00:38:48,350 --> 00:38:49,130
+And another.
+
+298
+00:38:50,210 --> 00:38:59,230
+Oscilloscope devices, signal generators and so on better turn on, for example, through two transformers.
+
+299
+00:38:59,350 --> 00:39:12,050
+Say if you have two transformers of about 200-300 watts power, sufficient for powering several devices.
+
+300
+00:39:12,230 --> 00:39:13,930
+Well or at least for oscilloscope.
+
+301
+00:39:14,450 --> 00:39:22,530
+You turn it on first with winding that goes for mains 220 V.
+
+302
+00:39:22,610 --> 00:39:28,010
+After which in step-down mode it outputs say 12, 24 or 36 V.
+
+303
+00:39:28,650 --> 00:39:31,270
+And second analogous connects in reverse.
+
+304
+00:39:32,050 --> 00:39:34,450
+With say 12 V winding.
+
+305
+00:39:34,450 --> 00:39:44,210
+From 12 V output of first capacitor already take output voltage that's applied to device's mains winding.
+
+306
+00:39:45,570 --> 00:39:50,770
+This way you decouple device through two transformers from mains.
+
+307
+00:39:51,550 --> 00:39:54,870
+This is very useful in work and will protect your devices.
+
+308
+00:39:55,510 --> 00:40:00,170
+Well and oscillogram we can observe on transistor base.
+
+309
+00:40:00,830 --> 00:40:02,070
+This is by voltage.
+
+310
+00:40:02,490 --> 00:40:03,470
+Now oscillogram.
+
+311
+00:40:04,610 --> 00:40:14,270
+See transistor on collector repeats voltage form on base.
+
+312
+00:40:15,950 --> 00:40:23,030
+These signals we have, exactly in positive half-period.
+
+313
+00:40:23,970 --> 00:40:26,550
+This is for interest.
+
+314
+00:40:26,610 --> 00:40:31,050
+If interested, can look for yourself, investigate.
+
+315
+00:40:32,270 --> 00:40:41,190
+And also we can do, say, measurement in this system through current sensor.
+
+316
+00:40:41,930 --> 00:40:50,930
+Now we'll look made on ferrite ring what happens in grounding wire.
+
+317
+00:40:51,070 --> 00:40:54,250
+Can examine exactly by current.
+
+318
+00:40:54,430 --> 00:40:57,150
+Now I'll install sensor and look too.
+
+319
+00:40:59,590 --> 00:41:01,990
+Connected current sensor.
+
+320
+00:41:02,430 --> 00:41:08,930
+It's put directly on wire going to grounding from transistor emitter.
+
+321
+00:41:11,250 --> 00:41:19,710
+And second oscilloscope channel is about 15 cm from antenna.
+
+322
+00:41:20,250 --> 00:41:23,310
+By the way, another important note about device protection.
+
+323
+00:41:23,690 --> 00:41:36,570
+Never connect oscilloscope to high-voltage end of coil, or its ending, which is this antenna.
+
+324
+00:41:37,650 --> 00:41:40,870
+Can very easily part with your device.
+
+325
+00:41:40,970 --> 00:41:52,430
+All voltage measurements in this case done with probe that's at some distance from high-voltage part.
+
+326
+00:41:53,450 --> 00:42:00,450
+I use probes, recommend these for 1500 V.
+
+327
+00:42:00,710 --> 00:42:10,070
+They very well transmit both frequencies and voltage even when working with ordinary electronics.
+
+328
+00:42:10,250 --> 00:42:15,270
+That is specifically bought them, they don't come in oscilloscope kit.
+
+329
+00:42:15,570 --> 00:42:23,050
+But nevertheless 1500 V you have good reserve so as not to burn device.
+
+330
+00:42:24,710 --> 00:42:28,250
+And now we connected current sensor, examining oscillogram.
+
+331
+00:42:29,730 --> 00:42:37,370
+Remind, yellow channel is current in grounding wire, blue is voltage.
+
+332
+00:42:37,950 --> 00:42:45,870
+We see we have phase shift between current, yellow channel, and voltage.
+
+333
+00:42:46,270 --> 00:42:49,650
+And see such characteristic signals by current.
+
+334
+00:42:49,870 --> 00:42:53,230
+That is recall our this signal.
+
+335
+00:42:55,230 --> 00:43:01,110
+These peak strikes, they're reflected for us exactly by current.
+
+336
+00:43:01,150 --> 00:43:04,030
+These points above sine.
+
+337
+00:43:04,930 --> 00:43:15,350
+And correct inclusion of current sensor for this system will be moment when current leads voltage.
+
+338
+00:43:15,430 --> 00:43:17,090
+Voltage now blue channel.
+
+339
+00:43:17,090 --> 00:43:27,550
+Now we don't precisely see 90-degree phase shift, because to precisely examine this, need to hang resistance on current sensor.
+
+340
+00:43:28,190 --> 00:43:41,450
+But nevertheless, here 90-degree shift actually in our high-voltage coil, because all processes for us happen by current in systems.
+
+341
+00:43:42,410 --> 00:43:43,370
+Why by current?
+
+342
+00:43:43,470 --> 00:43:55,730
+Because to start, whole process starts when transistor commutates voltage applied to it, consequently current is fed to inductor.
+
+343
+00:43:56,330 --> 00:43:58,490
+Inductor forms magnetic field.
+
+344
+00:43:59,030 --> 00:44:02,290
+Magnetic field creates strike on coil.
+
+345
+00:44:02,430 --> 00:44:07,330
+That is we understand current passed through inductor, created magnetic field.
+
+346
+00:44:07,490 --> 00:44:15,230
+Magnetic field acts on this coil, after which oscillations ramp up in this coil.
+
+347
+00:44:15,350 --> 00:44:19,510
+So voltage lags relative to current for us.
+
+348
+00:44:21,110 --> 00:44:30,210
+And correct inclusion of polarity will be exactly that moment when we examine oscillogram, exactly when current leads voltage.
+
+349
+00:44:33,330 --> 00:44:35,330
+Good luck everyone in experiments.
+
+350
+00:44:35,510 --> 00:44:58,030
+In subsequent videos we'll look at how this layout assembled will help us determine the frequency at which high-voltage, high-frequency part should work relative to our grenade.

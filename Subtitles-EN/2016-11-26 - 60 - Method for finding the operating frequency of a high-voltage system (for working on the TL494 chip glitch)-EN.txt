@@ -1,0 +1,1079 @@
+1
+00:00:00,650 --> 00:00:02,120
+Greetings everyone.
+
+2
+00:00:03,340 --> 00:00:16,660
+Today I'll show you an interesting thing with which you can check what frequency to tune our Tesla to relative to the grenade.
+
+3
+00:00:18,220 --> 00:00:24,300
+Because this frequency can't be determined with a signal generator.
+
+4
+00:00:25,060 --> 00:00:38,920
+For example, if we connect the signal generator's probe to this antenna and run by frequency, we may not see this moment.
+
+5
+00:00:39,700 --> 00:00:45,320
+Not see it because this coil needs to be tested again under load.
+
+6
+00:00:45,480 --> 00:00:53,880
+Here we see we have hot coil end, cold one we start from, and load hangs on it.
+
+7
+00:00:54,040 --> 00:01:00,720
+For this test lamp for us is 15 W.
+
+8
+00:01:02,420 --> 00:01:18,260
+Lab signal generators of these types, of these, higher here, various samples whoever has which, they can't give such high potential to track to really see how
+
+9
+00:01:18,260 --> 00:01:25,040
+our coil reacts to electric field.
+
+10
+00:01:26,060 --> 00:01:28,380
+Essence of this construction.
+
+11
+00:01:29,260 --> 00:01:37,840
+I think many of you who assemble and tuned by frequency have some wire offcuts left.
+
+12
+00:01:37,920 --> 00:01:44,280
+Usually they lie as dead weight, sometimes we use them as jumper, but generally they exist.
+
+13
+00:01:45,660 --> 00:01:51,100
+Let's assemble such construction from these pieces.
+
+14
+00:01:52,740 --> 00:01:58,640
+It's all assembled from pieces of one wire because I cut a lot of it for frequency fitting.
+
+15
+00:01:59,800 --> 00:02:01,520
+And somehow this all bored me.
+
+16
+00:02:02,240 --> 00:02:11,540
+In general, step between leads about 0.8 cm to 1.5 cm.
+
+17
+00:02:11,900 --> 00:02:14,440
+Average step about a centimeter we make.
+
+18
+00:02:14,540 --> 00:02:20,100
+We make leads, about 20 taps and fill the carcass.
+
+19
+00:02:21,640 --> 00:02:30,420
+Carcass for us is cardboard so there's high coil Q-factor and bigger spectrum of frequencies we can capture.
+
+20
+00:02:30,440 --> 00:02:38,600
+Winding direction, as in this system, and in working sample when assemble setup.
+
+21
+00:02:39,140 --> 00:02:44,680
+Tesla winding direction to left side, that is counter-clockwise.
+
+22
+00:02:45,820 --> 00:03:00,980
+Because we have a rule that's known, I'll repeat once more, that left-side windings counter-clockwise are for electric field, right-side windings clockwise for
+
+23
+00:03:00,980 --> 00:03:02,180
+magnetic field.
+
+24
+00:03:03,160 --> 00:03:10,540
+On this antenna we need to get electric potential, so we wind exactly to the left.
+
+25
+00:03:11,780 --> 00:03:13,560
+Here about 20 leads.
+
+26
+00:03:13,900 --> 00:03:18,400
+Kacher schematic I gave in previous video, but won't stop on it.
+
+27
+00:03:18,920 --> 00:03:22,480
+Inductor we make movable so it can be moved.
+
+28
+00:03:23,160 --> 00:03:29,080
+And also visible we have alligator clip wire, wire goes to transistor base.
+
+29
+00:03:29,800 --> 00:03:34,140
+This allows us to move along this wire.
+
+30
+00:03:35,960 --> 00:03:40,160
+Movable inductor needed to smoothly tune frequency.
+
+31
+00:03:40,980 --> 00:03:54,360
+When we moved between one and another lead, smooth tuning between them can be done by slightly moving inductor left-right, this way frequency tuning happens.
+
+32
+00:03:54,940 --> 00:04:11,260
+If we need to shift these frequencies to lower-frequency component, then we can introduce ferrite rod, whoever has, can set of rings, into this construction and lower
+
+33
+00:04:11,260 --> 00:04:11,800
+frequencies.
+
+34
+00:04:12,240 --> 00:04:21,340
+If we need frequency on the contrary higher, then we can use variant of moving by leads.
+
+35
+00:04:22,300 --> 00:04:30,480
+And if we don't have enough of this frequency, we already reduce number of turns, change geometric dimensions of this antenna.
+
+36
+00:04:32,160 --> 00:04:35,880
+System comes out with wide range.
+
+37
+00:04:36,040 --> 00:04:39,160
+Before launching system connect grounding.
+
+38
+00:04:39,960 --> 00:04:55,340
+Grounding exactly that which will be standard on setup, because if we change grounding later, frequency will change slightly within some limits for this coil.
+
+39
+00:04:56,520 --> 00:04:59,860
+So it's advisable to use exactly that working one.
+
+40
+00:04:59,900 --> 00:05:13,540
+In this case here 20 m cable, wire connected to it, ends with alligator clip we'll connect to coil leads.
+
+41
+00:05:14,020 --> 00:05:31,760
+Turn on oscilloscope, lay probe at distance about 15 cm to effectively track frequency of this coil and magnitude of electric field around antenna.
+
+42
+00:05:33,200 --> 00:05:34,720
+Starting system.
+
+43
+00:05:36,320 --> 00:05:40,000
+Power will be from lab signal generator.
+
+44
+00:05:40,840 --> 00:05:45,060
+Supply voltage about 24 V.
+
+45
+00:05:45,140 --> 00:05:48,140
+Standard what they can be tuned to.
+
+46
+00:05:53,500 --> 00:05:58,540
+24 V amps and change we consume.
+
+47
+00:05:59,440 --> 00:06:10,060
+And here we see, now lamp lit up, we have little oscillogram, frequency 1 MHz and change.
+
+48
+00:06:10,540 --> 00:06:18,220
+But before start of test we need to exclude inductor's influence on this coil.
+
+49
+00:06:18,600 --> 00:06:25,620
+Because inductor is between antenna and resonator itself, its influence must be excluded.
+
+50
+00:06:26,080 --> 00:06:35,500
+Here can note now powerful pickups on inductor.
+
+51
+00:06:36,140 --> 00:06:38,100
+How can this be done?
+
+52
+00:06:38,320 --> 00:06:43,560
+Can use capacitor that'll later be installed on oscillating circuit.
+
+53
+00:06:44,100 --> 00:06:50,660
+This is in area 0.1 µF to 1 µF selection.
+
+54
+00:06:52,320 --> 00:06:54,280
+Or equivalently.
+
+55
+00:06:54,640 --> 00:06:56,540
+Say, in particular, capacitor.
+
+56
+00:06:57,230 --> 00:06:57,940
+Connect it.
+
+57
+00:06:58,600 --> 00:06:59,480
+High-voltage.
+
+58
+00:06:59,900 --> 00:07:03,180
+Visible load doesn't glow.
+
+59
+00:07:03,280 --> 00:07:03,760
+Remove.
+
+60
+00:07:03,920 --> 00:07:04,800
+Glow there.
+
+61
+00:07:05,380 --> 00:07:09,500
+But best method just to short the inductor.
+
+62
+00:07:10,020 --> 00:07:11,140
+Remove its influence.
+
+63
+00:07:11,380 --> 00:07:12,920
+Visible inductor shorted.
+
+64
+00:07:13,640 --> 00:07:15,680
+Load doesn't react in any way.
+
+65
+00:07:16,240 --> 00:07:20,480
+Next we connect to grounding to this coil.
+
+66
+00:07:21,720 --> 00:07:24,400
+Connect it on cold end.
+
+67
+00:07:26,360 --> 00:07:27,600
+Connected grounding.
+
+68
+00:07:27,740 --> 00:07:31,720
+See some glow appeared.
+
+69
+00:07:33,540 --> 00:07:36,600
+Observing such moment we'll track.
+
+70
+00:07:38,180 --> 00:07:38,880
+Look.
+
+71
+00:07:39,860 --> 00:07:42,380
+This magnitude with grounding connected.
+
+72
+00:07:42,740 --> 00:07:43,800
+Probe reacts.
+
+73
+00:07:44,340 --> 00:07:45,200
+Disconnecting.
+
+74
+00:07:45,340 --> 00:07:46,560
+See amplitude.
+
+75
+00:07:46,780 --> 00:07:55,280
+Our task to find that frequency at which electric field is maximally absorbed by this coil.
+
+76
+00:07:55,360 --> 00:07:57,740
+That is minimum amplitude by oscilloscope.
+
+77
+00:07:57,860 --> 00:07:59,040
+Probe is unchanging.
+
+78
+00:07:59,620 --> 00:08:04,740
+Also can track this moment with neon lamp.
+
+79
+00:08:04,840 --> 00:08:10,080
+Here, glow starts at distance about 18 cm.
+
+80
+00:08:10,800 --> 00:08:21,300
+Now, if I remove grounding wire, glow 40 cm from antenna.
+
+81
+00:08:21,740 --> 00:08:24,740
+That is visible equivalent neon lamp glow.
+
+82
+00:08:25,680 --> 00:08:30,220
+Return grounding and start tuning transition.
+
+83
+00:08:31,680 --> 00:08:34,600
+Start moving along leads.
+
+84
+00:08:36,400 --> 00:08:37,120
+Move.
+
+85
+00:08:37,800 --> 00:08:38,780
+Look.
+
+86
+00:08:39,580 --> 00:08:40,840
+Now first lead.
+
+87
+00:08:43,800 --> 00:08:46,060
+Connected from lamp glow.
+
+88
+00:08:46,200 --> 00:08:48,920
+Now move, say, to fourth lead.
+
+89
+00:08:50,240 --> 00:08:51,080
+Connected.
+
+90
+00:08:51,160 --> 00:08:52,140
+Glow higher.
+
+91
+00:08:52,700 --> 00:08:59,180
+Means we reduce wire amount, frequency raises.
+
+92
+00:08:59,820 --> 00:09:00,820
+And one more moment.
+
+93
+00:09:01,420 --> 00:09:12,060
+Need exactly that antenna be connected to hot end, not move hot end but exactly ground point.
+
+94
+00:09:12,300 --> 00:09:25,920
+Otherwise, if you try opposite, this part, say, we'll move antenna connection, it'll play role for you as additional vibrator and bring distortion.
+
+95
+00:09:26,460 --> 00:09:35,640
+That is signal should be sine form, without any distortions.
+
+96
+00:09:35,740 --> 00:09:40,480
+This is most quality method for insurance.
+
+97
+00:09:40,740 --> 00:09:47,640
+Can also these ends that'll be free, even solder and connect again to this wire all.
+
+98
+00:09:47,820 --> 00:09:50,360
+This will fully exclude all influence.
+
+99
+00:09:51,140 --> 00:10:00,700
+So, next load glows, means can move our inductor a bit more, transfer board and move further.
+
+100
+00:10:00,900 --> 00:10:04,320
+Now switching gradually, observing load.
+
+101
+00:10:06,220 --> 00:10:11,180
+Switch fifth lead, glow grows.
+
+102
+00:10:11,720 --> 00:10:17,100
+Sixth lead, seventh, eighth.
+
+103
+00:10:17,700 --> 00:10:19,920
+See brightness rises.
+
+104
+00:10:20,960 --> 00:10:26,000
+Ninth, tenth, eleventh.
+
+105
+00:10:26,580 --> 00:10:29,480
+That is we have tendency to raise frequency.
+
+106
+00:10:30,640 --> 00:10:43,440
+In this case can fix that now frequency is megahertz here on antenna.
+
+107
+00:10:43,980 --> 00:10:46,300
+And load already glows nicely.
+
+108
+00:10:46,440 --> 00:10:47,580
+Test further.
+
+109
+00:10:47,980 --> 00:10:58,100
+Move our inductor, see maybe we'll manage to find still place where load will glow even brighter.
+
+110
+00:10:59,720 --> 00:11:01,320
+Move leads.
+
+111
+00:11:01,320 --> 00:11:07,060
+Even brighter glow we have.
+
+112
+00:11:07,940 --> 00:11:11,060
+Here quite bright.
+
+113
+00:11:12,160 --> 00:11:19,900
+Further moving, we have sixteenth lead out of twenty.
+
+114
+00:11:20,200 --> 00:11:22,040
+Already brightness decreases.
+
+115
+00:11:23,000 --> 00:11:25,240
+That is we can stop.
+
+116
+00:11:26,960 --> 00:11:29,640
+Fifteenth, sixteenth lead in this case.
+
+117
+00:11:31,400 --> 00:11:35,560
+Visible I went by leads to here.
+
+118
+00:11:37,780 --> 00:11:38,380
+And now
+
+119
+00:11:42,020 --> 00:11:48,780
+can play with inductor itself.
+
+120
+00:11:49,200 --> 00:11:51,040
+Between leads.
+
+121
+00:11:53,340 --> 00:11:58,540
+Move inductor and find maximum glow of our load.
+
+122
+00:12:00,000 --> 00:12:01,740
+This glow is maximum.
+
+123
+00:12:02,420 --> 00:12:10,020
+Also can note that consumption decreases when system works coordinated.
+
+124
+00:12:10,860 --> 00:12:18,620
+For my coil found optimal point where system frequency is connected.
+
+125
+00:12:18,880 --> 00:12:19,900
+Corresponds
+
+126
+00:12:23,340 --> 00:12:26,220
+1.135 MHz.
+
+127
+00:12:28,080 --> 00:12:34,680
+Next, to this system you can make load visualization.
+
+128
+00:12:35,200 --> 00:12:40,600
+Can make rectifier here and put devices.
+
+129
+00:12:41,440 --> 00:12:57,640
+Say, can put voltmeter on this setup and track not by eye how lamp glows, but track moment when voltmeter shows maximum voltage on load.
+
+130
+00:12:57,780 --> 00:13:03,440
+This will correspond to frequency needed for this coil.
+
+131
+00:13:03,540 --> 00:13:19,560
+Also for fixing result on frequency characteristic for this coil recommend after measurements with one antenna connect another, from less amount of wire, change in general our
+
+132
+00:13:19,560 --> 00:13:23,980
+dimensions with previous and check frequency too.
+
+133
+00:13:24,380 --> 00:13:32,920
+And at that or other frequency at this antenna we'll have effect of maximum absorption by our resonator.
+
+134
+00:13:33,840 --> 00:13:47,480
+And yes, really, visible that I hung much smaller in length antenna and with much bigger step connected to system.
+
+135
+00:13:47,620 --> 00:14:01,360
+Had to move to lead lower, move inductor, load equivalently glows and we can also fix this frequency.
+
+136
+00:14:04,100 --> 00:14:18,680
+Can play with this system at lower frequencies with ferrite introduction, that is this layout allows you to take full frequency characteristic of resonator.
+
+137
+00:14:21,320 --> 00:14:36,840
+Can play at higher frequencies, for this to hot end already not antenna is connected, but equivalent one turn.
+
+138
+00:14:37,380 --> 00:14:38,820
+And also look, test.
+
+139
+00:14:38,920 --> 00:14:43,600
+Can lead it along coil, look at dependencies, which happen.
+
+140
+00:14:44,060 --> 00:14:46,200
+This each makes himself, chooses.
+
+141
+00:14:46,500 --> 00:15:00,680
+Advise to make here still diode bridge, filter and put voltmeter, by which you'll judge by voltage, by tuning precision.
+
+142
+00:15:00,740 --> 00:15:16,500
+Changed our antenna, check also effect such, that observe at change of grounding point between cold and hot end, our power shouldn't change too strongly, that is consumption
+
+143
+00:15:16,500 --> 00:15:29,540
+now by cold end connected grounding, fix consumption, 24 V 0.75 A, move to hot end,
+
+144
+00:15:33,070 --> 00:15:35,110
+consumption slightly rose.
+
+145
+00:15:35,690 --> 00:15:56,150
+This is normal, because when we have hot end by grounding connected here, turns that perceive electric field from antenna are closer to container surface, so we have
+
+146
+00:15:56,150 --> 00:15:58,330
+slight consumption increase.
+
+147
+00:15:58,750 --> 00:16:12,470
+Overall we can observe that our consumption changes insignificantly, which means this is the frequency that most fits this coil and is coordinated with it.
+
+148
+00:16:13,730 --> 00:16:22,430
+Now moving to questions that in my view are actual and most interesting.
+
+149
+00:16:23,650 --> 00:16:25,110
+Question 1.
+
+150
+00:16:25,930 --> 00:16:33,910
+Is there dependence between high-voltage coil wire length and resonator wire length?
+
+151
+00:16:34,530 --> 00:16:46,870
+Question is correct, of course some dependence is there in wave distribution, that is, we wind high-voltage coil length equal to resonator wire length.
+
+152
+00:16:47,010 --> 00:16:59,590
+Either if our resonator requires higher frequency, then we wind high-voltage coil length equal to half of resonator wire length.
+
+153
+00:17:00,430 --> 00:17:02,930
+Also there's one more interesting moment.
+
+154
+00:17:03,110 --> 00:17:22,450
+This thing we all attach, called antenna, is in some dependence with capacitance, forms between its surface and grounded coil, that also influences
+
+155
+00:17:22,450 --> 00:17:23,010
+frequency.
+
+156
+00:17:23,610 --> 00:17:25,870
+But matter here isn't just this.
+
+157
+00:17:26,350 --> 00:17:32,090
+Length of this antenna's conductor must correspond
+
+158
+00:17:35,350 --> 00:17:41,250
+to effective radiation of frequency at which high-voltage coil operates.
+
+159
+00:17:41,430 --> 00:17:48,950
+That is antenna rules apply to these spiral resonators and they must effectively radiate.
+
+160
+00:17:49,050 --> 00:17:54,450
+That is basically quarter-wave radiator, or three quarters, or five quarters.
+
+161
+00:17:54,590 --> 00:17:58,830
+That is, we fit it for something like that by lengths.
+
+162
+00:17:59,550 --> 00:18:06,850
+Can simplest method, of course, is fitting by cutting off conductor length.
+
+163
+00:18:07,990 --> 00:18:14,630
+And achieve around this antenna maximum electric field.
+
+164
+00:18:14,690 --> 00:18:19,690
+That is, it can really work as antenna this system.
+
+165
+00:18:21,270 --> 00:18:26,750
+Repeating, under frequency on our Tesla that forms.
+
+166
+00:18:28,190 --> 00:18:41,510
+This already relates to antenna theory, that is the point that wire has for us physical length, diameter and also it's in coil for us.
+
+167
+00:18:42,050 --> 00:18:48,370
+For antennas here can calculate and even on some online calculators can calculate.
+
+168
+00:18:49,110 --> 00:19:04,290
+And when it's put exactly on coil and is in dependence with it in capacitance coupling, and coil is grounded, here these calculations don't quite fit, even quite strongly don't fit.
+
+169
+00:19:04,310 --> 00:19:09,150
+And so turns out moment that have to fit wire length in practice.
+
+170
+00:19:10,470 --> 00:19:22,850
+Since high-voltage coil conductor length is fixed for us, consequently frequency fitting we do by changing geometric dimensions of antenna exactly.
+
+171
+00:19:23,330 --> 00:19:29,450
+Compress, decompress its turns, increase diameters, that is, do manipulations with it.
+
+172
+00:19:29,890 --> 00:19:46,630
+And if we can't fit effective frequency we found out with this layout, then we change winding diameters of this wire at length that should correspond to wire length in coil.
+
+173
+00:19:48,690 --> 00:19:54,270
+Carcass diameters change, this'll also cause frequency characteristic shift.
+
+174
+00:19:54,850 --> 00:20:05,090
+Question two, where main processes happen, in the grenade itself or in its inductor.
+
+175
+00:20:05,990 --> 00:20:14,110
+On internet most common constructions people make, all processes happen in inductor.
+
+176
+00:20:14,830 --> 00:20:25,850
+And relative to inductor, grenade itself is just some amount of wire on which magnetic field acts.
+
+177
+00:20:26,370 --> 00:20:36,470
+Interaction happens exactly between antenna, electric field from Tesla, and magnetic field in inductor.
+
+178
+00:20:36,490 --> 00:20:39,790
+At that this coil is just a pickup.
+
+179
+00:20:40,450 --> 00:20:54,310
+But this mode is very unstable, this is mode when we make mediator, that is create at same mode, drive inductor into resonator mode and already just pick up.
+
+180
+00:20:54,430 --> 00:20:55,550
+And mode is inefficient.
+
+181
+00:20:55,670 --> 00:21:09,970
+Much more efficient to drive into resonator mode exactly main coil, and for inductor leave role of rotating magnetic field drive and already all processes happened exactly in this coil.
+
+182
+00:21:10,090 --> 00:21:18,270
+That's exactly why we calculate per program, wind with fitting to clear inductance and get all processes in it.
+
+183
+00:21:20,330 --> 00:21:21,730
+Question number 3.
+
+184
+00:21:22,670 --> 00:21:34,810
+In one of your videos, namely push-pull frequency search methodology, you showed that for your coil frequency is 90.8 kHz.
+
+185
+00:21:35,530 --> 00:21:36,390
+Why so?
+
+186
+00:21:36,610 --> 00:21:38,430
+Why frequency so high?
+
+187
+00:21:39,010 --> 00:21:47,710
+After all we all work at frequencies from 9 to 35 kHz and in our system oscillating circuit successfully works.
+
+188
+00:21:48,850 --> 00:21:55,190
+In this video I showed methodology of searching exactly that frequency needed for this coil.
+
+189
+00:21:55,330 --> 00:21:58,830
+I didn't misspeak, frequency is exactly such.
+
+190
+00:21:59,250 --> 00:22:00,310
+What do we get?
+
+191
+00:22:00,310 --> 00:22:08,970
+We all saw such moment when tuning oscillating circuit to any frequency we liked.
+
+192
+00:22:09,070 --> 00:22:13,010
+Everyone tunes to that which worked out.
+
+193
+00:22:13,070 --> 00:22:16,530
+Selected serial capacitance and tune.
+
+194
+00:22:17,170 --> 00:22:21,270
+This comes out tuning to first LC resonance harmonic.
+
+195
+00:22:21,610 --> 00:22:30,010
+And with load connection we see such moment that push-pull consumption drops by current.
+
+196
+00:22:32,410 --> 00:22:34,990
+Generally everything's fine, everyone familiar with this moment.
+
+197
+00:22:35,450 --> 00:22:36,310
+What happens?
+
+198
+00:22:36,430 --> 00:22:38,230
+Nothing supernatural there.
+
+199
+00:22:38,790 --> 00:22:53,030
+It turns out at that moment when oscillating circuit isn't loaded, for its maximum oscillation amplitude it requires certain amount of portions of electric energy.
+
+200
+00:22:53,430 --> 00:23:08,030
+As soon as we connect load, we detune oscillating circuit, its frequency moved from main oscillations, and turns out for less oscillation amplitude in circuit also requires less
+
+201
+00:23:08,030 --> 00:23:10,230
+amount of electric energy.
+
+202
+00:23:10,390 --> 00:23:15,990
+That's exactly why push-pull consumption decrease observed.
+
+203
+00:23:17,050 --> 00:23:18,630
+What do we do?
+
+204
+00:23:18,830 --> 00:23:20,430
+This is wrong tuning.
+
+205
+00:23:21,790 --> 00:23:30,630
+Inductor circuit must be tuned to third, fifth, seventh or ninth harmonic, to odd ones.
+
+206
+00:23:31,410 --> 00:23:36,070
+In this case at push-pull tuning to harmonic, what happens?
+
+207
+00:23:37,600 --> 00:23:43,870
+Circuit detuning is insignificant, much less than at first harmonic.
+
+208
+00:23:44,510 --> 00:23:56,630
+If tune, you'll see at load connection at odd harmonic you'll have either push-pull consumption not change or on contrary rise.
+
+209
+00:23:57,210 --> 00:23:59,330
+That is circuit becomes stable.
+
+210
+00:23:59,450 --> 00:24:06,850
+And so we can achieve, if tune inductor circuit to harmonic, that frequency which is exactly needed.
+
+211
+00:24:07,310 --> 00:24:09,790
+In this case applicable to my coil.
+
+212
+00:24:09,930 --> 00:24:14,230
+For me frequency for it should correspond to 90.8 kHz.
+
+213
+00:24:14,810 --> 00:24:17,210
+I tune to fifth harmonic.
+
+214
+00:24:17,730 --> 00:24:23,590
+For me at fifth harmonic my push-pull should work at 18 kHz.
+
+215
+00:24:24,490 --> 00:24:30,050
+There 18 kHz and another 0.1 kHz get at precise tuning.
+
+216
+00:24:30,550 --> 00:24:36,930
+That is my push-pull works like yours, at approximately 18.1 kHz.
+
+217
+00:24:38,030 --> 00:24:43,730
+At that, in inductor oscillating circuit there's frequency 90.8 kHz.
+
+218
+00:24:44,250 --> 00:24:48,930
+Nothing supernatural in this, just work at harmonic.
+
+219
+00:24:49,690 --> 00:24:58,050
+At that need to understand that electric field from Tesla can't influence
+
+220
+00:25:02,450 --> 00:25:12,010
+magnetic field rotating in inductor at moment when push-pull triggers.
+
+221
+00:25:12,110 --> 00:25:15,730
+That is we must create in circuit free oscillations.
+
+222
+00:25:16,230 --> 00:25:24,270
+Compare this moment can be with flywheel that we pushed and it makes some number of rotations.
+
+223
+00:25:24,630 --> 00:25:41,090
+Here exactly working by magnetic field with Tesla during free oscillations of magnetic field, and consequently also current movement, only that way our system can work.
+
+224
+00:25:41,430 --> 00:25:47,290
+When we work at first LC resonance harmonic, nothing similar we won't get.
+
+225
+00:25:47,970 --> 00:25:52,450
+That is third, fifth, seventh or ninth harmonic.
+
+226
+00:25:52,530 --> 00:25:59,330
+Don't go higher than ninth harmonic, already... Circuit Q-factor drops.
+
+227
+00:26:00,190 --> 00:26:00,670
+Not worth.
+
+228
+00:26:00,870 --> 00:26:02,170
+Question number 4.
+
+229
+00:26:03,170 --> 00:26:15,170
+On internet info started appearing about TL-494 chip glitch that allows bringing this system to operating mode.
+
+230
+00:26:15,710 --> 00:26:18,070
+Have you heard of this and what is it?
+
+231
+00:26:20,710 --> 00:26:22,190
+Let's analyze this process.
+
+232
+00:26:22,430 --> 00:26:40,850
+Yes, really people who manage to get gain on these systems or bring them to some operating mode, they use such moment that got name "chip glitch".
+
+233
+00:26:41,570 --> 00:26:46,870
+But in this case chip glitch as such isn't there.
+
+234
+00:26:47,590 --> 00:26:49,330
+Process is very simple here.
+
+235
+00:26:50,490 --> 00:26:57,510
+Feedback forms between driving chip.
+
+236
+00:26:58,370 --> 00:27:11,570
+It forms at moment when there's influence either on third pin, most often on fourth, or fifth frequency-setting, where frequency-setting capacitance is.
+
+237
+00:27:13,510 --> 00:27:24,830
+Because this chip isn't shielded and is near same antenna, or near high-voltage Tesla coil.
+
+238
+00:27:26,990 --> 00:27:28,810
+Let's analyze this in more detail.
+
+239
+00:27:28,890 --> 00:27:29,770
+What happens?
+
+240
+00:27:29,930 --> 00:27:37,050
+When inductor circuit operates, we have magnetic field.
+
+241
+00:27:38,230 --> 00:27:56,010
+This magnetic field has certain diameter around this system and directly above inductor is Tesla antenna on which electric field appears when we turn it on.
+
+242
+00:27:56,530 --> 00:28:04,690
+Electric field from Tesla has much bigger diameter and chips can fall into diameter of this influence.
+
+243
+00:28:05,270 --> 00:28:07,390
+And this interesting phenomenon happens.
+
+244
+00:28:08,210 --> 00:28:23,430
+Magnetic field modulates electric field, and since electric field from Tesla has big diameter, due to poor-quality assembly or long wires can get such effect
+
+245
+00:28:23,650 --> 00:28:31,270
+that there'll be some pickup on third, fourth or fifth pin of this chip.
+
+246
+00:28:31,810 --> 00:28:33,850
+What can happen at this?
+
+247
+00:28:34,250 --> 00:28:46,690
+At this duty cycle at chip output can change, frequency change in some limits or it may stop working entirely.
+
+248
+00:28:48,390 --> 00:29:04,430
+There's unpleasant feature with duty cycle change push-pull transistors blow up can be observed, because chip starts unstably working from strong pickup and output duty cycle
+
+249
+00:29:04,430 --> 00:29:05,850
+overlapping channels.
+
+250
+00:29:05,930 --> 00:29:07,530
+Most often this happens.
+
+251
+00:29:08,110 --> 00:29:12,590
+But this effect can be used to benefit in this system.
+
+252
+00:29:13,390 --> 00:29:14,410
+How to do this?
+
+253
+00:29:14,590 --> 00:29:31,130
+That is need to understand that when we create in inductor clean sine oscillations, they have same amplitude, say positive half-period oscillation equal in amplitude to negative
+
+254
+00:29:31,130 --> 00:29:41,990
+half-period sine oscillations, then such harmonic oscillations, like direct current, for medium are normal phenomenon.
+
+255
+00:29:42,210 --> 00:29:54,930
+For it practically... And here when there's magnetic field skew, various lengths that tune them, that is system goes to imbalance, into asymmetric system
+
+256
+00:29:54,930 --> 00:29:55,650
+turns.
+
+257
+00:29:56,250 --> 00:30:05,550
+Exactly such anomalous behavior of system, medium perceives as very big disturbance that needs to be suppressed.
+
+258
+00:30:05,710 --> 00:30:07,250
+And it harshly responds to it.
+
+259
+00:30:07,390 --> 00:30:14,050
+This way people get caught in such operating mode some gain.
+
+260
+00:30:14,610 --> 00:30:27,090
+Gain will be... There, significant even it can lead to system to self-running so-called, when system starts working itself.
+
+261
+00:30:27,210 --> 00:30:29,430
+But this mode is very unstable.
+
+262
+00:30:29,530 --> 00:30:39,950
+This is uncontrolled process that often gets knocked off and leads to system electronics failure.
+
+263
+00:30:40,730 --> 00:30:46,090
+That is can use, but don't recommend.
+
+264
+00:30:46,190 --> 00:30:49,350
+Need to make this process more controlled.
+
+265
+00:30:49,450 --> 00:30:55,490
+System actually works like living organism, so its complex work is needed.
+
+266
+00:30:55,510 --> 00:31:05,670
+Whoever earns on this principle, for them, I repeat, Tesla doesn't work as it should for getting normal power.
+
+267
+00:31:05,810 --> 00:31:13,090
+That is whole system is uncoordinated and big powers on it won't get.
+
+268
+00:31:13,210 --> 00:31:20,490
+Due to skew of magnetic and electric fields you can see gain on this system.
+
+269
+00:31:21,930 --> 00:31:23,510
+Good luck everyone in experiments.
+
+270
+00:31:25,270 --> 00:31:26,050
+All the best.
