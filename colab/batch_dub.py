@@ -43,8 +43,13 @@ from TTS.api import TTS
 # ============================================================
 #  Constants
 # ============================================================
-MAX_SPEED_RATIO = 1.4
+MAX_SPEED_RATIO = 1.4         # legacy mode: max audio compression
 SAMPLE_RATE = 24000
+
+# Dynamic duration mode: how far we're allowed to stretch the video
+# to accommodate a longer dubbed audio.
+MAX_VIDEO_STRETCH = 1.5       # video can be slowed down up to 50% (plays at 1/1.5x)
+MAX_AUDIO_COMPRESS = 1.4      # if video stretch is not enough, audio can also speed up to 1.4x
 
 # XTTS-v2 supported languages (ISO 639-1, except zh)
 XTTS_LANGS = {
@@ -319,53 +324,16 @@ def time_fit(audio: np.ndarray, sr: int, target_duration: float) -> tuple[np.nda
     return pyrb.time_stretch(audio, sr, speed), capped
 
 
-def dub_one(
-    item: VideoItem,
-    tts: TTS,
-    lang: str,
-    work_dir: Path,
-    output_path: Path,
-    remove_voice: bool,
-) -> None:
-    work_dir.mkdir(parents=True, exist_ok=True)
-    seg_dir = work_dir / "segments"
-    seg_dir.mkdir(exist_ok=True)
-
-    # Parse SRT
-    subs = list(srt.parse(item.srt_path.read_text(encoding="utf-8")))
-    print(f"  SRT: {len(subs)} segments")
-
-    # Download video
-    video_path = work_dir / "video.mp4"
-    if not video_path.exists():
-        print("  Downloading video...", flush=True)
-        download_video(item.url, video_path)
-
-    # Extract audio
-    orig_audio = work_dir / "orig.wav"
-    extract_audio(video_path, orig_audio)
-
-    # Voice reference (always from voiced audio, pre-demucs)
-    ref_path = work_dir / "ref.wav"
-    ref_s, ref_e = extract_voice_ref(orig_audio, subs, ref_path)
-    print(f"  Voice ref: {ref_s:.1f}-{ref_e:.1f}s")
-
-    # Optional: vocal removal for ambient bed
-    ambient_path: Path | None = None
-    if remove_voice:
-        print("  Stripping vocals (Demucs)...", flush=True)
-        stripped = work_dir / "ambient.wav"
-        if strip_vocals(orig_audio, stripped):
-            ambient_path = stripped
-
-    # Generate TTS per segment
+def _generate_tts_raw(
+    subs: list, tts: TTS, lang: str, ref_path: Path, seg_dir: Path
+) -> list[tuple[np.ndarray, int] | None]:
+    """Generate TTS per segment at natural speed (no time-fit)."""
     print("  Generating TTS...", flush=True)
-    fitted: list[tuple[np.ndarray, int] | None] = []
-    n_capped = 0
+    raw: list[tuple[np.ndarray, int] | None] = []
     for i, sub in enumerate(subs):
         text = sub.content.strip()
         if not text:
-            fitted.append(None)
+            raw.append(None)
             continue
         seg_path = seg_dir / f"seg_{i:04d}.wav"
         try:
@@ -377,19 +345,36 @@ def dub_one(
                 split_sentences=False,
             )
             audio, sr_seg = sf.read(seg_path)
-            target = (sub.end - sub.start).total_seconds()
-            audio, capped = time_fit(audio, sr_seg, target)
-            n_capped += int(capped)
-            fitted.append((audio, sr_seg))
+            raw.append((audio, sr_seg))
         except Exception as e:
             print(f"  [WARN] seg {i+1}: {e}")
-            fitted.append(None)
-    generated = sum(1 for f in fitted if f is not None)
-    print(f"  Generated: {generated}/{len(subs)} (capped at {MAX_SPEED_RATIO}x: {n_capped})")
+            raw.append(None)
+    print(f"  Generated: {sum(1 for r in raw if r)}/{len(subs)}")
+    return raw
 
-    # Build master track
-    video_duration = get_video_duration(video_path)
-    sr_master = next(f[1] for f in fitted if f is not None)
+
+def _build_master_classic(
+    subs: list,
+    raw_tts: list[tuple[np.ndarray, int] | None],
+    video_duration: float,
+    ambient_path: Path | None,
+) -> tuple[np.ndarray, int]:
+    """Classic mode: time-fit each segment to fit in its SRT slot."""
+    sr_master = next(r[1] for r in raw_tts if r is not None)
+    fitted: list[tuple[np.ndarray, int] | None] = []
+    n_capped = 0
+    for i, (sub, r) in enumerate(zip(subs, raw_tts)):
+        if r is None:
+            fitted.append(None)
+            continue
+        audio, sr_seg = r
+        target = (sub.end - sub.start).total_seconds()
+        audio, capped = time_fit(audio, sr_seg, target)
+        n_capped += int(capped)
+        fitted.append((audio, sr_seg))
+    if n_capped:
+        print(f"  Time-fit capped at {MAX_SPEED_RATIO}x on {n_capped} segments")
+
     total_samples = int(video_duration * sr_master) + sr_master
     master = np.zeros(total_samples, dtype=np.float32)
     for sub, fit in zip(subs, fitted):
@@ -400,7 +385,6 @@ def dub_one(
         end = min(start + len(audio), len(master))
         master[start:end] += audio[:end - start].astype(np.float32)
 
-    # Mix ambient if available
     if ambient_path is not None:
         amb, sr_amb = sf.read(ambient_path)
         if amb.ndim > 1:
@@ -409,23 +393,249 @@ def dub_one(
             from scipy import signal
             amb = signal.resample_poly(amb, sr_master, sr_amb)
         amb = amb[:len(master)] if len(amb) >= len(master) else np.pad(amb, (0, len(master) - len(amb)))
-        # Ambient at -12dB so voice sits on top
         master = master + amb.astype(np.float32) * 0.25
 
-    # Normalize
+    return master, sr_master
+
+
+def _build_plan_dynamic(
+    subs: list,
+    raw_tts: list[tuple[np.ndarray, int] | None],
+    video_duration: float,
+    sr_master: int,
+) -> list[dict]:
+    """Build a list of timeline parts (gaps + segments) with the new durations."""
+    parts: list[dict] = []
+    cursor_orig = 0.0
+    cursor_new = 0.0
+    for i, sub in enumerate(subs):
+        s_orig = sub.start.total_seconds()
+        e_orig = sub.end.total_seconds()
+        # Gap before this segment
+        if cursor_orig < s_orig - 1e-3:
+            gap_dur = s_orig - cursor_orig
+            parts.append({
+                "type": "gap",
+                "orig_start": cursor_orig, "orig_end": s_orig,
+                "new_start": cursor_new, "new_dur": gap_dur,
+                "pts": 1.0, "audio": None,
+            })
+            cursor_new += gap_dur
+        orig_slot = e_orig - s_orig
+        r = raw_tts[i]
+        if r is None or orig_slot <= 0:
+            parts.append({
+                "type": "seg", "tts_idx": i,
+                "orig_start": s_orig, "orig_end": e_orig,
+                "new_start": cursor_new, "new_dur": orig_slot,
+                "pts": 1.0, "audio": None,
+            })
+            cursor_new += orig_slot
+            cursor_orig = e_orig
+            continue
+
+        tts_audio, sr_seg = r
+        tts_dur = len(tts_audio) / sr_seg
+
+        if tts_dur <= orig_slot:
+            # No stretch needed; keep video as is
+            new_dur = orig_slot
+            pts = 1.0
+            final_audio = tts_audio
+        else:
+            desired_stretch = tts_dur / orig_slot
+            if desired_stretch <= MAX_VIDEO_STRETCH:
+                # Stretch video to match TTS exactly
+                new_dur = tts_dur
+                pts = new_dur / orig_slot
+                final_audio = tts_audio
+            else:
+                # Hybrid: max video stretch + audio compress to bridge
+                new_dur = orig_slot * MAX_VIDEO_STRETCH
+                pts = MAX_VIDEO_STRETCH
+                audio_speed = min(tts_dur / new_dur, MAX_AUDIO_COMPRESS)
+                if audio_speed > 1.02:
+                    final_audio = pyrb.time_stretch(tts_audio, sr_seg, audio_speed)
+                else:
+                    final_audio = tts_audio
+
+        parts.append({
+            "type": "seg", "tts_idx": i,
+            "orig_start": s_orig, "orig_end": e_orig,
+            "new_start": cursor_new, "new_dur": new_dur,
+            "pts": pts, "audio": final_audio,
+        })
+        cursor_new += new_dur
+        cursor_orig = e_orig
+
+    # Final tail
+    if cursor_orig < video_duration - 1e-3:
+        tail = video_duration - cursor_orig
+        parts.append({
+            "type": "gap",
+            "orig_start": cursor_orig, "orig_end": video_duration,
+            "new_start": cursor_new, "new_dur": tail,
+            "pts": 1.0, "audio": None,
+        })
+    return parts
+
+
+def _warp_video(parts: list[dict], video_path: Path, work_dir: Path) -> Path:
+    """Cut + setpts + concat the video according to the plan. Returns the warped video path."""
+    part_dir = work_dir / "video_parts"
+    part_dir.mkdir(exist_ok=True)
+    part_files = []
+    n_stretched = 0
+    for j, p in enumerate(parts):
+        out = part_dir / f"part_{j:04d}.mp4"
+        cmd = [
+            "ffmpeg", "-y", "-loglevel", "error",
+            "-ss", f"{p['orig_start']:.3f}", "-to", f"{p['orig_end']:.3f}",
+            "-i", str(video_path), "-an",
+        ]
+        if abs(p["pts"] - 1.0) > 1e-3:
+            cmd += ["-filter:v", f"setpts={p['pts']:.4f}*PTS"]
+            n_stretched += 1
+        cmd += [
+            "-c:v", "libx264", "-preset", "fast",
+            "-pix_fmt", "yuv420p", "-r", "30",
+            str(out),
+        ]
+        subprocess.run(cmd, check=True)
+        part_files.append(out)
+
+    print(f"  Video stretched on {n_stretched}/{len(parts)} parts")
+
+    concat_list = work_dir / "concat.txt"
+    with open(concat_list, "w") as f:
+        for pf in part_files:
+            f.write(f"file '{pf}'\n")
+    warped = work_dir / "video_warped.mp4"
+    subprocess.run(
+        [
+            "ffmpeg", "-y", "-loglevel", "error",
+            "-f", "concat", "-safe", "0", "-i", str(concat_list),
+            "-c:v", "copy", str(warped),
+        ],
+        check=True,
+    )
+    return warped
+
+
+def _build_master_dynamic(
+    parts: list[dict],
+    sr_master: int,
+    ambient_path: Path | None,
+) -> tuple[np.ndarray, int]:
+    """Build audio on the NEW (warped) timeline."""
+    total_dur = sum(p["new_dur"] for p in parts)
+    master = np.zeros(int(total_dur * sr_master) + sr_master, dtype=np.float32)
+
+    # Place TTS audios at their new positions
+    for p in parts:
+        if p["audio"] is None:
+            continue
+        start = int(p["new_start"] * sr_master)
+        end = min(start + len(p["audio"]), len(master))
+        master[start:end] += p["audio"][:end - start].astype(np.float32)
+
+    # Warp ambient piecewise to match new timeline
+    if ambient_path is not None:
+        amb, sr_amb = sf.read(ambient_path)
+        if amb.ndim > 1:
+            amb = amb.mean(axis=1)
+        if sr_amb != sr_master:
+            from scipy import signal
+            amb = signal.resample_poly(amb, sr_master, sr_amb)
+        warped_amb = np.zeros_like(master)
+        for p in parts:
+            orig_a = int(p["orig_start"] * sr_master)
+            orig_b = int(p["orig_end"] * sr_master)
+            chunk = amb[orig_a:orig_b]
+            if len(chunk) < 100:
+                continue
+            if abs(p["pts"] - 1.0) > 1e-3:
+                try:
+                    chunk = pyrb.time_stretch(chunk.astype(np.float32), sr_master, 1.0 / p["pts"])
+                except Exception as e:
+                    print(f"  [WARN] ambient stretch failed: {e}")
+            new_a = int(p["new_start"] * sr_master)
+            new_b = min(new_a + len(chunk), len(warped_amb))
+            warped_amb[new_a:new_b] += chunk[:new_b - new_a].astype(np.float32)
+        master = master + warped_amb * 0.25
+
+    return master, sr_master
+
+
+def dub_one(
+    item: VideoItem,
+    tts: TTS,
+    lang: str,
+    work_dir: Path,
+    output_path: Path,
+    remove_voice: bool,
+    dynamic_duration: bool = True,
+) -> None:
+    work_dir.mkdir(parents=True, exist_ok=True)
+    seg_dir = work_dir / "segments"
+    seg_dir.mkdir(exist_ok=True)
+
+    # 1. Parse SRT
+    subs = list(srt.parse(item.srt_path.read_text(encoding="utf-8")))
+    print(f"  SRT: {len(subs)} segments  |  mode: {'dynamic-duration' if dynamic_duration else 'classic'}")
+
+    # 2. Download video
+    video_path = work_dir / "video.mp4"
+    if not video_path.exists():
+        print("  Downloading video...", flush=True)
+        download_video(item.url, video_path)
+
+    # 3. Extract audio
+    orig_audio = work_dir / "orig.wav"
+    extract_audio(video_path, orig_audio)
+
+    # 4. Voice reference (always from voiced audio, pre-demucs)
+    ref_path = work_dir / "ref.wav"
+    ref_s, ref_e = extract_voice_ref(orig_audio, subs, ref_path)
+    print(f"  Voice ref: {ref_s:.1f}-{ref_e:.1f}s")
+
+    # 5. Optional: vocal removal for ambient bed
+    ambient_path: Path | None = None
+    if remove_voice:
+        print("  Stripping vocals (Demucs)...", flush=True)
+        stripped = work_dir / "ambient.wav"
+        if strip_vocals(orig_audio, stripped):
+            ambient_path = stripped
+
+    # 6. Generate TTS at natural speed
+    raw_tts = _generate_tts_raw(subs, tts, lang, ref_path, seg_dir)
+    if not any(r is not None for r in raw_tts):
+        raise RuntimeError("No TTS generated for any segment")
+    sr_master = next(r[1] for r in raw_tts if r is not None)
+
+    # 7. Build video + master audio (branch on mode)
+    video_duration = get_video_duration(video_path)
+    if dynamic_duration:
+        parts = _build_plan_dynamic(subs, raw_tts, video_duration, sr_master)
+        final_video = _warp_video(parts, video_path, work_dir)
+        master, _ = _build_master_dynamic(parts, sr_master, ambient_path)
+    else:
+        final_video = video_path
+        master, _ = _build_master_classic(subs, raw_tts, video_duration, ambient_path)
+
+    # 8. Normalize
     peak = float(np.max(np.abs(master)))
     if peak > 0.99:
         master *= 0.99 / peak
-
     master_path = work_dir / "master.wav"
     sf.write(master_path, master, sr_master)
 
-    # Mux
+    # 9. Mux
     output_path.parent.mkdir(parents=True, exist_ok=True)
     subprocess.run(
         [
             "ffmpeg", "-y", "-loglevel", "error",
-            "-i", str(video_path),
+            "-i", str(final_video),
             "-i", str(master_path),
             "-c:v", "copy",
             "-c:a", "aac", "-b:a", "192k",
@@ -454,6 +664,7 @@ def run_batch(
     remove_voice: bool = True,
     range_expr: str = "all",
     work_root: str | Path = "/tmp/sta-ru-work",
+    dynamic_duration: bool = True,
 ) -> list[VideoItem]:
     """Main entry point. Returns the items list with final statuses."""
     lang_lc = lang.lower()
@@ -529,6 +740,7 @@ def run_batch(
                 work_dir=work_root_path / f"n{it.n}",
                 output_path=it.output_path,
                 remove_voice=remove_voice,
+                dynamic_duration=dynamic_duration,
             )
             it.status = "done"
             print(f"  Elapsed: {time.time() - t0:.1f}s")
@@ -558,6 +770,8 @@ def _cli() -> None:
     ap.add_argument("--lang", default="EN", help="Target language code (EN, ES, DE, IT, ...)")
     ap.add_argument("--translate-titles", action="store_true", help="Translate titles to target language")
     ap.add_argument("--no-remove-voice", action="store_true", help="Skip Demucs vocal removal")
+    ap.add_argument("--no-dynamic-duration", action="store_true",
+                    help="Disable dynamic duration (stretches video to fit dubbed audio); falls back to classic time-fit on audio")
     ap.add_argument("--range", dest="range_expr", default="all", help="e.g. 'all', '1-10', '47', '1-5,12'")
     ap.add_argument("--work-root", default="/tmp/sta-ru-work")
     args = ap.parse_args()
@@ -571,6 +785,7 @@ def _cli() -> None:
         remove_voice=not args.no_remove_voice,
         range_expr=args.range_expr,
         work_root=args.work_root,
+        dynamic_duration=not args.no_dynamic_duration,
     )
 
 
