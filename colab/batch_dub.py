@@ -144,14 +144,15 @@ def _fmt_date(raw: str) -> str:
 
 
 def build_items(urls: list[str], translate_titles: bool, target_lang: str) -> list[VideoItem]:
-    """Build VideoItem list with metadata for each URL."""
+    """Build VideoItem list with metadata for each URL. Metadata failure is non-fatal:
+    the item keeps status 'pending' with an empty title; output naming falls back to
+    {N#}-{LANG}.mp4."""
     items: list[VideoItem] = []
     for i, url in enumerate(urls, start=1):
         meta = fetch_metadata(url)
         item = VideoItem(n=i, url=url)
         if "_error" in meta:
-            item.status = "failed"
-            item.error = f"metadata: {meta['_error']}"
+            item.error = f"metadata unavailable: {meta['_error'][:120]}"
             items.append(item)
             continue
         item.title = meta.get("title", "") or ""
@@ -191,9 +192,14 @@ def sanitize(name: str) -> str:
 
 
 def build_output_name(item: VideoItem, lang: str, translate: bool, ext: str = "mp4") -> str:
-    """{date} - {N#} - {title (translated or original)}-{LANG}.{ext}"""
+    """Build output filename.
+    Full form  : '{date} - {N#} - {title}-{LANG}.{ext}'
+    Fallback   : '{N#}-{LANG}.{ext}' (when YouTube metadata is unavailable)"""
     base_title = item.title_translated if (translate and item.title_translated) else item.title
-    base_title = sanitize(base_title or f"video_{item.n}")
+    if not base_title:
+        # No metadata at all -> use SRT-style minimal name
+        return f"{item.n}-{lang.upper()}.{ext}"
+    base_title = sanitize(base_title)
     date_prefix = f"{item.upload_date} - " if item.upload_date else ""
     return f"{date_prefix}{item.n} - {base_title}-{lang.upper()}.{ext}"
 
