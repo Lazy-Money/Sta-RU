@@ -1,0 +1,347 @@
+1
+00:00:00,750 --> 00:00:02,330
+Greetings everyone.
+
+2
+00:00:02,770 --> 00:00:11,350
+Today we'll look at the operation of this amplifier attachment for the laboratory signal generator for testing our coils.
+
+3
+00:00:12,230 --> 00:00:13,730
+There's nothing complicated in it.
+
+4
+00:00:15,390 --> 00:00:31,930
+It's built on the IRF840 transistor, on the heat sink the driver for this transistor TC4420, and a chip mediator between the laboratory signal generator and driver.
+
+5
+00:00:32,070 --> 00:00:37,750
+The mediator chip is still the same, TC4093BP.
+
+6
+00:00:39,350 --> 00:00:48,750
+For powering these chips a DC-DC converter is used, built on LM2596.
+
+7
+00:00:49,470 --> 00:00:56,410
+We set with the help of a trim resistor 15V and use power slightly higher.
+
+8
+00:00:56,650 --> 00:01:00,730
+In this case my mains converter is 18V.
+
+9
+00:01:01,670 --> 00:01:04,290
+Can be from batteries, whoever has what.
+
+10
+00:01:05,410 --> 00:01:10,050
+The device schematic is shown in the picture.
+
+11
+00:01:10,570 --> 00:01:18,970
+By the way, all my schematics under this video I'll post on file sharing and give a link there, which I filmed before this.
+
+12
+00:01:20,490 --> 00:01:26,730
+At this point we should get such a nice oscillogram.
+
+13
+00:01:27,950 --> 00:01:30,010
+Looking, what else.
+
+14
+00:01:30,450 --> 00:01:44,350
+The signal from the laboratory signal generator arrives at one of the Schmitt triggers, gets inverted and then we do a second inversion on the second Schmitt trigger to the true signal.
+
+15
+00:01:44,410 --> 00:01:53,050
+After which through a 10 Ω damping resistor the signal reaches the driver controlling the FET's gate.
+
+16
+00:01:53,970 --> 00:02:09,530
+And next the FET switches our main power, say from batteries or from any other power source, onto the inductor that acts on our coil.
+
+17
+00:02:11,930 --> 00:02:18,910
+Wiring isn't complicated, let's look at its operation.
+
+18
+00:02:19,850 --> 00:02:25,730
+For starters this system connects to the laboratory signal generator.
+
+19
+00:02:26,590 --> 00:02:37,870
+The lab generator switches to pulse mode, after which the pulse frequency is set on the control.
+
+20
+00:02:38,550 --> 00:02:48,950
+This schematic of ours is functional up to 2.5 MHz, after which we set signal amplitude.
+
+21
+00:02:49,090 --> 00:02:56,670
+Signal amplitude is 6 volts, this is the minimum at which this attachment will work.
+
+22
+00:02:57,290 --> 00:03:05,890
+If you have a 5-volt signal generator, then you'll need to replace this Schmitt trigger chip with 5-volt logic.
+
+23
+00:03:06,050 --> 00:03:11,730
+It's also compatible with this driver.
+
+24
+00:03:12,090 --> 00:03:22,110
+Only after this converter on power you'll need to put an L7805 regulator for 5-volt logic power.
+
+25
+00:03:23,190 --> 00:03:25,250
+And the schematic will also be functional.
+
+26
+00:03:27,510 --> 00:03:31,630
+Set signal amplitude, next we have duty cycle.
+
+27
+00:03:31,750 --> 00:03:34,670
+Now duty cycle is 73%.
+
+28
+00:03:34,670 --> 00:03:36,770
+Now I'll show what duty cycle gives.
+
+29
+00:03:37,490 --> 00:03:43,530
+Feeding power from the power supply to the transistor.
+
+30
+00:03:50,200 --> 00:03:51,940
+We see the oscillogram.
+
+31
+00:03:52,640 --> 00:03:56,080
+This kind of thing should come out.
+
+32
+00:03:57,360 --> 00:04:00,400
+And look, now I'll change duty cycle.
+
+33
+00:04:00,740 --> 00:04:03,460
+In this case decreasing duty cycle.
+
+34
+00:04:04,620 --> 00:04:09,380
+Look, the signal becomes unclear.
+
+35
+00:04:10,400 --> 00:04:22,740
+That is, for each little coil we'll need to set individually the signal and the operating point of this transistor at this frequency.
+
+36
+00:04:23,240 --> 00:04:25,260
+That is, duty cycle adjustment.
+
+37
+00:04:25,780 --> 00:04:27,980
+Here I lowered it to 10%.
+
+38
+00:04:27,980 --> 00:04:31,740
+Returning to a nice signal.
+
+39
+00:04:32,480 --> 00:04:40,560
+In this case at this frequency at 71% it starts working.
+
+40
+00:04:41,720 --> 00:04:48,240
+After achieving a clean signal, we start investigating our coil.
+
+41
+00:04:49,920 --> 00:04:51,000
+What do we get?
+
+42
+00:04:51,320 --> 00:05:07,900
+These coils, with such drive, set the LC resonance frequency for this coil 1.68 MHz, they start working analogous to a Tesla coil.
+
+43
+00:05:07,980 --> 00:05:17,620
+Now two ends in the air, it's not grounded and you can observe that there's a discharge,
+
+44
+00:05:21,630 --> 00:05:24,490
+that is, analogous to the same little Tesla.
+
+45
+00:05:33,960 --> 00:05:41,840
+The coil works on a quarter wave, can see by glow of the neon bulb.
+
+46
+00:05:42,800 --> 00:05:45,760
+Closer to the hot end the glow increases.
+
+47
+00:05:46,900 --> 00:05:58,660
+A fluorescent lamp is parallel to the coil, to light it we touch the hot end to its lead.
+
+48
+00:05:59,620 --> 00:06:04,840
+Connected the hot end and see the lamp burns very brightly.
+
+49
+00:06:05,500 --> 00:06:08,280
+After disconnection the lamp burns dimly.
+
+50
+00:06:09,660 --> 00:06:12,100
+And what should we see on this lamp?
+
+51
+00:06:13,700 --> 00:06:22,400
+Possibly the camera won't transmit now, but on the lamp strips run, that is, the lamp becomes all striped.
+
+52
+00:06:23,320 --> 00:06:39,120
+And if the coil's wound right, these strips will be brightly expressed, and you need to achieve variable frequency on the lab signal generator at the moment when the strips stop completely.
+
+53
+00:06:39,720 --> 00:06:43,780
+If this moment happened, then the coil is made qualitatively.
+
+54
+00:06:43,780 --> 00:07:04,580
+If you couldn't stop these strips by changing frequency, they'll constantly move, then the coil is made a bit wrong, you don't get a clear longitudinal standing wave around this
+
+55
+00:07:04,580 --> 00:07:06,020
+coil.
+
+56
+00:07:06,780 --> 00:07:17,600
+Need to slightly rework it, either increase wire length or decrease, this is a matter of practice.
+
+57
+00:07:18,980 --> 00:07:37,200
+But the main task is for the coil to start, work analogous to a Tesla transformer, both neon bulbs and gas-discharge lamps glow, and the most that needs to be seen, of course is strips on this lamp.
+
+58
+00:07:38,920 --> 00:07:40,300
+Once more the signal.
+
+59
+00:07:42,680 --> 00:07:46,100
+How to set it, I already showed.
+
+60
+00:07:46,860 --> 00:07:48,300
+And consumption with this.
+
+61
+00:07:50,500 --> 00:07:54,260
+1.32 amps, 12.4 volts.
+
+62
+00:07:55,300 --> 00:08:05,300
+The better the coil is wound, the less power will need to be fed to the input, and the brighter the lamp will burn.
+
+63
+00:08:06,680 --> 00:08:13,620
+Also the lamp will burn brighter, say, if we connect grounding to this coil.
+
+64
+00:08:14,220 --> 00:08:21,420
+Look, connecting grounding, see that brightness increases.
+
+65
+00:08:25,060 --> 00:08:27,060
+Without changing power.
+
+66
+00:08:29,020 --> 00:08:35,220
+We can look on the second probe what's happening.
+
+67
+00:08:35,480 --> 00:08:37,160
+I'll place it next to the coil.
+
+68
+00:08:44,260 --> 00:08:46,800
+We see what's on the coil.
+
+69
+00:08:47,020 --> 00:08:50,460
+On the coil at this frequency we have a sine wave.
+
+70
+00:08:51,360 --> 00:08:56,920
+On the sine wave clearly visible strike from the pulse.
+
+71
+00:08:58,620 --> 00:08:59,580
+Sharp little bump.
+
+72
+00:09:00,000 --> 00:09:06,800
+Now we'll try changing the lab generator frequency.
+
+73
+00:09:08,120 --> 00:09:10,200
+Changing frequency, going lower.
+
+74
+00:09:10,980 --> 00:09:12,320
+Characteristic feature.
+
+75
+00:09:12,380 --> 00:09:29,140
+If the coil absorbs your signal well, that is, works coordinated by frequency, these peaks on the inductor, their amplitude will decrease.
+
+76
+00:09:29,840 --> 00:09:39,620
+Look, detuning the system, peak grows, but the amplitude on the coil itself drops.
+
+77
+00:09:40,020 --> 00:09:43,420
+A sign that you're on the wrong frequency.
+
+78
+00:09:45,860 --> 00:09:54,840
+Returning and the same picture we'll have if we increase the frequency.
+
+79
+00:09:57,680 --> 00:10:02,740
+Same thing, peak grows, signal drops.
+
+80
+00:10:03,820 --> 00:10:15,320
+We achieve maximum amplitude on the coil and maximum glow of lamps around it.
+
+81
+00:10:15,620 --> 00:10:20,480
+But most importantly, once more, are the strips on this lamp.
+
+82
+00:10:20,880 --> 00:10:24,680
+When you see them, they'll chaotically run.
+
+83
+00:10:25,280 --> 00:10:28,100
+Camera just doesn't show this moment, now they're running.
+
+84
+00:10:28,780 --> 00:10:30,400
+The eye notices very well.
+
+85
+00:10:31,380 --> 00:10:36,760
+Our task is to wind the coil so these strips stop completely.
+
+86
+00:10:38,720 --> 00:10:40,460
+Good luck everyone in building.
+
+87
+00:10:43,340 --> 00:10:46,040
+Schematic will be posted under the video.

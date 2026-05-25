@@ -1,0 +1,2243 @@
+1
+00:00:01,320 --> 00:00:02,840
+Greetings everyone.
+
+2
+00:00:03,240 --> 00:00:04,260
+This is Stalker.
+
+3
+00:00:04,460 --> 00:00:07,080
+And today we'll be analyzing an interesting topic.
+
+4
+00:00:07,540 --> 00:00:14,000
+These questions that subscribers or people I talk with often ask me.
+
+5
+00:00:14,540 --> 00:00:19,840
+And also the winding method of the gradient coil, popularly called the grenade.
+
+6
+00:00:21,000 --> 00:00:22,400
+Why is it made this way?
+
+7
+00:00:22,520 --> 00:00:24,060
+What are the reverse turns for?
+
+8
+00:00:24,440 --> 00:00:28,720
+Why is this length of 37.5 meters used?
+
+9
+00:00:28,720 --> 00:00:31,760
+Is only the grenade suitable for our systems?
+
+10
+00:00:32,500 --> 00:00:33,780
+All in order.
+
+11
+00:00:33,840 --> 00:00:37,080
+Let's start with an interesting point that few know about.
+
+12
+00:00:37,580 --> 00:00:41,200
+It's the second-kind efficiency for a resonant circuit.
+
+13
+00:00:42,180 --> 00:00:43,140
+What is it?
+
+14
+00:00:43,440 --> 00:00:46,000
+There's practically no information about it, by the way.
+
+15
+00:00:48,240 --> 00:00:51,520
+Here I prepared an interesting picture for you.
+
+16
+00:00:52,520 --> 00:00:54,720
+Let's start with it.
+
+17
+00:00:55,060 --> 00:00:57,580
+Say, our push-pull is working.
+
+18
+00:00:58,240 --> 00:01:01,220
+One transistor fired, the second transistor.
+
+19
+00:01:01,340 --> 00:01:06,780
+And on the length of this wire we get a wave at LC resonance frequency.
+
+20
+00:01:06,840 --> 00:01:09,040
+Say, we tuned it, it reached the end.
+
+21
+00:01:09,960 --> 00:01:12,380
+And let it reflect like this.
+
+22
+00:01:12,960 --> 00:01:17,320
+The second sine wave, drawn with a black pen.
+
+23
+00:01:18,300 --> 00:01:19,840
+And here's what's interesting.
+
+24
+00:01:19,980 --> 00:01:24,400
+If we analyze the process by voltage, everything's standard here.
+
+25
+00:01:24,540 --> 00:01:38,740
+That is, if waves from the incident wave and from the reflected wave converge in phase, a standing wave forms on this wire's length.
+
+26
+00:01:39,460 --> 00:01:41,340
+But this question doesn't interest us.
+
+27
+00:01:41,340 --> 00:01:51,340
+We need, let's call this moment, to create a resonance in this system in magnetic fluxes.
+
+28
+00:01:52,320 --> 00:01:53,780
+In magnetic fields.
+
+29
+00:01:54,680 --> 00:01:56,720
+What do we need to do for this?
+
+30
+00:01:57,480 --> 00:02:01,260
+For this we also create our wave, incident.
+
+31
+00:02:01,340 --> 00:02:03,900
+But we analyze this moment, its poles.
+
+32
+00:02:05,400 --> 00:02:07,700
+We have a reflected wave.
+
+33
+00:02:07,700 --> 00:02:12,280
+And now they must match not only in phase but also in magnetic fluxes.
+
+34
+00:02:12,720 --> 00:02:19,560
+And as soon as this moment happens, we get an interesting picture.
+
+35
+00:02:20,400 --> 00:02:25,360
+We matched the incident and reflected wave by magnetic field.
+
+36
+00:02:25,620 --> 00:02:32,380
+And we also need to match the standing wave by magnetic field.
+
+37
+00:02:32,380 --> 00:02:43,580
+And if this moment happens, in the circuit powerful oscillations sharply form with rise of current, current amplitude and voltage amplitude.
+
+38
+00:02:43,960 --> 00:02:48,260
+This is exactly the second-kind efficiency moment for the resonant circuit.
+
+39
+00:02:48,880 --> 00:02:50,180
+What's the essence of the phenomenon?
+
+40
+00:02:51,020 --> 00:02:56,820
+Let's break it down on the example, say, of two coils that create magnetic fields.
+
+41
+00:02:57,560 --> 00:03:01,940
+One magnetic field pulsates, grows, decreases.
+
+42
+00:03:01,940 --> 00:03:06,620
+This, say, will be the magnetic field for the standing wave.
+
+43
+00:03:07,600 --> 00:03:11,380
+The second magnetic field also pulsates, but also rotates.
+
+44
+00:03:12,060 --> 00:03:25,560
+And if we combine these two moments, when we have aligned angular rotation and direction of magnetic poles, this interesting phenomenon forms.
+
+45
+00:03:25,560 --> 00:03:37,780
+It's hard to achieve, but now I'll show you an interesting program by which you can calculate our future coil.
+
+46
+00:03:42,020 --> 00:03:52,500
+Open a search engine, in this case it'll be Yandex, and type in the search bar "Gorchilin calculator".
+
+47
+00:03:53,490 --> 00:04:04,780
+From the search engine response we select "combining LC resonance with standing wave mode", open.
+
+48
+00:04:06,120 --> 00:04:09,300
+Opened, we land in this calculator.
+
+49
+00:04:10,000 --> 00:04:16,720
+We see graphs here and a drawn coil.
+
+50
+00:04:18,580 --> 00:04:26,040
+Here, looking, here the calculator computes coil length and wire pitch.
+
+51
+00:04:26,680 --> 00:04:30,960
+Why this needs to be done, and how we'll work with this.
+
+52
+00:04:31,840 --> 00:04:34,260
+For starters, what do we do.
+
+53
+00:04:34,500 --> 00:04:44,780
+Opened this thing, and take our helper caliper and start measuring.
+
+54
+00:04:46,780 --> 00:04:49,200
+I already did the measurements.
+
+55
+00:04:51,140 --> 00:04:56,580
+You have wire, each will have it different, some bought.
+
+56
+00:04:57,120 --> 00:05:05,580
+For example, in this case I'm calculating the coil for wire with insulation diameter 4.2 mm.
+
+57
+00:05:07,420 --> 00:05:12,540
+Mandatory measure with caliper without crushing this wire.
+
+58
+00:05:13,260 --> 00:05:18,580
+Like this, came, measured and recorded.
+
+59
+00:05:18,740 --> 00:05:26,200
+We'll be interested in the wire diameter over insulation parameter, wire core diameter.
+
+60
+00:05:26,300 --> 00:05:34,400
+Your wire will be stranded, we squeeze it into a bundle and measure this bundle's diameter.
+
+61
+00:05:34,400 --> 00:05:38,380
+In my case this came out 2.5 mm.
+
+62
+00:05:39,020 --> 00:05:42,900
+Now we need to also measure the coil diameter.
+
+63
+00:05:44,200 --> 00:05:50,160
+That is, the coil diameter is the diameter of the carcass on which we'll wind.
+
+64
+00:05:50,980 --> 00:06:01,400
+Say, we have a coil, we take a caliper and measure its diameter.
+
+65
+00:06:02,400 --> 00:06:07,560
+Measured, the result obtained we write in the table.
+
+66
+00:06:08,440 --> 00:06:11,740
+In my case it's 50 mm.
+
+67
+00:06:12,320 --> 00:06:17,040
+Now we'll be interested also in the insulation thickness parameter.
+
+68
+00:06:17,800 --> 00:06:21,940
+The insulation thickness of my wire is 0.5 mm.
+
+69
+00:06:23,660 --> 00:06:26,040
+And what'll be the wire length.
+
+70
+00:06:26,040 --> 00:06:31,160
+Wire length is unknown to us yet, but in the calculator I computed I'll have 45 m.
+
+71
+00:06:31,460 --> 00:06:33,180
+Now I'll tell how I did this.
+
+72
+00:06:34,700 --> 00:06:39,260
+Going to our calculator after we made all the measurements.
+
+73
+00:06:40,700 --> 00:06:41,660
+And looking.
+
+74
+00:06:42,620 --> 00:06:44,540
+Now I'll zoom.
+
+75
+00:06:45,560 --> 00:06:46,340
+This thing.
+
+76
+00:06:48,920 --> 00:06:49,640
+Looking.
+
+77
+00:06:52,120 --> 00:06:54,660
+We don't know the wire length yet.
+
+78
+00:06:56,900 --> 00:06:57,900
+We fill in.
+
+79
+00:06:58,300 --> 00:07:00,760
+Wire core diameter in millimeters.
+
+80
+00:07:00,860 --> 00:07:02,920
+What we measured, 2.5 mm.
+
+81
+00:07:04,320 --> 00:07:06,840
+Coil diameter in millimeters.
+
+82
+00:07:07,540 --> 00:07:13,460
+By measurements we got 50 mm.
+
+83
+00:07:16,120 --> 00:07:20,180
+But we need to take into account an interesting moment.
+
+84
+00:07:20,380 --> 00:07:23,860
+In this case I entered 51 mm here.
+
+85
+00:07:24,860 --> 00:07:30,300
+The coil diameter is composed not only of the carcass diameter.
+
+86
+00:07:30,980 --> 00:07:35,460
+But the insulation wall thickness is added to the diameter.
+
+87
+00:07:36,200 --> 00:07:41,740
+That is, actually our wire doesn't go along the carcass itself.
+
+88
+00:07:42,300 --> 00:07:45,980
+It's wound on the carcass over the insulation.
+
+89
+00:07:46,900 --> 00:07:51,740
+We add 2 insulation thicknesses to the coil diameter.
+
+90
+00:07:51,740 --> 00:07:56,440
+That is, in my case my insulation thickness is 0.5 mm.
+
+91
+00:07:56,960 --> 00:07:58,780
+And I add 1 mm.
+
+92
+00:08:00,300 --> 00:08:02,340
+That is, understood why we add.
+
+93
+00:08:02,940 --> 00:08:04,680
+From two sides the wire is wound.
+
+94
+00:08:04,800 --> 00:08:06,440
+So we add 1 mm.
+
+95
+00:08:06,560 --> 00:08:08,300
+We get 51 mm.
+
+96
+00:08:08,820 --> 00:08:09,780
+Now approaching.
+
+97
+00:08:09,980 --> 00:08:11,380
+Here there's a moment.
+
+98
+00:08:11,960 --> 00:08:13,280
+Additional data.
+
+99
+00:08:13,740 --> 00:08:14,680
+Open it.
+
+100
+00:08:15,300 --> 00:08:16,260
+Fill in here.
+
+101
+00:08:16,480 --> 00:08:19,100
+Dielectric permittivity 3.5.
+
+102
+00:08:20,400 --> 00:08:31,880
+This coefficient is derived from experiments not only mine but other people's too.
+
+103
+00:08:32,420 --> 00:08:36,140
+Mandatory set dielectric permittivity 3.5.
+
+104
+00:08:36,320 --> 00:08:38,420
+What does this parameter affect?
+
+105
+00:08:39,260 --> 00:08:44,080
+This is our wire in insulation.
+
+106
+00:08:44,080 --> 00:08:51,320
+We also have dielectric permittivity of the carcass on which we wind these tubes.
+
+107
+00:08:52,280 --> 00:08:58,480
+And ultimately this parameter affects the wave propagation speed in this conductor.
+
+108
+00:09:00,060 --> 00:09:00,960
+Next.
+
+109
+00:09:01,440 --> 00:09:03,680
+Standing wave multiplicity in the coil.
+
+110
+00:09:04,320 --> 00:09:05,840
+We type 1.4.
+
+111
+00:09:06,180 --> 00:09:08,260
+LC resonance harmonic 1.
+
+112
+00:09:09,060 --> 00:09:12,120
+Additional capacitance picofarads 0.
+
+113
+00:09:14,160 --> 00:09:16,380
+Coil carcass thickness.
+
+114
+00:09:16,740 --> 00:09:18,800
+Here we also measure with caliper.
+
+115
+00:09:18,940 --> 00:09:21,800
+Wall of the tube we're winding on, write it down.
+
+116
+00:09:23,600 --> 00:09:24,540
+And next.
+
+117
+00:09:25,280 --> 00:09:27,520
+Here we enter any value.
+
+118
+00:09:27,920 --> 00:09:32,500
+Say, we're interested in values from 30 to 50 meters.
+
+119
+00:09:33,040 --> 00:09:34,940
+Say, entered 40 meters.
+
+120
+00:09:37,080 --> 00:09:39,300
+Click here to calculate.
+
+121
+00:09:39,300 --> 00:09:40,640
+It calculates for us.
+
+122
+00:09:41,260 --> 00:09:44,940
+And we look at what'll be in the calculations.
+
+123
+00:09:45,440 --> 00:09:48,400
+We change the wire length.
+
+124
+00:09:48,760 --> 00:09:49,320
+What for?
+
+125
+00:09:49,680 --> 00:09:52,380
+Here we're interested in this wire pitch.
+
+126
+00:09:53,440 --> 00:09:59,140
+See, it's now 4.24 mm.
+
+127
+00:10:00,620 --> 00:10:05,740
+And our wire, as we remember, I wrote 4.2 mm.
+
+128
+00:10:05,740 --> 00:10:25,400
+That is, in this case we need to, playing with this length-of-wire column, pick such a length that the wire pitch here comes out equal to its diameter over insulation.
+
+129
+00:10:26,180 --> 00:10:29,180
+In my case it's 4.2 mm.
+
+130
+00:10:29,180 --> 00:10:37,100
+But since the wire, when we lay it in the coil, lays with tension.
+
+131
+00:10:37,680 --> 00:10:42,500
+And we get this moment that the wire lays slightly oval.
+
+132
+00:10:42,600 --> 00:10:45,180
+And its width actually increases.
+
+133
+00:10:45,360 --> 00:10:51,340
+That's exactly why we pick the moment so in hundredths we have 24-26 mm.
+
+134
+00:10:51,640 --> 00:10:53,220
+That is, slightly more.
+
+135
+00:10:53,300 --> 00:10:56,540
+This will correspond to the reality of wire laying.
+
+136
+00:10:56,540 --> 00:11:03,980
+Why is it important to align this moment, the wire pitch.
+
+137
+00:11:04,100 --> 00:11:11,880
+The wire pitch in our case determines the inter-turn capacitance.
+
+138
+00:11:13,280 --> 00:11:15,580
+And also it determines the inductance.
+
+139
+00:11:16,220 --> 00:11:20,080
+Ultimately it determines our LC resonance.
+
+140
+00:11:20,080 --> 00:11:30,540
+And the wire length determines what standing wave we'll have on this conductor's length.
+
+141
+00:11:31,140 --> 00:11:36,300
+And this calculator counts very well, shows as a graph.
+
+142
+00:11:37,200 --> 00:11:41,040
+We see the moment of intersection of one graph with another.
+
+143
+00:11:41,220 --> 00:11:44,220
+And it outputs the frequency below.
+
+144
+00:11:44,440 --> 00:11:49,180
+It outputs the frequency for a single-layer coil with this pitch.
+
+145
+00:11:49,180 --> 00:11:50,920
+Not for our coil.
+
+146
+00:11:51,120 --> 00:12:01,160
+That is, we'll be interested here, in this case, in this moment.
+
+147
+00:12:02,080 --> 00:12:09,640
+Inductance in microhenries and turn count.
+
+148
+00:12:10,000 --> 00:12:12,520
+See, our inductance is 171.
+
+149
+00:12:13,420 --> 00:12:16,280
+Turn count 268.
+
+150
+00:12:16,980 --> 00:12:19,600
+This parameter we write down for ourselves.
+
+151
+00:12:19,600 --> 00:12:27,900
+Which we picked for this wire pitch that corresponds to 4.2 mm.
+
+152
+00:12:28,100 --> 00:12:31,600
+That is, the program showed us 4.24.
+
+153
+00:12:32,040 --> 00:12:33,360
+This suits us.
+
+154
+00:12:34,220 --> 00:12:35,460
+What do we do next?
+
+155
+00:12:36,000 --> 00:12:38,380
+Take our carcass we measured.
+
+156
+00:12:39,200 --> 00:12:43,240
+And wind this 45-meter length of wire.
+
+157
+00:12:43,940 --> 00:12:47,560
+This is what you'll need to lay into the coil.
+
+158
+00:12:47,560 --> 00:12:50,920
+To this length you add your leads.
+
+159
+00:12:51,000 --> 00:12:55,220
+Say, I add 35 cm to the start.
+
+160
+00:12:55,680 --> 00:13:03,640
+And 70 cm to the wire length at the end where we finish winding.
+
+161
+00:13:03,840 --> 00:13:05,000
+Which will be hot.
+
+162
+00:13:05,220 --> 00:13:06,000
+Why?
+
+163
+00:13:06,000 --> 00:13:10,280
+Because it passes then through the tube and returns back.
+
+164
+00:13:10,280 --> 00:13:12,420
+That is, two lengths from the start.
+
+165
+00:13:12,900 --> 00:13:16,760
+But these 45 meters should be laid in the coil.
+
+166
+00:13:18,500 --> 00:13:20,860
+Next take our carcass.
+
+167
+00:13:21,180 --> 00:13:23,760
+Wind our wire.
+
+168
+00:13:24,140 --> 00:13:25,840
+Check our calculations.
+
+169
+00:13:26,440 --> 00:13:27,920
+That is, we wound the wire.
+
+170
+00:13:28,780 --> 00:13:35,960
+And on this wire turn count should converge and inductance should converge.
+
+171
+00:13:36,060 --> 00:13:43,800
+If these two parameters converge for us, then we can already start unwinding this wire into the coil.
+
+172
+00:13:43,800 --> 00:13:56,780
+If these parameters, say, by inductance or by turn count, especially turn count, pay attention, didn't converge, means somewhere in the program we entered inaccurate values.
+
+173
+00:13:57,000 --> 00:14:03,520
+That is, say, didn't account for this moment incorrectly with insulation wall thickness.
+
+174
+00:14:04,480 --> 00:14:07,170
+Or poorly measured the tube.
+
+175
+00:14:07,500 --> 00:14:10,800
+Or, say, the tube has different diameters.
+
+176
+00:14:11,700 --> 00:14:14,160
+That's about turn count.
+
+177
+00:14:14,300 --> 00:14:15,900
+About inductance.
+
+178
+00:14:16,040 --> 00:14:19,700
+Turns may match but the inductance will be different.
+
+179
+00:14:20,040 --> 00:14:21,500
+Say, it'll be higher.
+
+180
+00:14:22,080 --> 00:14:24,560
+If inductance is higher, not scary.
+
+181
+00:14:24,600 --> 00:14:28,880
+If you get, say, 175-180 microhenries.
+
+182
+00:14:29,360 --> 00:14:34,540
+This moment isn't scary if it didn't quite converge.
+
+183
+00:14:34,680 --> 00:14:41,500
+But if you get much more, that means the wire you took isn't pure copper.
+
+184
+00:14:41,660 --> 00:14:46,300
+Copper has impurities of other metals that increase its inductance.
+
+185
+00:14:46,740 --> 00:14:50,940
+That is, this wire is no longer suitable for further work.
+
+186
+00:14:51,040 --> 00:14:55,220
+That's why everyone says, take wire of oxygen-free copper.
+
+187
+00:14:55,340 --> 00:14:57,160
+That is, oxygen-free copper.
+
+188
+00:14:57,980 --> 00:15:05,380
+It's copper annealed in oxygen-free environment, in inert gas.
+
+189
+00:15:06,200 --> 00:15:12,500
+So, if our parameters matched, next moment we wind the coil.
+
+190
+00:15:13,660 --> 00:15:15,300
+Coil winding rules.
+
+191
+00:15:15,780 --> 00:15:24,560
+In the first layer, in this coil, say, on the example of this coil.
+
+192
+00:15:25,640 --> 00:15:27,220
+Let's analyze the moment.
+
+193
+00:15:30,260 --> 00:15:32,560
+So, here's our coil.
+
+194
+00:15:33,220 --> 00:15:34,720
+What are the winding rules?
+
+195
+00:15:34,720 --> 00:15:39,820
+In the first layer we should lay exactly one quarter of the total wire length.
+
+196
+00:15:40,460 --> 00:15:46,600
+That is, when you calculated in the program, you take the wire and mark it.
+
+197
+00:15:46,880 --> 00:15:50,020
+Say, you make marks every 5 meters.
+
+198
+00:15:50,320 --> 00:15:52,660
+And then in the end you divide on the calculator.
+
+199
+00:15:52,720 --> 00:15:55,100
+In our case we got 45 meters.
+
+200
+00:15:55,200 --> 00:15:56,060
+Divide by 4.
+
+201
+00:15:56,720 --> 00:15:59,540
+Put one quarter on the first layer.
+
+202
+00:16:00,200 --> 00:16:03,580
+Put one quarter of the wire on the second layer.
+
+203
+00:16:04,720 --> 00:16:12,720
+Next, the third wire layer is laid geometrically to the middle of the first layer.
+
+204
+00:16:13,320 --> 00:16:19,040
+And then, fourth, fifth and sixth layer, this will be inductance fitting.
+
+205
+00:16:20,020 --> 00:16:28,160
+The inductance of this coil should come out as in the calculations.
+
+206
+00:16:28,800 --> 00:16:31,840
+In this case 171 microhenries.
+
+207
+00:16:31,840 --> 00:16:39,120
+That is, we'll need to wind this coil exactly with the same inductance.
+
+208
+00:16:39,780 --> 00:16:41,000
+This is mandatory.
+
+209
+00:16:41,580 --> 00:16:42,980
+Without this it won't work.
+
+210
+00:16:43,100 --> 00:16:46,760
+That is, our inductance is the LC resonance.
+
+211
+00:16:47,140 --> 00:16:50,940
+Just like our wire pitch.
+
+212
+00:16:51,360 --> 00:16:55,440
+This is inter-turn capacitance that affects LC resonance.
+
+213
+00:16:56,440 --> 00:17:02,060
+Otherwise, if we wind the coil with wrong inductance, LC resonance drifts.
+
+214
+00:17:02,260 --> 00:17:07,880
+And this calculation in the program, these intersection points.
+
+215
+00:17:08,680 --> 00:17:14,240
+We won't have LC resonance matching with standing wave.
+
+216
+00:17:14,380 --> 00:17:15,760
+And coil won't work.
+
+217
+00:17:16,900 --> 00:17:21,040
+This is one of the important rules to do.
+
+218
+00:17:21,040 --> 00:17:24,420
+Now, how do we wind the coil?
+
+219
+00:17:24,520 --> 00:17:26,300
+We know several methods.
+
+220
+00:17:26,920 --> 00:17:30,180
+Saw them, were shown.
+
+221
+00:17:30,900 --> 00:17:33,320
+And Ruslan showed us.
+
+222
+00:17:33,540 --> 00:17:36,220
+And many others, specifically Alekseev.
+
+223
+00:17:37,020 --> 00:17:38,300
+How do we do it?
+
+224
+00:17:38,360 --> 00:17:40,860
+Pushed the wire through, wind.
+
+225
+00:17:41,740 --> 00:17:43,360
+Reached the end of the coil.
+
+226
+00:17:44,220 --> 00:17:45,720
+Coming back.
+
+227
+00:17:45,860 --> 00:17:47,760
+Laid the wire, there it goes.
+
+228
+00:17:48,760 --> 00:17:51,360
+And can wind.
+
+229
+00:17:52,400 --> 00:17:55,360
+Laid across and wind in reverse.
+
+230
+00:17:55,440 --> 00:17:56,760
+That is, the opposite direction.
+
+231
+00:17:57,560 --> 00:18:00,540
+Why are these coils wound in reverse?
+
+232
+00:18:02,740 --> 00:18:10,000
+If you wind the whole coil in one direction, its inductance will be much higher than calculated.
+
+233
+00:18:10,120 --> 00:18:12,900
+We understand our coil is multi-layer.
+
+234
+00:18:13,000 --> 00:18:14,320
+Inductance grows.
+
+235
+00:18:14,320 --> 00:18:17,620
+That's why coils are wound in reverse.
+
+236
+00:18:17,740 --> 00:18:20,680
+To keep this inductance in parameters.
+
+237
+00:18:22,740 --> 00:18:29,920
+The third layer usually, when you wind, knocks the inductance below calculated.
+
+238
+00:18:31,260 --> 00:18:34,500
+The fourth layer smoothly raises it.
+
+239
+00:18:34,680 --> 00:18:36,520
+The fifth layer a bit faster.
+
+240
+00:18:36,760 --> 00:18:40,100
+And the sixth layer also smoothly raises the inductance.
+
+241
+00:18:41,100 --> 00:18:55,100
+Playing in the fourth, fifth and sixth layer with turn count, moving them from one layer to another, we have to lay exactly these calculated 45 meters of wire in the coil.
+
+242
+00:18:56,420 --> 00:18:59,500
+We achieve this inductance.
+
+243
+00:19:00,140 --> 00:19:10,220
+When we did this, achieved this inductance, we can move to winding the inductor.
+
+244
+00:19:10,540 --> 00:19:14,960
+But before it we'll do one more interesting thing with this coil.
+
+245
+00:19:16,040 --> 00:19:18,000
+We analyzed one winding method.
+
+246
+00:19:18,180 --> 00:19:20,500
+Now there's such a winding method.
+
+247
+00:19:22,040 --> 00:19:27,260
+Wire is started, passes through the whole coil, winds.
+
+248
+00:19:27,600 --> 00:19:31,780
+That is, we started winding, say, in the first method from here.
+
+249
+00:19:31,780 --> 00:19:33,760
+In the second method it's the same.
+
+250
+00:19:34,220 --> 00:19:41,560
+Wind here the first layer, return, finish winding.
+
+251
+00:19:42,320 --> 00:19:46,600
+And also wind the third layer to the middle.
+
+252
+00:19:47,900 --> 00:19:50,920
+Important to keep the same inductance moment.
+
+253
+00:19:52,420 --> 00:19:54,120
+There's this moment.
+
+254
+00:19:54,480 --> 00:19:58,080
+That is, these coils can be wound differently, they all work.
+
+255
+00:19:58,080 --> 00:19:59,340
+However you like.
+
+256
+00:19:59,500 --> 00:20:06,400
+Main thing is to follow this calculation moment.
+
+257
+00:20:07,200 --> 00:20:07,940
+This is important.
+
+258
+00:20:08,780 --> 00:20:13,620
+Next, what I can recommend, what I do.
+
+259
+00:20:13,900 --> 00:20:21,820
+Say, you can wind, as we already analyzed, one direction and then back, in the other direction.
+
+260
+00:20:23,100 --> 00:20:25,060
+But I do differently.
+
+261
+00:20:25,060 --> 00:20:33,980
+I wind one direction, pull the wire to the beginning and wind again the first layer in this direction.
+
+262
+00:20:34,180 --> 00:20:35,840
+What does this moment give?
+
+263
+00:20:36,720 --> 00:20:50,780
+This moment gives us, when the inductor works here, physically on the conductor length, that if it's wound in different directions, when we strike it, part of the wave moves in one direction, and
+
+264
+00:20:50,780 --> 00:20:53,340
+part of the wave goes to the bigger wire direction.
+
+265
+00:20:55,020 --> 00:20:57,500
+This moment happens.
+
+266
+00:20:58,120 --> 00:21:13,800
+And if we wind the wire with crossing, that is, wound, returned and over this wire wound again, then these wire strikes direct this wave to one side, to the end
+
+267
+00:21:13,800 --> 00:21:14,520
+of the conductor.
+
+268
+00:21:14,800 --> 00:21:17,620
+And the coil works more coordinated.
+
+269
+00:21:19,680 --> 00:21:26,120
+About the foil that's placed in the coil.
+
+270
+00:21:26,240 --> 00:21:30,200
+Say I experimented, see I even have a lead.
+
+271
+00:21:31,120 --> 00:21:34,320
+Foil comes out, laid under the coil itself.
+
+272
+00:21:35,180 --> 00:21:38,640
+This is one option of how it could be done.
+
+273
+00:21:39,300 --> 00:21:46,600
+Other options are foil that's in the reverse layers.
+
+274
+00:21:46,600 --> 00:21:57,400
+Say, here on the example of this coil, see the wire, this is the foil lead from one edge.
+
+275
+00:21:57,580 --> 00:22:00,160
+That is, I did different experiments with the other.
+
+276
+00:22:00,640 --> 00:22:10,600
+I tested foil winding under the coil and foil winding here in this zone of reverse turns, to the middle.
+
+277
+00:22:11,600 --> 00:22:16,860
+This was time when I experimented, not yet using this program's calculations.
+
+278
+00:22:17,000 --> 00:22:18,420
+That is, what does the foil do?
+
+279
+00:22:19,360 --> 00:22:25,540
+Foil in this case can help, or can strongly spoil the picture.
+
+280
+00:22:26,660 --> 00:22:32,660
+That is, foil is a reflector for the magnetic field.
+
+281
+00:22:32,660 --> 00:22:47,720
+And there are moments when the coil without foil doesn't work, and you put the foil, say, either under the coil bottom, or, well I'm more interested in the variant in the reverse turns zone of separating differently-directed
+
+282
+00:22:47,720 --> 00:23:01,520
+magnetic fluxes, that LC just shifts in the needed direction, inductance changes and LC convergence with the wave from the standing wave happens.
+
+283
+00:23:01,520 --> 00:23:04,460
+And then the coil starts working.
+
+284
+00:23:06,100 --> 00:23:08,060
+That's about foil.
+
+285
+00:23:10,240 --> 00:23:16,540
+Now in these coils, latest windings, I don't use foil at all.
+
+286
+00:23:17,340 --> 00:23:24,700
+It's just not needed, if you calculated it right and the coil comes out working, foil isn't required there.
+
+287
+00:23:25,700 --> 00:23:27,740
+Set aside this coil.
+
+288
+00:23:29,080 --> 00:23:34,380
+So, say example of one of the wound coils.
+
+289
+00:23:34,960 --> 00:23:45,240
+Here clearly visible that I played with turn count in layers, that is, I picked inductance.
+
+290
+00:23:47,600 --> 00:23:55,120
+Moving, here's our third layer, fourth in the windings we know, it's wound the same way to the end.
+
+291
+00:23:56,320 --> 00:24:01,860
+I skipped turns here, that is, achieved inductance per program calculations.
+
+292
+00:24:03,940 --> 00:24:10,520
+This is a matter of practice, practice a bit, learn, it'll come out fine.
+
+293
+00:24:11,200 --> 00:24:13,460
+Next, about the inductor.
+
+294
+00:24:13,460 --> 00:24:18,640
+In quarter length, or inductor length in one-half.
+
+295
+00:24:19,100 --> 00:24:24,200
+From practice I'll tell you, it's better to deal with inductor length at quarter.
+
+296
+00:24:24,760 --> 00:24:34,940
+On it's easier to catch the standing wave, align these processes for further work with this coil.
+
+297
+00:24:35,740 --> 00:24:40,900
+So look, what's the winding rule for the inductor.
+
+298
+00:24:40,900 --> 00:24:47,880
+Inductor is wound at the inductance multiplicity for the coil.
+
+299
+00:24:49,180 --> 00:24:55,460
+Now I'll turn on the meter so it's visible.
+
+300
+00:24:56,660 --> 00:25:04,240
+For measurement, inductance shows for us.
+
+301
+00:25:04,240 --> 00:25:10,460
+And here look, now I'm measuring the green leads.
+
+302
+00:25:10,720 --> 00:25:14,180
+This is our coil itself.
+
+303
+00:25:15,800 --> 00:25:22,380
+Its inductance corresponds to 134 µH.
+
+304
+00:25:23,480 --> 00:25:27,900
+Now I'll measure the inductor.
+
+305
+00:25:28,640 --> 00:25:30,080
+Inductor inductance.
+
+306
+00:25:31,800 --> 00:25:33,200
+Measure.
+
+307
+00:25:34,200 --> 00:25:38,700
+And it corresponds to 68 µH.
+
+308
+00:25:38,860 --> 00:25:43,260
+That is, half of the inductance of this coil itself.
+
+309
+00:25:44,180 --> 00:25:51,460
+How to achieve this moment so it's also by inductance?
+
+310
+00:25:51,600 --> 00:25:55,560
+See, the inductor is wound slightly non-standard.
+
+311
+00:25:56,420 --> 00:26:04,080
+For it to match, you need to play with the physical winding length on the coil.
+
+312
+00:26:04,480 --> 00:26:08,080
+You can play with the pitch in this inductor's wire.
+
+313
+00:26:08,180 --> 00:26:13,360
+You can put cardboard underneath to increase the diameter.
+
+314
+00:26:13,480 --> 00:26:16,920
+That is, this is selected in practice for this coil.
+
+315
+00:26:17,960 --> 00:26:33,340
+If you wind the coil in inductance multiplicity, the inductor and the grenade itself, you already get high and low harmonics in these coils working in phase.
+
+316
+00:26:33,520 --> 00:26:38,220
+Turns out efficiency of this system grows.
+
+317
+00:26:39,580 --> 00:26:41,540
+Inductor will heat up less.
+
+318
+00:26:41,640 --> 00:26:43,160
+This is verified in practice.
+
+319
+00:26:43,500 --> 00:26:45,940
+And coils work coordinated.
+
+320
+00:26:46,020 --> 00:26:51,040
+Because here the whole system is built on magnetic fields and their rotations.
+
+321
+00:26:51,040 --> 00:26:55,800
+These inductance elements must be taken into account.
+
+322
+00:26:58,080 --> 00:27:01,880
+Talked about inductor.
+
+323
+00:27:02,140 --> 00:27:04,740
+Now what's needed before the inductor?
+
+324
+00:27:05,400 --> 00:27:08,620
+Before the inductor we need to check this coil.
+
+325
+00:27:09,180 --> 00:27:12,200
+Moving to the concept of wave resonance.
+
+326
+00:27:13,740 --> 00:27:17,480
+What is it and how does it arise in these coils.
+
+327
+00:27:19,160 --> 00:27:21,800
+With the calculator I explained to you.
+
+328
+00:27:21,920 --> 00:27:26,140
+By the way, these frequencies that will be labeled under the coil.
+
+329
+00:27:27,100 --> 00:27:29,220
+Don't pay attention to them.
+
+330
+00:27:29,740 --> 00:27:33,680
+Resonant frequency and own capacitance.
+
+331
+00:27:33,980 --> 00:27:35,040
+We don't need this.
+
+332
+00:27:35,380 --> 00:27:38,280
+Calculator counts for a single-layer coil.
+
+333
+00:27:38,440 --> 00:27:43,440
+We need to preserve the pitch on winding we got.
+
+334
+00:27:44,720 --> 00:27:47,400
+And important to preserve the final inductance.
+
+335
+00:27:47,400 --> 00:27:49,220
+This moment is done.
+
+336
+00:27:49,780 --> 00:27:50,400
+Next.
+
+337
+00:27:50,540 --> 00:27:54,900
+On my channel there's a very interesting video.
+
+338
+00:27:55,040 --> 00:27:58,400
+It's called "Quarter-wave resonator".
+
+339
+00:27:59,800 --> 00:28:08,460
+This video is specifically made to test coils by it.
+
+340
+00:28:08,580 --> 00:28:10,400
+Did it work for you or not.
+
+341
+00:28:10,400 --> 00:28:18,760
+In this video I use this interesting thing.
+
+342
+00:28:19,160 --> 00:28:25,920
+It's an attachment to the laboratory signal generator.
+
+343
+00:28:27,360 --> 00:28:31,180
+Or any other you can make yourself.
+
+344
+00:28:31,320 --> 00:28:35,500
+But better to have a normal laboratory signal generator.
+
+345
+00:28:35,880 --> 00:28:37,380
+What does it represent?
+
+346
+00:28:37,380 --> 00:28:38,540
+Inductor.
+
+347
+00:28:39,020 --> 00:28:40,920
+In the video it's all shown.
+
+348
+00:28:41,960 --> 00:28:42,720
+Transistor.
+
+349
+00:28:43,040 --> 00:28:45,400
+In this case IRF840.
+
+350
+00:28:45,540 --> 00:28:51,200
+Tried many, but this transistor has minimum gate capacitance.
+
+351
+00:28:51,260 --> 00:28:55,720
+So it can work effectively at high frequencies.
+
+352
+00:28:56,600 --> 00:28:58,020
+What else is here?
+
+353
+00:28:58,160 --> 00:29:02,080
+Driver controlling through resistance.
+
+354
+00:29:02,240 --> 00:29:04,960
+Here resistance about 5 Ω.
+
+355
+00:29:08,880 --> 00:29:17,340
+Between source and gate we have 1.2 kΩ discharge resistance.
+
+356
+00:29:17,540 --> 00:29:19,840
+Well or 1 kΩ, 0.8 kΩ.
+
+357
+00:29:19,920 --> 00:29:21,140
+Any will work here.
+
+358
+00:29:21,660 --> 00:29:22,160
+Next.
+
+359
+00:29:22,580 --> 00:29:23,520
+Chip.
+
+360
+00:29:23,820 --> 00:29:25,280
+It's a Schmitt trigger.
+
+361
+00:29:25,480 --> 00:29:27,040
+Double inversion goes.
+
+362
+00:29:28,020 --> 00:29:34,140
+This connects to the signal generator output.
+
+363
+00:29:34,140 --> 00:29:35,700
+Directly to it.
+
+364
+00:29:35,920 --> 00:29:41,500
+To reduce the influence of static spikes on the generator itself.
+
+365
+00:29:42,460 --> 00:29:46,580
+Here we have a power source.
+
+366
+00:29:47,560 --> 00:29:50,600
+I plug it into the outlet.
+
+367
+00:29:50,880 --> 00:29:53,280
+Can from a battery, doesn't matter.
+
+368
+00:29:53,760 --> 00:29:55,800
+Main thing is it should be stabilized.
+
+369
+00:29:56,060 --> 00:30:01,760
+Here at output I get 15 volts going to driver power.
+
+370
+00:30:02,920 --> 00:30:05,080
+There's electrolytic here.
+
+371
+00:30:05,500 --> 00:30:07,220
+15 volts arrives at it.
+
+372
+00:30:07,420 --> 00:30:14,820
+And capacitance that increases the driver's speed.
+
+373
+00:30:15,400 --> 00:30:17,140
+Here 2 microfarads.
+
+374
+00:30:17,340 --> 00:30:21,940
+This affects the leading edge that opens the transistor.
+
+375
+00:30:22,020 --> 00:30:22,580
+This is important.
+
+376
+00:30:23,340 --> 00:30:26,140
+Watch the video, there I change duty cycle.
+
+377
+00:30:26,140 --> 00:30:30,520
+This inductor coil itself connects.
+
+378
+00:30:32,180 --> 00:30:35,640
+So, plus power goes to it directly.
+
+379
+00:30:36,240 --> 00:30:41,060
+And goes to the drain of this transistor, second lead.
+
+380
+00:30:42,100 --> 00:30:50,800
+These are power wires that connect to the power source, which directly works on this coil.
+
+381
+00:30:51,640 --> 00:30:54,760
+I don't recommend using more than 12 volts.
+
+382
+00:30:54,760 --> 00:30:56,400
+All these effects are visible there.
+
+383
+00:30:56,920 --> 00:30:58,620
+That is, wound the little coil.
+
+384
+00:31:01,720 --> 00:31:10,510
+Put our test inductor on it.
+
+385
+00:31:13,220 --> 00:31:14,930
+Somewhere around this area.
+
+386
+00:31:15,590 --> 00:31:18,390
+And we test it, see what happens.
+
+387
+00:31:19,390 --> 00:31:23,710
+In the quarter-wave resonator video this is presented.
+
+388
+00:31:25,730 --> 00:31:27,690
+Returning to the picture.
+
+389
+00:31:30,830 --> 00:31:32,890
+What should there be?
+
+390
+00:31:33,550 --> 00:31:36,770
+I schematically drew a fluorescent lamp.
+
+391
+00:31:37,750 --> 00:31:41,450
+If your coil came out, you'll see a very interesting moment.
+
+392
+00:31:42,650 --> 00:31:51,330
+The lamp itself, it'll have alternation of more brightly glowing strips with dimmer ones.
+
+393
+00:31:52,250 --> 00:31:56,370
+If it's parallel to this coil.
+
+394
+00:31:57,270 --> 00:31:58,470
+What does this tell?
+
+395
+00:31:59,250 --> 00:32:01,010
+You need to catch this moment.
+
+396
+00:32:01,670 --> 00:32:05,070
+You can see these strips run fast.
+
+397
+00:32:05,810 --> 00:32:11,230
+By picking frequency you achieve that these strips stop.
+
+398
+00:32:12,410 --> 00:32:13,930
+They'll stop running.
+
+399
+00:32:13,930 --> 00:32:15,270
+What's happening?
+
+400
+00:32:15,390 --> 00:32:22,510
+This lamp will show us the longitudinal standing wave.
+
+401
+00:32:22,670 --> 00:32:26,790
+Here I schematically drew rotation.
+
+402
+00:32:27,990 --> 00:32:33,970
+This rotation corresponds to the longitudinal standing wave around this coil.
+
+403
+00:32:34,070 --> 00:32:38,950
+When the second-kind efficiency moment for the resonant circuit happens in it.
+
+404
+00:32:38,950 --> 00:32:42,630
+If this isn't there, rotation is already a longitudinal wave.
+
+405
+00:32:42,970 --> 00:32:46,410
+This is exactly the interaction of this coil with the medium.
+
+406
+00:32:47,070 --> 00:32:51,010
+Specifically the fluorescent lamp responds to it.
+
+407
+00:32:52,830 --> 00:32:55,350
+And I want to warn everyone.
+
+408
+00:32:56,310 --> 00:33:01,350
+You'll experiment with this coil at minimum voltage.
+
+409
+00:33:01,570 --> 00:33:05,330
+That is, feed there no more than 12 volts.
+
+410
+00:33:05,330 --> 00:33:11,590
+Because this system, you're not yet familiar with it, it strongly affects health.
+
+411
+00:33:11,710 --> 00:33:12,550
+Extremely strongly.
+
+412
+00:33:12,790 --> 00:33:19,010
+That is, you can get hit pretty bad from it literally in a few minutes of work.
+
+413
+00:33:19,670 --> 00:33:21,910
+How can you feel this on yourself?
+
+414
+00:33:22,070 --> 00:33:27,170
+There'll be high-frequency and low-frequency oscillations.
+
+415
+00:33:27,790 --> 00:33:32,650
+That is, low-frequency oscillations can throw off heart rhythm.
+
+416
+00:33:32,650 --> 00:33:34,990
+Feel shortness of breath.
+
+417
+00:33:36,010 --> 00:33:38,110
+Will be bad wellbeing.
+
+418
+00:33:38,530 --> 00:33:42,890
+Higher-frequency oscillations act on the brain.
+
+419
+00:33:43,430 --> 00:33:50,410
+After a few minutes of operation a headache is observed.
+
+420
+00:33:50,970 --> 00:33:54,770
+It increases over time.
+
+421
+00:33:54,950 --> 00:34:01,090
+That's why, did you see this moment when the fluorescent lamp lit up with such strips?
+
+422
+00:34:01,090 --> 00:34:06,110
+Turn off the system, work at lower powers as much as possible.
+
+423
+00:34:06,250 --> 00:34:14,510
+If your coil doesn't produce such effects, like in this quarter-wave resonator video, then something was done wrong.
+
+424
+00:34:14,650 --> 00:34:19,010
+Something doesn't fit this system.
+
+425
+00:34:23,700 --> 00:34:26,800
+Another interesting moment about the coil.
+
+426
+00:34:28,080 --> 00:34:35,360
+How by indirect parameters to determine that you got a working coil?
+
+427
+00:34:36,420 --> 00:34:40,960
+Working with this attachment you can notice an interesting moment.
+
+428
+00:34:41,960 --> 00:34:46,540
+About health impact I already said, but there'll be another moment.
+
+429
+00:34:47,080 --> 00:34:52,780
+The coil isn't connected to anything, but in the reverse turns zone it'll heat up.
+
+430
+00:34:52,780 --> 00:34:59,200
+Feel a heating of about 40, maybe even higher degrees, will be tangible on hand.
+
+431
+00:34:59,800 --> 00:35:04,580
+That is, in the coil current movement will be observed.
+
+432
+00:35:05,980 --> 00:35:10,180
+And the wire will physically heat up itself.
+
+433
+00:35:10,340 --> 00:35:12,120
+And interesting moment.
+
+434
+00:35:13,400 --> 00:35:18,260
+By thermal balance of energy you can even approximately see.
+
+435
+00:35:18,900 --> 00:35:29,480
+For example, you feed 12 watts here to this inductor that will be.
+
+436
+00:35:30,800 --> 00:35:36,960
+And the coil will heat up by these same 12 watts or more.
+
+437
+00:35:38,880 --> 00:35:54,980
+Imagine that to heat such a piece of copper, many-meter, plus in insulation, for this to go, there's clearly visible anomalous current movement in this coil.
+
+438
+00:35:56,320 --> 00:36:01,420
+This is an interesting moment that you can determine.
+
+439
+00:36:01,420 --> 00:36:02,680
+And next.
+
+440
+00:36:03,160 --> 00:36:16,420
+The coil, when it's connected later to the push-pull, to the inductor, even if no load is on it, you'll hit the multiplicity normally, by frequency.
+
+441
+00:36:17,260 --> 00:36:20,500
+The push-pull will modulate the high-frequency processor.
+
+442
+00:36:20,640 --> 00:36:24,560
+It'll also heat up without connected load.
+
+443
+00:36:24,560 --> 00:36:34,340
+And you'll also immediately notice, if the coil's wound right, that pumping much energy into it afterwards isn't necessary at all.
+
+444
+00:36:34,900 --> 00:36:38,820
+It already starts working pretty independently.
+
+445
+00:36:39,220 --> 00:36:41,640
+Both at high and low frequency.
+
+446
+00:36:42,140 --> 00:36:48,540
+You'll see efficiency gain during push-pull operation.
+
+447
+00:36:49,160 --> 00:36:53,260
+And during high-frequency part operation.
+
+448
+00:36:55,180 --> 00:36:59,360
+Now to the question about 37.5 meters.
+
+449
+00:36:59,920 --> 00:37:04,240
+Why does Ruslan get this moment and he recommended it?
+
+450
+00:37:05,720 --> 00:37:11,780
+I checked his coil in this program I showed.
+
+451
+00:37:11,920 --> 00:37:16,460
+It really comes out at 37.5 meters, but with one condition.
+
+452
+00:37:17,460 --> 00:37:29,180
+Coil carcass thickness, this parameter, must correspond to 4 mm.
+
+453
+00:37:31,140 --> 00:37:32,540
+Why 4 mm?
+
+454
+00:37:33,340 --> 00:37:38,720
+Because GOST-European sewage tubes, they're different.
+
+455
+00:37:40,080 --> 00:37:43,320
+And most likely their carcass thickness is bigger.
+
+456
+00:37:43,320 --> 00:37:51,020
+Here in Russia in the best case we can find carcass thickness 2 mm.
+
+457
+00:37:51,440 --> 00:37:52,460
+That's lucky.
+
+458
+00:37:53,480 --> 00:38:06,600
+That's why in our case, when we wind coils equal to 37.5 meters, the own oscillations or resonance frequency will be high.
+
+459
+00:38:06,600 --> 00:38:14,780
+I checked, mine was somewhere around 2.2-2.4 MHz.
+
+460
+00:38:15,540 --> 00:38:22,240
+That is, working at such a high frequency with the Tesla later will be very hard.
+
+461
+00:38:22,360 --> 00:38:23,820
+It comes out small.
+
+462
+00:38:24,860 --> 00:38:37,560
+If we look at Ruslan's video, what he says, that the frequency is 1.5 MHz, 1.6 MHz, maybe 1.8 MHz, this is the maximum.
+
+463
+00:38:38,760 --> 00:38:45,260
+Problem clearly visible that for these carcasses we need to increase wire length.
+
+464
+00:38:45,540 --> 00:38:47,100
+There's nothing scary in this.
+
+465
+00:38:47,220 --> 00:38:50,980
+Say, my coil has 47 meters wire length.
+
+466
+00:38:51,820 --> 00:38:58,540
+Its LC resonance corresponds to 1 MHz 540 kHz.
+
+467
+00:38:58,540 --> 00:39:04,720
+Quite comfortable frequency, can work on 47 meters of wire.
+
+468
+00:39:05,340 --> 00:39:07,140
+Everything happens, everything works.
+
+469
+00:39:08,720 --> 00:39:10,440
+Next question.
+
+470
+00:39:11,440 --> 00:39:15,340
+What is wave resonance?
+
+471
+00:39:16,800 --> 00:39:18,620
+Very interesting question.
+
+472
+00:39:19,460 --> 00:39:26,200
+Guys, wave resonance arises exactly in these conditions.
+
+473
+00:39:27,100 --> 00:39:29,580
+Plus one more additional moment.
+
+474
+00:39:29,780 --> 00:39:33,140
+If all these moments matched in magnetic fields.
+
+475
+00:39:33,280 --> 00:39:42,300
+Magnetic field from LC resonance converged with magnetic field from standing wave.
+
+476
+00:39:42,400 --> 00:39:44,140
+These oscillations arose.
+
+477
+00:39:45,760 --> 00:39:47,920
+This isn't wave resonance yet.
+
+478
+00:39:48,080 --> 00:39:53,580
+In the quarter-wave resonator video on my channel, I show how to get this moment.
+
+479
+00:39:53,580 --> 00:39:55,120
+The meaning is this.
+
+480
+00:39:56,100 --> 00:40:02,920
+Need to strike with a pulse at the LC resonance frequency of this coil.
+
+481
+00:40:04,400 --> 00:40:09,220
+How do we determine the LC resonance frequency of the coil?
+
+482
+00:40:10,160 --> 00:40:12,520
+Now I'll tell you this moment too.
+
+483
+00:40:13,400 --> 00:40:18,700
+Say, you wound the coil and you don't know anything about it yet.
+
+484
+00:40:19,220 --> 00:40:20,400
+What do you do?
+
+485
+00:40:20,400 --> 00:40:23,660
+Here are your two wire ends.
+
+486
+00:40:25,200 --> 00:40:26,400
+They're marked for me.
+
+487
+00:40:26,600 --> 00:40:30,620
+That is, the wire we started winding from is the cold end.
+
+488
+00:40:31,100 --> 00:40:34,160
+The wire we ended with is the hot.
+
+489
+00:40:34,180 --> 00:40:36,360
+Here I mark it with red electrical tape.
+
+490
+00:40:36,860 --> 00:40:38,340
+This wire comes out.
+
+491
+00:40:40,020 --> 00:40:41,340
+What do we do?
+
+492
+00:40:41,540 --> 00:40:43,240
+Take oscilloscope probes.
+
+493
+00:40:44,060 --> 00:40:48,180
+Attach the common alligator clip to the cold end.
+
+494
+00:40:48,180 --> 00:40:59,660
+The probe itself we attach not to the wire core, but to the insulation.
+
+495
+00:40:59,880 --> 00:41:08,180
+Since our insulation almost always has a large diameter and you can't attach a probe to it.
+
+496
+00:41:09,040 --> 00:41:11,280
+Do this interesting little moment.
+
+497
+00:41:11,600 --> 00:41:17,780
+Take an alligator clip, attach and attach the probe to it.
+
+498
+00:41:17,780 --> 00:41:19,760
+This is enough for us.
+
+499
+00:41:21,220 --> 00:41:24,620
+And the oscilloscope ground we attach to the cold.
+
+500
+00:41:24,960 --> 00:41:27,000
+Did this, attached.
+
+501
+00:41:28,700 --> 00:41:47,140
+Next, after this moment is done, we wind in this zone one and a half or three turns of small cross-section wire and connect to the laboratory signal generator.
+
+502
+00:41:48,260 --> 00:41:50,440
+Mandatory feed sine.
+
+503
+00:41:50,520 --> 00:41:54,720
+No square waves, because on square wave you can catch who-knows-what.
+
+504
+00:41:55,060 --> 00:41:59,880
+In this case we're interested in the LC resonance frequency of this coil.
+
+505
+00:42:00,560 --> 00:42:16,440
+Feed sine, set in the area of 10 volts amplitude and watch the oscilloscope until the moment when, turning the frequency, we get maximum amplitude of sine wave in this coil.
+
+506
+00:42:16,440 --> 00:42:18,940
+That is, this moment we caught.
+
+507
+00:42:19,980 --> 00:42:30,300
+Say, as I said, at 47 meters my LC resonance frequency for this coil corresponds to 1.54 MHz.
+
+508
+00:42:31,120 --> 00:42:32,420
+Comfortable frequency.
+
+509
+00:42:32,560 --> 00:42:39,140
+I know that I'll already be working with Tesla at this frequency for this coil.
+
+510
+00:42:39,140 --> 00:42:52,020
+Now when we determined this moment, we set this inductor, this attachment, what's shown in that video I gave explanation by.
+
+511
+00:42:52,780 --> 00:42:53,940
+And what do we do?
+
+512
+00:42:54,940 --> 00:43:19,840
+We set the pulse repetition frequency from this transistor equal to the LC resonance frequency of this coil, and with pulse width we set such moment that this pulse width equals
+
+513
+00:43:19,840 --> 00:43:25,240
+one quarter of the standing wave length period.
+
+514
+00:43:25,420 --> 00:43:27,700
+This must be done.
+
+515
+00:43:28,600 --> 00:43:53,000
+And now, as soon as this pulse strike corresponds to one quarter of the length of this already powerful wave, which formed not the first one but the powerful wave at second-kind efficiency for the resonant
+
+516
+00:43:53,000 --> 00:43:57,120
+circuit, we get wave resonance.
+
+517
+00:43:57,280 --> 00:44:02,080
+That is, wave resonance can't exist as an independent phenomenon.
+
+518
+00:44:03,120 --> 00:44:04,220
+It simply isn't there.
+
+519
+00:44:04,680 --> 00:44:06,240
+You won't see it anywhere.
+
+520
+00:44:06,860 --> 00:44:18,040
+Wave resonance comes when you simultaneously for this coil ramp up both LC resonance and the standing wave.
+
+521
+00:44:19,660 --> 00:44:35,000
+And further our system will work that the push-pull ramps up LC resonance in this coil at multiplicity to its high-frequency LC resonance.
+
+522
+00:44:36,040 --> 00:44:41,120
+Push-pull is a modulator for extraction and it ramps up LC resonance.
+
+523
+00:44:41,260 --> 00:44:47,220
+And the Tesla will work on the high-frequency standing wave.
+
+524
+00:44:48,100 --> 00:45:01,540
+And when both moments are ramped up simultaneously, both by LC and by standing wave, around the system the longitudinal standing wave forms, which the fluorescent lamp will react to.
+
+525
+00:45:02,860 --> 00:45:06,940
+In my video that's called "Quarter-wave resonator".
+
+526
+00:45:10,140 --> 00:45:12,260
+So, the last question remains.
+
+527
+00:45:12,420 --> 00:45:13,560
+Only the grenade?
+
+528
+00:45:15,600 --> 00:45:20,920
+These systems can be made not necessarily on such a coil.
+
+529
+00:45:21,060 --> 00:45:28,880
+The grenade in this case, this moment of its winding, what does it do being wound in reverse?
+
+530
+00:45:29,000 --> 00:45:31,560
+Specifically for maintaining inductance.
+
+531
+00:45:32,300 --> 00:45:36,280
+We keep inductance, get a working coil.
+
+532
+00:45:36,800 --> 00:45:39,760
+That is, inductance is matched with LC resonance.
+
+533
+00:45:41,920 --> 00:45:43,920
+The grenade isn't necessary to wind.
+
+534
+00:45:44,060 --> 00:45:47,480
+You can, for example, wind a coil in two layers.
+
+535
+00:45:47,580 --> 00:45:50,180
+You can generally work on a single-layer coil.
+
+536
+00:45:50,280 --> 00:45:54,320
+All processes will happen there the same way, and it'll work the same.
+
+537
+00:45:54,700 --> 00:46:04,320
+We get second-kind efficiency, ramp up LC resonance, ramp up in the quarter of the period the standing wave.
+
+538
+00:46:05,440 --> 00:46:14,280
+Two waves collide in the magnetic field, and a powerful longitudinal wave forms around the system.
+
+539
+00:46:14,620 --> 00:46:22,920
+That is, we work on transverse waves, but when they collide already in the magnetic field, two transverse waves, we get a longitudinal wave.
+
+540
+00:46:23,440 --> 00:46:27,620
+And the longitudinal wave already doesn't belong to our system directly.
+
+541
+00:46:27,780 --> 00:46:32,700
+The longitudinal wave is exactly the medium vibrations around this coil.
+
+542
+00:46:34,420 --> 00:46:41,900
+The longitudinal wave is already capable of interaction with the medium.
+
+543
+00:46:42,640 --> 00:46:47,320
+And it's capable of giving a gain in our system.
+
+544
+00:46:48,360 --> 00:46:51,300
+That's our tricky system.
+
+545
+00:46:51,820 --> 00:46:54,520
+Why no one can make it, repeat it.
+
+546
+00:46:55,420 --> 00:46:59,540
+With it you have to follow these moments.
+
+547
+00:46:59,540 --> 00:47:04,020
+Remember, all the work is on the magnetic field.
+
+548
+00:47:05,080 --> 00:47:06,900
+Don't track voltage.
+
+549
+00:47:07,220 --> 00:47:09,940
+You have to track currents in the system.
+
+550
+00:47:10,460 --> 00:47:15,620
+The current is responsible in the system for forming the magnetic field.
+
+551
+00:47:16,420 --> 00:47:20,860
+We track it, accordingly track the magnetic field in the system.
+
+552
+00:47:23,170 --> 00:47:24,340
+Good luck everyone.
+
+553
+00:47:25,340 --> 00:47:27,380
+Use the calculator.
+
+554
+00:47:27,520 --> 00:47:37,390
+Separate thanks from me to the person who provided this calculator for use.
+
+555
+00:47:37,550 --> 00:47:39,250
+He helps a lot.
+
+556
+00:47:43,100 --> 00:47:44,760
+Big thanks to him.
+
+557
+00:47:46,340 --> 00:47:47,740
+Vyacheslav Gorchilin.
+
+558
+00:47:48,920 --> 00:47:53,580
+You'll find other interesting moments on his website.
+
+559
+00:47:53,680 --> 00:47:54,460
+Recommend.
+
+560
+00:47:55,460 --> 00:47:57,420
+The person knows what he's doing.
+
+561
+00:47:59,140 --> 00:48:00,600
+Good luck everyone.
