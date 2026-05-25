@@ -1,0 +1,1311 @@
+1
+00:00:01,060 --> 00:00:03,600
+Hi everyone, this is Stalker.
+
+2
+00:00:03,900 --> 00:00:04,700
+Continuing.
+
+3
+00:00:04,880 --> 00:00:12,680
+Today we'll be talking about the control of our Tesla, about the board for it.
+
+4
+00:00:13,500 --> 00:00:14,840
+First let's look.
+
+5
+00:00:15,720 --> 00:00:18,300
+Here's my control schematic.
+
+6
+00:00:18,680 --> 00:00:35,120
+Now we reached this place, that is, the output from this push-pull synchronization control board, where one chip sets the burst strike location at the offset, and another sets the burst width
+
+7
+00:00:35,120 --> 00:00:36,720
+on the other chip.
+
+8
+00:00:36,720 --> 00:00:41,260
+This output is represented.
+
+9
+00:00:41,360 --> 00:00:47,520
+Three wires go, and it arrives at this Tesla key control board.
+
+10
+00:00:48,940 --> 00:00:50,800
+This we set aside.
+
+11
+00:00:53,400 --> 00:01:01,300
+Now we'll observe the oscillogram on the yellow oscilloscope channel.
+
+12
+00:01:01,300 --> 00:01:05,720
+It's connected directly to what arrives from the board.
+
+13
+00:01:06,600 --> 00:01:11,000
+We should get such sync pulses.
+
+14
+00:01:12,940 --> 00:01:14,980
+Now we'll expand them.
+
+15
+00:01:18,100 --> 00:01:23,700
+The width of these sync pulses is changed by a chip.
+
+16
+00:01:24,300 --> 00:01:42,820
+And if you rotate the resistor on the board, see, for example, now I'm decreasing the width of this pulse, and this decrease will set the number of pulses in our burst.
+
+17
+00:01:43,820 --> 00:01:45,960
+All in order.
+
+18
+00:01:47,200 --> 00:01:53,880
+This is, for those interested, the overall consumption of the whole controller with all drivers.
+
+19
+00:01:55,960 --> 00:02:00,400
+And here's the Tesla control schematic itself.
+
+20
+00:02:03,720 --> 00:02:06,860
+What do we observe here?
+
+21
+00:02:07,580 --> 00:02:08,600
+Going through the board.
+
+22
+00:02:09,140 --> 00:02:11,960
+Here we have power arriving.
+
+23
+00:02:13,020 --> 00:02:14,020
+15 volts.
+
+24
+00:02:14,360 --> 00:02:17,220
+The pulse itself arrived at the center point.
+
+25
+00:02:17,940 --> 00:02:18,900
+And the common wire.
+
+26
+00:02:19,700 --> 00:02:26,000
+This is represented red, common black, and the wire thin.
+
+27
+00:02:26,720 --> 00:02:28,800
+This is the signal one.
+
+28
+00:02:30,100 --> 00:02:30,940
+What do we see?
+
+29
+00:02:31,120 --> 00:02:38,060
+Power also reaches directly to the regulator with its wiring.
+
+30
+00:02:38,060 --> 00:02:39,100
+This is its standard.
+
+31
+00:02:39,160 --> 00:02:40,640
+Mandatorily through a choke.
+
+32
+00:02:41,140 --> 00:02:43,000
+From interference one more capacitor.
+
+33
+00:02:43,800 --> 00:02:45,980
+Same as on the previous board.
+
+34
+00:02:47,000 --> 00:02:54,740
+And mandatorily the power going, reaches directly the driver that controls the key.
+
+35
+00:02:55,880 --> 00:02:57,280
+Without any regulators.
+
+36
+00:02:57,520 --> 00:02:58,440
+This is mandatory.
+
+37
+00:03:00,500 --> 00:03:03,280
+Going, looking further, what we have.
+
+38
+00:03:03,280 --> 00:03:09,220
+For starters the signal reaches the IR2113 driver.
+
+39
+00:03:10,100 --> 00:03:11,460
+Reaches its channel.
+
+40
+00:03:11,640 --> 00:03:13,120
+This is the tenth pin, input.
+
+41
+00:03:13,820 --> 00:03:15,080
+And exits from the seventh.
+
+42
+00:03:15,720 --> 00:03:20,220
+Through a resistor goes to the KD522 diode.
+
+43
+00:03:21,020 --> 00:03:24,120
+Or any other fast-acting one you find.
+
+44
+00:03:25,080 --> 00:03:28,120
+And reaches this jumper.
+
+45
+00:03:28,780 --> 00:03:32,540
+This jumper is represented on the board as this thing.
+
+46
+00:03:32,540 --> 00:03:39,880
+There's also visible a metallic jumper switched on.
+
+47
+00:03:40,580 --> 00:03:42,020
+What does this give us?
+
+48
+00:03:42,120 --> 00:03:48,280
+If you remove this jumper, the Tesla will work analogously to a Kacher.
+
+49
+00:03:48,620 --> 00:03:50,380
+That is, in continuous mode.
+
+50
+00:03:50,800 --> 00:03:55,480
+The generator won't break and continuous generation will go.
+
+51
+00:03:57,380 --> 00:04:02,100
+Whoever needs this function, removes the connection and that's it.
+
+52
+00:04:02,100 --> 00:04:04,100
+And the Tesla turns into a Kacher.
+
+53
+00:04:05,020 --> 00:04:13,000
+Next, from it the signal reaches us at the TC4093BP chip.
+
+54
+00:04:13,720 --> 00:04:16,620
+That is, what happens here, on this chip.
+
+55
+00:04:17,720 --> 00:04:24,900
+Now we'll look more closely at the picture in logic, so it's clear.
+
+56
+00:04:25,470 --> 00:04:31,900
+Here's our signal that goes from the push-pull on the oscilloscope.
+
+57
+00:04:35,550 --> 00:04:41,010
+It reaches the driver on the channel, is amplified and reaches the diode.
+
+58
+00:04:41,130 --> 00:04:43,720
+After that to the logical element of this chip.
+
+59
+00:04:44,570 --> 00:04:48,610
+On this logical element a driving generator is built.
+
+60
+00:04:48,610 --> 00:04:52,150
+This is labeled burst frequency.
+
+61
+00:04:52,250 --> 00:04:57,090
+Here this resistor is 200 Ω, 260 Ω.
+
+62
+00:04:57,230 --> 00:05:00,750
+From output to input is sent and to the capacitor.
+
+63
+00:05:01,530 --> 00:05:02,910
+How does this circuit work?
+
+64
+00:05:05,010 --> 00:05:09,970
+We have, when there's a low signal level on the input.
+
+65
+00:05:10,870 --> 00:05:14,650
+Here say, Schmitt trigger inverts.
+
+66
+00:05:14,730 --> 00:05:16,270
+We have a high signal level.
+
+67
+00:05:16,270 --> 00:05:22,130
+High signal level is sent through resistors to the capacitor input.
+
+68
+00:05:22,670 --> 00:05:27,910
+The capacitor charges to high potential, to the trigger triggering point.
+
+69
+00:05:28,930 --> 00:05:32,070
+And the signal at output drops to low.
+
+70
+00:05:32,270 --> 00:05:35,990
+After this capacitor discharged.
+
+71
+00:05:36,850 --> 00:05:40,490
+Again here high signal level and everything repeats.
+
+72
+00:05:40,650 --> 00:05:44,350
+That is, on this circuit an autogenerator is built for us.
+
+73
+00:05:44,350 --> 00:05:47,210
+Its frequency is changed by this resistor.
+
+74
+00:05:47,430 --> 00:05:52,050
+That is, we change the number of charges going to this capacitor's plate.
+
+75
+00:05:52,570 --> 00:05:56,730
+Accordingly, this timing chain creates generation for us.
+
+76
+00:05:57,670 --> 00:05:59,950
+What does this diode do?
+
+77
+00:06:00,210 --> 00:06:04,970
+This diode, through it, through the driver high level arrives.
+
+78
+00:06:05,490 --> 00:06:09,950
+This diode blocks, sharply saturates the capacitor plate.
+
+79
+00:06:10,600 --> 00:06:15,130
+And since high level is held here, here at output is low.
+
+80
+00:06:15,210 --> 00:06:18,530
+That's it, circuit stops and generation brakes.
+
+81
+00:06:18,950 --> 00:06:21,170
+That is, what do we need this signal for?
+
+82
+00:06:21,610 --> 00:06:24,930
+This signal actually, this big square.
+
+83
+00:06:25,550 --> 00:06:29,990
+This is the time during which this capacitor is blocked.
+
+84
+00:06:31,010 --> 00:06:38,250
+And this signal, this is the time given so the circuit continues generation.
+
+85
+00:06:38,250 --> 00:06:44,110
+This way for us a frequency-setting generator is built for the Tesla.
+
+86
+00:06:44,670 --> 00:06:47,990
+Next, why is the driver used?
+
+87
+00:06:48,390 --> 00:06:50,550
+If without it you won't get anything.
+
+88
+00:06:51,350 --> 00:06:56,470
+The first pulse, will always have its width change.
+
+89
+00:06:56,850 --> 00:06:59,090
+You can try to do without the driver.
+
+90
+00:06:59,210 --> 00:07:07,410
+You'll see that the width of the first pulse in the Tesla burst will be different relative to other subsequent pulses.
+
+91
+00:07:07,410 --> 00:07:08,930
+And stability will be lost.
+
+92
+00:07:09,110 --> 00:07:18,110
+Plus, here you see that the output from this logical element is also sent to the second driver input.
+
+93
+00:07:18,310 --> 00:07:22,290
+And through it exits further, to the next chain.
+
+94
+00:07:22,770 --> 00:07:29,710
+That is, the driver completely separates this logical element from all external influences.
+
+95
+00:07:30,230 --> 00:07:36,650
+That is, from power pulses isolated, and from subsequent circuit isolation happens.
+
+96
+00:07:36,650 --> 00:07:39,870
+And this circuit very stably holds the frequency.
+
+97
+00:07:42,210 --> 00:07:48,810
+This way we achieve thermal stability and remove frequency drifts.
+
+98
+00:07:49,470 --> 00:08:03,910
+Next by schematic, so, the output of this frequency in bursts goes to the next chain, which is also timing, responsible for duty cycle.
+
+99
+00:08:03,910 --> 00:08:10,410
+Duty cycle changes from 30 and practically to 50% depending on frequency.
+
+100
+00:08:10,490 --> 00:08:14,030
+Well, it'll be somewhere maybe 48% maximum.
+
+101
+00:08:15,290 --> 00:08:26,150
+This is assembled with a damping resistor, trim resistor 310 Ω and capacitance 470 pF.
+
+102
+00:08:27,090 --> 00:08:33,590
+Reaches also on this same TC4093 chip the second logical element.
+
+103
+00:08:34,590 --> 00:08:36,450
+How the circuit works.
+
+104
+00:08:37,050 --> 00:08:42,890
+We also regulate the number of charges passed per unit time, charging the plate.
+
+105
+00:08:43,390 --> 00:08:55,590
+And, consequently, this way we also work on the hysteresis point of this trigger, this element, and our duty cycle changes.
+
+106
+00:08:56,130 --> 00:09:00,670
+A mandatory element is this small 1 kΩ resistor.
+
+107
+00:09:00,670 --> 00:09:03,790
+Without it, forget it, nothing will work at all.
+
+108
+00:09:04,530 --> 00:09:10,450
+Next, we also need one chip element for inversion, and we get our bursts.
+
+109
+00:09:12,270 --> 00:09:19,190
+That is, the schematic is simple, reliable as an AK-47, I recommend for assembly.
+
+110
+00:09:19,850 --> 00:09:21,830
+We've analyzed the action logic.
+
+111
+00:09:22,530 --> 00:09:24,170
+This is how it looks here.
+
+112
+00:09:24,330 --> 00:09:25,030
+Looking.
+
+113
+00:09:29,010 --> 00:09:37,770
+Driver its wiring, diode, jumper reaches the logical elements wiring.
+
+114
+00:09:37,870 --> 00:09:42,330
+Here's our resistor represented.
+
+115
+00:09:42,450 --> 00:09:44,610
+We see, this affects the frequency.
+
+116
+00:09:45,830 --> 00:09:48,150
+Trim resistor and capacitance.
+
+117
+00:09:49,150 --> 00:09:57,190
+Well and here, from output we take the amplified signal.
+
+118
+00:09:57,630 --> 00:09:59,930
+That is, we get the output on the fourth pin.
+
+119
+00:10:00,470 --> 00:10:04,490
+There it went, again amplified by the driver's second channel.
+
+120
+00:10:05,090 --> 00:10:06,530
+20 Ω resistor.
+
+121
+00:10:07,370 --> 00:10:09,450
+And here to the duty cycle adjustment.
+
+122
+00:10:09,890 --> 00:10:11,790
+This 1 kΩ resistor.
+
+123
+00:10:12,350 --> 00:10:14,610
+That's all, next one more inversion happens.
+
+124
+00:10:14,610 --> 00:10:19,350
+Here input of logical element 9,8.
+
+125
+00:10:19,710 --> 00:10:20,930
+Output ten.
+
+126
+00:10:21,050 --> 00:10:22,610
+Came out of the ten.
+
+127
+00:10:22,870 --> 00:10:27,890
+To the other two inputs of logical element 13,2 inverted.
+
+128
+00:10:28,170 --> 00:10:32,870
+And already sent through 10 Ω resistor to the driver.
+
+129
+00:10:33,570 --> 00:10:36,810
+Our driver is UCC 37322.
+
+130
+00:10:38,290 --> 00:10:39,810
+What's on the schematic here.
+
+131
+00:10:40,810 --> 00:10:43,130
+Driver through 1.5 Ω to the gate.
+
+132
+00:10:43,130 --> 00:10:45,290
+Transistor K2611.
+
+133
+00:10:46,310 --> 00:10:49,870
+The transistor must work through a fast-acting diode.
+
+134
+00:10:50,550 --> 00:10:52,510
+In this case MUR860.
+
+135
+00:10:53,410 --> 00:10:57,390
+And then I selected a 2 Ω resistor here.
+
+136
+00:10:58,310 --> 00:11:03,410
+It's needed for this transistor's work without overload.
+
+137
+00:11:04,210 --> 00:11:05,870
+Next to the Tesla inductor.
+
+138
+00:11:07,290 --> 00:11:09,830
+This is how it's done in schematic technology.
+
+139
+00:11:09,830 --> 00:11:14,430
+Here's our damping resistor at the gate 1.5 Ω.
+
+140
+00:11:15,470 --> 00:11:20,810
+Here's the discharge resistor at the gate 1 kΩ.
+
+141
+00:11:23,010 --> 00:11:27,530
+By the way, here I didn't finish drawing it.
+
+142
+00:11:27,890 --> 00:11:30,590
+This must be done.
+
+143
+00:11:31,530 --> 00:11:33,450
+Without it it won't work.
+
+144
+00:11:33,690 --> 00:11:35,570
+Now we'll fix this.
+
+145
+00:11:36,570 --> 00:11:40,850
+Right in front of you, how it looks.
+
+146
+00:11:41,350 --> 00:11:43,610
+Drawing the resistor like this.
+
+147
+00:11:45,410 --> 00:11:48,550
+And here to the common wire.
+
+148
+00:11:48,890 --> 00:11:49,210
+One.
+
+149
+00:11:50,910 --> 00:11:52,990
+And like this we pass.
+
+150
+00:11:53,890 --> 00:11:55,150
+And to the gate.
+
+151
+00:11:56,870 --> 00:12:00,410
+Label 1 kΩ.
+
+152
+00:12:02,730 --> 00:12:05,130
+Must be done.
+
+153
+00:12:10,010 --> 00:12:14,730
+The key power is supplied through a converter.
+
+154
+00:12:14,910 --> 00:12:19,970
+In my case I made a converter 12 to 200 V converts.
+
+155
+00:12:20,690 --> 00:12:22,050
+Here's this board.
+
+156
+00:12:23,150 --> 00:12:25,210
+By type also push-pull control.
+
+157
+00:12:25,930 --> 00:12:27,390
+Step-up transformer.
+
+158
+00:12:27,390 --> 00:12:30,070
+What's done here in this converter?
+
+159
+00:12:30,930 --> 00:12:32,730
+Voltage feedback.
+
+160
+00:12:32,930 --> 00:12:37,550
+That is, ability to set the supply voltage value.
+
+161
+00:12:38,010 --> 00:12:42,390
+Plus goes directly to the inductor.
+
+162
+00:12:44,210 --> 00:12:46,410
+To this for the Tesla.
+
+163
+00:12:47,290 --> 00:12:50,410
+And minus goes to the transistor source.
+
+164
+00:12:51,390 --> 00:12:53,650
+Voltage needs to be changed for tuning.
+
+165
+00:12:54,070 --> 00:12:55,330
+This is an important factor.
+
+166
+00:12:56,230 --> 00:12:58,050
+Tuning this whole system.
+
+167
+00:12:58,370 --> 00:13:00,530
+That is, not only duty cycle here.
+
+168
+00:13:01,170 --> 00:13:02,710
+But also supply voltage.
+
+169
+00:13:02,830 --> 00:13:04,090
+This all needs to be coordinated.
+
+170
+00:13:04,170 --> 00:13:05,450
+System won't work.
+
+171
+00:13:05,970 --> 00:13:07,870
+If you supply too much.
+
+172
+00:13:08,510 --> 00:13:09,690
+Or too little.
+
+173
+00:13:09,830 --> 00:13:12,170
+This parameter has to be selected too.
+
+174
+00:13:13,210 --> 00:13:13,850
+Individually.
+
+175
+00:13:13,910 --> 00:13:16,410
+In further videos I'll show how the Tesla works.
+
+176
+00:13:16,510 --> 00:13:18,910
+Although on my channel there are already recorded Teslas.
+
+177
+00:13:19,470 --> 00:13:22,110
+In the clip on the work of this Tesla.
+
+178
+00:13:22,230 --> 00:13:22,770
+And this schematic.
+
+179
+00:13:22,770 --> 00:13:23,890
+There's video.
+
+180
+00:13:26,010 --> 00:13:28,150
+Tesla transformer operation.
+
+181
+00:13:28,210 --> 00:13:29,470
+Preliminary tuning.
+
+182
+00:13:29,530 --> 00:13:30,450
+You can look.
+
+183
+00:13:31,210 --> 00:13:32,850
+What oscillogram comes out there.
+
+184
+00:13:32,930 --> 00:13:33,610
+It's enough.
+
+185
+00:13:33,730 --> 00:13:35,770
+In my case 130 volts.
+
+186
+00:13:36,650 --> 00:13:37,990
+Only 4 pulses.
+
+187
+00:13:39,190 --> 00:13:41,490
+And the system works very well.
+
+188
+00:13:42,890 --> 00:13:44,410
+I'll film the schematic once more.
+
+189
+00:13:44,810 --> 00:13:45,730
+Close up.
+
+190
+00:13:46,770 --> 00:13:48,850
+And moving to the oscillograms.
+
+191
+00:13:50,470 --> 00:13:51,060
+So.
+
+192
+00:13:52,050 --> 00:13:52,610
+Here.
+
+193
+00:13:53,090 --> 00:13:54,090
+Second channel.
+
+194
+00:13:54,670 --> 00:13:55,390
+Blue.
+
+195
+00:13:55,550 --> 00:13:58,870
+Is on the transistor gate.
+
+196
+00:13:59,650 --> 00:14:00,690
+Turning on.
+
+197
+00:14:02,630 --> 00:14:04,190
+And we see.
+
+198
+00:14:04,350 --> 00:14:05,710
+Pulse bursts.
+
+199
+00:14:06,390 --> 00:14:07,390
+Expand.
+
+200
+00:14:08,730 --> 00:14:09,990
+In this case.
+
+201
+00:14:10,630 --> 00:14:11,410
+Now we have.
+
+202
+00:14:14,400 --> 00:14:16,330
+2.5 pulses.
+
+203
+00:14:17,670 --> 00:14:19,330
+The system is going.
+
+204
+00:14:20,190 --> 00:14:22,470
+Now I'll find my screwdriver.
+
+205
+00:14:24,050 --> 00:14:25,370
+And we'll tune.
+
+206
+00:14:25,550 --> 00:14:27,070
+On the board we have.
+
+207
+00:14:28,090 --> 00:14:30,250
+Frequency-setting resistor.
+
+208
+00:14:30,930 --> 00:14:34,770
+And duty cycle in the burst.
+
+209
+00:14:35,050 --> 00:14:35,770
+Adjustment.
+
+210
+00:14:36,510 --> 00:14:38,730
+Now I'll turn the resistor.
+
+211
+00:14:38,890 --> 00:14:40,190
+On this board.
+
+212
+00:14:40,710 --> 00:14:42,390
+This is the control.
+
+213
+00:14:42,410 --> 00:14:43,470
+Of burst width.
+
+214
+00:14:45,110 --> 00:14:45,560
+Let's see.
+
+215
+00:14:46,250 --> 00:14:46,570
+How.
+
+216
+00:14:47,160 --> 00:14:49,110
+The schematic works.
+
+217
+00:14:49,810 --> 00:14:50,430
+Look.
+
+218
+00:14:51,410 --> 00:14:53,270
+Now I'm decreasing.
+
+219
+00:14:53,710 --> 00:14:55,770
+We'll see the sync pulse decreases.
+
+220
+00:14:56,330 --> 00:14:56,910
+And here on.
+
+221
+00:14:57,630 --> 00:14:58,990
+The blue trace.
+
+222
+00:14:59,650 --> 00:15:01,630
+We see that with this system.
+
+223
+00:15:01,830 --> 00:15:03,090
+You can, this schematic.
+
+224
+00:15:03,170 --> 00:15:04,370
+Allows making even.
+
+225
+00:15:04,950 --> 00:15:07,050
+A nanosecond pulse generator.
+
+226
+00:15:07,970 --> 00:15:09,590
+You can make the burst.
+
+227
+00:15:09,650 --> 00:15:10,450
+So small.
+
+228
+00:15:10,450 --> 00:15:11,270
+That there'll be one.
+
+229
+00:15:11,390 --> 00:15:13,970
+I'm adding two pulses.
+
+230
+00:15:16,210 --> 00:15:17,490
+In the burst.
+
+231
+00:15:18,330 --> 00:15:19,010
+Three.
+
+232
+00:15:21,190 --> 00:15:22,950
+Adjustment up to 10 pulses.
+
+233
+00:15:23,050 --> 00:15:24,090
+Won't unwind it all.
+
+234
+00:15:24,230 --> 00:15:24,730
+Four.
+
+235
+00:15:26,070 --> 00:15:28,290
+When you build, try it yourselves.
+
+236
+00:15:28,450 --> 00:15:29,530
+This system five.
+
+237
+00:15:30,410 --> 00:15:31,210
+And so on.
+
+238
+00:15:31,770 --> 00:15:32,690
+Let's go back.
+
+239
+00:15:32,930 --> 00:15:35,790
+I'm interested in 4-5 pulses operation.
+
+240
+00:15:35,890 --> 00:15:36,770
+I don't need more.
+
+241
+00:15:36,770 --> 00:15:38,290
+Now.
+
+242
+00:15:39,030 --> 00:15:39,810
+Let's trace.
+
+243
+00:15:40,430 --> 00:15:42,430
+The work.
+
+244
+00:15:42,690 --> 00:15:44,250
+Of duty cycle in the burst.
+
+245
+00:15:45,110 --> 00:15:46,770
+Now I'll turn the resistor.
+
+246
+00:15:47,050 --> 00:15:47,890
+That's responsible.
+
+247
+00:15:48,370 --> 00:15:49,550
+For duty cycle in the burst.
+
+248
+00:15:50,030 --> 00:15:51,590
+Duty cycle is regulated.
+
+249
+00:15:52,210 --> 00:15:54,410
+From 30 to 50%.
+
+250
+00:15:54,410 --> 00:15:55,290
+As I said.
+
+251
+00:15:56,330 --> 00:15:57,170
+Looking.
+
+252
+00:16:01,600 --> 00:16:03,200
+I'm turning this now.
+
+253
+00:16:03,980 --> 00:16:04,340
+By the way.
+
+254
+00:16:05,040 --> 00:16:07,260
+Frequency adjustment.
+
+255
+00:16:07,260 --> 00:16:08,740
+Of the system itself.
+
+256
+00:16:09,420 --> 00:16:10,440
+It also will affect.
+
+257
+00:16:10,540 --> 00:16:14,280
+Higher frequency, more pulses in the burst.
+
+258
+00:16:14,360 --> 00:16:16,860
+And now I'll turn the duty cycle resistor.
+
+259
+00:16:19,740 --> 00:16:21,520
+This is minimum duty cycle.
+
+260
+00:16:22,720 --> 00:16:24,060
+And starting to add.
+
+261
+00:16:24,420 --> 00:16:25,320
+Clearly visible.
+
+262
+00:16:25,540 --> 00:16:27,220
+That the duty cycle in the burst grows.
+
+263
+00:16:27,800 --> 00:16:29,660
+And it doesn't move anywhere.
+
+264
+00:16:29,780 --> 00:16:30,840
+From the sync pulses.
+
+265
+00:16:30,840 --> 00:16:32,060
+Everything works great.
+
+266
+00:16:32,840 --> 00:16:34,820
+Duty cycle will be clearly regulated.
+
+267
+00:16:34,820 --> 00:16:37,380
+Even on one pulse.
+
+268
+00:16:38,700 --> 00:16:41,280
+Now I'll collapse the burst.
+
+269
+00:16:42,260 --> 00:16:43,420
+To one pulse.
+
+270
+00:16:48,930 --> 00:16:51,650
+Remove the number of pulses in the burst.
+
+271
+00:16:55,430 --> 00:16:57,870
+Place our picture.
+
+272
+00:17:01,150 --> 00:17:02,950
+Put the sync pulse down.
+
+273
+00:17:05,530 --> 00:17:08,030
+So it's clearly visible.
+
+274
+00:17:08,650 --> 00:17:11,290
+Now we see on each sync pulse.
+
+275
+00:17:13,570 --> 00:17:15,310
+A single signal.
+
+276
+00:17:18,530 --> 00:17:20,570
+Now we'll look.
+
+277
+00:17:22,670 --> 00:17:25,390
+Duty cycle will be at maximum.
+
+278
+00:17:26,210 --> 00:17:27,110
+Of one pulse.
+
+279
+00:17:27,570 --> 00:17:29,790
+Full nanosecond generator.
+
+280
+00:17:29,950 --> 00:17:31,350
+Maximum duty cycle.
+
+281
+00:17:31,350 --> 00:17:33,370
+And now.
+
+282
+00:17:33,630 --> 00:17:35,690
+I'll decrease.
+
+283
+00:17:36,150 --> 00:17:37,590
+The duty cycle of this pulse.
+
+284
+00:17:41,900 --> 00:17:43,680
+You see it's regulated.
+
+285
+00:17:45,900 --> 00:17:47,900
+In wide limits.
+
+286
+00:17:48,040 --> 00:17:50,100
+If you need to decrease duty cycle more.
+
+287
+00:17:50,160 --> 00:17:51,580
+For example, for nanosecond pulser.
+
+288
+00:17:52,120 --> 00:17:52,680
+You just.
+
+289
+00:17:53,540 --> 00:17:55,200
+Add frequency.
+
+290
+00:17:55,540 --> 00:17:57,000
+On the driving generator.
+
+291
+00:17:57,740 --> 00:17:58,900
+And duty cycle will be even.
+
+292
+00:17:59,880 --> 00:18:01,160
+Much smaller.
+
+293
+00:18:03,680 --> 00:18:05,260
+Why is regulation needed.
+
+294
+00:18:06,060 --> 00:18:08,180
+For the Tesla, duty cycle.
+
+295
+00:18:08,640 --> 00:18:10,080
+This is an important parameter.
+
+296
+00:18:10,520 --> 00:18:11,260
+It's also.
+
+297
+00:18:11,940 --> 00:18:14,060
+Needed for system synchronization.
+
+298
+00:18:15,180 --> 00:18:15,400
+It.
+
+299
+00:18:15,840 --> 00:18:18,120
+Works in pair with regulation.
+
+300
+00:18:18,200 --> 00:18:20,140
+Of supply voltage amplitude.
+
+301
+00:18:20,400 --> 00:18:21,280
+Important parameter.
+
+302
+00:18:21,460 --> 00:18:23,000
+When you'll be making, tuning.
+
+303
+00:18:23,100 --> 00:18:24,700
+Don't forget to check this moment.
+
+304
+00:18:25,180 --> 00:18:27,500
+Without duty cycle regulation.
+
+305
+00:18:27,680 --> 00:18:29,140
+In the burst nothing will work.
+
+306
+00:18:30,900 --> 00:18:31,800
+That's it.
+
+307
+00:18:31,920 --> 00:18:33,140
+Compactly this looks.
+
+308
+00:18:33,720 --> 00:18:34,120
+Boards.
+
+309
+00:18:34,300 --> 00:18:35,940
+Each one will make for themselves to taste.
+
+310
+00:18:36,080 --> 00:18:37,500
+Want to draw attention.
+
+311
+00:18:38,920 --> 00:18:39,600
+Resistor.
+
+312
+00:18:39,720 --> 00:18:40,580
+These 2 Ω.
+
+313
+00:18:42,340 --> 00:18:43,760
+How they're made.
+
+314
+00:18:44,120 --> 00:18:44,900
+On heat sink.
+
+315
+00:18:45,020 --> 00:18:47,460
+I paralleled 3 of 2W.
+
+316
+00:18:47,500 --> 00:18:50,000
+Because through them passes good current.
+
+317
+00:18:50,100 --> 00:18:52,400
+That goes to the Tesla inductor.
+
+318
+00:18:54,020 --> 00:18:55,080
+This is mandatory.
+
+319
+00:18:55,100 --> 00:18:56,200
+For cooling.
+
+320
+00:18:56,200 --> 00:18:57,700
+Here the diode is presented.
+
+321
+00:18:58,780 --> 00:19:00,220
+In this MUR860 housing.
+
+322
+00:19:01,180 --> 00:19:03,020
+And it goes directly to the drain.
+
+323
+00:19:03,820 --> 00:19:04,900
+Of this transistor.
+
+324
+00:19:05,240 --> 00:19:06,200
+K2611.
+
+325
+00:19:11,400 --> 00:19:13,460
+Good luck to everyone in building.
+
+326
+00:19:14,960 --> 00:19:16,820
+Wait for further clips.
+
+327
+00:19:17,320 --> 00:19:19,100
+Support with thumbs up.
+
+328
+00:19:20,300 --> 00:19:21,580
+We'll work together.
