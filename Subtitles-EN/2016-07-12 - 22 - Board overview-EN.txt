@@ -1,0 +1,1063 @@
+1
+00:01:15,670 --> 00:01:20,490
+The most interesting thing is this grounding.
+
+2
+00:01:21,270 --> 00:01:26,570
+The car runs and goes right here.
+
+3
+00:01:28,610 --> 00:01:30,070
+0.75 wire.
+
+4
+00:01:32,270 --> 00:01:35,650
+Our gradient coil is 38 meters.
+
+5
+00:01:36,070 --> 00:01:37,930
+The inductor turned out three layers.
+
+6
+00:01:39,610 --> 00:01:43,590
+Inductor 19 meters, Tesla 19 meters.
+
+7
+00:01:44,510 --> 00:01:47,970
+Wire thickness 2.5 millimeters.
+
+8
+00:01:48,150 --> 00:01:49,350
+Not square millimeters, just millimeters.
+
+9
+00:01:50,330 --> 00:01:55,770
+If it were square, unfortunately, I'd have had to put a brick on here.
+
+10
+00:01:56,590 --> 00:01:59,930
+Because during operation it sagged this way.
+
+11
+00:02:01,270 --> 00:02:04,370
+That's not very good.
+
+12
+00:02:05,430 --> 00:02:08,230
+My antenna is aluminum wire.
+
+13
+00:02:08,970 --> 00:02:11,330
+All of this is copper, and this is aluminum.
+
+14
+00:02:17,720 --> 00:02:19,800
+The frequency came out like this.
+
+15
+00:02:20,340 --> 00:02:22,300
+I saw it on the spectrum analyzer.
+
+16
+00:02:28,960 --> 00:02:32,980
+I don't have any relays, everything is switched electronically.
+
+17
+00:02:36,020 --> 00:02:37,280
+The schematic is like this.
+
+18
+00:02:37,520 --> 00:02:41,800
+What's drawn is just the supporting elements.
+
+19
+00:03:00,140 --> 00:03:03,300
+12 V, 8.5 A.
+
+20
+00:03:04,800 --> 00:03:05,400
+Diodes.
+
+21
+00:03:05,920 --> 00:03:07,120
+Good diodes.
+
+22
+00:03:07,340 --> 00:03:10,480
+I took the ones that kept burning out.
+
+23
+00:03:10,700 --> 00:03:12,920
+They drove me crazy, they kept burning out.
+
+24
+00:03:13,600 --> 00:03:14,620
+I changed so many of them.
+
+25
+00:03:14,720 --> 00:03:17,460
+I put in 150 EBU 04.
+
+26
+00:03:21,660 --> 00:03:24,480
+On the transformer, on the push-pull.
+
+27
+00:03:25,300 --> 00:03:30,580
+I've got IRF3205 with the Z letter.
+
+28
+00:03:32,740 --> 00:03:36,740
+And on the Tesla I've got K2611.
+
+29
+00:03:38,380 --> 00:03:40,180
+There's a diode in series with it.
+
+30
+00:03:41,120 --> 00:03:43,520
+This is IR308.
+
+31
+00:03:44,500 --> 00:03:45,760
+This is the rectifier for the Tesla.
+
+32
+00:03:45,840 --> 00:03:47,040
+Here I have one winding.
+
+33
+00:03:47,180 --> 00:03:49,020
+And the power for the Tesla goes here.
+
+34
+00:03:49,120 --> 00:03:49,680
+50 volts.
+
+35
+00:03:49,780 --> 00:03:52,140
+I see that's kind of low.
+
+36
+00:03:52,320 --> 00:03:56,280
+If you bump the voltage up, I think the power will go up.
+
+37
+00:03:57,160 --> 00:04:01,680
+At 4 volts I had 1.5-2 kilowatts.
+
+38
+00:04:02,480 --> 00:04:04,820
+Here I put 50 volts.
+
+39
+00:04:06,240 --> 00:04:20,890
+It went up to 6.2 kilowatts.
+
+40
+00:04:22,090 --> 00:04:23,910
+The coil heated up.
+
+41
+00:04:24,510 --> 00:04:25,870
+And it dropped.
+
+42
+00:04:26,030 --> 00:04:26,850
+That's very bad.
+
+43
+00:04:27,850 --> 00:04:30,090
+We have a resonant capacitor.
+
+44
+00:04:30,530 --> 00:04:32,150
+Well, it's not a resonant capacitor.
+
+45
+00:04:32,690 --> 00:04:34,670
+There the resonant capacitors are selected.
+
+46
+00:04:38,290 --> 00:04:44,630
+It's more so that during the strike it doesn't fly back here and blow the transistor.
+
+47
+00:04:45,470 --> 00:04:49,550
+In general, on the gradient catch-up coil I've got this capacitor.
+
+48
+00:04:49,710 --> 00:04:53,390
+68 nF at one kilovolt.
+
+49
+00:04:53,610 --> 00:05:01,830
+And here we have 0.1, 0.1, 0.1, 0.22, 0.22, and it adds up to 440 nF.
+
+50
+00:05:03,150 --> 00:05:08,270
+These two startup capacitors for filtering, 10 µF at 450 V each.
+
+51
+00:05:12,290 --> 00:05:17,430
+Total 20 µF for the startup capacitors.
+
+52
+00:05:19,010 --> 00:05:21,430
+The power supply is a regular one, the kind you can buy.
+
+53
+00:05:23,050 --> 00:05:23,530
+Diode.
+
+54
+00:05:24,170 --> 00:05:25,810
+The common power supply.
+
+55
+00:05:26,410 --> 00:05:28,030
+It goes here to the push-pulls.
+
+56
+00:05:28,150 --> 00:05:33,030
+Goes to the controller through a 40-amp diode.
+
+57
+00:05:33,450 --> 00:05:35,630
+I pulled it from a computer power supply.
+
+58
+00:05:36,250 --> 00:05:36,970
+What's it for?
+
+59
+00:05:37,090 --> 00:05:43,390
+To isolate the power supply from the battery power.
+
+60
+00:05:43,560 --> 00:05:44,330
+When it's running.
+
+61
+00:05:45,030 --> 00:05:51,830
+I think I'll also add a resistor so the system starts up, so this same battery can also charge.
+
+62
+00:05:53,610 --> 00:05:54,250
+That's it.
+
+63
+00:05:55,770 --> 00:06:00,990
+And I took the oscillograms, I'll put together a PDF document.
+
+64
+00:06:02,190 --> 00:06:04,650
+Very interesting and they came out with good explanations.
+
+65
+00:06:05,730 --> 00:06:07,370
+Then let's move to the controller.
+
+66
+00:06:07,410 --> 00:06:13,030
+This fan here is from a computer processor.
+
+67
+00:06:14,270 --> 00:06:16,150
+Let's look at the controller.
+
+68
+00:06:16,630 --> 00:06:18,030
+What do we have in the controller?
+
+69
+00:06:19,210 --> 00:06:19,430
+There.
+
+70
+00:06:20,510 --> 00:06:21,730
+The master oscillator.
+
+71
+00:06:23,490 --> 00:06:25,090
+I'll point things out like this.
+
+72
+00:06:26,730 --> 00:06:32,350
+IR2153, capacitor and trimmer resistor.
+
+73
+00:06:33,270 --> 00:06:36,050
+This is the master oscillator frequency.
+
+74
+00:06:37,370 --> 00:06:41,190
+Then all of this goes through a delay chain.
+
+75
+00:06:41,630 --> 00:06:42,510
+Here we have two.
+
+76
+00:06:43,010 --> 00:06:45,210
+Then IR2110.
+
+77
+00:06:45,770 --> 00:06:47,750
+That's enough for 15 kHz.
+
+78
+00:06:48,370 --> 00:06:49,910
+And it goes to these transistors.
+
+79
+00:06:51,590 --> 00:06:55,770
+You could've left all this out, but it all needs to be there.
+
+80
+00:06:56,830 --> 00:06:57,450
+Driver.
+
+81
+00:06:58,670 --> 00:07:03,030
+And we have 74HC14, HC00.
+
+82
+00:07:04,190 --> 00:07:10,750
+On the HC14 the phase shifter and phase delay are built.
+
+83
+00:07:11,390 --> 00:07:19,310
+Below is built, how to put it, by schematic.
+
+84
+00:07:19,390 --> 00:07:20,970
+Let's pull up the schematic now.
+
+85
+00:07:23,650 --> 00:07:25,350
+I slapped it on here.
+
+86
+00:07:34,150 --> 00:07:35,450
+Let's go by the schematic.
+
+87
+00:07:35,690 --> 00:07:36,550
+Here's the schematic.
+
+88
+00:07:36,830 --> 00:07:40,350
+If somebody doesn't have it, this is how the schematic came out.
+
+89
+00:07:40,490 --> 00:07:42,230
+The only thing is I got this diode mixed up.
+
+90
+00:07:42,430 --> 00:07:43,590
+I slapped it in backwards.
+
+91
+00:07:44,110 --> 00:07:44,630
+I drew it.
+
+92
+00:07:45,390 --> 00:07:45,690
+Like this.
+
+93
+00:07:47,950 --> 00:07:48,950
+Let's take a look.
+
+94
+00:07:49,370 --> 00:07:49,770
+Here it is.
+
+95
+00:07:51,350 --> 00:07:52,190
+IR2153.
+
+96
+00:07:52,470 --> 00:07:54,130
+The chains.
+
+97
+00:07:55,290 --> 00:07:56,170
+Delay time.
+
+98
+00:07:56,530 --> 00:07:58,410
+Then IR2110.
+
+99
+00:07:58,910 --> 00:08:00,310
+All this is amplified.
+
+100
+00:08:00,430 --> 00:08:01,770
+Goes to the transformer.
+
+101
+00:08:02,670 --> 00:08:04,750
+I'll be rewinding the transformer and coil.
+
+102
+00:08:05,270 --> 00:08:06,390
+I didn't have enough power.
+
+103
+00:08:07,550 --> 00:08:09,330
+All this is amplified.
+
+104
+00:08:09,890 --> 00:08:10,830
+8 turns each.
+
+105
+00:08:10,890 --> 00:08:12,170
+33 turns for the Tesla.
+
+106
+00:08:13,170 --> 00:08:14,990
+This resonance is at 4 turns.
+
+107
+00:08:16,770 --> 00:08:18,370
+This capacitor.
+
+108
+00:08:18,450 --> 00:08:19,330
+340 nF.
+
+109
+00:08:19,570 --> 00:08:23,530
+This is a whole bunch of capacitors picked out.
+
+110
+00:08:23,850 --> 00:08:29,390
+We also have it so you can strike on each half-cycle.
+
+111
+00:08:30,010 --> 00:08:39,370
+Since the chip has a property of delay, we delay the signal on the chip itself.
+
+112
+00:08:39,630 --> 00:08:41,870
+We delay here and it arrives with a lag.
+
+113
+00:08:41,890 --> 00:08:42,610
+Why do we need this?
+
+114
+00:08:43,350 --> 00:08:51,010
+So that the Tesla... the Tesla could be controlled by charge and could charge the gradient coil.
+
+115
+00:08:52,530 --> 00:08:56,390
+Here we have a 10 kΩ divider from each arm.
+
+116
+00:08:57,170 --> 00:09:01,590
+These 12 V amplitude get divided in half and reach the logic.
+
+117
+00:09:02,050 --> 00:09:03,430
+You can take it direct or inverted.
+
+118
+00:09:03,710 --> 00:09:07,590
+Whoever understands electronics will get what I'm talking about.
+
+119
+00:09:08,450 --> 00:09:10,250
+Next here we have jumpers.
+
+120
+00:09:10,290 --> 00:09:12,490
+Three jumper positions.
+
+121
+00:09:14,150 --> 00:09:17,830
+You can take direct, inverted state from here.
+
+122
+00:09:18,490 --> 00:09:20,410
+This makes the half-cycle length.
+
+123
+00:09:21,250 --> 00:09:22,950
+Then a 2 kΩ resistor.
+
+124
+00:09:23,350 --> 00:09:26,410
+One goes to ground, 10 kΩ and 4.7 nF.
+
+125
+00:09:27,210 --> 00:09:29,310
+This is the time delay.
+
+126
+00:09:31,190 --> 00:09:32,690
+And what's this 10 kΩ for?
+
+127
+00:09:33,130 --> 00:09:40,010
+Here, how should I put it, in the Schmitt trigger chip the output isn't quite symmetrical, distortion happens.
+
+128
+00:09:42,270 --> 00:09:44,650
+I had to pick out this resistor.
+
+129
+00:09:49,220 --> 00:09:52,520
+Next it goes to something like a nanosecond pulser.
+
+130
+00:09:52,740 --> 00:09:53,940
+Well, not a nanosecond pulser.
+
+131
+00:09:54,540 --> 00:09:56,880
+This chip makes a corridor.
+
+132
+00:09:57,960 --> 00:10:00,020
+This kind of timing.
+
+133
+00:10:00,840 --> 00:10:06,800
+When constantly hanging here at the output is a high level on the sixth pin of the chip.
+
+134
+00:10:07,660 --> 00:10:10,580
+And it falls onto this one.
+
+135
+00:10:11,020 --> 00:10:11,900
+First, second.
+
+136
+00:10:12,200 --> 00:10:15,360
+Then inverted, arrives with a delay.
+
+137
+00:10:16,360 --> 00:10:19,480
+And here on the fourth pin the same direct signal arrives.
+
+138
+00:10:20,580 --> 00:10:38,520
+And to form a corridor in which the opening time, this opening time falls into the controlling logic element, into the Schmitt trigger.
+
+139
+00:10:38,840 --> 00:10:41,560
+A generator is built on it.
+
+140
+00:10:41,640 --> 00:10:48,960
+I picked it so it regulates somewhere from 1.9 MHz down to 1.3 MHz.
+
+141
+00:10:49,340 --> 00:10:52,160
+There's 1 nF on the eleventh pin.
+
+142
+00:10:52,900 --> 00:10:55,320
+On the tenth pin a divider — 100 Ω.
+
+143
+00:10:55,460 --> 00:10:56,800
+And a 200 Ω resistor.
+
+144
+00:10:57,840 --> 00:11:00,580
+So, here's how this device works.
+
+145
+00:11:00,720 --> 00:11:03,960
+A one constantly hangs there, high level.
+
+146
+00:11:05,000 --> 00:11:07,500
+And here we have a zero constantly.
+
+147
+00:11:07,560 --> 00:11:09,400
+A zero constantly hangs on the tenth pin.
+
+148
+00:11:10,160 --> 00:11:16,000
+At the moment when the corridor opens, here a zero appears on the sixth pin.
+
+149
+00:11:17,140 --> 00:11:20,200
+And the diode becomes blocked.
+
+150
+00:11:20,320 --> 00:11:23,100
+And the chip can generate a signal.
+
+151
+00:11:23,320 --> 00:11:25,100
+There it puts out a burst.
+
+152
+00:11:25,460 --> 00:11:27,480
+Of about seven pulses.
+
+153
+00:11:31,860 --> 00:11:35,700
+How many pulses there'll be, this chip regulates.
+
+154
+00:11:35,900 --> 00:11:38,040
+22 nF and 1 kΩ.
+
+155
+00:11:39,440 --> 00:11:41,700
+Next, here we also have like a 1 ns.
+
+156
+00:11:41,820 --> 00:11:42,860
+What's it for?
+
+157
+00:11:44,380 --> 00:11:46,700
+Since we have transistor gates.
+
+158
+00:11:47,160 --> 00:11:50,180
+The gate capacitance can be slightly different.
+
+159
+00:11:50,600 --> 00:11:53,420
+Because of that there can be problems.
+
+160
+00:11:54,840 --> 00:11:57,620
+For that I put in another nanosecond pulser.
+
+161
+00:11:57,900 --> 00:12:06,480
+This pulse, when it arrives here, isn't exactly 50% duty cycle.
+
+162
+00:12:06,740 --> 00:12:12,960
+It turns out we need to make, well, if a zero hangs, a one hangs here.
+
+163
+00:12:14,440 --> 00:12:17,080
+And for a short time a zero appears.
+
+164
+00:12:17,260 --> 00:12:24,600
+Most of the time it turns out the zero level appears as a one.
+
+165
+00:12:25,400 --> 00:12:27,200
+And, accordingly, I put in a driver.
+
+166
+00:12:28,100 --> 00:12:29,780
+SCS-37, 321.
+
+167
+00:12:30,140 --> 00:12:32,660
+There's also a 322, it's without inversion.
+
+168
+00:12:33,200 --> 00:12:35,100
+And the 321, it's with inversion.
+
+169
+00:12:35,320 --> 00:12:39,820
+A zero comes in here, so we have a one here.
+
+170
+00:12:39,980 --> 00:12:41,540
+Well, and accordingly the other way.
+
+171
+00:12:42,520 --> 00:12:45,920
+We need it kind of like, here's a diode, resistor.
+
+172
+00:12:47,120 --> 00:12:50,780
+The diode, resistor — that's where they are for me.
+
+173
+00:12:51,580 --> 00:12:53,780
+Here they are, these ones.
+
+174
+00:12:54,720 --> 00:12:55,800
+That's where they are for me.
+
+175
+00:12:56,940 --> 00:13:03,600
+The transistor has to be closed very quickly, so there's a sharp cutoff on the Tesla.
+
+176
+00:13:05,440 --> 00:13:05,640
+There.
+
+177
+00:13:06,360 --> 00:13:08,120
+And the diode, well, I mixed up the diode here.
+
+178
+00:13:08,280 --> 00:13:10,360
+The diode is actually, in fact, backwards.
+
+179
+00:13:12,320 --> 00:13:15,080
+What are these resistors and capacitor for?
+
+180
+00:13:15,520 --> 00:13:20,320
+When I was looking at what this transistor can do at the limit, I read up.
+
+181
+00:13:21,080 --> 00:13:34,640
+RDS-ON is a parameter, you can, when the transistor is fully open, you have to figure what resistor must be there so the transistor doesn't blow, doesn't burn out.
+
+182
+00:13:35,080 --> 00:13:36,320
+That's why I put it in.
+
+183
+00:13:36,780 --> 00:13:44,240
+This 2611 has 1.1 Ω RDS, so I put 1.2 Ω.
+
+184
+00:13:45,060 --> 00:13:45,060
+There.
+
+185
+00:13:46,380 --> 00:13:54,180
+Here I have spot for 3.3 µF, and what I have here is 1.5 µF total.
+
+186
+00:13:55,740 --> 00:13:58,540
+Here's the rectifier, capacitor.
+
+187
+00:13:59,000 --> 00:14:02,040
+The capacitor itself made of four diodes.
+
+188
+00:14:02,040 --> 00:14:05,940
+I didn't put a choke here.
+
+189
+00:14:06,640 --> 00:14:10,760
+But on the power supply, a 100 µH choke — that's this round one.
+
+190
+00:14:11,580 --> 00:14:12,900
+Where it's labeled 101.
+
+191
+00:14:14,740 --> 00:14:14,740
+There.
+
+192
+00:14:17,860 --> 00:14:19,860
+Here are the kinds of components.
+
+193
+00:14:20,160 --> 00:14:22,860
+Here's a chip, and here are components — here's a chip.
+
+194
+00:14:24,400 --> 00:14:29,360
+Well, the rest is what's drawn, how to wind it.
+
+195
+00:14:31,420 --> 00:14:33,960
+Well, actually, not everything's fully drawn here.
+
+196
+00:14:34,240 --> 00:14:38,480
+I tweaked the schematic a bit, but the essence is like this.
+
+197
+00:14:41,240 --> 00:14:41,240
+There.
+
+198
+00:14:42,920 --> 00:14:50,980
+Oh, by the way, here I noted how I wound the gradient coil and the coil on the Tesla.
+
+199
+00:14:51,680 --> 00:14:53,220
+Anyway, don't worry about it.
+
+200
+00:14:53,560 --> 00:15:01,100
+All the turns, you take this tube toward yourself, like this, and you wind forward to the right.
+
+201
+00:15:02,140 --> 00:15:07,440
+Except, there's a layer underneath, like this, two of these layers.
+
+202
+00:15:10,700 --> 00:15:13,760
+This and this layer wind backwards.
+
+203
+00:15:13,860 --> 00:15:15,700
+Here I have arrows drawn.
+
+204
+00:15:16,520 --> 00:15:19,080
+So, you take it, this is how the coil is wound.
+
+205
+00:15:20,280 --> 00:15:24,660
+And here I have grounding drawn, and the hot end on the other side.
+
+206
+00:15:25,400 --> 00:15:31,160
+Basically, you take it, drill a hole in the tube, run it through, drill a hole and wind.
+
+207
+00:15:31,420 --> 00:15:32,160
+Oh, like this.
+
+208
+00:15:33,080 --> 00:15:38,280
+Wind, wind, wind, wind it to the end.
+
+209
+00:15:41,200 --> 00:15:42,860
+Wound 19 meters.
+
+210
+00:15:43,340 --> 00:15:45,240
+Here I have this bend.
+
+211
+00:15:45,820 --> 00:15:45,940
+There.
+
+212
+00:15:46,420 --> 00:15:49,080
+And you start winding the other way.
+
+213
+00:15:49,180 --> 00:15:53,260
+Wind like this, wind, wind, get to the middle.
+
+214
+00:15:55,080 --> 00:15:56,960
+Then wind, wind, wind.
+
+215
+00:15:57,840 --> 00:15:58,780
+Wrapped it with electrical tape.
+
+216
+00:15:58,880 --> 00:15:59,160
+Next.
+
+217
+00:15:59,920 --> 00:16:00,800
+Another layer.
+
+218
+00:16:01,660 --> 00:16:02,000
+Like this.
+
+219
+00:16:02,600 --> 00:16:02,980
+And here.
+
+220
+00:16:04,140 --> 00:16:08,080
+You drill a hole, and there you have two ends coming out here.
+
+221
+00:16:09,000 --> 00:16:12,120
+The bottom end goes to ground, the first layer.
+
+222
+00:16:12,360 --> 00:16:17,660
+The second layer goes to... It's the hot resonant capacitor.
+
+223
+00:16:17,800 --> 00:16:18,760
+Well, not resonant.
+
+224
+00:16:18,800 --> 00:16:19,840
+It's not resonant.
+
+225
+00:16:19,940 --> 00:16:20,780
+It's not a resonance.
+
+226
+00:16:20,860 --> 00:16:22,020
+It's not for that.
+
+227
+00:16:24,460 --> 00:16:28,200
+Then comes a new amplifier and two capacitors.
+
+228
+00:16:28,840 --> 00:16:30,040
+How the inductor is wound.
+
+229
+00:16:31,180 --> 00:16:33,020
+Here we have three layers.
+
+230
+00:16:34,420 --> 00:16:36,000
+Here it is, the hot end.
+
+231
+00:16:36,120 --> 00:16:38,660
+Oh, cold end, which goes to ground.
+
+232
+00:16:39,220 --> 00:16:40,380
+There, soldered.
+
+233
+00:16:40,580 --> 00:16:41,340
+It goes to ground.
+
+234
+00:16:42,920 --> 00:16:46,320
+You wind like this.
+
+235
+00:16:47,700 --> 00:16:48,780
+Get to here.
+
+236
+00:16:50,380 --> 00:16:51,780
+Then wind like this.
+
+237
+00:16:53,280 --> 00:16:55,320
+This is the second layer and the third layer.
+
+238
+00:16:55,560 --> 00:16:56,560
+Wind like this.
+
+239
+00:16:58,120 --> 00:16:59,200
+And this one went.
+
+240
+00:17:00,620 --> 00:17:07,980
+Well, this folding-design capacitor lands on 4 turns.
+
+241
+00:17:08,440 --> 00:17:09,240
+Lands right here.
+
+242
+00:17:09,860 --> 00:17:11,800
+The other end on ground.
+
+243
+00:17:13,600 --> 00:17:14,560
+Here's the busbar.
+
+244
+00:17:14,700 --> 00:17:15,840
+I have two thick busbars.
+
+245
+00:17:16,380 --> 00:17:19,760
+And this transformer end is also on ground.
+
+246
+00:17:21,460 --> 00:17:23,440
+There we get this resonance.
+
+247
+00:17:25,140 --> 00:17:30,360
+Of course, I couldn't pull out all the power that's there in this circuit at all.
+
+248
+00:17:30,660 --> 00:17:35,560
+Well, somewhere about 20-25 percent I managed to extract.
+
+249
+00:17:36,860 --> 00:17:38,700
+I mean, in self-running.
+
+250
+00:17:38,980 --> 00:17:40,740
+Looking to take, looking for gain.
+
+251
+00:17:41,460 --> 00:17:42,560
+That's what I mean.
+
+252
+00:17:43,800 --> 00:17:44,020
+There.
+
+253
+00:17:44,540 --> 00:17:50,520
+Here it came out, not 5 turns, more in this coil.
+
+254
+00:17:52,580 --> 00:17:53,380
+Here it is.
+
+255
+00:17:54,640 --> 00:17:57,180
+From the Tesla it goes like this in here.
+
+256
+00:17:58,440 --> 00:17:59,500
+Counter-wound turns.
+
+257
+00:18:00,540 --> 00:18:04,560
+I had to unwind, rewind, closer, farther, and move it back and forth.
+
+258
+00:18:06,100 --> 00:18:06,180
+There.
+
+259
+00:18:06,440 --> 00:18:07,760
+And it went to the antenna.
+
+260
+00:18:07,880 --> 00:18:09,200
+My antenna is aluminum.
+
+261
+00:18:10,840 --> 00:18:13,640
+Well, that's it in a nutshell, what I was able to tell.
+
+262
+00:18:15,380 --> 00:18:18,600
+And here in the outlet we have DC.
+
+263
+00:18:19,460 --> 00:18:19,960
+Yes, like this.
+
+264
+00:18:22,060 --> 00:18:26,540
+This at the end the battery touches in from the battery.
+
+265
+00:18:27,700 --> 00:18:28,980
+The load is connected there.
+
+266
+00:18:29,300 --> 00:18:30,680
+Well, like, everything's clear, I think.

@@ -1,0 +1,119 @@
+1
+00:00:04,670 --> 00:00:06,380
+Hi, Kirill.
+
+2
+00:00:06,380 --> 00:00:09,460
+OK, I gave you the full schematic.
+
+3
+00:00:10,400 --> 00:00:19,620
+I haven't put the synchronization ring in here yet, but when it heats up, it starts... basically, the effect goes away.
+
+4
+00:00:19,940 --> 00:00:21,020
+The self-running cuts out.
+
+5
+00:00:21,980 --> 00:00:32,320
+So, our gradient coil here is 38 meters, Tesla 19 meters, and the inductor is also 19 meters.
+
+6
+00:00:33,300 --> 00:00:42,780
+On the gradient coil there are three capacitors of 0.1 microfarads in resonance, and here it's 0.5 microfarads.
+
+7
+00:00:43,020 --> 00:00:49,860
+Well, it's a set of 5 point... basically, just a bit more than 500 nanofarads.
+
+8
+00:00:51,220 --> 00:01:08,260
+In the end, if you disconnect this capacitance and the coil, and just use a simple inductor, our frequency comes out to 8.6-8.7 kHz.
+
+9
+00:01:09,580 --> 00:01:18,380
+And if you separately connect just this coil, the gradient one, with 0.3 microfarads, the frequency will also be low.
+
+10
+00:01:18,560 --> 00:01:34,300
+But in the end, if you connect them simultaneously — they're not wound in reverse — this coil, on one side you get current, and on the inductor too you get current, and on the gradient coil you get
+
+11
+00:01:35,060 --> 00:01:36,520
+a galvanic potential.
+
+12
+00:01:37,620 --> 00:01:42,940
+And we cross the current with this voltage.
+
+13
+00:01:43,600 --> 00:01:55,280
+But what's interesting is that with this configuration, the frequency isn't 8 kHz, it doubles.
+
+14
+00:01:55,440 --> 00:01:57,400
+The drive here is at 16 kHz.
+
+15
+00:02:00,360 --> 00:02:15,440
+And it turns out, if at 8 kHz there's resonance, then on one side of the coil we have current and current, on the other side voltage, that's it, and here also voltage and current.
+
+16
+00:02:16,300 --> 00:02:23,660
+This phase isn't flipped 180 degrees, but at this frequency, the doubled one, it resonates on it.
+
+17
+00:02:24,120 --> 00:02:28,800
+We get a phase flip, and this coil can work.
+
+18
+00:02:29,920 --> 00:02:32,800
+That's the very interesting effect we got.
+
+19
+00:02:33,800 --> 00:02:40,020
+My rectifier bridges are 150 EBU 04, that's 150 amps.
+
+20
+00:02:40,540 --> 00:02:45,260
+I put in a fan, but I didn't even need it.
+
+21
+00:02:45,990 --> 00:02:47,120
+They don't heat up at all.
+
+22
+00:02:47,880 --> 00:02:49,180
+Well, just slightly warm.
+
+23
+00:02:49,840 --> 00:02:59,020
+Here, yes, I put one on the push-pull, on the Tesla, fed it 8 volts, this fan spins, that's enough.
+
+24
+00:03:00,460 --> 00:03:09,100
+OK, these filter capacitors on the output, we have microfarads at 450 volts here.
+
+25
+00:03:10,640 --> 00:03:14,300
+The power supply is 24 volts, 8.5 amps.
+
+26
+00:03:15,680 --> 00:03:19,160
+It runs at the edge of its power capacity.
+
+27
+00:03:21,660 --> 00:03:26,620
+Well, that's what happened, the first grenade was wound backwards.
+
+28
+00:03:27,560 --> 00:03:28,640
+Now it's all in one direction.
+
+29
+00:03:29,040 --> 00:03:33,020
+With that grenade we managed without a spark gap, with this one we couldn't.
+
+30
+00:03:33,300 --> 00:03:37,540
+Here it turns out, if you look at the oscillograms... Last time the oscilloscope didn't work out.
