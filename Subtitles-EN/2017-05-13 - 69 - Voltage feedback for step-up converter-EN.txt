@@ -1,0 +1,623 @@
+1
+00:00:01,200 --> 00:00:02,060
+Greetings everyone.
+
+2
+00:00:02,820 --> 00:00:08,580
+Equipped this lazy converter construction with voltage feedback.
+
+3
+00:00:09,200 --> 00:00:13,140
+Now it stably holds 238 V at output.
+
+4
+00:00:14,440 --> 00:00:17,720
+Feedback also done quite simply.
+
+5
+00:00:17,880 --> 00:00:19,800
+These are two additional microchips.
+
+6
+00:00:20,540 --> 00:00:27,500
+One of them optocoupler PC817, other — controllable zener TL431.
+
+7
+00:00:28,700 --> 00:00:32,240
+4 resistances, 1 capacitor.
+
+8
+00:00:32,360 --> 00:00:34,380
+That's all feedback.
+
+9
+00:00:35,040 --> 00:00:43,280
+Thus, this converter got possibility to supply at input not only 12 V but also up to 20 V inclusive.
+
+10
+00:00:43,960 --> 00:00:48,900
+In any range of voltages of this order.
+
+11
+00:00:49,580 --> 00:00:52,840
+And stabilized output voltage.
+
+12
+00:00:53,720 --> 00:01:00,940
+Now we'll test it and further examine feedback scheme.
+
+13
+00:01:01,700 --> 00:01:06,320
+Now will test trigger point of voltage feedback.
+
+14
+00:01:06,880 --> 00:01:11,340
+To output connected tester, with this lamp not connected.
+
+15
+00:01:12,460 --> 00:01:14,560
+Apply power 12 V.
+
+16
+00:01:16,300 --> 00:01:22,320
+Visible that converter trigger point by sound audible starts to buzz.
+
+17
+00:01:23,920 --> 00:01:26,000
+Such sound comes out.
+
+18
+00:01:26,960 --> 00:01:28,140
+237 V.
+
+19
+00:01:30,560 --> 00:01:32,060
+Connect lamp.
+
+20
+00:01:32,820 --> 00:01:36,760
+Visible that on lamp there's some drop, 218 V.
+
+21
+00:01:37,240 --> 00:01:45,100
+Output voltage went away from feedback trigger point and converter works in usual mode.
+
+22
+00:01:45,740 --> 00:01:46,920
+No sound at all.
+
+23
+00:01:49,360 --> 00:01:56,420
+With voltage feedback present can supply at input voltage also higher.
+
+24
+00:01:57,240 --> 00:02:00,920
+Inclusive 20 V higher not worth.
+
+25
+00:02:01,820 --> 00:02:04,420
+Now supplied 14 V.
+
+26
+00:02:06,020 --> 00:02:15,020
+Visible that voltage is within norm and feedback trigger sound appeared.
+
+27
+00:02:15,460 --> 00:02:24,260
+Sound goes from step-up transformer, since microchip now controls keys in pulse bursts mode.
+
+28
+00:02:27,930 --> 00:02:31,850
+If reduce, then sound disappears.
+
+29
+00:02:31,950 --> 00:02:33,910
+Feedback fully works.
+
+30
+00:02:34,350 --> 00:02:37,930
+To question what can connect to such converter.
+
+31
+00:02:39,130 --> 00:02:51,130
+To it can connect all modern devices that have voltage inverter without transformer at input.
+
+32
+00:02:51,250 --> 00:03:00,230
+That is, these are mobile phone chargers, laptop chargers, such devices.
+
+33
+00:03:00,570 --> 00:03:07,470
+Can't connect device that contains step-down transformer at input.
+
+34
+00:03:07,930 --> 00:03:17,550
+Such power supplies, their weight significantly higher than of inverter power supply.
+
+35
+00:03:17,970 --> 00:03:22,210
+Also can't connect here asynchronous motors.
+
+36
+00:03:22,570 --> 00:03:27,770
+Most often in everyday life we can meet them in fans, for example.
+
+37
+00:03:29,010 --> 00:03:34,790
+And brush collector motors that are here, will work freely.
+
+38
+00:03:34,790 --> 00:03:46,390
+That is various kind small drills at 220 volts, power up to 200 watts, this system will freely power.
+
+39
+00:03:47,570 --> 00:03:56,150
+To supplement our scheme with voltage feedback, use property of microchip IR2153.
+
+40
+00:03:56,950 --> 00:04:06,630
+If at third pin of this microchip apply logical zero, microchip stops generation on both channels.
+
+41
+00:04:07,470 --> 00:04:17,550
+For this I stopped at variant with galvanic isolation OPTOCOUPLER, widespread PC817.
+
+42
+00:04:19,850 --> 00:04:26,390
+Soldered it in this scheme, according to its leads.
+
+43
+00:04:27,110 --> 00:04:33,910
+Leads 1 and 2 are infrared diode, built into OPTOCOUPLER.
+
+44
+00:04:34,730 --> 00:04:38,690
+Third and fourth lead are opto-transistor.
+
+45
+00:04:39,770 --> 00:04:49,370
+OPTOCOUPLER is such small detail, here it is, with four leads.
+
+46
+00:04:50,770 --> 00:05:01,430
+On upper part of case there's dot, it means lead numbering.
+
+47
+00:05:01,550 --> 00:05:02,390
+This is first lead.
+
+48
+00:05:02,870 --> 00:05:11,610
+Leads, if observe from dot, in this case it's now located upper left corner, counted counter-clockwise.
+
+49
+00:05:11,730 --> 00:05:14,870
+That is first, second, third and fourth.
+
+50
+00:05:15,530 --> 00:05:21,930
+On scheme OPTOCOUPLER presented lying legs up.
+
+51
+00:05:22,930 --> 00:05:26,110
+Like this now corresponds to its leads.
+
+52
+00:05:26,950 --> 00:05:30,270
+So, solder OPTOCOUPLER into scheme.
+
+53
+00:05:31,530 --> 00:05:35,090
+Here visible, I installed it on board.
+
+54
+00:05:35,430 --> 00:05:38,470
+And check, does OPTOCOUPLER work.
+
+55
+00:05:39,390 --> 00:05:50,070
+For this apply power to converter, preliminarily soldering small load to it.
+
+56
+00:05:50,350 --> 00:05:54,230
+In this case lamp 15 watts.
+
+57
+00:05:55,470 --> 00:05:57,430
+Apply power.
+
+58
+00:06:00,310 --> 00:06:03,150
+See, lamp lit.
+
+59
+00:06:03,970 --> 00:06:11,430
+Now we need to solder to second lead of OPTOCOUPLER a wire.
+
+60
+00:06:12,050 --> 00:06:12,210
+Here it is.
+
+61
+00:06:13,230 --> 00:06:19,050
+And to first lead of OPTOCOUPLER current-limiting resistor 91 Ohm.
+
+62
+00:06:19,750 --> 00:06:21,710
+And one-and-half-volt battery.
+
+63
+00:06:22,630 --> 00:06:26,130
+Minus from battery we supply to second leg.
+
+64
+00:06:26,790 --> 00:06:28,690
+Plus to resistor.
+
+65
+00:06:29,590 --> 00:06:31,990
+And observe, I connect battery.
+
+66
+00:06:35,070 --> 00:06:44,830
+And at connecting battery plus to resistor, microchip stops generation, load goes out.
+
+67
+00:06:46,970 --> 00:06:52,970
+This experiment shows that OPTOCOUPLER is in working state.
+
+68
+00:06:53,790 --> 00:07:10,930
+If there's lab signal generator on hand, can look how converter triggers under OPTOCOUPLER control with rectangular signal applied to input, common signal generator
+
+69
+00:07:10,930 --> 00:07:18,690
+connects to second lead, signal one to first lead, also through current-limiting resistance.
+
+70
+00:07:20,590 --> 00:07:24,150
+Input potential supply not more than 5 V.
+
+71
+00:07:24,330 --> 00:07:29,810
+Enough for OPTOCOUPLER triggering 1.5-2 V freely.
+
+72
+00:07:30,130 --> 00:07:32,510
+Equivalent to what we did from battery.
+
+73
+00:07:32,770 --> 00:07:38,250
+I supply rectangular signal with frequency 10 Hz.
+
+74
+00:07:39,310 --> 00:07:44,710
+See that scheme excellently responds.
+
+75
+00:07:45,270 --> 00:07:46,510
+Reduce frequency.
+
+76
+00:07:47,650 --> 00:07:49,030
+Frequency 5 Hz.
+
+77
+00:07:50,130 --> 00:08:02,850
+That is, understand, who deals with electronics, can on such principle already form microchip work in form of bursts.
+
+78
+00:08:05,390 --> 00:08:06,710
+Frequency 1 Hz.
+
+79
+00:08:09,410 --> 00:08:16,750
+If apply, say, mains frequency, here I smoothly raise, now 25 Hz.
+
+80
+00:08:21,390 --> 00:08:22,350
+50.
+
+81
+00:08:22,610 --> 00:08:32,430
+Can hear when will be such possibility to supply, that this step-up transformer hums at mains frequency 50 Hz.
+
+82
+00:08:33,690 --> 00:08:38,270
+Further we need to introduce into scheme one more element.
+
+83
+00:08:38,390 --> 00:08:41,050
+This is microchip TL431.
+
+84
+00:08:42,390 --> 00:08:44,810
+Graphically it presented as zener.
+
+85
+00:08:44,970 --> 00:08:49,210
+With branch turns out controllable zener system.
+
+86
+00:08:50,310 --> 00:08:54,390
+Pinout of leads presented under graphic image.
+
+87
+00:08:55,130 --> 00:08:59,370
+Detail itself also very small.
+
+88
+00:08:59,890 --> 00:09:00,330
+Here it is.
+
+89
+00:09:02,150 --> 00:09:03,510
+Three leads at detail.
+
+90
+00:09:04,250 --> 00:09:13,870
+Left to right counted leads, if microchip name reads directly frontally.
+
+91
+00:09:15,350 --> 00:09:16,810
+What is this done for?
+
+92
+00:09:17,830 --> 00:09:36,570
+Earlier I gave scheme of one more converter, and we can observe that here by feedback converter, master microchip, controlled directly through OPTOCOUPLER PC817 by means of dividing
+
+93
+00:09:36,570 --> 00:09:43,230
+voltage on bundle of resistances connected in series.
+
+94
+00:09:44,050 --> 00:10:03,650
+Here in this scheme can't control so, because if LED glow will be different intensity, accordingly and opto-transistor will, since it's bipolar, it will
+
+95
+00:09:36,570 --> 00:10:07,590
+open with various degree of conductivity.
+
+96
+00:10:08,490 --> 00:10:15,810
+And therefore, if measure it, play with OPTOCOUPLER, can see that resistance of this transistor changes.
+
+97
+00:10:16,350 --> 00:10:28,610
+And for this microchip need order not less than 200 Ohm of resistance, to reliably short third leg to common wire.
+
+98
+00:10:29,330 --> 00:10:39,610
+Precisely for this introduced additional sensitive element TL431 that controls this optocoupler.
+
+99
+00:10:40,590 --> 00:10:46,450
+TL431 quite for us elderly microchip.
+
+100
+00:10:47,410 --> 00:10:55,210
+Made it end 1970s, but nevertheless widely used till now.
+
+101
+00:10:56,390 --> 00:11:08,930
+Its advantage is operating voltage up to 36 Volts and main possibility to set trigger points of this microchip.
+
+102
+00:11:09,850 --> 00:11:19,650
+Inside there's reference power source about 2.5 Volts and comparator.
+
+103
+00:11:19,850 --> 00:11:32,010
+At one comparator input supplied stabilized power 2.5 Volts, and at other input supplied voltage from external part, from first lead.
+
+104
+00:11:32,530 --> 00:11:36,650
+At that comparator compares reference and input voltage.
+
+105
+00:11:36,710 --> 00:11:48,570
+If input voltage exceeds reference, microchip triggers and, graphically speaking, zener for us breaks down, that is microchip starts conducting.
+
+106
+00:11:49,450 --> 00:11:52,830
+Picked I divider on resistors.
+
+107
+00:11:52,850 --> 00:11:58,090
+Resistors one-watt 4.6 kOhm and 390 kOhm.
+
+108
+00:11:58,530 --> 00:12:15,870
+At such resistance, if its leads take already from converter output, voltage protection triggering happens at 238 Volts.
+
+109
+00:12:17,110 --> 00:12:27,690
+That is, changing ratings of this resistance 4.6 kOhm, can set trigger point of converter.
+
+110
+00:12:28,690 --> 00:12:37,570
+Mandatory need not forget to put this capacitor not less than 10 nF, ceramic, between third and first lead.
+
+111
+00:12:38,090 --> 00:12:46,190
+Otherwise possible false feedback triggers at some transient processes in transformer.
+
+112
+00:12:46,270 --> 00:12:54,950
+For example, if there'll be needle-like voltage spikes, microchip will trigger earlier than needed.
+
+113
+00:12:55,230 --> 00:12:56,690
+Capacitor mandatory.
+
+114
+00:12:57,830 --> 00:13:06,030
+And this resistance that placed parallel to LED of optocoupler 1 kOhm.
+
+115
+00:13:06,610 --> 00:13:21,510
+This resistance also doesn't let LED glow when microchip TL431 approaches trigger point.
+
+116
+00:13:22,790 --> 00:13:26,250
+Limiting resistance 150 Ohm.
+
+117
+00:13:27,410 --> 00:13:34,570
+Searched at start feedbacks of such kind in internet, but interesting, nothing found.
+
+118
+00:13:34,710 --> 00:13:42,670
+Very many such solutions for low voltage, but with high voltage had to fiddle.
+
+119
+00:13:45,690 --> 00:13:54,810
+Divider long picked in practice and changed various scheme variants, until it started working stably.
+
+120
+00:13:56,650 --> 00:14:10,250
+Many details for this converter can be borrowed in some broken power supplies, for example, from computer power supplies.
+
+121
+00:14:11,930 --> 00:14:18,990
+Can buy them cheaply or you may be given them at service centers just so.
+
+122
+00:14:20,570 --> 00:14:29,950
+In particular can see that on board located optocoupler PC817 and this microchip.
+
+123
+00:14:32,270 --> 00:14:34,650
+Small TL431.
+
+124
+00:14:37,050 --> 00:14:40,850
+Also heat sinks on which can plant transistors.
+
+125
+00:14:43,270 --> 00:14:48,270
+Thermal insulation gaskets under these transistors, all can find here.
+
+126
+00:14:50,210 --> 00:14:53,010
+Well and such also quite suits.
+
+127
+00:14:54,130 --> 00:14:57,150
+Can it, this transformer disassemble.
+
+128
+00:14:58,430 --> 00:15:17,290
+Soldered out it from board, but usually either heat it with construction dryer help until this glue melts so halves separate, or boil in water, also until it falls apart.
+
+129
+00:15:17,410 --> 00:15:26,290
+After this all unwound, well and wound own winding according to desired voltages.
+
+130
+00:15:26,790 --> 00:15:33,850
+So this converter can come out very cheap if make it from recycled material.
+
+131
+00:15:36,450 --> 00:15:55,250
+If this converter will be used, for example, for lighting when electric power supply turned off, then advise in this case put here at input some diode of any brand,
+
+132
+00:15:55,450 --> 00:15:58,430
+no difference what find, at 20 A here.
+
+133
+00:15:59,210 --> 00:16:02,450
+Voltage so order not less than 100 V.
+
+134
+00:16:04,770 --> 00:16:12,530
+So in case of insufficient lighting not mix up these power inputs.
+
+135
+00:16:12,670 --> 00:16:23,430
+Otherwise if mix up, scheme of course will immediately come into uselessness, microchip will fail and possibly one of keys will fly out.
+
+136
+00:16:24,810 --> 00:16:30,550
+If it's connected stationary constantly, can not put diode.
+
+137
+00:16:31,470 --> 00:16:37,430
+But also whoever wants can equip scheme input with fuse.
+
+138
+00:16:40,010 --> 00:16:43,530
+That is at your discretion can upgrade this scheme.
+
+139
+00:16:43,530 --> 00:16:49,610
+Also on such principle, this feedback I applied by voltage.
+
+140
+00:16:49,870 --> 00:17:04,210
+I need operating voltage point so it'd be... If voltage feedback assembled, here can already at input supply not only 12 V but voltage up to 20 V inclusive, with this it'll
+
+141
+00:17:04,210 --> 00:17:07,030
+stably hold output voltage.
+
+142
+00:17:07,150 --> 00:17:14,910
+That is can even take in pocket two Krona-type batteries, connect them in series and supply at input 18 V.
+
+143
+00:17:15,750 --> 00:17:20,570
+And you'll have at output voltage 220 V.
+
+144
+00:17:20,570 --> 00:17:23,510
+Always charge mobile phone.
+
+145
+00:17:26,870 --> 00:17:29,190
+In whole scheme such flexible.
+
+146
+00:17:31,490 --> 00:17:37,110
+Whoever interested can also assemble here current feedback.
+
+147
+00:17:37,190 --> 00:17:43,730
+That is if interested specifically that at output shorting microchip went to protection.
+
+148
+00:17:43,830 --> 00:17:58,730
+For this will need to change divider resistance, wind small toroidal transformer, so-called current transformer.
+
+149
+00:17:58,810 --> 00:18:09,390
+Can hang it at this common point by power plus to middle point of primary winding.
+
+150
+00:18:10,070 --> 00:18:22,630
+And already playing with its turn count, bring operating voltage point say somewhere above 2.6 V.
+
+151
+00:18:23,010 --> 00:18:30,310
+Say if this converter works on load 200 V.
+
+152
+00:18:31,130 --> 00:18:40,090
+And feed this output from this current sensor to small diode bridge.
+
+153
+00:18:40,430 --> 00:18:42,090
+After this put capacity.
+
+154
+00:18:43,230 --> 00:18:49,190
+Approximately scheme for you will turn out analog of this one presented.
+
+155
+00:18:49,230 --> 00:19:06,950
+Diode bridge, capacity and already for you may turn out quite working system that'll protect converter from short voltage, that is from short circuit at its output.
+
+156
+00:19:08,420 --> 00:19:12,070
+Everyone successful experiments, all good!
