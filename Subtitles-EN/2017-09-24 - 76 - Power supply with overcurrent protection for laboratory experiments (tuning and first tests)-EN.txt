@@ -1,0 +1,1063 @@
+1
+00:00:00,540 --> 00:00:01,920
+Greetings everyone.
+
+2
+00:00:02,600 --> 00:00:06,460
+Continue work on making lab power supply.
+
+3
+00:00:06,980 --> 00:00:10,640
+Now before you presented part of its schematic diagram.
+
+4
+00:00:11,300 --> 00:00:16,180
+What already managed to do, so to say, in iron.
+
+5
+00:00:16,800 --> 00:00:20,800
+And this part today we'll test.
+
+6
+00:00:21,800 --> 00:00:24,140
+Slightly turn to schematics.
+
+7
+00:00:24,140 --> 00:00:30,500
+Master generator made on microchip UC3825N.
+
+8
+00:00:31,020 --> 00:00:38,260
+On its base also assembled PWM controller with feedbacks by current and by voltage.
+
+9
+00:00:38,680 --> 00:00:45,500
+Now can see that current feedback not yet introduced.
+
+10
+00:00:46,080 --> 00:00:48,400
+That is we'll test system without it.
+
+11
+00:00:48,400 --> 00:00:54,880
+Current feedback introduced to ninth leg through resistor 1 kOhm.
+
+12
+00:00:55,120 --> 00:01:06,740
+So microchip started in such connection, ninth leg through this resistor need to set on common circuit, on minus power.
+
+13
+00:01:08,040 --> 00:01:16,180
+Also can see that outputs from controller go from 14th leg and from 11th.
+
+14
+00:01:16,180 --> 00:01:24,880
+Schematically I marked 14th leg as one, 11th leg as two in circle.
+
+15
+00:01:25,660 --> 00:01:27,860
+And now we can track control.
+
+16
+00:01:28,100 --> 00:01:31,340
+One for us comes to this optical driver.
+
+17
+00:01:31,480 --> 00:01:35,460
+And also see that one exits to driver diagonally.
+
+18
+00:01:36,140 --> 00:01:38,160
+Also for us work keys.
+
+19
+00:01:38,380 --> 00:01:40,740
+That is crosswise so work keys.
+
+20
+00:01:41,120 --> 00:01:44,500
+One pair and second pair.
+
+21
+00:01:44,500 --> 00:01:53,900
+Thereby we create bipolar current pulsations through primary winding of pulse transformer.
+
+22
+00:01:54,580 --> 00:02:00,500
+Also can observe separate power on each of four drivers.
+
+23
+00:02:00,780 --> 00:02:03,180
+Schematically marked plus-minus.
+
+24
+00:02:03,840 --> 00:02:07,900
+And supplied 16 volts at these points.
+
+25
+00:02:08,460 --> 00:02:10,960
+This power galvanically isolated.
+
+26
+00:02:10,960 --> 00:02:17,160
+And further same power introduced separately to PWM controller itself.
+
+27
+00:02:18,960 --> 00:02:24,560
+Introduced it from DC-DC converter for 5 leads.
+
+28
+00:02:25,120 --> 00:02:27,340
+Schematics can find on my channel.
+
+29
+00:02:27,640 --> 00:02:31,080
+And also video on its making.
+
+30
+00:02:33,900 --> 00:02:38,260
+Optical connection for us also will be by voltage.
+
+31
+00:02:38,260 --> 00:02:41,700
+Here visible optocoupler PC817.
+
+32
+00:02:43,100 --> 00:02:49,620
+Introduced its output to first leg.
+
+33
+00:02:49,740 --> 00:02:56,620
+And receives it power from 16th lead through current-limiting resistance 1 kOhm.
+
+34
+00:02:57,440 --> 00:03:09,980
+This optocoupler planned to use as sensor of limited voltage of power supply, namely 1000 volts.
+
+35
+00:03:10,080 --> 00:03:20,540
+That is at reaching 1000 volts at output converter should enter limiting mode to maintain this potential.
+
+36
+00:03:20,720 --> 00:03:30,680
+Up to 1000 volts voltage regulation will be done with this trimmer resistance variable resistor.
+
+37
+00:03:30,680 --> 00:03:41,580
+And also can observe that I picked ratings of resistors connected with variable resistance in series.
+
+38
+00:03:41,800 --> 00:03:52,740
+So smooth was regulation on whole length of variable resistance rotation.
+
+39
+00:03:52,920 --> 00:03:55,680
+Which very convenient for regulation.
+
+40
+00:03:55,680 --> 00:04:09,200
+Also picked them so that if slider will be at extreme left position, microchip generation stops and power supply goes to standby mode.
+
+41
+00:04:09,280 --> 00:04:20,220
+Can observe on scheme that PWM controller powering done from potential 16 volts that supplied to 15th lead of microchip.
+
+42
+00:04:21,110 --> 00:04:28,860
+13th lead powered with voltage 12 volts, that turns out on regulator L7812.
+
+43
+00:04:29,580 --> 00:04:39,300
+Done it with purpose to apply potential 12 volts to input LED of opto-drivers.
+
+44
+00:04:40,520 --> 00:04:42,320
+Limit voltage.
+
+45
+00:04:42,720 --> 00:04:47,540
+12 volts quite enough for these drivers and they excellently work.
+
+46
+00:04:47,540 --> 00:05:07,740
+Applied this potential through current-limiting resistance 470 Ohm and also parallel to LED in driver connected resistance 1 kOhm, that excludes false trigger of opto-driver in this
+
+47
+00:05:07,740 --> 00:05:08,760
+system.
+
+48
+00:05:08,760 --> 00:05:18,760
+Now slightly will show how this looks in iron and further move to testing and tuning of block.
+
+49
+00:05:19,520 --> 00:05:21,120
+This block in assembly.
+
+50
+00:05:22,920 --> 00:05:24,260
+What can see here?
+
+51
+00:05:24,900 --> 00:05:35,240
+Here I made bus by which supplied power and connection with rest of control bodies of device.
+
+52
+00:05:35,240 --> 00:05:39,340
+This separable unit.
+
+53
+00:05:40,140 --> 00:05:46,360
+Further DC-DC converter for 5 galvanically isolated outputs.
+
+54
+00:05:47,040 --> 00:05:51,200
+4 opto-drivers HCPL3120.
+
+55
+00:05:51,780 --> 00:05:56,540
+Microchip of PWM controller itself UC3825N.
+
+56
+00:05:56,800 --> 00:05:59,900
+This for us regulator L7812.
+
+57
+00:06:01,820 --> 00:06:07,160
+Of main strapping elements of drivers.
+
+58
+00:06:07,500 --> 00:06:10,520
+These resistance chains.
+
+59
+00:06:11,460 --> 00:06:15,420
+And further visible resistances 1-watt.
+
+60
+00:06:16,000 --> 00:06:21,340
+These chains going to FET transistor gate.
+
+61
+00:06:22,060 --> 00:06:27,920
+Also here can see bundles of 15-volt zeners connected counter.
+
+62
+00:06:27,920 --> 00:06:32,300
+These parts parallel to transistor leads.
+
+63
+00:06:33,420 --> 00:06:43,600
+On scheme can see that one of ratings of current-limiting resistance I set.
+
+64
+00:06:43,760 --> 00:06:46,560
+This 4.7 Ohm by gate.
+
+65
+00:06:47,020 --> 00:06:49,060
+Second rating not yet marked.
+
+66
+00:06:50,120 --> 00:06:56,020
+By default I have on board connected same resistance 4.7 Ohm.
+
+67
+00:06:56,020 --> 00:07:03,000
+In practice I'll pick and if need rating of this resistance will be reduced.
+
+68
+00:07:03,740 --> 00:07:09,940
+For more quality opening of FET transistor gate by leading edge.
+
+69
+00:07:10,160 --> 00:07:11,740
+But this again if needed.
+
+70
+00:07:12,320 --> 00:07:21,100
+This resistance is this part responsible for control of voltage potential.
+
+71
+00:07:24,500 --> 00:07:31,420
+More nothing here such on which can in detail stop.
+
+72
+00:07:32,500 --> 00:07:35,200
+Connected power pulse transformer.
+
+73
+00:07:38,020 --> 00:07:47,280
+Decided I to make primary winding with wire in insulation, multi-strand from pure copper.
+
+74
+00:07:48,020 --> 00:07:49,940
+In thermal stable insulation.
+
+75
+00:07:50,760 --> 00:07:57,960
+7 turns, which corresponds at fully charged accumulator to about 14 volts.
+
+76
+00:07:58,100 --> 00:08:02,700
+2 volts per turn primary winding.
+
+77
+00:08:03,060 --> 00:08:04,920
+So, all ready for testing.
+
+78
+00:08:05,080 --> 00:08:10,460
+Now need to look how controlled optical drivers.
+
+79
+00:08:11,370 --> 00:08:19,300
+For this we'll look initial work of PWM controller at these points.
+
+80
+00:08:19,660 --> 00:08:21,140
+Point 1 and point 2.
+
+81
+00:08:21,600 --> 00:08:33,280
+Actually our control pulses supplied in antiphase and at their maximum duration PWM controller leaves pause between them, so-called dead time.
+
+82
+00:08:35,140 --> 00:08:38,800
+Connected I oscilloscope probes at these points.
+
+83
+00:08:38,800 --> 00:08:43,260
+Now apply power to DC-DC converter.
+
+84
+00:08:43,800 --> 00:08:48,080
+Now will be audible sound of working core.
+
+85
+00:08:48,840 --> 00:08:56,680
+And at changing pulse duration DC-DC converter will adapt to consumption and tonality of this sound will change.
+
+86
+00:08:57,880 --> 00:08:59,340
+Applied I power.
+
+87
+00:09:00,740 --> 00:09:03,120
+DC-DC converter started.
+
+88
+00:09:04,100 --> 00:09:08,200
+See that oscillogram slightly changed.
+
+89
+00:09:08,200 --> 00:09:18,560
+And now I bring slider of variable resistor out of extreme position when PWM controller doesn't do work.
+
+90
+00:09:19,200 --> 00:09:20,600
+Smoothly add.
+
+91
+00:09:22,560 --> 00:09:25,980
+See that appeared minimum pulse.
+
+92
+00:09:26,740 --> 00:09:32,020
+And audible how DC-DC converter changed tonality.
+
+93
+00:09:32,620 --> 00:09:34,400
+Such feature of it.
+
+94
+00:09:34,960 --> 00:09:41,380
+Us interested how smoothly changes duration of control pulses.
+
+95
+00:09:44,000 --> 00:09:46,480
+Bring to limit.
+
+96
+00:09:47,020 --> 00:09:51,340
+End of resistor slider.
+
+97
+00:09:52,480 --> 00:09:57,840
+And now observe, is there pause between control pulses.
+
+98
+00:09:57,840 --> 00:10:03,280
+Yes, actually pause present in time.
+
+99
+00:10:05,160 --> 00:10:06,980
+Now look what it is.
+
+100
+00:10:08,740 --> 00:10:12,700
+Set sweep to 100 ns per cell.
+
+101
+00:10:13,940 --> 00:10:22,200
+And turns out 100, 200, 300, 400 ns makes pause at this PWM controller.
+
+102
+00:10:23,200 --> 00:10:37,920
+When we convinced that all works, now can look how behaves optical driver at load on FET transistor gate.
+
+103
+00:10:38,460 --> 00:10:49,160
+For this I'll switch blue channel of oscilloscope to output of optical driver.
+
+104
+00:10:49,160 --> 00:10:53,800
+Place it directly on FET transistor gate.
+
+105
+00:10:58,040 --> 00:11:03,900
+And here we can already observe its real work under load.
+
+106
+00:11:06,920 --> 00:11:16,080
+For start look how duration changes.
+
+107
+00:11:19,990 --> 00:11:22,370
+Control channel yellow.
+
+108
+00:11:26,640 --> 00:11:29,860
+That is optical driver works properly.
+
+109
+00:11:30,520 --> 00:11:37,580
+Now can observe key opening front.
+
+110
+00:11:39,140 --> 00:11:45,540
+Will need to look at front of blue channel of oscilloscope.
+
+111
+00:11:46,540 --> 00:11:50,880
+Also to 100 ns per cell.
+
+112
+00:11:53,600 --> 00:12:01,180
+These small interferences we can observe, this work of DC-DC converter.
+
+113
+00:12:01,440 --> 00:12:06,540
+But this absolutely not critical and in no way affects work of common scheme.
+
+114
+00:12:09,800 --> 00:12:18,040
+See that reducing pulse duration, front remains same.
+
+115
+00:12:23,030 --> 00:12:25,970
+And can measure it in time.
+
+116
+00:12:29,300 --> 00:12:53,060
+At this chain in gate circuit 4.7 Ohm and resistance 4.7 Ohm, front of signal growth on FET transistor gate makes by time 300 ns.
+
+117
+00:12:53,060 --> 00:13:05,180
+And front by which controlled, very steep, that supplied precisely from PWM controller.
+
+118
+00:13:05,640 --> 00:13:08,180
+Us interested precisely this parameter.
+
+119
+00:13:08,560 --> 00:13:13,420
+And can also look at rear front of key closure.
+
+120
+00:13:17,290 --> 00:13:21,050
+This front makes approximately 200 ns.
+
+121
+00:13:23,530 --> 00:13:34,490
+Now about moment I talked, about picking this resistance that not specified.
+
+122
+00:13:34,490 --> 00:13:47,110
+If we short it, now I'll do this with tweezers help, can see that front will grow.
+
+123
+00:13:48,310 --> 00:13:50,850
+Steepness of front that opens.
+
+124
+00:13:54,970 --> 00:14:08,850
+Visible that at shorting, with us steepness of opening front increases.
+
+125
+00:14:09,730 --> 00:14:14,190
+That is from 300 ns to 200 ns.
+
+126
+00:14:15,190 --> 00:14:29,490
+And means we have wide variant for picking these resistances in gate circuit to set clear work of power key.
+
+127
+00:14:30,070 --> 00:14:33,950
+On this can consider check of work.
+
+128
+00:14:34,330 --> 00:14:36,570
+Schemes finished, all functions.
+
+129
+00:14:37,090 --> 00:14:41,290
+Such same checks should conduct on each optical driver.
+
+130
+00:14:41,390 --> 00:14:43,510
+Picture should be maintained.
+
+131
+00:14:43,510 --> 00:14:46,790
+So do first launch of system.
+
+132
+00:14:47,470 --> 00:14:51,730
+This I recommend doing always using incandescent lamp.
+
+133
+00:14:52,290 --> 00:15:03,850
+Carefully check once more whole schematics of supply wires, polarity that brought to connection of electrolytic capacitors.
+
+134
+00:15:04,010 --> 00:15:08,670
+Because their reversal can lead to failure.
+
+135
+00:15:09,410 --> 00:15:16,670
+And not applying power to scheme, check for start power module.
+
+136
+00:15:17,010 --> 00:15:19,910
+For this connect one of wires to accumulator.
+
+137
+00:15:19,930 --> 00:15:23,130
+In this case I connected minus power source.
+
+138
+00:15:23,970 --> 00:15:37,930
+And plus lead, going here to capacitor battery and further to power keys, I'll connect with incandescent lamp.
+
+139
+00:15:37,930 --> 00:15:43,770
+It immediately will show if we have some malfunction.
+
+140
+00:15:44,390 --> 00:15:45,910
+Observe, I connect.
+
+141
+00:15:47,590 --> 00:15:51,050
+And saw that lamp slightly flashed.
+
+142
+00:15:51,310 --> 00:15:57,570
+And further its connection doesn't lead to filament glow.
+
+143
+00:15:58,410 --> 00:16:04,250
+First flash symbolized that charged these capacities.
+
+144
+00:16:04,250 --> 00:16:16,450
+And further moment that lamp doesn't burn, testifies to that power block assembled correctly and keys don't pass current without control.
+
+145
+00:16:17,690 --> 00:16:25,170
+Now after we convinced of this, can move to testing of block.
+
+146
+00:16:26,390 --> 00:16:30,530
+Convince that system for us off.
+
+147
+00:16:30,770 --> 00:16:37,790
+That is with resistance slider help set it in non-working mode.
+
+148
+00:16:38,630 --> 00:16:44,690
+Extreme position, smallest pulse duration, more precisely their full absence.
+
+149
+00:16:45,390 --> 00:16:49,250
+And now connect system.
+
+150
+00:16:50,470 --> 00:16:54,310
+Can use for this purpose ammeter.
+
+151
+00:16:55,070 --> 00:17:02,330
+Very well with its help observe current that system consumes.
+
+152
+00:17:03,110 --> 00:17:07,510
+Connect accumulator battery.
+
+153
+00:17:07,710 --> 00:17:12,290
+And now can apply power to DC-DC converter.
+
+154
+00:17:14,130 --> 00:17:15,810
+Power supplied.
+
+155
+00:17:16,810 --> 00:17:25,150
+Say immediately, that turn count in pulse transformer quite high.
+
+156
+00:17:25,290 --> 00:17:29,570
+Transformation ratio big at steep pulses.
+
+157
+00:17:29,770 --> 00:17:33,250
+And voltage here will be quite high.
+
+158
+00:17:33,250 --> 00:17:46,870
+Can look that now system doesn't work and discharge at us none at outputs.
+
+159
+00:17:46,990 --> 00:17:52,650
+Now I shorted start green wire and end of transformer winding.
+
+160
+00:17:53,310 --> 00:17:57,850
+Now I slightly add pulse duration.
+
+161
+00:18:00,890 --> 00:18:06,330
+And see that appeared small discharge.
+
+162
+00:18:07,590 --> 00:18:13,530
+System started, by ammeter can also control.
+
+163
+00:18:13,850 --> 00:18:15,710
+Now consumption very small.
+
+164
+00:18:16,790 --> 00:18:17,850
+Add more.
+
+165
+00:18:20,530 --> 00:18:21,570
+Observe.
+
+166
+00:18:24,130 --> 00:18:27,170
+Discharge already increased its length.
+
+167
+00:18:28,170 --> 00:18:30,850
+And already stretches.
+
+168
+00:18:31,870 --> 00:18:34,870
+That is system works.
+
+169
+00:18:35,770 --> 00:18:43,510
+In such visual way can determine how voltage rises.
+
+170
+00:18:47,750 --> 00:18:49,470
+Add more.
+
+171
+00:18:56,750 --> 00:19:04,730
+Tell you guys, here far over 1000 volts at such discharge.
+
+172
+00:19:04,850 --> 00:19:09,050
+At touching wires stick.
+
+173
+00:19:10,930 --> 00:19:16,790
+Would still ammeter get in lens.
+
+174
+00:19:17,890 --> 00:19:19,790
+Now try to do this.
+
+175
+00:19:21,450 --> 00:19:22,530
+So.
+
+176
+00:19:23,670 --> 00:19:25,750
+So was visible.
+
+177
+00:19:25,910 --> 00:19:26,790
+Scale at zero.
+
+178
+00:19:42,050 --> 00:19:43,750
+Bad slightly contact.
+
+179
+00:19:43,830 --> 00:19:44,910
+Here now is.
+
+180
+00:19:49,010 --> 00:19:58,370
+We see that at shorting consumption reaches 9 amps current.
+
+181
+00:19:59,530 --> 00:20:02,350
+Add more pulse duration.
+
+182
+00:20:09,790 --> 00:20:12,470
+10 amps short.
+
+183
+00:20:14,130 --> 00:20:16,850
+Add already full duration.
+
+184
+00:20:18,750 --> 00:20:22,370
+Probably now will be specific discharge.
+
+185
+00:20:24,770 --> 00:20:29,770
+With this matter already need to be more careful.
+
+186
+00:20:32,970 --> 00:20:42,110
+Better such experiments conduct through lamp bulb so system didn't fail.
+
+187
+00:20:46,210 --> 00:20:48,430
+You see all yourselves.
+
+188
+00:20:50,950 --> 00:20:54,290
+Hellish power at this system.
+
+189
+00:21:02,100 --> 00:21:05,440
+Switch to off mode.
+
+190
+00:21:07,400 --> 00:21:13,160
+Now will interest us tuning of this system by frequency.
+
+191
+00:21:13,280 --> 00:21:15,500
+For this we need oscilloscope.
+
+192
+00:21:16,280 --> 00:21:23,920
+Look oscillogram on one of transformer leads relative to start lead.
+
+193
+00:21:24,140 --> 00:21:27,300
+And already tune to optimal frequency.
+
+194
+00:21:27,300 --> 00:21:30,900
+Tune core under operating frequency.
+
+195
+00:21:32,260 --> 00:21:37,300
+For this I connected yellow channel of oscilloscope to one of leads.
+
+196
+00:21:37,380 --> 00:21:41,980
+Namely to third lead of transformer, since voltage here high.
+
+197
+00:21:43,720 --> 00:21:47,320
+If count from start of winding.
+
+198
+00:21:48,560 --> 00:21:52,460
+Probes I have at 1500 volts, hundredfold suppression.
+
+199
+00:21:52,620 --> 00:21:54,960
+So not afraid for device.
+
+200
+00:21:54,960 --> 00:22:04,380
+If you have probes of tenfold suppression, this better do by first lead.
+
+201
+00:22:05,500 --> 00:22:10,000
+Now power supplied to keys from accumulator.
+
+202
+00:22:10,180 --> 00:22:14,420
+And now apply power to DC-DC converter.
+
+203
+00:22:15,420 --> 00:22:25,240
+At that resistance slider responsible for pulse duration switched to system off.
+
+204
+00:22:26,320 --> 00:22:30,480
+Apply power to converter.
+
+205
+00:22:30,840 --> 00:22:36,180
+And see for now at transformer output nothing.
+
+206
+00:22:36,340 --> 00:22:41,860
+Now smoothly add duration of control pulses.
+
+207
+00:22:45,230 --> 00:22:47,870
+And see such picture.
+
+208
+00:22:47,990 --> 00:22:55,850
+With increasing duration can observe that quantity of these waves also increases.
+
+209
+00:22:56,330 --> 00:23:02,850
+This means our core is not in optimal operating mode.
+
+210
+00:23:03,250 --> 00:23:06,170
+Pulse duration to full.
+
+211
+00:23:06,790 --> 00:23:11,430
+And we can count quantity of these waves.
+
+212
+00:23:11,430 --> 00:23:13,690
+1, 2, 3, 4, 5.
+
+213
+00:23:14,310 --> 00:23:18,830
+That is approximately we need to raise frequency 5 times.
+
+214
+00:23:19,690 --> 00:23:21,510
+For this transformer.
+
+215
+00:23:23,270 --> 00:23:24,930
+This will now do.
+
+216
+00:23:29,260 --> 00:23:36,100
+This resistance answers on scheme for frequency.
+
+217
+00:23:36,360 --> 00:23:41,180
+At ratings presented on scheme.
+
+218
+00:23:42,180 --> 00:23:49,660
+This 10 kOhm at fifth leg and 2200 pF seventh leg.
+
+219
+00:23:50,940 --> 00:23:57,300
+Frequency will regulate from 35 kHz to 185 kHz.
+
+220
+00:23:58,240 --> 00:23:59,700
+At this PWM controller.
+
+221
+00:24:00,100 --> 00:24:02,880
+And raise frequency.
+
+222
+00:24:03,160 --> 00:24:09,540
+Observe how phenomenon of ringing in transformer will disappear.
+
+223
+00:24:12,320 --> 00:24:16,040
+This such preliminary tuning.
+
+224
+00:24:16,920 --> 00:24:20,140
+Further, after connection of diode bridge.
+
+225
+00:24:21,200 --> 00:24:25,640
+Will be conducted correction of transformer work.
+
+226
+00:24:25,720 --> 00:24:29,720
+Directly under load by DC.
+
+227
+00:24:30,720 --> 00:24:34,680
+Now we'll remove this negative phenomenon.
+
+228
+00:24:36,780 --> 00:24:38,080
+Of oscillations.
+
+229
+00:24:38,480 --> 00:24:39,660
+Frequency raise.
+
+230
+00:24:39,660 --> 00:24:50,660
+We need so was one pulse each.
+
+231
+00:24:51,920 --> 00:24:54,560
+Power supply slightly grumbles.
+
+232
+00:24:55,840 --> 00:25:00,980
+Since doesn't withstand consumption of DC-DC converter.
+
+233
+00:25:01,160 --> 00:25:01,660
+But nothing.
+
+234
+00:25:03,880 --> 00:25:05,760
+So we bring.
+
+235
+00:25:11,010 --> 00:25:16,810
+And here practically already what we need.
+
+236
+00:25:18,710 --> 00:25:23,590
+Now can control pulse duration.
+
+237
+00:25:25,350 --> 00:25:28,230
+From zero to maximum.
+
+238
+00:25:30,970 --> 00:25:35,150
+Oscillogram became significantly more beautiful.
+
+239
+00:25:36,150 --> 00:25:41,670
+Now need to connect at these points load.
+
+240
+00:25:42,170 --> 00:25:44,910
+And look what signal form will be under load.
+
+241
+00:25:44,990 --> 00:25:51,190
+Connected I lamp 60 W at 220 Volts.
+
+242
+00:25:52,390 --> 00:25:57,030
+And on it we'll observe oscillogram and voltage.
+
+243
+00:25:58,550 --> 00:26:00,790
+Parallel its output.
+
+244
+00:26:00,790 --> 00:26:02,090
+Apply power.
+
+245
+00:26:03,990 --> 00:26:08,290
+And smoothly add duration of control pulses.
+
+246
+00:26:13,800 --> 00:26:17,000
+See that lamp spiral starts to glow.
+
+247
+00:26:18,660 --> 00:26:19,520
+Go further.
+
+248
+00:26:25,500 --> 00:26:27,360
+Oscillogram changes.
+
+249
+00:26:27,840 --> 00:26:35,580
+And here maximum duration of control pulses.
+
+250
+00:26:36,580 --> 00:26:38,660
+Such have oscillogram.
+
+251
+00:26:40,520 --> 00:26:42,980
+Need to look at its symmetry.
+
+252
+00:26:43,140 --> 00:26:45,680
+See symmetric work.
+
+253
+00:26:47,900 --> 00:26:52,460
+Smooth regulation if we rotate slider.
+
+254
+00:26:54,300 --> 00:26:56,080
+Output voltage.
+
+255
+00:26:57,520 --> 00:27:05,800
+At this stage can consider preliminary tuning of system finished.
+
+256
+00:27:06,980 --> 00:27:13,420
+Frequency for us made 93 kHz approximately.
+
+257
+00:27:17,540 --> 00:27:20,020
+Can slightly more add.
+
+258
+00:27:23,140 --> 00:27:27,380
+But this we'll already do after play finally with frequency.
+
+259
+00:27:27,380 --> 00:27:41,460
+When here we'll already look at voltage by DC, us will interest maximum voltage rating on load at minimum consumption from power source.
+
+260
+00:27:41,600 --> 00:27:44,160
+That is will need look at ammeter.
+
+261
+00:27:45,140 --> 00:27:50,440
+At this stage convinced that system fully workable.
+
+262
+00:27:51,420 --> 00:27:54,520
+Interesting, heats it or no after such...
+
+263
+00:27:54,520 --> 00:27:56,400
+Absolutely cold heat sink.
+
+264
+00:27:58,060 --> 00:28:01,140
+Blowing absolutely won't be needed.
+
+265
+00:28:02,780 --> 00:28:08,000
+On this with you say goodbye for next series.
+
+266
+00:28:11,000 --> 00:28:15,300
+Everyone all good and successful experiments.
