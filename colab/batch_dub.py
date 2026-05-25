@@ -33,11 +33,13 @@ from pathlib import Path
 from typing import Iterable
 
 import numpy as np
-import pyrubberband as pyrb
 import soundfile as sf
 import srt
-import torch
-from TTS.api import TTS
+
+# Heavy deps (torch, TTS, pyrubberband) are imported lazily inside the
+# functions that need them, so batch_dub_edge can reuse the lightweight
+# helpers (load_urls, build_items, download_video, ...) without forcing
+# the Edge-TTS notebook to install XTTS's dependency stack.
 
 
 # ============================================================
@@ -358,6 +360,7 @@ def strip_vocals(audio_path: Path, out_path: Path) -> bool:
 # ============================================================
 def time_fit(audio: np.ndarray, sr: int, target_duration: float) -> tuple[np.ndarray, bool]:
     """Compress audio to fit target_duration (no expansion). Returns (audio, capped)."""
+    import pyrubberband as pyrb
     actual = len(audio) / sr
     if actual <= target_duration * 1.02:
         return audio, False
@@ -457,6 +460,7 @@ def _build_plan_dynamic(
     sr_master: int,
 ) -> list[dict]:
     """Build a list of timeline parts (gaps + segments) with the new durations."""
+    import pyrubberband as pyrb
     parts: list[dict] = []
     cursor_orig = 0.0
     cursor_new = 0.0
@@ -598,6 +602,7 @@ def _build_master_dynamic(
     ambient_path: Path | None,
 ) -> tuple[np.ndarray, int]:
     """Build audio on the NEW (warped) timeline."""
+    import pyrubberband as pyrb
     total_dur = sum(p["new_dur"] for p in parts)
     master = np.zeros(int(total_dur * sr_master) + sr_master, dtype=np.float32)
 
@@ -813,7 +818,9 @@ def run_batch(
     if not pending:
         return items
 
-    # Load TTS once
+    # Load TTS once (heavy deps imported lazily so batch_dub_edge doesn't need them)
+    import torch
+    from TTS.api import TTS
     os.environ["COQUI_TOS_AGREED"] = "1"
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"\nLoading XTTS-v2 on {device}...")
