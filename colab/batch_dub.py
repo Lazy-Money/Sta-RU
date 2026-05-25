@@ -532,12 +532,28 @@ def _build_plan_dynamic(
     return parts
 
 
+def _has_nvenc() -> bool:
+    """Detect if ffmpeg's NVIDIA encoder is available (much faster on T4)."""
+    try:
+        r = subprocess.run(
+            ["ffmpeg", "-hide_banner", "-encoders"],
+            capture_output=True, text=True, timeout=10,
+        )
+        return "h264_nvenc" in r.stdout
+    except Exception:
+        return False
+
+
 def _warp_video(parts: list[dict], video_path: Path, work_dir: Path) -> Path:
     """Cut + setpts + concat the video according to the plan. Returns the warped video path."""
     part_dir = work_dir / "video_parts"
     part_dir.mkdir(exist_ok=True)
     part_files = []
     n_stretched = 0
+    encoder = ("h264_nvenc", "p4") if _has_nvenc() else ("libx264", "fast")
+    enc_name, enc_preset = encoder
+    print(f"  Warping {len(parts)} video parts (encoder: {enc_name})...", flush=True)
+    progress_every = max(1, len(parts) // 10)
     for j, p in enumerate(parts):
         out = part_dir / f"part_{j:04d}.mp4"
         cmd = [
@@ -549,12 +565,14 @@ def _warp_video(parts: list[dict], video_path: Path, work_dir: Path) -> Path:
             cmd += ["-filter:v", f"setpts={p['pts']:.4f}*PTS"]
             n_stretched += 1
         cmd += [
-            "-c:v", "libx264", "-preset", "fast",
+            "-c:v", enc_name, "-preset", enc_preset,
             "-pix_fmt", "yuv420p", "-r", "30",
             str(out),
         ]
         subprocess.run(cmd, check=True)
         part_files.append(out)
+        if (j + 1) % progress_every == 0 or j + 1 == len(parts):
+            print(f"    part {j+1}/{len(parts)}", flush=True)
 
     print(f"  Video stretched on {n_stretched}/{len(parts)} parts")
 
