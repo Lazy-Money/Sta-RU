@@ -338,9 +338,12 @@ def _generate_tts_raw(
     hq_mode enables beam search + lower temperature for higher quality (slower)."""
     tts_kwargs: dict = {}
     if hq_mode:
+        # NOTE: num_beams > 1 triggers a shape bug in XTTS-v2 ('[1, N] invalid for
+        # input of size M'), so we use sampling-based knobs only.
         tts_kwargs = {
             "temperature": 0.6,
-            "num_beams": 3,
+            "top_k": 30,
+            "top_p": 0.75,
             "repetition_penalty": 10.0,
         }
     print(f"  Generating TTS{' (HQ mode)' if hq_mode else ''}...", flush=True)
