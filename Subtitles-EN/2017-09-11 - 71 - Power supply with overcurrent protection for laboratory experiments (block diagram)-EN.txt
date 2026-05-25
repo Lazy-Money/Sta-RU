@@ -1,0 +1,379 @@
+1
+00:00:01,230 --> 00:00:02,630
+Greetings everyone.
+
+2
+00:00:03,110 --> 00:00:13,130
+Starting another project that's designed to ease searches for experimenters in free energy area.
+
+3
+00:00:14,150 --> 00:00:21,270
+Block of scheme shown on this picture is power supply, universal for our experiments.
+
+4
+00:00:22,130 --> 00:00:25,450
+Planned output voltage up to 1000 V.
+
+5
+00:00:25,450 --> 00:00:33,750
+Also will run in this scheme new for me solution, this is work on opto-drivers.
+
+6
+00:00:36,010 --> 00:00:39,270
+So why is such scheme needed?
+
+7
+00:00:39,470 --> 00:00:46,790
+The thing is, can of course manage with bought power supplies.
+
+8
+00:00:46,790 --> 00:00:50,690
+In particular, two I have.
+
+9
+00:00:51,330 --> 00:00:58,930
+One of them low-voltage up to 30 V, other high-voltage up to 300 V.
+
+10
+00:00:59,390 --> 00:01:06,390
+Seemingly voltage range normal and suitable, but there are some problems.
+
+11
+00:01:07,070 --> 00:01:11,690
+First, these power supplies connect to mains.
+
+12
+00:01:11,690 --> 00:01:17,450
+And connection to mains guarantees us connection with neutral.
+
+13
+00:01:17,950 --> 00:01:24,010
+That is zero wire in lighting network inevitably tied to grounding.
+
+14
+00:01:24,530 --> 00:01:39,650
+If we construct devices designed to get energy relative to earth, then with use of these power supplies we won't get anything, since we're already automatically tied to
+
+15
+00:01:39,650 --> 00:01:41,070
+grounding through neutral.
+
+16
+00:01:41,690 --> 00:01:53,690
+Seemingly could exclude connection with grounding, for example by turning on these power supplies through two transformers to isolate.
+
+17
+00:01:54,870 --> 00:01:58,990
+But even in this case we also have connection.
+
+18
+00:01:59,070 --> 00:02:03,750
+Anyway somehow it slips through and interferes with work.
+
+19
+00:02:04,610 --> 00:02:09,450
+Could apply solution start power supplies through inverter.
+
+20
+00:02:09,450 --> 00:02:16,070
+Yes, solution good and this solves main problem of earth connection.
+
+21
+00:02:16,650 --> 00:02:17,890
+But there's one moment.
+
+22
+00:02:18,550 --> 00:02:27,530
+All our experiments in most cases happen at pulse consumption from these power sources.
+
+23
+00:02:28,650 --> 00:02:38,790
+And effects accompanying these experiments often so unpredictable that these power supplies behave absolutely inadequately.
+
+24
+00:02:39,450 --> 00:02:59,270
+Generally, controllers start behaving chaotically, with this output voltage jumps, output current and besides, for example, of such power supply it starts giving operation in bursts mode.
+
+25
+00:02:59,890 --> 00:03:05,450
+That is so strongly influence goes on it from these output wires.
+
+26
+00:03:05,450 --> 00:03:11,610
+Tried putting filters here, this also doesn't save from this problem.
+
+27
+00:03:13,790 --> 00:03:16,310
+Constant incorrect readings.
+
+28
+00:03:16,470 --> 00:03:32,850
+And plus, when these blocks start working in pulse power supply mode, signal in form of bursts forms at output after key on control device.
+
+29
+00:03:32,850 --> 00:03:40,890
+That is additional frequency modulation, and what naturally doesn't allow us to adequately tune system.
+
+30
+00:03:41,350 --> 00:03:47,910
+So from these power blocks had to refuse due to their unsuitability.
+
+31
+00:03:48,770 --> 00:03:57,230
+Such solutions very good for electronics tuning, they greatly help me.
+
+32
+00:03:57,230 --> 00:04:06,390
+But unfortunately, for powering devices and for such experiments they're unsuitable.
+
+33
+00:04:06,950 --> 00:04:17,990
+So was decided to develop this power supply that'll meet set tasks.
+
+34
+00:04:18,910 --> 00:04:23,630
+In particular, same advice can give about oscilloscope use.
+
+35
+00:04:25,110 --> 00:04:33,450
+Watching people's experiments, they connect oscilloscope to device and try to tune something.
+
+36
+00:04:34,010 --> 00:04:43,990
+Forgetting that oscilloscope plugged into lighting network, common wire of oscilloscope inevitably tied to neutral.
+
+37
+00:04:43,990 --> 00:04:56,410
+And turns out, even with power supply use we connect device and introduce same problem.
+
+38
+00:04:57,930 --> 00:05:06,460
+In Nikola Tesla's times there was lighting network on direct current and there was no connection to neutral.
+
+39
+00:05:06,460 --> 00:05:14,800
+Moreover, Nikola Tesla himself constructed devices that would allow him to work.
+
+40
+00:05:15,760 --> 00:05:21,700
+Such as DC dynamo machines.
+
+41
+00:05:22,560 --> 00:05:34,220
+Such dynamo machine gave autonomous power source and could be brought to rotation with help of external motor.
+
+42
+00:05:35,240 --> 00:05:42,320
+The thing is, all dynamo machines essentially are AC machines.
+
+43
+00:05:42,600 --> 00:05:58,320
+But if make dynamo machine with many contacts and do collector takeoff, can take from it potential at peak of AC wave.
+
+44
+00:05:58,320 --> 00:06:04,840
+Thereby getting DC at output, which he was doing.
+
+45
+00:06:05,540 --> 00:06:08,560
+But return to our scheme.
+
+46
+00:06:10,160 --> 00:06:11,940
+Examine it in more detail.
+
+47
+00:06:12,620 --> 00:06:21,320
+First, power will be from battery, which solves our problem of connection with grounding.
+
+48
+00:06:21,320 --> 00:06:40,080
+Next, I introduced relay element and diode so during our experiments with energetic effect inclusions in cheerful coil haze, not accidentally swap power wires.
+
+49
+00:06:41,400 --> 00:06:51,300
+Such polarity reversal would inevitably lead to failure of keys and DC-DC converter that gives independent power.
+
+50
+00:06:53,380 --> 00:06:55,040
+Solution simple.
+
+51
+00:06:55,440 --> 00:07:07,420
+We have relay with normally-open contacts and there's winding that creates magnetic field, thereby attracting contact, and they close.
+
+52
+00:07:08,020 --> 00:07:18,320
+If in correct direction install diode, can exclude wrong scheme inclusion.
+
+53
+00:07:18,320 --> 00:07:29,300
+That is, when plus power applied to diode anode, current passes through it and naturally forming magnetic field, contacts attract.
+
+54
+00:07:29,840 --> 00:07:36,640
+With reverse battery inclusion contact closure won't be.
+
+55
+00:07:37,360 --> 00:07:47,100
+Next introduced filter system, in capacities will be choke, well and already power applied to power keys.
+
+56
+00:07:47,980 --> 00:07:52,580
+Decided to stop on full bridge scheme.
+
+57
+00:07:54,520 --> 00:08:03,440
+Such scheme will allow qualitatively commutating primary winding and additionally introduce opto-isolations.
+
+58
+00:08:04,320 --> 00:08:07,900
+Four opto-drivers controlling keys.
+
+59
+00:08:08,560 --> 00:08:13,340
+Also introduced DC-DC converter with galvanic isolation.
+
+60
+00:08:13,340 --> 00:08:28,480
+All this done so during our experiments no influence on PWM controller or drivers controlling keys, which could lead to incorrect system operation.
+
+61
+00:08:30,680 --> 00:08:42,340
+In whole scheme quite simple, but there'll be nuances in its manufacture which I'll demonstrate along the way.
+
+62
+00:08:44,300 --> 00:08:53,680
+For us will be introduced current feedback, thereby we can do current protection regulation.
+
+63
+00:08:53,780 --> 00:09:02,240
+Very important parameter so if some shorting happened at output, system didn't fail.
+
+64
+00:09:03,860 --> 00:09:09,360
+And this point can be regulated, thereby setting trigger threshold.
+
+65
+00:09:10,320 --> 00:09:19,040
+Also will be introduced pulse duration regulation, which ultimately will be responsible for output voltage.
+
+66
+00:09:19,100 --> 00:09:32,360
+That is on each transformer lead we'll have voltage regulation from zero to maximum that allows turn count of this transformer.
+
+67
+00:09:33,160 --> 00:09:45,140
+At that transformer will be made on ferrite ring and secondary winding will have taps.
+
+68
+00:09:45,240 --> 00:09:58,200
+Here I schematically marked taps that'll go to switch and between taps can switch, thereby regulating maximum output voltage.
+
+69
+00:09:59,200 --> 00:10:08,200
+Voltage feedback can't be introduced here due to scheme being very bulky.
+
+70
+00:10:08,520 --> 00:10:18,900
+Will have to use same switch that'll change resistor circuits that'll set feedback trigger point.
+
+71
+00:10:18,900 --> 00:10:23,820
+But in PWM controller I'll introduce this system.
+
+72
+00:10:24,700 --> 00:10:38,800
+Say, if we need to hold on some lead constant voltage, we just take from here potential of this voltage, create resistor divider and feed back.
+
+73
+00:10:39,240 --> 00:10:45,020
+Say, we have tested scheme of some transistor and we precisely know its parameters.
+
+74
+00:10:45,020 --> 00:10:46,940
+This can be done.
+
+75
+00:10:47,220 --> 00:10:54,020
+And so, main switching of voltage potential will be done with switch help.
+
+76
+00:10:55,060 --> 00:11:04,800
+And output voltage will be calculated by Ohm's law on load, where current multiplied by load resistance.
+
+77
+00:11:06,120 --> 00:11:21,240
+But since for us power will be pulse, taken from output of this converter, this formula will be incorrect a little, but this quite suits us.
+
+78
+00:11:23,880 --> 00:11:33,140
+Before moving to making this scheme, need to first buy all parts.
+
+79
+00:11:33,140 --> 00:11:44,560
+So far at my place found such switch that perfectly suits us from Soviet equipment.
+
+80
+00:11:44,860 --> 00:11:52,060
+It has ceramic contact pad and quite powerful terminal output.
+
+81
+00:11:52,060 --> 00:12:11,700
+Here I drew where additional work on terminals is needed, because now if we switch, visible that switch due to contact pad width temporarily closes contact.
+
+82
+00:12:11,840 --> 00:12:16,700
+This need to get rid of and switch will be fully suitable.
+
+83
+00:12:16,700 --> 00:12:34,080
+Switch has 12 leads in circle, one of them common, from it supply voltage will be taken, and this petal does commutation.
+
+84
+00:12:35,800 --> 00:12:41,920
+In this case I drew on 12 leads, but at my place found 11-lead switch.
+
+85
+00:12:42,920 --> 00:12:45,780
+Not critical, quite suits us.
+
+86
+00:12:46,580 --> 00:12:52,940
+Can pick any here, who'll like, for output rating.
+
+87
+00:12:53,800 --> 00:13:05,030
+Of details that set common system dimensions, already have ready DC-DC converter.
+
+88
+00:13:06,030 --> 00:13:14,370
+Video on its tuning and making can look in previous video clip on my channel.
+
+89
+00:13:15,550 --> 00:13:21,510
+Specifically made for purpose of installation in this universal power supply.
+
+90
+00:13:22,190 --> 00:13:23,770
+It'll be located here.
+
+91
+00:13:25,090 --> 00:13:28,790
+For all other parts I go to store.
+
+92
+00:13:29,790 --> 00:13:35,230
+After this when I buy, move to manufacture.
+
+93
+00:13:35,870 --> 00:13:43,250
+And at same time count how such universal power supply works out by price of radio parts.
+
+94
+00:13:45,030 --> 00:13:47,150
+Thanks to all who watched.
+
+95
+00:13:47,690 --> 00:13:49,210
+Awaiting next release.

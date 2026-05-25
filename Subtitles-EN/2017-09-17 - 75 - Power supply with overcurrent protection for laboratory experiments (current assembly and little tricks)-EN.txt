@@ -1,0 +1,415 @@
+1
+00:00:01,040 --> 00:00:02,520
+Greetings everyone.
+
+2
+00:00:03,720 --> 00:00:08,960
+So, continuing work on lab power supply for experiments.
+
+3
+00:00:10,020 --> 00:00:17,480
+Visible that cover of lab block got covered with various holes.
+
+4
+00:00:17,740 --> 00:00:20,360
+Also holes are on side walls.
+
+5
+00:00:21,180 --> 00:00:24,880
+Already ready front wall, back.
+
+6
+00:00:26,580 --> 00:00:29,280
+Now I'll explain why this is done.
+
+7
+00:00:29,900 --> 00:00:39,120
+As you probably already guessed, these holes are made for leads of power pulse transformer.
+
+8
+00:00:41,120 --> 00:00:52,520
+Small tricks how I transferred so holes matched with power transformer leads.
+
+9
+00:00:54,700 --> 00:01:11,260
+Could install power transformer this way and outline each hole, but such method would give errors and later holes would need to be moved aside.
+
+10
+00:01:11,420 --> 00:01:12,820
+I went another way.
+
+11
+00:01:14,040 --> 00:01:28,380
+These wires bent aside, on top placed cardboard and tapping cardboard with little hammer, transferred to it points where transformer leads located.
+
+12
+00:01:28,720 --> 00:01:45,540
+And then matter of technique, cut it around and already on tape applied to surface and further already easy to transfer locations of future holes.
+
+13
+00:01:46,050 --> 00:01:49,460
+Everything easily and simply is solved.
+
+14
+00:01:52,100 --> 00:01:56,900
+Next, also worked on front little panel.
+
+15
+00:01:57,420 --> 00:02:14,020
+As we remember, should be here switch, switch of power pulse transformer windings and resistors that'll be responsible for voltage regulation.
+
+16
+00:02:15,020 --> 00:02:23,280
+On transformer leads and regulation of current protection trigger point.
+
+17
+00:02:24,280 --> 00:02:26,880
+This in this case these two holes.
+
+18
+00:02:27,040 --> 00:02:33,060
+Also decided to slightly supplement construction with interesting elements.
+
+19
+00:02:34,320 --> 00:02:42,900
+Hole under them, this is hole under this switch, such micro switch on-off.
+
+20
+00:02:45,060 --> 00:02:52,060
+And such button with normally-open contacts, that is we get closure when pressing button.
+
+21
+00:02:52,880 --> 00:02:57,960
+Why I introduce additionally these elements.
+
+22
+00:02:58,260 --> 00:03:05,240
+Here visible made backing, button small so convenient to press with finger.
+
+23
+00:03:06,640 --> 00:03:20,020
+Switch I'll introduce so can turn on and off power supply work without disconnecting its power wires from powering battery.
+
+24
+00:03:21,060 --> 00:03:27,940
+And this button, it's actually analog of switch will stand in parallel with it.
+
+25
+00:03:28,760 --> 00:03:37,820
+That is if we turn off switch, block in standby mode, at pressing this button block will start.
+
+26
+00:03:38,520 --> 00:03:43,740
+Introduced such mode so can test load.
+
+27
+00:03:44,440 --> 00:03:50,540
+Say we assemble new system and don't yet know how it'll behave.
+
+28
+00:03:50,700 --> 00:03:57,200
+We briefly press this button and look at system behavior.
+
+29
+00:03:57,960 --> 00:04:10,860
+Also this button will be useful if we put voltmeter on power supply output, see what's maximum voltage on this pulse transformer lead.
+
+30
+00:04:12,360 --> 00:04:16,900
+Such small supplements to construction.
+
+31
+00:04:19,060 --> 00:04:32,620
+Next move to overview of such power part that's additionally introduced into construction, namely this diode bridge.
+
+32
+00:04:34,280 --> 00:04:41,520
+This diode bridge assembled on eight MUR860 diodes.
+
+33
+00:04:42,300 --> 00:04:56,760
+Each diode 600V, so I connected them, visible jumpers, in series two diodes, total we get combined diode with total voltage 1200V.
+
+34
+00:04:57,460 --> 00:05:02,720
+Diodes fast, needed for us to work in this system.
+
+35
+00:05:03,760 --> 00:05:09,540
+Fixed they to heat sink also through dielectric pad from mica.
+
+36
+00:05:11,120 --> 00:05:19,400
+All operations done similar to those I showed in overview on power module of its making.
+
+37
+00:05:20,440 --> 00:05:26,320
+Chose such heat sink, visible it was already in use for me.
+
+38
+00:05:26,980 --> 00:05:39,980
+Convenient that here can locate power elements inside, and this'll provide additional protection from touching bare wires.
+
+39
+00:05:40,100 --> 00:05:57,720
+That is very convenient, if we look how it joins to box, leads in hole, and it fixes on 4 screws of box from behind.
+
+40
+00:05:59,540 --> 00:06:20,480
+This way is done, wires brought out to which leads from power pulse transformer will fix, well and accordingly output wires already marked with plus and minus.
+
+41
+00:06:20,960 --> 00:06:23,620
+Wiring I think visible.
+
+42
+00:06:26,080 --> 00:06:43,980
+Here will be additionally installed resistance, between these leads in this zone is this resistance will be discharge, so we have potential dump of voltage on output
+
+43
+00:06:43,980 --> 00:06:44,600
+capacities.
+
+44
+00:06:46,480 --> 00:06:52,800
+Now can familiarize with list of what I additionally bought.
+
+45
+00:06:54,100 --> 00:07:01,320
+Recently also was in radio stores, just picking these diodes and other parts.
+
+46
+00:07:02,340 --> 00:07:13,860
+List before you, by list total sum is 1555 rubles.
+
+47
+00:07:14,900 --> 00:07:16,140
+What did I acquire?
+
+48
+00:07:16,680 --> 00:07:29,460
+I acquired 4 capacitors of 4700 µF, capacitor cost 50 rubles, total sum 200 rubles.
+
+49
+00:07:30,400 --> 00:07:36,700
+Such 2.2 µF capacitor, cost 30 rubles.
+
+50
+00:07:37,780 --> 00:07:51,520
+Next also were acquired capacities for output, value of each capacity 4.8 µF, these big.
+
+51
+00:07:52,140 --> 00:07:54,960
+Capacitor cost 40 rubles piece.
+
+52
+00:07:55,060 --> 00:08:02,280
+Connected them in series here, capacitor rated 600V voltage.
+
+53
+00:08:02,400 --> 00:08:07,680
+And total like diode composite came to 1200V.
+
+54
+00:08:08,680 --> 00:08:20,440
+Also acquired variable resistances 2 pieces, switch, button, these small details.
+
+55
+00:08:21,080 --> 00:08:37,140
+Visible here I also acquired heat sink that I had on hand, sometime bought it at 100 rubles per piece, but kept this price, unknown how much it costs now.
+
+56
+00:08:39,040 --> 00:08:44,620
+Also acquired cores for chokes.
+
+57
+00:08:46,360 --> 00:08:49,140
+Big core and two small.
+
+58
+00:08:49,200 --> 00:09:03,220
+Two small cores I'll use on output, and this core that's bigger will be used as choke on power from battery.
+
+59
+00:09:07,780 --> 00:09:36,800
+Prices visible and today, considering what was bought previously we looked, price was 2955 rubles, sum up amount and get that these costs are 4510 rubles now
+
+60
+00:09:36,800 --> 00:09:38,440
+for this power supply.
+
+61
+00:09:38,640 --> 00:09:50,100
+Of course many small things not included here, like little drills that naturally need to acquire and other small equipment.
+
+62
+00:09:51,080 --> 00:09:58,620
+But this such matter, tool never hurts.
+
+63
+00:09:59,240 --> 00:10:05,660
+Of course cost amounts if you don't have anything will be much higher from start of manufacturing.
+
+64
+00:10:06,200 --> 00:10:29,180
+Also did small things in form of lead formation, gluing little stands, feet on DC-DC converter board and also visible I glued them to board where will be mounted control of PWM
+
+65
+00:10:29,180 --> 00:10:30,240
+controller.
+
+66
+00:10:30,980 --> 00:10:36,380
+That is many small things, they of course take big amount of time.
+
+67
+00:10:38,220 --> 00:10:40,020
+Nowhere to escape from this.
+
+68
+00:10:41,760 --> 00:11:03,860
+Make in particular these stands I from such plastic spacers that serve for fixing transistors or diodes or other radio electronics.
+
+69
+00:11:04,400 --> 00:11:11,780
+Put on clamping bolt and are isolating spacer.
+
+70
+00:11:12,160 --> 00:11:18,920
+That is thread through eye of this housing like this.
+
+71
+00:11:19,980 --> 00:11:25,760
+From them just well such stands come out.
+
+72
+00:11:26,700 --> 00:11:28,120
+Small tricks.
+
+73
+00:11:28,780 --> 00:11:38,320
+During work brought to mind switch, visible I trimmed with bormachine help this wide contact.
+
+74
+00:11:38,780 --> 00:11:44,280
+Now it clearly hits on contact and on main surfaces in circle.
+
+75
+00:11:45,520 --> 00:11:51,120
+Now will assemble step by step approximately.
+
+76
+00:11:51,480 --> 00:11:54,700
+See what comes out at this moment.
+
+77
+00:11:55,100 --> 00:11:59,220
+Assembly of this device will be done from control panel.
+
+78
+00:12:00,580 --> 00:12:02,080
+So here all located.
+
+79
+00:12:02,460 --> 00:12:09,040
+Here visible that all also located compactly, but there are gaps, parts don't touch each other.
+
+80
+00:12:11,000 --> 00:12:21,540
+Next should install DC-DC converter, it installs on side panel with help of four screws.
+
+81
+00:12:25,560 --> 00:12:27,040
+This way
+
+82
+00:12:31,290 --> 00:12:35,550
+cut thread in plate M3.
+
+83
+00:12:36,890 --> 00:12:41,390
+Now convenient to install
+
+84
+00:12:44,900 --> 00:12:44,900
+thread.
+
+85
+00:12:45,600 --> 00:12:57,860
+Next we have installation of power rectifier block, also installs on four screws.
+
+86
+00:13:01,860 --> 00:13:19,780
+Made such stands additionally so was distance for good cooling of this module.
+
+87
+00:13:22,560 --> 00:13:36,780
+Won't tighten strongly, preliminary assembly so we just look how everything inside block will be located.
+
+88
+00:13:37,880 --> 00:13:43,100
+Next output filtering capacities.
+
+89
+00:13:43,860 --> 00:13:50,540
+See contacts enter for coupling with diode bridge leads.
+
+90
+00:13:52,240 --> 00:13:55,500
+Relay will be located in this part.
+
+91
+00:13:57,960 --> 00:14:09,460
+Capacities that'll serve as accumulator for power of power module will be located like this.
+
+92
+00:14:11,340 --> 00:14:24,620
+Choke on power will be in this zone and two chokes on output will be here.
+
+93
+00:14:27,320 --> 00:14:29,080
+So, all has space.
+
+94
+00:14:31,640 --> 00:14:37,720
+Board will be located on stands in this part.
+
+95
+00:14:38,580 --> 00:14:50,240
+This clearance will be enough about 4 mm for wire-wrap routing on back side of board.
+
+96
+00:14:51,720 --> 00:14:54,180
+And all this will close.
+
+97
+00:14:55,860 --> 00:15:03,060
+On top power module and pulse transformer.
+
+98
+00:15:04,000 --> 00:15:06,600
+At today everything so far.
+
+99
+00:15:07,240 --> 00:15:10,040
+Doing small mechanical work.
+
+100
+00:15:11,120 --> 00:15:17,220
+Very soon move to making PWM controller.
+
+101
+00:15:17,560 --> 00:15:24,780
+Most interesting thing we'll do, its adjustment, first system launches.
+
+102
+00:15:26,260 --> 00:15:27,920
+Will be interesting.
+
+103
+00:15:30,120 --> 00:15:31,620
+On this all.
+
+104
+00:15:31,640 --> 00:15:36,040
+Bye everyone, good mood, see you in new videos.
