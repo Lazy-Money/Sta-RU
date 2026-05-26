@@ -537,13 +537,13 @@ def _build_plan_dynamic(
 
 
 def _has_nvenc() -> bool:
-    """Detect if ffmpeg's NVIDIA encoder is available (much faster on T4)."""
+    """Detect if ffmpeg's NVIDIA HEVC encoder is available (much faster on T4)."""
     try:
         r = subprocess.run(
             ["ffmpeg", "-hide_banner", "-encoders"],
             capture_output=True, text=True, timeout=10,
         )
-        return "h264_nvenc" in r.stdout
+        return "hevc_nvenc" in r.stdout
     except Exception:
         return False
 
@@ -554,7 +554,7 @@ def _warp_video(parts: list[dict], video_path: Path, work_dir: Path) -> Path:
     part_dir.mkdir(exist_ok=True)
     part_files = []
     n_stretched = 0
-    encoder = ("h264_nvenc", "p5") if _has_nvenc() else ("libx264", "medium")
+    encoder = ("hevc_nvenc", "p5") if _has_nvenc() else ("libx265", "medium")
     enc_name, enc_preset = encoder
     print(f"  Warping {len(parts)} video parts (encoder: {enc_name})...", flush=True)
     progress_every = max(1, len(parts) // 10)
@@ -571,12 +571,16 @@ def _warp_video(parts: list[dict], video_path: Path, work_dir: Path) -> Path:
         cmd += [
             "-c:v", enc_name, "-preset", enc_preset,
             "-pix_fmt", "yuv420p", "-r", "30",
+            # HEVC needs the 'hvc1' tag (not the default 'hev1') for broad
+            # Apple / QuickTime / Safari playback.
+            "-tag:v", "hvc1",
         ]
-        # Quality-targeted encoding: ~YouTube-grade picture at ~40-50% of NVENC's default size
-        if enc_name == "h264_nvenc":
-            cmd += ["-rc", "vbr", "-cq", "25", "-b:v", "0"]
+        # HEVC quality target — roughly 5 points higher than H.264 for the
+        # same visual quality (so cq=28 ~= H.264 cq=23).
+        if enc_name == "hevc_nvenc":
+            cmd += ["-rc", "vbr", "-cq", "28", "-b:v", "0"]
         else:
-            cmd += ["-crf", "23"]
+            cmd += ["-crf", "28", "-x265-params", "log-level=error"]
         cmd += [str(out)]
         subprocess.run(cmd, check=True)
         part_files.append(out)
