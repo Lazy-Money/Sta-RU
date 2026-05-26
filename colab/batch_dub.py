@@ -609,7 +609,7 @@ def _build_master_classic(
             from scipy import signal
             amb = signal.resample_poly(amb, sr_master, sr_amb)
         amb = amb[:len(master)] if len(amb) >= len(master) else np.pad(amb, (0, len(master) - len(amb)))
-        master = master + amb.astype(np.float32) * 0.25
+        master = master + amb.astype(np.float32)
 
     return master, sr_master
 
@@ -814,7 +814,7 @@ def _build_master_dynamic(
             new_a = int(p["new_start"] * sr_master)
             new_b = min(new_a + len(chunk), len(warped_amb))
             warped_amb[new_a:new_b] += chunk[:new_b - new_a].astype(np.float32)
-        master = master + warped_amb * 0.25
+        master = master + warped_amb
 
     return master, sr_master
 
