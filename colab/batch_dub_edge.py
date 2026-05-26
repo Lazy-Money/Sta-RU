@@ -94,6 +94,15 @@ def resolve_voice(lang: str, gender: str = "M", custom: str | None = None) -> st
 # anything over +50% sounds stressed).
 MAX_RATE_PCT = 50
 
+# How much we'll slow the voice down to fill a long slot. -30% makes the voice
+# noticeably more deliberate without sounding sluggish — approximates HeyGen's
+# "natural pacing" behavior when the TTS is shorter than the SRT slot.
+MIN_RATE_PCT = -30
+
+# If the rendered TTS is within this fraction of the slot, leave it alone.
+NATURAL_FIT_LOWER = 0.85
+NATURAL_FIT_UPPER = 1.02
+
 
 # ============================================================
 #  TTS generation
@@ -124,17 +133,32 @@ async def _tts_to_wav(
 def _fit_segment(
     text: str, voice: str, pitch_st: int, target_dur: float, work_path: Path,
 ) -> tuple[np.ndarray, int, int]:
-    """Generate a segment that fits within target_dur seconds.
-    Returns (audio, sr, final_rate_pct)."""
-    # First attempt at natural rate
+    """Generate a segment that fits target_dur seconds.
+
+    Strategy:
+      - Too long  -> re-render with rate > 0 (speed up, capped at MAX_RATE_PCT)
+      - Too short -> re-render with rate < 0 (slow down, capped at MIN_RATE_PCT)
+      - Within [NATURAL_FIT_LOWER, NATURAL_FIT_UPPER] * target -> leave as-is.
+
+    Returns (audio, sr, final_rate_pct).
+    """
     asyncio.run(_tts_to_wav(text, voice, pitch_st, 0, work_path))
     audio, sr = sf.read(work_path)
     actual = len(audio) / sr
-    if actual <= target_dur * 1.02:
-        return audio, sr, 0
-    # Too long — compute the rate boost needed and clamp at MAX_RATE_PCT
-    needed_pct = int(round((actual / target_dur - 1) * 100))
-    rate_pct = min(needed_pct, MAX_RATE_PCT)
+    ratio = actual / target_dur if target_dur > 0 else 1.0
+
+    if ratio <= NATURAL_FIT_UPPER and ratio >= NATURAL_FIT_LOWER:
+        return audio, sr, 0  # fits naturally
+
+    if ratio > NATURAL_FIT_UPPER:
+        # Too long -> speed up
+        needed_pct = int(round((ratio - 1) * 100))
+        rate_pct = min(needed_pct, MAX_RATE_PCT)
+    else:
+        # Too short -> slow down to fill the slot more naturally
+        needed_pct = int(round((ratio - 1) * 100))      # negative
+        rate_pct = max(needed_pct, MIN_RATE_PCT)
+
     asyncio.run(_tts_to_wav(text, voice, pitch_st, rate_pct, work_path))
     audio, sr = sf.read(work_path)
     return audio, sr, rate_pct
@@ -154,7 +178,8 @@ def _generate_tts(
     label = "DD" if dynamic_duration else "rate-fit"
     print(f"  Generating TTS (voice: {voice}, pitch: {pitch_st:+d}Hz, {label})...", flush=True)
     results: list[tuple[np.ndarray, int] | None] = []
-    n_boosted = 0
+    n_sped_up = 0
+    n_slowed = 0
     sr_master = SAMPLE_RATE
     for i, sub in enumerate(subs):
         text = sub.content.strip()
@@ -165,20 +190,25 @@ def _generate_tts(
         slot = (sub.end - sub.start).total_seconds()
         try:
             if dynamic_duration:
-                # Render at natural rate; only boost if even max video stretch
-                # wouldn't be enough to fit the audio.
+                # DD will stretch the video for us if TTS is longer than the
+                # slot. Only fall back to a rate-boost when even MAX_VIDEO_STRETCH
+                # wouldn't be enough. We still apply slow-down when TTS is much
+                # shorter than the slot, so the voice sounds natural instead of
+                # finishing early and leaving dead air.
                 target = slot * MAX_VIDEO_STRETCH
                 audio, sr, rate_pct = _fit_segment(text, voice, pitch_st, target, seg_path)
             else:
                 audio, sr, rate_pct = _fit_segment(text, voice, pitch_st, slot, seg_path)
             if rate_pct > 0:
-                n_boosted += 1
+                n_sped_up += 1
+            elif rate_pct < 0:
+                n_slowed += 1
             results.append((audio, sr))
             sr_master = sr
         except Exception as e:
             print(f"  [WARN] seg {i+1}: {e}")
             results.append(None)
-    print(f"  Generated: {sum(1 for r in results if r)}/{len(subs)} (rate-boosted: {n_boosted})")
+    print(f"  Generated: {sum(1 for r in results if r)}/{len(subs)}  (sped up: {n_sped_up}, slowed down: {n_slowed})")
     return results, sr_master
 
 

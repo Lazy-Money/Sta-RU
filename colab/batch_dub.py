@@ -303,6 +303,30 @@ def get_video_duration(video_path: Path) -> float:
     return float(probe.stdout.strip())
 
 
+def get_video_fps(video_path: Path) -> float:
+    """Read the source video's frame rate via ffprobe. Falls back to 30 if unparseable."""
+    try:
+        r = subprocess.run(
+            [
+                "ffprobe", "-v", "error", "-select_streams", "v:0",
+                "-show_entries", "stream=r_frame_rate",
+                "-of", "default=noprint_wrappers=1:nokey=1", str(video_path),
+            ],
+            capture_output=True, text=True, check=True,
+        )
+        rate = r.stdout.strip()
+        if "/" in rate:
+            num, denom = rate.split("/", 1)
+            fps = float(num) / float(denom) if float(denom) else 0.0
+        else:
+            fps = float(rate)
+        if 1 < fps < 240:
+            return fps
+    except Exception:
+        pass
+    return 30.0
+
+
 # ============================================================
 #  Voice reference extraction
 # ============================================================
@@ -556,7 +580,8 @@ def _warp_video(parts: list[dict], video_path: Path, work_dir: Path) -> Path:
     n_stretched = 0
     encoder = ("hevc_nvenc", "p5") if _has_nvenc() else ("libx265", "medium")
     enc_name, enc_preset = encoder
-    print(f"  Warping {len(parts)} video parts (encoder: {enc_name})...", flush=True)
+    src_fps = get_video_fps(video_path)
+    print(f"  Warping {len(parts)} video parts (encoder: {enc_name}, {src_fps:.3f} fps)...", flush=True)
     progress_every = max(1, len(parts) // 10)
     for j, p in enumerate(parts):
         out = part_dir / f"part_{j:04d}.mp4"
@@ -570,7 +595,7 @@ def _warp_video(parts: list[dict], video_path: Path, work_dir: Path) -> Path:
             n_stretched += 1
         cmd += [
             "-c:v", enc_name, "-preset", enc_preset,
-            "-pix_fmt", "yuv420p", "-r", "30",
+            "-pix_fmt", "yuv420p", "-r", f"{src_fps:.3f}",
             # HEVC needs the 'hvc1' tag (not the default 'hev1') for broad
             # Apple / QuickTime / Safari playback.
             "-tag:v", "hvc1",
