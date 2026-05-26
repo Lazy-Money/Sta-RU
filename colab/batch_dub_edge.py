@@ -303,7 +303,7 @@ def dub_one(
     mode = "dynamic-duration" if dynamic_duration else "rate-fit"
     print(f"  SRT: {len(subs)} segments  |  engine: edge-tts  |  mode: {mode}")
 
-    video_path, orig_audio, ambient_path = prepare_video_and_ambient(
+    video_path, orig_audio, ambient_path, _vocals_path = prepare_video_and_ambient(
         item.url, work_dir, cache_root, remove_voice
     )
 

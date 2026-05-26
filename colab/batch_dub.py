@@ -349,12 +349,12 @@ def prepare_video_and_ambient(
     work_dir: Path,
     cache_root: Path | None,
     remove_voice: bool,
-) -> tuple[Path, Path, Path | None]:
+) -> tuple[Path, Path, Path | None, Path | None]:
     """Download the video (or fetch from cache), extract its mono audio, and
-    optionally produce the ambient track. When `cache_root` is provided, all
-    three artifacts (video, orig audio, ambient) are kept under
+    optionally produce the ambient AND isolated-vocals tracks. When
+    `cache_root` is provided, every artifact is kept under
     `{cache_root}/{url_hash}/` so subsequent runs in other languages reuse them.
-    Returns (video_path, orig_audio_path, ambient_path_or_None)."""
+    Returns (video_path, orig_audio_path, ambient_path_or_None, vocals_path_or_None)."""
     video_path = work_dir / "video.mp4"
     orig_audio = work_dir / "orig.wav"
     cache_dir = (cache_root / url_cache_key(url)) if cache_root else None
@@ -363,6 +363,7 @@ def prepare_video_and_ambient(
     cached_video = cache_dir / "video.mp4" if cache_dir else None
     cached_orig = cache_dir / "orig.wav" if cache_dir else None
     cached_ambient = cache_dir / "ambient.wav" if cache_dir else None
+    cached_vocals = cache_dir / "vocals.wav" if cache_dir else None
 
     # Video
     if cached_video and cached_video.exists():
@@ -382,21 +383,34 @@ def prepare_video_and_ambient(
         if cached_orig:
             shutil.copy(orig_audio, cached_orig)
 
-    # Ambient (optional)
+    # Ambient + isolated vocals (optional)
     ambient_path: Path | None = None
+    vocals_path: Path | None = None
     if remove_voice:
         stripped = work_dir / "ambient.wav"
-        if cached_ambient and cached_ambient.exists():
+        vocals = work_dir / "vocals.wav"
+        cache_hit = (
+            cached_ambient and cached_ambient.exists()
+            and (not cached_vocals or cached_vocals.exists())
+        )
+        if cache_hit:
             shutil.copy(cached_ambient, stripped)
             ambient_path = stripped
-            print("  Ambient from cache")
+            if cached_vocals and cached_vocals.exists():
+                shutil.copy(cached_vocals, vocals)
+                vocals_path = vocals
+            print("  Ambient & vocals from cache")
         else:
             print("  Stripping vocals (Demucs)...", flush=True)
-            if strip_vocals(orig_audio, stripped):
+            if strip_vocals(orig_audio, stripped, vocals_out=vocals):
                 ambient_path = stripped
                 if cached_ambient:
                     shutil.copy(stripped, cached_ambient)
-    return video_path, orig_audio, ambient_path
+                if vocals.exists():
+                    vocals_path = vocals
+                    if cached_vocals:
+                        shutil.copy(vocals, cached_vocals)
+    return video_path, orig_audio, ambient_path, vocals_path
 
 
 def get_video_duration(video_path: Path) -> float:
@@ -452,9 +466,17 @@ def extract_voice_ref(audio_path: Path, subs: list[srt.Subtitle], out_path: Path
 # ============================================================
 #  Demucs vocal removal (optional)
 # ============================================================
-def strip_vocals(audio_path: Path, out_path: Path) -> bool:
-    """Run Demucs to remove vocals; writes the 'no_vocals' stem to out_path.
-    Returns True on success, False if Demucs not installed or fails."""
+def strip_vocals(
+    audio_path: Path, out_path: Path, vocals_out: Path | None = None,
+) -> bool:
+    """Run Demucs to separate vocals from the rest.
+
+    Writes the no-vocals stem (ambient) to `out_path`. If `vocals_out` is
+    provided, also copies the isolated vocals stem there — useful as a clean
+    voice-clone reference for XTTS.
+
+    Returns True on success, False if Demucs isn't installed or fails.
+    """
     try:
         import demucs.separate  # noqa: F401
     except ImportError:
@@ -477,11 +499,14 @@ def strip_vocals(audio_path: Path, out_path: Path) -> bool:
     except subprocess.CalledProcessError as e:
         print(f"[WARN] demucs failed: {e.stderr.decode()[-200:] if e.stderr else e}")
         return False
-    # demucs writes to {work}/htdemucs/{stem}/no_vocals.wav
     no_vocals = next(work.rglob("no_vocals.wav"), None)
     if not no_vocals:
         return False
     shutil.copy(no_vocals, out_path)
+    if vocals_out is not None:
+        vocals = next(work.rglob("vocals.wav"), None)
+        if vocals:
+            shutil.copy(vocals, vocals_out)
     shutil.rmtree(work, ignore_errors=True)
     return True
 
@@ -821,12 +846,15 @@ def dub_one(
         mode_tags.append("custom-ref")
     print(f"  SRT: {len(subs)} segments  |  mode: {' + '.join(mode_tags)}")
 
-    # 2-3. Video + orig audio + optional ambient (with cross-language cache)
-    video_path, orig_audio, ambient_path = prepare_video_and_ambient(
+    # 2-3. Video + orig audio + optional ambient/vocals (with cross-language cache)
+    video_path, orig_audio, ambient_path, vocals_path = prepare_video_and_ambient(
         item.url, work_dir, cache_root, remove_voice
     )
 
-    # 4. Voice reference: custom uploaded sample if provided, else extract from video
+    # 4. Voice reference. Priority:
+    #    1) User-uploaded clean sample
+    #    2) Demucs-isolated vocals (clean voice without ambient bleed)
+    #    3) Raw audio extracted from the longest SRT segment (legacy fallback)
     ref_path = work_dir / "ref.wav"
     if custom_voice_ref is not None and Path(custom_voice_ref).exists():
         subprocess.run(
@@ -839,6 +867,9 @@ def dub_one(
         )
         amb_meta = sf.info(ref_path)
         print(f"  Voice ref (custom): {custom_voice_ref.name} ({amb_meta.duration:.1f}s)")
+    elif vocals_path is not None and vocals_path.exists():
+        ref_s, ref_e = extract_voice_ref(vocals_path, subs, ref_path)
+        print(f"  Voice ref (Demucs-cleaned): {ref_s:.1f}-{ref_e:.1f}s")
     else:
         ref_s, ref_e = extract_voice_ref(orig_audio, subs, ref_path)
         print(f"  Voice ref (from video): {ref_s:.1f}-{ref_e:.1f}s")
