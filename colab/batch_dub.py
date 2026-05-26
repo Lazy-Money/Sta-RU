@@ -554,7 +554,7 @@ def _warp_video(parts: list[dict], video_path: Path, work_dir: Path) -> Path:
     part_dir.mkdir(exist_ok=True)
     part_files = []
     n_stretched = 0
-    encoder = ("h264_nvenc", "p4") if _has_nvenc() else ("libx264", "fast")
+    encoder = ("h264_nvenc", "p5") if _has_nvenc() else ("libx264", "medium")
     enc_name, enc_preset = encoder
     print(f"  Warping {len(parts)} video parts (encoder: {enc_name})...", flush=True)
     progress_every = max(1, len(parts) // 10)
@@ -571,8 +571,13 @@ def _warp_video(parts: list[dict], video_path: Path, work_dir: Path) -> Path:
         cmd += [
             "-c:v", enc_name, "-preset", enc_preset,
             "-pix_fmt", "yuv420p", "-r", "30",
-            str(out),
         ]
+        # Quality-targeted encoding: ~YouTube-grade picture at ~40-50% of NVENC's default size
+        if enc_name == "h264_nvenc":
+            cmd += ["-rc", "vbr", "-cq", "25", "-b:v", "0"]
+        else:
+            cmd += ["-crf", "23"]
+        cmd += [str(out)]
         subprocess.run(cmd, check=True)
         part_files.append(out)
         if (j + 1) % progress_every == 0 or j + 1 == len(parts):
