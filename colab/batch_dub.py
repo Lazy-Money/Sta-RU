@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import os
 import re
@@ -296,6 +297,69 @@ def extract_audio(video_path: Path, out_path: Path) -> None:
         ],
         check=True,
     )
+
+
+# ============================================================
+#  Per-URL cache (cross-language reuse)
+# ============================================================
+def url_cache_key(url: str) -> str:
+    """Stable short key per YouTube URL — same across languages."""
+    return hashlib.md5(url.encode("utf-8")).hexdigest()[:12]
+
+
+def prepare_video_and_ambient(
+    url: str,
+    work_dir: Path,
+    cache_root: Path | None,
+    remove_voice: bool,
+) -> tuple[Path, Path, Path | None]:
+    """Download the video (or fetch from cache), extract its mono audio, and
+    optionally produce the ambient track. When `cache_root` is provided, all
+    three artifacts (video, orig audio, ambient) are kept under
+    `{cache_root}/{url_hash}/` so subsequent runs in other languages reuse them.
+    Returns (video_path, orig_audio_path, ambient_path_or_None)."""
+    video_path = work_dir / "video.mp4"
+    orig_audio = work_dir / "orig.wav"
+    cache_dir = (cache_root / url_cache_key(url)) if cache_root else None
+    if cache_dir:
+        cache_dir.mkdir(parents=True, exist_ok=True)
+    cached_video = cache_dir / "video.mp4" if cache_dir else None
+    cached_orig = cache_dir / "orig.wav" if cache_dir else None
+    cached_ambient = cache_dir / "ambient.wav" if cache_dir else None
+
+    # Video
+    if cached_video and cached_video.exists():
+        shutil.copy(cached_video, video_path)
+        print("  Video from cache")
+    else:
+        print("  Downloading video...", flush=True)
+        download_video(url, video_path)
+        if cached_video:
+            shutil.copy(video_path, cached_video)
+
+    # Original mono audio (needed for voice ref by XTTS and for VAD)
+    if cached_orig and cached_orig.exists():
+        shutil.copy(cached_orig, orig_audio)
+    else:
+        extract_audio(video_path, orig_audio)
+        if cached_orig:
+            shutil.copy(orig_audio, cached_orig)
+
+    # Ambient (optional)
+    ambient_path: Path | None = None
+    if remove_voice:
+        stripped = work_dir / "ambient.wav"
+        if cached_ambient and cached_ambient.exists():
+            shutil.copy(cached_ambient, stripped)
+            ambient_path = stripped
+            print("  Ambient from cache")
+        else:
+            print("  Stripping vocals (Demucs)...", flush=True)
+            if strip_vocals(orig_audio, stripped):
+                ambient_path = stripped
+                if cached_ambient:
+                    shutil.copy(stripped, cached_ambient)
+    return video_path, orig_audio, ambient_path
 
 
 def get_video_duration(video_path: Path) -> float:
@@ -686,6 +750,7 @@ def dub_one(
     dynamic_duration: bool = True,
     hq_mode: bool = False,
     custom_voice_ref: Path | None = None,
+    cache_root: Path | None = None,
 ) -> None:
     work_dir.mkdir(parents=True, exist_ok=True)
     seg_dir = work_dir / "segments"
@@ -700,20 +765,14 @@ def dub_one(
         mode_tags.append("custom-ref")
     print(f"  SRT: {len(subs)} segments  |  mode: {' + '.join(mode_tags)}")
 
-    # 2. Download video
-    video_path = work_dir / "video.mp4"
-    if not video_path.exists():
-        print("  Downloading video...", flush=True)
-        download_video(item.url, video_path)
-
-    # 3. Extract audio
-    orig_audio = work_dir / "orig.wav"
-    extract_audio(video_path, orig_audio)
+    # 2-3. Video + orig audio + optional ambient (with cross-language cache)
+    video_path, orig_audio, ambient_path = prepare_video_and_ambient(
+        item.url, work_dir, cache_root, remove_voice
+    )
 
     # 4. Voice reference: custom uploaded sample if provided, else extract from video
     ref_path = work_dir / "ref.wav"
     if custom_voice_ref is not None and Path(custom_voice_ref).exists():
-        # Normalize the external sample to mono 24kHz so it matches the model's sr
         subprocess.run(
             [
                 "ffmpeg", "-y", "-loglevel", "error",
@@ -727,14 +786,6 @@ def dub_one(
     else:
         ref_s, ref_e = extract_voice_ref(orig_audio, subs, ref_path)
         print(f"  Voice ref (from video): {ref_s:.1f}-{ref_e:.1f}s")
-
-    # 5. Optional: vocal removal for ambient bed
-    ambient_path: Path | None = None
-    if remove_voice:
-        print("  Stripping vocals (Demucs)...", flush=True)
-        stripped = work_dir / "ambient.wav"
-        if strip_vocals(orig_audio, stripped):
-            ambient_path = stripped
 
     # 6. Generate TTS at natural speed
     raw_tts = _generate_tts_raw(subs, tts, lang, ref_path, seg_dir, hq_mode=hq_mode)
@@ -796,6 +847,7 @@ def run_batch(
     dynamic_duration: bool = True,
     hq_mode: bool = False,
     custom_voice_ref: str | Path | None = None,
+    cache_root: str | Path | None = "/tmp/sta-ru-cache",
 ) -> list[VideoItem]:
     """Main entry point. Returns the items list with final statuses."""
     lang_lc = lang.lower()
@@ -876,6 +928,7 @@ def run_batch(
                 dynamic_duration=dynamic_duration,
                 hq_mode=hq_mode,
                 custom_voice_ref=Path(custom_voice_ref) if custom_voice_ref else None,
+                cache_root=Path(cache_root) if cache_root else None,
             )
             it.status = "done"
             print(f"  Elapsed: {time.time() - t0:.1f}s")

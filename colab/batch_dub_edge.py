@@ -58,6 +58,7 @@ from batch_dub import (
     get_video_duration,
     load_urls,
     parse_range,
+    prepare_video_and_ambient,
     sanitize,
     strip_vocals,
     _build_master_dynamic,
@@ -261,6 +262,7 @@ def dub_one(
     output_path: Path,
     remove_voice: bool,
     dynamic_duration: bool = False,
+    cache_root: Path | None = None,
 ) -> None:
     work_dir.mkdir(parents=True, exist_ok=True)
     seg_dir = work_dir / "segments"
@@ -270,19 +272,9 @@ def dub_one(
     mode = "dynamic-duration" if dynamic_duration else "rate-fit"
     print(f"  SRT: {len(subs)} segments  |  engine: edge-tts  |  mode: {mode}")
 
-    video_path = work_dir / "video.mp4"
-    if not video_path.exists():
-        print("  Downloading video...", flush=True)
-        download_video(item.url, video_path)
-
-    ambient_path: Path | None = None
-    if remove_voice:
-        orig_audio = work_dir / "orig.wav"
-        extract_audio(video_path, orig_audio)
-        print("  Stripping vocals (Demucs)...", flush=True)
-        stripped = work_dir / "ambient.wav"
-        if strip_vocals(orig_audio, stripped):
-            ambient_path = stripped
+    video_path, _orig_audio, ambient_path = prepare_video_and_ambient(
+        item.url, work_dir, cache_root, remove_voice
+    )
 
     tts_audios, sr_master = _generate_tts(subs, voice, pitch_st, seg_dir, dynamic_duration)
     if not any(r is not None for r in tts_audios):
@@ -338,6 +330,7 @@ def run_batch(
     range_expr: str = "all",
     work_root: str | Path = "/tmp/sta-ru-edge",
     dynamic_duration: bool = False,
+    cache_root: str | Path | None = "/tmp/sta-ru-cache",
 ) -> list[VideoItem]:
     """Main entry point. `voice` overrides `gender` if provided."""
     lang_uc = lang.upper()
@@ -402,6 +395,7 @@ def run_batch(
                 output_path=it.output_path,
                 remove_voice=remove_voice,
                 dynamic_duration=dynamic_duration,
+                cache_root=Path(cache_root) if cache_root else None,
             )
             it.status = "done"
             print(f"  Elapsed: {time.time() - t0:.1f}s")
