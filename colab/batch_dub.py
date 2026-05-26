@@ -36,6 +36,12 @@ import numpy as np
 import soundfile as sf
 import srt
 
+try:
+    from tqdm.auto import tqdm
+except ImportError:  # pragma: no cover
+    def tqdm(it=None, **kwargs):  # type: ignore
+        return it if it is not None else iter(())
+
 # Heavy deps (torch, TTS, pyrubberband) are imported lazily inside the
 # functions that need them, so batch_dub_edge can reuse the lightweight
 # helpers (load_urls, build_items, download_video, ...) without forcing
@@ -582,8 +588,8 @@ def _warp_video(parts: list[dict], video_path: Path, work_dir: Path) -> Path:
     enc_name, enc_preset = encoder
     src_fps = get_video_fps(video_path)
     print(f"  Warping {len(parts)} video parts (encoder: {enc_name}, {src_fps:.3f} fps)...", flush=True)
-    progress_every = max(1, len(parts) // 10)
-    for j, p in enumerate(parts):
+    for p in tqdm(parts, desc="  warp", leave=False, unit="part"):
+        j = len(part_files)
         out = part_dir / f"part_{j:04d}.mp4"
         cmd = [
             "ffmpeg", "-y", "-loglevel", "error",
@@ -596,12 +602,8 @@ def _warp_video(parts: list[dict], video_path: Path, work_dir: Path) -> Path:
         cmd += [
             "-c:v", enc_name, "-preset", enc_preset,
             "-pix_fmt", "yuv420p", "-r", f"{src_fps:.3f}",
-            # HEVC needs the 'hvc1' tag (not the default 'hev1') for broad
-            # Apple / QuickTime / Safari playback.
             "-tag:v", "hvc1",
         ]
-        # HEVC quality target — roughly 5 points higher than H.264 for the
-        # same visual quality (so cq=28 ~= H.264 cq=23).
         if enc_name == "hevc_nvenc":
             cmd += ["-rc", "vbr", "-cq", "28", "-b:v", "0"]
         else:
@@ -609,8 +611,6 @@ def _warp_video(parts: list[dict], video_path: Path, work_dir: Path) -> Path:
         cmd += [str(out)]
         subprocess.run(cmd, check=True)
         part_files.append(out)
-        if (j + 1) % progress_every == 0 or j + 1 == len(parts):
-            print(f"    part {j+1}/{len(parts)}", flush=True)
 
     print(f"  Video stretched on {n_stretched}/{len(parts)} parts")
 

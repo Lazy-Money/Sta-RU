@@ -31,6 +31,12 @@ import numpy as np
 import soundfile as sf
 import srt
 
+try:
+    from tqdm.auto import tqdm
+except ImportError:  # pragma: no cover
+    def tqdm(it=None, **kwargs):  # type: ignore
+        return it if it is not None else iter(())
+
 # Jupyter/Colab already runs an event loop, so plain asyncio.run() raises
 # "cannot be called from a running event loop". nest_asyncio patches that.
 try:
@@ -181,7 +187,7 @@ def _generate_tts(
     n_sped_up = 0
     n_slowed = 0
     sr_master = SAMPLE_RATE
-    for i, sub in enumerate(subs):
+    for i, sub in enumerate(tqdm(subs, desc="  tts", leave=False, unit="seg")):
         text = sub.content.strip()
         if not text:
             results.append(None)
@@ -190,11 +196,6 @@ def _generate_tts(
         slot = (sub.end - sub.start).total_seconds()
         try:
             if dynamic_duration:
-                # DD will stretch the video for us if TTS is longer than the
-                # slot. Only fall back to a rate-boost when even MAX_VIDEO_STRETCH
-                # wouldn't be enough. We still apply slow-down when TTS is much
-                # shorter than the slot, so the voice sounds natural instead of
-                # finishing early and leaving dead air.
                 target = slot * MAX_VIDEO_STRETCH
                 audio, sr, rate_pct = _fit_segment(text, voice, pitch_st, target, seg_path)
             else:
