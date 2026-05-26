@@ -52,6 +52,7 @@ from batch_dub import (
     VideoItem,
     build_items,
     build_output_name,
+    detect_silent_segments,
     download_video,
     extract_audio,
     fetch_metadata,
@@ -174,6 +175,7 @@ def _fit_segment(
 def _generate_tts(
     subs: list, voice: str, pitch_st: int, seg_dir: Path,
     dynamic_duration: bool = False,
+    voice_mask: list[bool] | None = None,
 ) -> tuple[list[tuple[np.ndarray, int] | None], int]:
     """Render all SRT segments. Returns (per-segment audios, sr_master).
 
@@ -191,6 +193,9 @@ def _generate_tts(
     for i, sub in enumerate(tqdm(subs, desc="  tts", leave=False, unit="seg")):
         text = sub.content.strip()
         if not text:
+            results.append(None)
+            continue
+        if voice_mask is not None and not voice_mask[i]:
             results.append(None)
             continue
         seg_path = seg_dir / f"seg_{i:04d}.wav"
@@ -263,6 +268,7 @@ def dub_one(
     remove_voice: bool,
     dynamic_duration: bool = False,
     cache_root: Path | None = None,
+    skip_silent_segments: bool = True,
 ) -> None:
     work_dir.mkdir(parents=True, exist_ok=True)
     seg_dir = work_dir / "segments"
@@ -272,11 +278,18 @@ def dub_one(
     mode = "dynamic-duration" if dynamic_duration else "rate-fit"
     print(f"  SRT: {len(subs)} segments  |  engine: edge-tts  |  mode: {mode}")
 
-    video_path, _orig_audio, ambient_path = prepare_video_and_ambient(
+    video_path, orig_audio, ambient_path = prepare_video_and_ambient(
         item.url, work_dir, cache_root, remove_voice
     )
 
-    tts_audios, sr_master = _generate_tts(subs, voice, pitch_st, seg_dir, dynamic_duration)
+    voice_mask: list[bool] | None = None
+    if skip_silent_segments:
+        voice_mask = detect_silent_segments(orig_audio, subs)
+        n_skipped = sum(1 for m in voice_mask if not m)
+        if n_skipped:
+            print(f"  Skipping TTS for {n_skipped}/{len(subs)} segments where the original is silent")
+
+    tts_audios, sr_master = _generate_tts(subs, voice, pitch_st, seg_dir, dynamic_duration, voice_mask)
     if not any(r is not None for r in tts_audios):
         raise RuntimeError("No TTS generated for any segment")
 
@@ -331,6 +344,7 @@ def run_batch(
     work_root: str | Path = "/tmp/sta-ru-edge",
     dynamic_duration: bool = False,
     cache_root: str | Path | None = "/tmp/sta-ru-cache",
+    skip_silent_segments: bool = True,
 ) -> list[VideoItem]:
     """Main entry point. `voice` overrides `gender` if provided."""
     lang_uc = lang.upper()
@@ -396,6 +410,7 @@ def run_batch(
                 remove_voice=remove_voice,
                 dynamic_duration=dynamic_duration,
                 cache_root=Path(cache_root) if cache_root else None,
+                skip_silent_segments=skip_silent_segments,
             )
             it.status = "done"
             print(f"  Elapsed: {time.time() - t0:.1f}s")

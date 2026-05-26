@@ -300,6 +300,42 @@ def extract_audio(video_path: Path, out_path: Path) -> None:
 
 
 # ============================================================
+#  Voice Activity Detection
+# ============================================================
+def detect_silent_segments(
+    orig_audio_path: Path, subs: list, threshold_db: float = -38.0
+) -> list[bool]:
+    """For each SRT segment, return True if the original speaker is actually
+    audible in that time range. Skipping TTS where the original was silent
+    avoids the dub talking over moments the speaker spent thinking / gesturing.
+
+    The check is per-segment RMS in dB. -38 dB is permissive enough to allow
+    quiet whispered speech but suppress most pure-ambient stretches.
+    """
+    try:
+        audio, sr = sf.read(orig_audio_path)
+    except Exception:
+        return [True] * len(subs)
+    if audio.ndim > 1:
+        audio = audio.mean(axis=1)
+    result: list[bool] = []
+    for sub in subs:
+        s = int(sub.start.total_seconds() * sr)
+        e = int(sub.end.total_seconds() * sr)
+        chunk = audio[s:e]
+        if len(chunk) < sr // 20:  # < 50ms
+            result.append(True)
+            continue
+        rms = float(np.sqrt(np.mean(chunk.astype(np.float32) ** 2)))
+        if rms < 1e-6:
+            result.append(False)
+            continue
+        db = 20.0 * np.log10(rms)
+        result.append(db > threshold_db)
+    return result
+
+
+# ============================================================
 #  Per-URL cache (cross-language reuse)
 # ============================================================
 def url_cache_key(url: str) -> str:
@@ -467,9 +503,11 @@ def time_fit(audio: np.ndarray, sr: int, target_duration: float) -> tuple[np.nda
 def _generate_tts_raw(
     subs: list, tts: TTS, lang: str, ref_path: Path, seg_dir: Path,
     hq_mode: bool = False,
+    voice_mask: list[bool] | None = None,
 ) -> list[tuple[np.ndarray, int] | None]:
     """Generate TTS per segment at natural speed (no time-fit).
-    hq_mode enables beam search + lower temperature for higher quality (slower)."""
+    hq_mode enables beam search + lower temperature for higher quality (slower).
+    voice_mask[i] False => skip that segment (original speaker was silent)."""
     tts_kwargs: dict = {}
     if hq_mode:
         # Conservative HQ: only nudge temperature down from the 0.75 default.
@@ -478,9 +516,12 @@ def _generate_tts_raw(
         tts_kwargs = {"temperature": 0.7}
     print(f"  Generating TTS{' (HQ mode)' if hq_mode else ''}...", flush=True)
     raw: list[tuple[np.ndarray, int] | None] = []
-    for i, sub in enumerate(subs):
+    for i, sub in enumerate(tqdm(subs, desc="  tts", leave=False, unit="seg")):
         text = sub.content.strip()
         if not text:
+            raw.append(None)
+            continue
+        if voice_mask is not None and not voice_mask[i]:
             raw.append(None)
             continue
         seg_path = seg_dir / f"seg_{i:04d}.wav"
@@ -751,6 +792,7 @@ def dub_one(
     hq_mode: bool = False,
     custom_voice_ref: Path | None = None,
     cache_root: Path | None = None,
+    skip_silent_segments: bool = True,
 ) -> None:
     work_dir.mkdir(parents=True, exist_ok=True)
     seg_dir = work_dir / "segments"
@@ -787,8 +829,16 @@ def dub_one(
         ref_s, ref_e = extract_voice_ref(orig_audio, subs, ref_path)
         print(f"  Voice ref (from video): {ref_s:.1f}-{ref_e:.1f}s")
 
+    # 5b. Optionally skip segments where the original speaker was silent
+    voice_mask: list[bool] | None = None
+    if skip_silent_segments:
+        voice_mask = detect_silent_segments(orig_audio, subs)
+        n_skipped = sum(1 for m in voice_mask if not m)
+        if n_skipped:
+            print(f"  Skipping TTS for {n_skipped}/{len(subs)} segments where the original is silent")
+
     # 6. Generate TTS at natural speed
-    raw_tts = _generate_tts_raw(subs, tts, lang, ref_path, seg_dir, hq_mode=hq_mode)
+    raw_tts = _generate_tts_raw(subs, tts, lang, ref_path, seg_dir, hq_mode=hq_mode, voice_mask=voice_mask)
     if not any(r is not None for r in raw_tts):
         raise RuntimeError("No TTS generated for any segment")
     sr_master = next(r[1] for r in raw_tts if r is not None)
@@ -848,6 +898,7 @@ def run_batch(
     hq_mode: bool = False,
     custom_voice_ref: str | Path | None = None,
     cache_root: str | Path | None = "/tmp/sta-ru-cache",
+    skip_silent_segments: bool = True,
 ) -> list[VideoItem]:
     """Main entry point. Returns the items list with final statuses."""
     lang_lc = lang.lower()
@@ -929,6 +980,7 @@ def run_batch(
                 hq_mode=hq_mode,
                 custom_voice_ref=Path(custom_voice_ref) if custom_voice_ref else None,
                 cache_root=Path(cache_root) if cache_root else None,
+                skip_silent_segments=skip_silent_segments,
             )
             it.status = "done"
             print(f"  Elapsed: {time.time() - t0:.1f}s")
