@@ -31,6 +31,14 @@ import numpy as np
 import soundfile as sf
 import srt
 
+# Jupyter/Colab already runs an event loop, so plain asyncio.run() raises
+# "cannot be called from a running event loop". nest_asyncio patches that.
+try:
+    import nest_asyncio
+    nest_asyncio.apply()
+except ImportError:
+    pass
+
 # Reuse everything that's TTS-engine-independent from batch_dub.py
 from batch_dub import (
     SAMPLE_RATE,
