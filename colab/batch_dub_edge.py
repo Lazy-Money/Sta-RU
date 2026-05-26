@@ -269,6 +269,7 @@ def dub_one(
     dynamic_duration: bool = False,
     cache_root: Path | None = None,
     skip_silent_segments: bool = True,
+    burn_in_subs: bool = False,
 ) -> None:
     work_dir.mkdir(parents=True, exist_ok=True)
     seg_dir = work_dir / "segments"
@@ -309,22 +310,51 @@ def dub_one(
     sf.write(master_path, master, sr_master)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    subprocess.run(
-        [
+    if burn_in_subs:
+        # Burn the SRT into the video. Requires re-encoding (can't -c:v copy
+        # with a video filter). Use HEVC to keep file sizes reasonable.
+        # ffmpeg's 'subtitles' filter needs the file path as a single arg;
+        # escape characters that would be interpreted by the filter.
+        srt_arg = str(item.srt_path).replace("\\", "\\\\").replace(":", "\\:").replace("'", "\\'")
+        mux_cmd = [
             "ffmpeg", "-y", "-loglevel", "error",
             "-i", str(final_video),
             "-i", str(master_path),
-            "-c:v", "copy",
+            "-filter_complex", f"[0:v]subtitles='{srt_arg}'[v]",
+            "-map", "[v]", "-map", "1:a:0",
             "-c:a", "aac", "-b:a", "192k",
-            "-map", "0:v:0", "-map", "1:a:0",
-            "-shortest",
-            str(output_path),
-        ],
-        check=True,
-    )
+            "-c:v", "hevc_nvenc" if _has_nvenc_local() else "libx265",
+        ]
+        if _has_nvenc_local():
+            mux_cmd += ["-preset", "p5", "-rc", "vbr", "-cq", "28", "-b:v", "0", "-tag:v", "hvc1"]
+        else:
+            mux_cmd += ["-preset", "medium", "-crf", "28", "-tag:v", "hvc1",
+                        "-x265-params", "log-level=error"]
+        mux_cmd += ["-pix_fmt", "yuv420p", "-shortest", str(output_path)]
+        subprocess.run(mux_cmd, check=True)
+    else:
+        subprocess.run(
+            [
+                "ffmpeg", "-y", "-loglevel", "error",
+                "-i", str(final_video),
+                "-i", str(master_path),
+                "-c:v", "copy",
+                "-c:a", "aac", "-b:a", "192k",
+                "-map", "0:v:0", "-map", "1:a:0",
+                "-shortest",
+                str(output_path),
+            ],
+            check=True,
+        )
     size_mb = output_path.stat().st_size / 1024 / 1024
     print(f"  ✓ {output_path.name} ({size_mb:.1f} MB)")
     shutil.rmtree(work_dir, ignore_errors=True)
+
+
+def _has_nvenc_local() -> bool:
+    """Local proxy so we don't have to import _has_nvenc through batch_dub."""
+    from batch_dub import _has_nvenc
+    return _has_nvenc()
 
 
 # ============================================================
@@ -345,6 +375,7 @@ def run_batch(
     dynamic_duration: bool = False,
     cache_root: str | Path | None = "/tmp/sta-ru-cache",
     skip_silent_segments: bool = True,
+    burn_in_subs: bool = False,
 ) -> list[VideoItem]:
     """Main entry point. `voice` overrides `gender` if provided."""
     lang_uc = lang.upper()
@@ -411,6 +442,7 @@ def run_batch(
                 dynamic_duration=dynamic_duration,
                 cache_root=Path(cache_root) if cache_root else None,
                 skip_silent_segments=skip_silent_segments,
+                burn_in_subs=burn_in_subs,
             )
             it.status = "done"
             print(f"  Elapsed: {time.time() - t0:.1f}s")
