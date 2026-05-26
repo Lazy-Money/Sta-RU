@@ -172,6 +172,36 @@ def _fit_segment(
     return audio, sr, rate_pct
 
 
+def _fit_segment_dd(
+    text: str, voice: str, pitch_st: int, slot: float, work_path: Path,
+) -> tuple[np.ndarray, int, int]:
+    """For DD mode. The video can stretch up to MAX_VIDEO_STRETCH, so:
+       - actual > slot * MAX_VIDEO_STRETCH  -> speed audio up (video at the cap)
+       - actual < slot * NATURAL_FIT_LOWER   -> slow audio down to fill the slot
+       - otherwise leave it natural; the video will stretch as needed.
+    """
+    asyncio.run(_tts_to_wav(text, voice, pitch_st, 0, work_path))
+    audio, sr = sf.read(work_path)
+    actual = len(audio) / sr
+
+    cap_max = slot * MAX_VIDEO_STRETCH
+    if actual > cap_max * 1.02:
+        needed_pct = int(round((actual / cap_max - 1) * 100))
+        rate_pct = min(needed_pct, MAX_RATE_PCT)
+        asyncio.run(_tts_to_wav(text, voice, pitch_st, rate_pct, work_path))
+        audio, sr = sf.read(work_path)
+        return audio, sr, rate_pct
+
+    if actual < slot * NATURAL_FIT_LOWER:
+        needed_pct = int(round((actual / slot - 1) * 100))
+        rate_pct = max(needed_pct, MIN_RATE_PCT)
+        asyncio.run(_tts_to_wav(text, voice, pitch_st, rate_pct, work_path))
+        audio, sr = sf.read(work_path)
+        return audio, sr, rate_pct
+
+    return audio, sr, 0
+
+
 def _generate_tts(
     subs: list, voice: str, pitch_st: int, seg_dir: Path,
     dynamic_duration: bool = False,
@@ -202,8 +232,7 @@ def _generate_tts(
         slot = (sub.end - sub.start).total_seconds()
         try:
             if dynamic_duration:
-                target = slot * MAX_VIDEO_STRETCH
-                audio, sr, rate_pct = _fit_segment(text, voice, pitch_st, target, seg_path)
+                audio, sr, rate_pct = _fit_segment_dd(text, voice, pitch_st, slot, seg_path)
             else:
                 audio, sr, rate_pct = _fit_segment(text, voice, pitch_st, slot, seg_path)
             if rate_pct > 0:
