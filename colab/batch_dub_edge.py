@@ -175,10 +175,12 @@ def _fit_segment(
 def _fit_segment_dd(
     text: str, voice: str, pitch_st: int, slot: float, work_path: Path,
 ) -> tuple[np.ndarray, int, int]:
-    """For DD mode. The video can stretch up to MAX_VIDEO_STRETCH, so:
-       - actual > slot * MAX_VIDEO_STRETCH  -> speed audio up (video at the cap)
-       - actual < slot * NATURAL_FIT_LOWER   -> slow audio down to fill the slot
-       - otherwise leave it natural; the video will stretch as needed.
+    """For DD mode. Audio always at natural rate, except when even the maximum
+    video slow-mo (MAX_VIDEO_STRETCH) wouldn't be enough to absorb a very long
+    line — only then we resort to a small rate-boost.
+
+    Slow-down is intentionally NOT applied here: DD handles short TTS by
+    speeding the video up (pts < 1), so the dub stays at natural cadence.
     """
     asyncio.run(_tts_to_wav(text, voice, pitch_st, 0, work_path))
     audio, sr = sf.read(work_path)
@@ -188,13 +190,6 @@ def _fit_segment_dd(
     if actual > cap_max * 1.02:
         needed_pct = int(round((actual / cap_max - 1) * 100))
         rate_pct = min(needed_pct, MAX_RATE_PCT)
-        asyncio.run(_tts_to_wav(text, voice, pitch_st, rate_pct, work_path))
-        audio, sr = sf.read(work_path)
-        return audio, sr, rate_pct
-
-    if actual < slot * NATURAL_FIT_LOWER:
-        needed_pct = int(round((actual / slot - 1) * 100))
-        rate_pct = max(needed_pct, MIN_RATE_PCT)
         asyncio.run(_tts_to_wav(text, voice, pitch_st, rate_pct, work_path))
         audio, sr = sf.read(work_path)
         return audio, sr, rate_pct

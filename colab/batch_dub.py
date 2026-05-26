@@ -58,6 +58,7 @@ SAMPLE_RATE = 24000
 # Dynamic duration mode: how far we're allowed to stretch the video
 # to accommodate a longer dubbed audio.
 MAX_VIDEO_STRETCH = 1.5       # video can be slowed down up to 50% (plays at 1/1.5x)
+MIN_VIDEO_PTS = 0.7           # video can be sped up up to ~1.43x (plays at 1/0.7x)
 MAX_AUDIO_COMPRESS = 1.4      # if video stretch is not enough, audio can also speed up to 1.4x
 
 # XTTS-v2 supported languages (ISO 639-1, except zh)
@@ -627,28 +628,40 @@ def _build_plan_dynamic(
 
         tts_audio, sr_seg = r
         tts_dur = len(tts_audio) / sr_seg
+        desired_pts = tts_dur / orig_slot if orig_slot > 0 else 1.0
 
-        if tts_dur <= orig_slot:
-            # No stretch needed; keep video as is
+        if abs(desired_pts - 1.0) < 0.02:
+            # Already matches within 2 %
             new_dur = orig_slot
             pts = 1.0
             final_audio = tts_audio
-        else:
-            desired_stretch = tts_dur / orig_slot
-            if desired_stretch <= MAX_VIDEO_STRETCH:
-                # Stretch video to match TTS exactly
-                new_dur = tts_dur
-                pts = new_dur / orig_slot
+        elif desired_pts > 1.0:
+            # TTS longer than slot -> slow the video down
+            if desired_pts <= MAX_VIDEO_STRETCH:
+                pts = desired_pts
+                new_dur = orig_slot * pts
                 final_audio = tts_audio
             else:
-                # Hybrid: max video stretch + audio compress to bridge
-                new_dur = orig_slot * MAX_VIDEO_STRETCH
+                # Cap reached: still need to compress audio a bit (last resort).
                 pts = MAX_VIDEO_STRETCH
+                new_dur = orig_slot * pts
                 audio_speed = min(tts_dur / new_dur, MAX_AUDIO_COMPRESS)
                 if audio_speed > 1.02:
                     final_audio = pyrb.time_stretch(tts_audio, sr_seg, audio_speed)
                 else:
                     final_audio = tts_audio
+        else:
+            # TTS shorter than slot -> speed the video up. Audio stays natural.
+            if desired_pts >= MIN_VIDEO_PTS:
+                pts = desired_pts
+                new_dur = orig_slot * pts
+                final_audio = tts_audio
+            else:
+                # Cap reached: video at max speed-up, accept silence at the end
+                # so we never have to mangle the audio for being too short.
+                pts = MIN_VIDEO_PTS
+                new_dur = orig_slot * pts
+                final_audio = tts_audio
 
         parts.append({
             "type": "seg", "tts_idx": i,
