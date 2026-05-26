@@ -41,6 +41,7 @@ except ImportError:
 
 # Reuse everything that's TTS-engine-independent from batch_dub.py
 from batch_dub import (
+    MAX_VIDEO_STRETCH,
     SAMPLE_RATE,
     VideoItem,
     build_items,
@@ -53,6 +54,9 @@ from batch_dub import (
     parse_range,
     sanitize,
     strip_vocals,
+    _build_master_dynamic,
+    _build_plan_dynamic,
+    _warp_video,
 )
 
 
@@ -138,9 +142,17 @@ def _fit_segment(
 
 def _generate_tts(
     subs: list, voice: str, pitch_st: int, seg_dir: Path,
+    dynamic_duration: bool = False,
 ) -> tuple[list[tuple[np.ndarray, int] | None], int]:
-    """Render all SRT segments. Returns (per-segment audios, sr_master)."""
-    print(f"  Generating TTS (voice: {voice}, pitch: {pitch_st:+d}Hz)...", flush=True)
+    """Render all SRT segments. Returns (per-segment audios, sr_master).
+
+    If dynamic_duration is True, the TTS is generated at natural rate and only
+    re-rendered with a rate boost when its duration would exceed what the video
+    can be slowed down to (MAX_VIDEO_STRETCH x slot). The video itself is
+    stretched downstream to absorb the rest of the gap, so the dub stays natural.
+    """
+    label = "DD" if dynamic_duration else "rate-fit"
+    print(f"  Generating TTS (voice: {voice}, pitch: {pitch_st:+d}Hz, {label})...", flush=True)
     results: list[tuple[np.ndarray, int] | None] = []
     n_boosted = 0
     sr_master = SAMPLE_RATE
@@ -150,9 +162,15 @@ def _generate_tts(
             results.append(None)
             continue
         seg_path = seg_dir / f"seg_{i:04d}.wav"
-        target = (sub.end - sub.start).total_seconds()
+        slot = (sub.end - sub.start).total_seconds()
         try:
-            audio, sr, rate_pct = _fit_segment(text, voice, pitch_st, target, seg_path)
+            if dynamic_duration:
+                # Render at natural rate; only boost if even max video stretch
+                # wouldn't be enough to fit the audio.
+                target = slot * MAX_VIDEO_STRETCH
+                audio, sr, rate_pct = _fit_segment(text, voice, pitch_st, target, seg_path)
+            else:
+                audio, sr, rate_pct = _fit_segment(text, voice, pitch_st, slot, seg_path)
             if rate_pct > 0:
                 n_boosted += 1
             results.append((audio, sr))
@@ -211,13 +229,15 @@ def dub_one(
     work_dir: Path,
     output_path: Path,
     remove_voice: bool,
+    dynamic_duration: bool = False,
 ) -> None:
     work_dir.mkdir(parents=True, exist_ok=True)
     seg_dir = work_dir / "segments"
     seg_dir.mkdir(exist_ok=True)
 
     subs = list(srt.parse(item.srt_path.read_text(encoding="utf-8")))
-    print(f"  SRT: {len(subs)} segments  |  engine: edge-tts")
+    mode = "dynamic-duration" if dynamic_duration else "rate-fit"
+    print(f"  SRT: {len(subs)} segments  |  engine: edge-tts  |  mode: {mode}")
 
     video_path = work_dir / "video.mp4"
     if not video_path.exists():
@@ -233,12 +253,22 @@ def dub_one(
         if strip_vocals(orig_audio, stripped):
             ambient_path = stripped
 
-    tts_audios, sr_master = _generate_tts(subs, voice, pitch_st, seg_dir)
+    tts_audios, sr_master = _generate_tts(subs, voice, pitch_st, seg_dir, dynamic_duration)
     if not any(r is not None for r in tts_audios):
         raise RuntimeError("No TTS generated for any segment")
 
     video_duration = get_video_duration(video_path)
-    master = _build_master(subs, tts_audios, sr_master, video_duration, ambient_path)
+    if dynamic_duration:
+        parts = _build_plan_dynamic(subs, tts_audios, video_duration, sr_master)
+        final_video = _warp_video(parts, video_path, work_dir)
+        master, _ = _build_master_dynamic(parts, sr_master, ambient_path)
+    else:
+        final_video = video_path
+        master = _build_master(subs, tts_audios, sr_master, video_duration, ambient_path)
+
+    peak = float(np.max(np.abs(master)))
+    if peak > 0.99:
+        master *= 0.99 / peak
     master_path = work_dir / "master.wav"
     sf.write(master_path, master, sr_master)
 
@@ -246,7 +276,7 @@ def dub_one(
     subprocess.run(
         [
             "ffmpeg", "-y", "-loglevel", "error",
-            "-i", str(video_path),
+            "-i", str(final_video),
             "-i", str(master_path),
             "-c:v", "copy",
             "-c:a", "aac", "-b:a", "192k",
@@ -276,6 +306,7 @@ def run_batch(
     remove_voice: bool = True,
     range_expr: str = "all",
     work_root: str | Path = "/tmp/sta-ru-edge",
+    dynamic_duration: bool = False,
 ) -> list[VideoItem]:
     """Main entry point. `voice` overrides `gender` if provided."""
     lang_uc = lang.upper()
@@ -339,6 +370,7 @@ def run_batch(
                 work_dir=work_root_path / f"n{it.n}",
                 output_path=it.output_path,
                 remove_voice=remove_voice,
+                dynamic_duration=dynamic_duration,
             )
             it.status = "done"
             print(f"  Elapsed: {time.time() - t0:.1f}s")
@@ -372,6 +404,8 @@ def _cli() -> None:
     ap.add_argument("--pitch", type=int, default=0, help="Pitch shift in Hz, e.g. -5")
     ap.add_argument("--translate-titles", action="store_true")
     ap.add_argument("--no-remove-voice", action="store_true")
+    ap.add_argument("--dynamic-duration", action="store_true",
+                    help="Stretch the video to fit the dub (slower; voice stays at natural rate)")
     ap.add_argument("--range", dest="range_expr", default="all")
     ap.add_argument("--work-root", default="/tmp/sta-ru-edge")
     args = ap.parse_args()
@@ -388,6 +422,7 @@ def _cli() -> None:
         remove_voice=not args.no_remove_voice,
         range_expr=args.range_expr,
         work_root=args.work_root,
+        dynamic_duration=args.dynamic_duration,
     )
 
 
