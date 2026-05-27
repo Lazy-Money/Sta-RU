@@ -30,6 +30,7 @@
 | 28-EN.srt | OK | 1 | https://www.youtube.com/watch?v=PBUp550HW8k |
 | 29-EN.srt | OK | +1 | https://www.youtube.com/watch?v=tujYRJrqpyE |
 | 30-EN.srt | OK | +1 | https://www.youtube.com/watch?v=fyhtEa-jvGo |
+| 35-EN.srt | OK | 1 | (URL pendiente) |
 | 46-EN.srt | OK | 1 | https://www.youtube.com/watch?v=XDXTxPRPxSU |
 | 47-EN.srt | OK | 1 | https://www.youtube.com/watch?v=jCest-tcObc |
 | 48-EN.srt | OK | 1 | https://www.youtube.com/watch?v=NGG8Hk68Ikw |
