@@ -225,6 +225,9 @@ def _generate_tts(
             continue
         seg_path = seg_dir / f"seg_{i:04d}.wav"
         slot = (sub.end - sub.start).total_seconds()
+        if slot <= 0:
+            results.append(None)
+            continue
         try:
             if dynamic_duration:
                 audio, sr, rate_pct = _fit_segment_dd(text, voice, pitch_st, slot, seg_path)

@@ -732,6 +732,8 @@ def _warp_video(parts: list[dict], video_path: Path, work_dir: Path) -> Path:
     src_fps = get_video_fps(video_path)
     print(f"  Warping {len(parts)} video parts (encoder: {enc_name}, {src_fps:.3f} fps)...", flush=True)
     for p in tqdm(parts, desc="  warp", leave=False, unit="part"):
+        if p["orig_end"] - p["orig_start"] < 1e-4:
+            continue
         j = len(part_files)
         out = part_dir / f"part_{j:04d}.mp4"
         cmd = [
