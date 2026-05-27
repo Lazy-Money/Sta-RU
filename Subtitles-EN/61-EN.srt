@@ -1,30 +1,30 @@
 1
 00:00:01,240 --> 00:00:02,660
-Greetings everyone.
+Hi everyone.
 
 2
 00:00:03,040 --> 00:00:08,880
-Today I'll tell how to make a controlled Kacher circuit for our systems.
+Today I'll show how to build a controlled Kacher circuit for our systems.
 
 3
 00:00:09,880 --> 00:00:12,740
-The circuit came out operational.
+The circuit came out working.
 
 4
 00:00:13,560 --> 00:00:24,640
-Circuit modulation can be done by pulse, set by duty cycle with frequencies from 0.1 Hz to 50 kHz.
+Modulation of the circuit can be done by pulse, set by duty cycle at frequencies from 0.1 Hz to 50 kHz.
 
 5
 00:00:24,640 --> 00:00:41,420
-During our system operation on the Kacher circuit, that is, switching of high-voltage Tesla coil with feedback on cold end to transistor base.
+While running on the Kacher circuit — that is, switching the high-voltage Tesla coil with feedback from the cold end to the transistor base.
 
 6
 00:00:42,020 --> 00:00:51,920
-Or up to 100 kHz, if this circuit will be used as a key for working on active load, for example, incandescent lamp.
+Or up to 100 kHz, if this circuit is used as a switch for an active load — for example, an incandescent lamp.
 
 7
 00:00:53,580 --> 00:01:00,340
-Here you can see, divider resistor values are indicated.
+Here you can see the divider resistor values are marked.
 
 8
 00:01:01,160 --> 00:01:02,580
@@ -32,119 +32,119 @@ Values in parentheses.
 
 9
 00:01:03,620 --> 00:01:05,160
-Resistors selected this way.
+The resistors are picked this way.
 
 10
 00:01:05,520 --> 00:01:12,280
-This is for those who'll make the system as a key for working on active load.
+This is for those who'll build the system as a switch for an active load.
 
 11
 00:01:12,280 --> 00:01:38,160
-So at the base of transistor, at values 350 Ω and 740 Ω, the system creates offset 4.7 V at this point, if we measure voltage with the base disconnected from 2SC5200 transistor.
+With 350 Ω and 740 Ω, the system creates a 4.7 V bias on the transistor base — if we measure the voltage with the base disconnected from the 2SC5200 transistor.
 
 12
 00:01:38,160 --> 00:01:49,720
-That is, this divider creates 4.7 V at the supply voltage that's applied, 15 V in this system.
+That is, this divider creates 4.7 V at the applied supply voltage of 15 V in this system.
 
 13
 00:01:50,520 --> 00:01:51,640
-Value in parentheses.
+The value in parentheses.
 
 14
 00:01:52,260 --> 00:02:07,020
-And our main value, which will work on the Kacher circuit, similarly to the previous circuit I gave, it's 3.3 kΩ.
+And our main value, which will work on the Kacher circuit similar to the previous circuit I showed, is 3.3 kΩ.
 
 15
 00:02:11,260 --> 00:02:30,900
-The circuit through which the Kacher is powered is analogous, and in this system it's shown, except that here a DC voltage to elevated DC voltage converter is drawn, so-called DC-DC
+The chain through which the Kacher is powered is the same, and in this system it's shown — except here a DC-to-elevated-DC converter is drawn, the so-called DC-DC converter.
 
 16
 00:02:30,900 --> 00:02:33,940
-converter.
+DC-DC converter.
 
 17
 00:02:35,400 --> 00:02:42,260
-I also gave its schematic in my videos with 12, well, value from 50 to 200 V regulated.
+I also showed its schematic in my videos — 12 V input, output adjustable from 50 to 200 V.
 
 18
 00:02:42,900 --> 00:02:59,620
-This Kacher circuit starts in controlled mode around 10 V of supply voltage applied to this point, and I tested it up to 100 V.
+This Kacher circuit starts in controlled mode at about 10 V of supply voltage at this point, and I tested it up to 100 V.
 
 19
 00:02:59,620 --> 00:03:08,040
-In particular, our transistor is operational up to 200 V, the main power key.
+In particular, our transistor is operational up to 200 V — that's the main power switch.
 
 20
 00:03:09,860 --> 00:03:26,080
-The circuit is fully compatible with this circuit I also gave, you can look in the video "BTG controller," except for one moment.
+The circuit is fully compatible with the one I also showed — see the "BTG controller" video — except for one moment.
 
 21
 00:03:28,020 --> 00:03:35,960
-This is how compatibility happens, to the same connector, and the transition goes here also to control.
+Here's how compatibility happens — to the same connector — and the link goes here to control too.
 
 22
 00:03:36,680 --> 00:03:50,260
-The moment is that for controlling Tesla that works in control pulse mode, we needed a pulse of this form.
+The moment is, for controlling the Tesla that runs in controlled pulse mode, we needed a pulse of this shape.
 
 23
 00:03:50,260 --> 00:03:57,280
-That is, a long signal with small pause between them.
+A long signal with a small pause between them.
 
 24
 00:03:57,360 --> 00:04:06,520
-This pause for the controlled Tesla set the operating mode, formed these bursts.
+That pause for the controlled Tesla set the operating mode — formed those bursts.
 
 25
 00:04:06,800 --> 00:04:11,560
-By action logic in previous videos, we also analyzed this moment.
+By the logic of operation, we covered this in previous videos too.
 
 26
 00:04:12,400 --> 00:04:20,100
-For the Kacher this moment isn't suitable, so they're compatible, we need to remove one inversion.
+For the Kacher this isn't suitable, so for them to be compatible, we need to remove one inversion.
 
 27
 00:04:20,260 --> 00:04:35,600
-In this case, to make this moment, we connect not to pin 10 of the chip, which goes to control block output, but to pin 11.
+In this case, to do that, we connect not to pin 10 of the chip, which goes to the control block output, but to pin 11.
 
 28
 00:04:35,680 --> 00:04:46,420
-That is, we remove one inverted signal, and then we get a signal at chip input of this form.
+That is, we remove one inverted signal, and then we get a signal of this shape at the chip's input.
 
 29
 00:04:46,420 --> 00:04:55,240
-That is, we can, changing its duty cycle, set operating time of the controlled Kacher circuit.
+And by changing its duty cycle, we can set the on-time of the controlled Kacher circuit.
 
 30
 00:04:56,240 --> 00:05:07,480
-To implement this controlled Kacher circuit, we'll need two chips, one of them the known driver from my previous videos IR2113.
+To implement this controlled Kacher circuit, we'll need two chips — one of them the IR2113 driver, already familiar from previous videos.
 
 31
 00:05:08,700 --> 00:05:14,740
-This is a two-channel driver that doesn't form dead time between control signals.
+It's a two-channel driver that doesn't insert dead time between control signals.
 
 32
 00:05:14,740 --> 00:05:18,100
-And TC4093 chip.
+And a TC4093 chip.
 
 33
 00:05:20,420 --> 00:05:27,800
-This is four Schmitt triggers with 2-input AND and inverting NOT output.
+That's four Schmitt triggers with 2-input AND-NOT (inverting) outputs.
 
 34
 00:05:28,800 --> 00:05:37,400
-That is, 2-AND-NOT logic and Schmitt trigger combined in this chip.
+That is, 2-AND-NOT logic combined with Schmitt triggers in one chip.
 
 35
 00:05:38,400 --> 00:05:40,680
-Several resistors.
+A few resistors.
 
 36
 00:05:40,860 --> 00:05:53,740
-Pay special attention to resistors that create offset on the gate of P-conductivity transistor.
+Pay special attention to the resistors that create the bias on the gate of the P-channel transistor.
 
 37
 00:05:53,920 --> 00:06:03,900
-Because P-conductivity transistor needs control on gate with specifically minus voltage potential.
+Because a P-channel transistor needs a negative voltage potential on its gate to control it.
 
 38
 00:06:03,900 --> 00:06:10,340
@@ -152,87 +152,87 @@ And N-channel transistors are controlled by positive potential.
 
 39
 00:06:10,400 --> 00:06:11,380
-With them everything's simpler.
+They're simpler.
 
 40
 00:06:12,020 --> 00:06:19,100
-With P-channel one has to make a system that controls specifically with negative voltage.
+With P-channel you have to build a system that drives it with negative voltage specifically.
 
 41
 00:06:19,740 --> 00:06:30,740
-And this divider, which ultimately sets consumption and stability of this circuit's operation.
+This divider ultimately sets the consumption and stability of the circuit.
 
 42
 00:06:31,740 --> 00:06:46,960
-Divider on the gate of RF4905 transistor is selected such that the controlling negative voltage here is about 14.7 V.
+The divider on the gate of the RF4905 transistor is picked so the controlling negative voltage is about 14.7 V.
 
 43
 00:06:47,180 --> 00:06:57,080
-It like N-channel transistors can be controlled by voltage up to 20 V.
+Like N-channel transistors, P-channel can be controlled by voltages up to 20 V.
 
 44
 00:06:57,080 --> 00:07:20,120
-But most importantly, this divider is selected so that this transistor during operation increases signal time relative to the time coming from the drain of the N-channel control
+But most importantly, this divider is picked so that during operation this transistor increases the signal time relative to the time coming from the drain of the N-channel control transistor.
 
 45
 00:07:20,120 --> 00:07:20,820
-transistor.
+Control transistor.
 
 46
 00:07:21,280 --> 00:07:23,620
-This is one feature of this circuit.
+That's one feature of this circuit.
 
 47
 00:07:23,620 --> 00:07:29,660
-We'll also need fast-acting Schottky diode, in this case SR510.
+We'll also need a fast-acting Schottky diode — in this case SR510.
 
 48
 00:07:30,520 --> 00:07:36,820
-Well and actually, transistors 2SC5200 and two N-channel transistors.
+And of course, the 2SC5200 and two N-channel transistors.
 
 49
 00:07:38,060 --> 00:07:42,560
-Now we'll analyze logic of this circuit's operation.
+Now let's go through the logic of this circuit.
 
 50
 00:07:43,820 --> 00:07:50,840
-Prepared some drawing that'll ease understanding how the circuit works.
+I made a drawing that'll make it easier to understand how the circuit works.
 
 51
 00:07:53,980 --> 00:08:05,160
-By circuit, driver, ATS4093 chip and schematically shown keys that work in the circuit.
+Per the schematic: driver, ATS4093 chip, and the switches schematically shown in the circuit.
 
 52
 00:08:05,840 --> 00:08:09,800
-This is our transistor 1, transistor 2, transistor 3 and main 4.
+This is transistor 1, transistor 2, transistor 3, and the main one, 4.
 
 53
 00:08:10,100 --> 00:08:14,040
-It's not shown here, it doesn't participate in action logic, it's already power.
+It's not shown here — it doesn't participate in the action logic, it's just power.
 
 54
 00:08:15,220 --> 00:08:15,780
-Looking.
+Watching.
 
 55
 00:08:16,360 --> 00:08:22,660
-Control signal comes with some duty cycle we set with external generator.
+The control signal comes in with some duty cycle we set on an external generator.
 
 56
 00:08:23,620 --> 00:08:38,400
-It reaches directly the first driver channel, its output is from pin 1 and is sent to transistor 2.
+It hits the first driver channel directly — its output goes from pin 1 to transistor 2.
 
 57
 00:08:38,860 --> 00:08:48,280
-Transistor 2 in our case is this transistor that controls the P-channel field-effect transistor.
+Transistor 2 in our case is the one controlling the P-channel FET.
 
 58
 00:08:49,280 --> 00:08:53,820
-Now we analyze action logic.
+Now we'll analyze the action logic.
 
 59
 00:08:53,980 --> 00:09:14,660
-But for control of transistor 1, which shorts the power transistor's base to minus, we lead its control through logical elements of TC4093 chip.
+But to control transistor 1, which shorts the power transistor's base to minus, we route its control through the logic elements of the TC4093 chip.
 
 60
 00:09:14,660 --> 00:09:16,740
@@ -240,7 +240,7 @@ Why is this done?
 
 61
 00:09:16,900 --> 00:09:28,180
-To make some time delay through several inversions, we work on lag at logical elements of the chip.
+To create some time delay through several inversions — we work with the lag of the chip's logic elements.
 
 62
 00:09:28,200 --> 00:09:30,900
@@ -248,23 +248,23 @@ To shift signals in time.
 
 63
 00:09:31,660 --> 00:09:39,700
-Now analyze what happens directly at driver outputs after we fed this signal here.
+Let's analyze what happens directly at the driver outputs after we fed in this signal.
 
 64
 00:09:39,700 --> 00:09:48,120
-At pin 7 a signal forms with lag, at pin 1 signal without lag.
+At pin 7 a signal forms with lag, at pin 1 a signal without lag.
 
 65
 00:09:48,300 --> 00:10:00,580
-At pin 1 this signal that came to input leads the signal that appeared after processing by chip logical elements.
+At pin 1 the signal that arrived at the input leads the signal that appeared after processing by the chip's logic elements.
 
 66
 00:10:00,580 --> 00:10:10,940
-This is schematically shown that signal at pin 1 leads signal at pin 7 of driver chip.
+It's schematically shown that the signal at pin 1 leads the one at pin 7 of the driver chip.
 
 67
 00:10:11,680 --> 00:10:15,080
-Next signal reaches transistors.
+Next, the signal reaches the transistors.
 
 68
 00:10:16,600 --> 00:10:18,100
@@ -276,7 +276,7 @@ And what happens here?
 
 70
 00:10:19,800 --> 00:10:29,320
-Need to understand that field-effect transistors have properties, just like logical elements, of inverting signal.
+You have to understand that FETs have properties similar to logic elements — they invert the signal.
 
 71
 00:10:29,320 --> 00:10:31,440
@@ -284,95 +284,95 @@ Examining this process.
 
 72
 00:10:31,680 --> 00:10:35,520
-Such signal was on transistor 2, it inverted.
+We had this signal on transistor 2, it got inverted.
 
 73
 00:10:36,120 --> 00:10:46,480
-There it transformed, our signal hatched, at the same time signal on transistor 1 also inverted to this signal.
+It transformed — our shaded signal — at the same time the signal on transistor 1 also inverted to this signal.
 
 74
 00:10:46,480 --> 00:11:00,480
-But time between them, lag preserved, since these transistors have same marking, that is delay time on them is the same.
+But the time between them — the lag — was preserved, since these transistors are the same part number, so their delay times match.
 
 75
 00:11:01,380 --> 00:11:03,260
-Transistors of same series.
+Transistors from the same series.
 
 76
 00:11:05,120 --> 00:11:13,960
-So far we preserve lag time only due to 4093 chip elements.
+So far we preserve the lag time only thanks to the 4093 chip's elements.
 
 77
 00:11:13,960 --> 00:11:21,280
-Next, signal from transistor 2 through resistor divider reaches transistor 3.
+Next, the signal from transistor 2 goes through a resistor divider to transistor 3.
 
 78
 00:11:22,000 --> 00:11:34,380
-And resistor divider is selected so on transistor 3, labeled duty cycle grows, so it increases duty cycle of this signal.
+And the resistor divider is picked so that on transistor 3, marked "duty cycle grows," it increases the duty cycle of this signal.
 
 79
 00:11:34,380 --> 00:11:38,640
-It inverts our signal hatched.
+It inverts our shaded signal.
 
 80
 00:11:39,480 --> 00:11:45,180
-But together with that it inverts it, it also increases it in time.
+But at the same time as inverting, it also stretches it out in time.
 
 81
 00:11:45,700 --> 00:11:57,780
-While transistor 1 leaves signal inverted, but time relative to input signal, but its time doesn't change.
+While transistor 1 leaves the signal inverted, but the time relative to the input signal — its time doesn't change.
 
 82
 00:11:57,780 --> 00:12:15,200
-And if you stand at these points with dual-channel oscilloscope, it'll be clearly visible that signal at drain of transistor 3 increased its duration relative to input signal.
+And if you stand at these points with a dual-channel oscilloscope, you'll clearly see the signal at transistor 3's drain has lengthened relative to the input.
 
 83
 00:12:15,580 --> 00:12:19,100
-And also will be noticeable time shift.
+You'll also notice the time shift.
 
 84
 00:12:20,420 --> 00:12:26,040
-This is done so transistors work with overlap.
+This is done so the transistors work with overlap.
 
 85
 00:12:26,040 --> 00:12:33,040
-We artificially create in this system so-called shoot-through between two transistors.
+We artificially create what's called shoot-through between the two transistors.
 
 86
 00:12:33,600 --> 00:12:44,500
-In this case it isn't dangerous because transistors work in shoot-through mode on resistor through diode.
+In this case it isn't dangerous, because the transistors operate in shoot-through mode through a resistor and diode.
 
 87
 00:12:44,640 --> 00:12:53,460
-That is this resistance translates closure current by time into thermal energy.
+That is, this resistance converts the shoot-through current into heat over time.
 
 88
 00:12:53,460 --> 00:12:56,760
-This transistor doesn't heat too strongly.
+The transistor doesn't heat up too strongly.
 
 89
 00:12:56,840 --> 00:13:04,100
-Recommend putting 2-watt resistors in these circuits.
+I recommend putting 2-watt resistors in these chains.
 
 90
 00:13:05,000 --> 00:13:07,780
-Discharge 1-watt fit.
+Discharge resistors of 1 W are fine.
 
 91
 00:13:08,240 --> 00:13:12,220
-Well and these also 1-watt can use.
+And here you can also use 1 W resistors.
 
 92
 00:13:13,220 --> 00:13:19,300
-So, now if we move to next points.
+So, if we move to the next points.
 
 93
 00:13:19,520 --> 00:13:21,360
-Drew oscillograms here.
+Drew the oscillograms here.
 
 94
 00:13:22,140 --> 00:13:28,420
-With this disconnect transistor 1 from resistor divider.
+Disconnect transistor 1 from the resistor divider.
 
 95
 00:13:28,480 --> 00:13:30,000
@@ -380,79 +380,79 @@ We'll see this signal.
 
 96
 00:13:30,180 --> 00:13:33,180
-Its form here will be exactly this.
+Its shape here is exactly this.
 
 97
 00:13:34,460 --> 00:13:40,360
-This will be control signal coming out of drain of transistor 3.
+This is the control signal coming out of the drain of transistor 3.
 
 98
 00:13:40,360 --> 00:13:42,520
-That is from our P-channel transistor.
+That is, from our P-channel transistor.
 
 99
 00:13:43,120 --> 00:13:49,280
-It has such edge and some drop but longer in time.
+It has this edge and some drop, but it's longer in time.
 
 100
 00:13:50,280 --> 00:13:57,440
-And if now look at signal coming out of drain of transistor 1.
+And now look at the signal coming out of transistor 1's drain.
 
 101
 00:13:58,280 --> 00:14:04,240
-It has delay since we formed it here, this delay.
+It has a delay since we formed it here, this delay.
 
 102
 00:14:05,080 --> 00:14:10,160
-And its leading edge falls at this point.
+And its leading edge lands at this point.
 
 103
 00:14:10,360 --> 00:14:14,320
-That is moment happens when this transistor opens.
+That's the moment this transistor opens.
 
 104
 00:14:15,300 --> 00:14:19,260
-Some time where transistors work with overlap.
+A period of time where the transistors work with overlap.
 
 105
 00:14:19,820 --> 00:14:24,340
-And actually our signal takes this form.
+And actually our signal takes this shape.
 
 106
 00:14:25,220 --> 00:14:26,740
-This form is what we need.
+This is the shape we want.
 
 107
 00:14:27,500 --> 00:14:30,680
-Some smooth rise moment.
+A smooth rising point.
 
 108
 00:14:31,120 --> 00:14:37,120
-This transistor perceives it very well and works in key mode great.
+The transistor handles it really well and works great in switching mode.
 
 109
 00:14:37,120 --> 00:14:41,020
-That is don't pay attention to this rise edge.
+Don't worry about this rising edge.
 
 110
 00:14:41,660 --> 00:14:45,360
-Especially when system works in Kacher mode.
+Especially when the system runs in Kacher mode.
 
 111
 00:14:47,460 --> 00:14:51,460
-There it's not so important what this edge will be.
+It doesn't really matter what this edge looks like.
 
 112
 00:14:51,540 --> 00:14:58,080
-Because Kacher for some time, like any Tesla coil, ramps up to its maximum.
+Because the Kacher, like any Tesla coil, takes some time to ramp up to its max.
 
 113
 00:14:58,080 --> 00:15:02,680
-Exactly this insignificant time is enough for its ramp-up.
+Even that brief time is enough for it to ramp up.
 
 114
 00:15:02,680 --> 00:15:10,540
-And moreover, this gentle edge is observed from 40 kHz higher.
+And moreover, this gentle edge only shows up from 40 kHz and higher.
 
 115
 00:15:11,360 --> 00:15:16,960
@@ -460,119 +460,119 @@ At lower frequencies it's practically square.
 
 116
 00:15:19,200 --> 00:15:23,500
-So why did we make this overlap moment?
+So why did we add this overlap?
 
 117
 00:15:23,780 --> 00:15:28,960
-First, this overlap moment allows cutting off from circuit this resistor.
+First, the overlap lets us cut this resistor out of the circuit.
 
 118
 00:15:28,960 --> 00:15:35,020
-And sharply seat the base of our power key on minus.
+And sharply pull the base of our power switch to minus.
 
 119
 00:15:35,220 --> 00:15:39,420
-Since key is N-channel by conductivity.
+Since the switch is N-channel by conductivity.
 
 120
 00:15:40,300 --> 00:15:45,200
-Negative voltage potential on its base sharply closes it.
+A negative voltage potential on its base closes it sharply.
 
 121
 00:15:46,040 --> 00:15:50,840
-At that this key plays still very important role.
+This switch also plays a very important role.
 
 122
 00:15:51,640 --> 00:15:54,360
-It doesn't let Kacher start.
+It prevents the Kacher from starting up.
 
 123
 00:15:54,360 --> 00:16:05,720
-In sense that common minus conductor is also grounded wire.
+In the sense that the common minus conductor is also the grounding wire.
 
 124
 00:16:05,860 --> 00:16:10,040
-Since grounding connected to transistor emitter.
+Since grounding is connected to the transistor emitter.
 
 125
 00:16:11,380 --> 00:16:18,780
-And turns out moment that this transistor excludes not only this resistor.
+And so this transistor not only excludes this resistor.
 
 126
 00:16:18,780 --> 00:16:21,820
-Also seats base on minus.
+It also pulls the base to minus.
 
 127
 00:16:21,960 --> 00:16:27,070
-And also connects cold end of Tesla directly with grounding.
+And connects the cold end of the Tesla directly to grounding.
 
 128
 00:16:28,080 --> 00:16:38,220
-And subsequent any oscillations that could excite generation of this power key, they already can't reach the base.
+And any subsequent oscillations that could trigger the power switch to self-generate can't reach the base.
 
 129
 00:16:38,220 --> 00:16:45,480
-Because base junction and base-emitter junction of power key have some resistance.
+Because the base-emitter junction of the power switch has some resistance.
 
 130
 00:16:46,260 --> 00:16:53,520
-Which is bigger relative to resistance of open field-effect transistor key.
+Which is larger than the resistance of the open FET switch.
 
 131
 00:16:54,220 --> 00:17:01,100
-And so grounding turns out short-circuited with cold end of high-voltage coil.
+And so the grounding ends up short-circuited with the cold end of the high-voltage coil.
 
 132
 00:17:01,720 --> 00:17:07,880
-And no oscillations can make this transistor work in generation mode.
+And no oscillations can make this transistor work in self-generating mode.
 
 133
 00:17:09,160 --> 00:17:18,440
-Only thing that can be seen when working at high frequencies from 20 to 50 kHz.
+The only thing you can see when working at high frequencies from 20 to 50 kHz —
 
 134
 00:17:18,540 --> 00:17:29,680
-If your high-voltage Kacher coil has good Q-factor, can observe ramp-up moment.
+if your high-voltage Kacher coil has a good Q-factor, you can observe the ramp-up moment.
 
 135
 00:17:29,760 --> 00:17:33,140
-What we'll examine further in oscillograms to maximum.
+Which we'll look at further in the oscillograms — up to maximum.
 
 136
 00:17:33,160 --> 00:17:34,660
-And then decay tail.
+And then a decay tail.
 
 137
 00:17:34,660 --> 00:17:44,500
-And if modulation is close enough in time at frequencies above 20 kHz.
+And if the modulation is close enough in time at frequencies above 20 kHz.
 
 138
 00:17:44,700 --> 00:17:52,540
-Then can see such moment that decaying tail crosses with rise moment.
+Then you can see the decay tail overlap with the rising edge.
 
 139
 00:17:52,680 --> 00:18:00,300
-That is at this moment Kacher already doesn't work, but due to its Q-factor decaying oscillations still exist in it.
+At that moment the Kacher isn't running anymore, but thanks to its Q-factor, decaying oscillations still exist in it.
 
 140
 00:18:00,300 --> 00:18:07,200
-But with this circuit inclusion decaying oscillations are only free.
+But with this circuit, decaying oscillations are only the free ones.
 
 141
 00:18:07,500 --> 00:18:11,540
-Kacher at this moment already doesn't work and consumes nothing.
+The Kacher isn't running at this moment, consuming nothing.
 
 142
 00:18:12,840 --> 00:18:15,360
-Examine circuit-technical solutions.
+Let's examine the circuit solutions.
 
 143
 00:18:16,260 --> 00:18:28,700
-In this case can observe that chain through which power key is powered stayed same as previous circuit of ordinary Kacher.
+In this case you can see the chain feeding power to the power switch stayed the same as in the previous ordinary Kacher circuit.
 
 144
 00:18:28,700 --> 00:18:31,680
-It's shown on this circuit.
+It's shown on this schematic.
 
 145
 00:18:33,080 --> 00:18:34,040
@@ -580,71 +580,71 @@ This is the chain.
 
 146
 00:18:35,540 --> 00:18:38,160
-Have input terminals.
+Here are the input terminals.
 
 147
 00:18:39,500 --> 00:18:43,920
-Connection of positive and negative power pole.
+Plus and minus power connections.
 
 148
 00:18:44,780 --> 00:18:45,400
-Capacitance.
+Capacitor.
 
 149
 00:18:45,800 --> 00:18:48,880
-Next filter with counter windings.
+Then the filter with counter windings.
 
 150
 00:18:49,120 --> 00:18:50,080
-Then again capacitance.
+Then another capacitor.
 
 151
 00:18:50,220 --> 00:18:52,660
-Main accumulator capacitance electrolyte.
+The main reservoir electrolytic.
 
 152
 00:18:53,420 --> 00:18:57,120
-Well and film high-frequency capacitor.
+And the high-frequency film cap.
 
 153
 00:18:57,120 --> 00:18:59,360
-This moment we analyzed.
+We covered this part.
 
 154
 00:19:00,360 --> 00:19:08,160
-And to this board I made an additional board that controls our power key.
+And to this board I added another board that controls our power switch.
 
 155
 00:19:08,660 --> 00:19:11,180
-Key is on heat sink.
+The switch is on the heat sink.
 
 156
 00:19:12,080 --> 00:19:13,460
-Here it's clearly visible.
+You can clearly see it.
 
 157
 00:19:13,720 --> 00:19:14,560
-Here it's screwed.
+Screwed in here.
 
 158
 00:19:15,020 --> 00:19:19,840
-Heat sink for it is too luxurious.
+The heat sink for it is overkill.
 
 159
 00:19:20,140 --> 00:19:21,820
-It doesn't heat that strongly.
+It doesn't heat up that much.
 
 160
 00:19:23,620 --> 00:19:25,800
-Can place on smaller.
+You can use a smaller one.
 
 161
 00:19:25,800 --> 00:19:27,980
-So, what can we observe here.
+So, what do we see here?
 
 162
 00:19:28,340 --> 00:19:34,040
-Our chip on which time delay is performed, TC4093.
+Our chip that creates the time delay, TC4093.
 
 163
 00:19:34,880 --> 00:19:36,300
@@ -652,79 +652,79 @@ Two-channel driver.
 
 164
 00:19:37,580 --> 00:19:40,560
-Input wiring system with filters.
+Input wiring with filters.
 
 165
 00:19:41,120 --> 00:19:51,060
-And here, have main divider to base of our power key 3.3 kΩ, 2.7 kΩ.
+And here we have the main divider to the base of our power switch — 3.3 kΩ, 2.7 kΩ.
 
 166
 00:19:51,060 --> 00:19:55,420
-Schottky diode SR510.
+SR510 Schottky diode.
 
 167
 00:19:56,380 --> 00:20:02,480
-And here three transistors that are on common heat sink.
+And here three transistors on a common heat sink.
 
 168
 00:20:03,960 --> 00:20:08,300
-Transistors heat slightly so I placed them on heat sink.
+They heat up a bit, so I put them on a heat sink.
 
 169
 00:20:08,700 --> 00:20:10,440
-Can on separate smaller.
+Could be on a smaller individual one.
 
 170
 00:20:11,260 --> 00:20:15,020
-Heating not too significant but slightly present.
+Heating isn't significant but it's there.
 
 171
 00:20:15,020 --> 00:20:25,520
-And as more rugged mount system, it's soldered with breadboard itself.
+As a more solid build, it's soldered to the prototyping board itself.
 
 172
 00:20:26,280 --> 00:20:32,700
-That is, parts at minimum, system operational and power connects to inductor.
+That is, minimal parts, the system runs, and power goes to the inductor.
 
 173
 00:20:33,380 --> 00:20:43,160
-Instead of inductor, as I said earlier, can connect active load and use circuit just in key mode.
+Instead of the inductor, as I said, you can connect an active load and use the circuit just in switching mode.
 
 174
 00:20:44,160 --> 00:20:52,260
-Now connect circuit to Kacher and see its capabilities in action.
+Now we'll connect the circuit to the Kacher and see what it can do in action.
 
 175
 00:20:52,560 --> 00:20:53,560
-So, layout assembled.
+So, the rig is assembled.
 
 176
 00:20:54,220 --> 00:20:59,340
-Connected grounding because grounding plays important role for this system.
+Grounding is connected, because grounding plays an important role for this system.
 
 177
 00:21:00,880 --> 00:21:02,140
-Connected power.
+Power connected.
 
 178
 00:21:02,460 --> 00:21:07,550
-Power from two separate lab power sources.
+Power from two separate lab supplies.
 
 179
 00:21:07,550 --> 00:21:10,650
-One has value 15 V.
+One is set at 15 V.
 
 180
 00:21:10,810 --> 00:21:20,010
-Now visible logic part consumption without signal applied to input.
+Right now you can see logic-part consumption with no signal applied at the input.
 
 181
 00:21:20,890 --> 00:21:28,890
-Here will change supply voltage with this trim resistor and observe consumption.
+Here we'll change the supply voltage with this trim pot and watch consumption.
 
 182
 00:21:30,390 --> 00:21:36,830
-Signal will feed directly from lab signal generator.
+The signal will come directly from a lab signal generator.
 
 183
 00:21:36,830 --> 00:21:40,150
@@ -732,163 +732,163 @@ It's now in pulse mode.
 
 184
 00:21:40,630 --> 00:21:44,690
-Pulse amplitude will be 10 V.
+Pulse amplitude is 10 V.
 
 185
 00:21:45,770 --> 00:21:53,470
-In positive half-period from duty cycle start control 10% of signal.
+With 10% duty cycle on the positive half-period.
 
 186
 00:21:55,630 --> 00:21:59,250
-Oscillograms will observe with oscilloscope.
+We'll watch the oscillograms on the oscilloscope.
 
 187
 00:22:00,250 --> 00:22:05,670
-Main power of power key applied at this point.
+Main power for the power switch is applied at this point.
 
 188
 00:22:06,110 --> 00:22:07,810
-And then goes to circuit.
+And then goes to the circuit.
 
 189
 00:22:08,510 --> 00:22:10,370
-Circuit started in operation.
+Circuit is running.
 
 190
 00:22:10,610 --> 00:22:17,250
-Stable circuit operation observed at control signal with 17% duty cycle.
+Stable operation kicks in at a 17% duty cycle on the control signal.
 
 191
 00:22:18,070 --> 00:22:23,950
-Now in this case frequency 10 kHz for convenience of signal observation.
+Now in this case 10 kHz for ease of viewing the signal.
 
 192
 00:22:23,950 --> 00:22:31,290
-See system doesn't consume too strongly the logic part.
+The logic side doesn't draw much.
 
 193
 00:22:31,510 --> 00:22:39,430
-And here we have supply voltage and current consumption at which this system entered stable generation.
+And here's the supply voltage and current consumption at which the system entered stable oscillation.
 
 194
 00:22:40,730 --> 00:22:46,210
-Now can observe field isn't too big around system.
+Now you can see the field around the system isn't too big.
 
 195
 00:22:47,150 --> 00:22:52,850
-That is when touching with neon bulb it lights up.
+When you touch a neon bulb to it, it lights up.
 
 196
 00:22:52,850 --> 00:22:59,190
-Well and oscilloscope probe is nearby and can observe oscillogram.
+The oscilloscope probe is nearby and we can watch the oscillogram.
 
 197
 00:23:01,570 --> 00:23:08,350
-How Kacher now works at such supply voltage.
+How the Kacher runs at this supply voltage.
 
 198
 00:23:08,790 --> 00:23:11,990
-See system Q-factor very high.
+You see the Q-factor is very high.
 
 199
 00:23:13,030 --> 00:23:20,570
-Also can see additional wave that performs some amplitude modulation in system.
+You can also see the additional wave that does some amplitude modulation in the system.
 
 200
 00:23:21,570 --> 00:23:25,690
-And will experiment interesting moments.
+And we'll experiment with interesting things.
 
 201
 00:23:25,750 --> 00:23:31,870
-Here if bring hand close to high-voltage coil, see how system reacts.
+If you bring a hand close to the high-voltage coil, watch how the system reacts.
 
 202
 00:23:32,930 --> 00:23:41,510
-For full test now raise supply voltage of our system.
+For a full test, now we raise the supply voltage of our system.
 
 203
 00:23:43,010 --> 00:23:47,330
-For example, well, confidently works.
+For example — yeah, runs confidently.
 
 204
 00:23:48,290 --> 00:23:50,270
-Feed 55 V.
+Feeding 55 V.
 
 205
 00:23:51,930 --> 00:23:54,890
-See, current consumption slightly grew.
+The current draw went up a bit.
 
 206
 00:23:56,010 --> 00:23:58,070
-Signal naturally off the chart.
+The signal is naturally off the chart.
 
 207
 00:24:02,140 --> 00:24:10,100
-And already audible that little spark appeared on the end.
+And you can already hear a little spark at the antenna tip.
 
 208
 00:24:10,100 --> 00:24:16,400
-Now hear sound at frequency 10 Hz.
+Now you can hear the sound at a 10 Hz rate.
 
 209
 00:24:18,620 --> 00:24:23,320
-Try increase duty cycle of control pulse.
+Try increasing the duty cycle of the control pulse.
 
 210
 00:24:27,130 --> 00:24:31,090
-Increasing duty cycle, observing oscillogram change.
+Increasing the duty cycle, watching the oscillogram change.
 
 211
 00:24:32,650 --> 00:24:39,250
-Already visible, with duty cycle system consumption grows.
+Now you can see consumption growing with the duty cycle.
 
 212
 00:24:39,250 --> 00:24:51,430
-Visible little spark became powerful, stretches to 1.2-1.5 cm.
+You can see the little spark has become powerful — stretching to 1.2–1.5 cm.
 
 213
 00:24:53,030 --> 00:24:59,750
-See oscillogram, operating time grows in our system.
+Watch the oscillogram — the operating time in our system is growing.
 
 214
 00:25:00,870 --> 00:25:05,170
-Raise control pulse duty cycle further.
+Raise the control pulse duty cycle further.
 
 215
 00:25:07,650 --> 00:25:15,470
-Now will set 40% control pulse duty cycle.
+Now we'll set the control pulse to 40% duty cycle.
 
 216
 00:25:18,430 --> 00:25:20,930
-Oscillogram has this form.
+The oscillogram has this shape.
 
 217
 00:25:21,470 --> 00:25:27,610
-But us such mode on system isn't interesting anymore because duty cycle is too big.
+But this mode isn't useful for our system anymore because the duty cycle is too big.
 
 218
 00:25:28,370 --> 00:25:32,770
-Visually see little spark became very powerful.
+Visually you can see the little spark has gotten very powerful.
 
 219
 00:25:32,770 --> 00:25:37,790
-See neon lamp glow at big distance.
+You can see the neon bulb glowing at a big distance.
 
 220
 00:25:39,250 --> 00:25:42,910
-And it burns very well at this frequency.
+And it lights up very well at this frequency.
 
 221
 00:25:44,210 --> 00:25:53,090
-By the way, from this circuit can make singing Tesla that'll play MIDI file.
+By the way, you can build a singing Tesla out of this circuit that plays a MIDI file.
 
 222
 00:25:54,330 --> 00:25:58,070
-Now show on example of frequency change.
+I'll show this now by changing the frequency.
 
 223
 00:25:58,310 --> 00:25:59,410
-Can listen to sound.
+You can hear the sound.
 
 224
 00:26:02,770 --> 00:26:05,930
@@ -896,15 +896,15 @@ Now we have 3 kHz.
 
 225
 00:26:06,370 --> 00:26:14,150
-And hear sound that emits our little spark of system.
+And you can hear the sound the little spark of the system emits.
 
 226
 00:26:17,110 --> 00:26:21,470
-See, at 3 kHz happens.
+You see — it works at 3 kHz.
 
 227
 00:26:22,890 --> 00:26:24,610
-Can move.
+We can shift.
 
 228
 00:26:26,870 --> 00:26:28,950
@@ -916,63 +916,63 @@ Tonal sound.
 
 230
 00:26:33,670 --> 00:26:36,150
-Change frequency.
+Changing the frequency.
 
 231
 00:26:36,830 --> 00:26:40,690
-And it goes to inaudible range.
+And it goes into the inaudible range.
 
 232
 00:26:42,390 --> 00:26:46,410
-Now 25 kHz control.
+Now 25 kHz control frequency.
 
 233
 00:26:47,790 --> 00:26:52,670
-And see Kacher modulation confidently performs.
+And you can see the Kacher confidently modulating.
 
 234
 00:26:53,710 --> 00:26:59,030
-Lower duty cycle to 30%.
+Drop the duty cycle to 30%.
 
 235
 00:26:59,030 --> 00:27:01,950
-System stably works.
+The system runs stably.
 
 236
 00:27:03,090 --> 00:27:05,550
-Little spark quite powerful.
+Little spark is pretty powerful.
 
 237
 00:27:07,670 --> 00:27:11,470
-At 30% at 25 kHz frequency.
+At 30%, at 25 kHz frequency.
 
 238
 00:27:13,170 --> 00:27:17,070
-Have this voltage and current consumption.
+We have this voltage and current draw.
 
 239
 00:27:24,460 --> 00:27:28,260
-Set 20% duty cycle.
+Set the duty cycle to 20%.
 
 240
 00:27:28,940 --> 00:27:31,560
-Consumption immediately noticeably fell.
+Consumption immediately dropped noticeably.
 
 241
 00:27:32,560 --> 00:27:37,060
-Generally system will work somewhere at such consumption.
+Generally the system will run somewhere around this consumption.
 
 242
 00:27:37,180 --> 00:27:41,120
-23-25% control pulse.
+23–25% control pulse.
 
 243
 00:27:44,000 --> 00:27:46,600
-Visible its full consumption.
+You can see its full consumption.
 
 244
 00:27:51,170 --> 00:27:53,810
-Now look at frequency capabilities.
+Now let's look at frequency capabilities.
 
 245
 00:27:56,870 --> 00:27:58,810
@@ -988,7 +988,7 @@ Now 25 kHz.
 
 248
 00:28:09,090 --> 00:28:14,130
-See modulation system is performing.
+You can see the system modulating.
 
 249
 00:28:15,930 --> 00:28:18,510
@@ -996,31 +996,31 @@ See modulation system is performing.
 
 250
 00:28:21,790 --> 00:28:31,530
-System operation stops at 55% because need to add control pulse duty cycle.
+Operation stops at 55% because we need to add control pulse duty cycle.
 
 251
 00:28:32,410 --> 00:28:35,570
-Added duty cycle to 35%.
+Raised the duty cycle to 35%.
 
 252
 00:28:35,570 --> 00:28:39,130
-And system worked again.
+And the system started again.
 
 253
 00:28:39,930 --> 00:28:42,970
-Regulation range very wide.
+Wide adjustment range.
 
 254
 00:28:50,410 --> 00:28:55,330
-Play once more in musical Tesla mode.
+Playing it in musical Tesla mode again.
 
 255
 00:29:01,690 --> 00:29:03,610
-Very interesting thing.
+Really interesting thing.
 
 256
 00:29:04,440 --> 00:29:07,470
-Now can move to Hz.
+Now we can go into Hz.
 
 257
 00:29:11,450 --> 00:29:12,670
@@ -1028,7 +1028,7 @@ Now can move to Hz.
 
 258
 00:29:13,670 --> 00:29:17,030
-Can do 50 Hz for modulating.
+You can do 50 Hz for modulation.
 
 259
 00:29:17,770 --> 00:29:19,110
@@ -1036,7 +1036,7 @@ Can do 50 Hz for modulating.
 
 260
 00:29:19,390 --> 00:29:21,090
-Now show oscillogram.
+Now I'll show the oscillogram.
 
 261
 00:29:23,190 --> 00:29:27,530
@@ -1044,11 +1044,11 @@ There are bursts.
 
 262
 00:29:29,070 --> 00:29:35,190
-See, has such form.
+You see — this shape.
 
 263
 00:29:37,450 --> 00:29:39,330
-Lowering duty cycle.
+Lowering the duty cycle.
 
 264
 00:29:41,210 --> 00:29:42,450
@@ -1056,23 +1056,23 @@ Lowering duty cycle.
 
 265
 00:29:42,450 --> 00:29:48,670
-Clearly audible transformer sound.
+You can clearly hear the transformer sound.
 
 266
 00:29:49,190 --> 00:29:50,610
-Same as it works.
+Same as it runs.
 
 267
 00:29:51,610 --> 00:29:59,030
-Starts breaking through to metal object at frequency 50 Hz.
+It starts arcing to the metal object at 50 Hz.
 
 268
 00:30:00,550 --> 00:30:07,310
-Circuit even for experiments very good.
+The circuit is really good even for experiments.
 
 269
 00:30:09,550 --> 00:30:15,950
-For those who want to get familiar and assemble something like this.
+For those who want to get familiar and build something like this.
 
 270
 00:30:17,270 --> 00:30:19,750
@@ -1080,7 +1080,7 @@ Interesting even just for demo.
 
 271
 00:30:45,800 --> 00:30:48,680
-This sound now from little spark.
+This sound is coming from the little spark.
 
 272
 00:30:59,080 --> 00:31:00,980
@@ -1088,11 +1088,11 @@ Enough playing.
 
 273
 00:31:01,360 --> 00:31:03,280
-You'll assemble it, play.
+You'll assemble it and play with it.
 
 274
 00:31:03,780 --> 00:31:05,460
-Thing is quite cool.
+The thing is pretty cool.
 
 275
 00:31:07,460 --> 00:31:09,820
@@ -1100,107 +1100,107 @@ Turn off pulse delivery.
 
 276
 00:31:11,160 --> 00:31:13,080
-Channel turned off.
+Channel off.
 
 277
 00:31:14,720 --> 00:31:18,720
-Only logic part consumption remained.
+Only the logic-side consumption left.
 
 278
 00:31:19,300 --> 00:31:23,600
-And see power consumption.
+And you can see the power consumption.
 
 279
 00:31:24,600 --> 00:31:25,700
-Amperage at zero.
+Amps at zero.
 
 280
 00:31:25,700 --> 00:31:29,000
-Move specifically to our tasks.
+Moving on to our specific tasks.
 
 281
 00:31:30,300 --> 00:31:35,740
-Circuit operation maintained when connecting fairly big antenna.
+Operation is maintained when connecting a fairly big antenna.
 
 282
 00:31:36,300 --> 00:31:45,760
-Also we can observe that it sparks with same modulation frequency on the antenna itself.
+We can also see that it sparks at the same modulation frequency on the antenna itself.
 
 283
 00:31:46,540 --> 00:31:50,600
-That is antenna itself sparks to metal object.
+The antenna sparks to a metal object.
 
 284
 00:31:51,580 --> 00:31:57,760
-When connecting antenna we observe big diameter of electric field.
+When the antenna is connected we observe a big diameter of the electric field.
 
 285
 00:31:57,900 --> 00:32:06,760
-That is neon bulb reacts at quite big distance from consumption with antenna.
+The neon bulb reacts at a pretty big distance from this system with the antenna.
 
 286
 00:32:08,580 --> 00:32:13,940
-And now wanted to note such important feature of Kacher circuit.
+And now I wanted to point out an important feature of the Kacher circuit.
 
 287
 00:32:14,140 --> 00:32:17,500
-Now expanded to carrier signal.
+I expanded to the carrier signal.
 
 288
 00:32:17,500 --> 00:32:20,880
-See clear sine.
+You see a clean sine wave.
 
 289
 00:32:22,820 --> 00:32:24,160
-Bringing hand.
+Bringing in a hand.
 
 290
 00:32:24,460 --> 00:32:26,800
-See frequency drifts for us.
+You see the frequency drifts.
 
 291
 00:32:28,760 --> 00:32:30,700
-Now on oscilloscope.
+On the oscilloscope.
 
 292
 00:32:31,620 --> 00:32:38,660
-Kacher is a circuit that's autogenerator with feedback to transistor base.
+The Kacher is a self-oscillator circuit with feedback to the transistor base.
 
 293
 00:32:38,660 --> 00:32:48,100
-And in our system it's useful that when this antenna is directly above system inductor.
+And in our system, it's useful that when the antenna is right above the system's inductor.
 
 294
 00:32:48,400 --> 00:32:53,160
-Inductor magnetic field creates pickup on antenna.
+The inductor's magnetic field creates a pickup on the antenna.
 
 295
 00:32:54,100 --> 00:33:02,520
-And this voltage potential sent through high-voltage coil to base of our power transistor.
+And that voltage potential goes through the high-voltage coil to the base of our power transistor.
 
 296
 00:33:02,520 --> 00:33:11,580
-This way Kacher has one irreplaceable plus relative to controlled Tesla.
+This way the Kacher has one irreplaceable advantage over the controlled Tesla.
 
 297
 00:33:11,840 --> 00:33:18,840
-Exactly for moment for those who'll work on so-called TL494 chip glitch.
+Specifically for the so-called TL494 chip-glitch crowd.
 
 298
 00:33:19,900 --> 00:33:27,020
-This effect that now done feedback when bringing hand close.
+This effect — the feedback when you bring a hand close.
 
 299
 00:33:27,240 --> 00:33:30,800
-It also works from pickups from inductor.
+It also works with pickup from the inductor.
 
 300
 00:33:30,800 --> 00:33:40,520
-And turns out such moment that Kacher allows easier phase tuning between frequencies by low part.
+And it turns out the Kacher makes it easier to phase-tune between the low-side frequencies.
 
 301
 00:33:42,100 --> 00:33:46,480
-What happens in Push-Pull inductor circuit.
+What happens in the push-pull inductor circuit.
 
 302
 00:33:46,980 --> 00:33:51,060
@@ -1208,88 +1208,88 @@ And our high-voltage, high-frequency system.
 
 303
 00:33:52,140 --> 00:33:53,840
-Exactly because this is autogenerator.
+Exactly because it's a self-oscillator.
 
 304
 00:33:55,000 --> 00:33:58,140
-Controlled Tesla unfortunately doesn't allow this.
+Unfortunately, the controlled Tesla doesn't let you do this.
 
 305
 00:33:58,140 --> 00:34:00,880
-And there this moment has to be corrected manually.
+You have to correct that moment manually.
 
 306
 00:34:01,040 --> 00:34:09,140
-So at other equal conditions, when working on Kacher system startup is eased.
+So all other things being equal, working on the Kacher makes system startup easier.
 
 307
 00:34:11,560 --> 00:34:21,920
-Also moment, Kacher very visible that it rings.
+Another thing — you can clearly see the Kacher rings.
 
 308
 00:34:22,760 --> 00:34:27,340
-That is now observed signal reached maximum.
+The signal you see now reached maximum.
 
 309
 00:34:27,580 --> 00:34:33,980
-Even if we now change control signal duty cycle, say to 20%.
+Even if we now change the control signal duty cycle, say to 20%.
 
 310
 00:34:34,600 --> 00:34:42,700
-Also see when system has good Q-factor, tail of this ring quite big.
+You also see that when the system has good Q-factor, the tail of this ring is pretty big.
 
 311
 00:34:43,380 --> 00:34:45,460
-How to get rid of it in system?
+How do we get rid of it in the system?
 
 312
 00:34:46,460 --> 00:34:54,180
-That is, we see we have some ramp-up moment to maximum and then drop.
+We see we have a ramp-up to maximum and then a drop.
 
 313
 00:34:55,300 --> 00:35:03,000
-To get rid of this tail, can just apply ordinary schematic solution.
+To get rid of this tail, you can just apply a common circuit solution.
 
 314
 00:35:03,080 --> 00:35:09,240
-Here from antenna tip where to metal object little spark observed.
+Here at the antenna tip, where the little spark to the metal object is.
 
 315
 00:35:10,120 --> 00:35:12,440
-Make spark gap to grounding.
+Add a spark gap to ground.
 
 316
 00:35:13,300 --> 00:35:22,240
-And by fitting distance between electrodes of spark gap achieve such moment.
+And by adjusting the gap distance, achieve this.
 
 317
 00:35:22,260 --> 00:35:24,280
-Look, oscillogram.
+Look at the oscillogram.
 
 318
 00:35:24,760 --> 00:35:31,440
-Visible, bringing metal object close and ring disappears.
+You can see — bringing the metal object close and the ring disappears.
 
 319
 00:35:32,780 --> 00:35:36,400
-Ring goes away in our system.
+The ring goes away in our system.
 
 320
 00:35:37,400 --> 00:35:45,060
-Now I'll try more precisely tune so you see this moment.
+Now I'll try to tune more precisely so you can see this moment.
 
 321
 00:35:54,250 --> 00:35:57,050
-Clearly visible ring cuts.
+You can clearly see the ring being cut.
 
 322
 00:35:58,090 --> 00:36:03,430
-And here with spark gap, this whole tail, can very well cut.
+And here with the spark gap, you can really effectively cut this whole tail.
 
 323
 00:36:03,430 --> 00:36:12,750
-By the way, spark gap will also regulate final amplitude on our high-voltage terminal.
+By the way, the spark gap will also regulate the final amplitude at the high-voltage terminal.
 
 324
 00:36:15,210 --> 00:36:18,850
-Good luck everyone in experiments, all the best, continue.
+Good luck to everyone with your experiments — all the best, keep going.
