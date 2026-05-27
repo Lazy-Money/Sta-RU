@@ -5,11 +5,11 @@
 | 3-EN.srt | OK | 1 | https://www.youtube.com/watch?v=GMcglx5I-O4 |
 | 4-EN.srt | OK | 1 | https://www.youtube.com/watch?v=tL93CQ6QnYI |
 | 5-EN.srt | OK | 1 | https://www.youtube.com/watch?v=EwVWW89JMEM |
-| 6-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=2ylifwWtjlY |
-| 7-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=lR3WPeITlsQ |
-| 8-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=qqQCNej_m3Q |
-| 9-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=wUVdeT9pxqs |
-| 10-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=txTNtCPtFII |
+| 6-EN.srt | OK | 1 | https://www.youtube.com/watch?v=2ylifwWtjlY |
+| 7-EN.srt | OK | 1 | https://www.youtube.com/watch?v=lR3WPeITlsQ |
+| 8-EN.srt | OK | to check | https://www.youtube.com/watch?v=qqQCNej_m3Q |
+| 9-EN.srt | OK | 1 | https://www.youtube.com/watch?v=wUVdeT9pxqs |
+| 10-EN.srt | OK | 1 | https://www.youtube.com/watch?v=txTNtCPtFII |
 | 11-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=PrrcnQz3sVk |
 | 12-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=BuBYDSdk72s |
 | 13-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=v7thzqWdNM0 |
