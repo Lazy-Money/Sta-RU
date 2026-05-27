@@ -1,50 +1,50 @@
 1
 00:00:00,620 --> 00:00:02,060
-Greetings everyone.
+Hi everyone.
 
 2
 00:00:03,140 --> 00:00:11,240
-Today I'll tell about the methodology for determining the push-pull operating frequency for this coil.
+Today I'll walk through the method for finding the push-pull operating frequency for this coil.
 
 3
 00:00:11,400 --> 00:00:19,360
-So wave processes happen in it, heating of this coil happens without load presence.
+So that wave processes happen inside it, and the coil heats up without a load.
 
 4
 00:00:20,580 --> 00:00:23,240
-That is, so current really ramps up in the system.
+That is, so the current really ramps up in the system.
 
 5
 00:00:23,620 --> 00:00:32,600
-Now we'll test it and see at what frequencies we always work, and what frequencies are actually needed.
+Now we'll test it and see which frequencies people always end up using versus which ones are actually needed.
 
 6
 00:00:33,380 --> 00:00:45,020
-For this we need this auxiliary instrument, ferrite ring mark 1500-2000, can be higher, doesn't matter.
+For this we need this helper tool — a ferrite ring, mark 1500–2000, can be higher, doesn't matter.
 
 7
 00:00:45,360 --> 00:00:50,700
-Wind 8-10 turns, resistance not needed, we don't track exact phasing.
+Wind 8–10 turns; no resistor needed, we're not tracking exact phasing.
 
 8
 00:00:51,460 --> 00:00:59,460
-We just need to know current amplitude in this system.
+We just need to know the current amplitude in the system.
 
 9
 00:01:00,160 --> 00:01:01,800
-Meaning of how this works.
+Here's how it works.
 
 10
 00:01:02,000 --> 00:01:17,360
-When electric current moves through a conductor, or charges are in place but spin rotation happens, around the conductor magnetic field forms.
+When electric current moves through a conductor, or charges are stationary but spin rotation is happening, a magnetic field forms around the conductor.
 
 11
 00:01:17,360 --> 00:01:30,300
-When this ring is put on, magnetic field is captured and on these turns converts it to voltage potential, which we track on oscilloscope.
+When you put this ring over the conductor, it captures the magnetic field and the turns convert it into a voltage we can read on the oscilloscope.
 
 12
 00:01:31,260 --> 00:01:48,660
-To track current movement in this coil, we'll need coil leads, short between each other physically, galvanically, and already see when this coil works on half-wave.
+To track current movement in this coil, we need to short the coil leads to each other physically — galvanically — and that lets us see when the coil is working in half-wave mode.
 
 13
 00:01:50,620 --> 00:01:51,880
@@ -52,43 +52,43 @@ Where do we start?
 
 14
 00:01:52,940 --> 00:01:56,780
-Put ring on any of leads, short,
+Put the ring over one of the leads, with the leads shorted,
 
 15
 00:01:59,870 --> 00:02:05,110
-make good contact and connect oscilloscope.
+make good contact and hook up the oscilloscope.
 
 16
 00:02:07,370 --> 00:02:08,870
-Phasing isn't important.
+Phasing doesn't matter.
 
 17
 00:02:12,360 --> 00:02:14,620
-Common and probe itself.
+Common and the probe itself.
 
 18
 00:02:16,220 --> 00:02:22,880
-From instruments we'll also need signal generator and oscilloscope.
+For instruments we'll also need a signal generator and an oscilloscope.
 
 19
 00:02:23,820 --> 00:02:30,820
-Signal generator output connects directly to coil inductor itself.
+The signal generator output hooks directly to the coil's inductor.
 
 20
 00:02:31,700 --> 00:02:35,760
-And next will look what's happening on instruments.
+And then we'll see what shows up on the instruments.
 
 21
 00:02:37,220 --> 00:02:39,260
-Now we see,
+Now we see —
 
 22
 00:02:42,880 --> 00:02:47,540
-feed 5 kHz for starters.
+let's feed in 5 kHz to start.
 
 23
 00:02:48,080 --> 00:02:50,640
-Feed sine signal,
+Feed a sine wave,
 
 24
 00:02:53,900 --> 00:02:55,780
@@ -96,15 +96,15 @@ amplitude on.
 
 25
 00:02:56,260 --> 00:03:00,340
-Range our peak-to-peak amplitude is 10 volts.
+Our peak-to-peak amplitude is 10 volts.
 
 26
 00:03:02,640 --> 00:03:09,060
-And now we'll sweep frequency and observe oscillogram, what's happening.
+And now we'll sweep the frequency and watch what happens on the oscillogram.
 
 27
 00:03:12,600 --> 00:03:26,940
-Now passing usual operating frequency, where from about 10 to 45-50 kHz.
+Passing through the usual operating range — somewhere between 10 and 45–50 kHz.
 
 28
 00:03:27,840 --> 00:03:32,320
@@ -112,15 +112,15 @@ Where practically everyone works.
 
 29
 00:03:32,420 --> 00:03:44,380
-And we see that being in 25 kHz zone makes no sense because current amplitude is minimal at this frequency.
+And we see that staying around 25 kHz makes no sense, because the current amplitude is at its minimum at that frequency.
 
 30
 00:03:45,540 --> 00:03:46,300
-Going further.
+Moving on.
 
 31
 00:03:49,400 --> 00:03:54,740
-Passed 60 kHz and already see amplitude starts to grow.
+Past 60 kHz, and the amplitude is starting to grow.
 
 32
 00:03:57,220 --> 00:03:58,120
@@ -128,39 +128,39 @@ Looking further.
 
 33
 00:04:00,500 --> 00:04:06,260
-Look what range passed.
+Look at the range we've passed through.
 
 34
 00:04:06,600 --> 00:04:17,860
-Amplitude now 0.2 volts per division.
+Amplitude is now at 0.2 V per division.
 
 35
 00:04:20,500 --> 00:04:23,320
-Nothing remarkable visible yet.
+Nothing remarkable yet.
 
 36
 00:04:24,340 --> 00:04:25,420
-Going further.
+Moving on.
 
 37
 00:04:34,060 --> 00:04:36,740
-Amplitude doesn't change much.
+Amplitude isn't changing much.
 
 38
 00:04:37,720 --> 00:04:43,040
-Can speed up process not by 1 kHz but by 10 kHz.
+We can speed things up — not 1 kHz at a time, 10 kHz.
 
 39
 00:04:43,380 --> 00:04:51,520
-Look, already went to 500 kHz and amplitude didn't shift significantly.
+Look — already at 500 kHz and the amplitude hasn't shifted significantly.
 
 40
 00:04:58,300 --> 00:05:08,340
-And only starting from 800 kHz we see some jump in amplitude growth.
+And only starting from 800 kHz do we see a jump in amplitude.
 
 41
 00:05:10,700 --> 00:05:13,720
-Amplitude grows, grows.
+Amplitude keeps climbing.
 
 42
 00:05:15,260 --> 00:05:20,020
@@ -168,15 +168,15 @@ Reached maximum around 910 kHz.
 
 43
 00:05:21,860 --> 00:05:25,480
-Accordingly push-pull can't work at such frequency.
+A push-pull obviously can't work at that frequency.
 
 44
 00:05:26,820 --> 00:05:31,980
-We have one variant — work in multiplicity to this frequency.
+We have one option — work at a sub-multiple of this frequency.
 
 45
 00:05:32,120 --> 00:05:37,560
-Say, if here 910 kHz, we can work at 91 kHz.
+If it's 910 kHz here, we can work at 91 kHz.
 
 46
 00:05:38,420 --> 00:05:43,500
@@ -184,27 +184,27 @@ Now we'll check what else might be interesting at this frequency.
 
 47
 00:05:49,750 --> 00:06:04,610
-If we lay hand on coil at this frequency, we can check how for this frequency surrounding objects affect this coil.
+If we put a hand on the coil at this frequency, we can check how surrounding objects affect it.
 
 48
 00:06:05,670 --> 00:06:09,330
-We're interested in moment so frequencies are stable.
+We want frequencies that are stable.
 
 49
 00:06:10,590 --> 00:06:11,570
-Looking.
+Watching.
 
 50
 00:06:16,340 --> 00:06:21,040
-Now I'll lay hand on coil and we'll observe amplitude.
+Now I'll put my hand on the coil and we'll see the amplitude.
 
 51
 00:06:23,740 --> 00:06:27,520
-Laid hand, visible amplitude grows.
+Put my hand on — you can see the amplitude grows.
 
 52
 00:06:27,720 --> 00:06:31,460
-Lay here in reverse turns zone.
+Put it here in the reverse-turn zone.
 
 53
 00:06:32,820 --> 00:06:34,480
@@ -212,7 +212,7 @@ Amplitude grows.
 
 54
 00:06:36,400 --> 00:06:38,900
-Now pass further by frequency.
+Now let's keep sweeping the frequency.
 
 55
 00:06:39,900 --> 00:06:42,000
@@ -220,7 +220,7 @@ Now pass further by frequency.
 
 56
 00:06:42,080 --> 00:06:43,420
-Amplitude grows too.
+Amplitude grows here too.
 
 57
 00:06:44,660 --> 00:06:46,600
@@ -228,7 +228,7 @@ Amplitude grows too.
 
 58
 00:06:46,820 --> 00:06:48,500
-Also small growth.
+Small growth too.
 
 59
 00:06:50,140 --> 00:06:52,940
@@ -236,75 +236,75 @@ Also small growth.
 
 60
 00:06:52,940 --> 00:06:54,700
-Growth minimum.
+Growth is minimal.
 
 61
 00:06:55,620 --> 00:07:07,500
-Window of possibilities comes out somewhere from 850 to 1100 kHz operation.
+Our window of opportunity comes out somewhere from 850 to 1100 kHz.
 
 62
 00:07:07,500 --> 00:07:12,480
-We determined first range, and now can record it.
+We've found our first range, and now we can write it down.
 
 63
 00:07:14,520 --> 00:07:15,480
-Recording.
+Writing it down.
 
 64
 00:07:23,820 --> 00:07:28,740
-830-1100 kHz.
+830–1100 kHz.
 
 65
 00:07:29,300 --> 00:07:35,360
-This is our window in multiplicity to which we'll try to work on push-pull.
+That's our window for the sub-multiple that we'll try to run the push-pull at.
 
 66
 00:07:36,360 --> 00:07:51,620
-Next will determine if there's some high-frequency component for current in this system at which current growth will be observed even higher.
+Next we'll see whether there's some higher-frequency current component in the system where current growth will be even greater.
 
 67
 00:07:52,260 --> 00:07:53,380
-Going by frequency.
+Sweeping by frequency.
 
 68
 00:08:01,340 --> 00:08:07,080
-Passing range and no special amplitude growth observed.
+Sweeping through the range and no significant amplitude growth showing up.
 
 69
 00:08:09,000 --> 00:08:12,260
-Looking for moment when there'll be clear jump.
+Looking for the next clear jump.
 
 70
 00:08:17,820 --> 00:08:21,360
-Step 10 kHz, quite acceptable.
+10 kHz step — that's acceptable.
 
 71
 00:08:22,620 --> 00:08:26,700
-At 3800 even amplitude drop.
+At 3800 the amplitude actually drops.
 
 72
 00:08:29,060 --> 00:08:33,060
-Here, look, fixed moment.
+Here — we caught it.
 
 73
 00:08:34,060 --> 00:08:44,160
-Starting at 3910 kHz we have sharp amplitude rise.
+Starting at 3910 kHz we have a sharp amplitude rise.
 
 74
 00:08:45,680 --> 00:08:47,500
-Now searching more smoothly.
+Now we sweep more carefully.
 
 75
 00:08:50,280 --> 00:08:52,060
-Growing, growing.
+Climbing, climbing.
 
 76
 00:08:53,620 --> 00:08:59,080
-Good growth, can even set sweep to half-volt per division.
+Good growth — can even switch the sweep to half a volt per division.
 
 77
 00:09:00,980 --> 00:09:03,720
-Also see growth.
+Still seeing growth.
 
 78
 00:09:05,940 --> 00:09:08,320
@@ -312,151 +312,151 @@ Also see growth.
 
 79
 00:09:13,850 --> 00:09:23,590
-And here, drop starts approximately at 4650 kHz.
+And here the drop starts at about 4650 kHz.
 
 80
 00:09:25,170 --> 00:09:31,570
-Maximum amplitude 4620-630.
+Maximum amplitude at 4620–630.
 
 81
 00:09:32,570 --> 00:09:36,910
-This is our second maximum.
+That's our second maximum.
 
 82
 00:09:37,250 --> 00:09:38,550
-Recording it.
+Writing it down.
 
 83
 00:09:47,890 --> 00:09:52,770
-4620-4630 kHz.
+4620–4630 kHz.
 
 84
 00:09:54,530 --> 00:09:58,050
-Look at hand influence at this frequency.
+Let's see the effect of putting a hand near the coil at this frequency.
 
 85
 00:09:58,050 --> 00:10:03,330
-Usually at such high frequencies there'll already be observed losses.
+At such high frequencies, losses usually show up.
 
 86
 00:10:06,170 --> 00:10:11,870
-Visible these frequencies aren't so stable, but amplitude is maximum.
+These frequencies aren't as stable, but the amplitude is at its peak.
 
 87
 00:10:12,390 --> 00:10:13,730
-This is normal process.
+That's a normal process.
 
 88
 00:10:15,610 --> 00:10:18,890
-Let's see, maybe we can find something further.
+Let's see — maybe we can find something else.
 
 89
 00:10:23,180 --> 00:10:25,380
-Next amplitude decrease.
+Next, amplitude decrease.
 
 90
 00:10:32,830 --> 00:10:36,590
-Run more, step of 100 kHz.
+Going faster — 100 kHz steps.
 
 91
 00:10:37,290 --> 00:10:39,510
-Here some maximum still small.
+There's another small peak here.
 
 92
 00:10:40,430 --> 00:10:42,690
-Found at 7600.
+Found one at 7600.
 
 93
 00:10:43,930 --> 00:10:47,790
-Frequencies already high, this doesn't interest us anymore.
+These frequencies are too high to be useful to us anymore.
 
 94
 00:10:47,950 --> 00:10:52,970
-And further at 11 MHz.
+And further out at 11 MHz.
 
 95
 00:10:54,130 --> 00:10:58,770
-Such high frequency in our systems already unreachable, not needed.
+That high a frequency is out of reach for our systems, not needed.
 
 96
 00:10:58,770 --> 00:11:01,950
-At it very unstable results.
+And at that frequency, results are very unstable.
 
 97
 00:11:02,350 --> 00:11:05,610
-Say, 8800, amplitude not so big.
+At 8800, the amplitude isn't that big.
 
 98
 00:11:05,710 --> 00:11:09,790
-And influence very strong if touching coil.
+And the effect of touching the coil is huge.
 
 99
 00:11:11,690 --> 00:11:19,790
-In reality we determined two operating frequencies where current is maximum.
+In practice we've identified two operating frequencies where current is at its maximum.
 
 100
 00:11:19,850 --> 00:11:21,150
-One of them stable.
+One of them is stable.
 
 101
 00:11:26,310 --> 00:11:28,290
-Course of our next actions.
+Our next steps.
 
 102
 00:11:28,290 --> 00:11:33,290
-Now we need to find such frequency in multiplicity, in this range.
+Now we need to find a sub-multiple within this range.
 
 103
 00:11:34,310 --> 00:11:40,970
-Which by spectrum analysis would fall into this strong frequency.
+That, by spectrum analysis, hits this strong frequency.
 
 104
 00:11:42,250 --> 00:11:51,330
-And at that, like the tenth harmonic, it would excite some of the frequencies in this range.
+And whose, say, tenth harmonic would excite one of the frequencies in this range.
 
 105
 00:11:53,290 --> 00:12:00,750
-Next we'll need to switch oscilloscope to spectrum analyzer mode.
+Next we'll need to switch the oscilloscope to spectrum analyzer mode.
 
 106
 00:12:01,250 --> 00:12:05,010
-So-called FFT mode, fast Fourier transform.
+The so-called FFT mode — fast Fourier transform.
 
 107
 00:12:05,790 --> 00:12:10,150
-And check spectrogram of this signal.
+And check the spectrogram of this signal.
 
 108
 00:12:10,150 --> 00:12:21,790
-That is, our window of possibilities is from 83 to 110 kHz operation in multiplicity.
+So, our window of opportunity is from 83 to 110 kHz, as a sub-multiple.
 
 109
 00:12:23,390 --> 00:12:30,310
-Switch oscilloscope to spectrum analyzer mode.
+Switching the oscilloscope to spectrum analyzer mode.
 
 110
 00:12:32,930 --> 00:12:35,210
-Here it is, FFT mode.
+Here it is — FFT mode.
 
 111
 00:12:39,220 --> 00:12:45,340
-And what to know about measurements this way.
+And what to know about taking measurements this way.
 
 112
 00:12:46,360 --> 00:12:59,240
-This way you can't measure signal harmonics that will be shown in spectrum as graphs in decibels.
+You can't actually measure signal harmonics with a sine wave — they'd show up in the spectrum as graphs in decibels.
 
 113
 00:12:59,360 --> 00:13:02,580
-With sine signal.
+With a sine wave signal.
 
 114
 00:13:03,580 --> 00:13:07,580
-Now I'll show moment.
+Let me show you.
 
 115
 00:13:10,080 --> 00:13:13,100
-Now 83 kHz fed to input.
+Right now 83 kHz is being fed to the input.
 
 116
 00:13:15,820 --> 00:13:17,160
@@ -464,35 +464,35 @@ And if we look,
 
 117
 00:13:20,790 --> 00:13:33,410
-in such mode device shows only central frequency that's fed on sine.
+in this mode the device only shows the central frequency being fed in on the sine.
 
 118
 00:13:33,410 --> 00:13:42,670
-In this case will be 83 kHz.
+In this case, that's 83 kHz.
 
 119
 00:13:44,470 --> 00:13:48,610
-Now we'll bring sweep to division.
+Now we'll set the sweep per division.
 
 120
 00:13:49,390 --> 00:13:58,630
-We're interested in division sweep for spectrum analyzer in area of 50 kHz per division.
+We're interested in a sweep of around 50 kHz per division for the spectrum analyzer.
 
 121
 00:14:00,390 --> 00:14:03,610
-Can now disable first output,
+Can now disable the first output,
 
 122
 00:14:07,270 --> 00:14:08,710
-so it doesn't disturb us.
+so it doesn't get in the way.
 
 123
 00:14:08,830 --> 00:14:12,870
-And now can observe spectral picture.
+And now we can observe the spectral picture.
 
 124
 00:14:14,650 --> 00:14:21,390
-Now remind, signal generator is in sine mode.
+Remember, the signal generator is in sine mode.
 
 125
 00:14:25,030 --> 00:14:26,670
@@ -500,39 +500,39 @@ What do we see here?
 
 126
 00:14:31,060 --> 00:14:38,540
-In center of scale intersection the frequency is.
+At the center crosshair is the frequency.
 
 127
 00:14:42,280 --> 00:14:52,400
-And if we place central peak in decibels in central area, we'll know its frequency.
+And if we line up the central peak in decibels at the center, we'll know its frequency.
 
 128
 00:14:52,400 --> 00:14:59,980
-Here, in particular, place center and see our 83 kHz.
+For example, place the center here and we see our 83 kHz.
 
 129
 00:15:00,160 --> 00:15:02,180
-Now I'll show where it's displayed.
+Let me show where it's displayed.
 
 130
 00:15:03,320 --> 00:15:07,220
-On this device for me displayed in lower left corner.
+On my device, it's shown in the lower-left corner.
 
 131
 00:15:07,700 --> 00:15:12,420
-Here they are, 83 kHz, clearly in center.
+There it is — 83 kHz, right in the center.
 
 132
 00:15:14,480 --> 00:15:21,540
-And we see that what we feed to input in sine mode, device determines.
+So we see that what we feed in as a sine, the device detects.
 
 133
 00:15:21,540 --> 00:15:30,160
-To excite harmonics, we need to feed signal with steep edge.
+To excite harmonics, we need to feed in a signal with steep edges.
 
 134
 00:15:30,400 --> 00:15:36,360
-Meaning switch signal generator to square wave.
+Which means switching the signal generator to square wave.
 
 135
 00:15:37,280 --> 00:15:38,080
@@ -540,23 +540,23 @@ Switching.
 
 136
 00:15:39,500 --> 00:15:43,740
-Now see our picture changed.
+Now you can see our picture has changed.
 
 137
 00:15:44,280 --> 00:15:58,300
-Can observe in multiplicity step of frequencies with some spectrum range.
+We can see a series of frequencies stepped at multiples, spread over a spectrum range.
 
 138
 00:15:58,440 --> 00:16:01,200
-And now further search methodology.
+And now the next part of the search method.
 
 139
 00:16:02,200 --> 00:16:16,200
-We determined our highest current amplitude is in area 4620-4630 kHz.
+We've determined that our highest current amplitude is in the 4620–4630 kHz range.
 
 140
 00:16:17,000 --> 00:16:32,620
-And we now in this range from 83 to 110 kHz will be interested in such frequency that'll give highest signal in decibels at these frequencies.
+Now, within our 83–110 kHz range, we want to find the frequency that gives the highest dB signal at those high frequencies.
 
 141
 00:16:35,160 --> 00:16:36,980
@@ -576,23 +576,23 @@ Here we have 630.
 
 145
 00:16:57,330 --> 00:16:59,370
-More precisely set.
+Fine-tuning.
 
 146
 00:17:12,800 --> 00:17:17,160
-Here they are our 4630 MHz.
+There they are — our 4630 MHz.
 
 147
 00:17:17,220 --> 00:17:20,140
-That is we understand in center.
+We see it's right in the center.
 
 148
 00:17:20,620 --> 00:17:37,800
-Now need by selecting these frequencies in our window of possibilities to place spectrogram peak in scale center.
+Now, by picking frequencies in our window of opportunity, we need to place the spectrogram peak at the center of the scale.
 
 149
 00:17:42,070 --> 00:17:45,850
-And start searching by frequencies.
+And start searching by frequency.
 
 150
 00:17:45,870 --> 00:17:47,070
@@ -600,15 +600,15 @@ Very smoothly.
 
 151
 00:17:53,230 --> 00:17:56,290
-Going in tenths of Hz.
+Moving in tenths of a Hz.
 
 152
 00:18:00,090 --> 00:18:05,490
-And here we see, first hit.
+And here we see — first hit.
 
 153
 00:18:05,490 --> 00:18:06,530
-Observing.
+Watching.
 
 154
 00:18:15,210 --> 00:18:24,490
@@ -616,7 +616,7 @@ Observing.
 
 155
 00:18:24,590 --> 00:18:25,330
-Recording.
+Writing it down.
 
 156
 00:18:28,150 --> 00:18:30,950
@@ -624,7 +624,7 @@ Recording.
 
 157
 00:18:31,630 --> 00:18:32,750
-Going further.
+Moving on.
 
 158
 00:18:34,970 --> 00:18:36,030
@@ -632,7 +632,7 @@ There.
 
 159
 00:18:36,170 --> 00:18:38,190
-Want to draw attention.
+Worth pointing out —
 
 160
 00:18:38,490 --> 00:18:39,770
@@ -640,11 +640,11 @@ Want to draw attention.
 
 161
 00:18:40,290 --> 00:18:45,210
-Visible harmonics come out here too.
+There are side harmonics showing up here too.
 
 162
 00:18:45,370 --> 00:18:50,330
-We're interested in cleaner spectrum when there are no side harmonics.
+We want a cleaner spectrum, without side harmonics.
 
 163
 00:18:57,340 --> 00:18:57,680
@@ -652,11 +652,11 @@ There.
 
 164
 00:18:58,400 --> 00:19:00,800
-Picture approximately should be like that.
+That's roughly what the picture should look like.
 
 165
 00:19:04,630 --> 00:19:06,890
-Here another hit.
+Here's another hit.
 
 166
 00:19:07,890 --> 00:19:14,630
@@ -664,11 +664,11 @@ At 87.4 kHz.
 
 167
 00:19:14,710 --> 00:19:17,890
-But also see there are side peaks.
+But we also see side peaks.
 
 168
 00:19:20,650 --> 00:19:21,290
-Recording.
+Writing it down.
 
 169
 00:19:22,050 --> 00:19:26,270
@@ -676,19 +676,19 @@ Recording.
 
 170
 00:19:27,850 --> 00:19:28,810
-Going further.
+Moving on.
 
 171
 00:19:39,400 --> 00:19:43,260
-And here very good frequency we found.
+And here we found a really good frequency.
 
 172
 00:19:43,260 --> 00:19:57,980
-Exact hit without strong side harmonics corresponds to 90.8 kHz.
+A clean hit, no strong side harmonics — 90.8 kHz.
 
 173
 00:19:59,440 --> 00:20:00,980
-Can go further.
+We can keep going.
 
 174
 00:20:07,620 --> 00:20:09,160
@@ -700,23 +700,23 @@ Another hit.
 
 176
 00:20:18,860 --> 00:20:21,600
-Also good frequency.
+Also a good frequency.
 
 177
 00:20:24,060 --> 00:20:25,220
-Note them.
+Marking them.
 
 178
 00:20:26,560 --> 00:20:27,520
-Recording.
+Writing it down.
 
 179
 00:20:30,200 --> 00:20:35,960
-And noting frequencies where no strong side harmonics.
+Noting frequencies where there are no strong side harmonics.
 
 180
 00:20:42,160 --> 00:20:44,080
-Moving further.
+Moving on.
 
 181
 00:20:50,550 --> 00:20:51,930
@@ -724,59 +724,59 @@ Another hit.
 
 182
 00:20:52,070 --> 00:20:56,370
-But here we already see powerful side harmonics.
+But here we already see strong side harmonics.
 
 183
 00:20:57,510 --> 00:20:58,670
-Skipping.
+Skipping it.
 
 184
 00:21:03,800 --> 00:21:10,540
-Also see at 103 kHz side harmonics.
+Side harmonics at 103 kHz too.
 
 185
 00:21:21,570 --> 00:21:26,710
-Also side harmonics at 107.7 kHz powerful.
+Strong side harmonics at 107.7 kHz as well.
 
 186
 00:21:27,790 --> 00:21:32,890
-And window of possibilities for us up to 110 kHz.
+And our window of opportunity tops out at 110 kHz.
 
 187
 00:21:33,850 --> 00:21:35,190
-We passed it.
+We've passed it.
 
 188
 00:21:35,570 --> 00:21:37,070
-Already further interests us.
+Past that, we're not interested.
 
 189
 00:21:37,610 --> 00:21:43,550
-Now can say we have two most likely operating frequencies.
+We can say we have two most likely operating frequencies.
 
 190
 00:21:44,950 --> 00:21:52,970
-This is 90.8 kHz and 94.5 kHz.
+90.8 kHz and 94.5 kHz.
 
 191
 00:21:53,790 --> 00:22:01,950
-At which coil excitation happens at this powerful frequency.
+At which the coil gets excited at that strong frequency.
 
 192
 00:22:04,970 --> 00:22:13,710
-Now look which of these frequencies will fall into our range 830-110 kHz.
+Now let's see which of these falls in our 830–1100 kHz range.
 
 193
 00:22:16,330 --> 00:22:20,790
-Collapse spectrogram and look what's happening.
+Collapse the spectrogram and see what's happening.
 
 194
 00:22:22,970 --> 00:22:27,130
-And see, this is our first that we excite.
+You can see this is the first one we're exciting.
 
 195
 00:22:28,390 --> 00:22:33,210
-Say, now it corresponds to 111 kHz.
+Right now it corresponds to 111 kHz.
 
 196
 00:22:33,550 --> 00:22:40,930
@@ -784,11 +784,11 @@ Setting our 90.8 kHz.
 
 197
 00:22:42,110 --> 00:22:49,970
-And can also see maximum excitation in this high-frequency zone.
+And we can see the maximum excitation in this high-frequency zone.
 
 198
 00:22:49,970 --> 00:22:53,170
-And here's one of peaks.
+And here's one of the peaks.
 
 199
 00:22:53,850 --> 00:22:55,770
@@ -796,39 +796,39 @@ Now we'll examine it.
 
 200
 00:22:58,190 --> 00:23:00,450
-Here our frequency.
+Here's our frequency.
 
 201
 00:23:00,950 --> 00:23:04,950
-First 90.8 kHz.
+First, 90.8 kHz.
 
 202
 00:23:05,250 --> 00:23:06,490
-And went to look.
+And I went to look.
 
 203
 00:23:07,710 --> 00:23:11,150
-Here's second peak 276 kHz.
+Here's the second peak at 276 kHz.
 
 204
 00:23:11,290 --> 00:23:13,310
-Looking for high in amplitude.
+Looking for high amplitude.
 
 205
 00:23:17,570 --> 00:23:31,730
-And here we see, one of peaks that hit at frequency 90.8 kHz, hits us exactly at 1 MHz.
+And here we see — one of the peaks from 90.8 kHz hits right at 1 MHz.
 
 206
 00:23:33,750 --> 00:23:39,210
-And see this also fits very well into our window of possibilities.
+And we see it fits beautifully into our window of opportunity.
 
 207
 00:23:39,210 --> 00:23:51,090
-That is exciting at this frequency the coil, we give acceleration both by first frequency component, stable, and by second.
+So by exciting the coil at this frequency, we drive it with both the stable first frequency component and the second one.
 
 208
 00:23:51,090 --> 00:23:59,250
-And now look at frequency 94.5 kHz.
+And now let's look at 94.5 kHz.
 
 209
 00:23:59,450 --> 00:24:00,110
@@ -844,23 +844,23 @@ And looking.
 
 212
 00:24:17,910 --> 00:24:27,150
-Highest peak also hits here.
+The highest peak hits here too.
 
 213
 00:24:28,670 --> 00:24:39,030
-But greatest stability, if we recall, was near 910 kHz.
+But the greatest stability, recall, was near 910 kHz.
 
 214
 00:24:40,230 --> 00:24:45,290
-And maximum gain when we laid hand on coil.
+And the strongest gain when we put a hand on the coil.
 
 215
 00:24:46,150 --> 00:24:51,170
-And maximum gain in amplitude when amplitude measurement was.
+And the strongest amplitude gain during the amplitude measurement.
 
 216
 00:24:51,170 --> 00:25:05,200
-That is, we can now determine that this frequency 90.8 kHz suits us maximally for push-pull operation, based on spectrogram.
+So we can now conclude that 90.8 kHz is the best choice for push-pull operation, based on the spectrogram.
 
 217
 00:25:06,170 --> 00:25:07,430
@@ -868,91 +868,91 @@ Marking it.
 
 218
 00:25:12,800 --> 00:25:14,840
-This is the search methodology.
+That's the search method.
 
 219
 00:25:15,840 --> 00:25:33,560
-Now for verification can switch to our 90.8 kHz frequency, collapse spectrogram and look also by highest peaks in decibels.
+To verify, we can switch to our 90.8 kHz, collapse the spectrogram, and check the highest peaks in decibels.
 
 220
 00:25:33,560 --> 00:25:39,420
-Setting and see really 1 MHz exactly.
+Set it, and yes, it really is 1 MHz on the dot.
 
 221
 00:25:40,700 --> 00:25:43,720
-And can switch to another high peak.
+And we can switch to another high peak.
 
 222
 00:25:47,140 --> 00:25:49,460
-Here, highest.
+Here — the highest one.
 
 223
 00:25:51,620 --> 00:25:54,880
-This is our 4630.
+That's our 4630.
 
 224
 00:26:02,860 --> 00:26:04,400
-Here this peak.
+Here's that peak.
 
 225
 00:26:10,000 --> 00:26:13,820
-Meaning we found our frequency correctly.
+So we've correctly found our frequency.
 
 226
 00:26:15,220 --> 00:26:20,700
-Also can do one more check of these frequencies we found out in practice.
+We can also do one more practical check of the frequencies we've identified.
 
 227
 00:26:20,700 --> 00:26:26,200
-By similarity of beat pictures at various frequencies.
+By matching the beat patterns at different frequencies.
 
 228
 00:26:27,080 --> 00:26:32,100
-Now square wave is sent at frequency 91 kHz.
+Right now a square wave is being fed at 91 kHz.
 
 229
 00:26:32,520 --> 00:26:37,220
-Also continue to watch on current sensors.
+And we keep watching with the current sensors.
 
 230
 00:26:41,670 --> 00:26:44,530
-This is signal we feed.
+This is the signal we feed in.
 
 231
 00:26:45,050 --> 00:26:50,730
-Creates such oscillations, if look at them in coil.
+It creates oscillations like these in the coil.
 
 232
 00:26:50,730 --> 00:26:53,330
-Will watch the beats.
+We'll watch the beats.
 
 233
 00:26:53,430 --> 00:26:57,230
-Collapsing sweep and
+Collapsing the sweep and
 
 234
 00:27:12,330 --> 00:27:14,030
-see interesting pictures.
+we see interesting patterns.
 
 235
 00:27:17,950 --> 00:27:27,670
-Now check similarity of these pictures, these oscillograms' appearance at another multiplicity frequency.
+Now let's check whether these patterns — these oscillograms — look the same at the other multiple frequency.
 
 236
 00:27:29,630 --> 00:27:37,090
-Feed frequency on signal generator at 910 kHz.
+Feed the signal generator 910 kHz.
 
 237
 00:27:43,080 --> 00:27:47,740
-Now oscilloscope shows envelope amplitude.
+The oscilloscope now shows the envelope amplitude.
 
 238
 00:27:49,220 --> 00:27:55,560
-And see amplitude grew, but actually beats preserved.
+And we see the amplitude grew, but the beats are preserved.
 
 239
 00:27:56,520 --> 00:27:58,680
-And have same form.
+Same shape.
 
 240
 00:28:02,480 --> 00:28:03,880
@@ -960,11 +960,11 @@ Examined...
 
 241
 00:28:04,680 --> 00:28:15,460
-Now sweep is time 5 microseconds per division.
+Now the sweep is 5 microseconds per division.
 
 242
 00:28:18,960 --> 00:28:31,940
-And send to input our basic strong frequency, which is 4630 kHz.
+And we feed in our main strong frequency — 4630 kHz.
 
 243
 00:28:53,940 --> 00:28:55,940
@@ -972,39 +972,39 @@ Amplitude off the chart.
 
 244
 00:28:57,260 --> 00:29:02,280
-Returning and see here already known and familiar fish.
+Coming back, and we see the familiar fish shape.
 
 245
 00:29:02,380 --> 00:29:08,100
-That is we hit basic strong frequency for this coil.
+That is, we hit the main strong frequency for this coil.
 
 246
 00:29:09,760 --> 00:29:18,740
-This can be observed when ramping up with square signal, can switch to sine signal.
+You see this when ramping up with a square signal — you can switch to a sine signal.
 
 247
 00:29:21,100 --> 00:29:26,040
-Amplitude will decrease but beats will be preserved.
+Amplitude will drop, but the beats stay.
 
 248
 00:29:31,730 --> 00:29:34,210
-Here visible at different sweeps.
+You can see it at different sweep settings.
 
 249
 00:29:36,550 --> 00:29:40,570
-Picture preserved up to
+The picture holds up to
 
 250
 00:29:45,010 --> 00:29:47,970
-sine on basic carrier.
+a sine wave on the main carrier.
 
 251
 00:30:07,620 --> 00:30:20,200
-And same, if signal has sufficient strength, oscilloscope will show envelope form, that is sine on these fish.
+And likewise, if the signal is strong enough, the oscilloscope will show the envelope shape — a sine wave on those fish.
 
 252
 00:30:20,300 --> 00:30:24,680
-Can measure also its frequency.
+We can also measure its frequency.
 
 253
 00:30:30,990 --> 00:30:33,710
@@ -1016,7 +1016,7 @@ Press pause.
 
 255
 00:30:38,250 --> 00:30:40,810
-First cursor set.
+Set the first cursor.
 
 256
 00:30:47,910 --> 00:30:48,570
@@ -1024,51 +1024,51 @@ Second.
 
 257
 00:30:56,140 --> 00:31:13,250
-We can see that frequency of our beats in this coil is 32.47 Hz.
+We can see that the frequency of our beats in this coil is 32.47 Hz.
 
 258
 00:31:15,330 --> 00:31:28,270
-Which also testifies that this isn't mains pickup of 50 Hz, but quite real processes happening in this coil.
+Which also confirms this isn't a 50 Hz mains pickup, but real processes happening inside this coil.
 
 259
 00:31:32,990 --> 00:31:36,050
-In practice I also verified this result.
+I verified this result in practice too.
 
 260
 00:31:37,470 --> 00:31:41,400
-Frequency 91 kHz was fed here.
+91 kHz was fed in here.
 
 261
 00:31:41,400 --> 00:31:51,060
-And this coil started warming up very well without load presence at this frequency.
+And this coil started warming up very well without any load at this frequency.
 
 262
 00:31:51,200 --> 00:31:55,100
-Which testifies that warming happens in this zone.
+Which confirms that the heating is happening in this zone.
 
 263
 00:31:56,500 --> 00:32:05,420
-Practically by feel, didn't measure with thermometer, but about 45-50 degrees.
+By touch — I didn't measure with a thermometer — about 45–50 degrees.
 
 264
 00:32:05,560 --> 00:32:09,960
-Warming with consumption about 3 amps on push-pull.
+Warming up with around 3 amps of consumption on the push-pull.
 
 265
 00:32:11,760 --> 00:32:14,650
-Heating of this coil happens without load.
+The coil is heating up without a load.
 
 266
 00:32:15,720 --> 00:32:20,420
-Clear current movement on conductor length.
+Clear current movement along the wire length.
 
 267
 00:32:21,940 --> 00:32:24,100
-Which is what we generally need.
+Which is exactly what we want.
 
 268
 00:32:26,800 --> 00:32:31,540
-On push-pull you can't do as such LC resonance.
+You can't do LC resonance directly on push-pull as such.
 
 269
 00:32:31,680 --> 00:32:33,340
@@ -1076,7 +1076,7 @@ I'll show this later.
 
 270
 00:32:33,760 --> 00:32:39,180
-That is you can't feed 91 kHz directly to inductor.
+You can't feed 91 kHz directly to the inductor.
 
 271
 00:32:39,780 --> 00:32:40,720
@@ -1084,47 +1084,47 @@ What happens?
 
 272
 00:32:40,820 --> 00:32:44,100
-Of course this can be tried, but everyone did this.
+You can try it of course — everyone has.
 
 273
 00:32:44,820 --> 00:32:46,480
-Very interesting moment happens.
+And something interesting happens.
 
 274
 00:32:46,760 --> 00:32:58,080
-If we feed here frequency equal to keys' operating frequency, actually we get such moment.
+If you feed in a frequency equal to the key's operating frequency, here's what we get.
 
 275
 00:32:59,300 --> 00:33:00,320
-Now I'll draw.
+Let me draw it.
 
 276
 00:33:01,360 --> 00:33:04,320
-Say, this is our push-pull frequency.
+Say this is our push-pull frequency.
 
 277
 00:33:05,340 --> 00:33:17,660
-And we have signal during transistors' operation, which we ramp up in each half-cycle of operation.
+And we have the signal during the transistor's operation that we're ramping up each half-cycle.
 
 278
 00:33:17,660 --> 00:33:40,380
-When here, at this point, the Tesla triggers, the strike will happen practically near maximum, we'll get what many saw from own experience, push-pull power keys
+When the Tesla fires at this point — the strike happens practically at maximum, and we'll get what many people have seen from their own experiments — the push-pull power keys blowing.
 
 279
 00:33:40,380 --> 00:33:40,980
-blowing.
+Blowing.
 
 280
 00:33:42,200 --> 00:33:47,580
-So this doesn't happen, our push-pull is driven into another mode.
+So to prevent that, the push-pull is driven into a different mode.
 
 281
 00:33:47,660 --> 00:34:14,040
-As I drew earlier, and many people had questions why I drew this picture, which I showed in another video clip, where I have incident wave, as I drew, and have
+As I drew earlier — and a lot of people asked why I drew that picture in another video — where I have the incident wave, as I drew, and the reflected wave.
 
 282
 00:34:14,040 --> 00:34:15,260
-reflected wave.
+The reflected one.
 
 283
 00:34:15,740 --> 00:34:17,500
@@ -1132,15 +1132,15 @@ And they're in phase.
 
 284
 00:34:18,540 --> 00:34:21,440
-Were many questions why drawn this way.
+Lots of questions about why I drew it that way.
 
 285
 00:34:21,720 --> 00:34:22,820
-Like wrong.
+Like, that's wrong.
 
 286
 00:34:23,000 --> 00:34:29,980
-We all know from classics that reflected wave returns with 180-degree shift.
+We all know from the textbook that a reflected wave comes back 180 degrees out of phase.
 
 287
 00:34:30,860 --> 00:34:31,900
@@ -1148,43 +1148,43 @@ All true.
 
 288
 00:34:32,220 --> 00:34:34,960
-This is reflected wave by voltage.
+That's the voltage reflection.
 
 289
 00:34:35,200 --> 00:34:37,460
-By current we don't consider this moment.
+For current, we don't think about it that way.
 
 290
 00:34:37,680 --> 00:34:55,200
-That is if we do by current reflected wave in oscillating circuit with 180-degree shift, this will be equivalent to turning two magnets toward each other with same-named poles.
+If we have a current-reflected wave in an LC tank with a 180-degree phase shift, that's equivalent to putting two magnets together with like poles facing each other.
 
 291
 00:34:55,900 --> 00:35:01,140
-General gain of such powerful magnetic field won't be observed.
+You won't see a net boost from a strong magnetic field.
 
 292
 00:35:01,820 --> 00:35:09,900
-That's exactly why in push-pull we achieve that incident and reflected wave are in phase.
+That's why, on push-pull, we get the incident and reflected wave in phase.
 
 293
 00:35:10,900 --> 00:35:24,580
-Physically this is visible if we hang current sensor in inductor's oscillating circuit.
+You can see this physically by hanging a current sensor on the inductor's tank circuit.
 
 294
 00:35:26,000 --> 00:35:37,280
-And on one trace will observe such picture that both our wave went and the reverse one that returns.
+And on a single trace you'll see both the wave going out and the one coming back.
 
 295
 00:35:37,280 --> 00:35:43,690
-It'll also copy this wave in phase, will be practically such picture.
+It'll copy this wave in phase — you get pretty much this picture.
 
 296
 00:35:44,620 --> 00:35:49,710
-They'll go in phase, only with smaller amplitude.
+They go in phase, just at smaller amplitude.
 
 297
 00:35:55,600 --> 00:36:13,080
-This is achieved on push-pull by selecting capacitance between capacitance hung on inductor's oscillating circuit and between capacitance hung on output of our gradient coil grenade.
+On the push-pull this is achieved by picking the right ratio between the capacitor hung on the inductor's tank and the capacitor hung on the output of our gradient grenade coil.
 
 298
 00:36:15,040 --> 00:36:16,540
@@ -1192,23 +1192,23 @@ And what happens?
 
 299
 00:36:16,700 --> 00:36:19,840
-Push-pull works at low frequency.
+The push-pull runs at a low frequency.
 
 300
 00:36:20,860 --> 00:36:30,920
-But when we look with oscilloscope, it'll show us frequency higher than main signal frequency.
+But when we look on the scope, it'll show us a frequency higher than the main signal frequency.
 
 301
 00:36:31,820 --> 00:36:40,680
-Therefore in my case I found out my frequency is 91 kHz.
+In my case it turned out my frequency is 91 kHz.
 
 302
 00:36:42,420 --> 00:36:52,020
-This means I need push-pull to actually work 2 times lower, can drive 3 times lower.
+That means the push-pull actually has to run 2 times lower — can drive 3 times lower.
 
 303
 00:36:52,460 --> 00:36:53,980
-Get this picture.
+To get this picture.
 
 304
 00:36:54,080 --> 00:36:59,160
@@ -1216,64 +1216,64 @@ In practice I even got 3 waves in phase.
 
 305
 00:37:00,920 --> 00:37:08,200
-That's how visible on current sensor in one phase.
+That's how it looks on the current sensor — one single phase.
 
 306
 00:37:09,820 --> 00:37:15,820
-When this happens we get powerful total addition of magnetic field.
+When that happens, we get a strong net magnetic field.
 
 307
 00:37:16,300 --> 00:37:28,860
-And if we then collapse sweep, division time, we can see very interesting pictures in form of so-called fish.
+And if we then collapse the sweep, the time per division, you can see some really interesting patterns — the fish.
 
 308
 00:37:29,860 --> 00:37:32,320
-What's such trick needed for?
+Why do we need that trick?
 
 309
 00:37:33,900 --> 00:37:40,100
-We already discussed if Tesla strikes basic, first harmonic, transistors fly out.
+We already talked about how, if the Tesla strikes on the fundamental, the transistors blow.
 
 310
 00:37:40,380 --> 00:37:54,140
-But if we have such picture, then when Tesla works on free oscillation, here at this point we have sharp current amplitude rise.
+But if we have this picture, then when the Tesla works on free oscillation, we get a sharp current amplitude rise at this point.
 
 311
 00:37:54,140 --> 00:38:06,780
-When we look on current transformer, we see this picture I showed in video.
+When we look at the current transformer we see the picture I showed in the previous video.
 
 312
 00:38:07,060 --> 00:38:12,560
-Influence of Tesla transformer on current in oscillating circuit.
+The effect of the Tesla transformer on the current in the tank circuit.
 
 313
 00:38:13,020 --> 00:38:20,840
-There current amplitude jumps up, sine becomes much bigger.
+The current amplitude jumps up, the sine grows much larger.
 
 314
 00:38:20,840 --> 00:38:31,840
-At that overall consumption we measure from power source going to push-pull power, decreases.
+And at the same time, the total consumption from the supply feeding the push-pull drops.
 
 315
 00:38:33,400 --> 00:38:37,580
-Current amplitude grows, and system consumption decreases.
+Current amplitude grows and consumption drops.
 
 316
 00:38:37,580 --> 00:39:03,280
-In numbers in practice, say, if in normal mode without Tesla push-pull ate consumption 3 amps at 24 volts, then with Tesla operation increase, one particular case, it consumes 1 amp at
+In real numbers — say in normal mode without Tesla operation the push-pull drew 3 amps at 24 volts; with Tesla operation kicking in, in one case it consumes 1 amp at the same 24 volts.
 
 317
 00:39:03,280 --> 00:39:06,820
-same 24 volts power.
+Same 24-volt supply.
 
 318
 00:39:09,780 --> 00:39:12,160
-Such interesting feature.
+Interesting feature.
 
 319
 00:39:12,300 --> 00:39:17,140
-In subsequent videos will look at how this happens, how it works.
+In the next videos we'll look at how this happens, how it works.
 
 320
 00:39:20,600 --> 00:39:22,360
-Good luck everyone in experiments.
+Good luck to everyone with your experiments.
