@@ -1,84 +1,84 @@
-| Archivo | Estado |
-|---|---|
-| 1-EN.srt | A revisar |
-| 2-EN.srt | A revisar |
-| 3-EN.srt | A revisar |
-| 4-EN.srt | A revisar |
-| 5-EN.srt | A revisar |
-| 6-EN.srt | A revisar |
-| 7-EN.srt | A revisar |
-| 8-EN.srt | A revisar |
-| 9-EN.srt | A revisar |
-| 10-EN.srt | A revisar |
-| 11-EN.srt | A revisar |
-| 12-EN.srt | A revisar |
-| 13-EN.srt | A revisar |
-| 14-EN.srt | A revisar |
-| 15-EN.srt | A revisar |
-| 16-EN.srt | A revisar |
-| 17-EN.srt | A revisar |
-| 18-EN.srt | A revisar |
-| 19-EN.srt | A revisar |
-| 20-EN.srt | A revisar |
-| 21-EN.srt | A revisar |
-| 22-EN.srt | A revisar |
-| 23-EN.srt | A revisar |
-| 24-EN.srt | A revisar |
-| 25-EN.srt | A revisar |
-| 26-EN.srt | A revisar |
-| 27-EN.srt | A revisar |
-| 28-EN.srt | A revisar |
-| 29-EN.srt | A revisar |
-| 30-EN.srt | A revisar |
-| 46-EN.srt | A revisar |
-| 47-EN.srt | A revisar |
-| 48-EN.srt | A revisar |
-| 49-EN.srt | A revisar |
-| 50-EN.srt | A revisar |
-| 51-EN.srt | A revisar |
-| 52-EN.srt | A revisar |
-| 53-EN.srt | A revisar |
-| 54-EN.srt | A revisar |
-| 55-EN.srt | A revisar |
-| 56-EN.srt | A revisar |
-| 57-EN.srt | A revisar |
-| 58-EN.srt | A revisar |
-| 59-EN.srt | A revisar |
-| 60-EN.srt | A revisar |
-| 61-EN.srt | A revisar |
-| 62-EN.srt | A revisar |
-| 63-EN.srt | A revisar |
-| 64-EN.srt | A revisar |
-| 65-EN.srt | A revisar |
-| 66-EN.srt | A revisar |
-| 67-EN.srt | A revisar |
-| 68-EN.srt | A revisar |
-| 69-EN.srt | A revisar |
-| 70-EN.srt | A revisar |
-| 71-EN.srt | A revisar |
-| 72-EN.srt | A revisar |
-| 73-EN.srt | A revisar |
-| 74-EN.srt | A revisar |
-| 75-EN.srt | A revisar |
-| 76-EN.srt | A revisar |
-| 77-EN.srt | A revisar |
-| 78-EN.srt | A revisar |
-| 79-EN.srt | A revisar |
-| 80-EN.srt | A revisar |
-| 81-EN.srt | A revisar |
-| 82-EN.srt | A revisar |
-| 83-EN.srt | A revisar |
-| 84-EN.srt | A revisar |
-| 85-EN.srt | A revisar |
-| 86-EN.srt | A revisar |
-| 87-EN.srt | A revisar |
-| 88-EN.srt | A revisar |
-| 89-EN.srt | A revisar |
-| 90-EN.srt | A revisar |
-| 91-EN.srt | A revisar |
-| 92-EN.srt | A revisar |
-| 93-EN.srt | A revisar |
-| 94-EN.srt | A revisar |
-| 95-EN.srt | A revisar |
-| 96-EN.srt | A revisar |
-| 97-EN.srt | A revisar |
+| Archivo | Estado | Voices | URL |
+|---|---|---|---|
+| 1-EN.srt | OK | 1 | https://www.youtube.com/watch?v=XzHwPDZAXnM |
+| 2-EN.srt | OK | 1 | https://www.youtube.com/watch?v=wh23XTOE5jU |
+| 3-EN.srt | OK | 1 | https://www.youtube.com/watch?v=GMcglx5I-O4 |
+| 4-EN.srt | OK | 1 | https://www.youtube.com/watch?v=tL93CQ6QnYI |
+| 5-EN.srt | OK | 1 | https://www.youtube.com/watch?v=EwVWW89JMEM |
+| 6-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=2ylifwWtjlY |
+| 7-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=lR3WPeITlsQ |
+| 8-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=qqQCNej_m3Q |
+| 9-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=wUVdeT9pxqs |
+| 10-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=txTNtCPtFII |
+| 11-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=PrrcnQz3sVk |
+| 12-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=BuBYDSdk72s |
+| 13-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=v7thzqWdNM0 |
+| 14-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=Z-UaulS9EUA |
+| 15-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=RdEnx6hfshQ |
+| 16-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=ndLdQKqTbDs |
+| 17-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=mJSEZMNRLXA |
+| 18-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=bVlQ2zH8i3E |
+| 19-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=wkbRbQ_r8AA |
+| 20-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=BY1DRQHvcQ0 |
+| 21-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=el1SkfaHmsI |
+| 22-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=tnb8gUifKgk |
+| 23-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=MA7h1G_dvOo |
+| 24-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=1x6GSQ3GXBM |
+| 25-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=__pfVMPdkAU |
+| 26-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=-Zu6sQgo3M8 |
+| 27-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=_WHERwU--DQ |
+| 28-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=PBUp550HW8k |
+| 29-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=tujYRJrqpyE |
+| 30-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=fyhtEa-jvGo |
+| 46-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=XDXTxPRPxSU |
+| 47-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=jCest-tcObc |
+| 48-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=NGG8Hk68Ikw |
+| 49-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=jeEaKI1TZ3s |
+| 50-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=Bhc1xFNgrVA |
+| 51-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=pNFXlo5jv4g |
+| 52-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=oCAy88JFeA4 |
+| 53-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=Dp5yGfWJzHI |
+| 54-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=rlXcRHgyfnY |
+| 55-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=-2jN0kOP1os |
+| 56-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=7k9LstM8QP4 |
+| 57-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=ObQFTTJimuI |
+| 58-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=VmPgmHLbxlg |
+| 59-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=sD0iBxNmasE |
+| 60-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=v6FrGTF731o |
+| 61-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=NGiBxuLgjrw |
+| 62-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=YviOIfaNKYA |
+| 63-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=YohJeG2DsSA |
+| 64-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=YkyeKCnzU3Y |
+| 65-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=wZa8qY2Wexs |
+| 66-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=COeDltHrnFk |
+| 67-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=pqnAOg8JYR4 |
+| 68-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=VYao_B_sc7A |
+| 69-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=NBtANMN1DpI |
+| 70-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=3mHqxYVlc1Q |
+| 71-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=F7QsxQFYb2A |
+| 72-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=G_GflTLJlZY |
+| 73-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=NvbaEO8ue0o |
+| 74-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=IjcGQcEfvhE |
+| 75-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=WE4L3eYD_no |
+| 76-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=UIsqJitBHRg |
+| 77-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=HnXO3Qw36HU |
+| 78-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=dFgz_UiUwxs |
+| 79-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=RYWMjoPBN2w |
+| 80-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=dhakukN1ze0 |
+| 81-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=HFDkFOKfAx0 |
+| 82-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=_wjrmI7Y6Ps |
+| 83-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=K1gRxgT1tP0 |
+| 84-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=b2-SjbjftvA |
+| 85-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=OM0mwwyAbks |
+| 86-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=PfkWBsRVSi4 |
+| 87-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=Ogu_BKwm6f4 |
+| 88-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=MrtLezIW39U |
+| 89-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=syf5_fLPzrw |
+| 90-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=iDypaJZqieE |
+| 91-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=JpaSH0OCvAw |
+| 92-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=-_aZ1yql3Wg |
+| 93-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=zh4osCzPLwo |
+| 94-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=NphZ0BVbMkc |
+| 95-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=VjODogGMrKE |
+| 96-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=DibBNYr6R0Q |
+| 97-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=OeVJNUwI7N8 |
