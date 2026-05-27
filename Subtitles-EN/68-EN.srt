@@ -1,90 +1,90 @@
 1
 00:00:00,960 --> 00:00:01,770
-Greetings everyone!
+Hi everyone!
 
 2
 00:00:02,450 --> 00:00:04,350
-Want congratulate everyone with radio day.
+Happy Radio Day, everyone.
 
 3
 00:00:04,650 --> 00:00:11,370
-One way or another, who soldered anything sometime, can consider self related to this holiday.
+One way or another, anyone who's ever soldered something can consider themselves part of this holiday.
 
 4
 00:00:12,930 --> 00:00:25,010
-Happens that in everyday life or for experiments need some thingy, desirable very simple, that can be quickly made, that raises voltage.
+It sometimes happens that in everyday life or for experiments you need some little thing — ideally simple, that can be made quickly, that raises voltage.
 
 5
 00:00:25,010 --> 00:00:32,510
-In particular, I needed such scheme for electronic ignition.
+In particular, I needed a circuit like this for electronic ignition.
 
 6
 00:00:33,910 --> 00:00:39,710
-Board itself of electronic ignition and commutates it in such coil.
+The electronic ignition board itself switches via a coil like this.
 
 7
 00:00:40,250 --> 00:00:47,310
-But for successful commutation I needed apply at primary winding of this coil 70 volts.
+But for successful switching I needed to apply 70 volts to the primary winding of this coil.
 
 8
 00:00:47,310 --> 00:00:56,530
-And by conditions on-board power at us 12 volts, so I need make such converter.
+And the on-board power is 12 volts, so I have to build a converter like this.
 
 9
 00:00:57,270 --> 00:01:14,990
-But I decided right away that converter at me will be not only at 70 volts, here say I marked tap for this matter, but'll make full at 220 volts, so on road could charge mobile
+But I decided right away that my converter will be not only at 70 volts — I marked a tap for that — but I'll also do the full 220 volts, so on the road I could charge a mobile
 
 10
 00:01:14,990 --> 00:01:20,330
-phone or light with lamp at 220 volts.
+phone or light up a 220-volt lamp.
 
 11
 00:01:20,770 --> 00:01:24,070
-Also can charge laptops and other matter.
+You can also charge laptops and other stuff.
 
 12
 00:01:24,430 --> 00:01:27,690
-So, task is, now remains determine scheme.
+So, the task is set — now we just have to settle on the schematic.
 
 13
 00:01:27,690 --> 00:01:36,970
-I stopped at such schematic solution, on quite common microchip IR2153.
+I stopped at this schematic solution, on the pretty common IR2153 chip.
 
 14
 00:01:38,050 --> 00:01:42,090
-In radio amateur environment it already long nicknamed as Irka.
+In the radio-amateur world it's been nicknamed "Irka" for a long time.
 
 15
 00:01:43,590 --> 00:01:49,490
-Microchip well recommended itself, but here should determine with this.
+The chip has proven itself well, but you have to be careful here.
 
 16
 00:01:49,590 --> 00:01:56,730
-There are microchips IR2153, and there's same abbreviation but with index D.
+There are IR2153 chips, and there's the same abbreviation with a D suffix.
 
 17
 00:01:56,730 --> 00:02:02,010
-For this converter we need precisely IR2153.
+For this converter we need specifically the IR2153.
 
 18
 00:02:02,890 --> 00:02:12,010
-Microchip with index D means diode that's in case between first and eighth leg of microchip.
+The chip with the D suffix has a diode in the package between pins 1 and 8.
 
 19
 00:02:12,590 --> 00:02:17,990
-These solutions designed on contrary not for step-up converters, but for step-down.
+These solutions, on the contrary, aren't designed for step-up converters but for step-down ones.
 
 20
 00:02:18,350 --> 00:02:26,450
-On basis of half-bridge or bridge scheme if use for bridge two control microchips.
+On a half-bridge or bridge basis — if you use two control chips for a bridge.
 
 21
 00:02:27,870 --> 00:02:33,610
-So at purchase pay attention so index D wasn't here.
+So at purchase, pay attention so there's no D suffix here.
 
 22
 00:02:37,000 --> 00:02:52,140
-If you have lab equipment in form of power supplies, oscilloscope and other technique, you'll be quite easy to tune this scheme and experienced radio amateur with this copes without
+If you have lab gear — power supplies, oscilloscope and other equipment — you'll find it quite easy to tune this circuit, and an experienced radio amateur handles it without
 
 23
 00:02:52,140 --> 00:02:52,520
@@ -92,15 +92,15 @@ problems.
 
 24
 00:02:52,520 --> 00:03:04,920
-But if you decided to make simply converter for everyday needs, and you have no equipment, this actually not problem.
+But if you decided to just build a converter for everyday needs and you have no equipment, that's actually not a problem.
 
 25
 00:03:05,060 --> 00:03:07,480
-Now show you how worth doing this.
+I'll show you how to do it.
 
 26
 00:03:07,680 --> 00:03:09,600
-Will follow several rules.
+We'll follow a few rules.
 
 27
 00:03:11,320 --> 00:03:13,020
@@ -108,47 +108,47 @@ First basic rule.
 
 28
 00:03:14,040 --> 00:03:22,420
-Assemble control with transistors not connecting step-up transformer itself.
+Assemble the control side with the transistors, without connecting the step-up transformer itself.
 
 29
 00:03:22,520 --> 00:03:28,540
-And launch it, check mounting, and launch mandatorily done.
+And start it up — check mounting, and startup is mandatory.
 
 30
 00:03:28,660 --> 00:03:36,680
-Connect in series in power path lamp 12 volt, so from 10 to 21 watts.
+Connect a 12 V lamp from 10 to 21 W in series in the power path.
 
 31
 00:03:37,800 --> 00:03:49,580
-If at launch lamp glows or lights up, immediately turn off and understand that somewhere in scheme was made error.
+If on startup the lamp glows or lights up, immediately turn off and understand that an error was made somewhere in the circuit.
 
 32
 00:03:49,580 --> 00:03:59,480
-If lamp doesn't burn, means can connect further transformer and check already with it.
+If the lamp doesn't light, then you can connect the transformer next and check with it.
 
 33
 00:04:00,300 --> 00:04:07,740
-Launch through lamp recommend because usually in home conditions has power source some.
+I recommend starting through a lamp because usually at home there's some power source.
 
 34
 00:04:07,980 --> 00:04:12,800
-Usually this same accumulator that'll power this converter.
+Usually it's the same battery that'll power the converter.
 
 35
 00:04:12,800 --> 00:04:19,880
-If you don't put at input lamp, this matter may very quickly burn out.
+If you don't put a lamp at the input, this thing might blow very fast.
 
 36
 00:04:20,020 --> 00:04:26,980
-Will be insulting and discourage any desire further of beginner to deal with electronics.
+It'll be frustrating and discourage any further desire from a beginner to deal with electronics.
 
 37
 00:04:29,480 --> 00:04:37,940
-For start to check scheme without devices, we need solder in series with power lamp.
+To start checking the circuit without instruments, we need to solder a lamp in series with the power.
 
 38
 00:04:38,590 --> 00:04:46,700
-And take two more lamps that'll serve as load for these transistors.
+And take two more lamps that'll serve as the load for these transistors.
 
 39
 00:04:46,800 --> 00:04:50,080
@@ -156,47 +156,47 @@ They'll be connected instead of these windings.
 
 40
 00:04:50,580 --> 00:04:53,740
-Check our scheme, are there errors.
+Check our circuit for errors.
 
 41
 00:04:54,580 --> 00:05:02,600
-Connect minus terminal of power to minus, plus through lamp to plus.
+Connect the minus terminal of the power to minus, plus through the lamp to plus.
 
 42
 00:05:03,360 --> 00:05:12,360
-Can pay attention now scheme discharges, that may be visible that here small spark slips through.
+You can notice the circuit is discharging now — visible that a small spark slips through here.
 
 43
 00:05:12,960 --> 00:05:16,500
-See in practice, this charge electrolytes.
+See in practice — this is the electrolytics charging.
 
 44
 00:05:17,600 --> 00:05:19,360
-And lamp at that doesn't burn.
+And the lamp doesn't light up.
 
 45
 00:05:19,620 --> 00:05:28,040
-That is we can rotate variable resistance, and as see, lamp doesn't light in any mode.
+We can rotate the variable resistor, and as you can see, the lamp doesn't light in any mode.
 
 46
 00:05:28,040 --> 00:05:36,040
-This testifies that scheme we already assembled correctly, and most likely it'll be workable.
+This confirms we already assembled the circuit correctly, and most likely it'll work.
 
 47
 00:05:36,720 --> 00:05:39,880
-Now should check, work our keys.
+Now we should check whether the switches work.
 
 48
 00:05:41,040 --> 00:05:44,020
-Now will solder lamps and will check.
+Now we'll solder lamps and check.
 
 49
 00:05:45,180 --> 00:05:51,800
-Soldered lamps, means lamps now will be connected instead of these windings.
+Lamps soldered — meaning lamps are now connected instead of these windings.
 
 50
 00:05:52,800 --> 00:05:56,820
-Middle point to which connected lamps, this lead.
+The middle point the lamps connect to is this lead.
 
 51
 00:05:57,420 --> 00:06:01,820
@@ -204,59 +204,59 @@ It corresponds to this plus power wire.
 
 52
 00:06:01,940 --> 00:06:03,180
-That is this point.
+That is, this point.
 
 53
 00:06:04,900 --> 00:06:11,820
-Before applying power put resistance slider approximately in middle position.
+Before applying power, set the resistor slider roughly in the middle position.
 
 54
 00:06:12,000 --> 00:06:17,660
-This will be approximately about 30-40 kHz frequency.
+That'll be about 30-40 kHz.
 
 55
 00:06:17,880 --> 00:06:20,400
-And apply power to input.
+And apply power to the input.
 
 56
 00:06:21,620 --> 00:06:24,840
-As see, lamp doesn't burn, nothing happens.
+As you can see, the lamp doesn't light — nothing happens.
 
 57
 00:06:25,040 --> 00:06:27,220
-Check first transistor.
+Checking the first transistor.
 
 58
 00:06:27,320 --> 00:06:28,800
-Here this lead from it.
+This is its lead.
 
 59
 00:06:29,020 --> 00:06:33,000
-This precisely from its drain.
+This is from its drain.
 
 60
 00:06:33,760 --> 00:06:36,300
-These black wires from transistor drains.
+These black wires are from the transistor drains.
 
 61
 00:06:36,480 --> 00:06:37,080
-Check.
+Checking.
 
 62
 00:06:37,640 --> 00:06:39,240
-See that lamp glows.
+You see the lamp glows.
 
 63
 00:06:40,420 --> 00:06:44,500
-That is transistor works in operating mode.
+The transistor works in operating mode.
 
 64
 00:06:44,580 --> 00:06:46,540
-Check now second transistor.
+Now check the second transistor.
 
 65
 00:06:48,200 --> 00:06:50,540
-Also lamp glows.
+The lamp also glows.
 
 66
 00:06:51,380 --> 00:06:52,160
@@ -264,23 +264,23 @@ All normal.
 
 67
 00:06:52,240 --> 00:06:56,700
-At presence of dual-beam oscilloscope we can check following.
+With a dual-beam oscilloscope we can check the following.
 
 68
 00:06:56,780 --> 00:07:00,440
-For start look signal at these points.
+First we look at the signal at these points.
 
 69
 00:07:00,620 --> 00:07:03,480
-On FET transistor gates.
+On the FET gates.
 
 70
 00:07:04,340 --> 00:07:08,860
-We need to convince that scheme correctly works.
+We need to confirm the circuit works correctly.
 
 71
 00:07:09,060 --> 00:07:13,320
-And between control signals is so-called dead time.
+And that there's so-called dead time between control signals.
 
 72
 00:07:13,660 --> 00:07:14,120
@@ -288,39 +288,39 @@ Dead time.
 
 73
 00:07:14,120 --> 00:07:18,080
-That is time when control doesn't intersect.
+That is, time when the controls don't overlap.
 
 74
 00:07:18,720 --> 00:07:20,160
-Apply power to input.
+Apply power to the input.
 
 75
 00:07:21,220 --> 00:07:24,120
-Observe control.
+Watching the controls.
 
 76
 00:07:25,440 --> 00:07:27,100
-Can play with frequency.
+You can play with frequency.
 
 77
 00:07:28,000 --> 00:07:28,800
-Look.
+Watch.
 
 78
 00:07:29,560 --> 00:07:38,060
-Limit somewhere up to 100 kHz.
+The limit is somewhere up to 100 kHz.
 
 79
 00:07:38,060 --> 00:07:45,100
-And minimum makes 12.8 kHz.
+And the minimum is 12.8 kHz.
 
 80
 00:07:45,600 --> 00:07:51,440
-Us will interest work in range from 20 kHz.
+We're interested in operation from 20 kHz.
 
 81
 00:07:52,480 --> 00:07:55,880
-Stop somewhere about 30 kHz.
+Let's stop at about 30 kHz.
 
 82
 00:07:56,660 --> 00:07:57,540
@@ -328,43 +328,43 @@ And look.
 
 83
 00:07:59,360 --> 00:08:00,780
-Signal rectangular.
+The signal is rectangular.
 
 84
 00:08:00,880 --> 00:08:03,420
-Now should look at presence of dead time.
+Now we check for the presence of dead time.
 
 85
 00:08:04,420 --> 00:08:07,980
-Do shift of signal to each other.
+Offset the signals from each other.
 
 86
 00:08:08,100 --> 00:08:17,360
-And observe that actually are pauses between work of one shoulder and other.
+And observe that there are actually pauses between the work of one arm and the other.
 
 87
 00:08:17,920 --> 00:08:22,620
-Can pay attention to flat front.
+You can pay attention to the flat front.
 
 88
 00:08:23,420 --> 00:08:26,380
-Front opening transistor.
+The transistor-opening front.
 
 89
 00:08:26,380 --> 00:08:34,180
-This work of internal built-in drivers through resistance on transistor gate.
+This is the work of the built-in internal drivers through the resistor on the transistor gate.
 
 90
 00:08:35,280 --> 00:08:38,560
-Further happens discharge of gate capacity.
+Next is gate capacitance discharge.
 
 91
 00:08:38,920 --> 00:08:40,500
-It more steep.
+It's steeper.
 
 92
 00:08:40,740 --> 00:08:43,920
-Fall through resistor 1 kOhm.
+Falls through the 1 kΩ resistor.
 
 93
 00:08:45,680 --> 00:08:47,420
@@ -372,35 +372,35 @@ Normal signal.
 
 94
 00:08:50,120 --> 00:08:51,720
-Will work.
+It'll work.
 
 95
 00:08:54,720 --> 00:09:00,090
-Now look at key work under load.
+Now we'll look at the switch operation under load.
 
 96
 00:09:00,720 --> 00:09:04,860
-Will look at lamps at these points.
+We'll look at the lamps at these points.
 
 97
 00:09:05,300 --> 00:09:07,600
-On transistor drains.
+On the transistor drains.
 
 98
 00:09:11,260 --> 00:09:14,840
-I connected probes at these points.
+I connected the probes at these points.
 
 99
 00:09:15,600 --> 00:09:17,200
-Visible that they stand on lamps.
+You can see they're on the lamps.
 
 100
 00:09:17,320 --> 00:09:20,100
-Measurement done relative to common wire.
+The measurement is done relative to the common wire.
 
 101
 00:09:20,100 --> 00:09:24,000
-That is common of oscilloscope at minus of power source.
+The oscilloscope common is on the minus of the power source.
 
 102
 00:09:25,280 --> 00:09:26,860
@@ -408,131 +408,131 @@ Apply power.
 
 103
 00:09:29,780 --> 00:09:32,400
-See, load works.
+You see — the load works.
 
 104
 00:09:32,820 --> 00:09:35,740
-And what to us can say this oscillogram.
+And what does this oscillogram tell us?
 
 105
 00:09:37,920 --> 00:09:46,280
-If we look, then by oscillogram on lamps we see that work goes with overlap.
+If we look at the oscillogram on the lamps, we see that operation happens with overlap.
 
 106
 00:09:47,280 --> 00:09:56,100
-This normal oscillogram because don't forget that FET transistor inverts by voltage.
+This is a normal oscillogram because don't forget that the FET inverts on voltage.
 
 107
 00:09:56,980 --> 00:10:05,140
-Consequently, key work will be in this zone when voltage falls to zero.
+So the switch operation will be in this zone when voltage drops to zero.
 
 108
 00:10:05,140 --> 00:10:09,120
-Now will return.
+Now I'll come back.
 
 109
 00:10:09,640 --> 00:10:13,700
-Key at us opened, voltage fell.
+The switch opens, voltage drops.
 
 110
 00:10:14,660 --> 00:10:16,960
-Works key and closes.
+The switch operates and closes.
 
 111
 00:10:17,440 --> 00:10:26,060
-We can see that here work of first key, pause, and here work of second key.
+We can see — here's the first switch working, a pause, and here the second switch.
 
 112
 00:10:26,360 --> 00:10:33,680
-On this load we checked that scheme works correctly.
+On this load we've verified the circuit works correctly.
 
 113
 00:10:33,680 --> 00:10:41,400
-Can sweep through frequency range, look that dead time preserved.
+You can sweep through the frequency range and check that dead time is preserved.
 
 114
 00:10:42,640 --> 00:10:44,020
-Us this suits.
+This suits us.
 
 115
 00:10:44,220 --> 00:10:45,480
-Following our actions.
+Next step.
 
 116
 00:10:45,600 --> 00:10:49,420
-Checked scheme, it working, works correctly.
+Circuit checked — it's working, runs correctly.
 
 117
 00:10:50,880 --> 00:10:53,780
-And move to step-up transformer.
+And move on to the step-up transformer.
 
 118
 00:10:54,300 --> 00:11:02,640
-Say, took ferrite, ring, wound on it secondary winding.
+Say I took ferrite, a ring, and wound the secondary winding on it.
 
 119
 00:11:04,300 --> 00:11:07,840
-Stepping up turn count picked individually.
+The step-up turn count is picked individually.
 
 120
 00:11:08,000 --> 00:11:13,640
-There are programs in which can calculate, but in home conditions we won't deal with.
+There are programs you can use to calculate it, but at home we won't bother with that.
 
 121
 00:11:13,780 --> 00:11:20,320
-At us winding goes, wound, connected, checked with tester voltage at output.
+We wound the winding, connected it, checked the voltage at the output with a multimeter.
 
 122
 00:11:20,820 --> 00:11:22,560
-If we satisfied, leave.
+If we're happy, leave it.
 
 123
 00:11:22,620 --> 00:11:25,280
-If no, means still add to needed.
+If not, then add more turns until you reach the target.
 
 124
 00:11:25,800 --> 00:11:27,960
-And wind primary winding.
+And wind the primary winding.
 
 125
 00:11:27,960 --> 00:11:32,600
-Primary winding at us wound all in one direction.
+The primary winding is wound all in one direction.
 
 126
 00:11:33,260 --> 00:11:36,180
-Same turn count per shoulder goes.
+The same turn count per arm.
 
 127
 00:11:36,320 --> 00:11:40,380
-Only thing done tap from center.
+With a tap from the middle.
 
 128
 00:11:40,900 --> 00:11:54,080
-Don't forget that precisely in one direction whole winding goes because can from inexperience, say, wind in different directions winding, and then converter at us will burn.
+Don't forget that the whole winding goes in one direction — because from inexperience you might wind in different directions, and then the converter will blow up.
 
 129
 00:11:54,080 --> 00:12:00,540
-Assembled I scheme, connected some load 15 watts at 220 volts.
+I assembled the circuit, connected a 15 W load at 220 V.
 
 130
 00:12:01,360 --> 00:12:04,620
-And here should explain one important moment.
+And here I should explain one important point.
 
 131
 00:12:05,140 --> 00:12:16,980
-Even when you checked scheme for workability, don't disconnect this lamp at first launches, at work on step-up transformer.
+Even after you've verified the circuit works, don't disconnect this lamp during the first startups with the step-up transformer.
 
 132
 00:12:16,980 --> 00:12:27,780
-Because key work on lamps, on active resistance, this absolutely different when key works on reactive load.
+Because switch operation on lamps — on active resistance — is completely different from when the switch works on a reactive load.
 
 133
 00:12:28,380 --> 00:12:29,960
-That is on coil.
+That is, on a coil.
 
 134
 00:12:31,840 --> 00:12:33,520
-Now visually show.
+Let me show you visually.
 
 135
 00:12:34,220 --> 00:12:35,120
@@ -544,11 +544,11 @@ As we thought.
 
 137
 00:12:39,020 --> 00:12:43,920
-We don't need big core to power.
+We don't need a big core for the power.
 
 138
 00:12:43,920 --> 00:12:45,200
-At us loads small.
+Our loads are small.
 
 139
 00:12:45,280 --> 00:12:48,560
@@ -556,175 +556,175 @@ Phone charging, some low-power lamp.
 
 140
 00:12:49,160 --> 00:12:50,940
-At 20 watts.
+At 20 W.
 
 141
 00:12:51,700 --> 00:12:53,420
-And apply power.
+Apply power.
 
 142
 00:12:53,520 --> 00:12:55,780
-Here see, lamp lit.
+Here you see — the lamp lit.
 
 143
 00:12:56,360 --> 00:12:56,800
-Input.
+At the input.
 
 144
 00:12:57,080 --> 00:12:59,940
-At that load at us barely glows.
+But the load barely glows.
 
 145
 00:13:00,820 --> 00:13:02,100
-What happens?
+What's going on?
 
 146
 00:13:03,500 --> 00:13:06,420
-And here can very strongly err.
+You can make a major mistake here.
 
 147
 00:13:06,880 --> 00:13:10,260
-Need look at signs of that.
+You need to look at the signs of what's happening.
 
 148
 00:13:10,260 --> 00:13:14,140
-For start need to touch heat sink and keys.
+First, you need to touch the heat sink and the switches.
 
 149
 00:13:15,000 --> 00:13:19,700
-Will observe such moment that heat sink starts strongly heating.
+You'll see the heat sink is heating up strongly.
 
 150
 00:13:19,980 --> 00:13:22,640
-Plus core itself starts strongly heating.
+Plus the core itself is heating up strongly.
 
 151
 00:13:23,360 --> 00:13:31,020
-Here if now wasn't limiting lamp, this core, from it would go smoke.
+If there weren't a limiting lamp here, smoke would come from this core.
 
 152
 00:13:31,480 --> 00:13:33,620
-And possibly keys flew out.
+And the switches might have blown.
 
 153
 00:13:33,620 --> 00:13:40,220
-Because now in this situation this core entered saturation.
+Because in this situation, this core has entered saturation.
 
 154
 00:13:40,820 --> 00:13:47,240
-Saturation is such unpleasant mode of ferrite core work.
+Saturation is an unpleasant operating mode for the ferrite core.
 
 155
 00:13:47,740 --> 00:13:51,000
-Turn off because already strongly heated.
+Turning off because it's already heated up strongly.
 
 156
 00:13:51,780 --> 00:13:57,120
-Such mode at which core loses property of remagnetizing.
+A mode in which the core loses the property of remagnetizing.
 
 157
 00:13:57,120 --> 00:14:06,780
-Since our scheme doesn't imply regulation of control pulse duration.
+Since our circuit doesn't allow regulation of the control pulse duration.
 
 158
 00:14:07,040 --> 00:14:11,420
-And factually this duration of key opening, working it on load.
+Which is actually the duration of switch opening when working on the load.
 
 159
 00:14:11,780 --> 00:14:19,080
-Then we can't with duration regulation pick optimal parameters for work of this core.
+Then we can't pick optimal parameters for this core by adjusting duration.
 
 160
 00:14:19,660 --> 00:14:25,780
-Even change of turn count in larger direction, change of operating frequency, won't lead to anything.
+Even increasing turn count or changing operating frequency won't lead anywhere.
 
 161
 00:14:26,620 --> 00:14:32,080
-Here exit one, change core of step-up transformer itself.
+There's one way out — change the core of the step-up transformer itself.
 
 162
 00:14:32,420 --> 00:14:35,100
-Until scheme correctly starts.
+Until the circuit starts correctly.
 
 163
 00:14:35,420 --> 00:14:41,500
-To this scheme I picked ferrite, also 2000 brand as this, but its dimensions can see.
+For this circuit I picked ferrite, also of the 2000 brand like this, but you can see its dimensions.
 
 164
 00:14:41,580 --> 00:14:45,980
-It slightly larger by outer diameter, larger inner.
+It's slightly larger by outer diameter, and larger inside.
 
 165
 00:14:46,320 --> 00:14:53,560
-But most important to be guided by, need pay attention not to diameters but to core cross-section.
+But the main thing to be guided by isn't the diameters but the core's cross-section.
 
 166
 00:14:53,560 --> 00:15:03,340
-If this magnetic core has cross-section 9 by 9 mm, then this has cross-section 10 by 13 mm.
+If this magnetic core has a cross-section of 9 by 9 mm, then this one has a cross-section of 10 by 13 mm.
 
 167
 00:15:03,820 --> 00:15:11,640
-And only such ferrite, this minimum possible core for correct work of this scheme.
+And only such ferrite is the minimum possible core for this circuit to work correctly.
 
 168
 00:15:12,640 --> 00:15:16,520
-Moreover note one more important moment.
+Also note one more important point.
 
 169
 00:15:17,560 --> 00:15:26,320
-Check is your core suitable for this scheme, need only at presence of secondary winding.
+You can check whether your core is suitable for this circuit only with the secondary winding present.
 
 170
 00:15:27,220 --> 00:15:34,720
-If you wind on core without secondary winding primary winding, it'll work.
+If you wind the primary winding on the core without the secondary, it'll work.
 
 171
 00:15:36,180 --> 00:15:40,120
-And may create impression that such core suits.
+And may create the impression that this core is suitable.
 
 172
 00:15:40,120 --> 00:15:44,700
-But as soon as on it wind secondary, it'll also enter saturation.
+But as soon as you wind the secondary on it, it'll also enter saturation.
 
 173
 00:15:45,560 --> 00:15:54,060
-So check exclusively, at least several tens of turns of secondary winding need apply on core.
+So you have to check exclusively with at least several tens of turns of the secondary winding on the core.
 
 174
 00:15:55,600 --> 00:16:01,560
-So, I installed step-up transformer with magnetic core of bigger cross-section.
+So, I installed the step-up transformer with a magnetic core of larger cross-section.
 
 175
 00:16:02,860 --> 00:16:04,700
-And now will test it.
+And now we'll test it.
 
 176
 00:16:04,700 --> 00:16:11,700
-Pay attention to how will now glow this load.
+Pay attention to how this load will glow now.
 
 177
 00:16:12,720 --> 00:16:20,140
-And pay attention to how will heat spiral of limiting lamp.
+And pay attention to how the spiral of the limiting lamp will heat up.
 
 178
 00:16:21,120 --> 00:16:30,580
-If in that experiment we connected and load at us barely glowed, and lamp instantly lit, then now look in this case.
+If in that experiment we connected and the load barely glowed while the lamp lit immediately, then look in this case.
 
 179
 00:16:31,500 --> 00:16:39,940
-See that lamp heats not immediately, and load shines much brighter.
+You see — the lamp doesn't heat up immediately, and the load shines much brighter.
 
 180
 00:16:40,480 --> 00:16:43,060
-That is testifies that scheme already started.
+This confirms the circuit has already started.
 
 181
 00:16:43,220 --> 00:16:48,020
-Well and hear sound of step-up transformer work.
+And you can hear the step-up transformer working.
 
 182
 00:16:48,920 --> 00:16:56,420
-Since we need system to work inaudibly, take its frequency to inaudible range.
+Since we need the system to work inaudibly, we move its frequency into the inaudible range.
 
 183
 00:16:57,420 --> 00:16:58,420
@@ -732,23 +732,23 @@ Here.
 
 184
 00:17:00,420 --> 00:17:03,380
-And system works quietly.
+And the system runs quietly.
 
 185
 00:17:04,000 --> 00:17:10,740
-Now consumption at us makes 13 Volts, 0.9 Amps.
+Now consumption is 13 V, 0.9 A.
 
 186
 00:17:10,820 --> 00:17:19,320
-And now can already check how will behave system at direct connection.
+And now we can already check how the system behaves with a direct connection.
 
 187
 00:17:20,720 --> 00:17:29,940
-See that lamp shines at full glow and system works.
+You see the lamp shines at full brightness and the system works.
 
 188
 00:17:32,300 --> 00:17:40,180
-Now show small nuance with which many not acquainted.
+Now I'll show a small nuance that many aren't familiar with.
 
 189
 00:17:41,180 --> 00:17:46,740
@@ -756,15 +756,15 @@ Pay attention to this capacitor.
 
 190
 00:17:46,740 --> 00:17:49,760
-One microfarad at 50 Volts, ceramic.
+1 µF at 50 V, ceramic.
 
 191
 00:17:50,280 --> 00:17:56,400
-Which is at eighth leg, directly near microchip itself.
+Which is at pin 8, directly next to the chip itself.
 
 192
 00:17:57,680 --> 00:18:01,080
-On board it here.
+On the board it's here.
 
 193
 00:18:01,980 --> 00:18:03,240
@@ -772,219 +772,219 @@ Very close.
 
 194
 00:18:04,040 --> 00:18:12,660
-Presence of it mandatory because ceramic capacitors by time discharge faster than electrolytic.
+Its presence is mandatory because ceramic capacitors release charge faster than electrolytics.
 
 195
 00:18:12,660 --> 00:18:21,500
-This improves gate opening system, that is faster saturates gate capacity.
+This improves the gate-opening system — that is, it saturates the gate capacitance faster.
 
 196
 00:18:22,120 --> 00:18:27,080
-And built-in drivers in microchip can more sharply open keys.
+And the built-in drivers in the chip can open the switches more sharply.
 
 197
 00:18:27,440 --> 00:18:33,460
-Since key opens sharper, then time of its switching much less.
+Since the switch opens more sharply, its switching time is much shorter.
 
 198
 00:18:33,960 --> 00:18:40,540
-Consequently, released heat on key will also strive to minimum.
+So the heat released in the switch tends to a minimum.
 
 199
 00:18:41,760 --> 00:18:46,700
-Now can check scheme on more serious load.
+Now we can check the circuit on a more serious load.
 
 200
 00:18:46,760 --> 00:18:57,360
-In this case I'll use load 60 W since my lab power supply gives 5 A maximum.
+In this case I'll use a 60 W load since my lab supply delivers 5 A maximum.
 
 201
 00:18:58,700 --> 00:19:04,600
-Now show how to tune with turns output of load.
+Now I'll show how to tune the output for the load with turn count.
 
 202
 00:19:05,180 --> 00:19:09,840
-Put at input directly and see, lamp lit.
+Put it at the input directly and look — the lamp's lit.
 
 203
 00:19:09,840 --> 00:19:16,040
-Now consumption at us makes 4 A 13 V.
+Now consumption is 4 A at 13 V.
 
 204
 00:19:19,680 --> 00:19:29,700
-In such mode somewhere on small load need turn on converter so it worked at you about 20 minutes.
+In this mode on a small load, you should run the converter for about 20 minutes.
 
 205
 00:19:32,540 --> 00:19:37,320
-Find out temperature mode of keys.
+To check the thermal mode of the switches.
 
 206
 00:19:38,170 --> 00:19:40,100
-Keys shouldn't strongly heat.
+The switches shouldn't heat up strongly.
 
 207
 00:19:40,860 --> 00:19:46,520
-Practically heating at such heat sink shouldn't be at all.
+With a heat sink like this, there practically shouldn't be any heating.
 
 208
 00:19:46,940 --> 00:19:53,460
-May be bit above room temperature at such load.
+Maybe a bit above room temperature at such a load.
 
 209
 00:19:54,060 --> 00:19:57,060
-Need test and observe converter.
+You need to test and observe the converter.
 
 210
 00:19:58,020 --> 00:20:06,740
-After this time, if you already convinced that all works, can move to loads with bigger rating.
+After this time, if you've confirmed everything works, you can move to bigger loads.
 
 211
 00:20:08,120 --> 00:20:15,680
-Now still do voltage measurement on load.
+Now let's also measure the voltage on the load.
 
 212
 00:20:15,980 --> 00:20:18,540
-For this we need tester.
+For this we need a multimeter.
 
 213
 00:20:35,790 --> 00:20:42,390
-So, we see that now on load at us 195 V.
+So we see we now have 195 V on the load.
 
 214
 00:20:46,150 --> 00:20:54,170
-There's sag, means now per shoulder at us goes 5 turns.
+There's a sag — meaning we have 5 turns per arm now.
 
 215
 00:20:54,250 --> 00:20:59,790
-If sag is, then need reduce turn count.
+If there's a sag, we need to reduce the turn count.
 
 216
 00:20:59,790 --> 00:21:05,890
-Saw in previous measurement that at us is sag by supply voltage.
+We saw in the previous measurement that there was a sag on the supply voltage.
 
 217
 00:21:07,270 --> 00:21:12,370
-So to raise voltage on lamp, at us two exits.
+So to raise the voltage on the lamp, we have two options.
 
 218
 00:21:12,450 --> 00:21:19,150
-Either we add turn count of secondary winding, or reduce turn count of primary winding.
+Either add turns to the secondary winding or reduce the primary turn count.
 
 219
 00:21:19,470 --> 00:21:25,350
-With primary winding need work carefully, that is remove by one turn.
+With the primary winding you need to work carefully — remove one turn at a time.
 
 220
 00:21:25,350 --> 00:21:28,890
-Here at me was 5 turns, now I made 4.
+I had 5 turns, now I made 4.
 
 221
 00:21:29,330 --> 00:21:31,110
-And observe, apply power.
+And observe — apply power.
 
 222
 00:21:33,950 --> 00:21:38,910
-And see that on lamp rating 230 V.
+And we see 230 V on the lamp.
 
 223
 00:21:39,030 --> 00:21:40,970
-Only I removed one turn.
+I only removed one turn.
 
 224
 00:21:41,410 --> 00:21:51,850
-Now at that consumption increased, precisely our converter reached powering 60 W load.
+Now consumption has gone up — our converter has reached the 60 W load power.
 
 225
 00:21:52,850 --> 00:21:55,430
-Such construction at me turned out.
+Here's the build I ended up with.
 
 226
 00:21:56,570 --> 00:22:04,570
-Step-up transformer itself installed with screw on heat sink through cardboard gasket.
+The step-up transformer is mounted with a screw to the heat sink through a cardboard gasket.
 
 227
 00:22:05,450 --> 00:22:08,770
-Primary winding stopped I at 5.5 turns.
+I settled on 5.5 turns for the primary.
 
 228
 00:22:08,910 --> 00:22:12,070
-Here it made, visible, white wire.
+Here it is — the white wire.
 
 229
 00:22:13,990 --> 00:22:19,410
-Installed regular diode bridge, 4 diodes and accumulator capacity.
+Installed a regular diode bridge — 4 diodes and reservoir cap.
 
 230
 00:22:19,410 --> 00:22:27,030
-Here also discharge resistance 820 kOhm at 1 W.
+Also a discharge resistor of 820 kΩ at 1 W.
 
 231
 00:22:29,050 --> 00:22:34,930
-For safety it serves so these capacities discharge after some time.
+It's for safety, so these caps discharge after some time.
 
 232
 00:22:36,370 --> 00:22:39,770
-Whole mounting done by hanging mount.
+The whole mount is done by hanging mount.
 
 233
 00:22:41,130 --> 00:22:46,650
-Visible track wiring, that is simplest making without board etching.
+You can see the track wiring — the simplest build without PCB etching.
 
 234
 00:22:50,350 --> 00:22:54,310
-Now will tune for start scheme.
+Now we'll tune the circuit first.
 
 235
 00:22:55,150 --> 00:22:58,750
-Pick with trimmer resistance optimal mode.
+Pick the optimal mode with a trim pot.
 
 236
 00:22:58,970 --> 00:23:00,230
-Show how this done.
+I'll show how this is done.
 
 237
 00:23:00,830 --> 00:23:05,490
-And then already move to full-scale testing on load.
+And then move to full testing under load.
 
 238
 00:23:07,450 --> 00:23:15,690
-To tune system by frequency that optimally corresponds to this core, we need load.
+To tune the system by frequency that optimally corresponds to this core, we need a load.
 
 239
 00:23:16,330 --> 00:23:19,430
-Lamp at 40 Voltmeter.
+A 40-volt lamp.
 
 240
 00:23:19,930 --> 00:23:26,330
-Or tester that we hook at output, directly it shows potential on lamp.
+Or a multimeter hooked to the output — it directly shows the potential on the lamp.
 
 241
 00:23:26,630 --> 00:23:28,750
-Well, or power source.
+Well, or a power source.
 
 242
 00:23:29,830 --> 00:23:38,570
-Whoever has no it, can take accumulator battery, charged well, and ammeter.
+For anyone who doesn't have one, you can take a well-charged battery and an ammeter.
 
 243
 00:23:38,650 --> 00:23:41,470
-Us will interest ammeter reading.
+We're interested in the ammeter reading.
 
 244
 00:23:41,470 --> 00:23:52,550
-Sense of tuning is that we'll observe voltage on lamp and achieve minimum consumption at which this voltage will preserve.
+The point of tuning is that we'll observe the voltage on the lamp and find the minimum consumption at which this voltage is maintained.
 
 245
 00:23:53,410 --> 00:24:00,410
-Before start of experiment switch slider of trimmer resistance to mode of minimum frequency.
+Before the experiment, switch the trim pot slider to the minimum frequency mode.
 
 246
 00:24:00,570 --> 00:24:02,170
-This about 12 kHz.
+That's about 12 kHz.
 
 247
 00:24:03,310 --> 00:24:06,770
-Will audible how works transformer.
+You'll hear the transformer working.
 
 248
 00:24:07,750 --> 00:24:09,590
@@ -992,47 +992,47 @@ So, apply power.
 
 249
 00:24:13,270 --> 00:24:14,770
-Here see consumption.
+Here's the consumption.
 
 250
 00:24:16,090 --> 00:24:20,770
-2.86 A, 13.9 V.
+2.86 A at 13.9 V.
 
 251
 00:24:20,930 --> 00:24:22,890
-Well and voltage on lamp 220 V.
+And the voltage on the lamp is 220 V.
 
 252
 00:24:23,070 --> 00:24:28,550
-Now I'll remove lamp slightly to side so it didn't shine in lens.
+Now I'll move the lamp slightly to the side so it doesn't shine in the lens.
 
 253
 00:24:28,550 --> 00:24:40,870
-Here now slightly squeaks step-up transformer, and start slowly rotating trimmer resistance.
+The step-up transformer is slightly squeaking — and I start slowly rotating the trim pot.
 
 254
 00:24:43,390 --> 00:24:46,310
-Observe current and voltage.
+Observing current and voltage.
 
 255
 00:24:50,840 --> 00:24:56,640
-Current, see, starts falling, and voltage preserves.
+The current, you see, starts falling, and the voltage stays.
 
 256
 00:24:59,840 --> 00:25:06,840
-There's point 221 V, 2.8 A consumption.
+There's a point — 221 V, 2.8 A consumption.
 
 257
 00:25:09,640 --> 00:25:14,680
-Further, observe with frequency increase, consumption grows.
+Further on, with frequency increase, consumption grows.
 
 258
 00:25:14,800 --> 00:25:23,920
-Return back and find this point of minimum consumption.
+Back off and find the minimum-consumption point.
 
 259
 00:25:23,920 --> 00:25:30,440
-This 2.8 A and voltage on lamp 221 V.
+That's 2.8 A and voltage on the lamp 221 V.
 
 260
 00:25:31,720 --> 00:25:32,880
@@ -1040,55 +1040,55 @@ Next action.
 
 261
 00:25:33,200 --> 00:25:45,480
-Unsolder resistance, measure and pick in replacement working stationary resistance that'll be installed on board.
+Unsolder the resistor, measure it, and pick a stationary working resistor to replace it that'll go on the board.
 
 262
 00:25:46,460 --> 00:25:50,920
-This will be installed instead of 10 kOhm.
+This goes in place of the 10 kΩ.
 
 263
 00:25:52,240 --> 00:25:55,920
-Resistance I unsoldered, here it, now we measure it.
+I unsoldered the resistor — here it is — now we measure it.
 
 264
 00:25:58,440 --> 00:26:06,600
-So, see resistance makes 3.2 kOhm.
+So we see the resistance is 3.2 kΩ.
 
 265
 00:26:07,660 --> 00:26:13,200
-And here at self I found such resistance, closest to it.
+And I found this resistor for myself — the closest to that value.
 
 266
 00:26:20,050 --> 00:26:24,670
-Its resistance 3.28 kOhm.
+Its resistance is 3.28 kΩ.
 
 267
 00:26:25,550 --> 00:26:26,930
-Which quite suits.
+Which suits well.
 
 268
 00:26:27,950 --> 00:26:32,330
-Can also use such trimmer resistances.
+You can also use these trim pots.
 
 269
 00:26:33,690 --> 00:26:37,430
-Immediately can buy them at 10 kOhm and install on board.
+You can buy them at 10 kΩ and install them on the board right away.
 
 270
 00:26:37,590 --> 00:26:41,210
-It multi-turn and can set operating point.
+It's multi-turn and you can set the operating point.
 
 271
 00:26:41,750 --> 00:26:50,670
-But since this device will be used on road, I nevertheless decided put resistance of such type.
+But since this device will be used on the road, I decided to use this type of resistor.
 
 272
 00:26:51,380 --> 00:26:54,090
-So, resistance I installed on board.
+So I installed the resistor on the board.
 
 273
 00:26:55,130 --> 00:26:57,290
-Now can check consumption.
+Now we can check consumption.
 
 274
 00:26:57,670 --> 00:26:59,130
@@ -1096,35 +1096,35 @@ Apply power.
 
 275
 00:27:00,110 --> 00:27:02,450
-See 221 volt.
+You see — 221 V.
 
 276
 00:27:03,510 --> 00:27:08,850
-And consumption 2.8 A.
+And consumption of 2.8 A.
 
 277
 00:27:09,170 --> 00:27:11,190
-That is it fully suits us.
+That fully suits us.
 
 278
 00:27:13,310 --> 00:27:16,730
-So, now all, move to tests.
+So now, on to the tests.
 
 279
 00:27:16,730 --> 00:27:27,870
-I so think, generally I planned to test this board, operate in range 120-150 W.
+I think I'd planned to test this board operating in the 120-150 W range.
 
 280
 00:27:28,010 --> 00:27:35,730
-Because my laptop in maximum consumes charging device 120 W.
+Because my laptop charger consumes a maximum of 120 W.
 
 281
 00:27:37,590 --> 00:27:42,810
-And so I'll operate it in range up to 50 W always.
+And so I'll always operate it in the up-to-50-W range.
 
 282
 00:27:42,810 --> 00:27:45,550
-So arrange for it check.
+So let's arrange a check for it.
 
 283
 00:27:46,170 --> 00:27:47,850
@@ -1132,11 +1132,11 @@ At 200 W.
 
 284
 00:27:48,130 --> 00:27:52,570
-Such small scheme, I think, will pull this.
+I think such a small circuit will pull this.
 
 285
 00:27:53,990 --> 00:28:00,790
-200 W this at us will be somewhere consumption at 12 V power.
+200 W will be consumption at 12 V power.
 
 286
 00:28:01,350 --> 00:28:03,110
@@ -1144,63 +1144,63 @@ Most likely about 15 A.
 
 287
 00:28:04,030 --> 00:28:06,470
-This power supply won't pull.
+This power supply won't pull it.
 
 288
 00:28:06,870 --> 00:28:12,170
-So I'll bring charging device for car accumulators.
+So I'll bring out a car battery charger.
 
 289
 00:28:12,810 --> 00:28:16,350
-Move to test on lamp 200 W.
+Moving to a test on a 200 W lamp.
 
 290
 00:28:17,330 --> 00:28:21,590
-While prepared, checked and happened such small accident.
+While I was preparing and checking, a small accident happened.
 
 291
 00:28:22,830 --> 00:28:28,410
-Didn't withstand these diodes in diode bridge EFR207.
+These EFR207 diodes in the diode bridge couldn't take it.
 
 292
 00:28:29,050 --> 00:28:34,430
-At 150 W worked excellently, and 200 W lamp didn't withstand.
+At 150 W it worked great, but the 200 W lamp didn't withstand.
 
 293
 00:28:34,430 --> 00:28:47,270
-Although at 230 V on 200 W lamp current 0.87 A through it passes.
+Although at 230 V on a 200 W lamp the current through it is 0.87 A.
 
 294
 00:28:47,830 --> 00:28:53,470
-And this current divided into 4 diodes they should normally feel.
+And this current divided into 4 diodes — they should handle it normally.
 
 295
 00:28:53,610 --> 00:28:55,570
-But one of them didn't withstand.
+But one of them didn't survive.
 
 296
 00:28:56,230 --> 00:28:58,450
-Moreover didn't withstand very interestingly.
+Moreover, it failed in an interesting way.
 
 297
 00:29:00,110 --> 00:29:02,030
-Tester shows that it whole.
+The multimeter shows it's intact.
 
 298
 00:29:02,030 --> 00:29:09,930
-And when do test for conductivity about 100 V, it starts to break through.
+And when you do a conductivity test at about 100 V, it starts breaking down.
 
 299
 00:29:10,390 --> 00:29:15,370
-Either got me defect or actually didn't withstand.
+Either I got a defective one, or it actually couldn't withstand.
 
 300
 00:29:15,510 --> 00:29:19,470
-But nevertheless I replaced them with diodes HER508.
+But anyway, I replaced them with HER508 diodes.
 
 301
 00:29:19,830 --> 00:29:21,990
-In scheme also this will reflect.
+This will be reflected in the schematic too.
 
 302
 00:29:23,990 --> 00:29:24,850
@@ -1208,27 +1208,27 @@ Launch.
 
 303
 00:29:26,070 --> 00:29:27,770
-Lamp 200 W.
+200 W lamp.
 
 304
 00:29:28,990 --> 00:29:32,490
-Recommend such power supplies.
+I recommend power supplies like this.
 
 305
 00:29:32,930 --> 00:29:34,670
-That is charging device.
+That is, a charger.
 
 306
 00:29:34,970 --> 00:29:37,070
-Also can use as power supply.
+You can also use it as a power supply.
 
 307
 00:29:37,690 --> 00:29:41,470
-At it set accumulator charge current.
+It sets the battery charge current.
 
 308
 00:29:41,610 --> 00:29:43,890
-But for our purposes also suits.
+But it works for our purposes too.
 
 309
 00:29:45,670 --> 00:29:46,190
@@ -1236,75 +1236,75 @@ Launch.
 
 310
 00:29:46,970 --> 00:29:51,630
-See on lamp 222 V.
+You see 222 V on the lamp.
 
 311
 00:29:52,270 --> 00:29:55,410
-Consumption slightly less 15 A.
+Consumption slightly less than 15 A.
 
 312
 00:29:56,170 --> 00:30:01,530
-On 200 W lamp there's some sag.
+There's some sag on the 200 W lamp.
 
 313
 00:30:03,070 --> 00:30:06,090
-Can reduce by one turn.
+You can reduce by one turn.
 
 314
 00:30:06,170 --> 00:30:08,050
-Then will be rating 230 V.
+Then we'd get 230 V nominal.
 
 315
 00:30:08,150 --> 00:30:11,110
-Or add still turns on secondary.
+Or add a few more turns on the secondary.
 
 316
 00:30:11,650 --> 00:30:19,370
-But me won't need on such power its work conduct.
+But I won't need to operate it at this power.
 
 317
 00:30:20,370 --> 00:30:30,050
-So this such test already with overload turns out.
+So this is a test already with overload.
 
 318
 00:30:33,990 --> 00:30:42,790
-In principle in trip or in field conditions consume from accumulator 15 A fast it'll drain.
+On a trip or in field conditions, drawing 15 A from a battery will drain it fast.
 
 319
 00:30:42,790 --> 00:30:50,910
-And besides consume now at that such lamps exist as LED.
+And besides — these days there are LED lamps.
 
 320
 00:30:51,210 --> 00:30:52,470
-No sense.
+[Incandescents] make no sense.
 
 321
 00:30:52,830 --> 00:30:55,770
-Because much heat it releases.
+Because they release a lot of heat.
 
 322
 00:30:56,010 --> 00:30:56,690
-Much eats.
+Eat a lot.
 
 323
 00:30:57,470 --> 00:30:58,170
-Yes, light.
+Light, yes.
 
 324
 00:31:00,870 --> 00:31:04,950
-But rest doesn't interest us.
+But the rest doesn't interest us.
 
 325
 00:31:05,130 --> 00:31:07,610
-So better work.
+So it works better.
 
 326
 00:31:08,610 --> 00:31:13,510
-Show how will be this system on LED lamp.
+Let me show what this system looks like on an LED lamp.
 
 327
 00:31:13,710 --> 00:31:15,750
-Consumes it only 11 W.
+It consumes only 11 W.
 
 328
 00:31:16,430 --> 00:31:22,330
@@ -1312,35 +1312,35 @@ And shines several times brighter than this 15 W lamp.
 
 329
 00:31:22,670 --> 00:31:25,790
-Even tens of times not compare absolutely.
+Tens of times — there's no comparison at all.
 
 330
 00:31:26,410 --> 00:31:29,770
-See that scheme works on lamp.
+You see the circuit works on the lamp.
 
 331
 00:31:30,030 --> 00:31:31,010
-Lamp glows.
+The lamp's glowing.
 
 332
 00:31:32,550 --> 00:31:38,790
-Power supply of charging device at maximum at its 15 A.
+The charger power supply is maxed out at 15 A.
 
 333
 00:31:41,610 --> 00:31:43,850
-What at us with heat sink.
+What about the heat sink?
 
 334
 00:31:43,990 --> 00:31:47,330
-Heat sink, I'll tell you so, degrees 60.
+The heat sink — I'd say about 60 degrees.
 
 335
 00:31:48,950 --> 00:31:51,470
-In principle fingers start to burn.
+Fingers start to burn.
 
 336
 00:31:52,750 --> 00:31:58,070
-So yes, much load for this converter 200 W.
+So yes, 200 W is heavy load for this converter.
 
 337
 00:31:58,150 --> 00:31:59,450
@@ -1348,35 +1348,35 @@ But nevertheless it works.
 
 338
 00:31:59,450 --> 00:32:02,490
-And moreover it works without forced cooling.
+And moreover, it works without forced cooling.
 
 339
 00:32:03,410 --> 00:32:08,250
-So up to 150 W it in acceptable temperature range.
+So up to 150 W it's in an acceptable temperature range.
 
 340
 00:32:08,550 --> 00:32:10,710
-Can work without fan.
+Can work without a fan.
 
 341
 00:32:10,790 --> 00:32:17,850
-And already there works order 50 W, 80 W.
+And at 50 W or 80 W operation.
 
 342
 00:32:18,010 --> 00:32:21,130
-To it absolutely not required additional blowing.
+It absolutely doesn't need additional airflow.
 
 343
 00:32:27,790 --> 00:32:29,490
-Such handicraft.
+Such a DIY thing.
 
 344
 00:32:29,490 --> 00:32:34,130
-Lazy converter turns out.
+A lazy converter, basically.
 
 345
 00:32:35,830 --> 00:32:38,090
-Whoever liked, repeat.
+Whoever liked it — repeat it.
 
 346
 00:32:47,860 --> 00:32:48,700
@@ -1384,7 +1384,7 @@ Turn off.
 
 347
 00:32:50,840 --> 00:32:55,200
-Now show how works lamp from this converter.
+Now I'll show how the lamp works from this converter.
 
 348
 00:32:55,500 --> 00:32:56,400
@@ -1392,7 +1392,7 @@ LED.
 
 349
 00:32:57,480 --> 00:33:00,760
-Consumption it here indicated.
+Its consumption is marked here.
 
 350
 00:33:01,280 --> 00:33:02,360
@@ -1400,31 +1400,31 @@ Consumption it here indicated.
 
 351
 00:33:03,960 --> 00:33:09,560
-And compare its glow with 15 W incandescent lamp.
+And compare its glow with a 15 W incandescent lamp.
 
 352
 00:33:10,940 --> 00:33:13,760
-Apply power to input.
+Apply power to the input.
 
 353
 00:33:15,720 --> 00:33:18,800
-Look how shines this lamp.
+Look how this lamp shines.
 
 354
 00:33:19,860 --> 00:33:21,180
-Simply glow of light.
+Just a flood of light.
 
 355
 00:33:21,980 --> 00:33:24,580
-Quite in field conditions this enough.
+In field conditions this is plenty.
 
 356
 00:33:24,680 --> 00:33:26,740
-At that here it now consumption.
+And here's the consumption.
 
 357
 00:33:27,740 --> 00:33:31,760
-At us 13.1 V.
+We have 13.1 V.
 
 358
 00:33:31,860 --> 00:33:39,340
@@ -1432,19 +1432,19 @@ Multiply by 0.72 A.
 
 359
 00:33:40,940 --> 00:33:44,900
-Get 9.5 W.
+We get 9.5 W.
 
 360
 00:33:45,880 --> 00:33:59,320
-Moreover very interesting that in microchip itself stands protection from drop of supply voltage so keys worked in optimal range.
+Moreover, the chip itself has protection from supply voltage drop so the switches work in the optimal range.
 
 361
 00:34:00,100 --> 00:34:05,540
-So if we'll lower voltage, say accumulator discharges.
+So if we lower the voltage — say the battery is discharging.
 
 362
 00:34:07,680 --> 00:34:11,780
-10.6 V lamp glows.
+10.6 V — the lamp is glowing.
 
 363
 00:34:15,380 --> 00:34:20,240
@@ -1452,15 +1452,15 @@ Threshold 8.4 V.
 
 364
 00:34:20,240 --> 00:34:22,440
-Still lamp glows.
+The lamp is still glowing.
 
 365
 00:34:23,980 --> 00:34:26,580
-But accumulator so at us never discharges.
+But the battery never discharges to that level for us.
 
 366
 00:34:27,360 --> 00:34:28,480
-This to it already kaput.
+That'd already be kaput.
 
 367
 00:34:28,740 --> 00:34:31,560
@@ -1468,11 +1468,11 @@ This to it already kaput.
 
 368
 00:34:32,920 --> 00:34:37,280
-Launch happens about 9 V.
+Startup happens around 9 V.
 
 369
 00:34:39,180 --> 00:34:47,520
-And now compare test with incandescent lamp 15 W.
+And now compare with a test of a 15 W incandescent.
 
 370
 00:34:48,520 --> 00:34:49,560
@@ -1480,59 +1480,59 @@ Connect.
 
 371
 00:34:52,180 --> 00:34:57,660
-And see that comparison none, naturally.
+And there's no comparison, naturally.
 
 372
 00:34:57,900 --> 00:35:05,640
-So no sense in field conditions use these converters for work of incandescent lamps.
+So there's no point in field conditions to use these converters for incandescent lamps.
 
 373
 00:35:06,540 --> 00:35:09,180
-Now two lamps consumption.
+Now two-lamp consumption.
 
 374
 00:35:11,460 --> 00:35:16,400
-12.8 W.
+12.8 V.
 
 375
 00:35:16,400 --> 00:35:21,020
-1.74 W.
+1.74 A.
 
 376
 00:35:23,980 --> 00:35:28,260
-Here 22.3 W approximately.
+About 22.3 W.
 
 377
 00:35:31,580 --> 00:35:35,900
-So recommend to use such lamps.
+So I recommend using LED lamps.
 
 378
 00:35:37,720 --> 00:35:39,600
-Next part of video.
+Next part of the video.
 
 379
 00:35:40,060 --> 00:35:41,480
-Small continuation.
+A short continuation.
 
 380
 00:35:41,600 --> 00:35:45,940
-Most likely will be uninteresting to those experienced in these matters.
+Most likely it'll be uninteresting to those experienced in these matters.
 
 381
 00:35:46,760 --> 00:35:49,620
-And will give some advice to beginners.
+I'll give some advice to beginners.
 
 382
 00:35:50,260 --> 00:35:56,480
-What tools needed to make this lazy handicraft.
+What tools are needed to make this lazy DIY.
 
 383
 00:35:58,880 --> 00:36:01,760
-Now still moment measure.
+Now another moment — measure.
 
 384
 00:36:01,760 --> 00:36:06,520
-So how much it generally without load eats.
+How much does it draw without a load.
 
 385
 00:36:07,580 --> 00:36:09,240
@@ -1552,239 +1552,239 @@ Now multiply.
 
 389
 00:36:28,060 --> 00:36:32,700
-12.8 multiply by 0.07.
+12.8 times 0.07.
 
 390
 00:36:38,100 --> 00:36:39,880
-What at us?
+What do we have?
 
 391
 00:36:41,340 --> 00:36:44,680
-0.9 W idle stroke.
+0.9 W at idle.
 
 392
 00:36:46,740 --> 00:36:51,240
-In principle quite not bad.
+Pretty good actually.
 
 393
 00:36:51,520 --> 00:36:55,500
-For such thingy without any stabilizations.
+For this kind of thing, without any stabilization.
 
 394
 00:36:56,960 --> 00:37:05,020
-Minimum gentleman's set of tools for beginning radio amateur.
+A minimum gentleman's tool kit for a beginner radio amateur.
 
 395
 00:37:06,100 --> 00:37:10,520
-Who wants to repeat this converter.
+Who wants to replicate this converter.
 
 396
 00:37:12,240 --> 00:37:15,240
-Accordingly we need screwdriver or drill.
+Accordingly, we need a screwdriver or drill.
 
 397
 00:37:16,760 --> 00:37:23,760
-Because we require to drill hole under fastening bolts.
+Because we need to drill holes for fastening bolts.
 
 398
 00:37:23,760 --> 00:37:28,940
-Fastening of board itself and transistors.
+Fastening the board itself and the transistors.
 
 399
 00:37:29,260 --> 00:37:34,080
-Or I fastened with bolt step-up transformer.
+And I attached the step-up transformer with a bolt.
 
 400
 00:37:35,560 --> 00:37:37,700
-This first.
+That's the first thing.
 
 401
 00:37:38,580 --> 00:37:40,540
-What drills will be needed?
+What drills will we need?
 
 402
 00:37:42,000 --> 00:37:48,920
-Drill we'll need diameter 3.2 mm.
+We'll need a 3.2 mm drill.
 
 403
 00:37:48,920 --> 00:37:59,300
-This so these bolts with outer size 3 mm passed through.
+So that these bolts with 3 mm outer size pass through.
 
 404
 00:38:00,320 --> 00:38:14,660
-And also we'll need drill diameter 2.6 mm.
+And we'll also need a 2.6 mm drill.
 
 405
 00:38:18,480 --> 00:38:22,580
-Can take 2.5 mm in sale.
+You can buy 2.5 mm in stores.
 
 406
 00:38:24,280 --> 00:38:31,040
-So we drilled hole in heat sink.
+So we drilled a hole in the heat sink.
 
 407
 00:38:31,560 --> 00:38:39,700
-And could with tap help, thread number at it M3, cut thread there.
+And we could, with the tap — the M3 thread — cut a thread there.
 
 408
 00:38:40,200 --> 00:38:42,120
-Thread should cut carefully.
+Tap the thread carefully.
 
 409
 00:38:42,120 --> 00:38:46,520
-If this aluminum, metal viscous, can quite break tap.
+If it's aluminum, the metal is viscous, and you can easily break the tap.
 
 410
 00:38:46,720 --> 00:38:52,380
-So advise when cut thread, smear it with some lubricant.
+So I'd suggest greasing it with some lubricant when tapping.
 
 411
 00:38:52,840 --> 00:38:55,900
-Simplest smear with liquid WD-40.
+Simplest is to use WD-40.
 
 412
 00:38:59,380 --> 00:39:02,760
-Two drills and tap don't forget.
+Two drills and the tap, don't forget.
 
 413
 00:39:02,760 --> 00:39:13,240
-Add tweezers, very helps in soldering small details.
+Add tweezers — very helpful for soldering small parts.
 
 414
 00:39:14,460 --> 00:39:20,620
-Cutting tool, side cutters and small round-nose pliers.
+Cutting tools — side cutters and small round-nose pliers.
 
 415
 00:39:22,580 --> 00:39:30,140
-Wire that I used for primary winding 5.5 turns.
+The wire I used for the 5.5-turn primary winding.
 
 416
 00:39:31,140 --> 00:39:45,300
-Single-core, its core makes 1.1 mm.
+Single-core, its core is 1.1 mm.
 
 417
 00:39:45,820 --> 00:39:53,540
-And by outside it goes 1.8 mm by insulation.
+And it's 1.8 mm with insulation outside.
 
 418
 00:39:53,540 --> 00:40:00,320
-Wire with which wound secondary step-up winding, here this red.
+The wire I wound the step-up secondary with — this red one.
 
 419
 00:40:02,360 --> 00:40:04,540
-Now it also measure.
+Now let's measure it too.
 
 420
 00:40:07,760 --> 00:40:22,760
-0.7 mm core and insulation 1.4 mm.
+0.7 mm core and 1.4 mm with insulation.
 
 421
 00:40:27,980 --> 00:40:35,320
-When wound on this core, how laid.
+When wound on this core, here's how it's laid.
 
 422
 00:40:35,920 --> 00:40:42,880
-Laid one layer turn to turn, without omissions fully around circumference.
+First layer turn-to-turn, with no gaps around the full circumference.
 
 423
 00:40:42,980 --> 00:40:46,160
-Then second layer also by inner turn to turn.
+Then the second layer also from the inside, turn-to-turn.
 
 424
 00:40:46,280 --> 00:40:50,320
-And third layer with this wire laid turn to turn.
+And the third layer is laid with this wire turn-to-turn.
 
 425
 00:40:50,320 --> 00:40:52,520
-That is in three layers wound.
+So it's wound in three layers.
 
 426
 00:40:52,600 --> 00:41:01,200
-And somewhere this enough on this core so we had under load 220 volts on lamp.
+And that was enough on this core for us to get 220 V on the lamp under load.
 
 427
 00:41:03,060 --> 00:41:07,100
-Voltage this already individually with turn count adjust.
+You adjust the voltage individually with the turn count.
 
 428
 00:41:07,360 --> 00:41:10,460
-If wire will be slightly different, no problem.
+If the wire is slightly different — no problem.
 
 429
 00:41:11,320 --> 00:41:27,400
-Besides that buy radio parts by list of this scheme, don't forget mandatorily acquire thermal paste KPT.
+Besides buying the radio parts per the list of this schematic, don't forget to mandatorily get KPT thermal paste.
 
 430
 00:41:27,560 --> 00:41:31,520
-At me 19 non-drying thermal paste.
+Mine is KPT-19 non-drying thermal paste.
 
 431
 00:41:32,480 --> 00:41:40,200
-And if in sale mica gaskets under transistors, but this now rarity.
+And if you can find mica insulating pads for transistors — though they're rare now.
 
 432
 00:41:41,000 --> 00:41:46,500
-Most often can find such material that on top polyethylene.
+Most often you can find this material that has polyethylene on top.
 
 433
 00:41:47,520 --> 00:41:49,640
-And it from dust protects.
+It protects from dust.
 
 434
 00:41:50,700 --> 00:41:57,860
-This thermal-conducting material, at that it's insulating.
+This is a thermal-conductive material, while being insulating.
 
 435
 00:41:58,000 --> 00:42:03,860
-Because can't mount transistors directly on heat sink.
+Because you can't mount transistors directly on the heat sink.
 
 436
 00:42:03,860 --> 00:42:14,480
-Because this lead, in which fastened bolt, it's by combination with current.
+Because this lead, where the bolt is fastened, is connected to the current.
 
 437
 00:42:14,820 --> 00:42:19,660
-And if fasten simply directly on metal, will be short circuit.
+And if you fasten directly to metal, there will be a short circuit.
 
 438
 00:42:19,660 --> 00:42:22,080
-So use of gasket mandatory.
+So a gasket is mandatory.
 
 439
 00:42:22,640 --> 00:42:34,380
-Gasket placed at least by 3 mm further this contact, cooling surface.
+The gasket is placed at least 3 mm beyond this contact, the cooling surface.
 
 440
 00:42:35,820 --> 00:42:43,460
-Smeared with thermal paste and transistor installed on such substrate.
+Smeared with thermal paste, and the transistor is installed on this substrate.
 
 441
 00:42:43,460 --> 00:42:49,120
-And still such small thing that can forget.
+And there's another small thing you might forget.
 
 442
 00:42:49,760 --> 00:42:56,680
-Such plastic gaskets.
+These plastic insulator washers.
 
 443
 00:42:56,720 --> 00:43:06,380
-They put on screw with which fastened transistor to heat sink.
+They go on the screw that fastens the transistor to the heat sink.
 
 444
 00:43:07,380 --> 00:43:14,580
-And if put on, gasket gets in eye of transistor.
+And when in place, the gasket sits in the transistor's eye.
 
 445
 00:43:15,860 --> 00:43:27,980
-And prevents contact of fastening bolt with metal lead of transistor.
+And prevents contact between the fastening bolt and the metal lead of the transistor.
 
 446
 00:43:28,980 --> 00:43:37,000
-Also critical thing because if simply screw, will be short circuit.
+Also a critical thing, because if you just screw it in, there'll be a short circuit.
 
 447
 00:43:38,780 --> 00:43:40,800
-Well and in principle all.
+And basically that's all.
 
 448
 00:43:41,240 --> 00:43:44,980
@@ -1792,196 +1792,196 @@ Soldering iron and solder.
 
 449
 00:43:46,500 --> 00:43:57,440
-Some time, but if no experience, you may need with breaks about day for making such thingy.
+If you have no experience, you might need about a day with breaks to make this thing.
 
 450
 00:43:57,440 --> 00:44:01,340
-Say, I made it in one day.
+For me it took one day.
 
 451
 00:44:02,820 --> 00:44:09,400
-Literally 5-6 hours me required to wind, assemble, tune.
+Literally 5-6 hours to wind, assemble, and tune.
 
 452
 00:44:10,340 --> 00:44:12,360
-Now by mounting.
+Now about the mounting.
 
 453
 00:44:13,700 --> 00:44:18,240
-There are several rules useful to know beginners.
+There are a few rules useful for beginners.
 
 454
 00:44:19,380 --> 00:44:23,180
-This mounting of power electronics.
+This is power electronics mounting.
 
 455
 00:44:24,180 --> 00:44:31,860
-These leads going from microchip through resistance to transistors, smallest length.
+The leads going from the chip through the resistor to the transistors should be the shortest possible length.
 
 456
 00:44:32,120 --> 00:44:36,740
-Generally all that controls transistors should be as short as possible.
+In general everything that controls the transistors should be as short as possible.
 
 457
 00:44:36,880 --> 00:44:42,660
-That is microchip directly located most close to power keys.
+That is, the chip is located closest to the power switches.
 
 458
 00:44:44,480 --> 00:44:53,700
-Thereby you reduce pickups, parasitic ringing and other negative phenomena that may be at converter work.
+This way you reduce pickups, parasitic ringing, and other negative phenomena that may show up during converter operation.
 
 459
 00:44:55,360 --> 00:44:58,660
-About this capacity I explained for what it needed.
+I already explained why this cap is needed.
 
 460
 00:44:59,880 --> 00:45:01,520
-Put it mandatorily.
+Mandatorily put it in.
 
 461
 00:45:02,060 --> 00:45:05,080
-This ceramic capacitor.
+This is a ceramic capacitor.
 
 462
 00:45:06,660 --> 00:45:12,560
-Ceramic capacitors at 50 volts, here these, yellow, such color.
+Ceramic capacitors at 50 V — like these, yellow color.
 
 463
 00:45:12,920 --> 00:45:17,940
-And see, work with density of mounting as dense as possible.
+And work with mounting density as tight as possible.
 
 464
 00:45:17,940 --> 00:45:21,220
-So we didn't have big distances between details.
+So we don't have big distances between parts.
 
 465
 00:45:21,680 --> 00:45:25,280
-They practically all located close to each other.
+They're practically all next to each other.
 
 466
 00:45:28,300 --> 00:45:31,440
-Diode bridge already no difference how you make it.
+The diode bridge — doesn't matter how you make it.
 
 467
 00:45:32,540 --> 00:45:33,860
-Accumulator capacity.
+Reservoir cap.
 
 468
 00:45:34,060 --> 00:45:36,720
-And this resistance don't forget put.
+And don't forget to put this resistor in.
 
 469
 00:45:38,300 --> 00:45:46,940
-Because residual charge on capacitors, if it doesn't discharge, can get and will be very unpleasant.
+Because residual charge on the capacitors — if it doesn't discharge — you can get hit, and it'll be very unpleasant.
 
 470
 00:45:48,680 --> 00:45:53,460
-After this matter voltage may be high, and here residual.
+After this thing the voltage can be high, and here's residual.
 
 471
 00:45:54,820 --> 00:45:58,840
-These leads don't pay attention, this at me leads further.
+Don't pay attention to these leads, those are my taps further on.
 
 472
 00:45:59,580 --> 00:46:03,440
-Here 70 volts and here 135 volts.
+Here 70 V and here 135 V.
 
 473
 00:46:03,740 --> 00:46:06,040
-Relative to start wire.
+Relative to the start of the wire.
 
 474
 00:46:07,380 --> 00:46:18,560
-Well and if operate so up to 50 watts, can fully put in some box, even not leaving hole for cooling.
+And if operating up to 50 W, you can fully put it in some box, even without leaving cooling holes.
 
 475
 00:46:19,300 --> 00:46:25,920
-If more 50 watts, can this heat sink so it stuck out from box for cooling.
+If more than 50 W, you can position the heat sink so it sticks out of the box for cooling.
 
 476
 00:46:27,060 --> 00:46:34,420
-By heat sink its dimensions make 6 centimeters length.
+The heat sink dimensions are 6 cm in length.
 
 477
 00:46:37,820 --> 00:46:42,020
-Width practically 3.5 centimeters.
+Width practically 3.5 cm.
 
 478
 00:46:42,900 --> 00:46:51,900
-And this size at us makes 1.7 centimeters.
+And this dimension is 1.7 cm.
 
 479
 00:46:52,560 --> 00:47:03,880
-Pay attention that when will pick heat sink, this part, it was as thick as possible relative to these cooling ribs.
+When you pick a heat sink, this part should be as thick as possible relative to these cooling ribs.
 
 480
 00:47:04,660 --> 00:47:07,560
-Well and so in principle all, nothing tricky here.
+And basically that's all — nothing tricky here.
 
 481
 00:47:07,700 --> 00:47:10,780
-All can tune without presence of devices.
+You can tune it all without instruments.
 
 482
 00:47:11,740 --> 00:47:15,820
-How this do I already showed and this thingy immediately launches.
+I already showed how to do that, and this thing starts up right away.
 
 483
 00:47:17,260 --> 00:47:22,320
-Small its minus is that this scheme without feedback.
+A small downside is that this circuit is open-loop.
 
 484
 00:47:22,320 --> 00:47:28,620
-If leave it without load, here may accumulate high potential.
+If you leave it without load, high potential can build up here.
 
 485
 00:47:29,300 --> 00:47:33,900
-Much higher 350 volts.
+Significantly above 350 V.
 
 486
 00:47:35,200 --> 00:47:38,820
-Capacitor I took here at 450, this enough.
+I took a 450 V capacitor — that's enough.
 
 487
 00:47:40,780 --> 00:47:45,020
-But I'll bit still conjure over this scheme.
+But I'll tinker with this circuit a bit more.
 
 488
 00:47:46,260 --> 00:47:49,080
-This scheme also will lay out, then show how works.
+I'll lay out this circuit, then show how it works.
 
 489
 00:47:50,040 --> 00:47:53,840
-This microchip has one wonderful property.
+This chip has one wonderful property.
 
 490
 00:47:53,980 --> 00:48:03,840
-If on this third lead apply logical zero, accordingly simply apply minus of power source, it stops generation.
+If you apply logical zero to pin 3 — simply apply minus of the power source — it stops generation.
 
 491
 00:48:04,000 --> 00:48:10,120
-I think on this principle can make voltage feedback.
+I think on this principle you can make voltage feedback.
 
 492
 00:48:10,120 --> 00:48:17,360
-For example so, at 330 volts by DC, so at output it held.
+For example, to hold 330 V DC at the output.
 
 493
 00:48:17,780 --> 00:48:23,340
-Reach 330 volts on capacity and microchip stops generation.
+The cap reaches 330 V and the chip stops generation.
 
 494
 00:48:24,520 --> 00:48:28,600
-Something simplest will make, then also this scheme will give.
+I'll make something simple — then I'll share the schematic.
 
 495
 00:48:29,700 --> 00:48:38,980
-Here mark, before print this scheme, send to my Yandex.Disk.
+Marking here — before I print this schematic, sending it to my Yandex.Disk.
 
 496
 00:48:38,980 --> 00:48:43,540
-I here mark still diodes, HER508.
+I'll mark the HER508 diodes too.
 
 497
 00:48:44,200 --> 00:48:45,580
-Well and so in principle all.
+And basically that's all.
