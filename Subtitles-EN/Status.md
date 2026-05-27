@@ -50,11 +50,11 @@
 | 63-EN.srt | OK | 1 | https://www.youtube.com/watch?v=YohJeG2DsSA |
 | 64-EN.srt | OK | 1 | https://www.youtube.com/watch?v=YkyeKCnzU3Y |
 | 65-EN.srt | OK | 1 | https://www.youtube.com/watch?v=wZa8qY2Wexs |
-| 66-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=COeDltHrnFk |
-| 67-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=pqnAOg8JYR4 |
-| 68-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=VYao_B_sc7A |
-| 69-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=NBtANMN1DpI |
-| 70-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=3mHqxYVlc1Q |
+| 66-EN.srt | OK | 1 | https://www.youtube.com/watch?v=COeDltHrnFk |
+| 67-EN.srt | OK | 1 | https://www.youtube.com/watch?v=pqnAOg8JYR4 |
+| 68-EN.srt | OK | 1 | https://www.youtube.com/watch?v=VYao_B_sc7A |
+| 69-EN.srt | OK | 1 | https://www.youtube.com/watch?v=NBtANMN1DpI |
+| 70-EN.srt | OK | 1 | https://www.youtube.com/watch?v=3mHqxYVlc1Q |
 | 71-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=F7QsxQFYb2A |
 | 72-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=G_GflTLJlZY |
 | 73-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=NvbaEO8ue0o |
