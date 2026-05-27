@@ -49,7 +49,7 @@
 | 62-EN.srt | OK | 1 | https://www.youtube.com/watch?v=YviOIfaNKYA |
 | 63-EN.srt | OK | 1 | https://www.youtube.com/watch?v=YohJeG2DsSA |
 | 64-EN.srt | OK | 1 | https://www.youtube.com/watch?v=YkyeKCnzU3Y |
-| 65-EN.srt | OK | +1 | https://www.youtube.com/watch?v=wZa8qY2Wexs |
+| 65-EN.srt | OK | 1 | https://www.youtube.com/watch?v=wZa8qY2Wexs |
 | 66-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=COeDltHrnFk |
 | 67-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=pqnAOg8JYR4 |
 | 68-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=VYao_B_sc7A |
