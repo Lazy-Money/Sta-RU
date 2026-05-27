@@ -7,7 +7,7 @@
 | 5-EN.srt | OK | 1 | https://www.youtube.com/watch?v=EwVWW89JMEM |
 | 6-EN.srt | OK | 1 | https://www.youtube.com/watch?v=2ylifwWtjlY |
 | 7-EN.srt | OK | 1 | https://www.youtube.com/watch?v=lR3WPeITlsQ |
-| 8-EN.srt | OK | to check | https://www.youtube.com/watch?v=qqQCNej_m3Q |
+| 8-EN.srt | OK | Vacío | https://www.youtube.com/watch?v=qqQCNej_m3Q |
 | 9-EN.srt | OK | 1 | https://www.youtube.com/watch?v=wUVdeT9pxqs |
 | 10-EN.srt | OK | 1 | https://www.youtube.com/watch?v=txTNtCPtFII |
 | 11-EN.srt | OK | 1 | https://www.youtube.com/watch?v=PrrcnQz3sVk |
