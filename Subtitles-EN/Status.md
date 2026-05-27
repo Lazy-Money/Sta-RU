@@ -20,11 +20,11 @@
 | 18-EN.srt | Vacío - nadie habla en el video | - | https://www.youtube.com/watch?v=bVlQ2zH8i3E |
 | 19-EN.srt | Vacío - solo se oía un audiobook de fondo | - | https://www.youtube.com/watch?v=wkbRbQ_r8AA |
 | 20-EN.srt | OK | 1 | https://www.youtube.com/watch?v=BY1DRQHvcQ0 |
-| 21-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=el1SkfaHmsI |
-| 22-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=tnb8gUifKgk |
-| 23-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=MA7h1G_dvOo |
-| 24-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=1x6GSQ3GXBM |
-| 25-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=__pfVMPdkAU |
+| 21-EN.srt | OK | 1 | https://www.youtube.com/watch?v=el1SkfaHmsI |
+| 22-EN.srt | A resolver - 3 segs con duración cero (184, 191, 197) | 1 | https://www.youtube.com/watch?v=tnb8gUifKgk |
+| 23-EN.srt | OK | 1 | https://www.youtube.com/watch?v=MA7h1G_dvOo |
+| 24-EN.srt | OK | +1 | https://www.youtube.com/watch?v=1x6GSQ3GXBM |
+| 25-EN.srt | OK | 1 | https://www.youtube.com/watch?v=__pfVMPdkAU |
 | 26-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=-Zu6sQgo3M8 |
 | 27-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=_WHERwU--DQ |
 | 28-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=PBUp550HW8k |
