@@ -65,11 +65,11 @@
 | 78-EN.srt | OK | 1 | https://www.youtube.com/watch?v=dFgz_UiUwxs |
 | 79-EN.srt | OK | 1 | https://www.youtube.com/watch?v=RYWMjoPBN2w |
 | 80-EN.srt | OK | 1 | https://www.youtube.com/watch?v=dhakukN1ze0 |
-| 81-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=HFDkFOKfAx0 |
-| 82-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=_wjrmI7Y6Ps |
-| 83-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=K1gRxgT1tP0 |
-| 84-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=b2-SjbjftvA |
-| 85-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=OM0mwwyAbks |
+| 81-EN.srt | OK | 1 | https://www.youtube.com/watch?v=HFDkFOKfAx0 |
+| 82-EN.srt | OK | 1 | https://www.youtube.com/watch?v=_wjrmI7Y6Ps |
+| 83-EN.srt | OK | 1 | https://www.youtube.com/watch?v=K1gRxgT1tP0 |
+| 84-EN.srt | OK | 1 | https://www.youtube.com/watch?v=b2-SjbjftvA |
+| 85-EN.srt | OK | 1 | https://www.youtube.com/watch?v=OM0mwwyAbks |
 | 86-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=PfkWBsRVSi4 |
 | 87-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=Ogu_BKwm6f4 |
 | 88-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=MrtLezIW39U |
