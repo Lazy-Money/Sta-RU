@@ -30,11 +30,11 @@
 | 28-EN.srt | OK | 1 | https://www.youtube.com/watch?v=PBUp550HW8k |
 | 29-EN.srt | OK | +1 | https://www.youtube.com/watch?v=tujYRJrqpyE |
 | 30-EN.srt | OK | +1 | https://www.youtube.com/watch?v=fyhtEa-jvGo |
-| 46-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=XDXTxPRPxSU |
-| 47-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=jCest-tcObc |
-| 48-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=NGG8Hk68Ikw |
-| 49-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=jeEaKI1TZ3s |
-| 50-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=Bhc1xFNgrVA |
+| 46-EN.srt | OK | 1 | https://www.youtube.com/watch?v=XDXTxPRPxSU |
+| 47-EN.srt | OK | 1 | https://www.youtube.com/watch?v=jCest-tcObc |
+| 48-EN.srt | OK | 1 | https://www.youtube.com/watch?v=NGG8Hk68Ikw |
+| 49-EN.srt | OK | 1 | https://www.youtube.com/watch?v=jeEaKI1TZ3s |
+| 50-EN.srt | OK | 1 | https://www.youtube.com/watch?v=Bhc1xFNgrVA |
 | 51-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=pNFXlo5jv4g |
 | 52-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=oCAy88JFeA4 |
 | 53-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=Dp5yGfWJzHI |
