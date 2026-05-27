@@ -1,282 +1,282 @@
 1
 00:00:00,000 --> 00:00:01,580
-Greetings everyone.
+Hi everyone.
 
 2
 00:00:02,460 --> 00:00:17,380
-Today want to acquaint you with one wonderful microchip that got wide spread, on which can assemble converters with galvanic isolation by flyback topology, that is
+Today I want to introduce you to a wonderful chip that has become widespread, on which you can assemble galvanically isolated converters with flyback topology — that is,
 
 3
 00:00:17,380 --> 00:00:19,220
-reverse-stroke converter.
+a flyback converter.
 
 4
 00:00:20,160 --> 00:00:29,460
-Acquainted with this microchip I accidentally during trip to my internet acquaintance.
+I got acquainted with this chip by chance during a trip to an internet acquaintance.
 
 5
 00:00:30,000 --> 00:00:39,320
-And there we encountered such problem that this converter underdelivered voltage at output.
+And there we encountered the issue that this converter was undervoltage at the output.
 
 6
 00:00:40,220 --> 00:00:49,980
-In field conditions to figure out was unreal, wasn't necessary equipment, and skills of working with this microchip.
+Working it out in the field was unrealistic — there was no necessary equipment, and no skills for working with this chip.
 
 7
 00:00:50,160 --> 00:00:57,420
-And upon arriving home I decided to master it since potential at this microchip quite big.
+And after arriving home I decided to master it, since this chip has quite a lot of potential.
 
 8
 00:00:58,420 --> 00:01:02,800
-What can note about this microchip?
+What can be noted about this chip?
 
 9
 00:01:03,660 --> 00:01:07,860
-It made in different cases.
+It's made in different packages.
 
 10
 00:01:09,040 --> 00:01:13,320
-I prefer to work in DIP cases.
+I prefer to work in DIP packages.
 
 11
 00:01:13,800 --> 00:01:16,300
-Here such it small, eight-pin.
+It's small here, 8-pin.
 
 12
 00:01:16,840 --> 00:01:22,520
-There's also for surface SMD mount in same case.
+There's also a surface-mount SMD version in the same kind of package.
 
 13
 00:01:22,520 --> 00:01:39,260
-Main scheme elements will be master microchip itself, key, converter core and high-speed Schottky diode.
+The main circuit elements will be the controller chip itself, the switch, the converter core, and a high-speed Schottky diode.
 
 14
 00:01:41,200 --> 00:01:51,380
-Want to note that in this converter this part isn't transformer but kind of choke.
+I want to note that in this converter this part isn't a transformer but a kind of choke.
 
 15
 00:01:52,520 --> 00:02:03,280
-At commutation of primary winding of this choke with key help happens sharp hit.
+On switching of the choke's primary winding with the switch, a sharp kick happens.
 
 16
 00:02:04,160 --> 00:02:17,140
-Choke stores energy in core in form of magnetic field and further during pause through secondary winding dumps it into load.
+The choke stores energy in the core as a magnetic field, and then during the pause dumps it into the load through the secondary winding.
 
 17
 00:02:18,760 --> 00:02:24,180
-Microchip has two feedbacks.
+The chip has two feedbacks.
 
 18
 00:02:25,200 --> 00:02:33,380
-First feedback by voltage, realized it through optocoupler PC817.
+First, voltage feedback, implemented through a PC817 optocoupler.
 
 19
 00:02:33,380 --> 00:02:38,160
-And second feedback goes by current.
+And second, current feedback.
 
 20
 00:02:39,480 --> 00:02:48,760
-Realized it on resistance that placed in source circuit of FET transistor.
+It's done on a resistor placed in the source circuit of the FET.
 
 21
 00:02:49,560 --> 00:02:59,800
-By picking rating of this resistance we ultimately regulate current passing through key.
+By picking this resistor's value we ultimately regulate the current passing through the switch.
 
 22
 00:02:59,800 --> 00:03:07,540
-But not by limiting its resistance, but by means of feedback that goes to third leg.
+Not by limiting its resistance, but by means of feedback that goes to pin 3.
 
 23
 00:03:08,260 --> 00:03:20,920
-And microchip, tracking voltage drop on this resistance, changes duration of pulse that controls FET transistor gate.
+And the chip, tracking the voltage drop across this resistor, changes the duration of the pulse driving the FET gate.
 
 24
 00:03:22,940 --> 00:03:28,180
-Further examine details that suit for realization of this converter.
+Next, let's look at the parts suitable for building this converter.
 
 25
 00:03:29,800 --> 00:03:31,980
-With microchip we acquainted.
+We've covered the chip.
 
 26
 00:03:32,520 --> 00:03:36,840
-Optocoupler PC817 looks so.
+The PC817 optocoupler looks like this.
 
 27
 00:03:37,880 --> 00:03:47,920
-By the way, whoever doesn't know how to count leads on microchips or optocouplers, there's dot on case.
+By the way, for those who don't know how to count pins on chips or optocouplers, there's a dot on the case.
 
 28
 00:03:48,180 --> 00:03:51,900
-This and will be first lead of microchip.
+That's pin 1 of the chip.
 
 29
 00:03:51,900 --> 00:03:56,280
-Dot I marked near first lead.
+I marked the dot near pin 1.
 
 30
 00:03:57,280 --> 00:04:02,320
-And legs of optocoupler correspond to drawing.
+And the optocoupler pins correspond to the drawing.
 
 31
 00:04:02,660 --> 00:04:08,960
-Also full correspondence of legs same as they located at microchip.
+Full pin correspondence, same as on the chip.
 
 32
 00:04:09,060 --> 00:04:15,200
-Counted leg count counter-clockwise from dot on case.
+Pins are counted counter-clockwise from the dot on the case.
 
 33
 00:04:16,200 --> 00:04:22,200
-By keys that may be used in this scheme.
+About the switches you can use in this circuit.
 
 34
 00:04:22,980 --> 00:04:38,700
-Since power rating with us will be up to 18 volts, key works in pulse mode, then arise some moments of voltage spikes.
+Since our supply rating will be up to 18 V, the switch works in pulse mode and voltage spikes can appear.
 
 35
 00:04:38,700 --> 00:04:50,090
-And so this voltage spike didn't break transistor, need to choose it by voltage with certain reserve, that is from 60 volts.
+And so that this voltage spike doesn't break down the transistor, we need to choose it with some voltage margin — from 60 V.
 
 36
 00:04:50,090 --> 00:05:03,590
-In this case I cited here name, this transistor FR120N, made in case for SMD mount.
+In this case I gave the name here — this transistor FR120N, in a package for SMD mount.
 
 37
 00:05:04,730 --> 00:05:10,710
-And IRF540, in such case.
+And an IRF540 in this kind of package.
 
 38
 00:05:11,110 --> 00:05:15,710
-That is these transistors have rating by voltage 100 volts.
+These transistors are rated 100 V.
 
 39
 00:05:15,710 --> 00:05:17,830
-That quite suits us.
+Which suits us well.
 
 40
 00:05:18,050 --> 00:05:26,330
-And plus they have quite light gate, that is gate with minimum saturation capacity.
+And plus they have a pretty light gate — with minimum saturation capacitance.
 
 41
 00:05:27,570 --> 00:05:29,210
-Further, diode.
+Next, the diode.
 
 42
 00:05:30,190 --> 00:05:40,590
-If plan to power from this converter microchips, then quite suits diode in such case.
+If you plan to power chips from this converter, then this diode in this package will work.
 
 43
 00:05:41,210 --> 00:05:45,010
-This 1N5819, 1 amp diode.
+This is a 1N5819, 1 A diode.
 
 44
 00:05:45,710 --> 00:05:57,370
-And if will connect to this converter loads more serious, then recommend to put diode in bigger case 1N5822.
+And if you'll connect more serious loads to this converter, I recommend putting a diode in the larger 1N5822 package.
 
 45
 00:05:58,770 --> 00:06:00,210
-It 3 amp.
+It's 3 A.
 
 46
 00:06:00,790 --> 00:06:10,530
-This quite enough this diode for powering load 10-15 watts, that is freely this diode holds.
+This diode is more than enough for powering a 10–15 W load — easily handles it.
 
 47
 00:06:12,470 --> 00:06:30,810
-Now need to note such moment, that microchip whose lead responsible for its power, here it seventh, to which plus power applied, connected directly to transistors that
+Now I need to note that the chip's power pin — here, pin 7, where plus power is applied — connects directly to the transistors that
 
 48
 00:06:30,810 --> 00:06:33,710
-do opening of key gate.
+do the gate opening of the switch.
 
 49
 00:06:33,710 --> 00:06:41,770
-That is, turns out power rating applied to seventh leg, it'll be also at sixth lead.
+That is, the supply voltage applied to pin 7 will also be at pin 6.
 
 50
 00:06:42,410 --> 00:06:48,610
-So can't exceed here power above 20 volts.
+So you can't exceed 20 V here.
 
 51
 00:06:48,970 --> 00:06:53,210
-That is this boundary power by key gate breakdown.
+That's the boundary by gate breakdown.
 
 52
 00:06:53,210 --> 00:07:14,630
-If need by construction so this scheme solution worked with voltage exceeding 18 volts at input, will be necessary here by power to seventh leg put either additional
+If by build you need this circuit to work with voltage exceeding 18 V at the input, you'll need to put either an additional limiting converter or a regulator
 
 53
 00:07:14,630 --> 00:07:18,310
-limiting converter or regulator.
+on the supply to pin 7.
 
 54
 00:07:18,310 --> 00:07:29,730
-If voltage rating suits, regulator should be 18 volt, that is to seventh leg apply not more than 18 volts.
+If the rating suits, the regulator should be 18 V — that is, apply no more than 18 V to pin 7.
 
 55
 00:07:30,210 --> 00:07:36,370
-And then you can use this microchip with bigger power rating.
+And then you can use this chip with a higher supply rating.
 
 56
 00:07:36,550 --> 00:07:43,350
-Well and accordingly of course here turn count will need to pick under your power rating.
+And of course turn count will need to be picked for your supply rating.
 
 57
 00:07:44,230 --> 00:07:49,630
-Now talk about most important detail of this converter — core.
+Now about the most important part of this converter — the core.
 
 58
 00:07:50,270 --> 00:08:00,570
-Thing is, core in this schematic solution subjected to impact of unipolar pulses, which can easily bring it to saturation.
+The thing is, the core in this circuit is subjected to unipolar pulses, which can easily bring it to saturation.
 
 59
 00:08:00,710 --> 00:08:08,030
-So there are necessary minimum dimensions of core that'll be workable in this scheme.
+So there are minimum dimensions of the core that'll work in this circuit.
 
 60
 00:08:09,030 --> 00:08:16,730
-I picked this in practice and core dimensions cited in this drawing.
+I picked this in practice, and the core dimensions are shown on this drawing.
 
 61
 00:08:17,830 --> 00:08:26,570
-In length it 15.5 mm, inner radius 18.5 mm, by outer 29.7 mm.
+In length it's 15.5 mm, inner radius 18.5 mm, outer 29.7 mm.
 
 62
 00:08:27,070 --> 00:08:31,010
-Wall width for us makes 5.6 mm.
+The wall width is 5.6 mm.
 
 63
 00:08:31,010 --> 00:08:34,990
-Can pick also other cores.
+You can also pick other cores.
 
 64
 00:08:36,090 --> 00:08:43,430
-In principle, cores with bigger dimensions welcome, with smaller converter already works worse.
+In principle, cores with bigger dimensions are welcome — with smaller ones the converter works worse.
 
 65
 00:08:43,670 --> 00:08:49,310
-Also can use ferrite cups of corresponding dimensions.
+You can also use ferrite cup cores of corresponding dimensions.
 
 66
 00:08:50,290 --> 00:08:52,730
-Now about primary winding.
+Now about the primary winding.
 
 67
 00:08:53,470 --> 00:08:59,170
-Primary winding — turn count picked according to supply voltage rating.
+Primary winding — turn count picked according to the supply voltage rating.
 
 68
 00:08:59,170 --> 00:09:04,430
-In this case supplied voltage will be not higher 18 Volts.
+In this case, the supplied voltage won't be higher than 18 V.
 
 69
 00:09:04,930 --> 00:09:08,510
-Practically constantly it'll work from 12 Volts.
+Practically it'll constantly work from 12 V.
 
 70
 00:09:08,930 --> 00:09:16,410
-So optimal under this core was turn count from 7 to 11 pieces.
+So under this core, the optimal turn count was from 7 to 11.
 
 71
 00:09:16,490 --> 00:09:19,370
@@ -284,371 +284,371 @@ Middle value — 8-9 turns.
 
 72
 00:09:20,370 --> 00:09:30,570
-If turn count too big, then core even at such dimensions starts entering saturation.
+If the turn count is too big, then the core, even at these dimensions, starts going into saturation.
 
 73
 00:09:31,030 --> 00:09:47,570
-And if turn count reduce, for example about 4 under this core, then too early triggers current feedback and converter starts undergiving voltage at output.
+And if you reduce the turn count, for example to about 4 on this core, the current feedback triggers too early and the converter starts undervoltaging at the output.
 
 74
 00:09:47,570 --> 00:09:49,870
-That is need to look for golden mean.
+So you have to find a golden middle.
 
 75
 00:09:50,390 --> 00:09:58,690
-This each will do in practice by picking this turn count under own core.
+Everyone will do this in practice by picking the turn count for their own core.
 
 76
 00:09:58,770 --> 00:10:01,910
-In this feature of these schemes.
+That's a feature of these schemes.
 
 77
 00:10:04,030 --> 00:10:12,630
-And further all depends at secondary winding from what voltage we want to get.
+And further everything depends on the secondary winding — on what voltage we want to get.
 
 78
 00:10:12,630 --> 00:10:19,090
-That is if need 5 volts, then turn count here will be about 4.
+That is, if you need 5 V, then the turn count here will be about 4.
 
 79
 00:10:19,870 --> 00:10:31,090
-And if as me in this case needed supply voltage rating about 16 volts, this'll be 12 turns.
+And if, like me in this case, you need a supply rating around 16 V, that'll be 12 turns.
 
 80
 00:10:32,570 --> 00:10:37,410
-So, further enters feedback.
+So, next comes the feedback.
 
 81
 00:10:37,410 --> 00:10:45,410
-Here I signed that output with voltage feedback connect to most energy-consuming section of consumer chain.
+I noted that the output with voltage feedback connects to the most energy-consuming section of the consumer chain.
 
 82
 00:10:46,990 --> 00:10:58,810
-That is turns out, that if you assemble scheme without this part, then with you with this all in order.
+That is, if you assemble the circuit without this part, with you all this is fine.
 
 83
 00:10:59,130 --> 00:11:03,550
-You have feedback works directly on load.
+The feedback works directly on the load.
 
 84
 00:11:03,550 --> 00:11:15,550
-But if you'll need to make Nth quantity of secondary windings on this core, then here already need to follow this rule.
+But if you'll need to make N secondary windings on this core, then you need to follow this rule.
 
 85
 00:11:16,130 --> 00:11:28,930
-Since at connecting more powerful load to one of leads on which feedback not done, leads to drop of voltage on it.
+Because connecting a more powerful load to one of the leads where feedback isn't done leads to a voltage drop on it.
 
 86
 00:11:28,930 --> 00:11:34,910
-Since this impact on feedback through secondary winding happens indirectly.
+Since the impact on feedback through the secondary winding happens indirectly.
 
 87
 00:11:35,890 --> 00:11:40,810
-So most powerful consumer connected at this point.
+So the most powerful consumer is connected at this point.
 
 88
 00:11:42,570 --> 00:11:47,930
-Thereby realized stable voltage also on other windings.
+This way stable voltage is also achieved on other windings.
 
 89
 00:11:48,690 --> 00:11:55,470
-Also here can see that I introduced into scheme zener at output at 18 volts.
+You can also see here I introduced an 18 V zener into the circuit at the output.
 
 90
 00:11:55,470 --> 00:12:13,570
-Thing is, when we connect consumer to one of windings of this converter and PWM controller starts adapting to this load, it changes pulse duration.
+The thing is, when we connect a consumer to one of this converter's windings and the PWM controller starts adapting to this load, it changes the pulse duration.
 
 91
 00:12:13,570 --> 00:12:27,950
-And here at changing pulse in larger direction, and this usually happens at connecting load, with us automatically through inductive coupling voltage on secondary windings grows.
+And at pulse change in the larger direction — which usually happens when connecting a load — the voltage on the secondary windings automatically grows through inductive coupling.
 
 92
 00:12:29,330 --> 00:12:36,990
-And so didn't happen breakdown of elements that connected further by scheme, need to introduce here zener.
+And to keep elements connected further down the circuit from breaking down, you need to add a zener here.
 
 93
 00:12:36,990 --> 00:12:46,490
-In this case 1 watt zener quite enough to cope with this potential that rises.
+In this case a 1 W zener is enough to handle this rising potential.
 
 94
 00:12:46,870 --> 00:12:56,790
-But here at such ratings of 12 turns, at connecting here 10 watt load, here jump may be up to 27 volts.
+At these 12-turn values, with a 10 W load here, the jump can be up to 27 V.
 
 95
 00:12:57,390 --> 00:13:02,890
-And zener 1 watt quite adequately copes with this potential.
+And the 1 W zener handles this potential adequately.
 
 96
 00:13:04,370 --> 00:13:08,150
-About this moment shouldn't forget.
+Don't forget about this point.
 
 97
 00:13:08,830 --> 00:13:21,390
-Also into scheme I introduced additional choke, this not mandatory system element, can exclude it, but it's filter.
+I also added an extra choke into the circuit — this isn't a mandatory system element, you can leave it out, but it's a filter.
 
 98
 00:13:21,550 --> 00:13:31,910
-This if need to power precise devices like microchips that don't tolerate power oscillations.
+For when you need to power precision devices like chips that don't tolerate supply oscillations.
 
 99
 00:13:32,890 --> 00:13:38,590
-Output rating set by this zener.
+The output rating is set by this zener.
 
 100
 00:13:39,690 --> 00:13:50,930
-Changing breakdown voltage, picking another zener, we regulate output voltage of whole converter.
+By changing the breakdown voltage — picking a different zener — we regulate the output voltage of the whole converter.
 
 101
 00:13:51,720 --> 00:14:09,070
-If I picked here 15 volt zener, then considering that optocoupler requires some voltage for trigger, output holds about 16 volts.
+If I picked a 15 V zener here, then considering the optocoupler requires some voltage to trigger, the output holds about 16 V.
 
 102
 00:14:09,070 --> 00:14:21,810
-If need 5 volt power, then here put zener 4.5 volts and you'll get your power rating 5 volts.
+If you need 5 V power, then put a 4.5 V zener here and you'll get your 5 V supply.
 
 103
 00:14:22,570 --> 00:14:29,710
-At that should reduce turn count of secondary winding of this choke.
+At that you should reduce the secondary winding turn count of this choke.
 
 104
 00:14:29,710 --> 00:14:38,830
-In this case I use this scheme for powering bridge inverter.
+In this case I use this scheme for powering a bridge inverter.
 
 105
 00:14:39,470 --> 00:14:45,310
-I needed independent power that'll be supplied to master generator.
+I needed independent power that goes to the master generator.
 
 106
 00:14:46,030 --> 00:14:58,150
-And galvanically isolated four separate powers that'll be supplied for control of four bridge keys.
+And four separate galvanically isolated supplies that go to control four bridge switches.
 
 107
 00:14:58,150 --> 00:15:03,490
-And so I stopped at power rating 16 volts.
+And that's why I went with a 16 V power rating.
 
 108
 00:15:04,110 --> 00:15:22,850
-And if you'll construct scheme in which need different power ratings, for example 5 volts, 9 volts, you change secondary winding turn count and change output zener rating
+And if you'll build a circuit that needs different power ratings — say 5 V, 9 V — you change the secondary turn count and change the output zener rating
 
 109
 00:15:22,850 --> 00:15:28,950
-that'll stably maintain voltage on your load.
+that'll stably hold the voltage on your load.
 
 110
 00:15:29,410 --> 00:15:33,210
-Should also say couple words about mounting rules.
+I should also say a few words about mounting rules.
 
 111
 00:15:33,650 --> 00:15:44,750
-Since this schematic solution is high-frequency system, key operating frequency here about 160 kHz.
+Since this is a high-frequency system, the switch operating frequency here is about 160 kHz.
 
 112
 00:15:44,750 --> 00:15:59,030
-At these ratings on fourth leg this is frequency-setting capacitor 1000 pF and resistor that creates necessary supply voltage on clock generator of microchip.
+At these values on pin 4 — this frequency-setting cap of 1000 pF and a resistor that creates the necessary supply voltage on the chip's clock generator.
 
 113
 00:16:00,210 --> 00:16:10,730
-Then should approach assembly consciously, not allowing long wires, big distance of details on mounting board.
+You should approach assembly carefully — not allowing long wires, big distances between parts on the board.
 
 114
 00:16:10,730 --> 00:16:18,010
-This can lead to undesired high-frequency pickups and inadequate converter work.
+This can lead to unwanted high-frequency pickups and inadequate converter operation.
 
 115
 00:16:19,110 --> 00:16:24,050
-In this case I assembled scheme on such mounting board.
+In this case I assembled the circuit on this prototyping board.
 
 116
 00:16:24,050 --> 00:16:38,330
-Quite for realization of whole this unit enough such small mounting board.
+A small prototyping board like this is enough to realize the whole unit.
 
 117
 00:16:38,410 --> 00:16:40,210
-Now show its sizes.
+Let me show its size.
 
 118
 00:16:40,930 --> 00:16:46,450
-It makes 6 centimeters by 4 centimeters.
+It's 6 cm by 4 cm.
 
 119
 00:16:46,450 --> 00:16:51,290
-Practically half board occupies this unit.
+Practically half the board is taken by this unit.
 
 120
 00:16:51,790 --> 00:16:56,940
-Its sizes make 11 mounting holes by 14.
+Its dimensions are 11 mounting holes by 14.
 
 121
 00:16:57,830 --> 00:17:07,390
-Can pay attention how dense assembly done without any long wires.
+You can notice how dense the assembly is, without any long wires.
 
 122
 00:17:07,390 --> 00:17:20,190
-Brought out zener that sets output power rating and limiting resistance 10 Ohm.
+The zener that sets the output power rating and the 10 Ω limiting resistor are brought out.
 
 123
 00:17:20,590 --> 00:17:30,850
-Further goes chain of capacities of zeners that shown on scheme 18 volt.
+Then a chain of capacitors of zeners shown as 18 V on the schematic.
 
 124
 00:17:30,850 --> 00:17:45,070
-And at this point we'll have placed this core with wound wire 5 leads and black wire primary winding.
+And at this point we'll have the core with wound wire — 5 leads and a black wire of the primary winding.
 
 125
 00:17:45,170 --> 00:17:50,110
-It'll be mounted in this case in such position.
+It'll be mounted in this position in this case.
 
 126
 00:17:53,610 --> 00:17:59,200
-Now such interesting moment about winding phasing.
+Now an interesting point about winding phasing.
 
 127
 00:18:00,790 --> 00:18:11,640
-Visible that dots are in opposite directions, that is wires at winding primary and secondary winding of choke in one direction need to swap.
+You can see the dots are in opposite directions — meaning the wires when winding the primary and secondary of the choke in one direction need to be swapped.
 
 128
 00:18:11,640 --> 00:18:25,540
-If you don't do this, then converter at connection will strongly consume and incorrect connection of windings will express in heating of this diode.
+If you don't do this, then at connection the converter will consume strongly, and incorrect winding connection will show up as heating of this diode.
 
 129
 00:18:25,660 --> 00:18:33,980
-This will be palpable if touch it with finger, it can heat up to temperature about 50 degrees.
+This will be palpable if you touch it with your finger — it can heat up to about 50 degrees.
 
 130
 00:18:33,980 --> 00:18:53,900
-At change of polarity you'll immediately see adequate rise of output voltage, this diode will be cold and converter will switch to mode without load of economical consumption, that makes 0.02 A.
+On polarity change you'll immediately see an adequate rise in output voltage, this diode will be cold, and the converter will switch to no-load economical-consumption mode at 0.02 A.
 
 131
 00:18:55,160 --> 00:19:00,240
-Now you see on monitor screen datasheet of this microchip line.
+Now you see the datasheet of this chip line on the monitor.
 
 132
 00:19:00,400 --> 00:19:01,900
-Here their names.
+Here are their names.
 
 133
 00:19:02,880 --> 00:19:10,160
-They made in different types of cases, eight-pin and fourteen-pin cases.
+They're made in different types of packages — 8-pin and 14-pin.
 
 134
 00:19:11,800 --> 00:19:17,620
-Fourteen-pin case corresponds to microchip with name NCV3843.
+The 14-pin package corresponds to the NCV3843 chip.
 
 135
 00:19:18,900 --> 00:19:21,600
-Presented pinout of its leads.
+Pinout is shown.
 
 136
 00:19:23,800 --> 00:19:28,910
-This microchip can use, it full analog of eight-pin by functionality.
+You can use this chip — it's a full analog of the 8-pin by functionality.
 
 137
 00:19:29,760 --> 00:19:43,760
-Only thing introduced here is separate power on microchip itself and separate power of transistors that control FET key.
+The only thing introduced here is separate power on the chip itself and separate power for the transistors that drive the FET switch.
 
 138
 00:19:44,760 --> 00:20:02,080
-Power supplied total to twelfth lead, VCC marked, and VC — eleventh lead to which supplied limited power that further will control FET transistor gate.
+Total power supplied to pin 12, marked VCC, and VC — pin 11, where limited power is supplied that will further drive the FET gate.
 
 139
 00:20:02,080 --> 00:20:22,160
-Well and see that second, fourth, sixth and thirteenth leads of microchip marked under name NC, that means no connect, that is these leads of microchip in fourteen-pin case not
+And you'll see pins 2, 4, 6, and 13 of the chip are marked NC, meaning no connect — those pins in the 14-pin package aren't connected.
 
 140
 00:20:22,160 --> 00:20:23,380
-connected.
+Connected.
 
 141
 00:20:24,380 --> 00:20:32,860
-Here are characteristics of microchip, whoever interested to acquaint.
+Here are the chip characteristics, for anyone interested.
 
 142
 00:20:33,200 --> 00:20:39,900
-And us interested logic of this system work.
+And we're interested in this system's operating logic.
 
 143
 00:20:40,900 --> 00:20:44,720
-It presented on this picture.
+It's shown in this picture.
 
 144
 00:20:45,720 --> 00:20:47,660
-Slightly enlarge.
+Zoom in a bit.
 
 145
 00:20:49,720 --> 00:21:03,380
-And can observe that main logic elements of this microchip that do tracking of current and voltage are comparators.
+And you can see the main logic elements of this chip that track current and voltage are comparators.
 
 146
 00:21:03,380 --> 00:21:08,160
-Here first comparator, its output, third leg.
+Here's the first comparator — its output, pin 3.
 
 147
 00:21:08,580 --> 00:21:20,420
-Observe that here it compares voltage that forms 1 volt on zener with voltage drop on this resistance in source circuit.
+Note that here it compares the voltage that forms 1 V on the zener with the voltage drop on this resistor in the source circuit.
 
 148
 00:21:20,420 --> 00:21:29,660
-And second comparator that goes, our lead from zener to second leg.
+And the second comparator — our lead from the zener to pin 2.
 
 149
 00:21:29,860 --> 00:21:39,780
-It compares voltage with 2.5 volts of power that forms on divider from resistance.
+It compares the voltage with the 2.5 V of power that forms on the divider from the resistor.
 
 150
 00:21:39,780 --> 00:21:51,620
-Thereby, further they send processed signal to next logic element of microchip and already done control of key.
+This way they send the processed signal to the next logic element of the chip, and the switch control is done.
 
 151
 00:21:51,760 --> 00:21:56,040
-Scheme quite simple but works without fail.
+The scheme is quite simple but works without fail.
 
 152
 00:21:56,040 --> 00:22:11,720
-And with introducing into system feedback by current realized protection, thereby this converter impossible to fail, even if it'll be shorted shortly.
+And with the current feedback introduced into the system, protection is realized — so this converter can't be made to fail, even if shorted briefly.
 
 153
 00:22:12,080 --> 00:22:16,460
-In such mode it can long time work.
+It can work in that mode for a long time.
 
 154
 00:22:18,040 --> 00:22:25,780
-At that this key will be in working state.
+And the switch will be in working state.
 
 155
 00:22:28,060 --> 00:22:30,680
-What else interesting here?
+What else is interesting here?
 
 156
 00:22:30,880 --> 00:22:32,900
-Oscillograms with us cited.
+Oscillograms are shown.
 
 157
 00:22:33,940 --> 00:22:37,440
-Strapping for different schematic solutions.
+Wiring for different schematic solutions.
 
 158
 00:22:40,750 --> 00:22:50,250
-Unfortunately, all in English, but I found in internet one more description.
+Unfortunately, it's all in English, but I found one more description online.
 
 159
 00:22:54,710 --> 00:22:57,090
-Site flakebackr01.doc.
+flakebackr01.doc site.
 
 160
 00:22:58,210 --> 00:23:04,670
-Here also we have PDF file, link to it I'll leave in video description.
+Here's also a PDF file — I'll leave the link in the video description.
 
 161
 00:23:06,710 --> 00:23:12,690
-This PDF file was written by Dmitry Makashov from Moscow.
+This PDF was written by Dmitry Makashov from Moscow.
 
 162
 00:23:14,030 --> 00:23:23,850
-Dedicated this work to flyback converters, precisely by topology of our schemes.
+He dedicated this work to flyback converters, specifically the topology of our schemes.
 
 163
 00:23:24,410 --> 00:23:38,150
-Here goes description, here you can in more detail acquaint with its work, how it arranged, what elements, how calculate oscillograms, various connections.
+Here's the description — you can get acquainted with how it works in more detail, how it's arranged, what elements, how to calculate oscillograms, various connections.
 
 164
 00:23:38,150 --> 00:23:40,190
@@ -656,35 +656,35 @@ Very useful material.
 
 165
 00:23:40,950 --> 00:23:44,790
-46 pages of detailed information.
+46 pages of detailed info.
 
 166
 00:23:45,870 --> 00:23:52,770
-Also here cited variants of strapping of this microchip.
+Variants of wiring for this chip are also given.
 
 167
 00:23:53,810 --> 00:24:03,670
-Can create various interesting devices, including step-up or step-down converters that can be powered from network.
+You can create various interesting devices, including step-up or step-down converters that can be powered from the mains.
 
 168
 00:24:08,510 --> 00:24:11,010
-Visible formulas for calculations.
+Formulas for calculations are visible.
 
 169
 00:24:11,090 --> 00:24:13,930
-Of course, for me this thing brings sadness.
+This stuff makes me sad, of course.
 
 170
 00:24:14,650 --> 00:24:24,830
-For me simpler put experiment in practice, but nevertheless, for people with math mindset this will be very useful.
+For me it's simpler to run experiments in practice — but for people with a math mindset, this will be very useful.
 
 171
 00:24:25,630 --> 00:24:33,850
-In particular here person cites how should locate primary and secondary windings in cores.
+In particular, the author shows how primary and secondary windings should be laid in cores.
 
 172
 00:24:33,850 --> 00:24:38,830
-Mounting rules will be also cited.
+Mounting rules will also be given.
 
 173
 00:24:46,160 --> 00:24:47,820
@@ -696,23 +696,23 @@ Formulas, formulas.
 
 175
 00:24:49,980 --> 00:24:51,420
-This we skip.
+We skip this.
 
 176
 00:24:58,330 --> 00:25:06,150
-Here examined connection topology and further calculation of scheme ratings.
+Here he examines connection topology and then calculation of circuit ratings.
 
 177
 00:25:07,810 --> 00:25:12,270
-Cited ratings that can work here.
+Ratings that can work here are shown.
 
 178
 00:25:13,170 --> 00:25:16,590
-Name and find them on scheme.
+Identify them and find them on the schematic.
 
 179
 00:25:19,290 --> 00:25:26,470
-Well and also mounting rules for high-frequency scheme solutions.
+And also mounting rules for high-frequency circuit solutions.
 
 180
 00:25:26,870 --> 00:25:31,170
@@ -720,39 +720,39 @@ In this case SMD capacitors.
 
 181
 00:25:31,170 --> 00:25:34,570
-What in what case and how will work.
+What goes in which case and how it'll work.
 
 182
 00:25:35,090 --> 00:25:41,410
-Voluminous work done by Dmitry, for which to him huge thanks.
+Voluminous work done by Dmitry — huge thanks to him.
 
 183
 00:25:42,610 --> 00:25:45,830
-Move to checking workability of microchip.
+Moving to checking the chip's operation.
 
 184
 00:25:46,670 --> 00:25:53,770
-Assemble all on mounting board, except mounting of choke.
+Assembling everything on a prototyping board except the choke.
 
 185
 00:25:55,990 --> 00:26:00,910
-Workability of microchip start checking with clock generator.
+We start checking the chip's operation with the clock generator.
 
 186
 00:26:01,050 --> 00:26:02,330
-Output number 4.
+Output 4.
 
 187
 00:26:02,690 --> 00:26:04,570
-Connected I probe to it.
+I connected a probe to it.
 
 188
 00:26:05,310 --> 00:26:09,250
-And such oscillogram we can observe with device presence.
+And we can observe this oscillogram on the device.
 
 189
 00:26:09,870 --> 00:26:12,870
-Amplitude makes about 3 volts.
+Amplitude is about 3 V.
 
 190
 00:26:13,530 --> 00:26:15,970
@@ -760,83 +760,83 @@ Frequency 161 kHz.
 
 191
 00:26:16,970 --> 00:26:25,770
-Now should check, does signal go to FET transistor gate control.
+Now we should check whether the signal goes to the FET gate control.
 
 192
 00:26:26,570 --> 00:26:31,950
-For this connect probe to sixth lead of microchip.
+For this, connect the probe to pin 6 of the chip.
 
 193
 00:26:32,910 --> 00:26:34,010
-Connect.
+Connecting.
 
 194
 00:26:37,970 --> 00:26:42,530
-Do sweep so was convenient to examine.
+Adjust the sweep so it's easy to examine.
 
 195
 00:26:42,530 --> 00:26:51,010
-And see that frequency for us of pulses corresponds also to about 160 kHz.
+And you see the pulse frequency also corresponds to about 160 kHz.
 
 196
 00:26:53,150 --> 00:26:59,010
-And can observe how microchip works with disconnected feedbacks.
+And you can see how the chip works with disconnected feedbacks.
 
 197
 00:26:59,170 --> 00:27:04,430
-In this case it regards as if to it connected maximum load.
+In this case it treats it as if maximum load is connected.
 
 198
 00:27:04,430 --> 00:27:11,970
-That is pulse duration for us maximum, with small pauses between them.
+The pulse duration is maximum, with small pauses between them.
 
 199
 00:27:12,850 --> 00:27:30,770
-In work process microchip will constantly change duration of these pulses, thereby limiting output ratings by voltage and by current.
+In operation, the chip will constantly change pulse duration, limiting the output ratings for voltage and current.
 
 200
 00:27:31,770 --> 00:27:43,250
-That is we convinced that signal comes to gate for us, and further can already turn on choke scheme.
+We've confirmed the signal reaches the gate, and we can now turn on the choke circuit.
 
 201
 00:27:46,090 --> 00:28:01,430
-If you don't connect rating 3 through resistance that'll bring it to connection to common wire of signal at gate, then there will be no key.
+If you don't connect pin 3 through the resistor that brings it to the common wire, there won't be a signal at the gate.
 
 202
 00:28:03,170 --> 00:28:17,250
-Well and consumption in such mode, while microchip is on test table, makes 12.1 V and 0.02 A.
+And consumption in this mode, while the chip is on the test bench, is 12.1 V and 0.02 A.
 
 203
 00:28:20,610 --> 00:28:29,030
-Same will be practically also idle stroke when we have installed choke without connecting loads.
+The same will practically be the idle current when we have the choke installed without loads connected.
 
 204
 00:28:30,390 --> 00:28:42,950
-Now look at voltage ratings on finished board that precisely will go to my internet acquaintance with whom we then dealt with this microchip.
+Now look at the voltage ratings on the finished board that will go to my internet acquaintance with whom we dealt with this chip.
 
 205
 00:28:43,590 --> 00:28:45,410
-It made for three outputs.
+It's made for three outputs.
 
 206
 00:28:47,150 --> 00:28:56,030
-One power for master generator, and at him there two keys should commutate with independent power.
+One power for the master generator, where two switches should be commutated with independent power.
 
 207
 00:28:56,030 --> 00:29:10,830
-So, apply at input 12 V and see that zener here stands precisely cited in this scheme 15 V by feedback.
+So we apply 12 V at the input and see that the zener here is exactly the 15 V indicated in this schematic for feedback.
 
 208
 00:29:11,510 --> 00:29:16,390
-See that voltage makes 16.4 V on one channel.
+You see the voltage is 16.4 V on one channel.
 
 209
 00:29:17,070 --> 00:29:34,750
-Now switch to 16.2 V precisely on channel that for us tracked by feedback.
+Now switching to 16.2 V on the channel that's tracked by feedback.
 
 210
 00:29:35,230 --> 00:29:42,500
-And third output.
+And the third output.
 
 211
 00:29:44,620 --> 00:29:46,020
@@ -848,7 +848,7 @@ Also 16.4 V.
 
 213
 00:29:51,400 --> 00:29:55,480
-Now conduct crash test for system.
+Now we conduct a crash test for the system.
 
 214
 00:29:56,320 --> 00:29:58,960
@@ -856,15 +856,15 @@ Short its outputs.
 
 215
 00:29:59,820 --> 00:30:04,940
-With tweezers help do action.
+With tweezers we do the action.
 
 216
 00:30:04,940 --> 00:30:07,860
-See that on channel shorting.
+You see — shorting on the channel.
 
 217
 00:30:10,460 --> 00:30:15,820
-Voltage falls but with converter nothing becomes.
+Voltage drops, but nothing happens to the converter.
 
 218
 00:30:15,980 --> 00:30:16,840
@@ -872,79 +872,79 @@ Second output.
 
 219
 00:30:22,380 --> 00:30:30,180
-Now try to enlarge so was visible that there's short circuit.
+Now try to enlarge so you can see there's a short circuit.
 
 220
 00:30:34,770 --> 00:30:39,690
-Visible that happens discharge.
+You can see the discharge happening.
 
 221
 00:30:39,970 --> 00:30:40,650
-Well and third.
+And the third.
 
 222
 00:30:45,530 --> 00:30:58,390
-Visible that while load not connected, on non-shorted output channel we have voltage remains.
+You see that while no load is connected, voltage stays on the non-shorted output channel.
 
 223
 00:30:58,390 --> 00:31:09,430
-But if shorting on that to which directly connected tester, then voltage falls to some small value.
+But if we short the one the multimeter is directly connected to, the voltage drops to a small value.
 
 224
 00:31:10,630 --> 00:31:14,970
-After short removed, system again goes to operating mode.
+After the short is removed, the system goes back to operating mode.
 
 225
 00:31:15,790 --> 00:31:30,310
-Now we'll also test how influences change of rating of this resistance on final output current of system.
+Now we'll also test how changing this resistor's value affects the system's final output current.
 
 226
 00:31:30,770 --> 00:31:35,490
-That is recommended under this microchip here makes 0.5 Ohm.
+Recommended under this chip is 0.5 Ω.
 
 227
 00:31:35,870 --> 00:31:49,490
-Can go in larger direction, for example, as here stands resistance 1 Ohm, because big loads here won't be connected, gate control and master clock generator.
+You can go bigger — for example, the 1 Ω resistor here — because big loads won't be connected here, just gate control and master clock generator.
 
 228
 00:31:49,490 --> 00:31:58,650
-Can go in smaller direction, put 0.1 Ohm, then can connect here already such serious loads enough.
+You can also go smaller — put 0.1 Ω — and then you can connect pretty serious loads here.
 
 229
 00:31:58,870 --> 00:32:03,610
-But we'll test on lamp 12 V, 10 W.
+But we'll test on a 12 V, 10 W lamp.
 
 230
 00:32:04,590 --> 00:32:13,310
-Now conduct work of voltage feedback and moment when microchip will turn on in work, from what potential.
+Now we'll check the voltage feedback and the moment the chip turns on — from what potential.
 
 231
 00:32:13,310 --> 00:32:20,790
-Now apply to input 7 V, see that tester doesn't fix moment of turn on.
+We apply 7 V at the input, you see the multimeter doesn't capture the turn-on moment.
 
 232
 00:32:21,450 --> 00:32:24,290
-Will be about 8 V.
+It'll be about 8 V.
 
 233
 00:32:25,310 --> 00:32:28,110
-Here see, voltage rises.
+Voltage is rising.
 
 234
 00:32:33,920 --> 00:32:41,600
-8 V and 8.2 V happened microchip turn on.
+8 V — and at 8.2 V the chip turned on.
 
 235
 00:32:41,600 --> 00:32:47,100
-That is quite this converter can work from 9 V battery.
+So this converter can quite work from a 9 V battery.
 
 236
 00:32:48,540 --> 00:32:53,220
-And see that output voltage makes 16.3 V.
+And we see the output voltage is 16.3 V.
 
 237
 00:32:53,440 --> 00:33:03,940
-Now will further raise voltage, order 18 V, and we'll observe that output voltage of microchip stabilizes.
+Now let's raise the voltage further — about 18 V — and we'll see the chip's output voltage stabilizes.
 
 238
 00:33:08,020 --> 00:33:08,960
@@ -952,11 +952,11 @@ Raise...
 
 239
 00:33:08,960 --> 00:33:14,820
-Follow rating by tester and see that it doesn't change.
+Watch the rating on the multimeter and see it doesn't change.
 
 240
 00:33:18,810 --> 00:33:21,390
-This idle consumption current.
+This is idle consumption current.
 
 241
 00:33:34,310 --> 00:33:36,730
@@ -964,67 +964,67 @@ Practically we have 19 V.
 
 242
 00:33:37,950 --> 00:33:45,030
-Work already on edge of so FET transistor gate would be broken.
+Already working on the edge of FET gate breakdown.
 
 243
 00:33:46,030 --> 00:33:54,610
-Further won't raise, but we convinced that this microchip clearly holds output voltage.
+We won't raise higher, but we've confirmed this chip clearly holds the output voltage.
 
 244
 00:33:55,670 --> 00:34:00,770
-Now observe how current protection behaves.
+Now we look at how the current protection behaves.
 
 245
 00:34:01,610 --> 00:34:07,270
-Now visible that I soldered here several resistances and they now not closed.
+You see I soldered several resistors here and they're not closed.
 
 246
 00:34:07,270 --> 00:34:17,290
-Resistance will put parallel to this resistance, thereby will reduce rating of this resistance in smaller direction.
+I'll put resistors in parallel with this resistor, thereby reducing its value.
 
 247
 00:34:18,570 --> 00:34:21,630
-Resistance in scheme now makes 1 Ohm.
+The resistor in the circuit is now 1 Ω.
 
 248
 00:34:21,790 --> 00:34:31,010
-This also one-ohm resistances, and at connecting two parallel we'll have 0.5 Ohm and so on toward reduction.
+These are also 1 Ω resistors — connecting two in parallel gives 0.5 Ω, and so on toward reduction.
 
 249
 00:34:33,350 --> 00:34:35,310
-Turn on converter.
+Turn on the converter.
 
 250
 00:34:35,910 --> 00:34:42,810
-See that tester shows 4.8 V on this lamp.
+The multimeter shows 4.8 V on this lamp.
 
 251
 00:34:45,130 --> 00:34:53,190
-Voltage feedback for us tuned to 15 V, and it now allows in microchip to work.
+The voltage feedback is tuned to 15 V, and now it lets the chip work.
 
 252
 00:34:53,330 --> 00:34:57,850
-And here current feedback reduces pulse duration.
+And here the current feedback reduces pulse duration.
 
 253
 00:34:57,850 --> 00:35:03,290
-And now reduce resistance, add parallel 1 Ohm.
+Now I reduce the resistance — add 1 Ω in parallel.
 
 254
 00:35:04,450 --> 00:35:18,830
-See that at connecting 0.5 Ohm at this point voltage grew to 9.9 V.
+You see when 0.5 Ω is connected, the voltage at this point grew to 9.9 V.
 
 255
 00:35:19,290 --> 00:35:22,330
-Now connect one more resistance,
+Now connecting one more resistor,
 
 256
 00:35:28,080 --> 00:35:35,980
-and connect rating 11.82, and so on.
+and we get the value 11.82, and so on.
 
 257
 00:35:36,140 --> 00:35:44,700
-Reducing rating of this resistance you can raise voltage on load.
+Reducing this resistor's value lets you raise the voltage on the load.
 
 258
 00:35:45,610 --> 00:35:47,240
@@ -1032,31 +1032,31 @@ Same effects.
 
 259
 00:35:47,480 --> 00:35:55,400
-This we now looked at output voltage on channel that with feedback.
+That's the output voltage we looked at on the channel with feedback.
 
 260
 00:35:56,400 --> 00:36:05,940
-Same can demonstrate also on other channel of converter output.
+The same can be demonstrated on another output channel of the converter.
 
 261
 00:36:08,840 --> 00:36:12,780
-Say, this one on which feedback not installed.
+Say, this one without feedback installed.
 
 262
 00:36:12,780 --> 00:36:27,740
-See also 4.9 V, connect 9.9 V and here 10.5 V.
+You also see 4.9 V, then 9.9 V, and here 10.5 V.
 
 263
 00:36:28,320 --> 00:36:33,200
-That is by inductive coupling there's small difference.
+That is, through inductive coupling there's a small difference.
 
 264
 00:36:33,740 --> 00:36:47,580
-But since this system will work for powering microchips from small consumers, this quite suits us.
+But since this system works for powering chips and small consumers, it suits us fine.
 
 265
 00:36:51,470 --> 00:37:14,350
-Summarizing conducted experiments, can say that this series of microchips is good solution when we have need to make converter with galvanic isolations and with system,
+Summarizing the experiments, you can say this chip series is a good solution when we need to make a converter with galvanic isolation and a system
 
 266
 00:37:14,550 --> 00:37:19,070
@@ -1064,12 +1064,12 @@ that clearly tracks output voltage.
 
 267
 00:37:19,750 --> 00:37:35,370
-In course of various tests I didn't notice single failure at work of this microchip, that voltage rose and tested it for powering microchips, also all was in order.
+During various tests I didn't notice a single failure of this chip — voltage rose, I tested it for powering chips, all was in order.
 
 268
 00:37:37,230 --> 00:37:42,590
-That is can build, assemble various devices and use.
+That is, you can build and assemble various devices and use it.
 
 269
 00:37:44,070 --> 00:37:50,170
-On this everyone thanks who watched, successful experiments and all good.
+On that note — thanks to everyone who watched, successful experiments and all the best.
