@@ -35,11 +35,11 @@
 | 48-EN.srt | OK | 1 | https://www.youtube.com/watch?v=NGG8Hk68Ikw |
 | 49-EN.srt | OK | 1 | https://www.youtube.com/watch?v=jeEaKI1TZ3s |
 | 50-EN.srt | OK | 1 | https://www.youtube.com/watch?v=Bhc1xFNgrVA |
-| 51-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=pNFXlo5jv4g |
-| 52-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=oCAy88JFeA4 |
-| 53-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=Dp5yGfWJzHI |
-| 54-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=rlXcRHgyfnY |
-| 55-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=-2jN0kOP1os |
+| 51-EN.srt | OK | 1 | https://www.youtube.com/watch?v=pNFXlo5jv4g |
+| 52-EN.srt | OK | 1 | https://www.youtube.com/watch?v=oCAy88JFeA4 |
+| 53-EN.srt | OK | 1 | https://www.youtube.com/watch?v=Dp5yGfWJzHI |
+| 54-EN.srt | OK | 1 | https://www.youtube.com/watch?v=rlXcRHgyfnY |
+| 55-EN.srt | OK | 1 | https://www.youtube.com/watch?v=-2jN0kOP1os |
 | 56-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=7k9LstM8QP4 |
 | 57-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=ObQFTTJimuI |
 | 58-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=VmPgmHLbxlg |
