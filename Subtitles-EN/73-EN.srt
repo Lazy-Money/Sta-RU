@@ -1,170 +1,170 @@
 1
 00:00:00,000 --> 00:00:02,820
-Moving to making power module.
+Moving on to building the power module.
 
 2
 00:00:03,580 --> 00:00:13,540
-But first thing want to say, power module attaches to cooling heat sink, and there are some requirements for it.
+But first I want to say — the power module attaches to a cooling heat sink, and there are some requirements for it.
 
 3
 00:00:14,440 --> 00:00:20,260
-All will of course depend on what power we make device for, but still should follow them.
+It all depends, of course, on what power we're building the device for, but you still need to follow them.
 
 4
 00:00:21,200 --> 00:00:30,360
-Pick heat sink by necessary dimensions, and look, will we have forced cooling provided or not.
+Pick a heat sink by the required dimensions, and look — will we have forced cooling or not.
 
 5
 00:00:30,700 --> 00:00:36,940
-If it's absent, naturally take heat sink with maximum cooling rib area.
+If not, naturally take a heat sink with maximum cooling rib area.
 
 6
 00:00:37,540 --> 00:00:39,280
-And most important parameter.
+And the most important parameter.
 
 7
 00:00:40,460 --> 00:00:46,520
-This wall thickness that key precisely attaches to.
+The wall thickness where the switch is mounted.
 
 8
 00:00:47,140 --> 00:00:53,400
-It determines how well thermal power will be removed from key.
+It determines how well thermal power will be removed from the switch.
 
 9
 00:00:53,400 --> 00:00:57,800
-Here for example I'll show another type of heat sink.
+For example, I'll show another type of heat sink.
 
 10
 00:00:58,620 --> 00:01:14,260
-Can say, heat sink made by manufacturer incorrectly, because see that thickness of that part that key attaches to, namely heat-removing one, here, if attach it like this,
+You could say it's poorly made by the manufacturer — because the thickness of the part the switch attaches to (the heat-removing part) — if you attach it like this,
 
 11
 00:01:14,740 --> 00:01:18,780
-it's much thinner than these walls.
+it's much thinner than the walls.
 
 12
 00:01:18,780 --> 00:01:30,760
-And at serious load this area under key naturally will overheat, not having time to transfer heat to cooling ribs.
+And under a serious load, this area under the switch will overheat — it can't transfer heat to the cooling ribs fast enough.
 
 13
 00:01:30,940 --> 00:01:35,140
-And such key may fail from overheating.
+And such a switch can fail from overheating.
 
 14
 00:01:35,720 --> 00:01:43,460
-Such heat sinks desirable to avoid in power constructions where there'll be serious loads.
+Heat sinks like this should be avoided in power builds where there'll be serious loads.
 
 15
 00:01:43,860 --> 00:01:48,080
-Well, and if it's some small transistor, quite may suit.
+For some small transistor, it could work.
 
 16
 00:01:48,780 --> 00:01:53,900
-This is main rule on heat sinks that there can be.
+That's the main rule for heat sinks.
 
 17
 00:01:54,100 --> 00:02:01,460
-Well, of course there's also with copper insert heat sinks, that's generally top class, but we don't need such in this case.
+There are also heat sinks with a copper insert — that's top class — but we don't need that here.
 
 18
 00:02:04,220 --> 00:02:09,660
-What do I recommend to apply as insulating substrate?
+What do I recommend as an insulating substrate?
 
 19
 00:02:10,200 --> 00:02:22,580
-Thing is, in many FET transistors transistor drain, it's same as galvanically connected to this pad that gives off heat.
+The thing is, in many FETs the drain is galvanically connected to the pad that gives off heat.
 
 20
 00:02:23,240 --> 00:02:35,780
-So that between keys there was no breakdown between drains, under keys placed thermal-conductive insulating gasket.
+So to avoid drain-to-drain breakdown between switches, a thermally conductive insulating gasket is placed under the switches.
 
 21
 00:02:35,880 --> 00:02:40,080
-In responsible cases I recommend to put mica.
+For critical cases I recommend using mica.
 
 22
 00:02:41,360 --> 00:02:48,440
-Now of course hard to get it, but still can at flea markets, radio markets.
+It's hard to get nowadays, but you can find it at flea markets or radio markets.
 
 23
 00:02:49,140 --> 00:02:57,330
-Sometimes can meet, people sell such plates from Soviet mica capacitors high-voltage.
+Sometimes people sell these mica plates from Soviet high-voltage mica capacitors.
 
 24
 00:02:58,660 --> 00:03:02,220
-Yes, they disassemble capacitor, and there such packs of plates.
+Yes, they disassemble the cap and get these stacks of plates.
 
 25
 00:03:02,220 --> 00:03:04,900
-And from here very convenient to extract.
+And it's very convenient to extract them.
 
 26
 00:03:05,120 --> 00:03:13,680
-One such plate, turns out dimensions of it 5 by 4 centimeters.
+One such plate has dimensions of 5 by 4 cm.
 
 27
 00:03:14,420 --> 00:03:23,340
-If cut it in half, it just enough for installation of two keys side by side.
+If you cut it in half, it's just enough to install two switches side by side.
 
 28
 00:03:24,340 --> 00:03:36,560
-If wish to spread apart, then it cuts into 4 parts, and already such substrate for this case well suits.
+If you want to spread them apart, then it cuts into 4 pieces, and such a substrate works well in this case.
 
 29
 00:03:37,300 --> 00:03:44,820
-If for lack of such thing, can of course use such gaskets.
+If you can't find that, you can of course use these gaskets.
 
 30
 00:03:45,590 --> 00:03:55,200
-They also go, but I more trust mica, so in responsible cases put it.
+They also work, but I trust mica more, so in critical cases I use it.
 
 31
 00:03:56,820 --> 00:04:12,760
-At installation of such mica gasket, special attention should be paid to hole through which bolt will pass for key mounting.
+When installing a mica gasket, special attention should be paid to the hole the bolt will pass through for the switch mounting.
 
 32
 00:04:12,760 --> 00:04:15,220
-Done it very carefully.
+Done very carefully.
 
 33
 00:04:15,360 --> 00:04:35,820
-First with awl help carefully press and light puncture made, and then with cross-shaped screwdriver of corresponding diameter slowly hole expand to avoid cracking
+First, with an awl, carefully press and make a small puncture, and then with a Phillips screwdriver of corresponding diameter slowly expand the hole to avoid cracking
 
 34
 00:04:35,820 --> 00:04:36,400
-of mica.
+the mica.
 
 35
 00:04:38,860 --> 00:04:47,560
-Now I'll install key here, level substrate and show on example of this hole how it's done.
+Now I'll install the switch here, level the substrate, and show on the example of this hole how it's done.
 
 36
 00:04:47,720 --> 00:04:59,720
-Installed gasket, level it by key dimensions, so from all sides of keys mica gasket extended equally.
+The gasket is installed — level it by the switch dimensions so the mica extends equally on all sides of the switch.
 
 37
 00:05:01,060 --> 00:05:04,220
-Then tighten screw, thereby fixing it.
+Then tighten the screw, fixing it.
 
 38
 00:05:04,220 --> 00:05:19,500
-After this take awl and to center of hole, where bolt will pass, do careful press and lightly twist awl.
+After this take the awl and, at the center of the hole where the bolt will pass, carefully press and slightly twist the awl.
 
 39
 00:05:27,690 --> 00:05:36,750
-Carefully, first appears white dot at this place.
+Carefully — first a white dot appears at this spot.
 
 40
 00:05:49,560 --> 00:05:56,200
-With such rotating movements carefully make first chip.
+With such rotating motions carefully make the first chip.
 
 41
 00:06:00,150 --> 00:06:04,690
-After this awl easily passes into hole.
+After this the awl easily passes into the hole.
 
 42
 00:06:05,130 --> 00:06:11,430
-And further already with cross screwdriver help bring hole to needed diameter.
+And then with the Phillips screwdriver bring the hole to the needed diameter.
 
 43
 00:06:11,430 --> 00:06:13,750
@@ -172,75 +172,75 @@ Again very carefully,
 
 44
 00:06:17,620 --> 00:06:27,980
-after which already can pass hole with bolt thread help.
+after which you can pass through the hole with the bolt thread.
 
 45
 00:06:44,730 --> 00:06:47,590
-Do this also carefully.
+Do this carefully too.
 
 46
 00:06:53,020 --> 00:07:05,780
-Then need to drive bolt several times back and forth, and we'll have hole dimensions clearly under screw.
+Then you need to drive the bolt several times back and forth, and we'll have hole dimensions exactly fitting the screw.
 
 47
 00:07:08,060 --> 00:07:14,640
-On this all subtleties with mica gasket end.
+That's all the subtleties with the mica gasket.
 
 48
 00:07:14,640 --> 00:07:21,940
-After holes were made, need to remove everything unnecessary from heat sink surface.
+After the holes were made, you need to remove everything unnecessary from the heat sink surface.
 
 49
 00:07:22,340 --> 00:07:28,800
-These will be tiniest pieces of mica, because mica for us is rock.
+These will be tiny mica pieces, because mica is rock.
 
 50
 00:07:29,080 --> 00:07:35,680
-And if it gets under gasket, will be elevation, and already thermal contact will worsen.
+And if it gets under the gasket, there'll be a bump, and the thermal contact will worsen.
 
 51
 00:07:35,680 --> 00:07:52,480
-For this take napkin, clean gasket surface, then flip it, clean heat sink surface, clean from inside.
+For this take a napkin, clean the gasket surface, then flip it over, clean the heat sink surface, clean from inside.
 
 52
 00:07:57,960 --> 00:08:03,360
-Same we do with second gasket.
+We do the same with the second gasket.
 
 53
 00:08:12,730 --> 00:08:19,530
-And further wipe heat sink surface.
+And further wipe the heat sink surface.
 
 54
 00:08:22,490 --> 00:08:26,230
-Now can move to applying thermal paste.
+Now we can move to applying thermal paste.
 
 55
 00:08:27,230 --> 00:08:30,190
-Thermal paste KPT-8.
+KPT-8 thermal paste.
 
 56
 00:08:46,390 --> 00:08:49,090
-Cube new, lots of liquid.
+The tube is new — lots of liquid.
 
 57
 00:08:50,270 --> 00:08:52,250
-Liquid should be removed.
+The liquid should be removed.
 
 58
 00:09:00,280 --> 00:09:03,680
-And here already thermal paste itself.
+And here's the thermal paste itself.
 
 59
 00:09:21,750 --> 00:09:29,230
-Evenly distribute thermal paste layer over surface.
+Evenly distribute a layer of thermal paste over the surface.
 
 60
 00:09:31,630 --> 00:09:36,370
-Can help in this matter back side of transistor.
+The back of the transistor can help with this.
 
 61
 00:09:40,140 --> 00:09:41,880
-Pass to irons.
+We move on to the rest.
 
 62
 00:09:42,880 --> 00:09:44,260
@@ -248,7 +248,7 @@ In
 
 63
 00:10:00,310 --> 00:10:02,270
-general principle understandable.
+general, the principle is clear.
 
 64
 00:10:03,490 --> 00:10:05,450
@@ -256,39 +256,39 @@ Even smoothing.
 
 65
 00:10:06,890 --> 00:10:15,070
-And after this can install gasket to regular place.
+And after this you can install the gasket in its place.
 
 66
 00:10:35,100 --> 00:10:39,460
-Same operation done with second.
+The same operation with the second.
 
 67
 00:10:40,440 --> 00:10:50,540
-After second installed, wipe off thermal paste excess from heat sink surface.
+After the second is installed, wipe excess thermal paste off the heat sink surface.
 
 68
 00:10:55,320 --> 00:11:01,180
-And can move to mounting power keys.
+And we can move to mounting the power switches.
 
 69
 00:11:06,830 --> 00:11:17,330
-Now according to rules of detail location in box, need to mark from which side will be transistors connected to plus.
+Now, per the rules of part placement in the box, we need to mark which side the transistors connected to plus will be on.
 
 70
 00:11:19,070 --> 00:11:22,030
-Visible that relay is on this side.
+The relay is on this side.
 
 71
 00:11:22,470 --> 00:11:27,250
-In break by scheme it'll be connected to plus power.
+Per the schematic, it'll be connected to plus power.
 
 72
 00:11:27,690 --> 00:11:30,510
-Battery will be located so.
+The battery will be located like this.
 
 73
 00:11:30,510 --> 00:11:36,590
-And means transistors connected to plus will be on this side.
+Which means the transistors connected to plus will be on this side.
 
 74
 00:11:38,150 --> 00:11:39,150
@@ -296,163 +296,163 @@ Mark.
 
 75
 00:11:40,770 --> 00:11:43,190
-Move to mounting keys.
+Moving to mounting the switches.
 
 76
 00:11:44,810 --> 00:11:49,370
-Apply thermal paste also to power keys.
+Apply thermal paste to the power switches too.
 
 77
 00:12:06,700 --> 00:12:09,880
-With such smoothing motion.
+With smoothing motions like this.
 
 78
 00:12:12,800 --> 00:12:16,880
-Thermal paste distribute over entire heat sink area.
+Distribute the thermal paste across the entire heat sink area.
 
 79
 00:12:34,850 --> 00:12:42,530
-Screws for fastening keys should take with wide head.
+Screws for fastening the switches should have wide heads.
 
 80
 00:12:43,570 --> 00:12:51,730
-And if there are no such, then screw on here nut and put washer so clamping action was good.
+And if there aren't any, screw on a nut and put on a washer so the clamping action is good.
 
 81
 00:12:51,730 --> 00:12:56,550
-Well and enough also by length, since aluminum thin metal.
+And long enough too, since aluminum is thin metal.
 
 82
 00:12:57,150 --> 00:13:03,770
-Need so screw body well entered into aluminum wall thickness.
+The screw body should go well into the aluminum wall thickness.
 
 83
 00:13:27,510 --> 00:13:30,110
-Tightening don't produce strongly.
+Don't tighten too hard.
 
 84
 00:13:32,270 --> 00:13:40,770
-We'll still need to align keys according to holes on plastic cover.
+We'll still need to align the switches to the holes on the plastic cover.
 
 85
 00:13:58,830 --> 00:14:02,210
-So they rotated easily.
+So they rotate easily.
 
 86
 00:14:03,250 --> 00:14:14,650
-Before installing second pair need to take care of contact terminal for connection of primary coil of our step-up transformer.
+Before installing the second pair, we need to take care of the contact terminal for connecting the primary coil of our step-up transformer.
 
 87
 00:14:14,750 --> 00:14:22,390
-Here I made from copper wire such contact terminals.
+I made these contact terminals from copper wire.
 
 88
 00:14:23,390 --> 00:14:31,110
-Now put them on key leg and
+Now put them on a switch leg and
 
 89
 00:14:37,470 --> 00:14:40,230
-restore it to regular place.
+restore it to its place.
 
 90
 00:15:07,200 --> 00:15:15,020
-After such manipulation easy this terminal will be to combine with opposite key leg.
+After this manipulation it'll be easy to combine this terminal with the opposite switch leg.
 
 91
 00:15:15,760 --> 00:15:22,880
-Shift it and further will need to solder.
+Shift it, and we'll need to solder it later.
 
 92
 00:15:23,640 --> 00:15:31,060
-Before final assembly should check is there contact of key with heat sink.
+Before final assembly we should check whether there's contact between the switch and the heat sink.
 
 93
 00:15:32,040 --> 00:15:39,940
-Switch tester to diode test mode and touch middle leads of transistors.
+Switch the multimeter to diode-test mode and touch the middle leads of the transistors.
 
 94
 00:15:44,220 --> 00:15:50,820
-See that insulation is present, means all in order.
+You see the insulation is present — all in order.
 
 95
 00:15:52,020 --> 00:15:58,800
-Since we have low-voltage system, I don't check this module for high voltage.
+Since we have a low-voltage system, I don't check this module for high voltage.
 
 96
 00:15:58,940 --> 00:16:17,560
-But if I make systems that'll work with rectified mains voltage, I additionally check instead of tester for breakdown by voltage 300 volts DC through incandescent lamp
+But if I'm building systems that'll work with rectified mains voltage, I additionally test instead of with a meter — for breakdown at 300 V DC through an incandescent lamp
 
 97
 00:16:17,560 --> 00:16:19,280
-in same way.
+the same way.
 
 98
 00:16:19,280 --> 00:16:29,760
-This gives reliable guarantee that block won't need to be additionally disassembled later, because that's quite labor-intensive.
+This gives a reliable guarantee that the block won't need to be disassembled later — because that's quite labor-intensive.
 
 99
 00:16:30,860 --> 00:16:37,800
-Now keys lightly tightened and freely rotate on fastening places.
+Now the switches are lightly tightened and rotate freely on their fastening points.
 
 100
 00:16:38,800 --> 00:16:51,000
-This done so could conveniently place plastic cover according to fastening points.
+This is done so you can conveniently place the plastic cover according to the fastening points.
 
 101
 00:16:53,160 --> 00:16:58,190
-At that, when entering holes keys will slightly shift.
+When fitting into the holes, the switches will shift slightly.
 
 102
 00:16:58,190 --> 00:17:10,390
-If fasten them in advance, this operation will be hard to do without additional bending of key leads, which undesirable.
+If you fasten them in advance, this operation will be hard to do without additional bending of switch leads, which is undesirable.
 
 103
 00:17:12,190 --> 00:17:19,190
-For start fasten regular fastenings.
+First fasten the regular fastenings.
 
 104
 00:17:21,770 --> 00:17:26,550
-And now visible that all leads matched.
+And now you see all the leads match.
 
 105
 00:17:26,550 --> 00:17:37,610
-And these holes needed so that preliminarily do tightening of keys from top.
+And these holes are needed so you can preliminarily tighten the switches from the top.
 
 106
 00:17:41,670 --> 00:17:43,830
-Do tightening.
+Doing the tightening.
 
 107
 00:17:53,460 --> 00:18:00,280
-Now can release regular fastenings.
+Now we can release the regular fastenings.
 
 108
 00:18:04,690 --> 00:18:11,370
-After this move to soldering middle leads.
+After this we move to soldering the middle leads.
 
 109
 00:18:12,370 --> 00:18:20,770
-And subsequent tightening of screw fastenings of keys.
+And subsequent tightening of the screw fastenings of the switches.
 
 110
 00:18:23,070 --> 00:18:32,410
-Visible that middle leads easily put on in such position.
+You see the middle leads easily slip on in this position.
 
 111
 00:18:37,270 --> 00:18:41,170
-Thereby we ease work for ourselves.
+This way we make the work easier for ourselves.
 
 112
 00:18:41,170 --> 00:18:50,450
-For quality soldering of these joints I apply organic flux for electronics.
+For quality soldering of these joints I use organic electronics flux.
 
 113
 00:18:50,670 --> 00:18:57,410
-It doesn't require washing and very well cleans contact surfaces.
+It doesn't need washing and cleans contact surfaces very well.
 
 114
 00:18:57,750 --> 00:18:59,910
-At that smells of fir forest.
+Also smells like pine forest.
 
 115
 00:19:00,690 --> 00:19:01,750
@@ -460,7 +460,7 @@ Very convenient.
 
 116
 00:19:04,230 --> 00:19:07,750
-Soldering iron heats up to 380 degrees.
+The soldering iron heats up to 380 degrees.
 
 117
 00:19:07,750 --> 00:19:09,610
@@ -468,15 +468,15 @@ Tip cleaned.
 
 118
 00:19:11,350 --> 00:19:16,270
-After this take drop of solder.
+After this take a drop of solder.
 
 119
 00:19:19,390 --> 00:19:23,070
-Hold contact pad.
+Hold the contact pad.
 
 120
 00:19:24,530 --> 00:19:26,530
-Do soldering.
+Solder.
 
 121
 00:19:36,320 --> 00:19:37,240
@@ -484,39 +484,39 @@ One half.
 
 122
 00:19:40,480 --> 00:19:43,020
-Further bit more flux.
+A bit more flux.
 
 123
 00:20:05,350 --> 00:20:11,710
-Need to qualitatively fill contact surface.
+You need to fill the contact surface qualitatively.
 
 124
 00:20:31,490 --> 00:20:34,590
-Noticeable how solder spreads.
+You can see how the solder spreads.
 
 125
 00:20:37,670 --> 00:20:43,050
-Now this flux drop remove.
+Now remove this drop of flux.
 
 126
 00:20:45,770 --> 00:20:53,270
-Plus it doesn't conduct current, which very good.
+Plus, it doesn't conduct current, which is very good.
 
 127
 00:20:58,760 --> 00:21:05,440
-And analogously do soldering of second contact pad.
+And similarly solder the second contact pad.
 
 128
 00:21:06,180 --> 00:21:09,180
-After soldering such beauty came out for us.
+After soldering, you get this kind of beauty.
 
 129
 00:21:11,180 --> 00:21:22,480
-There's one more important moment to which worth paying attention at buying power keys.
+There's one more important moment to pay attention to when buying power switches.
 
 130
 00:21:22,820 --> 00:21:30,540
-Desirable that they were of same batch and one manufacturer.
+It's preferable that they're from the same batch and the same manufacturer.
 
 131
 00:21:31,380 --> 00:21:35,590
@@ -524,31 +524,31 @@ Pay attention to letter and number symbols.
 
 132
 00:21:35,590 --> 00:21:40,070
-These inscriptions on keys, they should be identical.
+These inscriptions on the switches should be identical.
 
 133
 00:21:41,990 --> 00:21:53,510
-Now can power keys tighten holding with fingers key from shifting.
+Now we can tighten the power switches while holding them with fingers to keep them from shifting.
 
 134
 00:21:54,470 --> 00:22:06,520
-Tightening should produce with good force for quality heat removal.
+Tightening should be done with good force for quality heat removal.
 
 135
 00:22:09,500 --> 00:22:16,520
-So bolts they fasten with should be with good wide head.
+So the bolts you fasten them with should have a good wide head.
 
 136
 00:22:32,840 --> 00:22:37,260
-Now remains to bring power buses to our construction.
+Now we just need to bring power busses to our build.
 
 137
 00:22:37,780 --> 00:22:46,840
-For responsible devices I make them with cable from quality copper section 2.5 sq mm in thermal insulation.
+For critical devices I make them from quality copper cable with 2.5 mm² cross-section, in thermal insulation.
 
 138
 00:22:46,840 --> 00:22:52,740
-Marking of such cable RKDM, cost 70 rubles per meter.
+The cable marking is RKDM, cost 70 rubles per meter.
 
 139
 00:22:53,300 --> 00:23:00,040
@@ -556,11 +556,11 @@ It has thermally stable insulation on its surface plus thermally stable braiding
 
 140
 00:23:00,780 --> 00:23:12,540
-Applied it where need to supply power in 220 volt networks and where temperature exceeds 100 degrees.
+I use it where I need to supply power in 220 V networks and where temperatures exceed 100 degrees.
 
 141
 00:23:14,320 --> 00:23:24,560
-So that conveniently could thread into rings on power keys, ends of such cable should be tinned.
+So that it can easily be threaded into the rings on the power switches, the ends of such cable should be tinned.
 
 142
 00:23:27,020 --> 00:23:28,600
@@ -568,15 +568,15 @@ Quality tinning.
 
 143
 00:23:28,760 --> 00:23:32,820
-Now pass through ring.
+Now pass through the ring.
 
 144
 00:23:37,850 --> 00:23:53,970
-After wire was seated in ring, should crimp it with power key lead.
+After the wire is seated in the ring, you should crimp it with the power switch lead.
 
 145
 00:24:05,460 --> 00:24:08,460
-Thereby we provide good contact.
+This way we provide good contact.
 
 146
 00:24:08,460 --> 00:24:15,520
@@ -584,19 +584,19 @@ Now apply flux for soldering and,
 
 147
 00:24:25,180 --> 00:24:26,820
-accordingly, solder.
+solder it.
 
 148
 00:24:31,380 --> 00:24:36,080
-Well heat up and supply solder.
+Heat it up well and feed solder.
 
 149
 00:25:15,300 --> 00:25:19,860
-Same operation with second wire.
+Same operation with the second wire.
 
 150
 00:25:22,520 --> 00:25:24,240
-Pass,
+Pass it through,
 
 151
 00:25:28,410 --> 00:25:29,470
@@ -604,20 +604,20 @@ crimp.
 
 152
 00:26:39,620 --> 00:26:45,260
-And on this making of power module can consider finished.
+And with this, the power module can be considered finished.
 
 153
 00:26:47,320 --> 00:26:56,980
-Will remain only to connect at these points primary winding of pulse transformer.
+It only remains to connect the primary winding of the pulse transformer at these points.
 
 154
 00:26:59,940 --> 00:27:12,420
-Further in our video series about power supply will be winding of power transformer.
+Next in our video series about the power supply will be winding the power transformer.
 
 155
 00:27:13,080 --> 00:27:18,160
-Rules of its winding, leads, interlayer insulation.
+Winding rules, taps, interlayer insulation.
 
 156
 00:27:19,360 --> 00:27:23,320
-Will be interesting, but work painstaking.
+Will be interesting, but the work is painstaking.
