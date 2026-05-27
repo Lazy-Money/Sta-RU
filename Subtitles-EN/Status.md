@@ -15,11 +15,11 @@
 | 13-EN.srt | OK | 1 | https://www.youtube.com/watch?v=v7thzqWdNM0 |
 | 14-EN.srt | OK | 1 | https://www.youtube.com/watch?v=Z-UaulS9EUA |
 | 15-EN.srt | OK | 1 | https://www.youtube.com/watch?v=RdEnx6hfshQ |
-| 16-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=ndLdQKqTbDs |
-| 17-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=mJSEZMNRLXA |
-| 18-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=bVlQ2zH8i3E |
-| 19-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=wkbRbQ_r8AA |
-| 20-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=BY1DRQHvcQ0 |
+| 16-EN.srt | OK | 1 | https://www.youtube.com/watch?v=ndLdQKqTbDs |
+| 17-EN.srt | OK | 1 | https://www.youtube.com/watch?v=mJSEZMNRLXA |
+| 18-EN.srt | A resolver - archivo vacío (nadie habla, Whisper alucinó en RU) | - | https://www.youtube.com/watch?v=bVlQ2zH8i3E |
+| 19-EN.srt | A resolver - RU fuente contaminado 100% por audiobook (sin contenido técnico, re-transcribir) | - | https://www.youtube.com/watch?v=wkbRbQ_r8AA |
+| 20-EN.srt | OK | 1 | https://www.youtube.com/watch?v=BY1DRQHvcQ0 |
 | 21-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=el1SkfaHmsI |
 | 22-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=tnb8gUifKgk |
 | 23-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=MA7h1G_dvOo |
