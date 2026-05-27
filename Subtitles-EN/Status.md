@@ -25,11 +25,11 @@
 | 23-EN.srt | OK | 1 | https://www.youtube.com/watch?v=MA7h1G_dvOo |
 | 24-EN.srt | OK | 1 | https://www.youtube.com/watch?v=1x6GSQ3GXBM |
 | 25-EN.srt | OK | 1 | https://www.youtube.com/watch?v=__pfVMPdkAU |
-| 26-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=-Zu6sQgo3M8 |
-| 27-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=_WHERwU--DQ |
-| 28-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=PBUp550HW8k |
-| 29-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=tujYRJrqpyE |
-| 30-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=fyhtEa-jvGo |
+| 26-EN.srt | OK | 1 | https://www.youtube.com/watch?v=-Zu6sQgo3M8 |
+| 27-EN.srt | OK | 1 | https://www.youtube.com/watch?v=_WHERwU--DQ |
+| 28-EN.srt | OK | 1 | https://www.youtube.com/watch?v=PBUp550HW8k |
+| 29-EN.srt | A resolver - timestamp roto seg 852 (00:1:00:03,300) | +1 | https://www.youtube.com/watch?v=tujYRJrqpyE |
+| 30-EN.srt | OK | +1 | https://www.youtube.com/watch?v=fyhtEa-jvGo |
 | 46-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=XDXTxPRPxSU |
 | 47-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=jCest-tcObc |
 | 48-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=NGG8Hk68Ikw |
