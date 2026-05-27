@@ -10,11 +10,11 @@
 | 8-EN.srt | OK | to check | https://www.youtube.com/watch?v=qqQCNej_m3Q |
 | 9-EN.srt | OK | 1 | https://www.youtube.com/watch?v=wUVdeT9pxqs |
 | 10-EN.srt | OK | 1 | https://www.youtube.com/watch?v=txTNtCPtFII |
-| 11-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=PrrcnQz3sVk |
-| 12-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=BuBYDSdk72s |
-| 13-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=v7thzqWdNM0 |
-| 14-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=Z-UaulS9EUA |
-| 15-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=RdEnx6hfshQ |
+| 11-EN.srt | OK | 1 | https://www.youtube.com/watch?v=PrrcnQz3sVk |
+| 12-EN.srt | OK | +1 | https://www.youtube.com/watch?v=BuBYDSdk72s |
+| 13-EN.srt | OK | 1 | https://www.youtube.com/watch?v=v7thzqWdNM0 |
+| 14-EN.srt | OK | +1 | https://www.youtube.com/watch?v=Z-UaulS9EUA |
+| 15-EN.srt | A resolver - numeración no secuencial + RU fuente contaminado (re-transcribir) | 1 | https://www.youtube.com/watch?v=RdEnx6hfshQ |
 | 16-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=ndLdQKqTbDs |
 | 17-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=mJSEZMNRLXA |
 | 18-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=bVlQ2zH8i3E |
