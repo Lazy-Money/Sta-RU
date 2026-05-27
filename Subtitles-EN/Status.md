@@ -58,7 +58,7 @@
 | 71-EN.srt | OK | 1 | https://www.youtube.com/watch?v=F7QsxQFYb2A |
 | 72-EN.srt | OK | 1 | https://www.youtube.com/watch?v=G_GflTLJlZY |
 | 73-EN.srt | OK | 1 | https://www.youtube.com/watch?v=NvbaEO8ue0o |
-| 74-EN.srt | OK | 1 | https://www.youtube.com/watch?v=IjcGQcEfvhE |
+| 74-EN.srt | OK | +1 | https://www.youtube.com/watch?v=IjcGQcEfvhE |
 | 75-EN.srt | OK | 1 | https://www.youtube.com/watch?v=WE4L3eYD_no |
 | 76-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=UIsqJitBHRg |
 | 77-EN.srt | A revisar | to check | https://www.youtube.com/watch?v=HnXO3Qw36HU |
