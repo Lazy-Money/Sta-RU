@@ -61,14 +61,6 @@ MAX_VIDEO_STRETCH = 1.5       # video can be slowed down up to 50% (plays at 1/1
 MIN_VIDEO_PTS = 0.7           # video can be sped up up to ~1.43x (plays at 1/0.7x)
 MAX_AUDIO_COMPRESS = 1.4      # if video stretch is not enough, audio can also speed up to 1.4x
 
-# XTTS-v2 robotization workaround:
-# Lines shorter than this many characters are wrapped with a trailing
-# pad phrase so the autoregressive decoder has time to stabilize its
-# prosody before/after the actual content. The pad audio is then
-# trimmed off using the silence break in the middle.
-SHORT_PHRASE_CHARS = 30
-PADDING_SUFFIX = " ... Okay."
-
 # XTTS-v2 supported languages (ISO 639-1, except zh)
 XTTS_LANGS = {
     "en", "es", "fr", "de", "it", "pt", "pl", "tr", "ru",
@@ -306,74 +298,6 @@ def extract_audio(video_path: Path, out_path: Path) -> None:
         ],
         check=True,
     )
-
-
-# ============================================================
-#  Audio post-processing helpers
-# ============================================================
-def find_pad_cut(
-    audio: np.ndarray, sr: int,
-    min_silence_ms: int = 150, threshold_db: float = -40.0,
-) -> int:
-    """The audio was rendered as '<original text> ... <pad suffix>'. Walk the
-    waveform looking for the silence gap between the two and return the
-    sample index where the original text ends (= start of that silence).
-    Returns len(audio) if no clean break is found."""
-    if len(audio) == 0:
-        return 0
-    window = max(1, sr // 100)  # 10 ms
-    n = len(audio) // window
-    if n < 5:
-        return len(audio)
-    threshold = 10 ** (threshold_db / 20)
-    is_silent = []
-    a = audio.astype(np.float32) if audio.dtype != np.float32 else audio
-    for i in range(n):
-        chunk = a[i * window:(i + 1) * window]
-        rms = float(np.sqrt(np.mean(chunk * chunk))) if len(chunk) else 0.0
-        is_silent.append(rms < threshold)
-
-    # Collapse into runs
-    runs: list[tuple[bool, int, int]] = []
-    cur = is_silent[0]
-    start = 0
-    for i in range(1, n):
-        if is_silent[i] != cur:
-            runs.append((cur, start, i))
-            cur = is_silent[i]
-            start = i
-    runs.append((cur, start, n))
-
-    min_sil = max(2, int(min_silence_ms * sr / 1000 / window))
-    # Look for the LAST silence run that's long enough AND has voice both
-    # before and after — that's our suffix gap.
-    has_voice_after: list[bool] = []
-    after = False
-    for r in reversed(runs):
-        has_voice_after.append(after)
-        if not r[0]:
-            after = True
-    has_voice_after.reverse()
-    has_voice_before = False
-    cut_window = None
-    for j, (is_sil, s, e) in enumerate(runs):
-        if not is_sil:
-            has_voice_before = True
-            continue
-        if (e - s) < min_sil:
-            continue
-        if has_voice_before and has_voice_after[j]:
-            cut_window = s  # cut at the start of the silence run
-    if cut_window is None:
-        return len(audio)
-    return cut_window * window
-
-
-def trim_xtts_pad(audio: np.ndarray, sr: int) -> np.ndarray:
-    """Convenience wrapper: remove the trailing pad audio that follows the
-    silence break in TTS output produced from `<text> ... Okay.`."""
-    cut = find_pad_cut(audio, sr)
-    return audio[:cut]
 
 
 # ============================================================
@@ -618,7 +542,6 @@ def _generate_tts_raw(
         tts_kwargs = {"temperature": 0.7}
     print(f"  Generating TTS{' (HQ mode)' if hq_mode else ''}...", flush=True)
     raw: list[tuple[np.ndarray, int] | None] = []
-    n_padded = 0
     for i, sub in enumerate(tqdm(subs, desc="  tts", leave=False, unit="seg")):
         text = sub.content.strip()
         if not text:
@@ -628,15 +551,9 @@ def _generate_tts_raw(
             raw.append(None)
             continue
         seg_path = seg_dir / f"seg_{i:04d}.wav"
-
-        # XTTS-v2 robotizes short phrases. Pad them so the decoder has
-        # enough context to warm up, then trim the pad off the audio.
-        is_short = len(text) <= SHORT_PHRASE_CHARS
-        tts_input = (text + PADDING_SUFFIX) if is_short else text
-
         try:
             tts.tts_to_file(
-                text=tts_input,
+                text=text,
                 file_path=str(seg_path),
                 speaker_wav=str(ref_path),
                 language=lang,
@@ -644,20 +561,11 @@ def _generate_tts_raw(
                 **tts_kwargs,
             )
             audio, sr_seg = sf.read(seg_path)
-            if is_short:
-                trimmed = trim_xtts_pad(audio, sr_seg)
-                # Sanity: don't accept a cut that left almost nothing
-                if len(trimmed) >= 0.4 * len(audio):
-                    audio = trimmed
-                    n_padded += 1
             raw.append((audio, sr_seg))
         except Exception as e:
             print(f"  [WARN] seg {i+1}: {e}")
             raw.append(None)
-    msg = f"  Generated: {sum(1 for r in raw if r)}/{len(subs)}"
-    if n_padded:
-        msg += f"  (short phrases padded: {n_padded})"
-    print(msg)
+    print(f"  Generated: {sum(1 for r in raw if r)}/{len(subs)}")
     return raw
 
 
