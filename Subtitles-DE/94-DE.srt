@@ -1,0 +1,1979 @@
+1
+00:00:01,140 --> 00:00:04,920
+Guten Tag, liebe Abonnenten und Zuschauer meines Kanals.
+
+2
+00:00:05,720 --> 00:00:14,860
+In letzter Zeit kommt zu mir ungefähr dieselbe Frage per E-Mail oder über Skype von verschiedenen Personen.
+
+3
+00:00:15,280 --> 00:00:23,440
+Die Essenz reduziert sich darauf, dass ein Schema mit bestimmten Schutzmechanismen für die Arbeit mit einem Tesla-Transformator benötigt wird.
+
+4
+00:00:23,940 --> 00:00:28,580
+Wünschenswert, dass es so einfach wie möglich in der Herstellung wäre.
+
+5
+00:00:28,580 --> 00:00:45,700
+Motivation unterschiedlich — von keiner Erfahrung in der Funktechnik bis hin zu keinen Finanzen für den Erwerb von funkelektronischen Komponenten und verschiedenen Geräten.
+
+6
+00:00:46,700 --> 00:00:50,260
+Hier vor dir nun ist dieses Schema.
+
+7
+00:00:50,340 --> 00:00:51,840
+Einfacher geht es nicht.
+
+8
+00:00:52,300 --> 00:01:00,480
+Das Schema wird auf einem Transistor und einigen Komponentendetails zusammengebaut.
+
+9
+00:01:00,620 --> 00:01:12,940
+Auch hat dieses Schema zusätzlich einen Schutz zwischen Kollektor und Emitter des Transistors.
+
+10
+00:01:12,940 --> 00:01:14,460
+Das ist eine Glimmlampe.
+
+11
+00:01:16,080 --> 00:01:20,540
+Und am Emitter des Transistors gibt es einen Widerstand.
+
+12
+00:01:21,220 --> 00:01:25,620
+Der Widerstand bei uns wird als 2 Ohm gezeigt.
+
+13
+00:01:25,780 --> 00:01:31,140
+Das ist in meinem Fall eine 12 V, 21 W Autolampe.
+
+14
+00:01:32,780 --> 00:01:36,900
+Auch werde ich sofort die andere oft gestellte Frage beantworten.
+
+15
+00:01:37,100 --> 00:01:38,980
+Warum kommen keine Videos auf den Kanal?
+
+16
+00:01:39,100 --> 00:01:39,820
+Wo sind sie verschwunden?
+
+17
+00:01:39,920 --> 00:01:40,620
+Alles normal?
+
+18
+00:01:40,620 --> 00:01:42,180
+Alles gut.
+
+19
+00:01:43,240 --> 00:01:44,480
+Sind nicht verschwunden.
+
+20
+00:01:44,580 --> 00:01:52,380
+Einfach aufgrund der Tatsache, dass jetzt die Bausaison ist und ich mich mit dem Bau meines persönlichen Haushalts beschäftige.
+
+21
+00:01:53,040 --> 00:01:55,260
+Also geht die ganze Zeit vorerst dorthin.
+
+22
+00:01:55,680 --> 00:01:58,800
+Zusatzfinanzen sind abwesend und ich muss alles selbst machen.
+
+23
+00:01:58,800 --> 00:02:06,220
+Dieses Schema kann zur Kategorie der Tesla-Kacher-Schemata gezählt werden.
+
+24
+00:02:06,780 --> 00:02:14,560
+Und das bedeutet, dass in der Rolle der sekundären Hochspannungs-Resonatorspule speziell die Tesla-Spule agiert.
+
+25
+00:02:14,680 --> 00:02:16,680
+Und die Tesla-Spule erfordert Erdung.
+
+26
+00:02:17,240 --> 00:02:27,440
+Die Erdung ist an diesem Punkt angeschlossen — die gemeinsame Leitung des Schemas zum Transistor-Emitter durch einen begrenzenden Widerstand.
+
+27
+00:02:28,860 --> 00:02:31,260
+Was kann dieses Schema tun?
+
+28
+00:02:31,660 --> 00:02:42,960
+Dieses Schema kann den Block ersetzen, den ich zur Steuerung des Tesla-Transformators gezeigt habe — Brücke oder Halbbrücke mit Modulation.
+
+29
+00:02:43,580 --> 00:03:00,800
+Die Modulation in diesem Schema kann weiter mit dem Vorhandensein eines zweiten Tesla-Transformators erfolgen, der mit dem ersten Tesla-Transformator interagiert, den wir bedingt sendenden nennen können.
+
+30
+00:03:01,160 --> 00:03:03,560
+Und der zweite Tesla-Transformator wird empfangend sein.
+
+31
+00:03:03,720 --> 00:03:07,820
+Eigentlich ist dieses System nicht genau ein Sender.
+
+32
+00:03:08,280 --> 00:03:20,760
+Es erzeugt eine Störung in der Umgebung um sich herum, die weiter in der Zone dieser Störung in den Empfänger gelangt und ihre Interaktion miteinander beginnt.
+
+33
+00:03:20,760 --> 00:03:35,240
+Ein solch einfaches Schema kann eine ganze Box mit Elektronik und teuren Laborgeneratoren zu seiner Steuerung ersetzen.
+
+34
+00:03:35,640 --> 00:03:46,440
+Trotz der scheinbaren Einfachheit dieser Schemalösung gibt es hier viele Details, die individuell ausgewählt werden müssen.
+
+35
+00:03:47,680 --> 00:03:53,760
+Wenn du schaust, gibt es bei einigen Details Sternchen.
+
+36
+00:03:54,700 --> 00:03:59,600
+Das bedeutet, diese Details erfordern individuelle Auswahl.
+
+37
+00:04:00,200 --> 00:04:09,640
+Niemand wird davon abkommen, und jeder, der vorhat, ein solches System zu bauen, wird das beherrschen und abstimmen müssen.
+
+38
+00:04:10,640 --> 00:04:23,840
+Der nächste Hauptmoment dessen, was dieses Schema realisieren wird — es wird den Modus realisieren, den Tesla beschrieben hat, und das ist speziell eine Serie von Schwingungen.
+
+39
+00:04:24,600 --> 00:04:35,260
+Das Oszillogramm, das am Kollektor herauskommen sollte, habe ich zitiert das Bild davon, weiter werden wir es auch am Oszilloskop untersuchen.
+
+40
+00:04:36,260 --> 00:04:40,020
+Was kann ich noch über die Hauptmomente sagen?
+
+41
+00:04:40,580 --> 00:04:46,480
+In unserem Schema werden wir speziell eine flache Spiralspule verwenden.
+
+42
+00:04:46,940 --> 00:04:54,400
+Eine solche Spule ist optimal für Schemas an Funkenstrecken und Schemas mit einer Serie von Schwingungen.
+
+43
+00:04:55,100 --> 00:05:00,120
+Am gerechtfertigtsten hat sie sich in diesem Schema gezeigt.
+
+44
+00:05:01,120 --> 00:05:09,520
+Hier habe ich eine Warnung geschrieben, dass du das Oszillogramm nur mit angeschlossener Erdung nehmen kannst.
+
+45
+00:05:10,240 --> 00:05:18,120
+Erfülle das zwingend, sonst können sie, wenn jemand das vergisst, das Oszilloskop verlieren.
+
+46
+00:05:19,100 --> 00:05:25,360
+Dieses Schema kann auch ohne Erdung verwendet werden, dann kommt ein Kacher-Schema heraus.
+
+47
+00:05:26,460 --> 00:05:42,480
+Und an ein solches Schema empfehle ich, unter keinen Bedingungen ein Oszilloskop anzuschließen, weil jedes Detail in diesem Schema ohne angeschlossene Erdung unter hohem Potenzial stehen wird.
+
+48
+00:05:42,480 --> 00:05:50,320
+Den Transistor verwende ich hier bewährt, der sich gut gezeigt hat — 2SC5200.
+
+49
+00:05:51,600 --> 00:05:56,800
+Die Kollektor-Emitter-Spannung bei ihm beträgt 230 V Grenze.
+
+50
+00:05:57,280 --> 00:06:02,240
+Und die Spannungsgrenze an der Basis relativ zum Emitter beträgt 5 V.
+
+51
+00:06:02,320 --> 00:06:05,560
+Diese zwei Parameter müssen wir verfolgen.
+
+52
+00:06:05,560 --> 00:06:21,780
+In das Schema habe ich auch gegenläufig geschaltete Zenerdioden eingefügt, die zum Schutz der Basis des bipolaren Transistors vor Überschreitung des Wertes von 5 V aufgerufen sind, damit der Basis-Emitter-Übergang nicht durchbrochen wurde.
+
+53
+00:06:22,680 --> 00:06:33,120
+Auch diese Glimmlampe habe ich eingeführt — hier siehst du auch ein Sternchen steht — und der Widerstand, der in Reihe damit verbunden ist, ist auch mit Sternchen markiert.
+
+54
+00:06:33,120 --> 00:06:36,900
+Diese zwei Details werden ausgewählt werden müssen.
+
+55
+00:06:36,960 --> 00:06:47,420
+Sie werden auf der Grundlage der Berechnung ausgewählt, dass die Glimmlampe ihr Leuchten bei einer Spannung von 100 bis 150 V begann.
+
+56
+00:06:48,180 --> 00:06:56,300
+Dieser 3-kOhm-Widerstand ist ein strombegrenzender Widerstand, damit die Glimmlampe nicht weiter ausfällt.
+
+57
+00:06:57,070 --> 00:07:16,440
+In diesem Schema wird eine alte Schutzmethode angewendet, die Funkamateuren bekannt war, die an Schemas mit Radioröhren arbeiteten — wenn die Kathode der Röhre relativ zur gemeinsamen Leitung durch einen Widerstand angehoben wird.
+
+58
+00:07:16,440 --> 00:07:19,400
+Und angeschlossene Kondensatoren sind parallel.
+
+59
+00:07:20,440 --> 00:07:32,580
+Diese Lösung dient als zusätzlicher Transistorschutz vor Potenzialanstieg relativ zum Minus des Schemas.
+
+60
+00:07:32,580 --> 00:07:53,180
+Wenn weiter Modulation bei Interaktion mit dem empfangenden Tesla-Transformator durchgeführt wird, gibt es den Moment, dass der gemeinsame Punkt relativ zum Minus springt, und das kann den Transistor zum Ausfall bringen.
+
+61
+00:07:53,180 --> 00:08:03,520
+Diese Sprünge wird der 100 µF Elektrolytkondensator glätten, auf diese Weise schützt er den Transistor.
+
+62
+00:08:04,900 --> 00:08:11,480
+Jetzt können wir zur Drossel und Hochspannungsspule übergehen.
+
+63
+00:08:11,480 --> 00:08:13,180
+Wie werden sie gebaut?
+
+64
+00:08:14,300 --> 00:08:23,620
+Das sind diskrete Systeme, folglich sind wir alle der Längenregel in diesem Schema unterworfen.
+
+65
+00:08:24,420 --> 00:08:34,740
+Das heißt, wir können von der Struktur ausgehen — nehmen die Drossel als Basis, oder wir nehmen als Basis die Windungslänge der Hochspannungsspule.
+
+66
+00:08:35,600 --> 00:08:51,580
+Wenn wir als Basis die Hochspannungsspule und ihre Windungslänge nehmen — wie ich es üblicherweise tue —, multipliziere ich die Windungslänge der Hochspannungsspule mit einer ganzen Zahl und bekomme die Drossellänge.
+
+67
+00:08:51,580 --> 00:09:05,800
+Achte darauf, dass in diesem Schema die Hochspannungsspule nach rechts gewickelt ist — das heißt, wenn du das Rohr von oben betrachtest, wickelt sich der Draht im Uhrzeigersinn und geht zur Erdungsseite.
+
+68
+00:09:06,280 --> 00:09:14,140
+Rechtsseitige Wicklung im Uhrzeigersinn, und auch die flache Spule bei uns ist gewickelt — rechtsseitige Wicklung.
+
+69
+00:09:14,140 --> 00:09:30,480
+Plus ist an die Energiequelle am zentralen Punkt am nächsten zur Hochspannungsspule angeschlossen, und der Kollektor ist an den Wicklungsanfang angeschlossen.
+
+70
+00:09:31,380 --> 00:09:36,900
+Er ist mit Nummer 2 markiert — zwei steht beim Kollektor des Transistors.
+
+71
+00:09:39,000 --> 00:09:54,700
+Für die Energieversorgung, das Schema, wenn du Experimente durchführst — ich empfehle von einer Batterie, und möglicherweise wirst du einen Wandler von 12 V brauchen und solltest von 3 auf 100 V wandeln.
+
+72
+00:09:54,800 --> 00:09:59,320
+Dieses Schema mit diesen Werten startet bei mir bei einer Spannung von 3 V.
+
+73
+00:10:00,320 --> 00:10:25,100
+Hier in einem solchen System, wenn du den korrekten Betriebsmodus abstimmst, kannst du leicht 50 W Energie hineintreiben, und dabei wird der Transistor im optimalen Betriebsmodus sein, wird nicht heizen, und die gesamte Energie wird von der Primärspule zur Sekundärspule übertragen.
+
+74
+00:10:25,100 --> 00:10:32,620
+Auf diese Weise wird maximale Anpassung zwischen ihnen erreicht und das System wird optimal arbeiten.
+
+75
+00:10:33,140 --> 00:10:47,700
+Weiter untersuchen wir zwei Fälle, wenn das System nicht optimal abgestimmt ist, welche Oszillogramme sein werden, und das System in einem solchen Modus — und schauen auf den Temperaturmodus des Transistorbetriebs.
+
+76
+00:10:47,700 --> 00:10:53,920
+Hier habe ich markiert, wie die Drossellänge zu berechnen ist.
+
+77
+00:10:54,860 --> 00:11:06,480
+Und auch hier steht geschrieben, dass die Drosseldrahtlänge vom Kollektor des Transistors direkt zur Plus-Zuleitung an den Elektrolytkondensatoren gezählt wird.
+
+78
+00:11:06,480 --> 00:11:12,380
+Hier dieser Elektrolytkondensator, 200 µF, 400 V.
+
+79
+00:11:12,940 --> 00:11:23,640
+Parallel sind Kondensatoren platziert, die zur Entfernung von Hochfrequenzstörungen aufgerufen sind, damit sie nicht zum Elektrolytkondensator gelangen.
+
+80
+00:11:23,720 --> 00:11:26,920
+Das ist 0,1 µF bei 630 V.
+
+81
+00:11:26,920 --> 00:11:38,360
+Und ein Akkumulatorkondensator von 2,2 µF, der die Pulsfront am Kollektor beschleunigt.
+
+82
+00:11:38,360 --> 00:11:48,860
+Da Elektrolytkondensatoren im Vergleich zu hochwertigen Filmkondensatoren eine gewisse Ladungsabgabezeit haben.
+
+83
+00:11:49,860 --> 00:11:59,980
+Auch siehst du, es gibt einen Kondensator 0,1 µF bei 630 V, am Emitter relativ zum Minus.
+
+84
+00:12:00,120 --> 00:12:09,660
+Das ist auch ein Kondensator, der für die Dämpfung der Hochfrequenzstörung verantwortlich ist, die unvermeidlich zirkulieren wird.
+
+85
+00:12:09,660 --> 00:12:18,260
+Auch kannst du sehen, dass zwischen der Hochspannungsspule und der Transistorbasis ein strombegrenzender Widerstand bei 1 Ohm ist.
+
+86
+00:12:19,260 --> 00:12:27,760
+Und hier sind zwei Hauptdetails, die an der Transistorbasis die für ihre Arbeit notwendige Vorspannung erzeugen.
+
+87
+00:12:28,480 --> 00:12:31,580
+Diese Widerstände werden auch ausgewählt werden müssen.
+
+88
+00:12:31,680 --> 00:12:35,240
+In meinem Fall sind es 6,8 kOhm und 2,7 kOhm.
+
+89
+00:12:35,760 --> 00:12:39,040
+Aber das ist mein Fall — sie sind unter mein Schema ausgewählt.
+
+90
+00:12:39,040 --> 00:12:47,620
+Auch weiter werde ich dir zeigen, welche Abhängigkeit zwischen diesen Widerständen und der Windungszahl in der Drossel besteht.
+
+91
+00:12:47,720 --> 00:12:52,800
+Und wie man einen so interessanten Transistor-Betriebsmodus erreicht.
+
+92
+00:12:53,120 --> 00:12:55,600
+Also, das Schema in Eisen gemacht.
+
+93
+00:12:56,180 --> 00:13:03,300
+Das ist eine Akkumulatorkapazität aus zwei 200 µF 400 V Kondensatoren.
+
+94
+00:13:03,300 --> 00:13:09,840
+Dann geht ein Filmkondensator 2,2 µF bei 630 V.
+
+95
+00:13:10,360 --> 00:13:18,980
+Dieser Kondensator 0,1 µF 630 V zur Dämpfung von HF-Störungen, die durch ihn gehen.
+
+96
+00:13:19,520 --> 00:13:25,420
+Achte darauf, dass ich Beine herausgebracht habe, an die die Widerstände angelötet sind.
+
+97
+00:13:26,460 --> 00:13:33,660
+Das ist so gemacht, damit ich Details bequem auswählen kann, ohne das gesamte gemeinsame Schema zu zerlegen.
+
+98
+00:13:33,780 --> 00:13:35,560
+Am Kühlkörper befindet sich der Transistor.
+
+99
+00:13:36,260 --> 00:13:46,660
+Der Kühlkörper ist mit Reserve gemacht, damit ich dir den Betriebsmodus zeigen kann, wenn der Transistor stark heizt — welche Verluste auftreten.
+
+100
+00:13:47,060 --> 00:13:54,320
+Und dann können wir nach Temperatur schauen, wenn der Transistor leicht über Raumtemperatur sein wird.
+
+101
+00:13:54,320 --> 00:13:59,000
+Und dieses System wird ordnungsgemäß bei 50 W arbeiten.
+
+102
+00:14:00,520 --> 00:14:03,880
+Die Drosseldrähte sind an diesen Punkten angeschlossen.
+
+103
+00:14:04,200 --> 00:14:08,300
+Das ist entsprechend die Lampe bei 2 Ohm.
+
+104
+00:14:09,460 --> 00:14:13,600
+Alle Widerstände hier sind 1 W — das habe ich auch im Schema markiert.
+
+105
+00:14:13,960 --> 00:14:18,920
+Weniger ist hier nicht wert zu setzen, sonst werden sie stark heizen und können brennen.
+
+106
+00:14:19,920 --> 00:14:26,820
+Die Spule, die ich hier verwendet habe, ist Hochspannungs.
+
+107
+00:14:27,380 --> 00:14:35,760
+Sie ist mit einem dicken Leiter gemacht, Drahtquerschnitt 0,96 mm.
+
+108
+00:14:38,180 --> 00:14:44,920
+Das heißt, nicht jedes Schema kann eine solche Spule qualitativ schwingen.
+
+109
+00:14:44,920 --> 00:14:47,140
+Aber dieses Schema erlaubt es.
+
+110
+00:14:47,420 --> 00:14:52,660
+Diese Hochspannungsspule hat eine Arbeitsberechnung bei genau 1 MHz.
+
+111
+00:14:53,780 --> 00:14:59,860
+Wir wissen, dass die Wellenlänge für 1 MHz 300 Meter beträgt.
+
+112
+00:15:00,060 --> 00:15:03,040
+Folglich sollte ein Viertel 75 sein.
+
+113
+00:15:03,220 --> 00:15:09,740
+Aber bei genauerer Berechnung kommt hier 74,5 m heraus.
+
+114
+00:15:09,740 --> 00:15:15,660
+Wenn du die Wellenausbreitungsgeschwindigkeit genauer in der Berechnungsformel einträgst.
+
+115
+00:15:16,060 --> 00:15:20,400
+Wie man einen Tesla-Transformator berechnet, schaue auf meinem Kanal in vorherigen Videos.
+
+116
+00:15:20,700 --> 00:15:25,180
+Es gibt detaillierte Beschreibungen, wie das zu tun ist.
+
+117
+00:15:26,740 --> 00:15:33,700
+Jetzt schauen wir auch das Prinzip an, wie man diese Spule auf die für uns benötigte Frequenz bringt.
+
+118
+00:15:34,980 --> 00:15:40,900
+Achte darauf, dass die Spule jetzt keine zusätzliche Kapazität hat.
+
+119
+00:15:41,000 --> 00:15:43,640
+Hier ist das heiße Ende.
+
+120
+00:15:44,760 --> 00:15:55,920
+Das heiße Ende ist das Ende des Leiters der Hochspannungsspule, an dem das maximale Spannungspotenzial ist.
+
+121
+00:15:56,420 --> 00:16:00,840
+Am kalten Ende in diesem Moment haben wir den maximalen Strom.
+
+122
+00:16:00,840 --> 00:16:02,400
+Es gibt einen interessanten Moment.
+
+123
+00:16:02,980 --> 00:16:15,200
+Professionelle Elektroniker, Funkamateure protestieren oft gegen die Tatsache, dass diese Schemalösungen in eine separate Gruppe namens Kachers getrennt werden.
+
+124
+00:16:17,080 --> 00:16:23,580
+Sie sagen, warum hast du einen Namen für dieses Schema erfunden, wenn das ein üblicher Selbstgenerator an einem Transistor ist.
+
+125
+00:16:24,440 --> 00:16:26,180
+Und was ist hier interessant.
+
+126
+00:16:26,180 --> 00:16:31,340
+Warum werden diese Schemas in eine separate Kategorie von Kachers gebracht?
+
+127
+00:16:31,520 --> 00:16:35,560
+Weil in diesem Schema erstens Kirchhoffs Gesetz verletzt wird.
+
+128
+00:16:35,960 --> 00:16:48,760
+Das drückt sich darin aus, dass, wenn du den gemeinsamen Draht des Oszilloskops nimmst und ihn an das Minus der Energiequelle anschließt und mit der Sonde auf den Kollektor stehst, du positive Pulse am Kollektor sehen wirst.
+
+129
+00:16:48,760 --> 00:16:56,480
+Auch kannst du jetzt mit dem gemeinsamen Draht des Oszilloskops auf Plus-Strom stehen.
+
+130
+00:16:57,000 --> 00:17:03,620
+Und wenn du auf die Pulse am Kollektor schaust, werden sie relativ zu Plus auch positiv sein.
+
+131
+00:17:03,900 --> 00:17:07,760
+Zur Zeit, wenn bei einem üblichen Selbstgenerator sich die Polarität ändern wird.
+
+132
+00:17:08,570 --> 00:17:19,260
+Und der zweite nicht unwichtige Moment ist, dass dieses Schema uns ermöglicht, die Primärspule im Resonanzmodus zu halten.
+
+133
+00:17:19,760 --> 00:17:22,180
+Das heißt, die Drossel des Hochspannungstransformators.
+
+134
+00:17:22,580 --> 00:17:24,780
+Wie wird dieser Resonanzmodus erreicht?
+
+135
+00:17:25,160 --> 00:17:33,540
+Das ist der Modus, der genannt wird, wenn Strom und Spannung in diesem Leiter praktisch um 90 Grad verschoben sind.
+
+136
+00:17:33,540 --> 00:17:35,820
+Streben zu dieser Verschiebung.
+
+137
+00:17:36,660 --> 00:17:47,980
+Und es stellt sich automatisch heraus, dass dieses — effektiv ein Stück Draht von einigen Metern — im Resonanzmodus ist, ohne parallele Kapazität dafür auszuwählen.
+
+138
+00:17:48,800 --> 00:17:52,860
+Wenn der Strom nicht dem Spannungspuls entspricht.
+
+139
+00:17:52,960 --> 00:17:54,560
+Sie sind in der Zeit beabstandet.
+
+140
+00:17:54,560 --> 00:18:03,240
+Das sind zwei Hauptmerkmale, durch die diese Schemalösungen in eine separate Kategorie von Kachers getrennt werden.
+
+141
+00:18:04,020 --> 00:18:08,060
+Also, der erste Moment, wenn das gesamte System zusammengebaut, angeschlossen ist.
+
+142
+00:18:08,820 --> 00:18:12,140
+Die Regel der Wicklung in eine und dieselbe Richtung beachtet.
+
+143
+00:18:12,840 --> 00:18:17,420
+Schließe an das Minus des Schemas den Erdungsdraht an — hier ist der Leiter.
+
+144
+00:18:18,180 --> 00:18:22,480
+Verbinde den gemeinsamen Anschluss der Oszilloskopsonde mit demselben Punkt.
+
+145
+00:18:22,480 --> 00:18:25,180
+Und verbinde die Erdung.
+
+146
+00:18:25,460 --> 00:18:28,960
+Und hier diese schwarze Klemme — das ist auch das Minus.
+
+147
+00:18:30,000 --> 00:18:31,500
+Auch Plus anschließen.
+
+148
+00:18:31,920 --> 00:18:37,760
+Und lege an das Schema die minimale Spannung an, bei der es starten kann.
+
+149
+00:18:37,920 --> 00:18:41,600
+Hier in meinem Fall hängt die Sonde, achte darauf, in der Luft.
+
+150
+00:18:42,260 --> 00:18:47,480
+Das System startete, und sein Start beginnt bei 7 V.
+
+151
+00:18:48,040 --> 00:18:50,240
+Das ist Verbrauch von 6 Hundertstel eines Ampere.
+
+152
+00:18:50,920 --> 00:18:57,860
+Wie kannst du bestimmen, dass die Spule nicht im optimalen Betriebsmodus ist?
+
+153
+00:18:58,600 --> 00:19:00,900
+Das wird durch unsere Berechnung bestimmt.
+
+154
+00:19:00,980 --> 00:19:05,280
+Wir wissen, dass hier 74,5 m Leiter in dieser Spule sind.
+
+155
+00:19:05,860 --> 00:19:09,520
+Heißt, sie sollte bei einer Frequenz von 1 MHz arbeiten.
+
+156
+00:19:09,700 --> 00:19:12,820
+74,5 m für MHz ist ein Viertel.
+
+157
+00:19:13,900 --> 00:19:17,000
+Also bringe ich jetzt meine Hand.
+
+158
+00:19:17,820 --> 00:19:27,680
+Und wenn die Spule tatsächlich auf eine niedrigere Betriebsfrequenz umschalten will, wird die Amplitude im System steigen.
+
+159
+00:19:27,820 --> 00:19:31,540
+Meine Hand wird eine isolierte Kapazität relativ zur Erde sein.
+
+160
+00:19:32,200 --> 00:19:36,860
+Senkt die Frequenz und sehen wir eine Zunahme der Schwingungsamplitude.
+
+161
+00:19:36,960 --> 00:19:40,000
+Dabei sollte der Verbrauch nicht zunehmen.
+
+162
+00:19:40,380 --> 00:19:43,780
+Also bringe ich meine Hand und wir beobachten das Oszillogramm.
+
+163
+00:19:45,100 --> 00:19:48,940
+Sichtbar, dass die Amplitude jetzt.
+
+164
+00:19:49,380 --> 00:19:51,880
+Und in der oberen Ecke — das ist die Frequenz.
+
+165
+00:19:51,980 --> 00:19:55,660
+Vorerst achte nicht darauf, das Oszilloskop erfasst es nicht.
+
+166
+00:19:55,840 --> 00:19:56,600
+Bringe die Hand.
+
+167
+00:19:57,580 --> 00:20:02,200
+Du siehst, die Amplitude nimmt deutlich zu.
+
+168
+00:20:02,760 --> 00:20:04,660
+Hand näher, Amplitude hoch.
+
+169
+00:20:05,080 --> 00:20:08,760
+Heißt ja, der Spule fehlt tatsächlich zusätzliche Kapazität.
+
+170
+00:20:09,720 --> 00:20:11,260
+Auch der Verbrauch.
+
+171
+00:20:11,480 --> 00:20:12,660
+Hier ändert er sich nicht.
+
+172
+00:20:12,920 --> 00:20:15,200
+Bringe, entferne.
+
+173
+00:20:16,020 --> 00:20:17,160
+Alles am Platz.
+
+174
+00:20:18,060 --> 00:20:25,600
+Jetzt kann ich die Versorgungsspannung hinzufügen und die genaue Frequenz bestimmen.
+
+175
+00:20:25,740 --> 00:20:27,160
+Hier erfasst das Oszilloskop.
+
+176
+00:20:27,840 --> 00:20:30,840
+Trat normal in die Frequenzerfassung ein.
+
+177
+00:20:31,220 --> 00:20:34,980
+Und siehe, dass es praktisch 1,6 MHz ist.
+
+178
+00:20:35,980 --> 00:20:36,960
+Bringe die Hand.
+
+179
+00:20:37,400 --> 00:20:40,820
+Hier auch in diesem Modus nimmt die Amplitude zu.
+
+180
+00:20:41,080 --> 00:20:43,520
+Und jetzt können wir die Frequenz verfolgen.
+
+181
+00:20:45,020 --> 00:20:50,320
+Von 1,58 nimmt sie ab.
+
+182
+00:20:50,800 --> 00:20:51,740
+Also, 1,3.
+
+183
+00:20:53,440 --> 00:20:58,840
+Heißt, ich schließe daraus, dass diese Spule isolierte Kapazität braucht.
+
+184
+00:20:59,260 --> 00:21:10,380
+Wenn beim Bringen der Hand zur Spule die Amplitude im Gegenteil gefallen wäre, dann wäre in diesem Fall klar, dass im Gegenteil die Kapazität an der Spule reduziert werden muss.
+
+185
+00:21:10,660 --> 00:21:14,500
+Das heißt, das ist eine bereits geometrisch falsch gemachte Spule.
+
+186
+00:21:14,640 --> 00:21:21,480
+Hier müsstest du Draht abwickeln, weil bei uns bereits Interturn-Kapazität ist.
+
+187
+00:21:22,360 --> 00:21:34,120
+Und um sie zu reduzieren, kannst du nicht, außer entweder die Windungen der Hochspannungsspule zu strecken, einen Spalt zwischen ihnen machen, oder physische Meter des Leiters abwickeln.
+
+188
+00:21:35,100 --> 00:21:42,740
+Im selben Modus, alles wie du es viele Male gesehen hast — Glimmlampen werden hier in der Nähe des heißen Endes leuchten.
+
+189
+00:21:43,320 --> 00:21:46,160
+In der Nähe der kalten sollten sie nicht leuchten.
+
+190
+00:21:46,320 --> 00:21:49,280
+Geht durch, brennt, hier nein.
+
+191
+00:21:49,440 --> 00:21:57,060
+Auch kannst du mit der Oszilloskopsonde durchgehen — hier wird die maximale Amplitude sein.
+
+192
+00:21:57,060 --> 00:22:00,080
+Und hier wird die Amplitude bei null sein.
+
+193
+00:22:01,700 --> 00:22:05,120
+Jetzt wechseln wir zur Auswahl der isolierten Kapazität.
+
+194
+00:22:05,220 --> 00:22:09,580
+Ich habe sie im Voraus ausgewählt und werde jetzt einige Stufen zeigen.
+
+195
+00:22:10,340 --> 00:22:14,100
+Als isolierte Kapazität verwende ich ein solches System.
+
+196
+00:22:14,260 --> 00:22:18,340
+Hier werde ich das heiße Ende der Hochspannungsspule anlöten.
+
+197
+00:22:18,960 --> 00:22:21,560
+Innen ist eine Kugel von Weihnachtsbaumspielzeugen.
+
+198
+00:22:22,100 --> 00:22:25,640
+Wie man eine solche isolierte Kapazität macht, habe ich früher auf dem Kanal gezeigt.
+
+199
+00:22:25,640 --> 00:22:28,120
+Die isolierte Kapazität ist installiert.
+
+200
+00:22:28,760 --> 00:22:30,600
+Ich lege Strom an das System an.
+
+201
+00:22:37,190 --> 00:22:42,250
+Etwa 6 Hundertstel Ampere, 7 V.
+
+202
+00:22:42,730 --> 00:22:48,470
+Sofort kannst du darauf achten, dass mit der isolierten Kapazität die Frequenz niedriger wurde,
+
+203
+00:22:52,210 --> 00:22:54,250
+1170 kHz.
+
+204
+00:22:55,970 --> 00:22:59,370
+Und das Feld um die Spule nahm zu.
+
+205
+00:22:59,650 --> 00:23:02,270
+Das heißt, jetzt können wir unsere Glimmlampe sehen.
+
+206
+00:23:03,290 --> 00:23:09,510
+Sie leuchtet bereits in einem größeren Abstand von der Spule auf.
+
+207
+00:23:09,670 --> 00:23:13,190
+Dabei ist der Verbrauch bei uns derselbe.
+
+208
+00:23:13,390 --> 00:23:18,090
+Und wir können einen solchen Moment beobachten, dass der Systemstart stabiler wurde.
+
+209
+00:23:18,330 --> 00:23:22,610
+Und wir können ihn bereits ab 3 V starten.
+
+210
+00:23:24,230 --> 00:23:27,830
+4 V und er hat ruhig gestartet.
+
+211
+00:23:29,410 --> 00:23:31,050
+Du siehst bereits die Frequenz.
+
+212
+00:23:32,230 --> 00:23:34,230
+Ich versuche, sie kleiner zu machen.
+
+213
+00:23:36,970 --> 00:23:38,250
+3 V.
+
+214
+00:23:40,190 --> 00:23:41,690
+Das System arbeitet.
+
+215
+00:23:45,570 --> 00:23:55,630
+Jetzt bestimmen wir, dass wir unsere Frequenz genau untersuchen können.
+
+216
+00:23:57,470 --> 00:24:01,090
+Du siehst, dass wir die berechnete Frequenz nicht erreicht haben.
+
+217
+00:24:01,230 --> 00:24:04,810
+Folglich müssen wir die isolierte Kapazität noch erhöhen.
+
+218
+00:24:06,010 --> 00:24:10,690
+Da ich alle Details im Voraus ausgewählt habe, wird das keine Schwierigkeit darstellen.
+
+219
+00:24:10,690 --> 00:24:17,870
+Jetzt installieren wir einen solchen Heiligenschein an unsere Spule.
+
+220
+00:24:18,490 --> 00:24:25,050
+Ein Kopf eines Heiligen Patrick wird herauskommen.
+
+221
+00:24:27,090 --> 00:24:30,250
+So ein Glatzkopf mit Heiligenschein.
+
+222
+00:24:32,370 --> 00:24:34,550
+Eine so lustige Spule kam heraus.
+
+223
+00:24:35,010 --> 00:24:36,750
+Und jetzt lege ich Strom an.
+
+224
+00:24:40,670 --> 00:24:43,330
+Unsere 7-8 V.
+
+225
+00:24:44,710 --> 00:24:46,310
+Und was können wir verfolgen?
+
+226
+00:24:47,410 --> 00:24:50,670
+Dass die Frequenz bei uns 1 MHz beträgt.
+
+227
+00:24:51,090 --> 00:24:52,830
+Heißt, alles richtig ausgewählt.
+
+228
+00:24:53,950 --> 00:25:00,710
+Auch achte darauf, dass zwischen der isolierten Kapazität und dem Tesla-Transformator ein gewisser Abstand ist.
+
+229
+00:25:00,810 --> 00:25:05,270
+Wenn du diesen Abstand änderst, ändert sich die Frequenz sanft.
+
+230
+00:25:05,270 --> 00:25:14,530
+Außerdem ist die Abhängigkeit so — je höher die isolierte Kapazität über dem Tesla-Transformator, desto niedriger wird die Frequenz im System sein.
+
+231
+00:25:14,850 --> 00:25:19,150
+Wenn du die isolierte Kapazität niedriger absenkst, steigt die Frequenz.
+
+232
+00:25:21,030 --> 00:25:24,390
+Wir haben unser gewünschtes Ergebnis bei 1 MHz gefunden.
+
+233
+00:25:24,690 --> 00:25:32,470
+Jetzt bei demselben Verbrauch wird das Glimmlampenleuchten in noch größerem Abstand aufleuchten.
+
+234
+00:25:34,250 --> 00:25:37,650
+Es stellt sich auch in dieser Zone heraus.
+
+235
+00:25:38,510 --> 00:25:46,770
+Und jetzt kann ich größere Spannung geben und schauen, wie sich das System verhält.
+
+236
+00:25:49,110 --> 00:25:50,610
+Ich lege Reihenfolge an.
+
+237
+00:25:52,610 --> 00:25:55,250
+Batteriespannung 13 V.
+
+238
+00:25:57,330 --> 00:26:00,210
+Das ist in diesem Fall Verbrauch.
+
+239
+00:26:01,210 --> 00:26:03,210
+Glimmlampe in einem größeren Abstand.
+
+240
+00:26:04,470 --> 00:26:07,630
+Eine Entladung sollte bereits erscheinen.
+
+241
+00:26:09,550 --> 00:26:10,910
+Da ist eine kleine.
+
+242
+00:26:11,030 --> 00:26:16,530
+Und jetzt können wir eine Leuchtstofflampe anzünden.
+
+243
+00:26:17,530 --> 00:26:18,770
+Leuchtet auf.
+
+244
+00:26:19,770 --> 00:26:22,050
+Jetzt ein Moment.
+
+245
+00:26:22,990 --> 00:26:28,810
+In unserem Schema war eine Glimmlampe, parallel zu Kollektor-Emitter.
+
+246
+00:26:28,810 --> 00:26:32,310
+Hier befindet sie sich, diese Lampe.
+
+247
+00:26:33,150 --> 00:26:39,110
+Wie du dich erinnerst, schrieb ich, dass du sie für die Auslösespannung bei 100-150 V abstimmen musst.
+
+248
+00:26:39,670 --> 00:26:44,230
+Jetzt erhöhe ich die Versorgungsspannung des Systems.
+
+249
+00:26:45,110 --> 00:26:48,530
+Und achte auf die Glimmlampe.
+
+250
+00:26:49,550 --> 00:26:50,970
+Ich erhöhe die Spannung.
+
+251
+00:26:54,830 --> 00:26:55,890
+27 V.
+
+252
+00:26:56,110 --> 00:26:57,750
+Hier beginnt sie aufzuleuchten.
+
+253
+00:27:00,090 --> 00:27:01,590
+Das heißt 30 V.
+
+254
+00:27:02,670 --> 00:27:07,390
+Und die Lampe — du siehst, dass sie sich entzündet hat.
+
+255
+00:27:07,490 --> 00:27:14,150
+Auch siehst du, die Lampe im Emitter ist erleuchtet, weil der Verbrauchsstrom des Systems gewachsen ist.
+
+256
+00:27:14,210 --> 00:27:15,530
+Hier jetzt, was ich anlege.
+
+257
+00:27:17,650 --> 00:27:25,010
+Der Moment des Glimmlampenauslösens sagt, dass wir am Kollektor großes Spannungspotenzial haben.
+
+258
+00:27:25,690 --> 00:27:30,130
+Und das bezeugt, dass die Versorgungsspannung nicht weiter erhöht werden kann.
+
+259
+00:27:30,630 --> 00:27:36,730
+Jetzt musst du auf den Kollektor stehen und schauen, welche Amplitude der Pulse dort herauskommt.
+
+260
+00:27:37,250 --> 00:27:43,130
+Weil wir wissen, dass für diesen Transistor die Grenzspannung Kollektor-Emitter 230 V beträgt.
+
+261
+00:27:43,130 --> 00:27:45,630
+Die Sonde befindet sich am Transistor-Kollektor.
+
+262
+00:27:46,270 --> 00:27:48,890
+Solches Oszillogramm, klassische Peaks.
+
+263
+00:27:49,490 --> 00:27:52,270
+Und wir sehen, die maximale Amplitude beträgt 172 V.
+
+264
+00:27:52,750 --> 00:27:56,130
+Jetzt ist die Glimmlampe am Rand der Auslösung.
+
+265
+00:27:56,310 --> 00:27:59,950
+Sichtbare Spikes nach Sprungamplitude, und sie schneidet sie ab.
+
+266
+00:28:00,590 --> 00:28:08,210
+Weiter kannst du noch die Versorgungsspannung in einen solchen Modus erhöhen, wenn sie stabil aufleuchtet.
+
+267
+00:28:08,210 --> 00:28:15,950
+Weitere Erhöhung sollte man besser nicht machen, weil der Transistor ausfallen kann.
+
+268
+00:28:16,610 --> 00:28:19,870
+Jetzt ist gut sichtbar, dass hier eine andere Amplitude ist.
+
+269
+00:28:21,330 --> 00:28:25,130
+Momente mit kleiner Amplitude, wo die Glimmlampe auslöst.
+
+270
+00:28:25,310 --> 00:28:32,350
+Aber dennoch toleriert der Transistor bei uns kurz solches Mobbing — 296 V.
+
+271
+00:28:33,470 --> 00:28:38,170
+Da sie zeitlich kurz sind, fällt er davon nicht aus.
+
+272
+00:28:38,270 --> 00:28:41,690
+Aber die Glimmlampe beginnt ihre Auslösung.
+
+273
+00:28:43,050 --> 00:28:46,710
+Peaks am Kollektor haben verschiedene Amplituden.
+
+274
+00:28:48,410 --> 00:28:50,490
+Du musst diesen Moment beobachten.
+
+275
+00:28:52,890 --> 00:29:01,970
+Ich sage sofort, dass die meisten Transistoren in diesen Schemas speziell von dieser Kollektor-Emitter-Spannung ausfallen.
+
+276
+00:29:01,970 --> 00:29:04,890
+Nicht von der Stromüberschreitung.
+
+277
+00:29:06,730 --> 00:29:13,310
+Transistoren sterben nicht durch thermischen Durchbruch, sondern speziell durch Spannungsdurchbruch.
+
+278
+00:29:15,230 --> 00:29:17,750
+In diesem Fall Verbrauch.
+
+279
+00:29:18,010 --> 00:29:21,210
+Hier bei uns 26 V.
+
+280
+00:29:21,590 --> 00:29:27,750
+Natürlich werden hier jetzt wie immer überall Leuchtstofflampen brennen.
+
+281
+00:29:28,750 --> 00:29:37,150
+Eine Entladung wird am Rand eines Metallobjekts passieren.
+
+282
+00:29:37,710 --> 00:29:46,810
+Achte darauf, dass der Phyton-Entladung klein ist, weil der Draht bei uns dick ist und seine Windungszahl klein.
+
+283
+00:29:47,810 --> 00:29:52,510
+279 Windungen relativ zu Spulen, die mit dünnem Draht gewickelt sind.
+
+284
+00:29:52,630 --> 00:29:56,630
+Dort kann sie eineinhalbtausend Windungen überschreiten.
+
+285
+00:29:56,630 --> 00:30:02,950
+Aber für die Arbeit mit diesen Systemen wird große Spannung als solche nicht benötigt.
+
+286
+00:30:03,090 --> 00:30:08,390
+Wichtig ist, wie diese Spule um sich herum Störung in der Umgebung erzeugt.
+
+287
+00:30:08,890 --> 00:30:14,810
+Und da sie mit recht dickem Draht gewickelt ist, ist es sehr schwer, ihre Frequenz aus dem Tritt zu bringen.
+
+288
+00:30:15,010 --> 00:30:16,730
+Ein stabiles System kommt heraus.
+
+289
+00:30:16,850 --> 00:30:18,970
+Das System arbeitet etwa zwei Minuten.
+
+290
+00:30:18,970 --> 00:30:23,810
+In einem solchen Modus startet die Mehrheit dieses System.
+
+291
+00:30:24,110 --> 00:30:29,310
+Hier alles gut, Leuchtstofflampen brennen in großem Abstand.
+
+292
+00:30:31,250 --> 00:30:36,630
+Verbrauch in Höhe von 36-38 W springt.
+
+293
+00:30:37,870 --> 00:30:41,890
+Alles auf MHz abgestimmt und darauf halten die Leute an.
+
+294
+00:30:42,010 --> 00:30:44,030
+Sie halten das System für gut funktionierend.
+
+295
+00:30:44,790 --> 00:30:47,530
+Das Thermometer habe ich hier nicht zufällig hingebracht.
+
+296
+00:30:47,530 --> 00:30:53,750
+Seine Temperatur nähert sich 60 Grad.
+
+297
+00:30:53,830 --> 00:30:56,750
+Das ist im Luftstrom am Kühlkörper.
+
+298
+00:30:56,830 --> 00:31:02,010
+Der Kühlkörper selbst ist sehr stark erhitzt und verbrennt die Finger ordentlich.
+
+299
+00:31:02,990 --> 00:31:05,910
+Das konntest du beobachten, wenn du es früher selbst gemacht hast.
+
+300
+00:31:06,190 --> 00:31:07,090
+So ein Modus.
+
+301
+00:31:07,210 --> 00:31:10,270
+Wovon zeugt die Kühlkörpererwärmung?
+
+302
+00:31:10,270 --> 00:31:24,070
+Dass dieser Verbrauch, den wir von 36-38 W haben — er wird größtenteils umsonst, ins Nirgendwo, auf das Erhitzen des Transistors ausgegeben.
+
+303
+00:31:24,690 --> 00:31:31,390
+Und jetzt stimmen wir den Tesla Kacher im richtigen Betriebsmodus ab.
+
+304
+00:31:32,390 --> 00:31:37,770
+Wenn du dich erinnerst, war bei uns das Oszillogramm am Kollektor 1 Peak.
+
+305
+00:31:37,770 --> 00:31:42,790
+Und jetzt erreichen wir den Modus, wenn das System aufhört zu heizen.
+
+306
+00:31:43,850 --> 00:31:47,370
+Und bereits hier können wir etwa 50 W hineinpumpen.
+
+307
+00:31:47,890 --> 00:31:49,510
+Das Feld nimmt signifikant zu.
+
+308
+00:31:50,590 --> 00:31:54,170
+Und alles kommt zur Norm, wie es sein sollte.
+
+309
+00:31:54,570 --> 00:31:56,670
+Solcher Sinn der Abstimmung.
+
+310
+00:31:57,470 --> 00:32:01,750
+Gut sichtbar, dass die Temperatur weiter über 60 Grad wächst.
+
+311
+00:32:02,170 --> 00:32:05,650
+Und den Kühlkörper zu berühren, habe ich keine Lust.
+
+312
+00:32:06,650 --> 00:32:13,070
+Ich schalte aus, damit unser Transistor nicht durch thermischen Durchbruch herausfliegt.
+
+313
+00:32:13,610 --> 00:32:15,530
+Ich habe einen Austausch der Drossel gemacht.
+
+314
+00:32:17,050 --> 00:32:22,290
+Ich entfernte die Drossel, die vorher war — 6 Windungen haben wir hier.
+
+315
+00:32:22,790 --> 00:32:27,430
+Und setzte eine Drossel aus zwei Windungen dicken Drahts ein.
+
+316
+00:32:28,130 --> 00:32:29,730
+Würde scheinen, was tue ich?
+
+317
+00:32:29,730 --> 00:32:35,690
+Der Transistor heizte dafür stark und arbeitete an großer Drahtlänge.
+
+318
+00:32:35,950 --> 00:32:39,130
+Hier größerer Ohm-Widerstand, größere Induktivität.
+
+319
+00:32:39,770 --> 00:32:43,690
+Und jetzt zwinge ich ihn, an kürzerem Draht zu arbeiten.
+
+320
+00:32:44,090 --> 00:32:46,450
+Effektiv mit kleinerem Widerstand.
+
+321
+00:32:46,830 --> 00:32:52,330
+Und er sollte nach der Idee der klassischen Elektrotechnik heizen.
+
+322
+00:32:52,950 --> 00:32:55,410
+Und durch thermischen Durchbruch verbrennen.
+
+323
+00:32:56,130 --> 00:32:59,110
+Aber in diesem Fall passiert das bei uns nicht.
+
+324
+00:32:59,110 --> 00:33:03,830
+Weil wir Arbeit nach Tesla-Technologie durchführen.
+
+325
+00:33:04,350 --> 00:33:09,570
+Und wir werden jetzt an diesem Transistor im Hochfrequenz-Schwingungsmodus arbeiten.
+
+326
+00:33:11,290 --> 00:33:15,830
+Jetzt wird das Experiment bei uns von Raumtemperatur starten.
+
+327
+00:33:16,010 --> 00:33:21,310
+Jetzt ist Sommer und bei mir hier sind etwa 30 Grad im Raum.
+
+328
+00:33:22,330 --> 00:33:25,590
+Das Quecksilber ist bei der 30-Marke sichtbar.
+
+329
+00:33:27,470 --> 00:33:31,470
+Zum Start schauen wir uns das Oszillogramm am Kollektor an.
+
+330
+00:33:31,570 --> 00:33:37,330
+Jetzt schließe ich die Sonde hier an, damit der Unterschied in den Betriebsmodi sichtbar war.
+
+331
+00:33:37,570 --> 00:33:40,010
+Die Sonde ist am Transistor-Kollektor.
+
+332
+00:33:40,230 --> 00:33:44,510
+Gemeinsamer Draht des Oszilloskops am Minus der Schemaenergiequelle.
+
+333
+00:33:45,610 --> 00:33:47,370
+Du siehst, das System startete.
+
+334
+00:33:47,510 --> 00:33:49,770
+3 V 0,03 A es verbraucht.
+
+335
+00:33:50,390 --> 00:33:53,410
+Und jetzt erhöhen wir die Spannung.
+
+336
+00:33:53,410 --> 00:33:57,530
+Und wir beobachten das Oszillogramm.
+
+337
+00:33:59,290 --> 00:34:04,670
+Du siehst, das Oszillogramm hat sich signifikant geändert.
+
+338
+00:34:05,810 --> 00:34:08,090
+Jetzt ist die Spannung bei uns 8 V.
+
+339
+00:34:09,810 --> 00:34:13,730
+Ein Peak verschwand und eine Serie von Pulsen erschien.
+
+340
+00:34:13,910 --> 00:34:14,810
+Weiter erhöhen.
+
+341
+00:34:16,230 --> 00:34:18,310
+Das ist bei uns 11 V.
+
+342
+00:34:19,910 --> 00:34:21,890
+Gehe weiter.
+
+343
+00:34:30,680 --> 00:34:32,840
+19 V.
+
+344
+00:34:35,100 --> 00:34:36,500
+20.
+
+345
+00:34:40,270 --> 00:34:48,170
+Jetzt müssen wir auf denselben Verbrauch des Schemas wie im vorherigen Experiment bringen.
+
+346
+00:34:50,210 --> 00:34:52,450
+Spannung mehr erhöhen.
+
+347
+00:34:56,710 --> 00:35:00,710
+Hier dieses, was wir am Kollektor haben.
+
+348
+00:35:02,030 --> 00:35:02,930
+1 Puls.
+
+349
+00:35:03,090 --> 00:35:05,710
+Es stellt sich bei uns eine geschnittene Serie von Pulsen heraus.
+
+350
+00:35:06,570 --> 00:35:12,170
+Außerdem haben wir hier bereits hohe Frequenz.
+
+351
+00:35:12,590 --> 00:35:18,310
+Und die Frequenz der nachfolgenden Pulse beträgt 1 MHz.
+
+352
+00:35:20,490 --> 00:35:23,250
+Jetzt wird das Oszilloskop angepasst.
+
+353
+00:35:24,250 --> 00:35:26,350
+Es wird bequemer zu beobachten sein.
+
+354
+00:35:29,010 --> 00:35:31,250
+Frequenz 1 MHz.
+
+355
+00:35:31,430 --> 00:35:33,290
+Das heißt, alles funktioniert.
+
+356
+00:35:34,050 --> 00:35:36,730
+Jetzt schauen wir auf die Temperatur.
+
+357
+00:35:39,690 --> 00:35:45,730
+Die Temperatur bei uns wächst vorerst nicht stark.
+
+358
+00:35:46,030 --> 00:35:46,770
+Kein Wachstum.
+
+359
+00:35:48,130 --> 00:35:49,750
+31 Grad.
+
+360
+00:35:50,490 --> 00:35:51,730
+Das System arbeitet.
+
+361
+00:35:52,330 --> 00:36:02,450
+Und jetzt, wenn sich nichts geändert hat, können wir darauf achten, in welchem Abstand die Lampe leuchtet.
+
+362
+00:36:03,270 --> 00:36:07,850
+Jetzt das Leuchten vom System im Abstand...
+
+363
+00:36:07,850 --> 00:36:10,730
+Wenn die Kamera den Abstand übertragen hat...
+
+364
+00:36:10,730 --> 00:36:13,330
+Aber ich habe sie bereits in einen Abstand von mehr als einem Meter gebracht.
+
+365
+00:36:14,270 --> 00:36:15,470
+Die Lampe leuchtet.
+
+366
+00:36:15,570 --> 00:36:16,870
+Ich nehme sie weiter weg.
+
+367
+00:36:17,870 --> 00:36:22,730
+Und hier verblasste sie in einem Abstand von etwa anderthalb Metern.
+
+368
+00:36:23,810 --> 00:36:28,130
+Das heißt, das Feld ist in diesem Modus signifikant gewachsen.
+
+369
+00:36:29,690 --> 00:36:32,710
+Die Entladung erhöhte auch ihre Länge.
+
+370
+00:36:33,990 --> 00:36:36,950
+Jetzt schauen wir, was wir verbrauchen.
+
+371
+00:36:39,690 --> 00:36:41,010
+Neu berechnen.
+
+372
+00:36:43,990 --> 00:36:49,410
+28 V bei 1,3 A.
+
+373
+00:36:50,070 --> 00:36:51,930
+36 W.
+
+374
+00:36:52,310 --> 00:36:55,130
+Bringe noch mehr Verbrauch.
+
+375
+00:36:59,090 --> 00:37:00,370
+30...
+
+376
+00:37:00,370 --> 00:37:03,670
+30 bei 1,36.
+
+377
+00:37:04,990 --> 00:37:06,190
+40 W.
+
+378
+00:37:06,290 --> 00:37:10,290
+Jetzt isst das System mehr als im vorherigen Experiment.
+
+379
+00:37:12,070 --> 00:37:17,090
+Du siehst auch, die Lampe am Kollektor brennt.
+
+380
+00:37:17,190 --> 00:37:19,110
+Das heißt am Transistor-Emitter.
+
+381
+00:37:19,530 --> 00:37:22,310
+Glimmlampe am Kollektor leuchtet nicht.
+
+382
+00:37:22,430 --> 00:37:27,310
+Heißt, überschüssige Spannung von Peaks am Kollektor ist bei uns abwesend.
+
+383
+00:37:27,430 --> 00:37:30,430
+Aber wir können auch nach Oszilloskop schauen.
+
+384
+00:37:30,430 --> 00:37:35,130
+Amplitude 116 V des maximalen Peaks.
+
+385
+00:37:36,590 --> 00:37:38,510
+Was zeigt das Thermometer?
+
+386
+00:37:39,490 --> 00:37:41,210
+Hier wie viel ich bereits filme.
+
+387
+00:37:42,310 --> 00:37:44,330
+Dass der Transistor aufhörte zu heizen.
+
+388
+00:37:45,030 --> 00:37:47,450
+Und er wurde über Raumtemperatur.
+
+389
+00:37:48,070 --> 00:37:49,570
+Um 1-2 Grad.
+
+390
+00:37:51,870 --> 00:37:54,590
+Wir verbrauchen dieselben 40 W.
+
+391
+00:37:54,870 --> 00:38:07,590
+Und wenn du in einem solchen Modus startest, wirst du spüren, wenn du eine Leuchtstofflampe hier in die Hand bringst, in der du sie hältst, wird sie deine Hand sehr stark erhitzen.
+
+392
+00:38:07,590 --> 00:38:08,870
+Direkt erhitzen.
+
+393
+00:38:11,710 --> 00:38:14,930
+Die Betriebsmodi sind absolut unterschiedlich.
+
+394
+00:38:15,850 --> 00:38:20,990
+Und jetzt verstehen wir, welche Leistung wir verbrauchen.
+
+395
+00:38:21,470 --> 00:38:23,490
+Wir haben plus das Lampenleuchten.
+
+396
+00:38:24,350 --> 00:38:26,890
+Und dass unser Transistor nicht heizt.
+
+397
+00:38:27,050 --> 00:38:29,990
+Das heißt, die gesamte Energie geht optimal ins System.
+
+398
+00:38:30,530 --> 00:38:32,650
+Gleiche Frequenz 1 MHz.
+
+399
+00:38:32,650 --> 00:38:38,350
+Hier ist der korrekte Kacher-Betriebsmodus des Schemas.
+
+400
+00:38:39,390 --> 00:38:45,330
+Und wie Tesla schrieb, braucht man eine Serie von Hochspannungsschwingungen.
+
+401
+00:38:47,850 --> 00:38:50,790
+Beobachten wir noch den thermischen Modus.
+
+402
+00:38:54,760 --> 00:38:56,140
+Temperatur wächst.
+
+403
+00:38:57,820 --> 00:38:59,400
+34 Grad.
+
+404
+00:38:59,520 --> 00:39:02,040
+Aber intensives Wachstum ist abwesend wie in jenem Fall.
+
+405
+00:39:02,040 --> 00:39:03,620
+Überschritt über 60.
+
+406
+00:39:06,100 --> 00:39:07,640
+Das heißt, arbeitet ausgezeichnet.
+
+407
+00:39:07,860 --> 00:39:11,560
+Du kannst frei eine Hand halten.
+
+408
+00:39:12,540 --> 00:39:14,100
+Der Kühlkörper verbrennt sie nicht.
+
+409
+00:39:20,300 --> 00:39:25,840
+Jetzt beobachten wir noch den Verbrauchsmodus.
+
+410
+00:39:29,620 --> 00:39:31,540
+Nun, und jetzt bringe ich...
+
+411
+00:39:31,540 --> 00:39:34,940
+Pumpen wir noch mehr ins System.
+
+412
+00:39:35,940 --> 00:39:38,760
+Bringe zum vollen Lampenleuchten.
+
+413
+00:39:41,140 --> 00:39:46,460
+Vielleicht leuchtet sie so ab 12 V.
+
+414
+00:39:49,080 --> 00:39:53,920
+Hier in der Größenordnung von 45 V 2 A.
+
+415
+00:39:54,080 --> 00:39:55,620
+Jetzt schauen wir, was sein wird.
+
+416
+00:40:00,870 --> 00:40:02,890
+45 bei 2.
+
+417
+00:40:03,530 --> 00:40:05,910
+Wir pumpen 90 W ins System.
+
+418
+00:40:08,490 --> 00:40:09,570
+Oszillogramm.
+
+419
+00:40:10,530 --> 00:40:13,710
+Du siehst, die Spannung ist in Norm.
+
+420
+00:40:14,030 --> 00:40:16,730
+Am Kollektor maximal 168 V.
+
+421
+00:40:18,570 --> 00:40:23,970
+Natürlich nahm jetzt das Feld noch signifikanter zu.
+
+422
+00:40:24,630 --> 00:40:26,970
+Wir können es wegnehmen, wenn wir so schauen.
+
+423
+00:40:28,190 --> 00:40:33,570
+Bereits in 2 m Abstand habe ich die Lampe von diesem System genommen.
+
+424
+00:40:35,070 --> 00:40:37,590
+Und sie leuchtet alles.
+
+425
+00:40:39,390 --> 00:40:40,990
+Das Leuchten verblasst.
+
+426
+00:40:41,790 --> 00:40:42,990
+Ein Meter zweiundachtzig.
+
+427
+00:40:44,010 --> 00:40:47,230
+Nun, und hier entsprechend verbrennt die Hand ordentlich.
+
+428
+00:40:48,330 --> 00:40:51,270
+Also, Verbrauch, thermischer Modus.
+
+429
+00:40:51,490 --> 00:40:52,070
+Was haben wir?
+
+430
+00:40:53,070 --> 00:40:54,490
+Wie ändert er sich?
+
+431
+00:40:55,930 --> 00:40:59,070
+Du siehst, das Wachstum ist absolut unbedeutend.
+
+432
+00:40:59,730 --> 00:41:01,670
+Plus 2 Grad hinzugefügt.
+
+433
+00:41:07,420 --> 00:41:10,080
+Hier so passiert das, dieses Pumpen.
+
+434
+00:41:10,360 --> 00:41:13,320
+Wenn du auf die Glimmlampe achtest, leuchtet sie nicht.
+
+435
+00:41:13,520 --> 00:41:14,820
+Das heißt, der Schutz löst nicht aus.
+
+436
+00:41:14,940 --> 00:41:16,820
+Alles ist im optimalen Modus.
+
+437
+00:41:17,760 --> 00:41:25,040
+Außerdem kann die Windungszahl in diesem System an der Drossel bis auf eins reduziert werden.
+
+438
+00:41:31,660 --> 00:41:37,620
+Ich schalte das System wahrscheinlich aus, um den Kopf nicht zusätzlich zu bestrahlen.
+
+439
+00:41:37,620 --> 00:41:39,100
+Schalte noch einmal aus — Temperatur.
+
+440
+00:41:41,280 --> 00:41:43,580
+Alles im optimalen Modus.
+
+441
+00:41:43,720 --> 00:41:46,980
+Das heißt, verstehe, dass hier jetzt so ein großer Kühlkörper nicht nötig ist.
+
+442
+00:41:47,240 --> 00:41:51,120
+Ein kleiner Kühlkörper wird ausreichen, alles wird ausgezeichnet arbeiten.
+
+443
+00:41:52,020 --> 00:41:56,380
+Plus solche Watt, die wir hier hineinpumpen können.
+
+444
+00:41:56,500 --> 00:42:02,580
+Es kommt ein sehr mächtiger Tesla mit einem großen Feld heraus, mit dem wir bereits ausgezeichnete Experimente durchführen können.
+
+445
+00:42:08,910 --> 00:42:14,490
+Noch eine kleine Nuance zu Kirchhoffs Gesetz, das ich im Videoclip erwähnt habe.
+
+446
+00:42:14,630 --> 00:42:17,210
+Jetzt siehst du, ich habe die Sonde bewegt.
+
+447
+00:42:17,950 --> 00:42:21,050
+Sie befindet sich jetzt gemeinsam an Plus-Strom.
+
+448
+00:42:22,030 --> 00:42:26,490
+Und hier ist das Oszillogramm nach Plus-Strom.
+
+449
+00:42:26,730 --> 00:42:28,130
+Der Puls ist auch positiv.
+
+450
+00:42:28,590 --> 00:42:32,590
+Nur der Teil, der ins Minus geht, ist zur Versorgungsspannung.
+
+451
+00:42:35,070 --> 00:42:38,250
+Aber der Puls blieb auch positiv.
+
+452
+00:42:38,650 --> 00:42:41,350
+Versorgungsspannung bei uns 37 V.
+
+453
+00:42:41,870 --> 00:42:45,270
+Und dort im Minus geht es auf 34 V.
+
+454
+00:42:46,990 --> 00:42:53,330
+Verstehe, dass das System bei uns im Kacher-Modus arbeitet und damit alles gut ist.
+
+455
+00:42:54,930 --> 00:42:59,110
+Jetzt untersuchen wir noch eine Eigenschaft der Kacher-Modus-Arbeit.
+
+456
+00:42:59,110 --> 00:43:06,010
+Verschiebung von Strom und Spannung, die zu 90 Grad in der Primärdrosselspule strebt.
+
+457
+00:43:06,390 --> 00:43:09,490
+Jetzt ist der gelbe Kanal des Oszilloskops am Kollektor.
+
+458
+00:43:10,070 --> 00:43:14,450
+Der blaue Kanal des Oszilloskops ist am Transistor-Emitter.
+
+459
+00:43:14,790 --> 00:43:18,190
+Gemeinsam entsprechend am gemeinsamen Erdungsdraht.
+
+460
+00:43:20,510 --> 00:43:24,090
+Gelber Kanal hier, blauer hier.
+
+461
+00:43:24,830 --> 00:43:28,550
+Jetzt beobachten wir Strom und Spannung.
+
+462
+00:43:28,550 --> 00:43:33,290
+Den Strom werden wir nach Spannungsabfall an diesem Widerstand betrachten.
+
+463
+00:43:33,570 --> 00:43:35,010
+Das heißt, sehe seine Phase.
+
+464
+00:43:35,750 --> 00:43:38,270
+Strom anlegen an das System.
+
+465
+00:43:40,350 --> 00:43:42,370
+Du siehst Peaks am Kollektor.
+
+466
+00:43:43,070 --> 00:43:44,510
+Und jetzt holt der Emitter auf.
+
+467
+00:43:44,590 --> 00:43:48,150
+Warum geschah ein solcher Anstieg am Emitter?
+
+468
+00:43:48,550 --> 00:43:53,350
+Das war die Zeit, die zum Laden dieser Elektrolytkapazität nötig war.
+
+469
+00:43:54,210 --> 00:43:57,370
+Aber uns interessiert mehr die Phasenlage.
+
+470
+00:43:58,610 --> 00:44:00,850
+Und was können wir beobachten.
+
+471
+00:44:01,870 --> 00:44:03,650
+Ein sehr interessantes Oszillogramm.
+
+472
+00:44:04,010 --> 00:44:08,590
+Hier ist ein Puls aus einer Serie nach Spannung am Kollektor.
+
+473
+00:44:08,750 --> 00:44:11,710
+Und hier ist der Hauptstrom mit einer Verschiebung um 90 Grad.
+
+474
+00:44:12,250 --> 00:44:20,370
+Und außerdem ist die Phasenverschiebung sogar innerhalb der Hochspannungspulse.
+
+475
+00:44:21,170 --> 00:44:23,090
+Zwischen ihrem Strom und Spannung.
+
+476
+00:44:23,990 --> 00:44:26,210
+Auch ein Phasenunterschied ist sichtbar.
+
+477
+00:44:27,370 --> 00:44:35,030
+Sie sind, abgesehen davon, dass sie verschoben sind, die Verschiebung ist auch um 180 Grad in Gegenphase.
+
+478
+00:44:35,470 --> 00:44:42,730
+Und dieser Modus erzeugt speziell Wunder mit dem Feld in unserem Schema.
+
+479
+00:44:43,130 --> 00:44:46,010
+Und führt zum minimalen Verbrauch.
+
+480
+00:44:46,950 --> 00:44:53,830
+Weil Strom und Spannung, die aus der Quelle konsumiert werden, mit einer Phasenverschiebung sind.
+
+481
+00:44:55,810 --> 00:44:59,770
+Und einige Worte darüber, wie man einen solchen Modus erreicht.
+
+482
+00:45:00,310 --> 00:45:06,650
+Dieser Modus wird durch Auswahl der Vorspannung mit diesen Widerständen erreicht.
+
+483
+00:45:07,210 --> 00:45:11,550
+Und Auswahl der Windungszahl in der Drossel.
+
+484
+00:45:12,070 --> 00:45:16,590
+Du musst einen solchen Modus erreichen, dass der Transistor anfing zu öffnen und zu schließen.
+
+485
+00:45:16,830 --> 00:45:22,450
+Speziell ein Kacher-Transistor ist in diesem Schaltmodus mit hoher Frequenz.
+
+486
+00:45:22,450 --> 00:45:32,470
+Es stellt sich heraus, wenn wir Strom im Kollektor-Emitter-Übergang durch Reduzierung der Windungen an der Drossel erhöhen.
+
+487
+00:45:33,370 --> 00:45:37,650
+Und weil sich der Strom durch den Kollektor-Emitter-Übergang bewegt.
+
+488
+00:45:38,710 --> 00:45:45,930
+Bei uns passiert zusätzlich ein Defizit des Öffnungsstroms an der Transistorbasis.
+
+489
+00:45:46,690 --> 00:45:50,530
+Ladung geht in den Kollektor-Emitter-Übergang.
+
+490
+00:45:50,530 --> 00:45:53,410
+Und der Transistor beginnt zu schließen und zu öffnen.
+
+491
+00:45:54,070 --> 00:45:56,730
+Und da wir hier diese Vorspannung ausgewählt haben.
+
+492
+00:45:57,290 --> 00:46:01,790
+Dann stellt sich heraus, wir fügen nicht in die Transistorbasis zu seiner vollen Öffnung hinzu.
+
+493
+00:46:02,470 --> 00:46:06,950
+Und er macht speziell solche Sprünge nach Amplitude.
+
+494
+00:46:08,430 --> 00:46:09,990
+Damit von allen verabschiede ich mich.
+
+495
+00:46:10,110 --> 00:46:15,250
+Erfolgreiche Experimente an alle, schöne Erlebnisse, Verständnis und alles Gute.
