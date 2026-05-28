@@ -1,0 +1,39 @@
+1
+00:00:01,180 --> 00:00:08,440
+Entonces, la tarea es construir un inversor de voltaje nominal de 800 voltios, 2 amperios.
+
+2
+00:00:08,520 --> 00:00:22,500
+La carga serán lámparas de 300 vatios, 4 conectadas en serie, y agrupadas en paralelo como 3 ramas — 3 grupos de 4 lámparas en paralelo.
+
+3
+00:00:23,060 --> 00:00:29,460
+4 lámparas por grupo para distribuir los 800 voltios como 200 voltios por lámpara.
+
+4
+00:00:30,600 --> 00:00:50,000
+Entonces, tenemos un transformador elevador de ferrita, tenemos un inversor de medio puente, esta es la placa de control, el rectificador de red, y vamos a vigilar el consumo.
+
+5
+00:00:50,000 --> 00:00:52,380
+Bueno, lo encendemos.
+
+6
+00:00:56,280 --> 00:00:59,320
+Iniciamos la lógica.
+
+7
+00:01:01,920 --> 00:01:02,860
+Allá vamos.
+
+8
+00:01:04,640 --> 00:01:06,440
+Así es como se enciende esta cosa.
+
+9
+00:01:08,300 --> 00:01:19,140
+Nuestro consumo es de 7,5 amperios a 220 voltios, amperímetro de CA.
+
+10
+00:01:20,080 --> 00:01:22,580
+Lo apago, o la tira se va a quemar.

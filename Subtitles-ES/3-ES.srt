@@ -1,0 +1,131 @@
+1
+00:00:07,110 --> 00:00:17,530
+Ahora vamos a ver esto — es el generador que controla el interruptor de potencia del transformador Tesla, el controlado, esta cosa de aquí.
+
+2
+00:00:19,270 --> 00:00:22,770
+La sonda del osciloscopio está en la puerta del transistor.
+
+3
+00:00:24,630 --> 00:00:30,750
+Aquí vemos las ráfagas de pulsos entrando, ahora ampliemos la vista.
+
+4
+00:00:34,580 --> 00:00:46,180
+Estamos usando 4 pulsos por ráfaga, ciclo útil 40%, 4 pulsos alcanzan para hacer arrancar el sistema.
+
+5
+00:00:48,340 --> 00:01:13,360
+Después, el amperímetro va a registrar la corriente de consumo, movemos la sonda a la antena, subimos un poco el voltaje, y aplicamos corriente.
+
+6
+00:01:13,440 --> 00:01:23,160
+Corriente del inversor, debajo del aislante para que no haga corto en el amperímetro, alimentación de 12 voltios.
+
+7
+00:01:24,420 --> 00:01:28,620
+Este es el inversor de potencia, es decir...
+
+8
+00:01:30,240 --> 00:01:35,180
+Ahora son 130 voltios, que van a este interruptor de potencia aquí.
+
+9
+00:01:35,800 --> 00:01:47,440
+El esquema — tenemos el interruptor de potencia, el diodo Schottky, los resistores limitadores de corriente, y esta salida aquí va al inductor.
+
+10
+00:01:48,980 --> 00:01:50,460
+Aplicamos corriente.
+
+11
+00:01:55,720 --> 00:02:02,180
+Aquí vemos que en este modo está consumiendo casi 1 amperio, o sea...
+
+12
+00:02:02,600 --> 00:02:05,160
+12 vatios.
+
+13
+00:02:05,520 --> 00:02:07,960
+Veamos qué está pasando aquí.
+
+14
+00:02:09,580 --> 00:02:13,900
+Y aquí tenemos señales así.
+
+15
+00:02:17,440 --> 00:02:20,440
+Así, así llegan las ráfagas de pulsos.
+
+16
+00:02:21,040 --> 00:02:33,260
+Ahora podemos ampliar esta señal, y vemos esta señal con forma de retina aquí.
+
+17
+00:02:35,980 --> 00:02:38,760
+La podemos fijar.
+
+18
+00:02:39,620 --> 00:02:43,300
+Así se ramifica con apenas 4 pulsos.
+
+19
+00:02:46,640 --> 00:02:49,420
+El sistema salió bien, balanceado.
+
+20
+00:02:51,140 --> 00:02:58,140
+Las lámparas están encendidas, hace bonitas chispas en el destornillador.
+
+21
+00:03:07,890 --> 00:03:11,390
+Se ve bien, las lámparas de neón también están encendidas, pero básicamente estándar.
+
+22
+00:03:16,710 --> 00:03:20,270
+Lo ampliamos, y vemos una onda sinusoidal aquí.
+
+23
+00:03:21,970 --> 00:03:24,570
+Apenas 4 oscilaciones de arranque.
+
+24
+00:03:24,730 --> 00:03:33,590
+Bueno, vimos esto mismo con Ruslan, nos mostró este tipo de señal con forma de retina.
+
+25
+00:03:38,150 --> 00:03:42,970
+Se asume que este no es el modo de trabajo.
+
+26
+00:03:44,250 --> 00:03:48,990
+Esta es solo una sintonización balanceada del sistema en este momento.
+
+27
+00:03:49,110 --> 00:03:53,170
+Es decir, aquí vemos un transformador inverso en ferrita.
+
+28
+00:03:54,110 --> 00:04:09,730
+Aparentemente esta ferrita no cumple con los parámetros que debería tener para darnos algún tipo de señal pulsada en la antena.
+
+29
+00:04:10,510 --> 00:04:12,610
+Lo vamos a cambiar, vamos a probar otros.
+
+30
+00:04:12,950 --> 00:04:16,170
+Veamos qué pasa después.
+
+31
+00:04:18,010 --> 00:04:26,150
+Aquí el sistema ajusta la frecuencia y el ciclo útil de la señal, de esos cuatro pulsos.
+
+32
+00:04:26,510 --> 00:04:34,150
+Y aquí, el sistema ajusta la duración de la ráfaga y dónde cae la ráfaga.
+
+33
+00:04:34,410 --> 00:04:35,490
+Todo estándar.
