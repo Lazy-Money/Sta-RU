@@ -297,6 +297,8 @@ def dub_one(
     cache_root: Path | None = None,
     skip_silent_segments: bool = True,
     burn_in_subs: bool = False,
+    demucs_model: str = "htdemucs",
+    demucs_segment: int | None = None,
 ) -> None:
     work_dir.mkdir(parents=True, exist_ok=True)
     seg_dir = work_dir / "segments"
@@ -307,7 +309,8 @@ def dub_one(
     print(f"  SRT: {len(subs)} segments  |  engine: edge-tts  |  mode: {mode}")
 
     video_path, orig_audio, ambient_path, _vocals_path = prepare_video_and_ambient(
-        item.url, work_dir, cache_root, remove_voice
+        item.url, work_dir, cache_root, remove_voice,
+        demucs_model=demucs_model, demucs_segment=demucs_segment,
     )
 
     voice_mask: list[bool] | None = None
@@ -403,6 +406,8 @@ def run_batch(
     cache_root: str | Path | None = "/tmp/sta-ru-cache",
     skip_silent_segments: bool = True,
     burn_in_subs: bool = False,
+    demucs_model: str = "htdemucs",
+    demucs_segment: int | None = None,
 ) -> list[VideoItem]:
     """Main entry point. `voice` overrides `gender` if provided."""
     lang_uc = lang.upper()
@@ -470,6 +475,8 @@ def run_batch(
                 cache_root=Path(cache_root) if cache_root else None,
                 skip_silent_segments=skip_silent_segments,
                 burn_in_subs=burn_in_subs,
+                demucs_model=demucs_model,
+                demucs_segment=demucs_segment,
             )
             it.status = "done"
             print(f"  Elapsed: {time.time() - t0:.1f}s")

@@ -349,6 +349,8 @@ def prepare_video_and_ambient(
     work_dir: Path,
     cache_root: Path | None,
     remove_voice: bool,
+    demucs_model: str = "htdemucs",
+    demucs_segment: int | None = None,
 ) -> tuple[Path, Path, Path | None, Path | None]:
     """Download the video (or fetch from cache), extract its mono audio, and
     optionally produce the ambient AND isolated-vocals tracks. When
@@ -401,8 +403,9 @@ def prepare_video_and_ambient(
                 vocals_path = vocals
             print("  Ambient & vocals from cache")
         else:
-            print("  Stripping vocals (Demucs)...", flush=True)
-            if strip_vocals(orig_audio, stripped, vocals_out=vocals):
+            print(f"  Stripping vocals (Demucs: {demucs_model})...", flush=True)
+            if strip_vocals(orig_audio, stripped, vocals_out=vocals,
+                            demucs_model=demucs_model, demucs_segment=demucs_segment):
                 ambient_path = stripped
                 if cached_ambient:
                     shutil.copy(stripped, cached_ambient)
@@ -468,12 +471,18 @@ def extract_voice_ref(audio_path: Path, subs: list[srt.Subtitle], out_path: Path
 # ============================================================
 def strip_vocals(
     audio_path: Path, out_path: Path, vocals_out: Path | None = None,
+    demucs_model: str = "htdemucs", demucs_segment: int | None = None,
 ) -> bool:
     """Run Demucs to separate vocals from the rest.
 
     Writes the no-vocals stem (ambient) to `out_path`. If `vocals_out` is
     provided, also copies the isolated vocals stem there — useful as a clean
     voice-clone reference for XTTS.
+
+    `demucs_model` picks the Demucs model (e.g. "htdemucs", "hdemucs_mmi",
+    "mdx_extra_q"). Lighter models cut RAM usage at some quality cost.
+    `demucs_segment` (seconds) caps the chunk length to further reduce RAM —
+    leave as None for the model default.
 
     Returns True on success, False if Demucs isn't installed or fails.
     """
@@ -484,18 +493,17 @@ def strip_vocals(
         return False
     work = audio_path.parent / "demucs_out"
     work.mkdir(exist_ok=True)
+    cmd = [
+        sys.executable, "-m", "demucs.separate",
+        "--two-stems", "vocals",
+        "-n", demucs_model,
+        "-o", str(work),
+    ]
+    if demucs_segment is not None:
+        cmd += ["--segment", str(demucs_segment)]
+    cmd.append(str(audio_path))
     try:
-        subprocess.run(
-            [
-                sys.executable, "-m", "demucs.separate",
-                "--two-stems", "vocals",
-                "-n", "htdemucs",
-                "-o", str(work),
-                str(audio_path),
-            ],
-            check=True,
-            capture_output=True,
-        )
+        subprocess.run(cmd, check=True, capture_output=True)
     except subprocess.CalledProcessError as e:
         print(f"[WARN] demucs failed: {e.stderr.decode()[-200:] if e.stderr else e}")
         return False
