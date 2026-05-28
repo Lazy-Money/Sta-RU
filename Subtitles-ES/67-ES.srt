@@ -1,0 +1,4143 @@
+1
+00:00:00,860 --> 00:00:01,640
+¡Hola a todos!
+
+2
+00:00:02,020 --> 00:00:08,520
+Mira, se están encendiendo discusiones intensas en el canal sobre este dispositivo.
+
+3
+00:00:09,560 --> 00:00:18,440
+Hay muchos comentarios interesantes, y un montón de tonterías, como "no sabes usar el aparato, la medición está mal".
+
+4
+00:00:18,540 --> 00:00:22,240
+O "se te quemaron las puntas del osciloscopio".
+
+5
+00:00:22,480 --> 00:00:24,500
+Por cierto, son puntas de 1500 voltios.
+
+6
+00:00:24,640 --> 00:00:26,520
+Estas puntas tienen atenuación 100x.
+
+7
+00:00:27,320 --> 00:00:28,940
+No hay forma de que se quemen aquí.
+
+8
+00:00:29,520 --> 00:00:32,140
+En fin, déjame mostrarte para que veas.
+
+9
+00:00:32,260 --> 00:00:41,960
+Te voy a mostrar, aunque en aquel video mostré que cuando puse el canal amarillo en la compuerta del transistor, se ve claramente el oscilograma, o sea que no se quemó.
+
+10
+00:00:42,740 --> 00:00:44,520
+Bueno, basta de tonterías.
+
+11
+00:00:45,200 --> 00:00:53,880
+Un tipo escribe: "Al fin me convencí de que el 99,9% de los videos similares son puro hacer plata con las visualizaciones".
+
+12
+00:00:53,980 --> 00:00:55,660
+Bueno, si eso es lo que piensas, está bien.
+
+13
+00:00:56,540 --> 00:00:58,600
+Y aquí hay un comentario interesante.
+
+14
+00:00:59,340 --> 00:01:06,260
+"Por supuesto que la polaridad del pulso no cambió, no invertiste la punta".
+
+15
+00:01:06,940 --> 00:01:07,680
+Sí, sin duda.
+
+16
+00:01:07,840 --> 00:01:11,300
+Voy a invertir la punta ahora, no verás este pulso allá para nada.
+
+17
+00:01:11,420 --> 00:01:13,720
+Solo verás funcionar el interruptor, eso es todo.
+
+18
+00:01:15,500 --> 00:01:19,260
+El pulso ocurre exclusivamente en este punto.
+
+19
+00:01:19,600 --> 00:01:21,160
+¿Por qué lo tomo de aquí?
+
+20
+00:01:21,280 --> 00:01:24,360
+Exclusivamente aquí, en ningún otro lugar del esquema.
+
+21
+00:01:24,460 --> 00:01:26,880
+Diablos, ya estoy cansado de repetir que esto no es fuerza contraelectromotriz.
+
+22
+00:01:26,960 --> 00:01:27,280
+Bueno, está bien.
+
+23
+00:01:28,040 --> 00:01:29,460
+Las cosas que se le ocurren a la gente.
+
+24
+00:01:29,540 --> 00:01:30,440
+Y el convertidor elevador, este.
+
+25
+00:01:30,580 --> 00:01:31,740
+Conozco su esquema.
+
+26
+00:01:31,800 --> 00:01:32,940
+Y el flyback, también lo conozco.
+
+27
+00:01:33,140 --> 00:01:34,480
+Y he armado este tipo de esquemas.
+
+28
+00:01:35,260 --> 00:01:36,160
+Todo me parece genial.
+
+29
+00:01:36,300 --> 00:01:39,160
+Este pulso, lo vamos a invertir ahora y no lo verás allá.
+
+30
+00:01:39,260 --> 00:01:40,820
+Solo está aquí en este punto.
+
+31
+00:01:41,280 --> 00:01:42,420
+Entonces, medición 1.
+
+32
+00:01:42,700 --> 00:01:45,220
+Confirmando que mis puntas siguen intactas.
+
+33
+00:01:46,100 --> 00:01:49,520
+El común del osciloscopio está en el negativo.
+
+34
+00:01:49,900 --> 00:01:55,460
+Ahora vamos a ver el oscilograma en las compuertas de los transistores.
+
+35
+00:01:55,620 --> 00:01:57,140
+Es decir, después de los drivers.
+
+36
+00:01:57,480 --> 00:02:01,620
+Aquí, dos puntas, y se ve que la imagen es idéntica.
+
+37
+00:02:02,020 --> 00:02:02,960
+Ahí, diablos, funciona.
+
+38
+00:02:04,040 --> 00:02:07,260
+El potencial es de 15 voltios.
+
+39
+00:02:07,860 --> 00:02:10,040
+Y aquí vemos la alimentación.
+
+40
+00:02:11,560 --> 00:02:15,040
+Exactamente 15 voltios, consumiendo 0,15 A.
+
+41
+00:02:16,540 --> 00:02:18,680
+Puntas normales, pasaron la prueba.
+
+42
+00:02:19,340 --> 00:02:28,140
+Entonces, ahora la punta se movió, también respecto al común negativo, a la salida de uno de los bifilares.
+
+43
+00:02:28,300 --> 00:02:33,160
+Hago todas las mediciones justo antes del diodo, no después.
+
+44
+00:02:33,200 --> 00:02:35,740
+Después no sirve, hay corriente continua en el capacitor.
+
+45
+00:02:35,840 --> 00:02:37,480
+Entonces, estrictamente antes del diodo.
+
+46
+00:02:38,860 --> 00:02:45,460
+Ahora aplicando, todavía no se aplicó tensión a los interruptores, aquí está el oscilograma, aplicando tensión.
+
+47
+00:02:46,820 --> 00:02:51,260
+Recuerda, tenemos este tipo de oscilograma.
+
+48
+00:02:52,840 --> 00:02:53,460
+Aquí está.
+
+49
+00:02:54,420 --> 00:02:55,800
+Recuérdalo bien.
+
+50
+00:02:56,740 --> 00:02:58,400
+No es fuerza contraelectromotriz.
+
+51
+00:02:59,040 --> 00:03:07,520
+Ahora mira, cambiando el común al positivo.
+
+52
+00:03:07,820 --> 00:03:09,080
+Cambiado.
+
+53
+00:03:10,580 --> 00:03:12,020
+El oscilograma sigue ahí.
+
+54
+00:03:12,940 --> 00:03:13,400
+Aquí está.
+
+55
+00:03:14,500 --> 00:03:15,920
+Ahora mira, incluso una broma.
+
+56
+00:03:16,000 --> 00:03:19,760
+Las mediciones no se hacen así, pero mira, voy a desconectar el común.
+
+57
+00:03:21,400 --> 00:03:22,900
+Solo cuelga la punta.
+
+58
+00:03:24,900 --> 00:03:25,780
+Positiva.
+
+59
+00:03:26,580 --> 00:03:27,980
+El oscilograma sigue ahí.
+
+60
+00:03:28,120 --> 00:03:32,960
+Esta corriente no pertenece a este sistema, a la fuente de alimentación.
+
+61
+00:03:34,400 --> 00:03:36,520
+Ahora cambiando la punta.
+
+62
+00:03:37,320 --> 00:03:39,360
+Mira al contrario.
+
+63
+00:03:39,820 --> 00:03:42,840
+No verás esta señal allá, nada de ella en ese punto.
+
+64
+00:03:43,500 --> 00:03:44,880
+Punta invertida.
+
+65
+00:03:44,880 --> 00:03:47,940
+Ahora está en el negativo de la alimentación.
+
+66
+00:03:48,880 --> 00:03:50,800
+Común en el mismo bifilar.
+
+67
+00:03:51,320 --> 00:03:52,580
+Aquí está la imagen.
+
+68
+00:03:53,600 --> 00:03:57,300
+No hay señal invertida de gran amplitud que vimos antes.
+
+69
+00:03:57,700 --> 00:03:59,700
+Fíjate en el barrido, voltios por celda.
+
+70
+00:03:59,760 --> 00:04:02,520
+Ahora 20 V por celda.
+
+71
+00:04:02,580 --> 00:04:03,800
+Nada de esa señal.
+
+72
+00:04:05,140 --> 00:04:09,620
+Ahora cambiando la punta al positivo.
+
+73
+00:04:09,800 --> 00:04:12,800
+No veo nada en ese sentido, pero déjame cambiarla.
+
+74
+00:04:13,040 --> 00:04:13,980
+Aquí está en el positivo.
+
+75
+00:04:16,780 --> 00:04:18,120
+Aquí está el funcionamiento.
+
+76
+00:04:18,640 --> 00:04:19,940
+Nada de esa señal.
+
+77
+00:04:21,200 --> 00:04:22,940
+Está solo en un lugar.
+
+78
+00:04:26,140 --> 00:04:28,880
+Intercambiamos lugares, todo como debe ser.
+
+79
+00:04:32,140 --> 00:04:34,460
+Coloca la punta.
+
+80
+00:04:37,040 --> 00:04:38,540
+Ni siquiera la conecté todavía.
+
+81
+00:04:38,620 --> 00:04:42,540
+Mira, necesitamos cambiar el barrido de voltios por celda.
+
+82
+00:04:42,680 --> 00:04:44,340
+La amplitud es muy alta aquí.
+
+83
+00:04:47,720 --> 00:04:51,500
+Tendremos que cambiarlo porque no veremos.
+
+84
+00:04:55,320 --> 00:04:57,300
+Aquí está el oscilograma.
+
+85
+00:04:58,900 --> 00:05:03,260
+No importa qué midamos respecto a qué, ya lo mostré.
+
+86
+00:05:03,320 --> 00:05:05,080
+Colócala respecto al positivo aquí.
+
+87
+00:05:06,700 --> 00:05:08,200
+La señal permanece.
+
+88
+00:05:08,420 --> 00:05:10,020
+No cambies ninguna configuración.
+
+89
+00:05:10,950 --> 00:05:16,500
+Y respecto al negativo, tampoco cambies ninguna configuración.
+
+90
+00:05:17,240 --> 00:05:18,100
+La señal permanece.
+
+91
+00:05:19,460 --> 00:05:22,180
+Cambia esta punta.
+
+92
+00:05:22,640 --> 00:05:30,760
+No tiene sentido, porque necesitamos este efecto específicamente en este punto, donde ocurre la interrupción en el interruptor.
+
+93
+00:05:31,300 --> 00:05:33,520
+Hagamos la siguiente medición.
+
+94
+00:05:34,340 --> 00:05:37,780
+El canal amarillo colgará en uno de los bifilares como antes.
+
+95
+00:05:37,880 --> 00:05:42,720
+La medición del osciloscopio se hará respecto al negativo del cable común.
+
+96
+00:05:43,720 --> 00:05:45,840
+El canal azul colgará en la entrada.
+
+97
+00:05:46,840 --> 00:05:47,580
+Positivo-negativo.
+
+98
+00:05:47,680 --> 00:05:52,280
+Mira, en realidad la entrada del sistema se alimenta con corriente continua.
+
+99
+00:05:53,500 --> 00:05:55,200
+Aquí están los oscilogramas.
+
+100
+00:05:55,260 --> 00:05:56,360
+Por ahora nada.
+
+101
+00:05:57,000 --> 00:05:58,320
+0 V alimentado.
+
+102
+00:05:58,420 --> 00:06:01,100
+Aplicando tensión, ahora observando.
+
+103
+00:06:06,240 --> 00:06:11,340
+Mira, el potencial en el canal azul está subiendo.
+
+104
+00:06:11,580 --> 00:06:12,260
+Corriente continua.
+
+105
+00:06:12,800 --> 00:06:15,220
+El barrido es de 10 V por celda.
+
+106
+00:06:17,300 --> 00:06:22,140
+Ahora hace un poco más de una celda.
+
+107
+00:06:22,280 --> 00:06:25,320
+Y la tensión es exactamente 17 V aquí.
+
+108
+00:06:26,000 --> 00:06:27,140
+Todo coincide.
+
+109
+00:06:28,800 --> 00:06:31,660
+Aplica más, este potencial crece.
+
+110
+00:06:31,740 --> 00:06:36,040
+Y en el canal amarillo tenemos un barrido, aquí está, 50 V por celda.
+
+111
+00:06:36,880 --> 00:06:43,640
+Es decir, vemos una medición clásica normal respecto al punto común.
+
+112
+00:06:45,200 --> 00:06:50,140
+En realidad corriente continua, aquí está, mira el canal azul.
+
+113
+00:06:50,740 --> 00:06:51,300
+Corriente continua.
+
+114
+00:06:52,860 --> 00:06:57,700
+Una cosa más, tal vez la corriente continua no llega a la lámpara.
+
+115
+00:06:57,840 --> 00:07:00,860
+Midamos también en la lámpara, ¿llega corriente continua allá?
+
+116
+00:07:01,520 --> 00:07:08,380
+Aquí conecté la lámpara, en ese caso miramos 100 W, aquí encontré 200 W.
+
+117
+00:07:10,160 --> 00:07:12,780
+Obtuve 200 W en ella.
+
+118
+00:07:13,100 --> 00:07:18,620
+Aquí ves la salida y medimos directamente, aquí la punta está en la lámpara.
+
+119
+00:07:19,300 --> 00:07:23,000
+Mira, aplicando tensión, la lámpara se enciende, observa.
+
+120
+00:07:23,780 --> 00:07:32,860
+Aplica, ves el potencial creciendo en la lámpara, corriente continua, sin caídas, nada.
+
+121
+00:07:32,960 --> 00:07:37,960
+Mira, la lámpara está funcionando en la salida, colgada ahí.
+
+122
+00:07:39,920 --> 00:07:42,700
+Medición hecha estrictamente en corriente continua.
+
+123
+00:07:42,940 --> 00:07:46,860
+Si no fuera así, no publicaría la medición ni calcularía la eficiencia.
+
+124
+00:07:49,360 --> 00:07:50,140
+Todo funciona.
+
+125
+00:07:50,920 --> 00:07:58,500
+Así que no inventes, si no sabes medir, me gusta cómo mido, mide tú mismo.
+
+126
+00:08:01,980 --> 00:08:10,400
+Y aquí hay una pequeña prueba de choque para que quede claro que tu fuerza contraelectromotriz nunca arrojará tanto en este capacitor y tan rápido.
+
+127
+00:08:10,520 --> 00:08:21,140
+Mira, aplico solo 20 V en la entrada y mira cómo arroja aquí, 20 V.
+
+128
+00:08:26,740 --> 00:08:33,060
+La fuerza contraelectromotriz aquí nunca puede cargar un capacitor tan rápido.
+
+129
+00:08:33,920 --> 00:08:39,600
+No la busques ahí, quien trabaje en eso no obtendrá nada.
+
+130
+00:08:39,740 --> 00:08:42,680
+Mira qué rápido se carga el capacitor.
+
+131
+00:08:43,440 --> 00:08:47,040
+Y aquí una discusión, me gustó un comentario.
+
+132
+00:08:47,160 --> 00:08:54,380
+Un tipo escribe, bueno, puedes vaciar un barril con un balde, y también puedes vaciarlo todo de una vez.
+
+133
+00:08:54,840 --> 00:08:57,400
+Y el otro responde, el barril ya está lleno.
+
+134
+00:08:57,540 --> 00:09:00,660
+Absolutamente correcto, el barril ya está lleno, hay que sacar el exceso.
+
+135
+00:09:01,380 --> 00:09:03,440
+Y sobre el barril lleno.
+
+136
+00:09:04,740 --> 00:09:07,500
+El sistema tiene que acelerar, no lo ahogues.
+
+137
+00:09:07,600 --> 00:09:11,800
+Aquí te mostré cómo funciona directamente, 90% de eficiencia.
+
+138
+00:09:13,700 --> 00:09:17,260
+El barril está lleno y en el momento adecuado solo tomamos el exceso.
+
+139
+00:09:17,340 --> 00:09:20,720
+Mira, desde los mismos 20 V.
+
+140
+00:09:23,940 --> 00:09:32,880
+E imagina, ahora voy a agregar 44 V aquí, ¿qué pasará?
+
+141
+00:09:33,620 --> 00:09:39,500
+El sistema necesita unos 200-300 V en la entrada, entonces hay un festival real.
+
+142
+00:09:40,540 --> 00:09:40,840
+Observa.
+
+143
+00:09:55,260 --> 00:10:04,320
+En fin, los que entendieron entendieron, el resto puede seguir armando boosters, flybacks y otros esquemas clásicos.
+
+144
+00:10:05,560 --> 00:10:08,080
+Ahora un experimento más interesante.
+
+145
+00:10:08,160 --> 00:10:14,520
+Mira, tomé un neón, ahora veremos dónde está presente este potencial.
+
+146
+00:10:15,580 --> 00:10:23,500
+Aplico 56 V aquí en la entrada y mira, ¿brillará el neón?
+
+147
+00:10:24,180 --> 00:10:27,300
+Toca negativo, no se enciende.
+
+148
+00:10:27,700 --> 00:10:30,420
+Toca positivo, no se enciende.
+
+149
+00:10:32,080 --> 00:10:39,220
+Toca la salida, no se enciende, porque aquí hay corriente continua, sin pulsos, ya hay corriente continua en este capacitor.
+
+150
+00:10:39,260 --> 00:10:42,000
+Ahora mira lo que pasa en los disipadores.
+
+151
+00:10:42,120 --> 00:10:48,520
+Por cierto, los transistores están aislados de los disipadores, pero los disipadores también son parte de la zona de succión en este efecto.
+
+152
+00:10:48,560 --> 00:10:52,520
+Toca, mira, el neón brilla.
+
+153
+00:10:53,240 --> 00:10:55,400
+Y en los terminales del bifilar, aquí.
+
+154
+00:10:57,120 --> 00:10:59,140
+Está en todas partes en los bifilares.
+
+155
+00:10:59,900 --> 00:11:02,240
+Este efecto está en cada uno.
+
+156
+00:11:04,000 --> 00:11:09,560
+Esto es lo que BD no mostró, en su lugar esta cosa brilla.
+
+157
+00:11:11,260 --> 00:11:17,580
+Y en el común, donde nos conectamos, no brilla, va al capacitor.
+
+158
+00:11:18,460 --> 00:11:28,420
+Pero si ahora desconectamos este cable que va al capacitor,
+
+159
+00:11:32,020 --> 00:11:36,960
+lo apagamos, lo sacamos, estos pulsos vienen después de los diodos.
+
+160
+00:11:37,140 --> 00:11:41,640
+Naturalmente, el capacitor no lo suaviza aquí, así que el efecto está presente.
+
+161
+00:11:42,400 --> 00:11:45,300
+El fenómeno es diferente.
+
+162
+00:11:45,500 --> 00:11:50,460
+No hay necesidad de inventar fuerza contraelectromotriz y el resto.
+
+163
+00:11:50,580 --> 00:11:57,980
+Los radioaficionados reales ya han hecho muchos experimentos y lo han descartado.
+
+164
+00:11:59,380 --> 00:12:01,380
+Hablé con ellos sobre esto.
+
+165
+00:12:02,300 --> 00:12:05,080
+Y nadie vio tus flybacks en este esquema.
+
+166
+00:12:05,200 --> 00:12:06,120
+El efecto es diferente.
+
+167
+00:12:06,860 --> 00:12:15,780
+Es más, mira con cuidado dónde viste fuerza contraelectromotriz, dónde funciona, ¿dónde viste fuerza contraelectromotriz con tal ancho?
+
+168
+00:12:16,740 --> 00:12:19,640
+Es fina como una aguja y decae después.
+
+169
+00:12:20,980 --> 00:12:22,420
+Esto no es fuerza contraelectromotriz.
+
+170
+00:12:23,380 --> 00:12:25,380
+Haz el experimento y prueba.
+
+171
+00:12:25,600 --> 00:12:29,820
+El esquema ya está ahí para el experimento, todo está disponible.
+
+172
+00:12:31,000 --> 00:12:32,420
+No sé qué más necesitas.
+
+173
+00:12:34,300 --> 00:12:45,340
+Muestra un milagro, pero no soy idiota para mostrar milagros y que luego se me lleven el cerebro por eso.
+
+174
+00:12:46,340 --> 00:12:52,880
+En fin, está bien, todo esto son cosas pequeñas, lo que escribe la gente aquí.
+
+175
+00:12:53,340 --> 00:12:56,240
+Lo leo y me asombro, como se dice.
+
+176
+00:12:56,840 --> 00:13:01,880
+Ahora después de este clip voy a incrustar un video interesante.
+
+177
+00:13:02,160 --> 00:13:09,340
+Probablemente lo has visto muchas veces, y a los que no, e incluso los que lo vieron, les recomendaría volver a verlo varias veces.
+
+178
+00:13:10,400 --> 00:13:16,460
+Material muy interesante sobre cómo funciona esto y qué pasa.
+
+179
+00:13:16,600 --> 00:13:18,940
+A dónde va realmente la energía.
+
+180
+00:13:19,080 --> 00:13:24,920
+Dónde aparecen los electrones y positrones, su interacción, qué es un dipolo electrón-positrón.
+
+181
+00:13:25,800 --> 00:13:36,500
+Es hora de despertar, hora de mirar los hechos a los ojos, de lo contrario tardaremos mucho en llegar al éxito.
+
+182
+00:13:42,120 --> 00:13:44,420
+¿Este efecto crea una onda estacionaria?
+
+183
+00:13:44,660 --> 00:13:46,080
+Sí, una onda estacionaria.
+
+184
+00:13:46,340 --> 00:13:48,440
+Parece como crear una diferencia de presión.
+
+185
+00:13:49,020 --> 00:13:53,700
+Seleccionas frecuencias de todo el espectro para que haya menos frecuencias.
+
+186
+00:13:54,780 --> 00:13:57,120
+Debes decir que las frecuencias contienen energía.
+
+187
+00:13:57,540 --> 00:14:02,200
+Hay menos energía en las frecuencias entre las placas que en las frecuencias exteriores que las bombardean.
+
+188
+00:14:02,700 --> 00:14:04,220
+Así que las fuerzas no están equilibradas.
+
+189
+00:14:05,540 --> 00:14:12,300
+La fuerza que actúa desde afuera es ligeramente mayor que la fuerza que actúa desde adentro, y las placas bombardeadas se separan.
+
+190
+00:14:12,380 --> 00:14:14,960
+Por lo tanto las placas terminan atraídas entre sí.
+
+191
+00:14:15,260 --> 00:14:16,640
+Esencialmente, se comprimen juntas.
+
+192
+00:14:17,520 --> 00:14:18,080
+Interesante.
+
+193
+00:14:18,500 --> 00:14:21,680
+¿Podrías dar una definición de dipolo, por favor?
+
+194
+00:14:23,360 --> 00:14:26,980
+Y cuéntanos cómo se destruye el dipolo en los esquemas existentes.
+
+195
+00:14:27,380 --> 00:14:27,700
+Bien.
+
+196
+00:14:30,320 --> 00:14:41,060
+Dada la situación en la que estamos ahora y queriendo extraer energía del vacío, energía que podamos usar para alimentar lámparas, motores, abastecer casas, necesitamos
+
+197
+00:14:41,060 --> 00:14:48,300
+encontrar una reacción que pueda darnos una cantidad sustancial de energía electromagnética del vacío.
+
+198
+00:14:48,880 --> 00:14:57,340
+Hasta 1957 no sabíamos con certeza sobre la existencia de tal reacción que fuera ampliamente accesible.
+
+199
+00:14:58,780 --> 00:15:02,800
+Pero desde 1957 esto se hizo conocido.
+
+200
+00:15:03,320 --> 00:15:06,940
+Entonces se descubrió el fenómeno de la llamada simetría rota.
+
+201
+00:15:07,160 --> 00:15:17,320
+Lee y Yang plantearon la hipótesis de su existencia en 1956, a principios de 1957, en la primera mitad de 1957.
+
+202
+00:15:18,180 --> 00:15:21,940
+Este es muy poco tiempo para que un trabajo gane fama mundial.
+
+203
+00:15:22,140 --> 00:15:26,320
+Aparecieron publicaciones prediciendo el descubrimiento de la simetría rota.
+
+204
+00:15:26,860 --> 00:15:32,180
+Estamos hablando de simetría rota del flujo de partículas virtuales en el vacío.
+
+205
+00:15:32,180 --> 00:15:35,640
+Esto significa que una parte de él no es similar a la otra.
+
+206
+00:15:36,040 --> 00:15:37,520
+Algunos cambios ocurrieron en él.
+
+207
+00:15:38,580 --> 00:15:40,700
+Esto es lo que se llama simetría rota.
+
+208
+00:15:41,080 --> 00:15:46,400
+Además, este cambio debe ser lo suficientemente sustancial para ser observable.
+
+209
+00:15:46,680 --> 00:15:53,320
+Como dijo Lee cuando se encontró con la simetría rota, algo virtual se hizo accesible para la observación.
+
+210
+00:15:54,040 --> 00:15:57,400
+Así, ahora tenemos algo medible, al menos teóricamente.
+
+211
+00:15:57,940 --> 00:16:00,880
+Algo lo suficientemente grande como para ser notado y medido.
+
+212
+00:16:00,880 --> 00:16:09,080
+La simetría rota se convirtió en la herramienta mágica cuya existencia se probó en 1956-57.
+
+213
+00:16:09,800 --> 00:16:16,080
+Pero esta hipótesis era tan importante que podría revolucionar la ciencia si se probaba experimentalmente.
+
+214
+00:16:16,340 --> 00:16:21,740
+Un físico experimental muy fuerte se les unió inmediatamente, para probar si era cierto o no.
+
+215
+00:16:21,980 --> 00:16:26,220
+Esto era tan importante que todo tenía que hacerse muy rápido, y lo lograron.
+
+216
+00:16:26,220 --> 00:16:30,360
+De hecho, en febrero de 1957 Wu y sus colegas...
+
+217
+00:16:30,360 --> 00:16:37,080
+Wu murió hace poco... lo probaron experimentalmente, en muy poco tiempo después de plantear la hipótesis.
+
+218
+00:16:39,440 --> 00:16:48,540
+La influencia y consecuencias de este descubrimiento en la física en su conjunto fueron tan significativas que el Premio Nobel también se otorgó sin precedentes rápidamente.
+
+219
+00:16:51,200 --> 00:16:55,500
+Lee y Yang lo recibieron el mismo año, en diciembre de 1957.
+
+220
+00:16:55,500 --> 00:17:02,300
+Quiero dar una imagen completa de qué tan rápido ocurrió la revolución en la ciencia y qué tan rápido llegó el reconocimiento.
+
+221
+00:17:06,460 --> 00:17:16,900
+Uno de los fenómenos de la simetría rota, una de esas cosas que transforman parte de la energía virtual en energía positiva u observable que puede fijarse y medirse, fue
+
+222
+00:17:16,900 --> 00:17:20,340
+la simetría rota de cargas opuestas.
+
+223
+00:17:20,520 --> 00:17:21,820
+Hablemos de la carga.
+
+224
+00:17:23,880 --> 00:17:26,820
+La carga es algo muy inusual.
+
+225
+00:17:27,700 --> 00:17:31,820
+No tenemos una definición absolutamente precisa del concepto de "carga".
+
+226
+00:17:32,700 --> 00:17:42,660
+Todavía no es un concepto claro, pero sin embargo tenemos una serie de hechos al respecto, algunos de los cuales se formaron en el siglo XIX.
+
+227
+00:17:44,380 --> 00:17:53,160
+La física de partículas elementales en el siglo XX nos permitió aprender mucho sobre cómo se comporta la carga, cómo funciona e interactúa con otras cosas.
+
+228
+00:17:54,060 --> 00:17:59,300
+Si tengo una carga en el entendimiento clásico, entonces será un electrón en reposo en el espacio.
+
+229
+00:18:00,180 --> 00:18:05,320
+En realidad no está en reposo en el espacio vacío, como solemos imaginar, partiendo del concepto clásico.
+
+230
+00:18:05,880 --> 00:18:11,820
+Está ubicado como en una olla hirviendo, en un flujo de partículas que se mueven caóticamente y chocan entre sí.
+
+231
+00:18:12,440 --> 00:18:17,880
+Fotones muy pequeños, diminutos, se absorben y se dejan caer nuevamente, y todo eso.
+
+232
+00:18:17,880 --> 00:18:25,020
+Cada vez que el electrón absorbe un fotón, se observa un pequeño incremento de su masa, y así sucesivamente.
+
+233
+00:18:25,720 --> 00:18:29,720
+Esta es una olla hirviendo, y la carga en sí es muy dinámica.
+
+234
+00:18:30,780 --> 00:18:45,060
+Esencialmente, si coloco esta carga en tal olla, en el espacio vacío que mejor llamaríamos vacío, digamos este electrón, una carga negativa.
+
+235
+00:18:45,520 --> 00:18:49,740
+A su alrededor dominarán las burbujas con cargas opuestas.
+
+236
+00:18:49,760 --> 00:18:55,440
+Es decir, aquí tendremos muchas cargas positivas apareciendo y desapareciendo a gran velocidad.
+
+237
+00:18:56,000 --> 00:18:57,880
+Velocidad increíble.
+
+238
+00:18:59,860 --> 00:19:07,360
+Si tenemos cargas opuestas, entonces tenemos lo que se llaman líneas de fuerza en la física clásica.
+
+239
+00:19:08,700 --> 00:19:09,860
+Pero esto todavía no es fuerza.
+
+240
+00:19:09,860 --> 00:19:15,820
+Tenemos líneas de atracción entre estas cargas opuestas.
+
+241
+00:19:17,840 --> 00:19:31,560
+Lo que tenemos ahora es simetría rota de cargas opuestas, porque en el medio hay una carga, y a su alrededor toda una pantalla de burbujas con cargas opuestas.
+
+242
+00:19:32,600 --> 00:19:40,340
+Si necesito examinar esta carga con un instrumento o medir esta carga, en realidad no puedo medir la carga.
+
+243
+00:19:41,840 --> 00:19:48,480
+La mido a través de la pantalla de cargas, que, por cierto, es infinita.
+
+244
+00:19:48,580 --> 00:19:53,720
+Y la carga interna o aislada, si logré deshacerme de la pantalla, también es infinita.
+
+245
+00:19:54,320 --> 00:19:56,180
+Pero la diferencia entre ellas es finita.
+
+246
+00:19:57,660 --> 00:19:59,740
+Infinidad de potenciales... infinidad.
+
+247
+00:20:00,040 --> 00:20:02,500
+Sí, en realidad son infinitos.
+
+248
+00:20:03,600 --> 00:20:04,800
+Energéticamente... energéticamente.
+
+249
+00:20:04,800 --> 00:20:06,940
+Energía ilimitada sin fronteras.
+
+250
+00:20:07,140 --> 00:20:09,200
+De un conjunto aislado de cargas.
+
+251
+00:20:10,560 --> 00:20:18,200
+Este entorno, o mejor dicho, la totalidad, tiene dos conjuntos de energía infinita.
+
+252
+00:20:19,460 --> 00:20:21,660
+Diversos flujos de energía sin límites.
+
+253
+00:20:23,060 --> 00:20:28,060
+Es decir, un solo electrón contiene una enorme cantidad de energía.
+
+254
+00:20:29,060 --> 00:20:32,980
+Recuerda que estos campos e interacciones permean todo el Universo.
+
+255
+00:20:32,980 --> 00:20:38,920
+Han estado presentes desde tiempos antiguos y existen en todas partes del Universo.
+
+256
+00:20:39,880 --> 00:20:46,420
+Entonces, tenemos una enorme cantidad de carga, y con instrumentos no podemos medir una carga separada en su interior.
+
+257
+00:20:46,540 --> 00:20:52,320
+Solo podemos medir la diferencia que vemos a través de la pantalla de cargas opuestas.
+
+258
+00:20:53,180 --> 00:20:58,180
+Esta diferencia se presenta en los libros de texto de física clásica como la carga del electrón.
+
+259
+00:20:58,780 --> 00:21:00,440
+Eso es lo que se imprimió en los libros.
+
+260
+00:21:01,280 --> 00:21:05,200
+Pero la física clásica se detiene aquí.
+
+261
+00:21:05,820 --> 00:21:07,360
+Los modelos se detienen aquí.
+
+262
+00:21:07,780 --> 00:21:08,480
+En esta diferencia.
+
+263
+00:21:08,620 --> 00:21:14,220
+Si hablamos de energía del vacío, necesitamos usar conocimiento más moderno.
+
+264
+00:21:15,020 --> 00:21:16,940
+Sabemos que estos procesos son mucho más complejos.
+
+265
+00:21:17,580 --> 00:21:29,480
+Y sabemos que la única razón por la que tenemos campos en este entorno es debido a la simetría rota, cuya hipótesis fue planteada y luego probada por científicos que obtuvieron
+
+266
+00:21:29,480 --> 00:21:32,340
+el Premio Nobel de 1957.
+
+267
+00:21:32,540 --> 00:21:36,060
+Ahora tenemos varios dipolos.
+
+268
+00:21:37,060 --> 00:21:43,540
+Esto significa que hay una carga, y a cierta distancia de ella se ubica la carga opuesta, formando un dipolo.
+
+269
+00:21:43,800 --> 00:21:44,620
+Esto es dipolaridad.
+
+270
+00:21:45,120 --> 00:21:49,200
+La simetría rota de cargas opuestas es simetría rota de la dipolaridad.
+
+271
+00:21:49,820 --> 00:21:51,340
+¿Qué entiendes por simetría rota?
+
+272
+00:21:51,340 --> 00:21:54,940
+Simetría rota significa que el objeto no es el mismo que era antes.
+
+273
+00:21:55,480 --> 00:21:57,060
+Es alimentado por partículas virtuales.
+
+274
+00:21:57,400 --> 00:22:02,000
+Algo se rompió, y el objeto cambió a un estado observable, cruzó el umbral cuántico y se volvió real.
+
+275
+00:22:02,540 --> 00:22:04,560
+Ya no todos los peces están bajo el agua.
+
+276
+00:22:05,340 --> 00:22:06,680
+Algunos saltaron desde allí.
+
+277
+00:22:08,160 --> 00:22:08,680
+¿Eso es el avance?
+
+278
+00:22:09,200 --> 00:22:12,680
+Sí, ese es el avance del vacío al mundo real.
+
+279
+00:22:14,580 --> 00:22:19,740
+La importancia del fenómeno de la simetría rota es que nos permite hacer esto.
+
+280
+00:22:19,740 --> 00:22:26,180
+Esto significa que este entorno del que acabamos de hablar, un pequeño electrón hace esto.
+
+281
+00:22:27,220 --> 00:22:40,840
+Absorbe constantemente esta energía dispersa de burbujas, si podemos llamarlo así, energía del estado virtual, la transforma en pequeñas burbujas de masa adicional, pequeños
+
+282
+00:22:40,840 --> 00:22:42,240
+incrementos de masa.
+
+283
+00:22:42,400 --> 00:22:44,660
+Pero crece porque la masa es atraída.
+
+284
+00:22:45,240 --> 00:22:46,800
+¿Pasa de invisible a visible?
+
+285
+00:22:47,140 --> 00:22:47,600
+Tangible.
+
+286
+00:22:47,600 --> 00:22:50,640
+Sí, continúa acumulando incrementos.
+
+287
+00:22:52,920 --> 00:22:58,380
+Aquí está el incremento dm-1 que proviene de la absorción de energía.
+
+288
+00:22:58,720 --> 00:23:06,180
+En la siguiente absorción será dm-2, donde m es la masa de este electrón.
+
+289
+00:23:06,480 --> 00:23:09,860
+En la siguiente absorción ya será dm-3.
+
+290
+00:23:09,940 --> 00:23:12,560
+Todo esto se suma ya que la masa es atraída.
+
+291
+00:23:12,560 --> 00:23:15,320
+Agregas un poco y aumenta.
+
+292
+00:23:15,540 --> 00:23:17,220
+Es como la desviación en una balanza.
+
+293
+00:23:17,700 --> 00:23:18,340
+¿Qué es dm?
+
+294
+00:23:18,620 --> 00:23:19,880
+dm es el incremento.
+
+295
+00:23:20,160 --> 00:23:20,760
+Incremento.
+
+296
+00:23:21,060 --> 00:23:27,480
+En el proceso de aumento de masa, la suma de los incrementos, por cierto, eso es integración en términos matemáticos.
+
+297
+00:23:30,280 --> 00:23:38,240
+El electrón integra lo que de otra manera sería energía desordenada, ya que no hay razón para absorber estas partículas.
+
+298
+00:23:38,960 --> 00:23:40,600
+Pero aquí están.
+
+299
+00:23:40,840 --> 00:23:42,020
+Están ordenadas en el tiempo.
+
+300
+00:23:42,400 --> 00:23:44,500
+Son absorbidas por la masa, aumentándola.
+
+301
+00:23:44,980 --> 00:23:49,660
+Cuando ocurre el siguiente aumento de masa, la masa, como sabemos, es energía.
+
+302
+00:23:50,600 --> 00:23:55,540
+La energía en esta masa se vuelve suficiente para formar un fotón que podemos ver.
+
+303
+00:23:55,960 --> 00:24:00,000
+Atravesó hasta la superficie y formó una onda que siempre es empujada hacia afuera.
+
+304
+00:24:00,620 --> 00:24:03,880
+Entonces esta totalidad emite el fotón.
+
+305
+00:24:03,880 --> 00:24:11,860
+Usualmente un fotón real que puede ser capturado en película, registrado en película y tenido en cuenta en los cálculos.
+
+306
+00:24:12,600 --> 00:24:16,340
+Justo después de él va el siguiente, y el siguiente proceso continúa.
+
+307
+00:24:17,580 --> 00:24:18,300
+Uno más.
+
+308
+00:24:18,640 --> 00:24:19,340
+Y otro más.
+
+309
+00:24:19,480 --> 00:24:20,520
+Estos fotones.
+
+310
+00:24:21,140 --> 00:24:26,600
+¿Qué hacen cuando se siguen unos a otros en una línea infinita, reemplazándose entre sí?
+
+311
+00:24:27,800 --> 00:24:30,100
+Forman lo que llamamos un campo estático.
+
+312
+00:24:31,560 --> 00:24:35,940
+O si miramos el proceso desde el punto de vista de los potenciales, un proceso estático.
+
+313
+00:24:36,460 --> 00:24:41,980
+En realidad no es estático, está en un estado de no equilibrio estable.
+
+314
+00:24:42,300 --> 00:24:46,460
+Es decir, tenemos algo que emite libremente energía real.
+
+315
+00:24:47,000 --> 00:24:56,620
+Si no consideramos la llegada de energía del vacío, energía de burbujas, energía del estado virtual, entonces parece que se viola la ley de conservación de la energía.
+
+316
+00:24:56,620 --> 00:24:57,360
+Pero no.
+
+317
+00:24:57,900 --> 00:25:02,440
+Por la teoría moderna sabemos que el sistema obtiene energía de las partículas virtuales constantemente.
+
+318
+00:25:02,760 --> 00:25:13,440
+Es decir, la energía llega en una forma, y a la salida obtenemos energía en una forma que podemos usar, campos electromagnéticos estándar y potenciales conectados con esta
+
+319
+00:25:13,440 --> 00:25:15,860
+totalidad inicial o carga inicial.
+
+320
+00:25:16,120 --> 00:25:18,780
+Esto es lo que Lee y Yang predijeron y luego probaron.
+
+321
+00:25:18,980 --> 00:25:20,280
+Sí, todo correcto.
+
+322
+00:25:20,360 --> 00:25:24,680
+No van más allá y no dicen, entonces se creó el campo, y así sucesivamente.
+
+323
+00:25:24,680 --> 00:25:32,680
+El problema es que el logro de una sección de la física no es aceptado por otras secciones, y especialmente no por la ingeniería eléctrica.
+
+324
+00:25:33,820 --> 00:25:41,060
+El asunto es que durante cien años el problema de la carga inicial, cómo forma todos estos campos y produce energía, no fue resuelto.
+
+325
+00:25:44,300 --> 00:25:48,460
+Se llamó con razón el problema más complejo de la electrodinámica.
+
+326
+00:25:48,980 --> 00:25:54,080
+Si tomamos el enfoque clásico, realmente era complejo porque la energía no entraba al sistema.
+
+327
+00:25:54,080 --> 00:25:59,920
+Pero el sistema proporcionaba una salida constante de un flujo de energía que nunca se interrumpe, absolutamente gratis.
+
+328
+00:26:00,040 --> 00:26:02,940
+En este enfoque esto es un enigma, pero así es.
+
+329
+00:26:03,240 --> 00:26:03,560
+Correcto.
+
+330
+00:26:03,920 --> 00:26:07,580
+Porque la ley de conservación de la energía no puede ser violada.
+
+331
+00:26:07,700 --> 00:26:16,740
+Pero en este modelo no se proporcionó ninguna fuente de esta energía, ya que no se reconocía la presencia del estado virtual y los logros de la física de partículas elementales en su conjunto.
+
+332
+00:26:17,040 --> 00:26:17,420
+Burbujas.
+
+333
+00:26:17,900 --> 00:26:19,160
+No se contabilizan en este modelo.
+
+334
+00:26:19,160 --> 00:26:26,240
+Si no estuvieran allí y el sistema continuara produciendo energía, entonces violaríamos la ley de conservación de la energía en todo el Universo.
+
+335
+00:26:27,160 --> 00:26:27,860
+Pero esto no es así.
+
+336
+00:26:28,080 --> 00:26:30,160
+Constantemente recibe energía.
+
+337
+00:26:30,640 --> 00:26:33,520
+La ley de conservación de la energía está muy contenta de que se observe.
+
+338
+00:26:34,080 --> 00:26:39,480
+El único problema es que necesitamos entender que la energía viene de una fuente inusual.
+
+339
+00:26:39,500 --> 00:26:41,760
+Pero esa es la fuente que estamos buscando.
+
+340
+00:26:42,020 --> 00:26:43,040
+Vacío activo.
+
+341
+00:26:43,600 --> 00:26:45,100
+¿Proporciona simetría rota?
+
+342
+00:26:45,140 --> 00:26:45,500
+Sí.
+
+343
+00:26:46,100 --> 00:26:47,380
+¿El electrón tiene masa?
+
+344
+00:26:48,140 --> 00:26:49,120
+Sí, la tiene.
+
+345
+00:26:49,600 --> 00:26:50,780
+¿La masa del fotón es mayor?
+
+346
+00:26:51,480 --> 00:26:54,840
+No, el fotón no tiene masa desde el punto de vista estándar.
+
+347
+00:26:54,860 --> 00:27:01,000
+En espacio-tiempo curvo, para ser técnicamente precisos, el fotón puede tener lo que llamaríamos masa.
+
+348
+00:27:01,040 --> 00:27:04,260
+Pero en el enfoque estándar, el fotón no tiene masa.
+
+349
+00:27:04,300 --> 00:27:05,920
+Por una razón muy simple.
+
+350
+00:27:06,380 --> 00:27:12,600
+Si represento el espacio-tiempo como un plano sin curvar y lo curvo, tenemos un fotón.
+
+351
+00:27:12,600 --> 00:27:17,000
+Digamos que se emite como un objeto tridimensional con largo, ancho y alto.
+
+352
+00:27:17,140 --> 00:27:19,380
+Y comienzo a mover el fotón.
+
+353
+00:27:19,580 --> 00:27:23,600
+Cuanto más rápido se mueve, más energía tiene, energía cinética.
+
+354
+00:27:24,280 --> 00:27:29,620
+Pero también experimenta compresión de longitud en la dirección del movimiento.
+
+355
+00:27:29,620 --> 00:27:32,620
+Y moviéndose a la velocidad de la luz, alcanza longitud cero.
+
+356
+00:27:33,960 --> 00:27:35,680
+Entonces no tengo masa.
+
+357
+00:27:35,840 --> 00:27:40,460
+Y hay algo como un plano plano volando a la velocidad de la luz.
+
+358
+00:27:40,460 --> 00:27:43,440
+Así es como se representa generalmente una onda electromagnética.
+
+359
+00:27:43,740 --> 00:27:46,800
+Una onda plana, con oscilaciones en este plano.
+
+360
+00:27:47,940 --> 00:27:57,620
+Pero para nuestros propósitos, ya que necesitamos alimentar algo, tenemos algo que emite una enorme cantidad de energía del vacío.
+
+361
+00:28:00,480 --> 00:28:03,540
+Hicimos un avance a partir del efecto Casimir.
+
+362
+00:28:04,370 --> 00:28:17,560
+Y nadie aisló cómo se forman estos campos, ni conectó esto con la simetría rota, por cuyo descubrimiento Lee y Yang recibieron el Premio Nobel.
+
+363
+00:28:17,880 --> 00:28:21,740
+Hasta el año 2000, cuando finalmente reuní esto en un sistema unificado.
+
+364
+00:28:22,460 --> 00:28:24,180
+Tomé información dispersa.
+
+365
+00:28:24,580 --> 00:28:29,280
+Usé conocimientos de la física de partículas elementales y encontré las piezas de información que necesitaba.
+
+366
+00:28:29,780 --> 00:28:37,460
+No inventé nada, solo las encontré y las reuní, como armar las piezas de un rompecabezas en una sola imagen, y en el año 2000 publiqué este trabajo.
+
+367
+00:28:37,860 --> 00:28:41,840
+Por eso los campos se preservan, este generoso regalo de la naturaleza.
+
+368
+00:28:43,340 --> 00:28:53,040
+La naturaleza nos dio una cantidad increíble de generadores de energía libre que lícita y constantemente extraen energía del vacío y la emiten como energía electromagnética
+
+369
+00:28:53,040 --> 00:28:55,620
+real y lista para usar.
+
+370
+00:28:56,420 --> 00:28:57,380
+Ya está aquí.
+
+371
+00:28:57,920 --> 00:29:01,020
+Se llama carga inicial, ubicada en esta totalidad.
+
+372
+00:29:01,020 --> 00:29:03,060
+¿Cuánta energía puede liberar?
+
+373
+00:29:03,440 --> 00:29:05,020
+Una cantidad ilimitada de energía.
+
+374
+00:29:05,400 --> 00:29:08,540
+Hay dos objetos con energía infinita con los que trabaja.
+
+375
+00:29:08,900 --> 00:29:10,080
+Puede funcionar para siempre.
+
+376
+00:29:10,600 --> 00:29:16,840
+Las cargas han existido en la masa inicial del Universo durante aproximadamente 13,7 mil millones de años.
+
+377
+00:29:17,240 --> 00:29:22,360
+Han estado emitiendo energía constantemente durante 13,7 mil millones de años.
+
+378
+00:29:22,380 --> 00:29:23,500
+Y no se han agotado.
+
+379
+00:29:24,040 --> 00:29:26,340
+El proceso aún va a la misma velocidad.
+
+380
+00:29:26,620 --> 00:29:27,120
+¿A nuestro alrededor?
+
+381
+00:29:27,380 --> 00:29:27,920
+A nuestro alrededor.
+
+382
+00:29:27,920 --> 00:29:33,180
+Ahora el problema no es que contradigamos el conocimiento oficial.
+
+383
+00:29:33,580 --> 00:29:38,860
+No necesitamos encontrar un mecanismo para extraer energía del vacío.
+
+384
+00:29:39,260 --> 00:29:42,160
+La naturaleza nos la sirvió en bandeja.
+
+385
+00:29:42,580 --> 00:29:45,600
+Nos dio esto y ya lo hace por nosotros.
+
+386
+00:29:46,620 --> 00:29:49,300
+Ahora necesitamos aprender a usarlo.
+
+387
+00:29:49,720 --> 00:29:52,580
+Queremos recolectar este flujo saliente de energía.
+
+388
+00:29:52,580 --> 00:29:58,840
+Queremos aplicar potencia a un mayor número de cargas para obtener un mayor flujo de energía saliente.
+
+389
+00:29:59,320 --> 00:30:01,680
+No queremos interferir con el trabajo de las cargas y el dipolo.
+
+390
+00:30:01,780 --> 00:30:08,580
+Porque si destruimos el dipolo, si destruimos nuestra imagen, la borramos, no obtenemos el flujo de energía.
+
+391
+00:30:09,680 --> 00:30:14,340
+La energía se obtiene gracias a la simetría rota de cargas opuestas, el dipolo.
+
+392
+00:30:14,760 --> 00:30:23,600
+Si destruimos la dipolaridad, lo que nos encanta hacer en nuestros generadores, cada vez que se destruye la dipolaridad, el flujo de energía se detiene.
+
+393
+00:30:24,140 --> 00:30:34,180
+Si no destruimos la dipolaridad, no rompemos ningún dipolo, si no queremos cerrar los ojos ante todos los logros de la física de partículas elementales, cada dipolo existente producirá
+
+394
+00:30:34,180 --> 00:30:38,180
+energía durante otros 13,7 mil millones de años.
+
+395
+00:30:38,240 --> 00:30:42,020
+¿Puede la energía del vacío suplir las necesidades eléctricas de un hogar?
+
+396
+00:30:42,440 --> 00:30:42,600
+Sí.
+
+397
+00:30:43,020 --> 00:30:45,740
+Pero la naturaleza no va a dar esta energía gratis.
+
+398
+00:30:45,740 --> 00:30:54,240
+Tan pronto como entiendas el principio del generador natural que la naturaleza preparó para su uso, necesitas aprender a usar estos generadores.
+
+399
+00:30:54,600 --> 00:30:56,820
+Pero nuestro conocimiento sobre esto es bastante rudimentario.
+
+400
+00:30:57,060 --> 00:31:03,080
+En tu entendimiento, ¿necesitamos tomar este modelo y comprimirlo o escalarlo a un volumen grande?
+
+401
+00:31:03,340 --> 00:31:03,960
+Sí, correcto.
+
+402
+00:31:04,080 --> 00:31:12,680
+Si agregamos suficientes electrones o cargas para formar un dipolo lo suficientemente fuerte, producirá una cantidad suficiente de energía.
+
+403
+00:31:12,900 --> 00:31:17,320
+Incluso si podemos extraer la mitad, o una décima parte, o una milésima parte de ella.
+
+404
+00:31:17,800 --> 00:31:20,120
+Para proporcionar energía por completo.
+
+405
+00:31:20,600 --> 00:31:21,520
+La energía ya está allí.
+
+406
+00:31:21,780 --> 00:31:25,860
+Se puede extraer del vacío, y el mecanismo de extracción ya fue creado por la propia naturaleza.
+
+407
+00:31:26,200 --> 00:31:27,820
+No necesitamos inventar nada de nuevo.
+
+408
+00:31:28,280 --> 00:31:31,180
+Y los premios Nobel Lee y Yang prueban esto.
+
+409
+00:31:31,680 --> 00:31:35,020
+Y los experimentos tuyos y de otros científicos también confirmaron este conocimiento.
+
+410
+00:31:35,400 --> 00:31:36,420
+Esto es reconocido.
+
+411
+00:31:36,700 --> 00:31:38,600
+Pero no lo hemos introducido en la ingeniería eléctrica.
+
+412
+00:31:38,600 --> 00:31:41,960
+Todavía usamos conocimiento de 1865.
+
+413
+00:31:42,520 --> 00:31:44,600
+Conocimiento de 1880.
+
+414
+00:31:45,160 --> 00:31:48,380
+No usamos ningún conocimiento sobre el vacío.
+
+415
+00:31:49,720 --> 00:31:55,760
+Sigamos adelante y hablemos del uso práctico de los dipolos en los sistemas de suministro eléctrico.
+
+416
+00:31:57,980 --> 00:31:59,400
+Y la destrucción de dipolos.
+
+417
+00:32:00,240 --> 00:32:00,520
+Hagámoslo.
+
+418
+00:32:01,220 --> 00:32:06,100
+Por ejemplo, consideremos cómo se suministra realmente la energía a un sistema de alimentación común.
+
+419
+00:32:06,100 --> 00:32:19,020
+Porque el modelo de ingeniería eléctrica asume correctamente que todos los campos, todos los potenciales consisten en estas mismas cargas iniciales, producidas por cargas iniciales.
+
+420
+00:32:19,140 --> 00:32:25,520
+Pero este modelo también asume erróneamente que esta carga crea energía de la nada.
+
+421
+00:32:27,160 --> 00:32:39,120
+Por eso es muy extraño que los ingenieros eléctricos hoy usen un modelo que asume que cada campo electromagnético, cada potencial electromagnético, y cada joule de energía
+
+422
+00:32:39,120 --> 00:32:42,520
+electromagnética en nuestro Universo surge libremente de la nada.
+
+423
+00:32:43,500 --> 00:32:43,960
+¿Magia?
+
+424
+00:32:44,520 --> 00:32:45,040
+Magia.
+
+425
+00:32:46,640 --> 00:32:48,880
+Mantengo mi sentido del humor.
+
+426
+00:32:48,880 --> 00:32:55,360
+A veces no puedo contener la risa cuando estas personas empiezan a hablar de movimiento perpetuo y cosas así.
+
+427
+00:32:56,220 --> 00:33:06,360
+Porque la forma más flagrante en que se viola la ley de conservación de la energía está en los libros producidos por los departamentos de ingeniería eléctrica, en las visiones de los profesores e ingenieros mismos.
+
+428
+00:33:06,900 --> 00:33:08,060
+Y ni siquiera lo saben.
+
+429
+00:33:08,900 --> 00:33:10,940
+Ni siquiera se hacen la pregunta.
+
+430
+00:33:10,940 --> 00:33:23,600
+No hay un solo libro, hasta donde yo sé, que diga: aquí están las visiones básicas y los fundamentos del modelo de la electrodinámica moderna, el modelo de la electrodinámica clásica que usamos, como,
+
+431
+00:33:23,740 --> 00:33:27,200
+por ejemplo en la ingeniería eléctrica, los modelos de Maxwell-Heaviside.
+
+432
+00:33:27,520 --> 00:33:32,340
+Y aquí están los modelos que, según descubrimientos posteriores en física, son erróneos.
+
+433
+00:33:33,120 --> 00:33:37,300
+No hay un solo acuerdo o libro de ese tipo que haya logrado encontrar.
+
+434
+00:33:37,300 --> 00:33:42,100
+Puedes encontrar evidencia, científicos destacados que enfatizan esto.
+
+435
+00:33:42,480 --> 00:33:44,500
+Wheeler, Feynman y así sucesivamente.
+
+436
+00:33:44,800 --> 00:33:46,400
+No hay campos de fuerza en el vacío.
+
+437
+00:33:46,840 --> 00:33:49,700
+Y los modelos todavía contienen estos campos cuando no están ahí.
+
+438
+00:33:50,120 --> 00:33:51,280
+Esto se sabe desde hace cien años.
+
+439
+00:33:51,780 --> 00:33:55,900
+El mito sobre la existencia de campos de fuerza en el vacío fue disipado en 1887.
+
+440
+00:33:56,980 --> 00:34:00,260
+Desde 1887 los modelos no han cambiado.
+
+441
+00:34:00,380 --> 00:34:08,380
+Y obviamente todas las visiones en ingeniería eléctrica ahora, todos los modelos, no van a ser corregidos durante otros cien años.
+
+442
+00:34:09,560 --> 00:34:10,700
+Esto está fundamentalmente equivocado.
+
+443
+00:34:11,240 --> 00:34:15,720
+En todos los modelos se asume que la carga inicial aparece de alguna manera mágica.
+
+444
+00:34:17,640 --> 00:34:20,900
+La carga inicial produce energía de la nada, según este modelo.
+
+445
+00:34:21,140 --> 00:34:23,500
+Ninguna energía llega a la carga inicial.
+
+446
+00:34:24,520 --> 00:34:28,600
+Pero no pueden rechazar la idea de que constantemente le llega energía.
+
+447
+00:34:28,920 --> 00:34:30,960
+¿Por qué no pueden rechazar esto?
+
+448
+00:34:31,100 --> 00:34:33,360
+Porque fue probado experimentalmente.
+
+449
+00:34:33,360 --> 00:34:35,340
+Puedes crear una carga repentinamente.
+
+450
+00:34:35,680 --> 00:34:36,340
+Déjame mostrarte.
+
+451
+00:34:36,460 --> 00:34:37,780
+Este punto en el laboratorio.
+
+452
+00:34:38,120 --> 00:34:42,320
+Digamos que soy tan inteligente, tomo este punto, o uno de los estudiantes lo hace para la demostración.
+
+453
+00:34:43,280 --> 00:34:45,180
+No hay nada malo en que yo haga esto.
+
+454
+00:34:45,620 --> 00:34:49,460
+Tomamos algún punto en el laboratorio, y este será el cero en nuestro sistema de coordenadas.
+
+455
+00:34:50,320 --> 00:34:56,760
+Y en cualquier punto que hagamos mediciones, serán idealmente precisas ya que este es un experimento mental.
+
+456
+00:34:57,740 --> 00:35:01,620
+En cada punto instalamos un conjunto de instrumentos ideales para medir.
+
+457
+00:35:05,540 --> 00:35:12,080
+Ya que puedo hacer mediciones convenientemente, toma la velocidad de la luz en un segundo y conviértela a distancia.
+
+458
+00:35:13,000 --> 00:35:15,120
+Eso es aproximadamente 300 millones de metros.
+
+459
+00:35:16,120 --> 00:35:21,880
+Como sea que vaya, asumamos que tenemos instrumentos de medición ideales.
+
+460
+00:35:23,700 --> 00:35:25,000
+Ahora, ¿qué hago?
+
+461
+00:35:25,520 --> 00:35:26,940
+Tenemos un experimento mental.
+
+462
+00:35:27,240 --> 00:35:28,560
+Podemos idealizar todo.
+
+463
+00:35:29,280 --> 00:35:31,680
+En nuestro laboratorio aparece repentinamente una carga.
+
+464
+00:35:31,680 --> 00:35:38,860
+En realidad no puedo obtenerla instantáneamente, pero ahora tengo un pulso eléctrico, y no necesitamos preocuparnos por eso.
+
+465
+00:35:41,680 --> 00:35:44,000
+¿Qué pasa cuando se forma la carga?
+
+466
+00:35:46,900 --> 00:35:50,280
+Aquí, en el punto cero de nuestro laboratorio, apareció una carga.
+
+467
+00:35:52,280 --> 00:35:56,460
+Después de un segundo el primer conjunto de instrumentos captura las lecturas.
+
+468
+00:35:56,460 --> 00:36:07,340
+Independientemente del valor del campo que se propaga, la densidad del flujo de fotones en este punto, los instrumentos mostrarán el valor de la intensidad del campo, la intensidad del potencial.
+
+469
+00:36:08,160 --> 00:36:12,020
+Este instrumento empieza repentinamente a leer y no se detiene.
+
+470
+00:36:14,160 --> 00:36:18,300
+Continúa tomando mediciones más adelante, comenzando desde el momento actual.
+
+471
+00:36:18,540 --> 00:36:22,080
+Incluso después de mil millones de años mostrará el mismo valor.
+
+472
+00:36:23,220 --> 00:36:25,960
+Eso pasa después de que ha pasado un segundo.
+
+473
+00:36:26,380 --> 00:36:30,360
+El instrumento empezó repentinamente a leer, y esto continuará para siempre.
+
+474
+00:36:30,940 --> 00:36:33,480
+El campo se renueva constantemente, es estable aquí.
+
+475
+00:36:34,160 --> 00:36:38,680
+Después de dos segundos el segundo conjunto de instrumentos comienza a tomar lecturas.
+
+476
+00:36:39,140 --> 00:36:40,320
+El tercero después de tres segundos.
+
+477
+00:36:40,440 --> 00:36:45,240
+Pasarán los segundos, y los instrumentos instalados más lejos comenzarán a registrar lecturas.
+
+478
+00:36:45,780 --> 00:36:50,700
+Ya que este es un experimento mental, colocamos instrumentos en el Sistema Solar y más allá de sus límites.
+
+479
+00:36:51,420 --> 00:36:57,660
+Después de un año, los instrumentos ubicados mucho más allá de los límites del Sistema Solar comienzan repentinamente a registrar lecturas.
+
+480
+00:36:58,800 --> 00:37:05,280
+Las lecturas se mantendrán sin cambios mientras la carga esté en nuestro laboratorio y no la destruyamos.
+
+481
+00:37:07,480 --> 00:37:13,540
+Así, podemos probar fácilmente que el flujo de energía es constante, según las lecturas del instrumento.
+
+482
+00:37:13,820 --> 00:37:19,340
+En condiciones reales colocamos los instrumentos mucho más cerca uno del otro, y su número es limitado, pero esto es normal.
+
+483
+00:37:19,340 --> 00:37:21,880
+Suficiente para probar el principio.
+
+484
+00:37:22,460 --> 00:37:25,820
+Pero funcionará si logramos hacer esto en condiciones reales.
+
+485
+00:37:26,240 --> 00:37:31,560
+Experimentalmente, podemos probar fácilmente que un flujo de energía constante proviene de cada carga.
+
+486
+00:37:31,860 --> 00:37:34,340
+Ahora surge la pregunta, ¿de dónde viene esta energía?
+
+487
+00:37:34,440 --> 00:37:35,840
+Podemos integrar.
+
+488
+00:37:36,100 --> 00:37:38,460
+Sabes, los ingenieros hacen esto excelentemente.
+
+489
+00:37:39,100 --> 00:37:44,860
+Pueden tomar las lecturas del instrumento, integrar la densidad de energía y calcular la cantidad de energía en cualquier momento.
+
+490
+00:37:45,380 --> 00:37:47,780
+Está ubicada en todo el espacio, lleno de energía.
+
+491
+00:37:47,780 --> 00:37:55,720
+Por supuesto, la densidad de energía cae con la distancia desde la carga, decrece como el cuadrado para el campo y linealmente para el potencial.
+
+492
+00:37:56,900 --> 00:38:01,360
+Pero en cualquier caso no será igual a cero en todo el Universo.
+
+493
+00:38:02,820 --> 00:38:10,240
+Así, tenemos enormes generadores de energía, cargas, cargas iniciales que extraen energía del vacío.
+
+494
+00:38:10,240 --> 00:38:13,080
+Y toda la energía electromagnética, toda la energía del campo.
+
+495
+00:38:13,440 --> 00:38:18,680
+Todos los campos, todos los potenciales surgen gracias a estas cargas iniciales.
+
+496
+00:38:18,720 --> 00:38:20,640
+Y todo esto viene del vacío.
+
+497
+00:38:21,300 --> 00:38:24,100
+Todo lo que hacemos involucra energía del vacío.
+
+498
+00:38:24,120 --> 00:38:29,220
+La llamamos energía del campo electromagnético, energía del potencial electromagnético.
+
+499
+00:38:29,520 --> 00:38:31,000
+¿Y los imanes permanentes?
+
+500
+00:38:31,000 --> 00:38:33,360
+Los imanes permanentes son dipolos.
+
+501
+00:38:33,640 --> 00:38:35,820
+Una carga magnética la llamamos polo.
+
+502
+00:38:35,840 --> 00:38:38,320
+Polo magnético.
+
+503
+00:38:38,740 --> 00:38:40,480
+Un imán permanente es un dipolo.
+
+504
+00:38:40,800 --> 00:38:44,320
+El principio de simetría rota del dipolo también se aplica a él.
+
+505
+00:38:45,640 --> 00:38:48,240
+Un imán permanente participa en este proceso constantemente.
+
+506
+00:38:48,760 --> 00:38:57,400
+Pero si el campo es absolutamente estacionario, puedes tomar mediciones una y otra vez, y las lecturas se mantendrán iguales en el mismo punto.
+
+507
+00:38:57,400 --> 00:38:59,940
+Puedes pensar que es estático.
+
+508
+00:39:00,420 --> 00:39:05,840
+Pero no puede ser estático, ya que esto es un flujo, y no puedes hacer que un fotón se quede quieto en el espacio.
+
+509
+00:39:07,720 --> 00:39:10,660
+En el espacio libre el fotón se mueve a la velocidad de la luz.
+
+510
+00:39:11,040 --> 00:39:15,760
+De lo contrario tendríamos que renunciar a la teoría de la relatividad, incluyendo la relatividad especial.
+
+511
+00:39:16,100 --> 00:39:17,100
+Necesitamos olvidar esto.
+
+512
+00:39:17,100 --> 00:39:18,580
+No es verdad.
+
+513
+00:39:19,000 --> 00:39:19,620
+Se mueve.
+
+514
+00:39:19,700 --> 00:39:24,700
+Pero la cosa es, como enfatizó Tom Van Flandern, hay dos formas de entender la estática.
+
+515
+00:39:25,000 --> 00:39:29,060
+Y citó un hermoso ejemplo con una cascada.
+
+516
+00:39:30,460 --> 00:39:35,640
+Si la cascada fuera verdaderamente estática, parece estática cuando es perfecta.
+
+517
+00:39:35,820 --> 00:39:41,220
+Supongamos que es perfecta y se ve hermosa porque en cualquier momento es la misma.
+
+518
+00:39:41,220 --> 00:39:45,780
+Ningún elemento individual es perturbado, pero dentro de ella hay movimiento rápido.
+
+519
+00:39:46,120 --> 00:39:48,220
+Fluye, una parte sigue a la otra.
+
+520
+00:39:48,680 --> 00:39:50,220
+Se reemplazan constantemente entre sí.
+
+521
+00:39:50,840 --> 00:39:53,060
+Así que tal cascada no es completamente estática.
+
+522
+00:39:53,660 --> 00:39:57,400
+Una completamente estática sería una cascada congelada.
+
+523
+00:39:57,400 --> 00:40:03,820
+Una cascada no congelada es lo que la termodinámica llama un flujo estacionario.
+
+524
+00:40:04,740 --> 00:40:07,320
+Un sistema en estado de no equilibrio.
+
+525
+00:40:07,600 --> 00:40:13,100
+Esto es cuando la energía constantemente entra y constantemente sale a un ritmo constante.
+
+526
+00:40:13,300 --> 00:40:20,160
+El estado de tal sistema se define por el término "estado de no equilibrio constante".
+
+527
+00:40:20,160 --> 00:40:31,600
+En el caso de la cascada no congelada de Van Flandern, que es casi una analogía completa de un campo estático, vemos su estado estacionario de no equilibrio.
+
+528
+00:40:31,900 --> 00:40:33,400
+¿Podemos probar esto?
+
+529
+00:40:33,840 --> 00:40:34,180
+Por supuesto.
+
+530
+00:40:34,760 --> 00:40:38,580
+Gracias a nuestro modelo que examinamos, donde la energía se extrae del vacío.
+
+531
+00:40:38,660 --> 00:40:49,260
+En él, un flujo constante de energía en un estado virtual especial pasa a la carga que absorbe este flujo y lo transforma en energía de fotón visible que emite constantemente a un ritmo
+
+532
+00:40:49,260 --> 00:40:49,840
+constante.
+
+533
+00:40:50,760 --> 00:40:56,860
+La carga absorbe energía a un ritmo constante, la transforma y la emite a un ritmo constante.
+
+534
+00:40:56,860 --> 00:41:05,420
+Y esto es un estado estacionario de no equilibrio en forma pura, en el cual la energía se extrae del vacío y se transforma en energía real.
+
+535
+00:41:05,420 --> 00:41:07,380
+No necesitamos transformarla nosotros mismos.
+
+536
+00:41:07,740 --> 00:41:12,620
+No necesito transformar la energía del vacío en energía real visible.
+
+537
+00:41:12,900 --> 00:41:14,140
+La naturaleza ya hace esto.
+
+538
+00:41:14,320 --> 00:41:16,540
+Cada carga en el Universo ya hace esto.
+
+539
+00:41:16,720 --> 00:41:18,940
+Cada dipolo ya hace esto.
+
+540
+00:41:19,120 --> 00:41:21,340
+Es decir, la fuerza electromotriz solo usa esta energía.
+
+541
+00:41:21,620 --> 00:41:27,420
+Todo lo que hacemos con energía eléctrica usa lo que las cargas producen extrayendo energía del vacío.
+
+542
+00:41:27,420 --> 00:41:33,520
+Toda la energía en cualquier circuito electromagnético es el resultado de la formación de dipolos en ese circuito.
+
+543
+00:41:33,880 --> 00:41:35,120
+¿Entiendes lo que quiero decir?
+
+544
+00:41:35,440 --> 00:41:40,620
+Las cargas forman dipolos en el espacio, según el modelo de carga aceptado en la física moderna.
+
+545
+00:41:41,960 --> 00:41:45,380
+Todo lo que hacen los dipolos es extraer energía del vacío.
+
+546
+00:41:45,400 --> 00:41:48,420
+Y esto no tiene nada que ver con hacer girar el eje del generador.
+
+547
+00:41:50,440 --> 00:41:52,760
+¿Por qué hacemos girar el eje del generador?
+
+548
+00:41:53,320 --> 00:41:57,420
+Primero, veamos por qué necesitamos hacer girar el eje en absoluto.
+
+549
+00:41:58,780 --> 00:42:00,600
+Aquí tenemos un generador maravilloso.
+
+550
+00:42:02,260 --> 00:42:07,940
+Ya que somos inteligentes, el eje será rotado por, digamos, una turbina de central hidroeléctrica, o algo de ese tipo.
+
+551
+00:42:08,120 --> 00:42:09,700
+Así que no tenemos que pagar por esto.
+
+552
+00:42:09,880 --> 00:42:11,820
+Solo un loco aceptaría pagar por esto.
+
+553
+00:42:11,860 --> 00:42:17,440
+Pero de lo contrario tendríamos que quemar carbón, calentar calderas y producir vapor para que las turbinas de vapor puedan hacer girar el eje.
+
+554
+00:42:17,960 --> 00:42:19,760
+Pero por esto tendríamos que pagar mucho.
+
+555
+00:42:19,760 --> 00:42:26,460
+Pero nuestro generador tiene un eje, y necesitamos hacerlo girar constantemente.
+
+556
+00:42:28,160 --> 00:42:40,240
+En ingeniería eléctrica absorbimos, podrías decir, con la leche materna, el concepto de que la energía mecánica obtenida al hacer girar el eje se transfiere desde las salidas a los circuitos externos
+
+557
+00:42:43,420 --> 00:42:45,340
+y alimenta todas las cargas en él.
+
+558
+00:42:46,860 --> 00:42:48,600
+Pero esto no es así.
+
+559
+00:42:48,700 --> 00:42:50,720
+Esto es completamente no así.
+
+560
+00:42:51,300 --> 00:42:55,480
+Primero, dentro del generador no puedo hacer nada con la energía mecánica.
+
+561
+00:42:56,100 --> 00:42:58,340
+No me dará ni un vatio en la línea de transmisión.
+
+562
+00:42:59,500 --> 00:43:02,860
+Una línea de transmisión no puede transferir energía mecánica.
+
+563
+00:43:02,940 --> 00:43:08,080
+Es decir, necesito transformarla en una forma diferente dentro del generador que actuaría sobre las cargas.
+
+564
+00:43:08,180 --> 00:43:10,840
+En cualquier caso, toda la energía viene de las cargas.
+
+565
+00:43:10,840 --> 00:43:15,440
+Si necesito un flujo de energía, separo las cargas y obtengo un dipolo.
+
+566
+00:43:16,160 --> 00:43:29,300
+Si hago esto con un campo giratorio, el concepto introducido por Tesla, si fuerzo al rotor dentro de este generador a girar, produzco un campo magnético giratorio.
+
+567
+00:43:29,520 --> 00:43:36,480
+Ahora toda la energía que llegó al generador como energía mecánica se transforma en energía del campo magnético giratorio.
+
+568
+00:43:37,480 --> 00:43:38,300
+¿Qué hace?
+
+569
+00:43:38,300 --> 00:43:41,180
+No va a la línea de transmisión.
+
+570
+00:43:41,980 --> 00:43:44,220
+Actúa sobre las cargas dentro del generador.
+
+571
+00:43:44,560 --> 00:43:49,500
+Fuerza a las cargas positivas a moverse en una dirección, y a las negativas en la opuesta.
+
+572
+00:43:50,820 --> 00:43:55,640
+Así, nos da dipolaridad en las salidas del generador.
+
+573
+00:43:55,700 --> 00:43:59,540
+Es decir, es un intento rudimentario de intensificar artificialmente la simetría rota.
+
+574
+00:44:00,140 --> 00:44:00,520
+Correcto.
+
+575
+00:44:00,780 --> 00:44:04,600
+Creando simetría rota del dipolo por medio de formar un dipolo.
+
+576
+00:44:05,240 --> 00:44:10,120
+Usamos toda la energía del campo magnético solo para separar cargas.
+
+577
+00:44:10,420 --> 00:44:19,780
+En esquemas grandes esto es bastante difícil de hacer para que se forme el dipolo, porque delante y detrás hay una enorme cantidad de electrones que necesitan ser separados para formar el dipolo.
+
+578
+00:44:20,160 --> 00:44:21,700
+¿Pero supongamos que pagas por esto?
+
+579
+00:44:22,120 --> 00:44:27,120
+Pagas por la energía que pone en movimiento el eje del generador, para separar las cargas y formar el dipolo.
+
+580
+00:44:27,520 --> 00:44:33,360
+Entonces, si no permites que pase nada con el dipolo, la energía fluirá del generador para siempre.
+
+581
+00:44:33,360 --> 00:44:35,540
+¿Por qué puedo afirmar esto?
+
+582
+00:44:35,660 --> 00:44:36,900
+Esto no es una máquina de movimiento perpetuo.
+
+583
+00:44:37,280 --> 00:44:40,860
+Tan pronto como aparece el dipolo, se extrae energía constantemente del vacío.
+
+584
+00:44:41,240 --> 00:44:42,520
+La naturaleza fue muy amable.
+
+585
+00:44:42,620 --> 00:44:44,880
+Esto ya está probado por la física de partículas elementales.
+
+586
+00:44:45,100 --> 00:44:47,440
+Pero este conocimiento no es aceptado por la ingeniería eléctrica.
+
+587
+00:44:47,520 --> 00:44:49,560
+Ni siquiera existe un concepto de "vacío activo".
+
+588
+00:44:49,560 --> 00:44:51,060
+¿De dónde podríamos extraer energía?
+
+589
+00:44:51,500 --> 00:44:52,660
+Simplemente no se considera.
+
+590
+00:44:52,880 --> 00:44:56,680
+En ingeniería eléctrica se considera que viene de la energía del eje del generador.
+
+591
+00:44:56,700 --> 00:44:57,580
+Pero eso no es así.
+
+592
+00:44:58,060 --> 00:45:03,200
+En cualquier caso, tan pronto como se forma un dipolo, comienza a interactuar con el vacío turbulento.
+
+593
+00:45:03,200 --> 00:45:06,140
+Obtenemos una carga bastante grande en un generador grande.
+
+594
+00:45:06,240 --> 00:45:08,600
+Y el flujo también es grande.
+
+595
+00:45:09,020 --> 00:45:10,780
+Mucha energía viene de aquí.
+
+596
+00:45:11,320 --> 00:45:15,820
+Entonces, aquí hay un flujo de energía con miles de voltios.
+
+597
+00:45:15,900 --> 00:45:18,620
+Por ejemplo, miles de voltios yendo por esta línea.
+
+598
+00:45:18,820 --> 00:45:22,520
+Líneas de transmisión para alimentar sistemas eléctricos.
+
+599
+00:45:25,900 --> 00:45:27,620
+Pasa algo extraño.
+
+600
+00:45:29,300 --> 00:45:36,940
+Dos personas que descubrieron el flujo de energía, idearon el concepto de flujo de energía en el espacio que no existía en tiempos de Maxwell...
+
+601
+00:45:36,940 --> 00:45:46,860
+Maxwell murió en 1879, y este concepto apareció en los años 1880, y fue introducido simultáneamente, independientemente uno del otro, por Poynting y Heaviside.
+
+602
+00:45:47,680 --> 00:45:49,180
+Pasa algo interesante.
+
+603
+00:45:49,280 --> 00:45:58,600
+Una pequeña parte del flujo de energía está ubicada alrededor de los conductores, los conductores, por el contrario, tienen conductividad, como una guía de ondas, que permite la transferencia del flujo de energía a donde se necesita.
+
+604
+00:45:59,000 --> 00:46:00,260
+Esa es su función.
+
+605
+00:46:02,740 --> 00:46:11,140
+La energía alrededor del cable y las diversas cargas de sus campos ubicados dentro del cable interactúan entre sí, y parte de la energía externa penetra en los cables.
+
+606
+00:46:12,440 --> 00:46:13,780
+Muy poca energía penetra ahí.
+
+607
+00:46:15,180 --> 00:46:15,920
+Bastante poca.
+
+608
+00:46:17,240 --> 00:46:19,960
+Muy poca, posiblemente hasta una diez billonésima parte.
+
+609
+00:46:21,140 --> 00:46:28,960
+Esta parte que penetra en el cable fue considerada por Poynting, no estudió ninguna otra energía excepto la que penetra en el cable.
+
+610
+00:46:29,740 --> 00:46:33,200
+No estudió los procesos por los cuales la energía sale del cable.
+
+611
+00:46:34,860 --> 00:46:36,540
+Y pasa algo extraño.
+
+612
+00:46:36,800 --> 00:46:43,760
+Heaviside descubrió que se pierde mucha energía cuando toda la energía que puede penetrar en el cable penetra en todo el sistema.
+
+613
+00:46:46,720 --> 00:46:49,460
+Esto es mucho más que lo que penetra dentro.
+
+614
+00:46:49,460 --> 00:46:52,320
+Pero la energía aún está presente fuera del cable.
+
+615
+00:46:52,760 --> 00:46:56,180
+Pero no interactuará con nada ya que está en forma de vórtice.
+
+616
+00:46:56,740 --> 00:46:59,900
+La disipación del flujo de vórtice en el espacio-tiempo plano es igual a cero.
+
+617
+00:47:00,320 --> 00:47:01,980
+No interactúa con nada.
+
+618
+00:47:02,160 --> 00:47:05,780
+Usualmente la mayor parte del espacio-tiempo en el que vivimos es relativamente plano.
+
+619
+00:47:06,320 --> 00:47:09,660
+Así, obtenemos una cosa asombrosa.
+
+620
+00:47:09,780 --> 00:47:20,400
+Este generador produce y envía a lo largo de los cables un flujo de energía billones de veces, tal vez incluso diez billones de veces mayor, la mayoría del cual queda completamente sin usar, que el que gastamos en
+
+621
+00:47:20,400 --> 00:47:22,840
+hacer girar el eje del generador.
+
+622
+00:47:22,920 --> 00:47:30,480
+Esto no es sorprendente tan pronto como entendemos que la fuente de energía es el vacío, no la energía mecánica que usamos para hacer girar el eje.
+
+623
+00:47:31,360 --> 00:47:38,100
+Pero si no entiendes esto, si en tu visión toda esta energía es lo que aplicamos al eje, entonces para ti esto es inimaginable.
+
+624
+00:47:38,240 --> 00:47:41,680
+Porque en tal caso parece que obtenemos energía de la nada.
+
+625
+00:47:42,180 --> 00:47:43,920
+No hay fuente de esta energía adicional.
+
+626
+00:47:43,920 --> 00:47:45,800
+El vacío aún no ha aparecido.
+
+627
+00:47:46,100 --> 00:47:46,500
+¿Entiendes?
+
+628
+00:47:47,000 --> 00:47:49,640
+El concepto de vacío activo aún no te ha llegado.
+
+629
+00:47:49,840 --> 00:47:50,880
+Un concepto del siglo XIX.
+
+630
+00:47:51,140 --> 00:47:53,160
+¿Dónde supieron entonces que había energía?
+
+631
+00:47:53,700 --> 00:47:54,580
+Heaviside sabía esto.
+
+632
+00:47:55,040 --> 00:48:00,360
+Poynting no tenía que pensar en esto ya que consideraba solo el componente que se disipa.
+
+633
+00:48:00,880 --> 00:48:04,360
+Nunca investigó ningún otro flujo o componente ahí.
+
+634
+00:48:04,480 --> 00:48:07,140
+Consideró toda la energía que penetraba el cable.
+
+635
+00:48:07,240 --> 00:48:11,220
+Pero estaba desviado por noventa grados en la dirección del flujo, lo cual Heaviside corrigió.
+
+636
+00:48:11,220 --> 00:48:14,220
+Pero Heaviside fue una persona asombrosa.
+
+637
+00:48:14,560 --> 00:48:16,180
+Tenía habilidades sobresalientes.
+
+638
+00:48:16,700 --> 00:48:20,180
+Son sus ecuaciones que hoy llamamos ecuaciones de Maxwell.
+
+639
+00:48:20,220 --> 00:48:23,100
+Las simplificó e ideó la notación para ellas.
+
+640
+00:48:23,280 --> 00:48:25,160
+Pero tampoco estudió en la universidad.
+
+641
+00:48:26,760 --> 00:48:29,440
+Y muchos matemáticos y otros científicos estaban en su contra.
+
+642
+00:48:31,100 --> 00:48:34,340
+Ideó la función de Heaviside y muchas otras cosas destacadas.
+
+643
+00:48:35,060 --> 00:48:38,560
+Al principio fue odiado, y luego sus descubrimientos fueron aceptados y comenzaron a usarse.
+
+644
+00:48:38,560 --> 00:48:40,880
+Heaviside era un solitario, casi un ermitaño.
+
+645
+00:48:41,160 --> 00:48:44,940
+Murió como un pobre ermitaño hambriento en un apartamento pobre y terriblemente pequeño.
+
+646
+00:48:45,260 --> 00:48:46,500
+Pasaba hambre terriblemente.
+
+647
+00:48:47,480 --> 00:48:54,300
+Pero al final obtuvo reconocimiento de la Real Academia y otras instituciones por su contribución sobresaliente a la ciencia.
+
+648
+00:48:55,480 --> 00:49:00,900
+Heaviside descubrió este componente adicional, pero no se atrevió a hablar abiertamente al respecto.
+
+649
+00:49:01,700 --> 00:49:08,260
+Esto pronto llegó a Lorenz, quien en los años 1890 era el mayor científico en el campo de la electricidad.
+
+650
+00:49:10,340 --> 00:49:12,000
+Lorenz entendió los trabajos de ambos.
+
+651
+00:49:14,280 --> 00:49:17,000
+Pero incluso el gran Lorenz tenía limitaciones.
+
+652
+00:49:18,460 --> 00:49:30,380
+Si hubiera intentado decir abiertamente que sí, cada uno de nuestros generadores produce un enorme número de veces más energía de la que gastamos en él, lo habrían atado, puesto en un tren y sacado de la
+
+653
+00:49:30,380 --> 00:49:30,740
+ciudad.
+
+654
+00:49:32,380 --> 00:49:37,200
+Es decir, no podía hacerlo para no perder su reputación y posición.
+
+655
+00:49:37,640 --> 00:49:39,100
+Nadie lo habría hecho.
+
+656
+00:49:40,600 --> 00:49:49,700
+Si tienes un problema que puedes resolver, pero la ciencia que permitiría esto aún no ha aparecido, entonces serás crucificado por reconocerlo.
+
+657
+00:49:51,020 --> 00:49:56,500
+Y la mejor salida es excluir el problema, que es lo que Lorenz hizo.
+
+658
+00:49:56,900 --> 00:50:05,060
+Lorenz nos enseñó a tomar el vector de flujo de energía como un todo, integrado en una esfera que se podría dibujar alrededor de cualquier punto que elijas.
+
+659
+00:50:06,500 --> 00:50:08,440
+Esto permitió hacer algo maravilloso.
+
+660
+00:50:09,140 --> 00:50:10,240
+Dibujemos una esfera.
+
+661
+00:50:10,740 --> 00:50:11,740
+Esta es una pelota redonda.
+
+662
+00:50:12,100 --> 00:50:14,260
+Cierta cantidad de energía llega aquí.
+
+663
+00:50:14,980 --> 00:50:20,340
+Una pequeña parte se disipa, y la parte principal pasa más adelante.
+
+664
+00:50:22,160 --> 00:50:31,400
+Si restamos la energía que salió de la esfera de la energía que entró en ella, obtenemos la energía disipada, el componente de Poynting.
+
+665
+00:50:31,500 --> 00:50:34,620
+Y a cada ingeniero eléctrico le enseñaron este truco.
+
+666
+00:50:34,880 --> 00:50:44,600
+Pero su verdadero objetivo no es que realmente valga la pena hacer esto, sino librarse del problema que se negaron a resolver durante más de cien años, cuya solución ayudaría a
+
+667
+00:50:44,600 --> 00:50:48,860
+obtener enormes cantidades de energía libre del vacío.
+
+668
+00:50:49,000 --> 00:50:53,540
+La pregunta ahora es si realmente podemos usar este otro componente.
+
+669
+00:50:54,180 --> 00:50:58,600
+Por cierto, el flujo de Poynting que se disipa ahora corresponde a todos los conceptos estándar.
+
+670
+00:50:59,180 --> 00:51:00,900
+Alimentamos cargas.
+
+671
+00:51:01,140 --> 00:51:06,900
+Recolectamos una gran cantidad de energía y flujo de energía que se disipa a lo largo del camino del movimiento de estos electrones en el flujo.
+
+672
+00:51:07,240 --> 00:51:11,800
+Pero toda la corriente que va por el cable en esta dirección regresa de vuelta en esta dirección.
+
+673
+00:51:12,880 --> 00:51:23,560
+Así que la tensión a lo largo de todo el bucle desde la salida positiva hasta la salida negativa del generador es la misma, pero opuesta en signo a la tensión de la corriente que va en la otra dirección.
+
+674
+00:51:24,420 --> 00:51:27,620
+Primero, esto es fuerza electromotriz directa que empuja la corriente hacia adelante.
+
+675
+00:51:28,120 --> 00:51:31,420
+Y segundo, fuerza electromotriz inversa que empuja la corriente en dirección inversa.
+
+676
+00:51:32,840 --> 00:51:36,400
+Para forzarla a ir contra la tensión, necesitamos hacer trabajo.
+
+677
+00:51:36,400 --> 00:51:40,840
+Y cuando haces esto, las cargas que hacen el trabajo destruirán el dipolo.
+
+678
+00:51:41,160 --> 00:51:43,980
+Corriente inversa equivale a corriente inversa con igual tensión.
+
+679
+00:51:44,380 --> 00:51:55,320
+Esto confirma el gauge simétrico de Lorenz, según el cual la fuerza electromotriz directa es igual a la fuerza electromotriz inversa, y la mitad de la energía que obtienes del circuito externo no deberías usarla para otra cosa que
+
+680
+00:51:55,320 --> 00:52:00,760
+destruir la fuente externa y su capacidad de extraer energía del vacío y dártela.
+
+681
+00:52:03,460 --> 00:52:06,880
+Entonces destruimos el dipolo.
+
+682
+00:52:07,160 --> 00:52:10,460
+La energía llega a la carga, y destruimos el dipolo.
+
+683
+00:52:10,560 --> 00:52:16,520
+La mitad de la energía destruye el dipolo, y parte de la energía restante sale del circuito como fugas y pérdidas.
+
+684
+00:52:16,580 --> 00:52:19,000
+Es decir, menos energía llega a la carga.
+
+685
+00:52:19,120 --> 00:52:23,200
+Así, gastamos menos en alimentar la carga que en destruir el dipolo.
+
+686
+00:52:23,560 --> 00:52:29,040
+Para restaurar el dipolo, necesitamos hacer al menos la misma cantidad de trabajo para separar las cargas.
+
+687
+00:52:29,040 --> 00:52:30,940
+Aplicar fuerza bruta.
+
+688
+00:52:31,000 --> 00:52:31,640
+Fuerza bruta.
+
+689
+00:52:31,720 --> 00:52:42,500
+Es decir, aquí necesitamos aplicar la misma cantidad de energía, si tu generador tiene 100% de eficiencia, para separar cargas, restaurar el dipolo y restaurar el flujo de energía del vacío.
+
+690
+00:52:42,580 --> 00:52:45,260
+Esta cantidad de energía es más que lo que se suministra a la carga.
+
+691
+00:52:45,560 --> 00:52:53,720
+La eficiencia se define como la relación entre la energía útil que llega a la carga y la energía total aplicada en la entrada de los circuitos.
+
+692
+00:52:53,720 --> 00:53:02,480
+En este caso, siempre tendré que gastar más de lo que llega a la carga, así que la eficiencia será menor que uno.
+
+693
+00:53:02,680 --> 00:53:07,080
+La relación de estos valores será menor que uno.
+
+694
+00:53:08,280 --> 00:53:17,600
+Es decir, específicamente desarrollamos un sistema, un bucle cerrado que iguala las corrientes de fuerza electromotriz directa e inversa.
+
+695
+00:53:17,600 --> 00:53:27,740
+Y dejamos el generador conectado al circuito para que podamos realmente destruir el dipolo en el generador y la fuente de energía más rápido de lo que alimentamos la carga.
+
+696
+00:53:27,920 --> 00:53:38,380
+Así que para restaurar constantemente la dipolaridad y obtener energía del vacío, necesitamos hacer girar el eje del generador, pero siempre aplicaremos más energía al generador de la que llega
+
+697
+00:53:38,380 --> 00:53:38,920
+a la carga.
+
+698
+00:53:39,360 --> 00:53:45,660
+Esta es la absurdidad de los sistemas eléctricos modernos que hemos desarrollado y construido durante los últimos 100 años.
+
+699
+00:53:47,180 --> 00:53:48,700
+¿Qué alimenta la carga?
+
+700
+00:53:50,400 --> 00:53:52,240
+Aún tienes una carga y corriente inversa.
+
+701
+00:53:52,660 --> 00:53:53,000
+Correcto.
+
+702
+00:53:53,080 --> 00:53:53,860
+Pero no necesariamente.
+
+703
+00:53:54,540 --> 00:53:59,780
+No existe tal carga por su naturaleza que diga que no necesitas usar un bucle cerrado.
+
+704
+00:54:00,060 --> 00:54:02,040
+Tesla cambió a esquemas de un solo cable.
+
+705
+00:54:02,380 --> 00:54:02,720
+Correcto.
+
+706
+00:54:03,040 --> 00:54:06,700
+Suministrando un pulso a un capacitor en el otro extremo del circuito, y luego de vuelta.
+
+707
+00:54:07,240 --> 00:54:13,200
+En tu visión del futuro, se asume que desarrollaremos fuentes de energía que extraigan energía del vacío.
+
+708
+00:54:14,820 --> 00:54:19,200
+¿Cómo encaja en los esquemas cerrados de uso de energía?
+
+709
+00:54:19,340 --> 00:54:31,460
+El primer requisito para obtener un sistema electromagnético con eficiencia mayor que uno, el primer requisito es rechazar el sistema cerrado que garantiza que necesites aplicar
+
+710
+00:54:31,460 --> 00:54:33,620
+más energía de la que llega a la carga.
+
+711
+00:54:33,880 --> 00:54:36,760
+Necesitas rechazar esto, puede hacerse de varias maneras.
+
+712
+00:54:37,100 --> 00:54:38,300
+La carga se mantiene igual.
+
+713
+00:54:38,540 --> 00:54:40,140
+La carga está conectada en serie.
+
+714
+00:54:40,440 --> 00:54:41,260
+Por supuesto, sin problema.
+
+715
+00:54:41,480 --> 00:54:41,760
+Bien.
+
+716
+00:54:41,760 --> 00:54:50,700
+Si, por supuesto, no vas a alimentar la carga con energía negativa, necesitas desarrollar una carga que pueda alimentarse con energía negativa, y entonces la carga no solo se alimentará a sí misma, sino también
+
+717
+00:54:50,700 --> 00:54:52,740
+te dará energía del vacío.
+
+718
+00:54:52,840 --> 00:54:54,420
+¿Usar la corriente, o qué?
+
+719
+00:54:54,620 --> 00:54:55,420
+Energía positiva.
+
+720
+00:54:55,680 --> 00:54:57,000
+Cierto, energía positiva.
+
+721
+00:54:57,180 --> 00:55:00,100
+Entonces una carga es una carga, e impedancia es impedancia.
+
+722
+00:55:00,400 --> 00:55:00,540
+Sí.
+
+723
+00:55:00,820 --> 00:55:03,940
+¿Por qué pasa que aún necesitamos alimentar la carga?
+
+724
+00:55:04,140 --> 00:55:04,760
+Todo es corriente.
+
+725
+00:55:04,960 --> 00:55:06,700
+Y aún necesitamos devolver la corriente.
+
+726
+00:55:07,260 --> 00:55:07,540
+No.
+
+727
+00:55:09,540 --> 00:55:09,980
+Bien.
+
+728
+00:55:09,980 --> 00:55:13,300
+La única forma de devolver la corriente es usarla de nuevo.
+
+729
+00:55:13,460 --> 00:55:16,160
+Por cierto, hablemos de la corriente.
+
+730
+00:55:16,500 --> 00:55:18,960
+La corriente no se parece en nada al flujo de agua en una tubería.
+
+731
+00:55:19,600 --> 00:55:20,420
+Todo no es así.
+
+732
+00:55:20,980 --> 00:55:25,200
+Los electrones en los cables son libres, constantemente saltan a otros átomos, saltan de un lado a otro.
+
+733
+00:55:25,400 --> 00:55:27,260
+Esto se llama gas de electrones de Drude.
+
+734
+00:55:28,220 --> 00:55:32,900
+Drude lo descubrió alrededor de 1900.
+
+735
+00:55:33,380 --> 00:55:39,920
+En un conductor en cada momento tenemos un gas de electrones que consiste en electrones que saltan.
+
+736
+00:55:40,760 --> 00:55:47,380
+Y cuando enviamos este flujo de energía por el conductor, este flujo pasa a través de todas estas cargas.
+
+737
+00:55:47,820 --> 00:55:49,760
+Se mueve casi a la velocidad de la luz.
+
+738
+00:55:50,460 --> 00:56:00,660
+Si todo fuera ideal, se movería a la velocidad de la luz, pero tenemos inductancia, capacitancia, etc., por lo que su velocidad es menor que la de la luz, con la cual el potencial real y el flujo de energía real
+
+739
+00:56:00,660 --> 00:56:02,080
+fluyen por el conductor.
+
+740
+00:56:02,700 --> 00:56:04,460
+El electrón mismo no se mueve así, solo en promedio.
+
+741
+00:56:04,460 --> 00:56:08,640
+En un circuito el electrón se mueve a lo largo del conductor a unos 10 centímetros por hora.
+
+742
+00:56:09,020 --> 00:56:09,980
+¡Por hora!
+
+743
+00:56:10,560 --> 00:56:15,980
+Unos 10 centímetros a lo largo del conductor porque tiene que saltar, y tenemos deriva de electrones.
+
+744
+00:56:16,520 --> 00:56:19,420
+En promedio se desplaza, salta, luego se desplaza más.
+
+745
+00:56:20,720 --> 00:56:25,120
+Esta es estadística de deriva formada por electrones.
+
+746
+00:56:26,240 --> 00:56:32,940
+El electrón no puede simplemente moverse a lo largo del conductor porque los electrones adelante lo impiden, arrojándolo de vuelta.
+
+747
+00:56:33,720 --> 00:56:36,060
+Todo debe estar en interacción.
+
+748
+00:56:36,800 --> 00:56:41,780
+Saltos, colisiones y deriva por el conductor a unos 10 centímetros por hora.
+
+749
+00:56:43,260 --> 00:56:46,960
+Esta es la velocidad real del electrón en el movimiento longitudinal en el conductor.
+
+750
+00:56:47,620 --> 00:56:50,400
+Mientras tanto la energía se mueve prácticamente a la velocidad de la luz.
+
+751
+00:56:51,040 --> 00:56:54,080
+Así, una de las formas de pasar de esto...
+
+752
+00:56:54,080 --> 00:56:56,000
+Digamos que tienes un buen conductor de cobre.
+
+753
+00:56:57,960 --> 00:57:05,720
+La reacción de los electrones a la corriente después de la transferencia de tensión en él es tan rápida que podemos considerarla instantánea.
+
+754
+00:57:06,520 --> 00:57:11,500
+Diferentes personas citan diferentes datos, pero es de unos 10 a la menos 16 segundos.
+
+755
+00:57:12,040 --> 00:57:13,080
+Este es un tiempo muy corto.
+
+756
+00:57:13,480 --> 00:57:18,600
+Olvídate de medir la distancia entre cuando aplicas tensión y la corriente comienza a fluir.
+
+757
+00:57:19,040 --> 00:57:20,140
+Es decir, efectivamente.
+
+758
+00:57:20,360 --> 00:57:27,820
+En circuitos normales que ensamblamos con cables de cobre y similares, la corriente comienza a fluir inmediatamente después de que aplicamos tensión.
+
+759
+00:57:28,160 --> 00:57:30,220
+Y el dipolo siempre se destruye.
+
+760
+00:57:30,220 --> 00:57:31,940
+Aquí tensión, aquí corriente.
+
+761
+00:57:31,960 --> 00:57:34,540
+Pero supongamos que ralentizamos el proceso.
+
+762
+00:57:34,940 --> 00:57:37,820
+Brevemente congelamos el electrón, literalmente por un milisegundo.
+
+763
+00:57:38,120 --> 00:57:39,240
+Una milésima de segundo.
+
+764
+00:57:40,740 --> 00:57:44,540
+Este es un tiempo bastante largo para algo que se mueve a la velocidad de la luz.
+
+765
+00:57:47,480 --> 00:57:49,680
+300 millones de metros por segundo.
+
+766
+00:57:49,720 --> 00:57:57,260
+Y retrasaste el inicio del movimiento por 300 mil metros, entiende, que podría pasar antes de que comience el movimiento del electrón.
+
+767
+00:57:59,340 --> 00:58:02,620
+Simplemente retrasándolos por un milisegundo.
+
+768
+00:58:02,720 --> 00:58:10,000
+Crearía potencial en todo el esquema con una corriente muy pequeña, casi cero.
+
+769
+00:58:10,660 --> 00:58:16,700
+Si ensamblas un dispositivo que proporcione automáticamente este retraso en el conductor, esto se puede hacer.
+
+770
+00:58:19,300 --> 00:58:26,980
+Si haces un conductor de una aleación de aluminio con un 2% de contenido de hierro, puedes obtener un retraso de corriente de aproximadamente un milisegundo.
+
+771
+00:58:30,380 --> 00:58:38,660
+Puedes calcular todo y medir el porcentaje de hierro, y todo eso, para obtener un retraso de un milisegundo.
+
+772
+00:58:40,120 --> 00:58:41,120
+Necesitamos una aleación.
+
+773
+00:58:41,360 --> 00:58:44,060
+Necesitamos una buena aleación para que nada impida a las partículas.
+
+774
+00:58:46,840 --> 00:58:51,540
+Si tenemos una buena aleación con 2% de hierro, toma un pequeño contenido.
+
+775
+00:58:51,540 --> 00:59:03,120
+Podemos hacer un conductor con un retraso de aproximadamente un milisegundo entre cuando se aplica la tensión, incluso si la aplicaste muy bruscamente, y cuando cualquier corriente significativa
+
+776
+00:59:03,120 --> 00:59:04,020
+comienza a fluir.
+
+777
+00:59:04,140 --> 00:59:06,180
+El retraso es de aproximadamente un milisegundo.
+
+778
+00:59:06,600 --> 00:59:24,200
+Durante este milisegundo, si tu circuito no es más largo que 300 mil metros o 300 kilómetros, porque nadie usa circuitos de tal longitud, puedes crear potencial en el circuito sin ayuda de corriente,
+
+779
+00:59:24,460 --> 00:59:26,240
+energía eléctrica o trabajo.
+
+780
+00:59:27,600 --> 00:59:28,720
+La energía es gratis.
+
+781
+00:59:29,240 --> 00:59:30,700
+La energía potencial es gratis.
+
+782
+00:59:30,960 --> 00:59:31,900
+No cuesta un centavo.
+
+783
+00:59:32,080 --> 00:59:36,800
+Viene del vacío gracias a la formación de dipolos, y permanece contigo gratis.
+
+784
+00:59:36,800 --> 00:59:41,460
+Solo tienes que pagar cuando necesitas hacer trabajo sobre la energía que se disipa y cambiar su forma.
+
+785
+00:59:41,820 --> 00:59:47,960
+Querríamos crear potencial en este circuito, y luego desconectar el generador de él antes de que fluya la corriente.
+
+786
+00:59:47,960 --> 00:59:49,280
+Podemos hacer esto.
+
+787
+00:59:49,500 --> 00:59:51,400
+Es más simple que simple.
+
+788
+00:59:54,180 --> 00:59:58,500
+Solo necesitas encontrar un laboratorio metalúrgico que haga este conductor.
+
+789
+00:59:58,820 --> 01:00:02,440
+Luego tendrías que comprar mucho, y sería terriblemente caro.
+
+790
+01:00:03,820 --> 01:00:14,480
+Lo averiguamos y no estábamos preparados para pagar 30-40 mil dólares para hacer este conductor, si, por supuesto, no necesitas hacer mucho de esta aleación.
+
+791
+01:00:14,480 --> 01:00:23,220
+Pero si lo necesitaras para un programa de investigación, o tienes tu propio laboratorio metalúrgico, entonces, por supuesto, puedes hacerlos y realizar experimentos con ellos.
+
+792
+01:00:23,640 --> 01:00:24,500
+¿Entonces qué hacemos?
+
+793
+01:00:25,040 --> 01:00:26,540
+Conectamos muy rápido el generador.
+
+794
+01:00:26,920 --> 01:00:30,980
+Inmediatamente aplicamos tensión y creamos potencial en todo el esquema.
+
+795
+01:00:31,160 --> 01:00:33,780
+Y la corriente, mientras tanto, no ha entrado en él.
+
+796
+01:00:33,900 --> 01:00:36,780
+Intenta pasar al circuito, pero el hierro no lo deja.
+
+797
+01:00:37,220 --> 01:00:39,020
+Retrasa su movimiento.
+
+798
+01:00:40,020 --> 01:00:48,580
+En este momento desconectamos repentinamente el circuito del generador, de la fuente de dipolaridad.
+
+799
+01:00:49,620 --> 01:00:57,540
+En su lugar colocamos un semiconductor, un diodo, para que la corriente pase solo en esta dirección.
+
+800
+01:00:59,600 --> 01:01:02,420
+Ahora nuestro circuito con toda su capacitancia y potenciales.
+
+801
+01:01:02,860 --> 01:01:06,160
+Podemos hacer experimentos para optimizarlo conectando diferentes dispositivos.
+
+802
+01:01:09,180 --> 01:01:14,500
+No hay tanta energía en él, al menos la mitad se disipará en la carga.
+
+803
+01:01:14,620 --> 01:01:18,020
+Se liberará y alimentará la carga gratis.
+
+804
+01:01:19,340 --> 01:01:24,360
+Solo gastas una pequeña cantidad para conectar el generador, y no pagas por la energía.
+
+805
+01:01:24,860 --> 01:01:27,460
+Mientras tanto, el dipolo en el generador no se destruye.
+
+806
+01:01:27,600 --> 01:01:30,440
+Puedes conectarlo una y otra vez y otra vez y otra vez.
+
+807
+01:01:30,440 --> 01:01:36,160
+Prácticamente perderás parte de esta energía, así que aún tendrás que hacer girar el eje del generador un poco.
+
+808
+01:01:37,800 --> 01:01:41,020
+Pero el coeficiente de eficiencia automáticamente será mayor que uno.
+
+809
+01:01:43,960 --> 01:01:49,240
+Gastarás más energía alimentando la carga que haciendo girar el eje del generador.
+
+810
+01:01:50,500 --> 01:01:52,140
+Esto es realmente factible.
+
+811
+01:01:53,200 --> 01:02:03,600
+Por ejemplo, si el Departamento de Energía aborda seriamente la investigación innovadora, esto puede ser hecho por algunos de los laboratorios nacionales, pero en realidad ninguno de ellos hará esto.
+
+812
+01:02:05,720 --> 01:02:08,020
+Esta es la última cosa con la que querrían lidiar.
+
+813
+01:02:08,740 --> 01:02:15,500
+Lidiarán con síntesis termonuclear, celdas de combustible, quemar carbón y utilizar residuos, y cosas similares.
+
+814
+01:02:16,100 --> 01:02:21,760
+Lo último que harán es investigación que cambie la ingeniería eléctrica.
+
+815
+01:02:24,560 --> 01:02:33,280
+Aún usamos un modelo que tiene más de 100 años, hace tiempo obsoleto, pero sin embargo se defiende en lugar de cambiarlo.
+
+816
+01:02:34,080 --> 01:02:46,080
+Como deben actuar los científicos cuando los experimentos prueban la invalidez del modelo actual, por procedimiento científico el modelo debe cambiarse, no criticar los experimentos, como
+
+817
+01:02:46,080 --> 01:02:47,720
+pasó con la fusión fría.
+
+818
+01:02:47,720 --> 01:02:58,800
+No los niegues, y no sigas haciendo negocios a la vieja usanza, porque eventualmente podemos llevar a la nación a la bancarrota, porque todo lo que necesitan es el costo de la energía.
+
+819
+01:03:00,140 --> 01:03:13,600
+Pero todo lo que necesitas hacer para crear potencial en modo estático, desconectar el generador para que el circuito cobre vida, hacerlo dinámico, y luego usar la energía que obtendría
+
+820
+01:03:13,600 --> 01:03:16,080
+gratis.
+
+821
+01:03:16,080 --> 01:03:19,800
+Pero a nuestros ingenieros se les enseña que el campo estático es inútil.
+
+822
+01:03:21,420 --> 01:03:23,560
+Pero es lo más valioso que tenemos.
+
+823
+01:03:24,980 --> 01:03:26,720
+Es un flujo de energía puro.
+
+824
+01:03:27,320 --> 01:03:28,180
+Flujo estacionario.
+
+825
+01:03:28,620 --> 01:03:29,820
+Sí, flujo estacionario.
+
+826
+01:03:30,180 --> 01:03:33,860
+Usa este flujo gratis, de una fuente que contenga un dipolo.
+
+827
+01:03:34,220 --> 01:03:35,540
+Y no destruyas la fuente.
+
+828
+01:03:35,960 --> 01:03:39,520
+Esa es una docena de recomendaciones combinadas en una al usar energía libre.
+
+829
+01:03:40,120 --> 01:03:45,780
+No destruyas la dipolaridad inicial, porque entonces destruyes la fuente que extrae energía del vacío.
+
+830
+01:03:45,780 --> 01:03:47,200
+Simplemente no sabías de esto antes.
+
+831
+01:03:50,120 --> 01:03:59,100
+Una discusión entre el investigador y teniente coronel retirado del Ejército de EE.UU. Ken Moore, el físico-matemático David Clemens, y el productor ejecutivo Tony Cradoc.
+
+832
+01:03:59,360 --> 01:04:04,800
+Pueden aparecer muchos dispositivos o elementos diferentes que serán diseñados para hacer la misma tarea.
+
+833
+01:04:05,000 --> 01:04:06,900
+No quiero decir que esta es la única manera.
+
+834
+01:04:08,180 --> 01:04:10,920
+Sí, este es el enfoque básico en el que vale la pena pensar.
+
+835
+01:04:10,920 --> 01:04:17,780
+Es fundamentalmente diferente y no se parece en nada al enfoque tradicional de la ingeniería eléctrica.
+
+836
+01:04:18,880 --> 01:04:21,860
+Aquí tienes una fuente de energía positiva y negativa.
+
+837
+01:04:24,180 --> 01:04:25,920
+¿Qué hace el controlador?
+
+838
+01:04:26,220 --> 01:04:29,540
+Proporciona una señal periódica y un temporizador.
+
+839
+01:04:37,780 --> 01:04:43,440
+Cierra este interruptor y aplica potencia en este circuito.
+
+840
+01:04:45,020 --> 01:04:49,660
+Cuando el interruptor está cerrado, el capacitor se carga con energía del generador.
+
+841
+01:04:50,380 --> 01:04:54,060
+Pero esto pasa tan rápido que la corriente no llega a fluir en el circuito.
+
+842
+01:04:54,060 --> 01:04:56,500
+Aquí pondremos un amperímetro.
+
+843
+01:04:56,860 --> 01:04:59,380
+Debería mostrar cero.
+
+844
+01:05:01,180 --> 01:05:07,240
+Antes de que la corriente fluya en el circuito, este interruptor se abre, y el controlador abre este interruptor.
+
+845
+01:05:07,760 --> 01:05:11,200
+Luego podemos usar toda esta energía para alimentar la carga.
+
+846
+01:05:11,820 --> 01:05:13,560
+Este proceso se repite constantemente.
+
+847
+01:05:13,960 --> 01:05:15,180
+Hace esto constantemente.
+
+848
+01:05:15,460 --> 01:05:19,060
+Es un tipo de convertidor de CC a CC.
+
+849
+01:05:19,280 --> 01:05:19,820
+Entendido.
+
+850
+01:05:23,340 --> 01:05:25,540
+La diferencia es que
+
+851
+01:05:30,900 --> 01:05:37,040
+un esquema tradicional es exactamente lo mismo, pero no tiene un sistema de interruptores.
+
+852
+01:05:38,080 --> 01:05:39,540
+Es monofásico.
+
+853
+01:05:41,200 --> 01:05:45,740
+Si quieres, aquí puedes tener un interruptor cerrando y abriendo el circuito.
+
+854
+01:05:45,740 --> 01:05:48,960
+Ahora ves lo que obtienes.
+
+855
+01:05:48,960 --> 01:05:55,040
+Cuando aplicas potencia a la carga, tendrás pérdidas conectadas con fuerza contraelectromotriz.
+
+856
+01:05:56,560 --> 01:05:58,500
+Así que no obtendrás eficiencia mayor que uno.
+
+857
+01:06:03,000 --> 01:06:05,260
+Haces esto para este circuito también.
+
+858
+01:06:05,740 --> 01:06:07,180
+Dr. David Clemens.
+
+859
+01:06:07,580 --> 01:06:15,180
+Cuando abres el interruptor, no dejando que la corriente entre en el circuito antes de cargar el dispositivo inicial para que nada pueda comerse o destruir la fuente.
+
+860
+01:06:15,660 --> 01:06:16,400
+Sí, todo correcto.
+
+861
+01:06:16,400 --> 01:06:18,720
+El cálculo correcto del tiempo es muy importante aquí.
+
+862
+01:06:19,080 --> 01:06:27,340
+Necesitas organizarlo para que el capacitor pueda absorber energía lo suficientemente rápido para apagar el dipolo antes de que aparezca la corriente aquí.
+
+863
+01:06:27,740 --> 01:06:31,900
+Si no apagas esta parte del circuito, terminarás con este esquema.
+
+864
+01:06:33,880 --> 01:06:34,500
+Claro.
+
+865
+01:06:35,700 --> 01:06:39,660
+Casi igual, excepto que el capacitor se convierte en la carga.
+
+866
+01:06:39,840 --> 01:06:43,580
+Pero no quieres permitir esto, así que necesitas organizar el tiempo.
+
+867
+01:06:43,580 --> 01:06:46,620
+Conocemos una... no, dos formas de hacer esto.
+
+868
+01:06:46,780 --> 01:06:49,080
+Primera, usar un capacitor.
+
+869
+01:06:50,140 --> 01:06:51,860
+John usa este método.
+
+870
+01:06:52,800 --> 01:07:00,520
+La otra forma, usar una bobina hecha de material que alargue el tiempo de relajación.
+
+871
+01:07:01,380 --> 01:07:17,480
+El tiempo de relajación es el tiempo del que hablamos, durante el cual después del cierre del interruptor no fluye corriente en el circuito, y luego abres este interruptor y enciendes la segunda parte del esquema.
+
+872
+01:07:17,940 --> 01:07:20,280
+La energía se acumula aquí, y cierras este interruptor.
+
+873
+01:07:20,800 --> 01:07:23,360
+Ahora usas la energía acumulada para alimentar la carga.
+
+874
+01:07:23,900 --> 01:07:25,520
+Esas son las dos fases de las que hablé.
+
+875
+01:07:26,780 --> 01:07:33,060
+Y si esto fuera una bobina, entonces el bobinado se haría de una aleación de aluminio con 2% de hierro.
+
+876
+01:07:33,660 --> 01:07:36,300
+Sí, instalaremos un sensor de tiempo para esta bobina.
+
+877
+01:07:36,300 --> 01:07:39,240
+¿Publicaste este trabajo en 1992?
+
+878
+01:07:39,900 --> 01:07:40,780
+¿Lo sabes?
+
+879
+01:07:41,140 --> 01:07:41,740
+Bien.
+
+880
+01:07:42,820 --> 01:07:43,820
+Por eso estoy aquí.
+
+881
+01:07:46,080 --> 01:07:50,480
+El bobinado se haría de una aleación de 98% aluminio y 2% hierro.
+
+882
+01:07:51,380 --> 01:07:55,920
+Esto te daría aproximadamente un milisegundo de tiempo de relajación, que en realidad es bastante.
+
+883
+01:07:56,420 --> 01:07:58,540
+¿De qué estarían hechos los cables en tu circuito?
+
+884
+01:07:58,840 --> 01:08:02,580
+No me refiero al bobinado de la bobina, sino a los cables que conectan los dispositivos en el circuito.
+
+885
+01:08:02,620 --> 01:08:04,060
+Los cables pueden ser de cobre.
+
+886
+01:08:04,400 --> 01:08:04,760
+Entendido.
+
+887
+01:08:05,460 --> 01:08:10,760
+Y la bobina se hará de una aleación de aluminio-hierro.
+
+888
+01:08:11,580 --> 01:08:12,680
+Eso es todo lo que necesitas.
+
+889
+01:08:16,040 --> 01:08:20,580
+Pero los fabricantes dicen que la aleación necesita hacerse con gas inerte.
+
+890
+01:08:21,160 --> 01:08:22,880
+Este es un procedimiento bastante complejo.
+
+891
+01:08:23,320 --> 01:08:24,700
+Sí, no es tan simple.
+
+892
+01:08:25,780 --> 01:08:27,880
+En un laboratorio común no se hará así nomás.
+
+893
+01:08:31,820 --> 01:08:33,660
+Así es como se hace esto.
+
+894
+01:08:33,900 --> 01:08:36,840
+Y el esquema es muy simple si entiendes los conceptos.
+
+895
+01:08:37,320 --> 01:08:39,640
+Eso es con lo que Tom intentó trabajar.
+
+896
+01:08:41,300 --> 01:08:45,980
+Necesitas cambiar tu forma de pensar para pasar de tales esquemas a tales, con dos fases.
+
+897
+01:08:48,060 --> 01:08:50,120
+Nos enseñan a hacer estos.
+
+898
+01:08:52,120 --> 01:08:53,820
+Esto ha sido así por más de 100 años.
+
+899
+01:08:54,550 --> 01:09:00,680
+Y la física... ya ves, cuando crearon este modelo, para la época esta era la información más moderna.
+
+900
+01:09:01,860 --> 01:09:04,160
+La relatividad especial aún no había aparecido.
+
+901
+01:09:04,520 --> 01:09:06,820
+El gas de electrones de Drude aún no se conocía.
+
+902
+01:09:07,420 --> 01:09:09,020
+Sí, y el electrón mismo no había sido descubierto.
+
+903
+01:09:09,220 --> 01:09:11,360
+La gente no sabía de la existencia del electrón.
+
+904
+01:09:11,840 --> 01:09:14,580
+Entonces el átomo se representaba como una bola sin estructura.
+
+905
+01:09:15,380 --> 01:09:16,620
+Así se mostraba en los modelos.
+
+906
+01:09:17,100 --> 01:09:18,740
+Pero estaba claro que el átomo tenía energía.
+
+907
+01:09:19,180 --> 01:09:19,740
+Correcto.
+
+908
+01:09:20,000 --> 01:09:21,540
+Todas las partículas tienen energía.
+
+909
+01:09:21,540 --> 01:09:22,100
+Correcto.
+
+910
+01:09:22,560 --> 01:09:26,400
+Pero el entendimiento más profundo de la física que tenemos ahora no estaba ahí.
+
+911
+01:09:26,700 --> 01:09:35,380
+En esos tiempos si nos encontráramos ahí, no podríamos haber pensado nada mejor, y posiblemente habríamos hecho solo peor, porque entonces crearon un sistema especializado claro.
+
+912
+01:09:35,660 --> 01:09:39,260
+Así que en tu propio trabajo se basaban en conocimiento práctico.
+
+913
+01:09:39,280 --> 01:09:39,600
+Correcto.
+
+914
+01:09:39,840 --> 01:09:45,720
+Se basaban en varios fenómenos energéticos y crearon modelos teóricos explicando estos fenómenos.
+
+915
+01:09:46,440 --> 01:09:48,880
+Lo que hice fue estudiar dos cosas.
+
+916
+01:09:49,760 --> 01:09:59,420
+Empecé en la ciencia en un momento en que se estaba haciendo mucha investigación en física, pero la mayoría no se estaba implementando, no se extraía del enorme volumen de trabajos que
+
+917
+01:09:59,420 --> 01:10:00,060
+se hicieron.
+
+918
+01:10:00,220 --> 01:10:01,580
+Nadie hablaba nunca sobre este tema.
+
+919
+01:10:01,720 --> 01:10:04,000
+La gente dice "ah, sí, leí sobre esto".
+
+920
+01:10:04,000 --> 01:10:07,000
+Pero ese conocimiento no se usaba para rehacer el modelo.
+
+921
+01:10:08,680 --> 01:10:11,020
+Tuve la suerte de que los trabajos de física fueran accesibles.
+
+922
+01:10:11,020 --> 01:10:16,040
+Si decides hacer investigación, puedes excavar y recolectar esta información, está ahí.
+
+923
+01:10:16,820 --> 01:10:22,620
+Pero no se recolecta junta, se aplica a la ingeniería eléctrica, y se usa para avanzar en ese campo.
+
+924
+01:10:23,480 --> 01:10:30,980
+Una ventaja más que tuve, tuve la suerte de trabajar con inventores independientes que lograron ensamblar dispositivos que funcionaban.
+
+925
+01:10:31,620 --> 01:10:35,840
+Floyd Sweet, Howard Johnson, Frank Golden, personas de este tipo.
+
+926
+01:10:36,820 --> 01:10:40,680
+Trabajé con inventores que realmente tenían modelos funcionando.
+
+927
+01:10:40,680 --> 01:10:44,840
+Ejecutaron experimentos de laboratorio con estos dispositivos, y funcionaron.
+
+928
+01:10:45,280 --> 01:10:49,960
+A veces era endemoniadamente difícil entender qué pasa, y desarrollar y construir modelos llevó años.
+
+929
+01:10:50,180 --> 01:10:53,780
+Pero estos experimentos nos permitieron mirar los fenómenos en la práctica.
+
+930
+01:10:54,760 --> 01:11:06,660
+Si tienes un conjunto de estos fenómenos más cierto conocimiento necesario para construir un modelo, fácil, tomas este conocimiento teórico y lo comparas con los resultados experimentales, que
+
+931
+01:11:06,660 --> 01:11:09,940
+actúan como un filtro para ese conocimiento.
+
+932
+01:11:09,940 --> 01:11:11,780
+Este es el método científico.
+
+933
+01:11:11,980 --> 01:11:14,220
+Al menos, antes era exactamente esto.
+
+934
+01:11:18,640 --> 01:11:23,240
+¿Has encontrado algo nuevo y útil sobre este tema desde el descubrimiento de la simetría rota?
+
+935
+01:11:25,980 --> 01:11:29,020
+La simetría rota se usa ampliamente en física ahora.
+
+936
+01:11:29,300 --> 01:11:31,360
+¿Hay trabajos modernos sobre este tema?
+
+937
+01:11:31,420 --> 01:11:32,200
+Sí, por supuesto.
+
+938
+01:11:32,680 --> 01:11:36,260
+Uno tras otro, aparecen nuevos trabajos sobre simetría y simetría rota.
+
+939
+01:11:36,420 --> 01:11:37,520
+Hay millones de trabajos.
+
+940
+01:11:39,160 --> 01:11:41,960
+¿Hay nuevos descubrimientos iguales en importancia?
+
+941
+01:11:42,960 --> 01:11:46,360
+Los nuevos descubrimientos tienden a ser entendibles solo para los iniciados.
+
+942
+01:11:46,480 --> 01:11:49,380
+Por ejemplo, ahora has comenzado a hacer tales preguntas.
+
+943
+01:11:50,020 --> 01:11:52,620
+¿Cómo, en qué aspecto deberíamos considerar la realidad?
+
+944
+01:11:53,700 --> 01:11:56,700
+Me refiero desde el punto de vista que te interesa.
+
+945
+01:11:56,760 --> 01:11:57,780
+Entonces sí.
+
+946
+01:11:58,380 --> 01:12:00,800
+Por ejemplo, el tiempo se está investigando seriamente ahora.
+
+947
+01:12:01,640 --> 01:12:03,040
+¿Qué representa?
+
+948
+01:12:04,300 --> 01:12:06,600
+El tiempo se puede usar como energía.
+
+949
+01:12:06,780 --> 01:12:08,680
+El tiempo es similar a la energía atómica.
+
+950
+01:12:09,080 --> 01:12:12,320
+Tiene la misma densidad de energía que la masa cuando lo conviertes.
+
+951
+01:12:12,860 --> 01:12:22,480
+Si quieres desarrollar este aspecto, puedes tomar un pequeño período de tiempo y convertirlo en energía, este pequeño y diminuto pedazo de tiempo te da una enorme cantidad de
+
+952
+01:12:22,480 --> 01:12:22,880
+energía.
+
+953
+01:12:23,040 --> 01:12:24,720
+Puede ser electromagnética.
+
+954
+01:12:25,260 --> 01:12:27,720
+Un camino más por el que eventualmente iremos.
+
+955
+01:12:27,720 --> 01:12:37,870
+Una conclusión más que nos empuja, el estudio tanto de la energía positiva como negativa, y más adelante directo al espacio de Dirac y los Huecos antes de que se conviertan en positrones.
+
+956
+01:12:38,400 --> 01:12:44,720
+Esto te empuja a la pregunta principal porque cada ley de conservación de energía es una simetría.
+
+957
+01:12:45,740 --> 01:12:46,300
+¿Entiendes?
+
+958
+01:12:46,860 --> 01:12:58,680
+Cada vez que encuentras una violación de simetría, es una violación de una ley de conservación de energía, es decir, si miras los trabajos de Michael Leyton, ahora no tenemos estructuras que
+
+959
+01:12:58,680 --> 01:13:00,360
+nos permitirían alcanzar este nivel.
+
+960
+01:13:00,580 --> 01:13:03,640
+Pero Leyton nos las proporcionó a finales de los 90.
+
+961
+01:13:03,760 --> 01:13:15,660
+Si usamos geometría orientada a objetos y los mejores métodos teóricos de agrupación, descubrimos que la violación de la simetría en un nivel no pierde todo este conocimiento, como siempre
+
+962
+01:13:15,660 --> 01:13:16,240
+asumimos.
+
+963
+01:13:16,240 --> 01:13:20,500
+Que lo que pasa en la naturaleza, el conocimiento se preserva en algún nivel.
+
+964
+01:13:21,080 --> 01:13:24,260
+Pero en un nuevo nivel en la jerarquía, se crea simetría.
+
+965
+01:13:25,000 --> 01:13:27,760
+La carga inicial encaja completamente en este concepto.
+
+966
+01:13:28,360 --> 01:13:31,900
+Violas la simetría en un nivel más bajo en el estado virtual.
+
+967
+01:13:32,480 --> 01:13:35,420
+Automáticamente creas simetría en el nuevo nivel.
+
+968
+01:13:35,780 --> 01:13:42,600
+Una nueva ley de conservación en el nivel del estado observable de energía del campo electromagnético, energía del potencial electromagnético, etc.
+
+969
+01:13:42,600 --> 01:13:43,940
+Y esto funciona.
+
+970
+01:13:44,120 --> 01:13:51,800
+Así que desarrollamos una nueva geometría que podemos usar para reemplazar la vieja geometría de 1872.
+
+971
+01:13:52,120 --> 01:14:03,740
+Si usamos la geometría orientada a objetos más moderna de Leyton, Michael Leyton, podemos entender muchas cosas, por ejemplo el problema de la carga inicial y así sucesivamente.
+
+972
+01:14:04,340 --> 01:14:07,680
+Este es un avance fundamental más que no podíamos hacer antes.
+
+973
+01:14:07,680 --> 01:14:12,300
+El trabajo de Leyton se aplica activamente en robótica y otros campos.
+
+974
+01:14:12,740 --> 01:14:17,800
+Sus postulados funcionan incluso cuando la vieja geometría euclidiana no puede resolver el problema.
+
+975
+01:14:18,360 --> 01:14:21,260
+Este es un desarrollo exitoso, bien probado experimentalmente.
+
+976
+01:14:22,420 --> 01:14:27,000
+Pero nadie aún lo aplicó al estudio de la carga inicial en electrodinámica.
+
+977
+01:14:27,300 --> 01:14:29,300
+Pero las posibilidades de su aplicación son enormes.
+
+978
+01:14:29,860 --> 01:14:31,520
+Todo lo que hice fue señalarlo.
+
+979
+01:14:31,520 --> 01:14:39,360
+Y los jóvenes, posgraduados escribiendo tesis doctorales, jóvenes profesores deberían desarrollar este problema.
+
+980
+01:14:39,620 --> 01:14:42,420
+Este es todo un campo aún no estudiado.
+
+981
+01:14:42,800 --> 01:14:45,740
+El Departamento de Energía debería prestarle mucha atención.
+
+982
+01:14:46,200 --> 01:14:47,240
+Pero no lo hacen.
+
+983
+01:14:51,280 --> 01:14:54,980
+Ni siquiera saben qué es esto porque no es en lo que están trabajando.
+
+984
+01:14:55,060 --> 01:14:56,820
+Y no es lo que planearon.
+
+985
+01:14:57,060 --> 01:14:59,400
+Una organización grande es como un barco grande y pesado.
+
+986
+01:14:59,760 --> 01:15:01,200
+No puedes girarlo instantáneamente.
+
+987
+01:15:01,200 --> 01:15:06,420
+Va a toda máquina en su curso, y para girar, necesita bastante tiempo.
+
+988
+01:15:06,920 --> 01:15:12,340
+Lo mismo es cierto para todas las organizaciones grandes y pesadas que cambian de rumbo muy lentamente.
+
+989
+01:15:12,820 --> 01:15:14,020
+A veces excesivamente lento.
+
+990
+01:15:14,960 --> 01:15:19,640
+Puede cambiarse, pero siempre es la juventud la que hace esto.
+
+991
+01:15:21,140 --> 01:15:26,360
+Esto es bien sabido, y muchos científicos dicen que la mayoría de los descubrimientos científicos los hacen los jóvenes.
+
+992
+01:15:30,180 --> 01:15:36,340
+Einstein era un joven empleado suizo trabajando en la oficina de patentes cuando se le ocurrió la relatividad, y así sucesivamente.
+
+993
+01:15:38,240 --> 01:15:45,080
+Lo más gracioso es que podemos cambiar la ciencia, aunque lentamente, solo llegando a la juventud y dándoles conocimiento.
+
+994
+01:15:46,340 --> 01:15:48,560
+Entonces vendrán y buscarán referencias.
+
+995
+01:15:48,560 --> 01:15:57,760
+Pueden hacer los cambios necesarios, afinar todo, modelar con precisión, y nos darán nueva tecnología y nueva ciencia.
+
+996
+01:15:58,100 --> 01:16:00,940
+Dijiste que el tiempo se puede usar para extraer energía.
+
+997
+01:16:01,500 --> 01:16:01,700
+Sí.
+
+998
+01:16:02,440 --> 01:16:03,360
+Lo dije y lo digo.
+
+999
+01:16:04,900 --> 01:16:09,040
+No es complejo cuando tienes la relatividad especial.
+
+1000
+01:16:09,440 --> 01:16:15,180
+Cuando usas velocidad, conviertes cierta cantidad de tiempo en energía, energía cinética.
+
+1001
+01:16:15,180 --> 01:16:22,760
+Recuerda, necesitas aprender a pensar dentro de un modelo que usa solo una unidad básica, energía.
+
+1002
+01:16:23,200 --> 01:16:25,940
+El tiempo es energía, una función de la energía, como la masa.
+
+1003
+01:16:26,260 --> 01:16:28,160
+La masa como energía no nos sorprende.
+
+1004
+01:16:28,360 --> 01:16:32,780
+La bomba atómica apareció, la relatividad, E igual MC al cuadrado.
+
+1005
+01:16:33,200 --> 01:16:35,480
+Incluso un estudiante de humanidades sabe esto hoy.
+
+1006
+01:16:35,900 --> 01:16:37,180
+Pero en su momento fue impactante.
+
+1007
+01:16:37,880 --> 01:16:38,640
+Fue increíble.
+
+1008
+01:16:38,760 --> 01:16:43,400
+La gente decía que solo 10-12 personas en todo el mundo entendían la relatividad.
+
+1009
+01:16:43,400 --> 01:16:46,420
+Así se decía en aquel tiempo.
+
+1010
+01:16:47,300 --> 01:16:49,340
+Pero en cursos de la materia esto es normal.
+
+1011
+01:16:49,680 --> 01:16:52,700
+Si los jóvenes entienden esto, el conocimiento se difunde.
+
+1012
+01:16:53,120 --> 01:16:57,420
+Y ahora millones de personas perciben este conocimiento como autoevidente.
+
+1013
+01:16:58,980 --> 01:17:03,860
+Estamos en la etapa donde necesitamos hacer cambios de este tipo.
+
+1014
+01:17:04,880 --> 01:17:07,480
+Podemos obtener energía del tiempo.
+
+1015
+01:17:07,520 --> 01:17:10,520
+Toma un poco de tiempo, úsalo y obtén mucha energía.
+
+1016
+01:17:10,520 --> 01:17:15,840
+Podemos mejorar muchos dispositivos eléctricos y sistemas de energía.
+
+1017
+01:17:16,260 --> 01:17:22,900
+Crear un mejor modelo, eliminar errores, y entonces tendremos a nuestra disposición toda la energía del vacío.
+
+1018
+01:17:22,980 --> 01:17:24,160
+Una enorme cantidad de energía.
+
+1019
+01:17:24,300 --> 01:17:33,480
+Tendremos este enorme componente adicional que ahora ignoramos, de cada generador, acumulador, y todo el resto, el componente de Heaviside accesible para usar.
+
+1020
+01:17:34,160 --> 01:17:38,280
+Esta es una rica reserva de energía.
+
+1021
+01:17:38,280 --> 01:17:49,580
+Si podemos forzar rápidamente al liderazgo del país a aprender los términos investigación innovadora y ciencia innovadora, y percibirlos como un concepto básico, usarlos para designar
+
+1022
+01:17:49,580 --> 01:17:55,340
+programas de investigación financiados en esta dirección, y darle libertad a los jóvenes científicos.
+
+1023
+01:17:55,440 --> 01:17:59,580
+Tenemos muchos jóvenes especialistas calificados con excelente formación.
+
+1024
+01:17:59,700 --> 01:18:03,160
+Magníficos matemáticos, magníficos teóricos, magníficos experimentadores.
+
+1025
+01:18:03,500 --> 01:18:07,280
+Ahora tenemos más jóvenes científicos que nunca en la historia del país.
+
+1026
+01:18:07,280 --> 01:18:09,840
+Y usamos estos cuadros incorrectamente.
+
+1027
+01:18:10,260 --> 01:18:11,180
+Completamente incorrectamente.
+
+1028
+01:18:11,900 --> 01:18:14,760
+Presionamos a todos y los forzamos a pensar estereotipadamente.
+
+1029
+01:18:15,120 --> 01:18:21,040
+Se ven obligados a competir por dinero al estudiar en programas de posgrado, participar en programas y escribir trabajos doctorales.
+
+1030
+01:18:21,700 --> 01:18:24,200
+Hablamos de paquetes de programas financiados desde arriba.
+
+1031
+01:18:24,680 --> 01:18:26,360
+No puedes elegir tu campo de investigación.
+
+1032
+01:18:26,720 --> 01:18:27,680
+Ya está elegido por ti.
+
+1033
+01:18:28,900 --> 01:18:38,300
+Las facultades de los departamentos de ingeniería eléctrica o física en las universidades líderes no se sientan a discutir lo que querrían investigar.
+
+1034
+01:18:39,860 --> 01:18:46,660
+Consideran lo que pueden conseguir, algunos proyectos financiados, y lo que se les ordena hacer.
+
+1035
+01:18:47,120 --> 01:18:53,460
+Y luego, tal vez, queda algo para lo que querrían hacer.
+
+1036
+01:18:54,800 --> 01:18:58,180
+Lo que pasa ahora en realidad suprime la diversidad.
