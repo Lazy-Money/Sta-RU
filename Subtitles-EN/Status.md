@@ -7,7 +7,7 @@
 | 5-EN.srt | OK | 1 | OK | https://www.youtube.com/watch?v=EwVWW89JMEM |
 | 6-EN.srt | OK | 1 | OK | https://www.youtube.com/watch?v=2ylifwWtjlY |
 | 7-EN.srt | OK | 1 | OK | https://www.youtube.com/watch?v=lR3WPeITlsQ |
-| 8-EN.srt | Vacío - nadie habla en el video | - | OK | https://www.youtube.com/watch?v=qqQCNej_m3Q |
+| 8-EN.srt | Vacío | - | OK | https://www.youtube.com/watch?v=qqQCNej_m3Q |
 | 9-EN.srt | OK | 1 | OK | https://www.youtube.com/watch?v=wUVdeT9pxqs |
 | 10-EN.srt | OK | 1 | OK | https://www.youtube.com/watch?v=txTNtCPtFII |
 | 11-EN.srt | OK | 1 | OK | https://www.youtube.com/watch?v=PrrcnQz3sVk |
@@ -17,8 +17,8 @@
 | 15-EN.srt | OK | 1 | OK | https://www.youtube.com/watch?v=RdEnx6hfshQ |
 | 16-EN.srt | OK | 1 | OK | https://www.youtube.com/watch?v=ndLdQKqTbDs |
 | 17-EN.srt | OK | 1 | OK | https://www.youtube.com/watch?v=mJSEZMNRLXA |
-| 18-EN.srt | Vacío - nadie habla en el video | - | OK | https://www.youtube.com/watch?v=bVlQ2zH8i3E |
-| 19-EN.srt | Vacío - solo se oía un audiobook de fondo | - | OK | https://www.youtube.com/watch?v=wkbRbQ_r8AA |
+| 18-EN.srt | Vacío | - | OK | https://www.youtube.com/watch?v=bVlQ2zH8i3E |
+| 19-EN.srt | Vacío | - | OK | https://www.youtube.com/watch?v=wkbRbQ_r8AA |
 | 20-EN.srt | OK | 1 | OK | https://www.youtube.com/watch?v=BY1DRQHvcQ0 |
 | 21-EN.srt | OK | 1 | OK | https://www.youtube.com/watch?v=el1SkfaHmsI |
 | 22-EN.srt | OK | 1 | OK | https://www.youtube.com/watch?v=tnb8gUifKgk |
@@ -82,4 +82,4 @@
 | 94-EN.srt | retraducido | 1 | OK | https://www.youtube.com/watch?v=NphZ0BVbMkc |
 | 95-EN.srt | retraducido | 1 | OK | https://www.youtube.com/watch?v=VjODogGMrKE |
 | 96-EN.srt | heygen | +1 |  | https://www.youtube.com/watch?v=DibBNYr6R0Q |
-| 97-EN.srt | OK (HeyGen aparte) | 1 | OK | https://www.youtube.com/watch?v=OeVJNUwI7N8 |
+| 97-EN.srt | heygen | 1 | OK | https://www.youtube.com/watch?v=OeVJNUwI7N8 |
