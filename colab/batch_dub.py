@@ -71,7 +71,7 @@ AMBIENT_GAIN = 1.8
 # If the extracted ambient stem comes back quieter than this RMS, we assume
 # Demucs over-stripped (treated workshop noise / music as vocals). The dub
 # still renders, but we shout in the log so it's obvious without listening.
-AMBIENT_QUIET_RMS = 0.001
+AMBIENT_QUIET_RMS = 0.01
 
 # XTTS-v2 supported languages (ISO 639-1, except zh)
 XTTS_LANGS = {
