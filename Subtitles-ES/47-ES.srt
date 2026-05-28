@@ -1,0 +1,143 @@
+1
+00:00:00,660 --> 00:00:16,780
+Bueno, se planteó la hipótesis de que la forma del oscilograma en los drenajes de los transistores, debido a que este driver IR2113 no maneja bien su trabajo, hay alguna interferencia en la capacitancia
+
+2
+00:00:16,780 --> 00:00:20,280
+de la compuerta, y por eso el transistor produce esos picos.
+
+3
+00:00:20,860 --> 00:00:21,960
+Veamos ahora.
+
+4
+00:00:23,960 --> 00:00:28,420
+Esta es la señal en las compuertas del transistor.
+
+5
+00:00:30,180 --> 00:00:34,480
+La señal es clara, la alimentación del sistema no está encendida ahora.
+
+6
+00:00:35,580 --> 00:00:37,480
+Aquí está nuestra alimentación.
+
+7
+00:00:38,380 --> 00:00:44,040
+Ahora mismo el consumo es 0, estoy cerrando el puente entre las baterías.
+
+8
+00:00:46,620 --> 00:00:51,020
+Vemos, hay consumo, llegó la alimentación.
+
+9
+00:00:51,200 --> 00:00:54,540
+Mira la forma del oscilograma.
+
+10
+00:00:55,400 --> 00:00:59,020
+Como vemos, el oscilograma prácticamente no ha cambiado.
+
+11
+00:01:00,480 --> 00:01:08,360
+Los flancos son limpios, solo en la parte de abajo se añadió un pequeño rizado en esta zona por captación estática.
+
+12
+00:01:09,260 --> 00:01:10,360
+Ahora miraremos.
+
+13
+00:01:10,520 --> 00:01:11,780
+Disminuyendo el ciclo útil.
+
+14
+00:01:15,580 --> 00:01:33,360
+Vemos que a cualquier ciclo útil el driver mantiene claramente el flanco, y no se observa interferencia en la capacitancia de la compuerta.
+
+15
+00:01:38,010 --> 00:01:40,930
+Disminuyendo más el ciclo útil.
+
+16
+00:01:46,000 --> 00:01:51,240
+Es decir, el driver funciona excelente, no produce ninguna interferencia.
+
+17
+00:01:52,200 --> 00:01:55,120
+El sistema está encendido, todo normal.
+
+18
+00:01:55,260 --> 00:02:06,840
+Ahora cambio el canal azul al drenaje del transistor, donde está el pico estático.
+
+19
+00:02:09,060 --> 00:02:16,520
+Quito la traza de amplitud y miro.
+
+20
+00:02:17,840 --> 00:02:28,720
+El canal amarillo es nuestro control de compuerta de este transistor, el azul es el pico en el drenaje.
+
+21
+00:02:30,040 --> 00:02:32,240
+Agregando ciclo útil.
+
+22
+00:02:34,020 --> 00:02:35,420
+El ciclo útil avanza.
+
+23
+00:02:38,200 --> 00:02:40,520
+Buen flanco de señal.
+
+24
+00:02:49,310 --> 00:02:53,150
+Ahora lo llevaremos al modo óptimo de operación.
+
+25
+00:03:00,480 --> 00:03:03,160
+Aquí está, el modo óptimo.
+
+26
+00:03:04,260 --> 00:03:09,200
+Se ajusta cuando nuestro ciclo útil es 41%.
+
+27
+00:03:09,200 --> 00:03:19,400
+Vemos, aquí está nuestro control, y aquí nuestra señal.
+
+28
+00:03:20,620 --> 00:03:23,780
+No hay interferencia en la compuerta.
+
+29
+00:03:24,680 --> 00:03:31,060
+Este proceso ocurre puramente en este núcleo con entrehierros.
+
+30
+00:03:34,080 --> 00:03:40,020
+Para los interesados, aquí está el esquema según el cual se conecta este driver.
+
+31
+00:03:43,220 --> 00:03:45,000
+Aquí está su esquema de conexión.
+
+32
+00:03:46,500 --> 00:03:50,640
+Aquí marqué específicamente qué más se puede hacer con este driver.
+
+33
+00:03:52,700 --> 00:04:01,500
+Momento muy interesante: si alimentas 5 voltios al pin nueve a través de un regulador, este driver será compatible con lógica de 5 voltios.
+
+34
+00:04:05,830 --> 00:04:15,170
+Y aquí, si alimentamos potencial alto al pin 11, ambos canales se deshabilitarán.
+
+35
+00:04:15,790 --> 00:04:24,550
+En este driver así puedes hacer protección del sistema.
+
+36
+00:04:24,890 --> 00:04:26,190
+Una vez más el esquema.

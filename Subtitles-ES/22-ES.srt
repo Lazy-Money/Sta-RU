@@ -1,0 +1,1063 @@
+1
+00:01:15,670 --> 00:01:20,490
+Lo más interesante es esta puesta a tierra.
+
+2
+00:01:21,270 --> 00:01:26,570
+El auto pasa y va justo aquí.
+
+3
+00:01:28,610 --> 00:01:30,070
+Cable de 0,75.
+
+4
+00:01:32,270 --> 00:01:35,650
+Nuestra bobina de gradiente es de 38 metros.
+
+5
+00:01:36,070 --> 00:01:37,930
+El inductor quedó en tres capas.
+
+6
+00:01:39,610 --> 00:01:43,590
+Inductor 19 metros, Tesla 19 metros.
+
+7
+00:01:44,510 --> 00:01:47,970
+Grosor del cable 2,5 milímetros.
+
+8
+00:01:48,150 --> 00:01:49,350
+No milímetros cuadrados, solo milímetros.
+
+9
+00:01:50,330 --> 00:01:55,770
+Si fueran cuadrados, lamentablemente, habría tenido que poner un ladrillo aquí.
+
+10
+00:01:56,590 --> 00:01:59,930
+Porque durante el funcionamiento se hundía de este lado.
+
+11
+00:02:01,270 --> 00:02:04,370
+Eso no es muy bueno.
+
+12
+00:02:05,430 --> 00:02:08,230
+Mi antena es de cable de aluminio.
+
+13
+00:02:08,970 --> 00:02:11,330
+Todo esto es cobre, y esto es aluminio.
+
+14
+00:02:17,720 --> 00:02:19,800
+La frecuencia salió así.
+
+15
+00:02:20,340 --> 00:02:22,300
+La vi en el analizador de espectro.
+
+16
+00:02:28,960 --> 00:02:32,980
+No tengo ningún relé, todo se conmuta electrónicamente.
+
+17
+00:02:36,020 --> 00:02:37,280
+El esquema es así.
+
+18
+00:02:37,520 --> 00:02:41,800
+Lo que está dibujado son solo los elementos de soporte.
+
+19
+00:03:00,140 --> 00:03:03,300
+12 V, 8,5 A.
+
+20
+00:03:04,800 --> 00:03:05,400
+Diodos.
+
+21
+00:03:05,920 --> 00:03:07,120
+Buenos diodos.
+
+22
+00:03:07,340 --> 00:03:10,480
+Tomé los que se quemaban sin parar.
+
+23
+00:03:10,700 --> 00:03:12,920
+Me volvían loco, se quemaban a cada rato.
+
+24
+00:03:13,600 --> 00:03:14,620
+Cambié muchísimos.
+
+25
+00:03:14,720 --> 00:03:17,460
+Puse 150 EBU 04.
+
+26
+00:03:21,660 --> 00:03:24,480
+En el transformador, en el push-pull.
+
+27
+00:03:25,300 --> 00:03:30,580
+Tengo IRF3205 con la letra Z.
+
+28
+00:03:32,740 --> 00:03:36,740
+Y en el Tesla tengo K2611.
+
+29
+00:03:38,380 --> 00:03:40,180
+Hay un diodo en serie con él.
+
+30
+00:03:41,120 --> 00:03:43,520
+Este es IR308.
+
+31
+00:03:44,500 --> 00:03:45,760
+Este es el rectificador para el Tesla.
+
+32
+00:03:45,840 --> 00:03:47,040
+Aquí tengo un bobinado.
+
+33
+00:03:47,180 --> 00:03:49,020
+Y la alimentación para el Tesla va aquí.
+
+34
+00:03:49,120 --> 00:03:49,680
+50 voltios.
+
+35
+00:03:49,780 --> 00:03:52,140
+Veo que es algo bajo.
+
+36
+00:03:52,320 --> 00:03:56,280
+Si subes el voltaje, creo que la potencia subirá.
+
+37
+00:03:57,160 --> 00:04:01,680
+Con 4 voltios tenía 1,5-2 kilovatios.
+
+38
+00:04:02,480 --> 00:04:04,820
+Aquí puse 50 voltios.
+
+39
+00:04:06,240 --> 00:04:20,890
+Subió a 6,2 kilovatios.
+
+40
+00:04:22,090 --> 00:04:23,910
+La bobina se calentó.
+
+41
+00:04:24,510 --> 00:04:25,870
+Y cayó.
+
+42
+00:04:26,030 --> 00:04:26,850
+Eso es muy malo.
+
+43
+00:04:27,850 --> 00:04:30,090
+Tenemos un capacitor resonante.
+
+44
+00:04:30,530 --> 00:04:32,150
+Bueno, no es un capacitor resonante.
+
+45
+00:04:32,690 --> 00:04:34,670
+Ahí los capacitores resonantes están seleccionados.
+
+46
+00:04:38,290 --> 00:04:44,630
+Es más para que durante la descarga no regrese aquí y reviente el transistor.
+
+47
+00:04:45,470 --> 00:04:49,550
+En general, en la bobina de captura del gradiente tengo este capacitor.
+
+48
+00:04:49,710 --> 00:04:53,390
+68 nF a un kilovoltio.
+
+49
+00:04:53,610 --> 00:05:01,830
+Y aquí tenemos 0,1, 0,1, 0,1, 0,22, 0,22, y suma 440 nF.
+
+50
+00:05:03,150 --> 00:05:08,270
+Estos dos capacitores de arranque para filtrado, 10 µF a 450 V cada uno.
+
+51
+00:05:12,290 --> 00:05:17,430
+Total 20 µF para los capacitores de arranque.
+
+52
+00:05:19,010 --> 00:05:21,430
+La fuente es una común, de las que se compran.
+
+53
+00:05:23,050 --> 00:05:23,530
+Diodo.
+
+54
+00:05:24,170 --> 00:05:25,810
+La fuente común.
+
+55
+00:05:26,410 --> 00:05:28,030
+Va aquí a los push-pulls.
+
+56
+00:05:28,150 --> 00:05:33,030
+Va al controlador a través de un diodo de 40 amperios.
+
+57
+00:05:33,450 --> 00:05:35,630
+Lo saqué de una fuente de computadora.
+
+58
+00:05:36,250 --> 00:05:36,970
+¿Para qué?
+
+59
+00:05:37,090 --> 00:05:43,390
+Para aislar la fuente de la alimentación por batería.
+
+60
+00:05:43,560 --> 00:05:44,330
+Cuando está funcionando.
+
+61
+00:05:45,030 --> 00:05:51,830
+Creo que también voy a agregar una resistencia para que el sistema arranque, para que esta misma batería también pueda cargarse.
+
+62
+00:05:53,610 --> 00:05:54,250
+Eso es todo.
+
+63
+00:05:55,770 --> 00:06:00,990
+Y tomé los oscilogramas, voy a armar un documento PDF.
+
+64
+00:06:02,190 --> 00:06:04,650
+Muy interesantes y salieron con buenas explicaciones.
+
+65
+00:06:05,730 --> 00:06:07,370
+Entonces pasemos al controlador.
+
+66
+00:06:07,410 --> 00:06:13,030
+Este ventilador es de un procesador de computadora.
+
+67
+00:06:14,270 --> 00:06:16,150
+Veamos el controlador.
+
+68
+00:06:16,630 --> 00:06:18,030
+¿Qué tenemos en el controlador?
+
+69
+00:06:19,210 --> 00:06:19,430
+Ahí está.
+
+70
+00:06:20,510 --> 00:06:21,730
+El oscilador maestro.
+
+71
+00:06:23,490 --> 00:06:25,090
+Voy a ir señalando las cosas así.
+
+72
+00:06:26,730 --> 00:06:32,350
+IR2153, capacitor y resistencia trimmer.
+
+73
+00:06:33,270 --> 00:06:36,050
+Esta es la frecuencia del oscilador maestro.
+
+74
+00:06:37,370 --> 00:06:41,190
+Luego todo esto pasa por una cadena de retardo.
+
+75
+00:06:41,630 --> 00:06:42,510
+Aquí tenemos dos.
+
+76
+00:06:43,010 --> 00:06:45,210
+Luego IR2110.
+
+77
+00:06:45,770 --> 00:06:47,750
+Eso alcanza para 15 kHz.
+
+78
+00:06:48,370 --> 00:06:49,910
+Y va a estos transistores.
+
+79
+00:06:51,590 --> 00:06:55,770
+Podrías haber omitido todo esto, pero todo tiene que estar ahí.
+
+80
+00:06:56,830 --> 00:06:57,450
+Driver.
+
+81
+00:06:58,670 --> 00:07:03,030
+Y tenemos 74HC14, HC00.
+
+82
+00:07:04,190 --> 00:07:10,750
+En el HC14 están construidos el desfasador y el retardo de fase.
+
+83
+00:07:11,390 --> 00:07:19,310
+Abajo está construido, cómo decirlo, según el esquema.
+
+84
+00:07:19,390 --> 00:07:20,970
+Saquemos el esquema ahora.
+
+85
+00:07:23,650 --> 00:07:25,350
+Lo pegué aquí.
+
+86
+00:07:34,150 --> 00:07:35,450
+Vamos por el esquema.
+
+87
+00:07:35,690 --> 00:07:36,550
+Aquí está el esquema.
+
+88
+00:07:36,830 --> 00:07:40,350
+Si alguien no lo tiene, así quedó el esquema.
+
+89
+00:07:40,490 --> 00:07:42,230
+Lo único es que me confundí este diodo.
+
+90
+00:07:42,430 --> 00:07:43,590
+Lo puse al revés.
+
+91
+00:07:44,110 --> 00:07:44,630
+Lo dibujé.
+
+92
+00:07:45,390 --> 00:07:45,690
+Así.
+
+93
+00:07:47,950 --> 00:07:48,950
+Echemos un vistazo.
+
+94
+00:07:49,370 --> 00:07:49,770
+Aquí está.
+
+95
+00:07:51,350 --> 00:07:52,190
+IR2153.
+
+96
+00:07:52,470 --> 00:07:54,130
+Las cadenas.
+
+97
+00:07:55,290 --> 00:07:56,170
+Tiempo de retardo.
+
+98
+00:07:56,530 --> 00:07:58,410
+Luego IR2110.
+
+99
+00:07:58,910 --> 00:08:00,310
+Todo esto se amplifica.
+
+100
+00:08:00,430 --> 00:08:01,770
+Va al transformador.
+
+101
+00:08:02,670 --> 00:08:04,750
+Voy a rebobinar el transformador y la bobina.
+
+102
+00:08:05,270 --> 00:08:06,390
+No tuve suficiente potencia.
+
+103
+00:08:07,550 --> 00:08:09,330
+Todo esto se amplifica.
+
+104
+00:08:09,890 --> 00:08:10,830
+8 vueltas cada uno.
+
+105
+00:08:10,890 --> 00:08:12,170
+33 vueltas para el Tesla.
+
+106
+00:08:13,170 --> 00:08:14,990
+Esta resonancia está en 4 vueltas.
+
+107
+00:08:16,770 --> 00:08:18,370
+Este capacitor.
+
+108
+00:08:18,450 --> 00:08:19,330
+340 nF.
+
+109
+00:08:19,570 --> 00:08:23,530
+Esto es un montón de capacitores seleccionados.
+
+110
+00:08:23,850 --> 00:08:29,390
+También lo tenemos para que puedas disparar en cada semiciclo.
+
+111
+00:08:30,010 --> 00:08:39,370
+Como el chip tiene una propiedad de retardo, retardamos la señal en el chip mismo.
+
+112
+00:08:39,630 --> 00:08:41,870
+Retardamos aquí y llega con un atraso.
+
+113
+00:08:41,890 --> 00:08:42,610
+¿Para qué necesitamos esto?
+
+114
+00:08:43,350 --> 00:08:51,010
+Para que el Tesla... el Tesla pudiera controlarse por carga y pudiera cargar la bobina de gradiente.
+
+115
+00:08:52,530 --> 00:08:56,390
+Aquí tenemos un divisor de 10 kΩ de cada brazo.
+
+116
+00:08:57,170 --> 00:09:01,590
+Estos 12 V de amplitud se dividen a la mitad y llegan a la lógica.
+
+117
+00:09:02,050 --> 00:09:03,430
+Puedes tomarlo directo o invertido.
+
+118
+00:09:03,710 --> 00:09:07,590
+Quien sepa de electrónica entenderá de lo que hablo.
+
+119
+00:09:08,450 --> 00:09:10,250
+Luego aquí tenemos puentes.
+
+120
+00:09:10,290 --> 00:09:12,490
+Tres posiciones de puente.
+
+121
+00:09:14,150 --> 00:09:17,830
+Puedes tomar de aquí el estado directo o invertido.
+
+122
+00:09:18,490 --> 00:09:20,410
+Esto hace la longitud del semiciclo.
+
+123
+00:09:21,250 --> 00:09:22,950
+Luego una resistencia de 2 kΩ.
+
+124
+00:09:23,350 --> 00:09:26,410
+Una va a tierra, 10 kΩ y 4,7 nF.
+
+125
+00:09:27,210 --> 00:09:29,310
+Este es el retardo de tiempo.
+
+126
+00:09:31,190 --> 00:09:32,690
+¿Y para qué este 10 kΩ?
+
+127
+00:09:33,130 --> 00:09:40,010
+Aquí, cómo decirlo, en el chip Schmitt trigger la salida no es del todo simétrica, ocurre distorsión.
+
+128
+00:09:42,270 --> 00:09:44,650
+Tuve que seleccionar esta resistencia.
+
+129
+00:09:49,220 --> 00:09:52,520
+Luego va a algo como un pulsador de nanosegundos.
+
+130
+00:09:52,740 --> 00:09:53,940
+Bueno, no un pulsador de nanosegundos.
+
+131
+00:09:54,540 --> 00:09:56,880
+Este chip hace un corredor.
+
+132
+00:09:57,960 --> 00:10:00,020
+Este tipo de temporización.
+
+133
+00:10:00,840 --> 00:10:06,800
+Cuando aquí en la salida cuelga constantemente un nivel alto en el sexto pin del chip.
+
+134
+00:10:07,660 --> 00:10:10,580
+Y cae sobre este.
+
+135
+00:10:11,020 --> 00:10:11,900
+Primero, segundo.
+
+136
+00:10:12,200 --> 00:10:15,360
+Luego invertido, llega con retardo.
+
+137
+00:10:16,360 --> 00:10:19,480
+Y aquí en el cuarto pin llega la misma señal directa.
+
+138
+00:10:20,580 --> 00:10:38,520
+Y para formar un corredor en el cual el tiempo de apertura, este tiempo de apertura cae en el elemento lógico de control, en el Schmitt trigger.
+
+139
+00:10:38,840 --> 00:10:41,560
+En él está construido un generador.
+
+140
+00:10:41,640 --> 00:10:48,960
+Lo seleccioné para que regule desde 1,9 MHz hasta 1,3 MHz.
+
+141
+00:10:49,340 --> 00:10:52,160
+Hay 1 nF en el pin once.
+
+142
+00:10:52,900 --> 00:10:55,320
+En el pin diez un divisor — 100 Ω.
+
+143
+00:10:55,460 --> 00:10:56,800
+Y una resistencia de 200 Ω.
+
+144
+00:10:57,840 --> 00:11:00,580
+Entonces, así funciona este dispositivo.
+
+145
+00:11:00,720 --> 00:11:03,960
+Un uno cuelga constantemente ahí, nivel alto.
+
+146
+00:11:05,000 --> 00:11:07,500
+Y aquí tenemos un cero constantemente.
+
+147
+00:11:07,560 --> 00:11:09,400
+Un cero cuelga constantemente en el pin diez.
+
+148
+00:11:10,160 --> 00:11:16,000
+En el momento en que se abre el corredor, aquí aparece un cero en el sexto pin.
+
+149
+00:11:17,140 --> 00:11:20,200
+Y el diodo queda bloqueado.
+
+150
+00:11:20,320 --> 00:11:23,100
+Y el chip puede generar una señal.
+
+151
+00:11:23,320 --> 00:11:25,100
+Ahí lanza una ráfaga.
+
+152
+00:11:25,460 --> 00:11:27,480
+De unos siete pulsos.
+
+153
+00:11:31,860 --> 00:11:35,700
+Cuántos pulsos habrá, este chip lo regula.
+
+154
+00:11:35,900 --> 00:11:38,040
+22 nF y 1 kΩ.
+
+155
+00:11:39,440 --> 00:11:41,700
+Luego, aquí también tenemos como un 1 ns.
+
+156
+00:11:41,820 --> 00:11:42,860
+¿Para qué?
+
+157
+00:11:44,380 --> 00:11:46,700
+Como tenemos compuertas de transistor.
+
+158
+00:11:47,160 --> 00:11:50,180
+La capacitancia de compuerta puede ser ligeramente diferente.
+
+159
+00:11:50,600 --> 00:11:53,420
+Por eso puede haber problemas.
+
+160
+00:11:54,840 --> 00:11:57,620
+Para eso puse otro pulsador de nanosegundos.
+
+161
+00:11:57,900 --> 00:12:06,480
+Este pulso, cuando llega aquí, no tiene exactamente 50% de ciclo útil.
+
+162
+00:12:06,740 --> 00:12:12,960
+Resulta que tenemos que hacer, bueno, si cuelga un cero, aquí cuelga un uno.
+
+163
+00:12:14,440 --> 00:12:17,080
+Y por un corto tiempo aparece un cero.
+
+164
+00:12:17,260 --> 00:12:24,600
+La mayor parte del tiempo resulta que el nivel cero aparece como un uno.
+
+165
+00:12:25,400 --> 00:12:27,200
+Y, en consecuencia, puse un driver.
+
+166
+00:12:28,100 --> 00:12:29,780
+SCS-37, 321.
+
+167
+00:12:30,140 --> 00:12:32,660
+También hay un 322, es sin inversión.
+
+168
+00:12:33,200 --> 00:12:35,100
+Y el 321 es con inversión.
+
+169
+00:12:35,320 --> 00:12:39,820
+Entra un cero aquí, entonces aquí tenemos un uno.
+
+170
+00:12:39,980 --> 00:12:41,540
+Bueno, y de la misma forma al revés.
+
+171
+00:12:42,520 --> 00:12:45,920
+Lo necesitamos como, aquí está, diodo, resistencia.
+
+172
+00:12:47,120 --> 00:12:50,780
+El diodo, la resistencia — ahí están para mí.
+
+173
+00:12:51,580 --> 00:12:53,780
+Aquí están, estos.
+
+174
+00:12:54,720 --> 00:12:55,800
+Ahí los tengo.
+
+175
+00:12:56,940 --> 00:13:03,600
+El transistor tiene que cerrarse muy rápido, para que haya un corte agudo en el Tesla.
+
+176
+00:13:05,440 --> 00:13:05,640
+Ahí está.
+
+177
+00:13:06,360 --> 00:13:08,120
+Y el diodo, bueno, aquí me confundí el diodo.
+
+178
+00:13:08,280 --> 00:13:10,360
+El diodo en realidad, de hecho, está al revés.
+
+179
+00:13:12,320 --> 00:13:15,080
+¿Para qué son estas resistencias y este capacitor?
+
+180
+00:13:15,520 --> 00:13:20,320
+Cuando estaba viendo qué puede hacer este transistor al límite, leí.
+
+181
+00:13:21,080 --> 00:13:34,640
+RDS-ON es un parámetro, puedes, cuando el transistor está completamente abierto, tienes que calcular qué resistencia debe haber para que el transistor no se reviente, no se queme.
+
+182
+00:13:35,080 --> 00:13:36,320
+Por eso lo puse.
+
+183
+00:13:36,780 --> 00:13:44,240
+Este 2611 tiene 1,1 Ω de RDS, así que puse 1,2 Ω.
+
+184
+00:13:44,670 --> 00:13:45,203
+Ahí está.
+
+185
+00:13:46,380 --> 00:13:54,180
+Aquí tengo lugar para 3,3 µF, y lo que tengo aquí es 1,5 µF en total.
+
+186
+00:13:55,740 --> 00:13:58,540
+Aquí está el rectificador, el capacitor.
+
+187
+00:13:59,000 --> 00:14:02,040
+El propio capacitor hecho de cuatro diodos.
+
+188
+00:14:02,040 --> 00:14:05,940
+No puse un choque aquí.
+
+189
+00:14:06,640 --> 00:14:10,760
+Pero en la fuente, un choque de 100 µH — ese es este redondo.
+
+190
+00:14:11,580 --> 00:14:12,900
+Donde dice 101.
+
+191
+00:14:14,251 --> 00:14:14,958
+Ahí está.
+
+192
+00:14:17,860 --> 00:14:19,860
+Aquí están los tipos de componentes.
+
+193
+00:14:20,160 --> 00:14:22,860
+Aquí hay un chip, y aquí componentes — aquí hay un chip.
+
+194
+00:14:24,400 --> 00:14:29,360
+Bueno, el resto es lo que está dibujado, cómo bobinarlo.
+
+195
+00:14:31,420 --> 00:14:33,960
+Bueno, en realidad, no todo está completamente dibujado aquí.
+
+196
+00:14:34,240 --> 00:14:38,480
+Ajusté un poco el esquema, pero la esencia es así.
+
+197
+00:14:40,853 --> 00:14:41,360
+Ahí está.
+
+198
+00:14:42,920 --> 00:14:50,980
+Ah, por cierto, aquí anoté cómo bobiné la bobina de gradiente y la bobina del Tesla.
+
+199
+00:14:51,680 --> 00:14:53,220
+De todos modos, no te preocupes por eso.
+
+200
+00:14:53,560 --> 00:15:01,100
+Todas las vueltas, tomas este tubo hacia ti, así, y bobinas hacia adelante a la derecha.
+
+201
+00:15:02,140 --> 00:15:07,440
+Excepto, hay una capa debajo, así, dos de estas capas.
+
+202
+00:15:10,700 --> 00:15:13,760
+Esta y esta capa bobinan hacia atrás.
+
+203
+00:15:13,860 --> 00:15:15,700
+Aquí tengo flechas dibujadas.
+
+204
+00:15:16,520 --> 00:15:19,080
+Entonces, lo tomas, así está bobinada la bobina.
+
+205
+00:15:20,280 --> 00:15:24,660
+Y aquí tengo dibujada la tierra, y el extremo caliente al otro lado.
+
+206
+00:15:25,400 --> 00:15:31,160
+Básicamente, lo tomas, perforas un agujero en el tubo, lo pasas, perforas un agujero y bobinas.
+
+207
+00:15:31,420 --> 00:15:32,160
+Ah, así.
+
+208
+00:15:33,080 --> 00:15:38,280
+Bobinas, bobinas, bobinas, lo bobinas hasta el final.
+
+209
+00:15:41,200 --> 00:15:42,860
+Bobinados 19 metros.
+
+210
+00:15:43,340 --> 00:15:45,240
+Aquí tengo esta curva.
+
+211
+00:15:45,820 --> 00:15:45,940
+Ahí está.
+
+212
+00:15:46,420 --> 00:15:49,080
+Y empiezas a bobinar al revés.
+
+213
+00:15:49,180 --> 00:15:53,260
+Bobinas así, bobinas, bobinas, llegas a la mitad.
+
+214
+00:15:55,080 --> 00:15:56,960
+Luego bobinas, bobinas, bobinas.
+
+215
+00:15:57,840 --> 00:15:58,780
+Lo envolví con cinta aislante.
+
+216
+00:15:58,880 --> 00:15:59,160
+Siguiente.
+
+217
+00:15:59,920 --> 00:16:00,800
+Otra capa.
+
+218
+00:16:01,660 --> 00:16:02,000
+Así.
+
+219
+00:16:02,600 --> 00:16:02,980
+Y aquí.
+
+220
+00:16:04,140 --> 00:16:08,080
+Perforas un agujero, y ahí tienes dos extremos saliendo por aquí.
+
+221
+00:16:09,000 --> 00:16:12,120
+El extremo inferior va a tierra, la primera capa.
+
+222
+00:16:12,360 --> 00:16:17,660
+La segunda capa va a... Es el capacitor resonante caliente.
+
+223
+00:16:17,800 --> 00:16:18,760
+Bueno, no resonante.
+
+224
+00:16:18,800 --> 00:16:19,840
+No es resonante.
+
+225
+00:16:19,940 --> 00:16:20,780
+No es resonancia.
+
+226
+00:16:20,860 --> 00:16:22,020
+No es para eso.
+
+227
+00:16:24,460 --> 00:16:28,200
+Luego viene un nuevo amplificador y dos capacitores.
+
+228
+00:16:28,840 --> 00:16:30,040
+Cómo se bobina el inductor.
+
+229
+00:16:31,180 --> 00:16:33,020
+Aquí tenemos tres capas.
+
+230
+00:16:34,420 --> 00:16:36,000
+Aquí está, el extremo caliente.
+
+231
+00:16:36,120 --> 00:16:38,660
+Ah, extremo frío, que va a tierra.
+
+232
+00:16:39,220 --> 00:16:40,380
+Ahí, soldado.
+
+233
+00:16:40,580 --> 00:16:41,340
+Va a tierra.
+
+234
+00:16:42,920 --> 00:16:46,320
+Bobinas así.
+
+235
+00:16:47,700 --> 00:16:48,780
+Llegas hasta aquí.
+
+236
+00:16:50,380 --> 00:16:51,780
+Luego bobinas así.
+
+237
+00:16:53,280 --> 00:16:55,320
+Esta es la segunda capa y la tercera capa.
+
+238
+00:16:55,560 --> 00:16:56,560
+Bobinas así.
+
+239
+00:16:58,120 --> 00:16:59,200
+Y esta va.
+
+240
+00:17:00,620 --> 00:17:07,980
+Bueno, este capacitor de diseño plegable aterriza en 4 vueltas.
+
+241
+00:17:08,440 --> 00:17:09,240
+Aterriza justo aquí.
+
+242
+00:17:09,860 --> 00:17:11,800
+El otro extremo a tierra.
+
+243
+00:17:13,600 --> 00:17:14,560
+Aquí está la barra.
+
+244
+00:17:14,700 --> 00:17:15,840
+Tengo dos barras gruesas.
+
+245
+00:17:16,380 --> 00:17:19,760
+Y este extremo del transformador también va a tierra.
+
+246
+00:17:21,460 --> 00:17:23,440
+Ahí obtenemos esta resonancia.
+
+247
+00:17:25,140 --> 00:17:30,360
+Por supuesto, no pude sacar toda la potencia que hay en este circuito, para nada.
+
+248
+00:17:30,660 --> 00:17:35,560
+Bueno, alrededor de 20-25 por ciento logré extraer.
+
+249
+00:17:36,860 --> 00:17:38,700
+Me refiero, en autosustentado.
+
+250
+00:17:38,980 --> 00:17:40,740
+Buscando tomar, buscando ganancia.
+
+251
+00:17:41,460 --> 00:17:42,560
+Eso es lo que quiero decir.
+
+252
+00:17:43,800 --> 00:17:44,020
+Ahí está.
+
+253
+00:17:44,540 --> 00:17:50,520
+Aquí salió, no 5 vueltas, más en esta bobina.
+
+254
+00:17:52,580 --> 00:17:53,380
+Aquí está.
+
+255
+00:17:54,640 --> 00:17:57,180
+Desde el Tesla va así aquí adentro.
+
+256
+00:17:58,440 --> 00:17:59,500
+Vueltas en sentido contrario.
+
+257
+00:18:00,540 --> 00:18:04,560
+Tuve que desbobinar, rebobinar, más cerca, más lejos, y moverlo de un lado a otro.
+
+258
+00:18:06,100 --> 00:18:06,180
+Ahí está.
+
+259
+00:18:06,440 --> 00:18:07,760
+Y se fue a la antena.
+
+260
+00:18:07,880 --> 00:18:09,200
+Mi antena es de aluminio.
+
+261
+00:18:10,840 --> 00:18:13,640
+Bueno, eso es en pocas palabras, lo que pude contar.
+
+262
+00:18:15,380 --> 00:18:18,600
+Y aquí en la toma tenemos CC.
+
+263
+00:18:19,460 --> 00:18:19,960
+Sí, así.
+
+264
+00:18:22,060 --> 00:18:26,540
+Esto al final la batería toca desde la batería.
+
+265
+00:18:27,700 --> 00:18:28,980
+La carga se conecta ahí.
+
+266
+00:18:29,300 --> 00:18:30,680
+Bueno, creo que está todo claro.

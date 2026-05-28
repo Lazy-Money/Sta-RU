@@ -1,0 +1,371 @@
+1
+00:00:01,230 --> 00:00:16,690
+Entonces, en este experimento tenemos la misma bobina que se mostró en el primer video, solo que ahora la hemos modificado un poco, rebobinado el inductor y agregado un par de cosas.
+
+2
+00:00:18,870 --> 00:00:33,550
+Tenemos un miliamperímetro, pero en este caso sus lecturas no serán correctas, solo lo usaremos para indicar la corriente por la escala de divisiones.
+
+3
+00:00:34,490 --> 00:00:50,790
+Para que este miliamperímetro de corriente continua responda a la corriente alterna, con este diodo rápido de aquí recortaremos un semiciclo y dirigiremos la corriente en una dirección.
+
+4
+00:00:53,210 --> 00:00:59,610
+También usamos un generador de señales digital y un osciloscopio digital.
+
+5
+00:01:00,470 --> 00:01:08,370
+Aquí vemos que el generador de señales actualmente entrega medio voltio, amplitud de pico a pico.
+
+6
+00:01:08,770 --> 00:01:16,570
+Sale por estos extremos de las sondas, y va al inductor de la bobina.
+
+7
+00:01:17,110 --> 00:01:33,130
+A la salida vemos una amplitud de alrededor de 440-400 mV, es decir, prácticamente lo mismo.
+
+8
+00:01:34,930 --> 00:01:41,550
+Confirmamos que este tipo de bobina no es un transformador reductor.
+
+9
+00:01:43,610 --> 00:01:48,990
+Aquí el inductor es la mitad de la longitud de alambre de lo que está enrollado aquí.
+
+10
+00:01:49,670 --> 00:01:57,210
+Entonces resulta que, además, aquí debería tener, por consiguiente, menos vueltas aquí, más en la bobina primaria.
+
+11
+00:01:57,370 --> 00:02:02,270
+En teoría deberíamos obtener un transformador elevador, pero eso no sucede.
+
+12
+00:02:04,270 --> 00:02:05,250
+Sigamos mirando.
+
+13
+00:02:06,310 --> 00:02:18,990
+Medimos la corriente en divisiones usando nuestro miliamperímetro, al que ahora el generador alimenta directamente.
+
+14
+00:02:19,190 --> 00:02:35,290
+Para esto desconectamos la sonda del generador y le enganchamos la pinza, que irá al amperímetro.
+
+15
+00:02:38,670 --> 00:02:40,070
+Enganchado.
+
+16
+00:02:40,070 --> 00:02:43,210
+Fijamos las lecturas.
+
+17
+00:02:46,230 --> 00:02:50,230
+Ahora mismo tenemos 14 divisiones,
+
+18
+00:02:53,710 --> 00:03:04,550
+por consiguiente, 14 divisiones de corriente a medio voltio de amplitud.
+
+19
+00:03:07,930 --> 00:03:13,890
+Devolvemos el generador de señales de vuelta al inductor.
+
+20
+00:03:15,170 --> 00:03:16,370
+Enganchándolo.
+
+21
+00:03:30,050 --> 00:03:31,130
+Enganchado.
+
+22
+00:03:31,250 --> 00:03:34,130
+Ahí, vemos que la amplitud de salida volvió.
+
+23
+00:03:34,890 --> 00:03:44,570
+Tomamos la amplitud del banco de capacitores que está conectado a través del cursor a la salida de la bobina secundaria.
+
+24
+00:03:45,730 --> 00:03:54,510
+Ahora movemos nuestro miliamperímetro a la salida en modo de cortocircuito.
+
+25
+00:03:54,690 --> 00:04:00,610
+Enganchamos una sonda, enganchamos la otra.
+
+26
+00:04:02,830 --> 00:04:15,350
+Y vemos que las lecturas de corriente coinciden con 23,5, un poquito más que la división.
+
+27
+00:04:17,390 --> 00:04:19,370
+¿Por qué pasa esto?
+
+28
+00:04:20,390 --> 00:04:22,470
+¿Qué clase de ajuste es este?
+
+29
+00:04:23,070 --> 00:04:28,070
+¿Por qué la bobina entrega más de lo que se le envía?
+
+30
+00:04:29,230 --> 00:04:38,510
+Repito, estamos tomando lecturas usando una onda senoidal, así que no hay debate sobre si hay señales con flancos abruptos aquí.
+
+31
+00:04:39,510 --> 00:04:41,670
+Por supuesto también podrías hacerlo con esto.
+
+32
+00:04:41,750 --> 00:04:44,970
+Cambiemos a una onda cuadrada, por ejemplo.
+
+33
+00:04:46,130 --> 00:04:58,010
+Vemos que la corriente subió aún más, de lo cual entenderemos que esta bobina será excitada por una señal de flancos abruptos.
+
+34
+00:04:59,030 --> 00:05:00,930
+Volviendo a senoidal.
+
+35
+00:05:03,910 --> 00:05:19,670
+Entonces, ¿qué es lo que hicimos aquí que hizo que la corriente de salida en modo de cortocircuito superara la corriente entregada por el generador, mientras que el voltaje de salida prácticamente coincide con el voltaje entregado por el generador?
+
+36
+00:05:23,410 --> 00:05:24,530
+La respuesta es esta.
+
+37
+00:05:24,670 --> 00:05:44,710
+Sincronizamos esta bobina nuestra, mediante proporciones geométricas, secciones de alambre, longitudes de alambre, con las vibraciones naturales que existen en nuestro espacio.
+
+38
+00:05:45,670 --> 00:05:47,570
+A esta frecuencia.
+
+39
+00:05:48,850 --> 00:05:57,110
+No tienes que memorizar esta frecuencia, para cada región será individual, y específicamente para cada bobina.
+
+40
+00:05:58,230 --> 00:06:04,310
+Para eso, estas frecuencias se buscan y se ajustan específicamente, y se construyen bobinas para ellas.
+
+41
+00:06:05,670 --> 00:06:08,130
+Ahora les mostraremos lo que está pasando.
+
+42
+00:06:08,270 --> 00:06:10,770
+Esta es la señal portadora a esta frecuencia.
+
+43
+00:06:12,090 --> 00:06:15,710
+Alejamos la traza por división.
+
+44
+00:06:16,370 --> 00:06:19,610
+Justo aquí dice "tiempo" para nosotros.
+
+45
+00:06:21,470 --> 00:06:23,050
+Comprimiendo la traza.
+
+46
+00:06:24,410 --> 00:06:28,090
+Vemos aparecer un componente de baja frecuencia en nuestro espectro.
+
+47
+00:06:28,090 --> 00:06:30,150
+Siguiente.
+
+48
+00:06:32,810 --> 00:06:38,010
+Aquí podemos fijar la modulación de amplitud.
+
+49
+00:06:38,750 --> 00:06:55,850
+Y esto significa que esta bobina se está sincronizando con una frecuencia externa, que modula en amplitud sus oscilaciones iniciadas por nuestro generador de señales.
+
+50
+00:06:55,890 --> 00:06:59,450
+Podemos mirar más de cerca lo que es esto.
+
+51
+00:07:04,580 --> 00:07:08,360
+Este es este tipo de onda viajera.
+
+52
+00:07:09,260 --> 00:07:11,040
+Esta es la primera sincronización.
+
+53
+00:07:12,940 --> 00:07:15,060
+Luego alejamos la traza aún más.
+
+54
+00:07:17,280 --> 00:07:20,360
+Aquí tenemos una traza de medio segundo por división.
+
+55
+00:07:25,970 --> 00:07:27,950
+Aquí, medio segundo por división.
+
+56
+00:07:31,090 --> 00:07:33,210
+Extendemos la traza.
+
+57
+00:07:34,410 --> 00:07:37,170
+Hasta dos segundos por división.
+
+58
+00:07:40,240 --> 00:07:46,000
+Ahora el dispositivo se va a reconfigurar para señales de baja frecuencia.
+
+59
+00:07:47,580 --> 00:07:50,980
+Y vemos el siguiente momento de sincronización.
+
+60
+00:07:52,760 --> 00:08:00,540
+Este es el componente de baja frecuencia del espacio en esta región donde vivo.
+
+61
+00:08:02,020 --> 00:08:09,080
+Ahora vamos a determinar la frecuencia del espacio.
+
+62
+00:08:10,740 --> 00:08:16,540
+Presionamos pausa y
+
+63
+00:08:20,310 --> 00:08:25,810
+cambiamos el dispositivo a modo de cambio de cursor.
+
+64
+00:08:28,310 --> 00:08:29,690
+Manual.
+
+65
+00:08:30,250 --> 00:08:32,390
+Vemos que aparecieron dos marcadores.
+
+66
+00:08:42,330 --> 00:08:47,430
+Movemos el cursor A al medio de la onda.
+
+67
+00:08:48,430 --> 00:08:53,210
+Movemos el cursor B también al medio de la onda.
+
+68
+00:08:55,390 --> 00:08:58,590
+De esta manera determinaremos el período de la oscilación.
+
+69
+00:08:59,990 --> 00:09:00,630
+Veamos.
+
+70
+00:09:00,630 --> 00:09:10,870
+La frecuencia es de 235,8 MHz.
+
+71
+00:09:12,110 --> 00:09:17,670
+Es decir, la frecuencia de estas oscilaciones es de 0,23 Hz.
+
+72
+00:09:19,410 --> 00:09:24,350
+Esta bobina se sincronizó con esta frecuencia.
+
+73
+00:09:25,830 --> 00:09:28,650
+Sin sincronización, una ganancia es imposible.
+
+74
+00:09:30,350 --> 00:09:38,050
+La bobina no puede tomar energía del generador, en consecuencia no puede agregar más.
+
+75
+00:09:38,130 --> 00:09:40,990
+Pero estamos registrando una corriente mayor.
+
+76
+00:09:42,150 --> 00:09:48,050
+Entonces, ¿qué pasará si reseteamos nuestro ajuste?
+
+77
+00:09:50,270 --> 00:09:53,170
+Ahora devolveremos nuestra señal.
+
+78
+00:09:58,210 --> 00:10:09,830
+Trajimos de vuelta nuestra señal y, digamos, con el generador lo cambiamos a modo de frecuencia y empezamos a desafinar.
+
+79
+00:10:13,340 --> 00:10:15,280
+Ahora traemos de vuelta lo que había.
+
+80
+00:10:18,820 --> 00:10:30,680
+Trajimos de vuelta nuestras 23,5 divisiones y, por ejemplo, desplacemos 300 Hz.
+
+81
+00:10:32,380 --> 00:10:34,200
+Vemos, la corriente cayó.
+
+82
+00:10:36,610 --> 00:10:39,000
+Desplacemos la frecuencia aún más abajo.
+
+83
+00:10:42,160 --> 00:10:45,020
+Vemos, prácticamente no hay corriente.
+
+84
+00:10:48,660 --> 00:10:57,520
+Podemos movernos más arriba o más abajo de nuestro ajuste y vemos que no hay corriente.
+
+85
+00:10:59,320 --> 00:11:09,100
+Pero ahora, si digamos a esta frecuencia enganchamos nuestro amperímetro, estaremos registrando una corriente mayor.
+
+86
+00:11:09,720 --> 00:11:16,940
+En particular, vemos que el ajuste se ha corrido y la amplitud de voltaje en la bobina de salida también cayó.
+
+87
+00:11:18,100 --> 00:11:23,780
+Ahora cambiaremos el amperímetro al generador de señales.
+
+88
+00:11:24,980 --> 00:11:26,080
+Cambiando.
+
+89
+00:11:27,440 --> 00:11:34,280
+Vemos que
+
+90
+00:11:38,810 --> 00:11:49,410
+las lecturas de corriente del generador de señales se han mantenido sin cambio.
+
+91
+00:11:49,910 --> 00:11:58,050
+Las mismas 14 divisiones, pero con la frecuencia corriéndose, como vimos, la corriente en el sistema cayó significativamente.
+
+92
+00:11:59,290 --> 00:12:07,450
+Estos capacitores con respecto a la inductancia de la bobina de salida no están en resonancia.
+
+93
+00:12:11,430 --> 00:12:31,130
+Y este es el tipo de ajuste que hay que hacer para que este sistema empiece a entregar más de lo que le inyectamos con este excitador de bajo voltaje, el generador tipo push-pull.

@@ -1,0 +1,135 @@
+1
+00:00:01,040 --> 00:00:04,500
+Vamos a probar nuestra bobina, digamos, para ver si está apta para el servicio.
+
+2
+00:00:05,680 --> 00:00:11,740
+Entonces, tenemos un generador de señales digital, un osciloscopio y un amperímetro.
+
+3
+00:00:12,640 --> 00:00:25,820
+Para que el amperímetro de corriente continua registre la señal alterna de alta frecuencia, le ponemos un diodo rápido, recortaremos un semiciclo.
+
+4
+00:00:26,700 --> 00:00:31,560
+No podemos contar con precisión, así que seguiremos por divisiones.
+
+5
+00:00:32,940 --> 00:00:33,960
+Bien, vamos a ver.
+
+6
+00:00:35,500 --> 00:00:45,280
+Este sistema nuestro no es un transformador reductor, ya que la cantidad de vueltas y de alambre aquí es mayor que en el inductor.
+
+7
+00:00:46,080 --> 00:00:54,940
+Por consiguiente, enviamos una señal senoidal de medio voltio de amplitud desde el generador de señales.
+
+8
+00:00:56,320 --> 00:01:01,160
+Esta es la traza azul, la amarilla, por consiguiente, en la granada.
+
+9
+00:01:02,380 --> 00:01:06,140
+En estos capacitores de aquí, los que están en paralelo.
+
+10
+00:01:07,560 --> 00:01:11,260
+Resulta que vemos que nuestra amplitud de voltaje es mayor.
+
+11
+00:01:11,540 --> 00:01:12,240
+Todo normal.
+
+12
+00:01:14,200 --> 00:01:16,040
+El transformador no es reductor.
+
+13
+00:01:16,040 --> 00:01:20,420
+Entonces, ahora medimos la corriente que entrega el generador de señales.
+
+14
+00:01:22,500 --> 00:01:29,200
+Conectamos nuestro amperímetro, desconectamos.
+
+15
+00:01:29,400 --> 00:01:32,220
+Ahí, la sonda de señal del generador fue al amperímetro.
+
+16
+00:01:33,080 --> 00:01:40,620
+Vemos que la corriente coincide con 13 divisiones.
+
+17
+00:01:42,160 --> 00:01:48,000
+Bien, ahora medimos la corriente que habrá en el mismo modo en la granada.
+
+18
+00:01:49,040 --> 00:02:01,480
+Nos enganchamos a la salida de la granada, ponemos la sonda de señal en su lugar y la fijamos.
+
+19
+00:02:03,020 --> 00:02:10,760
+La corriente a la salida de la granada es de 21 divisiones para nosotros.
+
+20
+00:02:15,520 --> 00:02:17,200
+El cuadro es el mismo.
+
+21
+00:02:18,180 --> 00:02:27,780
+Lo que significa que estamos registrando el momento en que la corriente a la salida de esta bobina supera a la corriente de entrada.
+
+22
+00:02:27,880 --> 00:02:31,300
+Y encima de eso tenemos una ganancia de voltaje.
+
+23
+00:02:31,920 --> 00:02:36,280
+Ahora la precisión del ajuste.
+
+24
+00:02:36,660 --> 00:02:38,600
+¿Por qué muchos se equivocan?
+
+25
+00:02:39,120 --> 00:02:40,400
+Esta es nuestra frecuencia.
+
+26
+00:02:41,420 --> 00:02:46,300
+Por ejemplo, vamos a desplazarla, digamos, 300 Hz.
+
+27
+00:02:47,320 --> 00:02:52,820
+Vemos que nuestra corriente ya bajó, y la amplitud ahí está cayendo.
+
+28
+00:02:53,500 --> 00:03:07,280
+Desplacemos la frecuencia un poco más y vemos, se va la ganancia de voltaje, y la corriente es mucho menor que la que viene del generador.
+
+29
+00:03:07,840 --> 00:03:10,080
+Por eso el ajuste tiene que ser preciso.
+
+30
+00:03:14,180 --> 00:03:17,320
+Lo mismo ocurre si subimos la frecuencia.
+
+31
+00:03:18,280 --> 00:03:19,620
+Por ejemplo, nos vamos a pasar.
+
+32
+00:03:28,300 --> 00:03:29,700
+La corriente también es pequeña.
+
+33
+00:03:31,180 --> 00:03:38,620
+Devolvamos la frecuencia a la que necesitamos, a la que esta bobina va a operar.
+
+34
+00:03:39,420 --> 00:03:48,100
+Y veremos que las divisiones de la traza son las mismas, la ganancia de voltaje también está ahí.

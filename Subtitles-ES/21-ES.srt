@@ -1,0 +1,307 @@
+1
+00:00:05,660 --> 00:00:08,640
+Quiero mostrar lo que llevo armado hasta ahora.
+
+2
+00:00:08,900 --> 00:00:09,840
+El proceso de ensamblaje.
+
+3
+00:00:10,140 --> 00:00:15,960
+Tesla, desmontable, rectificador, Kachers controlados.
+
+4
+00:00:16,880 --> 00:00:21,040
+Bueno, todo el sistema salió a 1,35 MHz.
+
+5
+00:00:21,760 --> 00:00:25,080
+Capa inferior a 1,35 MHz, capa superior a 1,37 MHz.
+
+6
+00:00:26,080 --> 00:00:32,120
+El cable aquí es de 1,5 mm, trenzado.
+
+7
+00:00:34,000 --> 00:00:39,800
+Su longitud de bobinado es de 22 centímetros.
+
+8
+00:00:42,960 --> 00:00:48,220
+La antena quedó en 7 vueltas.
+
+9
+00:00:49,120 --> 00:00:55,700
+Esta es la Tesla, pero salió grande porque usé cable de 0,75 mm.
+
+10
+00:00:59,000 --> 00:01:04,580
+Longitud de bobinado 22 centímetros.
+
+11
+00:01:04,960 --> 00:01:09,200
+Puedes bobinarla más corta, así puedes poner un capacitor más grande.
+
+12
+00:01:09,840 --> 00:01:10,560
+Habrá más beneficio.
+
+13
+00:01:10,660 --> 00:01:12,800
+Creo que lo más probable es que la desenrolle.
+
+14
+00:01:14,000 --> 00:01:16,320
+Vamos a encender el sistema.
+
+15
+00:01:23,580 --> 00:01:27,140
+Arranca con 6-7 voltios.
+
+16
+00:01:27,260 --> 00:01:33,140
+Cuando llega a un kilovoltio, ya empieza a limitarse por sí mismo.
+
+17
+00:01:33,860 --> 00:01:36,480
+El osciloscopio está al lado.
+
+18
+00:01:37,560 --> 00:01:41,800
+Y puedes ver cuándo el Tesla empieza a limitar las ráfagas de pulsos.
+
+19
+00:01:41,800 --> 00:01:44,380
+Como aguanta 1 kilovatio, puede más.
+
+20
+00:01:44,760 --> 00:01:48,620
+Maneja fácilmente hasta 1,5 kilovatios.
+
+21
+00:01:48,880 --> 00:01:57,580
+No arriesgué todo esto, porque los diodos se me reventaban sin parar.
+
+22
+00:01:58,520 --> 00:02:00,440
+Resolví el problema de la estabilización.
+
+23
+00:02:00,920 --> 00:02:06,720
+Puedes ver cómo parpadea el LED cuando se estabiliza.
+
+24
+00:02:09,580 --> 00:02:12,460
+Echemos un vistazo más de cerca.
+
+25
+00:02:13,780 --> 00:02:19,920
+Le metemos 20 voltios, 23, 30 voltios.
+
+26
+00:02:20,000 --> 00:02:21,960
+Aquí un kilovoltio se mantiene estrictamente.
+
+27
+00:02:23,920 --> 00:02:25,240
+Apaguemos el sistema entonces.
+
+28
+00:02:26,100 --> 00:02:29,520
+Veamos más de cerca todo este montaje.
+
+29
+00:02:36,740 --> 00:02:42,320
+Aquí está el puente rectificador, hecho de diodos CREE de carburo de silicio.
+
+30
+00:02:47,030 --> 00:02:56,470
+Capacitores Epcos, un kilovoltio 250 voltios, 2 de ellos, eso da 2 microfaradios en total.
+
+31
+00:02:57,270 --> 00:02:59,130
+Y aquí tenemos el Kacher.
+
+32
+00:03:00,410 --> 00:03:01,690
+Kacher controlado.
+
+33
+00:03:02,130 --> 00:03:03,830
+Tenía que ser controlado sí o sí.
+
+34
+00:03:04,210 --> 00:03:07,690
+Para la estabilización tenemos un TL.
+
+35
+00:03:07,950 --> 00:03:10,530
+Hay un TL431 puesto aquí.
+
+36
+00:03:14,130 --> 00:03:22,990
+Esta resistencia es para este TL, ya que necesitamos un kilovoltio desde aquí, por este cable amarillo.
+
+37
+00:03:23,030 --> 00:03:25,850
+Pasa un kilovoltio, se divide, se divide entre estas dos resistencias.
+
+38
+00:03:27,670 --> 00:03:31,310
+También hay una de 10 kΩ, esta es de 22 kΩ.
+
+39
+00:03:32,730 --> 00:03:37,590
+Fijamos el kilovoltio en la salida, pero puedes más, puedes subir más alto.
+
+40
+00:03:38,550 --> 00:03:42,290
+Aquí tenemos un regulador de 12 voltios, un regulador de 5 voltios.
+
+41
+00:03:42,790 --> 00:03:46,190
+Todo esto se necesita para el controlador de control.
+
+42
+00:03:46,950 --> 00:03:51,610
+Tenemos un KT973 aquí.
+
+43
+00:03:53,310 --> 00:04:02,490
+Siempre tuve un problema, generalmente la gente pone un zener en la base y a veces se queman, a veces explotan, se calientan.
+
+44
+00:04:02,810 --> 00:04:07,270
+Pero resolví el problema para que nada se caliente.
+
+45
+00:04:08,270 --> 00:04:11,810
+Aquí hay 3 diodos Schottky, son necesarios.
+
+46
+00:04:12,610 --> 00:04:15,610
+KT, bueno, no KT, K2837.
+
+47
+00:04:16,030 --> 00:04:20,850
+Buen transistor, solía ponerlos en TPO, todavía me quedan algunos.
+
+48
+00:04:21,050 --> 00:04:23,770
+Lo probé hasta 5 MHz, lo manejan fácil.
+
+49
+00:04:28,910 --> 00:04:31,170
+No se ve algo, qué se le va a hacer.
+
+50
+00:04:33,970 --> 00:04:35,830
+Bien, aquí está la bobina Tesla.
+
+51
+00:04:40,210 --> 00:04:43,370
+Aún la voy a desenrollar un poco, no mucho.
+
+52
+00:04:44,730 --> 00:04:48,490
+Tuve que rebobinarla para reducir su inductancia.
+
+53
+00:04:49,090 --> 00:04:53,010
+Quería usar cable de 0,6 mm.
+
+54
+00:04:53,370 --> 00:04:57,210
+Luego tenemos la bobina desmontable.
+
+55
+00:04:58,170 --> 00:05:02,390
+La bobina desmontable se enrolla aquí, el extremo inferior entra.
+
+56
+00:05:04,250 --> 00:05:06,630
+Va, va, va, va, va, va, va.
+
+57
+00:05:07,530 --> 00:05:09,070
+Dos capas clásicas.
+
+58
+00:05:09,370 --> 00:05:13,470
+Llegamos a la mitad de esta capa y empezamos a bobinar hacia atrás.
+
+59
+00:05:14,590 --> 00:05:24,090
+Bobinas hasta el final, regresas, das un paso atrás, bobinas hasta el final por acá, y este extremo a través del agujero sale por allí.
+
+60
+00:05:24,610 --> 00:05:27,490
+Ahí están, dos cables, ahí están.
+
+61
+00:05:28,270 --> 00:05:31,310
+Estos van al rectificador básicamente, y al capacitor.
+
+62
+00:05:33,110 --> 00:05:34,970
+Bueno, algo así.
+
+63
+00:05:37,570 --> 00:05:40,290
+La siguiente etapa para nosotros es la conmutación.
+
+64
+00:05:41,710 --> 00:05:45,730
+Tenía una conmutación así.
+
+65
+00:05:47,350 --> 00:05:48,550
+Salió una pequeña placa.
+
+66
+00:05:54,940 --> 00:05:55,800
+Bueno, enfoca.
+
+67
+00:05:57,520 --> 00:05:59,220
+¿No va a enfocar?
+
+68
+00:06:00,180 --> 00:06:04,540
+Bueno, básicamente, habrá una nueva placa, mejor.
+
+69
+00:06:05,200 --> 00:06:08,940
+Esta también funcionó, con esta funcionó, pero la conmutación será nueva.
+
+70
+00:06:09,720 --> 00:06:17,720
+Ayer me senté con Oleg, con Slava, básicamente, pensamos cómo hacerlo mejor.
+
+71
+00:06:18,760 --> 00:06:23,400
+Pero creo que en un día o dos armaremos el nuevo sistema de conmutación.
+
+72
+00:06:23,740 --> 00:06:30,600
+La conmutación se necesita para que no sean 300-400 vatios sino al menos 800 vatios.
+
+73
+00:06:31,160 --> 00:06:32,820
+Bueno, quizás salgan 700, no sé.
+
+74
+00:06:33,760 --> 00:06:34,280
+En autosustentado.
+
+75
+00:06:35,840 --> 00:06:40,600
+Pero por ahora es el sistema más simple que hay, en este momento.
+
+76
+00:06:40,860 --> 00:06:44,700
+Hay otros sistemas, pero ahora mismo estamos trabajando en este.
+
+77
+00:06:46,040 --> 00:06:47,620
+Bueno, eso es más o menos todo.

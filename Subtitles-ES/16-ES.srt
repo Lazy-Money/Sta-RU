@@ -1,0 +1,203 @@
+1
+00:00:01,500 --> 00:00:03,040
+Hola, Kirill.
+
+2
+00:00:03,480 --> 00:00:05,120
+Hola, Oleg Herman.
+
+3
+00:00:06,360 --> 00:00:08,080
+Esta es la placa que armé.
+
+4
+00:00:09,660 --> 00:00:13,460
+Ya es la versión final completamente funcional.
+
+5
+00:00:14,800 --> 00:00:19,120
+La más exitosa en todos los años que llevo haciendo cosas.
+
+6
+00:00:20,460 --> 00:00:22,500
+Vamos a encender la alimentación.
+
+7
+00:00:26,520 --> 00:00:30,140
+Aquí entran 12 voltios, aquí 24.
+
+8
+00:00:31,100 --> 00:00:35,380
+Esta es la batería, puede cargarse mientras el sistema funciona en modo autosustentado.
+
+9
+00:00:35,960 --> 00:00:37,500
+No tienes que apagar la batería.
+
+10
+00:00:37,560 --> 00:00:39,080
+Puedes apagarla, como prefieras.
+
+11
+00:00:39,880 --> 00:00:40,920
+Vamos a encenderlo.
+
+12
+00:00:41,420 --> 00:00:43,180
+Aquí tenemos un pequeño conector.
+
+13
+00:00:43,720 --> 00:00:47,640
+Quiero hacerlo igual que Akula, como Ruslan.
+
+14
+00:00:47,800 --> 00:00:49,040
+Y encontré un botón así.
+
+15
+00:00:52,670 --> 00:00:53,590
+Ahí está.
+
+16
+00:00:54,830 --> 00:00:58,010
+Bueno, veamos el logograma.
+
+17
+00:01:03,380 --> 00:01:06,380
+Ese es nuestro push-pull, este y este.
+
+18
+00:01:06,960 --> 00:01:09,200
+Este es el estrobo, y este es el Tesla.
+
+19
+00:01:10,400 --> 00:01:12,520
+Esta unidad puede conmutarse a modo Tesla.
+
+20
+00:01:13,220 --> 00:01:14,800
+Movemos este puente así.
+
+21
+00:01:15,920 --> 00:01:20,520
+Y ahora también puedes colocar un pulsador de nanosegundos en esta misma placa.
+
+22
+00:01:21,020 --> 00:01:23,960
+Así.
+
+23
+00:01:27,230 --> 00:01:31,610
+Puente de nanosegundos, puente Tesla.
+
+24
+00:01:32,270 --> 00:01:33,110
+Cada quien lo que tenga.
+
+25
+00:01:34,210 --> 00:01:37,410
+Aquí está el semiciclo.
+
+26
+00:01:38,230 --> 00:01:39,530
+Bueno, hay un puentecito.
+
+27
+00:01:43,060 --> 00:01:44,940
+Semiciclo izquierdo, derecho.
+
+28
+00:01:45,120 --> 00:01:46,100
+Y este es los dos juntos.
+
+29
+00:01:50,640 --> 00:01:51,800
+Lo cambio ahora.
+
+30
+00:01:57,380 --> 00:01:57,720
+Listo.
+
+31
+00:01:58,320 --> 00:01:59,340
+Y aquí están los dos juntos.
+
+32
+00:02:01,020 --> 00:02:02,920
+Bien, este es el pulsador de nanosegundos.
+
+33
+00:02:03,800 --> 00:02:05,120
+Ahora enciendo la ráfaga.
+
+34
+00:02:06,660 --> 00:02:08,500
+Básicamente, la unidad es universal.
+
+35
+00:02:09,720 --> 00:02:14,180
+Este es el armado más exitoso que he hecho en todos estos años.
+
+36
+00:02:16,140 --> 00:02:20,580
+Aquí está el IR2153, el IR2110.
+
+37
+00:02:21,640 --> 00:02:25,560
+¿Por qué uso específicamente estos chips?
+
+38
+00:02:25,560 --> 00:02:34,340
+Podría haber usado el TL, pero cuando lo armé vi que había un problema con esa tecnología.
+
+39
+00:02:35,000 --> 00:02:39,680
+El problema con ese es que durante el barrido de frecuencia la fase no se mantiene.
+
+40
+00:02:39,840 --> 00:02:42,240
+Puedes ajustar todo tranquilamente.
+
+41
+00:02:43,860 --> 00:02:46,320
+Esa es la única razón por la que dejé el TL.
+
+42
+00:02:46,640 --> 00:02:49,720
+Aunque habría sido mucho más fácil armarlo con él.
+
+43
+00:02:50,400 --> 00:02:54,980
+Tenemos un chip 74HC00.
+
+44
+00:02:55,900 --> 00:03:01,320
+En él están los retardos, los desfasadores y el generador Tesla.
+
+45
+00:03:02,120 --> 00:03:04,780
+Y este es un 74HC00.
+
+46
+00:03:08,080 --> 00:03:10,300
+Y este es un 74HC00.
+
+47
+00:03:10,300 --> 00:03:20,520
+En él están construidos la longitud de la ráfaga Tesla y el ciclo útil del pulso Tesla.
+
+48
+00:03:35,300 --> 00:03:48,460
+La unidad quedó así, esta placa funciona, puede operar en el rango de 9 kHz a 52 kHz.
+
+49
+00:03:48,460 --> 00:04:05,540
+Y el dispositivo de salida, el driver, la salida del driver va de 1,1 MHz a 5,5 MHz.
+
+50
+00:04:06,540 --> 00:04:20,280
+Elegí todos los valores de los capacitores del circuito para que en cualquier modo en que deba funcionar, cumpla sus funciones y tareas.
+
+51
+00:04:21,160 --> 00:04:28,060
+En el lado izquierdo tenemos el controlador en sí, y en el lado derecho la temporización automática del retardo.
