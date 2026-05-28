@@ -1,0 +1,959 @@
+1
+00:00:01,080 --> 00:00:02,440
+Hallo zusammen.
+
+2
+00:00:03,280 --> 00:00:08,800
+Es gibt schon seit einer Weile eine Frage auf dem Kanal zum allgemeinen Blockschaltbild des Geräts.
+
+3
+00:00:09,020 --> 00:00:13,260
+Wie seine Hauptkomponenten miteinander verbunden sind.
+
+4
+00:00:13,860 --> 00:00:17,720
+Aus bestimmten Gründen habe ich es eine Weile zurückgehalten, dieses Diagramm zu teilen.
+
+5
+00:00:18,060 --> 00:00:21,840
+Weil ich selbst viele Varianten testen musste.
+
+6
+00:00:22,780 --> 00:00:27,380
+Und beurteilen, wie sie im Gesamtsystem zusammenarbeiten.
+
+7
+00:00:28,380 --> 00:00:34,020
+Dieses Bild zeigt das Blockschaltbild des Geräts.
+
+8
+00:00:34,900 --> 00:00:37,440
+Das gehen wir jetzt durch.
+
+9
+00:00:38,940 --> 00:00:45,700
+Ich möchte sagen, das ist nur die Variante, auf der ich gelandet bin.
+
+10
+00:00:46,400 --> 00:00:48,820
+Ich will sie niemandem aufzwingen.
+
+11
+00:00:48,820 --> 00:01:00,340
+Weil es unter den Leuten, die darüber reden, wie diese Geräte funktionieren, einige Verwirrung gibt.
+
+12
+00:01:01,240 --> 00:01:05,500
+Das heißt nicht, dass Leute lügen.
+
+13
+00:01:06,800 --> 00:01:13,480
+Es kann eine Sache bedeuten — es gibt viele Möglichkeiten, dieses Gerät zu bauen.
+
+14
+00:01:14,480 --> 00:01:21,820
+Deshalb sagt eine Person eine Sache und eine andere das Gegenteil.
+
+15
+00:01:22,880 --> 00:01:25,120
+Ich möchte einen kleinen Rat geben.
+
+16
+00:01:26,680 --> 00:01:35,540
+Wenn du Geräte wie diese baust, ist es am besten, dich auf dein eigenes Urteilsvermögen zu verlassen.
+
+17
+00:01:35,920 --> 00:01:39,980
+Führe deine eigenen Experimente durch und ziehe deine eigenen Schlüsse.
+
+18
+00:01:40,380 --> 00:01:48,700
+Und vor allem, vertraue deinen konkreten Instrumenten und dem, was tatsächlich funktioniert.
+
+19
+00:01:50,840 --> 00:01:59,900
+Die Hauptkomponente in meinem Aufbau dieses Geräts ist unsere Spule.
+
+20
+00:02:00,200 --> 00:02:03,240
+Das ist der Reaktor, in dem die Prozesse stattfinden.
+
+21
+00:02:04,240 --> 00:02:22,240
+Wenn Leute Geräte bauen, in denen die Prozesse stattdessen in der Drossel stattfinden, ist es fair zu sagen, dass diese Spule — die nur ein Abnehmer ist — beliebig gewickelt werden kann.
+
+22
+00:02:22,240 --> 00:02:23,700
+Wie auch immer gewickelt.
+
+23
+00:02:24,740 --> 00:02:26,100
+Sogar in eine Richtung.
+
+24
+00:02:27,100 --> 00:02:33,560
+Weil der Hauptprozess speziell in der Drossel fließt.
+
+25
+00:02:34,120 --> 00:02:36,240
+Ich arbeite nach einem anderen Prinzip.
+
+26
+00:02:37,440 --> 00:02:44,080
+Daher gibt es spezifische Anforderungen für die Herstellung dieser Spule.
+
+27
+00:02:45,180 --> 00:02:51,960
+Ich habe schon ein Video gemacht, wie man das macht, "Resonator" genannt.
+
+28
+00:02:53,440 --> 00:03:00,020
+Als Nächstes, die zweite Hauptkomponente ist der niederfrequente ansteuernde Generator.
+
+29
+00:03:00,940 --> 00:03:12,480
+Aufgebaut nach dem Gegentakt-Schema — ein Zweikanal-Wandler, der auf einem Ferritkern mit Luftspalt arbeitet.
+
+30
+00:03:13,540 --> 00:03:18,720
+Vom Ferritkern haben wir zwei abnehmbare Wicklungen.
+
+31
+00:03:18,720 --> 00:03:27,480
+3–4 Windungen auf einer Wicklung und etwa 25 Windungen auf der zweiten.
+
+32
+00:03:28,160 --> 00:03:36,060
+Diese 25-Windungs-Wicklung verbindet sich mit dem kalten Ende der Hauptspule.
+
+33
+00:03:37,340 --> 00:03:40,760
+Und das Ganze bildet einen Stromkreis.
+
+34
+00:03:42,340 --> 00:03:46,820
+Dieser Stromkreis ist bei niedriger Frequenz nicht resonant.
+
+35
+00:03:46,820 --> 00:03:55,260
+Du siehst, ich habe einen Schlüssel für die Symbole auf der Zeichnung markiert.
+
+36
+00:03:55,360 --> 00:04:01,260
+P bedeutet rechte Wicklung, L bedeutet linke, und das Sternchen bedeutet "wähle das".
+
+37
+00:04:01,400 --> 00:04:14,980
+Diese Komponenten — Kondensatoren, Wicklungen, Windungszahlen — müssen individuell in der Praxis ausgewählt werden.
+
+38
+00:04:16,700 --> 00:04:22,920
+Die Symbole zeigen auch die Wickelrichtung an — wo rechts, wo links.
+
+39
+00:04:25,000 --> 00:04:31,200
+Es gibt eine bestimmte Regel, die ich versuche zu befolgen.
+
+40
+00:04:31,840 --> 00:04:38,960
+Rechtsgängige Wicklungen sind für das Magnetfeld, linksgängige für das elektrische Feld.
+
+41
+00:04:41,360 --> 00:04:54,420
+Es gibt einen Punkt, der etwas Verwirrung verursacht — wie man eine rechte oder linke Wicklung wickelt, wie man sie identifiziert.
+
+42
+00:04:56,220 --> 00:05:01,560
+Insbesondere beim Wickeln einer Spule — sagen wir, wir haben eine Form und Draht.
+
+43
+00:05:02,740 --> 00:05:08,140
+Nimm die linke Hand und klemme den Anfang des Drahts ein.
+
+44
+00:05:09,140 --> 00:05:27,400
+Jetzt, wenn wir mit der rechten Hand die Wicklung führen und auf die Richtung schauen, in die wir wickeln — du siehst, diese Wicklung geht im Uhrzeigersinn, dreht sich.
+
+45
+00:05:28,680 --> 00:05:32,420
+Wir nennen diese Wicklung rechtsgängig.
+
+46
+00:05:35,020 --> 00:05:56,400
+Wenn wir den Draht in die linke Hand nehmen, ihn auch einklemmen und in die andere Richtung wickeln — und jetzt die Wickelrichtung herausfinden wollen, schauen wir von links nach rechts, von der Seite, auf der der Draht an der Form hochsteigt.
+
+47
+00:05:56,400 --> 00:06:00,860
+Entlang der Form.
+
+48
+00:06:00,860 --> 00:06:09,940
+Und hier ist es deutlich gegen den Uhrzeigersinn, was bedeutet, das ist eine linksgängige Wicklung.
+
+49
+00:06:12,560 --> 00:06:17,900
+Dieser Wandler-Knoten sieht in der Praxis so aus.
+
+50
+00:06:19,880 --> 00:06:26,620
+Es ist Ferrit aus der Ablenkeinheit eines alten Fernsehers.
+
+51
+00:06:26,620 --> 00:06:38,800
+Hauptsächlich Niederfrequenz-Ferrit — du kannst einen Ferritring verwenden, du kannst einen Luftspalt verwenden, oder auch nicht.
+
+52
+00:06:39,060 --> 00:06:46,620
+Nur dass bei Ferrit ohne Luftspalt die Gegentakt-Abstimmung etwas schwieriger ist.
+
+53
+00:06:46,620 --> 00:06:57,600
+Aber da dieser Ferrit ab Werk in zwei Hälften geteilt ist, gibt's kein Problem.
+
+54
+00:06:58,720 --> 00:07:16,060
+Du musst diese drei abnehmbaren Windungen auf der gegenüberliegenden Hälfte des Kerns von den Windungen platzieren, die die Transistoren steuern.
+
+55
+00:07:16,440 --> 00:07:19,820
+Diese 8–10 Windungen der Gegentakt-Arme.
+
+56
+00:07:20,400 --> 00:07:24,500
+Der Luftspalt ist für uns an diesen Punkten.
+
+57
+00:07:26,700 --> 00:07:33,440
+Obligatorisch auf der gegenüberliegenden Seite gewickelt — ein Trenntransformator wird gebildet.
+
+58
+00:07:36,160 --> 00:07:40,520
+Der weiße Draht ist die 25 Windungen.
+
+59
+00:07:41,800 --> 00:07:50,360
+Hier ist sein Ausgang, der laut Schaltplan zum kalten Ende unserer Spule geht.
+
+60
+00:07:50,800 --> 00:07:56,480
+Und zum Kondensator, der später mit dem heißen Ende der Spule verbunden ist.
+
+61
+00:07:58,000 --> 00:08:03,700
+Diese Anschlüsse gehen direkt zu den Drains der FETs.
+
+62
+00:08:05,100 --> 00:08:12,860
+In der Mitte siehst du den Mittelabgriff dieser Wicklungen.
+
+63
+00:08:13,120 --> 00:08:18,180
+Er geht zu Plus-Versorgung von den Wandlern.
+
+64
+00:08:19,600 --> 00:08:29,720
+Und auf der Rückseite haben wir den Haupt-Reservoirkondensator für die Gegentakt-Stromversorgung.
+
+65
+00:08:33,780 --> 00:08:37,080
+Plus verbindet sich mit dem Mittelabgriff.
+
+66
+00:08:37,240 --> 00:08:42,940
+Und dieser Draht zu Minus geht zu den Transistor-Sources.
+
+67
+00:08:42,940 --> 00:08:47,920
+Das ist im Grunde der Stromdraht.
+
+68
+00:08:52,820 --> 00:09:01,400
+Die Frage kommt auf — warum haben wir diese Spule in Reihe mit den 25 Windungen verbunden?
+
+69
+00:09:02,180 --> 00:09:21,020
+Das wird gemacht, damit wir im Serien-Schwingkreis, der von der Drossel und diesen drei Windungen gebildet wird, nicht nur Sinus-Schwingungen bei einer bestimmten Frequenz bekommen, sondern amplitudenmodulierte.
+
+70
+00:09:21,020 --> 00:09:24,980
+Amplitudenmoduliert.
+
+71
+00:09:25,800 --> 00:09:34,020
+Wenn du an diesem Punkt eine Sonde anlegst, siehst du bei korrekter Abstimmung, dass das Trägersignal moduliert ist.
+
+72
+00:09:34,020 --> 00:09:42,900
+Du kannst entweder zu Null modulierte Fische sehen, oder Teilmodulation.
+
+73
+00:09:43,080 --> 00:09:51,460
+Aber die Modulation im Drossel-Stromkreis sollte nicht weniger als 50 % Amplitude betragen.
+
+74
+00:09:52,080 --> 00:09:59,440
+Aus demselben Grund beträgt die Wandler-Versorgung 24 V statt 12.
+
+75
+00:09:59,960 --> 00:10:11,420
+Diese erhöhte Versorgung reduziert die Windungszahl auf der Wandler-Wicklung.
+
+76
+00:10:11,640 --> 00:10:15,440
+Die Windungszahl geht runter.
+
+77
+00:10:16,520 --> 00:10:34,340
+Aus den 25 Windungen der linken Wicklung (auch mit einem Sternchen markiert) wählst du die Windungszahl, bis die aktive Spannung, die in diesem Stromkreis in Reihe angelegt ist, dazu führt, dass Amplitudenmodulationen des Trägersignals in der Drossel auftauchen.
+
+78
+00:10:34,340 --> 00:10:40,780
+Auftauchen.
+
+79
+00:10:42,120 --> 00:10:47,800
+Ohne diese Modulationen in der Drossel kann das System nicht gestartet werden.
+
+80
+00:10:48,760 --> 00:11:05,780
+Du hast vielleicht bemerkt, dass ich zwei Netzteile in Reihe mit jeweils 12 V verwende, anstatt eines einzelnen 24-V-Netzteils für den Wandler.
+
+81
+00:11:05,880 --> 00:11:15,240
+Ich verwende Netzteile der Marke Navigator mit 5 A Ausgang bei 12,5 V.
+
+82
+00:11:16,240 --> 00:11:25,880
+Die Netzteile sind so ausgelegt, dass das System im autonomen Modus läuft, sobald es seine Nennleistung erreicht.
+
+83
+00:11:26,740 --> 00:11:34,440
+Diese Art der Verkabelung der Netzteile lässt das System von einer 12-V-Batterie starten.
+
+84
+00:11:34,440 --> 00:11:36,400
+Der Start erfolgt so.
+
+85
+00:11:36,500 --> 00:11:39,740
+Zuerst schließt dieser Schalter.
+
+86
+00:11:40,340 --> 00:11:45,460
+Strom kommt zum Wandler.
+
+87
+00:11:45,840 --> 00:11:54,640
+Strom geht auch zu allen Steuerchips in diesen Knoten.
+
+88
+00:11:55,540 --> 00:11:57,720
+Die Schaltpläne dieser Knoten haben wir schon behandelt.
+
+89
+00:11:57,720 --> 00:12:11,380
+Und dann, wenn der Startknopf schließt, geht Strom zum Wandler, der unsere gesteuerte Tesla oder gesteuerten Katscher versorgt.
+
+90
+00:12:12,340 --> 00:12:26,340
+Mit dieser Verkabelung brauchst du an diesem Punkt keine Diode, um die Spannung zu blockieren, die vom Netzteil kommt, wenn das System eigenständig läuft.
+
+91
+00:12:26,340 --> 00:12:32,620
+Diese Batterie — mit dieser Verkabelung — muss nicht entfernt werden; es ist die übliche.
+
+92
+00:12:33,300 --> 00:12:38,380
+Und während dieser Schalter geschlossen ist, wird die Batterie ständig nachgeladen.
+
+93
+00:12:38,420 --> 00:12:48,360
+Um es klarer zu machen, zeige ich das System mit den in Reihe geschalteten Netzteilen in Aktion getestet.
+
+94
+00:12:49,360 --> 00:12:52,900
+Zwei 12-V-Netzteile.
+
+95
+00:12:52,960 --> 00:12:55,700
+Starterbatterie.
+
+96
+00:12:57,380 --> 00:12:58,900
+Hier ist der Ausgang.
+
+97
+00:12:59,840 --> 00:13:06,220
+Das ist der Punkt, an dem das Plus der Starterbatterie angeschlossen wird.
+
+98
+00:13:07,500 --> 00:13:08,860
+Zweiter Ausgang.
+
+99
+00:13:09,780 --> 00:13:16,800
+Das ist der 24-V-Anschluss, der als Nächstes zum Gegentakt-Wandler geht.
+
+100
+00:13:20,610 --> 00:13:27,150
+Jetzt habe ich die Messgeräte-Masse an das Minus der Batterie angeschlossen.
+
+101
+00:13:28,130 --> 00:13:31,310
+Und ich messe die Batteriespannung.
+
+102
+00:13:31,650 --> 00:13:37,670
+Du siehst, sie beträgt 12,9 V.
+
+103
+00:13:38,670 --> 00:13:53,170
+Jetzt verbinde ich das Messgerät an diesem Punkt mit dem zukünftigen 24-V-Ausgang.
+
+104
+00:13:54,130 --> 00:14:01,370
+Und ich verbinde den Mittelpunkt der beiden Netzteile mit der Batterie.
+
+105
+00:14:02,490 --> 00:14:15,450
+Du siehst, die Batteriespannung, abzüglich der Verluste an den Dioden in den Netzteilen, ist am Ausgang des zweiten erschienen.
+
+106
+00:14:16,750 --> 00:14:21,190
+Und die Batterie kann frei angeschlossen werden.
+
+107
+00:14:22,110 --> 00:14:24,890
+Das ist der Wert, den wir am Ausgang haben.
+
+108
+00:14:24,890 --> 00:14:30,910
+Und jetzt siehst du, eine der LEDs am Netzteil ist an.
+
+109
+00:14:31,010 --> 00:14:38,310
+Die, an deren Klemme das Batteriepotential angelegt ist.
+
+110
+00:14:38,890 --> 00:14:44,190
+Jetzt verbinde ich die Netzteile mit dem Netz.
+
+111
+00:14:45,210 --> 00:14:47,730
+Sie beginnen Spannung zu erzeugen.
+
+112
+00:14:47,730 --> 00:14:57,510
+Und wir sehen die gemeinsame Ausgangsspannung der beiden am Messgerät.
+
+113
+00:14:58,870 --> 00:15:00,590
+Schließe die Netzteile an.
+
+114
+00:15:02,490 --> 00:15:05,410
+Du siehst, unsere Spannung hat sich geändert.
+
+115
+00:15:05,590 --> 00:15:07,490
+Wurde 24 V.
+
+116
+00:15:08,110 --> 00:15:09,550
+Praktisch 25.
+
+117
+00:15:09,550 --> 00:15:19,390
+Und in dieser Verkabelung hat die Batterie das Potential von der ersten Stromquelle.
+
+118
+00:15:20,390 --> 00:15:24,570
+Und sie wird ständig im Lademodus sein.
+
+119
+00:15:25,570 --> 00:15:26,750
+Trenn sie ab.
+
+120
+00:15:27,250 --> 00:15:31,830
+Du siehst einen leichten Spannungsabfall.
+
+121
+00:15:32,510 --> 00:15:43,530
+Weil die Spannung jetzt vom Batterieladen leicht höher ist, als das Netzteil geben kann.
+
+122
+00:15:44,810 --> 00:15:48,670
+Diese Netzteile bieten Ausgangsregulierung.
+
+123
+00:15:48,670 --> 00:15:55,550
+Ausgangsspannungsregulierung erfolgt innerhalb eines bestimmten Bereichs mit Trimmpotis.
+
+124
+00:15:56,150 --> 00:15:59,410
+Hier könntest du zum Beispiel 13,5 V einstellen.
+
+125
+00:15:59,930 --> 00:16:04,510
+Und diese Batterie wird immer auf Laden sein.
+
+126
+00:16:05,630 --> 00:16:07,710
+Schalte die Stromquelle aus.
+
+127
+00:16:10,390 --> 00:16:12,170
+Du siehst, das Potential fällt.
+
+128
+00:16:13,510 --> 00:16:15,790
+Eine allmähliche Entladung erfolgt.
+
+129
+00:16:15,790 --> 00:16:20,270
+Und wir sehen wieder die Batteriespannung.
+
+130
+00:16:23,210 --> 00:16:27,490
+So funktioniert unser System.
+
+131
+00:16:27,610 --> 00:16:32,950
+Die Verwendung von zwei 12-V-Netzteilen löst auch ein Problem.
+
+132
+00:16:33,790 --> 00:16:38,750
+Das Problem des Startens des Wandlers für die Katscher- oder Tesla-Stromversorgung.
+
+133
+00:16:40,230 --> 00:16:44,590
+Er braucht 12-V-Strom.
+
+134
+00:16:44,590 --> 00:16:52,450
+Also wird die Batteriespannung direkt an diesen Wandler angelegt, wenn der Knopf geschlossen ist.
+
+135
+00:16:52,930 --> 00:16:55,730
+Um das Gerät zu starten, schließen wir den Stromkreis.
+
+136
+00:16:56,110 --> 00:17:02,690
+Der Wandler erhöht die Spannung auf das für den Systembetrieb benötigte Potential.
+
+137
+00:17:02,830 --> 00:17:08,330
+Und die Versorgungsseite des Hochspannungssystems startet.
+
+138
+00:17:08,710 --> 00:17:12,610
+Um das Gerät zu stoppen, einfach diesen Stromkreis öffnen.
+
+139
+00:17:12,610 --> 00:17:25,390
+Wenn das Gerät nicht benutzt wird, solltest du diesen Schalter ausschalten, damit die Batterie nicht durch den laufenden Gegentakt-Wechselrichter entladen wird.
+
+140
+00:17:25,510 --> 00:17:33,670
+Der nächste Systemblock, entscheidend für den ordnungsgemäßen Betrieb, ist diese niederfrequente Drossel.
+
+141
+00:17:34,650 --> 00:17:41,790
+In den ersten Variationen einiger Autoren-Schaltpläne haben wir sie gesehen, dann ist sie verschwunden, angeblich unnötig.
+
+142
+00:17:41,790 --> 00:17:46,170
+Diese Drossel erledigt zwei Hauptaufgaben.
+
+143
+00:17:46,830 --> 00:17:58,450
+Erstens blockiert sie die Hochfrequenzkomponente daran, den Brückengleichrichter, die Last und dann die Eingangsseite der Netzteile zu erreichen.
+
+144
+00:17:59,070 --> 00:18:10,110
+Die Eingangsseite hat Elektrolytkondensatoren, also wenn Hochfrequenz dort reinkommt, können diese Kondensatoren komplett ausfallen.
+
+145
+00:18:10,110 --> 00:18:12,450
+In der Praxis platzen sie einfach.
+
+146
+00:18:13,410 --> 00:18:19,870
+Und die zweite Hauptaufgabe ist auch das Blockieren von Hochfrequenz.
+
+147
+00:18:20,370 --> 00:18:20,930
+Aber warum?
+
+148
+00:18:21,710 --> 00:18:26,510
+Hochfrequenz sollte ausschließlich in diesem Stromkreis arbeiten.
+
+149
+00:18:27,010 --> 00:18:33,510
+Wenn sie weitergeht, vergrößert sich die Pfadlänge und das System gerät aus dem Gleichgewicht.
+
+150
+00:18:33,650 --> 00:18:36,090
+Es zu starten wäre dann aussichtslos.
+
+151
+00:18:36,090 --> 00:18:42,070
+Das ist einer der kritischsten Teile — du kannst es unter keinen Umständen überspringen.
+
+152
+00:18:42,750 --> 00:18:53,430
+Sie kann auf jedem Niederfrequenz-Ferritring gemacht werden, oder du kannst denselben TV-Ablenkferrit aus alten Fernsehern verwenden.
+
+153
+00:18:53,430 --> 00:18:56,390
+In der Praxis sieht's so aus.
+
+154
+00:18:56,690 --> 00:19:00,690
+Du siehst sofort, die Wicklung ist mit zwei Drähten gemacht.
+
+155
+00:19:00,870 --> 00:19:11,430
+Die Windungszahl beträgt 8–15, aber ein Durchschnitt von etwa 10 Windungen reicht aus, um die HF-Komponente zuverlässig zu blockieren.
+
+156
+00:19:13,630 --> 00:19:17,450
+Als Nächstes, nach der Drossel, haben wir den Brückengleichrichter.
+
+157
+00:19:17,450 --> 00:19:23,430
+Die verwendeten Dioden sind schnell oder ultraschnell.
+
+158
+00:19:24,090 --> 00:19:30,690
+Du kannst auch Schottky-Dioden mit 400 bis 600 V verwenden.
+
+159
+00:19:30,790 --> 00:19:32,590
+Das ist mehr als genug.
+
+160
+00:19:34,170 --> 00:19:37,730
+Persönlich verwende ich Dioden in diesem Gehäuse.
+
+161
+00:19:38,310 --> 00:19:45,630
+Dieses Gehäuse hat zwei Dioden, die Rücken an Rücken verbunden sind, an den Kathoden verbunden.
+
+162
+00:19:45,630 --> 00:19:48,730
+Der Mittenpin ist die Kathode.
+
+163
+00:19:49,050 --> 00:20:00,910
+Da in diesem Gehäuse zwei Dioden sind, verwende ich sie parallel, was die Gesamtnennleistung des Paares erhöht.
+
+164
+00:20:01,730 --> 00:20:06,490
+Die Dioden kommen für gute Kühlung auf einen Kühlkörper.
+
+165
+00:20:07,090 --> 00:20:10,350
+Dieser Kühlkörper ist natürlich überdimensioniert.
+
+166
+00:20:10,470 --> 00:20:12,710
+Es ist nur, was ich hatte — du kannst einen kleineren verwenden.
+
+167
+00:20:12,710 --> 00:20:17,610
+Die Dioden werden durch ein Isolierpad an den Kühlkörper geschraubt.
+
+168
+00:20:18,310 --> 00:20:19,850
+Ich verwende Glimmer.
+
+169
+00:20:21,490 --> 00:20:28,250
+Danach trifft die gleichgerichtete Spannung den Haupt-Reservoirkondensator.
+
+170
+00:20:28,830 --> 00:20:31,990
+Ich habe einen 25-µF-, 400-V-Kondensator verwendet.
+
+171
+00:20:32,610 --> 00:20:43,450
+Danach erreicht die gleichgerichtete Spannung die Last und auch den Eingang der Netzteile.
+
+172
+00:20:44,430 --> 00:20:52,110
+Die an die Netzteileingänge angelegte Polarität spielt keine Rolle, da sie eingangsseitig einen Brückengleichrichter haben.
+
+173
+00:20:52,910 --> 00:20:57,790
+Was bedeutet, dass die Polaritätsumkehr keine Rolle spielt.
+
+174
+00:20:58,490 --> 00:21:00,410
+Du kannst jede Polarität anlegen.
+
+175
+00:21:00,410 --> 00:21:13,210
+Du kannst Glühlampen, Heizelemente, Bügeleisen, alle Arten von Heizgeräten als Last verwenden.
+
+176
+00:21:13,850 --> 00:21:20,810
+Egal, solange es mit Gleichstrom arbeiten kann.
+
+177
+00:21:20,810 --> 00:21:31,350
+Viele moderne Geräte, die diese Art Wandler an der Eingangsseite verwenden, funktionieren auch.
+
+178
+00:21:32,350 --> 00:21:39,730
+Du kannst keine alten Geräte anschließen, die an der Eingangsseite einen Transformator statt dieser Wandler haben.
+
+179
+00:21:40,830 --> 00:21:43,590
+Sein Eingang brennt von Gleichstrom durch.
+
+180
+00:21:43,590 --> 00:21:52,930
+Und du kannst keine Geräte anschließen, die asynchrone oder synchrone Motoren am Eingang haben.
+
+181
+00:21:53,130 --> 00:22:02,770
+Diese Motoren bleiben einfach in einem nicht arbeitenden Zustand sitzen, die Wicklung überhitzt und sie fallen auch aus.
+
+182
+00:22:03,410 --> 00:22:08,030
+Gleichstrom-Hochspannungsmotoren funktionieren hier super.
+
+183
+00:22:09,030 --> 00:22:18,370
+Der ganze Block — Drossel, Brückengleichrichter und Haupt-Reservoirkondensator — passt in eine gemeinsame Box.
+
+184
+00:22:19,410 --> 00:22:22,010
+Du siehst die obere Abdeckung des Gehäuses.
+
+185
+00:22:22,950 --> 00:22:27,270
+Und die Anschlussverkabelung erfolgt am externen Klemmenblock.
+
+186
+00:22:28,890 --> 00:22:35,570
+Diese Art Montage ist sehr bequem, wenn du auf einer Platine arbeitest.
+
+187
+00:22:36,570 --> 00:22:40,230
+Jetzt einige Aufbaudetails.
+
+188
+00:22:42,530 --> 00:22:57,310
+Die Antenne, die unsere Spule zusammen mit der Drossel mit einem elektrischen Feld bestrahlt, besteht ausschließlich aus Aluminium.
+
+189
+00:22:58,290 --> 00:23:03,670
+Für den Ferritstab verwenden wir nur Niederfrequenz-Ferrit.
+
+190
+00:23:03,670 --> 00:23:12,550
+Du kannst übrigens nicht nur diese Art Ferritstab verwenden — du kannst Ringe oder Halbringe verwenden.
+
+191
+00:23:13,430 --> 00:23:16,830
+Die Hauptanforderung ist, dass der Ferrit Niederfrequenz ist.
+
+192
+00:23:17,530 --> 00:23:35,330
+Und besonders, wenn wir mit einem Katscher-basierten System arbeiten — ich habe das nicht umsonst gezeichnet — der Ferritfilter befindet sich in der Rückwicklungszone unserer Spule.
+
+193
+00:23:36,210 --> 00:23:37,590
+In der Nähe ihres dicken Teils.
+
+194
+00:23:38,170 --> 00:23:40,110
+Ein interessanter Effekt passiert.
+
+195
+00:23:40,630 --> 00:23:47,870
+Das Magnetfeld dieser Spule induziert auf dem Ferrit und moduliert den Katscher.
+
+196
+00:23:47,870 --> 00:23:52,730
+Sein Ausgang erhält ebenfalls Amplitudenmodulation.
+
+197
+00:23:53,310 --> 00:24:03,110
+Im Allgemeinen sind in diesem Aufbau die Amplitudenmodulationen und ihre Phasenkombinationen entscheidend, damit es richtig läuft.
+
+198
+00:24:06,060 --> 00:24:14,720
+Über was besser ist — gesteuerte Tesla oder gesteuerter Katscher.
+
+199
+00:24:14,720 --> 00:24:29,020
+Aus der Praxis sage ich, dieses System arbeitet viel einfacher, wenn die Hochspannungsseite ein gesteuerter Katscher ist, der ein Selbstoszillator ist.
+
+200
+00:24:30,800 --> 00:24:33,220
+Es gibt ein interessantes Merkmal.
+
+201
+00:24:34,060 --> 00:24:39,120
+Das Magnetfeld der Drossel induziert elektrisches Potential auf dieser Antenne.
+
+202
+00:24:39,120 --> 00:24:51,540
+Und es erreicht durch die Spule die Basis des Steuertransistors, der die Primärspule des Tesla-Transformators antreibt.
+
+203
+00:24:51,920 --> 00:24:59,920
+So macht das Magnetfeld eine gewisse Phasenabstimmung und Synchronisation der beiden Generatoren.
+
+204
+00:24:59,920 --> 00:25:10,720
+Du kannst auch sehen, im Schaltplan markiert, dass für diesen Generator das Tastverhältnis während der Abstimmung entscheidend ist.
+
+205
+00:25:10,880 --> 00:25:13,340
+Es muss abgestimmt werden.
+
+206
+00:25:14,500 --> 00:25:17,500
+Und plus die Synchronisation.
+
+207
+00:25:17,960 --> 00:25:19,920
+Im Schaltplan mit dem Buchstaben S markiert.
+
+208
+00:25:20,300 --> 00:25:25,860
+Die Synchronisation liegt zwischen dem primären und dem sekundären Generator.
+
+209
+00:25:25,860 --> 00:25:30,900
+Sie erfolgt mit Trimmpotis.
+
+210
+00:25:31,860 --> 00:25:36,540
+Aber im Allgemeinen reicht diese Abstimmung nicht ganz aus.
+
+211
+00:25:36,680 --> 00:25:41,880
+Das ist eine ziemlich grobe Abstimmung per Trimmpoti.
+
+212
+00:25:42,020 --> 00:25:52,600
+Also kann ein Leistungstransistor in dieser Schaltung, der die Primärwicklung steuert, eine gewisse Feinabstimmung machen.
+
+213
+00:25:53,600 --> 00:26:04,140
+Genau deshalb ist das Starten des Systems eine ziemlich schwierige Aufgabe, wenn du speziell eine gesteuerte Tesla verwendest.
+
+214
+00:26:04,580 --> 00:26:10,020
+Du musst sie sehr präzise abstimmen, damit das System startet.
+
+215
+00:26:12,200 --> 00:26:21,240
+Du kannst auch feststellen, dass in meinem Schaltplan der Erdungsdraht ausschließlich mit diesem Modul verbunden ist.
+
+216
+00:26:21,240 --> 00:26:29,080
+Wenn eine gesteuerte Tesla verwendet wird, verbindet sich der Erdungsdraht direkt mit ihrem kalten Ende.
+
+217
+00:26:29,500 --> 00:26:35,520
+Wenn ein gesteuerter Katscher, dann mit dem Emitter des Leistungstransistors.
+
+218
+00:26:36,740 --> 00:26:42,440
+Außerdem ist die Erdung an keinem Punkt mit dem gemeinsamen Draht verbunden.
+
+219
+00:26:42,960 --> 00:26:49,240
+Und sie ist nicht mit unserer Spule oder ihrer Drossel verbunden.
+
+220
+00:26:49,240 --> 00:27:04,640
+Wenn du die Erdung direkt mit einem dieser Punkte verbindest, stoppt die gesamte Interaktion zwischen der Tesla und diesem System.
+
+221
+00:27:04,880 --> 00:27:08,280
+Die Tesla wird nur mit sich selbst interagieren.
+
+222
+00:27:08,840 --> 00:27:17,540
+Die äquivalente Schaltung wäre, wenn du den Erdungsdraht direkt mit der Antenne verbindest.
+
+223
+00:27:18,540 --> 00:27:23,660
+Die Tesla würde dieses System überhaupt nicht beeinflussen, und das System würde nie starten.
+
+224
+00:27:24,480 --> 00:27:31,700
+Im besten Fall kannst du in diesem Fall die Erdung durch eine schnelle Diode anschließen.
+
+225
+00:27:33,320 --> 00:27:43,980
+Das kann helfen, wenn du die Diode in Richtung Erde von der Drossel der Spule anschließt — sie auf einem halben Zyklus arbeiten lassen.
+
+226
+00:27:43,980 --> 00:27:53,460
+Und die Diodenpolarität muss so sein, dass sie die Halbperiode, die die Tesla nutzt, nicht abschneidet.
+
+227
+00:27:54,420 --> 00:27:56,540
+Das ist entscheidend.
+
+228
+00:27:58,120 --> 00:28:07,860
+Dieses Fehlen einer Erdungsverbindung zur Spule funktioniert in dem Fall, mit dem ich es zu tun habe.
+
+229
+00:28:07,860 --> 00:28:29,000
+Denn wenn Leute andere Abstimmungsvarianten verwenden, wo der Erdungsdraht das ist, was die Spule in Halbwelle bringt — das heißt, sie bekommen eine Viertelwelle in dieser Spule
+
+230
+00:28:29,120 --> 00:28:32,160
+und eine Viertelwelle passt in die Erdungslänge.
+
+231
+00:28:32,160 --> 00:28:39,180
+Dann verbindet sich die Erdung obligatorisch mit der Spule, um das System in Halbwelle zu bringen.
+
+232
+00:28:39,820 --> 00:28:48,980
+Aber in meinem Fall mache ich das nicht — genau deshalb empfehle ich nicht, die Erdung an diesem oder diesem Punkt anzuschließen.
+
+233
+00:28:51,080 --> 00:28:56,380
+Dieses Schema ist ein konkreter Fall, eine der möglichen Varianten.
+
+234
+00:28:57,130 --> 00:29:08,320
+Du kannst auch einen Einkanal-Generator statt eines Zweikanal-Generators verwenden — einen Parallel-Schwingkreis statt eines Serien-Schwingkreises.
+
+235
+00:29:08,900 --> 00:29:21,380
+Statt den Amplitudenmodulationspunkt mit Versorgungsspannung und Konvertierung einzustellen, kannst du eine erzwungene Modulation des Niederfrequenz-Generators machen.
+
+236
+00:29:21,380 --> 00:29:32,540
+Es gibt unzählige Implementierungsoptionen, also würde ich sagen, wähle einen Ansatz und arbeite damit eigenständig — kopiere nicht blind.
+
+237
+00:29:33,280 --> 00:29:42,700
+Bei dieser Gelegenheit möchte ich auch allen danken, die mir geholfen haben, dieses System zu verstehen.
+
+238
+00:29:42,700 --> 00:29:51,320
+Und ein besonderer Dank an einen Typen aus dem realstrannik-Forum, einen guten Freund von mir.
+
+239
+00:29:52,540 --> 00:29:58,080
+Egal, was andere von dir denken, Slav — ich weiß, wer du wirklich bist.
+
+240
+00:29:58,740 --> 00:30:00,980
+Großen Respekt und Dank für die Hilfe.
