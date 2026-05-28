@@ -538,8 +538,15 @@ def strip_vocals(
         "-n", demucs_model,
         "-o", str(work),
     ]
-    if demucs_segment is not None:
-        cmd += ["--segment", str(demucs_segment)]
+    # Transformer-based htdemucs / htdemucs_ft refuse segments longer than
+    # 7.8s (their training window). Cap silently to keep the pipeline robust
+    # to user input — convolutional models (hdemucs_mmi, mdx*) are unbounded.
+    seg = demucs_segment
+    if seg is not None and demucs_model.startswith("htdemucs") and seg > 7:
+        print(f"  [INFO] capping --segment from {seg} to 7 for transformer model {demucs_model} (max 7.8s)")
+        seg = 7
+    if seg is not None:
+        cmd += ["--segment", str(seg)]
     cmd.append(str(audio_path))
     try:
         subprocess.run(cmd, check=True, capture_output=True)
@@ -756,15 +763,38 @@ def _build_plan_dynamic(
     return parts
 
 
+_NVENC_CACHED: bool | None = None
+
+
 def _has_nvenc() -> bool:
-    """Detect if ffmpeg's NVIDIA HEVC encoder is available (much faster on T4)."""
+    """Return True only if ffmpeg's NVIDIA HEVC encoder is present AND
+    actually works on this machine. The encoder can be listed even on
+    GPU-less runtimes (Colab CPU-only, etc.) and then fail at encode time —
+    we test by encoding one frame end-to-end and cache the result."""
+    global _NVENC_CACHED
+    if _NVENC_CACHED is not None:
+        return _NVENC_CACHED
     try:
-        r = subprocess.run(
+        listed = subprocess.run(
             ["ffmpeg", "-hide_banner", "-encoders"],
             capture_output=True, text=True, timeout=10,
         )
-        return "hevc_nvenc" in r.stdout
+        if "hevc_nvenc" not in listed.stdout:
+            _NVENC_CACHED = False
+            return False
+        test = subprocess.run(
+            ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error",
+             "-f", "lavfi", "-i", "color=black:size=64x64:rate=1:duration=0.1",
+             "-c:v", "hevc_nvenc", "-f", "null", "-"],
+            capture_output=True, text=True, timeout=15,
+        )
+        _NVENC_CACHED = test.returncode == 0
+        if not _NVENC_CACHED:
+            print("  [INFO] hevc_nvenc listed by ffmpeg but failed encode test; "
+                  "falling back to libx265 (CPU). Renders will be slower.")
+        return _NVENC_CACHED
     except Exception:
+        _NVENC_CACHED = False
         return False
 
 
