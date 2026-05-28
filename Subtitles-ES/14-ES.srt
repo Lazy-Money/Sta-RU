@@ -1,0 +1,199 @@
+1
+00:00:00,710 --> 00:00:02,340
+Hola, Oleg Herman.
+
+2
+00:00:02,460 --> 00:00:03,340
+Hola, Kirill.
+
+3
+00:00:03,700 --> 00:00:09,680
+Quiero mostrarte para qué sirve este aparato y qué se puede hacer con él, cómo sintonizarlo.
+
+4
+00:00:11,080 --> 00:00:21,180
+Tenemos un generador a 16,6 kHz y 1,66 MHz.
+
+5
+00:00:22,000 --> 00:00:26,880
+El generador entrega una ráfaga de 5 pulsos con un ciclo útil de aproximadamente...
+
+6
+00:00:26,880 --> 00:00:32,540
+Lo sintonicé a alrededor de 30% de ciclo útil en la Tesla.
+
+7
+00:00:33,940 --> 00:00:35,400
+Saquemos la ferrita.
+
+8
+00:00:36,400 --> 00:00:38,400
+Te muestro lo que se suele ver.
+
+9
+00:00:40,040 --> 00:00:42,500
+Bien, y la encendemos.
+
+10
+00:00:44,000 --> 00:00:46,160
+Y tenemos una oscilación amortiguada.
+
+11
+00:00:47,480 --> 00:00:49,060
+Bueno, eso es lo que se suele ver.
+
+12
+00:00:50,140 --> 00:00:52,420
+Aquí va la antena.
+
+13
+00:00:52,680 --> 00:00:56,140
+Uno al inductor, el otro allá, para que se vea, para que no se desplace.
+
+14
+00:00:56,860 --> 00:00:59,340
+Ahora metamos la ferrita acá.
+
+15
+00:00:59,500 --> 00:01:01,260
+Ya tenía todo presintonizado.
+
+16
+00:01:02,320 --> 00:01:06,960
+El número de vueltas quedó asimétrico aquí y aquí.
+
+17
+00:01:08,240 --> 00:01:11,740
+Y ahora encendamos todo y miremos.
+
+18
+00:01:11,820 --> 00:01:15,460
+Lo encendemos, y esto es lo que sale.
+
+19
+00:01:15,640 --> 00:01:19,200
+Oscilación, pero prácticamente no hay oscilación.
+
+20
+00:01:19,780 --> 00:01:23,520
+Es decir, está, pero apenas.
+
+21
+00:01:24,440 --> 00:01:37,820
+Si te toca poner un capacitor de 2,2 nF aquí, si metes algo así, bueno, dos en paralelo uno a la vez, se calientan mucho, porque tengo 100 V yendo a la Tesla.
+
+22
+00:01:40,160 --> 00:01:42,880
+La amplitud salta muy alto.
+
+23
+00:01:44,280 --> 00:01:49,500
+Y al final, lo único que nos queda es hacer un generador de pulsos de nanosegundos con esta Tesla.
+
+24
+00:01:50,400 --> 00:01:51,540
+Es todo simple, más o menos.
+
+25
+00:01:52,420 --> 00:01:59,580
+Para eso quemé esos diodos, ahora compré 26 del X108.
+
+26
+00:02:01,780 --> 00:02:09,360
+Voy a hacer un trencito con ellos y poner una resistencia de 330 a 470 kΩ en paralelo con cada diodo.
+
+27
+00:02:10,040 --> 00:02:12,700
+Y voy a tener un pulso unidireccional.
+
+28
+00:02:13,580 --> 00:02:15,720
+Así.
+
+29
+00:02:17,680 --> 00:02:19,740
+Ah, por cierto, la resonancia aquí no se desplaza.
+
+30
+00:02:21,880 --> 00:02:31,060
+Para sintonizar una resonancia que no se desplace, incluso la puedes poner antes del rectificador y la resonancia tampoco se desplazará.
+
+31
+00:02:31,120 --> 00:02:35,980
+Para eso hay que sintonizar esta bobina de una manera específica.
+
+32
+00:02:36,920 --> 00:02:41,160
+Aquí está el inductor a 20 metros, este es a 40 metros.
+
+33
+00:02:41,400 --> 00:02:42,460
+Bueno, solo como ejemplo.
+
+34
+00:02:42,900 --> 00:02:43,400
+La Tesla también.
+
+35
+00:02:43,500 --> 00:02:45,400
+Entonces, resulta que tenemos 3 resonancias aquí.
+
+36
+00:02:46,080 --> 00:02:47,560
+Resonancia dentro de resonancia, básicamente.
+
+37
+00:02:50,620 --> 00:02:56,760
+La Tesla está sintonizada al timbre, pero hay que hacer apenas 3 pulsos más o menos.
+
+38
+00:02:56,980 --> 00:02:59,600
+Terminé con 5 pulsos, no funciona de otra forma.
+
+39
+00:03:00,740 --> 00:03:03,240
+Ah, y me desvié del tema.
+
+40
+00:03:03,360 --> 00:03:16,380
+Para conseguir una resonancia que no se desplace, para no tener que instalar un control automático de frecuencia, hay que sintonizar una bobina a una frecuencia de, digamos, 16 kHz, y la otra bobina a 8 kHz.
+
+41
+00:03:17,140 --> 00:03:26,840
+Y para que la frecuencia no se desplace pase lo que pase, hay que tomar la señal de la bobina sintonizada en la banda más baja.
+
+42
+00:03:27,560 --> 00:03:32,840
+En ese caso la frecuencia, incluso la fase, no se desplazará, quedará firme como una roca.
+
+43
+00:03:33,040 --> 00:03:38,980
+Quedará firme como una roca sin importar la carga que le pongas, la frecuencia no se desplazará.
+
+44
+00:03:39,380 --> 00:03:39,900
+Probado.
+
+45
+00:03:44,250 --> 00:03:51,890
+Lo que termino teniendo aquí son 3 resonancias en el inductor, en la bobina grande.
+
+46
+00:03:52,730 --> 00:03:55,110
+En la Tesla, la Tesla tiene que coincidir con el timbre.
+
+47
+00:03:56,130 --> 00:03:56,730
+Absolutamente.
+
+48
+00:03:57,310 --> 00:03:59,090
+Hacemos un pulso unidireccional.
+
+49
+00:03:59,550 --> 00:04:02,230
+Golpeamos en el pico, en el pico
+
+50
+00:04:18,280 --> 00:04:23,060
+mismo, le golpeamos.
