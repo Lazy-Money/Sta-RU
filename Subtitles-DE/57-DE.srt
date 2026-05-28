@@ -1,0 +1,1279 @@
+1
+00:00:00,620 --> 00:00:02,060
+Hallo zusammen.
+
+2
+00:00:03,140 --> 00:00:11,240
+Heute zeige ich dir die Methode, um die Gegentakt-Arbeitsfrequenz für diese Spule zu finden.
+
+3
+00:00:11,400 --> 00:00:19,360
+Damit Wellenprozesse darin stattfinden und die Spule sich ohne Last erwärmt.
+
+4
+00:00:20,580 --> 00:00:23,240
+Also damit der Strom im System tatsächlich ansteigt.
+
+5
+00:00:23,620 --> 00:00:32,600
+Jetzt testen wir's und schauen, welche Frequenzen die Leute immer wieder benutzen und welche tatsächlich gebraucht werden.
+
+6
+00:00:33,380 --> 00:00:45,020
+Dafür brauchen wir dieses Hilfswerkzeug — einen Ferritring, Marke 1500–2000, kann auch höher sein, egal.
+
+7
+00:00:45,360 --> 00:00:50,700
+Wickle 8–10 Windungen; kein Widerstand nötig, wir verfolgen keine exakte Phasenlage.
+
+8
+00:00:51,460 --> 00:00:59,460
+Wir müssen nur die Stromamplitude im System kennen.
+
+9
+00:01:00,160 --> 00:01:01,800
+So funktioniert's.
+
+10
+00:01:02,000 --> 00:01:17,360
+Wenn elektrischer Strom durch einen Leiter fließt, oder wenn Ladungen ruhen, aber eine Spinrotation stattfindet, bildet sich um den Leiter ein Magnetfeld.
+
+11
+00:01:17,360 --> 00:01:30,300
+Wenn du diesen Ring über den Leiter legst, fängt er das Magnetfeld ein, und die Windungen wandeln es in eine Spannung um, die wir auf dem Oszilloskop ablesen können.
+
+12
+00:01:31,260 --> 00:01:48,660
+Um die Strombewegung in dieser Spule zu verfolgen, müssen wir die Spulenenden physisch — galvanisch — kurzschließen, und so sehen wir, wann die Spule im Halbwellen-Modus arbeitet.
+
+13
+00:01:50,620 --> 00:01:51,880
+Wo fangen wir an?
+
+14
+00:01:52,940 --> 00:01:56,780
+Leg den Ring über einen der Anschlüsse, mit kurzgeschlossenen Enden,
+
+15
+00:01:59,870 --> 00:02:05,110
+mach guten Kontakt und schließ das Oszilloskop an.
+
+16
+00:02:07,370 --> 00:02:08,870
+Die Phasenlage spielt keine Rolle.
+
+17
+00:02:12,360 --> 00:02:14,620
+Masse und die Sonde selbst.
+
+18
+00:02:16,220 --> 00:02:22,880
+An Geräten brauchen wir auch einen Signalgenerator und ein Oszilloskop.
+
+19
+00:02:23,820 --> 00:02:30,820
+Der Ausgang des Signalgenerators wird direkt an die Drossel der Spule angeschlossen.
+
+20
+00:02:31,700 --> 00:02:35,760
+Und dann schauen wir, was auf den Geräten erscheint.
+
+21
+00:02:37,220 --> 00:02:39,260
+Jetzt sehen wir —
+
+22
+00:02:42,880 --> 00:02:47,540
+geben wir zunächst 5 kHz rein.
+
+23
+00:02:48,080 --> 00:02:50,640
+Speise eine Sinuswelle ein,
+
+24
+00:02:53,900 --> 00:02:55,780
+Amplitude an.
+
+25
+00:02:56,260 --> 00:03:00,340
+Unsere Spitze-Spitze-Amplitude beträgt 10 Volt.
+
+26
+00:03:02,640 --> 00:03:09,060
+Und jetzt durchstimmen wir die Frequenz und beobachten, was auf dem Oszillogramm passiert.
+
+27
+00:03:12,600 --> 00:03:26,940
+Wir durchlaufen den üblichen Arbeitsbereich — irgendwo zwischen 10 und 45–50 kHz.
+
+28
+00:03:27,840 --> 00:03:32,320
+Wo praktisch jeder arbeitet.
+
+29
+00:03:32,420 --> 00:03:44,380
+Und wir sehen, dass es keinen Sinn ergibt, bei etwa 25 kHz zu bleiben, weil die Stromamplitude bei dieser Frequenz minimal ist.
+
+30
+00:03:45,540 --> 00:03:46,300
+Weiter.
+
+31
+00:03:49,400 --> 00:03:54,740
+Über 60 kHz hinaus, und die Amplitude beginnt zu wachsen.
+
+32
+00:03:57,220 --> 00:03:58,120
+Weiter schauen.
+
+33
+00:04:00,500 --> 00:04:06,260
+Schau, welchen Bereich wir durchlaufen haben.
+
+34
+00:04:06,600 --> 00:04:17,860
+Amplitude liegt jetzt bei 0,2 V pro Teilung.
+
+35
+00:04:20,500 --> 00:04:23,320
+Noch nichts Bemerkenswertes.
+
+36
+00:04:24,340 --> 00:04:25,420
+Weiter.
+
+37
+00:04:34,060 --> 00:04:36,740
+Die Amplitude ändert sich nicht viel.
+
+38
+00:04:37,720 --> 00:04:43,040
+Wir können das Tempo erhöhen — nicht 1 kHz auf einmal, sondern 10 kHz.
+
+39
+00:04:43,380 --> 00:04:51,520
+Schau — schon bei 500 kHz und die Amplitude hat sich nicht wesentlich verändert.
+
+40
+00:04:58,300 --> 00:05:08,340
+Und erst ab 800 kHz sehen wir einen Sprung in der Amplitude.
+
+41
+00:05:10,700 --> 00:05:13,720
+Amplitude klettert weiter.
+
+42
+00:05:15,260 --> 00:05:20,020
+Maximum erreicht um 910 kHz.
+
+43
+00:05:21,860 --> 00:05:25,480
+Ein Gegentakt kann offensichtlich nicht bei dieser Frequenz arbeiten.
+
+44
+00:05:26,820 --> 00:05:31,980
+Wir haben eine Option — bei einer Subharmonischen dieser Frequenz arbeiten.
+
+45
+00:05:32,120 --> 00:05:37,560
+Wenn's hier 910 kHz sind, können wir bei 91 kHz arbeiten.
+
+46
+00:05:38,420 --> 00:05:43,500
+Jetzt prüfen wir, was bei dieser Frequenz noch interessant sein könnte.
+
+47
+00:05:49,750 --> 00:06:04,610
+Wenn wir bei dieser Frequenz eine Hand an die Spule legen, können wir prüfen, wie umgebende Objekte sie beeinflussen.
+
+48
+00:06:05,670 --> 00:06:09,330
+Wir wollen Frequenzen, die stabil sind.
+
+49
+00:06:10,590 --> 00:06:11,570
+Beobachten.
+
+50
+00:06:16,340 --> 00:06:21,040
+Jetzt lege ich meine Hand an die Spule und wir sehen die Amplitude.
+
+51
+00:06:23,740 --> 00:06:27,520
+Hand drauf — du siehst, die Amplitude wächst.
+
+52
+00:06:27,720 --> 00:06:31,460
+Hier in die Rückwicklungszone.
+
+53
+00:06:32,820 --> 00:06:34,480
+Amplitude wächst.
+
+54
+00:06:36,400 --> 00:06:38,900
+Jetzt durchstimmen wir weiter die Frequenz.
+
+55
+00:06:39,900 --> 00:06:42,000
+980 kHz.
+
+56
+00:06:42,080 --> 00:06:43,420
+Amplitude wächst hier auch.
+
+57
+00:06:44,660 --> 00:06:46,600
+1000 kHz.
+
+58
+00:06:46,820 --> 00:06:48,500
+Kleines Wachstum auch.
+
+59
+00:06:50,140 --> 00:06:52,940
+1100 kHz.
+
+60
+00:06:52,940 --> 00:06:54,700
+Wachstum ist minimal.
+
+61
+00:06:55,620 --> 00:07:07,500
+Unser Fenster der Möglichkeit liegt irgendwo zwischen 850 und 1100 kHz.
+
+62
+00:07:07,500 --> 00:07:12,480
+Wir haben unseren ersten Bereich gefunden, und jetzt können wir ihn aufschreiben.
+
+63
+00:07:14,520 --> 00:07:15,480
+Schreiben wir's auf.
+
+64
+00:07:23,820 --> 00:07:28,740
+830–1100 kHz.
+
+65
+00:07:29,300 --> 00:07:35,360
+Das ist unser Fenster für die Subharmonische, mit der wir versuchen, den Gegentakt zu betreiben.
+
+66
+00:07:36,360 --> 00:07:51,620
+Als Nächstes schauen wir, ob es im System eine höherfrequente Stromkomponente gibt, bei der das Stromwachstum noch größer ist.
+
+67
+00:07:52,260 --> 00:07:53,380
+Frequenz durchstimmen.
+
+68
+00:08:01,340 --> 00:08:07,080
+Wir durchstimmen den Bereich und es zeigt sich kein signifikantes Amplitudenwachstum.
+
+69
+00:08:09,000 --> 00:08:12,260
+Wir suchen den nächsten deutlichen Sprung.
+
+70
+00:08:17,820 --> 00:08:21,360
+10-kHz-Schritt — das ist akzeptabel.
+
+71
+00:08:22,620 --> 00:08:26,700
+Bei 3800 fällt die Amplitude sogar ab.
+
+72
+00:08:29,060 --> 00:08:33,060
+Da — wir haben's gefunden.
+
+73
+00:08:34,060 --> 00:08:44,160
+Ab 3910 kHz haben wir einen scharfen Amplitudenanstieg.
+
+74
+00:08:45,680 --> 00:08:47,500
+Jetzt durchstimmen wir sorgfältiger.
+
+75
+00:08:50,280 --> 00:08:52,060
+Klettert, klettert.
+
+76
+00:08:53,620 --> 00:08:59,080
+Gutes Wachstum — wir können auf einen halben Volt pro Teilung umschalten.
+
+77
+00:09:00,980 --> 00:09:03,720
+Immer noch Wachstum sichtbar.
+
+78
+00:09:05,940 --> 00:09:08,320
+1 Volt pro Teilung.
+
+79
+00:09:13,850 --> 00:09:23,590
+Und hier beginnt der Abfall bei etwa 4650 kHz.
+
+80
+00:09:25,170 --> 00:09:31,570
+Maximale Amplitude bei 4620–630.
+
+81
+00:09:32,570 --> 00:09:36,910
+Das ist unser zweites Maximum.
+
+82
+00:09:37,250 --> 00:09:38,550
+Schreiben wir's auf.
+
+83
+00:09:47,890 --> 00:09:52,770
+4620–4630 kHz.
+
+84
+00:09:54,530 --> 00:09:58,050
+Schauen wir uns den Effekt an, wenn man bei dieser Frequenz eine Hand an die Spule hält.
+
+85
+00:09:58,050 --> 00:10:03,330
+Bei so hohen Frequenzen zeigen sich normalerweise Verluste.
+
+86
+00:10:06,170 --> 00:10:11,870
+Diese Frequenzen sind nicht so stabil, aber die Amplitude ist auf ihrem Höhepunkt.
+
+87
+00:10:12,390 --> 00:10:13,730
+Das ist ein normaler Prozess.
+
+88
+00:10:15,610 --> 00:10:18,890
+Schauen wir — vielleicht finden wir noch was.
+
+89
+00:10:23,180 --> 00:10:25,380
+Als Nächstes, Amplitudenabfall.
+
+90
+00:10:32,830 --> 00:10:36,590
+Schneller — 100-kHz-Schritte.
+
+91
+00:10:37,290 --> 00:10:39,510
+Hier ist noch ein kleiner Peak.
+
+92
+00:10:40,430 --> 00:10:42,690
+Einen bei 7600 gefunden.
+
+93
+00:10:43,930 --> 00:10:47,790
+Diese Frequenzen sind für uns zu hoch, um noch nützlich zu sein.
+
+94
+00:10:47,950 --> 00:10:52,970
+Und weiter draußen bei 11 MHz.
+
+95
+00:10:54,130 --> 00:10:58,770
+So eine hohe Frequenz ist für unsere Systeme außer Reichweite, nicht nötig.
+
+96
+00:10:58,770 --> 00:11:01,950
+Und bei dieser Frequenz sind die Ergebnisse sehr instabil.
+
+97
+00:11:02,350 --> 00:11:05,610
+Bei 8800 ist die Amplitude nicht so groß.
+
+98
+00:11:05,710 --> 00:11:09,790
+Und der Effekt beim Berühren der Spule ist enorm.
+
+99
+00:11:11,690 --> 00:11:19,790
+In der Praxis haben wir zwei Arbeitsfrequenzen identifiziert, bei denen der Strom maximal ist.
+
+100
+00:11:19,850 --> 00:11:21,150
+Eine davon ist stabil.
+
+101
+00:11:26,310 --> 00:11:28,290
+Unsere nächsten Schritte.
+
+102
+00:11:28,290 --> 00:11:33,290
+Jetzt müssen wir eine Subharmonische in diesem Bereich finden.
+
+103
+00:11:34,310 --> 00:11:40,970
+Die per Spektralanalyse diese starke Frequenz trifft.
+
+104
+00:11:42,250 --> 00:11:51,330
+Und deren, sagen wir, zehnte Harmonische eine der Frequenzen in diesem Bereich anregen würde.
+
+105
+00:11:53,290 --> 00:12:00,750
+Als Nächstes müssen wir das Oszilloskop in den Spektrumanalysator-Modus umschalten.
+
+106
+00:12:01,250 --> 00:12:05,010
+Den sogenannten FFT-Modus — schnelle Fourier-Transformation.
+
+107
+00:12:05,790 --> 00:12:10,150
+Und das Spektrogramm dieses Signals prüfen.
+
+108
+00:12:10,150 --> 00:12:21,790
+Also, unser Fenster der Möglichkeit liegt zwischen 83 und 110 kHz als Subharmonische.
+
+109
+00:12:23,390 --> 00:12:30,310
+Schalte das Oszilloskop in den Spektrumanalysator-Modus.
+
+110
+00:12:32,930 --> 00:12:35,210
+Da ist er — FFT-Modus.
+
+111
+00:12:39,220 --> 00:12:45,340
+Und was du über Messungen auf diese Weise wissen musst.
+
+112
+00:12:46,360 --> 00:12:59,240
+Du kannst Signal-Harmonische mit einer Sinuswelle eigentlich nicht messen — sie würden im Spektrum als Graphen in Dezibel erscheinen.
+
+113
+00:12:59,360 --> 00:13:02,580
+Bei einem Sinussignal.
+
+114
+00:13:03,580 --> 00:13:07,580
+Lass mich's zeigen.
+
+115
+00:13:10,080 --> 00:13:13,100
+Aktuell werden 83 kHz am Eingang eingespeist.
+
+116
+00:13:15,820 --> 00:13:17,160
+Und wenn wir schauen,
+
+117
+00:13:20,790 --> 00:13:33,410
+in diesem Modus zeigt das Gerät nur die eingespeiste Mittenfrequenz im Sinus.
+
+118
+00:13:33,410 --> 00:13:42,670
+In diesem Fall sind das 83 kHz.
+
+119
+00:13:44,470 --> 00:13:48,610
+Jetzt stellen wir die Ablenkung pro Teilung ein.
+
+120
+00:13:49,390 --> 00:13:58,630
+Uns interessiert eine Ablenkung von etwa 50 kHz pro Teilung für den Spektrumanalysator.
+
+121
+00:14:00,390 --> 00:14:03,610
+Kann jetzt den ersten Ausgang deaktivieren,
+
+122
+00:14:07,270 --> 00:14:08,710
+damit er nicht stört.
+
+123
+00:14:08,830 --> 00:14:12,870
+Und jetzt können wir das Spektralbild beobachten.
+
+124
+00:14:14,650 --> 00:14:21,390
+Denk dran, der Signalgenerator ist im Sinus-Modus.
+
+125
+00:14:25,030 --> 00:14:26,670
+Was sehen wir hier?
+
+126
+00:14:31,060 --> 00:14:38,540
+Im Fadenkreuz in der Mitte ist die Frequenz.
+
+127
+00:14:42,280 --> 00:14:52,400
+Und wenn wir den zentralen Peak in Dezibel auf die Mitte ausrichten, kennen wir seine Frequenz.
+
+128
+00:14:52,400 --> 00:14:59,980
+Setzen wir zum Beispiel die Mitte hierher, und wir sehen unsere 83 kHz.
+
+129
+00:15:00,160 --> 00:15:02,180
+Lass mich zeigen, wo's angezeigt wird.
+
+130
+00:15:03,320 --> 00:15:07,220
+Auf meinem Gerät wird's in der unteren linken Ecke angezeigt.
+
+131
+00:15:07,700 --> 00:15:12,420
+Da ist es — 83 kHz, genau in der Mitte.
+
+132
+00:15:14,480 --> 00:15:21,540
+Wir sehen also, dass das Gerät erkennt, was wir als Sinus einspeisen.
+
+133
+00:15:21,540 --> 00:15:30,160
+Um Harmonische anzuregen, müssen wir ein Signal mit steilen Flanken einspeisen.
+
+134
+00:15:30,400 --> 00:15:36,360
+Was heißt, den Signalgenerator auf Rechteck umzuschalten.
+
+135
+00:15:37,280 --> 00:15:38,080
+Umschalten.
+
+136
+00:15:39,500 --> 00:15:43,740
+Jetzt siehst du, unser Bild hat sich geändert.
+
+137
+00:15:44,280 --> 00:15:58,300
+Wir sehen eine Reihe von Frequenzen in Vielfachen abgestuft, über einen Spektralbereich verteilt.
+
+138
+00:15:58,440 --> 00:16:01,200
+Und jetzt der nächste Teil der Suchmethode.
+
+139
+00:16:02,200 --> 00:16:16,200
+Wir haben festgestellt, dass unsere höchste Stromamplitude im Bereich 4620–4630 kHz liegt.
+
+140
+00:16:17,000 --> 00:16:32,620
+Jetzt wollen wir innerhalb unseres 83–110-kHz-Bereichs die Frequenz finden, die bei diesen hohen Frequenzen das höchste dB-Signal liefert.
+
+141
+00:16:35,160 --> 00:16:36,980
+Wir suchen unsere Frequenz.
+
+142
+00:16:41,520 --> 00:16:42,220
+4000...
+
+143
+00:16:44,860 --> 00:16:45,560
+600...
+
+144
+00:16:49,940 --> 00:16:52,260
+Hier haben wir 630.
+
+145
+00:16:57,330 --> 00:16:59,370
+Feinabstimmung.
+
+146
+00:17:12,800 --> 00:17:17,160
+Da sind sie — unsere 4630 MHz.
+
+147
+00:17:17,220 --> 00:17:20,140
+Wir sehen, er ist genau in der Mitte.
+
+148
+00:17:20,620 --> 00:17:37,800
+Jetzt müssen wir, indem wir Frequenzen in unserem Fenster der Möglichkeit auswählen, den Spektrogramm-Peak in die Mitte der Skala setzen.
+
+149
+00:17:42,070 --> 00:17:45,850
+Und mit der Frequenzsuche beginnen.
+
+150
+00:17:45,870 --> 00:17:47,070
+Sehr sanft.
+
+151
+00:17:53,230 --> 00:17:56,290
+Bewegung in Zehntel-Hz.
+
+152
+00:18:00,090 --> 00:18:05,490
+Und hier sehen wir — erster Treffer.
+
+153
+00:18:05,490 --> 00:18:06,530
+Beobachten.
+
+154
+00:18:15,210 --> 00:18:24,490
+4630 bei 84,2 kHz.
+
+155
+00:18:24,590 --> 00:18:25,330
+Schreiben wir's auf.
+
+156
+00:18:28,150 --> 00:18:30,950
+84,2.
+
+157
+00:18:31,630 --> 00:18:32,750
+Weiter.
+
+158
+00:18:34,970 --> 00:18:36,030
+Da.
+
+159
+00:18:36,170 --> 00:18:38,190
+Erwähnenswert —
+
+160
+00:18:38,490 --> 00:18:39,770
+84,2.
+
+161
+00:18:40,290 --> 00:18:45,210
+Hier zeigen sich auch Seitenharmonische.
+
+162
+00:18:45,370 --> 00:18:50,330
+Wir wollen ein saubereres Spektrum, ohne Seitenharmonische.
+
+163
+00:18:57,340 --> 00:18:57,680
+Da.
+
+164
+00:18:58,400 --> 00:19:00,800
+So sollte das Bild ungefähr aussehen.
+
+165
+00:19:04,630 --> 00:19:06,890
+Hier ist noch ein Treffer.
+
+166
+00:19:07,890 --> 00:19:14,630
+Bei 87,4 kHz.
+
+167
+00:19:14,710 --> 00:19:17,890
+Aber wir sehen auch Seitenpeaks.
+
+168
+00:19:20,650 --> 00:19:21,290
+Schreiben wir's auf.
+
+169
+00:19:22,050 --> 00:19:26,270
+87,4 kHz.
+
+170
+00:19:27,850 --> 00:19:28,810
+Weiter.
+
+171
+00:19:39,400 --> 00:19:43,260
+Und hier haben wir eine richtig gute Frequenz gefunden.
+
+172
+00:19:43,260 --> 00:19:57,980
+Ein sauberer Treffer, keine starken Seitenharmonischen — 90,8 kHz.
+
+173
+00:19:59,440 --> 00:20:00,980
+Wir können weitermachen.
+
+174
+00:20:07,620 --> 00:20:09,160
+Noch ein Treffer.
+
+175
+00:20:09,160 --> 00:20:18,520
+94,5 kHz.
+
+176
+00:20:18,860 --> 00:20:21,600
+Auch eine gute Frequenz.
+
+177
+00:20:24,060 --> 00:20:25,220
+Markieren wir sie.
+
+178
+00:20:26,560 --> 00:20:27,520
+Schreiben wir's auf.
+
+179
+00:20:30,200 --> 00:20:35,960
+Notiere Frequenzen, bei denen keine starken Seitenharmonischen vorhanden sind.
+
+180
+00:20:42,160 --> 00:20:44,080
+Weiter.
+
+181
+00:20:50,550 --> 00:20:51,930
+Noch ein Treffer.
+
+182
+00:20:52,070 --> 00:20:56,370
+Aber hier sehen wir schon starke Seitenharmonische.
+
+183
+00:20:57,510 --> 00:20:58,670
+Übersprungen.
+
+184
+00:21:03,800 --> 00:21:10,540
+Seitenharmonische auch bei 103 kHz.
+
+185
+00:21:21,570 --> 00:21:26,710
+Starke Seitenharmonische auch bei 107,7 kHz.
+
+186
+00:21:27,790 --> 00:21:32,890
+Und unser Fenster der Möglichkeit endet bei 110 kHz.
+
+187
+00:21:33,850 --> 00:21:35,190
+Wir haben es überschritten.
+
+188
+00:21:35,570 --> 00:21:37,070
+Danach interessiert es uns nicht.
+
+189
+00:21:37,610 --> 00:21:43,550
+Wir können sagen, wir haben zwei wahrscheinlichste Arbeitsfrequenzen.
+
+190
+00:21:44,950 --> 00:21:52,970
+90,8 kHz und 94,5 kHz.
+
+191
+00:21:53,790 --> 00:22:01,950
+Bei denen die Spule auf dieser starken Frequenz angeregt wird.
+
+192
+00:22:04,970 --> 00:22:13,710
+Jetzt schauen wir, welche davon in unseren Bereich 830–1100 kHz fällt.
+
+193
+00:22:16,330 --> 00:22:20,790
+Spektrogramm einklappen und schauen, was passiert.
+
+194
+00:22:22,970 --> 00:22:27,130
+Du siehst, das ist die erste, die wir anregen.
+
+195
+00:22:28,390 --> 00:22:33,210
+Aktuell entspricht das 111 kHz.
+
+196
+00:22:33,550 --> 00:22:40,930
+Einstellen auf unsere 90,8 kHz.
+
+197
+00:22:42,110 --> 00:22:49,970
+Und wir sehen die maximale Anregung in dieser Hochfrequenzzone.
+
+198
+00:22:49,970 --> 00:22:53,170
+Und hier ist einer der Peaks.
+
+199
+00:22:53,850 --> 00:22:55,770
+Jetzt schauen wir's an.
+
+200
+00:22:58,190 --> 00:23:00,450
+Hier ist unsere Frequenz.
+
+201
+00:23:00,950 --> 00:23:04,950
+Erstens, 90,8 kHz.
+
+202
+00:23:05,250 --> 00:23:06,490
+Und ich bin schauen gegangen.
+
+203
+00:23:07,710 --> 00:23:11,150
+Hier ist der zweite Peak bei 276 kHz.
+
+204
+00:23:11,290 --> 00:23:13,310
+Suche nach hoher Amplitude.
+
+205
+00:23:17,570 --> 00:23:31,730
+Und hier sehen wir — einer der Peaks von 90,8 kHz trifft genau auf 1 MHz.
+
+206
+00:23:33,750 --> 00:23:39,210
+Und wir sehen, es passt wunderschön in unser Fenster der Möglichkeit.
+
+207
+00:23:39,210 --> 00:23:51,090
+Indem wir also die Spule bei dieser Frequenz anregen, treiben wir sie sowohl mit der stabilen ersten Frequenzkomponente als auch mit der zweiten an.
+
+208
+00:23:51,090 --> 00:23:59,250
+Und jetzt schauen wir uns 94,5 kHz an.
+
+209
+00:23:59,450 --> 00:24:00,110
+Umschalten.
+
+210
+00:24:01,350 --> 00:24:06,050
+94,5.
+
+211
+00:24:07,030 --> 00:24:08,570
+Und schauen.
+
+212
+00:24:17,910 --> 00:24:27,150
+Der höchste Peak landet auch hier.
+
+213
+00:24:28,670 --> 00:24:39,030
+Aber die größte Stabilität war, wie erinnerlich, nahe 910 kHz.
+
+214
+00:24:40,230 --> 00:24:45,290
+Und der stärkste Anstieg, wenn wir eine Hand an die Spule legten.
+
+215
+00:24:46,150 --> 00:24:51,170
+Und der stärkste Amplitudenanstieg während der Amplitudenmessung.
+
+216
+00:24:51,170 --> 00:25:05,200
+Wir können also jetzt schlussfolgern, dass 90,8 kHz die beste Wahl für den Gegentaktbetrieb ist, basierend auf dem Spektrogramm.
+
+217
+00:25:06,170 --> 00:25:07,430
+Markieren wir's.
+
+218
+00:25:12,800 --> 00:25:14,840
+Das ist die Suchmethode.
+
+219
+00:25:15,840 --> 00:25:33,560
+Zur Verifikation können wir auf unsere 90,8 kHz umschalten, das Spektrogramm einklappen und die höchsten Peaks in Dezibel prüfen.
+
+220
+00:25:33,560 --> 00:25:39,420
+Einstellen, und ja, es ist tatsächlich genau 1 MHz.
+
+221
+00:25:40,700 --> 00:25:43,720
+Und wir können auf einen anderen hohen Peak wechseln.
+
+222
+00:25:47,140 --> 00:25:49,460
+Hier — der höchste.
+
+223
+00:25:51,620 --> 00:25:54,880
+Das sind unsere 4630.
+
+224
+00:26:02,860 --> 00:26:04,400
+Hier ist dieser Peak.
+
+225
+00:26:10,000 --> 00:26:13,820
+Wir haben also unsere Frequenz korrekt gefunden.
+
+226
+00:26:15,220 --> 00:26:20,700
+Wir können auch noch einen weiteren praktischen Check der identifizierten Frequenzen machen.
+
+227
+00:26:20,700 --> 00:26:26,200
+Indem wir die Schwebungsmuster bei verschiedenen Frequenzen abgleichen.
+
+228
+00:26:27,080 --> 00:26:32,100
+Aktuell wird ein Rechtecksignal bei 91 kHz eingespeist.
+
+229
+00:26:32,520 --> 00:26:37,220
+Und wir beobachten weiter mit den Stromsensoren.
+
+230
+00:26:41,670 --> 00:26:44,530
+Das ist das Signal, das wir einspeisen.
+
+231
+00:26:45,050 --> 00:26:50,730
+Es erzeugt solche Schwingungen in der Spule.
+
+232
+00:26:50,730 --> 00:26:53,330
+Wir beobachten die Schwebungen.
+
+233
+00:26:53,430 --> 00:26:57,230
+Ablenkung einklappen und
+
+234
+00:27:12,330 --> 00:27:14,030
+wir sehen interessante Muster.
+
+235
+00:27:17,950 --> 00:27:27,670
+Jetzt prüfen wir, ob diese Muster — diese Oszillogramme — bei der anderen Vielfachfrequenz gleich aussehen.
+
+236
+00:27:29,630 --> 00:27:37,090
+Speise den Signalgenerator mit 910 kHz.
+
+237
+00:27:43,080 --> 00:27:47,740
+Das Oszilloskop zeigt jetzt die Hüllkurvenamplitude.
+
+238
+00:27:49,220 --> 00:27:55,560
+Und wir sehen, die Amplitude ist gewachsen, aber die Schwebungen bleiben erhalten.
+
+239
+00:27:56,520 --> 00:27:58,680
+Gleiche Form.
+
+240
+00:28:02,480 --> 00:28:03,880
+Untersucht...
+
+241
+00:28:04,680 --> 00:28:15,460
+Jetzt ist die Ablenkung 5 Mikrosekunden pro Teilung.
+
+242
+00:28:18,960 --> 00:28:31,940
+Und wir speisen unsere Haupt-Starkfrequenz ein — 4630 kHz.
+
+243
+00:28:53,940 --> 00:28:55,940
+Amplitude über die Skala raus.
+
+244
+00:28:57,260 --> 00:29:02,280
+Kommen zurück und wir sehen die vertraute Fischform.
+
+245
+00:29:02,380 --> 00:29:08,100
+Das heißt, wir haben die Haupt-Starkfrequenz für diese Spule getroffen.
+
+246
+00:29:09,760 --> 00:29:18,740
+Du siehst das beim Hochfahren mit einem Rechtecksignal — du kannst auf ein Sinussignal umschalten.
+
+247
+00:29:21,100 --> 00:29:26,040
+Die Amplitude fällt, aber die Schwebungen bleiben.
+
+248
+00:29:31,730 --> 00:29:34,210
+Du siehst's bei verschiedenen Ablenkeinstellungen.
+
+249
+00:29:36,550 --> 00:29:40,570
+Das Bild hält sich bis zu
+
+250
+00:29:45,010 --> 00:29:47,970
+einer Sinuswelle auf der Hauptträgerwelle.
+
+251
+00:30:07,620 --> 00:30:20,200
+Und ebenso, wenn das Signal stark genug ist, zeigt das Oszilloskop die Hüllkurvenform — eine Sinuswelle auf diesen Fischen.
+
+252
+00:30:20,300 --> 00:30:24,680
+Wir können auch ihre Frequenz messen.
+
+253
+00:30:30,990 --> 00:30:33,710
+Umschalten in den Cursor-Messmodus.
+
+254
+00:30:35,810 --> 00:30:37,250
+Drück Pause.
+
+255
+00:30:38,250 --> 00:30:40,810
+Setze den ersten Cursor.
+
+256
+00:30:47,910 --> 00:30:48,570
+Zweiter.
+
+257
+00:30:56,140 --> 00:31:13,250
+Wir sehen, dass die Frequenz unserer Schwebungen in dieser Spule 32,47 Hz beträgt.
+
+258
+00:31:15,330 --> 00:31:28,270
+Was auch bestätigt, dass es kein 50-Hz-Netzaufnehmer ist, sondern echte Prozesse, die in dieser Spule stattfinden.
+
+259
+00:31:32,990 --> 00:31:36,050
+Ich habe dieses Ergebnis auch in der Praxis verifiziert.
+
+260
+00:31:37,470 --> 00:31:41,400
+Hier wurden 91 kHz eingespeist.
+
+261
+00:31:41,400 --> 00:31:51,060
+Und diese Spule begann sich bei dieser Frequenz ohne jegliche Last sehr gut aufzuwärmen.
+
+262
+00:31:51,200 --> 00:31:55,100
+Was bestätigt, dass die Erwärmung in dieser Zone stattfindet.
+
+263
+00:31:56,500 --> 00:32:05,420
+Vom Anfassen her — ich habe nicht mit einem Thermometer gemessen — etwa 45–50 Grad.
+
+264
+00:32:05,560 --> 00:32:09,960
+Aufwärmen bei etwa 3 Ampere Verbrauch am Gegentakt.
+
+265
+00:32:11,760 --> 00:32:14,650
+Die Spule heizt sich ohne Last auf.
+
+266
+00:32:15,720 --> 00:32:20,420
+Klare Strombewegung entlang der Drahtlänge.
+
+267
+00:32:21,940 --> 00:32:24,100
+Genau das, was wir wollen.
+
+268
+00:32:26,800 --> 00:32:31,540
+LC-Resonanz kannst du direkt am Gegentakt als solche nicht machen.
+
+269
+00:32:31,680 --> 00:32:33,340
+Das zeige ich später.
+
+270
+00:32:33,760 --> 00:32:39,180
+Du kannst 91 kHz nicht direkt der Drossel zuführen.
+
+271
+00:32:39,780 --> 00:32:40,720
+Was passiert?
+
+272
+00:32:40,820 --> 00:32:44,100
+Du kannst es natürlich versuchen — jeder hat's gemacht.
+
+273
+00:32:44,820 --> 00:32:46,480
+Und etwas Interessantes passiert.
+
+274
+00:32:46,760 --> 00:32:58,080
+Wenn du eine Frequenz einspeist, die gleich der Schalterarbeitsfrequenz ist, ergibt sich Folgendes.
+
+275
+00:32:59,300 --> 00:33:00,320
+Lass mich zeichnen.
+
+276
+00:33:01,360 --> 00:33:04,320
+Sagen wir, das ist unsere Gegentaktfrequenz.
+
+277
+00:33:05,340 --> 00:33:17,660
+Und wir haben während des Transistorbetriebs das Signal, das wir bei jeder Halbperiode hochfahren.
+
+278
+00:33:17,660 --> 00:33:40,380
+Wenn der Tesla an diesem Punkt feuert — passiert der Schlag praktisch beim Maximum, und wir bekommen, was viele aus eigenen Experimenten kennen — die Leistungsschalter des Gegentakts brennen durch.
+
+279
+00:33:40,380 --> 00:33:40,980
+Brennen durch.
+
+280
+00:33:42,200 --> 00:33:47,580
+Um das zu verhindern, wird der Gegentakt in einen anderen Modus gefahren.
+
+281
+00:33:47,660 --> 00:34:14,040
+Wie ich vorhin gezeichnet habe — und viele Leute fragten, warum ich dieses Bild in einem anderen Video gezeichnet habe — wo ich die einfallende Welle habe, wie ich's gezeichnet habe, und die reflektierte Welle.
+
+282
+00:34:14,040 --> 00:34:15,260
+Die reflektierte.
+
+283
+00:34:15,740 --> 00:34:17,500
+Und sie sind in Phase.
+
+284
+00:34:18,540 --> 00:34:21,440
+Viele Fragen, warum ich's so gezeichnet habe.
+
+285
+00:34:21,720 --> 00:34:22,820
+So nach dem Motto, das ist falsch.
+
+286
+00:34:23,000 --> 00:34:29,980
+Wir alle wissen aus dem Lehrbuch, dass eine reflektierte Welle 180 Grad phasenverschoben zurückkommt.
+
+287
+00:34:30,860 --> 00:34:31,900
+Alles richtig.
+
+288
+00:34:32,220 --> 00:34:34,960
+Das ist die Spannungsreflexion.
+
+289
+00:34:35,200 --> 00:34:37,460
+Für den Strom denken wir nicht so darüber nach.
+
+290
+00:34:37,680 --> 00:34:55,200
+Wenn wir in einem LC-Schwingkreis eine stromreflektierte Welle mit 180-Grad-Phasenverschiebung haben, ist das gleichbedeutend damit, zwei Magnete mit gleichen Polen aneinander zu setzen.
+
+291
+00:34:55,900 --> 00:35:01,140
+Du wirst keinen Nettoschub von einem starken Magnetfeld sehen.
+
+292
+00:35:01,820 --> 00:35:09,900
+Deshalb bekommen wir am Gegentakt die einfallende und reflektierte Welle in Phase.
+
+293
+00:35:10,900 --> 00:35:24,580
+Das kannst du physisch sehen, indem du einen Stromsensor an den Schwingkreis der Drossel hängst.
+
+294
+00:35:26,000 --> 00:35:37,280
+Und in einem einzelnen Verlauf siehst du sowohl die hinausgehende als auch die zurückkommende Welle.
+
+295
+00:35:37,280 --> 00:35:43,690
+Sie kopiert diese Welle phasengleich — du bekommst ziemlich genau dieses Bild.
+
+296
+00:35:44,620 --> 00:35:49,710
+Sie laufen in Phase, nur mit kleinerer Amplitude.
+
+297
+00:35:55,600 --> 00:36:13,080
+Am Gegentakt wird das erreicht, indem das richtige Verhältnis zwischen dem an der Drossel hängenden Kondensator und dem am Ausgang unserer Gradient-Grenadenspule hängenden Kondensator gewählt wird.
+
+298
+00:36:15,040 --> 00:36:16,540
+Und was passiert?
+
+299
+00:36:16,700 --> 00:36:19,840
+Der Gegentakt läuft auf einer niedrigen Frequenz.
+
+300
+00:36:20,860 --> 00:36:30,920
+Aber wenn wir auf dem Oszilloskop schauen, zeigt es uns eine Frequenz höher als die Hauptsignalfrequenz.
+
+301
+00:36:31,820 --> 00:36:40,680
+In meinem Fall stellte sich heraus, dass meine Frequenz 91 kHz beträgt.
+
+302
+00:36:42,420 --> 00:36:52,020
+Das bedeutet, der Gegentakt muss tatsächlich 2-mal niedriger laufen — kann 3-mal niedriger angetrieben werden.
+
+303
+00:36:52,460 --> 00:36:53,980
+Um dieses Bild zu bekommen.
+
+304
+00:36:54,080 --> 00:36:59,160
+In der Praxis hatte ich sogar 3 Wellen in Phase.
+
+305
+00:37:00,920 --> 00:37:08,200
+So sieht's am Stromsensor aus — eine einzelne Phase.
+
+306
+00:37:09,820 --> 00:37:15,820
+Wenn das passiert, bekommen wir ein starkes Netto-Magnetfeld.
+
+307
+00:37:16,300 --> 00:37:28,860
+Und wenn wir dann die Ablenkung, die Zeit pro Teilung, einklappen, sieht man wirklich interessante Muster — die Fische.
+
+308
+00:37:29,860 --> 00:37:32,320
+Warum brauchen wir diesen Trick?
+
+309
+00:37:33,900 --> 00:37:40,100
+Wir haben schon darüber gesprochen, wie, wenn der Tesla auf der Grundwelle schlägt, die Transistoren durchbrennen.
+
+310
+00:37:40,380 --> 00:37:54,140
+Aber wenn wir dieses Bild haben, dann bekommen wir, wenn der Tesla auf freier Schwingung arbeitet, an dieser Stelle einen scharfen Stromamplitudenanstieg.
+
+311
+00:37:54,140 --> 00:38:06,780
+Wenn wir den Stromtransformator anschauen, sehen wir das Bild, das ich im vorherigen Video gezeigt habe.
+
+312
+00:38:07,060 --> 00:38:12,560
+Der Effekt des Tesla-Transformators auf den Strom im Schwingkreis.
+
+313
+00:38:13,020 --> 00:38:20,840
+Die Stromamplitude springt hoch, der Sinus wird viel größer.
+
+314
+00:38:20,840 --> 00:38:31,840
+Und gleichzeitig fällt der Gesamtverbrauch der Versorgung, die den Gegentakt speist.
+
+315
+00:38:33,400 --> 00:38:37,580
+Stromamplitude wächst und der Verbrauch fällt.
+
+316
+00:38:37,580 --> 00:39:03,280
+In realen Zahlen — sagen wir, im Normalbetrieb ohne Tesla-Betrieb zog der Gegentakt 3 Ampere bei 24 Volt; mit einsetzendem Tesla-Betrieb verbraucht er in einem Fall 1 Ampere bei denselben 24 Volt.
+
+317
+00:39:03,280 --> 00:39:06,820
+Dieselbe 24-Volt-Versorgung.
+
+318
+00:39:09,780 --> 00:39:12,160
+Interessante Eigenschaft.
+
+319
+00:39:12,300 --> 00:39:17,140
+In den nächsten Videos schauen wir uns an, wie das passiert, wie es funktioniert.
+
+320
+00:39:20,600 --> 00:39:22,360
+Viel Erfolg euch allen bei euren Experimenten.

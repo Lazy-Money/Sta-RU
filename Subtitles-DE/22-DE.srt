@@ -1,0 +1,1063 @@
+1
+00:01:15,670 --> 00:01:20,490
+Das Interessanteste ist diese Erdung.
+
+2
+00:01:21,270 --> 00:01:26,570
+Das Auto fährt und geht genau hier hin.
+
+3
+00:01:28,610 --> 00:01:30,070
+0,75er Draht.
+
+4
+00:01:32,270 --> 00:01:35,650
+Unsere Gradientenspule ist 38 Meter lang.
+
+5
+00:01:36,070 --> 00:01:37,930
+Die Drossel ist dreilagig geworden.
+
+6
+00:01:39,610 --> 00:01:43,590
+Drossel 19 Meter, Tesla 19 Meter.
+
+7
+00:01:44,510 --> 00:01:47,970
+Drahtstärke 2,5 Millimeter.
+
+8
+00:01:48,150 --> 00:01:49,350
+Nicht Quadratmillimeter, einfach Millimeter.
+
+9
+00:01:50,330 --> 00:01:55,770
+Wären es Quadratmillimeter, hätte ich leider einen Ziegelstein hier draufstellen müssen.
+
+10
+00:01:56,590 --> 00:01:59,930
+Denn im Betrieb hat es sich auf diese Seite durchgebogen.
+
+11
+00:02:01,270 --> 00:02:04,370
+Das ist nicht so gut.
+
+12
+00:02:05,430 --> 00:02:08,230
+Meine Antenne ist Aluminiumdraht.
+
+13
+00:02:08,970 --> 00:02:11,330
+Das alles ist Kupfer, und das ist Aluminium.
+
+14
+00:02:17,720 --> 00:02:19,800
+Die Frequenz ist so herausgekommen.
+
+15
+00:02:20,340 --> 00:02:22,300
+Ich habe sie am Spektrumanalysator gesehen.
+
+16
+00:02:28,960 --> 00:02:32,980
+Ich habe keine Relais, alles wird elektronisch geschaltet.
+
+17
+00:02:36,020 --> 00:02:37,280
+Der Schaltplan ist so.
+
+18
+00:02:37,520 --> 00:02:41,800
+Was gezeichnet ist, sind nur die tragenden Elemente.
+
+19
+00:03:00,140 --> 00:03:03,300
+12 V, 8,5 A.
+
+20
+00:03:04,800 --> 00:03:05,400
+Dioden.
+
+21
+00:03:05,920 --> 00:03:07,120
+Gute Dioden.
+
+22
+00:03:07,340 --> 00:03:10,480
+Ich habe die genommen, die mir ständig durchgebrannt sind.
+
+23
+00:03:10,700 --> 00:03:12,920
+Die haben mich verrückt gemacht, sind ständig durchgebrannt.
+
+24
+00:03:13,600 --> 00:03:14,620
+Ich habe so viele davon gewechselt.
+
+25
+00:03:14,720 --> 00:03:17,460
+Ich habe 150 EBU 04 eingebaut.
+
+26
+00:03:21,660 --> 00:03:24,480
+Am Transformator, am Gegentakt.
+
+27
+00:03:25,300 --> 00:03:30,580
+Ich habe IRF3205 mit dem Z-Buchstaben.
+
+28
+00:03:32,740 --> 00:03:36,740
+Und am Tesla habe ich K2611.
+
+29
+00:03:38,380 --> 00:03:40,180
+Mit einer Diode in Reihe.
+
+30
+00:03:41,120 --> 00:03:43,520
+Das ist IR308.
+
+31
+00:03:44,500 --> 00:03:45,760
+Das ist der Gleichrichter für den Tesla.
+
+32
+00:03:45,840 --> 00:03:47,040
+Hier habe ich eine Wicklung.
+
+33
+00:03:47,180 --> 00:03:49,020
+Und die Stromversorgung für den Tesla geht hier hin.
+
+34
+00:03:49,120 --> 00:03:49,680
+50 Volt.
+
+35
+00:03:49,780 --> 00:03:52,140
+Ich sehe, das ist eher niedrig.
+
+36
+00:03:52,320 --> 00:03:56,280
+Wenn du die Spannung erhöhst, denke ich, geht die Leistung hoch.
+
+37
+00:03:57,160 --> 00:04:01,680
+Bei 4 Volt hatte ich 1,5 bis 2 Kilowatt.
+
+38
+00:04:02,480 --> 00:04:04,820
+Hier habe ich 50 Volt eingestellt.
+
+39
+00:04:06,240 --> 00:04:20,890
+Es ist auf 6,2 Kilowatt hochgegangen.
+
+40
+00:04:22,090 --> 00:04:23,910
+Die Spule hat sich erhitzt.
+
+41
+00:04:24,510 --> 00:04:25,870
+Und es fiel ab.
+
+42
+00:04:26,030 --> 00:04:26,850
+Das ist sehr schlecht.
+
+43
+00:04:27,850 --> 00:04:30,090
+Wir haben einen Resonanzkondensator.
+
+44
+00:04:30,530 --> 00:04:32,150
+Tja, es ist kein Resonanzkondensator.
+
+45
+00:04:32,690 --> 00:04:34,670
+Dort werden die Resonanzkondensatoren ausgewählt.
+
+46
+00:04:38,290 --> 00:04:44,630
+Er ist eher dafür da, dass beim Schlag nichts zurückfliegt und den Transistor durchhaut.
+
+47
+00:04:45,470 --> 00:04:49,550
+Insgesamt habe ich an der Gradienten-Auffangspule diesen Kondensator.
+
+48
+00:04:49,710 --> 00:04:53,390
+68 nF bei einem Kilovolt.
+
+49
+00:04:53,610 --> 00:05:01,830
+Und hier haben wir 0,1, 0,1, 0,1, 0,22, 0,22, und das ergibt 440 nF.
+
+50
+00:05:03,150 --> 00:05:08,270
+Diese beiden Startkondensatoren zur Filterung, je 10 µF bei 450 V.
+
+51
+00:05:12,290 --> 00:05:17,430
+Insgesamt 20 µF für die Startkondensatoren.
+
+52
+00:05:19,010 --> 00:05:21,430
+Das Netzteil ist ein normales, eines, das man kaufen kann.
+
+53
+00:05:23,050 --> 00:05:23,530
+Diode.
+
+54
+00:05:24,170 --> 00:05:25,810
+Das gemeinsame Netzteil.
+
+55
+00:05:26,410 --> 00:05:28,030
+Es geht hier zu den Gegentakten.
+
+56
+00:05:28,150 --> 00:05:33,030
+Geht über eine 40-Ampere-Diode zum Controller.
+
+57
+00:05:33,450 --> 00:05:35,630
+Die habe ich aus einem Computer-Netzteil gezogen.
+
+58
+00:05:36,250 --> 00:05:36,970
+Wozu ist die da?
+
+59
+00:05:37,090 --> 00:05:43,390
+Um das Netzteil von der Batteriespannung zu trennen.
+
+60
+00:05:43,560 --> 00:05:44,330
+Wenn es läuft.
+
+61
+00:05:45,030 --> 00:05:51,830
+Ich denke, ich baue auch noch einen Widerstand ein, damit das System startet, damit dieselbe Batterie auch laden kann.
+
+62
+00:05:53,610 --> 00:05:54,250
+Das war's.
+
+63
+00:05:55,770 --> 00:06:00,990
+Und ich habe die Oszillogramme aufgenommen, ich stelle ein PDF-Dokument zusammen.
+
+64
+00:06:02,190 --> 00:06:04,650
+Sehr interessant, und mit guten Erklärungen geworden.
+
+65
+00:06:05,730 --> 00:06:07,370
+Dann gehen wir zum Controller.
+
+66
+00:06:07,410 --> 00:06:13,030
+Dieser Lüfter hier ist von einem Computer-Prozessor.
+
+67
+00:06:14,270 --> 00:06:16,150
+Schauen wir uns den Controller an.
+
+68
+00:06:16,630 --> 00:06:18,030
+Was haben wir im Controller?
+
+69
+00:06:19,210 --> 00:06:19,430
+Da.
+
+70
+00:06:20,510 --> 00:06:21,730
+Der Hauptoszillator.
+
+71
+00:06:23,490 --> 00:06:25,090
+Ich zeige die Sachen so.
+
+72
+00:06:26,730 --> 00:06:32,350
+IR2153, Kondensator und Trimmer-Widerstand.
+
+73
+00:06:33,270 --> 00:06:36,050
+Das ist die Frequenz des Hauptoszillators.
+
+74
+00:06:37,370 --> 00:06:41,190
+Dann geht das alles durch eine Verzögerungskette.
+
+75
+00:06:41,630 --> 00:06:42,510
+Hier haben wir zwei.
+
+76
+00:06:43,010 --> 00:06:45,210
+Dann IR2110.
+
+77
+00:06:45,770 --> 00:06:47,750
+Das reicht für 15 kHz.
+
+78
+00:06:48,370 --> 00:06:49,910
+Und es geht zu diesen Transistoren.
+
+79
+00:06:51,590 --> 00:06:55,770
+Das alles hättest du weglassen können, aber es muss alles da sein.
+
+80
+00:06:56,830 --> 00:06:57,450
+Treiber.
+
+81
+00:06:58,670 --> 00:07:03,030
+Und wir haben 74HC14, HC00.
+
+82
+00:07:04,190 --> 00:07:10,750
+Auf dem HC14 sind der Phasenschieber und die Phasenverzögerung aufgebaut.
+
+83
+00:07:11,390 --> 00:07:19,310
+Drunter ist aufgebaut, wie soll ich sagen, gemäß Schaltplan.
+
+84
+00:07:19,390 --> 00:07:20,970
+Holen wir jetzt den Schaltplan raus.
+
+85
+00:07:23,650 --> 00:07:25,350
+Ich habe ihn hier draufgeklatscht.
+
+86
+00:07:34,150 --> 00:07:35,450
+Gehen wir nach dem Schaltplan vor.
+
+87
+00:07:35,690 --> 00:07:36,550
+Hier ist der Schaltplan.
+
+88
+00:07:36,830 --> 00:07:40,350
+Falls den jemand nicht hat, so ist der Schaltplan herausgekommen.
+
+89
+00:07:40,490 --> 00:07:42,230
+Das Einzige ist, ich habe diese Diode verwechselt.
+
+90
+00:07:42,430 --> 00:07:43,590
+Ich habe sie verkehrt herum eingebaut.
+
+91
+00:07:44,110 --> 00:07:44,630
+Ich habe es gezeichnet.
+
+92
+00:07:45,390 --> 00:07:45,690
+So.
+
+93
+00:07:47,950 --> 00:07:48,950
+Schauen wir mal.
+
+94
+00:07:49,370 --> 00:07:49,770
+Da ist er.
+
+95
+00:07:51,350 --> 00:07:52,190
+IR2153.
+
+96
+00:07:52,470 --> 00:07:54,130
+Die Ketten.
+
+97
+00:07:55,290 --> 00:07:56,170
+Verzögerungszeit.
+
+98
+00:07:56,530 --> 00:07:58,410
+Dann IR2110.
+
+99
+00:07:58,910 --> 00:08:00,310
+Das alles wird verstärkt.
+
+100
+00:08:00,430 --> 00:08:01,770
+Geht zum Transformator.
+
+101
+00:08:02,670 --> 00:08:04,750
+Ich werde Transformator und Spule umwickeln.
+
+102
+00:08:05,270 --> 00:08:06,390
+Mir hat die Leistung nicht gereicht.
+
+103
+00:08:07,550 --> 00:08:09,330
+Das alles wird verstärkt.
+
+104
+00:08:09,890 --> 00:08:10,830
+Je 8 Windungen.
+
+105
+00:08:10,890 --> 00:08:12,170
+33 Windungen für den Tesla.
+
+106
+00:08:13,170 --> 00:08:14,990
+Diese Resonanz liegt bei 4 Windungen.
+
+107
+00:08:16,770 --> 00:08:18,370
+Dieser Kondensator.
+
+108
+00:08:18,450 --> 00:08:19,330
+340 nF.
+
+109
+00:08:19,570 --> 00:08:23,530
+Das ist ein ganzer Satz ausgewählter Kondensatoren.
+
+110
+00:08:23,850 --> 00:08:29,390
+Wir haben es auch so, dass du auf jeder Halbwelle schlagen kannst.
+
+111
+00:08:30,010 --> 00:08:39,370
+Da der Chip eine Verzögerungseigenschaft hat, verzögern wir das Signal am Chip selbst.
+
+112
+00:08:39,630 --> 00:08:41,870
+Wir verzögern hier und es kommt mit Versatz an.
+
+113
+00:08:41,890 --> 00:08:42,610
+Wozu brauchen wir das?
+
+114
+00:08:43,350 --> 00:08:51,010
+Damit der Tesla... der Tesla über die Ladung gesteuert werden könnte und die Gradientenspule aufladen könnte.
+
+115
+00:08:52,530 --> 00:08:56,390
+Hier haben wir einen 10-kΩ-Teiler von jedem Arm.
+
+116
+00:08:57,170 --> 00:09:01,590
+Diese 12 V Amplitude werden halbiert und erreichen die Logik.
+
+117
+00:09:02,050 --> 00:09:03,430
+Du kannst es direkt oder invertiert nehmen.
+
+118
+00:09:03,710 --> 00:09:07,590
+Wer Elektronik versteht, wird kapieren, wovon ich rede.
+
+119
+00:09:08,450 --> 00:09:10,250
+Als Nächstes haben wir hier Jumper.
+
+120
+00:09:10,290 --> 00:09:12,490
+Drei Jumper-Positionen.
+
+121
+00:09:14,150 --> 00:09:17,830
+Du kannst von hier den direkten, den invertierten Zustand nehmen.
+
+122
+00:09:18,490 --> 00:09:20,410
+Das macht die Halbwellenlänge.
+
+123
+00:09:21,250 --> 00:09:22,950
+Dann ein 2-kΩ-Widerstand.
+
+124
+00:09:23,350 --> 00:09:26,410
+Einer geht zur Masse, 10 kΩ und 4,7 nF.
+
+125
+00:09:27,210 --> 00:09:29,310
+Das ist die Zeitverzögerung.
+
+126
+00:09:31,190 --> 00:09:32,690
+Und wofür ist dieser 10 kΩ?
+
+127
+00:09:33,130 --> 00:09:40,010
+Hier, wie soll ich sagen, im Schmitt-Trigger-Chip ist der Ausgang nicht ganz symmetrisch, es kommt zu Verzerrungen.
+
+128
+00:09:42,270 --> 00:09:44,650
+Ich musste diesen Widerstand passend auswählen.
+
+129
+00:09:49,220 --> 00:09:52,520
+Als Nächstes geht es zu so etwas wie einem Nanosekunden-Pulser.
+
+130
+00:09:52,740 --> 00:09:53,940
+Tja, kein Nanosekunden-Pulser.
+
+131
+00:09:54,540 --> 00:09:56,880
+Dieser Chip macht einen Korridor.
+
+132
+00:09:57,960 --> 00:10:00,020
+So eine Art Timing.
+
+133
+00:10:00,840 --> 00:10:06,800
+Wenn ständig hier am Ausgang ein High-Pegel am sechsten Pin des Chips hängt.
+
+134
+00:10:07,660 --> 00:10:10,580
+Und es fällt auf diesen hier.
+
+135
+00:10:11,020 --> 00:10:11,900
+Erster, zweiter.
+
+136
+00:10:12,200 --> 00:10:15,360
+Dann invertiert, kommt mit Verzögerung an.
+
+137
+00:10:16,360 --> 00:10:19,480
+Und hier am vierten Pin kommt dasselbe direkte Signal an.
+
+138
+00:10:20,580 --> 00:10:38,520
+Und um einen Korridor zu bilden, in dem die Öffnungszeit, diese Öffnungszeit in das steuernde Logikelement fällt, in den Schmitt-Trigger.
+
+139
+00:10:38,840 --> 00:10:41,560
+Darauf ist ein Generator aufgebaut.
+
+140
+00:10:41,640 --> 00:10:48,960
+Ich habe ihn so gewählt, dass er irgendwo von 1,9 MHz bis runter auf 1,3 MHz regelt.
+
+141
+00:10:49,340 --> 00:10:52,160
+Am elften Pin sind 1 nF.
+
+142
+00:10:52,900 --> 00:10:55,320
+Am zehnten Pin ein Teiler — 100 Ω.
+
+143
+00:10:55,460 --> 00:10:56,800
+Und ein 200-Ω-Widerstand.
+
+144
+00:10:57,840 --> 00:11:00,580
+Also, so funktioniert dieses Gerät.
+
+145
+00:11:00,720 --> 00:11:03,960
+Da hängt ständig eine Eins, High-Pegel.
+
+146
+00:11:05,000 --> 00:11:07,500
+Und hier haben wir ständig eine Null.
+
+147
+00:11:07,560 --> 00:11:09,400
+Am zehnten Pin hängt ständig eine Null.
+
+148
+00:11:10,160 --> 00:11:16,000
+In dem Moment, in dem sich der Korridor öffnet, erscheint hier am sechsten Pin eine Null.
+
+149
+00:11:17,140 --> 00:11:20,200
+Und die Diode wird gesperrt.
+
+150
+00:11:20,320 --> 00:11:23,100
+Und der Chip kann ein Signal erzeugen.
+
+151
+00:11:23,320 --> 00:11:25,100
+Da gibt er einen Burst raus.
+
+152
+00:11:25,460 --> 00:11:27,480
+Etwa sieben Pulse.
+
+153
+00:11:31,860 --> 00:11:35,700
+Wie viele Pulse es sein werden, regelt dieser Chip.
+
+154
+00:11:35,900 --> 00:11:38,040
+22 nF und 1 kΩ.
+
+155
+00:11:39,440 --> 00:11:41,700
+Als Nächstes haben wir hier auch so etwas wie 1 ns.
+
+156
+00:11:41,820 --> 00:11:42,860
+Wofür ist das?
+
+157
+00:11:44,380 --> 00:11:46,700
+Da wir Transistor-Gates haben.
+
+158
+00:11:47,160 --> 00:11:50,180
+Die Gate-Kapazität kann leicht unterschiedlich sein.
+
+159
+00:11:50,600 --> 00:11:53,420
+Deswegen kann es Probleme geben.
+
+160
+00:11:54,840 --> 00:11:57,620
+Dafür habe ich noch einen Nanosekunden-Pulser eingebaut.
+
+161
+00:11:57,900 --> 00:12:06,480
+Dieser Puls, wenn er hier ankommt, hat nicht genau 50 % Tastverhältnis.
+
+162
+00:12:06,740 --> 00:12:12,960
+Es stellt sich heraus, wir müssen machen, naja, wenn eine Null hängt, hängt hier eine Eins.
+
+163
+00:12:14,440 --> 00:12:17,080
+Und für kurze Zeit erscheint eine Null.
+
+164
+00:12:17,260 --> 00:12:24,600
+Die meiste Zeit zeigt sich, dass der Null-Pegel als Eins erscheint.
+
+165
+00:12:25,400 --> 00:12:27,200
+Und entsprechend habe ich einen Treiber eingebaut.
+
+166
+00:12:28,100 --> 00:12:29,780
+SCS-37, 321.
+
+167
+00:12:30,140 --> 00:12:32,660
+Es gibt auch einen 322, der ist ohne Invertierung.
+
+168
+00:12:33,200 --> 00:12:35,100
+Und der 321, der ist mit Invertierung.
+
+169
+00:12:35,320 --> 00:12:39,820
+Hier kommt eine Null rein, also haben wir hier eine Eins.
+
+170
+00:12:39,980 --> 00:12:41,540
+Tja, und entsprechend andersrum.
+
+171
+00:12:42,520 --> 00:12:45,920
+Wir brauchen das irgendwie so, hier ist eine Diode, Widerstand.
+
+172
+00:12:47,120 --> 00:12:50,780
+Die Diode, der Widerstand — da sind sie bei mir.
+
+173
+00:12:51,580 --> 00:12:53,780
+Hier sind sie, diese hier.
+
+174
+00:12:54,720 --> 00:12:55,800
+Da sind sie bei mir.
+
+175
+00:12:56,940 --> 00:13:03,600
+Der Transistor muss sehr schnell geschlossen werden, damit es einen scharfen Abschnitt am Tesla gibt.
+
+176
+00:13:05,440 --> 00:13:05,640
+Da.
+
+177
+00:13:06,360 --> 00:13:08,120
+Und die Diode, naja, ich habe die Diode hier verwechselt.
+
+178
+00:13:08,280 --> 00:13:10,360
+Die Diode ist tatsächlich verkehrt herum.
+
+179
+00:13:12,320 --> 00:13:15,080
+Wofür sind diese Widerstände und der Kondensator?
+
+180
+00:13:15,520 --> 00:13:20,320
+Als ich geschaut habe, was dieser Transistor an der Grenze kann, habe ich nachgelesen.
+
+181
+00:13:21,080 --> 00:13:34,640
+RDS-ON ist ein Parameter, wenn der Transistor voll offen ist, musst du ausrechnen, welcher Widerstand da sein muss, damit der Transistor nicht durchhaut, nicht abbrennt.
+
+182
+00:13:35,080 --> 00:13:36,320
+Deshalb habe ich ihn eingebaut.
+
+183
+00:13:36,780 --> 00:13:44,240
+Dieser 2611 hat 1,1 Ω RDS, deshalb habe ich 1,2 Ω eingesetzt.
+
+184
+00:13:44,670 --> 00:13:45,203
+Da.
+
+185
+00:13:46,380 --> 00:13:54,180
+Hier habe ich Platz für 3,3 µF, und was ich hier drin habe, sind insgesamt 1,5 µF.
+
+186
+00:13:55,740 --> 00:13:58,540
+Hier ist der Gleichrichter, Kondensator.
+
+187
+00:13:59,000 --> 00:14:02,040
+Der Kondensator selbst aus vier Dioden gebaut.
+
+188
+00:14:02,040 --> 00:14:05,940
+Eine Drossel habe ich hier nicht eingebaut.
+
+189
+00:14:06,640 --> 00:14:10,760
+Aber am Netzteil eine 100-µH-Drossel — das ist diese runde hier.
+
+190
+00:14:11,580 --> 00:14:12,900
+Wo 101 draufsteht.
+
+191
+00:14:14,251 --> 00:14:14,958
+Da.
+
+192
+00:14:17,860 --> 00:14:19,860
+Hier sind die Arten von Bauteilen.
+
+193
+00:14:20,160 --> 00:14:22,860
+Hier ist ein Chip, und hier sind Bauteile — hier ist ein Chip.
+
+194
+00:14:24,400 --> 00:14:29,360
+Tja, der Rest ist das, was gezeichnet ist, wie man es wickelt.
+
+195
+00:14:31,420 --> 00:14:33,960
+Naja, eigentlich ist hier nicht alles vollständig gezeichnet.
+
+196
+00:14:34,240 --> 00:14:38,480
+Ich habe den Schaltplan ein bisschen angepasst, aber das Wesentliche ist so.
+
+197
+00:14:40,853 --> 00:14:41,360
+Da.
+
+198
+00:14:42,920 --> 00:14:50,980
+Oh, übrigens, hier habe ich notiert, wie ich die Gradientenspule und die Spule am Tesla gewickelt habe.
+
+199
+00:14:51,680 --> 00:14:53,220
+Egal, mach dir keine Sorgen.
+
+200
+00:14:53,560 --> 00:15:01,100
+Alle Windungen, du nimmst dieses Rohr zu dir hin, so, und du wickelst nach vorn nach rechts.
+
+201
+00:15:02,140 --> 00:15:07,440
+Außer, darunter ist eine Lage, so, zwei solche Lagen.
+
+202
+00:15:10,700 --> 00:15:13,760
+Diese und diese Lage werden rückwärts gewickelt.
+
+203
+00:15:13,860 --> 00:15:15,700
+Hier habe ich Pfeile gezeichnet.
+
+204
+00:15:16,520 --> 00:15:19,080
+Also, du nimmst es, so ist die Spule gewickelt.
+
+205
+00:15:20,280 --> 00:15:24,660
+Und hier habe ich die Erdung gezeichnet, und das heiße Ende auf der anderen Seite.
+
+206
+00:15:25,400 --> 00:15:31,160
+Im Grunde nimmst du es, bohrst ein Loch in das Rohr, führst es durch, bohrst ein Loch und wickelst.
+
+207
+00:15:31,420 --> 00:15:32,160
+Ach so.
+
+208
+00:15:33,080 --> 00:15:38,280
+Wickle, wickle, wickle, wickle es bis zum Ende.
+
+209
+00:15:41,200 --> 00:15:42,860
+19 Meter gewickelt.
+
+210
+00:15:43,340 --> 00:15:45,240
+Hier habe ich diese Biegung.
+
+211
+00:15:45,820 --> 00:15:45,940
+Da.
+
+212
+00:15:46,420 --> 00:15:49,080
+Und du fängst an, andersrum zu wickeln.
+
+213
+00:15:49,180 --> 00:15:53,260
+Wickle so, wickle, wickle, komm zur Mitte.
+
+214
+00:15:55,080 --> 00:15:56,960
+Dann wickle, wickle, wickle.
+
+215
+00:15:57,840 --> 00:15:58,780
+Mit Isolierband umwickelt.
+
+216
+00:15:58,880 --> 00:15:59,160
+Weiter.
+
+217
+00:15:59,920 --> 00:16:00,800
+Noch eine Lage.
+
+218
+00:16:01,660 --> 00:16:02,000
+So.
+
+219
+00:16:02,600 --> 00:16:02,980
+Und hier.
+
+220
+00:16:04,140 --> 00:16:08,080
+Du bohrst ein Loch, und da hast du zwei Enden, die hier rauskommen.
+
+221
+00:16:09,000 --> 00:16:12,120
+Das untere Ende geht zur Masse, die erste Lage.
+
+222
+00:16:12,360 --> 00:16:17,660
+Die zweite Lage geht zum... Es ist der heiße Resonanzkondensator.
+
+223
+00:16:17,800 --> 00:16:18,760
+Tja, nicht Resonanz.
+
+224
+00:16:18,800 --> 00:16:19,840
+Es ist keine Resonanz.
+
+225
+00:16:19,940 --> 00:16:20,780
+Es ist keine Resonanz.
+
+226
+00:16:20,860 --> 00:16:22,020
+Dafür ist er nicht da.
+
+227
+00:16:24,460 --> 00:16:28,200
+Dann kommt ein neuer Verstärker und zwei Kondensatoren.
+
+228
+00:16:28,840 --> 00:16:30,040
+Wie die Drossel gewickelt ist.
+
+229
+00:16:31,180 --> 00:16:33,020
+Hier haben wir drei Lagen.
+
+230
+00:16:34,420 --> 00:16:36,000
+Hier ist es, das heiße Ende.
+
+231
+00:16:36,120 --> 00:16:38,660
+Ach, kaltes Ende, das zur Masse geht.
+
+232
+00:16:39,220 --> 00:16:40,380
+Da, verlötet.
+
+233
+00:16:40,580 --> 00:16:41,340
+Es geht zur Masse.
+
+234
+00:16:42,920 --> 00:16:46,320
+Du wickelst so.
+
+235
+00:16:47,700 --> 00:16:48,780
+Komm bis hier.
+
+236
+00:16:50,380 --> 00:16:51,780
+Dann wickle so.
+
+237
+00:16:53,280 --> 00:16:55,320
+Das ist die zweite Lage und die dritte Lage.
+
+238
+00:16:55,560 --> 00:16:56,560
+Wickle so.
+
+239
+00:16:58,120 --> 00:16:59,200
+Und der hier ging.
+
+240
+00:17:00,620 --> 00:17:07,980
+Tja, dieser klappbare Kondensator landet bei 4 Windungen.
+
+241
+00:17:08,440 --> 00:17:09,240
+Landet genau hier.
+
+242
+00:17:09,860 --> 00:17:11,800
+Das andere Ende auf Masse.
+
+243
+00:17:13,600 --> 00:17:14,560
+Hier ist die Sammelschiene.
+
+244
+00:17:14,700 --> 00:17:15,840
+Ich habe zwei dicke Sammelschienen.
+
+245
+00:17:16,380 --> 00:17:19,760
+Und dieses Transformator-Ende ist auch auf Masse.
+
+246
+00:17:21,460 --> 00:17:23,440
+Da bekommen wir diese Resonanz.
+
+247
+00:17:25,140 --> 00:17:30,360
+Natürlich konnte ich nicht die ganze Leistung rausholen, die in dieser Schaltung steckt.
+
+248
+00:17:30,660 --> 00:17:35,560
+Tja, irgendwo um die 20 bis 25 Prozent konnte ich rausziehen.
+
+249
+00:17:36,860 --> 00:17:38,700
+Ich meine, im Selbstlauf.
+
+250
+00:17:38,980 --> 00:17:40,740
+Auf der Suche zu nehmen, auf der Suche nach Gewinn.
+
+251
+00:17:41,460 --> 00:17:42,560
+Das meine ich.
+
+252
+00:17:43,800 --> 00:17:44,020
+Da.
+
+253
+00:17:44,540 --> 00:17:50,520
+Hier hat es nicht 5 Windungen ergeben, mehr in dieser Spule.
+
+254
+00:17:52,580 --> 00:17:53,380
+Hier ist sie.
+
+255
+00:17:54,640 --> 00:17:57,180
+Vom Tesla geht es so hier rein.
+
+256
+00:17:58,440 --> 00:17:59,500
+Gegensinnig gewickelte Windungen.
+
+257
+00:18:00,540 --> 00:18:04,560
+Ich musste abwickeln, neu wickeln, näher, weiter und hin und her schieben.
+
+258
+00:18:06,100 --> 00:18:06,180
+Da.
+
+259
+00:18:06,440 --> 00:18:07,760
+Und es ging zur Antenne.
+
+260
+00:18:07,880 --> 00:18:09,200
+Meine Antenne ist aus Aluminium.
+
+261
+00:18:10,840 --> 00:18:13,640
+Tja, das war's kurz und knapp, was ich erzählen konnte.
+
+262
+00:18:15,380 --> 00:18:18,600
+Und hier in der Steckdose haben wir Gleichstrom.
+
+263
+00:18:19,460 --> 00:18:19,960
+Ja, so.
+
+264
+00:18:22,060 --> 00:18:26,540
+Hier am Ende kommt die Batterie von der Batterie rein.
+
+265
+00:18:27,700 --> 00:18:28,980
+Die Last wird dort angeschlossen.
+
+266
+00:18:29,300 --> 00:18:30,680
+Tja, alles klar, denke ich.

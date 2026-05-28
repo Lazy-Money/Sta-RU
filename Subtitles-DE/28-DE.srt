@@ -1,0 +1,371 @@
+1
+00:00:01,230 --> 00:00:16,690
+Also, in diesem Experiment haben wir dieselbe Spule, die im ersten Video gezeigt wurde, nur dass wir jetzt etwas daran herumgebastelt haben, die Drossel neu gewickelt und ein paar Dinge ergänzt.
+
+2
+00:00:18,870 --> 00:00:33,550
+Wir haben ein Milliamperemeter, aber in diesem Fall sind seine Anzeigen nicht korrekt, wir nutzen es nur, um den Strom über die Skala anzuzeigen.
+
+3
+00:00:34,490 --> 00:00:50,790
+Damit dieses DC-Milliamperemeter auf Wechselstrom anspricht, schneiden wir mit dieser schnellen Diode hier eine Halbwelle ab und leiten den Strom in eine Richtung.
+
+4
+00:00:53,210 --> 00:00:59,610
+Wir verwenden außerdem einen digitalen Signalgenerator und ein digitales Oszilloskop.
+
+5
+00:01:00,470 --> 00:01:08,370
+Hier sehen wir, der Signalgenerator gibt momentan ein halbes Volt aus, Spitze-zu-Spitze-Amplitude.
+
+6
+00:01:08,770 --> 00:01:16,570
+Er gibt es von diesen Tastkopfenden aus, und es geht zur Drossel der Spule.
+
+7
+00:01:17,110 --> 00:01:33,130
+Am Ausgang sehen wir eine Amplitude von rund 440 bis 400 mV, also praktisch dieselbe.
+
+8
+00:01:34,930 --> 00:01:41,550
+Wir bestätigen, dass diese Art Spule kein Abwärtstransformator ist.
+
+9
+00:01:43,610 --> 00:01:48,990
+Hier ist die Drossel die halbe Drahtlänge dessen, was hier gewickelt ist.
+
+10
+00:01:49,670 --> 00:01:57,210
+Damit ergibt sich, dass es hier zusätzlich entsprechend weniger Windungen geben sollte, mehr an der Primärspule.
+
+11
+00:01:57,370 --> 00:02:02,270
+Theoretisch sollten wir einen Aufwärtstransformator bekommen, aber das passiert nicht.
+
+12
+00:02:04,270 --> 00:02:05,250
+Schauen wir weiter.
+
+13
+00:02:06,310 --> 00:02:18,990
+Wir messen den Strom in Skalenteilen mit unserem Milliamperemeter, das der Generator jetzt direkt speist.
+
+14
+00:02:19,190 --> 00:02:35,290
+Dafür trennen wir den Tastkopf vom Generator ab und befestigen die Klemme daran, die zum Amperemeter geht.
+
+15
+00:02:38,670 --> 00:02:40,070
+Angeschlossen.
+
+16
+00:02:40,070 --> 00:02:43,210
+Wir fixieren die Anzeigen.
+
+17
+00:02:46,230 --> 00:02:50,230
+Im Moment haben wir 14 Skalenteile,
+
+18
+00:02:53,710 --> 00:03:04,550
+entsprechend 14 Skalenteile Strom bei einem halben Volt Amplitude.
+
+19
+00:03:07,930 --> 00:03:13,890
+Wir geben den Signalgenerator zurück an die Drossel.
+
+20
+00:03:15,170 --> 00:03:16,370
+Anschließen.
+
+21
+00:03:30,050 --> 00:03:31,130
+Angeschlossen.
+
+22
+00:03:31,250 --> 00:03:34,130
+So, wir sehen, die Ausgangsamplitude ist wieder da.
+
+23
+00:03:34,890 --> 00:03:44,570
+Wir nehmen die Amplitude von der Kondensatorbank, die über den Schieber an den Ausgang der Sekundärspule angeschlossen ist.
+
+24
+00:03:45,730 --> 00:03:54,510
+Jetzt schalten wir unser Milliamperemeter im Kurzschlussmodus an den Ausgang.
+
+25
+00:03:54,690 --> 00:04:00,610
+Wir klemmen den einen Tastkopf an, klemmen den anderen an.
+
+26
+00:04:02,830 --> 00:04:15,350
+Und wir sehen, die Stromanzeige liegt bei 23,5, ein winziges Stück mehr als der Skalenteil.
+
+27
+00:04:17,390 --> 00:04:19,370
+Warum passiert das?
+
+28
+00:04:20,390 --> 00:04:22,470
+Was für eine Abstimmung ist das?
+
+29
+00:04:23,070 --> 00:04:28,070
+Warum gibt die Spule mehr ab, als ihr zugeführt wird?
+
+30
+00:04:29,230 --> 00:04:38,510
+Ich wiederhole, wir nehmen Messungen mit einer Sinuswelle vor, damit es keine Diskussion gibt, ob hier Signale mit steilen Flanken vorliegen.
+
+31
+00:04:39,510 --> 00:04:41,670
+Du könntest es natürlich auch damit machen.
+
+32
+00:04:41,750 --> 00:04:44,970
+Schalten wir zum Beispiel auf Rechteck um.
+
+33
+00:04:46,130 --> 00:04:58,010
+Wir sehen, der Strom ist noch weiter angestiegen, woraus wir verstehen, dass diese Spule von einem flankensteilen Signal angetrieben wird.
+
+34
+00:04:59,030 --> 00:05:00,930
+Schalten wir zurück auf Sinus.
+
+35
+00:05:03,910 --> 00:05:19,670
+Was haben wir also hier gemacht, das den Ausgangsstrom im Kurzschlussmodus über den vom Generator gelieferten Strom hinausgehen ließ, während die Ausgangsspannung praktisch der vom Generator gelieferten Spannung entspricht?
+
+36
+00:05:23,410 --> 00:05:24,530
+Die Antwort lautet.
+
+37
+00:05:24,670 --> 00:05:44,710
+Wir haben diese Spule über geometrische Proportionen, Drahtquerschnitte, Drahtlängen mit den natürlichen Schwingungen synchronisiert, die in unserem Raum existieren.
+
+38
+00:05:45,670 --> 00:05:47,570
+Bei dieser Frequenz.
+
+39
+00:05:48,850 --> 00:05:57,110
+Du musst dir diese Frequenz nicht merken, für jede Region wird sie individuell sein und konkret für jede Spule.
+
+40
+00:05:58,230 --> 00:06:04,310
+Dafür werden diese Frequenzen gesucht und gezielt abgestimmt, und Spulen werden dafür gebaut.
+
+41
+00:06:05,670 --> 00:06:08,130
+Jetzt zeigen wir, was bei uns passiert.
+
+42
+00:06:08,270 --> 00:06:10,770
+Das ist das Trägersignal bei dieser Frequenz.
+
+43
+00:06:12,090 --> 00:06:15,710
+Wir zoomen die Spur pro Skalenteil heraus.
+
+44
+00:06:16,370 --> 00:06:19,610
+Genau hier steht "Zeit" bei uns.
+
+45
+00:06:21,470 --> 00:06:23,050
+Wir stauchen die Spur.
+
+46
+00:06:24,410 --> 00:06:28,090
+Wir sehen, eine niederfrequente Komponente erscheint in unserem Spektrum.
+
+47
+00:06:28,090 --> 00:06:30,150
+Weiter.
+
+48
+00:06:32,810 --> 00:06:38,010
+Hier können wir die Amplitudenmodulation festhalten.
+
+49
+00:06:38,750 --> 00:06:55,850
+Und das bedeutet, dass diese Spule mit einer externen Frequenz synchronisiert wird, die ihre vom Signalgenerator angestoßenen Schwingungen amplitudenmoduliert.
+
+50
+00:06:55,890 --> 00:06:59,450
+Wir können genauer hinschauen, was das ist.
+
+51
+00:07:04,580 --> 00:07:08,360
+Das ist diese Art von Wanderwelle.
+
+52
+00:07:09,260 --> 00:07:11,040
+Das ist die erste Synchronisation.
+
+53
+00:07:12,940 --> 00:07:15,060
+Als Nächstes zoomen wir die Spur weiter heraus.
+
+54
+00:07:17,280 --> 00:07:20,360
+Hier haben wir eine Spur von einer halben Sekunde pro Skalenteil.
+
+55
+00:07:25,970 --> 00:07:27,950
+Hier, eine halbe Sekunde pro Skalenteil.
+
+56
+00:07:31,090 --> 00:07:33,210
+Wir dehnen die Spur aus.
+
+57
+00:07:34,410 --> 00:07:37,170
+Auf bis zu zwei Sekunden pro Skalenteil.
+
+58
+00:07:40,240 --> 00:07:46,000
+Jetzt stellt sich das Gerät auf niederfrequente Signale um.
+
+59
+00:07:47,580 --> 00:07:50,980
+Und wir sehen den nächsten Synchronisationsmoment.
+
+60
+00:07:52,760 --> 00:08:00,540
+Das ist die niederfrequente Komponente des Raumes in dieser Region, in der ich lebe.
+
+61
+00:08:02,020 --> 00:08:09,080
+Jetzt ermitteln wir die Frequenz des Raumes.
+
+62
+00:08:10,740 --> 00:08:16,540
+Wir drücken Pause und
+
+63
+00:08:20,310 --> 00:08:25,810
+schalten das Gerät in den Cursor-Modus.
+
+64
+00:08:28,310 --> 00:08:29,690
+Manuell.
+
+65
+00:08:30,250 --> 00:08:32,390
+Wir sehen, zwei Marker sind erschienen.
+
+66
+00:08:42,330 --> 00:08:47,430
+Wir verschieben Cursor A in die Mitte der Welle.
+
+67
+00:08:48,430 --> 00:08:53,210
+Wir verschieben Cursor B ebenfalls in die Mitte der Welle.
+
+68
+00:08:55,390 --> 00:08:58,590
+So bestimmen wir die Schwingungsdauer.
+
+69
+00:08:59,990 --> 00:09:00,630
+Schauen wir mal.
+
+70
+00:09:00,630 --> 00:09:10,870
+Die Frequenz beträgt 235,8 MHz.
+
+71
+00:09:12,110 --> 00:09:17,670
+Das heißt, die Frequenz dieser Schwingungen liegt bei 0,23 Hz.
+
+72
+00:09:19,410 --> 00:09:24,350
+Diese Spule hat sich mit dieser Frequenz synchronisiert.
+
+73
+00:09:25,830 --> 00:09:28,650
+Ohne Synchronisation ist ein Gewinn unmöglich.
+
+74
+00:09:30,350 --> 00:09:38,050
+Die Spule kann dem Generator keine Energie entnehmen, entsprechend kann sie nicht mehr hinzufügen.
+
+75
+00:09:38,130 --> 00:09:40,990
+Aber wir erfassen einen größeren Strom.
+
+76
+00:09:42,150 --> 00:09:48,050
+Was passiert also, wenn wir unsere Abstimmung zurücksetzen.
+
+77
+00:09:50,270 --> 00:09:53,170
+Jetzt holen wir unser Signal zurück.
+
+78
+00:09:58,210 --> 00:10:09,830
+Wir haben unser Signal zurückgeholt und schalten den Generator zum Beispiel in den Frequenzmodus und beginnen zu verstimmen.
+
+79
+00:10:13,340 --> 00:10:15,280
+Jetzt holen wir zurück, was war.
+
+80
+00:10:18,820 --> 00:10:30,680
+Wir haben unsere 23,5 Skalenteile zurückgeholt und verschieben zum Beispiel um 300 Hz.
+
+81
+00:10:32,380 --> 00:10:34,200
+Wir sehen, der Strom ist gefallen.
+
+82
+00:10:36,610 --> 00:10:39,000
+Verschieben wir die Frequenz noch niedriger.
+
+83
+00:10:42,160 --> 00:10:45,020
+Wir sehen, es ist praktisch kein Strom da.
+
+84
+00:10:48,660 --> 00:10:57,520
+Wir können von unserer Abstimmung höher oder niedriger gehen und sehen, dass kein Strom da ist.
+
+85
+00:10:59,320 --> 00:11:09,100
+Aber wenn wir jetzt, sagen wir, bei dieser Frequenz unser Amperemeter anschließen, erfassen wir einen größeren Strom.
+
+86
+00:11:09,720 --> 00:11:16,940
+Insbesondere sehen wir, dass die Abstimmung verrutscht ist und die Spannungsamplitude an der Ausgangsspule auch gefallen ist.
+
+87
+00:11:18,100 --> 00:11:23,780
+Jetzt schalten wir das Amperemeter zum Signalgenerator.
+
+88
+00:11:24,980 --> 00:11:26,080
+Schalten.
+
+89
+00:11:27,440 --> 00:11:34,280
+Wir sehen, dass
+
+90
+00:11:38,810 --> 00:11:49,410
+die Stromanzeige vom Signalgenerator unverändert geblieben ist.
+
+91
+00:11:49,910 --> 00:11:58,050
+Dieselben 14 Skalenteile, aber als die Frequenz wegrutschte, sank der Strom im System deutlich, wie wir gesehen haben.
+
+92
+00:11:59,290 --> 00:12:07,450
+Diese Kondensatoren sind bezogen auf die Induktivität der Ausgangsspule nicht resonant.
+
+93
+00:12:11,430 --> 00:12:31,130
+Und das ist die Art von Abstimmung, die gemacht werden muss, damit dieses System anfängt, mehr zu liefern, als wir mit diesem Niederspannungsantrieb, dem Generator vom Gegentakt-Typ, hineinpumpen.

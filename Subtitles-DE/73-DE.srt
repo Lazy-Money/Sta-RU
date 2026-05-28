@@ -1,0 +1,623 @@
+1
+00:00:00,000 --> 00:00:02,820
+Weiter zum Bau des Leistungsmoduls.
+
+2
+00:00:03,580 --> 00:00:13,540
+Aber zuerst möchte ich sagen, das Leistungsmodul wird an einem Kühlkörper befestigt, und dafür gibt es einige Anforderungen.
+
+3
+00:00:14,440 --> 00:00:20,260
+Es hängt natürlich davon ab, für welche Leistung wir das Gerät bauen, aber du musst sie trotzdem einhalten.
+
+4
+00:00:21,200 --> 00:00:30,360
+Wähle den Kühlkörper nach den erforderlichen Abmessungen aus, und schau, ob wir aktive Kühlung haben oder nicht.
+
+5
+00:00:30,700 --> 00:00:36,940
+Wenn nicht, nimm natürlich einen Kühlkörper mit maximaler Rippenfläche.
+
+6
+00:00:37,540 --> 00:00:39,280
+Und der wichtigste Parameter.
+
+7
+00:00:40,460 --> 00:00:46,520
+Die Wandstärke dort, wo der Schalter montiert wird.
+
+8
+00:00:47,140 --> 00:00:53,400
+Sie bestimmt, wie gut die Wärmeleistung vom Schalter abgeführt wird.
+
+9
+00:00:53,400 --> 00:00:57,800
+Ich zeige zum Beispiel einen anderen Kühlkörpertyp.
+
+10
+00:00:58,620 --> 00:01:14,260
+Man könnte sagen, er ist schlecht vom Hersteller gemacht, denn die Dicke des Teils, an dem der Schalter befestigt wird (der wärmeabführende Teil), wenn du ihn so anbringst,
+
+11
+00:01:14,740 --> 00:01:18,780
+ist viel dünner als die Wände.
+
+12
+00:01:18,780 --> 00:01:30,760
+Und unter starker Last überhitzt dieser Bereich unter dem Schalter, er kann die Wärme nicht schnell genug zu den Kühlrippen ableiten.
+
+13
+00:01:30,940 --> 00:01:35,140
+Und so ein Schalter kann durch Überhitzung ausfallen.
+
+14
+00:01:35,720 --> 00:01:43,460
+Solche Kühlkörper sollten in Leistungsaufbauten mit hohen Lasten vermieden werden.
+
+15
+00:01:43,860 --> 00:01:48,080
+Für einen kleinen Transistor könnte es funktionieren.
+
+16
+00:01:48,780 --> 00:01:53,900
+Das ist die Hauptregel für Kühlkörper.
+
+17
+00:01:54,100 --> 00:02:01,460
+Es gibt auch Kühlkörper mit Kupfereinsatz, das ist die Spitzenklasse, aber das brauchen wir hier nicht.
+
+18
+00:02:04,220 --> 00:02:09,660
+Was empfehle ich als isolierende Unterlage?
+
+19
+00:02:10,200 --> 00:02:22,580
+Bei vielen FETs ist der Drain galvanisch mit der wärmeabgebenden Fläche verbunden.
+
+20
+00:02:23,240 --> 00:02:35,780
+Um Drain-zu-Drain-Durchschlag zwischen Schaltern zu vermeiden, wird eine wärmeleitende Isolierscheibe unter den Schaltern platziert.
+
+21
+00:02:35,880 --> 00:02:40,080
+Für kritische Fälle empfehle ich Glimmer zu verwenden.
+
+22
+00:02:41,360 --> 00:02:48,440
+Heute schwer zu bekommen, aber du findest ihn auf Flohmärkten oder Funkmärkten.
+
+23
+00:02:49,140 --> 00:02:57,330
+Manchmal verkaufen Leute diese Glimmerplatten aus sowjetischen Hochspannungs-Glimmerkondensatoren.
+
+24
+00:02:58,660 --> 00:03:02,220
+Ja, sie zerlegen den Kondensator und holen diese Stapel von Platten heraus.
+
+25
+00:03:02,220 --> 00:03:04,900
+Und es ist sehr bequem, sie zu entnehmen.
+
+26
+00:03:05,120 --> 00:03:13,680
+Eine solche Platte hat Maße von 5 mal 4 cm.
+
+27
+00:03:14,420 --> 00:03:23,340
+Wenn du sie halbierst, reicht es genau, um zwei Schalter nebeneinander zu montieren.
+
+28
+00:03:24,340 --> 00:03:36,560
+Wenn du sie weiter auseinander setzen willst, schneidest du sie in 4 Stücke, und so eine Unterlage funktioniert gut in diesem Fall.
+
+29
+00:03:37,300 --> 00:03:44,820
+Wenn du das nicht findest, kannst du natürlich diese Scheiben verwenden.
+
+30
+00:03:45,590 --> 00:03:55,200
+Sie funktionieren auch, aber ich vertraue Glimmer mehr, also verwende ich ihn in kritischen Fällen.
+
+31
+00:03:56,820 --> 00:04:12,760
+Beim Einbau einer Glimmerscheibe sollte besondere Aufmerksamkeit dem Loch gewidmet werden, durch das die Schraube zur Schaltermontage geht.
+
+32
+00:04:12,760 --> 00:04:15,220
+Sehr sorgfältig gemacht.
+
+33
+00:04:15,360 --> 00:04:35,820
+Zuerst mit einer Ahle vorsichtig drücken und einen kleinen Stich machen, und dann mit einem Phillips-Schraubendreher passenden Durchmessers das Loch langsam erweitern, um den Glimmer
+
+34
+00:04:35,820 --> 00:04:36,400
+nicht zu brechen.
+
+35
+00:04:38,860 --> 00:04:47,560
+Jetzt installiere ich den Schalter hier, richte die Unterlage aus und zeige am Beispiel dieses Lochs, wie es gemacht wird.
+
+36
+00:04:47,720 --> 00:04:59,720
+Die Scheibe ist installiert, richte sie nach den Schalterabmessungen aus, sodass der Glimmer auf allen Seiten des Schalters gleich übersteht.
+
+37
+00:05:01,060 --> 00:05:04,220
+Dann die Schraube anziehen und fixieren.
+
+38
+00:05:04,220 --> 00:05:19,500
+Danach nimmst du die Ahle und drückst in der Mitte des Lochs, wo die Schraube durchgeht, vorsichtig und drehst sie leicht.
+
+39
+00:05:27,690 --> 00:05:36,750
+Vorsichtig, zuerst erscheint ein weißer Punkt an dieser Stelle.
+
+40
+00:05:49,560 --> 00:05:56,200
+Mit solchen Drehbewegungen vorsichtig den ersten Span machen.
+
+41
+00:06:00,150 --> 00:06:04,690
+Danach geht die Ahle leicht ins Loch.
+
+42
+00:06:05,130 --> 00:06:11,430
+Und dann mit dem Phillips-Schraubendreher das Loch auf den benötigten Durchmesser bringen.
+
+43
+00:06:11,430 --> 00:06:13,750
+Wieder sehr vorsichtig,
+
+44
+00:06:17,620 --> 00:06:27,980
+danach kannst du mit dem Schraubengewinde durch das Loch durch.
+
+45
+00:06:44,730 --> 00:06:47,590
+Mach das auch sorgfältig.
+
+46
+00:06:53,020 --> 00:07:05,780
+Dann musst du die Schraube mehrmals hin und her drehen, und wir haben die Lochgröße passend zur Schraube.
+
+47
+00:07:08,060 --> 00:07:14,640
+Das sind alle Feinheiten mit der Glimmerscheibe.
+
+48
+00:07:14,640 --> 00:07:21,940
+Nachdem die Löcher gemacht sind, musst du alles Überflüssige von der Kühlkörperoberfläche entfernen.
+
+49
+00:07:22,340 --> 00:07:28,800
+Das werden winzige Glimmerstückchen sein, denn Glimmer ist Gestein.
+
+50
+00:07:29,080 --> 00:07:35,680
+Und wenn es unter die Scheibe gerät, gibt es eine Beule, und der Wärmekontakt verschlechtert sich.
+
+51
+00:07:35,680 --> 00:07:52,480
+Dafür nimm ein Tuch, reinige die Scheibenfläche, dann drehe sie um, reinige die Kühlkörperfläche, reinige von innen.
+
+52
+00:07:57,960 --> 00:08:03,360
+Dasselbe machen wir mit der zweiten Scheibe.
+
+53
+00:08:12,730 --> 00:08:19,530
+Und weiter die Kühlkörperoberfläche abwischen.
+
+54
+00:08:22,490 --> 00:08:26,230
+Jetzt können wir die Wärmeleitpaste auftragen.
+
+55
+00:08:27,230 --> 00:08:30,190
+KPT-8 Wärmeleitpaste.
+
+56
+00:08:46,390 --> 00:08:49,090
+Die Tube ist neu, viel Flüssigkeit.
+
+57
+00:08:50,270 --> 00:08:52,250
+Die Flüssigkeit sollte entfernt werden.
+
+58
+00:09:00,280 --> 00:09:03,680
+Und hier ist die Wärmeleitpaste selbst.
+
+59
+00:09:21,750 --> 00:09:29,230
+Verteile eine Schicht Wärmeleitpaste gleichmäßig auf der Oberfläche.
+
+60
+00:09:31,630 --> 00:09:36,370
+Die Rückseite des Transistors kann dabei helfen.
+
+61
+00:09:40,140 --> 00:09:41,880
+Wir gehen zu den anderen über.
+
+62
+00:09:42,880 --> 00:09:44,260
+Im
+
+63
+00:10:00,310 --> 00:10:02,270
+Allgemeinen ist das Prinzip klar.
+
+64
+00:10:03,490 --> 00:10:05,450
+Gleichmäßig glätten.
+
+65
+00:10:06,890 --> 00:10:15,070
+Und danach kannst du die Scheibe an ihrem Platz installieren.
+
+66
+00:10:35,100 --> 00:10:39,460
+Dieselbe Operation mit der zweiten.
+
+67
+00:10:40,440 --> 00:10:50,540
+Nachdem die zweite installiert ist, wische überschüssige Wärmeleitpaste von der Kühlkörperoberfläche ab.
+
+68
+00:10:55,320 --> 00:11:01,180
+Und wir können zur Montage der Leistungsschalter übergehen.
+
+69
+00:11:06,830 --> 00:11:17,330
+Jetzt müssen wir gemäß den Regeln der Teileplatzierung im Gehäuse markieren, auf welcher Seite die Transistoren liegen, die mit Plus verbunden sind.
+
+70
+00:11:19,070 --> 00:11:22,030
+Das Relais ist auf dieser Seite.
+
+71
+00:11:22,470 --> 00:11:27,250
+Laut Schaltplan wird es mit Plus-Versorgung verbunden.
+
+72
+00:11:27,690 --> 00:11:30,510
+Die Batterie wird so liegen.
+
+73
+00:11:30,510 --> 00:11:36,590
+Das heißt, die mit Plus verbundenen Transistoren sind auf dieser Seite.
+
+74
+00:11:38,150 --> 00:11:39,150
+Markieren.
+
+75
+00:11:40,770 --> 00:11:43,190
+Weiter zur Schaltermontage.
+
+76
+00:11:44,810 --> 00:11:49,370
+Trage auch Wärmeleitpaste auf die Leistungsschalter auf.
+
+77
+00:12:06,700 --> 00:12:09,880
+Mit solchen Glättungsbewegungen.
+
+78
+00:12:12,800 --> 00:12:16,880
+Verteile die Wärmeleitpaste über die gesamte Kühlfläche.
+
+79
+00:12:34,850 --> 00:12:42,530
+Schrauben zur Befestigung der Schalter sollten breite Köpfe haben.
+
+80
+00:12:43,570 --> 00:12:51,730
+Wenn keine vorhanden sind, schraube eine Mutter auf und leg eine Unterlegscheibe drunter, damit die Klemmwirkung gut ist.
+
+81
+00:12:51,730 --> 00:12:56,550
+Und ausreichend lang, denn Aluminium ist dünnes Metall.
+
+82
+00:12:57,150 --> 00:13:03,770
+Der Schraubenkörper sollte gut in die Aluminium-Wandstärke hineingehen.
+
+83
+00:13:27,510 --> 00:13:30,110
+Nicht zu fest anziehen.
+
+84
+00:13:32,270 --> 00:13:40,770
+Wir müssen die Schalter noch zu den Löchern am Kunststoffdeckel ausrichten.
+
+85
+00:13:58,830 --> 00:14:02,210
+Damit sie sich leicht drehen.
+
+86
+00:14:03,250 --> 00:14:14,650
+Bevor wir das zweite Paar einbauen, müssen wir uns um die Kontaktklemme für den Anschluss der Primärspule unseres Aufwärtstransformators kümmern.
+
+87
+00:14:14,750 --> 00:14:22,390
+Ich habe diese Kontaktklemmen aus Kupferdraht gemacht.
+
+88
+00:14:23,390 --> 00:14:31,110
+Jetzt setze sie auf ein Schalterbein und
+
+89
+00:14:37,470 --> 00:14:40,230
+bring es an seinen Platz zurück.
+
+90
+00:15:07,200 --> 00:15:15,020
+Nach dieser Manipulation wird es leicht sein, diese Klemme mit dem gegenüberliegenden Schalterbein zu verbinden.
+
+91
+00:15:15,760 --> 00:15:22,880
+Schiebe sie, und wir müssen sie später verlöten.
+
+92
+00:15:23,640 --> 00:15:31,060
+Vor der endgültigen Montage sollten wir prüfen, ob Kontakt zwischen Schalter und Kühlkörper besteht.
+
+93
+00:15:32,040 --> 00:15:39,940
+Schalte das Multimeter in den Diodentest-Modus und berühre die mittleren Anschlüsse der Transistoren.
+
+94
+00:15:44,220 --> 00:15:50,820
+Du siehst, die Isolation ist vorhanden, alles in Ordnung.
+
+95
+00:15:52,020 --> 00:15:58,800
+Da wir ein Niederspannungssystem haben, prüfe ich dieses Modul nicht auf Hochspannung.
+
+96
+00:15:58,940 --> 00:16:17,560
+Aber wenn ich Systeme baue, die mit gleichgerichteter Netzspannung arbeiten, prüfe ich zusätzlich nicht mit dem Messgerät, sondern auf Durchschlag bei 300 V Gleichspannung über eine Glühlampe
+
+97
+00:16:17,560 --> 00:16:19,280
+auf dieselbe Weise.
+
+98
+00:16:19,280 --> 00:16:29,760
+Das gibt eine zuverlässige Garantie, dass das Modul später nicht zerlegt werden muss, was ziemlich arbeitsintensiv ist.
+
+99
+00:16:30,860 --> 00:16:37,800
+Jetzt sind die Schalter leicht angezogen und drehen sich frei an ihren Befestigungspunkten.
+
+100
+00:16:38,800 --> 00:16:51,000
+Das wird gemacht, damit du den Kunststoffdeckel bequem nach den Befestigungspunkten platzieren kannst.
+
+101
+00:16:53,160 --> 00:16:58,190
+Beim Einfügen in die Löcher verschieben sich die Schalter leicht.
+
+102
+00:16:58,190 --> 00:17:10,390
+Wenn du sie vorher befestigst, ist diese Operation schwer ohne zusätzliches Biegen der Schalteranschlüsse zu machen, was unerwünscht ist.
+
+103
+00:17:12,190 --> 00:17:19,190
+Befestige zuerst die regulären Befestigungen.
+
+104
+00:17:21,770 --> 00:17:26,550
+Und jetzt siehst du, alle Anschlüsse passen.
+
+105
+00:17:26,550 --> 00:17:37,610
+Und diese Löcher sind nötig, damit du die Schalter vorab von oben anziehen kannst.
+
+106
+00:17:41,670 --> 00:17:43,830
+Mache das Anziehen.
+
+107
+00:17:53,460 --> 00:18:00,280
+Jetzt können wir die regulären Befestigungen lösen.
+
+108
+00:18:04,690 --> 00:18:11,370
+Danach gehen wir zum Verlöten der mittleren Anschlüsse über.
+
+109
+00:18:12,370 --> 00:18:20,770
+Und zum anschließenden Festziehen der Schraubbefestigungen der Schalter.
+
+110
+00:18:23,070 --> 00:18:32,410
+Du siehst, die mittleren Anschlüsse rutschen in dieser Position leicht auf.
+
+111
+00:18:37,270 --> 00:18:41,170
+So machen wir uns die Arbeit leichter.
+
+112
+00:18:41,170 --> 00:18:50,450
+Für eine hochwertige Verlötung dieser Verbindungen verwende ich organisches Elektronik-Flussmittel.
+
+113
+00:18:50,670 --> 00:18:57,410
+Es muss nicht gewaschen werden und reinigt Kontaktflächen sehr gut.
+
+114
+00:18:57,750 --> 00:18:59,910
+Riecht außerdem nach Kiefernwald.
+
+115
+00:19:00,690 --> 00:19:01,750
+Sehr bequem.
+
+116
+00:19:04,230 --> 00:19:07,750
+Der Lötkolben heizt sich auf 380 Grad auf.
+
+117
+00:19:07,750 --> 00:19:09,610
+Spitze gereinigt.
+
+118
+00:19:11,350 --> 00:19:16,270
+Danach nimm einen Tropfen Lot auf.
+
+119
+00:19:19,390 --> 00:19:23,070
+Halte die Kontaktfläche.
+
+120
+00:19:24,530 --> 00:19:26,530
+Verlöten.
+
+121
+00:19:36,320 --> 00:19:37,240
+Eine Hälfte.
+
+122
+00:19:40,480 --> 00:19:43,020
+Etwas mehr Flussmittel.
+
+123
+00:20:05,350 --> 00:20:11,710
+Du musst die Kontaktfläche qualitativ benetzen.
+
+124
+00:20:31,490 --> 00:20:34,590
+Du siehst, wie das Lot sich verteilt.
+
+125
+00:20:37,670 --> 00:20:43,050
+Jetzt entferne diesen Tropfen Flussmittel.
+
+126
+00:20:45,770 --> 00:20:53,270
+Außerdem leitet es keinen Strom, was sehr gut ist.
+
+127
+00:20:58,760 --> 00:21:05,440
+Und löte ebenso die zweite Kontaktfläche.
+
+128
+00:21:06,180 --> 00:21:09,180
+Nach dem Verlöten erhältst du diese Schönheit.
+
+129
+00:21:11,180 --> 00:21:22,480
+Es gibt noch einen wichtigen Punkt, auf den du beim Kauf von Leistungsschaltern achten solltest.
+
+130
+00:21:22,820 --> 00:21:30,540
+Es ist vorzuziehen, dass sie aus derselben Charge und vom selben Hersteller sind.
+
+131
+00:21:31,380 --> 00:21:35,590
+Achte auf Buchstaben- und Zahlensymbole.
+
+132
+00:21:35,590 --> 00:21:40,070
+Diese Beschriftungen auf den Schaltern sollten identisch sein.
+
+133
+00:21:41,990 --> 00:21:53,510
+Jetzt können wir die Leistungsschalter festziehen und gleichzeitig mit den Fingern halten, damit sie nicht verrutschen.
+
+134
+00:21:54,470 --> 00:22:06,520
+Das Anziehen sollte mit guter Kraft erfolgen, für eine qualitative Wärmeabfuhr.
+
+135
+00:22:09,500 --> 00:22:16,520
+Daher sollten die Schrauben, mit denen du sie befestigst, einen guten breiten Kopf haben.
+
+136
+00:22:32,840 --> 00:22:37,260
+Jetzt müssen wir nur noch die Stromschienen zu unserem Aufbau bringen.
+
+137
+00:22:37,780 --> 00:22:46,840
+Für kritische Geräte mache ich sie aus hochwertigem Kupferkabel mit 2,5 mm² Querschnitt, in Wärmeisolierung.
+
+138
+00:22:46,840 --> 00:22:52,740
+Die Kabelbezeichnung ist RKDM, Kosten 70 Rubel pro Meter.
+
+139
+00:22:53,300 --> 00:23:00,040
+Es hat eine hitzebeständige Isolierung auf der Oberfläche plus hitzebeständige Umflechtung.
+
+140
+00:23:00,780 --> 00:23:12,540
+Ich verwende es dort, wo ich Strom in 220-V-Netzen liefern muss und wo die Temperaturen 100 Grad überschreiten.
+
+141
+00:23:14,320 --> 00:23:24,560
+Damit es leicht in die Ringe an den Leistungsschaltern eingefädelt werden kann, sollten die Enden eines solchen Kabels verzinnt werden.
+
+142
+00:23:27,020 --> 00:23:28,600
+Hochwertige Verzinnung.
+
+143
+00:23:28,760 --> 00:23:32,820
+Jetzt durch den Ring führen.
+
+144
+00:23:37,850 --> 00:23:53,970
+Nachdem der Draht im Ring sitzt, solltest du ihn mit dem Leistungsschalter-Anschluss crimpen.
+
+145
+00:24:05,460 --> 00:24:08,460
+So sorgen wir für guten Kontakt.
+
+146
+00:24:08,460 --> 00:24:15,520
+Jetzt Flussmittel zum Löten auftragen und,
+
+147
+00:24:25,180 --> 00:24:26,820
+verlöten.
+
+148
+00:24:31,380 --> 00:24:36,080
+Gut erhitzen und Lot zuführen.
+
+149
+00:25:15,300 --> 00:25:19,860
+Dieselbe Operation mit dem zweiten Draht.
+
+150
+00:25:22,520 --> 00:25:24,240
+Durchführen,
+
+151
+00:25:28,410 --> 00:25:29,470
+crimpen.
+
+152
+00:26:39,620 --> 00:26:45,260
+Und damit ist das Leistungsmodul fertig.
+
+153
+00:26:47,320 --> 00:26:56,980
+Es bleibt nur noch, die Primärwicklung des Impulstransformators an diesen Punkten anzuschließen.
+
+154
+00:26:59,940 --> 00:27:12,420
+Als Nächstes in unserer Videoreihe über das Netzteil kommt das Wickeln des Leistungstransformators.
+
+155
+00:27:13,080 --> 00:27:18,160
+Wickelregeln, Abgriffe, Zwischenlagenisolierung.
+
+156
+00:27:19,360 --> 00:27:23,320
+Wird interessant, aber die Arbeit ist mühselig.
