@@ -1,0 +1,1079 @@
+1
+00:00:00,650 --> 00:00:02,120
+Hallo zusammen.
+
+2
+00:00:03,340 --> 00:00:16,660
+Heute zeige ich dir ein interessantes Werkzeug, mit dem du prüfen kannst, auf welche Frequenz unsere Tesla relativ zur Grenade abgestimmt werden soll.
+
+3
+00:00:18,220 --> 00:00:24,300
+Weil sich diese Frequenz nicht mit einem Signalgenerator bestimmen lässt.
+
+4
+00:00:25,060 --> 00:00:38,920
+Wenn wir zum Beispiel die Sonde des Signalgenerators an diese Antenne hängen und die Frequenz durchstimmen, sehen wir diesen Moment nicht.
+
+5
+00:00:39,700 --> 00:00:45,320
+Wir sehen ihn nicht, weil diese Spule unter Last getestet werden muss.
+
+6
+00:00:45,480 --> 00:00:53,880
+Hier siehst du, wir haben das heiße Ende der Spule, das kalte Ende, an dem wir beginnen, und die Last hängt daran.
+
+7
+00:00:54,040 --> 00:01:00,720
+Für diesen Test verwenden wir eine 15-W-Lampe.
+
+8
+00:01:02,420 --> 00:01:18,260
+Labor-Signalgeneratoren dieser Art — diese hier, höherwertige, verschiedene Muster, wer auch immer welche hat — können nicht genug Potential ausgeben, um wirklich zu sehen, wie unsere Spule auf ein elektrisches Feld reagiert.
+
+9
+00:01:18,260 --> 00:01:25,040
+Auf ein elektrisches Feld.
+
+10
+00:01:26,060 --> 00:01:28,380
+Die Idee dieses Aufbaus.
+
+11
+00:01:29,260 --> 00:01:37,840
+Ich glaube, viele von euch, die Spulen zusammengebaut und nach Frequenz abgestimmt haben, haben ein paar Drahtreste herumliegen.
+
+12
+00:01:37,920 --> 00:01:44,280
+Sie liegen normalerweise als Ballast herum — manchmal verwenden wir sie als Brücken, aber generell liegen sie nur da.
+
+13
+00:01:45,660 --> 00:01:51,100
+Bauen wir aus diesen Stücken so einen Aufbau.
+
+14
+00:01:52,740 --> 00:01:58,640
+Das Ganze ist aus Resten eines einzelnen Drahts zusammengebaut, weil ich beim Frequenzabgleich viel davon geschnitten habe.
+
+15
+00:01:59,800 --> 00:02:01,520
+Und das hat mich irgendwie genervt.
+
+16
+00:02:02,240 --> 00:02:11,540
+Der Abstand zwischen den Anzapfungen beträgt etwa 0,8 cm bis 1,5 cm.
+
+17
+00:02:11,900 --> 00:02:14,440
+Durchschnittlicher Abstand etwa ein Zentimeter.
+
+18
+00:02:14,540 --> 00:02:20,100
+Wir machen Anzapfungen — etwa 20 — und füllen die Form.
+
+19
+00:02:21,640 --> 00:02:30,420
+Die Form ist aus Pappe, damit wir einen hohen Q-Faktor und ein breiteres Spektrum an Frequenzen erfassen können.
+
+20
+00:02:30,440 --> 00:02:38,600
+Wickelrichtung — dieselbe wie in diesem System und der funktionierenden Probe am Aufbau.
+
+21
+00:02:39,140 --> 00:02:44,680
+Die Tesla ist nach links gewickelt, also gegen den Uhrzeigersinn.
+
+22
+00:02:45,820 --> 00:03:00,980
+Weil es eine Regel gibt, die wir alle kennen — ich wiederhole sie nochmal — linksgängige Wicklungen (gegen den Uhrzeigersinn) sind für das elektrische Feld, rechtsgängige Wicklungen (im Uhrzeigersinn) für das Magnetfeld.
+
+23
+00:03:00,980 --> 00:03:02,180
+Für das Magnetfeld.
+
+24
+00:03:03,160 --> 00:03:10,540
+An dieser Antenne wollen wir elektrisches Potential bekommen, also wickeln wir nach links.
+
+25
+00:03:11,780 --> 00:03:13,560
+Etwa 20 Anzapfungen hier.
+
+26
+00:03:13,900 --> 00:03:18,400
+Ich habe das Katscher-Schema in einem vorherigen Video gegeben, also gehe ich nicht weiter darauf ein.
+
+27
+00:03:18,920 --> 00:03:22,480
+Die Drossel ist beweglich, damit wir sie verschieben können.
+
+28
+00:03:23,160 --> 00:03:29,080
+Und du siehst auch, wir haben eine Krokodilklemme — der Draht geht zur Basis des Transistors.
+
+29
+00:03:29,800 --> 00:03:34,140
+Das lässt uns entlang des Drahts bewegen.
+
+30
+00:03:35,960 --> 00:03:40,160
+Die bewegliche Drossel ist für die feine Frequenzabstimmung.
+
+31
+00:03:40,980 --> 00:03:54,360
+Wenn wir uns zwischen einer Anzapfung und der nächsten bewegen, geschieht die sanfte Abstimmung durch leichtes Verschieben der Drossel nach links oder rechts — so kannst du die Frequenz abstimmen.
+
+32
+00:03:54,940 --> 00:04:11,260
+Wenn wir diese Frequenzen nach unten verschieben müssen, können wir einen Ferritstab — oder wer Ringe hat, einen Satz Ringe — in diesen Aufbau einbringen und die Frequenzen senken.
+
+33
+00:04:11,260 --> 00:04:11,800
+Die Frequenzen.
+
+34
+00:04:12,240 --> 00:04:21,340
+Wenn wir wollen, dass die Frequenz höher geht, können wir uns entlang der Anzapfungen bewegen.
+
+35
+00:04:22,300 --> 00:04:30,480
+Und wenn die Frequenz noch nicht ausreicht, reduzieren wir die Windungszahl oder ändern die geometrischen Abmessungen der Antenne.
+
+36
+00:04:32,160 --> 00:04:35,880
+Das System hat am Ende einen weiten Bereich.
+
+37
+00:04:36,040 --> 00:04:39,160
+Vor dem Start des Systems die Erdung anschließen.
+
+38
+00:04:39,960 --> 00:04:55,340
+Die Erdung sollte genau die sein, die am Aufbau Standard sein wird, denn wenn wir die Erdung später ändern, verschiebt sich die Frequenz innerhalb gewisser Grenzen für diese Spule.
+
+39
+00:04:56,520 --> 00:04:59,860
+Also willst du genau die Arbeits-Erdung verwenden.
+
+40
+00:04:59,900 --> 00:05:13,540
+In diesem Fall hier ist es ein 20-m-Kabel — ein Draht ist daran angeschlossen, der in einer Krokodilklemme endet, die wir an die Spulen-Anzapfungen anschließen.
+
+41
+00:05:14,020 --> 00:05:31,760
+Schalte das Oszilloskop ein, lege die Sonde etwa 15 cm entfernt, damit wir die Spulenfrequenz und die Stärke des elektrischen Felds um die Antenne effektiv verfolgen können.
+
+42
+00:05:33,200 --> 00:05:34,720
+System starten.
+
+43
+00:05:36,320 --> 00:05:40,000
+Der Strom kommt direkt von einem Labor-Signalgenerator.
+
+44
+00:05:40,840 --> 00:05:45,060
+Versorgungsspannung um 24 V.
+
+45
+00:05:45,140 --> 00:05:48,140
+Standard für das, worauf sie abgestimmt werden können.
+
+46
+00:05:53,500 --> 00:05:58,540
+24 V und wir ziehen etwas über ein Ampere.
+
+47
+00:05:59,440 --> 00:06:10,060
+Und hier sehen wir — die Lampe leuchtet, wir haben ein Oszillogramm, Frequenz 1 MHz und etwas mehr.
+
+48
+00:06:10,540 --> 00:06:18,220
+Aber bevor wir den Test beginnen, müssen wir den Einfluss der Drossel auf diese Spule ausschließen.
+
+49
+00:06:18,600 --> 00:06:25,620
+Weil die Drossel zwischen Antenne und Resonator sitzt, muss ihr Einfluss entfernt werden.
+
+50
+00:06:26,080 --> 00:06:35,500
+Du siehst gerade starke Einkopplungen an der Drossel.
+
+51
+00:06:36,140 --> 00:06:38,100
+Wie machen wir das?
+
+52
+00:06:38,320 --> 00:06:43,560
+Du kannst den Kondensator verwenden, der später am Schwingkreis installiert wird.
+
+53
+00:06:44,100 --> 00:06:50,660
+Der liegt im Bereich von 0,1 µF bis 1 µF, ausgewählt.
+
+54
+00:06:52,320 --> 00:06:54,280
+Oder Äquivalent.
+
+55
+00:06:54,640 --> 00:06:56,540
+Sagen wir, ein bestimmter Kondensator.
+
+56
+00:06:57,230 --> 00:06:57,940
+Schließ ihn an.
+
+57
+00:06:58,600 --> 00:06:59,480
+Hochspannung.
+
+58
+00:06:59,900 --> 00:07:03,180
+Du siehst, die Last leuchtet nicht.
+
+59
+00:07:03,280 --> 00:07:03,760
+Entfern ihn.
+
+60
+00:07:03,920 --> 00:07:04,800
+Sie glüht.
+
+61
+00:07:05,380 --> 00:07:09,500
+Aber die beste Methode ist einfach, die Drossel kurzzuschließen.
+
+62
+00:07:10,020 --> 00:07:11,140
+Ihren Einfluss entfernen.
+
+63
+00:07:11,380 --> 00:07:12,920
+Du siehst, die Drossel ist kurzgeschlossen.
+
+64
+00:07:13,640 --> 00:07:15,680
+Die Last reagiert überhaupt nicht.
+
+65
+00:07:16,240 --> 00:07:20,480
+Als Nächstes verbinden wir die Erdung mit dieser Spule.
+
+66
+00:07:21,720 --> 00:07:24,400
+Schließ sie an das kalte Ende an.
+
+67
+00:07:26,360 --> 00:07:27,600
+Erdung angeschlossen.
+
+68
+00:07:27,740 --> 00:07:31,720
+Du siehst, ein Glühen ist erschienen.
+
+69
+00:07:33,540 --> 00:07:36,600
+Wir verfolgen diesen Punkt.
+
+70
+00:07:38,180 --> 00:07:38,880
+Schau.
+
+71
+00:07:39,860 --> 00:07:42,380
+Das ist die Amplitude mit angeschlossener Erdung.
+
+72
+00:07:42,740 --> 00:07:43,800
+Die Sonde reagiert.
+
+73
+00:07:44,340 --> 00:07:45,200
+Abklemmen.
+
+74
+00:07:45,340 --> 00:07:46,560
+Du siehst die Amplitude.
+
+75
+00:07:46,780 --> 00:07:55,280
+Unser Ziel ist es, die Frequenz zu finden, bei der das elektrische Feld maximal von dieser Spule absorbiert wird.
+
+76
+00:07:55,360 --> 00:07:57,740
+Also minimale Amplitude am Oszilloskop.
+
+77
+00:07:57,860 --> 00:07:59,040
+Die Sonde bleibt liegen.
+
+78
+00:07:59,620 --> 00:08:04,740
+Du kannst diesen Moment auch mit der Glimmlampe verfolgen.
+
+79
+00:08:04,840 --> 00:08:10,080
+Hier — sie beginnt etwa 18 cm entfernt zu glühen.
+
+80
+00:08:10,800 --> 00:08:21,300
+Jetzt, wenn ich den Erdungsdraht abklemme — Glühen bei 40 cm von der Antenne entfernt.
+
+81
+00:08:21,740 --> 00:08:24,740
+Also siehst du das äquivalente Glühen an der Glimmlampe.
+
+82
+00:08:25,680 --> 00:08:30,220
+Erdung wieder anschließen und den Abstimmungsübergang starten.
+
+83
+00:08:31,680 --> 00:08:34,600
+Beginnen, sich entlang der Anzapfungen zu bewegen.
+
+84
+00:08:36,400 --> 00:08:37,120
+Bewegen.
+
+85
+00:08:37,800 --> 00:08:38,780
+Beobachten.
+
+86
+00:08:39,580 --> 00:08:40,840
+Erste Anzapfung.
+
+87
+00:08:43,800 --> 00:08:46,060
+Angeschlossen — am Lampenglühen.
+
+88
+00:08:46,200 --> 00:08:48,920
+Jetzt wechseln wir mal zur, sagen wir, vierten Anzapfung.
+
+89
+00:08:50,240 --> 00:08:51,080
+Angeschlossen.
+
+90
+00:08:51,160 --> 00:08:52,140
+Glühen ist heller.
+
+91
+00:08:52,700 --> 00:08:59,180
+Wir reduzieren also die Drahtmenge, die Frequenz steigt.
+
+92
+00:08:59,820 --> 00:09:00,820
+Und noch ein Punkt.
+
+93
+00:09:01,420 --> 00:09:12,060
+Du willst die Antenne am heißen Ende angeschlossen lassen — verschieb das heiße Ende nicht, verschieb nur den Erdungspunkt.
+
+94
+00:09:12,300 --> 00:09:25,920
+Sonst, wenn du das Gegenteil versuchst — sagen wir, wir würden den Antennenanschluss verschieben — würde sie als zusätzlicher Strahler wirken und Verzerrungen einbringen.
+
+95
+00:09:26,460 --> 00:09:35,640
+Das Signal sollte eine saubere Sinuswelle sein, keine Verzerrungen.
+
+96
+00:09:35,740 --> 00:09:40,480
+Das ist die zuverlässigste Methode, um sicherzustellen.
+
+97
+00:09:40,740 --> 00:09:47,640
+Du kannst auch die nicht benutzten Enden nehmen, sie zusammenlöten und wieder in den Draht einbinden.
+
+98
+00:09:47,820 --> 00:09:50,360
+Das schließt jeglichen Einfluss vollständig aus.
+
+99
+00:09:51,140 --> 00:10:00,700
+Also weiter — die Last glüht, was bedeutet, wir können die Drossel ein bisschen mehr bewegen, die Platine verschieben und weitermachen.
+
+100
+00:10:00,900 --> 00:10:04,320
+Jetzt schalten wir nach und nach um, beobachten die Last.
+
+101
+00:10:06,220 --> 00:10:11,180
+Auf die fünfte Anzapfung wechseln — Glühen wächst.
+
+102
+00:10:11,720 --> 00:10:17,100
+Sechste Anzapfung, siebte, achte.
+
+103
+00:10:17,700 --> 00:10:19,920
+Du siehst die Helligkeit steigen.
+
+104
+00:10:20,960 --> 00:10:26,000
+Neunte, zehnte, elfte.
+
+105
+00:10:26,580 --> 00:10:29,480
+Wir haben also einen Trend des Frequenzanstiegs.
+
+106
+00:10:30,640 --> 00:10:43,440
+In diesem Fall können wir bestätigen, dass die Frequenz hier an der Antenne jetzt ein Megahertz beträgt.
+
+107
+00:10:43,980 --> 00:10:46,300
+Und die Last glüht schön.
+
+108
+00:10:46,440 --> 00:10:47,580
+Weiter testen.
+
+109
+00:10:47,980 --> 00:10:58,100
+Verschiebe die Drossel — schauen wir, ob wir eine Stelle finden können, wo die Last noch heller glüht.
+
+110
+00:10:59,720 --> 00:11:01,320
+Bewegung über Anzapfungen.
+
+111
+00:11:01,320 --> 00:11:07,060
+Noch helleres Glühen.
+
+112
+00:11:07,940 --> 00:11:11,060
+Hier ziemlich hell.
+
+113
+00:11:12,160 --> 00:11:19,900
+Weiter — sechzehnte Anzapfung von zwanzig.
+
+114
+00:11:20,200 --> 00:11:22,040
+Die Helligkeit nimmt ab.
+
+115
+00:11:23,000 --> 00:11:25,240
+Also können wir aufhören.
+
+116
+00:11:26,960 --> 00:11:29,640
+Fünfzehnte, sechzehnte Anzapfung in diesem Fall.
+
+117
+00:11:31,400 --> 00:11:35,560
+Du siehst, ich bin die Anzapfungen bis hier hin durchgegangen.
+
+118
+00:11:37,780 --> 00:11:38,380
+Und jetzt
+
+119
+00:11:42,020 --> 00:11:48,780
+können wir mit der Drossel selbst spielen.
+
+120
+00:11:49,200 --> 00:11:51,040
+Zwischen den Anzapfungen.
+
+121
+00:11:53,340 --> 00:11:58,540
+Verschiebe die Drossel und finde das maximale Glühen an unserer Last.
+
+122
+00:12:00,000 --> 00:12:01,740
+Das ist das maximale Glühen.
+
+123
+00:12:02,420 --> 00:12:10,020
+Du kannst auch feststellen, dass der Verbrauch sinkt, wenn das System gut abgestimmt ist.
+
+124
+00:12:10,860 --> 00:12:18,620
+Für meine Spule haben wir den optimalen Punkt gefunden, wo die Systemfrequenz reinkommt.
+
+125
+00:12:18,880 --> 00:12:19,900
+Entspricht
+
+126
+00:12:23,340 --> 00:12:26,220
+1,135 MHz.
+
+127
+00:12:28,080 --> 00:12:34,680
+Als Nächstes — du kannst diesem Aufbau eine Lastvisualisierung hinzufügen.
+
+128
+00:12:35,200 --> 00:12:40,600
+Du kannst hier einen Gleichrichter hinzufügen und Messgeräte anschließen.
+
+129
+00:12:41,440 --> 00:12:57,640
+Du kannst zum Beispiel ein Voltmeter an diesen Aufbau anschließen und statt nach Auge zu beurteilen, wie die Lampe glüht, den Moment verfolgen, wenn das Voltmeter die maximale Spannung an der Last anzeigt.
+
+130
+00:12:57,780 --> 00:13:03,440
+Das passt zur Frequenz, die du für diese Spule brauchst.
+
+131
+00:13:03,540 --> 00:13:19,560
+Um das Ergebnis am Frequenzgang für diese Spule festzunageln, empfehle ich, nach den Messungen mit einer Antenne eine andere anzuschließen — weniger Windungen, ändere die Gesamtdimensionen gegenüber der vorherigen — und die Frequenz erneut zu prüfen.
+
+132
+00:13:19,560 --> 00:13:23,980
+Verglichen mit der vorherigen und prüfe auch die Frequenz.
+
+133
+00:13:24,380 --> 00:13:32,920
+Und bei dieser oder einer anderen Frequenz an dieser Antenne werden wir die maximale Absorption durch unseren Resonator sehen.
+
+134
+00:13:33,840 --> 00:13:47,480
+Und ja — du siehst, ich habe eine viel kürzere Antenne mit viel breiterem Abstand aufgehängt und an das System angeschlossen.
+
+135
+00:13:47,620 --> 00:14:01,360
+Musste zu einer niedrigeren Anzapfung wechseln, die Drossel verschieben, die Last glüht entsprechend und wir können auch diese Frequenz bestätigen.
+
+136
+00:14:04,100 --> 00:14:18,680
+Du kannst mit diesem System bei niedrigeren Frequenzen spielen, indem du Ferrit hinzufügst — das heißt, dieser Aufbau lässt dich den vollen Frequenzgang des Resonators erfassen.
+
+137
+00:14:21,320 --> 00:14:36,840
+Du kannst auch bei höheren Frequenzen spielen — dafür verbinden wir statt einer Antenne eine einzelne äquivalente Windung mit dem heißen Ende.
+
+138
+00:14:37,380 --> 00:14:38,820
+Und testen genauso.
+
+139
+00:14:38,920 --> 00:14:43,600
+Du kannst sie entlang der Spule schieben und die Abhängigkeiten beobachten.
+
+140
+00:14:44,060 --> 00:14:46,200
+Jeder baut seinen eigenen Aufbau.
+
+141
+00:14:46,500 --> 00:15:00,680
+Ich empfehle auch, hier einen Brückengleichrichter, einen Filter und ein Voltmeter hinzuzufügen — damit du nach Spannung beurteilen kannst, wie präzise deine Abstimmung ist.
+
+142
+00:15:00,740 --> 00:15:16,500
+Wir haben die Antenne geändert — prüfen wir auch das: wenn wir den Erdungspunkt zwischen kaltem und heißem Ende verschieben, sollte sich unser Verbrauch nicht zu drastisch ändern.
+
+143
+00:15:16,500 --> 00:15:29,540
+Jetzt haben wir die Erdung am kalten Ende — prüfen wir den Verbrauch, 24 V bei 0,75 A. Zum heißen Ende wechseln —
+
+144
+00:15:33,070 --> 00:15:35,110
+Verbrauch ist etwas gestiegen.
+
+145
+00:15:35,690 --> 00:15:56,150
+Das ist normal — denn wenn die Erdung am heißen Ende ist, sind die Windungen, die das elektrische Feld von der Antenne aufnehmen, näher an der Gehäuseoberfläche, also bekommen wir einen kleinen Verbrauchsanstieg.
+
+146
+00:15:56,150 --> 00:15:58,330
+Anstieg im Verbrauch.
+
+147
+00:15:58,750 --> 00:16:12,470
+Insgesamt sehen wir, dass sich der Verbrauch unwesentlich ändert, was bedeutet, dass dies die Frequenz ist, die am besten zu dieser Spule passt und gut mit ihr abgestimmt ist.
+
+148
+00:16:13,730 --> 00:16:22,430
+Weiter zu Fragen, die meiner Meinung nach am relevantesten und interessantesten sind.
+
+149
+00:16:23,650 --> 00:16:25,110
+Frage 1.
+
+150
+00:16:25,930 --> 00:16:33,910
+Gibt es eine Abhängigkeit zwischen der Drahtlänge der Hochspannungsspule und der Drahtlänge des Resonators?
+
+151
+00:16:34,530 --> 00:16:46,870
+Die Frage ist richtig — es gibt natürlich eine Abhängigkeit bei der Wellenverteilung. Wir wickeln die Hochspannungsspule auf eine Drahtlänge gleich der Drahtlänge des Resonators.
+
+152
+00:16:47,010 --> 00:16:59,590
+Oder wenn unser Resonator eine höhere Frequenz benötigt, wickeln wir die Hochspannungsspule auf eine Drahtlänge gleich der halben Drahtlänge des Resonators.
+
+153
+00:17:00,430 --> 00:17:02,930
+Es gibt noch einen interessanten Punkt.
+
+154
+00:17:03,110 --> 00:17:22,450
+Dieses Ding, das wir alle daran hängen, die Antenne — es gibt eine gewisse Abhängigkeit von der Kapazität, die zwischen ihrer Oberfläche und der geerdeten Spule gebildet wird, und das beeinflusst auch die Frequenz.
+
+155
+00:17:22,450 --> 00:17:23,010
+Die Frequenz.
+
+156
+00:17:23,610 --> 00:17:25,870
+Aber es geht nicht nur darum.
+
+157
+00:17:26,350 --> 00:17:32,090
+Die Drahtlänge dieser Antenne muss entsprechen
+
+158
+00:17:35,350 --> 00:17:41,250
+einer effektiven Strahlung bei der Frequenz, mit der die Hochspannungsspule arbeitet.
+
+159
+00:17:41,430 --> 00:17:48,950
+Das heißt, für diese Spiralresonatoren gelten Antennenregeln — sie müssen effektiv strahlen.
+
+160
+00:17:49,050 --> 00:17:54,450
+Das heißt, im Grunde ein Viertelwellenstrahler, oder Dreiviertelwelle, oder Fünfviertelwelle.
+
+161
+00:17:54,590 --> 00:17:58,830
+Das heißt, wir passen es nach Länge an etwas Solches an.
+
+162
+00:17:59,550 --> 00:18:06,850
+Die einfachste Methode ist natürlich das Anpassen durch Abschneiden der Leiterlänge.
+
+163
+00:18:07,990 --> 00:18:14,630
+Und das Ziel ist das maximale elektrische Feld um die Antenne.
+
+164
+00:18:14,690 --> 00:18:19,690
+Damit sie wirklich als Antenne arbeiten kann.
+
+165
+00:18:21,270 --> 00:18:26,750
+Wieder bei der Frequenz, die unsere Tesla erzeugt.
+
+166
+00:18:28,190 --> 00:18:41,510
+Das ist eher Antennentheorie — der Draht hat eine physische Länge, einen Durchmesser, und er ist auch zu einer Spule gewickelt.
+
+167
+00:18:42,050 --> 00:18:48,370
+Für Antennen kannst du das berechnen, sogar mit Online-Rechnern.
+
+168
+00:18:49,110 --> 00:19:04,290
+Und wenn sie an der Spule montiert und durch eine kapazitive Kopplung damit verbunden ist, und die Spule geerdet ist — passen diese Berechnungen nicht ganz, eigentlich sind sie ziemlich daneben.
+
+169
+00:19:04,310 --> 00:19:09,150
+Also bleibt uns nichts anderes übrig, als die Drahtlänge in der Praxis anzupassen.
+
+170
+00:19:10,470 --> 00:19:22,850
+Da die Leiterlänge der Hochspannungsspule für uns festgelegt ist, stimmen wir am Ende die Frequenz ab, indem wir die geometrischen Abmessungen der Antenne ändern.
+
+171
+00:19:23,330 --> 00:19:29,450
+Stauche, dehne ihre Windungen, erhöhe den Durchmesser — also manipuliere sie.
+
+172
+00:19:29,890 --> 00:19:46,630
+Und wenn wir die mit diesem Aufbau gefundene effektive Frequenz nicht einstellen können, dann ändern wir den Wickeldurchmesser dieses Drahts bei der Länge, die mit der Drahtlänge in der Spule übereinstimmen sollte.
+
+173
+00:19:48,690 --> 00:19:54,270
+Ändere den Formdurchmesser — das verursacht auch eine Frequenzgangverschiebung.
+
+174
+00:19:54,850 --> 00:20:05,090
+Frage 2 — wo finden die Hauptprozesse statt: in der Grenade selbst oder in ihrer Drossel?
+
+175
+00:20:05,990 --> 00:20:14,110
+In den meisten Online-Aufbauten, die die Leute machen, finden alle Prozesse in der Drossel statt.
+
+176
+00:20:14,830 --> 00:20:25,850
+Und relativ zur Drossel ist die Grenade selbst nur ein Bündel Draht, auf den das Magnetfeld einwirkt.
+
+177
+00:20:26,370 --> 00:20:36,470
+Die Interaktion findet zwischen der Antenne, dem elektrischen Feld der Tesla und dem Magnetfeld in der Drossel statt.
+
+178
+00:20:36,490 --> 00:20:39,790
+Und diese Spule ist nur ein Abnehmer.
+
+179
+00:20:40,450 --> 00:20:54,310
+Aber dieser Modus ist sehr instabil — das ist, wenn wir einen Vermittler bauen, das heißt, wir treiben die Drossel in den Resonator-Modus und nehmen einfach ab.
+
+180
+00:20:54,430 --> 00:20:55,550
+Und der Modus ist ineffizient.
+
+181
+00:20:55,670 --> 00:21:09,970
+Viel effizienter ist es, die Hauptspule in den Resonator-Modus zu treiben und die Drossel als Quelle des rotierenden Magnetfelds wirken zu lassen — dann finden alle Prozesse in dieser Spule statt.
+
+182
+00:21:10,090 --> 00:21:18,270
+Deshalb berechnen wir per Programm, wickeln, um die richtige Induktivität zu treffen und alle Prozesse darin zu bekommen.
+
+183
+00:21:20,330 --> 00:21:21,730
+Frage 3.
+
+184
+00:21:22,670 --> 00:21:34,810
+In einem deiner Videos — der Methodik zur Suche der Gegentaktfrequenz — hast du gezeigt, dass für deine Spule die Frequenz 90,8 kHz beträgt.
+
+185
+00:21:35,530 --> 00:21:36,390
+Warum so hoch?
+
+186
+00:21:36,610 --> 00:21:38,430
+Warum ist die Frequenz so hoch?
+
+187
+00:21:39,010 --> 00:21:47,710
+Wir alle arbeiten doch bei Frequenzen von 9 bis 35 kHz und der LC-Schwingkreis in unserem System funktioniert gut.
+
+188
+00:21:48,850 --> 00:21:55,190
+In diesem Video habe ich die Methode gezeigt, genau die Frequenz zu finden, die für diese Spule gebraucht wird.
+
+189
+00:21:55,330 --> 00:21:58,830
+Ich habe mich nicht versprochen — das ist genau die Frequenz.
+
+190
+00:21:59,250 --> 00:22:00,310
+Was passiert?
+
+191
+00:22:00,310 --> 00:22:08,970
+Wir haben alle diesen Moment gesehen, wenn du den LC-Schwingkreis auf welche Frequenz auch immer einstellst, auf die du gerade landest.
+
+192
+00:22:09,070 --> 00:22:13,010
+Jeder stimmt auf das ab, was sich ergibt.
+
+193
+00:22:13,070 --> 00:22:16,530
+Wähle einen Serienkondensator und stimme ab.
+
+194
+00:22:17,170 --> 00:22:21,270
+Das ist am Ende die Abstimmung auf die erste LC-Resonanzharmonische.
+
+195
+00:22:21,610 --> 00:22:30,010
+Und wenn du eine Last anschließt, siehst du, der Gegentaktverbrauch fällt im Strom.
+
+196
+00:22:32,410 --> 00:22:34,990
+Alles normal — wir alle kennen diesen Moment.
+
+197
+00:22:35,450 --> 00:22:36,310
+Was passiert?
+
+198
+00:22:36,430 --> 00:22:38,230
+Nichts Übernatürliches.
+
+199
+00:22:38,790 --> 00:22:53,030
+In dem Moment, wenn der LC-Schwingkreis nicht belastet ist, braucht er, um die maximale Schwingungsamplitude aufrechtzuerhalten, eine bestimmte Menge elektrischer Energie.
+
+200
+00:22:53,430 --> 00:23:08,030
+Sobald wir eine Last anschließen, verstimmen wir den Schwingkreis — seine Frequenz verschiebt sich weg von der Hauptschwingung — und es stellt sich heraus, dass für eine niedrigere Schwingungsamplitude im Schwingkreis auch weniger Energie benötigt wird.
+
+201
+00:23:08,030 --> 00:23:10,230
+Eine kleinere Menge elektrischer Energie.
+
+202
+00:23:10,390 --> 00:23:15,990
+Genau deshalb siehst du den Gegentaktverbrauch sinken.
+
+203
+00:23:17,050 --> 00:23:18,630
+Was machen wir?
+
+204
+00:23:18,830 --> 00:23:20,430
+Das ist die falsche Abstimmung.
+
+205
+00:23:21,790 --> 00:23:30,630
+Der Drossel-Schwingkreis sollte auf die dritte, fünfte, siebte oder neunte Harmonische abgestimmt werden — ungerade.
+
+206
+00:23:31,410 --> 00:23:36,070
+Was passiert in dem Fall, wenn du den Gegentakt auf eine Harmonische abstimmst?
+
+207
+00:23:37,600 --> 00:23:43,870
+Die Verstimmung des Schwingkreises ist unbedeutend, viel weniger als bei der ersten Harmonischen.
+
+208
+00:23:44,510 --> 00:23:56,630
+Wenn du auf diese Weise abstimmst, siehst du beim Lastanschluss auf einer ungeraden Harmonischen, dass sich der Gegentaktverbrauch entweder nicht ändert oder sogar steigt.
+
+209
+00:23:57,210 --> 00:23:59,330
+Der Schwingkreis wird stabil.
+
+210
+00:23:59,450 --> 00:24:06,850
+Und so können wir, durch Abstimmen des Drossel-Schwingkreises auf eine Harmonische, die Frequenz treffen, die wir wirklich brauchen.
+
+211
+00:24:07,310 --> 00:24:09,790
+In diesem Fall angewendet auf meine Spule.
+
+212
+00:24:09,930 --> 00:24:14,230
+Bei mir sollte die Frequenz 90,8 kHz betragen.
+
+213
+00:24:14,810 --> 00:24:17,210
+Ich stimme auf die fünfte Harmonische ab.
+
+214
+00:24:17,730 --> 00:24:23,590
+Bei mir sollte der Gegentakt auf der fünften Harmonischen mit 18 kHz laufen.
+
+215
+00:24:24,490 --> 00:24:30,050
+Das sind 18 kHz plus weitere 0,1 kHz, wenn du eine präzise Abstimmung bekommst.
+
+216
+00:24:30,550 --> 00:24:36,930
+Also läuft mein Gegentakt wie deiner, mit etwa 18,1 kHz.
+
+217
+00:24:38,030 --> 00:24:43,730
+Und der Schwingkreis der Drossel hat eine Frequenz von 90,8 kHz.
+
+218
+00:24:44,250 --> 00:24:48,930
+Nichts Übernatürliches — einfach Betrieb auf einer Harmonischen.
+
+219
+00:24:49,690 --> 00:24:58,050
+Du musst verstehen, das elektrische Feld der Tesla kann nicht beeinflussen
+
+220
+00:25:02,450 --> 00:25:12,010
+das in der Drossel rotierende Magnetfeld in dem Moment, wenn der Gegentakt feuert.
+
+221
+00:25:12,110 --> 00:25:15,730
+Das heißt, wir müssen im Schwingkreis freie Schwingungen erzeugen.
+
+222
+00:25:16,230 --> 00:25:24,270
+Du kannst es mit einem Schwungrad vergleichen, das wir angeschoben haben und das sich eine Anzahl Male von selbst dreht.
+
+223
+00:25:24,630 --> 00:25:41,090
+Die Arbeit mit der Tesla über das Magnetfeld, während der freien Schwingungen des Magnetfelds — und damit auch der Strombewegung — ist die einzige Art, wie unser System arbeiten kann.
+
+224
+00:25:41,430 --> 00:25:47,290
+Wenn wir auf der ersten LC-Resonanzharmonischen laufen, bekommen wir nichts dergleichen.
+
+225
+00:25:47,970 --> 00:25:52,450
+Also: dritte, fünfte, siebte oder neunte Harmonische.
+
+226
+00:25:52,530 --> 00:25:59,330
+Geh nicht über die neunte hinaus — der Q-Faktor sinkt.
+
+227
+00:26:00,190 --> 00:26:00,670
+Lohnt sich nicht.
+
+228
+00:26:00,870 --> 00:26:02,170
+Frage 4.
+
+229
+00:26:03,170 --> 00:26:15,170
+Online begannen Infos über einen TL-494-Chip-"Glitch" aufzutauchen, der dir erlaubt, dieses System in den Betriebsmodus zu bringen.
+
+230
+00:26:15,710 --> 00:26:18,070
+Hast du davon gehört, und was ist das?
+
+231
+00:26:20,710 --> 00:26:22,190
+Lass uns diesen Prozess analysieren.
+
+232
+00:26:22,430 --> 00:26:40,850
+Ja — Leute, die es schaffen, aus diesen Systemen Gewinn herauszuholen oder sie in einen Betriebsmodus zu bringen, verwenden tatsächlich das, was als "Chip-Glitch" bezeichnet wurde.
+
+233
+00:26:41,570 --> 00:26:46,870
+Aber in diesem Fall gibt es eigentlich keinen Chip-Glitch.
+
+234
+00:26:47,590 --> 00:26:49,330
+Der Prozess ist sehr einfach.
+
+235
+00:26:50,490 --> 00:26:57,510
+Zwischen dem ansteuernden Chip und dem System bildet sich eine Rückkopplung.
+
+236
+00:26:58,370 --> 00:27:11,570
+Sie bildet sich, wenn ein Einfluss entweder auf Pin 3, am häufigsten Pin 4, oder auf den frequenzbestimmenden Pin 5 stattfindet, wo der frequenzbestimmende Kondensator sitzt.
+
+237
+00:27:13,510 --> 00:27:24,830
+Weil dieser Chip nicht abgeschirmt ist und in der Nähe der Antenne selbst oder in der Nähe der Tesla-Hochspannungsspule sitzt.
+
+238
+00:27:26,990 --> 00:27:28,810
+Schauen wir das genauer an.
+
+239
+00:27:28,890 --> 00:27:29,770
+Was passiert?
+
+240
+00:27:29,930 --> 00:27:37,050
+Wenn der Schwingkreis der Drossel läuft, haben wir ein Magnetfeld.
+
+241
+00:27:38,230 --> 00:27:56,010
+Dieses Magnetfeld hat einen bestimmten Durchmesser um das System, und direkt über der Drossel befindet sich die Tesla-Antenne, an der ein elektrisches Feld erscheint, wenn wir es einschalten.
+
+242
+00:27:56,530 --> 00:28:04,690
+Das elektrische Feld der Tesla hat einen viel größeren Durchmesser, und Chips können in dessen Einflussbereich fallen.
+
+243
+00:28:05,270 --> 00:28:07,390
+Und dieses interessante Phänomen passiert.
+
+244
+00:28:08,210 --> 00:28:23,430
+Das Magnetfeld moduliert das elektrische Feld, und da das elektrische Feld der Tesla einen großen Durchmesser hat, kannst du aufgrund schlechten Aufbaus oder langer Drähte eine Einkopplung bekommen
+
+245
+00:28:23,650 --> 00:28:31,270
+an den Pins 3, 4 oder 5 dieses Chips.
+
+246
+00:28:31,810 --> 00:28:33,850
+Was kann als Ergebnis passieren?
+
+247
+00:28:34,250 --> 00:28:46,690
+Das Tastverhältnis am Chip-Ausgang kann sich ändern, die Frequenz kann sich innerhalb eines bestimmten Bereichs verschieben, oder er kann ganz aufhören zu arbeiten.
+
+248
+00:28:48,390 --> 00:29:04,430
+Es gibt ein unangenehmes Merkmal — bei einer Änderung des Tastverhältnisses können Gegentakt-Transistoren durchbrennen, weil der Chip durch starke Einkopplung unregelmäßig arbeitet und die Kanäle überlappen.
+
+249
+00:29:04,430 --> 00:29:05,850
+Am Ausgangs-Tastverhältnis.
+
+250
+00:29:05,930 --> 00:29:07,530
+Das passiert normalerweise.
+
+251
+00:29:08,110 --> 00:29:12,590
+Aber dieser Effekt kann zu unserem Vorteil im System genutzt werden.
+
+252
+00:29:13,390 --> 00:29:14,410
+Wie machen wir das?
+
+253
+00:29:14,590 --> 00:29:31,130
+Du musst verstehen, dass wenn wir in der Drossel saubere Sinusschwingungen erzeugen — sie haben die gleiche Amplitude, positive Halbperiode gleich in der Amplitude zur negativen Halbperiode —
+
+254
+00:29:31,130 --> 00:29:41,990
+solche harmonischen Schwingungen, wie Gleichstrom, sind für das Medium ein normales Phänomen.
+
+255
+00:29:42,210 --> 00:29:54,930
+Für das Medium, im Grunde. Und wenn es eine Magnetfeld-Schräglage, verschiedene Längen, die sie abstimmen, gibt, geht das System in ein Ungleichgewicht, wird asymmetrisch.
+
+256
+00:29:54,930 --> 00:29:55,650
+In ein asymmetrisches System.
+
+257
+00:29:56,250 --> 00:30:05,550
+Dieses anomale Verhalten wird vom Medium als große Störung wahrgenommen, die unterdrückt werden muss.
+
+258
+00:30:05,710 --> 00:30:07,250
+Und es reagiert scharf.
+
+259
+00:30:07,390 --> 00:30:14,050
+So gelingt es Leuten zufällig, diesen Betriebsmodus zu erwischen und einen gewissen Gewinn zu sehen.
+
+260
+00:30:14,610 --> 00:30:27,090
+Der Gewinn wird signifikant sein — es kann sogar dazu führen, dass das System in den sogenannten Selbstlauf geht, wenn das System sich selbst zu betreiben beginnt.
+
+261
+00:30:27,210 --> 00:30:29,430
+Aber dieser Modus ist sehr instabil.
+
+262
+00:30:29,530 --> 00:30:39,950
+Es ist ein unkontrollierter Prozess, der oft aus der Bahn gerät und zu Elektronikausfällen im System führt.
+
+263
+00:30:40,730 --> 00:30:46,090
+Du kannst ihn nutzen, aber ich empfehle es nicht.
+
+264
+00:30:46,190 --> 00:30:49,350
+Der Prozess muss kontrollierbarer gemacht werden.
+
+265
+00:30:49,450 --> 00:30:55,490
+Das System arbeitet wirklich wie ein lebender Organismus, also ist ein komplexer Aufbau nötig.
+
+266
+00:30:55,510 --> 00:31:05,670
+Für die Leute, die nach diesem Prinzip Geld verdienen — ich wiederhole, die Tesla arbeitet nicht so, wie sie sollte, um anständige Leistung zu bekommen.
+
+267
+00:31:05,810 --> 00:31:13,090
+Das ganze System ist unkoordiniert und du wirst daraus keine großen Leistungen herausholen.
+
+268
+00:31:13,210 --> 00:31:20,490
+Aufgrund der Schräglage der Magnet- und elektrischen Felder kannst du in diesem System einen gewissen Gewinn sehen.
+
+269
+00:31:21,930 --> 00:31:23,510
+Viel Erfolg euch allen bei euren Experimenten.
+
+270
+00:31:25,270 --> 00:31:26,050
+Alles Gute.

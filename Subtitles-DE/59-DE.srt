@@ -1,0 +1,1399 @@
+1
+00:00:00,750 --> 00:00:02,210
+Hallo zusammen.
+
+2
+00:00:03,170 --> 00:00:10,210
+Heute schauen wir uns eine ziemlich bekannte und interessante Schaltung an, die Katscher heißt.
+
+3
+00:00:12,370 --> 00:00:26,890
+Diese Schaltung ist ein Selbstoszillator, aufgebaut auf einem einzelnen Transistor mit Rückkopplung direkt vom kalten Ende der Hochspannungsspule zur Basis dieses Transistors.
+
+4
+00:00:27,530 --> 00:00:29,250
+Warum brauchen wir diese Schaltung?
+
+5
+00:00:29,910 --> 00:00:41,110
+Diese Schaltung hilft uns, die Frage zu beantworten, auf welche Frequenz die Tesla-Spule relativ zu unserem Resonator in der Grenade abgestimmt werden soll.
+
+6
+00:00:43,130 --> 00:00:45,930
+Diese Frage stellen Abonnenten oft.
+
+7
+00:00:47,170 --> 00:00:51,250
+Also bauen wir diese Schaltung auf diesem Transistor auf.
+
+8
+00:00:51,330 --> 00:00:52,830
+Ich glaube, jeder hat einen.
+
+9
+00:00:53,870 --> 00:00:54,490
+2SC5200.
+
+10
+00:00:56,550 --> 00:01:01,450
+Wir nehmen ihn, weil er weit verbreitet und leicht zu kaufen ist.
+
+11
+00:01:02,870 --> 00:01:06,330
+Und wir schauen, wie dieses System läuft.
+
+12
+00:01:06,750 --> 00:01:12,670
+Was wir wissen und was wir noch nicht wissen über das Abstimmen dieser Systeme.
+
+13
+00:01:13,590 --> 00:01:14,910
+Gehen wir unsere Schaltung durch.
+
+14
+00:01:15,450 --> 00:01:20,490
+Am Stromeingang haben wir eine Plus-Minus-Gleichstromversorgung.
+
+15
+00:01:21,810 --> 00:01:27,410
+Der Strom trifft sofort auf den ersten Filterkondensator.
+
+16
+00:01:29,490 --> 00:01:33,110
+Dieser Kondensator ist 100 nF, 275 V.
+
+17
+00:01:33,470 --> 00:01:37,950
+Als Nächstes trifft er auf einen Gleichtakt-Netzfilter.
+
+18
+00:01:38,650 --> 00:01:44,970
+Er ist speziell so ausgelegt, dass Gleichstrom direkt durch die Filterkapazität hindurchgeht.
+
+19
+00:01:44,970 --> 00:01:49,890
+Ungehindert — jede Wechselstromkomponente wird unterdrückt.
+
+20
+00:01:50,510 --> 00:01:55,950
+Danach trifft der Ausgang auf einen weiteren Filterkondensator.
+
+21
+00:01:56,350 --> 00:01:58,870
+Auch 100 nF, 275 V.
+
+22
+00:02:00,110 --> 00:02:05,970
+Und dann trifft der Strom auf den Haupt-Reservoirkondensator.
+
+23
+00:02:06,310 --> 00:02:07,910
+Ein Elektrolytkondensator.
+
+24
+00:02:08,670 --> 00:02:11,510
+Seine Kapazität beträgt 47 µF bei 400 V.
+
+25
+00:02:12,050 --> 00:02:27,410
+Die Spannungsfestigkeit dieses Kondensators sollte nicht unter 400 V liegen, weil im System Hochspannungspotential auftreten kann, damit der Kondensator nicht platzt oder durch eine Hochspannungseinkopplung durchschlägt.
+
+26
+00:02:27,410 --> 00:02:29,590
+Durch eine Hochspannungseinkopplung.
+
+27
+00:02:30,650 --> 00:02:37,990
+Dann ist parallel dazu ein Kondensator installiert, der auch spezielle Anforderungen hat.
+
+28
+00:02:38,370 --> 00:02:40,150
+Auch nicht weniger als 400 V.
+
+29
+00:02:41,250 --> 00:02:44,090
+Kapazität in diesem Fall 155 nF.
+
+30
+00:02:45,970 --> 00:02:47,990
+Die Anforderungen sind diese.
+
+31
+00:02:48,170 --> 00:02:52,290
+Muss ein Folienkondensator sein, hochfrequenztauglich.
+
+32
+00:02:52,370 --> 00:02:55,450
+Typ CBB81 funktioniert.
+
+33
+00:02:56,770 --> 00:03:07,670
+Er wird gebraucht, um einen scharfen Impuls zu formen, der am Kollektor des Transistors erscheint.
+
+34
+00:03:09,090 --> 00:03:15,090
+Dieser Impuls geht dann zur Drossel der Tesla-Hochspannungsspule.
+
+35
+00:03:17,050 --> 00:03:29,530
+Das System ist aufgebaut auf dem Transistor plus zwei Widerständen, die einen Spannungsteiler bilden.
+
+36
+00:03:30,470 --> 00:03:40,870
+Ein Widerstand verbindet direkt zwischen minus Versorgung und der Transistorbasis, der andere zwischen plus Versorgung und der Basis.
+
+37
+00:03:41,390 --> 00:03:49,090
+Ein Spannungsteiler wird gebildet, der einen Arbeitspunkt an der Transistorbasis erzeugt.
+
+38
+00:03:49,850 --> 00:04:04,450
+Aber was du hier nicht vergessen darfst, ist, dass nicht nur die beiden Widerstände wirken — es gibt auch den Widerstand, der durch die Basis-Emitter-Strecke im Halbleiter des Transistors gebildet wird.
+
+39
+00:04:05,670 --> 00:04:09,410
+Also bekommen wir einen komplexeren Teiler zum Minus.
+
+40
+00:04:09,630 --> 00:04:12,250
+Drei Widerstände im Spiel.
+
+41
+00:04:13,070 --> 00:04:19,670
+In diesem Fall beträgt der Basis-Emitter-Widerstand 2,7 kΩ.
+
+42
+00:04:20,010 --> 00:04:26,710
+Der Widerstand zwischen plus Versorgung und Basis beträgt 3,3 kΩ.
+
+43
+00:04:27,430 --> 00:04:32,350
+Werte von 1 bis 10 kΩ getestet — funktioniert.
+
+44
+00:04:34,350 --> 00:04:44,430
+Je höher der Wert dieses Widerstands, desto weniger verbraucht das ganze System insgesamt.
+
+45
+00:04:45,030 --> 00:04:47,470
+Interessantes Verhalten.
+
+46
+00:04:48,250 --> 00:04:51,970
+Wir untersuchen das später, lege jetzt nur die Grundlagen dar.
+
+47
+00:04:52,570 --> 00:04:57,570
+Auf dem Oszilloskop sollten wir dieses Signal sehen.
+
+48
+00:04:58,530 --> 00:05:08,530
+Die Breite dieses Signals entspricht der halben Periode der Schwingung der Hochspannungsspule.
+
+49
+00:05:09,310 --> 00:05:15,630
+Und innerhalb dieses Signals wollen wir so viele hochfrequente Peaks wie möglich.
+
+50
+00:05:16,430 --> 00:05:29,070
+Sie fallen im Wesentlichen auf die Versorgungsschiene in Spannungsskalenbreite hinab.
+
+51
+00:05:29,990 --> 00:05:33,670
+Aber nicht ganz nach unten.
+
+52
+00:05:33,870 --> 00:05:44,190
+Und am Ende bekommt das System Hochspannungs-Hochfrequenz-Impulse verpasst.
+
+53
+00:05:44,310 --> 00:05:49,870
+Aber insgesamt sieht die Hochspannungsspule es als einen einzigen Impuls.
+
+54
+00:05:51,210 --> 00:05:56,110
+Und je mehr Peaks, desto besser fährt das System hoch.
+
+55
+00:05:58,230 --> 00:06:15,790
+Wenn dieses System auch direkt am Aufbau verwendet wird, hier eine einfache Möglichkeit zur Synchronisation — hier ein Schema unseres Schalenkerns, der Ablenkeinheit aus einem Fernsehbildschirm.
+
+56
+00:06:15,790 --> 00:06:16,470
+Fernsehbildschirm.
+
+57
+00:06:17,830 --> 00:06:28,410
+28 Windungen, oder wie viele auf die Hälfte passen — wir setzen das auf diesen Ausgang, oder eine schnelle Diode.
+
+58
+00:06:29,710 --> 00:06:43,590
+So schneiden wir die Hälfte vom Signal ab, lassen eine Halbperiode davon durch und führen es dem Stromeingang zu.
+
+59
+00:06:44,550 --> 00:06:49,830
+Dieser Kondensator hier blockiert die Hochspannungsspitze.
+
+60
+00:06:51,270 --> 00:06:59,770
+Als Hochspannungssignal kann es zwischen 100 und 350–400 Volt liegen.
+
+61
+00:06:59,870 --> 00:07:03,350
+Das heißt, wenn das System es absorbiert, geht es nicht höher.
+
+62
+00:07:03,350 --> 00:07:06,290
+Es gibt auch einen Abfall an der Diode.
+
+63
+00:07:07,590 --> 00:07:15,510
+Und wofür dieser Filter hauptsächlich da ist — er entfernt alle Störungen.
+
+64
+00:07:16,130 --> 00:07:25,830
+Der Strom, der das System erreicht, ist bereits einpolig, synchronisiert mit einer Halbperiode des Gegentakts.
+
+65
+00:07:26,350 --> 00:07:38,890
+Wenn er läuft, müssen wir die Diode einfach entweder hier oder hier umschalten, oder diese Drähte tauschen, und wir können das System auf der positiven oder, sagen wir, der negativen Halbperiode betreiben.
+
+66
+00:07:38,890 --> 00:07:39,610
+Negativ.
+
+67
+00:07:39,710 --> 00:07:41,290
+Die einfachste Synchronisation.
+
+68
+00:07:41,870 --> 00:07:43,470
+Nicht die effizienteste, klar.
+
+69
+00:07:44,130 --> 00:07:52,030
+Elektronische Synchronisation ist viel effektiver, aber diese Art der Synchronisation ist auch machbar.
+
+70
+00:07:54,930 --> 00:08:08,290
+Die Verwendung dieses Filters — zwei Kondensatoren und ein gegensinnig gewickelter Transformator auf einem einzigen Kern — bietet eine gewisse Isolation von der Stromquelle.
+
+71
+00:08:08,530 --> 00:08:18,910
+Und vor allem, wenn wir dieses Synchronisationssystem nutzen, entfernt es alle Störungen, die am Eingang vorhanden sind.
+
+72
+00:08:19,630 --> 00:08:32,270
+Es filtert auch Störungen heraus, die vom Betrieb der Tesla-Hochspannungsspule zur Stromquelle zurück wandern könnten.
+
+73
+00:08:32,870 --> 00:08:37,750
+Du siehst auch, wir haben eine Erdung.
+
+74
+00:08:38,050 --> 00:08:42,030
+Sie ist direkt mit dem Emitter dieses Transistors verbunden.
+
+75
+00:08:44,970 --> 00:08:51,550
+Und wenn du schaust, läuft das Minus durch den Filter zur Erdung.
+
+76
+00:08:52,230 --> 00:08:56,610
+Unsere Erdung ist auch nicht direkt angeschlossen.
+
+77
+00:08:56,830 --> 00:09:05,230
+Es gibt eine galvanische Verbindung, aber keine Verbindung für die Hochfrequenzseite.
+
+78
+00:09:05,350 --> 00:09:15,430
+So schützen wir den Rest des Systems vor Störungen, die während des Spulenbetriebs auftreten können.
+
+79
+00:09:16,890 --> 00:09:18,690
+Hier ein weiterer interessanter Punkt.
+
+80
+00:09:19,250 --> 00:09:24,750
+Dieser Transistor hat ziemlich solide Spezifikationen.
+
+81
+00:09:25,270 --> 00:09:33,330
+Kollektor-Basis-Spannung max 230 V.
+
+82
+00:09:33,830 --> 00:09:38,090
+Kollektor-Emitter-Spannung auch 230 V max.
+
+83
+00:09:38,590 --> 00:09:45,950
+Und Emitter-Basis-Spannung nur 5 V absoluter Maximalwert für die Steuerung.
+
+84
+00:09:47,110 --> 00:09:54,970
+Wie funktioniert das, unseren Transistor direkt an das kalte Ende der Hochspannungsspule anzuschließen?
+
+85
+00:09:55,150 --> 00:09:57,530
+Da sind doch scheinbar Kilovolt.
+
+86
+00:09:58,250 --> 00:10:03,330
+Warum arbeitet dieser Transistor mit max 5 V?
+
+87
+00:10:04,230 --> 00:10:13,990
+Die Sache ist, im Betrieb der Tesla-Hochspannungsspule haben wir eine Phasenverschiebung zwischen Strom und Spannung.
+
+88
+00:10:14,570 --> 00:10:22,130
+Und an der Basis-Emitter-Strecke gibt's als solche keine Hochspannung.
+
+89
+00:10:23,410 --> 00:10:38,190
+Je nach Modus können das Zehntel-Volt sein, oder, abhängig vom Arbeitspunkt und der Hochfahrphase der Spule, bis zu 2–2,5 Volt.
+
+90
+00:10:38,330 --> 00:10:50,070
+Und um das zu verstehen — damit unser Transistor nicht durchbrennt — haben wir mit dem Widerstandsteiler einen Bias erzeugt, ein positives Potential.
+
+91
+00:10:50,430 --> 00:11:02,270
+Und unser Transistor öffnet sich, weil er ein NPN-Typ ist — die Leitfähigkeit dieses Transistors wird durch die positive Halbperiode ausgelöst.
+
+92
+00:11:02,370 --> 00:11:15,590
+Und wir müssen darauf achten, dass an diesem Punkt die Bias-Spannung an der Basis plus das während der positiven Halbperiode anwesende Spannungspotential 5 V nicht überschreitet.
+
+93
+00:11:16,250 --> 00:11:19,570
+Darüber brennt der Transistor durch.
+
+94
+00:11:21,370 --> 00:11:38,170
+Er funktioniert bis +150°C, und wir müssen verstehen, dass diese 150°C die Temperatur am Halbleiterkristall selbst sind.
+
+95
+00:11:38,570 --> 00:11:53,490
+Wenn wir den Transistor anschauen, befindet sich das Halbleiterchip in dieser Zone, montiert auf einer Metallplatte, die sowohl als Wärmeableitfläche dient als auch galvanisch direkt mit dem Kollektor verbunden ist.
+
+96
+00:11:53,490 --> 00:11:58,650
+Mit dem Kollektor des Transistors.
+
+97
+00:11:59,530 --> 00:12:07,350
+Also sind in diesem Fall 150°C die Chip-Temperatur, nicht die Kühlkörper-Temperatur.
+
+98
+00:12:07,970 --> 00:12:23,370
+Du musst auf die Kühlkörper-Temperatur für diesen Transistor achten — wenn sie auf 120°C steigt, droht der Transistor durchzubrennen, weil das Chip selbst bei 120°C Kühlkörper-Temperatur schon etwa 145°C innen hat.
+
+99
+00:12:23,370 --> 00:12:32,630
+Innerhalb des Transistors.
+
+100
+00:12:33,130 --> 00:12:41,910
+Aber diese Schaltung ist so ausgelegt, dass wir hier keine großen Temperaturanstiege sehen werden.
+
+101
+00:12:42,110 --> 00:12:51,670
+Bei 24 V Versorgung — ich habe es auch bis 50 V getestet — kommt der Kühlkörper leicht damit klar, im Grunde keine Erwärmung.
+
+102
+00:12:52,310 --> 00:13:07,610
+In manchen Videos sahen wir das System so abgestimmt, dass es einen einzelnen Impuls gibt, um die Ausgangsamplitude zu maximieren.
+
+103
+00:13:08,110 --> 00:13:15,290
+Aus der Praxis hat sich das als nicht der gewünschte Arbeitsmodus erwiesen.
+
+104
+00:13:15,890 --> 00:13:33,330
+Maximaler Spulenausgang bei minimalem Verbrauch kann nur passieren, wenn der Transistor in diesem hochfrequenten Impulsmodus relativ zur Eigenfrequenz der Spule arbeitet.
+
+105
+00:13:34,450 --> 00:13:40,630
+Jetzt schauen wir, wie das System in Metall umgesetzt ist.
+
+106
+00:13:42,210 --> 00:13:50,910
+Hier ist das Schaltungslayout, auf dem alle Teile montiert sind.
+
+107
+00:13:52,350 --> 00:13:54,930
+Was sehen wir zuerst?
+
+108
+00:13:55,610 --> 00:13:59,310
+Stromeingangsklemmen — plus und minus.
+
+109
+00:14:00,350 --> 00:14:16,250
+Zuerst der Filterkondensator mit 100 nF, dann der Filter selbst mit gegensinnigen Wicklungen, dann der zweite Kondensator, das Hauptreservoir und der Haupt-Schnellentladekondensator.
+
+110
+00:14:17,030 --> 00:14:20,390
+Von ihm geht der Plus-Ausgang — Minus ist hier.
+
+111
+00:14:20,810 --> 00:14:25,470
+Ein Draht vom Minus geht direkt zur Erdung.
+
+112
+00:14:26,790 --> 00:14:36,270
+Das Teilersystem, das den Bias an der Transistorbasis erzeugt, ist zur Justierung eingerichtet.
+
+113
+00:14:37,870 --> 00:14:45,390
+Ein Widerstand geht zum Plus, der andere zum Minus — direkt zum Emitter.
+
+114
+00:14:45,450 --> 00:14:46,870
+Dieser Draht geht zur Basis.
+
+115
+00:14:47,410 --> 00:14:54,190
+Der Teiler wird auf optimalen Betrieb eingestellt, dann auf die Platine montiert.
+
+116
+00:14:55,070 --> 00:15:00,590
+Der Transistor sitzt auf einem massiven Kühlkörper.
+
+117
+00:15:00,770 --> 00:15:03,970
+Wie sich rausstellte, brauchst du keinen so großen Kühlkörper.
+
+118
+00:15:04,510 --> 00:15:12,690
+Mit diesem System geht der Kühlkörper bei 24 V Versorgung nicht über 45°C.
+
+119
+00:15:12,850 --> 00:15:14,410
+Du kannst einen kleineren Kühlkörper verwenden.
+
+120
+00:15:15,010 --> 00:15:36,310
+Ich habe keine Wärmedämmunterlage verwendet — die, die den Kühlkörper galvanisch vom Transistor isoliert — um eine bessere Kühlung für das System zu bekommen.
+
+121
+00:15:37,550 --> 00:15:42,250
+Also ist der Kühlkörper der Kollektor dieses Transistors.
+
+122
+00:15:42,430 --> 00:15:46,870
+Du kannst das Oszilloskop direkt davon abgreifen.
+
+123
+00:15:48,730 --> 00:15:54,570
+Weiter zu dem, was ich den wichtigsten Teil unseres Systems nennen würde.
+
+124
+00:15:55,050 --> 00:15:57,710
+Das ist unsere Hochspannungsspule.
+
+125
+00:16:00,110 --> 00:16:11,650
+In vielen Videos online sieht man diese Spulen auf Rohren gewickelt, die aus Abwasserrohren entnommen sind — also Kunststoff.
+
+126
+00:16:12,510 --> 00:16:19,390
+Wie sich in der Praxis herausstellte, ist Kunststoff überhaupt nicht zum Wickeln dieser Spulen geeignet.
+
+127
+00:16:20,490 --> 00:16:21,490
+Was passiert?
+
+128
+00:16:22,890 --> 00:16:25,350
+Wir haben dieses Experiment gemacht.
+
+129
+00:16:26,050 --> 00:16:48,350
+Auf dieser Form, die aus Pappe besteht — du kannst leicht Backfolien-Rohre bekommen, und es gibt auch sehr hochwertige spezielle Formen.
+
+130
+00:16:48,970 --> 00:16:49,890
+Eine Option.
+
+131
+00:16:49,910 --> 00:16:54,090
+Oder jedes andere Papprohr, das du findest.
+
+132
+00:16:54,970 --> 00:17:05,790
+Wir haben 30 cm auf diese Form gewickelt, mit 0,75 mm Drahtquerschnitt.
+
+133
+00:17:08,130 --> 00:17:17,490
+Und diese Spule wurde an eine ziemlich große Antenne angeschlossen.
+
+134
+00:17:17,990 --> 00:17:26,730
+Die Antenne ist aus Aluminiumdraht, 7 Windungen, Wickeldurchmesser 135 mm.
+
+135
+00:17:27,910 --> 00:17:42,030
+In Analogie zu Wicklungen auf Plastikrohren erwartete ich eine Frequenz im Bereich 600–750 kHz zu sehen.
+
+136
+00:17:42,190 --> 00:17:56,530
+Als das System gestartet und der Frequenzgang gemessen wurde, stellte sich heraus, dass die Systemfrequenz für eine so lange Wicklung 1,2 MHz betrug.
+
+137
+00:17:57,530 --> 00:18:15,610
+Dann habe ich auf einer Form mit demselben Durchmesser, aber aus Plastik — wie Abwasserrohr — denselben Draht gewickelt und den Frequenzgang verglichen.
+
+138
+00:18:16,470 --> 00:18:28,030
+Und um in demselben System auf 1,2 MHz zu kommen, musste ich 9,5 mm auf das Plastikrohr wickeln.
+
+139
+00:18:29,070 --> 00:18:33,670
+Daraus habe ich geschlossen, dass Plastik überhaupt nicht für diese Wicklungen geeignet ist.
+
+140
+00:18:34,890 --> 00:18:38,770
+Ein weiterer Nachteil von Plastikrohren ist Folgendes.
+
+141
+00:18:38,950 --> 00:18:43,790
+Es unterdrückt sowohl die Frequenz des Systems als auch seinen Q-Faktor stark.
+
+142
+00:18:45,230 --> 00:18:48,050
+Die Hochspannungsspule arbeitet viel schlechter.
+
+143
+00:18:48,650 --> 00:18:57,810
+Du brauchst eine höhere Versorgungsspannung, um die Hochspannungs-Tesla-Spule speziell auf einem Plastikrohr anzutreiben.
+
+144
+00:18:58,570 --> 00:19:12,450
+Wir werden sehen — dieses System ist, wie zusammengebaut, schon ab 1,6 V Eingang funktionsfähig.
+
+145
+00:19:12,710 --> 00:19:31,790
+Der Selbstoszillator startet, und wenn wir eine Sonde in die Nähe dieser Antenne legen, kann man bei dieser Versorgungsspannung schon eine saubere schöne Sinuswelle sehen.
+
+146
+00:19:31,990 --> 00:19:35,230
+Der Q-Faktor des Systems ist sehr hoch.
+
+147
+00:19:36,410 --> 00:19:40,290
+Eine weitere Frage, die oft auftaucht.
+
+148
+00:19:41,250 --> 00:19:47,010
+Kann man diese Spulen wickeln, indem man den Draht lötet?
+
+149
+00:19:47,870 --> 00:19:55,890
+Auf dieser Spule siehst du 1, 2, 3, 4, und noch eine auf dieser Seite — fünf Lötstellen.
+
+150
+00:19:56,650 --> 00:20:03,330
+Beim Einstellen der Frequenz habe ich die Methode des Drahtabwickelns verwendet.
+
+151
+00:20:04,390 --> 00:20:14,070
+Dabei musste der Draht natürlich geschnitten und, um auf andere Frequenzen umzustellen, wieder zusammengelötet werden.
+
+152
+00:20:14,930 --> 00:20:30,350
+Wie sich rausstellte — wenn du eine gute Erdung hast (in diesem Fall sehr gut — 25 mm² Schweißkabel, aber ich habe auch 4 mm² Draht ausprobiert).
+
+153
+00:20:30,730 --> 00:20:40,070
+Ich habe wirklich keinen Unterschied gesehen, also musst du nicht hinter Schweißkabeln herrennen, um diese Systeme zu verbessern.
+
+154
+00:20:40,230 --> 00:20:41,870
+Aber du willst eine gute Erdung.
+
+155
+00:20:42,410 --> 00:20:59,930
+Und wenn die Erdung gut ist, mit gutem Kontakt zum Boden, dann wirst du keine Betriebsverschlechterung oder Harmonische, Verzerrung des Sinussignals oder andere Probleme am gelöteten Draht sehen.
+
+156
+00:21:00,090 --> 00:21:01,710
+Das heißt, die Spule läuft sauber.
+
+157
+00:21:02,170 --> 00:21:15,130
+Hauptsache ist, beide Drähte richtig vom Lack zu reinigen, sie physisch zusammenzudrillen und sie erst danach mit Lot zu verzinnen.
+
+158
+00:21:15,130 --> 00:21:20,850
+Dann Schrumpfschlauch drüber, und der Draht funktioniert ohne Probleme.
+
+159
+00:21:24,990 --> 00:21:28,710
+Jetzt ein weiterer wichtiger Punkt.
+
+160
+00:21:30,770 --> 00:21:45,390
+Wenige wissen, dass Tesla-Spulen funktionieren — wenn du es so formulieren willst — indem sie die elektromagnetische Strahlung von der Drossel im Volumen erfassen.
+
+161
+00:21:46,070 --> 00:21:56,270
+Für die gegebenen Abmessungen der Drossel gibt es eine minimal zulässige geometrische Größe für die Tesla-Spule selbst.
+
+162
+00:21:56,970 --> 00:22:12,990
+Wenn du diese Mindestmaße nicht beachtest, geht die Drossel von selbst in Anregung, entwickelt eigene Schwingungen, durcheinanderbringt das ganze System, und die Hochspannungsspule ist viel schlechter abgestimmt.
+
+163
+00:22:12,990 --> 00:22:19,670
+Mit der Drossel selbst.
+
+164
+00:22:20,310 --> 00:22:33,690
+Wickle nicht, nur um die Frequenz zu senken, mit sehr dünnem Draht — also Drähte unter 0,5 mm Querschnitt.
+
+165
+00:22:34,590 --> 00:22:42,470
+An Tesla-Spulen mit Rohrdurchmessern von 40 bis 50 mm solltest du keine dünnen Drähte verwenden.
+
+166
+00:22:42,990 --> 00:22:54,230
+Wir brauchen ein bestimmtes Volumen, das diese Spule im Raum einnimmt, um die elektromagnetische Welle von der Drossel aufzunehmen.
+
+167
+00:22:55,630 --> 00:22:58,490
+Du musst das verstehen und abstimmen.
+
+168
+00:22:59,170 --> 00:23:03,050
+Es gibt auch zwei Möglichkeiten, die Frequenz einzustellen.
+
+169
+00:23:03,890 --> 00:23:12,130
+Über die erste haben wir gesprochen — das Abwickeln des Drahts — was die Frequenz anhebt.
+
+170
+00:23:12,830 --> 00:23:15,810
+Oder wir können den anderen Weg gehen.
+
+171
+00:23:16,170 --> 00:23:35,210
+Wir können die Drahtlänge im System wie sie ist belassen — was die Form füllt — und die Frequenz über die geometrischen Abmessungen ändern: die Antenne strecken, den Durchmesser vergrößern oder die Windungszahl erhöhen.
+
+172
+00:23:35,210 --> 00:23:37,650
+Der Windungen an der Antenne selbst.
+
+173
+00:23:38,410 --> 00:23:43,010
+In manchen Fällen der Systeme, mit denen wir arbeiten, ist es vorzuziehen.
+
+174
+00:23:43,090 --> 00:23:58,810
+Sagen wir, wenn wir eine bestimmte Drahtlänge für die Hochspannungsspule beibehalten müssen, um sie an die Drahtlänge der Empfangsspule anzupassen, und die Frequenz geändert werden muss — also auf Frequenz abgestimmt.
+
+175
+00:23:58,810 --> 00:24:01,650
+Auf Frequenz abgestimmt.
+
+176
+00:24:02,250 --> 00:24:09,670
+Die Drahtlänge bleibt unverändert, und wir ändern die Frequenz durch Anpassung der Antenne.
+
+177
+00:24:10,750 --> 00:24:14,450
+Zur Antenne — sehr wichtige Info.
+
+178
+00:24:16,810 --> 00:24:20,810
+Du kannst die Antenne nicht aus Kupferdraht wickeln.
+
+179
+00:24:21,610 --> 00:24:30,370
+Erstens trennt sich Kupferdraht schwer von statischer Ladung.
+
+180
+00:24:31,370 --> 00:24:45,390
+Kupfer ist eher für die Arbeit mit direkter Strombewegung — schwere Ladung, die sich entlang der Oberfläche oder im Kristallgitter des Leiters bewegt.
+
+181
+00:24:45,390 --> 00:24:46,510
+Des Leiters.
+
+182
+00:24:47,130 --> 00:24:52,310
+Dieses Material ist gut für Stellen, wo du ein Magnetfeld erzeugen musst.
+
+183
+00:24:52,870 --> 00:25:00,110
+Wo du mit Statik arbeiten musst, empfehle ich Aluminium zu verwenden.
+
+184
+00:25:00,550 --> 00:25:03,370
+Zunächst hier der Test, den wir gemacht haben.
+
+185
+00:25:04,170 --> 00:25:12,910
+Wir haben eine Antenne aus Aluminium gewickelt, und eine weitere aus Kupferdraht mit demselben Querschnitt.
+
+186
+00:25:13,370 --> 00:25:19,630
+Identische Abmessungen, Drahtlänge, Durchmesser — und wir haben die Frequenzen gemessen.
+
+187
+00:25:20,030 --> 00:25:34,030
+Und es stellte sich heraus, dass die Systemfrequenz mit einer Kupferantenne 150 kHz niedriger war als mit einer Aluminiumantenne identischer geometrischer Abmessungen.
+
+188
+00:25:35,270 --> 00:25:38,350
+Du kannst diese Experimente selbst durchführen und es bestätigen.
+
+189
+00:25:39,270 --> 00:25:42,470
+Ich empfehle also nicht, Kupfer für die Antenne zu verwenden.
+
+190
+00:25:43,170 --> 00:25:48,110
+Kupfer erzeugt übrigens ein starkes Magnetfeld.
+
+191
+00:25:48,350 --> 00:25:57,610
+Wenn unsere Systeme laufen, dürfen wir kein Magnetfeld direkt in der Antennenzone haben.
+
+192
+00:25:58,090 --> 00:26:09,750
+Wir brauchen ein wechselndes elektrisches Potential, das später mit dem Magnetfeld in unserem Resonator interagiert.
+
+193
+00:26:10,270 --> 00:26:12,730
+Deshalb verwenden wir Aluminium.
+
+194
+00:26:15,270 --> 00:26:18,150
+Weiter dazu, wie unser Gerät läuft.
+
+195
+00:26:18,290 --> 00:26:21,570
+Schauen wir uns die Oszillogramme von der Versorgungsseite an.
+
+196
+00:26:23,590 --> 00:26:28,390
+Wir starten dieses System von einem Labornetzgerät.
+
+197
+00:26:28,750 --> 00:26:36,490
+Die Versorgung ist bei 1,3 V und die Stromaufnahme ist null.
+
+198
+00:26:36,630 --> 00:26:38,830
+Das System läuft also noch nicht.
+
+199
+00:26:40,930 --> 00:26:47,790
+Der gelbe Oszilloskopkanal — die Sonde selbst — hängt am Kollektor des Transistors.
+
+200
+00:26:48,950 --> 00:26:57,890
+Die Oszilloskop-Masse liegt am Erdungsdraht, im Grunde am Emitter des Transistors und am Draht, der zur Erdung geht.
+
+201
+00:26:59,890 --> 00:27:09,850
+Jetzt erhöhe ich die Versorgungsspannung sanft und wir sehen, bei welcher Spannung das System startet.
+
+202
+00:27:10,210 --> 00:27:18,530
+Das heißt, wir sehen Sinuswellen-Schwingungen auf dem blauen Oszilloskopkanal.
+
+203
+00:27:20,170 --> 00:27:21,390
+Spannung erhöhen.
+
+204
+00:27:22,970 --> 00:27:32,890
+Und hier sehen wir, die Spannung ist nur um ein paar Zehntel Volt gestiegen.
+
+205
+00:27:33,150 --> 00:27:37,850
+Jetzt sind es 1,3 V.
+
+206
+00:27:37,950 --> 00:27:42,610
+Und im Grunde keine Stromaufnahme vom System.
+
+207
+00:27:42,890 --> 00:27:46,070
+Aber das System läuft schon.
+
+208
+00:27:47,990 --> 00:27:55,470
+Das heißt, das Wickeln auf einer Pappform liefert einen sehr hohen Q-Faktor.
+
+209
+00:27:55,570 --> 00:27:59,950
+Sie kann bei minimalem Verbrauch laufen.
+
+210
+00:28:02,130 --> 00:28:04,190
+Versorgung erhöhen.
+
+211
+00:28:05,350 --> 00:28:06,890
+Jetzt siehst du's deutlich.
+
+212
+00:28:07,170 --> 00:28:09,210
+1,4 V.
+
+213
+00:28:09,970 --> 00:28:11,330
+1,5 V.
+
+214
+00:28:11,330 --> 00:28:13,610
+1,6 V.
+
+215
+00:28:13,630 --> 00:28:14,670
+1,7 V.
+
+216
+00:28:14,670 --> 00:28:16,550
+1,8 V.
+
+217
+00:28:17,250 --> 00:28:35,270
+Bei 1,8 V, Stromaufnahme 0,03 A, hat die Antenne schon Potential, das mit einer Glimmlampe aufgenommen werden kann.
+
+218
+00:28:36,170 --> 00:28:38,870
+Du siehst, die Lampe leuchtet, wenn du den Draht berührst.
+
+219
+00:28:40,090 --> 00:28:43,290
+Das System beginnt, seine Eigenschaften zu zeigen.
+
+220
+00:28:44,050 --> 00:28:48,410
+Natürlich betreiben wir's nicht auf diesen Pegeln.
+
+221
+00:28:49,510 --> 00:28:51,630
+Jetzt erhöhe ich die Versorgungsspannung.
+
+222
+00:28:54,250 --> 00:29:00,350
+Und wir schauen uns das Oszillogramm des Transistorbetriebs direkt am Kollektor an.
+
+223
+00:29:00,470 --> 00:29:14,460
+So sehen wir, wie das System läuft, synchronisieren und analysieren.
+
+224
+00:29:14,900 --> 00:29:25,420
+Hier sehen wir die Peaks, von denen ich gesprochen habe — hochfrequent, am Kollektor.
+
+225
+00:29:27,320 --> 00:29:37,220
+Du siehst die Synchronisation — der Transistor feuert auf der positiven Halbperiode der Eigenschwingung der Spule.
+
+226
+00:29:39,300 --> 00:29:51,260
+Die Arbeitsfrequenz des Systems — siehst du in der oberen rechten Ecke — beträgt 1,33 MHz.
+
+227
+00:29:52,780 --> 00:30:02,640
+Die Wicklung ist jetzt 4,5 cm auf dem Spulenkörper.
+
+228
+00:30:03,320 --> 00:30:08,140
+Wicklungs-Formdurchmesser 25 cm.
+
+229
+00:30:08,840 --> 00:30:15,400
+Bei so einer Antenne siehst du, die Frequenz ist ziemlich hoch.
+
+230
+00:30:16,420 --> 00:30:21,800
+Und wir sehen, unser Transistor beginnt zu arbeiten.
+
+231
+00:30:22,080 --> 00:30:31,080
+Erster Spike, dann Spannungsabfall, dann ein weiterer Spike, dann noch einer.
+
+232
+00:30:31,440 --> 00:30:34,100
+Jetzt erhöhe ich auch die Versorgungsspannung.
+
+233
+00:30:34,100 --> 00:30:36,260
+Jetzt sind es 7,5 V.
+
+234
+00:30:36,480 --> 00:30:40,300
+Und wir werden sehen, dass die Anzahl der Spikes steigt.
+
+235
+00:30:40,960 --> 00:30:43,420
+Aber damit wächst die Amplitude.
+
+236
+00:30:44,480 --> 00:30:46,020
+Bringe es auf Nennwert.
+
+237
+00:30:46,900 --> 00:30:48,020
+Jetzt 9 V.
+
+238
+00:30:49,880 --> 00:30:57,020
+Und schau dir die Spike-Amplitude an, wenn die Versorgung bei 24 V liegt.
+
+239
+00:31:02,840 --> 00:31:06,760
+Jetzt präzise auf 24 V Versorgung eingestellt.
+
+240
+00:31:07,400 --> 00:31:12,760
+Du siehst, ein weiterer Peak ist erschienen.
+
+241
+00:31:13,860 --> 00:31:22,100
+Wenn man also die Versorgungsamplitude erhöht, steigt die Anzahl der Spikes.
+
+242
+00:31:22,940 --> 00:31:31,560
+Und je mehr Spikes da sind, desto besser arbeitet unser System — sparsamer.
+
+243
+00:31:31,840 --> 00:31:36,000
+Im Vergleich zur Abstimmung des Systems auf nur einen Peak.
+
+244
+00:31:36,600 --> 00:31:42,760
+In diesem Fall siehst du die Spike-Amplitude.
+
+245
+00:31:43,940 --> 00:31:51,080
+Die höchste Amplitude beim ersten Impuls beträgt 136 V.
+
+246
+00:31:51,080 --> 00:31:54,260
+Bei 24 V Versorgung.
+
+247
+00:31:55,240 --> 00:32:03,920
+Und wir sehen, die Spannung entspricht den 24 V, die am Eingang anliegen.
+
+248
+00:32:04,760 --> 00:32:11,000
+Und der Verbrauch beträgt nur 0,6 A.
+
+249
+00:32:11,640 --> 00:32:21,240
+Du siehst auch, die Lampe in der Nähe der Antenne leuchtet.
+
+250
+00:32:21,920 --> 00:32:25,380
+Die Leuchtstofflampe leuchtet hell, richtig gut.
+
+251
+00:32:26,460 --> 00:32:32,840
+Alle Effekte, die man im normalen Betriebsmodus erwarten würde, haben wir.
+
+252
+00:32:33,500 --> 00:32:37,600
+Die Glimmlampe leuchtet auf großem Abstand.
+
+253
+00:32:37,700 --> 00:32:39,540
+Prüfen wir den Abstand.
+
+254
+00:32:39,840 --> 00:32:45,620
+Beginnt zu leuchten etwa 35 cm von der Antenne entfernt.
+
+255
+00:32:47,920 --> 00:32:54,900
+Es gibt auch eine stabile Entladung auf Metallobjekte.
+
+256
+00:32:56,680 --> 00:32:58,220
+Schauen wir's uns jetzt an.
+
+257
+00:33:03,440 --> 00:33:10,020
+Etwa einen Zentimeter lang.
+
+258
+00:33:15,120 --> 00:33:17,840
+Du kannst einen stabilen Bogen ziehen.
+
+259
+00:33:21,490 --> 00:33:26,570
+Alle begleitenden Effekte zeigen sich mit dieser Abstimmung.
+
+260
+00:33:27,670 --> 00:33:35,310
+Es arbeitet nicht schlechter, als wenn wir einen einzelnen Spike haben, aber in einem viel sparsameren Modus.
+
+261
+00:33:36,230 --> 00:33:39,050
+Ich empfehle genau diesen Modus am Katscher.
+
+262
+00:33:39,690 --> 00:33:40,730
+Du wirst den Unterschied sehen.
+
+263
+00:33:42,330 --> 00:33:44,650
+Er ist deutlich erkennbar.
+
+264
+00:33:48,190 --> 00:34:00,930
+Du kannst auch ein weiteres interessantes Merkmal überprüfen, wenn wir das Oszilloskop nicht am Erdungsdraht, sondern an der Plus-Versorgung synchronisieren.
+
+265
+00:34:01,150 --> 00:34:03,710
+Die Synchronisation war vorher an der Erdung.
+
+266
+00:34:03,930 --> 00:34:11,430
+Jetzt klemmen wir an die Plus-Versorgung und schauen, was am Kollektor ist.
+
+267
+00:34:12,850 --> 00:34:24,190
+Masse an Plus angeschlossen, an die Kühlkörperfahne geklemmt, da sie nicht galvanisch mit dem Kollektor verbunden ist.
+
+268
+00:34:26,370 --> 00:34:33,050
+Und jetzt untersuchen wir den Betrieb mit dieser Messung.
+
+269
+00:34:37,650 --> 00:34:39,170
+Spannung erhöhen.
+
+270
+00:34:42,110 --> 00:34:49,310
+Jetzt 19, 20, 24 V Versorgung.
+
+271
+00:34:50,850 --> 00:34:56,910
+Was ist in diesem Modus interessant zu beachten?
+
+272
+00:34:56,990 --> 00:35:17,130
+Da wir relativ zum Plus der Versorgung synchronisiert sind, ist die maximale Amplitude niedriger, 106 V, aber wir können auch die Abfallamplitude im Minus-Masse-Punkt sehen, die —
+
+273
+00:35:17,130 --> 00:35:24,230
+da wir auf Plus synchronisiert sind — etwa der Versorgungsspannung entspricht.
+
+274
+00:35:25,170 --> 00:35:31,430
+Jetzt 24 V, aber wir lesen hier etwa 27 V Abfall.
+
+275
+00:35:31,550 --> 00:35:44,350
+Eine gewisse Verschiebung nach Minus ist sichtbar, aber die Peaks sind positiv — sogar relativ zum Plus der Systemversorgung.
+
+276
+00:35:47,190 --> 00:36:03,120
+Nichts Geheimnisvolles hier — weil die Spike-Amplitude selbst ein positives Potential hat, das viel größer ist als das Potential der Versorgung, die am Plus-Eingang anliegt.
+
+277
+00:36:03,380 --> 00:36:09,280
+Daher sehen wir relativ zum Plus den Abfall, im Grunde gleich der Versorgungsspannung.
+
+278
+00:36:10,120 --> 00:36:15,320
+Und der Impuls selbst geht in die positive Halbperiode.
+
+279
+00:36:16,640 --> 00:36:33,460
+Der mit "1" gekennzeichnete Marker — der gelbe — zeigt den Beginn von Null auf der Skala, an dem das Oszillogramm zentriert ist.
+
+280
+00:36:36,630 --> 00:36:55,130
+Du kannst auch an der Basis des Transistors messen — ohne Angst, das Oszilloskop zu braten — wenn das System mit der Erdung verbunden ist.
+
+281
+00:36:55,530 --> 00:37:01,190
+Nichts Beängstigendes, das Oszillogramm kann dort beobachtet werden.
+
+282
+00:37:01,330 --> 00:37:15,090
+Jetzt schließe ich eine zweite Oszilloskop-Sonde direkt an die Basis an und schaue mir das Signal an, das von der Spule zur Basis dieses Transistors kommt.
+
+283
+00:37:16,610 --> 00:37:21,790
+Den zweiten Oszilloskopkanal direkt an die Transistorbasis angeschlossen.
+
+284
+00:37:22,070 --> 00:37:29,190
+Du siehst, er liegt am Mittelpunkt des Widerstandsteilers.
+
+285
+00:37:30,070 --> 00:37:34,090
+Das heißt, hier angeschlossen.
+
+286
+00:37:35,330 --> 00:37:40,390
+Eigentlich angeschlossen am kalten Ende der Hochspannungsspule.
+
+287
+00:37:41,110 --> 00:37:54,970
+Du kannst solche Messungen mit dem Oszilloskop an diesem Punkt vornehmen, vorausgesetzt, du hast eine gute Erdung für die Hochspannungsspule.
+
+288
+00:37:56,470 --> 00:38:05,370
+Wenn du Zweifel an deiner Erdung hast, musst du hier einrichten, schau dir etwas an.
+
+289
+00:38:05,890 --> 00:38:09,830
+Das Gerät — das Oszilloskop selbst — darf nicht geerdet sein.
+
+290
+00:38:10,910 --> 00:38:12,870
+Das ist wichtig für die Arbeit.
+
+291
+00:38:13,610 --> 00:38:18,750
+Ich empfehle's auch dafür, wie du das Gerät mit Strom versorgst.
+
+292
+00:38:19,170 --> 00:38:25,090
+Diese sind für uns meist ziemlich teuer, und wir wollen uns nicht von ihnen trennen.
+
+293
+00:38:25,650 --> 00:38:32,590
+Du willst die Stromversorgung des Geräts von der Erdung isoliert haben.
+
+294
+00:38:33,490 --> 00:38:40,970
+Am Stecker des Geräts ist immer der Erdungskontakt zu sehen.
+
+295
+00:38:41,310 --> 00:38:47,230
+Er sollte beim Arbeiten mit der Hochspannungsspule nicht mit der Erdung verbunden sein.
+
+296
+00:38:47,750 --> 00:38:48,110
+Das ist eins.
+
+297
+00:38:48,350 --> 00:38:49,130
+Und noch eins.
+
+298
+00:38:50,210 --> 00:38:59,230
+Oszilloskope, Signalgeneratoren und so weiter — besser durch zum Beispiel zwei Transformatoren mit Strom versorgen.
+
+299
+00:38:59,350 --> 00:39:12,050
+Sagen wir, du hast zwei Transformatoren, etwa 200–300 W jeweils, genug, um mehrere Geräte zu betreiben.
+
+300
+00:39:12,230 --> 00:39:13,930
+Oder zumindest das Oszilloskop.
+
+301
+00:39:14,450 --> 00:39:22,530
+Du schließt es zuerst über eine Wicklung für das Netz 220 V an.
+
+302
+00:39:22,610 --> 00:39:28,010
+Dann gibt es im Abwärtsmodus, sagen wir, 12, 24 oder 36 V aus.
+
+303
+00:39:28,650 --> 00:39:31,270
+Und das zweite identische ist umgekehrt angeschlossen.
+
+304
+00:39:32,050 --> 00:39:34,450
+Mit, sagen wir, einer 12-V-Wicklung.
+
+305
+00:39:34,450 --> 00:39:44,210
+Aus dem 12-V-Ausgang des ersten Transformators bekommst du die Ausgangsspannung, die zur Netzwicklung des Geräts geht.
+
+306
+00:39:45,570 --> 00:39:50,770
+So isolierst du das Gerät über zwei Transformatoren vom Netz.
+
+307
+00:39:51,550 --> 00:39:54,870
+Sehr nützlich in der Arbeit und schützt deine Ausrüstung.
+
+308
+00:39:55,510 --> 00:40:00,170
+Und wir können das Oszillogramm an der Transistorbasis sehen.
+
+309
+00:40:00,830 --> 00:40:02,070
+Das ist nach Spannung.
+
+310
+00:40:02,490 --> 00:40:03,470
+Hier das Oszillogramm.
+
+311
+00:40:04,610 --> 00:40:14,270
+Du siehst, der Transistor am Kollektor kopiert die Spannungsform an der Basis.
+
+312
+00:40:15,950 --> 00:40:23,030
+Diese Signale, die wir haben, genau in der positiven Halbperiode.
+
+313
+00:40:23,970 --> 00:40:26,550
+Das ist nur aus Interesse.
+
+314
+00:40:26,610 --> 00:40:31,050
+Wenn du neugierig bist, kannst du selbst schauen und untersuchen.
+
+315
+00:40:32,270 --> 00:40:41,190
+Und wir können auch, sagen wir, eine Messung in diesem System durch einen Stromsensor machen.
+
+316
+00:40:41,930 --> 00:40:50,930
+Schauen wir — mit einem Sensor, der auf einem Ferritring gemacht ist — was im Erdungsdraht passiert.
+
+317
+00:40:51,070 --> 00:40:54,250
+Wir können es nach Strom untersuchen.
+
+318
+00:40:54,430 --> 00:40:57,150
+Jetzt installiere ich den Sensor und wir schauen.
+
+319
+00:40:59,590 --> 00:41:01,990
+Stromsensor angeschlossen.
+
+320
+00:41:02,430 --> 00:41:08,930
+Er liegt direkt am Draht, der vom Transistoremitter zur Erdung führt.
+
+321
+00:41:11,250 --> 00:41:19,710
+Und der zweite Oszilloskopkanal ist etwa 15 cm von der Antenne entfernt.
+
+322
+00:41:20,250 --> 00:41:23,310
+Noch ein wichtiger Hinweis zum Geräteschutz.
+
+323
+00:41:23,690 --> 00:41:36,570
+Schließe das Oszilloskop niemals am Hochspannungsende der Spule an, oder an deren Abschluss — das ist diese Antenne.
+
+324
+00:41:37,650 --> 00:41:40,870
+Du kannst leicht dein Gerät verlieren.
+
+325
+00:41:40,970 --> 00:41:52,430
+Alle Spannungsmessungen werden in diesem Fall mit der Sonde in einem gewissen Abstand vom Hochspannungsteil durchgeführt.
+
+326
+00:41:53,450 --> 00:42:00,450
+Ich verwende Sonden — ich empfehle diese — ausgelegt für 1500 V.
+
+327
+00:42:00,710 --> 00:42:10,070
+Sie kommen mit Frequenzen und Spannungen wirklich gut zurecht, sogar mit normaler Elektronik.
+
+328
+00:42:10,250 --> 00:42:15,270
+Ich habe sie speziell gekauft — sie sind nicht im Oszilloskop-Set dabei.
+
+329
+00:42:15,570 --> 00:42:23,050
+Aber 1500 V geben dir eine schöne Reserve, damit du dein Gerät nicht bratst.
+
+330
+00:42:24,710 --> 00:42:28,250
+Und jetzt haben wir den Stromsensor angeschlossen und wir untersuchen das Oszillogramm.
+
+331
+00:42:29,730 --> 00:42:37,370
+Erinnerung — gelber Kanal ist Strom im Erdungsdraht, blau ist Spannung.
+
+332
+00:42:37,950 --> 00:42:45,870
+Wir sehen, wir haben eine Phasenverschiebung zwischen Strom — gelber Kanal — und Spannung.
+
+333
+00:42:46,270 --> 00:42:49,650
+Und du siehst diese charakteristischen Signale nach Strom.
+
+334
+00:42:49,870 --> 00:42:53,230
+Erinnere dich an dieses Signal —
+
+335
+00:42:55,230 --> 00:43:01,110
+diese Peak-Schläge erscheinen speziell nach Strom.
+
+336
+00:43:01,150 --> 00:43:04,030
+Diese Punkte über der Sinuswelle.
+
+337
+00:43:04,930 --> 00:43:15,350
+Und die richtige Polarität für den Stromsensor an diesem System ist, wenn der Strom der Spannung vorauseilt.
+
+338
+00:43:15,430 --> 00:43:17,090
+Spannung ist jetzt der blaue Kanal.
+
+339
+00:43:17,090 --> 00:43:27,550
+Wir sehen jetzt keine saubere 90-Grad-Phasenverschiebung — um das genau zu sehen, müsstest du einen Widerstand am Stromsensor anhängen.
+
+340
+00:43:28,190 --> 00:43:41,450
+Aber nichtsdestotrotz gibt es in unserer Hochspannungsspule wirklich eine 90-Grad-Verschiebung, weil alle Prozesse bei uns in diesen Systemen über Strom ablaufen.
+
+341
+00:43:42,410 --> 00:43:43,370
+Warum über Strom?
+
+342
+00:43:43,470 --> 00:43:55,730
+Weil der ganze Prozess startet, wenn der Transistor die an ihn angelegte Spannung schaltet, was Strom in die Drossel einspeist.
+
+343
+00:43:56,330 --> 00:43:58,490
+Die Drossel erzeugt ein Magnetfeld.
+
+344
+00:43:59,030 --> 00:44:02,290
+Das Magnetfeld trifft die Spule.
+
+345
+00:44:02,430 --> 00:44:07,330
+Strom ging durch die Drossel, erzeugte ein Magnetfeld.
+
+346
+00:44:07,490 --> 00:44:15,230
+Das Magnetfeld wirkt auf die Spule, danach steigen die Schwingungen in ihr hoch.
+
+347
+00:44:15,350 --> 00:44:19,510
+Die Spannung hinkt also relativ zum Strom hinterher.
+
+348
+00:44:21,110 --> 00:44:30,210
+Und die richtige Polarität ist, wenn das Oszillogramm zeigt, dass der Strom der Spannung vorauseilt.
+
+349
+00:44:33,330 --> 00:44:35,330
+Viel Erfolg euch allen bei euren Experimenten.
+
+350
+00:44:35,510 --> 00:44:58,030
+In den nachfolgenden Videos schauen wir uns an, wie diese zusammengebaute Schaltung uns helfen wird, die Frequenz zu bestimmen, mit der der Hochspannungs-Hochfrequenz-Teil relativ zu unserer Grenade laufen sollte.

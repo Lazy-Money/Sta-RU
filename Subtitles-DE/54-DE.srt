@@ -1,0 +1,907 @@
+1
+00:00:00,730 --> 00:00:02,280
+Hallo zusammen.
+
+2
+00:00:03,040 --> 00:00:09,580
+Heute schauen wir uns die Spannungsversorgung für unseren Tesla in diesem kleinen Aufbau an.
+
+3
+00:00:10,660 --> 00:00:14,440
+Hier ist die Schaltung unseres Wandlers.
+
+4
+00:00:14,800 --> 00:00:16,460
+Welche Anforderungen gibt es daran?
+
+5
+00:00:17,260 --> 00:00:23,400
+Der Wandler wird aus 12 Volt versorgt, sodass das System aus einer einzigen Batterie gestartet werden kann.
+
+6
+00:00:25,220 --> 00:00:28,680
+Und er muss die Ausgangsspannung stabil halten.
+
+7
+00:00:29,920 --> 00:00:33,720
+Damit das funktioniert, brauchen wir eine Rückkopplung.
+
+8
+00:00:34,680 --> 00:00:36,780
+Ich gehe jetzt genauer darauf ein.
+
+9
+00:00:37,900 --> 00:00:39,060
+Wie das funktioniert.
+
+10
+00:00:40,800 --> 00:00:42,660
+So sieht unser Wandler aus.
+
+11
+00:00:43,800 --> 00:00:45,640
+So ein kleines Gerätchen, wie du siehst.
+
+12
+00:00:47,500 --> 00:00:50,440
+Ich erkläre Teil für Teil, was wohin gehört.
+
+13
+00:00:51,860 --> 00:00:55,100
+Der Aufbau ist nicht allzu kompliziert.
+
+14
+00:00:55,860 --> 00:01:03,960
+Im Grunde kannst du ihn nicht nur zur Versorgung des Teslas verwenden, sondern auch als normalen Wandler für andere Zwecke.
+
+15
+00:01:04,260 --> 00:01:08,120
+Du kannst leicht einen für 220 Volt bauen, was immer du brauchst.
+
+16
+00:01:08,740 --> 00:01:14,280
+Es hängt alles von diesem Transformator ab, wie viele Windungen du auf die Sekundärseite wickelst.
+
+17
+00:01:15,620 --> 00:01:17,240
+Gehen wir die Schaltung durch.
+
+18
+00:01:18,240 --> 00:01:22,120
+12 Volt Versorgung kommen herein.
+
+19
+00:01:22,120 --> 00:01:24,120
+Sie erreichen den Kondensator.
+
+20
+00:01:24,160 --> 00:01:27,800
+Unser Kondensator hat 3300 µF, 25 Volt.
+
+21
+00:01:28,640 --> 00:01:32,700
+Als Nächstes wird diese Versorgung zur Mittelanzapfung geführt.
+
+22
+00:01:33,300 --> 00:01:36,600
+Unser Wandler ist ein Gegentakttyp.
+
+23
+00:01:36,980 --> 00:01:41,960
+Für Niederspannung ist das die effizienteste Variante.
+
+24
+00:01:43,060 --> 00:01:48,120
+Wir haben 8 Windungen pro Zweig, die zur Sekundärwicklung führen.
+
+25
+00:01:48,260 --> 00:01:52,240
+Unsere Sekundärwicklung ist mit 75 Windungen gewickelt.
+
+26
+00:01:52,920 --> 00:01:56,140
+Nach jeweils 20 Windungen gibt es eine Anzapfung.
+
+27
+00:01:56,640 --> 00:01:57,880
+Hier sind diese Anzapfungen.
+
+28
+00:01:59,500 --> 00:02:01,820
+Erste, zweite und dritte.
+
+29
+00:02:03,080 --> 00:02:05,080
+Insgesamt haben wir also 75 Windungen gewickelt.
+
+30
+00:02:05,200 --> 00:02:07,360
+Was verwenden wir als Kern?
+
+31
+00:02:07,720 --> 00:02:11,660
+So einen Ferrit-Ringkern, Sorte 2000.
+
+32
+00:02:13,420 --> 00:02:16,020
+Seine Abmessungen sind gezeigt.
+
+33
+00:02:18,720 --> 00:02:29,200
+Loch 16 mm, Breite 8 mm und 33 mm Außendurchmesser.
+
+34
+00:02:30,720 --> 00:02:31,720
+Das reicht völlig.
+
+35
+00:02:32,340 --> 00:02:38,600
+Hier wird außerdem eine Drossel verwendet, da ist sie in der Schaltung, auf einem kleinen Ringkern aufgebaut.
+
+36
+00:02:38,700 --> 00:02:42,880
+Du kannst sie auf jedem Ringkern bauen, den du hast.
+
+37
+00:02:43,580 --> 00:02:46,420
+Sorte von 1000 bis 2000, alle gehen.
+
+38
+00:02:47,280 --> 00:02:48,220
+Wofür ist sie?
+
+39
+00:02:49,020 --> 00:02:53,240
+Dieser Ausgang versorgt den Tesla-Schalter.
+
+40
+00:02:54,020 --> 00:03:05,540
+Hier bekommen wir also scharfe Spannungsübergänge, wenn der Schalter arbeitet, plus statische Potenziale tauchen auf.
+
+41
+00:03:06,140 --> 00:03:12,240
+Und diese Drossel dämpft diese Übergänge, damit sie nicht in unsere Schaltung zurückwirken.
+
+42
+00:03:13,580 --> 00:03:24,960
+Vor dem Ausgang haben wir einen ungepolten Stütz-Kondensator, ein halbes Mikrofarad bei 400 Volt, um diese Spikes zu dämpfen.
+
+43
+00:03:25,740 --> 00:03:33,940
+Auf der Platine ist er aus 5 Kondensatoren mit je 0,1 µF zusammengesetzt.
+
+44
+00:03:34,420 --> 00:03:36,800
+Und das ist die Ausgangsdrossel.
+
+45
+00:03:37,960 --> 00:03:41,860
+Schauen wir, was wie funktioniert.
+
+46
+00:03:42,740 --> 00:03:52,760
+Wir bauen den Wandler auf, schöner kleiner Chip, UC3825N, im DIP8-Gehäuse.
+
+47
+00:03:53,620 --> 00:03:59,540
+Der Vorteil dieser Konstruktion ist, dass der Treiber eingebaut ist, du brauchst also keinen extra Chip.
+
+48
+00:04:00,280 --> 00:04:12,020
+Das reicht völlig für die Ansteuerung von Transistoren wie diesen in dem kleinen Gehäuse, ich glaube, das ist das TO-220.
+
+49
+00:04:13,220 --> 00:04:15,820
+Die arbeiten großartig.
+
+50
+00:04:16,840 --> 00:04:28,100
+Wir haben auch einen Entladewiderstand von einem Kiloohm hier. Im Grunde alles Standardkram, du hast diese Beschaltung in vorigen Videos schon gesehen.
+
+51
+00:04:28,800 --> 00:04:32,520
+Du brauchst hier keine Inversdioden, keine extra Beschaltung.
+
+52
+00:04:32,520 --> 00:04:38,340
+Es funktioniert hervorragend, unsere Schaltung hat keine so hohen Anforderungen.
+
+53
+00:04:39,600 --> 00:04:46,440
+Die Beschaltung ist einfach. Was ist hier sonst noch interessant?
+
+54
+00:04:47,860 --> 00:04:51,800
+Gehen wir, denke ich, zur Rückkopplungs-Schaltung über.
+
+55
+00:04:52,520 --> 00:05:00,960
+Unsere Rückkopplung ist mit einem Optokoppler aufgebaut, dem sehr verbreiteten PC-817.
+
+56
+00:05:02,780 --> 00:05:12,100
+Wir zoomen ein wenig heran und gehen es durch.
+
+57
+00:05:15,200 --> 00:05:22,540
+Optokoppler-Anschluss, und wir schauen, wie er funktioniert.
+
+58
+00:05:23,680 --> 00:05:40,620
+Wir nehmen die Versorgungsspannung nicht vom Ausgangs-Kondensator, sondern vor der Drossel, bevor sie all die Spikes vom Betrieb des Tesla-Schalters dämpft.
+
+59
+00:05:42,020 --> 00:05:50,100
+Das gemeinsame Minus am Ausgang geht zur Diodenbrücke.
+
+60
+00:05:50,220 --> 00:05:59,700
+Die Brücke ist in dieser Schaltung aus vier HER108-Dioden gemacht.
+
+61
+00:06:01,240 --> 00:06:05,080
+Warum habe ich mich entschieden, hier eine Diodenbrücke zu verwenden?
+
+62
+00:06:05,340 --> 00:06:15,200
+Wieder, wir brauchen Stabilität, damit die Rückkopplung nicht durch statische Spikes kurzgeschlossen wird, wir wollen, dass dieses ganze Zeug abfließt.
+
+63
+00:06:16,000 --> 00:06:19,340
+Das ist wirklich wichtig, damit dieser Wandler richtig funktioniert.
+
+64
+00:06:19,340 --> 00:06:39,760
+Bei gewöhnlichen Wandlern könntest du mit ein oder zwei Dioden auskommen, aber ich habe mich hier für eine kleine Diodenbrücke entschieden. So sieht das aus, vier Dioden und der Kondensator, den sie speisen, 3300 pF bei 400 V.
+
+65
+00:06:39,760 --> 00:06:43,580
+Das Potenzial fällt am 3300 pF, 400 V Kondensator ab.
+
+66
+00:06:44,300 --> 00:06:53,940
+Mit 75 Windungen gewickelt liefert dieser Wandler 130 V am Ausgang.
+
+67
+00:06:56,780 --> 00:07:05,340
+Was müssen wir tun, um die richtige Rückkopplung auszuwählen, damit es richtig funktioniert?
+
+68
+00:07:06,080 --> 00:07:09,400
+Unsere ist mit einem Spannungsteiler aufgebaut.
+
+69
+00:07:09,940 --> 00:07:24,420
+Der Teiler verwendet einen 1-kOhm-Widerstand, dann einen 15-kOhm-Trimmer, der die Ausgangsspannung einstellt, die der Wandler hält.
+
+70
+00:07:25,080 --> 00:07:35,900
+Plus noch einen Widerstand, den du je nach Spannung auswählen musst, mit der der Tesla laufen soll.
+
+71
+00:07:36,560 --> 00:07:49,940
+Er ist mit einem Sternchen markiert. Für meine konkreten Werte, wenn ich 130 V am Ausgang fahre, beträgt dieser Widerstand 100 kOhm.
+
+72
+00:07:50,000 --> 00:07:57,960
+Wenn ich 70 V am Ausgang fahre, kommen 43 kOhm heraus.
+
+73
+00:07:59,580 --> 00:08:03,940
+Wir setzen einen Vorwiderstand am Optokoppler ein.
+
+74
+00:08:05,280 --> 00:08:22,760
+So funktioniert das: Wenn das Ausgangspotenzial einen bestimmten Wert erreicht, geht es durch die Diodenbrücke, lädt den Kondensator, und dieses Potenzial wird durch den Widerstandsteiler geteilt.
+
+75
+00:08:22,760 --> 00:08:24,900
+Durch diesen Widerstandsteiler.
+
+76
+00:08:25,080 --> 00:08:29,840
+Dann, über den Vorwiderstand, erreicht es die LED im Optokoppler.
+
+77
+00:08:30,320 --> 00:08:40,080
+Die LED löst aus, schickt physisch ein Lichtsignal an die Basis des Optotransistors.
+
+78
+00:08:40,700 --> 00:08:50,100
+Der Optotransistor öffnet, und das gibt uns ein Signal vom Emitter, das an Pin 1 des Chips landet.
+
+79
+00:08:51,080 --> 00:09:04,620
+Pin 1 an diesem Chip ist genau der Eingang für die Spannungs-Rückkopplung. Was macht also dieser Chip?
+
+80
+00:09:04,760 --> 00:09:12,340
+Er reduziert das Signal-Tastverhältnis, reduziert es weiter, bis das Ausgangspotenzial sinkt.
+
+81
+00:09:12,680 --> 00:09:14,760
+Damit das System im Gleichgewicht bleibt.
+
+82
+00:09:15,380 --> 00:09:17,600
+Warum wählen wir diesen Widerstand?
+
+83
+00:09:17,800 --> 00:09:33,560
+Wenn er nicht zur Spannung passt, die du fährst, löst dein Wandler vielleicht nicht bei genügend hoher Frequenz aus. Du siehst es nicht direkt an der Last, aber an einer Lampe wirst du Flackern bemerken.
+
+84
+00:09:33,560 --> 00:09:37,340
+Die Lampe wird deutlich flackern.
+
+85
+00:09:38,000 --> 00:09:40,780
+Was bedeutet, der Widerstand ist nicht richtig gewählt.
+
+86
+00:09:40,880 --> 00:09:51,300
+Stelle ihn nach, bis die Rückkopplung einsetzt und die Lampe nicht mehr flackert. Das alles ist am Oszilloskop viel klarer.
+
+87
+00:09:51,500 --> 00:09:53,500
+Schauen wir uns als Nächstes an, wie es funktioniert.
+
+88
+00:09:55,880 --> 00:10:07,460
+Wichtig, diese Diodenbrücke: Ihr gemeinsames Minus verbindet sich nicht mit dem gemeinsamen Minus, das den Chip versorgt.
+
+89
+00:10:07,980 --> 00:10:15,140
+Es ist ein separater Abschnitt, der speziell mit der LED im Optokoppler arbeitet.
+
+90
+00:10:15,820 --> 00:10:35,900
+Und hier ist der Ausgang vom Wandler, der Schaltplan zeigt, dass der Brücken-Eingang auf HER508-Dioden aufgebaut ist. Du kannst die erste, zweite oder dritte Anzapfung anschließen. Wickle mehr Windungen, und du hast eine vierte Anzapfung verfügbar für höhere Spannung.
+
+91
+00:10:35,900 --> 00:10:40,340
+Zum Anheben der Spannung.
+
+92
+00:10:41,680 --> 00:10:45,900
+Das Ausgangs-Minus hier verbindet sich auch nicht mit Masse.
+
+93
+00:10:46,280 --> 00:10:50,180
+Das gibt uns einen Kreis mit induktiver Trennung.
+
+94
+00:10:51,120 --> 00:11:04,040
+Unser Tesla ist vom Hauptkreis getrennt. Er beeinflusst ihn nicht mit seinem Potenzial, der ganze statische Kram, die Spannungssprünge beim Abstimmen usw. bleiben getrennt.
+
+95
+00:11:08,660 --> 00:11:14,440
+Das haben wir abgedeckt, jetzt schauen wir, wie es auf der Platine aufgebaut ist.
+
+96
+00:11:16,380 --> 00:11:17,520
+Was sehen wir hier?
+
+97
+00:11:17,620 --> 00:11:36,960
+Hier ist der Eingangs-Kondensator. Dann wird der Chip selbst über eine Drossel versorgt, da ist sie im Schaltplan, damit wir Welligkeit filtern und der Chip sauber läuft.
+
+98
+00:11:36,960 --> 00:11:37,500
+Für uns.
+
+99
+00:11:38,400 --> 00:11:47,720
+Hier ist der Widerstand, den wir wechseln, genau der mit dem Sternchen markierte.
+
+100
+00:11:49,160 --> 00:11:54,660
+Der Gegentakt geht über 10 Ohm zu den Gates.
+
+101
+00:11:55,080 --> 00:11:55,760
+Transistoren.
+
+102
+00:11:55,840 --> 00:12:09,760
+Ich habe die Transistoren aus alten Computer-USVs herausgeholt, P60 NF06. IRF3205 funktioniert auch gut.
+
+103
+00:12:12,760 --> 00:12:15,580
+An den Zweigen.
+
+104
+00:12:15,760 --> 00:12:20,340
+Hier ist lackisolierter Draht in Schrumpfschlauch gesteckt.
+
+105
+00:12:21,440 --> 00:12:32,500
+Der Wandler selbst ist mit PVC-isoliertem Draht gewickelt, 1 mm Kern, 1,5 mm mit der Isolierung.
+
+106
+00:12:33,500 --> 00:12:35,260
+Was ist sonst interessant?
+
+107
+00:12:35,920 --> 00:12:43,380
+Der Transformator-Ausgang geht zur Diodenbrücke und von der Brücke zum Kondensator.
+
+108
+00:12:44,060 --> 00:12:49,760
+Der Kondensator ist hier, 4700 µF, 200 V.
+
+109
+00:12:50,540 --> 00:12:54,460
+200 V haben mir gereicht, weil mein Wandler bei 130 V läuft.
+
+110
+00:12:54,680 --> 00:13:13,220
+Wenn du höher fahren willst, wähle einen größeren Kondensator, sagen wir mit einem Spielraum von 50 V über dem, was Wandler und dieser Impuls-Transformator liefern können.
+
+111
+00:13:17,960 --> 00:13:21,300
+Was kann sonst noch Probleme machen?
+
+112
+00:13:21,960 --> 00:13:22,960
+Das ist klar.
+
+113
+00:13:23,260 --> 00:13:30,020
+Übrigens, die Beschaltung ist einfach, aber wenn du dir diesen Chip genau anschaust, kannst du auch einen Stromschutz hinzufügen.
+
+114
+00:13:30,840 --> 00:13:34,940
+Er kommt an Pin 9, glaube ich.
+
+115
+00:13:37,260 --> 00:13:43,800
+Praktischer Chip, du bekommst schöne leistungsstarke Wandler damit hin, du kannst sogar Schweiß-Wechselrichter bauen.
+
+116
+00:13:44,200 --> 00:13:47,240
+Wirklich eine gute Wahl im Design.
+
+117
+00:13:47,880 --> 00:13:58,260
+Natürlich, wenn du Schweiß-Wechselrichter angehst, brauchst du hier richtige Treiber. Aber für diese Transistoren reicht es völlig.
+
+118
+00:13:58,440 --> 00:14:00,620
+Es kommt alles kompakt und sauber heraus.
+
+119
+00:14:01,080 --> 00:14:02,600
+Kein großer Kühlkörper nötig.
+
+120
+00:14:05,240 --> 00:14:06,940
+Das deckt die Hauptpunkte ab.
+
+121
+00:14:07,060 --> 00:14:10,180
+Jetzt schauen wir, wie er arbeitet.
+
+122
+00:14:12,680 --> 00:14:16,700
+So beginnen wir mit dem Abstimmen dieses Wandlers.
+
+123
+00:14:19,660 --> 00:14:22,680
+Zuerst prüfen wir die Verbindungen.
+
+124
+00:14:23,820 --> 00:14:32,480
+Dann, ohne den Gegentakt-Zweigen Versorgung zu geben, prüfen wir den Betrieb des Chips.
+
+125
+00:14:32,600 --> 00:14:36,980
+Wir setzen das Oszilloskop an die Gates, bezogen auf die Mittelanzapfung.
+
+126
+00:14:37,220 --> 00:14:43,520
+Prüfen, dass wir Rechtecksignale mit einer Pause dazwischen haben.
+
+127
+00:14:44,840 --> 00:14:56,060
+Dieser 5-kOhm-Widerstand stellt das maximale Tastverhältnis der Impulse ein, die die Transistoren öffnen.
+
+128
+00:14:56,900 --> 00:15:03,620
+Der Widerstand an Pin 5 ist 10 kOhm und der Kondensator 2200 pF.
+
+129
+00:15:03,960 --> 00:15:06,740
+Das ist unser frequenzbestimmender Kreis.
+
+130
+00:15:07,160 --> 00:15:08,760
+Was machen wir damit?
+
+131
+00:15:09,380 --> 00:15:23,940
+Fange mit einem 10-kOhm-Trimmer an. Nach der Prüfung versorge den Gegentakt und finde diesen Punkt für deinen konkreten Kern.
+
+132
+00:15:24,680 --> 00:15:40,800
+Fahre die Frequenz am Chip durch und achte auf die Frequenz, bei der dein Wandler im Leerlauf den geringsten Verbrauch hat.
+
+133
+00:15:41,140 --> 00:15:43,600
+Auf dieser Frequenz bleibst du.
+
+134
+00:15:43,740 --> 00:15:52,860
+In meinem Fall, für meinen Ferrit, kam diese Frequenz bei etwa 65 kHz heraus.
+
+135
+00:15:54,600 --> 00:16:03,700
+Bei dir kann sie anders sein, aber du willst die Frequenz finden, bei der dieser Ferrit-Kern die geringsten Verluste hat.
+
+136
+00:16:03,860 --> 00:16:13,260
+Das ist dort, wo sich das meiste Kernmaterial mit minimalem Widerstand gegen das Magnetfeld ummagnetisiert.
+
+137
+00:16:13,360 --> 00:16:27,140
+Dann ist der Wirkungsgrad deines Wandlers viel höher, die Transistoren und der Transformator erwärmen sich viel weniger, und der Wandler hat insgesamt schöne Eigenschaften.
+
+138
+00:16:27,940 --> 00:16:45,100
+Sobald du diese Frequenz mit dem Trimmer gefunden hast, löte ihn aus, schau, wie er verbunden war, und miss den Widerstand zwischen diesen Kontakten.
+
+139
+00:16:46,120 --> 00:16:57,440
+Dann löte einen normalen Widerstand mit diesem Wert ein, oder etwas Ähnliches.
+
+140
+00:16:58,100 --> 00:16:59,480
+Und das war's, du lässt es so.
+
+141
+00:17:00,880 --> 00:17:04,740
+Er bleibt für den weiteren Betrieb im Kreis.
+
+142
+00:17:04,900 --> 00:17:08,020
+Du musst die Frequenz nicht mehr anpassen.
+
+143
+00:17:08,820 --> 00:17:19,340
+Und den Tastverhältnis-Trimmer kannst du auch durch einen normalen Widerstand ersetzen.
+
+144
+00:17:19,460 --> 00:17:21,620
+Viel günstiger, wenn du abgestimmt bist.
+
+145
+00:17:23,020 --> 00:17:27,160
+OK, schauen wir, wie das Ding arbeitet.
+
+146
+00:17:29,840 --> 00:17:33,840
+Übrigens, der Wandler wird ziemlich leistungsstark.
+
+147
+00:17:34,220 --> 00:17:41,180
+Im Moment habe ich eine 300-W-Lampe am Ausgang, fahren wir hoch.
+
+148
+00:17:43,940 --> 00:17:47,420
+Wir sehen 47 Volt an der Lampe.
+
+149
+00:17:49,080 --> 00:17:54,840
+Ich nutze die erste Anzapfung laut Schaltplan.
+
+150
+00:17:55,320 --> 00:18:00,800
+An der ersten Anzapfung bekomme ich also etwa 70 Volt.
+
+151
+00:18:01,540 --> 00:18:07,400
+Im Moment ist der Trimmer so eingestellt, dass er bei etwa 50 Volt begrenzt.
+
+152
+00:18:07,920 --> 00:18:09,300
+Ich drehe die Lampe heraus.
+
+153
+00:18:10,500 --> 00:18:16,660
+Wir sehen, unser Wandler hält stabil 50,5 Volt am Ausgang.
+
+154
+00:18:17,380 --> 00:18:23,500
+Wenn die Last angeschlossen ist, gibt es einen winzigen Einbruch.
+
+155
+00:18:23,680 --> 00:18:25,380
+Das ist eine ernsthafte Last.
+
+156
+00:18:26,680 --> 00:18:31,840
+Ich habe zum Test sogar zwei 300-W-Lampen daran angeschlossen.
+
+157
+00:18:31,840 --> 00:18:43,280
+Und falls dich das interessiert, der Verbrauch beträgt gerade 3 Ampere bei 12,5 Volt.
+
+158
+00:18:44,380 --> 00:18:46,360
+Hier sind die Oszilloskop-Spuren.
+
+159
+00:18:46,500 --> 00:18:52,380
+Du kannst klar sehen, wie die Rückkopplung arbeitet.
+
+160
+00:18:53,860 --> 00:18:56,840
+Drücken wir Pause und schauen uns diesen Moment an.
+
+161
+00:18:56,980 --> 00:19:08,100
+Du siehst, die Signale vom Chip überlappen sich nicht in der Totzeit, aber das Tastverhältnis sinkt weiter, während die Rückkopplung arbeitet.
+
+162
+00:19:09,320 --> 00:19:22,320
+Wir sehen, dass beim Spannungsabfall das Tastverhältnis steigt; bei Spannungsanstieg begrenzt der Chip das Tastverhältnis an den Kanälen wieder.
+
+163
+00:19:22,800 --> 00:19:24,260
+Du siehst diesen Vorgang klar.
+
+164
+00:19:24,380 --> 00:19:26,960
+Er läuft kontinuierlich in diesem Gleichgewichtsmodus.
+
+165
+00:19:27,600 --> 00:19:29,700
+Das ist das Signal, das du bekommen solltest.
+
+166
+00:19:31,000 --> 00:19:32,380
+Interessantes springendes Muster.
+
+167
+00:19:33,280 --> 00:19:35,300
+So arbeitet die Rückkopplung.
+
+168
+00:19:35,640 --> 00:19:38,720
+Jetzt nehme ich die Last weg.
+
+169
+00:19:40,980 --> 00:19:41,660
+Schau.
+
+170
+00:19:42,240 --> 00:19:51,700
+Ich habe die Last entfernt, und der Wandler hat in den reinen Spannungs-Haltebetrieb umgeschaltet, hält 50 Volt am Ausgang.
+
+171
+00:19:52,220 --> 00:19:58,160
+Das Tastverhältnis ist auf dem Minimum für diese Verluste.
+
+172
+00:19:58,880 --> 00:20:00,760
+Schauen wir, wie es funktioniert.
+
+173
+00:20:01,820 --> 00:20:13,980
+Genau dafür ist die Rückkopplung da, um eine stabile Spannung mit minimalem Verbrauch im Betriebsmodus dieses Chips zu halten.
+
+174
+00:20:15,280 --> 00:20:25,500
+0,03 Ampere reichen völlig, um 50 Volt im Leerlauf für diesen Wandler zu halten.
+
+175
+00:20:26,620 --> 00:20:29,400
+Der Tesla soll natürlich nicht so viel ziehen.
+
+176
+00:20:31,020 --> 00:20:36,440
+Das Testen dieses Wandlers ist im Grunde ein Belastungstest für ihn.
+
+177
+00:20:37,360 --> 00:20:41,200
+300 Watt nur zur Bestätigung, dass alles funktioniert.
+
+178
+00:20:42,840 --> 00:20:45,920
+Ich habe ihn auch bei 130 Volt getestet.
+
+179
+00:20:46,420 --> 00:20:58,180
+Mit dieser Lampe gibt es einen Leistungseinbruch bis etwa 125 Volt, aber bei einer 25-W-Lampe hält er perfekt stabil.
+
+180
+00:20:58,960 --> 00:21:04,360
+Du kannst also für diesen Wandler jede gewünschte Spannung einstellen.
+
+181
+00:21:06,940 --> 00:21:15,560
+Ich nehme die 300 W weg, und jetzt sehen wir, wie die Rückkopplung einsetzt.
+
+182
+00:21:16,440 --> 00:21:17,840
+Oszilloskop.
+
+183
+00:21:19,760 --> 00:21:21,280
+Da ist unser Signal.
+
+184
+00:21:23,080 --> 00:21:25,880
+Bei maximalem Tastverhältnis.
+
+185
+00:21:26,600 --> 00:21:29,360
+Eine 25-W-Lampe einschrauben.
+
+186
+00:21:30,980 --> 00:21:33,520
+Verbrauch beginnt jetzt.
+
+187
+00:21:34,740 --> 00:21:37,800
+Die Lampe leuchtet ein wenig auf.
+
+188
+00:21:38,920 --> 00:21:43,160
+Und der Chip ist in einen pulsierenden Tastverhältnis-Modus übergegangen.
+
+189
+00:21:49,670 --> 00:21:56,390
+Du siehst, das Tastverhältnis wird in Bursts gehackt.
+
+190
+00:21:59,670 --> 00:22:07,870
+Der Chip arbeitet also in Bursts, wobei das Tastverhältnis innerhalb jedes Bursts automatisch geregelt wird.
+
+191
+00:22:09,110 --> 00:22:10,870
+Wirklich schöner Betriebsmodus.
+
+192
+00:22:14,710 --> 00:22:15,850
+Noch eine Sache.
+
+193
+00:22:16,490 --> 00:22:19,910
+Du willst die Burst-Frequenz so hoch wie möglich haben.
+
+194
+00:22:20,090 --> 00:22:28,610
+Das wird auch durch den Trimmer eingestellt, den wir vorhin mit der Rückkopplung angeschaut haben.
+
+195
+00:22:30,030 --> 00:22:40,990
+Dieser Widerstand ist wirklich wichtig für qualitativen Betrieb, damit deine Lampe nicht blinkt und es keine scharfen Übergänge gibt.
+
+196
+00:22:45,430 --> 00:22:48,750
+Und noch etwas zu beachten.
+
+197
+00:22:49,590 --> 00:22:51,390
+Schauen wir, wie das läuft.
+
+198
+00:22:52,990 --> 00:22:56,070
+Jetzt der Trimmer.
+
+199
+00:22:57,150 --> 00:23:01,270
+Die 15 kOhm in der Rückkopplung, laut Schaltplan.
+
+200
+00:23:01,450 --> 00:23:05,410
+Wie sie die Spannungsregelung beeinflussen.
+
+201
+00:23:16,020 --> 00:23:23,100
+Die Spannung sinkt sanft, während du an diesem Widerstand drehst.
+
+202
+00:23:27,280 --> 00:23:37,480
+Und am Chip kannst du jede Versorgungsspannung einstellen, die du brauchst.
+
+203
+00:23:38,540 --> 00:23:39,940
+Du siehst, wir sind heruntergekommen.
+
+204
+00:23:40,940 --> 00:23:48,300
+Von 50 auf 33 Volt, du kannst jeden gewünschten Auslösepunkt einstellen.
+
+205
+00:23:49,540 --> 00:23:53,920
+In diesem Modus haben wir ein Oszillogramm wie dieses.
+
+206
+00:24:02,250 --> 00:24:05,010
+Die Lampe scheint nicht zu leuchten.
+
+207
+00:24:05,130 --> 00:24:08,410
+Die Spannung ist jetzt zu niedrig für sie.
+
+208
+00:24:18,580 --> 00:24:22,520
+Du siehst den Arbeitsmoment deutlich.
+
+209
+00:24:24,420 --> 00:24:33,580
+Nimm die Last weg, und der Chip schaltet auf begrenzten Verbrauch mit minimalem Tastverhältnis.
+
+210
+00:24:36,260 --> 00:24:49,600
+Ich schraube die 300 W wieder ein, und wir sehen, wie das Tastverhältnis mit der Last hochgeht.
+
+211
+00:24:50,700 --> 00:24:54,920
+Der Verbrauch ist auch gestiegen, was bedeutet, dass der Wandler voll arbeitet.
+
+212
+00:24:57,480 --> 00:25:04,560
+Jetzt die Frage: Wozu der ganze Aufwand nur zum Versorgen eines Teslas?
+
+213
+00:25:06,720 --> 00:25:15,480
+Warum muss dieser Wandler genau die Eigenschaften haben, die im Schaltplan gezeigt sind?
+
+214
+00:25:16,000 --> 00:25:17,380
+Hier ist, was passiert.
+
+215
+00:25:18,240 --> 00:25:26,660
+Wenn der Tesla in diesem System läuft, musst du seinen Arbeits-Leistungspunkt einstellen.
+
+216
+00:25:28,600 --> 00:25:31,440
+Das System muss im Gleichgewicht bleiben.
+
+217
+00:25:31,760 --> 00:25:44,420
+Wenn wir ihm zu viel Spannung geben, passiert Folgendes: Der Tesla beginnt, den Prozess im Resonator selbst zu übersteuern.
+
+218
+00:25:44,680 --> 00:25:49,220
+An der Granate haben wir einen Stromamplituden-Peak.
+
+219
+00:25:49,340 --> 00:25:52,820
+Du siehst stattdessen einen Einbruch, er drückt ihn schließlich.
+
+220
+00:25:54,000 --> 00:26:06,020
+Wenn die Spannung zu niedrig ist, bekommen wir keine gute Wechselwirkung, und der Strom im System fährt auch nicht hoch.
+
+221
+00:26:07,560 --> 00:26:11,340
+Das wird gezielt durch Einstellung der Tesla-Versorgung gemacht.
+
+222
+00:26:12,400 --> 00:26:32,100
+Und übrigens, wenn du das ausgereizt hast, was der spannungsbestimmende Widerstand geben kann, kannst du auch das maximale Tastverhältnis mit diesem anderen Widerstand sanft feinjustieren.
+
+223
+00:26:32,100 --> 00:26:33,380
+Die Tastverhältnis-Grenze.
+
+224
+00:26:34,540 --> 00:26:44,860
+Dieser Widerstand am Chip stellt die endgültige Breite des Tastverhältnisses ein.
+
+225
+00:26:46,320 --> 00:26:49,200
+Du kannst einstellen, was du willst.
+
+226
+00:26:49,820 --> 00:26:59,740
+Wenn du keinen wirklich leistungsstarken Wandler brauchst, kannst du das Tastverhältnis mit diesem Widerstand bei etwa 35–40 % festlegen.
+
+227
+00:27:03,570 --> 00:27:06,070
+Viel Glück allen beim Nachbauen.

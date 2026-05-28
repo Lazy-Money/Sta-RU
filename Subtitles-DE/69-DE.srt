@@ -1,0 +1,623 @@
+1
+00:00:01,200 --> 00:00:02,060
+Hallo zusammen.
+
+2
+00:00:02,820 --> 00:00:08,580
+Ich habe diesen faulen Wandler-Aufbau mit einer Spannungsrückführung ausgestattet.
+
+3
+00:00:09,200 --> 00:00:13,140
+Jetzt hält er stabil 238 V am Ausgang.
+
+4
+00:00:14,440 --> 00:00:17,720
+Die Rückführung ist auch recht einfach gemacht.
+
+5
+00:00:17,880 --> 00:00:19,800
+Zwei zusätzliche ICs.
+
+6
+00:00:20,540 --> 00:00:27,500
+Einer davon ist ein PC817-Optokoppler, der andere ein einstellbarer TL431-Shunt-Regler.
+
+7
+00:00:28,700 --> 00:00:32,240
+4 Widerstände, 1 Kondensator.
+
+8
+00:00:32,360 --> 00:00:34,380
+Das ist die ganze Rückführung.
+
+9
+00:00:35,040 --> 00:00:43,280
+So lässt dieser Wandler jetzt nicht nur 12 V am Eingang, sondern bis zu 20 V inklusive zu.
+
+10
+00:00:43,960 --> 00:00:48,900
+In jedem Spannungsbereich dieser Größenordnung.
+
+11
+00:00:49,580 --> 00:00:52,840
+Und die Ausgangsspannung wird stabilisiert.
+
+12
+00:00:53,720 --> 00:01:00,940
+Jetzt testen wir es und schauen uns die Rückführungsschaltung genauer an.
+
+13
+00:01:01,700 --> 00:01:06,320
+Jetzt testen wir die Auslöseschwelle der Spannungsrückführung.
+
+14
+00:01:06,880 --> 00:01:11,340
+Ein Multimeter ist am Ausgang angeschlossen, die Lampe ist nicht angeschlossen.
+
+15
+00:01:12,460 --> 00:01:14,560
+Lege 12 V Versorgungsspannung an.
+
+16
+00:01:16,300 --> 00:01:22,320
+Du hörst den Auslösepunkt des Wandlers, er fängt an zu brummen.
+
+17
+00:01:23,920 --> 00:01:26,000
+Das ist der Ton.
+
+18
+00:01:26,960 --> 00:01:28,140
+237 V.
+
+19
+00:01:30,560 --> 00:01:32,060
+Schließe die Lampe an.
+
+20
+00:01:32,820 --> 00:01:36,760
+Du siehst, an der Lampe gibt es einen leichten Abfall, 218 V.
+
+21
+00:01:37,240 --> 00:01:45,100
+Die Ausgangsspannung ist vom Auslösepunkt der Rückführung weg, und der Wandler läuft im Normalbetrieb.
+
+22
+00:01:45,740 --> 00:01:46,920
+Überhaupt kein Geräusch.
+
+23
+00:01:49,360 --> 00:01:56,420
+Mit vorhandener Spannungsrückführung können wir eine höhere Spannung am Eingang anlegen.
+
+24
+00:01:57,240 --> 00:02:00,920
+Bis zu 20 V, höher lohnt sich nicht.
+
+25
+00:02:01,820 --> 00:02:04,420
+Jetzt lege ich 14 V an.
+
+26
+00:02:06,020 --> 00:02:15,020
+Du siehst, die Spannung ist im Sollbereich, und das Geräusch der Rückführungsauslösung erschien.
+
+27
+00:02:15,460 --> 00:02:24,260
+Das Geräusch kommt vom Aufwärtstransformator, da der IC die Schalter jetzt im Burst-Modus ansteuert.
+
+28
+00:02:27,930 --> 00:02:31,850
+Wenn wir reduzieren, verschwindet das Geräusch.
+
+29
+00:02:31,950 --> 00:02:33,910
+Die Rückführung funktioniert vollständig.
+
+30
+00:02:34,350 --> 00:02:37,930
+Worüber, was du an diesen Wandler anschließen kannst.
+
+31
+00:02:39,130 --> 00:02:51,130
+Du kannst alle modernen Geräte anschließen, die einen transformatorlosen Wechselrichter am Eingang haben.
+
+32
+00:02:51,250 --> 00:03:00,230
+Also Handy-Ladegeräte, Laptop-Ladegeräte und ähnliche Geräte.
+
+33
+00:03:00,570 --> 00:03:07,470
+Geräte mit Abwärtstransformator am Eingang kannst du nicht anschließen.
+
+34
+00:03:07,930 --> 00:03:17,550
+Bei solchen Netzteilen ist das Gewicht deutlich höher als bei einem Wechselrichter-Netzteil.
+
+35
+00:03:17,970 --> 00:03:22,210
+Auch Asynchronmotoren kannst du hier nicht anschließen.
+
+36
+00:03:22,570 --> 00:03:27,770
+Am häufigsten begegnen sie uns im Alltag in Ventilatoren zum Beispiel.
+
+37
+00:03:29,010 --> 00:03:34,790
+Und Bürstenmotoren, die wir hier haben, funktionieren problemlos.
+
+38
+00:03:34,790 --> 00:03:46,390
+Also verschiedene Arten kleiner Bohrmaschinen mit 220 V, mit Leistung bis 200 W, dieses System versorgt sie problemlos.
+
+39
+00:03:47,570 --> 00:03:56,150
+Um unserer Schaltung eine Spannungsrückführung hinzuzufügen, nutzen wir eine Eigenschaft des IR2153-ICs.
+
+40
+00:03:56,950 --> 00:04:06,630
+Wenn du Pin 3 dieses ICs auf logisch Null legst, stoppt der IC die Erzeugung auf beiden Kanälen.
+
+41
+00:04:07,470 --> 00:04:17,550
+Dafür habe ich die Variante mit einem galvanisch isolierten Optokoppler genommen, dem weitverbreiteten PC817.
+
+42
+00:04:19,850 --> 00:04:26,390
+Ich habe ihn entsprechend der Pinbelegung in die Schaltung eingelötet.
+
+43
+00:04:27,110 --> 00:04:33,910
+Pins 1 und 2 sind die im Optokoppler eingebaute Infrarot-LED.
+
+44
+00:04:34,730 --> 00:04:38,690
+Pins 3 und 4 sind der Fototransistor.
+
+45
+00:04:39,770 --> 00:04:49,370
+Der Optokoppler ist dieses kleine Teil, hier ist es, mit vier Anschlüssen.
+
+46
+00:04:50,770 --> 00:05:01,430
+Oben auf dem Gehäuse gibt es einen Punkt, der die Pinnummerierung markiert.
+
+47
+00:05:01,550 --> 00:05:02,390
+Das ist Pin 1.
+
+48
+00:05:02,870 --> 00:05:11,610
+Die Pins werden, wenn du vom Punkt aus schaust, in diesem Fall ist er jetzt in der oberen linken Ecke, gegen den Uhrzeigersinn gezählt.
+
+49
+00:05:11,730 --> 00:05:14,870
+Erster, zweiter, dritter und vierter.
+
+50
+00:05:15,530 --> 00:05:21,930
+Im Schaltplan ist der Optokoppler liegend mit den Beinen nach oben dargestellt.
+
+51
+00:05:22,930 --> 00:05:26,110
+Diese Orientierung entspricht seiner Pinbelegung.
+
+52
+00:05:26,950 --> 00:05:30,270
+Also löte den Optokoppler in die Schaltung.
+
+53
+00:05:31,530 --> 00:05:35,090
+Hier siehst du, dass ich ihn auf der Platine installiert habe.
+
+54
+00:05:35,430 --> 00:05:38,470
+Und prüfe, ob der Optokoppler funktioniert.
+
+55
+00:05:39,390 --> 00:05:50,070
+Dazu legen wir Spannung an den Wandler an, nachdem wir vorher eine kleine Last angelötet haben.
+
+56
+00:05:50,350 --> 00:05:54,230
+In diesem Fall eine 15-W-Lampe.
+
+57
+00:05:55,470 --> 00:05:57,430
+Lege Spannung an.
+
+58
+00:06:00,310 --> 00:06:03,150
+Du siehst, die Lampe leuchtet.
+
+59
+00:06:03,970 --> 00:06:11,430
+Jetzt müssen wir einen Draht an Pin 2 des Optokopplers löten.
+
+60
+00:06:12,050 --> 00:06:12,210
+Da ist er.
+
+61
+00:06:13,230 --> 00:06:19,050
+Und an Pin 1 des Optokopplers einen 91-Ω-Vorwiderstand.
+
+62
+00:06:19,750 --> 00:06:21,710
+Und eine 1,5-V-Batterie.
+
+63
+00:06:22,630 --> 00:06:26,130
+Minus der Batterie geht an Pin 2.
+
+64
+00:06:26,790 --> 00:06:28,690
+Plus an den Widerstand.
+
+65
+00:06:29,590 --> 00:06:31,990
+Und sieh, ich schließe die Batterie an.
+
+66
+00:06:35,070 --> 00:06:44,830
+Und wenn der Pluspol der Batterie mit dem Widerstand verbunden ist, stoppt der IC die Erzeugung, die Last geht aus.
+
+67
+00:06:46,970 --> 00:06:52,970
+Dieses Experiment zeigt, dass der Optokoppler funktionsfähig ist.
+
+68
+00:06:53,790 --> 00:07:10,930
+Wenn du einen Labor-Signalgenerator zur Hand hast, kannst du beobachten, wie der Wandler unter Optokopplersteuerung mit einem an den Eingang angelegten Rechtecksignal auslöst, der gemeinsame Leiter des Generators
+
+69
+00:07:10,930 --> 00:07:18,690
+verbindet sich mit Pin 2, der Signalleiter mit Pin 1, ebenfalls über einen Vorwiderstand.
+
+70
+00:07:20,590 --> 00:07:24,150
+Das Eingangspotenzial sollte nicht mehr als 5 V betragen.
+
+71
+00:07:24,330 --> 00:07:29,810
+1,5–2 V reichen, um den Optokoppler leicht auszulösen.
+
+72
+00:07:30,130 --> 00:07:32,510
+Äquivalent zu dem, was wir mit der Batterie gemacht haben.
+
+73
+00:07:32,770 --> 00:07:38,250
+Ich lege ein Rechtecksignal mit 10 Hz an.
+
+74
+00:07:39,310 --> 00:07:44,710
+Du siehst, die Schaltung reagiert ausgezeichnet.
+
+75
+00:07:45,270 --> 00:07:46,510
+Reduziere die Frequenz.
+
+76
+00:07:47,650 --> 00:07:49,030
+5 Hz.
+
+77
+00:07:50,130 --> 00:08:02,850
+Versteh, wer mit Elektronik arbeitet, auf diesem Prinzip kannst du den IC-Betrieb schon im Burst-Modus formen.
+
+78
+00:08:05,390 --> 00:08:06,710
+1 Hz Frequenz.
+
+79
+00:08:09,410 --> 00:08:16,750
+Wenn du, sagen wir, Netzfrequenz anlegst, hier erhöhe ich sie sanft, jetzt 25 Hz.
+
+80
+00:08:21,390 --> 00:08:22,350
+50.
+
+81
+00:08:22,610 --> 00:08:32,430
+Du hörst, wenn das geliefert werden kann, dass dieser Aufwärtstransformator bei 50 Hz Netzfrequenz brummt.
+
+82
+00:08:33,690 --> 00:08:38,270
+Als Nächstes müssen wir ein weiteres Element in die Schaltung einbringen.
+
+83
+00:08:38,390 --> 00:08:41,050
+Der TL431-IC.
+
+84
+00:08:42,390 --> 00:08:44,810
+Grafisch wird er als Zenerdiode dargestellt.
+
+85
+00:08:44,970 --> 00:08:49,210
+Mit einem Abzweig erhältst du ein einstellbares Shunt-Regler-System.
+
+86
+00:08:50,310 --> 00:08:54,390
+Die Pinbelegung ist unter der Grafik gezeigt.
+
+87
+00:08:55,130 --> 00:08:59,370
+Das Teil selbst ist auch sehr klein.
+
+88
+00:08:59,890 --> 00:09:00,330
+Hier ist es.
+
+89
+00:09:02,150 --> 00:09:03,510
+Drei Anschlüsse am Teil.
+
+90
+00:09:04,250 --> 00:09:13,870
+Die Anschlüsse werden von links nach rechts gezählt, wenn du den IC-Namen direkt liest.
+
+91
+00:09:15,350 --> 00:09:16,810
+Wozu ist das?
+
+92
+00:09:17,830 --> 00:09:36,570
+Vorher habe ich einen Schaltplan eines anderen Wandlers geteilt, und du kannst sehen, dass hier über die Rückführung der Master-IC direkt über den PC817-Optokoppler
+
+93
+00:09:36,570 --> 00:09:43,230
+durch Spannungsteilung an einer Reihenwiderstandskaskade gesteuert wird.
+
+94
+00:09:44,050 --> 00:10:03,650
+In dieser Schaltung kannst du ihn nicht so steuern, denn wenn die Leuchtstärke der LED unterschiedlich ist, öffnet der Fototransistor, da er bipolar ist, mit unterschiedlichem Leitfähigkeitsgrad.
+
+95
+00:09:36,570 --> 00:10:07,590
+Mit unterschiedlichen Leitfähigkeitsgraden öffnen.
+
+96
+00:10:08,490 --> 00:10:15,810
+Und wenn du es misst, mit dem Optokoppler spielst, siehst du, dass sich der Widerstand des Transistors ändert.
+
+97
+00:10:16,350 --> 00:10:28,610
+Und für diesen IC brauchst du mindestens 200 Ω Widerstand, um Pin 3 zuverlässig auf den gemeinsamen Leiter zu schalten.
+
+98
+00:10:29,330 --> 00:10:39,610
+Genau deshalb wurde ein zusätzliches empfindliches Element hinzugefügt, der TL431, der diesen Optokoppler steuert.
+
+99
+00:10:40,590 --> 00:10:46,450
+Der TL431 ist für uns ein ziemlich betagter IC.
+
+100
+00:10:47,410 --> 00:10:55,210
+Hergestellt in den späten 1970ern, aber bis heute weit verbreitet.
+
+101
+00:10:56,390 --> 00:11:08,930
+Seine Vorteile sind Betriebsspannung bis 36 V und der wichtigste, die Möglichkeit, die Auslöseschwelle des ICs einzustellen.
+
+102
+00:11:09,850 --> 00:11:19,650
+Im Inneren gibt es eine Referenzspannungsquelle von etwa 2,5 V und einen Komparator.
+
+103
+00:11:19,850 --> 00:11:32,010
+Der Komparator hat an einem Eingang stabilisierte 2,5 V und am anderen den Eingang vom externen Teil, Pin 1.
+
+104
+00:11:32,530 --> 00:11:36,650
+Der Komparator vergleicht Referenz und Eingangsspannung.
+
+105
+00:11:36,710 --> 00:11:48,570
+Wenn der Eingang die Referenz übersteigt, löst der IC aus und, grafisch gesprochen, die Zenerdiode "bricht durch", d.h. der IC fängt an zu leiten.
+
+106
+00:11:49,450 --> 00:11:52,830
+Ich habe den Teiler an den Widerständen gewählt.
+
+107
+00:11:52,850 --> 00:11:58,090
+1-W-Widerstände mit 4,6 kΩ und 390 kΩ.
+
+108
+00:11:58,530 --> 00:12:15,870
+Mit diesen Widerstandswerten, wenn du die Anschlüsse schon vom Wandlerausgang nimmst, löst der Spannungsschutz bei 238 V aus.
+
+109
+00:12:17,110 --> 00:12:27,690
+Das heißt, durch Ändern der Werte des 4,6-kΩ-Widerstands kannst du den Auslösepunkt des Wandlers einstellen.
+
+110
+00:12:28,690 --> 00:12:37,570
+Vergiss nicht, diesen Kondensator von mindestens 10 nF, keramisch, zwischen Pin 3 und 1 einzubauen.
+
+111
+00:12:38,090 --> 00:12:46,190
+Sonst sind Fehlauslösungen der Rückführung durch transiente Vorgänge im Transformator möglich.
+
+112
+00:12:46,270 --> 00:12:54,950
+Wenn zum Beispiel nadelförmige Spannungsspitzen auftreten, löst der IC früher aus als nötig.
+
+113
+00:12:55,230 --> 00:12:56,690
+Der Kondensator ist obligatorisch.
+
+114
+00:12:57,830 --> 00:13:06,030
+Und dieser 1-kΩ-Widerstand parallel zur LED des Optokopplers platziert.
+
+115
+00:13:06,610 --> 00:13:21,510
+Dieser Widerstand hält auch die LED davon ab zu leuchten, wenn sich der TL431-IC seinem Auslösepunkt nähert.
+
+116
+00:13:22,790 --> 00:13:26,250
+Vorwiderstand 150 Ω.
+
+117
+00:13:27,410 --> 00:13:34,570
+Ich habe online zunächst nach Rückführungen dieser Art gesucht, aber interessanterweise nichts gefunden.
+
+118
+00:13:34,710 --> 00:13:42,670
+Viele solche Lösungen für niedrige Spannung, aber mit hoher Spannung musste ich tüfteln.
+
+119
+00:13:45,690 --> 00:13:54,810
+Ich habe den Teiler durch lange Praxis ausgewählt und verschiedene Schaltungsvarianten geändert, bis er stabil arbeitete.
+
+120
+00:13:56,650 --> 00:14:10,250
+Viele Teile für diesen Wandler kannst du aus defekten Netzteilen entnehmen, zum Beispiel aus Computernetzteilen.
+
+121
+00:14:11,930 --> 00:14:18,990
+Du kannst sie billig kaufen, oder sie werden dir bei Servicezentren kostenlos überlassen.
+
+122
+00:14:20,570 --> 00:14:29,950
+Insbesondere siehst du auf der Platine einen PC817-Optokoppler und diesen IC.
+
+123
+00:14:32,270 --> 00:14:34,650
+Einen kleinen TL431.
+
+124
+00:14:37,050 --> 00:14:40,850
+Auch Kühlkörper, auf denen du Transistoren montieren kannst.
+
+125
+00:14:43,270 --> 00:14:48,270
+Wärmeisolierende Scheiben unter diesen Transistoren, du kannst sie alle hier finden.
+
+126
+00:14:50,210 --> 00:14:53,010
+Und das ist auch sehr geeignet.
+
+127
+00:14:54,130 --> 00:14:57,150
+Du kannst diesen Transformator zerlegen.
+
+128
+00:14:58,430 --> 00:15:17,290
+Ich habe ihn von der Platine ausgelötet, aber normalerweise entweder mit einer Heißluftpistole erhitzen, bis der Kleber schmilzt und die Hälften sich trennen, oder in Wasser kochen, bis er auseinanderfällt.
+
+129
+00:15:17,410 --> 00:15:26,290
+Danach wird alles abgewickelt, und du wickelst deine eigene Wicklung auf die gewünschten Spannungen.
+
+130
+00:15:26,790 --> 00:15:33,850
+Dieser Wandler kann also sehr günstig sein, wenn du ihn aus Altmaterial baust.
+
+131
+00:15:36,450 --> 00:15:55,250
+Wenn dieser Wandler zum Beispiel zur Beleuchtung bei Stromausfall verwendet wird, würde ich in diesem Fall vorschlagen, am Eingang eine 20-A-Diode zu setzen, egal welche Marke,
+
+132
+00:15:55,450 --> 00:15:58,430
+was du findest.
+
+133
+00:15:59,210 --> 00:16:02,450
+Spannungsnennwert nicht unter 100 V.
+
+134
+00:16:04,770 --> 00:16:12,530
+Damit du in schlechten Lichtverhältnissen die Stromeingänge nicht verwechselst.
+
+135
+00:16:12,670 --> 00:16:23,430
+Sonst, wenn du sie verwechselst, geht die Schaltung natürlich sofort kaputt, der IC fällt aus, und vielleicht brennt einer der Schalter durch.
+
+136
+00:16:24,810 --> 00:16:30,550
+Wenn er stationär und ständig angeschlossen ist, kannst du die Diode weglassen.
+
+137
+00:16:31,470 --> 00:16:37,430
+Aber wer will, kann den Eingang auch mit einer Sicherung ausstatten.
+
+138
+00:16:40,010 --> 00:16:43,530
+Du kannst diese Schaltung also nach Belieben aufrüsten.
+
+139
+00:16:43,530 --> 00:16:49,610
+Auch nach diesem Prinzip, ich habe diese Spannungsrückführung angewendet.
+
+140
+00:16:49,870 --> 00:17:04,210
+Ich brauche einen Betriebsspannungspunkt, sodass... wenn eine Spannungsrückführung aufgebaut ist, kannst du nicht nur 12 V, sondern bis zu 20 V inklusive am Eingang anlegen, und damit hält sie
+
+141
+00:17:04,210 --> 00:17:07,030
+stabil die Ausgangsspannung.
+
+142
+00:17:07,150 --> 00:17:14,910
+Du kannst sogar zwei 9-V-Blöcke (Krona-Typ) in die Tasche stecken, in Reihe schalten und 18 V am Eingang anlegen.
+
+143
+00:17:15,750 --> 00:17:20,570
+Und du hast 220 V am Ausgang.
+
+144
+00:17:20,570 --> 00:17:23,510
+Du kannst dein Handy immer aufladen.
+
+145
+00:17:26,870 --> 00:17:29,190
+Die ganze Schaltung ist so flexibel.
+
+146
+00:17:31,490 --> 00:17:37,110
+Wer Interesse hat, kann auch eine Stromrückführung aufbauen.
+
+147
+00:17:37,190 --> 00:17:43,730
+Also wenn du willst, dass der IC bei Ausgangskurzschluss in den Schutz geht.
+
+148
+00:17:43,830 --> 00:17:58,730
+Dafür musst du den Teilerwiderstand ändern, einen kleinen Ringtransformator wickeln, den sogenannten Stromwandler.
+
+149
+00:17:58,810 --> 00:18:09,390
+Du kannst ihn an diesem gemeinsamen Punkt mit Plus-Versorgung an die Mitte der Primärwicklung hängen.
+
+150
+00:18:10,070 --> 00:18:22,630
+Und durch Variation seiner Windungszahl den Betriebsspannungspunkt auf irgendwo über 2,6 V bringen.
+
+151
+00:18:23,010 --> 00:18:30,310
+Sagen wir, wenn dieser Wandler an einer 200-V-Last arbeitet.
+
+152
+00:18:31,130 --> 00:18:40,090
+Und führe diesen Ausgang vom Stromsensor zu einem kleinen Gleichrichter.
+
+153
+00:18:40,430 --> 00:18:42,090
+Danach setze einen Kondensator ein.
+
+154
+00:18:43,230 --> 00:18:49,190
+Ungefähr hast du eine Schaltung analog zu der hier gezeigten.
+
+155
+00:18:49,230 --> 00:19:06,950
+Ein Gleichrichter, ein Kondensator, und du kannst ein recht gut funktionierendes System bekommen, das den Wandler vor Kurzspannung schützt, also vor einem Kurzschluss am Ausgang.
+
+156
+00:19:08,420 --> 00:19:12,070
+Viel Erfolg mit deinen Experimenten, alles Gute!

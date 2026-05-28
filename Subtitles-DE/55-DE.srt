@@ -1,0 +1,347 @@
+1
+00:00:00,750 --> 00:00:02,330
+Hallo zusammen.
+
+2
+00:00:02,770 --> 00:00:11,350
+Heute schauen wir uns an, wie dieser Verstärker-Aufsatz für den Labor-Signalgenerator zum Testen unserer Spulen funktioniert.
+
+3
+00:00:12,230 --> 00:00:13,730
+Daran ist nichts Kompliziertes.
+
+4
+00:00:15,390 --> 00:00:31,930
+Er ist um einen IRF840-Transistor herum aufgebaut, mit einem TC4420-Treiber für diesen Transistor auf dem Kühlkörper, und einem Vermittler-Chip, der den Labor-Signalgenerator und den Treiber verbindet.
+
+5
+00:00:32,070 --> 00:00:37,750
+Der Vermittler-Chip ist derselbe wie vorher, ein TC4093BP.
+
+6
+00:00:39,350 --> 00:00:48,750
+Zur Versorgung dieser Chips verwenden wir einen DC-DC-Wandler, der um den LM2596 herum aufgebaut ist.
+
+7
+00:00:49,470 --> 00:00:56,410
+Wir stellen ihn mit dem Trimmer auf 15 V ein und speisen ihn mit einer etwas höheren Spannung.
+
+8
+00:00:56,650 --> 00:01:00,730
+In meinem Fall ist es ein 18-V-Netzteil.
+
+9
+00:01:01,670 --> 00:01:04,290
+Es kann auch aus Akkus laufen, was immer du zur Hand hast.
+
+10
+00:01:05,410 --> 00:01:10,050
+Die Schaltung ist im Bild gezeigt.
+
+11
+00:01:10,570 --> 00:01:18,970
+Übrigens, ich lade alle meine Schaltungen auf einen Filehoster und packe den Link unter das Video, genauso wie beim vorherigen, das ich gefilmt habe.
+
+12
+00:01:20,490 --> 00:01:26,730
+An dieser Stelle solltest du ein schönes sauberes Oszillogramm wie dieses sehen.
+
+13
+00:01:27,950 --> 00:01:30,010
+Schauen wir, was noch.
+
+14
+00:01:30,450 --> 00:01:44,350
+Das Signal vom Labor-Signalgenerator trifft auf einen der Schmitt-Trigger, wird invertiert, und dann invertieren wir es am zweiten Schmitt-Trigger erneut, um das echte Signal zu bekommen.
+
+15
+00:01:44,410 --> 00:01:53,050
+Von dort erreicht das Signal über einen 10-Ohm-Dämpfungswiderstand den Treiber, der das Gate des FET ansteuert.
+
+16
+00:01:53,970 --> 00:02:09,530
+Dann schaltet der FET unsere Hauptversorgung, aus Akkus oder einer anderen Quelle, auf die Drossel, die unsere Spule treibt.
+
+17
+00:02:11,930 --> 00:02:18,910
+Die Beschaltung ist nicht kompliziert. Schauen wir, wie er funktioniert.
+
+18
+00:02:19,850 --> 00:02:25,730
+Zuerst wird dieses System an den Labor-Signalgenerator angeschlossen.
+
+19
+00:02:26,590 --> 00:02:37,870
+Der Labor-Generator wird in den Impulsmodus geschaltet, dann stellst du an der Steuerung die Impulsfrequenz ein.
+
+20
+00:02:38,550 --> 00:02:48,950
+Unsere Schaltung arbeitet bis 2,5 MHz. Danach stellen wir die Signalamplitude ein.
+
+21
+00:02:49,090 --> 00:02:56,670
+Die Signalamplitude beträgt 6 Volt, das ist das Minimum, mit dem dieser Aufsatz arbeitet.
+
+22
+00:02:57,290 --> 00:03:05,890
+Wenn du einen 5-Volt-Signalgenerator hast, musst du diesen Schmitt-Trigger-Chip durch einen mit 5-Volt-Logik ersetzen.
+
+23
+00:03:06,050 --> 00:03:11,730
+Er ist auch mit diesem Treiber kompatibel.
+
+24
+00:03:12,090 --> 00:03:22,110
+Du müsstest nur einen L7805-Regler nach diesem Wandler für die 5-Volt-Logik-Versorgung hinzufügen.
+
+25
+00:03:23,190 --> 00:03:25,250
+Und die Schaltung wird einwandfrei arbeiten.
+
+26
+00:03:27,510 --> 00:03:31,630
+Sobald die Amplitude eingestellt ist, kommt als Nächstes das Tastverhältnis.
+
+27
+00:03:31,750 --> 00:03:34,670
+Im Moment liegt das Tastverhältnis bei 73 %.
+
+28
+00:03:34,670 --> 00:03:36,770
+Ich zeige dir, was das Tastverhältnis bewirkt.
+
+29
+00:03:37,490 --> 00:03:43,530
+Ich gebe Versorgung aus dem Netzteil auf den Transistor.
+
+30
+00:03:50,200 --> 00:03:51,940
+Wir sehen das Oszillogramm.
+
+31
+00:03:52,640 --> 00:03:56,080
+Das ist, was du bekommen solltest.
+
+32
+00:03:57,360 --> 00:04:00,400
+Jetzt pass auf, ich ändere das Tastverhältnis.
+
+33
+00:04:00,740 --> 00:04:03,460
+In diesem Fall verringere ich es.
+
+34
+00:04:04,620 --> 00:04:09,380
+Sieh, das Signal wird unsauber.
+
+35
+00:04:10,400 --> 00:04:22,740
+Für jede Spule müssen wir also das Signal individuell einstellen, zusammen mit dem Arbeitspunkt des Transistors bei dieser Frequenz.
+
+36
+00:04:23,240 --> 00:04:25,260
+Das ist die Tastverhältnis-Einstellung.
+
+37
+00:04:25,780 --> 00:04:27,980
+Hier habe ich es auf 10 % gesenkt.
+
+38
+00:04:27,980 --> 00:04:31,740
+Bringe es zurück zu einem sauberen Signal.
+
+39
+00:04:32,480 --> 00:04:40,560
+In diesem Fall, bei dieser Frequenz, beginnt es bei etwa 71 % zu arbeiten.
+
+40
+00:04:41,720 --> 00:04:48,240
+Sobald wir ein sauberes Signal haben, beginnen wir, unsere Spule zu untersuchen.
+
+41
+00:04:49,920 --> 00:04:51,000
+Was bekommen wir?
+
+42
+00:04:51,320 --> 00:05:07,900
+Mit dieser Ansteuerung, bei der LC-Resonanzfrequenz für diese Spule von 1,68 MHz, fangen die Spulen an, sich genau wie ein Tesla-Transformator zu verhalten.
+
+43
+00:05:07,980 --> 00:05:17,620
+Im Moment sind beide Enden in der Luft, sie ist nicht geerdet, und du siehst, dass eine Entladung auftritt,
+
+44
+00:05:21,630 --> 00:05:24,490
+im Grunde dieselbe Art von Korona wie bei einem Tesla.
+
+45
+00:05:33,960 --> 00:05:41,840
+Die Spule arbeitet im Viertelwellen-Modus, das erkennst du daran, wie die Glimmlampe leuchtet.
+
+46
+00:05:42,800 --> 00:05:45,760
+Näher am heißen Ende wird das Leuchten heller.
+
+47
+00:05:46,900 --> 00:05:58,660
+Es gibt eine Leuchtstoffröhre parallel zur Spule, um sie anzuzünden, berühren wir das heiße Ende mit ihrem Anschluss.
+
+48
+00:05:59,620 --> 00:06:04,840
+Ich habe das heiße Ende daran berührt, und du siehst, dass die Lampe hell aufleuchtet.
+
+49
+00:06:05,500 --> 00:06:08,280
+Nach dem Trennen leuchtet die Lampe schwach weiter.
+
+50
+00:06:09,660 --> 00:06:12,100
+Und was sollten wir an dieser Lampe sehen?
+
+51
+00:06:13,700 --> 00:06:22,400
+Die Kamera nimmt es vielleicht nicht auf, aber es gibt Streifen, die entlang der Lampe laufen, die ganze Röhre wird gestreift.
+
+52
+00:06:23,320 --> 00:06:39,120
+Und wenn die Spule richtig gewickelt ist, sind diese Streifen scharf abgegrenzt. Du willst die Frequenz am Labor-Signalgenerator finden, bei der die Streifen ganz aufhören sich zu bewegen.
+
+53
+00:06:39,720 --> 00:06:43,780
+Wenn das passiert, ist die Spule richtig gebaut.
+
+54
+00:06:43,780 --> 00:07:04,580
+Wenn du die Streifen durch Frequenzänderung nicht zum Stehen bringen kannst und sie sich weiterbewegen, ist die Spule leicht falsch gewickelt, du bekommst keine saubere longitudinale stehende Welle um die Spule.
+
+55
+00:07:04,580 --> 00:07:06,020
+Um diese Spule herum.
+
+56
+00:07:06,780 --> 00:07:17,600
+Du müsstest sie nachjustieren, entweder die Drahtlänge erhöhen oder verringern. Das ist eine Frage von Versuch und Irrtum.
+
+57
+00:07:18,980 --> 00:07:37,200
+Aber das Hauptziel ist, dass die Spule anläuft und sich wie ein Tesla-Transformator verhält, die Glimmlampen und Gasentladungslampen sollten aufleuchten, und am wichtigsten willst du diese Streifen an der Lampe sehen.
+
+58
+00:07:38,920 --> 00:07:40,300
+Wieder das Signal.
+
+59
+00:07:42,680 --> 00:07:46,100
+Ich habe schon gezeigt, wie man es einstellt.
+
+60
+00:07:46,860 --> 00:07:48,300
+Und die Stromaufnahme an dieser Stelle.
+
+61
+00:07:50,500 --> 00:07:54,260
+1,32 Ampere bei 12,4 Volt.
+
+62
+00:07:55,300 --> 00:08:05,300
+Je besser die Spule gewickelt ist, desto weniger Eingangsleistung braucht sie, und desto heller leuchtet die Lampe.
+
+63
+00:08:06,680 --> 00:08:13,620
+Die Lampe leuchtet auch heller, wenn wir Erdung an diese Spule anschließen.
+
+64
+00:08:14,220 --> 00:08:21,420
+Schau, ich schließe Erdung an, und du siehst die Helligkeit zunehmen.
+
+65
+00:08:25,060 --> 00:08:27,060
+Ohne die Leistung zu ändern.
+
+66
+00:08:29,020 --> 00:08:35,220
+Wir können mit dem zweiten Tastkopf schauen, was los ist.
+
+67
+00:08:35,480 --> 00:08:37,160
+Ich lege ihn neben die Spule.
+
+68
+00:08:44,260 --> 00:08:46,800
+Schauen wir, was wir an der Spule haben.
+
+69
+00:08:47,020 --> 00:08:50,460
+An der Spule haben wir bei dieser Frequenz eine Sinuswelle.
+
+70
+00:08:51,360 --> 00:08:56,920
+An der Sinuswelle siehst du klar den Kick vom Impuls.
+
+71
+00:08:58,620 --> 00:08:59,580
+Eine scharfe kleine Beule.
+
+72
+00:09:00,000 --> 00:09:06,800
+Versuchen wir jetzt, die Frequenz am Labor-Generator zu ändern.
+
+73
+00:09:08,120 --> 00:09:10,200
+Ich ändere die Frequenz, gehe runter.
+
+74
+00:09:10,980 --> 00:09:12,320
+Hier ist ein charakteristisches Merkmal.
+
+75
+00:09:12,380 --> 00:09:29,140
+Wenn die Spule dein Signal gut absorbiert, also wenn sie frequenzmäßig gut angepasst ist, nehmen die Spitzen an der Drossel in der Amplitude ab.
+
+76
+00:09:29,840 --> 00:09:39,620
+Schau, ich verstimme das System, die Spitze wächst, und die Amplitude an der Spule selbst sinkt.
+
+77
+00:09:40,020 --> 00:09:43,420
+Das ist ein Zeichen, dass du auf der falschen Frequenz bist.
+
+78
+00:09:45,860 --> 00:09:54,840
+Ich bringe es zurück, und wir bekommen das gleiche Bild, wenn wir in der Frequenz höher gehen.
+
+79
+00:09:57,680 --> 00:10:02,740
+Dasselbe, Spitze wächst, Signal sinkt.
+
+80
+00:10:03,820 --> 00:10:15,320
+Wir zielen auf maximale Amplitude an der Spule und maximales Leuchten der Lampen um sie herum.
+
+81
+00:10:15,620 --> 00:10:20,480
+Aber am wichtigsten, wieder, diese Streifen an der Lampe.
+
+82
+00:10:20,880 --> 00:10:24,680
+Wenn du sie siehst, werden sie chaotisch herumlaufen.
+
+83
+00:10:25,280 --> 00:10:28,100
+Die Kamera nimmt es einfach nicht auf, sie laufen gerade jetzt.
+
+84
+00:10:28,780 --> 00:10:30,400
+Das Auge erfasst es leicht.
+
+85
+00:10:31,380 --> 00:10:36,760
+Unsere Aufgabe ist, die Spule so zu wickeln, dass diese Streifen ganz stehen bleiben.
+
+86
+00:10:38,720 --> 00:10:40,460
+Viel Glück allen beim Bauen.
+
+87
+00:10:43,340 --> 00:10:46,040
+Die Schaltung wird unter dem Video veröffentlicht.
