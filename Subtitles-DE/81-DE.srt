@@ -1,0 +1,1439 @@
+1
+00:00:00,000 --> 00:00:02,700
+Guten Tag, liebe Zuschauer.
+
+2
+00:00:03,280 --> 00:00:11,740
+Heute betrachten wir eine Schaltung, die zur Steuerung eines Tesla-Transformators auf Basis eines Halbbrücken-Wechselrichters entworfen ist.
+
+3
+00:00:13,060 --> 00:00:30,840
+Der Hauptoszillator ist auf dem TL494-Chip aufgebaut, und seine Frequenz kann mit Werten von 150 pF und 10 kΩ Widerstand im Bereich von 230 kHz bis 640 kHz wechseln.
+
+4
+00:00:31,400 --> 00:00:47,860
+Ich empfehle nicht, Tesla-Transformatoren mit einer Frequenz unter 200 kHz zu machen, da bei dieser Frequenz der Skin-Effekt auf menschlicher Haut bereits verschwindet und der Strom dann unter die Haut eindringen kann und innere Verbrennungen verursacht.
+
+5
+00:00:48,100 --> 00:00:50,220
+Das heißt, unter 200 kHz gehen wir nicht.
+
+6
+00:00:52,420 --> 00:01:07,380
+Auch der Chip, wenn er im Gegentakt-Modus arbeitet — der maximale Arbeitsbereich in solch einer Verbindung habe ich auf 680-700 kHz schieben können.
+
+7
+00:01:07,840 --> 00:01:12,840
+Das heißt, wenn du diese Variante verwendest, können wir nicht über diese Frequenz hinausgehen.
+
+8
+00:01:13,300 --> 00:01:16,600
+Es gibt solch einen Frequenzdämpfer.
+
+9
+00:01:17,600 --> 00:01:29,000
+Weiter, nach dem Chip und den Ausgängen, geht das Signal zum TC4093-Chip, an dem das Modulationssystem aufgebaut ist.
+
+10
+00:01:29,840 --> 00:01:36,420
+Das modulierende Signal nehmen wir über einen HCPL3120-Opto-Treiber.
+
+11
+00:01:37,920 --> 00:01:45,000
+Dieser Treiber ist hier installiert, um unseren Laborgenerator vor Hochfrequenz-Einkopplungen zu schützen.
+
+12
+00:01:45,000 --> 00:01:48,000
+Hier gibt es eine optische Trennung.
+
+13
+00:01:48,220 --> 00:01:52,440
+Und achte darauf, ich habe Generator-Masse und Signal-Masse markiert.
+
+14
+00:01:52,880 --> 00:01:56,200
+Die Generator-Masse ist nirgendwo mit der Masse in der Schaltung verbunden.
+
+15
+00:01:56,340 --> 00:01:59,680
+Das heißt, wir haben volle Systemtrennung.
+
+16
+00:01:59,840 --> 00:02:10,780
+Wenn dein Rechteckimpulsgenerator eine Amplitude von 5 Volt hat, dann setzen wir einen Widerstand von 120 Ω am Eingang ein.
+
+17
+00:02:10,780 --> 00:02:16,680
+Wenn die Amplitude 12-15 V beträgt, dann beträgt der Widerstand 360 Ω.
+
+18
+00:02:17,460 --> 00:02:25,660
+Weiter wird das modulierende Signal vom HCPL3120-Treiber über einen 47-Ω-Vorwiderstand an einen Schalter geliefert.
+
+19
+00:02:26,240 --> 00:02:38,500
+Der Schalter ist in die Schaltung eingeführt, damit wir das gesamte System in den kontinuierlichen Arbeitsmodus oder die Arbeit im Burst-Modus mit der am Eingang anliegenden Modulationsfrequenz umschalten können.
+
+20
+00:02:39,380 --> 00:02:47,320
+Die Signalmodulation erfolgt direkt am TC4093-Chip, da er an seinem Eingang Logic-Zwei hat.
+
+21
+00:02:47,480 --> 00:02:56,560
+Das heißt, wenn an jedem Eingang des Logikelements eine logische Eins anliegt, geht das Signal durch.
+
+22
+00:02:56,680 --> 00:03:00,900
+Wenn Eins und logische Null, geht das Signal nicht durch.
+
+23
+00:03:01,180 --> 00:03:03,360
+Damit machen wir die Modulation.
+
+24
+00:03:03,360 --> 00:03:12,660
+Siehe, dass das modulierende Signal zu Pin 1 des Logikelements kommt und das Signal vom Chip zu Pin 2 kommt.
+
+25
+00:03:12,660 --> 00:03:23,460
+Das Logikelement ist hier invertierend, also müssen wir vom Ausgang an ein weiteres Logikelement liefern und dieses Signal umkehren.
+
+26
+00:03:23,560 --> 00:03:27,080
+Das heißt, zurück von logischer Null zu logischer Eins.
+
+27
+00:03:27,080 --> 00:03:35,380
+Auf diese Weise bekommen wir ein Analogon des Signals, das wir am Ausgang des TL494-Chips hatten.
+
+28
+00:03:35,860 --> 00:03:43,080
+Und weiter kommt dieses Signal zum IR2110- oder IR2113-Treiber.
+
+29
+00:03:44,880 --> 00:03:55,220
+Dieser Chip ist ein Gegentakt-Treiber, der im Halbbrücken-Schema mit Bootstrap-Versorgung arbeiten kann.
+
+30
+00:03:56,220 --> 00:04:01,480
+Ein Treiber bis 2 A im Impuls, nicht zu leistungsstark.
+
+31
+00:04:02,360 --> 00:04:05,420
+Also, hier sind die Hauptmomente.
+
+32
+00:04:05,920 --> 00:04:08,480
+Hier haben wir eine Bootstrap-Diode.
+
+33
+00:04:08,540 --> 00:04:15,420
+Ich habe eine Diode der Marke UF4007 verwendet, eine schnellwirkende Diode mit 1000 V Spannung.
+
+34
+00:04:16,080 --> 00:04:19,680
+Und achte besonders auf diesen Kondensator.
+
+35
+00:04:19,860 --> 00:04:22,660
+Ich habe ihn markiert — Tantal-Kondensator.
+
+36
+00:04:22,660 --> 00:04:24,900
+Wünschenswert, hier genau diese Art zu finden.
+
+37
+00:04:25,840 --> 00:04:29,740
+Seine Parameter sind irgendwo etwa 20 µF, 25 V.
+
+38
+00:04:30,020 --> 00:04:38,060
+Wenn du solche in Geschäften nicht finden kannst, setze einen Elektrolyt hier ein, auch bei 20-25 µF, qualitativ.
+
+39
+00:04:38,700 --> 00:04:46,140
+Und parallel dazu setze einen hochwertigen Folienkondensator, irgendwo 2-5 µF.
+
+40
+00:04:47,480 --> 00:04:50,500
+Du kannst diesen Tantal-Kondensator auf diese Weise ersetzen.
+
+41
+00:04:51,500 --> 00:04:54,400
+Und der nächste wichtige Moment.
+
+42
+00:04:54,560 --> 00:04:55,420
+Hier ist es markiert.
+
+43
+00:04:55,500 --> 00:05:04,340
+Wenn die Schaltung im kontinuierlichen Modus arbeitet, verfolge die Temperatur des Treibers der Leistungsschalter, indem du die Versorgungsspannung an den Schaltern sanft erhöhst.
+
+44
+00:05:04,800 --> 00:05:06,300
+Das ist der allerwichtigste Moment.
+
+45
+00:05:06,480 --> 00:05:10,500
+Die Betriebstemperatur dieses Treibers beträgt bis zu 150 Grad.
+
+46
+00:05:10,500 --> 00:05:21,840
+Kurz gesagt, wenn das ein Marken-Treiber ist, kein chinesischer Klon, kann er Überlastungen bis zu 300 Grad für 10 Sekunden aushalten.
+
+47
+00:05:21,980 --> 00:05:25,560
+Aber ich empfehle nicht, ihn solch einem Test zu unterziehen.
+
+48
+00:05:26,620 --> 00:05:30,860
+Ich, sagen wir, halte diesen Chip in einem Modus bis zu 100 Grad.
+
+49
+00:05:31,860 --> 00:05:35,340
+Also, ich verfolge diesen Moment.
+
+50
+00:05:35,660 --> 00:05:40,980
+Sonst gibt es ein Risiko, dass der Treiber durch inneren thermischen Durchbruch ausfällt.
+
+51
+00:05:43,180 --> 00:05:48,660
+Erhöhe die Spannung an den Schaltern sanft und verfolge die Temperatur.
+
+52
+00:05:48,760 --> 00:05:50,000
+Das ist ein sehr wichtiger Moment.
+
+53
+00:05:50,000 --> 00:06:01,300
+Die in unserer Halbbrücken-Schaltung verwendeten Transistoren werden die IRF-Serie sein mit einer Bewertung möglicher Spannung ab 100 Volt.
+
+54
+00:06:01,520 --> 00:06:06,260
+Das ist die Spannung zwischen Source und Drain des FET-Schalters.
+
+55
+00:06:06,940 --> 00:06:09,220
+Das ist der Source-Punkt — Source.
+
+56
+00:06:10,880 --> 00:06:25,700
+Also, 100 V für uns — das ist der IRF510, und die maximale Bewertung, für die der 2113-Treiber ausgelegt ist, ist die Arbeit mit zugeführter Spannung von 600 Volt.
+
+57
+00:06:26,240 --> 00:06:33,580
+Der 2110-Treiber — 500 Volt können am Eingang der Leistungsschalter bis zu diesem Wert geliefert werden.
+
+58
+00:06:36,100 --> 00:06:45,900
+Ich empfehle, den finalen Transistor aus der IRF-Serie zu verwenden, das ist der IRF840 — ich habe ihn hier in meiner Schaltung angewendet.
+
+59
+00:06:47,500 --> 00:06:52,660
+Weiter sehen wir, dass hier ein Teiler auf zwei Kondensatoren aufgebaut ist.
+
+60
+00:06:53,380 --> 00:07:01,020
+Diese Kondensatoren sollten wünschenswert von großen Abmessungen genommen werden — ich habe bei 630 Volt, 4,7 µF genommen.
+
+61
+00:07:01,020 --> 00:07:04,360
+Sie bilden auch für uns den Mittelpunkt.
+
+62
+00:07:05,200 --> 00:07:15,240
+Das Merkmal der Halbbrücken-Schaltung ist, dass sie die an den Schaltern angelegte Eingangsspannung an diesem Punkt in der Hälfte teilt.
+
+63
+00:07:16,120 --> 00:07:21,720
+Wenn du möchtest, kann diese Halbbrücken-Schaltung sehr leicht in eine Vollbrücke umgewandelt werden.
+
+64
+00:07:21,720 --> 00:07:25,760
+Dafür nimm einen analogen Treiber.
+
+65
+00:07:26,420 --> 00:07:32,620
+Auch diesen ganzen Teil mit Leistungsschaltern zusammengebaut und nur diese Kondensatoren angeschlossen.
+
+66
+00:07:33,840 --> 00:07:38,280
+Und die Verbindung ist alles genauso wie in dieser Schaltung.
+
+67
+00:07:38,360 --> 00:07:45,740
+Nur dort wird das Steuersignal diagonal geliefert.
+
+68
+00:07:45,740 --> 00:07:57,160
+Wenn wir hier sehen, dass von Pin 11 zu Pin 10, dann wird am zweiten Chip das Signal von Pin 11 zu Pin 12 geliefert.
+
+69
+00:07:57,220 --> 00:08:01,840
+Das heißt, diagonal liefern, damit unsere Schalter ebenfalls diagonal arbeiten.
+
+70
+00:08:02,360 --> 00:08:12,200
+Zwischen dem Mittelpunkt, den die Kondensatorteiler bilden, und dem Mittelpunkt zwischen den Leistungsschaltern befindet sich unsere Last.
+
+71
+00:08:12,200 --> 00:08:17,360
+In diesem Fall, wo diese Schaltung angewendet wurde — das ist die Tesla-Transformator-Drossel.
+
+72
+00:08:18,080 --> 00:08:33,560
+Da unsere Drossel eine Länge in der Größenordnung mehrerer Meter hat, im Bereich von 3-4, kleinen Widerstand, kleine Induktivität, können Ströme durch die Leistungsschalter im kontinuierlichen Modus der Schaltungsarbeit erheblich sein.
+
+73
+00:08:34,560 --> 00:08:40,940
+Allgemein wurde diese Schaltung speziell für die Arbeit im Modulationsmodus entwickelt.
+
+74
+00:08:40,940 --> 00:08:53,060
+Da bei der Arbeit des Tesla-Transformators im kontinuierlichen Modus alle interessanten Momente, die mit der Wechselwirkung des Tesla-Transformators mit der umgebenden Umgebung verbunden sind, bei uns nicht beobachtet werden.
+
+75
+00:08:54,060 --> 00:09:01,380
+Also wird sie hier in der Arbeit mit Modulation angewendet.
+
+76
+00:09:01,380 --> 00:09:15,700
+Wer einen Tesla-Transformator im kontinuierlichen Modus ohne Modulation betreibt, dann musst du definitiv die Temperatur hier verfolgen — ein wichtiger Moment, um den Treiber nicht zu verbrennen.
+
+77
+00:09:16,460 --> 00:09:24,940
+Und diese Drossel auf größere Meterzahl gewickelt, nach deinem Tesla-Transformator ausgewählt.
+
+78
+00:09:25,480 --> 00:09:29,640
+Jetzt betrachten wir unser Gerät direkt in Hardware.
+
+79
+00:09:29,640 --> 00:09:39,760
+Ich habe diesen Aufbau in Form eines Etagenregals gemacht, damit ich bei Bedarf bequem reparieren kann.
+
+80
+00:09:40,100 --> 00:09:53,980
+Im oberen Teil des Geräts ist die Steuerung — der TL494-Chip, TC4093 und der HCPL3120-Opto-Treiber.
+
+81
+00:09:53,980 --> 00:09:58,800
+Das ist der in der Schaltung gezeigte Schalter, der die Modulation einschaltet.
+
+82
+00:09:59,700 --> 00:10:04,420
+Und siehe hier zwei Mehrwendel-Trimmwiderstände.
+
+83
+00:10:05,080 --> 00:10:15,180
+Ein Widerstand ist für die Frequenz verantwortlich, das ist der 10 kΩ, und der andere Widerstand ist für die Dauer der Steuersignale verantwortlich.
+
+84
+00:10:16,180 --> 00:10:29,220
+Auch wenn hier als Impulsdauer markiert — die Dauer der Steuersignale ändern, so können wir den Strom am Ausgang unseres Halbbrücken-Wechselrichters begrenzen.
+
+85
+00:10:30,380 --> 00:10:36,640
+Das ist eine der Justiermöglichkeiten, die in dieser Schaltung gemacht werden können.
+
+86
+00:10:37,000 --> 00:10:44,700
+Das ist der Regler, der Stabilisator und Hilfskondensatoren.
+
+87
+00:10:44,940 --> 00:10:56,640
+Die Schalter sind auf Kühlkörpern gegenüber voneinander auf dielektrischen Unterlagen platziert, mit Wärmeleitpaste bestrichen.
+
+88
+00:10:58,500 --> 00:11:07,420
+So sehen die 4,7 µF Kondensatoren bei 630 V aus — hier ist das Paar davon.
+
+89
+00:11:07,920 --> 00:11:10,680
+Hier ist ein Kondensator, und dort innen ist der zweite.
+
+90
+00:11:11,400 --> 00:11:16,140
+Das ist alles auf einer Platine zusammengebaut, direkt mit den Leistungsschaltern.
+
+91
+00:11:17,040 --> 00:11:20,980
+Hier kannst du den IR2113-Treiber sehen.
+
+92
+00:11:20,980 --> 00:11:32,900
+Und an der Unterseite der Schaltung ist der DC-DC-Wandler angeschraubt, der 12 V aus der Batterie in 16 V umwandelt.
+
+93
+00:11:33,360 --> 00:11:43,640
+Ich versuche, mit einer Spannung von 16-18 V zu arbeiten, damit eine qualitative Öffnung der Gates der Leistungsschalter erfolgt.
+
+94
+00:11:43,640 --> 00:11:50,140
+Wenn du keinen solchen Wandler hast, kann er auch separat in Funkgeschäften erworben werden.
+
+95
+00:11:50,420 --> 00:11:57,840
+Dann kannst du 12 V direkt von der Batterie an diesem Versorgungspunkt anlegen.
+
+96
+00:11:58,400 --> 00:12:01,980
+Die Schaltung wird funktionieren, nichts Schreckliches wird passieren.
+
+97
+00:12:02,420 --> 00:12:05,580
+Ich wende einfach solche Systeme an — bequemer.
+
+98
+00:12:05,620 --> 00:12:11,980
+Hier volle galvanische Trennung, und ich kann solch einen selbstgebauten Wandler anschließen.
+
+99
+00:12:11,980 --> 00:12:17,760
+An das Labornetzteil, und nicht an die Batterie.
+
+100
+00:12:19,500 --> 00:12:23,340
+Also, im Prinzip gibt es hier nichts mehr.
+
+101
+00:12:23,660 --> 00:12:32,480
+Hier, wie zueinander positioniert auf dielektrischen Unterlagen, mit Wärmeleitpaste bestrichen.
+
+102
+00:12:33,980 --> 00:12:41,780
+Also, so sehen die 4,7 µF 630 V Kondensatoren aus.
+
+103
+00:12:41,980 --> 00:12:46,100
+Hier ist ein Kondensator, und dort innen ist der zweite.
+
+104
+00:12:46,760 --> 00:12:51,600
+Das ist alles auf einer Platine zusammengebaut, direkt mit den Leistungsschaltern.
+
+105
+00:12:52,460 --> 00:12:56,420
+Hier kannst du den IR2113-Treiber sehen.
+
+106
+00:12:57,380 --> 00:13:02,240
+Und an der Unterseite der Schaltung ist genau der DC-DC-Wandler angeschraubt.
+
+107
+00:13:02,320 --> 00:13:08,300
+Dieser, der 12 V aus der Batterie in 16 V umwandelt.
+
+108
+00:13:08,300 --> 00:13:18,300
+Ich versuche, mit 16-18 V Spannung zu arbeiten, damit eine qualitative Öffnung der Gates der Leistungsschalter erfolgt.
+
+109
+00:13:19,240 --> 00:13:25,560
+Aber wenn du keinen solchen Wandler hast, kann er auch separat in Funkgeschäften erworben werden.
+
+110
+00:13:25,780 --> 00:13:33,260
+Dann kannst du 12 V direkt von der Batterie an diesem Versorgungspunkt anlegen.
+
+111
+00:13:33,820 --> 00:13:37,400
+Die Schaltung wird funktionieren, nichts Schreckliches wird passieren.
+
+112
+00:13:38,300 --> 00:13:40,640
+Es ist einfach bequemer, solche Systeme anzuwenden.
+
+113
+00:13:41,100 --> 00:13:53,140
+Hier volle galvanische Trennung, und ich kann solch einen selbstgebauten Wandler an das Labornetzteil anschließen, und nicht an die Batterie.
+
+114
+00:13:53,540 --> 00:13:55,820
+Achte auf diesen Kondensator.
+
+115
+00:13:55,960 --> 00:13:57,300
+Ich empfehle zu verwenden...
+
+116
+00:13:57,820 --> 00:14:00,800
+Hier sind es 150 pF, das ist in der Schaltung.
+
+117
+00:14:01,360 --> 00:14:05,200
+Ich empfehle, hier Kondensatoren mit kleinem TKE zu verwenden.
+
+118
+00:14:05,200 --> 00:14:12,700
+Das heißt, dieser Koeffizient, der die Abhängigkeit der Kapazitätsdrift eines Kondensators von der Umgebungstemperatur zeigt.
+
+119
+00:14:13,260 --> 00:14:17,120
+In diesem Fall habe ich Röhrenkondensatoren sowjetischer Bauart verwendet.
+
+120
+00:14:17,940 --> 00:14:25,360
+Jetzt kannst du SMD-Kondensatoren verwenden, die in Funkteilen in Geschäften erhältlich sind.
+
+121
+00:14:26,620 --> 00:14:31,900
+Also, hier wird der modulierende Signaleingang zugeführt.
+
+122
+00:14:32,880 --> 00:14:37,120
+Naja, und das ist alles — es gibt hier nicht viel mehr für uns.
+
+123
+00:14:38,320 --> 00:14:43,200
+Jetzt gehen wir dazu über, die Oszillogramme der Arbeit unseres Geräts zu betrachten.
+
+124
+00:14:43,700 --> 00:14:53,260
+Also, zuerst habe ich diesen Teil des Geräts vollständig durch die Treiberversorgung zusammengebaut und separat geprüft.
+
+125
+00:14:53,820 --> 00:15:00,260
+Jetzt stehen die Oszilloskop-Tastköpfe an diesen Punkten, nach dem 33-Ω-Widerstand.
+
+126
+00:15:02,080 --> 00:15:07,000
+Spannung wird an die Schaltung geliefert, und wir beobachten das Oszillogram.
+
+127
+00:15:08,140 --> 00:15:16,620
+Hier siehst du, dass wir zwei Signale haben, sie sind gegenphasig, zwischen ihnen gibt es eine obligatorische Pause.
+
+128
+00:15:17,740 --> 00:15:22,700
+Wir können auch die Regelung der Frequenz und Dauer prüfen.
+
+129
+00:15:23,200 --> 00:15:26,600
+Jetzt drehe ich den Trimmwiderstand.
+
+130
+00:15:27,740 --> 00:15:29,300
+Die Frequenz ändert sich für uns.
+
+131
+00:15:32,880 --> 00:15:34,940
+Das System funktioniert.
+
+132
+00:15:35,700 --> 00:15:41,920
+Naja, und du kannst auch prüfen, wie sich die Impulsdauer ändert.
+
+133
+00:15:43,720 --> 00:15:50,600
+Der zweite Trimmwiderstand sollte sanft wechseln.
+
+134
+00:16:01,740 --> 00:16:04,280
+Die Widerstände hier sind Mehrwendel.
+
+135
+00:16:05,280 --> 00:16:07,500
+Sie schrauben sich nicht bis zum Ende aus.
+
+136
+00:16:07,600 --> 00:16:10,720
+Du kannst sehen, dass der Impuls deutlich seine Dauer ändert.
+
+137
+00:16:11,540 --> 00:16:13,540
+Und auch in der umgekehrten Richtung.
+
+138
+00:16:15,840 --> 00:16:17,880
+Hier ist unsere Frequenz.
+
+139
+00:16:19,500 --> 00:16:20,760
+Alles funktioniert.
+
+140
+00:16:20,960 --> 00:16:31,600
+Wenn wir jetzt den Schalter in den Modulationsmodus umlegen, sollte das Signal vollständig verschwinden, weil das Modulationssignal am Eingang nicht zugeführt wird.
+
+141
+00:16:31,600 --> 00:16:38,280
+Jetzt schließen wir das Eingangssignal an und schauen, wie die Schaltung bei seinem Vorhandensein arbeitet.
+
+142
+00:16:38,540 --> 00:16:42,720
+Schalter in den Modulationsmodus umgelegt und ich lege das modulierende Signal an.
+
+143
+00:16:45,300 --> 00:16:48,940
+Hier siehst du eine charakteristische Änderung.
+
+144
+00:16:51,640 --> 00:16:59,740
+Jetzt stoppe ich das Signal, und du kannst sehen, dass unsere Schaltung in den Pulsburst-Modus umgeschaltet hat.
+
+145
+00:17:00,290 --> 00:17:11,020
+Da das Oszilloskop jetzt nicht mit dem Eingangssignal synchronisiert ist, beobachten wir sein Ruckeln vor und zurück.
+
+146
+00:17:11,180 --> 00:17:16,300
+Jetzt ändern wir die Dauer des modulierenden Signals.
+
+147
+00:17:16,580 --> 00:17:21,740
+40 %, 30 %, 20 %, 10 %.
+
+148
+00:17:23,860 --> 00:17:32,900
+Die Synchronisation hat das Signal gut eingefangen, und es ist sichtbar, dass wir einen Burst von Impulsen haben.
+
+149
+00:17:34,700 --> 00:17:42,820
+Du kannst auch in der Pause untersuchen — auch in diesem Burst ist das Signal deutlich gegenphasig, geht nirgendwohin.
+
+150
+00:17:43,080 --> 00:17:45,000
+Das heißt, das System arbeitet stabil.
+
+151
+00:17:45,000 --> 00:17:47,060
+Weiter reduziere ich die Dauer.
+
+152
+00:17:48,340 --> 00:17:54,280
+Die Dauer macht nur 1 %.
+
+153
+00:17:55,720 --> 00:17:58,420
+Solch ein kurzer Burst.
+
+154
+00:17:59,820 --> 00:18:01,560
+Weiter reduziere ich.
+
+155
+00:18:04,760 --> 00:18:07,220
+Du kannst auch untersuchen.
+
+156
+00:18:08,460 --> 00:18:10,680
+Das heißt, das System arbeitet stabil.
+
+157
+00:18:10,840 --> 00:18:16,060
+Es gibt 4 Impulse an einem Schalter, geliefert, und 3 Impulse am anderen.
+
+158
+00:18:17,200 --> 00:18:18,160
+Ich reduziere weiter.
+
+159
+00:18:24,210 --> 00:18:27,970
+0,4 % Impulsdauer.
+
+160
+00:18:28,970 --> 00:18:32,470
+Hier jetzt 0,1 %.
+
+161
+00:18:32,470 --> 00:18:36,930
+Das heißt, du siehst, effektiv blieb ein Signal übrig.
+
+162
+00:18:38,850 --> 00:18:39,770
+Öffnung.
+
+163
+00:18:39,850 --> 00:18:40,930
+Ich füge Dauer hinzu.
+
+164
+00:18:41,670 --> 00:18:49,070
+0,2 % bei Modulationsfrequenz, die bei Frequenz 1 kHz gemacht ist.
+
+165
+00:18:49,950 --> 00:18:51,890
+Solch ein Signal haben wir.
+
+166
+00:18:52,050 --> 00:18:56,950
+Aber wenn ich rolle, siehst du, dass effektiv nur Spitzensignale übrig blieben.
+
+167
+00:18:58,170 --> 00:19:01,910
+Solch eine Prüfung unseres Master-Logikteils.
+
+168
+00:19:02,130 --> 00:19:03,690
+Und wir sehen, dass er funktionsfähig ist.
+
+169
+00:19:03,930 --> 00:19:08,210
+Jetzt kann ich den Schalter in den kontinuierlichen Erzeugungsmodus der Schaltung umlegen.
+
+170
+00:19:09,130 --> 00:19:12,370
+Und zum Original zurückkehren.
+
+171
+00:19:12,590 --> 00:19:19,570
+Nachdem ich den Master-Logikteil geprüft habe, wird das Signal schon an den Leistungsteil, an den Treiber geliefert.
+
+172
+00:19:19,810 --> 00:19:21,950
+Und ich gehe zu seinem Testen über.
+
+173
+00:19:21,950 --> 00:19:28,730
+Jetzt werde ich das Oszilloskop an diese Punkte verschieben, an den Gates der FET-Transistoren.
+
+174
+00:19:29,630 --> 00:19:32,970
+Und ich möchte sofort deine Aufmerksamkeit auf diesen Moment lenken.
+
+175
+00:19:33,190 --> 00:19:42,450
+Dass du im üblichen Modus schauen musst, wenn wir uns das Oszilloskop relativ zur gemeinsamen Leitung anschauen.
+
+176
+00:19:43,110 --> 00:19:51,570
+Aber in Halbbrücken- und Brückensystemen kann auf keinen Fall die gemeinsame Leitung des zweiten Tastkopfs an diesen Punkt gelegt werden.
+
+177
+00:19:51,950 --> 00:19:59,000
+Weil du diesen Transistor durch die gemeinsame Sonde des Oszilloskops kurzschließen wirst.
+
+178
+00:19:59,850 --> 00:20:02,910
+Und der Treiber kann ausfallen.
+
+179
+00:20:03,110 --> 00:20:07,210
+Oder der Leistungsschalter, wenn dieses System unter Last steht.
+
+180
+00:20:07,350 --> 00:20:13,610
+Das heißt, du machst einen direkten Kurzschluss des oberen Armschalters auf die gemeinsame Leitung.
+
+181
+00:20:14,870 --> 00:20:21,210
+Jetzt vor dir ist das Oszillogram der Arbeit des Treibers an den Gates der Leistungsschalter.
+
+182
+00:20:21,950 --> 00:20:26,990
+Du siehst hier ein gewisses Absacken an der vorderen Flanke, das ist die Gate-Aufladung, die für uns läuft.
+
+183
+00:20:27,130 --> 00:20:33,090
+Der Treiber, Erinnerung, ist bei uns 2-Ampere, nicht sehr leistungsstark, also haben wir solch ein Oszillogram.
+
+184
+00:20:34,150 --> 00:20:39,050
+Der Treiber arbeitet durch einen 24-Ω-Widerstand.
+
+185
+00:20:39,190 --> 00:20:44,190
+Ich habe ihn als optimal unter diesen IRF840-Transistoren ausgewählt.
+
+186
+00:20:45,130 --> 00:20:46,730
+Hier habe ich ihn eingekreist.
+
+187
+00:20:47,730 --> 00:20:51,130
+Dieser Widerstand ist mit einem Sternchen markiert.
+
+188
+00:20:51,230 --> 00:20:55,790
+Er muss generell individuell unter deinen Leistungsschaltern ausgewählt werden.
+
+189
+00:20:57,250 --> 00:21:01,730
+Was du hier in dieser Linie von 510 bis 840 wählst.
+
+190
+00:21:02,390 --> 00:21:14,530
+Dieser Widerstand beeinflusst die Treibererwärmung, das heißt den endgültigen Strom, der bei der Aufladung des Gates des Leistungsschalters durchgehen wird.
+
+191
+00:21:14,530 --> 00:21:17,350
+Du wirst mit diesem Parameter spielen.
+
+192
+00:21:17,910 --> 00:21:20,850
+Die hintere Flanke, du siehst, ist ziemlich scharf.
+
+193
+00:21:21,850 --> 00:21:28,170
+Für diese Flanke läuft die Entladung des Gates des Leistungsschalters.
+
+194
+00:21:28,790 --> 00:21:36,850
+Und für ihre scharfe Entladung ist diese Diode verantwortlich, die gegenphasig zum Eingangsimpuls angeschlossen ist.
+
+195
+00:21:37,390 --> 00:21:41,810
+Und über sie wird der Entladungsbypass dieses Widerstands gemacht.
+
+196
+00:21:41,810 --> 00:21:52,910
+Also siehst du, dass die Ladung der Gate-Kapazität zeitlich länger gemacht wird, und die Entladung sehr scharf.
+
+197
+00:21:53,670 --> 00:22:05,350
+Die Gate-Kapazität entlädt sich durch die Diode und innen am Treiberarm befindet sich ein Vorwärts-Rückwärts-Transistor.
+
+198
+00:22:05,350 --> 00:22:07,630
+Das heißt, N-Kanal und P-Kanal.
+
+199
+00:22:07,730 --> 00:22:14,470
+Und genau durch den P-Kanal-Transistor passiert die Entladung der Gate-Kapazität zur Schaltungsmasse.
+
+200
+00:22:15,490 --> 00:22:28,710
+Das ist für den unteren Schalter, und hier passiert die Gate-Entladung zum Mittelpunkt für den Schalter im oberen Arm unserer Halbbrücke.
+
+201
+00:22:30,550 --> 00:22:33,950
+Ich habe mich überzeugt, dass wir das Oszillogram haben.
+
+202
+00:22:34,030 --> 00:22:37,310
+Sweepe auch durch die Frequenz, schau, dass sich die Frequenz ändert.
+
+203
+00:22:37,410 --> 00:22:39,710
+Der Treiber sollte adäquat reagieren.
+
+204
+00:22:39,890 --> 00:22:40,950
+Dauer ändert sich.
+
+205
+00:22:41,070 --> 00:22:47,970
+Und erst nach Betrachtung all dieser Parameter können wir zum Lastanschluss kommen.
+
+206
+00:22:48,070 --> 00:22:52,710
+Schon im Leistungsmodus dieser Schaltung am Oszillogram testen.
+
+207
+00:22:52,710 --> 00:22:55,210
+Wir schauen das Oszillogram jetzt an.
+
+208
+00:22:55,850 --> 00:22:59,650
+Das Oszilloskop ist über AC angeschlossen, das heißt im AC-Modus.
+
+209
+00:23:00,410 --> 00:23:07,410
+Der anfängliche Start unter Last des Systems erfolgt an einer Lampe der Bewertung 25 W, 220 V.
+
+210
+00:23:07,490 --> 00:23:10,230
+Ich habe sie an diesen Punkten angeschlossen.
+
+211
+00:23:10,630 --> 00:23:12,850
+Anstelle unserer zukünftigen Drossel.
+
+212
+00:23:15,250 --> 00:23:16,850
+Was ist der Arbeitsalgorithmus?
+
+213
+00:23:16,970 --> 00:23:22,070
+Setze das Oszilloskop an die Lampenklemmen und beobachte das Oszillogram.
+
+214
+00:23:22,710 --> 00:23:26,430
+Und dann erhöhe sanft die Versorgungsspannung.
+
+215
+00:23:27,050 --> 00:23:30,350
+Ich mache das von meinen Labornetzteilen aus.
+
+216
+00:23:31,310 --> 00:23:33,990
+Das heißt, jeder wendet an, was er hat.
+
+217
+00:23:35,690 --> 00:23:37,290
+Ich erhöhe die Spannung.
+
+218
+00:23:39,650 --> 00:23:41,710
+Ich beginne mit 50 V.
+
+219
+00:23:42,370 --> 00:23:42,790
+Schau.
+
+220
+00:23:42,990 --> 00:23:47,110
+Solch ein Oszillogram bekommen wir jetzt während der Arbeit.
+
+221
+00:23:48,990 --> 00:23:53,490
+Du siehst, die Lampe beginnt nicht zu leuchten.
+
+222
+00:23:53,890 --> 00:23:56,570
+Der Verbrauch beträgt bei uns 0,04 A.
+
+223
+00:23:58,210 --> 00:24:05,870
+Wenn du einen Laborblock hast, dann ist es hier wünschenswert, den Stromschutz in einem akzeptablen Modus einzustellen.
+
+224
+00:24:06,190 --> 00:24:10,510
+Wenn es einige Fehler im System gibt, arbeitet der Stromschutz für uns.
+
+225
+00:24:11,630 --> 00:24:18,870
+Also, Spannung angelegt, und ich beginne die Temperaturkontrolle direkt am Treiber.
+
+226
+00:24:19,390 --> 00:24:22,450
+Wer ein Pyrometer hat, kann damit kontrollieren.
+
+227
+00:24:22,670 --> 00:24:23,930
+Ich habe dieses Gerät nicht.
+
+228
+00:24:24,030 --> 00:24:30,510
+Ich kontrolliere so — direkt durch Berührung der Oberseite des Treibers, Temperatur durch Gefühl.
+
+229
+00:24:31,610 --> 00:24:33,970
+Du siehst, das System arbeitet.
+
+230
+00:24:34,290 --> 00:24:36,930
+Weiter erhöhe ich die Spannung.
+
+231
+00:24:38,430 --> 00:24:39,610
+Ich erhöhe.
+
+232
+00:24:40,650 --> 00:24:41,850
+Also, 100 V.
+
+233
+00:24:42,650 --> 00:24:44,070
+Unser Oszillogram.
+
+234
+00:24:44,970 --> 00:24:46,630
+Ich erhöhe die Spannung.
+
+235
+00:24:47,670 --> 00:24:51,460
+Das Oszillogram ändert auch seine Amplitude.
+
+236
+00:24:52,430 --> 00:24:57,310
+Im 100-V-Modus mache ich auch Temperaturkontrolle.
+
+237
+00:24:59,510 --> 00:25:02,150
+Jetzt hat die Temperatur begonnen zu steigen.
+
+238
+00:25:02,150 --> 00:25:06,010
+Wir arbeiten in solchen Modi.
+
+239
+00:25:07,070 --> 00:25:14,830
+Weil in dieser Schaltung die 840-Transistoren schon eine große Last für diese Treiber sind.
+
+240
+00:25:15,450 --> 00:25:24,670
+Die Schaltung ist nicht für die Arbeit im kontinuierlichen Modus gemacht, sondern speziell mit Modulation.
+
+241
+00:25:25,690 --> 00:25:30,670
+Im kontinuierlichen Modus musst du die Werte optimieren, individuell auswählen.
+
+242
+00:25:33,130 --> 00:25:36,530
+Der Test bei 100 V verlief normal.
+
+243
+00:25:37,830 --> 00:25:41,410
+Jetzt können wir kurz die Bewertung geben.
+
+244
+00:25:43,310 --> 00:25:45,110
+Ich erhöhe die Spannung.
+
+245
+00:25:46,230 --> 00:25:49,250
+200 V höher.
+
+246
+00:25:49,850 --> 00:25:55,430
+Du siehst, das Netzteil geht schon etwas in den Schutz.
+
+247
+00:25:56,510 --> 00:25:58,470
+Kurz 250 V.
+
+248
+00:26:02,070 --> 00:26:03,510
+Die Temperatur steigt.
+
+249
+00:26:04,170 --> 00:26:09,430
+Jetzt in der Größenordnung von 70 Grad.
+
+250
+00:26:10,150 --> 00:26:13,770
+Das heißt, das System geht in die Erwärmung.
+
+251
+00:26:14,850 --> 00:26:22,150
+Und jetzt können wir zum Test im Modulationsmodus an der Lampe übergehen.
+
+252
+00:26:23,410 --> 00:26:27,090
+Und weiter schon die Tesla-Spulen-Drossel anschließen.
+
+253
+00:26:27,090 --> 00:26:31,550
+Die Modulationssignalfrequenz wird 10 Hz sein.
+
+254
+00:26:32,050 --> 00:26:34,730
+Die Dauer beträgt 30 %.
+
+255
+00:26:35,990 --> 00:26:39,310
+Ich erhöhe die Versorgungsspannung am System.
+
+256
+00:26:41,830 --> 00:26:43,070
+100 V.
+
+257
+00:26:45,890 --> 00:26:49,910
+Bei Spannung von irgendwo 150 V begann die Lampe zu leuchten.
+
+258
+00:26:52,930 --> 00:26:58,350
+Jetzt ist die Spannung das Maximum des Netzteils.
+
+259
+00:26:58,870 --> 00:27:03,130
+300 V, 0,03 A Verbrauch.
+
+260
+00:27:03,590 --> 00:27:06,870
+Natürlich fixiert der Block den Verbrauch bei uns nicht.
+
+261
+00:27:07,510 --> 00:27:12,890
+Das ist übrigens der Verbrauch in diesem Modus des Steuerteils und Leistungstreibers.
+
+262
+00:27:13,510 --> 00:27:21,270
+Und schon in solch einem Modus, genau im Impulsmodus, ist unser Treiber in einem akzeptablen Temperaturbereich.
+
+263
+00:27:22,190 --> 00:27:25,670
+Er erhitzt sich ziemlich stark, wenn im kontinuierlichen Modus.
+
+264
+00:27:26,790 --> 00:27:31,270
+Und in solch einem Modus ist die Temperatur leicht über Raumtemperatur.
+
+265
+00:27:31,530 --> 00:27:33,310
+Dafür wurde das System entwickelt.
+
+266
+00:27:33,650 --> 00:27:36,710
+Wir brauchen Modulation, nicht kontinuierlichen Modus.
+
+267
+00:27:37,830 --> 00:27:41,350
+Jetzt werde ich die Dauer ändern.
+
+268
+00:27:41,350 --> 00:27:41,430
+Hier
+
+269
+00:27:48,940 --> 00:27:52,560
+20 %.
+
+270
+00:27:53,640 --> 00:27:55,840
+Schau, das System arbeitet.
+
+271
+00:27:56,460 --> 00:27:57,340
+Nach Frequenz.
+
+272
+00:28:01,120 --> 00:28:02,860
+Ich ändere die Frequenz.
+
+273
+00:28:04,600 --> 00:28:07,620
+Du siehst, Flackern passiert.
+
+274
+00:28:08,560 --> 00:28:09,700
+Jetzt 20 Hz.
+
+275
+00:28:11,820 --> 00:28:13,280
+26 Hz.
+
+276
+00:28:14,320 --> 00:28:17,260
+Solch ein Oszillogram in Form von Burst-Betrieb.
+
+277
+00:28:18,260 --> 00:28:18,840
+Das
+
+278
+00:28:22,990 --> 00:28:25,330
+ist unsere Frequenz, die im Inneren ist.
+
+279
+00:28:26,070 --> 00:28:29,690
+325 kHz im Burst.
+
+280
+00:28:32,820 --> 00:28:35,980
+Und ich mache Temperaturkontrolle.
+
+281
+00:28:38,160 --> 00:28:39,200
+Das heißt, alles arbeitet.
+
+282
+00:28:39,360 --> 00:28:44,480
+Als ich mich davon überzeugt habe, gehe ich schon zum Test an der Drossel über.
+
+283
+00:28:45,060 --> 00:28:47,300
+Ich habe die Drossel anstelle der Lampe installiert.
+
+284
+00:28:47,420 --> 00:28:51,100
+Die Drossel besteht aus 8 Windungen Audiokabel.
+
+285
+00:28:51,100 --> 00:28:54,180
+An einem 110er Rohr.
+
+286
+00:28:55,920 --> 00:29:00,040
+Dieselbe Reihenfolge von Aktionen mit der Drossel.
+
+287
+00:29:00,140 --> 00:29:04,480
+Hier solltest du vorsichtiger sein — wenn die Lampe einen festen Widerstand hat.
+
+288
+00:29:05,680 --> 00:29:11,360
+Dann hängt der Widerstand dieser Drossel schon auch von der Frequenz ab.
+
+289
+00:29:11,560 --> 00:29:14,520
+Eine Drosselspule hat reaktiven Widerstand.
+
+290
+00:29:14,720 --> 00:29:20,200
+Also bei der Frequenz, bei der ich arbeiten werde, habe ich schon ungefähr die Parameter herausgefunden.
+
+291
+00:29:20,200 --> 00:29:22,440
+Aber der Aktionsalgorithmus ist auch so.
+
+292
+00:29:22,540 --> 00:29:25,880
+Setze das Oszilloskop, schau das Oszillogram, das es geben wird.
+
+293
+00:29:26,400 --> 00:29:29,160
+Und kontrolliere ohne Ausnahme die Treibertemperatur.
+
+294
+00:29:29,620 --> 00:29:32,580
+Jetzt erhöhe ich sanft die Spannung.
+
+295
+00:29:33,320 --> 00:29:36,340
+Auch 50-70 Volt.
+
+296
+00:29:37,480 --> 00:29:40,660
+Siehe das Oszillogram direkt an der Drossel.
+
+297
+00:29:41,400 --> 00:29:44,260
+Und kontrolliere die Temperatur.
+
+298
+00:29:46,160 --> 00:29:49,060
+Du siehst, Erwärmung ist vorhanden, aber sie ist moderat.
+
+299
+00:29:49,060 --> 00:29:51,240
+Wir können mehr Spannung hinzufügen.
+
+300
+00:29:56,180 --> 00:29:58,240
+In der Größenordnung von 100 Grad.
+
+301
+00:30:00,420 --> 00:30:02,620
+Auch ich mache Kontrolle.
+
+302
+00:30:05,200 --> 00:30:08,940
+Bei 100 Grad begann der Treiber sich zu erwärmen.
+
+303
+00:30:10,240 --> 00:30:13,020
+Ich werde nicht höher gehen im kontinuierlichen Modus.
+
+304
+00:30:13,920 --> 00:30:16,020
+Solch ein Oszillogram haben wir.
+
+305
+00:30:16,920 --> 00:30:23,640
+Ich empfehle, auf der Oberfläche dieses Treibers, wenn alle Abstimmungsarbeiten beendet sind.
+
+306
+00:30:23,720 --> 00:30:24,360
+Einen Kühlkörper anzubringen.
+
+307
+00:30:24,920 --> 00:30:27,220
+Das verbessert seine Wärmeabfuhr.
+
+308
+00:30:28,020 --> 00:30:30,960
+Auf Wärmeleitpaste, von oben aufsetzen und fest andrücken.
+
+309
+00:30:32,280 --> 00:30:33,520
+Das beobachtet.
+
+310
+00:30:33,740 --> 00:30:45,360
+Und jetzt schon das System in den Modulationsmodus umschalten, können wir die Spannung an den Leistungsschaltern direkt erhöhen.
+
+311
+00:30:45,480 --> 00:30:48,060
+Und damit werden wir die Drossel gut schwingen.
+
+312
+00:30:49,400 --> 00:30:55,680
+Der Abstimmungsprozess, wenn wir direkt mit der Drossel ohne Tesla arbeiten, ist ziemlich einfach.
+
+313
+00:30:55,820 --> 00:30:59,060
+Wir schauen, kontrollieren Temperatur, Verbrauch.
+
+314
+00:31:00,060 --> 00:31:11,060
+Und wenn wir schon mit Tesla bei seiner Resonanzfrequenz arbeiten, in solch einem kontinuierlichen Modus, gibt es ziemlich gefährliche Momente, weil Tesla verbrauchen wird.
+
+315
+00:31:11,900 --> 00:31:16,060
+Aber das werde ich in den nächsten Videos des Prozesses dieser Abstimmungen zeigen.
+
+316
+00:31:17,040 --> 00:31:18,280
+Wir kommen zu ihnen.
+
+317
+00:31:18,360 --> 00:31:20,920
+Jetzt der Test im Modulationsmodus.
+
+318
+00:31:21,320 --> 00:31:33,200
+Der Sinn des Tests des an der Drossel arbeitenden Geräts im Modulationsmodus ist derselbe — verfolge den Temperaturmodus des Treibers und bei welchen Spannungen seine Erwärmung passiert.
+
+319
+00:31:33,960 --> 00:31:38,100
+Ich lege Modulation mit Frequenz 1 kHz an.
+
+320
+00:31:38,360 --> 00:31:41,280
+Modulierende Impulsdauer 10 %.
+
+321
+00:31:42,060 --> 00:31:43,840
+Ich erhöhe die Spannung.
+
+322
+00:31:45,080 --> 00:31:48,620
+Gleicher Algorithmus — 50-60 Volt.
+
+323
+00:31:49,040 --> 00:31:50,420
+Ich mache Kontrolle.
+
+324
+00:31:51,900 --> 00:31:54,820
+Übrigens, damit musst du vorsichtig sein, nicht zu klettern.
+
+325
+00:31:55,540 --> 00:32:06,600
+Dort an den Anschlüssen des oberen Arms, hier wo wir Pin 6 haben, die Bootstrap-Diode.
+
+326
+00:32:07,540 --> 00:32:17,940
+Alles verbunden mit dem Schalter des oberen Arms des Treibers — er steht unter hohem Potenzial, gehe nicht in diese Punkte.
+
+327
+00:32:18,480 --> 00:32:21,160
+Also beachte Vorsicht.
+
+328
+00:32:22,380 --> 00:32:25,700
+Oder verwende ein Pyrometer, wenn verfügbar.
+
+329
+00:32:27,780 --> 00:32:30,560
+Temperatur akzeptabel, steigt nicht.
+
+330
+00:32:32,060 --> 00:32:34,020
+Hier haben wir solch einen Verbrauch.
+
+331
+00:32:36,220 --> 00:32:37,580
+100 Volt.
+
+332
+00:32:38,980 --> 00:32:42,360
+Oszillogram-Amplitude wächst.
+
+333
+00:32:43,060 --> 00:32:47,280
+Solch ein Burst kommt heraus.
+
+334
+00:32:49,640 --> 00:32:55,280
+Schau — auch im akzeptablen Temperaturbereich, leicht über Raumtemperatur.
+
+335
+00:32:56,920 --> 00:32:58,620
+150 Volt.
+
+336
+00:33:01,960 --> 00:33:04,120
+Bemerkenswerte Erwärmung wird nicht beobachtet.
+
+337
+00:33:06,840 --> 00:33:09,980
+Hier schon 200 Volt lege ich an.
+
+338
+00:33:13,550 --> 00:33:17,850
+Erinnerung, dass die Frequenz jetzt 325 kHz angelegt ist.
+
+339
+00:33:18,010 --> 00:33:22,030
+Das ist die Frequenz meiner Tesla-Spule, dafür abgestimmt.
+
+340
+00:33:22,890 --> 00:33:25,030
+Und ich verfolge diese Parameter.
+
+341
+00:33:26,130 --> 00:33:31,770
+Bei 200 Volt begann der Treiber sich leicht zu erwärmen.
+
+342
+00:33:32,510 --> 00:33:34,150
+Jetzt lege ich 250 an.
+
+343
+00:33:37,430 --> 00:33:39,630
+Verbrauch wuchs leicht.
+
+344
+00:33:43,370 --> 00:33:48,010
+Erwärmung ist so unbedeutend, etwa 40 Grad in diesem Modus.
+
+345
+00:33:48,770 --> 00:33:52,010
+8 Windungen an einem 110er Rohr, Audiokabel.
+
+346
+00:33:53,650 --> 00:33:58,670
+Naja, und ich lege schon das Maximum an, das möglich ist, 300 V meines Netzteils.
+
+347
+00:34:00,170 --> 00:34:00,830
+Amplitude.
+
+348
+00:34:06,680 --> 00:34:11,300
+Temperatur steigt nicht — das heißt, ich schließe, dass alles in Ordnung ist in diesem Modus.
+
+349
+00:34:12,300 --> 00:34:20,240
+Jetzt haben wir unsere Kondensatoren auf eine Amplitude von 300 V geladen.
+
+350
+00:34:21,880 --> 00:34:27,780
+Unser Paar, das im Zentrum agiert, macht 150 V.
+
+351
+00:34:27,860 --> 00:34:30,020
+Direkt an die Drossel kommutiert.
+
+352
+00:34:30,540 --> 00:34:36,160
+Jetzt schau, wie sparsam die Schaltung in diesem Modus arbeitet.
+
+353
+00:34:36,160 --> 00:34:43,620
+Ich werde scharf die Versorgungsspannungslieferung stoppen und das Verblassen des Oszillogramms betrachten.
+
+354
+00:34:44,380 --> 00:34:47,220
+Ich nehme die Spannung jetzt auf null.
+
+355
+00:34:48,900 --> 00:34:52,500
+Und schau, wie sanft der Abklang passiert.
+
+356
+00:34:57,800 --> 00:35:01,260
+Das heißt, das System hat sich als ziemlich sparsam erwiesen.
+
+357
+00:35:02,460 --> 00:35:06,580
+Was wir zum Schwingen des Tesla-Transformators brauchen.
+
+358
+00:35:06,580 --> 00:35:09,380
+Erinnerung, dass wir keinen großen Verbrauch brauchen.
+
+359
+00:35:09,980 --> 00:35:17,660
+Wir haben keine Tesla-Show, aber wir haben keine Aufgabe, große Streamer, Licht-Geräusch-Effekte zu erzeugen.
+
+360
+00:35:18,200 --> 00:35:22,780
+Also ist die Schaltung speziell für die Arbeit im modulierten Modus entwickelt.

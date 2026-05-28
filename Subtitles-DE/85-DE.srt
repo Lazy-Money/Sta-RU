@@ -1,0 +1,1331 @@
+1
+00:00:00,000 --> 00:00:04,300
+Guten Tag, liebe Abonnenten und Zuschauer meines Kanals.
+
+2
+00:00:04,940 --> 00:00:14,960
+Dieses Video wird der Berechnung des Tesla-Transformators, der Berechnung seiner Drossellänge und anderen kleinen Tricks gewidmet sein.
+
+3
+00:00:15,060 --> 00:00:18,120
+Ich werde dir zeigen, wie man das in Online-Rechnern berechnet.
+
+4
+00:00:19,740 --> 00:00:27,400
+Das wird ein Video als Ergänzung zu meinem vorherigen Video über die Tesla-Spulen-Berechnung sein.
+
+5
+00:00:27,400 --> 00:00:34,620
+Weil eine große Anzahl Fragen an den Kanal auf YouTube kommt.
+
+6
+00:00:34,980 --> 00:00:40,480
+Es gibt sogar solche Fragen: "Berechne mir einen Tesla-Transformator, ich bin bereit, dich zu bezahlen."
+
+7
+00:00:41,140 --> 00:00:43,420
+Ich beginne damit: Es besteht keine Notwendigkeit, mich zu bezahlen.
+
+8
+00:00:44,220 --> 00:00:48,420
+Dieses Wissen hat Tesla selbst kostenlos der ganzen Menschheit gegeben.
+
+9
+00:00:49,580 --> 00:00:51,660
+Und so sollte es sein.
+
+10
+00:00:52,200 --> 00:01:04,220
+Also, der erste Punkt wird die Aussage sein, dass die Arbeitsfrequenz des Tesla-Transformators, in diesem Fall in kHz, die Länge seines Leiters bestimmt.
+
+11
+00:01:04,980 --> 00:01:07,720
+Das war und wird so, und es ist unveränderlich.
+
+12
+00:01:08,020 --> 00:01:47,600
+Wenn du in einigen Videos siehst, dass eine Person, zum Beispiel, einen Tesla-Transformator gewickelt hat, eine Drossel willkürlich darauf gewickelt hat, solch ein System zusammengebaut hat, es an einen Labor-Signalgenerator angeschlossen hat und an dieser Drossel hier die Frequenz auswählt und dir am Oszillogram zeigt, dass er die maximale Sinusamplitude hat — dann weiß diese Person nicht, wie ein Tesla-Transformator gemacht wird.
+
+13
+00:01:48,550 --> 00:01:54,780
+Er zeigt dir in diesem Fall die LC-Resonanzfrequenz dieser Spule, nicht mehr als das.
+
+14
+00:01:55,540 --> 00:02:01,640
+In Ausnahmefällen vermutet die Person das vielleicht nicht einmal selbst.
+
+15
+00:02:01,860 --> 00:02:25,860
+Diese Spule mag tatsächlich in diesem Moment arbeiten, das passt einfach so, dass die Länge des ganzen Leiters, der auf dieser Spule gewickelt ist — bei ihm passte nach Aufbau der Drahtdurchmesser, Rahmendurchmesser, Wickelhöhe so, dass die LC-Resonanzfrequenz nahe an der Frequenz auf der Leiterlänge ist.
+
+16
+00:02:26,820 --> 00:02:31,560
+Also kann das die Person persönlich zur Verwirrung führen.
+
+17
+00:02:32,380 --> 00:02:40,980
+Also wenn du solch einen Moment in einem Video gesehen hast, vergib eine Million Daumen runter dort, wirf damit, womit du willst.
+
+18
+00:02:40,980 --> 00:02:47,700
+Scherz natürlich, aber die Person wird irgendwann selbst zum normalen Verständnis kommen, wenn sie arbeitet.
+
+19
+00:02:49,000 --> 00:02:51,440
+Wie wird diese Frequenz bestimmt?
+
+20
+00:02:55,620 --> 00:03:04,400
+Zuerst wird ihr Wert davon ausgehen, welche Elementebasis wir haben, um diese Frequenz in kHz erzeugen zu können.
+
+21
+00:03:04,940 --> 00:03:14,460
+Wenn wir, sagen wir, an Funkenstrecken arbeiten, kommt es sehr gut heraus, solch einen Tesla-Transformator auf seine Resonanzfrequenz zu bringen.
+
+22
+00:03:15,920 --> 00:03:29,540
+Aber wenn wir an Halbleitertechniken arbeiten, dann haben wir erhebliche Einschränkungen in der Arbeitsfrequenz, und die Steuerelektronik ist ebenfalls eingeschränkt.
+
+23
+00:03:30,080 --> 00:03:40,660
+Also zu Beginn, wenn du deinen ersten Tesla-Transformator machst, ist die empfohlene Frequenz ungefähr im Bereich von 200 bis 500 kHz.
+
+24
+00:03:41,220 --> 00:03:51,540
+Dafür ist praktisch alles jetzt verfügbar, und ich habe die Schaltungen auf meinem Kanal gegeben, damit solch ein Tesla-Transformator optimal arbeitet.
+
+25
+00:03:52,760 --> 00:04:00,420
+Zum Beispiel habe ich die Frequenz bestimmt, bei der ich arbeiten werde — sagen wir, ich werde bei 200 kHz machen.
+
+26
+00:04:00,420 --> 00:04:04,060
+Zum Beispiel kannst du eine beliebige von 200 bis 500 nehmen.
+
+27
+00:04:05,240 --> 00:04:12,620
+Jetzt müssen wir bestimmen, welche Wellenlänge wir für diese Frequenz haben werden.
+
+28
+00:04:12,800 --> 00:04:16,460
+Sagen wir, wir haben noch nichts gekauft, keinen Draht, keinen Rahmen.
+
+29
+00:04:17,340 --> 00:04:21,020
+Das ist jetzt eine Gleichung mit Unbekannten, und wir bestimmen.
+
+30
+00:04:22,520 --> 00:04:38,040
+Jetzt gehe ich zum Online-Rechner, der für uns die Wellenlänge für 200 kHz berechnen kann, oder das so machen, wie ich es in meinem vorherigen Video über die Tesla-Transformator-Berechnung nach Leiterlänge gezeigt habe.
+
+31
+00:04:38,860 --> 00:04:44,900
+In diesem Fall ging ich zum Online-Rechner auf der Seite von Funkamateuren der Region Tula.
+
+32
+00:04:45,040 --> 00:04:45,760
+Gute Seite.
+
+33
+00:04:46,600 --> 00:04:57,220
+Und hier ist der Online-Rechner, der dir erlaubt, die Wellenlänge aus ihrer Frequenz zu berechnen oder die Frequenz aus einer gegebenen Länge in Metern zu berechnen.
+
+34
+00:04:57,220 --> 00:04:58,900
+Lass uns berechnen.
+
+35
+00:04:59,120 --> 00:05:03,720
+Wir haben bestimmt, dass unsere Frequenz 200 kHz sein wird.
+
+36
+00:05:07,490 --> 00:05:09,870
+Und drücke berechnen.
+
+37
+00:05:10,350 --> 00:05:12,170
+Wir bekommen 1500 m.
+
+38
+00:05:13,170 --> 00:05:18,710
+200 kHz entsprechen für uns 1500 m.
+
+39
+00:05:19,110 --> 00:05:28,290
+Damit wir einen Viertelwellenresonator bekommen, müssen wir diese Länge von 1500 m durch 4 teilen.
+
+40
+00:05:28,290 --> 00:05:36,410
+Und wir bekommen, wenn du teilst, 375 m.
+
+41
+00:05:37,170 --> 00:05:44,930
+Also haben wir die Leiterlänge bekommen, die wir auf unseren zukünftigen Rahmen legen sollten.
+
+42
+00:05:45,110 --> 00:05:49,650
+Jetzt ist die Zeit gekommen, den Rahmendurchmesser zu bestimmen.
+
+43
+00:05:50,930 --> 00:05:55,110
+Es gibt viele Plastikrahmen, einschließlich Abwasserrohren.
+
+44
+00:05:55,110 --> 00:06:01,410
+Die verfügbaren Rohre sind Durchmesser 110 mm, 75 mm, 50 mm.
+
+45
+00:06:03,550 --> 00:06:08,170
+Lass uns unsere Spule für zwei gängige Rahmen berechnen.
+
+46
+00:06:08,250 --> 00:06:11,770
+110 mm und 75 mm entsprechend.
+
+47
+00:06:12,450 --> 00:06:19,150
+Wer Papprahmen hat, das werden die besten Rahmen sein, du kannst für sie berechnen.
+
+48
+00:06:19,250 --> 00:06:23,330
+Du musst den Durchmesser genau mit einem Messschieber messen.
+
+49
+00:06:23,330 --> 00:06:26,130
+Für jetzt berechnen wir für das 110er Rohr.
+
+50
+00:06:26,610 --> 00:06:32,690
+Wir haben bestimmt, der Durchmesser beträgt 110 mm.
+
+51
+00:06:34,030 --> 00:06:43,370
+Jetzt müssen wir die Windungslänge herausfinden, die in eine Umdrehung an diesem 110-mm-Rohr passt.
+
+52
+00:06:43,470 --> 00:06:52,690
+Dafür verwenden wir die Standardformel aus dem Schulmathematikkurs zur Bestimmung des Umfangs.
+
+53
+00:06:52,690 --> 00:06:55,030
+Diese Formel sieht so aus.
+
+54
+00:06:55,170 --> 00:07:06,950
+Umfang ist gleich der Zahl π multipliziert mit dem Durchmesser, wobei π für uns 3,14 ist.
+
+55
+00:07:08,990 --> 00:07:11,890
+Mache die Mathematikberechnungen.
+
+56
+00:07:14,790 --> 00:07:23,610
+3,14 multipliziert mit 0,11.
+
+57
+00:07:23,790 --> 00:07:26,330
+Ich habe Millimeter in Meter umgerechnet.
+
+58
+00:07:32,110 --> 00:07:39,150
+Wir bekommen 0,345 m.
+
+59
+00:07:40,150 --> 00:07:47,970
+Jetzt haben wir die Windungslänge für das 110er Rohr.
+
+60
+00:07:48,570 --> 00:07:59,450
+Der nächste Moment ist, wir bestimmen, welche Windungszahl bei dieser Leiterlänge wir am 110er Rohr haben werden.
+
+61
+00:08:00,240 --> 00:08:12,790
+Wir nehmen unsere 375 m und teilen sie durch die berechnete Windungslänge von 0,345.
+
+62
+00:08:14,210 --> 00:08:23,030
+Und wir bekommen, dass wir eine Windungszahl gleich 1087 Stück haben.
+
+63
+00:08:23,030 --> 00:08:29,810
+Die nächste Phase ist, wir bestimmen, mit welchem Leiter wir unsere Spule wickeln werden.
+
+64
+00:08:30,910 --> 00:08:35,610
+Ich werde zur Berechnung einen Leiter nehmen, der gängig ist.
+
+65
+00:08:36,110 --> 00:08:41,670
+Sein Durchmesser beträgt 0,25 mm.
+
+66
+00:08:41,990 --> 00:08:44,150
+Das ist der Kerndurchmesser nach Kupfer.
+
+67
+00:08:44,950 --> 00:08:49,150
+Und nach Lack beträgt er 0,26 mm.
+
+68
+00:08:50,370 --> 00:08:53,610
+Gängiger und preiswerter Draht.
+
+69
+00:08:53,990 --> 00:09:02,830
+Wenn du im Voraus gekauften Draht hast oder irgendeinen vorhanden, gibst du seinen Durchmesser hier ein.
+
+70
+00:09:03,110 --> 00:09:07,630
+Miss die Größe nach Lack, wünschenswert mit einem Mikrometer.
+
+71
+00:09:09,210 --> 00:09:11,990
+Jetzt gehen wir zum nächsten Online-Rechner über.
+
+72
+00:09:12,190 --> 00:09:16,710
+Dieser Online-Rechner befindet sich auf der Seite von Vyacheslav Gorchilin.
+
+73
+00:09:19,820 --> 00:09:27,810
+Und er heißt "Berechnung einer Einlagenspule bei 1,25-Welle unter Berücksichtigung der Erdungskapazität".
+
+74
+00:09:28,930 --> 00:09:34,790
+Jetzt interessieren wir uns für diese Parameter, die wir eingeben werden.
+
+75
+00:09:36,410 --> 00:09:39,970
+Und der Rechner wird entsprechend für uns berechnen.
+
+76
+00:09:40,870 --> 00:09:44,750
+Also, erster Punkt für uns — Wickelhöhe in Millimetern.
+
+77
+00:09:44,910 --> 00:09:46,890
+Für jetzt kennen wir diesen Punkt nicht.
+
+78
+00:09:46,890 --> 00:09:49,230
+Wickeldurchmesser in Millimetern.
+
+79
+00:09:49,390 --> 00:09:55,270
+Wir haben bestimmt, dass unser Rohrdurchmesser 110 mm beträgt.
+
+80
+00:09:56,170 --> 00:09:57,130
+Windungszahl.
+
+81
+00:09:57,310 --> 00:10:00,110
+Die Windungszahl haben wir tatsächlich berechnet.
+
+82
+00:10:00,910 --> 00:10:05,470
+Bei uns sind es 1087 Stück.
+
+83
+00:10:07,510 --> 00:10:10,150
+Und hier wurde schon eine Höhe eingegeben.
+
+84
+00:10:10,390 --> 00:10:13,150
+200 mm, das heißt 20 cm.
+
+85
+00:10:13,150 --> 00:10:15,930
+Schau jetzt diese Spalte an.
+
+86
+00:10:16,530 --> 00:10:19,350
+Hier ist "Spulengeometrie" markiert.
+
+87
+00:10:19,910 --> 00:10:26,250
+Und wir sehen, dass der Leiter für uns vom Programm berechnet 0,18 mm ist.
+
+88
+00:10:26,990 --> 00:10:34,470
+Aber im Voraus haben wir uns geeinigt, dass ich die Spule unter einem Leiter von 0,25 mm berechne.
+
+89
+00:10:35,870 --> 00:10:41,950
+Jetzt interessiert uns der Moment, damit hier, Wickelschritt, unser Leiter erscheint.
+
+90
+00:10:41,950 --> 00:10:43,650
+Der Schritt nach Lack wird 0,26 sein.
+
+91
+00:10:44,130 --> 00:10:48,770
+Dafür ändere ich die Spulen-Wickelhöhe.
+
+92
+00:10:49,290 --> 00:10:50,810
+Das ist in Millimetern.
+
+93
+00:10:52,110 --> 00:10:57,350
+Sagen wir, ich stelle 280 mm ein.
+
+94
+00:10:58,050 --> 00:10:59,690
+Oh, hier sofort genau getroffen.
+
+95
+00:11:00,790 --> 00:11:04,650
+Du siehst, der Wickelschritt in mm beträgt 0,26.
+
+96
+00:11:06,930 --> 00:11:09,830
+Unsere Spulengeometrie erschien.
+
+97
+00:11:09,830 --> 00:11:16,810
+Das heißt Höhe 280 und bei entsprechendem Durchmesser 110.
+
+98
+00:11:18,050 --> 00:11:23,230
+Der nächste Punkt, der uns interessiert, ist diese zweite Spalte.
+
+99
+00:11:23,670 --> 00:11:25,770
+Resonanzfrequenz in MHz.
+
+100
+00:11:25,890 --> 00:11:29,330
+Du siehst hier 339 kHz.
+
+101
+00:11:30,670 --> 00:11:37,190
+Und wir haben unsere Spule bei der Leiterlänge berechnet — wenn du dich erinnerst, haben wir eine Frequenz von 200 kHz.
+
+102
+00:11:37,190 --> 00:11:44,090
+Dieser Online-Rechner erlaubt dir, zusätzliche externe Kapazität einzugeben.
+
+103
+00:11:44,370 --> 00:11:50,310
+Ich gehe zu diesem Punkt "Externe Kapazität", setze eine Markierung in der Spalte "Vorhanden".
+
+104
+00:11:50,890 --> 00:11:59,910
+Und für uns kommen unter den Parametern der Spalten heraus, welcher Typ unsere isolierte Kapazität sein wird.
+
+105
+00:11:59,990 --> 00:12:03,870
+Das ist ein Toroid, eine Kugel oder im Allgemeinen ein paralleler Kondensator.
+
+106
+00:12:03,870 --> 00:12:09,570
+Aber wir interessieren uns nicht für einen parallelen Kondensator, sondern entweder für einen Toroid oder eine Kugel.
+
+107
+00:12:10,030 --> 00:12:12,510
+Lass uns zuerst für eine Kugel berechnen.
+
+108
+00:12:14,250 --> 00:12:17,950
+Ich gebe hier ein, beginnend bei 100 mm.
+
+109
+00:12:20,550 --> 00:12:21,590
+100 mm.
+
+110
+00:12:21,670 --> 00:12:25,470
+Du siehst, unsere Frequenz beträgt 235 kHz.
+
+111
+00:12:25,710 --> 00:12:26,030
+Niedrig.
+
+112
+00:12:27,030 --> 00:12:29,690
+Gebe 140 ein.
+
+113
+00:12:31,390 --> 00:12:32,790
+214.
+
+114
+00:12:33,450 --> 00:12:34,550
+Immer noch niedrig.
+
+115
+00:12:35,930 --> 00:12:36,790
+160.
+
+116
+00:12:39,170 --> 00:12:42,210
+Schon 205, sehr nahe.
+
+117
+00:12:43,570 --> 00:12:45,850
+165 mm.
+
+118
+00:12:47,350 --> 00:12:48,230
+203.
+
+119
+00:12:50,330 --> 00:12:51,210
+170.
+
+120
+00:12:51,970 --> 00:12:56,970
+Hier ungefähr haben wir unsere berechneten 201 kHz getroffen.
+
+121
+00:12:57,550 --> 00:13:12,890
+Das heißt, damit unsere Spule eine Kombination der LC-Resonanzfrequenz mit der Frequenz an der Leiterlänge hat, müssen wir an ihrem heißen Ende eine isolierte Kapazität mit Durchmesser 170 mm installieren.
+
+122
+00:13:12,890 --> 00:13:21,390
+Generell zählt das Programm ziemlich genau, und je größer die Abmessungen deiner Spule, desto genauer berechnet es.
+
+123
+00:13:21,490 --> 00:13:30,770
+Bei kleinen Spulen an 50-mm-Rahmen gibt es Fehler im Bereich von 15-20 %.
+
+124
+00:13:30,770 --> 00:13:40,030
+Naja, das ist nicht so, dass es uns aufregen sollte, weil wir in der Praxis alles mit zusätzlicher isolierter Kapazität anpassen.
+
+125
+00:13:40,030 --> 00:13:42,110
+Jetzt schalte ich auf einen Toroid um.
+
+126
+00:13:44,050 --> 00:13:50,830
+Ich erinnerte mich, dass wir im vorherigen Fall eine Kapazität von 9,5 pF für die Kugel hatten.
+
+127
+00:13:52,570 --> 00:13:54,130
+Und ich gebe die Parameter hier ein.
+
+128
+00:13:54,310 --> 00:14:01,130
+Außendurchmesser des Toroids, sagen wir in Ansicht 300 mm, 30 cm.
+
+129
+00:14:01,130 --> 00:14:11,010
+Und wir werden unser Toroidrohr aus einer Wellschlauch-Durchmesser 80 mm machen.
+
+130
+00:14:12,470 --> 00:14:17,490
+Du siehst, Frequenz 180 kHz, das heißt, wir haben verfehlt.
+
+131
+00:14:18,010 --> 00:14:26,790
+Der Toroid ist gut darin, dass durch Ändern seines Außendurchmessers — effektiv das Strecken des Toroidrohrs — wir seine Kapazität ändern.
+
+132
+00:14:26,790 --> 00:14:33,390
+Hier siehst du, wir haben 13,1 pF, und wir müssen 9,5 pF bekommen.
+
+133
+00:14:33,690 --> 00:14:41,250
+Dafür reduzieren wir den Außendurchmesser, zum Beispiel auf 280 mm.
+
+134
+00:14:42,250 --> 00:14:47,370
+Die Frequenz wächst, ich setze 260.
+
+135
+00:14:50,270 --> 00:14:54,790
+Also, 189 bei 250.
+
+136
+00:14:56,810 --> 00:15:02,150
+Immer noch niedrig, 235.
+
+137
+00:15:03,890 --> 00:15:06,010
+Also, 220.
+
+138
+00:15:07,530 --> 00:15:20,870
+Und wir sehen, dass die Kapazität unseres Toroids wieder dieselbe wie an der Kugel wurde — 9,5 pF — und die Frequenz zum selben Wert wie mit der installierten Kugel zurückkehrte.
+
+139
+00:15:21,770 --> 00:15:27,030
+Wir haben hier die ungefähren geometrischen Größen eines Toroids für unsere zukünftige Spule ausgewählt.
+
+140
+00:15:27,830 --> 00:15:28,310
+Gut.
+
+141
+00:15:29,470 --> 00:15:36,550
+Jetzt lass uns den Untermenüpunkt "Wellenausbreitungsgeschwindigkeitskoeffizient" betrachten.
+
+142
+00:15:38,070 --> 00:15:40,690
+Achte darauf, dass es jetzt eins ist.
+
+143
+00:15:41,230 --> 00:15:53,250
+Wenn diese Spalte in der Programmberechnung als eins herauskommt, passiert für uns eine volle Kombination der LC-Resonanzfrequenz der Spule mit der Frequenz der Welle an der Leiterlänge.
+
+144
+00:15:53,250 --> 00:16:01,090
+Wenn wir zusätzliche Kapazitäten entfernen, siehst du, dass der Wellenausbreitungskoeffizient hier 1,7 beträgt.
+
+145
+00:16:02,590 --> 00:16:14,050
+Also wenn du deine Spulen berechnest, musst du danach streben, dass diese Zahl, die jetzt hier 1,7 ist, im Bereich 1,3 bis 1,5 wäre.
+
+146
+00:16:14,430 --> 00:16:17,190
+Dann wird es die optimalste Spule herauskommen.
+
+147
+00:16:17,190 --> 00:16:22,330
+Ich habe die in Online-Rechner-Berechnungen erhaltenen Werte auf das Blatt übertragen.
+
+148
+00:16:23,010 --> 00:16:29,790
+Das ist die Spulengeometrie, die Geometrie der isolierten Kapazitäten, Ausbreitungskoeffizient 1,7.
+
+149
+00:16:30,190 --> 00:16:36,510
+Und jetzt mache die Berechnung wie wir früher vereinbart für ein Rohr mit Außendurchmesser 75 mm.
+
+150
+00:16:36,930 --> 00:16:40,370
+Drücke auch durch die Formel die Windungslänge aus.
+
+151
+00:16:41,250 --> 00:16:44,910
+Die Länge stellt sich heraus zu 0,236 m.
+
+152
+00:16:45,910 --> 00:16:52,750
+Jetzt unsere 375 m teilen wir durch die Windungslänge, wir bekommen die Windungszahl.
+
+153
+00:16:53,170 --> 00:17:01,130
+Jetzt können wir auch zum Online-Rechner wechseln und die Geometrie und Frequenzen unserer Spule berechnen.
+
+154
+00:17:01,270 --> 00:17:03,810
+Unsere neuen Daten einbringen.
+
+155
+00:17:04,810 --> 00:17:12,010
+Also, Wickeldurchmesser ändere ich auf 75 mm.
+
+156
+00:17:12,810 --> 00:17:23,890
+Windungszahl auf unsere neuen Daten, 1589 Windungen.
+
+157
+00:17:26,050 --> 00:17:34,410
+Bei Höhe 280 mm, Draht 0,18 mm — wir haben uns geeinigt, 0,26 mm nach Lack zu wickeln.
+
+158
+00:17:34,570 --> 00:17:36,830
+Das heißt, ich ändere diese Höhe.
+
+159
+00:17:38,230 --> 00:17:44,530
+Zum Beispiel 350 mm, Draht 0,22 mm.
+
+160
+00:17:44,850 --> 00:17:46,650
+Sollte noch erhöht werden.
+
+161
+00:17:47,810 --> 00:17:50,610
+380 mm, Draht 0,24 mm.
+
+162
+00:17:53,570 --> 00:17:58,190
+400 mm, Draht 0,25 mm.
+
+163
+00:18:00,370 --> 00:18:04,330
+420 mm, Draht 0,26 mm.
+
+164
+00:18:04,730 --> 00:18:08,350
+Das ist es, die Geometrie unserer Spule wird ungefähr so sein.
+
+165
+00:18:11,810 --> 00:18:15,820
+Lass uns noch einmal schauen, was die Höhe sein könnte.
+
+166
+00:18:16,970 --> 00:18:28,310
+Die Wickelhöhe des Tesla-Transformators, damit er in optimalen Parametern herauskommt, sollte ungefähr im Bereich von vier seiner Durchmesser liegen.
+
+167
+00:18:28,310 --> 00:18:49,370
+Das heißt, wenn wir einen Durchmesser von 75 mm nehmen und ihn mit 4 multiplizieren, bekommen wir 300 mm.
+
+168
+00:18:50,610 --> 00:18:58,590
+Du siehst, unsere Spule kam schon aus diesen erlaubten Parametern heraus.
+
+169
+00:18:59,070 --> 00:19:05,510
+Das ist eine Spule, die schon eine kleinere Güte haben wird, was sich in dieser Spalte widerspiegelt.
+
+170
+00:19:06,610 --> 00:19:11,570
+Du siehst, der Wellenausbreitungsgeschwindigkeitskoeffizient beträgt 2,1.
+
+171
+00:19:12,250 --> 00:19:14,850
+Das heißt, wir haben schon sogar zwei überschritten.
+
+172
+00:19:15,510 --> 00:19:18,070
+Was bedeutet diese Zahl 2,1?
+
+173
+00:19:18,070 --> 00:19:21,870
+Effektiv sind wir aus unseren optimalen Parametern herausgegangen.
+
+174
+00:19:23,390 --> 00:19:29,370
+Unsere Spule ist für uns geometrisch mehr als vier Durchmesser gestreckt.
+
+175
+00:19:29,630 --> 00:19:38,030
+Und jetzt müssen wir in der Praxis diese Geometrie kompensieren, indem wir eine größere isolierte Kapazität hinzufügen.
+
+176
+00:19:39,030 --> 00:19:49,790
+Das heißt, wenn du solch eine Berechnung bekommst, solltest du effektiv den Wickeldurchmesser erhöhen, um unsere Spule zu besserer Geometrie zurückzubringen.
+
+177
+00:19:50,370 --> 00:19:57,050
+Aber da sagen wir der Rahmen nicht verfügbar ist, bedeutet das nicht, dass wir einen Zusammenbruch der Situation haben.
+
+178
+00:19:57,190 --> 00:19:58,990
+Du kannst auch solch eine Spule machen.
+
+179
+00:19:59,070 --> 00:20:01,990
+Aber wir werden uns daran erinnern, dass ihre Güte leicht niedriger sein wird.
+
+180
+00:20:02,910 --> 00:20:07,750
+Jetzt schau, welche isolierte Kapazität wir hier brauchen werden.
+
+181
+00:20:08,270 --> 00:20:09,890
+Zum Beispiel, sagen wir, eine Kugel.
+
+182
+00:20:12,350 --> 00:20:18,130
+Ich gebe eine Kugel ein, wie im vorherigen Parameter, 170 mm.
+
+183
+00:20:18,550 --> 00:20:25,530
+Und du siehst, unsere Frequenz beträgt 242 kHz, und sie sollte 200 sein.
+
+184
+00:20:26,570 --> 00:20:29,210
+Das heißt, was herauskommt.
+
+185
+00:20:29,210 --> 00:20:31,470
+Wir müssen den Kugeldurchmesser erhöhen.
+
+186
+00:20:33,110 --> 00:20:34,510
+200.
+
+187
+00:20:35,450 --> 00:20:36,550
+Niedrig.
+
+188
+00:20:38,450 --> 00:20:39,850
+240.
+
+189
+00:20:40,870 --> 00:20:41,910
+Niedrig.
+
+190
+00:20:44,610 --> 00:20:46,010
+260.
+
+191
+00:20:47,730 --> 00:20:50,370
+Immer noch leicht hinzufügen.
+
+192
+00:20:51,310 --> 00:20:52,710
+265.
+
+193
+00:20:53,090 --> 00:20:53,430
+Also.
+
+194
+00:20:55,870 --> 00:20:57,270
+275.
+
+195
+00:20:58,330 --> 00:21:07,750
+Effektiv kommt die Kugel sogar in der Größe 285 mm heraus.
+
+196
+00:21:08,390 --> 00:21:14,670
+Um auf denselben Parameter wie beim 110er Rohr zu reduzieren — 201 kHz.
+
+197
+00:21:14,770 --> 00:21:17,110
+Das heißt, die Kugel wurde erheblich größer.
+
+198
+00:21:18,110 --> 00:21:20,790
+Dasselbe wird mit der Toroid-Geometrie passieren.
+
+199
+00:21:20,990 --> 00:21:26,570
+Jetzt übertrage ich die Kugel-Parameter für das 75er Rohr.
+
+200
+00:21:30,310 --> 00:21:32,350
+285 mm.
+
+201
+00:21:33,130 --> 00:21:38,290
+Und die Kapazität schon 15,9 pF.
+
+202
+00:21:40,950 --> 00:21:41,470
+Also.
+
+203
+00:21:41,930 --> 00:21:44,990
+Was wird es uns nach Größe für den Toroid zeigen?
+
+204
+00:21:46,370 --> 00:21:47,150
+Dasselbe.
+
+205
+00:21:47,390 --> 00:21:52,350
+Nimm Rohr 80 mm.
+
+206
+00:21:53,350 --> 00:21:57,170
+Jetzt wird unser Durchmesser größer sein.
+
+207
+00:21:58,670 --> 00:22:03,610
+Sagen wir, der Durchmesser wird 320 mm sein.
+
+208
+00:22:05,110 --> 00:22:06,370
+Klein.
+
+209
+00:22:08,350 --> 00:22:09,250
+350.
+
+210
+00:22:11,410 --> 00:22:12,810
+Niedrig.
+
+211
+00:22:14,830 --> 00:22:16,230
+380.
+
+212
+00:22:17,270 --> 00:22:17,830
+Aha.
+
+213
+00:22:18,150 --> 00:22:19,990
+Ein bisschen zu viel.
+
+214
+00:22:19,990 --> 00:22:21,650
+375.
+
+215
+00:22:24,010 --> 00:22:29,450
+Hier ungefähr können wir bei 370 anhalten.
+
+216
+00:22:29,790 --> 00:22:33,270
+Es wird dieselbe Frequenz 201 kHz sein.
+
+217
+00:22:34,390 --> 00:22:38,730
+Ich übertrage die Parameter für den Toroid ebenfalls.
+
+218
+00:22:40,380 --> 00:22:41,610
+Auf das Blatt.
+
+219
+00:22:43,050 --> 00:22:47,830
+Der Außendurchmesser beträgt bei uns schon 370 mm.
+
+220
+00:22:47,830 --> 00:22:51,930
+Solch eine Spule wird sogar geometrisch hässlich aussehen.
+
+221
+00:22:52,350 --> 00:22:57,990
+Das heißt, relativ zur Wicklung wird sie groß sein, ein Toroid obenauf gehockt.
+
+222
+00:22:58,190 --> 00:22:59,750
+Sie wird wie ein Pilz aussehen.
+
+223
+00:23:00,590 --> 00:23:06,010
+Was noch schlecht ist, wenn große Geometrien isolierter Kapazitäten.
+
+224
+00:23:06,730 --> 00:23:18,290
+Solch eine Spule wird mehr elektrische Energie verbrauchen, um ihren Arbeitsspannungsbereich zu erreichen.
+
+225
+00:23:20,070 --> 00:23:21,350
+Erinnere dich auch daran.
+
+226
+00:23:21,550 --> 00:23:24,350
+Du solltest solche Spulen-Geometrien vermeiden.
+
+227
+00:23:25,050 --> 00:23:27,750
+Aber das bedeutet nicht, dass sie nicht funktionieren werden.
+
+228
+00:23:27,970 --> 00:23:29,290
+Wir verlieren im Verbrauch.
+
+229
+00:23:29,310 --> 00:23:33,210
+Ich habe auch die Berechnung für 90-mm-Durchmesser gemacht.
+
+230
+00:23:33,750 --> 00:23:48,210
+Ich denke, dass für das Wickeln bei 200 kHz, und damit wir in die optimalen geometrischen Parameter passen, wenn unsere Spulen-Wickelhöhe ungefähr vier ihrer Durchmesser entspricht.
+
+231
+00:23:48,750 --> 00:23:53,470
+Viertelwellenresonatoren arbeiten sehr gut bei solch einer Geometrie.
+
+232
+00:23:54,830 --> 00:23:57,930
+Hier geht die Berechnung für 90 mm Durchmesser.
+
+233
+00:23:58,250 --> 00:24:01,250
+Wir bekommen 1325 Windungen.
+
+234
+00:24:01,830 --> 00:24:05,310
+Und jetzt schau ihren Wert im Online-Rechner an.
+
+235
+00:24:06,310 --> 00:24:10,770
+Das sind die Parameter für Wickeldurchmesser 90 mm.
+
+236
+00:24:11,250 --> 00:24:12,010
+Unser Draht.
+
+237
+00:24:14,790 --> 00:24:17,810
+Windungszahl und Wickelhöhe.
+
+238
+00:24:18,010 --> 00:24:23,690
+Wenn du 4×9,36 berechnest, dann haben wir hier Wickelhöhe 350 mm.
+
+239
+00:24:24,130 --> 00:24:25,190
+Alles in Ordnung.
+
+240
+00:24:25,190 --> 00:24:34,150
+Jetzt bleibt nur noch, den Außendurchmesser für die Kugel und den Toroid auszuwählen.
+
+241
+00:24:36,490 --> 00:24:39,430
+Sagen wir 250 mm.
+
+242
+00:24:41,290 --> 00:24:43,390
+240 mm.
+
+243
+00:24:46,150 --> 00:24:48,570
+220 mm.
+
+244
+00:24:52,400 --> 00:24:55,740
+Ungefähr 225 mm wird die Kugel sein.
+
+245
+00:24:55,740 --> 00:24:57,140
+Naja, und so weiter.
+
+246
+00:24:58,800 --> 00:25:06,040
+Jetzt, da wir die Berechnungen gemacht haben, können wir bei optimalen Aufbauten anhalten.
+
+247
+00:25:06,620 --> 00:25:16,820
+Noch einmal Erinnerung: Der optimalste Spulenaufbau ist derjenige, der die kleinste isolierte Kapazität haben wird.
+
+248
+00:25:17,300 --> 00:25:22,540
+Aber das hängt alles davon ab, welche Ziele du verfolgst.
+
+249
+00:25:22,540 --> 00:25:32,780
+Wenn du einen Tesla-Transformator für einen Generator machst, dann brauchst du speziell, dass die isolierte Kapazität hier kleiner ist.
+
+250
+00:25:33,200 --> 00:25:37,500
+Weniger Verbrauch der Spule, bis sie ihren Arbeitsmodus erreicht.
+
+251
+00:25:38,400 --> 00:25:53,720
+Und wenn du eine Tesla-Spule speziell für Licht-Geräusch-Effekte, für schöne Streamer machst, dann wirst du dich speziell für eine isolierte Kapazität mit größeren geometrischen Größen hier interessieren.
+
+252
+00:25:54,100 --> 00:25:58,940
+Dann wird sie sich auf ein größeres Potenzial laden, und der Durchschlag wird länger sein.
+
+253
+00:25:59,060 --> 00:26:05,480
+Du solltest das heiße Ende eines Tesla-Transformators auch nicht völlig ohne isolierte Kapazität lassen.
+
+254
+00:26:05,840 --> 00:26:09,640
+Hier musst du die Spule spüren, wenn ich so sagen darf.
+
+255
+00:26:10,460 --> 00:26:21,260
+Schau die Wickelgeometrie selbst an, und wenn du einen kleinen Ball dort einsetzt — sagen wir, du hast ein 110er Rohr und einen Ball von 30 mm — dann wird das auch nicht optimal sein.
+
+256
+00:26:21,760 --> 00:26:25,140
+Das heißt, alles hat seine optimalen Verhältnisse.
+
+257
+00:26:26,280 --> 00:26:34,480
+Du kannst einen großen Toroid nicht auf eine kleine Wickelhöhe setzen, und du kannst auch keinen kleinen Ball auf eine große Wicklung setzen.
+
+258
+00:26:35,520 --> 00:26:37,540
+Strebe danach, das System zu optimieren.
+
+259
+00:26:37,540 --> 00:26:53,340
+Denn diese isolierte Kapazität wird letztendlich der strahlende Teil des Tesla-Transformators für die Wellenprozesse sein, die wir zur Erstellung eines Generators brauchen werden.
+
+260
+00:26:54,000 --> 00:26:58,820
+Generell sind wir mit Online-Rechnern fertig.
+
+261
+00:26:58,940 --> 00:27:03,840
+Jetzt gehen wir zum wichtigen Moment über, wie die Drossellänge zu berechnen ist.
+
+262
+00:27:03,840 --> 00:27:05,200
+Also, Punkt Nummer 2.
+
+263
+00:27:06,340 --> 00:27:20,960
+Der Tesla-Transformator ist für uns ein diskretes System, und seine Diskretheit besteht darin, dass wir die Drossellänge im Verhältnis zur Drahtlänge des Tesla-Transformators berechnen können.
+
+264
+00:27:21,720 --> 00:27:24,200
+Das kann auf zwei Arten gemacht werden.
+
+265
+00:27:25,160 --> 00:27:36,440
+Sagen wir, wir nehmen eine bestimmte Drossellänge in Metern, multiplizieren mit einer ganzen Zahl und bekommen die Gesamtlänge des Tesla-Transformators.
+
+266
+00:27:36,800 --> 00:27:50,220
+Aber dieser Weg ist etwas unbequem, da wir den Tesla-Transformator selbst berechnen müssen, damit er nach unserer Frequenz gut für uns herauskommt, davon ausgehend.
+
+267
+00:27:51,040 --> 00:27:53,700
+Dann handeln wir auf die zweite Weise.
+
+268
+00:27:53,700 --> 00:28:09,780
+Wir können, indem wir die Länge einer am Tesla-Transformator-Rahmen gewickelten Windung kennen, diese Windungslänge mit einer ganzen Zahl multiplizieren, und so bekommen wir die Gesamtlänge der Tesla-Transformator-Drossel.
+
+269
+00:28:10,180 --> 00:28:15,300
+Jetzt zeige ich ein Berechnungsbeispiel für die Drossel unter dem 110er Rohr.
+
+270
+00:28:15,300 --> 00:28:31,120
+Die Frage der Auswahl von Drossel, Durchmesser, Wicklung — sie ist strikt individuell für jeden Tesla-Transformator und hängt davon ab, woran du arbeitest, vom endgültigen Ziel, das du erreichen willst.
+
+271
+00:28:31,700 --> 00:28:44,660
+Ich habe diese Fragen vielen Leuten gestellt, einige konnten mir überhaupt nicht klar antworten, und am identischsten und rational auf diese Fragen antworteten zwei Personen.
+
+272
+00:28:44,660 --> 00:28:51,900
+Das sind Alexander Vladimirovich Romanov und eine Person unter dem Spitznamen im Internet Ruslan X.
+
+273
+00:28:53,000 --> 00:28:57,280
+Beide Personen haben große Praxis im Tesla-Bau.
+
+274
+00:28:58,920 --> 00:29:16,840
+Und wenn man die Momente zusammenfasst, von denen die Leute sprechen, neigen diejenigen, die mehr an Funkenstrecken arbeiten, zur Meinung, dass ein Tesla-Transformator klassisch sein sollte, wie Tesla es zu machen vermacht hat.
+
+275
+00:29:16,980 --> 00:29:35,760
+Das sind nur 1-2 Windungen der Primärwicklung, dickes Kupferrohr oder Stromschiene, deren Länge ausgehend von der Windungslänge des Tesla-Transformators ausgewählt wird.
+
+276
+00:29:35,760 --> 00:29:46,100
+Zum Beispiel die Windungslänge mit 2 multiplizieren und die Gesamtlänge einer Drosselwindung für diesen Transformator bekommen.
+
+277
+00:29:46,100 --> 00:30:10,020
+Und es gibt solche strikt persönlichen Beobachtungen von einigen, dass es sogar eine gewisse Resonanz nach Kupfermasse gibt — zwischen der Kupfermasse im Drosselrohr und der Kupfermasse der Tesla-Transformator-Windungen — die sie beeinflusst.
+
+278
+00:30:10,960 --> 00:30:15,920
+Ich habe diesen Moment nicht überprüft, ich kann persönlich nichts zu dieser Angelegenheit sagen.
+
+279
+00:30:16,560 --> 00:30:36,300
+Der am genauesten festgestellte Moment ist auch, dass die Oberfläche dieses Kupferrohrs oder dieser Stromschiene der Oberfläche der Leiter der Sekundärwicklung des Tesla-Transformators entsprechen sollte, auf die diese Drossel einwirkt.
+
+280
+00:30:36,300 --> 00:30:41,120
+Hier haben wir den nächsten Moment, an dem wir anhalten müssen.
+
+281
+00:30:41,400 --> 00:30:55,540
+Wir müssen verstehen, dass der klassische Transformator in einem Tesla-Transformator-Aufbau nur der Teil seiner Wicklung ist, der sich in der Zone befindet, die von der Drossel beeinflusst wird.
+
+282
+00:30:56,340 --> 00:31:00,360
+Der ganze Rest des Teils ist ausschließlich ein Wellenleiter.
+
+283
+00:31:01,260 --> 00:31:15,580
+Aber wir machen jetzt die Berechnung der Drossellänge für einen Aufbau, der an Halbleiter-Wechselrichtern, Brücken- oder Halbbrückenschaltung arbeiten wird.
+
+284
+00:31:16,160 --> 00:31:34,580
+Und wenn wir uns von Teslas Regeln und anderen Personen leiten lassen, die davon ausgehen, dass für eine Funkenstrecken-Drossel 1-2 Windungen optimal sind, dann wird das eine zu große Last für unsere Halbleitertransistoren sein.
+
+285
+00:31:35,240 --> 00:31:41,800
+Also sollten wir eine größere Menge Draht nach Länge nehmen.
+
+286
+00:31:43,360 --> 00:31:52,740
+Sagen wir, für einen 110er Rahmen würde ich persönlich eine Drosselwicklung auf einem 153er Rahmen in Form eines Zylinders machen.
+
+287
+00:31:52,740 --> 00:32:02,860
+Hier ist die optimale Lücke etwa 2 cm zwischen Tesla-Transformator-Draht und Drosseldraht.
+
+288
+00:32:03,280 --> 00:32:20,160
+Diese Lücke wird nicht nur ausgehend von der Abwesenheit von Durchschlag zur Drossel gewählt, sondern auch ausgehend vom gewünschten Koppelkoeffizienten zwischen der Drossel und den Windungen des Tesla-Transformators, auf die sie einwirkt.
+
+289
+00:32:20,160 --> 00:32:23,780
+Jetzt gehen wir direkt zur Berechnung über.
+
+290
+00:32:24,000 --> 00:32:39,880
+Früher haben wir berechnet, dass für einen Rahmendurchmesser von 110 mm die auf diesen Rahmen zu wickelnde Leiterlänge 345 mm oder 34,5 cm beträgt.
+
+291
+00:32:40,960 --> 00:32:47,680
+Also müssen wir jetzt eine ganze Zahl wählen, mit der wir diese Länge multiplizieren.
+
+292
+00:32:47,760 --> 00:32:50,340
+In diesem Fall blieb ich bei 12.
+
+293
+00:32:51,500 --> 00:33:06,580
+Aufgrund welcher Überlegungen ich es nahm: Da ich ungefähr für ein 110er Rohr eine Drossel an einem 153 mm Rahmen wickeln würde, habe ich auch ungefähr berechnet, dass die Länge einer Umdrehung 48 cm beträgt.
+
+294
+00:33:06,580 --> 00:33:15,820
+Für qualitative Arbeit der Brücken- und Halbbrückenschaltungen liegt die Windungszahl im Bereich von 5-8 Stück.
+
+295
+00:33:17,300 --> 00:33:23,520
+Das sind ungefähr 8 Windungen nach meinen Zählungen, multipliziere mit 50, das sind 4 Meter.
+
+296
+00:33:24,460 --> 00:33:34,460
+Und in diesem Fall habe ich die Windungslänge des Tesla-Transformators mit 12 multipliziert und eine Gesamt-Drossellänge von 4 m 14 cm bekommen.
+
+297
+00:33:35,420 --> 00:33:47,440
+Noch einmal wiederhole ich, diese Drossellänge wird für diesen Tesla-Transformator unverändert sein, unabhängig von der Geometrie der Drosselwicklung.
+
+298
+00:33:47,600 --> 00:33:57,340
+Das heißt, du kannst sie flach, zylindrisch oder in Kegelform legen — das wird die endgültige Länge nicht beeinflussen.
+
+299
+00:33:57,340 --> 00:34:08,300
+Jetzt habe ich schematisch die Brücken- oder Halbbrückenschaltung gezeichnet, wenn wir diese Schalter durch Kondensatoren mit einem Mittelpunkt ersetzen.
+
+300
+00:34:09,100 --> 00:34:21,460
+Also, unsere berechnete Länge von 4,14 m ist die Länge von diesem Punkt zu diesem Punkt, effektiv die Transistor-Anschlüsse.
+
+301
+00:34:21,460 --> 00:34:31,040
+In diese Länge gehen die freien Anschlüsse von der Drossel ein, die zum Brückenblock gehen.
+
+302
+00:34:31,400 --> 00:34:35,840
+Und auch die Anschlüsse, die von den Kondensatoren kommen.
+
+303
+00:34:36,180 --> 00:34:40,640
+All das geht in diese Länge von 4 m 14 cm ein.
+
+304
+00:34:42,060 --> 00:34:47,020
+Hier, dieses Ende der Drossel wird das obere Ende sein.
+
+305
+00:34:47,020 --> 00:35:02,840
+Das heißt mit "oberen" meine ich, wenn wir diese Drossel um den Tesla-Transformator wickeln, das Ende, das zum heißen Ende des Tesla-Transformators gerichtet ist.
+
+306
+00:35:03,320 --> 00:35:09,580
+Das untere Ende entsprechend wird dasjenige sein, das zum kalten Ende des Tesla-Transformators gerichtet ist.
+
+307
+00:35:10,580 --> 00:35:22,640
+Und die Kapazität, die für uns die Resonanz gemeinsam mit der Drossel bestimmt — sie wird am oberen Ende der Drossel platziert.
+
+308
+00:35:23,240 --> 00:35:30,900
+Wenn die Schaltung Halbbrücke ist, dann geht das untere Ende der Drossel zum Mittelpunkt zwischen den Kondensatoren.
+
+309
+00:35:30,900 --> 00:35:33,480
+Also, wir haben die erste Regel verstanden.
+
+310
+00:35:34,720 --> 00:35:42,180
+Die Tesla-Transformator-Drossel korreliert mit der Windungslänge der Sekundärwicklung.
+
+311
+00:35:43,460 --> 00:35:45,340
+Jetzt die zweite Grundregel.
+
+312
+00:35:45,940 --> 00:35:50,760
+Wie der Leiterquerschnitt zum Wickeln der Drossel zu wählen.
+
+313
+00:35:50,760 --> 00:35:57,180
+Letztendlich reduziert sich diese Frage auf das Konzept der Flächenregel.
+
+314
+00:35:58,000 --> 00:36:14,980
+Es stellt sich heraus, dass wir die Oberfläche des Drosseldrahts so nehmen, dass sie ungefähr der Oberfläche der Windungen der Tesla-Transformator-Sekundärwicklung entspricht, auf die diese Drossel einwirkt.
+
+315
+00:36:16,060 --> 00:36:29,980
+Das heißt, wenn wir eine Lücke zwischen den Windungen in der Drossel machen — sagen wir, wir wickeln sie zylindrisch — dann sollte unsere Drossel umso größeren Querschnitt haben, je größer die Lücke ist.
+
+316
+00:36:30,780 --> 00:36:42,100
+Und umgekehrt, wenn wir die Drosselwindungen eng aneinander legen, kann der Drosselquerschnitt nach seiner Oberfläche kleiner sein.
+
+317
+00:36:43,100 --> 00:37:00,040
+Wenn du Draht wählst, der einen größeren Querschnitt nach Oberfläche hat, wird nichts Schlimmes passieren, du kannst nur zu einer Materialüberzahlung kommen.
+
+318
+00:37:00,720 --> 00:37:07,360
+Naja, und wenn der entgegengesetzte Fall passiert, der Draht von kleinerem Querschnitt ist, wird das System schlechter arbeiten.
+
+319
+00:37:08,800 --> 00:37:14,700
+Jetzt lass mich einige Worte mehr über unsere anfänglichen Berechnungen sagen.
+
+320
+00:37:15,560 --> 00:37:23,540
+Diese vorläufigen Berechnungen sind mit dem Moment verbunden, damit wir letztendlich bestimmen, welchen Aufbau wir machen werden.
+
+321
+00:37:25,180 --> 00:37:31,520
+Korrekturen zu dieser Berechnung werden tatsächlich gemacht, wenn wir den Tesla-Transformator wickeln.
+
+322
+00:37:31,520 --> 00:37:38,380
+Miss zwingend die klare Windungszahl, die wir gelegt haben.
+
+323
+00:37:38,920 --> 00:37:44,800
+Und prüfe an mehreren Stellen des Tesla-Transformator-Rahmens die Windungslänge.
+
+324
+00:37:45,360 --> 00:37:51,680
+Dafür wickle mit Spannung eine Windung, mache Drähte und miss sie tatsächlich.
+
+325
+00:37:52,140 --> 00:37:56,260
+Und davon ausgehend machen wir unsere weiteren Berechnungskorrekturen.
+
+326
+00:37:57,620 --> 00:38:11,620
+Ich rate, den Leiter mit einer gewissen Reserve zu wickeln, in der Größenordnung von 2-3 m pro Rahmen, damit wir dann unsere Frequenz klar abstimmen können.
+
+327
+00:38:12,040 --> 00:38:16,820
+Weil Abwickeln können wir immer, und Hinzufügen wird problematisch sein.
+
+328
+00:38:17,220 --> 00:38:22,980
+Aber das unter der Bedingung, wenn wir eine bestimmte Frequenz haben, die wir anstreben.
+
+329
+00:38:22,980 --> 00:38:31,140
+Zum Beispiel haben wir schon eine sendende Spule gemacht, und wir sollten die empfangende genau unter ihr machen.
+
+330
+00:38:32,060 --> 00:38:45,380
+Wer interessiert ist, kann sich auch Denis Permakovs Kanal nach den Antworten auf meine 8 Fragen ansehen, die ich Alexander Vladimirovich Romanov über die Tesla-Transformator-Drossel gestellt habe.
+
+331
+00:38:45,540 --> 00:38:52,200
+Das ist das Video unter Nummer 512, genannt "Fragen zum Tesla-Bau".
+
+332
+00:38:53,200 --> 00:39:01,940
+Zu allen Online-Rechnern und Kanälen, die in der Übersicht in diesem Video präsentiert sind, gebe ich Links in der Beschreibung.
+
+333
+00:39:03,560 --> 00:39:08,460
+Damit alles Gute an alle, gute Stimmung, erfolgreiche Experimente.
