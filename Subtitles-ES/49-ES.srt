@@ -1,0 +1,1507 @@
+1
+00:00:00,800 --> 00:00:03,680
+Bueno, hola a todos, soy Stalker.
+
+2
+00:00:04,880 --> 00:00:11,200
+Hoy hablaremos sobre el controlador para nuestro BTG.
+
+3
+00:00:12,740 --> 00:00:14,020
+Tema delicado.
+
+4
+00:00:15,280 --> 00:00:19,060
+A muchos de los que lo hicieron no les gusta para nada, pero aun así...
+
+5
+00:00:19,860 --> 00:00:23,940
+Creo que vale la pena explicar y mostrar qué es qué aquí.
+
+6
+00:00:24,920 --> 00:00:29,400
+Bueno, aquí está mi esquema del controlador.
+
+7
+00:00:30,060 --> 00:00:31,780
+Hecho puramente por mí.
+
+8
+00:00:35,080 --> 00:00:37,840
+Así se ve en el dispositivo.
+
+9
+00:00:38,980 --> 00:00:40,760
+Está dividido en dos bloques.
+
+10
+00:00:41,460 --> 00:00:43,380
+Este es el bloque de control del push-pull.
+
+11
+00:00:43,920 --> 00:00:46,520
+Aquí también tenemos ajustes...
+
+12
+00:00:47,400 --> 00:00:51,260
+para el ancho de la ráfaga y la ubicación del impacto de ráfaga del Tesla.
+
+13
+00:00:51,720 --> 00:00:56,000
+Y el bloque de control, en consecuencia, para el Tesla mismo.
+
+14
+00:00:56,580 --> 00:00:59,520
+En este videoclip estaremos viendo...
+
+15
+00:00:59,520 --> 00:01:02,500
+específicamente el bloque de control del push-pull.
+
+16
+00:01:03,540 --> 00:01:06,720
+Y este conexionado en el siguiente video...
+
+17
+00:01:06,720 --> 00:01:09,380
+veremos el bloque de control del Tesla.
+
+18
+00:01:09,420 --> 00:01:10,380
+OK, vamos.
+
+19
+00:01:11,180 --> 00:01:12,640
+Entonces, ¿por dónde empezamos?
+
+20
+00:01:13,320 --> 00:01:14,620
+La parte controladora.
+
+21
+00:01:15,580 --> 00:01:16,880
+No me esforcé mucho.
+
+22
+00:01:17,600 --> 00:01:19,500
+Puedes trabajar con otros chips.
+
+23
+00:01:19,580 --> 00:01:21,680
+Hecho con 494.
+
+24
+00:01:23,480 --> 00:01:27,420
+Mira, aquí tenemos alimentación entrando.
+
+25
+00:01:27,820 --> 00:01:28,820
+15 voltios.
+
+26
+00:01:29,520 --> 00:01:32,580
+A través de un regulador de 12V para estabilización.
+
+27
+00:01:33,440 --> 00:01:34,920
+Capacitor de entrada.
+
+28
+00:01:35,160 --> 00:01:36,480
+Capacitor de salida.
+
+29
+00:01:36,540 --> 00:01:37,020
+Choque.
+
+30
+00:01:37,780 --> 00:01:39,700
+Después del choque otro capacitor.
+
+31
+00:01:40,260 --> 00:01:42,620
+Esto se representa aquí.
+
+32
+00:01:43,180 --> 00:01:44,080
+Aquí está el regulador.
+
+33
+00:01:45,160 --> 00:01:45,620
+Choque.
+
+34
+00:01:47,160 --> 00:01:49,120
+Los capacitores de conexionado están ahí.
+
+35
+00:01:50,760 --> 00:01:51,280
+Siguiente.
+
+36
+00:01:51,680 --> 00:01:55,240
+Entonces, esto es alimentación para todos los chips.
+
+37
+00:01:55,660 --> 00:02:00,280
+En este controlador se usa el chip principal.
+
+38
+00:02:00,440 --> 00:02:02,100
+Es TC4093.
+
+39
+00:02:04,240 --> 00:02:10,200
+Entonces, qué elementos lógicos tenemos.
+
+40
+00:02:11,260 --> 00:02:13,240
+Su análogo es K561TL1.
+
+41
+00:02:15,720 --> 00:02:18,400
+¿Qué es este elemento?
+
+42
+00:02:19,080 --> 00:02:23,360
+Este elemento es un disparador Schmitt estable.
+
+43
+00:02:23,360 --> 00:02:25,840
+Con inversión en la salida.
+
+44
+00:02:26,580 --> 00:02:27,820
+Y AND de 2 entradas.
+
+45
+00:02:28,180 --> 00:02:31,700
+Es decir, dos entradas con lógica AND combinada.
+
+46
+00:02:33,100 --> 00:02:41,540
+Esto significa que obtenemos un momento de comparación en estas dos entradas.
+
+47
+00:02:41,620 --> 00:02:44,820
+Aquí puedes ver el patillaje del chip.
+
+48
+00:02:46,440 --> 00:02:48,580
+Numeración, qué es responsable de qué.
+
+49
+00:02:48,680 --> 00:02:51,360
+Y nuestra alimentación es 7-14+.
+
+50
+00:02:53,220 --> 00:02:54,820
+Avanzando.
+
+51
+00:02:56,200 --> 00:02:58,780
+Haciendo los drivers con TL, digamos.
+
+52
+00:02:59,060 --> 00:03:00,340
+Puedes con cualquier otro.
+
+53
+00:03:02,060 --> 00:03:07,020
+Presta atención, el capacitor aquí es 6800 pF.
+
+54
+00:03:07,920 --> 00:03:12,500
+Ajusté el sistema al medio, es decir, a operación de 15 kHz.
+
+55
+00:03:13,760 --> 00:03:20,940
+Bueno, desde este valor el sistema funciona prácticamente en más o menos 10 kHz.
+
+56
+00:03:21,380 --> 00:03:29,600
+Si vas a ajustar a otras frecuencias, en consecuencia algunos elementos en este esquema cambiarán.
+
+57
+00:03:30,440 --> 00:03:35,720
+Es decir, presta atención, el capacitor y aquí hay dos resistores.
+
+58
+00:03:36,700 --> 00:03:39,000
+Son responsables de la frecuencia.
+
+59
+00:03:39,000 --> 00:03:44,390
+Es decir, 5,1 kΩ y en serie con él 500 Ω.
+
+60
+00:03:45,580 --> 00:03:48,080
+Esto se representa aquí.
+
+61
+00:03:49,900 --> 00:03:50,940
+Estos dos resistores.
+
+62
+00:03:51,060 --> 00:03:51,580
+¿Para qué?
+
+63
+00:03:53,400 --> 00:03:58,840
+Necesitamos esto para no saltarnos todos los momentos interesantes.
+
+64
+00:03:59,120 --> 00:04:03,360
+Tengo la capacidad de ajustar extremadamente suave la frecuencia.
+
+65
+00:04:04,180 --> 00:04:07,040
+Muy suavemente, en centésimas de hertz.
+
+66
+00:04:08,660 --> 00:04:13,180
+No se puede hacer nada, el sistema funciona así, los ajustes deben ser muy precisos.
+
+67
+00:04:13,280 --> 00:04:26,940
+Si recuerdas, Ruslán Kulakújov mencionó una vez que su resistor de ajuste de frecuencia puede girarse con un motor y la frecuencia es muy difícil de desajustar.
+
+68
+00:04:27,100 --> 00:04:29,100
+Esto es exactamente para lo que sirve.
+
+69
+00:04:29,980 --> 00:04:30,820
+Siguiente.
+
+70
+00:04:32,260 --> 00:04:39,300
+Sería posible enviar esto directamente a los drivers y transistores, pero eso no nos sirve.
+
+71
+00:04:40,380 --> 00:04:42,500
+Necesitamos hacer este truco.
+
+72
+00:04:42,840 --> 00:04:48,180
+Colocar adicionalmente un chip y hacer un retardo de tiempo en él.
+
+73
+00:04:49,100 --> 00:04:51,000
+Ahí tenemos escrito "retardo".
+
+74
+00:04:51,060 --> 00:04:54,840
+Nuestro retardo está construido sobre elementos.
+
+75
+00:04:55,360 --> 00:05:01,660
+Los componentes de temporización son un resistor y un capacitor en la entrada del disparador Schmitt.
+
+76
+00:05:02,180 --> 00:05:03,620
+¿Cómo funciona esto?
+
+77
+00:05:03,840 --> 00:05:17,220
+La señal del TL pasa por resistores de 10 Ω, alcanza la entrada, se invierte y sale al resistor.
+
+78
+00:05:18,940 --> 00:05:33,120
+El resistor es un elemento limitador de corriente en el sistema, así que regula el número de cargas que pasan por unidad de tiempo a través de la sección del conductor y a través de esta resistencia.
+
+79
+00:05:33,680 --> 00:05:39,160
+Y en consecuencia regula el tiempo de carga de esta capacitancia.
+
+80
+00:05:40,600 --> 00:05:47,260
+Es decir, entendemos a mayor resistencia, la capacitancia carga por más tiempo y obtenemos este efecto interesante.
+
+81
+00:05:48,180 --> 00:05:51,520
+Ahora lo presentaré, si miramos.
+
+82
+00:05:52,440 --> 00:05:58,880
+En la capacitancia tenemos una pendiente de flanco, es decir, el momento de carga, la subida de voltaje es inclinada.
+
+83
+00:05:59,540 --> 00:06:09,360
+Y el disparador tiene un punto de histéresis, es decir, el momento de disparo cuando cambia de posición cero a uno.
+
+84
+00:06:09,360 --> 00:06:15,520
+Entonces, cuanto más largo este momento de pendiente, más tarde el disparador conmutará.
+
+85
+00:06:16,000 --> 00:06:26,470
+Y en consecuencia de esta manera podemos sobre este punto, jugando con él, ajustando la resistencia, podemos fijar el momento en que nuestro disparador conmutará con retardo.
+
+86
+00:06:28,780 --> 00:06:36,740
+Hacemos esto para que nos sea conveniente después controlar el Tesla y trabajar con anticipación.
+
+87
+00:06:36,740 --> 00:06:43,740
+Es decir, para que podamos movernos por todo el ancho de la onda senoidal de corriente.
+
+88
+00:06:45,040 --> 00:06:54,540
+Si no hacemos este retardo, nuestra señal se atrasará en el tiempo, y constantemente golpearemos en la zona equivocada, donde la senoidal de corriente está cayendo.
+
+89
+00:06:54,800 --> 00:06:56,380
+Y básicamente no hay nada que hacer ahí.
+
+90
+00:06:57,200 --> 00:07:03,240
+Golpear en un campo magnético decreciente, en una corriente decayendo, no tiene absolutamente ningún sentido.
+
+91
+00:07:03,240 --> 00:07:10,800
+Aún menos sentido tiene martillar en tiempo muerto, como tenemos tal desinformación en internet.
+
+92
+00:07:11,400 --> 00:07:16,380
+En tiempo muerto la corriente está en cero en general, así que no puedes acelerar absolutamente nada ahí.
+
+93
+00:07:17,600 --> 00:07:23,900
+A continuación, hecho el retardo, hacemos el retardo de ambos canales, como puedes ver, tomamos de dos canales.
+
+94
+00:07:24,580 --> 00:07:29,280
+Y ya después del retardo de tiempo, enviamos a los drivers.
+
+95
+00:07:30,560 --> 00:07:38,600
+Los drivers de hecho son UCC37322, aquí están, dos drivers.
+
+96
+00:07:39,660 --> 00:07:44,000
+Como mostré en videos anteriores, para push-pull tan potentes ni siquiera son necesarios.
+
+97
+00:07:44,540 --> 00:07:55,120
+Esta placa para mí es de pruebas, es multifuncional para diferentes propósitos, así que están aquí elementos más potentes.
+
+98
+00:07:56,010 --> 00:07:57,960
+Entonces, alimentación común.
+
+99
+00:07:58,300 --> 00:08:03,360
+La alimentación común está marcada aquí como, aquí están 15 voltios a la entrada del regulador.
+
+100
+00:08:04,920 --> 00:08:13,330
+También tenemos alimentación de 15 voltios, alimentación separada se suministra a las entradas del driver.
+
+101
+00:08:14,660 --> 00:08:19,460
+Y siguiente alimentación separada marcada con flecha para el push-pull, 24 voltios.
+
+102
+00:08:20,080 --> 00:08:21,580
+¿Cómo se hace aquí?
+
+103
+00:08:21,860 --> 00:08:24,410
+Aquí se usa un convertidor DC-DC.
+
+104
+00:08:25,280 --> 00:08:26,020
+Comprado.
+
+105
+00:08:26,890 --> 00:08:32,020
+Que es 24 voltios, que estará en el sistema desde estas fuentes de alimentación.
+
+106
+00:08:33,400 --> 00:08:35,880
+Convierte a 15 voltios.
+
+107
+00:08:36,000 --> 00:08:42,700
+Y mira, el cable va directamente a los drivers, sin ningún regulador, sin nada, a sus capacitores.
+
+108
+00:08:43,680 --> 00:08:46,060
+Esto se representa, aquí está la entrada.
+
+109
+00:08:47,380 --> 00:08:48,080
+Capacitancia.
+
+110
+00:08:49,040 --> 00:08:50,500
+Este es un electrolítico.
+
+111
+00:08:51,500 --> 00:09:04,660
+Y directamente junto a cada driver obligatoriamente un capacitor cerámico de 4,7 microfaradios para acelerar la subida del flanco delantero.
+
+112
+00:09:05,320 --> 00:09:12,940
+Siguiente resistor, bueno ya presenté el esquema del push-pull, lo que hace, puedes ver mi video del push-pull.
+
+113
+00:09:13,500 --> 00:09:17,380
+No nos detendremos en detalle, nada cambió mucho aquí.
+
+114
+00:09:18,660 --> 00:09:23,860
+Entonces, hicimos el retardo en este momento.
+
+115
+00:09:24,280 --> 00:09:30,500
+Y la señal verdadera, que es sin retardo, la enviamos directamente a...
+
+116
+00:09:30,500 --> 00:09:34,140
+Hay tal cosa con pinzas con un puente.
+
+117
+00:09:34,840 --> 00:09:36,760
+Aquí está representado.
+
+118
+00:09:38,160 --> 00:09:41,780
+Si miras, tiene un puente metálico al frente.
+
+119
+00:09:43,200 --> 00:09:44,580
+Ahí se ve claramente.
+
+120
+00:09:45,080 --> 00:09:45,920
+Está atornillado.
+
+121
+00:09:47,380 --> 00:09:57,480
+Entonces, esto lo necesitamos para que podamos elegir por qué semiciclo trabajaremos.
+
+122
+00:09:57,580 --> 00:09:59,700
+Por el positivo o por el negativo.
+
+123
+00:09:59,820 --> 00:10:08,100
+Es decir, conmutamos en consecuencia, puedes ver, de un canal por el que va la señal, o de otro al centro.
+
+124
+00:10:08,260 --> 00:10:11,100
+Y siguió hacia el sistema.
+
+125
+00:10:11,940 --> 00:10:19,500
+Entonces, cuando elegimos esta señal, por qué semionda trabaja, esto nos será útil después.
+
+126
+00:10:19,700 --> 00:10:21,220
+Por ahora puedes cerrar cualquiera.
+
+127
+00:10:22,300 --> 00:10:24,440
+Enviamos al siguiente.
+
+128
+00:10:24,520 --> 00:10:27,220
+Aquí está separado por líneas en la imagen.
+
+129
+00:10:27,580 --> 00:10:38,860
+Este es ya un sistema que controla el ancho de ráfaga en el Tesla y la ubicación del impacto de ráfaga del Tesla, que funcionará después.
+
+130
+00:10:38,860 --> 00:10:41,000
+Cómo está construido.
+
+131
+00:10:41,980 --> 00:10:48,880
+Esta señal que elegimos se envía a la entrada y ocurre la inversión.
+
+132
+00:10:49,840 --> 00:10:57,960
+Mira el esquema, una inversión, segunda, esto es necesario para estabilización, luego alcanza el resistor.
+
+133
+00:10:58,740 --> 00:11:01,280
+Está marcado como ubicación del impacto de ráfaga.
+
+134
+00:11:01,280 --> 00:11:09,280
+Es decir, el mismo retardo de tiempo que hacemos en el disparador Schmitt, como expliqué antes.
+
+135
+00:11:10,860 --> 00:11:17,360
+Aquí tenemos 4700 pF como capacitancia de retardo para este momento.
+
+136
+00:11:18,560 --> 00:11:25,580
+Luego después de ella ocurre otra inversión, enderezamos la cuadrada limpia y enviamos al siguiente elemento.
+
+137
+00:11:26,120 --> 00:11:27,700
+Exactamente el mismo chip.
+
+138
+00:11:27,700 --> 00:11:34,560
+Este elemento funciona por el principio de restar una señal de sí misma.
+
+139
+00:11:35,720 --> 00:11:37,900
+Es decir, lo que se hace aquí.
+
+140
+00:11:38,580 --> 00:11:43,300
+El conexionado es visible, cómo va, lo explicaré en esta imagen.
+
+141
+00:11:45,360 --> 00:11:49,820
+Por ejemplo, tenemos una señal que llegó a la entrada.
+
+142
+00:11:52,140 --> 00:11:54,020
+Aquí está nuestra señal dibujada.
+
+143
+00:11:54,020 --> 00:11:58,280
+A continuación, en la salida tenemos un disparador Schmitt con inversión.
+
+144
+00:11:59,000 --> 00:12:01,080
+Se invierte a este tipo de señal.
+
+145
+00:12:01,220 --> 00:12:03,280
+Es decir, realmente nuestra señal se vuelve ancha.
+
+146
+00:12:04,200 --> 00:12:09,340
+Es decir, este ancho de pausa se convierte en uno.
+
+147
+00:12:10,720 --> 00:12:15,520
+A continuación, esta señal larga llega al resistor.
+
+148
+00:12:16,300 --> 00:12:21,340
+En nuestro caso está aquí, este resistor de 10 kΩ.
+
+149
+00:12:22,960 --> 00:12:27,600
+Y después de esto se hace una cosa ingeniosa.
+
+150
+00:12:27,700 --> 00:12:35,720
+Esta señal verdadera llega aquí en su totalidad, en dos entradas del disparador Schmitt se usa un cubo entero.
+
+151
+00:12:36,400 --> 00:12:38,420
+Y aquí llega solo a una.
+
+152
+00:12:39,020 --> 00:12:40,680
+Y aquí pasa lo interesante.
+
+153
+00:12:40,900 --> 00:12:44,640
+Esta señal se invierte, se vuelve larga.
+
+154
+00:12:44,860 --> 00:12:47,080
+También llega a la otra entrada.
+
+155
+00:12:47,080 --> 00:12:52,980
+Aquí se dispara la histéresis del disparador desde el retardo.
+
+156
+00:12:53,360 --> 00:12:57,140
+Es decir, vemos, como expliqué, el voltaje crece en un punto.
+
+157
+00:12:58,320 --> 00:13:01,260
+El disparo del elemento se retarda.
+
+158
+00:13:01,840 --> 00:13:02,780
+¿Y qué pasa?
+
+159
+00:13:03,580 --> 00:13:04,460
+Este momento.
+
+160
+00:13:05,140 --> 00:13:06,460
+Analicemos en detalle.
+
+161
+00:13:06,560 --> 00:13:07,780
+Entonces pin 5.
+
+162
+00:13:08,520 --> 00:13:12,240
+En el pin 5 tenemos la misma señal que en la entrada.
+
+163
+00:13:12,320 --> 00:13:14,280
+Aquí está, alimentada.
+
+164
+00:13:14,280 --> 00:13:24,300
+Y en la entrada 6 tenemos la señal después del retardo que ocurrió en el capacitor.
+
+165
+00:13:25,240 --> 00:13:26,580
+Aquí está, con retardo.
+
+166
+00:13:26,700 --> 00:13:28,360
+Es decir, en realidad un desplazamiento de tiempo.
+
+167
+00:13:29,860 --> 00:13:32,480
+¿Y qué pasa, qué hace la lógica AND de 2 entradas?
+
+168
+00:13:32,760 --> 00:13:35,080
+Realiza una sustracción de señal.
+
+169
+00:13:35,200 --> 00:13:39,680
+Es decir, resta la señal desplazada de la señal de entrada.
+
+170
+00:13:39,680 --> 00:13:48,660
+Y sabemos que la lógica AND de 2 entradas se dispara cuando ambas entradas son uno.
+
+171
+00:13:49,460 --> 00:13:54,740
+Y resulta que, al final tenemos este ancho en la salida.
+
+172
+00:13:55,780 --> 00:13:58,600
+Es decir, resulta que restamos la señal.
+
+173
+00:13:58,860 --> 00:14:06,400
+En consecuencia hicimos sustracción de señal de sí misma y obtuvimos el ancho de ráfaga con este elemento.
+
+174
+00:14:07,980 --> 00:14:10,900
+A continuación solo necesitamos resolver esto.
+
+175
+00:14:11,060 --> 00:14:16,760
+En la salida 4 tenemos la señal que restamos de sí misma.
+
+176
+00:14:17,060 --> 00:14:18,760
+Pero está invertida para nosotros.
+
+177
+00:14:19,100 --> 00:14:19,650
+Aquí funciona.
+
+178
+00:14:20,500 --> 00:14:26,640
+Y solo necesitamos aplicar un cubo más, invertirla a la señal de ráfaga.
+
+179
+00:14:27,140 --> 00:14:29,740
+Lo que controlará esto para nosotros.
+
+180
+00:14:29,740 --> 00:14:32,060
+Bueno, luego explicaré más.
+
+181
+00:14:32,560 --> 00:14:37,400
+Básicamente eso, cuando analicemos el controlador del Tesla.
+
+182
+00:14:38,040 --> 00:14:39,140
+Cómo ocurre.
+
+183
+00:14:39,460 --> 00:14:42,980
+Bueno ese es el punto, cómo este sistema funciona así.
+
+184
+00:14:44,100 --> 00:14:48,860
+Es decir, ahora entendemos por qué hicimos este retardo.
+
+185
+00:14:49,800 --> 00:14:52,940
+Para la propia operación del push-pull.
+
+186
+00:14:53,280 --> 00:14:58,700
+Es decir, retardamos la señal, pero trabajamos con la señal sin retardo.
+
+187
+00:14:58,700 --> 00:15:00,780
+En este sistema.
+
+188
+00:15:01,060 --> 00:15:08,180
+Y obtenemos este momento que podemos movernos por todo el ancho de la senoidal de corriente que habrá.
+
+189
+00:15:09,080 --> 00:15:12,720
+Ahora mostraré este esquema, cómo funciona en la práctica.
+
+190
+00:15:15,580 --> 00:15:20,900
+Entonces ahora estaremos mostrando cómo funciona la señal de retardo.
+
+191
+00:15:21,900 --> 00:15:23,240
+OK.
+
+192
+00:15:24,460 --> 00:15:29,900
+La punta amarilla del osciloscopio está sobre la salida del TL.
+
+193
+00:15:30,560 --> 00:15:32,140
+Ahí está presentado.
+
+194
+00:15:33,900 --> 00:15:42,140
+Y la punta azul del osciloscopio está directamente sobre el control de compuerta del transistor después del driver.
+
+195
+00:15:43,040 --> 00:15:47,900
+Ahora giraré el resistor temporizador para el retardo.
+
+196
+00:15:47,900 --> 00:15:51,600
+Y veremos cómo se dispara este retardo.
+
+197
+00:15:52,300 --> 00:15:59,240
+Ahora si miras, en el período inicial debido al capacitor ya es visible el retardo de la señal.
+
+198
+00:16:00,260 --> 00:16:02,020
+Comienzo a rotar el resistor.
+
+199
+00:16:04,840 --> 00:16:09,290
+Y vemos, amarillo es la salida del TL, recordando.
+
+200
+00:16:10,100 --> 00:16:13,250
+Y azul es lo que controla la llave del driver.
+
+201
+00:16:13,250 --> 00:16:18,390
+Y vemos la señal en tiempo está atrasando.
+
+202
+00:16:18,710 --> 00:16:23,480
+Es decir, estoy girando uno de los resistores temporizadores ahora.
+
+203
+00:16:24,750 --> 00:16:27,600
+Esto está en el esquema, este resistor aquí.
+
+204
+00:16:28,630 --> 00:16:31,050
+Uno de ellos, que está conectado al canal.
+
+205
+00:16:32,650 --> 00:16:42,480
+En la realidad necesitarás, al trabajar, no girar un resistor, sino poner dos puntas en los controles de compuerta.
+
+206
+00:16:43,250 --> 00:16:52,670
+Y observar que estas señales van con un desplazamiento de 180 grados.
+
+207
+00:16:52,810 --> 00:16:55,650
+Es decir, como funciona usualmente el push-pull.
+
+208
+00:16:57,050 --> 00:17:01,870
+También esta cadena de temporización no afecta el ciclo útil para nosotros.
+
+209
+00:17:02,230 --> 00:17:07,670
+Ahora giraré el ciclo útil en el TL.
+
+210
+00:17:07,930 --> 00:17:09,350
+Ahora miraremos.
+
+211
+00:17:12,030 --> 00:17:13,530
+Controla excelente.
+
+212
+00:17:14,250 --> 00:17:16,310
+Estoy cambiando el ciclo útil.
+
+213
+00:17:16,890 --> 00:17:18,710
+Puedes ver el ciclo útil está cambiando.
+
+214
+00:17:18,770 --> 00:17:20,030
+Esta es la salida del TL para nosotros.
+
+215
+00:17:20,870 --> 00:17:25,150
+Y puedes ver el ciclo útil está cambiando en el driver del push-pull.
+
+216
+00:17:25,810 --> 00:17:27,490
+Es decir, el sistema funciona para nosotros.
+
+217
+00:17:27,810 --> 00:17:29,330
+Y cambiamos el ciclo útil.
+
+218
+00:17:29,910 --> 00:17:31,250
+Y podemos moverla,
+
+219
+00:17:35,510 --> 00:17:37,350
+esta señal en tiempo.
+
+220
+00:17:37,550 --> 00:17:40,950
+Es decir, nuestro retardo de tiempo funciona.
+
+221
+00:17:42,070 --> 00:17:46,030
+Obtenemos que el sistema puede trabajar con TL con anticipación.
+
+222
+00:17:46,170 --> 00:17:46,610
+Siguiente.
+
+223
+00:17:47,850 --> 00:17:49,390
+Vimos este momento.
+
+224
+00:17:49,490 --> 00:17:50,450
+Ahora avanzando.
+
+225
+00:17:51,590 --> 00:17:54,530
+Tomo el canal azul del osciloscopio.
+
+226
+00:17:55,310 --> 00:17:56,110
+Lo muevo.
+
+227
+00:17:59,270 --> 00:18:06,450
+A donde tenemos la salida del control directo del TL.
+
+228
+00:18:07,170 --> 00:18:11,070
+Es decir, aquí puedes ver nuestra salida.
+
+229
+00:18:11,070 --> 00:18:13,230
+Está representada aquí.
+
+230
+00:18:15,090 --> 00:18:22,750
+Esta salida después del chip que fija la ubicación del impacto de ráfaga.
+
+231
+00:18:23,090 --> 00:18:27,930
+Y el segundo chip que fija el ancho de ráfaga.
+
+232
+00:18:27,990 --> 00:18:30,070
+Aquí tenemos terminales de salida.
+
+233
+00:18:30,770 --> 00:18:33,090
+Estará representado como tres cables.
+
+234
+00:18:33,230 --> 00:18:37,650
+Es decir, señal central, alimentación positiva y común negativo.
+
+235
+00:18:37,650 --> 00:18:40,970
+Es decir, vemos estos cables directamente.
+
+236
+00:18:41,670 --> 00:18:44,450
+Toma rojo positivo, común negativo.
+
+237
+00:18:45,310 --> 00:18:50,430
+Y aquí está el cable central que llega.
+
+238
+00:18:50,530 --> 00:18:54,110
+Esta terminal ya está en la placa de control del Tesla.
+
+239
+00:18:54,510 --> 00:18:55,730
+Ahora conectaré la punta.
+
+240
+00:18:57,110 --> 00:19:01,050
+Específicamente veremos cómo se regula la ráfaga.
+
+241
+00:19:02,710 --> 00:19:04,030
+Conecté la punta.
+
+242
+00:19:05,130 --> 00:19:06,030
+Y mirando.
+
+243
+00:19:06,030 --> 00:19:12,170
+Ahora la punta amarilla está en la salida del TL.
+
+244
+00:19:12,470 --> 00:19:17,290
+Es decir, en el canal por el cual hacemos sincronización con este puente.
+
+245
+00:19:18,470 --> 00:19:19,370
+Por él trabajamos.
+
+246
+00:19:21,350 --> 00:19:28,930
+En este momento giraré este resistor que nos fija la ubicación del impacto de ráfaga.
+
+247
+00:19:29,150 --> 00:19:35,330
+Y en este esquema para este chip, el ancho de ráfaga.
+
+248
+00:19:41,590 --> 00:19:49,350
+Por ejemplo ahora, giraré el resistor responsable del ancho de ráfaga.
+
+249
+00:19:54,090 --> 00:19:57,930
+OK, con la mano izquierda es incómodo, pero intentaremos.
+
+250
+00:19:58,870 --> 00:20:05,670
+Vemos el ancho de ráfaga está disminuyendo en este momento.
+
+251
+00:20:07,050 --> 00:20:08,950
+Se puede fijar.
+
+252
+00:20:09,090 --> 00:20:10,050
+Ahí va.
+
+253
+00:20:10,050 --> 00:20:14,150
+Es decir, en general este esquema funciona excelente.
+
+254
+00:20:14,250 --> 00:20:20,850
+Y puedes después configurar para controlar el Tesla incluso con una señal en la ráfaga.
+
+255
+00:20:21,850 --> 00:20:25,290
+Giro hacia atrás, la ráfaga se expande.
+
+256
+00:20:27,990 --> 00:20:31,110
+Ese fue un resistor.
+
+257
+00:20:32,010 --> 00:20:36,450
+Ahora se relaciona con este chip.
+
+258
+00:20:36,450 --> 00:20:44,950
+Y el otro resistor que se relaciona con el chip que regula el ancho.
+
+259
+00:20:44,990 --> 00:20:47,350
+Es decir, no ancho de ráfaga, sino ubicación del impacto de ráfaga.
+
+260
+00:20:52,460 --> 00:20:55,500
+Ahora nuestra ráfaga se moverá.
+
+261
+00:20:56,640 --> 00:20:59,500
+Y vemos por qué se necesitará un retardo.
+
+262
+00:20:59,560 --> 00:21:03,740
+Entendemos que la ráfaga no puede moverse hacia adelante.
+
+263
+00:21:04,640 --> 00:21:07,480
+Siguiente, cuando... la moveré al inicio ahora.
+
+264
+00:21:07,880 --> 00:21:09,940
+Donde comienza la propia señal de sincronización.
+
+265
+00:21:10,780 --> 00:21:12,600
+No podemos mover la ráfaga más allá.
+
+266
+00:21:13,780 --> 00:21:17,820
+Y entendemos que si no tuviéramos el retardo, siempre íbamos a atrasar.
+
+267
+00:21:18,380 --> 00:21:24,740
+Y como ya hicimos el retardo, este inicial.
+
+268
+00:21:26,000 --> 00:21:31,860
+Nuestra señal, en realidad ahora en esta posición, lidera a la senoidal de corriente.
+
+269
+00:21:32,980 --> 00:21:41,340
+Es decir, ya podemos trabajar en el lugar donde la senoidal de corriente, digamos, cruza por cero y empieza a subir suavemente.
+
+270
+00:21:42,260 --> 00:21:46,300
+Este momento, digamos, fijar.
+
+271
+00:21:46,820 --> 00:21:53,200
+Obtenemos... aquí giro el resistor.
+
+272
+00:21:54,560 --> 00:21:59,560
+Y vemos, digamos, este momento, trabajamos en la subida de la senoidal de corriente.
+
+273
+00:21:59,560 --> 00:22:02,340
+Digamos, en el semiciclo positivo.
+
+274
+00:22:02,980 --> 00:22:06,080
+Ahora alcanzamos, digamos, el máximo de la senoidal de corriente.
+
+275
+00:22:06,360 --> 00:22:09,860
+Y ahora dado que alcanzamos el máximo, el retardo se activó.
+
+276
+00:22:09,920 --> 00:22:13,840
+Y ahora podemos retardar la señal más allá, empezamos a descender.
+
+277
+00:22:15,120 --> 00:22:19,800
+Después del máximo de la senoidal de corriente empieza a decaer, podemos trabajar en esa parte también.
+
+278
+00:22:20,820 --> 00:22:23,400
+Por eso específicamente se necesita tal truco.
+
+279
+00:22:23,500 --> 00:22:25,340
+Todo funciona excelente.
+
+280
+00:22:26,280 --> 00:22:30,340
+Vemos, ahora miramos una señal.
+
+281
+00:22:31,300 --> 00:22:39,320
+Aquí ocurre, vemos un impacto en cada semiciclo del push-pull.
+
+282
+00:22:39,460 --> 00:22:42,260
+Cambia a otro canal, también golpeará diferente.
+
+283
+00:22:42,400 --> 00:22:49,720
+Con este puente que está representado aquí.
+
+284
+00:22:50,380 --> 00:22:52,140
+Está en la placa aquí.
+
+285
+00:22:53,960 --> 00:23:00,300
+Siguiente, ahora veamos qué pasa en la ráfaga.
+
+286
+00:23:01,040 --> 00:23:04,180
+Expandamos la ráfaga, nuestra señal.
+
+287
+00:23:05,560 --> 00:23:10,200
+E intentaré cambiar el canal azul del osciloscopio.
+
+288
+00:23:10,240 --> 00:23:13,300
+Esto ya vemos su señal de control.
+
+289
+00:23:13,880 --> 00:23:19,880
+Y cambiaré ya a la salida directamente del driver de control de llave.
+
+290
+00:23:21,200 --> 00:23:22,640
+Y vemos.
+
+291
+00:23:23,660 --> 00:23:28,100
+Aquí ya vemos pulsos en la ráfaga.
+
+292
+00:23:29,400 --> 00:23:39,880
+Y resulta muy conveniente que podamos en la placa del push-pull, ajustando el ancho de ráfaga.
+
+293
+00:23:39,880 --> 00:23:47,020
+Y con este resistor, y con la ubicación del impacto, podemos cambiar.
+
+294
+00:23:47,080 --> 00:23:51,660
+Podemos ver lo que tendremos directamente como control en el Tesla.
+
+295
+00:23:52,560 --> 00:23:57,300
+Digamos, ahora rotaré el resistor.
+
+296
+00:23:58,100 --> 00:24:00,060
+Aquí vemos, el ancho de ráfaga crece.
+
+297
+00:24:00,240 --> 00:24:00,780
+Mira,
+
+298
+00:24:04,490 --> 00:24:08,470
+puedo hacerla más pequeña.
+
+299
+00:24:15,480 --> 00:24:20,260
+Mira, generalmente puedes hacer un generador de nano-pulsos en este esquema.
+
+300
+00:24:20,380 --> 00:24:24,960
+En realidad golpear con un pulso al Tesla.
+
+301
+00:24:25,160 --> 00:24:27,580
+Es decir, obtenemos un generador de nanosegundos.
+
+302
+00:24:28,320 --> 00:24:30,980
+Ahí, vemos, va un impacto.
+
+303
+00:24:32,900 --> 00:24:35,640
+Puedes ajustar así también, el esquema es universal.
+
+304
+00:24:38,280 --> 00:24:39,840
+Ahora expandir.
+
+305
+00:24:41,180 --> 00:24:44,660
+Aquí vemos, fácilmente se pueden fijar dos pulsos.
+
+306
+00:24:44,840 --> 00:24:45,880
+Tres pulsos.
+
+307
+00:24:46,500 --> 00:24:48,140
+Es decir, a elección, cuatro.
+
+308
+00:24:48,160 --> 00:24:56,760
+Y en realidad para operación de calidad de este Tesla, necesitamos 4-6 pulsos máximo.
+
+309
+00:24:56,900 --> 00:25:01,260
+Más allá ya es solo pérdida inútil y trabajo.
+
+310
+00:25:01,740 --> 00:25:04,720
+Habrá más, pero ningún efecto en el sistema en absoluto.
+
+311
+00:25:04,880 --> 00:25:07,900
+Ves, 5-6 en la subida.
+
+312
+00:25:07,900 --> 00:25:18,620
+Cuando analicemos esta placa, hay una posibilidad provista de regular la frecuencia en la ráfaga y el ciclo útil de estos pulsos en la ráfaga.
+
+313
+00:25:18,740 --> 00:25:19,960
+Pero eso es en el siguiente video.
+
+314
+00:25:20,880 --> 00:25:24,100
+Bueno y ahí está nuestra ráfaga, sí, de pulsos.
+
+315
+00:25:24,200 --> 00:25:25,720
+Ahora podemos moverla.
+
+316
+00:25:26,460 --> 00:25:27,980
+Mira cómo se mueve.
+
+317
+00:25:28,300 --> 00:25:29,820
+Estoy girando el segundo chip.
+
+318
+00:25:30,780 --> 00:25:34,900
+Es decir, nuestra ráfaga monta exitosamente.
+
+319
+00:25:35,660 --> 00:25:39,100
+Siguiendo el pulso de control.
+
+320
+00:25:42,540 --> 00:25:43,980
+Llegó aquí para nosotros.
+
+321
+00:25:46,980 --> 00:25:48,180
+Al final.
+
+322
+00:25:52,240 --> 00:25:56,460
+Y puede ir por el otro lado.
+
+323
+00:25:56,620 --> 00:26:02,080
+El esquema regula en amplios límites, así todo sucede.
+
+324
+00:26:04,240 --> 00:26:06,620
+Las señales en la ráfaga son limpias.
+
+325
+00:26:07,420 --> 00:26:18,470
+Si quitas, digamos, ahora nuestro driver funciona en la compuerta del transistor, así que hay un momento si miras cuidadosamente.
+
+326
+00:26:20,320 --> 00:26:25,820
+Expandiré bien para que sea visible la señal de alta frecuencia.
+
+327
+00:26:26,040 --> 00:26:32,300
+En este caso ahora casi 1,6 MHz está fijado en la ráfaga.
+
+328
+00:26:32,380 --> 00:26:36,120
+Este tipo de flanco de señal proporciona el driver.
+
+329
+00:26:36,120 --> 00:26:41,600
+UCC 37322 en la compuerta de este transistor.
+
+330
+00:26:42,660 --> 00:26:47,200
+Esta es una señal bastante normal para tales frecuencias, todo funciona bien.
+
+331
+00:26:49,860 --> 00:26:51,300
+En general, tal sistema.
+
+332
+00:26:53,080 --> 00:26:53,460
+Repítelo.
+
+333
+00:26:55,380 --> 00:26:58,400
+No me da pena, trabajé en él mucho tiempo, lo rodé.
+
+334
+00:27:00,080 --> 00:27:05,140
+Pero nada, aquí todos se acostumbraron a hacer una especie de secreto.
+
+335
+00:27:05,140 --> 00:27:13,140
+Aunque, les diré honestamente, esto es solo el 10% del éxito hacia una instalación funcional.
+
+336
+00:27:13,960 --> 00:27:18,200
+Por eso hacer un secreto de tales nimiedades no tiene sentido.
+
+337
+00:27:19,600 --> 00:27:21,380
+Entonces, qué más quería mostrar.
+
+338
+00:27:21,460 --> 00:27:26,000
+Aquí en el TL tenemos una entrada marcada con un asterisco.
+
+339
+00:27:26,560 --> 00:27:27,040
+Tercera.
+
+340
+00:27:28,340 --> 00:27:31,520
+Mi esquema es universal, no mostré.
+
+341
+00:27:31,520 --> 00:27:36,660
+En el esquema en este momento tengo más elementos aquí.
+
+342
+00:27:36,840 --> 00:27:38,520
+Otro chip controlador.
+
+343
+00:27:39,680 --> 00:27:41,460
+Porque la placa es universal.
+
+344
+00:27:42,320 --> 00:27:48,280
+Este esquema hace posible que el push-pull también funcione en ráfagas de pulsos.
+
+345
+00:27:48,380 --> 00:27:52,420
+Para algunos otros esquemas necesarios, por ejemplo, para controlar Teslas y otras cosas.
+
+346
+00:27:52,420 --> 00:28:05,480
+Es decir, para los interesados, se alimenta una señal de nivel alto al tercer pin del TL, y el TL detiene la generación.
+
+347
+00:28:05,640 --> 00:28:08,480
+Obtienes una señal modulada.
+
+348
+00:28:11,220 --> 00:28:12,720
+Una vez más el esquema.
+
+349
+00:28:19,830 --> 00:28:21,310
+Todo es accesible.
+
+350
+00:28:21,710 --> 00:28:26,770
+No lo hice con lógica de 5 voltios porque tenemos alimentación de 12 voltios.
+
+351
+00:28:26,770 --> 00:28:29,190
+Arrancaremos el sistema desde una batería.
+
+352
+00:28:30,050 --> 00:28:33,770
+Por eso enseguida 12 voltios es alimentación normal para nosotros.
+
+353
+00:28:33,950 --> 00:28:39,010
+Y este convertidor, está conectado a dos fuentes de alimentación después.
+
+354
+00:28:39,210 --> 00:28:43,830
+Y convierte 24 voltios en 15 para nosotros.
+
+355
+00:28:44,390 --> 00:28:48,950
+Lo eleva enseguida para que todos los drivers tengan control confiable de 15 voltios.
+
+356
+00:28:50,590 --> 00:28:53,390
+Ya mostré esta entrada.
+
+357
+00:28:53,530 --> 00:28:55,790
+Aquí una separada a los drivers.
+
+358
+00:28:56,770 --> 00:29:02,910
+Y después de él, después de este convertidor, al regulador.
+
+359
+00:29:03,070 --> 00:29:06,590
+El regulador hace la lógica de 12 voltios.
+
+360
+00:29:06,870 --> 00:29:09,510
+Fija la alimentación para él en 12 voltios.
+
+361
+00:29:11,010 --> 00:29:19,050
+Usar un regulador es obligatorio, u otro chip estabilizador de fijación de voltaje.
+
+362
+00:29:19,570 --> 00:29:27,310
+Porque todas estas cadenas de temporización, cuyos valores estoy mostrando en el esquema ahora, están diseñadas para alimentación de 12 voltios.
+
+363
+00:29:27,430 --> 00:29:42,890
+Es decir, tienes que entender que si alimentas más potencia al esquema, en consecuencia cuanto mayor sea la potencia, más rápido todas estas cadenas dispuestas trabajan en la histéresis del disparador, se
+
+364
+00:29:42,890 --> 00:29:43,650
+recargarán más rápido.
+
+365
+00:29:44,270 --> 00:29:48,770
+Y la velocidad de recarga aumenta, el disparo del Schmitt aumenta.
+
+366
+00:29:48,770 --> 00:29:57,650
+Y tu sistema, si alimentas ya alimentación de 15 voltios, necesitarás seleccionar diferentes cadenas.
+
+367
+00:29:58,190 --> 00:30:03,110
+Aquí en el momento estos 1000 pF, 4700, esto está ajustado precisamente.
+
+368
+00:30:04,050 --> 00:30:10,070
+Y también, si no puedes encontrar 4093 TC, K561 TL1.
+
+369
+00:30:11,270 --> 00:30:20,370
+El esquema es el mismo, son compatibles, pero los chips importados son mejores en velocidad, el flanco de subida sale mejor.
+
+370
+00:30:20,870 --> 00:30:34,850
+Y para nuestros chips necesitas estos, para esta frecuencia de referencia de 15 kHz, necesitas seleccionar estos elementos de temporización, resistores, capacitores.
+
+371
+00:30:35,390 --> 00:30:47,050
+Y en general, si haces algo y quieres cambiar la frecuencia, es decir, en un rango más amplio, aquí dije que son 15 referencia central, más o menos 10 kHz.
+
+372
+00:30:47,650 --> 00:30:52,830
+Esto es bastante suficiente para la operación del sistema, ajuste y todo lo demás.
+
+373
+00:30:52,930 --> 00:31:01,530
+Pero si necesitas moverte a frecuencias más altas o más bajas, la técnica del esquema sigue siendo la misma, solo cambias estos elementos.
+
+374
+00:31:02,270 --> 00:31:08,170
+El resistor que fija el offset y el capacitor que carga a través de este resistor.
+
+375
+00:31:08,170 --> 00:31:10,410
+Y todo funcionará.
+
+376
+00:31:11,510 --> 00:31:12,690
+El esquema está rodado.
+
+377
+00:31:15,030 --> 00:31:16,190
+Repítelo.

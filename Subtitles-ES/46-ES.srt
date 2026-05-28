@@ -1,0 +1,879 @@
+1
+00:00:00,600 --> 00:00:01,680
+Hola a todos.
+
+2
+00:00:01,880 --> 00:00:03,840
+Hoy hablaremos sobre el push-pull.
+
+3
+00:00:05,080 --> 00:00:13,640
+El push-pull es un convertidor de dos tiempos con dos transistores, muy eficiente, en alimentación de bajo voltaje.
+
+4
+00:00:15,560 --> 00:00:23,600
+Los componentes principales de potencia de este convertidor son dos transistores.
+
+5
+00:00:24,280 --> 00:00:33,940
+Trabajan sobre un bobinado con derivación central y luego obtenemos el resultado en la salida a las cargas.
+
+6
+00:00:34,460 --> 00:00:38,640
+Pero para este sistema el push-pull ordinario no nos sirve.
+
+7
+00:00:39,580 --> 00:00:41,300
+Tenemos algunas diferencias.
+
+8
+00:00:42,180 --> 00:00:53,500
+Nuestro sistema funciona con energía natural, así que nuestro push-pull también estará ligeramente adaptado para esto.
+
+9
+00:00:53,500 --> 00:00:58,720
+Aquí se ha armado un circuito de prueba que vamos a testear.
+
+10
+00:01:00,120 --> 00:01:01,460
+Placa de control.
+
+11
+00:01:02,760 --> 00:01:07,480
+El chip controlador usado es el TL494.
+
+12
+00:01:07,860 --> 00:01:14,140
+Puedes usar SG3525, UC3825 y otros.
+
+13
+00:01:15,120 --> 00:01:20,400
+Cualquiera funcionará perfectamente con la función de regulación de ciclo útil.
+
+14
+00:01:20,800 --> 00:01:32,680
+El driver se tomó específicamente como 2A IR2113, para mostrar que drivers ordinarios trabajan tranquilamente en este sistema.
+
+15
+00:01:33,380 --> 00:01:39,080
+Aquí tenemos dos transistores atornillados a disipadores.
+
+16
+00:01:39,580 --> 00:01:45,700
+Y el conocido y querido núcleo de olla de los televisores.
+
+17
+00:01:47,300 --> 00:01:49,300
+Recorramos el esquema.
+
+18
+00:01:50,960 --> 00:01:55,340
+Así debería verse el conexionado del push-pull para funcionar.
+
+19
+00:01:56,280 --> 00:01:58,900
+No hay que inventar nada, sin trucos.
+
+20
+00:01:59,580 --> 00:02:05,660
+Lo principal: tenemos un transistor RFP260N.
+
+21
+00:02:07,640 --> 00:02:11,440
+O transistores similares de alto voltaje.
+
+22
+00:02:12,140 --> 00:02:13,620
+¿Por qué de alto voltaje?
+
+23
+00:02:14,140 --> 00:02:18,760
+En este sistema durante la operación hay un pico estático.
+
+24
+00:02:20,120 --> 00:02:29,920
+Y si el transistor es de bajo voltaje, entonces el diodo inverso interno, también instalado por el fabricante como de bajo voltaje.
+
+25
+00:02:30,440 --> 00:02:34,860
+Y cortará el pico estático y lo convertirá en calor.
+
+26
+00:02:35,120 --> 00:02:36,120
+Esto no lo necesitamos.
+
+27
+00:02:36,400 --> 00:02:41,220
+Por eso exactamente los transistores de alto voltaje funcionan en nuestro sistema.
+
+28
+00:02:41,860 --> 00:02:49,460
+No hay que usar voltaje demasiado alto, comprar transistores para corriente de alimentación demasiado alta.
+
+29
+00:02:49,820 --> 00:02:52,560
+Porque las corrientes en nuestro sistema son pequeñas.
+
+30
+00:02:53,400 --> 00:03:03,760
+La tarea de este convertidor no es alimentar lámparas, no que se quemen, sino solo lanzar procesos de onda en el resonador.
+
+31
+00:03:05,160 --> 00:03:06,600
+Avanzando por el conexionado.
+
+32
+00:03:06,860 --> 00:03:16,120
+Debemos tener obligatoriamente en el circuito de la compuerta al cable común un resistor de drenaje de 1 kΩ.
+
+33
+00:03:16,560 --> 00:03:22,400
+Y obligatoriamente diodos zener conectados en oposición, de 12 voltios.
+
+34
+00:03:23,680 --> 00:03:29,900
+Esto es para que la compuerta no se perfore por un pico de voltaje estático.
+
+35
+00:03:30,520 --> 00:03:36,000
+Luego, el diodo inverso entre el circuito y drenaje a drenaje.
+
+36
+00:03:36,680 --> 00:03:38,240
+Todo el sistema es simétrico.
+
+37
+00:03:39,100 --> 00:03:40,020
+Diodo de acción rápida.
+
+38
+00:03:40,980 --> 00:03:45,640
+En este caso y en esta placa de prueba se usa el MUR-460.
+
+39
+00:03:46,740 --> 00:03:50,440
+Puedes usar cualquier otro diodo Schottky de acción rápida.
+
+40
+00:03:53,560 --> 00:03:58,000
+Cada brazo del push-pull está cargado con 10 vueltas.
+
+41
+00:03:59,260 --> 00:04:01,960
+Y el resultado en la salida son 3-4 vueltas.
+
+42
+00:04:03,500 --> 00:04:06,080
+Nuestra alimentación es 24 V.
+
+43
+00:04:06,700 --> 00:04:08,880
+Un capacitor es obligatorio.
+
+44
+00:04:10,160 --> 00:04:12,980
+En este caso 4700 microfaradios.
+
+45
+00:04:14,120 --> 00:04:22,220
+Y en el circuito de trabajo habrá que instalar un capacitor de 2 microfaradios que amortigua el pico estático.
+
+46
+00:04:23,080 --> 00:04:28,860
+Y se necesita para descarga rápida, porque las llaves abren bruscamente.
+
+47
+00:04:29,700 --> 00:04:33,600
+Y estos electrolíticos sirven generalmente como amortiguadores.
+
+48
+00:04:34,100 --> 00:04:39,900
+No sirven para que de ellos venga extracción pulsada.
+
+49
+00:04:40,160 --> 00:04:41,500
+A los electrolíticos no les gusta esto.
+
+50
+00:04:41,600 --> 00:04:48,380
+Por eso se instala un capacitor que funciona como compuerta, responde mucho más rápido que el electrolítico.
+
+51
+00:04:48,520 --> 00:04:51,440
+Permite hacer un flanco de subida más empinado.
+
+52
+00:04:52,360 --> 00:04:54,660
+Este es el símbolo esquemático del driver.
+
+53
+00:04:55,720 --> 00:05:03,880
+Y desde el driver, carga la capacitancia de la compuerta a través de un resistor de 5 Ω.
+
+54
+00:05:05,480 --> 00:05:06,840
+Así se ve.
+
+55
+00:05:07,080 --> 00:05:13,500
+Aquí en alimentación hay un regulador instalado, esto es para alimentar el chip TL.
+
+56
+00:05:14,520 --> 00:05:18,920
+Regulador, filtro, capacitores de conexionado.
+
+57
+00:05:20,220 --> 00:05:21,420
+Mirando más allá.
+
+58
+00:05:22,380 --> 00:05:23,220
+Obligatorio.
+
+59
+00:05:24,020 --> 00:05:28,800
+¿Por qué todos se pierden los efectos interesantes que hay en el push-pull?
+
+60
+00:05:29,400 --> 00:05:37,180
+Porque tenemos un resistor de ajuste de ciclo útil, y este es el resistor de ajuste de frecuencia.
+
+61
+00:05:38,220 --> 00:05:53,060
+Hay que hacerlo de modo que en 10 vueltas de este resistor de ajuste, la frecuencia de nuestro push-pull cambie como máximo 80 kHz.
+
+62
+00:05:54,120 --> 00:06:08,240
+Aún mejor, cuando se conoce el rango de operación de la bobina, seleccionar aquí un resistor aún más pequeño y enchufarlo, para que la regulación ocurra dentro de 5 kHz.
+
+63
+00:06:08,400 --> 00:06:17,220
+Porque en todos los circuitos que armes, girando rápido la frecuencia, no puedes ver nada interesante.
+
+64
+00:06:17,920 --> 00:06:18,540
+Siguiente.
+
+65
+00:06:18,960 --> 00:06:21,180
+Aquí hay un capacitor.
+
+66
+00:06:21,260 --> 00:06:24,200
+Capacitor tipo tubular de producción soviética.
+
+67
+00:06:24,300 --> 00:06:29,920
+Ahora los análogos de tales capacitores son capacitores de tántalo para montaje SMD.
+
+68
+00:06:31,040 --> 00:06:38,480
+La ventaja de estos capacitores es que aunque los calientes con un soldador, su capacitancia no deriva.
+
+69
+00:06:39,060 --> 00:06:43,120
+Son de alta estabilidad térmica.
+
+70
+00:06:43,540 --> 00:06:48,120
+Por eso exactamente hay que usar tales capacitores aquí, para que tu frecuencia no derive.
+
+71
+00:06:48,640 --> 00:07:05,080
+Porque tan pronto como ajustas al efecto y te alejas del regulador con aumento de temperatura, cambio en el lugar donde está este circuito, la frecuencia derivará y perderás el efecto.
+
+72
+00:07:05,800 --> 00:07:12,660
+La señal va al driver, el driver la amplifica y va a nuestro transistor.
+
+73
+00:07:13,940 --> 00:07:15,840
+Ahora arranquemos el circuito.
+
+74
+00:07:18,040 --> 00:07:22,460
+Nuestra alimentación se suministrará desde 15 voltios.
+
+75
+00:07:24,280 --> 00:07:26,060
+Alimentación del push-pull.
+
+76
+00:07:26,660 --> 00:07:29,740
+Estas baterías de 24 voltios.
+
+77
+00:07:32,020 --> 00:07:33,280
+¿Qué más es importante?
+
+78
+00:07:34,200 --> 00:07:40,200
+El regulador de voltaje está solo en la alimentación al chip controlador mismo.
+
+79
+00:07:40,780 --> 00:07:43,940
+Nunca pongas reguladores de voltaje en la alimentación del driver.
+
+80
+00:07:44,860 --> 00:07:52,820
+Un regulador como mucho puede pasar 3 amperios, pero el regulador es un circuito muy lento.
+
+81
+00:07:53,060 --> 00:07:58,000
+Y el driver tiene que formar un flanco empinado para cargar capacitancias de compuerta.
+
+82
+00:07:58,740 --> 00:08:05,820
+Por eso exactamente incluso drivers caros comprados de 6, 8, 12 amperios la gente pone.
+
+83
+00:08:06,900 --> 00:08:16,280
+No pueden controlar los transistores y los transistores explotan incluso a bajas potencias de consumo, porque están estos reguladores.
+
+84
+00:08:16,960 --> 00:08:31,400
+Y debes poner en la alimentación del canal del driver un capacitor cerámico de unos 5 microfaradios para formar un flanco empinado.
+
+85
+00:08:32,420 --> 00:08:35,120
+Esto aplica especialmente a drivers potentes.
+
+86
+00:08:36,480 --> 00:08:38,760
+Así se ve el esquema.
+
+87
+00:08:39,700 --> 00:08:41,080
+Mira los diodos.
+
+88
+00:08:43,540 --> 00:08:46,020
+Los diodos zener están aquí.
+
+89
+00:08:47,300 --> 00:08:50,060
+Este es el resistor de 1 kΩ trabajando.
+
+90
+00:08:52,180 --> 00:08:53,020
+Arrancando.
+
+91
+00:08:53,340 --> 00:08:54,720
+Conectando alimentación.
+
+92
+00:08:59,040 --> 00:09:07,400
+Vemos, el consumo del circuito es 15 voltios, 0,04 amperios.
+
+93
+00:09:08,180 --> 00:09:11,060
+Eso es más que suficiente para un control de calidad.
+
+94
+00:09:11,980 --> 00:09:12,620
+Y mirando.
+
+95
+00:09:13,060 --> 00:09:25,280
+Ahora el canal amarillo del osciloscopio está sobre la compuerta del transistor, y el canal azul del osciloscopio está sobre el drenaje.
+
+96
+00:09:26,020 --> 00:09:27,480
+Veamos qué pasa.
+
+97
+00:09:29,300 --> 00:09:32,260
+Y aquí vemos esta imagen interesante.
+
+98
+00:09:33,580 --> 00:09:35,440
+El canal amarillo es el control.
+
+99
+00:09:36,420 --> 00:09:40,080
+Y aquí el azul, lo que vemos aquí.
+
+100
+00:09:40,840 --> 00:09:45,880
+La amplitud del pico es casi 250 voltios.
+
+101
+00:09:45,920 --> 00:09:48,060
+Salta entre 238-250.
+
+102
+00:09:49,560 --> 00:09:51,460
+¿Por qué pasa esto?
+
+103
+00:09:53,280 --> 00:10:00,200
+Esto se hace ajustando este núcleo, ajustando su entrehierro.
+
+104
+00:10:01,000 --> 00:10:15,960
+Con esta parte del entrehierro en el núcleo, hay que ajustar este ancho, ajustar el número de vueltas y restablecer el ciclo útil en el canal.
+
+105
+00:10:16,660 --> 00:10:20,920
+Entonces, el entrehierro en el núcleo no debe hacerse grande.
+
+106
+00:10:21,080 --> 00:10:22,120
+Son tus pérdidas.
+
+107
+00:10:23,320 --> 00:10:26,920
+El núcleo se calentará, y nada bueno saldrá de ello.
+
+108
+00:10:26,980 --> 00:10:28,080
+Pero el entrehierro es obligatorio.
+
+109
+00:10:28,820 --> 00:10:34,440
+En este sistema necesitamos formar un pico estático con flanco empinado para el trabajo posterior.
+
+110
+00:10:35,860 --> 00:10:41,760
+El entrehierro, máximo papel de impresión A4.
+
+111
+00:10:42,140 --> 00:10:47,220
+En este caso el entrehierro en el núcleo es aún menor.
+
+112
+00:10:48,360 --> 00:10:49,960
+Es cinta de enmascarar.
+
+113
+00:10:51,380 --> 00:10:53,320
+Aquí y aquí está hecho.
+
+114
+00:10:53,620 --> 00:11:02,320
+El núcleo se sujeta con cinta aislante u otro material, pero no metal, para no cortocircuitar las mitades.
+
+115
+00:11:02,920 --> 00:11:05,400
+Presta atención a cómo está bobinado el sistema.
+
+116
+00:11:08,000 --> 00:11:14,980
+Los brazos del push-pull están en una mitad, la captura siempre está en la otra mitad.
+
+117
+00:11:15,720 --> 00:11:16,820
+¿Para qué se hace esto?
+
+118
+00:11:18,340 --> 00:11:24,920
+El bobinado de salida forma un pequeño campo magnético a su alrededor, cargando el núcleo.
+
+119
+00:11:25,040 --> 00:11:28,700
+Y no se propaga a todo el volumen de la ferrita.
+
+120
+00:11:29,700 --> 00:11:33,660
+Pero los bobinados de los brazos forman un campo magnético circular.
+
+121
+00:11:34,120 --> 00:11:36,020
+De esta forma se logra el aislamiento.
+
+122
+00:11:36,200 --> 00:11:49,800
+Cuando en este lado del sistema hay otros picos estáticos y trabajo, esto proporciona protección al transistor y evita un fuerte efecto inverso.
+
+123
+00:11:49,940 --> 00:11:52,480
+Estos son los llamados transformadores de aislamiento.
+
+124
+00:11:52,900 --> 00:12:00,440
+Tienen menor eficiencia operativa debido a que los bobinados están en núcleos diferentes esencialmente.
+
+125
+00:12:00,940 --> 00:12:05,460
+Pero en este caso, en este sistema, hay que hacerlo así.
+
+126
+00:12:05,660 --> 00:12:09,680
+No puedes devanar el bobinado del push-pull en un solo núcleo.
+
+127
+00:12:10,400 --> 00:12:18,760
+También puedes usar tales ferritas para el trabajo, deben ser grandes.
+
+128
+00:12:19,520 --> 00:12:24,140
+Las ferritas para este sistema deben tener gran capacidad de transferencia.
+
+129
+00:12:24,280 --> 00:12:26,740
+Esta ferrita específicamente es marca 2000.
+
+130
+00:12:28,420 --> 00:12:36,300
+Todos los efectos estáticos pueden obtenerse también en tales anillos, pero es más fácil obtenerlos en ferritas partidas.
+
+131
+00:12:37,340 --> 00:12:41,840
+Ahora veamos más de cerca qué pasa con el estático.
+
+132
+00:12:44,340 --> 00:12:47,560
+Nuestra alimentación es 24 voltios.
+
+133
+00:12:48,680 --> 00:12:57,120
+Estos picos, estas agujas, son exactamente la respuesta del medio a la operación de nuestro sistema.
+
+134
+00:12:57,640 --> 00:13:04,760
+Enviamos un pulso con flanco empinado allá, y le llega una respuesta, un clic.
+
+135
+00:13:06,140 --> 00:13:08,700
+Las agujas subsiguientes no nos interesan realmente.
+
+136
+00:13:08,940 --> 00:13:10,400
+No decaen.
+
+137
+00:13:10,880 --> 00:13:15,220
+Nos interesa la amplitud de este flanco de subida del pico.
+
+138
+00:13:16,260 --> 00:13:21,240
+Este pico finalmente eleva la amplitud general de operación.
+
+139
+00:13:23,920 --> 00:13:30,560
+Ahora mismo el ciclo útil de control es 11%.
+
+140
+00:13:30,560 --> 00:13:38,940
+Ahora cambiaré el ciclo útil, y veremos qué pasará.
+
+141
+00:13:44,070 --> 00:13:48,190
+El consumo del sistema en este momento está alrededor de cero.
+
+142
+00:13:50,230 --> 00:13:52,290
+Aumentando el ciclo útil.
+
+143
+00:14:03,240 --> 00:14:12,960
+Ahora ciclo útil 20%, 25%, 27%.
+
+144
+00:14:12,960 --> 00:14:20,200
+Se puede ver, con 27% de ciclo útil tenemos una señal bien formada.
+
+145
+00:14:21,240 --> 00:14:21,800
+Mirando.
+
+146
+00:14:22,280 --> 00:14:25,900
+El consumo ha subido a 400 mA.
+
+147
+00:14:29,520 --> 00:14:32,320
+Y ahora mira el canal azul.
+
+148
+00:14:33,100 --> 00:14:35,300
+Ahora quitamos el amarillo.
+
+149
+00:14:37,020 --> 00:14:39,060
+Nos interesa el canal azul.
+
+150
+00:14:40,000 --> 00:14:41,580
+Esta es la señal en el drenaje.
+
+151
+00:14:43,060 --> 00:14:47,620
+En el canal azul tenemos 50 V por división.
+
+152
+00:14:51,430 --> 00:14:53,890
+50 V por división.
+
+153
+00:14:55,250 --> 00:15:11,190
+La amplitud de la onda cuadrada cuando el estático está trabajando, el pico estático del medio y los picos no decrecientes, la amplitud sube de 24 V a 70 V.
+
+154
+00:15:12,590 --> 00:15:14,330
+Es decir, ¿qué estamos haciendo?
+
+155
+00:15:14,910 --> 00:15:22,410
+Obtenemos un pico estático, y este pico estático nos da una ganancia en la cuadrada hasta 70 V.
+
+156
+00:15:23,170 --> 00:15:27,030
+Esencialmente, estamos obteniendo una ganancia ya en el propio push-pull.
+
+157
+00:15:27,970 --> 00:15:33,190
+Es decir, este efecto interesante nos da, qué ganancia en este sistema.
+
+158
+00:15:33,710 --> 00:15:38,050
+Aquí, a los brazos, enviamos alimentación de 24V.
+
+159
+00:15:38,730 --> 00:15:41,770
+Con ayuda del estático la elevamos a 70V.
+
+160
+00:15:42,190 --> 00:15:46,650
+Y nuestro transformador trabaja en modo reductor.
+
+161
+00:15:47,070 --> 00:15:52,930
+Después de esto en realidad trabajamos con no 24V sino 70V.
+
+162
+00:15:53,250 --> 00:15:59,930
+Reduciendo esta ganancia, la enviamos a impulsar el circuito a tan mínimo consumo.
+
+163
+00:16:00,610 --> 00:16:05,030
+Es decir, se puede ver para qué sirve la regulación del ciclo útil en este sistema.
+
+164
+00:16:06,550 --> 00:16:13,290
+Y también, ahora cambiaré el canal amarillo del osciloscopio al drenaje del segundo transistor.
+
+165
+00:16:14,730 --> 00:16:17,550
+También configurar 50V.
+
+166
+00:16:24,420 --> 00:16:26,380
+Cambiar el canal.
+
+167
+00:16:29,380 --> 00:16:31,660
+Configurar el trigger.
+
+168
+00:16:40,540 --> 00:16:44,980
+Ahora ajustaremos todo a la señal.
+
+169
+00:16:48,180 --> 00:16:50,360
+Agregando ciclo útil ahora.
+
+170
+00:16:51,340 --> 00:16:52,360
+¿Y qué vemos?
+
+171
+00:16:52,500 --> 00:16:53,760
+Imagen interesante.
+
+172
+00:16:56,100 --> 00:17:06,880
+Vemos que el estático no solo elevó la amplitud de nuestra señal, sino que también la extendió en duración.
+
+173
+00:17:07,420 --> 00:17:17,940
+Es decir, en realidad la duración del control, independientemente de la longitud del pulso de control, es 50% de llenado.
+
+174
+00:17:18,460 --> 00:17:21,220
+50% en un canal, 50% en el otro.
+
+175
+00:17:23,320 --> 00:17:26,800
+Este truco es muy importante hacerlo en el push-pull.
+
+176
+00:17:28,100 --> 00:17:30,000
+Obtienes esta imagen.
+
+177
+00:17:31,000 --> 00:17:38,500
+Si combinamos, vemos que en realidad todo está lleno de señal.
+
+178
+00:17:46,400 --> 00:17:48,060
+Así trabaja el estático.
+
+179
+00:17:48,180 --> 00:17:49,600
+Si expandimos, vemos.
+
+180
+00:17:50,240 --> 00:17:52,000
+Nos interesa... aquí está, el ancho.
+
+181
+00:17:52,440 --> 00:17:54,720
+Nos interesa esta respuesta, el impacto.
+
+182
+00:17:55,520 --> 00:17:57,580
+Los picos subsiguientes, descendentes,
+
+183
+00:18:05,480 --> 00:18:08,800
+lo mismo estará en el canal amarillo.
+
+184
+00:18:13,570 --> 00:18:17,770
+Aquí el flanco de subida es menor.
+
+185
+00:18:18,090 --> 00:18:24,310
+También crecerá después, cuando el push-pull esté conectado a la bobina.
+
+186
+00:18:24,590 --> 00:18:35,870
+Porque al trabajar con estático, con electricidad natural, la bobina en la que ocurren estos efectos siempre se divide en zona de succión.
+
+187
+00:18:36,070 --> 00:18:40,390
+En este caso esta zona de succión está en el canal azul.
+
+188
+00:18:41,750 --> 00:18:44,010
+Y la zona de descarga de energía.
+
+189
+00:18:44,190 --> 00:18:47,790
+En la zona de succión la amplitud siempre es más alta.
+
+190
+00:18:48,170 --> 00:18:57,490
+Pero si damos un flujo de energía que luego irá a la bobina desde aquí, tendremos la misma señal en ambos canales en adelante.
+
+191
+00:18:57,730 --> 00:19:06,030
+Ahora veamos, vemos que la lámpara de neón brilla muy bien con el estático.
+
+192
+00:19:06,610 --> 00:19:18,290
+Estático, y en la zona de descarga, que es el extremo realmente frío de la bobina ahora, estas 10 más 10 vueltas, el brillo es menor.
+
+193
+00:19:18,430 --> 00:19:21,190
+Por eso exactamente el ancho del pulso es menor.
+
+194
+00:19:21,790 --> 00:19:23,810
+El estático debe estar presente en todas partes.
+
+195
+00:19:24,210 --> 00:19:32,790
+Aquí se puede ver algo de brillo en el disipador, se puede ver brillo en la alimentación, se puede ver en el control.
+
+196
+00:19:33,990 --> 00:19:38,010
+Donde sea que conectemos, el estático está presente en este sistema en todas partes.
+
+197
+00:19:38,090 --> 00:19:41,850
+Toca los pines del chip, en cualquier parte.
+
+198
+00:19:42,390 --> 00:19:48,010
+Es decir, este potencial estático está presente en todas partes.
+
+199
+00:19:48,210 --> 00:19:56,030
+Esto es lo que tenemos que transferir después a la bobina para activar procesos de alta frecuencia en ella.
+
+200
+00:19:58,450 --> 00:20:09,810
+Y este es el ajuste inicial, generalmente sin nada, que necesitas lograr de este núcleo, para que dé un potencial estático con el que trabajaremos después.
+
+201
+00:20:11,250 --> 00:20:14,470
+Una vez más los oscilogramas, cómo se ve.
+
+202
+00:20:20,180 --> 00:20:25,100
+Y ahora disminuiré el ciclo útil.
+
+203
+00:20:26,140 --> 00:20:29,920
+Ahora ciclo útil 46%, disminuyendo.
+
+204
+00:20:30,700 --> 00:20:34,820
+Podemos ver qué procesos están ocurriendo.
+
+205
+00:20:35,940 --> 00:20:42,260
+Es decir, vemos que el consumo del sistema está disminuyendo.
+
+206
+00:20:43,000 --> 00:20:43,640
+Mira.
+
+207
+00:20:44,400 --> 00:20:45,980
+La aguja baja suavemente.
+
+208
+00:20:47,160 --> 00:20:49,080
+Y el estático está trabajando para nosotros.
+
+209
+00:20:50,920 --> 00:20:55,660
+Por eso la regulación del ciclo útil es importante en este sistema.
+
+210
+00:20:55,780 --> 00:20:58,420
+No necesitamos encender lámparas.
+
+211
+00:21:00,940 --> 00:21:04,520
+Lo principal para nosotros es obtener este potencial estático.
+
+212
+00:21:04,660 --> 00:21:10,160
+Y vemos que en cada flanco empinado ocurren clics.
+
+213
+00:21:14,040 --> 00:21:16,400
+Disminuyendo más el ciclo útil.
+
+214
+00:21:18,120 --> 00:21:20,780
+Y prácticamente bajamos a cero.
+
+215
+00:21:21,600 --> 00:21:25,680
+Ahora el ciclo útil es alrededor del 3%.
+
+216
+00:21:25,680 --> 00:21:34,240
+Agregando un poquito y vemos que el pico estático es máximo.
+
+217
+00:21:51,960 --> 00:21:54,140
+Y una vez más el esquema.
+
+218
+00:21:55,300 --> 00:21:57,440
+Este esquema está probado, rodado.
+
+219
+00:21:57,980 --> 00:21:59,160
+Puedes usarlo.
+
+220
+00:21:59,600 --> 00:22:00,640
+Funciona excelente.

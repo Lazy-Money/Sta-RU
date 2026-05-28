@@ -1,0 +1,347 @@
+1
+00:00:00,750 --> 00:00:02,330
+Hola a todos.
+
+2
+00:00:02,770 --> 00:00:11,350
+Hoy veremos cómo funciona este accesorio amplificador para el generador de señales de laboratorio para probar nuestras bobinas.
+
+3
+00:00:12,230 --> 00:00:13,730
+No tiene nada complicado.
+
+4
+00:00:15,390 --> 00:00:31,930
+Está construido alrededor de un transistor IRF840, con un driver TC4420 para ese transistor en el disipador, y un chip intermediario enlazando el generador de señales de laboratorio y el driver.
+
+5
+00:00:32,070 --> 00:00:37,750
+El chip intermediario es el mismo que antes — un TC4093BP.
+
+6
+00:00:39,350 --> 00:00:48,750
+Para alimentar estos chips usamos un convertidor DC-DC construido sobre el LM2596.
+
+7
+00:00:49,470 --> 00:00:56,410
+Lo fijamos a 15 V con el potenciómetro de ajuste y le alimentamos un voltaje ligeramente mayor.
+
+8
+00:00:56,650 --> 00:01:00,730
+En mi caso es un convertidor de red de 18 V.
+
+9
+00:01:01,670 --> 00:01:04,290
+Puede correr de baterías también — lo que tengas a mano.
+
+10
+00:01:05,410 --> 00:01:10,050
+El esquema está mostrado en la imagen.
+
+11
+00:01:10,570 --> 00:01:18,970
+Por cierto, subiré todos mis esquemas a un servicio de compartición de archivos y dejaré el enlace bajo este video — igual que el que filmé antes.
+
+12
+00:01:20,490 --> 00:01:26,730
+En este punto deberías ver un oscilograma limpio y bonito así.
+
+13
+00:01:27,950 --> 00:01:30,010
+Veamos qué más.
+
+14
+00:01:30,450 --> 00:01:44,350
+La señal del generador de señales de laboratorio golpea uno de los disparadores Schmitt, se invierte, y luego la invertimos de nuevo en el segundo disparador Schmitt para obtener la señal verdadera.
+
+15
+00:01:44,410 --> 00:01:53,050
+Desde ahí, a través de un resistor amortiguador de 10 Ω, la señal llega al driver que controla la compuerta del FET.
+
+16
+00:01:53,970 --> 00:02:09,530
+Luego el FET conmuta nuestra alimentación principal — de baterías o cualquier otra fuente de alimentación — al inductor que impulsa nuestra bobina.
+
+17
+00:02:11,930 --> 00:02:18,910
+El conexionado no es complicado. Veamos cómo funciona.
+
+18
+00:02:19,850 --> 00:02:25,730
+Primero, este sistema se conecta al generador de señales de laboratorio.
+
+19
+00:02:26,590 --> 00:02:37,870
+El generador de laboratorio se cambia a modo de pulso, luego fijas la frecuencia de pulso en el control.
+
+20
+00:02:38,550 --> 00:02:48,950
+Nuestro circuito funciona hasta 2,5 MHz. Después de eso, fijamos la amplitud de la señal.
+
+21
+00:02:49,090 --> 00:02:56,670
+Amplitud de señal 6 voltios — ese es el mínimo al que este accesorio funcionará.
+
+22
+00:02:57,290 --> 00:03:05,890
+Si tienes un generador de señales de 5 voltios, necesitarás cambiar este chip de disparador Schmitt por lógica de 5 voltios.
+
+23
+00:03:06,050 --> 00:03:11,730
+También es compatible con este driver.
+
+24
+00:03:12,090 --> 00:03:22,110
+Solo necesitarías agregar un regulador L7805 después de este convertidor para la alimentación lógica de 5 voltios.
+
+25
+00:03:23,190 --> 00:03:25,250
+Y el circuito funcionará perfectamente.
+
+26
+00:03:27,510 --> 00:03:31,630
+Una vez fijada la amplitud, lo siguiente es el ciclo útil.
+
+27
+00:03:31,750 --> 00:03:34,670
+Ahora mismo el ciclo útil está al 73%.
+
+28
+00:03:34,670 --> 00:03:36,770
+Déjame mostrarte qué hace el ciclo útil.
+
+29
+00:03:37,490 --> 00:03:43,530
+Alimento potencia desde la fuente al transistor.
+
+30
+00:03:50,200 --> 00:03:51,940
+Vemos el oscilograma.
+
+31
+00:03:52,640 --> 00:03:56,080
+Esto es lo que deberías obtener.
+
+32
+00:03:57,360 --> 00:04:00,400
+Ahora mira — voy a cambiar el ciclo útil.
+
+33
+00:04:00,740 --> 00:04:03,460
+En este caso, disminuyéndolo.
+
+34
+00:04:04,620 --> 00:04:09,380
+Mira — la señal se vuelve sucia.
+
+35
+00:04:10,400 --> 00:04:22,740
+Así que para cada bobina tenemos que marcar la señal individualmente, junto con el punto de operación del transistor a esa frecuencia.
+
+36
+00:04:23,240 --> 00:04:25,260
+Ese es el ajuste del ciclo útil.
+
+37
+00:04:25,780 --> 00:04:27,980
+Aquí lo bajé al 10%.
+
+38
+00:04:27,980 --> 00:04:31,740
+Trayéndolo de vuelta a una señal limpia.
+
+39
+00:04:32,480 --> 00:04:40,560
+En este caso a esta frecuencia, empieza a funcionar alrededor del 71%.
+
+40
+00:04:41,720 --> 00:04:48,240
+Una vez que tenemos una señal limpia, empezamos a sondear nuestra bobina.
+
+41
+00:04:49,920 --> 00:04:51,000
+¿Qué obtenemos?
+
+42
+00:04:51,320 --> 00:05:07,900
+Con este tipo de excitación, con la frecuencia de resonancia LC para esta bobina fijada en 1,68 MHz, las bobinas empiezan a comportarse igual que una bobina Tesla.
+
+43
+00:05:07,980 --> 00:05:17,620
+Ahora mismo ambos extremos están al aire, no está conectada a tierra, y puedes ver que hay una descarga —
+
+44
+00:05:21,630 --> 00:05:24,490
+básicamente el mismo tipo de corona que un Tesla.
+
+45
+00:05:33,960 --> 00:05:41,840
+La bobina está funcionando en modo cuarto de onda — puedes notarlo por cómo brilla la lámpara de neón.
+
+46
+00:05:42,800 --> 00:05:45,760
+Cerca del extremo caliente el brillo se hace más intenso.
+
+47
+00:05:46,900 --> 00:05:58,660
+Hay un tubo fluorescente paralelo a la bobina — para encenderlo, tocamos el extremo caliente a su terminal.
+
+48
+00:05:59,620 --> 00:06:04,840
+Toqué el extremo caliente y puedes ver que la lámpara se enciende brillante.
+
+49
+00:06:05,500 --> 00:06:08,280
+Después de desconectar, la lámpara brilla tenuemente.
+
+50
+00:06:09,660 --> 00:06:12,100
+¿Y qué deberíamos ver en esta lámpara?
+
+51
+00:06:13,700 --> 00:06:22,400
+La cámara puede que no lo capte, pero hay franjas corriendo a lo largo de la lámpara — todo el tubo se pone con franjas.
+
+52
+00:06:23,320 --> 00:06:39,120
+Y si la bobina está devanada correctamente, esas franjas estarán nítidamente definidas. Quieres encontrar la frecuencia en el generador de señales de laboratorio donde las franjas dejen de moverse por completo.
+
+53
+00:06:39,720 --> 00:06:43,780
+Si eso pasa, la bobina está construida correctamente.
+
+54
+00:06:43,780 --> 00:07:04,580
+Si no puedes hacer que las franjas se detengan cambiando la frecuencia, y siguen moviéndose, entonces la bobina está devanada ligeramente mal — no estás obteniendo una onda estacionaria longitudinal limpia alrededor de la bobina.
+
+55
+00:07:04,580 --> 00:07:06,020
+Alrededor de esta bobina.
+
+56
+00:07:06,780 --> 00:07:17,600
+Necesitarías retocarla — ya sea aumentar o disminuir la longitud del cable. Eso es cuestión de prueba y error.
+
+57
+00:07:18,980 --> 00:07:37,200
+Pero el objetivo principal es que la bobina arranque y se comporte como un transformador Tesla — los neones y las lámparas de descarga de gas deberían encenderse, y lo más importante, quieres ver esas franjas en la lámpara.
+
+58
+00:07:38,920 --> 00:07:40,300
+La señal de nuevo.
+
+59
+00:07:42,680 --> 00:07:46,100
+Ya mostré cómo fijarla.
+
+60
+00:07:46,860 --> 00:07:48,300
+Y el consumo de corriente en este punto.
+
+61
+00:07:50,500 --> 00:07:54,260
+1,32 amperios a 12,4 voltios.
+
+62
+00:07:55,300 --> 00:08:05,300
+Cuanto mejor esté devanada la bobina, menos potencia de entrada necesita, y más brillante se enciende la lámpara.
+
+63
+00:08:06,680 --> 00:08:13,620
+La lámpara también brilla más si conectamos tierra a esta bobina.
+
+64
+00:08:14,220 --> 00:08:21,420
+Mira — conecto tierra, y puedes ver el aumento de brillo.
+
+65
+00:08:25,060 --> 00:08:27,060
+Sin cambiar la potencia.
+
+66
+00:08:29,020 --> 00:08:35,220
+Podemos echar un vistazo con la segunda punta para ver qué está pasando.
+
+67
+00:08:35,480 --> 00:08:37,160
+La pondré junto a la bobina.
+
+68
+00:08:44,260 --> 00:08:46,800
+Veamos qué tenemos en la bobina.
+
+69
+00:08:47,020 --> 00:08:50,460
+En la bobina a esta frecuencia tenemos una onda senoidal.
+
+70
+00:08:51,360 --> 00:08:56,920
+En la onda senoidal puedes ver claramente el golpe del pulso.
+
+71
+00:08:58,620 --> 00:08:59,580
+Un pequeño bulto agudo.
+
+72
+00:09:00,000 --> 00:09:06,800
+Ahora intentemos cambiar la frecuencia del generador de laboratorio.
+
+73
+00:09:08,120 --> 00:09:10,200
+Estoy cambiando la frecuencia, bajando.
+
+74
+00:09:10,980 --> 00:09:12,320
+Aquí hay un rasgo característico.
+
+75
+00:09:12,380 --> 00:09:29,140
+Si la bobina absorbe bien tu señal — es decir, si está bien adaptada en frecuencia — los picos en el inductor disminuirán en amplitud.
+
+76
+00:09:29,840 --> 00:09:39,620
+Mira — desajusto el sistema, el pico crece, y la amplitud en la bobina misma cae.
+
+77
+00:09:40,020 --> 00:09:43,420
+Eso es señal de que estás en la frecuencia incorrecta.
+
+78
+00:09:45,860 --> 00:09:54,840
+Trayéndolo de vuelta — y obtendremos la misma imagen si subimos en frecuencia.
+
+79
+00:09:57,680 --> 00:10:02,740
+Lo mismo — el pico crece, la señal cae.
+
+80
+00:10:03,820 --> 00:10:15,320
+Apuntamos a amplitud máxima en la bobina y brillo máximo de las lámparas a su alrededor.
+
+81
+00:10:15,620 --> 00:10:20,480
+Pero lo más importante, de nuevo, esas franjas en la lámpara.
+
+82
+00:10:20,880 --> 00:10:24,680
+Cuando las veas, estarán corriendo caóticamente.
+
+83
+00:10:25,280 --> 00:10:28,100
+La cámara simplemente no lo capta — están corriendo ahora mismo.
+
+84
+00:10:28,780 --> 00:10:30,400
+El ojo lo capta fácilmente.
+
+85
+00:10:31,380 --> 00:10:36,760
+Nuestro trabajo es devanar la bobina de modo que esas franjas se detengan en seco.
+
+86
+00:10:38,720 --> 00:10:40,460
+Buena suerte a todos los que estén armando.
+
+87
+00:10:43,340 --> 00:10:46,040
+El esquema se publicará bajo el video.

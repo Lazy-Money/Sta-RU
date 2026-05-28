@@ -1,0 +1,1311 @@
+1
+00:00:01,060 --> 00:00:03,600
+Hola a todos, soy Stalker.
+
+2
+00:00:03,900 --> 00:00:04,700
+Continuando.
+
+3
+00:00:04,880 --> 00:00:12,680
+Hoy hablaremos del control de nuestro Tesla, sobre la placa para él.
+
+4
+00:00:13,500 --> 00:00:14,840
+Primero veamos.
+
+5
+00:00:15,720 --> 00:00:18,300
+Aquí está mi esquema de control.
+
+6
+00:00:18,680 --> 00:00:35,120
+Ahora llegamos a este lugar, es decir, la salida de esta placa de control de sincronización del push-pull, donde un chip fija la ubicación del impacto de ráfaga en el offset, y otro fija el ancho de ráfaga
+
+7
+00:00:35,120 --> 00:00:36,720
+en el otro chip.
+
+8
+00:00:36,720 --> 00:00:41,260
+Esta salida está representada.
+
+9
+00:00:41,360 --> 00:00:47,520
+Van tres cables, y llega a esta placa de control de llave del Tesla.
+
+10
+00:00:48,940 --> 00:00:50,800
+Esto lo dejamos a un lado.
+
+11
+00:00:53,400 --> 00:01:01,300
+Ahora observaremos el oscilograma en el canal amarillo del osciloscopio.
+
+12
+00:01:01,300 --> 00:01:05,720
+Está conectado directamente a lo que llega de la placa.
+
+13
+00:01:06,600 --> 00:01:11,000
+Deberíamos obtener tales pulsos de sincronización.
+
+14
+00:01:12,940 --> 00:01:14,980
+Ahora los expandiremos.
+
+15
+00:01:18,100 --> 00:01:23,700
+El ancho de estos pulsos de sincronización se cambia con un chip.
+
+16
+00:01:24,300 --> 00:01:42,820
+Y si giras el resistor en la placa, mira, por ejemplo, ahora estoy disminuyendo el ancho de este pulso, y esta disminución fijará el número de pulsos en nuestra ráfaga.
+
+17
+00:01:43,820 --> 00:01:45,960
+Todo en orden.
+
+18
+00:01:47,200 --> 00:01:53,880
+Este es, para los interesados, el consumo general de todo el controlador con todos los drivers.
+
+19
+00:01:55,960 --> 00:02:00,400
+Y aquí está el esquema de control del Tesla mismo.
+
+20
+00:02:03,720 --> 00:02:06,860
+¿Qué observamos aquí?
+
+21
+00:02:07,580 --> 00:02:08,600
+Pasando por la placa.
+
+22
+00:02:09,140 --> 00:02:11,960
+Aquí tenemos alimentación llegando.
+
+23
+00:02:13,020 --> 00:02:14,020
+15 voltios.
+
+24
+00:02:14,360 --> 00:02:17,220
+El pulso mismo llegó al punto central.
+
+25
+00:02:17,940 --> 00:02:18,900
+Y el cable común.
+
+26
+00:02:19,700 --> 00:02:26,000
+Esto está representado rojo, común negro, y el cable delgado.
+
+27
+00:02:26,720 --> 00:02:28,800
+Este es el de señal.
+
+28
+00:02:30,100 --> 00:02:30,940
+¿Qué vemos?
+
+29
+00:02:31,120 --> 00:02:38,060
+La alimentación también llega directamente al regulador con su conexionado.
+
+30
+00:02:38,060 --> 00:02:39,100
+Este es estándar.
+
+31
+00:02:39,160 --> 00:02:40,640
+Obligatoriamente a través de un choque.
+
+32
+00:02:41,140 --> 00:02:43,000
+De interferencias un capacitor más.
+
+33
+00:02:43,800 --> 00:02:45,980
+Lo mismo que en la placa anterior.
+
+34
+00:02:47,000 --> 00:02:54,740
+Y obligatoriamente la alimentación que va, llega directamente al driver que controla la llave.
+
+35
+00:02:55,880 --> 00:02:57,280
+Sin ningún regulador.
+
+36
+00:02:57,520 --> 00:02:58,440
+Esto es obligatorio.
+
+37
+00:03:00,500 --> 00:03:03,280
+Yendo, mirando más allá, qué tenemos.
+
+38
+00:03:03,280 --> 00:03:09,220
+Para empezar la señal alcanza el driver IR2113.
+
+39
+00:03:10,100 --> 00:03:11,460
+Alcanza su canal.
+
+40
+00:03:11,640 --> 00:03:13,120
+Este es el décimo pin, entrada.
+
+41
+00:03:13,820 --> 00:03:15,080
+Y sale del séptimo.
+
+42
+00:03:15,720 --> 00:03:20,220
+A través de un resistor va al diodo KD522.
+
+43
+00:03:21,020 --> 00:03:24,120
+O cualquier otro de acción rápida que encuentres.
+
+44
+00:03:25,080 --> 00:03:28,120
+Y llega a este puente.
+
+45
+00:03:28,780 --> 00:03:32,540
+Este puente está representado en la placa como esta cosa.
+
+46
+00:03:32,540 --> 00:03:39,880
+También se ve un puente metálico activado.
+
+47
+00:03:40,580 --> 00:03:42,020
+¿Qué nos da esto?
+
+48
+00:03:42,120 --> 00:03:48,280
+Si quitas este puente, el Tesla funcionará análogamente a un Kacher.
+
+49
+00:03:48,620 --> 00:03:50,380
+Es decir, en modo continuo.
+
+50
+00:03:50,800 --> 00:03:55,480
+El generador no se romperá y irá generación continua.
+
+51
+00:03:57,380 --> 00:04:02,100
+Quien necesite esta función, quita la conexión y eso es todo.
+
+52
+00:04:02,100 --> 00:04:04,100
+Y el Tesla se convierte en un Kacher.
+
+53
+00:04:05,020 --> 00:04:13,000
+Siguiente, desde él la señal nos llega al chip TC4093BP.
+
+54
+00:04:13,720 --> 00:04:16,620
+Es decir, qué pasa aquí, en este chip.
+
+55
+00:04:17,720 --> 00:04:24,900
+Ahora veremos más de cerca la imagen en lógica, para que esté claro.
+
+56
+00:04:25,470 --> 00:04:31,900
+Aquí está nuestra señal que va del push-pull en el osciloscopio.
+
+57
+00:04:35,550 --> 00:04:41,010
+Alcanza el driver en el canal, se amplifica y alcanza el diodo.
+
+58
+00:04:41,130 --> 00:04:43,720
+Después de eso al elemento lógico de este chip.
+
+59
+00:04:44,570 --> 00:04:48,610
+Sobre este elemento lógico se construye un generador controlador.
+
+60
+00:04:48,610 --> 00:04:52,150
+Está etiquetado como frecuencia de ráfaga.
+
+61
+00:04:52,250 --> 00:04:57,090
+Aquí este resistor es 200 Ω, 260 Ω.
+
+62
+00:04:57,230 --> 00:05:00,750
+De salida a entrada se envía y al capacitor.
+
+63
+00:05:01,530 --> 00:05:02,910
+¿Cómo funciona este circuito?
+
+64
+00:05:05,010 --> 00:05:09,970
+Tenemos, cuando hay un nivel bajo de señal en la entrada.
+
+65
+00:05:10,870 --> 00:05:14,650
+Aquí digamos, el disparador Schmitt invierte.
+
+66
+00:05:14,730 --> 00:05:16,270
+Tenemos un nivel alto de señal.
+
+67
+00:05:16,270 --> 00:05:22,130
+El nivel alto de señal se envía a través de resistores a la entrada del capacitor.
+
+68
+00:05:22,670 --> 00:05:27,910
+El capacitor carga a potencial alto, al punto de disparo del trigger.
+
+69
+00:05:28,930 --> 00:05:32,070
+Y la señal en la salida cae a bajo.
+
+70
+00:05:32,270 --> 00:05:35,990
+Después de esto el capacitor se descarga.
+
+71
+00:05:36,850 --> 00:05:40,490
+De nuevo aquí nivel alto de señal y todo se repite.
+
+72
+00:05:40,650 --> 00:05:44,350
+Es decir, sobre este circuito se construye para nosotros un autogenerador.
+
+73
+00:05:44,350 --> 00:05:47,210
+Su frecuencia se cambia con este resistor.
+
+74
+00:05:47,430 --> 00:05:52,050
+Es decir, cambiamos el número de cargas que van a la placa de este capacitor.
+
+75
+00:05:52,570 --> 00:05:56,730
+En consecuencia, esta cadena de temporización crea generación para nosotros.
+
+76
+00:05:57,670 --> 00:05:59,950
+¿Qué hace este diodo?
+
+77
+00:06:00,210 --> 00:06:04,970
+Este diodo, a través de él, a través del driver llega nivel alto.
+
+78
+00:06:05,490 --> 00:06:09,950
+Este diodo bloquea, satura bruscamente la placa del capacitor.
+
+79
+00:06:10,600 --> 00:06:15,130
+Y como nivel alto se mantiene aquí, aquí en salida es bajo.
+
+80
+00:06:15,210 --> 00:06:18,530
+Listo, el circuito se detiene y la generación frena.
+
+81
+00:06:18,950 --> 00:06:21,170
+Es decir, ¿para qué necesitamos esta señal?
+
+82
+00:06:21,610 --> 00:06:24,930
+Esta señal en realidad, esta cuadrada grande.
+
+83
+00:06:25,550 --> 00:06:29,990
+Este es el tiempo durante el cual este capacitor está bloqueado.
+
+84
+00:06:31,010 --> 00:06:38,250
+Y esta señal, este es el tiempo dado para que el circuito continúe la generación.
+
+85
+00:06:38,250 --> 00:06:44,110
+De esta manera para nosotros se construye un generador de fijación de frecuencia para el Tesla.
+
+86
+00:06:44,670 --> 00:06:47,990
+Siguiente, ¿por qué se usa el driver?
+
+87
+00:06:48,390 --> 00:06:50,550
+Si sin él no obtendrás nada.
+
+88
+00:06:51,350 --> 00:06:56,470
+El primer pulso, siempre tendrá su ancho cambiando.
+
+89
+00:06:56,850 --> 00:06:59,090
+Puedes intentar hacerlo sin el driver.
+
+90
+00:06:59,210 --> 00:07:07,410
+Verás que el ancho del primer pulso en la ráfaga del Tesla será diferente respecto a otros pulsos subsiguientes.
+
+91
+00:07:07,410 --> 00:07:08,930
+Y se perderá la estabilidad.
+
+92
+00:07:09,110 --> 00:07:18,110
+Además, aquí ves que la salida de este elemento lógico también se envía a la segunda entrada del driver.
+
+93
+00:07:18,310 --> 00:07:22,290
+Y a través de él sale más allá, a la siguiente cadena.
+
+94
+00:07:22,770 --> 00:07:29,710
+Es decir, el driver separa completamente este elemento lógico de todas las influencias externas.
+
+95
+00:07:30,230 --> 00:07:36,650
+Es decir, de pulsos de alimentación aislado, y del circuito posterior ocurre aislamiento.
+
+96
+00:07:36,650 --> 00:07:39,870
+Y este circuito muy establemente mantiene la frecuencia.
+
+97
+00:07:42,210 --> 00:07:48,810
+De esta manera logramos estabilidad térmica y eliminamos derivas de frecuencia.
+
+98
+00:07:49,470 --> 00:08:03,910
+Siguiente por esquema, entonces, la salida de esta frecuencia en ráfagas va a la siguiente cadena, que también es de temporización, responsable del ciclo útil.
+
+99
+00:08:03,910 --> 00:08:10,410
+El ciclo útil cambia de 30 y prácticamente al 50% dependiendo de la frecuencia.
+
+100
+00:08:10,490 --> 00:08:14,030
+Bueno, será en algún lugar quizás 48% máximo.
+
+101
+00:08:15,290 --> 00:08:26,150
+Esto se ensambla con un resistor amortiguador, resistor de ajuste 310 Ω y capacitancia 470 pF.
+
+102
+00:08:27,090 --> 00:08:33,590
+Alcanza también en este mismo chip TC4093 el segundo elemento lógico.
+
+103
+00:08:34,590 --> 00:08:36,450
+Cómo funciona el circuito.
+
+104
+00:08:37,050 --> 00:08:42,890
+También regulamos el número de cargas pasadas por unidad de tiempo, cargando la placa.
+
+105
+00:08:43,390 --> 00:08:55,590
+Y, en consecuencia, de esta manera también trabajamos en el punto de histéresis de este disparador, este elemento, y nuestro ciclo útil cambia.
+
+106
+00:08:56,130 --> 00:09:00,670
+Un elemento obligatorio es este pequeño resistor de 1 kΩ.
+
+107
+00:09:00,670 --> 00:09:03,790
+Sin él, olvídate, nada funcionará en absoluto.
+
+108
+00:09:04,530 --> 00:09:10,450
+Siguiente, también necesitamos un elemento del chip para inversión, y obtenemos nuestras ráfagas.
+
+109
+00:09:12,270 --> 00:09:19,190
+Es decir, el esquema es simple, confiable como un AK-47, recomiendo para el armado.
+
+110
+00:09:19,850 --> 00:09:21,830
+Hemos analizado la lógica de acción.
+
+111
+00:09:22,530 --> 00:09:24,170
+Así se ve aquí.
+
+112
+00:09:24,330 --> 00:09:25,030
+Mirando.
+
+113
+00:09:29,010 --> 00:09:37,770
+Driver, su conexionado, diodo, puente alcanza el conexionado de los elementos lógicos.
+
+114
+00:09:37,870 --> 00:09:42,330
+Aquí está representado nuestro resistor.
+
+115
+00:09:42,450 --> 00:09:44,610
+Vemos, este afecta la frecuencia.
+
+116
+00:09:45,830 --> 00:09:48,150
+Resistor de ajuste y capacitancia.
+
+117
+00:09:49,150 --> 00:09:57,190
+Bueno y aquí, desde la salida tomamos la señal amplificada.
+
+118
+00:09:57,630 --> 00:09:59,930
+Es decir, obtenemos la salida en el cuarto pin.
+
+119
+00:10:00,470 --> 00:10:04,490
+Ahí fue, nuevamente amplificada por el segundo canal del driver.
+
+120
+00:10:05,090 --> 00:10:06,530
+Resistor de 20 Ω.
+
+121
+00:10:07,370 --> 00:10:09,450
+Y aquí al ajuste del ciclo útil.
+
+122
+00:10:09,890 --> 00:10:11,790
+Este resistor de 1 kΩ.
+
+123
+00:10:12,350 --> 00:10:14,610
+Eso es todo, siguiente ocurre una inversión más.
+
+124
+00:10:14,610 --> 00:10:19,350
+Aquí entrada del elemento lógico 9,8.
+
+125
+00:10:19,710 --> 00:10:20,930
+Salida diez.
+
+126
+00:10:21,050 --> 00:10:22,610
+Salió del diez.
+
+127
+00:10:22,870 --> 00:10:27,890
+A las otras dos entradas del elemento lógico 13,2 invertidas.
+
+128
+00:10:28,170 --> 00:10:32,870
+Y ya enviada a través de un resistor de 10 Ω al driver.
+
+129
+00:10:33,570 --> 00:10:36,810
+Nuestro driver es UCC 37322.
+
+130
+00:10:38,290 --> 00:10:39,810
+Qué hay en el esquema aquí.
+
+131
+00:10:40,810 --> 00:10:43,130
+Driver a través de 1,5 Ω a la compuerta.
+
+132
+00:10:43,130 --> 00:10:45,290
+Transistor K2611.
+
+133
+00:10:46,310 --> 00:10:49,870
+El transistor debe trabajar a través de un diodo de acción rápida.
+
+134
+00:10:50,550 --> 00:10:52,510
+En este caso MUR860.
+
+135
+00:10:53,410 --> 00:10:57,390
+Y luego seleccioné un resistor de 2 Ω aquí.
+
+136
+00:10:58,310 --> 00:11:03,410
+Se necesita para el trabajo de este transistor sin sobrecarga.
+
+137
+00:11:04,210 --> 00:11:05,870
+Siguiente al inductor del Tesla.
+
+138
+00:11:07,290 --> 00:11:09,830
+Así se hace en la técnica esquemática.
+
+139
+00:11:09,830 --> 00:11:14,430
+Aquí está nuestro resistor amortiguador en la compuerta 1,5 Ω.
+
+140
+00:11:15,470 --> 00:11:20,810
+Aquí está el resistor de drenaje en la compuerta 1 kΩ.
+
+141
+00:11:23,010 --> 00:11:27,530
+Por cierto, aquí no terminé de dibujarlo.
+
+142
+00:11:27,890 --> 00:11:30,590
+Esto debe hacerse.
+
+143
+00:11:31,530 --> 00:11:33,450
+Sin él no funcionará.
+
+144
+00:11:33,690 --> 00:11:35,570
+Ahora corregiremos esto.
+
+145
+00:11:36,570 --> 00:11:40,850
+Justo frente a ti, cómo se ve.
+
+146
+00:11:41,350 --> 00:11:43,610
+Dibujando el resistor así.
+
+147
+00:11:45,410 --> 00:11:48,550
+Y aquí al cable común.
+
+148
+00:11:48,890 --> 00:11:49,210
+Uno.
+
+149
+00:11:50,910 --> 00:11:52,990
+Y así pasamos.
+
+150
+00:11:53,890 --> 00:11:55,150
+Y a la compuerta.
+
+151
+00:11:56,870 --> 00:12:00,410
+Etiqueta 1 kΩ.
+
+152
+00:12:02,730 --> 00:12:05,130
+Debe hacerse.
+
+153
+00:12:10,010 --> 00:12:14,730
+La alimentación de la llave se suministra a través de un convertidor.
+
+154
+00:12:14,910 --> 00:12:19,970
+En mi caso hice un convertidor 12 a 200 V convierte.
+
+155
+00:12:20,690 --> 00:12:22,050
+Aquí está esta placa.
+
+156
+00:12:23,150 --> 00:12:25,210
+Por tipo también control push-pull.
+
+157
+00:12:25,930 --> 00:12:27,390
+Transformador elevador.
+
+158
+00:12:27,390 --> 00:12:30,070
+¿Qué se hizo aquí en este convertidor?
+
+159
+00:12:30,930 --> 00:12:32,730
+Realimentación de voltaje.
+
+160
+00:12:32,930 --> 00:12:37,550
+Es decir, capacidad de fijar el valor del voltaje de alimentación.
+
+161
+00:12:38,010 --> 00:12:42,390
+El positivo va directamente al inductor.
+
+162
+00:12:44,210 --> 00:12:46,410
+A este para el Tesla.
+
+163
+00:12:47,290 --> 00:12:50,410
+Y el negativo va a la fuente del transistor.
+
+164
+00:12:51,390 --> 00:12:53,650
+El voltaje hay que cambiarlo para el ajuste.
+
+165
+00:12:54,070 --> 00:12:55,330
+Este es un factor importante.
+
+166
+00:12:56,230 --> 00:12:58,050
+Ajustando todo este sistema.
+
+167
+00:12:58,370 --> 00:13:00,530
+Es decir, no solo ciclo útil aquí.
+
+168
+00:13:01,170 --> 00:13:02,710
+Sino también voltaje de alimentación.
+
+169
+00:13:02,830 --> 00:13:04,090
+Todo esto necesita coordinarse.
+
+170
+00:13:04,170 --> 00:13:05,450
+El sistema no funcionará.
+
+171
+00:13:05,970 --> 00:13:07,870
+Si suministras demasiado.
+
+172
+00:13:08,510 --> 00:13:09,690
+O muy poco.
+
+173
+00:13:09,830 --> 00:13:12,170
+Este parámetro también hay que seleccionarlo.
+
+174
+00:13:13,210 --> 00:13:13,850
+Individualmente.
+
+175
+00:13:13,910 --> 00:13:16,410
+En videos posteriores mostraré cómo funciona el Tesla.
+
+176
+00:13:16,510 --> 00:13:18,910
+Aunque en mi canal ya hay Teslas grabados.
+
+177
+00:13:19,470 --> 00:13:22,110
+En el clip sobre el trabajo de este Tesla.
+
+178
+00:13:22,230 --> 00:13:22,770
+Y este esquema.
+
+179
+00:13:22,770 --> 00:13:23,890
+Hay video.
+
+180
+00:13:26,010 --> 00:13:28,150
+Operación del transformador Tesla.
+
+181
+00:13:28,210 --> 00:13:29,470
+Ajuste preliminar.
+
+182
+00:13:29,530 --> 00:13:30,450
+Puedes mirar.
+
+183
+00:13:31,210 --> 00:13:32,850
+Qué oscilograma sale ahí.
+
+184
+00:13:32,930 --> 00:13:33,610
+Es suficiente.
+
+185
+00:13:33,730 --> 00:13:35,770
+En mi caso 130 voltios.
+
+186
+00:13:36,650 --> 00:13:37,990
+Solo 4 pulsos.
+
+187
+00:13:39,190 --> 00:13:41,490
+Y el sistema funciona muy bien.
+
+188
+00:13:42,890 --> 00:13:44,410
+Filmaré el esquema una vez más.
+
+189
+00:13:44,810 --> 00:13:45,730
+De cerca.
+
+190
+00:13:46,770 --> 00:13:48,850
+Y pasando a los oscilogramas.
+
+191
+00:13:50,470 --> 00:13:51,060
+Entonces.
+
+192
+00:13:52,050 --> 00:13:52,610
+Aquí.
+
+193
+00:13:53,090 --> 00:13:54,090
+Segundo canal.
+
+194
+00:13:54,670 --> 00:13:55,390
+Azul.
+
+195
+00:13:55,550 --> 00:13:58,870
+Está en la compuerta del transistor.
+
+196
+00:13:59,650 --> 00:14:00,690
+Encendiendo.
+
+197
+00:14:02,630 --> 00:14:04,190
+Y vemos.
+
+198
+00:14:04,350 --> 00:14:05,710
+Ráfagas de pulsos.
+
+199
+00:14:06,390 --> 00:14:07,390
+Expandir.
+
+200
+00:14:08,730 --> 00:14:09,990
+En este caso.
+
+201
+00:14:10,630 --> 00:14:11,410
+Ahora tenemos.
+
+202
+00:14:14,400 --> 00:14:16,330
+2,5 pulsos.
+
+203
+00:14:17,670 --> 00:14:19,330
+El sistema está marchando.
+
+204
+00:14:20,190 --> 00:14:22,470
+Ahora encontraré mi destornillador.
+
+205
+00:14:24,050 --> 00:14:25,370
+Y ajustaremos.
+
+206
+00:14:25,550 --> 00:14:27,070
+En la placa tenemos.
+
+207
+00:14:28,090 --> 00:14:30,250
+Resistor de fijación de frecuencia.
+
+208
+00:14:30,930 --> 00:14:34,770
+Y ciclo útil en la ráfaga.
+
+209
+00:14:35,050 --> 00:14:35,770
+Ajuste.
+
+210
+00:14:36,510 --> 00:14:38,730
+Ahora giraré el resistor.
+
+211
+00:14:38,890 --> 00:14:40,190
+En esta placa.
+
+212
+00:14:40,710 --> 00:14:42,390
+Este es el control.
+
+213
+00:14:42,410 --> 00:14:43,470
+Del ancho de ráfaga.
+
+214
+00:14:45,110 --> 00:14:45,560
+Veamos.
+
+215
+00:14:46,250 --> 00:14:46,570
+Cómo.
+
+216
+00:14:47,160 --> 00:14:49,110
+Funciona el esquema.
+
+217
+00:14:49,810 --> 00:14:50,430
+Mira.
+
+218
+00:14:51,410 --> 00:14:53,270
+Ahora estoy disminuyendo.
+
+219
+00:14:53,710 --> 00:14:55,770
+Veremos el pulso de sincronización disminuir.
+
+220
+00:14:56,330 --> 00:14:56,910
+Y aquí en.
+
+221
+00:14:57,630 --> 00:14:58,990
+La traza azul.
+
+222
+00:14:59,650 --> 00:15:01,630
+Vemos que con este sistema.
+
+223
+00:15:01,830 --> 00:15:03,090
+Puedes, este esquema.
+
+224
+00:15:03,170 --> 00:15:04,370
+Permite hacer incluso.
+
+225
+00:15:04,950 --> 00:15:07,050
+Un generador de pulsos de nanosegundos.
+
+226
+00:15:07,970 --> 00:15:09,590
+Puedes hacer la ráfaga.
+
+227
+00:15:09,650 --> 00:15:10,450
+Tan pequeña.
+
+228
+00:15:10,450 --> 00:15:11,270
+Que haya uno.
+
+229
+00:15:11,390 --> 00:15:13,970
+Estoy agregando dos pulsos.
+
+230
+00:15:16,210 --> 00:15:17,490
+En la ráfaga.
+
+231
+00:15:18,330 --> 00:15:19,010
+Tres.
+
+232
+00:15:21,190 --> 00:15:22,950
+Ajuste hasta 10 pulsos.
+
+233
+00:15:23,050 --> 00:15:24,090
+No lo desenrollaré todo.
+
+234
+00:15:24,230 --> 00:15:24,730
+Cuatro.
+
+235
+00:15:26,070 --> 00:15:28,290
+Cuando armes, pruébenlo ustedes mismos.
+
+236
+00:15:28,450 --> 00:15:29,530
+Este sistema cinco.
+
+237
+00:15:30,410 --> 00:15:31,210
+Y así sucesivamente.
+
+238
+00:15:31,770 --> 00:15:32,690
+Volvamos.
+
+239
+00:15:32,930 --> 00:15:35,790
+Me interesa operación de 4-5 pulsos.
+
+240
+00:15:35,890 --> 00:15:36,770
+No necesito más.
+
+241
+00:15:36,770 --> 00:15:38,290
+Ahora.
+
+242
+00:15:39,030 --> 00:15:39,810
+Rastreemos.
+
+243
+00:15:40,430 --> 00:15:42,430
+El trabajo.
+
+244
+00:15:42,690 --> 00:15:44,250
+Del ciclo útil en la ráfaga.
+
+245
+00:15:45,110 --> 00:15:46,770
+Ahora giraré el resistor.
+
+246
+00:15:47,050 --> 00:15:47,890
+Que es responsable.
+
+247
+00:15:48,370 --> 00:15:49,550
+Del ciclo útil en la ráfaga.
+
+248
+00:15:50,030 --> 00:15:51,590
+El ciclo útil se regula.
+
+249
+00:15:52,210 --> 00:15:54,410
+De 30 a 50%.
+
+250
+00:15:54,410 --> 00:15:55,290
+Como dije.
+
+251
+00:15:56,330 --> 00:15:57,170
+Mirando.
+
+252
+00:16:01,600 --> 00:16:03,200
+Estoy girando esto ahora.
+
+253
+00:16:03,980 --> 00:16:04,340
+Por cierto.
+
+254
+00:16:05,040 --> 00:16:07,260
+El ajuste de frecuencia.
+
+255
+00:16:07,260 --> 00:16:08,740
+Del sistema mismo.
+
+256
+00:16:09,420 --> 00:16:10,440
+También afectará.
+
+257
+00:16:10,540 --> 00:16:14,280
+Mayor frecuencia, más pulsos en la ráfaga.
+
+258
+00:16:14,360 --> 00:16:16,860
+Y ahora giraré el resistor del ciclo útil.
+
+259
+00:16:19,740 --> 00:16:21,520
+Este es ciclo útil mínimo.
+
+260
+00:16:22,720 --> 00:16:24,060
+Y empezando a agregar.
+
+261
+00:16:24,420 --> 00:16:25,320
+Se ve claramente.
+
+262
+00:16:25,540 --> 00:16:27,220
+Que el ciclo útil en la ráfaga crece.
+
+263
+00:16:27,800 --> 00:16:29,660
+Y no se mueve de ningún lado.
+
+264
+00:16:29,780 --> 00:16:30,840
+De los pulsos de sincronización.
+
+265
+00:16:30,840 --> 00:16:32,060
+Todo funciona excelente.
+
+266
+00:16:32,840 --> 00:16:34,820
+El ciclo útil se regulará claramente.
+
+267
+00:16:34,820 --> 00:16:37,380
+Incluso en un pulso.
+
+268
+00:16:38,700 --> 00:16:41,280
+Ahora colapsaré la ráfaga.
+
+269
+00:16:42,260 --> 00:16:43,420
+A un pulso.
+
+270
+00:16:48,930 --> 00:16:51,650
+Quitar el número de pulsos en la ráfaga.
+
+271
+00:16:55,430 --> 00:16:57,870
+Colocar nuestra imagen.
+
+272
+00:17:01,150 --> 00:17:02,950
+Bajar el pulso de sincronización.
+
+273
+00:17:05,530 --> 00:17:08,030
+Para que se vea claramente.
+
+274
+00:17:08,650 --> 00:17:11,290
+Ahora vemos en cada pulso de sincronización.
+
+275
+00:17:13,570 --> 00:17:15,310
+Una sola señal.
+
+276
+00:17:18,530 --> 00:17:20,570
+Ahora veremos.
+
+277
+00:17:22,670 --> 00:17:25,390
+El ciclo útil estará al máximo.
+
+278
+00:17:26,210 --> 00:17:27,110
+De un pulso.
+
+279
+00:17:27,570 --> 00:17:29,790
+Generador de nanosegundos completo.
+
+280
+00:17:29,950 --> 00:17:31,350
+Ciclo útil máximo.
+
+281
+00:17:31,350 --> 00:17:33,370
+Y ahora.
+
+282
+00:17:33,630 --> 00:17:35,690
+Disminuiré.
+
+283
+00:17:36,150 --> 00:17:37,590
+El ciclo útil de este pulso.
+
+284
+00:17:41,900 --> 00:17:43,680
+Ves que se regula.
+
+285
+00:17:45,900 --> 00:17:47,900
+En amplios límites.
+
+286
+00:17:48,040 --> 00:17:50,100
+Si necesitas disminuir más el ciclo útil.
+
+287
+00:17:50,160 --> 00:17:51,580
+Por ejemplo, para pulsador de nanosegundos.
+
+288
+00:17:52,120 --> 00:17:52,680
+Solo.
+
+289
+00:17:53,540 --> 00:17:55,200
+Agregas frecuencia.
+
+290
+00:17:55,540 --> 00:17:57,000
+En el generador controlador.
+
+291
+00:17:57,740 --> 00:17:58,900
+Y el ciclo útil será incluso.
+
+292
+00:17:59,880 --> 00:18:01,160
+Mucho más pequeño.
+
+293
+00:18:03,680 --> 00:18:05,260
+Por qué se necesita regulación.
+
+294
+00:18:06,060 --> 00:18:08,180
+Para el Tesla, ciclo útil.
+
+295
+00:18:08,640 --> 00:18:10,080
+Este es un parámetro importante.
+
+296
+00:18:10,520 --> 00:18:11,260
+También se.
+
+297
+00:18:11,940 --> 00:18:14,060
+Necesita para sincronización del sistema.
+
+298
+00:18:15,180 --> 00:18:15,400
+Él.
+
+299
+00:18:15,840 --> 00:18:18,120
+Trabaja en pareja con la regulación.
+
+300
+00:18:18,200 --> 00:18:20,140
+De amplitud de voltaje de alimentación.
+
+301
+00:18:20,400 --> 00:18:21,280
+Parámetro importante.
+
+302
+00:18:21,460 --> 00:18:23,000
+Cuando estés haciendo, ajustando.
+
+303
+00:18:23,100 --> 00:18:24,700
+No olvides revisar este momento.
+
+304
+00:18:25,180 --> 00:18:27,500
+Sin regulación de ciclo útil.
+
+305
+00:18:27,680 --> 00:18:29,140
+En la ráfaga nada funcionará.
+
+306
+00:18:30,900 --> 00:18:31,800
+Eso es todo.
+
+307
+00:18:31,920 --> 00:18:33,140
+Compactamente se ve.
+
+308
+00:18:33,720 --> 00:18:34,120
+Placas.
+
+309
+00:18:34,300 --> 00:18:35,940
+Cada uno hará para sí mismo a su gusto.
+
+310
+00:18:36,080 --> 00:18:37,500
+Quiero llamar la atención.
+
+311
+00:18:38,920 --> 00:18:39,600
+Resistor.
+
+312
+00:18:39,720 --> 00:18:40,580
+Estos 2 Ω.
+
+313
+00:18:42,340 --> 00:18:43,760
+Cómo están hechos.
+
+314
+00:18:44,120 --> 00:18:44,900
+En disipador.
+
+315
+00:18:45,020 --> 00:18:47,460
+Puse en paralelo 3 de 2W.
+
+316
+00:18:47,500 --> 00:18:50,000
+Porque a través de ellos pasa buena corriente.
+
+317
+00:18:50,100 --> 00:18:52,400
+Que va al inductor del Tesla.
+
+318
+00:18:54,020 --> 00:18:55,080
+Esto es obligatorio.
+
+319
+00:18:55,100 --> 00:18:56,200
+Para refrigeración.
+
+320
+00:18:56,200 --> 00:18:57,700
+Aquí está presentado el diodo.
+
+321
+00:18:58,780 --> 00:19:00,220
+En este encapsulado MUR860.
+
+322
+00:19:01,180 --> 00:19:03,020
+Y va directamente al drenaje.
+
+323
+00:19:03,820 --> 00:19:04,900
+De este transistor.
+
+324
+00:19:05,240 --> 00:19:06,200
+K2611.
+
+325
+00:19:11,400 --> 00:19:13,460
+Buena suerte a todos en el armado.
+
+326
+00:19:14,960 --> 00:19:16,820
+Esperen más clips.
+
+327
+00:19:17,320 --> 00:19:19,100
+Apoyen con los pulgares arriba.
+
+328
+00:19:20,300 --> 00:19:21,580
+Trabajaremos juntos.

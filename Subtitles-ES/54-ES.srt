@@ -1,0 +1,907 @@
+1
+00:00:00,730 --> 00:00:02,280
+Hola a todos.
+
+2
+00:00:03,040 --> 00:00:09,580
+Hoy veremos la fuente de alimentación para nuestro Tesla en este pequeño montaje.
+
+3
+00:00:10,660 --> 00:00:14,440
+Aquí está el esquema de nuestro convertidor.
+
+4
+00:00:14,800 --> 00:00:16,460
+¿Cuáles son los requisitos para él?
+
+5
+00:00:17,260 --> 00:00:23,400
+El convertidor se alimenta desde 12 voltios, así el sistema puede arrancarse desde una sola batería.
+
+6
+00:00:25,220 --> 00:00:28,680
+Y tiene que mantener establemente el voltaje de salida.
+
+7
+00:00:29,920 --> 00:00:33,720
+Para que eso suceda, necesitaremos realimentación.
+
+8
+00:00:34,680 --> 00:00:36,780
+Entraré en más detalle sobre ella ahora.
+
+9
+00:00:37,900 --> 00:00:39,060
+Cómo funciona.
+
+10
+00:00:40,800 --> 00:00:42,660
+Nuestro convertidor se ve así.
+
+11
+00:00:43,800 --> 00:00:45,640
+Un aparatito así, como ves.
+
+12
+00:00:47,500 --> 00:00:50,440
+Explicaré parte por parte qué va dónde.
+
+13
+00:00:51,860 --> 00:00:55,100
+La disposición no es demasiado complicada.
+
+14
+00:00:55,860 --> 00:01:03,960
+Básicamente, puedes usarlo no solo para alimentar el Tesla, sino también como convertidor normal para otros propósitos.
+
+15
+00:01:04,260 --> 00:01:08,120
+Puedes hacer uno fácilmente para 220 voltios, lo que necesites.
+
+16
+00:01:08,740 --> 00:01:14,280
+Todo depende de este transformador, cuántas vueltas devanas en el secundario.
+
+17
+00:01:15,620 --> 00:01:17,240
+Pasemos por el esquema.
+
+18
+00:01:18,240 --> 00:01:22,120
+Entran 12 voltios de alimentación.
+
+19
+00:01:22,120 --> 00:01:24,120
+Llegan al capacitor.
+
+20
+00:01:24,160 --> 00:01:27,800
+Nuestro capacitor es 3300 µF, 25 voltios.
+
+21
+00:01:28,640 --> 00:01:32,700
+A continuación, esta alimentación se envía a la derivación central.
+
+22
+00:01:33,300 --> 00:01:36,600
+Nuestro convertidor es tipo push-pull.
+
+23
+00:01:36,980 --> 00:01:41,960
+Para bajo voltaje, es la opción más eficiente.
+
+24
+00:01:43,060 --> 00:01:48,120
+Tenemos 8 vueltas por brazo yendo al bobinado secundario.
+
+25
+00:01:48,260 --> 00:01:52,240
+Nuestro bobinado secundario está devanado a 75 vueltas.
+
+26
+00:01:52,920 --> 00:01:56,140
+Cada 20 vueltas hay una derivación.
+
+27
+00:01:56,640 --> 00:01:57,880
+Aquí están esas derivaciones.
+
+28
+00:01:59,500 --> 00:02:01,820
+Primera, segunda y tercera.
+
+29
+00:02:03,080 --> 00:02:05,080
+Así que devanamos 75 vueltas en total.
+
+30
+00:02:05,200 --> 00:02:07,360
+¿Qué usamos como núcleo?
+
+31
+00:02:07,720 --> 00:02:11,660
+Este tipo de anillo de ferrita, marca 2000.
+
+32
+00:02:13,420 --> 00:02:16,020
+Sus dimensiones están mostradas.
+
+33
+00:02:18,720 --> 00:02:29,200
+Agujero 16 mm, ancho 8 mm, y 33 mm de diámetro exterior.
+
+34
+00:02:30,720 --> 00:02:31,720
+Es suficiente.
+
+35
+00:02:32,340 --> 00:02:38,600
+También hay un choque usado aquí — ahí está en el esquema — hecho sobre un anillito pequeño.
+
+36
+00:02:38,700 --> 00:02:42,880
+Puedes hacerlo sobre cualquier anillo que tengas.
+
+37
+00:02:43,580 --> 00:02:46,420
+Marca de 1000 a 2000, cualquiera sirve.
+
+38
+00:02:47,280 --> 00:02:48,220
+¿Para qué es?
+
+39
+00:02:49,020 --> 00:02:53,240
+Esta salida va a alimentar la llave del Tesla.
+
+40
+00:02:54,020 --> 00:03:05,540
+Así que aquí obtenemos transiciones bruscas de voltaje cuando opera la llave, además aparecen potenciales estáticos.
+
+41
+00:03:06,140 --> 00:03:12,240
+Y este choque amortigua esas transiciones para que no se realimenten a nuestro circuito.
+
+42
+00:03:13,580 --> 00:03:24,960
+Antes de la salida, tenemos un capacitor de banco no polar, medio microfaradio a 400 voltios, para amortiguar esos picos.
+
+43
+00:03:25,740 --> 00:03:33,940
+En la placa, está compuesto de 5 capacitores de 0,1 µF cada uno.
+
+44
+00:03:34,420 --> 00:03:36,800
+Y este es el choque de salida.
+
+45
+00:03:37,960 --> 00:03:41,860
+Veamos qué funciona y cómo.
+
+46
+00:03:42,740 --> 00:03:52,760
+Armamos el convertidor — chip lindo, UC3825N, en encapsulado DIP8.
+
+47
+00:03:53,620 --> 00:03:59,540
+La ventaja de este diseño es que el driver viene integrado, así que no necesitas un chip extra.
+
+48
+00:04:00,280 --> 00:04:12,020
+Es suficiente para manejar transistores como estos en este pequeño encapsulado — creo que es el TO-220.
+
+49
+00:04:13,220 --> 00:04:15,820
+Funcionan excelente.
+
+50
+00:04:16,840 --> 00:04:28,100
+También tenemos resistencia de drenaje de un kiloohm aquí. Básicamente todo material estándar, has visto este tipo de conexionado en videos anteriores.
+
+51
+00:04:28,800 --> 00:04:32,520
+No necesitas diodos inversos aquí, sin conexionado extra.
+
+52
+00:04:32,520 --> 00:04:38,340
+Funciona excelente — nuestro circuito no tiene requisitos tan altos.
+
+53
+00:04:39,600 --> 00:04:46,440
+El conexionado es simple. ¿Qué más es interesante aquí?
+
+54
+00:04:47,860 --> 00:04:51,800
+Pasemos, creo, al circuito de realimentación.
+
+55
+00:04:52,520 --> 00:05:00,960
+Nuestra realimentación está construida sobre un optoacoplador — el muy común PC-817.
+
+56
+00:05:02,780 --> 00:05:12,100
+Acercaremos un poco y lo recorreremos.
+
+57
+00:05:15,200 --> 00:05:22,540
+Conexión del optoacoplador, y estamos viendo cómo funciona.
+
+58
+00:05:23,680 --> 00:05:40,620
+Tomamos el voltaje de alimentación no del capacitor de salida, sino antes del choque — antes de que amortigüe todos los picos de la operación de la llave del Tesla.
+
+59
+00:05:42,020 --> 00:05:50,100
+El común negativo en la salida va al puente de diodos.
+
+60
+00:05:50,220 --> 00:05:59,700
+El puente está hecho de cuatro diodos HER108 en este circuito.
+
+61
+00:06:01,240 --> 00:06:05,080
+¿Por qué decidí usar un puente de diodos aquí?
+
+62
+00:06:05,340 --> 00:06:15,200
+De nuevo, necesitamos estabilidad para que la realimentación no se cortocircuite con picos estáticos — queremos que todo eso se drene.
+
+63
+00:06:16,000 --> 00:06:19,340
+Esto es realmente importante para que este convertidor funcione adecuadamente.
+
+64
+00:06:19,340 --> 00:06:39,760
+En convertidores ordinarios podrías arreglártelas con uno o dos diodos, pero decidí poner un pequeño puente de diodos aquí. Aquí está cómo se ve — cuatro diodos y el capacitor que alimentan, 3300 pF a 400 V.
+
+65
+00:06:39,760 --> 00:06:43,580
+El potencial cae sobre ese cap de 3300 pF, 400 V.
+
+66
+00:06:44,300 --> 00:06:53,940
+Con 75 vueltas devanadas, este convertidor da 130 V a la salida.
+
+67
+00:06:56,780 --> 00:07:05,340
+¿Qué necesitamos hacer para escoger la realimentación correcta para que funcione adecuadamente?
+
+68
+00:07:06,080 --> 00:07:09,400
+La nuestra está construida sobre un divisor.
+
+69
+00:07:09,940 --> 00:07:24,420
+El divisor usa un resistor de 1 kΩ, luego un potenciómetro de ajuste de 15 kΩ que fijará el voltaje de salida que el convertidor mantiene.
+
+70
+00:07:25,080 --> 00:07:35,900
+Más un resistor más que necesitarás escoger dependiendo del voltaje al que el Tesla funcionará.
+
+71
+00:07:36,560 --> 00:07:49,940
+Está marcado con asterisco. Para mis valores específicos — si estoy corriendo 130 V de salida — este resistor es 100 kΩ.
+
+72
+00:07:50,000 --> 00:07:57,960
+Si estoy corriendo 70 V en la salida, entonces sale a 43 kΩ.
+
+73
+00:07:59,580 --> 00:08:03,940
+Ponemos un resistor limitador en el optoacoplador.
+
+74
+00:08:05,280 --> 00:08:22,760
+Aquí está cómo funciona: cuando el potencial de salida alcanza cierto valor, pasa a través del puente de diodos, carga el capacitor, y ese potencial se divide por el divisor resistivo.
+
+75
+00:08:22,760 --> 00:08:24,900
+A través de ese divisor resistivo.
+
+76
+00:08:25,080 --> 00:08:29,840
+Luego, a través del resistor limitador, llega al LED dentro del optoacoplador.
+
+77
+00:08:30,320 --> 00:08:40,080
+El LED se dispara — físicamente enviando una señal de luz a la base del optotransistor.
+
+78
+00:08:40,700 --> 00:08:50,100
+El optotransistor abre, y eso nos da una señal de su emisor que aterriza en el pin 1 del chip.
+
+79
+00:08:51,080 --> 00:09:04,620
+El pin 1 en este chip es específicamente la entrada de realimentación de voltaje. Entonces, ¿qué hace este chip?
+
+80
+00:09:04,760 --> 00:09:12,340
+Reduce el ciclo útil de la señal, sigue reduciéndolo hasta que el potencial de salida baja.
+
+81
+00:09:12,680 --> 00:09:14,760
+Así el sistema se mantiene balanceado.
+
+82
+00:09:15,380 --> 00:09:17,600
+¿Por qué escogemos este resistor?
+
+83
+00:09:17,800 --> 00:09:33,560
+Si está mal para el voltaje al que corres, tu convertidor puede no dispararse a una frecuencia suficientemente alta. No lo verás directamente en la carga, pero en una lámpara notarás parpadeo.
+
+84
+00:09:33,560 --> 00:09:37,340
+La lámpara claramente parpadeará.
+
+85
+00:09:38,000 --> 00:09:40,780
+Lo que significa que el resistor no está bien escogido.
+
+86
+00:09:40,880 --> 00:09:51,300
+Ajústalo hasta que la realimentación se active y la lámpara deje de parpadear. Todo esto es mucho más claro en el osciloscopio.
+
+87
+00:09:51,500 --> 00:09:53,500
+Veamos cómo funciona a continuación.
+
+88
+00:09:55,880 --> 00:10:07,460
+Importante — este puente de diodos: su común negativo no se conecta al común negativo que alimenta el chip.
+
+89
+00:10:07,980 --> 00:10:15,140
+Es una sección separada que trabaja específicamente con el LED en el optoacoplador.
+
+90
+00:10:15,820 --> 00:10:35,900
+Y aquí está la salida del convertidor — el diagrama muestra la entrada del puente construida en diodos HER508. Puedes conectar la primera, segunda o tercera derivación. Devana más vueltas y tendrás una cuarta derivación disponible para mayor voltaje.
+
+91
+00:10:35,900 --> 00:10:40,340
+Para elevar el voltaje.
+
+92
+00:10:41,680 --> 00:10:45,900
+El negativo de salida aquí tampoco se conecta al común.
+
+93
+00:10:46,280 --> 00:10:50,180
+Eso nos da un circuito con aislamiento inductivo.
+
+94
+00:10:51,120 --> 00:11:04,040
+Nuestro Tesla está aislado del circuito principal. No lo afecta con su potencial — todo lo del estático, los saltos de voltaje durante el ajuste, etc., quedan separados.
+
+95
+00:11:08,660 --> 00:11:14,440
+Hemos cubierto eso — ahora veamos cómo está dispuesto en la placa.
+
+96
+00:11:16,380 --> 00:11:17,520
+¿Qué vemos aquí?
+
+97
+00:11:17,620 --> 00:11:36,960
+Aquí está el capacitor de entrada. Luego el chip mismo es alimentado a través de un choque — ahí está en el esquema — para que podamos filtrar los rizados y el chip funcione limpio.
+
+98
+00:11:36,960 --> 00:11:37,500
+Para nosotros.
+
+99
+00:11:38,400 --> 00:11:47,720
+Aquí está el resistor que cambiamos — este es exactamente el marcado con asterisco.
+
+100
+00:11:49,160 --> 00:11:54,660
+El push-pull va a través de 10 Ω a las compuertas.
+
+101
+00:11:55,080 --> 00:11:55,760
+Transistores.
+
+102
+00:11:55,840 --> 00:12:09,760
+Saqué los transistores de viejas UPS de computadora — P60 NF06. IRF3205 también funciona bien.
+
+103
+00:12:12,760 --> 00:12:15,580
+En los brazos.
+
+104
+00:12:15,760 --> 00:12:20,340
+Aquí está cable aislado con laca metido en termocontraíble.
+
+105
+00:12:21,440 --> 00:12:32,500
+El convertidor mismo está devanado con cable aislado en PVC — núcleo de 1 mm, 1,5 mm con el aislamiento.
+
+106
+00:12:33,500 --> 00:12:35,260
+¿Qué más es interesante?
+
+107
+00:12:35,920 --> 00:12:43,380
+La salida del transformador va al puente de diodos, y del puente al capacitor.
+
+108
+00:12:44,060 --> 00:12:49,760
+El cap está aquí — 4700 µF, 200 V.
+
+109
+00:12:50,540 --> 00:12:54,460
+200 V me fue suficiente porque mi convertidor corre a 130 V.
+
+110
+00:12:54,680 --> 00:13:13,220
+Si planeas correr más alto, escoges un capacitor más grande — digamos con un margen de 50 V por encima de lo que el convertidor y este transformador de pulsos pueden producir.
+
+111
+00:13:17,960 --> 00:13:21,300
+¿Qué más puede causar problemas?
+
+112
+00:13:21,960 --> 00:13:22,960
+Esto está claro.
+
+113
+00:13:23,260 --> 00:13:30,020
+Por cierto, el conexionado es simple, pero si miras de cerca este chip también puedes agregar protección de corriente.
+
+114
+00:13:30,840 --> 00:13:34,940
+Va en el pin 9, creo.
+
+115
+00:13:37,260 --> 00:13:43,800
+Chip útil — sacas convertidores potentes lindos, incluso puedes armar inversores de soldadura.
+
+116
+00:13:44,200 --> 00:13:47,240
+Muy buena elección de diseño.
+
+117
+00:13:47,880 --> 00:13:58,260
+Por supuesto, si vas por inversores de soldadura, necesitarás drivers apropiados aquí. Pero para estos transistores, esto es suficiente.
+
+118
+00:13:58,440 --> 00:14:00,620
+Todo sale compacto y limpio.
+
+119
+00:14:01,080 --> 00:14:02,600
+No se necesita un disipador grande.
+
+120
+00:14:05,240 --> 00:14:06,940
+Eso cubre los puntos principales.
+
+121
+00:14:07,060 --> 00:14:10,180
+Ahora veamos cómo funciona.
+
+122
+00:14:12,680 --> 00:14:16,700
+Aquí está cómo empezamos a ajustar este convertidor.
+
+123
+00:14:19,660 --> 00:14:22,680
+Primero, verificamos las conexiones.
+
+124
+00:14:23,820 --> 00:14:32,480
+Luego, sin alimentar aún los brazos del push-pull, verificamos el funcionamiento del chip.
+
+125
+00:14:32,600 --> 00:14:36,980
+Ponemos el osciloscopio en las compuertas, relativo a la derivación central.
+
+126
+00:14:37,220 --> 00:14:43,520
+Verifica que tengamos señales cuadradas con una pausa entre ellas.
+
+127
+00:14:44,840 --> 00:14:56,060
+Este resistor de 5 kΩ fija el ciclo útil máximo de los pulsos que abren los transistores.
+
+128
+00:14:56,900 --> 00:15:03,620
+El resistor en el pin 5 es 10 kΩ, y el cap es 2200 pF.
+
+129
+00:15:03,960 --> 00:15:06,740
+Ese es nuestro circuito de fijación de frecuencia.
+
+130
+00:15:07,160 --> 00:15:08,760
+¿Qué hacemos con él?
+
+131
+00:15:09,380 --> 00:15:23,940
+Empieza con un potenciómetro de ajuste de 10 kΩ. Después del chequeo, alimenta el push-pull y encuentra este punto para tu núcleo particular.
+
+132
+00:15:24,680 --> 00:15:40,800
+Barre la frecuencia en el chip y observa la frecuencia a la cual tu convertidor tiene el menor consumo en vacío.
+
+133
+00:15:41,140 --> 00:15:43,600
+Esa es la frecuencia en la que te quedas.
+
+134
+00:15:43,740 --> 00:15:52,860
+En mi caso, para mi ferrita, esa frecuencia salió alrededor de 65 kHz.
+
+135
+00:15:54,600 --> 00:16:03,700
+La tuya puede ser diferente, pero quieres encontrar la frecuencia donde este núcleo de ferrita tiene las menores pérdidas.
+
+136
+00:16:03,860 --> 00:16:13,260
+Ahí es donde la mayor parte del material del núcleo se remagnetiza con resistencia mínima al campo magnético.
+
+137
+00:16:13,360 --> 00:16:27,140
+Entonces la eficiencia de tu convertidor es mucho mayor, los transistores y el transformador se calientan mucho menos, y el convertidor tiene buenas características en general.
+
+138
+00:16:27,940 --> 00:16:45,100
+Una vez que has encontrado esa frecuencia con el potenciómetro de ajuste, desuéldalo, mira cómo estaba conectado, y mide la resistencia entre esos contactos.
+
+139
+00:16:46,120 --> 00:16:57,440
+Luego suelda un resistor normal de ese valor, o algo cercano.
+
+140
+00:16:58,100 --> 00:16:59,480
+Y eso es todo, lo dejas.
+
+141
+00:17:00,880 --> 00:17:04,740
+Se queda en el circuito para más operación.
+
+142
+00:17:04,900 --> 00:17:08,020
+Ya no necesitas ajustar la frecuencia.
+
+143
+00:17:08,820 --> 00:17:19,340
+Y el potenciómetro de ajuste de ciclo útil — también puedes reemplazarlo con un resistor normal.
+
+144
+00:17:19,460 --> 00:17:21,620
+Mucho más barato una vez que estés ajustado.
+
+145
+00:17:23,020 --> 00:17:27,160
+OK, veamos cómo funciona la cosa.
+
+146
+00:17:29,840 --> 00:17:33,840
+Por cierto, el convertidor resulta bastante potente.
+
+147
+00:17:34,220 --> 00:17:41,180
+Ahora mismo tengo una lámpara de 300 W en la salida — arranquémoslo.
+
+148
+00:17:43,940 --> 00:17:47,420
+Vemos 47 voltios en la lámpara.
+
+149
+00:17:49,080 --> 00:17:54,840
+Estoy usando la primera derivación según el esquema.
+
+150
+00:17:55,320 --> 00:18:00,800
+Así que en la primera derivación obtengo unos 70 voltios.
+
+151
+00:18:01,540 --> 00:18:07,400
+Ahora mismo el potenciómetro de ajuste está fijado para limitar en unos 50 voltios.
+
+152
+00:18:07,920 --> 00:18:09,300
+Desenrosco la lámpara.
+
+153
+00:18:10,500 --> 00:18:16,660
+Vemos que nuestro convertidor mantiene establemente 50,5 voltios en la salida.
+
+154
+00:18:17,380 --> 00:18:23,500
+Cuando la carga está conectada, hay una pequeña caída.
+
+155
+00:18:23,680 --> 00:18:25,380
+Esa es una carga seria.
+
+156
+00:18:26,680 --> 00:18:31,840
+Incluso le conecté dos lámparas de 300 W como prueba.
+
+157
+00:18:31,840 --> 00:18:43,280
+Y si tienes curiosidad, el consumo ahora mismo es 3 amperios a 12,5 voltios.
+
+158
+00:18:44,380 --> 00:18:46,360
+Aquí están las trazas del osciloscopio.
+
+159
+00:18:46,500 --> 00:18:52,380
+Puedes ver claramente cómo funciona la realimentación.
+
+160
+00:18:53,860 --> 00:18:56,840
+Pausemos y miremos este momento.
+
+161
+00:18:56,980 --> 00:19:08,100
+Puedes ver que las señales del chip no se superponen durante el tiempo muerto, pero el ciclo útil sigue bajando mientras la realimentación trabaja.
+
+162
+00:19:09,320 --> 00:19:22,320
+Vemos que cuando el voltaje cayó, el ciclo útil sube; el voltaje sube, luego el chip limita el ciclo útil de nuevo en los canales.
+
+163
+00:19:22,800 --> 00:19:24,260
+Puedes ver ese proceso claramente.
+
+164
+00:19:24,380 --> 00:19:26,960
+Corre continuamente en este modo balanceado.
+
+165
+00:19:27,600 --> 00:19:29,700
+Esta es la señal que debes obtener.
+
+166
+00:19:31,000 --> 00:19:32,380
+Patrón saltarín interesante.
+
+167
+00:19:33,280 --> 00:19:35,300
+Así trabaja la realimentación.
+
+168
+00:19:35,640 --> 00:19:38,720
+Ahora quitaré la carga.
+
+169
+00:19:40,980 --> 00:19:41,660
+Mira.
+
+170
+00:19:42,240 --> 00:19:51,700
+Quité la carga y el convertidor cambió a modo de pura mantención de voltaje — manteniendo 50 voltios en la salida.
+
+171
+00:19:52,220 --> 00:19:58,160
+El ciclo útil está en su mínimo para esas pérdidas.
+
+172
+00:19:58,880 --> 00:20:00,760
+Veamos cómo funciona.
+
+173
+00:20:01,820 --> 00:20:13,980
+Eso es exactamente para lo que es la realimentación — para mantener voltaje estable con consumo mínimo en el modo de operación de este chip.
+
+174
+00:20:15,280 --> 00:20:25,500
+0,03 amperios son suficientes para mantener 50 voltios en vacío para este convertidor.
+
+175
+00:20:26,620 --> 00:20:29,400
+El Tesla obviamente no debería sacar tanto.
+
+176
+00:20:31,020 --> 00:20:36,440
+Probar este convertidor es básicamente una prueba de estrés para él.
+
+177
+00:20:37,360 --> 00:20:41,200
+300 watts solo para confirmar que todo funciona.
+
+178
+00:20:42,840 --> 00:20:45,920
+También lo probé a 130 voltios.
+
+179
+00:20:46,420 --> 00:20:58,180
+Con esta lámpara hay una caída de potencia hasta unos 125 voltios, pero en una lámpara de 25 W se mantiene perfectamente estable.
+
+180
+00:20:58,960 --> 00:21:04,360
+Así que puedes marcar el voltaje que quieras para este convertidor.
+
+181
+00:21:06,940 --> 00:21:15,560
+Quitaré la de 300 W y ahora veremos cómo se activa la realimentación.
+
+182
+00:21:16,440 --> 00:21:17,840
+Osciloscopio.
+
+183
+00:21:19,760 --> 00:21:21,280
+Ahí está nuestra señal.
+
+184
+00:21:23,080 --> 00:21:25,880
+En ciclo útil máximo.
+
+185
+00:21:26,600 --> 00:21:29,360
+Enroscando una lámpara de 25 W.
+
+186
+00:21:30,980 --> 00:21:33,520
+El consumo empieza ahora.
+
+187
+00:21:34,740 --> 00:21:37,800
+La lámpara está un poco encendida.
+
+188
+00:21:38,920 --> 00:21:43,160
+Y el chip cambió a un modo de ciclo útil pulsante.
+
+189
+00:21:49,670 --> 00:21:56,390
+Puedes ver el ciclo útil siendo cortado en ráfagas.
+
+190
+00:21:59,670 --> 00:22:07,870
+Así que el chip trabaja en ráfagas, con el ciclo útil dentro de cada ráfaga regulado automáticamente.
+
+191
+00:22:09,110 --> 00:22:10,870
+Modo de operación realmente lindo.
+
+192
+00:22:14,710 --> 00:22:15,850
+Una cosa más.
+
+193
+00:22:16,490 --> 00:22:19,910
+Quieres que la frecuencia de ráfaga sea lo más alta posible.
+
+194
+00:22:20,090 --> 00:22:28,610
+Eso también lo fija el potenciómetro de ajuste que vimos antes con la realimentación.
+
+195
+00:22:30,030 --> 00:22:40,990
+Este resistor es realmente importante para operación de calidad — para que tu lámpara no parpadee y no haya transiciones bruscas.
+
+196
+00:22:45,430 --> 00:22:48,750
+Y otra cosa para notar.
+
+197
+00:22:49,590 --> 00:22:51,390
+Veamos cómo va esto.
+
+198
+00:22:52,990 --> 00:22:56,070
+Ahora el potenciómetro de ajuste.
+
+199
+00:22:57,150 --> 00:23:01,270
+Los 15 kΩ en la realimentación, según esquema.
+
+200
+00:23:01,450 --> 00:23:05,410
+Cómo afectan la regulación de voltaje.
+
+201
+00:23:16,020 --> 00:23:23,100
+El voltaje cae suavemente conforme giras este resistor.
+
+202
+00:23:27,280 --> 00:23:37,480
+Y en el chip puedes fijar el voltaje de alimentación que necesites.
+
+203
+00:23:38,540 --> 00:23:39,940
+Puedes ver que hemos bajado.
+
+204
+00:23:40,940 --> 00:23:48,300
+De 50 a 33 voltios — puedes fijar cualquier punto de disparo que quieras.
+
+205
+00:23:49,540 --> 00:23:53,920
+En este modo tenemos un oscilograma así.
+
+206
+00:24:02,250 --> 00:24:05,010
+La lámpara no parece estar brillando.
+
+207
+00:24:05,130 --> 00:24:08,410
+El voltaje es muy bajo para ella ahora.
+
+208
+00:24:18,580 --> 00:24:22,520
+Puedes ver el momento de operación claramente.
+
+209
+00:24:24,420 --> 00:24:33,580
+Quitas la carga y el chip cambia a consumo limitado con ciclo útil mínimo.
+
+210
+00:24:36,260 --> 00:24:49,600
+Enrosco la de 300 W de nuevo y vemos el ciclo útil subiendo con la carga.
+
+211
+00:24:50,700 --> 00:24:54,920
+El consumo subió también — significa que el convertidor está funcionando completamente.
+
+212
+00:24:57,480 --> 00:25:04,560
+Ahora, la pregunta: ¿por qué toda esta complejidad solo para alimentar un Tesla?
+
+213
+00:25:06,720 --> 00:25:15,480
+¿Por qué este convertidor necesita tener exactamente las características mostradas en el esquema?
+
+214
+00:25:16,000 --> 00:25:17,380
+Aquí está lo que está pasando.
+
+215
+00:25:18,240 --> 00:25:26,660
+Cuando el Tesla está corriendo en este sistema, necesitas fijar su punto de potencia de operación.
+
+216
+00:25:28,600 --> 00:25:31,440
+El sistema tiene que mantenerse balanceado.
+
+217
+00:25:31,760 --> 00:25:44,420
+Si le alimentamos demasiado voltaje, lo que pasa es que el Tesla empieza a sobreexcitar el proceso en el resonador mismo.
+
+218
+00:25:44,680 --> 00:25:49,220
+En la granada tenemos un pico de amplitud de corriente.
+
+219
+00:25:49,340 --> 00:25:52,820
+Verás una caída en su lugar — termina suprimiéndola.
+
+220
+00:25:54,000 --> 00:26:06,020
+Si el voltaje es muy bajo, no obtenemos buena interacción y la corriente en el sistema tampoco se acelerará.
+
+221
+00:26:07,560 --> 00:26:11,340
+Esto se hace ajustando específicamente la alimentación del Tesla.
+
+222
+00:26:12,400 --> 00:26:32,100
+Y por cierto, una vez que has maximizado lo que el resistor de fijación de voltaje puede darte, también puedes ajustar suavemente el ciclo útil máximo con este otro resistor.
+
+223
+00:26:32,100 --> 00:26:33,380
+El límite del ciclo útil.
+
+224
+00:26:34,540 --> 00:26:44,860
+Este resistor en el chip fija el ancho final del ciclo útil.
+
+225
+00:26:46,320 --> 00:26:49,200
+Puedes fijar lo que quieras.
+
+226
+00:26:49,820 --> 00:26:59,740
+Si no necesitas un convertidor realmente potente, puedes fijar el ciclo útil alrededor de 35-40% con este resistor.
+
+227
+00:27:03,570 --> 00:27:06,070
+Buena suerte a todos los que lo armen.

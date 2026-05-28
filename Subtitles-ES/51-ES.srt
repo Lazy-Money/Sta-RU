@@ -1,0 +1,2243 @@
+1
+00:00:01,320 --> 00:00:02,840
+Saludos a todos.
+
+2
+00:00:03,240 --> 00:00:04,260
+Soy Stalker.
+
+3
+00:00:04,460 --> 00:00:07,080
+Y hoy analizaremos un tema interesante.
+
+4
+00:00:07,540 --> 00:00:14,000
+Estas preguntas que los suscriptores o la gente con la que hablo me hacen a menudo.
+
+5
+00:00:14,540 --> 00:00:19,840
+Y también el método de bobinado de la bobina de gradiente, popularmente llamada granada.
+
+6
+00:00:21,000 --> 00:00:22,400
+¿Por qué se hace así?
+
+7
+00:00:22,520 --> 00:00:24,060
+¿Para qué son las vueltas inversas?
+
+8
+00:00:24,440 --> 00:00:28,720
+¿Por qué se usa esta longitud de 37,5 metros?
+
+9
+00:00:28,720 --> 00:00:31,760
+¿Solo la granada es apta para nuestros sistemas?
+
+10
+00:00:32,500 --> 00:00:33,780
+Todo en orden.
+
+11
+00:00:33,840 --> 00:00:37,080
+Empecemos con un punto interesante que pocos conocen.
+
+12
+00:00:37,580 --> 00:00:41,200
+Es la eficiencia de segundo tipo para un circuito resonante.
+
+13
+00:00:42,180 --> 00:00:43,140
+¿Qué es?
+
+14
+00:00:43,440 --> 00:00:46,000
+Prácticamente no hay información sobre eso, por cierto.
+
+15
+00:00:48,240 --> 00:00:51,520
+Aquí preparé una imagen interesante para ustedes.
+
+16
+00:00:52,520 --> 00:00:54,720
+Empecemos con ella.
+
+17
+00:00:55,060 --> 00:00:57,580
+Digamos, nuestro push-pull está trabajando.
+
+18
+00:00:58,240 --> 00:01:01,220
+Un transistor disparó, el segundo transistor.
+
+19
+00:01:01,340 --> 00:01:06,780
+Y en la longitud de este cable obtenemos una onda a la frecuencia de resonancia LC.
+
+20
+00:01:06,840 --> 00:01:09,040
+Digamos que la ajustamos, llegó al final.
+
+21
+00:01:09,960 --> 00:01:12,380
+Y dejemos que se refleje así.
+
+22
+00:01:12,960 --> 00:01:17,320
+La segunda onda senoidal, dibujada con bolígrafo negro.
+
+23
+00:01:18,300 --> 00:01:19,840
+Y aquí está lo interesante.
+
+24
+00:01:19,980 --> 00:01:24,400
+Si analizamos el proceso por voltaje, todo es estándar aquí.
+
+25
+00:01:24,540 --> 00:01:38,740
+Es decir, si las ondas de la onda incidente y de la onda reflejada convergen en fase, se forma una onda estacionaria en la longitud de este cable.
+
+26
+00:01:39,460 --> 00:01:41,340
+Pero esta cuestión no nos interesa.
+
+27
+00:01:41,340 --> 00:01:51,340
+Necesitamos, llamemos a este momento, crear una resonancia en este sistema en flujos magnéticos.
+
+28
+00:01:52,320 --> 00:01:53,780
+En campos magnéticos.
+
+29
+00:01:54,680 --> 00:01:56,720
+¿Qué necesitamos hacer para esto?
+
+30
+00:01:57,480 --> 00:02:01,260
+Para esto también creamos nuestra onda incidente.
+
+31
+00:02:01,340 --> 00:02:03,900
+Pero analizamos este momento, sus polos.
+
+32
+00:02:05,400 --> 00:02:07,700
+Tenemos una onda reflejada.
+
+33
+00:02:07,700 --> 00:02:12,280
+Y ahora deben coincidir no solo en fase sino también en flujos magnéticos.
+
+34
+00:02:12,720 --> 00:02:19,560
+Y tan pronto como sucede este momento, obtenemos una imagen interesante.
+
+35
+00:02:20,400 --> 00:02:25,360
+Hicimos coincidir la onda incidente y la reflejada por campo magnético.
+
+36
+00:02:25,620 --> 00:02:32,380
+Y también necesitamos hacer coincidir la onda estacionaria por campo magnético.
+
+37
+00:02:32,380 --> 00:02:43,580
+Y si sucede este momento, en el circuito se forman bruscamente potentes oscilaciones con subida de corriente, amplitud de corriente y amplitud de voltaje.
+
+38
+00:02:43,960 --> 00:02:48,260
+Este es exactamente el momento de eficiencia de segundo tipo para el circuito resonante.
+
+39
+00:02:48,880 --> 00:02:50,180
+¿Cuál es la esencia del fenómeno?
+
+40
+00:02:51,020 --> 00:02:56,820
+Analicémoslo con el ejemplo, digamos, de dos bobinas que crean campos magnéticos.
+
+41
+00:02:57,560 --> 00:03:01,940
+Un campo magnético pulsa, crece, disminuye.
+
+42
+00:03:01,940 --> 00:03:06,620
+Este, digamos, será el campo magnético para la onda estacionaria.
+
+43
+00:03:07,600 --> 00:03:11,380
+El segundo campo magnético también pulsa, pero también rota.
+
+44
+00:03:12,060 --> 00:03:25,560
+Y si combinamos estos dos momentos, cuando tenemos rotación angular alineada y dirección de polos magnéticos, se forma este fenómeno interesante.
+
+45
+00:03:25,560 --> 00:03:37,780
+Es difícil de lograr, pero ahora les mostraré un programa interesante con el que pueden calcular nuestra futura bobina.
+
+46
+00:03:42,020 --> 00:03:52,500
+Abre un motor de búsqueda, en este caso será Yandex, y escribe en la barra de búsqueda "calculador Gorchilin".
+
+47
+00:03:53,490 --> 00:04:04,780
+De la respuesta del motor de búsqueda seleccionamos "combinación de resonancia LC con modo de onda estacionaria", abrir.
+
+48
+00:04:06,120 --> 00:04:09,300
+Abierto, aterrizamos en este calculador.
+
+49
+00:04:10,000 --> 00:04:16,720
+Vemos gráficos aquí y una bobina dibujada.
+
+50
+00:04:18,580 --> 00:04:26,040
+Aquí, mirando, aquí el calculador calcula la longitud de la bobina y el paso del cable.
+
+51
+00:04:26,680 --> 00:04:30,960
+Por qué necesitamos hacer esto, y cómo trabajaremos con esto.
+
+52
+00:04:31,840 --> 00:04:34,260
+Para empezar, qué hacemos.
+
+53
+00:04:34,500 --> 00:04:44,780
+Abrimos esta cosa, y tomamos nuestro calibrador auxiliar y empezamos a medir.
+
+54
+00:04:46,780 --> 00:04:49,200
+Ya hice las mediciones.
+
+55
+00:04:51,140 --> 00:04:56,580
+Tienes cable, cada uno lo tendrá diferente, algunos comprado.
+
+56
+00:04:57,120 --> 00:05:05,580
+Por ejemplo, en este caso estoy calculando la bobina para cable con diámetro de aislamiento 4,2 mm.
+
+57
+00:05:07,420 --> 00:05:12,540
+Obligatorio medir con calibrador sin aplastar este cable.
+
+58
+00:05:13,260 --> 00:05:18,580
+Así, llegué, medí y registré.
+
+59
+00:05:18,740 --> 00:05:26,200
+Nos interesará el parámetro de diámetro del cable sobre aislamiento, diámetro del núcleo del cable.
+
+60
+00:05:26,300 --> 00:05:34,400
+Tu cable será multifilar, lo apretamos en un haz y medimos el diámetro de ese haz.
+
+61
+00:05:34,400 --> 00:05:38,380
+En mi caso salió 2,5 mm.
+
+62
+00:05:39,020 --> 00:05:42,900
+Ahora necesitamos también medir el diámetro de la bobina.
+
+63
+00:05:44,200 --> 00:05:50,160
+Es decir, el diámetro de la bobina es el diámetro de la carcasa sobre la cual devanaremos.
+
+64
+00:05:50,980 --> 00:06:01,400
+Digamos, tenemos una bobina, tomamos un calibrador y medimos su diámetro.
+
+65
+00:06:02,400 --> 00:06:07,560
+Medido, el resultado obtenido lo escribimos en la tabla.
+
+66
+00:06:08,440 --> 00:06:11,740
+En mi caso es 50 mm.
+
+67
+00:06:12,320 --> 00:06:17,040
+Ahora nos interesará también el parámetro de espesor del aislamiento.
+
+68
+00:06:17,800 --> 00:06:21,940
+El espesor del aislamiento de mi cable es 0,5 mm.
+
+69
+00:06:23,660 --> 00:06:26,040
+Y cuál será la longitud del cable.
+
+70
+00:06:26,040 --> 00:06:31,160
+La longitud del cable nos es desconocida aún, pero en el calculador calculé que tendré 45 m.
+
+71
+00:06:31,460 --> 00:06:33,180
+Ahora les diré cómo hice esto.
+
+72
+00:06:34,700 --> 00:06:39,260
+Yendo a nuestro calculador después de hacer todas las mediciones.
+
+73
+00:06:40,700 --> 00:06:41,660
+Y mirando.
+
+74
+00:06:42,620 --> 00:06:44,540
+Ahora ampliaré.
+
+75
+00:06:45,560 --> 00:06:46,340
+Esta cosa.
+
+76
+00:06:48,920 --> 00:06:49,640
+Mirando.
+
+77
+00:06:52,120 --> 00:06:54,660
+No conocemos aún la longitud del cable.
+
+78
+00:06:56,900 --> 00:06:57,900
+Rellenamos.
+
+79
+00:06:58,300 --> 00:07:00,760
+Diámetro del núcleo del cable en milímetros.
+
+80
+00:07:00,860 --> 00:07:02,920
+Lo que medimos, 2,5 mm.
+
+81
+00:07:04,320 --> 00:07:06,840
+Diámetro de la bobina en milímetros.
+
+82
+00:07:07,540 --> 00:07:13,460
+Por mediciones obtuvimos 50 mm.
+
+83
+00:07:16,120 --> 00:07:20,180
+Pero necesitamos tener en cuenta un momento interesante.
+
+84
+00:07:20,380 --> 00:07:23,860
+En este caso ingresé 51 mm aquí.
+
+85
+00:07:24,860 --> 00:07:30,300
+El diámetro de la bobina está compuesto no solo del diámetro de la carcasa.
+
+86
+00:07:30,980 --> 00:07:35,460
+Pero el espesor de pared del aislamiento se suma al diámetro.
+
+87
+00:07:36,200 --> 00:07:41,740
+Es decir, en realidad nuestro cable no va por la carcasa misma.
+
+88
+00:07:42,300 --> 00:07:45,980
+Se devana sobre la carcasa sobre el aislamiento.
+
+89
+00:07:46,900 --> 00:07:51,740
+Agregamos 2 espesores de aislamiento al diámetro de la bobina.
+
+90
+00:07:51,740 --> 00:07:56,440
+Es decir, en mi caso mi espesor de aislamiento es 0,5 mm.
+
+91
+00:07:56,960 --> 00:07:58,780
+Y agrego 1 mm.
+
+92
+00:08:00,300 --> 00:08:02,340
+Es decir, entendido por qué agregamos.
+
+93
+00:08:02,940 --> 00:08:04,680
+Desde dos lados se devana el cable.
+
+94
+00:08:04,800 --> 00:08:06,440
+Así agregamos 1 mm.
+
+95
+00:08:06,560 --> 00:08:08,300
+Obtenemos 51 mm.
+
+96
+00:08:08,820 --> 00:08:09,780
+Ahora acercándonos.
+
+97
+00:08:09,980 --> 00:08:11,380
+Aquí hay un momento.
+
+98
+00:08:11,960 --> 00:08:13,280
+Datos adicionales.
+
+99
+00:08:13,740 --> 00:08:14,680
+Ábrelo.
+
+100
+00:08:15,300 --> 00:08:16,260
+Rellena aquí.
+
+101
+00:08:16,480 --> 00:08:19,100
+Permitividad dieléctrica 3,5.
+
+102
+00:08:20,400 --> 00:08:31,880
+Este coeficiente está derivado de experimentos no solo míos sino también de otras personas.
+
+103
+00:08:32,420 --> 00:08:36,140
+Obligatorio fijar permitividad dieléctrica 3,5.
+
+104
+00:08:36,320 --> 00:08:38,420
+¿Qué afecta este parámetro?
+
+105
+00:08:39,260 --> 00:08:44,080
+Este es nuestro cable en aislamiento.
+
+106
+00:08:44,080 --> 00:08:51,320
+También tenemos permitividad dieléctrica de la carcasa sobre la que devanamos estos tubos.
+
+107
+00:08:52,280 --> 00:08:58,480
+Y en última instancia este parámetro afecta la velocidad de propagación de onda en este conductor.
+
+108
+00:09:00,060 --> 00:09:00,960
+Siguiente.
+
+109
+00:09:01,440 --> 00:09:03,680
+Multiplicidad de onda estacionaria en la bobina.
+
+110
+00:09:04,320 --> 00:09:05,840
+Escribimos 1,4.
+
+111
+00:09:06,180 --> 00:09:08,260
+Armónica de resonancia LC 1.
+
+112
+00:09:09,060 --> 00:09:12,120
+Capacitancia adicional picofaradios 0.
+
+113
+00:09:14,160 --> 00:09:16,380
+Espesor de la carcasa de la bobina.
+
+114
+00:09:16,740 --> 00:09:18,800
+Aquí también medimos con calibrador.
+
+115
+00:09:18,940 --> 00:09:21,800
+La pared del tubo sobre el que estamos devanando, lo anotamos.
+
+116
+00:09:23,600 --> 00:09:24,540
+Y siguiente.
+
+117
+00:09:25,280 --> 00:09:27,520
+Aquí ingresamos cualquier valor.
+
+118
+00:09:27,920 --> 00:09:32,500
+Digamos, nos interesan valores de 30 a 50 metros.
+
+119
+00:09:33,040 --> 00:09:34,940
+Digamos, ingresamos 40 metros.
+
+120
+00:09:37,080 --> 00:09:39,300
+Click aquí para calcular.
+
+121
+00:09:39,300 --> 00:09:40,640
+Calcula para nosotros.
+
+122
+00:09:41,260 --> 00:09:44,940
+Y vemos lo que habrá en los cálculos.
+
+123
+00:09:45,440 --> 00:09:48,400
+Cambiamos la longitud del cable.
+
+124
+00:09:48,760 --> 00:09:49,320
+¿Para qué?
+
+125
+00:09:49,680 --> 00:09:52,380
+Aquí nos interesa este paso del cable.
+
+126
+00:09:53,440 --> 00:09:59,140
+Mira, ahora es 4,24 mm.
+
+127
+00:10:00,620 --> 00:10:05,740
+Y nuestro cable, como recordamos, escribí 4,2 mm.
+
+128
+00:10:05,740 --> 00:10:25,400
+Es decir, en este caso necesitamos, jugando con esta columna de longitud-de-cable, escoger tal longitud que el paso del cable aquí salga igual a su diámetro sobre aislamiento.
+
+129
+00:10:26,180 --> 00:10:29,180
+En mi caso es 4,2 mm.
+
+130
+00:10:29,180 --> 00:10:37,100
+Pero como el cable, cuando lo colocamos en la bobina, queda con tensión.
+
+131
+00:10:37,680 --> 00:10:42,500
+Y obtenemos este momento que el cable queda ligeramente oval.
+
+132
+00:10:42,600 --> 00:10:45,180
+Y su ancho en realidad aumenta.
+
+133
+00:10:45,360 --> 00:10:51,340
+Por eso exactamente escogemos el momento para que en centésimas tengamos 24-26 mm.
+
+134
+00:10:51,640 --> 00:10:53,220
+Es decir, ligeramente más.
+
+135
+00:10:53,300 --> 00:10:56,540
+Esto corresponderá a la realidad del colocado del cable.
+
+136
+00:10:56,540 --> 00:11:03,980
+Por qué es importante alinear este momento, el paso del cable.
+
+137
+00:11:04,100 --> 00:11:11,880
+El paso del cable en nuestro caso determina la capacitancia entre vueltas.
+
+138
+00:11:13,280 --> 00:11:15,580
+Y también determina la inductancia.
+
+139
+00:11:16,220 --> 00:11:20,080
+En última instancia determina nuestra resonancia LC.
+
+140
+00:11:20,080 --> 00:11:30,540
+Y la longitud del cable determina qué onda estacionaria tendremos en la longitud de este conductor.
+
+141
+00:11:31,140 --> 00:11:36,300
+Y este calculador cuenta muy bien, muestra como gráfico.
+
+142
+00:11:37,200 --> 00:11:41,040
+Vemos el momento de intersección de un gráfico con otro.
+
+143
+00:11:41,220 --> 00:11:44,220
+Y produce la frecuencia abajo.
+
+144
+00:11:44,440 --> 00:11:49,180
+Produce la frecuencia para una bobina monocapa con este paso.
+
+145
+00:11:49,180 --> 00:11:50,920
+No para nuestra bobina.
+
+146
+00:11:51,120 --> 00:12:01,160
+Es decir, nos interesará aquí, en este caso, este momento.
+
+147
+00:12:02,080 --> 00:12:09,640
+Inductancia en microhenrios y conteo de vueltas.
+
+148
+00:12:10,000 --> 00:12:12,520
+Mira, nuestra inductancia es 171.
+
+149
+00:12:13,420 --> 00:12:16,280
+Conteo de vueltas 268.
+
+150
+00:12:16,980 --> 00:12:19,600
+Este parámetro lo anotamos para nosotros.
+
+151
+00:12:19,600 --> 00:12:27,900
+El que escogimos para este paso de cable que corresponde a 4,2 mm.
+
+152
+00:12:28,100 --> 00:12:31,600
+Es decir, el programa nos mostró 4,24.
+
+153
+00:12:32,040 --> 00:12:33,360
+Esto nos sirve.
+
+154
+00:12:34,220 --> 00:12:35,460
+¿Qué hacemos a continuación?
+
+155
+00:12:36,000 --> 00:12:38,380
+Tomamos nuestra carcasa que medimos.
+
+156
+00:12:39,200 --> 00:12:43,240
+Y devanamos esta longitud de 45 metros de cable.
+
+157
+00:12:43,940 --> 00:12:47,560
+Esto es lo que necesitarás colocar en la bobina.
+
+158
+00:12:47,560 --> 00:12:50,920
+A esta longitud agregas tus terminales.
+
+159
+00:12:51,000 --> 00:12:55,220
+Digamos, agrego 35 cm al inicio.
+
+160
+00:12:55,680 --> 00:13:03,640
+Y 70 cm a la longitud del cable al final donde terminamos de devanar.
+
+161
+00:13:03,840 --> 00:13:05,000
+Que será caliente.
+
+162
+00:13:05,220 --> 00:13:06,000
+¿Por qué?
+
+163
+00:13:06,000 --> 00:13:10,280
+Porque pasa luego por el tubo y vuelve atrás.
+
+164
+00:13:10,280 --> 00:13:12,420
+Es decir, dos longitudes desde el inicio.
+
+165
+00:13:12,900 --> 00:13:16,760
+Pero estos 45 metros deben colocarse en la bobina.
+
+166
+00:13:18,500 --> 00:13:20,860
+Siguiente tomamos nuestra carcasa.
+
+167
+00:13:21,180 --> 00:13:23,760
+Devanamos nuestro cable.
+
+168
+00:13:24,140 --> 00:13:25,840
+Verificamos nuestros cálculos.
+
+169
+00:13:26,440 --> 00:13:27,920
+Es decir, devanamos el cable.
+
+170
+00:13:28,780 --> 00:13:35,960
+Y en este cable el conteo de vueltas debe converger y la inductancia debe converger.
+
+171
+00:13:36,060 --> 00:13:43,800
+Si estos dos parámetros convergen para nosotros, entonces ya podemos empezar a desenrollar este cable en la bobina.
+
+172
+00:13:43,800 --> 00:13:56,780
+Si estos parámetros, digamos, por inductancia o por conteo de vueltas, especialmente conteo de vueltas, presta atención, no convergieron, significa que en algún lugar en el programa ingresamos valores inexactos.
+
+173
+00:13:57,000 --> 00:14:03,520
+Es decir, digamos, no se tuvo en cuenta este momento incorrectamente con el espesor de pared del aislamiento.
+
+174
+00:14:04,480 --> 00:14:07,170
+O medimos mal el tubo.
+
+175
+00:14:07,500 --> 00:14:10,800
+O, digamos, el tubo tiene diámetros diferentes.
+
+176
+00:14:11,700 --> 00:14:14,160
+Eso es sobre conteo de vueltas.
+
+177
+00:14:14,300 --> 00:14:15,900
+Sobre inductancia.
+
+178
+00:14:16,040 --> 00:14:19,700
+Las vueltas pueden coincidir pero la inductancia será diferente.
+
+179
+00:14:20,040 --> 00:14:21,500
+Digamos, será más alta.
+
+180
+00:14:22,080 --> 00:14:24,560
+Si la inductancia es más alta, no es grave.
+
+181
+00:14:24,600 --> 00:14:28,880
+Si obtienes, digamos, 175-180 microhenrios.
+
+182
+00:14:29,360 --> 00:14:34,540
+Este momento no es grave si no convergió del todo.
+
+183
+00:14:34,680 --> 00:14:41,500
+Pero si obtienes mucho más, eso significa que el cable que tomaste no es cobre puro.
+
+184
+00:14:41,660 --> 00:14:46,300
+El cobre tiene impurezas de otros metales que aumentan su inductancia.
+
+185
+00:14:46,740 --> 00:14:50,940
+Es decir, este cable ya no es apto para más trabajo.
+
+186
+00:14:51,040 --> 00:14:55,220
+Por eso todos dicen, toma cable de cobre libre de oxígeno.
+
+187
+00:14:55,340 --> 00:14:57,160
+Es decir, cobre libre de oxígeno.
+
+188
+00:14:57,980 --> 00:15:05,380
+Es cobre recocido en ambiente libre de oxígeno, en gas inerte.
+
+189
+00:15:06,200 --> 00:15:12,500
+Entonces, si nuestros parámetros coincidieron, siguiente momento devanamos la bobina.
+
+190
+00:15:13,660 --> 00:15:15,300
+Reglas de devanado de la bobina.
+
+191
+00:15:15,780 --> 00:15:24,560
+En la primera capa, en esta bobina, digamos, en el ejemplo de esta bobina.
+
+192
+00:15:25,640 --> 00:15:27,220
+Analicemos el momento.
+
+193
+00:15:30,260 --> 00:15:32,560
+Entonces, aquí está nuestra bobina.
+
+194
+00:15:33,220 --> 00:15:34,720
+¿Cuáles son las reglas de devanado?
+
+195
+00:15:34,720 --> 00:15:39,820
+En la primera capa debemos colocar exactamente un cuarto de la longitud total del cable.
+
+196
+00:15:40,460 --> 00:15:46,600
+Es decir, cuando calculaste en el programa, tomas el cable y lo marcas.
+
+197
+00:15:46,880 --> 00:15:50,020
+Digamos, haces marcas cada 5 metros.
+
+198
+00:15:50,320 --> 00:15:52,660
+Y luego al final divides en el calculador.
+
+199
+00:15:52,720 --> 00:15:55,100
+En nuestro caso obtuvimos 45 metros.
+
+200
+00:15:55,200 --> 00:15:56,060
+Divides entre 4.
+
+201
+00:15:56,720 --> 00:15:59,540
+Pones un cuarto en la primera capa.
+
+202
+00:16:00,200 --> 00:16:03,580
+Pones un cuarto del cable en la segunda capa.
+
+203
+00:16:04,720 --> 00:16:12,720
+A continuación, la tercera capa de cable se coloca geométricamente hasta el medio de la primera capa.
+
+204
+00:16:13,320 --> 00:16:19,040
+Y luego, cuarta, quinta y sexta capa, esto será ajuste de inductancia.
+
+205
+00:16:20,020 --> 00:16:28,160
+La inductancia de esta bobina debe salir como en los cálculos.
+
+206
+00:16:28,800 --> 00:16:31,840
+En este caso 171 microhenrios.
+
+207
+00:16:31,840 --> 00:16:39,120
+Es decir, necesitaremos devanar esta bobina con exactamente la misma inductancia.
+
+208
+00:16:39,780 --> 00:16:41,000
+Esto es obligatorio.
+
+209
+00:16:41,580 --> 00:16:42,980
+Sin esto no funcionará.
+
+210
+00:16:43,100 --> 00:16:46,760
+Es decir, nuestra inductancia es la resonancia LC.
+
+211
+00:16:47,140 --> 00:16:50,940
+Igual que nuestro paso de cable.
+
+212
+00:16:51,360 --> 00:16:55,440
+Esta es capacitancia entre vueltas que afecta la resonancia LC.
+
+213
+00:16:56,440 --> 00:17:02,060
+De lo contrario, si devanamos la bobina con inductancia incorrecta, la resonancia LC se desvía.
+
+214
+00:17:02,260 --> 00:17:07,880
+Y este cálculo en el programa, estos puntos de intersección.
+
+215
+00:17:08,680 --> 00:17:14,240
+No tendremos coincidencia de resonancia LC con onda estacionaria.
+
+216
+00:17:14,380 --> 00:17:15,760
+Y la bobina no funcionará.
+
+217
+00:17:16,900 --> 00:17:21,040
+Esta es una de las reglas importantes a seguir.
+
+218
+00:17:21,040 --> 00:17:24,420
+Ahora, ¿cómo devanamos la bobina?
+
+219
+00:17:24,520 --> 00:17:26,300
+Conocemos varios métodos.
+
+220
+00:17:26,920 --> 00:17:30,180
+Los vimos, nos los mostraron.
+
+221
+00:17:30,900 --> 00:17:33,320
+Y Ruslán nos mostró.
+
+222
+00:17:33,540 --> 00:17:36,220
+Y muchos otros, específicamente Alekseev.
+
+223
+00:17:37,020 --> 00:17:38,300
+¿Cómo lo hacemos?
+
+224
+00:17:38,360 --> 00:17:40,860
+Pasamos el cable a través, devanamos.
+
+225
+00:17:41,740 --> 00:17:43,360
+Llegamos al final de la bobina.
+
+226
+00:17:44,220 --> 00:17:45,720
+Volviendo atrás.
+
+227
+00:17:45,860 --> 00:17:47,760
+Colocamos el cable, ahí va.
+
+228
+00:17:48,760 --> 00:17:51,360
+Y podemos devanar.
+
+229
+00:17:52,400 --> 00:17:55,360
+Colocado cruzado y devanamos en reversa.
+
+230
+00:17:55,440 --> 00:17:56,760
+Es decir, dirección opuesta.
+
+231
+00:17:57,560 --> 00:18:00,540
+¿Por qué estas bobinas se devanan en reversa?
+
+232
+00:18:02,740 --> 00:18:10,000
+Si devanas toda la bobina en una dirección, su inductancia será mucho más alta que la calculada.
+
+233
+00:18:10,120 --> 00:18:12,900
+Entendemos que nuestra bobina es multicapa.
+
+234
+00:18:13,000 --> 00:18:14,320
+La inductancia crece.
+
+235
+00:18:14,320 --> 00:18:17,620
+Por eso las bobinas se devanan en reversa.
+
+236
+00:18:17,740 --> 00:18:20,680
+Para mantener esta inductancia en parámetros.
+
+237
+00:18:22,740 --> 00:18:29,920
+La tercera capa usualmente, cuando devanas, baja la inductancia por debajo de la calculada.
+
+238
+00:18:31,260 --> 00:18:34,500
+La cuarta capa suavemente la sube.
+
+239
+00:18:34,680 --> 00:18:36,520
+La quinta capa un poco más rápido.
+
+240
+00:18:36,760 --> 00:18:40,100
+Y la sexta capa también suavemente sube la inductancia.
+
+241
+00:18:41,100 --> 00:18:55,100
+Jugando en la cuarta, quinta y sexta capa con el conteo de vueltas, moviéndolas de una capa a otra, tenemos que colocar exactamente estos 45 metros calculados de cable en la bobina.
+
+242
+00:18:56,420 --> 00:18:59,500
+Logramos esta inductancia.
+
+243
+00:19:00,140 --> 00:19:10,220
+Cuando hicimos esto, logramos esta inductancia, podemos pasar a devanar el inductor.
+
+244
+00:19:10,540 --> 00:19:14,960
+Pero antes de eso haremos una cosa más interesante con esta bobina.
+
+245
+00:19:16,040 --> 00:19:18,000
+Analizamos un método de devanado.
+
+246
+00:19:18,180 --> 00:19:20,500
+Ahora hay este método de devanado.
+
+247
+00:19:22,040 --> 00:19:27,260
+El cable se inicia, pasa por toda la bobina, devana.
+
+248
+00:19:27,600 --> 00:19:31,780
+Es decir, empezamos a devanar, digamos, en el primer método desde aquí.
+
+249
+00:19:31,780 --> 00:19:33,760
+En el segundo método es lo mismo.
+
+250
+00:19:34,220 --> 00:19:41,560
+Devanamos aquí la primera capa, regresamos, terminamos de devanar.
+
+251
+00:19:42,320 --> 00:19:46,600
+Y también devanamos la tercera capa al medio.
+
+252
+00:19:47,900 --> 00:19:50,920
+Importante mantener el mismo momento de inductancia.
+
+253
+00:19:52,420 --> 00:19:54,120
+Hay este momento.
+
+254
+00:19:54,480 --> 00:19:58,080
+Es decir, estas bobinas se pueden devanar diferente, todas funcionan.
+
+255
+00:19:58,080 --> 00:19:59,340
+Como gustes.
+
+256
+00:19:59,500 --> 00:20:06,400
+Lo principal es seguir este momento de cálculo.
+
+257
+00:20:07,200 --> 00:20:07,940
+Esto es importante.
+
+258
+00:20:08,780 --> 00:20:13,620
+A continuación, lo que puedo recomendar, lo que yo hago.
+
+259
+00:20:13,900 --> 00:20:21,820
+Digamos, puedes devanar, como ya analizamos, una dirección y luego de vuelta, en la otra dirección.
+
+260
+00:20:23,100 --> 00:20:25,060
+Pero yo hago diferente.
+
+261
+00:20:25,060 --> 00:20:33,980
+Devano una dirección, tiro del cable al principio y devano de nuevo la primera capa en esta dirección.
+
+262
+00:20:34,180 --> 00:20:35,840
+¿Qué da este momento?
+
+263
+00:20:36,720 --> 00:20:50,780
+Este momento nos da, cuando el inductor trabaja aquí, físicamente en la longitud del conductor, que si está devanado en diferentes direcciones, cuando le golpeamos, parte de la onda se mueve en una dirección, y
+
+264
+00:20:50,780 --> 00:20:53,340
+parte de la onda va a la dirección del cable más grande.
+
+265
+00:20:55,020 --> 00:20:57,500
+Este momento ocurre.
+
+266
+00:20:58,120 --> 00:21:13,800
+Y si devanamos el cable con cruce, es decir, devanado, regresado y sobre este cable devanado de nuevo, entonces estos golpes de cable dirigen esta onda a un lado, al final
+
+267
+00:21:13,800 --> 00:21:14,520
+del conductor.
+
+268
+00:21:14,800 --> 00:21:17,620
+Y la bobina trabaja más coordinada.
+
+269
+00:21:19,680 --> 00:21:26,120
+Sobre el papel de aluminio que se coloca en la bobina.
+
+270
+00:21:26,240 --> 00:21:30,200
+Digamos que experimenté, mira hasta tengo una salida.
+
+271
+00:21:31,120 --> 00:21:34,320
+El papel de aluminio sale, colocado debajo de la bobina misma.
+
+272
+00:21:35,180 --> 00:21:38,640
+Esta es una opción de cómo se podría hacer.
+
+273
+00:21:39,300 --> 00:21:46,600
+Otras opciones son papel de aluminio que está en las capas inversas.
+
+274
+00:21:46,600 --> 00:21:57,400
+Digamos, aquí en el ejemplo de esta bobina, mira el cable, esta es la salida del papel de aluminio desde un borde.
+
+275
+00:21:57,580 --> 00:22:00,160
+Es decir, hice diferentes experimentos con el otro.
+
+276
+00:22:00,640 --> 00:22:10,600
+Probé devanado de papel de aluminio bajo la bobina y devanado de papel de aluminio aquí en esta zona de vueltas inversas, al medio.
+
+277
+00:22:11,600 --> 00:22:16,860
+Esto fue tiempo cuando experimentaba, sin usar aún los cálculos de este programa.
+
+278
+00:22:17,000 --> 00:22:18,420
+Es decir, ¿qué hace el papel de aluminio?
+
+279
+00:22:19,360 --> 00:22:25,540
+El papel de aluminio en este caso puede ayudar, o puede estropear fuertemente la imagen.
+
+280
+00:22:26,660 --> 00:22:32,660
+Es decir, el papel de aluminio es un reflector para el campo magnético.
+
+281
+00:22:32,660 --> 00:22:47,720
+Y hay momentos en que la bobina sin papel de aluminio no funciona, y le pones el papel de aluminio, digamos, ya sea debajo del fondo de la bobina, o, bueno me interesa más la variante en la zona de vueltas inversas de separar flujos magnéticos
+
+282
+00:22:47,720 --> 00:23:01,520
+de diferentes direcciones, que el LC solo se desplaza en la dirección necesaria, la inductancia cambia y ocurre convergencia de LC con la onda de la onda estacionaria.
+
+283
+00:23:01,520 --> 00:23:04,460
+Y entonces la bobina empieza a funcionar.
+
+284
+00:23:06,100 --> 00:23:08,060
+Eso es sobre el papel de aluminio.
+
+285
+00:23:10,240 --> 00:23:16,540
+Ahora en estas bobinas, últimos devanados, no uso papel de aluminio para nada.
+
+286
+00:23:17,340 --> 00:23:24,700
+Simplemente no se necesita, si lo calculaste bien y la bobina sale funcionando, el papel de aluminio no se requiere ahí.
+
+287
+00:23:25,700 --> 00:23:27,740
+Dejo a un lado esta bobina.
+
+288
+00:23:29,080 --> 00:23:34,380
+Entonces, digamos ejemplo de una de las bobinas devanadas.
+
+289
+00:23:34,960 --> 00:23:45,240
+Aquí se ve claramente que jugué con el conteo de vueltas en las capas, es decir, ajusté la inductancia.
+
+290
+00:23:47,600 --> 00:23:55,120
+Moviéndome, aquí está nuestra tercera capa, cuarta en los devanados que conocemos, está devanada igual hasta el final.
+
+291
+00:23:56,320 --> 00:24:01,860
+Salté vueltas aquí, es decir, logré la inductancia según los cálculos del programa.
+
+292
+00:24:03,940 --> 00:24:10,520
+Esto es cuestión de práctica, practica un poco, aprende, saldrá bien.
+
+293
+00:24:11,200 --> 00:24:13,460
+Siguiente, sobre el inductor.
+
+294
+00:24:13,460 --> 00:24:18,640
+En longitud de cuarto, o longitud de inductor en una-mitad.
+
+295
+00:24:19,100 --> 00:24:24,200
+Por la práctica les diré, es mejor lidiar con longitud de inductor en cuarto.
+
+296
+00:24:24,760 --> 00:24:34,940
+En él es más fácil captar la onda estacionaria, alinear estos procesos para más trabajo con esta bobina.
+
+297
+00:24:35,740 --> 00:24:40,900
+Entonces mira, cuál es la regla de devanado para el inductor.
+
+298
+00:24:40,900 --> 00:24:47,880
+El inductor se devana a la multiplicidad de inductancia para la bobina.
+
+299
+00:24:49,180 --> 00:24:55,460
+Ahora encenderé el medidor para que se vea.
+
+300
+00:24:56,660 --> 00:25:04,240
+Para medición, la inductancia nos muestra.
+
+301
+00:25:04,240 --> 00:25:10,460
+Y aquí mira, ahora estoy midiendo las salidas verdes.
+
+302
+00:25:10,720 --> 00:25:14,180
+Esta es nuestra bobina misma.
+
+303
+00:25:15,800 --> 00:25:22,380
+Su inductancia corresponde a 134 µH.
+
+304
+00:25:23,480 --> 00:25:27,900
+Ahora mediré el inductor.
+
+305
+00:25:28,640 --> 00:25:30,080
+Inductancia del inductor.
+
+306
+00:25:31,800 --> 00:25:33,200
+Medir.
+
+307
+00:25:34,200 --> 00:25:38,700
+Y corresponde a 68 µH.
+
+308
+00:25:38,860 --> 00:25:43,260
+Es decir, la mitad de la inductancia de esta bobina.
+
+309
+00:25:44,180 --> 00:25:51,460
+¿Cómo lograr este momento que sea también por inductancia?
+
+310
+00:25:51,600 --> 00:25:55,560
+Mira, el inductor está devanado ligeramente no estándar.
+
+311
+00:25:56,420 --> 00:26:04,080
+Para que coincida, necesitas jugar con la longitud física del devanado en la bobina.
+
+312
+00:26:04,480 --> 00:26:08,080
+Puedes jugar con el paso en el cable de este inductor.
+
+313
+00:26:08,180 --> 00:26:13,360
+Puedes poner cartón debajo para aumentar el diámetro.
+
+314
+00:26:13,480 --> 00:26:16,920
+Es decir, esto se selecciona en la práctica para esta bobina.
+
+315
+00:26:17,960 --> 00:26:33,340
+Si devanas la bobina en multiplicidad de inductancia, el inductor y la granada misma, ya obtienes armónicas altas y bajas en estas bobinas trabajando en fase.
+
+316
+00:26:33,520 --> 00:26:38,220
+Resulta que la eficiencia de este sistema crece.
+
+317
+00:26:39,580 --> 00:26:41,540
+El inductor se calentará menos.
+
+318
+00:26:41,640 --> 00:26:43,160
+Esto está verificado en la práctica.
+
+319
+00:26:43,500 --> 00:26:45,940
+Y las bobinas trabajan coordinadas.
+
+320
+00:26:46,020 --> 00:26:51,040
+Porque aquí todo el sistema está construido sobre campos magnéticos y sus rotaciones.
+
+321
+00:26:51,040 --> 00:26:55,800
+Estos elementos de inductancia deben tenerse en cuenta.
+
+322
+00:26:58,080 --> 00:27:01,880
+Hablamos sobre el inductor.
+
+323
+00:27:02,140 --> 00:27:04,740
+Ahora ¿qué se necesita antes del inductor?
+
+324
+00:27:05,400 --> 00:27:08,620
+Antes del inductor necesitamos verificar esta bobina.
+
+325
+00:27:09,180 --> 00:27:12,200
+Pasando al concepto de resonancia de onda.
+
+326
+00:27:13,740 --> 00:27:17,480
+¿Qué es y cómo surge en estas bobinas?
+
+327
+00:27:19,160 --> 00:27:21,800
+Con el calculador les expliqué.
+
+328
+00:27:21,920 --> 00:27:26,140
+Por cierto, estas frecuencias que estarán etiquetadas bajo la bobina.
+
+329
+00:27:27,100 --> 00:27:29,220
+No les presten atención.
+
+330
+00:27:29,740 --> 00:27:33,680
+Frecuencia resonante y capacitancia propia.
+
+331
+00:27:33,980 --> 00:27:35,040
+No necesitamos esto.
+
+332
+00:27:35,380 --> 00:27:38,280
+El calculador cuenta para una bobina monocapa.
+
+333
+00:27:38,440 --> 00:27:43,440
+Necesitamos preservar el paso en el devanado que obtuvimos.
+
+334
+00:27:44,720 --> 00:27:47,400
+E importante preservar la inductancia final.
+
+335
+00:27:47,400 --> 00:27:49,220
+Este momento está hecho.
+
+336
+00:27:49,780 --> 00:27:50,400
+Siguiente.
+
+337
+00:27:50,540 --> 00:27:54,900
+En mi canal hay un video muy interesante.
+
+338
+00:27:55,040 --> 00:27:58,400
+Se llama "Resonador de cuarto de onda".
+
+339
+00:27:59,800 --> 00:28:08,460
+Este video está hecho específicamente para probar bobinas con él.
+
+340
+00:28:08,580 --> 00:28:10,400
+¿Te funcionó o no?
+
+341
+00:28:10,400 --> 00:28:18,760
+En ese video uso esta cosa interesante.
+
+342
+00:28:19,160 --> 00:28:25,920
+Es un accesorio para el generador de señales de laboratorio.
+
+343
+00:28:27,360 --> 00:28:31,180
+O cualquier otro que puedas hacer tú mismo.
+
+344
+00:28:31,320 --> 00:28:35,500
+Pero mejor tener un generador de señales de laboratorio normal.
+
+345
+00:28:35,880 --> 00:28:37,380
+¿Qué representa?
+
+346
+00:28:37,380 --> 00:28:38,540
+Inductor.
+
+347
+00:28:39,020 --> 00:28:40,920
+En el video todo está mostrado.
+
+348
+00:28:41,960 --> 00:28:42,720
+Transistor.
+
+349
+00:28:43,040 --> 00:28:45,400
+En este caso IRF840.
+
+350
+00:28:45,540 --> 00:28:51,200
+Probé muchos, pero este transistor tiene capacitancia mínima de compuerta.
+
+351
+00:28:51,260 --> 00:28:55,720
+Así que puede trabajar eficientemente a altas frecuencias.
+
+352
+00:28:56,600 --> 00:28:58,020
+¿Qué más hay aquí?
+
+353
+00:28:58,160 --> 00:29:02,080
+Driver controlando a través de resistencia.
+
+354
+00:29:02,240 --> 00:29:04,960
+Aquí resistencia de unos 5 Ω.
+
+355
+00:29:08,880 --> 00:29:17,340
+Entre fuente y compuerta tenemos resistencia de drenaje de 1,2 kΩ.
+
+356
+00:29:17,540 --> 00:29:19,840
+Bueno o 1 kΩ, 0,8 kΩ.
+
+357
+00:29:19,920 --> 00:29:21,140
+Cualquiera funcionará aquí.
+
+358
+00:29:21,660 --> 00:29:22,160
+Siguiente.
+
+359
+00:29:22,580 --> 00:29:23,520
+Chip.
+
+360
+00:29:23,820 --> 00:29:25,280
+Es un disparador Schmitt.
+
+361
+00:29:25,480 --> 00:29:27,040
+Doble inversión va.
+
+362
+00:29:28,020 --> 00:29:34,140
+Esto se conecta a la salida del generador de señales.
+
+363
+00:29:34,140 --> 00:29:35,700
+Directamente a él.
+
+364
+00:29:35,920 --> 00:29:41,500
+Para reducir la influencia de picos estáticos en el generador mismo.
+
+365
+00:29:42,460 --> 00:29:46,580
+Aquí tenemos una fuente de alimentación.
+
+366
+00:29:47,560 --> 00:29:50,600
+La enchufo al tomacorriente.
+
+367
+00:29:50,880 --> 00:29:53,280
+Puede ser de batería, no importa.
+
+368
+00:29:53,760 --> 00:29:55,800
+Lo principal es que esté estabilizada.
+
+369
+00:29:56,060 --> 00:30:01,760
+Aquí en la salida obtengo 15 voltios yendo a alimentación del driver.
+
+370
+00:30:02,920 --> 00:30:05,080
+Hay electrolítico aquí.
+
+371
+00:30:05,500 --> 00:30:07,220
+15 voltios llega a él.
+
+372
+00:30:07,420 --> 00:30:14,820
+Y capacitancia que aumenta la velocidad del driver.
+
+373
+00:30:15,400 --> 00:30:17,140
+Aquí 2 microfaradios.
+
+374
+00:30:17,340 --> 00:30:21,940
+Esto afecta el flanco de subida que abre el transistor.
+
+375
+00:30:22,020 --> 00:30:22,580
+Esto es importante.
+
+376
+00:30:23,340 --> 00:30:26,140
+Mira el video, ahí cambio el ciclo útil.
+
+377
+00:30:26,140 --> 00:30:30,520
+La bobina misma del inductor se conecta.
+
+378
+00:30:32,180 --> 00:30:35,640
+Entonces, el positivo de alimentación va a ella directamente.
+
+379
+00:30:36,240 --> 00:30:41,060
+Y va al drenaje de este transistor, segunda salida.
+
+380
+00:30:42,100 --> 00:30:50,800
+Estos son cables de alimentación que se conectan a la fuente de alimentación, que trabaja directamente en esta bobina.
+
+381
+00:30:51,640 --> 00:30:54,760
+No recomiendo usar más de 12 voltios.
+
+382
+00:30:54,760 --> 00:30:56,400
+Todos estos efectos son visibles ahí.
+
+383
+00:30:56,920 --> 00:30:58,620
+Es decir, devanamos la bobinita.
+
+384
+00:31:01,720 --> 00:31:10,510
+Ponemos nuestro inductor de prueba sobre ella.
+
+385
+00:31:13,220 --> 00:31:14,930
+Por algún lugar de esta área.
+
+386
+00:31:15,590 --> 00:31:18,390
+Y la probamos, vemos qué pasa.
+
+387
+00:31:19,390 --> 00:31:23,710
+En el video del resonador de cuarto de onda esto está presentado.
+
+388
+00:31:25,730 --> 00:31:27,690
+Volviendo a la imagen.
+
+389
+00:31:30,830 --> 00:31:32,890
+¿Qué debería haber?
+
+390
+00:31:33,550 --> 00:31:36,770
+Dibujé esquemáticamente una lámpara fluorescente.
+
+391
+00:31:37,750 --> 00:31:41,450
+Si tu bobina salió, verás un momento muy interesante.
+
+392
+00:31:42,650 --> 00:31:51,330
+La lámpara misma tendrá alternancia de franjas brillantes más intensamente con más tenues.
+
+393
+00:31:52,250 --> 00:31:56,370
+Si está paralela a esta bobina.
+
+394
+00:31:57,270 --> 00:31:58,470
+¿Qué dice esto?
+
+395
+00:31:59,250 --> 00:32:01,010
+Necesitas captar este momento.
+
+396
+00:32:01,670 --> 00:32:05,070
+Puedes ver estas franjas corren rápido.
+
+397
+00:32:05,810 --> 00:32:11,230
+Seleccionando frecuencia logras que estas franjas se detengan.
+
+398
+00:32:12,410 --> 00:32:13,930
+Dejarán de correr.
+
+399
+00:32:13,930 --> 00:32:15,270
+¿Qué está pasando?
+
+400
+00:32:15,390 --> 00:32:22,510
+Esta lámpara nos mostrará la onda estacionaria longitudinal.
+
+401
+00:32:22,670 --> 00:32:26,790
+Aquí dibujé esquemáticamente rotación.
+
+402
+00:32:27,990 --> 00:32:33,970
+Esta rotación corresponde a la onda estacionaria longitudinal alrededor de esta bobina.
+
+403
+00:32:34,070 --> 00:32:38,950
+Cuando ocurre el momento de eficiencia de segundo tipo para el circuito resonante en ella.
+
+404
+00:32:38,950 --> 00:32:42,630
+Si esto no está, la rotación ya es una onda longitudinal.
+
+405
+00:32:42,970 --> 00:32:46,410
+Esta es exactamente la interacción de esta bobina con el medio.
+
+406
+00:32:47,070 --> 00:32:51,010
+Específicamente la lámpara fluorescente responde a ella.
+
+407
+00:32:52,830 --> 00:32:55,350
+Y quiero advertir a todos.
+
+408
+00:32:56,310 --> 00:33:01,350
+Experimentarás con esta bobina a voltaje mínimo.
+
+409
+00:33:01,570 --> 00:33:05,330
+Es decir, alimenta no más de 12 voltios.
+
+410
+00:33:05,330 --> 00:33:11,590
+Porque este sistema, no estás familiarizado aún con él, afecta fuertemente la salud.
+
+411
+00:33:11,710 --> 00:33:12,550
+Extremadamente fuerte.
+
+412
+00:33:12,790 --> 00:33:19,010
+Es decir, puedes recibir un golpe bastante fuerte literalmente en unos minutos de trabajo.
+
+413
+00:33:19,670 --> 00:33:21,910
+¿Cómo puedes sentir esto en ti mismo?
+
+414
+00:33:22,070 --> 00:33:27,170
+Habrá oscilaciones de alta frecuencia y baja frecuencia.
+
+415
+00:33:27,790 --> 00:33:32,650
+Es decir, las oscilaciones de baja frecuencia pueden alterar el ritmo cardíaco.
+
+416
+00:33:32,650 --> 00:33:34,990
+Sentir falta de aire.
+
+417
+00:33:36,010 --> 00:33:38,110
+Habrá mal bienestar.
+
+418
+00:33:38,530 --> 00:33:42,890
+Las oscilaciones de mayor frecuencia actúan sobre el cerebro.
+
+419
+00:33:43,430 --> 00:33:50,410
+Después de unos minutos de operación se observa un dolor de cabeza.
+
+420
+00:33:50,970 --> 00:33:54,770
+Aumenta con el tiempo.
+
+421
+00:33:54,950 --> 00:34:01,090
+Por eso, ¿viste ese momento cuando la lámpara fluorescente se encendió con tales franjas?
+
+422
+00:34:01,090 --> 00:34:06,110
+Apaga el sistema, trabaja a las menores potencias posibles.
+
+423
+00:34:06,250 --> 00:34:14,510
+Si tu bobina no produce tales efectos, como en este video del resonador de cuarto de onda, entonces algo se hizo mal.
+
+424
+00:34:14,650 --> 00:34:19,010
+Algo no encaja con este sistema.
+
+425
+00:34:23,700 --> 00:34:26,800
+Otro momento interesante sobre la bobina.
+
+426
+00:34:28,080 --> 00:34:35,360
+¿Cómo por parámetros indirectos determinar que obtuviste una bobina que funciona?
+
+427
+00:34:36,420 --> 00:34:40,960
+Trabajando con este accesorio puedes notar un momento interesante.
+
+428
+00:34:41,960 --> 00:34:46,540
+Sobre el impacto en la salud ya dije, pero habrá otro momento.
+
+429
+00:34:47,080 --> 00:34:52,780
+La bobina no está conectada a nada, pero en la zona de vueltas inversas se calentará.
+
+430
+00:34:52,780 --> 00:34:59,200
+Siente un calentamiento de unos 40, quizás incluso más grados, será tangible en la mano.
+
+431
+00:34:59,800 --> 00:35:04,580
+Es decir, en la bobina se observará movimiento de corriente.
+
+432
+00:35:05,980 --> 00:35:10,180
+Y el cable físicamente se calentará a sí mismo.
+
+433
+00:35:10,340 --> 00:35:12,120
+Y momento interesante.
+
+434
+00:35:13,400 --> 00:35:18,260
+Por balance térmico de energía puedes incluso ver aproximadamente.
+
+435
+00:35:18,900 --> 00:35:29,480
+Por ejemplo, alimentas 12 watts aquí a este inductor que estará.
+
+436
+00:35:30,800 --> 00:35:36,960
+Y la bobina se calentará por estos mismos 12 watts o más.
+
+437
+00:35:38,880 --> 00:35:54,980
+Imagina que para calentar un pedazo de cobre así, multimétrico, más en aislamiento, para que esto vaya, claramente se ve movimiento anómalo de corriente en esta bobina.
+
+438
+00:35:56,320 --> 00:36:01,420
+Este es un momento interesante que puedes determinar.
+
+439
+00:36:01,420 --> 00:36:02,680
+Y siguiente.
+
+440
+00:36:03,160 --> 00:36:16,420
+La bobina, cuando está conectada después al push-pull, al inductor, incluso si no hay carga sobre ella, golpearás la multiplicidad normalmente, por frecuencia.
+
+441
+00:36:17,260 --> 00:36:20,500
+El push-pull modulará el procesador de alta frecuencia.
+
+442
+00:36:20,640 --> 00:36:24,560
+También se calentará sin carga conectada.
+
+443
+00:36:24,560 --> 00:36:34,340
+Y notarás inmediatamente, si la bobina está devanada correctamente, que bombearle mucha energía después no es necesario en absoluto.
+
+444
+00:36:34,900 --> 00:36:38,820
+Ya empieza a trabajar bastante independientemente.
+
+445
+00:36:39,220 --> 00:36:41,640
+Tanto a alta como a baja frecuencia.
+
+446
+00:36:42,140 --> 00:36:48,540
+Verás ganancia de eficiencia durante la operación del push-pull.
+
+447
+00:36:49,160 --> 00:36:53,260
+Y durante la operación de la parte de alta frecuencia.
+
+448
+00:36:55,180 --> 00:36:59,360
+Ahora a la pregunta sobre 37,5 metros.
+
+449
+00:36:59,920 --> 00:37:04,240
+¿Por qué Ruslán obtiene este momento y lo recomendó?
+
+450
+00:37:05,720 --> 00:37:11,780
+Verifiqué su bobina en este programa que mostré.
+
+451
+00:37:11,920 --> 00:37:16,460
+Realmente sale a 37,5 metros, pero con una condición.
+
+452
+00:37:17,460 --> 00:37:29,180
+Espesor de carcasa de la bobina, este parámetro, debe corresponder a 4 mm.
+
+453
+00:37:31,140 --> 00:37:32,540
+¿Por qué 4 mm?
+
+454
+00:37:33,340 --> 00:37:38,720
+Porque los tubos de alcantarillado GOST-europeos son diferentes.
+
+455
+00:37:40,080 --> 00:37:43,320
+Y muy probablemente su espesor de carcasa es mayor.
+
+456
+00:37:43,320 --> 00:37:51,020
+Aquí en Rusia en el mejor caso podemos encontrar espesor de carcasa 2 mm.
+
+457
+00:37:51,440 --> 00:37:52,460
+Eso es con suerte.
+
+458
+00:37:53,480 --> 00:38:06,600
+Por eso en nuestro caso, cuando devanamos bobinas iguales a 37,5 metros, las oscilaciones propias o frecuencia de resonancia serán altas.
+
+459
+00:38:06,600 --> 00:38:14,780
+Verifiqué, la mía fue en algún lugar alrededor de 2,2-2,4 MHz.
+
+460
+00:38:15,540 --> 00:38:22,240
+Es decir, trabajar a tal alta frecuencia con el Tesla después será muy difícil.
+
+461
+00:38:22,360 --> 00:38:23,820
+Sale pequeño.
+
+462
+00:38:24,860 --> 00:38:37,560
+Si miramos el video de Ruslán, lo que dice, que la frecuencia es 1,5 MHz, 1,6 MHz, quizás 1,8 MHz, este es el máximo.
+
+463
+00:38:38,760 --> 00:38:45,260
+El problema claramente visible es que para estas carcasas necesitamos aumentar la longitud del cable.
+
+464
+00:38:45,540 --> 00:38:47,100
+No hay nada grave en esto.
+
+465
+00:38:47,220 --> 00:38:50,980
+Digamos, mi bobina tiene 47 metros de longitud de cable.
+
+466
+00:38:51,820 --> 00:38:58,540
+Su resonancia LC corresponde a 1 MHz 540 kHz.
+
+467
+00:38:58,540 --> 00:39:04,720
+Frecuencia bastante cómoda, puedo trabajar con 47 metros de cable.
+
+468
+00:39:05,340 --> 00:39:07,140
+Todo pasa, todo funciona.
+
+469
+00:39:08,720 --> 00:39:10,440
+Siguiente pregunta.
+
+470
+00:39:11,440 --> 00:39:15,340
+¿Qué es la resonancia de onda?
+
+471
+00:39:16,800 --> 00:39:18,620
+Pregunta muy interesante.
+
+472
+00:39:19,460 --> 00:39:26,200
+Chicos, la resonancia de onda surge exactamente en estas condiciones.
+
+473
+00:39:27,100 --> 00:39:29,580
+Más un momento adicional.
+
+474
+00:39:29,780 --> 00:39:33,140
+Si todos estos momentos coincidieron en campos magnéticos.
+
+475
+00:39:33,280 --> 00:39:42,300
+Campo magnético de la resonancia LC convergió con el campo magnético de la onda estacionaria.
+
+476
+00:39:42,400 --> 00:39:44,140
+Estas oscilaciones surgieron.
+
+477
+00:39:45,760 --> 00:39:47,920
+Esto no es aún resonancia de onda.
+
+478
+00:39:48,080 --> 00:39:53,580
+En el video del resonador de cuarto de onda en mi canal, muestro cómo obtener este momento.
+
+479
+00:39:53,580 --> 00:39:55,120
+El significado es este.
+
+480
+00:39:56,100 --> 00:40:02,920
+Necesita golpear con un pulso a la frecuencia de resonancia LC de esta bobina.
+
+481
+00:40:04,400 --> 00:40:09,220
+¿Cómo determinamos la frecuencia de resonancia LC de la bobina?
+
+482
+00:40:10,160 --> 00:40:12,520
+Ahora les diré este momento también.
+
+483
+00:40:13,400 --> 00:40:18,700
+Digamos, devanaste la bobina y aún no sabes nada sobre ella.
+
+484
+00:40:19,220 --> 00:40:20,400
+¿Qué haces?
+
+485
+00:40:20,400 --> 00:40:23,660
+Aquí están tus dos extremos de cable.
+
+486
+00:40:25,200 --> 00:40:26,400
+Están marcados para mí.
+
+487
+00:40:26,600 --> 00:40:30,620
+Es decir, el cable desde el cual empezamos a devanar es el extremo frío.
+
+488
+00:40:31,100 --> 00:40:34,160
+El cable con el que terminamos es el caliente.
+
+489
+00:40:34,180 --> 00:40:36,360
+Aquí lo marco con cinta aislante roja.
+
+490
+00:40:36,860 --> 00:40:38,340
+Este cable sale.
+
+491
+00:40:40,020 --> 00:40:41,340
+¿Qué hacemos?
+
+492
+00:40:41,540 --> 00:40:43,240
+Tomamos las puntas del osciloscopio.
+
+493
+00:40:44,060 --> 00:40:48,180
+Conectamos el cocodrilo común al extremo frío.
+
+494
+00:40:48,180 --> 00:40:59,660
+La punta misma la conectamos no al núcleo del cable, sino al aislamiento.
+
+495
+00:40:59,880 --> 00:41:08,180
+Como nuestro aislamiento casi siempre tiene gran diámetro y no puedes conectar una punta a él.
+
+496
+00:41:09,040 --> 00:41:11,280
+Haz este pequeño momento interesante.
+
+497
+00:41:11,600 --> 00:41:17,780
+Toma un cocodrilo, conéctalo y conecta la punta a él.
+
+498
+00:41:17,780 --> 00:41:19,760
+Esto es suficiente para nosotros.
+
+499
+00:41:21,220 --> 00:41:24,620
+Y la tierra del osciloscopio la conectamos al frío.
+
+500
+00:41:24,960 --> 00:41:27,000
+Hecho esto, conectado.
+
+501
+00:41:28,700 --> 00:41:47,140
+Siguiente, después de que se haga este momento, devanamos en esta zona una y media o tres vueltas de cable de pequeña sección y conectamos al generador de señales de laboratorio.
+
+502
+00:41:48,260 --> 00:41:50,440
+Obligatoriamente alimentar seno.
+
+503
+00:41:50,520 --> 00:41:54,720
+Ondas cuadradas no, porque en onda cuadrada puedes captar quién sabe qué.
+
+504
+00:41:55,060 --> 00:41:59,880
+En este caso nos interesa la frecuencia de resonancia LC de esta bobina.
+
+505
+00:42:00,560 --> 00:42:16,440
+Alimentamos seno, fijamos en el área de 10 voltios de amplitud y observamos el osciloscopio hasta el momento en que, girando la frecuencia, obtengamos amplitud máxima de la onda senoidal en esta bobina.
+
+506
+00:42:16,440 --> 00:42:18,940
+Es decir, este momento lo captamos.
+
+507
+00:42:19,980 --> 00:42:30,300
+Digamos, como dije, a 47 metros mi frecuencia de resonancia LC para esta bobina corresponde a 1,54 MHz.
+
+508
+00:42:31,120 --> 00:42:32,420
+Frecuencia cómoda.
+
+509
+00:42:32,560 --> 00:42:39,140
+Sé que ya estaré trabajando con Tesla a esta frecuencia para esta bobina.
+
+510
+00:42:39,140 --> 00:42:52,020
+Ahora cuando determinamos este momento, colocamos este inductor, este accesorio, lo que se muestra en ese video por el cual di explicación.
+
+511
+00:42:52,780 --> 00:42:53,940
+¿Y qué hacemos?
+
+512
+00:42:54,940 --> 00:43:19,840
+Fijamos la frecuencia de repetición de pulsos de este transistor igual a la frecuencia de resonancia LC de esta bobina, y con el ancho de pulso fijamos tal momento que este ancho de pulso sea igual a
+
+513
+00:43:19,840 --> 00:43:25,240
+un cuarto del período de longitud de la onda estacionaria.
+
+514
+00:43:25,420 --> 00:43:27,700
+Esto debe hacerse.
+
+515
+00:43:28,600 --> 00:43:53,000
+Y ahora, tan pronto como este impacto de pulso corresponde a un cuarto de la longitud de esta onda ya poderosa, que formó no la primera sino la onda poderosa en la eficiencia de segundo tipo para el circuito
+
+516
+00:43:53,000 --> 00:43:57,120
+resonante, obtenemos resonancia de onda.
+
+517
+00:43:57,280 --> 00:44:02,080
+Es decir, la resonancia de onda no puede existir como fenómeno independiente.
+
+518
+00:44:03,120 --> 00:44:04,220
+Simplemente no está ahí.
+
+519
+00:44:04,680 --> 00:44:06,240
+No la verás en ningún lado.
+
+520
+00:44:06,860 --> 00:44:18,040
+La resonancia de onda viene cuando simultáneamente para esta bobina aceleras tanto la resonancia LC como la onda estacionaria.
+
+521
+00:44:19,660 --> 00:44:35,000
+Y más allá nuestro sistema funcionará que el push-pull acelera la resonancia LC en esta bobina en multiplicidad a su resonancia LC de alta frecuencia.
+
+522
+00:44:36,040 --> 00:44:41,120
+El push-pull es un modulador para extracción y acelera la resonancia LC.
+
+523
+00:44:41,260 --> 00:44:47,220
+Y el Tesla trabajará en la onda estacionaria de alta frecuencia.
+
+524
+00:44:48,100 --> 00:45:01,540
+Y cuando ambos momentos se aceleran simultáneamente, tanto por LC como por onda estacionaria, alrededor del sistema se forma la onda estacionaria longitudinal, a la cual reaccionará la lámpara fluorescente.
+
+525
+00:45:02,860 --> 00:45:06,940
+En mi video que se llama "Resonador de cuarto de onda".
+
+526
+00:45:10,140 --> 00:45:12,260
+Entonces, queda la última pregunta.
+
+527
+00:45:12,420 --> 00:45:13,560
+¿Solo la granada?
+
+528
+00:45:15,600 --> 00:45:20,920
+Estos sistemas pueden hacerse no necesariamente en tal bobina.
+
+529
+00:45:21,060 --> 00:45:28,880
+La granada en este caso, este momento de su devanado, ¿qué hace siendo devanada en reversa?
+
+530
+00:45:29,000 --> 00:45:31,560
+Específicamente para mantener inductancia.
+
+531
+00:45:32,300 --> 00:45:36,280
+Mantenemos inductancia, obtenemos una bobina que funciona.
+
+532
+00:45:36,800 --> 00:45:39,760
+Es decir, la inductancia coincide con la resonancia LC.
+
+533
+00:45:41,920 --> 00:45:43,920
+La granada no es necesario devanar.
+
+534
+00:45:44,060 --> 00:45:47,480
+Puedes, por ejemplo, devanar una bobina en dos capas.
+
+535
+00:45:47,580 --> 00:45:50,180
+Puedes generalmente trabajar en bobina monocapa.
+
+536
+00:45:50,280 --> 00:45:54,320
+Todos los procesos sucederán ahí igual, y funcionará igual.
+
+537
+00:45:54,700 --> 00:46:04,320
+Obtenemos eficiencia de segundo tipo, aceleramos la resonancia LC, aceleramos en el cuarto del período la onda estacionaria.
+
+538
+00:46:05,440 --> 00:46:14,280
+Dos ondas chocan en el campo magnético, y se forma una onda longitudinal poderosa alrededor del sistema.
+
+539
+00:46:14,620 --> 00:46:22,920
+Es decir, trabajamos en ondas transversales, pero cuando chocan ya en el campo magnético, dos ondas transversales, obtenemos una onda longitudinal.
+
+540
+00:46:23,440 --> 00:46:27,620
+Y la onda longitudinal ya no pertenece directamente a nuestro sistema.
+
+541
+00:46:27,780 --> 00:46:32,700
+La onda longitudinal son exactamente las vibraciones del medio alrededor de esta bobina.
+
+542
+00:46:34,420 --> 00:46:41,900
+La onda longitudinal ya es capaz de interacción con el medio.
+
+543
+00:46:42,640 --> 00:46:47,320
+Y es capaz de dar una ganancia en nuestro sistema.
+
+544
+00:46:48,360 --> 00:46:51,300
+Ese es nuestro sistema complicado.
+
+545
+00:46:51,820 --> 00:46:54,520
+Por qué nadie puede hacerlo, repetirlo.
+
+546
+00:46:55,420 --> 00:46:59,540
+Con él tienes que seguir estos momentos.
+
+547
+00:46:59,540 --> 00:47:04,020
+Recuerda, todo el trabajo está en el campo magnético.
+
+548
+00:47:05,080 --> 00:47:06,900
+No rastrees voltaje.
+
+549
+00:47:07,220 --> 00:47:09,940
+Tienes que rastrear corrientes en el sistema.
+
+550
+00:47:10,460 --> 00:47:15,620
+La corriente es responsable en el sistema de formar el campo magnético.
+
+551
+00:47:16,420 --> 00:47:20,860
+La rastreamos, en consecuencia rastreamos el campo magnético en el sistema.
+
+552
+00:47:23,170 --> 00:47:24,340
+Buena suerte a todos.
+
+553
+00:47:25,340 --> 00:47:27,380
+Usen el calculador.
+
+554
+00:47:27,520 --> 00:47:37,390
+Agradecimiento aparte de mi parte a la persona que proporcionó este calculador para su uso.
+
+555
+00:47:37,550 --> 00:47:39,250
+Ayuda mucho.
+
+556
+00:47:43,100 --> 00:47:44,760
+Gracias enormes para él.
+
+557
+00:47:46,340 --> 00:47:47,740
+Viacheslav Gorchilin.
+
+558
+00:47:48,920 --> 00:47:53,580
+Encontrarán otros momentos interesantes en su sitio web.
+
+559
+00:47:53,680 --> 00:47:54,460
+Recomiendo.
+
+560
+00:47:55,460 --> 00:47:57,420
+La persona sabe lo que hace.
+
+561
+00:47:59,140 --> 00:48:00,600
+Buena suerte a todos.
