@@ -68,6 +68,11 @@ MAX_AUDIO_COMPRESS = 1.4      # if video stretch is not enough, audio can also s
 # Final master is peak-normalised, so this only shifts the TTS/ambient ratio.
 AMBIENT_GAIN = 1.8
 
+# If the extracted ambient stem comes back quieter than this RMS, we assume
+# Demucs over-stripped (treated workshop noise / music as vocals). The dub
+# still renders, but we shout in the log so it's obvious without listening.
+AMBIENT_QUIET_RMS = 0.001
+
 # XTTS-v2 supported languages (ISO 639-1, except zh)
 XTTS_LANGS = {
     "en", "es", "fr", "de", "it", "pt", "pl", "tr", "ru",
@@ -351,6 +356,30 @@ def url_cache_key(url: str) -> str:
     return hashlib.md5(url.encode("utf-8")).hexdigest()[:12]
 
 
+def _log_ambient_stats(path: Path) -> None:
+    """Print dur/rms/peak of the ambient stem so over-stripping is visible
+    in the log. Demucs sometimes throws away non-musical ambient (workshop
+    tools, motors) because they look like vocals to a model trained on pop."""
+    try:
+        a, sr = sf.read(path)
+    except Exception as e:
+        print(f"  [WARN] could not read ambient.wav: {e}")
+        return
+    if a.ndim > 1:
+        a = a.mean(axis=1)
+    if a.size == 0:
+        print("  [WARN] ambient.wav is empty")
+        return
+    rms = float(np.sqrt(np.mean(a.astype(np.float64) ** 2)))
+    peak = float(np.max(np.abs(a)))
+    line = f"  Ambient: dur={len(a)/sr:.1f}s  rms={rms:.5f}  peak={peak:.3f}"
+    if rms < AMBIENT_QUIET_RMS:
+        line += (f"  [WARN] very quiet (< {AMBIENT_QUIET_RMS}) — "
+                 f"Demucs likely over-stripped; try another model "
+                 f"(htdemucs_ft, mdx_extra) or re-extract")
+    print(line)
+
+
 def prepare_video_and_ambient(
     url: str,
     work_dir: Path,
@@ -420,6 +449,8 @@ def prepare_video_and_ambient(
                     vocals_path = vocals
                     if cached_vocals:
                         shutil.copy(vocals, cached_vocals)
+        if ambient_path is not None:
+            _log_ambient_stats(ambient_path)
     return video_path, orig_audio, ambient_path, vocals_path
 
 
