@@ -1,0 +1,1979 @@
+1
+00:00:01,140 --> 00:00:04,920
+Buen día, queridos suscriptores y espectadores de mi canal.
+
+2
+00:00:05,720 --> 00:00:14,860
+Durante el último tiempo aproximadamente la misma pregunta me ha estado llegando al correo electrónico o por Skype de varias personas.
+
+3
+00:00:15,280 --> 00:00:23,440
+La esencia de la cual se reduce a necesitar un esquema con ciertas protecciones para trabajar con un transformador Tesla.
+
+4
+00:00:23,940 --> 00:00:28,580
+Deseable que fuera lo más simple posible en hacer.
+
+5
+00:00:28,580 --> 00:00:45,700
+Motivación distinta: desde no experiencia en radio ingeniería, hasta no finanzas para adquirir componentes radio-electrónicos y varios dispositivos.
+
+6
+00:00:46,700 --> 00:00:50,260
+Aquí ante ti ahora está este esquema.
+
+7
+00:00:50,340 --> 00:00:51,840
+No puede ser más simple.
+
+8
+00:00:52,300 --> 00:01:00,480
+El esquema está ensamblado en un transistor y unos pocos detalles componentes.
+
+9
+00:01:00,620 --> 00:01:12,940
+Este esquema también tiene adicionalmente protección entre el colector y emisor del transistor.
+
+10
+00:01:12,940 --> 00:01:14,460
+Esta es una lámpara de neón.
+
+11
+00:01:16,080 --> 00:01:20,540
+Y hay un resistor en el emisor del transistor.
+
+12
+00:01:21,220 --> 00:01:25,620
+La resistencia en nosotros se muestra como 2 Ohm.
+
+13
+00:01:25,780 --> 00:01:31,140
+Esto en mi caso es una lámpara automotriz de 12 V, 21 W.
+
+14
+00:01:32,780 --> 00:01:36,900
+También responderé inmediatamente la otra pregunta frecuentemente hecha.
+
+15
+00:01:37,100 --> 00:01:38,980
+¿Por qué no salen videos en el canal?
+
+16
+00:01:39,100 --> 00:01:39,820
+¿Adónde desaparecieron?
+
+17
+00:01:39,920 --> 00:01:40,620
+¿Todo normal?
+
+18
+00:01:40,620 --> 00:01:42,180
+Todo bien.
+
+19
+00:01:43,240 --> 00:01:44,480
+No desaparecieron a ningún lado.
+
+20
+00:01:44,580 --> 00:01:52,380
+Simplemente debido al hecho de que ahora está la temporada de construcción, y estoy lidiando con construir mi hogar personal.
+
+21
+00:01:53,040 --> 00:01:55,260
+Así que todo el tiempo por ahora va allí.
+
+22
+00:01:55,680 --> 00:01:58,800
+Las finanzas extras están ausentes y tengo que hacer todo yo mismo.
+
+23
+00:01:58,800 --> 00:02:06,220
+Este esquema puede referirse a la categoría de esquemas Tesla-Kacher.
+
+24
+00:02:06,780 --> 00:02:14,560
+Y esto significa que en el rol de la bobina secundaria de alto voltaje del resonador actúa específicamente la bobina Tesla.
+
+25
+00:02:14,680 --> 00:02:16,680
+Y la bobina Tesla requiere puesta a tierra.
+
+26
+00:02:17,240 --> 00:02:27,440
+La tierra está conectada en este punto: el cable común del esquema al emisor del transistor a través de un resistor limitador.
+
+27
+00:02:28,860 --> 00:02:31,260
+¿Qué puede hacer este esquema?
+
+28
+00:02:31,660 --> 00:02:42,960
+Este esquema puede reemplazar ese bloque que mostré para controlar el transformador Tesla: puente o medio puente con modulación.
+
+29
+00:02:43,580 --> 00:03:00,800
+La modulación en este esquema puede hacerse más adelante con la presencia de un segundo transformador Tesla que interactuará con el primer transformador Tesla, al que podemos llamar convencionalmente transmisor.
+
+30
+00:03:01,160 --> 00:03:03,560
+Y el segundo transformador Tesla será receptor.
+
+31
+00:03:03,720 --> 00:03:07,820
+En realidad este sistema no es exactamente un transmisor.
+
+32
+00:03:08,280 --> 00:03:20,760
+Crea una perturbación en el entorno alrededor de sí mismo, que más adelante en la zona de esta perturbación entra en el receptor y empieza su interacción entre ellos.
+
+33
+00:03:20,760 --> 00:03:35,240
+Tal esquema simple puede reemplazar una caja entera de electrónica y costosos generadores de laboratorio para su control.
+
+34
+00:03:35,640 --> 00:03:46,440
+A pesar de la aparente simplicidad de esta solución de esquema, aquí hay muchos detalles que necesitan ser escogidos individualmente.
+
+35
+00:03:47,680 --> 00:03:53,760
+Si miras, cerca de algunos detalles hay asteriscos.
+
+36
+00:03:54,700 --> 00:03:59,600
+Esto significa que estos detalles requieren elección individual.
+
+37
+00:04:00,200 --> 00:04:09,640
+Nadie podrá alejarse de esto y todos quienes vayan a hacer tal sistema tendrán que dominar y ajustar esto.
+
+38
+00:04:10,640 --> 00:04:23,840
+El siguiente momento principal de lo que este esquema realiza: realizará el modo que Tesla describió, y esta es específicamente una serie de oscilaciones.
+
+39
+00:04:24,600 --> 00:04:35,260
+El oscilograma que debería salir en el colector cité la imagen, más adelante lo examinaremos también en el osciloscopio.
+
+40
+00:04:36,260 --> 00:04:40,020
+¿Qué más puedo decir sobre los momentos principales?
+
+41
+00:04:40,580 --> 00:04:46,480
+En nuestro esquema usaremos específicamente una bobina espiral plana.
+
+42
+00:04:46,940 --> 00:04:54,400
+Tal bobina es óptima para esquemas en descargadores y esquemas con una serie de oscilaciones.
+
+43
+00:04:55,100 --> 00:05:00,120
+Lo más justificadamente se mostró en este esquema.
+
+44
+00:05:01,120 --> 00:05:09,520
+Aquí escribí una advertencia que puedes tomar el oscilograma solo con la tierra conectada.
+
+45
+00:05:10,240 --> 00:05:18,120
+Obligatoriamente cumple esto, de lo contrario, si alguien olvida sobre esto, puede perder el osciloscopio.
+
+46
+00:05:19,100 --> 00:05:25,360
+Este esquema también puede usarse sin tierra, entonces saldrá un esquema Kacher.
+
+47
+00:05:26,460 --> 00:05:42,480
+Y a tal esquema no recomiendo conectar un osciloscopio bajo ninguna condición porque cualquier detalle en este esquema sin tierra conectada estará bajo alto potencial.
+
+48
+00:05:42,480 --> 00:05:50,320
+El transistor aquí lo uso probado, que se mostró bien: 2SC5200.
+
+49
+00:05:51,600 --> 00:05:56,800
+El voltaje colector-emisor en él es 230 V límite.
+
+50
+00:05:57,280 --> 00:06:02,240
+Y el límite de voltaje en la base relativo al emisor es 5 V.
+
+51
+00:06:02,320 --> 00:06:05,560
+Estos dos parámetros necesitaremos rastrear.
+
+52
+00:06:05,560 --> 00:06:21,780
+En el esquema también añadí zener conectados en contra llamados a proteger la base del transistor bipolar de exceder el valor de 5 V para que la unión base-emisor no se rompiera.
+
+53
+00:06:22,680 --> 00:06:33,120
+También esta lámpara de neón introduje, aquí ves también un asterisco está, y la resistencia, conectada en serie a él, también está marcada con asterisco.
+
+54
+00:06:33,120 --> 00:06:36,900
+Estos dos detalles necesitarán ser escogidos.
+
+55
+00:06:36,960 --> 00:06:47,420
+Se escogen basándose en el cálculo de que la lámpara de neón empezó su brillo a voltaje de 100 a 150 V.
+
+56
+00:06:48,180 --> 00:06:56,300
+Esta resistencia de 3 kOhm es una resistencia limitadora de corriente para que la lámpara de neón no fallara más adelante.
+
+57
+00:06:57,070 --> 00:07:16,440
+En este esquema se aplica un método antiguo de protección, que era conocido por los radioaficionados que trabajaban en esquemas con tubos de radio: cuando el cátodo del tubo se eleva relativo al cable común a través de un resistor.
+
+58
+00:07:16,440 --> 00:07:19,400
+Y los capacitores conectados están en paralelo.
+
+59
+00:07:20,440 --> 00:07:32,580
+Esta solución sirve como protección adicional del transistor contra el aumento de potencial relativo al menos del esquema.
+
+60
+00:07:32,580 --> 00:07:53,180
+Cuando la modulación se haga más adelante en la interacción con el transformador Tesla receptor, habrá un momento que el punto común saltará relativo al menos y esto puede hacer fallar al transistor.
+
+61
+00:07:53,180 --> 00:08:03,520
+Estos saltos el capacitor electrolítico de 100 µF los suavizará, de esta manera protegerá el transistor.
+
+62
+00:08:04,900 --> 00:08:11,480
+Ahora podemos pasar al inductor y a la bobina de alto voltaje.
+
+63
+00:08:11,480 --> 00:08:13,180
+¿Cómo están construidos?
+
+64
+00:08:14,300 --> 00:08:23,620
+Estos son sistemas discretos, consecuentemente, todos nosotros estamos sujetos a la regla de longitud en este esquema.
+
+65
+00:08:24,420 --> 00:08:34,740
+Es decir, podemos ir por estructura: tomar el inductor como base, o tomamos como base la longitud de vuelta de la bobina de alto voltaje.
+
+66
+00:08:35,600 --> 00:08:51,580
+Si tomamos como base la bobina de alto voltaje y su longitud de vuelta, como usualmente hago, entonces multiplico la longitud de vuelta de la bobina de alto voltaje por un número entero y obtengo la longitud del inductor.
+
+67
+00:08:51,580 --> 00:09:05,800
+Presta atención que en este esquema la bobina de alto voltaje está enrollada a la derecha: es decir, si miras el tubo desde arriba, el cable se enrolla en el sentido de las agujas del reloj y va hacia el lado de la tierra.
+
+68
+00:09:06,280 --> 00:09:14,140
+Bobinado del lado derecho en el sentido de las agujas del reloj, y también la bobina plana en nosotros está enrollada: bobinado del lado derecho.
+
+69
+00:09:14,140 --> 00:09:30,480
+El más está conectado a la fuente de alimentación en el punto central más cercano a la bobina de alto voltaje, y el colector está conectado al inicio del bobinado.
+
+70
+00:09:31,380 --> 00:09:36,900
+Está marcado con número 2: dos está cerca del colector del transistor.
+
+71
+00:09:39,000 --> 00:09:54,700
+Para potencia, el esquema cuando conduces experimentos: recomiendo desde una batería, y posiblemente necesitarás un convertidor de 12 V, y deberías convertir de 3 a 100 V.
+
+72
+00:09:54,800 --> 00:09:59,320
+Este esquema con estos valores en mí arranca a voltaje de 3 V.
+
+73
+00:10:00,320 --> 00:10:25,100
+Aquí en tal sistema, si ajustas el modo operativo correcto, puedes fácilmente meter 50 W de energía y a su vez el transistor estará en modo operativo óptimo, no se calentará, y toda la energía se transferirá de la bobina primaria a la secundaria.
+
+74
+00:10:25,100 --> 00:10:32,620
+De esta manera se logrará el máximo acoplamiento entre ellas y el sistema funcionará óptimamente.
+
+75
+00:10:33,140 --> 00:10:47,700
+Más adelante examinaremos dos casos cuando el sistema no está ajustado óptimamente, qué oscilogramas habrá, y el sistema en tal modo, y mira el modo de temperatura de operación del transistor.
+
+76
+00:10:47,700 --> 00:10:53,920
+Aquí marqué cómo calcular la longitud del inductor.
+
+77
+00:10:54,860 --> 00:11:06,480
+Y también aquí está escrito que la longitud del cable del inductor se cuenta desde el colector del transistor directamente al terminal positivo en los capacitores electrolíticos.
+
+78
+00:11:06,480 --> 00:11:12,380
+Aquí este capacitor electrolítico, 200 µF, 400 V.
+
+79
+00:11:12,940 --> 00:11:23,640
+Paralelo se colocan capacitores llamados a eliminar interferencias de alta frecuencia para que no entraran al electrolítico.
+
+80
+00:11:23,720 --> 00:11:26,920
+Este es 0,1 µF a 630 V.
+
+81
+00:11:26,920 --> 00:11:38,360
+Y un capacitor acumulador de 2,2 µF que acelera el frente del pulso en el colector.
+
+82
+00:11:38,360 --> 00:11:48,860
+Ya que los electrolíticos, comparados con capacitores de película de calidad, tienen algo de tiempo de liberación de carga.
+
+83
+00:11:49,860 --> 00:11:59,980
+También ves hay un capacitor 0,1 µF a 630 V, en el emisor relativo al menos.
+
+84
+00:12:00,120 --> 00:12:09,660
+Este también es un capacitor responsable de amortiguar la interferencia de alta frecuencia que circulará inevitablemente.
+
+85
+00:12:09,660 --> 00:12:18,260
+También puedes ver que entre la bobina de alto voltaje y la base del transistor hay un resistor limitador de corriente a 1 Ohm.
+
+86
+00:12:19,260 --> 00:12:27,760
+Y aquí están dos detalles principales que crean en la base del transistor la polarización necesaria para su trabajo.
+
+87
+00:12:28,480 --> 00:12:31,580
+Estas resistencias necesitarán ser escogidas también.
+
+88
+00:12:31,680 --> 00:12:35,240
+En mi caso son 6,8 kOhm y 2,7 kOhm.
+
+89
+00:12:35,760 --> 00:12:39,040
+Pero este es mi caso: están escogidos bajo mi esquema.
+
+90
+00:12:39,040 --> 00:12:47,620
+También más adelante les mostraré qué dependencia entre estas resistencias y el conteo de vueltas en el inductor.
+
+91
+00:12:47,720 --> 00:12:52,800
+Y cómo lograr tan interesante modo operativo del transistor.
+
+92
+00:12:53,120 --> 00:12:55,600
+Entonces, el esquema hecho en hierro.
+
+93
+00:12:56,180 --> 00:13:03,300
+Esta es una capacidad acumuladora de dos capacitores de 200 µF 400 V.
+
+94
+00:13:03,300 --> 00:13:09,840
+Luego va un capacitor de película 2,2 µF a 630 V.
+
+95
+00:13:10,360 --> 00:13:18,980
+Este capacitor 0,1 µF 630 V para amortiguar interferencias HF que pasan por él.
+
+96
+00:13:19,520 --> 00:13:25,420
+Presta atención que saqué patas a las que están soldados los resistores.
+
+97
+00:13:26,460 --> 00:13:33,660
+Esto se hace para que pudiera convenientemente escoger detalles sin desensamblar todo el esquema común.
+
+98
+00:13:33,780 --> 00:13:35,560
+En el disipador de calor el transistor está ubicado.
+
+99
+00:13:36,260 --> 00:13:46,660
+El disipador de calor está hecho con reserva para que pudiera mostrarles el modo operativo cuando el transistor se calentará fuertemente: qué pérdidas irán.
+
+100
+00:13:47,060 --> 00:13:54,320
+Y entonces podemos mirar por temperatura cuando el transistor estará ligeramente por encima de la temperatura ambiente.
+
+101
+00:13:54,320 --> 00:13:59,000
+Y este sistema trabajará en orden de 50 W.
+
+102
+00:14:00,520 --> 00:14:03,880
+Los cables del inductor están conectados en estos puntos.
+
+103
+00:14:04,200 --> 00:14:08,300
+Esto es correspondientemente la lámpara a 2 Ohm.
+
+104
+00:14:09,460 --> 00:14:13,600
+Todas las resistencias aquí son 1 W: también lo marqué en el esquema.
+
+105
+00:14:13,960 --> 00:14:18,920
+Menos aquí no vale la pena poner, de lo contrario se calentarán fuertemente y pueden quemar.
+
+106
+00:14:19,920 --> 00:14:26,820
+La bobina que usé aquí es de alto voltaje.
+
+107
+00:14:27,380 --> 00:14:35,760
+Está hecha con un conductor grueso, sección del cable 0,96 mm.
+
+108
+00:14:38,180 --> 00:14:44,920
+Es decir, no todo esquema puede oscilar cualitativamente tal bobina.
+
+109
+00:14:44,920 --> 00:14:47,140
+Pero este esquema permite.
+
+110
+00:14:47,420 --> 00:14:52,660
+Esta bobina de alto voltaje tiene un cálculo de trabajo a exactamente 1 MHz.
+
+111
+00:14:53,780 --> 00:14:59,860
+Sabemos que la longitud de onda para 1 MHz es 300 metros.
+
+112
+00:15:00,060 --> 00:15:03,040
+Consecuentemente un cuarto debería ser 75.
+
+113
+00:15:03,220 --> 00:15:09,740
+Pero en conteo más preciso aquí resulta 74,5 m.
+
+114
+00:15:09,740 --> 00:15:15,660
+Si ingresas la velocidad de propagación de onda con más precisión en la fórmula de cálculo.
+
+115
+00:15:16,060 --> 00:15:20,400
+Cómo calcular un transformador Tesla mira en mi canal en videos anteriores.
+
+116
+00:15:20,700 --> 00:15:25,180
+Hay descripciones detalladas de cómo hacer esto.
+
+117
+00:15:26,740 --> 00:15:33,700
+Ahora examinemos también el principio de cómo llevar esta bobina a la frecuencia necesaria para nosotros.
+
+118
+00:15:34,980 --> 00:15:40,900
+Presta atención que la bobina ahora no tiene capacidad adicional.
+
+119
+00:15:41,000 --> 00:15:43,640
+Aquí está el extremo caliente.
+
+120
+00:15:44,760 --> 00:15:55,920
+El extremo caliente es el extremo del conductor de la bobina de alto voltaje en el cual está el potencial máximo de voltaje.
+
+121
+00:15:56,420 --> 00:16:00,840
+En el extremo frío en este momento tenemos la corriente máxima.
+
+122
+00:16:00,840 --> 00:16:02,400
+Hay un momento interesante.
+
+123
+00:16:02,980 --> 00:16:15,200
+La electrónica profesional, radioaficionados a menudo protestan contra el hecho de que estas soluciones de esquema son separadas en un grupo aparte llamado Kachers.
+
+124
+00:16:17,080 --> 00:16:23,580
+Dicen, ¿por qué inventaste un nombre para este esquema cuando este es un auto-generador usual en un transistor?
+
+125
+00:16:24,440 --> 00:16:26,180
+Y qué es interesante aquí.
+
+126
+00:16:26,180 --> 00:16:31,340
+¿Por qué estos esquemas son llevados a una categoría separada de Kachers?
+
+127
+00:16:31,520 --> 00:16:35,560
+Porque en este esquema primero, se viola la ley de Kirchhoff.
+
+128
+00:16:35,960 --> 00:16:48,760
+Esto se expresa en que si tomas el cable común del osciloscopio y lo conectas al menos de la fuente de alimentación, y te paras en el colector con la sonda, verás pulsos positivos en el colector.
+
+129
+00:16:48,760 --> 00:16:56,480
+También puedes ahora pararte con el cable común del osciloscopio en más alimentación.
+
+130
+00:16:57,000 --> 00:17:03,620
+Y si miras los pulsos en el colector, entonces relativo a más también serán positivos.
+
+131
+00:17:03,900 --> 00:17:07,760
+En el tiempo cuando en un auto-generador usual la polaridad cambiará.
+
+132
+00:17:08,570 --> 00:17:19,260
+Y el segundo momento no sin importancia es que este esquema nos permite mantener la bobina primaria en modo de resonancia.
+
+133
+00:17:19,760 --> 00:17:22,180
+Es decir, el inductor del transformador de alto voltaje.
+
+134
+00:17:22,580 --> 00:17:24,780
+¿Cómo se logra este modo de resonancia?
+
+135
+00:17:25,160 --> 00:17:33,540
+Este es el modo llamado cuando la corriente y el voltaje en este conductor están desfasados prácticamente 90 grados.
+
+136
+00:17:33,540 --> 00:17:35,820
+Esforzándose hacia este desfase.
+
+137
+00:17:36,660 --> 00:17:47,980
+Y automáticamente resulta que este, efectivamente un trozo de cable de un par de metros, está en modo de resonancia sin escoger capacidad paralela para él.
+
+138
+00:17:48,800 --> 00:17:52,860
+Cuando la corriente no corresponde al pulso de voltaje.
+
+139
+00:17:52,960 --> 00:17:54,560
+Están espaciados en tiempo.
+
+140
+00:17:54,560 --> 00:18:03,240
+Estas son dos características principales por las cuales estas soluciones de esquema se separan en una categoría aparte de Kachers.
+
+141
+00:18:04,020 --> 00:18:08,060
+Entonces, el primer momento cuando todo el sistema está ensamblado, conectado.
+
+142
+00:18:08,820 --> 00:18:12,140
+Observada la regla de bobinado en una y la misma dirección.
+
+143
+00:18:12,840 --> 00:18:17,420
+Conecta al menos del esquema el cable de tierra: aquí está el conductor.
+
+144
+00:18:18,180 --> 00:18:22,480
+Conecta el común de la sonda del osciloscopio al mismo punto.
+
+145
+00:18:22,480 --> 00:18:25,180
+Y conecta la tierra.
+
+146
+00:18:25,460 --> 00:18:28,960
+Y aquí este terminal negro: este también es menos.
+
+147
+00:18:30,000 --> 00:18:31,500
+También conecta el más.
+
+148
+00:18:31,920 --> 00:18:37,760
+Y aplica al esquema el voltaje mínimo al cual puede arrancar.
+
+149
+00:18:37,920 --> 00:18:41,600
+Aquí en mi caso la sonda, presta atención, cuelga en el aire.
+
+150
+00:18:42,260 --> 00:18:47,480
+El sistema arrancó y su arranque comienza desde 7 V.
+
+151
+00:18:48,040 --> 00:18:50,240
+Esto es consumo de 6 centésimas de amperio.
+
+152
+00:18:50,920 --> 00:18:57,860
+¿Cómo puedes determinar que la bobina no está en el modo operativo óptimo?
+
+153
+00:18:58,600 --> 00:19:00,900
+Esto se determina por nuestro cálculo.
+
+154
+00:19:00,980 --> 00:19:05,280
+Sabemos que aquí 74,5 m de conductor en esta bobina.
+
+155
+00:19:05,860 --> 00:19:09,520
+Significa debería trabajar a frecuencia 1 MHz.
+
+156
+00:19:09,700 --> 00:19:12,820
+74,5 m para MHz esto es cuarto.
+
+157
+00:19:13,900 --> 00:19:17,000
+Entonces ahora acercaré mi mano.
+
+158
+00:19:17,820 --> 00:19:27,680
+Y si la bobina en realidad quiere cambiar a una frecuencia operativa más baja, entonces la amplitud en el sistema aumentará.
+
+159
+00:19:27,820 --> 00:19:31,540
+Mi mano será una capacidad aislada relativa a la tierra.
+
+160
+00:19:32,200 --> 00:19:36,860
+Bajará la frecuencia y vemos un aumento de amplitud de oscilación.
+
+161
+00:19:36,960 --> 00:19:40,000
+A su vez el consumo no debería aumentar.
+
+162
+00:19:40,380 --> 00:19:43,780
+Entonces traeré mi mano y observaremos el oscilograma.
+
+163
+00:19:45,100 --> 00:19:48,940
+Visible que la amplitud ahora.
+
+164
+00:19:49,380 --> 00:19:51,880
+Y en la esquina superior: esta es frecuencia.
+
+165
+00:19:51,980 --> 00:19:55,660
+Por ahora no le prestes atención, el osciloscopio no la captura.
+
+166
+00:19:55,840 --> 00:19:56,600
+Acerco mano.
+
+167
+00:19:57,580 --> 00:20:02,200
+Ves la amplitud claramente aumenta.
+
+168
+00:20:02,760 --> 00:20:04,660
+Mano más cerca, amplitud arriba.
+
+169
+00:20:05,080 --> 00:20:08,760
+Significa sí, en realidad a la bobina le falta capacidad adicional.
+
+170
+00:20:09,720 --> 00:20:11,260
+También consumo.
+
+171
+00:20:11,480 --> 00:20:12,660
+Aquí no cambia.
+
+172
+00:20:12,920 --> 00:20:15,200
+Acerco, alejo.
+
+173
+00:20:16,020 --> 00:20:17,160
+Todo en su lugar.
+
+174
+00:20:18,060 --> 00:20:25,600
+Ahora puedo añadir voltaje de suministro y determinar la frecuencia exacta.
+
+175
+00:20:25,740 --> 00:20:27,160
+Aquí el osciloscopio captura.
+
+176
+00:20:27,840 --> 00:20:30,840
+Entró en captura de frecuencia normalmente.
+
+177
+00:20:31,220 --> 00:20:34,980
+Y ve que es prácticamente 1,6 MHz.
+
+178
+00:20:35,980 --> 00:20:36,960
+Acerco mano.
+
+179
+00:20:37,400 --> 00:20:40,820
+Aquí también en este modo la amplitud aumenta.
+
+180
+00:20:41,080 --> 00:20:43,520
+Y ahora podemos rastrear la frecuencia.
+
+181
+00:20:45,020 --> 00:20:50,320
+De 1,58 se reduce.
+
+182
+00:20:50,800 --> 00:20:51,740
+Entonces, 1,3.
+
+183
+00:20:53,440 --> 00:20:58,840
+Significa, concluyo que esta bobina necesita capacidad aislada.
+
+184
+00:20:59,260 --> 00:21:10,380
+Si al acercar la mano a la bobina la amplitud al contrario cayó, entonces en este caso quedaría claro que al contrario la capacidad en la bobina necesita ser reducida.
+
+185
+00:21:10,660 --> 00:21:14,500
+Es decir, esta es una bobina ya hecha geométricamente incorrectamente.
+
+186
+00:21:14,640 --> 00:21:21,480
+Aquí tendrías que desenrollar cable porque ya hay capacidad entre vueltas en nosotros.
+
+187
+00:21:22,360 --> 00:21:34,120
+Y para reducirla no puedes, excepto o estirar las vueltas de la bobina de alto voltaje, hacer un espacio entre ellas, o desenrollar metros físicos de conductor.
+
+188
+00:21:35,100 --> 00:21:42,740
+En el mismo modo, todo como has visto muchas veces: las lámparas de neón brillarán aquí cerca del extremo caliente.
+
+189
+00:21:43,320 --> 00:21:46,160
+Cerca de los fríos no deberían brillar.
+
+190
+00:21:46,320 --> 00:21:49,280
+Pasa, quema, aquí no.
+
+191
+00:21:49,440 --> 00:21:57,060
+También puedes pasar con la sonda del osciloscopio: aquí será amplitud máxima.
+
+192
+00:21:57,060 --> 00:22:00,080
+Y aquí será amplitud en cero.
+
+193
+00:22:01,700 --> 00:22:05,120
+Ahora cambiamos a escoger capacidad aislada.
+
+194
+00:22:05,220 --> 00:22:09,580
+La escogí por adelantado, y ahora mostraré algunas etapas.
+
+195
+00:22:10,340 --> 00:22:14,100
+Como capacidad aislada aplicaré tal sistema.
+
+196
+00:22:14,260 --> 00:22:18,340
+Aquí soldaré el extremo caliente de la bobina de alto voltaje.
+
+197
+00:22:18,960 --> 00:22:21,560
+Dentro hay una bola de adornos de árbol de Navidad.
+
+198
+00:22:22,100 --> 00:22:25,640
+Cómo hacer tal capacidad aislada mostré antes en el canal.
+
+199
+00:22:25,640 --> 00:22:28,120
+La capacidad aislada está instalada.
+
+200
+00:22:28,760 --> 00:22:30,600
+Aplico potencia al sistema.
+
+201
+00:22:37,190 --> 00:22:42,250
+Aproximadamente 6 centésimas amperio, 7 V.
+
+202
+00:22:42,730 --> 00:22:48,470
+Inmediatamente puedes prestar atención que con la capacidad aislada la frecuencia se volvió más baja,
+
+203
+00:22:52,210 --> 00:22:54,250
+1170 kHz.
+
+204
+00:22:55,970 --> 00:22:59,370
+Y el campo alrededor de la bobina aumentó.
+
+205
+00:22:59,650 --> 00:23:02,270
+Es decir, ahora podemos ver nuestra lámpara de neón.
+
+206
+00:23:03,290 --> 00:23:09,510
+Se enciende ya a una distancia más lejana de la bobina.
+
+207
+00:23:09,670 --> 00:23:13,190
+A su vez el consumo en nosotros es el mismo.
+
+208
+00:23:13,390 --> 00:23:18,090
+Y podemos observar tal momento que el arranque del sistema se volvió más estable.
+
+209
+00:23:18,330 --> 00:23:22,610
+Y podemos lanzarlo ya empezando desde 3 V.
+
+210
+00:23:24,230 --> 00:23:27,830
+4 V y se lanzó tranquilamente.
+
+211
+00:23:29,410 --> 00:23:31,050
+Ves la frecuencia ya.
+
+212
+00:23:32,230 --> 00:23:34,230
+Intentaré hacerla menos.
+
+213
+00:23:36,970 --> 00:23:38,250
+3 V.
+
+214
+00:23:40,190 --> 00:23:41,690
+El sistema trabaja.
+
+215
+00:23:45,570 --> 00:23:55,630
+Ahora determinamos que podemos examinar con precisión nuestra frecuencia.
+
+216
+00:23:57,470 --> 00:24:01,090
+Ves que no alcanzamos la frecuencia calculada.
+
+217
+00:24:01,230 --> 00:24:04,810
+Consecuentemente, aún necesitamos aumentar la capacidad aislada.
+
+218
+00:24:06,010 --> 00:24:10,690
+Ya que escogí todos los detalles por adelantado, esto no representará dificultad.
+
+219
+00:24:10,690 --> 00:24:17,870
+Ahora instalaremos tal nimbo en nuestra bobina.
+
+220
+00:24:18,490 --> 00:24:25,050
+Saldrá una cabeza de algún San Patricio.
+
+221
+00:24:27,090 --> 00:24:30,250
+Tal calvo con un nimbo.
+
+222
+00:24:32,370 --> 00:24:34,550
+Tal bobina divertida salió.
+
+223
+00:24:35,010 --> 00:24:36,750
+Y ahora aplico potencia.
+
+224
+00:24:40,670 --> 00:24:43,330
+Nuestros 7-8 V.
+
+225
+00:24:44,710 --> 00:24:46,310
+¿Y qué podemos rastrear?
+
+226
+00:24:47,410 --> 00:24:50,670
+Que la frecuencia en nosotros es 1 MHz.
+
+227
+00:24:51,090 --> 00:24:52,830
+Significa todo escogido correctamente.
+
+228
+00:24:53,950 --> 00:25:00,710
+También presta atención que entre la capacidad aislada y el transformador Tesla hay alguna distancia.
+
+229
+00:25:00,810 --> 00:25:05,270
+Si cambias esta distancia, la frecuencia cambiará suavemente.
+
+230
+00:25:05,270 --> 00:25:14,530
+Además, la dependencia es tal: cuanto más alto la capacidad aislada sobre el transformador Tesla, más baja la frecuencia en el sistema será.
+
+231
+00:25:14,850 --> 00:25:19,150
+Si bajas la capacidad aislada más bajo, la frecuencia subirá.
+
+232
+00:25:21,030 --> 00:25:24,390
+Encontramos nuestro resultado deseado en 1 MHz.
+
+233
+00:25:24,690 --> 00:25:32,470
+Ahora al mismo consumo el brillo de la lámpara de neón se encenderá a una distancia aún mayor.
+
+234
+00:25:34,250 --> 00:25:37,650
+Resulta también en esta zona.
+
+235
+00:25:38,510 --> 00:25:46,770
+Y ahora puedo dar mayor voltaje y mirar cómo se comporta el sistema.
+
+236
+00:25:49,110 --> 00:25:50,610
+Aplico orden.
+
+237
+00:25:52,610 --> 00:25:55,250
+Voltaje de batería 13 V.
+
+238
+00:25:57,330 --> 00:26:00,210
+Esto en este caso es consumo.
+
+239
+00:26:01,210 --> 00:26:03,210
+Lámpara de neón a una distancia mayor.
+
+240
+00:26:04,470 --> 00:26:07,630
+Una descarga ya debería aparecer.
+
+241
+00:26:09,550 --> 00:26:10,910
+Hay una pequeña.
+
+242
+00:26:11,030 --> 00:26:16,530
+Y ahora podemos encender una lámpara fluorescente.
+
+243
+00:26:17,530 --> 00:26:18,770
+Se enciende.
+
+244
+00:26:19,770 --> 00:26:22,050
+Ahora un momento.
+
+245
+00:26:22,990 --> 00:26:28,810
+En nuestro esquema había una lámpara de neón, paralela al colector-emisor.
+
+246
+00:26:28,810 --> 00:26:32,310
+Aquí está ubicada, esta lámpara.
+
+247
+00:26:33,150 --> 00:26:39,110
+Como recuerdas, escribí que necesitas ajustarla para voltaje de disparo a 100-150 V.
+
+248
+00:26:39,670 --> 00:26:44,230
+Ahora elevaré el voltaje de suministro del sistema.
+
+249
+00:26:45,110 --> 00:26:48,530
+Y presta atención a la lámpara de neón.
+
+250
+00:26:49,550 --> 00:26:50,970
+Elevo voltaje.
+
+251
+00:26:54,830 --> 00:26:55,890
+27 V.
+
+252
+00:26:56,110 --> 00:26:57,750
+Aquí empieza a encenderse.
+
+253
+00:27:00,090 --> 00:27:01,590
+Es decir 30 V.
+
+254
+00:27:02,670 --> 00:27:07,390
+Y la lámpara: ves que se encendió.
+
+255
+00:27:07,490 --> 00:27:14,150
+También ves la lámpara se encendió en el emisor porque la corriente de consumo del sistema creció.
+
+256
+00:27:14,210 --> 00:27:15,530
+Aquí ahora qué aplico.
+
+257
+00:27:17,650 --> 00:27:25,010
+El momento de disparo de la lámpara de neón dice que tenemos gran potencial de voltaje en el colector.
+
+258
+00:27:25,690 --> 00:27:30,130
+Y esto testifica que no puedes elevar más el voltaje de suministro.
+
+259
+00:27:30,630 --> 00:27:36,730
+Ahora necesitas pararte en el colector y mirar qué amplitud de pulsos salen allí.
+
+260
+00:27:37,250 --> 00:27:43,130
+Porque sabemos que para este transistor el voltaje límite colector-emisor es 230 V.
+
+261
+00:27:43,130 --> 00:27:45,630
+La sonda está ubicada en el colector del transistor.
+
+262
+00:27:46,270 --> 00:27:48,890
+Tal oscilograma, picos clásicos.
+
+263
+00:27:49,490 --> 00:27:52,270
+Y vemos la amplitud máxima es 172 V.
+
+264
+00:27:52,750 --> 00:27:56,130
+Ahora la lámpara de neón está al borde del disparo.
+
+265
+00:27:56,310 --> 00:27:59,950
+Visible picos por amplitud de salto, y los corta.
+
+266
+00:28:00,590 --> 00:28:08,210
+Más adelante aún puedes aumentar el voltaje de suministro a tal modo cuando se enciende establemente.
+
+267
+00:28:08,210 --> 00:28:15,950
+Más aumento mejor no hacer porque el transistor puede fallar.
+
+268
+00:28:16,610 --> 00:28:19,870
+Ahora se ve bien que aquí hay una amplitud diferente.
+
+269
+00:28:21,330 --> 00:28:25,130
+Momentos con pequeña amplitud donde la lámpara de neón se dispara.
+
+270
+00:28:25,310 --> 00:28:32,350
+Pero aún así el transistor en nosotros brevemente tolera tal acoso: 296 V.
+
+271
+00:28:33,470 --> 00:28:38,170
+Ya que son cortos en tiempo, no falla de esto.
+
+272
+00:28:38,270 --> 00:28:41,690
+Pero la lámpara de neón empieza su disparo.
+
+273
+00:28:43,050 --> 00:28:46,710
+Los picos en el colector tienen diferentes amplitudes.
+
+274
+00:28:48,410 --> 00:28:50,490
+Necesitas vigilar este momento.
+
+275
+00:28:52,890 --> 00:29:01,970
+Diré inmediatamente que la mayoría de los transistores en estos esquemas específicamente fallan de este voltaje colector-emisor.
+
+276
+00:29:01,970 --> 00:29:04,890
+No de la corriente que excede.
+
+277
+00:29:06,730 --> 00:29:13,310
+Los transistores no mueren por ruptura térmica sino específicamente por ruptura de voltaje.
+
+278
+00:29:15,230 --> 00:29:17,750
+En este caso consumo.
+
+279
+00:29:18,010 --> 00:29:21,210
+Aquí en nosotros 26 V.
+
+280
+00:29:21,590 --> 00:29:27,750
+Naturalmente, aquí ahora como siempre las lámparas fluorescentes arderán en todas partes.
+
+281
+00:29:28,750 --> 00:29:37,150
+Una descarga sucederá en el borde de un objeto metálico.
+
+282
+00:29:37,710 --> 00:29:46,810
+Presta atención que la descarga fitón es pequeña porque el cable en nosotros es grueso y su conteo de vueltas es pequeño.
+
+283
+00:29:47,810 --> 00:29:52,510
+279 vueltas relativo a bobinas enrolladas con cable delgado.
+
+284
+00:29:52,630 --> 00:29:56,630
+Allí puede exceder mil y medio vueltas.
+
+285
+00:29:56,630 --> 00:30:02,950
+Pero para trabajar con estos sistemas el gran voltaje como tal no se necesita.
+
+286
+00:30:03,090 --> 00:30:08,390
+Lo importante es cómo esta bobina crea alrededor de sí misma perturbación en el entorno.
+
+287
+00:30:08,890 --> 00:30:14,810
+Y ya que está enrollada con cable bastante grueso, derribar su frecuencia es muy difícil.
+
+288
+00:30:15,010 --> 00:30:16,730
+Un sistema estable resulta.
+
+289
+00:30:16,850 --> 00:30:18,970
+El sistema trabaja alrededor de dos minutos.
+
+290
+00:30:18,970 --> 00:30:23,810
+En tal modo la mayoría lanza este sistema.
+
+291
+00:30:24,110 --> 00:30:29,310
+Aquí todo bueno, las lámparas fluorescentes arden a gran distancia.
+
+292
+00:30:31,250 --> 00:30:36,630
+El consumo del orden de 36-38 W salta.
+
+293
+00:30:37,870 --> 00:30:41,890
+Ajustado todo en MHz y en esto la gente se detiene.
+
+294
+00:30:42,010 --> 00:30:44,030
+Consideran que el sistema funciona bien.
+
+295
+00:30:44,790 --> 00:30:47,530
+Traje el termómetro aquí no por casualidad.
+
+296
+00:30:47,530 --> 00:30:53,750
+Su temperatura se acerca a 60 grados.
+
+297
+00:30:53,830 --> 00:30:56,750
+Esto está en el flujo de aire en el disipador.
+
+298
+00:30:56,830 --> 00:31:02,010
+El disipador mismo se calienta muy fuertemente y quema capitalmente los dedos.
+
+299
+00:31:02,990 --> 00:31:05,910
+Esto podrías observar si lo hiciste tú mismo antes.
+
+300
+00:31:06,190 --> 00:31:07,090
+Tal modo.
+
+301
+00:31:07,210 --> 00:31:10,270
+¿De qué testifica el calentamiento del disipador?
+
+302
+00:31:10,270 --> 00:31:24,070
+Que este consumo que tenemos de 36-38 W: se gasta en la mayor parte en vano, en la nada, en calentar el transistor.
+
+303
+00:31:24,690 --> 00:31:31,390
+Y ahora ajustaremos el Tesla Kacher en el modo operativo correcto.
+
+304
+00:31:32,390 --> 00:31:37,770
+Si recuerdas, entonces el oscilograma en nosotros en el colector era 1 pico.
+
+305
+00:31:37,770 --> 00:31:42,790
+Y ahora alcanzamos el modo cuando el sistema deja de calentarse.
+
+306
+00:31:43,850 --> 00:31:47,370
+Y ya aquí podemos bombear en orden de 50 W.
+
+307
+00:31:47,890 --> 00:31:49,510
+El campo aumenta significativamente.
+
+308
+00:31:50,590 --> 00:31:54,170
+Y todo viene a la norma como debería ser.
+
+309
+00:31:54,570 --> 00:31:56,670
+Tal es el sentido del ajuste.
+
+310
+00:31:57,470 --> 00:32:01,750
+Bien visible que la temperatura continúa creciendo ya pasados 60 grados.
+
+311
+00:32:02,170 --> 00:32:05,650
+Y de tocar el disipador no tengo deseo.
+
+312
+00:32:06,650 --> 00:32:13,070
+Apago para que nuestro transistor no volara por ruptura térmica.
+
+313
+00:32:13,610 --> 00:32:15,530
+Hice un reemplazo del inductor.
+
+314
+00:32:17,050 --> 00:32:22,290
+Eliminé el inductor que era anterior: 6 vueltas tenemos aquí.
+
+315
+00:32:22,790 --> 00:32:27,430
+Y puse un inductor de dos vueltas de cable grueso.
+
+316
+00:32:28,130 --> 00:32:29,730
+¿Aparentemente, qué hago?
+
+317
+00:32:29,730 --> 00:32:35,690
+El transistor para esto se calentó fuertemente y trabajó en gran longitud de cable.
+
+318
+00:32:35,950 --> 00:32:39,130
+Aquí mayor resistencia óhmica, mayor inductancia.
+
+319
+00:32:39,770 --> 00:32:43,690
+Y ahora lo forzaré a trabajar en cable más corto.
+
+320
+00:32:44,090 --> 00:32:46,450
+Efectivamente con menor resistencia.
+
+321
+00:32:46,830 --> 00:32:52,330
+Y debería por idea de la ingeniería eléctrica clásica calentarse.
+
+322
+00:32:52,950 --> 00:32:55,410
+Y quemarse por ruptura térmica.
+
+323
+00:32:56,130 --> 00:32:59,110
+Pero en este caso esto no sucederá en nosotros.
+
+324
+00:32:59,110 --> 00:33:03,830
+Porque conducimos trabajo por tecnología Tesla.
+
+325
+00:33:04,350 --> 00:33:09,570
+Y trabajaremos ahora en este transistor en modo de oscilación de alta frecuencia.
+
+326
+00:33:11,290 --> 00:33:15,830
+Ahora el experimento en nosotros empezará desde la temperatura ambiente.
+
+327
+00:33:16,010 --> 00:33:21,310
+Ahora es verano y en mí aquí es del orden de 30 grados en la habitación.
+
+328
+00:33:22,330 --> 00:33:25,590
+El mercurio es visible en la marca 30.
+
+329
+00:33:27,470 --> 00:33:31,470
+Para empezar miremos el oscilograma en el colector.
+
+330
+00:33:31,570 --> 00:33:37,330
+Ahora conectaré la sonda aquí para que la diferencia en los modos operativos fuera visible.
+
+331
+00:33:37,570 --> 00:33:40,010
+La sonda está en el colector del transistor.
+
+332
+00:33:40,230 --> 00:33:44,510
+Cable común del osciloscopio al menos de la fuente de alimentación del esquema.
+
+333
+00:33:45,610 --> 00:33:47,370
+Ves que el sistema arrancó.
+
+334
+00:33:47,510 --> 00:33:49,770
+3 V 0,03 A consume.
+
+335
+00:33:50,390 --> 00:33:53,410
+Y ahora elevaremos voltaje.
+
+336
+00:33:53,410 --> 00:33:57,530
+Y observaremos el oscilograma.
+
+337
+00:33:59,290 --> 00:34:04,670
+Ves que el oscilograma cambió significativamente.
+
+338
+00:34:05,810 --> 00:34:08,090
+Ahora el voltaje en nosotros es 8 V.
+
+339
+00:34:09,810 --> 00:34:13,730
+Un pico desapareció y apareció una serie de pulsos.
+
+340
+00:34:13,910 --> 00:34:14,810
+Eleva más.
+
+341
+00:34:16,230 --> 00:34:18,310
+Esto en nosotros es 11 V.
+
+342
+00:34:19,910 --> 00:34:21,890
+Va más.
+
+343
+00:34:30,680 --> 00:34:32,840
+19 V.
+
+344
+00:34:35,100 --> 00:34:36,500
+20.
+
+345
+00:34:40,270 --> 00:34:48,170
+Ahora necesitaremos llevar al mismo consumo del esquema que en el experimento anterior.
+
+346
+00:34:50,210 --> 00:34:52,450
+Eleva voltaje más.
+
+347
+00:34:56,710 --> 00:35:00,710
+Aquí esto tenemos señal en el colector.
+
+348
+00:35:02,030 --> 00:35:02,930
+1 pulso.
+
+349
+00:35:03,090 --> 00:35:05,710
+Resulta en nosotros una serie cortada de pulsos.
+
+350
+00:35:06,570 --> 00:35:12,170
+Además aquí tenemos alta frecuencia ya.
+
+351
+00:35:12,590 --> 00:35:18,310
+Y la frecuencia de los pulsos siguientes es 1 MHz.
+
+352
+00:35:20,490 --> 00:35:23,250
+Ahora el osciloscopio se ajustará.
+
+353
+00:35:24,250 --> 00:35:26,350
+Será más conveniente observar.
+
+354
+00:35:29,010 --> 00:35:31,250
+Frecuencia 1 MHz.
+
+355
+00:35:31,430 --> 00:35:33,290
+Es decir, todo trabaja.
+
+356
+00:35:34,050 --> 00:35:36,730
+Ahora miremos la temperatura.
+
+357
+00:35:39,690 --> 00:35:45,730
+La temperatura en nosotros por ahora no crece fuertemente.
+
+358
+00:35:46,030 --> 00:35:46,770
+Sin crecimiento.
+
+359
+00:35:48,130 --> 00:35:49,750
+31 grados.
+
+360
+00:35:50,490 --> 00:35:51,730
+El sistema trabaja.
+
+361
+00:35:52,330 --> 00:36:02,450
+Y ahora cuando nada cambió, podemos prestar atención a a qué distancia brilla la lámpara.
+
+362
+00:36:03,270 --> 00:36:07,850
+Ahora el brillo del sistema a una distancia...
+
+363
+00:36:07,850 --> 00:36:10,730
+Si la cámara transfirió la distancia...
+
+364
+00:36:10,730 --> 00:36:13,330
+Pero ya la llevé a una distancia más de un metro.
+
+365
+00:36:14,270 --> 00:36:15,470
+La lámpara brilla.
+
+366
+00:36:15,570 --> 00:36:16,870
+Continúo alejándola.
+
+367
+00:36:17,870 --> 00:36:22,730
+Y aquí se desvaneció a una distancia de aproximadamente un metro y medio.
+
+368
+00:36:23,810 --> 00:36:28,130
+Es decir, el campo creció significativamente en este modo.
+
+369
+00:36:29,690 --> 00:36:32,710
+La descarga también aumentó su longitud.
+
+370
+00:36:33,990 --> 00:36:36,950
+Ahora miremos qué consumimos.
+
+371
+00:36:39,690 --> 00:36:41,010
+Recalculo.
+
+372
+00:36:43,990 --> 00:36:49,410
+28 V a 1,3 A.
+
+373
+00:36:50,070 --> 00:36:51,930
+36 W.
+
+374
+00:36:52,310 --> 00:36:55,130
+Traigo aún más consumo.
+
+375
+00:36:59,090 --> 00:37:00,370
+30...
+
+376
+00:37:00,370 --> 00:37:03,670
+30 a 1,36.
+
+377
+00:37:04,990 --> 00:37:06,190
+40 W.
+
+378
+00:37:06,290 --> 00:37:10,290
+Ahora el sistema come más que en el experimento anterior.
+
+379
+00:37:12,070 --> 00:37:17,090
+Ves también arde la lámpara en el colector.
+
+380
+00:37:17,190 --> 00:37:19,110
+Es decir, en el emisor del transistor.
+
+381
+00:37:19,530 --> 00:37:22,310
+La lámpara de neón en el colector no brilla.
+
+382
+00:37:22,430 --> 00:37:27,310
+Significa que el voltaje en exceso de los picos en el colector está ausente en nosotros.
+
+383
+00:37:27,430 --> 00:37:30,430
+Pero podemos mirar también por el osciloscopio.
+
+384
+00:37:30,430 --> 00:37:35,130
+Amplitud 116 V del pico máximo.
+
+385
+00:37:36,590 --> 00:37:38,510
+¿Qué muestra el termómetro?
+
+386
+00:37:39,490 --> 00:37:41,210
+Aquí cuánto ya filmo.
+
+387
+00:37:42,310 --> 00:37:44,330
+Que el transistor dejó de calentarse.
+
+388
+00:37:45,030 --> 00:37:47,450
+Y se volvió por encima de la temperatura ambiente.
+
+389
+00:37:48,070 --> 00:37:49,570
+Por 1-2 grados.
+
+390
+00:37:51,870 --> 00:37:54,590
+Consumimos todos los mismos 40 W.
+
+391
+00:37:54,870 --> 00:38:07,590
+Y si lanzas en tal modo, sentirás que cuando traes una lámpara fluorescente aquí en la mano donde la sostienes, te calentará muy fuertemente la mano.
+
+392
+00:38:07,590 --> 00:38:08,870
+Directamente calentar.
+
+393
+00:38:11,710 --> 00:38:14,930
+Los modos operativos son absolutamente distintos.
+
+394
+00:38:15,850 --> 00:38:20,990
+Y ahora entendemos qué potencia consumimos.
+
+395
+00:38:21,470 --> 00:38:23,490
+Tenemos más el brillo de la lámpara.
+
+396
+00:38:24,350 --> 00:38:26,890
+Y que nuestro transistor no se calienta.
+
+397
+00:38:27,050 --> 00:38:29,990
+Es decir toda la energía óptimamente va al sistema.
+
+398
+00:38:30,530 --> 00:38:32,650
+Misma frecuencia 1 MHz.
+
+399
+00:38:32,650 --> 00:38:38,350
+Aquí este es el modo operativo correcto Kacher del esquema.
+
+400
+00:38:39,390 --> 00:38:45,330
+Y como Tesla escribió, necesitas una serie de oscilaciones de alto voltaje.
+
+401
+00:38:47,850 --> 00:38:50,790
+Observemos aún el modo térmico.
+
+402
+00:38:54,760 --> 00:38:56,140
+La temperatura crece.
+
+403
+00:38:57,820 --> 00:38:59,400
+34 grados.
+
+404
+00:38:59,520 --> 00:39:02,040
+Pero crecimiento intenso ausente como en ese caso.
+
+405
+00:39:02,040 --> 00:39:03,620
+Cruzaron pasados 60.
+
+406
+00:39:06,100 --> 00:39:07,640
+Es decir trabaja excelentemente.
+
+407
+00:39:07,860 --> 00:39:11,560
+Puedes sostener una mano libremente.
+
+408
+00:39:12,540 --> 00:39:14,100
+El disipador no quema.
+
+409
+00:39:20,300 --> 00:39:25,840
+Ahora observemos aún el modo de consumo.
+
+410
+00:39:29,620 --> 00:39:31,540
+Bueno, y ahora traeré...
+
+411
+00:39:31,540 --> 00:39:34,940
+Bombeemos al sistema aún más.
+
+412
+00:39:35,940 --> 00:39:38,760
+Traigo al brillo completo de la lámpara.
+
+413
+00:39:41,140 --> 00:39:46,460
+Quizás brille así desde 12 V.
+
+414
+00:39:49,080 --> 00:39:53,920
+Aquí orden de 45 V 2 A.
+
+415
+00:39:54,080 --> 00:39:55,620
+Ahora miremos qué será.
+
+416
+00:40:00,870 --> 00:40:02,890
+45 a 2.
+
+417
+00:40:03,530 --> 00:40:05,910
+Bombeamos 90 W al sistema.
+
+418
+00:40:08,490 --> 00:40:09,570
+Oscilograma.
+
+419
+00:40:10,530 --> 00:40:13,710
+Ves que el voltaje está en la norma.
+
+420
+00:40:14,030 --> 00:40:16,730
+En el colector máximo 168 V.
+
+421
+00:40:18,570 --> 00:40:23,970
+Naturalmente ahora el campo aún más significativamente aumentó.
+
+422
+00:40:24,630 --> 00:40:26,970
+Podemos alejarlo si miramos así.
+
+423
+00:40:28,190 --> 00:40:33,570
+Ya a 2 m alejé la lámpara de este sistema.
+
+424
+00:40:35,070 --> 00:40:37,590
+Y toda brilla.
+
+425
+00:40:39,390 --> 00:40:40,990
+El brillo se desvanece.
+
+426
+00:40:41,790 --> 00:40:42,990
+Un metro ochenta y dos.
+
+427
+00:40:44,010 --> 00:40:47,230
+Bueno, y aquí correspondientemente la mano quema capitalmente.
+
+428
+00:40:48,330 --> 00:40:51,270
+Entonces, consumo, modo térmico.
+
+429
+00:40:51,490 --> 00:40:52,070
+¿Qué en nosotros?
+
+430
+00:40:53,070 --> 00:40:54,490
+¿Cómo cambia?
+
+431
+00:40:55,930 --> 00:40:59,070
+Ves que el crecimiento es absolutamente insignificante.
+
+432
+00:40:59,730 --> 00:41:01,670
+Añadimos aún más 2 grados.
+
+433
+00:41:07,420 --> 00:41:10,080
+Aquí sucede, este bombeo.
+
+434
+00:41:10,360 --> 00:41:13,320
+Si prestas atención a la lámpara de neón, no brilla.
+
+435
+00:41:13,520 --> 00:41:14,820
+Es decir, la protección no se dispara.
+
+436
+00:41:14,940 --> 00:41:16,820
+Todo está en modo óptimo.
+
+437
+00:41:17,760 --> 00:41:25,040
+Además, el conteo de vueltas en este sistema se puede reducir en el inductor hasta uno.
+
+438
+00:41:31,660 --> 00:41:37,620
+Apago el sistema probablemente para no irradiar extra-tiempo la cabeza.
+
+439
+00:41:37,620 --> 00:41:39,100
+Apago una vez más: temperatura.
+
+440
+00:41:41,280 --> 00:41:43,580
+Todo en modo óptimo.
+
+441
+00:41:43,720 --> 00:41:46,980
+Es decir entiende que aquí ahora tan grande disipador no se necesita.
+
+442
+00:41:47,240 --> 00:41:51,120
+Un disipador pequeño será suficiente, todo funcionará excelentemente.
+
+443
+00:41:52,020 --> 00:41:56,380
+Más tales vatios que podemos bombear aquí.
+
+444
+00:41:56,500 --> 00:42:02,580
+Resulta un Tesla muy potente con un gran campo con el que ya podemos conducir excelentes experimentos.
+
+445
+00:42:08,910 --> 00:42:14,490
+Aún un pequeño matiz sobre la ley de Kirchhoff mencioné en el clip de video.
+
+446
+00:42:14,630 --> 00:42:17,210
+Ahora ves que moví la sonda.
+
+447
+00:42:17,950 --> 00:42:21,050
+Ahora el común está ubicado en más alimentación.
+
+448
+00:42:22,030 --> 00:42:26,490
+Y aquí está el oscilograma por más alimentación.
+
+449
+00:42:26,730 --> 00:42:28,130
+El pulso también es positivo.
+
+450
+00:42:28,590 --> 00:42:32,590
+Solo la parte que va al menos, esto es al voltaje de suministro.
+
+451
+00:42:35,070 --> 00:42:38,250
+Pero el pulso también permaneció positivo.
+
+452
+00:42:38,650 --> 00:42:41,350
+El voltaje de suministro en nosotros es 37 V.
+
+453
+00:42:41,870 --> 00:42:45,270
+Y allí en menos va a 34 V.
+
+454
+00:42:46,990 --> 00:42:53,330
+Entiende que el sistema en nosotros trabaja en modo Kacher y con él todo está bien.
+
+455
+00:42:54,930 --> 00:42:59,110
+Ahora examinemos una característica más del trabajo en modo Kacher.
+
+456
+00:42:59,110 --> 00:43:06,010
+Desplazamiento de corriente y voltaje esforzándose a 90 grados en la bobina inductora primaria.
+
+457
+00:43:06,390 --> 00:43:09,490
+Ahora el canal amarillo del osciloscopio está en el colector.
+
+458
+00:43:10,070 --> 00:43:14,450
+El canal azul del osciloscopio está en el emisor del transistor.
+
+459
+00:43:14,790 --> 00:43:18,190
+Común correspondientemente en el cable común de tierra.
+
+460
+00:43:20,510 --> 00:43:24,090
+Canal amarillo aquí, azul aquí.
+
+461
+00:43:24,830 --> 00:43:28,550
+Ahora observaremos corriente y voltaje.
+
+462
+00:43:28,550 --> 00:43:33,290
+Corriente miraremos por caída de voltaje en esta resistencia.
+
+463
+00:43:33,570 --> 00:43:35,010
+Es decir, ve su fase.
+
+464
+00:43:35,750 --> 00:43:38,270
+Aplico potencia al sistema.
+
+465
+00:43:40,350 --> 00:43:42,370
+Ves picos en el colector.
+
+466
+00:43:43,070 --> 00:43:44,510
+Y ahora el emisor alcanza.
+
+467
+00:43:44,590 --> 00:43:48,150
+¿Por qué sucedió tal subida en el emisor?
+
+468
+00:43:48,550 --> 00:43:53,350
+Este fue el tiempo necesario para cargar esta capacidad electrolítica.
+
+469
+00:43:54,210 --> 00:43:57,370
+Pero estamos más interesados en el desfase.
+
+470
+00:43:58,610 --> 00:44:00,850
+Y qué podemos observar.
+
+471
+00:44:01,870 --> 00:44:03,650
+Un oscilograma muy interesante.
+
+472
+00:44:04,010 --> 00:44:08,590
+Aquí está un pulso de una serie por voltaje en el colector.
+
+473
+00:44:08,750 --> 00:44:11,710
+Y aquí está la corriente principal con un desplazamiento de 90 grados.
+
+474
+00:44:12,250 --> 00:44:20,370
+Y además, el desfase es incluso dentro de los pulsos de alto voltaje.
+
+475
+00:44:21,170 --> 00:44:23,090
+Entre su corriente y voltaje.
+
+476
+00:44:23,990 --> 00:44:26,210
+También una diferencia de fases es visible.
+
+477
+00:44:27,370 --> 00:44:35,030
+Además de estar desfasados, el desplazamiento también se hace por 180 grados antifase.
+
+478
+00:44:35,470 --> 00:44:42,730
+Y este modo específicamente crea maravillas con el campo en nuestro esquema.
+
+479
+00:44:43,130 --> 00:44:46,010
+Y lleva al consumo mínimo.
+
+480
+00:44:46,950 --> 00:44:53,830
+Porque la corriente y el voltaje consumidos de la fuente son con desfase.
+
+481
+00:44:55,810 --> 00:44:59,770
+Y varias palabras sobre cómo alcanzar tal modo.
+
+482
+00:45:00,310 --> 00:45:06,650
+Este modo se alcanza escogiendo polarización con estos resistores.
+
+483
+00:45:07,210 --> 00:45:11,550
+Y escogiendo el conteo de vueltas en el inductor.
+
+484
+00:45:12,070 --> 00:45:16,590
+Necesitas alcanzar tal modo cuando el transistor empezó a abrirse y cerrarse.
+
+485
+00:45:16,830 --> 00:45:22,450
+Específicamente un transistor Kacher está en este modo de conmutación con alta frecuencia.
+
+486
+00:45:22,450 --> 00:45:32,470
+Resulta cuando elevamos la corriente en la unión colector-emisor mediante reducir vueltas en el inductor.
+
+487
+00:45:33,370 --> 00:45:37,650
+Y porque la corriente se mueve por la unión colector-emisor.
+
+488
+00:45:38,710 --> 00:45:45,930
+En nosotros adicionalmente sucede un déficit de corriente de apertura en la base del transistor.
+
+489
+00:45:46,690 --> 00:45:50,530
+La carga va a la unión colector-emisor.
+
+490
+00:45:50,530 --> 00:45:53,410
+Y el transistor empieza a cerrarse y abrirse.
+
+491
+00:45:54,070 --> 00:45:56,730
+Y ya que escogimos esta polarización aquí.
+
+492
+00:45:57,290 --> 00:46:01,790
+Entonces resulta que no añadimos a la base del transistor a su apertura completa.
+
+493
+00:46:02,470 --> 00:46:06,950
+Y hace específicamente tales saltos por amplitud.
+
+494
+00:46:08,430 --> 00:46:09,990
+En esto con todos me despido.
+
+495
+00:46:10,110 --> 00:46:15,250
+Experimentos exitosos a todos, hermosas experiencias, entendimiento, y todo lo mejor.

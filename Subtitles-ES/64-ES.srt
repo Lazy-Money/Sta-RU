@@ -1,0 +1,959 @@
+1
+00:00:01,080 --> 00:00:02,440
+Hola a todos.
+
+2
+00:00:03,280 --> 00:00:08,800
+Lleva un tiempo una pregunta en el canal sobre el diagrama de bloques general del dispositivo.
+
+3
+00:00:09,020 --> 00:00:13,260
+Cómo se conectan sus componentes principales entre sí.
+
+4
+00:00:13,860 --> 00:00:17,720
+Retrasé compartir este diagrama por un tiempo por ciertas razones.
+
+5
+00:00:18,060 --> 00:00:21,840
+Porque necesitaba probar muchas variantes yo mismo.
+
+6
+00:00:22,780 --> 00:00:27,380
+Y evaluar cómo funcionan juntas en el sistema general.
+
+7
+00:00:28,380 --> 00:00:34,020
+Esta imagen muestra el diagrama de bloques del dispositivo.
+
+8
+00:00:34,900 --> 00:00:37,440
+Por el que pasaremos ahora.
+
+9
+00:00:38,940 --> 00:00:45,700
+Quiero decir que esta es solo la variante a la que llegué.
+
+10
+00:00:46,400 --> 00:00:48,820
+No quiero imponerla a nadie.
+
+11
+00:00:48,820 --> 00:01:00,340
+Porque hay algo de confusión entre la gente que habla de cómo funcionan estos dispositivos.
+
+12
+00:01:01,240 --> 00:01:05,500
+Eso no significa que la gente esté mintiendo.
+
+13
+00:01:06,800 --> 00:01:13,480
+Puede significar una cosa: hay muchas maneras de construir este dispositivo.
+
+14
+00:01:14,480 --> 00:01:21,820
+Por eso una persona dice una cosa y otra lo opuesto.
+
+15
+00:01:22,880 --> 00:01:25,120
+Quiero dar un pequeño consejo.
+
+16
+00:01:26,680 --> 00:01:35,540
+Cuando construyas dispositivos como estos, lo mejor es confiar en tu propio juicio.
+
+17
+00:01:35,920 --> 00:01:39,980
+Haz tus propios experimentos y saca tus propias conclusiones.
+
+18
+00:01:40,380 --> 00:01:48,700
+Y sobre todo, confía en tus instrumentos específicos y en lo que realmente funciona.
+
+19
+00:01:50,840 --> 00:01:59,900
+El componente principal en mi construcción de este dispositivo es nuestra bobina.
+
+20
+00:02:00,200 --> 00:02:03,240
+Este es el reactor donde ocurren los procesos.
+
+21
+00:02:04,240 --> 00:02:22,240
+Si la gente está construyendo dispositivos donde los procesos ocurren en el inductor, entonces es justo decir que esta bobina, que es solo un pickup, puede devanarse de cualquier manera.
+
+22
+00:02:22,240 --> 00:02:23,700
+Devanada de cualquier modo.
+
+23
+00:02:24,740 --> 00:02:26,100
+Incluso en una sola dirección.
+
+24
+00:02:27,100 --> 00:02:33,560
+Porque el proceso principal fluye específicamente en el inductor.
+
+25
+00:02:34,120 --> 00:02:36,240
+Trabajo con un principio diferente.
+
+26
+00:02:37,440 --> 00:02:44,080
+Así que hay requisitos específicos para hacer esta bobina.
+
+27
+00:02:45,180 --> 00:02:51,960
+Ya hice un video sobre cómo hacerlo, llamado "Resonador".
+
+28
+00:02:53,440 --> 00:03:00,020
+A continuación, el segundo componente principal es el generador controlador de baja frecuencia.
+
+29
+00:03:00,940 --> 00:03:12,480
+Construido sobre el esquema push-pull: un convertidor de dos brazos que trabaja en un núcleo de ferrita con entrehierro.
+
+30
+00:03:13,540 --> 00:03:18,720
+Del núcleo de ferrita tenemos dos devanados removibles.
+
+31
+00:03:18,720 --> 00:03:27,480
+3-4 vueltas en un devanado y unas 25 vueltas en el segundo.
+
+32
+00:03:28,160 --> 00:03:36,060
+Este devanado de 25 vueltas conecta al extremo frío de la bobina principal.
+
+33
+00:03:37,340 --> 00:03:40,760
+Y todo el conjunto forma un circuito.
+
+34
+00:03:42,340 --> 00:03:46,820
+Este circuito no es resonante a baja frecuencia.
+
+35
+00:03:46,820 --> 00:03:55,260
+Puedes ver que marqué una clave para los símbolos en el dibujo.
+
+36
+00:03:55,360 --> 00:04:01,260
+P significa devanado derecho, L significa izquierdo, y el asterisco significa "elige esto".
+
+37
+00:04:01,400 --> 00:04:14,980
+Estos componentes, capacitores, devanados, números de vueltas, necesitan elegirse individualmente en la práctica.
+
+38
+00:04:16,700 --> 00:04:22,920
+Los símbolos también indican la dirección del devanado: dónde derecho, dónde izquierdo.
+
+39
+00:04:25,000 --> 00:04:31,200
+Hay cierta regla que trato de seguir.
+
+40
+00:04:31,840 --> 00:04:38,960
+Los devanados a derechas son para el campo magnético, los devanados a izquierdas para el campo eléctrico.
+
+41
+00:04:41,360 --> 00:04:54,420
+Hay un punto que causa cierta confusión: cómo devanar un devanado derecho o izquierdo, cómo identificarlos.
+
+42
+00:04:56,220 --> 00:05:01,560
+En particular al devanar una bobina, digamos que tenemos una forma y cable.
+
+43
+00:05:02,740 --> 00:05:08,140
+Toma la mano izquierda y pellizca el inicio del cable.
+
+44
+00:05:09,140 --> 00:05:27,400
+Ahora si conducimos el devanado con la mano derecha y miramos la dirección en la que estamos devanando, puedes ver que este devanado va en sentido horario, torciéndose.
+
+45
+00:05:28,680 --> 00:05:32,420
+Llamamos a este devanado derecho.
+
+46
+00:05:35,020 --> 00:05:56,400
+Si tomamos el cable en la mano izquierda, lo pellizcamos también, y devanamos en la otra dirección, y ahora queremos averiguar la dirección del devanado, miramos de izquierda a derecha, desde el lado donde el cable sube por la forma.
+
+47
+00:05:56,400 --> 00:06:00,860
+A lo largo de la forma.
+
+48
+00:06:00,860 --> 00:06:09,940
+Y aquí es claramente antihorario, lo que significa que este es un devanado izquierdo.
+
+49
+00:06:12,560 --> 00:06:17,900
+Este nodo convertidor en la práctica se ve así.
+
+50
+00:06:19,880 --> 00:06:26,620
+Es ferrita de una unidad de deflexión de un TV viejo.
+
+51
+00:06:26,620 --> 00:06:38,800
+Principalmente ferrita de baja frecuencia, puedes usar un anillo de ferrita, puedes usar un entrehierro, o no.
+
+52
+00:06:39,060 --> 00:06:46,620
+Solo que con ferrita sin entrehierro, la sintonía del push-pull es ligeramente más complicada.
+
+53
+00:06:46,620 --> 00:06:57,600
+Pero como esta ferrita está dividida en dos mitades de fábrica, no hay problema.
+
+54
+00:06:58,720 --> 00:07:16,060
+Tienes que poner esas tres vueltas removibles en la mitad opuesta del núcleo respecto a las vueltas que controlan los transistores.
+
+55
+00:07:16,440 --> 00:07:19,820
+Esas 8-10 vueltas de los brazos del push-pull.
+
+56
+00:07:20,400 --> 00:07:24,500
+El entrehierro está en estos puntos para nosotros.
+
+57
+00:07:26,700 --> 00:07:33,440
+Obligatorio devanar en el lado opuesto, se forma un transformador aislante.
+
+58
+00:07:36,160 --> 00:07:40,520
+El cable blanco son las 25 vueltas.
+
+59
+00:07:41,800 --> 00:07:50,360
+Aquí está su salida, que luego va según el circuito al extremo frío de nuestra bobina.
+
+60
+00:07:50,800 --> 00:07:56,480
+Y al capacitor que luego conecta con el extremo caliente de la bobina.
+
+61
+00:07:58,000 --> 00:08:03,700
+Estas patas van directamente a los drenajes de los FETs.
+
+62
+00:08:05,100 --> 00:08:12,860
+En el centro puedes ver la toma central de estos devanados.
+
+63
+00:08:13,120 --> 00:08:18,180
+Va al más de potencia de los convertidores.
+
+64
+00:08:19,600 --> 00:08:29,720
+Y en el lado posterior tenemos el capacitor de reserva principal para la alimentación del push-pull.
+
+65
+00:08:33,780 --> 00:08:37,080
+El más conecta a la toma central.
+
+66
+00:08:37,240 --> 00:08:42,940
+Y este cable a menos va a las fuentes de los transistores.
+
+67
+00:08:42,940 --> 00:08:47,920
+Ese es básicamente el cable de potencia.
+
+68
+00:08:52,820 --> 00:09:01,400
+Surge la pregunta: ¿por qué conectamos esta bobina en serie con las 25 vueltas?
+
+69
+00:09:02,180 --> 00:09:21,020
+Se hace para que en el circuito tanque en serie formado por el inductor y estas tres vueltas, no solo obtengamos oscilaciones sinusoidales a alguna frecuencia, sino moduladas en amplitud.
+
+70
+00:09:21,020 --> 00:09:24,980
+Moduladas en amplitud.
+
+71
+00:09:25,800 --> 00:09:34,020
+Si pones una sonda en este punto, con la sintonía correcta verás que la señal portadora está modulada.
+
+72
+00:09:34,020 --> 00:09:42,900
+Puedes ver o peces modulados a cero, o modulación parcial.
+
+73
+00:09:43,080 --> 00:09:51,460
+Pero la modulación en el circuito del inductor debe ser no menor del 50% de amplitud.
+
+74
+00:09:52,080 --> 00:09:59,440
+Por la misma razón, la alimentación del convertidor es 24 V en vez de 12.
+
+75
+00:09:59,960 --> 00:10:11,420
+Esta alimentación elevada reduce el número de vueltas en el devanado del convertidor.
+
+76
+00:10:11,640 --> 00:10:15,440
+El número de vueltas baja.
+
+77
+00:10:16,520 --> 00:10:34,340
+De las 25 vueltas del devanado izquierdo (también marcado con asterisco), eliges el número de vueltas hasta que la tensión activa aplicada en serie en este circuito cause modulaciones de amplitud de la señal portadora en el inductor.
+
+78
+00:10:34,340 --> 00:10:40,780
+Para que aparezcan.
+
+79
+00:10:42,120 --> 00:10:47,800
+Sin esas modulaciones en el inductor, el sistema no puede arrancarse.
+
+80
+00:10:48,760 --> 00:11:05,780
+Puedes haber notado que uso dos fuentes de alimentación en serie con 12 V cada una en vez de una sola fuente de 24 V para el convertidor.
+
+81
+00:11:05,880 --> 00:11:15,240
+Uso fuentes de alimentación marca Navigator con salida de 5 A a 12,5 V.
+
+82
+00:11:16,240 --> 00:11:25,880
+Las fuentes están diseñadas para mantener el sistema corriendo en modo autónomo una vez que alcanza la potencia nominal.
+
+83
+00:11:26,740 --> 00:11:34,440
+Esta forma de cablear las fuentes deja que el sistema arranque desde una batería de 12 V.
+
+84
+00:11:34,440 --> 00:11:36,400
+El arranque se hace así.
+
+85
+00:11:36,500 --> 00:11:39,740
+Primero se cierra este interruptor.
+
+86
+00:11:40,340 --> 00:11:45,460
+La alimentación llega al convertidor.
+
+87
+00:11:45,840 --> 00:11:54,640
+La alimentación también va a todos los chips de control en estos nodos.
+
+88
+00:11:55,540 --> 00:11:57,720
+Ya cubrimos los esquemas de estos nodos.
+
+89
+00:11:57,720 --> 00:12:11,380
+Y luego, cuando el botón de inicio se cierra, la alimentación va al convertidor que alimenta nuestro Tesla controlado o Kacher controlado.
+
+90
+00:12:12,340 --> 00:12:26,340
+Con este enganche, no necesitas un diodo en este punto para bloquear la tensión que viene de la fuente cuando el sistema corre por su cuenta.
+
+91
+00:12:26,340 --> 00:12:32,620
+Esta batería, con este enganche, no necesita removerse; es la regular.
+
+92
+00:12:33,300 --> 00:12:38,380
+Y mientras este interruptor esté cerrado, la batería se recarga constantemente.
+
+93
+00:12:38,420 --> 00:12:48,360
+Para hacerlo más claro, déjame mostrar el sistema siendo probado con las fuentes conectadas en serie en acción.
+
+94
+00:12:49,360 --> 00:12:52,900
+Dos fuentes de 12 V.
+
+95
+00:12:52,960 --> 00:12:55,700
+Batería de arranque.
+
+96
+00:12:57,380 --> 00:12:58,900
+Aquí está la salida.
+
+97
+00:12:59,840 --> 00:13:06,220
+Este es el punto donde conecta el más de la batería de arranque.
+
+98
+00:13:07,500 --> 00:13:08,860
+Segunda salida.
+
+99
+00:13:09,780 --> 00:13:16,800
+Este es la pata de 24 V que luego va al convertidor push-pull.
+
+100
+00:13:20,610 --> 00:13:27,150
+Ahora conecté el común del medidor al menos de la batería.
+
+101
+00:13:28,130 --> 00:13:31,310
+Y mido la tensión de la batería.
+
+102
+00:13:31,650 --> 00:13:37,670
+Ves que son 12,9 V.
+
+103
+00:13:38,670 --> 00:13:53,170
+Ahora conecto el medidor a la futura salida de 24 V en este punto.
+
+104
+00:13:54,130 --> 00:14:01,370
+Y conecto el punto medio de las dos fuentes a la batería.
+
+105
+00:14:02,490 --> 00:14:15,450
+Ves la tensión de la batería, menos las pérdidas en los diodos dentro de las fuentes, apareció en la salida de la segunda.
+
+106
+00:14:16,750 --> 00:14:21,190
+Y la batería se puede conectar libremente.
+
+107
+00:14:22,110 --> 00:14:24,890
+Ese es el valor que tenemos en la salida.
+
+108
+00:14:24,890 --> 00:14:30,910
+Y ahora puedes ver que uno de los LEDs de la fuente está encendido.
+
+109
+00:14:31,010 --> 00:14:38,310
+Aquel cuyo terminal tiene el potencial de la batería aplicado.
+
+110
+00:14:38,890 --> 00:14:44,190
+Ahora conectaré las fuentes a la red.
+
+111
+00:14:45,210 --> 00:14:47,730
+Empezarán a producir tensión.
+
+112
+00:14:47,730 --> 00:14:57,510
+Y veremos la tensión común de salida de las dos en el medidor.
+
+113
+00:14:58,870 --> 00:15:00,590
+Conecta las fuentes.
+
+114
+00:15:02,490 --> 00:15:05,410
+Ves que nuestra tensión cambió.
+
+115
+00:15:05,590 --> 00:15:07,490
+Se volvió 24 V.
+
+116
+00:15:08,110 --> 00:15:09,550
+Prácticamente 25.
+
+117
+00:15:09,550 --> 00:15:19,390
+Y en este enganche la batería tiene el potencial de la primera fuente.
+
+118
+00:15:20,390 --> 00:15:24,570
+Y estará en modo de carga constantemente.
+
+119
+00:15:25,570 --> 00:15:26,750
+Desconéctala.
+
+120
+00:15:27,250 --> 00:15:31,830
+Ves una ligera caída de tensión.
+
+121
+00:15:32,510 --> 00:15:43,530
+Porque la tensión ahora de la carga de la batería es ligeramente más alta que lo que la fuente puede dar.
+
+122
+00:15:44,810 --> 00:15:48,670
+En estas fuentes, se proporciona regulación de salida.
+
+123
+00:15:48,670 --> 00:15:55,550
+La regulación de tensión de salida se hace dentro de cierto rango con potenciómetros de ajuste.
+
+124
+00:15:56,150 --> 00:15:59,410
+Aquí podrías poner 13,5 V, por ejemplo.
+
+125
+00:15:59,930 --> 00:16:04,510
+Y esta batería siempre estará en carga.
+
+126
+00:16:05,630 --> 00:16:07,710
+Apaga la fuente de alimentación.
+
+127
+00:16:10,390 --> 00:16:12,170
+Ves que el potencial cae.
+
+128
+00:16:13,510 --> 00:16:15,790
+Ocurre una descarga gradual.
+
+129
+00:16:15,790 --> 00:16:20,270
+Y vemos la tensión de la batería de nuevo.
+
+130
+00:16:23,210 --> 00:16:27,490
+Así funciona nuestro sistema.
+
+131
+00:16:27,610 --> 00:16:32,950
+Usar dos fuentes de 12 V también resuelve un problema.
+
+132
+00:16:33,790 --> 00:16:38,750
+El problema de arrancar el convertidor para alimentación del Kacher o Tesla.
+
+133
+00:16:40,230 --> 00:16:44,590
+Necesita alimentación de 12 V.
+
+134
+00:16:44,590 --> 00:16:52,450
+Así que la tensión de la batería se aplica directamente a este convertidor cuando el botón se cierra.
+
+135
+00:16:52,930 --> 00:16:55,730
+Para arrancar el dispositivo, cerramos el circuito.
+
+136
+00:16:56,110 --> 00:17:02,690
+El convertidor sube la tensión al potencial necesario para la operación del sistema.
+
+137
+00:17:02,830 --> 00:17:08,330
+Y arranca el lado de potencia del sistema de alta tensión.
+
+138
+00:17:08,710 --> 00:17:12,610
+Para detener el dispositivo, solo abre este circuito.
+
+139
+00:17:12,610 --> 00:17:25,390
+Cuando el dispositivo no se usa, debes apagar este interruptor para que la batería no se agote por el inversor push-pull corriendo.
+
+140
+00:17:25,510 --> 00:17:33,670
+El siguiente bloque del sistema, crucial para la operación adecuada, es este choque de baja frecuencia.
+
+141
+00:17:34,650 --> 00:17:41,790
+En las primeras variaciones de esquemas de algunos autores lo vimos, luego desapareció, supuestamente innecesario.
+
+142
+00:17:41,790 --> 00:17:46,170
+Este choque hace dos trabajos principales.
+
+143
+00:17:46,830 --> 00:17:58,450
+Primero, bloquea el componente de alta frecuencia para que no llegue al puente de diodos, la carga, y luego al lado de entrada de las fuentes de alimentación.
+
+144
+00:17:59,070 --> 00:18:10,110
+El lado de entrada tiene capacitores electrolíticos, así que si la alta frecuencia entra ahí, esos capacitores pueden fallar directamente.
+
+145
+00:18:10,110 --> 00:18:12,450
+En la práctica simplemente explotan.
+
+146
+00:18:13,410 --> 00:18:19,870
+Y el segundo trabajo principal también es bloquear la alta frecuencia.
+
+147
+00:18:20,370 --> 00:18:20,930
+¿Pero por qué?
+
+148
+00:18:21,710 --> 00:18:26,510
+La alta frecuencia debería trabajar exclusivamente en este circuito.
+
+149
+00:18:27,010 --> 00:18:33,510
+Si va más allá, la longitud del camino aumenta y el sistema se desequilibra.
+
+150
+00:18:33,650 --> 00:18:36,090
+Arrancarlo entonces sería sin esperanza.
+
+151
+00:18:36,090 --> 00:18:42,070
+Esta es una de las partes más críticas, no puedes saltártela bajo ninguna condición.
+
+152
+00:18:42,750 --> 00:18:53,430
+Se puede hacer en cualquier anillo de ferrita de baja frecuencia, o puedes usar la misma ferrita de deflexión de TV de TVs viejos.
+
+153
+00:18:53,430 --> 00:18:56,390
+En la práctica se ve así.
+
+154
+00:18:56,690 --> 00:19:00,690
+Puedes ver de inmediato que el devanado se hace con dos cables.
+
+155
+00:19:00,870 --> 00:19:11,430
+El número de vueltas es 8-15, pero un promedio de unas 10 vueltas es suficiente para bloquear de forma confiable el componente HF.
+
+156
+00:19:13,630 --> 00:19:17,450
+A continuación, después del choque, tenemos el puente de diodos.
+
+157
+00:19:17,450 --> 00:19:23,430
+Los diodos usados son rápidos o ultrarrápidos.
+
+158
+00:19:24,090 --> 00:19:30,690
+También puedes usar diodos Schottky calificados a 400 a 600 V.
+
+159
+00:19:30,790 --> 00:19:32,590
+Eso es más que suficiente.
+
+160
+00:19:34,170 --> 00:19:37,730
+Personalmente uso diodos en esta carcasa.
+
+161
+00:19:38,310 --> 00:19:45,630
+Esta carcasa tiene dos diodos conectados espalda con espalda, unidos en los cátodos.
+
+162
+00:19:45,630 --> 00:19:48,730
+El pin central es el cátodo.
+
+163
+00:19:49,050 --> 00:20:00,910
+Como hay dos diodos en esta carcasa, los uso en paralelo, lo que aumenta la calificación de corriente total del par.
+
+164
+00:20:01,730 --> 00:20:06,490
+Los diodos van en un disipador para buen enfriamiento.
+
+165
+00:20:07,090 --> 00:20:10,350
+Este disipador es excesivo, claro.
+
+166
+00:20:10,470 --> 00:20:12,710
+Es solo lo que tenía, puedes usar uno más pequeño.
+
+167
+00:20:12,710 --> 00:20:17,610
+Los diodos se atornillan al disipador a través de un pad aislante.
+
+168
+00:20:18,310 --> 00:20:19,850
+Yo uso mica.
+
+169
+00:20:21,490 --> 00:20:28,250
+Después, la tensión rectificada llega al capacitor de reserva principal.
+
+170
+00:20:28,830 --> 00:20:31,990
+Usé un capacitor de 25 µF 400 V.
+
+171
+00:20:32,610 --> 00:20:43,450
+Después la tensión rectificada llega a la carga y también a la entrada de las fuentes.
+
+172
+00:20:44,430 --> 00:20:52,110
+La polaridad aplicada a las entradas de las fuentes no importa, ya que tienen un puente de diodos en el lado de entrada.
+
+173
+00:20:52,910 --> 00:20:57,790
+Lo que significa que la inversión de polaridad no importa.
+
+174
+00:20:58,490 --> 00:21:00,410
+Puedes aplicar cualquier polaridad.
+
+175
+00:21:00,410 --> 00:21:13,210
+Puedes usar lámparas incandescentes, resistencias, planchas, todo tipo de dispositivos calefactores como carga.
+
+176
+00:21:13,850 --> 00:21:20,810
+No importa, mientras pueda funcionar desde DC.
+
+177
+00:21:20,810 --> 00:21:31,350
+Muchos dispositivos modernos que usan este tipo de convertidor en el lado de entrada también funcionarán.
+
+178
+00:21:32,350 --> 00:21:39,730
+No puedes conectar dispositivos viejos que tienen un transformador en el lado de entrada en vez de estos convertidores.
+
+179
+00:21:40,830 --> 00:21:43,590
+Su entrada se quemará por DC.
+
+180
+00:21:43,590 --> 00:21:52,930
+Y no puedes conectar dispositivos que tengan motores asíncronos o síncronos en la entrada.
+
+181
+00:21:53,130 --> 00:22:02,770
+Esos motores simplemente se quedarán en un estado no operativo, el devanado se sobrecalentará, y también fallarán.
+
+182
+00:22:03,410 --> 00:22:08,030
+Los motores de alta tensión DC funcionan genial aquí.
+
+183
+00:22:09,030 --> 00:22:18,370
+Todo el bloque, choque, puente de diodos, y capacitor de reserva principal, encaja en una caja compartida.
+
+184
+00:22:19,410 --> 00:22:22,010
+Puedes ver la tapa superior de su carcasa.
+
+185
+00:22:22,950 --> 00:22:27,270
+Y la conmutación de patas se hace en el bloque de terminales externo.
+
+186
+00:22:28,890 --> 00:22:35,570
+Este tipo de montaje es muy conveniente cuando se trabaja en una placa.
+
+187
+00:22:36,570 --> 00:22:40,230
+Ahora algunos detalles del montaje.
+
+188
+00:22:42,530 --> 00:22:57,310
+La antena que radia nuestra bobina junto con el inductor con campo eléctrico está hecha exclusivamente de aluminio.
+
+189
+00:22:58,290 --> 00:23:03,670
+Para la barra de ferrita solo usamos ferrita de baja frecuencia.
+
+190
+00:23:03,670 --> 00:23:12,550
+Por cierto, puedes usar no solo este tipo de barra de ferrita, puedes usar anillos o medios anillos.
+
+191
+00:23:13,430 --> 00:23:16,830
+El requisito principal es que la ferrita sea de baja frecuencia.
+
+192
+00:23:17,530 --> 00:23:35,330
+Y especialmente si estamos trabajando con un sistema basado en Kacher, no lo dibujé por nada, el filtro de ferrita está en la zona de vuelta inversa de nuestra bobina.
+
+193
+00:23:36,210 --> 00:23:37,590
+Cerca de su parte gruesa.
+
+194
+00:23:38,170 --> 00:23:40,110
+Ocurre un efecto interesante.
+
+195
+00:23:40,630 --> 00:23:47,870
+El campo magnético de esta bobina induce sobre la ferrita y modula el Kacher.
+
+196
+00:23:47,870 --> 00:23:52,730
+Su salida también adquiere modulación de amplitud.
+
+197
+00:23:53,310 --> 00:24:03,110
+En general, en este montaje, las modulaciones de amplitud y sus combinaciones de fase son cruciales para que corra correctamente.
+
+198
+00:24:06,060 --> 00:24:14,720
+Sobre lo que es mejor: Tesla controlado o Kacher controlado.
+
+199
+00:24:14,720 --> 00:24:29,020
+Por la práctica diré esto: este sistema funciona mucho más fácil cuando el lado de alta tensión es un Kacher controlado, que es un autooscilador.
+
+200
+00:24:30,800 --> 00:24:33,220
+Hay una característica interesante.
+
+201
+00:24:34,060 --> 00:24:39,120
+El campo magnético del inductor induce potencial eléctrico en esta antena.
+
+202
+00:24:39,120 --> 00:24:51,540
+Y llega por la bobina hasta la base del transistor de control que controla la bobina primaria del transformador Tesla.
+
+203
+00:24:51,920 --> 00:24:59,920
+De esa manera, el campo magnético hace algo de sintonía de fase y sincronización de los dos generadores.
+
+204
+00:24:59,920 --> 00:25:10,720
+También puedes ver, marcado en el esquema, que para este generador el ciclo útil es crucial durante la sintonía.
+
+205
+00:25:10,880 --> 00:25:13,340
+Tiene que sintonizarse.
+
+206
+00:25:14,500 --> 00:25:17,500
+Y más la sincronización.
+
+207
+00:25:17,960 --> 00:25:19,920
+Marcada con la letra S en el esquema.
+
+208
+00:25:20,300 --> 00:25:25,860
+La sincronización es entre el generador primario y secundario.
+
+209
+00:25:25,860 --> 00:25:30,900
+Se hace con potenciómetros de ajuste.
+
+210
+00:25:31,860 --> 00:25:36,540
+Pero en general, esta sintonía no es del todo suficiente.
+
+211
+00:25:36,680 --> 00:25:41,880
+Es una sintonía bastante gruesa por potenciómetro de ajuste.
+
+212
+00:25:42,020 --> 00:25:52,600
+Así que un transistor de potencia en este circuito, controlando el devanado primario, puede hacer alguna sintonía fina.
+
+213
+00:25:53,600 --> 00:26:04,140
+Esa es exactamente la razón por la que arrancar el sistema es una tarea bastante difícil si usas específicamente un Tesla controlado.
+
+214
+00:26:04,580 --> 00:26:10,020
+Tienes que sintonizarlo con mucha precisión para que el sistema arranque.
+
+215
+00:26:12,200 --> 00:26:21,240
+También puedes notar que en mi esquema, el cable de tierra se conecta exclusivamente a este módulo.
+
+216
+00:26:21,240 --> 00:26:29,080
+Si se usa un Tesla controlado, el cable de tierra conecta directamente a su extremo frío.
+
+217
+00:26:29,500 --> 00:26:35,520
+Si un Kacher controlado, entonces al emisor del transistor de potencia.
+
+218
+00:26:36,740 --> 00:26:42,440
+Además, la tierra no conecta al cable común en ningún punto.
+
+219
+00:26:42,960 --> 00:26:49,240
+Y no conecta a nuestra bobina ni a su inductor.
+
+220
+00:26:49,240 --> 00:27:04,640
+Si conectas tierra a cualquiera de estos puntos directamente, toda la interacción entre el Tesla y este sistema se detiene.
+
+221
+00:27:04,880 --> 00:27:08,280
+El Tesla solo interactuará consigo mismo.
+
+222
+00:27:08,840 --> 00:27:17,540
+El circuito equivalente sería si conectaras el cable de tierra directamente a la antena.
+
+223
+00:27:18,540 --> 00:27:23,660
+El Tesla no influiría en este sistema en absoluto, y el sistema nunca arrancaría.
+
+224
+00:27:24,480 --> 00:27:31,700
+En el mejor de los casos, en ese caso, puedes conectar tierra a través de un diodo rápido.
+
+225
+00:27:33,320 --> 00:27:43,980
+Eso puede ayudar si conectas el diodo hacia tierra desde el inductor de la bobina, hacerlo trabajar en medio ciclo.
+
+226
+00:27:43,980 --> 00:27:53,460
+Y la polaridad del diodo necesita ser tal que no corte el semiperiodo que usa el Tesla.
+
+227
+00:27:54,420 --> 00:27:56,540
+Esto es crítico.
+
+228
+00:27:58,120 --> 00:28:07,860
+Esta ausencia de conexión a tierra de la bobina funciona en el caso con el que estoy lidiando.
+
+229
+00:28:07,860 --> 00:28:29,000
+Porque si la gente usa otras variantes de sintonía donde el cable de tierra es lo que pone la bobina en media onda, es decir, obtienen un cuarto de onda en esta bobina
+
+230
+00:28:29,120 --> 00:28:32,160
+y un cuarto de onda cabe en la longitud de tierra.
+
+231
+00:28:32,160 --> 00:28:39,180
+Entonces la tierra obligatoriamente conecta a la bobina para poner el sistema en media onda.
+
+232
+00:28:39,820 --> 00:28:48,980
+Pero en mi caso no hago esto, esa es exactamente la razón por la que no recomiendo conectar tierra en este o este punto.
+
+233
+00:28:51,080 --> 00:28:56,380
+Este esquema es un caso específico, una de las variantes posibles.
+
+234
+00:28:57,130 --> 00:29:08,320
+También puedes usar un generador de un solo ciclo en vez de uno de dos ciclos, un tanque paralelo en vez de un circuito tanque en serie.
+
+235
+00:29:08,900 --> 00:29:21,380
+En lugar de ajustar el punto de modulación de amplitud con tensión de alimentación y conversión, puedes hacer modulación forzada del generador de baja frecuencia.
+
+236
+00:29:21,380 --> 00:29:32,540
+Hay toneladas de opciones de implementación, así que diría que elijas algún enfoque y trabajes con él de forma independiente, no copies ciegamente.
+
+237
+00:29:33,280 --> 00:29:42,700
+Aprovechando esta oportunidad, también quiero agradecer a todos los que me ayudaron a entender este sistema.
+
+238
+00:29:42,700 --> 00:29:51,320
+Y un agradecimiento especial a un tipo del foro realstrannik, un buen amigo mío.
+
+239
+00:29:52,540 --> 00:29:58,080
+No importa lo que otros piensen de ti, Slav, sé quién realmente eres.
+
+240
+00:29:58,740 --> 00:30:00,980
+Gran respeto y gracias por la ayuda.

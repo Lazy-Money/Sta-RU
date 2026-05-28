@@ -1,0 +1,2011 @@
+1
+00:00:00,830 --> 00:00:02,210
+Hola a todos.
+
+2
+00:00:02,850 --> 00:00:04,230
+Día libre.
+
+3
+00:00:05,010 --> 00:00:06,690
+Filmando el 23 de febrero.
+
+4
+00:00:06,990 --> 00:00:08,390
+Feliz Día del Defensor de la Patria a todos los muchachos.
+
+5
+00:00:09,870 --> 00:00:19,610
+Bien, aquí está el esquema del amplificador de pulsos mejorado para el generador de señales.
+
+6
+00:00:20,070 --> 00:00:23,390
+Mi esquema anterior, mostrado aquí.
+
+7
+00:00:24,090 --> 00:00:26,010
+Hay un video sobre él en mi canal.
+
+8
+00:00:27,910 --> 00:00:30,650
+¿Por qué decidí mejorar este esquema?
+
+9
+00:00:31,410 --> 00:00:36,870
+La cosa es, el esquema en sí es muy interesante y útil.
+
+10
+00:00:36,990 --> 00:00:46,210
+Pero tiene un punto común con el inductor que controla la bobina.
+
+11
+00:00:47,550 --> 00:00:55,890
+Si la bobina es del tipo granada, no hay problema, todo está bien.
+
+12
+00:00:56,150 --> 00:01:15,630
+Pero si pones un Tesla aquí, entonces en algunos modos de operación, si pegas en el efecto, por ejemplo, sintonizas la frecuencia y el ciclo útil para que pegues en un armónico de resonancia ondulatoria, verás efectos interesantes.
+
+13
+00:01:15,630 --> 00:01:21,550
+Efectos interesantes.
+
+14
+00:01:22,530 --> 00:01:34,510
+Y con estos efectos interesantes, si la alimentación para este interruptor es de unos 50 V, puedes despedirte de tu generador de señales de laboratorio.
+
+15
+00:01:35,510 --> 00:01:42,870
+En general, nuestros experimentos son bastante peligrosos para osciloscopios y generadores de señal.
+
+16
+00:01:44,010 --> 00:01:56,010
+Así que, para evitar eso, el equipo es caro, hice una mejora de este esquema, que se muestra aquí.
+
+17
+00:01:58,770 --> 00:02:01,150
+Veamos el esquema con más detalle.
+
+18
+00:02:02,150 --> 00:02:07,530
+La línea de chips es la misma: TC4093BP.
+
+19
+00:02:09,030 --> 00:02:18,190
+Este chip media entre el generador de señales de laboratorio y el driver TC4420.
+
+20
+00:02:18,930 --> 00:02:29,370
+Si necesitas que este circuito corra continuamente, este mediador se puede quitar.
+
+21
+00:02:29,370 --> 00:02:44,310
+O si tienes un generador de señales de laboratorio realmente bueno que pueda entregar no solo pulsos con frecuencia y ciclo útil ajustados sino también cortar esos pulsos
+
+22
+00:02:44,310 --> 00:02:49,950
+en ráfagas, entonces no necesitarás este chip.
+
+23
+00:02:50,070 --> 00:03:01,490
+Puedes alimentar la señal directamente desde tal generador de laboratorio al pin 2 del driver que controla el transistor, a través del transformador de aislamiento.
+
+24
+00:03:02,950 --> 00:03:06,310
+Y eso simplifica el esquema.
+
+25
+00:03:07,210 --> 00:03:23,290
+Pero aún dejo este chip, porque en la práctica pasa que el generador de señales de laboratorio se desconecta, digamos, este nodo se mueve a otro lugar para que
+
+26
+00:03:23,530 --> 00:03:27,130
+el Tesla no afecte dispositivos cercanos.
+
+27
+00:03:28,110 --> 00:03:43,010
+Y puedes ver que hay tres entradas, una de ellas común, y dos entradas conectadas a los pines 1 y 2 del chip TC4093.
+
+28
+00:03:44,670 --> 00:03:50,670
+El elemento lógico del chip es un Schmitt trigger.
+
+29
+00:03:51,890 --> 00:04:03,070
+Su entrada es un Y de 2 entradas, y luego la señal se invierte después del Schmitt trigger.
+
+30
+00:04:03,430 --> 00:04:25,330
+Así que si usamos las salidas 1 y 2 por separado, podemos hacer algo realmente interesante: cuando un generador (digamos, en compuertas lógicas) establece una frecuencia para nosotros de, digamos, 100 kHz, la metemos
+
+31
+00:04:25,330 --> 00:04:35,910
+a una entrada del chip, y el segundo generador en compuertas lógicas produce una frecuencia de, digamos, 1 kHz.
+
+32
+00:04:36,510 --> 00:04:47,590
+Y con esta lógica, el chip hará ráfagas a 1 kHz, y el contenido de esas ráfagas será a 100 kHz.
+
+33
+00:04:47,590 --> 00:05:04,170
+Y si los generadores de señal controlando este chip también tienen ajuste de ciclo útil, digamos en el generador de baja frecuencia, entonces el chip pone todos esos parámetros en forma de ráfaga
+
+34
+00:05:04,170 --> 00:05:08,010
+y los envía al driver.
+
+35
+00:05:09,070 --> 00:05:11,170
+Muy práctico.
+
+36
+00:05:13,210 --> 00:05:34,190
+Si necesitas que este circuito produzca una señal continua, atas las entradas 1 y 2 juntas en este terminal, y el chip transmite la señal del generador controlador
+
+37
+00:05:34,190 --> 00:05:35,530
+directo al driver.
+
+38
+00:05:36,430 --> 00:05:46,470
+Puedes ver que la segunda inversión se hace para devolver la señal a su forma original en la entrada, y el control va al pin 2 del driver.
+
+39
+00:05:48,870 --> 00:05:57,490
+También puedes notar que este esquema usa un principio donde el cable común está solo en el lado de control.
+
+40
+00:05:57,990 --> 00:06:09,670
+Es decir, el generador controlador (o generador de laboratorio), el chip mediador, el driver, el convertidor DC-DC, y la fuente de alimentación están atados juntos.
+
+41
+00:06:10,270 --> 00:06:13,630
+Toda esta parte tiene un cable común.
+
+42
+00:06:14,310 --> 00:06:22,450
+El resto está totalmente aislado galvánicamente del bloque de control.
+
+43
+00:06:23,050 --> 00:06:33,220
+De esta forma, con aislamiento por transformador, prevenimos cualquier conexión galvánica del bloque de control con el lado de potencia.
+
+44
+00:06:35,990 --> 00:06:43,470
+Veamos este nodo que aísla galvánicamente el bloque de control y el lado de potencia con más detalle.
+
+45
+00:06:44,210 --> 00:06:48,870
+Puedes ver que el driver trabaja en una carga inductiva.
+
+46
+00:06:50,150 --> 00:06:59,150
+Para prevenir que el driver sea cortocircuitado al cable común, hay un capacitor de 1 µF 50 V en serie.
+
+47
+00:06:59,970 --> 00:07:04,410
+Este capacitor también elimina el componente DC de la señal.
+
+48
+00:07:05,410 --> 00:07:15,810
+Y una resistencia de 12,4 Ω en serie limita la corriente a través del devanado primario.
+
+49
+00:07:16,650 --> 00:07:21,610
+A continuación, la señal del primario es captada por el secundario.
+
+50
+00:07:22,170 --> 00:07:28,290
+A través de otro capacitor de 1 µF alimenta la compuerta del transistor.
+
+51
+00:07:28,290 --> 00:07:45,630
+Pero aquí ves circuitería de soporte que finalmente forma la señal, le da forma cuadrada, y limita la tensión máxima para que el transistor no se rompa.
+
+52
+00:07:46,610 --> 00:07:53,510
+Para remover el componente negativo, hay este diodo UF 4005.
+
+53
+00:07:55,490 --> 00:08:05,770
+En lugar de este diodo, puedes usar otros diodos rápidos, por ejemplo, SF, HER y similares.
+
+54
+00:08:07,030 --> 00:08:12,410
+A continuación vemos una resistencia de descarga de compuerta de 1 kΩ.
+
+55
+00:08:12,910 --> 00:08:20,410
+Y es obligatorio en este circuito usar diodos zener conectados en oposición de 15 V.
+
+56
+00:08:20,410 --> 00:08:33,330
+Estos zeners cortan los picos que pueden formarse en el secundario cuando la frecuencia cambia, protegiendo la compuerta del transistor de la ruptura.
+
+57
+00:08:34,910 --> 00:08:45,210
+Para el núcleo del transformador de aislamiento que controla la compuerta del interruptor de potencia, usé este anillo de ferrita.
+
+58
+00:08:46,150 --> 00:08:51,050
+Lo delineé aquí para que las dimensiones reales sean claras.
+
+59
+00:08:51,590 --> 00:09:01,910
+El diámetro del agujero interior es 10 mm, el diámetro exterior 20 mm, y el ancho del anillo es 10 mm.
+
+60
+00:09:02,590 --> 00:09:04,870
+Su permeabilidad es marca 2000.
+
+61
+00:09:06,250 --> 00:09:18,950
+Este anillo es suficiente para controlar interruptores bastante poderosos, y puedes usar no solo transistores de la serie IRF en este circuito.
+
+62
+00:09:19,830 --> 00:09:27,130
+Si está disponible, recomendaría cambiar el IRF840 por el IRF510.
+
+63
+00:09:27,590 --> 00:09:32,990
+Este transistor tiene solo 15 pF de capacitancia de compuerta.
+
+64
+00:09:32,990 --> 00:09:42,280
+Y el IRF510, con el cableado correcto de control de compuerta, puede trabajar a frecuencias hasta 30 MHz.
+
+65
+00:09:46,470 --> 00:09:50,410
+Agregué un bloque de terminales a este circuito.
+
+66
+00:09:51,270 --> 00:10:02,690
+Hice esto para poder cambiar entre diferentes esquemas de conexión de las patas del transistor y la fuente de alimentación.
+
+67
+00:10:03,690 --> 00:10:22,630
+Por ejemplo, si conectamos el menos de la alimentación del interruptor con su fuente en este bloque de terminales, obtenemos el esquema estándar donde menos va directamente a la fuente del transistor, y el drenaje
+
+68
+00:10:22,630 --> 00:10:34,050
+se carga con la carga inductiva, que en los circuitos Tesla es el devanado primario.
+
+69
+00:10:34,770 --> 00:10:52,770
+Si, en cambio, conectamos el drenaje con el más de la fuente en este bloque de terminales, obtenemos la variante 2 del circuito: inclusión de inductor donde el menos de la alimentación conecta al inductor de la bobina Tesla,
+
+70
+00:10:52,770 --> 00:11:01,710
+y el otro extremo libre del inductor conecta a la fuente de este interruptor.
+
+71
+00:11:02,070 --> 00:11:13,330
+Quiero señalar de inmediato que estos dos circuitos se comportan totalmente diferente al trabajar con la bobina Tesla y muestran efectos diferentes.
+
+72
+00:11:14,550 --> 00:11:20,350
+Poca gente sabe de esto, y este circuito es el más usado.
+
+73
+00:11:20,350 --> 00:11:21,010
+¿Por qué?
+
+74
+00:11:21,270 --> 00:11:34,780
+Porque siempre es conveniente poner un driver, no se necesita transformador de aislamiento, y la carga está en el circuito de drenaje del interruptor de potencia.
+
+75
+00:11:36,770 --> 00:11:44,670
+Y muchos esquemas que algunos inventores comparten solo muestran, digamos, un interruptor.
+
+76
+00:11:44,670 --> 00:11:51,630
+Pero a menudo este circuito de control específico puede ser el que se está usando.
+
+77
+00:11:52,910 --> 00:11:55,990
+Estos dos circuitos trabajan absolutamente diferente.
+
+78
+00:11:56,310 --> 00:12:00,570
+Y los fenómenos que ocurren en la bobina Tesla son diferentes.
+
+79
+00:12:01,510 --> 00:12:05,670
+Eso es un consejo para futuros experimentadores.
+
+80
+00:12:05,670 --> 00:12:22,030
+Por cierto, quiero mencionar que todos los efectos interesantes en las bobinas Tesla, y en general en los sistemas generadores de energía libre que ensamblamos, solo aparecen cuando tres frecuencias operan en el sistema.
+
+81
+00:12:22,030 --> 00:12:22,630
+En el sistema.
+
+82
+00:12:23,530 --> 00:12:39,450
+Digamos, por ejemplo, la frecuencia dentro de una ráfaga, la frecuencia de repetición de la ráfaga, y una tercera frecuencia que se forma en, digamos, la bobina Tesla.
+
+83
+00:12:40,830 --> 00:12:44,010
+Oscilaciones libres, batidos de frecuencia.
+
+84
+00:12:44,690 --> 00:12:50,570
+Solo puedes ver los efectos interesantes con la interacción de tres frecuencias.
+
+85
+00:12:51,450 --> 00:12:58,770
+Si solo metemos una frecuencia, o incluso dos, no obtendremos nada interesante.
+
+86
+00:13:00,010 --> 00:13:16,110
+Como fuente de alimentación para la carga del interruptor de potencia en este circuito, puedes usar una batería, o un inversor conectado a una batería, este último es preferible para subir la tensión de alimentación.
+
+87
+00:13:16,710 --> 00:13:25,210
+Y menos preferible es cuando alimentamos este circuito desde una fuente de laboratorio.
+
+88
+00:13:25,210 --> 00:13:31,270
+Es conveniente, claro, para mí hay regulación de cero a 300 V.
+
+89
+00:13:32,270 --> 00:13:38,570
+Pero con este tipo de conexión a la red, no puedes sintonizar el sistema.
+
+90
+00:13:39,550 --> 00:13:46,330
+Los efectos aparecen en la mayoría de casos cuando tenemos aislamiento de la red.
+
+91
+00:13:46,930 --> 00:14:06,890
+Y aún con el filtro mostrado aquí en el esquema, aún puedes notar durante la operación, si tocas el disipador del interruptor, sentirás 50 Hz.
+
+92
+00:14:06,890 --> 00:14:12,690
+Lo puedes sentir, a pesar del filtro.
+
+93
+00:14:12,690 --> 00:14:16,850
+Y eso introduce sus propias distorsiones al sistema.
+
+94
+00:14:17,850 --> 00:14:35,670
+Así que para sintonía precisa, especialmente al trabajar con bobinas Tesla, recomiendo usar alimentación de fuentes separadas que no tomen su energía de la red.
+
+95
+00:14:36,670 --> 00:14:39,210
+Veamos este filtro.
+
+96
+00:14:39,850 --> 00:14:42,670
+Está mostrado en la placa.
+
+97
+00:14:44,650 --> 00:15:00,890
+Estos filtros inductivos se pueden rescatar de TVs viejos, fuentes de alimentación viejas, o devanar en anillos amarillos en casa.
+
+98
+00:15:01,010 --> 00:15:05,350
+Es decir, dos devanados, toma dos cables y devanalos en paralelo.
+
+99
+00:15:06,030 --> 00:15:08,570
+Obtienes el equivalente de este filtro.
+
+100
+00:15:09,390 --> 00:15:13,750
+El valor del primer capacitor es 2 µF.
+
+101
+00:15:14,210 --> 00:15:20,310
+A continuación, el filtro en sí, luego otro capacitor, 0,68 µF.
+
+102
+00:15:20,310 --> 00:15:26,530
+Luego el capacitor de reserva principal, mostrado como 230 µF.
+
+103
+00:15:27,410 --> 00:15:30,530
+Los valores pueden ser bastante diferentes.
+
+104
+00:15:31,170 --> 00:15:36,510
+Lo principal es que la tensión sea 400 V porque alimentamos hasta 300 V aquí.
+
+105
+00:15:37,510 --> 00:15:44,010
+En este caso los capacitores son 200 V, los puse en serie, y la capacitancia se reduce a la mitad.
+
+106
+00:15:44,010 --> 00:15:53,470
+Y el capacitor del filtro después de los electrolíticos es 28 nF.
+
+107
+00:15:54,150 --> 00:15:59,910
+Los capacitores estaban calificados a 2000 V, excesivo, pero encajaban en dimensiones.
+
+108
+00:16:00,550 --> 00:16:05,230
+Nada complicado en este filtro, se ensambla rápido suficiente.
+
+109
+00:16:07,590 --> 00:16:18,410
+Aquí en mi carcasa experimentada terminé con la última implementación del circuito.
+
+110
+00:16:18,750 --> 00:16:21,790
+Puedes ver agujeros anteriores de trabajos previos.
+
+111
+00:16:23,290 --> 00:16:26,030
+Monté el interruptor de potencia en el disipador.
+
+112
+00:16:27,990 --> 00:16:31,650
+Monté el portador del bloque de terminales.
+
+113
+00:16:32,370 --> 00:16:41,430
+Y perforé agujeros para que los cables corran según el esquema de cableado.
+
+114
+00:16:44,250 --> 00:16:58,930
+Y aquí está el circuito que conecta al generador de señales de laboratorio y controla el interruptor de potencia.
+
+115
+00:16:58,930 --> 00:17:04,310
+Mira cómo se ve el transformador de control de aislamiento.
+
+116
+00:17:05,150 --> 00:17:06,890
+Devanado con dos cables a la vez.
+
+117
+00:17:08,070 --> 00:17:13,410
+El número de vueltas del primario y secundario es el mismo: 11 vueltas.
+
+118
+00:17:14,190 --> 00:17:34,970
+Si usamos un estabilizador de tensión en la entrada, específicamente el convertidor DC-DC LM2596, podemos ajustar el punto de tensión y sin desenrollar vueltas, ajustar la tensión deseada en la compuerta del transistor.
+
+119
+00:17:34,970 --> 00:17:38,870
+Ajustar la tensión deseada en la compuerta.
+
+120
+00:17:39,030 --> 00:17:41,150
+Así que lo puedes corregir de esa manera.
+
+121
+00:17:42,790 --> 00:17:49,530
+Hay cierto prejuicio que la gente tiene sobre los transformadores de pulsos.
+
+122
+00:17:49,530 --> 00:17:52,350
+Pero les diré, es algo realmente bueno.
+
+123
+00:17:52,490 --> 00:18:00,510
+Si aprendes a sintonizarlo, puedes incluso olvidarte de los drivers de interruptor de potencia.
+
+124
+00:18:00,950 --> 00:18:02,870
+Aislamiento de armónicos genial.
+
+125
+00:18:04,150 --> 00:18:06,730
+Esta ferrita funciona.
+
+126
+00:18:07,030 --> 00:18:09,750
+La probé arriba de 2 MHz.
+
+127
+00:18:10,390 --> 00:18:14,010
+Mostraré la señal de ella después en el osciloscopio.
+
+128
+00:18:14,010 --> 00:18:19,850
+Y puedes ver esta parte, el pequeño bloque de terminales mostrado aquí.
+
+129
+00:18:20,150 --> 00:18:23,490
+Este es el chip TC4093.
+
+130
+00:18:24,010 --> 00:18:37,390
+Y quiero señalar que el driver TC4420 tiene un disipador que soldé a la placa con dos pequeños cables.
+
+131
+00:18:38,510 --> 00:18:41,170
+Bajo el disipador tenemos pasta térmica.
+
+132
+00:18:41,170 --> 00:18:43,070
+¿Cuál es el punto?
+
+133
+00:18:44,030 --> 00:18:51,410
+Estos drivers no son desarrollados por el fabricante para estas frecuencias altas en absoluto.
+
+134
+00:18:51,570 --> 00:19:00,230
+Y este circuito puede usarse libremente hasta 2,5 MHz, tal vez incluso más alto.
+
+135
+00:19:00,670 --> 00:19:02,430
+Porque los transistores lo permiten.
+
+136
+00:19:03,130 --> 00:19:06,950
+Y el chip mismo puede trabajar a estas frecuencias.
+
+137
+00:19:06,950 --> 00:19:17,350
+El driver mismo empieza a calentarse cuando la frecuencia se acerca al rango de 1,6-1,7 MHz.
+
+138
+00:19:18,150 --> 00:19:22,340
+El calentamiento se vuelve notable, unos 50 grados.
+
+139
+00:19:23,110 --> 00:19:25,330
+Pero aún así agregué un disipador.
+
+140
+00:19:25,570 --> 00:19:29,790
+El disipador es de abrazaderas de cable.
+
+141
+00:19:30,550 --> 00:19:36,770
+Las puedes comprar, y encajan muy bien en la superficie de estos chips.
+
+142
+00:19:37,930 --> 00:19:43,070
+Y básicamente, nada super-complejo aquí.
+
+143
+00:19:44,310 --> 00:19:51,450
+Puedes ver que levanté los diodos zener porque en experimentos cualquier cosa puede pasar.
+
+144
+00:19:51,590 --> 00:19:57,150
+Si el interruptor de potencia explota, el par de zener puede explotar.
+
+145
+00:19:57,310 --> 00:20:06,930
+Así que para no desarmar todo el circuito, solo recorta los cables con pequeñas piezas y suelda nuevos zeners aquí.
+
+146
+00:20:06,950 --> 00:20:09,170
+Y el circuito funciona de nuevo.
+
+147
+00:20:09,750 --> 00:20:18,890
+Cuando el interruptor explota, nada le pasa al driver, al transformador, mucho menos al bloque de control.
+
+148
+00:20:19,750 --> 00:20:21,690
+El circuito está confiablemente aislado.
+
+149
+00:20:25,300 --> 00:20:27,240
+Ensamblé el circuito para demostración.
+
+150
+00:20:27,660 --> 00:20:31,080
+Ahora mostraré las capacidades de frecuencia del circuito.
+
+151
+00:20:34,880 --> 00:20:42,680
+La sonda del osciloscopio estará en la salida del devanado secundario ahora.
+
+152
+00:20:43,220 --> 00:20:45,780
+El resto del circuito está desconectado.
+
+153
+00:20:46,480 --> 00:20:53,860
+Mostraré la forma de la señal para que no te asuste, mientras todo esto no está ahí.
+
+154
+00:20:55,000 --> 00:20:58,740
+Empezaremos específicamente a 1 kHz.
+
+155
+00:21:01,900 --> 00:21:04,620
+Bien, potencia aplicada al circuito.
+
+156
+00:21:07,740 --> 00:21:08,520
+Ahí ves.
+
+157
+00:21:10,840 --> 00:21:13,280
+Ahora ampliaré la pantalla.
+
+158
+00:21:17,400 --> 00:21:23,540
+Entonces, la frecuencia de repetición de pulsos es 1 kHz.
+
+159
+00:21:24,420 --> 00:21:27,180
+Recuerda, el secundario no está conectado en ningún lado.
+
+160
+00:21:27,720 --> 00:21:29,880
+Y empiezo a aumentar gradualmente la frecuencia.
+
+161
+00:21:29,880 --> 00:21:35,440
+1, 2, 3, 4, 5.
+
+162
+00:21:37,800 --> 00:21:47,000
+Y también puedes observar la amplitud máxima de los semiperiodos positivo y negativo.
+
+163
+00:21:47,840 --> 00:21:50,380
+El barrido ahora es 5 V por división.
+
+164
+00:21:51,720 --> 00:21:56,360
+5 kHz, 6, 7, 8, 9, 10.
+
+165
+00:21:56,520 --> 00:21:58,100
+Mira cómo cambia la señal.
+
+166
+00:21:59,880 --> 00:22:08,320
+Estoy mostrando estas frecuencias para que entiendas un punto importante.
+
+167
+00:22:08,920 --> 00:22:12,480
+Esta ferrita tiene una frecuencia mínima de operación.
+
+168
+00:22:13,660 --> 00:22:28,220
+Si quieres hacer un circuito que deba trabajar a frecuencias por debajo de 15 kHz, deberías usar una ferrita con marca de permeabilidad más baja.
+
+169
+00:22:28,220 --> 00:22:34,460
+No 2000, ve más bajo en permeabilidad para que pueda trabajar a frecuencias bajas.
+
+170
+00:22:35,260 --> 00:22:38,960
+Esta ferrita de 2000 se comporta bien.
+
+171
+00:22:39,080 --> 00:22:46,180
+Ahora subo la frecuencia hasta 15 kHz.
+
+172
+00:22:47,140 --> 00:22:52,900
+Y ves las señales tomando una forma más cuadrada.
+
+173
+00:22:54,240 --> 00:23:02,160
+Y desde 20 kHz en adelante, esta ferrita puede trabajar de forma estable.
+
+174
+00:23:03,100 --> 00:23:05,900
+Ahora subamos la frecuencia más rápido.
+
+175
+00:23:06,900 --> 00:23:12,900
+Frecuencia 70, bueno, digamos 50 kHz.
+
+176
+00:23:15,060 --> 00:23:20,880
+La meseta de la señal ya es agradable, está empezando a formarse.
+
+177
+00:23:20,880 --> 00:23:22,760
+Ahora 100 kHz.
+
+178
+00:23:24,880 --> 00:23:29,460
+Una forma de señal agradable.
+
+179
+00:23:30,040 --> 00:23:37,240
+Por cierto, nota el flanco de subida, lo veremos más después.
+
+180
+00:23:37,880 --> 00:23:40,200
+Ahora cambiaré la frecuencia de inmediato.
+
+181
+00:23:40,680 --> 00:23:43,640
+Ahora 600 kHz.
+
+182
+00:23:46,880 --> 00:23:49,000
+Aquí la frecuencia es 1 MHz.
+
+183
+00:23:54,840 --> 00:24:02,480
+Agrega, 1,5 MHz señal como esta.
+
+184
+00:24:02,900 --> 00:24:07,540
+Recuerda, el devanado no está conectado al resto del circuito.
+
+185
+00:24:09,440 --> 00:24:11,700
+Y aquí ajusté la frecuencia a 2 MHz.
+
+186
+00:24:11,800 --> 00:24:16,980
+Ves que la ferrita maneja 2 MHz bastante bien.
+
+187
+00:24:16,980 --> 00:24:19,760
+Ahora mira el flanco de subida.
+
+188
+00:24:21,040 --> 00:24:25,140
+Tenemos 10 ns por división.
+
+189
+00:24:25,380 --> 00:24:26,380
+Una división.
+
+190
+00:24:27,440 --> 00:24:33,420
+Dos divisiones, flanco de subida de 20 ns a 2 MHz.
+
+191
+00:24:34,700 --> 00:24:43,440
+Ahora reconectemos el devanado al circuito y veamos cómo funciona con la cadena subsecuente.
+
+192
+00:24:46,440 --> 00:24:52,660
+Entonces, reconecté el devanado secundario a la cadena subsecuente.
+
+193
+00:24:53,040 --> 00:24:58,780
+Ahora observaremos la señal que controlará después la compuerta del interruptor de potencia.
+
+194
+00:24:59,620 --> 00:25:02,280
+La sonda estará en este punto.
+
+195
+00:25:03,480 --> 00:25:06,900
+El común del osciloscopio en este punto.
+
+196
+00:25:07,560 --> 00:25:12,800
+Observaremos la señal, conectando a los zeners.
+
+197
+00:25:12,800 --> 00:25:16,320
+Mira la sonda conectada a los zeners.
+
+198
+00:25:16,740 --> 00:25:20,980
+Cambia a la pantalla del osciloscopio.
+
+199
+00:25:22,060 --> 00:25:24,260
+Y empieza de nuevo a 1 kHz.
+
+200
+00:25:25,920 --> 00:25:29,240
+Ahí, un desastre.
+
+201
+00:25:29,880 --> 00:25:31,440
+¿Cómo se puede trabajar con esto?
+
+202
+00:25:32,140 --> 00:25:35,820
+Todo está relacionado con la respuesta en frecuencia de la ferrita.
+
+203
+00:25:39,920 --> 00:25:41,120
+10 kHz.
+
+204
+00:25:43,600 --> 00:25:46,500
+El barrido vuelve a 5 V por división.
+
+205
+00:25:48,480 --> 00:25:51,180
+Ves 10 kHz es demasiado bajo.
+
+206
+00:25:51,680 --> 00:25:52,900
+Cambia a 20.
+
+207
+00:25:53,420 --> 00:26:04,220
+Y aquí empiezas a ver la señal tomando una forma bastante normal para controlar el interruptor.
+
+208
+00:26:04,220 --> 00:26:08,960
+A unos 40 kHz y más alto.
+
+209
+00:26:09,840 --> 00:26:10,800
+Ahora 50.
+
+210
+00:26:11,580 --> 00:26:15,700
+Puede controlar el interruptor fácilmente.
+
+211
+00:26:16,860 --> 00:26:26,220
+En general, este circuito con esta ferrita puede controlar bien desde 15 kHz en adelante.
+
+212
+00:26:26,940 --> 00:26:29,260
+Así que recorramos las frecuencias rápidamente.
+
+213
+00:26:30,230 --> 00:26:37,400
+Ves que la cadena subsecuente ya quitó el semiperiodo negativo.
+
+214
+00:26:37,540 --> 00:26:40,620
+Es solo menos 1,4 V ahora.
+
+215
+00:26:41,700 --> 00:26:48,340
+Y la amplitud del semiperiodo positivo es 10-13 V.
+
+216
+00:26:49,280 --> 00:26:50,750
+Y sube la frecuencia.
+
+217
+00:26:51,260 --> 00:26:52,380
+100 kHz.
+
+218
+00:26:54,260 --> 00:26:54,860
+300.
+
+219
+00:26:57,680 --> 00:27:04,100
+Quiero llamar la atención a lo que dije, a algunas frecuencias la ferrita da un pico.
+
+220
+00:27:04,720 --> 00:27:16,000
+Y este pico puede ser muy grande, pero como hay zeners en el circuito de la compuerta del interruptor de potencia, estos picos se cortan.
+
+221
+00:27:16,560 --> 00:27:23,180
+Y ves que ahora la amplitud máxima es 15-16 V, donde los zeners están trabajando.
+
+222
+00:27:24,680 --> 00:27:27,160
+500 kHz.
+
+223
+00:27:31,690 --> 00:27:33,550
+1 MHz.
+
+224
+00:27:35,890 --> 00:27:37,130
+Frecuencia.
+
+225
+00:27:38,510 --> 00:27:46,070
+Observa, hay un pequeño transitorio pero no afecta la operación del interruptor.
+
+226
+00:27:47,210 --> 00:27:50,230
+Y aquí ajusto de inmediato 2 MHz.
+
+227
+00:27:50,770 --> 00:27:51,470
+Circuito.
+
+228
+00:27:52,470 --> 00:27:54,590
+Ahora vamos más alto.
+
+229
+00:27:55,450 --> 00:27:57,810
+2,2 MHz.
+
+230
+00:27:59,260 --> 00:28:00,510
+2,4 MHz.
+
+231
+00:28:01,230 --> 00:28:02,150
+2,5 MHz.
+
+232
+00:28:02,910 --> 00:28:12,070
+Ves que el flanco de subida y la amplitud de la señal tienen parámetros bastante buenos.
+
+233
+00:28:12,070 --> 00:28:18,970
+A 20 ns por división, una división de subida.
+
+234
+00:28:23,870 --> 00:28:28,070
+Observa a 3 MHz.
+
+235
+00:28:29,190 --> 00:28:36,970
+El circuito funciona, y se ajusta muy bien a nuestras soluciones.
+
+236
+00:28:36,970 --> 00:28:40,330
+Y ahora volveré a un rango típico.
+
+237
+00:28:40,510 --> 00:28:47,950
+Alrededor de 1 MHz, verifiquemos la regulación del ciclo útil.
+
+238
+00:28:48,550 --> 00:28:52,310
+Ahora el ciclo útil de la señal es 50%.
+
+239
+00:28:52,550 --> 00:28:54,010
+Lo bajaré.
+
+240
+00:28:54,510 --> 00:28:55,170
+40%.
+
+241
+00:28:55,170 --> 00:28:56,850
+30%.
+
+242
+00:28:56,850 --> 00:28:58,930
+20%.
+
+243
+00:28:58,930 --> 00:29:00,270
+10%.
+
+244
+00:29:01,390 --> 00:29:09,890
+Y ahora muestra, por ejemplo, 9, 8, 7, 6, 5, 4, 3.
+
+245
+00:29:11,170 --> 00:29:19,490
+Entonces ciclo útil 3% a 1 MHz: lo que puede permitir el generador de señales de laboratorio.
+
+246
+00:29:21,610 --> 00:29:23,730
+Tenemos esta señal.
+
+247
+00:29:24,770 --> 00:29:27,030
+20 ns por división.
+
+248
+00:29:27,830 --> 00:29:34,030
+El flanco de subida está en el rango de decenas.
+
+249
+00:29:34,130 --> 00:29:35,070
+Ahora 10 ns.
+
+250
+00:29:36,510 --> 00:29:38,750
+Sí, unos 10-12 ns.
+
+251
+00:29:42,170 --> 00:29:46,430
+Y regulemos el ciclo útil más alto.
+
+252
+00:29:50,940 --> 00:29:54,720
+Ahora ajusta 90%.
+
+253
+00:29:55,260 --> 00:29:57,760
+90% de ciclo útil.
+
+254
+00:29:57,760 --> 00:30:03,900
+Así que prácticamente el circuito es operacional desde 1% de ciclo útil hasta 90%.
+
+255
+00:30:08,340 --> 00:30:12,520
+80, 70, 50, 40.
+
+256
+00:30:12,980 --> 00:30:21,920
+Así que ves que el transformador de aislamiento se comporta bastante predecible y estable en el rango de frecuencias.
+
+257
+00:30:24,820 --> 00:30:30,340
+Verifiquemos la regulación del ciclo útil a 2 MHz.
+
+258
+00:30:30,620 --> 00:30:32,620
+Ahora mira: 50%.
+
+259
+00:30:32,620 --> 00:30:38,680
+40, 30, 20, 10%.
+
+260
+00:30:42,350 --> 00:30:43,750
+5%.
+
+261
+00:30:45,930 --> 00:30:48,290
+Y ahora aumentamos.
+
+262
+00:30:52,240 --> 00:30:55,860
+60, 70, 80.
+
+263
+00:31:02,890 --> 00:31:16,650
+Ves que a 2 MHz con 80% de ciclo útil ya tenemos distorsión de la señal.
+
+264
+00:31:16,810 --> 00:31:20,070
+Alguna respuesta en frecuencia se está solapando.
+
+265
+00:31:20,070 --> 00:31:22,930
+El rango de frecuencias es bastante alto.
+
+266
+00:31:23,030 --> 00:31:27,090
+Creo que apreciarán este circuito en su trabajo.
+
+267
+00:31:32,330 --> 00:31:37,750
+Bien, terminé el montaje del aditamento para el generador de señales de laboratorio.
+
+268
+00:31:38,390 --> 00:31:43,550
+Agregué el marcado gráfico para la asignación de pines del bloque de terminales.
+
+269
+00:31:44,730 --> 00:31:52,850
+Conecté la fuente de alimentación y el conector BNC para el generador de señales de laboratorio.
+
+270
+00:31:52,970 --> 00:31:56,870
+Así se ve el montaje desde adentro.
+
+271
+00:31:58,070 --> 00:32:01,970
+Las placas están fijadas con tornillos.
+
+272
+00:32:03,150 --> 00:32:07,470
+Esta placa está fija con dos pernos, esta con uno.
+
+273
+00:32:07,870 --> 00:32:11,310
+Y aquí tenemos las patas del interruptor de potencia.
+
+274
+00:32:12,390 --> 00:32:18,210
+La salida del drenaje es roja, la salida de la fuente es azul.
+
+275
+00:32:19,350 --> 00:32:29,670
+Ahora encenderé el sistema y veré cómo funciona en una carga activa óhmica.
+
+276
+00:32:33,380 --> 00:32:35,240
+Bien, armé un banco de prueba.
+
+277
+00:32:35,840 --> 00:32:38,600
+La carga será una lámpara de 200 W.
+
+278
+00:32:39,600 --> 00:32:48,320
+La alimentación estará a su tensión nominal para la lámpara, 220 V DC de una fuente de laboratorio.
+
+279
+00:32:49,520 --> 00:32:55,000
+Observaré el oscilograma en el osciloscopio y lo controlaré con el generador de señales.
+
+280
+00:32:55,560 --> 00:32:58,000
+Ahora ves que el puente está colocado.
+
+281
+00:32:58,200 --> 00:33:04,480
+Esto corresponde a un puente entre la fuente y el menos de la alimentación.
+
+282
+00:33:05,040 --> 00:33:12,020
+Así que la carga está incluida en el drenaje del interruptor de potencia.
+
+283
+00:33:13,160 --> 00:33:16,140
+Sube la tensión de alimentación a nominal.
+
+284
+00:33:21,610 --> 00:33:23,390
+No voy a llevarlo a bajo.
+
+285
+00:33:25,070 --> 00:33:29,770
+Voy directo al nominal 220 V.
+
+286
+00:33:30,390 --> 00:33:35,870
+El ciclo útil es 5%, frecuencia 100 kHz.
+
+287
+00:33:36,630 --> 00:33:37,990
+Está funcionando.
+
+288
+00:33:41,640 --> 00:33:45,140
+Ahora subiré gradualmente el ciclo útil en pasos.
+
+289
+00:33:47,200 --> 00:33:48,880
+Observa la lámpara.
+
+290
+00:33:55,760 --> 00:34:16,880
+10%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85% de ciclo útil.
+
+291
+00:34:16,880 --> 00:34:18,580
+Ahora lo mismo.
+
+292
+00:34:18,920 --> 00:34:23,340
+Veremos el oscilograma.
+
+293
+00:34:24,240 --> 00:34:28,360
+De vuelta a 5% de ciclo útil.
+
+294
+00:34:28,880 --> 00:34:34,700
+Quiero notar que por tensión, mirando la salida donde está nuestra sonda.
+
+295
+00:34:35,140 --> 00:34:38,240
+La sonda está ahora en el drenaje del transistor.
+
+296
+00:34:38,860 --> 00:34:42,580
+Y el común del osciloscopio está en el menos de la alimentación.
+
+297
+00:34:42,580 --> 00:34:51,580
+Por tensión tendremos una señal invertida respecto a la señal controladora.
+
+298
+00:34:52,560 --> 00:35:00,940
+Así que a ciclo útil de control mínimo tendremos ciclo útil de tensión máximo en la salida.
+
+299
+00:35:06,420 --> 00:35:24,680
+10%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85% de ciclo útil.
+
+300
+00:35:27,920 --> 00:35:40,740
+Con piezas de calidad y montaje, el interruptor de potencia apenas se calienta.
+
+301
+00:35:40,860 --> 00:35:45,640
+Ligeramente arriba de la temperatura ambiente.
+
+302
+00:35:45,740 --> 00:35:49,840
+Unos 30 grados a esta carga.
+
+303
+00:35:49,840 --> 00:36:01,700
+El circuito maneja el nominal con 85% de consumo del sistema.
+
+304
+00:36:01,780 --> 00:36:08,280
+Así que para pruebas de este circuito, mucho margen.
+
+305
+00:36:11,680 --> 00:36:19,460
+Ahora cambia el ciclo útil a 55% y barre por frecuencias.
+
+306
+00:36:20,940 --> 00:36:24,740
+200 kHz, 300, 400, 500.
+
+307
+00:36:25,880 --> 00:36:28,840
+Ves que la lámpara brilla.
+
+308
+00:36:33,550 --> 00:36:35,930
+Digamos, prueba a MHz.
+
+309
+00:36:38,390 --> 00:36:43,410
+Ahora cambié a radiofrecuencia ya.
+
+310
+00:36:45,150 --> 00:36:51,610
+Observa la señal a 1 MHz, 55% de ciclo útil.
+
+311
+00:36:54,290 --> 00:37:05,150
+65, 75, 85% al consumo de MHz.
+
+312
+00:37:13,480 --> 00:37:19,380
+A continuación quiero recomendar el canal de YouTube de un tipo que se hace llamar Ruslan X.
+
+313
+00:37:20,220 --> 00:37:25,520
+Hace experimentos de calidad en energía alternativa.
+
+314
+00:37:26,620 --> 00:37:28,660
+Recomiendo a todos replicarlos en casa.
+
+315
+00:37:29,120 --> 00:37:31,180
+Verán muchas cosas nuevas.
+
+316
+00:37:32,480 --> 00:37:36,300
+Y también visiten el foro Zaryad.
+
+317
+00:37:37,300 --> 00:37:40,720
+El hilo "Generador BTG de Ruslan Akulabukhov".
+
+318
+00:37:41,240 --> 00:37:44,420
+"Prototipo de configuración BTG Akula 0083".
+
+319
+00:37:45,060 --> 00:37:49,600
+Empezando en la página 161, lean sus publicaciones.
+
+320
+00:37:49,680 --> 00:37:54,560
+Se registró recientemente ahí también, también bajo el apodo Ruslan X.
+
+321
+00:37:54,900 --> 00:37:57,800
+Y también lleva sus videos ahí.
+
+322
+00:37:57,800 --> 00:38:00,960
+Aquí está este video para Brovin.
+
+323
+00:38:02,020 --> 00:38:05,800
+Incrustaré mi video.
+
+324
+00:38:06,780 --> 00:38:20,300
+En él, Ruslan muestra muy claramente qué pasa cuando se alimenta una bobina Tesla en modo Kacher desde una batería.
+
+325
+00:38:21,320 --> 00:38:27,260
+Y por qué con ese enganche no puedes conectar dispositivos de medición.
+
+326
+00:38:27,800 --> 00:38:30,580
+Osciloscopio y demás.
+
+327
+00:38:31,520 --> 00:38:32,960
+Cómo puedes perderlos.
+
+328
+00:38:33,460 --> 00:38:42,040
+Esto se alinea mucho con lo que les mostré: el aditamento al generador de señales de laboratorio, su esquema.
+
+329
+00:38:42,620 --> 00:38:44,480
+Y por qué lo estoy haciendo.
+
+330
+00:38:46,700 --> 00:38:50,540
+Recomiendo estudiar sus videos cuidadosamente.
+
+331
+00:38:56,620 --> 00:38:59,780
+Hola, querido Vladimir Ilyich Brovin.
+
+332
+00:39:00,730 --> 00:39:02,660
+Bueno, y el resto.
+
+333
+00:39:02,840 --> 00:39:05,780
+Ahora demostraré una cosa.
+
+334
+00:39:06,540 --> 00:39:09,380
+Y luego decidan por ustedes mismos cuáles son sus mediciones.
+
+335
+00:39:09,480 --> 00:39:10,720
+Correctas o incorrectas.
+
+336
+00:39:11,440 --> 00:39:13,080
+Entonces, esto es lo que tenemos.
+
+337
+00:39:13,360 --> 00:39:16,400
+Tenemos un Tesla, aquí está.
+
+338
+00:39:19,700 --> 00:39:21,100
+Tu Kacher regular.
+
+339
+00:39:21,540 --> 00:39:22,360
+Aquí está el Kacher.
+
+340
+00:39:22,880 --> 00:39:24,980
+Transistor Kacher 805.
+
+341
+00:39:25,560 --> 00:39:26,360
+Está ahí.
+
+342
+00:39:28,160 --> 00:39:32,640
+Este es un convertidor elevador de tensión.
+
+343
+00:39:33,580 --> 00:39:36,860
+2,5 amperios hasta 30 V.
+
+344
+00:39:36,980 --> 00:39:41,640
+En este caso, 25 V ajustados.
+
+345
+00:39:42,200 --> 00:39:44,760
+Así que ahí está nuestra fuente de alimentación.
+
+346
+00:39:45,040 --> 00:39:46,300
+Aquí está la fuente.
+
+347
+00:39:47,180 --> 00:39:48,760
+Y la batería.
+
+348
+00:39:49,640 --> 00:39:51,360
+Ahora mostraré la diferencia.
+
+349
+00:39:52,010 --> 00:39:57,300
+Y ustedes muchachos pueden averiguar qué es qué.
+
+350
+00:39:57,760 --> 00:39:59,690
+También hay una sonda de osciloscopio.
+
+351
+00:40:00,320 --> 00:40:00,580
+Aquí está.
+
+352
+00:40:00,920 --> 00:40:02,300
+No estará conectada en ningún lado.
+
+353
+00:40:02,860 --> 00:40:08,360
+Solo acercaré esta sonda a los puntos del Kacher.
+
+354
+00:40:11,140 --> 00:40:13,390
+Bueno, intentémoslo.
+
+355
+00:40:14,480 --> 00:40:19,140
+Conecta la fuente al Kacher.
+
+356
+00:40:20,620 --> 00:40:25,320
+A los 12 V que tengo ajustados, no se requiere corriente.
+
+357
+00:40:26,940 --> 00:40:29,900
+Aparecerá una pequeña chispa al final aquí.
+
+358
+00:40:30,580 --> 00:40:30,960
+Kacher.
+
+359
+00:40:31,300 --> 00:40:33,800
+El transistor cambiará al modo de operación Kacher.
+
+360
+00:40:34,640 --> 00:40:35,520
+Y empezará a correr.
+
+361
+00:40:35,740 --> 00:40:40,940
+Puedes ver claramente que la conversión va de 12 a 25 V.
+
+362
+00:40:41,040 --> 00:40:43,980
+Y el Kacher estará corriendo a 25 V.
+
+363
+00:40:44,780 --> 00:40:46,880
+Aún no estamos usando la batería.
+
+364
+00:40:46,880 --> 00:40:47,500
+Tenemos esto.
+
+365
+00:40:48,540 --> 00:40:51,360
+Esto es un destornillador para nosotros.
+
+366
+00:40:52,900 --> 00:40:55,760
+Servirá como indicador.
+
+367
+00:40:56,920 --> 00:40:58,700
+Lo verán por sí mismos.
+
+368
+00:41:00,140 --> 00:41:01,240
+Allá vamos.
+
+369
+00:41:02,320 --> 00:41:03,080
+Suma.
+
+370
+00:41:05,300 --> 00:41:06,620
+Lo puedes ver ahí.
+
+371
+00:41:09,840 --> 00:41:12,160
+Escúchalo, arrancó.
+
+372
+00:41:12,780 --> 00:41:14,960
+Ajustado a 12 V aquí.
+
+373
+00:41:15,180 --> 00:41:16,540
+Escúchalo, la pequeña chispa está corriendo.
+
+374
+00:41:16,880 --> 00:41:17,800
+Aquí está la pequeña chispa.
+
+375
+00:41:18,740 --> 00:41:20,620
+Y aquí está nuestro Kacher.
+
+376
+00:41:21,000 --> 00:41:22,060
+Así que ahora yo...
+
+377
+00:41:26,040 --> 00:41:28,220
+Aparentemente el transistor se cortó.
+
+378
+00:41:29,140 --> 00:41:29,720
+Muy probablemente.
+
+379
+00:41:29,880 --> 00:41:30,540
+O algo más.
+
+380
+00:41:32,380 --> 00:41:33,180
+Ahí, funciona.
+
+381
+00:41:33,760 --> 00:41:35,020
+¿Lo ves, sí?
+
+382
+00:41:35,340 --> 00:41:36,100
+Todo funciona.
+
+383
+00:41:37,480 --> 00:41:38,720
+Acércate al esquema.
+
+384
+00:41:38,900 --> 00:41:40,140
+Aproxímate al disipador.
+
+385
+00:41:41,080 --> 00:41:42,180
+Mira el disipador.
+
+386
+00:41:42,760 --> 00:41:44,060
+Puedes tocar aquí.
+
+387
+00:41:44,060 --> 00:41:44,400
+Aquí.
+
+388
+00:41:45,180 --> 00:41:48,610
+Podemos tocar cualquier punto del Kacher con el destornillador.
+
+389
+00:41:49,180 --> 00:41:53,740
+Y no vemos nada especial.
+
+390
+00:41:54,340 --> 00:41:55,380
+Genial.
+
+391
+00:41:56,060 --> 00:41:57,180
+Apaga el Kacher.
+
+392
+00:41:58,680 --> 00:42:10,490
+Y ahora conectaré este mismo Kacher a una fuente de alimentación autónoma con batería.
+
+393
+00:42:12,130 --> 00:42:14,830
+Esto es para Volodya el tuerto.
+
+394
+00:42:15,430 --> 00:42:19,230
+Quiero que él preste atención a esto también.
+
+395
+00:42:19,370 --> 00:42:27,550
+Cuando le pide a alguien que haga mediciones en un dispositivo funcionando para él.
+
+396
+00:42:28,250 --> 00:42:29,190
+Para el futuro.
+
+397
+00:42:30,010 --> 00:42:34,250
+Para que entienda de qué se está hablando.
+
+398
+00:42:34,890 --> 00:42:36,510
+Haciendo el cambio ahora.
+
+399
+00:42:37,410 --> 00:42:38,770
+Extremo más.
+
+400
+00:42:39,770 --> 00:42:40,410
+Conecta.
+
+401
+00:42:44,860 --> 00:42:45,780
+Todo listo.
+
+402
+00:42:45,840 --> 00:42:46,840
+Solo necesita encenderse.
+
+403
+00:42:48,630 --> 00:42:50,940
+Toma el pequeño destornillador en la mano.
+
+404
+00:42:52,490 --> 00:42:53,960
+Bueno, enciéndelo.
+
+405
+00:42:54,120 --> 00:42:55,720
+12 V.
+
+406
+00:42:56,180 --> 00:43:00,500
+Tenemos una pequeña chispa.
+
+407
+00:43:01,800 --> 00:43:03,020
+El Kacher está corriendo.
+
+408
+00:43:03,420 --> 00:43:04,440
+Toma el destornillador.
+
+409
+00:43:05,340 --> 00:43:05,900
+Y mira.
+
+410
+00:43:07,460 --> 00:43:09,640
+Acerca el destornillador aquí.
+
+411
+00:43:10,280 --> 00:43:10,840
+Mira.
+
+412
+00:43:12,200 --> 00:43:15,580
+Toma una sonda de osciloscopio, no conectada en ningún lado.
+
+413
+00:43:15,820 --> 00:43:16,680
+Un pequeño extremo.
+
+414
+00:43:17,760 --> 00:43:18,480
+Mira.
+
+415
+00:43:20,020 --> 00:43:23,180
+Y ahora dime, Volodya el tuerto.
+
+416
+00:43:23,740 --> 00:43:25,460
+¿Cómo vas a medir?
+
+417
+00:43:26,780 --> 00:43:31,320
+¿Quieres que todo este equipo vaya al basurero?
+
+418
+00:43:32,100 --> 00:43:33,800
+¿Por tus mediciones?
+
+419
+00:43:36,060 --> 00:43:37,820
+Incluso esto aquí.
+
+420
+00:43:38,500 --> 00:43:40,220
+Cosas así no sobreviven a eso.
+
+421
+00:43:41,900 --> 00:43:43,760
+Gracias por ver.
+
+422
+00:43:48,450 --> 00:43:55,570
+Y en nuestra comunidad de energía libre pasó algo interesante.
+
+423
+00:43:55,690 --> 00:43:59,450
+Lo sabía desde hace tiempo claro, unos seis meses.
+
+424
+00:44:00,330 --> 00:44:11,150
+Un tipo aún no estaba de acuerdo con nuestro conocido inventor Ruslan Kulabukhov.
+
+425
+00:44:12,290 --> 00:44:14,430
+Y decidió demandarlo.
+
+426
+00:44:15,810 --> 00:44:19,530
+Llegó un comentario en mi canal.
+
+427
+00:44:20,150 --> 00:44:21,350
+Ahora les mostraré.
+
+428
+00:44:21,530 --> 00:44:25,930
+Aquí pueden ver todo tipo de comentarios interesantes apareciendo.
+
+429
+00:44:26,170 --> 00:44:28,550
+La configuración de Kulabukhov resultó ser un fraude.
+
+430
+00:44:29,330 --> 00:44:34,430
+Y aquí hay una publicación del propio Sergey bajo el apodo Sergey Sergey.
+
+431
+00:44:35,570 --> 00:44:39,310
+Da un enlace a su video.
+
+432
+00:44:40,650 --> 00:44:42,310
+Crucemos a él.
+
+433
+00:44:45,430 --> 00:44:56,190
+Y en este video llamado "Cómo mi familia fue engañada" por un dispositivo de energía libre.
+
+434
+00:44:56,550 --> 00:45:02,770
+Cuenta cómo compró una muestra no funcional de Ruslan.
+
+435
+00:45:03,270 --> 00:45:06,930
+El video dura unos 44 minutos.
+
+436
+00:45:06,930 --> 00:45:15,310
+Por supuesto solo podemos solidarizar con Sergey por haber sido engañado.
+
+437
+00:45:16,570 --> 00:45:21,950
+Pero aconsejaría no empezar una histeria especial al respecto.
+
+438
+00:45:22,610 --> 00:45:30,090
+Porque si una persona deshonesta decidió ganar dinero de esta manera,
+
+439
+00:45:30,670 --> 00:45:33,830
+eso no significa que la tecnología no exista.
+
+440
+00:45:33,830 --> 00:45:37,170
+Y no significa que debamos rendirnos.
+
+441
+00:45:39,570 --> 00:45:43,890
+Porque los sistemas funcionales existen.
+
+442
+00:45:46,850 --> 00:45:51,130
+Y les contaré un poco sobre un punto.
+
+443
+00:45:51,830 --> 00:45:58,950
+La gente que me contacta por Skype seguido pregunta cuánta salida da.
+
+444
+00:45:58,950 --> 00:46:04,330
+Cuánto puedes colgar de él, si puedes comprar uno.
+
+445
+00:46:04,990 --> 00:46:06,170
+Todo en esa línea.
+
+446
+00:46:06,810 --> 00:46:08,670
+Muchachos, les diré esto.
+
+447
+00:46:09,610 --> 00:46:12,130
+Como muchos otros que me han contactado.
+
+448
+00:46:12,810 --> 00:46:15,850
+Creo que la gente me respaldará si acaso.
+
+449
+00:46:17,110 --> 00:46:24,610
+Internet ha construido una especie de aura alrededor de este tema.
+
+450
+00:46:24,610 --> 00:46:28,890
+Que la tecnología existe, ha estado funcionando desde hace mucho.
+
+451
+00:46:29,170 --> 00:46:35,010
+Y solo cierta ignorancia está impidiendo que se implemente en la vida.
+
+452
+00:46:35,570 --> 00:46:38,930
+En realidad, la tecnología realmente funciona.
+
+453
+00:46:39,150 --> 00:46:43,790
+Hay muchas direcciones de cómo implementar estos dispositivos.
+
+454
+00:46:44,890 --> 00:46:48,010
+Y se implementan en diferentes variantes.
+
+455
+00:46:48,010 --> 00:46:55,390
+Pero todos comparten un punto: la tecnología está en su etapa más temprana.
+
+456
+00:46:55,930 --> 00:46:57,450
+Es decir, la salida es inestable.
+
+457
+00:46:57,910 --> 00:47:05,310
+Lo que ven en internet en clips donde las lámparas se encienden.
+
+458
+00:47:06,670 --> 00:47:08,410
+Esos son arranques únicos.
+
+459
+00:47:09,190 --> 00:47:15,830
+Antes de eso, el autor no les dirá que sintonizó el dispositivo durante varias horas.
+
+460
+00:47:15,830 --> 00:47:18,100
+Antes de que arrancara exitosamente.
+
+461
+00:47:18,530 --> 00:47:22,850
+Después de eso lo filma y lo publica en línea.
+
+462
+00:47:22,970 --> 00:47:26,750
+Lo miramos y pensamos:
+
+463
+00:47:27,310 --> 00:47:31,770
+solo un poco más y empezaremos a hacer todo esto.
+
+464
+00:47:33,550 --> 00:47:35,650
+Quiero dar algún consejo.
+
+465
+00:47:35,790 --> 00:47:43,710
+No traten esto como una caja mágica que puede entregar electricidad como un tomacorriente de pared.
+
+466
+00:47:43,710 --> 00:47:48,810
+Trátenlo como investigación sobre el mundo que nos rodea.
+
+467
+00:47:49,370 --> 00:47:56,710
+Esto es un hobby, trabajo científico, investigación.
+
+468
+00:47:57,890 --> 00:48:02,250
+Resultados rápidos no ocurrirán aquí.
+
+469
+00:48:03,690 --> 00:48:11,130
+Personalmente he trabajado en esta dirección unos 8,5 años.
+
+470
+00:48:11,470 --> 00:48:15,290
+Pronto serán 9, perdí la cuenta, pero mucho tiempo.
+
+471
+00:48:16,090 --> 00:48:18,690
+Para obtener algunos resultados.
+
+472
+00:48:19,690 --> 00:48:23,410
+Así que tendrán que poner el trabajo.
+
+473
+00:48:23,490 --> 00:48:25,050
+Y todos tendrán que hacerlo.
+
+474
+00:48:26,210 --> 00:48:32,230
+Y la razón principal por la que estos dispositivos no se venden,
+
+475
+00:48:32,250 --> 00:48:38,270
+es que no hay una notoria conspiración.
+
+476
+00:48:38,770 --> 00:48:41,250
+Podrán venderlos.
+
+477
+00:48:41,970 --> 00:48:44,150
+Es un negocio bastante riesgoso aunque.
+
+478
+00:48:44,850 --> 00:48:49,610
+Nadie les impedirá vender una sola unidad.
+
+479
+00:48:50,270 --> 00:48:56,330
+El rechazo empieza cuando quieren patentarlo y meterlo en producción.
+
+480
+00:48:57,410 --> 00:48:58,090
+Entonces sí.
+
+481
+00:48:58,590 --> 00:49:08,590
+Pero hacer uno para alguien, o calentar tu propia casa, si no llamas la atención.
+
+482
+00:49:09,750 --> 00:49:12,370
+Eso es bastante posible.
+
+483
+00:49:14,530 --> 00:49:25,410
+Y resulta que en este momento estos dispositivos son muy inestables.
+
+484
+00:49:25,410 --> 00:49:34,010
+Y esa es exactamente la razón por la que aún no podemos comprarlos.
+
+485
+00:49:35,630 --> 00:49:50,590
+Hay razones objetivas, digamos, un tipo hizo el dispositivo mientras estaba en su casa, y moverlo a otra ubicación requiere resintonización.
+
+486
+00:49:50,590 --> 00:50:00,670
+Compararía comprar tal dispositivo con cuando compras un receptor satelital de TV.
+
+487
+00:50:01,110 --> 00:50:13,830
+Si no tienes las habilidades, tienes que llamar a un técnico al lugar de instalación que sintonizará el receptor y apuntará la antena al satélite por ti.
+
+488
+00:50:13,830 --> 00:50:15,990
+Ese tipo de cosa.
+
+489
+00:50:16,350 --> 00:50:20,630
+Estas son las razones objetivas por las que los dispositivos no se venden.
+
+490
+00:50:21,230 --> 00:50:24,570
+No puedes vender un dispositivo inestable ahora.
+
+491
+00:50:24,710 --> 00:50:27,190
+Nadie realmente lo necesita.
+
+492
+00:50:27,790 --> 00:50:33,030
+Incluso si arranca una de cinco o diez, bueno, arrancó, y eso es todo.
+
+493
+00:50:33,570 --> 00:50:37,310
+Así que trabajen y sigan trabajando en esta tecnología.
+
+494
+00:50:38,630 --> 00:50:41,630
+Les deseo persistencia, no se descorazonen.
+
+495
+00:50:41,630 --> 00:50:44,630
+Lo que pasa ahora es trivial.
+
+496
+00:50:45,310 --> 00:50:50,250
+Grandes saludos a nuestro gran especialista Ruslan.
+
+497
+00:50:51,590 --> 00:50:59,670
+Porque dándose golpes en el pecho, gritando en cada esquina que él es el especialista, ahora está claro por qué hizo eso.
+
+498
+00:51:00,430 --> 00:51:04,130
+Para crear un movimiento a su alrededor.
+
+499
+00:51:05,850 --> 00:51:14,330
+Y cuando tanta gente te sigue, claro que crea un aura de que tienes muchas cosas pasando.
+
+500
+00:51:15,630 --> 00:51:19,670
+Y como vemos, el tipo bajó por la pendiente resbaladiza del fraude.
+
+501
+00:51:21,510 --> 00:51:27,250
+No es nuestro lugar juzgarlo, esa es decisión de Sergey, y Dios será su juez.
+
+502
+00:51:27,250 --> 00:51:29,710
+Y nosotros seguimos.
+
+503
+00:51:30,610 --> 00:51:37,410
+Y con eso, deseo a todos experimentos exitosos y todo lo mejor.
