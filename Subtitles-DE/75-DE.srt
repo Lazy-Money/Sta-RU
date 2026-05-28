@@ -1,0 +1,415 @@
+1
+00:00:01,040 --> 00:00:02,520
+Hallo zusammen.
+
+2
+00:00:03,720 --> 00:00:08,960
+Ich arbeite weiter am Labornetzteil für Experimente.
+
+3
+00:00:10,020 --> 00:00:17,480
+Du siehst, der Deckel des Laborgehäuses hat verschiedene Bohrungen bekommen.
+
+4
+00:00:17,740 --> 00:00:20,360
+An den Seitenwänden gibt es auch Bohrungen.
+
+5
+00:00:21,180 --> 00:00:24,880
+Front- und Rückwand sind bereits fertig.
+
+6
+00:00:26,580 --> 00:00:29,280
+Jetzt erkläre ich, warum das gemacht wurde.
+
+7
+00:00:29,900 --> 00:00:39,120
+Wie du sicher schon erraten hast, sind diese Löcher für die Anschlüsse des Hochleistungs-Impulstransformators.
+
+8
+00:00:41,120 --> 00:00:52,520
+Ein kleiner Trick, wie ich sie so übertragen habe, dass die Löcher zu den Anschlüssen des Leistungstransformators passen.
+
+9
+00:00:54,700 --> 00:01:11,260
+Du könntest den Leistungstransformator so einbauen und jedes Loch nachzeichnen, aber diese Methode bringt Fehler mit sich, und du müsstest die Löcher später verschieben.
+
+10
+00:01:11,420 --> 00:01:12,820
+Ich bin anders vorgegangen.
+
+11
+00:01:14,040 --> 00:01:28,380
+Diese Drähte habe ich zur Seite gebogen, Pappe darübergelegt, und durch leichtes Klopfen mit einem Hämmerchen die Positionen der Transformator-Anschlüsse darauf übertragen.
+
+12
+00:01:28,720 --> 00:01:45,540
+Dann ist es Übungssache: ausschneiden, mit Klebeband auf die Oberfläche bringen, und danach lassen sich die Positionen der künftigen Löcher leicht übertragen.
+
+13
+00:01:46,050 --> 00:01:49,460
+Alles ist einfach und elegant gelöst.
+
+14
+00:01:52,100 --> 00:01:56,900
+Als Nächstes habe ich an der Frontplatte gearbeitet.
+
+15
+00:01:57,420 --> 00:02:14,020
+Du erinnerst dich: Hier soll ein Schalter sein, ein Schalter für die Wicklungen des Hochleistungs-Impulstransformators, und Widerstände für die Spannungsregelung.
+
+16
+00:02:15,020 --> 00:02:23,280
+An den Transformatorabgriffen, sowie die Regelung des Auslösepunkts der Stromschutzschaltung.
+
+17
+00:02:24,280 --> 00:02:26,880
+Das sind in diesem Fall diese beiden Löcher.
+
+18
+00:02:27,040 --> 00:02:33,060
+Ich habe auch beschlossen, ein paar interessante Elemente einzubauen.
+
+19
+00:02:34,320 --> 00:02:42,900
+Das Loch darunter ist für diesen Schalter, diesen Ein-Aus-Mikroschalter.
+
+20
+00:02:45,060 --> 00:02:52,060
+Und diesen Taster mit Schließerkontakten, also Schluss beim Drücken des Tasters.
+
+21
+00:02:52,880 --> 00:02:57,960
+Warum ich diese Elemente eingebaut habe.
+
+22
+00:02:58,260 --> 00:03:05,240
+Du siehst, ich habe eine Unterlage gemacht, ein kleines Knöpfchen, damit man es bequem mit dem Finger drücken kann.
+
+23
+00:03:06,640 --> 00:03:20,020
+Ich baue den Schalter ein, damit ich das Netzteil ein- und ausschalten kann, ohne die Stromkabel von der Batterie abzuziehen.
+
+24
+00:03:21,060 --> 00:03:27,940
+Und dieser Taster, eigentlich ein Analog zum Schalter, wird parallel dazu sitzen.
+
+25
+00:03:28,760 --> 00:03:37,820
+Wenn wir den Schalter ausschalten, geht das Gerät in Bereitschaft; ein Druck auf den Taster startet das Gerät.
+
+26
+00:03:38,520 --> 00:03:43,740
+Diesen Modus habe ich für Lasttests hinzugefügt.
+
+27
+00:03:44,440 --> 00:03:50,540
+Sagen wir, wir bauen ein neues System und wissen noch nicht, wie es sich verhält.
+
+28
+00:03:50,700 --> 00:03:57,200
+Wir drücken kurz diesen Taster und beobachten das Verhalten des Systems.
+
+29
+00:03:57,960 --> 00:04:10,860
+Dieser Taster ist auch nützlich, wenn wir am Ausgang ein Voltmeter anschließen, um die Maximalspannung an diesem Abgriff des Impulstransformators zu sehen.
+
+30
+00:04:12,360 --> 00:04:16,900
+Kleine Ergänzungen am Aufbau.
+
+31
+00:04:19,060 --> 00:04:32,620
+Als Nächstes zeige ich den Leistungsteil, den ich hinzugefügt habe, konkret diesen Gleichrichter.
+
+32
+00:04:34,280 --> 00:04:41,520
+Dieser Gleichrichter ist mit acht MUR860-Dioden aufgebaut.
+
+33
+00:04:42,300 --> 00:04:56,760
+Jede Diode hält 600 V, deshalb habe ich sie verbunden, du siehst die Brücken, zwei Dioden in Reihe, was eine Gesamtdiode von 1200 V ergibt.
+
+34
+00:04:57,460 --> 00:05:02,720
+Schnelle Dioden, die wir für die Arbeit in diesem System brauchen.
+
+35
+00:05:03,760 --> 00:05:09,540
+Sie sind ebenfalls über eine Glimmer-Isolierscheibe am Kühlkörper befestigt.
+
+36
+00:05:11,120 --> 00:05:19,400
+Alle Arbeitsschritte ähneln denen, die ich beim Leistungsmodul gezeigt habe.
+
+37
+00:05:20,440 --> 00:05:26,320
+Ich habe diesen Kühlkörper gewählt, du siehst, ich habe ihn schon zuvor verwendet.
+
+38
+00:05:26,980 --> 00:05:39,980
+Praktisch ist, dass man Leistungselemente innen platzieren kann, was zusätzlichen Schutz vor blanken Drähten bietet.
+
+39
+00:05:40,100 --> 00:05:57,720
+Sehr bequem: Schau, wie er an das Gehäuse anschließt, die Anschlüsse durch ein Loch, und er ist mit vier Schrauben auf der Rückseite des Gehäuses befestigt.
+
+40
+00:05:59,540 --> 00:06:20,480
+Die Drähte werden dort herausgeführt, wo die Anschlüsse vom Hochleistungs-Impulstransformator angebracht werden, und die Ausgangsdrähte sind bereits mit Plus und Minus markiert.
+
+41
+00:06:20,960 --> 00:06:23,620
+Die Verdrahtung ist sichtbar, denke ich.
+
+42
+00:06:26,080 --> 00:06:43,980
+Zusätzlich wird hier ein Widerstand installiert, zwischen diesen Anschlüssen in diesem Bereich, dieser Widerstand wird ein Entladewiderstand sein, damit wir eine Spannungsentladung an den Ausgangskondensatoren haben.
+
+43
+00:06:43,980 --> 00:06:44,600
+.
+
+44
+00:06:46,480 --> 00:06:52,800
+Jetzt können wir uns die Liste anschauen, was ich zusätzlich gekauft habe.
+
+45
+00:06:54,100 --> 00:07:01,320
+Ich war kürzlich in Elektronikgeschäften und habe diese Dioden und andere Teile besorgt.
+
+46
+00:07:02,340 --> 00:07:13,860
+Die Liste hast du vor dir, Gesamtkosten 1555 Rubel.
+
+47
+00:07:14,900 --> 00:07:16,140
+Was habe ich gekauft?
+
+48
+00:07:16,680 --> 00:07:29,460
+Ich habe vier Kondensatoren mit 4700 µF gekauft, je 50 Rubel, zusammen 200 Rubel.
+
+49
+00:07:30,400 --> 00:07:36,700
+Einen 2,2-µF-Kondensator, Kosten 30 Rubel.
+
+50
+00:07:37,780 --> 00:07:51,520
+Außerdem habe ich Kondensatoren für den Ausgang gekauft, je 4,8 µF, die großen.
+
+51
+00:07:52,140 --> 00:07:54,960
+40 Rubel pro Stück.
+
+52
+00:07:55,060 --> 00:08:02,280
+Ich habe sie in Reihe geschaltet, Kondensatoren mit 600 V.
+
+53
+00:08:02,400 --> 00:08:07,680
+Und der Gesamtwert ergibt, wie beim Diodenstapel, 1200 V.
+
+54
+00:08:08,680 --> 00:08:20,440
+Ich habe auch zwei Trimmpotis, einen Schalter, einen Taster gekauft, kleinere Dinge.
+
+55
+00:08:21,080 --> 00:08:37,140
+Du siehst, ich habe auch den Kühlkörper genommen, den ich zur Hand hatte, mal für 100 Rubel pro Stück gekauft, aber ich habe den Preis so belassen; weiß nicht, was er jetzt kostet.
+
+56
+00:08:39,040 --> 00:08:44,620
+Außerdem habe ich Kerne für die Drosseln gekauft.
+
+57
+00:08:46,360 --> 00:08:49,140
+Einen großen Kern und zwei kleine.
+
+58
+00:08:49,200 --> 00:09:03,220
+Die beiden kleinen Kerne setze ich am Ausgang ein, und dieser größere wird die Drossel an der Stromversorgung von der Batterie.
+
+59
+00:09:07,780 --> 00:09:36,800
+Die Preise sind sichtbar, heute, plus dem, was wir vorher für 2955 Rubel gekauft hatten, kommen wir jetzt auf insgesamt 4510 Rubel
+
+60
+00:09:36,800 --> 00:09:38,440
+für dieses Netzteil.
+
+61
+00:09:38,640 --> 00:09:50,100
+Natürlich sind viele Kleinigkeiten hier nicht enthalten, wie etwa Bohrer, die du dir natürlich besorgen musst, und andere Kleinausrüstung.
+
+62
+00:09:51,080 --> 00:09:58,620
+Aber du weißt, wie das ist, Werkzeug schadet nie.
+
+63
+00:09:59,240 --> 00:10:05,660
+Und natürlich werden die Kosten von Anfang an viel höher sein, wenn du nichts hast.
+
+64
+00:10:06,200 --> 00:10:29,180
+Ich habe auch Kleinigkeiten gemacht, wie Anschlüsse formen, Abstandshalter und Füße an der DC-DC-Wandlerplatine ankleben, und wie du siehst, habe ich sie an die Platine geklebt, auf der der PWM-Regler montiert wird.
+
+65
+00:10:29,180 --> 00:10:30,240
+PWM-Regler.
+
+66
+00:10:30,980 --> 00:10:36,380
+Viele Kleinigkeiten, sie nehmen natürlich viel Zeit in Anspruch.
+
+67
+00:10:38,220 --> 00:10:40,020
+Da gibt es kein Entrinnen.
+
+68
+00:10:41,760 --> 00:11:03,860
+Diese Abstandshalter mache ich aus diesen Kunststoff-Isolierscheiben, die zur Befestigung von Transistoren oder Dioden oder anderer Elektronik dienen.
+
+69
+00:11:04,400 --> 00:11:11,780
+Du steckst sie auf die Klemmschraube, und sie sind Isolierscheiben.
+
+70
+00:11:12,160 --> 00:11:18,920
+Du fädelst sie also so durch das Gehäuseauge.
+
+71
+00:11:19,980 --> 00:11:25,760
+Sie machen schöne Abstandshalter.
+
+72
+00:11:26,700 --> 00:11:28,120
+Kleine Kniffe.
+
+73
+00:11:28,780 --> 00:11:38,320
+Während der Arbeit habe ich den Schalter verbessert, du siehst, ich habe diesen breiten Kontakt mit einer Dremel gekürzt.
+
+74
+00:11:38,780 --> 00:11:44,280
+Jetzt trifft er klar einen Kontakt und die Hauptflächen im Kreis.
+
+75
+00:11:45,520 --> 00:11:51,120
+Lass uns jetzt grob Schritt für Schritt zusammenbauen.
+
+76
+00:11:51,480 --> 00:11:54,700
+Schauen, was an diesem Punkt herauskommt.
+
+77
+00:11:55,100 --> 00:11:59,220
+Der Zusammenbau dieses Geräts beginnt mit dem Bedienpanel.
+
+78
+00:12:00,580 --> 00:12:02,080
+Hier kommt also alles hin.
+
+79
+00:12:02,460 --> 00:12:09,040
+Du siehst, alles ist kompakt platziert, aber es gibt Lücken, die Teile berühren sich nicht.
+
+80
+00:12:11,000 --> 00:12:21,540
+Als Nächstes sollten wir den DC-DC-Wandler einbauen, er wird mit vier Schrauben an der Seitenwand befestigt.
+
+81
+00:12:25,560 --> 00:12:27,040
+So.
+
+82
+00:12:31,290 --> 00:12:35,550
+Ich habe M3-Gewinde in die Platte geschnitten.
+
+83
+00:12:36,890 --> 00:12:41,390
+Jetzt lässt es sich bequem einbauen.
+
+84
+00:12:44,900 --> 00:12:44,900
+Geschraubt.
+
+85
+00:12:45,600 --> 00:12:57,860
+Als Nächstes bauen wir den Leistungsgleichrichter ein, ebenfalls mit vier Schrauben.
+
+86
+00:13:01,860 --> 00:13:19,780
+Ich habe zusätzliche Abstandshalter gemacht, damit ein Spalt für eine gute Kühlung dieses Moduls bleibt.
+
+87
+00:13:22,560 --> 00:13:36,780
+Ich ziehe nicht stark an, ein vorläufiger Zusammenbau, nur um zu sehen, wie alles ins Gehäuse passt.
+
+88
+00:13:37,880 --> 00:13:43,100
+Als Nächstes die Ausgangs-Filterkondensatoren.
+
+89
+00:13:43,860 --> 00:13:50,540
+Du siehst, die Kontakte gehen rein für die Kopplung mit den Anschlüssen des Gleichrichters.
+
+90
+00:13:52,240 --> 00:13:55,500
+Das Relais sitzt in diesem Bereich.
+
+91
+00:13:57,960 --> 00:14:09,460
+Die Kondensatoren, die als Puffer für das Leistungsmodul dienen, werden so platziert.
+
+92
+00:14:11,340 --> 00:14:24,620
+Die Versorgungsdrossel wird in diesem Bereich liegen, und die zwei Drosseln am Ausgang sind hier.
+
+93
+00:14:27,320 --> 00:14:29,080
+Alles hat Platz.
+
+94
+00:14:31,640 --> 00:14:37,720
+Die Platine kommt auf Abstandshalter in diesem Teil.
+
+95
+00:14:38,580 --> 00:14:50,240
+Dieser Spalt von etwa 4 mm reicht für die Wickeldrahtführung auf der Rückseite der Platine.
+
+96
+00:14:51,720 --> 00:14:54,180
+Und das schließt alles ab.
+
+97
+00:14:55,860 --> 00:15:03,060
+Oben drauf das Leistungsmodul und der Impulstransformator.
+
+98
+00:15:04,000 --> 00:15:06,600
+Das war's für heute.
+
+99
+00:15:07,240 --> 00:15:10,040
+Mache kleine mechanische Arbeiten.
+
+100
+00:15:11,120 --> 00:15:17,220
+Sehr bald gehen wir zur Herstellung des PWM-Reglers über.
+
+101
+00:15:17,560 --> 00:15:24,780
+Das Spannendste machen wir noch, Abgleich, erste Systemstarts.
+
+102
+00:15:26,260 --> 00:15:27,920
+Wird interessant.
+
+103
+00:15:30,120 --> 00:15:31,620
+Das war's.
+
+104
+00:15:31,640 --> 00:15:36,040
+Tschüss zusammen, gute Laune, bis zu den nächsten Videos.

@@ -1,0 +1,307 @@
+1
+00:00:05,660 --> 00:00:08,640
+Ich will zeigen, was ich bisher zusammengebaut habe.
+
+2
+00:00:08,900 --> 00:00:09,840
+Den Zusammenbauprozess.
+
+3
+00:00:10,140 --> 00:00:15,960
+Tesla, abnehmbar, Gleichrichter, gesteuerte Kacher.
+
+4
+00:00:16,880 --> 00:00:21,040
+Also, das gesamte System ist auf 1,35 MHz herausgekommen.
+
+5
+00:00:21,760 --> 00:00:25,080
+Untere Schicht bei 1,35 MHz, obere Schicht bei 1,37 MHz.
+
+6
+00:00:26,080 --> 00:00:32,120
+Der Draht hier ist 1,5 mm, Litze.
+
+7
+00:00:34,000 --> 00:00:39,800
+Seine Wicklungslänge beträgt 22 Zentimeter.
+
+8
+00:00:42,960 --> 00:00:48,220
+Die Antenne ist bei 7 Windungen gelandet.
+
+9
+00:00:49,120 --> 00:00:55,700
+Das ist der Tesla, aber er ist groß geworden, weil ich 0,75-mm-Draht verwendet habe.
+
+10
+00:00:59,000 --> 00:01:04,580
+Wicklungslänge 22 Zentimeter.
+
+11
+00:01:04,960 --> 00:01:09,200
+Du kannst sie kürzer wickeln, dann kannst du einen größeren Kondensator einsetzen.
+
+12
+00:01:09,840 --> 00:01:10,560
+Es bringt mehr Nutzen.
+
+13
+00:01:10,660 --> 00:01:12,800
+Ich werde ihn wohl höchstwahrscheinlich abwickeln.
+
+14
+00:01:14,000 --> 00:01:16,320
+Schalten wir das System ein.
+
+15
+00:01:23,580 --> 00:01:27,140
+Es startet bei 6 bis 7 Volt.
+
+16
+00:01:27,260 --> 00:01:33,140
+Wenn es ein Kilovolt erreicht, fängt es schon an, sich selbst zu begrenzen.
+
+17
+00:01:33,860 --> 00:01:36,480
+Das Oszilloskop steht daneben.
+
+18
+00:01:37,560 --> 00:01:41,800
+Und du kannst sehen, wenn der Tesla die Pulsbursts begrenzt.
+
+19
+00:01:41,800 --> 00:01:44,380
+Da er 1 Kilowatt hält, kann er mehr.
+
+20
+00:01:44,760 --> 00:01:48,620
+Er schafft locker bis zu 1,5 Kilowatt.
+
+21
+00:01:48,880 --> 00:01:57,580
+Ich habe das nicht alles riskiert, weil mir endlos Dioden durchgebrannt sind.
+
+22
+00:01:58,520 --> 00:02:00,440
+Ich habe das Stabilisierungsproblem gelöst.
+
+23
+00:02:00,920 --> 00:02:06,720
+Du kannst sehen, wie die kleine LED blinkt, wenn es stabilisiert.
+
+24
+00:02:09,580 --> 00:02:12,460
+Schauen wir es uns genauer an.
+
+25
+00:02:13,780 --> 00:02:19,920
+Wir speisen 20 Volt ein, 23, 30 Volt.
+
+26
+00:02:20,000 --> 00:02:21,960
+Hier bleibt ein Kilovolt strikt stehen.
+
+27
+00:02:23,920 --> 00:02:25,240
+Schalten wir das System dann aus.
+
+28
+00:02:26,100 --> 00:02:29,520
+Schauen wir uns diesen ganzen Aufbau genauer an.
+
+29
+00:02:36,740 --> 00:02:42,320
+Hier ist die Gleichrichterbrücke, aus CREE-Siliziumkarbid-Dioden gebaut.
+
+30
+00:02:47,030 --> 00:02:56,470
+Epcos-Kondensatoren, ein Kilovolt 250 Volt, 2 davon, das sind insgesamt 2 Mikrofarad.
+
+31
+00:02:57,270 --> 00:02:59,130
+Und hier haben wir den Kacher.
+
+32
+00:03:00,410 --> 00:03:01,690
+Gesteuerter Kacher.
+
+33
+00:03:02,130 --> 00:03:03,830
+Er musste unbedingt gesteuert sein.
+
+34
+00:03:04,210 --> 00:03:07,690
+Zur Stabilisierung haben wir einen TL.
+
+35
+00:03:07,950 --> 00:03:10,530
+Hier sitzt ein TL431.
+
+36
+00:03:14,130 --> 00:03:22,990
+Dieser Widerstand ist für diesen TL, da wir von hier ein Kilovolt brauchen, entlang dieses gelben Drahts.
+
+37
+00:03:23,030 --> 00:03:25,850
+Ein Kilovolt kommt durch, wird geteilt, geteilt über diese beiden Widerstände.
+
+38
+00:03:27,670 --> 00:03:31,310
+Da ist auch ein 10 kΩ drin, das hier ist 22 kΩ.
+
+39
+00:03:32,730 --> 00:03:37,590
+Wir stellen das Kilovolt am Ausgang ein, aber du kannst auch mehr machen, du kannst höher gehen.
+
+40
+00:03:38,550 --> 00:03:42,290
+Hier haben wir einen 12-Volt-Regler, einen 5-Volt-Regler.
+
+41
+00:03:42,790 --> 00:03:46,190
+Das alles wird für den Steuercontroller gebraucht.
+
+42
+00:03:46,950 --> 00:03:51,610
+Wir haben hier einen KT973.
+
+43
+00:03:53,310 --> 00:04:02,490
+Ich hatte immer ein Problem, normalerweise setzen die Leute eine Z-Diode an die Basis, und die brennen manchmal durch, knallen manchmal, werden heiß.
+
+44
+00:04:02,810 --> 00:04:07,270
+Aber ich habe das Problem gelöst, sodass nichts heiß wird.
+
+45
+00:04:08,270 --> 00:04:11,810
+Hier sind 3 Schottky-Dioden, die sind notwendig.
+
+46
+00:04:12,610 --> 00:04:15,610
+KT, naja, nicht KT, K2837.
+
+47
+00:04:16,030 --> 00:04:20,850
+Guter Transistor, ich habe sie früher in TPO eingebaut, ich habe noch welche übrig.
+
+48
+00:04:21,050 --> 00:04:23,770
+Ich habe es bis 5 MHz versucht, die schaffen das locker.
+
+49
+00:04:28,910 --> 00:04:31,170
+Etwas ist nicht zu sehen, naja.
+
+50
+00:04:33,970 --> 00:04:35,830
+OK, hier ist die Tesla-Spule.
+
+51
+00:04:40,210 --> 00:04:43,370
+Ich werde sie noch ein bisschen abwickeln, nicht viel.
+
+52
+00:04:44,730 --> 00:04:48,490
+Ich musste zurückwickeln, um ihre Induktivität zu verringern.
+
+53
+00:04:49,090 --> 00:04:53,010
+Ich wollte 0,6-mm-Draht verwenden.
+
+54
+00:04:53,370 --> 00:04:57,210
+Als Nächstes haben wir die abnehmbare Spule.
+
+55
+00:04:58,170 --> 00:05:02,390
+Die abnehmbare Spule wickelt sich hier rein, das untere Ende geht rein.
+
+56
+00:05:04,250 --> 00:05:06,630
+Es geht, geht, geht, geht, geht, geht, geht.
+
+57
+00:05:07,530 --> 00:05:09,070
+Zwei klassische Lagen.
+
+58
+00:05:09,370 --> 00:05:13,470
+Wir kommen zur Mitte dieser Lage und fangen an, rückwärts zu wickeln.
+
+59
+00:05:14,590 --> 00:05:24,090
+Wickle bis zum Ende, komm zurück, einen Schritt zurück, wickle bis zum Ende hier, und dieses Ende durch das Loch wieder zurück nach außen.
+
+60
+00:05:24,610 --> 00:05:27,490
+Da sind sie, zwei Drähte, da sind sie.
+
+61
+00:05:28,270 --> 00:05:31,310
+Die gehen im Grunde zum Gleichrichter und zum Kondensator.
+
+62
+00:05:33,110 --> 00:05:34,970
+Tja, so ungefähr.
+
+63
+00:05:37,570 --> 00:05:40,290
+Die nächste Stufe für uns ist das Umschalten.
+
+64
+00:05:41,710 --> 00:05:45,730
+Ich hatte das Umschalten so gemacht.
+
+65
+00:05:47,350 --> 00:05:48,550
+Eine kleine Platine ist entstanden.
+
+66
+00:05:54,940 --> 00:05:55,800
+Tja, Fokus.
+
+67
+00:05:57,520 --> 00:05:59,220
+Stellt es nicht scharf?
+
+68
+00:06:00,180 --> 00:06:04,540
+Tja, im Grunde wird es eine neue Platine geben, besser.
+
+69
+00:06:05,200 --> 00:06:08,940
+Die hier hat auch funktioniert, damit ging es, aber das Umschalten wird neu.
+
+70
+00:06:09,720 --> 00:06:17,720
+Gestern habe ich mit Oleg, mit Slava zusammengesessen, im Grunde haben wir überlegt, wie man es besser macht.
+
+71
+00:06:18,760 --> 00:06:23,400
+Aber ich denke, innerhalb von ein, zwei Tagen bauen wir das neue Umschaltsystem.
+
+72
+00:06:23,740 --> 00:06:30,600
+Das Umschalten ist nötig, damit es nicht 300 bis 400 Watt sind, sondern mindestens 800 Watt.
+
+73
+00:06:31,160 --> 00:06:32,820
+Naja, vielleicht werden es 700, weiß nicht.
+
+74
+00:06:33,760 --> 00:06:34,280
+Im Selbstlauf.
+
+75
+00:06:35,840 --> 00:06:40,600
+Aber es ist das einfachste System, das es im Moment gibt, zum jetzigen Zeitpunkt.
+
+76
+00:06:40,860 --> 00:06:44,700
+Es gibt andere Systeme, aber im Moment arbeiten wir an diesem hier.
+
+77
+00:06:46,040 --> 00:06:47,620
+Tja, das war's eigentlich.

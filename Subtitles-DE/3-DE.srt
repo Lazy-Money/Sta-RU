@@ -1,0 +1,131 @@
+1
+00:00:07,110 --> 00:00:17,530
+Jetzt schauen wir uns das hier an — das ist der Generator, der den Leistungsschalter des Tesla-Transformators steuert, den gesteuerten, dieses Teil hier.
+
+2
+00:00:19,270 --> 00:00:22,770
+Der Tastkopf des Oszilloskops liegt am Gate des Transistors.
+
+3
+00:00:24,630 --> 00:00:30,750
+Hier sehen wir die einlaufenden Pulsfolgen, lass uns die Ansicht jetzt vergrößern.
+
+4
+00:00:34,580 --> 00:00:46,180
+Wir verwenden 4 Pulse pro Burst, Tastverhältnis 40 %, 4 Pulse reichen, um das System hochzufahren.
+
+5
+00:00:48,340 --> 00:01:13,360
+Als Nächstes verfolgt das Amperemeter den Verbrauchsstrom, wir setzen den Tastkopf an die Antenne, drehen die Spannung etwas hoch und schalten ein.
+
+6
+00:01:13,440 --> 00:01:23,160
+Strom vom Wechselrichter, unter dem Isolator, damit das Amperemeter keinen Kurzschluss bekommt, 12-Volt-Versorgung.
+
+7
+00:01:24,420 --> 00:01:28,620
+Das ist der Wechselrichter, also...
+
+8
+00:01:30,240 --> 00:01:35,180
+Im Moment sind es 130 Volt, die diesem Leistungsschalter hier zugeführt werden.
+
+9
+00:01:35,800 --> 00:01:47,440
+Die Schaltung — wir haben den Leistungsschalter, die Schottky-Diode, die Strombegrenzungswiderstände, und dieser Ausgang hier geht an die Drossel.
+
+10
+00:01:48,980 --> 00:01:50,460
+Wir schalten ein.
+
+11
+00:01:55,720 --> 00:02:02,180
+Hier sehen wir, dass es in diesem Modus fast 1 Ampere verbraucht, also...
+
+12
+00:02:02,600 --> 00:02:05,160
+12 Watt.
+
+13
+00:02:05,520 --> 00:02:07,960
+Schauen wir, was hier passiert.
+
+14
+00:02:09,580 --> 00:02:13,900
+Und hier haben wir Signale wie diese.
+
+15
+00:02:17,440 --> 00:02:20,440
+So, so kommen die Pulsfolgen rein.
+
+16
+00:02:21,040 --> 00:02:33,260
+Jetzt können wir dieses Signal vergrößern, und wir sehen hier dieses netzhautförmige Signal.
+
+17
+00:02:35,980 --> 00:02:38,760
+Wir können es einrasten.
+
+18
+00:02:39,620 --> 00:02:43,300
+So fährt es mit nur 4 Pulsen hoch.
+
+19
+00:02:46,640 --> 00:02:49,420
+Das System ist gut geworden, ausgewogen.
+
+20
+00:02:51,140 --> 00:02:58,140
+Die Lampen leuchten, am Schraubenzieher funkt es schön.
+
+21
+00:03:07,890 --> 00:03:11,390
+Sieht gut aus, die Glimmlampen leuchten auch, aber im Grunde Standard.
+
+22
+00:03:16,710 --> 00:03:20,270
+Vergrößern, und wir sehen hier eine Sinuswelle.
+
+23
+00:03:21,970 --> 00:03:24,570
+Nur 4 hochfahrende Schwingungen.
+
+24
+00:03:24,730 --> 00:03:33,590
+Nun, dasselbe haben wir mit Ruslan gesehen, er hat uns dieses netzhautförmige Signal gezeigt.
+
+25
+00:03:38,150 --> 00:03:42,970
+Es wird angenommen, dass das nicht der Arbeitsmodus ist.
+
+26
+00:03:44,250 --> 00:03:48,990
+Das ist nur eine ausgewogene Abstimmung des Systems im Moment.
+
+27
+00:03:49,110 --> 00:03:53,170
+Das heißt, hier sehen wir einen Gegentransformator auf Ferrit.
+
+28
+00:03:54,110 --> 00:04:09,730
+Offenbar erfüllt dieser Ferrit nicht die Parameter, die er haben sollte, um uns irgendein Pulssignal an der Antenne zu liefern.
+
+29
+00:04:10,510 --> 00:04:12,610
+Wir werden ihn austauschen, verschiedene probieren.
+
+30
+00:04:12,950 --> 00:04:16,170
+Schauen wir, was als Nächstes passiert.
+
+31
+00:04:18,010 --> 00:04:26,150
+Hier passt das System die Frequenz und das Tastverhältnis des Signals dieser vier Pulse an.
+
+32
+00:04:26,510 --> 00:04:34,150
+Und hier passt das System die Länge des Bursts und seine Position an.
+
+33
+00:04:34,410 --> 00:04:35,490
+Alles Standard.

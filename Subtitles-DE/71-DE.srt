@@ -1,0 +1,379 @@
+1
+00:00:01,230 --> 00:00:02,630
+Hallo zusammen.
+
+2
+00:00:03,110 --> 00:00:13,130
+Ich starte ein weiteres Projekt, das das Leben für Experimentatoren im Bereich der freien Energie erleichtern soll.
+
+3
+00:00:14,150 --> 00:00:21,270
+Das Blockschaltbild auf diesem Bild ist ein Netzteil, universell für unsere Experimente.
+
+4
+00:00:22,130 --> 00:00:25,450
+Geplante Ausgangsspannung bis zu 1000 V.
+
+5
+00:00:25,450 --> 00:00:33,750
+Wir probieren in dieser Schaltung auch etwas Neues für mich aus, die Arbeit mit Opto-Treibern.
+
+6
+00:00:36,010 --> 00:00:39,270
+Warum brauchen wir so eine Schaltung?
+
+7
+00:00:39,470 --> 00:00:46,790
+Du könntest natürlich mit fertigen Labornetzteilen auskommen.
+
+8
+00:00:46,790 --> 00:00:50,690
+Ich habe insbesondere zwei davon.
+
+9
+00:00:51,330 --> 00:00:58,930
+Eines ist ein Niederspannungs-Netzteil bis 30 V, das andere ein Hochspannungs-Netzteil bis 300 V.
+
+10
+00:00:59,390 --> 00:01:06,390
+Auf den ersten Blick ist der Spannungsbereich passend, aber es gibt einige Probleme.
+
+11
+00:01:07,070 --> 00:01:11,690
+Erstens werden diese Netzteile ans Netz angeschlossen.
+
+12
+00:01:11,690 --> 00:01:17,450
+Und der Anschluss ans Netz garantiert uns eine Verbindung mit dem Neutralleiter.
+
+13
+00:01:17,950 --> 00:01:24,010
+Denn der Neutralleiter im Netz ist zwangsläufig mit der Erde verbunden.
+
+14
+00:01:24,530 --> 00:01:39,650
+Wenn wir Geräte bauen, die Energie relativ zur Erde gewinnen sollen, bekommen wir mit diesen Netzteilen nichts hin, da wir automatisch über den Neutralleiter
+
+15
+00:01:39,650 --> 00:01:41,070
+mit Erde verbunden sind.
+
+16
+00:01:41,690 --> 00:01:53,690
+Man könnte denken, wir können die Erdverbindung ausschließen, etwa indem wir diese Netzteile über zwei Transformatoren zur Isolation versorgen.
+
+17
+00:01:54,870 --> 00:01:58,990
+Aber auch in diesem Fall bleibt die Verbindung.
+
+18
+00:01:59,070 --> 00:02:03,750
+Sie schleicht sich irgendwie durch und stört die Arbeit.
+
+19
+00:02:04,610 --> 00:02:09,450
+Eine andere Option ist, die Netzteile über einen Wechselrichter zu speisen.
+
+20
+00:02:09,450 --> 00:02:16,070
+Ja, diese Lösung ist gut und löst das Hauptproblem der Erdverbindung.
+
+21
+00:02:16,650 --> 00:02:17,890
+Aber es gibt einen Haken.
+
+22
+00:02:18,550 --> 00:02:27,530
+Alle unsere Experimente beinhalten in den meisten Fällen einen gepulsten Verbrauch aus diesen Stromquellen.
+
+23
+00:02:28,650 --> 00:02:38,790
+Und die Effekte, die diese Experimente begleiten, sind oft so unberechenbar, dass sich diese Netzteile völlig inadäquat verhalten.
+
+24
+00:02:39,450 --> 00:02:59,270
+Die Regler beginnen chaotisch zu reagieren, Ausgangsspannung springt, Ausgangsstrom springt, und außerdem läuft das Netzteil im Burst-Modus.
+
+25
+00:02:59,890 --> 00:03:05,450
+Der Einfluss von den Ausgangsleitungen auf das Netzteil ist also stark.
+
+26
+00:03:05,450 --> 00:03:11,610
+Ich habe versucht, Filter dazwischenzuschalten, das hilft auch nicht gegen dieses Problem.
+
+27
+00:03:13,790 --> 00:03:16,310
+Ständig falsche Messwerte.
+
+28
+00:03:16,470 --> 00:03:32,850
+Und wenn diese Geräte im Pulsversorgungsmodus laufen, erscheint am Ausgang nach dem Schalter am Steuergerät ein burstförmiges Signal.
+
+29
+00:03:32,850 --> 00:03:40,890
+Das ist eine zusätzliche Frequenzmodulation, die es uns natürlich unmöglich macht, das System richtig abzustimmen.
+
+30
+00:03:41,350 --> 00:03:47,910
+Daher musste ich auf diese Netzteile wegen ihrer Untauglichkeit verzichten.
+
+31
+00:03:48,770 --> 00:03:57,230
+Lösungen wie diese sind gut zum Abstimmen von Elektronik, sie helfen mir sehr.
+
+32
+00:03:57,230 --> 00:04:06,390
+Aber für die Versorgung von Geräten und für diese Experimente sind sie leider nicht geeignet.
+
+33
+00:04:06,950 --> 00:04:17,990
+Daher habe ich beschlossen, dieses Netzteil zu entwickeln, das die gestellten Aufgaben erfüllt.
+
+34
+00:04:18,910 --> 00:04:23,630
+Zum gleichen Thema kann ich denselben Rat zum Oszilloskop geben.
+
+35
+00:04:25,110 --> 00:04:33,450
+Wenn ich die Experimente der Leute beobachte, schließen sie das Oszilloskop ans Gerät und versuchen etwas abzustimmen.
+
+36
+00:04:34,010 --> 00:04:43,990
+Sie vergessen, dass das Oszilloskop am Netz hängt und der gemeinsame Leiter des Oszilloskops zwangsläufig mit Neutral verbunden ist.
+
+37
+00:04:43,990 --> 00:04:56,410
+Und es kommt dazu, dass wir selbst mit einem Netzteil, das wir ans Gerät anschließen, dasselbe Problem einbringen.
+
+38
+00:04:57,930 --> 00:05:06,460
+Zu Nikola Teslas Zeit gab es ein Gleichstromnetz und keine Verbindung zum Neutralleiter.
+
+39
+00:05:06,460 --> 00:05:14,800
+Darüber hinaus baute Tesla selbst Geräte, mit denen er arbeiten konnte.
+
+40
+00:05:15,760 --> 00:05:21,700
+Wie zum Beispiel Gleichstrom-Dynamomaschinen.
+
+41
+00:05:22,560 --> 00:05:34,220
+So eine Dynamomaschine lieferte eine autonome Stromquelle und konnte mit einem externen Motor in Drehung versetzt werden.
+
+42
+00:05:35,240 --> 00:05:42,320
+Tatsächlich sind alle Dynamomaschinen im Grunde Wechselstrommaschinen.
+
+43
+00:05:42,600 --> 00:05:58,320
+Aber wenn du eine Dynamomaschine mit vielen Kontakten baust und über einen Kollektor abnimmst, kannst du das Potenzial im Scheitelpunkt der Wechselstromwelle abgreifen.
+
+44
+00:05:58,320 --> 00:06:04,840
+Und so am Ausgang Gleichstrom bekommen, was er tat.
+
+45
+00:06:05,540 --> 00:06:08,560
+Aber zurück zu unserer Schaltung.
+
+46
+00:06:10,160 --> 00:06:11,940
+Schauen wir sie uns genauer an.
+
+47
+00:06:12,620 --> 00:06:21,320
+Zuerst kommt die Versorgung von einer Batterie, was unser Erdungsproblem löst.
+
+48
+00:06:21,320 --> 00:06:40,080
+Als Nächstes habe ich ein Relais-Element und eine Diode eingebaut, damit wir bei unseren Experimenten mit energetischen Effektkopplungen an der munteren Spule nicht versehentlich die Stromleitungen vertauschen.
+
+49
+00:06:41,400 --> 00:06:51,300
+So eine Polaritätsumkehr würde unweigerlich zum Ausfall der Leistungsschalter und des DC-DC-Wandlers führen, der die unabhängige Versorgung liefert.
+
+50
+00:06:53,380 --> 00:06:55,040
+Die Lösung ist einfach.
+
+51
+00:06:55,440 --> 00:07:07,420
+Wir haben ein Relais mit normalerweise offenen Kontakten und einer Spule, die das Magnetfeld erzeugt, welches den Kontakt anzieht und schließt.
+
+52
+00:07:08,020 --> 00:07:18,320
+Wenn du die Diode richtig herum einbaust, kannst du falsche Schaltungsanschlüsse ausschließen.
+
+53
+00:07:18,320 --> 00:07:29,300
+Wenn Plus an die Diodenanode kommt, fließt Strom durch sie, das Magnetfeld bildet sich natürlich, und die Kontakte ziehen an.
+
+54
+00:07:29,840 --> 00:07:36,640
+Bei umgekehrter Batteriepolung schließen die Kontakte nicht.
+
+55
+00:07:37,360 --> 00:07:47,100
+Als Nächstes habe ich ein Filtersystem eingebaut, Kondensatoren, Drossel, dann geht der Strom zu den Leistungsschaltern.
+
+56
+00:07:47,980 --> 00:07:52,580
+Ich habe mich für eine Vollbrückenschaltung entschieden.
+
+57
+00:07:54,520 --> 00:08:03,440
+Eine solche Schaltung erlaubt uns, die Primärwicklung sauber zu schalten und zusätzlich Opto-Isolation zu verwenden.
+
+58
+00:08:04,320 --> 00:08:07,900
+Vier Opto-Treiber, die die Schalter steuern.
+
+59
+00:08:08,560 --> 00:08:13,340
+Auch ein galvanisch getrennter DC-DC-Wandler.
+
+60
+00:08:13,340 --> 00:08:28,480
+Das alles ist so gemacht, dass es bei unseren Experimenten keinen Einfluss auf den PWM-Regler oder die Treiber gibt, die die Schalter steuern, was zu Fehlverhalten führen könnte.
+
+61
+00:08:30,680 --> 00:08:42,340
+Die gesamte Schaltung ist relativ einfach, aber beim Aufbau gibt es Feinheiten, die ich nebenbei zeigen werde.
+
+62
+00:08:44,300 --> 00:08:53,680
+Wir haben eine Stromrückführung, sodass wir den Stromschutz regeln können.
+
+63
+00:08:53,780 --> 00:09:02,240
+Ein sehr wichtiger Parameter, damit das System bei einem Kurzschluss am Ausgang nicht ausfällt.
+
+64
+00:09:03,860 --> 00:09:09,360
+Und dieser Punkt lässt sich einstellen, die Auslöseschwelle.
+
+65
+00:09:10,320 --> 00:09:19,040
+Auch die Pulsdauerregelung wird hinzugefügt, die letztlich die Ausgangsspannung steuert.
+
+66
+00:09:19,100 --> 00:09:32,360
+An jedem Transformatorabgriff haben wir also eine Spannungsregelung von null bis zum Maximum, das die Windungszahl zulässt.
+
+67
+00:09:33,160 --> 00:09:45,140
+Der Transformator wird auf einem Ferritring gebaut, und die Sekundärwicklung hat Abgriffe.
+
+68
+00:09:45,240 --> 00:09:58,200
+Hier habe ich schematisch die Abgriffe markiert, die zu einem Schalter führen, zwischen den Abgriffen kannst du umschalten und so die maximale Ausgangsspannung regeln.
+
+69
+00:09:59,200 --> 00:10:08,200
+Eine Spannungsrückführung lässt sich hier wegen der zu sperrigen Schaltung nicht hinzufügen.
+
+70
+00:10:08,520 --> 00:10:18,900
+Wir müssen denselben Schalter verwenden, um die Widerstandsketten zu ändern, die den Auslösepunkt der Rückführung festlegen.
+
+71
+00:10:18,900 --> 00:10:23,820
+Aber ich werde dieses System dem PWM-Regler hinzufügen.
+
+72
+00:10:24,700 --> 00:10:38,800
+Sagen wir, wir müssen an einem Abgriff eine konstante Spannung halten, dann nehmen wir einfach das Potenzial dort ab, machen einen Widerstandsteiler und führen es zurück.
+
+73
+00:10:39,240 --> 00:10:45,020
+Sagen wir, wir haben eine getestete Schaltung für einen Transistor und kennen seine Parameter genau.
+
+74
+00:10:45,020 --> 00:10:46,940
+Das lässt sich machen.
+
+75
+00:10:47,220 --> 00:10:54,020
+Und das Hauptumschalten des Spannungspotenzials erfolgt mit dem Schalter.
+
+76
+00:10:55,060 --> 00:11:04,800
+Die Ausgangsspannung wird nach dem Ohmschen Gesetz an der Last berechnet, Strom mal Lastwiderstand.
+
+77
+00:11:06,120 --> 00:11:21,240
+Da unsere Leistung gepulst sein wird und vom Ausgang dieses Wandlers abgenommen wird, ist die Formel etwas ungenau, aber für uns passt das gut.
+
+78
+00:11:23,880 --> 00:11:33,140
+Bevor wir mit dem Aufbau dieser Schaltung beginnen, müssen wir zuerst alle Teile kaufen.
+
+79
+00:11:33,140 --> 00:11:44,560
+Vorerst habe ich diesen Schalter bei mir gefunden, ein Stück aus Sowjetzeiten, das uns perfekt passt.
+
+80
+00:11:44,860 --> 00:11:52,060
+Er hat einen Keramik-Kontaktträger und ziemlich starke Anschlussklemmen.
+
+81
+00:11:52,060 --> 00:12:11,700
+Hier habe ich eingezeichnet, wo zusätzliche Arbeit an den Klemmen nötig ist, denn momentan, wenn wir umschalten, siehst du, dass der Schalter aufgrund der Kontaktträgerbreite die Kontakte vorübergehend kurzschließt.
+
+82
+00:12:11,840 --> 00:12:16,700
+Das müssen wir loswerden, und der Schalter wird voll geeignet sein.
+
+83
+00:12:16,700 --> 00:12:34,080
+Der Schalter hat 12 Anschlüsse im Kreis, einer davon ist gemeinsam, von dem die Versorgungsspannung abgegriffen wird, und dieser Lappen führt die Umschaltung durch.
+
+84
+00:12:35,800 --> 00:12:41,920
+In diesem Fall habe ich 12 Anschlüsse gezeichnet, aber ich habe einen 11-poligen Schalter gefunden.
+
+85
+00:12:42,920 --> 00:12:45,780
+Nicht kritisch, passt uns.
+
+86
+00:12:46,580 --> 00:12:52,940
+Wähle hier nach Belieben für die Ausgangswerte.
+
+87
+00:12:53,800 --> 00:13:05,030
+Von den Teilen, die die Gesamtmaße bestimmen, habe ich bereits den fertigen DC-DC-Wandler.
+
+88
+00:13:06,030 --> 00:13:14,370
+Das Video zu Abgleich und Aufbau kannst du im vorherigen Videoclip auf meinem Kanal sehen.
+
+89
+00:13:15,550 --> 00:13:21,510
+Speziell für den Einbau in dieses Universal-Netzteil gemacht.
+
+90
+00:13:22,190 --> 00:13:23,770
+Er kommt hierher.
+
+91
+00:13:25,090 --> 00:13:28,790
+Für alle anderen Teile gehe ich in den Laden.
+
+92
+00:13:29,790 --> 00:13:35,230
+Nach dem Kauf gehen wir an den Aufbau.
+
+93
+00:13:35,870 --> 00:13:43,250
+Gleichzeitig zähle ich, wie viel dieses Universal-Netzteil in Teilen kosten wird.
+
+94
+00:13:45,030 --> 00:13:47,150
+Danke an alle, die zugeschaut haben.
+
+95
+00:13:47,690 --> 00:13:49,210
+Bis zur nächsten Folge.

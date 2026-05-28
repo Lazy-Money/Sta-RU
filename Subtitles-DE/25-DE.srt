@@ -1,0 +1,135 @@
+1
+00:00:01,040 --> 00:00:04,500
+Testen wir unsere Spule sozusagen auf Einsatztauglichkeit.
+
+2
+00:00:05,680 --> 00:00:11,740
+Also, wir haben einen digitalen Signalgenerator, ein Oszilloskop und ein Amperemeter.
+
+3
+00:00:12,640 --> 00:00:25,820
+Damit das DC-Amperemeter das hochfrequente Wechselstromsignal erfasst, setzen wir eine schnelle Diode ein, wir schneiden eine Halbwelle ab.
+
+4
+00:00:26,700 --> 00:00:31,560
+Mit Genauigkeit können wir nicht rechnen, also verfolgen wir es nach Skalenteilen.
+
+5
+00:00:32,940 --> 00:00:33,960
+Also, schauen wir.
+
+6
+00:00:35,500 --> 00:00:45,280
+Dieses System von uns ist kein Abwärtstransformator, denn die Windungszahl und der Draht sind hier mehr als an der Drossel.
+
+7
+00:00:46,080 --> 00:00:54,940
+Entsprechend senden wir vom Signalgenerator ein Sinussignal mit einem halben Volt Amplitude.
+
+8
+00:00:56,320 --> 00:01:01,160
+Das ist die blaue Spur, gelb entsprechend an der Granate.
+
+9
+00:01:02,380 --> 00:01:06,140
+An diesen Kondensatoren hier, denen, die parallel geschaltet sind.
+
+10
+00:01:07,560 --> 00:01:11,260
+Es zeigt sich, dass unsere Spannungsamplitude höher ist.
+
+11
+00:01:11,540 --> 00:01:12,240
+Alles normal.
+
+12
+00:01:14,200 --> 00:01:16,040
+Der Transformator ist kein Abwärtstransformator.
+
+13
+00:01:16,040 --> 00:01:20,420
+Jetzt messen wir den Strom, den der Signalgenerator liefert.
+
+14
+00:01:22,500 --> 00:01:29,200
+Wir schließen unser Amperemeter an, trennen es ab.
+
+15
+00:01:29,400 --> 00:01:32,220
+So, der Signalprüfkopf vom Generator ist am Amperemeter.
+
+16
+00:01:33,080 --> 00:01:40,620
+Wir sehen, der Strom entspricht 13 Skalenteilen.
+
+17
+00:01:42,160 --> 00:01:48,000
+OK, jetzt messen wir den Strom, der im selben Modus an der Granate sein wird.
+
+18
+00:01:49,040 --> 00:02:01,480
+Wir koppeln an den Ausgang der Granate an, setzen den Signalprüfkopf an die Stelle und fixieren ihn.
+
+19
+00:02:03,020 --> 00:02:10,760
+Der Strom am Ausgang der Granate beträgt 21 Skalenteile bei uns.
+
+20
+00:02:15,520 --> 00:02:17,200
+Das Bild ist dasselbe.
+
+21
+00:02:18,180 --> 00:02:27,780
+Das heißt, wir erfassen den Moment, in dem der Strom am Ausgang dieser Spule den Eingangsstrom übersteigt.
+
+22
+00:02:27,880 --> 00:02:31,300
+Und obendrauf haben wir noch einen Spannungsgewinn.
+
+23
+00:02:31,920 --> 00:02:36,280
+Jetzt zur Abstimmgenauigkeit.
+
+24
+00:02:36,660 --> 00:02:38,600
+Warum verfehlen viele Leute das?
+
+25
+00:02:39,120 --> 00:02:40,400
+Hier ist unsere Frequenz.
+
+26
+00:02:41,420 --> 00:02:46,300
+Verschieben wir sie zum Beispiel mal um sagen wir 300 Hz.
+
+27
+00:02:47,320 --> 00:02:52,820
+Wir sehen, unser Strom ist schon gefallen, und die Amplitude dort sinkt.
+
+28
+00:02:53,500 --> 00:03:07,280
+Verschieben wir die Frequenz noch etwas weiter und wir sehen, da geht der Spannungsgewinn weg, und der Strom ist viel kleiner als der, der vom Generator kommt.
+
+29
+00:03:07,840 --> 00:03:10,080
+Deshalb muss die Abstimmung präzise sein.
+
+30
+00:03:14,180 --> 00:03:17,320
+Dasselbe passiert, wenn wir die Frequenz erhöhen.
+
+31
+00:03:18,280 --> 00:03:19,620
+Drehen wir zum Beispiel drüber.
+
+32
+00:03:28,300 --> 00:03:29,700
+Der Strom ist auch klein.
+
+33
+00:03:31,180 --> 00:03:38,620
+Stellen wir die Frequenz zurück auf die, die wir brauchen, auf der diese Spule arbeiten wird.
+
+34
+00:03:39,420 --> 00:03:48,100
+Und wir sehen, dass die Spurskalenteile gleich sind, der Spannungsgewinn ist auch da.

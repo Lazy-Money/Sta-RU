@@ -1,0 +1,143 @@
+1
+00:00:00,660 --> 00:00:16,780
+Es wurde die Hypothese aufgestellt, dass die Form des Oszillogramms an den Transistor-Drains daher kommt, dass dieser IR2113-Treiber seine Arbeit nicht gut macht und es zu Störungen in der Gate-
+
+2
+00:00:16,780 --> 00:00:20,280
+Kapazität kommt, weshalb der Transistor solche Spikes erzeugt.
+
+3
+00:00:20,860 --> 00:00:21,960
+Schauen wir jetzt.
+
+4
+00:00:23,960 --> 00:00:28,420
+Das ist das Signal an den Transistor-Gates.
+
+5
+00:00:30,180 --> 00:00:34,480
+Das Signal ist sauber, die Systemversorgung ist gerade nicht eingeschaltet.
+
+6
+00:00:35,580 --> 00:00:37,480
+So, hier ist unsere Versorgung.
+
+7
+00:00:38,380 --> 00:00:44,040
+Im Moment ist der Verbrauch 0, ich schließe die Brücke zwischen den Akkus.
+
+8
+00:00:46,620 --> 00:00:51,020
+Wir sehen, es gibt Verbrauch, die Versorgung läuft.
+
+9
+00:00:51,200 --> 00:00:54,540
+Schau dir die Form des Oszillogramms an.
+
+10
+00:00:55,400 --> 00:00:59,020
+Wie wir sehen, hat sich das Oszillogramm praktisch nicht verändert.
+
+11
+00:01:00,480 --> 00:01:08,360
+Die Flanken sind sauber, nur am unteren Rand kam etwas Ripple dazu, durch eine statische Einkopplung.
+
+12
+00:01:09,260 --> 00:01:10,360
+Jetzt schauen wir.
+
+13
+00:01:10,520 --> 00:01:11,780
+Tastverhältnis verringern.
+
+14
+00:01:15,580 --> 00:01:33,360
+Wir sehen, dass der Treiber bei jedem Tastverhältnis die Flanke sauber hält und keine Störungen in der Gate-Kapazität zu beobachten sind.
+
+15
+00:01:38,010 --> 00:01:40,930
+Tastverhältnis weiter verringern.
+
+16
+00:01:46,000 --> 00:01:51,240
+Das heißt, der Treiber arbeitet hervorragend und erzeugt keine Störungen.
+
+17
+00:01:52,200 --> 00:01:55,120
+Das System ist an, alles ist normal.
+
+18
+00:01:55,260 --> 00:02:06,840
+Jetzt schalte ich den blauen Kanal auf den Transistor-Drain, wo der statische Spike sitzt.
+
+19
+00:02:09,060 --> 00:02:16,520
+Ich entferne die Amplitudenmessung und schaue.
+
+20
+00:02:17,840 --> 00:02:28,720
+Gelber Kanal ist unsere Gate-Steuerung dieses Transistors, blau ist der Spike am Drain.
+
+21
+00:02:30,040 --> 00:02:32,240
+Tastverhältnis hinzufügen.
+
+22
+00:02:34,020 --> 00:02:35,420
+Tastverhältnis läuft.
+
+23
+00:02:38,200 --> 00:02:40,520
+Gute Signalflanke.
+
+24
+00:02:49,310 --> 00:02:53,150
+Jetzt bringen wir es in den optimalen Betriebsmodus.
+
+25
+00:03:00,480 --> 00:03:03,160
+Hier ist er, der optimale Modus.
+
+26
+00:03:04,260 --> 00:03:09,200
+Stellt sich ein, wenn unser Tastverhältnis bei 41 % liegt.
+
+27
+00:03:09,200 --> 00:03:19,400
+Wir sehen, hier ist unsere Steuerung, und hier ist unser Signal.
+
+28
+00:03:20,620 --> 00:03:23,780
+Keine Störungen im Gate für uns.
+
+29
+00:03:24,680 --> 00:03:31,060
+Dieser Prozess läuft sauber in diesem Kern mit Luftspalten.
+
+30
+00:03:34,080 --> 00:03:40,020
+Für Interessierte, hier ist die Schaltung, nach der dieser Treiber beschaltet ist.
+
+31
+00:03:43,220 --> 00:03:45,000
+Hier ist seine Anschluss-Schaltung.
+
+32
+00:03:46,500 --> 00:03:50,640
+Ich habe extra notiert, was man mit diesem Treiber noch machen kann.
+
+33
+00:03:52,700 --> 00:04:01,500
+Sehr interessanter Moment: Wenn du an den neunten Pin über einen Regler 5 Volt anlegst, ist dieser Treiber mit 5-Volt-Logik kompatibel.
+
+34
+00:04:05,830 --> 00:04:15,170
+Und wenn wir hier hohes Versorgungspotential an Pin 11 anlegen, werden beide Kanäle deaktiviert.
+
+35
+00:04:15,790 --> 00:04:24,550
+An diesem Treiber kannst du auf diese Weise einen Systemschutz realisieren.
+
+36
+00:04:24,890 --> 00:04:26,190
+Noch einmal die Schaltung.
