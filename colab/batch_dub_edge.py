@@ -47,6 +47,7 @@ except ImportError:
 
 # Reuse everything that's TTS-engine-independent from batch_dub.py
 from batch_dub import (
+    AMBIENT_GAIN,
     MAX_VIDEO_STRETCH,
     SAMPLE_RATE,
     VideoItem,
@@ -274,7 +275,7 @@ def _build_master(
             from scipy import signal
             amb = signal.resample_poly(amb, sr_master, sr_amb)
         amb = amb[:len(master)] if len(amb) >= len(master) else np.pad(amb, (0, len(master) - len(amb)))
-        master = master + amb.astype(np.float32)
+        master = master + AMBIENT_GAIN * amb.astype(np.float32)
 
     peak = float(np.max(np.abs(master)))
     if peak > 0.99:

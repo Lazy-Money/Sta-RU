@@ -61,6 +61,13 @@ MAX_VIDEO_STRETCH = 1.5       # video can be slowed down up to 50% (plays at 1/1
 MIN_VIDEO_PTS = 0.7           # video can be sped up up to ~1.43x (plays at 1/0.7x)
 MAX_AUDIO_COMPRESS = 1.4      # if video stretch is not enough, audio can also speed up to 1.4x
 
+# Ambient (no-vocals stem) gain when mixing under the TTS.
+# Demucs delivers the ambient at roughly the same level it had in the source
+# mix, which sits below the speaker. Boosting it ~+5 dB makes workshop noise,
+# music and room tone audible without the listener having to crank the player.
+# Final master is peak-normalised, so this only shifts the TTS/ambient ratio.
+AMBIENT_GAIN = 1.8
+
 # XTTS-v2 supported languages (ISO 639-1, except zh)
 XTTS_LANGS = {
     "en", "es", "fr", "de", "it", "pt", "pl", "tr", "ru",
@@ -617,7 +624,7 @@ def _build_master_classic(
             from scipy import signal
             amb = signal.resample_poly(amb, sr_master, sr_amb)
         amb = amb[:len(master)] if len(amb) >= len(master) else np.pad(amb, (0, len(master) - len(amb)))
-        master = master + amb.astype(np.float32)
+        master = master + AMBIENT_GAIN * amb.astype(np.float32)
 
     return master, sr_master
 
@@ -824,7 +831,7 @@ def _build_master_dynamic(
             new_a = int(p["new_start"] * sr_master)
             new_b = min(new_a + len(chunk), len(warped_amb))
             warped_amb[new_a:new_b] += chunk[:new_b - new_a].astype(np.float32)
-        master = master + warped_amb
+        master = master + AMBIENT_GAIN * warped_amb
 
     return master, sr_master
 
