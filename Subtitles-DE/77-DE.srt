@@ -1,0 +1,1131 @@
+1
+00:00:00,980 --> 00:00:03,280
+Hallo zusammen, willkommen auf meinem Kanal.
+
+2
+00:00:04,520 --> 00:00:10,320
+Heute haben wir ein sehr interessantes Thema zum Labornetzteil.
+
+3
+00:00:11,120 --> 00:00:15,440
+Nämlich, wir wählen und stimmen den Stromschutz ab.
+
+4
+00:00:16,220 --> 00:00:23,100
+Ein sehr wichtiger Parameter, der die ganze Idee dieses Geräts bestimmt.
+
+5
+00:00:24,020 --> 00:00:32,480
+Das ist der Moment, in dem das Gerät einen bestimmten Strom durch die Leistungsschalter hält.
+
+6
+00:00:33,700 --> 00:00:40,980
+Damit regeln wir die Ausgangsparameter und passen sie unter Last an.
+
+7
+00:00:42,460 --> 00:00:51,500
+Hier vor dir ist der Schaltplan, der heute so aussieht.
+
+8
+00:00:51,800 --> 00:01:03,640
+Er wird noch ergänzt, mit einigen Änderungen, aber die hier dargestellten Elemente werden keinen Änderungen unterliegen.
+
+9
+00:01:04,140 --> 00:01:09,240
+Also, lass mich näher auf den Stromschutz eingehen.
+
+10
+00:01:09,640 --> 00:01:15,080
+Ich habe ihn an Pin 9 des UC3825N-Chips geführt.
+
+11
+00:01:16,780 --> 00:01:37,040
+Eine interessante Eigenschaft dieses Chips ist, dass bei Anlegen einer Spannung von 0,9 V die Stromschutz-Auslösung beginnt — das heißt, die Dauer der Ausgangsimpulse reduziert sich.
+
+12
+00:01:37,600 --> 00:01:45,920
+Und dieser Parameter, von 0,9 V bis 1,3 V, hält die Breitenreduzierung aufrecht.
+
+13
+00:01:46,380 --> 00:01:57,320
+Wenn die Spannungsamplitude 1,3 V erreicht, stoppt die Erzeugung von Steuerimpulsen am Ausgang vollständig.
+
+14
+00:01:57,400 --> 00:02:00,600
+Das heißt, ein kleines Möglichkeitsfenster.
+
+15
+00:02:01,140 --> 00:02:08,360
+Um da reinzupassen, müssen wir die Verdrahtung dieses Systems und einen empfindlichen Stromsensor machen.
+
+16
+00:02:09,060 --> 00:02:19,380
+Der Stromsensor — das ist schematisch in der Zeichnung dargestellt — ist ein Ring mit darum gewickeltem Draht als Spirale.
+
+17
+00:02:20,360 --> 00:02:27,320
+Physikalisch ist es dieser Ring, seine Abmessungen sind ebenfalls in der Zeichnung angegeben.
+
+18
+00:02:28,360 --> 00:02:33,800
+Ich mache ihn auf Epcos-Ferrit, mit Permeabilität 2200.
+
+19
+00:02:34,880 --> 00:02:45,100
+Wenn du andere Ferrite verwendest, dann werden die Daten, die ich in diesem Video nenne, bei dir entsprechend etwas anders sein.
+
+20
+00:02:45,580 --> 00:02:48,380
+In der Praxis muss das jeder selbst auswählen.
+
+21
+00:02:49,500 --> 00:03:11,520
+Experimentell habe ich festgestellt, dass für meinen Ferrit, diesen Kern, für eine ordentliche Empfindlichkeit — damit ich von 0,5 A bis zu dem Punkt regeln kann, den ich möchte, und für mich werden das 20 A Verbrauch aus einer 12-V-Batterie sein —
+
+22
+00:03:12,520 --> 00:03:21,080
+ich 120 Windungen 0,35-mm-Draht auf diesem Kern wickeln musste.
+
+23
+00:03:21,900 --> 00:03:37,760
+Ich habe Experimente an denselben Kernen mit anderen Drahtdurchmessern probiert, insbesondere 0,45, aber diese Windungszahl war zu klein.
+
+24
+00:03:38,060 --> 00:03:48,980
+Hier müsste man in mehreren Lagen wickeln, also ging ich experimentell in Richtung kleinerer Drahtquerschnitt und blieb beim optimalen Modus.
+
+25
+00:03:49,120 --> 00:03:56,980
+Das heißt, dieser Kern ist vollständig rundherum in einer Lage bewickelt.
+
+26
+00:03:57,160 --> 00:04:10,340
+Bevor du mit der Wicklungsarbeit auf diesem Kern beginnst, ist es nicht überflüssig, die Gesamtdrahtlänge zu berechnen, die auf diesen Magnetkern passt.
+
+27
+00:04:10,720 --> 00:04:26,080
+Dafür verwende ich die bekannte Formel für den Umfang ausgedrückt durch den Durchmesser, wobei P der Umfang, π die Konstante 3,14 und D der Durchmesser ist.
+
+28
+00:04:26,940 --> 00:04:32,860
+Miss diesen Durchmesser mit einem Messschieber und setze ihn in die Formel ein.
+
+29
+00:04:33,360 --> 00:04:39,100
+Multipliziere und du bekommst einen Umfang von 42,39 mm.
+
+30
+00:04:39,900 --> 00:04:45,240
+Als Nächstes müssen wir uns auf den Drahtdurchmesser festlegen, mit dem wir wickeln werden.
+
+31
+00:04:45,300 --> 00:04:48,060
+In meinem Fall sind das 0,35 mm.
+
+32
+00:04:48,820 --> 00:04:50,200
+Dann geht man so vor.
+
+33
+00:04:50,860 --> 00:04:55,640
+Teile den Umfang durch den Drahtdurchmesser und du bekommst die Windungszahl.
+
+34
+00:04:55,980 --> 00:05:00,760
+121 Windungen passen auf diesen Kern.
+
+35
+00:05:01,180 --> 00:05:04,140
+Jetzt sollten wir die Länge einer Windung kennen.
+
+36
+00:05:04,240 --> 00:05:08,320
+Dafür wickle den Kern eng mit Draht, glätte ihn und miss ihn.
+
+37
+00:05:08,860 --> 00:05:12,400
+In diesem Fall kam die Windungslänge auf 21 mm.
+
+38
+00:05:13,120 --> 00:05:22,160
+Jetzt multipliziere die Windungszahl mit der Länge einer Windung und du bekommst die Drahtlänge in Millimetern.
+
+39
+00:05:22,700 --> 00:05:30,980
+Dann teile durch 1000 mm pro Meter und du drückst die Länge jetzt in Metern aus.
+
+40
+00:05:31,160 --> 00:05:35,060
+In meinem Fall kam es auf 2,54 m.
+
+41
+00:05:35,820 --> 00:05:39,380
+Ungefähr mit Anschlüssen habe ich 2,6 m genommen.
+
+42
+00:05:40,180 --> 00:05:48,000
+Ich habe es mit Hilfe einer solchen Spule gewickelt, aus Kupferdraht mit abgeflachten Kanten.
+
+43
+00:05:50,080 --> 00:05:56,960
+Das ist das Produkt, das ich im Laufe der Arbeit bekommen habe.
+
+44
+00:05:57,080 --> 00:06:00,180
+Es dauerte etwa eine Stunde durchgehende Arbeit.
+
+45
+00:06:01,640 --> 00:06:05,880
+Jetzt siehst du, dass ich seine Anschlüsse herausgeführt habe.
+
+46
+00:06:06,280 --> 00:06:16,280
+Der Startanschluss ist direkt am Anfang des Drahtes angelötet, und der Endanschluss ist im Schrumpfschlauch.
+
+47
+00:06:16,860 --> 00:06:21,540
+Jetzt sollte dieses Teil gut isoliert werden.
+
+48
+00:06:21,960 --> 00:06:38,520
+Ich isoliere es mit Hilfe von Kreppband, um den Draht, mit dem der Stromabnahme-Transformator gewickelt ist, vor mechanischen Schäden zu schützen.
+
+49
+00:06:39,360 --> 00:06:46,440
+Ich habe die Isolationsschutz des Stromsensors fertiggestellt, und während der Klebstoff trocknet, fixiere ich das Bandende.
+
+50
+00:06:47,200 --> 00:06:48,980
+Lass mich anhand des Schaltplans etwas erklären.
+
+51
+00:06:49,880 --> 00:06:58,240
+Im Schaltplan kannst du grafische Bezeichnungen an verschiedenen Stellen bemerken.
+
+52
+00:06:58,820 --> 00:07:03,000
+Das ist nichts anderes als eine Klemmleiste.
+
+53
+00:07:04,060 --> 00:07:09,680
+An der Grenze dieser Teile finden Drahtverbindungen statt.
+
+54
+00:07:10,680 --> 00:07:18,840
+Diese werden verkauft, kosten nicht viel — 40 Rubel pro Stück mit Gegenstück.
+
+55
+00:07:20,000 --> 00:07:26,600
+Es wird so verbunden und ist sehr praktisch, du kannst beliebig viele Kontaktblöcke abschneiden.
+
+56
+00:07:29,700 --> 00:07:33,140
+So sieht die Platine im fertigen Zustand aus.
+
+57
+00:07:34,840 --> 00:07:37,420
+Das ist die Rückseite der Platine.
+
+58
+00:07:38,440 --> 00:07:40,900
+Verdrahtung in Punkt-zu-Punkt-Montage.
+
+59
+00:07:42,920 --> 00:07:46,120
+Nichts super-kompliziertes.
+
+60
+00:07:47,280 --> 00:07:55,720
+Auch im Schaltplan gibt es Anschlüsse 1, 2 — diese habe ich im vorherigen Video erklärt.
+
+61
+00:07:56,560 --> 00:07:58,740
+Und Buchstabenbezeichnungen.
+
+62
+00:07:59,380 --> 00:08:02,880
+An diese Buchstabenbezeichnungen werden ebenfalls Drähte angeschlossen.
+
+63
+00:08:03,240 --> 00:08:08,140
+Ich habe das so gemacht, damit kein Stecker-Stapel entsteht.
+
+64
+00:08:08,480 --> 00:08:11,140
+Das heißt, sie befinden sich auf einem anderen Blatt.
+
+65
+00:08:11,560 --> 00:08:16,240
+Der zweite Teil des Schaltplans, das ist Blatt 1, geht auf Blatt 2 über.
+
+66
+00:08:17,160 --> 00:08:22,360
+Und dort werden Kontakte mit den entsprechenden Buchstaben verbunden.
+
+67
+00:08:23,480 --> 00:08:29,200
+Diese Kontakte sind bei uns mit den Bezeichnungen E, F versehen.
+
+68
+00:08:29,320 --> 00:08:36,840
+Das dient zum Umschalten des PWM-Reglers in den Standby-Modus.
+
+69
+00:08:37,540 --> 00:08:49,020
+Das heißt, wenn hier Spannung angelegt wird — ich habe Stromausgang verwendet — stoppt an Pin 9 des Chips die Erzeugung von Steuerimpulsen.
+
+70
+00:08:49,500 --> 00:08:56,280
+Du kannst sehen, dass hier der Buchstabe F und der F-Ausgang an einem Spannungsteiler aus Widerständen aufgebaut sind.
+
+71
+00:08:56,400 --> 00:09:01,920
+Hier habe ich den Teiler ungefähr so gewählt, dass es 2-2,5 Volt sind.
+
+72
+00:09:02,480 --> 00:09:10,020
+Von diesem Punkt aus, hier befindet sich tatsächlich der Schalter und Knopf, den wir schließen.
+
+73
+00:09:10,580 --> 00:09:15,520
+Und wenn hier ein Spannungspotenzial anliegt, stoppt die Erzeugung.
+
+74
+00:09:15,640 --> 00:09:22,880
+Sobald das Spannungspotenzial von hier abgeschaltet wird, schaltet der Chip zurück in den Arbeitsmodus.
+
+75
+00:09:23,080 --> 00:09:25,860
+Was in der Praxis ziemlich praktisch sein wird.
+
+76
+00:09:26,660 --> 00:09:36,480
+Auch mit den Buchstaben C und D sind die Eingänge für den PC817-Optokoppler markiert.
+
+77
+00:09:37,020 --> 00:09:42,340
+Hier wird auch die Spannungsrückkopplung angeschlossen.
+
+78
+00:09:43,160 --> 00:09:51,860
+Wer es praktisch findet, kann eine Spannungsregelungs-Rückkopplung machen, wenn er diese Schaltung leicht ändert.
+
+79
+00:09:52,480 --> 00:10:03,680
+Aber ich verwende das zum Stoppen der Erzeugung, wenn am Ausgang des Netzteils 1000 Volt erreicht werden.
+
+80
+00:10:05,060 --> 00:10:12,780
+Die Spannungssteuerung ist bei mir an dieser Widerstandskette aufgebaut.
+
+81
+00:10:13,040 --> 00:10:21,700
+Variabler Widerstand von 2 kΩ und Begrenzungswiderstände von 1 kΩ und 2,4 kΩ.
+
+82
+00:10:25,780 --> 00:10:34,120
+Mit A und B markierte Anschlüsse — genau hier wird die Spannung an die Brücke von den Schaltern angelegt.
+
+83
+00:10:36,320 --> 00:10:51,560
+Jetzt habe ich das System schon teilweise zusammengebaut, das Leistungsmodul und den Leistungs-Impulstransformator an seinem regulären Platz befestigt, die Anschlüsse gesäubert und gelötet.
+
+84
+00:10:53,420 --> 00:10:57,100
+Jetzt gehen wir zur Befestigung des Stromsensors über.
+
+85
+00:10:57,680 --> 00:11:00,640
+Du kannst sehen.
+
+86
+00:11:02,120 --> 00:11:17,380
+Es ist sichtbar, dass der Draht so gebogen ist, der von dieser Primärwicklung kommt, dass er einen 90-Grad-Bogen bildet und zu den Transistoren geht.
+
+87
+00:11:17,380 --> 00:11:24,320
+Das heißt, an diesem Punkt können wir einhaken.
+
+88
+00:11:24,460 --> 00:11:27,140
+Das geht weiter zur Primärwicklung.
+
+89
+00:11:27,700 --> 00:11:32,460
+Und an diesem Punkt wird der Stromsensor platziert.
+
+90
+00:11:32,860 --> 00:11:38,860
+Jetzt montiere, löte ich, und gehe zur Installation der Platine an ihrem regulären Platz über.
+
+91
+00:11:39,780 --> 00:11:42,620
+Der Stromsensor ist an seinem regulären Platz installiert.
+
+92
+00:11:43,300 --> 00:11:44,880
+Hier ist er auf dem Draht.
+
+93
+00:11:46,160 --> 00:11:48,260
+Die Platine ist auch installiert.
+
+94
+00:11:49,780 --> 00:11:50,860
+Alles verbunden.
+
+95
+00:11:51,020 --> 00:12:06,340
+Jetzt für das nächste Experiment, das darin besteht festzustellen, bei welcher Frequenz unser Wandler im stabilen Modus arbeitet, brauchen wir eine Last — in diesem Fall eine 60-W-220-V-Lampe,
+
+96
+00:12:06,340 --> 00:12:21,640
+eine Diodenbrücke mit Kondensator, um die Gleichspannung an dieser Lampe zu betrachten, einen Spannungsmesser — in diesem Fall einen Tester, der die Spannung an der Lampe verfolgt — eine Stromquelle,
+
+97
+00:12:21,640 --> 00:12:32,500
+eine Batterie und ein Amperemeter, das den Verbrauch des gesamten Geräts aus der Batterie zeigt.
+
+98
+00:12:34,160 --> 00:12:48,020
+Zu Beginn trennen wir den Stromsensor ab, brechen einen der Drähte auf — egal welchen — in diesem Fall habe ich ihn von der Platine abgelötet,
+
+99
+00:12:53,140 --> 00:13:13,620
+diesen Draht, und wir sollten diese beiden Drähte in der Schaltung zusammen verbinden — das heißt, Pin 9 des Chips an Masse legen. Diese beiden Drähte verbinde ich, in diesem Fall führen sie verbunden
+
+100
+00:13:13,620 --> 00:13:15,100
+zur Platine.
+
+101
+00:13:16,720 --> 00:13:34,960
+Der nächste Schritt ist, den Trimmwiderstand in der Schaltung — diesen 10-kΩ-Widerstand — in die Endposition zu schalten, sodass die Frequenz der Impulse, die die FET-Transistor-Gates steuern,
+
+102
+00:13:34,960 --> 00:13:38,940
+maximal ist — in diesem Fall 190 kHz.
+
+103
+00:13:40,680 --> 00:13:57,600
+Der Arbeitsablauf wird so aussehen: Verbrauch verfolgen und die Spannung an der Lampe verfolgen, und wenn wir den Moment finden, bei dem die Spannung an der Lampe maximal und der Verbrauch
+
+104
+00:13:57,600 --> 00:13:59,160
+minimal ist, hören wir mit dem Justieren auf.
+
+105
+00:13:59,200 --> 00:14:12,800
+Die Kette ist zusammengebaut, jetzt sollten wir diesen Widerstand, der für die Impulsdauer zuständig ist, in die Position schalten, in der die Dauer der Steuerimpulse an den Schaltern maximal sein wird.
+
+106
+00:14:13,620 --> 00:14:30,780
+Ich habe das vorher gemacht — diesen variablen Widerstand — jetzt lege ich Spannung an den DC-DC-Wandler und sehe, dass die Last mit einem gewissen Glühen aufleuchtete, und die Spannung langsam
+
+107
+00:14:30,780 --> 00:14:31,640
+an ihr wächst.
+
+108
+00:14:31,820 --> 00:14:39,000
+Dieses Wachstum wird eine Weile dauern, weil der Transformator gerade nicht in seinem Modus ist, die Frequenz hoch ist.
+
+109
+00:14:39,920 --> 00:14:47,340
+Und jetzt beobachte die Amperemeter-Anzeige am Eingang und die Spannung an der Last.
+
+110
+00:14:48,240 --> 00:14:52,000
+Wir müssen die maximale Spannung an der Last einstellen.
+
+111
+00:14:54,000 --> 00:15:17,120
+Jetzt senke ich langsam die Frequenz, und hier ging die Frequenz runter, und wir sehen, dass die Spannung bei uns einen Moment hatte, in dem sie auf 200 Volt sprang, aber der Verbrauch beträgt etwa 5 Ampere.
+
+112
+00:15:18,580 --> 00:15:27,920
+Ich suche den Punkt, an dem der Verbrauch sinkt — hier bewegt sich die Amperemeter-Nadel langsam nach links.
+
+113
+00:15:36,930 --> 00:15:39,070
+Hier habe ich einen stabilen Moment erreicht.
+
+114
+00:15:39,550 --> 00:15:47,410
+Der Verbrauch stoppte bei 4,5 Ampere, und die Spannung beträgt etwa 185 Volt.
+
+115
+00:15:47,470 --> 00:15:49,090
+Jetzt schauen wir, ob es einen niedrigeren gibt.
+
+116
+00:15:51,070 --> 00:15:55,150
+Es gibt einen Moment, wo es für uns springt.
+
+117
+00:15:56,570 --> 00:16:01,370
+Ein bisschen erhöhen, der Verbrauch fällt und der Ausgang fällt.
+
+118
+00:16:02,810 --> 00:16:17,490
+Etwas weiter reduzieren, und hier gibt es einen Moment, schmal, wo der minimale Verbrauch weniger als 4,5 Ampere und die Spannung etwa 180 Volt beträgt.
+
+119
+00:16:19,510 --> 00:16:24,690
+Das ist ein Punkt, jetzt schauen wir, ob es einen anderen mit reduzierter Frequenz gibt.
+
+120
+00:16:28,310 --> 00:16:32,690
+Hier war ein guter Modus — 190 Volt.
+
+121
+00:16:33,490 --> 00:16:37,020
+Jetzt geh tiefer.
+
+122
+00:16:40,120 --> 00:16:42,020
+Hier wird der zweite Punkt sein.
+
+123
+00:16:43,260 --> 00:16:54,840
+Achte darauf — 190 Volt und Verbrauch weniger als 4,5 Ampere, irgendwo um 4,2 Ampere.
+
+124
+00:16:55,460 --> 00:16:58,480
+Das wird höchstwahrscheinlich unser Arbeitspunkt sein.
+
+125
+00:16:58,620 --> 00:17:10,300
+Aber ich habe solche Tests vorher gemacht, und für diesen Kern mit drei Lagen ist diese Frequenz 55 kHz.
+
+126
+00:17:10,640 --> 00:17:14,020
+Die Frequenz können wir uns mit Hilfe eines Oszilloskops ansehen.
+
+127
+00:17:14,980 --> 00:17:17,580
+Ich schließe das Gerät an, und wir werden das sehen.
+
+128
+00:17:17,620 --> 00:17:18,460
+Jetzt schau.
+
+129
+00:17:18,960 --> 00:17:26,960
+Ich gehe weiter runter und beobachte den Arbeitsmodus.
+
+130
+00:17:27,270 --> 00:17:28,160
+Runter,
+
+131
+00:17:33,600 --> 00:17:38,200
+und wir sehen, dass die Spannung einbricht,
+
+132
+00:17:43,780 --> 00:17:47,180
+der Verbrauch bleibt gleich.
+
+133
+00:17:48,000 --> 00:17:51,700
+Tiefer in der Frequenz zu gehen, macht schon keinen Sinn.
+
+134
+00:17:51,800 --> 00:17:56,800
+Ich kehre zur ursprünglichen Position zurück, wo es die maximale Spannung gibt.
+
+135
+00:18:08,170 --> 00:18:09,690
+Hier sind es 185.
+
+136
+00:18:21,680 --> 00:18:23,520
+Etwas übersprungen.
+
+137
+00:18:25,480 --> 00:18:30,180
+Hier ist er, das ist der Arbeitspunkt.
+
+138
+00:18:30,260 --> 00:18:33,980
+Und jetzt messen wir es mit dem Oszilloskop.
+
+139
+00:18:35,600 --> 00:18:40,620
+Ich habe das Oszilloskop angeschlossen, und wir können das Oszillogramm beobachten.
+
+140
+00:18:44,380 --> 00:18:50,140
+In diesem Fall blieb ich bei einer Frequenz von 50 kHz.
+
+141
+00:18:50,940 --> 00:18:56,160
+Das ist der Arbeitsbereich des Kerns — irgendwo 45-60 kHz.
+
+142
+00:18:56,300 --> 00:19:03,420
+Im Durchschnitt bleibe ich bei 55 kHz Systembetrieb.
+
+143
+00:19:04,220 --> 00:19:09,480
+Das wird der normale Arbeitsbereich für den Kern sein.
+
+144
+00:19:11,040 --> 00:19:13,740
+Frequenz leicht erhöhen.
+
+145
+00:19:22,460 --> 00:19:36,940
+Bei dieser Frequenz, schau jetzt, der Verbrauch beträgt 4,2 A und 180 V an der Last.
+
+146
+00:19:40,880 --> 00:19:47,360
+An einer 12-V-Batterie — habe etwas Strom abbekommen.
+
+147
+00:19:47,780 --> 00:19:53,940
+Passiert — das heiße Ende, nicht isoliert, beißt dich.
+
+148
+00:20:01,190 --> 00:20:03,750
+Hier haben wir Spannungsregelung.
+
+149
+00:20:08,220 --> 00:20:12,580
+Damit endet die Frequenzeinstellung.
+
+150
+00:20:12,780 --> 00:20:18,600
+Jetzt gehen wir zur Abstimmung der Stromrückkopplung über.
+
+151
+00:20:18,940 --> 00:20:23,600
+Für die nächste Abstimmungsphase brauchen wir definitiv das Oszilloskop.
+
+152
+00:20:23,720 --> 00:20:31,100
+Damit verfolgen wir, ob der Stromschutz funktioniert oder nicht und wie korrekt er funktioniert.
+
+153
+00:20:31,900 --> 00:20:43,500
+Die Tastköpfe in diesem Fall — zwei Kanäle werden verwendet — habe ich an diesen Stellen angeschlossen, die das Steuersignal an die Treiber senden, Punkt 1 und 2.
+
+154
+00:20:45,180 --> 00:20:51,540
+Ich starte das System, ohne dem Leistungsmodul Spannung zuzuführen.
+
+155
+00:20:53,180 --> 00:20:59,580
+Wir sehen das Oszillogramm der Systemarbeit.
+
+156
+00:21:00,360 --> 00:21:14,120
+Und jetzt reduziere ich die Arbeitsdauer auf eine Position knapp unter der Hälfte.
+
+157
+00:21:14,580 --> 00:21:22,880
+Als Nächstes brauchen wir eine ordentliche Last mit kleinem ohmschen Widerstand — zum Beispiel eine 300-W-Lampe.
+
+158
+00:21:23,600 --> 00:21:25,260
+Und jetzt, was wir machen.
+
+159
+00:21:26,280 --> 00:21:37,640
+Den gewünschten Verbrauchsstrom verfolgend, bei dem wir am Amperemeter aufhören möchten, bringe ich die Amperemeter-Anzeige etwas über diesen Punkt.
+
+160
+00:21:37,780 --> 00:21:45,660
+In diesem Fall berechne ich, dass ich maximalen Verbrauch von 20 A haben werde, vielleicht etwas höher.
+
+161
+00:21:46,340 --> 00:21:57,640
+Für eine 12-V-Batterie ist das schon ein ordentlicher Verbrauch, und höher zu gehen macht keinen Sinn — sonst entlädt sich die Batterie sehr schnell.
+
+162
+00:21:58,680 --> 00:22:00,720
+Für meine Bedürfnisse ist das reichlich.
+
+163
+00:22:01,480 --> 00:22:04,260
+Die Last schalten wir zwischen diese Anschlüsse.
+
+164
+00:22:04,560 --> 00:22:12,240
+Erster Anschluss des Transformators und letzter, um maximale Last zu geben, die möglich ist.
+
+165
+00:22:13,080 --> 00:22:18,580
+Hier ist jetzt die Dauer, und ich schließe kurz die Lampe an.
+
+166
+00:22:19,920 --> 00:22:20,780
+Ah, Spannung.
+
+167
+00:22:20,960 --> 00:22:24,740
+Spannung kann jetzt an das Leistungsmodul angelegt werden.
+
+168
+00:22:24,900 --> 00:22:25,900
+Spannung anlegen.
+
+169
+00:22:27,300 --> 00:22:29,360
+Und jetzt einschalten.
+
+170
+00:22:30,700 --> 00:22:32,500
+Ja, Spannung angelegt.
+
+171
+00:22:35,160 --> 00:22:40,460
+Wir sehen am Amperemeter 11 A Verbrauch.
+
+172
+00:22:41,640 --> 00:22:44,160
+Es gibt eine Entladung.
+
+173
+00:22:44,860 --> 00:22:48,760
+Die Dauer der Steuerimpulse etwas erhöhen.
+
+174
+00:22:55,520 --> 00:22:56,920
+14.
+
+175
+00:23:00,200 --> 00:23:01,780
+Mehr hinzufügen.
+
+176
+00:23:06,790 --> 00:23:07,630
+19.
+
+177
+00:23:12,090 --> 00:23:12,890
+Mehr.
+
+178
+00:23:21,620 --> 00:23:25,140
+Schon über 30, viel.
+
+179
+00:23:27,080 --> 00:23:33,220
+Der Wandler kann natürlich in diesem Modus und mehr arbeiten, aber dafür bräuchte er Kühlluft.
+
+180
+00:23:34,100 --> 00:23:37,320
+Ich wollte, dass das System speziell ohne Kühlung arbeitet.
+
+181
+00:23:39,020 --> 00:23:41,120
+21 A im Maximum.
+
+182
+00:23:41,900 --> 00:23:43,480
+Ungefähr was benötigt wird.
+
+183
+00:23:44,500 --> 00:23:53,300
+Jetzt, wo es so abgestimmt ist, können wir diese Kontakte öffnen.
+
+184
+00:23:53,640 --> 00:23:56,660
+Im Moment sind sie geschlossen.
+
+185
+00:23:57,060 --> 00:24:00,780
+Und hier wählen wir einen Widerstand aus.
+
+186
+00:24:01,240 --> 00:24:05,080
+Er wird an diesem Punkt angeschlossen.
+
+187
+00:24:05,140 --> 00:24:11,460
+Und dieser Widerstand, er ist markiert, bestimmt den endgültigen Auslösestrom des Stromschutzes.
+
+188
+00:24:12,460 --> 00:24:18,340
+Das heißt, wir müssen diesen Schutz etwas über 20 A einstellen.
+
+189
+00:24:20,660 --> 00:24:27,580
+Jetzt beginne ich den Widerstand auszuwählen, ausgehend von etwa 10 Ω.
+
+190
+00:24:27,800 --> 00:24:35,240
+10 Ω einlöten und schauen, bei welcher Stromstärke der Stromschutz auslöst.
+
+191
+00:24:36,220 --> 00:24:38,580
+Also, ich habe einen 10-Ω-Widerstand eingelötet.
+
+192
+00:24:38,740 --> 00:24:42,880
+Ich empfehle dir, ordentlich zu löten, damit der Kontakt sehr gut ist.
+
+193
+00:24:43,500 --> 00:24:47,540
+Und jetzt schließe den Transformator-Ausgang kurz.
+
+194
+00:24:48,960 --> 00:24:52,640
+Wir sehen, beobachten die Änderungen der Dauer.
+
+195
+00:24:53,480 --> 00:24:59,660
+Die Dauer der Steuerimpulse, wenn Last angeschlossen ist, reduziert sich.
+
+196
+00:24:59,820 --> 00:25:06,740
+Das heißt, das System fängt selbstbewusst und der Stromschutz löst aus.
+
+197
+00:25:06,900 --> 00:25:16,100
+Jetzt kann ich maximale Dauer des Steuersignals hinzufügen und den Stromschutz testen.
+
+198
+00:25:17,780 --> 00:25:20,620
+Hier sehen wir 10 A.
+
+199
+00:25:21,060 --> 00:25:23,960
+Achte auf das Amperemeter.
+
+200
+00:25:26,980 --> 00:25:29,100
+Jetzt prüfe ich bei Kurzschluss.
+
+201
+00:25:30,320 --> 00:25:32,960
+Bei Kurzschluss etwas über 10 A.
+
+202
+00:25:33,940 --> 00:25:42,980
+Der Schutz arbeitet schon — wir können selbstbewusst sagen, dass die Windungszahl des Transformators richtig gewählt wurde.
+
+203
+00:25:45,880 --> 00:25:53,860
+Jetzt ist die Aufgabe, den Verbrauch bei Auslösung des Stromschutzes auf 20 A zu bringen.
+
+204
+00:25:54,380 --> 00:25:58,280
+Dafür — diesen Widerstand, den ich eingelötet habe —
+
+205
+00:25:58,640 --> 00:26:07,100
+reduzieren wir gleichmäßig seinen Wert in Ohm, bis wir auf diesen Punkt kommen.
+
+206
+00:26:07,780 --> 00:26:13,520
+Die Dauer der Steuerimpulse kann inzwischen auf Maximum gehalten werden.
+
+207
+00:26:13,920 --> 00:26:17,580
+Nächster Test für uns — 8,5 Ω.
+
+208
+00:26:18,840 --> 00:26:20,080
+Spannung anlegen.
+
+209
+00:26:21,220 --> 00:26:26,660
+Wir sehen die Dauer der Impulse auf Maximum und die Last.
+
+210
+00:26:27,500 --> 00:26:29,860
+Beobachte das Amperemeter.
+
+211
+00:26:31,620 --> 00:26:33,440
+11,5 A.
+
+212
+00:26:35,360 --> 00:26:45,280
+Beachte nicht, dass die 300-W-Lampe schwach leuchtet, weil das der letzte Anschluss ist, er ist hochspannig.
+
+213
+00:26:45,460 --> 00:26:49,180
+Du siehst selbst, welche Spannung sich hier streckt.
+
+214
+00:26:50,400 --> 00:26:55,100
+Die Lampe wird bei reduzierter Anzahl von Abgriffen normal brennen.
+
+215
+00:26:58,980 --> 00:27:01,680
+Kurzschluss — 11,5 A.
+
+216
+00:27:01,920 --> 00:27:04,440
+Wir können den Widerstandswert weiter reduzieren.
+
+217
+00:27:05,560 --> 00:27:09,240
+Nächster Widerstand — 4,6 Ω.
+
+218
+00:27:10,420 --> 00:27:15,200
+Spannung anlegen und unter Last testen.
+
+219
+00:27:17,920 --> 00:27:21,140
+18 A ist der Auslösepunkt.
+
+220
+00:27:22,780 --> 00:27:29,900
+Wie du siehst, an diesem Hochspannungs-Abgriff nimmt das Lampenglühen zu.
+
+221
+00:27:31,560 --> 00:27:35,360
+Jetzt teste ich über die Lampe, mache einen Kurzschluss.
+
+222
+00:27:36,460 --> 00:27:39,100
+Dieselben 18 A am Gehäuse.
+
+223
+00:27:42,200 --> 00:27:50,040
+Wir sind irgendwo nah dran, und jetzt müssen wir um 0,1 Ω reduzieren.
+
+224
+00:27:50,860 --> 00:27:51,980
+Das mache ich.
+
+225
+00:27:51,980 --> 00:27:58,820
+Um das Video nicht in die Länge zu ziehen, zeige ich nicht das ganze Auswahlsystem in 0,1-Ω-Schritten.
+
+226
+00:27:59,700 --> 00:28:04,100
+Ich habe es so ausgewählt — jetzt sichtbar, was für eine Girlande aus Widerständen.
+
+227
+00:28:05,040 --> 00:28:09,100
+Sein Gesamtwiderstand beträgt 4,1 Ω.
+
+228
+00:28:11,060 --> 00:28:14,680
+Jetzt habe ich erreicht, was ich brauche.
+
+229
+00:28:15,280 --> 00:28:21,080
+Spannung anlegen und auf Last.
+
+230
+00:28:22,500 --> 00:28:23,860
+20 A.
+
+231
+00:28:25,060 --> 00:28:27,460
+Und Prüfung bei Kurzschluss.
+
+232
+00:28:28,820 --> 00:28:31,100
+Kurzschluss auch 20 A.
+
+233
+00:28:31,740 --> 00:28:40,020
+Auf dem Oszilloskop ist auch gut sichtbar, dass der Stromschutz auslöst und die Dauer der Steuerimpulse reduziert.
+
+234
+00:28:40,740 --> 00:28:41,540
+Alles ausgezeichnet.
+
+235
+00:28:43,300 --> 00:28:54,660
+Ich möchte sagen, dass ein solcher Arbeitsmodus, wenn ein Kurzschluss auftritt — das ist der komplexeste Modus für den Schalterbetrieb, in einem solchen Strombegrenzungsmodus.
+
+236
+00:28:56,020 --> 00:29:01,840
+Und in diesem Modus erhitzt sich der Kühlkörper am stärksten.
+
+237
+00:29:04,070 --> 00:29:20,520
+Wenn du zum Beispiel in einem solchen Modus arbeitest, manuell reduzierst, dann wird hier die Erwärmung sein, hier stelle ich es ein, und in einem solchen Modus wird die Erwärmung minimal sein.
+
+238
+00:29:21,240 --> 00:29:31,240
+Und im Modus, wenn die Dauer auf Maximum ist — speziell wenn das System den Stromschutz auslöst — in diesem Moment wird die Erwärmung des Kühlkörpers genau hier sein.
+
+239
+00:29:31,360 --> 00:29:33,040
+Aber die Erwärmung sollte nicht stark sein.
+
+240
+00:29:34,300 --> 00:29:42,720
+Ungefähr bei... jetzt schließe ich das System kurz, schau.
+
+241
+00:29:43,600 --> 00:29:45,840
+Die Batterie wird natürlich schon leer.
+
+242
+00:29:49,760 --> 00:29:50,740
+Schau.
+
+243
+00:29:51,960 --> 00:29:57,440
+Es gibt Wärmefreisetzung, in der Größenordnung von 50 Grad.
+
+244
+00:29:58,600 --> 00:30:06,000
+Dieser Wandler ist nicht für den Betrieb in einem solchen harten Modus geplant, schon gar nicht ohne Kühlung.
+
+245
+00:30:06,800 --> 00:30:09,080
+Also alles normal.
+
+246
+00:30:09,900 --> 00:30:18,500
+Die nächste Phase ist, dass wir die Auslösung des Stromschutzes abstimmen müssen.
+
+247
+00:30:18,660 --> 00:30:22,620
+Wir haben das Experiment durchgeführt, diesen Widerstand hier ausgewählt.
+
+248
+00:30:23,520 --> 00:30:34,920
+Dazu fügen wir einen variablen Widerstand hinzu, sodass wir eine gleichmäßige Auslöseregelung von 0,10 A bis 20 A haben.
+
+249
+00:30:35,200 --> 00:30:37,260
+Jede Regelung kann eingestellt werden.
+
+250
+00:30:37,260 --> 00:30:44,680
+Ich habe mich entschieden, bei dieser Schaltungslösung für die Stromschutzregelung zu bleiben.
+
+251
+00:30:45,380 --> 00:30:50,380
+Sie ist auf zwei in Reihe geschalteten Widerständen aufgebaut.
+
+252
+00:30:51,460 --> 00:30:56,600
+Und parallel zu einem von ihnen ist ein variabler Widerstand angeschlossen.
+
+253
+00:30:57,400 --> 00:31:07,220
+So haben wir, falls der Schleifer-Mittelpunkt ausfällt, einen Stromschutz, der mit Hilfe dieser beiden Widerstände funktionsfähig bleibt.
+
+254
+00:31:07,440 --> 00:31:19,340
+Und wir riskieren nicht, in eine solche Situation zu geraten, dass bei Verschleiß, wenn wir diesen Punkt einfach hier angeschlossen hätten, unser System irgendwann ohne Stromschutz wäre.
+
+255
+00:31:19,400 --> 00:31:29,740
+Wenn du diesen Widerstand entfernst, arbeitet das System im Modus mit dem kleinsten Strom durch die Leistungsschalter.
+
+256
+00:31:30,100 --> 00:31:32,960
+Es liefert die kleinste Dauer für deren Öffnung.
+
+257
+00:31:34,200 --> 00:31:35,920
+Jetzt zeige ich, wie das funktioniert.
+
+258
+00:31:36,660 --> 00:31:38,360
+Ungefähr ausgewählte Werte.
+
+259
+00:31:38,640 --> 00:31:40,320
+Weiter werden sie leicht geändert.
+
+260
+00:31:41,120 --> 00:31:41,940
+Ankündigung.
+
+261
+00:31:41,980 --> 00:31:47,240
+0,7 Ω, 120 Ω und 1 kΩ — dieser Widerstand.
+
+262
+00:31:48,100 --> 00:31:49,300
+Spannung anlegen.
+
+263
+00:31:52,200 --> 00:32:01,580
+Die Regelung beginnt bei 1 Ampere und geht bis 19 Ampere.
+
+264
+00:32:02,220 --> 00:32:03,900
+Mit dem Schleifer hinzufügen.
+
+265
+00:32:08,460 --> 00:32:10,520
+Langsam bewegend.
+
+266
+00:32:11,400 --> 00:32:15,500
+Schau, wie der Stromschutz jetzt funktioniert.
+
+267
+00:32:16,880 --> 00:32:24,300
+Zum Beispiel auf 2 Ampere Verbrauch einstellen.
+
+268
+00:32:25,000 --> 00:32:29,740
+Weiter — 5 Ampere Verbrauch.
+
+269
+00:32:30,320 --> 00:32:34,340
+Schau die Dauer der Steuerimpulse.
+
+270
+00:32:38,910 --> 00:32:47,310
+Und es ist nicht mehr wichtig, wie wir die Ausgangsspannung steuern — wir können sie nur reduzieren.
+
+271
+00:32:47,590 --> 00:32:54,750
+Aber bei Erhöhung auf Maximum haben wir unsere gewünschte, mit diesem Schleifer eingestellte.
+
+272
+00:32:55,650 --> 00:32:59,790
+Sieht so aus, als wäre der Widerstand etwas minderwertig ausgefallen.
+
+273
+00:32:59,950 --> 00:33:01,610
+Es gibt scharfe Sprünge.
+
+274
+00:33:02,130 --> 00:33:03,310
+Muss ersetzt werden.
+
+275
+00:33:03,990 --> 00:33:05,310
+Aber das ist alles behebbar.
+
+276
+00:33:05,530 --> 00:33:06,910
+Jetzt auf Maximum bringen.
+
+277
+00:33:08,330 --> 00:33:09,830
+18 Ampere.
+
+278
+00:33:11,470 --> 00:33:15,410
+Ja, der Widerstand muss gewechselt werden, aber die Regelung ist vorhanden.
+
+279
+00:33:18,730 --> 00:33:21,870
+Also können wir bei diesem Schema bleiben.
+
+280
+00:33:24,930 --> 00:33:32,110
+An diesem Punkt können wir die Abstimmung des Stromschutzes als abgeschlossen betrachten.
+
+281
+00:33:33,110 --> 00:33:37,330
+Das System bewältigt erfolgreich über die Rückkopplung.
+
+282
+00:33:38,490 --> 00:33:39,710
+Bis zu den nächsten Videos.
+
+283
+00:33:39,970 --> 00:33:43,250
+Erfolgreiche Experimente an alle, und alles Gute.
