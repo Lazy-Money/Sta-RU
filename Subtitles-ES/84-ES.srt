@@ -1,0 +1,463 @@
+1
+00:00:00,000 --> 00:00:01,440
+Hola a todos.
+
+2
+00:00:02,000 --> 00:00:11,940
+En este video examinaremos la parte de potencia de un esquema de puente completo para oscilar el inductor del transformador Tesla en modo de resonancia.
+
+3
+00:00:12,960 --> 00:00:18,540
+Empezamos con los elementos que controlan el transformador para nosotros.
+
+4
+00:00:19,020 --> 00:00:21,980
+Estos son dos drivers TC4420.
+
+5
+00:00:22,340 --> 00:00:28,760
+Estos drivers pueden trabajar hasta 6 A en pulso, así que nos convienen bien.
+
+6
+00:00:30,000 --> 00:00:34,600
+Y más adelante controlarán las compuertas no solo de transistores IRF840.
+
+7
+00:00:35,380 --> 00:00:55,160
+Aquí puedes poner en lugar de estos transistores cualquier otro transistor FET o IGBT con tensión no menor a 600 V, bueno, y amperajes correspondientes, dependiendo de qué tareas quieras perseguir más adelante.
+
+8
+00:00:55,160 --> 00:01:12,080
+También si vas a cambiar los transistores a otros, entonces solo necesitarás elegir las resistencias limitadoras que van al lado de la compuerta del transistor FET.
+
+9
+00:01:13,060 --> 00:01:21,300
+Cuanto más grande sea la capacidad de compuerta del transistor elegido por ti, menor será esta resistencia.
+
+10
+00:01:21,300 --> 00:01:31,740
+En consecuencia, la carga en estos dos drivers será mayor y el sistema de control en última instancia tendrá mayor consumo.
+
+11
+00:01:32,100 --> 00:01:42,800
+El propio transformador está hecho sobre ferrita con permeabilidad 2500 en forma de núcleo tipo olla de dos mitades.
+
+12
+00:01:43,560 --> 00:01:45,400
+Las dimensiones se muestran en la imagen.
+
+13
+00:01:45,400 --> 00:01:49,940
+Así se ve el núcleo en realidad.
+
+14
+00:01:50,300 --> 00:02:04,440
+Dos mitades de pequeñas dimensiones que después de colocar el hilo adentro se fijan con la ayuda de una conexión roscada, apretando directamente en la placa.
+
+15
+00:02:06,300 --> 00:02:14,540
+En lugar de este núcleo, si no encuentras tal, puedes usar un anillo de ferrita con la misma permeabilidad.
+
+16
+00:02:16,220 --> 00:02:25,800
+El bobinado primario es de 12,5 vueltas para nosotros, y 4 bobinados secundarios de 11,5 vueltas cada uno.
+
+17
+00:02:27,320 --> 00:02:40,720
+El hilo por longitud que fue a este bobinado, tenemos 5 bobinados, en última instancia fueron 60 cm de hilo, contando estos terminales.
+
+18
+00:02:41,640 --> 00:02:49,800
+Cómo se bobina el hilo: reunido en un haz de 5 hilos paralelos y bobinado simultáneamente.
+
+19
+00:02:50,380 --> 00:02:58,540
+Después del bobinado, elige uno de los conductores y haz una vuelta adicional más.
+
+20
+00:02:59,220 --> 00:03:05,660
+Es decir, este será más adelante nuestro bobinado primario que tiene 12,5 vueltas.
+
+21
+00:03:07,120 --> 00:03:15,160
+El bobinado primario se oscila por nuestros drivers a través del transformador de aislamiento.
+
+22
+00:03:15,380 --> 00:03:18,960
+Su capacidad es 1,5 µF a 250 voltios.
+
+23
+00:03:19,000 --> 00:03:26,840
+Lo marqué como un capacitor de película de las dimensiones correspondientes en el físico.
+
+24
+00:03:27,020 --> 00:03:28,980
+También lo verás más adelante.
+
+25
+00:03:28,980 --> 00:03:34,780
+En las salidas del driver hay dos diodos con inclusión correspondiente.
+
+26
+00:03:35,700 --> 00:03:52,340
+Según la potencia del driver, se llaman así en el esquema para suavizar los picos que se forman durante el trabajo bajo carga del bobinado primario del transformador de pulsos.
+
+27
+00:03:52,340 --> 00:03:59,460
+Los pulsos que se suministran para controlar los drivers tienen un desplazamiento de 180 grados.
+
+28
+00:04:00,420 --> 00:04:04,180
+Y a través del bobinado se dirigen en contraposición entre sí.
+
+29
+00:04:04,300 --> 00:04:14,020
+Así que en el bobinado primario y secundario veremos una señal bipolar.
+
+30
+00:04:15,440 --> 00:04:26,400
+Controlando tal señal a través del transformador de pulsos, proporcionamos la operación correspondiente del esquema de puente del inversor.
+
+31
+00:04:27,140 --> 00:04:31,200
+Resulta que nuestros transistores trabajan en diagonal en pares.
+
+32
+00:04:32,680 --> 00:04:38,260
+En el esquema se ve que marqué el inicio de los bobinados con puntos.
+
+33
+00:04:39,080 --> 00:04:42,160
+Durante el ensamblaje observa este momento.
+
+34
+00:04:42,280 --> 00:04:47,180
+Es muy importante que tus transistores específicamente trabajen en pares en diagonal.
+
+35
+00:04:47,320 --> 00:04:48,480
+Por ejemplo, mira.
+
+36
+00:04:49,000 --> 00:04:55,900
+El punto al inicio del bobinado va a la compuerta de uno de los interruptores.
+
+37
+00:04:57,080 --> 00:05:09,100
+En consecuencia, la compuerta del segundo interruptor en diagonal, si recorres el esquema, también está conectada a través de una resistencia limitadora de corriente al inicio del bobinado.
+
+38
+00:05:09,740 --> 00:05:15,260
+El otro par de estas compuertas de transistor se conecta a los extremos de los bobinados.
+
+39
+00:05:17,060 --> 00:05:19,820
+Sigue este momento.
+
+40
+00:05:20,680 --> 00:05:26,100
+El transistor IRF840 está hecho en una caja para montaje pasante.
+
+41
+00:05:26,760 --> 00:05:28,020
+Tiene tres terminales.
+
+42
+00:05:28,020 --> 00:05:32,000
+Los terminales se cuentan de izquierda a derecha correspondientemente.
+
+43
+00:05:32,120 --> 00:05:34,220
+Este será el primer terminal, segundo, y tercero.
+
+44
+00:05:34,600 --> 00:05:37,360
+El primer terminal en el esquema es la compuerta.
+
+45
+00:05:37,900 --> 00:05:38,920
+Este punto aquí.
+
+46
+00:05:39,520 --> 00:05:41,300
+El segundo terminal es el drenaje.
+
+47
+00:05:42,000 --> 00:05:44,280
+Este punto aquí en el transistor.
+
+48
+00:05:44,740 --> 00:05:46,420
+Y el tercer terminal es la fuente.
+
+49
+00:05:46,580 --> 00:05:50,800
+En consecuencia, este terminal en el esquema.
+
+50
+00:05:51,800 --> 00:05:57,540
+Paralelo al transistor hay un diodo MUR460.
+
+51
+00:05:59,700 --> 00:06:02,940
+Está hecho en una caja cilíndrica estándar.
+
+52
+00:06:04,280 --> 00:06:12,820
+Sirve para cortocircuitar los picos OIDS durante el trabajo del inversor en carga inductiva.
+
+53
+00:06:13,820 --> 00:06:25,480
+Bajo otros transistores, si usas más potentes, recomiendo instalar diodos MUR860 ya en tal caja.
+
+54
+00:06:25,640 --> 00:06:30,040
+Son de 8 amperios y requieren instalación en un disipador.
+
+55
+00:06:30,220 --> 00:06:35,940
+Es decir, instalados en el mismo disipador donde está ubicado el propio interruptor de potencia.
+
+56
+00:06:36,360 --> 00:06:38,240
+En proximidad inmediata a él.
+
+57
+00:06:38,840 --> 00:06:45,260
+Estos elementos, zeners conectados en contraposición a 15 voltios.
+
+58
+00:06:47,380 --> 00:06:50,600
+Resistencia de descarga 1,2 kOhm.
+
+59
+00:06:50,820 --> 00:06:58,560
+Y resistencia limitadora de corriente instalada en la placa en proximidad inmediata a la compuerta del interruptor FET.
+
+60
+00:06:58,780 --> 00:07:06,100
+El resistor de 1,2 kOhm sirve para descargar la capacidad de compuerta del interruptor FET.
+
+61
+00:07:06,100 --> 00:07:18,260
+Los zeners conectados en contraposición sirven para cortar picos que se forman durante la conmutación de pulsos del transformador de aislamiento de control.
+
+62
+00:07:18,780 --> 00:07:26,060
+La alimentación a la parte de potencia del puente se suministra en estos puntos, marcados 1, 2.
+
+63
+00:07:26,060 --> 00:07:35,440
+Y aquí también se conecta un capacitor electrolítico acumulador de suavizado de 470 µF a 450 V.
+
+64
+00:07:36,100 --> 00:07:41,600
+La tensión máxima que recomiendo suministrar en estos puntos es de hasta 400 V.
+
+65
+00:07:42,920 --> 00:07:54,500
+Este sistema trabaja exitosamente con 150 W de consumo, eso es del orden de 300 V, medio amperio por DC.
+
+66
+00:07:55,020 --> 00:08:00,520
+El sistema no se sobrecalienta, la temperatura del disipador está en el área de 45 grados.
+
+67
+00:08:00,520 --> 00:08:09,640
+En el esquema se ve que instalé un capacitor en serie con el inductor del transformador Tesla.
+
+68
+00:08:10,440 --> 00:08:14,700
+Está escrito que necesita ser elegido en resonancia.
+
+69
+00:08:15,160 --> 00:08:22,640
+Elegí este circuito oscilante según la frecuencia portadora del transformador Tesla principal.
+
+70
+00:08:22,640 --> 00:08:27,980
+También puedes usar este convertidor sin este capacitor.
+
+71
+00:08:28,540 --> 00:08:35,280
+Entonces el oscilamiento del transformador Tesla se hará específicamente con tales pulsos bipolares.
+
+72
+00:08:36,780 --> 00:08:45,460
+Si se usa un capacitor aquí en el esquema, podemos examinar la conexión del inductor.
+
+73
+00:08:46,460 --> 00:08:53,140
+Aquí al capacitor el inductor se conecta con su punto superior.
+
+74
+00:08:53,960 --> 00:08:59,180
+Aquí, a este par de transistores, el inductor se conecta con el punto inferior.
+
+75
+00:08:59,740 --> 00:09:12,880
+El punto superior del inductor, si está bobinado cilíndricamente alrededor del transformador Tesla, para ti será el punto dirigido hacia el extremo caliente del transformador Tesla.
+
+76
+00:09:12,880 --> 00:09:15,360
+Y el punto inferior, en consecuencia, hacia el extremo frío.
+
+77
+00:09:17,820 --> 00:09:31,100
+La compatibilidad de este esquema es totalmente compatible con el esquema anterior del convertidor medio puente que di antes.
+
+78
+00:09:32,100 --> 00:09:35,920
+¿Cómo conectarlo en lugar de esta parte de potencia?
+
+79
+00:09:36,920 --> 00:09:51,180
+Estas entradas del driver TC4420 se conectan a través de un resistor de 16 Ohm, en consecuencia, estos puntos después del chip TC4093.
+
+80
+00:09:51,840 --> 00:09:54,180
+Pin 11 y pin 10.
+
+81
+00:09:55,040 --> 00:10:05,100
+La alimentación también se hace desde un convertidor DC-DC 12 a 400 V, o un bloque de laboratorio, quien tenga qué.
+
+82
+00:10:05,920 --> 00:10:09,820
+Y este es un convertidor DC-DC separado, también el mismo que en este esquema.
+
+83
+00:10:09,880 --> 00:10:12,860
+Esta es la alimentación para la parte lógica.
+
+84
+00:10:13,660 --> 00:10:23,700
+Y estos 16 V vienen para alimentar los drivers que oscilan el bobinado primario del transformador de pulsos.
+
+85
+00:10:24,920 --> 00:10:28,160
+En general el esquema es bastante simple, confiable.
+
+86
+00:10:28,720 --> 00:10:37,800
+Principalmente excluyó el problema con el driver IR2110 e IR2113.
+
+87
+00:10:38,780 --> 00:10:49,660
+La temperatura del driver necesita ser vigilada muy claramente en ese esquema, ya que el esquema entero fallaría por sobrecalentamiento.
+
+88
+00:10:50,820 --> 00:11:00,600
+La gente tenía tales momentos, así que se decidió desarrollar un esquema más que esté libre de estas deficiencias.
+
+89
+00:11:02,000 --> 00:11:15,400
+El esquema medio puente tiene el momento de que divide la tensión de alimentación a la mitad, y el esquema de puente completo no sufre de tal deficiencia.
+
+90
+00:11:15,620 --> 00:11:24,360
+Es decir, toda la tensión aplicada en estos puntos se conmuta al bobinado primario del transformador Tesla.
+
+91
+00:11:24,960 --> 00:11:32,680
+Si este esquema no está conectado a un transformador Tesla, puedes usarlo exitosamente para otros propósitos.
+
+92
+00:11:32,920 --> 00:11:40,780
+Por ejemplo, deshazte de este capacitor, pon un inductor correspondiente aquí y haz algún tipo de convertidor.
+
+93
+00:11:42,320 --> 00:11:50,800
+Es decir, puedes suministrar exitosamente tensión de red rectificada aquí y crear convertidores reductores o elevadores.
+
+94
+00:11:52,340 --> 00:11:54,020
+Frente a ti está la placa del dispositivo.
+
+95
+00:11:54,020 --> 00:12:02,500
+Ves los drivers, transformador de control, y capacitor de película.
+
+96
+00:12:03,600 --> 00:12:09,040
+Todos los componentes de compuerta están ubicados directamente en los terminales del transistor.
+
+97
+00:12:09,220 --> 00:12:13,240
+Los propios transistores están ubicados en el disipador bajo la placa.
+
+98
+00:12:13,900 --> 00:12:23,620
+Los componentes de potencia del transistor también están ubicados en forma de montaje superficial en las patas del transistor.
+
+99
+00:12:24,020 --> 00:12:37,140
+Y estos puntos sacados son los lugares donde se conectará más adelante el inductor del transformador Tesla o cualquier otro bobinado primario de un convertidor de potencia.
+
+100
+00:12:38,500 --> 00:12:41,460
+Como ves, la placa es bastante simple.
+
+101
+00:12:42,700 --> 00:12:53,760
+La dificultad principal aquí es el momento de que los terminales del transformador de control deben conectarse correctamente.
+
+102
+00:12:54,140 --> 00:13:01,760
+Una vez más recordaré, se conectan en diagonal según el esquema de control.
+
+103
+00:13:02,300 --> 00:13:04,400
+Así se ve el módulo de potencia PUENTE.
+
+104
+00:13:05,060 --> 00:13:07,340
+Cuatro transistores IRF840.
+
+105
+00:13:07,340 --> 00:13:18,020
+Paralelo a cada transistor en sus salidas de drenaje y fuente hay un diodo MUR460.
+
+106
+00:13:27,920 --> 00:13:33,480
+Aquí adicionalmente puse mangas protegiendo los terminales.
+
+107
+00:13:38,050 --> 00:13:43,650
+Ahora puedes ver cómo están colocados los bobinados dentro del transformador de control.
+
+108
+00:13:43,650 --> 00:13:49,470
+Como ves, ocupan todo el volumen dentro del núcleo tipo olla.
+
+109
+00:13:50,330 --> 00:14:01,010
+Para colocar cinco conductores en este núcleo, elegí hilo con diámetro exterior por aislamiento de 0,7 mm.
+
+110
+00:14:01,830 --> 00:14:03,030
+El aislamiento es fluoroplástico.
+
+111
+00:14:03,490 --> 00:14:07,430
+Estos conductores están hechos con calidad de cobre puro.
+
+112
+00:14:07,710 --> 00:14:15,690
+Además, el aislamiento de fluoroplástico tiene excelentes propiedades que previenen la ruptura de la tensión de alta tensión.
+
+113
+00:14:16,310 --> 00:14:28,920
+Esto es lo que necesitamos, ya que se aplican grandes potenciales de tensión de alimentación a este inversor en nuestra construcción.
+
+114
+00:14:29,890 --> 00:14:38,490
+Y si usas conductores de baja calidad, arriesgamos obtener un cortocircuito dentro del transformador de control.
+
+115
+00:14:39,250 --> 00:14:43,950
+En esto se agotan todas las sutilezas con este esquema.
+
+116
+00:14:44,750 --> 00:14:50,770
+Buen humor a todos, lo mejor, y experimentos excelentes.

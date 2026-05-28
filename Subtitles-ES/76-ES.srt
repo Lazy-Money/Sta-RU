@@ -1,0 +1,1063 @@
+1
+00:00:00,540 --> 00:00:01,920
+Hola a todos.
+
+2
+00:00:02,600 --> 00:00:06,460
+Sigo trabajando en la construcción de la fuente de laboratorio.
+
+3
+00:00:06,980 --> 00:00:10,640
+Aquí frente a ti está parte de su esquema.
+
+4
+00:00:11,300 --> 00:00:16,180
+Lo que ya hemos logrado materializar, por así decirlo.
+
+5
+00:00:16,800 --> 00:00:20,800
+Y esta parte la probaremos hoy.
+
+6
+00:00:21,800 --> 00:00:24,140
+Un vistazo rápido al esquema.
+
+7
+00:00:24,140 --> 00:00:30,500
+El generador maestro está armado con un chip UC3825N.
+
+8
+00:00:31,020 --> 00:00:38,260
+El controlador PWM también está armado en él, con realimentación de corriente y tensión.
+
+9
+00:00:38,680 --> 00:00:45,500
+Ahora puedes ver que la realimentación de corriente todavía no está agregada.
+
+10
+00:00:46,080 --> 00:00:48,400
+Por eso probaremos el sistema sin ella.
+
+11
+00:00:48,400 --> 00:00:54,880
+La realimentación de corriente va al pin 9 a través de una resistencia de 1 kΩ.
+
+12
+00:00:55,120 --> 00:01:06,740
+Para que el chip arranque en esta configuración, el pin 9 a través de esta resistencia debe estar conectado al común, al negativo de alimentación.
+
+13
+00:01:08,040 --> 00:01:16,180
+También puedes ver que las salidas del controlador vienen del pin 14 y el pin 11.
+
+14
+00:01:16,180 --> 00:01:24,880
+En el esquema marqué el pin 14 como "1" y el pin 11 como "2" dentro de un círculo.
+
+15
+00:01:25,660 --> 00:01:27,860
+Y ahora podemos seguir el control.
+
+16
+00:01:28,100 --> 00:01:31,340
+El "1" va a este opto-driver.
+
+17
+00:01:31,480 --> 00:01:35,460
+Y también ves que el "1" va a un driver en diagonal.
+
+18
+00:01:36,140 --> 00:01:38,160
+Los interruptores trabajan así también.
+
+19
+00:01:38,380 --> 00:01:40,740
+Es decir, los interruptores trabajan en cruz.
+
+20
+00:01:41,120 --> 00:01:44,500
+Un par y el segundo par.
+
+21
+00:01:44,500 --> 00:01:53,900
+De este modo creamos pulsos de corriente bipolar a través del bobinado primario del transformador de pulsos.
+
+22
+00:01:54,580 --> 00:02:00,500
+También puedes ver alimentación separada para cada uno de los cuatro drivers.
+
+23
+00:02:00,780 --> 00:02:03,180
+Marcada más-menos en el esquema.
+
+24
+00:02:03,840 --> 00:02:07,900
+Y 16 V se aplican en estos puntos.
+
+25
+00:02:08,460 --> 00:02:10,960
+Esta alimentación está galvánicamente aislada.
+
+26
+00:02:10,960 --> 00:02:17,160
+Y la misma alimentación se entrega separadamente al propio controlador PWM.
+
+27
+00:02:18,960 --> 00:02:24,560
+La obtuve de un convertidor DC-DC con 5 salidas.
+
+28
+00:02:25,120 --> 00:02:27,340
+El esquema se puede encontrar en mi canal.
+
+29
+00:02:27,640 --> 00:02:31,080
+Y un video sobre su construcción.
+
+30
+00:02:33,900 --> 00:02:38,260
+La realimentación óptica para nosotros también será por tensión.
+
+31
+00:02:38,260 --> 00:02:41,700
+Aquí puedes ver un optoacoplador PC817.
+
+32
+00:02:43,100 --> 00:02:49,620
+Su salida la dirigí al pin 1.
+
+33
+00:02:49,740 --> 00:02:56,620
+Y se alimenta desde el pin 16 a través de una resistencia limitadora de corriente de 1 kΩ.
+
+34
+00:02:57,440 --> 00:03:09,980
+Este optoacoplador está pensado como sensor para la tensión límite de la fuente, que será 1000 V.
+
+35
+00:03:10,080 --> 00:03:20,540
+A 1000 V en la salida, el convertidor debe entrar en modo de limitación para mantener este potencial.
+
+36
+00:03:20,720 --> 00:03:30,680
+Hasta 1000 V, la regulación de tensión se hará con este potenciómetro de ajuste.
+
+37
+00:03:30,680 --> 00:03:41,580
+También puedes ver que elegí los valores de las resistencias en serie con la resistencia variable.
+
+38
+00:03:41,800 --> 00:03:52,740
+Para que la regulación sea suave en todo el recorrido de la resistencia variable.
+
+39
+00:03:52,920 --> 00:03:55,680
+Lo cual es muy cómodo para la regulación.
+
+40
+00:03:55,680 --> 00:04:09,200
+También los elegí de modo que si el cursor está en la posición extrema izquierda, el chip detiene la generación y la fuente pasa a modo de espera.
+
+41
+00:04:09,280 --> 00:04:20,220
+Puedes ver en el esquema que el controlador PWM se alimenta con el potencial de 16 V aplicado al pin 15 del chip.
+
+42
+00:04:21,110 --> 00:04:28,860
+El pin 13 se alimenta con 12 V, que vienen de un regulador L7812.
+
+43
+00:04:29,580 --> 00:04:39,300
+Esto se hace para aplicar 12 V a los LED de entrada de los opto-drivers.
+
+44
+00:04:40,520 --> 00:04:42,320
+Tensión límite.
+
+45
+00:04:42,720 --> 00:04:47,540
+12 V son de sobra para estos drivers y funcionan de maravilla.
+
+46
+00:04:47,540 --> 00:05:07,740
+Apliqué este potencial a través de una resistencia limitadora de 470 Ω y también una resistencia de 1 kΩ en paralelo con el LED del driver, que excluye disparos falsos del opto-driver en este
+
+47
+00:05:07,740 --> 00:05:08,760
+sistema.
+
+48
+00:05:08,760 --> 00:05:18,760
+Ahora mostraré cómo se ve materializado y luego pasaré a probar y ajustar el bloque.
+
+49
+00:05:19,520 --> 00:05:21,120
+Este es el bloque armado.
+
+50
+00:05:22,920 --> 00:05:24,260
+¿Qué puedes ver aquí?
+
+51
+00:05:24,900 --> 00:05:35,240
+Hice un bus que entrega alimentación y conecta con el resto de los controles del dispositivo.
+
+52
+00:05:35,240 --> 00:05:39,340
+Esta es una unidad separable.
+
+53
+00:05:40,140 --> 00:05:46,360
+Sigue, el convertidor DC-DC con 5 salidas galvánicamente aisladas.
+
+54
+00:05:47,040 --> 00:05:51,200
+4 opto-drivers HCPL3120.
+
+55
+00:05:51,780 --> 00:05:56,540
+El propio chip controlador PWM, UC3825N.
+
+56
+00:05:56,800 --> 00:05:59,900
+Este es nuestro regulador L7812.
+
+57
+00:06:01,820 --> 00:06:07,160
+De los componentes principales de apoyo de los drivers.
+
+58
+00:06:07,500 --> 00:06:10,520
+Estas son cadenas de resistencias.
+
+59
+00:06:11,460 --> 00:06:15,420
+Y aquí se ven resistencias de 1 vatio.
+
+60
+00:06:16,000 --> 00:06:21,340
+Estas cadenas van a la compuerta del FET.
+
+61
+00:06:22,060 --> 00:06:27,920
+También puedes ver paquetes de zeners de 15 V conectados en contraposición aquí.
+
+62
+00:06:27,920 --> 00:06:32,300
+Estas partes están en paralelo con los terminales del transistor.
+
+63
+00:06:33,420 --> 00:06:43,600
+En el esquema puedes ver que fijé uno de los valores de la resistencia limitadora.
+
+64
+00:06:43,760 --> 00:06:46,560
+Es 4,7 Ω en la compuerta.
+
+65
+00:06:47,020 --> 00:06:49,060
+El segundo valor todavía no está marcado.
+
+66
+00:06:50,120 --> 00:06:56,020
+Por defecto tengo la misma resistencia de 4,7 Ω conectada en la placa.
+
+67
+00:06:56,020 --> 00:07:03,000
+En la práctica iré eligiendo, y si hace falta el valor de esta resistencia se reducirá.
+
+68
+00:07:03,740 --> 00:07:09,940
+Para una apertura de mejor calidad de la compuerta del FET en el flanco de subida.
+
+69
+00:07:10,160 --> 00:07:11,740
+Pero de nuevo, solo si hace falta.
+
+70
+00:07:12,320 --> 00:07:21,100
+Esta resistencia es la parte responsable de controlar el potencial de tensión.
+
+71
+00:07:24,500 --> 00:07:31,420
+No hay mucho más en lo que detenerse en detalle aquí.
+
+72
+00:07:32,500 --> 00:07:35,200
+El transformador de pulsos de potencia está conectado.
+
+73
+00:07:38,020 --> 00:07:47,280
+Decidí hacer el bobinado primario con hilo aislado, multifilar de cobre puro.
+
+74
+00:07:48,020 --> 00:07:49,940
+En aislamiento térmicamente estable.
+
+75
+00:07:50,760 --> 00:07:57,960
+7 vueltas, lo cual corresponde a unos 14 V con la batería totalmente cargada.
+
+76
+00:07:58,100 --> 00:08:02,700
+2 V por vuelta del bobinado primario.
+
+77
+00:08:03,060 --> 00:08:04,920
+Así que, todo listo para probar.
+
+78
+00:08:05,080 --> 00:08:10,460
+Ahora hay que ver cómo se controlan los drivers ópticos.
+
+79
+00:08:11,370 --> 00:08:19,300
+Para esto observaremos el trabajo inicial del controlador PWM en estos puntos.
+
+80
+00:08:19,660 --> 00:08:21,140
+Punto 1 y punto 2.
+
+81
+00:08:21,600 --> 00:08:33,280
+Nuestros pulsos de control se entregan en antifase, y en su duración máxima el controlador PWM deja una pausa entre ellos, el llamado tiempo muerto.
+
+82
+00:08:35,140 --> 00:08:38,800
+Conecté las puntas del osciloscopio en estos puntos.
+
+83
+00:08:38,800 --> 00:08:43,260
+Ahora aplico alimentación al convertidor DC-DC.
+
+84
+00:08:43,800 --> 00:08:48,080
+Ahora oirás el sonido del núcleo trabajando.
+
+85
+00:08:48,840 --> 00:08:56,680
+Y a medida que cambia la duración del pulso, el convertidor DC-DC se adaptará al consumo y la tonalidad de este sonido cambiará.
+
+86
+00:08:57,880 --> 00:08:59,340
+Apliqué alimentación.
+
+87
+00:09:00,740 --> 00:09:03,120
+El convertidor DC-DC arrancó.
+
+88
+00:09:04,100 --> 00:09:08,200
+Ves que el oscilograma cambió ligeramente.
+
+89
+00:09:08,200 --> 00:09:18,560
+Y ahora muevo el cursor de la resistencia variable fuera de la posición extrema donde el controlador PWM no funciona.
+
+90
+00:09:19,200 --> 00:09:20,600
+Suavemente agregando.
+
+91
+00:09:22,560 --> 00:09:25,980
+Ves que apareció un pulso mínimo.
+
+92
+00:09:26,740 --> 00:09:32,020
+Y puedes oír que el convertidor DC-DC cambió de tonalidad.
+
+93
+00:09:32,620 --> 00:09:34,400
+Esa es su característica.
+
+94
+00:09:34,960 --> 00:09:41,380
+Nos interesa qué tan suavemente cambia la duración del pulso de control.
+
+95
+00:09:44,000 --> 00:09:46,480
+Llevándolo al límite.
+
+96
+00:09:47,020 --> 00:09:51,340
+Final del cursor de la resistencia.
+
+97
+00:09:52,480 --> 00:09:57,840
+Y ahora observa si hay pausa entre los pulsos de control.
+
+98
+00:09:57,840 --> 00:10:03,280
+Sí, la pausa está realmente presente en el tiempo.
+
+99
+00:10:05,160 --> 00:10:06,980
+Ahora veamos cuánto es.
+
+100
+00:10:08,740 --> 00:10:12,700
+Pongo el barrido en 100 ns por celda.
+
+101
+00:10:13,940 --> 00:10:22,200
+Y resulta 100, 200, 300, 400 ns es la pausa en este controlador PWM.
+
+102
+00:10:23,200 --> 00:10:37,920
+Como confirmamos que todo funciona, ahora podemos ver cómo se comporta el driver óptico bajo carga en la compuerta del FET.
+
+103
+00:10:38,460 --> 00:10:49,160
+Para esto voy a cambiar el canal azul del osciloscopio a la salida del driver óptico.
+
+104
+00:10:49,160 --> 00:10:53,800
+Lo pongo directamente en la compuerta del FET.
+
+105
+00:10:58,040 --> 00:11:03,900
+Y aquí ya podemos observar su trabajo real bajo carga.
+
+106
+00:11:06,920 --> 00:11:16,080
+Primero veamos cómo cambia la duración.
+
+107
+00:11:19,990 --> 00:11:22,370
+Canal de control, amarillo.
+
+108
+00:11:26,640 --> 00:11:29,860
+El driver óptico funciona correctamente.
+
+109
+00:11:30,520 --> 00:11:37,580
+Ahora podemos observar el flanco de apertura del interruptor.
+
+110
+00:11:39,140 --> 00:11:45,540
+Necesitaremos mirar el flanco del canal azul del osciloscopio.
+
+111
+00:11:46,540 --> 00:11:50,880
+También a 100 ns por celda.
+
+112
+00:11:53,600 --> 00:12:01,180
+Estas pequeñas interferencias que ves, esto es el funcionamiento del convertidor DC-DC.
+
+113
+00:12:01,440 --> 00:12:06,540
+Pero esto no es para nada crítico y no afecta el funcionamiento del circuito común.
+
+114
+00:12:09,800 --> 00:12:18,040
+Ves que al reducir la duración del pulso, el flanco se mantiene igual.
+
+115
+00:12:23,030 --> 00:12:25,970
+Y puedes medirlo en el tiempo.
+
+116
+00:12:29,300 --> 00:12:53,060
+Con esta cadena en el circuito de la compuerta, 4,7 Ω y una resistencia de 4,7 Ω, el flanco de subida de la señal en la compuerta del FET es de 300 ns.
+
+117
+00:12:53,060 --> 00:13:05,180
+Y el flanco que la maneja es muy abrupto, viniendo directamente del controlador PWM.
+
+118
+00:13:05,640 --> 00:13:08,180
+Nos interesa precisamente este parámetro.
+
+119
+00:13:08,560 --> 00:13:13,420
+Y también podemos mirar el flanco de bajada del cierre del interruptor.
+
+120
+00:13:17,290 --> 00:13:21,050
+Este flanco es de unos 200 ns.
+
+121
+00:13:23,530 --> 00:13:34,490
+Ahora sobre el momento del que hablaba, elegir esa resistencia no especificada.
+
+122
+00:13:34,490 --> 00:13:47,110
+Si la cortocircuitamos, lo haré ahora con pinzas, puedes ver que el flanco va a crecer.
+
+123
+00:13:48,310 --> 00:13:50,850
+Pendiente del flanco de apertura.
+
+124
+00:13:54,970 --> 00:14:08,850
+Ves que al cortocircuitar, la pendiente del flanco de apertura aumenta.
+
+125
+00:14:09,730 --> 00:14:14,190
+De 300 ns a 200 ns.
+
+126
+00:14:15,190 --> 00:14:29,490
+Esto significa que tenemos un rango amplio para elegir estas resistencias del circuito de compuerta para conseguir un funcionamiento claro del interruptor de potencia.
+
+127
+00:14:30,070 --> 00:14:33,950
+Eso termina la comprobación del funcionamiento.
+
+128
+00:14:34,330 --> 00:14:36,570
+Los circuitos están terminados, todo funcionando.
+
+129
+00:14:37,090 --> 00:14:41,290
+Las mismas comprobaciones se deben hacer en cada driver óptico.
+
+130
+00:14:41,390 --> 00:14:43,510
+La imagen debería mantenerse.
+
+131
+00:14:43,510 --> 00:14:46,790
+Así que hacemos el primer arranque del sistema.
+
+132
+00:14:47,470 --> 00:14:51,730
+Siempre recomiendo hacer esto usando una lámpara incandescente.
+
+133
+00:14:52,290 --> 00:15:03,850
+Comprueba con cuidado una vez más todo el esquema del cableado de alimentación, la polaridad llevada a la conexión de los capacitores electrolíticos.
+
+134
+00:15:04,010 --> 00:15:08,670
+Porque invertirla puede llevar al fallo.
+
+135
+00:15:09,410 --> 00:15:16,670
+Y sin aplicar alimentación al esquema, primero comprueba el módulo de potencia.
+
+136
+00:15:17,010 --> 00:15:19,910
+Para esto conecta uno de los cables a la batería.
+
+137
+00:15:19,930 --> 00:15:23,130
+En este caso conecté el negativo de la fuente de alimentación.
+
+138
+00:15:23,970 --> 00:15:37,930
+Y el positivo, que va al banco de capacitores y luego a los interruptores de potencia, lo conecto a través de una lámpara incandescente.
+
+139
+00:15:37,930 --> 00:15:43,770
+Inmediatamente mostrará si hay un fallo.
+
+140
+00:15:44,390 --> 00:15:45,910
+Mira, conecto.
+
+141
+00:15:47,590 --> 00:15:51,050
+Y puedes ver que la lámpara parpadeó brevemente.
+
+142
+00:15:51,310 --> 00:15:57,570
+Y luego su conexión no lleva a brillo del filamento.
+
+143
+00:15:58,410 --> 00:16:04,250
+El primer destello significó que los capacitores se cargaron.
+
+144
+00:16:04,250 --> 00:16:16,450
+Y el hecho de que la lámpara no se encienda atestigua que el bloque de potencia está bien armado y los interruptores no pasan corriente sin control.
+
+145
+00:16:17,690 --> 00:16:25,170
+Ahora, después de confirmar esto, podemos pasar a probar el bloque.
+
+146
+00:16:26,390 --> 00:16:30,530
+Confirma que el sistema está apagado.
+
+147
+00:16:30,770 --> 00:16:37,790
+Con el cursor de la resistencia, ponlo en modo de no trabajo.
+
+148
+00:16:38,630 --> 00:16:44,690
+Posición extrema, duración de pulso más pequeña, o más bien su ausencia total.
+
+149
+00:16:45,390 --> 00:16:49,250
+Y ahora conecta el sistema.
+
+150
+00:16:50,470 --> 00:16:54,310
+Para este fin puedes usar un amperímetro.
+
+151
+00:16:55,070 --> 00:17:02,330
+Muy útil, con él puedes observar la corriente que consume el sistema.
+
+152
+00:17:03,110 --> 00:17:07,510
+Conecta la batería.
+
+153
+00:17:07,710 --> 00:17:12,290
+Y ahora podemos aplicar alimentación al convertidor DC-DC.
+
+154
+00:17:14,130 --> 00:17:15,810
+Alimentación aplicada.
+
+155
+00:17:16,810 --> 00:17:25,150
+Déjame decir de inmediato que la cantidad de vueltas del transformador de pulsos es bastante alta.
+
+156
+00:17:25,290 --> 00:17:29,570
+La relación de transformación es alta con pulsos abruptos.
+
+157
+00:17:29,770 --> 00:17:33,250
+Y la tensión aquí será bastante alta.
+
+158
+00:17:33,250 --> 00:17:46,870
+Puedes ver que el sistema no está funcionando y no hay descarga en las salidas.
+
+159
+00:17:46,990 --> 00:17:52,650
+Ahora cortocircuité el cable verde de arranque y el extremo del bobinado del transformador.
+
+160
+00:17:53,310 --> 00:17:57,850
+Ahora agrego ligeramente duración de pulso.
+
+161
+00:18:00,890 --> 00:18:06,330
+Y ves que apareció una pequeña descarga.
+
+162
+00:18:07,590 --> 00:18:13,530
+El sistema arrancó, también puedes controlar por amperímetro.
+
+163
+00:18:13,850 --> 00:18:15,710
+El consumo es muy pequeño ahora.
+
+164
+00:18:16,790 --> 00:18:17,850
+Agrego más.
+
+165
+00:18:20,530 --> 00:18:21,570
+Mira.
+
+166
+00:18:24,130 --> 00:18:27,170
+La descarga ya aumentó su longitud.
+
+167
+00:18:28,170 --> 00:18:30,850
+Y ya se estira.
+
+168
+00:18:31,870 --> 00:18:34,870
+El sistema funciona.
+
+169
+00:18:35,770 --> 00:18:43,510
+De esta manera visual podemos decir cómo sube la tensión.
+
+170
+00:18:47,750 --> 00:18:49,470
+Agrego más.
+
+171
+00:18:56,750 --> 00:19:04,730
+Les digo, chicos, esto es muy por encima de 1000 V con una descarga así.
+
+172
+00:19:04,850 --> 00:19:09,050
+Al tocar, los cables se pegan entre sí.
+
+173
+00:19:10,930 --> 00:19:16,790
+Ojalá pudiera meter el amperímetro en la lente.
+
+174
+00:19:17,890 --> 00:19:19,790
+Intento hacerlo ahora.
+
+175
+00:19:21,450 --> 00:19:22,530
+Así.
+
+176
+00:19:23,670 --> 00:19:25,750
+Así se ve.
+
+177
+00:19:25,910 --> 00:19:26,790
+Aguja en cero.
+
+178
+00:19:42,050 --> 00:19:43,750
+Mal contacto un poco.
+
+179
+00:19:43,830 --> 00:19:44,910
+Aquí está ahora.
+
+180
+00:19:49,010 --> 00:19:58,370
+Vemos que bajo cortocircuito, el consumo llega a 9 A.
+
+181
+00:19:59,530 --> 00:20:02,350
+Agrego más duración de pulso.
+
+182
+00:20:09,790 --> 00:20:12,470
+10 A en corto.
+
+183
+00:20:14,130 --> 00:20:16,850
+Agrego duración completa ahora.
+
+184
+00:20:18,750 --> 00:20:22,370
+Probablemente obtendremos una descarga específica.
+
+185
+00:20:24,770 --> 00:20:29,770
+Con este asunto hay que tener más cuidado.
+
+186
+00:20:32,970 --> 00:20:42,110
+Estos experimentos es mejor conducirlos a través de una lámpara para que el sistema no falle.
+
+187
+00:20:46,210 --> 00:20:48,430
+Lo ves todo por ti mismo.
+
+188
+00:20:50,950 --> 00:20:54,290
+Poder infernal en este sistema.
+
+189
+00:21:02,100 --> 00:21:05,440
+Cambia a modo apagado.
+
+190
+00:21:07,400 --> 00:21:13,160
+Ahora nos interesa ajustar este sistema por frecuencia.
+
+191
+00:21:13,280 --> 00:21:15,500
+Para esto necesitamos un osciloscopio.
+
+192
+00:21:16,280 --> 00:21:23,920
+Mira el oscilograma en una de las tomas del transformador respecto a la toma de arranque.
+
+193
+00:21:24,140 --> 00:21:27,300
+Y ajusta a la frecuencia óptima.
+
+194
+00:21:27,300 --> 00:21:30,900
+Ajusta el núcleo a la frecuencia de trabajo.
+
+195
+00:21:32,260 --> 00:21:37,300
+Para esto conecté el canal amarillo del osciloscopio a una de las tomas.
+
+196
+00:21:37,380 --> 00:21:41,980
+Específicamente la tercera toma del transformador, ya que aquí la tensión es alta.
+
+197
+00:21:43,720 --> 00:21:47,320
+Si cuentas desde el inicio del bobinado.
+
+198
+00:21:48,560 --> 00:21:52,460
+Mis puntas están especificadas a 1500 V, supresión 100x.
+
+199
+00:21:52,620 --> 00:21:54,960
+Así que no temo por el dispositivo.
+
+200
+00:21:54,960 --> 00:22:04,380
+Si tienes puntas de supresión 10x, es mejor hacer esto en la primera toma.
+
+201
+00:22:05,500 --> 00:22:10,000
+Ahora la alimentación se entrega a los interruptores desde la batería.
+
+202
+00:22:10,180 --> 00:22:14,420
+Y ahora aplico alimentación al convertidor DC-DC.
+
+203
+00:22:15,420 --> 00:22:25,240
+Con el cursor de la resistencia responsable de la duración del pulso conmutado a sistema apagado.
+
+204
+00:22:26,320 --> 00:22:30,480
+Aplicando alimentación al convertidor.
+
+205
+00:22:30,840 --> 00:22:36,180
+Y vemos que por ahora no hay nada en la salida del transformador.
+
+206
+00:22:36,340 --> 00:22:41,860
+Ahora aumento suavemente la duración de los pulsos de control.
+
+207
+00:22:45,230 --> 00:22:47,870
+Y ves esta imagen.
+
+208
+00:22:47,990 --> 00:22:55,850
+Con el aumento de duración puedes ver que el número de estas ondas también aumenta.
+
+209
+00:22:56,330 --> 00:23:02,850
+Eso significa que nuestro núcleo no está en modo óptimo de funcionamiento.
+
+210
+00:23:03,250 --> 00:23:06,170
+Duración del pulso al máximo.
+
+211
+00:23:06,790 --> 00:23:11,430
+Y podemos contar el número de estas ondas.
+
+212
+00:23:11,430 --> 00:23:13,690
+1, 2, 3, 4, 5.
+
+213
+00:23:14,310 --> 00:23:18,830
+Es decir, necesitamos subir la frecuencia 5 veces.
+
+214
+00:23:19,690 --> 00:23:21,510
+Para este transformador.
+
+215
+00:23:23,270 --> 00:23:24,930
+Lo haremos ahora.
+
+216
+00:23:29,260 --> 00:23:36,100
+Esta resistencia en el esquema es responsable de la frecuencia.
+
+217
+00:23:36,360 --> 00:23:41,180
+Con los valores mostrados en el esquema.
+
+218
+00:23:42,180 --> 00:23:49,660
+Una de 10 kΩ en el pin 5 y 2200 pF en el pin 7.
+
+219
+00:23:50,940 --> 00:23:57,300
+La frecuencia se puede regular de 35 kHz a 185 kHz.
+
+220
+00:23:58,240 --> 00:23:59,700
+En este controlador PWM.
+
+221
+00:24:00,100 --> 00:24:02,880
+Y subiendo la frecuencia.
+
+222
+00:24:03,160 --> 00:24:09,540
+Mira cómo desaparece el fenómeno de oscilación en el transformador.
+
+223
+00:24:12,320 --> 00:24:16,040
+Este es un ajuste preliminar.
+
+224
+00:24:16,920 --> 00:24:20,140
+Después, tras conectar el puente de diodos.
+
+225
+00:24:21,200 --> 00:24:25,640
+Corregiremos el funcionamiento del transformador.
+
+226
+00:24:25,720 --> 00:24:29,720
+Directamente bajo carga DC.
+
+227
+00:24:30,720 --> 00:24:34,680
+Ahora eliminaremos este fenómeno negativo.
+
+228
+00:24:36,780 --> 00:24:38,080
+De oscilaciones.
+
+229
+00:24:38,480 --> 00:24:39,660
+Subo frecuencia.
+
+230
+00:24:39,660 --> 00:24:50,660
+Necesitamos un pulso por cada uno.
+
+231
+00:24:51,920 --> 00:24:54,560
+La fuente se queja un poco.
+
+232
+00:24:55,840 --> 00:25:00,980
+Porque no puede con el consumo del convertidor DC-DC.
+
+233
+00:25:01,160 --> 00:25:01,660
+Pero no importa.
+
+234
+00:25:03,880 --> 00:25:05,760
+Así lo llevamos.
+
+235
+00:25:11,010 --> 00:25:16,810
+Y aquí, prácticamente lo que necesitamos.
+
+236
+00:25:18,710 --> 00:25:23,590
+Ahora podemos controlar la duración del pulso.
+
+237
+00:25:25,350 --> 00:25:28,230
+De cero al máximo.
+
+238
+00:25:30,970 --> 00:25:35,150
+El oscilograma se volvió significativamente más lindo.
+
+239
+00:25:36,150 --> 00:25:41,670
+Ahora hay que conectar una carga en estos puntos.
+
+240
+00:25:42,170 --> 00:25:44,910
+Y mirar la forma de señal bajo carga.
+
+241
+00:25:44,990 --> 00:25:51,190
+Conecté una lámpara de 60 W, 220 V.
+
+242
+00:25:52,390 --> 00:25:57,030
+Y observaremos el oscilograma y la tensión sobre ella.
+
+243
+00:25:58,550 --> 00:26:00,790
+En paralelo con su salida.
+
+244
+00:26:00,790 --> 00:26:02,090
+Aplico alimentación.
+
+245
+00:26:03,990 --> 00:26:08,290
+Y suavemente agrego la duración de los pulsos de control.
+
+246
+00:26:13,800 --> 00:26:17,000
+Ves que el filamento de la lámpara empieza a brillar.
+
+247
+00:26:18,660 --> 00:26:19,520
+Va más allá.
+
+248
+00:26:25,500 --> 00:26:27,360
+El oscilograma cambia.
+
+249
+00:26:27,840 --> 00:26:35,580
+Y aquí está la duración máxima de los pulsos de control.
+
+250
+00:26:36,580 --> 00:26:38,660
+Este tipo de oscilograma.
+
+251
+00:26:40,520 --> 00:26:42,980
+Hay que mirar su simetría.
+
+252
+00:26:43,140 --> 00:26:45,680
+Ves un funcionamiento simétrico.
+
+253
+00:26:47,900 --> 00:26:52,460
+Regulación suave si rotamos el cursor.
+
+254
+00:26:54,300 --> 00:26:56,080
+Tensión de salida.
+
+255
+00:26:57,520 --> 00:27:05,800
+En esta etapa podemos considerar terminado el ajuste preliminar del sistema.
+
+256
+00:27:06,980 --> 00:27:13,420
+La frecuencia para nosotros salió en unos 93 kHz.
+
+257
+00:27:17,540 --> 00:27:20,020
+Se puede agregar ligeramente más.
+
+258
+00:27:23,140 --> 00:27:27,380
+Pero eso lo haremos después de jugar con la frecuencia hasta el final.
+
+259
+00:27:27,380 --> 00:27:41,460
+Cuando miremos la tensión DC aquí, nos interesará la tensión máxima nominal bajo carga con consumo mínimo desde la fuente.
+
+260
+00:27:41,600 --> 00:27:44,160
+Es decir, tendremos que mirar el amperímetro.
+
+261
+00:27:45,140 --> 00:27:50,440
+En esta etapa confirmamos que el sistema es totalmente funcional.
+
+262
+00:27:51,420 --> 00:27:54,520
+Interesante, ¿se calienta después de esto...?
+
+263
+00:27:54,520 --> 00:27:56,400
+El disipador está absolutamente frío.
+
+264
+00:27:58,060 --> 00:28:01,140
+No hará falta refrigeración en absoluto.
+
+265
+00:28:02,780 --> 00:28:08,000
+Con eso, nos despedimos hasta el próximo episodio.
+
+266
+00:28:11,000 --> 00:28:15,300
+Lo mejor para todos, y experimentos exitosos.

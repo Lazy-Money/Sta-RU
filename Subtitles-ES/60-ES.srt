@@ -1,0 +1,1079 @@
+1
+00:00:00,650 --> 00:00:02,120
+Hola a todos.
+
+2
+00:00:03,340 --> 00:00:16,660
+Hoy les mostraré una herramienta interesante que te permite verificar a qué frecuencia sintonizar nuestro Tesla en relación con la granada.
+
+3
+00:00:18,220 --> 00:00:24,300
+Porque esta frecuencia no se puede determinar con un generador de señales.
+
+4
+00:00:25,060 --> 00:00:38,920
+Por ejemplo, si conectamos la sonda del generador de señales a esta antena y barremos la frecuencia, no veremos este momento.
+
+5
+00:00:39,700 --> 00:00:45,320
+No lo veremos porque esta bobina necesita probarse bajo carga.
+
+6
+00:00:45,480 --> 00:00:53,880
+Aquí ves que tenemos el extremo caliente de la bobina, el extremo frío desde donde empezamos, y la carga cuelga de él.
+
+7
+00:00:54,040 --> 00:01:00,720
+Para esta prueba usamos una lámpara de 15 W.
+
+8
+00:01:02,420 --> 00:01:18,260
+Generadores de señal de laboratorio de estos tipos, estos, de mayor calidad, varias muestras, quien tenga cuál, no pueden entregar suficiente potencial para realmente ver cómo nuestra bobina responde a un campo eléctrico.
+
+9
+00:01:18,260 --> 00:01:25,040
+A un campo eléctrico.
+
+10
+00:01:26,060 --> 00:01:28,380
+La idea de esta plataforma.
+
+11
+00:01:29,260 --> 00:01:37,840
+Creo que muchos de ustedes que han ensamblado bobinas y las han sintonizado por frecuencia tienen algunos recortes de cable por ahí.
+
+12
+00:01:37,920 --> 00:01:44,280
+Usualmente están por ahí como peso muerto, a veces los usamos como puentes, pero generalmente solo están ahí.
+
+13
+00:01:45,660 --> 00:01:51,100
+Vamos a construir este tipo de plataforma con esas piezas.
+
+14
+00:01:52,740 --> 00:01:58,640
+Todo esto está ensamblado con recortes de un solo cable, porque corté mucho de él haciendo ajuste de frecuencia.
+
+15
+00:01:59,800 --> 00:02:01,520
+Y me estaba molestando un poco.
+
+16
+00:02:02,240 --> 00:02:11,540
+El espaciado entre tomas es aproximadamente de 0,8 cm a 1,5 cm.
+
+17
+00:02:11,900 --> 00:02:14,440
+Espaciado promedio de aproximadamente un centímetro.
+
+18
+00:02:14,540 --> 00:02:20,100
+Hacemos tomas, unas 20, y llenamos la forma.
+
+19
+00:02:21,640 --> 00:02:30,420
+La forma es de cartón para obtener un factor Q alto y un espectro de frecuencias más amplio que podamos atrapar.
+
+20
+00:02:30,440 --> 00:02:38,600
+La dirección del devanado, igual que en este sistema y la muestra funcional en la plataforma.
+
+21
+00:02:39,140 --> 00:02:44,680
+El Tesla está devanado a la izquierda, es decir antihorario.
+
+22
+00:02:45,820 --> 00:03:00,980
+Porque hay una regla que todos conocemos, la repetiré una vez más: los devanados a izquierdas (antihorarios) son para el campo eléctrico, los devanados a derechas (horarios) para el campo magnético.
+
+23
+00:03:00,980 --> 00:03:02,180
+Para el campo magnético.
+
+24
+00:03:03,160 --> 00:03:10,540
+En esta antena queremos obtener potencial eléctrico, así que devanamos a la izquierda.
+
+25
+00:03:11,780 --> 00:03:13,560
+Unas 20 tomas aquí.
+
+26
+00:03:13,900 --> 00:03:18,400
+Di el esquema del Kacher en un video anterior, así que no me detendré en él.
+
+27
+00:03:18,920 --> 00:03:22,480
+El inductor es móvil para que podamos deslizarlo.
+
+28
+00:03:23,160 --> 00:03:29,080
+Y también puedes ver que tenemos una pinza de cocodrilo, el cable va a la base del transistor.
+
+29
+00:03:29,800 --> 00:03:34,140
+Esto nos permite movernos por el cable.
+
+30
+00:03:35,960 --> 00:03:40,160
+El inductor móvil es para sintonía fina de frecuencia.
+
+31
+00:03:40,980 --> 00:03:54,360
+Cuando nos movemos entre una toma y otra, la sintonía suave ocurre desplazando ligeramente el inductor a izquierda o derecha, así puedes sintonizar la frecuencia.
+
+32
+00:03:54,940 --> 00:04:11,260
+Si necesitamos bajar estas frecuencias, podemos meter una barra de ferrita, o quien tenga, un juego de anillos, en esta plataforma y bajar las frecuencias.
+
+33
+00:04:11,260 --> 00:04:11,800
+Las frecuencias.
+
+34
+00:04:12,240 --> 00:04:21,340
+Si necesitamos que la frecuencia suba, podemos movernos por las tomas.
+
+35
+00:04:22,300 --> 00:04:30,480
+Y si aún no hay suficiente frecuencia, reducimos el número de vueltas o cambiamos las dimensiones geométricas de la antena.
+
+36
+00:04:32,160 --> 00:04:35,880
+El sistema acaba con un amplio rango.
+
+37
+00:04:36,040 --> 00:04:39,160
+Antes de arrancar el sistema, conecta la tierra.
+
+38
+00:04:39,960 --> 00:04:55,340
+La tierra debería ser exactamente la que será estándar en la plataforma, porque si cambiamos la tierra después, la frecuencia se desplazará un poco dentro de algunos límites para esta bobina.
+
+39
+00:04:56,520 --> 00:04:59,860
+Así que quieres usar exactamente la que va a funcionar.
+
+40
+00:04:59,900 --> 00:05:13,540
+En este caso es un cable de 20 m, un cable se conecta a él, terminando en una pinza de cocodrilo que conectaremos a las tomas de la bobina.
+
+41
+00:05:14,020 --> 00:05:31,760
+Enciende el osciloscopio, coloca la sonda a unos 15 cm, para que podamos seguir efectivamente la frecuencia de la bobina y la intensidad del campo eléctrico alrededor de la antena.
+
+42
+00:05:33,200 --> 00:05:34,720
+Arrancando el sistema.
+
+43
+00:05:36,320 --> 00:05:40,000
+La alimentación será de un generador de señales de laboratorio.
+
+44
+00:05:40,840 --> 00:05:45,060
+Tensión de alimentación alrededor de 24 V.
+
+45
+00:05:45,140 --> 00:05:48,140
+Estándar para lo que pueden sintonizarse.
+
+46
+00:05:53,500 --> 00:05:58,540
+24 V y consumimos un poco más de un amperio.
+
+47
+00:05:59,440 --> 00:06:10,060
+Y aquí vemos: la lámpara se encendió, tenemos un oscilograma, frecuencia 1 MHz y algo.
+
+48
+00:06:10,540 --> 00:06:18,220
+Pero antes de empezar la prueba, necesitamos excluir la influencia del inductor en esta bobina.
+
+49
+00:06:18,600 --> 00:06:25,620
+Porque el inductor se sienta entre la antena y el resonador, su influencia debe eliminarse.
+
+50
+00:06:26,080 --> 00:06:35,500
+Puedes ver pickups fuertes en el inductor ahora.
+
+51
+00:06:36,140 --> 00:06:38,100
+¿Cómo lo hacemos?
+
+52
+00:06:38,320 --> 00:06:43,560
+Puedes usar el capacitor que se instalará después en el circuito tanque.
+
+53
+00:06:44,100 --> 00:06:50,660
+Eso está en el rango de 0,1 µF a 1 µF, seleccionado.
+
+54
+00:06:52,320 --> 00:06:54,280
+O equivalente.
+
+55
+00:06:54,640 --> 00:06:56,540
+Digamos, un capacitor particular.
+
+56
+00:06:57,230 --> 00:06:57,940
+Conéctalo.
+
+57
+00:06:58,600 --> 00:06:59,480
+Alta tensión.
+
+58
+00:06:59,900 --> 00:07:03,180
+Ves que la carga no se enciende.
+
+59
+00:07:03,280 --> 00:07:03,760
+Quítalo.
+
+60
+00:07:03,920 --> 00:07:04,800
+Brilla.
+
+61
+00:07:05,380 --> 00:07:09,500
+Pero el mejor método es simplemente cortocircuitar el inductor.
+
+62
+00:07:10,020 --> 00:07:11,140
+Eliminar su influencia.
+
+63
+00:07:11,380 --> 00:07:12,920
+Puedes ver que el inductor está cortocircuitado.
+
+64
+00:07:13,640 --> 00:07:15,680
+La carga no reacciona en absoluto.
+
+65
+00:07:16,240 --> 00:07:20,480
+Después, conectamos tierra a esta bobina.
+
+66
+00:07:21,720 --> 00:07:24,400
+Conéctala al extremo frío.
+
+67
+00:07:26,360 --> 00:07:27,600
+Tierra conectada.
+
+68
+00:07:27,740 --> 00:07:31,720
+Puedes ver que apareció algo de brillo.
+
+69
+00:07:33,540 --> 00:07:36,600
+Seguiremos ese punto.
+
+70
+00:07:38,180 --> 00:07:38,880
+Mira.
+
+71
+00:07:39,860 --> 00:07:42,380
+Esta es la amplitud con la tierra conectada.
+
+72
+00:07:42,740 --> 00:07:43,800
+La sonda reacciona.
+
+73
+00:07:44,340 --> 00:07:45,200
+Desconectando.
+
+74
+00:07:45,340 --> 00:07:46,560
+Ves la amplitud.
+
+75
+00:07:46,780 --> 00:07:55,280
+Nuestra meta es encontrar la frecuencia a la que el campo eléctrico sea absorbido al máximo por esta bobina.
+
+76
+00:07:55,360 --> 00:07:57,740
+Es decir, amplitud mínima en el osciloscopio.
+
+77
+00:07:57,860 --> 00:07:59,040
+La sonda se queda fija.
+
+78
+00:07:59,620 --> 00:08:04,740
+También puedes seguir este momento con la lámpara de neón.
+
+79
+00:08:04,840 --> 00:08:10,080
+Aquí, empieza a brillar a unos 18 cm de distancia.
+
+80
+00:08:10,800 --> 00:08:21,300
+Ahora, si desconecto el cable de tierra: brillo a 40 cm de la antena.
+
+81
+00:08:21,740 --> 00:08:24,740
+Así puedes ver el brillo equivalente en la lámpara de neón.
+
+82
+00:08:25,680 --> 00:08:30,220
+Reconecta la tierra y comienza la transición de sintonía.
+
+83
+00:08:31,680 --> 00:08:34,600
+Empezando a moverse por las tomas.
+
+84
+00:08:36,400 --> 00:08:37,120
+Moviendo.
+
+85
+00:08:37,800 --> 00:08:38,780
+Mira.
+
+86
+00:08:39,580 --> 00:08:40,840
+Primera toma.
+
+87
+00:08:43,800 --> 00:08:46,060
+Conectada, por el brillo de la lámpara.
+
+88
+00:08:46,200 --> 00:08:48,920
+Ahora movámonos a, digamos, la cuarta toma.
+
+89
+00:08:50,240 --> 00:08:51,080
+Conectada.
+
+90
+00:08:51,160 --> 00:08:52,140
+El brillo es más fuerte.
+
+91
+00:08:52,700 --> 00:08:59,180
+Así que reducimos la cantidad de cable, la frecuencia sube.
+
+92
+00:08:59,820 --> 00:09:00,820
+Y un punto más.
+
+93
+00:09:01,420 --> 00:09:12,060
+Quieres que la antena esté conectada al extremo caliente, no muevas el extremo caliente, solo mueve el punto de tierra.
+
+94
+00:09:12,300 --> 00:09:25,920
+De otra manera, si intentas lo opuesto, digamos, movemos la conexión de la antena, actuaría como un radiador adicional e introduciría distorsión.
+
+95
+00:09:26,460 --> 00:09:35,640
+La señal debería ser una onda sinusoidal limpia, sin distorsiones.
+
+96
+00:09:35,740 --> 00:09:40,480
+Este es el método más confiable para asegurarse.
+
+97
+00:09:40,740 --> 00:09:47,640
+También puedes tomar los extremos que quedan sin usar, soldarlos y reconectarlos al cable.
+
+98
+00:09:47,820 --> 00:09:50,360
+Eso excluirá completamente cualquier influencia.
+
+99
+00:09:51,140 --> 00:10:00,700
+Bueno, lo siguiente: la carga brilla, lo que significa que podemos mover el inductor un poco más, desplazar la placa y movernos más allá.
+
+100
+00:10:00,900 --> 00:10:04,320
+Ahora cambiando gradualmente, observando la carga.
+
+101
+00:10:06,220 --> 00:10:11,180
+Cambia a la quinta toma, el brillo crece.
+
+102
+00:10:11,720 --> 00:10:17,100
+Sexta toma, séptima, octava.
+
+103
+00:10:17,700 --> 00:10:19,920
+Ves el brillo subiendo.
+
+104
+00:10:20,960 --> 00:10:26,000
+Novena, décima, undécima.
+
+105
+00:10:26,580 --> 00:10:29,480
+Así tenemos una tendencia de la frecuencia subiendo.
+
+106
+00:10:30,640 --> 00:10:43,440
+En este caso, podemos confirmar que la frecuencia es ahora un megaherzio aquí en la antena.
+
+107
+00:10:43,980 --> 00:10:46,300
+Y la carga está brillando muy bien.
+
+108
+00:10:46,440 --> 00:10:47,580
+Probando más.
+
+109
+00:10:47,980 --> 00:10:58,100
+Mueve el inductor, veamos si podemos encontrar un punto donde la carga brille aún más.
+
+110
+00:10:59,720 --> 00:11:01,320
+Moviéndose por tomas.
+
+111
+00:11:01,320 --> 00:11:07,060
+Brillo aún más fuerte.
+
+112
+00:11:07,940 --> 00:11:11,060
+Bastante brillante aquí.
+
+113
+00:11:12,160 --> 00:11:19,900
+Avanzando, decimosexta toma de veinte.
+
+114
+00:11:20,200 --> 00:11:22,040
+El brillo está bajando.
+
+115
+00:11:23,000 --> 00:11:25,240
+Así que podemos detenernos.
+
+116
+00:11:26,960 --> 00:11:29,640
+Decimoquinta, decimosexta toma en este caso.
+
+117
+00:11:31,400 --> 00:11:35,560
+Ves que pasé por las tomas hasta aquí.
+
+118
+00:11:37,780 --> 00:11:38,380
+Y ahora
+
+119
+00:11:42,020 --> 00:11:48,780
+podemos jugar con el inductor mismo.
+
+120
+00:11:49,200 --> 00:11:51,040
+Entre las tomas.
+
+121
+00:11:53,340 --> 00:11:58,540
+Mueve el inductor y encuentra el brillo máximo en nuestra carga.
+
+122
+00:12:00,000 --> 00:12:01,740
+Este es el brillo máximo.
+
+123
+00:12:02,420 --> 00:12:10,020
+También puedes notar que el consumo baja cuando el sistema está bien coordinado.
+
+124
+00:12:10,860 --> 00:12:18,620
+Para mi bobina, encontramos el punto óptimo donde entra la frecuencia del sistema.
+
+125
+00:12:18,880 --> 00:12:19,900
+Corresponde a
+
+126
+00:12:23,340 --> 00:12:26,220
+1,135 MHz.
+
+127
+00:12:28,080 --> 00:12:34,680
+Después, puedes agregar visualización de carga a esta plataforma.
+
+128
+00:12:35,200 --> 00:12:40,600
+Puedes agregar un rectificador aquí y conectar medidores.
+
+129
+00:12:41,440 --> 00:12:57,640
+Por ejemplo, puedes poner un voltímetro en esta plataforma y en lugar de juzgar a ojo cómo brilla la lámpara, seguir el momento cuando el voltímetro muestra tensión máxima en la carga.
+
+130
+00:12:57,780 --> 00:13:03,440
+Eso coincidirá con la frecuencia que necesitas para esta bobina.
+
+131
+00:13:03,540 --> 00:13:19,560
+También, para afinar el resultado en la respuesta en frecuencia de esta bobina, recomiendo después de las mediciones con una antena, conectar otra, menos vueltas de cable, cambiar las dimensiones globales respecto a la anterior, y verificar la frecuencia de nuevo.
+
+132
+00:13:19,560 --> 00:13:23,980
+Comparada con la anterior y verificar la frecuencia también.
+
+133
+00:13:24,380 --> 00:13:32,920
+Y a esa u otra frecuencia en esta antena veremos máxima absorción por nuestro resonador.
+
+134
+00:13:33,840 --> 00:13:47,480
+Y sí, puedes ver que colgué una antena mucho más corta con espaciado mucho más amplio y la conecté al sistema.
+
+135
+00:13:47,620 --> 00:14:01,360
+Tuve que moverme a una toma más baja, deslizar el inductor, la carga brilla equivalentemente y también podemos confirmar esta frecuencia.
+
+136
+00:14:04,100 --> 00:14:18,680
+Puedes jugar con este sistema a frecuencias más bajas agregando ferrita, es decir, esta plataforma te permite tomar la respuesta en frecuencia completa del resonador.
+
+137
+00:14:21,320 --> 00:14:36,840
+También puedes jugar a frecuencias más altas, para eso, en lugar de una antena conectamos una sola vuelta equivalente al extremo caliente.
+
+138
+00:14:37,380 --> 00:14:38,820
+Y probamos de la misma manera.
+
+139
+00:14:38,920 --> 00:14:43,600
+Puedes deslizarla por la bobina y mirar las dependencias.
+
+140
+00:14:44,060 --> 00:14:46,200
+Cada uno hace su propio montaje.
+
+141
+00:14:46,500 --> 00:15:00,680
+Recomiendo también agregar un puente de diodos, un filtro y un voltímetro aquí, para que puedas juzgar por tensión qué tan precisa es tu sintonía.
+
+142
+00:15:00,740 --> 00:15:16,500
+Cambiamos la antena, verifiquemos también esto: cuando movemos el punto de tierra entre extremo frío y caliente, nuestro consumo no debería cambiar muy drásticamente.
+
+143
+00:15:16,500 --> 00:15:29,540
+Ahora mismo tenemos tierra en el extremo frío, verifiquemos el consumo, 24 V a 0,75 A. Movemos al extremo caliente,
+
+144
+00:15:33,070 --> 00:15:35,110
+el consumo subió un poco.
+
+145
+00:15:35,690 --> 00:15:56,150
+Eso es normal, porque cuando la tierra está en el extremo caliente, las vueltas que captan el campo eléctrico de la antena están más cerca de la superficie de la carcasa, así obtenemos un pequeño aumento de consumo.
+
+146
+00:15:56,150 --> 00:15:58,330
+Aumento en consumo.
+
+147
+00:15:58,750 --> 00:16:12,470
+En general podemos ver que el consumo cambia de manera insignificante, lo que significa que esta es la frecuencia que mejor se ajusta a esta bobina y está bien coordinada con ella.
+
+148
+00:16:13,730 --> 00:16:22,430
+Pasando a preguntas que, en mi opinión, son las más relevantes e interesantes.
+
+149
+00:16:23,650 --> 00:16:25,110
+Pregunta 1.
+
+150
+00:16:25,930 --> 00:16:33,910
+¿Hay una dependencia entre la longitud del cable de la bobina de alta tensión y la longitud del cable del resonador?
+
+151
+00:16:34,530 --> 00:16:46,870
+La pregunta es correcta: hay por supuesto alguna dependencia en la distribución de ondas. Devanamos la bobina de alta tensión a una longitud de cable igual a la longitud del cable del resonador.
+
+152
+00:16:47,010 --> 00:16:59,590
+O si nuestro resonador requiere una frecuencia más alta, devanamos la bobina de alta tensión a una longitud de cable igual a la mitad de la longitud del cable del resonador.
+
+153
+00:17:00,430 --> 00:17:02,930
+Hay otro punto interesante.
+
+154
+00:17:03,110 --> 00:17:22,450
+Esta cosa que todos colgamos en ella, llamada antena, hay alguna dependencia de la capacitancia formada entre su superficie y la bobina aterrizada, y eso también afecta la frecuencia.
+
+155
+00:17:22,450 --> 00:17:23,010
+La frecuencia.
+
+156
+00:17:23,610 --> 00:17:25,870
+Pero no se trata solo de eso.
+
+157
+00:17:26,350 --> 00:17:32,090
+La longitud del cable de esta antena debe corresponder
+
+158
+00:17:35,350 --> 00:17:41,250
+a una radiación efectiva a la frecuencia a la que corre la bobina de alta tensión.
+
+159
+00:17:41,430 --> 00:17:48,950
+Es decir, las reglas de antenas se aplican a estos resonadores espirales, tienen que radiar eficientemente.
+
+160
+00:17:49,050 --> 00:17:54,450
+Es decir, básicamente un radiador de cuarto de onda, o tres cuartos, o cinco cuartos.
+
+161
+00:17:54,590 --> 00:17:58,830
+Es decir, lo ajustamos a algo así por longitud.
+
+162
+00:17:59,550 --> 00:18:06,850
+El método más simple, claro, es ajustar cortando longitud de conductor.
+
+163
+00:18:07,990 --> 00:18:14,630
+Y apunta al máximo campo eléctrico alrededor de la antena.
+
+164
+00:18:14,690 --> 00:18:19,690
+Para que realmente pueda funcionar como una antena.
+
+165
+00:18:21,270 --> 00:18:26,750
+De nuevo, a la frecuencia que crea nuestro Tesla.
+
+166
+00:18:28,190 --> 00:18:41,510
+Esto es más sobre teoría de antenas: el cable tiene una longitud física, un diámetro, y también está devanado en bobina.
+
+167
+00:18:42,050 --> 00:18:48,370
+Para antenas puedes calcular esto, incluso en calculadoras en línea.
+
+168
+00:18:49,110 --> 00:19:04,290
+Y cuando está montado en la bobina y atado a ella a través de un acoplamiento capacitivo, y la bobina está aterrizada, esos cálculos no encajan del todo, de hecho están bastante lejos.
+
+169
+00:19:04,310 --> 00:19:09,150
+Así que terminamos teniendo que ajustar la longitud del cable en la práctica.
+
+170
+00:19:10,470 --> 00:19:22,850
+Como la longitud del conductor de la bobina de alta tensión está fija para nosotros, terminamos sintonizando la frecuencia cambiando las dimensiones geométricas de la antena.
+
+171
+00:19:23,330 --> 00:19:29,450
+Comprimir, descomprimir sus vueltas, aumentar el diámetro, es decir, manipularla.
+
+172
+00:19:29,890 --> 00:19:46,630
+Y si no podemos llegar a la frecuencia efectiva que encontramos con esta plataforma, entonces cambiamos el diámetro de devanado de este cable a la longitud que debe coincidir con la longitud del cable en la bobina.
+
+173
+00:19:48,690 --> 00:19:54,270
+Cambia el diámetro de la forma, eso también causará un desplazamiento en la respuesta en frecuencia.
+
+174
+00:19:54,850 --> 00:20:05,090
+Pregunta 2: ¿dónde ocurren los procesos principales: en la granada misma o en su inductor?
+
+175
+00:20:05,990 --> 00:20:14,110
+En la mayoría de los montajes en línea que hace la gente, todos los procesos ocurren en el inductor.
+
+176
+00:20:14,830 --> 00:20:25,850
+Y respecto al inductor, la granada misma es solo un montón de cable sobre el cual actúa el campo magnético.
+
+177
+00:20:26,370 --> 00:20:36,470
+La interacción ocurre entre la antena, el campo eléctrico del Tesla, y el campo magnético en el inductor.
+
+178
+00:20:36,490 --> 00:20:39,790
+Y esta bobina es solo un pickup.
+
+179
+00:20:40,450 --> 00:20:54,310
+Pero ese modo es muy inestable, es cuando hacemos un mediador, es decir, llevamos al inductor al modo resonador y solo captamos.
+
+180
+00:20:54,430 --> 00:20:55,550
+Y el modo es ineficiente.
+
+181
+00:20:55,670 --> 00:21:09,970
+Es mucho más eficiente llevar la bobina principal al modo resonador, y dejar que el inductor actúe como la fuente del campo magnético giratorio, entonces todos los procesos ocurren en esta bobina.
+
+182
+00:21:10,090 --> 00:21:18,270
+Por eso calculamos según el programa, devanamos para ajustar la inductancia correcta y obtener todos los procesos en ella.
+
+183
+00:21:20,330 --> 00:21:21,730
+Pregunta 3.
+
+184
+00:21:22,670 --> 00:21:34,810
+En uno de tus videos, la metodología de búsqueda de frecuencia del push-pull, mostraste que para tu bobina la frecuencia es 90,8 kHz.
+
+185
+00:21:35,530 --> 00:21:36,390
+¿Por qué tan alta?
+
+186
+00:21:36,610 --> 00:21:38,430
+¿Por qué la frecuencia es tan alta?
+
+187
+00:21:39,010 --> 00:21:47,710
+Después de todo, todos trabajamos a frecuencias de 9 a 35 kHz y el circuito tanque LC en nuestro sistema funciona bien.
+
+188
+00:21:48,850 --> 00:21:55,190
+En ese video mostré el método para encontrar exactamente la frecuencia necesaria para esa bobina.
+
+189
+00:21:55,330 --> 00:21:58,830
+No me equivoqué, esa es exactamente la frecuencia.
+
+190
+00:21:59,250 --> 00:22:00,310
+¿Qué pasa?
+
+191
+00:22:00,310 --> 00:22:08,970
+Todos hemos visto este momento donde sintonizas el tanque LC a cualquier frecuencia que te toque.
+
+192
+00:22:09,070 --> 00:22:13,010
+Todos sintonizan a lo que les funcione.
+
+193
+00:22:13,070 --> 00:22:16,530
+Eliges un capacitor en serie y sintonizas.
+
+194
+00:22:17,170 --> 00:22:21,270
+Eso termina siendo sintonizar al primer armónico de resonancia LC.
+
+195
+00:22:21,610 --> 00:22:30,010
+Y cuando conectas una carga, ves el consumo del push-pull caer en corriente.
+
+196
+00:22:32,410 --> 00:22:34,990
+Todo normal, todos conocemos ese momento.
+
+197
+00:22:35,450 --> 00:22:36,310
+¿Qué está pasando?
+
+198
+00:22:36,430 --> 00:22:38,230
+Nada sobrenatural.
+
+199
+00:22:38,790 --> 00:22:53,030
+En el momento en que el tanque LC no está cargado, para mantener la amplitud máxima de oscilación necesita cierta cantidad de energía eléctrica.
+
+200
+00:22:53,430 --> 00:23:08,030
+En el momento que conectamos una carga, desintonizamos el tanque, su frecuencia se desplaza fuera de la oscilación principal, y resulta que para menor amplitud de oscilación en el tanque, se necesita también menos energía.
+
+201
+00:23:08,030 --> 00:23:10,230
+Una cantidad menor de energía eléctrica.
+
+202
+00:23:10,390 --> 00:23:15,990
+Esa es exactamente la razón por la que ves el consumo del push-pull bajar.
+
+203
+00:23:17,050 --> 00:23:18,630
+¿Qué hacemos?
+
+204
+00:23:18,830 --> 00:23:20,430
+Esa es la sintonía incorrecta.
+
+205
+00:23:21,790 --> 00:23:30,630
+El tanque del inductor debería sintonizarse al tercer, quinto, séptimo, o noveno armónico: impares.
+
+206
+00:23:31,410 --> 00:23:36,070
+En ese caso, ¿qué pasa cuando sintonizas el push-pull a un armónico?
+
+207
+00:23:37,600 --> 00:23:43,870
+La desintonía del tanque es insignificante, mucho menor que en el primer armónico.
+
+208
+00:23:44,510 --> 00:23:56,630
+Si lo sintonizas así, verás que al conectar la carga en un armónico impar, el consumo del push-pull o no cambia o sube.
+
+209
+00:23:57,210 --> 00:23:59,330
+El tanque se vuelve estable.
+
+210
+00:23:59,450 --> 00:24:06,850
+Y así podemos, sintonizando el tanque del inductor a un armónico, alcanzar la frecuencia que realmente necesitamos.
+
+211
+00:24:07,310 --> 00:24:09,790
+En este caso, aplicado a mi bobina.
+
+212
+00:24:09,930 --> 00:24:14,230
+Para mí la frecuencia debe ser 90,8 kHz.
+
+213
+00:24:14,810 --> 00:24:17,210
+Sintonizo al quinto armónico.
+
+214
+00:24:17,730 --> 00:24:23,590
+Para mí, en el quinto armónico, mi push-pull debe correr a 18 kHz.
+
+215
+00:24:24,490 --> 00:24:30,050
+Eso es 18 kHz más otro 0,1 kHz cuando obtienes sintonía precisa.
+
+216
+00:24:30,550 --> 00:24:36,930
+Así que mi push-pull corre como el tuyo, a unos 18,1 kHz.
+
+217
+00:24:38,030 --> 00:24:43,730
+Y el circuito tanque del inductor tiene una frecuencia de 90,8 kHz.
+
+218
+00:24:44,250 --> 00:24:48,930
+Nada sobrenatural, simplemente corriendo en un armónico.
+
+219
+00:24:49,690 --> 00:24:58,050
+Tienes que entender que el campo eléctrico del Tesla no puede influir en
+
+220
+00:25:02,450 --> 00:25:12,010
+el campo magnético rotando en el inductor en el momento en que el push-pull dispara.
+
+221
+00:25:12,110 --> 00:25:15,730
+Es decir, necesitamos crear oscilaciones libres en el tanque.
+
+222
+00:25:16,230 --> 00:25:24,270
+Puedes comparar con un volante de inercia que empujamos y gira un número de veces por su cuenta.
+
+223
+00:25:24,630 --> 00:25:41,090
+Trabajar con el Tesla a través del campo magnético, durante las oscilaciones libres del campo magnético, y por lo tanto también del movimiento de corriente, es la única manera en que nuestro sistema puede funcionar.
+
+224
+00:25:41,430 --> 00:25:47,290
+Cuando corremos en el primer armónico de resonancia LC, no obtendremos nada así.
+
+225
+00:25:47,970 --> 00:25:52,450
+Entonces: tercer, quinto, séptimo o noveno armónico.
+
+226
+00:25:52,530 --> 00:25:59,330
+No vayas más alto que el noveno: el factor Q cae.
+
+227
+00:26:00,190 --> 00:26:00,670
+No vale la pena.
+
+228
+00:26:00,870 --> 00:26:02,170
+Pregunta 4.
+
+229
+00:26:03,170 --> 00:26:15,170
+Empezó a aparecer información en internet sobre un "glitch" del chip TL-494 que te permite llevar este sistema a modo de operación.
+
+230
+00:26:15,710 --> 00:26:18,070
+¿Has oído de esto, y qué es?
+
+231
+00:26:20,710 --> 00:26:22,190
+Analicemos este proceso.
+
+232
+00:26:22,430 --> 00:26:40,850
+Sí, la gente que logra obtener ganancia de estos sistemas, o llevarlos a algún modo de operación, sí usan lo que se ha llamado un "glitch del chip".
+
+233
+00:26:41,570 --> 00:26:46,870
+Pero en este caso, en realidad no hay un glitch del chip.
+
+234
+00:26:47,590 --> 00:26:49,330
+El proceso aquí es muy simple.
+
+235
+00:26:50,490 --> 00:26:57,510
+Se forma una realimentación entre el chip controlador y el sistema.
+
+236
+00:26:58,370 --> 00:27:11,570
+Se forma cuando hay influencia o en el pin 3, más a menudo el pin 4, o en el pin 5 de ajuste de frecuencia donde se encuentra el capacitor de ajuste de frecuencia.
+
+237
+00:27:13,510 --> 00:27:24,830
+Porque este chip no está blindado, y se sienta cerca de la antena misma o cerca de la bobina Tesla de alta tensión.
+
+238
+00:27:26,990 --> 00:27:28,810
+Veámoslo con más detalle.
+
+239
+00:27:28,890 --> 00:27:29,770
+¿Qué pasa?
+
+240
+00:27:29,930 --> 00:27:37,050
+Cuando el tanque del inductor está funcionando, tenemos un campo magnético.
+
+241
+00:27:38,230 --> 00:27:56,010
+Este campo magnético tiene cierto diámetro alrededor del sistema, y justo encima del inductor está la antena Tesla, en la que aparece un campo eléctrico cuando la encendemos.
+
+242
+00:27:56,530 --> 00:28:04,690
+El campo eléctrico del Tesla tiene un diámetro mucho mayor, y los chips pueden quedar dentro de su influencia.
+
+243
+00:28:05,270 --> 00:28:07,390
+Y ocurre este fenómeno interesante.
+
+244
+00:28:08,210 --> 00:28:23,430
+El campo magnético modula el campo eléctrico, y como el campo eléctrico del Tesla tiene un diámetro grande, debido al ensamblaje pobre o cables largos puedes obtener un pickup
+
+245
+00:28:23,650 --> 00:28:31,270
+en los pines 3, 4 o 5 de este chip.
+
+246
+00:28:31,810 --> 00:28:33,850
+¿Qué puede pasar como resultado?
+
+247
+00:28:34,250 --> 00:28:46,690
+El ciclo útil de salida del chip puede cambiar, la frecuencia puede desplazarse dentro de algún rango, o puede dejar de funcionar por completo.
+
+248
+00:28:48,390 --> 00:29:04,430
+Hay una característica desagradable: con un cambio de ciclo útil, los transistores del push-pull pueden explotar, porque el chip comienza a trabajar erráticamente por el pickup fuerte y los canales se solapan.
+
+249
+00:29:04,430 --> 00:29:05,850
+En el ciclo útil de salida.
+
+250
+00:29:05,930 --> 00:29:07,530
+Esto es lo que suele pasar.
+
+251
+00:29:08,110 --> 00:29:12,590
+Pero este efecto se puede usar a nuestro beneficio en el sistema.
+
+252
+00:29:13,390 --> 00:29:14,410
+¿Cómo hacerlo?
+
+253
+00:29:14,590 --> 00:29:31,130
+Tienes que entender que cuando creamos oscilaciones sinusoidales limpias en el inductor, tienen la misma amplitud, semiperiodo positivo igual en amplitud al semiperiodo negativo,
+
+254
+00:29:31,130 --> 00:29:41,990
+tales oscilaciones armónicas, como la corriente directa, son un fenómeno normal para el medio.
+
+255
+00:29:42,210 --> 00:29:54,930
+Para el medio, básicamente. Y cuando hay sesgo del campo magnético, varias longitudes que las sintonizan, el sistema entra en desequilibrio, se vuelve asimétrico.
+
+256
+00:29:54,930 --> 00:29:55,650
+En un sistema asimétrico.
+
+257
+00:29:56,250 --> 00:30:05,550
+Este comportamiento anómalo es percibido por el medio como una perturbación mayor que necesita ser suprimida.
+
+258
+00:30:05,710 --> 00:30:07,250
+Y responde fuerte.
+
+259
+00:30:07,390 --> 00:30:14,050
+Así es como la gente alcanza este modo de operación y ve algo de ganancia.
+
+260
+00:30:14,610 --> 00:30:27,090
+La ganancia será significativa: incluso puede llevar el sistema al llamado autorun, cuando el sistema comienza a correr por sí solo.
+
+261
+00:30:27,210 --> 00:30:29,430
+Pero este modo es muy inestable.
+
+262
+00:30:29,530 --> 00:30:39,950
+Es un proceso descontrolado que a menudo se sale de control y lleva a la falla de la electrónica en el sistema.
+
+263
+00:30:40,730 --> 00:30:46,090
+Puedes usarlo, pero no lo recomiendo.
+
+264
+00:30:46,190 --> 00:30:49,350
+El proceso necesita hacerse más controlable.
+
+265
+00:30:49,450 --> 00:30:55,490
+El sistema realmente funciona como un organismo vivo, así que se necesita una configuración compleja.
+
+266
+00:30:55,510 --> 00:31:05,670
+Para la gente que gana con este principio, repito, el Tesla no está trabajando como debería para obtener potencia decente.
+
+267
+00:31:05,810 --> 00:31:13,090
+Todo el sistema está descoordinado y no obtendrás grandes potencias de él.
+
+268
+00:31:13,210 --> 00:31:20,490
+Debido al sesgo de los campos magnético y eléctrico, puedes ver algo de ganancia en este sistema.
+
+269
+00:31:21,930 --> 00:31:23,510
+Suerte a todos con sus experimentos.
+
+270
+00:31:25,270 --> 00:31:26,050
+Mis mejores deseos.

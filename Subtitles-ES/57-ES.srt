@@ -1,0 +1,1279 @@
+1
+00:00:00,620 --> 00:00:02,060
+Hola a todos.
+
+2
+00:00:03,140 --> 00:00:11,240
+Hoy voy a recorrer el método para encontrar la frecuencia de operación del push-pull para esta bobina.
+
+3
+00:00:11,400 --> 00:00:19,360
+Para que ocurran procesos ondulatorios dentro de ella, y la bobina se caliente sin carga.
+
+4
+00:00:20,580 --> 00:00:23,240
+Es decir, para que la corriente realmente aumente en el sistema.
+
+5
+00:00:23,620 --> 00:00:32,600
+Ahora la probaremos y veremos qué frecuencias siempre termina usando la gente versus cuáles realmente se necesitan.
+
+6
+00:00:33,380 --> 00:00:45,020
+Para esto necesitamos esta herramienta auxiliar: un anillo de ferrita, marca 1500-2000, puede ser mayor, no importa.
+
+7
+00:00:45,360 --> 00:00:50,700
+Devana 8-10 vueltas; no se necesita resistencia, no estamos rastreando la fase exacta.
+
+8
+00:00:51,460 --> 00:00:59,460
+Solo necesitamos conocer la amplitud de corriente en el sistema.
+
+9
+00:01:00,160 --> 00:01:01,800
+Así funciona.
+
+10
+00:01:02,000 --> 00:01:17,360
+Cuando la corriente eléctrica se mueve por un conductor, o las cargas están estacionarias pero ocurre rotación de espín, se forma un campo magnético alrededor del conductor.
+
+11
+00:01:17,360 --> 00:01:30,300
+Cuando pones este anillo sobre el conductor, captura el campo magnético y las vueltas lo convierten en un voltaje que podemos leer en el osciloscopio.
+
+12
+00:01:31,260 --> 00:01:48,660
+Para seguir el movimiento de corriente en esta bobina, necesitamos cortocircuitar los terminales de la bobina entre sí físicamente, galvánicamente, y eso nos permite ver cuándo la bobina trabaja en modo media onda.
+
+13
+00:01:50,620 --> 00:01:51,880
+¿Por dónde empezamos?
+
+14
+00:01:52,940 --> 00:01:56,780
+Pon el anillo sobre uno de los terminales, con los terminales cortocircuitados,
+
+15
+00:01:59,870 --> 00:02:05,110
+haz buen contacto y conecta el osciloscopio.
+
+16
+00:02:07,370 --> 00:02:08,870
+La fase no importa.
+
+17
+00:02:12,360 --> 00:02:14,620
+Común y la sonda en sí.
+
+18
+00:02:16,220 --> 00:02:22,880
+Para instrumentos también necesitaremos un generador de señales y un osciloscopio.
+
+19
+00:02:23,820 --> 00:02:30,820
+La salida del generador de señales se conecta directamente al inductor de la bobina.
+
+20
+00:02:31,700 --> 00:02:35,760
+Y luego veremos qué aparece en los instrumentos.
+
+21
+00:02:37,220 --> 00:02:39,260
+Ahora vemos...
+
+22
+00:02:42,880 --> 00:02:47,540
+metamos 5 kHz para empezar.
+
+23
+00:02:48,080 --> 00:02:50,640
+Metemos una onda sinusoidal,
+
+24
+00:02:53,900 --> 00:02:55,780
+amplitud encendida.
+
+25
+00:02:56,260 --> 00:03:00,340
+Nuestra amplitud pico a pico es 10 voltios.
+
+26
+00:03:02,640 --> 00:03:09,060
+Y ahora barreremos la frecuencia y observaremos qué ocurre en el oscilograma.
+
+27
+00:03:12,600 --> 00:03:26,940
+Pasando por el rango usual de operación, en algún lugar entre 10 y 45-50 kHz.
+
+28
+00:03:27,840 --> 00:03:32,320
+Donde prácticamente todos trabajan.
+
+29
+00:03:32,420 --> 00:03:44,380
+Y vemos que quedarse en torno a 25 kHz no tiene sentido, porque la amplitud de corriente está en su mínimo a esa frecuencia.
+
+30
+00:03:45,540 --> 00:03:46,300
+Seguimos.
+
+31
+00:03:49,400 --> 00:03:54,740
+Pasamos los 60 kHz, y la amplitud está empezando a crecer.
+
+32
+00:03:57,220 --> 00:03:58,120
+Mirando más allá.
+
+33
+00:04:00,500 --> 00:04:06,260
+Mira el rango por el que hemos pasado.
+
+34
+00:04:06,600 --> 00:04:17,860
+La amplitud ahora está en 0,2 V por división.
+
+35
+00:04:20,500 --> 00:04:23,320
+Nada destacable todavía.
+
+36
+00:04:24,340 --> 00:04:25,420
+Seguimos.
+
+37
+00:04:34,060 --> 00:04:36,740
+La amplitud no está cambiando mucho.
+
+38
+00:04:37,720 --> 00:04:43,040
+Podemos acelerar las cosas, no de 1 kHz a la vez, 10 kHz.
+
+39
+00:04:43,380 --> 00:04:51,520
+Mira, ya en 500 kHz y la amplitud no se ha movido significativamente.
+
+40
+00:04:58,300 --> 00:05:08,340
+Y solo a partir de 800 kHz vemos un salto en la amplitud.
+
+41
+00:05:10,700 --> 00:05:13,720
+La amplitud sigue subiendo.
+
+42
+00:05:15,260 --> 00:05:20,020
+Alcanzó el máximo alrededor de 910 kHz.
+
+43
+00:05:21,860 --> 00:05:25,480
+Un push-pull obviamente no puede trabajar a esa frecuencia.
+
+44
+00:05:26,820 --> 00:05:31,980
+Tenemos una opción: trabajar en una submúltipla de esta frecuencia.
+
+45
+00:05:32,120 --> 00:05:37,560
+Si aquí son 910 kHz, podemos trabajar a 91 kHz.
+
+46
+00:05:38,420 --> 00:05:43,500
+Ahora verificaremos qué más podría ser interesante en esta frecuencia.
+
+47
+00:05:49,750 --> 00:06:04,610
+Si ponemos una mano sobre la bobina a esta frecuencia, podemos comprobar cómo los objetos circundantes la afectan.
+
+48
+00:06:05,670 --> 00:06:09,330
+Queremos frecuencias que sean estables.
+
+49
+00:06:10,590 --> 00:06:11,570
+Observando.
+
+50
+00:06:16,340 --> 00:06:21,040
+Ahora pondré la mano sobre la bobina y veremos la amplitud.
+
+51
+00:06:23,740 --> 00:06:27,520
+Pongo la mano, puedes ver que la amplitud crece.
+
+52
+00:06:27,720 --> 00:06:31,460
+La pongo aquí en la zona del bobinado inverso.
+
+53
+00:06:32,820 --> 00:06:34,480
+La amplitud crece.
+
+54
+00:06:36,400 --> 00:06:38,900
+Ahora sigamos barriendo la frecuencia.
+
+55
+00:06:39,900 --> 00:06:42,000
+980 kHz.
+
+56
+00:06:42,080 --> 00:06:43,420
+La amplitud crece aquí también.
+
+57
+00:06:44,660 --> 00:06:46,600
+1000 kHz.
+
+58
+00:06:46,820 --> 00:06:48,500
+Pequeño crecimiento también.
+
+59
+00:06:50,140 --> 00:06:52,940
+1100 kHz.
+
+60
+00:06:52,940 --> 00:06:54,700
+El crecimiento es mínimo.
+
+61
+00:06:55,620 --> 00:07:07,500
+Nuestra ventana de oportunidad sale en algún lugar de 850 a 1100 kHz.
+
+62
+00:07:07,500 --> 00:07:12,480
+Encontramos nuestro primer rango, y ahora podemos anotarlo.
+
+63
+00:07:14,520 --> 00:07:15,480
+Anotándolo.
+
+64
+00:07:23,820 --> 00:07:28,740
+830-1100 kHz.
+
+65
+00:07:29,300 --> 00:07:35,360
+Esa es nuestra ventana para la submúltipla con la que intentaremos correr el push-pull.
+
+66
+00:07:36,360 --> 00:07:51,620
+A continuación veremos si hay algún componente de corriente de mayor frecuencia en el sistema donde el crecimiento de corriente sea aún mayor.
+
+67
+00:07:52,260 --> 00:07:53,380
+Barriendo por frecuencia.
+
+68
+00:08:01,340 --> 00:08:07,080
+Barriendo por el rango y no aparece crecimiento significativo de amplitud.
+
+69
+00:08:09,000 --> 00:08:12,260
+Buscando el siguiente salto claro.
+
+70
+00:08:17,820 --> 00:08:21,360
+Paso de 10 kHz, eso es aceptable.
+
+71
+00:08:22,620 --> 00:08:26,700
+En 3800 la amplitud en realidad baja.
+
+72
+00:08:29,060 --> 00:08:33,060
+Aquí, lo atrapamos.
+
+73
+00:08:34,060 --> 00:08:44,160
+Comenzando en 3910 kHz tenemos un fuerte aumento de amplitud.
+
+74
+00:08:45,680 --> 00:08:47,500
+Ahora barremos con más cuidado.
+
+75
+00:08:50,280 --> 00:08:52,060
+Subiendo, subiendo.
+
+76
+00:08:53,620 --> 00:08:59,080
+Buen crecimiento, incluso se puede cambiar el barrido a medio voltio por división.
+
+77
+00:09:00,980 --> 00:09:03,720
+Aún viendo crecimiento.
+
+78
+00:09:05,940 --> 00:09:08,320
+1 voltio por división.
+
+79
+00:09:13,850 --> 00:09:23,590
+Y aquí empieza la caída en unos 4650 kHz.
+
+80
+00:09:25,170 --> 00:09:31,570
+Amplitud máxima en 4620-630.
+
+81
+00:09:32,570 --> 00:09:36,910
+Ese es nuestro segundo máximo.
+
+82
+00:09:37,250 --> 00:09:38,550
+Anotándolo.
+
+83
+00:09:47,890 --> 00:09:52,770
+4620-4630 kHz.
+
+84
+00:09:54,530 --> 00:09:58,050
+Veamos el efecto de poner una mano cerca de la bobina a esta frecuencia.
+
+85
+00:09:58,050 --> 00:10:03,330
+A esas frecuencias tan altas, las pérdidas suelen aparecer.
+
+86
+00:10:06,170 --> 00:10:11,870
+Estas frecuencias no son tan estables, pero la amplitud está en su pico.
+
+87
+00:10:12,390 --> 00:10:13,730
+Es un proceso normal.
+
+88
+00:10:15,610 --> 00:10:18,890
+Veamos, tal vez encontremos algo más.
+
+89
+00:10:23,180 --> 00:10:25,380
+A continuación, disminución de amplitud.
+
+90
+00:10:32,830 --> 00:10:36,590
+Yendo más rápido, pasos de 100 kHz.
+
+91
+00:10:37,290 --> 00:10:39,510
+Hay otro pico pequeño aquí.
+
+92
+00:10:40,430 --> 00:10:42,690
+Encontré uno en 7600.
+
+93
+00:10:43,930 --> 00:10:47,790
+Estas frecuencias son demasiado altas para sernos útiles ya.
+
+94
+00:10:47,950 --> 00:10:52,970
+Y más allá, en 11 MHz.
+
+95
+00:10:54,130 --> 00:10:58,770
+Una frecuencia tan alta queda fuera de alcance para nuestros sistemas, no se necesita.
+
+96
+00:10:58,770 --> 00:11:01,950
+Y a esa frecuencia, los resultados son muy inestables.
+
+97
+00:11:02,350 --> 00:11:05,610
+En 8800, la amplitud no es tan grande.
+
+98
+00:11:05,710 --> 00:11:09,790
+Y el efecto de tocar la bobina es enorme.
+
+99
+00:11:11,690 --> 00:11:19,790
+En la práctica, identificamos dos frecuencias de operación donde la corriente está en su máximo.
+
+100
+00:11:19,850 --> 00:11:21,150
+Una de ellas es estable.
+
+101
+00:11:26,310 --> 00:11:28,290
+Nuestros próximos pasos.
+
+102
+00:11:28,290 --> 00:11:33,290
+Ahora necesitamos encontrar una submúltipla dentro de este rango.
+
+103
+00:11:34,310 --> 00:11:40,970
+Que, por análisis de espectro, alcance esta frecuencia fuerte.
+
+104
+00:11:42,250 --> 00:11:51,330
+Y cuyo, digamos, décimo armónico excitaría una de las frecuencias en este rango.
+
+105
+00:11:53,290 --> 00:12:00,750
+A continuación necesitaremos cambiar el osciloscopio a modo analizador de espectro.
+
+106
+00:12:01,250 --> 00:12:05,010
+El llamado modo FFT: transformada rápida de Fourier.
+
+107
+00:12:05,790 --> 00:12:10,150
+Y verificar el espectrograma de esta señal.
+
+108
+00:12:10,150 --> 00:12:21,790
+Entonces, nuestra ventana de oportunidad es de 83 a 110 kHz, como submúltipla.
+
+109
+00:12:23,390 --> 00:12:30,310
+Cambiando el osciloscopio a modo analizador de espectro.
+
+110
+00:12:32,930 --> 00:12:35,210
+Aquí está, modo FFT.
+
+111
+00:12:39,220 --> 00:12:45,340
+Y qué saber sobre las mediciones de esta manera.
+
+112
+00:12:46,360 --> 00:12:59,240
+En realidad no puedes medir los armónicos de la señal con una onda sinusoidal, aparecerían en el espectro como gráficos en decibelios.
+
+113
+00:12:59,360 --> 00:13:02,580
+Con una señal sinusoidal.
+
+114
+00:13:03,580 --> 00:13:07,580
+Déjame mostrarte.
+
+115
+00:13:10,080 --> 00:13:13,100
+Ahora mismo 83 kHz se está alimentando a la entrada.
+
+116
+00:13:15,820 --> 00:13:17,160
+Y si miramos,
+
+117
+00:13:20,790 --> 00:13:33,410
+en este modo el dispositivo solo muestra la frecuencia central que se está metiendo en la sinusoide.
+
+118
+00:13:33,410 --> 00:13:42,670
+En este caso, son 83 kHz.
+
+119
+00:13:44,470 --> 00:13:48,610
+Ahora ajustaremos el barrido por división.
+
+120
+00:13:49,390 --> 00:13:58,630
+Nos interesa un barrido de unos 50 kHz por división para el analizador de espectro.
+
+121
+00:14:00,390 --> 00:14:03,610
+Ahora podemos deshabilitar la primera salida,
+
+122
+00:14:07,270 --> 00:14:08,710
+para que no estorbe.
+
+123
+00:14:08,830 --> 00:14:12,870
+Y ahora podemos observar la imagen espectral.
+
+124
+00:14:14,650 --> 00:14:21,390
+Recuerda, el generador de señales está en modo sinusoidal.
+
+125
+00:14:25,030 --> 00:14:26,670
+¿Qué vemos aquí?
+
+126
+00:14:31,060 --> 00:14:38,540
+En la cruz central está la frecuencia.
+
+127
+00:14:42,280 --> 00:14:52,400
+Y si alineamos el pico central en decibelios en el centro, sabremos su frecuencia.
+
+128
+00:14:52,400 --> 00:14:59,980
+Por ejemplo, ponemos el centro aquí y vemos nuestros 83 kHz.
+
+129
+00:15:00,160 --> 00:15:02,180
+Déjame mostrar dónde se muestra.
+
+130
+00:15:03,320 --> 00:15:07,220
+En mi dispositivo, se muestra en la esquina inferior izquierda.
+
+131
+00:15:07,700 --> 00:15:12,420
+Ahí está, 83 kHz, justo en el centro.
+
+132
+00:15:14,480 --> 00:15:21,540
+Así que vemos que lo que metemos como sinusoide, el dispositivo lo detecta.
+
+133
+00:15:21,540 --> 00:15:30,160
+Para excitar armónicos, necesitamos meter una señal con flancos pronunciados.
+
+134
+00:15:30,400 --> 00:15:36,360
+Lo que significa cambiar el generador de señales a onda cuadrada.
+
+135
+00:15:37,280 --> 00:15:38,080
+Cambiando.
+
+136
+00:15:39,500 --> 00:15:43,740
+Ahora puedes ver que nuestra imagen cambió.
+
+137
+00:15:44,280 --> 00:15:58,300
+Podemos ver una serie de frecuencias escalonadas en múltiplos, distribuidas por un rango espectral.
+
+138
+00:15:58,440 --> 00:16:01,200
+Y ahora la siguiente parte del método de búsqueda.
+
+139
+00:16:02,200 --> 00:16:16,200
+Determinamos que nuestra amplitud de corriente más alta está en el rango de 4620-4630 kHz.
+
+140
+00:16:17,000 --> 00:16:32,620
+Ahora, dentro de nuestro rango de 83-110 kHz, queremos encontrar la frecuencia que dé la señal más alta en dB en esas frecuencias altas.
+
+141
+00:16:35,160 --> 00:16:36,980
+Buscando nuestra frecuencia.
+
+142
+00:16:41,520 --> 00:16:42,220
+4000...
+
+143
+00:16:44,860 --> 00:16:45,560
+600...
+
+144
+00:16:49,940 --> 00:16:52,260
+Aquí tenemos 630.
+
+145
+00:16:57,330 --> 00:16:59,370
+Afinando.
+
+146
+00:17:12,800 --> 00:17:17,160
+Ahí están, nuestros 4630 MHz.
+
+147
+00:17:17,220 --> 00:17:20,140
+Vemos que está justo en el centro.
+
+148
+00:17:20,620 --> 00:17:37,800
+Ahora, eligiendo frecuencias en nuestra ventana de oportunidad, necesitamos colocar el pico del espectrograma en el centro de la escala.
+
+149
+00:17:42,070 --> 00:17:45,850
+Y empezar a buscar por frecuencia.
+
+150
+00:17:45,870 --> 00:17:47,070
+Muy suavemente.
+
+151
+00:17:53,230 --> 00:17:56,290
+Moviéndonos en décimas de Hz.
+
+152
+00:18:00,090 --> 00:18:05,490
+Y aquí vemos, primer impacto.
+
+153
+00:18:05,490 --> 00:18:06,530
+Observando.
+
+154
+00:18:15,210 --> 00:18:24,490
+4630 en 84,2 kHz.
+
+155
+00:18:24,590 --> 00:18:25,330
+Anotándolo.
+
+156
+00:18:28,150 --> 00:18:30,950
+84,2.
+
+157
+00:18:31,630 --> 00:18:32,750
+Seguimos.
+
+158
+00:18:34,970 --> 00:18:36,030
+Ahí.
+
+159
+00:18:36,170 --> 00:18:38,190
+Vale la pena señalar,
+
+160
+00:18:38,490 --> 00:18:39,770
+84,2.
+
+161
+00:18:40,290 --> 00:18:45,210
+Hay armónicos laterales apareciendo aquí también.
+
+162
+00:18:45,370 --> 00:18:50,330
+Queremos un espectro más limpio, sin armónicos laterales.
+
+163
+00:18:57,340 --> 00:18:57,680
+Ahí.
+
+164
+00:18:58,400 --> 00:19:00,800
+Así es más o menos como debería verse la imagen.
+
+165
+00:19:04,630 --> 00:19:06,890
+Aquí hay otro impacto.
+
+166
+00:19:07,890 --> 00:19:14,630
+A 87,4 kHz.
+
+167
+00:19:14,710 --> 00:19:17,890
+Pero también vemos picos laterales.
+
+168
+00:19:20,650 --> 00:19:21,290
+Anotándolo.
+
+169
+00:19:22,050 --> 00:19:26,270
+87,4 kHz.
+
+170
+00:19:27,850 --> 00:19:28,810
+Seguimos.
+
+171
+00:19:39,400 --> 00:19:43,260
+Y aquí encontramos una frecuencia realmente buena.
+
+172
+00:19:43,260 --> 00:19:57,980
+Un impacto limpio, sin armónicos laterales fuertes: 90,8 kHz.
+
+173
+00:19:59,440 --> 00:20:00,980
+Podemos seguir.
+
+174
+00:20:07,620 --> 00:20:09,160
+Otro impacto.
+
+175
+00:20:09,160 --> 00:20:18,520
+94,5 kHz.
+
+176
+00:20:18,860 --> 00:20:21,600
+También una buena frecuencia.
+
+177
+00:20:24,060 --> 00:20:25,220
+Marcándolas.
+
+178
+00:20:26,560 --> 00:20:27,520
+Anotándolo.
+
+179
+00:20:30,200 --> 00:20:35,960
+Anotando frecuencias donde no hay armónicos laterales fuertes.
+
+180
+00:20:42,160 --> 00:20:44,080
+Seguimos.
+
+181
+00:20:50,550 --> 00:20:51,930
+Otro impacto.
+
+182
+00:20:52,070 --> 00:20:56,370
+Pero aquí ya vemos armónicos laterales fuertes.
+
+183
+00:20:57,510 --> 00:20:58,670
+Lo saltamos.
+
+184
+00:21:03,800 --> 00:21:10,540
+Armónicos laterales en 103 kHz también.
+
+185
+00:21:21,570 --> 00:21:26,710
+Armónicos laterales fuertes en 107,7 kHz también.
+
+186
+00:21:27,790 --> 00:21:32,890
+Y nuestra ventana de oportunidad termina en 110 kHz.
+
+187
+00:21:33,850 --> 00:21:35,190
+La pasamos.
+
+188
+00:21:35,570 --> 00:21:37,070
+Más allá, no nos interesa.
+
+189
+00:21:37,610 --> 00:21:43,550
+Podemos decir que tenemos dos frecuencias de operación más probables.
+
+190
+00:21:44,950 --> 00:21:52,970
+90,8 kHz y 94,5 kHz.
+
+191
+00:21:53,790 --> 00:22:01,950
+A las cuales la bobina se excita en esa frecuencia fuerte.
+
+192
+00:22:04,970 --> 00:22:13,710
+Ahora veamos cuál de estas cae en nuestro rango de 830-1100 kHz.
+
+193
+00:22:16,330 --> 00:22:20,790
+Colapsamos el espectrograma y vemos qué pasa.
+
+194
+00:22:22,970 --> 00:22:27,130
+Puedes ver que esta es la primera que estamos excitando.
+
+195
+00:22:28,390 --> 00:22:33,210
+En este momento corresponde a 111 kHz.
+
+196
+00:22:33,550 --> 00:22:40,930
+Estableciendo nuestros 90,8 kHz.
+
+197
+00:22:42,110 --> 00:22:49,970
+Y podemos ver la máxima excitación en esta zona de alta frecuencia.
+
+198
+00:22:49,970 --> 00:22:53,170
+Y aquí está uno de los picos.
+
+199
+00:22:53,850 --> 00:22:55,770
+Ahora lo examinaremos.
+
+200
+00:22:58,190 --> 00:23:00,450
+Aquí está nuestra frecuencia.
+
+201
+00:23:00,950 --> 00:23:04,950
+Primero, 90,8 kHz.
+
+202
+00:23:05,250 --> 00:23:06,490
+Y fui a mirar.
+
+203
+00:23:07,710 --> 00:23:11,150
+Aquí está el segundo pico en 276 kHz.
+
+204
+00:23:11,290 --> 00:23:13,310
+Buscando amplitud alta.
+
+205
+00:23:17,570 --> 00:23:31,730
+Y aquí vemos: uno de los picos de 90,8 kHz cae justo en 1 MHz.
+
+206
+00:23:33,750 --> 00:23:39,210
+Y vemos que encaja hermosamente en nuestra ventana de oportunidad.
+
+207
+00:23:39,210 --> 00:23:51,090
+Entonces al excitar la bobina a esta frecuencia, la impulsamos tanto con el primer componente de frecuencia estable como con el segundo.
+
+208
+00:23:51,090 --> 00:23:59,250
+Y ahora veamos 94,5 kHz.
+
+209
+00:23:59,450 --> 00:24:00,110
+Cambiando.
+
+210
+00:24:01,350 --> 00:24:06,050
+94,5.
+
+211
+00:24:07,030 --> 00:24:08,570
+Y miramos.
+
+212
+00:24:17,910 --> 00:24:27,150
+El pico más alto cae aquí también.
+
+213
+00:24:28,670 --> 00:24:39,030
+Pero la mayor estabilidad, recordemos, era cerca de 910 kHz.
+
+214
+00:24:40,230 --> 00:24:45,290
+Y la mayor ganancia cuando pusimos la mano en la bobina.
+
+215
+00:24:46,150 --> 00:24:51,170
+Y la mayor ganancia de amplitud durante la medición de amplitud.
+
+216
+00:24:51,170 --> 00:25:05,200
+Así que ahora podemos concluir que 90,8 kHz es la mejor elección para la operación del push-pull, basándonos en el espectrograma.
+
+217
+00:25:06,170 --> 00:25:07,430
+Marcándola.
+
+218
+00:25:12,800 --> 00:25:14,840
+Ese es el método de búsqueda.
+
+219
+00:25:15,840 --> 00:25:33,560
+Para verificar, podemos cambiar a nuestros 90,8 kHz, colapsar el espectrograma y verificar los picos más altos en decibelios.
+
+220
+00:25:33,560 --> 00:25:39,420
+Lo establecemos, y sí, realmente es 1 MHz exacto.
+
+221
+00:25:40,700 --> 00:25:43,720
+Y podemos cambiar a otro pico alto.
+
+222
+00:25:47,140 --> 00:25:49,460
+Aquí, el más alto.
+
+223
+00:25:51,620 --> 00:25:54,880
+Esos son nuestros 4630.
+
+224
+00:26:02,860 --> 00:26:04,400
+Aquí está ese pico.
+
+225
+00:26:10,000 --> 00:26:13,820
+Así que encontramos correctamente nuestra frecuencia.
+
+226
+00:26:15,220 --> 00:26:20,700
+También podemos hacer una verificación práctica más de las frecuencias que identificamos.
+
+227
+00:26:20,700 --> 00:26:26,200
+Comparando los patrones de batidos a diferentes frecuencias.
+
+228
+00:26:27,080 --> 00:26:32,100
+Ahora mismo se está metiendo una onda cuadrada a 91 kHz.
+
+229
+00:26:32,520 --> 00:26:37,220
+Y seguimos observando con los sensores de corriente.
+
+230
+00:26:41,670 --> 00:26:44,530
+Esta es la señal que metemos.
+
+231
+00:26:45,050 --> 00:26:50,730
+Crea oscilaciones como estas en la bobina.
+
+232
+00:26:50,730 --> 00:26:53,330
+Observaremos los batidos.
+
+233
+00:26:53,430 --> 00:26:57,230
+Colapsando el barrido y
+
+234
+00:27:12,330 --> 00:27:14,030
+vemos patrones interesantes.
+
+235
+00:27:17,950 --> 00:27:27,670
+Ahora verifiquemos si estos patrones, estos oscilogramas, se ven iguales en la otra frecuencia múltipla.
+
+236
+00:27:29,630 --> 00:27:37,090
+Metemos 910 kHz al generador de señales.
+
+237
+00:27:43,080 --> 00:27:47,740
+El osciloscopio ahora muestra la amplitud de la envolvente.
+
+238
+00:27:49,220 --> 00:27:55,560
+Y vemos que la amplitud creció, pero los batidos se conservan.
+
+239
+00:27:56,520 --> 00:27:58,680
+Misma forma.
+
+240
+00:28:02,480 --> 00:28:03,880
+Examinado...
+
+241
+00:28:04,680 --> 00:28:15,460
+Ahora el barrido es de 5 microsegundos por división.
+
+242
+00:28:18,960 --> 00:28:31,940
+Y metemos nuestra frecuencia principal fuerte: 4630 kHz.
+
+243
+00:28:53,940 --> 00:28:55,940
+Amplitud fuera de la gráfica.
+
+244
+00:28:57,260 --> 00:29:02,280
+Volviendo, y vemos la forma familiar de pez.
+
+245
+00:29:02,380 --> 00:29:08,100
+Es decir, alcanzamos la frecuencia principal fuerte para esta bobina.
+
+246
+00:29:09,760 --> 00:29:18,740
+Esto se ve al subir con una señal cuadrada, puedes cambiar a una señal sinusoidal.
+
+247
+00:29:21,100 --> 00:29:26,040
+La amplitud bajará, pero los batidos se mantienen.
+
+248
+00:29:31,730 --> 00:29:34,210
+Se puede ver con diferentes ajustes de barrido.
+
+249
+00:29:36,550 --> 00:29:40,570
+La imagen aguanta hasta
+
+250
+00:29:45,010 --> 00:29:47,970
+una onda sinusoidal en la portadora principal.
+
+251
+00:30:07,620 --> 00:30:20,200
+E igualmente, si la señal es lo suficientemente fuerte, el osciloscopio mostrará la forma de la envolvente: una onda sinusoidal sobre esos peces.
+
+252
+00:30:20,300 --> 00:30:24,680
+También podemos medir su frecuencia.
+
+253
+00:30:30,990 --> 00:30:33,710
+Cambia al modo de medición con cursor.
+
+254
+00:30:35,810 --> 00:30:37,250
+Presiona pausa.
+
+255
+00:30:38,250 --> 00:30:40,810
+Coloca el primer cursor.
+
+256
+00:30:47,910 --> 00:30:48,570
+Segundo.
+
+257
+00:30:56,140 --> 00:31:13,250
+Podemos ver que la frecuencia de nuestros batidos en esta bobina es 32,47 Hz.
+
+258
+00:31:15,330 --> 00:31:28,270
+Lo que también confirma que esto no es un pickup de la red de 50 Hz, sino procesos reales ocurriendo dentro de esta bobina.
+
+259
+00:31:32,990 --> 00:31:36,050
+Verifiqué este resultado también en la práctica.
+
+260
+00:31:37,470 --> 00:31:41,400
+Aquí se metieron 91 kHz.
+
+261
+00:31:41,400 --> 00:31:51,060
+Y esta bobina comenzó a calentarse muy bien sin carga alguna a esta frecuencia.
+
+262
+00:31:51,200 --> 00:31:55,100
+Lo que confirma que el calentamiento ocurre en esta zona.
+
+263
+00:31:56,500 --> 00:32:05,420
+Al tacto, no medí con termómetro, unos 45-50 grados.
+
+264
+00:32:05,560 --> 00:32:09,960
+Calentándose con unos 3 amperios de consumo en el push-pull.
+
+265
+00:32:11,760 --> 00:32:14,650
+La bobina se calienta sin carga.
+
+266
+00:32:15,720 --> 00:32:20,420
+Claro movimiento de corriente a lo largo del cable.
+
+267
+00:32:21,940 --> 00:32:24,100
+Que es exactamente lo que queremos.
+
+268
+00:32:26,800 --> 00:32:31,540
+No puedes hacer resonancia LC directamente en push-pull como tal.
+
+269
+00:32:31,680 --> 00:32:33,340
+Lo mostraré más tarde.
+
+270
+00:32:33,760 --> 00:32:39,180
+No puedes meter 91 kHz directamente al inductor.
+
+271
+00:32:39,780 --> 00:32:40,720
+¿Qué pasa?
+
+272
+00:32:40,820 --> 00:32:44,100
+Puedes intentarlo por supuesto, todos lo han hecho.
+
+273
+00:32:44,820 --> 00:32:46,480
+Y pasa algo interesante.
+
+274
+00:32:46,760 --> 00:32:58,080
+Si metes una frecuencia igual a la frecuencia de operación de la llave, esto es lo que obtenemos.
+
+275
+00:32:59,300 --> 00:33:00,320
+Déjame dibujarlo.
+
+276
+00:33:01,360 --> 00:33:04,320
+Digamos que esta es nuestra frecuencia de push-pull.
+
+277
+00:33:05,340 --> 00:33:17,660
+Y tenemos la señal durante la operación del transistor que estamos subiendo cada semiciclo.
+
+278
+00:33:17,660 --> 00:33:40,380
+Cuando el Tesla dispara en este punto, el golpe ocurre prácticamente en el máximo, y obtendremos lo que mucha gente ha visto en sus propios experimentos: las llaves de potencia del push-pull volándose.
+
+279
+00:33:40,380 --> 00:33:40,980
+Volándose.
+
+280
+00:33:42,200 --> 00:33:47,580
+Así que para prevenir eso, el push-pull se lleva a un modo diferente.
+
+281
+00:33:47,660 --> 00:34:14,040
+Como dibujé antes, y mucha gente preguntó por qué dibujé esa imagen en otro video, donde tengo la onda incidente, como dibujé, y la onda reflejada.
+
+282
+00:34:14,040 --> 00:34:15,260
+La reflejada.
+
+283
+00:34:15,740 --> 00:34:17,500
+Y están en fase.
+
+284
+00:34:18,540 --> 00:34:21,440
+Muchas preguntas sobre por qué lo dibujé así.
+
+285
+00:34:21,720 --> 00:34:22,820
+Como, eso está mal.
+
+286
+00:34:23,000 --> 00:34:29,980
+Todos sabemos del libro de texto que una onda reflejada regresa con 180 grados de desfase.
+
+287
+00:34:30,860 --> 00:34:31,900
+Todo cierto.
+
+288
+00:34:32,220 --> 00:34:34,960
+Esa es la reflexión de voltaje.
+
+289
+00:34:35,200 --> 00:34:37,460
+Para la corriente, no lo pensamos de esa manera.
+
+290
+00:34:37,680 --> 00:34:55,200
+Si tenemos una onda reflejada de corriente en un tanque LC con un desfase de 180 grados, eso equivale a poner dos imanes juntos con polos iguales enfrentados.
+
+291
+00:34:55,900 --> 00:35:01,140
+No verás un aumento neto de un campo magnético fuerte.
+
+292
+00:35:01,820 --> 00:35:09,900
+Por eso, en push-pull, obtenemos la onda incidente y reflejada en fase.
+
+293
+00:35:10,900 --> 00:35:24,580
+Puedes ver esto físicamente colgando un sensor de corriente en el circuito tanque del inductor.
+
+294
+00:35:26,000 --> 00:35:37,280
+Y en un solo trazo verás tanto la onda saliendo como la que regresa.
+
+295
+00:35:37,280 --> 00:35:43,690
+Copiará esta onda en fase, obtienes prácticamente esta imagen.
+
+296
+00:35:44,620 --> 00:35:49,710
+Van en fase, solo que con menor amplitud.
+
+297
+00:35:55,600 --> 00:36:13,080
+En el push-pull esto se logra eligiendo la relación correcta entre el capacitor colgado en el tanque del inductor y el capacitor colgado en la salida de nuestra bobina granada de gradiente.
+
+298
+00:36:15,040 --> 00:36:16,540
+¿Y qué pasa?
+
+299
+00:36:16,700 --> 00:36:19,840
+El push-pull corre a una frecuencia baja.
+
+300
+00:36:20,860 --> 00:36:30,920
+Pero cuando miramos en el osciloscopio, nos mostrará una frecuencia mayor que la frecuencia de la señal principal.
+
+301
+00:36:31,820 --> 00:36:40,680
+En mi caso resultó que mi frecuencia es 91 kHz.
+
+302
+00:36:42,420 --> 00:36:52,020
+Eso significa que el push-pull en realidad tiene que correr 2 veces más bajo, puede llegar a 3 veces más bajo.
+
+303
+00:36:52,460 --> 00:36:53,980
+Para obtener esta imagen.
+
+304
+00:36:54,080 --> 00:36:59,160
+En la práctica incluso obtuve 3 ondas en fase.
+
+305
+00:37:00,920 --> 00:37:08,200
+Así se ve en el sensor de corriente, una sola fase.
+
+306
+00:37:09,820 --> 00:37:15,820
+Cuando eso pasa, obtenemos un campo magnético neto fuerte.
+
+307
+00:37:16,300 --> 00:37:28,860
+Y si luego colapsamos el barrido, el tiempo por división, puedes ver algunos patrones realmente interesantes: los peces.
+
+308
+00:37:29,860 --> 00:37:32,320
+¿Por qué necesitamos ese truco?
+
+309
+00:37:33,900 --> 00:37:40,100
+Ya hablamos sobre cómo, si el Tesla golpea en la fundamental, los transistores explotan.
+
+310
+00:37:40,380 --> 00:37:54,140
+Pero si tenemos esta imagen, cuando el Tesla trabaja en oscilación libre, obtenemos un fuerte aumento de amplitud de corriente en este punto.
+
+311
+00:37:54,140 --> 00:38:06,780
+Cuando miramos el transformador de corriente vemos la imagen que mostré en el video anterior.
+
+312
+00:38:07,060 --> 00:38:12,560
+El efecto del transformador Tesla sobre la corriente en el circuito tanque.
+
+313
+00:38:13,020 --> 00:38:20,840
+La amplitud de corriente salta hacia arriba, la sinusoide crece mucho más.
+
+314
+00:38:20,840 --> 00:38:31,840
+Y al mismo tiempo, el consumo total de la fuente que alimenta el push-pull baja.
+
+315
+00:38:33,400 --> 00:38:37,580
+La amplitud de corriente crece y el consumo baja.
+
+316
+00:38:37,580 --> 00:39:03,280
+En números reales, digamos que en modo normal sin operación del Tesla el push-pull tomaba 3 amperios a 24 voltios; con la operación del Tesla activándose, en un caso consume 1 amperio a los mismos 24 voltios.
+
+317
+00:39:03,280 --> 00:39:06,820
+Misma fuente de 24 voltios.
+
+318
+00:39:09,780 --> 00:39:12,160
+Característica interesante.
+
+319
+00:39:12,300 --> 00:39:17,140
+En los próximos videos veremos cómo ocurre esto, cómo funciona.
+
+320
+00:39:20,600 --> 00:39:22,360
+Suerte a todos con sus experimentos.

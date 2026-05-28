@@ -1,0 +1,1439 @@
+1
+00:00:00,000 --> 00:00:02,700
+Buen día, estimados espectadores.
+
+2
+00:00:03,280 --> 00:00:11,740
+Hoy examinaremos un circuito diseñado para controlar un transformador Tesla basado en un inversor medio puente.
+
+3
+00:00:13,060 --> 00:00:30,840
+El generador maestro está armado con el chip TL494, y su frecuencia con valores de 150 pF y resistencia de 10 kOhm puede cambiar en el rango de 230 kHz a 640 kHz.
+
+4
+00:00:31,400 --> 00:00:47,860
+No recomiendo hacer transformadores Tesla con frecuencia por debajo de 200 kHz, ya que a esta frecuencia ya desaparece el efecto skin en la piel humana, y la corriente entonces puede penetrar bajo la piel causando quemaduras internas.
+
+5
+00:00:48,100 --> 00:00:50,220
+Es decir, por debajo de 200 kHz no vamos.
+
+6
+00:00:52,420 --> 00:01:07,380
+También, el chip cuando funciona en modo push-pull, el rango operativo máximo en tal conexión que logré llevar a 680-700 kHz.
+
+7
+00:01:07,840 --> 00:01:12,840
+Es decir, si usas esta variante, no podremos ir por encima de esta frecuencia.
+
+8
+00:01:13,300 --> 00:01:16,600
+Hay tal amortiguador de frecuencia.
+
+9
+00:01:17,600 --> 00:01:29,000
+Más adelante, después del chip y las salidas, la señal va al chip TC4093 en el cual está armado el sistema de modulación.
+
+10
+00:01:29,840 --> 00:01:36,420
+La señal moduladora la tomamos a través de un opto-driver HCPL3120.
+
+11
+00:01:37,920 --> 00:01:45,000
+Este driver está instalado aquí con el propósito de proteger nuestro generador de laboratorio de captaciones de alta frecuencia.
+
+12
+00:01:45,000 --> 00:01:48,000
+Aquí hay aislamiento óptico.
+
+13
+00:01:48,220 --> 00:01:52,440
+Y pon atención, marqué el común del generador y el común de la señal.
+
+14
+00:01:52,880 --> 00:01:56,200
+El común del generador en ningún lado se conecta al común del esquema.
+
+15
+00:01:56,340 --> 00:01:59,680
+Es decir, tenemos aislamiento total del sistema.
+
+16
+00:01:59,840 --> 00:02:10,780
+Si tu generador de pulsos rectangulares tiene una amplitud de 5 voltios, entonces ponemos una resistencia de 120 Ohm en la entrada.
+
+17
+00:02:10,780 --> 00:02:16,680
+Si la amplitud es de 12-15 V, entonces la resistencia es de 360 Ohm.
+
+18
+00:02:17,460 --> 00:02:25,660
+Más adelante, la señal moduladora del driver HCPL3120 se suministra a través de una resistencia limitadora de corriente de 47 Ohm a un interruptor.
+
+19
+00:02:26,240 --> 00:02:38,500
+El interruptor se introduce en el esquema para poder cambiar el sistema completo a modo de trabajo continuo o trabajo en modo de ráfaga con la frecuencia de modulación que está en la entrada.
+
+20
+00:02:39,380 --> 00:02:47,320
+La modulación de señal se hace directamente en el chip TC4093, ya que en su entrada tiene una lógica dos.
+
+21
+00:02:47,480 --> 00:02:56,560
+Es decir, si hay un uno lógico en cada entrada del elemento lógico, la señal pasa.
+
+22
+00:02:56,680 --> 00:03:00,900
+Si uno y cero lógico, la señal no pasa.
+
+23
+00:03:01,180 --> 00:03:03,360
+Con esto hacemos la modulación.
+
+24
+00:03:03,360 --> 00:03:12,660
+Ve que la señal moduladora viene al pin 1 del elemento lógico, y la señal del chip viene al pin 2.
+
+25
+00:03:12,660 --> 00:03:23,460
+El elemento lógico es inversor aquí, así que de la salida necesitamos suministrar a un elemento lógico más e invertir esta señal.
+
+26
+00:03:23,560 --> 00:03:27,080
+Es decir, de regreso de cero lógico a uno lógico.
+
+27
+00:03:27,080 --> 00:03:35,380
+De esta manera obtenemos un análogo de la señal que teníamos en la salida del chip TL494.
+
+28
+00:03:35,860 --> 00:03:43,080
+Y más adelante esta señal viene al driver IR2110 o IR2113.
+
+29
+00:03:44,880 --> 00:03:55,220
+Este chip es un driver push-pull capaz de trabajar en modo de esquema medio puente con alimentación bootstrap.
+
+30
+00:03:56,220 --> 00:04:01,480
+Un driver hasta 2 A en pulso, no demasiado potente.
+
+31
+00:04:02,360 --> 00:04:05,420
+Así que, aquí están los momentos principales.
+
+32
+00:04:05,920 --> 00:04:08,480
+Aquí tenemos un diodo bootstrap.
+
+33
+00:04:08,540 --> 00:04:15,420
+Usé un diodo de marca UF4007, un diodo rápido con tensión de 1000 V.
+
+34
+00:04:16,080 --> 00:04:19,680
+Y pon especial atención a este capacitor.
+
+35
+00:04:19,860 --> 00:04:22,660
+Lo marqué, capacitor de tantalio.
+
+36
+00:04:22,660 --> 00:04:24,900
+Deseable encontrar exactamente este tipo aquí.
+
+37
+00:04:25,840 --> 00:04:29,740
+Sus parámetros son aproximadamente 20 µF, 25 V.
+
+38
+00:04:30,020 --> 00:04:38,060
+Si no puedes encontrar tal en las tiendas, pon un electrolítico aquí, también de 20-25 µF, de calidad.
+
+39
+00:04:38,700 --> 00:04:46,140
+Y en paralelo a él pon un capacitor de película de alta calidad, de aproximadamente 2-5 µF.
+
+40
+00:04:47,480 --> 00:04:50,500
+Puedes reemplazar este capacitor de tantalio de esta manera.
+
+41
+00:04:51,500 --> 00:04:54,400
+Y el siguiente momento importante.
+
+42
+00:04:54,560 --> 00:04:55,420
+Aquí está marcado.
+
+43
+00:04:55,500 --> 00:05:04,340
+Cuando el esquema trabaja en modo continuo, sigue la temperatura del driver de los interruptores de potencia, subiendo suavemente la tensión de alimentación en los interruptores.
+
+44
+00:05:04,800 --> 00:05:06,300
+Este es el momento muy principal.
+
+45
+00:05:06,480 --> 00:05:10,500
+La temperatura operativa de este driver es hasta 150 grados.
+
+46
+00:05:10,500 --> 00:05:21,840
+Brevemente, si este es un driver de marca, no una falsificación china, puede soportar sobrecargas hasta 300 grados por 10 segundos.
+
+47
+00:05:21,980 --> 00:05:25,560
+Pero no recomiendo someterlo a tal prueba.
+
+48
+00:05:26,620 --> 00:05:30,860
+Yo, digamos, mantengo este chip en un modo hasta 100 grados.
+
+49
+00:05:31,860 --> 00:05:35,340
+Así que, sigo este momento.
+
+50
+00:05:35,660 --> 00:05:40,980
+De lo contrario hay riesgo de que el driver falle por una ruptura térmica interna.
+
+51
+00:05:43,180 --> 00:05:48,660
+Suavemente sube la tensión en los interruptores y sigue la temperatura.
+
+52
+00:05:48,760 --> 00:05:50,000
+Este es un momento muy importante.
+
+53
+00:05:50,000 --> 00:06:01,300
+Los transistores usados en nuestro esquema medio puente serán de la serie IRF con un valor de tensión posible desde 100 voltios.
+
+54
+00:06:01,520 --> 00:06:06,260
+Esta es la tensión entre fuente y drenaje del interruptor FET.
+
+55
+00:06:06,940 --> 00:06:09,220
+Este es el punto de fuente, source.
+
+56
+00:06:10,880 --> 00:06:25,700
+Así que, 100 V para nosotros, esto es el IRF510, y el valor máximo para el cual está diseñado el driver 2113 es trabajar con tensión suministrada de 600 voltios.
+
+57
+00:06:26,240 --> 00:06:33,580
+El driver 2110, 500 voltios pueden suministrarse en la entrada de los interruptores de potencia hasta este valor.
+
+58
+00:06:36,100 --> 00:06:45,900
+Recomiendo usar el transistor final de la serie IRF, este es el IRF840, lo apliqué aquí en mi esquema.
+
+59
+00:06:47,500 --> 00:06:52,660
+Más adelante vemos que aquí un divisor está armado en dos capacitores.
+
+60
+00:06:53,380 --> 00:07:01,020
+Estos capacitores es deseable tomarlos de grandes dimensiones, los tomé de 630 voltios, 4,7 µF.
+
+61
+00:07:01,020 --> 00:07:04,360
+También nos forman el punto medio.
+
+62
+00:07:05,200 --> 00:07:15,240
+La característica del esquema medio puente es que divide la tensión de entrada aplicada a los interruptores por la mitad en este punto.
+
+63
+00:07:16,120 --> 00:07:21,720
+Si lo deseas, este esquema medio puente puede convertirse muy fácilmente en un puente completo.
+
+64
+00:07:21,720 --> 00:07:25,760
+Para este propósito toma un driver análogo más.
+
+65
+00:07:26,420 --> 00:07:32,620
+Armado también esta parte completa con interruptores de potencia y conectado solo estos capacitores.
+
+66
+00:07:33,840 --> 00:07:38,280
+Y la conexión es toda exactamente igual a este esquema.
+
+67
+00:07:38,360 --> 00:07:45,740
+Solo allí la señal de control se suministra en diagonal.
+
+68
+00:07:45,740 --> 00:07:57,160
+Si aquí vemos que del pin 11 al pin 10, entonces en el segundo chip la señal se suministrará del pin 11 al pin 12.
+
+69
+00:07:57,220 --> 00:08:01,840
+Es decir, suministra en diagonal para que nuestros interruptores también trabajen en diagonal.
+
+70
+00:08:02,360 --> 00:08:12,200
+Entre el punto medio que forman los divisores de capacitor y el punto medio entre los interruptores de potencia está ubicada nuestra carga.
+
+71
+00:08:12,200 --> 00:08:17,360
+En este caso donde se aplicó este esquema, es el inductor del transformador Tesla.
+
+72
+00:08:18,080 --> 00:08:33,560
+Como nuestro inductor tiene una longitud del orden de varios metros, en el rango de 3-4, pequeña resistencia, pequeña inductancia, las corrientes a través de los interruptores de potencia en modo continuo del trabajo del esquema pueden ser significativas.
+
+73
+00:08:34,560 --> 00:08:40,940
+Generalmente, este esquema fue desarrollado específicamente para trabajo en modo de modulación.
+
+74
+00:08:40,940 --> 00:08:53,060
+Ya que cuando el transformador Tesla trabaja en modo continuo, todos los momentos interesantes conectados con la interacción del transformador Tesla con el entorno circundante no se observan en nosotros.
+
+75
+00:08:54,060 --> 00:09:01,380
+Así que aquí se aplica en trabajo con modulación.
+
+76
+00:09:01,380 --> 00:09:15,700
+Quien opere un transformador Tesla en modo continuo sin modulación, entonces debes definitivamente seguir la temperatura aquí, un momento importante para no quemar el driver.
+
+77
+00:09:16,460 --> 00:09:24,940
+Y este inductor bobinado con mayor metraje, elegido según tu transformador Tesla.
+
+78
+00:09:25,480 --> 00:09:29,640
+Ahora examinemos nuestro dispositivo directamente en el físico.
+
+79
+00:09:29,640 --> 00:09:39,760
+Hice esta construcción en forma de estantería para poder hacer una reparación cómoda si fuera necesario.
+
+80
+00:09:40,100 --> 00:09:53,980
+En la parte superior del dispositivo está el control, el chip TL494, TC4093, y el opto-driver HCPL3120.
+
+81
+00:09:53,980 --> 00:09:58,800
+Este es el interruptor mostrado en el esquema que enciende la modulación.
+
+82
+00:09:59,700 --> 00:10:04,420
+Y ve aquí dos resistencias de ajuste multivuelta.
+
+83
+00:10:05,080 --> 00:10:15,180
+Una resistencia es responsable de la frecuencia, esta es la de 10 kOhm, y la otra resistencia es responsable de la duración de las señales de control.
+
+84
+00:10:16,180 --> 00:10:29,220
+También si está marcado aquí como duración de pulso, cambia la duración de las señales de control, de esta manera podemos limitar la corriente en la salida de nuestro inversor medio puente.
+
+85
+00:10:30,380 --> 00:10:36,640
+Esta es una de las variantes de ajuste que se puede hacer en este esquema.
+
+86
+00:10:37,000 --> 00:10:44,700
+Este es el regulador, el estabilizador, y capacitores auxiliares.
+
+87
+00:10:44,940 --> 00:10:56,640
+Los interruptores están ubicados en disipadores frente a frente sobre sustratos dieléctricos untados con pasta térmica.
+
+88
+00:10:58,500 --> 00:11:07,420
+Así se ven los capacitores de 4,7 µF a 630 V, aquí está el par de ellos.
+
+89
+00:11:07,920 --> 00:11:10,680
+Aquí está un capacitor, y allí adentro está el segundo.
+
+90
+00:11:11,400 --> 00:11:16,140
+Esto está todo armado en una placa, directamente con los interruptores de potencia.
+
+91
+00:11:17,040 --> 00:11:20,980
+Aquí puedes ver el driver IR2113.
+
+92
+00:11:20,980 --> 00:11:32,900
+Y desde la parte inferior del esquema está atornillado el convertidor DC-DC que convierte 12 V de la batería a 16 V.
+
+93
+00:11:33,360 --> 00:11:43,640
+Intento trabajar con un voltaje de 16-18 V para tener una apertura de calidad de las compuertas de los interruptores de potencia.
+
+94
+00:11:43,640 --> 00:11:50,140
+Si no tienes tal convertidor, también puede adquirirse separadamente en tiendas de radio.
+
+95
+00:11:50,420 --> 00:11:57,840
+Entonces puedes aplicar 12 V directamente de la batería en este punto de alimentación.
+
+96
+00:11:58,400 --> 00:12:01,980
+El esquema funcionará, nada terrible sucederá.
+
+97
+00:12:02,420 --> 00:12:05,580
+Simplemente aplico tales sistemas, más cómodo.
+
+98
+00:12:05,620 --> 00:12:11,980
+Aquí aislamiento galvánico total, y puedo conectar tal convertidor casero.
+
+99
+00:12:11,980 --> 00:12:17,760
+A la fuente de laboratorio, y no a la batería.
+
+100
+00:12:19,500 --> 00:12:23,340
+Así que, en principio no hay más aquí.
+
+101
+00:12:23,660 --> 00:12:32,480
+Aquí posicionados uno frente al otro sobre sustratos dieléctricos untados con pasta térmica.
+
+102
+00:12:33,980 --> 00:12:41,780
+Así que, así se ven los capacitores de 4,7 µF 630 V.
+
+103
+00:12:41,980 --> 00:12:46,100
+Aquí está un capacitor, y allí adentro está el segundo.
+
+104
+00:12:46,760 --> 00:12:51,600
+Esto está todo armado en una placa, directamente con los interruptores de potencia.
+
+105
+00:12:52,460 --> 00:12:56,420
+Aquí puedes ver el driver IR2113.
+
+106
+00:12:57,380 --> 00:13:02,240
+Y desde la parte inferior del esquema está atornillado exactamente el convertidor DC-DC.
+
+107
+00:13:02,320 --> 00:13:08,300
+Este, que convierte 12 V de la batería a 16 V.
+
+108
+00:13:08,300 --> 00:13:18,300
+Intento trabajar con tensión de 16-18 V para tener apertura de calidad de las compuertas de los interruptores de potencia.
+
+109
+00:13:19,240 --> 00:13:25,560
+Pero si no tienes tal convertidor, también puede adquirirse separadamente en tiendas de radio.
+
+110
+00:13:25,780 --> 00:13:33,260
+Entonces puedes aplicar 12 V directamente de la batería en este punto de alimentación.
+
+111
+00:13:33,820 --> 00:13:37,400
+El esquema funcionará, nada terrible sucederá.
+
+112
+00:13:38,300 --> 00:13:40,640
+Simplemente es más cómodo aplicar tales sistemas.
+
+113
+00:13:41,100 --> 00:13:53,140
+Aquí aislamiento galvánico total, y puedo conectar tal convertidor casero a la fuente de laboratorio, y no a la batería.
+
+114
+00:13:53,540 --> 00:13:55,820
+Pon atención a este capacitor.
+
+115
+00:13:55,960 --> 00:13:57,300
+Recomiendo usar...
+
+116
+00:13:57,820 --> 00:14:00,800
+Aquí es 150 pF, esto está en el esquema.
+
+117
+00:14:01,360 --> 00:14:05,200
+Recomiendo usar capacitores con TKE pequeño aquí.
+
+118
+00:14:05,200 --> 00:14:12,700
+Es decir, este coeficiente que muestra la dependencia de la deriva de capacidad de un capacitor con la temperatura ambiente.
+
+119
+00:14:13,260 --> 00:14:17,120
+En este caso usé capacitores tubulares soviéticos.
+
+120
+00:14:17,940 --> 00:14:25,360
+Ahora puedes usar capacitores SMD, disponibles en piezas de radio en las tiendas.
+
+121
+00:14:26,620 --> 00:14:31,900
+Así que, aquí se suministra la entrada de la señal moduladora.
+
+122
+00:14:32,880 --> 00:14:37,120
+Bueno, y eso es todo, no hay mucho más aquí para nosotros.
+
+123
+00:14:38,320 --> 00:14:43,200
+Ahora pasemos a ver los oscilogramas del trabajo de nuestro dispositivo.
+
+124
+00:14:43,700 --> 00:14:53,260
+Así que, primero armé esta parte del dispositivo completamente a través de la alimentación del driver y revisé separadamente.
+
+125
+00:14:53,820 --> 00:15:00,260
+Ahora las puntas del osciloscopio están en estos puntos, después de la resistencia de 33 Ohm.
+
+126
+00:15:02,080 --> 00:15:07,000
+Se suministra alimentación al esquema y observamos el oscilograma.
+
+127
+00:15:08,140 --> 00:15:16,620
+Aquí ves que tenemos dos señales, son antifase, entre ellas hay una pausa obligatoria.
+
+128
+00:15:17,740 --> 00:15:22,700
+También podemos verificar la regulación de frecuencia y duración.
+
+129
+00:15:23,200 --> 00:15:26,600
+Ahora rotaré la resistencia de ajuste.
+
+130
+00:15:27,740 --> 00:15:29,300
+La frecuencia cambia para nosotros.
+
+131
+00:15:32,880 --> 00:15:34,940
+El sistema funciona.
+
+132
+00:15:35,700 --> 00:15:41,920
+Bueno, y también puedes verificar cómo cambia la duración del pulso.
+
+133
+00:15:43,720 --> 00:15:50,600
+La segunda resistencia de ajuste debe cambiar suavemente.
+
+134
+00:16:01,740 --> 00:16:04,280
+Las resistencias aquí son multivuelta.
+
+135
+00:16:05,280 --> 00:16:07,500
+No se desenroscarán hasta el final.
+
+136
+00:16:07,600 --> 00:16:10,720
+Puedes ver que el pulso claramente cambia su duración.
+
+137
+00:16:11,540 --> 00:16:13,540
+Y también en dirección inversa.
+
+138
+00:16:15,840 --> 00:16:17,880
+Aquí está nuestra frecuencia.
+
+139
+00:16:19,500 --> 00:16:20,760
+Todo funciona.
+
+140
+00:16:20,960 --> 00:16:31,600
+Ahora al cambiar el interruptor a modo de modulación, la señal debe desaparecer totalmente porque la señal de modulación no se suministra en la entrada.
+
+141
+00:16:31,600 --> 00:16:38,280
+Ahora conectemos la señal de entrada y miremos cómo trabajará el esquema con su presencia.
+
+142
+00:16:38,540 --> 00:16:42,720
+Interruptor cambiado a modo de modulación y aplico la señal moduladora.
+
+143
+00:16:45,300 --> 00:16:48,940
+Aquí ves un cambio característico.
+
+144
+00:16:51,640 --> 00:16:59,740
+Ahora detendré la señal y puedes ver que nuestro esquema cambió a modo de ráfagas de pulsos.
+
+145
+00:17:00,290 --> 00:17:11,020
+Como el osciloscopio ahora no está sincronizado con la señal de entrada, observaremos su sacudida adelante y atrás.
+
+146
+00:17:11,180 --> 00:17:16,300
+Ahora cambiaremos la duración de la señal moduladora.
+
+147
+00:17:16,580 --> 00:17:21,740
+40%, 30%, 20%, 10%.
+
+148
+00:17:23,860 --> 00:17:32,900
+La sincronización captó bien la señal y se ve que tenemos una ráfaga de pulsos.
+
+149
+00:17:34,700 --> 00:17:42,820
+Puedes examinar también en la pausa, también en esta ráfaga la señal está claramente en antifase, no va a ningún lado.
+
+150
+00:17:43,080 --> 00:17:45,000
+Es decir, el sistema trabaja establemente.
+
+151
+00:17:45,000 --> 00:17:47,060
+Más adelante reduzco la duración.
+
+152
+00:17:48,340 --> 00:17:54,280
+La duración hace solo 1%.
+
+153
+00:17:55,720 --> 00:17:58,420
+Tal ráfaga corta.
+
+154
+00:17:59,820 --> 00:18:01,560
+Más adelante reduzco.
+
+155
+00:18:04,760 --> 00:18:07,220
+Puedes examinar también.
+
+156
+00:18:08,460 --> 00:18:10,680
+Es decir, el sistema trabaja establemente.
+
+157
+00:18:10,840 --> 00:18:16,060
+Hay 4 pulsos en un interruptor, suministrados, y 3 pulsos en el otro.
+
+158
+00:18:17,200 --> 00:18:18,160
+Reduzco más.
+
+159
+00:18:24,210 --> 00:18:27,970
+0,4% de duración de pulso.
+
+160
+00:18:28,970 --> 00:18:32,470
+Aquí ahora 0,1%.
+
+161
+00:18:32,470 --> 00:18:36,930
+Es decir, ves efectivamente una señal permaneció.
+
+162
+00:18:38,850 --> 00:18:39,770
+Abriendo.
+
+163
+00:18:39,850 --> 00:18:40,930
+Agrego duración.
+
+164
+00:18:41,670 --> 00:18:49,070
+0,2% a frecuencia de modulación hecha a frecuencia 1 kHz.
+
+165
+00:18:49,950 --> 00:18:51,890
+Tal señal tenemos.
+
+166
+00:18:52,050 --> 00:18:56,950
+Pero si ruedo, ves que efectivamente solo quedaron señales pico.
+
+167
+00:18:58,170 --> 00:19:01,910
+Tal es una comprobación de nuestra parte lógica maestra.
+
+168
+00:19:02,130 --> 00:19:03,690
+Y vemos que está funcional.
+
+169
+00:19:03,930 --> 00:19:08,210
+Ahora puedo cambiar el interruptor a modo de generación continua del esquema.
+
+170
+00:19:09,130 --> 00:19:12,370
+Y regresar al original.
+
+171
+00:19:12,590 --> 00:19:19,570
+Después de que verifiqué la parte lógica maestra, la señal se suministra ya a la parte de potencia, al driver.
+
+172
+00:19:19,810 --> 00:19:21,950
+Y paso a probarlo.
+
+173
+00:19:21,950 --> 00:19:28,730
+Ahora moveré el osciloscopio a estos puntos, en las compuertas de los transistores FET.
+
+174
+00:19:29,630 --> 00:19:32,970
+E inmediatamente quiero llamar tu atención a este momento.
+
+175
+00:19:33,190 --> 00:19:42,450
+Que necesitas mirar en el modo habitual cuando miramos el osciloscopio relativo al cable común.
+
+176
+00:19:43,110 --> 00:19:51,570
+Pero en sistemas medio puente y puente, en ningún caso puede ponerse el cable común de la segunda punta en este punto.
+
+177
+00:19:51,950 --> 00:19:59,000
+Porque cortocircuitarás cerrar este transistor a través de la sonda común del osciloscopio.
+
+178
+00:19:59,850 --> 00:20:02,910
+Y el driver puede fallar.
+
+179
+00:20:03,110 --> 00:20:07,210
+O el interruptor de potencia, si este sistema está bajo carga.
+
+180
+00:20:07,350 --> 00:20:13,610
+Es decir, haces un cortocircuito directo del interruptor del brazo superior al cable común.
+
+181
+00:20:14,870 --> 00:20:21,210
+Ahora frente a ti está el oscilograma del trabajo del driver en las compuertas de los interruptores de potencia.
+
+182
+00:20:21,950 --> 00:20:26,990
+Ves aquí algo de caída en el flanco delantero, esa es la carga de la compuerta que va para nosotros.
+
+183
+00:20:27,130 --> 00:20:33,090
+El driver, recordatorio, es de 2 amperios para nosotros, no muy potente, así que tenemos tal oscilograma.
+
+184
+00:20:34,150 --> 00:20:39,050
+El driver trabaja a través de una resistencia de 24 Ohm.
+
+185
+00:20:39,190 --> 00:20:44,190
+La elegí como óptima bajo estos transistores IRF840.
+
+186
+00:20:45,130 --> 00:20:46,730
+Aquí la circulé.
+
+187
+00:20:47,730 --> 00:20:51,130
+Esta resistencia está marcada con un asterisco.
+
+188
+00:20:51,230 --> 00:20:55,790
+Generalmente necesitará ser elegida individualmente bajo tus interruptores de potencia.
+
+189
+00:20:57,250 --> 00:21:01,730
+Lo que elijas aquí en esta línea de 510 a 840.
+
+190
+00:21:02,390 --> 00:21:14,530
+Esta resistencia afecta el calentamiento del driver, es decir la corriente final que pasará al cargar la compuerta del interruptor de potencia.
+
+191
+00:21:14,530 --> 00:21:17,350
+Jugarás con este parámetro.
+
+192
+00:21:17,910 --> 00:21:20,850
+El flanco trasero, ves, es bastante abrupto.
+
+193
+00:21:21,850 --> 00:21:28,170
+Para este flanco va la descarga de la compuerta del interruptor de potencia.
+
+194
+00:21:28,790 --> 00:21:36,850
+Y de su descarga abrupta es responsable este diodo conectado en contra del pulso de entrada.
+
+195
+00:21:37,390 --> 00:21:41,810
+Y a través de él se hace el bypass de descarga de esta resistencia.
+
+196
+00:21:41,810 --> 00:21:52,910
+Así que ves que la carga de la capacidad de compuerta se hace más extensa en tiempo, y la descarga muy abruptamente.
+
+197
+00:21:53,670 --> 00:22:05,350
+La capacidad de compuerta se descarga a través del diodo y dentro en el brazo del driver está ubicado un transistor directo-inverso.
+
+198
+00:22:05,350 --> 00:22:07,630
+Es decir, canal N y canal P.
+
+199
+00:22:07,730 --> 00:22:14,470
+Y exactamente a través del transistor de canal P ocurre la descarga de la capacidad de compuerta al común del esquema.
+
+200
+00:22:15,490 --> 00:22:28,710
+Esto es para el interruptor inferior, y aquí ocurre la descarga de la compuerta al punto medio para el interruptor en el brazo superior de nuestro medio puente.
+
+201
+00:22:30,550 --> 00:22:33,950
+Me convencí de que tenemos el oscilograma.
+
+202
+00:22:34,030 --> 00:22:37,310
+También barre a través de la frecuencia, mira que la frecuencia cambia.
+
+203
+00:22:37,410 --> 00:22:39,710
+El driver debe reaccionar adecuadamente.
+
+204
+00:22:39,890 --> 00:22:40,950
+La duración cambia.
+
+205
+00:22:41,070 --> 00:22:47,970
+Y solo después de ver todos estos parámetros podemos pasar a la conexión de carga.
+
+206
+00:22:48,070 --> 00:22:52,710
+Ya prueba en modo de potencia de este esquema en el oscilograma.
+
+207
+00:22:52,710 --> 00:22:55,210
+Miramos el oscilograma ahora.
+
+208
+00:22:55,850 --> 00:22:59,650
+El osciloscopio está conectado vía AC, es decir en modo AC.
+
+209
+00:23:00,410 --> 00:23:07,410
+El lanzamiento inicial bajo carga del sistema se hace en una lámpara de valor 25 W, 220 V.
+
+210
+00:23:07,490 --> 00:23:10,230
+La conecté en estos puntos.
+
+211
+00:23:10,630 --> 00:23:12,850
+En lugar de nuestro futuro inductor.
+
+212
+00:23:15,250 --> 00:23:16,850
+¿Cuál es el algoritmo de trabajo?
+
+213
+00:23:16,970 --> 00:23:22,070
+Pon el osciloscopio en los terminales de la lámpara y observa el oscilograma.
+
+214
+00:23:22,710 --> 00:23:26,430
+Y luego sube suavemente la tensión de alimentación.
+
+215
+00:23:27,050 --> 00:23:30,350
+Haré esto desde mis fuentes de laboratorio.
+
+216
+00:23:31,310 --> 00:23:33,990
+Es decir, cada uno aplica lo que tiene.
+
+217
+00:23:35,690 --> 00:23:37,290
+Subo la tensión.
+
+218
+00:23:39,650 --> 00:23:41,710
+Empiezo con 50 V.
+
+219
+00:23:42,370 --> 00:23:42,790
+Mira.
+
+220
+00:23:42,990 --> 00:23:47,110
+Tal oscilograma obtenemos ahora durante el trabajo.
+
+221
+00:23:48,990 --> 00:23:53,490
+Ves que la lámpara no empieza a brillar.
+
+222
+00:23:53,890 --> 00:23:56,570
+El consumo es 0,04 A.
+
+223
+00:23:58,210 --> 00:24:05,870
+Si tienes un bloque de laboratorio, entonces aquí es deseable ajustar la protección de corriente en un modo aceptable.
+
+224
+00:24:06,190 --> 00:24:10,510
+Si hay algunos errores en el sistema, la protección de corriente trabaja para nosotros.
+
+225
+00:24:11,630 --> 00:24:18,870
+Así que, tensión aplicada y empiezo control de temperatura directamente en el driver.
+
+226
+00:24:19,390 --> 00:24:22,450
+Quien tenga un pirómetro puede controlar con él.
+
+227
+00:24:22,670 --> 00:24:23,930
+Yo no tengo este dispositivo.
+
+228
+00:24:24,030 --> 00:24:30,510
+Yo controlo así, tocando directamente la parte superior del driver, temperatura por sensación.
+
+229
+00:24:31,610 --> 00:24:33,970
+Ves que el sistema funciona.
+
+230
+00:24:34,290 --> 00:24:36,930
+Más adelante aumento la tensión.
+
+231
+00:24:38,430 --> 00:24:39,610
+Aumento.
+
+232
+00:24:40,650 --> 00:24:41,850
+Así, 100 V.
+
+233
+00:24:42,650 --> 00:24:44,070
+Nuestro oscilograma.
+
+234
+00:24:44,970 --> 00:24:46,630
+Aumento la tensión.
+
+235
+00:24:47,670 --> 00:24:51,460
+El oscilograma también cambia su amplitud.
+
+236
+00:24:52,430 --> 00:24:57,310
+En modo de 100 V también hago control de temperatura.
+
+237
+00:24:59,510 --> 00:25:02,150
+Ahora la temperatura ha empezado a subir.
+
+238
+00:25:02,150 --> 00:25:06,010
+Trabajamos en tales modos.
+
+239
+00:25:07,070 --> 00:25:14,830
+Porque en este esquema los transistores 840 ya son una gran carga para estos drivers.
+
+240
+00:25:15,450 --> 00:25:24,670
+El esquema no está hecho para trabajo en modo continuo, sino específicamente con modulación.
+
+241
+00:25:25,690 --> 00:25:30,670
+En modo continuo necesitas optimizar los valores, elegir individualmente.
+
+242
+00:25:33,130 --> 00:25:36,530
+La prueba a 100 V pasó normalmente.
+
+243
+00:25:37,830 --> 00:25:41,410
+Ahora podemos brevemente dar el valor.
+
+244
+00:25:43,310 --> 00:25:45,110
+Subo la tensión.
+
+245
+00:25:46,230 --> 00:25:49,250
+200 V más alto.
+
+246
+00:25:49,850 --> 00:25:55,430
+Ves que la fuente de alimentación ya va un poco a protección.
+
+247
+00:25:56,510 --> 00:25:58,470
+Brevemente 250 V.
+
+248
+00:26:02,070 --> 00:26:03,510
+La temperatura sube.
+
+249
+00:26:04,170 --> 00:26:09,430
+Ahora del orden de 70 grados.
+
+250
+00:26:10,150 --> 00:26:13,770
+Es decir, el sistema va a calentamiento.
+
+251
+00:26:14,850 --> 00:26:22,150
+Y ahora podemos pasar a la prueba en modo de modulación en la lámpara.
+
+252
+00:26:23,410 --> 00:26:27,090
+Y más adelante ya conectar el inductor de la bobina Tesla.
+
+253
+00:26:27,090 --> 00:26:31,550
+La frecuencia de la señal moduladora será de 10 Hz.
+
+254
+00:26:32,050 --> 00:26:34,730
+La duración es 30%.
+
+255
+00:26:35,990 --> 00:26:39,310
+Subo la tensión de alimentación en el sistema.
+
+256
+00:26:41,830 --> 00:26:43,070
+100 V.
+
+257
+00:26:45,890 --> 00:26:49,910
+A una tensión de aproximadamente 150 V la lámpara empezó a brillar.
+
+258
+00:26:52,930 --> 00:26:58,350
+Ahora la tensión es el máximo de la fuente de alimentación.
+
+259
+00:26:58,870 --> 00:27:03,130
+300 V, 0,03 A de consumo.
+
+260
+00:27:03,590 --> 00:27:06,870
+Naturalmente, el bloque no fija el consumo para nosotros.
+
+261
+00:27:07,510 --> 00:27:12,890
+Esto es, por cierto, consumo en este modo de la parte de control y del driver de potencia.
+
+262
+00:27:13,510 --> 00:27:21,270
+Y ya en tal modo, exactamente pulso, nuestro driver está en un rango de temperatura aceptable.
+
+263
+00:27:22,190 --> 00:27:25,670
+Se calienta bastante fuerte cuando está en modo continuo.
+
+264
+00:27:26,790 --> 00:27:31,270
+Y en tal modo la temperatura está ligeramente por encima de la ambiente.
+
+265
+00:27:31,530 --> 00:27:33,310
+Eso es para lo que se desarrolló el sistema.
+
+266
+00:27:33,650 --> 00:27:36,710
+Necesitamos modulación, no modo continuo.
+
+267
+00:27:37,830 --> 00:27:41,350
+Ahora cambiaré la duración.
+
+268
+00:27:41,350 --> 00:27:41,430
+Aquí
+
+269
+00:27:48,940 --> 00:27:52,560
+20%.
+
+270
+00:27:53,640 --> 00:27:55,840
+Mira, el sistema funciona.
+
+271
+00:27:56,460 --> 00:27:57,340
+Por frecuencia.
+
+272
+00:28:01,120 --> 00:28:02,860
+Cambio la frecuencia.
+
+273
+00:28:04,600 --> 00:28:07,620
+Ves que ocurre parpadeo.
+
+274
+00:28:08,560 --> 00:28:09,700
+Ahora 20 Hz.
+
+275
+00:28:11,820 --> 00:28:13,280
+26 Hz.
+
+276
+00:28:14,320 --> 00:28:17,260
+Tal oscilograma en forma de trabajo en ráfagas.
+
+277
+00:28:18,260 --> 00:28:18,840
+Esto
+
+278
+00:28:22,990 --> 00:28:25,330
+es nuestra frecuencia que está dentro.
+
+279
+00:28:26,070 --> 00:28:29,690
+325 kHz en la ráfaga.
+
+280
+00:28:32,820 --> 00:28:35,980
+Y hago control de temperatura.
+
+281
+00:28:38,160 --> 00:28:39,200
+Es decir, todo funciona.
+
+282
+00:28:39,360 --> 00:28:44,480
+Cuando me convencí de esto, ya paso a la prueba en el inductor.
+
+283
+00:28:45,060 --> 00:28:47,300
+Instalé el inductor en lugar de la lámpara.
+
+284
+00:28:47,420 --> 00:28:51,100
+El inductor consiste en 8 vueltas de cable de audio.
+
+285
+00:28:51,100 --> 00:28:54,180
+En un tubo de 110.
+
+286
+00:28:55,920 --> 00:29:00,040
+La misma secuencia de acciones con el inductor.
+
+287
+00:29:00,140 --> 00:29:04,480
+Aquí debes tener más cuidado, si la lámpara tiene resistencia fija.
+
+288
+00:29:05,680 --> 00:29:11,360
+Entonces la resistencia de este inductor depende ya también de la frecuencia.
+
+289
+00:29:11,560 --> 00:29:14,520
+Una bobina inductora tiene resistencia reactiva.
+
+290
+00:29:14,720 --> 00:29:20,200
+Así que a la frecuencia a la que trabajaré, ya averigüé aproximadamente los parámetros.
+
+291
+00:29:20,200 --> 00:29:22,440
+Pero el algoritmo de acciones es también así.
+
+292
+00:29:22,540 --> 00:29:25,880
+Pon el osciloscopio, mira el oscilograma que habrá.
+
+293
+00:29:26,400 --> 00:29:29,160
+Y controla sin falta la temperatura del driver.
+
+294
+00:29:29,620 --> 00:29:32,580
+Ahora subo suavemente la tensión.
+
+295
+00:29:33,320 --> 00:29:36,340
+También 50-70 voltios.
+
+296
+00:29:37,480 --> 00:29:40,660
+Ve el oscilograma directamente en el inductor.
+
+297
+00:29:41,400 --> 00:29:44,260
+Y controla la temperatura.
+
+298
+00:29:46,160 --> 00:29:49,060
+Ves que hay calentamiento, pero es moderado.
+
+299
+00:29:49,060 --> 00:29:51,240
+Podemos agregar más voltaje.
+
+300
+00:29:56,180 --> 00:29:58,240
+Del orden de 100 grados.
+
+301
+00:30:00,420 --> 00:30:02,620
+También hago control.
+
+302
+00:30:05,200 --> 00:30:08,940
+A 100 grados el driver empezó su calentamiento.
+
+303
+00:30:10,240 --> 00:30:13,020
+No subiré más alto en modo continuo.
+
+304
+00:30:13,920 --> 00:30:16,020
+Tal oscilograma tenemos.
+
+305
+00:30:16,920 --> 00:30:23,640
+Recomiendo poner en la superficie de este driver, cuando termine todo el trabajo de ajuste.
+
+306
+00:30:23,720 --> 00:30:24,360
+Un disipador.
+
+307
+00:30:24,920 --> 00:30:27,220
+Esto mejorará su disipación de calor.
+
+308
+00:30:28,020 --> 00:30:30,960
+En pasta térmica, planta desde arriba y presiona apretadamente.
+
+309
+00:30:32,280 --> 00:30:33,520
+Esto observado.
+
+310
+00:30:33,740 --> 00:30:45,360
+Y ahora ya cambiando el sistema a modo de modulación, podemos subir directamente la tensión en los interruptores de potencia.
+
+311
+00:30:45,480 --> 00:30:48,060
+Y con esto oscilaremos bien el inductor.
+
+312
+00:30:49,400 --> 00:30:55,680
+El proceso de ajuste cuando trabajamos directamente con el inductor sin Tesla es bastante simple.
+
+313
+00:30:55,820 --> 00:30:59,060
+Miramos, controlamos temperatura, consumo.
+
+314
+00:31:00,060 --> 00:31:11,060
+Y cuando ya trabajamos con Tesla en su frecuencia de resonancia, en tal modo continuo, hay momentos bastante peligrosos porque Tesla consumirá.
+
+315
+00:31:11,900 --> 00:31:16,060
+Pero mostraré esto en los próximos videos del proceso de estos ajustes.
+
+316
+00:31:17,040 --> 00:31:18,280
+Pasaremos a ellos.
+
+317
+00:31:18,360 --> 00:31:20,920
+Ahora la prueba en modo de modulación.
+
+318
+00:31:21,320 --> 00:31:33,200
+El sentido de probar el dispositivo trabajando en el inductor en modo de modulación es el mismo: seguir el modo de temperatura del driver, y a qué tensiones ocurre su calentamiento.
+
+319
+00:31:33,960 --> 00:31:38,100
+Aplico modulación con frecuencia 1 kHz.
+
+320
+00:31:38,360 --> 00:31:41,280
+Duración del pulso de modulación 10%.
+
+321
+00:31:42,060 --> 00:31:43,840
+Subo la tensión.
+
+322
+00:31:45,080 --> 00:31:48,620
+Mismo algoritmo, 50-60 voltios.
+
+323
+00:31:49,040 --> 00:31:50,420
+Hago control.
+
+324
+00:31:51,900 --> 00:31:54,820
+Por cierto, con esto debes tener cuidado de no trepar.
+
+325
+00:31:55,540 --> 00:32:06,600
+Allí en los terminales del brazo superior, aquí donde tenemos el pin 6, el diodo bootstrap.
+
+326
+00:32:07,540 --> 00:32:17,940
+Todo conectado con el interruptor del brazo superior del driver, está bajo alto potencial, no entres en estos puntos.
+
+327
+00:32:18,480 --> 00:32:21,160
+Así que observa precaución.
+
+328
+00:32:22,380 --> 00:32:25,700
+O usa un pirómetro si está disponible.
+
+329
+00:32:27,780 --> 00:32:30,560
+Temperatura aceptable, no sube.
+
+330
+00:32:32,060 --> 00:32:34,020
+Aquí tenemos tal consumo.
+
+331
+00:32:36,220 --> 00:32:37,580
+100 voltios.
+
+332
+00:32:38,980 --> 00:32:42,360
+La amplitud del oscilograma crece.
+
+333
+00:32:43,060 --> 00:32:47,280
+Tal ráfaga sale.
+
+334
+00:32:49,640 --> 00:32:55,280
+Mira, también en rango de temperatura aceptable, ligeramente por encima de la ambiente.
+
+335
+00:32:56,920 --> 00:32:58,620
+150 voltios.
+
+336
+00:33:01,960 --> 00:33:04,120
+Calentamiento notable no se observa.
+
+337
+00:33:06,840 --> 00:33:09,980
+Aquí ya 200 voltios aplico.
+
+338
+00:33:13,550 --> 00:33:17,850
+Recordatorio de que la frecuencia ahora es 325 kHz aplicada.
+
+339
+00:33:18,010 --> 00:33:22,030
+Esta es la frecuencia de mi bobina Tesla, sintonizada para ella.
+
+340
+00:33:22,890 --> 00:33:25,030
+Y sigo estos parámetros.
+
+341
+00:33:26,130 --> 00:33:31,770
+A 200 voltios el driver empezó a calentar ligeramente.
+
+342
+00:33:32,510 --> 00:33:34,150
+Ahora aplico 250.
+
+343
+00:33:37,430 --> 00:33:39,630
+El consumo creció ligeramente.
+
+344
+00:33:43,370 --> 00:33:48,010
+El calentamiento es así insignificante, unos 40 grados en este modo.
+
+345
+00:33:48,770 --> 00:33:52,010
+8 vueltas en un tubo de 110, cable de audio.
+
+346
+00:33:53,650 --> 00:33:58,670
+Bueno, y ya aplico el máximo posible, 300 V de mi fuente.
+
+347
+00:34:00,170 --> 00:34:00,830
+Amplitud.
+
+348
+00:34:06,680 --> 00:34:11,300
+La temperatura no sube, eso significa que concluyo que todo está en orden en este modo.
+
+349
+00:34:12,300 --> 00:34:20,240
+Ahora tenemos nuestros capacitores cargados a una amplitud de 300 V.
+
+350
+00:34:21,880 --> 00:34:27,780
+Nuestro par, actuando en el centro, hace 150 V.
+
+351
+00:34:27,860 --> 00:34:30,020
+Conmutado directamente al inductor.
+
+352
+00:34:30,540 --> 00:34:36,160
+Ahora mira qué tan económicamente trabaja el esquema en este modo.
+
+353
+00:34:36,160 --> 00:34:43,620
+Detendré abruptamente el suministro de tensión de alimentación y miraré el desvanecimiento del oscilograma.
+
+354
+00:34:44,380 --> 00:34:47,220
+Bajo la tensión a cero ahora.
+
+355
+00:34:48,900 --> 00:34:52,500
+Y mira qué tan suavemente ocurre la atenuación.
+
+356
+00:34:57,800 --> 00:35:01,260
+Es decir, el sistema resultó bastante económico.
+
+357
+00:35:02,460 --> 00:35:06,580
+Lo que necesitamos para oscilar el transformador Tesla.
+
+358
+00:35:06,580 --> 00:35:09,380
+Recordatorio de que no necesitamos gran consumo.
+
+359
+00:35:09,980 --> 00:35:17,660
+No tenemos un Tesla Show, sino que no tenemos la tarea de crear grandes streamers, efectos de luz y ruido.
+
+360
+00:35:18,200 --> 00:35:22,780
+Así que el esquema está desarrollado específicamente para trabajo en modo modulado.

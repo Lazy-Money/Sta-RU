@@ -1,0 +1,623 @@
+1
+00:00:00,000 --> 00:00:02,820
+Pasando a construir el módulo de potencia.
+
+2
+00:00:03,580 --> 00:00:13,540
+Pero primero quiero decir que el módulo de potencia se sujeta a un disipador de refrigeración, y hay algunos requisitos para él.
+
+3
+00:00:14,440 --> 00:00:20,260
+Todo depende, por supuesto, de qué potencia estamos construyendo el dispositivo, pero igual hay que seguirlos.
+
+4
+00:00:21,200 --> 00:00:30,360
+Elige un disipador por las dimensiones requeridas, y mira: ¿vamos a tener refrigeración forzada o no?
+
+5
+00:00:30,700 --> 00:00:36,940
+Si no, naturalmente toma un disipador con el área de aletas de refrigeración máxima.
+
+6
+00:00:37,540 --> 00:00:39,280
+Y el parámetro más importante.
+
+7
+00:00:40,460 --> 00:00:46,520
+El espesor de la pared donde se monta el interruptor.
+
+8
+00:00:47,140 --> 00:00:53,400
+Determina qué tan bien se removerá la potencia térmica del interruptor.
+
+9
+00:00:53,400 --> 00:00:57,800
+Por ejemplo, voy a mostrar otro tipo de disipador.
+
+10
+00:00:58,620 --> 00:01:14,260
+Podrías decir que está mal hecho por el fabricante, porque el espesor de la parte a la que se sujeta el interruptor (la parte que remueve calor), si lo sujetas así,
+
+11
+00:01:14,740 --> 00:01:18,780
+es mucho más delgado que las paredes.
+
+12
+00:01:18,780 --> 00:01:30,760
+Y bajo una carga seria, esta área debajo del interruptor se va a sobrecalentar, no puede transferir calor a las aletas de refrigeración lo suficientemente rápido.
+
+13
+00:01:30,940 --> 00:01:35,140
+Y un interruptor así puede fallar por sobrecalentamiento.
+
+14
+00:01:35,720 --> 00:01:43,460
+Disipadores como este deben evitarse en montajes de potencia donde habrá cargas serias.
+
+15
+00:01:43,860 --> 00:01:48,080
+Para algún transistor pequeño, podría funcionar.
+
+16
+00:01:48,780 --> 00:01:53,900
+Esa es la regla principal para los disipadores.
+
+17
+00:01:54,100 --> 00:02:01,460
+También hay disipadores con inserto de cobre, esos son de primera clase, pero aquí no necesitamos eso.
+
+18
+00:02:04,220 --> 00:02:09,660
+¿Qué recomiendo como sustrato aislante?
+
+19
+00:02:10,200 --> 00:02:22,580
+La cosa es que en muchos FET el drenaje está conectado galvánicamente al pad que disipa calor.
+
+20
+00:02:23,240 --> 00:02:35,780
+Así que para evitar la ruptura drenaje a drenaje entre interruptores, se coloca una junta aislante térmicamente conductora bajo los interruptores.
+
+21
+00:02:35,880 --> 00:02:40,080
+Para casos críticos recomiendo usar mica.
+
+22
+00:02:41,360 --> 00:02:48,440
+Es difícil de conseguir hoy en día, pero la puedes encontrar en mercados de pulgas o mercados de radio.
+
+23
+00:02:49,140 --> 00:02:57,330
+A veces la gente vende estas placas de mica de los capacitores soviéticos de mica de alta tensión.
+
+24
+00:02:58,660 --> 00:03:02,220
+Sí, desarman el capacitor y obtienen estas pilas de placas.
+
+25
+00:03:02,220 --> 00:03:04,900
+Y es muy conveniente extraerlas.
+
+26
+00:03:05,120 --> 00:03:13,680
+Una placa así tiene dimensiones de 5 por 4 cm.
+
+27
+00:03:14,420 --> 00:03:23,340
+Si la cortas por la mitad, alcanza justo para instalar dos interruptores lado a lado.
+
+28
+00:03:24,340 --> 00:03:36,560
+Si quieres separarlos, entonces se corta en 4 pedazos, y ese sustrato funciona bien en este caso.
+
+29
+00:03:37,300 --> 00:03:44,820
+Si no puedes encontrar eso, por supuesto puedes usar estas juntas.
+
+30
+00:03:45,590 --> 00:03:55,200
+También funcionan, pero confío más en la mica, así que en casos críticos la uso.
+
+31
+00:03:56,820 --> 00:04:12,760
+Al instalar una junta de mica, se debe prestar especial atención al agujero por el que pasará el perno para el montaje del interruptor.
+
+32
+00:04:12,760 --> 00:04:15,220
+Hecho con mucho cuidado.
+
+33
+00:04:15,360 --> 00:04:35,820
+Primero, con un punzón, presiona con cuidado y haz un pequeño pinchazo, y después con un destornillador Phillips de diámetro correspondiente expande lentamente el agujero para evitar agrietar
+
+34
+00:04:35,820 --> 00:04:36,400
+la mica.
+
+35
+00:04:38,860 --> 00:04:47,560
+Ahora voy a instalar el interruptor aquí, nivelar el sustrato y mostrar con el ejemplo de este agujero cómo se hace.
+
+36
+00:04:47,720 --> 00:04:59,720
+La junta se instala, nivélala por las dimensiones del interruptor para que la mica se extienda igualmente por todos los lados del interruptor.
+
+37
+00:05:01,060 --> 00:05:04,220
+Luego aprieta el tornillo, fijándolo.
+
+38
+00:05:04,220 --> 00:05:19,500
+Después de esto toma el punzón y, en el centro del agujero por donde pasará el perno, presiona con cuidado y gira ligeramente el punzón.
+
+39
+00:05:27,690 --> 00:05:36,750
+Con cuidado, primero aparece un punto blanco en este lugar.
+
+40
+00:05:49,560 --> 00:05:56,200
+Con esos movimientos giratorios haz con cuidado la primera viruta.
+
+41
+00:06:00,150 --> 00:06:04,690
+Después de esto el punzón pasa fácilmente al agujero.
+
+42
+00:06:05,130 --> 00:06:11,430
+Y luego con el destornillador Phillips llevamos el agujero al diámetro necesario.
+
+43
+00:06:11,430 --> 00:06:13,750
+De nuevo con mucho cuidado,
+
+44
+00:06:17,620 --> 00:06:27,980
+después de lo cual puedes pasar el agujero con la rosca del perno.
+
+45
+00:06:44,730 --> 00:06:47,590
+Haz esto con cuidado también.
+
+46
+00:06:53,020 --> 00:07:05,780
+Después tienes que mover el perno varias veces de ida y vuelta, y vamos a tener dimensiones del agujero ajustadas exactamente al tornillo.
+
+47
+00:07:08,060 --> 00:07:14,640
+Esas son todas las sutilezas con la junta de mica.
+
+48
+00:07:14,640 --> 00:07:21,940
+Después de hacer los agujeros, necesitas remover todo lo innecesario de la superficie del disipador.
+
+49
+00:07:22,340 --> 00:07:28,800
+Estos serán pedacitos diminutos de mica, porque la mica es roca.
+
+50
+00:07:29,080 --> 00:07:35,680
+Y si entra debajo de la junta, habrá un bulto, y el contacto térmico va a empeorar.
+
+51
+00:07:35,680 --> 00:07:52,480
+Para esto toma una servilleta, limpia la superficie de la junta, luego dale la vuelta, limpia la superficie del disipador, limpia por dentro.
+
+52
+00:07:57,960 --> 00:08:03,360
+Hacemos lo mismo con la segunda junta.
+
+53
+00:08:12,730 --> 00:08:19,530
+Y después limpia la superficie del disipador.
+
+54
+00:08:22,490 --> 00:08:26,230
+Ahora podemos pasar a aplicar pasta térmica.
+
+55
+00:08:27,230 --> 00:08:30,190
+Pasta térmica KPT-8.
+
+56
+00:08:46,390 --> 00:08:49,090
+El tubo es nuevo, mucho líquido.
+
+57
+00:08:50,270 --> 00:08:52,250
+El líquido se debe remover.
+
+58
+00:09:00,280 --> 00:09:03,680
+Y aquí está la propia pasta térmica.
+
+59
+00:09:21,750 --> 00:09:29,230
+Distribuye uniformemente una capa de pasta térmica sobre la superficie.
+
+60
+00:09:31,630 --> 00:09:36,370
+La parte trasera del transistor puede ayudar con esto.
+
+61
+00:09:40,140 --> 00:09:41,880
+Pasamos al resto.
+
+62
+00:09:42,880 --> 00:09:44,260
+En
+
+63
+00:10:00,310 --> 00:10:02,270
+general, el principio está claro.
+
+64
+00:10:03,490 --> 00:10:05,450
+Alisado parejo.
+
+65
+00:10:06,890 --> 00:10:15,070
+Y después de esto puedes instalar la junta en su lugar.
+
+66
+00:10:35,100 --> 00:10:39,460
+La misma operación con la segunda.
+
+67
+00:10:40,440 --> 00:10:50,540
+Después de instalar la segunda, limpia la pasta térmica en exceso de la superficie del disipador.
+
+68
+00:10:55,320 --> 00:11:01,180
+Y podemos pasar a montar los interruptores de potencia.
+
+69
+00:11:06,830 --> 00:11:17,330
+Ahora, según las reglas de colocación de piezas en la caja, necesitamos marcar de qué lado estarán los transistores conectados a más.
+
+70
+00:11:19,070 --> 00:11:22,030
+El relé está en este lado.
+
+71
+00:11:22,470 --> 00:11:27,250
+Según el esquema, estará conectado al más de alimentación.
+
+72
+00:11:27,690 --> 00:11:30,510
+La batería estará ubicada así.
+
+73
+00:11:30,510 --> 00:11:36,590
+Lo que significa que los transistores conectados a más estarán de este lado.
+
+74
+00:11:38,150 --> 00:11:39,150
+Marca.
+
+75
+00:11:40,770 --> 00:11:43,190
+Pasando a montar los interruptores.
+
+76
+00:11:44,810 --> 00:11:49,370
+Aplica pasta térmica también a los interruptores de potencia.
+
+77
+00:12:06,700 --> 00:12:09,880
+Con movimientos de alisado así.
+
+78
+00:12:12,800 --> 00:12:16,880
+Distribuye la pasta térmica por toda el área del disipador.
+
+79
+00:12:34,850 --> 00:12:42,530
+Los tornillos para sujetar los interruptores deben tener cabezas anchas.
+
+80
+00:12:43,570 --> 00:12:51,730
+Y si no hay ninguno, enrosca una tuerca y pon una arandela para que la acción de apriete sea buena.
+
+81
+00:12:51,730 --> 00:12:56,550
+Y también lo suficientemente largos, ya que el aluminio es metal delgado.
+
+82
+00:12:57,150 --> 00:13:03,770
+El cuerpo del tornillo debe entrar bien en el espesor de la pared de aluminio.
+
+83
+00:13:27,510 --> 00:13:30,110
+No aprietes demasiado fuerte.
+
+84
+00:13:32,270 --> 00:13:40,770
+Todavía tenemos que alinear los interruptores con los agujeros en la tapa plástica.
+
+85
+00:13:58,830 --> 00:14:02,210
+Para que roten con facilidad.
+
+86
+00:14:03,250 --> 00:14:14,650
+Antes de instalar el segundo par, necesitamos ocuparnos del terminal de contacto para conectar la bobina primaria de nuestro transformador elevador.
+
+87
+00:14:14,750 --> 00:14:22,390
+Hice estos terminales de contacto con alambre de cobre.
+
+88
+00:14:23,390 --> 00:14:31,110
+Ahora los pongo en una pata del interruptor y
+
+89
+00:14:37,470 --> 00:14:40,230
+lo restituyo a su lugar.
+
+90
+00:15:07,200 --> 00:15:15,020
+Después de esta manipulación va a ser fácil combinar este terminal con la pata opuesta del interruptor.
+
+91
+00:15:15,760 --> 00:15:22,880
+Lo desplazas, y vamos a tener que soldarlo más tarde.
+
+92
+00:15:23,640 --> 00:15:31,060
+Antes del armado final deberíamos verificar si hay contacto entre el interruptor y el disipador.
+
+93
+00:15:32,040 --> 00:15:39,940
+Cambia el multímetro a modo de prueba de diodos y toca los terminales del medio de los transistores.
+
+94
+00:15:44,220 --> 00:15:50,820
+Ves que el aislamiento está presente, todo en orden.
+
+95
+00:15:52,020 --> 00:15:58,800
+Como tenemos un sistema de baja tensión, no verifico este módulo para alta tensión.
+
+96
+00:15:58,940 --> 00:16:17,560
+Pero si estoy construyendo sistemas que van a trabajar con tensión de red rectificada, pruebo adicionalmente, en vez de con un medidor, para ruptura a 300 V CC a través de una lámpara
+
+97
+00:16:17,560 --> 00:16:19,280
+incandescente de la misma manera.
+
+98
+00:16:19,280 --> 00:16:29,760
+Esto da una garantía confiable de que el bloque no va a necesitar desarmarse más tarde, porque eso es bastante laborioso.
+
+99
+00:16:30,860 --> 00:16:37,800
+Ahora los interruptores están ligeramente apretados y rotan libremente en sus puntos de sujeción.
+
+100
+00:16:38,800 --> 00:16:51,000
+Esto se hace para que puedas colocar convenientemente la tapa plástica según los puntos de sujeción.
+
+101
+00:16:53,160 --> 00:16:58,190
+Al ajustar a los agujeros, los interruptores se van a desplazar ligeramente.
+
+102
+00:16:58,190 --> 00:17:10,390
+Si los sujetas por adelantado, esta operación va a ser difícil de hacer sin doblado adicional de los terminales del interruptor, lo cual no es deseable.
+
+103
+00:17:12,190 --> 00:17:19,190
+Primero sujeta las sujeciones regulares.
+
+104
+00:17:21,770 --> 00:17:26,550
+Y ahora ves que todos los terminales coinciden.
+
+105
+00:17:26,550 --> 00:17:37,610
+Y estos agujeros se necesitan para que puedas apretar preliminarmente los interruptores desde arriba.
+
+106
+00:17:41,670 --> 00:17:43,830
+Haciendo el apriete.
+
+107
+00:17:53,460 --> 00:18:00,280
+Ahora podemos liberar las sujeciones regulares.
+
+108
+00:18:04,690 --> 00:18:11,370
+Después de esto pasamos a soldar los terminales del medio.
+
+109
+00:18:12,370 --> 00:18:20,770
+Y posterior apriete de las sujeciones de tornillos de los interruptores.
+
+110
+00:18:23,070 --> 00:18:32,410
+Ves que los terminales del medio se deslizan fácilmente en esta posición.
+
+111
+00:18:37,270 --> 00:18:41,170
+De esta manera nos facilitamos el trabajo.
+
+112
+00:18:41,170 --> 00:18:50,450
+Para soldar con calidad estas uniones uso flujo orgánico de electrónica.
+
+113
+00:18:50,670 --> 00:18:57,410
+No necesita lavado y limpia muy bien las superficies de contacto.
+
+114
+00:18:57,750 --> 00:18:59,910
+Además huele a bosque de pinos.
+
+115
+00:19:00,690 --> 00:19:01,750
+Muy conveniente.
+
+116
+00:19:04,230 --> 00:19:07,750
+El soldador se calienta a 380 grados.
+
+117
+00:19:07,750 --> 00:19:09,610
+Punta limpia.
+
+118
+00:19:11,350 --> 00:19:16,270
+Después de esto toma una gota de estaño.
+
+119
+00:19:19,390 --> 00:19:23,070
+Sostén el pad de contacto.
+
+120
+00:19:24,530 --> 00:19:26,530
+Suelda.
+
+121
+00:19:36,320 --> 00:19:37,240
+Una mitad.
+
+122
+00:19:40,480 --> 00:19:43,020
+Un poco más de flujo.
+
+123
+00:20:05,350 --> 00:20:11,710
+Necesitas llenar la superficie de contacto con calidad.
+
+124
+00:20:31,490 --> 00:20:34,590
+Puedes ver cómo se esparce el estaño.
+
+125
+00:20:37,670 --> 00:20:43,050
+Ahora remueve esta gota de flujo.
+
+126
+00:20:45,770 --> 00:20:53,270
+Además, no conduce corriente, lo cual es muy bueno.
+
+127
+00:20:58,760 --> 00:21:05,440
+Y similarmente suelda el segundo pad de contacto.
+
+128
+00:21:06,180 --> 00:21:09,180
+Después de soldar, obtienes este tipo de belleza.
+
+129
+00:21:11,180 --> 00:21:22,480
+Hay un momento más importante al que prestar atención al comprar interruptores de potencia.
+
+130
+00:21:22,820 --> 00:21:30,540
+Es preferible que sean del mismo lote y del mismo fabricante.
+
+131
+00:21:31,380 --> 00:21:35,590
+Presta atención a los símbolos de letras y números.
+
+132
+00:21:35,590 --> 00:21:40,070
+Estas inscripciones en los interruptores deben ser idénticas.
+
+133
+00:21:41,990 --> 00:21:53,510
+Ahora podemos apretar los interruptores de potencia mientras los sostenemos con los dedos para evitar que se desplacen.
+
+134
+00:21:54,470 --> 00:22:06,520
+El apriete debe hacerse con buena fuerza para una remoción de calor de calidad.
+
+135
+00:22:09,500 --> 00:22:16,520
+Así que los pernos con los que los sujetes deben tener una cabeza ancha buena.
+
+136
+00:22:32,840 --> 00:22:37,260
+Ahora solo necesitamos llevar buses de alimentación a nuestro montaje.
+
+137
+00:22:37,780 --> 00:22:46,840
+Para dispositivos críticos los hago de cable de cobre de calidad de sección 2,5 mm², en aislamiento térmico.
+
+138
+00:22:46,840 --> 00:22:52,740
+La marca del cable es RKDM, costo 70 rublos por metro.
+
+139
+00:22:53,300 --> 00:23:00,040
+Tiene aislamiento termoestable en su superficie más una trenza termoestable.
+
+140
+00:23:00,780 --> 00:23:12,540
+Lo uso donde necesito suministrar alimentación en redes de 220 V y donde las temperaturas exceden los 100 grados.
+
+141
+00:23:14,320 --> 00:23:24,560
+Para que se pueda enhebrar fácilmente en los anillos de los interruptores de potencia, los extremos de tal cable deben estañarse.
+
+142
+00:23:27,020 --> 00:23:28,600
+Estañado de calidad.
+
+143
+00:23:28,760 --> 00:23:32,820
+Ahora pasa por el anillo.
+
+144
+00:23:37,850 --> 00:23:53,970
+Después de que el cable está asentado en el anillo, debes engarzarlo con el terminal del interruptor de potencia.
+
+145
+00:24:05,460 --> 00:24:08,460
+De esta manera proveemos buen contacto.
+
+146
+00:24:08,460 --> 00:24:15,520
+Ahora aplica flujo para soldar y,
+
+147
+00:24:25,180 --> 00:24:26,820
+suéldalo.
+
+148
+00:24:31,380 --> 00:24:36,080
+Caliéntalo bien y alimenta estaño.
+
+149
+00:25:15,300 --> 00:25:19,860
+La misma operación con el segundo cable.
+
+150
+00:25:22,520 --> 00:25:24,240
+Pásalo,
+
+151
+00:25:28,410 --> 00:25:29,470
+engarza.
+
+152
+00:26:39,620 --> 00:26:45,260
+Y con esto, el módulo de potencia se puede considerar terminado.
+
+153
+00:26:47,320 --> 00:26:56,980
+Solo queda conectar el bobinado primario del transformador de pulso en estos puntos.
+
+154
+00:26:59,940 --> 00:27:12,420
+A continuación en nuestra serie de videos sobre la fuente de alimentación será el bobinado del transformador de potencia.
+
+155
+00:27:13,080 --> 00:27:18,160
+Reglas de bobinado, tomas, aislamiento entre capas.
+
+156
+00:27:19,360 --> 00:27:23,320
+Será interesante, pero el trabajo es minucioso.

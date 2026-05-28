@@ -1,0 +1,379 @@
+1
+00:00:01,230 --> 00:00:02,630
+Hola a todos.
+
+2
+00:00:03,110 --> 00:00:13,130
+Estoy comenzando otro proyecto destinado a facilitarles la vida a los experimentadores en el campo de la energía libre.
+
+3
+00:00:14,150 --> 00:00:21,270
+El esquema de bloques que se muestra en esta imagen es una fuente de alimentación, universal para nuestros experimentos.
+
+4
+00:00:22,130 --> 00:00:25,450
+Tensión de salida planificada hasta 1000 V.
+
+5
+00:00:25,450 --> 00:00:33,750
+También vamos a probar en este circuito algo nuevo para mí: el trabajo con opto-drivers.
+
+6
+00:00:36,010 --> 00:00:39,270
+Entonces, ¿por qué necesitamos un circuito como este?
+
+7
+00:00:39,470 --> 00:00:46,790
+La cosa es que, por supuesto, te puedes arreglar con fuentes de alimentación compradas.
+
+8
+00:00:46,790 --> 00:00:50,690
+Yo tengo dos de ellas, en particular.
+
+9
+00:00:51,330 --> 00:00:58,930
+Una de ellas es de baja tensión, hasta 30 V, la otra de alta tensión hasta 300 V.
+
+10
+00:00:59,390 --> 00:01:06,390
+A primera vista el rango de tensión está bien y es adecuado, pero hay algunos problemas.
+
+11
+00:01:07,070 --> 00:01:11,690
+Primero, estas fuentes se enchufan a la red.
+
+12
+00:01:11,690 --> 00:01:17,450
+Y la conexión a la red nos garantiza una conexión con el neutro.
+
+13
+00:01:17,950 --> 00:01:24,010
+Es decir, el cable neutro en la red está inevitablemente atado a tierra.
+
+14
+00:01:24,530 --> 00:01:39,650
+Si construimos dispositivos diseñados para extraer energía respecto a la tierra, entonces con estas fuentes de alimentación no vamos a obtener nada, ya que estamos atados automáticamente
+
+15
+00:01:39,650 --> 00:01:41,070
+a tierra a través del neutro.
+
+16
+00:01:41,690 --> 00:01:53,690
+Podrías pensar que podríamos excluir la conexión a tierra, por ejemplo alimentando estas fuentes a través de dos transformadores para aislamiento.
+
+17
+00:01:54,870 --> 00:01:58,990
+Pero incluso en este caso todavía tenemos una conexión.
+
+18
+00:01:59,070 --> 00:02:03,750
+Igual se cuela de alguna manera e interfiere con el trabajo.
+
+19
+00:02:04,610 --> 00:02:09,450
+Otra opción es hacer correr las fuentes a través de un inversor.
+
+20
+00:02:09,450 --> 00:02:16,070
+Sí, esta solución es buena y resuelve el problema principal de la conexión a tierra.
+
+21
+00:02:16,650 --> 00:02:17,890
+Pero hay un truco.
+
+22
+00:02:18,550 --> 00:02:27,530
+Todos nuestros experimentos en la mayoría de los casos implican consumo pulsado de estas fuentes de alimentación.
+
+23
+00:02:28,650 --> 00:02:38,790
+Y los efectos que acompañan a estos experimentos a menudo son tan impredecibles que estas fuentes de alimentación se comportan totalmente de manera inadecuada.
+
+24
+00:02:39,450 --> 00:02:59,270
+Los controladores empiezan a comportarse caóticamente, la tensión de salida salta, la corriente de salida salta, y además, la fuente de alimentación empieza a operar en modo de ráfagas.
+
+25
+00:02:59,890 --> 00:03:05,450
+Es decir, la influencia sobre ella desde los cables de salida es así de fuerte.
+
+26
+00:03:05,450 --> 00:03:11,610
+Intenté poner filtros aquí, eso tampoco nos salva de este problema.
+
+27
+00:03:13,790 --> 00:03:16,310
+Lecturas constantemente erróneas.
+
+28
+00:03:16,470 --> 00:03:32,850
+Y además, cuando estos bloques empiezan a operar en modo de fuente de alimentación pulsada, aparece una señal en forma de ráfaga en la salida después del interruptor en el dispositivo de control.
+
+29
+00:03:32,850 --> 00:03:40,890
+Esa es modulación de frecuencia adicional, que obviamente no nos deja afinar el sistema adecuadamente.
+
+30
+00:03:41,350 --> 00:03:47,910
+Así que tuve que renunciar a estas fuentes de alimentación debido a su inadecuación.
+
+31
+00:03:48,770 --> 00:03:57,230
+Soluciones como estas son geniales para afinar electrónica, me ayudan mucho.
+
+32
+00:03:57,230 --> 00:04:06,390
+Pero lamentablemente, para alimentar dispositivos y para estos experimentos no son adecuadas.
+
+33
+00:04:06,950 --> 00:04:17,990
+Así que decidí desarrollar esta fuente de alimentación que cumpla las tareas planteadas.
+
+34
+00:04:18,910 --> 00:04:23,630
+Sobre el mismo tema, puedo dar el mismo consejo sobre usar un osciloscopio.
+
+35
+00:04:25,110 --> 00:04:33,450
+Viendo los experimentos de la gente, conectan el osciloscopio al dispositivo y tratan de afinar algo.
+
+36
+00:04:34,010 --> 00:04:43,990
+Olvidando que el osciloscopio está enchufado a la red, y el cable común del osciloscopio está inevitablemente atado al neutro.
+
+37
+00:04:43,990 --> 00:04:56,410
+Y resulta que incluso con una fuente de alimentación que conectamos al dispositivo introducimos el mismo problema.
+
+38
+00:04:57,930 --> 00:05:06,460
+En los días de Nikola Tesla había una red de CC y sin conexión al neutro.
+
+39
+00:05:06,460 --> 00:05:14,800
+Además, el propio Tesla construyó dispositivos que le permitirían trabajar.
+
+40
+00:05:15,760 --> 00:05:21,700
+Como dinamos de CC.
+
+41
+00:05:22,560 --> 00:05:34,220
+Una dinamo así daba una fuente de alimentación autónoma y se podía hacer girar con un motor externo.
+
+42
+00:05:35,240 --> 00:05:42,320
+La cosa es que todas las dinamos son esencialmente máquinas de CA.
+
+43
+00:05:42,600 --> 00:05:58,320
+Pero si haces una dinamo con muchos contactos y haces una toma por colector, puedes tomar potencial de ella en el pico de la onda de CA.
+
+44
+00:05:58,320 --> 00:06:04,840
+Y así obtener CC a la salida, que es lo que él hizo.
+
+45
+00:06:05,540 --> 00:06:08,560
+Pero volvamos a nuestro esquema.
+
+46
+00:06:10,160 --> 00:06:11,940
+Veámoslo con más detalle.
+
+47
+00:06:12,620 --> 00:06:21,320
+Primero, la alimentación vendrá de una batería, lo cual resuelve nuestro problema de conexión a tierra.
+
+48
+00:06:21,320 --> 00:06:40,080
+Luego, agregué un elemento de relé y un diodo para que durante nuestros experimentos con acoplamientos de efecto energético en la bobina alegre, no intercambiemos accidentalmente los cables de alimentación.
+
+49
+00:06:41,400 --> 00:06:51,300
+Tal inversión de polaridad llevaría inevitablemente al fallo del interruptor y al convertidor DC-DC que provee alimentación independiente.
+
+50
+00:06:53,380 --> 00:06:55,040
+La solución es simple.
+
+51
+00:06:55,440 --> 00:07:07,420
+Tenemos un relé con contactos normalmente abiertos y una bobina que crea el campo magnético, que atrae el contacto y los cierra.
+
+52
+00:07:08,020 --> 00:07:18,320
+Si instalas el diodo en la dirección correcta, puedes excluir conexiones erróneas del esquema.
+
+53
+00:07:18,320 --> 00:07:29,300
+Es decir, cuando se aplica el más de alimentación al ánodo del diodo, la corriente pasa por él, el campo magnético se forma naturalmente y los contactos se atraen.
+
+54
+00:07:29,840 --> 00:07:36,640
+Con polaridad invertida de la batería, los contactos no se cerrarán.
+
+55
+00:07:37,360 --> 00:07:47,100
+Luego introduje un sistema de filtro: capacitores, choque, y después la alimentación va a los interruptores de potencia.
+
+56
+00:07:47,980 --> 00:07:52,580
+Decidí ir con un esquema de puente completo.
+
+57
+00:07:54,520 --> 00:08:03,440
+Tal esquema nos va a permitir conmutar limpiamente el bobinado primario y usar adicionalmente aislamiento óptico.
+
+58
+00:08:04,320 --> 00:08:07,900
+Cuatro opto-drivers controlando los interruptores.
+
+59
+00:08:08,560 --> 00:08:13,340
+También un convertidor DC-DC con aislamiento galvánico.
+
+60
+00:08:13,340 --> 00:08:28,480
+Todo esto se hace para que durante nuestros experimentos no haya influencia sobre el controlador PWM o los drivers que controlan los interruptores, lo que podría llevar a operación incorrecta.
+
+61
+00:08:30,680 --> 00:08:42,340
+Todo el circuito es bastante simple, pero habrá matices en su construcción que voy a demostrar a lo largo del camino.
+
+62
+00:08:44,300 --> 00:08:53,680
+Vamos a tener realimentación por corriente para que podamos regular la protección por corriente.
+
+63
+00:08:53,780 --> 00:09:02,240
+Un parámetro muy importante para que si ocurre un corto en la salida, el sistema no falle.
+
+64
+00:09:03,860 --> 00:09:09,360
+Y este punto se puede regular, fijando el umbral de disparo.
+
+65
+00:09:10,320 --> 00:09:19,040
+La regulación de duración de pulso también se va a agregar, lo que en última instancia controla la tensión de salida.
+
+66
+00:09:19,100 --> 00:09:32,360
+Es decir, en cada toma del transformador vamos a tener regulación de tensión desde cero hasta el máximo que el conteo de espiras permite.
+
+67
+00:09:33,160 --> 00:09:45,140
+El transformador se va a hacer sobre un anillo de ferrita, y el bobinado secundario va a tener tomas.
+
+68
+00:09:45,240 --> 00:09:58,200
+Aquí marqué esquemáticamente las tomas que van a un interruptor, entre las tomas puedes conmutar, regulando así la tensión máxima de salida.
+
+69
+00:09:59,200 --> 00:10:08,200
+Aquí no se puede agregar realimentación por tensión debido a que el esquema es demasiado voluminoso.
+
+70
+00:10:08,520 --> 00:10:18,900
+Vamos a tener que usar el mismo interruptor para cambiar los circuitos de resistencias que fijan el punto de disparo de la realimentación.
+
+71
+00:10:18,900 --> 00:10:23,820
+Pero voy a agregar este sistema al controlador PWM.
+
+72
+00:10:24,700 --> 00:10:38,800
+Digamos si necesitamos mantener una tensión constante en alguna toma, simplemente tomamos el potencial de ahí, creamos un divisor de resistencias y lo realimentamos.
+
+73
+00:10:39,240 --> 00:10:45,020
+Digamos que tenemos un circuito probado para algún transistor y conocemos sus parámetros con precisión.
+
+74
+00:10:45,020 --> 00:10:46,940
+Esto se puede hacer.
+
+75
+00:10:47,220 --> 00:10:54,020
+Y la conmutación principal del potencial de tensión se hará con el interruptor.
+
+76
+00:10:55,060 --> 00:11:04,800
+Y la tensión de salida se calculará por la ley de Ohm en la carga: corriente por resistencia de carga.
+
+77
+00:11:06,120 --> 00:11:21,240
+Como nuestra alimentación será pulsada, tomada de la salida de este convertidor, la fórmula será un poco inexacta, pero nos sirve bien.
+
+78
+00:11:23,880 --> 00:11:33,140
+Antes de pasar a construir este circuito, necesitamos comprar todas las piezas primero.
+
+79
+00:11:33,140 --> 00:11:44,560
+Por ahora encontré este interruptor en mi casa, una pieza de la era soviética que nos sirve perfectamente.
+
+80
+00:11:44,860 --> 00:11:52,060
+Tiene un pad de contacto cerámico y una salida de terminal bastante potente.
+
+81
+00:11:52,060 --> 00:12:11,700
+Aquí dibujé donde se necesita trabajo adicional en los terminales, porque ahora mismo si conmutamos, puedes ver que el interruptor, debido al ancho del pad de contacto, cortocircuita temporalmente los contactos.
+
+82
+00:12:11,840 --> 00:12:16,700
+Necesitamos deshacernos de eso, y el interruptor será totalmente adecuado.
+
+83
+00:12:16,700 --> 00:12:34,080
+El interruptor tiene 12 terminales en círculo, uno de ellos común, del cual se tomará la tensión de alimentación, y este pétalo hace la conmutación.
+
+84
+00:12:35,800 --> 00:12:41,920
+En este caso dibujé 12 terminales, pero encontré un interruptor de 11 terminales.
+
+85
+00:12:42,920 --> 00:12:45,780
+No crítico, nos sirve.
+
+86
+00:12:46,580 --> 00:12:52,940
+Elige cualquiera aquí, a quien le guste, para el nominal de salida.
+
+87
+00:12:53,800 --> 00:13:05,030
+De las piezas que fijan las dimensiones comunes del sistema, ya tengo el convertidor DC-DC listo.
+
+88
+00:13:06,030 --> 00:13:14,370
+El video sobre afinarlo y construirlo se puede ver en el clip anterior de mi canal.
+
+89
+00:13:15,550 --> 00:13:21,510
+Hecho específicamente para instalación en esta fuente de alimentación universal.
+
+90
+00:13:22,190 --> 00:13:23,770
+Va a ir aquí.
+
+91
+00:13:25,090 --> 00:13:28,790
+Para todas las otras piezas voy a la tienda.
+
+92
+00:13:29,790 --> 00:13:35,230
+Después de comprarlas, pasamos a construir.
+
+93
+00:13:35,870 --> 00:13:43,250
+Y al mismo tiempo, voy a contar cuánto va a costar en piezas esta fuente de alimentación universal.
+
+94
+00:13:45,030 --> 00:13:47,150
+Gracias a todos los que vieron.
+
+95
+00:13:47,690 --> 00:13:49,210
+Nos vemos en la próxima edición.

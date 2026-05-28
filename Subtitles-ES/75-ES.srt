@@ -1,0 +1,415 @@
+1
+00:00:01,040 --> 00:00:02,520
+Hola a todos.
+
+2
+00:00:03,720 --> 00:00:08,960
+Bien, continuando el trabajo en la fuente de alimentación de laboratorio para experimentos.
+
+3
+00:00:10,020 --> 00:00:17,480
+Puedes ver que la tapa del bloque de laboratorio se cubrió con varios agujeros.
+
+4
+00:00:17,740 --> 00:00:20,360
+También hay agujeros en las paredes laterales.
+
+5
+00:00:21,180 --> 00:00:24,880
+Los paneles frontal y trasero ya están listos.
+
+6
+00:00:26,580 --> 00:00:29,280
+Ahora voy a explicar por qué se hizo esto.
+
+7
+00:00:29,900 --> 00:00:39,120
+Como probablemente ya adivinaste, estos agujeros están hechos para las salidas del transformador de pulso de potencia.
+
+8
+00:00:41,120 --> 00:00:52,520
+Un truquito sobre cómo las transferí para que los agujeros coincidan con las salidas del transformador de potencia.
+
+9
+00:00:54,700 --> 00:01:11,260
+Podrías instalar el transformador de potencia así y delinear cada agujero, pero ese método introduce errores y tendrías que mover los agujeros después.
+
+10
+00:01:11,420 --> 00:01:12,820
+Yo fui por un camino diferente.
+
+11
+00:01:14,040 --> 00:01:28,380
+Estos cables se doblaron a un lado, coloqué cartón encima, y golpeando el cartón con un martillito transferí las ubicaciones de las salidas del transformador en él.
+
+12
+00:01:28,720 --> 00:01:45,540
+Y después es cuestión de técnica: cortar alrededor de ellas, aplicarlo sobre cinta a la superficie, y después de eso es fácil transferir las ubicaciones de los futuros agujeros.
+
+13
+00:01:46,050 --> 00:01:49,460
+Todo se resuelve fácil y simplemente.
+
+14
+00:01:52,100 --> 00:01:56,900
+Después, también trabajé en el panel frontal.
+
+15
+00:01:57,420 --> 00:02:14,020
+Como recordamos, aquí debe haber un interruptor, un interruptor para los bobinados del transformador de pulso de potencia y resistencias que manejan la regulación de tensión.
+
+16
+00:02:15,020 --> 00:02:23,280
+En las tomas del transformador, y la regulación del punto de disparo de la protección por corriente.
+
+17
+00:02:24,280 --> 00:02:26,880
+Esos son estos dos agujeros en este caso.
+
+18
+00:02:27,040 --> 00:02:33,060
+También decidí agregar algunos elementos interesantes al montaje.
+
+19
+00:02:34,320 --> 00:02:42,900
+El agujero debajo de ellos es para este interruptor, este micro-interruptor de encendido-apagado.
+
+20
+00:02:45,060 --> 00:02:52,060
+Y este botón con contactos normalmente abiertos, es decir, obtenemos cierre al presionar el botón.
+
+21
+00:02:52,880 --> 00:02:57,960
+Por qué agregué estos elementos.
+
+22
+00:02:58,260 --> 00:03:05,240
+Puedes ver que hice un respaldo, un pequeño botón para que sea cómodo presionar con un dedo.
+
+23
+00:03:06,640 --> 00:03:20,020
+Voy a agregar el interruptor para poder encender y apagar la fuente de alimentación sin desconectar sus cables de alimentación de la batería.
+
+24
+00:03:21,060 --> 00:03:27,940
+Y este botón, en realidad es un análogo del interruptor, va a estar en paralelo con él.
+
+25
+00:03:28,760 --> 00:03:37,820
+Es decir, si apagamos el interruptor, el bloque queda en espera; presionando este botón se enciende el bloque.
+
+26
+00:03:38,520 --> 00:03:43,740
+Agregué este modo para que podamos probar cargas.
+
+27
+00:03:44,440 --> 00:03:50,540
+Digamos que armamos un sistema nuevo y aún no sabemos cómo va a comportarse.
+
+28
+00:03:50,700 --> 00:03:57,200
+Brevemente presionamos este botón y observamos el comportamiento del sistema.
+
+29
+00:03:57,960 --> 00:04:10,860
+Este botón también es útil si ponemos un voltímetro en la salida de la fuente de alimentación para ver la tensión máxima en esta toma del transformador de pulso.
+
+30
+00:04:12,360 --> 00:04:16,900
+Pequeñas adiciones al montaje.
+
+31
+00:04:19,060 --> 00:04:32,620
+Después, pasando a una vista general de la sección de potencia agregada al montaje, específicamente este puente de diodos.
+
+32
+00:04:34,280 --> 00:04:41,520
+Este puente de diodos está construido sobre ocho diodos MUR860.
+
+33
+00:04:42,300 --> 00:04:56,760
+Cada diodo es de 600 V, así que los conecté, puedes ver los puentes, dos diodos en serie, totalizando un diodo combinado de 1200 V.
+
+34
+00:04:57,460 --> 00:05:02,720
+Diodos rápidos, necesarios para trabajar en este sistema.
+
+35
+00:05:03,760 --> 00:05:09,540
+Están sujetos al disipador también a través de un pad dieléctrico de mica.
+
+36
+00:05:11,120 --> 00:05:19,400
+Todas las operaciones son similares a las que mostré en la vista general del módulo de potencia.
+
+37
+00:05:20,440 --> 00:05:26,320
+Elegí este disipador, puedes ver que lo usé antes.
+
+38
+00:05:26,980 --> 00:05:39,980
+Es conveniente que los elementos de potencia puedan colocarse adentro, y esto proporciona protección extra de tocar cables desnudos.
+
+39
+00:05:40,100 --> 00:05:57,720
+Es decir, muy conveniente, si miramos cómo se une a la caja, salidas a través de un agujero, y está sujeto con 4 tornillos en la parte trasera de la caja.
+
+40
+00:05:59,540 --> 00:06:20,480
+Los cables se enrutan hacia afuera donde se van a fijar las salidas del transformador de pulso de potencia, y los cables de salida ya están marcados más y menos.
+
+41
+00:06:20,960 --> 00:06:23,620
+El cableado es, creo, visible.
+
+42
+00:06:26,080 --> 00:06:43,980
+Una resistencia se va a instalar adicionalmente aquí, entre estas salidas en esta zona, esta resistencia va a ser una resistencia de descarga, para que tengamos un volcado de potencial para la tensión en los
+
+43
+00:06:43,980 --> 00:06:44,600
+capacitores de salida.
+
+44
+00:06:46,480 --> 00:06:52,800
+Ahora podemos mirar la lista de lo que compré adicionalmente.
+
+45
+00:06:54,100 --> 00:07:01,320
+Estuve en tiendas de electrónica recientemente, recogiendo estos diodos y otras piezas.
+
+46
+00:07:02,340 --> 00:07:13,860
+La lista está delante de ti, el costo total es 1555 rublos.
+
+47
+00:07:14,900 --> 00:07:16,140
+¿Qué conseguí?
+
+48
+00:07:16,680 --> 00:07:29,460
+Conseguí 4 capacitores de 4700 µF, 50 rublos cada uno, total 200 rublos.
+
+49
+00:07:30,400 --> 00:07:36,700
+Un capacitor de 2,2 µF, costo 30 rublos.
+
+50
+00:07:37,780 --> 00:07:51,520
+También compré capacitores para la salida, cada uno de 4,8 µF, los grandes.
+
+51
+00:07:52,140 --> 00:07:54,960
+40 rublos por pieza.
+
+52
+00:07:55,060 --> 00:08:02,280
+Los conecté en serie, capacitores calificados a 600 V.
+
+53
+00:08:02,400 --> 00:08:07,680
+Y el total, como la pila de diodos, llegó a 1200 V.
+
+54
+00:08:08,680 --> 00:08:20,440
+También conseguí 2 potenciómetros de ajuste, un interruptor, un botón, pequeños detalles.
+
+55
+00:08:21,080 --> 00:08:37,140
+Puedes ver que también conseguí el disipador que tenía a mano, lo compré alguna vez a 100 rublos cada uno, pero mantuve el precio como está; no estoy seguro de cuánto cuesta ahora.
+
+56
+00:08:39,040 --> 00:08:44,620
+También conseguí núcleos para los choques.
+
+57
+00:08:46,360 --> 00:08:49,140
+Un núcleo grande y dos pequeños.
+
+58
+00:08:49,200 --> 00:09:03,220
+Voy a usar los dos núcleos pequeños en la salida, y este más grande va a ser el choque en la alimentación de la batería.
+
+59
+00:09:07,780 --> 00:09:36,800
+Los precios son visibles, hoy, considerando lo que habíamos comprado antes por 2955 rublos, el total corriente llega a 4510 rublos ahora
+
+60
+00:09:36,800 --> 00:09:38,440
+para esta fuente de alimentación.
+
+61
+00:09:38,640 --> 00:09:50,100
+Por supuesto muchas cositas no están incluidas aquí, como brocas pequeñas que naturalmente necesitas conseguir, y otro equipo pequeño.
+
+62
+00:09:51,080 --> 00:09:58,620
+Pero ya sabes cómo es, las herramientas nunca sobran.
+
+63
+00:09:59,240 --> 00:10:05,660
+Y por supuesto el costo será mucho mayor desde el inicio de la fabricación si no tienes nada.
+
+64
+00:10:06,200 --> 00:10:29,180
+También hice cositas como formar salidas, pegar separadores y patas en la placa del convertidor DC-DC, y como puedes ver los pegué a la placa donde se montará el controlador PWM.
+
+65
+00:10:29,180 --> 00:10:30,240
+Controlador PWM.
+
+66
+00:10:30,980 --> 00:10:36,380
+Muchas cositas, ocupan grandes cantidades de tiempo, por supuesto.
+
+67
+00:10:38,220 --> 00:10:40,020
+No hay forma de escapar de eso.
+
+68
+00:10:41,760 --> 00:11:03,860
+Hago estos separadores de esos espaciadores plásticos aislantes que sirven para sujetar transistores o diodos u otra electrónica.
+
+69
+00:11:04,400 --> 00:11:11,780
+Los pones en el perno de apriete y son espaciadores aislantes.
+
+70
+00:11:12,160 --> 00:11:18,920
+Es decir, lo enhebras a través del ojo del encapsulado así.
+
+71
+00:11:19,980 --> 00:11:25,760
+Hacen separadores lindos.
+
+72
+00:11:26,700 --> 00:11:28,120
+Truquitos.
+
+73
+00:11:28,780 --> 00:11:38,320
+Mientras trabajaba mejoré el interruptor, puedes ver que recorté este contacto ancho con un Dremel.
+
+74
+00:11:38,780 --> 00:11:44,280
+Ahora claramente toca un contacto y las superficies principales en círculo.
+
+75
+00:11:45,520 --> 00:11:51,120
+Ahora armemos aproximadamente paso a paso.
+
+76
+00:11:51,480 --> 00:11:54,700
+Ver qué sale en este punto.
+
+77
+00:11:55,100 --> 00:11:59,220
+El armado de este dispositivo empieza por el panel de control.
+
+78
+00:12:00,580 --> 00:12:02,080
+Para que todo vaya aquí.
+
+79
+00:12:02,460 --> 00:12:09,040
+Puedes ver que todo también está colocado compactamente, pero hay espacios, las piezas no se tocan entre sí.
+
+80
+00:12:11,000 --> 00:12:21,540
+Después deberíamos instalar el convertidor DC-DC, se monta en el panel lateral con cuatro tornillos.
+
+81
+00:12:25,560 --> 00:12:27,040
+Así.
+
+82
+00:12:31,290 --> 00:12:35,550
+Corté roscas M3 en la placa.
+
+83
+00:12:36,890 --> 00:12:41,390
+Ahora conveniente para instalar.
+
+84
+00:12:44,900 --> 00:12:44,900
+Roscado.
+
+85
+00:12:45,600 --> 00:12:57,860
+Después instalamos el bloque rectificador de potencia, también se monta con cuatro tornillos.
+
+86
+00:13:01,860 --> 00:13:19,780
+Hice separadores adicionales para que haya un espacio para buen enfriamiento de este módulo.
+
+87
+00:13:22,560 --> 00:13:36,780
+No voy a apretar fuerte, un armado preliminar, solo para ver cómo todo entra dentro del bloque.
+
+88
+00:13:37,880 --> 00:13:43,100
+Después los capacitores del filtro de salida.
+
+89
+00:13:43,860 --> 00:13:50,540
+Ves que los contactos entran para acoplamiento con las salidas del puente de diodos.
+
+90
+00:13:52,240 --> 00:13:55,500
+El relé estará en esta parte.
+
+91
+00:13:57,960 --> 00:14:09,460
+Los capacitores que servirán como reserva para el módulo de potencia se ubicarán así.
+
+92
+00:14:11,340 --> 00:14:24,620
+El choque de alimentación estará en esta zona y dos choques en la salida estarán aquí.
+
+93
+00:14:27,320 --> 00:14:29,080
+Bien, todo tiene espacio.
+
+94
+00:14:31,640 --> 00:14:37,720
+La placa irá sobre separadores en esta parte.
+
+95
+00:14:38,580 --> 00:14:50,240
+Esta holgura de unos 4 mm será suficiente para enrutamiento de cables enrollados en la parte trasera de la placa.
+
+96
+00:14:51,720 --> 00:14:54,180
+Y todo esto cierra.
+
+97
+00:14:55,860 --> 00:15:03,060
+Encima, el módulo de potencia y el transformador de pulso.
+
+98
+00:15:04,000 --> 00:15:06,600
+Eso es todo por hoy.
+
+99
+00:15:07,240 --> 00:15:10,040
+Haciendo pequeño trabajo mecánico.
+
+100
+00:15:11,120 --> 00:15:17,220
+Muy pronto vamos a pasar a hacer el controlador PWM.
+
+101
+00:15:17,560 --> 00:15:24,780
+Lo más interesante que vamos a hacer, su ajuste, los primeros arranques del sistema.
+
+102
+00:15:26,260 --> 00:15:27,920
+Va a ser interesante.
+
+103
+00:15:30,120 --> 00:15:31,620
+Eso es todo.
+
+104
+00:15:31,640 --> 00:15:36,040
+Chau a todos, buen humor, nos vemos en los próximos videos.

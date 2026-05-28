@@ -1,0 +1,1075 @@
+1
+00:00:00,000 --> 00:00:01,580
+Hola a todos.
+
+2
+00:00:02,460 --> 00:00:17,380
+Hoy quiero presentarte un chip maravilloso que se ha extendido, sobre el que puedes armar convertidores con aislamiento galvánico con topología flyback, es decir,
+
+3
+00:00:17,380 --> 00:00:19,220
+un convertidor flyback.
+
+4
+00:00:20,160 --> 00:00:29,460
+Conocí este chip por casualidad durante un viaje a casa de un conocido de internet.
+
+5
+00:00:30,000 --> 00:00:39,320
+Y ahí nos encontramos con el problema de que este convertidor estaba con subtensión a la salida.
+
+6
+00:00:40,220 --> 00:00:49,980
+Trabajarlo en el campo era irreal, no había equipo necesario, ni habilidades para trabajar con este chip.
+
+7
+00:00:50,160 --> 00:00:57,420
+Y después de llegar a casa decidí dominarlo, ya que este chip tiene bastante potencial.
+
+8
+00:00:58,420 --> 00:01:02,800
+¿Qué se puede notar sobre este chip?
+
+9
+00:01:03,660 --> 00:01:07,860
+Se fabrica en distintos encapsulados.
+
+10
+00:01:09,040 --> 00:01:13,320
+Prefiero trabajar con encapsulados DIP.
+
+11
+00:01:13,800 --> 00:01:16,300
+Es pequeño aquí, de 8 pines.
+
+12
+00:01:16,840 --> 00:01:22,520
+También hay una versión SMD de montaje superficial en el mismo tipo de encapsulado.
+
+13
+00:01:22,520 --> 00:01:39,260
+Los elementos principales del circuito serán el propio chip controlador, el interruptor, el núcleo del convertidor y un diodo Schottky de alta velocidad.
+
+14
+00:01:41,200 --> 00:01:51,380
+Quiero señalar que en este convertidor esta pieza no es un transformador sino una especie de choque.
+
+15
+00:01:52,520 --> 00:02:03,280
+Al conmutar el bobinado primario del choque con el interruptor, ocurre una patada brusca.
+
+16
+00:02:04,160 --> 00:02:17,140
+El choque almacena energía en el núcleo como campo magnético, y luego durante la pausa la descarga en la carga a través del bobinado secundario.
+
+17
+00:02:18,760 --> 00:02:24,180
+El chip tiene dos realimentaciones.
+
+18
+00:02:25,200 --> 00:02:33,380
+Primero, realimentación por tensión, implementada a través de un optoacoplador PC817.
+
+19
+00:02:33,380 --> 00:02:38,160
+Y segundo, realimentación por corriente.
+
+20
+00:02:39,480 --> 00:02:48,760
+Se hace sobre una resistencia colocada en el circuito de fuente del FET.
+
+21
+00:02:49,560 --> 00:02:59,800
+Eligiendo el valor de esta resistencia, en última instancia regulamos la corriente que pasa por el interruptor.
+
+22
+00:02:59,800 --> 00:03:07,540
+No limitando su resistencia, sino mediante realimentación que va al pin 3.
+
+23
+00:03:08,260 --> 00:03:20,920
+Y el chip, siguiendo la caída de tensión en esta resistencia, cambia la duración del pulso que maneja la compuerta del FET.
+
+24
+00:03:22,940 --> 00:03:28,180
+A continuación, veamos las piezas adecuadas para construir este convertidor.
+
+25
+00:03:29,800 --> 00:03:31,980
+Ya cubrimos el chip.
+
+26
+00:03:32,520 --> 00:03:36,840
+El optoacoplador PC817 se ve así.
+
+27
+00:03:37,880 --> 00:03:47,920
+Por cierto, para los que no saben cómo contar los pines en chips u optoacopladores, hay un punto en el encapsulado.
+
+28
+00:03:48,180 --> 00:03:51,900
+Ese es el pin 1 del chip.
+
+29
+00:03:51,900 --> 00:03:56,280
+Marqué el punto cerca del pin 1.
+
+30
+00:03:57,280 --> 00:04:02,320
+Y los pines del optoacoplador corresponden al dibujo.
+
+31
+00:04:02,660 --> 00:04:08,960
+Correspondencia total de pines, igual que en el chip.
+
+32
+00:04:09,060 --> 00:04:15,200
+Los pines se cuentan en sentido antihorario desde el punto en el encapsulado.
+
+33
+00:04:16,200 --> 00:04:22,200
+Sobre los interruptores que puedes usar en este circuito.
+
+34
+00:04:22,980 --> 00:04:38,700
+Como nuestro nominal de alimentación será de hasta 18 V, el interruptor trabaja en modo pulsado y pueden aparecer picos de tensión.
+
+35
+00:04:38,700 --> 00:04:50,090
+Y para que este pico de tensión no rompa el transistor, necesitamos elegirlo con cierto margen de tensión, desde 60 V.
+
+36
+00:04:50,090 --> 00:05:03,590
+En este caso le di el nombre aquí, este transistor FR120N, en encapsulado para montaje SMD.
+
+37
+00:05:04,730 --> 00:05:10,710
+Y un IRF540 en este tipo de encapsulado.
+
+38
+00:05:11,110 --> 00:05:15,710
+Estos transistores están calificados a 100 V.
+
+39
+00:05:15,710 --> 00:05:17,830
+Lo cual nos sirve bien.
+
+40
+00:05:18,050 --> 00:05:26,330
+Y además tienen una compuerta bastante liviana, con capacitancia de saturación mínima.
+
+41
+00:05:27,570 --> 00:05:29,210
+Después, el diodo.
+
+42
+00:05:30,190 --> 00:05:40,590
+Si planeas alimentar chips con este convertidor, entonces este diodo en este encapsulado va a funcionar.
+
+43
+00:05:41,210 --> 00:05:45,010
+Este es un 1N5819, diodo de 1 A.
+
+44
+00:05:45,710 --> 00:05:57,370
+Y si vas a conectar cargas más serias a este convertidor, recomiendo poner un diodo en el encapsulado más grande 1N5822.
+
+45
+00:05:58,770 --> 00:06:00,210
+Es de 3 A.
+
+46
+00:06:00,790 --> 00:06:10,530
+Este diodo es más que suficiente para alimentar una carga de 10-15 W, la maneja fácilmente.
+
+47
+00:06:12,470 --> 00:06:30,810
+Ahora necesito señalar que el pin de alimentación del chip, aquí, el pin 7, donde se aplica el más de alimentación, se conecta directamente a los transistores que
+
+48
+00:06:30,810 --> 00:06:33,710
+abren la compuerta del interruptor.
+
+49
+00:06:33,710 --> 00:06:41,770
+Es decir, la tensión de alimentación aplicada al pin 7 también estará en el pin 6.
+
+50
+00:06:42,410 --> 00:06:48,610
+Así que aquí no puedes exceder los 20 V.
+
+51
+00:06:48,970 --> 00:06:53,210
+Esa es la frontera por ruptura de compuerta.
+
+52
+00:06:53,210 --> 00:07:14,630
+Si por construcción necesitas que este circuito trabaje con tensión que exceda 18 V a la entrada, vas a necesitar poner o un convertidor limitador adicional o un regulador
+
+53
+00:07:14,630 --> 00:07:18,310
+en la alimentación al pin 7.
+
+54
+00:07:18,310 --> 00:07:29,730
+Si el nominal sirve, el regulador debe ser de 18 V, es decir, aplica no más de 18 V al pin 7.
+
+55
+00:07:30,210 --> 00:07:36,370
+Y entonces puedes usar este chip con un nominal de alimentación mayor.
+
+56
+00:07:36,550 --> 00:07:43,350
+Y por supuesto el conteo de espiras va a necesitar ser elegido para tu nominal de alimentación.
+
+57
+00:07:44,230 --> 00:07:49,630
+Ahora sobre la parte más importante de este convertidor, el núcleo.
+
+58
+00:07:50,270 --> 00:08:00,570
+La cosa es que el núcleo en este circuito está sujeto a pulsos unipolares, que pueden llevarlo fácilmente a saturación.
+
+59
+00:08:00,710 --> 00:08:08,030
+Así que hay dimensiones mínimas del núcleo que van a funcionar en este circuito.
+
+60
+00:08:09,030 --> 00:08:16,730
+Lo elegí en la práctica, y las dimensiones del núcleo se muestran en este dibujo.
+
+61
+00:08:17,830 --> 00:08:26,570
+De largo mide 15,5 mm, radio interno 18,5 mm, externo 29,7 mm.
+
+62
+00:08:27,070 --> 00:08:31,010
+El ancho de pared es 5,6 mm.
+
+63
+00:08:31,010 --> 00:08:34,990
+También puedes elegir otros núcleos.
+
+64
+00:08:36,090 --> 00:08:43,430
+En principio, son bienvenidos núcleos con dimensiones más grandes, con los más pequeños el convertidor funciona peor.
+
+65
+00:08:43,670 --> 00:08:49,310
+También puedes usar núcleos de copa de ferrita de dimensiones correspondientes.
+
+66
+00:08:50,290 --> 00:08:52,730
+Ahora sobre el bobinado primario.
+
+67
+00:08:53,470 --> 00:08:59,170
+Bobinado primario, conteo de espiras elegido según el nominal de tensión de alimentación.
+
+68
+00:08:59,170 --> 00:09:04,430
+En este caso, la tensión suministrada no será mayor a 18 V.
+
+69
+00:09:04,930 --> 00:09:08,510
+En la práctica trabajará constantemente desde 12 V.
+
+70
+00:09:08,930 --> 00:09:16,410
+Entonces bajo este núcleo, el conteo óptimo de espiras fue de 7 a 11.
+
+71
+00:09:16,490 --> 00:09:19,370
+Valor medio, 8-9 espiras.
+
+72
+00:09:20,370 --> 00:09:30,570
+Si el conteo de espiras es demasiado grande, entonces el núcleo, incluso con estas dimensiones, empieza a entrar en saturación.
+
+73
+00:09:31,030 --> 00:09:47,570
+Y si reduces el conteo de espiras, por ejemplo a unas 4 en este núcleo, la realimentación por corriente se dispara demasiado temprano y el convertidor empieza a subtensionar a la salida.
+
+74
+00:09:47,570 --> 00:09:49,870
+Así que tienes que encontrar el justo medio.
+
+75
+00:09:50,390 --> 00:09:58,690
+Todos lo harán en la práctica eligiendo el conteo de espiras para su propio núcleo.
+
+76
+00:09:58,770 --> 00:10:01,910
+Esa es una característica de estos esquemas.
+
+77
+00:10:04,030 --> 00:10:12,630
+Y después todo depende del bobinado secundario, de qué tensión queremos obtener.
+
+78
+00:10:12,630 --> 00:10:19,090
+Es decir, si necesitas 5 V, entonces el conteo de espiras aquí será de unas 4.
+
+79
+00:10:19,870 --> 00:10:31,090
+Y si, como yo en este caso, necesitas un nominal de alimentación alrededor de 16 V, eso serán 12 espiras.
+
+80
+00:10:32,570 --> 00:10:37,410
+Bien, después viene la realimentación.
+
+81
+00:10:37,410 --> 00:10:45,410
+Noté que la salida con realimentación por tensión se conecta a la sección más consumidora de energía de la cadena consumidora.
+
+82
+00:10:46,990 --> 00:10:58,810
+Es decir, si armas el circuito sin esta parte, contigo todo esto está bien.
+
+83
+00:10:59,130 --> 00:11:03,550
+La realimentación trabaja directamente sobre la carga.
+
+84
+00:11:03,550 --> 00:11:15,550
+Pero si vas a necesitar hacer N bobinados secundarios sobre este núcleo, entonces necesitas seguir esta regla.
+
+85
+00:11:16,130 --> 00:11:28,930
+Porque conectar una carga más potente a uno de los terminales donde no se hace la realimentación lleva a una caída de tensión en él.
+
+86
+00:11:28,930 --> 00:11:34,910
+Ya que el impacto en la realimentación a través del bobinado secundario ocurre indirectamente.
+
+87
+00:11:35,890 --> 00:11:40,810
+Así que el consumidor más potente se conecta en este punto.
+
+88
+00:11:42,570 --> 00:11:47,930
+De esta manera también se logra tensión estable en otros bobinados.
+
+89
+00:11:48,690 --> 00:11:55,470
+También puedes ver aquí que introduje un zener de 18 V en el circuito a la salida.
+
+90
+00:11:55,470 --> 00:12:13,570
+La cosa es que cuando conectamos un consumidor a uno de los bobinados de este convertidor y el controlador PWM empieza a adaptarse a esta carga, cambia la duración del pulso.
+
+91
+00:12:13,570 --> 00:12:27,950
+Y al cambio de pulso hacia mayor, lo que normalmente pasa al conectar una carga, la tensión en los bobinados secundarios crece automáticamente por acoplamiento inductivo.
+
+92
+00:12:29,330 --> 00:12:36,990
+Y para evitar que los elementos conectados más adelante en el circuito se rompan, necesitas agregar un zener aquí.
+
+93
+00:12:36,990 --> 00:12:46,490
+En este caso un zener de 1 W es suficiente para manejar este potencial creciente.
+
+94
+00:12:46,870 --> 00:12:56,790
+Con estos valores de 12 espiras, con una carga de 10 W aquí, el salto puede ser de hasta 27 V.
+
+95
+00:12:57,390 --> 00:13:02,890
+Y el zener de 1 W maneja este potencial adecuadamente.
+
+96
+00:13:04,370 --> 00:13:08,150
+No olvides este punto.
+
+97
+00:13:08,830 --> 00:13:21,390
+También agregué un choque extra al circuito, este no es un elemento obligatorio del sistema, lo puedes dejar fuera, pero es un filtro.
+
+98
+00:13:21,550 --> 00:13:31,910
+Para cuando necesitas alimentar dispositivos de precisión como chips que no toleran oscilaciones de alimentación.
+
+99
+00:13:32,890 --> 00:13:38,590
+El nominal de salida lo fija este zener.
+
+100
+00:13:39,690 --> 00:13:50,930
+Cambiando la tensión de ruptura, eligiendo un zener diferente, regulamos la tensión de salida de todo el convertidor.
+
+101
+00:13:51,720 --> 00:14:09,070
+Si elegí un zener de 15 V aquí, entonces considerando que el optoacoplador requiere algo de tensión para dispararse, la salida mantiene unos 16 V.
+
+102
+00:14:09,070 --> 00:14:21,810
+Si necesitas alimentación de 5 V, entonces pon un zener de 4,5 V aquí y vas a obtener tu alimentación de 5 V.
+
+103
+00:14:22,570 --> 00:14:29,710
+En ese caso deberías reducir el conteo de espiras del bobinado secundario de este choque.
+
+104
+00:14:29,710 --> 00:14:38,830
+En este caso uso este esquema para alimentar un inversor puente.
+
+105
+00:14:39,470 --> 00:14:45,310
+Necesitaba alimentación independiente que va al generador maestro.
+
+106
+00:14:46,030 --> 00:14:58,150
+Y cuatro alimentaciones separadas con aislamiento galvánico que van a controlar cuatro interruptores del puente.
+
+107
+00:14:58,150 --> 00:15:03,490
+Y por eso fui con un nominal de potencia de 16 V.
+
+108
+00:15:04,110 --> 00:15:22,850
+Y si vas a construir un circuito que necesita diferentes nominales de potencia, digamos 5 V, 9 V, cambias el conteo de espiras del secundario y cambias el nominal del zener de salida
+
+109
+00:15:22,850 --> 00:15:28,950
+que va a mantener establemente la tensión en tu carga.
+
+110
+00:15:29,410 --> 00:15:33,210
+También debería decir unas palabras sobre las reglas de montaje.
+
+111
+00:15:33,650 --> 00:15:44,750
+Como este es un sistema de alta frecuencia, la frecuencia de operación del interruptor aquí es de unos 160 kHz.
+
+112
+00:15:44,750 --> 00:15:59,030
+Con estos valores en el pin 4, este capacitor de 1000 pF que fija la frecuencia y una resistencia que crea la tensión de alimentación necesaria en el generador de reloj del chip.
+
+113
+00:16:00,210 --> 00:16:10,730
+Debes encarar el armado con cuidado, sin permitir cables largos, grandes distancias entre piezas en la placa.
+
+114
+00:16:10,730 --> 00:16:18,010
+Esto puede llevar a captaciones no deseadas de alta frecuencia y operación inadecuada del convertidor.
+
+115
+00:16:19,110 --> 00:16:24,050
+En este caso armé el circuito sobre esta placa de prototipos.
+
+116
+00:16:24,050 --> 00:16:38,330
+Una placa de prototipos pequeña como esta es suficiente para realizar toda la unidad.
+
+117
+00:16:38,410 --> 00:16:40,210
+Déjame mostrar su tamaño.
+
+118
+00:16:40,930 --> 00:16:46,450
+Mide 6 cm por 4 cm.
+
+119
+00:16:46,450 --> 00:16:51,290
+Prácticamente la mitad de la placa la ocupa esta unidad.
+
+120
+00:16:51,790 --> 00:16:56,940
+Sus dimensiones son 11 agujeros de montaje por 14.
+
+121
+00:16:57,830 --> 00:17:07,390
+Puedes notar lo densa que es la disposición, sin cables largos.
+
+122
+00:17:07,390 --> 00:17:20,190
+El zener que fija el nominal de potencia de salida y la resistencia limitadora de 10 Ω están sacados.
+
+123
+00:17:20,590 --> 00:17:30,850
+Luego una cadena de capacitores de zeners mostrados como 18 V en el esquema.
+
+124
+00:17:30,850 --> 00:17:45,070
+Y en este punto vamos a tener el núcleo con el cable bobinado, 5 terminales y un cable negro del bobinado primario.
+
+125
+00:17:45,170 --> 00:17:50,110
+Se montará en esta posición en este caso.
+
+126
+00:17:53,610 --> 00:17:59,200
+Ahora un punto interesante sobre la fase de los bobinados.
+
+127
+00:18:00,790 --> 00:18:11,640
+Puedes ver que los puntos están en direcciones opuestas, lo que significa que los cables al bobinar el primario y secundario del choque en una dirección necesitan intercambiarse.
+
+128
+00:18:11,640 --> 00:18:25,540
+Si no haces esto, entonces al conectar el convertidor va a consumir fuerte, y la conexión incorrecta del bobinado se va a manifestar como calentamiento de este diodo.
+
+129
+00:18:25,660 --> 00:18:33,980
+Esto será palpable si lo tocas con el dedo, puede calentarse hasta unos 50 grados.
+
+130
+00:18:33,980 --> 00:18:53,900
+Al cambio de polaridad vas a ver inmediatamente un aumento adecuado de la tensión de salida, este diodo va a estar frío, y el convertidor va a cambiar a modo de consumo económico sin carga a 0,02 A.
+
+131
+00:18:55,160 --> 00:19:00,240
+Ahora ves la hoja de datos de esta línea de chips en el monitor.
+
+132
+00:19:00,400 --> 00:19:01,900
+Aquí están sus nombres.
+
+133
+00:19:02,880 --> 00:19:10,160
+Se fabrican en distintos tipos de encapsulados, de 8 pines y de 14 pines.
+
+134
+00:19:11,800 --> 00:19:17,620
+El encapsulado de 14 pines corresponde al chip NCV3843.
+
+135
+00:19:18,900 --> 00:19:21,600
+Pinout mostrado.
+
+136
+00:19:23,800 --> 00:19:28,910
+Puedes usar este chip, es un análogo completo del de 8 pines por funcionalidad.
+
+137
+00:19:29,760 --> 00:19:43,760
+Lo único que se introduce aquí es alimentación separada para el propio chip y alimentación separada para los transistores que manejan la compuerta del FET.
+
+138
+00:19:44,760 --> 00:20:02,080
+Alimentación total suministrada al pin 12, marcado VCC, y VC, pin 11, donde se suministra alimentación limitada que va a manejar la compuerta del FET más adelante.
+
+139
+00:20:02,080 --> 00:20:22,160
+Y vas a ver que los pines 2, 4, 6 y 13 del chip están marcados NC, que significa "sin conexión", esos pines en el encapsulado de 14 pines no están conectados.
+
+140
+00:20:22,160 --> 00:20:23,380
+Conectados.
+
+141
+00:20:24,380 --> 00:20:32,860
+Aquí están las características del chip, para quien esté interesado.
+
+142
+00:20:33,200 --> 00:20:39,900
+Y nos interesa la lógica de operación de este sistema.
+
+143
+00:20:40,900 --> 00:20:44,720
+Se muestra en esta imagen.
+
+144
+00:20:45,720 --> 00:20:47,660
+Acerca un poco.
+
+145
+00:20:49,720 --> 00:21:03,380
+Y puedes ver que los principales elementos lógicos de este chip que siguen corriente y tensión son comparadores.
+
+146
+00:21:03,380 --> 00:21:08,160
+Aquí está el primer comparador, su salida, pin 3.
+
+147
+00:21:08,580 --> 00:21:20,420
+Nota que aquí compara la tensión que forma 1 V en el zener con la caída de tensión en esta resistencia en el circuito de fuente.
+
+148
+00:21:20,420 --> 00:21:29,660
+Y el segundo comparador, nuestro terminal del zener al pin 2.
+
+149
+00:21:29,860 --> 00:21:39,780
+Compara la tensión con los 2,5 V de potencia que se forman en el divisor de la resistencia.
+
+150
+00:21:39,780 --> 00:21:51,620
+De esta manera envían la señal procesada al siguiente elemento lógico del chip, y se hace el control del interruptor.
+
+151
+00:21:51,760 --> 00:21:56,040
+El esquema es bastante simple pero funciona sin fallar.
+
+152
+00:21:56,040 --> 00:22:11,720
+Y con la realimentación por corriente introducida en el sistema, se realiza la protección, así que este convertidor no se puede hacer fallar, incluso si se hace corto brevemente.
+
+153
+00:22:12,080 --> 00:22:16,460
+Puede trabajar en ese modo durante mucho tiempo.
+
+154
+00:22:18,040 --> 00:22:25,780
+Y el interruptor estará en estado de trabajo.
+
+155
+00:22:28,060 --> 00:22:30,680
+¿Qué más es interesante aquí?
+
+156
+00:22:30,880 --> 00:22:32,900
+Se muestran formas de onda.
+
+157
+00:22:33,940 --> 00:22:37,440
+Cableado para distintas soluciones esquemáticas.
+
+158
+00:22:40,750 --> 00:22:50,250
+Lamentablemente, todo está en inglés, pero encontré una descripción más en internet.
+
+159
+00:22:54,710 --> 00:22:57,090
+Sitio flakebackr01.doc.
+
+160
+00:22:58,210 --> 00:23:04,670
+Aquí también hay un archivo PDF, voy a dejar el enlace en la descripción del video.
+
+161
+00:23:06,710 --> 00:23:12,690
+Este PDF lo escribió Dmitry Makashov de Moscú.
+
+162
+00:23:14,030 --> 00:23:23,850
+Dedicó este trabajo a los convertidores flyback, específicamente a la topología de nuestros esquemas.
+
+163
+00:23:24,410 --> 00:23:38,150
+Aquí está la descripción, puedes familiarizarte con cómo funciona con más detalle, cómo está organizado, qué elementos, cómo calcular formas de onda, varias conexiones.
+
+164
+00:23:38,150 --> 00:23:40,190
+Material muy útil.
+
+165
+00:23:40,950 --> 00:23:44,790
+46 páginas de información detallada.
+
+166
+00:23:45,870 --> 00:23:52,770
+También se dan variantes de cableado para este chip.
+
+167
+00:23:53,810 --> 00:24:03,670
+Puedes crear varios dispositivos interesantes, incluyendo convertidores elevadores o reductores que se pueden alimentar de la red.
+
+168
+00:24:08,510 --> 00:24:11,010
+Se ven las fórmulas para cálculos.
+
+169
+00:24:11,090 --> 00:24:13,930
+Este tipo de cosa me entristece, por supuesto.
+
+170
+00:24:14,650 --> 00:24:24,830
+Para mí es más simple hacer experimentos en la práctica, pero para gente con mentalidad matemática, esto va a ser muy útil.
+
+171
+00:24:25,630 --> 00:24:33,850
+En particular, el autor muestra cómo deberían colocarse los bobinados primario y secundario en los núcleos.
+
+172
+00:24:33,850 --> 00:24:38,830
+También se darán las reglas de montaje.
+
+173
+00:24:46,160 --> 00:24:47,820
+¿Qué más interesante?
+
+174
+00:24:48,280 --> 00:24:49,660
+Fórmulas, fórmulas.
+
+175
+00:24:49,980 --> 00:24:51,420
+Esto lo saltamos.
+
+176
+00:24:58,330 --> 00:25:06,150
+Aquí examina la topología de conexión y luego el cálculo de los valores del circuito.
+
+177
+00:25:07,810 --> 00:25:12,270
+Se muestran los valores que pueden funcionar aquí.
+
+178
+00:25:13,170 --> 00:25:16,590
+Identifícalos y encuéntralos en el esquema.
+
+179
+00:25:19,290 --> 00:25:26,470
+Y también reglas de montaje para soluciones de circuito de alta frecuencia.
+
+180
+00:25:26,870 --> 00:25:31,170
+En este caso capacitores SMD.
+
+181
+00:25:31,170 --> 00:25:34,570
+Qué va en qué caso y cómo va a funcionar.
+
+182
+00:25:35,090 --> 00:25:41,410
+Trabajo voluminoso hecho por Dmitry, muchas gracias a él.
+
+183
+00:25:42,610 --> 00:25:45,830
+Pasando a verificar la operación del chip.
+
+184
+00:25:46,670 --> 00:25:53,770
+Armando todo en una placa de prototipos excepto el choque.
+
+185
+00:25:55,990 --> 00:26:00,910
+Empezamos verificando la operación del chip con el generador de reloj.
+
+186
+00:26:01,050 --> 00:26:02,330
+Salida 4.
+
+187
+00:26:02,690 --> 00:26:04,570
+Conecté una sonda a ella.
+
+188
+00:26:05,310 --> 00:26:09,250
+Y podemos observar esta forma de onda en el aparato.
+
+189
+00:26:09,870 --> 00:26:12,870
+La amplitud es de unos 3 V.
+
+190
+00:26:13,530 --> 00:26:15,970
+Frecuencia 161 kHz.
+
+191
+00:26:16,970 --> 00:26:25,770
+Ahora deberíamos verificar si la señal llega al control de la compuerta del FET.
+
+192
+00:26:26,570 --> 00:26:31,950
+Para esto, conecto la sonda al pin 6 del chip.
+
+193
+00:26:32,910 --> 00:26:34,010
+Conectando.
+
+194
+00:26:37,970 --> 00:26:42,530
+Ajusto el barrido para que sea fácil examinarlo.
+
+195
+00:26:42,530 --> 00:26:51,010
+Y ves que la frecuencia de pulso también corresponde a unos 160 kHz.
+
+196
+00:26:53,150 --> 00:26:59,010
+Y puedes ver cómo trabaja el chip con realimentaciones desconectadas.
+
+197
+00:26:59,170 --> 00:27:04,430
+En este caso lo trata como si la carga máxima estuviera conectada.
+
+198
+00:27:04,430 --> 00:27:11,970
+La duración del pulso es máxima, con pequeñas pausas entre ellos.
+
+199
+00:27:12,850 --> 00:27:30,770
+En operación, el chip va a cambiar constantemente la duración del pulso, limitando los nominales de salida de tensión y corriente.
+
+200
+00:27:31,770 --> 00:27:43,250
+Hemos confirmado que la señal alcanza la compuerta, y ahora podemos encender el circuito del choque.
+
+201
+00:27:46,090 --> 00:28:01,430
+Si no conectas el pin 3 a través de la resistencia que lo lleva al cable común, no va a haber señal en la compuerta.
+
+202
+00:28:03,170 --> 00:28:17,250
+Y el consumo en este modo, mientras el chip está en el banco de pruebas, es 12,1 V y 0,02 A.
+
+203
+00:28:20,610 --> 00:28:29,030
+Prácticamente lo mismo será la corriente en vacío cuando tengamos el choque instalado sin cargas conectadas.
+
+204
+00:28:30,390 --> 00:28:42,950
+Ahora mira los nominales de tensión en la placa terminada que irá a mi conocido de internet con quien tratamos este chip.
+
+205
+00:28:43,590 --> 00:28:45,410
+Está hecha para tres salidas.
+
+206
+00:28:47,150 --> 00:28:56,030
+Una alimentación para el generador maestro, donde dos interruptores deben conmutarse con alimentación independiente.
+
+207
+00:28:56,030 --> 00:29:10,830
+Así que aplicamos 12 V a la entrada y vemos que el zener aquí es exactamente los 15 V indicados en este esquema para realimentación.
+
+208
+00:29:11,510 --> 00:29:16,390
+Ves que la tensión es 16,4 V en un canal.
+
+209
+00:29:17,070 --> 00:29:34,750
+Ahora cambio a 16,2 V en el canal que está siguiéndose por realimentación.
+
+210
+00:29:35,230 --> 00:29:42,500
+Y la tercera salida.
+
+211
+00:29:44,620 --> 00:29:46,020
+Conecto.
+
+212
+00:29:48,540 --> 00:29:51,200
+También 16,4 V.
+
+213
+00:29:51,400 --> 00:29:55,480
+Ahora hacemos una prueba de choque para el sistema.
+
+214
+00:29:56,320 --> 00:29:58,960
+Cortocircuita sus salidas.
+
+215
+00:29:59,820 --> 00:30:04,940
+Con pinzas hacemos la acción.
+
+216
+00:30:04,940 --> 00:30:07,860
+Ves, cortocircuito en el canal.
+
+217
+00:30:10,460 --> 00:30:15,820
+La tensión cae, pero no le pasa nada al convertidor.
+
+218
+00:30:15,980 --> 00:30:16,840
+Segunda salida.
+
+219
+00:30:22,380 --> 00:30:30,180
+Ahora trata de agrandar para que puedas ver que hay un cortocircuito.
+
+220
+00:30:34,770 --> 00:30:39,690
+Puedes ver la descarga ocurriendo.
+
+221
+00:30:39,970 --> 00:30:40,650
+Y la tercera.
+
+222
+00:30:45,530 --> 00:30:58,390
+Ves que mientras no hay carga conectada, la tensión se mantiene en el canal de salida no cortocircuitado.
+
+223
+00:30:58,390 --> 00:31:09,430
+Pero si cortocircuitamos al que el multímetro está conectado directamente, la tensión cae a un valor pequeño.
+
+224
+00:31:10,630 --> 00:31:14,970
+Después de retirar el corto, el sistema vuelve al modo de operación.
+
+225
+00:31:15,790 --> 00:31:30,310
+Ahora también vamos a probar cómo afecta cambiar el valor de esta resistencia a la corriente final de salida del sistema.
+
+226
+00:31:30,770 --> 00:31:35,490
+Lo recomendado bajo este chip es 0,5 Ω.
+
+227
+00:31:35,870 --> 00:31:49,490
+Puedes ir más grande, por ejemplo la resistencia de 1 Ω aquí, porque cargas grandes no se van a conectar aquí, solo control de compuerta y generador maestro de reloj.
+
+228
+00:31:49,490 --> 00:31:58,650
+También puedes ir más pequeño, poner 0,1 Ω, y entonces puedes conectar cargas bastante serias aquí.
+
+229
+00:31:58,870 --> 00:32:03,610
+Pero vamos a probar con una lámpara de 12 V, 10 W.
+
+230
+00:32:04,590 --> 00:32:13,310
+Ahora vamos a verificar la realimentación por tensión y el momento en que el chip se enciende, desde qué potencial.
+
+231
+00:32:13,310 --> 00:32:20,790
+Aplicamos 7 V a la entrada, ves que el multímetro no captura el momento de encendido.
+
+232
+00:32:21,450 --> 00:32:24,290
+Será unos 8 V.
+
+233
+00:32:25,310 --> 00:32:28,110
+La tensión está subiendo.
+
+234
+00:32:33,920 --> 00:32:41,600
+8 V, y a 8,2 V el chip se encendió.
+
+235
+00:32:41,600 --> 00:32:47,100
+Así que este convertidor bien puede trabajar con una batería de 9 V.
+
+236
+00:32:48,540 --> 00:32:53,220
+Y vemos que la tensión de salida es 16,3 V.
+
+237
+00:32:53,440 --> 00:33:03,940
+Ahora subamos la tensión más, unos 18 V, y vamos a ver que la tensión de salida del chip se estabiliza.
+
+238
+00:33:08,020 --> 00:33:08,960
+Sube...
+
+239
+00:33:08,960 --> 00:33:14,820
+Mira el nominal en el multímetro y ve que no cambia.
+
+240
+00:33:18,810 --> 00:33:21,390
+Esta es la corriente de consumo en vacío.
+
+241
+00:33:34,310 --> 00:33:36,730
+Prácticamente tenemos 19 V.
+
+242
+00:33:37,950 --> 00:33:45,030
+Ya trabajando al borde de la ruptura de compuerta del FET.
+
+243
+00:33:46,030 --> 00:33:54,610
+No subimos más, pero hemos confirmado que este chip claramente mantiene la tensión de salida.
+
+244
+00:33:55,670 --> 00:34:00,770
+Ahora miramos cómo se comporta la protección por corriente.
+
+245
+00:34:01,610 --> 00:34:07,270
+Ves que solté varias resistencias aquí y no están cerradas.
+
+246
+00:34:07,270 --> 00:34:17,290
+Voy a poner resistencias en paralelo con esta resistencia, reduciendo así su valor.
+
+247
+00:34:18,570 --> 00:34:21,630
+La resistencia en el circuito ahora es 1 Ω.
+
+248
+00:34:21,790 --> 00:34:31,010
+Estas también son resistencias de 1 Ω, conectar dos en paralelo da 0,5 Ω, y así sucesivamente hacia reducción.
+
+249
+00:34:33,350 --> 00:34:35,310
+Enciende el convertidor.
+
+250
+00:34:35,910 --> 00:34:42,810
+El multímetro muestra 4,8 V en esta lámpara.
+
+251
+00:34:45,130 --> 00:34:53,190
+La realimentación por tensión está ajustada a 15 V, y ahora deja que el chip trabaje.
+
+252
+00:34:53,330 --> 00:34:57,850
+Y aquí la realimentación por corriente reduce la duración del pulso.
+
+253
+00:34:57,850 --> 00:35:03,290
+Ahora reduzco la resistencia, agrego 1 Ω en paralelo.
+
+254
+00:35:04,450 --> 00:35:18,830
+Ves que cuando 0,5 Ω está conectado, la tensión en este punto creció a 9,9 V.
+
+255
+00:35:19,290 --> 00:35:22,330
+Ahora conectando una resistencia más,
+
+256
+00:35:28,080 --> 00:35:35,980
+y obtenemos el valor 11,82, y así sucesivamente.
+
+257
+00:35:36,140 --> 00:35:44,700
+Reducir el valor de esta resistencia te permite subir la tensión en la carga.
+
+258
+00:35:45,610 --> 00:35:47,240
+Los mismos efectos.
+
+259
+00:35:47,480 --> 00:35:55,400
+Esa es la tensión de salida que miramos en el canal con realimentación.
+
+260
+00:35:56,400 --> 00:36:05,940
+Lo mismo se puede demostrar en otro canal de salida del convertidor.
+
+261
+00:36:08,840 --> 00:36:12,780
+Digamos, este sin realimentación instalada.
+
+262
+00:36:12,780 --> 00:36:27,740
+También ves 4,9 V, luego 9,9 V, y aquí 10,5 V.
+
+263
+00:36:28,320 --> 00:36:33,200
+Es decir, a través del acoplamiento inductivo hay una pequeña diferencia.
+
+264
+00:36:33,740 --> 00:36:47,580
+Pero como este sistema trabaja para alimentar chips y pequeños consumidores, nos sirve bien.
+
+265
+00:36:51,470 --> 00:37:14,350
+Resumiendo los experimentos, se puede decir que esta serie de chips es una buena solución cuando necesitamos hacer un convertidor con aislamiento galvánico y un sistema
+
+266
+00:37:14,550 --> 00:37:19,070
+que siga claramente la tensión de salida.
+
+267
+00:37:19,750 --> 00:37:35,370
+Durante varias pruebas no noté un solo fallo de este chip, la tensión subió, la probé para alimentar chips, todo estuvo en orden.
+
+268
+00:37:37,230 --> 00:37:42,590
+Es decir, puedes construir y armar varios dispositivos y usarlo.
+
+269
+00:37:44,070 --> 00:37:50,170
+Con eso, gracias a todos los que vieron, experimentos exitosos y lo mejor.

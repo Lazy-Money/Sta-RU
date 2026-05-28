@@ -1,0 +1,623 @@
+1
+00:00:01,200 --> 00:00:02,060
+Hola a todos.
+
+2
+00:00:02,820 --> 00:00:08,580
+Equipé este montaje de convertidor flojo con realimentación por tensión.
+
+3
+00:00:09,200 --> 00:00:13,140
+Ahora mantiene establemente 238 V a la salida.
+
+4
+00:00:14,440 --> 00:00:17,720
+La realimentación también se hace bastante simple.
+
+5
+00:00:17,880 --> 00:00:19,800
+Dos chips adicionales.
+
+6
+00:00:20,540 --> 00:00:27,500
+Uno de ellos es un optoacoplador PC817, el otro un regulador shunt ajustable TL431.
+
+7
+00:00:28,700 --> 00:00:32,240
+4 resistencias, 1 capacitor.
+
+8
+00:00:32,360 --> 00:00:34,380
+Esa es toda la realimentación.
+
+9
+00:00:35,040 --> 00:00:43,280
+Así que este convertidor ahora te permite suministrar no solo 12 V a la entrada sino también hasta 20 V inclusive.
+
+10
+00:00:43,960 --> 00:00:48,900
+En cualquier rango de tensión de ese orden.
+
+11
+00:00:49,580 --> 00:00:52,840
+Y la tensión de salida está estabilizada.
+
+12
+00:00:53,720 --> 00:01:00,940
+Ahora la vamos a probar y mirar el circuito de realimentación con más detalle.
+
+13
+00:01:01,700 --> 00:01:06,320
+Ahora vamos a probar el punto de disparo de la realimentación por tensión.
+
+14
+00:01:06,880 --> 00:01:11,340
+Hay un multímetro conectado a la salida, la lámpara no está conectada.
+
+15
+00:01:12,460 --> 00:01:14,560
+Aplicando 12 V de alimentación.
+
+16
+00:01:16,300 --> 00:01:22,320
+Puedes oír el punto de disparo del convertidor, empieza a zumbar.
+
+17
+00:01:23,920 --> 00:01:26,000
+Ese es el sonido.
+
+18
+00:01:26,960 --> 00:01:28,140
+237 V.
+
+19
+00:01:30,560 --> 00:01:32,060
+Conecto la lámpara.
+
+20
+00:01:32,820 --> 00:01:36,760
+Ves que hay una ligera caída en la lámpara, 218 V.
+
+21
+00:01:37,240 --> 00:01:45,100
+La tensión de salida se alejó del punto de disparo de la realimentación y el convertidor corre en modo normal.
+
+22
+00:01:45,740 --> 00:01:46,920
+Sin sonido en absoluto.
+
+23
+00:01:49,360 --> 00:01:56,420
+Con la realimentación por tensión presente, podemos suministrar una tensión mayor a la entrada.
+
+24
+00:01:57,240 --> 00:02:00,920
+Hasta 20 V, no vale la pena subir más.
+
+25
+00:02:01,820 --> 00:02:04,420
+Ahora aplicando 14 V.
+
+26
+00:02:06,020 --> 00:02:15,020
+Ves que la tensión está dentro de la norma y apareció el sonido del disparo de la realimentación.
+
+27
+00:02:15,460 --> 00:02:24,260
+El sonido viene del transformador elevador, ya que el chip ahora maneja los interruptores en modo de ráfagas de pulsos.
+
+28
+00:02:27,930 --> 00:02:31,850
+Si reducimos, el sonido desaparece.
+
+29
+00:02:31,950 --> 00:02:33,910
+La realimentación funciona totalmente.
+
+30
+00:02:34,350 --> 00:02:37,930
+Sobre qué puedes conectar a este convertidor.
+
+31
+00:02:39,130 --> 00:02:51,130
+Puedes conectar todos los dispositivos modernos que tienen un inversor sin transformador a la entrada.
+
+32
+00:02:51,250 --> 00:03:00,230
+Es decir, cargadores de celulares, cargadores de laptops y dispositivos similares.
+
+33
+00:03:00,570 --> 00:03:07,470
+No puedes conectar dispositivos que tienen un transformador reductor a la entrada.
+
+34
+00:03:07,930 --> 00:03:17,550
+Esas fuentes de alimentación, su peso es significativamente mayor que una fuente tipo inversor.
+
+35
+00:03:17,970 --> 00:03:22,210
+Tampoco puedes conectar motores asíncronos aquí.
+
+36
+00:03:22,570 --> 00:03:27,770
+Más a menudo los encontramos en la vida cotidiana en ventiladores, por ejemplo.
+
+37
+00:03:29,010 --> 00:03:34,790
+Y los motores con escobillas que hay aquí van a funcionar libremente.
+
+38
+00:03:34,790 --> 00:03:46,390
+Es decir, varios tipos de pequeños taladros a 220 V, con potencia hasta 200 W, este sistema los va a alimentar libremente.
+
+39
+00:03:47,570 --> 00:03:56,150
+Para agregar realimentación por tensión a nuestro circuito, usamos una propiedad del chip IR2153.
+
+40
+00:03:56,950 --> 00:04:06,630
+Si aplicas cero lógico al pin 3 de este chip, el chip detiene la generación en ambos canales.
+
+41
+00:04:07,470 --> 00:04:17,550
+Para esto fui con una variante que usa un optoacoplador con aislamiento galvánico, el extendido PC817.
+
+42
+00:04:19,850 --> 00:04:26,390
+Lo soldé al circuito según su pinout.
+
+43
+00:04:27,110 --> 00:04:33,910
+Los pines 1 y 2 son el LED infrarrojo integrado en el optoacoplador.
+
+44
+00:04:34,730 --> 00:04:38,690
+Los pines 3 y 4 son el fototransistor.
+
+45
+00:04:39,770 --> 00:04:49,370
+El optoacoplador es esta pieza pequeña, aquí está, con cuatro pines.
+
+46
+00:04:50,770 --> 00:05:01,430
+En la parte superior del encapsulado hay un punto, que marca la numeración de pines.
+
+47
+00:05:01,550 --> 00:05:02,390
+Este es el pin 1.
+
+48
+00:05:02,870 --> 00:05:11,610
+Los pines, si miras empezando desde el punto, en este caso ahora está en la esquina superior izquierda, se cuentan en sentido antihorario.
+
+49
+00:05:11,730 --> 00:05:14,870
+Primero, segundo, tercero y cuarto.
+
+50
+00:05:15,530 --> 00:05:21,930
+En el esquema el optoacoplador se muestra acostado con las patas hacia arriba.
+
+51
+00:05:22,930 --> 00:05:26,110
+Esa orientación coincide con su pinout.
+
+52
+00:05:26,950 --> 00:05:30,270
+Bien, suelda el optoacoplador al circuito.
+
+53
+00:05:31,530 --> 00:05:35,090
+Aquí puedes ver que lo instalé en la placa.
+
+54
+00:05:35,430 --> 00:05:38,470
+Y verifica si el optoacoplador funciona.
+
+55
+00:05:39,390 --> 00:05:50,070
+Para esto aplicamos potencia al convertidor, soldando primero una carga pequeña a él.
+
+56
+00:05:50,350 --> 00:05:54,230
+En este caso una lámpara de 15 W.
+
+57
+00:05:55,470 --> 00:05:57,430
+Aplico potencia.
+
+58
+00:06:00,310 --> 00:06:03,150
+Ves, la lámpara se encendió.
+
+59
+00:06:03,970 --> 00:06:11,430
+Ahora necesitamos soldar un cable al pin 2 del optoacoplador.
+
+60
+00:06:12,050 --> 00:06:12,210
+Ahí está.
+
+61
+00:06:13,230 --> 00:06:19,050
+Y al pin 1 del optoacoplador, una resistencia limitadora de corriente de 91 Ω.
+
+62
+00:06:19,750 --> 00:06:21,710
+Y una batería de 1,5 V.
+
+63
+00:06:22,630 --> 00:06:26,130
+El menos de la batería va al pin 2.
+
+64
+00:06:26,790 --> 00:06:28,690
+El más a la resistencia.
+
+65
+00:06:29,590 --> 00:06:31,990
+Y mira, conecto la batería.
+
+66
+00:06:35,070 --> 00:06:44,830
+Y cuando el más de la batería se conecta a la resistencia, el chip detiene la generación, la carga se apaga.
+
+67
+00:06:46,970 --> 00:06:52,970
+Este experimento muestra que el optoacoplador está en condiciones de funcionar.
+
+68
+00:06:53,790 --> 00:07:10,930
+Si tienes un generador de señales de laboratorio a mano, puedes ver cómo se dispara el convertidor bajo el control del optoacoplador con una señal cuadrada aplicada a la entrada, el común del generador
+
+69
+00:07:10,930 --> 00:07:18,690
+se conecta al pin 2, la de señal al pin 1, también a través de una resistencia limitadora de corriente.
+
+70
+00:07:20,590 --> 00:07:24,150
+El potencial de entrada no debería ser mayor de 5 V.
+
+71
+00:07:24,330 --> 00:07:29,810
+1,5-2 V es suficiente para disparar el optoacoplador fácilmente.
+
+72
+00:07:30,130 --> 00:07:32,510
+Equivalente a lo que hicimos con la batería.
+
+73
+00:07:32,770 --> 00:07:38,250
+Estoy aplicando una señal cuadrada a 10 Hz.
+
+74
+00:07:39,310 --> 00:07:44,710
+Ves que el circuito responde genial.
+
+75
+00:07:45,270 --> 00:07:46,510
+Reduciendo la frecuencia.
+
+76
+00:07:47,650 --> 00:07:49,030
+5 Hz.
+
+77
+00:07:50,130 --> 00:08:02,850
+Entiendan, los que trabajan con electrónica, con este principio ya puedes formar la operación del chip en modo de ráfaga.
+
+78
+00:08:05,390 --> 00:08:06,710
+Frecuencia 1 Hz.
+
+79
+00:08:09,410 --> 00:08:16,750
+Si aplicas, digamos, frecuencia de red, aquí la subo suavemente, ahora 25 Hz.
+
+80
+00:08:21,390 --> 00:08:22,350
+50.
+
+81
+00:08:22,610 --> 00:08:32,430
+Puedes oír, cuando haya forma de suministrar esto, que este transformador elevador zumba a la frecuencia de red de 50 Hz.
+
+82
+00:08:33,690 --> 00:08:38,270
+Después, necesitamos introducir otro elemento en el circuito.
+
+83
+00:08:38,390 --> 00:08:41,050
+El chip TL431.
+
+84
+00:08:42,390 --> 00:08:44,810
+Gráficamente se muestra como un zener.
+
+85
+00:08:44,970 --> 00:08:49,210
+Con una derivación obtienes un sistema regulador shunt ajustable.
+
+86
+00:08:50,310 --> 00:08:54,390
+El pinout se muestra debajo del gráfico.
+
+87
+00:08:55,130 --> 00:08:59,370
+La pieza en sí también es muy pequeña.
+
+88
+00:08:59,890 --> 00:09:00,330
+Aquí está.
+
+89
+00:09:02,150 --> 00:09:03,510
+Tres pines en la pieza.
+
+90
+00:09:04,250 --> 00:09:13,870
+Los pines se cuentan de izquierda a derecha si lees el nombre del chip de frente.
+
+91
+00:09:15,350 --> 00:09:16,810
+¿Para qué es esto?
+
+92
+00:09:17,830 --> 00:09:36,570
+Antes compartí un esquema de otro convertidor, y puedes ver que aquí, por realimentación, el chip maestro se controla directamente a través del optoacoplador PC817 dividiendo
+
+93
+00:09:36,570 --> 00:09:43,230
+la tensión en una pila de resistencias en serie.
+
+94
+00:09:44,050 --> 00:10:03,650
+No puedes controlarlo de esa manera en este circuito, porque si el brillo del LED tiene diferente intensidad, el fototransistor, ya que es bipolar, va a abrir con diferentes niveles de conductividad.
+
+95
+00:09:36,570 --> 00:10:07,590
+Abrirse con varios grados de conductividad.
+
+96
+00:10:08,490 --> 00:10:15,810
+Y si lo mides, juegas con el optoacoplador, vas a ver que la resistencia del transistor cambia.
+
+97
+00:10:16,350 --> 00:10:28,610
+Y para este chip necesitas al menos 200 Ω de resistencia para poner confiablemente en corto el pin 3 al cable común.
+
+98
+00:10:29,330 --> 00:10:39,610
+Es exactamente por eso que se agregó un elemento sensible adicional, el TL431, que controla este optoacoplador.
+
+99
+00:10:40,590 --> 00:10:46,450
+El TL431 es un chip bastante anciano para nosotros.
+
+100
+00:10:47,410 --> 00:10:55,210
+Fabricado a finales de los años 1970, pero aún se usa ampliamente hasta el día de hoy.
+
+101
+00:10:56,390 --> 00:11:08,930
+Sus ventajas son tensión de operación hasta 36 V y la principal: poder fijar los puntos de disparo del chip.
+
+102
+00:11:09,850 --> 00:11:19,650
+Por dentro hay una fuente de referencia de unos 2,5 V y un comparador.
+
+103
+00:11:19,850 --> 00:11:32,010
+El comparador tiene 2,5 V estabilizados en una entrada, y la entrada de la parte externa, pin 1, en la otra.
+
+104
+00:11:32,530 --> 00:11:36,650
+El comparador compara la referencia y la tensión de entrada.
+
+105
+00:11:36,710 --> 00:11:48,570
+Si la entrada excede la referencia, el chip se dispara y, gráficamente hablando, el zener "se rompe", es decir, el chip empieza a conducir.
+
+106
+00:11:49,450 --> 00:11:52,830
+Elegí el divisor en las resistencias.
+
+107
+00:11:52,850 --> 00:11:58,090
+Resistencias de 1 vatio de 4,6 kΩ y 390 kΩ.
+
+108
+00:11:58,530 --> 00:12:15,870
+Con estos valores de resistencia, si tomas sus terminales ya desde la salida del convertidor, la protección de tensión se dispara a 238 V.
+
+109
+00:12:17,110 --> 00:12:27,690
+Es decir, cambiando los valores de la resistencia de 4,6 kΩ, puedes fijar el punto de disparo del convertidor.
+
+110
+00:12:28,690 --> 00:12:37,570
+No puedes olvidar poner este capacitor de al menos 10 nF, cerámico, entre los pines 3 y 1.
+
+111
+00:12:38,090 --> 00:12:46,190
+De lo contrario son posibles disparos falsos de realimentación por algunos procesos transitorios en el transformador.
+
+112
+00:12:46,270 --> 00:12:54,950
+Por ejemplo, si hay picos de tensión tipo aguja, el chip se va a disparar antes de lo necesario.
+
+113
+00:12:55,230 --> 00:12:56,690
+El capacitor es obligatorio.
+
+114
+00:12:57,830 --> 00:13:06,030
+Y esta resistencia de 1 kΩ colocada en paralelo con el LED del optoacoplador.
+
+115
+00:13:06,610 --> 00:13:21,510
+Esta resistencia también evita que el LED brille cuando el chip TL431 se acerca a su punto de disparo.
+
+116
+00:13:22,790 --> 00:13:26,250
+Resistencia limitadora 150 Ω.
+
+117
+00:13:27,410 --> 00:13:34,570
+Busqué realimentaciones de este tipo en internet al principio, pero curiosamente, no encontré nada.
+
+118
+00:13:34,710 --> 00:13:42,670
+Muchas soluciones de este tipo para baja tensión, pero con alta tensión tuve que pelearme.
+
+119
+00:13:45,690 --> 00:13:54,810
+Elegí el divisor a través de larga práctica y cambié varias variantes del circuito hasta que empezó a funcionar establemente.
+
+120
+00:13:56,650 --> 00:14:10,250
+Muchas piezas para este convertidor se pueden tomar prestadas de fuentes de alimentación rotas, por ejemplo, de fuentes de alimentación de computadora.
+
+121
+00:14:11,930 --> 00:14:18,990
+Las puedes comprar baratas o te las pueden regalar gratis en centros de servicio.
+
+122
+00:14:20,570 --> 00:14:29,950
+En particular, puedes ver en la placa que hay un optoacoplador PC817 y este chip.
+
+123
+00:14:32,270 --> 00:14:34,650
+Un pequeño TL431.
+
+124
+00:14:37,050 --> 00:14:40,850
+También disipadores donde puedes montar transistores.
+
+125
+00:14:43,270 --> 00:14:48,270
+Juntas térmicamente aislantes bajo estos transistores, puedes encontrarlas todas aquí.
+
+126
+00:14:50,210 --> 00:14:53,010
+Y esto también es bastante adecuado.
+
+127
+00:14:54,130 --> 00:14:57,150
+Puedes desarmar este transformador.
+
+128
+00:14:58,430 --> 00:15:17,290
+Lo desoldé de la placa, pero normalmente o lo calientas con una pistola de calor hasta que el pegamento se derrita y las mitades se separen, o lo hierves en agua hasta que se desarme.
+
+129
+00:15:17,410 --> 00:15:26,290
+Después de esto todo se desbobina, y bobinas tu propio bobinado a las tensiones que quieras.
+
+130
+00:15:26,790 --> 00:15:33,850
+Así que este convertidor puede ser muy barato si lo haces con piezas reutilizadas.
+
+131
+00:15:36,450 --> 00:15:55,250
+Si este convertidor se va a usar, por ejemplo, para iluminación cuando se va la luz, entonces sugiero en este caso poner algún diodo de 20 A en la entrada, cualquier marca,
+
+132
+00:15:55,450 --> 00:15:58,430
+lo que encuentres.
+
+133
+00:15:59,210 --> 00:16:02,450
+Tensión nominal no menor a 100 V.
+
+134
+00:16:04,770 --> 00:16:12,530
+Para que en condiciones de iluminación pobre no confundas las entradas de alimentación.
+
+135
+00:16:12,670 --> 00:16:23,430
+De lo contrario, si las confundes, el circuito por supuesto se va a estropear inmediatamente, el chip va a fallar, y posiblemente uno de los interruptores va a explotar.
+
+136
+00:16:24,810 --> 00:16:30,550
+Si es estacionario y está conectado constantemente, puedes saltar el diodo.
+
+137
+00:16:31,470 --> 00:16:37,430
+Pero quien quiera también puede equipar la entrada con un fusible.
+
+138
+00:16:40,010 --> 00:16:43,530
+Es decir, a tu discreción puedes mejorar este circuito.
+
+139
+00:16:43,530 --> 00:16:49,610
+También con este principio, apliqué esta realimentación por tensión.
+
+140
+00:16:49,870 --> 00:17:04,210
+Necesito un punto de tensión de operación tal que... si se construye la realimentación por tensión, puedes suministrar no solo 12 V sino hasta 20 V inclusive a la entrada, y con eso
+
+141
+00:17:04,210 --> 00:17:07,030
+va a mantener establemente la tensión de salida.
+
+142
+00:17:07,150 --> 00:17:14,910
+Incluso puedes meter en el bolsillo dos baterías de 9V (tipo Krona), conectarlas en serie y suministrar 18 V a la entrada.
+
+143
+00:17:15,750 --> 00:17:20,570
+Y vas a tener 220 V a la salida.
+
+144
+00:17:20,570 --> 00:17:23,510
+Siempre poder cargar tu celular.
+
+145
+00:17:26,870 --> 00:17:29,190
+Todo el circuito es así de flexible.
+
+146
+00:17:31,490 --> 00:17:37,110
+Quien esté interesado también puede armar realimentación por corriente.
+
+147
+00:17:37,190 --> 00:17:43,730
+Es decir, si quieres que el chip entre en protección al hacer corto en la salida.
+
+148
+00:17:43,830 --> 00:17:58,730
+Para esto vas a necesitar cambiar la resistencia del divisor, bobinar un pequeño transformador toroidal, el llamado transformador de corriente.
+
+149
+00:17:58,810 --> 00:18:09,390
+Puedes colgarlo en este punto común con el más de la alimentación al centro del bobinado primario.
+
+150
+00:18:10,070 --> 00:18:22,630
+Y jugando con su conteo de espiras, llevar el punto de tensión de operación a algún lugar por encima de 2,6 V.
+
+151
+00:18:23,010 --> 00:18:30,310
+Digamos si este convertidor trabaja sobre una carga de 200 V.
+
+152
+00:18:31,130 --> 00:18:40,090
+Y alimentar esta salida del sensor de corriente a un pequeño puente de diodos.
+
+153
+00:18:40,430 --> 00:18:42,090
+Después de esto poner un capacitor.
+
+154
+00:18:43,230 --> 00:18:49,190
+Aproximadamente vas a tener un circuito análogo a este mostrado.
+
+155
+00:18:49,230 --> 00:19:06,950
+Un puente de diodos, un capacitor, y puedes terminar con un sistema funcional bastante funcionando que protege al convertidor de tensión corta, es decir, de un cortocircuito en su salida.
+
+156
+00:19:08,420 --> 00:19:12,070
+¡Buena suerte a todos con sus experimentos, lo mejor!

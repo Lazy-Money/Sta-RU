@@ -1,0 +1,1131 @@
+1
+00:00:00,980 --> 00:00:03,280
+Hola a todos, bienvenidos a mi canal.
+
+2
+00:00:04,520 --> 00:00:10,320
+Hoy tenemos un tema muy interesante sobre la fuente de laboratorio.
+
+3
+00:00:11,120 --> 00:00:15,440
+Concretamente, vamos a elegir y ajustar la protección de corriente.
+
+4
+00:00:16,220 --> 00:00:23,100
+Un parámetro muy importante que define la idea entera de este dispositivo.
+
+5
+00:00:24,020 --> 00:00:32,480
+Este es el momento en que el dispositivo mantendrá una cierta corriente pasando por los interruptores de potencia.
+
+6
+00:00:33,700 --> 00:00:40,980
+Con esto regularemos los parámetros de salida y ajustaremos bajo carga.
+
+7
+00:00:42,460 --> 00:00:51,500
+Aquí frente a ti está el diagrama esquemático, que por hoy se ve así.
+
+8
+00:00:51,800 --> 00:01:03,640
+Todavía se irá completando, con algunas modificaciones, pero los elementos presentados aquí no estarán sujetos a cambios.
+
+9
+00:01:04,140 --> 00:01:09,240
+Así que, déjame detenerme con más detalle en la protección de corriente.
+
+10
+00:01:09,640 --> 00:01:15,080
+La llevé al pin 9 del chip UC3825N.
+
+11
+00:01:16,780 --> 00:01:37,040
+Una propiedad interesante de este chip es que cuando se aplica una tensión de 0,9 V, comienza el disparo de la protección de corriente, es decir, la duración de los pulsos de salida se reduce.
+
+12
+00:01:37,600 --> 00:01:45,920
+Y este parámetro, de 0,9 V a 1,3 V, sostiene la reducción de ancho.
+
+13
+00:01:46,380 --> 00:01:57,320
+Cuando la amplitud de tensión alcanza 1,3 V, la generación de pulsos de control se detiene completamente en la salida.
+
+14
+00:01:57,400 --> 00:02:00,600
+Es decir, una pequeña ventana de posibilidades.
+
+15
+00:02:01,140 --> 00:02:08,360
+Para encajar en ella, necesitamos hacer el cableado de este sistema y un sensor de corriente sensible.
+
+16
+00:02:09,060 --> 00:02:19,380
+El sensor de corriente, que se muestra esquemáticamente en el dibujo, es un anillo con hilo enrollado a modo de espiral.
+
+17
+00:02:20,360 --> 00:02:27,320
+Físicamente es este anillo, sus dimensiones también se muestran en el dibujo.
+
+18
+00:02:28,360 --> 00:02:33,800
+Lo hago sobre ferrita Epcos, con permeabilidad 2200.
+
+19
+00:02:34,880 --> 00:02:45,100
+Si usas otras ferritas, entonces, en consecuencia, los datos que daré en este video serán ligeramente diferentes para ti.
+
+20
+00:02:45,580 --> 00:02:48,380
+En la práctica cada uno tendrá que elegirlo.
+
+21
+00:02:49,500 --> 00:03:11,520
+Experimentalmente encontré que para mi ferrita, este núcleo, para tener la sensibilidad adecuada, para poder regular desde 0,5 A hasta el punto que quiero, y para mí esto será 20 A de consumo desde una batería de 12 V,
+
+22
+00:03:12,520 --> 00:03:21,080
+necesité bobinar 120 vueltas de hilo de 0,35 mm en este núcleo.
+
+23
+00:03:21,900 --> 00:03:37,760
+Probé experimentos en los mismos núcleos con otros diámetros de hilo, en particular 0,45, pero esa cantidad de vueltas resultó demasiado pequeña.
+
+24
+00:03:38,060 --> 00:03:48,980
+Aquí tendrías que bobinar en varias capas, así que fui experimentalmente hacia la reducción del calibre del hilo y me detuve en el modo óptimo.
+
+25
+00:03:49,120 --> 00:03:56,980
+Es decir, este núcleo se bobina completamente alrededor de la circunferencia en una capa.
+
+26
+00:03:57,160 --> 00:04:10,340
+Antes de empezar el trabajo de bobinar hilo en este núcleo, no estará de más calcular la longitud total del hilo que cabrá en este núcleo magnético.
+
+27
+00:04:10,720 --> 00:04:26,080
+Para esto uso la fórmula conocida de la longitud de la circunferencia expresada a través del diámetro, donde P es la longitud de la circunferencia, π es la constante 3,14, y D es el diámetro.
+
+28
+00:04:26,940 --> 00:04:32,860
+Mide este diámetro con calibre y sustitúyelo en la fórmula.
+
+29
+00:04:33,360 --> 00:04:39,100
+Multiplica y obtén una longitud de circunferencia de 42,39 mm.
+
+30
+00:04:39,900 --> 00:04:45,240
+Después tenemos que decidir el diámetro del hilo con el que bobinaremos.
+
+31
+00:04:45,300 --> 00:04:48,060
+En mi caso esto es 0,35 mm.
+
+32
+00:04:48,820 --> 00:04:50,200
+Luego procede así.
+
+33
+00:04:50,860 --> 00:04:55,640
+Divide la longitud de la circunferencia entre el diámetro del hilo y obtén la cantidad de vueltas.
+
+34
+00:04:55,980 --> 00:05:00,760
+121 vueltas caben en este núcleo.
+
+35
+00:05:01,180 --> 00:05:04,140
+Ahora deberíamos saber la longitud de una vuelta.
+
+36
+00:05:04,240 --> 00:05:08,320
+Para esto, envuelve apretadamente el núcleo con hilo, estíralo y mídelo.
+
+37
+00:05:08,860 --> 00:05:12,400
+En este caso la longitud de la vuelta salió de 21 mm.
+
+38
+00:05:13,120 --> 00:05:22,160
+Ahora multiplica la cantidad de vueltas por la longitud de una vuelta y obtén la longitud del hilo en milímetros.
+
+39
+00:05:22,700 --> 00:05:30,980
+Luego divide entre 1000 mm por metro y expresa la longitud ahora en metros.
+
+40
+00:05:31,160 --> 00:05:35,060
+En mi caso salió 2,54 m.
+
+41
+00:05:35,820 --> 00:05:39,380
+Aproximadamente con los terminales tomé 2,6 m.
+
+42
+00:05:40,180 --> 00:05:48,000
+Lo bobiné con la ayuda de una bobina así, de hilo de cobre con bordes aplanados.
+
+43
+00:05:50,080 --> 00:05:56,960
+Este es el producto que obtuve en el transcurso del trabajo.
+
+44
+00:05:57,080 --> 00:06:00,180
+Llevó como una hora de trabajo continuo.
+
+45
+00:06:01,640 --> 00:06:05,880
+Ahora puedes ver que saqué sus terminales.
+
+46
+00:06:06,280 --> 00:06:16,280
+El terminal de inicio está soldado directamente al inicio del hilo, y el terminal del final está en termocontraíble.
+
+47
+00:06:16,860 --> 00:06:21,540
+Ahora esta parte debería estar bien aislada.
+
+48
+00:06:21,960 --> 00:06:38,520
+La aislaré con cinta de papel, para proteger el hilo con el que está bobinado el transformador de toma de corriente contra daño mecánico.
+
+49
+00:06:39,360 --> 00:06:46,440
+Terminé la protección de aislamiento del sensor de corriente y mientras se seca el pegamento, fijando el extremo de la cinta.
+
+50
+00:06:47,200 --> 00:06:48,980
+Déjame explicar un poco usando el esquema.
+
+51
+00:06:49,880 --> 00:06:58,240
+En el esquema puedes notar notaciones gráficas en varios puntos.
+
+52
+00:06:58,820 --> 00:07:03,000
+Esto no es más que un bloque de terminales.
+
+53
+00:07:04,060 --> 00:07:09,680
+En el límite de estas partes ocurren las conexiones de cables.
+
+54
+00:07:10,680 --> 00:07:18,840
+Estos se venden, no cuestan mucho, 40 rublos la pieza con la parte de acople.
+
+55
+00:07:20,000 --> 00:07:26,600
+Conecta así y es muy cómodo, puedes cortar cualquier cantidad de bloques de contacto.
+
+56
+00:07:29,700 --> 00:07:33,140
+Así se ve la placa en forma terminada.
+
+57
+00:07:34,840 --> 00:07:37,420
+Este es el lado posterior de la placa.
+
+58
+00:07:38,440 --> 00:07:40,900
+Cableado hecho con montaje punto a punto.
+
+59
+00:07:42,920 --> 00:07:46,120
+Nada súper complejo.
+
+60
+00:07:47,280 --> 00:07:55,720
+También en el esquema hay terminales 1, 2, los expliqué en el video anterior.
+
+61
+00:07:56,560 --> 00:07:58,740
+Y notaciones de letras.
+
+62
+00:07:59,380 --> 00:08:02,880
+Los cables también se conectarán a estas notaciones de letras.
+
+63
+00:08:03,240 --> 00:08:08,140
+Lo hice para que no hubiera amontonamiento de conectores.
+
+64
+00:08:08,480 --> 00:08:11,140
+Es decir, estarán en otra hoja.
+
+65
+00:08:11,560 --> 00:08:16,240
+La segunda parte del esquema, esto es la hoja 1, pasa a la hoja 2.
+
+66
+00:08:17,160 --> 00:08:22,360
+Y ahí los contactos se conectarán con las letras correspondientes.
+
+67
+00:08:23,480 --> 00:08:29,200
+Estos contactos están bajo las designaciones E, F.
+
+68
+00:08:29,320 --> 00:08:36,840
+Esto es para conmutar el controlador PWM a modo de espera.
+
+69
+00:08:37,540 --> 00:08:49,020
+Es decir, cuando se aplica tensión aquí, usé salida de corriente, en el pin 9 del chip deja de generar pulsos de control.
+
+70
+00:08:49,500 --> 00:08:56,280
+Puedes notar que aquí la letra F y la salida F están armadas con un divisor de resistencias.
+
+71
+00:08:56,400 --> 00:09:01,920
+Aquí elegí aproximadamente el divisor para que fuera 2-2,5 voltios.
+
+72
+00:09:02,480 --> 00:09:10,020
+Desde este punto, aquí en realidad está ubicado el interruptor y el botón que cerramos.
+
+73
+00:09:10,580 --> 00:09:15,520
+Y cuando se aplica potencial de tensión aquí, la generación se detiene.
+
+74
+00:09:15,640 --> 00:09:22,880
+Tan pronto como se apaga el potencial de tensión de aquí, el chip vuelve al modo de trabajo.
+
+75
+00:09:23,080 --> 00:09:25,860
+Lo cual será bastante cómodo en la práctica.
+
+76
+00:09:26,660 --> 00:09:36,480
+También con las letras C y D están marcadas las entradas para el optoacoplador PC817.
+
+77
+00:09:37,020 --> 00:09:42,340
+Aquí también se conectará la realimentación de tensión.
+
+78
+00:09:43,160 --> 00:09:51,860
+Cualquiera que le resulte cómodo puede hacer realimentación de regulación de tensión si cambia ligeramente este esquema.
+
+79
+00:09:52,480 --> 00:10:03,680
+Pero yo usaré esto para detener la generación cuando se alcancen 1000 voltios en la salida de la fuente.
+
+80
+00:10:05,060 --> 00:10:12,780
+El control de tensión está armado en esta cadena de resistencias.
+
+81
+00:10:13,040 --> 00:10:21,700
+Resistencia variable de 2 kOhm y resistencias limitadoras de 1 kOhm y 2,4 kOhm.
+
+82
+00:10:25,780 --> 00:10:34,120
+Los terminales marcados A y B, exactamente aquí se entregará la alimentación al puente desde los interruptores.
+
+83
+00:10:36,320 --> 00:10:51,560
+Ahora ya armé parcialmente el sistema, fijé el módulo de potencia, el transformador de pulsos de potencia en su lugar habitual, limpié y soldé los terminales.
+
+84
+00:10:53,420 --> 00:10:57,100
+Ahora pasaremos a fijar el sensor de corriente.
+
+85
+00:10:57,680 --> 00:11:00,640
+Puedes ver.
+
+86
+00:11:02,120 --> 00:11:17,380
+Se ve que el hilo está doblado de tal manera, viniendo de este bobinado primario, que forma un doblez a 90 grados y va a los transistores.
+
+87
+00:11:17,380 --> 00:11:24,320
+Es decir, en este punto podemos enganchar.
+
+88
+00:11:24,460 --> 00:11:27,140
+Esto va más allá al bobinado primario.
+
+89
+00:11:27,700 --> 00:11:32,460
+Y en este punto se colocará el sensor de corriente.
+
+90
+00:11:32,860 --> 00:11:38,860
+Ahora voy a montar, soldar y pasar a instalar la placa en su lugar habitual.
+
+91
+00:11:39,780 --> 00:11:42,620
+El sensor de corriente está instalado en su lugar habitual.
+
+92
+00:11:43,300 --> 00:11:44,880
+Aquí está en el hilo.
+
+93
+00:11:46,160 --> 00:11:48,260
+La placa también está instalada.
+
+94
+00:11:49,780 --> 00:11:50,860
+Todo conectado.
+
+95
+00:11:51,020 --> 00:12:06,340
+Ahora para el siguiente experimento, que consiste en determinar a qué frecuencia trabajará nuestro convertidor en modo estable, necesitamos una carga, en este caso una lámpara de 60 W 220 V,
+
+96
+00:12:06,340 --> 00:12:21,640
+un puente de diodos con un capacitor, para mirar la tensión DC en esta lámpara, un voltímetro, en este caso un tester que va a seguir la tensión en la lámpara, una fuente de alimentación,
+
+97
+00:12:21,640 --> 00:12:32,500
+una batería, y un amperímetro que mostrará el consumo del dispositivo completo desde la batería.
+
+98
+00:12:34,160 --> 00:12:48,020
+Para empezar, desconectamos el sensor de corriente, rompemos uno de los cables, no importa cuál, en este caso lo desoldé de la placa,
+
+99
+00:12:53,140 --> 00:13:13,620
+este cable, y debemos conectar estos dos cables juntos en el esquema, es decir, conectar el pin 9 del chip a tierra. Estos dos cables los conecto, en este caso salen conectados
+
+100
+00:13:13,620 --> 00:13:15,100
+a la placa.
+
+101
+00:13:16,720 --> 00:13:34,960
+El siguiente paso es conmutar la resistencia de ajuste en el esquema, este resistor de 10 kOhm, a la posición extrema, para que la frecuencia de los pulsos que controlan las compuertas de los transistores FET sea
+
+102
+00:13:34,960 --> 00:13:38,940
+máxima, en este caso 190 kHz.
+
+103
+00:13:40,680 --> 00:13:57,600
+El curso del trabajo irá así: seguir el consumo y seguir la tensión en la lámpara, y cuando encontremos el momento en que la tensión en la lámpara sea máxima y el consumo sea
+
+104
+00:13:57,600 --> 00:13:59,160
+mínimo, dejamos de ajustar.
+
+105
+00:13:59,200 --> 00:14:12,800
+La cadena está armada, ahora debemos conmutar esta resistencia responsable de la duración del pulso a la posición donde la duración de los pulsos de control en los interruptores será máxima.
+
+106
+00:14:13,620 --> 00:14:30,780
+Lo hice de antemano, esta resistencia variable, ahora aplico alimentación al convertidor DC-DC y veo que la carga se encendió con cierto brillo, y la tensión lentamente está
+
+107
+00:14:30,780 --> 00:14:31,640
+creciendo sobre ella.
+
+108
+00:14:31,820 --> 00:14:39,000
+Este crecimiento durará algún tiempo porque ahora mismo el transformador no está en su modo, la frecuencia es alta.
+
+109
+00:14:39,920 --> 00:14:47,340
+Y ahora observa las lecturas del amperímetro en la entrada y la tensión sobre la carga.
+
+110
+00:14:48,240 --> 00:14:52,000
+Tenemos que establecer la tensión máxima sobre la carga.
+
+111
+00:14:54,000 --> 00:15:17,120
+Ahora voy a bajar lentamente la frecuencia, y aquí la frecuencia bajó, y vemos que la tensión tuvo un momento en que saltó a 200 voltios, pero el consumo está alrededor de 5 amperios.
+
+112
+00:15:18,580 --> 00:15:27,920
+Estoy buscando el punto donde el consumo bajará, aquí la aguja del amperímetro se está moviendo lentamente a la izquierda.
+
+113
+00:15:36,930 --> 00:15:39,070
+Aquí llegué a un momento estable.
+
+114
+00:15:39,550 --> 00:15:47,410
+El consumo se detuvo en 4,5 amperios, y la tensión está alrededor de 185 voltios.
+
+115
+00:15:47,470 --> 00:15:49,090
+Ahora veamos si hay uno más bajo.
+
+116
+00:15:51,070 --> 00:15:55,150
+Hay un momento donde salta para nosotros.
+
+117
+00:15:56,570 --> 00:16:01,370
+Subo un poco, el consumo baja y la salida baja.
+
+118
+00:16:02,810 --> 00:16:17,490
+Reduzco un poco más, y aquí hay un momento, estrecho, donde el consumo mínimo es menos de 4,5 amperios y la tensión está alrededor de 180 voltios.
+
+119
+00:16:19,510 --> 00:16:24,690
+Ese es un punto, ahora veamos si hay otro al reducir la frecuencia.
+
+120
+00:16:28,310 --> 00:16:32,690
+Aquí hubo un buen modo, 190 voltios.
+
+121
+00:16:33,490 --> 00:16:37,020
+Ahora voy más bajo.
+
+122
+00:16:40,120 --> 00:16:42,020
+Aquí estará el segundo punto.
+
+123
+00:16:43,260 --> 00:16:54,840
+Pon atención: 190 voltios y consumo menos de 4,5 amperios, en algún lugar alrededor de 4,2 amperios.
+
+124
+00:16:55,460 --> 00:16:58,480
+Este será muy probablemente nuestro punto de trabajo.
+
+125
+00:16:58,620 --> 00:17:10,300
+Pero hice esas pruebas de antemano, y para este núcleo con tres capas, esta frecuencia es de 55 kHz.
+
+126
+00:17:10,640 --> 00:17:14,020
+La frecuencia ya la podemos mirar con la ayuda de un osciloscopio.
+
+127
+00:17:14,980 --> 00:17:17,580
+Conectaré el dispositivo y veremos esto.
+
+128
+00:17:17,620 --> 00:17:18,460
+Ahora mira.
+
+129
+00:17:18,960 --> 00:17:26,960
+Voy a bajar más, observando el modo de trabajo.
+
+130
+00:17:27,270 --> 00:17:28,160
+Bajando,
+
+131
+00:17:33,600 --> 00:17:38,200
+y vemos que la tensión empieza a caer,
+
+132
+00:17:43,780 --> 00:17:47,180
+el consumo se mantiene igual.
+
+133
+00:17:48,000 --> 00:17:51,700
+Bajar más en frecuencia ya no tiene sentido.
+
+134
+00:17:51,800 --> 00:17:56,800
+Voy a volver a la posición original donde habrá tensión máxima.
+
+135
+00:18:08,170 --> 00:18:09,690
+Aquí es 185.
+
+136
+00:18:21,680 --> 00:18:23,520
+Me pasé un poco.
+
+137
+00:18:25,480 --> 00:18:30,180
+Aquí está, este es el punto de trabajo.
+
+138
+00:18:30,260 --> 00:18:33,980
+Y ahora vamos a medirlo con el osciloscopio.
+
+139
+00:18:35,600 --> 00:18:40,620
+Conecté el osciloscopio y podemos observar el oscilograma.
+
+140
+00:18:44,380 --> 00:18:50,140
+En este caso me detuve en una frecuencia de 50 kHz.
+
+141
+00:18:50,940 --> 00:18:56,160
+Este es el rango de trabajo del núcleo, en algún lugar 45-60 kHz.
+
+142
+00:18:56,300 --> 00:19:03,420
+En promedio me detendré en 55 kHz de operación del sistema.
+
+143
+00:19:04,220 --> 00:19:09,480
+Esta será la zona normal para que el núcleo trabaje.
+
+144
+00:19:11,040 --> 00:19:13,740
+Subo la frecuencia ligeramente.
+
+145
+00:19:22,460 --> 00:19:36,940
+A esta frecuencia, mira ahora, el consumo hace 4,2 A y 180 V en la carga.
+
+146
+00:19:40,880 --> 00:19:47,360
+En una batería de 12 V, me sacudió la corriente un poco.
+
+147
+00:19:47,780 --> 00:19:53,940
+Pasa, el extremo caliente sin aislamiento te muerde.
+
+148
+00:20:01,190 --> 00:20:03,750
+Aquí tenemos regulación de tensión presente.
+
+149
+00:20:08,220 --> 00:20:12,580
+Con esto, termina el ajuste de frecuencia.
+
+150
+00:20:12,780 --> 00:20:18,600
+Ahora pasaremos a ajustar la realimentación de corriente.
+
+151
+00:20:18,940 --> 00:20:23,600
+Para la siguiente etapa de ajuste definitivamente necesitamos el osciloscopio.
+
+152
+00:20:23,720 --> 00:20:31,100
+Con él vamos a rastrear si la protección de corriente está funcionando o no, y qué tan correctamente trabaja.
+
+153
+00:20:31,900 --> 00:20:43,500
+Las puntas en este caso, se usarán dos canales, las conecté en estos puntos que envían la señal de control a los drivers, punto 1 y 2.
+
+154
+00:20:45,180 --> 00:20:51,540
+Arranco el sistema sin aplicar alimentación al módulo de potencia.
+
+155
+00:20:53,180 --> 00:20:59,580
+Vemos el oscilograma del funcionamiento del sistema.
+
+156
+00:21:00,360 --> 00:21:14,120
+Y ahora voy a reducir la duración de trabajo a una posición ligeramente menor a la mitad.
+
+157
+00:21:14,580 --> 00:21:22,880
+Después necesitamos una carga importante con pequeña resistencia óhmica, por ejemplo una lámpara de 300 W.
+
+158
+00:21:23,600 --> 00:21:25,260
+Y ahora lo que haremos.
+
+159
+00:21:26,280 --> 00:21:37,640
+Siguiendo la corriente de consumo deseada en la que querríamos detenernos en el amperímetro, llevo la lectura del amperímetro ligeramente por encima de ese punto.
+
+160
+00:21:37,780 --> 00:21:45,660
+En este caso calculo que tendré un consumo máximo de 20 A, tal vez ligeramente más.
+
+161
+00:21:46,340 --> 00:21:57,640
+Para una batería de 12 V esto ya es un consumo importante, e ir más alto que eso no tiene sentido, de lo contrario la batería se descargará muy rápido.
+
+162
+00:21:58,680 --> 00:22:00,720
+Para mis necesidades esto es de sobra.
+
+163
+00:22:01,480 --> 00:22:04,260
+La carga la encenderemos entre estos terminales.
+
+164
+00:22:04,560 --> 00:22:12,240
+Primer terminal del transformador y el último, para dar la carga máxima que puede haber.
+
+165
+00:22:13,080 --> 00:22:18,580
+Aquí está la duración ahora, y voy a conectar brevemente la lámpara.
+
+166
+00:22:19,920 --> 00:22:20,780
+Ah, alimentación.
+
+167
+00:22:20,960 --> 00:22:24,740
+La alimentación ahora se puede aplicar al módulo de potencia.
+
+168
+00:22:24,900 --> 00:22:25,900
+Aplico alimentación.
+
+169
+00:22:27,300 --> 00:22:29,360
+Y ahora enciendo.
+
+170
+00:22:30,700 --> 00:22:32,500
+Sí, alimentación aplicada.
+
+171
+00:22:35,160 --> 00:22:40,460
+Vemos en el amperímetro 11 A de consumo.
+
+172
+00:22:41,640 --> 00:22:44,160
+Hay descarga.
+
+173
+00:22:44,860 --> 00:22:48,760
+Agrego un poco la duración de los pulsos de control.
+
+174
+00:22:55,520 --> 00:22:56,920
+14.
+
+175
+00:23:00,200 --> 00:23:01,780
+Agrego más.
+
+176
+00:23:06,790 --> 00:23:07,630
+19.
+
+177
+00:23:12,090 --> 00:23:12,890
+Más.
+
+178
+00:23:21,620 --> 00:23:25,140
+Ya vuela pasando 30, mucho.
+
+179
+00:23:27,080 --> 00:23:33,220
+El convertidor puede por supuesto trabajar en este modo y más, pero para eso necesitaría aire de refrigeración.
+
+180
+00:23:34,100 --> 00:23:37,320
+Yo quería que el sistema trabajara específicamente sin refrigeración.
+
+181
+00:23:39,020 --> 00:23:41,120
+21 A al máximo.
+
+182
+00:23:41,900 --> 00:23:43,480
+Aproximadamente lo que se necesita.
+
+183
+00:23:44,500 --> 00:23:53,300
+Ahora, cuando está ajustado así, podemos abrir estos contactos.
+
+184
+00:23:53,640 --> 00:23:56,660
+Ahora mismo están cerrados.
+
+185
+00:23:57,060 --> 00:24:00,780
+Y aquí elegiremos una resistencia.
+
+186
+00:24:01,240 --> 00:24:05,080
+Se conecta en este punto.
+
+187
+00:24:05,140 --> 00:24:11,460
+Y esta resistencia, está marcada, determina la corriente final de disparo de la protección de corriente.
+
+188
+00:24:12,460 --> 00:24:18,340
+Es decir, necesitamos ajustar esta protección ligeramente por encima de 20 A.
+
+189
+00:24:20,660 --> 00:24:27,580
+Ahora empiezo a elegir la resistencia comenzando desde aproximadamente 10 Ohm.
+
+190
+00:24:27,800 --> 00:24:35,240
+Suelda 10 Ohm y mira a qué amperaje de consumo dispara la protección de corriente.
+
+191
+00:24:36,220 --> 00:24:38,580
+Así que, soldé una resistencia de 10 Ohm.
+
+192
+00:24:38,740 --> 00:24:42,880
+Recomiendo soldar bien para que el contacto sea muy bueno.
+
+193
+00:24:43,500 --> 00:24:47,540
+Y ahora cortocircuita la salida del transformador.
+
+194
+00:24:48,960 --> 00:24:52,640
+Vemos, observa los cambios en la duración.
+
+195
+00:24:53,480 --> 00:24:59,660
+La duración de los pulsos de control, cuando se conecta carga, se reduce.
+
+196
+00:24:59,820 --> 00:25:06,740
+Es decir, el sistema empieza a atrapar con confianza y la protección de corriente dispara.
+
+197
+00:25:06,900 --> 00:25:16,100
+Ahora puedo agregar duración máxima de la señal de control y probar la protección de corriente.
+
+198
+00:25:17,780 --> 00:25:20,620
+Aquí vemos 10 A.
+
+199
+00:25:21,060 --> 00:25:23,960
+Atención al amperímetro.
+
+200
+00:25:26,980 --> 00:25:29,100
+Ahora compruebo en corto.
+
+201
+00:25:30,320 --> 00:25:32,960
+En corto, ligeramente por encima de 10 A.
+
+202
+00:25:33,940 --> 00:25:42,980
+La protección ya está funcionando, podemos decir con confianza que la cantidad de vueltas del transformador se eligió correctamente.
+
+203
+00:25:45,880 --> 00:25:53,860
+Ahora la tarea es llevar el consumo en el disparo de la protección de corriente hasta los 20 A.
+
+204
+00:25:54,380 --> 00:25:58,280
+Para esto, esta resistencia que soldé,
+
+205
+00:25:58,640 --> 00:26:07,100
+reduciremos suavemente su valor en Ohm hasta llevarlo a este punto.
+
+206
+00:26:07,780 --> 00:26:13,520
+La duración de los pulsos de control mientras tanto se puede mantener al máximo.
+
+207
+00:26:13,920 --> 00:26:17,580
+La siguiente prueba para nosotros: 8,5 Ohm.
+
+208
+00:26:18,840 --> 00:26:20,080
+Aplico alimentación.
+
+209
+00:26:21,220 --> 00:26:26,660
+Vemos la duración de los pulsos al máximo y la carga.
+
+210
+00:26:27,500 --> 00:26:29,860
+Observa el amperímetro.
+
+211
+00:26:31,620 --> 00:26:33,440
+11,5 A.
+
+212
+00:26:35,360 --> 00:26:45,280
+No prestes atención al hecho de que la lámpara de 300 W brilla débilmente, porque este es el último terminal, es de alta tensión.
+
+213
+00:26:45,460 --> 00:26:49,180
+Tú mismo ves qué tensión se estira aquí.
+
+214
+00:26:50,400 --> 00:26:55,100
+La lámpara arderá normalmente en una cantidad reducida de tomas.
+
+215
+00:26:58,980 --> 00:27:01,680
+Corto: 11,5 A.
+
+216
+00:27:01,920 --> 00:27:04,440
+Podemos reducir el valor de la resistencia aún más.
+
+217
+00:27:05,560 --> 00:27:09,240
+Siguiente resistencia: 4,6 Ohm.
+
+218
+00:27:10,420 --> 00:27:15,200
+Aplico alimentación y pruebo bajo carga.
+
+219
+00:27:17,920 --> 00:27:21,140
+18 A es el punto de disparo.
+
+220
+00:27:22,780 --> 00:27:29,900
+Como puedes ver en esta toma de alta tensión, el brillo de la lámpara aumenta.
+
+221
+00:27:31,560 --> 00:27:35,360
+Ahora pruebo a través de la lámpara, hago un cortocircuito.
+
+222
+00:27:36,460 --> 00:27:39,100
+Mismos 18 A en el caso.
+
+223
+00:27:42,200 --> 00:27:50,040
+Estamos cerca, y ahora necesitamos reducir en 0,1 Ohm.
+
+224
+00:27:50,860 --> 00:27:51,980
+Lo haré.
+
+225
+00:27:51,980 --> 00:27:58,820
+Para no alargar el video, no mostraré el sistema completo de elección de 0,1 Ohm.
+
+226
+00:27:59,700 --> 00:28:04,100
+Lo elegí así, ahora se ve qué guirnalda de resistencias.
+
+227
+00:28:05,040 --> 00:28:09,100
+Su resistencia total es de 4,1 Ohm.
+
+228
+00:28:11,060 --> 00:28:14,680
+Ahora logré lo que necesito.
+
+229
+00:28:15,280 --> 00:28:21,080
+Aplico alimentación y bajo carga.
+
+230
+00:28:22,500 --> 00:28:23,860
+20 A.
+
+231
+00:28:25,060 --> 00:28:27,460
+Y compruebo en corto.
+
+232
+00:28:28,820 --> 00:28:31,100
+Corto también 20 A.
+
+233
+00:28:31,740 --> 00:28:40,020
+En el osciloscopio también se ve bien que la protección de corriente dispara, reduce la duración de los pulsos de control.
+
+234
+00:28:40,740 --> 00:28:41,540
+Todo excelente.
+
+235
+00:28:43,300 --> 00:28:54,660
+Quiero decir que tal modo de operación cuando ocurre un cortocircuito, este es el modo más complejo para el funcionamiento del interruptor, en tal modo de limitación de corriente.
+
+236
+00:28:56,020 --> 00:29:01,840
+Y en este modo el disipador se calentará más.
+
+237
+00:29:04,070 --> 00:29:20,520
+Si, por ejemplo, operas en tal modo, reduces manualmente, entonces aquí habrá calentamiento, aquí lo configuré, y en tal modo el calentamiento será mínimo.
+
+238
+00:29:21,240 --> 00:29:31,240
+Y en el modo cuando la duración está al máximo, específicamente cuando el sistema dispara la protección de corriente, en ese momento el calentamiento del disipador será exactamente aquí.
+
+239
+00:29:31,360 --> 00:29:33,040
+Pero el calentamiento no debería ser fuerte.
+
+240
+00:29:34,300 --> 00:29:42,720
+Aproximadamente en... ahora voy a cortocircuitar el sistema, mira.
+
+241
+00:29:43,600 --> 00:29:45,840
+La batería ya se está descargando claro.
+
+242
+00:29:49,760 --> 00:29:50,740
+Mira.
+
+243
+00:29:51,960 --> 00:29:57,440
+Hay liberación de calor, del orden de 50 grados.
+
+244
+00:29:58,600 --> 00:30:06,000
+Este convertidor no está planeado para operar en un modo tan duro, especialmente sin refrigeración.
+
+245
+00:30:06,800 --> 00:30:09,080
+Así que todo normal.
+
+246
+00:30:09,900 --> 00:30:18,500
+La siguiente etapa es que necesitamos ajustar el disparo de la protección de corriente.
+
+247
+00:30:18,660 --> 00:30:22,620
+Realizamos el experimento, elegimos esta resistencia aquí.
+
+248
+00:30:23,520 --> 00:30:34,920
+A esto le agregaremos una resistencia variable, para que tengamos regulación suave del disparo desde 0,10 A hasta 20 A.
+
+249
+00:30:35,200 --> 00:30:37,260
+Se puede establecer cualquier regulación.
+
+250
+00:30:37,260 --> 00:30:44,680
+Decidí quedarme en esta solución de circuito para la regulación de la protección de corriente.
+
+251
+00:30:45,380 --> 00:30:50,380
+Está hecho con dos resistencias conectadas en serie.
+
+252
+00:30:51,460 --> 00:30:56,600
+Y en paralelo a una de ellas se conecta una resistencia variable.
+
+253
+00:30:57,400 --> 00:31:07,220
+De esta manera, en caso de que el punto medio del cursor falle, tenemos protección de corriente que con la ayuda de estas dos resistencias permanece funcional.
+
+254
+00:31:07,440 --> 00:31:19,340
+Y no arriesgamos meternos en una situación tal donde, con desgaste, si simplemente conectáramos este punto aquí, en algún momento nuestro sistema quedaría sin protección de corriente.
+
+255
+00:31:19,400 --> 00:31:29,740
+Si quitas esta resistencia, entonces el sistema operará en el modo de la corriente más pequeña que pasa por los interruptores de potencia.
+
+256
+00:31:30,100 --> 00:31:32,960
+Entregará la duración más pequeña en su apertura.
+
+257
+00:31:34,200 --> 00:31:35,920
+Ahora voy a mostrar cómo funciona esto.
+
+258
+00:31:36,660 --> 00:31:38,360
+Valores elegidos aproximadamente.
+
+259
+00:31:38,640 --> 00:31:40,320
+Más adelante se cambiarán ligeramente.
+
+260
+00:31:41,120 --> 00:31:41,940
+Anunciando.
+
+261
+00:31:41,980 --> 00:31:47,240
+0,7 Ohm, 120 Ohm, y 1 kOhm, esta resistencia.
+
+262
+00:31:48,100 --> 00:31:49,300
+Aplico alimentación.
+
+263
+00:31:52,200 --> 00:32:01,580
+La regulación empieza desde 1 amperio y va hasta 19 amperios.
+
+264
+00:32:02,220 --> 00:32:03,900
+Agrego con el cursor.
+
+265
+00:32:08,460 --> 00:32:10,520
+Moviéndose lentamente.
+
+266
+00:32:11,400 --> 00:32:15,500
+Mira cómo funciona ahora la protección de corriente.
+
+267
+00:32:16,880 --> 00:32:24,300
+Ajusto por ejemplo a 2 amperios de consumo.
+
+268
+00:32:25,000 --> 00:32:29,740
+Más adelante: 5 amperios de consumo.
+
+269
+00:32:30,320 --> 00:32:34,340
+Mira la duración de los pulsos de control.
+
+270
+00:32:38,910 --> 00:32:47,310
+Y ya no importa cómo controlamos la tensión de salida, solo podemos reducirla.
+
+271
+00:32:47,590 --> 00:32:54,750
+Pero al aumentar al máximo, tendremos nuestro deseado ajustado con este cursor.
+
+272
+00:32:55,650 --> 00:32:59,790
+Parece que la resistencia salió un poco de mala calidad.
+
+273
+00:32:59,950 --> 00:33:01,610
+Hay tirones bruscos.
+
+274
+00:33:02,130 --> 00:33:03,310
+Habrá que reemplazar.
+
+275
+00:33:03,990 --> 00:33:05,310
+Pero todo esto es arreglable.
+
+276
+00:33:05,530 --> 00:33:06,910
+Ahora llevo al máximo.
+
+277
+00:33:08,330 --> 00:33:09,830
+18 amperios.
+
+278
+00:33:11,470 --> 00:33:15,410
+Sí, hay que cambiar la resistencia, pero hay regulación.
+
+279
+00:33:18,730 --> 00:33:21,870
+Así que en este esquema podemos detenernos.
+
+280
+00:33:24,930 --> 00:33:32,110
+En este punto podemos considerar terminado el ajuste de la protección de corriente.
+
+281
+00:33:33,110 --> 00:33:37,330
+El sistema maneja con éxito vía realimentación.
+
+282
+00:33:38,490 --> 00:33:39,710
+Hasta los próximos videos.
+
+283
+00:33:39,970 --> 00:33:43,250
+Experimentos exitosos a todos, y lo mejor.

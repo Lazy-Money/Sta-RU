@@ -1,0 +1,975 @@
+1
+00:00:01,020 --> 00:00:02,340
+Hola a todos.
+
+2
+00:00:02,700 --> 00:00:07,100
+Terminé el trabajo de ajuste de la fuente de laboratorio.
+
+3
+00:00:08,180 --> 00:00:11,520
+Y ahora frente a ti está su diagrama esquemático.
+
+4
+00:00:11,840 --> 00:00:16,440
+El esquema salió grande y entra en dos hojas A4.
+
+5
+00:00:17,340 --> 00:00:23,000
+Ya está ubicado en la carpeta en la dirección de Yandex.Disk que conoces.
+
+6
+00:00:23,160 --> 00:00:25,900
+La dirección también estará duplicada en la descripción del video.
+
+7
+00:00:25,900 --> 00:00:40,040
+En el transcurso de trabajar en esta construcción, surgieron algunas características que se reflejaron en la práctica en cambios al diagrama esquemático del dispositivo.
+
+8
+00:00:41,600 --> 00:00:50,760
+El cambio más radical en la construcción, podrías decir, sucedió específicamente en el módulo de potencia.
+
+9
+00:00:50,880 --> 00:00:53,060
+Los interruptores de potencia fueron reemplazados.
+
+10
+00:00:53,060 --> 00:01:03,160
+Originalmente planeaba usar interruptores de potencia en caja TO-247, marca IRFP-064N.
+
+11
+00:01:03,820 --> 00:01:23,260
+Pero en el transcurso de las pruebas resultó que estos drivers HCPL3120, que tienen una corriente de pulso máxima de 2 A, no son capaces de saturar la capacidad de compuerta de estos transistores con calidad.
+
+12
+00:01:24,860 --> 00:01:29,900
+Y entonces tuve dos soluciones para este problema.
+
+13
+00:01:30,380 --> 00:01:43,060
+O reemplazar los transistores, o usar amplificadores de corriente después de los drivers con pares complementarios de transistores bipolares.
+
+14
+00:01:43,060 --> 00:01:45,960
+Hecho en este tipo de esquema.
+
+15
+00:01:46,340 --> 00:01:52,540
+Nuestro driver, una resistencia elegida, luego van pares complementarios.
+
+16
+00:01:52,620 --> 00:02:00,340
+Por ejemplo este KT-972, KT-973, o KT-805 y KT-835.
+
+17
+00:02:01,160 --> 00:02:08,220
+Bueno, y más por esquema: resistencia limitadora, diodos, zeners, e interruptor de potencia.
+
+18
+00:02:08,220 --> 00:02:11,180
+Pero no fui por este camino.
+
+19
+00:02:11,740 --> 00:02:18,200
+Es un camino muy bueno para controlar compuertas pesadas.
+
+20
+00:02:18,620 --> 00:02:29,020
+No lo tomé por una razón: por la densidad de montaje en mi placa, instalar 8 interruptores ya no era posible.
+
+21
+00:02:29,140 --> 00:02:30,220
+Simplemente no había espacio.
+
+22
+00:02:30,800 --> 00:02:38,720
+Por esto me detuve en transistores de marca IRFZ48N.
+
+23
+00:02:39,720 --> 00:02:57,700
+Estos transistores vienen en caja TO-220, una caja así es mucho más pequeña, pero sin embargo manejan la tarea propuesta de manera excelente y no estropean la construcción en absoluto.
+
+24
+00:02:57,700 --> 00:03:06,000
+Y además su característica es que la capacidad de compuerta es mucho más pequeña.
+
+25
+00:03:06,180 --> 00:03:14,580
+Si tomas el IRFP064N, hay 4000 pF, y en estos: 2500 pF.
+
+26
+00:03:15,200 --> 00:03:22,300
+Y en el transcurso de las pruebas encontré que este driver puede trabajar con capacidad de hasta 2800 pF.
+
+27
+00:03:26,470 --> 00:03:30,510
+Estos interruptores están colocados en el disipador.
+
+28
+00:03:31,150 --> 00:03:37,190
+Todo igual que mostré en el video, todas las mismas operaciones en el módulo de potencia.
+
+29
+00:03:38,270 --> 00:03:46,890
+El siguiente momento donde se hicieron cambios, esto es en el transformador de potencia.
+
+30
+00:03:47,890 --> 00:04:00,030
+Puedes notar que cambié la cantidad de vueltas del bobinado primario, la reduje a 4-7, y uso solo 7 terminales del transformador.
+
+31
+00:04:00,170 --> 00:04:05,890
+Originalmente se bobinaron 11 vueltas en 3 capas del bobinado secundario.
+
+32
+00:04:05,890 --> 00:04:27,030
+Pero como en el terminal 11 y siguientes la tensión ya excedía demasiado la tarea que me propuse, 1000 voltios, decidí desbobinar esas vueltas, y como total me deshice de una capa en el transformador de pulsos.
+
+33
+00:04:28,030 --> 00:04:36,310
+Ahora esta construcción se ve así, nada cambió, solo se quitó una capa, y ves 4 vueltas.
+
+34
+00:04:37,370 --> 00:04:44,190
+También está todo montado y los terminales del transformador están conectados al selector de distribución.
+
+35
+00:04:45,110 --> 00:04:51,470
+Estos selectores vienen con piezas metálicas así en el kit.
+
+36
+00:04:51,470 --> 00:04:53,930
+Puedes ver que lo modifiqué ligeramente aquí.
+
+37
+00:04:54,790 --> 00:05:16,310
+Se asientan en estos agujeros y tienen una pestaña tal que, cuando se mueve, choca contra la pestaña metálica del limitador, y el selector no puede ser conmutado más allá.
+
+38
+00:05:16,530 --> 00:05:21,450
+De esta manera determinamos el número final de sus conmutaciones.
+
+39
+00:05:21,470 --> 00:05:28,790
+Después ajustamos la cadena responsable del trabajo de la protección de corriente.
+
+40
+00:05:29,010 --> 00:05:33,930
+Esta es esta resistencia y la resistencia limitadora.
+
+41
+00:05:34,170 --> 00:05:37,990
+Y aquí está la cadena que viene del sensor de corriente.
+
+42
+00:05:38,830 --> 00:05:39,190
+Puente.
+
+43
+00:05:40,690 --> 00:05:42,810
+Los valores ahora están marcados.
+
+44
+00:05:43,530 --> 00:06:06,850
+En experimentos anteriores usé como resistencia resistores variables de esta marca, pero resultó que son de muy baja potencia y al trabajar el sensor de corriente los contactos simplemente se queman en la pista.
+
+45
+00:06:07,850 --> 00:06:18,260
+Aunque la corriente no es muy grande, pero sin embargo estos transistores no manejan la tarea propuesta y se decidió reemplazarlos.
+
+46
+00:06:19,270 --> 00:06:26,670
+Encontré resistores de marca PPB1A, la marca que también indiqué.
+
+47
+00:06:27,730 --> 00:06:33,330
+La resistencia que instalé es de 100 Ohm.
+
+48
+00:06:33,330 --> 00:06:39,310
+Pero aquí los resistores con resistencia desde 47 Ohm funcionarán bien.
+
+49
+00:06:40,490 --> 00:06:48,450
+Habría instalado tal resistencia de 47 Ohm, pero no está disponible en los proveedores.
+
+50
+00:06:48,950 --> 00:06:52,750
+Estos resistores por alguna razón escasean.
+
+51
+00:06:53,670 --> 00:06:57,570
+Están hechos de hilo de nicromo.
+
+52
+00:06:58,570 --> 00:07:02,010
+La potencia nominal de estos resistores es bastante alta.
+
+53
+00:07:02,750 --> 00:07:14,810
+Las superficies de contacto también están hechas con mucha calidad, estas pestañas, lo cual previene su fallo, caja de cerámica.
+
+54
+00:07:16,250 --> 00:07:21,770
+Así que aconsejo usar exactamente estos resistores variables.
+
+55
+00:07:22,530 --> 00:07:24,770
+Para evitar fallos de funcionamiento.
+
+56
+00:07:25,290 --> 00:07:27,410
+¿Qué más puedo decir aquí?
+
+57
+00:07:28,770 --> 00:07:41,270
+Esta resistencia que va al común del chip es responsable de la corriente final de disparo de la protección.
+
+58
+00:07:41,770 --> 00:07:46,690
+En mi caso esta resistencia es de 2,7 Ohm.
+
+59
+00:07:46,690 --> 00:07:54,590
+Y aquí puedes poner en algún lugar hasta 5 Ohm, este será un punto diferente.
+
+60
+00:07:55,010 --> 00:08:04,490
+Antes ajusté el punto de consumo a 20 A, pero a 2,7 Ohm esto es 32 A.
+
+61
+00:08:05,110 --> 00:08:15,370
+El punto de disparo resulta, y estos interruptores manejan tal carga de cortocircuito de manera excelente.
+
+62
+00:08:17,210 --> 00:08:29,610
+Pasando a las cadenas responsables del control de detener la generación del chip.
+
+63
+00:08:31,490 --> 00:08:44,470
+Esta cadena está hecha con un divisor de resistencias de valores 1,3 kOhm y 330 Ohm.
+
+64
+00:08:45,370 --> 00:08:49,890
+De ellos se forma un potencial de aproximadamente 2,5 V.
+
+65
+00:08:51,010 --> 00:09:04,210
+Y podemos notar que este potencial pasa por el interruptor de apagado de generación, está presente aquí en mi construcción.
+
+66
+00:09:04,330 --> 00:09:13,110
+Más adelante va un pulsador con contactos normalmente cerrados, es decir cerrados, no abiertos.
+
+67
+00:09:13,110 --> 00:09:24,490
+Y se ve que marqué un cable coaxial aquí, cuya pantalla se conecta obligatoriamente al común con el generador.
+
+68
+00:09:25,450 --> 00:09:41,170
+Si no haces esto, entonces este trozo de cable desde el interruptor, botón, y el punto marcado E aquí, aquí está, la entrada al pin 9, formará una especie de antena.
+
+69
+00:09:41,170 --> 00:09:54,050
+Y durante el trabajo, las interferencias inducidas en él desde el trabajo del bobinado primario serán significativas, lo que llevará a disparos falsos de la protección de corriente.
+
+70
+00:09:54,050 --> 00:10:02,810
+Ya que el pin 9 del chip UC3825N es bastante sensible.
+
+71
+00:10:03,370 --> 00:10:08,530
+Su trabajo es de 0,9 a 1,3 voltios.
+
+72
+00:10:08,770 --> 00:10:12,670
+1,3 voltios ya es un corte total de generación.
+
+73
+00:10:12,670 --> 00:10:16,870
+Así que aconsejo hacer esto sin falta.
+
+74
+00:10:17,790 --> 00:10:27,140
+Examinemos con más detalle para qué se puede usar esta cadena de interruptor y botón.
+
+75
+00:10:28,710 --> 00:10:42,060
+Primero, al cerrar el interruptor conmutamos nuestro chip a modo de espera, el suministro de pulsos de control desde los pines 14 y 11 del UC3825N se detiene.
+
+76
+00:10:43,390 --> 00:10:51,210
+Esto es muy cómodo, no hay necesidad de desconectar la alimentación al bloque de laboratorio completo.
+
+77
+00:10:52,210 --> 00:11:21,350
+También, si queremos probar un circuito conectado después de la fuente de laboratorio en su salida, y no estamos seguros de cómo reaccionará a un encendido prolongado, presionamos brevemente este botón con contactos normalmente cerrados, los contactos se abren y el chip vuelve al modo de trabajo.
+
+78
+00:11:22,650 --> 00:11:31,650
+Determinamos cómo se comporta el dispositivo subsiguiente, hacemos conclusiones e introducimos correcciones en el control de la fuente de laboratorio.
+
+79
+00:11:32,650 --> 00:11:59,130
+También, con este botón es muy cómodo establecer el potencial de tensión, conectar un voltímetro a la salida de la fuente, establecer el punto a la tensión deseada con el interruptor, y establecer el punto de disparo de la protección de tensión.
+
+80
+00:11:59,130 --> 00:12:08,550
+Presiona el botón y fija el potencial de tensión que sale en la salida.
+
+81
+00:12:09,110 --> 00:12:11,210
+Funcional y cómodo.
+
+82
+00:12:11,270 --> 00:12:24,250
+Ahora examinemos el trabajo del sistema responsable de la regulación suave de tensión en la salida de la fuente y el establecimiento de su punto final.
+
+83
+00:12:24,250 --> 00:12:30,330
+Este sistema requería una fuente de alimentación adicional galvánicamente aislada.
+
+84
+00:12:30,790 --> 00:12:36,110
+La marqué esquemáticamente como 4 vueltas desde el convertidor DC-DC.
+
+85
+00:12:36,110 --> 00:12:46,130
+Técnicamente lo hice, ve los convertidores DC-DC, aquí agregué estas 4 vueltas.
+
+86
+00:12:46,950 --> 00:12:51,010
+Y luego van al esquema subsiguiente.
+
+87
+00:12:52,170 --> 00:12:57,010
+Este es un esquema de rectificador de media onda.
+
+88
+00:12:58,190 --> 00:13:03,450
+Aquí obtienes un potencial de aproximadamente 9 voltios.
+
+89
+00:13:03,450 --> 00:13:07,790
+Hay un zener limitador de 8,2 voltios.
+
+90
+00:13:08,330 --> 00:13:12,450
+Más adelante va un regulador en caja pequeña: 78L05.
+
+91
+00:13:13,450 --> 00:13:27,450
+Las corrientes consumidas aquí son bastante pequeñas, porque al final esta cadena solo trabaja para activar el LED en el optoacoplador PC817.
+
+92
+00:13:27,450 --> 00:13:38,710
+Aquí ves los puntos C, D, y en el esquema las salidas también van a estos puntos C, D.
+
+93
+00:13:39,590 --> 00:13:55,450
+Como elemento de seguimiento del potencial se decidió usar la solución de circuito que se ha recomendado bien, es decir el zener controlable TL431.
+
+94
+00:13:56,810 --> 00:14:14,550
+El potencial del divisor de resistencias se suministra a su pin 1, y cuando el umbral de este potencial alcanza 2,5 voltios, se compara con la tensión de referencia de 2,5 voltios y el chip dispara.
+
+95
+00:14:14,990 --> 00:14:20,090
+Al dispararse, en consecuencia encendemos el LED en el optoacoplador.
+
+96
+00:14:21,090 --> 00:14:28,570
+Ahora detengámonos en este divisor de resistencias con más detalle.
+
+97
+00:14:29,010 --> 00:14:32,510
+Aquí deben colocarse resistores de 2 vatios.
+
+98
+00:14:32,770 --> 00:14:42,050
+No solo son un divisor sino que también descargan estas capacidades en la salida de la fuente.
+
+99
+00:14:42,050 --> 00:14:46,330
+Estos también trabajan para nosotros.
+
+100
+00:14:46,490 --> 00:15:05,230
+Esto también se hace por seguridad, para que el potencial de tensión después del apagado de la fuente no permanezca en los terminales de salida, con esto introduje un sistema de seguridad de descarga del capacitor.
+
+101
+00:15:06,990 --> 00:15:12,970
+La resistencia que conecta a menos es de 4,7 kOhm.
+
+102
+00:15:13,310 --> 00:15:25,490
+Tal valor no fue elegido por casualidad, con tal valor la tensión máxima que puede estar en los terminales de salida es de 1050 voltios.
+
+103
+00:15:25,490 --> 00:15:29,010
+Más adelante va la resistencia variable.
+
+104
+00:15:29,610 --> 00:15:32,310
+Tengo una de 15 kOhm allí.
+
+105
+00:15:33,270 --> 00:15:46,870
+Resistor marca PP340, también bobinado, esta resistencia, de nicromo.
+
+106
+00:15:47,490 --> 00:15:56,710
+Porque todas las demás resistencias aquí funcionarán solo por algún tiempo y fallarán.
+
+107
+00:15:57,170 --> 00:16:05,650
+Aunque las corrientes son pequeñas, la fiabilidad de otros resistores variables deja mucho que desear.
+
+108
+00:16:06,650 --> 00:16:11,870
+Y la resistencia limitadora principal es de 2,2 MOhm.
+
+109
+00:16:12,190 --> 00:16:18,810
+Tal divisor nos permite rastrear con calidad el punto de tensión en la salida.
+
+110
+00:16:19,550 --> 00:16:31,630
+También puedes notar que paralelo al 2,2 MOhm se conecta una resistencia más de 2,2 MOhm, solo a través de un interruptor.
+
+111
+00:16:31,630 --> 00:16:47,710
+Al cerrar este interruptor el valor cae y el rango del punto variable de tensión de salida en la fuente se desplaza al lado inferior.
+
+112
+00:16:47,710 --> 00:17:02,010
+En mi caso la regulación con el interruptor cerrado es de 100 a 500 voltios, y con él abierto, de 300 a 1050 voltios.
+
+113
+00:17:02,790 --> 00:17:15,330
+Puedes elegir cualquier valor para la tensión deseada de tu construcción aquí, pero tendrás que elegir estas cadenas en la práctica.
+
+114
+00:17:15,330 --> 00:17:20,930
+Y ahora detengámonos en la cadena de alimentación del esquema completo.
+
+115
+00:17:21,590 --> 00:17:27,710
+La cadena de alimentación empieza con una batería, terminales desmontables.
+
+116
+00:17:29,070 --> 00:17:41,750
+Luego, según el esquema de bloques que mostré antes, en la entrada tenemos un relé de 12 V 40 A con un diodo.
+
+117
+00:17:41,750 --> 00:17:50,970
+Este diodo hace que el relé dispare solo en polaridad correcta de conexión de la batería.
+
+118
+00:17:51,470 --> 00:17:59,430
+Con esto evitamos que el sistema falle en una inversión de alimentación de entrada.
+
+119
+00:18:00,690 --> 00:18:06,410
+Una especie de protección que no dejará que se mate todo el esquema subsiguiente.
+
+120
+00:18:07,410 --> 00:18:18,630
+Más adelante, en la entrada tenemos capacitores electrolíticos de 4700 µF 25 V, conectados en serie, 2 piezas.
+
+121
+00:18:19,070 --> 00:18:20,410
+Luego viene el choque.
+
+122
+00:18:21,250 --> 00:18:27,510
+Después también 2 capacitores electrolíticos de 4700 µF 25 V.
+
+123
+00:18:28,210 --> 00:18:34,910
+Y paralelo a ellos hay un capacitor de 2,2 µF 400 V.
+
+124
+00:18:36,030 --> 00:18:45,510
+Así se ve el capacitor de 2,2 µF 400 V.
+
+125
+00:18:45,630 --> 00:18:46,890
+Bastante masivo.
+
+126
+00:18:47,010 --> 00:18:53,650
+Aconsejo no ahorrar en este capacitor de película, no tomarlo para tensión más baja.
+
+127
+00:18:54,170 --> 00:18:59,910
+La tensión de este capacitor en última instancia determina sus dimensiones.
+
+128
+00:19:00,470 --> 00:19:12,230
+Y esta capacidad participa en el trabajo del módulo de potencia, en el volcado primario de potencial en los interruptores.
+
+129
+00:19:13,030 --> 00:19:19,410
+Es decir, acelera el trabajo en pulsos del módulo de potencia.
+
+130
+00:19:20,590 --> 00:19:29,310
+También estos capacitores, electrolíticos conectados en serie, esto tampoco es una solución casual.
+
+131
+00:19:29,830 --> 00:19:36,450
+Porque estos capacitores en cargas pico se calentarán en el transcurso del trabajo.
+
+132
+00:19:36,550 --> 00:19:43,750
+Y necesitamos distribuir la carga que cae sobre ellos entre 4 capacitores.
+
+133
+00:19:44,030 --> 00:19:47,710
+El choque del filtro también toma parte en este trabajo.
+
+134
+00:19:47,710 --> 00:19:57,110
+Y si miramos el esquema, entonces el convertidor DC-DC que en última instancia alimenta el esquema completo está conectado, en nuestro lado.
+
+135
+00:19:57,370 --> 00:19:59,970
+La alimentación en positivo se entrega antes del choque.
+
+136
+00:20:00,970 --> 00:20:05,750
+El choque es un filtro contra el trabajo del módulo de potencia.
+
+137
+00:20:05,850 --> 00:20:07,270
+Ve los puntos A y B.
+
+138
+00:20:08,130 --> 00:20:14,510
+Y estos son los puntos donde A y B se suministran al módulo de potencia.
+
+139
+00:20:15,510 --> 00:20:20,530
+Físicamente esto se ve como sigue.
+
+140
+00:20:21,610 --> 00:20:22,810
+Ahora examinemos.
+
+141
+00:20:24,110 --> 00:20:28,810
+Todo está listo y empacado.
+
+142
+00:20:29,370 --> 00:20:31,350
+Aquí en la entrada tenemos el relé.
+
+143
+00:20:32,350 --> 00:20:40,490
+Luego, el cable que viene del relé en positivo llega a nosotros.
+
+144
+00:20:40,490 --> 00:20:44,590
+Aquí están, los capacitores ubicados en serie.
+
+145
+00:20:45,430 --> 00:20:46,190
+Dos piezas.
+
+146
+00:20:48,130 --> 00:20:49,790
+Luego viene el choque.
+
+147
+00:20:50,770 --> 00:20:54,610
+Y dos capacitores electrolíticos más.
+
+148
+00:20:54,810 --> 00:20:58,390
+Y más adelante en paralelo está el capacitor de 2,2 µF.
+
+149
+00:20:59,930 --> 00:21:05,490
+Aquí hay dos piezas metálicas con rosca M3.
+
+150
+00:21:06,070 --> 00:21:09,270
+Aquí soldé tuercas.
+
+151
+00:21:10,490 --> 00:21:15,590
+Para que cuando arme esta construcción.
+
+152
+00:21:16,070 --> 00:21:18,610
+Ve los contactos en forma de horquillas.
+
+153
+00:21:19,290 --> 00:21:26,830
+Descienden, enganchándose con estas almohadillas de contacto.
+
+154
+00:21:27,050 --> 00:21:32,230
+Y cuando la tapa se cierra, estos tornillos se aprietan.
+
+155
+00:21:32,390 --> 00:21:37,090
+De esa manera se hace un contacto de calidad.
+
+156
+00:21:38,850 --> 00:21:41,850
+Por este choque.
+
+157
+00:21:43,010 --> 00:21:49,670
+Las dimensiones de su núcleo se muestran en el dibujo.
+
+158
+00:21:50,390 --> 00:21:51,610
+Aquí está, este núcleo.
+
+159
+00:21:51,730 --> 00:21:55,230
+Lo marqué como F en un círculo.
+
+160
+00:21:55,610 --> 00:21:58,830
+Y aquí F con una flecha indica.
+
+161
+00:22:00,170 --> 00:22:05,010
+Las dimensiones del núcleo son 28,5 mm de largo.
+
+162
+00:22:05,010 --> 00:22:09,340
+13 mm de diámetro interior.
+
+163
+00:22:10,270 --> 00:22:12,990
+Y ancho de pared 6,5 mm.
+
+164
+00:22:13,490 --> 00:22:15,930
+Por exterior son 26 mm.
+
+165
+00:22:16,330 --> 00:22:17,550
+Tal barril.
+
+166
+00:22:18,410 --> 00:22:21,290
+Puedes naturalmente usar otros.
+
+167
+00:22:21,830 --> 00:22:31,550
+Simplemente por las dimensiones de la caja que elegí originalmente, exactamente estos núcleos me cabían.
+
+168
+00:22:32,110 --> 00:22:37,170
+Que tienen grandes dimensiones en longitud.
+
+169
+00:22:41,030 --> 00:22:44,030
+¿Qué más puedes ver aquí?
+
+170
+00:22:45,450 --> 00:22:47,150
+Aquí está este interruptor.
+
+171
+00:22:48,990 --> 00:22:52,790
+Que hace regulación de rango.
+
+172
+00:22:53,410 --> 00:22:57,250
+Este es el selector de resistencias.
+
+173
+00:22:58,270 --> 00:23:04,130
+Que establece el punto de disparo de la protección de tensión.
+
+174
+00:23:05,390 --> 00:23:06,990
+Aquí está presentada.
+
+175
+00:23:07,590 --> 00:23:11,130
+Esta es la resistencia de regulación de protección de corriente.
+
+176
+00:23:12,070 --> 00:23:14,770
+Y esta es una resistencia variable.
+
+177
+00:23:15,170 --> 00:23:20,450
+Esta es la regulación suave de la tensión de salida.
+
+178
+00:23:21,570 --> 00:23:25,650
+Efectivamente regula la duración de los pulsos de control.
+
+179
+00:23:25,650 --> 00:23:33,990
+Y luego el propio chip, basado en todas las configuraciones, establece la duración final del pulso de control.
+
+180
+00:23:35,990 --> 00:23:37,030
+Más adelante.
+
+181
+00:23:38,110 --> 00:23:39,570
+El puente de diodos.
+
+182
+00:23:40,050 --> 00:23:45,730
+Marqué aquí que consiste en diodos rápidos de marca MUR-860.
+
+183
+00:23:47,130 --> 00:23:54,050
+Y dibujé gráficamente que en la rama del puente se conectan dos diodos en serie.
+
+184
+00:23:54,050 --> 00:23:58,810
+Ya que el diodo está calificado para una tensión máxima de 600 voltios.
+
+185
+00:23:59,350 --> 00:24:03,550
+Y nuestra fuente tiene tensión de más de 1000 voltios.
+
+186
+00:24:03,690 --> 00:24:07,410
+Así que debemos conectarlos en dos piezas.
+
+187
+00:24:07,870 --> 00:24:11,990
+Por supuesto puedes encontrar diodos de otras marcas aquí también.
+
+188
+00:24:12,050 --> 00:24:14,010
+Pero tienen que ser rápidos.
+
+189
+00:24:15,710 --> 00:24:24,490
+Ahora también podemos examinar el sistema del filtro de salida de potencia.
+
+190
+00:24:25,670 --> 00:24:38,350
+Después del puente de diodos tenemos conectados capacitores no polares de valor 4,8 µF en serie a 630 voltios.
+
+191
+00:24:38,570 --> 00:24:40,950
+Estos son capacitores de película.
+
+192
+00:24:41,950 --> 00:24:49,290
+Y después de ellos está el choque en positivo y en negativo de salida.
+
+193
+00:24:49,350 --> 00:24:52,230
+Más adelante, los mismos capacitores no polares.
+
+194
+00:24:53,230 --> 00:25:01,950
+Y paralelo a ellos, un pequeño capacitor de filtro de 0,15 µF a 2000 voltios.
+
+195
+00:25:02,650 --> 00:25:04,970
+Físicamente esto se ve así.
+
+196
+00:25:06,830 --> 00:25:10,130
+Aquí están los primeros dos capacitores.
+
+197
+00:25:10,970 --> 00:25:13,290
+Luego la salida del choque.
+
+198
+00:25:14,890 --> 00:25:16,690
+Y los siguientes dos capacitores.
+
+199
+00:25:16,790 --> 00:25:19,750
+Aquí está en paralelo el capacitor de 2 kV.
+
+200
+00:25:20,030 --> 00:25:22,570
+Y tenemos positivo y negativo de salida.
+
+201
+00:25:23,410 --> 00:25:30,050
+Tal sistema nos permitió entregar una señal de calidad desde la fuente.
+
+202
+00:25:30,050 --> 00:25:37,710
+Y durante el trabajo incluso con grandes cargas, las ondulaciones allí son de 1,5-2 voltios.
+
+203
+00:25:38,170 --> 00:25:41,830
+Con una tensión de carga de 200 voltios.
+
+204
+00:25:42,450 --> 00:25:50,030
+Es decir, el oscilograma sale bastante limpio, si se observa a través de un dispositivo.
+
+205
+00:25:51,650 --> 00:26:02,270
+Y además, estos choques también son responsables del trabajo correcto de la protección de tensión.
+
+206
+00:26:02,730 --> 00:26:07,350
+Es decir, sin importar qué conectemos aquí en la salida, qué dispositivos.
+
+207
+00:26:08,410 --> 00:26:13,030
+Sabes, este bloque mío va a funcionar en dispositivos específicos.
+
+208
+00:26:14,270 --> 00:26:21,190
+Conectados con grandes altas frecuencias, potenciales estáticos.
+
+209
+00:26:22,210 --> 00:26:25,750
+Todo conectado con nuestra forma de trabajo específica.
+
+210
+00:26:26,010 --> 00:26:31,390
+Y así debemos proteger estas cadenas de la influencia en la salida.
+
+211
+00:26:32,290 --> 00:26:38,270
+El choque aquí consiste en 10 vueltas, de hilo de milímetro.
+
+212
+00:26:40,770 --> 00:26:44,190
+Se muestran las dimensiones del anillo usado.
+
+213
+00:26:44,450 --> 00:26:49,210
+Y aquí indiqué que se usan dos anillos en cada choque.
+
+214
+00:26:50,030 --> 00:26:51,190
+Aquí están, estos anillos.
+
+215
+00:26:51,270 --> 00:26:53,590
+Físicamente los apilé uno encima del otro.
+
+216
+00:26:53,830 --> 00:26:55,690
+Una especie de barril resultó.
+
+217
+00:26:56,430 --> 00:26:59,450
+Y lo até con cinta de papel.
+
+218
+00:27:00,390 --> 00:27:05,770
+Después de lo cual se bobinó hilo aislado en PVC.
+
+219
+00:27:05,770 --> 00:27:08,250
+Aquí están, estos choques.
+
+220
+00:27:08,730 --> 00:27:14,550
+Y también están envueltos con aislamiento adicional de fluoroplástico.
+
+221
+00:27:15,050 --> 00:27:19,270
+En general, expliqué los matices principales en el diagrama esquemático.
+
+222
+00:27:20,310 --> 00:27:25,690
+Las dimensiones del núcleo del transformador de pulsos de potencia también se indican.
+
+223
+00:27:26,370 --> 00:27:33,090
+Puedes usar ferrita de menores dimensiones y otras marcas, otras permeabilidades.
+
+224
+00:27:33,090 --> 00:27:34,370
+Esto no es principal.
+
+225
+00:27:34,790 --> 00:27:41,150
+Solo la frecuencia del generador maestro cambiará bajo cada ferrita.
+
+226
+00:27:41,270 --> 00:27:42,230
+Tendrás que elegirla.
+
+227
+00:27:42,290 --> 00:27:49,030
+Mostré el principio en videos anteriores sobre la fuente de laboratorio.
+
+228
+00:27:50,030 --> 00:27:52,650
+Ahora algunos matices más en el físico.
+
+229
+00:27:52,950 --> 00:27:57,970
+Aquí si lo armas igual que lo hice yo, el módulo de potencia.
+
+230
+00:27:58,610 --> 00:28:00,910
+Y la placa de control ubicada encima de él.
+
+231
+00:28:00,910 --> 00:28:13,970
+Entonces en tal construcción los cables que van de los interruptores al bobinado primario inevitablemente pasarán bajo la placa y el chip maestro.
+
+232
+00:28:14,710 --> 00:28:22,770
+En este caso bajo toda el área de la placa debes hacer una pantalla de papel de aluminio.
+
+233
+00:28:23,530 --> 00:28:29,210
+En este caso pegué el papel al cartón en el lado posterior.
+
+234
+00:28:29,210 --> 00:28:38,210
+Esto prevendrá captaciones del bobinado primario al chip maestro UC3825N.
+
+235
+00:28:38,990 --> 00:28:46,130
+Las captaciones ocurren en los pines 6 y 7 donde está ubicado el capacitor que establece la frecuencia.
+
+236
+00:28:48,210 --> 00:28:50,610
+Una condición más.
+
+237
+00:28:50,810 --> 00:29:05,330
+Si tienes tal esquema con fuentes de alimentación galvánicamente aisladas independientes, entonces la pantalla de aluminio no se conecta al menos común del chip maestro.
+
+238
+00:29:07,350 --> 00:29:31,470
+Más adelante, debes asegurarte de que no haya contacto accidental entre superficies metálicas abiertas y partes de potencia a través de las cuales pasa la alimentación de entrada y la salida.
+
+239
+00:29:31,470 --> 00:29:40,270
+Para esto también debemos hacer una junta dieléctrica.
+
+240
+00:29:40,510 --> 00:29:53,570
+La hice de plástico moldeado, de esta manera previniendo el contacto accidental.
+
+241
+00:29:54,970 --> 00:30:00,310
+En este caso está todo ubicado aquí.
+
+242
+00:30:01,690 --> 00:30:03,850
+En este video terminamos.
+
+243
+00:30:04,210 --> 00:30:05,970
+Ahora pasaremos al armado.
+
+244
+00:30:08,390 --> 00:30:22,990
+Lo mejor a todos, experimentos exitosos, y el próximo video sobre este sistema ya será sobre cómo lo pruebo bajo carga, en el oscilograma de salida, sobre las posibilidades de regulación.

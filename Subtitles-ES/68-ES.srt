@@ -1,0 +1,1987 @@
+1
+00:00:00,960 --> 00:00:01,770
+¡Hola a todos!
+
+2
+00:00:02,450 --> 00:00:04,350
+Feliz Día de la Radio para todos.
+
+3
+00:00:04,650 --> 00:00:11,370
+De una u otra forma, cualquiera que alguna vez haya soldado algo puede considerarse parte de esta fiesta.
+
+4
+00:00:12,930 --> 00:00:25,010
+A veces pasa que en la vida cotidiana o para experimentos necesitas alguna cosita, idealmente simple, que se pueda hacer rápido, que eleve la tensión.
+
+5
+00:00:25,010 --> 00:00:32,510
+En particular, necesité un circuito así para el encendido electrónico.
+
+6
+00:00:33,910 --> 00:00:39,710
+La propia placa de encendido electrónico conmuta a través de una bobina como esta.
+
+7
+00:00:40,250 --> 00:00:47,310
+Pero para una conmutación exitosa necesitaba aplicar 70 voltios al bobinado primario de esta bobina.
+
+8
+00:00:47,310 --> 00:00:56,530
+Y la alimentación a bordo es de 12 voltios, así que tengo que construir un convertidor así.
+
+9
+00:00:57,270 --> 00:01:14,990
+Pero decidí enseguida que mi convertidor no va a ser solo a 70 voltios, marqué una derivación para eso, sino que también voy a hacer los 220 voltios completos, para que en la ruta pudiera
+
+10
+00:01:14,990 --> 00:01:20,330
+cargar el celular o encender una lámpara de 220 voltios.
+
+11
+00:01:20,770 --> 00:01:24,070
+También se pueden cargar laptops y otras cosas.
+
+12
+00:01:24,430 --> 00:01:27,690
+Bien, la tarea está fijada, ahora solo hay que decidirse por el esquema.
+
+13
+00:01:27,690 --> 00:01:36,970
+Me detuve en esta solución esquemática, sobre el chip bastante común IR2153.
+
+14
+00:01:38,050 --> 00:01:42,090
+En el mundo radioaficionado lo apodaron "Irka" hace tiempo.
+
+15
+00:01:43,590 --> 00:01:49,490
+El chip ha demostrado ser bueno, pero aquí hay que tener cuidado.
+
+16
+00:01:49,590 --> 00:01:56,730
+Existen los chips IR2153, y existe la misma abreviatura con el sufijo D.
+
+17
+00:01:56,730 --> 00:02:02,010
+Para este convertidor necesitamos específicamente el IR2153.
+
+18
+00:02:02,890 --> 00:02:12,010
+El chip con sufijo D tiene un diodo en el encapsulado entre los pines 1 y 8.
+
+19
+00:02:12,590 --> 00:02:17,990
+Estas soluciones, al contrario, no están diseñadas para convertidores elevadores sino reductores.
+
+20
+00:02:18,350 --> 00:02:26,450
+Sobre base de medio puente o puente, si usas dos chips de control para un puente.
+
+21
+00:02:27,870 --> 00:02:33,610
+Así que en la compra, presta atención a que no haya sufijo D aquí.
+
+22
+00:02:37,000 --> 00:02:52,140
+Si tienes equipo de laboratorio, fuentes de alimentación, osciloscopio y otros equipos, te va a resultar bastante fácil afinar este circuito, y un radioaficionado experimentado
+
+23
+00:02:52,140 --> 00:02:52,520
+lo maneja sin problemas.
+
+24
+00:02:52,520 --> 00:03:04,920
+Pero si decidiste solo construir un convertidor para necesidades cotidianas y no tienes equipo, en realidad eso no es un problema.
+
+25
+00:03:05,060 --> 00:03:07,480
+Te voy a mostrar cómo hacerlo.
+
+26
+00:03:07,680 --> 00:03:09,600
+Vamos a seguir algunas reglas.
+
+27
+00:03:11,320 --> 00:03:13,020
+Primera regla básica.
+
+28
+00:03:14,040 --> 00:03:22,420
+Arma el lado de control con los transistores, sin conectar el transformador elevador en sí.
+
+29
+00:03:22,520 --> 00:03:28,540
+Y enciéndelo, verifica el montaje, y el arranque es obligatorio.
+
+30
+00:03:28,660 --> 00:03:36,680
+Conecta una lámpara de 12 V de 10 a 21 W en serie en la línea de alimentación.
+
+31
+00:03:37,800 --> 00:03:49,580
+Si al arrancar la lámpara brilla o se enciende, apaga inmediatamente y entiende que se cometió un error en alguna parte del circuito.
+
+32
+00:03:49,580 --> 00:03:59,480
+Si la lámpara no se enciende, entonces puedes conectar el transformador a continuación y verificar con él.
+
+33
+00:04:00,300 --> 00:04:07,740
+Recomiendo arrancar a través de una lámpara porque normalmente en casa hay alguna fuente de alimentación.
+
+34
+00:04:07,980 --> 00:04:12,800
+Normalmente es la misma batería que va a alimentar el convertidor.
+
+35
+00:04:12,800 --> 00:04:19,880
+Si no pones una lámpara a la entrada, esta cosa puede explotar muy rápido.
+
+36
+00:04:20,020 --> 00:04:26,980
+Va a ser frustrante y va a desanimar cualquier deseo posterior de un principiante de meterse con la electrónica.
+
+37
+00:04:29,480 --> 00:04:37,940
+Para empezar a verificar el circuito sin instrumentos, necesitamos soldar una lámpara en serie con la alimentación.
+
+38
+00:04:38,590 --> 00:04:46,700
+Y tomar dos lámparas más que van a servir como carga para estos transistores.
+
+39
+00:04:46,800 --> 00:04:50,080
+Van a conectarse en lugar de estos bobinados.
+
+40
+00:04:50,580 --> 00:04:53,740
+Verifica nuestro circuito buscando errores.
+
+41
+00:04:54,580 --> 00:05:02,600
+Conecta el borne menos de la alimentación al menos, el más a través de la lámpara al más.
+
+42
+00:05:03,360 --> 00:05:12,360
+Puedes notar que el circuito ahora se está descargando, se ve que una pequeña chispa pasa por aquí.
+
+43
+00:05:12,960 --> 00:05:16,500
+Mira en la práctica, esto son los electrolíticos cargándose.
+
+44
+00:05:17,600 --> 00:05:19,360
+Y la lámpara no se enciende.
+
+45
+00:05:19,620 --> 00:05:28,040
+Podemos rotar la resistencia variable, y como puedes ver, la lámpara no se enciende en ningún modo.
+
+46
+00:05:28,040 --> 00:05:36,040
+Esto confirma que ya armamos el circuito correctamente, y lo más probable es que funcione.
+
+47
+00:05:36,720 --> 00:05:39,880
+Ahora debemos verificar si funcionan los interruptores de potencia.
+
+48
+00:05:41,040 --> 00:05:44,020
+Ahora vamos a soldar lámparas y verificar.
+
+49
+00:05:45,180 --> 00:05:51,800
+Lámparas soldadas, lo que significa que las lámparas ahora están conectadas en lugar de estos bobinados.
+
+50
+00:05:52,800 --> 00:05:56,820
+El punto medio al que se conectan las lámparas es este terminal.
+
+51
+00:05:57,420 --> 00:06:01,820
+Corresponde a este cable más de la alimentación.
+
+52
+00:06:01,940 --> 00:06:03,180
+Es decir, este punto.
+
+53
+00:06:04,900 --> 00:06:11,820
+Antes de aplicar potencia, pon el cursor de la resistencia aproximadamente en la posición media.
+
+54
+00:06:12,000 --> 00:06:17,660
+Eso va a ser unos 30-40 kHz.
+
+55
+00:06:17,880 --> 00:06:20,400
+Y aplica potencia a la entrada.
+
+56
+00:06:21,620 --> 00:06:24,840
+Como puedes ver, la lámpara no se enciende, no pasa nada.
+
+57
+00:06:25,040 --> 00:06:27,220
+Verifico el primer transistor.
+
+58
+00:06:27,320 --> 00:06:28,800
+Este es su terminal.
+
+59
+00:06:29,020 --> 00:06:33,000
+Este viene de su drenaje.
+
+60
+00:06:33,760 --> 00:06:36,300
+Estos cables negros vienen de los drenajes de los transistores.
+
+61
+00:06:36,480 --> 00:06:37,080
+Verificando.
+
+62
+00:06:37,640 --> 00:06:39,240
+Ves que la lámpara brilla.
+
+63
+00:06:40,420 --> 00:06:44,500
+El transistor funciona en modo de operación.
+
+64
+00:06:44,580 --> 00:06:46,540
+Ahora verifica el segundo transistor.
+
+65
+00:06:48,200 --> 00:06:50,540
+La lámpara también brilla.
+
+66
+00:06:51,380 --> 00:06:52,160
+Todo normal.
+
+67
+00:06:52,240 --> 00:06:56,700
+Con un osciloscopio de doble haz podemos verificar lo siguiente.
+
+68
+00:06:56,780 --> 00:07:00,440
+Primero miramos la señal en estos puntos.
+
+69
+00:07:00,620 --> 00:07:03,480
+En las compuertas de los FET.
+
+70
+00:07:04,340 --> 00:07:08,860
+Necesitamos confirmar que el circuito funciona correctamente.
+
+71
+00:07:09,060 --> 00:07:13,320
+Y que hay el llamado tiempo muerto entre las señales de control.
+
+72
+00:07:13,660 --> 00:07:14,120
+Tiempo muerto.
+
+73
+00:07:14,120 --> 00:07:18,080
+Es decir, el tiempo en que los controles no se superponen.
+
+74
+00:07:18,720 --> 00:07:20,160
+Aplica potencia a la entrada.
+
+75
+00:07:21,220 --> 00:07:24,120
+Observando los controles.
+
+76
+00:07:25,440 --> 00:07:27,100
+Puedes jugar con la frecuencia.
+
+77
+00:07:28,000 --> 00:07:28,800
+Mira.
+
+78
+00:07:29,560 --> 00:07:38,060
+El límite está en algún lugar hasta 100 kHz.
+
+79
+00:07:38,060 --> 00:07:45,100
+Y el mínimo es 12,8 kHz.
+
+80
+00:07:45,600 --> 00:07:51,440
+Nos interesa la operación desde 20 kHz.
+
+81
+00:07:52,480 --> 00:07:55,880
+Detengámonos en unos 30 kHz.
+
+82
+00:07:56,660 --> 00:07:57,540
+Y mira.
+
+83
+00:07:59,360 --> 00:08:00,780
+La señal es rectangular.
+
+84
+00:08:00,880 --> 00:08:03,420
+Ahora verificamos la presencia de tiempo muerto.
+
+85
+00:08:04,420 --> 00:08:07,980
+Desplazo las señales entre sí.
+
+86
+00:08:08,100 --> 00:08:17,360
+Y observamos que efectivamente hay pausas entre el trabajo de un brazo y el otro.
+
+87
+00:08:17,920 --> 00:08:22,620
+Puedes prestar atención al frente plano.
+
+88
+00:08:23,420 --> 00:08:26,380
+El frente de apertura del transistor.
+
+89
+00:08:26,380 --> 00:08:34,180
+Este es el trabajo de los drivers internos integrados a través de la resistencia en la compuerta del transistor.
+
+90
+00:08:35,280 --> 00:08:38,560
+Luego es la descarga de la capacitancia de compuerta.
+
+91
+00:08:38,920 --> 00:08:40,500
+Es más pronunciada.
+
+92
+00:08:40,740 --> 00:08:43,920
+Cae a través de la resistencia de 1 kΩ.
+
+93
+00:08:45,680 --> 00:08:47,420
+Señal normal.
+
+94
+00:08:50,120 --> 00:08:51,720
+Va a funcionar.
+
+95
+00:08:54,720 --> 00:09:00,090
+Ahora vamos a ver la operación del interruptor bajo carga.
+
+96
+00:09:00,720 --> 00:09:04,860
+Vamos a ver las lámparas en estos puntos.
+
+97
+00:09:05,300 --> 00:09:07,600
+En los drenajes de los transistores.
+
+98
+00:09:11,260 --> 00:09:14,840
+Conecté las sondas en estos puntos.
+
+99
+00:09:15,600 --> 00:09:17,200
+Puedes ver que están en las lámparas.
+
+100
+00:09:17,320 --> 00:09:20,100
+La medición se hace respecto al cable común.
+
+101
+00:09:20,100 --> 00:09:24,000
+El común del osciloscopio está en el menos de la fuente de alimentación.
+
+102
+00:09:25,280 --> 00:09:26,860
+Aplico potencia.
+
+103
+00:09:29,780 --> 00:09:32,400
+Ves, la carga funciona.
+
+104
+00:09:32,820 --> 00:09:35,740
+¿Y qué nos dice esta forma de onda?
+
+105
+00:09:37,920 --> 00:09:46,280
+Si miramos la forma de onda en las lámparas, vemos que la operación ocurre con superposición.
+
+106
+00:09:47,280 --> 00:09:56,100
+Esta es una forma de onda normal porque no olvides que el FET invierte en tensión.
+
+107
+00:09:56,980 --> 00:10:05,140
+Así que la operación del interruptor va a estar en esta zona cuando la tensión cae a cero.
+
+108
+00:10:05,140 --> 00:10:09,120
+Ahora voy a volver.
+
+109
+00:10:09,640 --> 00:10:13,700
+El interruptor abre, la tensión cae.
+
+110
+00:10:14,660 --> 00:10:16,960
+El interruptor opera y cierra.
+
+111
+00:10:17,440 --> 00:10:26,060
+Podemos ver, aquí está trabajando el primer interruptor, una pausa, y aquí el segundo interruptor.
+
+112
+00:10:26,360 --> 00:10:33,680
+En esta carga hemos verificado que el circuito funciona correctamente.
+
+113
+00:10:33,680 --> 00:10:41,400
+Puedes barrer por el rango de frecuencia y verificar que se conserva el tiempo muerto.
+
+114
+00:10:42,640 --> 00:10:44,020
+Esto nos sirve.
+
+115
+00:10:44,220 --> 00:10:45,480
+Siguiente paso.
+
+116
+00:10:45,600 --> 00:10:49,420
+Circuito verificado, está funcionando, corre correctamente.
+
+117
+00:10:50,880 --> 00:10:53,780
+Y pasamos al transformador elevador.
+
+118
+00:10:54,300 --> 00:11:02,640
+Digamos que tomé ferrita, un anillo, y bobiné el bobinado secundario sobre él.
+
+119
+00:11:04,300 --> 00:11:07,840
+El conteo de espiras del elevador se elige individualmente.
+
+120
+00:11:08,000 --> 00:11:13,640
+Hay programas que puedes usar para calcularlo, pero en casa no vamos a complicarnos con eso.
+
+121
+00:11:13,780 --> 00:11:20,320
+Bobinamos el bobinado, lo conectamos, verificamos la tensión a la salida con un multímetro.
+
+122
+00:11:20,820 --> 00:11:22,560
+Si estamos contentos, lo dejamos.
+
+123
+00:11:22,620 --> 00:11:25,280
+Si no, entonces agrega más espiras hasta llegar al objetivo.
+
+124
+00:11:25,800 --> 00:11:27,960
+Y bobina el bobinado primario.
+
+125
+00:11:27,960 --> 00:11:32,600
+El bobinado primario se bobina todo en una dirección.
+
+126
+00:11:33,260 --> 00:11:36,180
+La misma cantidad de espiras por brazo.
+
+127
+00:11:36,320 --> 00:11:40,380
+Con una derivación desde el centro.
+
+128
+00:11:40,900 --> 00:11:54,080
+No olvides que todo el bobinado va en una dirección, porque por inexperiencia podrías bobinar en direcciones diferentes, y entonces el convertidor va a explotar.
+
+129
+00:11:54,080 --> 00:12:00,540
+Armé el circuito, conecté una carga de 15 W a 220 V.
+
+130
+00:12:01,360 --> 00:12:04,620
+Y aquí debería explicar un punto importante.
+
+131
+00:12:05,140 --> 00:12:16,980
+Incluso después de haber verificado que el circuito funciona, no desconectes esta lámpara durante los primeros arranques con el transformador elevador.
+
+132
+00:12:16,980 --> 00:12:27,780
+Porque la operación del interruptor sobre lámparas, sobre resistencia activa, es completamente diferente que cuando el interruptor trabaja sobre una carga reactiva.
+
+133
+00:12:28,380 --> 00:12:29,960
+Es decir, sobre una bobina.
+
+134
+00:12:31,840 --> 00:12:33,520
+Déjame mostrarte visualmente.
+
+135
+00:12:34,220 --> 00:12:35,120
+Aplico potencia.
+
+136
+00:12:37,240 --> 00:12:38,660
+Como pensábamos.
+
+137
+00:12:39,020 --> 00:12:43,920
+No necesitamos un núcleo grande para la potencia.
+
+138
+00:12:43,920 --> 00:12:45,200
+Nuestras cargas son pequeñas.
+
+139
+00:12:45,280 --> 00:12:48,560
+Carga de celular, alguna lámpara de baja potencia.
+
+140
+00:12:49,160 --> 00:12:50,940
+A 20 W.
+
+141
+00:12:51,700 --> 00:12:53,420
+Aplico potencia.
+
+142
+00:12:53,520 --> 00:12:55,780
+Aquí ves, la lámpara se encendió.
+
+143
+00:12:56,360 --> 00:12:56,800
+En la entrada.
+
+144
+00:12:57,080 --> 00:12:59,940
+Pero la carga apenas brilla.
+
+145
+00:13:00,820 --> 00:13:02,100
+¿Qué está pasando?
+
+146
+00:13:03,500 --> 00:13:06,420
+Aquí puedes cometer un error mayor.
+
+147
+00:13:06,880 --> 00:13:10,260
+Necesitas mirar las señales de lo que está pasando.
+
+148
+00:13:10,260 --> 00:13:14,140
+Primero, necesitas tocar el disipador y los interruptores.
+
+149
+00:13:15,000 --> 00:13:19,700
+Vas a ver que el disipador se calienta fuertemente.
+
+150
+00:13:19,980 --> 00:13:22,640
+Además el propio núcleo se calienta fuertemente.
+
+151
+00:13:23,360 --> 00:13:31,020
+Si no hubiera una lámpara limitadora aquí, este núcleo soltaría humo.
+
+152
+00:13:31,480 --> 00:13:33,620
+Y los interruptores podrían haber explotado.
+
+153
+00:13:33,620 --> 00:13:40,220
+Porque en esta situación, este núcleo entró en saturación.
+
+154
+00:13:40,820 --> 00:13:47,240
+La saturación es un modo de operación desagradable para el núcleo de ferrita.
+
+155
+00:13:47,740 --> 00:13:51,000
+Apagando porque ya se calentó fuertemente.
+
+156
+00:13:51,780 --> 00:13:57,120
+Un modo en el que el núcleo pierde la propiedad de remagnetizarse.
+
+157
+00:13:57,120 --> 00:14:06,780
+Como nuestro circuito no permite la regulación de la duración del pulso de control.
+
+158
+00:14:07,040 --> 00:14:11,420
+Que en realidad es la duración de la apertura del interruptor al trabajar sobre la carga.
+
+159
+00:14:11,780 --> 00:14:19,080
+Entonces no podemos elegir los parámetros óptimos para este núcleo ajustando la duración.
+
+160
+00:14:19,660 --> 00:14:25,780
+Incluso aumentar el conteo de espiras o cambiar la frecuencia de operación no va a llevar a nada.
+
+161
+00:14:26,620 --> 00:14:32,080
+Hay una salida: cambiar el núcleo del propio transformador elevador.
+
+162
+00:14:32,420 --> 00:14:35,100
+Hasta que el circuito arranque correctamente.
+
+163
+00:14:35,420 --> 00:14:41,500
+Para este circuito elegí ferrita, también de la marca 2000 como esta, pero puedes ver sus dimensiones.
+
+164
+00:14:41,580 --> 00:14:45,980
+Es ligeramente más grande por diámetro exterior, y más grande por dentro.
+
+165
+00:14:46,320 --> 00:14:53,560
+Pero lo principal a tener en cuenta no son los diámetros sino la sección transversal del núcleo.
+
+166
+00:14:53,560 --> 00:15:03,340
+Si este núcleo magnético tiene una sección de 9 por 9 mm, entonces este tiene una sección de 10 por 13 mm.
+
+167
+00:15:03,820 --> 00:15:11,640
+Y solo esa ferrita es el núcleo mínimo posible para que este circuito funcione correctamente.
+
+168
+00:15:12,640 --> 00:15:16,520
+También presta atención a otro punto importante.
+
+169
+00:15:17,560 --> 00:15:26,320
+Solo puedes verificar si tu núcleo es adecuado para este circuito con el bobinado secundario presente.
+
+170
+00:15:27,220 --> 00:15:34,720
+Si bobinas el bobinado primario sobre el núcleo sin el secundario, va a funcionar.
+
+171
+00:15:36,180 --> 00:15:40,120
+Y puede dar la impresión de que este núcleo es adecuado.
+
+172
+00:15:40,120 --> 00:15:44,700
+Pero apenas bobines el secundario sobre él, también va a entrar en saturación.
+
+173
+00:15:45,560 --> 00:15:54,060
+Así que tienes que verificar exclusivamente con al menos varias decenas de espiras del bobinado secundario sobre el núcleo.
+
+174
+00:15:55,600 --> 00:16:01,560
+Bien, instalé el transformador elevador con un núcleo magnético de mayor sección.
+
+175
+00:16:02,860 --> 00:16:04,700
+Y ahora lo vamos a probar.
+
+176
+00:16:04,700 --> 00:16:11,700
+Presta atención a cómo va a brillar esta carga ahora.
+
+177
+00:16:12,720 --> 00:16:20,140
+Y presta atención a cómo se va a calentar el filamento de la lámpara limitadora.
+
+178
+00:16:21,120 --> 00:16:30,580
+Si en aquel experimento conectamos y la carga apenas brillaba mientras la lámpara se encendía de inmediato, entonces mira en este caso.
+
+179
+00:16:31,500 --> 00:16:39,940
+Ves, la lámpara no se calienta de inmediato, y la carga brilla mucho más fuerte.
+
+180
+00:16:40,480 --> 00:16:43,060
+Esto confirma que el circuito ya arrancó.
+
+181
+00:16:43,220 --> 00:16:48,020
+Y puedes oír el transformador elevador funcionando.
+
+182
+00:16:48,920 --> 00:16:56,420
+Como necesitamos que el sistema trabaje inaudible, movemos su frecuencia al rango inaudible.
+
+183
+00:16:57,420 --> 00:16:58,420
+Aquí.
+
+184
+00:17:00,420 --> 00:17:03,380
+Y el sistema corre silencioso.
+
+185
+00:17:04,000 --> 00:17:10,740
+Ahora el consumo es 13 V, 0,9 A.
+
+186
+00:17:10,820 --> 00:17:19,320
+Y ahora ya podemos verificar cómo se comporta el sistema con una conexión directa.
+
+187
+00:17:20,720 --> 00:17:29,940
+Ves que la lámpara brilla a pleno brillo y el sistema funciona.
+
+188
+00:17:32,300 --> 00:17:40,180
+Ahora voy a mostrar un pequeño matiz que muchos no conocen.
+
+189
+00:17:41,180 --> 00:17:46,740
+Presta atención a este capacitor.
+
+190
+00:17:46,740 --> 00:17:49,760
+1 µF a 50 V, cerámico.
+
+191
+00:17:50,280 --> 00:17:56,400
+Que está en el pin 8, directamente al lado del propio chip.
+
+192
+00:17:57,680 --> 00:18:01,080
+En la placa está aquí.
+
+193
+00:18:01,980 --> 00:18:03,240
+Muy cerca.
+
+194
+00:18:04,040 --> 00:18:12,660
+Su presencia es obligatoria porque los capacitores cerámicos liberan carga más rápido que los electrolíticos.
+
+195
+00:18:12,660 --> 00:18:21,500
+Esto mejora el sistema de apertura de compuerta, es decir, satura la capacitancia de compuerta más rápido.
+
+196
+00:18:22,120 --> 00:18:27,080
+Y los drivers integrados en el chip pueden abrir los interruptores más bruscamente.
+
+197
+00:18:27,440 --> 00:18:33,460
+Como el interruptor abre más bruscamente, su tiempo de conmutación es mucho más corto.
+
+198
+00:18:33,960 --> 00:18:40,540
+Así que el calor liberado en el interruptor tiende al mínimo.
+
+199
+00:18:41,760 --> 00:18:46,700
+Ahora podemos verificar el circuito con una carga más seria.
+
+200
+00:18:46,760 --> 00:18:57,360
+En este caso voy a usar una carga de 60 W ya que mi fuente de laboratorio entrega 5 A como máximo.
+
+201
+00:18:58,700 --> 00:19:04,600
+Ahora voy a mostrar cómo afinar la salida para la carga con el conteo de espiras.
+
+202
+00:19:05,180 --> 00:19:09,840
+Pónlo en la entrada directamente y mira, la lámpara se encendió.
+
+203
+00:19:09,840 --> 00:19:16,040
+Ahora el consumo es 4 A a 13 V.
+
+204
+00:19:19,680 --> 00:19:29,700
+En este modo con una carga pequeña, deberías hacer correr el convertidor durante unos 20 minutos.
+
+205
+00:19:32,540 --> 00:19:37,320
+Para verificar el modo térmico de los interruptores.
+
+206
+00:19:38,170 --> 00:19:40,100
+Los interruptores no deberían calentarse fuertemente.
+
+207
+00:19:40,860 --> 00:19:46,520
+Con un disipador como este, prácticamente no debería haber calentamiento.
+
+208
+00:19:46,940 --> 00:19:53,460
+Quizás un poco por encima de la temperatura ambiente con tal carga.
+
+209
+00:19:54,060 --> 00:19:57,060
+Necesitas probar y observar el convertidor.
+
+210
+00:19:58,020 --> 00:20:06,740
+Después de este tiempo, si confirmaste que todo funciona, puedes pasar a cargas mayores.
+
+211
+00:20:08,120 --> 00:20:15,680
+Ahora también vamos a medir la tensión en la carga.
+
+212
+00:20:15,980 --> 00:20:18,540
+Para esto necesitamos un multímetro.
+
+213
+00:20:35,790 --> 00:20:42,390
+Bien, vemos que ahora tenemos 195 V en la carga.
+
+214
+00:20:46,150 --> 00:20:54,170
+Hay una caída, significa que tenemos 5 espiras por brazo ahora.
+
+215
+00:20:54,250 --> 00:20:59,790
+Si hay una caída, necesitamos reducir el conteo de espiras.
+
+216
+00:20:59,790 --> 00:21:05,890
+Vimos en la medición anterior que había una caída en la tensión de alimentación.
+
+217
+00:21:07,270 --> 00:21:12,370
+Entonces para subir la tensión en la lámpara, tenemos dos opciones.
+
+218
+00:21:12,450 --> 00:21:19,150
+O agregar espiras al bobinado secundario o reducir el conteo de espiras del primario.
+
+219
+00:21:19,470 --> 00:21:25,350
+Con el bobinado primario necesitas trabajar con cuidado, quitar una espira a la vez.
+
+220
+00:21:25,350 --> 00:21:28,890
+Tenía 5 espiras, ahora hice 4.
+
+221
+00:21:29,330 --> 00:21:31,110
+Y observa, aplico potencia.
+
+222
+00:21:33,950 --> 00:21:38,910
+Y vemos 230 V en la lámpara.
+
+223
+00:21:39,030 --> 00:21:40,970
+Solo quité una espira.
+
+224
+00:21:41,410 --> 00:21:51,850
+Ahora el consumo subió, nuestro convertidor alcanzó la potencia de carga de 60 W.
+
+225
+00:21:52,850 --> 00:21:55,430
+Aquí está el montaje con el que terminé.
+
+226
+00:21:56,570 --> 00:22:04,570
+El transformador elevador está montado con un tornillo al disipador a través de una junta de cartón.
+
+227
+00:22:05,450 --> 00:22:08,770
+Me detuve en 5,5 espiras para el primario.
+
+228
+00:22:08,910 --> 00:22:12,070
+Aquí está, el cable blanco.
+
+229
+00:22:13,990 --> 00:22:19,410
+Instalé un puente de diodos común, 4 diodos y capacitor de reserva.
+
+230
+00:22:19,410 --> 00:22:27,030
+También una resistencia de descarga de 820 kΩ a 1 W.
+
+231
+00:22:29,050 --> 00:22:34,930
+Es por seguridad, para que estos capacitores se descarguen después de un tiempo.
+
+232
+00:22:36,370 --> 00:22:39,770
+Todo el montaje se hace por montaje colgante.
+
+233
+00:22:41,130 --> 00:22:46,650
+Puedes ver el cableado de las pistas, la construcción más simple sin grabado de PCB.
+
+234
+00:22:50,350 --> 00:22:54,310
+Ahora vamos a afinar el circuito primero.
+
+235
+00:22:55,150 --> 00:22:58,750
+Elegir el modo óptimo con un potenciómetro de ajuste.
+
+236
+00:22:58,970 --> 00:23:00,230
+Te voy a mostrar cómo se hace esto.
+
+237
+00:23:00,830 --> 00:23:05,490
+Y luego pasamos a las pruebas completas bajo carga.
+
+238
+00:23:07,450 --> 00:23:15,690
+Para afinar el sistema por frecuencia que corresponda óptimamente a este núcleo, necesitamos una carga.
+
+239
+00:23:16,330 --> 00:23:19,430
+Una lámpara de 40 voltios.
+
+240
+00:23:19,930 --> 00:23:26,330
+O un multímetro conectado a la salida, muestra directamente el potencial en la lámpara.
+
+241
+00:23:26,630 --> 00:23:28,750
+Bueno, o una fuente de alimentación.
+
+242
+00:23:29,830 --> 00:23:38,570
+Para quien no la tenga, puedes tomar una batería bien cargada y un amperímetro.
+
+243
+00:23:38,650 --> 00:23:41,470
+Nos interesa la lectura del amperímetro.
+
+244
+00:23:41,470 --> 00:23:52,550
+El punto del ajuste es que vamos a observar la tensión en la lámpara y encontrar el consumo mínimo al que se mantiene esa tensión.
+
+245
+00:23:53,410 --> 00:24:00,410
+Antes del experimento, cambia el cursor del potenciómetro al modo de frecuencia mínima.
+
+246
+00:24:00,570 --> 00:24:02,170
+Eso son unos 12 kHz.
+
+247
+00:24:03,310 --> 00:24:06,770
+Vas a oír el transformador funcionando.
+
+248
+00:24:07,750 --> 00:24:09,590
+Bien, aplico potencia.
+
+249
+00:24:13,270 --> 00:24:14,770
+Aquí está el consumo.
+
+250
+00:24:16,090 --> 00:24:20,770
+2,86 A a 13,9 V.
+
+251
+00:24:20,930 --> 00:24:22,890
+Y la tensión en la lámpara es 220 V.
+
+252
+00:24:23,070 --> 00:24:28,550
+Ahora voy a mover la lámpara ligeramente al costado para que no brille en el lente.
+
+253
+00:24:28,550 --> 00:24:40,870
+El transformador elevador está chirriando ligeramente, y empiezo a rotar lentamente el potenciómetro de ajuste.
+
+254
+00:24:43,390 --> 00:24:46,310
+Observando corriente y tensión.
+
+255
+00:24:50,840 --> 00:24:56,640
+La corriente, ves, empieza a caer, y la tensión se mantiene.
+
+256
+00:24:59,840 --> 00:25:06,840
+Hay un punto, 221 V, consumo 2,8 A.
+
+257
+00:25:09,640 --> 00:25:14,680
+Más adelante, con aumento de frecuencia, el consumo crece.
+
+258
+00:25:14,800 --> 00:25:23,920
+Retrocede y encuentra el punto de consumo mínimo.
+
+259
+00:25:23,920 --> 00:25:30,440
+Eso son 2,8 A y tensión en la lámpara 221 V.
+
+260
+00:25:31,720 --> 00:25:32,880
+Siguiente acción.
+
+261
+00:25:33,200 --> 00:25:45,480
+Desuelda la resistencia, mídela y elige una resistencia de trabajo estacionaria para reemplazarla que va a ir en la placa.
+
+262
+00:25:46,460 --> 00:25:50,920
+Esta va en lugar de la de 10 kΩ.
+
+263
+00:25:52,240 --> 00:25:55,920
+Desoldé la resistencia, aquí está, ahora la medimos.
+
+264
+00:25:58,440 --> 00:26:06,600
+Bien, vemos que la resistencia es 3,2 kΩ.
+
+265
+00:26:07,660 --> 00:26:13,200
+Y encontré esta resistencia para mí, la más cercana a ese valor.
+
+266
+00:26:20,050 --> 00:26:24,670
+Su resistencia es 3,28 kΩ.
+
+267
+00:26:25,550 --> 00:26:26,930
+Lo cual sirve bien.
+
+268
+00:26:27,950 --> 00:26:32,330
+También puedes usar estos potenciómetros de ajuste.
+
+269
+00:26:33,690 --> 00:26:37,430
+Puedes comprarlos de 10 kΩ e instalarlos directamente en la placa.
+
+270
+00:26:37,590 --> 00:26:41,210
+Es multivuelta y puedes fijar el punto de operación.
+
+271
+00:26:41,750 --> 00:26:50,670
+Pero como este dispositivo se va a usar en la ruta, decidí usar este tipo de resistencia.
+
+272
+00:26:51,380 --> 00:26:54,090
+Bien, instalé la resistencia en la placa.
+
+273
+00:26:55,130 --> 00:26:57,290
+Ahora podemos verificar el consumo.
+
+274
+00:26:57,670 --> 00:26:59,130
+Aplico potencia.
+
+275
+00:27:00,110 --> 00:27:02,450
+Ves, 221 V.
+
+276
+00:27:03,510 --> 00:27:08,850
+Y consumo de 2,8 A.
+
+277
+00:27:09,170 --> 00:27:11,190
+Eso nos sirve totalmente.
+
+278
+00:27:13,310 --> 00:27:16,730
+Bien, ahora, a las pruebas.
+
+279
+00:27:16,730 --> 00:27:27,870
+Creo que había planeado probar esta placa operando en el rango de 120-150 W.
+
+280
+00:27:28,010 --> 00:27:35,730
+Porque el cargador de mi laptop consume un máximo de 120 W.
+
+281
+00:27:37,590 --> 00:27:42,810
+Y siempre la voy a operar en el rango de hasta 50 W.
+
+282
+00:27:42,810 --> 00:27:45,550
+Así que organicemos una verificación para ella.
+
+283
+00:27:46,170 --> 00:27:47,850
+A 200 W.
+
+284
+00:27:48,130 --> 00:27:52,570
+Creo que un circuito tan pequeño va a tirar con esto.
+
+285
+00:27:53,990 --> 00:28:00,790
+200 W va a ser el consumo a 12 V de alimentación.
+
+286
+00:28:01,350 --> 00:28:03,110
+Lo más probable son unos 15 A.
+
+287
+00:28:04,030 --> 00:28:06,470
+Esta fuente de alimentación no va a tirar con eso.
+
+288
+00:28:06,870 --> 00:28:12,170
+Así que voy a sacar un cargador de batería de auto.
+
+289
+00:28:12,810 --> 00:28:16,350
+Pasando a una prueba con una lámpara de 200 W.
+
+290
+00:28:17,330 --> 00:28:21,590
+Mientras me preparaba y verificaba, ocurrió un pequeño accidente.
+
+291
+00:28:22,830 --> 00:28:28,410
+Estos diodos EFR207 en el puente de diodos no aguantaron.
+
+292
+00:28:29,050 --> 00:28:34,430
+A 150 W funcionaba genial, pero la lámpara de 200 W no soportó.
+
+293
+00:28:34,430 --> 00:28:47,270
+Aunque a 230 V en una lámpara de 200 W la corriente a través de ella es 0,87 A.
+
+294
+00:28:47,830 --> 00:28:53,470
+Y esta corriente dividida en 4 diodos, deberían manejarla normalmente.
+
+295
+00:28:53,610 --> 00:28:55,570
+Pero uno de ellos no sobrevivió.
+
+296
+00:28:56,230 --> 00:28:58,450
+Además, falló de manera interesante.
+
+297
+00:29:00,110 --> 00:29:02,030
+El multímetro muestra que está intacto.
+
+298
+00:29:02,030 --> 00:29:09,930
+Y cuando haces una prueba de conductividad a unos 100 V, empieza a romperse.
+
+299
+00:29:10,390 --> 00:29:15,370
+O me tocó uno defectuoso, o realmente no pudo soportar.
+
+300
+00:29:15,510 --> 00:29:19,470
+Pero de todas formas, los reemplacé por diodos HER508.
+
+301
+00:29:19,830 --> 00:29:21,990
+Esto también se va a reflejar en el esquema.
+
+302
+00:29:23,990 --> 00:29:24,850
+Arranque.
+
+303
+00:29:26,070 --> 00:29:27,770
+Lámpara de 200 W.
+
+304
+00:29:28,990 --> 00:29:32,490
+Recomiendo fuentes de alimentación así.
+
+305
+00:29:32,930 --> 00:29:34,670
+Es decir, un cargador.
+
+306
+00:29:34,970 --> 00:29:37,070
+También puedes usarlo como fuente de alimentación.
+
+307
+00:29:37,690 --> 00:29:41,470
+Ajusta la corriente de carga de la batería.
+
+308
+00:29:41,610 --> 00:29:43,890
+Pero también funciona para nuestros propósitos.
+
+309
+00:29:45,670 --> 00:29:46,190
+Arranque.
+
+310
+00:29:46,970 --> 00:29:51,630
+Ves 222 V en la lámpara.
+
+311
+00:29:52,270 --> 00:29:55,410
+Consumo ligeramente menos de 15 A.
+
+312
+00:29:56,170 --> 00:30:01,530
+Hay algo de caída en la lámpara de 200 W.
+
+313
+00:30:03,070 --> 00:30:06,090
+Puedes reducir una espira.
+
+314
+00:30:06,170 --> 00:30:08,050
+Entonces obtendríamos 230 V nominales.
+
+315
+00:30:08,150 --> 00:30:11,110
+O agregar unas espiras más al secundario.
+
+316
+00:30:11,650 --> 00:30:19,370
+Pero no voy a necesitar operarla a esta potencia.
+
+317
+00:30:20,370 --> 00:30:30,050
+Así que esto ya es una prueba con sobrecarga.
+
+318
+00:30:33,990 --> 00:30:42,790
+En un viaje o en condiciones de campo, sacar 15 A de una batería la va a drenar rápido.
+
+319
+00:30:42,790 --> 00:30:50,910
+Y además, hoy en día hay lámparas LED.
+
+320
+00:30:51,210 --> 00:30:52,470
+[Las incandescentes] no tienen sentido.
+
+321
+00:30:52,830 --> 00:30:55,770
+Porque liberan mucho calor.
+
+322
+00:30:56,010 --> 00:30:56,690
+Comen mucho.
+
+323
+00:30:57,470 --> 00:30:58,170
+Luz, sí.
+
+324
+00:31:00,870 --> 00:31:04,950
+Pero el resto no nos interesa.
+
+325
+00:31:05,130 --> 00:31:07,610
+Así que funciona mejor.
+
+326
+00:31:08,610 --> 00:31:13,510
+Déjame mostrar cómo se ve este sistema con una lámpara LED.
+
+327
+00:31:13,710 --> 00:31:15,750
+Consume solo 11 W.
+
+328
+00:31:16,430 --> 00:31:22,330
+Y brilla varias veces más fuerte que esta lámpara de 15 W.
+
+329
+00:31:22,670 --> 00:31:25,790
+Decenas de veces, no hay comparación.
+
+330
+00:31:26,410 --> 00:31:29,770
+Ves que el circuito funciona con la lámpara.
+
+331
+00:31:30,030 --> 00:31:31,010
+La lámpara brilla.
+
+332
+00:31:32,550 --> 00:31:38,790
+La fuente de alimentación del cargador está a tope con 15 A.
+
+333
+00:31:41,610 --> 00:31:43,850
+¿Y el disipador?
+
+334
+00:31:43,990 --> 00:31:47,330
+El disipador, diría unos 60 grados.
+
+335
+00:31:48,950 --> 00:31:51,470
+Los dedos empiezan a quemar.
+
+336
+00:31:52,750 --> 00:31:58,070
+Así que sí, 200 W es carga pesada para este convertidor.
+
+337
+00:31:58,150 --> 00:31:59,450
+Pero aun así funciona.
+
+338
+00:31:59,450 --> 00:32:02,490
+Y además, funciona sin refrigeración forzada.
+
+339
+00:32:03,410 --> 00:32:08,250
+Así que hasta 150 W está en un rango de temperatura aceptable.
+
+340
+00:32:08,550 --> 00:32:10,710
+Puede funcionar sin ventilador.
+
+341
+00:32:10,790 --> 00:32:17,850
+Y operación a 50 W u 80 W.
+
+342
+00:32:18,010 --> 00:32:21,130
+Absolutamente no necesita flujo de aire adicional.
+
+343
+00:32:27,790 --> 00:32:29,490
+Una cosa DIY así.
+
+344
+00:32:29,490 --> 00:32:34,130
+Un convertidor flojo, básicamente.
+
+345
+00:32:35,830 --> 00:32:38,090
+A quien le haya gustado, repítelo.
+
+346
+00:32:47,860 --> 00:32:48,700
+Apaga.
+
+347
+00:32:50,840 --> 00:32:55,200
+Ahora voy a mostrar cómo funciona la lámpara con este convertidor.
+
+348
+00:32:55,500 --> 00:32:56,400
+LED.
+
+349
+00:32:57,480 --> 00:33:00,760
+Su consumo está marcado aquí.
+
+350
+00:33:01,280 --> 00:33:02,360
+11 W.
+
+351
+00:33:03,960 --> 00:33:09,560
+Y compara su brillo con una lámpara incandescente de 15 W.
+
+352
+00:33:10,940 --> 00:33:13,760
+Aplico potencia a la entrada.
+
+353
+00:33:15,720 --> 00:33:18,800
+Mira cómo brilla esta lámpara.
+
+354
+00:33:19,860 --> 00:33:21,180
+Un torrente de luz.
+
+355
+00:33:21,980 --> 00:33:24,580
+En condiciones de campo esto es de sobra.
+
+356
+00:33:24,680 --> 00:33:26,740
+Y aquí está el consumo.
+
+357
+00:33:27,740 --> 00:33:31,760
+Tenemos 13,1 V.
+
+358
+00:33:31,860 --> 00:33:39,340
+Multiplica por 0,72 A.
+
+359
+00:33:40,940 --> 00:33:44,900
+Obtenemos 9,5 W.
+
+360
+00:33:45,880 --> 00:33:59,320
+Además, el propio chip tiene protección contra caída de tensión de alimentación para que los interruptores trabajen en el rango óptimo.
+
+361
+00:34:00,100 --> 00:34:05,540
+Entonces si bajamos la tensión, digamos que la batería se está descargando.
+
+362
+00:34:07,680 --> 00:34:11,780
+10,6 V, la lámpara brilla.
+
+363
+00:34:15,380 --> 00:34:20,240
+Umbral 8,4 V.
+
+364
+00:34:20,240 --> 00:34:22,440
+La lámpara todavía brilla.
+
+365
+00:34:23,980 --> 00:34:26,580
+Pero la batería nunca se descarga a ese nivel para nosotros.
+
+366
+00:34:27,360 --> 00:34:28,480
+Eso ya sería desastre.
+
+367
+00:34:28,740 --> 00:34:31,560
+8,3 V.
+
+368
+00:34:32,920 --> 00:34:37,280
+El arranque ocurre alrededor de 9 V.
+
+369
+00:34:39,180 --> 00:34:47,520
+Y ahora compara con una prueba de incandescente de 15 W.
+
+370
+00:34:48,520 --> 00:34:49,560
+Conecto.
+
+371
+00:34:52,180 --> 00:34:57,660
+Y no hay comparación, naturalmente.
+
+372
+00:34:57,900 --> 00:35:05,640
+Así que no tiene sentido en condiciones de campo usar estos convertidores para lámparas incandescentes.
+
+373
+00:35:06,540 --> 00:35:09,180
+Ahora el consumo de dos lámparas.
+
+374
+00:35:11,460 --> 00:35:16,400
+12,8 V.
+
+375
+00:35:16,400 --> 00:35:21,020
+1,74 A.
+
+376
+00:35:23,980 --> 00:35:28,260
+Unos 22,3 W.
+
+377
+00:35:31,580 --> 00:35:35,900
+Así que recomiendo usar lámparas LED.
+
+378
+00:35:37,720 --> 00:35:39,600
+Siguiente parte del video.
+
+379
+00:35:40,060 --> 00:35:41,480
+Una breve continuación.
+
+380
+00:35:41,600 --> 00:35:45,940
+Lo más probable es que no le interese a los experimentados en estos asuntos.
+
+381
+00:35:46,760 --> 00:35:49,620
+Voy a dar algunos consejos a principiantes.
+
+382
+00:35:50,260 --> 00:35:56,480
+Qué herramientas se necesitan para hacer este DIY flojo.
+
+383
+00:35:58,880 --> 00:36:01,760
+Ahora otro momento, mide.
+
+384
+00:36:01,760 --> 00:36:06,520
+Cuánto consume sin carga.
+
+385
+00:36:07,580 --> 00:36:09,240
+Desconecto esta lámpara.
+
+386
+00:36:09,680 --> 00:36:12,120
+Desconecto esto.
+
+387
+00:36:15,380 --> 00:36:17,320
+Y mira.
+
+388
+00:36:21,360 --> 00:36:23,360
+Ahora multiplica.
+
+389
+00:36:28,060 --> 00:36:32,700
+12,8 por 0,07.
+
+390
+00:36:38,100 --> 00:36:39,880
+¿Qué tenemos?
+
+391
+00:36:41,340 --> 00:36:44,680
+0,9 W en vacío.
+
+392
+00:36:46,740 --> 00:36:51,240
+La verdad bastante bueno.
+
+393
+00:36:51,520 --> 00:36:55,500
+Para este tipo de cosa, sin ninguna estabilización.
+
+394
+00:36:56,960 --> 00:37:05,020
+Un kit mínimo de caballero para un radioaficionado principiante.
+
+395
+00:37:06,100 --> 00:37:10,520
+Que quiera replicar este convertidor.
+
+396
+00:37:12,240 --> 00:37:15,240
+Correspondientemente, necesitamos un destornillador o taladro.
+
+397
+00:37:16,760 --> 00:37:23,760
+Porque necesitamos perforar agujeros para los pernos de sujeción.
+
+398
+00:37:23,760 --> 00:37:28,940
+Sujeción de la propia placa y los transistores.
+
+399
+00:37:29,260 --> 00:37:34,080
+Y yo sujeté el transformador elevador con un perno.
+
+400
+00:37:35,560 --> 00:37:37,700
+Eso es lo primero.
+
+401
+00:37:38,580 --> 00:37:40,540
+¿Qué brocas vamos a necesitar?
+
+402
+00:37:42,000 --> 00:37:48,920
+Vamos a necesitar una broca de 3,2 mm.
+
+403
+00:37:48,920 --> 00:37:59,300
+Para que estos pernos con tamaño externo de 3 mm pasen.
+
+404
+00:38:00,320 --> 00:38:14,660
+Y también vamos a necesitar una broca de 2,6 mm.
+
+405
+00:38:18,480 --> 00:38:22,580
+Puedes comprar 2,5 mm en las tiendas.
+
+406
+00:38:24,280 --> 00:38:31,040
+Bien, perforamos un agujero en el disipador.
+
+407
+00:38:31,560 --> 00:38:39,700
+Y podríamos, con el macho de roscar (la rosca M3), cortar una rosca ahí.
+
+408
+00:38:40,200 --> 00:38:42,120
+Cortar la rosca con cuidado.
+
+409
+00:38:42,120 --> 00:38:46,520
+Si es aluminio, el metal es viscoso y se puede romper fácilmente el macho de roscar.
+
+410
+00:38:46,720 --> 00:38:52,380
+Así que sugiero engrasarlo con algún lubricante al roscar.
+
+411
+00:38:52,840 --> 00:38:55,900
+Lo más simple es usar WD-40.
+
+412
+00:38:59,380 --> 00:39:02,760
+Dos brocas y el macho de roscar, no lo olvides.
+
+413
+00:39:02,760 --> 00:39:13,240
+Agrega pinzas, muy útiles para soldar piezas pequeñas.
+
+414
+00:39:14,460 --> 00:39:20,620
+Herramientas de corte, alicates de corte y pequeños alicates de punta redonda.
+
+415
+00:39:22,580 --> 00:39:30,140
+El cable que usé para el bobinado primario de 5,5 espiras.
+
+416
+00:39:31,140 --> 00:39:45,300
+Monohilo, su núcleo es 1,1 mm.
+
+417
+00:39:45,820 --> 00:39:53,540
+Y mide 1,8 mm con aislamiento por fuera.
+
+418
+00:39:53,540 --> 00:40:00,320
+El cable con el que bobiné el secundario del elevador, este rojo.
+
+419
+00:40:02,360 --> 00:40:04,540
+Ahora midámoslo también.
+
+420
+00:40:07,760 --> 00:40:22,760
+Núcleo de 0,7 mm y 1,4 mm con aislamiento.
+
+421
+00:40:27,980 --> 00:40:35,320
+Cuando se bobina en este núcleo, así se coloca.
+
+422
+00:40:35,920 --> 00:40:42,880
+Primera capa espira a espira, sin huecos en toda la circunferencia.
+
+423
+00:40:42,980 --> 00:40:46,160
+Luego la segunda capa también desde adentro, espira a espira.
+
+424
+00:40:46,280 --> 00:40:50,320
+Y la tercera capa se coloca con este cable espira a espira.
+
+425
+00:40:50,320 --> 00:40:52,520
+Así que se bobina en tres capas.
+
+426
+00:40:52,600 --> 00:41:01,200
+Y eso fue suficiente en este núcleo para que obtengamos 220 V en la lámpara bajo carga.
+
+427
+00:41:03,060 --> 00:41:07,100
+Ajustas la tensión individualmente con el conteo de espiras.
+
+428
+00:41:07,360 --> 00:41:10,460
+Si el cable es ligeramente diferente, no hay problema.
+
+429
+00:41:11,320 --> 00:41:27,400
+Además de comprar las piezas radio según la lista de este esquema, no olvides conseguir obligatoriamente pasta térmica KPT.
+
+430
+00:41:27,560 --> 00:41:31,520
+La mía es pasta térmica KPT-19 que no se seca.
+
+431
+00:41:32,480 --> 00:41:40,200
+Y si puedes encontrar pads aislantes de mica para transistores, aunque son raros ahora.
+
+432
+00:41:41,000 --> 00:41:46,500
+La mayoría de las veces puedes encontrar este material que tiene polietileno encima.
+
+433
+00:41:47,520 --> 00:41:49,640
+Protege del polvo.
+
+434
+00:41:50,700 --> 00:41:57,860
+Este es un material conductor térmico, siendo aislante.
+
+435
+00:41:58,000 --> 00:42:03,860
+Porque no puedes montar los transistores directamente sobre el disipador.
+
+436
+00:42:03,860 --> 00:42:14,480
+Porque este terminal, donde se sujeta el perno, está conectado a la corriente.
+
+437
+00:42:14,820 --> 00:42:19,660
+Y si lo sujetas directo al metal, va a haber un cortocircuito.
+
+438
+00:42:19,660 --> 00:42:22,080
+Así que la junta es obligatoria.
+
+439
+00:42:22,640 --> 00:42:34,380
+La junta se coloca al menos 3 mm más allá de este contacto, la superficie de refrigeración.
+
+440
+00:42:35,820 --> 00:42:43,460
+Untada con pasta térmica, y el transistor se instala sobre este sustrato.
+
+441
+00:42:43,460 --> 00:42:49,120
+Y hay otra cosita que podrías olvidar.
+
+442
+00:42:49,760 --> 00:42:56,680
+Estas arandelas aislantes de plástico.
+
+443
+00:42:56,720 --> 00:43:06,380
+Van en el tornillo que sujeta el transistor al disipador.
+
+444
+00:43:07,380 --> 00:43:14,580
+Y cuando está en su lugar, la junta se asienta en el ojo del transistor.
+
+445
+00:43:15,860 --> 00:43:27,980
+Y previene el contacto entre el perno de sujeción y el terminal metálico del transistor.
+
+446
+00:43:28,980 --> 00:43:37,000
+También una cosa crítica, porque si solo lo atornillas, va a haber un cortocircuito.
+
+447
+00:43:38,780 --> 00:43:40,800
+Y básicamente eso es todo.
+
+448
+00:43:41,240 --> 00:43:44,980
+Soldador y estaño.
+
+449
+00:43:46,500 --> 00:43:57,440
+Si no tienes experiencia, podrías necesitar como un día con descansos para hacer esta cosa.
+
+450
+00:43:57,440 --> 00:44:01,340
+A mí me llevó un día.
+
+451
+00:44:02,820 --> 00:44:09,400
+Literalmente 5-6 horas para bobinar, armar y afinar.
+
+452
+00:44:10,340 --> 00:44:12,360
+Ahora sobre el montaje.
+
+453
+00:44:13,700 --> 00:44:18,240
+Hay algunas reglas útiles para principiantes.
+
+454
+00:44:19,380 --> 00:44:23,180
+Esto es montaje de electrónica de potencia.
+
+455
+00:44:24,180 --> 00:44:31,860
+Los terminales que van del chip a través de la resistencia hasta los transistores deben tener la longitud más corta posible.
+
+456
+00:44:32,120 --> 00:44:36,740
+En general todo lo que controla los transistores debe ser lo más corto posible.
+
+457
+00:44:36,880 --> 00:44:42,660
+Es decir, el chip está ubicado lo más cerca posible de los interruptores de potencia.
+
+458
+00:44:44,480 --> 00:44:53,700
+De esta manera reduces captaciones, oscilaciones parásitas y otros fenómenos negativos que pueden aparecer durante la operación del convertidor.
+
+459
+00:44:55,360 --> 00:44:58,660
+Ya expliqué por qué este capacitor es necesario.
+
+460
+00:44:59,880 --> 00:45:01,520
+Pónlo obligatoriamente.
+
+461
+00:45:02,060 --> 00:45:05,080
+Este es un capacitor cerámico.
+
+462
+00:45:06,660 --> 00:45:12,560
+Capacitores cerámicos a 50 V, como estos, de color amarillo.
+
+463
+00:45:12,920 --> 00:45:17,940
+Y trabaja con densidad de montaje lo más apretada posible.
+
+464
+00:45:17,940 --> 00:45:21,220
+Para que no tengamos grandes distancias entre piezas.
+
+465
+00:45:21,680 --> 00:45:25,280
+Están prácticamente todas una al lado de la otra.
+
+466
+00:45:28,300 --> 00:45:31,440
+El puente de diodos, no importa cómo lo hagas.
+
+467
+00:45:32,540 --> 00:45:33,860
+Capacitor de reserva.
+
+468
+00:45:34,060 --> 00:45:36,720
+Y no olvides poner esta resistencia.
+
+469
+00:45:38,300 --> 00:45:46,940
+Porque la carga residual en los capacitores, si no se descarga, puedes recibir un golpe, y va a ser muy desagradable.
+
+470
+00:45:48,680 --> 00:45:53,460
+Después de esta cosa la tensión puede ser alta, y aquí es residual.
+
+471
+00:45:54,820 --> 00:45:58,840
+No prestes atención a estos terminales, esas son mis derivaciones más adelante.
+
+472
+00:45:59,580 --> 00:46:03,440
+Aquí 70 V y aquí 135 V.
+
+473
+00:46:03,740 --> 00:46:06,040
+Respecto al inicio del cable.
+
+474
+00:46:07,380 --> 00:46:18,560
+Y si operas hasta 50 W, puedes ponerlo totalmente en alguna caja, incluso sin dejar agujeros de refrigeración.
+
+475
+00:46:19,300 --> 00:46:25,920
+Si más de 50 W, puedes posicionar el disipador para que sobresalga de la caja para refrigeración.
+
+476
+00:46:27,060 --> 00:46:34,420
+Las dimensiones del disipador son 6 cm de largo.
+
+477
+00:46:37,820 --> 00:46:42,020
+Ancho prácticamente 3,5 cm.
+
+478
+00:46:42,900 --> 00:46:51,900
+Y esta dimensión es 1,7 cm.
+
+479
+00:46:52,560 --> 00:47:03,880
+Cuando elijas un disipador, esta parte debe ser lo más gruesa posible respecto a estas aletas de refrigeración.
+
+480
+00:47:04,660 --> 00:47:07,560
+Y básicamente eso es todo, nada complicado aquí.
+
+481
+00:47:07,700 --> 00:47:10,780
+Puedes afinarlo todo sin instrumentos.
+
+482
+00:47:11,740 --> 00:47:15,820
+Ya mostré cómo hacer eso, y esta cosa arranca de inmediato.
+
+483
+00:47:17,260 --> 00:47:22,320
+Una pequeña desventaja es que este circuito es de lazo abierto.
+
+484
+00:47:22,320 --> 00:47:28,620
+Si lo dejas sin carga, puede acumularse un potencial alto aquí.
+
+485
+00:47:29,300 --> 00:47:33,900
+Significativamente por encima de 350 V.
+
+486
+00:47:35,200 --> 00:47:38,820
+Tomé un capacitor de 450 V, eso es suficiente.
+
+487
+00:47:40,780 --> 00:47:45,020
+Pero voy a juguetear un poco más con este circuito.
+
+488
+00:47:46,260 --> 00:47:49,080
+Voy a presentar este circuito, luego mostrar cómo funciona.
+
+489
+00:47:50,040 --> 00:47:53,840
+Este chip tiene una propiedad maravillosa.
+
+490
+00:47:53,980 --> 00:48:03,840
+Si aplicas cero lógico al pin 3, simplemente aplica menos de la fuente de alimentación, detiene la generación.
+
+491
+00:48:04,000 --> 00:48:10,120
+Creo que con este principio puedes hacer realimentación por tensión.
+
+492
+00:48:10,120 --> 00:48:17,360
+Por ejemplo, para mantener 330 V CC a la salida.
+
+493
+00:48:17,780 --> 00:48:23,340
+El capacitor alcanza 330 V y el chip detiene la generación.
+
+494
+00:48:24,520 --> 00:48:28,600
+Voy a hacer algo simple, luego voy a compartir el esquema.
+
+495
+00:48:29,700 --> 00:48:38,980
+Marcando aquí, antes de imprimir este esquema, enviándolo a mi Yandex.Disk.
+
+496
+00:48:38,980 --> 00:48:43,540
+Voy a marcar también los diodos HER508.
+
+497
+00:48:44,200 --> 00:48:45,580
+Y básicamente eso es todo.

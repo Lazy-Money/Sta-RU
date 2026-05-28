@@ -1,0 +1,1399 @@
+1
+00:00:00,750 --> 00:00:02,210
+Hola a todos.
+
+2
+00:00:03,170 --> 00:00:10,210
+Hoy veremos un circuito bastante conocido e interesante llamado Kacher.
+
+3
+00:00:12,370 --> 00:00:26,890
+Este circuito es un autooscilador construido sobre un solo transistor con realimentación que va directamente desde el extremo frío de la bobina de alta tensión a la base de ese transistor.
+
+4
+00:00:27,530 --> 00:00:29,250
+¿Por qué necesitamos este circuito?
+
+5
+00:00:29,910 --> 00:00:41,110
+Este circuito nos ayudará a responder la pregunta de a qué frecuencia sintonizar la bobina Tesla, en relación con nuestro resonador en la granada.
+
+6
+00:00:43,130 --> 00:00:45,930
+Esta es una pregunta que los suscriptores hacen seguido.
+
+7
+00:00:47,170 --> 00:00:51,250
+Así que construiremos este circuito con este transistor.
+
+8
+00:00:51,330 --> 00:00:52,830
+Creo que todos tienen uno.
+
+9
+00:00:53,870 --> 00:00:54,490
+2SC5200.
+
+10
+00:00:56,550 --> 00:01:01,450
+Vamos con él porque está ampliamente disponible y es fácil de comprar.
+
+11
+00:01:02,870 --> 00:01:06,330
+Y veremos cómo corre este sistema.
+
+12
+00:01:06,750 --> 00:01:12,670
+Lo que sabemos y lo que aún no sabemos sobre la sintonía de estos sistemas.
+
+13
+00:01:13,590 --> 00:01:14,910
+Recorriendo nuestro circuito.
+
+14
+00:01:15,450 --> 00:01:20,490
+En la entrada de potencia tenemos una alimentación DC más-menos.
+
+15
+00:01:21,810 --> 00:01:27,410
+La potencia llega de inmediato al primer capacitor de filtro.
+
+16
+00:01:29,490 --> 00:01:33,110
+Ese capacitor es de 100 nF, 275 V.
+
+17
+00:01:33,470 --> 00:01:37,950
+Luego llega a un filtro de línea de modo común.
+
+18
+00:01:38,650 --> 00:01:44,970
+Está diseñado específicamente para que la DC pase directamente a través de la capacitancia del filtro.
+
+19
+00:01:44,970 --> 00:01:49,890
+Sin impedimento, cualquier componente AC se suprime.
+
+20
+00:01:50,510 --> 00:01:55,950
+Después de eso, la salida llega a otro capacitor de filtro.
+
+21
+00:01:56,350 --> 00:01:58,870
+También 100 nF, 275 V.
+
+22
+00:02:00,110 --> 00:02:05,970
+Y luego la potencia llega al capacitor de reserva principal.
+
+23
+00:02:06,310 --> 00:02:07,910
+Un capacitor electrolítico.
+
+24
+00:02:08,670 --> 00:02:11,510
+Su capacitancia es 47 µF a 400 V.
+
+25
+00:02:12,050 --> 00:02:27,410
+La tensión nominal de este capacitor debe ser no menor a 400 V, porque puede aparecer potencial de alta tensión en el sistema, para que el capacitor no explote ni se perfore por un acoplamiento de alta tensión.
+
+26
+00:02:27,410 --> 00:02:29,590
+De un acoplamiento de alta tensión.
+
+27
+00:02:30,650 --> 00:02:37,990
+Luego en paralelo con él, se instala un capacitor que también tiene requisitos especiales.
+
+28
+00:02:38,370 --> 00:02:40,150
+También no menos de 400 V.
+
+29
+00:02:41,250 --> 00:02:44,090
+La capacitancia en este caso es 155 nF.
+
+30
+00:02:45,970 --> 00:02:47,990
+Los requisitos son estos.
+
+31
+00:02:48,170 --> 00:02:52,290
+Tiene que ser un capacitor de película, apto para alta frecuencia.
+
+32
+00:02:52,370 --> 00:02:55,450
+El tipo CBB81 funciona.
+
+33
+00:02:56,770 --> 00:03:07,670
+Se necesita para formar un pulso agudo que aparecerá en el colector del transistor.
+
+34
+00:03:09,090 --> 00:03:15,090
+Ese pulso luego va al inductor de la bobina Tesla de alta tensión.
+
+35
+00:03:17,050 --> 00:03:29,530
+El sistema está construido con el transistor más dos resistencias que forman un divisor de tensión.
+
+36
+00:03:30,470 --> 00:03:40,870
+Una resistencia conecta directamente entre menos de alimentación y la base del transistor, la otra entre más de alimentación y la base.
+
+37
+00:03:41,390 --> 00:03:49,090
+Se forma un divisor de tensión que crea un punto de polarización en la base del transistor.
+
+38
+00:03:49,850 --> 00:04:04,450
+Pero lo que no puedes olvidar aquí es que no son solo las dos resistencias las que trabajan, también está la resistencia formada por la unión base-emisor dentro del semiconductor del transistor.
+
+39
+00:04:05,670 --> 00:04:09,410
+Así que obtenemos un divisor más complejo a menos.
+
+40
+00:04:09,630 --> 00:04:12,250
+Tres resistencias en juego.
+
+41
+00:04:13,070 --> 00:04:19,670
+En este caso, la resistencia base-emisor es 2,7 kΩ.
+
+42
+00:04:20,010 --> 00:04:26,710
+La resistencia entre más de alimentación y la base es 3,3 kΩ.
+
+43
+00:04:27,430 --> 00:04:32,350
+Valores probados de 1 a 10 kΩ, funciona.
+
+44
+00:04:34,350 --> 00:04:44,430
+Cuanto mayor el valor de esta resistencia, menos consume el sistema en total.
+
+45
+00:04:45,030 --> 00:04:47,470
+Comportamiento interesante.
+
+46
+00:04:48,250 --> 00:04:51,970
+Lo examinaremos después, solo estoy planteando los conceptos básicos por ahora.
+
+47
+00:04:52,570 --> 00:04:57,570
+En el osciloscopio, deberíamos ver esta señal.
+
+48
+00:04:58,530 --> 00:05:08,530
+El ancho de esta señal corresponde a medio periodo de la oscilación de la bobina de alta tensión.
+
+49
+00:05:09,310 --> 00:05:15,630
+Y dentro de esa señal, queremos tantos picos de alta frecuencia como sea posible.
+
+50
+00:05:16,430 --> 00:05:29,070
+Esencialmente caen hasta el riel de alimentación en el ancho de la escala de tensión.
+
+51
+00:05:29,990 --> 00:05:33,670
+Pero no del todo hasta el fondo.
+
+52
+00:05:33,870 --> 00:05:44,190
+Y lo que terminamos teniendo es el sistema siendo golpeado con pulsos de alta tensión y alta frecuencia.
+
+53
+00:05:44,310 --> 00:05:49,870
+Pero en general, la bobina de alta tensión lo ve como un pulso único.
+
+54
+00:05:51,210 --> 00:05:56,110
+Y cuantos más picos, mejor sube el sistema.
+
+55
+00:05:58,230 --> 00:06:15,790
+Además, si este sistema se usa directamente en el montaje, esta es una forma de sincronizarlo simplemente: aquí hay un esquema de nuestro núcleo de cazoleta, la unidad de deflexión de una pantalla de TV.
+
+56
+00:06:15,790 --> 00:06:16,470
+Pantalla de TV.
+
+57
+00:06:17,830 --> 00:06:28,410
+28 vueltas, cuantas quepan en la mitad, las ponemos en esta salida, o un diodo rápido.
+
+58
+00:06:29,710 --> 00:06:43,590
+De esta forma cortamos la mitad de la señal, pasamos un semiperiodo de ella, y lo alimentamos a la entrada de potencia.
+
+59
+00:06:44,550 --> 00:06:49,830
+Este capacitor justo aquí bloqueará el pico de alta tensión.
+
+60
+00:06:51,270 --> 00:06:59,770
+Como señal de alta tensión, podría estar en cualquier lugar de 100 a 350-400 voltios.
+
+61
+00:06:59,870 --> 00:07:03,350
+Es decir, cuando el sistema lo absorbe, no sube más alto.
+
+62
+00:07:03,350 --> 00:07:06,290
+También hay alguna caída en el diodo.
+
+63
+00:07:07,590 --> 00:07:15,510
+Y para lo que sirve principalmente este filtro: elimina todo el ruido.
+
+64
+00:07:16,130 --> 00:07:25,830
+La potencia que llega al sistema ya es de una sola polaridad, sincronizada con un semiperiodo del push-pull.
+
+65
+00:07:26,350 --> 00:07:38,890
+Cuando está funcionando, solo necesitamos cambiar el diodo aquí o aquí, o intercambiar estos cables, y podemos correr el sistema en el semiperiodo positivo o, digamos, el negativo.
+
+66
+00:07:38,890 --> 00:07:39,610
+Negativo.
+
+67
+00:07:39,710 --> 00:07:41,290
+La sincronización más simple.
+
+68
+00:07:41,870 --> 00:07:43,470
+No la más eficiente, claro.
+
+69
+00:07:44,130 --> 00:07:52,030
+La sincronización electrónica es mucho más efectiva, pero este tipo de sincronización también funciona.
+
+70
+00:07:54,930 --> 00:08:08,290
+Usar este filtro, dos capacitores y un transformador contradevanado en un solo núcleo, proporciona algo de aislamiento de la fuente de alimentación.
+
+71
+00:08:08,530 --> 00:08:18,910
+Y lo más importante, si estamos usando este sistema de sincronización, elimina cualquier interferencia presente en la entrada.
+
+72
+00:08:19,630 --> 00:08:32,270
+También filtra la interferencia que pueda viajar desde la operación de la bobina Tesla de alta tensión hacia la fuente de alimentación.
+
+73
+00:08:32,870 --> 00:08:37,750
+También verás que tenemos tierra.
+
+74
+00:08:38,050 --> 00:08:42,030
+Conecta directamente al emisor de este transistor.
+
+75
+00:08:44,970 --> 00:08:51,550
+Y si miras, el menos corre por el filtro hasta la tierra.
+
+76
+00:08:52,230 --> 00:08:56,610
+Nuestra tierra tampoco está conectada directamente.
+
+77
+00:08:56,830 --> 00:09:05,230
+Hay una conexión galvánica, pero no hay conexión para el lado de alta frecuencia.
+
+78
+00:09:05,350 --> 00:09:15,430
+Así protegemos al resto del sistema de la interferencia que pueda aparecer durante la operación de la bobina.
+
+79
+00:09:16,890 --> 00:09:18,690
+Aquí hay otro punto interesante.
+
+80
+00:09:19,250 --> 00:09:24,750
+Este transistor tiene especificaciones bastante sólidas.
+
+81
+00:09:25,270 --> 00:09:33,330
+La tensión colector-base llega al máximo a 230 V.
+
+82
+00:09:33,830 --> 00:09:38,090
+La tensión colector-emisor también es 230 V máx.
+
+83
+00:09:38,590 --> 00:09:45,950
+Y la tensión emisor-base es solo 5 V de máximo absoluto de control.
+
+84
+00:09:47,110 --> 00:09:54,970
+¿Cómo funciona, conectando nuestro transistor directamente al extremo frío de la bobina de alta tensión?
+
+85
+00:09:55,150 --> 00:09:57,530
+Aparentemente hay kilovoltios ahí.
+
+86
+00:09:58,250 --> 00:10:03,330
+¿Por qué este transistor trabaja con un máximo de 5 V?
+
+87
+00:10:04,230 --> 00:10:13,990
+Lo que pasa es que durante la operación de la bobina Tesla de alta tensión, tenemos un desfase entre corriente y tensión.
+
+88
+00:10:14,570 --> 00:10:22,130
+Y en la unión base-emisor, no hay alta tensión como tal.
+
+89
+00:10:23,410 --> 00:10:38,190
+Dependiendo del modo, podrían ser décimas de voltio, o, dependiendo del punto de polarización y la subida de la bobina, hasta 2-2,5 voltios.
+
+90
+00:10:38,330 --> 00:10:50,070
+Y para entender esto, para que nuestro transistor no explote, creamos una polarización con el divisor resistivo, un potencial positivo.
+
+91
+00:10:50,430 --> 00:11:02,270
+Y nuestro transistor se abre porque es de tipo NPN: la conductividad de este transistor se dispara con el semiperiodo positivo.
+
+92
+00:11:02,370 --> 00:11:15,590
+Y tenemos que vigilar que en ese punto, la tensión de polarización en la base más el potencial de tensión presente durante el semiperiodo positivo no excedan 5 V.
+
+93
+00:11:16,250 --> 00:11:19,570
+Más allá de eso, el transistor explota.
+
+94
+00:11:21,370 --> 00:11:38,170
+Funciona hasta +150 °C, y tenemos que entender que estos 150 °C son la temperatura en el cristal semiconductor mismo.
+
+95
+00:11:38,570 --> 00:11:53,490
+Si miramos el transistor, la pastilla semiconductora está en esta zona, montada sobre un plato metálico que sirve como plato de extracción de calor y está conectado galvánicamente directamente al colector.
+
+96
+00:11:53,490 --> 00:11:58,650
+Al colector del transistor.
+
+97
+00:11:59,530 --> 00:12:07,350
+Así que en este caso, 150 °C es la temperatura de la pastilla, no la temperatura del disipador.
+
+98
+00:12:07,970 --> 00:12:23,370
+Necesitas vigilar la temperatura del disipador para este transistor: si sube a 120 °C, hay peligro de que el transistor explote, porque la pastilla en sí a 120 °C de disipador ya estará alrededor de 145 °C en el interior.
+
+99
+00:12:23,370 --> 00:12:32,630
+Dentro del transistor.
+
+100
+00:12:33,130 --> 00:12:41,910
+Pero este circuito está diseñado para que no veamos grandes subidas de temperatura aquí.
+
+101
+00:12:42,110 --> 00:12:51,670
+A 24 V de alimentación, lo probé también hasta 50 V, el disipador lo maneja fácilmente, básicamente sin calentamiento.
+
+102
+00:12:52,310 --> 00:13:07,610
+En algunos videos vimos el sistema sintonizado para que haya un solo pulso para maximizar la amplitud de salida.
+
+103
+00:13:08,110 --> 00:13:15,290
+En la práctica, resultó no ser el modo de operación que queremos.
+
+104
+00:13:15,890 --> 00:13:33,330
+La salida máxima de la bobina con consumo mínimo solo puede ocurrir cuando el transistor opera en este modo pulsado de alta frecuencia respecto a la propia frecuencia de la bobina.
+
+105
+00:13:34,450 --> 00:13:40,630
+Ahora veamos cómo se implementa el sistema en metal.
+
+106
+00:13:42,210 --> 00:13:50,910
+Aquí está el layout del circuito donde se montan todas las piezas.
+
+107
+00:13:52,350 --> 00:13:54,930
+¿Qué vemos primero?
+
+108
+00:13:55,610 --> 00:13:59,310
+Terminales de entrada de potencia, más y menos.
+
+109
+00:14:00,350 --> 00:14:16,250
+Primero, el capacitor de filtro a 100 nF, luego el filtro con devanados contrarios, luego el segundo capacitor, la reserva principal, y el capacitor principal de descarga rápida.
+
+110
+00:14:17,030 --> 00:14:20,390
+De él sale la salida de más, menos está aquí.
+
+111
+00:14:20,810 --> 00:14:25,470
+Un cable de menos va directamente a tierra.
+
+112
+00:14:26,790 --> 00:14:36,270
+El sistema divisor que crea la polarización en la base del transistor está configurado para ajuste.
+
+113
+00:14:37,870 --> 00:14:45,390
+Una resistencia va a más, la otra conecta a menos, directamente al emisor.
+
+114
+00:14:45,450 --> 00:14:46,870
+Este cable va a la base.
+
+115
+00:14:47,410 --> 00:14:54,190
+El divisor se elige para operación óptima, luego se monta en la placa.
+
+116
+00:14:55,070 --> 00:15:00,590
+El transistor se asienta sobre un disipador masivo.
+
+117
+00:15:00,770 --> 00:15:03,970
+Como resultó, no necesitas un disipador tan grande.
+
+118
+00:15:04,510 --> 00:15:12,690
+Con este sistema, a 24 V de alimentación, el disipador no pasa de 45 °C.
+
+119
+00:15:12,850 --> 00:15:14,410
+Puedes usar un disipador más pequeño.
+
+120
+00:15:15,010 --> 00:15:36,310
+No usé un pad termoaislante, el que aísla galvánicamente el disipador del transistor, para obtener mejor enfriamiento del sistema.
+
+121
+00:15:37,550 --> 00:15:42,250
+Así que el disipador es el colector de este transistor.
+
+122
+00:15:42,430 --> 00:15:46,870
+Puedes sondear el osciloscopio directamente desde él.
+
+123
+00:15:48,730 --> 00:15:54,570
+Pasando a lo que diría es la parte más importante de nuestro sistema.
+
+124
+00:15:55,050 --> 00:15:57,710
+Esta es nuestra bobina de alta tensión.
+
+125
+00:16:00,110 --> 00:16:11,650
+En muchos videos en internet, ves estas bobinas devanadas sobre tubos sacados de tubería de desagüe, es decir, plástico.
+
+126
+00:16:12,510 --> 00:16:19,390
+Como resultó en la práctica, el plástico no es nada adecuado para devanar estas bobinas.
+
+127
+00:16:20,490 --> 00:16:21,490
+¿Qué pasa?
+
+128
+00:16:22,890 --> 00:16:25,350
+Hicimos este experimento.
+
+129
+00:16:26,050 --> 00:16:48,350
+En esta forma, que es cartón, puedes conseguir fácilmente tubos de papel de horno, y también hay formas dedicadas de muy alta calidad.
+
+130
+00:16:48,970 --> 00:16:49,890
+Una opción.
+
+131
+00:16:49,910 --> 00:16:54,090
+O cualquier otro tubo de cartón que encuentres.
+
+132
+00:16:54,970 --> 00:17:05,790
+Devanamos 30 cm en esta forma, con sección de cable de 0,75 mm.
+
+133
+00:17:08,130 --> 00:17:17,490
+Y esta bobina se conectó a una antena bastante grande.
+
+134
+00:17:17,990 --> 00:17:26,730
+La antena es de alambre de aluminio, 7 vueltas, diámetro de devanado 135 mm.
+
+135
+00:17:27,910 --> 00:17:42,030
+Por analogía con devanados sobre tubos plásticos, esperaba ver una frecuencia en el rango de 600-750 kHz.
+
+136
+00:17:42,190 --> 00:17:56,530
+Cuando se arrancó el sistema y se midió la respuesta en frecuencia, resultó que para un devanado tan largo la frecuencia del sistema era 1,2 MHz.
+
+137
+00:17:57,530 --> 00:18:15,610
+Luego en una forma del mismo diámetro pero plástico, como tubo de desagüe, devané el mismo cable y comparé la respuesta en frecuencia.
+
+138
+00:18:16,470 --> 00:18:28,030
+Y para alcanzar 1,2 MHz en el mismo sistema, necesité devanar 9,5 mm en el tubo plástico.
+
+139
+00:18:29,070 --> 00:18:33,670
+De lo cual concluí que el plástico no es para nada adecuado para estos devanados.
+
+140
+00:18:34,890 --> 00:18:38,770
+Otra desventaja de los tubos plásticos es esta.
+
+141
+00:18:38,950 --> 00:18:43,790
+Suprime fuertemente tanto la frecuencia del sistema como su factor Q.
+
+142
+00:18:45,230 --> 00:18:48,050
+La bobina de alta tensión funciona mucho peor.
+
+143
+00:18:48,650 --> 00:18:57,810
+Necesitas mayor tensión de alimentación para impulsar la bobina Tesla de alta tensión específicamente sobre tubo plástico.
+
+144
+00:18:58,570 --> 00:19:12,450
+Veremos: este sistema tal como está ensamblado ya es funcional desde 1,6 V de entrada.
+
+145
+00:19:12,710 --> 00:19:31,790
+El autooscilador arranca, y si colocamos una sonda cerca de esta antena, puedes ver una onda sinusoidal limpia y agradable ya a esta tensión de alimentación.
+
+146
+00:19:31,990 --> 00:19:35,230
+El factor Q del sistema es muy alto.
+
+147
+00:19:36,410 --> 00:19:40,290
+Ahora, otra pregunta que surge seguido.
+
+148
+00:19:41,250 --> 00:19:47,010
+¿Puedes devanar estas bobinas soldando el cable?
+
+149
+00:19:47,870 --> 00:19:55,890
+En esta bobina puedes ver 1, 2, 3, 4, y uno más en este lado, cinco uniones soldadas.
+
+150
+00:19:56,650 --> 00:20:03,330
+Mientras ajustaba la frecuencia, usé el método de desenrollar el cable.
+
+151
+00:20:04,390 --> 00:20:14,070
+En el proceso, naturalmente el cable tuvo que cortarse y, para resintonizar a otras frecuencias, volverse a soldar.
+
+152
+00:20:14,930 --> 00:20:30,350
+Como resultó, si tienes buena tierra (en este caso muy buena, cable de soldadura de 25 mm², pero también probé con cable de 4 mm²).
+
+153
+00:20:30,730 --> 00:20:40,070
+Realmente no vi diferencia, así que no tienes que perseguir cable de soldadura para mejorar estos sistemas.
+
+154
+00:20:40,230 --> 00:20:41,870
+Pero sí quieres una buena tierra.
+
+155
+00:20:42,410 --> 00:20:59,930
+Y si la tierra es buena, con buen contacto con el suelo, entonces no verás degradación operacional, ni armónicos, distorsión de la señal sinusoidal, u otros problemas en el cable soldado.
+
+156
+00:21:00,090 --> 00:21:01,710
+Es decir, la bobina corre limpia.
+
+157
+00:21:02,170 --> 00:21:15,130
+Lo principal es limpiar bien la laca de ambos cables, torcerlos juntos físicamente, y solo después estañarlos con soldadura.
+
+158
+00:21:15,130 --> 00:21:20,850
+Luego pones termorretráctil encima, y el cable funciona sin problemas.
+
+159
+00:21:24,990 --> 00:21:28,710
+Ahora otro punto importante.
+
+160
+00:21:30,770 --> 00:21:45,390
+Poca gente sabe que las bobinas Tesla funcionan, si quieres ponerlo así, captando la radiación electromagnética del inductor por volumen.
+
+161
+00:21:46,070 --> 00:21:56,270
+Para las dimensiones dadas del inductor, hay un tamaño geométrico mínimo permitido para la bobina Tesla misma.
+
+162
+00:21:56,970 --> 00:22:12,990
+Si no respetas esas dimensiones mínimas, el inductor entrará en excitación por sí solo, desarrollará sus propias oscilaciones, alterará todo el sistema, y la bobina de alta tensión estará mucho peor coordinada.
+
+163
+00:22:12,990 --> 00:22:19,670
+Con el inductor mismo.
+
+164
+00:22:20,310 --> 00:22:33,690
+No, solo para bajar la frecuencia, devanes con cable muy delgado, es decir, cables con sección menor a 0,5 mm.
+
+165
+00:22:34,590 --> 00:22:42,470
+En bobinas Tesla con diámetros de tubo de 40 a 50 mm, no deberías usar cables delgados.
+
+166
+00:22:42,990 --> 00:22:54,230
+Necesitamos cierto volumen ocupado por esta bobina en el espacio para captar la onda electromagnética del inductor.
+
+167
+00:22:55,630 --> 00:22:58,490
+Necesitas entender y coordinar esto.
+
+168
+00:22:59,170 --> 00:23:03,050
+También hay dos maneras de ajustar la frecuencia.
+
+169
+00:23:03,890 --> 00:23:12,130
+Hablamos de la primera, desenrollar el cable, lo que sube la frecuencia.
+
+170
+00:23:12,830 --> 00:23:15,810
+O podemos ir por el otro camino.
+
+171
+00:23:16,170 --> 00:23:35,210
+Podemos dejar la longitud del cable en el sistema tal como está, lo que llena la forma, y cambiar la frecuencia mediante las dimensiones geométricas: estirar la antena, aumentar el diámetro, o aumentar el número de vueltas.
+
+172
+00:23:35,210 --> 00:23:37,650
+De vueltas en la antena misma.
+
+173
+00:23:38,410 --> 00:23:43,010
+En algunos casos de los sistemas con los que trabajamos, es preferible.
+
+174
+00:23:43,090 --> 00:23:58,810
+Digamos que necesitamos mantener cierta longitud de cable para la bobina de alta tensión para coincidir con la longitud del cable de la bobina receptora, y la frecuencia necesita cambiarse, es decir, sintonizar por frecuencia.
+
+175
+00:23:58,810 --> 00:24:01,650
+Sintonizar por frecuencia.
+
+176
+00:24:02,250 --> 00:24:09,670
+La longitud del cable permanece sin cambios, y cambiamos la frecuencia ajustando la antena.
+
+177
+00:24:10,750 --> 00:24:14,450
+Sobre la antena, información muy importante.
+
+178
+00:24:16,810 --> 00:24:20,810
+No puedes devanar la antena con cable de cobre.
+
+179
+00:24:21,610 --> 00:24:30,370
+Primero, el cable de cobre tiene dificultad para desprenderse de la carga estática.
+
+180
+00:24:31,370 --> 00:24:45,390
+El cobre es más para trabajar con movimiento directo de corriente: carga pesada moviéndose por la superficie o en la red cristalina del conductor.
+
+181
+00:24:45,390 --> 00:24:46,510
+Del conductor.
+
+182
+00:24:47,130 --> 00:24:52,310
+Ese material es bueno para lugares donde necesitas crear un campo magnético.
+
+183
+00:24:52,870 --> 00:25:00,110
+Donde necesitas trabajar con estática, recomiendo usar aluminio.
+
+184
+00:25:00,550 --> 00:25:03,370
+Primero, aquí está la prueba que hicimos.
+
+185
+00:25:04,170 --> 00:25:12,910
+Devanamos una antena de aluminio, y otra de cable de cobre con la misma sección.
+
+186
+00:25:13,370 --> 00:25:19,630
+Dimensiones idénticas, longitud de cable, diámetro, y medimos las frecuencias.
+
+187
+00:25:20,030 --> 00:25:34,030
+Y resultó que con la antena de cobre, la frecuencia del sistema era 150 kHz más baja que con una antena de aluminio de dimensiones geométricas idénticas.
+
+188
+00:25:35,270 --> 00:25:38,350
+Puedes hacer estos experimentos tú mismo y confirmarlo.
+
+189
+00:25:39,270 --> 00:25:42,470
+Así que no recomiendo usar cobre para la antena.
+
+190
+00:25:43,170 --> 00:25:48,110
+El cobre crea un campo magnético fuerte, por cierto.
+
+191
+00:25:48,350 --> 00:25:57,610
+Cuando nuestros sistemas están corriendo, no podemos tener un campo magnético justo ahí en la zona de la antena.
+
+192
+00:25:58,090 --> 00:26:09,750
+Necesitamos un potencial eléctrico alterno que interactúe luego con el campo magnético en nuestro resonador.
+
+193
+00:26:10,270 --> 00:26:12,730
+Por eso usamos aluminio.
+
+194
+00:26:15,270 --> 00:26:18,150
+Pasando a cómo corre nuestro dispositivo.
+
+195
+00:26:18,290 --> 00:26:21,570
+Veamos los oscilogramas del lado de la alimentación.
+
+196
+00:26:23,590 --> 00:26:28,390
+Arrancaremos este sistema desde una fuente de alimentación de laboratorio.
+
+197
+00:26:28,750 --> 00:26:36,490
+La fuente está en 1,3 V y el consumo de corriente es cero.
+
+198
+00:26:36,630 --> 00:26:38,830
+Así que el sistema aún no está corriendo.
+
+199
+00:26:40,930 --> 00:26:47,790
+El canal amarillo del osciloscopio, la sonda misma, está conectado al colector del transistor.
+
+200
+00:26:48,950 --> 00:26:57,890
+El común del osciloscopio está en el cable de tierra, básicamente en el emisor del transistor y el cable que va a tierra.
+
+201
+00:26:59,890 --> 00:27:09,850
+Ahora subiré suavemente la tensión de alimentación y veremos a qué tensión arranca el sistema.
+
+202
+00:27:10,210 --> 00:27:18,530
+Es decir, veremos oscilaciones sinusoidales en el canal azul del osciloscopio.
+
+203
+00:27:20,170 --> 00:27:21,390
+Subiendo la tensión.
+
+204
+00:27:22,970 --> 00:27:32,890
+Y aquí vemos que la tensión subió solo unas pocas décimas de voltio.
+
+205
+00:27:33,150 --> 00:27:37,850
+Ahora está en 1,3 V.
+
+206
+00:27:37,950 --> 00:27:42,610
+Y básicamente sin consumo de corriente del sistema.
+
+207
+00:27:42,890 --> 00:27:46,070
+Pero el sistema ya está corriendo.
+
+208
+00:27:47,990 --> 00:27:55,470
+Es decir, devanar en una forma de cartón da un factor Q muy alto.
+
+209
+00:27:55,570 --> 00:27:59,950
+Puede correr con consumo mínimo.
+
+210
+00:28:02,130 --> 00:28:04,190
+Aumentando la alimentación.
+
+211
+00:28:05,350 --> 00:28:06,890
+Ahora puedes verlo claramente.
+
+212
+00:28:07,170 --> 00:28:09,210
+1,4 V.
+
+213
+00:28:09,970 --> 00:28:11,330
+1,5 V.
+
+214
+00:28:11,330 --> 00:28:13,610
+1,6 V.
+
+215
+00:28:13,630 --> 00:28:14,670
+1,7 V.
+
+216
+00:28:14,670 --> 00:28:16,550
+1,8 V.
+
+217
+00:28:17,250 --> 00:28:35,270
+A 1,8 V, consumo de corriente 0,03 A, la antena ya tiene potencial que se puede captar con una lámpara de neón.
+
+218
+00:28:36,170 --> 00:28:38,870
+Ves que la lámpara se enciende cuando tocas el cable.
+
+219
+00:28:40,090 --> 00:28:43,290
+El sistema comienza a mostrar sus propiedades.
+
+220
+00:28:44,050 --> 00:28:48,410
+Por supuesto no lo corremos a estos niveles.
+
+221
+00:28:49,510 --> 00:28:51,630
+Ahora subiré la tensión de alimentación.
+
+222
+00:28:54,250 --> 00:29:00,350
+Y veremos el oscilograma de la operación del transistor directamente en el colector.
+
+223
+00:29:00,470 --> 00:29:14,460
+Para que podamos ver cómo corre el sistema, sincronizar y analizar.
+
+224
+00:29:14,900 --> 00:29:25,420
+Aquí vemos los picos de los que hablaba, de alta frecuencia, en el colector.
+
+225
+00:29:27,320 --> 00:29:37,220
+Ves la sincronización: el transistor dispara en el semiperiodo positivo de la oscilación propia de la bobina.
+
+226
+00:29:39,300 --> 00:29:51,260
+La frecuencia de operación del sistema, puedes ver en la esquina superior derecha, es 1,33 MHz.
+
+227
+00:29:52,780 --> 00:30:02,640
+El devanado ahora es de 4,5 cm en la forma de la bobina.
+
+228
+00:30:03,320 --> 00:30:08,140
+El diámetro de la forma es 25 cm de devanado.
+
+229
+00:30:08,840 --> 00:30:15,400
+A tal antena, puedes ver que la frecuencia es bastante alta.
+
+230
+00:30:16,420 --> 00:30:21,800
+Y vemos que nuestro transistor empieza a trabajar.
+
+231
+00:30:22,080 --> 00:30:31,080
+Primer pico, luego caída de tensión, luego otro pico, luego otro.
+
+232
+00:30:31,440 --> 00:30:34,100
+Ahora subiré la tensión de alimentación también.
+
+233
+00:30:34,100 --> 00:30:36,260
+Ahora son 7,5 V.
+
+234
+00:30:36,480 --> 00:30:40,300
+Y veremos que el número de picos sube.
+
+235
+00:30:40,960 --> 00:30:43,420
+Pero con eso, la amplitud crece.
+
+236
+00:30:44,480 --> 00:30:46,020
+Llevándolo a nominal.
+
+237
+00:30:46,900 --> 00:30:48,020
+Ahora 9 V.
+
+238
+00:30:49,880 --> 00:30:57,020
+Y mira la amplitud del pico cuando la alimentación está en 24 V.
+
+239
+00:31:02,840 --> 00:31:06,760
+Ahora ajustado precisamente a 24 V de alimentación.
+
+240
+00:31:07,400 --> 00:31:12,760
+Puedes ver que apareció otro pico.
+
+241
+00:31:13,860 --> 00:31:22,100
+Así que, subiendo la amplitud de la alimentación, el número de picos sube.
+
+242
+00:31:22,940 --> 00:31:31,560
+Y cuantos más picos haya, mejor trabaja nuestro sistema, más económico.
+
+243
+00:31:31,840 --> 00:31:36,000
+Comparado con sintonizar el sistema para tener solo un pico.
+
+244
+00:31:36,600 --> 00:31:42,760
+En este caso puedes ver la amplitud del pico.
+
+245
+00:31:43,940 --> 00:31:51,080
+La amplitud más alta en el primer pulso es 136 V.
+
+246
+00:31:51,080 --> 00:31:54,260
+A 24 V de alimentación.
+
+247
+00:31:55,240 --> 00:32:03,920
+Y vemos que la tensión coincide con los 24 V aplicados a la entrada.
+
+248
+00:32:04,760 --> 00:32:11,000
+Y el consumo es solo 0,6 A.
+
+249
+00:32:11,640 --> 00:32:21,240
+También notarás que la lámpara cerca de la antena se enciende.
+
+250
+00:32:21,920 --> 00:32:25,380
+La fluorescente se enciende brillante, muy bien.
+
+251
+00:32:26,460 --> 00:32:32,840
+Todos los efectos que esperarías en operación en modo normal, los tenemos.
+
+252
+00:32:33,500 --> 00:32:37,600
+La lámpara de neón brilla a gran distancia.
+
+253
+00:32:37,700 --> 00:32:39,540
+Veamos la distancia.
+
+254
+00:32:39,840 --> 00:32:45,620
+Empieza a brillar a unos 35 cm de la antena.
+
+255
+00:32:47,920 --> 00:32:54,900
+También hay una descarga estable sobre objetos metálicos.
+
+256
+00:32:56,680 --> 00:32:58,220
+Veámoslo ahora.
+
+257
+00:33:03,440 --> 00:33:10,020
+Aproximadamente un centímetro de largo.
+
+258
+00:33:15,120 --> 00:33:17,840
+Puedes estirar un arco estable.
+
+259
+00:33:21,490 --> 00:33:26,570
+Así que todos los efectos asociados aparecen con esta sintonía.
+
+260
+00:33:27,670 --> 00:33:35,310
+Funciona no peor que cuando tenemos un solo pico, pero en un modo mucho más económico.
+
+261
+00:33:36,230 --> 00:33:39,050
+Recomiendo exactamente este modo en el Kacher.
+
+262
+00:33:39,690 --> 00:33:40,730
+Verás la diferencia.
+
+263
+00:33:42,330 --> 00:33:44,650
+Es claramente notable.
+
+264
+00:33:48,190 --> 00:34:00,930
+También puedes verificar otra característica interesante si sincronizamos el osciloscopio no en el cable de tierra sino en la alimentación positiva.
+
+265
+00:34:01,150 --> 00:34:03,710
+La sincronización estaba en tierra antes.
+
+266
+00:34:03,930 --> 00:34:11,430
+Ahora pinzaremos sobre el más de alimentación y miraremos qué hay en el colector.
+
+267
+00:34:12,850 --> 00:34:24,190
+Conecté el común al más, pinzando sobre la lengüeta del disipador, ya que no está conectado galvánicamente al colector.
+
+268
+00:34:26,370 --> 00:34:33,050
+Y ahora examinamos el funcionamiento con esta medición.
+
+269
+00:34:37,650 --> 00:34:39,170
+Subiendo la tensión.
+
+270
+00:34:42,110 --> 00:34:49,310
+Ahora 19, 20, 24 V de alimentación.
+
+271
+00:34:50,850 --> 00:34:56,910
+¿Qué es interesante notar en este modo?
+
+272
+00:34:56,990 --> 00:35:17,130
+Como estamos sincronizados con respecto al más de alimentación, la amplitud máxima es menor, 106 V, pero también podemos ver la amplitud de caída en el común de menos, que...
+
+273
+00:35:17,130 --> 00:35:24,230
+como estamos sincronizados en más, corresponde aproximadamente a la tensión de alimentación.
+
+274
+00:35:25,170 --> 00:35:31,430
+Ahora 24 V, pero leemos unos 27 V de caída aquí.
+
+275
+00:35:31,550 --> 00:35:44,350
+Hay algo de desplazamiento hacia el menos visible, pero los picos son positivos, incluso respecto al más de alimentación del sistema.
+
+276
+00:35:47,190 --> 00:36:03,120
+Nada misterioso aquí, porque la amplitud del pico mismo tiene potencial positivo mucho mayor que el potencial de la alimentación aplicada a la entrada de más.
+
+277
+00:36:03,380 --> 00:36:09,280
+Así que respecto al más vemos la caída, básicamente igual a la tensión de alimentación.
+
+278
+00:36:10,120 --> 00:36:15,320
+Y el pulso mismo va al semiperiodo positivo.
+
+279
+00:36:16,640 --> 00:36:33,460
+El marcador etiquetado "1", el amarillo, muestra el inicio de cero en la escala, en el que está centrado el oscilograma.
+
+280
+00:36:36,630 --> 00:36:55,130
+También puedes medir en la base del transistor, sin temor a freír el osciloscopio, cuando el sistema está conectado a tierra.
+
+281
+00:36:55,530 --> 00:37:01,190
+Nada que dé miedo, el oscilograma puede observarse ahí.
+
+282
+00:37:01,330 --> 00:37:15,090
+Ahora conectaré una segunda sonda del osciloscopio directamente a la base y miraré la señal que viene de la bobina a la base de este transistor.
+
+283
+00:37:16,610 --> 00:37:21,790
+Conecté el segundo canal del osciloscopio directamente a la base del transistor.
+
+284
+00:37:22,070 --> 00:37:29,190
+Puedes ver que está en el punto medio del divisor resistivo.
+
+285
+00:37:30,070 --> 00:37:34,090
+Es decir, conectado aquí.
+
+286
+00:37:35,330 --> 00:37:40,390
+En realidad conectado al extremo frío de la bobina de alta tensión.
+
+287
+00:37:41,110 --> 00:37:54,970
+Puedes hacer mediciones así con el osciloscopio en este punto, siempre que tengas buena tierra para la bobina de alta tensión.
+
+288
+00:37:56,470 --> 00:38:05,370
+Si tienes dudas sobre tu tierra, necesitas montar aquí, mirar algo.
+
+289
+00:38:05,890 --> 00:38:09,830
+Necesitas que el dispositivo, el osciloscopio mismo, no esté conectado a tierra.
+
+290
+00:38:10,910 --> 00:38:12,870
+Esto es importante para el trabajo.
+
+291
+00:38:13,610 --> 00:38:18,750
+También lo recomiendo para cómo alimentas el dispositivo.
+
+292
+00:38:19,170 --> 00:38:25,090
+Estos suelen ser bastante caros para nosotros, y no queremos desprendernos de ellos.
+
+293
+00:38:25,650 --> 00:38:32,590
+Quieres que la fuente de alimentación del dispositivo esté aislada de tierra.
+
+294
+00:38:33,490 --> 00:38:40,970
+En el enchufe del dispositivo siempre puedes ver el contacto de tierra.
+
+295
+00:38:41,310 --> 00:38:47,230
+No debería estar conectado a tierra cuando se trabaja con la bobina de alta tensión.
+
+296
+00:38:47,750 --> 00:38:48,110
+Eso es uno.
+
+297
+00:38:48,350 --> 00:38:49,130
+Y uno más.
+
+298
+00:38:50,210 --> 00:38:59,230
+Dispositivos como osciloscopios, generadores de señal, y demás, mejor alimentarlos a través de dos transformadores, por ejemplo.
+
+299
+00:38:59,350 --> 00:39:12,050
+Digamos que tienes dos transformadores, de unos 200-300 W cada uno, suficiente para alimentar varios dispositivos.
+
+300
+00:39:12,230 --> 00:39:13,930
+O al menos el osciloscopio.
+
+301
+00:39:14,450 --> 00:39:22,530
+Lo conectas primero a través de un devanado para red de 220 V.
+
+302
+00:39:22,610 --> 00:39:28,010
+Luego en modo reductor entrega, digamos, 12, 24 o 36 V.
+
+303
+00:39:28,650 --> 00:39:31,270
+Y el segundo idéntico se conecta al revés.
+
+304
+00:39:32,050 --> 00:39:34,450
+Con, digamos, un devanado de 12 V.
+
+305
+00:39:34,450 --> 00:39:44,210
+De la salida de 12 V del primer transformador obtienes la tensión de salida que va al devanado de red del dispositivo.
+
+306
+00:39:45,570 --> 00:39:50,770
+Así es como aíslas el dispositivo a través de dos transformadores de la red.
+
+307
+00:39:51,550 --> 00:39:54,870
+Muy útil en el trabajo y protege tu equipo.
+
+308
+00:39:55,510 --> 00:40:00,170
+Y podemos ver el oscilograma en la base del transistor.
+
+309
+00:40:00,830 --> 00:40:02,070
+Esto es por tensión.
+
+310
+00:40:02,490 --> 00:40:03,470
+Aquí está el oscilograma.
+
+311
+00:40:04,610 --> 00:40:14,270
+Ves que el transistor en el colector copia la forma de tensión en la base.
+
+312
+00:40:15,950 --> 00:40:23,030
+Estas señales las tenemos exactamente en el semiperiodo positivo.
+
+313
+00:40:23,970 --> 00:40:26,550
+Esto es solo por interés.
+
+314
+00:40:26,610 --> 00:40:31,050
+Si te da curiosidad, puedes mirar por ti mismo e investigar.
+
+315
+00:40:32,270 --> 00:40:41,190
+Y también podemos hacer, digamos, una medición en este sistema mediante un sensor de corriente.
+
+316
+00:40:41,930 --> 00:40:50,930
+Veamos, con un sensor hecho en un anillo de ferrita, qué ocurre en el cable de tierra.
+
+317
+00:40:51,070 --> 00:40:54,250
+Lo podemos examinar por corriente.
+
+318
+00:40:54,430 --> 00:40:57,150
+Ahora instalaré el sensor y miramos.
+
+319
+00:40:59,590 --> 00:41:01,990
+Sensor de corriente conectado.
+
+320
+00:41:02,430 --> 00:41:08,930
+Va directamente sobre el cable que va desde el emisor del transistor a tierra.
+
+321
+00:41:11,250 --> 00:41:19,710
+Y el segundo canal del osciloscopio está a unos 15 cm de la antena.
+
+322
+00:41:20,250 --> 00:41:23,310
+Otra nota importante sobre la protección del dispositivo.
+
+323
+00:41:23,690 --> 00:41:36,570
+Nunca conectes el osciloscopio al extremo de alta tensión de la bobina, ni a su terminación, que es esta antena.
+
+324
+00:41:37,650 --> 00:41:40,870
+Puedes perder fácilmente tu dispositivo.
+
+325
+00:41:40,970 --> 00:41:52,430
+Todas las mediciones de tensión en este caso se hacen con la sonda a alguna distancia de la parte de alta tensión.
+
+326
+00:41:53,450 --> 00:42:00,450
+Yo uso sondas, recomiendo estas, calificadas para 1500 V.
+
+327
+00:42:00,710 --> 00:42:10,070
+Manejan frecuencias y tensiones muy bien, incluso con electrónica ordinaria.
+
+328
+00:42:10,250 --> 00:42:15,270
+Las compré específicamente, no vienen en el kit del osciloscopio.
+
+329
+00:42:15,570 --> 00:42:23,050
+Pero 1500 V te dan un buen margen para que no frías tu dispositivo.
+
+330
+00:42:24,710 --> 00:42:28,250
+Y ahora conectamos el sensor de corriente y examinamos el oscilograma.
+
+331
+00:42:29,730 --> 00:42:37,370
+Recordatorio: el canal amarillo es corriente en el cable de tierra, el azul es tensión.
+
+332
+00:42:37,950 --> 00:42:45,870
+Vemos que tenemos un desfase entre corriente (canal amarillo) y tensión.
+
+333
+00:42:46,270 --> 00:42:49,650
+Y puedes ver estas señales características por corriente.
+
+334
+00:42:49,870 --> 00:42:53,230
+Recuerda esta señal,
+
+335
+00:42:55,230 --> 00:43:01,110
+esos golpes pico aparecen específicamente por corriente.
+
+336
+00:43:01,150 --> 00:43:04,030
+Esos puntos por encima de la onda sinusoidal.
+
+337
+00:43:04,930 --> 00:43:15,350
+Y la polaridad correcta para el sensor de corriente en este sistema es cuando la corriente adelanta a la tensión.
+
+338
+00:43:15,430 --> 00:43:17,090
+La tensión es ahora el canal azul.
+
+339
+00:43:17,090 --> 00:43:27,550
+No vemos un desfase limpio de 90 grados en este momento, para verlo con precisión necesitarías colgar una resistencia en el sensor de corriente.
+
+340
+00:43:28,190 --> 00:43:41,450
+Pero sin embargo, realmente hay un desfase de 90 grados en nuestra bobina de alta tensión, porque todos los procesos para nosotros ocurren por corriente en estos sistemas.
+
+341
+00:43:42,410 --> 00:43:43,370
+¿Por qué por corriente?
+
+342
+00:43:43,470 --> 00:43:55,730
+Porque para arrancarlo, todo el proceso empieza cuando el transistor conmuta la tensión aplicada a él, que alimenta corriente al inductor.
+
+343
+00:43:56,330 --> 00:43:58,490
+El inductor crea un campo magnético.
+
+344
+00:43:59,030 --> 00:44:02,290
+El campo magnético golpea la bobina.
+
+345
+00:44:02,430 --> 00:44:07,330
+La corriente pasó por el inductor, creó un campo magnético.
+
+346
+00:44:07,490 --> 00:44:15,230
+El campo magnético actúa sobre la bobina, tras lo cual se aumentan las oscilaciones en ella.
+
+347
+00:44:15,350 --> 00:44:19,510
+Así que la tensión se retrasa respecto a la corriente.
+
+348
+00:44:21,110 --> 00:44:30,210
+Y la polaridad correcta es cuando el oscilograma muestra la corriente adelantando la tensión.
+
+349
+00:44:33,330 --> 00:44:35,330
+Suerte a todos con sus experimentos.
+
+350
+00:44:35,510 --> 00:44:58,030
+En los siguientes videos veremos cómo este circuito ensamblado nos ayudará a determinar la frecuencia a la que la parte de alta tensión y alta frecuencia debe correr respecto a nuestra granada.
