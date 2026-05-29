@@ -842,12 +842,15 @@ def _warp_video(parts: list[dict], video_path: Path, work_dir: Path) -> Path:
     part_dir.mkdir(exist_ok=True)
     part_files = []
     n_stretched = 0
+    real_cursor = 0.0
     encoder = ("hevc_nvenc", "p5") if _has_nvenc() else ("libx265", "medium")
     enc_name, enc_preset = encoder
     src_fps = get_video_fps(video_path)
     print(f"  Warping {len(parts)} video parts (encoder: {enc_name}, {src_fps:.3f} fps)...", flush=True)
     for p in tqdm(parts, desc="  warp", leave=False, unit="part"):
         if p["orig_end"] - p["orig_start"] < 1e-4:
+            p["real_start"] = real_cursor
+            p["real_dur"] = 0.0
             continue
         j = len(part_files)
         out = part_dir / f"part_{j:04d}.mp4"
@@ -871,6 +874,20 @@ def _warp_video(parts: list[dict], video_path: Path, work_dir: Path) -> Path:
         cmd += [str(out)]
         subprocess.run(cmd, check=True)
         part_files.append(out)
+        # Record each part's *real* encoded duration. The audio master is laid
+        # out sample-exact, but every part is cut + re-encoded to CFR and then
+        # concat-copied, so its true length is rounded to whole frames. Summed
+        # over hundreds of parts that rounding makes the picture longer than
+        # the audio, so the (sample-exact) ambient ends up running ahead of the
+        # video. Building the audio on these measured durations instead of the
+        # planned ones keeps picture and ambient locked together.
+        try:
+            real_dur = get_video_duration(out)
+        except Exception:
+            real_dur = p["new_dur"]
+        p["real_start"] = real_cursor
+        p["real_dur"] = real_dur
+        real_cursor += real_dur
 
     print(f"  Video stretched on {n_stretched}/{len(parts)} parts")
 
@@ -895,20 +912,38 @@ def _build_master_dynamic(
     sr_master: int,
     ambient_path: Path | None,
 ) -> tuple[np.ndarray, int]:
-    """Build audio on the NEW (warped) timeline."""
+    """Build audio on the warped timeline, anchored to the *measured* duration
+    of each warped video part.
+
+    _warp_video annotates every part with the real encoded duration of its
+    video chunk (`real_dur`) and its real start (`real_start`). We lay the TTS
+    and the ambient out on that grid rather than the planned `new_dur`: cutting
+    + CFR re-encoding + concat rounds each part to whole frames, so the planned
+    and real timelines diverge and the sample-exact audio would otherwise drift
+    ahead of the picture. Falls back to the planned grid for any caller that
+    didn't run _warp_video first.
+    """
     import pyrubberband as pyrb
-    total_dur = sum(p["new_dur"] for p in parts)
+
+    def tgt_start(p: dict) -> float:
+        return p.get("real_start", p["new_start"])
+
+    def tgt_dur(p: dict) -> float:
+        return p.get("real_dur", p["new_dur"])
+
+    total_dur = sum(tgt_dur(p) for p in parts)
     master = np.zeros(int(total_dur * sr_master) + sr_master, dtype=np.float32)
 
-    # Place TTS audios at their new positions
+    # Place each TTS audio at the real start of its video part.
     for p in parts:
         if p["audio"] is None:
             continue
-        start = int(p["new_start"] * sr_master)
+        start = int(tgt_start(p) * sr_master)
         end = min(start + len(p["audio"]), len(master))
         master[start:end] += p["audio"][:end - start].astype(np.float32)
 
-    # Warp ambient piecewise to match new timeline
+    # Warp the ambient piecewise so each chunk fills exactly its part's real
+    # span on the new timeline.
     if ambient_path is not None:
         amb, sr_amb = sf.read(ambient_path)
         if amb.ndim > 1:
@@ -923,12 +958,17 @@ def _build_master_dynamic(
             chunk = amb[orig_a:orig_b]
             if len(chunk) < 100:
                 continue
-            if abs(p["pts"] - 1.0) > 1e-3:
+            orig_dur = (orig_b - orig_a) / sr_master
+            target = tgt_dur(p)
+            if target > 0 and abs(target - orig_dur) > 1e-3:
                 try:
-                    chunk = pyrb.time_stretch(chunk.astype(np.float32), sr_master, 1.0 / p["pts"])
+                    # pyrb rate > 1 shortens; rate = orig/target maps the chunk
+                    # to exactly `target` seconds.
+                    chunk = pyrb.time_stretch(
+                        chunk.astype(np.float32), sr_master, orig_dur / target)
                 except Exception as e:
                     print(f"  [WARN] ambient stretch failed: {e}")
-            new_a = int(p["new_start"] * sr_master)
+            new_a = int(tgt_start(p) * sr_master)
             new_b = min(new_a + len(chunk), len(warped_amb))
             warped_amb[new_a:new_b] += chunk[:new_b - new_a].astype(np.float32)
         master = master + AMBIENT_GAIN * warped_amb
