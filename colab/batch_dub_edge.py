@@ -45,6 +45,11 @@ try:
 except ImportError:
     pass
 
+# ANSI colour codes — Colab/Jupyter render these in cell output. Used to make
+# failures in step 9 stand out in red instead of blending into normal output.
+_RED = "\033[91m"
+_RESET = "\033[0m"
+
 # Reuse everything that's TTS-engine-independent from batch_dub.py
 from batch_dub import (
     AMBIENT_GAIN,
@@ -484,13 +489,14 @@ def run_batch(
         except Exception as e:
             it.status = "failed"
             it.error = str(e)
-            print(f"  ✗ FAILED: {e}")
+            print(f"{_RED}  ✗ FAILED: {e}{_RESET}")
 
     print(f"\n{'='*60}\nSummary\n{'='*60}")
     for s in ("done", "skipped", "failed"):
         ns = [it.n for it in items if it.status == s]
         if ns:
-            print(f"  {s:>8} ({len(ns)}): {ns}")
+            line = f"  {s:>8} ({len(ns)}): {ns}"
+            print(f"{_RED}{line}{_RESET}" if s == "failed" else line)
     print(f"\nOutputs in: {output_dir_path}")
     return items
 
