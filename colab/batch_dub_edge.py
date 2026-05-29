@@ -50,9 +50,13 @@ except ImportError:
 _RED = "\033[91m"
 _RESET = "\033[0m"
 
-# Reuse everything that's TTS-engine-independent from batch_dub.py
+# Reuse everything that's TTS-engine-independent from batch_dub.py.
+# AMBIENT_GAIN is read via the module reference (batch_dub.AMBIENT_GAIN) so
+# runtime overrides from the notebook (`batch_dub.AMBIENT_GAIN = slider.value`)
+# are honoured by both classic and dynamic modes — `from batch_dub import
+# AMBIENT_GAIN` would freeze the value at import time.
+import batch_dub
 from batch_dub import (
-    AMBIENT_GAIN,
     MAX_VIDEO_STRETCH,
     SAMPLE_RATE,
     VideoItem,
@@ -280,7 +284,7 @@ def _build_master(
             from scipy import signal
             amb = signal.resample_poly(amb, sr_master, sr_amb)
         amb = amb[:len(master)] if len(amb) >= len(master) else np.pad(amb, (0, len(master) - len(amb)))
-        master = master + AMBIENT_GAIN * amb.astype(np.float32)
+        master = master + batch_dub.AMBIENT_GAIN * amb.astype(np.float32)
 
     peak = float(np.max(np.abs(master)))
     if peak > 0.99:
@@ -364,7 +368,7 @@ def dub_one(
             "-c:v", "hevc_nvenc" if _has_nvenc_local() else "libx265",
         ]
         if _has_nvenc_local():
-            mux_cmd += ["-preset", "p5", "-rc", "vbr", "-cq", "28", "-b:v", "0", "-tag:v", "hvc1"]
+            mux_cmd += ["-preset", "p5", "-rc", "vbr", "-cq", "33", "-b:v", "0", "-tag:v", "hvc1"]
         else:
             mux_cmd += ["-preset", "medium", "-crf", "28", "-tag:v", "hvc1",
                         "-x265-params", "log-level=error"]

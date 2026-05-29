@@ -403,8 +403,12 @@ def prepare_video_and_ambient(
         cache_dir.mkdir(parents=True, exist_ok=True)
     cached_video = cache_dir / "video.mp4" if cache_dir else None
     cached_orig = cache_dir / "orig.wav" if cache_dir else None
-    cached_ambient = cache_dir / "ambient.wav" if cache_dir else None
-    cached_vocals = cache_dir / "vocals.wav" if cache_dir else None
+    # Ambient / vocals stems are model-specific — naming them per model so
+    # switching from htdemucs to mdx_extra doesn't silently reuse the old stem.
+    # Video + orig audio stay shared (model-independent), so language switches
+    # still skip the download.
+    cached_ambient = cache_dir / f"ambient-{demucs_model}.wav" if cache_dir else None
+    cached_vocals = cache_dir / f"vocals-{demucs_model}.wav" if cache_dir else None
 
     # Video
     if cached_video and cached_video.exists():
@@ -861,7 +865,7 @@ def _warp_video(parts: list[dict], video_path: Path, work_dir: Path) -> Path:
             "-tag:v", "hvc1",
         ]
         if enc_name == "hevc_nvenc":
-            cmd += ["-rc", "vbr", "-cq", "28", "-b:v", "0"]
+            cmd += ["-rc", "vbr", "-cq", "33", "-b:v", "0"]
         else:
             cmd += ["-crf", "28", "-x265-params", "log-level=error"]
         cmd += [str(out)]
@@ -1032,7 +1036,7 @@ def dub_one(
             "-c:v", "hevc_nvenc" if _has_nvenc() else "libx265",
         ]
         if _has_nvenc():
-            mux_cmd += ["-preset", "p5", "-rc", "vbr", "-cq", "28", "-b:v", "0", "-tag:v", "hvc1"]
+            mux_cmd += ["-preset", "p5", "-rc", "vbr", "-cq", "33", "-b:v", "0", "-tag:v", "hvc1"]
         else:
             mux_cmd += ["-preset", "medium", "-crf", "28", "-tag:v", "hvc1",
                         "-x265-params", "log-level=error"]
