@@ -389,6 +389,7 @@ def prepare_video_and_ambient(
     remove_voice: bool,
     demucs_model: str = "htdemucs",
     demucs_segment: int | None = None,
+    allow_no_ambient: bool = False,
 ) -> tuple[Path, Path, Path | None, Path | None]:
     """Download the video (or fetch from cache), extract its mono audio, and
     optionally produce the ambient AND isolated-vocals tracks. When
@@ -453,6 +454,15 @@ def prepare_video_and_ambient(
                         shutil.copy(vocals, cached_vocals)
         if ambient_path is not None:
             _log_ambient_stats(ambient_path)
+        elif not allow_no_ambient:
+            raise RuntimeError(
+                "Demucs failed to produce an ambient stem after GPU and CPU "
+                "attempts. Re-run with 'Continue without ambient if Demucs "
+                "fails' enabled in step 7 to dub this video anyway (voice "
+                "only, no room tone)."
+            )
+        else:
+            print("  [INFO] Continuing without ambient (user opt-in)")
     return video_path, orig_audio, ambient_path, vocals_path
 
 
@@ -524,7 +534,8 @@ def strip_vocals(
     `demucs_segment` (seconds) caps the chunk length to further reduce RAM —
     leave as None for the model default.
 
-    Returns True on success, False if Demucs isn't installed or fails.
+    Returns True on success, False if Demucs isn't installed or both the GPU
+    and CPU attempts fail.
     """
     try:
         import demucs.separate  # noqa: F401
@@ -533,30 +544,52 @@ def strip_vocals(
         return False
     work = audio_path.parent / "demucs_out"
     work.mkdir(exist_ok=True)
-    cmd = [
+    base_cmd = [
         sys.executable, "-m", "demucs.separate",
         "--two-stems", "vocals",
         "-n", demucs_model,
         "-o", str(work),
     ]
     # Transformer-based htdemucs / htdemucs_ft refuse segments longer than
-    # 7.8s (their training window). Cap silently to keep the pipeline robust
-    # to user input — convolutional models (hdemucs_mmi, mdx*) are unbounded.
+    # 7.8s (their training window). Default to 7s when nothing was passed so
+    # long videos don't blow up VRAM with a silent OOM; cap user-supplied
+    # values too. Convolutional models (hdemucs_mmi, mdx*) are unbounded.
     seg = demucs_segment
-    if seg is not None and demucs_model.startswith("htdemucs") and seg > 7:
-        print(f"  [INFO] capping --segment from {seg} to 7 for transformer model {demucs_model} (max 7.8s)")
-        seg = 7
+    if demucs_model.startswith("htdemucs"):
+        if seg is None:
+            seg = 7
+        elif seg > 7:
+            print(f"  [INFO] capping --segment from {seg} to 7 for transformer model {demucs_model} (max 7.8s)")
+            seg = 7
     if seg is not None:
-        cmd += ["--segment", str(seg)]
-    cmd.append(str(audio_path))
-    try:
-        subprocess.run(cmd, check=True, capture_output=True)
-    except subprocess.CalledProcessError as e:
-        print(f"[WARN] demucs failed: {e.stderr.decode()[-200:] if e.stderr else e}")
+        base_cmd += ["--segment", str(seg)]
+    base_cmd.append(str(audio_path))
+
+    # Run Demucs without capturing output — its progress (and any silent
+    # warning) shows up in the cell. We then verify the expected file is
+    # actually on disk: Demucs sometimes exits 0 but produces no stem when
+    # VRAM runs out mid-process. If that happens, retry once on CPU.
+    def _try_demucs(extra_args: list[str]) -> bool:
+        cmd = base_cmd[:-1] + extra_args + [base_cmd[-1]]
+        try:
+            subprocess.run(cmd, check=True)
+        except subprocess.CalledProcessError as e:
+            print(f"  [WARN] demucs failed (exit {e.returncode})")
+            return False
+        return next(work.rglob("no_vocals.wav"), None) is not None
+
+    ok = _try_demucs([])
+    if not ok:
+        print("  [WARN] Demucs run finished but no_vocals.wav not found "
+              "(likely silent OOM). Retrying on CPU...")
+        shutil.rmtree(work, ignore_errors=True)
+        work.mkdir(exist_ok=True)
+        ok = _try_demucs(["-d", "cpu"])
+    if not ok:
+        print("  [WARN] Demucs failed on GPU and CPU; no ambient stem produced.")
         return False
+
     no_vocals = next(work.rglob("no_vocals.wav"), None)
-    if not no_vocals:
-        return False
     shutil.copy(no_vocals, out_path)
     if vocals_out is not None:
         vocals = next(work.rglob("vocals.wav"), None)

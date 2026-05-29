@@ -305,6 +305,7 @@ def dub_one(
     burn_in_subs: bool = False,
     demucs_model: str = "htdemucs",
     demucs_segment: int | None = None,
+    allow_no_ambient: bool = False,
 ) -> None:
     work_dir.mkdir(parents=True, exist_ok=True)
     seg_dir = work_dir / "segments"
@@ -317,6 +318,7 @@ def dub_one(
     video_path, orig_audio, ambient_path, _vocals_path = prepare_video_and_ambient(
         item.url, work_dir, cache_root, remove_voice,
         demucs_model=demucs_model, demucs_segment=demucs_segment,
+        allow_no_ambient=allow_no_ambient,
     )
 
     voice_mask: list[bool] | None = None
@@ -414,6 +416,7 @@ def run_batch(
     burn_in_subs: bool = False,
     demucs_model: str = "htdemucs",
     demucs_segment: int | None = None,
+    allow_no_ambient: bool = False,
 ) -> list[VideoItem]:
     """Main entry point. `voice` overrides `gender` if provided."""
     lang_uc = lang.upper()
@@ -483,6 +486,7 @@ def run_batch(
                 burn_in_subs=burn_in_subs,
                 demucs_model=demucs_model,
                 demucs_segment=demucs_segment,
+                allow_no_ambient=allow_no_ambient,
             )
             it.status = "done"
             print(f"  Elapsed: {time.time() - t0:.1f}s")
