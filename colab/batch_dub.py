@@ -63,16 +63,17 @@ MAX_AUDIO_COMPRESS = 1.4      # if video stretch is not enough, audio can also s
 
 # Ambient (no-vocals stem) gain when mixing under the TTS.
 # Demucs delivers the ambient at roughly the same level it had in the source
-# mix, which sits below the speaker. Boosting it ~+8 dB makes workshop noise,
+# mix, which sits below the speaker. Boosting it ~+10 dB makes workshop noise,
 # music and room tone clearly audible without drowning the dub. Final master
 # is peak-normalised, so this mostly shifts the TTS/ambient ratio rather than
 # raising overall loudness.
-AMBIENT_GAIN = 2.5
+AMBIENT_GAIN = 3.25
 
-# If the extracted ambient stem comes back quieter than this RMS, we assume
-# Demucs over-stripped (treated workshop noise / music as vocals). The dub
-# still renders, but we shout in the log so it's obvious without listening.
-AMBIENT_QUIET_RMS = 0.01
+# If the extracted ambient stem comes back essentially silent we assume Demucs
+# failed outright (empty/garbage output). This is NOT a quality threshold —
+# legit low-level workshop ambient lands around rms~0.004 and sounds fine once
+# AMBIENT_GAIN is applied, so we only flag near-total silence here.
+AMBIENT_QUIET_RMS = 0.001
 
 # XTTS-v2 supported languages (ISO 639-1, except zh)
 XTTS_LANGS = {
