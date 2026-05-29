@@ -63,11 +63,12 @@ MAX_AUDIO_COMPRESS = 1.4      # if video stretch is not enough, audio can also s
 
 # Ambient (no-vocals stem) gain when mixing under the TTS.
 # Demucs delivers the ambient at roughly the same level it had in the source
-# mix, which sits below the speaker. Boosting it ~+14 dB makes workshop noise,
+# mix, which sits below the speaker. Boosting it ~+11 dB makes workshop noise,
 # music and room tone clearly audible without drowning the dub. Final master
 # is peak-normalised, so this mostly shifts the TTS/ambient ratio rather than
-# raising overall loudness.
-AMBIENT_GAIN = 5.0
+# raising overall loudness. The Edge notebook's step-7 slider overrides this
+# per run; 3.5 has worked well on workshop content.
+AMBIENT_GAIN = 3.5
 
 # If the extracted ambient stem comes back essentially silent we assume Demucs
 # failed outright (empty/garbage output). This is NOT a quality threshold —
