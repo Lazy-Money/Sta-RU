@@ -75,13 +75,6 @@ AMBIENT_GAIN = 3.25
 # AMBIENT_GAIN is applied, so we only flag near-total silence here.
 AMBIENT_QUIET_RMS = 0.001
 
-# Final master peak ceiling. The whole mix is scaled (up OR down) so its loudest
-# sample lands here, using all the available headroom without clipping. This is
-# what keeps output at a healthy playback level — without the upward scaling a
-# quiet TTS+ambient mix stays quiet and needs the player cranked to compensate.
-# Kept just under 1.0 because AAC can overshoot slightly on reconstruction.
-MASTER_PEAK_TARGET = 0.97
-
 # XTTS-v2 supported languages (ISO 639-1, except zh)
 XTTS_LANGS = {
     "en", "es", "fr", "de", "it", "pt", "pl", "tr", "ru",
@@ -985,17 +978,10 @@ def dub_one(
         final_video = video_path
         master, _ = _build_master_classic(subs, raw_tts, video_duration, ambient_path)
 
-    # 8. Normalize: scale the whole mix (voice + ambient together, so the
-    #    balance is preserved) so its loudest sample hits MASTER_PEAK_TARGET.
-    #    Scales UP a quiet mix as well as down a hot one — the previous code
-    #    only attenuated, which left output quiet enough to need the player at
-    #    ~200%.
+    # 8. Normalize
     peak = float(np.max(np.abs(master)))
-    if peak > 1e-6:
-        gain = MASTER_PEAK_TARGET / peak
-        master *= gain
-        print(f"  Master normalized: peak {peak:.3f} -> {MASTER_PEAK_TARGET:.2f} "
-              f"({20 * np.log10(gain):+.1f} dB)")
+    if peak > 0.99:
+        master *= 0.99 / peak
     master_path = work_dir / "master.wav"
     sf.write(master_path, master, sr_master)
 
