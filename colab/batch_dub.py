@@ -785,7 +785,7 @@ def _has_nvenc() -> bool:
             return False
         test = subprocess.run(
             ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error",
-             "-f", "lavfi", "-i", "color=black:size=64x64:rate=1:duration=0.1",
+             "-f", "lavfi", "-i", "color=black:size=256x256:rate=1:duration=0.1",
              "-c:v", "hevc_nvenc", "-f", "null", "-"],
             capture_output=True, text=True, timeout=15,
         )
