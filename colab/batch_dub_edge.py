@@ -83,7 +83,7 @@ from batch_dub import (
 # ============================================================
 DEFAULT_VOICES: dict[str, dict[str, str]] = {
     "EN": {"M": "en-US-AndrewNeural",  "F": "en-US-AriaNeural"},
-    "ES": {"M": "es-ES-AlvaroNeural",  "F": "es-ES-ElviraNeural"},
+    "ES": {"M": "es-MX-JorgeNeural",   "F": "es-MX-DaliaNeural"},
     "DE": {"M": "de-DE-ConradNeural",  "F": "de-DE-KatjaNeural"},
     "IT": {"M": "it-IT-DiegoNeural",   "F": "it-IT-ElsaNeural"},
     "FR": {"M": "fr-FR-HenriNeural",   "F": "fr-FR-DeniseNeural"},
