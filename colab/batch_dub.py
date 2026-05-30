@@ -76,6 +76,20 @@ AMBIENT_GAIN = 3.5
 # AMBIENT_GAIN is applied, so we only flag near-total silence here.
 AMBIENT_QUIET_RMS = 0.001
 
+# yt-dlp player clients to cycle through for YouTube's cloud-IP bot check.
+# From a datacenter IP (Colab) YouTube often rejects the default 'web' client
+# with "Sign in to confirm you're not a bot"; other player clients frequently
+# still work, so we try them in order until one succeeds. YouTube tightens
+# these over time — reorder/trim freely as clients stop working. "default"
+# means yt-dlp's own client cascade (no forced player_client).
+YTDLP_CLIENTS = ["default", "tv_simply", "mweb", "android_vr", "tv", "web_safari"]
+
+# Optional path to a Netscape-format cookies.txt exported from a browser that's
+# logged into YouTube. Set at runtime from the notebook (batch_dub.YTDLP_COOKIES
+# = path). Last-resort auth for when the client cycle alone can't get past the
+# bot check; leave None to stay anonymous.
+YTDLP_COOKIES: str | None = None
+
 # XTTS-v2 supported languages (ISO 639-1, except zh)
 XTTS_LANGS = {
     "en", "es", "fr", "de", "it", "pt", "pl", "tr", "ru",
@@ -158,20 +172,78 @@ def load_url_strings(source) -> list[str]:
 # ============================================================
 #  Metadata via yt-dlp
 # ============================================================
+def _ytdlp_base_cmd(client: str | None) -> list[str]:
+    """Common yt-dlp args: cookies (if configured) + forced player client."""
+    cmd = ["yt-dlp", "--no-warnings"]
+    if YTDLP_COOKIES:
+        cmd += ["--cookies", YTDLP_COOKIES]
+    if client and client != "default":
+        cmd += ["--extractor-args", f"youtube:player_client={client}"]
+    return cmd
+
+
+def _is_botcheck(err: str) -> bool:
+    """True if a yt-dlp error is YouTube's cloud-IP bot wall (worth retrying
+    on another client) rather than a per-video problem (private/removed/geo)."""
+    e = (err or "").lower()
+    return "not a bot" in e or "sign in to confirm" in e
+
+
+def _last_err_line(stderr: str) -> str:
+    for line in reversed((stderr or "").splitlines()):
+        if line.strip():
+            return line.strip()
+    return "unknown"
+
+
 def fetch_metadata(url: str) -> dict:
-    """Fetch video metadata without downloading. Returns {} on failure."""
-    try:
-        r = subprocess.run(
-            ["yt-dlp", "--no-warnings", "--skip-download", "--dump-json", url],
-            capture_output=True, text=True, timeout=60,
-        )
-        if r.returncode != 0:
-            return {"_error": r.stderr.strip().splitlines()[-1] if r.stderr else "unknown"}
-        return json.loads(r.stdout)
-    except subprocess.TimeoutExpired:
-        return {"_error": "timeout"}
-    except Exception as e:
-        return {"_error": str(e)}
+    """Fetch video metadata without downloading. Returns {'_error': ...} on
+    failure. Cycles through YTDLP_CLIENTS to dodge YouTube's cloud-IP bot
+    check; stops early on a non-botcheck error (another client won't fix a
+    private/removed video)."""
+    last_err = "unknown"
+    for client in YTDLP_CLIENTS:
+        try:
+            r = subprocess.run(
+                _ytdlp_base_cmd(client) + ["--skip-download", "--dump-json", url],
+                capture_output=True, text=True, timeout=60,
+            )
+            if r.returncode == 0:
+                return json.loads(r.stdout)
+            last_err = _last_err_line(r.stderr)
+            if not _is_botcheck(last_err):
+                break
+        except subprocess.TimeoutExpired:
+            last_err = "timeout"
+        except Exception as e:
+            last_err = str(e)
+    return {"_error": last_err}
+
+
+def preflight_youtube(url: str) -> dict:
+    """Quick 'can we even reach YouTube from here?' probe used before a batch.
+    Tries the client cycle (and cookies, if set) and reports which client got
+    through. Returns {'ok': bool, 'client': str|None, 'error': str|None}."""
+    last_err = "unknown"
+    for client in YTDLP_CLIENTS:
+        try:
+            r = subprocess.run(
+                _ytdlp_base_cmd(client) + ["--skip-download", "--simulate",
+                                           "--print", "title", url],
+                capture_output=True, text=True, timeout=60,
+            )
+            if r.returncode == 0:
+                return {"ok": True, "client": client, "error": None}
+            last_err = _last_err_line(r.stderr)
+            if not _is_botcheck(last_err):
+                # A per-video error (private/geo/removed) — report it as-is
+                # rather than blaming the bot check.
+                return {"ok": False, "client": client, "error": last_err}
+        except subprocess.TimeoutExpired:
+            last_err = "timeout"
+        except Exception as e:
+            last_err = str(e)
+    return {"ok": False, "client": None, "error": last_err}
 
 
 def _fmt_date(raw: str) -> str:
@@ -292,16 +364,26 @@ def parse_range(expr: str, max_n: int) -> set[int]:
 # ============================================================
 def download_video(url: str, out_path: Path) -> None:
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    subprocess.run(
-        [
-            "yt-dlp",
-            "-f", "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best",
-            "--merge-output-format", "mp4",
-            "--no-warnings",
-            "-o", str(out_path), url,
-        ],
-        check=True,
-    )
+    fmt = "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best"
+    last_err = "unknown"
+    for i, client in enumerate(YTDLP_CLIENTS):
+        if i > 0:
+            print(f"    [yt-dlp] retrying with player_client={client}...", flush=True)
+        r = subprocess.run(
+            _ytdlp_base_cmd(client) + [
+                "-f", fmt, "--merge-output-format", "mp4",
+                "-o", str(out_path), url,
+            ],
+            capture_output=True, text=True,
+        )
+        if r.returncode == 0:
+            return
+        last_err = _last_err_line(r.stderr)
+        # Only another client can beat the bot check; a per-video failure
+        # (private/removed/geo) won't change, so stop cycling.
+        if not _is_botcheck(last_err):
+            break
+    raise RuntimeError(f"yt-dlp could not download {url}: {last_err}")
 
 
 def extract_audio(video_path: Path, out_path: Path) -> None:
