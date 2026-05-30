@@ -102,6 +102,24 @@ DEFAULT_VOICES: dict[str, dict[str, str]] = {
 }
 
 
+# Curated shortlist for the notebook voice picker: a few alternatives per
+# language + gender (max 4) so the dropdown stays manageable. The first entry is
+# the default and mirrors DEFAULT_VOICES. Languages not listed here fall back to
+# their single DEFAULT_VOICES entry. All are free edge-tts voices.
+VOICE_CHOICES: dict[str, dict[str, list[str]]] = {
+    "EN": {"M": ["en-US-AndrewNeural", "en-US-BrianNeural", "en-US-GuyNeural", "en-US-ChristopherNeural"],
+           "F": ["en-US-AriaNeural", "en-US-AvaNeural", "en-US-EmmaNeural", "en-US-JennyNeural"]},
+    "ES": {"M": ["es-MX-JorgeNeural", "es-MX-GerardoNeural", "es-ES-AlvaroNeural", "es-ES-DarioNeural"],
+           "F": ["es-MX-DaliaNeural", "es-MX-RenataNeural", "es-ES-ElviraNeural", "es-ES-XimenaNeural"]},
+    "DE": {"M": ["de-DE-ConradNeural", "de-DE-BerndNeural", "de-DE-ChristophNeural", "de-DE-KillianNeural"],
+           "F": ["de-DE-KatjaNeural", "de-DE-AmalaNeural", "de-DE-ElkeNeural", "de-DE-LouisaNeural"]},
+    "IT": {"M": ["it-IT-DiegoNeural", "it-IT-GiuseppeNeural", "it-IT-GianniNeural", "it-IT-BenignoNeural"],
+           "F": ["it-IT-ElsaNeural", "it-IT-IsabellaNeural", "it-IT-FabiolaNeural", "it-IT-ImeldaNeural"]},
+    "RU": {"M": ["ru-RU-DmitryNeural"],
+           "F": ["ru-RU-SvetlanaNeural", "ru-RU-DariyaNeural"]},
+}
+
+
 def resolve_voice(lang: str, gender: str = "M", custom: str | None = None) -> str:
     """Pick a voice. `custom` overrides everything (must be a valid edge-tts voice name)."""
     if custom:
