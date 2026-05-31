@@ -504,9 +504,13 @@ def dub_one_split_aware(
     )
     parts_dir = work_dir / "_parts"
     parts_dir.mkdir(exist_ok=True)
-    video_parts = split_pipeline.split_video(full_video, cuts, parts_dir)
+    # split_video may shift cuts to the next keyframe — use the actual cuts
+    # (not the planned ones) for the SRT so captions stay aligned.
+    video_parts, actual_cuts = split_pipeline.split_video(
+        full_video, cuts, parts_dir,
+    )
     srt_parts = split_pipeline.split_srt(
-        item.srt_path, cuts, parts_dir, video_duration=duration,
+        item.srt_path, actual_cuts, parts_dir, video_duration=duration,
     )
     if len(video_parts) != len(srt_parts):
         raise RuntimeError(
@@ -514,7 +518,8 @@ def dub_one_split_aware(
             f"{len(srt_parts)} SRT parts; this is a bug."
         )
     print(f"  Split into {len(video_parts)} parts at "
-          f"{[f'{c:.1f}s' for c in cuts]}", flush=True)
+          f"{[f'{c:.1f}s' for c in actual_cuts]} (planned: "
+          f"{[f'{c:.1f}s' for c in cuts]})", flush=True)
 
     dubbed_parts: list[Path] = []
     for i, (vp_path, sp_path) in enumerate(zip(video_parts, srt_parts), start=1):
@@ -575,13 +580,12 @@ def run_batch(
     demucs_model: str = "htdemucs",
     demucs_segment: int | None = None,
     allow_no_ambient: bool = False,
-    max_part_seconds: int | None = 20 * 60,
+    max_part_seconds: int | None = 35 * 60,
 ) -> list[VideoItem]:
     """Main entry point. `voice` overrides `gender` if provided.
     `max_part_seconds`: split videos longer than this at silences so each
     sub-part runs through the dub pipeline as a normal short video; default
-    is 20 min (sized for stock Colab's 12 GB so Demucs/TTS don't OOM). Pass
-    None to disable splitting."""
+    is 35 min. Pass None to disable splitting."""
     lang_uc = lang.upper()
     voice = resolve_voice(lang_uc, gender, voice)
 

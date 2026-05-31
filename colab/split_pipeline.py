@@ -25,10 +25,10 @@ from pathlib import Path
 import video_pipeline as vp
 
 
-# Max sub-part duration (seconds). Sized for Colab's stock 12 GB so Demucs and
-# TTS don't get OOM-killed. Conservative on purpose — the cost of an extra
-# part is a few minutes of overhead; the cost of an OOM is a failed batch.
-DEFAULT_MAX_PART_SECONDS = 20 * 60
+# Max sub-part duration (seconds). 35 minutes — enough margin under Demucs's
+# OOM threshold on stock 12 GB Colab, while keeping splits to 2 parts for
+# videos up to 70 min (which is most of the catalog).
+DEFAULT_MAX_PART_SECONDS = 35 * 60
 
 
 def _trust_silero_vad_repo() -> None:
@@ -149,34 +149,63 @@ def plan_cuts(video_path: Path, max_part_seconds: int = DEFAULT_MAX_PART_SECONDS
     return cuts
 
 
-def split_video(video_path: Path, cuts: list[float], out_dir: Path) -> list[Path]:
-    """Cut video_path into len(cuts)+1 parts at the given timestamps.
-    Returns the list of part paths in order. Uses stream-copy (no re-encode)
-    so this is fast and lossless.
+def split_video(video_path: Path, cuts: list[float], out_dir: Path) -> tuple[list[Path], list[float]]:
+    """Cut video_path into len(cuts)+1 parts using ffmpeg's segment muxer.
+    Returns (part_paths_in_order, actual_cuts).
 
-    Output names: <stem>_part_001<ext>, <stem>_part_002<ext>, ...
+    Why the segment muxer (and not `-ss/-to ... -c copy` per part):
+
+      With per-part `-ss/-to`, parts 2..N inherit the source video's pts —
+      part 2 of a 51-min video starts at pts=1182s, not pts=0. Downstream
+      tools (Demucs reads "audio starts 1182s in"; the ffmpeg mux at the
+      end of dub_one stretches the TTS track to that pts range) then
+      misinterpret the timing and the concatenated output ends up with
+      audio that plays faster than the video.
+
+      The segment muxer with `-reset_timestamps 1` forces every part to
+      start at pts=0, which is what every downstream tool expects.
+
+    The trade-off: segment cuts always land on a keyframe at or *after*
+    the requested time, so part boundaries may shift by up to a GOP (~2-4s
+    for typical YouTube encodes). We return the *actual* cuts (measured
+    from probed part durations) so split_srt can align captions to the
+    real boundaries.
     """
     out_dir.mkdir(parents=True, exist_ok=True)
-    duration = vp.get_duration(video_path) or 0.0
-    boundaries = [0.0] + list(cuts) + [duration]
-    parts: list[Path] = []
-    for i in range(len(boundaries) - 1):
-        start, end = boundaries[i], boundaries[i + 1]
-        part_path = out_dir / f"{video_path.stem}_part_{i + 1:03d}{video_path.suffix}"
-        # -ss/-to *after* -i so the cut is keyframe-accurate (decode + copy).
-        # Pure -c copy with -ss before -i was unreliable on some inputs and
-        # caused the earlier "Demucs exit 1" because the resulting chunk had
-        # a broken header.
-        cmd = [
-            "ffmpeg", "-y", "-loglevel", "error",
-            "-i", str(video_path),
-            "-ss", f"{start:.3f}", "-to", f"{end:.3f}",
-            "-c", "copy", "-avoid_negative_ts", "make_zero",
-            str(part_path),
-        ]
-        subprocess.run(cmd, check=True)
-        parts.append(part_path)
-    return parts
+    pattern = str(out_dir / f"{video_path.stem}_part_%03d{video_path.suffix}")
+    times_csv = ",".join(f"{c:.3f}" for c in cuts)
+    cmd = [
+        "ffmpeg", "-y", "-hide_banner", "-loglevel", "error",
+        "-i", str(video_path),
+        "-map", "0",
+        "-c", "copy",
+        "-f", "segment",
+        "-segment_times", times_csv,
+        "-segment_start_number", "1",
+        "-reset_timestamps", "1",
+        "-avoid_negative_ts", "make_zero",
+        pattern,
+    ]
+    subprocess.run(cmd, check=True)
+
+    parts = sorted(out_dir.glob(f"{video_path.stem}_part_*{video_path.suffix}"))
+    if not parts:
+        raise RuntimeError(f"segment muxer produced no parts in {out_dir}")
+    if len(parts) != len(cuts) + 1:
+        raise RuntimeError(
+            f"expected {len(cuts) + 1} parts, got {len(parts)} in {out_dir}"
+        )
+
+    # Probe actual durations so we know where the keyframe-aligned cuts
+    # really fell. split_srt needs these (not the requested cuts) to keep
+    # captions in sync.
+    actual_cuts: list[float] = []
+    cum = 0.0
+    for p in parts[:-1]:
+        d = vp.get_duration(p) or 0.0
+        cum += d
+        actual_cuts.append(round(cum, 3))
+    return parts, actual_cuts
 
 
 def split_srt(srt_path: Path, cuts: list[float], out_dir: Path,
