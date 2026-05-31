@@ -244,6 +244,35 @@ def _fit_segment_dd(
     return audio, sr, 0
 
 
+def _declick(audio: np.ndarray, sr: int, ms: float = 8.0) -> np.ndarray:
+    """Apply a short raised-cosine fade in/out to a TTS segment to remove the
+    click heard at the start of every spoken line.
+
+    edge-tts segments don't begin (or end) on a zero sample, so dropping one
+    straight into the silent master is a step discontinuity — an audible
+    high-frequency tick right when each line starts. An ~8 ms ramp removes it
+    and is far too short to be perceived as a fade on speech (a phoneme lasts
+    50-200 ms). The length is unchanged, so segment timing / sync is untouched.
+    """
+    if audio.ndim != 1:
+        # edge-tts is mono, but stay safe: fade each channel along time.
+        return np.stack(
+            [_declick(audio[..., c], sr, ms) for c in range(audio.shape[-1])],
+            axis=-1,
+        )
+    n = int(sr * ms / 1000.0)
+    if len(audio) < 2:
+        return audio
+    n = min(n, len(audio) // 2)
+    if n < 1:
+        return audio
+    ramp = (0.5 * (1.0 - np.cos(np.linspace(0.0, np.pi, n)))).astype(np.float32)
+    out = audio.astype(np.float32).copy()
+    out[:n] *= ramp
+    out[-n:] *= ramp[::-1]
+    return out
+
+
 def _generate_tts(
     subs: list, voice: str, pitch_st: int, seg_dir: Path,
     dynamic_duration: bool = False,
@@ -284,6 +313,7 @@ def _generate_tts(
                 n_sped_up += 1
             elif rate_pct < 0:
                 n_slowed += 1
+            audio = _declick(audio, sr)  # kill the per-segment edge tick
             results.append((audio, sr))
             sr_master = sr
         except Exception as e:
