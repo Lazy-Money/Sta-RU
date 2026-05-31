@@ -263,9 +263,19 @@ def split_srt(srt_path: Path, cuts: list[float], out_dir: Path,
 
 
 def concat_dubbed_parts(part_paths: list[Path], out_path: Path) -> bool:
-    """Concatenate dubbed video parts into a single output. Tries stream-copy
-    (concat demuxer) first; falls back to the concat filter (re-encode) if
-    streams don't align. Returns True on success.
+    """Join the dubbed parts into the final video. This MUST be the cheap path
+    — a stream-copy, the same thing a desktop video joiner does in seconds. All
+    parts come out of one dub pipeline (same encoder, fps, resolution, audio
+    format), so ffmpeg's `-c copy` should always work.
+
+    What this deliberately does NOT do anymore: fall back to a full re-encode.
+    The old fallback re-encoded the *entire* video with libx264 on CPU whenever
+    the compatibility check failed — on a ~50 min video in Colab that's a
+    multi-hour job that looks exactly like a hang, and is what killed the N#65
+    run right at "Concatenating...". Joining must never be the expensive step.
+    We also skip vp.streams_compatible() on purpose: its ffprobe has no timeout
+    and can hang, while ffmpeg's own `-c copy` already fails fast and cheaply if
+    the streams don't line up.
     """
     if not part_paths:
         return False
@@ -273,15 +283,19 @@ def concat_dubbed_parts(part_paths: list[Path], out_path: Path) -> bool:
         shutil.copy(part_paths[0], out_path)
         return True
 
-    if vp.streams_compatible(part_paths):
-        if vp.concat_streamcopy(part_paths, out_path):
-            return True
-        # If stream-copy reports failure (rare with compatible streams), fall
-        # through to the filter path rather than giving up.
+    # The instant path: byte-copy join. Fails fast (seconds) if streams differ.
+    if vp.concat_streamcopy(part_paths, out_path):
+        return True
 
-    # Fallback: concat filter with re-encode. We pass settings/probe shaped
-    # for vp.concat_filter (compress=False keeps it on libx264).
-    fake_settings = {"compress": False, "quality_crf": 22}
-    fake_probe = {"path": part_paths[0], "width": None, "height": None,
-                  "duration": None, "bit_rate": None, "ok": True}
-    return vp.concat_filter(part_paths, out_path, fake_settings, fake_probe)
+    # Stream-copy didn't work -> the parts genuinely don't match. We refuse to
+    # start a CPU re-encode (that's the multi-hour hang). The parts are already
+    # dubbed and sitting on disk; raise so the caller surfaces a clear error and
+    # they can be joined manually in seconds.
+    raise RuntimeError(
+        "Dubbed parts couldn't be joined losslessly (stream-copy failed). They "
+        f"are already dubbed and left at: {part_paths[0].parent}\n"
+        "  Join them by hand in seconds (any joiner / your own tool), e.g.:\n"
+        "    printf \"file '%s'\\n\" <part1.mp4> <part2.mp4> > list.txt\n"
+        "    ffmpeg -f concat -safe 0 -i list.txt -c copy final.mp4\n"
+        "Refusing to auto-start a multi-hour CPU re-encode."
+    )
