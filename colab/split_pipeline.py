@@ -31,6 +31,30 @@ import video_pipeline as vp
 DEFAULT_MAX_PART_SECONDS = 20 * 60
 
 
+def _trust_silero_vad_repo() -> None:
+    """torch.hub.load prompts "Do you trust this repository? (y/N)" the first
+    time it loads a third-party repo. In a Colab cell stdin isn't connected
+    to the user, so the prompt hangs the kernel forever — `_load_vad` in
+    video_pipeline can't catch it because nothing raises. We pre-write the
+    repo into torch's trusted_list so the prompt is skipped entirely.
+    """
+    try:
+        import torch.hub
+        hub_dir = Path(torch.hub.get_dir())
+    except Exception:
+        return  # no torch -> VAD won't run anyway, ffmpeg-only is fine
+    trusted_file = hub_dir / "trusted_list"
+    entry = "snakers4_silero-vad"
+    try:
+        trusted_file.parent.mkdir(parents=True, exist_ok=True)
+        existing = trusted_file.read_text().splitlines() if trusted_file.exists() else []
+        if entry not in existing:
+            with trusted_file.open("a") as f:
+                f.write(entry + "\n")
+    except OSError:
+        pass
+
+
 def needs_split(video_path: Path, max_part_seconds: int = DEFAULT_MAX_PART_SECONDS) -> bool:
     """True if the video is long enough to warrant pre-splitting."""
     dur = vp.get_duration(video_path) or 0.0
@@ -79,7 +103,9 @@ def plan_cuts(video_path: Path, max_part_seconds: int = DEFAULT_MAX_PART_SECONDS
         return []
 
     # Detect silences with both backends, then merge (the user's video_pipeline
-    # already does this; we just call its primitives).
+    # already does this; we just call its primitives). Trust the silero-vad
+    # repo first so torch.hub doesn't hang on the y/N prompt in Colab.
+    _trust_silero_vad_repo()
     ff_pauses = vp.detect_silences_ffmpeg(video_path)
     vad_pauses = vp.detect_silences_vad(video_path)
     pauses = vp.merge_pauses(ff_pauses, vad_pauses)
