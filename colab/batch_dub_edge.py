@@ -347,6 +347,7 @@ def dub_one(
     demucs_model: str = "htdemucs",
     demucs_segment: int | None = None,
     allow_no_ambient: bool = False,
+    prefetched_video: Path | None = None,
 ) -> None:
     work_dir.mkdir(parents=True, exist_ok=True)
     seg_dir = work_dir / "segments"
@@ -360,6 +361,7 @@ def dub_one(
         item.url, work_dir, cache_root, remove_voice,
         demucs_model=demucs_model, demucs_segment=demucs_segment,
         allow_no_ambient=allow_no_ambient,
+        prefetched_video=prefetched_video,
     )
 
     voice_mask: list[bool] | None = None
@@ -430,6 +432,121 @@ def dub_one(
     shutil.rmtree(work_dir, ignore_errors=True)
 
 
+def dub_one_split_aware(
+    item: VideoItem,
+    lang: str,
+    voice: str,
+    pitch_st: int,
+    work_dir: Path,
+    output_path: Path,
+    remove_voice: bool,
+    dynamic_duration: bool = False,
+    cache_root: Path | None = None,
+    skip_silent_segments: bool = True,
+    burn_in_subs: bool = False,
+    demucs_model: str = "htdemucs",
+    demucs_segment: int | None = None,
+    allow_no_ambient: bool = False,
+    max_part_seconds: int | None = None,
+) -> None:
+    """Wrap dub_one with a pre-pipeline split for long videos.
+
+    If the source is <= max_part_seconds (or splitting is disabled), this is
+    just dub_one passing the pre-downloaded video through. If it's longer,
+    we cut the video and SRT at the best silences so every sub-part fits, run
+    the normal pipeline on each, and concat the dubbed outputs.
+    """
+    import dataclasses
+    import split_pipeline
+
+    work_dir.mkdir(parents=True, exist_ok=True)
+
+    # Step 1: get the source video on disk. Use cache when available so the
+    # split-aware path doesn't re-download on every run.
+    download_dir = work_dir / "_download"
+    download_dir.mkdir(exist_ok=True)
+    full_video = download_dir / "video.mp4"
+    cache_dir = (cache_root / batch_dub.url_cache_key(item.url)) if cache_root else None
+    cached_video = cache_dir / "video.mp4" if cache_dir else None
+    if cached_video and cached_video.exists():
+        shutil.copy(cached_video, full_video)
+        print("  Video from cache")
+    else:
+        print("  Downloading video...", flush=True)
+        batch_dub.download_video(item.url, full_video)
+        if cached_video:
+            cache_dir.mkdir(parents=True, exist_ok=True)
+            shutil.copy(full_video, cached_video)
+
+    duration = batch_dub.get_video_duration(full_video)
+
+    # Short path: one go, normal pipeline, just skip the second download.
+    if max_part_seconds is None or duration <= max_part_seconds:
+        dub_one(
+            item=item, lang=lang, voice=voice, pitch_st=pitch_st,
+            work_dir=work_dir / "whole", output_path=output_path,
+            remove_voice=remove_voice, dynamic_duration=dynamic_duration,
+            cache_root=cache_root,
+            skip_silent_segments=skip_silent_segments,
+            burn_in_subs=burn_in_subs,
+            demucs_model=demucs_model, demucs_segment=demucs_segment,
+            allow_no_ambient=allow_no_ambient,
+            prefetched_video=full_video,
+        )
+        shutil.rmtree(download_dir, ignore_errors=True)
+        return
+
+    # Long path: split at silences, dub each part, concat at the end.
+    print(f"  Long video ({duration:.0f}s > {max_part_seconds}s). "
+          f"Planning silence-aware split...", flush=True)
+    cuts = split_pipeline.plan_cuts(
+        full_video, max_part_seconds, srt_path=item.srt_path,
+    )
+    parts_dir = work_dir / "_parts"
+    parts_dir.mkdir(exist_ok=True)
+    video_parts = split_pipeline.split_video(full_video, cuts, parts_dir)
+    srt_parts = split_pipeline.split_srt(
+        item.srt_path, cuts, parts_dir, video_duration=duration,
+    )
+    if len(video_parts) != len(srt_parts):
+        raise RuntimeError(
+            f"split produced {len(video_parts)} video parts but "
+            f"{len(srt_parts)} SRT parts; this is a bug."
+        )
+    print(f"  Split into {len(video_parts)} parts at "
+          f"{[f'{c:.1f}s' for c in cuts]}", flush=True)
+
+    dubbed_parts: list[Path] = []
+    for i, (vp_path, sp_path) in enumerate(zip(video_parts, srt_parts), start=1):
+        print(f"\n  --- Part {i}/{len(video_parts)} ---", flush=True)
+        sub_item = dataclasses.replace(item, srt_path=sp_path)
+        sub_work = work_dir / f"part_{i:03d}"
+        sub_output = parts_dir / f"dubbed_{i:03d}.mp4"
+        # cache_root=None for sub-parts: their url_hash would collide with
+        # the full video's cache and pollute it with per-part artifacts.
+        dub_one(
+            item=sub_item, lang=lang, voice=voice, pitch_st=pitch_st,
+            work_dir=sub_work, output_path=sub_output,
+            remove_voice=remove_voice, dynamic_duration=dynamic_duration,
+            cache_root=None,
+            skip_silent_segments=skip_silent_segments,
+            burn_in_subs=burn_in_subs,
+            demucs_model=demucs_model, demucs_segment=demucs_segment,
+            allow_no_ambient=allow_no_ambient,
+            prefetched_video=vp_path,
+        )
+        dubbed_parts.append(sub_output)
+
+    print(f"\n  Concatenating {len(dubbed_parts)} dubbed parts...", flush=True)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    ok = split_pipeline.concat_dubbed_parts(dubbed_parts, output_path)
+    if not ok:
+        raise RuntimeError("concat of dubbed parts failed")
+    size_mb = output_path.stat().st_size / 1024 / 1024
+    print(f"  ✓ {output_path.name} ({size_mb:.1f} MB)  [from {len(dubbed_parts)} parts]")
+    shutil.rmtree(work_dir, ignore_errors=True)
+
+
 def _has_nvenc_local() -> bool:
     """Local proxy so we don't have to import _has_nvenc through batch_dub."""
     from batch_dub import _has_nvenc
@@ -458,8 +575,13 @@ def run_batch(
     demucs_model: str = "htdemucs",
     demucs_segment: int | None = None,
     allow_no_ambient: bool = False,
+    max_part_seconds: int | None = 20 * 60,
 ) -> list[VideoItem]:
-    """Main entry point. `voice` overrides `gender` if provided."""
+    """Main entry point. `voice` overrides `gender` if provided.
+    `max_part_seconds`: split videos longer than this at silences so each
+    sub-part runs through the dub pipeline as a normal short video; default
+    is 20 min (sized for stock Colab's 12 GB so Demucs/TTS don't OOM). Pass
+    None to disable splitting."""
     lang_uc = lang.upper()
     voice = resolve_voice(lang_uc, gender, voice)
 
@@ -513,7 +635,7 @@ def run_batch(
         print(f"\n[{idx}/{len(pending)}] N#{it.n} — {(it.title or '')[:60]}")
         t0 = time.time()
         try:
-            dub_one(
+            dub_one_split_aware(
                 item=it,
                 lang=lang.lower(),
                 voice=voice,
@@ -528,6 +650,7 @@ def run_batch(
                 demucs_model=demucs_model,
                 demucs_segment=demucs_segment,
                 allow_no_ambient=allow_no_ambient,
+                max_part_seconds=max_part_seconds,
             )
             it.status = "done"
             print(f"  Elapsed: {time.time() - t0:.1f}s")
