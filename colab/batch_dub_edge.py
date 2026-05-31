@@ -151,8 +151,27 @@ async def _tts_to_wav(
     pitch_str = f"{pitch_st:+d}Hz"
     rate_str = f"{rate_pct:+d}%"
     mp3_path = out_path.with_suffix(".mp3")
-    comm = edge_tts.Communicate(text, voice, pitch=pitch_str, rate=rate_str)
-    await comm.save(str(mp3_path))
+    # Retry transient edge-tts failures (502/503/504, connection drops) with
+    # exponential backoff. Bing's server occasionally rate-limits a single
+    # segment without hurting the rest of the batch.
+    delays = [1.0, 2.0, 4.0]
+    for attempt, delay in enumerate([0.0] + delays):
+        if delay > 0:
+            await asyncio.sleep(delay)
+        try:
+            comm = edge_tts.Communicate(text, voice, pitch=pitch_str, rate=rate_str)
+            await comm.save(str(mp3_path))
+            break
+        except Exception as e:
+            msg = str(e)
+            transient = any(s in msg for s in ("502", "503", "504",
+                                               "ServerDisconnected",
+                                               "Connection reset",
+                                               "Connection refused"))
+            if not transient or attempt == len(delays):
+                raise
+            print(f"    [edge-tts] transient error ({msg[:80]}); retry "
+                  f"{attempt + 1}/{len(delays)} in {delays[attempt]}s", flush=True)
     # edge-tts only outputs MP3; convert to WAV (24kHz mono to match the rest)
     subprocess.run(
         [

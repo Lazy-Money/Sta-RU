@@ -183,10 +183,14 @@ def _ytdlp_base_cmd(client: str | None) -> list[str]:
 
 
 def _is_botcheck(err: str) -> bool:
-    """True if a yt-dlp error is YouTube's cloud-IP bot wall (worth retrying
-    on another client) rather than a per-video problem (private/removed/geo)."""
+    """True if a yt-dlp error is worth retrying on another player client.
+    Covers the bot wall ('sign in to confirm…') *and* per-format 403s on the
+    media URL — those are usually fixed by another client serving a different
+    stream URL. Per-video problems (private/removed/geo) won't change between
+    clients and exit the loop on the first failure."""
     e = (err or "").lower()
-    return "not a bot" in e or "sign in to confirm" in e
+    return ("not a bot" in e or "sign in to confirm" in e
+            or "http error 403" in e or "forbidden" in e)
 
 
 def _last_err_line(stderr: str) -> str:
@@ -606,9 +610,85 @@ def extract_voice_ref(audio_path: Path, subs: list[srt.Subtitle], out_path: Path
 # ============================================================
 #  Demucs vocal removal (optional)
 # ============================================================
+# Demucs loads the whole track into RAM (model output + stems = several GB on
+# long videos). On a stock 12GB Colab the system OOM-killer hits at ~30 min of
+# audio and sometimes takes the Jupyter kernel down with it (SIGKILL / exit -9).
+# Long inputs are split into chunks of at most this many minutes, each fed to
+# Demucs separately, then concatenated with a short crossfade to hide seams.
+DEMUCS_MAX_CHUNK_MIN = 5
+
+
+def _run_demucs_once(audio_path: Path, work: Path, demucs_model: str,
+                     seg: int | None, device: str | None) -> tuple[bool, int]:
+    """Single Demucs invocation. Returns (ok, exit_code). ok=True iff the
+    process exited 0 *and* produced a no_vocals.wav. A negative exit_code means
+    the process was killed by a signal (SIGKILL = -9 → OOM killer)."""
+    cmd = [
+        sys.executable, "-m", "demucs.separate",
+        "--two-stems", "vocals",
+        "-n", demucs_model,
+        "-o", str(work),
+    ]
+    if seg is not None:
+        cmd += ["--segment", str(seg)]
+    if device:
+        cmd += ["-d", device]
+    cmd.append(str(audio_path))
+    # Popen + wait so a SIGKILL on the child doesn't propagate as an exception
+    # that could escape and tear down the calling cell.
+    proc = subprocess.Popen(cmd)
+    rc = proc.wait()
+    if rc != 0:
+        if rc == -9 or rc == 137:
+            print("  [WARN] demucs killed by OOM (exit -9). "
+                  "Will retry with smaller chunks if possible.", flush=True)
+        else:
+            print(f"  [WARN] demucs failed (exit {rc})", flush=True)
+        return False, rc
+    produced = next(work.rglob("no_vocals.wav"), None) is not None
+    return produced, rc
+
+
+def _concat_no_vocals(chunk_stems: list[Path], out_path: Path,
+                      crossfade_s: float = 0.02) -> None:
+    """Concatenate per-chunk no_vocals stems into a single file with a short
+    crossfade (default 20 ms) at the seams, so chunk boundaries are inaudible.
+    Chunks are processed in order; sample rate is taken from the first chunk."""
+    if not chunk_stems:
+        raise RuntimeError("no chunk stems to concatenate")
+    if len(chunk_stems) == 1:
+        shutil.copy(chunk_stems[0], out_path)
+        return
+    parts: list[np.ndarray] = []
+    sr_master: int | None = None
+    for p in chunk_stems:
+        audio, sr = sf.read(p)
+        if sr_master is None:
+            sr_master = sr
+        elif sr != sr_master:
+            raise RuntimeError(f"sample rate mismatch between chunks: {sr} vs {sr_master}")
+        parts.append(audio)
+    fade_n = max(1, int(round(crossfade_s * sr_master)))
+    merged = parts[0]
+    for nxt in parts[1:]:
+        n = min(fade_n, len(merged), len(nxt))
+        if n > 0:
+            ramp = np.linspace(0.0, 1.0, n, dtype=merged.dtype)
+            tail = merged[-n:]
+            head = nxt[:n]
+            if merged.ndim == 2:
+                ramp = ramp[:, None]
+            blended = tail * (1.0 - ramp) + head * ramp
+            merged = np.concatenate([merged[:-n], blended, nxt[n:]], axis=0)
+        else:
+            merged = np.concatenate([merged, nxt], axis=0)
+    sf.write(out_path, merged, sr_master)
+
+
 def strip_vocals(
     audio_path: Path, out_path: Path, vocals_out: Path | None = None,
     demucs_model: str = "htdemucs", demucs_segment: int | None = None,
+    max_chunk_minutes: int = DEMUCS_MAX_CHUNK_MIN,
 ) -> bool:
     """Run Demucs to separate vocals from the rest.
 
@@ -618,71 +698,104 @@ def strip_vocals(
 
     `demucs_model` picks the Demucs model (e.g. "htdemucs", "hdemucs_mmi",
     "mdx_extra_q"). Lighter models cut RAM usage at some quality cost.
-    `demucs_segment` (seconds) caps the chunk length to further reduce RAM —
-    leave as None for the model default.
+    `demucs_segment` (seconds) caps the chunk length to further reduce VRAM —
+    leave as None for the model default. `max_chunk_minutes` caps the system
+    RAM by splitting long inputs into chunks of this many minutes before
+    feeding Demucs (each chunk separated independently, then concatenated with
+    a short crossfade). Set to 0 to disable splitting.
 
     Returns True on success, False if Demucs isn't installed or both the GPU
-    and CPU attempts fail.
+    and CPU attempts (per chunk) fail.
     """
     try:
         import demucs.separate  # noqa: F401
     except ImportError:
         print("[WARN] demucs not installed; skipping vocal removal")
         return False
-    work = audio_path.parent / "demucs_out"
-    work.mkdir(exist_ok=True)
-    base_cmd = [
-        sys.executable, "-m", "demucs.separate",
-        "--two-stems", "vocals",
-        "-n", demucs_model,
-        "-o", str(work),
-    ]
-    # Transformer-based htdemucs / htdemucs_ft refuse segments longer than
-    # 7.8s (their training window). Default to 7s when nothing was passed so
-    # long videos don't blow up VRAM with a silent OOM; cap user-supplied
-    # values too. Convolutional models (hdemucs_mmi, mdx*) are unbounded.
+
     seg = demucs_segment
     if demucs_model.startswith("htdemucs"):
+        # Transformer-based htdemucs / htdemucs_ft refuse segments longer than
+        # 7.8s (their training window). Default to 7s when nothing was passed
+        # so long videos don't blow up VRAM with a silent OOM; cap user values
+        # too. Convolutional models (hdemucs_mmi, mdx*) are unbounded.
         if seg is None:
             seg = 7
         elif seg > 7:
-            print(f"  [INFO] capping --segment from {seg} to 7 for transformer model {demucs_model} (max 7.8s)")
+            print(f"  [INFO] capping --segment from {seg} to 7 for transformer "
+                  f"model {demucs_model} (max 7.8s)")
             seg = 7
-    if seg is not None:
-        base_cmd += ["--segment", str(seg)]
-    base_cmd.append(str(audio_path))
 
-    # Run Demucs without capturing output — its progress (and any silent
-    # warning) shows up in the cell. We then verify the expected file is
-    # actually on disk: Demucs sometimes exits 0 but produces no stem when
-    # VRAM runs out mid-process. If that happens, retry once on CPU.
-    def _try_demucs(extra_args: list[str]) -> bool:
-        cmd = base_cmd[:-1] + extra_args + [base_cmd[-1]]
-        try:
-            subprocess.run(cmd, check=True)
-        except subprocess.CalledProcessError as e:
-            print(f"  [WARN] demucs failed (exit {e.returncode})")
+    work_root = audio_path.parent / "demucs_out"
+    if work_root.exists():
+        shutil.rmtree(work_root, ignore_errors=True)
+    work_root.mkdir(exist_ok=True)
+
+    # Decide whether to split. ffprobe duration; on failure, treat as short.
+    duration_s = 0.0
+    try:
+        duration_s = get_video_duration(audio_path)  # works for audio too
+    except Exception:
+        pass
+
+    chunk_files: list[Path] = [audio_path]
+    if max_chunk_minutes and duration_s > max_chunk_minutes * 60 + 1:
+        chunk_s = max_chunk_minutes * 60
+        n_chunks = int(np.ceil(duration_s / chunk_s))
+        print(f"  [INFO] splitting audio for Demucs: {duration_s:.0f}s -> "
+              f"{n_chunks} chunks of <={max_chunk_minutes} min")
+        chunks_dir = audio_path.parent / "demucs_chunks"
+        if chunks_dir.exists():
+            shutil.rmtree(chunks_dir, ignore_errors=True)
+        chunks_dir.mkdir(exist_ok=True)
+        chunk_files = []
+        for i in range(n_chunks):
+            start = i * chunk_s
+            cp = chunks_dir / f"chunk_{i:03d}.wav"
+            subprocess.run(
+                ["ffmpeg", "-y", "-loglevel", "error",
+                 "-ss", str(start), "-t", str(chunk_s),
+                 "-i", str(audio_path), "-c", "copy", str(cp)],
+                check=True,
+            )
+            chunk_files.append(cp)
+
+    # Process each chunk: GPU first, CPU fallback. Each chunk goes into its own
+    # work dir so we can grab the per-chunk no_vocals.wav.
+    chunk_stems: list[Path] = []
+    chunk_vocals: list[Path] = []
+    for i, cp in enumerate(chunk_files):
+        chunk_work = work_root / f"c{i:03d}"
+        chunk_work.mkdir(exist_ok=True)
+        ok, rc = _run_demucs_once(cp, chunk_work, demucs_model, seg, device=None)
+        if not ok:
+            print(f"  [WARN] Demucs chunk {i+1}/{len(chunk_files)} GPU run "
+                  f"didn't produce output; retrying on CPU...", flush=True)
+            shutil.rmtree(chunk_work, ignore_errors=True)
+            chunk_work.mkdir(exist_ok=True)
+            ok, rc = _run_demucs_once(cp, chunk_work, demucs_model, seg, device="cpu")
+        if not ok:
+            print(f"  [WARN] Demucs failed on chunk {i+1}/{len(chunk_files)} "
+                  f"on both GPU and CPU; no ambient stem produced.", flush=True)
             return False
-        return next(work.rglob("no_vocals.wav"), None) is not None
+        nv = next(chunk_work.rglob("no_vocals.wav"), None)
+        if nv is None:
+            print(f"  [WARN] no_vocals.wav missing for chunk {i+1}; aborting.",
+                  flush=True)
+            return False
+        chunk_stems.append(nv)
+        if vocals_out is not None:
+            v = next(chunk_work.rglob("vocals.wav"), None)
+            if v is not None:
+                chunk_vocals.append(v)
 
-    ok = _try_demucs([])
-    if not ok:
-        print("  [WARN] Demucs run finished but no_vocals.wav not found "
-              "(likely silent OOM). Retrying on CPU...")
-        shutil.rmtree(work, ignore_errors=True)
-        work.mkdir(exist_ok=True)
-        ok = _try_demucs(["-d", "cpu"])
-    if not ok:
-        print("  [WARN] Demucs failed on GPU and CPU; no ambient stem produced.")
-        return False
-
-    no_vocals = next(work.rglob("no_vocals.wav"), None)
-    shutil.copy(no_vocals, out_path)
-    if vocals_out is not None:
-        vocals = next(work.rglob("vocals.wav"), None)
-        if vocals:
-            shutil.copy(vocals, vocals_out)
-    shutil.rmtree(work, ignore_errors=True)
+    _concat_no_vocals(chunk_stems, out_path)
+    if vocals_out is not None and chunk_vocals:
+        _concat_no_vocals(chunk_vocals, vocals_out)
+    shutil.rmtree(work_root, ignore_errors=True)
+    chunks_dir = audio_path.parent / "demucs_chunks"
+    if chunks_dir.exists():
+        shutil.rmtree(chunks_dir, ignore_errors=True)
     return True
 
 
