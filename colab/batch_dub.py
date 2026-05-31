@@ -484,14 +484,16 @@ def prepare_video_and_ambient(
     `cache_root` is provided, every artifact is kept under
     `{cache_root}/{url_hash}/` so subsequent runs in other languages reuse them.
     When `prefetched_video` is provided, the download step is skipped and that
-    file is used as the source — useful when the caller has already split the
-    video into parts (split_pipeline). Cache lookups are also skipped in that
-    case so a sub-part's audio/ambient don't collide with the full video's.
+    file is used as the source — useful when the caller has already downloaded
+    or split the video (split_pipeline). The caller controls caching purely via
+    `cache_root`: split sub-parts pass cache_root=None (no caching, so per-part
+    stems never collide with the full video's), while the short-video whole
+    path passes the real cache_root so orig/ambient/vocals still cache and get
+    reused across languages exactly as before.
     Returns (video_path, orig_audio_path, ambient_path_or_None, vocals_path_or_None)."""
     video_path = work_dir / "video.mp4"
     orig_audio = work_dir / "orig.wav"
-    use_cache = cache_root is not None and prefetched_video is None
-    cache_dir = (cache_root / url_cache_key(url)) if use_cache else None
+    cache_dir = (cache_root / url_cache_key(url)) if cache_root else None
     if cache_dir:
         cache_dir.mkdir(parents=True, exist_ok=True)
     cached_video = cache_dir / "video.mp4" if cache_dir else None
@@ -506,6 +508,10 @@ def prepare_video_and_ambient(
     # Video
     if prefetched_video is not None:
         shutil.copy(prefetched_video, video_path)
+        # Keep the cache warm for the next language run even though we didn't
+        # download here (the prefetched file is the same source video).
+        if cached_video and not cached_video.exists():
+            shutil.copy(prefetched_video, cached_video)
     elif cached_video and cached_video.exists():
         shutil.copy(cached_video, video_path)
         print("  Video from cache")
