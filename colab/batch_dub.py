@@ -107,6 +107,7 @@ _FORBIDDEN = re.compile(r'[\\/:*?"<>|]')
 class VideoItem:
     n: int                       # ordinal (1-based)
     url: str
+    source_path: Path | None = None  # local video (upload/Drive) instead of a URL
     upload_date: str = ""        # YYYY-MM-DD
     title: str = ""              # original title from YouTube
     duration: float = 0.0        # seconds
@@ -303,6 +304,43 @@ def build_items(
     return items
 
 
+def build_items_from_files(
+    paths: list[str | Path],
+    n_overrides: list[int | None] | None = None,
+) -> list[VideoItem]:
+    """Build VideoItem list from local video files (uploaded or on Drive).
+
+    No network, no yt-dlp, no metadata fetch — this is the YouTube-free path,
+    so it also sidesteps the cloud-IP bot wall entirely. Each item carries its
+    source_path; title/date stay empty and the output name is derived from the
+    file stem by build_output_name. N# is the 1-based position unless overridden
+    (parallel to how build_items numbers a list of URLs)."""
+    items: list[VideoItem] = []
+    used_ns: set[int] = set()
+    auto_n = 0
+    for i, raw in enumerate(paths):
+        p = Path(raw)
+        n_override = (n_overrides[i] if n_overrides and i < len(n_overrides) else None)
+        if n_override is not None:
+            n = n_override
+        else:
+            auto_n += 1
+            while auto_n in used_ns:
+                auto_n += 1
+            n = auto_n
+        used_ns.add(n)
+        item = VideoItem(n=n, url="", source_path=p)
+        if not p.exists():
+            item.status = "failed"
+            item.error = f"file not found: {p}"
+        else:
+            # A best-effort human title for the plan/preview table; not used for
+            # output naming (that comes from the stem via build_output_name).
+            item.title = p.stem
+        items.append(item)
+    return items
+
+
 def _translate_titles_inplace(items: list[VideoItem], target_lang: str) -> None:
     """Translate each item.title → item.title_translated using deep-translator."""
     try:
@@ -331,8 +369,14 @@ def sanitize(name: str) -> str:
 
 def build_output_name(item: VideoItem, lang: str, translate: bool, ext: str = "mp4") -> str:
     """Build output filename.
+    Local file : '{video stem}-{LANG}.{ext}'  (uploaded/Drive source)
     Full form  : '{date} - {N#} - {title}-{LANG}.{ext}'
     Fallback   : '{N#}-{LANG}.{ext}' (when YouTube metadata is unavailable)"""
+    if item.source_path is not None:
+        # Local video: name the output after the file the user gave us, not the
+        # catalog N# — there's no YouTube metadata and the filename is the most
+        # meaningful identifier the user has.
+        return f"{sanitize(Path(item.source_path).stem)}-{lang.upper()}.{ext}"
     base_title = item.title_translated if (translate and item.title_translated) else item.title
     if not base_title:
         # No metadata at all -> use SRT-style minimal name
@@ -345,6 +389,33 @@ def build_output_name(item: VideoItem, lang: str, translate: bool, ext: str = "m
 # ============================================================
 #  Range filtering
 # ============================================================
+def newest_srt(srt_dir: Path, lang: str) -> Path | None:
+    """Return the .srt the user most likely just uploaded for a single-video run.
+
+    The rule is purely temporal: the most recently modified .srt wins. A user
+    dubbing one video shouldn't have to rename their subtitle to {N#}-{LANG}.srt,
+    and "last uploaded wins" is exactly what makes a stale leftover from a past
+    run (an older mtime) lose without any naming ceremony.
+
+    The only tiebreak is for files written in the same second — which is what a
+    multi-select upload produces: among an mtime tie, a name matching the target
+    language ('*-{LANG}.srt') is preferred. This never overrides recency, so it
+    can't resurrect an older stray over the file you actually just dropped in.
+    Returns None if the directory has no .srt."""
+    srt_dir = Path(srt_dir)
+    if not srt_dir.is_dir():
+        return None
+    candidates = list(srt_dir.glob("*.srt"))
+    if not candidates:
+        return None
+    lang_suffix = f"-{lang.upper()}.SRT"
+    # Sort by (mtime, name-matches-language): newest first, and within the same
+    # mtime the language-matching file ranks last so [-1] picks it.
+    candidates.sort(key=lambda p: (int(p.stat().st_mtime),
+                                   p.name.upper().endswith(lang_suffix)))
+    return candidates[-1]
+
+
 def parse_range(expr: str, max_n: int) -> set[int]:
     """Parse 'all', '1-10', '47', '1-5,12,20-25' → set of N#."""
     expr = (expr or "").strip().lower()
@@ -388,6 +459,33 @@ def download_video(url: str, out_path: Path) -> None:
         if not _is_botcheck(last_err):
             break
     raise RuntimeError(f"yt-dlp could not download {url}: {last_err}")
+
+
+def normalize_local_video(src: Path, out_path: Path, fps: float | None = None) -> None:
+    """Re-encode an arbitrary local video into a clean, constant-frame-rate MP4.
+
+    yt-dlp hands us a predictable mp4; a file the user supplies might be .mkv/
+    .mov, variable-frame-rate (VFR), or carry odd audio. VFR in particular can
+    reintroduce the audio/video drift we fixed with -reset_timestamps, because
+    the downstream warp/mux assume a constant rate. Forcing CFR here blinds the
+    rest of the pipeline to the source's quirks. Opt-in: only run when the user
+    ticks 'normalize' in the notebook, since it's a full re-encode.
+
+    Uses NVENC (HEVC) when available, else libx264. Audio -> AAC stereo 48 kHz.
+    """
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    target_fps = fps or get_video_fps(src) or 30.0
+    cmd = ["ffmpeg", "-y", "-loglevel", "error", "-i", str(src),
+           "-r", f"{target_fps}", "-vsync", "cfr"]
+    if _has_nvenc():
+        cmd += ["-c:v", "hevc_nvenc", "-preset", "p5", "-rc", "vbr",
+                "-cq", "28", "-b:v", "0", "-tag:v", "hvc1"]
+    else:
+        cmd += ["-c:v", "libx264", "-preset", "medium", "-crf", "20"]
+    cmd += ["-pix_fmt", "yuv420p",
+            "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2",
+            str(out_path)]
+    subprocess.run(cmd, check=True)
 
 
 def extract_audio(video_path: Path, out_path: Path) -> None:
@@ -445,6 +543,29 @@ def url_cache_key(url: str) -> str:
     return hashlib.md5(url.encode("utf-8")).hexdigest()[:12]
 
 
+def source_cache_key(source_path: Path) -> str:
+    """Stable short key per local video file — same across languages.
+
+    Derived from path + size + mtime (not file contents) so it's instant on a
+    multi-GB video. Distinct enough that two different files never collide, and
+    stable across language runs of the *same* file so the Demucs ambient stem is
+    reused exactly like the URL cache does for YouTube sources."""
+    p = Path(source_path)
+    try:
+        st = p.stat()
+        sig = f"{p.resolve()}|{st.st_size}|{int(st.st_mtime)}"
+    except OSError:
+        sig = str(p.resolve())
+    return "f_" + hashlib.md5(sig.encode("utf-8")).hexdigest()[:10]
+
+
+def item_cache_key(item: "VideoItem") -> str:
+    """Cache key for an item regardless of whether it's a URL or a local file."""
+    if item.source_path is not None:
+        return source_cache_key(item.source_path)
+    return url_cache_key(item.url)
+
+
 def _log_ambient_stats(path: Path) -> None:
     """Print dur/rms/peak of the ambient stem so over-stripping is visible
     in the log. Demucs sometimes throws away non-musical ambient (workshop
@@ -478,6 +599,7 @@ def prepare_video_and_ambient(
     demucs_segment: int | None = None,
     allow_no_ambient: bool = False,
     prefetched_video: Path | None = None,
+    cache_key: str | None = None,
 ) -> tuple[Path, Path, Path | None, Path | None]:
     """Download the video (or fetch from cache), extract its mono audio, and
     optionally produce the ambient AND isolated-vocals tracks. When
@@ -493,7 +615,7 @@ def prepare_video_and_ambient(
     Returns (video_path, orig_audio_path, ambient_path_or_None, vocals_path_or_None)."""
     video_path = work_dir / "video.mp4"
     orig_audio = work_dir / "orig.wav"
-    cache_dir = (cache_root / url_cache_key(url)) if cache_root else None
+    cache_dir = (cache_root / (cache_key or url_cache_key(url))) if cache_root else None
     if cache_dir:
         cache_dir.mkdir(parents=True, exist_ok=True)
     cached_video = cache_dir / "video.mp4" if cache_dir else None

@@ -61,6 +61,7 @@ from batch_dub import (
     SAMPLE_RATE,
     VideoItem,
     build_items,
+    build_items_from_files,
     build_output_name,
     detect_silent_segments,
     download_video,
@@ -68,6 +69,7 @@ from batch_dub import (
     fetch_metadata,
     get_video_duration,
     load_urls,
+    newest_srt,
     parse_range,
     prepare_video_and_ambient,
     sanitize,
@@ -392,6 +394,7 @@ def dub_one(
         demucs_model=demucs_model, demucs_segment=demucs_segment,
         allow_no_ambient=allow_no_ambient,
         prefetched_video=prefetched_video,
+        cache_key=batch_dub.item_cache_key(item),
     )
 
     voice_mask: list[bool] | None = None
@@ -478,6 +481,7 @@ def dub_one_split_aware(
     demucs_segment: int | None = None,
     allow_no_ambient: bool = False,
     max_part_seconds: int | None = None,
+    normalize_local: bool = False,
 ) -> None:
     """Wrap dub_one with a pre-pipeline split for long videos.
 
@@ -485,6 +489,10 @@ def dub_one_split_aware(
     just dub_one passing the pre-downloaded video through. If it's longer,
     we cut the video and SRT at the best silences so every sub-part fits, run
     the normal pipeline on each, and concat the dubbed outputs.
+
+    Source can be a YouTube URL (item.url) or a local file (item.source_path,
+    set for uploaded / Drive videos). A local source skips yt-dlp entirely —
+    that's the path that dodges YouTube's cloud-IP bot wall.
     """
     import dataclasses
     import split_pipeline
@@ -492,15 +500,28 @@ def dub_one_split_aware(
     work_dir.mkdir(parents=True, exist_ok=True)
 
     # Step 1: get the source video on disk. Use cache when available so the
-    # split-aware path doesn't re-download on every run.
+    # split-aware path doesn't re-download (or re-copy) on every run.
     download_dir = work_dir / "_download"
     download_dir.mkdir(exist_ok=True)
     full_video = download_dir / "video.mp4"
-    cache_dir = (cache_root / batch_dub.url_cache_key(item.url)) if cache_root else None
+    cache_dir = (cache_root / batch_dub.item_cache_key(item)) if cache_root else None
     cached_video = cache_dir / "video.mp4" if cache_dir else None
     if cached_video and cached_video.exists():
         shutil.copy(cached_video, full_video)
         print("  Video from cache")
+    elif item.source_path is not None:
+        src = Path(item.source_path)
+        if not src.exists():
+            raise RuntimeError(f"source video not found: {src}")
+        if normalize_local:
+            print("  Normalizing local video (CFR re-encode)...", flush=True)
+            batch_dub.normalize_local_video(src, full_video)
+        else:
+            print(f"  Using local video: {src.name}", flush=True)
+            shutil.copy(src, full_video)
+        if cached_video:
+            cache_dir.mkdir(parents=True, exist_ok=True)
+            shutil.copy(full_video, cached_video)
     else:
         print("  Downloading video...", flush=True)
         batch_dub.download_video(item.url, full_video)
@@ -592,9 +613,9 @@ def _has_nvenc_local() -> bool:
 #  Public entry point
 # ============================================================
 def run_batch(
-    urls,
-    srt_dir,
-    output_dir,
+    urls=None,
+    srt_dir=None,
+    output_dir=None,
     lang: str = "EN",
     gender: str = "M",
     voice: str | None = None,
@@ -611,32 +632,61 @@ def run_batch(
     demucs_segment: int | None = None,
     allow_no_ambient: bool = False,
     max_part_seconds: int | None = 35 * 60,
+    source_paths: list[str | Path] | None = None,
+    normalize_local: bool = False,
 ) -> list[VideoItem]:
     """Main entry point. `voice` overrides `gender` if provided.
     `max_part_seconds`: split videos longer than this at silences so each
     sub-part runs through the dub pipeline as a normal short video; default
-    is 35 min. Pass None to disable splitting."""
+    is 35 min. Pass None to disable splitting.
+
+    Source selection:
+      - `source_paths` set -> dub local files (uploaded / Drive). No yt-dlp, no
+        metadata, no YouTube bot wall. Output is named after each file's stem.
+      - otherwise -> `urls` are YouTube links, as before.
+
+    Subtitle pairing:
+      - exactly one video -> use the newest .srt in srt_dir (the last one the
+        user uploaded), regardless of its filename.
+      - more than one     -> pair each by the numbered convention {N#}-{LANG}.srt.
+
+    `normalize_local`: re-encode local files to constant-frame-rate MP4 first
+    (opt-in; protects against VFR/.mkv drift)."""
     lang_uc = lang.upper()
     voice = resolve_voice(lang_uc, gender, voice)
 
-    url_entries = load_urls(urls)
-    if not url_entries:
-        print("No URLs to process.")
-        return []
-    print(f"\n{'='*60}\nLoaded {len(url_entries)} URLs\n{'='*60}\n")
-
-    print("Fetching metadata from YouTube...")
-    items = build_items(url_entries, translate_titles=translate_titles, target_lang=lang.lower())
+    using_files = bool(source_paths)
+    if using_files:
+        items = build_items_from_files(list(source_paths))
+        print(f"\n{'='*60}\nLoaded {len(items)} local video file(s)\n{'='*60}\n")
+    else:
+        url_entries = load_urls(urls)
+        if not url_entries:
+            print("No URLs to process.")
+            return []
+        print(f"\n{'='*60}\nLoaded {len(url_entries)} URLs\n{'='*60}\n")
+        print("Fetching metadata from YouTube...")
+        items = build_items(url_entries, translate_titles=translate_titles, target_lang=lang.lower())
 
     srt_dir_path = Path(srt_dir)
     output_dir_path = Path(output_dir)
+
+    # Subtitle pairing rule. A single video shouldn't force the user to rename
+    # their SRT to {N#}-{LANG}.srt, so we take the newest SRT in the dir. With
+    # several videos we need the numbered convention to tell them apart.
+    single = sum(1 for it in items if it.status != "failed") == 1
+    auto_srt = newest_srt(srt_dir_path, lang_uc) if single else None
+    if single and auto_srt is not None:
+        print(f"  Single video -> using newest subtitle: {auto_srt.name}")
+
     for it in items:
         if it.status == "failed":
             continue
-        srt_path = srt_dir_path / f"{it.n}-{lang_uc}.srt"
-        if not srt_path.exists():
+        srt_path = auto_srt if single else (srt_dir_path / f"{it.n}-{lang_uc}.srt")
+        if srt_path is None or not srt_path.exists():
             it.status = "skipped"
-            it.error = f"no SRT: {srt_path.name}"
+            it.error = ("no SRT in " + str(srt_dir_path) if single
+                        else f"no SRT: {it.n}-{lang_uc}.srt")
             continue
         it.srt_path = srt_path
         out_name = build_output_name(it, lang, translate_titles, ext="mp4")
@@ -685,6 +735,7 @@ def run_batch(
                 demucs_segment=demucs_segment,
                 allow_no_ambient=allow_no_ambient,
                 max_part_seconds=max_part_seconds,
+                normalize_local=normalize_local,
             )
             it.status = "done"
             print(f"  Elapsed: {time.time() - t0:.1f}s")
