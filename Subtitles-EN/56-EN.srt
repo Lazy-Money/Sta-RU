@@ -1,1175 +1,347 @@
 1
-00:00:00,880 --> 00:00:19,060
-Fall has arrived, heating season's starting, and we decided to build an interesting setup — at the same time testing whether you can heat a radiator like this without a circulation pump.
+00:00:00,750 --> 00:00:02,330
+Hi everyone.
 
 2
-00:00:20,220 --> 00:00:23,480
-Pump-less means without an extra pump.
+00:00:02,770 --> 00:00:11,350
+Today we'll be looking at how this amplifier attachment for the lab signal generator works for testing our coils.
 
 3
-00:00:24,960 --> 00:00:30,780
-Last night we got all the parts ready for assembling a small boiler.
+00:00:12,230 --> 00:00:13,730
+There's nothing complicated about it.
 
 4
-00:00:32,960 --> 00:00:36,780
-We'll heat it with electricity, using this kind of heating element.
+00:00:15,390 --> 00:00:31,930
+It's built around an IRF840 transistor, with a TC4420 driver for that transistor on the heat sink, and a go-between chip linking the lab signal generator and the driver.
 
 5
-00:00:38,700 --> 00:00:41,320
-Now we'll weld it all together.
+00:00:32,070 --> 00:00:37,750
+The go-between chip is the same one as before — a TC4093BP.
 
 6
-00:00:42,860 --> 00:00:46,380
-These, say, will be the outlets to the radiator.
+00:00:39,350 --> 00:00:48,750
+To power these chips we use a DC-DC converter built around the LM2596.
 
 7
-00:00:47,780 --> 00:01:00,060
-The concern is that the cross-section for water flow is a bit narrow for normal water circulation through the radiator.
+00:00:49,470 --> 00:00:56,410
+We set it to 15 V with the trim pot and feed it a slightly higher voltage.
 
 8
-00:01:00,740 --> 00:01:05,680
-So we'll put it together now and check whether it actually works.
+00:00:56,650 --> 00:01:00,730
+In my case it's an 18 V mains converter.
 
 9
-00:01:07,520 --> 00:01:11,540
-We picked up a small expansion tank at the store.
+00:01:01,670 --> 00:01:04,290
+It can run from batteries too — whatever you have on hand.
 
 10
-00:01:12,720 --> 00:01:14,700
-Not cheap — 600 rubles.
+00:01:05,410 --> 00:01:10,050
+The schematic is shown in the picture.
 
 11
-00:01:16,580 --> 00:01:18,220
-No way around it.
+00:01:10,570 --> 00:01:18,970
+By the way, I'll upload all my schematics to a file-sharing service and drop the link under this video — same as the one I filmed before.
 
 12
-00:01:18,220 --> 00:01:27,880
-This is a valve that'll trip if water pressure in the system goes past a dangerous mark.
+00:01:20,490 --> 00:01:26,730
+At this point you should see a nice clean oscillogram like this.
 
 13
-00:01:28,920 --> 00:01:38,820
-Plus metal union fittings, so it's easy to hook this boiler up to the radiator.
+00:01:27,950 --> 00:01:30,010
+Let's see what else.
 
 14
-00:01:40,420 --> 00:01:46,600
-We'll weld it, fire it up, test it, and see whether this approach works.
+00:01:30,450 --> 00:01:44,350
+The signal from the lab signal generator hits one of the Schmitt triggers, gets inverted, and then we invert it again on the second Schmitt trigger to get the true signal.
 
 15
-00:01:47,760 --> 00:01:51,260
-Although the plumbers told us it wouldn't.
+00:01:44,410 --> 00:01:53,050
+From there, through a 10 Ω damping resistor, the signal reaches the driver controlling the FET's gate.
 
 16
-00:01:52,440 --> 00:01:53,220
-Let's try it.
+00:01:53,970 --> 00:02:09,530
+Then the FET switches our main power — from batteries or any other power source — onto the inductor that drives our coil.
 
 17
-00:01:56,160 --> 00:02:05,560
-We started welding the bottom hole where the heating element will go.
+00:02:11,930 --> 00:02:18,910
+The wiring isn't complicated. Let's look at how it works.
 
 18
-00:02:06,040 --> 00:02:11,120
-To avoid damaging the thread, we filled it with pebbles.
+00:02:19,850 --> 00:02:25,730
+First, this system connects to the lab signal generator.
 
 19
-00:02:20,070 --> 00:02:25,410
-Our helper is ready to help — or break something.
+00:02:26,590 --> 00:02:37,870
+The lab generator gets switched to pulse mode, then you set the pulse frequency on the control.
 
 20
-00:02:30,100 --> 00:02:34,000
-We welded the bottom cap.
+00:02:38,550 --> 00:02:48,950
+Our circuit works up to 2.5 MHz. After that, we set the signal amplitude.
 
 21
-00:02:35,640 --> 00:02:37,200
-Here's what we ended up with.
+00:02:49,090 --> 00:02:56,670
+Signal amplitude is 6 volts — that's the minimum this attachment will work at.
 
 22
-00:02:37,740 --> 00:02:40,400
-The heating element will screw into this threaded hole.
+00:02:57,290 --> 00:03:05,890
+If you have a 5-volt signal generator, you'll need to swap this Schmitt trigger chip for 5-volt logic.
 
 23
-00:02:41,280 --> 00:02:45,120
-Now moving on to welding the top cap.
+00:03:06,050 --> 00:03:11,730
+It's also compatible with this driver.
 
 24
-00:02:46,320 --> 00:02:57,420
-The top cap is for filling water, and we'll add an outlet to vent excess air from the boiler.
+00:03:12,090 --> 00:03:22,110
+You'd just need to add an L7805 regulator after this converter for the 5-volt logic supply.
 
 25
-00:02:58,220 --> 00:03:05,060
-We gave it a dome shape so air doesn't pocket in the corners.
+00:03:23,190 --> 00:03:25,250
+And the circuit will work just fine.
 
 26
-00:03:05,480 --> 00:03:13,540
-Now we'll weld the threaded fitting here and move on to assembling the boiler.
+00:03:27,510 --> 00:03:31,630
+Once the amplitude is set, the next thing is the duty cycle.
 
 27
-00:03:16,660 --> 00:03:32,500
-This way we lined up the inlet axis with the radiator and tacked our radiator-side fittings in place.
+00:03:31,750 --> 00:03:34,670
+Right now duty cycle is at 73%.
 
 28
-00:03:34,540 --> 00:03:44,800
-Now we'll take off the metal union fittings and weld all the way around, just like we did with this hole.
+00:03:34,670 --> 00:03:36,770
+Let me show you what the duty cycle does.
 
 29
-00:03:45,520 --> 00:03:51,320
-After that, just plug it up and check whether it holds water.
+00:03:37,490 --> 00:03:43,530
+I feed power from the supply to the transistor.
 
 30
-00:03:51,720 --> 00:03:53,580
-And then on to testing.
+00:03:50,200 --> 00:03:51,940
+We see the oscillogram.
 
 31
-00:03:54,300 --> 00:04:02,220
-We welded the hole, and it didn't quite match the layout marks.
+00:03:52,640 --> 00:03:56,080
+This is what you should get.
 
 32
-00:04:03,660 --> 00:04:09,800
-You can see the metal sticks out a bit here.
+00:03:57,360 --> 00:04:00,400
+Now watch — I'm going to change the duty cycle.
 
 33
-00:04:10,120 --> 00:04:15,180
-But that's no problem — every millimeter of the passage matters now.
+00:04:00,740 --> 00:04:03,460
+In this case, decreasing it.
 
 34
-00:04:15,860 --> 00:04:21,200
-Our trusty file will fix that — it'll quickly smooth out any irregularities.
+00:04:04,620 --> 00:04:09,380
+See — the signal becomes unclean.
 
 35
-00:04:21,460 --> 00:04:22,080
-Off we go.
+00:04:10,400 --> 00:04:22,740
+So for each coil we have to dial in the signal individually, along with the transistor's operating point at that frequency.
 
 36
-00:04:24,220 --> 00:04:28,580
-Our build is taking shape.
+00:04:23,240 --> 00:04:25,260
+That's the duty cycle adjustment.
 
 37
-00:04:29,480 --> 00:04:37,960
-Welded the hole, cleaned up the outlets with a file, and now you can see what we had in mind.
+00:04:25,780 --> 00:04:27,980
+Here I dropped it to 10%.
 
 38
-00:04:39,120 --> 00:04:45,140
-All that's left is to put the caps on top.
+00:04:27,980 --> 00:04:31,740
+Bringing it back to a clean signal.
 
 39
-00:04:48,340 --> 00:04:52,860
-Our caps are welded too, now we'll clean them up a bit.
+00:04:32,480 --> 00:04:40,560
+In this case at this frequency, it starts working around 71%.
 
 40
-00:04:53,500 --> 00:04:58,360
-This one goes on top, this one on the bottom.
+00:04:41,720 --> 00:04:48,240
+Once we've got a clean signal, we start probing our coil.
 
 41
-00:04:59,960 --> 00:05:01,940
-Basically that's it — nothing complicated.
+00:04:49,920 --> 00:04:51,000
+What do we get?
 
 42
-00:05:03,740 --> 00:05:06,400
-The main thing is the holes line up cleanly.
+00:04:51,320 --> 00:05:07,900
+With this kind of drive, with the LC resonance frequency for this coil set at 1.68 MHz, the coils start behaving just like a Tesla coil.
 
 43
-00:05:06,760 --> 00:05:15,540
-That's why we tacked them to the radiator first — so once everything's assembled, it all fits together easily, position-wise.
+00:05:07,980 --> 00:05:17,620
+Right now both ends are in the air, it's not grounded, and you can see there's a discharge —
 
 44
-00:05:17,020 --> 00:05:17,960
-Moving on.
+00:05:21,630 --> 00:05:24,490
+basically the same kind of corona as a Tesla.
 
 45
-00:05:58,360 --> 00:06:04,280
-With some simple tools, we pack the boiler.
+00:05:33,960 --> 00:05:41,840
+The coil's working in quarter-wave mode — you can tell by how the neon bulb glows.
 
 46
-00:06:05,420 --> 00:06:11,080
-We've already screwed in a tap for filling water and venting air.
+00:05:42,800 --> 00:05:45,760
+Closer to the hot end the glow gets brighter.
 
 47
-00:06:11,940 --> 00:06:19,520
-Here we put in an adapter washer for the heating element.
+00:05:46,900 --> 00:05:58,660
+There's a fluorescent tube parallel to the coil — to light it up, we touch the hot end to its lead.
 
 48
-00:06:20,240 --> 00:06:27,600
-And now we'll seal the heating element with this Teflon tape.
+00:05:59,620 --> 00:06:04,840
+I touched the hot end to it and you can see the lamp lights up brightly.
 
 49
-00:06:28,960 --> 00:06:34,960
-It'll go right here in its permanent spot.
+00:06:05,500 --> 00:06:08,280
+After disconnecting, the lamp glows dimly.
 
 50
-00:06:39,460 --> 00:06:43,280
-Everything's pretty simple — as long as it works.
+00:06:09,660 --> 00:06:12,100
+And what should we see on this lamp?
 
 51
-00:06:44,040 --> 00:06:45,520
-We're done with assembly.
+00:06:13,700 --> 00:06:22,400
+The camera might not pick it up, but there are stripes running along the lamp — the whole tube goes striped.
 
 52
-00:06:46,540 --> 00:06:48,050
-Here's the finished product.
+00:06:23,320 --> 00:06:39,120
+And if the coil is wound correctly, those stripes will be sharply defined. You want to find the frequency on the lab signal generator where the stripes stop moving entirely.
 
 53
-00:06:49,830 --> 00:06:52,110
-Wire, everything in place.
+00:06:39,720 --> 00:06:43,780
+If that happens, the coil is properly built.
 
 54
-00:06:53,570 --> 00:07:07,550
-Air vent, pressure relief valve, fill tap, expansion tank, and the heating element itself with its wire.
+00:06:43,780 --> 00:07:04,580
+If you can't get the stripes to stop by changing the frequency, and they keep moving, then the coil is wound slightly wrong — you're not getting a clean longitudinal standing wave around the coil.
 
 55
-00:07:09,030 --> 00:07:23,410
-Now we'll measure how many liters of water fit into the system, and how long it takes this 1.5 kW element to heat up the radiator.
+00:07:04,580 --> 00:07:06,020
+Around this coil.
 
 56
-00:07:24,110 --> 00:07:27,050
-And whether it'll heat up at all — whether it gets warm.
+00:07:06,780 --> 00:07:17,600
+You'd need to tweak it — either increase or decrease the wire length. That's a matter of trial and error.
 
 57
-00:07:27,730 --> 00:07:30,150
-First 5 liters going in.
+00:07:18,980 --> 00:07:37,200
+But the main goal is for the coil to start up and behave like a Tesla transformer — the neons and gas-discharge lamps should light up, and most importantly, you want to see those stripes on the lamp.
 
 58
-00:07:35,350 --> 00:07:36,970
-Pour it in faster.
+00:07:38,920 --> 00:07:40,300
+The signal again.
 
 59
-00:07:39,330 --> 00:07:41,450
-Water flows in nicely.
+00:07:42,680 --> 00:07:46,100
+I already showed how to set it.
 
 60
-00:07:43,070 --> 00:07:44,910
-Come on, faster.
+00:07:46,860 --> 00:07:48,300
+And the current draw at this point.
 
 61
-00:07:51,130 --> 00:07:53,650
-You can hear something bubbling.
+00:07:50,500 --> 00:07:54,260
+1.32 amps at 12.4 volts.
 
 62
-00:07:57,390 --> 00:07:58,390
-Happy about something.
+00:07:55,300 --> 00:08:05,300
+The better the coil is wound, the less input power it needs, and the brighter the lamp lights up.
 
 63
-00:08:01,650 --> 00:08:05,830
-Let's see whether water's coming out here or not.
+00:08:06,680 --> 00:08:13,620
+The lamp also glows brighter if we connect grounding to this coil.
 
 64
-00:08:06,710 --> 00:08:11,830
-There — the valve's filled up a bit.
+00:08:14,220 --> 00:08:21,420
+Watch — I connect grounding, and you can see the brightness increase.
 
 65
-00:08:13,610 --> 00:08:18,590
-There, the valve's dripping.
+00:08:25,060 --> 00:08:27,060
+Without changing the power.
 
 66
-00:08:20,130 --> 00:08:24,110
-OK, faster — pour it in.
+00:08:29,020 --> 00:08:35,220
+We can take a look with the second probe to see what's going on.
 
 67
-00:08:27,820 --> 00:08:31,800
-Interesting radiator we've got.
+00:08:35,480 --> 00:08:37,160
+I'll place it next to the coil.
 
 68
-00:08:38,080 --> 00:08:41,100
-The system ate the first 5 liters.
+00:08:44,260 --> 00:08:46,800
+Let's see what we have on the coil.
 
 69
-00:08:42,100 --> 00:08:43,380
-Going for the second batch.
+00:08:47,020 --> 00:08:50,460
+On the coil at this frequency we have a sine wave.
 
 70
-00:08:51,130 --> 00:08:52,910
-The water dives right in.
+00:08:51,360 --> 00:08:56,920
+On the sine wave you can clearly see the kick from the pulse.
 
 71
-00:08:56,910 --> 00:09:06,870
-So, we'll figure out how much fits in this radiator plus the tank we welded.
+00:08:58,620 --> 00:08:59,580
+A sharp little bump.
 
 72
-00:09:08,870 --> 00:09:10,410
-10 liters in.
+00:09:00,000 --> 00:09:06,800
+Now let's try changing the lab generator frequency.
 
 73
-00:09:10,530 --> 00:09:21,250
-Now we start pouring from a 1.5 liter bottle and wait until water starts coming out of the air valve.
+00:09:08,120 --> 00:09:10,200
+I'm changing the frequency, going lower.
 
 74
-00:09:23,990 --> 00:09:28,530
-There — first drops.
+00:09:10,980 --> 00:09:12,320
+Here's a characteristic feature.
 
 75
-00:09:29,610 --> 00:09:31,150
-So the system's full.
+00:09:12,380 --> 00:09:29,140
+If the coil absorbs your signal well — that is, if it's well matched in frequency — the peaks on the inductor will decrease in amplitude.
 
 76
-00:09:31,350 --> 00:09:32,510
-Pash, pull the funnel out.
+00:09:29,840 --> 00:09:39,620
+Watch — I detune the system, the peak grows, and the amplitude on the coil itself drops.
 
 77
-00:09:33,990 --> 00:09:38,150
-We've got a fully-filled water system.
+00:09:40,020 --> 00:09:43,420
+That's a sign you're at the wrong frequency.
 
 78
-00:09:39,190 --> 00:09:43,250
-Now we can close our air valve.
+00:09:45,860 --> 00:09:54,840
+Bringing it back — and we'll get the same picture if we go higher in frequency.
 
 79
-00:09:45,110 --> 00:09:47,430
-No air left in the system.
+00:09:57,680 --> 00:10:02,740
+Same thing — peak grows, signal drops.
 
 80
-00:09:53,670 --> 00:09:56,030
-So how much is left in the bottle?
+00:10:03,820 --> 00:10:15,320
+We aim for maximum amplitude on the coil and maximum glow from the lamps around it.
 
 81
-00:09:56,590 --> 00:09:59,490
-Close the tap — here's the bottle.
+00:10:15,620 --> 00:10:20,480
+But most importantly, again, those stripes on the lamp.
 
 82
-00:09:59,610 --> 00:10:03,770
-Looks like there's about 10.5 liters of water in the system.
+00:10:20,880 --> 00:10:24,680
+When you see them, they'll be running around chaotically.
 
 83
-00:10:04,390 --> 00:10:11,150
-Maybe a touch less than that, but let's call it 10.5 liters of water in the system.
+00:10:25,280 --> 00:10:28,100
+The camera just doesn't pick it up — they're running right now.
 
 84
-00:10:12,930 --> 00:10:15,310
-On to field testing.
+00:10:28,780 --> 00:10:30,400
+The eye catches it easily.
 
 85
-00:10:15,630 --> 00:10:16,990
-Thermometer set up.
+00:10:31,380 --> 00:10:36,760
+Our job is to wind the coil so that those stripes stop dead.
 
 86
-00:10:17,290 --> 00:10:19,350
-Outside it's 18 degrees right now.
+00:10:38,720 --> 00:10:40,460
+Good luck to everyone building.
 
 87
-00:10:20,750 --> 00:10:22,970
-We'll start the timer here.
-
-88
-00:10:23,770 --> 00:10:24,590
-And we turn it on.
-
-89
-00:10:24,710 --> 00:10:25,230
-Off we go.
-
-90
-00:10:27,930 --> 00:10:28,810
-Got it.
-
-91
-00:10:29,010 --> 00:10:36,050
-Now let's see how long it takes our system to heat this thing up.
-
-92
-00:10:37,830 --> 00:10:43,410
-Let's hope the thermometer gives us accurate readings.
-
-93
-00:10:44,210 --> 00:10:45,410
-And the stopwatch for the time.
-
-94
-00:10:46,510 --> 00:10:49,830
-This will be over here.
-
-95
-00:10:51,610 --> 00:10:52,050
-Waiting.
-
-96
-00:10:53,530 --> 00:10:57,190
-Let's check the time.
-
-97
-00:10:58,150 --> 00:11:00,110
-Almost 3 minutes.
-
-98
-00:11:01,290 --> 00:11:07,230
-About a minute and a half ago we started feeling warming here.
-
-99
-00:11:10,110 --> 00:11:15,210
-Warm water has started moving in these areas.
-
-100
-00:11:16,470 --> 00:11:21,150
-At this distance you can already feel the warmth from the system.
-
-101
-00:11:22,190 --> 00:11:23,770
-Almost to the middle.
-
-102
-00:11:24,030 --> 00:11:25,390
-Now let's watch.
-
-103
-00:11:27,030 --> 00:11:29,230
-I think the system's going to work.
-
-104
-00:11:30,010 --> 00:11:30,750
-Warmth's coming.
-
-105
-00:11:30,890 --> 00:11:36,810
-It's already noticeable here — really nice when the weather outside is like this.
-
-106
-00:11:42,490 --> 00:11:43,410
-It's heating up.
-
-107
-00:11:44,630 --> 00:11:46,250
-At the same time we're breaking the system in.
-
-108
-00:11:47,010 --> 00:11:50,190
-No real cold right now, but with the wind it counts.
-
-109
-00:11:51,530 --> 00:11:52,250
-We'll see.
-
-110
-00:11:52,410 --> 00:11:57,990
-If this radiator heats up well, it'll be warm in the room too.
-
-111
-00:12:00,890 --> 00:12:07,390
-Waiting. At the 8-minute mark we started seeing temperature rise.
-
-112
-00:12:08,190 --> 00:12:10,490
-Warmth coming from the top.
-
-113
-00:12:11,150 --> 00:12:17,190
-The radiator's side channels are clearly fully warmed up now.
-
-114
-00:12:17,950 --> 00:12:26,350
-About 15 cm down from the top, the warm water has clearly started flowing down.
-
-115
-00:12:27,090 --> 00:12:32,990
-And the reactor itself is already pretty hot.
-
-116
-00:12:33,830 --> 00:12:35,470
-Checking now.
-
-117
-00:12:37,250 --> 00:12:40,350
-Almost 10 minutes on the clock.
-
-118
-00:12:41,950 --> 00:12:50,230
-We can see the system is showing clear signs of life, because it's warm.
-
-119
-00:12:51,170 --> 00:12:53,190
-You can warm your hands on it now.
-
-120
-00:12:54,930 --> 00:12:58,350
-The warmth has dropped pretty much down to the middle.
-
-121
-00:13:00,270 --> 00:13:02,550
-This is great, guys.
-
-122
-00:13:03,790 --> 00:13:06,350
-So we probably won't need a pump.
-
-123
-00:13:09,290 --> 00:13:11,890
-14 minutes into the experiment.
-
-124
-00:13:12,550 --> 00:13:14,910
-Already burning my hand.
-
-125
-00:13:15,230 --> 00:13:17,450
-The temperature has shot up.
-
-126
-00:13:18,670 --> 00:13:21,650
-There's noticeable heat convection here.
-
-127
-00:13:22,030 --> 00:13:23,610
-Warm air is rising.
-
-128
-00:13:24,570 --> 00:13:29,470
-By feel, the warm water has reached all the way down to the bottom of the radiator.
-
-129
-00:13:31,930 --> 00:13:34,910
-And it looks like the system's going to work.
-
-130
-00:13:35,690 --> 00:13:39,490
-Because it's windy outside right now.
-
-131
-00:13:40,710 --> 00:13:42,930
-The sense of warmth is pretty clear.
-
-132
-00:13:45,690 --> 00:13:51,450
-Experiment time and temperature.
-
-133
-00:13:51,530 --> 00:13:57,830
-We're already getting over 30 degrees at the output, given the conditions.
-
-134
-00:13:57,990 --> 00:14:00,310
-That's how the thermometer's mounted.
-
-135
-00:14:00,710 --> 00:14:02,590
-But on the hand it's much hotter.
-
-136
-00:14:03,510 --> 00:14:04,770
-Burning the fingers.
-
-137
-00:14:06,510 --> 00:14:15,630
-This radiator, of these dimensions, 1.20 m long, is rated for 26 square meters of living space.
-
-138
-00:14:22,910 --> 00:14:25,090
-You can really see the temperature climbing.
-
-139
-00:14:27,390 --> 00:14:32,510
-Already too hot to hold here — it burns.
-
-140
-00:14:37,000 --> 00:14:41,760
-OK, 22 minutes into the experiment.
-
-141
-00:14:43,660 --> 00:14:45,220
-Temperature's rising.
-
-142
-00:14:45,440 --> 00:14:47,120
-It's really hot here now.
-
-143
-00:14:47,200 --> 00:14:49,840
-The thermometer's not giving us a good reading.
-
-144
-00:14:49,980 --> 00:14:55,120
-And you can see that the whole radiator, across its entire length, gives off a uniform flow of heat.
-
-145
-00:14:56,020 --> 00:15:01,060
-The heat has spread all the way to the far corner.
-
-146
-00:15:01,700 --> 00:15:06,440
-So even at the farthest point we see the radiator heating up.
-
-147
-00:15:06,560 --> 00:15:08,800
-Which means it's working over the whole length.
-
-148
-00:15:10,120 --> 00:15:11,440
-Warm and pleasant.
-
-149
-00:15:13,600 --> 00:15:16,660
-Time's passing, temperature's rising.
-
-150
-00:15:18,120 --> 00:15:20,300
-And this you can't hold anymore.
-
-151
-00:15:24,020 --> 00:15:33,580
-Once the heating element shuts off, we'll measure the surface temperature of the radiator at different points.
-
-152
-00:15:33,840 --> 00:15:36,560
-We'll put this same thermometer on it and check.
-
-153
-00:15:40,920 --> 00:15:42,640
-Half an hour of operation.
-
-154
-00:15:44,420 --> 00:15:46,980
-Better not touch here.
-
-155
-00:15:47,380 --> 00:15:48,880
-Really burning hot.
-
-156
-00:15:49,980 --> 00:15:51,480
-Temperature's climbing.
-
-157
-00:15:52,480 --> 00:15:58,620
-Heat is going all across the whole face of the radiator.
-
-158
-00:16:00,260 --> 00:16:04,680
-And this part is already heating up noticeably too.
-
-159
-00:16:07,300 --> 00:16:11,460
-Looks like our experiment is going well.
-
-160
-00:16:14,720 --> 00:16:22,240
-10.5 liters of water heated up by the system in half an hour — you can't even grab it now.
-
-161
-00:16:24,520 --> 00:16:29,900
-The thermometer's poorly mounted and isn't reading the full temperature.
-
-162
-00:16:30,920 --> 00:16:36,540
-Now we'll move on to measuring temperature on the radiator surface.
-
-163
-00:16:38,420 --> 00:16:40,800
-I'm thinking the farthest corner.
-
-164
-00:16:41,540 --> 00:16:44,700
-That's the measurement we're most interested in.
-
-165
-00:16:45,640 --> 00:16:51,520
-We'll just set it there — it'll sit in the airflow.
-
-166
-00:16:53,260 --> 00:16:58,300
-Wait a bit and find out what's happening here.
-
-167
-00:16:59,560 --> 00:17:01,760
-There's a decent wind outside.
-
-168
-00:17:03,080 --> 00:17:07,080
-Temperature's hovering around 18 degrees.
-
-169
-00:17:09,420 --> 00:17:15,100
-OK, experiment time is 36 minutes.
-
-170
-00:17:15,880 --> 00:17:18,360
-We just set the thermometer up.
-
-171
-00:17:18,840 --> 00:17:24,660
-And as you can see, the temperature in the far corner of the radiator is steadily climbing.
-
-172
-00:17:25,660 --> 00:17:29,880
-The air temperature it's putting out is 50 degrees at this spot.
-
-173
-00:17:30,760 --> 00:17:35,520
-We understand that in this area it's much hotter than that.
-
-174
-00:17:35,640 --> 00:17:36,720
-Fingers can't take it.
-
-175
-00:17:37,720 --> 00:17:45,660
-And the most interesting thing — the top of our system is really hot, but at the bottom you can hold it.
-
-176
-00:17:45,780 --> 00:17:56,520
-That means one thing — water is moving in the system, circulation is happening, and the radiator really is giving off heat to the air.
-
-177
-00:17:57,180 --> 00:18:04,020
-If that weren't happening, the whole tank would be heated to the same temperature.
-
-178
-00:18:06,360 --> 00:18:07,860
-37 minutes.
-
-179
-00:18:08,240 --> 00:18:11,240
-We'll definitely run this for an hour.
-
-180
-00:18:14,060 --> 00:18:17,460
-These readings are really, really pleasing us.
-
-181
-00:18:17,960 --> 00:18:19,820
-Let's try to capture it on camera.
-
-182
-00:18:20,480 --> 00:18:24,080
-You can see the shimmer of warm air above the radiator.
-
-183
-00:18:26,440 --> 00:18:28,380
-Looks great.
-
-184
-00:18:31,770 --> 00:18:33,430
-You can see how it streams up.
-
-185
-00:18:35,070 --> 00:18:38,590
-If you look at the plants, they kind of blur a bit.
-
-186
-00:18:39,710 --> 00:18:44,570
-So the heat is going full-on.
-
-187
-00:18:45,270 --> 00:18:46,490
-The system works.
-
-188
-00:18:48,390 --> 00:18:50,170
-What's our time?
-
-189
-00:18:52,310 --> 00:18:59,050
-40 minutes into the experiment, in the far corner.
-
-190
-00:19:00,810 --> 00:19:03,910
-We're already at 54 degrees.
-
-191
-00:19:05,370 --> 00:19:07,890
-The system keeps heating up out here.
-
-192
-00:19:09,410 --> 00:19:12,370
-We're interested in how it heats up.
-
-193
-00:19:12,590 --> 00:19:14,850
-We'll keep monitoring this spot.
-
-194
-00:19:16,010 --> 00:19:18,250
-It's significantly hotter here.
-
-195
-00:19:21,270 --> 00:19:25,670
-I'll say this radiator looks great aesthetically.
-
-196
-00:19:26,930 --> 00:19:29,130
-Not at all like bi-metal.
-
-197
-00:19:29,310 --> 00:19:37,090
-No fins where you have to laboriously scrub dust out with a cloth.
-
-198
-00:19:37,210 --> 00:19:40,530
-Here everything's clean — you can wipe the surface.
-
-199
-00:19:41,490 --> 00:19:43,010
-Thanks to the manufacturers.
-
-200
-00:19:44,490 --> 00:19:46,210
-Same surface on the back too.
-
-201
-00:19:48,290 --> 00:19:57,630
-And the finning inside gives off a really nice flow of warm air.
-
-202
-00:19:58,950 --> 00:20:01,890
-Let's see who made it.
-
-203
-00:20:17,480 --> 00:20:21,260
-Nice product.
-
-204
-00:20:23,180 --> 00:20:28,940
-And it's nice that none of the welds are leaking anywhere.
-
-205
-00:20:30,300 --> 00:20:32,900
-Our helper here is burning his fingers.
-
-206
-00:20:33,220 --> 00:20:37,040
-It's really hot — better not to touch.
-
-207
-00:20:39,060 --> 00:20:42,100
-Moving along in our experiment.
-
-208
-00:20:42,260 --> 00:20:47,400
-While we were chatting, the temperature climbed even more.
-
-209
-00:20:48,860 --> 00:20:52,640
-I think we'll catch up to 60, maybe even 70.
-
-210
-00:20:53,480 --> 00:20:56,720
-45th minute, going on 46.
-
-211
-00:20:58,600 --> 00:21:04,220
-We've hit the 60-degree mark on our thermometer.
-
-212
-00:21:10,660 --> 00:21:13,740
-The system's running steady.
-
-213
-00:21:14,580 --> 00:21:16,040
-Good.
-
-214
-00:21:18,420 --> 00:21:27,220
-At the 50-minute mark we heard the thermostat trip in the tank.
-
-215
-00:21:27,460 --> 00:21:28,020
-Click.
-
-216
-00:21:28,840 --> 00:21:30,300
-Power got cut.
-
-217
-00:21:30,420 --> 00:21:36,960
-That means the thermostat caught 80 degrees inside the tank.
-
-218
-00:21:39,040 --> 00:21:55,700
-So here's the thing — when the power shut off, the far end of the radiator was just above 60 degrees while it's 80 degrees here.
-
-219
-00:21:55,860 --> 00:21:58,160
-That's a 20-degree difference.
-
-220
-00:21:58,940 --> 00:22:10,340
-A normal state of affairs between the heating element and the spot where maximum heat output happens — the far corner, which is what we care about.
-
-221
-00:22:11,320 --> 00:22:19,260
-Outside, with wind blowing, this balance will most likely stay.
-
-222
-00:22:19,580 --> 00:22:26,560
-80 in the heating tank and 60 at the far corner of the radiator.
-
-223
-00:22:26,760 --> 00:22:30,480
-And that's quite comfortable.
-
-224
-00:22:30,820 --> 00:22:32,360
-The heat output is really good.
-
-225
-00:22:34,740 --> 00:22:38,000
-OK, our historic moment.
-
-226
-00:22:38,360 --> 00:22:39,740
-Coming up on an hour.
-
-227
-00:22:39,860 --> 00:22:47,140
-We cranked the boiler up to max — 85 degrees — and we heard the click.
-
-228
-00:22:51,870 --> 00:22:56,010
-Power was cut, and now we're looking at the far corner.
-
-229
-00:22:56,010 --> 00:23:01,370
-Here we have 64 degrees.
-
-230
-00:23:03,350 --> 00:23:06,190
-Summing up our experiment.
-
-231
-00:23:07,550 --> 00:23:19,650
-85 degrees water temperature in the tank, 64–65 degrees of air temperature coming out of the far corner of the radiator.
-
-232
-00:23:20,030 --> 00:23:22,250
-With windy weather conditions outside.
-
-233
-00:23:23,010 --> 00:23:27,190
-You can see the temperature conditions.
-
-234
-00:23:27,290 --> 00:23:29,790
-We've got 18 degrees of warmth outside.
-
-235
-00:23:30,150 --> 00:23:33,130
-This corresponds to what would happen if the radiator were in a room.
-
-236
-00:23:34,530 --> 00:23:37,170
-15–18 degrees, not heated.
-
-237
-00:23:37,250 --> 00:23:44,110
-We turn it on and under the same conditions, the temperature would rise very quickly.
-
-238
-00:23:44,250 --> 00:23:50,730
-By the way, you can see the temperature is still slowly climbing.
-
-239
-00:23:53,250 --> 00:23:57,490
-I'd say our experiment is a success.
-
-240
-00:23:59,190 --> 00:24:04,130
-Then we'll test it in winter conditions and see how it works.
-
-241
-00:24:06,510 --> 00:24:09,990
-Excellent flow of warm air here.
-
-242
-00:24:15,010 --> 00:24:18,530
-OK, what did we make it out of?
-
-243
-00:24:18,810 --> 00:24:22,730
-The pipe was... how big was the pipe, Pash?
-
-244
-00:24:23,370 --> 00:24:25,310
-114 pipe.
-
-245
-00:24:26,630 --> 00:24:29,530
-Chinese heating element.
-
-246
-00:24:32,110 --> 00:24:35,990
-1.5 kW with a temperature regulator.
-
-247
-00:24:37,190 --> 00:24:39,210
-You can set it however you want.
-
-248
-00:24:40,150 --> 00:24:41,570
-Plus some fittings.
-
-249
-00:24:42,130 --> 00:24:47,230
-The whole build cost us 5000 rubles.
-
-250
-00:24:47,330 --> 00:24:50,890
-The radiator was 600 rubles.
-
-251
-00:24:51,590 --> 00:24:56,490
-Expansion tank and tap, 180 rubles.
-
-252
-00:24:56,990 --> 00:25:02,590
-Adapters here, 420 rubles.
-
-253
-00:25:04,330 --> 00:25:12,710
-Roughly, looking at it all — wiring, everything else, electrodes — about 2000 rubles.
-
-254
-00:25:13,150 --> 00:25:16,330
-Cost of the boiler itself with its fittings, all of this.
-
-255
-00:25:16,470 --> 00:25:19,290
-By the way, we also got the valve.
-
-256
-00:25:20,390 --> 00:25:27,470
-Plus the radiator — call it 7000 rubles for 26 square meters of space.
-
-257
-00:25:29,010 --> 00:25:30,470
-That's the product.
-
-258
-00:25:31,190 --> 00:25:33,370
-Temperature measurement.
-
-259
-00:25:34,130 --> 00:25:35,470
-What's happening here?
-
-260
-00:25:37,510 --> 00:25:41,470
-You could say, an hour and five minutes of running.
-
-261
-00:25:41,850 --> 00:25:43,510
-10.5 liters of water.
-
-262
-00:25:44,510 --> 00:25:45,970
-1.5 kW heating element.
-
-263
-00:25:47,230 --> 00:25:48,030
-Observing.
-
-264
-00:25:50,170 --> 00:25:52,510
-Our temperature has gone up.
-
-265
-00:25:54,230 --> 00:25:58,030
-Well, you could say the sun just peeked out.
-
-266
-00:25:58,370 --> 00:25:59,210
-We'll account for that too.
-
-267
-00:25:59,450 --> 00:26:04,810
-But we got 70 degrees of hot air in the far corner, no question.
-
-268
-00:26:06,110 --> 00:26:08,210
-And the temperature keeps climbing.
-
-269
-00:26:13,120 --> 00:26:14,940
-Highly recommended to replicate.
-
-270
-00:26:15,500 --> 00:26:17,380
-And a little closing note.
-
-271
-00:26:17,460 --> 00:26:23,300
-We were pleasantly surprised when we moved the thermometer to the boiler itself.
-
-272
-00:26:25,160 --> 00:26:26,780
-Same temperature.
-
-273
-00:26:27,340 --> 00:26:32,840
-What can we say about this Thermoking radiator?
-
-274
-00:26:33,720 --> 00:26:48,900
-That regardless of whether it's close to the boiler, in the middle, or in the far corner — the heat output along its entire length is uniform.
-
-275
-00:26:49,580 --> 00:26:51,720
-The air comes out at the same temperature.
-
-276
-00:26:53,380 --> 00:26:55,300
-The convector works great.
-
-277
-00:26:59,070 --> 00:27:05,250
-There's no gradient where one part is hot, another cooler, another cold.
-
-278
-00:27:05,330 --> 00:27:11,510
-Across the whole face of this radiator the air comes out at the same temperature.
-
-279
-00:27:13,190 --> 00:27:13,890
-Super!
-
-280
-00:27:20,070 --> 00:27:25,350
-Time is one hour nine.
-
-281
-00:27:27,590 --> 00:27:29,850
-We're wrapping up our experiment.
-
-282
-00:27:30,910 --> 00:27:32,690
-Here's another interesting thing.
-
-283
-00:27:33,070 --> 00:27:36,890
-It's basically an hour twenty.
-
-284
-00:27:36,990 --> 00:27:38,170
-We shut it off at the hour mark.
-
-285
-00:27:38,830 --> 00:27:47,830
-Twenty minutes later, you can see the temperature really isn't dropping much.
-
-286
-00:27:47,930 --> 00:27:49,610
-The radiator keeps giving off heat.
-
-287
-00:27:51,310 --> 00:27:54,210
-And we measured it uniformly across the whole surface.
-
-288
-00:27:56,310 --> 00:27:58,230
-Really cool thing.
-
-289
-00:28:00,390 --> 00:28:02,410
-Now of course we'll drain the water.
-
-290
-00:28:02,570 --> 00:28:10,110
-We need to install it, but I'd say it'll keep giving off noticeable heat for another two or three hours.
-
-291
-00:28:11,090 --> 00:28:16,710
-Say if the power goes out, you won't be left without heat for a while.
-
-292
-00:28:16,850 --> 00:28:21,850
-10.5 liters of water in the system has some reserve.
-
-293
-00:28:23,790 --> 00:28:25,550
-And not bad here.
-
-294
-00:28:25,970 --> 00:28:27,830
-Fingers still burning.
+00:10:43,340 --> 00:10:46,040
+The schematic will be posted under the video.
