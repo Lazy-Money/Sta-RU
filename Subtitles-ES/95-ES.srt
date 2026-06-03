@@ -1,1171 +1,843 @@
 1
-00:00:00,780 --> 00:00:02,580
-Hola a todos en mi canal.
+00:00:00,590 --> 00:00:03,880
+Hola a todos los suscriptores y espectadores de mi canal.
 
 2
-00:00:03,180 --> 00:00:09,540
-Primero, quiero felicitar a todos los creyentes en la resurrección de Cristo y en la luminosa fiesta de Pascua.
+00:00:04,560 --> 00:00:13,200
+Hoy vamos a analizar varios puntos interesantes con los que se encuentra la gente durante el ajuste.
 
 3
-00:00:10,440 --> 00:00:11,960
-Esta es la sección de preguntas y respuestas.
+00:00:14,600 --> 00:00:15,400
+La pregunta.
 
 4
-00:00:12,220 --> 00:00:18,480
-Y hoy responderé una pregunta que nos llevará bastante tiempo responder.
+00:00:15,880 --> 00:00:24,200
+La primera es de este tipo: ajusté el transformador Tesla a un cuarto de onda según tus cálculos.
 
 5
-00:00:18,880 --> 00:00:22,020
-Que ya fue hecha varias veces por varias personas.
+00:00:24,940 --> 00:00:27,780
+Ahora quiero reajustarlo a media onda.
 
 6
-00:00:23,700 --> 00:00:29,440
-En honor a la Pascua atraparemos un pez con aletas en el transformador Tesla.
+00:00:27,780 --> 00:00:34,600
+Pero cuando calculo las frecuencias, la matemática no me cierra.
 
 7
-00:00:29,440 --> 00:00:36,440
-Mostraré cómo se forma y qué características del trabajo del sistema son necesarias para esto.
+00:00:34,860 --> 00:00:43,700
+Y si paso a la frecuencia que calculé matemáticamente, la bobina no se ajusta de ninguna manera.
 
 8
-00:00:37,400 --> 00:00:45,200
-También quiero expresar enorme gratitud a todos los que ayudaron y continúan ayudando financieramente en el desarrollo de mi canal.
+00:00:43,920 --> 00:00:45,040
+¿Y qué hago con eso?
 
 9
-00:00:46,320 --> 00:00:48,400
-Enormes gracias a todos.
+00:00:45,620 --> 00:00:47,400
+¿Los cálculos son siquiera correctos?
 
 10
-00:00:49,140 --> 00:00:50,500
-Pasemos a la pregunta.
+00:00:48,400 --> 00:01:01,560
+En este esquema que muestro acá está dibujada de manera convencional la distribución de la onda estacionaria en el transformador Tesla.
 
 11
-00:00:50,640 --> 00:00:53,840
-El primero en hacer esta pregunta fue Konstantin Egormin.
+00:01:02,080 --> 00:01:06,460
+Lo mismo se aplica al sistema con plano de tierra y puesta a tierra.
 
 12
-00:00:54,320 --> 00:00:56,860
-La dividió en dos sub-preguntas.
+00:01:06,820 --> 00:01:17,420
+Cómo se distribuyen las corrientes y la tensión cuando el sistema está en cuarto de onda, y cuando está en media onda.
 
 13
-00:00:56,860 --> 00:00:58,520
-Primer punto.
+00:01:18,600 --> 00:01:33,720
+Resulta que, para identificar el momento en que nuestro sistema está en cuarto de onda, tenemos que obtener el máximo de tensión en el extremo caliente superior del transformador Tesla, en su capacidad aislada.
 
 14
-00:00:58,680 --> 00:01:03,040
-Muestra por favor cómo modular la señal para obtener un pez con aletas.
+00:01:34,560 --> 00:01:40,540
+A su vez, el máximo de corriente estará en el extremo inferior del transformador Tesla.
 
 15
-00:01:04,020 --> 00:01:05,360
-Y la segunda sub-pregunta.
+00:01:41,040 --> 00:01:46,000
+Esta parte de acá es el cable de tierra y sus distribuciones de onda.
 
 16
-00:01:05,600 --> 00:01:08,140
-¿Tú mismo obtuviste un pez con aletas?
+00:01:46,000 --> 00:01:55,920
+Lo que pasa es que normalmente solo se mira esta parte y se olvida lo que está pasando en ese momento en la tierra.
 
 17
-00:01:08,360 --> 00:01:11,240
-En tus videos parece que un pez simple nadaba.
+00:01:56,160 --> 00:02:02,070
+Y en la tierra el panorama es en contrafase respecto a lo que pasa en el resonador.
 
 18
-00:01:11,520 --> 00:01:16,960
-Pero déjame responder inmediatamente la segunda pequeña pregunta sobre obtenerlo.
+00:02:03,190 --> 00:02:17,590
+Por eso, si el sistema completo se ajustó a cuarto de onda, en realidad todo el sistema forma una imagen completa y se obtiene esa distribución de media onda.
 
 19
-00:01:17,040 --> 00:01:18,580
-Naturalmente, lo obtuve.
+00:02:18,010 --> 00:02:23,530
+Pero solo un cuarto de la onda estacionaria está en nuestro transformador Tesla.
 
 20
-00:01:18,700 --> 00:01:22,220
-Lo cité a ti, lo dibujé gráficamente en una hoja de papel.
+00:02:24,310 --> 00:02:31,470
+Otra situación, más interesante, se da cuando el sistema se ajusta a media onda.
 
 21
-00:01:23,040 --> 00:01:25,820
-En el video bajo el cual hiciste la pregunta.
+00:02:32,070 --> 00:02:42,570
+En este caso, el punto de máxima tensión se desplaza desde el extremo caliente del transformador Tesla hacia el centro de la bobina.
 
 22
-00:01:25,820 --> 00:01:31,420
-Y si no lo hubiera visto en práctica, naturalmente no podría dibujarlo.
+00:02:42,570 --> 00:02:56,470
+A su vez la corriente se distribuye distinto, porque entre ambas hay un desfase de 90 grados, y la frecuencia acá es más alta para que ese punto se desplace al subir la frecuencia.
 
 23
-00:01:32,320 --> 00:01:33,400
-Cómo sucede esto.
+00:02:57,030 --> 00:03:03,550
+La longitud de onda se acorta y se distribuye de otra manera a lo largo de nuestra bobina.
 
 24
-00:01:33,760 --> 00:01:38,280
-Y sobre el hecho de que en mis primeros videos había peces simples.
+00:03:04,190 --> 00:03:07,590
+Por eso la relación queda así.
 
 25
-00:01:39,000 --> 00:01:46,580
-Sí, también había sistemas simples que mostré: cómo el circuito oscilante oscila en algunos clips de video.
+00:03:07,590 --> 00:03:16,750
+Con la distribución de media onda en nuestro transformador Tesla, la corriente estará en contrafase en sus extremos.
 
 26
-00:01:47,580 --> 00:01:56,100
-Estos fueron mis experimentos desde los cuales ya ha pasado una gran cantidad de tiempo.
+00:03:17,210 --> 00:03:23,930
+A la vez no nos olvidamos, como siempre, de la parte de tierra que tenemos acá.
 
 27
-00:01:57,540 --> 00:02:01,240
-Pasemos directamente a la respuesta.
+00:03:24,590 --> 00:03:30,050
+Acá también se forma una figura completa, solo que ahora se obtiene una onda completa.
 
 28
-00:02:01,360 --> 00:02:04,260
-Ahora examinemos esto en la pantalla del osciloscopio.
+00:03:31,050 --> 00:03:35,970
+Si miramos el sistema en su conjunto, solo media onda corresponde a nuestro resonador.
 
 29
-00:02:04,360 --> 00:02:06,000
-Entonces, el experimento en hierro.
+00:03:37,590 --> 00:03:41,350
+¿Qué cálculos hace uno?
 
 30
-00:02:07,300 --> 00:02:10,980
-Transformador Tesla, resonador de onda.
+00:03:42,050 --> 00:03:49,770
+Por ejemplo, voy a mostrar los cálculos para mi bobina real, para que quede claro con ese ejemplo.
 
 31
-00:02:11,240 --> 00:02:15,440
-El inductor del transformador Tesla también está en resonancia.
+00:03:51,110 --> 00:03:53,630
+La lógica del procedimiento es simple.
 
 32
-00:02:15,440 --> 00:02:22,540
-Aquí está la capacidad de lazo que se conecta al inductor en serie con el esquema de puente.
+00:03:55,350 --> 00:04:12,290
+Uno calcula el transformador Tesla, después toma la frecuencia de resonancia de cuarto de onda, la multiplica por 2 y obtiene la frecuencia de media onda para ese resonador.
 
 33
-00:02:23,200 --> 00:02:26,720
-Este es el convertidor de potencia con aislamiento galvánico.
+00:04:12,890 --> 00:04:22,130
+La cuestión es que acá ya entramos en matemática idealizada, y para los que creen en ella, en todas esas fórmulas y demás, no funciona.
 
 34
-00:02:27,020 --> 00:02:28,740
-Esta es la placa de control.
+00:04:22,790 --> 00:04:41,010
+Si para la resonancia de cuarto de onda, hasta una frecuencia de 1,5 MHz, todavía se puede calcular la velocidad de la onda con la velocidad de la luz conocida, aplicar esos cálculos al resonador de media onda ya no se puede.
 
 35
-00:02:30,020 --> 00:02:33,360
-Aquí está conectado el generador de señales de laboratorio.
+00:04:41,910 --> 00:04:44,090
+Los errores van a ser muy grandes.
 
 36
-00:02:33,420 --> 00:02:35,480
-Aquí estableceremos la frecuencia de interrupción.
+00:04:44,450 --> 00:04:50,010
+Y ahora en la práctica vamos a ver qué errores aparecen en la realidad.
 
 37
-00:02:36,260 --> 00:02:38,780
-Este es el acumulador de capacidad.
+00:04:50,710 --> 00:05:04,510
+Para pasar a la parte práctica, primero vamos a necesitar fabricar un dispositivo sencillo con el que vamos a rastrear el antinodo y la tensión en nuestra bobina.
 
 38
-00:02:39,120 --> 00:02:41,580
-Aquí está conectada la fuente de alimentación de alto voltaje.
+00:05:05,390 --> 00:05:23,710
+Se hace con un trozo de cable de cobre de 65 cm de largo; el cable se dobla casi a la mitad y queda un sistema de 30 cm desde la lámpara neón hasta el punto donde la vamos a sostener con los dedos.
 
 39
-00:02:41,580 --> 00:02:46,580
-Capacidad 470 µF a 400 V.
+00:05:25,490 --> 00:05:34,990
+Es un sistema de cable de cobre; al extremo se le suelda una lámpara neón y la conexión queda así.
 
 40
-00:02:47,780 --> 00:02:48,540
-Bueno, y todo.
+00:05:35,810 --> 00:05:42,170
+Un contacto lo soldamos al cobre y el otro contacto lo doblamos con esta forma.
 
 41
-00:02:49,040 --> 00:02:52,400
-Osciloscopio y generador de señales de laboratorio.
+00:05:42,170 --> 00:05:49,310
+Ya tenemos una sonda cómoda para detectar el antinodo de tensión en el transformador Tesla.
 
 42
-00:02:52,560 --> 00:02:55,920
-Esta fuente de alimentación alimenta la parte lógica.
+00:05:50,250 --> 00:06:06,490
+Vamos a aplicar la frecuencia al transformador Tesla con un generador de señales de laboratorio, y variando su frecuencia vamos a determinar este indicador: si realmente la matemática
 
 43
-00:02:56,760 --> 00:03:01,780
-Esta fuente de alimentación alimenta la parte de potencia.
+00:06:06,490 --> 00:06:16,770
+nos muestra la verdad de que multiplicando la frecuencia de la resonancia de cuarto de onda obtenemos la de media onda, y qué problemas hay con eso.
 
 44
-00:03:02,520 --> 00:03:08,140
-El inicio del experimento lo haremos primero sin modo de interrupción.
+00:06:16,910 --> 00:06:28,450
+Frente a ustedes está nuestra muestra de prueba, mi transformador Tesla, con un conductor de 149 m de largo y una frecuencia de cálculo de 500 kHz.
 
 45
-00:03:08,340 --> 00:03:10,540
-Mira frecuencia y oscilogramas.
+00:06:28,450 --> 00:06:40,290
+Este transformador está hecho sobre un cuerpo de conductos de aire, plástico blanco, con cable de 0,96 mm de sección.
 
 46
-00:03:10,540 --> 00:03:13,440
-Y más adelante ya cambiaremos al modo de interrupción.
+00:06:40,770 --> 00:06:52,930
+También se eligió una capacidad aislada acorde, y se combinó la distribución de onda a lo largo del cable con la resonancia LC mediante una capacidad aislada adicional.
 
 47
-00:03:14,020 --> 00:03:18,820
-La sonda del osciloscopio que tomará la señal está en el aire.
+00:06:53,370 --> 00:07:08,830
+En este caso, el transformador Tesla ahora está conectado a tierra, y en la base de la bobina del transformador Tesla hay una espira de conductor a la que le vamos a aplicar la señal del generador
 
 48
-00:03:18,840 --> 00:03:24,160
-A una distancia de aproximadamente 40 cm de la capacidad aislada del transformador Tesla.
+00:07:08,830 --> 00:07:10,190
+de laboratorio.
 
 49
-00:03:25,680 --> 00:03:27,100
-Directamente la sonda.
+00:07:11,670 --> 00:07:17,830
+En el primer caso vamos a ver el momento del ajuste del transformador Tesla a cuarto de onda.
 
 50
-00:03:27,300 --> 00:03:29,280
-Esta es la capacidad aislada.
+00:07:18,030 --> 00:07:24,630
+Recuerdo que en cuarto de onda el antinodo de tensión va a estar justo en este punto.
 
 51
-00:03:30,100 --> 00:03:35,500
-Ahora el primer experimento lo hacemos en el modo sin interrupción.
+00:07:24,630 --> 00:07:34,830
+Y, por lo tanto, en este punto la lámpara neón debería encenderse, y a medida que la movamos hacia la base del transformador se va a apagar.
 
 52
-00:03:37,540 --> 00:03:40,140
-Aplico potencia al sistema.
+00:07:36,130 --> 00:07:40,110
+Aplico una frecuencia de 500 kHz.
 
 53
-00:03:49,400 --> 00:03:53,120
-Ahora tenemos potencia de 20 V.
+00:07:42,310 --> 00:07:48,090
+Vemos que la lámpara neón se enciende, y a medida que la bajamos se apaga.
 
 54
-00:03:57,710 --> 00:03:59,090
-Aplico la señal.
+00:07:48,090 --> 00:07:55,240
+Es decir, se ve claramente el antinodo de tensión al final del bobinado del transformador de alta tensión.
 
 55
-00:04:00,150 --> 00:04:02,610
-Y puedes ver que aquí todo es estándar.
+00:07:55,730 --> 00:08:00,470
+La lámpara neón también va a encenderse cerca de la capacidad aislada.
 
 56
-00:04:03,430 --> 00:04:05,530
-Onda sinusoidal bajo nuestra mano.
+00:08:01,170 --> 00:08:08,300
+Este paso no presenta mayor dificultad y la mayoría de la gente lo logra sin problemas.
 
 57
-00:04:06,050 --> 00:04:07,950
-La amplitud cambia.
+00:08:09,170 --> 00:08:18,250
+Si se hacen los cálculos que ya mostré antes en mi canal, todos esos puntos están y se pueden calcular siguiéndolos.
 
 58
-00:04:08,150 --> 00:04:18,630
-La amplitud cambia ligeramente porque el transformador Tesla tiene dimensiones bastante grandes y es muy estable a influencias externas.
+00:08:19,010 --> 00:08:22,510
+Fijemos también la frecuencia en este experimento.
 
 59
-00:04:19,310 --> 00:04:20,230
-Experimento número 2.
+00:08:23,090 --> 00:08:27,030
+Acá se ve en el generador de señales de laboratorio: 500 kHz.
 
 60
-00:04:20,450 --> 00:04:24,510
-Ahora aplicaremos interrupciones a la frecuencia de 10 Hz.
+00:08:28,730 --> 00:08:30,210
+La lámpara neón está encendida.
 
 61
-00:04:25,010 --> 00:04:29,270
-Duración de las interrupciones interruptoras 1%.
+00:08:32,030 --> 00:08:35,810
+Ahora pasemos nuestro sistema al modo de media onda.
 
 62
-00:04:31,790 --> 00:04:38,130
-La amplitud de voltaje aplicada al oscilamiento es 20 V.
+00:08:35,810 --> 00:08:41,750
+Según la matemática idealizada, multiplicamos nuestra frecuencia por 2.
 
 63
-00:04:38,130 --> 00:04:42,030
-Entonces, aplico potencia.
+00:08:43,230 --> 00:08:48,610
+Por eso pongo acá la frecuencia en 1 MHz.
 
 64
-00:04:43,150 --> 00:04:44,490
-20 V.
+00:08:49,630 --> 00:08:58,030
+Ahora, a esta frecuencia, la lámpara neón en el extremo caliente del transformador Tesla se apagó.
 
 65
-00:04:45,090 --> 00:04:47,550
-Y ahora podemos examinar el oscilograma.
+00:08:58,030 --> 00:09:08,730
+Y podemos comprobar si efectivamente el antinodo de tensión se desplazó al centro de nuestra bobina.
 
 66
-00:04:47,730 --> 00:04:49,910
-Ves apareció algún proceso.
+00:09:15,660 --> 00:09:17,740
+Paso el indicador.
 
 67
-00:04:50,290 --> 00:04:54,870
-Durante cuando el transformador Tesla arranca, más adelante caída.
+00:09:22,710 --> 00:09:26,250
+Y como vemos, la lámpara no se enciende en ningún lugar.
 
 68
-00:04:55,490 --> 00:04:57,930
-Y en el modo posterior trabaja linealmente.
+00:09:27,790 --> 00:09:30,550
+Quizá tengamos algunos pequeños errores.
 
 69
-00:04:58,410 --> 00:05:06,550
-Y este punto donde la señal cae por exponencial: este es ya el final de la señal permisiva para trabajo.
+00:09:31,270 --> 00:09:33,350
+Ahora vamos a intentar revisarlos.
 
 70
-00:05:07,550 --> 00:05:08,850
-Examinemos más detalle.
+00:09:33,350 --> 00:09:38,910
+Pongamos que cambio la frecuencia a un megahertz y 100 kHz.
 
 71
-00:05:10,290 --> 00:05:14,210
-Nos interesa específicamente el inicio de este proceso.
+00:09:41,390 --> 00:09:43,150
+No hay ninguna distribución.
 
 72
-00:05:14,730 --> 00:05:21,970
-Puedes observar: realmente sucede algún proceso ondulatorio interesante que permite aumentar la amplitud al inicio.
+00:09:44,770 --> 00:09:48,250
+Es decir, queda claro que la matemática no funciona.
 
 73
-00:05:22,330 --> 00:05:24,010
-Más adelante varias oscilaciones van.
+00:09:48,370 --> 00:09:50,110
+¿Cómo se calcula la media onda?
 
 74
-00:05:25,010 --> 00:05:27,050
-Y cambia al modo lineal.
+00:09:50,290 --> 00:09:56,510
+Colocamos nuestro indicador en la base del centro del transformador Tesla.
 
 75
-00:05:27,930 --> 00:05:32,970
-De esto puedes concluir que nos interesa este punto.
+00:09:57,470 --> 00:09:59,430
+Aproximadamente en el centro del bobinado.
 
 76
-00:05:32,970 --> 00:05:41,290
-La parte de resto ya lleva a pérdidas injustificadas durante el trabajo del transformador Tesla.
+00:09:59,850 --> 00:10:01,810
+Y empezamos a aumentar la frecuencia.
 
 77
-00:05:42,570 --> 00:05:44,030
-Experimento tercero.
+00:10:03,350 --> 00:10:06,270
+Vamos subiendo de a 10 kHz, de forma suave.
 
 78
-00:05:44,430 --> 00:05:47,830
-En este experimento la frecuencia será suministrada a 100 Hz.
+00:10:08,650 --> 00:10:12,670
+Y vemos el momento en que la lámpara se enciende con fuerza.
 
 79
-00:05:48,650 --> 00:05:54,830
-Y la duración de la señal interruptora también en nosotros es 1%.
+00:10:14,710 --> 00:10:25,410
+El momento de máximo brillo de la lámpara corresponde a la frecuencia del transformador Tesla que equivale a media onda.
 
 80
-00:05:54,830 --> 00:06:06,470
-Y durante el experimento reduciré la duración de la señal interruptora para llevar el transformador Tesla a un modo de trabajo óptimo a esta frecuencia de 100 Hz.
+00:10:25,950 --> 00:10:33,150
+Ahora veamos con el indicador que en el extremo caliente la lámpara neón no se enciende.
 
 81
-00:06:11,040 --> 00:06:12,900
-Aplico potencia.
+00:10:33,350 --> 00:10:35,590
+El brillo aparece en el centro.
 
 82
-00:06:18,100 --> 00:06:19,820
-También 20 V.
+00:10:36,390 --> 00:10:40,290
+Y tampoco se enciende en la base del transformador Tesla.
 
 83
-00:06:22,340 --> 00:06:24,000
-Mira el oscilograma.
+00:10:42,150 --> 00:10:45,590
+Y ahora veamos qué obtuvimos en la práctica.
 
 84
-00:06:24,080 --> 00:06:26,900
-Vemos un largo proceso de amortiguación.
+00:10:45,990 --> 00:10:46,970
+¿Qué frecuencia?
 
 85
-00:06:27,680 --> 00:06:29,720
-El factor de calidad en el sistema es bueno.
+00:10:48,870 --> 00:10:53,130
+Pasemos la atención al generador de señales de laboratorio.
 
 86
-00:06:31,100 --> 00:06:34,860
-Y ahora examinemos en más detalle esta parte.
+00:10:54,590 --> 00:11:02,250
+Y vemos que la frecuencia de la resonancia de media onda corresponde a 1480 kHz.
 
 87
-00:06:37,260 --> 00:06:41,140
-Vemos en otra frecuencia el modo de arranque.
+00:11:03,350 --> 00:11:08,310
+Es decir, podemos concluir: ¡vaya diferencia!
 
 88
-00:06:42,220 --> 00:06:43,860
-Tenemos gran amplitud.
+00:11:08,890 --> 00:11:11,670
+Queda claro que la matemática acá no funciona.
 
 89
-00:06:43,860 --> 00:06:45,240
-Oscilaciones de onda.
+00:11:13,510 --> 00:11:21,910
+Ahora también vamos a medir el espectro de este transformador Tesla con un analizador de espectro.
 
 90
-00:06:45,800 --> 00:06:52,320
-Y más adelante en este punto la duración de la señal de control en un por ciento termina.
+00:11:22,390 --> 00:11:29,850
+Quizá hice algo mal en algún lado, pero el analizador de espectro nos va a mostrar el espectro completo al 100 %.
 
 91
-00:06:52,500 --> 00:06:55,860
-Y sucede la caída de oscilación en el circuito.
+00:11:30,070 --> 00:11:32,690
+Pasamos al experimento con el analizador de espectro.
 
 92
-00:06:56,440 --> 00:07:01,140
-Ahora intentemos ajustar el sistema al modo óptimo.
+00:11:33,350 --> 00:11:45,330
+La opción óptima para rastrear la frecuencia del transformador resonante va a ser captarla por antena, sin conectar sondas a este sistema.
 
 93
-00:07:01,320 --> 00:07:04,100
-Empiezo a reducir duración.
+00:11:45,990 --> 00:11:52,170
+Les llamo la atención sobre que ahora el generador de señales de laboratorio está desconectado de la única espira.
 
 94
-00:07:04,100 --> 00:07:06,520
-Duración de la señal permisiva.
+00:11:52,970 --> 00:11:56,230
+Y está apagado por completo para no generar interferencias.
 
 95
-00:07:07,240 --> 00:07:08,740
-0,9%.
+00:11:56,230 --> 00:12:03,610
+Con este experimento estamos verificando la precisión del ajuste de nuestro transformador Tesla a cuarto de onda.
 
 96
-00:07:08,740 --> 00:07:10,260
-0,8%.
+00:12:05,030 --> 00:12:13,790
+Se puede notar que en el instrumento aparece periódicamente un pico espectral.
 
 97
-00:07:10,260 --> 00:07:12,040
-0,7%.
+00:12:14,390 --> 00:12:17,510
+Ese pico de ahí que salta.
 
 98
-00:07:12,040 --> 00:07:12,980
-0,6%.
+00:12:18,010 --> 00:12:19,190
+Se ve muy bien.
 
 99
-00:07:12,980 --> 00:07:14,700
-0,5%.
+00:12:19,710 --> 00:12:23,050
+Le puse un marcador.
 
 100
-00:07:14,700 --> 00:07:16,800
-0,4%.
+00:12:23,170 --> 00:12:29,650
+La frecuencia del marcador, que indica el máximo, es de 500,1 kHz.
 
 101
-00:07:17,660 --> 00:07:19,460
-0,3%.
+00:12:30,750 --> 00:12:34,570
+¿Qué indica la aparición de este pico?
 
 102
-00:07:21,580 --> 00:07:24,420
-Eso es lo que ahora tenemos en el generador.
+00:12:34,890 --> 00:12:48,670
+Que este transformador Tesla, al recibir alguna onda de radio externa de transmisores lejanos de radioestaciones — o, como se pudo ver, salta un solo pico.
 
 103
-00:07:25,080 --> 00:07:26,740
-Observa el oscilograma.
+00:12:48,790 --> 00:12:51,170
+Por ejemplo, alguna actividad eléctrica de tormenta en algún lado.
 
 104
-00:07:27,340 --> 00:07:32,820
-Es decir ahora vemos claramente el modo de trabajo del transformador Tesla.
+00:12:52,110 --> 00:12:54,370
+Al captarla, reacciona.
 
 105
-00:07:32,820 --> 00:07:36,740
-Este es cuando en nosotros está la amplitud más grande.
+00:12:54,670 --> 00:12:57,730
+Y entonces aplicamos nuestra frecuencia de 500 kHz.
 
 106
-00:07:37,160 --> 00:07:40,480
-Y entonces la señal de control ya termina.
+00:12:59,110 --> 00:13:04,750
+Vemos que de inmediato el pico espectral creció muchas veces.
 
 107
-00:07:40,620 --> 00:07:48,120
-Es decir, la duración de la señal de control igual al tiempo en que el transformador Tesla alcanza la amplitud máxima.
+00:13:05,730 --> 00:13:12,970
+Y la presencia de mi mano, al acercarla, hace que la amplitud baje.
 
 108
-00:07:48,500 --> 00:07:50,480
-Y más adelante en nosotros sucede una caída.
+00:13:13,230 --> 00:13:15,050
+Eso indica un ajuste preciso.
 
 109
-00:07:52,420 --> 00:07:56,260
-Así se ve el oscilograma si lo expandes.
+00:13:15,910 --> 00:13:23,030
+Además, a esta frecuencia empiezan a observarse los siguientes picos espectrales de la serie de nuestro transformador.
 
 110
-00:07:57,920 --> 00:08:07,480
-Y tal modo de trabajo del transformador Tesla resulta.
+00:13:23,710 --> 00:13:30,050
+Ahora voy a ir cambiando la frecuencia y seguimos observando el espectrograma.
 
 111
-00:08:08,980 --> 00:08:15,280
-Ahora mira, en el siguiente experimento elevaremos el voltaje.
+00:13:30,990 --> 00:13:32,830
+Empiezo a subir la frecuencia.
 
 112
-00:08:16,020 --> 00:08:17,240
-Experimento número 4.
+00:13:34,750 --> 00:13:37,210
+El paso va a ser de 10 kHz.
 
 113
-00:08:17,540 --> 00:08:20,920
-Frecuencia de señales interruptoras 100 Hz.
+00:13:41,320 --> 00:13:43,460
+Vemos la desintonización.
 
 114
-00:08:21,540 --> 00:08:26,020
-Duración que encontramos óptima: 0,3%.
+00:13:45,060 --> 00:13:46,800
+La amplitud cae.
 
 115
-00:08:28,520 --> 00:08:35,140
-Ahora pongo la división por celda en voltios a 200 V por celda.
+00:13:48,560 --> 00:13:50,960
+Y el pico se desplaza.
 
 116
-00:08:36,520 --> 00:08:42,700
-Aquí está, puedes ver la posición en el primer canal 200 V por celda.
+00:13:52,060 --> 00:13:56,480
+Ahora estamos en nuestra frecuencia matemática calculada, de un megahertz.
 
 117
-00:08:42,860 --> 00:08:46,220
-Y ahora elevaremos el voltaje de suministro.
+00:13:56,660 --> 00:13:59,760
+Vemos lo pequeña que es en este transformador.
 
 118
-00:08:46,340 --> 00:08:49,700
-En los experimentos anteriores el voltaje, recordatorio, era 20 V.
+00:13:59,760 --> 00:14:01,340
+Sigo subiendo.
 
 119
-00:08:51,300 --> 00:08:53,860
-Ahora elevamos voltaje.
+00:14:02,460 --> 00:14:03,640
+Observamos el crecimiento.
 
 120
-00:08:56,020 --> 00:09:01,940
-Entonces, ahora tenemos en la entrada 100 V.
+00:14:05,460 --> 00:14:08,700
+Y veamos dónde va a estar el máximo en esa frecuencia.
 
 121
-00:09:09,860 --> 00:09:12,320
-100 V: esta es corriente de consumo.
+00:14:13,310 --> 00:14:15,350
+Nuestro máximo
 
 122
-00:09:16,230 --> 00:09:24,190
-En este esquema de puente los transistores permanecen en modo operativo hasta 250 V de potencia.
+00:14:20,170 --> 00:14:25,730
+corresponde a 1,5 MHz.
 
 123
-00:09:26,070 --> 00:09:30,130
-Elevo voltaje 150 V.
+00:14:25,930 --> 00:14:32,450
+Nuestras mediciones con la lámpara neón fueron prácticamente exactas.
 
 124
-00:09:39,990 --> 00:09:46,870
-Más adelante elevo voltaje 200 V.
+00:14:32,450 --> 00:14:37,790
+En esas mediciones se obtuvo una frecuencia de 1480 kHz.
 
 125
-00:09:47,370 --> 00:09:52,110
-Y aquí ya puedes escuchar sonido apareciendo en los altavoces.
+00:14:38,610 --> 00:14:43,590
+Ahora muevo el marcador y vemos la frecuencia.
 
 126
-00:09:52,250 --> 00:09:57,550
-Y ruptura del transformador Tesla al aire ya sucede.
+00:14:48,830 --> 00:14:50,170
+Acá está la frecuencia.
 
 127
-00:10:00,090 --> 00:10:01,370
-Tal oscilograma.
+00:14:51,270 --> 00:14:54,050
+Vemos que el marcador se movió hacia arriba.
 
 128
-00:10:01,810 --> 00:10:05,970
-Es decir, vemos que el transformador se quedó en modo operativo óptimo.
+00:14:54,130 --> 00:14:59,130
+Y corresponde a 1500 kHz.
 
 129
-00:10:06,970 --> 00:10:10,230
-Tenemos también aumento de amplitud.
+00:15:00,250 --> 00:15:12,810
+Si volvemos a nuestro transformador Tesla, a esta frecuencia, como recordamos, la lámpara neón se enciende en el centro.
 
 130
-00:10:11,090 --> 00:10:22,230
-Y ahora podemos examinar qué sucede en este modo directamente en la capacidad aislada del transformador Tesla.
+00:15:14,670 --> 00:15:34,930
+Ahora subo un poco la tensión para que se encienda, porque para la distribución de media onda agregué literalmente 4 voltios y eso ya alcanzó para que la lámpara neón
 
 131
-00:10:30,990 --> 00:10:36,610
-Aquí ya empieza a pegarme fuertemente a través de la lámpara en la mano.
+00:15:34,930 --> 00:15:35,750
+se encendiera.
 
 132
-00:10:38,090 --> 00:10:40,050
-Extremadamente desagradable.
+00:15:36,710 --> 00:15:49,170
+Porque la señal de cuarto de onda, por su antinodo de tensión, es más alta que la de la distribución de media onda.
 
 133
-00:10:46,710 --> 00:10:49,350
-Esto fue 200 V de potencia.
+00:15:54,360 --> 00:15:59,000
+¿Qué cosa interesante podemos ver en el analizador de espectro?
 
 134
-00:10:49,550 --> 00:10:55,010
-Y ahora aplico el límite máximo a 250 V.
+00:16:03,200 --> 00:16:07,700
+Vemos que aparecen las siguientes frecuencias.
 
 135
-00:11:03,020 --> 00:11:10,250
-Oscilograma de consumo y amplitud de voltaje.
+00:16:07,780 --> 00:16:10,340
+Ahí están, los picos espectrales que se manifiestan.
 
 136
-00:11:32,980 --> 00:11:38,720
-Ahora puedes ver el modo de ruptura estática.
+00:16:11,020 --> 00:16:16,980
+Y ese pico que salta es nuestra frecuencia de 500 kHz.
 
 137
-00:11:39,640 --> 00:11:41,040
-Descarga blanca brillante.
+00:16:17,760 --> 00:16:32,100
+Es decir, vemos la serie de frecuencias de nuestro transformador Tesla: cuando lo pusimos en media onda, también se excitan los 500 kHz y las frecuencias siguientes.
 
 138
-00:11:46,580 --> 00:11:53,020
-Ahora el dispositivo de contabilidad.
+00:16:32,560 --> 00:16:38,560
+Ahora voy a barrer por frecuencia y vamos a anotar su respuesta en frecuencia.
 
 139
-00:11:54,860 --> 00:12:00,320
-Ahora haremos una ruptura y observaremos consumo.
+00:16:40,220 --> 00:16:41,620
+Vamos a continuar.
 
 140
-00:12:01,320 --> 00:12:04,920
-Por sonido escucharás la ruptura.
+00:16:43,000 --> 00:16:47,060
+Bien, el paso también va a ser de 10 kHz.
 
 141
-00:12:13,320 --> 00:12:17,000
-Y el oscilograma en modo de ruptura.
+00:16:48,960 --> 00:16:54,290
+Vamos hasta el siguiente máximo.
 
 142
-00:12:21,530 --> 00:12:24,370
-Ahora aquí todo está muy fuertemente electrolizado.
+00:16:55,330 --> 00:16:59,410
+Vayan recordando, por las divisiones, dónde estaba el siguiente pico.
 
 143
-00:12:26,850 --> 00:12:28,330
-Hago la ruptura.
+00:17:00,370 --> 00:17:03,450
+Y en el siguiente pico vamos a tener un aumento de amplitud.
 
 144
-00:12:39,920 --> 00:12:47,180
-Ahora apagaré la potencia y el transformador lentamente se desvanece.
+00:17:03,910 --> 00:17:05,490
+Ahí la amplitud empezó a crecer.
 
 145
-00:12:48,480 --> 00:12:53,940
-Mira, el voltaje cae gradualmente.
+00:17:06,870 --> 00:17:08,330
+Ahí está su máximo.
 
 146
-00:12:55,180 --> 00:13:00,160
-Y aquí cuánto tiempo aún el sistema trabaja en tal modo.
+00:17:10,790 --> 00:17:19,410
+Según el generador de señales de laboratorio, la frecuencia es de 2990 kHz.
 
 147
-00:13:05,120 --> 00:13:14,380
-Cambio la cantidad de voltios por celda para que pudiera fijar la señal.
+00:17:22,650 --> 00:17:24,850
+Veamos la frecuencia.
 
 148
-00:13:15,300 --> 00:13:19,180
-Sin embargo, cuánto tiempo el sistema se desvanece.
+00:17:30,360 --> 00:17:31,740
+El pico se desplazó.
 
 149
-00:13:20,000 --> 00:13:25,000
-Ahora tenemos orden de 4 V.
+00:17:33,420 --> 00:17:37,740
+Y vemos: la frecuencia es de 2990 kHz.
 
 150
-00:13:26,880 --> 00:13:28,340
-3 V.
+00:17:38,060 --> 00:17:39,820
+Seguimos avanzando por la frecuencia.
 
 151
-00:13:28,780 --> 00:13:31,060
-Y el sistema aún continúa trabajando.
+00:17:48,580 --> 00:17:52,100
+Y ahí vemos el aumento del pico.
 
 152
-00:13:36,530 --> 00:13:39,490
-Un proceso lento de amortiguación sucede.
+00:17:52,580 --> 00:17:54,000
+La siguiente frecuencia es
 
 153
-00:13:41,770 --> 00:13:46,710
-Puedes recordar el oscilograma que observamos ahora en la ruptura.
+00:17:59,020 --> 00:18:04,640
+3840 kHz.
 
 154
-00:13:49,150 --> 00:13:51,210
-En nosotros ya 1 V resulta.
+00:18:11,350 --> 00:18:13,510
+Veamos si coincide.
 
 155
-00:13:51,410 --> 00:14:03,750
-Visible que este modo operativo estable al inicio del arranque y durante la ruptura sucede solo desvanecimiento de oscilaciones de amortiguación.
+00:18:16,800 --> 00:18:18,480
+Todo coincide.
 
 156
-00:14:03,750 --> 00:14:05,230
-En el transformador Tesla.
+00:18:18,940 --> 00:18:19,940
+3840.
 
 157
-00:14:05,830 --> 00:14:14,070
-Y el modo mismo se queda trabajando, a pesar del hecho de que hago descarga a un objeto metálico.
+00:18:21,060 --> 00:18:26,480
+Ahora conocemos por completo la serie de frecuencias de este transformador Tesla.
 
 158
-00:14:15,090 --> 00:14:16,110
-Experimento quinto.
+00:18:26,780 --> 00:18:28,960
+En las frecuencias con las que podemos trabajar.
 
 159
-00:14:16,370 --> 00:14:24,630
-Examinemos por color de descarga a qué frecuencia este efecto se manifiesta más brillantemente en nosotros.
+00:18:29,720 --> 00:18:38,940
+La escala completa va ahora desde 100 kHz al inicio hasta 5 MHz, una banda en la que abarcamos la serie espectral.
 
 160
-00:14:25,510 --> 00:14:29,950
-Y a cuál ya cambiamos al modo no óptimo.
+00:18:38,940 --> 00:18:50,400
+Todos los experimentos que hice con el analizador de espectro se pueden hacer si se tiene un osciloscopio y un generador de señales de laboratorio.
 
 161
-00:14:29,950 --> 00:14:33,190
-Ahora nos detuvimos en 100 Hz.
+00:18:50,620 --> 00:18:52,940
+Solo que ahora el procedimiento del experimento va a ser otro.
 
 162
-00:14:34,510 --> 00:14:35,950
-Aplico potencia.
+00:18:53,840 --> 00:19:01,400
+La misma antena que ahora está en el analizador de espectro la pasamos al osciloscopio.
 
 163
-00:14:36,250 --> 00:14:41,690
-Potencia en este caso aplicaremos 200 V.
+00:19:01,900 --> 00:19:06,240
+O dejamos colgada al aire su sonda junto al transformador Tesla.
 
 164
-00:14:46,780 --> 00:14:48,900
-Mira el color de la descarga.
+00:19:06,240 --> 00:19:13,580
+Y después variamos la frecuencia en la espira con el generador de señales de laboratorio.
 
 165
-00:14:56,400 --> 00:14:58,260
-Ahora aumento la frecuencia.
+00:19:13,960 --> 00:19:25,640
+Y nos anotamos también todos los máximos y amplitudes que el osciloscopio va a registrar mientras cambiamos la frecuencia en el generador de señales.
 
 166
-00:15:01,900 --> 00:15:03,480
-150 Hz.
+00:19:26,540 --> 00:19:28,620
+El cuadro de frecuencias va a ser el mismo.
 
 167
-00:15:07,870 --> 00:15:11,190
-El efecto incluso mejoró.
+00:19:28,780 --> 00:19:34,980
+Solo que con un analizador de espectro se hace mucho más eficiente y rápido.
 
 168
-00:15:13,770 --> 00:15:15,610
-Elevo más.
+00:19:34,980 --> 00:19:36,840
+Esa es toda la diferencia.
 
 169
-00:15:18,450 --> 00:15:19,970
-200 Hz.
+00:19:37,660 --> 00:19:42,120
+Ahora podemos observar las distribuciones de frecuencia tal como son.
 
 170
-00:15:28,960 --> 00:15:30,880
-Aún más alto.
+00:19:42,480 --> 00:19:47,200
+Cuarto, media onda, tres cuartos y cuatro cuartos, que es una onda.
 
 171
-00:15:33,380 --> 00:15:35,260
-250 Hz.
+00:19:47,800 --> 00:19:52,340
+Esas son las frecuencias con las que aún vamos a poder trabajar de verdad usando electrónica.
 
 172
-00:15:44,030 --> 00:15:44,530
-Sí.
+00:19:53,200 --> 00:19:56,960
+Vemos que no obedecen a la matemática.
 
 173
-00:15:48,120 --> 00:15:49,480
-300 Hz.
+00:19:58,160 --> 00:20:04,840
+Por ejemplo, si quisiéramos averiguar la longitud de onda con la matemática, multiplicaríamos los 500 kHz por 4.
 
 174
-00:15:57,700 --> 00:16:00,560
-El efecto aún se preserva.
+00:20:05,000 --> 00:20:06,900
+Tendría que corresponder a 2 MHz.
 
 175
-00:16:02,980 --> 00:16:05,100
-350 Hz.
+00:20:07,080 --> 00:20:09,260
+Y vemos cuál es la frecuencia en realidad.
 
 176
-00:16:12,980 --> 00:16:15,040
-El efecto está.
+00:20:10,420 --> 00:20:14,360
+Por eso no recomiendo aplicar la matemática.
 
 177
-00:16:18,060 --> 00:16:19,740
-400 Hz.
+00:20:14,580 --> 00:20:21,160
+En este caso esa pregunta, sobre cómo hizo el cálculo la persona, la descartamos.
 
 178
-00:16:23,910 --> 00:16:33,230
-Y ahora puedes notar que a 400 Hz ya en el color de la descarga aparece una pared rojiza.
+00:20:22,860 --> 00:20:24,800
+Ahora la esencia del fenómeno físico.
 
 179
-00:16:34,630 --> 00:16:41,650
-Es decir, sobre 400 Hz el efecto ya se manifestará mal en este transformador Tesla.
+00:20:24,800 --> 00:20:31,120
+Por qué se da este momento tan interesante con la distribución de frecuencias.
 
 180
-00:16:42,870 --> 00:16:45,450
-Ahora 450 Hz.
+00:20:32,780 --> 00:20:39,760
+Lo que pasa es que estos efectos se manifiestan de manera muy marcada en los sistemas resonantes.
 
 181
-00:16:50,580 --> 00:16:55,620
-Un matiz rojizo ya es más claramente visible.
+00:20:40,260 --> 00:20:49,300
+En los sistemas clásicos, donde hay una distribución de onda, no se comportan igual que en los resonadores de onda.
 
 182
-00:17:00,890 --> 00:17:02,630
-500 Hz.
+00:20:49,940 --> 00:20:52,620
+Allí también se aplican coeficientes de acortamiento.
 
 183
-00:17:09,820 --> 00:17:11,280
-Aquí ya visible.
+00:20:52,620 --> 00:20:57,620
+Pero en nuestro caso esto se manifiesta de forma muy clara.
 
 184
-00:17:13,120 --> 00:17:15,220
-Ahora elevaré más alto.
+00:20:58,620 --> 00:21:03,320
+Veamos el primer caso, cuando el sistema está en cuarto de onda.
 
 185
-00:17:16,220 --> 00:17:19,340
-A 700 Hz.
+00:21:03,440 --> 00:21:06,360
+El sistema completo con tierra es de media onda.
 
 186
-00:17:23,740 --> 00:17:26,320
-La descarga se volvió roja.
+00:21:07,200 --> 00:21:14,080
+Acá el resonador helicoidal de onda en la práctica influye la mitad que en el sistema de media onda.
 
 187
-00:17:27,260 --> 00:17:31,580
-Y presta atención al oscilograma.
+00:21:14,600 --> 00:21:20,980
+Es decir, en este caso en la espiral de la bobina ya cabe media onda, mientras que aquí solo cuarto.
 
 188
-00:17:32,780 --> 00:17:33,440
-Aquí ves.
+00:21:20,980 --> 00:21:23,100
+Por eso, en este caso, la influencia aumenta.
 
 189
-00:17:34,440 --> 00:17:35,640
-700 Hz.
+00:21:24,420 --> 00:21:35,060
+Y se observa un efecto interesante: la velocidad de la onda en el resonador helicoidal de onda aumenta respecto a la velocidad de la onda que se mueve por un conductor recto.
 
 190
-00:17:37,100 --> 00:17:38,660
-Y nuestro oscilograma.
+00:21:35,760 --> 00:21:38,280
+Por más paradójico que parezca, ahí está lo interesante.
 
 191
-00:17:39,860 --> 00:17:42,640
-Es decir, el efecto ya está ausente.
+00:21:39,560 --> 00:21:49,980
+También vale aclarar que la onda se distribuye no solo en el cable hacia la tierra, sino también en el suelo al que esa tierra está conectada.
 
 192
-00:17:43,640 --> 00:17:46,720
-Sin exceso de voltaje.
+00:21:50,980 --> 00:21:59,760
+Es decir, desde el extremo frío hasta el extremo del cable, en realidad la onda no recorre solo esta parte, sino también el suelo.
 
 193
-00:17:47,520 --> 00:17:53,240
-Y podemos observar oscilogramas estándar vistos a menudo.
+00:21:59,860 --> 00:22:01,340
+Todo depende del tipo de suelo.
 
 194
-00:17:55,920 --> 00:18:04,040
-De esa manera puedes calcular las frecuencias a las cuales en tu transformador Tesla este efecto será máximo.
+00:22:02,660 --> 00:22:11,240
+Y resulta que ahora sabemos que al subir la frecuencia, la longitud de onda en metros físicos disminuye.
 
 195
-00:18:05,140 --> 00:18:07,600
-A qué frecuencias no tiene sentido interrumpir.
+00:22:11,240 --> 00:22:23,900
+Y por eso, en nuestro caso, para que en la longitud de cable de nuestro resonador helicoidal de onda entre justamente media onda, hay que aumentar la frecuencia.
 
 196
-00:18:08,140 --> 00:18:11,100
-Una pequeña adición al experimento número 5.
+00:22:24,080 --> 00:22:25,800
+Recién ahí va a entrar.
 
 197
-00:18:12,100 --> 00:18:20,800
-La frecuencia a la cual el efecto desapareció, vimos, era 700 Hz.
+00:22:25,940 --> 00:22:29,880
+Reducimos los metros físicos y los acomodamos en la longitud de la bobina.
 
 198
-00:18:21,320 --> 00:18:28,440
-Y la duración, como a 100 Hz, conducido experimento 0,3%.
+00:22:31,360 --> 00:22:36,620
+Ahora a los que están mirando les surge, o les va a surgir, una pregunta razonable.
 
 199
-00:18:29,100 --> 00:18:34,140
-Por justicia podemos mirar el oscilograma una vez más.
+00:22:36,620 --> 00:22:42,540
+¿Para qué tanto lío con pasar la bobina a media onda?
 
 200
-00:18:36,740 --> 00:18:38,080
-También aplico.
+00:22:43,080 --> 00:22:49,500
+La cuestión es que, para construir un sistema funcional, es indispensable contar con un vibrador de media onda.
 
 201
-00:18:39,700 --> 00:18:43,200
-Aproximadamente 200 V, como fue en el experimento número 5.
+00:22:50,700 --> 00:22:55,060
+Sin él, no van a obtener ninguna energía seria.
 
 202
-00:18:45,000 --> 00:18:54,560
-Aquí también puedes encontrar este efecto si empiezo a aumentar la duración de la señal permisiva.
+00:22:55,180 --> 00:23:03,360
+Por eso, del ajuste a media onda de la bobina receptora nadie se va a librar.
 
 203
-00:18:54,720 --> 00:19:02,240
-Ahora la pondré a 1%, por ejemplo.
+00:23:03,360 --> 00:23:08,320
+Y vuelvo a llamar la atención sobre la construcción de esta bobina.
 
 204
-00:19:02,240 --> 00:19:15,920
-Porque entendemos que con el aumento de la frecuencia siguiente de pulsos permisivos, reducimos la duración de estos pulsos permisivos.
+00:23:09,340 --> 00:23:17,720
+Está hecha con cable de cobre grueso, justamente para eliminar la resistencia activa en ella.
 
 205
-00:19:18,580 --> 00:19:22,880
-Digamos, también ves el efecto está.
+00:23:18,480 --> 00:23:21,980
+Más adelante voy a armar mi propio generador.
 
 206
-00:19:23,400 --> 00:19:35,040
-Pero por qué digo que aquí no vale la pena detenerse en estas frecuencias ya, adicionalmente determino por color de descarga.
+00:23:24,280 --> 00:23:28,080
+Con esto les deseo a todos buenos experimentos y todo lo mejor.
 
 207
-00:19:37,620 --> 00:19:43,340
-El color de la descarga ya tendrá un matiz rojizo.
+00:23:28,080 --> 00:23:38,700
+En el próximo video, que voy a intentar grabar lo antes posible, hicieron otra pregunta interesante.
 
 208
-00:19:44,340 --> 00:19:51,080
-Una parte blanca en ella está presente pero el modo ya es menos efectivo.
+00:23:39,340 --> 00:23:45,180
+¿Cómo influye un transformador Tesla sobre otro a través de sus campos?
 
 209
-00:19:51,420 --> 00:19:53,280
-Aunque el trabajo aún es posible.
+00:23:45,900 --> 00:23:47,660
+¿Qué distribuciones se producen?
 
 210
-00:19:55,120 --> 00:20:04,060
-Ahora miremos los oscilogramas de control lógico que sucede a 100 Hz en nosotros.
+00:23:48,400 --> 00:23:57,000
+¿Cómo crear una modulación sin usar un generador de señales de laboratorio ni electrónica compleja?
 
 211
-00:20:05,400 --> 00:20:10,260
-Ahora instalé dos sondas del osciloscopio en la parte de control lógico.
-
-212
-00:20:10,260 --> 00:20:14,300
-Aquí viene, en estos puntos de esta placa.
-
-213
-00:20:15,460 --> 00:20:17,260
-Y mira los oscilogramas.
-
-214
-00:20:18,180 --> 00:20:20,340
-Más adelante esta señal va a los controladores.
-
-215
-00:20:20,440 --> 00:20:24,300
-Quien esté interesado, el esquema lo di en mi canal.
-
-216
-00:20:24,500 --> 00:20:25,800
-Tanto el esquema como video sobre él.
-
-217
-00:20:26,500 --> 00:20:32,500
-Este es un puente completo para controlar el inductor del transformador Tesla.
-
-218
-00:20:35,120 --> 00:20:38,380
-Atención, ahora cambio al osciloscopio.
-
-219
-00:20:39,380 --> 00:20:43,800
-Ahora el esquema trabaja sin interrupciones.
-
-220
-00:20:45,440 --> 00:20:47,580
-Ves que todo es estándar.
-
-221
-00:20:48,460 --> 00:20:50,780
-Dos señales tienen tiempo muerto.
-
-222
-00:20:51,500 --> 00:20:55,540
-Frecuencia 187,5 kHz.
-
-223
-00:20:56,040 --> 00:20:59,100
-Ahora activaré la interrupción.
-
-224
-00:20:59,580 --> 00:21:05,540
-Como teníamos, 3% a frecuencia 100 Hz.
-
-225
-00:21:08,380 --> 00:21:11,100
-Activo interrupción en la placa.
-
-226
-00:21:13,400 --> 00:21:18,380
-Y ve que en nosotros aparecieron ráfagas de pulsos.
-
-227
-00:21:20,060 --> 00:21:21,820
-Presiono pausa.
-
-228
-00:21:26,540 --> 00:21:28,100
-Podemos examinar.
-
-229
-00:21:29,980 --> 00:21:34,540
-Tal tenemos una ráfaga de pulsos de control.
-
-230
-00:21:34,980 --> 00:21:39,500
-Con frecuencia 186,5 kHz.
-
-231
-00:21:39,940 --> 00:21:46,120
-El transformador Tesla se oscila con tal señal.
-
-232
-00:21:46,500 --> 00:21:54,060
-Naturalmente, en el inductor de resonancia este proceso cambia a oscilaciones sinusoidales.
-
-233
-00:21:55,400 --> 00:21:58,020
-Como pez.
-
-234
-00:21:59,140 --> 00:22:05,600
-Y más adelante ya sucede el proceso ondulatorio en el transformador Tesla mismo.
-
-235
-00:22:07,560 --> 00:22:10,720
-Puedo cambiar frecuencia aquí.
-
-236
-00:22:14,260 --> 00:22:17,480
-Establezco sync aproximadamente.
-
-237
-00:22:18,020 --> 00:22:19,280
-Saltará por supuesto.
-
-238
-00:22:20,680 --> 00:22:27,980
-200, 300, 400 ahora Hz frecuencia.
-
-239
-00:22:29,640 --> 00:22:33,560
-Aquí será frecuencia 500 Hz.
-
-240
-00:22:35,560 --> 00:22:45,880
-Es decir, este sistema está controlado en total ahora con un par de pulsos.
-
-241
-00:22:46,660 --> 00:23:04,080
-Si a una frecuencia, por ejemplo, regresando a los mismos 100 Hz, aumentaremos la duración del pulso permisivo, entonces la ráfaga en nosotros aumentará en tiempo.
-
-242
-00:23:05,780 --> 00:23:11,000
-En este caso ahora la duración de la señal de control es 1%.
-
-243
-00:23:15,670 --> 00:23:17,830
-Tal ráfaga.
-
-244
-00:23:17,950 --> 00:23:29,010
-Es decir, puedes observar que nada especialmente complicado en controlar el transformador Tesla en este sistema está ausente.
-
-245
-00:23:29,010 --> 00:23:32,750
-Aquí trabaja la característica de la bobina misma.
-
-246
-00:23:32,890 --> 00:23:36,830
-Que está en modo de onda, cuidadosamente hecha.
-
-247
-00:23:37,430 --> 00:23:41,890
-Una combinación de resonancia LC y onda en longitud de cable sucede.
-
-248
-00:23:42,470 --> 00:23:44,570
-Acoplada con el cable de tierra.
-
-249
-00:23:44,890 --> 00:23:47,610
-Tales efectos salen.
-
-250
-00:23:48,150 --> 00:24:00,210
-Si todo esto haces en un transformador Tesla usual que está en resonancia LC, naturalmente, no obtendrás tales efectos y tales oscilogramas.
-
-251
-00:24:01,130 --> 00:24:02,990
-Experimento número 6.
-
-252
-00:24:03,310 --> 00:24:10,710
-En este experimento miraremos cómo el transformador Tesla receptor reacciona a este modo operativo.
-
-253
-00:24:11,790 --> 00:24:14,210
-Las bobinas son completamente idénticas.
-
-254
-00:24:15,070 --> 00:24:17,370
-Puestas a tierra a una y la misma tierra.
-
-255
-00:24:17,930 --> 00:24:30,530
-Durante el experimento desplazo la frecuencia del transformador Tesla receptor ligeramente más baja que en el transmisor con la ayuda de tal muelle de aluminio.
-
-256
-00:24:31,290 --> 00:24:33,350
-Hago una capacidad unida adicional.
-
-257
-00:24:33,490 --> 00:24:38,830
-De esta manera desajusto el desfase entre los dos transformadores Tesla.
-
-258
-00:24:39,850 --> 00:24:41,630
-Ahora aplico potencia.
-
-259
-00:24:42,650 --> 00:24:45,630
-El sistema por ahora trabaja sin interrupciones.
-
-260
-00:24:47,710 --> 00:24:52,050
-Aplico potencia de orden 15 V.
-
-261
-00:24:52,780 --> 00:24:54,710
-Este para nosotros es el transmisor.
-
-262
-00:24:55,990 --> 00:25:01,070
-Ve que cerca del transmisor la lámpara no brilla.
-
-263
-00:25:01,670 --> 00:25:04,910
-Cerca del receptor brilla con brillo.
-
-264
-00:25:05,790 --> 00:25:12,510
-Ahora si traemos la iluminación del receptor directamente a la capacidad aislada.
-
-265
-00:25:13,790 --> 00:25:16,710
-Aquí una pequeña chispa se cuela.
-
-266
-00:25:16,710 --> 00:25:25,470
-Es pequeña en el transmisor, y en el receptor se estira a un centímetro y medio.
-
-267
-00:25:27,030 --> 00:25:30,970
-Ahora cambiamos el sistema al modo de interrupción.
-
-268
-00:25:36,140 --> 00:25:42,820
-Frecuencia de interrupción 100 Hz, duración 0,3%.
-
-269
-00:25:45,360 --> 00:25:49,060
-Ahora voltaje 50 V.
-
-270
-00:25:53,320 --> 00:25:56,860
-Ruptura a distancia 4 cm.
-
-271
-00:25:57,600 --> 00:26:02,080
-Aquí ruptura a distancia 0,5 cm en el transmisor.
-
-272
-00:26:02,720 --> 00:26:07,880
-Elevo amplitud 100 V.
-
-273
-00:26:09,480 --> 00:26:13,480
-En el transmisor ruptura 2 cm.
-
-274
-00:26:14,320 --> 00:26:18,540
-En el receptor 10 cm.
-
-275
-00:26:21,900 --> 00:26:27,160
-Voltaje 150 V.
-
-276
-00:26:30,220 --> 00:26:35,140
-Ruptura transmisora 3-3,5 cm.
-
-277
-00:26:44,380 --> 00:26:47,620
-Aún no están óptimamente acoplados en este modo.
-
-278
-00:26:47,760 --> 00:26:55,610
-Por sonido se escucha cuando acerco mi mano, amplitud en el receptor...
-
-279
-00:26:59,180 --> 00:27:02,940
-Ahora doy el modo 200 V.
-
-280
-00:27:06,310 --> 00:27:11,430
-Muy fuertemente, que el transmisor en
-
-281
-00:27:19,330 --> 00:27:21,270
-distancia 20 cm.
-
-282
-00:27:26,570 --> 00:27:27,930
-Ves la dependencia tú mismo.
-
-283
-00:27:28,670 --> 00:27:32,110
-Ahora dos transformadores trabajan.
-
-284
-00:27:33,330 --> 00:27:34,470
-Esto es potencia.
-
-285
-00:27:35,490 --> 00:27:38,730
-Ahora haré una descarga en el receptor.
-
-286
-00:27:54,990 --> 00:27:57,670
-Y ahora acerco al transmisor.
-
-287
-00:28:00,440 --> 00:28:05,160
-Aquí cuando hago descarga en el transmisor.
-
-288
-00:28:05,370 --> 00:28:07,110
-Aquí el consumo cambia ya.
-
-289
-00:28:18,510 --> 00:28:21,210
-En esto todos todo bueno.
-
-290
-00:28:22,390 --> 00:28:23,880
-Experimentos exitosos a todos.
-
-291
-00:28:24,290 --> 00:28:25,510
-Buen humor.
-
-292
-00:28:25,750 --> 00:28:26,870
-Una vez más con la fiesta.
-
-293
-00:28:27,470 --> 00:28:34,810
-Quien quisiera dar ayuda material al canal, detalles bajo mis clips de video.
+00:23:57,000 --> 00:23:58,260
+¡Va a estar interesante!
