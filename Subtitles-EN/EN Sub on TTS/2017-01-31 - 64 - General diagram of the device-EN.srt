@@ -1,0 +1,968 @@
+1
+00:00:01,130 --> 00:00:01,770
+Hi everyone.
+
+2
+00:00:03,110 --> 00:00:10,570
+There's been a question on the channel for a while now about the device's general block diagram, how its main components connect to each other.
+
+3
+00:00:11,730 --> 00:00:22,990
+I held off on sharing this diagram for a while for certain reasons, because I needed to test many variants myself, and evaluate how they work together in the overall system.
+
+4
+00:00:24,250 --> 00:00:30,490
+This picture shows the block diagram of the device, which we'll go through now.
+
+5
+00:00:32,530 --> 00:00:35,310
+I want to say this is just the variant I landed on.
+
+6
+00:00:38,050 --> 00:00:44,410
+I don't want to impose it on anyone, because there's some confusion among the people who talk about how these devices work.
+
+7
+00:00:49,180 --> 00:00:50,860
+That doesn't mean people are lying.
+
+8
+00:00:53,500 --> 00:00:54,920
+It can mean one thing.
+
+9
+00:00:55,140 --> 00:00:57,180
+There are many ways to build this device.
+
+10
+00:00:59,400 --> 00:01:02,720
+That's why one person says one thing, and another the opposite.
+
+11
+00:01:05,570 --> 00:01:07,270
+I want to give some small advice.
+
+12
+00:01:09,090 --> 00:01:13,250
+When you build devices like these, it's best to rely on your own judgment.
+
+13
+00:01:15,870 --> 00:01:18,850
+Run your own experiments, and draw your own conclusions.
+
+14
+00:01:19,790 --> 00:01:23,770
+And above all, trust your specific instruments, and what actually works.
+
+15
+00:01:27,710 --> 00:01:31,170
+The main component in my build of this device, is our coil.
+
+16
+00:01:34,570 --> 00:01:36,930
+This is the reactor where processes happen.
+
+17
+00:01:38,210 --> 00:01:47,570
+If people are building devices where the processes happen in the inductor instead, then it's fair to say that this coil, which is just a pickup, can be wound any way.
+
+18
+00:01:50,950 --> 00:01:54,450
+Wound however, even in one direction.
+
+19
+00:01:55,930 --> 00:01:59,250
+Because the main process flows specifically in the inductor.
+
+20
+00:02:00,790 --> 00:02:02,410
+I work on a different principle.
+
+21
+00:02:03,910 --> 00:02:06,710
+So there are specific requirements for making this coil.
+
+22
+00:02:09,770 --> 00:02:13,050
+I already made a video on how to do it, called Resonator.
+
+23
+00:02:16,210 --> 00:02:20,670
+Next, the second main component, is the low frequency driving generator.
+
+24
+00:02:21,870 --> 00:02:26,970
+Built on the push-pull schematic, a two-arm converter that works on a ferrite core with a gap.
+
+25
+00:02:31,090 --> 00:02:34,530
+From the ferrite core, we have two removable windings.
+
+26
+00:02:35,150 --> 00:02:39,130
+Three to four turns on one winding, and about 25 turns on the second.
+
+27
+00:02:41,830 --> 00:02:50,510
+This 25 turn winding connects to the main coil, and the whole thing forms a circuit.
+
+28
+00:02:52,790 --> 00:02:55,690
+This circuit is non-resonant at low frequency.
+
+29
+00:02:56,430 --> 00:02:58,830
+You can see I marked a key for the symbols on the drawing.
+
+30
+00:03:02,490 --> 00:03:06,950
+P means right winding, L means left, and the asterisk means pick this.
+
+31
+00:03:07,710 --> 00:03:13,950
+These components, capacitors, windings, turn counts, need to be picked individually in practice.
+
+32
+00:03:19,150 --> 00:03:23,190
+The symbols also indicate winding direction, we're right, we're left.
+
+33
+00:03:25,450 --> 00:03:27,630
+There's a certain rule I try to follow.
+
+34
+00:03:30,710 --> 00:03:35,030
+Right-handed windings are for the magnetic field, left-handed for the electric field.
+
+35
+00:03:37,970 --> 00:03:44,150
+There's a point that causes some confusion, how to wind a right or left winding, how to identify it.
+
+36
+00:03:49,020 --> 00:03:52,940
+In particular, when winding a coil, say we have a form and wire.
+
+37
+00:03:54,500 --> 00:03:57,240
+Take the left hand and pinch the start of the wire.
+
+38
+00:03:59,380 --> 00:04:07,000
+Now if we leave the winding with the right hand and look at the direction we're winding in, you can see this winding goes clockwise, twisting.
+
+39
+00:04:13,480 --> 00:04:15,340
+We call this winding right-handed.
+
+40
+00:04:18,810 --> 00:04:30,050
+If we take the wire in the left hand, pinch it too, and wind in the other direction, and now want to figure out the winding direction, we look from left to right, from the side where the wire rises up
+
+41
+00:04:30,050 --> 00:04:34,970
+the form, along the form.
+
+42
+00:04:37,150 --> 00:04:41,650
+And here it's clearly counterclockwise, meaning this is a left-handed winding.
+
+43
+00:04:46,150 --> 00:04:48,710
+This converter node in practice looks like this.
+
+44
+00:04:52,050 --> 00:04:54,870
+It's ferrite from an old TV's deflection unit.
+
+45
+00:04:57,110 --> 00:04:58,630
+Mainly low-frequency ferrite.
+
+46
+00:04:58,930 --> 00:05:01,950
+You can use a ferrite ring, you can use a gap, or not.
+
+47
+00:05:05,660 --> 00:05:10,060
+Just that with ferrite without a gap, push-pull tuning is slightly trickier.
+
+48
+00:05:11,000 --> 00:05:15,600
+But since this ferrite is split into two halves from the factory, there's no problem.
+
+49
+00:05:19,840 --> 00:05:26,100
+You have to put those three removable turns on the opposite half of the core from the turns that control the transistors.
+
+50
+00:05:32,540 --> 00:05:35,100
+Those 8 to 10 turns of the push-pull arms.
+
+51
+00:05:36,220 --> 00:05:37,980
+The gap is at these points for us.
+
+52
+00:05:41,460 --> 00:05:43,700
+Mandatory wound on the opposite side.
+
+53
+00:05:44,120 --> 00:05:46,160
+An isolating transformer is formed.
+
+54
+00:05:49,160 --> 00:05:51,700
+The white wire is the 25 turns.
+
+55
+00:05:53,720 --> 00:05:58,120
+Here's its output, which next goes per the circuit to the cold end of our coil.
+
+56
+00:06:00,240 --> 00:06:03,940
+And to the capacitor that later connects with the hot end of the coil.
+
+57
+00:06:05,980 --> 00:06:09,020
+These leads go directly to the drains of the FETs.
+
+58
+00:06:11,320 --> 00:06:14,360
+In the center, you can see the center tap of these windings.
+
+59
+00:06:17,100 --> 00:06:19,400
+It goes to plus power from the converters.
+
+60
+00:06:22,180 --> 00:06:26,160
+And on the back side, we have the main reservoir capacitor for push-pull power.
+
+61
+00:06:33,380 --> 00:06:35,240
+Plus connects to the center tap.
+
+62
+00:06:36,300 --> 00:06:39,100
+And this wire to minus goes to the transistor sources.
+
+63
+00:06:40,060 --> 00:06:41,800
+That's basically the power wire.
+
+64
+00:06:48,410 --> 00:06:53,410
+The question comes up, why do we connect this coil in series with the 25 turns?
+
+65
+00:06:55,410 --> 00:07:05,370
+It's done so that in the series tank circuit formed by the inductor and these three turns, we don't just get sine oscillations at some frequency, but amplitude modulated ones.
+
+66
+00:07:08,850 --> 00:07:10,110
+Amplitude modulated.
+
+67
+00:07:12,270 --> 00:07:17,530
+If you put a probe at this point, with correct tuning, you'll see the carrier signal is modulated.
+
+68
+00:07:18,350 --> 00:07:22,290
+You can see either fish modulated to zero or partial modulation.
+
+69
+00:07:24,670 --> 00:07:29,750
+But modulation in the inductor circuit should be no less than 50% amplitude.
+
+70
+00:07:31,210 --> 00:07:35,750
+For the same reason, the converter supply is 24V instead of 12.
+
+71
+00:07:37,130 --> 00:07:40,950
+This raised supply reduces the turn count on the converter winding.
+
+72
+00:07:45,400 --> 00:07:47,100
+The turn count goes down.
+
+73
+00:07:49,560 --> 00:07:53,860
+From the 25 turns of the left winding, also marked with an asterisk.
+
+74
+00:07:54,260 --> 00:08:03,660
+You pick the turn count until the active voltage applied in series in this circuit causes amplitude modulations of the carrier signal in the inductor to show up.
+
+75
+00:08:08,720 --> 00:08:12,840
+Without those modulations in the inductor, the system can't be started.
+
+76
+00:08:14,260 --> 00:08:21,200
+You may have noticed I use two power supplies in series with 12V each instead of a single 24V supply for the converter.
+
+77
+00:08:26,540 --> 00:08:30,920
+I use Navigator brand power supplies with 5A output at 12.5V.
+
+78
+00:08:33,800 --> 00:08:39,820
+The power supplies are designed to keep the system running in autonomous mode once it reaches nominal power.
+
+79
+00:08:41,480 --> 00:08:46,320
+This way of wiring the power supplies lets the system start from a 12V battery.
+
+80
+00:08:47,380 --> 00:08:48,740
+Startup is done like this.
+
+81
+00:08:49,400 --> 00:08:50,640
+First this switch closes.
+
+82
+00:08:51,940 --> 00:08:53,520
+Power comes to the converter.
+
+83
+00:08:56,060 --> 00:08:59,480
+Power also goes to all the control chips in these nodes.
+
+84
+00:09:03,180 --> 00:09:05,900
+We've already covered the schematics of these nodes.
+
+85
+00:09:06,360 --> 00:09:13,340
+And then, when the start button closes, power goes to the converter that supplies our controlled Tesla or controlled catcher.
+
+86
+00:09:16,760 --> 00:09:23,840
+With this hookup, you don't need a diode at this point to block the voltage coming from the power supply when the system runs on its own.
+
+87
+00:09:26,640 --> 00:09:31,520
+This battery with this hookup doesn't need to be removed, it's the regular one.
+
+88
+00:09:32,280 --> 00:09:36,780
+And while this switch is closed, the battery is constantly being recharged.
+
+89
+00:09:37,460 --> 00:09:42,580
+To make it clearer, let me show the system being tested with the series-connected power supplies in action.
+
+90
+00:09:45,160 --> 00:09:47,000
+Two 12V power supplies.
+
+91
+00:09:48,120 --> 00:09:48,860
+Starter battery.
+
+92
+00:09:51,540 --> 00:09:52,580
+Here's the output.
+
+93
+00:09:53,800 --> 00:09:57,060
+This is the point where the plus of the starter battery connects.
+
+94
+00:09:59,740 --> 00:10:00,680
+Second output.
+
+95
+00:10:02,000 --> 00:10:05,900
+This is the 24V lead that next goes to the push-pull converter.
+
+96
+00:10:10,790 --> 00:10:13,850
+Now I've connected the meter common to the minus of the battery.
+
+97
+00:10:16,410 --> 00:10:18,050
+And I measure the battery voltage.
+
+98
+00:10:19,350 --> 00:10:20,970
+You see it's 12.9V.
+
+99
+00:10:24,540 --> 00:10:28,560
+Now I connect the meter to the future 24V output at this point.
+
+100
+00:10:35,680 --> 00:10:39,060
+And I connect the midpoint of the two power supplies to the battery.
+
+101
+00:10:41,940 --> 00:10:49,180
+You see the battery voltage, minus losses on the diodes inside the power supplies, appeared at the output of the second one.
+
+102
+00:10:52,440 --> 00:10:54,560
+And the battery can be freely connected.
+
+103
+00:10:56,680 --> 00:10:58,580
+That's the value we have at the output.
+
+104
+00:10:59,240 --> 00:11:02,340
+And now you can see one of the LEDs on the power supply is on.
+
+105
+00:11:03,340 --> 00:11:06,780
+The one whose terminal has the battery potential applied to it.
+
+106
+00:11:09,120 --> 00:11:11,660
+Now I'll connect the power supplies to the mains.
+
+107
+00:11:13,940 --> 00:11:15,600
+They'll start producing voltage.
+
+108
+00:11:16,320 --> 00:11:19,360
+And we'll see the common output voltage of the two on the meter.
+
+109
+00:11:24,360 --> 00:11:25,600
+Connect the supplies.
+
+110
+00:11:27,700 --> 00:11:29,480
+You see our voltage changed.
+
+111
+00:11:30,540 --> 00:11:31,740
+Became 24V.
+
+112
+00:11:32,820 --> 00:11:33,880
+Practically 25.
+
+113
+00:11:34,420 --> 00:11:38,280
+And in this hookup the battery has the potential from the first power source.
+
+114
+00:11:41,560 --> 00:11:44,380
+And it'll be in charge mode constantly.
+
+115
+00:11:46,360 --> 00:11:47,340
+Disconnect it.
+
+116
+00:11:48,320 --> 00:11:49,920
+You see a slight voltage drop.
+
+117
+00:11:51,940 --> 00:11:57,340
+Because the voltage now from the battery charge is slightly higher than what the power supply can give.
+
+118
+00:12:00,960 --> 00:12:04,560
+On these power supplies, output regulation is provided.
+
+119
+00:12:05,280 --> 00:12:09,060
+Output voltage regulation is done within some range with trim pots.
+
+120
+00:12:10,180 --> 00:12:13,580
+Here you could set 13.5V, for example.
+
+121
+00:12:14,680 --> 00:12:16,820
+And this battery will always be on charge.
+
+122
+00:12:18,620 --> 00:12:20,240
+Turn off the power source.
+
+123
+00:12:23,000 --> 00:12:24,840
+You see the potential drops.
+
+124
+00:12:26,600 --> 00:12:28,240
+A gradual discharge happens.
+
+125
+00:12:28,880 --> 00:12:30,700
+And we see the battery voltage again.
+
+126
+00:12:34,690 --> 00:12:36,290
+That's how our system works.
+
+127
+00:12:37,990 --> 00:12:41,690
+Using two 12V power supplies also solves one problem.
+
+128
+00:12:43,150 --> 00:12:46,330
+The problem of starting up the converter for catcher or Tesla power.
+
+129
+00:12:47,890 --> 00:12:49,570
+It needs 12V power.
+
+130
+00:12:51,030 --> 00:12:56,010
+So the battery voltage is applied directly to this converter when the button is closed.
+
+131
+00:12:57,130 --> 00:12:59,770
+To start the device, we close the circuit.
+
+132
+00:13:00,650 --> 00:13:04,650
+The converter ramps the voltage up to the potential needed for system operation.
+
+133
+00:13:05,450 --> 00:13:07,910
+And the high voltage system's power side starts.
+
+134
+00:13:09,470 --> 00:13:12,090
+To stop the device, just open this circuit.
+
+135
+00:13:12,750 --> 00:13:19,390
+When the device isn't being used, you should turn this switch off so the battery doesn't get drained by the push-pull inverter running.
+
+136
+00:13:21,450 --> 00:13:26,730
+The next system block, crucial for proper operation, is this low frequency choke.
+
+137
+00:13:28,270 --> 00:13:34,670
+In the first variations of some author's schematics we saw it, then it disappeared, supposedly unnecessary.
+
+138
+00:13:35,510 --> 00:13:37,090
+This choke does two main jobs.
+
+139
+00:13:39,150 --> 00:13:46,810
+First, it blocks the high frequency component from reaching the diode bridge, the load, and then the input side of the power supplies.
+
+140
+00:13:47,930 --> 00:13:54,270
+The input side has electrolytic capacitors, so if high frequency gets in there, those caps can fail outright.
+
+141
+00:13:55,610 --> 00:13:57,270
+In practice they just blow.
+
+142
+00:13:58,610 --> 00:14:01,650
+And the second main job is also blocking high frequency.
+
+143
+00:14:03,530 --> 00:14:04,350
+But why?
+
+144
+00:14:05,470 --> 00:14:08,590
+High frequency should work exclusively in this circuit.
+
+145
+00:14:09,570 --> 00:14:13,930
+If it goes further, the path length increases and the system unbalances.
+
+146
+00:14:14,910 --> 00:14:16,250
+Starting it then would be hopeless.
+
+147
+00:14:17,070 --> 00:14:18,670
+This is one of the most critical parts.
+
+148
+00:14:19,070 --> 00:14:20,810
+You can't skip it under any conditions.
+
+149
+00:14:21,890 --> 00:14:28,530
+It can be made on any low frequency ferrite ring, or you can use the same TV deflection ferrite from old TVs.
+
+150
+00:14:29,730 --> 00:14:31,130
+In practice it looks like this.
+
+151
+00:14:31,910 --> 00:14:35,210
+You can see right away the winding is done with two wires.
+
+152
+00:14:36,110 --> 00:14:43,070
+The turn count is 8 to 15, but an average of about 10 turns is enough to reliably block the HF component.
+
+153
+00:14:45,690 --> 00:14:48,690
+Next, after the choke, we have the diode bridge.
+
+154
+00:14:49,330 --> 00:14:51,830
+The diodes used are fast or ultra-fast.
+
+155
+00:14:53,790 --> 00:14:57,670
+You can also use Schottky diodes rated 400 to 600 V.
+
+156
+00:14:58,710 --> 00:14:59,490
+That's plenty.
+
+157
+00:15:01,910 --> 00:15:03,970
+Personally, I use diodes in this housing.
+
+158
+00:15:05,110 --> 00:15:09,370
+This housing has two diodes connected back to back, joined at the cathodes.
+
+159
+00:15:10,110 --> 00:15:11,930
+The center pin is the cathode.
+
+160
+00:15:13,010 --> 00:15:19,370
+Since there are two diodes in this housing, I use them in parallel, which increases the overall current rating of the pair.
+
+161
+00:15:21,790 --> 00:15:24,550
+The diodes go on a heat sink for good cooling.
+
+162
+00:15:25,870 --> 00:15:28,250
+This heat sink is overkill, of course.
+
+163
+00:15:28,970 --> 00:15:29,990
+It's just what I had.
+
+164
+00:15:30,290 --> 00:15:31,370
+You can use a smaller one.
+
+165
+00:15:31,910 --> 00:15:34,930
+The diodes screw to the heat sink through an insulating pad.
+
+166
+00:15:35,750 --> 00:15:36,890
+I use mica.
+
+167
+00:15:38,950 --> 00:15:43,050
+After which, the rectified voltage hits the main reservoir capacitor.
+
+168
+00:15:44,210 --> 00:15:53,110
+I used a 25F 400V cap, after which the rectified voltage reaches the load and also the input of the power supplies.
+
+169
+00:15:56,410 --> 00:16:02,890
+The polarity applied to the power supply inputs doesn't matter, since they have a diode bridge on the input side.
+
+170
+00:16:03,930 --> 00:16:06,530
+Which means polarity reversal doesn't matter.
+
+171
+00:16:08,050 --> 00:16:09,890
+You can apply any polarity.
+
+172
+00:16:10,510 --> 00:16:16,490
+You can use incandescent lamps, heating elements, irons, all kinds of heating devices as the load.
+
+173
+00:16:19,880 --> 00:16:22,560
+Doesn't matter, as long as it can work from DC.
+
+174
+00:16:24,720 --> 00:16:29,420
+A lot of modern devices that use this kind of converter on the input side will work too.
+
+175
+00:16:33,240 --> 00:16:38,720
+You can't connect old devices that have a transformer on the input side instead of these converters.
+
+176
+00:16:39,980 --> 00:16:42,080
+Its input will burn out from DC.
+
+177
+00:16:42,660 --> 00:16:47,080
+And you can't connect devices that have asynchronous or synchronous motors at the input.
+
+178
+00:16:49,240 --> 00:16:52,260
+Those motors will just sit in a non-working state.
+
+179
+00:16:52,580 --> 00:16:55,220
+The winding will overheat and they'll fail too.
+
+180
+00:16:57,120 --> 00:16:59,160
+DC high voltage motors work great here.
+
+181
+00:17:00,920 --> 00:17:07,340
+The whole block, choke, diode bridge, and main reservoir cap fits in one shared box.
+
+182
+00:17:08,640 --> 00:17:11,060
+You can see the top cover of its enclosure.
+
+183
+00:17:12,480 --> 00:17:15,920
+And the lead switching is done on the external terminal block.
+
+184
+00:17:17,660 --> 00:17:21,500
+This kind of mounting is very convenient when working on a board.
+
+185
+00:17:23,460 --> 00:17:25,000
+Now some build details.
+
+186
+00:17:28,460 --> 00:17:35,240
+The antenna that radiates our coil along with the inductor with an electric field is made exclusively of aluminum.
+
+187
+00:17:39,960 --> 00:17:43,520
+For the ferrite rod, we only use low frequency ferrite.
+
+188
+00:17:44,200 --> 00:17:47,380
+By the way, you can use not just this kind of ferrite rod.
+
+189
+00:17:47,660 --> 00:17:49,400
+You can use rings or half rings.
+
+190
+00:17:51,020 --> 00:17:54,440
+The main requirement is that the ferrite is low frequency.
+
+191
+00:17:55,520 --> 00:17:58,200
+And especially if we're working with a catcher-based system.
+
+192
+00:17:58,480 --> 00:17:59,720
+I didn't draw it for nothing.
+
+193
+00:17:59,720 --> 00:18:03,040
+The ferrite filter is in the reverse turn zone of our coil.
+
+194
+00:18:09,230 --> 00:18:12,510
+Near its thick part, an interesting effect happens.
+
+195
+00:18:13,650 --> 00:18:18,110
+The magnetic field from this coil induces on the ferrite and modulates the catcher.
+
+196
+00:18:18,890 --> 00:18:21,430
+Its output also acquires amplitude modulation.
+
+197
+00:18:22,850 --> 00:18:29,610
+In general, in this build, the amplitude modulations and their phase combinations are crucial for it to run right.
+
+198
+00:18:32,800 --> 00:18:36,360
+About what's better, controlled Tesla or controlled catcher?
+
+199
+00:18:38,840 --> 00:18:45,960
+From practice, I'll say this system works a lot easier when the high voltage side is a controlled catcher, which is a self-oscillator.
+
+200
+00:18:50,720 --> 00:18:52,240
+There's an interesting feature.
+
+201
+00:18:53,320 --> 00:18:58,000
+The magnetic field from the inductor induces electric potential on this antenna.
+
+202
+00:18:58,300 --> 00:19:04,920
+And it reaches through the coil to the base of the controlled transistor that drives the Tesla transformer's primary coil.
+
+203
+00:19:06,940 --> 00:19:13,140
+That way, the magnetic field does some phase tuning and synchronization of the two generators.
+
+204
+00:19:13,840 --> 00:19:19,760
+You can also see, marked on the schematic, that for this generator, the duty cycle is crucial during tuning.
+
+205
+00:19:21,680 --> 00:19:22,580
+It has to be tuned.
+
+206
+00:19:24,260 --> 00:19:26,060
+And plus the synchronization.
+
+207
+00:19:27,020 --> 00:19:29,240
+Marked with the letter S on the schematic.
+
+208
+00:19:30,240 --> 00:19:33,260
+The sync is between the primary and secondary generator.
+
+209
+00:19:34,060 --> 00:19:35,380
+It's done with trim pots.
+
+210
+00:19:38,360 --> 00:19:41,340
+But in general, this tuning isn't quite enough.
+
+211
+00:19:42,220 --> 00:19:44,160
+It's pretty rough tuning by trim pot.
+
+212
+00:19:45,920 --> 00:19:51,400
+So a power transistor in this circuit, controlling the primary winding, can do some fine tuning.
+
+213
+00:19:54,490 --> 00:20:00,450
+That's exactly why starting up the system is a pretty hard task if you specifically use a controlled Tesla.
+
+214
+00:20:02,290 --> 00:20:05,450
+You have to tune it very precisely for the system to start.
+
+215
+00:20:08,350 --> 00:20:13,890
+You can also note that in my schematic, the grounding wire connects exclusively to this module.
+
+216
+00:20:14,870 --> 00:20:20,150
+If a controlled Tesla is used, the ground wire connects directly to its cold end.
+
+217
+00:20:20,850 --> 00:20:24,590
+If a controlled catcher, then to the power transistor's emitter.
+
+218
+00:20:26,590 --> 00:20:30,750
+Also, the grounding doesn't connect to the common wire at any point.
+
+219
+00:20:31,630 --> 00:20:34,410
+And it doesn't connect to our coil or its inductor.
+
+220
+00:20:35,430 --> 00:20:43,110
+If you connect grounding to any of these points directly, the entire interaction between the Tesla and this system stops.
+
+221
+00:20:47,010 --> 00:20:49,630
+The Tesla will only interact with itself.
+
+222
+00:20:50,830 --> 00:20:55,210
+The equivalent circuit would be if you connected the ground wire directly to the antenna.
+
+223
+00:20:57,610 --> 00:21:02,050
+The Tesla wouldn't influence this system at all, and the system would never start.
+
+224
+00:21:03,130 --> 00:21:07,570
+At best, in that case, you can connect grounding through a fast diode.
+
+225
+00:21:09,890 --> 00:21:13,750
+That can help if you connect the diode toward ground from the coil's inductor.
+
+226
+00:21:14,210 --> 00:21:15,570
+Make it work on half a cycle.
+
+227
+00:21:17,750 --> 00:21:22,770
+And the diode polarity needs to be such that it doesn't cut off the half period the Tesla uses.
+
+228
+00:21:25,130 --> 00:21:26,150
+This is critical.
+
+229
+00:21:28,310 --> 00:21:33,010
+This absence of grounding connection to the coil works in the case I'm dealing with.
+
+230
+00:21:35,270 --> 00:21:43,510
+Because if people use other tuning variants where the grounding wire is what puts the coil in half wave, that is, they get a quarter wave in this coil.
+
+231
+00:21:50,190 --> 00:21:52,890
+And a quarter wave fits in the grounding length.
+
+232
+00:21:53,450 --> 00:21:57,850
+Then grounding mandatorily connects to the coil to put the system in half wave.
+
+233
+00:21:58,770 --> 00:22:00,890
+But in my case, I don't do this.
+
+234
+00:22:00,890 --> 00:22:05,470
+That's exactly why I don't recommend connecting grounding at this or this point.
+
+235
+00:22:07,710 --> 00:22:12,010
+This schematic is one specific case, one of the possible variants.
+
+236
+00:22:13,030 --> 00:22:20,270
+You can also use a single cycle generator instead of a two cycle one, a parallel tank instead of a series tank circuit.
+
+237
+00:22:21,830 --> 00:22:29,630
+Instead of setting the amplitude modulation point with supply voltage and conversion, you can do forced modulation of the low frequency generator.
+
+238
+00:22:29,630 --> 00:22:37,450
+There are tons of implementation options, so I'd say pick some approach and work with it independently, don't blindly copy.
+
+239
+00:22:39,230 --> 00:22:43,630
+Taking this chance, I also want to thank everyone who helped me understand this system.
+
+240
+00:22:45,770 --> 00:22:50,150
+And a special thanks to a guy from the Realstrannik forum, a good friend of mine.
+
+241
+00:22:53,250 --> 00:22:57,110
+Doesn't matter what others think of you, Slav, I know who you really are.
+
+242
+00:22:57,110 --> 00:23:00,230
+Big respect and thanks for the help.
+

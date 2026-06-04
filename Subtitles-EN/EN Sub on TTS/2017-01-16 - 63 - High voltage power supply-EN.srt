@@ -1,0 +1,2432 @@
+1
+00:00:00,740 --> 00:00:01,400
+Hi everyone.
+
+2
+00:00:02,640 --> 00:00:04,660
+Happy New Year 2017.
+
+3
+00:00:06,040 --> 00:00:09,740
+Wishing you the fulfillment of your plans and all the best in the new year.
+
+4
+00:00:11,120 --> 00:00:14,360
+I want to share some info gifts that you'll find on my Yandex.
+
+5
+00:00:14,700 --> 00:00:17,520
+Disc in the folder are my schemes from videos for YouTube.
+
+6
+00:00:18,380 --> 00:00:25,040
+The first is a diagram of our resonator with the inductor, showing the layer-by-layer winding scheme and wire lengths.
+
+7
+00:00:27,000 --> 00:00:30,440
+The drawing was done by Muslim Afandi from Azerbaijan.
+
+8
+00:00:31,060 --> 00:00:31,880
+Big thanks to him.
+
+9
+00:00:33,580 --> 00:00:39,760
+The second is this table provided by Sergey Fyodorov, known on YouTube as Fedor001.
+
+10
+00:00:41,180 --> 00:00:43,700
+It's a table of isotopes with frequencies.
+
+11
+00:00:44,320 --> 00:00:53,900
+I want to draw your attention to hydrogen, 3 and its frequency in megahertz, and aluminum, 27 and its frequency in kilohertz, 1506.
+
+12
+00:00:55,040 --> 00:00:57,500
+We see a practical multiple of these frequencies.
+
+13
+00:00:58,920 --> 00:01:08,660
+This table leads to understanding why we need to use aluminum specifically on the antenna and what atoms it excites in the surrounding space during Tesla coil operation.
+
+14
+00:01:09,520 --> 00:01:11,320
+You can also tune to other frequencies.
+
+15
+00:01:13,140 --> 00:01:13,700
+Here you can see.
+
+16
+00:01:15,340 --> 00:01:18,940
+Well, a good frequency for us is nitrogen, 14.
+
+17
+00:01:20,000 --> 00:01:22,700
+It also has a multiple with an aluminum antenna.
+
+18
+00:01:23,740 --> 00:01:30,300
+Both hydrogen and nitrogen are present in air, and their presence plays a key role in how our device works.
+
+19
+00:01:32,120 --> 00:01:37,580
+The third is a book called Electricity and its Unusual Properties by Oleg Vasilyev.
+
+20
+00:01:38,860 --> 00:01:42,780
+The book is written in an accessible form in simple language.
+
+21
+00:01:43,820 --> 00:01:55,840
+In it, you'll find info about the existence of a second particle responsible for electric charge, about its new properties compared to the electron, and about how this particle manifests in the
+
+22
+00:01:55,840 --> 00:02:08,220
+devices we assemble trying to achieve an over-unity effect, and also about how this particle manifests in nature, in the surrounding environment, and what phenomena it leads to.
+
+23
+00:02:09,040 --> 00:02:10,060
+Recommend reading it.
+
+24
+00:02:11,180 --> 00:02:15,860
+And the fourth is the book Nikola Tesla's Patents, published in Russian.
+
+25
+00:02:16,800 --> 00:02:22,020
+In this collection, you'll find original images from Tesla's patents and their descriptions.
+
+26
+00:02:23,460 --> 00:02:30,900
+Pay special attention to section four of this book, Devices Working with High-Frequency Sources and Circuit Controllers.
+
+27
+00:02:31,580 --> 00:02:37,760
+In this section, Tesla's thought process about how to create pulse duration in a system is clearly visible.
+
+28
+00:02:38,760 --> 00:02:40,880
+For this, he used mechanical controllers.
+
+29
+00:02:41,900 --> 00:02:44,760
+That doesn't mean these controllers have to be mechanical.
+
+30
+00:02:45,620 --> 00:02:50,420
+It's enough to understand his idea and transfer the principle to a modern element base.
+
+31
+00:02:51,880 --> 00:02:56,680
+Once you've studied this material, you'll discover a lot of images you've seen online.
+
+32
+00:02:57,820 --> 00:03:03,620
+Images were pulled out of Tesla's patents and interpreted freely, which led to information distortion.
+
+33
+00:03:05,720 --> 00:03:16,420
+Tesla himself worked with high-potential currents and used controlled spark gaps specifically, and he always clearly indicated the presence of LC resonance or wave processes in the system.
+
+34
+00:03:17,940 --> 00:03:24,180
+If maximum electric potential was needed in the system specifically, then he was talking about LC resonance.
+
+35
+00:03:25,280 --> 00:03:36,900
+And if wave processes were involved, then Tesla clearly indicated that the wire length in the system had to be exactly equal to a quarter wavelength of the electromagnetic disturbance in the system.
+
+36
+00:03:38,440 --> 00:03:45,680
+You have to understand that plasma behavior in a magnetic field is analogous to the behavior of a conductor through which current flows.
+
+37
+00:03:46,620 --> 00:03:53,180
+If the conductor is movable, it'll inevitably be pushed out of the magnetic field depending on how current flows through it.
+
+38
+00:03:53,960 --> 00:03:56,280
+Electromagnetic motors are made on this principle.
+
+39
+00:03:57,860 --> 00:04:07,040
+Applied in a system where magnetic discharge quenching or interruption is done, plasma becomes a kind of mobile conductor that oscillates in the magnetic field.
+
+40
+00:04:08,960 --> 00:04:13,480
+But to run such experiments, you'll need a pretty powerful power source with high potential.
+
+41
+00:04:14,820 --> 00:04:18,260
+I want to dedicate this video to building that power source.
+
+42
+00:04:21,010 --> 00:04:22,890
+Its dimensions are quite compact.
+
+43
+00:04:24,270 --> 00:04:33,290
+And the main distinctive feature of this source is that it can deliver powerful current movement at high potential, which is very important for magnetic spark gap operation.
+
+44
+00:04:34,330 --> 00:04:37,750
+In this video, I'll go step by step on how to build this unit.
+
+45
+00:04:38,370 --> 00:04:42,890
+So, we'll build a high voltage DC lab unit according to the schematic shown here.
+
+46
+00:04:44,450 --> 00:04:51,490
+This schematic, like all my other schematics from the videos, will be on my Yandex, disk for free access at the address you know.
+
+47
+00:04:52,410 --> 00:04:54,170
+Let's go through the circuit solutions.
+
+48
+00:04:55,350 --> 00:05:00,870
+All the components in the schematic are available in most electronic stores and easy to buy.
+
+49
+00:05:02,150 --> 00:05:10,270
+The driving generator of the circuit is built on a TL-494 chip that works in two cycle mode with pauses between control pulses.
+
+50
+00:05:11,010 --> 00:05:17,330
+There's the option to regulate duty cycle, which in turn determines the final power and voltage at the output under load.
+
+51
+00:05:18,350 --> 00:05:20,670
+And the option to regulate frequency.
+
+52
+00:05:21,510 --> 00:05:27,850
+The frequency will be set once to whatever best suits the ferrite core of the high voltage pulse transformer.
+
+53
+00:05:30,970 --> 00:05:33,850
+There's also a switch that disables chip generation.
+
+54
+00:05:36,770 --> 00:05:38,310
+This is for convenience.
+
+55
+00:05:38,690 --> 00:05:42,350
+When the circuit is connected, you don't need to power everything else off.
+
+56
+00:05:42,710 --> 00:05:45,890
+Just disabling generation stops the high voltage at the output.
+
+57
+00:05:46,490 --> 00:05:57,990
+Then control pulses through 10 ohms limiting resistors reach two identical TC4420 drivers, which in turn drive the gates through 8.2 ohms damping resistors.
+
+58
+00:06:00,950 --> 00:06:15,830
+The IRF3205E keys work on the primary winding of the pulse transformer, converting the input DC voltage of 12 to 36 V into high voltage pulses on the secondary winding, which is then rectified using
+
+59
+00:06:15,830 --> 00:06:18,450
+four diode columns and applied to the load.
+
+60
+00:06:19,370 --> 00:06:23,350
+The diode columns in their schematic form a high voltage diode bridge.
+
+61
+00:06:25,490 --> 00:06:33,170
+This two cycle converter scheme is called Push-Pull and is the best circuit solution at inverter supply voltages up to 100 V.
+
+62
+00:06:34,010 --> 00:06:36,250
+Now let's go through the schematic block by block.
+
+63
+00:06:37,770 --> 00:06:44,930
+For mounting the logic control side, we'll need a 5 by 5 centimeters prototyping board with single-sided contacts.
+
+64
+00:06:48,910 --> 00:06:53,450
+Mounting is done with wire wrap, that is, we form the traces with wires.
+
+65
+00:06:57,580 --> 00:06:59,060
+Here's what it looks like ready.
+
+66
+00:06:59,900 --> 00:07:01,100
+What do we see here?
+
+67
+00:07:01,740 --> 00:07:02,740
+The main elements.
+
+68
+00:07:03,780 --> 00:07:06,120
+Two TC4420 drivers.
+
+69
+00:07:07,360 --> 00:07:10,260
+Next, the TL494 driving chip.
+
+70
+00:07:11,460 --> 00:07:12,600
+Power input terminal.
+
+71
+00:07:14,160 --> 00:07:16,220
+Switch for disabling the driving generator.
+
+72
+00:07:19,280 --> 00:07:22,720
+50kΩ trim pot, responsible for the circuit's frequency.
+
+73
+00:07:24,500 --> 00:07:28,000
+And the main variable resistor responsible for duty cycle.
+
+74
+00:07:30,620 --> 00:07:32,440
+Its value is 10kΩ.
+
+75
+00:07:33,420 --> 00:07:36,580
+You can also see leads marked minus and plus on the schematic.
+
+76
+00:07:39,520 --> 00:07:44,400
+These are two outputs that connect to a cooler motor that'll cool the transistor heat sink.
+
+77
+00:07:48,340 --> 00:07:52,200
+12V comes out after this L7812 regulator.
+
+78
+00:07:54,660 --> 00:07:55,740
+Here's how it looks.
+
+79
+00:07:56,900 --> 00:07:59,800
+The regulator's heat sink is made from cable clamps.
+
+80
+00:08:02,700 --> 00:08:03,280
+Recommended.
+
+81
+00:08:03,900 --> 00:08:04,700
+Very handy.
+
+82
+00:08:05,120 --> 00:08:05,880
+Easy to work with.
+
+83
+00:08:06,620 --> 00:08:08,760
+Has a flat surface and gets installed.
+
+84
+00:08:09,460 --> 00:08:13,960
+These heat sinks can also be mounted on the surfaces of loaded drivers for extra cooling.
+
+85
+00:08:17,930 --> 00:08:19,970
+Let's place our control block here.
+
+86
+00:08:24,170 --> 00:08:25,970
+You can see the cooling fan.
+
+87
+00:08:27,910 --> 00:08:30,630
+It's rated 12V 0.1A.
+
+88
+00:08:32,610 --> 00:08:34,150
+Place it here in its spot.
+
+89
+00:08:35,850 --> 00:08:38,910
+This regulator is needed so the cooler runs at 12V.
+
+90
+00:08:41,050 --> 00:08:45,990
+That's what it's designed for because the whole logic side is powered from a higher potential.
+
+91
+00:08:45,990 --> 00:08:52,910
+If the supply is higher than 12V, this DC-DC converter is set at 15V.
+
+92
+00:08:54,550 --> 00:08:59,030
+The DC-DC converter is built on an LM2596 chip.
+
+93
+00:09:00,030 --> 00:09:02,150
+You can build it yourself or buy one.
+
+94
+00:09:03,010 --> 00:09:04,510
+They're also off-the-shelf items.
+
+95
+00:09:07,190 --> 00:09:09,930
+This trim pot sets the output voltage.
+
+96
+00:09:12,350 --> 00:09:15,630
+Output comes from the out terminals, plus and minus.
+
+97
+00:09:16,610 --> 00:09:19,630
+Input is the I-N terminals, plus and minus.
+
+98
+00:09:21,270 --> 00:09:22,670
+Placed here at this point.
+
+99
+00:09:23,710 --> 00:09:29,910
+On the schematic, you can see the main reservoir electrolytic cap for 1700F 50V.
+
+100
+00:09:30,790 --> 00:09:32,610
+It has these overall dimensions.
+
+101
+00:09:34,430 --> 00:09:35,350
+And here are its ratings.
+
+102
+00:09:37,130 --> 00:09:38,450
+Place it in its spot.
+
+103
+00:09:40,150 --> 00:09:43,410
+Note that the plus supply voltage goes through a thermostat.
+
+104
+00:09:46,010 --> 00:09:50,710
+The thermostat has a max current of 10A and a trip point of 70 degrees.
+
+105
+00:09:51,350 --> 00:09:53,250
+Thermostats are sold in these housings.
+
+106
+00:09:53,730 --> 00:09:58,050
+They keep the circuit closed until the temperature is exceeded, which I noted schematically.
+
+107
+00:10:01,710 --> 00:10:08,530
+Most likely, there's a bimetallic strip in the thermostat housing that bends under temperature and opens the contacts.
+
+108
+00:10:10,730 --> 00:10:12,210
+This module sits here.
+
+109
+00:10:13,490 --> 00:10:19,390
+Next, we'll need terminals to easily attach the output of the high voltage wires that will later feed the load.
+
+110
+00:10:24,700 --> 00:10:27,860
+Terminals are marked in different colors, so we don't mix them up.
+
+111
+00:10:28,320 --> 00:10:29,300
+Plus and minus.
+
+112
+00:10:32,590 --> 00:10:34,730
+Next, the main element, the core.
+
+113
+00:10:36,130 --> 00:10:40,810
+The core for a powerful pulse transformer should have large geometric dimensions.
+
+114
+00:10:42,470 --> 00:10:48,790
+You can use cores from line transformers, TVS, or equivalently combine two TVS cores.
+
+115
+00:10:49,790 --> 00:10:52,630
+TVS is the line transformer from old TVs.
+
+116
+00:10:53,790 --> 00:10:57,150
+The core geometric dimensions we'll be using, I'll show now.
+
+117
+00:10:58,130 --> 00:11:02,610
+So it has dimensions of 6.5 centimeters by 6.5 centimeters.
+
+118
+00:11:04,910 --> 00:11:07,510
+Wire magnet width 2.8 centimeters.
+
+119
+00:11:11,700 --> 00:11:14,660
+The central pillar is wider than the side ones.
+
+120
+00:11:16,640 --> 00:11:20,380
+Width 2 centimeters and 2.8 centimeters respectively.
+
+121
+00:11:21,140 --> 00:11:26,340
+We'll wind our high voltage transformer on this 2000 nanometers permeability core.
+
+122
+00:11:27,500 --> 00:11:28,540
+This part goes here.
+
+123
+00:11:29,720 --> 00:11:31,620
+Next, we'll look at our diode columns.
+
+124
+00:11:33,960 --> 00:11:35,400
+They're marked on the schematic.
+
+125
+00:11:35,880 --> 00:11:36,520
+We looked at them.
+
+126
+00:11:39,160 --> 00:11:43,580
+Each diode column is designed to handle voltage up to 10,000 V.
+
+127
+00:11:44,160 --> 00:11:46,300
+Per 508 diodes are bought for this.
+
+128
+00:11:48,780 --> 00:11:52,520
+Each diode of this brand is rated up to 1,000 V.
+
+129
+00:11:53,620 --> 00:11:58,500
+As a result, with 10 of them in series, we get a diode column rated 10 kV.
+
+130
+00:11:59,880 --> 00:12:01,260
+Ready diode column.
+
+131
+00:12:02,160 --> 00:12:03,140
+Looks like this.
+
+132
+00:12:03,760 --> 00:12:05,080
+You need to make four of them total.
+
+133
+00:12:07,260 --> 00:12:08,280
+How I made them.
+
+134
+00:12:09,340 --> 00:12:10,280
+Connected in series.
+
+135
+00:12:11,560 --> 00:12:13,360
+The housing is made of cable channel.
+
+136
+00:12:15,500 --> 00:12:17,020
+Let me show the cable channel.
+
+137
+00:12:18,400 --> 00:12:19,160
+Here it is.
+
+138
+00:12:21,360 --> 00:12:23,740
+A piece of cable channel with these dimensions.
+
+139
+00:12:25,480 --> 00:12:27,780
+One centimeter by 12 millimeters.
+
+140
+00:12:29,180 --> 00:12:36,220
+For solid mounting, we drill a hole every centimeter opposite each other with about 10 millimeters spacing.
+
+141
+00:12:38,400 --> 00:12:40,780
+After which the diodes are laid in here.
+
+142
+00:12:43,100 --> 00:12:44,820
+And then the plate is closed.
+
+143
+00:12:47,060 --> 00:12:49,180
+After this, we solder it reliably.
+
+144
+00:12:49,180 --> 00:12:56,480
+I don't recommend cutting the leads because they'll provide some cooling for the diodes inside.
+
+145
+00:12:58,360 --> 00:13:01,300
+You also need to leave free holes for air passage.
+
+146
+00:13:04,660 --> 00:13:05,920
+You get a build like this.
+
+147
+00:13:08,900 --> 00:13:11,520
+Next, the main part, the power module.
+
+148
+00:13:12,220 --> 00:13:19,660
+The power module is mounted on a heat sink about 8 by 6.5 centimeters with a heat sink depth up to 3 centimeters.
+
+149
+00:13:25,330 --> 00:13:29,350
+That's enough for two power switches to run with a cooling fan blowing.
+
+150
+00:13:31,710 --> 00:13:33,090
+What do we see here?
+
+151
+00:13:33,830 --> 00:13:38,410
+Our thermal sensor fixed with two M3 screws and two power transistors.
+
+152
+00:13:39,910 --> 00:13:41,470
+Fixed with similar screws.
+
+153
+00:13:43,430 --> 00:13:46,250
+Fixed with a bolt and a plastic insulator washer.
+
+154
+00:13:49,430 --> 00:13:52,470
+Plastic insulators are also sold at electronic stores.
+
+155
+00:13:55,310 --> 00:13:58,390
+They have a stud that goes into the hole of this transistor.
+
+156
+00:14:03,140 --> 00:14:09,340
+You can also see the transistors are mounted directly on the heat sink with a dielectric pad between them.
+
+157
+00:14:11,760 --> 00:14:19,260
+The dielectric pad blocks current from passing through the cooling pad of the transistor, which is also pinned to the drain.
+
+158
+00:14:23,260 --> 00:14:25,100
+So its presence is mandatory.
+
+159
+00:14:25,520 --> 00:14:27,160
+Otherwise, you'd have a short circuit.
+
+160
+00:14:27,160 --> 00:14:30,580
+I recommend making the dielectric pad from mica plates.
+
+161
+00:14:32,340 --> 00:14:38,880
+You can buy them at the same stores or disassemble old mica high voltage capacitors or buy a modern pad.
+
+162
+00:14:41,740 --> 00:14:44,920
+Its characteristics are slightly worse, but still acceptable.
+
+163
+00:14:46,660 --> 00:14:50,420
+You can also see diodes connected between source and drain.
+
+164
+00:14:54,280 --> 00:14:57,200
+Diodes designed to damp back EMF spikes.
+
+165
+00:14:58,100 --> 00:15:01,380
+Here they are, 2MUR460 diodes.
+
+166
+00:15:04,000 --> 00:15:06,540
+Counterconnected zener diodes on the gate capacitance.
+
+167
+00:15:08,460 --> 00:15:10,880
+Here they are, 12V zeners.
+
+168
+00:15:12,020 --> 00:15:14,160
+And 1K omega discharge resistors.
+
+169
+00:15:15,780 --> 00:15:17,840
+These resistors are also shown.
+
+170
+00:15:18,960 --> 00:15:23,600
+For those working with an aluminum heat sink for the first time, I'll give a few tips.
+
+171
+00:15:25,480 --> 00:15:29,080
+Aluminum is a viscous metal, so working with it requires care.
+
+172
+00:15:30,240 --> 00:15:36,340
+Since the screw holes are small, it's easy to break the drill bit and have it firmly stuck in the aluminum body.
+
+173
+00:15:39,420 --> 00:15:41,620
+The same can happen when cutting threads.
+
+174
+00:15:43,440 --> 00:15:45,300
+Here's an M3 tap.
+
+175
+00:15:45,500 --> 00:15:47,140
+You can see its geometric size.
+
+176
+00:15:48,380 --> 00:15:53,320
+The drill and tap materials are very brittle, so breaking is highly likely.
+
+177
+00:15:55,480 --> 00:15:59,020
+To prevent this, I'd suggest using WD-40.
+
+178
+00:16:01,000 --> 00:16:03,400
+For convenience, I glued a syringe needle here.
+
+179
+00:16:05,940 --> 00:16:10,800
+When using the liquid, aluminum doesn't stick to the tap or drill surface.
+
+180
+00:16:11,320 --> 00:16:14,880
+No jamming, and the aluminum slides over the conductor surface.
+
+181
+00:16:17,400 --> 00:16:21,220
+That way you protect the cutting edges from sticking in the soft metal.
+
+182
+00:16:23,500 --> 00:16:24,060
+Important!
+
+183
+00:16:25,740 --> 00:16:37,080
+Also, before mounting the power switches and thermal sensor, you need to lubricate the cooling surfaces that adjoin the heat sinks, both between the pad and between the cooling plate, with KPT brand
+
+184
+00:16:37,080 --> 00:16:37,820
+thermal paste.
+
+185
+00:16:38,440 --> 00:16:39,320
+Thermal paste.
+
+186
+00:16:42,360 --> 00:16:44,900
+That's it for the main nuances of the power block.
+
+187
+00:16:46,940 --> 00:16:53,140
+You can also see I used 90-degree brackets from a hardware store to mount this heat sink in the enclosure later.
+
+188
+00:16:59,780 --> 00:17:01,080
+This part goes here.
+
+189
+00:17:04,750 --> 00:17:06,290
+Let me set that aside.
+
+190
+00:17:06,650 --> 00:17:08,350
+Another point on the schematic to note.
+
+191
+00:17:09,950 --> 00:17:13,790
+You can see I marked the power source's minus input with an asterisk.
+
+192
+00:17:16,050 --> 00:17:19,150
+And the inverter's minus input with an asterisk too.
+
+193
+00:17:20,790 --> 00:17:27,530
+Note that these points connect directly through a power cable with a cross-section equal to the supply wire cross-section.
+
+194
+00:17:27,950 --> 00:17:41,730
+All the other points connect too, but for this one you need to pay special attention, same as for... the power wire that goes to the primary winding, with a good cross-section.
+
+195
+00:17:46,290 --> 00:17:51,250
+After the main blocks are ready, and we know the dimensions of the elements, we can pick an enclosure.
+
+196
+00:17:56,540 --> 00:17:58,380
+I recommend going with plastic.
+
+197
+00:17:58,780 --> 00:18:05,180
+If you use metal, you'll need plastic insulators so there's no shorting from the diode column leads relative to the high voltage.
+
+198
+00:18:10,520 --> 00:18:11,440
+High voltage.
+
+199
+00:18:11,660 --> 00:18:18,360
+The main large size elements are the diode columns themselves, the power module, and the high voltage transformer core.
+
+200
+00:18:21,740 --> 00:18:28,520
+You can see I picked it so the heat sink and the transformer have roughly the same dimensions, about 6.5 centimeters.
+
+201
+00:18:31,040 --> 00:18:33,720
+These are the main parts that determine the geometry.
+
+202
+00:18:34,380 --> 00:18:36,620
+After that, I found a suitable enclosure.
+
+203
+00:18:39,570 --> 00:18:42,650
+The enclosure is from an old charger that broke down.
+
+204
+00:18:46,140 --> 00:18:47,520
+This is its top cover.
+
+205
+00:18:56,120 --> 00:18:58,940
+The top cover will cover all the components later.
+
+206
+00:19:01,620 --> 00:19:03,460
+This is our main working surface.
+
+207
+00:19:04,920 --> 00:19:10,320
+I got lucky, the back cover had an output for a cooling fan, an already made window.
+
+208
+00:19:13,670 --> 00:19:19,350
+You can see I did some gluing so the whole system didn't sit loose in the grooves, it's clearly fixed.
+
+209
+00:19:20,710 --> 00:19:28,470
+I also already glued in the frequency trim pot, made a hole for the supply wires for our 12 to 36 V per the schematic.
+
+210
+00:19:33,520 --> 00:19:43,540
+Also made a hole in a convenient spot for operating the variable resistor responsible for the driving generator's duty cycle, and a hole for the switch that disables generation.
+
+211
+00:19:46,080 --> 00:19:49,760
+You can also see the front cover is made of cardboard, two layers.
+
+212
+00:19:54,400 --> 00:19:57,240
+I picked a matching color because there wasn't a front cover.
+
+213
+00:19:58,080 --> 00:20:03,160
+If there hadn't been a back cover either, I'd have glued a back cover similarly and made a hole for the cooler.
+
+214
+00:20:06,050 --> 00:20:11,750
+To start the geometric arrangement of the main modules in the enclosure, we need to mount the cooler.
+
+215
+00:20:12,170 --> 00:20:15,150
+It'll determine the geometric placement of the power module.
+
+216
+00:20:18,160 --> 00:20:18,680
+Mounted.
+
+217
+00:20:19,020 --> 00:20:21,240
+Next we move to installing the power module.
+
+218
+00:20:23,500 --> 00:20:27,340
+Install it centered opposite the cooling fan and mark the mounting holes.
+
+219
+00:20:32,980 --> 00:20:36,380
+These are the main spots on both sides where the fixing bolts will go.
+
+220
+00:20:41,130 --> 00:20:43,290
+After this, I did it in advance.
+
+221
+00:20:43,650 --> 00:20:46,830
+You can see these holes, threads were cut in them for the fixing bolts.
+
+222
+00:20:49,910 --> 00:20:51,830
+And you can also see holes I drilled.
+
+223
+00:20:54,310 --> 00:20:57,670
+The holes correspond to being directly under the heat sink.
+
+224
+00:21:00,370 --> 00:21:02,670
+Here you can see they're under the heat sink.
+
+225
+00:21:04,130 --> 00:21:08,630
+Air will be drawn into these holes, picking up heat from the heat sink.
+
+226
+00:21:09,610 --> 00:21:12,610
+And the cooler then ejects that air out of the enclosure.
+
+227
+00:21:16,460 --> 00:21:19,100
+Those are the first dimension defining elements.
+
+228
+00:21:20,160 --> 00:21:24,220
+The second dimension defining element is the transformer's magnet wire.
+
+229
+00:21:24,760 --> 00:21:26,900
+I decided to install it perpendicular.
+
+230
+00:21:28,820 --> 00:21:31,860
+During the build, it turned out these inner ribs were in the way.
+
+231
+00:21:34,750 --> 00:21:37,290
+Because the core height didn't allow full closure.
+
+232
+00:21:40,600 --> 00:21:41,960
+I cut part of the ribs.
+
+233
+00:21:45,300 --> 00:21:46,700
+And the core fit nicely.
+
+234
+00:21:47,360 --> 00:21:50,680
+You can also see a rib was cut opposite the core and top cover.
+
+235
+00:21:53,640 --> 00:21:57,740
+Here I also made a semicircular cutout for the thermostat semicircle.
+
+236
+00:22:01,160 --> 00:22:02,240
+It fits here.
+
+237
+00:22:03,520 --> 00:22:07,360
+After this, we check whether our little enclosure works for mounting at all.
+
+238
+00:22:10,620 --> 00:22:11,100
+Close it.
+
+239
+00:22:12,920 --> 00:22:14,940
+The enclosure should fit comfortably.
+
+240
+00:22:17,540 --> 00:22:18,520
+Now opposite.
+
+241
+00:22:20,580 --> 00:22:21,860
+And cover our system.
+
+242
+00:22:23,320 --> 00:22:26,760
+You can see with this mounting our core is solidly fixed.
+
+243
+00:22:29,640 --> 00:22:31,000
+And there's no shifting.
+
+244
+00:22:31,660 --> 00:22:33,480
+We'll fix the power module with screws.
+
+245
+00:22:36,520 --> 00:22:39,840
+I also figured out where the inverter will go for the power side.
+
+246
+00:22:45,740 --> 00:22:46,640
+Going here.
+
+247
+00:22:48,000 --> 00:22:50,460
+And I figured out where the control circuit will go.
+
+248
+00:22:52,080 --> 00:22:56,220
+I decided to install the control scheme perpendicular in this spot.
+
+249
+00:22:57,700 --> 00:23:00,820
+To install it, I also made a cut in the enclosure rib.
+
+250
+00:23:03,800 --> 00:23:05,700
+And the board fits in conveniently.
+
+251
+00:23:06,380 --> 00:23:09,240
+And the main large size elements are the diode columns.
+
+252
+00:23:12,480 --> 00:23:15,740
+The diode columns will sit like this in pairs.
+
+253
+00:23:16,480 --> 00:23:19,040
+Two pieces on the right and two on the left.
+
+254
+00:23:21,400 --> 00:23:25,840
+That's how the distribution of all elements ends up in any little enclosure.
+
+255
+00:23:29,540 --> 00:23:32,160
+This applies to other devices you'll ever make.
+
+256
+00:23:33,120 --> 00:23:36,000
+You first make the modules, then arrange them conveniently.
+
+257
+00:23:36,720 --> 00:23:39,660
+And only then conclude whether this enclosure is suitable.
+
+258
+00:23:41,660 --> 00:23:45,120
+Before installing the control block, you need to test it.
+
+259
+00:23:46,500 --> 00:23:48,940
+We'll observe oscillograms at these points.
+
+260
+00:23:50,300 --> 00:23:56,580
+After the 8.2 ohms resistor, the block isn't yet connected to the power module.
+
+261
+00:23:58,880 --> 00:24:03,460
+For observing oscillograms, apply 15V to the control block.
+
+262
+00:24:06,040 --> 00:24:08,220
+And you see the oscillogram changed.
+
+263
+00:24:09,180 --> 00:24:12,300
+Now the oscillogram matches the minimum duty cycle.
+
+264
+00:24:12,880 --> 00:24:17,200
+The driving variable duty cycle resistor is now at its extreme position.
+
+265
+00:24:18,840 --> 00:24:26,760
+The circuit elements are picked so that at the extreme position duty cycle is 0.7% minimum, but doesn't shut off.
+
+266
+00:24:27,760 --> 00:24:32,040
+And now you can see that as we rotate the pod, the duty cycle grows.
+
+267
+00:24:34,980 --> 00:24:38,830
+Now the signal has a maximum duty cycle of 44.4%.
+
+268
+00:24:42,380 --> 00:24:45,640
+And you can also see we have a pause between control pulses.
+
+269
+00:24:48,730 --> 00:24:51,810
+The generator works correctly, no channel overlap.
+
+270
+00:24:55,070 --> 00:25:01,610
+This confirms the driving generator works correctly, the driver works correctly, and the system is built well.
+
+271
+00:25:04,190 --> 00:25:07,230
+You can also test the switch that disables generation.
+
+272
+00:25:08,970 --> 00:25:13,030
+Flip the switch and you see that with it turned on, generation stops.
+
+273
+00:25:19,280 --> 00:25:22,600
+Specifically for pin 3 of the 494 chip.
+
+274
+00:25:24,080 --> 00:25:30,980
+If you feed in 5V square signals from another generator here, during the signal itself, the chip stops generation.
+
+275
+00:25:35,570 --> 00:25:38,330
+That way you can do full output modulation of the chip.
+
+276
+00:25:42,270 --> 00:25:44,270
+Maybe useful in other devices.
+
+277
+00:25:45,530 --> 00:25:48,110
+Flip the switch back to the original position.
+
+278
+00:25:49,630 --> 00:25:50,970
+Generation came back.
+
+279
+00:25:50,970 --> 00:25:53,870
+Now we can observe the frequency.
+
+280
+00:25:54,610 --> 00:25:57,370
+Frequency is 16.3 kHz.
+
+281
+00:25:57,950 --> 00:26:00,690
+That's the minimum frequency set by this resistor.
+
+282
+00:26:05,880 --> 00:26:08,060
+Now let's see the maximum value.
+
+283
+00:26:09,000 --> 00:26:12,580
+For this I'll rotate the resistor's control slider with a screwdriver.
+
+284
+00:26:18,850 --> 00:26:20,750
+You see the frequency growing.
+
+285
+00:26:24,050 --> 00:26:25,550
+Smooth tuning happens.
+
+286
+00:26:27,230 --> 00:26:32,690
+And note that throughout the range, as the frequency changes, we don't have signal overlap.
+
+287
+00:26:36,920 --> 00:26:38,400
+Bringing to maximum.
+
+288
+00:26:40,020 --> 00:26:43,060
+Now 84 kHz, signal is stable.
+
+289
+00:26:45,160 --> 00:26:46,440
+Going further.
+
+290
+00:26:48,300 --> 00:26:49,560
+And bring to maximum.
+
+291
+00:26:50,180 --> 00:26:53,360
+The maximum corresponds to 253 kHz.
+
+292
+00:26:54,740 --> 00:27:02,020
+So the 16 to 253 kHz range suits us for tuning any ferrite core to the best frequency response.
+
+293
+00:27:07,020 --> 00:27:08,900
+We can check duty cycle operation.
+
+294
+00:27:09,640 --> 00:27:10,840
+Also at high frequency.
+
+295
+00:27:12,440 --> 00:27:13,760
+Minimum and maximum.
+
+296
+00:27:14,500 --> 00:27:15,500
+Also no overlap.
+
+297
+00:27:16,020 --> 00:27:17,740
+Meaning the system is built well.
+
+298
+00:27:19,120 --> 00:27:21,840
+And here we also disable generation with the switch.
+
+299
+00:27:24,820 --> 00:27:26,420
+That ends the block check.
+
+300
+00:27:28,280 --> 00:27:30,080
+Can disconnect the probes.
+
+301
+00:27:32,000 --> 00:27:33,440
+And check one more thing.
+
+302
+00:27:35,740 --> 00:27:36,680
+The cooler.
+
+303
+00:27:38,680 --> 00:27:39,520
+Just in case.
+
+304
+00:27:41,640 --> 00:27:43,160
+Output after the regulator.
+
+305
+00:27:44,480 --> 00:27:45,240
+Connect the cooler.
+
+306
+00:27:48,380 --> 00:27:49,680
+You can see it also spins.
+
+307
+00:27:50,840 --> 00:27:51,880
+Means everything works.
+
+308
+00:27:52,640 --> 00:27:53,360
+On to the mounting.
+
+309
+00:27:55,560 --> 00:28:00,580
+After an hour of work, I mounted the control block in the enclosure along with its controls.
+
+310
+00:28:01,000 --> 00:28:02,980
+The DC-DC converter trim pots.
+
+311
+00:28:05,950 --> 00:28:09,670
+Wired up the main reservoir capacitance and the supply wire.
+
+312
+00:28:09,670 --> 00:28:13,930
+And the output of the two wires for connecting the power block.
+
+313
+00:28:15,030 --> 00:28:17,450
+The cooling fan is installed in place.
+
+314
+00:28:19,330 --> 00:28:21,870
+The whole mount was mainly done with hot glue.
+
+315
+00:28:23,630 --> 00:28:28,630
+At this moment, you can see the DC-DC converter is held by the partition on hot glue.
+
+316
+00:28:29,570 --> 00:28:33,230
+You can also see the hot glue holds the main cap and the wires.
+
+317
+00:28:37,500 --> 00:28:39,820
+And in several places the board is fixed.
+
+318
+00:28:39,820 --> 00:28:44,180
+I also applied hot glue on the switch leads so they don't short.
+
+319
+00:28:45,360 --> 00:28:48,100
+With a metal object, because there's a heat sink nearby.
+
+320
+00:28:52,270 --> 00:28:54,210
+This is what the back cover looks like.
+
+321
+00:28:56,290 --> 00:28:59,510
+Generation disable switch and duty cycle regulation.
+
+322
+00:29:00,510 --> 00:29:02,070
+Plus and minus power wires.
+
+323
+00:29:05,440 --> 00:29:07,740
+Now we'll move to mounting the power block.
+
+324
+00:29:10,600 --> 00:29:14,560
+We'll mount it with two bolts with the press washers taken from a terminal block.
+
+325
+00:29:18,260 --> 00:29:20,800
+And I'll show pre-mounting checks for this block.
+
+326
+00:29:21,920 --> 00:29:27,540
+The power module check is mainly for shorts between the semiconductor power elements and the heat sink.
+
+327
+00:29:31,940 --> 00:29:33,540
+For this we'll need a multimeter.
+
+328
+00:29:34,480 --> 00:29:37,400
+Switch it to diode test mode with audio test.
+
+329
+00:29:39,460 --> 00:29:43,000
+On a short, the multimeter beeps and shows a short.
+
+330
+00:29:44,240 --> 00:29:46,720
+Connect one of the test leads to the heat sink.
+
+331
+00:29:49,500 --> 00:29:53,420
+You see that on contact the multimeter beeps and shows resistance.
+
+332
+00:29:54,680 --> 00:29:55,980
+And we check the system.
+
+333
+00:29:58,020 --> 00:30:02,680
+We need that the cooling plate of both transistors isn't shorted to the heat sink.
+
+334
+00:30:05,140 --> 00:30:06,680
+Check the first transistor.
+
+335
+00:30:07,800 --> 00:30:09,020
+Check the second transistor.
+
+336
+00:30:10,160 --> 00:30:10,720
+No beep.
+
+337
+00:30:11,660 --> 00:30:13,460
+And check all three of its main pins.
+
+338
+00:30:15,200 --> 00:30:17,060
+Nowhere should we have a short to the body.
+
+339
+00:30:19,220 --> 00:30:21,260
+The thermostat is also checked.
+
+340
+00:30:22,900 --> 00:30:24,920
+It also shouldn't short to the body.
+
+341
+00:30:28,700 --> 00:30:30,500
+Now this block can be mounted.
+
+342
+00:30:32,220 --> 00:30:33,780
+And one more thermostat check.
+
+343
+00:30:35,380 --> 00:30:38,880
+But this check is done before mounting it on the heat sink body.
+
+344
+00:30:39,980 --> 00:30:42,500
+The multimeter stays in test mode for this check.
+
+345
+00:30:49,270 --> 00:30:51,350
+Put the lead with the alligator clip.
+
+346
+00:30:51,350 --> 00:30:56,530
+And we see that when the thermostat is cold, it's in the on state for us.
+
+347
+00:31:02,690 --> 00:31:04,170
+Now we need a heat source.
+
+348
+00:31:08,050 --> 00:31:09,570
+Heat the surface from some distance.
+
+349
+00:31:13,210 --> 00:31:13,950
+Thermostat tripped.
+
+350
+00:31:15,350 --> 00:31:17,030
+The device shows it's open.
+
+351
+00:31:18,730 --> 00:31:23,430
+After some time when the surface cools, the thermostat should switch back to the on position.
+
+352
+00:31:24,870 --> 00:31:26,250
+Now wait for cool down.
+
+353
+00:32:03,590 --> 00:32:04,570
+Hear the beep.
+
+354
+00:32:04,930 --> 00:32:05,710
+Thermostat tripped.
+
+355
+00:32:06,790 --> 00:32:09,610
+It needed about 40 seconds to turn back on.
+
+356
+00:32:11,250 --> 00:32:12,870
+Since there's no heat sink.
+
+357
+00:32:15,110 --> 00:32:17,330
+We also check the installed thermostat.
+
+358
+00:32:18,970 --> 00:32:20,370
+It should show a short.
+
+359
+00:32:24,050 --> 00:32:26,070
+The system should pass electric current.
+
+360
+00:32:27,910 --> 00:32:29,650
+That ends the pre-mounting check.
+
+361
+00:32:31,050 --> 00:32:36,790
+The power module check is mainly for shorts between the semiconductor power elements and the heat sink.
+
+362
+00:32:39,550 --> 00:32:41,150
+For this, we'll need a multimeter.
+
+363
+00:32:42,390 --> 00:32:45,550
+Switch it to diode test mode with audio test.
+
+364
+00:32:48,010 --> 00:32:51,510
+On a short, the multimeter beeps and shows a short.
+
+365
+00:32:52,670 --> 00:32:55,230
+Connect one of the test leads to the heat sink.
+
+366
+00:32:57,250 --> 00:33:01,170
+You see that on contact the multimeter beeps and shows resistance.
+
+367
+00:33:02,770 --> 00:33:04,430
+And we do the system check.
+
+368
+00:33:06,670 --> 00:33:11,370
+We need that the cooling plate of both transistors isn't shorted to the heat sink.
+
+369
+00:33:13,410 --> 00:33:14,950
+Check the first transistor.
+
+370
+00:33:16,110 --> 00:33:17,350
+Check the second transistor.
+
+371
+00:33:18,490 --> 00:33:18,990
+No beep.
+
+372
+00:33:19,530 --> 00:33:21,250
+And check all three of its main pins.
+
+373
+00:33:23,450 --> 00:33:25,310
+Nowhere should we have a short to the body.
+
+374
+00:33:28,070 --> 00:33:29,970
+The thermostat is also checked.
+
+375
+00:33:31,330 --> 00:33:33,270
+It also shouldn't short to the body.
+
+376
+00:33:37,120 --> 00:33:38,940
+Now this block can be mounted.
+
+377
+00:33:40,300 --> 00:33:41,900
+And one more thermostat check.
+
+378
+00:33:43,820 --> 00:33:47,240
+But this check is done before mounting it on the heat sink body.
+
+379
+00:33:49,760 --> 00:33:52,580
+The multimeter stays in test mode for this check.
+
+380
+00:33:58,340 --> 00:34:00,360
+Put the lead with the alligator clip.
+
+381
+00:34:00,860 --> 00:34:04,580
+And we see that when the thermostat is cold, it's in the on state for us.
+
+382
+00:34:12,190 --> 00:34:13,630
+Now we need a heat source.
+
+383
+00:34:14,430 --> 00:34:18,370
+Heat the surface from some distance.
+
+384
+00:34:21,700 --> 00:34:22,740
+Thermostat tripped.
+
+385
+00:34:23,940 --> 00:34:25,720
+The device shows it's open.
+
+386
+00:34:27,420 --> 00:34:32,140
+After some time when the surface cools, the thermostat should switch back to the on position.
+
+387
+00:34:34,020 --> 00:34:35,480
+Now wait for cool down.
+
+388
+00:34:38,490 --> 00:34:39,510
+Hear the beep.
+
+389
+00:34:39,850 --> 00:34:40,690
+Thermostat tripped.
+
+390
+00:34:41,790 --> 00:34:44,570
+It needed about 40 seconds to turn back on.
+
+391
+00:34:45,930 --> 00:34:47,110
+Since there's no heat source, the thermostat should be on.
+
+392
+00:34:47,130 --> 00:34:47,550
+Now we need to check the heat sink.
+
+393
+00:34:49,710 --> 00:34:52,050
+We also check the installed thermostat.
+
+394
+00:34:55,020 --> 00:34:56,080
+It should show a short.
+
+395
+00:34:58,740 --> 00:35:01,060
+The system should pass electric current.
+
+396
+00:35:03,060 --> 00:35:04,620
+That ends the pre-mounting check.
+
+397
+00:35:05,540 --> 00:35:07,080
+Did the power module mounting.
+
+398
+00:35:08,480 --> 00:35:12,100
+Connected the supply wires and connected the gates to the drivers.
+
+399
+00:35:14,160 --> 00:35:15,860
+Here you see two wires.
+
+400
+00:35:19,880 --> 00:35:23,940
+Here we will need a 12V 21W lamp.
+
+401
+00:35:25,400 --> 00:35:26,680
+Connected at this point.
+
+402
+00:35:30,620 --> 00:35:32,440
+Here to our thermostat.
+
+403
+00:35:34,660 --> 00:35:39,160
+And the second end of the lamp goes alternately to the power switch drains.
+
+404
+00:35:40,560 --> 00:35:44,640
+These are the points corresponding to where the future primary windings will connect.
+
+405
+00:35:45,860 --> 00:35:48,240
+For this we need to feed supply voltage.
+
+406
+00:35:53,620 --> 00:35:55,000
+I applied voltage.
+
+407
+00:35:56,200 --> 00:35:57,660
+You can see the cooler is running.
+
+408
+00:36:00,410 --> 00:36:01,830
+And we connect the lamp.
+
+409
+00:36:02,530 --> 00:36:05,530
+The system's duty cycle control is now set to minimum.
+
+410
+00:36:09,840 --> 00:36:11,560
+You see the lamp doesn't light up.
+
+411
+00:36:12,140 --> 00:36:13,340
+Now I add duty cycle.
+
+412
+00:36:17,870 --> 00:36:20,950
+And you see the lamp warms up, regulation works.
+
+413
+00:36:26,500 --> 00:36:29,340
+We can also check the switch for disabling generation.
+
+414
+00:36:31,020 --> 00:36:33,160
+Generation off, generation on.
+
+415
+00:36:34,540 --> 00:36:37,440
+The second power switch is checked the same way.
+
+416
+00:36:39,180 --> 00:36:41,200
+Connect to the drain and check.
+
+417
+00:36:46,660 --> 00:36:49,960
+The glow regulates and generation turns off and on.
+
+418
+00:36:54,200 --> 00:36:57,100
+Lamp glow regulation confirms full operability.
+
+419
+00:36:57,840 --> 00:37:04,140
+The most labor intensive and critical part of our device is the secondary winding of the high voltage transformer.
+
+420
+00:37:05,380 --> 00:37:08,960
+I wound it with 0.4mm lacquered wire.
+
+421
+00:37:11,520 --> 00:37:14,740
+When I bought this core, no winding form came in the kit.
+
+422
+00:37:16,780 --> 00:37:19,740
+And I made one from transparent plastic from packaging.
+
+423
+00:37:21,420 --> 00:37:25,340
+I cut a strip to size and glued two layers together with super glue.
+
+424
+00:37:27,660 --> 00:37:28,720
+Got this build.
+
+425
+00:37:29,080 --> 00:37:31,480
+As you can see, it's rigid and holds well.
+
+426
+00:37:32,320 --> 00:37:33,300
+As for the winding.
+
+427
+00:37:34,400 --> 00:37:39,920
+I managed to lay 22 layers of 40 turns before filling the inside of the core surface.
+
+428
+00:37:45,420 --> 00:37:49,480
+Interlayer insulation I did with electrical tape 30mm wide.
+
+429
+00:37:50,020 --> 00:37:55,780
+Let me show how to do the insulation using the example of a winding I made for a round TVS core.
+
+430
+00:38:00,390 --> 00:38:03,730
+Lay the wire turn to turn, carefully filling the space.
+
+431
+00:38:07,250 --> 00:38:10,750
+Once a layer is wound, electrical tape is applied on top.
+
+432
+00:38:11,790 --> 00:38:16,250
+And the wire that transitions to the next layer is pulled up onto the tape surface.
+
+433
+00:38:18,330 --> 00:38:21,090
+After that, it's held and the gluing happens.
+
+434
+00:38:22,410 --> 00:38:26,910
+With a tight fit, you can see the tape extends about a centimeter beyond the surface.
+
+435
+00:38:30,680 --> 00:38:34,340
+We have the protrusion under the tape from the previous layer's wire.
+
+436
+00:38:36,380 --> 00:38:41,100
+After that the wire wraps around and lays the next layer past this protrusion.
+
+437
+00:38:44,040 --> 00:38:47,280
+The winding goes on with tension and we have the next layer.
+
+438
+00:38:47,280 --> 00:38:49,900
+This way we gradually build our winding.
+
+439
+00:38:53,430 --> 00:38:57,510
+What's worth noting is that the tape should extend much wider than the layer itself.
+
+440
+00:38:59,950 --> 00:39:03,530
+Because the voltage between turns in a layer isn't that big.
+
+441
+00:39:04,830 --> 00:39:07,550
+It might be from tens to a few tens of volts.
+
+442
+00:39:08,950 --> 00:39:11,930
+And the voltage between layers is much more significant.
+
+443
+00:39:13,130 --> 00:39:16,270
+It can reach several hundred volts between each layer.
+
+444
+00:39:16,270 --> 00:39:21,970
+So the insulation should extend at least half a centimeter beyond the layer width on each side.
+
+445
+00:39:24,690 --> 00:39:26,950
+This prevents inter-layer breakdown.
+
+446
+00:39:28,370 --> 00:39:31,630
+That's the requirement for winding high-voltage windings.
+
+447
+00:39:32,210 --> 00:39:36,530
+Because what we need to prevent is inter-layer shorting, not inter-turn shorting.
+
+448
+00:39:37,990 --> 00:39:42,110
+I've already checked many such windings in operation on different cores.
+
+449
+00:39:43,330 --> 00:39:45,970
+And this method has proven itself very well.
+
+450
+00:39:46,930 --> 00:39:51,170
+I don't recommend using a regular TVS winding as the secondary.
+
+451
+00:39:52,430 --> 00:39:55,510
+Because there are many turns and the wire is thin.
+
+452
+00:39:57,530 --> 00:40:00,810
+I'm building this high-voltage power block for good current.
+
+453
+00:40:04,180 --> 00:40:06,480
+So the wire cross-section should be thicker.
+
+454
+00:40:07,920 --> 00:40:12,280
+Good secondary winding current will let us run quality experiments with spark gaps.
+
+455
+00:40:12,600 --> 00:40:16,640
+Because the current that charges the capacitor matters in these experiments.
+
+456
+00:40:18,280 --> 00:40:21,340
+And such wire holds a good load under short circuit.
+
+457
+00:40:23,720 --> 00:40:25,580
+It doesn't burn inside the layer.
+
+458
+00:40:29,650 --> 00:40:32,370
+Making this secondary winding took me about three hours.
+
+459
+00:40:33,050 --> 00:40:34,190
+Here's how it sits on the core.
+
+460
+00:40:35,950 --> 00:40:38,650
+And now we can move to making the primary winding.
+
+461
+00:40:39,590 --> 00:40:43,270
+For this we'll need to buy two heat-shrink tubes of minimum diameter.
+
+462
+00:40:44,710 --> 00:40:49,870
+And wire with an outer cross-section over the lacquer of 0.8 millimeters.
+
+463
+00:40:50,770 --> 00:40:56,350
+From this wire, a piece 4M 20 centimeters long is cut and folded in half.
+
+464
+00:40:57,010 --> 00:40:59,910
+You get a double wire 2M 10 centimeters long.
+
+465
+00:41:00,810 --> 00:41:05,250
+After that the double wire is twisted into a braid with a drill or screwdriver.
+
+466
+00:41:06,430 --> 00:41:08,390
+And heat-shrink is applied over it.
+
+467
+00:41:09,710 --> 00:41:13,130
+It gets baked and you get quality wire for the primary winding.
+
+468
+00:41:14,630 --> 00:41:16,790
+After twisting you get this nice braid.
+
+469
+00:41:16,790 --> 00:41:21,970
+To make this easier and do it alone, you'll need a screwdriver.
+
+470
+00:41:23,110 --> 00:41:24,490
+Clamp the second end on it.
+
+471
+00:41:25,510 --> 00:41:28,610
+Put your foot down and pull the wire up with the screwdriver.
+
+472
+00:41:29,470 --> 00:41:30,410
+And start twisting.
+
+473
+00:41:31,790 --> 00:41:35,030
+Thread the central ring on an auxiliary wire tool.
+
+474
+00:41:36,570 --> 00:41:37,490
+And twist.
+
+475
+00:41:38,610 --> 00:41:41,990
+You can see I've already put one half of the wire in heat-shrink.
+
+476
+00:41:43,250 --> 00:41:46,450
+Leave some distance here for the plus electrode to be soldered.
+
+477
+00:41:50,850 --> 00:41:54,410
+Here it is, this wire on the schematic, the central point.
+
+478
+00:41:55,910 --> 00:42:01,210
+And before laying the wire in heat-shrink, the tip needs to be either soldered or smoothed nicely.
+
+479
+00:42:01,930 --> 00:42:04,310
+Then the heat-shrink goes on without issues.
+
+480
+00:42:05,450 --> 00:42:09,270
+If there are protrusions, you risk tearing it or struggling for a long time.
+
+481
+00:42:10,010 --> 00:42:11,330
+It lays in really easily.
+
+482
+00:42:13,250 --> 00:42:15,730
+You can see the wire pulls through without effort.
+
+483
+00:42:29,950 --> 00:42:30,750
+That's it.
+
+484
+00:42:31,070 --> 00:42:33,190
+Now we can also heat-treat the second side.
+
+485
+00:42:37,540 --> 00:42:39,480
+And we can move to winding the primary.
+
+486
+00:42:41,320 --> 00:42:48,780
+Before laying the wire on the transformer core, carefully clean the wire's central point of lacquer insulation with a sharp object.
+
+487
+00:42:50,020 --> 00:42:50,960
+Clean and solder.
+
+488
+00:42:54,710 --> 00:42:59,310
+Before starting the primary winding, the wire needs to be formed, give it shape.
+
+489
+00:43:00,470 --> 00:43:04,750
+Make a lead long enough to reach the plus electrode of the thermostat terminal.
+
+490
+00:43:08,270 --> 00:43:10,870
+After this, pull one of the wires through the core.
+
+491
+00:43:13,430 --> 00:43:16,310
+The second goes in the direction of the opposite side.
+
+492
+00:43:16,870 --> 00:43:24,090
+To know that the primary is wound correctly, if leading it on winding from the center, you need to wind both halves counter to each other.
+
+493
+00:43:27,300 --> 00:43:30,060
+That is, we push the wire from one half in.
+
+494
+00:43:34,920 --> 00:43:36,920
+One direction and make a crossing.
+
+495
+00:43:37,540 --> 00:43:38,380
+That's the next layer.
+
+496
+00:43:39,460 --> 00:43:42,180
+And push the second end of the wire counterwise and pull.
+
+497
+00:43:44,640 --> 00:43:47,140
+This forms a winding with wire crossings.
+
+498
+00:43:50,640 --> 00:43:54,980
+And every time we alternate crossings, the wire ends stay the same length.
+
+499
+00:44:05,620 --> 00:44:08,120
+We've already gone the eighth turn of each wire.
+
+500
+00:44:13,960 --> 00:44:16,160
+That gives us eight turns per arm now.
+
+501
+00:44:25,560 --> 00:44:29,300
+Try to pull the wire carefully so it doesn't pass too tightly.
+
+502
+00:44:33,640 --> 00:44:36,920
+Rubbing its heat shrink against sharp ferrite edges.
+
+503
+00:44:39,080 --> 00:44:42,540
+Wire formed by a braid is very convenient to work with.
+
+504
+00:44:43,840 --> 00:44:47,980
+It's soft, bends in all directions, and clearly holds its shape.
+
+505
+00:44:49,040 --> 00:44:53,000
+Drop it, it doesn't unravel, unlike single-strand wound wire.
+
+506
+00:45:03,360 --> 00:45:08,540
+The turn count per arm in the primary winding ultimately determines the converter's consumption.
+
+507
+00:45:15,060 --> 00:45:18,020
+You also regulate output power with the turn count.
+
+508
+00:45:19,080 --> 00:45:22,060
+There's an approximate rule that you want about 2 volts per turn.
+
+509
+00:45:30,320 --> 00:45:33,260
+This rule is worth following, but is somewhat conditional.
+
+510
+00:45:34,840 --> 00:45:37,180
+You can go to 1.5 volts per turn.
+
+511
+00:45:37,460 --> 00:45:38,760
+I mean the supply voltage.
+
+512
+00:45:38,760 --> 00:45:45,200
+For example, if you power the primary with 12V, about 6 turns is roughly enough.
+
+513
+00:45:48,840 --> 00:45:51,820
+That gives us 2 volts per turn of the primary winding.
+
+514
+00:45:54,560 --> 00:45:56,060
+That value can vary.
+
+515
+00:45:58,380 --> 00:46:00,560
+We'll do a test winding of 10 turns now.
+
+516
+00:46:06,260 --> 00:46:11,140
+Finished winding the primary and connected the high-voltage transformer in a circuit.
+
+517
+00:46:11,760 --> 00:46:16,640
+Got 10 turns per arm, that is, 10 turns connected to each transistor.
+
+518
+00:46:18,700 --> 00:46:23,060
+And the high-voltage transformer is now connected to this kind of spark gap.
+
+519
+00:46:23,820 --> 00:46:27,320
+The spark gap wire is 1.5 mm copper.
+
+520
+00:46:29,220 --> 00:46:33,840
+The shape is this because the wire heats up very strongly and melting happens.
+
+521
+00:46:36,320 --> 00:46:39,820
+So the length should be big so the solder contacts don't melt.
+
+522
+00:46:43,420 --> 00:46:45,580
+We'll start from a lab power source.
+
+523
+00:46:47,640 --> 00:46:50,200
+We'll apply 13V to the input.
+
+524
+00:46:50,620 --> 00:46:52,220
+The system isn't connected yet.
+
+525
+00:46:53,860 --> 00:46:59,280
+Before starting, you need to set the duty cycle to minimum and disconnect the cooler's power terminal.
+
+526
+00:47:03,850 --> 00:47:04,870
+Here it's disconnected.
+
+527
+00:47:05,670 --> 00:47:13,130
+To exclude its effect on consumption current, plus wire connected, connect minus.
+
+528
+00:47:18,320 --> 00:47:20,920
+System is at minimum duty cycle now.
+
+529
+00:47:25,380 --> 00:47:29,720
+Consumption, you see 0.03A, 13V.
+
+530
+00:47:30,840 --> 00:47:34,040
+And now we'll add duty cycle until the discharge ignites.
+
+531
+00:47:38,090 --> 00:47:43,490
+Cranked the duty cycle to max, we get 0.09A at 13V.
+
+532
+00:47:44,010 --> 00:47:49,010
+In this position, when the discharge isn't burning, we need to tune the generator frequency.
+
+533
+00:47:51,570 --> 00:47:57,730
+Tune with the trim pot to the minimum consumption at maximum duty cycle until the discharge ignites.
+
+534
+00:48:02,240 --> 00:48:04,080
+That ends the frequency tuning.
+
+535
+00:48:06,100 --> 00:48:10,420
+After that, we can still make small corrections while watching the discharge burn.
+
+536
+00:48:11,960 --> 00:48:19,660
+On the contrary, when the discharge crosses the spark gap, we now have alternating voltage and consumption should be at maximum.
+
+537
+00:48:22,520 --> 00:48:24,920
+Now I'll connect the wire so we get a breakdown.
+
+538
+00:48:34,050 --> 00:48:36,870
+You see the consumption is now 4.4A.
+
+539
+00:48:40,240 --> 00:48:43,560
+And we need to tune it to maximum by adjusting the frequency.
+
+540
+00:48:44,280 --> 00:48:48,880
+You want to reach the moment when the wire in the spark gap melts, that is, it heats up.
+
+541
+00:48:55,820 --> 00:48:57,840
+The camera is slightly out of focus.
+
+542
+00:48:58,820 --> 00:49:00,940
+Now I'll try with a white sheet in the background.
+
+543
+00:49:15,520 --> 00:49:19,420
+The discharge from a 13V supply can stretch 4-5mm.
+
+544
+00:49:25,780 --> 00:49:29,480
+Stable discharge ignition from about a 2mm distance.
+
+545
+00:49:31,660 --> 00:49:35,340
+The output voltage is low, but the current is pretty powerful.
+
+546
+00:49:37,960 --> 00:49:41,060
+This is what you want from a high voltage generator like this.
+
+547
+00:49:43,620 --> 00:49:48,880
+For our experiments, voltage from 1.5 to 3kW is more suitable.
+
+548
+00:49:53,000 --> 00:49:55,280
+So you don't need to push the voltage too high.
+
+549
+00:49:56,080 --> 00:50:02,440
+But for those interested in higher voltage, win more turns on the secondary and decrease the turn count on the primary.
+
+550
+00:50:05,980 --> 00:50:12,540
+Then you can get the discharges we see in videos online, where people stretch 4-8cm discharges.
+
+551
+00:50:17,250 --> 00:50:18,430
+That's how you get there.
+
+552
+00:50:19,290 --> 00:50:21,430
+For practical use, not needed.
+
+553
+00:50:25,860 --> 00:50:32,600
+If you'll operate this high voltage generator predominantly at 12V, I recommend reducing the turn count from 10 to 8.
+
+554
+00:50:35,750 --> 00:50:39,470
+Then the melting will be most intense and the copper will drip down.
+
+555
+00:50:41,690 --> 00:50:48,410
+For me, 10 turns on the primary works because I plan to operate this generator up to 36V input.
+
+556
+00:50:49,630 --> 00:50:52,870
+You can see the discharge breaks down about 1mm.
+
+557
+00:50:53,310 --> 00:50:56,510
+The voltage isn't that high, but the current is very powerful.
+
+558
+00:51:01,720 --> 00:51:03,780
+Can melt nails, steel melts well.
+
+559
+00:51:07,480 --> 00:51:09,180
+You can also look at the regulation.
+
+560
+00:51:10,700 --> 00:51:12,100
+I lower the duty cycle now.
+
+561
+00:51:13,960 --> 00:51:16,620
+You see the discharge intensity decreases.
+
+562
+00:51:19,640 --> 00:51:20,620
+Added it back.
+
+563
+00:51:21,310 --> 00:51:26,380
+You see the metal is red hot and on contact the wires solder together.
+
+564
+00:51:27,460 --> 00:51:29,940
+At full short circuit, nothing happens.
+
+565
+00:51:30,340 --> 00:51:32,320
+The system's out of order consumption drops.
+
+566
+00:51:40,640 --> 00:51:42,020
+Now it holds stably.
+
+567
+00:51:43,120 --> 00:51:45,700
+The converter runs in short circuit mode.
+
+568
+00:51:48,600 --> 00:51:53,240
+And the heat sink has a temperature of about 40°C without airflow.
+
+569
+00:51:57,690 --> 00:51:59,150
+In short circuit mode.
+
+570
+00:52:01,820 --> 00:52:05,920
+Now we can move to installing the diode columns and finishing the build.
+
+571
+00:52:11,050 --> 00:52:14,310
+Before final mounting, glue the core on all sides.
+
+572
+00:52:14,790 --> 00:52:16,490
+Wrap it tightly with electrical tape.
+
+573
+00:52:16,890 --> 00:52:19,750
+Glue the winding from both sides and fix the wires.
+
+574
+00:52:25,730 --> 00:52:31,070
+Also bend the leads that go to the transistor pins into a ring shape for solid soldering.
+
+575
+00:52:40,060 --> 00:52:42,180
+Device assembly is nearly done.
+
+576
+00:52:43,420 --> 00:52:44,720
+Installed the front panel.
+
+577
+00:52:45,040 --> 00:52:47,220
+You can see the negative and positive terminals.
+
+578
+00:52:47,960 --> 00:52:49,300
+Installed the diode columns.
+
+579
+00:52:49,680 --> 00:52:50,880
+Mostly held with hot glue.
+
+580
+00:52:54,530 --> 00:52:57,250
+Connected the diode column inputs per the schematic.
+
+581
+00:52:57,790 --> 00:53:02,170
+These are the points where the high voltage winding of the step-up transformer will connect.
+
+582
+00:53:04,150 --> 00:53:08,090
+Now I'll install the transformer and we can move to full device tests.
+
+583
+00:53:12,720 --> 00:53:13,660
+All mounted.
+
+584
+00:53:14,060 --> 00:53:15,500
+That's the build we ended up with.
+
+585
+00:53:16,680 --> 00:53:22,680
+If it's made for voltage up to 5 kW, the centimeter gaps between contacts are quite enough.
+
+586
+00:53:23,500 --> 00:53:29,940
+If more, you'd need a bigger enclosure and to keep distance between the diode columns and between the terminals themselves.
+
+587
+00:53:31,520 --> 00:53:35,140
+Up to 5 kW, this build is pretty reliable.
+
+588
+00:53:42,270 --> 00:53:44,910
+Holding the transformer, it's not fixed yet.
+
+589
+00:53:45,870 --> 00:53:48,350
+The top cover will press it down solidly.
+
+590
+00:53:57,450 --> 00:54:00,650
+Instead of feet, I put soft rubber here on the screws.
+
+591
+00:54:44,120 --> 00:54:44,960
+That's it.
+
+592
+00:54:46,300 --> 00:54:48,680
+Such a little box, nothing rattles.
+
+593
+00:54:50,060 --> 00:54:51,340
+All pretty solid.
+
+594
+00:54:52,960 --> 00:54:58,500
+And these feet provide the exact air gap below, so the cooler can draw air for system cooling.
+
+595
+00:55:06,860 --> 00:55:12,940
+Now we'll run an experiment that clearly shows the difference between AC discharge and DC discharge.
+
+596
+00:55:12,940 --> 00:55:18,420
+The right spark gap electrode is connected to the positive terminal, the left to negative.
+
+597
+00:55:19,740 --> 00:55:22,320
+The device will be powered with 13 V.
+
+598
+00:55:24,100 --> 00:55:29,460
+And we'll observe melting of the negative electrode with the device's overall consumption at 4 A.
+
+599
+00:55:30,600 --> 00:55:34,300
+Electrode cross-section is 1.5 mm in diameter.
+
+600
+00:55:35,700 --> 00:55:36,860
+Turn on the device.
+
+601
+00:55:40,140 --> 00:55:41,920
+Now I'll ignite the discharge.
+
+602
+00:55:44,780 --> 00:55:46,180
+The electrodes stick together.
+
+603
+00:55:52,200 --> 00:55:53,080
+That's DC.
+
+604
+00:55:53,600 --> 00:55:55,280
+Electricity literally attracts.
+
+605
+00:55:58,780 --> 00:55:59,960
+Electrode to electrode.
+
+606
+00:56:09,850 --> 00:56:10,810
+Welding happens.
+
+607
+00:56:15,490 --> 00:56:16,890
+Process started.
+
+608
+00:56:20,210 --> 00:56:22,550
+You see the negative electrode melting.
+

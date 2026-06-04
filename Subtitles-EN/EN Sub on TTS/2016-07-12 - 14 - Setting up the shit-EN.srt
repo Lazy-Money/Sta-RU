@@ -1,0 +1,192 @@
+1
+00:00:00,800 --> 00:00:01,940
+Hi, Oleg Herman.
+
+2
+00:00:02,600 --> 00:00:03,240
+Hi Kirill.
+
+3
+00:00:03,880 --> 00:00:08,080
+I want to show you what this gadget is for and what you can do with it, how to tune it.
+
+4
+00:00:09,640 --> 00:00:14,480
+We've got a generator at 16.6 kilohertz and 1.66 megahertz.
+
+5
+00:00:17,620 --> 00:00:22,140
+The generator puts out a burst of five pulses with a duty cycle of roughly.
+
+6
+00:00:22,720 --> 00:00:25,900
+I tuned it to around 30 percent duty cycle on the Tesla.
+
+7
+00:00:27,900 --> 00:00:29,260
+Let's pull out the ferrite.
+
+8
+00:00:30,360 --> 00:00:32,240
+I'll show you what you usually see.
+
+9
+00:00:34,120 --> 00:00:35,880
+Okay, and let's turn it on.
+
+10
+00:00:37,500 --> 00:00:39,060
+And we have a decaying ringing.
+
+11
+00:00:40,720 --> 00:00:42,760
+Well, that's what you usually see.
+
+12
+00:00:44,280 --> 00:00:45,620
+Here's where the antenna goes.
+
+13
+00:00:46,440 --> 00:00:51,060
+One to the inductor, the other over there, so it's visible, so it doesn't drift.
+
+14
+00:00:52,080 --> 00:00:53,820
+Now let's put the ferrite in here.
+
+15
+00:00:54,660 --> 00:00:56,220
+I already pre-tuned all of this.
+
+16
+00:00:57,420 --> 00:01:00,440
+The number of turns ended up asymmetric here and here.
+
+17
+00:01:02,080 --> 00:01:04,720
+And now let's switch the whole thing on and have a look.
+
+18
+00:01:05,340 --> 00:01:07,220
+We turn it on and here's what we get.
+
+19
+00:01:08,160 --> 00:01:10,040
+Ringing, but practically no ringing.
+
+20
+00:01:11,100 --> 00:01:13,060
+That is, it's there, but barely.
+
+21
+00:01:14,720 --> 00:01:26,000
+If you happen to fit a 2.2 nanofarads capacitor here, if you stick in something like this, well, two in parallel one at a time, they heat up a lot, because I've got 100V going to the Tesla.
+
+22
+00:01:28,700 --> 00:01:30,420
+The amplitude jumps up high.
+
+23
+00:01:32,080 --> 00:01:37,280
+And in the end, all that's left for us is to make a nanosecond pulser out of this Tesla.
+
+24
+00:01:38,480 --> 00:01:42,860
+It's all simple, sort of, for that I burned out those diodes.
+
+25
+00:01:43,140 --> 00:01:45,840
+Now I bought 26 of the X108.
+
+26
+00:01:48,260 --> 00:01:55,740
+I'll make a little train out of them and stick a 330 to 470kΩ resistor in parallel with each diode.
+
+27
+00:01:56,600 --> 00:01:58,580
+And I'll have a unidirectional pulse.
+
+28
+00:01:59,860 --> 00:02:00,600
+Like this.
+
+29
+00:02:03,620 --> 00:02:06,320
+Oh, by the way, the resonance here doesn't drift.
+
+30
+00:02:08,580 --> 00:02:14,980
+To tune a resonance that doesn't drift, you can even put it before the rectifier and the resonance still won't drift.
+
+31
+00:02:15,540 --> 00:02:16,620
+For this reason, I'm going to use a rectifier.
+
+32
+00:02:23,920 --> 00:02:29,600
+So, it turns out we have 3 resonances here.
+
+33
+00:02:30,620 --> 00:02:32,500
+Resonance within resonance, basically.
+
+34
+00:02:36,060 --> 00:02:40,380
+The Tesla is tuned to the ring, but you need to make just 3 pulses or so.
+
+35
+00:02:40,920 --> 00:02:44,200
+I ended up with 5 pulses, it doesn't work any other way.
+
+36
+00:02:45,500 --> 00:02:47,380
+Oh, and I drifted off topic.
+
+37
+00:02:48,200 --> 00:02:59,960
+To get a resonance that doesn't drift, so you don't have to install an automatic frequency control, we need to tune one coil to a frequency of, say, 16kHz and the other coil to 8kHz.
+
+38
+00:03:01,000 --> 00:03:07,820
+And so that the frequency doesn't drift no matter what, we need to take the signal from the coil that's tuned to the lower band.
+
+39
+00:03:08,780 --> 00:03:14,540
+In that case the frequency, even the phase, won't drift, it'll stand solid as a rock.
+
+40
+00:03:15,220 --> 00:03:18,720
+It'll stand solid as a rock no matter what load you put on it.
+
+41
+00:03:19,020 --> 00:03:20,320
+The frequency won't drift.
+
+42
+00:03:21,260 --> 00:03:21,760
+Tested.
+
+43
+00:03:26,100 --> 00:03:30,380
+What I end up with here is 3 resonances on the inductor, on the big coil.
+
+44
+00:03:32,420 --> 00:03:35,460
+On the Tesla, the Tesla has to match the ringing.
+
+45
+00:03:36,880 --> 00:03:37,440
+Absolutely.
+
+46
+00:03:38,300 --> 00:03:40,220
+We make a unidirectional pulse.
+
+47
+00:03:41,040 --> 00:03:43,040
+We strike on the peak, on the peak.
+
+48
+00:03:59,700 --> 00:04:01,080
+Itself, we strike at it.
+

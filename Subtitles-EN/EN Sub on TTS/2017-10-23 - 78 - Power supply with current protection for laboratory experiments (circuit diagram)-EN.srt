@@ -1,0 +1,1024 @@
+1
+00:00:01,070 --> 00:00:01,690
+Hi everyone.
+
+2
+00:00:02,450 --> 00:00:04,910
+I've finished work on tuning the lab power supply.
+
+3
+00:00:06,530 --> 00:00:09,190
+And now before you is its schematic diagram.
+
+4
+00:00:10,030 --> 00:00:13,030
+The scheme came out big and fits on two A4 sheets.
+
+5
+00:00:14,390 --> 00:00:18,530
+It's already located in the folder at the address on Yandex, disk you know.
+
+6
+00:00:19,150 --> 00:00:22,330
+The address will also be duplicated in the video description.
+
+7
+00:00:22,970 --> 00:00:29,930
+In the course of working on this build, some features came up that were reflected in practice and changes to the device's schematic diagram.
+
+8
+00:00:34,020 --> 00:00:39,480
+The most radical change in the build, you could say, happened specifically in the power module.
+
+9
+00:00:40,640 --> 00:00:42,460
+The power switches were replaced.
+
+10
+00:00:43,180 --> 00:00:50,480
+Originally, I planned to use power switches in two, 247 case, brand IRFP, 064N.
+
+11
+00:00:51,200 --> 00:01:03,020
+But in the course of testing, it turned out that these HCPL 3120 drivers, which have a max pulse current of 2A, aren't able to saturate the gate capacitance of these transistors qualitatively.
+
+12
+00:01:06,510 --> 00:01:09,030
+And so I had two solutions for this problem.
+
+13
+00:01:10,670 --> 00:01:17,790
+Either replace the transistors, or use current amplifiers after the drivers on complementary pairs of bipolar transistors.
+
+14
+00:01:19,570 --> 00:01:21,050
+Done on this kind of scheme.
+
+15
+00:01:21,950 --> 00:01:26,430
+Our driver, a chosen resistance, then complementary pairs go.
+
+16
+00:01:27,150 --> 00:01:36,810
+For example this KT-972, KT-973, or KT-805 and KT-835.
+
+17
+00:01:38,330 --> 00:01:44,810
+Well, and further everything by scheme, limiting resistor, diodes, zinners, and power switch.
+
+18
+00:01:45,370 --> 00:01:46,790
+But I didn't go down this path.
+
+19
+00:01:47,770 --> 00:01:50,510
+It's a very good path for controlling heavy gates.
+
+20
+00:01:52,690 --> 00:01:54,530
+I didn't take it for one reason.
+
+21
+00:01:54,910 --> 00:01:59,790
+Because of the mounting density on my board, installing 8 switches wasn't possible anymore.
+
+22
+00:02:00,750 --> 00:02:01,610
+Simply no space.
+
+23
+00:02:02,710 --> 00:02:06,710
+Because of this I stopped on transistors of brand IRFZ48N.
+
+24
+00:02:09,030 --> 00:02:12,230
+These transistors come in two, 220 case.
+
+25
+00:02:12,570 --> 00:02:18,890
+Such a case is much smaller, but nevertheless they handle the set task excellently, and don't spoil the build at all.
+
+26
+00:02:21,970 --> 00:02:25,490
+And also their feature is that the gate capacitance is much smaller.
+
+27
+00:02:27,690 --> 00:02:35,950
+If you take the IRFP064N, there's 4000 pF, and on these, 2500 pF.
+
+28
+00:02:36,950 --> 00:02:43,470
+And in the course of testing, I found this driver can work with capacitance up to 2800 pF.
+
+29
+00:02:48,060 --> 00:02:50,300
+These switches are placed on the heatsink.
+
+30
+00:02:51,880 --> 00:02:54,040
+Everything the same as I showed in the video.
+
+31
+00:02:54,500 --> 00:02:56,560
+All the same operations on the power module.
+
+32
+00:02:58,120 --> 00:03:00,080
+The next moment where changes were made.
+
+33
+00:03:00,500 --> 00:03:01,900
+This is in the power transformer.
+
+34
+00:03:05,030 --> 00:03:12,750
+You can notice that I changed the turn count of the primary winding, reduced it to 4 to 7, and I use only 7 leads from the transformer.
+
+35
+00:03:14,150 --> 00:03:18,350
+Originally 11, turns were wound in 3 layers of the secondary winding.
+
+36
+00:03:18,350 --> 00:03:27,950
+But since at the 11th lead and subsequent the voltage already too far exceeded the task I set, 1000 volts, I decided to unwind those turns.
+
+37
+00:03:28,410 --> 00:03:31,630
+And as a total, I got rid of 1 layer on the pulse transformer.
+
+38
+00:03:34,520 --> 00:03:40,680
+Now this build looks like this, nothing changed, only 1 layer removed, and you see 4 turns.
+
+39
+00:03:42,100 --> 00:03:47,200
+It's also all mounted and the leads from the transformer are connected to the distribution switch.
+
+40
+00:03:48,580 --> 00:03:51,360
+These switches come with such metal parts in the kit.
+
+41
+00:03:53,280 --> 00:03:55,240
+You can see I modified it slightly here.
+
+42
+00:03:56,660 --> 00:04:04,160
+They sit in these holes and have such a tab that, when it moves, abuts the metal tab of the limiter, and the switch can't be switched further.
+
+43
+00:04:11,900 --> 00:04:14,680
+This way we determine the final number of its switchings.
+
+44
+00:04:15,480 --> 00:04:19,180
+Next we tune the chain responsible for the work of the current protection.
+
+45
+00:04:20,720 --> 00:04:23,920
+This is this resistance and the limiting resistance.
+
+46
+00:04:24,520 --> 00:04:27,100
+And here is the chain coming from the current sensor.
+
+47
+00:04:28,500 --> 00:04:28,820
+Rich.
+
+48
+00:04:30,400 --> 00:04:31,660
+Ratings are now marked.
+
+49
+00:04:32,560 --> 00:04:43,020
+In previous experiments I used as resistance variable resistors of this brand, but it turned out they're very low power and at current sensor work the contacts simply burn on the track.
+
+50
+00:04:50,040 --> 00:04:57,580
+Although the current isn't too big, but nevertheless these transistors don't handle the set task and it was decided to replace them.
+
+51
+00:04:58,880 --> 00:05:03,420
+I found resistors of brand PPB1A, the brand I also indicated.
+
+52
+00:05:05,000 --> 00:05:07,920
+The resistance I installed is 100 ohm.
+
+53
+00:05:09,000 --> 00:05:13,280
+But here resistors with resistance from 47 ohm will work well.
+
+54
+00:05:14,560 --> 00:05:19,820
+I would have installed such a 47 ohm resistance, but it isn't available at the suppliers.
+
+55
+00:05:21,240 --> 00:05:23,660
+These resistors are for some reason in short supply.
+
+56
+00:05:25,200 --> 00:05:26,520
+They're made from nichrome wire.
+
+57
+00:05:28,520 --> 00:05:31,740
+The power rating of these resistors is fairly high.
+
+58
+00:05:33,140 --> 00:05:39,960
+The contact surfaces are also made very qualitatively, these tabs, which prevents their failure, ceramic case.
+
+59
+00:05:42,580 --> 00:05:49,180
+So I advise using exactly such variable resistors to avoid work failures.
+
+60
+00:05:49,920 --> 00:05:51,420
+What else can I say here?
+
+61
+00:05:52,980 --> 00:05:58,720
+This resistance going to the common of the chip is responsible for the final trip current of the protection.
+
+62
+00:06:02,280 --> 00:06:08,380
+In my case this resistance is 2.7 ohm and here you can put somewhere up to 5 ohm.
+
+63
+00:06:08,700 --> 00:06:09,800
+This will be a different point.
+
+64
+00:06:12,020 --> 00:06:17,900
+Earlier I tuned the consumption point to 20A, but at 2.7 ohm this is 32A.
+
+65
+00:06:19,420 --> 00:06:24,340
+The trip point turns out and these switches handle such a short circuit load excellently.
+
+66
+00:06:28,410 --> 00:06:32,790
+Moving on to the chains responsible for control of stopping chip generation.
+
+67
+00:06:39,090 --> 00:06:45,490
+This chain is made on a divider from resistors of ratings 1.3 ohm and 330 ohm.
+
+68
+00:06:49,150 --> 00:06:52,530
+From them a potential of about 2.5 Vforms.
+
+69
+00:06:54,110 --> 00:06:57,950
+And we can notice that this potential goes through the generation off switch.
+
+70
+00:06:58,330 --> 00:06:59,750
+It's presented here in my build.
+
+71
+00:07:03,620 --> 00:07:06,740
+Further goes a push button with normally closed contacts.
+
+72
+00:07:07,180 --> 00:07:08,660
+Namely closed, not open.
+
+73
+00:07:09,980 --> 00:07:16,500
+And visible that I marked a coaxial cable here, whose shield is mandatorily connected to the common with the generator.
+
+74
+00:07:18,580 --> 00:07:24,340
+If you don't do this, then this piece of wire from the switch, button and the marked point E here.
+
+75
+00:07:24,740 --> 00:07:26,820
+Here it is, the input to pin 9.
+
+76
+00:07:27,240 --> 00:07:28,560
+It'll form a kind of antenna.
+
+77
+00:07:30,160 --> 00:07:38,080
+And during work, interference induced on it from primary winding work will be significant, which will lead to false trips of the current protection.
+
+78
+00:07:39,160 --> 00:07:43,360
+Since pin 9 of the UC3825N chip is quite sensitive.
+
+79
+00:07:45,560 --> 00:07:49,180
+Its work is from 0.9 to 1.3 volts.
+
+80
+00:07:50,020 --> 00:07:53,520
+1.3 volts is already a full generation cutoff.
+
+81
+00:07:53,940 --> 00:07:55,840
+So I advise doing this without fail.
+
+82
+00:07:57,680 --> 00:08:02,140
+Let's examine in more detail what this chain of switch and button can be used for.
+
+83
+00:08:06,100 --> 00:08:09,700
+First, on switch closure, we switch our chip to standby mode.
+
+84
+00:08:10,180 --> 00:08:15,740
+Supply of control pulses from pins 14 and 11 of UC3825N stops.
+
+85
+00:08:17,420 --> 00:08:18,940
+This is very convenient.
+
+86
+00:08:19,500 --> 00:08:22,000
+No need to disconnect power to the whole lab block.
+
+87
+00:08:24,180 --> 00:08:35,380
+Also, if we want to test a circuit connected after the lab power supply at its output, and we're not sure how it'll react to a long turn on, we briefly press this button with normally closed contacts.
+
+88
+00:08:35,780 --> 00:08:39,280
+The contacts open and the chip switches back to operating mode.
+
+89
+00:08:45,820 --> 00:08:52,940
+We determine how the subsequent device behaves, make conclusions, and introduce corrections in the lab power supply control.
+
+90
+00:08:54,600 --> 00:09:04,940
+Also, with this button, it's very convenient to set the voltage potential, connect a voltmeter to the power supply output, set the point at the desired voltage with the switch, and set the voltage
+
+91
+00:09:04,940 --> 00:09:05,980
+protection trip point.
+
+92
+00:09:12,860 --> 00:09:16,780
+Press the button and fix the voltage potential that comes out at the output.
+
+93
+00:09:20,310 --> 00:09:21,630
+Functional and convenient.
+
+94
+00:09:22,310 --> 00:09:29,790
+Now, let's examine the work of the system responsible for smooth regulation of voltage at the power supply output and setting its final point.
+
+95
+00:09:31,310 --> 00:09:35,610
+This system required an additional galvanically isolated power source.
+
+96
+00:09:36,690 --> 00:09:40,050
+I schematically marked it as four turns from the DC-DC converter.
+
+97
+00:09:40,730 --> 00:09:41,570
+Technically, I did it.
+
+98
+00:09:41,910 --> 00:09:43,450
+See the DC-DC converters.
+
+99
+00:09:43,830 --> 00:09:45,410
+Here, I added these four turns.
+
+100
+00:09:48,500 --> 00:09:50,460
+And further, they go to the subsequent scheme.
+
+101
+00:09:52,340 --> 00:09:54,760
+This is a half-wave rectifier scheme.
+
+102
+00:09:57,040 --> 00:09:59,500
+Here, you get a potential of about 9 volts.
+
+103
+00:10:01,040 --> 00:10:03,600
+There's a limiting zener of 8.2 volts.
+
+104
+00:10:04,860 --> 00:10:08,980
+Further goes a regulator in a small case, 78L05.
+
+105
+00:10:10,400 --> 00:10:19,180
+The currents consumed here are quite small, because in the end, this chain only works to trigger the LED in the PC817 optocoupler.
+
+106
+00:10:19,860 --> 00:10:26,100
+Here, you see points C, D, and in the scheme outputs also go to these points C, D.
+
+107
+00:10:29,180 --> 00:10:38,960
+As a tracking element for the potential, it was decided to use the circuit solution that has recommended itself well, namely the TL431 controllable zener.
+
+108
+00:10:41,900 --> 00:10:45,300
+Potential from the resistor divider is supplied to its pin 1.
+
+109
+00:10:45,660 --> 00:10:53,380
+And when this potential's threshold reaches 2.5 volts, it's compared with the reference voltage of 2.5 volts and the chip trips.
+
+110
+00:10:55,020 --> 00:10:58,640
+On tripping, we accordingly light the LED in the optocoupler.
+
+111
+00:10:59,860 --> 00:11:03,120
+Now, let's dwell on this resistor divider in more detail.
+
+112
+00:11:05,680 --> 00:11:07,940
+To what resistors must be placed here?
+
+113
+00:11:08,760 --> 00:11:13,640
+They're not only a divider, but also discharge these capacitances at the power supply output.
+
+114
+00:11:15,100 --> 00:11:16,600
+These also work for us.
+
+115
+00:11:18,320 --> 00:11:25,540
+This is also done for safety, so the voltage potential after power supply shutoff doesn't remain on the output terminals.
+
+116
+00:11:26,060 --> 00:11:29,540
+With this, I introduced a safety system on capacitor discharge.
+
+117
+00:11:33,200 --> 00:11:37,140
+The resistance connecting to minus is 4.7 ohm.
+
+118
+00:11:38,000 --> 00:11:40,460
+Such a rating wasn't chosen by accident.
+
+119
+00:11:40,860 --> 00:11:46,580
+At such a rating, the maximum voltage that may be on the output terminals is 1050 volts.
+
+120
+00:11:47,160 --> 00:11:49,040
+Further goes the variable resistance.
+
+121
+00:11:49,820 --> 00:11:51,860
+I have a 15 comb there.
+
+122
+00:11:53,500 --> 00:11:57,340
+Resistor brand PP340, also wire wound.
+
+123
+00:11:57,760 --> 00:11:59,500
+This resistance, from nichrome.
+
+124
+00:12:03,570 --> 00:12:07,230
+Because all other resistances will work here only for some time and fail.
+
+125
+00:12:10,240 --> 00:12:16,280
+Although the currents are small, the reliability of other variable resistors leaves much to be desired.
+
+126
+00:12:17,900 --> 00:12:20,620
+And the main limiting resistance is 2.2 ohm.
+
+127
+00:12:21,680 --> 00:12:25,800
+Such a divider lets us qualitatively track the voltage point at the output.
+
+128
+00:12:27,200 --> 00:12:35,240
+You can also notice that parallel to the 2.2 ohm, one more resistance of 2.2 ohm is connected only through a switch.
+
+129
+00:12:36,100 --> 00:12:43,460
+On closure of this switch, the rating falls and the range of variable output voltage point on the power supply shifts to the lower side.
+
+130
+00:12:46,980 --> 00:12:55,280
+In my case, the regulation with the switch closed is from 100 to 500 volts, and with it open, from 300 to 1050 volts.
+
+131
+00:12:57,920 --> 00:13:03,660
+You can pick any ratings for the desired voltage of your build here, but you'll have to pick these chains in practice.
+
+132
+00:13:06,820 --> 00:13:09,560
+And now let's stop on the power chain of the whole scheme.
+
+133
+00:13:11,480 --> 00:13:14,800
+The power chain starts with a battery, removable terminals.
+
+134
+00:13:17,280 --> 00:13:23,740
+Then, according to the block scheme I showed earlier, at the input, we have a 12V40A relay with a diode.
+
+135
+00:13:26,200 --> 00:13:31,140
+This diode makes the relay trip only at correct polarity of battery connection.
+
+136
+00:13:33,240 --> 00:13:37,200
+With this, we prevent the system from failing on a power input reversal.
+
+137
+00:13:40,140 --> 00:13:44,220
+A kind of protection that won't let the whole subsequent scheme get killed.
+
+138
+00:13:45,620 --> 00:13:54,000
+Further, at the input, we have electrolytic capacitors of 4700F25V connected in series, two pieces.
+
+139
+00:13:55,020 --> 00:13:56,000
+Then comes the choke.
+
+140
+00:13:57,460 --> 00:14:01,660
+After that, also two electrolytic capacitors of 4700F25V.
+
+141
+00:14:03,600 --> 00:14:07,760
+And parallel to them is a 2.2F400V capacitor.
+
+142
+00:14:09,540 --> 00:14:13,380
+This is what the 2.2F400V capacitor looks like.
+
+143
+00:14:16,530 --> 00:14:17,370
+Quite massive.
+
+144
+00:14:18,110 --> 00:14:22,270
+I advise not to save on this film capacitor, not to take it for lower voltage.
+
+145
+00:14:23,510 --> 00:14:27,070
+The voltage of this capacitor ultimately determines its dimensions.
+
+146
+00:14:28,350 --> 00:14:34,370
+And this capacitance participates in the work of the power module, in the primary dump of potential on the switches.
+
+147
+00:14:37,190 --> 00:14:40,910
+That is, it accelerates the work and pulses of the power module.
+
+148
+00:14:42,910 --> 00:14:46,510
+Also, these capacitors, electrolytes connected in series.
+
+149
+00:14:46,830 --> 00:14:48,850
+This also isn't a chance solution.
+
+150
+00:14:49,710 --> 00:14:53,750
+Because these capacitors at peak loads will heat up in the course of work.
+
+151
+00:14:54,590 --> 00:14:58,410
+And we need to distribute the load that falls on them across four capacitors.
+
+152
+00:14:59,910 --> 00:15:02,570
+The filter choke also takes part in this work.
+
+153
+00:15:03,090 --> 00:15:09,890
+And if we look at the scheme, then the DC-DC converter that ultimately powers the whole scheme is connected on our side.
+
+154
+00:15:10,450 --> 00:15:13,050
+Power on plus is supplied before the choke.
+
+155
+00:15:14,250 --> 00:15:17,110
+The choke is a filter from the power module's work.
+
+156
+00:15:18,270 --> 00:15:19,550
+See points A and B.
+
+157
+00:15:20,950 --> 00:15:24,410
+And these are the points where A and B are supplied to the power module.
+
+158
+00:15:26,310 --> 00:15:27,970
+In iron this looks as follows.
+
+159
+00:15:30,880 --> 00:15:31,980
+Now let's examine.
+
+160
+00:15:33,900 --> 00:15:35,660
+Everything's already ready and packed.
+
+161
+00:15:37,340 --> 00:15:39,440
+Here at the input, we have the relay.
+
+162
+00:15:40,740 --> 00:15:44,520
+Next, the wire coming from the relay on plus comes to us.
+
+163
+00:15:46,360 --> 00:15:49,340
+Here they are, capacitors located in series.
+
+164
+00:15:50,640 --> 00:15:51,360
+Two pieces.
+
+165
+00:15:53,460 --> 00:15:54,740
+Next comes the choke.
+
+166
+00:15:56,140 --> 00:15:58,220
+And two more electrolytic capacitors.
+
+167
+00:15:59,180 --> 00:16:02,640
+And further parallel stands the 2.2 F capacitor.
+
+168
+00:16:04,300 --> 00:16:07,180
+Here are two metal pieces with M3 thread.
+
+169
+00:16:09,120 --> 00:16:10,440
+Here I soldered nuts.
+
+170
+00:16:12,460 --> 00:16:18,900
+So that when I assemble this build, see contacts in the form of forks.
+
+171
+00:16:19,860 --> 00:16:23,020
+They descend, engaging with these contact pads.
+
+172
+00:16:25,320 --> 00:16:28,380
+And when the cover is closed, these screws tighten.
+
+173
+00:16:29,620 --> 00:16:31,460
+That way a quality contact is made.
+
+174
+00:16:34,400 --> 00:16:40,160
+By this choke, its core dimensions are shown on the drawing.
+
+175
+00:16:43,310 --> 00:16:44,830
+Here it is, this core.
+
+176
+00:16:45,310 --> 00:16:47,170
+I marked it as F in a circle.
+
+177
+00:16:48,390 --> 00:16:50,190
+And here F with an arrow indicates.
+
+178
+00:16:51,790 --> 00:17:02,110
+Core dimensions are 28.5 millimeters in length, 13 millimeters inner diameter, and wall width 6.5 millimeters.
+
+179
+00:17:03,290 --> 00:17:05,030
+By outer it's 26 millimeters.
+
+180
+00:17:06,150 --> 00:17:06,710
+Such a barrel.
+
+181
+00:17:08,110 --> 00:17:09,470
+You can naturally use others.
+
+182
+00:17:10,750 --> 00:17:15,790
+Simply for the dimensions of the box that I originally chose, exactly these cores fit me.
+
+183
+00:17:17,930 --> 00:17:19,790
+Which have big dimensions in length.
+
+184
+00:17:25,440 --> 00:17:26,800
+What else can you see here?
+
+185
+00:17:28,840 --> 00:17:34,100
+Here is this switch, which does range regulation.
+
+186
+00:17:35,600 --> 00:17:42,160
+This is the resistance switch, which sets the voltage protection trip point.
+
+187
+00:17:45,190 --> 00:17:46,150
+Here it's presented.
+
+188
+00:17:46,990 --> 00:17:49,970
+This is the current protection regulation resistance.
+
+189
+00:17:51,010 --> 00:17:53,010
+And this is a variable resistance.
+
+190
+00:17:54,070 --> 00:17:57,050
+This is the smooth regulation of output voltage.
+
+191
+00:17:59,090 --> 00:18:02,290
+Effectively, it regulates the duration of control pulses.
+
+192
+00:18:02,810 --> 00:18:08,290
+And then the chip itself, based on all settings, sets the final duration of the control pulse.
+
+193
+00:18:11,770 --> 00:18:13,890
+Further, the diode bridge.
+
+194
+00:18:14,870 --> 00:18:19,430
+I marked here that it consists of fast diodes of brand MUR 860.
+
+195
+00:18:20,990 --> 00:18:25,590
+And drew graphically that in the bridge arm two diodes are connected in series.
+
+196
+00:18:26,090 --> 00:18:29,990
+Since the diode is rated for a max voltage of 600 volts.
+
+197
+00:18:30,790 --> 00:18:34,130
+And our power supply has voltage over 1000 volts.
+
+198
+00:18:34,590 --> 00:18:36,670
+So we should connect them in two pieces.
+
+199
+00:18:37,830 --> 00:18:40,670
+Of course, you can find diodes of other brands here too.
+
+200
+00:18:40,910 --> 00:18:42,290
+But they have to be fast.
+
+201
+00:18:44,230 --> 00:18:47,570
+Now we can also examine the system of the power output filter.
+
+202
+00:18:51,760 --> 00:18:59,380
+After the diode bridge, we have connected non-polar capacitors of rating 4.8 f in series at 630 volts.
+
+203
+00:19:00,900 --> 00:19:02,540
+These are film capacitors.
+
+204
+00:19:03,920 --> 00:19:07,480
+And after them is the choke on output plus and on minus.
+
+205
+00:19:09,400 --> 00:19:11,880
+Further, the same non-polar capacitors.
+
+206
+00:19:13,140 --> 00:19:19,040
+And parallel to them, a small filter capacitor of 0.15 f at 2000 volts.
+
+207
+00:19:20,320 --> 00:19:21,620
+In iron, this looks like this.
+
+208
+00:19:23,660 --> 00:19:25,580
+Here are the first two capacitors.
+
+209
+00:19:26,920 --> 00:19:28,520
+Then the output of the choke.
+
+210
+00:19:30,420 --> 00:19:31,980
+And the next two capacitors.
+
+211
+00:19:32,660 --> 00:19:35,080
+Here it's parallel, the 2 kV capacitor.
+
+212
+00:19:35,940 --> 00:19:37,640
+And we have output plus and minus.
+
+213
+00:19:39,000 --> 00:19:42,680
+Such a system let us deliver a quality signal from the power supply.
+
+214
+00:19:43,560 --> 00:19:48,980
+And during work, even on big loads, the ripples there make up 1.5 to 2 volts.
+
+215
+00:19:49,920 --> 00:19:57,720
+At a load voltage of 200 volts, that is, the oscillogram comes out quite clean if observing through a device.
+
+216
+00:20:00,060 --> 00:20:05,140
+And plus, these chokes are also responsible for the correct work of the voltage protection.
+
+217
+00:20:08,120 --> 00:20:12,320
+That is, regardless of what we connect here at the output, what devices.
+
+218
+00:20:13,840 --> 00:20:16,860
+You know this block at me will work in specific devices.
+
+219
+00:20:18,560 --> 00:20:21,900
+Connected with big high frequencies, static potentials.
+
+220
+00:20:24,260 --> 00:20:26,700
+All connected with our specific work form.
+
+221
+00:20:27,620 --> 00:20:30,680
+And so we should protect these chains from influence at the output.
+
+222
+00:20:31,900 --> 00:20:35,640
+The choke here consists of 10 turns of millimeter wire.
+
+223
+00:20:38,970 --> 00:20:40,470
+Ring dimensions used are shown.
+
+224
+00:20:41,750 --> 00:20:44,850
+And here I indicated that two rings are used in each choke.
+
+225
+00:20:45,930 --> 00:20:47,550
+Here they are, these rings.
+
+226
+00:20:48,210 --> 00:20:50,210
+Physically I stacked them one on top of another.
+
+227
+00:20:50,210 --> 00:20:52,270
+A kind of barrel came out.
+
+228
+00:20:53,350 --> 00:20:55,010
+And I bound it with masking tape.
+
+229
+00:20:56,510 --> 00:20:59,250
+After which PVC insulated wire was wound.
+
+230
+00:21:00,550 --> 00:21:02,030
+Here they are, these chokes.
+
+231
+00:21:03,070 --> 00:21:06,670
+And also they're wrapped around with fluoroplastic additional insulation.
+
+232
+00:21:07,870 --> 00:21:11,270
+Overall, I explained the main nuances on the schematic diagram.
+
+233
+00:21:12,690 --> 00:21:16,590
+Dimensions of the power pulse transformer's core are also indicated.
+
+234
+00:21:17,430 --> 00:21:22,310
+You can use ferrite of smaller dimensions and other brands, other permeabilities.
+
+235
+00:21:23,030 --> 00:21:23,890
+This isn't principle.
+
+236
+00:21:24,910 --> 00:21:28,410
+Only the clock generator frequency will change under each ferrite.
+
+237
+00:21:29,510 --> 00:21:30,310
+You'll need to pick it.
+
+238
+00:21:30,850 --> 00:21:34,090
+I showed the principle in previous videos on the lab power supply.
+
+239
+00:21:36,350 --> 00:21:38,370
+Now a few more nuances in iron.
+
+240
+00:21:39,230 --> 00:21:45,570
+Here if you assemble it the same as I did, the power module, and the control board located above it.
+
+241
+00:21:46,070 --> 00:21:53,230
+Then in such a build the wires going from the switches to the primary winding will inevitably pass under the board and the master chip.
+
+242
+00:21:55,590 --> 00:22:00,310
+In this case, under the whole board area, you must make a screen of aluminum foil.
+
+243
+00:22:02,130 --> 00:22:05,690
+In this case, I glued the foil to cardboard on the back side.
+
+244
+00:22:06,370 --> 00:22:12,370
+This will prevent pickups from the primary winding onto the master UC 3825-inch chip.
+
+245
+00:22:13,510 --> 00:22:19,050
+Pickups happen on pins 6 and 7 where the frequency setting capacitor is located.
+
+246
+00:22:21,170 --> 00:22:22,510
+One more condition.
+
+247
+00:22:23,170 --> 00:22:32,650
+If you have such a scheme with galvanically isolated independent power supplies, then the aluminum screen isn't connected to the common minus of the master chip.
+
+248
+00:22:35,640 --> 00:22:44,420
+Further, you should make sure there's no accidental contact between open metal surfaces and power parts through which the input power and output pass.
+
+249
+00:22:52,520 --> 00:22:55,200
+For this we should also make a dielectric gasket.
+
+250
+00:22:59,060 --> 00:23:03,560
+I made it from molded plastic, this way preventing accidental contact.
+
+251
+00:23:09,980 --> 00:23:11,980
+In this case, it's all located here.
+
+252
+00:23:15,010 --> 00:23:16,630
+On this video we finish.
+
+253
+00:23:17,450 --> 00:23:18,870
+Now we'll move to assembly.
+
+254
+00:23:21,390 --> 00:23:23,010
+All the best everyone.
+
+255
+00:23:23,410 --> 00:23:24,470
+Successful experiments.
+
+256
+00:23:24,990 --> 00:23:32,690
+And the next video on this system will already be about how I tested under load on the output oscillogram about the regulation possibilities.
+

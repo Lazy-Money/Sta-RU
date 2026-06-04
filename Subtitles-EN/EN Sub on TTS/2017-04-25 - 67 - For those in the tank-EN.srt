@@ -1,0 +1,832 @@
+1
+00:00:01,910 --> 00:00:05,610
+Look, hot disputes are flaring up on the channel about this device.
+
+2
+00:00:07,550 --> 00:00:15,250
+There are lots of interesting comments, and plenty of nonsense ones, like, you don't know how to use the device, the measurement is wrong.
+
+3
+00:00:15,950 --> 00:00:18,650
+Or, the probes on your oscilloscope, burned out.
+
+4
+00:00:19,470 --> 00:00:22,130
+By the way, they're 1500 volt probes.
+
+5
+00:00:22,730 --> 00:00:24,630
+These probes have 100x suppression.
+
+6
+00:00:25,730 --> 00:00:27,470
+There's no way they can burn out here.
+
+7
+00:00:28,450 --> 00:00:30,670
+Anyway, let me show you so you can see.
+
+8
+00:00:31,310 --> 00:00:32,010
+I'll show you.
+
+9
+00:00:32,530 --> 00:00:40,050
+Although in that video I showed that when I put the yellow channel on the transistor gate, it clearly shows the oscillogram, meaning it didn't burn out.
+
+10
+00:00:41,190 --> 00:00:43,050
+Ok, enough talking nonsense.
+
+11
+00:00:44,350 --> 00:00:51,290
+A guy writes, Finally convinced that 99.9% of similar videos are purely making money on views.
+
+12
+00:00:52,050 --> 00:00:53,770
+Well, if that's what you think, fine.
+
+13
+00:00:54,950 --> 00:00:56,470
+And here's an interesting comment.
+
+14
+00:00:56,470 --> 00:01:01,470
+Of course the pulse polarity didn't change, you didn't swap the probe.
+
+15
+00:01:03,310 --> 00:01:04,170
+Yeah, no question.
+
+16
+00:01:04,830 --> 00:01:07,790
+I'll swap the probe now, you won't see this pulse at all there.
+
+17
+00:01:08,350 --> 00:01:10,550
+You'll just see the switch working, that's it.
+
+18
+00:01:12,510 --> 00:01:15,330
+The pulse happens for us exclusively at this point.
+
+19
+00:01:16,110 --> 00:01:17,250
+Why do I take it from here?
+
+20
+00:01:18,150 --> 00:01:20,490
+Exclusively here, nowhere else in the schematic.
+
+21
+00:01:21,330 --> 00:01:24,530
+Damn, I'm already tired of repeating that this isn't back EMF.
+
+22
+00:01:24,530 --> 00:01:25,350
+Well ok.
+
+23
+00:01:26,190 --> 00:01:27,570
+What people won't come up with.
+
+24
+00:01:28,170 --> 00:01:29,210
+And boost converter, this one.
+
+25
+00:01:29,610 --> 00:01:30,950
+I'm familiar with its schematic.
+
+26
+00:01:31,550 --> 00:01:32,770
+And flyback, familiar.
+
+27
+00:01:33,430 --> 00:01:34,690
+And I've built such schematics.
+
+28
+00:01:36,050 --> 00:01:37,230
+Everything looks great to me.
+
+29
+00:01:37,770 --> 00:01:40,530
+This pulse, we'll flip it now, and you won't see it there.
+
+30
+00:01:41,010 --> 00:01:42,310
+It's only here at this point.
+
+31
+00:01:43,250 --> 00:01:44,430
+So, measurement 1.
+
+32
+00:01:45,290 --> 00:01:47,250
+Confirming that my probes are still intact.
+
+33
+00:01:48,810 --> 00:01:50,390
+Oscilloscope common, is on minus.
+
+34
+00:01:51,310 --> 00:01:54,350
+Now we'll watch the oscillogram on the transistor gates.
+
+35
+00:01:55,310 --> 00:01:57,210
+That is, after the drivers.
+
+36
+00:01:58,270 --> 00:02:01,290
+Here, two probes, and you can see the picture is identical.
+
+37
+00:02:02,350 --> 00:02:03,270
+There, damn it works.
+
+38
+00:02:04,790 --> 00:02:06,350
+Potential is 15 volts.
+
+39
+00:02:07,410 --> 00:02:08,890
+And here we see power.
+
+40
+00:02:11,070 --> 00:02:14,550
+Exactly 15 volts, drawing 0.15 A.
+
+41
+00:02:16,270 --> 00:02:18,130
+Probes normal, past the check.
+
+42
+00:02:19,130 --> 00:02:25,530
+So, now the probe has moved, also relative to common minus, to the output of one of the bifilers.
+
+43
+00:02:26,390 --> 00:02:30,010
+I do all measurements directly before the diode, not after it.
+
+44
+00:02:30,590 --> 00:02:33,210
+After it is useless, there's DC on the cap.
+
+45
+00:02:33,630 --> 00:02:35,290
+So strictly before the diode.
+
+46
+00:02:37,130 --> 00:02:38,010
+Now applying.
+
+47
+00:02:38,410 --> 00:02:40,590
+Voltage isn't applied to the switches yet.
+
+48
+00:02:40,990 --> 00:02:43,090
+Here's the oscillogram, applying voltage.
+
+49
+00:02:44,830 --> 00:02:47,290
+Remember, we have this kind of oscillogram.
+
+50
+00:02:49,450 --> 00:02:50,410
+Here it is.
+
+51
+00:02:51,490 --> 00:02:52,510
+Remember it well.
+
+52
+00:02:53,630 --> 00:02:55,090
+It's not back emf.
+
+53
+00:02:56,110 --> 00:02:58,310
+Now look, switching common to plus.
+
+54
+00:03:02,570 --> 00:03:03,170
+Switched.
+
+55
+00:03:04,730 --> 00:03:06,670
+The oscillogram is still there.
+
+56
+00:03:08,050 --> 00:03:08,550
+Here it is.
+
+57
+00:03:09,850 --> 00:03:11,310
+Now look, even a joke.
+
+58
+00:03:11,970 --> 00:03:15,490
+Measurements aren't done this way, but watch, I'll disconnect common.
+
+59
+00:03:17,290 --> 00:03:18,630
+Only the probe hangs.
+
+60
+00:03:20,990 --> 00:03:21,530
+Positive.
+
+61
+00:03:22,650 --> 00:03:24,370
+The oscillogram is still there.
+
+62
+00:03:25,110 --> 00:03:28,350
+This current doesn't belong to this system, to the power source.
+
+63
+00:03:30,110 --> 00:03:31,450
+Now switching the probe.
+
+64
+00:03:32,630 --> 00:03:33,630
+Look on the contrary.
+
+65
+00:03:34,670 --> 00:03:37,490
+You won't see this signal there, none of it at that point.
+
+66
+00:03:38,710 --> 00:03:39,190
+Probe flipped.
+
+67
+00:03:39,750 --> 00:03:41,050
+Now it's on minus of power.
+
+68
+00:03:42,830 --> 00:03:44,370
+Common on the same bifiler.
+
+69
+00:03:45,490 --> 00:03:46,250
+Here's the picture.
+
+70
+00:03:47,610 --> 00:03:50,850
+No flipped signal of large amplitude that we saw before.
+
+71
+00:03:51,750 --> 00:03:53,650
+Notice the sweep, volts per cell.
+
+72
+00:03:54,190 --> 00:03:55,430
+Now, 20V per cell.
+
+73
+00:03:56,310 --> 00:03:56,990
+None of that signal.
+
+74
+00:03:58,570 --> 00:04:00,370
+Now switching the probe to plus.
+
+75
+00:04:01,950 --> 00:04:04,870
+I don't see anything in this sense, but let me switch it.
+
+76
+00:04:05,550 --> 00:04:06,450
+Here it is on plus.
+
+77
+00:04:09,670 --> 00:04:10,570
+Here's the work.
+
+78
+00:04:11,330 --> 00:04:12,410
+None of that signal.
+
+79
+00:04:13,970 --> 00:04:15,430
+It's only in one place.
+
+80
+00:04:19,290 --> 00:04:21,610
+Swap places, everything's as it should be.
+
+81
+00:04:25,130 --> 00:04:26,010
+Placed a probe.
+
+82
+00:04:29,620 --> 00:04:30,760
+Didn't even connect it yet.
+
+83
+00:04:31,480 --> 00:04:33,880
+Look, we need to change the volts per cell sweep.
+
+84
+00:04:34,680 --> 00:04:36,300
+Amplitude is very high here.
+
+85
+00:04:40,040 --> 00:04:42,220
+Going to have to change it because we won't see.
+
+86
+00:04:46,510 --> 00:04:47,750
+Here's the oscillogram.
+
+87
+00:04:49,550 --> 00:04:53,050
+No matter what we measure relative to watt, I already showed.
+
+88
+00:04:53,630 --> 00:04:55,090
+Place it relative to plus here.
+
+89
+00:04:56,950 --> 00:04:58,010
+Signal remains.
+
+90
+00:04:58,530 --> 00:05:00,010
+Don't change any settings.
+
+91
+00:05:01,090 --> 00:05:04,430
+And relative to minus, also don't change any settings.
+
+92
+00:05:05,950 --> 00:05:07,030
+Signal remains.
+
+93
+00:05:08,950 --> 00:05:09,970
+Swap this probe around.
+
+94
+00:05:11,310 --> 00:05:16,910
+No point, because we need this effect specifically at this point, where the break happens at the switch.
+
+95
+00:05:17,830 --> 00:05:19,130
+Let's do the next measurement.
+
+96
+00:05:20,130 --> 00:05:23,750
+The yellow channel will hang on one of the bifilers as before.
+
+97
+00:05:24,550 --> 00:05:28,510
+The oscilloscope measurement will be done relative to the minus of the common wire.
+
+98
+00:05:29,710 --> 00:05:31,950
+The blue channel will hang at the input.
+
+99
+00:05:33,430 --> 00:05:34,030
+Plus minus.
+
+100
+00:05:34,790 --> 00:05:37,710
+Look, actually the system input is supplied with DC.
+
+101
+00:05:39,230 --> 00:05:40,910
+Here are the oscillograms.
+
+102
+00:05:41,410 --> 00:05:42,050
+For now, nothing.
+
+103
+00:05:43,230 --> 00:05:44,130
+Zero V supplied.
+
+104
+00:05:44,830 --> 00:05:45,630
+Applying voltage.
+
+105
+00:05:45,990 --> 00:05:46,610
+Now watching.
+
+106
+00:05:52,190 --> 00:05:54,950
+Watch, the potential on the blue channel is rising.
+
+107
+00:05:56,250 --> 00:05:56,670
+DC.
+
+108
+00:05:57,630 --> 00:05:59,170
+Sweep is 10 V per cell.
+
+109
+00:06:01,490 --> 00:06:03,510
+Now it makes a bit more than one cell.
+
+110
+00:06:05,110 --> 00:06:08,090
+And the voltage is exactly 17 V here.
+
+111
+00:06:09,170 --> 00:06:10,070
+Everything matches.
+
+112
+00:06:12,350 --> 00:06:13,170
+Apply higher.
+
+113
+00:06:13,510 --> 00:06:14,430
+This potential grows.
+
+114
+00:06:15,070 --> 00:06:17,050
+And on the yellow channel, we have a sweep.
+
+115
+00:06:17,470 --> 00:06:19,190
+Here it is, 50 V per cell.
+
+116
+00:06:20,570 --> 00:06:24,550
+That is, we see a classical normal measurement relative to the common point.
+
+117
+00:06:26,770 --> 00:06:27,750
+Actually DC.
+
+118
+00:06:28,210 --> 00:06:28,810
+Here it is.
+
+119
+00:06:29,130 --> 00:06:30,030
+Watch the blue channel.
+
+120
+00:06:31,070 --> 00:06:31,530
+DC.
+
+121
+00:06:33,250 --> 00:06:34,350
+One more thing.
+
+122
+00:06:34,790 --> 00:06:36,610
+Maybe DC doesn't go to the lamp.
+
+123
+00:06:37,270 --> 00:06:38,630
+Let's measure on the lamp too.
+
+124
+00:06:39,010 --> 00:06:39,990
+Does DC go there?
+
+125
+00:06:41,150 --> 00:06:42,410
+Here I connected the lamp.
+
+126
+00:06:42,830 --> 00:06:44,790
+In that case we looked at 100 W.
+
+127
+00:06:45,190 --> 00:06:46,950
+Here I found 200 W.
+
+128
+00:06:50,610 --> 00:06:53,910
+Here you see the output and we measure directly.
+
+129
+00:06:54,330 --> 00:06:56,010
+Here the probe is on the lamp.
+
+130
+00:06:57,010 --> 00:06:57,470
+Look.
+
+131
+00:06:57,810 --> 00:06:58,670
+Applying voltage.
+
+132
+00:06:59,050 --> 00:06:59,750
+Lamp lights up.
+
+133
+00:06:59,970 --> 00:07:00,310
+Watch.
+
+134
+00:07:01,430 --> 00:07:02,070
+Apply.
+
+135
+00:07:02,530 --> 00:07:04,270
+You see potential growing on the lamp.
+
+136
+00:07:04,670 --> 00:07:04,970
+DC.
+
+137
+00:07:05,370 --> 00:07:06,150
+No sags.
+
+138
+00:07:06,490 --> 00:07:06,750
+Nothing.
+
+139
+00:07:07,950 --> 00:07:08,590
+Watch.
+
+140
+00:07:08,970 --> 00:07:10,290
+The lamp's running at the output.
+
+141
+00:07:10,650 --> 00:07:11,150
+Hanging there.
+
+142
+00:07:13,750 --> 00:07:15,510
+Measurement done strictly on DC.
+
+143
+00:07:16,310 --> 00:07:20,250
+If that weren't the case, I wouldn't post the measurement and calculate efficiency.
+
+144
+00:07:23,050 --> 00:07:24,010
+It all works.
+
+145
+00:07:25,310 --> 00:07:27,790
+So don't make stuff up, if you don't know how to measure.
+
+146
+00:07:28,210 --> 00:07:30,110
+I like how I measure, measure yourself.
+
+147
+00:07:33,980 --> 00:07:40,340
+And here's a small crash test, so it's clear that your back EMF will never throw enough onto this cap, and that fast.
+
+148
+00:07:40,980 --> 00:07:41,300
+Look.
+
+149
+00:07:41,520 --> 00:07:46,180
+I apply only 20 V at the input, and look how it throws here, 20 V.
+
+150
+00:07:53,940 --> 00:07:56,860
+Back EMF here can never charge a cap that fast.
+
+151
+00:07:59,240 --> 00:08:00,420
+Don't look for it there.
+
+152
+00:08:00,800 --> 00:08:02,380
+Whoever works on it won't get anything.
+
+153
+00:08:03,480 --> 00:08:05,220
+Look how fast the cap charges.
+
+154
+00:08:06,380 --> 00:08:08,900
+And here's a discussion, I like to comment.
+
+155
+00:08:09,640 --> 00:08:10,340
+A guy writes.
+
+156
+00:08:10,820 --> 00:08:15,140
+Well, you can scoop a barrel out with a bucket, and you can also pour it out all at once.
+
+157
+00:08:16,100 --> 00:08:17,240
+And the other replies.
+
+158
+00:08:17,480 --> 00:08:18,960
+The barrel is already full.
+
+159
+00:08:19,520 --> 00:08:20,520
+Absolutely right.
+
+160
+00:08:20,820 --> 00:08:23,760
+The barrel's already full, we need to take the excess.
+
+161
+00:08:25,040 --> 00:08:26,100
+And about the full barrel.
+
+162
+00:08:27,700 --> 00:08:30,420
+The system has to accelerate, don't choke it.
+
+163
+00:08:30,960 --> 00:08:34,220
+Here I showed you how it works directly, 90% efficiency.
+
+164
+00:08:36,340 --> 00:08:40,020
+The barrel is full, and at the right moment we just take the excess.
+
+165
+00:08:40,740 --> 00:08:42,500
+Look, from the same, 20 V.
+
+166
+00:08:46,060 --> 00:08:49,820
+And imagine, now I'll add 44 V here, what'll happen?
+
+167
+00:08:53,300 --> 00:08:58,380
+The system needs about 200 to 300 V at the input, then there's a real festival.
+
+168
+00:08:59,740 --> 00:09:00,300
+Watch.
+
+169
+00:09:14,880 --> 00:09:21,320
+Anyway, those who got it got it, the rest can keep building boosters, flybacks, and other classical schematics.
+
+170
+00:09:23,000 --> 00:09:24,800
+Now one more interesting experiment.
+
+171
+00:09:25,620 --> 00:09:29,320
+Look, I took a neon, now we'll look where this potential is present.
+
+172
+00:09:30,800 --> 00:09:35,320
+I apply 56 V here at the input, and look, will the neon glow?
+
+173
+00:09:37,180 --> 00:09:39,000
+Touch minus, doesn't light.
+
+174
+00:09:39,860 --> 00:09:41,640
+Touch plus, doesn't light.
+
+175
+00:09:43,520 --> 00:09:50,020
+Touch the output, doesn't light, because here's DC, no pulses, already DC on this cap.
+
+176
+00:09:50,620 --> 00:09:52,300
+Now look what happens on the heat sinks.
+
+177
+00:09:52,960 --> 00:10:00,000
+By the way, the transistors are isolated from the heat sinks, but the heat sinks are also part of the suction zone in this effect.
+
+178
+00:10:00,640 --> 00:10:02,740
+Touch, look, the neon glows.
+
+179
+00:10:03,720 --> 00:10:05,920
+And on the bifiler leads, here.
+
+180
+00:10:08,060 --> 00:10:09,760
+It's everywhere on the bifilers.
+
+181
+00:10:10,960 --> 00:10:12,540
+This effect is on each one.
+
+182
+00:10:14,700 --> 00:10:18,020
+This is what BD didn't show, at his place this thing glows.
+
+183
+00:10:20,360 --> 00:10:24,660
+And on the common, where we connect, no glow, it goes to the cap.
+
+184
+00:10:25,680 --> 00:10:28,980
+But if we now disconnect this wire that comes to the cap,
+
+185
+00:10:35,180 --> 00:10:40,400
+turn it off, pull it out, these pulses come after the diodes.
+
+186
+00:10:41,320 --> 00:10:45,100
+Naturally, the cap doesn't smooth it here, so the effect is present.
+
+187
+00:10:46,360 --> 00:10:47,680
+The phenomenon is different.
+
+188
+00:10:48,680 --> 00:10:51,240
+No need to invent back EMF and the rest.
+
+189
+00:10:52,440 --> 00:10:56,560
+Real radio amateurs have already done a lot of experiments and written it off.
+
+190
+00:10:58,680 --> 00:11:00,380
+I talked with them about this.
+
+191
+00:11:01,500 --> 00:11:03,740
+And no one saw your flybacks in this scheme.
+
+192
+00:11:04,420 --> 00:11:05,380
+The effect is different.
+
+193
+00:11:06,700 --> 00:11:10,520
+Moreover, look carefully where you saw back EMF, where it works.
+
+194
+00:11:10,980 --> 00:11:13,380
+Where did you ever see back EMF with such width?
+
+195
+00:11:14,820 --> 00:11:17,280
+It's thin as a needle and decaying after.
+
+196
+00:11:18,900 --> 00:11:20,560
+This isn't back EMF.
+
+197
+00:11:21,740 --> 00:11:23,540
+Run the experiment and try.
+
+198
+00:11:24,180 --> 00:11:28,100
+The schematic is already there for the experiment, everything's available.
+
+199
+00:11:29,400 --> 00:11:30,860
+I don't know what else you need.
+
+200
+00:11:33,000 --> 00:11:38,360
+Show a miracle, but I'm not an idiot to show miracles and then have my brain carted off about it.
+
+201
+00:11:41,840 --> 00:11:45,920
+Anyway, okay, all this is small stuff, what people write here.
+
+202
+00:11:46,900 --> 00:11:49,480
+I read it and am amazed, as they say.
+
+203
+00:11:50,440 --> 00:11:53,220
+Now after this clip, I'll embed an interesting video.
+
+204
+00:11:54,140 --> 00:12:01,540
+You've probably seen it many times, and those who haven't, and even those who watched, I'd recommend re-watching several times.
+
+205
+00:12:02,800 --> 00:12:06,460
+Very interesting material about how this works and what happens.
+
+206
+00:12:07,580 --> 00:12:09,120
+Where the energy actually goes.
+
+207
+00:12:09,860 --> 00:12:15,820
+Where electrons and positrons appear, their interaction, what an electron-positron dipole is.
+
+208
+00:12:17,040 --> 00:12:22,720
+It's time to wake up, time to look facts in the eye, otherwise we'll be a long time getting to success.
+

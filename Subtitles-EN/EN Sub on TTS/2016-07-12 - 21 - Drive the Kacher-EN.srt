@@ -1,0 +1,336 @@
+1
+00:00:05,540 --> 00:00:07,620
+I want to show what I've put together so far.
+
+2
+00:00:08,240 --> 00:00:09,460
+The assembly process.
+
+3
+00:00:10,320 --> 00:00:13,800
+Tesla removable rectifier controlled catchers.
+
+4
+00:00:15,020 --> 00:00:18,980
+So, the whole system came out at 1.35 megahertz.
+
+5
+00:00:19,960 --> 00:00:22,380
+Bottom layer at 1.35 megahertz.
+
+6
+00:00:22,640 --> 00:00:24,880
+Top layer at 1.37 megahertz.
+
+7
+00:00:25,880 --> 00:00:29,480
+The wire here is 1.5 millimeters stranded.
+
+8
+00:00:32,160 --> 00:00:34,960
+It's winding length is 22 centimeters.
+
+9
+00:00:39,420 --> 00:00:41,880
+The antenna ended up at 7 turns.
+
+10
+00:00:44,360 --> 00:00:49,900
+This is the Tesla, but it came out big because I used 0.75 millimeters wire.
+
+11
+00:00:53,480 --> 00:00:55,600
+Winding length 22 centimeters.
+
+12
+00:00:57,600 --> 00:01:01,020
+You can wind it shorter, then you can put in a bigger capacitor.
+
+13
+00:01:01,960 --> 00:01:03,040
+There'll be more benefit.
+
+14
+00:01:03,620 --> 00:01:05,160
+I think I'll most likely unwind it.
+
+15
+00:01:06,860 --> 00:01:07,980
+Let's turn the system on.
+
+16
+00:01:15,540 --> 00:01:17,680
+It starts up at 6 to 7 volts.
+
+17
+00:01:18,480 --> 00:01:21,640
+When it gets to a kilovolt, it already starts limiting itself.
+
+18
+00:01:23,260 --> 00:01:25,480
+The oscilloscope is sitting next to it.
+
+19
+00:01:26,740 --> 00:01:30,140
+And you can see when the Tesla starts limiting the pulse bursts.
+
+20
+00:01:30,760 --> 00:01:33,160
+Since it holds 1 kilowatt, it can do more.
+
+21
+00:01:33,720 --> 00:01:36,860
+It easily handles up to 1.5 kilowatts.
+
+22
+00:01:37,180 --> 00:01:41,000
+I didn't risk all this because diodes kept blowing on me endlessly.
+
+23
+00:01:44,390 --> 00:01:46,510
+I solved the stabilization problem.
+
+24
+00:01:47,590 --> 00:01:50,530
+You can see how the little LED blinks when it stabilizes.
+
+25
+00:01:54,180 --> 00:01:55,860
+Let's take a closer look at it.
+
+26
+00:01:57,560 --> 00:02:01,240
+We feed in 20 volts, 23, 30 volts.
+
+27
+00:02:02,380 --> 00:02:04,220
+Here a kilovolt stays put strictly.
+
+28
+00:02:08,590 --> 00:02:10,710
+Let's take a closer look at this whole setup.
+
+29
+00:02:18,220 --> 00:02:22,900
+Here's the rectifier bridge, made of CRE silicon carbide diodes.
+
+30
+00:02:27,950 --> 00:02:32,590
+EPCO's capacitors, 1 kilovolt, 250 volts, 2 of them.
+
+31
+00:02:32,950 --> 00:02:34,530
+That's 2 microfarads total.
+
+32
+00:02:35,810 --> 00:02:37,070
+And here we have the catcher.
+
+33
+00:02:38,670 --> 00:02:39,750
+Controlled catcher.
+
+34
+00:02:40,650 --> 00:02:42,270
+It absolutely had to be controlled.
+
+35
+00:02:43,130 --> 00:02:44,850
+For stabilization, we have a TL.
+
+36
+00:02:45,770 --> 00:02:48,110
+There's a TL-431 sitting here.
+
+37
+00:02:51,860 --> 00:02:57,200
+This resistor is for this TL, since we need a kilovolt from here, along this yellow wire.
+
+38
+00:02:58,340 --> 00:02:59,640
+A kilovolt comes through.
+
+39
+00:02:59,940 --> 00:03:02,320
+It's divided, divided across these two resistors.
+
+40
+00:03:04,320 --> 00:03:06,460
+There's also a 10k omega in there.
+
+41
+00:03:06,720 --> 00:03:08,260
+This is 22k omega.
+
+42
+00:03:09,920 --> 00:03:13,220
+We set the kilovolt at the output, but you can do more.
+
+43
+00:03:13,560 --> 00:03:14,360
+You can swing higher.
+
+44
+00:03:15,500 --> 00:03:19,320
+Here we have a 12-volt regulator, a 5-volt regulator.
+
+45
+00:03:20,340 --> 00:03:22,580
+All of this is needed for the control controller.
+
+46
+00:03:23,540 --> 00:03:25,960
+We have a KT-973 here.
+
+47
+00:03:28,620 --> 00:03:30,060
+I always had a problem.
+
+48
+00:03:30,540 --> 00:03:35,460
+Usually people put a zener on the base, and they sometimes blow, sometimes pop, get hot.
+
+49
+00:03:35,960 --> 00:03:38,540
+But I solved the problem, so nothing heats up.
+
+50
+00:03:40,260 --> 00:03:42,220
+Here are three shocky diodes.
+
+51
+00:03:42,500 --> 00:03:43,100
+They're necessary.
+
+52
+00:03:44,600 --> 00:03:48,600
+KT, well, not KT, K2837.
+
+53
+00:03:49,600 --> 00:03:53,320
+Good transistor, I used to put them in TPO, I still have some left.
+
+54
+00:03:54,080 --> 00:03:56,980
+I tried it up to 5 megahertz, they handle it easily.
+
+55
+00:04:02,560 --> 00:04:04,440
+Something's not visible, a well.
+
+56
+00:04:07,540 --> 00:04:09,240
+Ok, here's the Tesla coil.
+
+57
+00:04:13,840 --> 00:04:16,420
+I'll still be unwinding it a bit, not much.
+
+58
+00:04:16,420 --> 00:04:20,780
+I had to wind it back to reduce its inductance.
+
+59
+00:04:21,880 --> 00:04:24,380
+I wanted to use 0.6 millimeters wire.
+
+60
+00:04:25,340 --> 00:04:26,920
+Next we have the removable coil.
+
+61
+00:04:28,760 --> 00:04:32,660
+The removable coil winds in here, the bottom end goes in.
+
+62
+00:04:34,880 --> 00:04:38,220
+It goes, goes, goes, goes, goes, goes, goes.
+
+63
+00:04:39,220 --> 00:04:40,520
+Two classic layers.
+
+64
+00:04:41,320 --> 00:04:44,400
+We get to the middle of this layer and start winding backwards.
+
+65
+00:04:46,040 --> 00:04:52,980
+Wind to the end, come back, step back, wind to the end over here, and this end through the hole back out from there.
+
+66
+00:04:54,020 --> 00:04:56,260
+There they are, two wires, there they are.
+
+67
+00:04:57,620 --> 00:05:00,560
+These go to the rectifier basically, into the capacitor.
+
+68
+00:05:02,840 --> 00:05:04,260
+Well, something like this.
+
+69
+00:05:07,150 --> 00:05:08,950
+The next stage for us is switching.
+
+70
+00:05:10,690 --> 00:05:12,150
+I had switching like this.
+
+71
+00:05:15,150 --> 00:05:16,730
+A little board came together.
+
+72
+00:05:23,420 --> 00:05:24,300
+Well, focus.
+
+73
+00:05:26,400 --> 00:05:27,340
+Won't it focus?
+
+74
+00:05:29,080 --> 00:05:31,740
+Well, basically, there'll be a new board, better.
+
+75
+00:05:33,020 --> 00:05:36,780
+This one worked too, with this one it worked, but the switching will be new.
+
+76
+00:05:38,020 --> 00:05:43,140
+Yesterday I sat with Oleg, with Slava, basically, we thought about how to do it better.
+
+77
+00:05:44,500 --> 00:05:47,240
+But I think within a day or two we'll build the new board.
+
+78
+00:05:47,240 --> 00:05:48,080
+We'll build a new switching system.
+
+79
+00:05:49,040 --> 00:05:54,040
+The switching is needed so it's not 300 to 400 watts, but at least 800 watts.
+
+80
+00:05:55,220 --> 00:05:57,440
+Well, maybe it'll come out 700, I don't know.
+
+81
+00:05:58,660 --> 00:05:59,140
+And self-running.
+
+82
+00:06:00,820 --> 00:06:04,500
+But it's the simplest system there is for now, at the current moment.
+
+83
+00:06:05,340 --> 00:06:08,220
+There are other systems, but right now we're working on this one.
+
+84
+00:06:09,880 --> 00:06:10,960
+Well, that's about it.
+

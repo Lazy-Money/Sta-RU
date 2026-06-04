@@ -1,0 +1,660 @@
+1
+00:00:01,140 --> 00:00:01,860
+Hi everyone.
+
+2
+00:00:02,620 --> 00:00:05,980
+I equipped this lazy converter build with voltage feedback.
+
+3
+00:00:07,400 --> 00:00:11,200
+Now it stably holds 238V at the output.
+
+4
+00:00:12,580 --> 00:00:15,120
+The feedback is also done quite simply.
+
+5
+00:00:15,920 --> 00:00:16,840
+Two additional chips.
+
+6
+00:00:18,200 --> 00:00:24,780
+One of them is a PC817 opticoupler, the other a TL431 adjustable shunt regulator.
+
+7
+00:00:26,040 --> 00:00:28,300
+For resistors, one capacitor.
+
+8
+00:00:29,180 --> 00:00:30,260
+That's the whole feedback.
+
+9
+00:00:31,080 --> 00:00:37,500
+So this converter now lets you supply not only 12V at the input, but also up to 20V inclusive.
+
+10
+00:00:38,620 --> 00:00:40,620
+In any voltage range of that order.
+
+11
+00:00:42,620 --> 00:00:44,820
+And the output voltage is stabilized.
+
+12
+00:00:46,560 --> 00:00:49,700
+Now we'll test it and look at the feedback circuit in more detail.
+
+13
+00:00:52,100 --> 00:00:54,820
+Now we'll test the voltage feedback trip point.
+
+14
+00:00:55,880 --> 00:00:58,400
+A multimeter is connected to the output.
+
+15
+00:00:58,740 --> 00:00:59,960
+The lamp isn't connected.
+
+16
+00:01:01,740 --> 00:01:03,080
+Applying 12V power.
+
+17
+00:01:04,940 --> 00:01:06,880
+You can hear the converter trip point.
+
+18
+00:01:07,320 --> 00:01:08,120
+It starts to buzz.
+
+19
+00:01:10,940 --> 00:01:12,020
+That's the sound.
+
+20
+00:01:14,580 --> 00:01:15,180
+237V.
+
+21
+00:01:17,700 --> 00:01:18,800
+Connect the lamp.
+
+22
+00:01:19,940 --> 00:01:22,120
+You see there's a slight drop on the lamp.
+
+23
+00:01:23,060 --> 00:01:23,700
+218V.
+
+24
+00:01:24,220 --> 00:01:29,620
+The output voltage went away from the feedback trip point, and the converter runs in normal mode.
+
+25
+00:01:30,700 --> 00:01:31,720
+No sound at all.
+
+26
+00:01:34,220 --> 00:01:38,640
+With voltage feedback present, we can supply a higher voltage at the input.
+
+27
+00:01:40,080 --> 00:01:42,580
+Up to 20V, not worth going higher.
+
+28
+00:01:43,680 --> 00:01:45,460
+Now applying 14V.
+
+29
+00:01:47,120 --> 00:01:51,180
+You see the voltage is within norm and the feedback trip sound appeared.
+
+30
+00:01:53,940 --> 00:02:00,320
+The sound comes from the step-up transformer, since the chip now drives the switches in pulse bursts mode.
+
+31
+00:02:04,110 --> 00:02:06,710
+If we reduce, the sound disappears.
+
+32
+00:02:07,610 --> 00:02:08,690
+Feedback fully works.
+
+33
+00:02:09,530 --> 00:02:11,470
+About what you can connect to this converter.
+
+34
+00:02:13,110 --> 00:02:18,070
+You can connect all modern devices that have a transformer-less inverter at the input.
+
+35
+00:02:21,760 --> 00:02:26,520
+That is, mobile phone chargers, laptop chargers, and similar devices.
+
+36
+00:02:28,420 --> 00:02:32,400
+You can't connect devices that have a step-down transformer at the input.
+
+37
+00:02:34,160 --> 00:02:38,760
+Such power supplies, their weight is significantly higher than an inverter-type supply.
+
+38
+00:02:41,120 --> 00:02:44,080
+You also can't connect asynchronous motors here.
+
+39
+00:02:45,140 --> 00:02:49,060
+Most often we encounter them in everyday life and fans, for example.
+
+40
+00:02:50,780 --> 00:02:53,220
+And brush motors that are here will work freely.
+
+41
+00:02:54,600 --> 00:03:00,680
+That is, various kinds of small drills at 220V with power up to 200W.
+
+42
+00:03:01,140 --> 00:03:02,980
+This system will freely power them.
+
+43
+00:03:04,180 --> 00:03:10,460
+To add voltage feedback to our circuit, we use a property of the IR2153 chip.
+
+44
+00:03:11,800 --> 00:03:17,580
+If you apply logical zero to pin 3 of this chip, the chip stops generating on both channels.
+
+45
+00:03:19,100 --> 00:03:25,130
+For this, I went with a variant using a galvanically isolated optocoupler, the widespread PC817.
+
+46
+00:03:28,640 --> 00:03:31,420
+I soldered it into the circuit per its pinout.
+
+47
+00:03:34,400 --> 00:03:38,460
+Pins 1 and 2 are the infrared LED built into the optocoupler.
+
+48
+00:03:39,880 --> 00:03:42,760
+Pins 3 and 4 are the phototransistor.
+
+49
+00:03:43,980 --> 00:03:46,420
+The optocoupler is this small part.
+
+50
+00:03:46,420 --> 00:03:48,360
+Here it is with four pins.
+
+51
+00:03:52,340 --> 00:03:55,900
+On the top of the case, there's a dot, which marks pin numbering.
+
+52
+00:04:00,060 --> 00:04:01,160
+This is pin 1.
+
+53
+00:04:02,120 --> 00:04:08,640
+The pins, if you look starting from the dot, in this case it's now at the upper left corner, are counted counterclockwise.
+
+54
+00:04:09,420 --> 00:04:12,120
+First, second, third, and fourth.
+
+55
+00:04:13,300 --> 00:04:16,660
+On the schematic, the optocoupler is shown lying with legs up.
+
+56
+00:04:18,760 --> 00:04:20,940
+That orientation matches its pinout.
+
+57
+00:04:22,180 --> 00:04:24,840
+So, solder the optocoupler into the circuit.
+
+58
+00:04:26,360 --> 00:04:28,500
+Here you can see I installed it on the board.
+
+59
+00:04:29,620 --> 00:04:31,320
+And check whether the optocoupler works.
+
+60
+00:04:32,860 --> 00:04:37,280
+For this we apply power to the converter, first soldering a small load to it.
+
+61
+00:04:40,460 --> 00:04:42,820
+In this case, a 15W lamp.
+
+62
+00:04:44,720 --> 00:04:45,640
+Apply power.
+
+63
+00:04:48,910 --> 00:04:50,530
+You see, the lamp lit.
+
+64
+00:04:50,530 --> 00:04:55,270
+Now we need to solder a wire to pin 2 of the optocoupler.
+
+65
+00:04:57,630 --> 00:04:58,410
+There it is.
+
+66
+00:04:59,490 --> 00:05:03,490
+And to pin 1 of the optocoupler, a 91 ohms current limiting resistor.
+
+67
+00:05:04,610 --> 00:05:06,430
+And a 1.5V battery.
+
+68
+00:05:07,670 --> 00:05:10,010
+Minus from the battery goes to pin 2.
+
+69
+00:05:10,870 --> 00:05:12,110
+Plus to the resistor.
+
+70
+00:05:13,270 --> 00:05:15,510
+And watch, I connect the battery.
+
+71
+00:05:15,510 --> 00:05:24,880
+And when the battery plus is connected to the resistor, the chip stops generation, the load goes out.
+
+72
+00:05:27,900 --> 00:05:31,420
+This experiment shows the optocoupler is in working order.
+
+73
+00:05:33,020 --> 00:05:42,700
+If you have a lab signal generator on hand, you can watch how the converter triggers under optocoupler control with a square signal applied to the input, the generator common.
+
+74
+00:05:45,380 --> 00:05:48,600
+Connects to pin 2, the signal 1 to pin 1.
+
+75
+00:05:48,600 --> 00:05:50,800
+Also through a current limiting resistor.
+
+76
+00:05:52,860 --> 00:05:56,160
+The input potential should be no more than 5V.
+
+77
+00:05:56,900 --> 00:06:00,780
+1.5 to 2V is enough to trigger the optocoupler easily.
+
+78
+00:06:01,620 --> 00:06:03,400
+Equivalent to what we did with the battery.
+
+79
+00:06:04,300 --> 00:06:06,520
+I'm applying a square signal at 10 hertz.
+
+80
+00:06:08,900 --> 00:06:10,880
+You see the circuit responds great.
+
+81
+00:06:13,740 --> 00:06:14,900
+Reducing frequency.
+
+82
+00:06:16,380 --> 00:06:17,280
+5 hertz.
+
+83
+00:06:18,820 --> 00:06:25,380
+Understand, those who work with electronics, on this principle you can already form chip operation in burst mode.
+
+84
+00:06:30,220 --> 00:06:31,560
+1 hertz frequency.
+
+85
+00:06:34,340 --> 00:06:40,500
+If you apply, say, mains frequency, here I smoothly raise it, now 25 hertz.
+
+86
+00:06:45,620 --> 00:06:46,240
+50.
+
+87
+00:06:46,800 --> 00:06:53,420
+You can hear, when there will be a way to supply this, that this step-up transformer hums at 50 hertz mains frequency.
+
+88
+00:06:55,080 --> 00:06:58,600
+Next, we need to introduce another element into the circuit.
+
+89
+00:06:59,320 --> 00:07:01,140
+The TL431 chip.
+
+90
+00:07:02,980 --> 00:07:04,520
+Graphically it's shown as a zener.
+
+91
+00:07:05,340 --> 00:07:08,160
+With a branch you get an adjustable shunt regulator system.
+
+92
+00:07:09,640 --> 00:07:11,520
+The pinout is shown under the graphic.
+
+93
+00:07:13,240 --> 00:07:15,500
+The part itself is also very small.
+
+94
+00:07:16,980 --> 00:07:17,600
+Here it is.
+
+95
+00:07:19,380 --> 00:07:20,800
+Three pins on the part.
+
+96
+00:07:21,820 --> 00:07:25,460
+Pins are counted left to right if you read the chip name straight on.
+
+97
+00:07:30,140 --> 00:07:31,080
+What's this for?
+
+98
+00:07:32,600 --> 00:07:43,000
+Earlier I shared a schematic of another converter, and you can see that here, by feedback, the master chip is controlled directly through the PC817 opticoupler by dividing.
+
+99
+00:07:45,780 --> 00:07:47,880
+Voltage on a series resistor stack.
+
+100
+00:07:51,090 --> 00:08:01,790
+You can't control it that way in this circuit, because if the LED's glow has different intensity, the phototransistor, since it's bipolar, will open with different conductivity levels.
+
+101
+00:08:04,920 --> 00:08:07,340
+Open with various degrees of conductivity.
+
+102
+00:08:27,530 --> 00:08:32,810
+And if you measure it, play with the opticoupler, you'll see the transistor's resistance changes.
+
+103
+00:08:33,910 --> 00:08:40,130
+And for this chip you need at least 200 ohms of resistance to reliably short pin three to the common wire.
+
+104
+00:08:43,100 --> 00:08:50,800
+That's exactly why an additional sensitive element, the TL431, was added, which controls this opticoupler.
+
+105
+00:08:52,280 --> 00:08:55,640
+The TL431 is a pretty elderly chip for us.
+
+106
+00:08:57,180 --> 00:09:01,480
+Made in the late 1970s, but still widely used to this day.
+
+107
+00:09:03,920 --> 00:09:10,960
+Its advantages are operating voltage up to 36V and the main one, being able to set the chip's trip points.
+
+108
+00:09:13,890 --> 00:09:18,210
+Inside there's a reference power source of about 2.5V and a comparator.
+
+109
+00:09:20,890 --> 00:09:28,650
+The comparator has stabilized 2.5V at one input, and the input from the external part, pin one, at the other.
+
+110
+00:09:30,070 --> 00:09:33,750
+The comparator compares the reference and the input voltage.
+
+111
+00:09:34,450 --> 00:09:41,450
+If the input exceeds the reference, the chip triggers, and, graphically speaking, the zener breaks down, i.e.
+
+112
+00:09:41,490 --> 00:09:42,990
+the chip starts to conduct.
+
+113
+00:09:44,050 --> 00:09:46,250
+I picked the divider on the resistors.
+
+114
+00:09:46,970 --> 00:09:51,230
+One what resistors of 4.6kΩ and 390kΩ.
+
+115
+00:09:52,270 --> 00:09:59,950
+With these resistor values, if you take its leads already from the converter output, the voltage protection trips at 238V.
+
+116
+00:10:05,570 --> 00:10:11,930
+That is, by changing the values of the 4.6kΩ resistor, you can set the converter's trip point.
+
+117
+00:10:13,910 --> 00:10:20,590
+You mustn't forget to put this capacitor of at least 10nF, ceramic, between pins 3 and 1.
+
+118
+00:10:21,710 --> 00:10:26,870
+Otherwise, false feedback triggers are possible from some transient processes in the transformer.
+
+119
+00:10:27,670 --> 00:10:32,510
+For example, if there are needle-like voltage spikes, the chip will trigger earlier than needed.
+
+120
+00:10:34,030 --> 00:10:35,510
+Capacitor is mandatory.
+
+121
+00:10:35,890 --> 00:10:41,630
+And this 1kΩ resistor placed in parallel with the optocoupler's LED.
+
+122
+00:10:43,570 --> 00:10:50,270
+This resistor also keeps the LED from glowing when the TL431 chip is approaching its trip point.
+
+123
+00:10:55,050 --> 00:10:56,730
+Limiting resistor 150Ω.
+
+124
+00:10:58,870 --> 00:11:04,230
+I searched for feedbacks of this kind online at first, but interestingly, found nothing.
+
+125
+00:11:04,930 --> 00:11:09,210
+Lots of such solutions for low voltage, but with high voltage, I had to fiddle.
+
+126
+00:11:13,320 --> 00:11:19,400
+I picked the divider through long practice, and changed various circuit variants until it started working stably.
+
+127
+00:11:21,740 --> 00:11:28,220
+Many parts for this converter can be borrowed from broken power supplies, for example, from computer power supplies.
+
+128
+00:11:33,000 --> 00:11:36,700
+You can buy them cheap, or you may be given them for free at service centers.
+
+129
+00:11:39,550 --> 00:11:45,150
+In particular, you can see on the board there's a PC817 optocoupler and this chip.
+
+130
+00:11:49,020 --> 00:11:49,760
+A small TL431.
+
+131
+00:11:53,520 --> 00:11:56,160
+Also heat sinks you can mount transistors on.
+
+132
+00:11:59,110 --> 00:12:03,490
+Thermal insulating gaskets under these transistors, you can find them all here.
+
+133
+00:12:05,610 --> 00:12:07,370
+And this is also quite suitable.
+
+134
+00:12:08,810 --> 00:12:10,810
+You can disassemble this transformer.
+
+135
+00:12:12,490 --> 00:12:21,650
+I unsoldered it from the board, but usually either heat it with a heat gun until the glue melts and the halves separate, or boil it in water until it falls apart.
+
+136
+00:12:25,960 --> 00:12:31,060
+After this it's all unwound, and you win your own winding to the voltages you want.
+
+137
+00:12:32,660 --> 00:12:36,180
+So this converter can be very cheap if you make it from salvage.
+
+138
+00:12:40,370 --> 00:12:49,750
+If this converter will be used, for example, for lighting when power is out, then I'd suggest in this case putting some 20A diode at the input, any brand.
+
+139
+00:12:53,900 --> 00:12:55,000
+Whatever you find.
+
+140
+00:12:57,080 --> 00:12:59,460
+Voltage rating not less than 100V.
+
+141
+00:13:02,120 --> 00:13:05,400
+So in poor lighting conditions you don't mix up the power inputs.
+
+142
+00:13:07,980 --> 00:13:15,600
+Otherwise, if you mix them up, the circuit will of course go bad immediately, the chip will fail, and possibly one of the switches will blow.
+
+143
+00:13:17,420 --> 00:13:21,120
+If it's stationary and constantly connected, you can skip the diode.
+
+144
+00:13:22,500 --> 00:13:25,520
+But anyone who wants can also equip the input with a fuse.
+
+145
+00:13:29,460 --> 00:13:32,180
+That is, at your discretion you can upgrade this circuit.
+
+146
+00:13:32,840 --> 00:13:35,980
+Also on this principle, I applied this feedback by voltage.
+
+147
+00:13:37,320 --> 00:13:46,900
+I need an operating voltage point such that, if voltage feedback is built, you can supply not just 12V but up to 20V inclusive at the input, and with that it'll.
+
+148
+00:13:47,540 --> 00:13:49,100
+Stably hold output voltage.
+
+149
+00:13:49,660 --> 00:13:57,280
+You can even pocket 2 9V, chronotype, batteries, connect them in series, and supply 18V at the input.
+
+150
+00:13:58,200 --> 00:14:00,760
+And you'll have 220V at the output.
+
+151
+00:14:01,940 --> 00:14:03,440
+Always able to charge your phone.
+
+152
+00:14:07,560 --> 00:14:09,240
+The whole circuit is that flexible.
+
+153
+00:14:11,800 --> 00:14:14,920
+Anyone interested can also assemble current feedback.
+
+154
+00:14:15,880 --> 00:14:20,040
+That is, if you want the chip to go into protection on output shorting.
+
+155
+00:14:20,680 --> 00:14:27,820
+For this you'll need to change the divider resistor, wind a small toroidal transformer, the so-called current transformer.
+
+156
+00:14:31,280 --> 00:14:35,900
+You can hang it at this common point with the power plus to the center of the primary winding.
+
+157
+00:14:39,830 --> 00:14:45,530
+And by playing with its turn count, bring the operating voltage point to somewhere above 2.6V.
+
+158
+00:14:48,880 --> 00:14:51,600
+Say if this converter works on a 200V load.
+
+159
+00:14:51,600 --> 00:14:58,730
+And feed this output from the current sensor to a small diode bridge.
+
+160
+00:15:01,680 --> 00:15:02,920
+After this put a cap.
+
+161
+00:15:04,800 --> 00:15:07,760
+Approximately, you'll have a circuit analogous to this one shown.
+
+162
+00:15:08,700 --> 00:15:15,140
+A diode bridge, a cap, and you can end up with a quite working system that protects the converter from short voltage.
+
+163
+00:15:15,560 --> 00:15:17,780
+That is, from a short circuit at its output.
+
+164
+00:15:22,580 --> 00:15:24,760
+Good luck to everyone with your experiments.
+
+165
+00:15:25,160 --> 00:15:25,840
+All the best!
+

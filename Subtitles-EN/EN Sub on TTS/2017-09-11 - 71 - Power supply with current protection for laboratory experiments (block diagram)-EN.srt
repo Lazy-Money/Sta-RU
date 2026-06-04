@@ -1,0 +1,388 @@
+1
+00:00:01,280 --> 00:00:01,880
+Hi everyone.
+
+2
+00:00:02,860 --> 00:00:07,840
+I'm starting another project meant to make life easier for experimenters in a free energy field.
+
+3
+00:00:10,740 --> 00:00:16,240
+The block schematic shown in this picture is a power supply, universal for our experiments.
+
+4
+00:00:17,560 --> 00:00:20,280
+Planned output voltage up to 1000 V.
+
+5
+00:00:20,760 --> 00:00:24,860
+We'll also try out something new for me in this circuit, working with OptoDrivers.
+
+6
+00:00:28,740 --> 00:00:30,640
+So why do we need a circuit like this?
+
+7
+00:00:31,300 --> 00:00:35,000
+The thing is, you can of course get by with store-bought power supplies.
+
+8
+00:00:36,480 --> 00:00:38,500
+I have two of them, in particular.
+
+9
+00:00:40,100 --> 00:00:45,380
+One of them is low voltage, up to 30 V, the other high voltage up to 300 V.
+
+10
+00:00:46,240 --> 00:00:50,520
+At first glance the voltage range is fine and suitable, but there are some problems.
+
+11
+00:00:51,960 --> 00:00:54,520
+First, these supplies plug into the mains.
+
+12
+00:00:55,400 --> 00:00:58,660
+And connecting to the mains guarantees us a connection with neutral.
+
+13
+00:00:59,920 --> 00:01:04,080
+That is, the neutral wire in the mains is inevitably tied to ground.
+
+14
+00:01:04,840 --> 00:01:16,860
+If we're building devices designed to extract energy relative to earth, then with these power supplies we won't get anything, since we're automatically tied to... ground through neutral.
+
+15
+00:01:17,960 --> 00:01:24,940
+You'd think we could exclude the ground connection, for example by powering these supplies through two transformers for isolation.
+
+16
+00:01:27,160 --> 00:01:29,720
+But even in this case we still have a connection.
+
+17
+00:01:30,560 --> 00:01:34,020
+It still slips through somehow and interferes with the work.
+
+18
+00:01:35,340 --> 00:01:38,160
+Another option is to run the supplies through an inverter.
+
+19
+00:01:39,060 --> 00:01:42,860
+Yes, this solution is good and solves the main earth connection problem.
+
+20
+00:01:43,840 --> 00:01:45,120
+But there's a catch.
+
+21
+00:01:46,280 --> 00:01:50,940
+All our experiments in most cases involve pulse consumption from these power sources.
+
+22
+00:01:53,360 --> 00:02:00,880
+And the effects accompanying these experiments are often so unpredictable that these power supplies behave totally inadequately.
+
+23
+00:02:01,900 --> 00:02:04,300
+The controllers start behaving chaotically.
+
+24
+00:02:04,720 --> 00:02:11,380
+Output voltage jumps, output current jumps, and besides, the power supply starts operating in burst mode.
+
+25
+00:02:16,370 --> 00:02:20,290
+That is, the influence on it from the output wires is that strong.
+
+26
+00:02:20,830 --> 00:02:22,210
+Try putting filters here.
+
+27
+00:02:22,430 --> 00:02:24,530
+That also doesn't save us from this problem.
+
+28
+00:02:27,290 --> 00:02:28,690
+Constantly wrong readings.
+
+29
+00:02:29,650 --> 00:02:38,370
+And plus, when these blocks start operating in pulsed power supply mode, a burst form signal appears at the output after the switch on the control device.
+
+30
+00:02:40,710 --> 00:02:46,230
+That's additional frequency modulation, which obviously doesn't let us tune the system adequately.
+
+31
+00:02:46,870 --> 00:02:50,530
+So I had to give up on these power supplies due to their unsuitability.
+
+32
+00:02:52,670 --> 00:02:55,390
+Solutions like these are great for tuning electronics.
+
+33
+00:02:55,810 --> 00:02:56,590
+They help me a lot.
+
+34
+00:02:58,530 --> 00:03:03,510
+But unfortunately, for powering devices and for these experiments, they aren't suitable.
+
+35
+00:03:05,570 --> 00:03:09,450
+So I decided to develop this power supply that'll meet the task set.
+
+36
+00:03:14,290 --> 00:03:18,530
+On the same topic, I can give the same advice about using an oscilloscope.
+
+37
+00:03:20,370 --> 00:03:25,590
+Watching people's experiments, they connect the oscilloscope to the device and try to tune something.
+
+38
+00:03:27,030 --> 00:03:33,090
+Forgetting that the scope is plugged into the mains and the scope's common wire is inevitably tied to neutral.
+
+39
+00:03:34,170 --> 00:03:39,430
+And it turns out that even with the power supply we connect to the device and introduce the same problem.
+
+40
+00:03:44,200 --> 00:03:48,740
+In Nikola Tesla's day, there was a DC mains and no connection to neutral.
+
+41
+00:03:50,420 --> 00:03:53,880
+Moreover, Tesla himself built devices that would let him work.
+
+42
+00:03:57,060 --> 00:03:59,200
+Like DC dynamo machines.
+
+43
+00:04:02,200 --> 00:04:08,280
+Such a dynamo machine gave an autonomous power source and could be brought to rotation with an external motor.
+
+44
+00:04:11,730 --> 00:04:15,630
+The thing is, all dynamo machines are essentially AC machines.
+
+45
+00:04:16,710 --> 00:04:24,290
+But if you make a dynamo machine with many contacts and do a collector takeoff, you can take potential from it at the peak of the AC wave.
+
+46
+00:04:28,340 --> 00:04:31,100
+And so get DC at the output, which is what he did.
+
+47
+00:04:33,360 --> 00:04:34,640
+But back to our schematic.
+
+48
+00:04:37,240 --> 00:04:38,760
+Let's look at it in more detail.
+
+49
+00:04:39,960 --> 00:04:44,240
+First, power will come from a battery, which solves our ground connection problem.
+
+50
+00:04:46,080 --> 00:04:55,660
+Next, I added a relay element and a diode so that during our experiments with energetic effect couplings on the cheerful coil, we don't accidentally swap the power wires.
+
+51
+00:05:00,370 --> 00:05:07,730
+Such a polarity reversal would inevitably lead to switch failure into the DC-DC converter that provides independent power.
+
+52
+00:05:09,910 --> 00:05:11,510
+The solution is simple.
+
+53
+00:05:12,430 --> 00:05:19,790
+We have a relay with normally open contacts and a coil that creates the magnetic field, which attracts the contact and closes them.
+
+54
+00:05:21,110 --> 00:05:26,070
+If you install the diode in the correct direction, you can exclude wrong scheme connections.
+
+55
+00:05:28,510 --> 00:05:37,430
+That is, when plus power is applied to the diode anode, current passes through it, the magnetic field forms naturally, and the contacts attract.
+
+56
+00:05:38,510 --> 00:05:41,930
+With reverse battery polarity, the contacts won't close.
+
+57
+00:05:43,850 --> 00:05:49,830
+Next, I introduced a filter system, capacitors, choke, and then power goes to the power switches.
+
+58
+00:05:51,530 --> 00:05:53,990
+I decided to go with a full bridge schematic.
+
+59
+00:05:56,970 --> 00:06:06,690
+Such a schematic will let us cleanly switch the primary winding and additionally use opto-isolation for opto-drivers controlling the switches.
+
+60
+00:06:08,030 --> 00:06:11,250
+Also, a galvanically isolated DC-DC converter.
+
+61
+00:06:11,870 --> 00:06:21,270
+All this is done so that during our experiments, there's no influence on the PWM controller or the drivers controlling the switches, which could lead to incorrect operation.
+
+62
+00:06:24,240 --> 00:06:30,020
+The whole circuit is fairly simple, but there'll be nuances in its build that I'll demonstrate along the way.
+
+63
+00:06:34,800 --> 00:06:38,000
+We'll have current feedback so we can regulate current protection.
+
+64
+00:06:41,300 --> 00:06:46,900
+A very important parameter so that if a short happens at the output, the system doesn't fail.
+
+65
+00:06:49,000 --> 00:06:52,520
+And this point can be regulated, setting the trip threshold.
+
+66
+00:06:54,460 --> 00:06:59,700
+Pulse duration regulation will also be added, which ultimately controls the output voltage.
+
+67
+00:07:00,640 --> 00:07:07,060
+That is, on each transformer tap, we'll have voltage regulation from zero to the maximum that the turn count allows.
+
+68
+00:07:10,370 --> 00:07:15,530
+The transformer will be made on a ferrite ring, and the secondary winding will have taps.
+
+69
+00:07:19,270 --> 00:07:22,250
+Here I schematically mark the taps that go to a switch.
+
+70
+00:07:22,630 --> 00:07:26,890
+Between taps you can switch, thereby regulating the maximum output voltage.
+
+71
+00:07:29,450 --> 00:07:33,470
+Voltage feedback can't be added here due to the scheme being too bulky.
+
+72
+00:07:35,870 --> 00:07:40,910
+We'll have to use the same switch to change the resistor circuits that set the feedback trip point.
+
+73
+00:07:43,230 --> 00:07:46,050
+But I'll add this system to the PWM controller.
+
+74
+00:07:47,710 --> 00:07:55,470
+Say if we need to hold a constant voltage on some tap, we just take the potential from there, create a resistor divider, and feed it back.
+
+75
+00:07:58,040 --> 00:08:02,640
+Say we have a tested circuit for some transistor and know its parameters precisely.
+
+76
+00:08:03,180 --> 00:08:03,940
+This can be done.
+
+77
+00:08:05,000 --> 00:08:08,320
+And the main switching of voltage potential will be done with the switch.
+
+78
+00:08:10,720 --> 00:08:16,380
+And the output voltage will be calculated by Ohm's law on the load, current times load resistance.
+
+79
+00:08:18,820 --> 00:08:26,300
+Since our power will be pulsed, taken from this converter's output, the formula will be a little inaccurate, but it suits us fine.
+
+80
+00:08:32,270 --> 00:08:36,190
+Before moving to building this circuit, we need to buy all the parts first.
+
+81
+00:08:38,690 --> 00:08:43,690
+For now I found this switch at my place, a Soviet era piece that perfectly suits us.
+
+82
+00:08:47,200 --> 00:08:51,260
+It has a ceramic contact pad and quite a powerful terminal output.
+
+83
+00:08:52,400 --> 00:09:02,400
+Here I drew where additional work on the terminals is needed, because right now if we switch, you can see that the switch, due to the contact pad width, temporarily shorts contacts.
+
+84
+00:09:06,270 --> 00:09:09,430
+We need to get rid of that, and the switch will be fully suitable.
+
+85
+00:09:10,130 --> 00:09:17,770
+The switch has 12 leads in a circle, one of them common, from which the supply voltage will be taken, and this pedal does the switching.
+
+86
+00:09:23,780 --> 00:09:27,920
+In this case I drew 12 leads, but I found an 11 lead switch.
+
+87
+00:09:29,060 --> 00:09:30,980
+Not critical, suits us.
+
+88
+00:09:32,460 --> 00:09:35,560
+Pick any here, whoever likes, for the output rating.
+
+89
+00:09:37,380 --> 00:09:42,780
+Of the parts that set common system dimensions, I already have the ready DC-DC converter.
+
+90
+00:09:46,600 --> 00:09:51,340
+The video on tuning and building it can be seen in the previous video clip on my channel.
+
+91
+00:09:53,500 --> 00:09:57,420
+Made specifically for installation in this universal power supply.
+
+92
+00:09:58,620 --> 00:09:59,640
+It'll go here.
+
+93
+00:10:01,440 --> 00:10:03,440
+For all the other parts one go to the store.
+
+94
+00:10:05,060 --> 00:10:07,060
+After buying them, we move to building.
+
+95
+00:10:09,400 --> 00:10:14,280
+And at the same time, I'll count how much this universal power supply will cost in parts.
+
+96
+00:10:16,580 --> 00:10:18,080
+Thanks to everyone who watched.
+
+97
+00:10:19,020 --> 00:10:20,480
+See you in the next release.
+

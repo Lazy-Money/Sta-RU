@@ -1,0 +1,1404 @@
+1
+00:00:00,000 --> 00:00:02,960
+Good day, dear subscribers and viewers of my channel.
+
+2
+00:00:04,120 --> 00:00:11,000
+This video will be dedicated to Tesla transformer calculation, calculation of its inductor length, and other small tricks.
+
+3
+00:00:11,640 --> 00:00:14,640
+I'll show you how to calculate this in online calculators.
+
+4
+00:00:16,680 --> 00:00:25,200
+This will be a video as an addition to my previous video about Tesla coil calculation, because a large amount of questions comes to the channel on YouTube.
+
+5
+00:00:27,360 --> 00:00:29,160
+There are even such questions.
+
+6
+00:00:29,720 --> 00:00:32,860
+Calculate me a Tesla transformer, I'm ready to pay you.
+
+7
+00:00:33,900 --> 00:00:36,040
+I'll start with, there's no need to pay me.
+
+8
+00:00:37,120 --> 00:00:40,920
+This knowledge Tesla himself gave for free to all humanity.
+
+9
+00:00:42,280 --> 00:00:43,620
+And it should be that way.
+
+10
+00:00:44,640 --> 00:00:54,080
+So, the first point will be the statement that the operating frequency of the Tesla transformer, in this case in kilohertz, will determine the length of its conductor.
+
+11
+00:00:55,240 --> 00:00:57,960
+This was, and will be, and it's unchanging.
+
+12
+00:00:58,800 --> 00:01:11,220
+If in some videos you see that a person, for example, wound some Tesla transformer, wound an inductor arbitrarily on it, assembled such a system, connected it to a lab signal generator, and is picking
+
+13
+00:01:11,220 --> 00:01:20,300
+frequency on this inductor here, and shows you on the oscillogram, he has maximum sine amplitude, then this person doesn't know how a Tesla transformer is made.
+
+14
+00:01:27,550 --> 00:01:32,590
+He, in this case, shows you the LC resonance frequency of this coil, no more than that.
+
+15
+00:01:33,530 --> 00:01:37,730
+In exceptional cases, the person may not even suspect this himself.
+
+16
+00:01:38,490 --> 00:01:40,510
+This coil may well work at that moment.
+
+17
+00:01:40,850 --> 00:01:52,710
+That's simply matched so that the length of all the conductor wound on this coil, at him by build wire diameter, frame diameter, winding height, that the LC resonance frequency is close to the
+
+18
+00:01:52,710 --> 00:01:54,470
+frequency on conductor length.
+
+19
+00:01:56,050 --> 00:01:58,970
+So this can personally lead the person to delusion.
+
+20
+00:02:00,310 --> 00:02:06,050
+So if you saw such a moment in some video, put a million dislikes there, throw it with whatever you want.
+
+21
+00:02:06,850 --> 00:02:12,130
+Joking, of course, but the person will sometime come to a normal understanding themselves if they work.
+
+22
+00:02:13,630 --> 00:02:15,430
+How is this frequency determined?
+
+23
+00:02:20,110 --> 00:02:26,370
+First, its value will proceed from what elemental base we have to be able to work out this frequency in kilohertz.
+
+24
+00:02:27,310 --> 00:02:34,970
+If, say, we work on spark gaps, then very well there turns out to drive such Tesla transformer to its resonance frequency.
+
+25
+00:02:36,630 --> 00:02:45,410
+But if we work on semiconductor techniques, then we have significant limitations in operating frequency and control electronics are also limited.
+
+26
+00:02:46,850 --> 00:02:55,570
+So to start, if you'll do your first Tesla transformer, the recommended frequency is approximately in the range from 200 to 500 kilohertz.
+
+27
+00:02:56,290 --> 00:02:59,350
+For this, practically everything is available now.
+
+28
+00:02:59,610 --> 00:03:01,190
+And I gave the schemes on my channel.
+
+29
+00:03:01,310 --> 00:03:03,750
+So such a Tesla transformer worked optimally.
+
+30
+00:03:05,090 --> 00:03:10,350
+For example, I determined the frequency I'll work at, say I'll do at 200 kilohertz.
+
+31
+00:03:10,970 --> 00:03:13,950
+For example, you can take any from 200 to 500.
+
+32
+00:03:15,470 --> 00:03:19,290
+Now we need to determine what wavelength we'll have for this frequency.
+
+33
+00:03:21,050 --> 00:03:25,110
+Say we still haven't bought anything, no wire, no frame.
+
+34
+00:03:26,110 --> 00:03:29,970
+This is now we have an equation with unknowns and we determine.
+
+35
+00:03:31,670 --> 00:03:42,610
+Now I go to the online calculator that can count for us the wavelength for 200 kilohertz or do this as I showed in my previous video about Tesla transformer calculation by conductor length.
+
+36
+00:03:43,590 --> 00:03:49,130
+In this case, I went to the online calculator on the site of radio amateurs of the Tula region.
+
+37
+00:03:49,870 --> 00:03:50,330
+Good site.
+
+38
+00:03:51,570 --> 00:03:59,190
+And here is the online calculator that lets you calculate wavelength from its frequency or calculate frequency from a given length in meters.
+
+39
+00:03:59,830 --> 00:04:00,510
+Let's calculate.
+
+40
+00:04:00,510 --> 00:04:09,800
+We determined that our frequency will be 200 kilohertz and press calculate.
+
+41
+00:04:10,600 --> 00:04:12,480
+We get 1500 M.
+
+42
+00:04:13,740 --> 00:04:17,760
+200 kilohertz for us equals 1500 M.
+
+43
+00:04:18,360 --> 00:04:25,160
+For us to get a quarter wave resonator, we need this length of 1500 M divide by 4.
+
+44
+00:04:25,500 --> 00:04:29,220
+And we get, if you divide, 375 M.
+
+45
+00:04:31,810 --> 00:04:35,710
+So we got the conductor length we should lay on our future frame.
+
+46
+00:04:37,550 --> 00:04:40,450
+Now the time has come to determine the frame diameter.
+
+47
+00:04:42,150 --> 00:04:45,450
+There are many plastic frames, including sewer pipes.
+
+48
+00:04:46,050 --> 00:04:51,970
+The pipes available are diameters 110 millimeters, 75 millimeters, 50 millimeters.
+
+49
+00:04:54,490 --> 00:04:57,410
+Let's calculate our coil for two common frames.
+
+50
+00:04:58,310 --> 00:05:02,070
+110 millimeters and 75 millimeters accordingly.
+
+51
+00:05:03,310 --> 00:05:06,670
+Whoever has cardboard frames, those will be the best frames.
+
+52
+00:05:06,930 --> 00:05:08,070
+You can calculate for them.
+
+53
+00:05:08,590 --> 00:05:11,390
+You need to accurately measure the diameter with calipers.
+
+54
+00:05:11,970 --> 00:05:14,290
+For now, we calculate for the 110 pipe.
+
+55
+00:05:15,130 --> 00:05:18,110
+We determined the diameter is 110 millimeters.
+
+56
+00:05:20,470 --> 00:05:26,650
+Now we need to find out the turn length that fits in one revolution on this 110 millimeters pipe.
+
+57
+00:05:27,610 --> 00:05:32,470
+For this, we use the standard formula from the school math course for determining circumference length.
+
+58
+00:05:33,810 --> 00:05:35,610
+This formula looks like this.
+
+59
+00:05:36,450 --> 00:05:42,450
+Circumference length equals the number pi multiplied by diameter, where pi for us is 3.14.
+
+60
+00:05:46,210 --> 00:05:47,950
+Do the math calculations.
+
+61
+00:05:51,300 --> 00:05:54,720
+3.14 multiplied by 0.11.
+
+62
+00:05:57,830 --> 00:06:00,010
+I converted millimeters to meters.
+
+63
+00:06:05,910 --> 00:06:09,030
+We get 0.345 m.
+
+64
+00:06:12,040 --> 00:06:14,900
+Now we have the turn length for the 110 pipe.
+
+65
+00:06:18,590 --> 00:06:24,030
+The next moment is we determine what turn count at this conductor length will have on the 110 pipe.
+
+66
+00:06:26,730 --> 00:06:33,450
+We take our 375 m and divide by the calculated turn length of 0.345.
+
+67
+00:06:37,010 --> 00:06:40,850
+And we get that we have a turn count equal to 1087 pieces.
+
+68
+00:06:43,290 --> 00:06:47,470
+The next stage is we determine what conductor we'll wind our coil with.
+
+69
+00:06:49,310 --> 00:06:52,430
+I'll take for calculation a conductor that's common.
+
+70
+00:06:53,570 --> 00:06:56,550
+Its diameter is 0.25 millimeters.
+
+71
+00:06:57,550 --> 00:06:59,930
+This is the core diameter by copper.
+
+72
+00:07:01,370 --> 00:07:03,950
+And by varnish, it's 0.26 millimeters.
+
+73
+00:07:05,630 --> 00:07:07,590
+Common and inexpensive wire.
+
+74
+00:07:08,630 --> 00:07:13,450
+If you have wire bought in advance or any present, you enter its diameter here.
+
+75
+00:07:15,410 --> 00:07:18,190
+Measure size by varnish, desirable with a micrometer.
+
+76
+00:07:19,970 --> 00:07:22,590
+Now we move to the next online calculator.
+
+77
+00:07:23,130 --> 00:07:27,410
+This online calculator is located on the site of Vyacheslav Gorchulin.
+
+78
+00:07:30,770 --> 00:07:37,170
+And it's called calculation of single layer coil at 1.25 wave considering grounding capacity.
+
+79
+00:07:38,370 --> 00:07:41,490
+Now we're interested in these parameters that we'll enter.
+
+80
+00:07:44,170 --> 00:07:47,330
+And the calculator will accordingly calculate for us.
+
+81
+00:07:48,670 --> 00:07:52,170
+So first item for us, winding height in millimeters.
+
+82
+00:07:52,970 --> 00:07:54,290
+For now, we don't know this item.
+
+83
+00:07:54,750 --> 00:07:56,490
+Winding diameter in millimeters.
+
+84
+00:07:56,990 --> 00:08:00,770
+We determine that our pipe diameter is 110 millimeters.
+
+85
+00:08:01,990 --> 00:08:03,090
+Turn count.
+
+86
+00:08:03,590 --> 00:08:05,890
+The turn count we calculated by fact.
+
+87
+00:08:07,050 --> 00:08:09,130
+At us, it's 1087 pieces.
+
+88
+00:08:12,030 --> 00:08:14,390
+And here's some height was already entered.
+
+89
+00:08:15,050 --> 00:08:17,710
+200 millimeters, that is 20 centimeters.
+
+90
+00:08:18,430 --> 00:08:19,410
+Look at this column now.
+
+91
+00:08:20,530 --> 00:08:22,850
+Here is marked coil geometry.
+
+92
+00:08:23,470 --> 00:08:28,970
+And we see the conductor for us calculated by the program is 0.18 millimeters.
+
+93
+00:08:30,350 --> 00:08:36,110
+But in advance, we agreed I'd calculate the coil under a conductor of 0.25 millimeters.
+
+94
+00:08:37,870 --> 00:08:42,970
+Now we're interested in the moment so that here, winding step, our conductor appeared.
+
+95
+00:08:43,530 --> 00:08:45,430
+The step by varnish will be 0.26.
+
+96
+00:08:45,430 --> 00:08:48,770
+For this, I changed the coil winding height.
+
+97
+00:08:50,150 --> 00:08:51,550
+This is in millimeters.
+
+98
+00:08:53,470 --> 00:08:55,970
+Say, I set 280 millimeters.
+
+99
+00:08:57,670 --> 00:09:00,050
+Oh, here immediately accurately hit.
+
+100
+00:09:01,410 --> 00:09:04,710
+You see the winding step in mm is 0.26.
+
+101
+00:09:07,210 --> 00:09:09,310
+Our coil geometry appeared.
+
+102
+00:09:09,830 --> 00:09:13,490
+That is height 280 and a corresponding diameter 110.
+
+103
+00:09:15,610 --> 00:09:18,950
+The next item we're interested in is this second column.
+
+104
+00:09:20,430 --> 00:09:22,330
+Resonance frequency in megahertz.
+
+105
+00:09:22,990 --> 00:09:25,530
+You see here 339 kilohertz.
+
+106
+00:09:27,010 --> 00:09:30,050
+And we calculated our coil at the conductor length.
+
+107
+00:09:30,410 --> 00:09:33,530
+If you remember, we have a frequency of 200 kilohertz.
+
+108
+00:09:34,190 --> 00:09:37,570
+This online calculator lets you enter additional external capacity.
+
+109
+00:09:37,890 --> 00:09:43,510
+I go to this item, external capacity, put a mark in the column present.
+
+110
+00:09:44,710 --> 00:09:50,210
+And for us come out under the parameters of the columns, what type our isolated capacity will be at us.
+
+111
+00:09:51,090 --> 00:09:55,030
+This is a toroid, sphere, or in general a parallel capacitor.
+
+112
+00:09:55,570 --> 00:10:00,730
+But we're not interested in a parallel capacitor and we're interested in either a toroid or sphere.
+
+113
+00:10:01,550 --> 00:10:03,570
+Let's calculate first for a sphere.
+
+114
+00:10:05,890 --> 00:10:08,550
+I enter here starting from 100 millimeters.
+
+115
+00:10:11,610 --> 00:10:12,720
+100 millimeters.
+
+116
+00:10:13,480 --> 00:10:17,220
+You see our frequency is 235 kilohertz.
+
+117
+00:10:18,100 --> 00:10:18,260
+Low.
+
+118
+00:10:19,260 --> 00:10:20,600
+Enter 140.
+
+119
+00:10:23,020 --> 00:10:24,200
+214.
+
+120
+00:10:25,000 --> 00:10:25,860
+Still low.
+
+121
+00:10:27,300 --> 00:10:28,480
+160.
+
+122
+00:10:31,040 --> 00:10:32,720
+Already 205.
+
+123
+00:10:32,880 --> 00:10:33,660
+Very close.
+
+124
+00:10:36,080 --> 00:10:37,400
+165 millimeters.
+
+125
+00:10:39,660 --> 00:10:40,500
+203.
+
+126
+00:10:42,680 --> 00:10:43,520
+170.
+
+127
+00:10:44,720 --> 00:10:48,680
+Here approximately we hit our calculated 201 kilohertz.
+
+128
+00:10:49,680 --> 00:11:02,200
+That is, for our coil to have a combination of LC resonance frequency with the frequency on conductor length, we need to install on its hot and in isolated capacity with diameter 170 millimeters.
+
+129
+00:11:03,080 --> 00:11:09,960
+Generally, the program counts quite accurately and the bigger the dimensions of your coil, the more accurately it calculates.
+
+130
+00:11:10,600 --> 00:11:16,300
+For small coils on 50 millimeters frames, there will be errors in the range of 15 to 20 percent.
+
+131
+00:11:17,180 --> 00:11:23,720
+Well, this isn't so it should upset us because in practice we fit everything with additional isolated capacity help.
+
+132
+00:11:24,200 --> 00:11:25,380
+Now I switch to a toroid.
+
+133
+00:11:27,480 --> 00:11:33,440
+I remembered that in the previous case we had a capacity of 9.5 picofarads for the sphere.
+
+134
+00:11:35,700 --> 00:11:37,240
+And I enter the parameters here.
+
+135
+00:11:38,000 --> 00:11:43,080
+External diameter of the toroid, say in view 300 millimeters, 30 centimeters.
+
+136
+00:11:43,840 --> 00:11:47,740
+And we'll do our toroid pipe from corrugation diameter 80 millimeters.
+
+137
+00:11:51,880 --> 00:11:54,960
+You see frequency 180 kilohertz.
+
+138
+00:11:55,300 --> 00:11:56,100
+That is, we missed.
+
+139
+00:11:57,200 --> 00:12:02,740
+The toroid is good in that changing its outer diameter, effectively stretching the toroid pipe.
+
+140
+00:12:03,080 --> 00:12:04,180
+We change its capacity.
+
+141
+00:12:04,820 --> 00:12:10,260
+Here you see we have 13.1 picofarads and we need to get 9.5 picofarads.
+
+142
+00:12:11,020 --> 00:12:15,840
+For this we reduce the outer diameter, for example, to 280 millimeters.
+
+143
+00:12:17,440 --> 00:12:18,640
+The frequency grows.
+
+144
+00:12:18,940 --> 00:12:19,820
+I put 260.
+
+145
+00:12:23,770 --> 00:12:26,570
+So 189 at 250.
+
+146
+00:12:29,030 --> 00:12:31,030
+Still low, 235.
+
+147
+00:12:34,770 --> 00:12:36,310
+So 220.
+
+148
+00:12:38,150 --> 00:12:44,630
+And we see that our toroid's capacity again became the same as at the sphere, 9.5 picofarads.
+
+149
+00:12:45,030 --> 00:12:48,590
+And the frequency returned to the same value as with the installed sphere.
+
+150
+00:12:49,810 --> 00:12:54,370
+We picked here the approximate geometric sizes of a toroid for our future coil.
+
+151
+00:12:55,270 --> 00:12:55,990
+Good.
+
+152
+00:12:56,350 --> 00:13:01,810
+Now let's examine the submenu item wave propagation speed coefficient.
+
+153
+00:13:03,770 --> 00:13:05,990
+Pay attention that now here it's 1.
+
+154
+00:13:06,830 --> 00:13:17,430
+When this column in program calculation comes out as 1, full combination of LC resonance frequency of the coil with the frequency of wave on conductor length happens for us.
+
+155
+00:13:17,930 --> 00:13:23,710
+If we remove additional capacities, you see the wave propagation coefficient here is 1.7.
+
+156
+00:13:25,370 --> 00:13:34,570
+So calculating your coils, you need to strive so this number, which is now here 1.7, would be in the range 1.3 to 1.5.
+
+157
+00:13:35,290 --> 00:13:37,510
+Then it'll turn out the most optimal coil.
+
+158
+00:13:38,070 --> 00:13:42,550
+I transferred the values gotten in online calculator calculations to the sheet.
+
+159
+00:13:43,770 --> 00:13:50,230
+This is the coil geometry, the isolated capacities geometry, propagation coefficient 1.7.
+
+160
+00:13:51,010 --> 00:13:56,950
+And now do the calculation as we agreed earlier for a pipe with outer diameter 75 millimeters.
+
+161
+00:13:57,770 --> 00:14:00,590
+Also express through the formula the turn length.
+
+162
+00:14:01,710 --> 00:14:04,750
+Length turns out 0.236 M.
+
+163
+00:14:05,910 --> 00:14:10,890
+Now our 375 M divide by the turn length, we get the turn count.
+
+164
+00:14:11,630 --> 00:14:17,470
+Now we can also switch to the online calculator and calculate the geometry and frequencies of our coil.
+
+165
+00:14:18,150 --> 00:14:19,210
+Bring in our new data.
+
+166
+00:14:20,590 --> 00:14:24,650
+So, winding diameter, I changed to 75 millimeters.
+
+167
+00:14:26,530 --> 00:14:30,230
+Turn count to our new data, 1589 turns.
+
+168
+00:14:37,050 --> 00:14:41,650
+At height 280 millimeters, wire 0.18 millimeters.
+
+169
+00:14:42,230 --> 00:14:45,690
+We agreed to wind 0.26 millimeters by varnish.
+
+170
+00:14:46,310 --> 00:14:47,590
+Means I changed this height.
+
+171
+00:14:48,670 --> 00:14:54,550
+For example, 350 millimeters, wire 0.22 millimeters.
+
+172
+00:14:55,430 --> 00:14:56,630
+Still should be increased.
+
+173
+00:14:58,410 --> 00:15:02,110
+380 millimeters, wire 0.24 millimeters.
+
+174
+00:15:05,060 --> 00:15:09,520
+400 millimeters, wire 0.25 millimeters.
+
+175
+00:15:12,780 --> 00:15:16,640
+420 millimeters, wire 0.26 millimeters.
+
+176
+00:15:17,500 --> 00:15:18,180
+That's it.
+
+177
+00:15:18,440 --> 00:15:21,580
+The geometry of our coil will be approximately like this.
+
+178
+00:15:25,240 --> 00:15:27,560
+Let's look once more at what the height may be.
+
+179
+00:15:29,280 --> 00:15:37,520
+The Tesla transformer's winding height, so it comes out in optimal parameters, should be approximately in the range of four of its diameters.
+
+180
+00:15:38,020 --> 00:15:44,340
+That is, if we take a diameter of 75 millimeters and multiply it by four, we get 300 millimeters.
+
+181
+00:15:54,020 --> 00:15:57,260
+You see our coil already came out of these allowed parameters.
+
+182
+00:16:00,160 --> 00:16:05,400
+This is a coil that will already have a smaller quality factor, which is reflected in this column.
+
+183
+00:16:06,820 --> 00:16:10,520
+You see the wave propagation speed coefficient is 2.1.
+
+184
+00:16:11,660 --> 00:16:13,720
+That is, we already passed even pass 2.
+
+185
+00:16:13,720 --> 00:16:16,680
+What does this number 2.1 mean?
+
+186
+00:16:17,220 --> 00:16:19,900
+Effectively, we went out of our optimal parameters.
+
+187
+00:16:21,700 --> 00:16:25,820
+Our coil for us is geometrically stretched more than four diameters.
+
+188
+00:16:26,680 --> 00:16:32,440
+And now in practice, we'll have to compensate for this geometry by adding a bigger isolated capacity.
+
+189
+00:16:33,560 --> 00:16:41,080
+That is, if you get such a calculation, you should effectively increase the winding diameter to return our coil to better geometry.
+
+190
+00:16:41,940 --> 00:16:46,980
+But since say the frame isn't available, this doesn't mean we have a collapse of the situation.
+
+191
+00:16:47,760 --> 00:16:52,480
+You can do such a coil too, but we'll remember its quality factor will be slightly lower.
+
+192
+00:16:53,540 --> 00:16:56,320
+Now look what isolated capacity we'll need here.
+
+193
+00:16:57,600 --> 00:16:59,900
+For example, say a sphere.
+
+194
+00:17:00,620 --> 00:17:07,120
+I enter a sphere, as in the previous parameter, 170 mm.
+
+195
+00:17:08,280 --> 00:17:12,820
+And you see our frequency is 242 kHz, and it should be 200.
+
+196
+00:17:14,020 --> 00:17:15,540
+That is what comes out.
+
+197
+00:17:16,340 --> 00:17:18,380
+We need to increase the sphere diameter.
+
+198
+00:17:20,360 --> 00:17:21,120
+200.
+
+199
+00:17:22,400 --> 00:17:23,040
+Low.
+
+200
+00:17:24,640 --> 00:17:26,040
+240.
+
+201
+00:17:26,760 --> 00:17:28,160
+Low.
+
+202
+00:17:30,980 --> 00:17:32,240
+260.
+
+203
+00:17:33,940 --> 00:17:35,540
+Still can add slightly.
+
+204
+00:17:38,900 --> 00:17:40,300
+265.
+
+205
+00:17:42,340 --> 00:17:43,740
+275.
+
+206
+00:17:45,260 --> 00:17:49,800
+Effectively, the sphere comes out even of size 285 mm.
+
+207
+00:17:50,360 --> 00:17:57,620
+To reduce to the same parameter as with the 110 pipe, 201 kHz.
+
+208
+00:17:58,120 --> 00:18:00,520
+That is the sphere significantly increased.
+
+209
+00:18:01,680 --> 00:18:04,120
+The same will happen with toroid geometry.
+
+210
+00:18:04,920 --> 00:18:08,200
+Now I'll transfer the sphere parameters for the 75 pipe.
+
+211
+00:18:13,110 --> 00:18:14,450
+285 mm.
+
+212
+00:18:15,710 --> 00:18:19,090
+And the capacity already 15.9 pF.
+
+213
+00:18:19,830 --> 00:18:20,570
+So,
+
+214
+00:18:23,910 --> 00:18:25,910
+what will it show us by size for the toroid?
+
+215
+00:18:27,510 --> 00:18:28,250
+Same.
+
+216
+00:18:29,030 --> 00:18:30,390
+Take pipe 80 mm.
+
+217
+00:18:33,110 --> 00:18:35,110
+Now our diameter will be bigger.
+
+218
+00:18:37,590 --> 00:18:41,030
+Say, the diameter will be 320 mm.
+
+219
+00:18:45,370 --> 00:18:46,110
+Small.
+
+220
+00:18:46,110 --> 00:18:46,480
+350.
+
+221
+00:18:48,960 --> 00:18:50,020
+Low.
+
+222
+00:18:52,700 --> 00:18:53,760
+380.
+
+223
+00:18:58,170 --> 00:18:59,230
+375.
+
+224
+00:19:01,950 --> 00:19:04,990
+Here approximately we can stop at 370.
+
+225
+00:19:06,150 --> 00:19:09,390
+It'll be the same frequency 201 kHz.
+
+226
+00:19:10,390 --> 00:19:13,690
+I transfer the parameters for the toroid as well.
+
+227
+00:19:15,550 --> 00:19:16,590
+To the sheet.
+
+228
+00:19:18,170 --> 00:19:21,990
+The outer diameter at us is already 370 mm.
+
+229
+00:19:22,870 --> 00:19:25,170
+Such a coil will even geometrically look ugly.
+
+230
+00:19:26,030 --> 00:19:30,630
+That is relative to the winding it'll be big, a toroid perched on top.
+
+231
+00:19:31,290 --> 00:19:32,310
+It'll look like a mushroom.
+
+232
+00:19:33,630 --> 00:19:37,310
+What's else bad is when big geometries have isolated capacities.
+
+233
+00:19:38,570 --> 00:19:43,570
+Such a coil will consume more electric energy to reach its operating voltage range.
+
+234
+00:19:48,420 --> 00:19:49,540
+Remember this too.
+
+235
+00:19:50,240 --> 00:19:52,180
+You should avoid such coil geometries.
+
+236
+00:19:53,040 --> 00:19:55,060
+But this doesn't mean they won't work.
+
+237
+00:19:55,760 --> 00:19:57,040
+We lose in consumption.
+
+238
+00:19:57,740 --> 00:20:00,660
+I also did the calculation for a 90 mm diameter.
+
+239
+00:20:01,520 --> 00:20:12,060
+I consider that for winding at 200 kHz and for us to fit into the optimal geometric parameters when our coil winding height equals approximately 4 of its diameters.
+
+240
+00:20:13,120 --> 00:20:16,580
+Quarter wave resonators work very well at such geometry.
+
+241
+00:20:18,040 --> 00:20:21,480
+Here goes the calculation for 90 mm diameter.
+
+242
+00:20:22,340 --> 00:20:24,240
+We get 1325 turns.
+
+243
+00:20:25,400 --> 00:20:28,040
+And now look at its value in the online calculator.
+
+244
+00:20:29,600 --> 00:20:32,860
+These are the parameters for winding diameter 90 mm.
+
+245
+00:20:34,020 --> 00:20:34,680
+Our wire.
+
+246
+00:20:37,610 --> 00:20:39,570
+Turn count and winding height.
+
+247
+00:20:40,150 --> 00:20:46,130
+If you calculate 4 by 9.36, then here we have winding height 350 mm.
+
+248
+00:20:47,290 --> 00:20:47,950
+All in order.
+
+249
+00:20:48,430 --> 00:20:52,350
+Now it remains only to pick the outer diameter for the sphere and toroid.
+
+250
+00:20:56,650 --> 00:20:58,810
+Say 250 mm.
+
+251
+00:21:01,170 --> 00:21:02,710
+240 mm.
+
+252
+00:21:05,990 --> 00:21:07,370
+220 mm.
+
+253
+00:21:12,440 --> 00:21:15,300
+Approximately 225 mm will be the sphere.
+
+254
+00:21:15,860 --> 00:21:16,940
+Well, and so on.
+
+255
+00:21:18,660 --> 00:21:22,380
+Now when we did the calculations, we can stop on optimal builds.
+
+256
+00:21:24,480 --> 00:21:30,520
+Once more reminder, the most optimal coil build is the one that will have the smallest isolated capacity.
+
+257
+00:21:32,120 --> 00:21:34,600
+But this is all depending on what goals you pursue.
+
+258
+00:21:35,860 --> 00:21:43,080
+If you're doing a Tesla transformer for a generator, then you specifically need the isolated capacity to be smaller here.
+
+259
+00:21:43,920 --> 00:21:47,520
+Less consumption of the coil until it reaches its operating mode.
+
+260
+00:21:48,500 --> 00:21:59,660
+And if you do a Tesla coil specifically for light noise effects, for beautiful streamers, then you'll specifically be interested in an isolated capacity with bigger geometric sizes here.
+
+261
+00:22:00,480 --> 00:22:04,240
+Then it'll charge to a bigger potential and the breakdown will be longer.
+
+262
+00:22:04,980 --> 00:22:10,660
+You also shouldn't leave the hot end of a Tesla transformer completely without an isolated capacity.
+
+263
+00:22:11,540 --> 00:22:14,240
+Here you need to feel the coil, if I can say so.
+
+264
+00:22:15,200 --> 00:22:25,100
+Look at the winding geometry itself, and if you put a small ball there, say you have a 110 pipe and some ball of 30 millimeters, then this will also be not optimal.
+
+265
+00:22:26,000 --> 00:22:28,480
+That is, everything has its optimal ratios.
+
+266
+00:22:29,920 --> 00:22:35,920
+You can't perch a big toroid on a small winding height, and you also can't put a small ball on a big winding.
+
+267
+00:22:37,560 --> 00:22:39,180
+Strive to optimize the system.
+
+268
+00:22:39,700 --> 00:22:48,480
+Because this isolated capacity, it ultimately will be the radiating part of the Tesla transformer for the wave processes we'll need for creating a generator.
+
+269
+00:22:51,080 --> 00:22:54,120
+In general, we finished with online calculators.
+
+270
+00:22:54,720 --> 00:22:58,640
+Now let's move to the important moment of how to calculate inductor length.
+
+271
+00:22:59,340 --> 00:23:00,480
+So, item number two.
+
+272
+00:23:02,000 --> 00:23:12,380
+The Tesla transformer is a discrete system for us, and its discreteness consists in the fact that we can calculate the inductor length by ratio to the wire length of Tesla transformer.
+
+273
+00:23:13,460 --> 00:23:15,220
+This can be done in two ways.
+
+274
+00:23:16,820 --> 00:23:24,240
+Say, we take a certain inductor length in meters, multiply by some whole number, and get the total length of the Tesla transformer.
+
+275
+00:23:25,120 --> 00:23:34,300
+But this way is slightly inconvenient in terms of needing to calculate the Tesla transformer itself, so it comes out good for us by our frequency, proceeding from this.
+
+276
+00:23:35,340 --> 00:23:37,060
+Then we act in the second way.
+
+277
+00:23:37,680 --> 00:23:48,260
+We, knowing the length of one turn wound on the Tesla transformer frame, can multiply this turn length by a whole number, and this way we get the total length of the Tesla transformer inductor.
+
+278
+00:23:49,040 --> 00:23:53,740
+Now I'll show an example of calculation for the inductor under the 110 pipe.
+
+279
+00:23:54,240 --> 00:24:04,620
+The question of choosing inductor, diameter, winding, it's strictly individual for each Tesla transformer and depends on what you work on, on the final goal you want to achieve.
+
+280
+00:24:05,160 --> 00:24:14,400
+I asked these questions to many people, some couldn't at all clearly answer me, and the most identically and rationally to these questions two people answered.
+
+281
+00:24:15,220 --> 00:24:20,820
+This is Alexander Vladimirovich Romanov and a person under the nickname on the internet Ruslan X.
+
+282
+00:24:22,460 --> 00:24:24,880
+Both people have big practice in Tesla building.
+
+283
+00:24:26,880 --> 00:24:37,680
+And if to summarize the moments people talk about, those who work more on spark gaps incline to the opinion that a Tesla transformer should be classical, as Tesla bequeathed to make.
+
+284
+00:24:39,800 --> 00:24:49,560
+This is only one to two turns of primary winding, thick copper tube, or busbar, whose length is picked proceeding from the turn length of the Tesla transformer.
+
+285
+00:24:52,990 --> 00:24:59,370
+For example, multiply turn length by two and get the total length of one inductor turn for this transformer.
+
+286
+00:25:00,250 --> 00:25:11,690
+And there are such strictly personal observations from some, that there's even some resonance by copper mass, between the copper mass in the inductor tube and the copper mass of the Tesla transformer
+
+287
+00:25:11,690 --> 00:25:13,170
+turns, that affects it.
+
+288
+00:25:18,030 --> 00:25:22,270
+I didn't check this moment, I can't say anything personally on this matter.
+
+289
+00:25:23,390 --> 00:25:34,790
+The most accurately noted moment is also that the surface area of this copper tube or busbar should correspond to the surface area of the conductors of the Tesla transformer's secondary winding that
+
+290
+00:25:34,790 --> 00:25:35,890
+this inductor affects.
+
+291
+00:25:37,030 --> 00:25:39,890
+Here we have the next moment that we need to stop on.
+
+292
+00:25:41,090 --> 00:25:49,730
+We need to understand that the classical transformer in a Tesla transformer build is only the part of its winding located in the zone affected by the inductor.
+
+293
+00:25:51,590 --> 00:25:54,670
+All the rest of the part is exclusively a waveguide.
+
+294
+00:25:55,710 --> 00:26:03,150
+But we now do the calculation of the inductor length for a build that'll work on semiconductor inverters, bridge, or half-bridge scheme.
+
+295
+00:26:06,490 --> 00:26:17,590
+And if we'll be guided by Tesla's rules, and other people who work proceeding from the fact that for a spark gap inductor optimal 1 to 2 turns, then this'll be too big a load on our semiconductor
+
+296
+00:26:17,590 --> 00:26:18,410
+transistors.
+
+297
+00:26:20,170 --> 00:26:22,730
+So we should take a bigger amount of wire by length.
+
+298
+00:26:26,580 --> 00:26:34,060
+Say, for a 110 frame I'd personally do an inductor winding on a 153 frame in the form of a cylinder.
+
+299
+00:26:34,720 --> 00:26:40,120
+Here the optimal gap is about 2 cm between Tesla transformer wire and inductor wire.
+
+300
+00:26:41,900 --> 00:26:52,840
+This gap is chosen not only proceeding from the absence of breakdown to the inductor, but also proceeding from the desired coupling coefficient between the inductor and the turns of the Tesla
+
+301
+00:26:52,840 --> 00:26:54,020
+transformer it affects.
+
+302
+00:26:54,540 --> 00:26:56,740
+Now we move directly to the calculation.
+
+303
+00:26:57,540 --> 00:27:08,820
+Earlier we calculated that for a frame diameter of 110 mm, the conductor length to be wound on this frame is 345 mm or 34.5 cm.
+
+304
+00:27:10,300 --> 00:27:14,220
+So now we need to choose a whole number on which we multiply this length.
+
+305
+00:27:15,540 --> 00:27:17,120
+In this case I stopped on 12.
+
+306
+00:27:18,600 --> 00:27:27,060
+Based on what considerations I took it, since approximately I'd wind for a 110 pipe an inductor on a 153 mm frame.
+
+307
+00:27:27,480 --> 00:27:32,880
+I also approximately calculated for it that the length of one revolution is 48 cm.
+
+308
+00:27:33,680 --> 00:27:39,620
+For quality work of bridge and half-bridge schemes the turn count lies in the range of 5 to 8 pieces.
+
+309
+00:27:41,360 --> 00:27:44,400
+This is approximately 8 turns by my counts.
+
+310
+00:27:44,820 --> 00:27:47,140
+Multiply by 50, this is 4 meters.
+
+311
+00:27:48,340 --> 00:27:56,360
+And in this case I multiplied the Tesla transformer's turn length by 12 and got a total inductor length of 4 m 14 cm.
+
+312
+00:27:57,740 --> 00:28:05,560
+Once more I repeat, this inductor length will be unchanged for this Tesla transformer regardless of the geometry of the inductor winding.
+
+313
+00:28:06,700 --> 00:28:10,500
+That is you can lay it flat, cylindrical, or in the form of a cone.
+
+314
+00:28:10,920 --> 00:28:12,520
+This won't affect the final length.
+
+315
+00:28:13,260 --> 00:28:19,960
+Now schematically I drew the bridge or half-bridge scheme if we replace these keys with capacitors with a middle point.
+
+316
+00:28:21,900 --> 00:28:27,440
+So our calculated length of 4.14 m is the length from this point to this point.
+
+317
+00:28:27,880 --> 00:28:29,600
+Effectively the transistor leads.
+
+318
+00:28:30,960 --> 00:28:35,060
+In this length enter the free leads from the bridge block.
+
+319
+00:28:37,800 --> 00:28:40,320
+And also the leads that are from the capacitors.
+
+320
+00:28:41,660 --> 00:28:45,120
+All this enters this length of 4 m 14 cm.
+
+321
+00:28:47,160 --> 00:28:50,140
+Here, this end of the inductor will be the upper end.
+
+322
+00:28:50,900 --> 00:28:59,020
+That is by upper, I mean if we wind around the Tesla transformer this inductor, it's the end directed toward the hot end of the Tesla transformer.
+
+323
+00:29:02,190 --> 00:29:07,470
+The lower end accordingly will be the one directed toward the cold end of the Tesla transformer.
+
+324
+00:29:09,130 --> 00:29:15,650
+And the capacity that'll determine for us resonance jointly with the inductor, it's placed at the upper end of the inductor.
+
+325
+00:29:17,910 --> 00:29:23,950
+If the scheme is half-bridge, then the lower end of the inductor goes to the middle point between the capacitors.
+
+326
+00:29:24,430 --> 00:29:26,350
+So we understood the rule.
+
+327
+00:29:27,750 --> 00:29:32,730
+The Tesla transformer inductor correlates with the secondary windings turn length.
+
+328
+00:29:34,390 --> 00:29:36,190
+Now the second basic rule.
+
+329
+00:29:37,350 --> 00:29:40,570
+How to choose conductor cross-section for winding the inductor.
+
+330
+00:29:41,230 --> 00:29:45,210
+Ultimately, this question reduces to the concept of the rule of areas.
+
+331
+00:29:46,270 --> 00:29:57,590
+It turns out that we take the surface area of the inductor wire so it'd be approximately equal to the surface area of the turns of the Tesla transformer secondary winding that this inductor affects.
+
+332
+00:29:59,550 --> 00:30:08,930
+That is, if we make a gap between turns in the inductor, say wind it cylindrically, then the bigger the gap, the bigger the cross-section our inductor should have.
+
+333
+00:30:10,470 --> 00:30:17,390
+And conversely, if we lay the inductor turns close to each other, then the inductor cross-section can be smaller by its surface.
+
+334
+00:30:18,610 --> 00:30:24,490
+If you choose wire that'll be a bigger cross-section by surface area, nothing bad will happen.
+
+335
+00:30:24,950 --> 00:30:26,990
+You can only come to a material overspending.
+
+336
+00:30:31,880 --> 00:30:38,220
+Well, and if the opposite case happens, the wire will be of smaller cross-section, the system will work worse.
+
+337
+00:30:39,900 --> 00:30:43,500
+Now let me say several more words about our initial calculations.
+
+338
+00:30:44,960 --> 00:30:51,520
+These preliminary calculations are connected with the moment for us to ultimately determine which build we'll do.
+
+339
+00:30:53,640 --> 00:30:58,560
+Corrections to this calculation are made by fact when we win the Tesla transformer.
+
+340
+00:30:59,340 --> 00:31:01,920
+Mandatorily measure the clear turn count we laid.
+
+341
+00:31:04,240 --> 00:31:08,460
+And check in several places of the Tesla transformer frame the turn length.
+
+342
+00:31:08,460 --> 00:31:14,100
+For this wrap with tension one turn, make wires, and measure it by fact.
+
+343
+00:31:15,020 --> 00:31:17,820
+And from this make our further corrections in calculation.
+
+344
+00:31:19,420 --> 00:31:27,340
+I advise winding the conductor with some reserve, on the order of 2 to 3 m per frame, so we could then clearly tune our frequency.
+
+345
+00:31:29,840 --> 00:31:33,660
+Because unwinding we can always do, and adding will be problematic.
+
+346
+00:31:33,660 --> 00:31:38,680
+But this on the condition if we have some certain frequency we strive for.
+
+347
+00:31:39,300 --> 00:31:45,340
+For example, we already made one transmitting coil, and we should accurately make the receiving one under it.
+
+348
+00:31:46,660 --> 00:31:56,340
+Whoever is interested can also look at Denis Permakov's channel for the answers to my 8 questions that I asked Alexander Vladimirovich Romanov about the Tesla transformer inductor.
+
+349
+00:31:57,120 --> 00:32:01,640
+This is the video under number 512, called Questions on Tesla Building.
+
+350
+00:32:01,640 --> 00:32:09,500
+To all online calculators and channels presented in the overview in this video, I'll give links in the description.
+
+351
+00:32:11,280 --> 00:32:15,960
+On this, all the best to everyone, good mood, successful experiments.
+

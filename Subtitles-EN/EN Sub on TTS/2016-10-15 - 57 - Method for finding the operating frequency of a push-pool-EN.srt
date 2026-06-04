@@ -1,0 +1,1328 @@
+1
+00:00:00,640 --> 00:00:01,300
+Hi everyone.
+
+2
+00:00:02,700 --> 00:00:07,380
+Today I'll walk through the method for finding the push-pull operating frequency for this coil.
+
+3
+00:00:08,700 --> 00:00:13,120
+So that wave processes happen inside it, and the coil heats up without a load.
+
+4
+00:00:15,500 --> 00:00:18,600
+That is, so the current really ramps up in the system.
+
+5
+00:00:19,480 --> 00:00:24,780
+Now we'll test it and see which frequencies people always end up using versus which ones are actually needed.
+
+6
+00:00:26,360 --> 00:00:33,400
+For this we need this helper tool, a ferrite ring, marked 1500-2000, can be higher, doesn't matter.
+
+7
+00:00:35,220 --> 00:00:40,320
+Wind 8-10 turns, no resistor needed, we're not tracking exact phasing.
+
+8
+00:00:41,100 --> 00:00:44,040
+We just need to know the current amplitude in the system.
+
+9
+00:00:47,560 --> 00:00:48,720
+Here's how it works.
+
+10
+00:00:49,480 --> 00:00:58,140
+When electric current moves through a conductor, or charges are stationary, but spin rotation is happening, a magnetic field forms around the conductor.
+
+11
+00:00:59,960 --> 00:01:08,160
+When you put this ring over the conductor, it captures the magnetic field and the turns converted into a voltage we can read on the oscilloscope.
+
+12
+00:01:10,040 --> 00:01:20,220
+To track current movement in this coil, we need to short the coil leads to each other physically, galvanically, and that lets us see when the coil is working in half-wave mode.
+
+13
+00:01:24,430 --> 00:01:25,310
+Where do we start?
+
+14
+00:01:26,810 --> 00:01:30,190
+Put the ring over one of the leads, with the leads shorted.
+
+15
+00:01:33,340 --> 00:01:36,120
+Make good contact and hook up the oscilloscope.
+
+16
+00:01:39,540 --> 00:01:40,840
+Phasing doesn't matter,
+
+17
+00:01:44,500 --> 00:01:46,400
+common in the probe itself.
+
+18
+00:01:48,520 --> 00:01:52,020
+For instruments we'll also need a signal generator and an oscilloscope.
+
+19
+00:01:53,840 --> 00:02:02,140
+The signal generator output hooks directly to the coil's inductor, and then we'll see what shows up on the instruments.
+
+20
+00:02:04,100 --> 00:02:05,220
+Now we see.
+
+21
+00:02:09,310 --> 00:02:11,630
+Let's feed in five kilohertz to start.
+
+22
+00:02:13,190 --> 00:02:14,510
+Feed a sine wave.
+
+23
+00:02:18,530 --> 00:02:19,510
+Amplitude on.
+
+24
+00:02:20,710 --> 00:02:22,970
+Our peak-to-peak amplitude is 10 volts.
+
+25
+00:02:25,530 --> 00:02:29,550
+And now we'll sweep the frequency and watch what happens on the oscillogram.
+
+26
+00:02:33,940 --> 00:02:39,700
+Passing through the usual operating range, somewhere between 10 and 45 to 50 kilohertz,
+
+27
+00:02:44,690 --> 00:02:46,690
+where practically everyone works.
+
+28
+00:02:48,110 --> 00:02:55,790
+And we see that staying around 25 kilohertz makes no sense, because the current amplitude is at its minimum at that frequency.
+
+29
+00:02:57,770 --> 00:02:58,810
+Moving on.
+
+30
+00:03:01,980 --> 00:03:05,700
+Past 60 kilohertz, and the amplitude is starting to grow.
+
+31
+00:03:08,300 --> 00:03:09,400
+Looking further.
+
+32
+00:03:11,760 --> 00:03:13,760
+Look at the range we've passed through.
+
+33
+00:03:16,540 --> 00:03:19,760
+Amplitude is now at 0.2 V per division.
+
+34
+00:03:27,120 --> 00:03:28,500
+Nothing remarkable yet.
+
+35
+00:03:29,980 --> 00:03:31,040
+Moving on.
+
+36
+00:03:39,950 --> 00:03:41,830
+Amplitude isn't changing much.
+
+37
+00:03:43,090 --> 00:03:47,450
+We can speed things up, not one kilohertz at a time, 10 kilohertz.
+
+38
+00:03:47,990 --> 00:03:53,170
+Look, already at 500 kilohertz and the amplitude hasn't shifted significantly.
+
+39
+00:04:00,810 --> 00:04:04,920
+And only starting from 800 kilohertz do we see a jump in amplitude.
+
+40
+00:04:10,110 --> 00:04:11,850
+Amplitude keeps climbing.
+
+41
+00:04:13,950 --> 00:04:16,990
+Reached maximum around 910 kilohertz.
+
+42
+00:04:18,890 --> 00:04:21,950
+A push-pull obviously can't work at that frequency.
+
+43
+00:04:23,670 --> 00:04:27,170
+We have one option, work at a sub-multiple of this frequency.
+
+44
+00:04:27,870 --> 00:04:31,750
+If it's 910 kilohertz here, we can work at 91 kilohertz.
+
+45
+00:04:33,030 --> 00:04:35,810
+Now we'll check what else might be interesting at this frequency.
+
+46
+00:04:42,910 --> 00:04:48,010
+If we put a hand on the coil at this frequency, we can check how surrounding objects affect it.
+
+47
+00:04:54,460 --> 00:04:56,300
+We want frequencies that are stable.
+
+48
+00:04:58,460 --> 00:04:59,060
+Watching.
+
+49
+00:05:04,040 --> 00:05:07,180
+Now I'll put my hand on the coil and we'll see the amplitude.
+
+50
+00:05:10,240 --> 00:05:13,260
+Put my hand on, you can see the amplitude grows.
+
+51
+00:05:13,900 --> 00:05:15,940
+Put it here in the reverse turn zone.
+
+52
+00:05:17,980 --> 00:05:18,980
+Amplitude grows.
+
+53
+00:05:21,200 --> 00:05:23,280
+Now let's keep sweeping the frequency.
+
+54
+00:05:25,160 --> 00:05:26,360
+980 kilohertz.
+
+55
+00:05:27,140 --> 00:05:28,340
+Amplitude grows here too.
+
+56
+00:05:29,700 --> 00:05:31,420
+1000 kilohertz.
+
+57
+00:05:31,880 --> 00:05:33,080
+Small growth too.
+
+58
+00:05:35,520 --> 00:05:36,960
+1100 kilohertz.
+
+59
+00:05:37,460 --> 00:05:38,520
+Growth is minimal.
+
+60
+00:05:39,900 --> 00:05:45,760
+Our window of opportunity comes out somewhere from 850 to 1100 kilohertz.
+
+61
+00:05:47,740 --> 00:05:51,180
+We found our first range and now we can write it down.
+
+62
+00:05:53,780 --> 00:05:54,840
+Writing it down.
+
+63
+00:06:03,880 --> 00:06:06,520
+830 to 1100 kilohertz.
+
+64
+00:06:07,420 --> 00:06:11,160
+That's our window for the sub-multiple that we'll try to run the push-pull at.
+
+65
+00:06:12,740 --> 00:06:19,420
+Next, we'll see whether there's some higher frequency current component in the system where current growth will be even greater.
+
+66
+00:06:24,630 --> 00:06:25,590
+Sweeping by frequency.
+
+67
+00:06:34,290 --> 00:06:38,190
+Sweeping through the range and no significant amplitude growth showing up.
+
+68
+00:06:40,130 --> 00:06:42,090
+Looking for the next clear jump.
+
+69
+00:06:48,310 --> 00:06:49,630
+10 kilohertz step.
+
+70
+00:06:49,870 --> 00:06:50,650
+That's acceptable.
+
+71
+00:06:52,030 --> 00:06:55,230
+At 3800, the amplitude actually drops.
+
+72
+00:06:57,630 --> 00:06:59,090
+Here we caught it.
+
+73
+00:07:01,660 --> 00:07:06,500
+Starting at 3910 kilohertz, we have a sharp amplitude rise.
+
+74
+00:07:10,120 --> 00:07:11,880
+Now we sweep more carefully.
+
+75
+00:07:14,880 --> 00:07:16,240
+Climbing, climbing.
+
+76
+00:07:18,360 --> 00:07:19,000
+Good growth.
+
+77
+00:07:19,200 --> 00:07:21,800
+Can even switch the sweep to half a volt per division.
+
+78
+00:07:23,920 --> 00:07:25,260
+Still seeing growth.
+
+79
+00:07:28,110 --> 00:07:29,530
+One volt per division.
+
+80
+00:07:35,500 --> 00:07:39,600
+And here the drop starts at about 4650 kilohertz.
+
+81
+00:07:44,230 --> 00:07:48,530
+Maximum amplitude at 4620 to 630.
+
+82
+00:07:49,750 --> 00:07:51,290
+That's our second maximum.
+
+83
+00:07:53,310 --> 00:07:54,390
+Writing it down.
+
+84
+00:08:03,830 --> 00:08:08,450
+For 1620 to 4630 kilohertz.
+
+85
+00:08:10,510 --> 00:08:14,370
+Let's see the effect of putting a hand near the coil at this frequency.
+
+86
+00:08:14,970 --> 00:08:17,830
+At such high frequencies, losses usually show up.
+
+87
+00:08:21,390 --> 00:08:25,310
+These frequencies aren't as stable, but the amplitude is at its peak.
+
+88
+00:08:26,070 --> 00:08:27,570
+That's a normal process.
+
+89
+00:08:29,630 --> 00:08:32,210
+Let's see, maybe we can find something else.
+
+90
+00:08:37,080 --> 00:08:38,920
+Next, amplitude decrease.
+
+91
+00:08:46,650 --> 00:08:49,370
+Going faster, 100 kilohertz steps.
+
+92
+00:08:50,430 --> 00:08:51,950
+There's another small peak here.
+
+93
+00:08:53,350 --> 00:08:54,930
+Found one at 7600.
+
+94
+00:08:56,570 --> 00:08:59,630
+These frequencies are too high to be useful to us anymore.
+
+95
+00:09:00,230 --> 00:09:02,130
+And further out at 11 megahertz.
+
+96
+00:09:04,690 --> 00:09:08,650
+That high a frequency is out of reach for our systems, not needed.
+
+97
+00:09:09,150 --> 00:09:12,150
+And at that frequency, results are very unstable.
+
+98
+00:09:13,030 --> 00:09:16,030
+At 8800, the amplitude isn't that big.
+
+99
+00:09:16,390 --> 00:09:18,930
+And the effect of touching the coil is huge.
+
+100
+00:09:20,970 --> 00:09:26,210
+In practice, we've identified two operating frequencies where current is at its maximum.
+
+101
+00:09:27,090 --> 00:09:28,130
+One of them is stable.
+
+102
+00:09:33,530 --> 00:09:34,510
+Our next steps.
+
+103
+00:09:35,130 --> 00:09:37,810
+Now we need to find a sub-multiple within this range.
+
+104
+00:09:39,510 --> 00:09:43,570
+That, by spectrum analysis, hits this strong frequency.
+
+105
+00:09:45,470 --> 00:09:50,830
+And who's, say, 10th harmonic would excite one of the frequencies in this range.
+
+106
+00:09:53,920 --> 00:09:57,740
+Next, we'll need to switch the oscilloscope to spectrum analyzer mode.
+
+107
+00:09:59,700 --> 00:10:03,540
+The so-called FFT mode, fast Fourier transform.
+
+108
+00:10:04,440 --> 00:10:06,640
+And check the spectrogram of this signal.
+
+109
+00:10:07,680 --> 00:10:13,920
+So, our window of opportunity is from 83 to 110 kilohertz, as a sub-multiple.
+
+110
+00:10:17,710 --> 00:10:20,730
+Switching the oscilloscope to spectrum analyzer mode.
+
+111
+00:10:25,050 --> 00:10:26,890
+Here it is, FFT mode.
+
+112
+00:10:31,390 --> 00:10:33,510
+And what to know about taking measurements this way?
+
+113
+00:10:36,450 --> 00:10:39,810
+You can't actually measure signal harmonics with a sine wave.
+
+114
+00:10:40,150 --> 00:10:42,950
+They'd show up in the spectrum as graphs in decibels.
+
+115
+00:10:43,540 --> 00:10:47,360
+With a sine wave signal.
+
+116
+00:10:49,120 --> 00:10:50,320
+Let me show you.
+
+117
+00:10:54,600 --> 00:10:58,260
+Right now, 83 kilohertz is being fed to the input.
+
+118
+00:11:01,420 --> 00:11:02,220
+And if we look,
+
+119
+00:11:05,970 --> 00:11:11,110
+in this mode, the device only shows the central frequency being fed in on the sine.
+
+120
+00:11:14,840 --> 00:11:17,600
+In this case, that's 83 kilohertz.
+
+121
+00:11:23,280 --> 00:11:25,220
+Now we'll set the sweep per division.
+
+122
+00:11:27,120 --> 00:11:32,400
+We're interested in a sweep of around 50 kilohertz per division for the spectrum analyzer.
+
+123
+00:11:35,420 --> 00:11:37,480
+Can now disable the first output.
+
+124
+00:11:41,470 --> 00:11:43,050
+So it doesn't get in the way.
+
+125
+00:11:43,770 --> 00:11:45,570
+And now we can observe the spectral picture.
+
+126
+00:11:48,210 --> 00:11:51,150
+Remember, the signal generator is in sine mode.
+
+127
+00:11:56,460 --> 00:11:57,740
+What do we see here?
+
+128
+00:12:02,260 --> 00:12:04,740
+At the center crosshair is the frequency.
+
+129
+00:12:05,380 --> 00:12:05,680
+And
+
+130
+00:12:10,880 --> 00:12:16,200
+if we line up the central peak in decibels at the center, we'll know its frequency.
+
+131
+00:12:18,660 --> 00:12:23,120
+For example, place the center here and we see our 83 kilohertz.
+
+132
+00:12:24,240 --> 00:12:25,920
+Let me show where it's displayed.
+
+133
+00:12:27,660 --> 00:12:30,180
+On my device, it's shown in the lower left corner.
+
+134
+00:12:31,140 --> 00:12:34,280
+There it is, 83 kilohertz, right in the center.
+
+135
+00:12:36,540 --> 00:12:40,700
+So we see that what we feed in as a sine, the device detects.
+
+136
+00:12:41,600 --> 00:12:45,680
+To excite harmonics, we need to feed in a signal with steep edges.
+
+137
+00:12:48,020 --> 00:12:51,020
+Which means switching the signal generator to square wave.
+
+138
+00:12:53,460 --> 00:12:54,020
+Switching.
+
+139
+00:12:55,480 --> 00:12:57,460
+Now you can see our picture has changed.
+
+140
+00:12:59,080 --> 00:13:04,260
+We can see a series of frequencies stepped at multiples, spread over a spectrum range.
+
+141
+00:13:04,280 --> 00:13:04,740
+And
+
+142
+00:13:08,030 --> 00:13:11,330
+now the next part of the search method.
+
+143
+00:13:12,430 --> 00:13:20,730
+We've determined that our highest current amplitude is in the 4,620 to 4,630 kilohertz range.
+
+144
+00:13:23,150 --> 00:13:31,830
+Now, within our 83 to 110 kilohertz range, we want to find the frequency that gives the highest dB signal at those high frequencies.
+
+145
+00:13:31,830 --> 00:13:32,530
+Looking
+
+146
+00:13:35,820 --> 00:13:38,100
+for our frequency.
+
+147
+00:13:51,370 --> 00:13:53,130
+Here we have 630.
+
+148
+00:13:58,500 --> 00:13:59,320
+Fine-tuning.
+
+149
+00:14:13,460 --> 00:14:17,180
+There they are, our 4,630 megahertz.
+
+150
+00:14:17,680 --> 00:14:19,000
+We see it's right in the center.
+
+151
+00:14:20,360 --> 00:14:27,220
+Now, by picking frequencies in our window of opportunity, we need to place the spectrogram peak at the center of the scale.
+
+152
+00:14:36,510 --> 00:14:38,490
+And start searching by frequency.
+
+153
+00:14:39,630 --> 00:14:40,430
+Very smoothly.
+
+154
+00:14:47,010 --> 00:14:48,610
+Moving in tenths of a hertz.
+
+155
+00:14:52,820 --> 00:14:54,720
+And here we see, first hit.
+
+156
+00:14:56,880 --> 00:14:57,440
+Watching.
+
+157
+00:15:06,500 --> 00:15:09,740
+4,630 at 84.2 kilohertz.
+
+158
+00:15:12,910 --> 00:15:14,110
+Writing it down.
+
+159
+00:15:17,210 --> 00:15:18,350
+84.2.
+
+160
+00:15:19,890 --> 00:15:20,750
+Moving on.
+
+161
+00:15:23,270 --> 00:15:23,770
+There.
+
+162
+00:15:24,430 --> 00:15:25,270
+Worth pointing out.
+
+163
+00:15:26,170 --> 00:15:27,290
+84.2.
+
+164
+00:15:28,090 --> 00:15:30,250
+There are side harmonics showing up here too.
+
+165
+00:15:31,890 --> 00:15:34,810
+We want a cleaner spectrum, without side harmonics.
+
+166
+00:15:42,100 --> 00:15:42,820
+There.
+
+167
+00:15:43,760 --> 00:15:45,740
+That's roughly what the picture should look like.
+
+168
+00:15:49,620 --> 00:15:50,880
+Here's another hit.
+
+169
+00:15:52,480 --> 00:15:54,580
+At 87.4 kilohertz.
+
+170
+00:15:57,060 --> 00:15:59,040
+But we also see side peaks.
+
+171
+00:16:02,520 --> 00:16:03,320
+Writing it down.
+
+172
+00:16:04,320 --> 00:16:06,140
+87.4 kilohertz.
+
+173
+00:16:08,620 --> 00:16:09,800
+Moving on.
+
+174
+00:16:20,560 --> 00:16:22,660
+And here we found a really good frequency.
+
+175
+00:16:23,560 --> 00:16:24,260
+A clean hit.
+
+176
+00:16:24,680 --> 00:16:26,220
+No strong side harmonics.
+
+177
+00:16:26,580 --> 00:16:27,820
+90.8 kilohertz.
+
+178
+00:16:35,170 --> 00:16:36,210
+We can keep going.
+
+179
+00:16:42,860 --> 00:16:44,020
+Another hit.
+
+180
+00:16:44,500 --> 00:16:46,220
+94.5 kilohertz.
+
+181
+00:16:51,000 --> 00:16:52,680
+Also a good frequency.
+
+182
+00:16:55,640 --> 00:16:56,600
+Marking them.
+
+183
+00:16:58,000 --> 00:16:59,120
+Writing it down.
+
+184
+00:17:01,670 --> 00:17:05,190
+Noting frequencies where there are no strong side harmonics.
+
+185
+00:17:11,920 --> 00:17:13,180
+Moving on.
+
+186
+00:17:20,130 --> 00:17:21,090
+Another hit.
+
+187
+00:17:21,770 --> 00:17:24,230
+But here we already see strong side harmonics.
+
+188
+00:17:25,590 --> 00:17:26,730
+Skipping it.
+
+189
+00:17:32,190 --> 00:17:34,990
+Side harmonics at 103 kilohertz too.
+
+190
+00:17:48,060 --> 00:17:52,120
+Strong side harmonics at 107.7 kilohertz as well.
+
+191
+00:17:53,200 --> 00:17:57,260
+And our window of opportunity tops out at 110 kilohertz.
+
+192
+00:17:58,480 --> 00:17:59,620
+We've passed it.
+
+193
+00:18:00,440 --> 00:18:02,000
+Past that, we're not interested.
+
+194
+00:18:03,200 --> 00:18:05,840
+We can say we have two most likely operating frequencies.
+
+195
+00:18:08,860 --> 00:18:12,300
+90.8 kilohertz and 94.5 kilohertz.
+
+196
+00:18:14,940 --> 00:18:18,220
+At which the coil gets excited at that strong frequency.
+
+197
+00:18:24,050 --> 00:18:29,810
+Now let's see which of these falls in our 830 to 1100 kilohertz range.
+
+198
+00:18:32,930 --> 00:18:35,530
+Collapse the spectrogram and see what's happening.
+
+199
+00:18:38,070 --> 00:18:40,610
+You can see this is the first one we're exciting.
+
+200
+00:18:42,410 --> 00:18:45,670
+Right now it corresponds to 111 kilohertz.
+
+201
+00:18:46,390 --> 00:18:48,710
+Setting our 90.8 kilohertz.
+
+202
+00:18:52,680 --> 00:18:56,920
+And we can see the maximum excitation in this high frequency zone.
+
+203
+00:18:58,300 --> 00:18:59,880
+And here's one of the peaks.
+
+204
+00:19:01,420 --> 00:19:02,940
+Now we'll examine it.
+
+205
+00:19:05,520 --> 00:19:06,800
+Here's our frequency.
+
+206
+00:19:07,840 --> 00:19:10,060
+First, 90.8 kilohertz.
+
+207
+00:19:10,800 --> 00:19:11,960
+And I went to look.
+
+208
+00:19:13,360 --> 00:19:16,580
+Here's the second peak at 276 kilohertz.
+
+209
+00:19:17,320 --> 00:19:18,520
+Looking for high amplitude.
+
+210
+00:19:23,280 --> 00:19:28,560
+And here we see one of the peaks from 90.8 kilohertz hits right at 1 megahertz.
+
+211
+00:19:35,060 --> 00:19:38,540
+And we see it fits beautifully into our window of opportunity.
+
+212
+00:19:39,280 --> 00:19:46,140
+So by exciting the coil at this frequency, we drive it with both the stable first frequency component and the second one.
+
+213
+00:19:47,420 --> 00:19:50,340
+And now let's look at 94.5 kilohertz.
+
+214
+00:19:53,690 --> 00:19:54,370
+Switching.
+
+215
+00:19:55,950 --> 00:19:57,190
+94.5.
+
+216
+00:19:59,980 --> 00:20:00,900
+And looking.
+
+217
+00:20:10,530 --> 00:20:12,370
+The highest peak hits here too.
+
+218
+00:20:18,920 --> 00:20:23,280
+But the greatest stability, recall, was near 910 kilohertz.
+
+219
+00:20:27,760 --> 00:20:30,400
+The strongest gain when we put a hand on the coil.
+
+220
+00:20:31,900 --> 00:20:35,460
+And the strongest amplitude gain during the amplitude measurement.
+
+221
+00:20:36,040 --> 00:20:42,520
+So we can now conclude that 90.8 kilohertz is the best choice for push-pull operation based on the spectrogram.
+
+222
+00:20:46,770 --> 00:20:47,510
+Marking it.
+
+223
+00:20:53,080 --> 00:20:54,400
+That's the search method.
+
+224
+00:20:55,620 --> 00:21:03,080
+To verify, we can switch to our 90.8 kilohertz, collapse the spectrogram, and check the highest peaks in decibels.
+
+225
+00:21:08,200 --> 00:21:08,900
+Set it.
+
+226
+00:21:09,360 --> 00:21:12,120
+And yes, it really is 1 megahertz on the dot.
+
+227
+00:21:13,500 --> 00:21:15,680
+And we can switch to another high peak.
+
+228
+00:21:19,330 --> 00:21:20,990
+Here, the highest one.
+
+229
+00:21:23,330 --> 00:21:24,910
+That's our 4630.
+
+230
+00:21:33,730 --> 00:21:34,730
+Here's that peak.
+
+231
+00:21:40,610 --> 00:21:42,570
+So we've correctly found our frequency.
+
+232
+00:21:44,570 --> 00:21:48,630
+We can also do one more practical check of the frequencies we've identified.
+
+233
+00:21:49,030 --> 00:21:51,490
+By matching the beat patterns at different frequencies.
+
+234
+00:21:53,650 --> 00:21:57,330
+So right now a square wave is being fed at 91 kilohertz.
+
+235
+00:21:58,270 --> 00:22:00,270
+And we keep watching with the current sensors.
+
+236
+00:22:05,910 --> 00:22:07,730
+This is the signal we feed in.
+
+237
+00:22:08,670 --> 00:22:11,310
+It creates oscillations like these in the coil.
+
+238
+00:22:12,770 --> 00:22:13,810
+We'll watch the beats.
+
+239
+00:22:14,890 --> 00:22:16,160
+Collapsing the sweep and...
+
+240
+00:22:32,360 --> 00:22:33,960
+We see interesting patterns.
+
+241
+00:22:38,070 --> 00:22:44,090
+Now let's check whether these patterns, these oscillograms, look the same at the other multiple frequency.
+
+242
+00:22:46,800 --> 00:22:50,180
+Feed the signal generator 910 kilohertz.
+
+243
+00:22:57,990 --> 00:23:01,330
+The oscilloscope now shows the envelope amplitude.
+
+244
+00:23:02,890 --> 00:23:06,790
+And we see the amplitude grew, but the beats are preserved.
+
+245
+00:23:08,470 --> 00:23:09,650
+Same shape.
+
+246
+00:23:14,270 --> 00:23:15,010
+Examined.
+
+247
+00:23:15,890 --> 00:23:18,930
+Now the sweep is 5 microseconds per division.
+
+248
+00:23:19,570 --> 00:23:19,930
+And
+
+249
+00:23:26,670 --> 00:23:32,630
+we feed in our main strong frequency, 4630 kilohertz.
+
+250
+00:23:58,630 --> 00:23:59,830
+Amplitude off the chart.
+
+251
+00:24:01,490 --> 00:24:04,370
+Coming back, and we see the familiar fish shape.
+
+252
+00:24:05,470 --> 00:24:08,630
+That is, we hit the main strong frequency for this coil.
+
+253
+00:24:10,930 --> 00:24:15,290
+You see this when ramping up with a square signal, you can switch to a sine signal.
+
+254
+00:24:20,010 --> 00:24:22,250
+Amplitude will drop, but the beats stay.
+
+255
+00:24:28,800 --> 00:24:30,980
+You can see it at different sweep settings.
+
+256
+00:24:33,540 --> 00:24:35,120
+The picture holds up too.
+
+257
+00:24:41,450 --> 00:24:42,890
+Assign wave on the main carrier.
+
+258
+00:25:03,300 --> 00:25:08,280
+And likewise, if the signal is strong enough, the oscilloscope will show the envelope shape.
+
+259
+00:25:08,740 --> 00:25:10,160
+Assign wave on those fish.
+
+260
+00:25:11,800 --> 00:25:13,780
+We can also measure its frequency.
+
+261
+00:25:21,470 --> 00:25:23,330
+Switch to cursor measurement mode.
+
+262
+00:25:25,590 --> 00:25:26,590
+Press pause.
+
+263
+00:25:27,810 --> 00:25:29,210
+Set the first cursor.
+
+264
+00:25:36,910 --> 00:25:37,550
+Second.
+
+265
+00:25:45,270 --> 00:25:50,590
+We can see that the frequency of our beats in this coil is 32.47 hertz.
+
+266
+00:25:59,540 --> 00:26:05,760
+Which also confirms this isn't a 50 hertz mains pickup, but real process is happening inside this coil.
+
+267
+00:26:13,480 --> 00:26:15,920
+I verified this result in practice too.
+
+268
+00:26:17,700 --> 00:26:19,680
+91 kilohertz was fed in here.
+
+269
+00:26:20,360 --> 00:26:25,080
+And this coil started warming up very well without any load at this frequency.
+
+270
+00:26:27,420 --> 00:26:30,440
+Which confirms that the heating is happening in this zone.
+
+271
+00:26:31,980 --> 00:26:36,640
+By touch, I didn't measure with a thermometer, about 45 to 50 degrees.
+
+272
+00:26:38,600 --> 00:26:42,080
+Warming up with around 3 amps of consumption on the push-pull.
+
+273
+00:26:44,000 --> 00:26:46,100
+The coil is heating up without a load.
+
+274
+00:26:47,340 --> 00:26:50,180
+Clear current movement along the wire length.
+
+275
+00:26:52,220 --> 00:26:54,080
+Which is exactly what we want.
+
+276
+00:26:57,100 --> 00:27:00,500
+You can't do LC resonance directly on push-pull as such.
+
+277
+00:27:01,280 --> 00:27:02,020
+I'll show this later.
+
+278
+00:27:03,020 --> 00:27:06,420
+You can't feed 91 kilohertz directly to the inductor.
+
+279
+00:27:07,140 --> 00:27:08,160
+What happens?
+
+280
+00:27:08,800 --> 00:27:09,880
+You can try it of course.
+
+281
+00:27:10,200 --> 00:27:10,860
+Everyone has.
+
+282
+00:27:11,740 --> 00:27:13,520
+And something interesting happens.
+
+283
+00:27:14,300 --> 00:27:18,900
+If you feed in a frequency equal to the key's operating frequency, here's what we get.
+
+284
+00:27:23,260 --> 00:27:24,400
+Let me draw it.
+
+285
+00:27:25,740 --> 00:27:27,420
+Say this is our push-pull frequency.
+
+286
+00:27:28,680 --> 00:27:33,920
+And we have the signal during the transistor's operation that we're ramping up each half cycle.
+
+287
+00:27:37,380 --> 00:27:41,900
+When the Tesla fires at this point, the strike happens practically at maximum.
+
+288
+00:27:42,260 --> 00:27:45,300
+And we'll get what many people have seen from their own experiments.
+
+289
+00:27:45,660 --> 00:27:47,140
+The push-pull power key's blowing.
+
+290
+00:27:53,620 --> 00:27:54,100
+Blowing.
+
+291
+00:27:55,840 --> 00:27:59,340
+So to prevent that, the push-pull is driven into a different mode.
+
+292
+00:28:00,040 --> 00:28:08,080
+As I drew earlier, and a lot of people asked why I drew that picture in another video, where I have the incident wave, as I drew, and the reflected wave.
+
+293
+00:28:18,210 --> 00:28:19,430
+The reflected one.
+
+294
+00:28:20,370 --> 00:28:21,210
+And they're in phase.
+
+295
+00:28:22,630 --> 00:28:25,070
+Lots of questions about why I drew it that way.
+
+296
+00:28:25,750 --> 00:28:26,790
+Like, that's wrong.
+
+297
+00:28:27,310 --> 00:28:32,870
+We all know from the textbook that a reflected wave comes back 180 degrees out of phase.
+
+298
+00:28:34,070 --> 00:28:34,890
+All true.
+
+299
+00:28:35,630 --> 00:28:37,050
+That's the voltage reflection.
+
+300
+00:28:38,090 --> 00:28:40,090
+For current, we don't think about it that way.
+
+301
+00:28:40,770 --> 00:28:50,470
+If we have a current reflected wave in an LC tank with a 180 degree phase shift, that's equivalent to putting two magnets together with like poles facing each other.
+
+302
+00:28:53,450 --> 00:28:56,430
+You won't see a net boost from a strong magnetic field.
+
+303
+00:28:58,350 --> 00:29:02,430
+That's why, on push-pull, we get the incident and reflected wave in phase.
+
+304
+00:29:04,650 --> 00:29:09,170
+You can see this physically by hanging a current sensor on the inductor's tank circuit.
+
+305
+00:29:15,820 --> 00:29:20,520
+And on a single trace, you'll see both the wave going out and the one coming back.
+
+306
+00:29:24,080 --> 00:29:25,700
+It'll copy this wave in phase.
+
+307
+00:29:25,960 --> 00:29:27,260
+You get pretty much this picture.
+
+308
+00:29:29,260 --> 00:29:31,980
+They go in phase, just at smaller amplitude.
+
+309
+00:29:38,760 --> 00:29:48,960
+On the push-pull, this is achieved by picking the right ratio between the capacitor hung on the inductor's tank and the capacitor hung on the output of our gradient granade coil.
+
+310
+00:29:53,080 --> 00:29:54,120
+And what happens?
+
+311
+00:29:54,580 --> 00:29:57,060
+The push-pull runs at a low frequency.
+
+312
+00:29:58,320 --> 00:30:03,280
+But when we look on the scope, it'll show us a frequency higher than the main signal frequency.
+
+313
+00:30:06,340 --> 00:30:10,080
+In my case, it turned out my frequency is 91 kilohertz.
+
+314
+00:30:14,360 --> 00:30:19,700
+That means the push-pull actually has to run two times lower, can drive three times lower.
+
+315
+00:30:21,600 --> 00:30:25,920
+To get this picture, in practice I even got three waves in phase.
+
+316
+00:30:28,740 --> 00:30:31,780
+That's how it looks on the current sensor, one single phase.
+
+317
+00:30:35,300 --> 00:30:38,640
+When that happens, we get a strong net magnetic field.
+
+318
+00:30:40,060 --> 00:30:46,880
+And if we then collapse the sweep, the time per division, you can see some really interesting patterns, the fish.
+
+319
+00:30:50,220 --> 00:30:51,360
+Why do we need that trick?
+
+320
+00:30:53,420 --> 00:30:58,860
+We already talked about how, if the Tesla strikes on the fundamental, the transistors blow.
+
+321
+00:30:59,580 --> 00:31:06,400
+But if we have this picture, then when the Tesla works on free oscillation, we get a sharp current amplitude rise at this point.
+
+322
+00:31:09,040 --> 00:31:13,440
+When we look at the current transformer, we see the picture I showed in the previous video.
+
+323
+00:31:18,620 --> 00:31:22,120
+The effect of the Tesla transformer on the current in the tank circuit.
+
+324
+00:31:22,860 --> 00:31:26,440
+The current amplitude jumps up, the sign grows much larger.
+
+325
+00:31:28,220 --> 00:31:33,240
+And at the same time, the total consumption from the supply feeding the push-pull drops.
+
+326
+00:31:37,780 --> 00:31:40,680
+Current amplitude grows and consumption drops.
+
+327
+00:31:41,280 --> 00:31:49,840
+In real numbers, say in normal mode without Tesla operation, the push-pull drew three amps at 24 volts, with Tesla operation kicking in.
+
+328
+00:31:50,260 --> 00:31:53,780
+In one case, it consumes 1 amp at the same 24 volts.
+
+329
+00:31:59,340 --> 00:32:00,840
+Same 24-volt supply.
+
+330
+00:32:04,710 --> 00:32:05,730
+Interesting feature.
+
+331
+00:32:06,830 --> 00:32:09,990
+In the next videos we'll look at how this happens, how it works.
+
+332
+00:32:13,720 --> 00:32:15,840
+Good luck to everyone with your experiments.
+

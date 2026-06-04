@@ -1,0 +1,1116 @@
+1
+00:00:00,800 --> 00:00:01,880
+Hi everyone on my channel.
+
+2
+00:00:03,040 --> 00:00:09,120
+First of all, I want to congratulate all believers on the resurrection of Christ and on the bright Easter holiday.
+
+3
+00:00:10,340 --> 00:00:20,400
+This is the Q&A rubric, and today I'll answer one question that'll take us quite a lot of time to answer, which has already been asked several times by several people.
+
+4
+00:00:22,260 --> 00:00:26,020
+In honor of Easter we'll catch a fish with fins on the Tesla transformer.
+
+5
+00:00:26,700 --> 00:00:30,940
+I'll show how it forms and what features of the system's work are needed for this.
+
+6
+00:00:32,420 --> 00:00:39,740
+Also, I want to express huge gratitude to everyone who helped and continues to help financially in the development of my channel.
+
+7
+00:00:41,460 --> 00:00:42,480
+Huge thanks to everyone.
+
+8
+00:00:43,800 --> 00:00:44,840
+Let's move to the question.
+
+9
+00:00:45,500 --> 00:00:48,180
+The first to ask this question was Konstantina Gorman.
+
+10
+00:00:49,160 --> 00:00:51,260
+He divided it into two sub-questions.
+
+11
+00:00:51,260 --> 00:00:52,420
+First item.
+
+12
+00:00:53,240 --> 00:00:56,220
+Show please how to modulate the signal to get a fish with fins.
+
+13
+00:00:57,560 --> 00:00:59,080
+And the second sub-question.
+
+14
+00:00:59,740 --> 00:01:01,360
+Did you yourself get a fish with fins?
+
+15
+00:01:02,220 --> 00:01:04,620
+In your videos, it seems a simple fish swam.
+
+16
+00:01:05,400 --> 00:01:08,620
+But let me immediately answer the second little question about getting it.
+
+17
+00:01:09,460 --> 00:01:10,460
+Naturally, I got it.
+
+18
+00:01:11,140 --> 00:01:14,240
+I cited this to you, drew it graphically on a sheet of paper.
+
+19
+00:01:15,260 --> 00:01:21,720
+In the video under which you asked the question, and if I hadn't seen it in practice, naturally I couldn't draw it.
+
+20
+00:01:23,060 --> 00:01:23,960
+How this happens.
+
+21
+00:01:24,860 --> 00:01:27,960
+And about the fact that in my early videos there were simple fish.
+
+22
+00:01:29,360 --> 00:01:35,040
+Yes, there were also simple systems I showed, how the oscillating circuit swings in some video clips.
+
+23
+00:01:36,360 --> 00:01:40,540
+These were my experiments since which a large amount of time has already passed.
+
+24
+00:01:43,930 --> 00:01:45,670
+Let's move to the answer directly.
+
+25
+00:01:46,610 --> 00:01:49,430
+Now let's examine this on the oscilloscope screen.
+
+26
+00:01:50,130 --> 00:01:51,670
+So, the experiment in iron.
+
+27
+00:01:53,490 --> 00:01:55,650
+Tesla transformer, wave resonator.
+
+28
+00:01:56,570 --> 00:01:59,530
+The Tesla transformer inductor is also in resonance.
+
+29
+00:02:00,350 --> 00:02:04,610
+Here is the loop capacity that connects to the inductor in series with the bridge scheme.
+
+30
+00:02:06,010 --> 00:02:08,570
+This is the power converter with galvanic isolation.
+
+31
+00:02:09,210 --> 00:02:10,690
+This is the control board.
+
+32
+00:02:12,010 --> 00:02:14,610
+Here the lab signal generator is connected.
+
+33
+00:02:15,110 --> 00:02:17,090
+Here we'll set the interruption frequency.
+
+34
+00:02:18,350 --> 00:02:20,230
+This is the capacity accumulator.
+
+35
+00:02:21,230 --> 00:02:23,510
+Here the high voltage power supply is connected.
+
+36
+00:02:24,170 --> 00:02:26,950
+Capacity 470F at 400V.
+
+37
+00:02:28,750 --> 00:02:29,470
+Well and all.
+
+38
+00:02:30,690 --> 00:02:32,590
+Oscilloscope and lab signal generator.
+
+39
+00:02:33,350 --> 00:02:35,570
+This power supply powers the logic part.
+
+40
+00:02:36,490 --> 00:02:39,130
+This power supply powers the power part.
+
+41
+00:02:40,810 --> 00:02:44,750
+The start of the experiment we'll do first without interruption mode.
+
+42
+00:02:45,290 --> 00:02:48,010
+Look at frequency and oscillograms.
+
+43
+00:02:48,130 --> 00:02:50,830
+And further we'll already switch to interruption mode.
+
+44
+00:02:51,530 --> 00:02:55,110
+The oscilloscope probe that'll take the signal is in the air.
+
+45
+00:02:55,730 --> 00:03:01,390
+At a distance of approximately 40 centimeters from the isolated capacity of the Tesla transformer.
+
+46
+00:03:03,190 --> 00:03:04,350
+Directly the probe.
+
+47
+00:03:05,070 --> 00:03:06,730
+This is the isolated capacity.
+
+48
+00:03:07,810 --> 00:03:11,410
+Now the first experiment we do in the mode without interruption.
+
+49
+00:03:13,910 --> 00:03:15,550
+Apply power to the system.
+
+50
+00:03:25,060 --> 00:03:27,020
+Now we have power of 20V.
+
+51
+00:03:32,260 --> 00:03:33,500
+I apply the signal.
+
+52
+00:03:35,020 --> 00:03:36,920
+And you can see that here all is standard.
+
+53
+00:03:38,340 --> 00:03:39,600
+Sine wave under our hand.
+
+54
+00:03:40,560 --> 00:03:41,560
+Amplitude changes.
+
+55
+00:03:41,560 --> 00:03:49,360
+Amplitude changes slightly because the Tesla transformer has quite big dimensions and is very stable to external influences.
+
+56
+00:03:50,360 --> 00:03:51,740
+Experiment number 2.
+
+57
+00:03:52,460 --> 00:03:55,040
+Now we'll apply interruptions at frequency 10Hz.
+
+58
+00:03:56,240 --> 00:03:59,220
+Duration of interrupting interruptions 1%.
+
+59
+00:04:01,490 --> 00:04:05,310
+The voltage amplitude applied to the swing is 20V.
+
+60
+00:04:06,090 --> 00:04:07,690
+So apply power.
+
+61
+00:04:10,570 --> 00:04:11,130
+20V.
+
+62
+00:04:11,890 --> 00:04:14,030
+And now we can examine the oscillogram.
+
+63
+00:04:14,830 --> 00:04:16,210
+You see some process appeared.
+
+64
+00:04:17,150 --> 00:04:20,210
+During when the Tesla transformer starts, further fall.
+
+65
+00:04:21,310 --> 00:04:23,330
+And in the further mode, it works linearly.
+
+66
+00:04:24,350 --> 00:04:30,330
+And this point where the signal falls by exponential, this is already the end of the allowing signal for work.
+
+67
+00:04:31,610 --> 00:04:33,150
+Let's examine more detail.
+
+68
+00:04:34,610 --> 00:04:38,050
+We're interested specifically in the start of this process.
+
+69
+00:04:38,910 --> 00:04:39,970
+You can observe.
+
+70
+00:04:40,370 --> 00:04:45,210
+Actually some interesting wave process happens that allows increasing amplitude at the start.
+
+71
+00:04:46,090 --> 00:04:47,810
+Further several oscillations go.
+
+72
+00:04:49,150 --> 00:04:50,490
+And switch to linear mode.
+
+73
+00:04:51,670 --> 00:04:54,550
+From this you can conclude that we're interested in this point.
+
+74
+00:04:55,430 --> 00:05:00,230
+The rest part already leads to unjustified losses during Tesla transformer work.
+
+75
+00:05:02,590 --> 00:05:03,710
+Experiment 3.
+
+76
+00:05:04,290 --> 00:05:08,430
+In this experiment, the frequency will be supplied at 100Hz.
+
+77
+00:05:09,470 --> 00:05:13,550
+And the duration of the interrupting signal also at us is 1%.
+
+78
+00:05:13,550 --> 00:05:23,550
+And during the experiment, I'll reduce the duration of the interrupting signal to bring the Tesla transformer into optimal work mode at this 100Hz frequency.
+
+79
+00:05:28,550 --> 00:05:29,750
+Apply power.
+
+80
+00:05:35,130 --> 00:05:36,450
+Also 20V.
+
+81
+00:05:38,610 --> 00:05:40,530
+Look at the oscillogram.
+
+82
+00:05:40,990 --> 00:05:42,810
+We see a long damping process.
+
+83
+00:05:44,130 --> 00:05:46,390
+The quality factor in the system is good.
+
+84
+00:05:47,990 --> 00:05:50,530
+And now let's examine in more detail this part.
+
+85
+00:05:53,010 --> 00:05:55,490
+We see at another frequency the launch mode.
+
+86
+00:05:57,110 --> 00:06:00,010
+We have big amplitude, wave oscillations.
+
+87
+00:06:00,750 --> 00:06:05,410
+And further at this point the duration of the control signal at 1% ends.
+
+88
+00:06:05,410 --> 00:06:08,470
+And the oscillation fall in the circuit happens.
+
+89
+00:06:09,190 --> 00:06:12,130
+Now let's try to tune this system to optimal mode.
+
+90
+00:06:13,330 --> 00:06:14,610
+Start reducing duration.
+
+91
+00:06:15,330 --> 00:06:16,970
+Duration of the allowing signal.
+
+92
+00:06:18,350 --> 00:06:34,990
+0.9% 0.8% 0.7% 0.6% 0.5% 0.4% 0.3% That's what we now have on the generator.
+
+93
+00:06:36,350 --> 00:06:37,510
+Observe the oscillogram.
+
+94
+00:06:38,570 --> 00:06:41,790
+That is now we clearly see the Tesla transformer work mode.
+
+95
+00:06:42,530 --> 00:06:44,790
+This is when at us is the largest amplitude.
+
+96
+00:06:45,690 --> 00:06:47,990
+And then the control signal already ends.
+
+97
+00:06:48,730 --> 00:06:55,090
+That is, the duration of the control signal equal to the time of Tesla transformer reaching maximum amplitude.
+
+98
+00:06:55,830 --> 00:06:57,650
+And further at us a fall happens.
+
+99
+00:06:59,230 --> 00:07:02,690
+This is how the oscillogram looks if you expand it.
+
+100
+00:07:04,650 --> 00:07:07,390
+And such a Tesla transformer work mode turns out.
+
+101
+00:07:12,850 --> 00:07:15,910
+Now look, in the next experiment we'll raise the voltage.
+
+102
+00:07:18,190 --> 00:07:19,570
+Experiment number 4.
+
+103
+00:07:20,470 --> 00:07:22,930
+Frequency of interrupting signals 100 Hz.
+
+104
+00:07:24,390 --> 00:07:27,650
+Duration that we found optimal, 0.3%.
+
+105
+00:07:30,290 --> 00:07:33,950
+Now I set division per cell in volts at 200 V per cell.
+
+106
+00:07:36,430 --> 00:07:40,630
+Here it is, you can see position on first channel 200 V per cell.
+
+107
+00:07:41,190 --> 00:07:43,150
+And now we'll raise the supply voltage.
+
+108
+00:07:43,930 --> 00:07:47,630
+In previous experiments the voltage, reminder, was 20 V.
+
+109
+00:07:49,390 --> 00:07:50,650
+Now raise voltage.
+
+110
+00:07:53,290 --> 00:07:56,230
+So, now we have at the input 100 V.
+
+111
+00:08:05,620 --> 00:08:08,340
+100 V, this is consumption current.
+
+112
+00:08:12,760 --> 00:08:17,940
+On this bridge scheme transistors remain in operating mode up to 250 V of power.
+
+113
+00:08:20,020 --> 00:08:22,300
+Raise voltage 150 V.
+
+114
+00:08:32,840 --> 00:08:35,240
+Further raise voltage 200 V.
+
+115
+00:08:38,100 --> 00:08:41,200
+And here you can already hear sound appearing in the speakers.
+
+116
+00:08:41,200 --> 00:08:45,660
+And breakdown from the Tesla transformer to air already happens.
+
+117
+00:08:48,310 --> 00:08:49,750
+Such an oscillogram.
+
+118
+00:08:50,750 --> 00:08:54,390
+That is, we see the transformer stayed in optimal operating mode.
+
+119
+00:08:55,370 --> 00:08:57,590
+We have also amplitude rise.
+
+120
+00:08:58,770 --> 00:09:05,430
+And now we can examine what happens in this mode directly on the isolated capacity of the Tesla transformer.
+
+121
+00:09:15,450 --> 00:09:18,710
+Hear me already start strongly hitting through the lamp.
+
+122
+00:09:29,370 --> 00:09:31,370
+This was 200 V of power.
+
+123
+00:09:32,050 --> 00:09:35,290
+And now apply the maximum limit at 250 V.
+
+124
+00:09:44,060 --> 00:09:46,680
+Oscillogram of consumption and voltage amplitude.
+
+125
+00:10:11,580 --> 00:10:13,940
+Now you can see the static breakdown mode.
+
+126
+00:10:24,160 --> 00:10:25,500
+Now the accounting device.
+
+127
+00:10:30,360 --> 00:10:33,040
+Now we'll do a breakdown and observe consumption.
+
+128
+00:10:34,580 --> 00:10:36,980
+By sound you'll hear the breakdown.
+
+129
+00:10:46,220 --> 00:10:48,680
+And the oscillogram in breakdown mode.
+
+130
+00:10:53,700 --> 00:10:56,380
+Now here all is very strongly electrolyzed.
+
+131
+00:10:58,760 --> 00:11:00,080
+I do the breakdown.
+
+132
+00:11:12,160 --> 00:11:15,520
+Now I'll turn off power and the transformer slowly fades.
+
+133
+00:11:18,680 --> 00:11:20,800
+Look, the voltage falls gradually.
+
+134
+00:11:23,690 --> 00:11:26,590
+And hear how long still the system works in such a mode.
+
+135
+00:11:32,230 --> 00:11:35,870
+I changed the quantity of volts per cell, so I could fix the signal.
+
+136
+00:11:39,950 --> 00:11:42,590
+Nevertheless, how long the system fades.
+
+137
+00:11:43,890 --> 00:11:45,550
+Now we have order of 4 V.
+
+138
+00:11:49,450 --> 00:11:50,050
+3 V.
+
+139
+00:11:51,010 --> 00:11:53,030
+And the system still continues working.
+
+140
+00:11:58,660 --> 00:12:00,920
+A slow process of damping happens.
+
+141
+00:12:02,760 --> 00:12:06,980
+You can remember the oscillogram we observed now at breakdown.
+
+142
+00:12:09,540 --> 00:12:11,700
+At us already 1 V turns out.
+
+143
+00:12:12,400 --> 00:12:19,180
+Visible that this stable operating mode at start of launch and during breakdown happens only fading of damping oscillations.
+
+144
+00:12:20,960 --> 00:12:22,300
+In the Tesla transformer.
+
+145
+00:12:23,480 --> 00:12:28,520
+And the mode itself stays working, despite the fact that I do discharge to a metal object.
+
+146
+00:12:30,100 --> 00:12:31,220
+Experiment 5.
+
+147
+00:12:31,720 --> 00:12:37,540
+Let's examine by discharge color at what frequency this effect manifests most brightly at us.
+
+148
+00:12:38,880 --> 00:12:41,520
+And at which we already switched to non-optimal mode.
+
+149
+00:12:42,160 --> 00:12:43,740
+Now we stopped at 100 Hz.
+
+150
+00:12:45,500 --> 00:12:46,660
+Apply power.
+
+151
+00:12:47,320 --> 00:12:49,920
+Power in this case will apply 200 V.
+
+152
+00:12:56,020 --> 00:12:57,720
+Look at the discharge color.
+
+153
+00:13:05,340 --> 00:13:07,180
+Now increase the frequency.
+
+154
+00:13:10,510 --> 00:13:12,550
+150 Hz.
+
+155
+00:13:16,310 --> 00:13:18,850
+The effect even improved.
+
+156
+00:13:22,260 --> 00:13:23,180
+Raise higher.
+
+157
+00:13:26,360 --> 00:13:27,720
+200 Hz.
+
+158
+00:13:36,490 --> 00:13:37,930
+Even higher.
+
+159
+00:13:41,130 --> 00:13:42,450
+250 Hz.
+
+160
+00:13:50,790 --> 00:13:52,190
+Yes.
+
+161
+00:13:55,810 --> 00:13:57,110
+300 Hz.
+
+162
+00:14:04,820 --> 00:14:07,400
+The effect is still preserved.
+
+163
+00:14:10,060 --> 00:14:11,660
+350 Hz.
+
+164
+00:14:19,490 --> 00:14:20,950
+The effect is.
+
+165
+00:14:24,520 --> 00:14:25,580
+400 Hz.
+
+166
+00:14:29,760 --> 00:14:35,640
+And now you can notice that at 400 Hz already in the discharge color a reddish wall appears.
+
+167
+00:14:37,860 --> 00:14:44,160
+That is, above 400 Hz the effect will already badly manifest on this Tesla transformer.
+
+168
+00:14:45,520 --> 00:14:47,480
+Now 450 Hz.
+
+169
+00:14:52,570 --> 00:14:55,970
+A reddish shade is already more clearly visible.
+
+170
+00:15:01,850 --> 00:15:03,170
+500 Hz.
+
+171
+00:15:10,370 --> 00:15:12,130
+Here already visible.
+
+172
+00:15:14,130 --> 00:15:15,550
+Now I'll raise higher.
+
+173
+00:15:16,750 --> 00:15:18,310
+At 700 Hz.
+
+174
+00:15:23,150 --> 00:15:25,170
+The discharge became red.
+
+175
+00:15:26,690 --> 00:15:28,450
+And pay attention to the oscillogram.
+
+176
+00:15:30,350 --> 00:15:31,630
+Here you see.
+
+177
+00:15:32,710 --> 00:15:34,070
+700 Hz.
+
+178
+00:15:35,590 --> 00:15:37,010
+And our oscillogram.
+
+179
+00:15:38,290 --> 00:15:41,050
+That is, the effect is already absent.
+
+180
+00:15:42,250 --> 00:15:43,630
+No voltage excess.
+
+181
+00:15:45,430 --> 00:15:48,410
+And we can observe often seen standard oscillograms.
+
+182
+00:15:52,320 --> 00:15:57,560
+That way you can calculate the frequencies at which on your Tesla transformer this effect will be maximum.
+
+183
+00:15:59,120 --> 00:16:01,760
+At what frequencies it makes no sense to interrupt.
+
+184
+00:16:02,610 --> 00:16:05,020
+A small addition to experiment number 5.
+
+185
+00:16:06,560 --> 00:16:11,220
+The frequency at which the effect disappeared, we saw, was 700 Hz.
+
+186
+00:16:13,080 --> 00:16:18,400
+And the duration, as at 100 Hz, conducted experiment 0.3%.
+
+187
+00:16:19,450 --> 00:16:22,180
+For fairness we can look at the oscillogram once more.
+
+188
+00:16:25,540 --> 00:16:26,560
+Also apply.
+
+189
+00:16:28,800 --> 00:16:32,300
+Approximately 200 V, as was in experiment number 5.
+
+190
+00:16:34,340 --> 00:16:39,040
+Here you can also find this effect if I start increasing the duration of the allowing signal.
+
+191
+00:16:41,080 --> 00:16:43,760
+Now I'll set it to 1%, for example.
+
+192
+00:16:46,520 --> 00:16:54,400
+Because we understand that with the increase of the following frequency of allowing pulses, we reduce the duration of these allowing pulses.
+
+193
+00:16:58,890 --> 00:17:01,050
+Say, you also see the effect is.
+
+194
+00:17:02,790 --> 00:17:08,730
+But why I say that here it's not worth stopping at these frequencies already, I additionally determined by discharge color.
+
+195
+00:17:13,340 --> 00:17:16,260
+The discharge color will already have a reddish shade.
+
+196
+00:17:18,580 --> 00:17:22,400
+A white part in it is present, but the mode is already less effective.
+
+197
+00:17:23,800 --> 00:17:25,440
+Although work is still possible.
+
+198
+00:17:27,480 --> 00:17:32,160
+Now let's look at oscillograms of logic control that happens at 100 Hz at us.
+
+199
+00:17:35,240 --> 00:17:39,000
+Now I installed two oscilloscope probes on the logic control part.
+
+200
+00:17:39,620 --> 00:17:41,680
+Here it comes, at these points from this board.
+
+201
+00:17:43,200 --> 00:17:45,300
+And look at the oscillograms.
+
+202
+00:17:46,080 --> 00:17:48,380
+Further this signal goes to the drivers.
+
+203
+00:17:49,160 --> 00:17:52,000
+Whoever is interested, the scheme I gave on my channel.
+
+204
+00:17:52,680 --> 00:17:54,320
+Both the scheme and video on it.
+
+205
+00:17:55,240 --> 00:17:59,000
+This is a full bridge for controlling the Tesla transformer inductor.
+
+206
+00:18:01,930 --> 00:18:04,670
+Attention, now switch to the oscilloscope.
+
+207
+00:18:05,670 --> 00:18:08,250
+Now the scheme works without interruptions.
+
+208
+00:18:10,470 --> 00:18:12,250
+You see that all is standard.
+
+209
+00:18:13,730 --> 00:18:15,270
+Two signals have dead time.
+
+210
+00:18:16,850 --> 00:18:19,510
+Frequency 187.5 kHz.
+
+211
+00:18:20,210 --> 00:18:21,930
+Now I'll turn on interruption.
+
+212
+00:18:21,930 --> 00:18:26,430
+As we had, 3% at frequency 100 Hz.
+
+213
+00:18:30,100 --> 00:18:32,420
+Turn on interruption on the board.
+
+214
+00:18:34,660 --> 00:18:37,580
+And see that at us bursts from pulses appeared.
+
+215
+00:18:40,040 --> 00:18:41,180
+Press pause.
+
+216
+00:18:46,500 --> 00:18:47,260
+We can examine.
+
+217
+00:18:49,160 --> 00:18:51,560
+Such we have a burst from control pulses.
+
+218
+00:18:52,900 --> 00:18:56,500
+With frequency 186.5 kHz.
+
+219
+00:18:57,360 --> 00:19:00,260
+The Tesla transformer is swung with such a signal.
+
+220
+00:19:02,160 --> 00:19:07,260
+Naturally, on the resonance inductor this process switches to sine oscillations.
+
+221
+00:19:08,600 --> 00:19:09,860
+Kind of fish.
+
+222
+00:19:12,040 --> 00:19:16,480
+And further already happens the wave process on the Tesla transformer itself.
+
+223
+00:19:18,460 --> 00:19:20,460
+I can change frequency here.
+
+224
+00:19:24,960 --> 00:19:26,060
+Set sink approximately.
+
+225
+00:19:27,320 --> 00:19:28,820
+It will of course jump.
+
+226
+00:19:30,480 --> 00:19:34,160
+200, 300, 400 now Hz frequency.
+
+227
+00:19:37,120 --> 00:19:39,640
+Here will be frequency 500 Hz.
+
+228
+00:19:41,960 --> 00:19:46,000
+That is this system is controlled in total now with a couple of pulses.
+
+229
+00:19:50,100 --> 00:19:57,480
+If at a frequency, for example, returning to the same 100 Hz, will increase the duration of the allowing pulse.
+
+230
+00:19:57,480 --> 00:20:00,060
+Then the burst at us will increase in time.
+
+231
+00:20:04,160 --> 00:20:08,440
+In this case, now the duration of the control signal is 1%.
+
+232
+00:20:13,280 --> 00:20:14,340
+Such a burst.
+
+233
+00:20:15,320 --> 00:20:22,120
+That is, you can observe that nothing especially tricky in controlling the Tesla transformer in this system is absent.
+
+234
+00:20:23,120 --> 00:20:25,180
+Here the feature of the coil itself works.
+
+235
+00:20:25,960 --> 00:20:28,120
+That it's in wave mode, carefully made.
+
+236
+00:20:28,960 --> 00:20:33,540
+A combination of LC resonance and wave on wire length happens.
+
+237
+00:20:34,480 --> 00:20:35,940
+Matched with the grounding wire.
+
+238
+00:20:36,860 --> 00:20:37,880
+Such effects come out.
+
+239
+00:20:39,000 --> 00:20:47,500
+If all this you do on a usual Tesla transformer that's in LC resonance, naturally, you won't get such effects and such a silograms.
+
+240
+00:20:50,040 --> 00:20:56,500
+In this experiment, we'll look at how the receiving Tesla transformer reacts to this operating mode.
+
+241
+00:20:57,620 --> 00:20:59,620
+The coils are fully identical.
+
+242
+00:21:01,140 --> 00:21:03,160
+Grounded to one and the same grounding.
+
+243
+00:21:04,360 --> 00:21:12,880
+During the experiment, I shift the frequency of the receiving Tesla transformer slightly lower than at the transmitter with the help of such an aluminum spring.
+
+244
+00:21:14,160 --> 00:21:16,060
+Make an additional united capacity.
+
+245
+00:21:16,920 --> 00:21:20,160
+This way I detune the phasing between the two Tesla transformers.
+
+246
+00:21:21,340 --> 00:21:22,720
+Now apply power.
+
+247
+00:21:23,800 --> 00:21:26,680
+The system for now works without interruptions.
+
+248
+00:21:29,060 --> 00:21:30,940
+Apply power of order 15V.
+
+249
+00:21:32,800 --> 00:21:34,780
+This for us is the transmitter.
+
+250
+00:21:36,280 --> 00:21:39,100
+See that near the transmitter the lamp doesn't glow.
+
+251
+00:21:40,500 --> 00:21:42,760
+Near the receiver it glows brightly.
+
+252
+00:21:44,200 --> 00:21:48,700
+Now if we bring the lighting from the receiver directly to the isolated capacity.
+
+253
+00:21:50,160 --> 00:21:52,020
+Here a small spark slips through.
+
+254
+00:21:52,020 --> 00:21:57,420
+It's small on the transmitter and on the receiver it stretches to 1.5 cm.
+
+255
+00:21:59,930 --> 00:22:02,910
+Now we switch the system to interruption mode.
+
+256
+00:22:08,490 --> 00:22:10,930
+Interruption frequency 100 Hz.
+
+257
+00:22:11,350 --> 00:22:13,550
+Duration 0.3%.
+
+258
+00:22:16,060 --> 00:22:18,060
+Now voltage 50V.
+
+259
+00:22:23,200 --> 00:22:25,380
+Breakdown at distance 4 cm.
+
+260
+00:22:26,740 --> 00:22:30,660
+Here breakdown at distance 0.5 cm on the transmitter.
+
+261
+00:22:31,820 --> 00:22:33,760
+Raise amplitude 100 V.
+
+262
+00:22:36,900 --> 00:22:39,520
+On the transmitter breakdown 2 cm.
+
+263
+00:22:40,900 --> 00:22:42,720
+On the receiver 10 cm.
+
+264
+00:22:47,180 --> 00:22:49,560
+Voltage 150 V.
+
+265
+00:22:54,020 --> 00:22:57,540
+Transmitting breakdown 3 to 3.5 cm.
+
+266
+00:23:07,480 --> 00:23:09,940
+They're not yet optimally matched in this mode.
+
+267
+00:23:09,940 --> 00:23:12,640
+By sound it's audible when I bring my hand.
+
+268
+00:23:13,100 --> 00:23:14,240
+Amplitude on the receiver.
+
+269
+00:23:19,620 --> 00:23:21,060
+Now I give the mode 200
+
+270
+00:23:25,500 --> 00:23:25,740
+V.
+
+271
+00:23:25,740 --> 00:23:27,980
+Very strongly let the transmitter out.
+
+272
+00:23:47,520 --> 00:23:49,160
+Now two transformers work.
+
+273
+00:24:17,180 --> 00:24:19,100
+Here when I do discharge on the transmitter.
+
+274
+00:24:20,780 --> 00:24:21,920
+Here the consumption changes.
+
+275
+00:24:34,020 --> 00:24:35,420
+On this everyone all good.
+
+276
+00:24:37,560 --> 00:24:39,280
+Successful experiments to everyone.
+
+277
+00:24:40,100 --> 00:24:40,680
+Good mood.
+
+278
+00:24:41,420 --> 00:24:42,500
+Once more with the holiday.
+
+279
+00:24:43,320 --> 00:24:48,320
+Whoever would like to give material help to the channel, details under my video clips.
+

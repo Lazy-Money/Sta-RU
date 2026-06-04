@@ -1,0 +1,160 @@
+1
+00:00:00,800 --> 00:00:05,820
+So, a hypothesis was put forward that the form of the oscillogram on the transistor drains.
+
+2
+00:00:06,300 --> 00:00:12,140
+Due to this IR2113 driver not handling its work well, there's some interference in the gate.
+
+3
+00:00:12,880 --> 00:00:13,440
+Capacitance.
+
+4
+00:00:13,740 --> 00:00:16,160
+And that's why the transistor produces such spikes.
+
+5
+00:00:17,020 --> 00:00:18,000
+Let's look now.
+
+6
+00:00:20,160 --> 00:00:22,480
+This is the signal on the transistor gates.
+
+7
+00:00:25,300 --> 00:00:28,560
+Signal is clear, the system power isn't on right now.
+
+8
+00:00:30,000 --> 00:00:31,180
+So, here's our power.
+
+9
+00:00:32,360 --> 00:00:34,160
+Right now consumption is zero.
+
+10
+00:00:34,620 --> 00:00:36,580
+I'm closing the jumper between the batteries.
+
+11
+00:00:39,400 --> 00:00:42,540
+We see, there's consumption, power has gone.
+
+12
+00:00:43,300 --> 00:00:44,760
+Look at the oscillogram shape.
+
+13
+00:00:46,260 --> 00:00:49,920
+As we see, the oscillogram practically hasn't changed.
+
+14
+00:00:51,640 --> 00:00:56,960
+Edges are clear, only at the bottom small ripple was added in this part from static pickup.
+
+15
+00:00:58,080 --> 00:00:59,160
+Now we'll look.
+
+16
+00:00:59,900 --> 00:01:01,180
+Decreasing the duty cycle.
+
+17
+00:01:05,040 --> 00:01:12,300
+We see that at any duty cycle the driver clearly holds the edge and no interference is observed in the gate capacitance.
+
+18
+00:01:22,610 --> 00:01:24,290
+Decreasing duty cycle more.
+
+19
+00:01:29,880 --> 00:01:33,620
+That is, the driver works great, doesn't produce any interference.
+
+20
+00:01:35,080 --> 00:01:37,380
+System is on, everything's normal.
+
+21
+00:01:38,020 --> 00:01:42,280
+Now I'll switch the blue channel to the transistor drain, where there's the static spike.
+
+22
+00:01:48,280 --> 00:01:50,480
+Remove the amplitude trace and look.
+
+23
+00:01:55,280 --> 00:01:59,860
+Yellow channel is our gate control of this transistor, blue is the spike on the drain.
+
+24
+00:02:04,000 --> 00:02:05,220
+Adding duty cycle.
+
+25
+00:02:07,180 --> 00:02:08,600
+Duty cycle goes.
+
+26
+00:02:11,760 --> 00:02:12,840
+Good signal edge.
+
+27
+00:02:22,010 --> 00:02:24,570
+Now we'll bring it to optimal operating mode.
+
+28
+00:02:32,120 --> 00:02:34,220
+Here it is, the optimal mode.
+
+29
+00:02:35,540 --> 00:02:38,600
+Sets in when our duty cycle is 41%.
+
+30
+00:02:38,600 --> 00:02:42,380
+We see, here's our control and here's our signal.
+
+31
+00:02:47,460 --> 00:02:49,640
+No interference in the gate for us.
+
+32
+00:02:50,920 --> 00:02:53,960
+This process goes purely in this core with gaps.
+
+33
+00:02:58,370 --> 00:03:02,630
+For those interested, here's the schematic by which this driver is connected.
+
+34
+00:03:06,110 --> 00:03:07,730
+Here's its wiring schematic.
+
+35
+00:03:09,490 --> 00:03:12,750
+Here I specifically noted what else can be done with this driver.
+
+36
+00:03:15,170 --> 00:03:16,570
+Very interesting moment.
+
+37
+00:03:16,970 --> 00:03:22,970
+If you feed 5V to the 9th pin through a regulator, this driver will be compatible with 5V logic.
+
+38
+00:03:27,620 --> 00:03:32,900
+And here, if we feed high supply potential to pin 11, both channels will be disabled.
+
+39
+00:03:34,940 --> 00:03:37,640
+On this driver this way you can make system protection.
+
+40
+00:03:41,530 --> 00:03:42,650
+Once more the schematic.
+

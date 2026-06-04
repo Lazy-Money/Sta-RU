@@ -1,0 +1,3803 @@
+1
+00:00:00,080 --> 00:00:04,220
+First, I 'll ask a question of this
+nature. Have you ever built a Tesla coil?
+
+2
+00:00:05,710 --> 00:00:08,390
+I have, yes, many, not just once,
+many times.
+
+3
+00:00:11,610 --> 00:00:15,460
+Well, you know, I mean, I built a
+kacher oscillator. It 's not really
+
+4
+00:00:15,460 --> 00:00:18,800
+a Tesla coil—well, I did n't use a
+spark gap. Just a kacher.
+
+5
+00:00:21,650 --> 00:00:25,730
+Well, with a kacher, it is actually
+a bit difficult to clearly see that
+
+6
+00:00:25,730 --> 00:00:29,580
+particular point. With a Tesla coil,
+in order to observe the effect
+
+7
+00:00:29,580 --> 00:00:33,480
+exactly as the author intended it
+to be, there really needs to be an
+
+8
+00:00:33,480 --> 00:00:35,050
+interruption in the system.
+
+9
+00:00:36,680 --> 00:00:38,440
+Have you built such a system, or no?
+
+10
+00:00:39,920 --> 00:00:42,150
+No, I have n't built one like that,
+unfortunately.
+
+11
+00:00:43,490 --> 00:00:47,300
+You 've also heard that, for
+example, when people recommend
+
+12
+00:00:47,300 --> 00:00:51,900
+building a Tesla coil, they say you
+must calculate it and match the L C
+
+13
+00:00:51,900 --> 00:00:56,310
+resonance frequency with the wave
+frequency on the wire length. That
+
+14
+00:00:56,310 --> 00:00:57,620
+kind of information.
+
+15
+00:00:57,960 --> 00:00:59,590
+Well, I 've heard that, yes.
+
+16
+00:01:00,190 --> 00:01:03,580
+But I did n't really give it much
+importance, just an effective
+
+17
+00:01:03,580 --> 00:01:05,830
+sparker, that 's what I was
+interested in.
+
+18
+00:01:06,760 --> 00:01:08,530
+So that was kind of left aside.
+
+19
+00:01:08,910 --> 00:01:11,970
+Well, now I need to figure this out,
+and how to see it on an
+
+20
+00:01:11,970 --> 00:01:15,440
+oscilloscope or visually, how to
+know that it 's actually happening?
+
+21
+00:01:16,990 --> 00:01:20,420
+Right, so when that recommendation
+is actually followed, things
+
+22
+00:01:20,420 --> 00:01:24,060
+proceed as expected. And even if
+everyone does follow it, you might
+
+23
+00:01:24,060 --> 00:01:27,600
+ask, how do we actually get the
+matching? We achieve the matching
+
+24
+00:01:27,600 --> 00:01:30,250
+by using what is known as a top
+load capacitance.
+
+25
+00:01:31,800 --> 00:01:32,960
+Ah, well, you know.
+
+26
+00:01:33,040 --> 00:01:33,740
+I 'll just ...
+
+27
+00:01:34,100 --> 00:01:38,050
+Then it turns out that the coil 's
+own L C frequency should actually
+
+28
+00:01:38,050 --> 00:01:40,360
+be somewhat higher than expected,
+right?
+
+29
+00:01:41,740 --> 00:01:45,800
+Yes, in fact, it turns out to be
+higher. I 'm going to share my
+
+30
+00:01:45,800 --> 00:01:48,490
+screen now so you can see what I 'm
+doing.
+
+31
+00:01:52,340 --> 00:01:55,780
+And I 'll show you, step by step,
+using the very same calculator from
+
+32
+00:01:55,780 --> 00:01:59,330
+Vyacheslav Gorchilin 's website, so
+that it 's absolutely clear what we
+
+33
+00:01:59,330 --> 00:02:00,490
+'re talking about here.
+
+34
+00:02:08,700 --> 00:02:10,420
+Is the screen sharing working?
+
+35
+00:02:11,600 --> 00:02:14,700
+Yes, it is definitely visible, you
+can see it quite clearly.
+
+36
+00:02:14,980 --> 00:02:19,200
+So, look, this is the online
+calculator that I have shown in my
+
+37
+00:02:19,200 --> 00:02:23,770
+videos before. In this particular
+case, let 's take a look at a coil
+
+38
+00:02:23,770 --> 00:02:28,400
+as an example. Here, we 're working
+with a wire length of one hundred
+
+39
+00:02:28,400 --> 00:02:32,830
+and fifty meters, which is fairly
+long. That length will give us a
+
+40
+00:02:32,830 --> 00:02:37,190
+frequency of five hundred kilohertz,
+according to the calculator.
+
+41
+00:02:37,750 --> 00:02:38,950
+I think it should be.
+
+42
+00:02:39,450 --> 00:02:43,400
+To determine the quarter, we need
+to know the total amount of wire on
+
+43
+00:02:43,400 --> 00:02:47,170
+the coil. As we agreed, let 's say
+we need to wind one hundred and
+
+44
+00:02:47,170 --> 00:02:51,050
+fifty meters of wire. We then have
+to multiply these one hundred and
+
+45
+00:02:51,050 --> 00:02:54,880
+fifty meters by four, and see what
+kind of wave we get as a result.
+
+46
+00:02:55,250 --> 00:02:59,640
+That fits within these six hundred
+meters. Then one hundred and fifty
+
+47
+00:02:59,640 --> 00:03:03,180
+meters will be the quarter for this
+wave. Is that clear?
+
+48
+00:03:04,600 --> 00:03:06,500
+So it 's six hundred meters and ...
+
+49
+00:03:10,860 --> 00:03:14,490
+Yes. Okay, now I 'll go ahead and
+carefully write down these readings
+
+50
+00:03:14,490 --> 00:03:17,160
+for myself, just to make sure I
+have them recorded.
+
+51
+00:03:19,570 --> 00:03:24,210
+So, for example, what I 'm going to
+do here is carefully calculate this
+
+52
+00:03:24,210 --> 00:03:25,600
+for you right now ...
+
+53
+00:03:31,370 --> 00:03:36,090
+Okay, one hundred and fifty meters.
+So, our frame for the calculation
+
+54
+00:03:36,090 --> 00:03:39,210
+will be— let me explain how we ’ ll
+set it up.
+
+55
+00:03:40,980 --> 00:03:45,500
+Let 's take mine, the one I 'm
+winding on. I 'll measure it right
+
+56
+00:03:45,500 --> 00:03:46,500
+now, as it is.
+
+57
+00:03:47,900 --> 00:03:52,010
+So, the frame is precisely one
+hundred and fifty-three millimeters
+
+58
+00:03:52,010 --> 00:03:53,020
+in total length.
+
+59
+00:03:54,820 --> 00:03:59,880
+So, right here, we enter one
+hundred and fifty-three. Next, we
+
+60
+00:03:59,880 --> 00:04:03,690
+need to determine the exact length
+of the turn.
+
+61
+00:04:06,360 --> 00:04:09,560
+We can easily calculate this by
+using the following method ...
+
+62
+00:04:10,910 --> 00:04:14,520
+One hundred and fifty-three times
+three will be four hundred and
+
+63
+00:04:14,520 --> 00:04:15,440
+fifty something.
+
+64
+00:04:17,250 --> 00:04:20,860
+No, no, no, we are actually going
+to calculate it by using a specific
+
+65
+00:04:20,860 --> 00:04:21,610
+formula, okay?
+
+66
+00:04:21,710 --> 00:04:23,430
+Pi r squared, pi ...
+you know,
+
+67
+00:04:23,430 --> 00:04:26,510
+Well, there 's two pi r, so in our
+case right now it 's one hundred
+
+68
+00:04:26,510 --> 00:04:27,820
+and fifty-three millimeters.
+
+69
+00:04:30,560 --> 00:04:33,500
+That comes out to, let 's multiply
+it. Okay.
+
+70
+00:04:33,520 --> 00:04:36,350
+One hundred and fifty-three times
+three point fourteen.
+
+71
+00:04:40,000 --> 00:04:43,360
+So the length of our turn is
+forty-eight centimeters.
+
+72
+00:04:46,760 --> 00:04:48,710
+Okay, forty-eight centimeters. Done.
+
+73
+00:04:49,510 --> 00:04:53,610
+Now we know that our wire length is
+one hundred and fifty meters. We
+
+74
+00:04:53,610 --> 00:04:57,410
+take our one hundred and fifty
+meters and divide by forty-eight
+
+75
+00:04:57,410 --> 00:04:58,150
+centimeters.
+
+76
+00:05:02,040 --> 00:05:06,510
+So, one hundred and fifty divided
+by zero point forty-eight. We get
+
+77
+00:05:06,510 --> 00:05:08,610
+three hundred and twelve turns.
+
+78
+00:05:12,540 --> 00:05:14,210
+So, three hundred and twelve turns.
+
+79
+00:05:14,890 --> 00:05:19,010
+Now we can enter the number of
+turns here. It comes out to three
+
+80
+00:05:19,010 --> 00:05:20,250
+hundred and twelve.
+
+81
+00:05:22,800 --> 00:05:24,200
+And now we need to decide,
+
+82
+00:05:26,220 --> 00:05:28,910
+what kind of conductor we 'll use
+to wind our coil.
+
+83
+00:05:30,070 --> 00:05:33,900
+Well, for example, let 's use a
+one-millimeter wire to make the
+
+84
+00:05:33,900 --> 00:05:36,060
+math easier. That is, if we have
+...
+
+85
+00:05:36,680 --> 00:05:40,640
+three hundred and twelve turns,
+then our winding height will be
+
+86
+00:05:40,640 --> 00:05:44,090
+three hundred and twelve
+millimeters. Three hundred and
+
+87
+00:05:44,090 --> 00:05:48,560
+twelve. That 's what we 'll enter,
+assuming it 's a one-millimeter wire.
+
+88
+00:05:50,530 --> 00:05:53,220
+And here 's what we can see the
+program is giving us.
+
+89
+00:05:53,260 --> 00:05:57,950
+Look here, the resonant frequency,
+pay attention to this, it 's seven
+
+90
+00:05:57,950 --> 00:06:02,420
+hundred and eighty kilohertz. But
+we calculated that our frequency
+
+91
+00:06:02,420 --> 00:06:04,700
+should be five hundred kilohertz.
+
+92
+00:06:04,900 --> 00:06:05,740
+Yes, yes.
+
+93
+00:06:05,740 --> 00:06:08,890
+Right here, in this calculator, it
+calculated it for us, there it is,
+
+94
+00:06:08,890 --> 00:06:09,960
+five hundred kilohertz.
+
+95
+00:06:11,350 --> 00:06:12,260
+Exactly, yeah.
+
+96
+00:06:13,220 --> 00:06:14,790
+So, what does that leave us with?
+
+97
+00:06:14,830 --> 00:06:18,910
+With a standard winding type, if we
+wind the coil turn-to-turn, the LC
+
+98
+00:06:18,910 --> 00:06:22,520
+resonance frequency is always
+higher than the frequency of the
+
+99
+00:06:22,520 --> 00:06:25,470
+wave propagating along the length
+of the conductor.
+
+100
+00:06:26,200 --> 00:06:29,080
+So now, we need to add an isolated
+capacitance here.
+
+101
+00:06:29,580 --> 00:06:31,290
+And take a look at this right here.
+
+102
+00:06:31,370 --> 00:06:35,040
+There 's a wave propagation speed
+coefficient of one point six.
+
+103
+00:06:36,590 --> 00:06:41,070
+But what we want is for this to be
+exactly one. That is, when this
+
+104
+00:06:41,070 --> 00:06:45,550
+coefficient is one, it means our
+waves are equalized in frequency.
+
+105
+00:06:45,550 --> 00:06:47,280
+Right. To do that, we ...
+
+106
+00:06:48,770 --> 00:06:51,780
+Ah, so that means different
+frequencies, different propagation?
+
+107
+00:06:51,870 --> 00:06:52,750
+Yes, that 's ...
+
+108
+00:06:53,270 --> 00:06:56,600
+I have n't delved into it, but I
+know it should be one in the
+
+109
+00:06:56,600 --> 00:06:59,530
+calculations. It 's likely a
+frequency ratio, and this
+
+110
+00:06:59,530 --> 00:07:02,910
+mathematical ratio means that
+frequency is one point six times
+
+111
+00:07:02,910 --> 00:07:06,790
+higher. You 'd have to calculate it,
+if anyone 's interested. Okay. So,
+
+112
+00:07:06,790 --> 00:07:07,960
+we add a sphere here.
+
+113
+00:07:08,460 --> 00:07:09,710
+I 've selected a sphere.
+
+114
+00:07:09,910 --> 00:07:13,260
+First, there 's the capacitance,
+the sphere. And now we 'll enter
+
+115
+00:07:13,260 --> 00:07:15,030
+the diameters of our spheres here.
+
+116
+00:07:17,230 --> 00:07:20,760
+Okay, let 's start with a one
+hundred millimeter sphere.
+
+117
+00:07:20,840 --> 00:07:21,480
+Let 's see.
+
+118
+00:07:22,240 --> 00:07:24,500
+See, our coefficient has changed.
+
+119
+00:07:24,560 --> 00:07:25,860
+It 's now one point two.
+
+120
+00:07:25,900 --> 00:07:27,350
+And the frequency has dropped.
+
+121
+00:07:27,410 --> 00:07:31,290
+Five hundred and eighty-three. But
+we 're aiming for five hundred.
+
+122
+00:07:31,310 --> 00:07:33,590
+So, let 's increase the sphere 's
+diameter.
+
+123
+00:07:34,780 --> 00:07:38,640
+One hundred and thirty. That 's
+closer. One point one, and the
+
+124
+00:07:38,640 --> 00:07:42,500
+frequency is falling. We 'll
+probably need a sphere around one
+
+125
+00:07:42,500 --> 00:07:46,810
+hundred and fifty. No, still not
+enough. Okay, one hundred and sixty.
+
+126
+00:07:46,810 --> 00:07:47,250
+Almost.
+
+127
+00:07:54,230 --> 00:07:55,300
+Oh, there 's a mistake.
+
+128
+00:07:55,380 --> 00:07:59,760
+Yeah, hold on. One hundred and ...
+there, seventy. Typed a one twice.
+
+129
+00:07:59,760 --> 00:08:02,840
+There. Five hundred and ten. We 're
+almost there.
+
+130
+00:08:02,910 --> 00:08:04,440
+one hundred seventy-five
+
+131
+00:08:04,440 --> 00:08:05,640
+five hundred five
+
+132
+00:08:05,640 --> 00:08:10,310
+one hundred eighty Oh, so now we
+'ve calculated our coil. We can see
+
+133
+00:08:10,310 --> 00:08:14,690
+that the frequency matches the
+calculated one, yes, five hundred
+
+134
+00:08:14,690 --> 00:08:15,670
+one kilohertz.
+
+135
+00:08:16,480 --> 00:08:19,540
+And now the propagation velocity
+coefficient has become one.
+
+136
+00:08:21,190 --> 00:08:24,720
+Now this system can be assembled,
+and what we get is
+
+137
+00:08:25,190 --> 00:08:27,970
+a Tesla transformer with these
+specific dimensions.
+
+138
+00:08:28,420 --> 00:08:32,700
+In practice, you can use spheres of
+different diameters here. Suppose
+
+139
+00:08:32,700 --> 00:08:36,470
+you do n't have a one hundred
+eighty, right? We can put a one
+
+140
+00:08:36,470 --> 00:08:38,730
+hundred fifty millimeter sphere
+here.
+
+141
+00:08:39,680 --> 00:08:43,230
+And to get the frequency we need,
+this sphere should be raised higher.
+
+142
+00:08:43,880 --> 00:08:47,000
+When we raise the isolated
+capacitance higher above the Tesla
+
+143
+00:08:47,000 --> 00:08:50,270
+transformer, the LC resonance
+frequency of the system decreases.
+
+144
+00:08:51,030 --> 00:08:54,180
+The closer the sphere, the higher
+the frequency becomes.
+
+145
+00:08:54,730 --> 00:08:57,970
+So, if you do n't have the exact
+size for the isolated capacitance,
+
+146
+00:08:57,970 --> 00:08:58,950
+it 's not a problem.
+
+147
+00:09:00,150 --> 00:09:04,750
+You can use the sphere you have to
+tune the frequency to where it
+
+148
+00:09:04,750 --> 00:09:09,560
+needs to be. And now the time has
+come, let 's say we 've built such
+
+149
+00:09:09,560 --> 00:09:14,660
+a Tesla transformer, and we start
+to run it, which is what everyone does.
+
+150
+00:09:15,450 --> 00:09:20,000
+And a very interesting situation
+arises. A person did everything
+
+151
+00:09:20,000 --> 00:09:24,620
+right, just as I 've shown, but
+they get a streamer at the output
+
+152
+00:09:24,620 --> 00:09:28,520
+and consider the Tesla transformer
+tuned based on that.
+
+153
+00:09:29,210 --> 00:09:33,970
+But in reality, it 's sort of ...
+even if the conditions are met, it
+
+154
+00:09:33,970 --> 00:09:34,890
+'s incorrect.
+
+155
+00:09:34,990 --> 00:09:38,930
+Because people often do not realize
+that different Tesla transformers
+
+156
+00:09:38,930 --> 00:09:42,640
+actually have what you might call a
+certain threshold of required
+
+157
+00:09:42,640 --> 00:09:46,520
+energy that must be pumped into the
+system in order for them to work
+
+158
+00:09:46,520 --> 00:09:47,040
+properly,
+
+159
+00:09:47,390 --> 00:09:51,150
+per unit of time for a wave to
+travel along the conductor 's
+
+160
+00:09:51,150 --> 00:09:55,350
+length; practically no one does
+this. Those working with spark gaps
+
+161
+00:09:55,350 --> 00:09:57,770
+usually just stumble upon it by
+chance.
+
+162
+00:10:00,230 --> 00:10:03,110
+That 's because there 's a fairly
+large amount of energy
+
+163
+00:10:03,210 --> 00:10:07,250
+delivered in the pulse, and that 's
+where these interesting effects can
+
+164
+00:10:07,250 --> 00:10:10,530
+manifest, which the author himself
+describes in his works.
+
+165
+00:10:13,050 --> 00:10:16,550
+Usually, an inductor is added to
+the system, and at this five
+
+166
+00:10:16,550 --> 00:10:20,570
+hundred kilohertz frequency, they
+start feeding it a square wave. Say,
+
+167
+00:10:20,570 --> 00:10:23,720
+it runs off transistors using
+either a single-period or
+
+168
+00:10:23,720 --> 00:10:27,510
+two-period circuit, like a bridge
+or half-bridge, whatever someone
+
+169
+00:10:27,510 --> 00:10:28,500
+solders together.
+
+170
+00:10:28,970 --> 00:10:29,770
+I see.
+
+171
+00:10:29,770 --> 00:10:34,360
+But the output is just a brush
+discharge, and that 's it. If a
+
+172
+00:10:34,360 --> 00:10:37,300
+person uses an interrupter in this
+mode,
+
+173
+00:10:38,500 --> 00:10:42,990
+So it turns out to be like a
+musical coil, Tesla. Meaning you
+
+174
+00:10:42,990 --> 00:10:46,360
+can play music on it at different
+frequencies.
+
+175
+00:10:46,610 --> 00:10:48,000
+It 's modulation, right?
+
+176
+00:10:48,020 --> 00:10:49,850
+Yes, it 's a kind of modulation.
+
+177
+00:10:49,890 --> 00:10:53,520
+So if you look at a Tesla
+transformer 's oscillogram, you see
+
+178
+00:10:53,520 --> 00:10:55,700
+these so-called fish shapes forming.
+
+179
+00:10:55,850 --> 00:10:58,960
+And that 's it, the melody follows
+the modulation frequency.
+
+180
+00:10:59,520 --> 00:11:03,730
+This is basically all they do in a
+standard Tesla transformer setup.
+
+181
+00:11:03,810 --> 00:11:06,550
+And people stop there, thinking
+they 've actually built it.
+
+182
+00:11:07,200 --> 00:11:10,670
+But in reality, this only has an
+indirect relation to a Tesla
+
+183
+00:11:10,670 --> 00:11:11,370
+transformer.
+
+184
+00:11:11,550 --> 00:11:14,050
+I mean, compared to what the author
+himself intended.
+
+185
+00:11:15,420 --> 00:11:20,400
+Now, let me tell you the most
+interesting part. It turns out that,
+
+186
+00:11:22,740 --> 00:11:26,940
+if we work with a spark gap, we can
+operate through so-called
+
+187
+00:11:26,940 --> 00:11:31,700
+displacement currents. Now, if you
+use a pulse with a steep front, to
+
+188
+00:11:31,700 --> 00:11:36,310
+snap into the inductor, the Tesla
+transformer gets the right energy
+
+189
+00:11:36,310 --> 00:11:39,810
+for its size, and a wave forms
+along the conductor.
+
+190
+00:11:43,060 --> 00:11:46,810
+In transistor-based systems,
+especially in cases where we are
+
+191
+00:11:46,810 --> 00:11:50,740
+working with low voltage, we really
+can not afford that, because
+
+192
+00:11:50,740 --> 00:11:53,800
+semiconductor technology simply can
+not handle it.
+
+193
+00:11:54,690 --> 00:11:57,640
+Plus, if this system is
+specifically calculated for five
+
+194
+00:11:57,640 --> 00:12:00,790
+hundred kilohertz, which is
+actually quite a high frequency,
+
+195
+00:12:00,790 --> 00:12:03,630
+that 's really the limit for most
+push-pull solutions.
+
+196
+00:12:05,470 --> 00:12:08,200
+Wait, you mean, like, the lowest
+frequency at the bottom?
+
+197
+00:12:08,260 --> 00:12:12,160
+That is the maximum frequency for
+the type of electronic circuitry
+
+198
+00:12:12,160 --> 00:12:14,630
+that people usually find on the
+internet,.
+
+199
+00:12:17,140 --> 00:12:18,530
+I mean, for the inductor.
+
+200
+00:12:18,710 --> 00:12:21,910
+No, it 's practically a short
+circuit in that sense, right?
+
+201
+00:12:21,910 --> 00:12:24,320
+Five hundred kilohertz is the
+lowest frequency.
+
+202
+00:12:24,750 --> 00:12:29,160
+No, no, this frequency is limited
+by standard P W M controllers. Like
+
+203
+00:12:29,160 --> 00:12:31,560
+the T L four ninety-four, for
+example.
+
+204
+00:12:31,780 --> 00:12:33,230
+And the semiconductor ones?
+
+205
+00:12:34,070 --> 00:12:37,090
+Yes, if it 's an I R twenty-one
+fifty-three, for instance,
+
+206
+00:12:38,820 --> 00:12:42,020
+the frequency depends on the maker,
+but it 's around three hundred
+
+207
+00:12:42,020 --> 00:12:43,600
+fifty to four hundred kilohertz.
+
+208
+00:12:44,270 --> 00:12:45,850
+So it does n't quite reach it.
+
+209
+00:12:45,990 --> 00:12:49,650
+The T L four ninety-four can output
+a frequency of about five hundred
+
+210
+00:12:49,650 --> 00:12:50,570
+thirty kilohertz.
+
+211
+00:12:50,780 --> 00:12:54,720
+That 's it. Beyond that, there are
+no push-pull solutions online.
+
+212
+00:12:54,860 --> 00:12:56,910
+You 'd have to build them yourself
+for higher,
+
+213
+00:12:57,550 --> 00:13:01,960
+for a higher frequency if it 's
+needed. Anyway, let 's go back to
+
+214
+00:13:01,960 --> 00:13:03,820
+the energy transfer moment.
+
+215
+00:13:03,880 --> 00:13:06,400
+In a spark gap, it 's clear how it
+happens.
+
+216
+00:13:06,700 --> 00:13:09,610
+A sharp rising edge through
+displacement current.
+
+217
+00:13:10,070 --> 00:13:12,900
+But in our case, if you perform the
+standard operation,
+
+218
+00:13:12,950 --> 00:13:16,570
+I do n't get it, what displacement
+in a spark gap? I do n't understand.
+
+219
+00:13:17,580 --> 00:13:19,610
+This is called displacement
+currents.
+
+220
+00:13:21,170 --> 00:13:22,670
+Have you heard anything about this?
+
+221
+00:13:23,610 --> 00:13:26,540
+Well, here is the question,
+displacement current on the spark
+
+222
+00:13:26,540 --> 00:13:27,860
+gap, I just did n't get it.
+
+223
+00:13:27,910 --> 00:13:31,170
+No, the displacement current is
+actually formed between the
+
+224
+00:13:31,170 --> 00:13:33,130
+inductor and the Tesla transformer.
+
+225
+00:13:34,000 --> 00:13:35,440
+Ah, between the windings.
+
+226
+00:13:35,840 --> 00:13:39,470
+Between the windings, interaction
+occurs at high voltage, if applied
+
+227
+00:13:39,470 --> 00:13:42,990
+to the inductor, and a steep rise
+time, not through inductive, not
+
+228
+00:13:42,990 --> 00:13:46,570
+through inductance, not through the
+magnetic field, but most of the
+
+229
+00:13:46,570 --> 00:13:49,170
+interaction happens through
+displacement current.
+
+230
+00:13:50,130 --> 00:13:51,890
+And capacitive interactions.
+
+231
+00:13:52,310 --> 00:13:53,390
+Ah, capacitive.
+
+232
+00:13:53,670 --> 00:13:54,470
+Capacitive.
+
+233
+00:13:54,550 --> 00:13:58,170
+Right, capacitive interactions.
+They are very fast, and they can
+
+234
+00:13:58,170 --> 00:14:00,460
+transfer significant amounts of
+energy in
+
+235
+00:14:00,800 --> 00:14:01,960
+a short period of time.
+
+236
+00:14:02,520 --> 00:14:06,040
+So, that is why you can observe
+wave acceleration along the wire length.
+
+237
+00:14:06,580 --> 00:14:10,430
+In our case, when we are working
+with semiconductor technology, we
+
+238
+00:14:10,430 --> 00:14:14,400
+really only have one tool left that
+can actually launch a wave along
+
+239
+00:14:14,400 --> 00:14:18,080
+the entire length of the wire. That
+tool is to work through the
+
+240
+00:14:18,080 --> 00:14:21,520
+magnetic field. But in a normal
+situation, or under typical
+
+241
+00:14:21,520 --> 00:14:22,410
+circumstances,,
+
+242
+00:14:25,390 --> 00:14:28,940
+if we just connect the inductor and
+feed square waves into it, we wo
+
+243
+00:14:28,940 --> 00:14:32,490
+n't be able to pump that amount of
+energy through the magnetic field
+
+244
+00:14:32,490 --> 00:14:33,870
+in a short period of time.
+
+245
+00:14:34,090 --> 00:14:37,800
+And that is why we resort to using
+the properties of resonant systems.
+
+246
+00:14:38,670 --> 00:14:41,730
+And resonant systems have some very
+interesting properties.
+
+247
+00:14:42,500 --> 00:14:44,170
+They are due to the fact that
+
+248
+00:14:46,650 --> 00:14:50,450
+resonant systems can exchange a
+large amount of energy with each
+
+249
+00:14:50,450 --> 00:14:54,120
+other in a short period of time, if
+they are tuned to the same
+
+250
+00:14:54,120 --> 00:14:54,730
+frequency.
+
+251
+00:14:55,170 --> 00:14:58,680
+And the amount of this energy is
+limited only by
+
+252
+00:15:03,360 --> 00:15:06,970
+the physical, the physical strength
+of this device. That is, by how
+
+253
+00:15:06,970 --> 00:15:10,520
+much the reactive currents of the
+capacitance and inductance, from
+
+254
+00:15:10,520 --> 00:15:13,360
+which these resonant systems are
+made, can withstand.
+
+255
+00:15:14,500 --> 00:15:18,200
+So it turns out, if we now, in
+semiconductor technology, to this
+
+256
+00:15:18,200 --> 00:15:20,320
+standard inductor that we will make,
+
+257
+00:15:20,490 --> 00:15:23,910
+about that, there is also the
+tuning of the inductor and Tesla,
+
+258
+00:15:23,910 --> 00:15:27,320
+they must be in a multiple of
+lengths. I have talked about this
+
+259
+00:15:27,320 --> 00:15:28,090
+on my channel.
+
+260
+00:15:29,050 --> 00:15:33,350
+So now, if we tune the inductor to
+resonance at that same calculated
+
+261
+00:15:33,350 --> 00:15:34,500
+frequency of ours,
+
+262
+00:15:34,650 --> 00:15:38,770
+five hundred kilohertz, then it
+turns out that we now have an
+
+263
+00:15:38,770 --> 00:15:41,250
+interaction of two resonant systems.
+
+264
+00:15:41,470 --> 00:15:45,510
+The first is the resonant system of
+the inductor, and the second is the
+
+265
+00:15:45,510 --> 00:15:49,320
+resonant system of the winding
+itself, that is, the secondary coil.
+
+266
+00:15:50,770 --> 00:15:54,740
+This resonant system is also formed
+by the inductance and capacitance
+
+267
+00:15:54,740 --> 00:15:58,360
+of this coil, plus the additional
+capacitance of this sphere we
+
+268
+00:15:58,360 --> 00:16:01,160
+calculated at one hundred and
+eighty millimeters.
+
+269
+00:16:01,450 --> 00:16:02,330
+in this case.
+
+270
+00:16:03,190 --> 00:16:08,420
+And now we can pump a large amount
+of energy per unit of time through
+
+271
+00:16:08,420 --> 00:16:13,640
+resonant systems. So, what is this
+for? If this energy is pumped from
+
+272
+00:16:13,640 --> 00:16:18,410
+the power source through the
+resonant system into the secondary
+
+273
+00:16:18,410 --> 00:16:20,790
+Tesla coil, then we can now use
+
+274
+00:16:21,270 --> 00:16:25,350
+this trick and the properties of
+resonant systems to accelerate a
+
+275
+00:16:25,350 --> 00:16:29,430
+wave along the length of the
+conductor, just like on a spark gap.
+
+276
+00:16:29,430 --> 00:16:33,130
+This is exactly what very few
+people know about or give any
+
+277
+00:16:33,130 --> 00:16:37,340
+importance to. And only in this
+mode can we see what you 're asking
+
+278
+00:16:37,340 --> 00:16:40,910
+about: what does it look like when
+we do the combination?
+
+279
+00:16:42,080 --> 00:16:42,680
+Yes.
+
+280
+00:16:42,680 --> 00:16:46,290
+In all of those specific cases that
+I have mentioned to you during our
+
+281
+00:16:46,290 --> 00:16:50,000
+conversation, you honestly will not
+see any noticeable difference at all.
+
+282
+00:16:52,400 --> 00:16:54,070
+It will be the same sine wave.
+
+283
+00:16:54,850 --> 00:16:58,720
+But in this case, if you accelerate
+using L-C resonance intermediaries,
+
+284
+00:16:58,720 --> 00:17:02,360
+that 's exactly where you can get
+this wave along the length of the
+
+285
+00:17:02,360 --> 00:17:02,920
+conductor.
+
+286
+00:17:03,100 --> 00:17:04,860
+And then the oscillogram will
+change.
+
+287
+00:17:06,250 --> 00:17:08,250
+What other condition is necessary?
+
+288
+00:17:09,330 --> 00:17:11,200
+And how will the oscillogram change?
+
+289
+00:17:11,240 --> 00:17:12,260
+What will change there?
+
+290
+00:17:12,300 --> 00:17:16,630
+I 've shown the oscillogram in
+videos on my channel. It looks like
+
+291
+00:17:16,630 --> 00:17:17,560
+...
+I called it
+
+292
+00:17:17,700 --> 00:17:18,720
+a fish with fins.
+
+293
+00:17:19,360 --> 00:17:20,260
+That is,
+
+294
+00:17:20,260 --> 00:17:21,050
+Ah, I see.
+
+295
+00:17:21,050 --> 00:17:25,760
+such an oscillogram shows that the
+Tesla transformer reaches maximum
+
+296
+00:17:25,760 --> 00:17:30,190
+amplitude along a non-classical
+trajectory. After that, there is
+
+297
+00:17:30,960 --> 00:17:34,940
+a decay of the amplitude. And then,
+if we continue to drive the system
+
+298
+00:17:34,940 --> 00:17:38,580
+with pulses, the L-C resonance will
+start to accelerate further,
+
+299
+00:17:38,890 --> 00:17:41,260
+and the amplitude wo n't rise any
+further.
+
+300
+00:17:41,800 --> 00:17:46,620
+So, we 're only interested in this
+short moment in time when we impart
+
+301
+00:17:46,620 --> 00:17:50,880
+energy to the wave along the length
+of the conductor using L-C
+
+302
+00:17:50,880 --> 00:17:54,860
+resonance intermediaries. This wave
+is what will determine
+
+303
+00:17:55,790 --> 00:18:00,370
+whether it will actually be a Tesla
+transformer as the author intended,
+
+304
+00:18:00,370 --> 00:18:02,920
+or just a useless L-C resonance
+sparker.
+
+305
+00:18:04,850 --> 00:18:07,120
+There 's another very important
+point here.
+
+306
+00:18:07,460 --> 00:18:10,210
+The system 's threshold must be
+overcome.
+
+307
+00:18:11,390 --> 00:18:15,940
+This energy threshold is very often
+determined by the dimensions of the
+
+308
+00:18:15,940 --> 00:18:19,440
+system. That is, for every Tesla
+transformer, given its
+
+309
+00:18:20,460 --> 00:18:23,720
+dimensions, there 's a minimum
+amount of energy that can trigger a
+
+310
+00:18:23,720 --> 00:18:25,630
+wave along the length of the
+conductor.
+
+311
+00:18:26,430 --> 00:18:29,470
+So, if it 's a large Tesla
+transformer, you need to pump
+
+312
+00:18:29,470 --> 00:18:31,520
+exactly that amount of energy into
+it.
+
+313
+00:18:31,650 --> 00:18:34,580
+For a small one, it will be a
+smaller amount of energy.
+
+314
+00:18:34,630 --> 00:18:37,880
+And since we work through the
+intermediaries of L-C resonance, we can
+
+315
+00:18:40,240 --> 00:18:43,830
+draw, well, practically an
+unlimited amount of energy.
+
+316
+00:18:43,940 --> 00:18:48,390
+It will already be limited by our
+semiconductors and our power source
+
+317
+00:18:48,390 --> 00:18:49,570
+in the usual case.
+
+318
+00:18:49,700 --> 00:18:50,960
+And so it turns out ...
+
+319
+00:18:50,960 --> 00:18:52,910
+Well, another question arises here
+...
+
+320
+00:18:52,910 --> 00:18:54,950
+Well, let me just finish this point
+first.
+
+321
+00:18:55,100 --> 00:18:56,910
+Yes, yes, yes, of course, of course.
+
+322
+00:18:57,060 --> 00:19:01,010
+We know that the current in the
+system depends very heavily on the
+
+323
+00:19:01,010 --> 00:19:02,110
+voltage potential.
+
+324
+00:19:02,810 --> 00:19:07,320
+Therefore, if we want to transfer
+energy into the system in a shorter
+
+325
+00:19:07,320 --> 00:19:09,110
+period of time, we must ...
+
+326
+00:19:09,500 --> 00:19:13,810
+increase the voltage that is
+applied to the power switches. Now
+
+327
+00:19:13,810 --> 00:19:15,620
+you can ask your question.
+
+328
+00:19:17,940 --> 00:19:21,470
+Two resonant systems. Here we have
+the inductor and the coi ...
+
+329
+00:19:21,470 --> 00:19:24,650
+and the secondary winding itself,
+then. And wo n't it ...
+
+330
+00:19:24,650 --> 00:19:25,390
+wo n't it ...
+
+331
+00:19:25,450 --> 00:19:28,990
+result in the effect, as they call
+it, the G-I-R generator, the
+
+332
+00:19:28,990 --> 00:19:30,650
+resonant indicator generator?
+
+333
+00:19:30,880 --> 00:19:34,420
+Two resonant systems, they kind of
+dampen each other there, it seems.
+
+334
+00:19:34,880 --> 00:19:36,830
+Is that why you need to interrupt
+it, then?
+
+335
+00:19:39,190 --> 00:19:43,150
+This effect is involved here, but
+we do n't interrupt it for that
+
+336
+00:19:43,150 --> 00:19:45,800
+reason. I 'll explain both points
+right now.
+
+337
+00:19:45,920 --> 00:19:50,020
+We interrupt it so that we do n't
+just waste energy further, because
+
+338
+00:19:50,020 --> 00:19:53,620
+when the system is tuned to a
+quarter wave, it will radiate.
+
+339
+00:19:54,480 --> 00:19:56,520
+And we 're not interested in that
+at all.
+
+340
+00:19:56,600 --> 00:20:01,190
+We 're interested in that short
+period of time when this wave is
+
+341
+00:20:01,190 --> 00:20:05,780
+formed along the length of the
+conductor. And then all the other
+
+342
+00:20:05,780 --> 00:20:06,730
+manipulations
+
+343
+00:20:07,110 --> 00:20:10,800
+to ramp up this effect, they will
+only lead to an increase in L-C
+
+344
+00:20:10,800 --> 00:20:12,700
+resonance and unjustified losses.
+
+345
+00:20:14,320 --> 00:20:14,830
+There.
+
+346
+00:20:15,620 --> 00:20:18,820
+As for what you said, there is
+interaction between two resonant
+
+347
+00:20:18,820 --> 00:20:19,230
+systems.
+
+348
+00:20:19,790 --> 00:20:23,930
+In this case, it 's the secondary
+coil of the Tesla transformer and
+
+349
+00:20:23,930 --> 00:20:24,750
+its inductor.
+
+350
+00:20:25,390 --> 00:20:27,750
+Such an interaction is naturally
+present there.
+
+351
+00:20:28,330 --> 00:20:31,890
+And we can compare this to
+mechanics, when we act on something
+
+352
+00:20:31,890 --> 00:20:33,410
+using a long lever, right?
+
+353
+00:20:33,610 --> 00:20:37,580
+So in our case, the long lever is
+precisely the Tesla transformer,
+
+354
+00:20:37,580 --> 00:20:39,790
+and it keeps the inductor 's
+appetite
+
+355
+00:20:41,110 --> 00:20:45,420
+in check, so to speak. It basically
+overpowers this first resonant
+
+356
+00:20:45,420 --> 00:20:47,070
+system and suppresses it.
+
+357
+00:20:47,270 --> 00:20:51,650
+That is, the secondary winding of
+the Tesla transformer itself will
+
+358
+00:20:51,650 --> 00:20:55,830
+take the necessary portion of
+energy for its process and then wo
+
+359
+00:20:55,830 --> 00:20:57,760
+n't let its inductor ramp up.
+
+360
+00:20:59,050 --> 00:21:03,010
+There. That 's exactly why, if ...
+these systems, they can ...
+
+361
+00:21:03,010 --> 00:21:07,090
+consume a very small amount of
+energy in this mode. Only what is
+
+362
+00:21:07,090 --> 00:21:11,370
+necessary to accelerate the wave
+along the length of the conductor.
+
+363
+00:21:12,660 --> 00:21:14,050
+And how is this expressed?
+
+364
+00:21:14,070 --> 00:21:17,070
+First of all, it results in an
+anomalous oscillogram.
+
+365
+00:21:17,150 --> 00:21:18,730
+Like this little fish with fins.
+
+366
+00:21:19,290 --> 00:21:19,970
+Secondly ...
+
+367
+00:21:21,010 --> 00:21:24,470
+Around the Tesla transformer, the
+physical movement of charged
+
+368
+00:21:24,470 --> 00:21:26,510
+particles in a gaseous medium
+begins.
+
+369
+00:21:27,180 --> 00:21:31,340
+In other words, an interesting
+effect is observed, which few are
+
+370
+00:21:31,340 --> 00:21:35,630
+familiar with, where a powerful
+static field and a large amount of
+
+371
+00:21:35,630 --> 00:21:40,060
+static electricity arise around the
+Tesla transformer. And there, it
+
+372
+00:21:40,060 --> 00:21:44,080
+turns out, you can already
+implement Tesla 's patent, which he
+
+373
+00:21:44,080 --> 00:21:46,460
+...
+Called the utilization of radiant
+
+374
+00:21:46,460 --> 00:21:46,920
+energy.
+
+375
+00:21:49,170 --> 00:21:52,600
+Ordinary classical physics
+attributed it to the photoelectric
+
+376
+00:21:52,600 --> 00:21:53,000
+effect.
+
+377
+00:21:54,020 --> 00:21:58,540
+And indeed, if we take a metal
+plate, polished, as he recommended,
+
+378
+00:21:58,540 --> 00:22:02,780
+connect it to one plate of a
+capacitor, and connect the second
+
+379
+00:22:02,780 --> 00:22:05,280
+plate of the capacitor to the
+ground.
+
+380
+00:22:05,710 --> 00:22:09,670
+If you put a plate like that, about
+a meter by a meter, out in the sun
+
+381
+00:22:09,670 --> 00:22:12,600
+on a sunny day, yes, there will be
+tenths of a volt.
+
+382
+00:22:13,290 --> 00:22:17,090
+On this plate, that is, on the
+capacitance relative to the ground.
+
+383
+00:22:18,020 --> 00:22:22,350
+But here we do this differently. A
+plate of about twenty by twenty
+
+384
+00:22:22,350 --> 00:22:26,480
+centimeters is enough for us, which
+we can place near the Tesla
+
+385
+00:22:26,480 --> 00:22:30,740
+transformer. And we will see a very
+interesting picture, that our
+
+386
+00:22:30,740 --> 00:22:32,800
+capacitor will start to charge.
+
+387
+00:22:33,460 --> 00:22:35,100
+And here is the most important
+point.
+
+388
+00:22:35,390 --> 00:22:36,780
+People see such effects.
+
+389
+00:22:37,290 --> 00:22:40,390
+When, for example, there are
+working kachers, they set up diodes
+
+390
+00:22:40,390 --> 00:22:42,160
+in a fork, they call it a fork
+there.
+
+391
+00:22:42,350 --> 00:22:44,530
+Avramenko 's fork, and it charges
+the same way.
+
+392
+00:22:45,070 --> 00:22:47,770
+Well, these are completely and
+absolutely different things.
+
+393
+00:22:48,550 --> 00:22:52,060
+With this Avramenko fork, people
+are essentially sitting on their
+
+394
+00:22:52,060 --> 00:22:52,990
+own power source.
+
+395
+00:22:53,400 --> 00:22:56,900
+They try to extract something there,
+some even believe you can get more
+
+396
+00:22:56,900 --> 00:22:58,690
+out of it, but no one will get more.
+
+397
+00:22:59,770 --> 00:23:03,780
+But in this case, we begin to
+collect additional charged
+
+398
+00:23:03,780 --> 00:23:07,500
+particles that ...
+Come from the surrounding gas-air
+
+399
+00:23:07,500 --> 00:23:08,080
+mixture.
+
+400
+00:23:09,110 --> 00:23:09,410
+There.
+
+401
+00:23:10,110 --> 00:23:12,800
+And if we collect them, then that
+is exactly what it is.
+
+402
+00:23:12,890 --> 00:23:16,790
+That additional energy that we can
+obtain in this case. And the
+
+403
+00:23:16,790 --> 00:23:20,000
+capacitor there can charge up to
+serious potentials.
+
+404
+00:23:20,510 --> 00:23:22,550
+I, for instance, got two kilovolts
+on it.
+
+405
+00:23:24,000 --> 00:23:25,670
+And it charges very quickly.
+
+406
+00:23:27,678 --> 00:23:30,888
+Well, I 'd like to ask some, you
+could say, final questions—just to
+
+407
+00:23:30,888 --> 00:23:34,008
+make sure I really understand
+everything we 've discussed so far.
+
+408
+00:23:34,008 --> 00:23:37,128
+To clarify, as it were, what I 've
+understood and what I have n't
+
+409
+00:23:37,128 --> 00:23:39,898
+quite grasped yet, just to be
+certain. So, if I understand
+
+410
+00:23:39,898 --> 00:23:42,968
+correctly, a quarter-wave can be
+achieved, right? I just want to
+
+411
+00:23:42,968 --> 00:23:45,408
+make sure I 'm not missing anything
+important here.
+
+412
+00:23:48,038 --> 00:23:51,728
+If you pump in enough energy—really,
+if you supply a sufficient amount
+
+413
+00:23:51,728 --> 00:23:55,368
+of energy—then this energy can be
+pumped in through conductors, using
+
+414
+00:23:55,368 --> 00:23:58,638
+resonance. In other words, by
+making use of resonance, you can
+
+415
+00:23:58,638 --> 00:24:01,318
+transfer energy into the system
+through conductors.
+
+416
+00:24:01,988 --> 00:24:06,668
+But this coil also, well, regulates
+the portion itself, secondarily,
+
+417
+00:24:06,668 --> 00:24:10,088
+like, at a certain point, it
+dampens the inductor.
+
+418
+00:24:10,818 --> 00:24:11,928
+That 's how it seems.
+
+419
+00:24:13,508 --> 00:24:16,798
+Naturally, yes, once the coil
+receives the necessary portion of
+
+420
+00:24:16,798 --> 00:24:19,928
+energy for its operation, it then
+prevents the inductor from
+
+421
+00:24:19,928 --> 00:24:20,728
+consuming more.
+
+422
+00:24:22,318 --> 00:24:26,058
+And is this expressed as, well, an
+increase in the current to the
+
+423
+00:24:26,058 --> 00:24:29,918
+inductor feed—meaning that it 's
+dampening it—or rather a decrease?
+
+424
+00:24:29,918 --> 00:24:32,258
+I think the current does increase,
+right?
+
+425
+00:24:32,668 --> 00:24:37,268
+No, the current actually drops. You
+can observe an interesting effect.
+
+426
+00:24:37,268 --> 00:24:41,008
+Take this Tesla transformer
+inductor, tuned to resonance,
+
+427
+00:24:41,008 --> 00:24:45,138
+connect it to your bridge or
+half-bridge system, and just use a
+
+428
+00:24:45,138 --> 00:24:49,338
+one point five volt battery or a
+lab power supply, set it to one
+
+429
+00:24:49,338 --> 00:24:53,938
+point five or three volts. You 'll
+see that this inductor, without the
+
+430
+00:24:53,938 --> 00:24:58,008
+Tesla coil, will consume a large
+amount of current even at low
+
+431
+00:24:58,008 --> 00:25:01,748
+voltage. And if you start
+increasing the voltage to four,
+
+432
+00:25:01,748 --> 00:25:05,818
+five, or six volts, the current
+will increase many times over.
+
+433
+00:25:07,988 --> 00:25:11,878
+So, it 's actually very dangerous
+if you have a ground break during
+
+434
+00:25:11,878 --> 00:25:15,778
+operation— especially if it 's
+poorly connected—or if, for example,
+
+435
+00:25:15,778 --> 00:25:19,788
+the tank capacitance on the Tesla
+transformer, which is this isolated
+
+436
+00:25:19,788 --> 00:25:23,688
+capacitance, gets disconnected.
+This could happen, for instance, if
+
+437
+00:25:23,688 --> 00:25:27,168
+you accidentally hit it with your
+hand while working nearby.
+
+438
+00:25:27,968 --> 00:25:31,718
+In other words, if a frequency
+mismatch occurs, your inductor will
+
+439
+00:25:31,718 --> 00:25:35,348
+lose the influence of the Tesla
+transformer 's secondary winding
+
+440
+00:25:35,348 --> 00:25:38,458
+and will instantly consume a
+massive amount of current.
+
+441
+00:25:39,308 --> 00:25:42,868
+And usually, when this surge
+happens, at least one hundred volts
+
+442
+00:25:42,868 --> 00:25:44,228
+or so is being supplied.
+
+443
+00:25:45,298 --> 00:25:48,878
+Now, imagine if it was consuming
+six to eight amps at three volts,
+
+444
+00:25:48,878 --> 00:25:50,968
+what would happen at one hundred
+volts?
+
+445
+00:25:51,258 --> 00:25:55,798
+Naturally, there are two possible
+outcomes. Either the power switches
+
+446
+00:25:55,798 --> 00:26:00,338
+in operation will blow out, which
+is most common, or the power supply
+
+447
+00:26:00,338 --> 00:26:01,468
+itself will fail.
+
+448
+00:26:02,038 --> 00:26:02,548
+There.
+
+449
+00:26:04,648 --> 00:26:08,948
+And then there 's this, how should
+I put it, it turns out that if it
+
+450
+00:26:08,948 --> 00:26:12,728
+'s, well, a sign of what I 've
+understood, if the coil is in
+
+451
+00:26:12,728 --> 00:26:16,698
+resonance, in wave resonance at
+one-quarter wave, then near the
+
+452
+00:26:16,698 --> 00:26:20,418
+coil, some kind of ball or static
+field forms, how should I
+
+453
+00:26:20,418 --> 00:26:21,448
+understand that?
+
+454
+00:26:23,638 --> 00:26:24,988
+How does that manifest?
+
+455
+00:26:25,328 --> 00:26:27,048
+I mean, there is some kind of ...
+
+456
+00:26:27,048 --> 00:26:29,738
+Well, it is invisible, of course,
+this kind of wave ...
+
+457
+00:26:29,738 --> 00:26:33,158
+It is not just that it is invisible.
+You can actually feel it on
+
+458
+00:26:33,158 --> 00:26:33,648
+yourself.
+
+459
+00:26:33,928 --> 00:26:37,508
+I mean, first of all, the Tesla
+coil in this mode stops being a
+
+460
+00:26:37,508 --> 00:26:38,198
+useless toy.
+
+461
+00:26:38,928 --> 00:26:41,558
+You might have played with one
+yourself, sticking your fingers
+
+462
+00:26:41,558 --> 00:26:42,378
+near the streamers.
+
+463
+00:26:42,458 --> 00:26:43,618
+Yeah, sure, of course.
+
+464
+00:26:43,878 --> 00:26:46,658
+And you have seen that many times
+on the internet.
+
+465
+00:26:46,838 --> 00:26:49,058
+Well, those are all just useless
+sparklers.
+
+466
+00:26:49,168 --> 00:26:52,568
+In this mode, if the coil is
+well-tuned and running, just let
+
+467
+00:26:52,568 --> 00:26:54,658
+someone try sticking their fingers
+in.
+
+468
+00:26:54,928 --> 00:26:57,668
+It will give them such a shock they
+wo n't want to do it again.
+
+469
+00:26:58,228 --> 00:27:02,278
+That is the first thing. Because
+charged particles start moving from
+
+470
+00:27:02,278 --> 00:27:06,198
+the environment already. And that
+includes them moving through the
+
+471
+00:27:06,198 --> 00:27:06,868
+human body.
+
+472
+00:27:07,868 --> 00:27:10,448
+And the interruption happens at a
+low frequency.
+
+473
+00:27:11,068 --> 00:27:14,268
+And this low frequency is different
+from that high frequency.
+
+474
+00:27:14,638 --> 00:27:18,358
+The Tesla coil runs at its high
+frequency, but it will feel
+
+475
+00:27:18,358 --> 00:27:22,138
+physically very unpleasant as
+charges move through the body.
+
+476
+00:27:22,418 --> 00:27:26,758
+That is the classic energy we are
+all used to. At the same time, the
+
+477
+00:27:26,758 --> 00:27:31,298
+discharge on the Tesla coil will be
+bright white. The second thing that
+
+478
+00:27:31,298 --> 00:27:34,538
+sets a real Tesla apart from a
+useless sparkler ...
+
+479
+00:27:34,538 --> 00:27:36,418
+...
+is the formation of static
+
+480
+00:27:36,418 --> 00:27:37,848
+electricity around it.
+
+481
+00:27:38,718 --> 00:27:41,488
+Which is detected on the
+capacitance, like I said, on the
+
+482
+00:27:41,488 --> 00:27:42,328
+plate we connect.
+
+483
+00:27:42,428 --> 00:27:43,528
+Ah, right, right, I see.
+
+484
+00:27:43,898 --> 00:27:45,188
+Relative to the ground.
+
+485
+00:27:45,668 --> 00:27:47,808
+And it depends on the interruption
+frequency.
+
+486
+00:27:48,718 --> 00:27:52,718
+And more precisely, on which part
+of the cycle the interruption ends.
+
+487
+00:27:52,718 --> 00:27:55,958
+Whether it is on the positive
+half-cycle or the negative
+
+488
+00:27:55,958 --> 00:27:56,958
+acceleration one.
+
+489
+00:27:57,698 --> 00:28:01,428
+It will determine the potential we
+have relative to the ground.
+
+490
+00:28:01,668 --> 00:28:05,138
+A positive charge or a negative
+charge on that capacitance.
+
+491
+00:28:05,598 --> 00:28:07,408
+You can get either one or the other.
+
+492
+00:28:08,228 --> 00:28:11,988
+And can it jump? Can it jump from
+one cycle to another? That is just
+
+493
+00:28:11,988 --> 00:28:13,558
+a question out of curiosity.
+
+494
+00:28:15,108 --> 00:28:18,318
+It depends, but you would have to
+run experiments, you know, to see
+
+495
+00:28:18,318 --> 00:28:18,958
+for yourself.
+
+496
+00:28:19,058 --> 00:28:19,768
+I see.
+
+497
+00:28:19,768 --> 00:28:20,558
+To observe it.
+
+498
+00:28:20,558 --> 00:28:23,628
+It is quite easy to catch there,
+but it means you can charge it
+
+499
+00:28:23,628 --> 00:28:26,308
+either positively or negatively
+relative to the ground.
+
+500
+00:28:26,588 --> 00:28:28,128
+I will emphasize it again.
+
+501
+00:28:28,128 --> 00:28:30,728
+Oh, that is very interesting, I had
+not thought of that, yeah.
+
+502
+00:28:31,688 --> 00:28:33,078
+Specifically without diodes.
+
+503
+00:28:33,178 --> 00:28:37,068
+This is actually the specific mode
+that Nikola Tesla himself writes
+
+504
+00:28:37,068 --> 00:28:40,728
+about, but honestly, I do not
+really understand why people read
+
+505
+00:28:40,728 --> 00:28:42,788
+his work and still somehow miss it.
+
+506
+00:28:44,208 --> 00:28:46,338
+You know, Sergey, I have read some
+of it too.
+
+507
+00:28:47,108 --> 00:28:50,708
+But when it was explained to me in
+plain words, it finally clicked for me.
+
+508
+00:28:51,028 --> 00:28:52,648
+It clicked, that is the thing.
+
+509
+00:28:53,168 --> 00:28:54,748
+But I also want to ask this.
+
+510
+00:28:55,648 --> 00:28:59,178
+Should the inductor be a multiple
+of the length of the secondary?
+
+511
+00:28:59,178 --> 00:29:01,768
+Well, and if we ...
+well, tune everything to the
+
+512
+00:29:01,768 --> 00:29:04,358
+frequency of the secondary, well,
+the second ...
+
+513
+00:29:04,358 --> 00:29:07,998
+secondary winding, there should be
+some capacitance there, selected
+
+514
+00:29:07,998 --> 00:29:10,528
+for the frequency, that 's how it
+works, right?
+
+515
+00:29:14,598 --> 00:29:15,388
+Naturally.
+
+516
+00:29:15,748 --> 00:29:18,068
+To select the frequency, we have an
+inductor,
+
+517
+00:29:18,338 --> 00:29:22,158
+most often, if this work is done on
+semiconductors, there are six to
+
+518
+00:29:22,158 --> 00:29:23,748
+eight turns of the inductor.
+
+519
+00:29:24,348 --> 00:29:28,188
+So for it we select ...
+this is standard classical physics,
+
+520
+00:29:28,548 --> 00:29:30,678
+we get a series resonant circuit,
+
+521
+00:29:30,818 --> 00:29:34,178
+we select the inductance, that is,
+we select the capacitance for this
+
+522
+00:29:34,178 --> 00:29:34,718
+inductance.
+
+523
+00:29:35,598 --> 00:29:39,088
+And there are also special
+requirements for the capacitance,
+
+524
+00:29:39,448 --> 00:29:43,248
+it must withstand high reactive
+currents. So if you put something
+
+525
+00:29:43,248 --> 00:29:47,168
+like a small capacitor in there,
+yeah, it will just explode because
+
+526
+00:29:47,168 --> 00:29:48,888
+the dielectric will overheat.
+
+527
+00:29:49,828 --> 00:29:52,958
+You need, like ...
+just like Tesla coil builders do,
+
+528
+00:29:52,958 --> 00:29:57,008
+yeah, you really need proper tank
+capacitors—those specific ones—or
+
+529
+00:29:57,008 --> 00:30:00,318
+you can use high-quality film
+capacitors, or even those
+
+530
+00:30:00,318 --> 00:30:04,438
+capacitors that look like tablets
+from old radio stations, where the
+
+531
+00:30:04,438 --> 00:30:08,298
+lead wires are, you know, about
+five millimeters, sometimes even
+
+532
+00:30:08,298 --> 00:30:12,348
+eight millimeters thick. These are
+the kinds of components you want
+
+533
+00:30:12,348 --> 00:30:13,398
+for this purpose.
+
+534
+00:30:14,068 --> 00:30:15,738
+Yes, I know, I know which ones.
+
+535
+00:30:16,038 --> 00:30:19,318
+These capacitors, which have a high
+amount of reactive power, are
+
+536
+00:30:19,318 --> 00:30:22,948
+exactly the kind of components that
+we really need for this application.
+
+537
+00:30:24,848 --> 00:30:26,308
+Well, I have this experience.
+
+538
+00:30:26,488 --> 00:30:30,078
+I was driving the inductor on the
+pomegranate into resonance, I put
+
+539
+00:30:30,078 --> 00:30:33,668
+in whatever capacitors I had on
+hand, like two hundred, one hundred
+
+540
+00:30:33,668 --> 00:30:34,318
+sixty volts,
+
+541
+00:30:34,998 --> 00:30:37,398
+and they just started to swell and
+burst.
+
+542
+00:30:37,598 --> 00:30:41,258
+Until I put in ones for several
+kilovolts, like two kilovolts, then
+
+543
+00:30:41,258 --> 00:30:42,088
+it seemed okay.
+
+544
+00:30:42,658 --> 00:30:44,448
+But they were still warm, still
+warm.
+
+545
+00:30:44,858 --> 00:30:46,478
+Naturally, it 's not enough.
+
+546
+00:30:47,078 --> 00:30:50,908
+It 's just that displacement of
+charges in the dielectric occurs.
+
+547
+00:30:50,908 --> 00:30:55,038
+And if it 's not designed for that,
+then naturally it will lead to its
+
+548
+00:30:55,038 --> 00:30:55,518
+heating.
+
+549
+00:30:55,818 --> 00:30:59,708
+Because the charge in a capacitor
+is mostly located in the dielectric,
+
+550
+00:30:59,908 --> 00:31:04,418
+on its surface and inside the
+dielectric, charge displacement
+
+551
+00:31:04,418 --> 00:31:05,468
+occurs. Right.
+
+552
+00:31:05,618 --> 00:31:07,798
+So the dielectric heats up because
+of this?
+
+553
+00:31:08,008 --> 00:31:11,438
+Yes, because the redistribution of
+electric charge physically takes
+
+554
+00:31:11,438 --> 00:31:13,518
+place within it, it heats up as a
+result.
+
+555
+00:31:14,998 --> 00:31:17,948
+You mean, it turns out that some
+kind of electrical current actually
+
+556
+00:31:17,948 --> 00:31:19,408
+flows through it then, basically?
+
+557
+00:31:19,658 --> 00:31:23,598
+Well, if we investigate, we know
+that current in a capacitor can be
+
+558
+00:31:23,598 --> 00:31:27,118
+registered until the process
+equalizes. That is, it does n't
+
+559
+00:31:27,118 --> 00:31:30,768
+work in direct current. But if
+there is alternating current or
+
+560
+00:31:30,768 --> 00:31:34,818
+pulsating current, then during the
+change of potential, current flows
+
+561
+00:31:34,818 --> 00:31:36,138
+through the capacitor.
+
+562
+00:31:37,238 --> 00:31:40,578
+Only it 's not as direct as we 're
+used to in a conductor, yeah,
+
+563
+00:31:40,698 --> 00:31:43,298
+but it 's based precisely on
+displacement currents.
+
+564
+00:31:44,418 --> 00:31:47,738
+Yes, it turned out to be a truly
+very valuable and insightful
+
+565
+00:31:47,738 --> 00:31:48,458
+conversation.
+
+566
+00:31:50,148 --> 00:31:50,588
+Right.
+
+567
+00:31:50,688 --> 00:31:53,048
+To summarize it all, I 'll just say
+this.
+
+568
+00:31:53,148 --> 00:31:57,148
+People build Tesla transformers,
+right? And when they start it up,
+
+569
+00:31:57,148 --> 00:31:59,918
+whether they just wound it randomly,
+you know?
+
+570
+00:32:00,228 --> 00:32:03,758
+Or whether they did all this
+alignment that I 'm saying needs to
+
+571
+00:32:03,758 --> 00:32:07,348
+be done. They start it up, and they
+see the exact same sine wave.
+
+572
+00:32:07,928 --> 00:32:09,128
+And nothing interesting.
+
+573
+00:32:09,588 --> 00:32:11,958
+And, of course, people have a
+legitimate question.
+
+574
+00:32:12,388 --> 00:32:13,868
+Why the hell did I do all this?
+
+575
+00:32:13,948 --> 00:32:16,628
+All that talk about aligning and
+calculating.
+
+576
+00:32:16,768 --> 00:32:20,558
+I just hooked up that kacher over
+there, it started up, and that 's
+
+577
+00:32:20,558 --> 00:32:24,228
+it. Just a sine wave, a brush
+discharge, and that 's the limit of
+
+578
+00:32:24,228 --> 00:32:27,848
+it. Because even if a person did it
+right, but did n't reach the
+
+579
+00:32:27,848 --> 00:32:31,068
+threshold where a wave is produced
+along the wire length,
+
+580
+00:32:31,298 --> 00:32:35,118
+that 's it, they wo n't see any of
+the modes that the author himself
+
+581
+00:32:35,118 --> 00:32:35,798
+wrote about.
+
+582
+00:32:38,098 --> 00:32:41,558
+Well, here 's another question
+about the Vasmus setup. There
+
+583
+00:32:41,558 --> 00:32:45,608
+should also be a kacher there, well,
+a standing wave on the kacher. At
+
+584
+00:32:45,608 --> 00:32:48,598
+least that 's how I understood it,
+I might be wrong.
+
+585
+00:32:49,348 --> 00:32:53,368
+So it turns out that it 's actually
+possible to tune a kacher to have a
+
+586
+00:32:53,368 --> 00:32:57,218
+standing wave. But, based on what I
+learned today, the kacher should
+
+587
+00:32:57,218 --> 00:33:00,948
+also have, well, at least some kind
+of adjustment—like the voltage
+
+588
+00:33:00,948 --> 00:33:04,048
+supply, for example—sort of like a
+way to fine-tune it.
+
+589
+00:33:05,278 --> 00:33:06,538
+Or is that not the case?
+
+590
+00:33:06,598 --> 00:33:10,518
+No, it 's a different process there,
+when they interact, you 'll see it
+
+591
+00:33:10,518 --> 00:33:12,028
+if you run the experiments.
+
+592
+00:33:12,528 --> 00:33:16,118
+If two Tesla transformers, which
+are both specialized electrical
+
+593
+00:33:16,118 --> 00:33:18,388
+devices, are interacting with each
+other,
+
+594
+00:33:18,898 --> 00:33:22,938
+Oh, I saw a video where they stood
+between the transformers. Yes, yes, yes.
+
+595
+00:33:23,268 --> 00:33:24,338
+Yes, absolutely.
+
+596
+00:33:24,338 --> 00:33:27,828
+And they dampen the two resonant
+systems. That 's clear, yes.
+
+597
+00:33:28,168 --> 00:33:30,148
+There 's nothing unusual about that.
+
+598
+00:33:30,368 --> 00:33:33,488
+The experiment itself is
+interesting, but it 's also known
+
+599
+00:33:33,488 --> 00:33:34,638
+in classical physics.
+
+600
+00:33:34,748 --> 00:33:38,468
+They know that if, God forbid, two
+transmitters start on the same
+
+601
+00:33:38,468 --> 00:33:42,308
+frequency, one will knock out the
+other, and one will fail. That 's
+
+602
+00:33:42,308 --> 00:33:46,258
+why the frequency monitoring of the
+airwaves strictly ensures that no
+
+603
+00:33:46,258 --> 00:33:50,038
+one, God forbid, switches to the
+same frequency or gets too close.
+
+604
+00:33:51,138 --> 00:33:54,438
+Otherwise, there 'll be a big
+bada-boom and someone 's equipment
+
+605
+00:33:54,438 --> 00:33:55,278
+will catch fire.
+
+606
+00:33:56,358 --> 00:33:59,558
+Well, in broadcasting, this is
+observed on the same frequency,
+
+607
+00:33:59,558 --> 00:34:00,708
+even with TV stations.
+
+608
+00:34:00,808 --> 00:34:02,988
+But the distance between them is
+quite large.
+
+609
+00:34:03,038 --> 00:34:06,168
+Well, when they 're separated, if
+they 're far apart from each other,
+
+610
+00:34:06,168 --> 00:34:07,548
+there wo n't be any influence.
+
+611
+00:34:07,548 --> 00:34:10,148
+Yes, exactly, the distance, then
+nothing will happen.
+
+612
+00:34:10,198 --> 00:34:13,188
+That 's right, they can still
+overlap, there 's an interference
+
+613
+00:34:13,188 --> 00:34:13,678
+happening.
+
+614
+00:34:14,268 --> 00:34:17,198
+But if it 's, say, two radio
+stations close to each other, one
+
+615
+00:34:17,198 --> 00:34:18,398
+will knock the other out.
+
+616
+00:34:18,598 --> 00:34:22,058
+But we use this effect, it 's
+exactly what 's used in this Vasmus
+
+617
+00:34:22,058 --> 00:34:22,598
+generator.
+
+618
+00:34:22,598 --> 00:34:25,938
+When the receiving passive part,
+and what 's interesting is that it
+
+619
+00:34:25,938 --> 00:34:27,568
+'s passive, this receiving part.
+
+620
+00:34:27,568 --> 00:34:31,648
+And it has much more energy, so
+much that it 's enough not only to
+
+621
+00:34:31,648 --> 00:34:35,848
+drive its own frequency, right, but
+also to completely overpower the
+
+622
+00:34:35,848 --> 00:34:36,978
+initiating system.
+
+623
+00:34:37,168 --> 00:34:40,608
+It turns out that, in fact, if the
+system is constructed or built on a
+
+624
+00:34:40,608 --> 00:34:43,598
+kacher circuit, then what happens
+is that the receiving Tesla
+
+625
+00:34:43,598 --> 00:34:46,738
+transformer can very easily and
+quite effortlessly overpower it,
+
+626
+00:34:46,738 --> 00:34:49,878
+just like it does with its own
+inductor—essentially, you get the
+
+627
+00:34:49,878 --> 00:34:53,418
+same effect as before. And that ’ s
+basically all there is to it, really.
+
+628
+00:34:53,818 --> 00:34:57,228
+it does n't output more power, it
+kind of muffles it, it quietens
+
+629
+00:34:57,228 --> 00:34:58,508
+down there, so to speak.
+
+630
+00:34:58,938 --> 00:35:00,448
+The amplitude decreases.
+
+631
+00:35:00,748 --> 00:35:04,388
+First of all, there 's an effect
+where initially, around this
+
+632
+00:35:04,388 --> 00:35:08,018
+initiating Tesla transformer
+powered by the source, the field
+
+633
+00:35:08,018 --> 00:35:11,348
+disappears, it 's gone. Meaning
+neon lights do n't glow,
+
+634
+00:35:11,348 --> 00:35:13,768
+energy-saving bulbs, nothing is
+detected.
+
+635
+00:35:14,458 --> 00:35:17,838
+And if the secondary Tesla
+transformer continues to push, it
+
+636
+00:35:17,838 --> 00:35:21,808
+starts consuming less. For instance,
+if the system is kacher-based and
+
+637
+00:35:21,808 --> 00:35:25,588
+there 's an ammeter on the power
+supply, you can see it suppressing
+
+638
+00:35:25,588 --> 00:35:29,378
+it until the current consumption
+drops to zero. And usually in this
+
+639
+00:35:29,378 --> 00:35:32,828
+mode, the kacher itself jumps to
+another frequency, becomes a
+
+640
+00:35:32,828 --> 00:35:36,268
+half-wave, and in half-wave mode,
+it consumes almost nothing.
+
+641
+00:35:38,268 --> 00:35:40,308
+So, it 's a very interesting effect.
+
+642
+00:35:40,348 --> 00:35:44,618
+One could even ask themselves here,
+for those looking into this, right?
+
+643
+00:35:44,618 --> 00:35:48,288
+How can it be that a passive
+resonant system took part of the
+
+644
+00:35:48,288 --> 00:35:52,318
+energy from the initiating resonant
+system and used that energy, in
+
+645
+00:35:52,318 --> 00:35:55,728
+conjunction with nature, to
+completely suppress that same
+
+646
+00:35:55,728 --> 00:35:57,868
+initiating resonant system to zero?
+
+647
+00:35:59,398 --> 00:36:00,748
+That is interesting, yes.
+
+648
+00:36:00,768 --> 00:36:02,208
+How is that even possible?
+
+649
+00:36:03,008 --> 00:36:07,088
+That 's the question, yes, one that
+classical physics is n't very fond of.
+
+650
+00:36:07,248 --> 00:36:08,268
+How can that be?
+
+651
+00:36:08,948 --> 00:36:12,578
+But the thing is, here we are using,
+to be honest, a different effect.
+
+652
+00:36:12,578 --> 00:36:15,838
+Meaning we do n't just have a
+receiver and a transmitter; I did
+
+653
+00:36:15,838 --> 00:36:19,508
+n't call the first one 'initiating'
+for nothing, because it operates in
+
+654
+00:36:19,508 --> 00:36:20,408
+a different mode.
+
+655
+00:36:21,158 --> 00:36:21,578
+Right.
+
+656
+00:36:21,838 --> 00:36:25,118
+If we were just doing, you know,
+wireless transmission, like this
+
+657
+00:36:25,118 --> 00:36:28,188
+thing does, then everything is fine
+and follows the classics.
+
+658
+00:36:28,478 --> 00:36:32,228
+Meaning the energy we can extract
+decreases according to the inverse
+
+659
+00:36:32,228 --> 00:36:34,188
+square law, and that 's all normal.
+
+660
+00:36:34,768 --> 00:36:37,088
+But we 're creating a slightly
+different effect.
+
+661
+00:36:38,028 --> 00:36:41,818
+We place the receiving Tesla
+transformer in the disturbance zone
+
+662
+00:36:41,818 --> 00:36:43,148
+of the initiating one.
+
+663
+00:36:43,468 --> 00:36:46,588
+And it gets its energy from the
+environment and from external
+
+664
+00:36:46,588 --> 00:36:47,518
+charged particles.
+
+665
+00:36:47,728 --> 00:36:51,288
+That 's exactly why it 's able to
+overpower the initiating
+
+666
+00:36:51,288 --> 00:36:52,048
+transformer.
+
+667
+00:36:53,468 --> 00:36:54,718
+I did n't get that part.
+
+668
+00:36:55,178 --> 00:36:56,528
+Did n't get it, did n't get it.
+
+669
+00:36:56,578 --> 00:37:00,438
+So it turns out that ...
+The repeater, it turns out, it kind
+
+670
+00:37:00,438 --> 00:37:04,628
+of, well, takes from the kacher and
+from somewhere else, from the
+
+671
+00:37:04,628 --> 00:37:08,428
+environment, let 's say, and
+because of that, it can, like,
+
+672
+00:37:08,428 --> 00:37:09,278
+receive this.
+
+673
+00:37:09,538 --> 00:37:12,618
+Naturally, yes, it takes an
+additional portion of energy from
+
+674
+00:37:12,618 --> 00:37:13,428
+the environment.
+
+675
+00:37:14,228 --> 00:37:15,178
+And it takes it ...
+
+676
+00:37:15,178 --> 00:37:17,128
+Well, like, it excites this
+environment.
+
+677
+00:37:17,938 --> 00:37:19,618
+Does it take it through excitation?
+
+678
+00:37:20,068 --> 00:37:23,318
+Or is it unclear? Well, how can it
+do that?
+
+679
+00:37:23,398 --> 00:37:27,068
+It takes part of the energy from
+the initiating Tesla transformer,
+
+680
+00:37:27,068 --> 00:37:30,958
+because of it a process occurs in
+it, and then, if they are separated,
+
+681
+00:37:30,958 --> 00:37:34,678
+correctly positioned relative to
+each other, at the right distance,
+
+682
+00:37:35,728 --> 00:37:36,798
+So that 's the thing.
+
+683
+00:37:36,798 --> 00:37:38,308
+This is a phase shift.
+
+684
+00:37:38,468 --> 00:37:42,258
+And if there is even a slight phase
+shift between the two systems ...
+
+685
+00:37:42,258 --> 00:37:44,218
+Then one already suppresses the
+other.
+
+686
+00:37:44,318 --> 00:37:47,068
+Yes, then, if ...
+here 's an interesting point. If
+
+687
+00:37:47,068 --> 00:37:50,758
+there is a phase shift between two
+systems, then the passive system
+
+688
+00:37:50,758 --> 00:37:54,408
+will be able to receive much more
+energy than it receives from the
+
+689
+00:37:54,408 --> 00:37:58,048
+initiating one, and there will be
+much more of this energy than in
+
+690
+00:37:58,048 --> 00:37:59,278
+the initiating system.
+
+691
+00:38:00,418 --> 00:38:03,778
+So if you change the distance, then
+the phase will also change. You can
+
+692
+00:38:03,778 --> 00:38:04,308
+achieve ...
+
+693
+00:38:05,018 --> 00:38:06,598
+The phase naturally changes.
+
+694
+00:38:06,718 --> 00:38:10,298
+The second option we can do is to
+slightly detune the frequency.
+
+695
+00:38:10,468 --> 00:38:13,348
+I also showed this in my
+experiments, when I ...
+
+696
+00:38:13,348 --> 00:38:17,198
+well, I had two identical coils,
+only on one I did a detuning, I
+
+697
+00:38:17,198 --> 00:38:21,298
+lowered the isolated capacitance,
+and also additionally twisted such
+
+698
+00:38:21,298 --> 00:38:23,188
+a spring out of aluminum on it.
+
+699
+00:38:23,958 --> 00:38:27,988
+So I did a frequency detuning,
+changed the phase, and got many
+
+700
+00:38:27,988 --> 00:38:32,418
+times more energy on the receiving
+Tesla transformer. It 's visible.
+
+701
+00:38:32,728 --> 00:38:36,838
+I managed to get eighteen to twenty
+times more energy than on the
+
+702
+00:38:36,838 --> 00:38:41,128
+initiating coil. So you look at it
+like this, on the initiating one,
+
+703
+00:38:41,128 --> 00:38:44,848
+for example, a two to three
+centimeter discharge on a metal
+
+704
+00:38:44,848 --> 00:38:45,298
+object.
+
+705
+00:38:46,258 --> 00:38:49,688
+And on the receiving one, it turns
+out to be twenty to twenty-five.
+
+706
+00:38:51,098 --> 00:38:54,478
+So, can you actually judge it only
+by the discharge, or not?
+
+707
+00:38:54,858 --> 00:38:58,418
+Well, you can judge, yes, it 's
+naturally visible by the length of
+
+708
+00:38:58,418 --> 00:39:02,138
+the discharge, and naturally then
+if you convert this reactive energy
+
+709
+00:39:02,138 --> 00:39:05,038
+into active energy, more will be
+released on the load.
+
+710
+00:39:05,378 --> 00:39:07,508
+Only in such a case, little is
+released.
+
+711
+00:39:07,698 --> 00:39:11,048
+You need to use a second coil not
+tuned to the same frequency. It
+
+712
+00:39:11,048 --> 00:39:14,188
+should be positioned relative to
+the initiating one at half a
+
+713
+00:39:14,188 --> 00:39:14,768
+wavelength.
+
+714
+00:39:15,518 --> 00:39:18,778
+Or they together, two quarters,
+form a half-wave system. Then this
+
+715
+00:39:18,778 --> 00:39:22,198
+system needs to be pumped with an
+interesting signal, in which both a
+
+716
+00:39:22,198 --> 00:39:24,768
+quarter and a half-wave of
+frequencies are embedded.
+
+717
+00:39:26,408 --> 00:39:28,538
+And if ...
+and if you separate the coils with
+
+718
+00:39:28,538 --> 00:39:29,798
+a grounding in the middle?
+
+719
+00:39:30,118 --> 00:39:33,108
+Well, one half ...
+quarter half-wave coil, yes, the
+
+720
+00:39:33,108 --> 00:39:33,828
+wire length.
+
+721
+00:39:34,028 --> 00:39:35,928
+And if there 's grounding in the
+middle ...
+
+722
+00:39:35,928 --> 00:39:38,408
+Well, they both ...
+they both sit on the grounding.
+
+723
+00:39:38,408 --> 00:39:40,148
+They might sit, they might not sit.
+
+724
+00:39:40,598 --> 00:39:42,448
+They can sit on different
+groundings.
+
+725
+00:39:42,568 --> 00:39:46,108
+It does n't depend on the grounding
+here. It 's important that the
+
+726
+00:39:46,108 --> 00:39:49,928
+receiving Tesla transformer has
+grounding, so that it works with nature.
+
+727
+00:39:50,738 --> 00:39:53,238
+Okay, this is ...
+honestly, it ’ s pretty hard to
+
+728
+00:39:53,238 --> 00:39:56,728
+grasp everything all at once, you
+know? There ’ s just a lot to take
+
+729
+00:39:56,728 --> 00:40:00,328
+in. But even so, I ’ d still really
+like to go back and talk about the
+
+730
+00:40:00,328 --> 00:40:03,818
+grenade for a moment, especially
+now, in light of this new knowledge
+
+731
+00:40:03,818 --> 00:40:07,048
+that we ’ ve just uncovered
+together, which, for some reason, I
+
+732
+00:40:07,048 --> 00:40:10,538
+just can ’ t seem to get myself to
+feel excited about, no matter how
+
+733
+00:40:10,538 --> 00:40:12,418
+hard I try. But it turns out that
+...
+
+734
+00:40:12,468 --> 00:40:13,798
+I do n't know what 's happening.
+
+735
+00:40:13,978 --> 00:40:17,148
+I do n't even know. Still, there
+are no answers.
+
+736
+00:40:17,248 --> 00:40:18,268
+Why it does n't ...
+
+737
+00:40:18,268 --> 00:40:21,578
+I mean, you ca n't even put a neon
+bulb on it, it wo n't light up with
+
+738
+00:40:21,578 --> 00:40:22,108
+the pulses.
+
+739
+00:40:22,838 --> 00:40:24,738
+It 's a matter of practice, you see?
+
+740
+00:40:25,378 --> 00:40:29,048
+All of this, once you set it up
+correctly, there wo n't be any more
+
+741
+00:40:29,048 --> 00:40:29,548
+problems.
+
+742
+00:40:29,708 --> 00:40:31,708
+But for beginners, it 's very
+difficult.
+
+743
+00:40:31,848 --> 00:40:34,068
+This whole system is complex for a
+beginner.
+
+744
+00:40:34,298 --> 00:40:37,488
+Yes, I 'm starting to realize it 's
+a very complex system.
+
+745
+00:40:37,688 --> 00:40:41,818
+Especially, as you say, for
+beginners. But I 'll say that I 've
+
+746
+00:40:41,818 --> 00:40:43,158
+already, sort of ...
+
+747
+00:40:43,158 --> 00:40:47,348
+Well, and it 's pleasantly
+inspiring that you learn so much.
+
+748
+00:40:47,348 --> 00:40:48,698
+You could say that.
+
+749
+00:40:49,348 --> 00:40:53,108
+See, anyone can see this for
+themselves. I mean, people search
+
+750
+00:40:53,108 --> 00:40:56,238
+for years for this extra energy.
+How can it be done?
+
+751
+00:40:56,488 --> 00:41:00,048
+Well, just build two Tesla coils,
+and you 'll see it between them.
+
+752
+00:41:00,048 --> 00:41:02,298
+And just ask yourself one simple
+question.
+
+753
+00:41:03,188 --> 00:41:04,858
+What is the mechanism at work?
+
+754
+00:41:05,018 --> 00:41:08,628
+How can the receiving end have much
+more energy than the transmitter?
+
+755
+00:41:09,008 --> 00:41:10,588
+Which I call the initiator.
+
+756
+00:41:10,668 --> 00:41:11,228
+That 's it.
+
+757
+00:41:11,798 --> 00:41:14,608
+And that will be the starting point
+for research, right.
+
+758
+00:41:21,218 --> 00:41:25,368
+So, it turns out, the gain in these
+ripples means that it, well,
+
+759
+00:41:25,368 --> 00:41:26,228
+interacts ...
+
+760
+00:41:26,298 --> 00:41:27,828
+No, that 's just the oscillogram.
+
+761
+00:41:28,048 --> 00:41:32,278
+Well, it indicates that it 's
+operating in a different mode.
+
+762
+00:41:32,278 --> 00:41:37,298
+Specifically in half-wave, and one
+Tesla coil interacts with the other.
+
+763
+00:41:37,298 --> 00:41:40,528
+And it 's just hard, hard, hard to
+understand.
+
+764
+00:41:42,008 --> 00:41:43,608
+Still, I still do n't get it.
+
+765
+00:41:43,908 --> 00:41:49,738
+I posted a humorous story—or, you
+could say, a bit of a joke—in one
+
+766
+00:41:49,738 --> 00:41:50,978
+of the groups.
+
+767
+00:41:52,368 --> 00:41:56,118
+So that people could finally
+understand where the free energy is formed.
+
+768
+00:41:56,428 --> 00:42:00,598
+But only two people reacted
+positively, the rest just ignored
+
+769
+00:42:00,598 --> 00:42:03,178
+it. I sent it to someone here as
+well.
+
+770
+00:42:03,508 --> 00:42:06,838
+I 'm going to send you this little
+joke now. Please take a moment to
+
+771
+00:42:06,838 --> 00:42:10,218
+read it carefully, and as you do,
+you 'll be able to figure out where
+
+772
+00:42:10,218 --> 00:42:13,358
+everything is happening and what
+exactly is going on. By reading
+
+773
+00:42:13,358 --> 00:42:16,088
+through the joke, you 'll
+understand the setting and the
+
+774
+00:42:16,088 --> 00:42:18,978
+situation, so pay attention to the
+details as you go along.
+
+775
+00:42:20,378 --> 00:42:23,158
+And what specific moment we need
+for the work.
+
+776
+00:42:26,058 --> 00:42:28,058
+I 'll just go ahead and drop it in
+here now.
+
+777
+00:42:29,238 --> 00:42:31,088
+Well, okay, yes, thank you, of
+course.
+
+778
+00:42:31,548 --> 00:42:34,838
+So, you should, like, really go
+ahead and read it right now, you know?
+
+779
+00:42:35,198 --> 00:42:37,378
+Can you read it while you 're in
+this mode?
+
+780
+00:42:39,238 --> 00:42:42,168
+Well, you know, I think it would
+probably be better if I just waited
+
+781
+00:42:42,168 --> 00:42:45,148
+and read it a little bit later on,
+maybe after I have a bit more time
+
+782
+00:42:45,148 --> 00:42:46,118
+to really focus on it.
+
+783
+00:42:46,728 --> 00:42:48,638
+It 's very short, there 's
+literally ...
+
+784
+00:42:49,828 --> 00:42:52,358
+Well, I need to ...
+the letters are very small, this
+
+785
+00:42:52,358 --> 00:42:53,998
+screen is bad, so, I do n't know.
+
+786
+00:42:54,278 --> 00:42:56,328
+Oh, well then, that 's it, you 'll
+read it later then.
+
+787
+00:42:56,448 --> 00:43:00,658
+It 's actually talking about that
+wave we 're getting. In this whole
+
+788
+00:43:00,658 --> 00:43:04,608
+setup, we 're interested in the
+wave moving from the impact, the
+
+789
+00:43:04,608 --> 00:43:05,238
+first one.
+
+790
+00:43:05,758 --> 00:43:08,998
+Then it will, naturally, reflect
+from the end of the wire, and
+
+791
+00:43:08,998 --> 00:43:12,518
+naturally, we 'll get a standing
+wave, but those are all subsequent
+
+792
+00:43:12,518 --> 00:43:13,048
+processes.
+
+793
+00:43:13,408 --> 00:43:17,018
+They 're secondary, they 're used
+for other modes, they help in other
+
+794
+00:43:17,018 --> 00:43:17,818
+modes later on.
+
+795
+00:43:18,318 --> 00:43:20,128
+But we 're interested in this wave.
+
+796
+00:43:20,268 --> 00:43:23,568
+It 's just that when people work,
+they do n't create this wave.
+
+797
+00:43:23,948 --> 00:43:27,058
+And the system, even if built
+correctly, just works on ell-see
+
+798
+00:43:27,058 --> 00:43:27,568
+resonance.
+
+799
+00:43:28,258 --> 00:43:32,008
+That 's why classical physics
+calculated this design using the
+
+800
+00:43:32,008 --> 00:43:35,448
+ell-see resonance formula,
+concluded it 's a high-quality
+
+801
+00:43:35,448 --> 00:43:39,568
+ell-see resonant transformer, and
+that basically closed the subject.
+
+802
+00:43:39,568 --> 00:43:43,618
+And now, when they hear about a
+Tesla transformer, they immediately
+
+803
+00:43:43,618 --> 00:43:47,558
+pull out their tome on ell-see
+resonance and say, 'Guys, there 's
+
+804
+00:43:47,558 --> 00:43:48,478
+nothing there.'
+
+805
+00:43:49,308 --> 00:43:53,218
+And they 're right about that, by
+the way, but they 're only truly
+
+806
+00:43:53,218 --> 00:43:57,378
+'right' as long as this wave is n't
+properly formed within the system.

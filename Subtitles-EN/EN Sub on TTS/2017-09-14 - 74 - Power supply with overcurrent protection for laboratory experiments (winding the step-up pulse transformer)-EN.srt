@@ -1,0 +1,1608 @@
+1
+00:00:02,020 --> 00:00:06,260
+Hello everyone, today we 're going to wind a
+high-frequency pulse transformer.
+
+2
+00:00:06,880 --> 00:00:12,250
+Since our device operates at a fairly high
+frequency, we 'll be using ferrite as the
+
+3
+00:00:12,250 --> 00:00:13,160
+core material.
+
+4
+00:00:13,560 --> 00:00:19,300
+The ferrite is pressed into a toroid shape, a
+ring, and it 's convenient for building power
+
+5
+00:00:19,300 --> 00:00:20,000
+structures.
+
+6
+00:00:20,800 --> 00:00:26,540
+You can find out more about ferrite grades,
+their permeability, the Curie temperature,
+
+7
+00:00:26,540 --> 00:00:32,420
+and other important core parameters on the
+internet. In particular, I recommend watching
+
+8
+00:00:32,420 --> 00:00:38,160
+a video, and I will provide a link to it in
+the description. This video is by a person
+
+9
+00:00:38,160 --> 00:00:39,040
+named Evgeny.
+
+10
+00:00:39,630 --> 00:00:44,850
+The channel is "Simply About the Complex,"
+where he covers this topic in detail. For
+
+11
+00:00:44,850 --> 00:00:49,950
+which I 'm very grateful to him, as he
+explains complex things in simple language.
+
+12
+00:01:02,250 --> 00:01:03,060
+and so on.
+
+13
+00:01:03,940 --> 00:01:05,710
+You can watch it for more details.
+
+14
+00:01:07,290 --> 00:01:09,790
+And now, let 's move on to the transformer.
+
+15
+00:01:10,010 --> 00:01:14,870
+I see in the comments, my friends are already
+joking around, specifically Ivan Russu writes
+
+16
+00:01:14,870 --> 00:01:17,560
+that you could make a welder with a core like
+this.
+
+17
+00:01:18,310 --> 00:01:24,570
+Yes, indeed, you could make a good welding
+machine with such a core. But I follow this
+
+18
+00:01:24,570 --> 00:01:31,050
+rule: if your device is n't sensitive to its
+weight or dimensions, it 's always better to
+
+19
+00:01:31,050 --> 00:01:37,240
+take a larger diameter core; it 'll have
+fewer losses and work more stably. And there
+
+20
+00:01:37,240 --> 00:01:39,600
+are two fundamental differences.
+
+21
+00:01:40,000 --> 00:01:44,680
+There are cores that the manufacturer has
+made with higher quality. This
+
+22
+00:01:44,680 --> 00:01:50,210
+"higher quality" does n't refer to the core
+materials, but to how it 's finished. For
+
+23
+00:01:50,210 --> 00:01:55,150
+example, with cores like these, the
+manufacturer removed the sharp edges and
+
+24
+00:01:55,150 --> 00:01:56,540
+coated it with paint.
+
+25
+00:01:57,960 --> 00:02:00,180
+This paint has dielectric properties.
+
+26
+00:02:00,700 --> 00:02:05,620
+And on such a core material, you can already
+wind enamel-insulated wire directly without
+
+27
+00:02:05,620 --> 00:02:06,580
+extra insulation.
+
+28
+00:02:07,550 --> 00:02:10,520
+But cores of this type will have to be
+finished by hand.
+
+29
+00:02:10,990 --> 00:02:15,730
+A larger diameter core made of this uncoated
+ferrite would have suited us here.
+
+30
+00:02:16,590 --> 00:02:22,270
+Here, you 'll have to use sandpaper to smooth
+out all the bumps. This is necessary so that
+
+31
+00:02:22,270 --> 00:02:26,410
+when we wind the wire, the enamel insulation
+does n't get damaged.
+
+32
+00:02:26,990 --> 00:02:32,890
+And accordingly, wrap this core with
+insulating material before winding the first
+
+33
+00:02:32,890 --> 00:02:38,870
+layer. Specifically, they wrap them using
+transformer paper that 's been soaked in
+
+34
+00:02:38,870 --> 00:02:39,460
+varnish.
+
+35
+00:02:39,920 --> 00:02:43,600
+There are various ways to handle insulation
+in everyday life.
+
+36
+00:02:44,370 --> 00:02:50,090
+People insulate even with electrical tape, or
+regular tape, or even masking tape.
+
+37
+00:02:50,290 --> 00:02:52,280
+So, there are various options available.
+
+38
+00:02:53,300 --> 00:02:58,520
+One could argue whether they 're good or bad,
+but nevertheless, you get working devices.
+
+39
+00:03:00,140 --> 00:03:02,110
+Right. Where shall we start?
+
+40
+00:03:02,350 --> 00:03:06,050
+We 'll start ...
+we 're going to need some parameters so that
+
+41
+00:03:06,050 --> 00:03:10,320
+we can calculate exactly how much wire we
+need to wind onto this core.
+
+42
+00:03:11,970 --> 00:03:16,010
+There are, of course, programs on the
+internet, online calculators, that can
+
+43
+00:03:16,010 --> 00:03:19,720
+calculate all these parameters for us if we
+enter the core dimensions.
+
+44
+00:03:20,610 --> 00:03:25,840
+And I think anyone familiar with these
+calculators can provide links to them in the
+
+45
+00:03:25,840 --> 00:03:30,830
+comments, which will make things easier for
+people. But we 're going to use the
+
+46
+00:03:30,830 --> 00:03:36,000
+old-fashioned measurement method. It 's
+accurate enough, and you can always do the
+
+47
+00:03:36,000 --> 00:03:39,130
+math without resorting to additional online
+tools.
+
+48
+00:03:41,510 --> 00:03:46,870
+Before starting the work of winding the wire
+onto this core, we need to determine the
+
+49
+00:03:46,870 --> 00:03:52,170
+amount of wire in meters required for the
+winding. I 'm planning to wind the wire in
+
+50
+00:03:52,170 --> 00:03:57,780
+three layers. On the first two layers, there
+will be four taps each, and on the last one,
+
+51
+00:03:57,780 --> 00:03:59,380
+there will be three taps.
+
+52
+00:03:59,840 --> 00:04:04,500
+That makes exactly eleven taps, which is what
+I need for this particular switch.
+
+53
+00:04:06,470 --> 00:04:10,770
+Of course, there are various online
+calculators where you can enter the core data
+
+54
+00:04:10,770 --> 00:04:12,550
+and it will calculate it for you.
+
+55
+00:04:13,420 --> 00:04:19,540
+I think the viewers of the video, if they use
+such tools, will share them in the comments.
+
+56
+00:04:19,540 --> 00:04:23,120
+As for me, I 'll be using the old calculation
+method.
+
+57
+00:04:23,430 --> 00:04:28,680
+It has never let me down with a small number
+of layers and a fairly thick wire. For
+
+58
+00:04:28,680 --> 00:04:34,250
+winding. Specifically, I 'll be winding with
+varnish-insulated wire with a cross-section
+
+59
+00:04:34,250 --> 00:04:36,620
+of zero point ninety-six millimeters.
+
+60
+00:04:36,990 --> 00:04:43,540
+We can enter this parameter here: the outer
+diameter of the wire is zero point ninety-six.
+
+61
+00:04:43,540 --> 00:04:49,860
+Now, for the calculations, we need to find
+the length of the inner circumference. To do
+
+62
+00:04:49,860 --> 00:04:55,150
+this, I 'll use a soft wire that holds its
+shape well. I 'm using solder.
+
+63
+00:04:56,170 --> 00:05:00,550
+Carefully spread it along the entire length
+of the circumference and make a mark.
+
+64
+00:05:00,700 --> 00:05:03,860
+As you can see, I 've already made a mark
+with a black marker.
+
+65
+00:05:04,500 --> 00:05:08,910
+Now, we can go ahead and carefully unroll
+this wire right here and then measure its
+
+66
+00:05:08,910 --> 00:05:13,110
+length in millimeters, which is the standard
+unit for this kind of measurement.
+
+67
+00:05:15,640 --> 00:05:19,870
+The total length, when measured, comes out to
+approximately one hundred and twelve
+
+68
+00:05:19,870 --> 00:05:20,970
+millimeters in total.
+
+69
+00:05:24,080 --> 00:05:25,840
+Let 's write down this parameter.
+
+70
+00:05:26,400 --> 00:05:31,320
+The inner circumference of the core is one
+hundred and twelve millimeters. Next,
+
+71
+00:05:31,390 --> 00:05:36,330
+In order to determine the total length of the
+winding wire, we first need to know the
+
+72
+00:05:36,330 --> 00:05:41,630
+length of a single turn around the core. For
+this purpose, we 'll also use a piece of soft,
+
+73
+00:05:41,630 --> 00:05:46,630
+flexible wire. This wire should be wrapped
+quite tightly and carefully, making sure it
+
+74
+00:05:46,630 --> 00:05:49,520
+goes all the way around the core without any
+gaps.
+
+75
+00:05:49,870 --> 00:05:54,750
+and also make a mark. Well, in this case, it
+will be in the form of a bend in the
+
+76
+00:05:54,750 --> 00:05:55,360
+conductor.
+
+77
+00:05:57,710 --> 00:06:01,930
+We carefully straighten it out, making sure
+it is flat, and then we take the measurement.
+
+78
+00:06:04,300 --> 00:06:06,980
+It is exactly seventy-five millimeters in
+length.
+
+79
+00:06:12,820 --> 00:06:18,780
+So, now, knowing the inner circumference and
+the cross-sectional area of the wire itself,
+
+80
+00:06:18,850 --> 00:06:24,160
+we can calculate the number of turns that
+will be laid turn to turn along the length of
+
+81
+00:06:24,160 --> 00:06:24,780
+this core.
+
+82
+00:06:25,670 --> 00:06:30,620
+To do this, we take the inner circumference
+of the core, one hundred and twelve
+
+83
+00:06:30,620 --> 00:06:35,570
+millimeters, divide it by the wire
+cross-section of zero point nine six and get
+
+84
+00:06:35,570 --> 00:06:37,480
+one hundred and sixteen turns.
+
+85
+00:06:38,610 --> 00:06:44,280
+So, we write down the number of turns as one
+hundred and sixteen. Now, knowing the number
+
+86
+00:06:44,280 --> 00:06:49,690
+of turns and the length of one turn, we can
+calculate the amount of wire that will be
+
+87
+00:06:49,690 --> 00:06:52,000
+laid on this core in a single layer.
+
+88
+00:06:55,230 --> 00:06:57,390
+So, one hundred and sixteen turns
+
+89
+00:06:57,570 --> 00:07:01,690
+we multiply by the length of one turn, which
+is seventy-five millimeters.
+
+90
+00:07:02,430 --> 00:07:04,320
+We get eight thousand seven hundred.
+
+91
+00:07:07,300 --> 00:07:11,380
+So, when you do the math, that actually comes
+out to a total of eight point seven meters in
+
+92
+00:07:11,380 --> 00:07:14,410
+length. In other words, the measurement is
+eight point seven meters.
+
+93
+00:07:16,710 --> 00:07:18,840
+I 'm going to lay it in three layers.
+
+94
+00:07:19,620 --> 00:07:25,750
+And we know that as the inner circumference
+decreases, the number of turns also decreases.
+
+95
+00:07:25,750 --> 00:07:31,400
+But since the length of one turn also
+increases, with a small number of layers, you
+
+96
+00:07:31,400 --> 00:07:37,530
+can roughly multiply this figure by three. So,
+our approximate total wire length for three
+
+97
+00:07:37,530 --> 00:07:39,800
+layers will be twenty-six meters.
+
+98
+00:07:42,820 --> 00:07:49,280
+But we need to take a little extra for the
+leads and for any calculation errors. So, I
+
+99
+00:07:49,280 --> 00:07:54,370
+'ll take approximately twenty-eight meters.
+of wire for the winding.
+
+100
+00:07:56,220 --> 00:07:57,190
+And one more thing.
+
+101
+00:07:57,310 --> 00:08:02,100
+Since we 'll have four taps from each of the
+first two layers, we need to find the number
+
+102
+00:08:02,100 --> 00:08:04,440
+of turns per quarter of the winding length.
+
+103
+00:08:04,940 --> 00:08:10,950
+To do this, I 'll go ahead and divide the
+total number of one hundred sixteen turns by
+
+104
+00:08:10,950 --> 00:08:16,820
+four, which is the number of taps involved
+here. That gives me twenty-nine turns for
+
+105
+00:08:16,820 --> 00:08:17,460
+each tap.
+
+106
+00:08:18,810 --> 00:08:22,080
+...
+between the taps on the first layer. The
+
+107
+00:08:22,080 --> 00:08:28,630
+basic data is ready, so we can move on to
+winding the wire. I 've pre-wound the wire. I
+
+108
+00:08:28,630 --> 00:08:31,440
+'m using this kind of winding device.
+
+109
+00:08:32,420 --> 00:08:37,440
+It 's made from a cable channel. The wire is
+carefully wound around and securely fastened,
+
+110
+00:08:37,440 --> 00:08:42,340
+then an outer part is also wound around it.
+This makes it very convenient to wind it up,
+
+111
+00:08:42,340 --> 00:08:43,920
+almost like using a shuttle.
+
+112
+00:08:44,670 --> 00:08:49,090
+You could use a fork-style winder, but
+honestly, I prefer this method, mainly
+
+113
+00:08:49,090 --> 00:08:53,970
+because the cable channel lid really holds
+the wire securely in place, so it does not
+
+114
+00:08:53,970 --> 00:08:58,500
+slip out of the turns during winding. This
+way, you get a more reliable result.
+
+115
+00:09:01,650 --> 00:09:07,450
+We can also weigh this wire, if necessary, in
+order to determine its cost at a later time.
+
+116
+00:09:09,160 --> 00:09:10,860
+I 'll use the scales for this.
+
+117
+00:09:16,000 --> 00:09:21,190
+And if we subtract the shuttle 's weight from
+the total, the wire that I will be using
+
+118
+00:09:21,190 --> 00:09:24,740
+actually weighs about one hundred and sixty
+grams in total.
+
+119
+00:09:32,050 --> 00:09:33,810
+Now, regarding the taps.
+
+120
+00:09:33,890 --> 00:09:38,750
+We 'll have eleven taps, plus the very first
+one, making a total of twelve in all. To mark
+
+121
+00:09:38,750 --> 00:09:43,010
+each tap, I 'll use heat-shrink tubing in
+different colors, each with a minimal
+
+122
+00:09:43,010 --> 00:09:46,780
+cross-section, so they 're easy to identify
+without adding extra bulk.
+
+123
+00:09:47,970 --> 00:09:53,250
+Here it is—this is size three heat-shrink
+tubing. I 'll be using green for the first
+
+124
+00:09:53,250 --> 00:09:58,600
+tap 's cold end, and for the second one,
+which has a higher voltage—that 's the first
+
+125
+00:09:58,600 --> 00:10:00,510
+layer—I 'll use white instead.
+
+126
+00:10:00,510 --> 00:10:03,750
+...
+the second layer will be a bright yellow, and
+
+127
+00:10:03,750 --> 00:10:09,560
+the final, third layer taps will be marked in
+a vivid red. Since I ’ ll be winding from
+
+128
+00:10:09,560 --> 00:10:15,360
+left to right, the numbering will follow a
+clockwise direction. With this color coding,
+
+129
+00:10:15,360 --> 00:10:21,310
+we definitely won ’ t get the taps mixed up
+or confused at all, not even for a moment ...
+
+130
+00:10:22,680 --> 00:10:25,650
+...
+or their numbers. The length of the cold end
+
+131
+00:10:25,650 --> 00:10:27,600
+lead is twenty-two centimeters.
+
+132
+00:10:27,970 --> 00:10:31,830
+Two centimeters is the thickness of the core
+where it will be fixed.
+
+133
+00:10:31,990 --> 00:10:37,500
+And I need twenty centimeters for the design
+to run it from the transformer to the diode
+
+134
+00:10:37,500 --> 00:10:37,940
+bridge.
+
+135
+00:10:39,670 --> 00:10:40,470
+There.
+
+136
+00:10:41,670 --> 00:10:46,980
+I put on the heat shrink and heated it with a
+lighter. Now the wire is securely insulated,
+
+137
+00:10:46,980 --> 00:10:49,070
+and we move on to its installation.
+
+138
+00:10:50,490 --> 00:10:55,890
+For installation, we carefully position the
+wire in place, wrap it around securely, and
+
+139
+00:10:55,890 --> 00:11:01,360
+now, right here, we need to make a loop of
+electrical tape so that this wire is properly
+
+140
+00:11:01,360 --> 00:11:07,150
+secured. To do this, we take some electrical
+tape—just a regular roll—and get ready to use it.
+
+141
+00:11:09,830 --> 00:11:15,270
+Carefully cut off a necessary piece, which
+should be about three centimeters in length,
+
+142
+00:11:15,270 --> 00:11:15,780
+from it.
+
+143
+00:11:19,110 --> 00:11:19,910
+There you go.
+
+144
+00:11:20,410 --> 00:11:26,840
+And we place it along the direction of the
+winding.
+
+145
+00:11:28,770 --> 00:11:30,210
+Just press it down gently.
+
+146
+00:11:34,610 --> 00:11:38,610
+Thereby fixing the wire. Like this.
+
+147
+00:11:40,510 --> 00:11:44,750
+And now, after this operation is completed,
+the subsequent turn in the process will press
+
+148
+00:11:44,750 --> 00:11:49,050
+down the tape firmly, ensuring that the wire
+is securely and tightly fixed in place. After
+
+149
+00:11:49,050 --> 00:11:53,290
+an hour and a half of monotonous, repetitive
+work, during which I maintained a steady and
+
+150
+00:11:53,290 --> 00:11:57,250
+careful pace and focused attention, I managed
+to wind three separate sections, each
+
+151
+00:11:57,250 --> 00:12:01,260
+consisting of exactly twenty-nine turns. This
+careful and methodical approach helped
+
+152
+00:12:01,260 --> 00:12:05,070
+guarantee that every single turn was
+consistent and precise, contributing to the
+
+153
+00:12:05,070 --> 00:12:07,720
+overall quality and reliability of the
+finished product.
+
+154
+00:12:09,750 --> 00:12:15,570
+This is how I make the leads: I carefully
+bend them into a smooth loop, then put on a
+
+155
+00:12:15,570 --> 00:12:20,420
+heat-shrink sleeve, and finally, I gently
+heat it with a small lighter.
+
+156
+00:12:24,530 --> 00:12:25,330
+There it is.
+
+157
+00:12:29,030 --> 00:12:32,410
+The wire is thick, so I have to wind it with
+significant effort.
+
+158
+00:12:34,660 --> 00:12:40,460
+There you have it. That ’ s exactly how it
+goes, step by step. And remember, every
+
+159
+00:12:40,460 --> 00:12:46,820
+single turn absolutely has to be held firmly
+and then pulled down carefully. Next, let ’ s
+
+160
+00:12:46,820 --> 00:12:48,970
+move on to the following part.
+
+161
+00:12:50,970 --> 00:12:57,790
+Holding it, we pass it through again, and
+just like that, turn by turn, we steadily and
+
+162
+00:12:57,790 --> 00:12:59,850
+carefully lay the winding.
+
+163
+00:13:06,610 --> 00:13:10,050
+There you go. That 's exactly how it 's
+done—just like that, nice and easy.
+
+164
+00:13:12,270 --> 00:13:13,240
+Oh, what a job.
+
+165
+00:13:16,740 --> 00:13:19,060
+Fingers start to ache, slowly turning red ...
+
+166
+00:13:20,760 --> 00:13:22,360
+but there 's nothing you can do.
+
+167
+00:13:23,260 --> 00:13:28,740
+After winding a transformer like this, you
+feel the effects of this work for a couple of days.
+
+168
+00:13:30,460 --> 00:13:35,490
+And while you 're doing this kind of activity,
+you can listen to something interesting on
+
+169
+00:13:35,490 --> 00:13:38,800
+the internet. I 've moved on to insulating
+the first layer.
+
+170
+00:13:39,360 --> 00:13:45,030
+To start, I 'm laying down a layer of masking
+tape. Using this little device on a flat
+
+171
+00:13:45,030 --> 00:13:50,560
+stick, a piece of masking tape, and it 's
+very convenient to wind it on. And while I
+
+172
+00:13:50,560 --> 00:13:55,900
+was winding, I was listening to some
+interesting info, so to speak, common truths
+
+173
+00:13:55,900 --> 00:14:01,830
+from Romanov. People have different opinions
+of him, but personally, from my experience, I
+
+174
+00:14:01,830 --> 00:14:04,630
+'d say the man says a lot of things right.
+
+175
+00:14:06,460 --> 00:14:12,400
+The video is called "Free Energy Around Us,"
+the full version. I 'll post a link to it as well.
+
+176
+00:14:14,160 --> 00:14:17,760
+Here 's an interesting moment for us, let 's
+watch.
+
+177
+00:14:22,160 --> 00:14:26,750
+So, three points. And we need to, like, know
+this thing clearly and follow it, you know.
+
+178
+00:14:26,810 --> 00:14:31,810
+And that 's how these things are calculated.
+Now about the length, your question, Vadim,
+
+179
+00:14:31,810 --> 00:14:36,870
+what you were saying, you know. How it ...
+Look, for those who 've wound coils, you know,
+
+180
+00:14:36,870 --> 00:14:41,880
+when they show me a coil wound like this ...
+I never use foul language, you know, but in
+
+181
+00:14:41,880 --> 00:14:44,980
+my heart ...
+Well, for goodness sake, if you understand
+
+182
+00:14:44,980 --> 00:14:49,760
+anything at all about this tech, you know,
+well, how were you supposed to do it, for
+
+183
+00:14:49,760 --> 00:14:50,680
+crying out loud.
+
+184
+00:14:51,970 --> 00:14:55,910
+Do you understand the difference or not, you
+know? Why or why not?
+
+185
+00:14:55,970 --> 00:15:00,270
+So the inductance and all that stuff will
+come from these points, you see? But the
+
+186
+00:15:00,270 --> 00:15:02,130
+length will come from these points,
+
+187
+00:15:02,230 --> 00:15:06,510
+you know what I mean? I mean, you have to
+make the coils correctly, you see? And now
+
+188
+00:15:06,510 --> 00:15:11,200
+look, you know, about those balls and toroids
+I told you about. The frequency wo n't change,
+
+189
+00:15:11,200 --> 00:15:15,780
+but the length, it will change, you know. And
+so it turns out, you should always take, you
+
+190
+00:15:15,780 --> 00:15:18,930
+know, if you 've studied and run a Tesla
+transformer properly,
+
+191
+00:15:19,180 --> 00:15:23,860
+you should know one nuance. The inductor
+correlates with the length, you know, of the
+
+192
+00:15:23,860 --> 00:15:24,690
+secondary coil.
+
+193
+00:15:25,700 --> 00:15:29,900
+The length of the secondary must be a precise
+number of inductors in length, you know,
+
+194
+00:15:29,900 --> 00:15:31,130
+according to this scheme.
+
+195
+00:15:31,530 --> 00:15:35,060
+Get the point? And now, you know, once you
+'ve understood this, you know,
+
+196
+00:15:35,060 --> 00:15:38,870
+your receiver will be exactly the same, for
+example, you know, this will be one length,
+
+197
+00:15:39,210 --> 00:15:41,900
+and the receiver will be, for example, four
+of these Ls.
+
+198
+00:15:42,550 --> 00:15:46,870
+Get the point, you know? And that 's how you
+'re going to do it.
+
+199
+00:15:47,370 --> 00:15:49,820
+Once you learn how to flip them over,
+basically.
+
+200
+00:15:50,250 --> 00:15:53,830
+For this you need, basically, what, either to
+modulate the kacher ...
+
+201
+00:15:54,900 --> 00:15:55,810
+Is there more time?
+
+202
+00:15:56,010 --> 00:15:58,010
+Yes. Five minutes. Seven.
+
+203
+00:15:58,660 --> 00:16:02,140
+I 'm explaining how a kacher differs,
+basically, from a non-kacher.
+
+204
+00:16:03,090 --> 00:16:05,380
+And now, pay very close attention right here.
+
+205
+00:16:05,480 --> 00:16:10,400
+An important point. Because sometimes radio
+enthusiasts visit the channel and start
+
+206
+00:16:10,400 --> 00:16:15,500
+showing off how educated they are, and they
+start saying: well, you guys do n't know a
+
+207
+00:16:15,500 --> 00:16:20,470
+damn thing, why on earth do you call an
+autogenerator a kacher, it 's like a totally
+
+208
+00:16:20,470 --> 00:16:21,190
+stupid name.
+
+209
+00:16:22,070 --> 00:16:26,740
+But the thing is, these people have never
+actually made a real kacher, they have n't
+
+210
+00:16:26,740 --> 00:16:28,540
+researched it, they do n't know.
+
+211
+00:16:28,640 --> 00:16:33,660
+And so Alexander Romanov will now correctly
+explain to you exactly how an autogenerator
+
+212
+00:16:33,660 --> 00:16:36,650
+differs from a kacher. Scientifically and
+popularly.
+
+213
+00:16:37,680 --> 00:16:39,230
+What Brovin invented, basically.
+
+214
+00:16:40,190 --> 00:16:42,510
+Here is how an autogenerator differs.
+
+215
+00:16:42,690 --> 00:16:47,270
+It is essentially an autogenerator. But here
+'s the catch, basically. Now, if we look at
+
+216
+00:16:47,270 --> 00:16:48,160
+its power supply.
+
+217
+00:16:48,310 --> 00:16:49,430
+Plus, minus.
+
+218
+00:16:50,190 --> 00:16:51,120
+The kacher circuit.
+
+219
+00:16:53,520 --> 00:16:56,950
+And for him, you know, all of this actually
+went to the minus.
+
+220
+00:17:00,080 --> 00:17:03,970
+Then some guys took all of this, wrapped it
+up, and it turned out like a Tesla
+
+221
+00:17:03,970 --> 00:17:05,140
+transformer, basically.
+
+222
+00:17:05,700 --> 00:17:10,810
+The essence does n't change. So what happens
+for him, basically: for him, basically, this
+
+223
+00:17:10,810 --> 00:17:13,660
+pulse, it is shifted for him, basically, in
+phase.
+
+224
+00:17:13,940 --> 00:17:16,540
+It might be in phase, or it might be shifted,
+basically, yeah.
+
+225
+00:17:19,790 --> 00:17:22,790
+And this reverse pulse ...
+From the collector.
+
+226
+00:17:23,530 --> 00:17:27,680
+His current and voltage are shifted by one
+hundred eighty degrees, so he says: a
+
+227
+00:17:27,680 --> 00:17:28,630
+currentless pulse.
+
+228
+00:17:29,830 --> 00:17:34,140
+Now, as soon as you put the autogenerator
+into a mode where the reverse pulse has this
+
+229
+00:17:34,140 --> 00:17:35,910
+shift, basically, you get a kacher.
+
+230
+00:17:36,210 --> 00:17:38,440
+If there 's no shift, you do n't have a
+kacher.
+
+231
+00:17:39,270 --> 00:17:43,950
+You have whatever else, you see. I made a
+system, how my kacher differs from Brovin 's
+
+232
+00:17:43,950 --> 00:17:44,940
+kacher, basically.
+
+233
+00:17:45,910 --> 00:17:50,350
+I 'm explaining it for the total monkeys,
+basically. My kacher, basically, has a shift
+
+234
+00:17:50,350 --> 00:17:52,130
+in current and voltage, basically.
+
+235
+00:17:54,390 --> 00:17:56,520
+Both right here, and right here, basically.
+
+236
+00:17:56,900 --> 00:18:02,010
+But for him, it 's only right here. So when
+it 's right here and right here — that 's my kacher.
+
+237
+00:18:02,310 --> 00:18:06,890
+And when, basically, it 's only right here —
+that 's his kacher. And when it 's neither
+
+238
+00:18:06,890 --> 00:18:09,440
+here nor there — that 's an autogenerator.
+Clear?
+
+239
+00:18:10,900 --> 00:18:11,310
+Got it?
+
+240
+00:18:12,010 --> 00:18:12,810
+That 's it.
+
+241
+00:18:13,310 --> 00:18:17,590
+And this is annoying: they 'll make something,
+wind it up, poke it at me, then three years
+
+242
+00:18:17,590 --> 00:18:21,570
+pass, basically, I 'm the jerk, and they ask
+the question: how does a kacher differ,
+
+243
+00:18:21,570 --> 00:18:23,150
+basically, from an autogenerator?
+
+244
+00:18:23,750 --> 00:18:28,010
+So you sit there, you know, feeling helpless,
+what can you say to the person? I do n't know.
+
+245
+00:18:28,010 --> 00:18:32,180
+Vasya says: I 'm busy right now, I 'll call
+you back when the sweat dries off my forehead,
+
+246
+00:18:32,180 --> 00:18:34,250
+you see, when I stop being nervous, you see.
+
+247
+00:18:34,790 --> 00:18:36,370
+That 's it, that 's the whole deal.
+
+248
+00:18:36,870 --> 00:18:40,370
+So there 's nothing scary here, basically.
+You just need to look at things normally,
+
+249
+00:18:40,370 --> 00:18:41,630
+basically, as they really are.
+
+250
+00:18:46,280 --> 00:18:51,970
+Well, that 's how it is. While we were
+watching those excerpts from Romanov, I have
+
+251
+00:18:51,970 --> 00:18:57,880
+already finished the insulation process using
+masking tape. It turned out to be such a
+
+252
+00:18:57,880 --> 00:19:01,070
+nice-looking little thing, a transformer
+mummy.
+
+253
+00:19:02,110 --> 00:19:07,580
+And now, I am moving on to carefully
+insulating over it with a thin PTFE film. So,
+
+254
+00:19:07,580 --> 00:19:13,460
+first, the PTFE film is securely fastened in
+place with tape, and then we proceed with a
+
+255
+00:19:13,460 --> 00:19:19,540
+complete winding. At the moment when we reach
+the lead, we gently wrap the PTFE film around
+
+256
+00:19:19,540 --> 00:19:22,040
+the lead to ensure proper insulation.
+
+257
+00:19:23,430 --> 00:19:26,590
+We are adding extra insulation with this
+specific width.
+
+258
+00:19:28,370 --> 00:19:33,100
+Now, very carefully wrap it up at this point,
+making sure to do it gently and precisely, so that ...
+
+259
+00:19:35,040 --> 00:19:37,510
+...
+and pass it further along the winding
+
+260
+00:19:37,510 --> 00:19:38,130
+direction.
+
+261
+00:19:39,570 --> 00:19:44,890
+So, in this way, we have carefully insulated
+the base of the lead by using heat shrink
+
+262
+00:19:44,890 --> 00:19:49,770
+tubing, and then, for added protection, we
+have also wrapped it with PTFE film.
+
+263
+00:19:50,150 --> 00:19:51,580
+Now we can move on.
+
+264
+00:19:53,960 --> 00:19:57,930
+This way, we will achieve and maintain
+high-quality, dependable high-voltage
+
+265
+00:19:57,930 --> 00:20:00,310
+insulation, ensuring excellent performance
+...
+
+266
+00:20:02,420 --> 00:20:04,100
+...
+in this particular area.
+
+267
+00:20:06,570 --> 00:20:12,580
+And our transformer will operate reliably.
+Just like this— smooth it out gently, pull it
+
+268
+00:20:12,580 --> 00:20:15,830
+slightly and carefully, and then wrap it
+around.
+
+269
+00:20:19,000 --> 00:20:20,950
+It 's a slow-paced kind of work,
+
+270
+00:20:23,000 --> 00:20:25,140
+but a lot depends on its quality.
+
+271
+00:20:34,010 --> 00:20:37,340
+Okay, that piece is finished, now I will
+secure the next one.
+
+272
+00:20:38,020 --> 00:20:40,560
+I will also wrap it around the lead, and so
+on.
+
+273
+00:20:42,430 --> 00:20:47,810
+I have completed the insulation of the first
+transformer layer using PTFE tape. It is
+
+274
+00:20:47,810 --> 00:20:52,990
+actually very delicate, and if you wind
+directly over it, you might damage it when
+
+275
+00:20:52,990 --> 00:20:54,910
+winding thick wire with force.
+
+276
+00:20:55,260 --> 00:20:59,670
+Therefore, it now needs to be additionally
+wrapped with masking tape.
+
+277
+00:20:59,870 --> 00:21:04,840
+This way, we will protect it from tearing. I
+have finished insulating the first
+
+278
+00:21:04,840 --> 00:21:08,600
+transformer layer and am moving to the second
+layer winding.
+
+279
+00:21:09,290 --> 00:21:14,040
+I recommend that the leads from the second
+winding are not placed near the leads of the
+
+280
+00:21:14,040 --> 00:21:18,510
+first winding, to avoid any potential short
+circuits and for ease of installation.
+
+281
+00:21:19,170 --> 00:21:24,640
+We need to bring these leads out right at
+these points between them. To do this, we
+
+282
+00:21:24,640 --> 00:21:30,570
+offset the wire to the midpoint between the
+taps of the primary winding and start winding.
+
+283
+00:21:31,270 --> 00:21:36,160
+At the same time, this wire that goes across
+needs to be well insulated. I 've insulated
+
+284
+00:21:36,160 --> 00:21:38,410
+it with several layers of fluoroplastic,
+
+285
+00:21:38,970 --> 00:21:43,710
+then I 'll go over it with masking tape and
+more fluoroplastic. Only after that will I
+
+286
+00:21:43,710 --> 00:21:46,330
+place the end of the second winding layer on
+it.
+
+287
+00:21:46,740 --> 00:21:50,900
+So, I 'm winding the second layer. According
+to the plan, I 'm marking the second layer
+
+288
+00:21:50,900 --> 00:21:52,690
+leads with yellow heat shrink tubing.
+
+289
+00:21:53,190 --> 00:21:58,130
+The second layer wire is much easier to wind,
+it already goes along the rounded edges of
+
+290
+00:21:58,130 --> 00:21:59,950
+the core, it lays down smoothly.
+
+291
+00:22:00,960 --> 00:22:03,190
+It 's much more convenient and faster this
+way.
+
+292
+00:22:03,410 --> 00:22:06,210
+Anyway, we 're winding with a smile, the mood
+is good.
+
+293
+00:22:06,840 --> 00:22:11,450
+I 'll keep winding, listening to some info
+from the internet, and you guys keep watching
+
+294
+00:22:11,450 --> 00:22:11,990
+the video.
+
+295
+00:22:12,740 --> 00:22:16,820
+So, the second layer is finished, one more to
+go and then the home stretch.
+
+296
+00:22:16,870 --> 00:22:23,280
+But we still have the insulation to do. This
+is how the construction looks right now.
+
+297
+00:22:24,270 --> 00:22:26,450
+I 'll also be pulling the wire across.
+
+298
+00:22:26,690 --> 00:22:30,120
+And now I 'll need to separate the leads into
+three points.
+
+299
+00:22:31,220 --> 00:22:32,080
+A triangle.
+
+300
+00:22:33,020 --> 00:22:34,990
+There will be the last three leads.
+
+301
+00:22:35,930 --> 00:22:37,150
+From this part here.
+
+302
+00:22:38,470 --> 00:22:41,910
+Here, as I said, I 've insulated the wire
+that was pulled across.
+
+303
+00:22:43,630 --> 00:22:46,270
+And this is the last lead of the second layer.
+
+304
+00:22:48,270 --> 00:22:51,070
+I 'll insulate the second layer just like the
+first one.
+
+305
+00:22:51,990 --> 00:22:58,520
+First a layer of masking tape, then several
+layers of fluoroplastic, and then another
+
+306
+00:22:58,520 --> 00:23:01,550
+layer of masking tape. Well, let 's go.
+
+307
+00:23:02,860 --> 00:23:07,020
+So, I 've insulated the second layer of the
+transformer using fluoroplastic.
+
+308
+00:23:07,700 --> 00:23:11,040
+I want to draw your attention to how the
+leads are insulated.
+
+309
+00:23:13,130 --> 00:23:15,520
+That is, they are additionally wrapped, each
+lead.
+
+310
+00:23:20,030 --> 00:23:24,880
+And so, the whole transformer is in several
+layers of fluoroplastic insulation.
+
+311
+00:23:31,250 --> 00:23:36,370
+Well, I think the main point here is quite
+clear, so that we do n't have a breakdown in
+
+312
+00:23:36,370 --> 00:23:37,800
+these particular places.
+
+313
+00:23:40,200 --> 00:23:43,400
+Well, I 'm finishing winding the third layer
+of the transformer.
+
+314
+00:23:43,500 --> 00:23:45,080
+I 've already insulated it.
+
+315
+00:23:45,720 --> 00:23:52,320
+You can see there are one, two, three, four,
+five turns of thirty centimeters left. About
+
+316
+00:23:52,320 --> 00:23:53,740
+two meters of wire.
+
+317
+00:23:54,010 --> 00:23:56,380
+Now I 'll bring the wire to this point here.
+
+318
+00:23:57,670 --> 00:24:02,940
+And just as we calculated from this size,
+twenty-six to twenty-eight meters, well, I
+
+319
+00:24:02,940 --> 00:24:07,260
+took twenty-eight meters, it works out
+according to the calculations.
+
+320
+00:24:07,610 --> 00:24:13,210
+So, by multiplying the length of the wire
+used for the very first layer by three, we
+
+321
+00:24:13,210 --> 00:24:18,740
+can get a fairly accurate estimate for the
+total length of wire that will be needed
+
+322
+00:24:18,740 --> 00:24:19,270
+overall.
+
+323
+00:24:21,420 --> 00:24:26,120
+Now, I 'll finish winding the wire, making
+sure it 's done carefully, and then insulate
+
+324
+00:24:26,120 --> 00:24:30,050
+it with PTFE as well. With that, the winding
+will be completely finished.
+
+325
+00:24:39,810 --> 00:24:45,460
+You can also see the red. The red marking
+here is the heat shrink tubing, and this is
+
+326
+00:24:45,460 --> 00:24:50,650
+already the third layer. I 've finally
+finished winding the third layer of the
+
+327
+00:24:50,650 --> 00:24:53,340
+transformer and have fully insulated it.
+
+328
+00:24:54,640 --> 00:24:57,430
+It turned out looking like this interesting
+jellyfish.
+
+329
+00:24:58,840 --> 00:25:00,370
+The leads are all numbered.
+
+330
+00:25:01,570 --> 00:25:07,950
+This is what it looks like from the top. So,
+it 's quite a nice-looking construction.
+
+331
+00:25:10,080 --> 00:25:12,210
+And now, regarding the time it took me.
+
+332
+00:25:12,330 --> 00:25:17,070
+Of course, I did take some breaks, but I
+started working at ten in the morning and, as
+
+333
+00:25:17,070 --> 00:25:21,920
+you can see here, I finally finished up at
+one in the morning. It really was a long day.
+
+334
+00:25:23,820 --> 00:25:30,230
+So you can judge for yourselves how much time
+this kind of work might take you. This is the
+
+335
+00:25:30,230 --> 00:25:36,560
+most critical component, just like the power
+module, so its fabrication must be taken very
+
+336
+00:25:36,560 --> 00:25:42,610
+seriously because it will carry the main
+loads, and it must be high-quality insulation
+
+337
+00:25:42,610 --> 00:25:44,390
+to prevent any breakdown.
+
+338
+00:25:48,400 --> 00:25:52,240
+Next, tomorrow I 'll go ahead and carefully
+strip the leads, making sure to do it
+
+339
+00:25:52,240 --> 00:25:52,670
+properly.
+
+340
+00:25:56,060 --> 00:26:00,790
+And then, at this stage, I 'll carefully
+apply the solder to both of the ends of the
+
+341
+00:26:00,790 --> 00:26:05,400
+piece. And that 's it—once that 's done, the
+fabrication process can be considered
+
+342
+00:26:05,400 --> 00:26:06,540
+completely finished.
+

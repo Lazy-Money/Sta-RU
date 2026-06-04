@@ -1,0 +1,44 @@
+1
+00:00:01,260 --> 00:00:06,000
+So, the task is to build a voltage inverter rated 800 volts, 2 amps.
+
+2
+00:00:06,840 --> 00:00:13,420
+The load will be 300 watt lamps, 4 of them connected in series, and bundled in parallel as 3 strings.
+
+3
+00:00:13,920 --> 00:00:15,880
+3 bundles of 4 lamps in parallel.
+
+4
+00:00:17,160 --> 00:00:21,800
+For lamps per bundle to distribute the 800 volts as 200 volts per lamp.
+
+5
+00:00:23,280 --> 00:00:32,140
+So, we have a ferrite step-up transformer, we have a half-bridge inverter, this is the control board, the mains rectifier, and we'll be watching the consumption.
+
+6
+00:00:36,810 --> 00:00:38,050
+So, we start it up.
+
+7
+00:00:42,440 --> 00:00:43,780
+We start the logic.
+
+8
+00:00:47,620 --> 00:00:48,240
+Off we go.
+
+9
+00:00:50,160 --> 00:00:51,740
+That's how this thing lights up.
+
+10
+00:00:53,760 --> 00:00:58,640
+Our consumption is 7.5 amps at 220 volts, AC ammeter.
+
+11
+00:01:02,530 --> 00:01:04,950
+Shutting it off, or the strip will burn out.
+

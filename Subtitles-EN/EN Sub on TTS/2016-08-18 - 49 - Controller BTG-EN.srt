@@ -1,0 +1,1588 @@
+1
+00:00:00,860 --> 00:00:03,100
+So, hi everyone, this is Stalker.
+
+2
+00:00:04,500 --> 00:00:07,520
+Today we'll be talking about the controller for our BTG.
+
+3
+00:00:10,700 --> 00:00:11,580
+Touchy topics.
+
+4
+00:00:13,140 --> 00:00:16,100
+Many of those who made it really don't like it, but still...
+
+5
+00:00:17,160 --> 00:00:20,200
+I think it's worth explaining and showing what's what here.
+
+6
+00:00:21,460 --> 00:00:23,500
+So, here's my controller schematic.
+
+7
+00:00:25,340 --> 00:00:26,700
+Made purely by me.
+
+8
+00:00:30,180 --> 00:00:32,120
+This is what it looks like on the device.
+
+9
+00:00:33,760 --> 00:00:35,420
+It's divided into two blocks.
+
+10
+00:00:36,640 --> 00:00:38,420
+This is the push-pull control block.
+
+11
+00:00:39,260 --> 00:00:40,740
+Here we also have adjustments.
+
+12
+00:00:42,060 --> 00:00:45,120
+For the burst width and Tesla burst strike location.
+
+13
+00:00:46,000 --> 00:00:49,200
+And the control block, accordingly, for the Tesla itself.
+
+14
+00:00:50,380 --> 00:00:54,720
+In this video clip we'll be looking at, specifically the push-pull control block.
+
+15
+00:00:55,900 --> 00:00:58,000
+And this wiring in the next video.
+
+16
+00:00:58,340 --> 00:01:00,220
+We'll look at the Tesla control block.
+
+17
+00:01:00,860 --> 00:01:01,560
+Ok, let's go.
+
+18
+00:01:02,580 --> 00:01:03,680
+So, where do we start?
+
+19
+00:01:04,720 --> 00:01:05,860
+The driving part.
+
+20
+00:01:06,880 --> 00:01:08,140
+Didn't bother much.
+
+21
+00:01:09,260 --> 00:01:10,560
+You can work on other chips.
+
+22
+00:01:11,280 --> 00:01:12,720
+Made on 494.
+
+23
+00:01:14,740 --> 00:01:17,140
+See, here we have power coming in.
+
+24
+00:01:18,120 --> 00:01:19,160
+15 volts.
+
+25
+00:01:20,300 --> 00:01:22,900
+Through a 12V regulator for stabilization.
+
+26
+00:01:24,300 --> 00:01:25,240
+Input capacitor.
+
+27
+00:01:26,180 --> 00:01:27,000
+Output capacitor.
+
+28
+00:01:27,740 --> 00:01:27,960
+Choke.
+
+29
+00:01:28,840 --> 00:01:30,800
+After the choke, another capacitor.
+
+30
+00:01:31,880 --> 00:01:33,140
+This is represented here.
+
+31
+00:01:33,920 --> 00:01:35,140
+Here's the regulator.
+
+32
+00:01:36,840 --> 00:01:37,100
+Choke.
+
+33
+00:01:38,840 --> 00:01:40,480
+Wiring capacitors are there.
+
+34
+00:01:42,520 --> 00:01:43,000
+Next.
+
+35
+00:01:43,640 --> 00:01:45,620
+So, this is power for all chips.
+
+36
+00:01:46,840 --> 00:01:49,220
+In this controller the main chip is used.
+
+37
+00:01:50,700 --> 00:01:51,980
+It's TC4093.
+
+38
+00:01:54,440 --> 00:01:56,760
+So, what logical elements do we have?
+
+39
+00:01:59,770 --> 00:02:02,750
+It's analog is K561TL1.
+
+40
+00:02:05,410 --> 00:02:06,430
+What is this element?
+
+41
+00:02:08,010 --> 00:02:10,370
+This element is a stable Schmitt trigger.
+
+42
+00:02:11,250 --> 00:02:12,810
+With inversion at the output.
+
+43
+00:02:14,150 --> 00:02:15,210
+And two input and...
+
+44
+00:02:15,730 --> 00:02:18,510
+That is, two inputs with combined and logic.
+
+45
+00:02:20,170 --> 00:02:23,410
+This means we get a comparison moment on these two inputs.
+
+46
+00:02:26,240 --> 00:02:28,080
+Here you can see the chip pinout.
+
+47
+00:02:30,480 --> 00:02:32,600
+Numbering what's responsible for what.
+
+48
+00:02:33,240 --> 00:02:35,560
+And our power is 7-14+.
+
+49
+00:02:37,640 --> 00:02:38,620
+Moving on.
+
+50
+00:02:40,240 --> 00:02:42,520
+Making the drivers on TL, say.
+
+51
+00:02:43,320 --> 00:02:44,280
+You can on any other.
+
+52
+00:02:46,100 --> 00:02:47,080
+Pay attention.
+
+53
+00:02:47,500 --> 00:02:50,600
+The capacitor here is 6800 pF.
+
+54
+00:02:51,940 --> 00:02:53,880
+I tuned the system to the middle.
+
+55
+00:02:54,300 --> 00:02:56,120
+That's to 15 kHz operation.
+
+56
+00:02:57,700 --> 00:03:02,340
+Well, from this value the system works in plus minus 10 kHz practically.
+
+57
+00:03:03,160 --> 00:03:08,400
+If you'll tune to other frequencies, accordingly some elements in this schematic will change.
+
+58
+00:03:10,000 --> 00:03:11,700
+That is, pay attention.
+
+59
+00:03:12,080 --> 00:03:14,440
+The capacitor and here are two resistors.
+
+60
+00:03:15,500 --> 00:03:17,520
+They're responsible for the frequency.
+
+61
+00:03:18,180 --> 00:03:22,360
+That is, 5.1 kΩ and in series with it 500 Ω.
+
+62
+00:03:23,720 --> 00:03:25,500
+This is represented here.
+
+63
+00:03:27,460 --> 00:03:29,120
+These two resistors.
+
+64
+00:03:29,660 --> 00:03:30,180
+What for?
+
+65
+00:03:32,020 --> 00:03:35,620
+We need this so we don't skip over all the interesting moments.
+
+66
+00:03:36,600 --> 00:03:40,300
+I have the ability to extremely smoothly adjust the frequency.
+
+67
+00:03:41,500 --> 00:03:43,980
+Very smoothly in hundreds of Hz.
+
+68
+00:03:46,040 --> 00:03:47,120
+Can't do anything.
+
+69
+00:03:47,520 --> 00:03:48,720
+The system works that way.
+
+70
+00:03:49,120 --> 00:03:50,640
+Settings have to be very precise.
+
+71
+00:03:51,360 --> 00:04:00,160
+If you recall, Ruslan Kalachnikov once mentioned that his frequency setting resistor can be turned by a motor and the frequency is very hard to knock off.
+
+72
+00:04:00,900 --> 00:04:02,860
+This is exactly what that's for.
+
+73
+00:04:04,060 --> 00:04:04,620
+Next.
+
+74
+00:04:06,200 --> 00:04:11,700
+It would be possible to send this directly to the drivers and transistors, but that doesn't suit us.
+
+75
+00:04:12,960 --> 00:04:14,380
+We need to do this trick.
+
+76
+00:04:15,400 --> 00:04:18,040
+Additionally, place a chip and make a time delay on it.
+
+77
+00:04:19,720 --> 00:04:21,300
+There we have delay written.
+
+78
+00:04:21,920 --> 00:04:23,660
+Our delay is built on elements.
+
+79
+00:04:25,300 --> 00:04:29,120
+Timing components are a resistor and capacitor on the Schmitt trigger input.
+
+80
+00:04:30,160 --> 00:04:31,000
+How does this work?
+
+81
+00:04:31,780 --> 00:04:38,600
+The signal from TL goes through 10 ohms resistors, reaches the input, gets inverted and exits to the resistor.
+
+82
+00:04:42,780 --> 00:04:52,740
+The resistor is a current limiting element in the system, so it regulates the number of charges passing per unit time through the conductor's cross section and through this resistance.
+
+83
+00:04:53,740 --> 00:04:57,520
+And accordingly, it regulates the charging time of this capacitance.
+
+84
+00:04:59,300 --> 00:05:06,140
+That is, we understand higher resistance, the capacitance charges longer, and we get this interesting effect.
+
+85
+00:05:07,180 --> 00:05:09,100
+Now I'll present it, if we look.
+
+86
+00:05:10,500 --> 00:05:13,040
+On the capacitance, we have an edge slope.
+
+87
+00:05:13,300 --> 00:05:16,940
+That is, the moment of charging, voltage rise is sloped.
+
+88
+00:05:17,900 --> 00:05:20,120
+And the trigger has a hysteresis point.
+
+89
+00:05:20,480 --> 00:05:24,260
+That is, the trigger moment when it switches from zero position to one.
+
+90
+00:05:25,020 --> 00:05:28,660
+So, the longer this slope moment, the later the trigger will switch.
+
+91
+00:05:29,720 --> 00:05:37,960
+And consequently, this way we can on this point, playing with it, adjusting the resistance, we can set the moment when our trigger will switch with delay.
+
+92
+00:05:40,540 --> 00:05:45,520
+We do this so it's convenient for us later to control the Tesla and work with anticipation.
+
+93
+00:05:46,540 --> 00:05:50,440
+That is, so we can move across the entire width of the current sine wave.
+
+94
+00:05:52,540 --> 00:05:59,920
+If we don't make this delay, our signal will lag in time, and we'll constantly hit the wrong zone, where the current sign is falling.
+
+95
+00:06:00,760 --> 00:06:02,440
+And basically there's nothing to do there.
+
+96
+00:06:03,740 --> 00:06:09,060
+Striking at a falling magnetic field, at a decaying current, has absolutely no sense.
+
+97
+00:06:09,720 --> 00:06:14,580
+Even less sense to hammer in dead time, as we have such misinformation on the internet.
+
+98
+00:06:15,820 --> 00:06:20,940
+In dead time the current is in zero in general, so you can't ramp up absolutely anything there.
+
+99
+00:06:22,520 --> 00:06:26,320
+Next, made the delay, we make the delay of both channels.
+
+100
+00:06:26,720 --> 00:06:28,940
+As you can see, we take from two channels.
+
+101
+00:06:30,120 --> 00:06:33,180
+And already after the time delay, we send to the drivers.
+
+102
+00:06:35,000 --> 00:06:38,520
+Drivers in fact are UCC 37322.
+
+103
+00:06:39,140 --> 00:06:40,640
+Here they are, two drivers.
+
+104
+00:06:42,040 --> 00:06:46,760
+As in previous videos I showed, for push-pull such powerful ones aren't even needed.
+
+105
+00:06:47,440 --> 00:06:49,820
+This board for me is a testing one.
+
+106
+00:06:50,220 --> 00:06:54,280
+It's multifunctional for different purposes, so more powerful elements are here.
+
+107
+00:06:55,880 --> 00:06:57,200
+So, common power.
+
+108
+00:06:57,920 --> 00:07:00,120
+The common power is marked here as.
+
+109
+00:07:00,520 --> 00:07:02,700
+Here's 15 volts to the regulator input.
+
+110
+00:07:04,320 --> 00:07:09,180
+We also have 15 volt power, separate power is fed to the driver inputs.
+
+111
+00:07:11,640 --> 00:07:16,240
+And next separate power marked with an arrow for the push-pull, 24 volts.
+
+112
+00:07:17,080 --> 00:07:18,380
+How is it done here?
+
+113
+00:07:19,220 --> 00:07:21,680
+Here a DC-DC converter is used.
+
+114
+00:07:22,500 --> 00:07:23,100
+Bought.
+
+115
+00:07:24,080 --> 00:07:28,380
+Which is 24 volts, which will be in the system from these power supplies.
+
+116
+00:07:30,200 --> 00:07:31,800
+Converts to 15 volts.
+
+117
+00:07:32,660 --> 00:07:39,420
+And see, the wire goes directly to the drivers, without any regulators, without anything, to their capacitors.
+
+118
+00:07:40,660 --> 00:07:43,140
+This is represented, here's the input.
+
+119
+00:07:45,960 --> 00:07:46,640
+Capacitance.
+
+120
+00:07:46,640 --> 00:07:48,220
+This is an electrolytic.
+
+121
+00:07:49,660 --> 00:07:57,280
+And directly next to each driver mandatory, 4.7 microfarad ceramic capacitor, for accelerating leading edge rise.
+
+122
+00:07:59,260 --> 00:08:00,340
+Next resistor.
+
+123
+00:08:00,880 --> 00:08:05,520
+While I already presented the push-pull schematic, what it does, you can look at my push-pull video.
+
+124
+00:08:06,200 --> 00:08:09,620
+We won't dwell on it in detail, nothing changed much here.
+
+125
+00:08:11,260 --> 00:08:13,500
+So, we made the delay at this moment.
+
+126
+00:08:15,400 --> 00:08:19,580
+And the true signal, which is without delay, we send directly to.
+
+127
+00:08:20,040 --> 00:08:21,840
+There's such a thing with clamps with a jumper.
+
+128
+00:08:23,200 --> 00:08:24,340
+Here it is represented.
+
+129
+00:08:26,240 --> 00:08:28,820
+If you look, it has such a metal jumper in front.
+
+130
+00:08:30,520 --> 00:08:31,920
+There it's clearly visible.
+
+131
+00:08:32,840 --> 00:08:33,700
+It's screwed in.
+
+132
+00:08:35,460 --> 00:08:38,980
+So, this we need so we can choose by which half cycle will work.
+
+133
+00:08:42,530 --> 00:08:44,390
+By positive or by negative.
+
+134
+00:08:45,170 --> 00:08:46,930
+That is, we switch accordingly.
+
+135
+00:08:47,370 --> 00:08:51,590
+You can see, from one channel that goes the signal, or from another to the center.
+
+136
+00:08:52,130 --> 00:08:53,550
+And it went on into the system.
+
+137
+00:08:55,110 --> 00:09:00,750
+So, when we've chosen this signal, by which half wave it works, this will be useful to us later.
+
+138
+00:09:01,490 --> 00:09:02,730
+For now you can close any.
+
+139
+00:09:03,950 --> 00:09:05,190
+We send to the next.
+
+140
+00:09:05,870 --> 00:09:07,970
+Here it's separated by lines in the picture.
+
+141
+00:09:08,830 --> 00:09:15,770
+This is already a system that controls the burst width in the Tesla and the Tesla burst strike location, which will work later.
+
+142
+00:09:16,550 --> 00:09:17,570
+How it's built.
+
+143
+00:09:19,210 --> 00:09:22,930
+This signal we chose is sent to the input and inversion happens.
+
+144
+00:09:25,070 --> 00:09:26,350
+Look at the schematic.
+
+145
+00:09:26,830 --> 00:09:32,030
+One inversion, second, this is needed for stabilization, next it reaches the resistor.
+
+146
+00:09:33,190 --> 00:09:35,330
+It's marked as burst strike location.
+
+147
+00:09:35,330 --> 00:09:40,370
+That is, the same time delay we do on the Schmitt trigger, as I explained earlier.
+
+148
+00:09:43,050 --> 00:09:47,690
+Here we have 4700 pF delaying capacitance for this moment.
+
+149
+00:09:49,170 --> 00:09:55,050
+Then after it another inversion happens, we straighten out the clean square and send to the next element.
+
+150
+00:09:56,270 --> 00:09:57,450
+Exactly the same chip.
+
+151
+00:09:58,010 --> 00:10:01,870
+This element works on the principle of subtracting a signal from itself.
+
+152
+00:10:03,870 --> 00:10:05,150
+That is, what's done here.
+
+153
+00:10:06,290 --> 00:10:07,750
+The wiring is visible.
+
+154
+00:10:08,210 --> 00:10:10,390
+How it goes, I'll explain on this picture.
+
+155
+00:10:12,690 --> 00:10:15,790
+For example, we have a signal that came to the input.
+
+156
+00:10:18,410 --> 00:10:19,690
+Here's our signal drawn.
+
+157
+00:10:20,330 --> 00:10:23,250
+Next, on the output we have a Schmitt trigger with inversion.
+
+158
+00:10:24,270 --> 00:10:26,210
+It's inverted to this kind of signal.
+
+159
+00:10:26,870 --> 00:10:29,250
+That is, actually our signal becomes wide.
+
+160
+00:10:30,310 --> 00:10:33,330
+That is, this pause width turns into one.
+
+161
+00:10:35,610 --> 00:10:38,490
+Next, this long signal arrives at the resistor.
+
+162
+00:10:40,010 --> 00:10:43,010
+In our case it's here, this 10kΩ resistor.
+
+163
+00:10:44,950 --> 00:10:47,270
+And after this, such a clever thing is done.
+
+164
+00:10:48,530 --> 00:10:50,990
+This true signal arrives here on the hole.
+
+165
+00:10:51,330 --> 00:10:54,310
+On two Schmitt trigger inputs, a whole cube is used.
+
+166
+00:10:55,170 --> 00:10:57,210
+And here it arrives only on one.
+
+167
+00:10:57,210 --> 00:10:59,630
+And what's interesting happens here.
+
+168
+00:11:00,130 --> 00:11:02,790
+This signal is inverted, it becomes long.
+
+169
+00:11:03,450 --> 00:11:05,270
+It also arrives at the other input.
+
+170
+00:11:05,850 --> 00:11:08,470
+Here the trigger hysteresis triggers from the delay.
+
+171
+00:11:10,290 --> 00:11:14,650
+That is, we see, as I explained, the voltage grows at a point.
+
+172
+00:11:16,030 --> 00:11:18,250
+The element's triggering is delayed.
+
+173
+00:11:19,210 --> 00:11:20,130
+And what happens?
+
+174
+00:11:21,150 --> 00:11:22,050
+This moment.
+
+175
+00:11:23,010 --> 00:11:24,610
+Let's analyze in detail.
+
+176
+00:11:25,290 --> 00:11:26,050
+So pin 5.
+
+177
+00:11:27,250 --> 00:11:30,150
+On pin 5 we have the same signal as on input.
+
+178
+00:11:30,910 --> 00:11:31,850
+Here it is, fed.
+
+179
+00:11:32,310 --> 00:11:36,530
+And on input 6 we have the signal after the delay that happened on the capacitor.
+
+180
+00:11:40,370 --> 00:11:41,790
+Here it is, with delay.
+
+181
+00:11:42,410 --> 00:11:44,070
+That is, actually a time shift.
+
+182
+00:11:45,690 --> 00:11:46,830
+And what happens?
+
+183
+00:11:47,150 --> 00:11:49,050
+What does the two input and logic do?
+
+184
+00:11:49,770 --> 00:11:51,630
+It performs signal subtraction.
+
+185
+00:11:52,350 --> 00:11:55,790
+That is, it subtracts the shifted signal from the input signal.
+
+186
+00:11:56,330 --> 00:12:00,290
+And we know that two input and logic triggers when both inputs are one.
+
+187
+00:12:03,290 --> 00:12:06,590
+And it turns out, in the end we have this width on the output.
+
+188
+00:12:08,290 --> 00:12:10,810
+That is, it turns out we subtracted the signal.
+
+189
+00:12:11,790 --> 00:12:16,810
+Accordingly, we did signal subtraction from itself and we got the burst width with this element.
+
+190
+00:12:18,770 --> 00:12:20,730
+Next, we only need to figure this out.
+
+191
+00:12:21,390 --> 00:12:24,890
+On output 4 we have the signal we subtracted from itself.
+
+192
+00:12:25,430 --> 00:12:26,870
+But it's inverted for us.
+
+193
+00:12:27,610 --> 00:12:28,290
+Here it works out.
+
+194
+00:12:29,190 --> 00:12:33,370
+And we just need to apply one more cube, invert it to the burst signal.
+
+195
+00:12:34,230 --> 00:12:36,050
+Which will control this thing for us.
+
+196
+00:12:36,550 --> 00:12:37,770
+Well, then I'll explain further.
+
+197
+00:12:38,710 --> 00:12:41,870
+Basically that, when we'll analyze the Tesla controller.
+
+198
+00:12:42,810 --> 00:12:43,810
+How it happens.
+
+199
+00:12:44,690 --> 00:12:46,790
+Well, that's the point, how this system works.
+
+200
+00:12:46,790 --> 00:12:47,410
+Like this.
+
+201
+00:12:48,890 --> 00:12:51,790
+That is, now we understand why we made this delay.
+
+202
+00:12:53,190 --> 00:12:54,950
+For the push-pull zone operation.
+
+203
+00:12:55,930 --> 00:12:59,970
+That is, we delayed the signal, but we work with the signal without delay.
+
+204
+00:13:00,390 --> 00:13:01,210
+On this system.
+
+205
+00:13:02,150 --> 00:13:07,570
+And we get this moment that we can move across the entire width of the current sine wave that will be.
+
+206
+00:13:08,770 --> 00:13:11,630
+Now I'll show this schematic, how it works in practice.
+
+207
+00:13:14,890 --> 00:13:17,410
+So now we'll be showing how the delay signal works.
+
+208
+00:13:21,250 --> 00:13:21,850
+Okay.
+
+209
+00:13:21,850 --> 00:13:25,350
+The yellow oscilloscope probe is sitting on the TL output.
+
+210
+00:13:26,510 --> 00:13:27,550
+There it's presented.
+
+211
+00:13:29,550 --> 00:13:35,390
+And the blue oscilloscope probe is sitting directly on the transistor gate control after the driver.
+
+212
+00:13:36,590 --> 00:13:39,090
+Now I'll turn the timing resistor for the delay.
+
+213
+00:13:40,010 --> 00:13:42,030
+And we'll see how this delay triggers.
+
+214
+00:13:43,490 --> 00:13:49,370
+Now if you look, in the initial period due to the capacitor the signal delay is already visible.
+
+215
+00:13:50,590 --> 00:13:52,450
+I start rotating the resistor.
+
+216
+00:13:55,660 --> 00:13:58,940
+And we see, yellow is the TL output, reminding.
+
+217
+00:14:00,200 --> 00:14:02,540
+And blue is what controls the driver key.
+
+218
+00:14:03,020 --> 00:14:05,020
+And we see the signal in time is lagging.
+
+219
+00:14:07,020 --> 00:14:09,800
+That is, I'm turning one of the timing resistors now.
+
+220
+00:14:11,460 --> 00:14:14,180
+This is on the schematic, this resistor here.
+
+221
+00:14:15,340 --> 00:14:17,600
+One of them, that's connected to the channel.
+
+222
+00:14:19,700 --> 00:14:25,940
+In reality, you'll need, when working, not to turn one resistor, but put two probes on gate controls.
+
+223
+00:14:27,280 --> 00:14:31,240
+And watch that these signals go with a 180 degree shift.
+
+224
+00:14:34,140 --> 00:14:36,600
+That is, how the push-pull usually works.
+
+225
+00:14:38,640 --> 00:14:41,880
+Also, this timing chain doesn't affect the duty cycle for us.
+
+226
+00:14:42,760 --> 00:14:44,740
+Now I'll turn the duty cycle on TL.
+
+227
+00:14:46,800 --> 00:14:47,760
+Now we'll look.
+
+228
+00:14:50,610 --> 00:14:51,890
+It controls great.
+
+229
+00:14:52,890 --> 00:14:54,450
+I'm changing the duty cycle.
+
+230
+00:14:55,470 --> 00:14:57,470
+You can see the duty cycle is changing.
+
+231
+00:14:57,970 --> 00:14:59,550
+This is the TL output for us.
+
+232
+00:15:00,670 --> 00:15:03,950
+And you can see the duty cycle is changing on the push-pull driver.
+
+233
+00:15:05,350 --> 00:15:07,130
+That is, the system works for us.
+
+234
+00:15:07,810 --> 00:15:09,430
+And we change the duty cycle.
+
+235
+00:15:10,370 --> 00:15:11,250
+And can move it.
+
+236
+00:15:15,920 --> 00:15:17,020
+This signal in time.
+
+237
+00:15:17,720 --> 00:15:19,480
+That is, our time delay works.
+
+238
+00:15:20,920 --> 00:15:24,100
+We get the system can work with TL with anticipation.
+
+239
+00:15:24,760 --> 00:15:25,180
+Next.
+
+240
+00:15:26,480 --> 00:15:27,880
+We looked at this moment.
+
+241
+00:15:28,360 --> 00:15:29,340
+Now moving on.
+
+242
+00:15:30,520 --> 00:15:32,700
+I take the blue oscilloscope channel.
+
+243
+00:15:33,820 --> 00:15:34,520
+Move it.
+
+244
+00:15:37,640 --> 00:15:40,680
+To where we have the output of direct TL control.
+
+245
+00:15:43,560 --> 00:15:45,760
+That is, here you can see our output.
+
+246
+00:15:46,560 --> 00:15:47,760
+It's represented here.
+
+247
+00:15:49,900 --> 00:15:53,500
+This output after the chip that sets the burst strike location.
+
+248
+00:15:55,680 --> 00:15:58,260
+And the second chip that sets the burst width.
+
+249
+00:15:59,300 --> 00:16:00,800
+Here we have output terminals.
+
+250
+00:16:02,180 --> 00:16:04,320
+It'll be represented as three wires.
+
+251
+00:16:05,180 --> 00:16:08,480
+That is, central signal, plus power, and common minus.
+
+252
+00:16:09,180 --> 00:16:11,460
+That is, we see these wires directly.
+
+253
+00:16:12,540 --> 00:16:14,660
+Take red plus, common minus.
+
+254
+00:16:15,920 --> 00:16:17,740
+And here's the central wire that arrives.
+
+255
+00:16:19,560 --> 00:16:22,820
+This terminal is already on the Tesla control board.
+
+256
+00:16:23,680 --> 00:16:24,800
+Now I'll hook up the probe.
+
+257
+00:16:26,680 --> 00:16:29,240
+Specifically, we'll see how the burst is regulated.
+
+258
+00:16:31,260 --> 00:16:32,500
+I hooked up the probe.
+
+259
+00:16:34,040 --> 00:16:34,500
+And looking.
+
+260
+00:16:34,980 --> 00:16:37,240
+Now the yellow probe is on the TL output.
+
+261
+00:16:39,360 --> 00:16:43,200
+That is, on the channel by which we do synchronization with this jumper.
+
+262
+00:16:44,680 --> 00:16:45,720
+Why don't we work?
+
+263
+00:16:47,880 --> 00:16:52,960
+At this moment, I'll be turning this resistor that sets the burst strike location for us.
+
+264
+00:16:53,860 --> 00:16:56,420
+And on this schematic for this chip, the burst width.
+
+265
+00:17:04,200 --> 00:17:08,120
+For example, now, I'll turn the resistor responsible for burst width.
+
+266
+00:17:14,630 --> 00:17:17,510
+Okay, with left hand it's awkward, but we'll try.
+
+267
+00:17:18,810 --> 00:17:21,690
+We see the burst width is decreasing at this moment.
+
+268
+00:17:24,510 --> 00:17:26,050
+It can be set.
+
+269
+00:17:26,830 --> 00:17:27,470
+There it goes.
+
+270
+00:17:28,050 --> 00:17:30,510
+That is, in general this schematic works great.
+
+271
+00:17:31,210 --> 00:17:35,050
+And you can later set up to control Tesla, even one signal in the burst.
+
+272
+00:17:36,570 --> 00:17:38,970
+I turn back, the burst expands.
+
+273
+00:17:41,970 --> 00:17:43,250
+That was one resistor.
+
+274
+00:17:45,230 --> 00:17:46,770
+Now it relates to this chip.
+
+275
+00:17:48,370 --> 00:17:52,230
+And the other resistor that relates to the chip that regulates the width.
+
+276
+00:17:54,470 --> 00:17:57,990
+That is, not burst width, but burst strike location.
+
+277
+00:18:03,240 --> 00:18:04,760
+Now our burst will move.
+
+278
+00:18:06,540 --> 00:18:08,580
+And we see why a delay will be needed.
+
+279
+00:18:09,240 --> 00:18:11,320
+We understand the burst can't move forward.
+
+280
+00:18:12,940 --> 00:18:18,280
+Next one, I'll move it to the beginning now, where the sync signal itself begins.
+
+281
+00:18:19,400 --> 00:18:21,100
+We can't move the burst further.
+
+282
+00:18:22,020 --> 00:18:26,860
+And we understand that if we didn't have the delay, we'd always be lagging.
+
+283
+00:18:27,620 --> 00:18:30,680
+And since we already made the delay, this initial one.
+
+284
+00:18:33,480 --> 00:18:37,540
+Our signal, actually now in this position, leads the current sign.
+
+285
+00:18:38,960 --> 00:18:46,100
+That is, we can already work in the place where the current sign, say, crosses through zero and starts to rise smoothly.
+
+286
+00:18:47,260 --> 00:18:49,180
+This moment, say, set.
+
+287
+00:18:50,680 --> 00:18:51,480
+We get.
+
+288
+00:18:51,880 --> 00:18:53,000
+Here I turn the resistor.
+
+289
+00:18:56,660 --> 00:19:04,380
+And we see, say, this moment, we work on the rise of the current sign, say, in the positive half cycle.
+
+290
+00:19:05,620 --> 00:19:09,160
+Now we reached, say, the maximum of the current sign.
+
+291
+00:19:09,820 --> 00:19:12,940
+And now since we reached the maximum, the delay triggered.
+
+292
+00:19:13,340 --> 00:19:16,820
+And now we can delay the signal further, we begin to descend.
+
+293
+00:19:18,400 --> 00:19:23,180
+After the maximum of the current sign it begins to decay, can work in that part too.
+
+294
+00:19:24,660 --> 00:19:26,820
+That's specifically why such a trick is needed.
+
+295
+00:19:27,420 --> 00:19:28,520
+Everything works out great.
+
+296
+00:19:30,040 --> 00:19:32,080
+We see, now we looked at one signal.
+
+297
+00:19:33,600 --> 00:19:37,600
+Here it happens, we see a strike on each half cycle of the push-pull.
+
+298
+00:19:39,640 --> 00:19:42,640
+Switch to another channel, it'll strike differently too.
+
+299
+00:19:43,160 --> 00:19:45,000
+With this jumper that's represented here.
+
+300
+00:19:48,700 --> 00:19:50,020
+It's on the board here.
+
+301
+00:19:52,160 --> 00:19:54,920
+Next, now let's see what's happening in the burst.
+
+302
+00:19:57,340 --> 00:19:59,620
+Let's expand the burst or signal.
+
+303
+00:20:01,220 --> 00:20:03,840
+And I'll try to switch the blue oscilloscope channel.
+
+304
+00:20:04,860 --> 00:20:06,900
+This we already see its control signal.
+
+305
+00:20:07,640 --> 00:20:11,520
+And I'll switch already to the output directly from the key control driver.
+
+306
+00:20:13,280 --> 00:20:14,340
+And we see.
+
+307
+00:20:15,540 --> 00:20:17,980
+Here we already see pulses in the burst.
+
+308
+00:20:20,280 --> 00:20:25,200
+And it turns out very convenient that we can on the push-pull board by adjusting the burst width.
+
+309
+00:20:27,460 --> 00:20:31,560
+And with this resistor and with the strike location can change.
+
+310
+00:20:32,840 --> 00:20:35,800
+We can see what we'll have directly as control on the Tesla.
+
+311
+00:20:37,340 --> 00:20:39,260
+Say, now I'll rotate the resistor.
+
+312
+00:20:41,140 --> 00:20:43,520
+Here we see, the burst width grows.
+
+313
+00:20:44,340 --> 00:20:49,620
+Look, can make it smaller.
+
+314
+00:20:58,460 --> 00:21:02,180
+See, you can generally make a nano pulse generator on this schematic.
+
+315
+00:21:02,820 --> 00:21:05,040
+Actually beat with one pulse on the Tesla.
+
+316
+00:21:06,160 --> 00:21:08,660
+That is, we get a nanosecond generator.
+
+317
+00:21:09,900 --> 00:21:12,100
+There, we see, one strike goes.
+
+318
+00:21:14,220 --> 00:21:17,580
+You can tune this way too, the schematic is universal.
+
+319
+00:21:20,540 --> 00:21:21,540
+Now expand.
+
+320
+00:21:23,160 --> 00:21:26,160
+Here we see, two pulses can easily be set.
+
+321
+00:21:26,940 --> 00:21:27,520
+Free pulses.
+
+322
+00:21:28,760 --> 00:21:30,220
+That is, by choice, four.
+
+323
+00:21:30,680 --> 00:21:35,600
+And actually for quality operation of this Tesla, we need four to six pulses maximum.
+
+324
+00:21:36,820 --> 00:21:39,680
+Further is already just useless loss and work.
+
+325
+00:21:40,640 --> 00:21:43,260
+There'll be more, but no effect on the system at all.
+
+326
+00:21:43,900 --> 00:21:45,780
+You see, five to six on the rise.
+
+327
+00:21:46,320 --> 00:21:54,800
+When we analyze this board, there's a possibility provided of regulating the frequency in the burst and the duty cycle of these pulses in the burst.
+
+328
+00:21:55,360 --> 00:21:56,620
+But that's in the next video.
+
+329
+00:21:57,800 --> 00:22:00,980
+Well, and there's our burst, yes, of pulses.
+
+330
+00:22:01,500 --> 00:22:02,580
+Now we can move it.
+
+331
+00:22:03,660 --> 00:22:04,600
+See how it moves.
+
+332
+00:22:05,460 --> 00:22:06,680
+I'm turning the second chip.
+
+333
+00:22:08,080 --> 00:22:10,220
+That is, our burst rides successfully.
+
+334
+00:22:11,640 --> 00:22:13,140
+Following the control pulse.
+
+335
+00:22:17,400 --> 00:22:18,600
+One here for us.
+
+336
+00:22:21,760 --> 00:22:22,740
+To the end.
+
+337
+00:22:26,880 --> 00:22:28,460
+And can ride the other way.
+
+338
+00:22:30,620 --> 00:22:34,060
+The schematic regulates in wide limits, so everything happens.
+
+339
+00:22:36,780 --> 00:22:38,460
+Signals in the burst are clean.
+
+340
+00:22:39,760 --> 00:22:45,980
+If you remove, say, now our driver works on the transistor gate, so there's some moment if you look carefully.
+
+341
+00:22:49,260 --> 00:22:52,920
+I'll expand well, so the high-frequency signal is visible.
+
+342
+00:22:53,640 --> 00:22:57,580
+In this case, now almost 1.6 MHz is set in the burst.
+
+343
+00:22:58,320 --> 00:23:00,620
+This kind of signal edge the driver provides.
+
+344
+00:23:02,520 --> 00:23:05,400
+UCC 37322 on the gate of this transistor.
+
+345
+00:23:06,760 --> 00:23:10,860
+This is quite a normal signal for such frequencies, everything works well.
+
+346
+00:23:13,930 --> 00:23:15,490
+In general, such a system.
+
+347
+00:23:17,690 --> 00:23:18,170
+Repeat it.
+
+348
+00:23:19,990 --> 00:23:23,570
+Not a pity, I worked on it for a long time, broke it in.
+
+349
+00:23:25,350 --> 00:23:26,170
+But nothing.
+
+350
+00:23:26,590 --> 00:23:29,310
+Here everyone got used to making some kind of secret out of it.
+
+351
+00:23:29,890 --> 00:23:34,650
+Although, I'll tell you honestly, this is only 10% of success to a working setup.
+
+352
+00:23:36,070 --> 00:23:39,390
+That's why making a secret out of such trifles makes no sense.
+
+353
+00:23:41,150 --> 00:23:42,870
+So, what else I wanted to show?
+
+354
+00:23:43,430 --> 00:23:46,210
+Here on TL we have an input marked with an asterisk.
+
+355
+00:23:47,170 --> 00:23:47,610
+Third.
+
+356
+00:23:49,070 --> 00:23:51,790
+My schematic is universal, I didn't show.
+
+357
+00:23:51,790 --> 00:23:55,130
+On the schematic at this moment, I have more elements here.
+
+358
+00:23:56,170 --> 00:23:57,250
+Another driving chip.
+
+359
+00:23:58,610 --> 00:24:00,650
+Because the board is universal.
+
+360
+00:24:02,090 --> 00:24:06,070
+This schematic makes possible that the push-pull also works in pulsed bursts.
+
+361
+00:24:06,830 --> 00:24:11,410
+For some other schemes needed, for example, for controlling Teslas and other things.
+
+362
+00:24:12,010 --> 00:24:18,590
+That is, for those interested, a high-level signal is fed to the third TL pin, and TL stops generation.
+
+363
+00:24:20,570 --> 00:24:22,730
+You get a modulated signal.
+
+364
+00:24:25,980 --> 00:24:27,200
+Once more the schematic.
+
+365
+00:24:34,700 --> 00:24:35,940
+Everything is accessible.
+
+366
+00:24:36,880 --> 00:24:40,220
+I didn't make it on 5V logic, because we have 12V power.
+
+367
+00:24:40,800 --> 00:24:42,320
+We'll start the system from a battery.
+
+368
+00:24:43,660 --> 00:24:46,600
+That's why right away 12V is normal power for us.
+
+369
+00:24:47,300 --> 00:24:50,700
+In this converter, it's connected to two power supplies later.
+
+370
+00:24:51,160 --> 00:24:54,160
+And it turns 24V into 15V for us.
+
+371
+00:24:55,240 --> 00:24:56,300
+Raises it right away to 12V.
+
+372
+00:24:56,300 --> 00:24:59,480
+So all drivers have reliable 15V control.
+
+373
+00:25:01,280 --> 00:25:02,880
+Already showed this input.
+
+374
+00:25:03,440 --> 00:25:05,460
+Here is separate one to the drivers.
+
+375
+00:25:06,960 --> 00:25:10,040
+And after it, after this converter, to the regulator.
+
+376
+00:25:11,200 --> 00:25:13,780
+The regulator makes the 12V logic.
+
+377
+00:25:14,760 --> 00:25:16,380
+Sets the power for it at 12V.
+
+378
+00:25:18,260 --> 00:25:23,000
+Using a regulator is mandatory, or another voltage-setting stabilizer chip.
+
+379
+00:25:24,500 --> 00:25:31,060
+Because all these timing chains, whose values I'm showing in the schematic now, are designed for 12V power.
+
+380
+00:25:31,860 --> 00:25:43,020
+That is, you have to understand that if you feed more power to the schematic, accordingly the higher the power, the faster all these chains arranged work on the trigger hysteresis, they'll recharge
+
+381
+00:25:43,020 --> 00:25:43,460
+faster.
+
+382
+00:25:44,420 --> 00:25:48,440
+And the recharge speed increases, Schmitt trigger triggering increases.
+
+383
+00:25:49,040 --> 00:25:54,240
+In your system, if you feed already 15V power, you'll need to select different chains.
+
+384
+00:25:56,020 --> 00:26:01,640
+Here at the moment, these 1000 pF, 4700, this is precisely fitted.
+
+385
+00:26:03,100 --> 00:26:08,520
+And also, if you can't find 4093TC, K561TL1.
+
+386
+00:26:10,120 --> 00:26:12,060
+The schematic is all the same.
+
+387
+00:26:12,440 --> 00:26:16,860
+They're compatible, but imported chips are better in speed, leading edge comes out better.
+
+388
+00:26:17,780 --> 00:26:19,660
+And for our chips, you need these.
+
+389
+00:26:19,660 --> 00:26:26,400
+For this 15 kHz reference frequency, you need to select these timing elements, resistors, capacitors.
+
+390
+00:26:28,480 --> 00:26:37,960
+And in general, if you do anything and want to change the frequency, that is, in a wider range, here I set its 15 reference central, plus minus 10 kHz.
+
+391
+00:26:38,880 --> 00:26:42,980
+This is quite enough for system operation, tuning, and everything else.
+
+392
+00:26:43,300 --> 00:26:48,720
+But if you need to move to higher or lower frequencies, the schematic technique stays the same.
+
+393
+00:26:49,180 --> 00:26:50,420
+You just change these elements.
+
+394
+00:26:51,740 --> 00:26:56,080
+The resistor is setting the offset and the capacitor that charges through this resistor.
+
+395
+00:26:56,700 --> 00:26:57,680
+And everything will work.
+
+396
+00:26:59,400 --> 00:27:00,780
+Schematic is broken in.
+
+397
+00:27:03,240 --> 00:27:04,080
+Repeat it.
+

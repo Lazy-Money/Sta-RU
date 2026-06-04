@@ -1,0 +1,1352 @@
+1
+00:00:01,280 --> 00:00:01,940
+Hi everyone.
+
+2
+00:00:02,880 --> 00:00:06,240
+Today I'll show how to build a controlled catcher circuit for our systems.
+
+3
+00:00:07,720 --> 00:00:09,280
+The circuit came out working.
+
+4
+00:00:11,100 --> 00:00:23,520
+Modulation of the circuit can be done by pulse, set by duty cycle at frequencies from 0.1 Hz to 50 kHz, while running on the catcher circuit, that is, switching the high voltage Tesla coil with
+
+5
+00:00:23,520 --> 00:00:26,060
+feedback from the cold end to the transistor base,
+
+6
+00:00:30,000 --> 00:00:38,500
+or up to 100 kHz if this circuit is used as a switch for an active load, for example, an incandescent lamp.
+
+7
+00:00:40,340 --> 00:00:43,340
+Here you can see the divider resistor values are marked.
+
+8
+00:00:46,380 --> 00:00:47,440
+Values in parentheses.
+
+9
+00:00:49,200 --> 00:00:50,760
+The resistors are picked this way.
+
+10
+00:00:51,600 --> 00:00:55,120
+This is for those who will build the system as a switch for an active load.
+
+11
+00:00:56,300 --> 00:01:03,860
+With 350 ohms and 740 ohms, the system creates a 4.7 V bias on the transistor base.
+
+12
+00:01:04,240 --> 00:01:09,420
+If we measure the voltage with the base disconnected from the 2 SC5200 transistor,
+
+13
+00:01:14,560 --> 00:01:20,800
+that is, this divider creates 4.7 V at the applied supply voltage of 15 V in this system.
+
+14
+00:01:23,120 --> 00:01:24,620
+The value in parentheses.
+
+15
+00:01:25,980 --> 00:01:32,260
+And our main value, which will work on the catcher circuit similar to the previous circuit I showed, is 3.3 kΩ.
+
+16
+00:01:40,200 --> 00:01:50,900
+The chain through which the catcher is powered is the same, and in this system it's shown, except here a DC to elevated DC converter is drawn, the so-called DC-DC converter.
+
+17
+00:01:54,010 --> 00:01:55,510
+DC-DC converter.
+
+18
+00:01:57,610 --> 00:02:00,370
+I also showed its schematic in my videos.
+
+19
+00:02:00,770 --> 00:02:04,670
+12 V input, output adjustable from 50 to 200 V.
+
+20
+00:02:05,390 --> 00:02:12,850
+This catcher circuit starts in controlled mode at about 10 V of supply voltage at this point, and I tested it up to 100 V.
+
+21
+00:02:17,100 --> 00:02:23,520
+In particular, our transistor is operational up to 200 V, that's the main power switch.
+
+22
+00:02:25,540 --> 00:02:32,880
+The circuit is fully compatible with the one I also showed, see the BTG controller video, except for one moment.
+
+23
+00:02:39,140 --> 00:02:44,420
+Here's how compatibility happens, to the same connector, and the link goes here to control 2.
+
+24
+00:02:45,520 --> 00:02:51,720
+The moment is, for controlling the Tesla that runs in controlled pulse mode, we needed a pulse of this shape.
+
+25
+00:02:54,920 --> 00:02:57,740
+A long signal with a small pause between them.
+
+26
+00:03:00,120 --> 00:03:05,060
+That pause for the controlled Tesla set the operating mode, formed those bursts.
+
+27
+00:03:06,880 --> 00:03:10,960
+By the logic of operation, we covered this in previous videos too.
+
+28
+00:03:12,100 --> 00:03:17,780
+For the catcher this isn't suitable, so for them to be compatible, we need to remove one inversion.
+
+29
+00:03:18,520 --> 00:03:25,780
+In this case, to do that, we connect not to pin 10 of the chip, which goes to the control block output, but to pin 11.
+
+30
+00:03:29,330 --> 00:03:34,870
+That is, we remove one inverted signal, and then we get a signal of this shape at the chip's input.
+
+31
+00:03:36,610 --> 00:03:41,550
+And by changing its duty cycle, we can set the on time of the controlled catcher circuit.
+
+32
+00:03:43,950 --> 00:03:53,410
+To implement this controlled catcher circuit, we'll need two chips, one of them the IR2113 driver, already familiar from previous videos.
+
+33
+00:03:54,950 --> 00:04:01,970
+It's a two-channel driver that doesn't insert dead time between control signals, and a TC4093 chip.
+
+34
+00:04:04,490 --> 00:04:09,150
+That's four Schmitt triggers with two input and not, inverting outputs.
+
+35
+00:04:11,010 --> 00:04:14,890
+That is, two and not logic combined with Schmitt triggers in one chip.
+
+36
+00:04:18,170 --> 00:04:19,090
+A few resistors.
+
+37
+00:04:19,930 --> 00:04:25,170
+Pay special attention to the resistors that create the bias on the gate of the p-channel transistor.
+
+38
+00:04:29,030 --> 00:04:34,590
+Because a p-channel transistor needs a negative voltage potential on its gate to control it.
+
+39
+00:04:36,350 --> 00:04:39,590
+And n-channel transistors are controlled by positive potential.
+
+40
+00:04:40,870 --> 00:04:41,690
+They're simpler.
+
+41
+00:04:42,970 --> 00:04:47,230
+With p-channel you have to build a system that drives it with negative voltage specifically.
+
+42
+00:04:48,330 --> 00:04:52,630
+This divider ultimately sets the consumption and stability of the circuit.
+
+43
+00:04:56,790 --> 00:05:05,570
+The divider on the gate of the RF4905 transistor is picked, so the controlling negative voltage is about 14.7V.
+
+44
+00:05:07,930 --> 00:05:13,330
+Like n-channel transistors, p-channel can be controlled by voltages up to 20V.
+
+45
+00:05:14,810 --> 00:05:26,290
+But most importantly, this divider is picked so that during operation this transistor increases the signal time relative to the time coming from the drain of the n-channel control transistor.
+
+46
+00:05:31,230 --> 00:05:32,290
+Control transistor.
+
+47
+00:05:32,990 --> 00:05:34,610
+That's one feature of this circuit.
+
+48
+00:05:35,250 --> 00:05:39,750
+We'll also need a fast-acting Schottky diode, in this case SR510.
+
+49
+00:05:40,970 --> 00:05:45,470
+And of course, the two SC5202 n-channel transistors.
+
+50
+00:05:46,950 --> 00:05:49,230
+Now let's go through the logic of this circuit.
+
+51
+00:05:50,950 --> 00:05:55,310
+I made a drawing that'll make it easier to understand how the circuit works.
+
+52
+00:05:59,770 --> 00:06:06,370
+For the schematic, driver, ATS4093 chip, and the switches schematically shown in the circuit.
+
+53
+00:06:08,670 --> 00:06:13,990
+This is transistor 1, transistor 2, transistor 3, and the main 1, 4.
+
+54
+00:06:14,730 --> 00:06:19,230
+It's not shown here, it doesn't participate in the action logic, it's just power.
+
+55
+00:06:20,710 --> 00:06:21,390
+Watching.
+
+56
+00:06:22,370 --> 00:06:27,230
+The control signal comes in with some duty cycle we set on an external generator.
+
+57
+00:06:28,310 --> 00:06:30,910
+It hits the first driver channel directly.
+
+58
+00:06:31,370 --> 00:06:34,050
+Its output goes from pin 1 to transistor 2.
+
+59
+00:06:39,790 --> 00:06:43,730
+Transistor 2 in our case is the one controlling the p-channel FET.
+
+60
+00:06:46,960 --> 00:06:49,240
+Now we'll analyze the action logic.
+
+61
+00:06:50,420 --> 00:07:00,040
+But to control transistor 1, which shorts the power transistor's base to minus, we route its control through the logic elements of the TC4093 chip.
+
+62
+00:07:05,010 --> 00:07:06,150
+Why is this done?
+
+63
+00:07:06,910 --> 00:07:09,930
+To create some time delay through several inversions.
+
+64
+00:07:10,190 --> 00:07:12,830
+We work with the lag of the chip's logic elements.
+
+65
+00:07:14,770 --> 00:07:16,470
+To shift signals in time.
+
+66
+00:07:17,590 --> 00:07:22,430
+Let's analyze what happens directly at the driver outputs after we fed in this signal.
+
+67
+00:07:23,290 --> 00:07:25,790
+At pin 7, a signal forms with lag.
+
+68
+00:07:26,110 --> 00:07:28,010
+At pin 1, a signal without lag.
+
+69
+00:07:29,710 --> 00:07:36,450
+At pin 1, the signal that arrived at the input leads the signal that appeared after processing by the chip's logic elements.
+
+70
+00:07:38,410 --> 00:07:43,830
+It's schematically shown that the signal at pin 1 leads the one at pin 7 of the driver chip.
+
+71
+00:07:46,430 --> 00:07:48,990
+Next, the signal reaches the transistors.
+
+72
+00:07:50,750 --> 00:07:51,890
+They're marked here.
+
+73
+00:07:52,670 --> 00:07:53,690
+And what happens here?
+
+74
+00:07:54,110 --> 00:07:58,510
+You have to understand that FETs have properties similar to logic elements.
+
+75
+00:07:58,890 --> 00:07:59,890
+They invert the signal.
+
+76
+00:08:00,990 --> 00:08:02,330
+Examining this process.
+
+77
+00:08:02,870 --> 00:08:05,130
+We had this signal on transistor 2.
+
+78
+00:08:05,370 --> 00:08:06,090
+It got inverted.
+
+79
+00:08:07,110 --> 00:08:08,150
+It transformed.
+
+80
+00:08:08,590 --> 00:08:09,510
+Our shaded signal.
+
+81
+00:08:09,870 --> 00:08:13,830
+At the same time, the signal on transistor 1 also inverted to this signal.
+
+82
+00:08:14,510 --> 00:08:17,690
+But the time between them, the lag, was preserved.
+
+83
+00:08:17,690 --> 00:08:22,190
+Since these transistors are the same part number, so their delay times match.
+
+84
+00:08:25,400 --> 00:08:27,220
+Transistors from the same series.
+
+85
+00:08:29,200 --> 00:08:34,460
+So far, we preserve the lag time only thanks to the 4090 three chips elements.
+
+86
+00:08:35,560 --> 00:08:40,780
+Next, the signal from transistor 2 goes through a resistor divider to transistor 3.
+
+87
+00:08:41,660 --> 00:08:47,380
+And the resistor divider is picked so that on transistor 3, marked duty cycle grows.
+
+88
+00:08:47,740 --> 00:08:50,300
+It increases the duty cycle of this signal.
+
+89
+00:08:50,940 --> 00:08:52,300
+It inverts our shaded signal.
+
+90
+00:08:54,380 --> 00:08:58,340
+But at the same time as inverting, it also stretches it out in time.
+
+91
+00:08:59,240 --> 00:09:05,740
+While transistor 1 leaves the signal inverted, but the time relative to the input signal, its time doesn't change.
+
+92
+00:09:07,560 --> 00:09:16,500
+And if you stand at these points with a dual channel oscilloscope, you'll clearly see the signal at transistor 3's drain has lengthened relative to the input.
+
+93
+00:09:20,200 --> 00:09:22,160
+You'll also notice the time shift.
+
+94
+00:09:24,220 --> 00:09:27,340
+This is done so the transistors work with overlap.
+
+95
+00:09:28,520 --> 00:09:32,260
+We artificially create what's called shoot-through between the two transistors.
+
+96
+00:09:33,600 --> 00:09:40,480
+In this case, it isn't dangerous, because the transistors operate in shoot-through mode through a resistor and diode.
+
+97
+00:09:40,480 --> 00:09:46,620
+That is, this resistance converts the shoot-through current into heat over time.
+
+98
+00:09:48,140 --> 00:09:50,520
+The transistor doesn't heat up too strongly.
+
+99
+00:09:51,300 --> 00:09:53,940
+I recommend putting two Watt resistors in these chains.
+
+100
+00:09:57,110 --> 00:09:59,710
+Discharge resistors of 1W are fine.
+
+101
+00:10:00,710 --> 00:10:02,990
+And here you can also use 1W resistors.
+
+102
+00:10:04,210 --> 00:10:06,430
+So, if we move to the next points.
+
+103
+00:10:08,670 --> 00:10:10,410
+Drew the oscillograms here.
+
+104
+00:10:12,110 --> 00:10:14,890
+Disconnect transistor 1 from the resistor divider.
+
+105
+00:10:16,030 --> 00:10:17,190
+We'll see this signal.
+
+106
+00:10:17,990 --> 00:10:19,590
+Its shape here is exactly this.
+
+107
+00:10:21,310 --> 00:10:25,030
+This is the control signal coming out of the drain of transistor 3.
+
+108
+00:10:25,690 --> 00:10:27,730
+That is, from our P-channel transistor.
+
+109
+00:10:28,830 --> 00:10:32,130
+It has this edge and some drop, but it's longer in time.
+
+110
+00:10:34,170 --> 00:10:37,250
+And now look at the signal coming out of transistor 1's drain.
+
+111
+00:10:40,410 --> 00:10:43,190
+It has a delay since we formed it here, this delay.
+
+112
+00:10:45,510 --> 00:10:47,390
+And its leading edge lands at this point.
+
+113
+00:10:49,130 --> 00:10:51,350
+That's the moment this transistor opens.
+
+114
+00:10:52,950 --> 00:10:56,350
+A period of time where the transistors work with overlap.
+
+115
+00:10:57,590 --> 00:10:59,410
+And actually our signal takes this shape.
+
+116
+00:11:01,410 --> 00:11:02,910
+This is the shape we want.
+
+117
+00:11:03,910 --> 00:11:05,350
+A smooth rising point.
+
+118
+00:11:06,550 --> 00:11:10,630
+The transistor handles it really well and works great in switching mode.
+
+119
+00:11:11,230 --> 00:11:12,890
+Don't worry about this rising edge.
+
+120
+00:11:14,690 --> 00:11:17,290
+Especially when the system runs in catcher mode.
+
+121
+00:11:19,510 --> 00:11:21,890
+It doesn't really matter what this edge looks like.
+
+122
+00:11:22,750 --> 00:11:27,630
+Because the catcher, like any Tesla coil, takes some time to ramp up to its max.
+
+123
+00:11:28,290 --> 00:11:30,830
+Even that brief time is enough for it to ramp up.
+
+124
+00:11:31,470 --> 00:11:36,030
+And moreover, this gentle edge only shows up from 40 kHz and higher.
+
+125
+00:11:37,670 --> 00:11:40,170
+At lower frequencies, it's practically square.
+
+126
+00:11:44,150 --> 00:11:45,570
+So why did we add this overlap?
+
+127
+00:11:47,530 --> 00:11:51,230
+First, the overlap lets us cut this resistor out of the circuit.
+
+128
+00:11:51,670 --> 00:11:54,410
+And sharply pull the base of our power switch to minus.
+
+129
+00:11:56,030 --> 00:11:58,710
+Since the switch is in-channel by conductivity.
+
+130
+00:11:59,730 --> 00:12:03,470
+A negative voltage potential on its base closes it sharply.
+
+131
+00:12:04,650 --> 00:12:07,170
+This switch also plays a very important role.
+
+132
+00:12:08,710 --> 00:12:11,010
+It prevents the catcher from starting up.
+
+133
+00:12:11,310 --> 00:12:15,290
+In the sense that the common minus conductor is also the grounding wire.
+
+134
+00:12:19,380 --> 00:12:22,540
+Since grounding is connected to the transistor emitter.
+
+135
+00:12:24,060 --> 00:12:27,820
+And so this transistor not only excludes this resistor.
+
+136
+00:12:29,320 --> 00:12:31,400
+It also pulls the base to minus.
+
+137
+00:12:32,120 --> 00:12:35,480
+And connects the cold end of the Tesla directly to grounding.
+
+138
+00:12:36,760 --> 00:12:42,540
+And any subsequent oscillations that could trigger the power switch to self-generate can't reach the base.
+
+139
+00:12:44,040 --> 00:12:47,820
+Because the base emitter junction of the power switch has some resistance.
+
+140
+00:12:49,940 --> 00:12:53,500
+Which is larger than the resistance of the open FET switch.
+
+141
+00:12:55,780 --> 00:13:00,820
+And so the grounding ends up short-circuited with the cold end of the high voltage coil.
+
+142
+00:13:01,640 --> 00:13:06,100
+And no oscillations can make this transistor work in self-generating mode.
+
+143
+00:13:07,580 --> 00:13:12,540
+The only thing you can see when working at high frequencies from 20 to 50 kilohertz.
+
+144
+00:13:14,300 --> 00:13:19,360
+If your high voltage catcher coil has a good Q factor, you can observe the ramp-up moment.
+
+145
+00:13:22,340 --> 00:13:24,880
+Which we'll look at further in the oscillograms.
+
+146
+00:13:25,040 --> 00:13:25,880
+Up to maximum.
+
+147
+00:13:26,440 --> 00:13:27,500
+And then a decay tail.
+
+148
+00:13:27,980 --> 00:13:32,440
+And if the modulation is close enough in time at frequencies above 20 kilohertz.
+
+149
+00:13:34,660 --> 00:13:38,520
+Then you can see the decay tail overlap with the rising edge.
+
+150
+00:13:40,900 --> 00:13:43,320
+At that moment the catcher isn't running anymore.
+
+151
+00:13:43,720 --> 00:13:47,540
+But thanks to its Q factor, decaying oscillations still exist in it.
+
+152
+00:13:48,040 --> 00:13:51,920
+But with this circuit, decaying oscillations are only the free ones.
+
+153
+00:13:53,140 --> 00:13:56,180
+The catcher isn't running at this moment, consuming nothing.
+
+154
+00:13:57,680 --> 00:13:59,780
+Let's examine the circuit solutions.
+
+155
+00:14:00,110 --> 00:14:07,960
+In this case, you can see the chain feeding power to the power switch stayed the same as in the previous ordinary catcher circuit.
+
+156
+00:14:09,720 --> 00:14:11,300
+It's shown on this schematic.
+
+157
+00:14:13,260 --> 00:14:14,480
+This is the chain.
+
+158
+00:14:16,080 --> 00:14:17,720
+Here are the input terminals.
+
+159
+00:14:19,440 --> 00:14:21,420
+Plus and minus power connections.
+
+160
+00:14:23,640 --> 00:14:24,300
+Capacitor.
+
+161
+00:14:24,800 --> 00:14:26,820
+Then the filter with counter windings.
+
+162
+00:14:27,480 --> 00:14:28,580
+Then another capacitor.
+
+163
+00:14:29,220 --> 00:14:31,140
+The main reservoir electrolytic.
+
+164
+00:14:32,120 --> 00:14:34,000
+And the high-frequency film cap.
+
+165
+00:14:35,080 --> 00:14:36,080
+We covered this part.
+
+166
+00:14:37,800 --> 00:14:41,160
+And to this board I added another board that controls our power switch.
+
+167
+00:14:43,520 --> 00:14:45,300
+The switch is on the heat sink.
+
+168
+00:14:46,680 --> 00:14:47,880
+You can clearly see it.
+
+169
+00:14:48,620 --> 00:14:49,240
+Screwed in here.
+
+170
+00:14:50,200 --> 00:14:51,700
+The heat sink for it is overkill.
+
+171
+00:14:53,680 --> 00:14:55,280
+It doesn't heat up that much.
+
+172
+00:14:55,280 --> 00:14:58,720
+You can use a smaller one.
+
+173
+00:14:59,180 --> 00:15:00,260
+So what do we see here?
+
+174
+00:15:01,080 --> 00:15:04,680
+Our chip that creates the time delay TC4093.
+
+175
+00:15:05,880 --> 00:15:07,100
+Two-channel driver.
+
+176
+00:15:08,800 --> 00:15:10,500
+Input wiring with filters.
+
+177
+00:15:11,700 --> 00:15:14,740
+And here we have the main divider to the base of our power switch.
+
+178
+00:15:15,160 --> 00:15:20,660
+3.3kΩ, 2.7kΩ, SR-510 Schottky diode.
+
+179
+00:15:22,440 --> 00:15:25,260
+And here three transistors on a common heat sink.
+
+180
+00:15:25,260 --> 00:15:31,240
+They heat up a bit, so I put them on a heat sink.
+
+181
+00:15:32,220 --> 00:15:34,180
+Could be on a smaller individual one.
+
+182
+00:15:35,500 --> 00:15:37,500
+Heating isn't significant, but it's there.
+
+183
+00:15:38,220 --> 00:15:41,940
+As a more solid build, it's soldered to the prototyping board itself.
+
+184
+00:15:46,090 --> 00:15:50,930
+That is, minimal parts, the system runs, and power goes to the inductor.
+
+185
+00:15:52,230 --> 00:15:58,390
+Instead of the inductor, as I said, you can connect an active load and use the circuit just in switching mode.
+
+186
+00:15:59,790 --> 00:16:03,710
+Now we'll connect the circuit to the catcher and see what it can do in action.
+
+187
+00:16:05,850 --> 00:16:07,350
+So, the rig is assembled.
+
+188
+00:16:08,490 --> 00:16:12,830
+Grounding is connected, because grounding plays an important role for this system.
+
+189
+00:16:14,630 --> 00:16:15,650
+Power connected.
+
+190
+00:16:16,570 --> 00:16:18,430
+Power from two separate lab supplies.
+
+191
+00:16:19,890 --> 00:16:21,670
+One is set at 15V.
+
+192
+00:16:22,530 --> 00:16:26,830
+Right now you can see logic part consumption with no signal applied at the input.
+
+193
+00:16:29,860 --> 00:16:33,860
+Here we'll change the supply voltage with this trim pot and watch consumption.
+
+194
+00:16:36,910 --> 00:16:40,110
+The signal will come directly from a lab signal generator.
+
+195
+00:16:41,530 --> 00:16:42,970
+It's now in pulse mode.
+
+196
+00:16:44,710 --> 00:16:46,470
+Pulse amplitude is 10V.
+
+197
+00:16:48,450 --> 00:16:51,710
+With 10% duty cycle on the positive half period.
+
+198
+00:16:56,130 --> 00:16:58,770
+We'll watch the oscillograms on the oscilloscope.
+
+199
+00:17:00,170 --> 00:17:03,090
+Main power for the power switch is applied at this point.
+
+200
+00:17:04,510 --> 00:17:05,990
+And then goes to the circuit.
+
+201
+00:17:07,210 --> 00:17:08,070
+Circuit is running.
+
+202
+00:17:09,090 --> 00:17:13,930
+Stable operation kicks in at a 17% duty cycle on the control signal.
+
+203
+00:17:14,970 --> 00:17:18,870
+Now in this case, 10kHz for ease of viewing the signal.
+
+204
+00:17:19,630 --> 00:17:21,290
+The logic side doesn't draw much.
+
+205
+00:17:24,840 --> 00:17:30,440
+And here's the supply voltage and current consumption at which the system entered stable oscillation.
+
+206
+00:17:31,820 --> 00:17:35,080
+Now you can see the field around the system isn't too big.
+
+207
+00:17:36,720 --> 00:17:39,840
+When you touch a neon bulb to it, it lights up.
+
+208
+00:17:41,120 --> 00:17:44,700
+The oscilloscope probe is nearby and we can watch the oscillogram.
+
+209
+00:17:47,710 --> 00:17:50,170
+How the catcher runs at this supply voltage.
+
+210
+00:17:53,040 --> 00:17:55,260
+You see the Q factor is very high.
+
+211
+00:17:56,480 --> 00:18:01,400
+You can also see the additional wave that does some amplitude modulation in the system.
+
+212
+00:18:02,800 --> 00:18:05,160
+And we'll experiment with interesting things.
+
+213
+00:18:05,940 --> 00:18:10,300
+If you bring a hand close to the high voltage coil, watch how the system reacts.
+
+214
+00:18:11,660 --> 00:18:15,580
+For a full test, now we raise the supply voltage of our system.
+
+215
+00:18:19,280 --> 00:18:22,020
+For example, yeah, runs confidently.
+
+216
+00:18:23,920 --> 00:18:25,040
+Feeding 55V.
+
+217
+00:18:26,880 --> 00:18:28,820
+The current draw went up a bit.
+
+218
+00:18:30,360 --> 00:18:32,480
+The signal is naturally off the chart.
+
+219
+00:18:36,730 --> 00:18:39,670
+And you can already hear a little spark at the antenna tip.
+
+220
+00:18:42,400 --> 00:18:44,860
+Now you can hear the sound at a 10 Hz rate.
+
+221
+00:18:49,180 --> 00:18:52,160
+Try increasing the duty cycle of the control pulse.
+
+222
+00:18:56,680 --> 00:19:00,060
+Increasing the duty cycle, watching the oscillogram change.
+
+223
+00:19:01,840 --> 00:19:04,760
+Now you can see consumption growing with the duty cycle.
+
+224
+00:19:06,480 --> 00:19:12,500
+You can see the little spark has become powerful, stretching to 1.2 to 1.5 cm.
+
+225
+00:19:16,680 --> 00:19:18,120
+Watch the oscillogram.
+
+226
+00:19:18,460 --> 00:19:20,760
+The operating time in our system is growing.
+
+227
+00:19:22,640 --> 00:19:25,520
+Raise the control pulse duty cycle further.
+
+228
+00:19:28,180 --> 00:19:31,820
+Now we'll set the control pulse to 40% duty cycle.
+
+229
+00:19:36,690 --> 00:19:38,710
+The oscillogram has this shape.
+
+230
+00:19:39,610 --> 00:19:44,590
+But this mode isn't useful for our system anymore, because the duty cycle is too big.
+
+231
+00:19:45,870 --> 00:19:48,930
+Visually, you can see the little spark has gotten very powerful.
+
+232
+00:19:49,550 --> 00:19:52,490
+You can see the neon bulb glowing at a big distance.
+
+233
+00:19:54,290 --> 00:19:56,710
+And it lights up very well at this frequency.
+
+234
+00:19:58,370 --> 00:20:02,810
+By the way, you can build a singing Tesla out of this circuit that plays a MIDI file.
+
+235
+00:20:05,930 --> 00:20:08,210
+I'll show this now by changing the frequency.
+
+236
+00:20:08,890 --> 00:20:10,130
+You can hear the sound.
+
+237
+00:20:13,510 --> 00:20:15,430
+Now we have 3 kHz.
+
+238
+00:20:16,270 --> 00:20:19,710
+And you can hear the sound the little spark of the system emits.
+
+239
+00:20:24,820 --> 00:20:27,380
+You see, it works at 3 kHz.
+
+240
+00:20:29,400 --> 00:20:30,600
+We can shift.
+
+241
+00:20:33,360 --> 00:20:34,320
+1 kHz.
+
+242
+00:20:35,340 --> 00:20:36,060
+Tonal sound.
+
+243
+00:20:39,820 --> 00:20:41,100
+Changing the frequency.
+
+244
+00:20:42,840 --> 00:20:44,680
+It goes into the inaudible range.
+
+245
+00:20:46,820 --> 00:20:49,520
+Now 25 kHz control frequency.
+
+246
+00:20:51,080 --> 00:20:53,920
+And you can see the catcher confidently modulating.
+
+247
+00:20:56,000 --> 00:20:57,880
+Drop the duty cycle to 30%.
+
+248
+00:20:59,720 --> 00:21:01,180
+The system runs stably.
+
+249
+00:21:03,100 --> 00:21:04,780
+Little spark is pretty powerful.
+
+250
+00:21:07,320 --> 00:21:10,600
+At 30% at 25 kHz frequency.
+
+251
+00:21:12,840 --> 00:21:14,740
+We have this voltage and current draw.
+
+252
+00:21:22,660 --> 00:21:24,840
+Set the duty cycle to 20%.
+
+253
+00:21:26,420 --> 00:21:28,940
+Consumption immediately dropped noticeably.
+
+254
+00:21:30,500 --> 00:21:33,660
+Generally, the system will run somewhere around this consumption.
+
+255
+00:21:34,380 --> 00:21:36,880
+23 to 25% control pulse.
+
+256
+00:21:40,120 --> 00:21:41,600
+You can see its full consumption.
+
+257
+00:21:46,280 --> 00:21:48,640
+Now let's look at frequency capabilities.
+
+258
+00:21:51,940 --> 00:21:53,860
+Now 25 kHz.
+
+259
+00:21:55,820 --> 00:21:57,460
+35 kHz.
+
+260
+00:22:00,880 --> 00:22:02,420
+45 kHz.
+
+261
+00:22:03,870 --> 00:22:05,700
+You can see the system modulating.
+
+262
+00:22:09,280 --> 00:22:10,900
+55 kHz.
+
+263
+00:22:14,500 --> 00:22:19,820
+Operation stops at 55% because we need to add control pulse duty cycle.
+
+264
+00:22:22,160 --> 00:22:27,080
+Raise the duty cycle to 35% and the system started again.
+
+265
+00:22:28,600 --> 00:22:30,120
+Wide adjustment range.
+
+266
+00:22:38,440 --> 00:22:41,140
+Playing it in musical Tesla mode again.
+
+267
+00:22:48,230 --> 00:22:49,690
+Really interesting thing.
+
+268
+00:22:50,790 --> 00:22:52,190
+Now we can go into Hz.
+
+269
+00:22:56,940 --> 00:22:58,140
+100 Hz.
+
+270
+00:22:59,320 --> 00:23:01,560
+You can do 50 Hz for modulation.
+
+271
+00:23:02,960 --> 00:23:03,640
+50 Hz.
+
+272
+00:23:04,180 --> 00:23:05,900
+Now I'll show the oscillogram.
+
+273
+00:23:07,960 --> 00:23:09,140
+There are bursts.
+
+274
+00:23:12,790 --> 00:23:14,090
+You see the shape.
+
+275
+00:23:19,620 --> 00:23:21,120
+Lowering the duty cycle.
+
+276
+00:23:23,800 --> 00:23:24,460
+15%.
+
+277
+00:23:24,460 --> 00:23:27,020
+You can clearly hear the transformer sound.
+
+278
+00:23:29,560 --> 00:23:30,780
+Same as it runs.
+
+279
+00:23:32,120 --> 00:23:35,100
+It starts arcing to the metal object at 50 Hz.
+
+280
+00:23:39,020 --> 00:23:41,760
+The circuit is really good even for experiments.
+
+281
+00:23:45,830 --> 00:23:49,210
+For those who want to get familiar and build something like this.
+
+282
+00:23:52,140 --> 00:23:53,840
+Interesting even just for demo.
+
+283
+00:24:20,090 --> 00:24:22,370
+This sound is coming from the little spark.
+
+284
+00:24:32,940 --> 00:24:33,980
+Enough playing.
+
+285
+00:24:34,840 --> 00:24:36,880
+You'll assemble it and play with it.
+
+286
+00:24:37,860 --> 00:24:38,840
+The thing is pretty cool.
+
+287
+00:24:41,360 --> 00:24:42,760
+Turn off pulse delivery.
+
+288
+00:24:44,260 --> 00:24:45,240
+Channel off.
+
+289
+00:24:47,340 --> 00:24:49,660
+Only the logic side consumption left.
+
+290
+00:24:50,860 --> 00:24:52,660
+And you can see the power consumption.
+
+291
+00:24:54,920 --> 00:24:55,980
+Amps at zero.
+
+292
+00:24:56,400 --> 00:24:58,240
+Moving on to our specific tasks.
+
+293
+00:25:00,060 --> 00:25:03,300
+Operation is maintained when connecting a fairly big antenna.
+
+294
+00:25:04,480 --> 00:25:09,340
+We can also see that it sparks at the same modulation frequency on the antenna itself.
+
+295
+00:25:11,760 --> 00:25:14,120
+The antenna sparks to a metal object.
+
+296
+00:25:15,800 --> 00:25:20,520
+When the antenna is connected, we observe a big diameter of the electric field.
+
+297
+00:25:21,240 --> 00:25:25,180
+The neon bulb reacts at a pretty big distance from this system with the antenna.
+
+298
+00:25:28,980 --> 00:25:32,520
+And now I wanted to point out an important feature of the catcher circuit.
+
+299
+00:25:33,220 --> 00:25:35,080
+I expand it to the carrier signal.
+
+300
+00:25:35,920 --> 00:25:37,160
+You see a clean sine wave.
+
+301
+00:25:40,160 --> 00:25:41,140
+Bringing in a hand.
+
+302
+00:25:41,920 --> 00:25:43,320
+You see the frequency drifts.
+
+303
+00:25:45,520 --> 00:25:46,880
+On the oscilloscope.
+
+304
+00:25:48,040 --> 00:25:52,520
+The catcher is a self-oscillator circuit with feedback to the transistor base.
+
+305
+00:25:53,300 --> 00:25:58,060
+And in our system, it's useful that when the antenna is right above the system's inductor.
+
+306
+00:26:00,100 --> 00:26:03,660
+The inductor's magnetic field creates a pickup on the antenna.
+
+307
+00:26:05,240 --> 00:26:10,080
+And that voltage potential goes through the high voltage coil to the base of our power transistor.
+
+308
+00:26:11,180 --> 00:26:15,260
+This way the catcher has one irreplaceable advantage over the controlled Tesla.
+
+309
+00:26:17,760 --> 00:26:21,820
+Specifically for the so-called TL-494 chip glitch crowd.
+
+310
+00:26:23,600 --> 00:26:26,700
+This effect, the feedback when you bring a hand close.
+
+311
+00:26:28,360 --> 00:26:31,280
+It also works with pickup from the inductor.
+
+312
+00:26:31,600 --> 00:26:36,260
+And it turns out the catcher makes it easier to phase-tune between the low-side frequencies.
+
+313
+00:26:39,920 --> 00:26:42,440
+What happens in the push-pull inductor circuit?
+
+314
+00:26:43,840 --> 00:26:46,360
+And our high-voltage, high-frequency system.
+
+315
+00:26:47,880 --> 00:26:50,020
+Exactly because it's a self-oscillator.
+
+316
+00:26:51,700 --> 00:26:54,980
+Unfortunately, the controlled Tesla doesn't let you do this.
+
+317
+00:26:55,320 --> 00:26:57,240
+You have to correct that moment manually.
+
+318
+00:26:58,000 --> 00:27:02,660
+So all other things being equal, working on the catcher makes system startup easier.
+
+319
+00:27:06,020 --> 00:27:08,940
+Another thing, you can clearly see the catcher rings.
+
+320
+00:27:14,160 --> 00:27:16,520
+The signal you see now reached maximum.
+
+321
+00:27:18,060 --> 00:27:22,220
+Even if we now change the control signal duty cycle, say to 20%.
+
+322
+00:27:23,040 --> 00:27:28,220
+You also see that when the system has good Q-factor, the tail of this ring is pretty big.
+
+323
+00:27:29,460 --> 00:27:31,340
+How do we get rid of it in the system?
+
+324
+00:27:32,760 --> 00:27:35,640
+We see we have a ramp up to maximum and then a drop.
+
+325
+00:27:39,250 --> 00:27:42,990
+To get rid of this tail, you can just apply a common circuit solution.
+
+326
+00:27:44,770 --> 00:27:48,810
+Here at the antenna tip, where the little spark to the metal object is.
+
+327
+00:27:50,070 --> 00:27:51,770
+Add a spark gap to ground.
+
+328
+00:27:53,170 --> 00:27:55,790
+And by adjusting the gap distance, achieve this.
+
+329
+00:27:59,470 --> 00:28:00,630
+Look at the oscillogram.
+
+330
+00:28:01,570 --> 00:28:05,470
+You can see, bringing the metal object close and the ring disappears.
+
+331
+00:28:07,530 --> 00:28:09,470
+The ring goes away in our system.
+
+332
+00:28:11,190 --> 00:28:14,450
+Now I'll try to tune more precisely so you can see this moment.
+
+333
+00:28:25,780 --> 00:28:28,040
+You can clearly see the ring being cut.
+
+334
+00:28:29,460 --> 00:28:33,320
+And here with the spark gap, you can really effectively cut this whole tail.
+
+335
+00:28:33,920 --> 00:28:38,900
+By the way, the spark gap will also regulate the final amplitude at the high voltage terminal.
+
+336
+00:28:42,710 --> 00:28:44,870
+Good luck to everyone with your experiments.
+
+337
+00:28:45,330 --> 00:28:45,970
+All the best.
+
+338
+00:28:46,270 --> 00:28:46,730
+Keep going.
+

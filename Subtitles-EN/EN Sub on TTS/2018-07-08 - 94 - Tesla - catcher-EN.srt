@@ -1,0 +1,2024 @@
+1
+00:00:01,100 --> 00:00:04,120
+Good day, dear subscribers and viewers of my channel.
+
+2
+00:00:05,020 --> 00:00:11,440
+For the last while approximately the same question has been coming to me at email or via Skype from various people.
+
+3
+00:00:12,000 --> 00:00:18,240
+The essence of which reduces to needing a scheme with certain protections for work with a Tesla transformer.
+
+4
+00:00:19,360 --> 00:00:22,320
+Desirable that it'd be as simple as possible in making.
+
+5
+00:00:22,980 --> 00:00:31,400
+Motivation different, from no experience in radio engineering, to no finances for acquiring radio electronic components and various devices.
+
+6
+00:00:35,480 --> 00:00:37,520
+Here before you now is this scheme.
+
+7
+00:00:38,140 --> 00:00:39,500
+It can't be simpler.
+
+8
+00:00:40,580 --> 00:00:44,540
+The scheme is assembled on one transistor and a few component details.
+
+9
+00:00:46,440 --> 00:00:51,500
+Also this scheme additionally has protection between the collector and emitter of the transistor.
+
+10
+00:00:54,820 --> 00:00:55,980
+This is a neon.
+
+11
+00:00:57,720 --> 00:01:00,600
+And there's a resistor at the emitter of the transistor.
+
+12
+00:01:01,740 --> 00:01:04,540
+The resistance at us is shown as 2 ohm.
+
+13
+00:01:05,440 --> 00:01:09,320
+This in my case is a 12V 21W automotive lamp.
+
+14
+00:01:11,300 --> 00:01:14,360
+Also I'll immediately answer the other often asked question.
+
+15
+00:01:15,140 --> 00:01:16,640
+Why don't videos come out on the channel?
+
+16
+00:01:17,260 --> 00:01:17,960
+Where did they disappear?
+
+17
+00:01:18,500 --> 00:01:19,040
+All normal.
+
+18
+00:01:19,520 --> 00:01:19,920
+All good.
+
+19
+00:01:21,500 --> 00:01:23,080
+Didn't disappear anywhere.
+
+20
+00:01:23,900 --> 00:01:29,600
+Simply because of the fact that now the construction season is on and I'm dealing with building my personal household.
+
+21
+00:01:30,860 --> 00:01:32,420
+So all the time for now goes there.
+
+22
+00:01:33,500 --> 00:01:36,900
+Extra finances are absent and I have to do everything myself.
+
+23
+00:01:37,480 --> 00:01:40,860
+This scheme can be referred to the category of Tesla catcher schemes.
+
+24
+00:01:42,920 --> 00:01:49,540
+And this means that in the role of the secondary high voltage coil of the resonator axe, specifically the Tesla coil.
+
+25
+00:01:49,920 --> 00:01:52,060
+And the Tesla coil requires grounding.
+
+26
+00:01:53,120 --> 00:01:59,600
+Grounding is connected at this point, the common wire of the scheme to the transistor emitter through a limiting resistor.
+
+27
+00:02:01,560 --> 00:02:02,880
+What can the scheme do?
+
+28
+00:02:03,940 --> 00:02:10,360
+This scheme can replace that block I showed for controlling Tesla transformer, bridge or half bridge with modulation.
+
+29
+00:02:12,740 --> 00:02:22,900
+Modulation in this scheme can be done further with the presence of a second Tesla transformer that will interact with the first Tesla transformer, which we can conventionally call transmitting.
+
+30
+00:02:25,040 --> 00:02:27,680
+And the second Tesla transformer will be receiving.
+
+31
+00:02:28,320 --> 00:02:30,960
+Actually, this system isn't exactly a transmitter.
+
+32
+00:02:31,720 --> 00:02:41,060
+It creates a disturbance in the environment around itself, which further in the zone of this disturbance gets into the receiver and starts their interaction with each other.
+
+33
+00:02:41,640 --> 00:02:47,680
+Such a simple scheme can replace a whole box of electronics and expensive lab generators for its control.
+
+34
+00:02:52,140 --> 00:02:58,820
+Despite the seeming simplicity of this scheme solution, here there are many details that need to be individually picked.
+
+35
+00:03:00,880 --> 00:03:03,880
+If you look, near some details there are asterisks.
+
+36
+00:03:06,260 --> 00:03:09,260
+This means these details require individual picking.
+
+37
+00:03:10,400 --> 00:03:16,660
+No one will be able to go away from this, and everyone who's going to make such a system will have to master and tune this.
+
+38
+00:03:18,020 --> 00:03:23,880
+The next main moment of what this scheme realizes, it'll realize the mode that Tesla described.
+
+39
+00:03:24,280 --> 00:03:26,880
+And this is specifically a series of oscillations.
+
+40
+00:03:28,140 --> 00:03:32,140
+The oscillogram that should come out on the collector I cited the picture of.
+
+41
+00:03:32,440 --> 00:03:34,980
+Further we'll examine it also on the oscilloscope.
+
+42
+00:03:36,700 --> 00:03:38,920
+What else can I say about the main moments?
+
+43
+00:03:40,160 --> 00:03:43,560
+In our scheme we'll use specifically a flat spiral coil.
+
+44
+00:03:44,720 --> 00:03:50,160
+Such a coil is optimal for schemes on spark gaps and schemes with a series of oscillations.
+
+45
+00:03:51,400 --> 00:03:54,100
+Most justifiably it showed itself in this scheme.
+
+46
+00:03:55,720 --> 00:04:00,040
+Here I wrote a warning that you can take the oscillogram only with grounding connected.
+
+47
+00:04:02,960 --> 00:04:08,680
+Mandatorily fulfill this, otherwise, if someone forgets about this, they may lose the oscilloscope.
+
+48
+00:04:09,980 --> 00:04:14,400
+This scheme can also be used without grounding, then a catcher scheme will come out.
+
+49
+00:04:15,960 --> 00:04:25,480
+And to such a scheme I don't recommend connecting an oscilloscope under any conditions, because any detail in this scheme without grounding connected will be under high potential.
+
+50
+00:04:26,840 --> 00:04:32,480
+The transistor here I use proven, which showed itself well, 2SC5200.
+
+51
+00:04:34,100 --> 00:04:37,800
+The collector emitter voltage added is 230 V limit.
+
+52
+00:04:38,900 --> 00:04:42,660
+And the voltage limit at the base relative to the emitter is 5 V.
+
+53
+00:04:43,340 --> 00:04:45,220
+These two parameters we'll need to track.
+
+54
+00:04:45,760 --> 00:04:55,280
+In the scheme I also added counter-connected zenners called to protect the base of the bipolar transistor from exceeding the rating of 5 V, so the base emitter junction wasn't broken.
+
+55
+00:04:57,860 --> 00:04:59,800
+Also this neon I introduced.
+
+56
+00:04:59,800 --> 00:05:07,400
+Here you see also an asterisk stands, and the resistance, connected in series to it, is also marked with an asterisk.
+
+57
+00:05:08,020 --> 00:05:09,760
+These two details will need to be picked.
+
+58
+00:05:10,780 --> 00:05:17,080
+They're picked based on the calculation that the neon started its glow at voltage from 100 to 150 V.
+
+59
+00:05:18,680 --> 00:05:24,220
+This 3 comb resistance is a current limiting resistance, so the neon didn't fail further.
+
+60
+00:05:25,200 --> 00:05:36,720
+In this scheme, an ancient method of protection is applied, which was known to radio amateurs who worked on schemes with radio tubes, when the cathode of the tube is raised relative to the common wire
+
+61
+00:05:36,720 --> 00:05:41,320
+through a resistor, and connected capacitors are in parallel.
+
+62
+00:05:42,820 --> 00:05:49,080
+This solution serves as additional transistor protection from potential rise relative to the minus of the scheme.
+
+63
+00:05:51,160 --> 00:06:01,880
+When modulation will be done further on interaction with the receiving Tesla transformer, there'll be a moment that the common point will jump relative to minus, and this can fail the transistor.
+
+64
+00:06:05,770 --> 00:06:11,870
+These jumps the 100 F electrolytic capacitor will smooth, this way it'll protect the transistor.
+
+65
+00:06:14,410 --> 00:06:17,630
+Now we can move to the inductor and high voltage coil.
+
+66
+00:06:18,290 --> 00:06:20,190
+How are they built?
+
+67
+00:06:21,790 --> 00:06:27,850
+These are discrete systems, consequently, all of us are subjected to the length rule in this scheme.
+
+68
+00:06:29,150 --> 00:06:36,590
+That is, we can go by structure, take the inductor as a basis, or we take as a basis the turn length of the high voltage coil.
+
+69
+00:06:37,770 --> 00:06:48,070
+If we take as a basis the high voltage coil, and its turn length, as I usually do, then I multiply the turn length of the high coil by a whole number and get the inductor length.
+
+70
+00:06:48,990 --> 00:06:53,270
+Pay attention that in this scheme the high voltage coil is wound to the right.
+
+71
+00:06:53,650 --> 00:06:59,230
+That is, if you look at the pipe from above, the wire winds clockwise and goes to the grounding side.
+
+72
+00:07:00,090 --> 00:07:05,450
+Right side winding clockwise, and also the flat coil at us is wound, right side winding.
+
+73
+00:07:06,110 --> 00:07:13,830
+Plus is connected to the power source at the central point most close to the high voltage coil, and the collector is connected to the start of the winding.
+
+74
+00:07:18,280 --> 00:07:19,800
+It's marked with number 2.
+
+75
+00:07:20,260 --> 00:07:22,420
+2 stands near the collector of the transistor.
+
+76
+00:07:25,160 --> 00:07:34,720
+For power, the scheme when you conduct experiments, I recommend from a battery, and possibly you'll need a converter from 12V, and should convert from 3 to 100V.
+
+77
+00:07:36,240 --> 00:07:39,660
+This scheme with these ratings at me launches at voltage of 3V.
+
+78
+00:07:41,180 --> 00:07:52,940
+Here in such a system, if you tune the correct operating mode, you can easily drive in 50W of energy, and at that the transistor will be in optimal operating mode, won't heat, and the whole energy
+
+79
+00:07:52,940 --> 00:07:55,380
+will transfer from primary coil to secondary.
+
+80
+00:07:58,320 --> 00:08:03,320
+By this way, maximum matching between them will be achieved, and the system will work optimally.
+
+81
+00:08:04,440 --> 00:08:15,340
+Further, we'll examine two cases when the system is not optimally tuned, what oscillograms will be in the system in such a mode, and look at the temperature mode of transistor operation.
+
+82
+00:08:15,860 --> 00:08:18,180
+Here I marked how to calculate the inductor length.
+
+83
+00:08:21,100 --> 00:08:29,880
+And also here it's written that the inductor wire length is counted from the collector of the transistor directly to the plus lead on electrolytic capacitors.
+
+84
+00:08:30,540 --> 00:08:34,300
+Here this electrolytic capacitor 200F for 100V.
+
+85
+00:08:35,380 --> 00:08:41,180
+Parallel are placed capacitors called to remove high frequency pickups so they didn't get on the electrolytic.
+
+86
+00:08:42,800 --> 00:08:52,340
+This is 0.1F at 630V and an accumulator capacitor of 2.2F that accelerates the pulse front on the collector.
+
+87
+00:08:54,520 --> 00:08:59,720
+Since electrolytics, compared to quality film capacitors, have some charge release time.
+
+88
+00:09:03,010 --> 00:09:09,910
+Also you see there's a 0.1F at 630V on the emitter relative to minus.
+
+89
+00:09:10,750 --> 00:09:16,630
+This is also a capacitor responsible for damping the high frequency pickup that will inevitably circulate.
+
+90
+00:09:17,610 --> 00:09:24,050
+Also you can see that between the high voltage coil and the transistor base there's a current limiting resistor at 1 ohm.
+
+91
+00:09:25,430 --> 00:09:30,710
+And here are two main details that create on the transistor base the bias necessary for its work.
+
+92
+00:09:32,150 --> 00:09:34,570
+These resistances will need to be picked as well.
+
+93
+00:09:35,310 --> 00:09:39,290
+In my case there's 6.8 ohm and 2.7 ohm.
+
+94
+00:09:39,470 --> 00:09:42,110
+But this is my case, they're picked under my scheme.
+
+95
+00:09:42,730 --> 00:09:48,050
+Also further I'll show you what dependency between these resistances and turn count in the inductor.
+
+96
+00:09:48,870 --> 00:09:52,150
+And how to achieve such an interesting transistor operating mode.
+
+97
+00:09:52,970 --> 00:09:54,610
+So the scheme made in iron.
+
+98
+00:09:55,630 --> 00:10:00,670
+This is an accumulator capacity from two 200F 400V capacitors.
+
+99
+00:10:01,270 --> 00:10:05,270
+Then goes a film capacitor 2.2F at 630V.
+
+100
+00:10:06,070 --> 00:10:12,490
+This capacitor 0.1F 630V for damping HF pickups passing through it.
+
+101
+00:10:13,510 --> 00:10:17,070
+Pay attention that I brought out legs to which the resistors are soldered.
+
+102
+00:10:18,590 --> 00:10:23,790
+This is done so I could conveniently pick details without disassembling the whole common scheme.
+
+103
+00:10:23,790 --> 00:10:26,650
+On the heat sink the transistor is located.
+
+104
+00:10:27,750 --> 00:10:35,090
+The heat sink is made with reserve so I could show you the operating mode when the transistor will strongly heat what losses will go.
+
+105
+00:10:35,970 --> 00:10:40,290
+And then we can look by temperature when the transistor will be slightly above room temperature.
+
+106
+00:10:41,170 --> 00:10:43,870
+And this system will work in order on 50W.
+
+107
+00:10:45,650 --> 00:10:48,310
+The inductor wires are connected at these points.
+
+108
+00:10:49,190 --> 00:10:51,340
+This is accordingly the lamp at 2 ohm.
+
+109
+00:10:53,080 --> 00:10:55,540
+All resistances here are 1W.
+
+110
+00:10:55,940 --> 00:10:57,380
+I also marked it on the scheme.
+
+111
+00:10:58,340 --> 00:11:02,420
+Less here is not worth putting, otherwise they'll strongly heat and may burn.
+
+112
+00:11:03,500 --> 00:11:05,620
+The coil I used here is high voltage.
+
+113
+00:11:09,070 --> 00:11:14,330
+It's made with a thick conductor, wire cross section 0.96 millimeters.
+
+114
+00:11:17,410 --> 00:11:21,190
+That is, not every scheme can qualitatively swing such a coil.
+
+115
+00:11:21,190 --> 00:11:23,550
+But this scheme allows.
+
+116
+00:11:24,570 --> 00:11:28,710
+This high voltage coil has a work calculation at exactly 1 MHz.
+
+117
+00:11:29,950 --> 00:11:33,770
+We know that the wavelength for 1 MHz is 300 meters.
+
+118
+00:11:34,990 --> 00:11:37,070
+Consequently, a quarter should be 75.
+
+119
+00:11:37,790 --> 00:11:41,630
+But at more accurate count here it turns out 74.5 A.M.
+
+120
+00:11:42,270 --> 00:11:52,510
+If you enter the wave propagation speed more accurately in the calculation formula, how to calculate a Tesla transformer look on my channel in previous videos.
+
+121
+00:11:53,250 --> 00:11:55,470
+There are detailed descriptions of how to do this.
+
+122
+00:11:57,810 --> 00:12:03,110
+Now let's also examine the principle of how to bring this coil to the needed frequency for us.
+
+123
+00:12:04,570 --> 00:12:07,970
+Pay attention that the coil now has no additional capacity.
+
+124
+00:12:08,930 --> 00:12:10,130
+Here is the hot end.
+
+125
+00:12:11,990 --> 00:12:18,270
+The hot end is the end of the conductor of the high voltage coil at which the maximum voltage potential is.
+
+126
+00:12:20,630 --> 00:12:23,730
+At the cold end at this moment we have the maximum current.
+
+127
+00:12:24,270 --> 00:12:25,350
+There's an interesting moment.
+
+128
+00:12:26,550 --> 00:12:35,610
+Professional electronics, radio amateurs often protest against the fact that these scheme solutions are separated into a separate group called catchers.
+
+129
+00:12:37,630 --> 00:12:43,730
+They say, why did you invent a name for this scheme when this is a usual self-generator on one transistor?
+
+130
+00:12:44,950 --> 00:12:50,150
+And what's interesting here, why are these schemes brought into a separate category of catchers?
+
+131
+00:12:50,850 --> 00:12:54,310
+Because in this scheme first, Kirchhoff's law is violated.
+
+132
+00:12:55,250 --> 00:13:05,310
+This is expressed in that if you take the common wire of the oscilloscope and connect it to minus of the power source and stand on the collector with the probe, you'll see positive pulses on the
+
+133
+00:13:05,310 --> 00:13:05,630
+collector.
+
+134
+00:13:06,170 --> 00:13:10,250
+Also you can now stand with the common wire of the oscilloscope on plus power.
+
+135
+00:13:10,930 --> 00:13:17,150
+And if you look at the pulses on the collector, then relative to plus, they'll also be positive.
+
+136
+00:13:18,030 --> 00:13:21,850
+At the time, when on a usual self-generator, the polarity will change.
+
+137
+00:13:23,090 --> 00:13:29,470
+And the second, not unimportant moment, is that this scheme lets us hold the primary coil in resonance mode.
+
+138
+00:13:30,950 --> 00:13:34,130
+That is, the inductor of the high voltage transformer.
+
+139
+00:13:34,990 --> 00:13:36,710
+How is this resonance mode achieved?
+
+140
+00:13:37,350 --> 00:13:45,090
+This is the mode called when current and voltage in this conductor are shifted practically by 90 degrees, striving for this shift.
+
+141
+00:13:46,370 --> 00:13:55,390
+And automatically it turns out that this, effectively a piece of wire of a couple meters, is in resonance mode without picking parallel capacity for it.
+
+142
+00:13:56,250 --> 00:14:01,010
+When the current doesn't correspond to the voltage pulse, they're spaced in time.
+
+143
+00:14:01,490 --> 00:14:07,250
+These are two main features by which these scheme solutions are separated into a separate category of catchers.
+
+144
+00:14:08,410 --> 00:14:12,370
+So, the first moment when the whole system is assembled, connected.
+
+145
+00:14:13,670 --> 00:14:17,130
+Observe the rule of winding in one and the same direction.
+
+146
+00:14:18,290 --> 00:14:20,750
+Connect to minus of the scheme the grounding wire.
+
+147
+00:14:21,270 --> 00:14:22,390
+Here is the conductor.
+
+148
+00:14:23,790 --> 00:14:26,990
+Connect the common of the oscilloscope probe to the same point.
+
+149
+00:14:27,450 --> 00:14:28,410
+And connect grounding.
+
+150
+00:14:29,750 --> 00:14:30,950
+And here this black terminal.
+
+151
+00:14:31,390 --> 00:14:32,370
+This is also minus.
+
+152
+00:14:33,810 --> 00:14:35,190
+Also connect plus.
+
+153
+00:14:36,190 --> 00:14:39,390
+And apply to the scheme the minimum voltage at which it can launch.
+
+154
+00:14:40,390 --> 00:14:43,610
+Here in my case the probe, pay attention, hangs in air.
+
+155
+00:14:44,610 --> 00:14:47,570
+The system launched and its launch starts from 7V.
+
+156
+00:14:48,950 --> 00:14:51,530
+This is consumption of six hundredths of an amp.
+
+157
+00:14:52,690 --> 00:14:56,430
+How can you determine that the coil is not in the optimal operating mode?
+
+158
+00:14:58,090 --> 00:15:00,350
+This is determined by our calculation.
+
+159
+00:15:00,890 --> 00:15:04,950
+We know that here 74.5 M of conductor in this coil.
+
+160
+00:15:05,830 --> 00:15:08,350
+Means it should work at frequency one megahertz.
+
+161
+00:15:09,410 --> 00:15:12,290
+74.5 M for megahertz, this is quarter.
+
+162
+00:15:13,550 --> 00:15:15,030
+So now I'll bring my hand.
+
+163
+00:15:16,690 --> 00:15:23,050
+And if the coil actually wants to switch to a lower operating frequency, then the amplitude in the system will rise.
+
+164
+00:15:23,930 --> 00:15:27,090
+My hand will be in isolated capacity relative to earth.
+
+165
+00:15:28,170 --> 00:15:32,210
+Will lower frequency and see an increase of oscillation amplitude.
+
+166
+00:15:32,790 --> 00:15:34,830
+At that the consumption shouldn't increase.
+
+167
+00:15:35,670 --> 00:15:38,670
+So I'll bring my hand and we'll observe the oscillogram.
+
+168
+00:15:40,310 --> 00:15:42,130
+Visible that the amplitude now.
+
+169
+00:15:43,630 --> 00:15:46,050
+And in the upper corner, this is frequency.
+
+170
+00:15:46,710 --> 00:15:48,310
+For now don't pay attention to it.
+
+171
+00:15:48,570 --> 00:15:50,310
+The oscilloscope doesn't capture it.
+
+172
+00:15:50,950 --> 00:15:51,510
+Bring hand.
+
+173
+00:15:52,950 --> 00:15:55,050
+You see the amplitude clearly increases.
+
+174
+00:15:56,650 --> 00:15:58,510
+Hand closer, amplitude up.
+
+175
+00:15:59,230 --> 00:16:02,550
+Means yes, actually the coil lacks additional capacity.
+
+176
+00:16:03,710 --> 00:16:04,810
+Also consumption.
+
+177
+00:16:05,650 --> 00:16:06,710
+Here it doesn't change.
+
+178
+00:16:07,430 --> 00:16:08,570
+Bring, remove.
+
+179
+00:16:09,810 --> 00:16:10,650
+All in place.
+
+180
+00:16:11,870 --> 00:16:15,290
+Now I can add supply voltage and determine accurate frequency.
+
+181
+00:16:16,850 --> 00:16:19,090
+Here the oscilloscope captures.
+
+182
+00:16:20,110 --> 00:16:22,450
+Entered into frequency capture normally.
+
+183
+00:16:23,310 --> 00:16:25,970
+And see that it's practically 1.6 megahertz.
+
+184
+00:16:27,230 --> 00:16:28,170
+Bring hand.
+
+185
+00:16:29,190 --> 00:16:31,470
+Here also in this mode amplitude increases.
+
+186
+00:16:32,330 --> 00:16:33,850
+And now we can track frequency.
+
+187
+00:16:35,230 --> 00:16:37,690
+From 1.58 it reduces.
+
+188
+00:16:39,510 --> 00:16:41,150
+So 1.3.
+
+189
+00:16:43,130 --> 00:16:46,710
+Means, I conclude that this coil needs isolated capacity.
+
+190
+00:16:47,370 --> 00:16:57,070
+If it bringing the hand to the coil the amplitude on the contrary fell, then in this case it would be clear that on the contrary the capacity at the coil needs to be reduced.
+
+191
+00:16:57,970 --> 00:17:01,670
+That is, this is a coil already made geometrically incorrectly.
+
+192
+00:17:02,430 --> 00:17:06,650
+Here you'd have to unwind wire because there's already inter-turn capacity at us.
+
+193
+00:17:07,870 --> 00:17:16,730
+And to reduce it you can't, except either stretch the turns of the high voltage coil, make a gap between them, or unwind physical meters of conductor.
+
+194
+00:17:17,910 --> 00:17:24,050
+In the same mode, all as you've seen many times, neon lamps will glow here near the hot end.
+
+195
+00:17:25,090 --> 00:17:26,890
+Near the cold ones they shouldn't glow.
+
+196
+00:17:27,650 --> 00:17:28,010
+Pass.
+
+197
+00:17:28,330 --> 00:17:28,670
+Burns.
+
+198
+00:17:28,850 --> 00:17:29,150
+Here no.
+
+199
+00:17:29,830 --> 00:17:32,230
+Also you can pass with the oscilloscope probe.
+
+200
+00:17:32,630 --> 00:17:33,970
+Here will be maximum amplitude.
+
+201
+00:17:34,950 --> 00:17:36,990
+And here will be amplitude at zero.
+
+202
+00:17:38,890 --> 00:17:41,410
+Now we switch to picking isolated capacity.
+
+203
+00:17:42,010 --> 00:17:44,730
+I picked it in advance and now I'll show some stages.
+
+204
+00:17:45,750 --> 00:17:48,870
+As isolated capacity I'll apply such a system.
+
+205
+00:17:49,570 --> 00:17:52,250
+Here I'll solder the hot end of the high voltage coil.
+
+206
+00:17:53,550 --> 00:17:55,550
+Inside is a ball from Christmas tree toys.
+
+207
+00:17:56,630 --> 00:18:00,270
+How to make such isolated capacity I showed earlier on the channel.
+
+208
+00:18:00,810 --> 00:18:02,970
+The isolated capacity is installed.
+
+209
+00:18:04,130 --> 00:18:05,690
+I apply power to the system.
+
+210
+00:18:12,950 --> 00:18:15,410
+Approximately six hundredths amp, 7V.
+
+211
+00:18:16,950 --> 00:18:22,370
+Immediately you can pay attention that with the isolated capacity, the frequency became lower.
+
+212
+00:18:27,700 --> 00:18:28,820
+1170 kilohertz.
+
+213
+00:18:30,780 --> 00:18:33,100
+And the field around the coil increased.
+
+214
+00:18:33,980 --> 00:18:35,880
+That is, now we can see our neon.
+
+215
+00:18:37,220 --> 00:18:40,560
+It lights up already at a more distant distance from the coil.
+
+216
+00:18:42,000 --> 00:18:44,300
+At that the consumption at us is the same.
+
+217
+00:18:44,740 --> 00:18:48,620
+And we can observe such a moment that the system launch became more stable.
+
+218
+00:18:49,360 --> 00:18:51,760
+And we can launch it already starting from 3V.
+
+219
+00:18:54,020 --> 00:18:55,720
+4V and it calmly launched.
+
+220
+00:18:57,940 --> 00:18:59,720
+You see the frequency already.
+
+221
+00:19:01,140 --> 00:19:02,480
+I'll try to make it less.
+
+222
+00:19:07,740 --> 00:19:08,380
+3V.
+
+223
+00:19:08,380 --> 00:19:09,640
+The system works.
+
+224
+00:19:13,740 --> 00:19:17,140
+Now we determine that we can accurately examine our frequency.
+
+225
+00:19:22,970 --> 00:19:25,650
+You see that we didn't reach the calculated frequency.
+
+226
+00:19:26,470 --> 00:19:29,870
+Consequently, we still need to increase isolated capacity.
+
+227
+00:19:31,410 --> 00:19:35,170
+Since I picked all the details in advance, this won't pose difficulty.
+
+228
+00:19:35,950 --> 00:19:37,970
+Now we'll install such a nimbus on our coil.
+
+229
+00:19:41,540 --> 00:19:43,520
+Ahead of some St. Patrick will come out.
+
+230
+00:19:48,190 --> 00:19:50,030
+Such a bald one with a nimbus.
+
+231
+00:19:52,650 --> 00:19:54,250
+Such a funny coil came out.
+
+232
+00:19:55,070 --> 00:19:56,450
+And now I apply power.
+
+233
+00:20:01,010 --> 00:20:02,230
+Our 7-8V.
+
+234
+00:20:04,210 --> 00:20:05,230
+And what can we track?
+
+235
+00:20:06,730 --> 00:20:09,190
+That the frequency at us is 1MHz.
+
+236
+00:20:10,190 --> 00:20:11,410
+Means all picked correctly.
+
+237
+00:20:12,750 --> 00:20:18,750
+Also pay attention that between the isolated capacity and the Tesla transformer, there's some distance.
+
+238
+00:20:19,490 --> 00:20:22,890
+If you change this distance, the frequency will smoothly change.
+
+239
+00:20:23,530 --> 00:20:32,090
+Moreover, the dependency is such, the higher the isolated capacity above the Tesla transformer, the lower the frequency in the system will be.
+
+240
+00:20:32,950 --> 00:20:36,890
+If you lower the isolated capacity lower, the frequency will rise.
+
+241
+00:20:38,970 --> 00:20:41,320
+We found our desired result at 1MHz.
+
+242
+00:20:42,650 --> 00:20:47,370
+Now at the same consumption, the neon glow will light up at an even bigger distance.
+
+243
+00:20:49,770 --> 00:20:51,510
+It turns out also in this zone.
+
+244
+00:20:53,150 --> 00:20:56,850
+And now I can give bigger voltage and look at how the system behaves.
+
+245
+00:21:01,230 --> 00:21:02,650
+I apply order.
+
+246
+00:21:04,910 --> 00:21:06,970
+Battery voltage 13V.
+
+247
+00:21:09,190 --> 00:21:11,330
+This in this case, is consumption.
+
+248
+00:21:12,930 --> 00:21:14,310
+Neon at a bigger distance.
+
+249
+00:21:16,190 --> 00:21:17,830
+A discharge should already appear.
+
+250
+00:21:19,930 --> 00:21:21,230
+There's a small one.
+
+251
+00:21:21,830 --> 00:21:23,530
+And now we can light a fluorescent lamp.
+
+252
+00:21:26,330 --> 00:21:27,270
+Lights up.
+
+253
+00:21:28,310 --> 00:21:29,390
+Now a moment.
+
+254
+00:21:31,110 --> 00:21:34,990
+In our scheme was a neon lamp, parallel to collector emitter.
+
+255
+00:21:35,750 --> 00:21:37,270
+Here it's located, this lamp.
+
+256
+00:21:39,110 --> 00:21:44,250
+As you remember, I wrote that you need to tune it for trip voltage at 100 to 150V.
+
+257
+00:21:45,330 --> 00:21:47,650
+Now I'll raise the supply voltage of the system.
+
+258
+00:21:49,190 --> 00:21:51,350
+And pay attention to the neon lamp.
+
+259
+00:21:52,690 --> 00:21:53,910
+I raise voltage.
+
+260
+00:21:58,640 --> 00:21:59,200
+27V.
+
+261
+00:21:59,800 --> 00:22:00,960
+Here it starts to light up.
+
+262
+00:22:03,420 --> 00:22:04,740
+That is 30V.
+
+263
+00:22:05,920 --> 00:22:08,280
+And the lamp, you see that it lit up.
+
+264
+00:22:09,640 --> 00:22:14,480
+Also you see the lamp lit in the emitter because the consumption current of the system grew.
+
+265
+00:22:15,020 --> 00:22:16,020
+Here now what I apply.
+
+266
+00:22:18,220 --> 00:22:23,060
+The moment of neon lamp triggering says we have big voltage potential on the collector.
+
+267
+00:22:24,400 --> 00:22:27,780
+And this testifies you can't further raise the supply voltage.
+
+268
+00:22:28,540 --> 00:22:33,040
+Now you need to stand on the collector and look what amplitude of pulses come out there.
+
+269
+00:22:34,040 --> 00:22:39,380
+Because we know that for this transistor the limit voltage collector emitter is 230V.
+
+270
+00:22:39,860 --> 00:22:42,420
+The probe is located on the transistor collector.
+
+271
+00:22:43,640 --> 00:22:45,720
+Such an oscillogram, classical peaks.
+
+272
+00:22:46,840 --> 00:22:50,380
+And we see the maximum amplitude is 172V.
+
+273
+00:22:51,100 --> 00:22:53,580
+Now the neon is on the edge of triggering.
+
+274
+00:22:54,400 --> 00:22:57,260
+Visible spikes by jump amplitude and it cuts them.
+
+275
+00:22:58,240 --> 00:23:03,020
+Further you can still increase the supply voltage to such a mode when it stably lights up.
+
+276
+00:23:04,000 --> 00:23:07,400
+Further increase better not to do because the transistor may fail.
+
+277
+00:23:09,740 --> 00:23:12,780
+Now it's well visible that here is a different amplitude.
+
+278
+00:23:14,700 --> 00:23:17,560
+Moments with small amplitude where the neon triggers.
+
+279
+00:23:18,420 --> 00:23:23,380
+But still the transistor at us briefly tolerates such bullying, 296V.
+
+280
+00:23:24,840 --> 00:23:27,760
+Since they're short in time, it doesn't fail from this.
+
+281
+00:23:28,430 --> 00:23:30,220
+But the neon starts its triggering.
+
+282
+00:23:32,080 --> 00:23:34,660
+Peaks on the collector have different amplitudes.
+
+283
+00:23:36,480 --> 00:23:38,100
+You need to watch this moment.
+
+284
+00:23:40,580 --> 00:23:47,280
+I'll say immediately that most transistors in these schemes specifically fail from this collector emitter voltage.
+
+285
+00:23:47,900 --> 00:23:49,220
+Not from the current exceeding.
+
+286
+00:23:51,860 --> 00:23:56,400
+Transistors die not from thermal breakdown, but specifically from voltage breakdown.
+
+287
+00:23:58,520 --> 00:24:00,000
+In this case consumption.
+
+288
+00:24:00,940 --> 00:24:02,540
+Here at us, 26V.
+
+289
+00:24:03,880 --> 00:24:07,560
+Naturally, here now as always fluorescent lamps will burn everywhere.
+
+290
+00:24:09,380 --> 00:24:12,160
+A discharge will happen on the edge of a metal object.
+
+291
+00:24:15,880 --> 00:24:21,520
+Pay attention that the phyton discharge is small because the wire at us is thick and its turn count is small.
+
+292
+00:24:23,900 --> 00:24:27,500
+279 turns relative to coils wound with thin wire.
+
+293
+00:24:28,140 --> 00:24:30,700
+There it can exceed one and a half thousand turns.
+
+294
+00:24:31,300 --> 00:24:34,520
+But for work with these systems, big voltage as such isn't needed.
+
+295
+00:24:35,720 --> 00:24:40,480
+What's important is how this coil creates around itself disturbance in the environment.
+
+296
+00:24:41,220 --> 00:24:46,500
+And since it's wound with quite thick wire, knocking down its frequency is very hard.
+
+297
+00:24:47,340 --> 00:24:48,560
+A stable system comes out.
+
+298
+00:24:49,040 --> 00:24:50,840
+The system works about two minutes.
+
+299
+00:24:51,360 --> 00:24:53,860
+In such a mode, the majority launches this system.
+
+300
+00:24:54,740 --> 00:24:58,520
+Here all good, fluorescent lamps burn at a big distance.
+
+301
+00:25:00,960 --> 00:25:04,460
+Consumption order of 36 to 38 W jumps.
+
+302
+00:25:05,940 --> 00:25:08,820
+Tuned all on megahertz and on this people stop.
+
+303
+00:25:09,500 --> 00:25:11,040
+They consider the system works well.
+
+304
+00:25:12,200 --> 00:25:14,380
+I brought the thermometer here not by chance.
+
+305
+00:25:15,040 --> 00:25:17,120
+Its temperature approaches 60 degrees.
+
+306
+00:25:19,060 --> 00:25:21,580
+This is in the airflow on the heat sink.
+
+307
+00:25:22,120 --> 00:25:26,600
+The heat sink itself is heated very strongly and capitally burns fingers.
+
+308
+00:25:28,280 --> 00:25:30,400
+This you could observe if you did it yourself earlier.
+
+309
+00:25:31,300 --> 00:25:31,880
+Such a mode.
+
+310
+00:25:32,500 --> 00:25:34,420
+What does heat sink heating testify to?
+
+311
+00:25:34,880 --> 00:25:43,620
+That this consumption that we have of 36 to 38 W, it's spent in the major part in vain, into nowhere, on heating the transistor.
+
+312
+00:25:44,900 --> 00:25:48,560
+And now we'll tune the Tesla catcher in the correct operating mode.
+
+313
+00:25:50,280 --> 00:25:54,760
+If you remember, then the oscillogram at us on the collector was one peak.
+
+314
+00:25:55,320 --> 00:25:58,120
+And now we achieve the mode when the system stops heating.
+
+315
+00:25:59,880 --> 00:26:02,800
+And already here we can pump in order of 50 W.
+
+316
+00:26:03,640 --> 00:26:05,720
+The field significantly increases.
+
+317
+00:26:07,220 --> 00:26:09,260
+And all comes to norm as it should be.
+
+318
+00:26:10,260 --> 00:26:11,740
+Such is the sense of tuning.
+
+319
+00:26:12,820 --> 00:26:17,240
+While visible that the temperature continues to grow already past 60 degrees.
+
+320
+00:26:17,240 --> 00:26:20,640
+And to touch the heat sink, I have no desire.
+
+321
+00:26:21,920 --> 00:26:26,080
+I turn off, so our transistor didn't fly out from thermal breakdown.
+
+322
+00:26:27,080 --> 00:26:29,080
+I did a replacement of the inductor.
+
+323
+00:26:30,760 --> 00:26:34,780
+I removed the inductor that was previous, 6 turns we have here.
+
+324
+00:26:35,460 --> 00:26:38,340
+And put an inductor of 2 turns of thick wire.
+
+325
+00:26:39,780 --> 00:26:41,080
+Would seem, what I do.
+
+326
+00:26:41,520 --> 00:26:45,400
+The transistor for this strongly heated and worked on big wire length.
+
+327
+00:26:46,120 --> 00:26:48,940
+Here bigger ohm resistance, bigger inductance.
+
+328
+00:26:49,880 --> 00:26:52,160
+And now I'll force it to work on shorter wire.
+
+329
+00:26:53,400 --> 00:26:55,080
+Effectively with smaller resistance.
+
+330
+00:26:56,120 --> 00:26:59,580
+And it should by idea of classical electrical engineering heat up.
+
+331
+00:27:00,320 --> 00:27:02,200
+And burn from thermal breakdown.
+
+332
+00:27:03,240 --> 00:27:05,520
+But in this case, this won't happen at us.
+
+333
+00:27:05,960 --> 00:27:08,420
+Because we conduct work by Tesla technology.
+
+334
+00:27:09,600 --> 00:27:14,000
+And we'll work now on this transistor in high frequency oscillation mode.
+
+335
+00:27:15,980 --> 00:27:18,860
+Now the experiment at us will start from room temperature.
+
+336
+00:27:19,760 --> 00:27:23,300
+Now is summer and at me here it's order of 30 degrees in the room.
+
+337
+00:27:24,540 --> 00:27:27,180
+The mercury is visible at the 30 mark.
+
+338
+00:27:29,260 --> 00:27:32,120
+To start let's look at the oscillogram on the collector.
+
+339
+00:27:32,880 --> 00:27:37,040
+Now I'll connect the probe here, so that the difference in operating modes was visible.
+
+340
+00:27:37,820 --> 00:27:39,820
+The probe is on the transistor collector.
+
+341
+00:27:40,720 --> 00:27:44,120
+Common wire of the oscilloscope at minus of the scheme power source.
+
+342
+00:27:45,400 --> 00:27:47,100
+You see the system launched.
+
+343
+00:27:48,060 --> 00:27:50,720
+3 V 0.03 A it consumes.
+
+344
+00:27:51,520 --> 00:27:53,060
+And now we'll raise voltage.
+
+345
+00:27:53,860 --> 00:27:55,720
+And we'll observe the oscillogram.
+
+346
+00:27:58,450 --> 00:28:01,270
+You see the oscillogram significantly changed.
+
+347
+00:28:03,530 --> 00:28:05,970
+Now the voltage at us is 8 V.
+
+348
+00:28:07,890 --> 00:28:11,410
+One peak disappeared and a series of pulses appeared.
+
+349
+00:28:12,250 --> 00:28:12,830
+Raise further.
+
+350
+00:28:14,430 --> 00:28:16,270
+This at us is 11 V.
+
+351
+00:28:17,950 --> 00:28:18,990
+Go further.
+
+352
+00:28:28,460 --> 00:28:29,460
+19 V.
+
+353
+00:28:32,240 --> 00:28:32,880
+20.
+
+354
+00:28:36,970 --> 00:28:41,790
+Now we'll need to bring to the same consumption of the scheme as in the previous experiment.
+
+355
+00:28:44,780 --> 00:28:46,160
+Raise voltage more.
+
+356
+00:28:51,040 --> 00:28:52,760
+Here this we have signal on the collector.
+
+357
+00:28:55,160 --> 00:28:55,760
+One pulse.
+
+358
+00:28:56,460 --> 00:28:58,640
+It turns out at us a cut series of pulses.
+
+359
+00:28:59,700 --> 00:29:02,340
+Moreover, here we have high frequency already.
+
+360
+00:29:04,360 --> 00:29:07,760
+And the frequency of following pulses is 1 MHz.
+
+361
+00:29:10,420 --> 00:29:12,760
+Now the oscilloscope will adjust.
+
+362
+00:29:14,340 --> 00:29:16,080
+It'll be more convenient to observe.
+
+363
+00:29:19,000 --> 00:29:20,680
+Frequency 1 MHz.
+
+364
+00:29:21,380 --> 00:29:22,640
+That is all works.
+
+365
+00:29:23,640 --> 00:29:25,100
+Now let's look at the temperature.
+
+366
+00:29:28,490 --> 00:29:31,490
+The temperature at us for now doesn't strongly grow.
+
+367
+00:29:33,190 --> 00:29:34,170
+No growth.
+
+368
+00:29:35,890 --> 00:29:36,990
+31 degrees.
+
+369
+00:29:38,030 --> 00:29:39,170
+The system works.
+
+370
+00:29:40,130 --> 00:29:44,870
+And now when nothing changed, we can pay attention to at what distance the lamp glows.
+
+371
+00:29:48,010 --> 00:29:50,070
+Now glow from the system at distance.
+
+372
+00:29:51,270 --> 00:29:53,470
+If the camera transferred the distance.
+
+373
+00:29:53,930 --> 00:29:56,310
+But I already took it to a distance more than a meter.
+
+374
+00:29:57,450 --> 00:29:58,290
+The lamp glows at a distance of 1.5 meters.
+
+375
+00:29:58,310 --> 00:30:00,490
+I continue to take away.
+
+376
+00:30:02,010 --> 00:30:04,610
+And here it faded at a distance about 1.5 meters.
+
+377
+00:30:06,530 --> 00:30:09,510
+That is, the field significantly grew in this mode.
+
+378
+00:30:11,230 --> 00:30:13,670
+The discharge also increased its length.
+
+379
+00:30:15,170 --> 00:30:16,950
+Now let's look at what we consume.
+
+380
+00:30:20,680 --> 00:30:21,300
+Recalculate.
+
+381
+00:30:24,680 --> 00:30:27,020
+28 V at 1.3 A.
+
+382
+00:30:29,260 --> 00:30:30,360
+36 W.
+
+383
+00:30:31,340 --> 00:30:32,640
+Bring still more consumption.
+
+384
+00:30:38,390 --> 00:30:40,250
+30 at 1.36.
+
+385
+00:30:42,170 --> 00:30:43,090
+40 W.
+
+386
+00:30:43,770 --> 00:30:46,570
+Now the system eats more than in the previous experiment.
+
+387
+00:30:48,490 --> 00:30:51,110
+You see also burns the lamp on the collector.
+
+388
+00:30:52,470 --> 00:30:54,490
+That is, on the transistor emitter.
+
+389
+00:30:55,590 --> 00:30:57,250
+Neon on the collector doesn't glow.
+
+390
+00:30:57,930 --> 00:31:01,490
+Means excess voltage of peaks on the collector is absent at us.
+
+391
+00:31:02,030 --> 00:31:03,990
+But we can look also by oscilloscope.
+
+392
+00:31:03,990 --> 00:31:07,590
+Amplitude 116 V of maximum peak.
+
+393
+00:31:09,130 --> 00:31:10,750
+What does the thermometer show?
+
+394
+00:31:12,150 --> 00:31:13,570
+Hear how much I already film.
+
+395
+00:31:14,870 --> 00:31:16,630
+That the transistor stopped heating.
+
+396
+00:31:17,530 --> 00:31:19,470
+And it became above room temperature.
+
+397
+00:31:20,390 --> 00:31:21,690
+By 1-2 degrees.
+
+398
+00:31:24,170 --> 00:31:26,850
+We consume all the same 40 W.
+
+399
+00:31:27,590 --> 00:31:35,570
+And if you launch in such a mode, you'll feel that when you bring a fluorescent lamp here in the hand where you hold it, it'll very strongly heat your hand.
+
+400
+00:31:36,810 --> 00:31:37,630
+Directly heat up.
+
+401
+00:31:40,830 --> 00:31:42,890
+Operating modes are absolutely different.
+
+402
+00:31:44,230 --> 00:31:46,550
+And now we understand what power we consume.
+
+403
+00:31:48,130 --> 00:31:49,850
+We have plus the lamp glow.
+
+404
+00:31:51,090 --> 00:31:52,930
+And that our transistor doesn't heat.
+
+405
+00:31:53,630 --> 00:31:56,670
+That is, the whole energy optimally goes into the system.
+
+406
+00:31:57,610 --> 00:31:59,410
+Same frequency 1 MHz.
+
+407
+00:31:59,890 --> 00:32:03,150
+Here this is the correct catcher operating mode of the scheme.
+
+408
+00:32:04,750 --> 00:32:08,910
+And as Tesla wrote, you need a series of high voltage oscillations.
+
+409
+00:32:11,610 --> 00:32:13,670
+Let's still observe the thermal mode.
+
+410
+00:32:17,950 --> 00:32:19,050
+Temperature grows.
+
+411
+00:32:21,170 --> 00:32:22,230
+34 degrees.
+
+412
+00:32:22,950 --> 00:32:25,470
+But intense growth is absent as in that case.
+
+413
+00:32:26,050 --> 00:32:27,030
+Crossed past 60.
+
+414
+00:32:29,570 --> 00:32:31,070
+That is works excellently.
+
+415
+00:32:31,070 --> 00:32:33,170
+You can freely hold a hand.
+
+416
+00:32:35,130 --> 00:32:36,910
+The heat sink it doesn't burn.
+
+417
+00:32:43,210 --> 00:32:45,550
+Now let's still observe the consumption mode.
+
+418
+00:32:51,380 --> 00:32:52,700
+Well, and now I'll bring.
+
+419
+00:32:53,160 --> 00:32:55,100
+Let's pump in the system even more.
+
+420
+00:32:56,620 --> 00:32:58,040
+Bring to full lamp glow.
+
+421
+00:33:00,960 --> 00:33:03,000
+Perhaps it glows so from 12 V.
+
+422
+00:33:07,330 --> 00:33:09,750
+Here order of 45 V2A.
+
+423
+00:33:10,910 --> 00:33:12,310
+Now let's look what'll be.
+
+424
+00:33:17,900 --> 00:33:19,040
+45 at 2.
+
+425
+00:33:19,900 --> 00:33:22,420
+We pump 90 W into the system.
+
+426
+00:33:25,530 --> 00:33:26,190
+A siligram.
+
+427
+00:33:27,450 --> 00:33:29,250
+You see the voltage is in norm.
+
+428
+00:33:30,310 --> 00:33:33,070
+On the collector maximum 168 V.
+
+429
+00:33:35,350 --> 00:33:38,730
+Naturally now the field even more significantly increased.
+
+430
+00:33:39,690 --> 00:33:41,650
+We can take it away if we look so.
+
+431
+00:33:43,250 --> 00:33:45,910
+Already at 2 M, I took the lamp from this system.
+
+432
+00:33:48,250 --> 00:33:49,670
+And it all glows.
+
+433
+00:33:51,930 --> 00:33:53,430
+The glow fades.
+
+434
+00:33:54,550 --> 00:33:55,750
+A meter 82.
+
+435
+00:33:57,010 --> 00:34:00,390
+Well, and here accordingly the hand burns capitally.
+
+436
+00:34:01,710 --> 00:34:03,990
+So, consumption, thermal mode.
+
+437
+00:34:04,730 --> 00:34:05,190
+What at us?
+
+438
+00:34:06,090 --> 00:34:07,490
+How does it change?
+
+439
+00:34:08,970 --> 00:34:12,150
+You see the growth is absolutely insignificant.
+
+440
+00:34:13,410 --> 00:34:14,890
+Added still plus 2 degrees.
+
+441
+00:34:20,990 --> 00:34:22,910
+Here's so it happens, this pump.
+
+442
+00:34:23,790 --> 00:34:26,250
+If you pay attention to the neon, it doesn't glow.
+
+443
+00:34:26,930 --> 00:34:28,470
+That is, the protection doesn't trigger.
+
+444
+00:34:29,050 --> 00:34:30,170
+All is in optimal mode.
+
+445
+00:34:31,670 --> 00:34:36,030
+Moreover, the turn count in this system can be reduced on the inductor up to 1.
+
+446
+00:34:43,170 --> 00:34:47,590
+I turn off the system probably so not to extra time irradiate the head.
+
+447
+00:34:48,070 --> 00:34:49,810
+Turn off once more, temperature.
+
+448
+00:34:52,250 --> 00:34:53,630
+All in optimal mode.
+
+449
+00:34:54,450 --> 00:34:57,890
+That is, understand that here now such a big heat sink isn't needed.
+
+450
+00:34:58,650 --> 00:35:01,890
+A small heat sink will be enough, all will work excellently.
+
+451
+00:35:03,130 --> 00:35:05,070
+Plus such watts that we can pump in here.
+
+452
+00:35:06,530 --> 00:35:12,070
+It turns out very powerful Tesla with a big field with which we can already conduct excellent experiments.
+
+453
+00:35:18,860 --> 00:35:22,880
+Still a small nuance about Kirchhoff's law I mentioned in the video clip.
+
+454
+00:35:23,340 --> 00:35:25,000
+Now you see I move the probe.
+
+455
+00:35:25,900 --> 00:35:28,380
+It now common is located at plus power.
+
+456
+00:35:29,640 --> 00:35:32,180
+And here is the oscillogram by plus power.
+
+457
+00:35:33,060 --> 00:35:34,820
+The pulse is also positive.
+
+458
+00:35:35,780 --> 00:35:37,260
+Only the part that goes to minus.
+
+459
+00:35:37,780 --> 00:35:39,200
+This is to supply voltage.
+
+460
+00:35:41,920 --> 00:35:44,060
+But the pulse also remained positive.
+
+461
+00:35:45,220 --> 00:35:47,520
+Supply voltage at us is 37 V.
+
+462
+00:35:48,460 --> 00:35:50,720
+And there in minus it goes to 34 V.
+
+463
+00:35:52,740 --> 00:35:57,000
+Understand that the system at us works in catcher mode and with it all is good.
+
+464
+00:35:58,780 --> 00:36:01,800
+Now examine one more feature of catcher mode work.
+
+465
+00:36:02,460 --> 00:36:07,340
+Shift of current and voltage striving to 90 degrees in the primary inductor coil.
+
+466
+00:36:08,320 --> 00:36:11,360
+Now the yellow channel of the oscilloscope is on the collector.
+
+467
+00:36:12,240 --> 00:36:15,820
+The blue channel of the oscilloscope is on the transistor emitter.
+
+468
+00:36:16,900 --> 00:36:19,440
+Common accordingly on the common wire of grounding.
+
+469
+00:36:22,100 --> 00:36:23,280
+Yellow channel here.
+
+470
+00:36:23,500 --> 00:36:24,040
+Blue here.
+
+471
+00:36:25,440 --> 00:36:27,760
+Now we'll observe current and voltage.
+
+472
+00:36:28,280 --> 00:36:31,220
+Current we'll look at by voltage drop on this resistance.
+
+473
+00:36:32,140 --> 00:36:33,360
+That is, see its face.
+
+474
+00:36:34,540 --> 00:36:36,140
+Apply power to the system.
+
+475
+00:36:38,420 --> 00:36:40,100
+You see peaks on the collector.
+
+476
+00:36:41,300 --> 00:36:42,860
+And now the emitter catches up.
+
+477
+00:36:43,460 --> 00:36:45,260
+Why did such a rise happen at the emitter?
+
+478
+00:36:46,140 --> 00:36:49,420
+This was the time needed for charging this electrolytic capacitor.
+
+479
+00:36:49,420 --> 00:36:52,680
+But we're more interested in the phasing.
+
+480
+00:36:54,520 --> 00:36:55,620
+And what can we observe?
+
+481
+00:36:57,020 --> 00:36:58,920
+A very interesting oscillogram.
+
+482
+00:36:59,900 --> 00:37:02,560
+Here is a pulse from a series by voltage on the collector.
+
+483
+00:37:03,360 --> 00:37:06,160
+And here is the main current with a shift by 90 degrees.
+
+484
+00:37:07,340 --> 00:37:11,540
+And moreover, the phase shift is even inside the high voltage pulses.
+
+485
+00:37:13,660 --> 00:37:15,640
+Between their current and voltage.
+
+486
+00:37:16,940 --> 00:37:19,300
+Also a difference of phases is visible.
+
+487
+00:37:20,680 --> 00:37:25,860
+They besides being shifted, the shift is also done by 180 degrees antiphase.
+
+488
+00:37:27,500 --> 00:37:30,940
+And this mode specifically creates wonders with the field in our scheme.
+
+489
+00:37:32,700 --> 00:37:34,600
+And leads to minimum consumption.
+
+490
+00:37:35,980 --> 00:37:40,140
+Because current and voltage consumed from the source are with a phase shift.
+
+491
+00:37:42,720 --> 00:37:45,280
+And several words about how to reach such a mode.
+
+492
+00:37:46,140 --> 00:37:49,700
+This mode is reached by picking bias with these resistors.
+
+493
+00:37:51,260 --> 00:37:53,620
+And picking the turn count in the inductor.
+
+494
+00:37:54,940 --> 00:37:59,440
+You need to achieve such a mode that the transistor started to open and close.
+
+495
+00:38:00,280 --> 00:38:04,640
+Specifically a catcher transistor is in this switching mode with high frequency.
+
+496
+00:38:05,240 --> 00:38:10,860
+It turns out when we raise current in the collector emitter junction by means of reducing turns on the inductor.
+
+497
+00:38:12,820 --> 00:38:16,260
+And because the current moves through the collector emitter junction.
+
+498
+00:38:17,640 --> 00:38:22,340
+At us additionally happens a deficit of opening current at the transistor base.
+
+499
+00:38:23,540 --> 00:38:25,960
+Charge goes into the collector emitter junction.
+
+500
+00:38:26,540 --> 00:38:28,760
+And the transistor starts to close and open.
+
+501
+00:38:29,900 --> 00:38:31,520
+And since we pick this bias here.
+
+502
+00:38:32,360 --> 00:38:36,340
+Then it turns out we don't add into the transistor base to its full opening.
+
+503
+00:38:37,120 --> 00:38:40,080
+And it specifically does such jumps by amplitude.
+
+504
+00:38:40,080 --> 00:38:43,840
+On this with everyone I say goodbye.
+
+505
+00:38:44,580 --> 00:38:46,420
+Successful experiments to everyone.
+
+506
+00:38:46,860 --> 00:38:50,180
+Beautiful experiences, understanding and all the best.
+

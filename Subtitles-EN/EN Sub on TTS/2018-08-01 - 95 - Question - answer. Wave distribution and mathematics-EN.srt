@@ -1,0 +1,812 @@
+1
+00:00:00,640 --> 00:00:03,760
+Greetings to all subscribers and viewers of my channel.
+
+2
+00:00:04,700 --> 00:00:09,200
+Today we will look at a few interesting points that people encountered during the tuning process.
+
+3
+00:00:12,320 --> 00:00:12,840
+Question.
+
+4
+00:00:13,520 --> 00:00:15,360
+The first one goes like this.
+
+5
+00:00:15,840 --> 00:00:19,580
+I tuned a Tesla transformer to a quarter wave based on your calculations.
+
+6
+00:00:20,860 --> 00:00:23,300
+Now I want to retune it to a half wave.
+
+7
+00:00:24,020 --> 00:00:27,280
+But when I calculate the frequencies, the math doesn't add up.
+
+8
+00:00:28,760 --> 00:00:34,020
+And if I switch to the frequency I calculated mathematically, the coil just won't tune.
+
+9
+00:00:35,300 --> 00:00:36,880
+So what should I do about it?
+
+10
+00:00:37,840 --> 00:00:39,880
+And are the calculations even correct?
+
+11
+00:00:41,100 --> 00:00:47,680
+This schematic diagram I've shown here conceptually illustrates the standing wave distribution in a Tesla transformer.
+
+12
+00:00:50,830 --> 00:00:54,150
+The same applies to a grounded Granade coil system.
+
+13
+00:00:54,650 --> 00:01:01,190
+How currents and voltage are distributed when the system is set to a quarter wave versus when it's set to a half wave.
+
+14
+00:01:03,690 --> 00:01:13,210
+Essentially, to lock in the moment when our system is at a quarter wave, we need to get maximum voltage at the upper, hot end of the Tesla transformer on its top load.
+
+15
+00:01:15,190 --> 00:01:19,470
+Meanwhile, the current maximum will be at the lower end of the Tesla transformer.
+
+16
+00:01:20,270 --> 00:01:23,810
+This part here is the grounding wire and its wave distributions.
+
+17
+00:01:24,450 --> 00:01:30,550
+The thing is, people usually only look at this part and forget about what's happening in the grounding at that moment.
+
+18
+00:01:31,650 --> 00:01:36,550
+But in the grounding, the pattern is an antiphase to what's happening in the resonator.
+
+19
+00:01:38,270 --> 00:01:46,670
+Therefore, if the entire system aligns to a quarter wave, the whole system actually forms a complete picture, resulting in this half wave distribution.
+
+20
+00:01:48,450 --> 00:01:52,930
+But only a quarter of the standing wave resides inside our Tesla transformer.
+
+21
+00:01:53,990 --> 00:01:58,970
+We get a different, more interesting situation when the system shifts to a half wave.
+
+22
+00:01:59,810 --> 00:02:05,970
+In this case, the peak voltage point moves from the hot end of the Tesla transformer to the middle of the coil.
+
+23
+00:02:07,490 --> 00:02:17,630
+Meanwhile, the current distributes differently since there's a 90-degree phase shift between them, and the frequency here is higher, so that this point shifts as the frequency increases.
+
+24
+00:02:18,610 --> 00:02:23,370
+The wavelength shortens, and it distributes differently along the length of our coil.
+
+25
+00:02:24,350 --> 00:02:26,110
+That's why we get this kind of ratio.
+
+26
+00:02:26,990 --> 00:02:32,850
+With a half wave distribution on our Tesla transformer, the current will be an antiphase at its ends.
+
+27
+00:02:34,170 --> 00:02:38,710
+At the same time, as always, let's not forget about the grounding part we have here.
+
+28
+00:02:39,810 --> 00:02:44,210
+A complete shape is formed here too, except now it results in a full wave.
+
+29
+00:02:45,910 --> 00:02:46,330
+If you...
+
+30
+00:02:50,600 --> 00:02:53,300
+What calculations does a person typically make?
+
+31
+00:02:54,460 --> 00:02:59,820
+For example, I'll show the calculations for my actual coil to make it clear using its example.
+
+32
+00:03:01,860 --> 00:03:03,280
+The logic behind it is simple.
+
+33
+00:03:05,600 --> 00:03:14,880
+A person calculates the Tesla transformer, takes the quarter wave resonance frequency, multiplies it by two, and gets the frequency for a half wave on this resonator.
+
+34
+00:03:17,760 --> 00:03:25,940
+The thing is, this is where idealized math kicks in, and for those who believe in it, all these formulas and such, it doesn't work.
+
+35
+00:03:26,860 --> 00:03:38,660
+While you can still calculate the wave velocity via the known speed of light for a quarter wave resonance up to a frequency of 1.5 MHz, you can no longer apply these calculations to a half wave
+
+36
+00:03:38,660 --> 00:03:39,200
+resonator.
+
+37
+00:03:40,580 --> 00:03:42,720
+The margins of error will be massive.
+
+38
+00:03:43,580 --> 00:03:47,660
+And now, in practice, we'll see what kind of errors occur in reality.
+
+39
+00:03:48,600 --> 00:03:55,000
+To move on to the practical part, we first need to make a simple device to track the voltage antinode in our coil.
+
+40
+00:03:59,440 --> 00:04:09,880
+It's made from a 65 cm piece of copper wire folded almost in half, resulting in a 30 cm system from the neon bulb to the point where we hold it with our fingers.
+
+41
+00:04:14,260 --> 00:04:19,480
+It's a copper wire system with a neon bulb soldered to the end, and the connection looks like this.
+
+42
+00:04:21,520 --> 00:04:26,240
+We solder one contact to the copper and bend the other contact into this shape.
+
+43
+00:04:26,240 --> 00:04:31,660
+Now we have a convenient probe for locating the voltage antinode on the Tesla transformer.
+
+44
+00:04:32,820 --> 00:04:46,200
+We will feed the frequency into the Tesla transformer using a laboratory signal generator, and by changing its frequency, we will check this indicator to see if the math actually tells us the truth
+
+45
+00:04:46,200 --> 00:04:52,640
+that multiplying the quarter wave resonance frequency gives us the half wave, and look at the issues tied to this.
+
+46
+00:04:53,360 --> 00:05:02,700
+Before you is our test sample, my Tesla transformer, with a conductor length of 149 m and a calculated frequency of 500 kHz.
+
+47
+00:05:03,280 --> 00:05:11,380
+This transformer is built on a white plastic ventilation duct frame, using a wire with a cross section of 0.96 mm.
+
+48
+00:05:12,460 --> 00:05:20,620
+A top load was also chosen for it, matching the wave distribution along the wire length with the LC resonance using an additional top load.
+
+49
+00:05:21,680 --> 00:05:32,460
+In this case, the Tesla transformer is currently connected to ground, and there is a single turn of conductor at the base of the Tesla transformer coil, which we will feed the signal to from the lab,
+
+50
+00:05:33,040 --> 00:05:33,440
+generator.
+
+51
+00:05:35,400 --> 00:05:39,100
+First, let's look at tuning the Tesla transformer to a quarter wave.
+
+52
+00:05:40,020 --> 00:05:51,100
+Reminding you that at a quarter wave, our voltage antinode will be located right at this point, and accordingly, the neon lamp should light up at this point, and as it moves toward the base of the
+
+53
+00:05:51,100 --> 00:05:52,820
+transformer, it will go out.
+
+54
+00:05:54,280 --> 00:05:57,220
+I am applying a frequency of 500 kHz.
+
+55
+00:05:59,740 --> 00:06:04,000
+We can see the neon lamp is lit, and as I lower it, it goes out.
+
+56
+00:06:04,540 --> 00:06:10,840
+In other words, the voltage antinode at the end of the high voltage transformer winding is clearly visible.
+
+57
+00:06:11,520 --> 00:06:14,700
+The neon lamp will also light up near the top load.
+
+58
+00:06:15,980 --> 00:06:20,400
+This part usually doesn't cause much trouble, and most people manage it successfully.
+
+59
+00:06:21,700 --> 00:06:28,460
+If they use the calculations I provided earlier on my channel, all these steps are covered, and you can calculate it using them.
+
+60
+00:06:29,400 --> 00:06:32,540
+Let's also record the frequency in this experiment.
+
+61
+00:06:33,720 --> 00:06:38,000
+There it is, visible on the lab signal generator at 500 kHz.
+
+62
+00:06:39,920 --> 00:06:41,560
+The neon lamp is lit.
+
+63
+00:06:43,600 --> 00:06:46,040
+Now, let's switch our system to half-wave mode.
+
+64
+00:06:46,700 --> 00:06:50,540
+According to idealized math, we multiply our frequency by 2.
+
+65
+00:06:52,480 --> 00:06:55,580
+Therefore, I set the frequency here to 1 MHz.
+
+66
+00:06:57,360 --> 00:07:07,780
+Now, at this frequency, the neon lamp at the hot end of the Tesla transformer has gone out, and we can check if the voltage antinode has actually moved to the center of our coil.
+
+67
+00:07:17,720 --> 00:07:19,360
+Moving the indicator along,
+
+68
+00:07:24,500 --> 00:07:27,920
+and as you can see, the lamp isn't lighting up anywhere.
+
+69
+00:07:29,800 --> 00:07:31,880
+Maybe we have some minor deviations.
+
+70
+00:07:32,960 --> 00:07:34,180
+Let's try to look for them.
+
+71
+00:07:34,840 --> 00:07:37,840
+Let's say I change the frequency to 1.1 MHz.
+
+72
+00:07:40,960 --> 00:07:47,960
+There is no distribution whatsoever, so it's a clear indicator that our math isn't working.
+
+73
+00:07:48,460 --> 00:07:49,840
+How do we find the half-wave?
+
+74
+00:07:50,480 --> 00:08:08,980
+We place our indicator near the middle of the Tesla transformer, roughly in the center of the winding, and we start increasing the frequency, sweeping smoothly by 10 kHz steps, and we see the exact
+
+75
+00:08:08,980 --> 00:08:10,660
+moment the lamp lights up brightly.
+
+76
+00:08:12,900 --> 00:08:18,960
+The point of maximum bulb brightness corresponds to the half-wave frequency for our Tesla transformer.
+
+77
+00:08:21,400 --> 00:08:25,720
+Checking the indicator now, the neon lamp does not light up at the hot end.
+
+78
+00:08:26,520 --> 00:08:32,080
+The glow is in the center, and it also doesn't light up at the base of the Tesla transformer.
+
+79
+00:08:34,580 --> 00:08:36,960
+Now let's see what we actually got in reality.
+
+80
+00:08:37,840 --> 00:08:38,800
+What is the frequency?
+
+81
+00:08:41,100 --> 00:08:52,140
+Let's shift our attention to the lab signal generator, and we can see that the half-wave resonance frequency corresponds to 1480 kHz.
+
+82
+00:08:53,380 --> 00:08:57,000
+So we can conclude, wow, what a massive difference.
+
+83
+00:08:58,080 --> 00:09:00,640
+We clearly see that the math doesn't work here.
+
+84
+00:09:02,620 --> 00:09:08,100
+We'll also now measure the spectral lines of this Tesla transformer using a spectrum analyzer.
+
+85
+00:09:09,140 --> 00:09:15,320
+Maybe I did something wrong somewhere, but the spectrum analyzer will definitely show us the entire spectral series.
+
+86
+00:09:16,120 --> 00:09:19,040
+Moving on to the experiment with the spectrum analyzer.
+
+87
+00:09:19,840 --> 00:09:28,860
+The optimal option for tracking the resonant transformer's frequency is to pick it up via an antenna without connecting any probes directly to the system.
+
+88
+00:09:29,960 --> 00:09:34,480
+Please note that the lab signal generator is currently disconnected from the single turn.
+
+89
+00:09:35,840 --> 00:09:39,820
+In fact, it's completely powered off so as not to cause interference.
+
+90
+00:09:39,820 --> 00:09:45,580
+With this experiment, we are testing the accuracy of our Tesla transformer's quarter-wave tuning.
+
+91
+00:09:47,100 --> 00:09:50,840
+You can notice that a spectral peak occasionally appears on the device.
+
+92
+00:09:53,980 --> 00:09:56,240
+This little spike jumping up right here.
+
+93
+00:09:57,040 --> 00:09:58,600
+It's very clearly visible.
+
+94
+00:09:59,640 --> 00:10:00,880
+I've placed a marker on it.
+
+95
+00:10:01,980 --> 00:10:06,080
+The marker frequency shown at its peak is 500.1 kHz.
+
+96
+00:10:07,580 --> 00:10:09,960
+What does the appearance of this spike indicate?
+
+97
+00:10:09,960 --> 00:10:20,760
+It shows that this Tesla transformer reacts when exposed to external radio waves from distant radio transmitters or, as you might have seen, a passing spike.
+
+98
+00:10:21,520 --> 00:10:24,000
+For instance, it could be lightning activity somewhere.
+
+99
+00:10:25,220 --> 00:10:27,040
+By picking it up, it responds.
+
+100
+00:10:28,020 --> 00:10:31,140
+And now, let's feed in our 500 kHz frequency.
+
+101
+00:10:32,680 --> 00:10:37,460
+We see that the spectral peak shoots up immediately by several orders of magnitude.
+
+102
+00:10:38,020 --> 00:10:42,080
+And when I bring my hand close, the amplitude drops.
+
+103
+00:10:44,260 --> 00:10:46,320
+This indicates precise tuning.
+
+104
+00:10:47,800 --> 00:10:54,060
+Also, at this frequency, the subsequent spectral peaks of our transformer's harmonic series start to show up.
+
+105
+00:10:55,120 --> 00:10:59,040
+Now, I will change the frequency and we will observe the spectrogram further.
+
+106
+00:11:00,420 --> 00:11:02,440
+I'm starting to increase the frequency.
+
+107
+00:11:04,460 --> 00:11:06,660
+The step size will be 10 kHz.
+
+108
+00:11:11,080 --> 00:11:12,580
+We can see the detonating.
+
+109
+00:11:14,340 --> 00:11:15,900
+The amplitude is dropping.
+
+110
+00:11:17,800 --> 00:11:19,280
+And the peak is shifting.
+
+111
+00:11:20,880 --> 00:11:25,600
+Right now, we are at our mathematically calculated frequency of 1 MHz.
+
+112
+00:11:26,360 --> 00:11:28,260
+See how small it is on this transformer.
+
+113
+00:11:28,960 --> 00:11:32,360
+Raising it further, we observe a rise.
+
+114
+00:11:34,620 --> 00:11:37,340
+Let's see where the peak will be for this frequency range.
+
+115
+00:11:42,060 --> 00:11:43,020
+Our peak
+
+116
+00:11:47,180 --> 00:11:51,180
+corresponds to 1.5 MHz.
+
+117
+00:11:52,660 --> 00:11:56,220
+Our measurements using the neon lamp were remarkably accurate.
+
+118
+00:11:57,700 --> 00:12:02,820
+During those tests, a frequency of 1480 kHz was found.
+
+119
+00:12:03,800 --> 00:12:06,660
+Now, I'll move the marker so we can check the frequency.
+
+120
+00:12:12,590 --> 00:12:13,890
+Here is the frequency.
+
+121
+00:12:15,150 --> 00:12:17,690
+We see that the marker has moved to the top.
+
+122
+00:12:18,230 --> 00:12:21,570
+And there it is, matching 1500 kHz.
+
+123
+00:12:23,270 --> 00:12:30,750
+Meanwhile, if we go back to our Tesla transformer, at this frequency, as you remember, the neon lamp glows in the center.
+
+124
+00:12:33,750 --> 00:12:48,940
+Now, I'll bump up the voltage slightly to get it to light up because, for a half-wave distribution, I just added literally 4 volts, and that was already enough for the neon bulb to light up.
+
+125
+00:12:50,020 --> 00:12:55,700
+Because a quarter-wave signal is higher in terms of voltage antinode peak than a half-wave distribution.
+
+126
+00:13:04,000 --> 00:13:07,300
+What interesting things can we notice on the spectrum analyzer?
+
+127
+00:13:11,660 --> 00:13:14,220
+We can see that the following frequencies appear.
+
+128
+00:13:15,280 --> 00:13:17,580
+There they are, the spectral peaks showing up.
+
+129
+00:13:18,380 --> 00:13:22,260
+And this peak bouncing up here is our 500 kHz frequency.
+
+130
+00:13:23,440 --> 00:13:34,120
+In other words, looking at the frequency range of our Tesla transformer, when we set it to a half-wave, the 500 kHz frequency and subsequent frequencies are also excited.
+
+131
+00:13:35,200 --> 00:13:39,240
+Now I will sweep through the frequencies and we'll record its frequency response.
+
+132
+00:13:41,220 --> 00:13:42,220
+Let's move on.
+
+133
+00:13:43,840 --> 00:13:46,460
+So, I will keep stepping by 10 kHz.
+
+134
+00:13:55,030 --> 00:13:57,590
+Note the grid squares where the next peak was.
+
+135
+00:13:58,890 --> 00:14:02,290
+And at the next peak, we'll see an increase in amplitude.
+
+136
+00:14:02,290 --> 00:14:05,430
+There goes the amplitude, starting to rise.
+
+137
+00:14:07,050 --> 00:14:08,010
+Here is its peak.
+
+138
+00:14:10,570 --> 00:14:15,810
+The frequency on the lab signal generator is 2,990 kHz.
+
+139
+00:14:19,940 --> 00:14:21,360
+Let's check the frequency.
+
+140
+00:14:27,070 --> 00:14:28,470
+The peak has shifted.
+
+141
+00:14:30,590 --> 00:14:37,290
+And we see the frequency is 2,990 kHz, continuing up the frequency range.
+
+142
+00:14:37,290 --> 00:14:38,150
+And
+
+143
+00:14:45,660 --> 00:14:47,900
+here we see the peak growing.
+
+144
+00:14:49,080 --> 00:14:50,860
+The next frequency is
+
+145
+00:14:56,610 --> 00:14:57,830
+3840 kHz.
+
+146
+00:15:06,700 --> 00:15:08,060
+Let's see if it matches.
+
+147
+00:15:11,780 --> 00:15:12,960
+Everything matches.
+
+148
+00:15:14,080 --> 00:15:14,670
+3,840.
+
+149
+00:15:16,660 --> 00:15:20,220
+Now we fully know the frequency series of this Tesla transformer.
+
+150
+00:15:21,080 --> 00:15:23,240
+Within the frequencies we can actually work with.
+
+151
+00:15:24,100 --> 00:15:31,040
+The whole scale spans from a starting 100 kHz up to a 5 MHz band, where we capture the spectral series.
+
+152
+00:15:31,700 --> 00:15:38,320
+All the experiments I did with the spectrum analyzer can also be done using an oscilloscope and a laboratory signal generator.
+
+153
+00:15:39,680 --> 00:15:42,760
+It's just that the workflow of the experiment will be different.
+
+154
+00:15:44,100 --> 00:15:53,020
+We move this exact same antenna from the spectrum analyzer over to the oscilloscope, where we hang its probe in the air near the Tesla transformer.
+
+155
+00:15:53,240 --> 00:15:57,980
+And then we vary the frequency on the single turn using the lab signal generator.
+
+156
+00:15:58,840 --> 00:16:06,200
+And we log all the peaks and amplitudes recorded by the oscilloscope as the frequency changes on the lab signal generator.
+
+157
+00:16:08,060 --> 00:16:10,860
+The frequency picture will be exactly the same.
+
+158
+00:16:11,480 --> 00:16:16,420
+It's just that having a spectrum analyzer makes this process far more efficient and faster.
+
+159
+00:16:16,940 --> 00:16:18,120
+That's the only difference.
+
+160
+00:16:19,260 --> 00:16:22,240
+Now we can actually observe the frequency distributions.
+
+161
+00:16:23,240 --> 00:16:27,920
+Quarter, half wave, three quarters, and four quarters, which is a full wave.
+
+162
+00:16:29,040 --> 00:16:32,880
+These are the frequencies we can still realistically work with using electronics.
+
+163
+00:16:34,100 --> 00:16:36,960
+We can see that they do not conform to basic math.
+
+164
+00:16:38,320 --> 00:16:46,180
+For instance, if we determined the full wavelength mathematically from the quarter wave, we would multiply 500 kHz by 4.
+
+165
+00:16:46,640 --> 00:16:48,700
+It should correspond to 2 MHz.
+
+166
+00:16:49,440 --> 00:16:51,560
+But look at what frequency we get in reality.
+
+167
+00:16:53,240 --> 00:16:56,240
+Therefore, I don't recommend relying strictly on math.
+
+168
+00:16:57,100 --> 00:17:01,320
+So in this case, we cross off that question about how the person calculated it.
+
+169
+00:17:03,120 --> 00:17:05,640
+Now, the core of the physical phenomenon.
+
+170
+00:17:06,300 --> 00:17:09,760
+Why does this interesting anomaly happen with the frequency distribution?
+
+171
+00:17:11,900 --> 00:17:17,100
+The fact is, these effects manifest very prominently in resonant systems.
+
+172
+00:17:17,800 --> 00:17:24,160
+In classic systems where wave distribution occurs, they don't behave quite like they do in wave resonators.
+
+173
+00:17:25,460 --> 00:17:27,480
+Velocity factors are applied there too.
+
+174
+00:17:27,940 --> 00:17:30,540
+But in our case, it shows up very distinctly.
+
+175
+00:17:32,280 --> 00:17:36,180
+Let's look at the first case, where the system is set to a quarter wave.
+
+176
+00:17:36,800 --> 00:17:39,840
+The combined system with grounding forms a half wave.
+
+177
+00:17:41,160 --> 00:17:47,540
+Here, the helical wave resonator actually is half the impact compared to when the system is set to a half wave.
+
+178
+00:17:48,400 --> 00:17:55,280
+Meaning, in that second case, a half wave fits inside the coil's helix itself, whereas here it's only a quarter.
+
+179
+00:17:55,940 --> 00:17:58,560
+Thus, its influence increases in this scenario.
+
+180
+00:18:00,120 --> 00:18:02,380
+And an interesting effect is observed.
+
+181
+00:18:02,820 --> 00:18:10,760
+The wave velocity in a helical wave resonator actually increases compared to the velocity of a wave traveling simply through a straight conductor.
+
+182
+00:18:12,100 --> 00:18:15,160
+Paradoxical as it sounds, that's where the intrigue lies.
+
+183
+00:18:16,700 --> 00:18:24,260
+It's also worth noting that the wave distributes not just along the grounding wire, but also within the soil where this ground is connected.
+
+184
+00:18:25,740 --> 00:18:34,000
+Meaning, from the cold end to the end of the wire, the wave effectively propagates not only through this hardware section, but through the ground as well.
+
+185
+00:18:34,580 --> 00:18:36,360
+It all depends on the soil conditions.
+
+186
+00:18:37,860 --> 00:18:45,140
+And so it turns out, as we know, that with an increase in frequency, the physical wavelength in meters shortens.
+
+187
+00:18:45,160 --> 00:18:53,320
+Because of this, in order to pack exactly a half wave into our wire length of the helical wave resonator, we have to raise the frequency.
+
+188
+00:18:54,600 --> 00:18:55,740
+That's when it will fit.
+
+189
+00:18:56,380 --> 00:19:00,240
+We reduce the physical meters and fit it into the length of the coil.
+
+190
+00:19:02,160 --> 00:19:06,800
+Now, a reasonable question arises, or will arise, for the viewers.
+
+191
+00:19:07,460 --> 00:19:10,720
+Why all this dancing around just to switch the coil to a half wave?
+
+192
+00:19:10,720 --> 00:19:17,700
+The fact is, to build a functional system, a half wave oscillator is absolutely mandatory.
+
+193
+00:19:19,240 --> 00:19:22,340
+Without it, you won't get any serious energy output.
+
+194
+00:19:23,100 --> 00:19:27,100
+Therefore, there's no escaping this half wave tuning of the receiving coil.
+
+195
+00:19:28,860 --> 00:19:32,260
+And once again, I'll draw your attention to the design of this coil.
+
+196
+00:19:33,420 --> 00:19:38,660
+It is wound with thick copper wire specifically to eliminate active resistance from it.
+
+197
+00:19:40,240 --> 00:19:42,860
+I will be building my own generator down the road.
+
+198
+00:19:45,380 --> 00:19:49,040
+On that note, good luck with your experiments and all the best.
+
+199
+00:19:49,560 --> 00:19:55,640
+In the next video, which I'll try to shoot as soon as possible, we will address another interesting question that was asked.
+
+200
+00:19:57,400 --> 00:20:00,960
+How does one Tesla transformer affect another through its fields?
+
+201
+00:20:02,360 --> 00:20:04,200
+What kind of distributions occur?
+
+202
+00:20:04,200 --> 00:20:10,780
+How do you create modulation without using a laboratory signal generator and complex electronics?
+
+203
+00:20:11,380 --> 00:20:12,540
+It's going to be interesting.
+

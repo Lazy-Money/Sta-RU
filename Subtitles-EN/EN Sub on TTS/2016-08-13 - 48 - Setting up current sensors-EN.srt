@@ -1,0 +1,420 @@
+1
+00:00:07,900 --> 00:00:09,060
+This is what they look like.
+
+2
+00:00:09,600 --> 00:00:12,460
+This is what it looks like when it's already on the board.
+
+3
+00:00:13,620 --> 00:00:15,480
+For this we buy ferrite rings.
+
+4
+00:00:17,720 --> 00:00:19,900
+Outer diameter is about 20 millimeters.
+
+5
+00:00:21,120 --> 00:00:21,880
+Inner about 10.
+
+6
+00:00:22,500 --> 00:00:24,220
+Can be wider and it will work.
+
+7
+00:00:24,880 --> 00:00:27,880
+Mark 1,500 to 2,000 nanometers.
+
+8
+00:00:30,080 --> 00:00:31,460
+Makes this little spool.
+
+9
+00:00:33,280 --> 00:00:35,300
+The wire is wound onto it.
+
+10
+00:00:36,240 --> 00:00:41,120
+Around 0.35 to 0.45 cross-section will do.
+
+11
+00:00:41,560 --> 00:00:42,420
+Any that's available.
+
+12
+00:00:44,140 --> 00:00:48,220
+And about 120 to 150 turns are wound onto the ring.
+
+13
+00:00:49,220 --> 00:00:50,640
+Two rings are needed for this.
+
+14
+00:00:51,520 --> 00:00:54,320
+Better to buy identical marks, identical size.
+
+15
+00:00:54,800 --> 00:00:57,360
+But if they're not available, you can take different ones.
+
+16
+00:00:58,280 --> 00:01:00,000
+They get adjusted, nothing scary.
+
+17
+00:01:01,700 --> 00:01:04,680
+The circuit is assembled after tuning the push-pull.
+
+18
+00:01:06,360 --> 00:01:07,760
+Series resonant circuit.
+
+19
+00:01:08,720 --> 00:01:10,320
+That is, three to four turns.
+
+20
+00:01:12,820 --> 00:01:13,400
+Capacitor.
+
+21
+00:01:14,400 --> 00:01:15,560
+And sent to the inductor.
+
+22
+00:01:16,700 --> 00:01:20,660
+The cold end of the inductor, that's the one we start winding from.
+
+23
+00:01:21,160 --> 00:01:24,200
+It connects directly to one of the leads of the three turns.
+
+24
+00:01:24,840 --> 00:01:26,800
+Then three turns go to the capacitor.
+
+25
+00:01:28,420 --> 00:01:31,760
+The second plate of the capacitor connects to the hot end.
+
+26
+00:01:32,320 --> 00:01:34,720
+The hot end is marked with red electrical tape.
+
+27
+00:01:35,780 --> 00:01:37,620
+That's the end where the inductor ends.
+
+28
+00:01:39,660 --> 00:01:43,040
+Next, after winding, this ring is put on the hot end.
+
+29
+00:01:44,820 --> 00:01:47,980
+Now currents in the system will be tracked along the hot ends.
+
+30
+00:01:48,720 --> 00:01:50,900
+Both the granade and the inductor itself.
+
+31
+00:01:52,100 --> 00:01:54,580
+What interests us more here is the current phasing.
+
+32
+00:01:55,720 --> 00:01:59,620
+This is an important parameter without which the system won't work.
+
+33
+00:02:00,460 --> 00:02:02,000
+Currents must be spread in phase.
+
+34
+00:02:03,540 --> 00:02:05,080
+For now, about the rings.
+
+35
+00:02:06,560 --> 00:02:08,020
+The system starts.
+
+36
+00:02:10,560 --> 00:02:11,700
+Starting the system.
+
+37
+00:02:15,740 --> 00:02:18,560
+And while we begin tuning the frequency for resonance.
+
+38
+00:02:22,620 --> 00:02:24,370
+This is washed on the oscilloscope.
+
+39
+00:02:25,760 --> 00:02:28,840
+To start, we begin turning the frequency tuning resistor.
+
+40
+00:02:30,640 --> 00:02:34,080
+And find the maximum amplitude of the voltage sine wave.
+
+41
+00:02:35,220 --> 00:02:35,980
+Found it!
+
+42
+00:02:40,030 --> 00:02:41,430
+Adding duty cycle.
+
+43
+00:02:42,850 --> 00:02:47,430
+We see on the voltage sign characteristic spots of strikes from push-pull static.
+
+44
+00:02:49,890 --> 00:02:55,490
+That is, the static from the push-pull transitions into the voltage amplitude on our inductor.
+
+45
+00:02:57,270 --> 00:02:59,910
+We can look at the strike spot in more detail.
+
+46
+00:03:06,150 --> 00:03:09,990
+Strike spot, where the first pulse and subsequent needles hit.
+
+47
+00:03:12,720 --> 00:03:14,700
+We're interested in something else for now.
+
+48
+00:03:15,420 --> 00:03:17,600
+We found the maximum voltage amplitude.
+
+49
+00:03:18,720 --> 00:03:21,460
+Brought the series resonance circuit into resonance.
+
+50
+00:03:24,160 --> 00:03:29,580
+Next, we connect the second oscilloscope probe to one of the initially this-way wound rings.
+
+51
+00:03:31,120 --> 00:03:35,060
+In this case, I'm connecting the one that's already mounted on my board.
+
+52
+00:03:36,800 --> 00:03:38,080
+Turning on the circuit.
+
+53
+00:03:41,710 --> 00:03:43,150
+And we see this picture.
+
+54
+00:03:44,050 --> 00:03:51,290
+In a series resonance circuit, the current should lag the voltage by exactly 90 degrees when the circuit is tuned to resonance.
+
+55
+00:03:52,750 --> 00:03:55,410
+How is this achieved with the current sensor to see?
+
+56
+00:03:56,730 --> 00:04:00,090
+On this ring, you pick this resistor that's in parallel with its output.
+
+57
+00:04:03,030 --> 00:04:07,350
+It's selected until the current phase shifts cleanly to 90 degrees.
+
+58
+00:04:08,430 --> 00:04:21,530
+Further increase or decrease of the resistor value isn't advisable because, say, if the resistor value decreases and the current phase reached 90 degrees, the signal amplitude will fall and,
+
+59
+00:04:22,630 --> 00:04:25,590
+accordingly, the current sensor sensitivity will drop.
+
+60
+00:04:26,550 --> 00:04:32,290
+When we've tuned the first current sensor, the probe is now sitting on it and got this offset picture.
+
+61
+00:04:34,690 --> 00:04:41,570
+If your picture, by the way, ends up showing current leading by 90 degrees, that means the probe is connected wrong.
+
+62
+00:04:42,350 --> 00:04:45,030
+Here the common and the probe itself need to be swapped.
+
+63
+00:04:46,010 --> 00:04:51,690
+In this case, I already have a marked resistor where the probe connects, that is, the oscilloscope common.
+
+64
+00:04:53,530 --> 00:04:56,750
+And I know that the probe itself connects to the unmarked one.
+
+65
+00:04:58,430 --> 00:05:05,010
+After the first ring finds the shift, an arrow is drawn on its backside, showing how the hot wire passed.
+
+66
+00:05:05,810 --> 00:05:09,050
+This must be done so the phasing doesn't get knocked off later.
+
+67
+00:05:09,910 --> 00:05:13,690
+Here it goes from the coil, passes through, and goes to the capacitor.
+
+68
+00:05:14,730 --> 00:05:17,050
+Accordingly, that's why the direction arrow is drawn.
+
+69
+00:05:18,690 --> 00:05:22,890
+The resistors must be non-wire wound and of at least two watts rating.
+
+70
+00:05:23,210 --> 00:05:27,690
+They get noticeably hot, so better to put two of 2W in series.
+
+71
+00:05:28,070 --> 00:05:31,730
+Select them so you don't have resistors burning or burned fingers.
+
+72
+00:05:32,370 --> 00:05:35,790
+Right now the approximate temperature on them is about 60 degrees.
+
+73
+00:05:37,070 --> 00:05:40,950
+Next, the second current ring is hooked up and it's tuned to the first.
+
+74
+00:05:43,090 --> 00:05:44,230
+Now I'll move it.
+
+75
+00:05:45,370 --> 00:05:49,530
+The yellow oscilloscope channel for us already shows the voltage in this case.
+
+76
+00:05:49,910 --> 00:05:51,130
+We don't need this anymore.
+
+77
+00:05:51,770 --> 00:05:53,470
+We'll tune by the first tuned ring.
+
+78
+00:05:55,610 --> 00:05:56,950
+Move the probe to it.
+
+79
+00:06:02,380 --> 00:06:05,000
+And the common also moves to its output.
+
+80
+00:06:11,290 --> 00:06:12,350
+Adjusting the amplitude.
+
+81
+00:06:15,500 --> 00:06:16,200
+First channel.
+
+82
+00:06:20,420 --> 00:06:20,860
+Also.
+
+83
+00:06:22,460 --> 00:06:23,800
+And here's what we see.
+
+84
+00:06:25,140 --> 00:06:26,820
+Now at this moment they're tuned.
+
+85
+00:06:27,980 --> 00:06:31,460
+You can see they are, and the phasing matches and the amplitude.
+
+86
+00:06:32,180 --> 00:06:39,500
+But you won't get this on the first try unless the rings aren't identical, didn't wind identical turns, and immediately put the resistor.
+
+87
+00:06:40,180 --> 00:06:42,240
+We need to achieve convergence of phases.
+
+88
+00:06:43,640 --> 00:06:48,100
+So that the phases of signals going from the current rings are clearly in phase.
+
+89
+00:06:49,220 --> 00:06:50,500
+There, I select it.
+
+90
+00:06:51,900 --> 00:06:54,120
+Practically the currents are clearly in phase.
+
+91
+00:06:55,140 --> 00:07:00,560
+There's a small difference in amplitude, but actually amplitude difference doesn't interest us much.
+
+92
+00:07:01,500 --> 00:07:03,500
+We're interested in current phases.
+
+93
+00:07:05,360 --> 00:07:08,480
+Select these resistors to match the tuned first ring.
+
+94
+00:07:10,100 --> 00:07:11,860
+Achieve maximum phase convergence.
+
+95
+00:07:13,760 --> 00:07:17,700
+And also draw an arrow on the direction as the hot end passed.
+
+96
+00:07:21,140 --> 00:07:25,280
+Mark the lead and resistor that the oscilloscope common is connected to.
+
+97
+00:07:25,860 --> 00:07:28,400
+And the unmarked one remains where the probe connected.
+
+98
+00:07:28,960 --> 00:07:33,620
+After this tuning, our current sensors are synchronized, calibrated.
+
+99
+00:07:35,000 --> 00:07:36,220
+An arrow is drawn on them.
+
+100
+00:07:37,420 --> 00:07:43,800
+And next we'll be tracking the current phases in the inductor, and the current phases in the coil itself using these rings.
+
+101
+00:07:44,220 --> 00:07:46,620
+The hot end of the grenade that will come out.
+
+102
+00:07:46,880 --> 00:07:50,660
+We put on the second tuned ring and pass it through also along the arrow.
+
+103
+00:07:51,480 --> 00:07:55,140
+And we'll already clearly see the phasing of currents in this system.
+
+104
+00:07:58,600 --> 00:08:00,420
+Such as the tuning of current sensors.
+
+105
+00:08:00,440 --> 00:08:01,570
+Thank you.
+

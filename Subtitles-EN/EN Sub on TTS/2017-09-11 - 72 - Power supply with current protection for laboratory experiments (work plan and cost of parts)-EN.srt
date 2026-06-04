@@ -1,0 +1,776 @@
+1
+00:00:00,800 --> 00:00:04,780
+So, I visited some electronics stores and here's what I managed to pick up.
+
+2
+00:00:07,860 --> 00:00:10,500
+The switch I showed you, I got it a while back.
+
+3
+00:00:10,740 --> 00:00:12,700
+Its price with the handle was 100 rubles.
+
+4
+00:00:15,160 --> 00:00:21,320
+A small ring for the current sensor, ferrite with permeability 2200 with an outer diameter.
+
+5
+00:00:24,240 --> 00:00:27,620
+Of 23 millimeters, costs 80 rubles.
+
+6
+00:00:31,620 --> 00:00:37,360
+A 40 amp relay, here's the marking with 4 outputs, costs 120 rubles.
+
+7
+00:00:41,220 --> 00:00:43,360
+And the converter I made for power.
+
+8
+00:00:47,640 --> 00:00:51,780
+Total cost of the parts was 500 rubles, maybe slightly less.
+
+9
+00:00:53,320 --> 00:00:57,260
+In particular, the core for this converter came to 200 rubles.
+
+10
+00:00:57,260 --> 00:01:04,060
+And the prototyping board another 100, that's already 300 and the rest is in parts.
+
+11
+00:01:09,180 --> 00:01:14,060
+A board, this kind of double-sided board, nothing fancy, 250 rubles.
+
+12
+00:01:16,220 --> 00:01:19,200
+The PWM controller will be mounted on it.
+
+13
+00:01:22,580 --> 00:01:27,500
+Switches, for the switches I took IRFP-064N.
+
+14
+00:01:29,980 --> 00:01:31,120
+Here they are.
+
+15
+00:01:33,020 --> 00:01:35,880
+The cost of one switch is 100 rubles.
+
+16
+00:01:43,520 --> 00:01:46,580
+Further, I pulled this core for the pulse transformer.
+
+17
+00:01:52,480 --> 00:01:56,200
+Available were ones with 63 millimeters outer size.
+
+18
+00:02:00,140 --> 00:02:02,200
+Inner 37 millimeters.
+
+19
+00:02:07,810 --> 00:02:09,890
+25.5 millimeters width.
+
+20
+00:02:11,410 --> 00:02:13,310
+Wall thickness 13 millimeters.
+
+21
+00:02:18,110 --> 00:02:19,210
+500 rubles.
+
+22
+00:02:21,870 --> 00:02:23,930
+Besides this, I picked a heat sink.
+
+23
+00:02:26,650 --> 00:02:32,110
+The plan is for the system to work without airflow, so I took a bigger heat sink for the power switches.
+
+24
+00:02:32,990 --> 00:02:35,450
+Its cost, 150 rubles.
+
+25
+00:02:38,610 --> 00:02:44,730
+The PWM controller itself will be built on a UC3825N chip.
+
+26
+00:02:46,450 --> 00:02:48,990
+Cost of the chip, 85 rubles.
+
+27
+00:02:51,190 --> 00:02:54,330
+For HCPL, 31 20-opto drivers.
+
+28
+00:02:55,690 --> 00:02:58,590
+Cost per piece, 120 rubles.
+
+29
+00:02:58,590 --> 00:03:01,910
+And I
+
+30
+00:03:05,680 --> 00:03:07,920
+picked a box size so everything would look nice.
+
+31
+00:03:11,670 --> 00:03:14,570
+Cost of the box, 190 rubles.
+
+32
+00:03:16,370 --> 00:03:17,430
+Interesting thing.
+
+33
+00:03:19,670 --> 00:03:21,150
+This is what it looks like.
+
+34
+00:03:23,750 --> 00:03:25,070
+Cover fits tightly.
+
+35
+00:03:26,850 --> 00:03:29,170
+Comes with self-tapping screws and plugs.
+
+36
+00:03:30,450 --> 00:03:31,270
+For these holes,
+
+37
+00:03:34,450 --> 00:03:38,350
+Sturdy plastic and very pleasing to see the marking on the inner part.
+
+38
+00:03:41,190 --> 00:03:43,070
+You won't have to apply it yourself.
+
+39
+00:03:43,470 --> 00:03:46,150
+You can already make holes for the wire passage according to it.
+
+40
+00:03:50,350 --> 00:03:51,090
+Nice thing.
+
+41
+00:03:51,690 --> 00:03:54,970
+Besides this, I also took these mounting standoffs that are sold here.
+
+42
+00:04:00,580 --> 00:04:03,700
+Useful, for example, for installing the heat sink.
+
+43
+00:04:05,420 --> 00:04:08,860
+20 mm long, cost 15 rubles.
+
+44
+00:04:10,120 --> 00:04:13,760
+10 mm short ones, cost 10 rubles each.
+
+45
+00:04:21,820 --> 00:04:26,460
+Total, today's costs on this build came to 2,955 rubles.
+
+46
+00:04:29,120 --> 00:04:30,860
+That's everything shown here.
+
+47
+00:04:31,900 --> 00:04:35,140
+As always, I didn't manage without extra expenses.
+
+48
+00:04:35,140 --> 00:04:39,680
+I bought this PTFE film at one of the stores.
+
+49
+00:04:43,020 --> 00:04:45,880
+Insulation we'll use to wrap our high-voltage core.
+
+50
+00:04:47,700 --> 00:04:49,740
+Managed to buy this Soviet-era roll.
+
+51
+00:04:52,480 --> 00:04:56,060
+You can see the GOSD stamp, 500 rubles.
+
+52
+00:04:56,540 --> 00:04:57,720
+Will last me a long time.
+
+53
+00:04:59,420 --> 00:05:02,430
+And besides this, I bought these interesting screwdrivers.
+
+54
+00:05:04,030 --> 00:05:06,890
+The kit cost 800 rubles.
+
+55
+00:05:08,110 --> 00:05:09,450
+Really like the set.
+
+56
+00:05:11,870 --> 00:05:13,270
+Various types of bits.
+
+57
+00:05:14,870 --> 00:05:16,370
+Pretty thin, made neatly.
+
+58
+00:05:17,570 --> 00:05:19,090
+Plus sockets for small nuts.
+
+59
+00:05:20,890 --> 00:05:22,650
+Just what you need for fastening.
+
+60
+00:05:24,650 --> 00:05:26,690
+The screwdriver itself opens.
+
+61
+00:05:28,450 --> 00:05:30,070
+I pulled this core from it.
+
+62
+00:05:32,570 --> 00:05:34,450
+Flipping it over, it's faceted.
+
+63
+00:05:35,770 --> 00:05:39,950
+And inside, along the length of the plastic tube, it's also faceted.
+
+64
+00:05:41,150 --> 00:05:43,570
+And this part only serves as a fixator.
+
+65
+00:05:44,230 --> 00:05:47,850
+The force is transmitted through the facet along the length of the screwdriver.
+
+66
+00:05:51,910 --> 00:05:55,870
+And of course I couldn't avoid buying various resistor kits and other things.
+
+67
+00:06:00,390 --> 00:06:02,490
+It worked out, I shopped well today.
+
+68
+00:06:04,250 --> 00:06:05,510
+About 8000 rubles.
+
+69
+00:06:06,970 --> 00:06:08,850
+Hope my wife won't watch this video.
+
+70
+00:06:11,990 --> 00:06:13,650
+And now we can move to the build.
+
+71
+00:06:16,030 --> 00:06:17,110
+So where to start?
+
+72
+00:06:17,710 --> 00:06:21,730
+With about the same operation I did in the store, when I picked the box for this.
+
+73
+00:06:24,110 --> 00:06:25,530
+Box dimensions for us.
+
+74
+00:06:26,050 --> 00:06:27,930
+Length 15.7 cm.
+
+75
+00:06:34,390 --> 00:06:36,370
+Thickness 5.3 cm.
+
+76
+00:06:38,210 --> 00:06:40,150
+And width 9.5 cm.
+
+77
+00:06:43,550 --> 00:06:46,850
+In the store I planned how all the parts would be placed here.
+
+78
+00:06:47,850 --> 00:06:50,310
+So I took this switch and converter with me.
+
+79
+00:06:51,610 --> 00:06:52,830
+So I could lay it out.
+
+80
+00:06:53,930 --> 00:06:55,930
+And here's roughly the layout we'll have.
+
+81
+00:06:58,170 --> 00:06:58,970
+Heat sink.
+
+82
+00:06:59,910 --> 00:07:02,770
+The heat sink is 6.3 cm wide.
+
+83
+00:07:06,680 --> 00:07:08,040
+Length 10 cm.
+
+84
+00:07:08,680 --> 00:07:11,260
+And rib thickness 3.3 cm.
+
+85
+00:07:14,820 --> 00:07:16,700
+These are the dimensions we care about.
+
+86
+00:07:18,080 --> 00:07:20,860
+The switches will be placed like this on this heat sink.
+
+87
+00:07:24,700 --> 00:07:29,720
+If you place them exactly this way, it's very convenient to make connections for the midpoints.
+
+88
+00:07:31,420 --> 00:07:35,260
+That's the source of one transistor connected to the drain of another.
+
+89
+00:07:37,420 --> 00:07:41,040
+It's convenient that these leads can be bent up and you connect to them.
+
+90
+00:07:42,740 --> 00:07:46,520
+And it's also convenient to bring power to the switches with this layout.
+
+91
+00:07:48,320 --> 00:07:50,700
+That is, by plus and by minus.
+
+92
+00:07:51,240 --> 00:07:51,820
+Middle leads.
+
+93
+00:07:52,800 --> 00:07:54,800
+This connects two switches by plus.
+
+94
+00:07:58,750 --> 00:08:00,330
+Bend up, pass a wire.
+
+95
+00:08:01,410 --> 00:08:03,830
+And the lead far right, counting left to right.
+
+96
+00:08:04,250 --> 00:08:06,050
+And this pair will be connected to minus.
+
+97
+00:08:11,540 --> 00:08:14,280
+I also picked the board so it would fit in this box.
+
+98
+00:08:16,080 --> 00:08:17,860
+And it fits very conveniently.
+
+99
+00:08:18,360 --> 00:08:19,820
+The board clearly goes in here.
+
+100
+00:08:21,140 --> 00:08:24,000
+You can see it doesn't even move thanks to two stop strips.
+
+101
+00:08:28,860 --> 00:08:34,900
+The idea is that the leads from the transistors will pass through this plastic and exit directly into the board.
+
+102
+00:08:38,320 --> 00:08:41,180
+This way we fulfill the rules for power electronics.
+
+103
+00:08:42,880 --> 00:08:46,440
+The drivers will be located as close as possible to the switches.
+
+104
+00:08:48,120 --> 00:08:50,780
+To minimize pickup on them and make for quality control.
+
+105
+00:08:53,080 --> 00:08:56,200
+So you need to calculate the transistor placement accordingly.
+
+106
+00:08:57,540 --> 00:08:58,400
+Here roughly.
+
+107
+00:08:58,880 --> 00:09:01,140
+If you look, their leads exit at these points.
+
+108
+00:09:02,480 --> 00:09:07,140
+And there's enough distance below them to place the optical drivers in the corners of the board.
+
+109
+00:09:11,430 --> 00:09:12,970
+I plan to do it this way.
+
+110
+00:09:15,150 --> 00:09:17,590
+The drivers themselves will go in the corners.
+
+111
+00:09:18,670 --> 00:09:21,330
+And before them the transistor legs come out.
+
+112
+00:09:22,390 --> 00:09:25,270
+Both the drain and the gate before each driver.
+
+113
+00:09:26,010 --> 00:09:27,790
+The zener diodes will also go here.
+
+114
+00:09:28,910 --> 00:09:30,650
+A resistor discharge chain.
+
+115
+00:09:31,970 --> 00:09:33,090
+Limiting resistor.
+
+116
+00:09:33,890 --> 00:09:36,570
+That is, calculating roughly so it's convenient.
+
+117
+00:09:37,170 --> 00:09:39,370
+And the PWM controller board itself.
+
+118
+00:09:39,830 --> 00:09:42,410
+That is, the controller chip will be in the middle.
+
+119
+00:09:43,830 --> 00:09:46,850
+And the support components to the left and right of it.
+
+120
+00:09:48,470 --> 00:09:51,210
+The necessary RC chains for its operation.
+
+121
+00:09:56,480 --> 00:09:57,880
+Now about the inner part.
+
+122
+00:10:01,220 --> 00:10:02,680
+Inside, the switch fits.
+
+123
+00:10:04,200 --> 00:10:08,220
+By dimensions I check that it fits, if you bring its handle out from this side.
+
+124
+00:10:10,360 --> 00:10:11,660
+That's how it'll be placed.
+
+125
+00:10:12,380 --> 00:10:13,380
+Here are its dimensions.
+
+126
+00:10:14,120 --> 00:10:15,280
+It fits by height.
+
+127
+00:10:15,620 --> 00:10:16,260
+Hides nicely.
+
+128
+00:10:17,540 --> 00:10:19,980
+Now the power converter will be placed like this.
+
+129
+00:10:24,650 --> 00:10:28,990
+You can clearly see that when the switch is in place, it won't interfere with it.
+
+130
+00:10:29,970 --> 00:10:31,970
+Further, the relay will go here.
+
+131
+00:10:35,250 --> 00:10:38,030
+And here, at this point, will be the board.
+
+132
+00:10:40,690 --> 00:10:42,190
+It'll be placed like this.
+
+133
+00:10:44,390 --> 00:10:46,070
+But there's still space under it.
+
+134
+00:10:46,550 --> 00:10:49,130
+I think I'll allocate this space to the output part.
+
+135
+00:10:52,490 --> 00:10:56,150
+For the diode bridge and caps, plus the smoothing choke.
+
+136
+00:10:56,890 --> 00:10:57,910
+There's enough space.
+
+137
+00:10:59,150 --> 00:11:01,910
+Turns out the transformer doesn't fit in the box.
+
+138
+00:11:03,870 --> 00:11:06,170
+So I decided to place it on top of the build.
+
+139
+00:11:12,940 --> 00:11:16,060
+The heat sink with the switches will be located like this.
+
+140
+00:11:19,100 --> 00:11:21,260
+And the power transformer goes here.
+
+141
+00:11:23,640 --> 00:11:27,160
+I believe, if you wind it nicely, it'll be quite cute.
+
+142
+00:11:27,800 --> 00:11:28,460
+That's the build.
+
+143
+00:11:29,240 --> 00:11:30,480
+Power wires will come out here.
+
+144
+00:11:31,620 --> 00:11:33,540
+The output will also be here.
+
+145
+00:11:34,920 --> 00:11:37,220
+The switch is on this side for easy switching.
+
+146
+00:11:38,600 --> 00:11:41,220
+And the variable resistors at convenient places.
+
+147
+00:11:46,850 --> 00:11:50,870
+For pulse duration regulation and current protection trip regulation.
+
+148
+00:11:53,270 --> 00:11:54,230
+Somewhere here.
+
+149
+00:11:55,390 --> 00:11:57,830
+We'll see by dimensions where it'll be convenient.
+
+150
+00:11:59,130 --> 00:11:59,970
+That's the plan.
+
+151
+00:12:00,830 --> 00:12:02,410
+Now we can move to assembly.
+
+152
+00:12:04,050 --> 00:12:08,290
+I start the assembly with applying markings, dimensions, parts.
+
+153
+00:12:12,570 --> 00:12:15,530
+We need to position the power switches according to the marking.
+
+154
+00:12:21,570 --> 00:12:24,670
+So their leads match the holes on the prototyping board.
+
+155
+00:12:29,860 --> 00:12:32,540
+Any neat work starts with marking, which I did.
+
+156
+00:12:33,320 --> 00:12:38,080
+For this I transferred the heat sink dimensions to the inner surface of the top cover.
+
+157
+00:12:39,760 --> 00:12:42,820
+And per these dimensions installed the prototyping board.
+
+158
+00:12:45,180 --> 00:12:50,600
+I decided to make the factory mounting holes in the prototyping board the fastenings for the heat sink.
+
+159
+00:12:52,160 --> 00:12:54,440
+For this I drilled holes in the top cover.
+
+160
+00:12:57,540 --> 00:13:00,460
+And after that I transferred them to the heat sink surface.
+
+161
+00:13:02,120 --> 00:13:05,340
+If you look, they clearly correspond to these four points.
+
+162
+00:13:07,780 --> 00:13:12,520
+I'll thread mounting standoffs into these points after cutting threads in advance.
+
+163
+00:13:15,640 --> 00:13:17,400
+Which were acquired in advance.
+
+164
+00:13:19,860 --> 00:13:23,680
+And this way the heat sink will be fixed to the surface of the plastic cover.
+
+165
+00:13:28,160 --> 00:13:33,740
+By the way, I recommend drilling and cutting threads in aluminum together with WD-40.
+
+166
+00:13:35,500 --> 00:13:38,120
+The tap goes smoothly without chips and seizures.
+
+167
+00:13:39,100 --> 00:13:41,040
+Otherwise you risk breaking small drills.
+
+168
+00:13:42,520 --> 00:13:46,520
+And worse, the tap may get stuck and removing it will be practically impossible.
+
+169
+00:13:52,930 --> 00:13:55,810
+Next, I formed the FED transistor leads.
+
+170
+00:13:55,810 --> 00:14:00,310
+You can see I extended the gate and source leads with copper wire.
+
+171
+00:14:04,830 --> 00:14:10,210
+The leads through which minus power will be supplied are bent in a ring, with wire threaded through.
+
+172
+00:14:12,730 --> 00:14:16,890
+And the switch that'll get plus power has the same treatment done on the middle lead.
+
+173
+00:14:21,000 --> 00:14:25,260
+By extending these wires, I can freely thread them through the plastic cover.
+
+174
+00:14:29,610 --> 00:14:33,530
+Through these holes that match by dimensions with the marking on the cover.
+
+175
+00:14:36,630 --> 00:14:40,490
+And you can see that on the board I already outlined the points with a marker.
+
+176
+00:14:41,030 --> 00:14:43,710
+These are the exit points of the extended switch legs.
+
+177
+00:14:48,610 --> 00:14:53,290
+To transfer this picture to the heat sink surface, I installed the cover on its top.
+
+178
+00:14:59,370 --> 00:15:01,750
+This was done without mounting standoffs.
+
+179
+00:15:02,390 --> 00:15:03,830
+Fixed in these holes with bolts.
+
+180
+00:15:03,830 --> 00:15:09,590
+And only after this did I make marks for drilling holes and for switch fastening.
+
+181
+00:15:15,070 --> 00:15:17,450
+The work isn't hard, but it requires care.
+
+182
+00:15:19,390 --> 00:15:21,690
+Now we can move to building the power module.
+
+183
+00:15:25,980 --> 00:15:29,860
+We won't manage to make the power module today, we'll deal with it tomorrow.
+
+184
+00:15:31,420 --> 00:15:35,620
+At the end of this video we can assemble it preliminarily, see what we get.
+
+185
+00:15:40,520 --> 00:15:41,860
+How the build will look.
+
+186
+00:15:44,280 --> 00:15:47,520
+For this we fixed the heat sink with mounting standoffs.
+
+187
+00:15:54,720 --> 00:15:57,080
+It'll be solidly fixed on the surface.
+
+188
+00:16:02,200 --> 00:16:05,400
+Also placed the board on the following mounting standoffs.
+
+189
+00:16:12,930 --> 00:16:15,410
+The screwdriver I just bought comes in handy.
+
+190
+00:16:29,290 --> 00:16:30,730
+That's how this thing looks.
+
+191
+00:16:34,270 --> 00:16:35,710
+A pretty solid build.
+
+192
+00:16:45,260 --> 00:16:46,360
+That's all for now.
+
+193
+00:16:48,420 --> 00:16:49,080
+Good mood.
+
+194
+00:16:50,440 --> 00:16:51,580
+Wait for the next video.
+

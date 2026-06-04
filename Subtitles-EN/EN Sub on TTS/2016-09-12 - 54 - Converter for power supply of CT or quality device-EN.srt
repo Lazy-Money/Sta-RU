@@ -1,0 +1,1028 @@
+1
+00:00:00,060 --> 00:00:01,400
+Hi everyone.
+
+2
+00:00:02,560 --> 00:00:06,280
+Today we'll be looking at the power supply for our Tesla in this little rig.
+
+3
+00:00:08,300 --> 00:00:10,260
+Here's the schematic of our converter.
+
+4
+00:00:11,580 --> 00:00:12,920
+What are the requirements for it?
+
+5
+00:00:13,900 --> 00:00:19,080
+The converter is powered from 12 volts, so the system can be started from a single battery.
+
+6
+00:00:21,080 --> 00:00:23,800
+And it has to stably hold the output voltage.
+
+7
+00:00:25,280 --> 00:00:27,580
+For that to happen, we'll need feedback.
+
+8
+00:00:28,980 --> 00:00:31,000
+I'll go into more detail on it now.
+
+9
+00:00:32,400 --> 00:00:33,180
+How it works.
+
+10
+00:00:35,120 --> 00:00:36,800
+Our converter looks like this.
+
+11
+00:00:38,240 --> 00:00:40,280
+Such a little gadget, as you can see.
+
+12
+00:00:42,300 --> 00:00:44,560
+I'll explain part by part what goes where.
+
+13
+00:00:46,200 --> 00:00:48,240
+The layout isn't too complicated.
+
+14
+00:00:49,620 --> 00:00:55,400
+Basically, you can use it not just for powering the Tesla, but also as a normal converter for other purposes.
+
+15
+00:00:55,400 --> 00:00:59,760
+You can easily make one for 220 volts, whatever you need.
+
+16
+00:01:00,680 --> 00:01:04,780
+It all depends on this transformer how many turns you wind on the secondary.
+
+17
+00:01:06,500 --> 00:01:07,880
+Let's go through the schematic.
+
+18
+00:01:09,260 --> 00:01:11,080
+12 volts of power come in.
+
+19
+00:01:12,180 --> 00:01:13,400
+They reach the capacitor.
+
+20
+00:01:14,160 --> 00:01:18,000
+Our capacitor is 3300F, 25 volts.
+
+21
+00:01:19,380 --> 00:01:21,980
+Next, this power is sent to the center tap.
+
+22
+00:01:22,640 --> 00:01:24,760
+Our converter is push-pull type.
+
+23
+00:01:25,980 --> 00:01:28,340
+For low voltage, it's the most efficient option.
+
+24
+00:01:30,080 --> 00:01:33,320
+We have 8 turns per arm going to the secondary winding.
+
+25
+00:01:34,200 --> 00:01:37,560
+Our secondary winding is wound at 75 turns.
+
+26
+00:01:38,720 --> 00:01:40,880
+After every 20 turns, there's a tap.
+
+27
+00:01:41,880 --> 00:01:42,820
+Here are those taps.
+
+28
+00:01:44,780 --> 00:01:46,800
+First, second, and third.
+
+29
+00:01:48,220 --> 00:01:50,800
+So we wound 75 turns total.
+
+30
+00:01:51,980 --> 00:01:52,660
+We use as the core.
+
+31
+00:01:53,600 --> 00:01:55,940
+This kind of ferrite ring, mark 2000.
+
+32
+00:01:58,080 --> 00:01:59,500
+Its dimensions are shown.
+
+33
+00:02:03,020 --> 00:02:08,540
+Hole 16 millimeters, width 8 millimeters, and 33 millimeters outer diameter.
+
+34
+00:02:11,700 --> 00:02:12,460
+That's plenty.
+
+35
+00:02:13,520 --> 00:02:15,080
+There's also a choke used here.
+
+36
+00:02:15,520 --> 00:02:18,120
+There it is on the schematic, made on a small little ring.
+
+37
+00:02:18,680 --> 00:02:20,400
+You can make it on any ring you have.
+
+38
+00:02:22,120 --> 00:02:24,320
+Mark from 1000 to 2000.
+
+39
+00:02:24,700 --> 00:02:25,620
+Any of those will do.
+
+40
+00:02:26,560 --> 00:02:27,540
+What's it for?
+
+41
+00:02:28,720 --> 00:02:31,060
+This output goes to power the Tesla key.
+
+42
+00:02:32,320 --> 00:02:38,160
+So we get sharp voltage transitions here when the switch is operating, plus static potentials show up.
+
+43
+00:02:41,050 --> 00:02:45,770
+And this choke damps those transitions so they don't feed back into our circuit.
+
+44
+00:02:47,410 --> 00:02:54,530
+Before the output, we have a nonpolar bank capacitor, half a microfarad at 400 volts, to damp those spikes.
+
+45
+00:02:56,230 --> 00:03:00,910
+On the board, it's made up of five capacitors of 0.1 F each.
+
+46
+00:03:02,610 --> 00:03:04,210
+And this is the output choke.
+
+47
+00:03:05,630 --> 00:03:07,270
+Let's look at what works and how.
+
+48
+00:03:09,290 --> 00:03:10,890
+We assemble the converter.
+
+49
+00:03:11,390 --> 00:03:16,150
+Nice little chip, UC3825N, in a DIP8 package.
+
+50
+00:03:17,270 --> 00:03:22,610
+The advantage of this design is that the driver is built in, so you don't need an extra chip.
+
+51
+00:03:23,930 --> 00:03:27,370
+It's plenty for driving transistors like these in this little package.
+
+52
+00:03:27,870 --> 00:03:29,410
+I think it's the two, 220.
+
+53
+00:03:33,070 --> 00:03:34,110
+They work great.
+
+54
+00:03:35,950 --> 00:03:39,190
+We've also got discharge resistance of 1K here.
+
+55
+00:03:39,650 --> 00:03:43,930
+Basically all standard stuff, you've seen this kind of wiring in previous videos.
+
+56
+00:03:44,770 --> 00:03:48,190
+You don't need reverse diodes here, no extra wiring.
+
+57
+00:03:48,790 --> 00:03:51,970
+It works great, our circuit doesn't have such high requirements.
+
+58
+00:03:54,110 --> 00:03:56,570
+Wiring's simple, what else is interesting here?
+
+59
+00:04:00,160 --> 00:04:03,500
+Let's move on, I think, to the feedback circuit.
+
+60
+00:04:04,440 --> 00:04:09,800
+Our feedback is built on an optocoupler, the very common PC, 817.
+
+61
+00:04:12,300 --> 00:04:14,720
+We'll zoom in a bit and walk through it.
+
+62
+00:04:22,350 --> 00:04:24,790
+Optocoupler hookup, and we're looking at how it works.
+
+63
+00:04:28,400 --> 00:04:36,680
+We take the supply voltage not from the output capacitor, but from before the choke, before it damps all the spikes from the Tesla key operation.
+
+64
+00:04:41,690 --> 00:04:45,110
+The common minus at the output goes to the diode bridge.
+
+65
+00:04:47,590 --> 00:04:51,850
+The bridge is made from four HER108 diodes in this circuit.
+
+66
+00:04:55,920 --> 00:04:58,240
+Why did I decide to use a diode bridge here?
+
+67
+00:04:59,260 --> 00:05:03,780
+Again, we need stability so the feedback isn't shunted by static spikes.
+
+68
+00:05:04,220 --> 00:05:06,120
+We want all that stuff to drain away.
+
+69
+00:05:07,100 --> 00:05:10,100
+This is really important for this converter to work properly.
+
+70
+00:05:10,100 --> 00:05:16,460
+In ordinary converters you could get away with one or two diodes, but I decided to put a small diode bridge here.
+
+71
+00:05:16,860 --> 00:05:23,980
+So here's what it looks like, four diodes and the capacitor they feed, 3300 pF at 400 V.
+
+72
+00:05:24,600 --> 00:05:29,960
+The potential drops onto that 3300 pF for 100 V cap.
+
+73
+00:05:30,760 --> 00:05:36,320
+With 75 turns wound, this converter gives 130 V at the output.
+
+74
+00:05:36,320 --> 00:05:43,960
+What do we need to do to pick the right feedback so it works properly?
+
+75
+00:05:47,550 --> 00:05:49,090
+Ours is built on a divider.
+
+76
+00:05:50,430 --> 00:05:58,350
+The divider uses a 1kΩ resistor, then a 15kΩ trim pot, which will set the output voltage that the converter holds.
+
+77
+00:06:01,490 --> 00:06:06,130
+Plus one more resistor that you'll need to pick depending on the voltage the Tesla will run at.
+
+78
+00:06:09,590 --> 00:06:11,250
+It's marked with an asterisk.
+
+79
+00:06:11,790 --> 00:06:17,590
+For my specific values, if I'm running 130 V output, this resistor is 100 kΩ.
+
+80
+00:06:19,090 --> 00:06:23,610
+If I'm running 70 V at the output, then it comes out to 43 kΩ.
+
+81
+00:06:26,330 --> 00:06:28,930
+We put a limiting resistor on the optocoupler.
+
+82
+00:06:30,970 --> 00:06:32,210
+Here's how it works.
+
+83
+00:06:32,550 --> 00:06:41,450
+When the output potential reaches a certain value, it goes through the diode bridge, charges the capacitor, and that potential gets divided by the resistor divider.
+
+84
+00:06:43,230 --> 00:06:44,870
+Through that resistor divider.
+
+85
+00:06:45,590 --> 00:06:50,670
+Then, through the limiting resistor, it reaches the LED inside the optocoupler.
+
+86
+00:06:51,590 --> 00:06:57,030
+The LED triggers, physically sending a light signal to the optotransistor's base.
+
+87
+00:06:59,150 --> 00:07:04,850
+The optotransistor opens, and that gives us a signal from its emitter that lands on pin 1 of the chip.
+
+88
+00:07:06,590 --> 00:07:10,330
+Pin 1 on this chip is specifically the voltage feedback input.
+
+89
+00:07:10,810 --> 00:07:11,770
+So what does this chip do?
+
+90
+00:07:16,250 --> 00:07:21,910
+It reduces the signal duty cycle, keeps reducing it until the output potential drops.
+
+91
+00:07:22,530 --> 00:07:24,350
+So the system stays balanced.
+
+92
+00:07:25,330 --> 00:07:26,810
+Why do we pick this resistor?
+
+93
+00:07:27,370 --> 00:07:32,330
+If it's wrong for the voltage you're running, your converter might not trigger at a high enough frequency.
+
+94
+00:07:32,810 --> 00:07:36,430
+You won't see it on the load directly, but on a lamp you'll notice flickering.
+
+95
+00:07:38,430 --> 00:07:40,270
+The lamp will clearly flicker.
+
+96
+00:07:41,910 --> 00:07:44,070
+Which means the resistor isn't picked right.
+
+97
+00:07:44,870 --> 00:07:48,430
+Adjust it until the feedback kicks in and the lamp stops flickering.
+
+98
+00:07:48,810 --> 00:07:51,110
+All of this is much clearer on the oscilloscope.
+
+99
+00:07:51,970 --> 00:07:53,730
+Let's look at how it works next.
+
+100
+00:07:56,490 --> 00:07:58,510
+Important, this diode bridge.
+
+101
+00:07:58,910 --> 00:08:02,570
+Its common minus does not connect to the common minus that powers the chip.
+
+102
+00:08:04,970 --> 00:08:09,730
+It's a separate section that works specifically with the LED in the optocoupler.
+
+103
+00:08:11,050 --> 00:08:12,810
+And here's the output from the converter.
+
+104
+00:08:13,210 --> 00:08:17,590
+The diagram shows the bridge input is built on her five O8 diodes.
+
+105
+00:08:17,590 --> 00:08:21,070
+You can connect the first, second, or third tap.
+
+106
+00:08:21,510 --> 00:08:25,190
+Win more turns and you'll have a fourth tap available for higher voltage.
+
+107
+00:08:25,870 --> 00:08:26,990
+For boosting the voltage.
+
+108
+00:08:29,930 --> 00:08:33,150
+The output minus here doesn't connect to common either.
+
+109
+00:08:33,850 --> 00:08:36,370
+That gives us a circuit with inductive isolation.
+
+110
+00:08:37,610 --> 00:08:40,370
+Our Tesla is isolated from the main circuit.
+
+111
+00:08:40,830 --> 00:08:42,570
+It doesn't affect it with its potential.
+
+112
+00:08:42,570 --> 00:08:46,670
+All the static stuff, the voltage jumps during tuning, etc.
+
+113
+00:08:46,890 --> 00:08:47,850
+stays separate.
+
+114
+00:08:52,850 --> 00:08:53,910
+We've covered that.
+
+115
+00:08:54,210 --> 00:08:56,230
+Now let's look at how it's laid out on the board.
+
+116
+00:08:58,790 --> 00:09:00,010
+What do we see here?
+
+117
+00:09:00,550 --> 00:09:01,850
+Here's the input capacitor.
+
+118
+00:09:02,390 --> 00:09:04,690
+Then the chip itself is powered through a choke.
+
+119
+00:09:05,150 --> 00:09:06,210
+There it is on the schematic.
+
+120
+00:09:06,550 --> 00:09:09,730
+So we can filter out ripples and the chip runs cleanly.
+
+121
+00:09:13,880 --> 00:09:14,660
+For us.
+
+122
+00:09:15,660 --> 00:09:17,620
+Here's the resistor that we change.
+
+123
+00:09:18,060 --> 00:09:20,580
+This is exactly the one marked with the asterisk.
+
+124
+00:09:23,560 --> 00:09:26,460
+The push-pull goes through 10 ohms to the gates.
+
+125
+00:09:28,280 --> 00:09:28,920
+Transistors.
+
+126
+00:09:29,640 --> 00:09:32,620
+I took the transistors out of old computer UPSs.
+
+127
+00:09:34,020 --> 00:09:34,660
+P60NF06.
+
+128
+00:09:36,320 --> 00:09:37,660
+IRF3205 works well too.
+
+129
+00:09:41,960 --> 00:09:43,060
+On the arms.
+
+130
+00:09:44,280 --> 00:09:47,520
+Here's lacquer insulated wire put into heat shrink.
+
+131
+00:09:48,960 --> 00:09:56,340
+The converter itself is wound with PVC insulated wire, 1mm core, 1.5mm with the insulation.
+
+132
+00:09:57,580 --> 00:09:58,920
+What else is interesting?
+
+133
+00:09:59,760 --> 00:10:04,760
+The transformer output goes to the diode bridge and from the bridge to the capacitor.
+
+134
+00:10:06,040 --> 00:10:10,260
+The cap is here, 4700F, 200V.
+
+135
+00:10:11,720 --> 00:10:15,720
+200V was enough for me, because my converter runs at 130V.
+
+136
+00:10:16,240 --> 00:10:24,500
+If you plan on running higher, you pick a bigger capacitor, say with a 50V margin above what the converter and this pulse transformer can produce.
+
+137
+00:10:33,960 --> 00:10:35,380
+What else can cause trouble?
+
+138
+00:10:37,100 --> 00:10:38,060
+This is clear.
+
+139
+00:10:38,780 --> 00:10:44,540
+By the way, the wiring is simple, but if you look closely at this chip you can also add current protection.
+
+140
+00:10:44,540 --> 00:10:47,800
+It goes on pin 9, I believe.
+
+141
+00:10:51,020 --> 00:10:54,320
+Handy chip, you get nice powerful converters out of it.
+
+142
+00:10:54,640 --> 00:10:56,300
+You can even build welding inverters.
+
+143
+00:10:57,280 --> 00:10:58,600
+Really good design choice.
+
+144
+00:11:00,040 --> 00:11:04,020
+Of course, if you go for welding inverters, you'll need proper drivers here.
+
+145
+00:11:04,380 --> 00:11:06,560
+But for these transistors, this is plenty.
+
+146
+00:11:07,680 --> 00:11:09,480
+It all comes out compact and clean.
+
+147
+00:11:10,380 --> 00:11:11,880
+No need for a big heatsink.
+
+148
+00:11:14,720 --> 00:11:16,380
+That covers the main points.
+
+149
+00:11:17,060 --> 00:11:18,240
+Now let's see how it works.
+
+150
+00:11:21,640 --> 00:11:23,520
+Here's how we start tuning this converter.
+
+151
+00:11:27,600 --> 00:11:29,320
+First, we check the connections.
+
+152
+00:11:31,000 --> 00:11:35,980
+Then, without feeding power to the push-pull arms yet, we check the chip's operation.
+
+153
+00:11:37,100 --> 00:11:40,900
+We put the oscilloscope on the gates, relative to the center tap.
+
+154
+00:11:41,640 --> 00:11:44,440
+Check that we have square signals with a pause between them.
+
+155
+00:11:47,180 --> 00:11:53,180
+This 5kΩ resistor sets the maximum duty cycle of the pulses that open the transistors.
+
+156
+00:11:55,820 --> 00:12:01,920
+The resistor on pin 5 is 10kΩ, and the cap is 2200 pF.
+
+157
+00:12:02,820 --> 00:12:04,720
+That's our frequency setting circuit.
+
+158
+00:12:05,540 --> 00:12:06,560
+What do we do with it?
+
+159
+00:12:07,500 --> 00:12:09,600
+Start with a 10kΩ trim pot.
+
+160
+00:12:10,060 --> 00:12:14,780
+After the check, feed power to the push-pull and find this point for your particular core.
+
+161
+00:12:18,570 --> 00:12:24,790
+Sweep the frequency on the chip and watch for the frequency at which your converter has the lowest consumption at idle.
+
+162
+00:12:30,200 --> 00:12:31,980
+That's the frequency you stay at.
+
+163
+00:12:32,680 --> 00:12:36,620
+In my case, for my ferrite, that frequency came out around 65kHz.
+
+164
+00:12:40,560 --> 00:12:45,960
+Yours might be different, but you want to find the frequency where this ferrite core has the lowest losses.
+
+165
+00:12:47,080 --> 00:12:52,820
+That's where most of the core material remagnetizes with minimal resistance to the magnetic field.
+
+166
+00:12:53,920 --> 00:13:02,640
+Then your converter's efficiency is much higher, the transistors and the transformer heat up much less, and the converter has nice characteristics overall.
+
+167
+00:13:04,660 --> 00:13:12,260
+Once you've found that frequency with the trim pot, dolder it, look at how it was connected, and measure the resistance between those contacts.
+
+168
+00:13:17,540 --> 00:13:21,540
+Then solder in a regular resistor of that value, or something close.
+
+169
+00:13:26,230 --> 00:13:27,890
+And that's it, you leave it.
+
+170
+00:13:29,610 --> 00:13:31,970
+It stays in the circuit for further operation.
+
+171
+00:13:32,830 --> 00:13:35,030
+You don't need to adjust the frequency anymore.
+
+172
+00:13:36,390 --> 00:13:40,350
+And the duty cycle trim pot, you can also replace that with a regular resistor.
+
+173
+00:13:43,690 --> 00:13:45,150
+Much cheaper once you're tuned.
+
+174
+00:13:46,830 --> 00:13:48,930
+Okay, let's see how the thing works.
+
+175
+00:13:52,480 --> 00:13:55,360
+By the way, the converter turns out pretty powerful.
+
+176
+00:13:56,320 --> 00:13:58,880
+Right now I've got a 300W lamp on the output.
+
+177
+00:13:59,320 --> 00:14:00,000
+Let's start it up.
+
+178
+00:14:03,810 --> 00:14:06,070
+We see 47V on the lamp.
+
+179
+00:14:08,070 --> 00:14:10,330
+I'm using the first tap for the schematic.
+
+180
+00:14:12,690 --> 00:14:15,170
+So on the first tap, I get about 70V.
+
+181
+00:14:16,930 --> 00:14:20,630
+Right now the trim pot is set to limit at about 50V.
+
+182
+00:14:22,050 --> 00:14:23,430
+I unscrew the lamp.
+
+183
+00:14:25,050 --> 00:14:28,590
+We see our converter stably holds 50.5V at the output.
+
+184
+00:14:29,810 --> 00:14:32,710
+When the load is connected, there's a tiny sag.
+
+185
+00:14:34,470 --> 00:14:35,830
+That's a serious load.
+
+186
+00:14:37,310 --> 00:14:40,890
+I even hooked up two 300W lamps to it as a test.
+
+187
+00:14:40,890 --> 00:14:45,090
+And if you're curious, consumption right now is 3A at 12.5V.
+
+188
+00:14:50,320 --> 00:14:52,260
+Here are the oscilloscope traces.
+
+189
+00:14:52,980 --> 00:14:55,280
+You can clearly see how the feedback is working.
+
+190
+00:14:58,440 --> 00:15:00,460
+Let's hit pause and look at this moment.
+
+191
+00:15:01,220 --> 00:15:08,000
+You can see the signals from the chip don't overlap during dead time, but the duty cycle keeps dropping while feedback is working.
+
+192
+00:15:09,840 --> 00:15:18,000
+We see that when the voltage dropped, duty cycle goes up, voltage rises, and the chip limits the duty cycle again on the channels.
+
+193
+00:15:19,500 --> 00:15:21,400
+You can see that process clearly.
+
+194
+00:15:21,840 --> 00:15:24,460
+It runs continuously in this balanced mode.
+
+195
+00:15:25,620 --> 00:15:27,020
+This is the signal you should get.
+
+196
+00:15:28,620 --> 00:15:29,960
+Interesting jumping pattern.
+
+197
+00:15:31,280 --> 00:15:32,580
+That's how feedback works.
+
+198
+00:15:33,140 --> 00:15:34,700
+Now I'll remove the load.
+
+199
+00:15:37,860 --> 00:15:38,500
+Watch.
+
+200
+00:15:39,460 --> 00:15:45,760
+I removed the load and the converter switched to pure voltage maintenance mode, holding 50V at the output.
+
+201
+00:15:46,740 --> 00:15:49,420
+The duty cycle is at its minimum for those losses.
+
+202
+00:15:51,740 --> 00:15:52,820
+Let's look at how it works.
+
+203
+00:15:54,120 --> 00:16:00,820
+That's exactly what the feedback is for, to hold steady voltage with minimum consumption in this chip's operating mode.
+
+204
+00:16:04,790 --> 00:16:09,150
+0.03A is plenty for maintaining 50V at idle for this converter.
+
+205
+00:16:12,330 --> 00:16:14,950
+The Tesla obviously shouldn't draw that much.
+
+206
+00:16:17,090 --> 00:16:20,290
+Testing this converter is basically a stress test for it.
+
+207
+00:16:22,070 --> 00:16:24,550
+300W just to confirm everything works.
+
+208
+00:16:26,650 --> 00:16:28,970
+I also tested it at 130V.
+
+209
+00:16:29,870 --> 00:16:37,590
+With this lamp, there's a power sag down to about 125V, but on a 25W lamp, it holds perfectly steady.
+
+210
+00:16:38,930 --> 00:16:42,110
+So you can dial in whatever voltage you want for this converter.
+
+211
+00:16:45,380 --> 00:16:50,340
+I'll take the 300W off and now we'll see how the feedback kicks in.
+
+212
+00:16:52,920 --> 00:16:53,560
+Oscilloscope.
+
+213
+00:16:55,700 --> 00:16:56,860
+There's our signal.
+
+214
+00:16:59,140 --> 00:17:00,280
+At peak duty cycle.
+
+215
+00:17:01,960 --> 00:17:04,220
+Screwing in a 25W lamp.
+
+216
+00:17:06,280 --> 00:17:07,520
+Consumption starts now.
+
+217
+00:17:09,340 --> 00:17:10,540
+The lamps lit up a bit.
+
+218
+00:17:12,480 --> 00:17:15,940
+And the chip switched into a pulsating duty cycle mode.
+
+219
+00:17:22,580 --> 00:17:25,660
+You can see the duty cycle being chopped into bursts.
+
+220
+00:17:30,710 --> 00:17:36,390
+So the chip works in bursts, with the duty cycle within each burst regulated automatically.
+
+221
+00:17:37,950 --> 00:17:39,530
+Really nice operating mode.
+
+222
+00:17:43,610 --> 00:17:44,670
+One more thing.
+
+223
+00:17:45,450 --> 00:17:48,710
+You want the burst frequency to be as high as possible.
+
+224
+00:17:49,590 --> 00:17:52,570
+That's also set by the trim pot we looked at earlier with the feedback.
+
+225
+00:17:56,660 --> 00:18:03,140
+This resistor is really important for quality operation, so your lamp doesn't blink and there are no sharp transitions.
+
+226
+00:18:08,790 --> 00:18:10,410
+And one more thing to notice.
+
+227
+00:18:12,170 --> 00:18:13,510
+Let's see how this goes.
+
+228
+00:18:15,270 --> 00:18:16,490
+Now the trim pot.
+
+229
+00:18:18,910 --> 00:18:21,930
+The 15kΩ in the feedback, per schematic.
+
+230
+00:18:22,670 --> 00:18:24,410
+How they affect voltage regulation.
+
+231
+00:18:35,980 --> 00:18:39,320
+The voltage drops smoothly as you turn this resistor.
+
+232
+00:18:45,490 --> 00:18:48,350
+And on the chip you can set whatever supply voltage you need.
+
+233
+00:18:53,540 --> 00:18:54,980
+You can see we've come down.
+
+234
+00:18:56,200 --> 00:19:00,340
+From 50 to 33V, you can set any trip point you want.
+
+235
+00:19:02,680 --> 00:19:05,160
+At this mode we have an oscillogram like this.
+
+236
+00:19:14,160 --> 00:19:16,120
+The lamp doesn't appear to be glowing.
+
+237
+00:19:16,760 --> 00:19:18,540
+The voltage is too low for it now.
+
+238
+00:19:28,980 --> 00:19:31,440
+You can see the operation moment clearly.
+
+239
+00:19:33,860 --> 00:19:38,920
+Take the load off and the chip switches to limited consumption with minimum duty cycle.
+
+240
+00:19:43,030 --> 00:19:48,250
+I screw the 300W back in and we see the duty cycle ramping up with the load.
+
+241
+00:19:53,960 --> 00:19:57,500
+Consumption went up too, meaning the converter is fully working.
+
+242
+00:20:00,380 --> 00:20:04,540
+Now, the question, why all this complexity just to power a Tesla?
+
+243
+00:20:07,460 --> 00:20:11,620
+Why does this converter need to have exactly the characteristics shown on the schematic?
+
+244
+00:20:14,300 --> 00:20:15,320
+Here's what's happening.
+
+245
+00:20:16,400 --> 00:20:20,760
+When the Tesla is running on this system, you need to set its operating power point.
+
+246
+00:20:24,420 --> 00:20:26,240
+The system has to stay balanced.
+
+247
+00:20:26,860 --> 00:20:33,740
+If we feed it too much voltage, what happens is the Tesla starts overdriving the process in the resonator itself.
+
+248
+00:20:36,060 --> 00:20:38,720
+On the Grenade we have a current amplitude peak.
+
+249
+00:20:39,500 --> 00:20:42,500
+You'll see a dip instead, it ends up suppressing it.
+
+250
+00:20:44,200 --> 00:20:49,680
+If the voltage is too low, we don't get good interaction and current in the system won't ramp up either.
+
+251
+00:20:54,030 --> 00:20:57,250
+This is done by adjusting the Tesla's supply specifically.
+
+252
+00:20:58,510 --> 00:21:06,990
+And by the way, once you've maxed out what the voltage setting resistor can give you, you can also smoothly trim the maximum duty cycle with this other resistor.
+
+253
+00:21:12,660 --> 00:21:13,940
+The duty cycle limit.
+
+254
+00:21:15,300 --> 00:21:19,060
+This resistor on the chip sets the final width of the duty cycle.
+
+255
+00:21:23,960 --> 00:21:25,720
+You can set whatever you want.
+
+256
+00:21:26,760 --> 00:21:33,660
+If you don't need a really powerful converter, you can set the duty cycle around 35-40% with this resistor.
+
+257
+00:21:37,950 --> 00:21:39,890
+Good luck to everyone building one.
+

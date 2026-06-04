@@ -1,0 +1,496 @@
+1
+00:00:00,000 --> 00:00:00,660
+Hi everyone.
+
+2
+00:00:01,360 --> 00:00:08,840
+In this video, we'll examine the power part of a full bridge scheme for swinging a Tesla transformer inductor in resonance mode.
+
+3
+00:00:10,000 --> 00:00:13,560
+We start with the elements that control the transformer for us.
+
+4
+00:00:14,640 --> 00:00:17,660
+These are two TC4420 drivers.
+
+5
+00:00:18,560 --> 00:00:22,180
+These drivers can work up to 6A in pulse, so they suit us well.
+
+6
+00:00:24,040 --> 00:00:28,760
+And they'll further control the gates not only of IRF840 transistors.
+
+7
+00:00:29,880 --> 00:00:42,700
+Here you can put instead of these transistors any other FET or IGBT transistors with voltage no less than 600 V, well, and corresponding amperages, depending on what tasks you want to pursue further.
+
+8
+00:00:43,820 --> 00:00:52,040
+Also, if you'll change transistors to others, then you'll only need to pick the limiting resistances that go to the side of the FET transistor gate.
+
+9
+00:00:56,600 --> 00:01:01,880
+The bigger the gate capacitance of the transistor chosen by you, the smaller this resistance.
+
+10
+00:01:03,000 --> 00:01:09,220
+Accordingly, the load on these two drivers will be larger and the control system will ultimately have larger consumption.
+
+11
+00:01:10,660 --> 00:01:17,980
+The transformer itself is made on ferrite with permeability 2500 in the form of a pot core from two halves.
+
+12
+00:01:19,280 --> 00:01:20,890
+Dimensions are shown in the picture.
+
+13
+00:01:21,250 --> 00:01:23,210
+This is how the core looks in reality.
+
+14
+00:01:24,830 --> 00:01:32,350
+Two halves of small dimensions that after laying wire inside are fixed with the help of a thread connection tightening directly on the board.
+
+15
+00:01:36,770 --> 00:01:41,950
+Instead of this core, if you don't find such, you can use a ferrite ring with the same permeability.
+
+16
+00:01:44,190 --> 00:01:51,410
+The primary winding is 12.5 turns for us and four secondary windings of 11.5 turns each.
+
+17
+00:01:52,930 --> 00:01:55,790
+The wire by length that went into this winding.
+
+18
+00:01:56,250 --> 00:01:57,510
+We have five windings.
+
+19
+00:01:57,890 --> 00:02:01,630
+Ultimately 60 centimeters of wire went, counting these leads.
+
+20
+00:02:03,650 --> 00:02:05,190
+How the wire is wound.
+
+21
+00:02:05,710 --> 00:02:10,030
+Gathered into a bundle of five parallel wires and wound simultaneously.
+
+22
+00:02:11,090 --> 00:02:15,610
+After winding, choose one of the conductors and do one more additional turn.
+
+23
+00:02:17,390 --> 00:02:22,410
+That is, this will further be our primary winding that has 12.5 turns.
+
+24
+00:02:24,050 --> 00:02:28,910
+The primary winding is swung by our drivers through the isolation transformer.
+
+25
+00:02:30,030 --> 00:02:34,150
+Its capacity is 1.5 F at 250 volts.
+
+26
+00:02:34,830 --> 00:02:38,450
+I marked it as a film capacitor of corresponding dimensions in iron.
+
+27
+00:02:40,130 --> 00:02:41,590
+You'll see it further too.
+
+28
+00:02:42,170 --> 00:02:45,550
+At the driver outputs are two diodes with corresponding inclusion.
+
+29
+00:02:47,170 --> 00:02:55,890
+According to the driver's power, they're called in the scheme like this to smooth spikes that form during work under load of the primary winding of the pulse transformer.
+
+30
+00:02:58,510 --> 00:03:03,410
+The pulses that are supplied to control the drivers have a 180 degree shift.
+
+31
+00:03:04,690 --> 00:03:07,410
+And through the winding, they're directed counter to each other.
+
+32
+00:03:08,070 --> 00:03:12,070
+So on the primary and secondary winding, we'll see a bipolar signal.
+
+33
+00:03:16,370 --> 00:03:23,150
+Controlling such a signal through the pulse transformer, we provide the corresponding operation of the bridge scheme of the inverter.
+
+34
+00:03:24,690 --> 00:03:27,890
+It turns out our transistors work diagonally in pairs.
+
+35
+00:03:29,590 --> 00:03:33,570
+On the scheme, it's visible that I marked the start of windings with dots.
+
+36
+00:03:34,890 --> 00:03:36,550
+During assembly watch this moment.
+
+37
+00:03:37,150 --> 00:03:41,770
+It's very important that your transistors specifically work in pairs diagonally.
+
+38
+00:03:42,470 --> 00:03:43,410
+For example, look.
+
+39
+00:03:44,150 --> 00:03:47,850
+The dot at the start of the winding goes to the gate of one of the keys.
+
+40
+00:03:50,750 --> 00:03:58,950
+Accordingly, the gate of the second key diagonally, if you walk through the scheme, is also connected through a current limiting resistor to the start of the winding.
+
+41
+00:03:59,870 --> 00:04:04,330
+The other pair of these transistor gates is connected to the ends of the windings.
+
+42
+00:04:06,390 --> 00:04:07,450
+Track this moment.
+
+43
+00:04:09,210 --> 00:04:13,610
+The IRF840 transistor is made in a case for through-hole mounting.
+
+44
+00:04:14,730 --> 00:04:15,670
+It has three leads.
+
+45
+00:04:16,050 --> 00:04:18,510
+The leads are counted from left to right accordingly.
+
+46
+00:04:19,210 --> 00:04:21,930
+This will be the first lead, second, and third.
+
+47
+00:04:22,650 --> 00:04:24,850
+The first lead on the scheme is the gate.
+
+48
+00:04:25,830 --> 00:04:26,550
+This dot here.
+
+49
+00:04:27,350 --> 00:04:29,130
+The second lead is the drain.
+
+50
+00:04:29,990 --> 00:04:31,690
+This dot here at the transistor.
+
+51
+00:04:32,870 --> 00:04:34,590
+And the third lead is the source.
+
+52
+00:04:35,450 --> 00:04:37,270
+Accordingly, this lead on the scheme.
+
+53
+00:04:39,250 --> 00:04:43,210
+Parallel to the transistor is a MUR460 diode.
+
+54
+00:04:45,650 --> 00:04:48,050
+It's made in a standard cylindrical case.
+
+55
+00:04:49,630 --> 00:04:54,410
+It serves to short out OIDS spikes during inverter work on inductive load.
+
+56
+00:04:56,790 --> 00:05:04,630
+Under other transistors, if you use more powerful ones, I recommend installing MUR860 diodes already in such a case.
+
+57
+00:05:05,650 --> 00:05:08,730
+They're 8 amp and require installation on a heat sink.
+
+58
+00:05:09,570 --> 00:05:13,710
+That is, installed on the same heat sink where the power key itself is located.
+
+59
+00:05:14,830 --> 00:05:16,310
+In immediate proximity to it.
+
+60
+00:05:17,470 --> 00:05:18,130
+These elements.
+
+61
+00:05:18,530 --> 00:05:20,710
+Zinner's connected counter at 15 volts.
+
+62
+00:05:23,870 --> 00:05:26,250
+Discharge resistance 1.2 comb.
+
+63
+00:05:27,030 --> 00:05:32,950
+And current limiting resistance installed on the board in immediate proximity to the gate of the FET key.
+
+64
+00:05:33,790 --> 00:05:38,710
+The 1.2 comb resistor serves to discharge the gate capacitance of the FET key.
+
+65
+00:05:39,370 --> 00:05:45,890
+Counter connected Zinner's serve to cut spikes that form during pulse commutation of the isolation control transformer.
+
+66
+00:05:47,970 --> 00:05:51,430
+Power to the power part of the bridge is supplied at these points.
+
+67
+00:05:51,870 --> 00:05:52,870
+Marked 1, 2.
+
+68
+00:05:53,650 --> 00:06:00,710
+And here a smoothing accumulator electrolytic capacitor of 470 F at 450 V is also connected.
+
+69
+00:06:01,670 --> 00:06:06,350
+The maximum voltage I recommend supplying at these points is up to 400 V.
+
+70
+00:06:07,750 --> 00:06:11,810
+This system works successfully with 150 W consumption.
+
+71
+00:06:12,210 --> 00:06:15,530
+That's on the order of 300 V half an amp by DC.
+
+72
+00:06:16,430 --> 00:06:18,670
+The system doesn't overheat.
+
+73
+00:06:19,010 --> 00:06:22,290
+The heat sink temperature is in the area of 45 degrees.
+
+74
+00:06:22,830 --> 00:06:28,150
+On the scheme it's visible that I installed a capacitor in series with the Tesla transformer inductor.
+
+75
+00:06:29,790 --> 00:06:32,470
+It's written that it needs to be picked in resonance.
+
+76
+00:06:33,590 --> 00:06:38,850
+I picked this oscillating circuit according to the carrier frequency of the main Tesla transformer.
+
+77
+00:06:39,430 --> 00:06:42,070
+You can also use this converter without this capacitor.
+
+78
+00:06:42,070 --> 00:06:48,730
+Then the Tesla transformer swinging will be done specifically with such bipolar pulses.
+
+79
+00:06:50,410 --> 00:06:55,330
+If a capacitor is used here in the scheme, we can examine the inductor connection.
+
+80
+00:06:57,630 --> 00:07:01,350
+Here to the capacitor the inductor connects with its upper point.
+
+81
+00:07:03,570 --> 00:07:07,970
+Here to this transistor pair, the inductor connects with the lower point.
+
+82
+00:07:08,610 --> 00:07:17,470
+The upper inductor point, if it's wound cylindrically around the Tesla transformer, for you will be the point directed toward the hot end of the Tesla transformer.
+
+83
+00:07:18,270 --> 00:07:21,410
+And the lower point, accordingly, toward the cold end.
+
+84
+00:07:24,030 --> 00:07:30,290
+The compatibility of this scheme is fully compatible with the previous half-bridge converter scheme I gave earlier.
+
+85
+00:07:34,310 --> 00:07:36,690
+How to connect it instead of this power part?
+
+86
+00:07:38,170 --> 00:07:43,310
+These TC4420 driver inputs are connected through a 16-ohm resistor.
+
+87
+00:07:43,910 --> 00:07:47,450
+Accordingly, these points after the TC4093 chip.
+
+88
+00:07:49,290 --> 00:07:50,690
+Pin 11 and pin 10.
+
+89
+00:07:52,230 --> 00:07:58,430
+Power is also done from a DC-DC converter 12 to 400V or a lab block, whoever has what.
+
+90
+00:08:00,050 --> 00:08:04,270
+And this is a separate DC-DC converter, also the same as on this scheme.
+
+91
+00:08:04,690 --> 00:08:06,610
+This is the power for the logic part.
+
+92
+00:08:07,650 --> 00:08:13,730
+And these 16V come to power the drivers that swing the primary winding of the pulse transformer.
+
+93
+00:08:15,950 --> 00:08:18,970
+Overall, the scheme is quite simple, reliable.
+
+94
+00:08:19,870 --> 00:08:25,510
+It mainly excluded the problem with the IR2110 and IR2113 driver.
+
+95
+00:08:27,030 --> 00:08:34,110
+The driver temperature needs to be watched very clearly in that scheme, since the whole scheme would fail from overheating.
+
+96
+00:08:36,190 --> 00:08:42,050
+People had such moments, so it was decided to develop one more scheme that's free of these shortcomings.
+
+97
+00:08:44,410 --> 00:08:51,890
+The half-bridge scheme has the moment that it divides supply voltage in half, and the full-bridge scheme doesn't suffer from such a shortcoming.
+
+98
+00:08:54,110 --> 00:09:00,690
+That is, all the voltage applied at these points is commutated onto the primary winding of the Tesla transformer.
+
+99
+00:09:01,590 --> 00:09:07,170
+If this scheme isn't connected to a Tesla transformer, you can successfully use it for other purposes.
+
+100
+00:09:08,270 --> 00:09:13,830
+For example, get rid of this capacitor, put a corresponding inductor here and make some kind of converter.
+
+101
+00:09:15,630 --> 00:09:22,210
+That is, you can successfully supply rectified mains voltage here and create step-down or step-up converters.
+
+102
+00:09:23,990 --> 00:09:25,830
+Before you is the device board.
+
+103
+00:09:26,430 --> 00:09:29,970
+You see the drivers, control transformer, and film capacitor.
+
+104
+00:09:33,090 --> 00:09:37,070
+All gate components are located directly on the transistor leads.
+
+105
+00:09:37,970 --> 00:09:41,610
+The transistors themselves are located on the heat sink under the board.
+
+106
+00:09:42,770 --> 00:09:48,310
+The power transistor components are also located in the form of surface mount on the transistor legs.
+
+107
+00:09:49,650 --> 00:09:58,370
+And these brought out points are the places where the Tesla transformer inductor or any other primary winding of a power converter will be connected further.
+
+108
+00:10:00,310 --> 00:10:02,750
+As you see, the board is quite simple.
+
+109
+00:10:04,130 --> 00:10:10,310
+The main difficulty here is the moment that the leads of the control transformer need to be connected correctly.
+
+110
+00:10:12,410 --> 00:10:17,030
+Once again, I'll remind, they're connected diagonally according to the control scheme.
+
+111
+00:10:18,310 --> 00:10:20,690
+This is how the bridge power module looks.
+
+112
+00:10:21,870 --> 00:10:30,250
+For IRF840 transistors, parallel to each transistor at its drain and source outputs is a MUR460 diode.
+
+113
+00:10:41,530 --> 00:10:44,630
+Here I additionally put sleeves protecting the leads.
+
+114
+00:10:50,110 --> 00:10:54,150
+Now you can see how the windings are laid inside the control transformer.
+
+115
+00:10:54,670 --> 00:10:58,430
+As you see, they take up all the volume inside the pot core.
+
+116
+00:10:59,970 --> 00:11:06,810
+To lay five conductors in this core, I chose wire with outer diameter by insulation of 0.7 millimeters.
+
+117
+00:11:08,470 --> 00:11:09,810
+Insulation is fluoroplastic.
+
+118
+00:11:10,610 --> 00:11:13,350
+These conductors are made qualitatively from pure copper.
+
+119
+00:11:14,370 --> 00:11:20,250
+Furthermore, fluoroplastic insulation has excellent properties that prevent breakdown of high voltage voltage.
+
+120
+00:11:21,190 --> 00:11:27,130
+This is what we need since large supply voltage potentials are applied to this inverter in our build.
+
+121
+00:11:31,250 --> 00:11:37,090
+And if you use low quality conductors, we risk getting a short circuit inside the control transformer.
+
+122
+00:11:38,430 --> 00:11:41,670
+On this, all the subtleties with this scheme are exhausted.
+
+123
+00:11:42,510 --> 00:11:44,070
+Good mood to everyone!
+
+124
+00:11:44,530 --> 00:11:46,470
+All the best and excellent experiments!
+

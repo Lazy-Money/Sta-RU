@@ -1,0 +1,1000 @@
+1
+00:00:01,090 --> 00:00:02,210
+So another project.
+
+2
+00:00:02,870 --> 00:00:07,090
+We're building an electric lift to replace the ladder up to the second floor.
+
+3
+00:00:08,250 --> 00:00:12,030
+The ladder won't fit by the client's requirements.
+
+4
+00:00:13,230 --> 00:00:16,390
+The spot where it needs to fit is this platform here.
+
+5
+00:00:18,750 --> 00:00:24,610
+The dimensions where it needs to fit are one meter by 68 centimeters.
+
+6
+00:00:26,270 --> 00:00:28,790
+The platform is 65 centimeters.
+
+7
+00:00:30,350 --> 00:00:33,710
+The whole dimension to the railing is 68 centimeters.
+
+8
+00:00:35,070 --> 00:00:35,930
+Previous step.
+
+9
+00:00:37,210 --> 00:00:38,930
+So what are we putting this together from?
+
+10
+00:00:40,490 --> 00:00:43,210
+The main element of the build is this kind of device.
+
+11
+00:00:45,330 --> 00:00:46,730
+Called a chain hoist.
+
+12
+00:00:47,670 --> 00:00:48,930
+For lifting loads.
+
+13
+00:00:50,430 --> 00:00:53,110
+Its lift capacity is about 600 kilograms.
+
+14
+00:00:53,950 --> 00:00:55,570
+Probably pulls more than that.
+
+15
+00:00:57,050 --> 00:00:59,270
+For the build I picked up a metal plate.
+
+16
+00:00:59,650 --> 00:01:00,990
+10 millimeters sheet iron.
+
+17
+00:01:06,060 --> 00:01:07,600
+Then we got some angle iron.
+
+18
+00:01:11,580 --> 00:01:12,760
+63 angle.
+
+19
+00:01:18,290 --> 00:01:18,850
+Roller.
+
+20
+00:01:18,850 --> 00:01:21,930
+And this set of bearing mounted rollers with a plastic shell.
+
+21
+00:01:25,420 --> 00:01:27,880
+Moving on to drawing the supports for the platform.
+
+22
+00:01:30,570 --> 00:01:32,110
+We need to place these rollers.
+
+23
+00:01:35,130 --> 00:01:37,330
+The angle guide will roll between them.
+
+24
+00:01:41,770 --> 00:01:44,550
+The support itself will sit on this plane we drew.
+
+25
+00:01:48,460 --> 00:01:49,400
+This is how it'll look.
+
+26
+00:01:50,100 --> 00:01:50,960
+It'll be on top.
+
+27
+00:01:51,720 --> 00:01:54,300
+The platform itself where the person will stand.
+
+28
+00:01:58,340 --> 00:02:00,260
+The roller guide has this profile.
+
+29
+00:02:02,840 --> 00:02:04,480
+This is how it's welded up.
+
+30
+00:02:05,800 --> 00:02:07,040
+Out of two angles.
+
+31
+00:02:09,480 --> 00:02:11,080
+The length can be anything.
+
+32
+00:02:11,640 --> 00:02:16,740
+In this case, from the bottom of the platform to the top of the floor is 2.80 m.
+
+33
+00:02:19,220 --> 00:02:22,280
+If you want, you can do it for six meters of travel.
+
+34
+00:02:24,000 --> 00:02:26,340
+You just need to weld these spacers in the middle.
+
+35
+00:02:27,920 --> 00:02:29,260
+This part is the wall mount.
+
+36
+00:02:31,380 --> 00:02:34,580
+Holes will be drilled here and mounted with anchor bolts.
+
+37
+00:02:37,040 --> 00:02:40,840
+This is the platform the motor with the traction mechanism attaches to.
+
+38
+00:02:42,940 --> 00:02:44,020
+Welded to the end.
+
+39
+00:02:47,180 --> 00:02:49,560
+A small cutout was made in the platform here.
+
+40
+00:02:50,940 --> 00:02:53,160
+A baseboard runs through here, per the build.
+
+41
+00:02:54,420 --> 00:02:56,620
+The baseboard isn't plastic, it's ceramic.
+
+42
+00:02:57,240 --> 00:02:58,500
+So we had to do this cutout.
+
+43
+00:03:02,210 --> 00:03:04,270
+Now we'll cut supports for the platform.
+
+44
+00:03:06,590 --> 00:03:07,670
+And mount them here.
+
+45
+00:03:08,830 --> 00:03:10,510
+Next we'll show how this whole thing rolls.
+
+46
+00:03:12,590 --> 00:03:14,630
+And we need to design a control circuit.
+
+47
+00:03:16,110 --> 00:03:18,430
+There's an emergency stop button on this one.
+
+48
+00:03:19,490 --> 00:03:21,290
+And a button for down-up movement.
+
+49
+00:03:23,130 --> 00:03:24,530
+We'll apply this in the build.
+
+50
+00:03:25,230 --> 00:03:28,870
+We also need a call button so we can summon the lift down if it's at the top.
+
+51
+00:03:30,970 --> 00:03:32,130
+We'll add that separately.
+
+52
+00:03:32,770 --> 00:03:36,570
+And also install extra power cutoffs in the form of limit switches.
+
+53
+00:03:38,170 --> 00:03:43,030
+When the platform with the person on it reaches the top, the lift should shut off.
+
+54
+00:03:44,230 --> 00:03:48,130
+And likewise on the way down, the lift should automatically shut off too.
+
+55
+00:03:50,230 --> 00:03:51,050
+Here's one.
+
+56
+00:03:53,270 --> 00:03:54,190
+And the second.
+
+57
+00:03:55,090 --> 00:03:56,830
+Now we're marking where the rollers go.
+
+58
+00:03:58,250 --> 00:04:00,010
+Starting with the two rear ones.
+
+59
+00:04:01,410 --> 00:04:03,170
+Drawing a right angle with a square.
+
+60
+00:04:05,850 --> 00:04:12,090
+A spot where the platform's surface is perpendicular to the drilling, with a center punch or dowel nail.
+
+61
+00:04:13,950 --> 00:04:16,570
+Next it'll be drilled with a thin pilot bit.
+
+62
+00:04:18,590 --> 00:04:20,070
+And then drilled out to size.
+
+63
+00:04:24,020 --> 00:04:24,760
+Bolt's red.
+
+64
+00:04:26,680 --> 00:04:28,500
+Here's what it looks like in the workpiece.
+
+65
+00:04:31,350 --> 00:04:33,230
+And here's how it comes out with the rollers.
+
+66
+00:04:33,890 --> 00:04:36,510
+Two on one side, the third from this side.
+
+67
+00:04:37,160 --> 00:04:40,650
+So our workpiece can now freely slide along the angle guide.
+
+68
+00:04:42,170 --> 00:04:43,530
+Our build is mounted.
+
+69
+00:04:44,990 --> 00:04:46,410
+So they roll for us.
+
+70
+00:04:48,770 --> 00:04:49,690
+Like this.
+
+71
+00:04:54,250 --> 00:04:56,850
+We're going to mount the platform on this surface now.
+
+72
+00:05:05,860 --> 00:05:06,880
+Platform installed.
+
+73
+00:05:08,140 --> 00:05:09,600
+So what were we doing here?
+
+74
+00:05:10,540 --> 00:05:14,740
+We were making these cutouts so the platform sits per our requirements.
+
+75
+00:05:14,740 --> 00:05:18,240
+68 centimeters from the wall to the edge of the platform.
+
+76
+00:05:19,220 --> 00:05:20,080
+Held the distance.
+
+77
+00:05:21,800 --> 00:05:24,500
+We tack welded the guide with rollers in place.
+
+78
+00:05:26,760 --> 00:05:28,620
+Tack's visible from all sides.
+
+79
+00:05:30,920 --> 00:05:34,020
+Now we'll take the platform off and do the permanent weld.
+
+80
+00:05:35,880 --> 00:05:38,640
+We need to remove the rollers so they don't get burned.
+
+81
+00:05:39,740 --> 00:05:41,260
+Here's one interesting detail.
+
+82
+00:05:41,760 --> 00:05:44,960
+You can see the edge of the roller sticks out beyond the iron.
+
+83
+00:05:46,220 --> 00:05:52,260
+That's done so when the platform comes down, it lands softly on the lower iron and there's no clanging impact.
+
+84
+00:05:54,000 --> 00:05:55,120
+That's how it all looks.
+
+85
+00:05:55,940 --> 00:05:57,160
+And now a test run.
+
+86
+00:05:59,460 --> 00:06:01,660
+For now we just hook the hook to the center.
+
+87
+00:06:02,920 --> 00:06:04,100
+Let's see how it goes.
+
+88
+00:06:05,940 --> 00:06:06,800
+Off we go.
+
+89
+00:06:09,240 --> 00:06:10,220
+Here's how it works.
+
+90
+00:06:19,870 --> 00:06:21,290
+The platform moves.
+
+91
+00:06:21,850 --> 00:06:24,010
+We still need to install something here on the inside.
+
+92
+00:06:25,150 --> 00:06:28,350
+Spacer rollers in this part so it doesn't shift axially.
+
+93
+00:06:31,580 --> 00:06:33,980
+It'll rest against this part and this one.
+
+94
+00:06:35,740 --> 00:06:36,820
+Interesting build.
+
+95
+00:06:47,100 --> 00:06:49,160
+Platform installed, partially painted.
+
+96
+00:06:50,960 --> 00:06:53,760
+The platform now rolls freely on the rollers.
+
+97
+00:06:56,600 --> 00:06:57,940
+This is how it goes.
+
+98
+00:07:00,060 --> 00:07:01,140
+You can move it.
+
+99
+00:07:01,920 --> 00:07:03,160
+You can see the rollers working.
+
+100
+00:07:04,840 --> 00:07:06,500
+Welded an eye for attaching the cable.
+
+101
+00:07:09,660 --> 00:07:12,100
+Here's what the spacer rollers on the inside look like.
+
+102
+00:07:14,280 --> 00:07:16,980
+They ride on the inner surfaces here and here.
+
+103
+00:07:18,920 --> 00:07:19,780
+So next.
+
+104
+00:07:20,400 --> 00:07:22,840
+Now we made some improvements to the rollers we bought.
+
+105
+00:07:24,640 --> 00:07:25,620
+Added a washer.
+
+106
+00:07:26,960 --> 00:07:28,100
+All of this on bolts.
+
+107
+00:07:29,060 --> 00:07:32,280
+And the bolts with glue so the plastic doesn't wiggle.
+
+108
+00:07:33,260 --> 00:07:34,680
+Now it's solidly fixed.
+
+109
+00:07:35,720 --> 00:07:36,800
+Two bearings here.
+
+110
+00:07:37,420 --> 00:07:41,400
+A machinist cut a groove originally so the plastic doesn't slip sideways.
+
+111
+00:07:44,360 --> 00:07:46,760
+And we also improved two of the rollers.
+
+112
+00:07:48,640 --> 00:07:51,140
+Welded some heavy-duty retaining washers.
+
+113
+00:07:52,520 --> 00:07:54,900
+These are the rollers that go in this spacer area.
+
+114
+00:07:56,380 --> 00:07:58,400
+You can see the oval-shaped hole.
+
+115
+00:07:59,660 --> 00:08:01,340
+The bolt goes into this hole.
+
+116
+00:08:07,740 --> 00:08:10,500
+And so it can move, pressing the roller down.
+
+117
+00:08:12,680 --> 00:08:16,020
+That's how we adjust how tightly the platform is held against wobble.
+
+118
+00:08:17,600 --> 00:08:18,960
+And we also need this later.
+
+119
+00:08:19,460 --> 00:08:24,760
+If the plastic wears slightly over time, we can lift the roller a bit like this and press it harder.
+
+120
+00:08:27,000 --> 00:08:29,880
+For holes like these, we need a wider support.
+
+121
+00:08:30,200 --> 00:08:32,500
+So a washer was welded on with a MIG welder.
+
+122
+00:08:35,730 --> 00:08:39,250
+For the rollers, for these nuts, we got copper washers.
+
+123
+00:08:42,720 --> 00:08:47,920
+Copper is a soft metal, so when the nut tightens, it grips well and the nut can't back off.
+
+124
+00:08:52,030 --> 00:08:53,250
+Little tricks like that.
+
+125
+00:08:54,370 --> 00:09:00,050
+A cutout was made here so that as the cable winds onto the drum, it can move back and forth on the drum.
+
+126
+00:09:06,560 --> 00:09:09,420
+So we have to make sure it doesn't rub against the platform.
+
+127
+00:09:09,820 --> 00:09:11,320
+It has to move like this.
+
+128
+00:09:13,140 --> 00:09:13,980
+Rollers installed.
+
+129
+00:09:14,460 --> 00:09:16,080
+Only the main retainers are left.
+
+130
+00:09:17,540 --> 00:09:18,940
+We're making those out of metal.
+
+131
+00:09:19,360 --> 00:09:20,120
+Here's their profile.
+
+132
+00:09:21,940 --> 00:09:24,100
+For this, we bought a factory roller.
+
+133
+00:09:24,480 --> 00:09:26,400
+It comes with this profile out of the box.
+
+134
+00:09:29,360 --> 00:09:32,040
+Doesn't fit us, you need to bring it down to get sure.
+
+135
+00:09:32,760 --> 00:09:37,980
+Without going to a machinist, or a milling guy, or whoever does this, you can do it at home with a drill.
+
+136
+00:09:41,480 --> 00:09:42,720
+Bolt it through the hole.
+
+137
+00:09:43,160 --> 00:09:45,120
+Tighten this handle, just like so.
+
+138
+00:09:47,260 --> 00:09:49,600
+Start it up, set it, and it rotates.
+
+139
+00:09:52,520 --> 00:09:56,340
+Take a small angle grinder, turn it on, and shave this part off.
+
+140
+00:09:58,750 --> 00:09:59,310
+Be obsessed.
+
+141
+00:10:00,990 --> 00:10:01,950
+Here's how it works.
+
+142
+00:10:03,670 --> 00:10:06,830
+And then bring it to shape with a file and a bit of sandpaper.
+
+143
+00:10:09,760 --> 00:10:13,440
+That way you can easily do it.
+
+144
+00:10:13,980 --> 00:10:14,900
+Here's how it goes.
+
+145
+00:10:34,860 --> 00:10:38,860
+The roller heats up while being worked, so pour water on it periodically.
+
+146
+00:10:49,230 --> 00:10:51,250
+Put the second roller in for machining.
+
+147
+00:10:52,990 --> 00:10:54,190
+Here's the first one.
+
+148
+00:10:54,510 --> 00:10:57,330
+You can see the diameter of this part has been reduced too.
+
+149
+00:10:58,370 --> 00:10:59,870
+We don't need such a big roller.
+
+150
+00:11:01,430 --> 00:11:02,770
+And here you can see the chamfer.
+
+151
+00:11:05,350 --> 00:11:06,530
+Some metal removed.
+
+152
+00:11:06,970 --> 00:11:12,850
+Done specifically because the guide is painted so that this edge doesn't slice the paint and fray it.
+
+153
+00:11:13,810 --> 00:11:15,730
+That's why we made this small chamfer.
+
+154
+00:11:17,830 --> 00:11:19,290
+That's how the roller came out.
+
+155
+00:11:20,550 --> 00:11:23,010
+Now we'll machine this surface the same way.
+
+156
+00:11:25,090 --> 00:11:27,010
+Now you can see how it goes on the lift.
+
+157
+00:11:29,810 --> 00:11:30,610
+Here's the hole.
+
+158
+00:11:31,910 --> 00:11:32,830
+Here it goes in.
+
+159
+00:11:34,010 --> 00:11:35,590
+Just need to mount it on the guide.
+
+160
+00:11:37,210 --> 00:11:38,850
+And this roller will engage here.
+
+161
+00:11:39,770 --> 00:11:40,690
+It fits well here.
+
+162
+00:11:43,070 --> 00:11:45,970
+We tried using the soft surfaced rollers in this spot.
+
+163
+00:11:49,470 --> 00:11:53,810
+But they turned out not to be a good fit because this is the highest loaded spot.
+
+164
+00:11:54,630 --> 00:11:59,210
+It carries the full support of the platform and all the weight applied to the lift.
+
+165
+00:11:59,870 --> 00:12:01,970
+So we decided to swap to these metal ones.
+
+166
+00:12:04,690 --> 00:12:05,570
+Better suited.
+
+167
+00:12:06,450 --> 00:12:09,270
+And in other places, those soft rollers work great.
+
+168
+00:12:10,390 --> 00:12:11,270
+Rubber doesn't deform.
+
+169
+00:12:12,910 --> 00:12:13,970
+Works really well.
+
+170
+00:12:16,470 --> 00:12:17,970
+And we've already ridden on it.
+
+171
+00:12:18,850 --> 00:12:19,470
+Pulls great.
+
+172
+00:12:19,830 --> 00:12:21,710
+This build can lift even two people.
+
+173
+00:12:25,510 --> 00:12:27,190
+But it needs a little fine-tuning.
+
+174
+00:12:28,750 --> 00:12:30,130
+Here's the build that came out.
+
+175
+00:12:32,210 --> 00:12:33,210
+Looks like this.
+
+176
+00:12:34,670 --> 00:12:35,550
+There's a roller.
+
+177
+00:12:35,950 --> 00:12:38,730
+It'll also be covered up so fingers can't get in there.
+
+178
+00:12:41,590 --> 00:12:43,210
+And here it travels vertically.
+
+179
+00:12:57,260 --> 00:12:59,740
+The opening from the system up went to max.
+
+180
+00:13:17,360 --> 00:13:18,540
+Now we'll get on it.
+
+181
+00:13:21,180 --> 00:13:21,940
+Let's go.
+
+182
+00:13:28,910 --> 00:13:31,430
+As you can see, lifts me with no problem.
+
+183
+00:13:32,990 --> 00:13:35,750
+I'm almost 100 kilograms, not small.
+
+184
+00:13:39,070 --> 00:13:40,630
+We tried riding two up.
+
+185
+00:13:40,830 --> 00:13:41,950
+It pulls both of us.
+
+186
+00:13:43,210 --> 00:13:45,090
+But the motor strains, of course.
+
+187
+00:13:46,170 --> 00:13:47,690
+For one person, it's just right.
+
+188
+00:13:47,690 --> 00:13:47,870
+Oh,
+
+189
+00:13:55,930 --> 00:13:57,130
+quite a contraption.
+
+190
+00:13:58,630 --> 00:13:59,250
+Installed.
+
+191
+00:14:00,030 --> 00:14:01,130
+Our lift is installed.
+
+192
+00:14:04,040 --> 00:14:06,820
+Here's an interesting system in the attic that we got.
+
+193
+00:14:08,980 --> 00:14:10,060
+What did we do?
+
+194
+00:14:10,760 --> 00:14:14,020
+The wiring and connections kept exactly as is.
+
+195
+00:14:14,700 --> 00:14:18,080
+We installed a remote in case we're lifting cargo on the lift.
+
+196
+00:14:19,200 --> 00:14:20,740
+The system also works.
+
+197
+00:14:22,120 --> 00:14:24,300
+You can move up and down with the button.
+
+198
+00:14:26,000 --> 00:14:27,280
+This is the backup control.
+
+199
+00:14:28,920 --> 00:14:32,380
+Main control is done with the buttons on the lift platform itself.
+
+200
+00:14:33,120 --> 00:14:34,300
+One button moves up.
+
+201
+00:14:34,540 --> 00:14:35,640
+Another button moves down.
+
+202
+00:14:38,560 --> 00:14:41,920
+The lift is operated with the feet by pressing this button.
+
+203
+00:14:42,840 --> 00:14:45,160
+While the button is held, the platform moves.
+
+204
+00:14:46,560 --> 00:14:51,340
+There are end switches that cut the system the moment the platform reaches the required level.
+
+205
+00:14:52,720 --> 00:14:54,860
+Here it stops at this adjustable stop.
+
+206
+00:14:56,000 --> 00:14:57,760
+And the lift platform stops.
+
+207
+00:14:59,360 --> 00:15:02,400
+There's an end-of-travel cutoff below the platform too.
+
+208
+00:15:04,000 --> 00:15:07,720
+On the platform where the motor itself sits, using this button.
+
+209
+00:15:09,260 --> 00:15:12,140
+You can also see the two-button control system here.
+
+210
+00:15:17,490 --> 00:15:19,970
+One button is down, the other is up.
+
+211
+00:15:22,150 --> 00:15:24,530
+We also added a call button for convenience.
+
+212
+00:15:25,770 --> 00:15:29,650
+Say if a person went upstairs and the platform is in the upper position.
+
+213
+00:15:30,710 --> 00:15:35,170
+Then if someone else needs to go up, there's a call button to bring the lift back down.
+
+214
+00:15:36,390 --> 00:15:38,450
+Press it, the platform comes down.
+
+215
+00:15:39,270 --> 00:15:41,090
+And there's the same button up top.
+
+216
+00:15:43,110 --> 00:15:46,170
+For the analogous call to bring the lift platform up.
+
+217
+00:15:50,130 --> 00:15:51,870
+The mechanism runs on rollers.
+
+218
+00:15:55,010 --> 00:15:57,190
+We showed it in detail during the build.
+
+219
+00:15:58,790 --> 00:16:00,190
+Here's how it looks on the wall.
+
+220
+00:16:03,620 --> 00:16:07,100
+Replace the standard cable with a thicker one for reliability.
+
+221
+00:16:08,980 --> 00:16:10,100
+Now we'll ride it.
+
+222
+00:16:10,960 --> 00:16:11,740
+Get on the platform.
+
+223
+00:16:13,780 --> 00:16:14,120
+Stand.
+
+224
+00:16:17,420 --> 00:16:19,860
+And press the button to lift the platform up.
+
+225
+00:16:24,170 --> 00:16:25,150
+Hence, totally free.
+
+226
+00:16:31,090 --> 00:16:33,010
+Here's the braking stop for this button.
+
+227
+00:16:33,010 --> 00:16:33,770
+For the build.
+
+228
+00:16:36,410 --> 00:16:37,810
+Here's our main mechanisms.
+
+229
+00:16:39,250 --> 00:16:41,430
+This is the roller the cable runs on.
+
+230
+00:16:42,750 --> 00:16:47,290
+And we also implemented a safety system limiting upward platform travel.
+
+231
+00:16:48,870 --> 00:16:53,090
+This roller, which runs along the back wall of the guide, hits a stop.
+
+232
+00:16:54,450 --> 00:16:56,150
+And can't move any further.
+
+233
+00:16:57,030 --> 00:16:59,630
+And the electrical side is cut by this button.
+
+234
+00:16:59,630 --> 00:17:04,670
+We also set the system up so that you can't press two buttons at the same time.
+
+235
+00:17:05,410 --> 00:17:06,010
+Nothing happens.
+
+236
+00:17:06,690 --> 00:17:09,750
+For example, if you're moving up and press the second button.
+
+237
+00:17:10,490 --> 00:17:13,290
+With two buttons pressed simultaneously, no movement.
+
+238
+00:17:14,430 --> 00:17:16,090
+No contact, nothing.
+
+239
+00:17:21,040 --> 00:17:23,520
+So that's the safety provision for this part.
+
+240
+00:17:26,660 --> 00:17:28,700
+The opening isn't finished yet.
+
+241
+00:17:29,160 --> 00:17:30,620
+But that'll be done later.
+
+242
+00:17:31,800 --> 00:17:32,820
+For convenience.
+
+243
+00:17:33,190 --> 00:17:35,160
+And one more thing.
+
+244
+00:17:36,800 --> 00:17:39,260
+You can press the button to bring the lift down.
+
+245
+00:17:42,380 --> 00:17:45,180
+And under its own weight, it descends smoothly.
+
+246
+00:17:45,980 --> 00:17:47,360
+Without weight, it would jump.
+
+247
+00:17:49,180 --> 00:17:50,360
+The lift breaks.
+
+248
+00:17:51,140 --> 00:17:52,600
+So the lift platform stops.
+
+249
+00:17:54,180 --> 00:17:55,300
+You can jump.
+
+250
+00:17:57,060 --> 00:17:58,420
+Also done for safety.
+

@@ -1,0 +1,1616 @@
+1
+00:00:00,480 --> 00:00:03,460
+Good day, dear subscribers and viewers of my channel.
+
+2
+00:00:04,680 --> 00:00:07,720
+I want to wish you a happy upcoming new year and Christmas.
+
+3
+00:00:08,600 --> 00:00:15,920
+I wish you all the best in the new year, fulfillment of your wishes, more finances, more joys, and creative successes.
+
+4
+00:00:17,280 --> 00:00:19,980
+Today's topic of our video will be the Tesla Coil.
+
+5
+00:00:21,760 --> 00:00:27,220
+In the course of conversations this year with people who call me on Skype, an interesting feature turned up.
+
+6
+00:00:28,460 --> 00:00:30,900
+People still don't know how to make a Tesla transformer.
+
+7
+00:00:32,440 --> 00:00:40,960
+Not the useless sparklers that the majority assembles, but specifically the Tesla transformer that we need for experiments, for FE generators.
+
+8
+00:00:41,480 --> 00:00:45,240
+The Tesla transformer that Nikola Tesla himself actually made.
+
+9
+00:00:45,800 --> 00:00:52,800
+He made it work in the most important mode, when a combination of the wave from LC resonance with the wave on wire length happens.
+
+10
+00:00:53,660 --> 00:00:55,240
+And so-called wave resonance comes.
+
+11
+00:00:56,020 --> 00:00:57,400
+Now we'll talk about this.
+
+12
+00:00:58,160 --> 00:00:59,340
+A very important topic.
+
+13
+00:01:00,240 --> 00:01:03,420
+But first I'd like to recommend the channels of two interesting people.
+
+14
+00:01:04,040 --> 00:01:07,840
+This is the channel Mr. Roman Korb and the channel of Denis Permakov.
+
+15
+00:01:11,090 --> 00:01:15,890
+The founder of this YouTube video channel is Romanov Alexander Vladimirovich.
+
+16
+00:01:16,610 --> 00:01:21,090
+A very smart person, he's put in a colossal number of practical experiments.
+
+17
+00:01:22,230 --> 00:01:28,790
+He has a clear position on the problem of electricity, electrical interactions, and the structure of the universe.
+
+18
+00:01:29,250 --> 00:01:32,190
+He's also competent on a wide spectrum of questions.
+
+19
+00:01:33,450 --> 00:01:41,210
+The second video channel I want to mention is the channel named Denis Permakov, with the same name as the founder.
+
+20
+00:01:42,870 --> 00:01:45,790
+Denis is Alexander Vladimirovich's lab assistant.
+
+21
+00:01:46,790 --> 00:01:51,010
+On the channel at this moment, there are 423 videos.
+
+22
+00:01:52,330 --> 00:02:00,650
+The videos are filmed in a mode of live communication between Denis and Alexander Vladimirovich, and also people who come to them as guests.
+
+23
+00:02:02,150 --> 00:02:08,090
+In the course of live communication, Alexander Vladimirovich explains to people the answers to their questions.
+
+24
+00:02:09,370 --> 00:02:18,190
+He tells various interesting situations connected with practical building of free energy devices, or talks on a wide spectrum of other topics.
+
+25
+00:02:19,210 --> 00:02:23,450
+I recommend subscribing to these two channels and following the video updates.
+
+26
+00:02:24,850 --> 00:02:26,970
+And we move directly to our topic.
+
+27
+00:02:27,830 --> 00:02:29,530
+The Tesla Transformer.
+
+28
+00:02:30,290 --> 00:02:31,910
+So, the Tesla Transformer.
+
+29
+00:02:32,390 --> 00:02:36,550
+Most often this type of device is made by winding copper wire on some frame.
+
+30
+00:02:39,190 --> 00:02:47,350
+The best frame I think one can use is cardboard pipes, which you can get at various household stores.
+
+31
+00:02:48,270 --> 00:02:58,630
+There, films, strips, and other consumer products are wound on this kind of build, where after the material is sold, they're simply thrown away.
+
+32
+00:02:59,850 --> 00:03:04,870
+Negotiate, the sellers will set them aside for you, possibly for a small symbolic payment.
+
+33
+00:03:06,170 --> 00:03:08,830
+So, I won't go into the history of making them.
+
+34
+00:03:09,270 --> 00:03:10,890
+Let's move directly to the essence.
+
+35
+00:03:13,210 --> 00:03:14,770
+Usually people act like this.
+
+36
+00:03:15,370 --> 00:03:17,390
+We have some wire, and we have some frame.
+
+37
+00:03:18,970 --> 00:03:23,170
+We wind the coil, and after this the person thinks the transformer is ready.
+
+38
+00:03:24,270 --> 00:03:28,530
+And even if you're a seasoned Tesla builder, and think you know everything about this product.
+
+39
+00:03:30,430 --> 00:03:32,470
+I hurry to assure you this isn't so.
+
+40
+00:03:33,070 --> 00:03:38,050
+The Tesla Transformer you can study for years, and every time, it'll give you something interesting.
+
+41
+00:03:38,610 --> 00:03:44,750
+You only need to have some persistence, observation, and a lively mind in terms of setting up experiments.
+
+42
+00:03:46,490 --> 00:03:48,950
+Let's move on to calculations of this wound coil.
+
+43
+00:03:49,530 --> 00:03:52,370
+Generally, I don't wind coils without calculations.
+
+44
+00:03:53,250 --> 00:03:56,890
+That is, I do the calculation initially, and then wind the coil.
+
+45
+00:03:57,630 --> 00:03:59,750
+But usually people don't act that way.
+
+46
+00:04:01,270 --> 00:04:02,810
+We have initial data.
+
+47
+00:04:03,510 --> 00:04:05,950
+This is what we should take with maximum care.
+
+48
+00:04:07,670 --> 00:04:09,470
+We know the wave speed and vacuum.
+
+49
+00:04:11,930 --> 00:04:16,370
+Use not the approximate value 300,000, but the exact one.
+
+50
+00:04:17,010 --> 00:04:18,610
+This is critical for our calculations.
+
+51
+00:04:20,010 --> 00:04:22,970
+We need to determine the winding wire diameter.
+
+52
+00:04:22,970 --> 00:04:30,910
+In this case, I wound with wire with diameter, including varnish, of 0.36 millimeters.
+
+53
+00:04:31,950 --> 00:04:32,890
+Convert it to centimeters.
+
+54
+00:04:33,730 --> 00:04:40,730
+If the wire is thin, and generally to get accurate calculations, I recommend using a micrometer to measure its outer diameter.
+
+55
+00:04:42,110 --> 00:04:47,450
+If you don't accurately know the wire diameter on the outside, you should always double-check yourself.
+
+56
+00:04:48,210 --> 00:04:50,050
+You'll need such a tool, I think.
+
+57
+00:04:51,490 --> 00:04:53,130
+Further, what do we move to?
+
+58
+00:04:54,490 --> 00:04:56,630
+The wire diameter is determined.
+
+59
+00:04:57,570 --> 00:05:00,150
+Now we need to accurately determine the turn length.
+
+60
+00:05:02,530 --> 00:05:05,770
+Measure it directly on the frame on which we'll wind the wire.
+
+61
+00:05:07,410 --> 00:05:10,550
+You can calculate it through the standard Formula 2 Pyre.
+
+62
+00:05:12,890 --> 00:05:19,250
+But I prefer in practice to take the wire I'll wind with, pull it tight, put a marker mark on it, and then measure.
+
+63
+00:05:21,750 --> 00:05:27,090
+You should measure in different places on the frame, because the frame may have an elliptical form.
+
+64
+00:05:27,710 --> 00:05:30,750
+In this case, it's clearly round, and I don't worry about that.
+
+65
+00:05:31,550 --> 00:05:34,130
+That is, calculate if you have a difference in length.
+
+66
+00:05:34,690 --> 00:05:35,970
+This is a critical parameter.
+
+67
+00:05:36,570 --> 00:05:37,990
+I did the length of my turn.
+
+68
+00:05:38,370 --> 00:05:41,210
+It came out to 26.55 centimeters.
+
+69
+00:05:41,870 --> 00:05:43,790
+I convert this value to meters.
+
+70
+00:05:44,850 --> 00:05:48,570
+And now we should accurately determine the winding length on the coil.
+
+71
+00:05:49,910 --> 00:05:53,850
+The physical winding length is measured after you've already wound the coil.
+
+72
+00:05:57,160 --> 00:05:59,500
+In my case, it was 30.3 centimeters.
+
+73
+00:06:00,840 --> 00:06:07,100
+We need this initial data so we can then do quality calculations of what we got, or what we'll get in the future.
+
+74
+00:06:08,300 --> 00:06:10,100
+The second variant is preferred.
+
+75
+00:06:10,580 --> 00:06:11,540
+Calculate initially.
+
+76
+00:06:12,620 --> 00:06:20,980
+I want to warn you right away that on the internet, there are a large number of online calculators that offer you to calculate Tesla coil and its dimensions.
+
+77
+00:06:22,420 --> 00:06:33,280
+And the most dangerous thing in these online calculators is that many of them output this data not according to the calculations Tesla himself applied, but specifically according to what gives LC
+
+78
+00:06:33,280 --> 00:06:34,520
+resonance on this coil.
+
+79
+00:06:36,020 --> 00:06:44,840
+Yes, such a coil will be similar to a Tesla transformer, but believe me, to a real Tesla transformer, it'll have no relation by these calculations.
+
+80
+00:06:45,740 --> 00:06:46,740
+A useless sparkler.
+
+81
+00:06:48,240 --> 00:06:52,400
+Our calculations will consist of five simple algebraic expressions.
+
+82
+00:06:53,080 --> 00:06:56,020
+To start, we should determine the turn count on this build.
+
+83
+00:06:57,300 --> 00:07:01,700
+For this, I take the winding length on the coil and divide it by the wire diameter.
+
+84
+00:07:02,300 --> 00:07:09,200
+My length was 30.3 centimeters of winding and divide it by the diameter expressed in centimeters.
+
+85
+00:07:09,820 --> 00:07:11,800
+I get 841 turns.
+
+86
+00:07:13,040 --> 00:07:17,140
+Next, we determine the number of meters of wire that went into this build.
+
+87
+00:07:19,260 --> 00:07:26,760
+For this turn count we calculated earlier, multiply it by the length of one turn we measured on the frame of our Tesla coil.
+
+88
+00:07:28,940 --> 00:07:30,100
+841 turns.
+
+89
+00:07:30,940 --> 00:07:36,680
+Multiply by the turn length in meters and get a total length of 223.28 meters.
+
+90
+00:07:38,540 --> 00:07:41,460
+Next, we should calculate the most important parameter.
+
+91
+00:07:43,140 --> 00:07:47,620
+For what wavelength the quantity of wire wound on our Tesla coil will be a quarter.
+
+92
+00:07:49,060 --> 00:07:58,720
+For this, the calculated wire length in meters we multiply by four and we get the wavelength in meters that'll correspond to our wound wire being a quarter wave.
+
+93
+00:08:00,480 --> 00:08:13,140
+That is 223.28 meters I multiply by four and I calculate that the wavelength necessary for my build, to put it at quarter wave, will be 893.12 meters.
+
+94
+00:08:14,700 --> 00:08:21,120
+Now as item four, I calculate the frequency in hertz that should be applied to my build so it becomes a quarter wave.
+
+95
+00:08:24,330 --> 00:08:31,170
+For this, I take the wave speed in vacuum that was in the initial data and divide by the obtained number of meters of wave.
+
+96
+00:08:31,990 --> 00:08:42,370
+That is this accurate value 299,792,458 I divide by my physical meters that I calculated and I get that number.
+
+97
+00:08:42,750 --> 00:08:44,170
+The frequency will be in hertz.
+
+98
+00:08:46,110 --> 00:08:50,670
+Hertz are inconvenient for us to set so we convert this value to kilohertz.
+
+99
+00:08:51,430 --> 00:09:03,890
+Conversion is done by simply dividing this value by a thousand since in one kilohertz we have a thousand hertz and we have our frequency which makes 335.7 kilohertz for this build.
+
+100
+00:09:07,990 --> 00:09:11,590
+After we determine the frequency, we don't depart from it anywhere.
+
+101
+00:09:13,950 --> 00:09:17,870
+Remember it and I want to mention one more moment that comes up in practice.
+
+102
+00:09:17,870 --> 00:09:27,350
+We calculated it but you need to understand that this value in kilohertz corresponds to the frequency that would be for wires stretched in a long line.
+
+103
+00:09:31,450 --> 00:09:38,850
+And since our coil is rolled into a spiral resonator, here we'll observe some coefficient of wave shortening for a spiral resonator.
+
+104
+00:09:42,210 --> 00:09:45,270
+So in practice this frequency will be slightly lower.
+
+105
+00:09:46,050 --> 00:09:55,990
+Here for this build the calculated is 335.7 kilohertz and in practice it turned out to 330 kilohertz, that is 5 kilohertz lower.
+
+106
+00:09:57,850 --> 00:10:02,130
+Now when we have all the calculations we can move to testing this build.
+
+107
+00:10:04,270 --> 00:10:16,410
+For conducting measurements of LC resonance of this coil we need a signal generator, preferably of sine form, an oscilloscope, one turn of wire that'll play the role of inductor and be located closer
+
+108
+00:10:16,410 --> 00:10:18,710
+to the cold end of the Tesla transformer.
+
+109
+00:10:20,810 --> 00:10:22,870
+And good grounding without fail.
+
+110
+00:10:23,770 --> 00:10:26,510
+The grounding in this case at me is 25 meters.
+
+111
+00:10:27,970 --> 00:10:38,710
+Guys, there's such unpleasant statistics that's already manifesting on the example of three of my acquaintances, that people who live in apartments where there's a large amount of rebar in the walls,
+
+112
+00:10:39,110 --> 00:10:43,810
+the coil during wave reduction and LC resonance doesn't show amplitude increase.
+
+113
+00:10:47,280 --> 00:10:56,120
+And when the same people conduct the experiment going from their apartment to an open area, that is for example to a country house, there it works excellently.
+
+114
+00:10:57,540 --> 00:11:07,940
+That is, either they have bad grounding because they live on some floor above the first and have no way to make it, or the rebar and building walls actually affects.
+
+115
+00:11:09,040 --> 00:11:14,860
+And if you have such data, when you do this, please write in the comments because I'm collecting these statistics.
+
+116
+00:11:15,520 --> 00:11:21,280
+That is, it's already starting to be confirmed that the Tesla transformer behaves differently in an apartment.
+
+117
+00:11:22,340 --> 00:11:27,020
+And from this we can make conclusions on why many can't tune or make the same OU devices.
+
+118
+00:11:28,900 --> 00:11:30,840
+A sad situation that...
+
+119
+00:11:31,820 --> 00:11:33,320
+Well, okay, let's move on.
+
+120
+00:11:34,140 --> 00:11:34,960
+Good grounding.
+
+121
+00:11:35,520 --> 00:11:36,960
+I stopped on this moment.
+
+122
+00:11:37,480 --> 00:11:40,440
+And we know our frequency from the calculations we got.
+
+123
+00:11:44,670 --> 00:11:46,490
+335.7 kHz.
+
+124
+00:11:47,590 --> 00:11:49,550
+Let me set this frequency now.
+
+125
+00:11:51,550 --> 00:11:52,510
+Like this.
+
+126
+00:11:57,400 --> 00:11:58,900
+The device is set.
+
+127
+00:12:00,100 --> 00:12:05,700
+You can see the probe and oscilloscope are nearby, at some distance from the hot end of the Tesla transformer.
+
+128
+00:12:06,680 --> 00:12:08,680
+And there's something on the oscilloscope.
+
+129
+00:12:09,920 --> 00:12:12,880
+These are pickups, mains pickups of 50 Hz.
+
+130
+00:12:13,500 --> 00:12:14,260
+How are they removed?
+
+131
+00:12:14,920 --> 00:12:20,380
+We need to ground the common probe of the oscilloscope to the same earth as the Tesla transformer.
+
+132
+00:12:21,500 --> 00:12:23,420
+I do this with an additional conductor.
+
+133
+00:12:24,800 --> 00:12:27,200
+And see, the pickups disappeared for us.
+
+134
+00:12:27,680 --> 00:12:29,500
+Now we can do quality measurements.
+
+135
+00:12:31,020 --> 00:12:31,800
+Apply the signal.
+
+136
+00:12:33,520 --> 00:12:35,280
+And here's something appeared for us.
+
+137
+00:12:36,620 --> 00:12:41,680
+But clearly, although we applied our calculated, we don't clearly see a manifestation.
+
+138
+00:12:43,160 --> 00:12:47,140
+Now we'll move on to the moment where we need to determine LC resonance.
+
+139
+00:12:47,880 --> 00:12:51,300
+I'll smoothly raise the frequency applied from the signal generator.
+
+140
+00:12:53,060 --> 00:12:55,840
+And we'll follow the amplitude on the oscilloscope.
+
+141
+00:12:58,260 --> 00:13:01,840
+So, here we see, a sine wave appeared for us.
+
+142
+00:13:03,780 --> 00:13:06,460
+And I continue to smoothly raise the frequency.
+
+143
+00:13:08,460 --> 00:13:10,120
+See the amplitude growth.
+
+144
+00:13:11,680 --> 00:13:13,780
+I can reduce the volts per division setting.
+
+145
+00:13:17,370 --> 00:13:18,790
+And reach the maximum.
+
+146
+00:13:20,410 --> 00:13:24,070
+Amplitude grew more, now already 20 volts per division.
+
+147
+00:13:26,410 --> 00:13:27,890
+And reach the maximum.
+
+148
+00:13:29,770 --> 00:13:34,350
+The maximum makes, the frequency for us is 490 kHz.
+
+149
+00:13:34,910 --> 00:13:37,230
+How to check that this is actually LC resonance?
+
+150
+00:13:38,590 --> 00:13:39,630
+Watch my hand.
+
+151
+00:13:39,970 --> 00:13:43,050
+I bring it to the coil and the amplitude changes for us.
+
+152
+00:13:44,470 --> 00:13:47,670
+That is, my hand is in isolated capacity.
+
+153
+00:13:49,810 --> 00:13:56,550
+You see that with our calculated 335.7 kHz, this doesn't correspond in any way.
+
+154
+00:13:57,170 --> 00:14:02,830
+Although if we bring a neon lamp now and say touch it to the hot end, the neon will burn at us.
+
+155
+00:14:05,010 --> 00:14:06,610
+Possibly here it doesn't glow.
+
+156
+00:14:08,150 --> 00:14:12,650
+Kind of, the Tesla transformer is ready, but it works at LC resonance.
+
+157
+00:14:14,110 --> 00:14:21,370
+And this frequency, if you enter it into an online calculator, approximately the online calculator will count for you.
+
+158
+00:14:22,450 --> 00:14:23,330
+You'll stop.
+
+159
+00:14:23,650 --> 00:14:24,930
+Well, and nothing good.
+
+160
+00:14:26,190 --> 00:14:31,350
+And as you see, when I did the calculations, I didn't turn to any online calculator at all.
+
+161
+00:14:32,390 --> 00:14:35,530
+Everything counted by the simplest algebraic expressions.
+
+162
+00:14:37,890 --> 00:14:40,250
+So, we now have a delta of difference.
+
+163
+00:14:41,450 --> 00:14:42,710
+Calculated and actual.
+
+164
+00:14:43,350 --> 00:14:44,870
+For 190 kHz.
+
+165
+00:14:45,470 --> 00:14:47,510
+So, here now a very important moment.
+
+166
+00:14:48,490 --> 00:14:49,330
+We have a difference.
+
+167
+00:14:49,690 --> 00:14:50,470
+What do we need to do?
+
+168
+00:14:51,610 --> 00:14:54,370
+We know the calculated and LC is higher.
+
+169
+00:14:55,070 --> 00:14:57,850
+So we need to lower this LC resonance frequency.
+
+170
+00:14:58,990 --> 00:15:01,590
+How is LC resonance frequency lowered?
+
+171
+00:15:03,850 --> 00:15:07,430
+LC resonance for us is resonance of two positions.
+
+172
+00:15:09,130 --> 00:15:10,450
+Capacitor and coil.
+
+173
+00:15:11,010 --> 00:15:12,910
+That is inductance and capacity.
+
+174
+00:15:13,930 --> 00:15:16,810
+The inductance is the turn count at their certain diameter.
+
+175
+00:15:18,570 --> 00:15:23,030
+And the capacity is the inter-turn capacity of the wire itself.
+
+176
+00:15:24,030 --> 00:15:26,190
+Here they form LC resonance for us.
+
+177
+00:15:27,310 --> 00:15:31,350
+And we have two variants of how we can reduce LC resonance frequency.
+
+178
+00:15:31,950 --> 00:15:36,610
+This is to apply and practice such ferrite rods from antennas of radio receivers.
+
+179
+00:15:39,460 --> 00:15:41,420
+Say, increase inductance.
+
+180
+00:15:42,100 --> 00:15:43,420
+Or add capacity.
+
+181
+00:15:44,780 --> 00:15:49,100
+In the best case, you should add capacity at the hot end of the Tesla transformer.
+
+182
+00:15:49,980 --> 00:15:52,980
+What we see at most builds in the form of toroids or spheres.
+
+183
+00:15:53,780 --> 00:15:56,240
+Here I made this sphere that will connect to this build.
+
+184
+00:16:02,400 --> 00:16:08,300
+Now observe what will happen with LC resonance when a ferrite rod is introduced into the Tesla coil.
+
+185
+00:16:09,300 --> 00:16:10,680
+I introduce the rod.
+
+186
+00:16:12,240 --> 00:16:14,520
+You see it tunes most accurately first.
+
+187
+00:16:15,480 --> 00:16:16,500
+Observe the amplitude.
+
+188
+00:16:17,620 --> 00:16:19,120
+And further a drop happens.
+
+189
+00:16:20,080 --> 00:16:22,540
+Here we introduced the rod to some distance.
+
+190
+00:16:22,940 --> 00:16:24,160
+The amplitude went down.
+
+191
+00:16:24,740 --> 00:16:28,820
+Now we can go down in frequency and also reach maximum amplitude.
+
+192
+00:16:32,100 --> 00:16:35,520
+See, the amplitude grows with reducing frequency.
+
+193
+00:16:40,730 --> 00:16:48,630
+In this case, introducing the ferrite rod at a certain depth lowered the frequency from 490 to 418 kilohertz.
+
+194
+00:16:49,850 --> 00:16:52,350
+So the method works and we can use it.
+
+195
+00:16:53,590 --> 00:16:56,550
+This Tesla transformer is a good transformer.
+
+196
+00:16:57,410 --> 00:17:00,330
+Here we have a relatively small spread in frequency.
+
+197
+00:17:01,470 --> 00:17:03,950
+330 and 490 kilohertz.
+
+198
+00:17:05,510 --> 00:17:08,790
+It'd be ideal if all parameters here converged.
+
+199
+00:17:09,450 --> 00:17:10,710
+That is, how do they converge?
+
+200
+00:17:11,370 --> 00:17:13,790
+We need to make a spread of these two frequencies.
+
+201
+00:17:15,150 --> 00:17:17,630
+And LC resonance frequency.
+
+202
+00:17:18,350 --> 00:17:21,390
+Without any tricks in the form of increasing inductance.
+
+203
+00:17:22,370 --> 00:17:26,410
+When these frequencies are at the minimum distance from each other in the frequency range.
+
+204
+00:17:27,310 --> 00:17:29,530
+That is, we need a minimum difference.
+
+205
+00:17:31,090 --> 00:17:32,750
+But this isn't all so bad.
+
+206
+00:17:33,510 --> 00:17:36,870
+We can adjust all this matter with the help of such simple devices.
+
+207
+00:17:39,150 --> 00:17:40,790
+Which Tesla himself used.
+
+208
+00:17:41,770 --> 00:17:48,250
+But you must remember that increasing capacity leads to worsening of the oscillating circuit's quality factor.
+
+209
+00:17:49,450 --> 00:17:54,390
+That is, attaching this capacity, we slightly worsen parameters of the whole system.
+
+210
+00:17:55,450 --> 00:17:58,370
+In this case, it's not critical because the spread is small.
+
+211
+00:17:59,470 --> 00:18:02,550
+In practice, the diameter of this sphere is a bit small.
+
+212
+00:18:03,110 --> 00:18:06,190
+It needs to be increased almost twice for this Tesla coil.
+
+213
+00:18:06,950 --> 00:18:08,690
+And here everything will be optimal.
+
+214
+00:18:09,950 --> 00:18:13,950
+Now one more moment with LC resonance that may come up in practice.
+
+215
+00:18:14,770 --> 00:18:18,250
+As we see in this build, I have a difference in frequencies.
+
+216
+00:18:19,010 --> 00:18:24,150
+At that, my LC resonance frequency is higher than the wave frequency on wire length.
+
+217
+00:18:25,410 --> 00:18:32,290
+In this case, everything is easily fixable by introducing ferrite or connecting an additional isolated capacity.
+
+218
+00:18:33,470 --> 00:18:39,290
+And there are situations when on the contrary, measured, the LC resonance frequency is lower.
+
+219
+00:18:40,130 --> 00:18:41,850
+This is the worst that can happen.
+
+220
+00:18:43,670 --> 00:18:46,170
+The build will need to be redone entirely.
+
+221
+00:18:46,730 --> 00:18:51,110
+Because in such a case, you can in no way raise the LC resonance frequency up.
+
+222
+00:18:52,450 --> 00:18:55,610
+By all the methods shown above, it'll only reduce.
+
+223
+00:18:57,170 --> 00:19:00,870
+In this case, only physical unwinding of wire may help.
+
+224
+00:19:01,230 --> 00:19:06,910
+Until at you, the LC resonance parameters become the same as the parameters of the wave on wire length.
+
+225
+00:19:08,110 --> 00:19:09,510
+Or slightly above it.
+
+226
+00:19:10,190 --> 00:19:14,550
+But usually in practice, this is an unsuitable coil that should be rewound.
+
+227
+00:19:15,910 --> 00:19:16,330
+Applying.
+
+228
+00:19:16,730 --> 00:19:24,790
+If at you, LC resonance even without connected isolated capacity is below in frequency, you need to usually reduce the frame diameter.
+
+229
+00:19:25,490 --> 00:19:29,850
+Because reducing frame diameter, we reduce the total inductance of the coil.
+
+230
+00:19:31,630 --> 00:19:33,250
+But back to the experiment.
+
+231
+00:19:34,710 --> 00:19:37,050
+I connected the isolated capacity.
+
+232
+00:19:39,510 --> 00:19:42,950
+It can connect directly, so it'd be near the Tesla transformer.
+
+233
+00:19:44,310 --> 00:19:46,950
+For this, I have one more soldering place for connection.
+
+234
+00:19:47,730 --> 00:19:51,490
+In this case, I used it for another experiment slightly, but it won't hurt us.
+
+235
+00:19:52,830 --> 00:19:54,870
+So, now we'll lower the frequency.
+
+236
+00:19:57,350 --> 00:20:02,450
+And find out what frequency now LC resonance will be at us, with the sphere connected.
+
+237
+00:20:04,790 --> 00:20:05,610
+Going down.
+
+238
+00:20:05,610 --> 00:20:15,260
+And the frequency here at us is somewhere, maximum corresponds, 380 kilohertz.
+
+239
+00:20:16,360 --> 00:20:23,820
+That is, understand that connecting such a sphere, the frequency from 490 kilohertz dropped to 380.
+
+240
+00:20:24,420 --> 00:20:26,860
+But again, it doesn't reach my calculated.
+
+241
+00:20:28,540 --> 00:20:33,560
+Turns out this sphere isn't quite suitable for quality work of the Tesla transformer.
+
+242
+00:20:34,220 --> 00:20:38,680
+And its diameter should be increased in practice until LC resonance falls.
+
+243
+00:20:39,540 --> 00:20:48,540
+But since I don't have another sphere, I'll additionally introduce a ferrite rod, thereby increasing inductance and lowering LC resonance frequency.
+
+244
+00:20:49,160 --> 00:20:53,940
+Now I set the frequency on the lab signal generator to 330 kilohertz.
+
+245
+00:20:55,100 --> 00:21:04,440
+And now we'll observe how, when introducing the ferrite rod into the coil, we'll observe the combination of the wave from LC resonance with the wave on wire length.
+
+246
+00:21:07,520 --> 00:21:13,540
+I introduce the core into the coil and see that amplitude for us starts growing from maximum amplitude.
+
+247
+00:21:17,280 --> 00:21:19,820
+Now the system is fully combined for us.
+
+248
+00:21:21,120 --> 00:21:23,280
+I didn't change the volts per division setting.
+
+249
+00:21:23,520 --> 00:21:24,840
+It's also at 20 volts.
+
+250
+00:21:26,060 --> 00:21:29,800
+And you can compare with the amplitude that was simply at LC resonance.
+
+251
+00:21:30,350 --> 00:21:34,380
+How to check that the coil actually stood at quarter wave?
+
+252
+00:21:35,300 --> 00:21:37,860
+Near the hot, and we should have maximum amplitude.
+
+253
+00:21:38,540 --> 00:21:42,520
+Moving the oscilloscope probe to the cold end, amplitude will be zero.
+
+254
+00:21:43,860 --> 00:21:45,080
+Now let's try this.
+
+255
+00:21:46,660 --> 00:21:52,640
+I observed the influence of my hand slightly, so I compensated the frequency a bit by a couple kilohertz.
+
+256
+00:21:54,840 --> 00:21:56,120
+And we'll pass through.
+
+257
+00:21:58,820 --> 00:22:01,900
+Observe the required amplitude and go along the coil.
+
+258
+00:22:03,500 --> 00:22:09,980
+Let along it at the same distance and see that moving to the cold end, the amplitude went to zero for us.
+
+259
+00:22:11,180 --> 00:22:15,780
+On the contrary, when moving to the hot end, amplitude will be at maximum.
+
+260
+00:22:19,270 --> 00:22:20,490
+Such a simple check.
+
+261
+00:22:22,610 --> 00:22:31,870
+Now we move to power tests of this build and show in practice what combination means, how the discharge color will change, what effects will happen on the Tesla coil.
+
+262
+00:22:32,970 --> 00:22:38,890
+So the experiment will happen for us in such a way that I'll start the system with the help of a half-bridge inverter.
+
+263
+00:22:41,890 --> 00:22:44,950
+And we'll launch it in the first case without interruption.
+
+264
+00:22:45,470 --> 00:22:49,070
+In the second case, I'll turn on interruption from the lab signal generator.
+
+265
+00:22:49,710 --> 00:22:54,730
+The launch will be from my lab power supply, which you could see earlier in fragments of making this video.
+
+266
+00:22:57,050 --> 00:22:59,870
+Everything is powered exclusively from a battery.
+
+267
+00:23:01,130 --> 00:23:06,410
+And generally, all experiments of this kind that will conduct should be untied from the wall socket.
+
+268
+00:23:07,070 --> 00:23:14,130
+That is, even when I apply the signal from the lab signal generator here, it's untied at me with the help of an optical driver.
+
+269
+00:23:14,650 --> 00:23:15,910
+Opto-isolation happens.
+
+270
+00:23:17,470 --> 00:23:22,850
+The oscilloscope isn't connected, the probe will lie nearby in the same place the whole time.
+
+271
+00:23:23,770 --> 00:23:30,050
+The scheme power is done through a DC-DC converter, the scheme of which I gave earlier, with galvanic isolation.
+
+272
+00:23:30,790 --> 00:23:34,290
+That is, at me there's no single common point with the lighting network.
+
+273
+00:23:34,990 --> 00:23:41,670
+The experiment is conducted in continuous mode, frequency at the converter output is 330 kHz.
+
+274
+00:23:42,570 --> 00:23:45,830
+The system isn't tuned now, you see a sine wave.
+
+275
+00:23:46,210 --> 00:23:51,770
+You see the usual phenomenon, the neon lamp burns, and we observe the discharge color and length.
+
+276
+00:23:53,890 --> 00:23:55,730
+Look, here is the discharge.
+
+277
+00:23:56,150 --> 00:23:57,570
+It has a reddish-purple color.
+
+278
+00:23:57,950 --> 00:24:00,370
+The camera slightly distorts the image of course.
+
+279
+00:24:03,010 --> 00:24:05,130
+And look at the isolated capacity.
+
+280
+00:24:05,630 --> 00:24:11,770
+Here you can hear a characteristic click at discharge start, because the capacity is a collector for charged particles.
+
+281
+00:24:18,960 --> 00:24:21,480
+Remember the discharge color and its length.
+
+282
+00:24:23,180 --> 00:24:25,660
+So, that's the amplitude we have now.
+
+283
+00:24:26,900 --> 00:24:31,060
+I introduced the ferrite rod, and now we'll observe the discharge.
+
+284
+00:24:31,800 --> 00:24:37,080
+Now in continuous mode, LC resonance is brought together with the wave on wire length.
+
+285
+00:24:38,100 --> 00:24:44,740
+See, an interesting crackling appeared at breakdown for us, but the discharge color also remained reddish.
+
+286
+00:24:46,660 --> 00:24:48,160
+The length increased.
+
+287
+00:24:50,440 --> 00:24:51,840
+Now look at the sphere.
+
+288
+00:24:56,700 --> 00:25:00,120
+You see an interesting phenomenon appears in the discharge.
+
+289
+00:25:00,960 --> 00:25:03,240
+Pay attention, the camera will adjust now.
+
+290
+00:25:04,600 --> 00:25:07,840
+White color appears in a static form of discharge.
+
+291
+00:25:12,000 --> 00:25:20,140
+That is, the combination of the wave from LC resonance and the wave on wire length generates a new phenomenon in the Tesla coil.
+
+292
+00:25:21,580 --> 00:25:23,740
+It starts to statically break through.
+
+293
+00:25:25,520 --> 00:25:29,040
+That is, the Tesla coil starts to suck in the discharge.
+
+294
+00:25:30,600 --> 00:25:34,260
+Now let's strengthen this phenomenon with control system modulation.
+
+295
+00:25:35,700 --> 00:25:43,020
+Now I apply from the lab signal generator a pulse with frequency 1 kHz and duration of this pulse is 10%.
+
+296
+00:25:44,540 --> 00:25:50,400
+We observe what we have on the oscillogram and see the system swings in approximately the usual mode.
+
+297
+00:25:51,000 --> 00:25:51,740
+But what's interesting?
+
+298
+00:25:53,280 --> 00:25:55,200
+Now I pulled out the ferrite rod.
+
+299
+00:25:55,820 --> 00:25:58,520
+Observe the discharge length and its intensity.
+
+300
+00:26:00,440 --> 00:26:02,360
+See that a sound appeared for us.
+
+301
+00:26:03,980 --> 00:26:05,640
+The discharge is reddish.
+
+302
+00:26:10,470 --> 00:26:14,210
+On the sphere it becomes with the whitest shade with the presence of statics.
+
+303
+00:26:18,570 --> 00:26:20,710
+Now I'll introduce the ferrite rod.
+
+304
+00:26:22,310 --> 00:26:23,290
+Pay attention.
+
+305
+00:26:24,530 --> 00:26:25,110
+A sweep.
+
+306
+00:26:28,180 --> 00:26:31,860
+Here now we have LC not combined with the wave on wire length.
+
+307
+00:26:34,260 --> 00:26:36,140
+And we see it wants to converge.
+
+308
+00:26:36,720 --> 00:26:37,760
+Wave processes went.
+
+309
+00:26:38,440 --> 00:26:42,220
+That is, waves with phase difference give us low frequency oscillations.
+
+310
+00:26:44,540 --> 00:26:49,180
+And now observe what will be on the oscillogram when I introduce the ferrite core.
+
+311
+00:26:52,160 --> 00:26:53,640
+I introduce the core.
+
+312
+00:26:58,820 --> 00:26:59,840
+See the growth.
+
+313
+00:27:01,440 --> 00:27:03,020
+And here we reach some level.
+
+314
+00:27:04,900 --> 00:27:05,380
+First moment.
+
+315
+00:27:06,080 --> 00:27:07,540
+Now I'll fix it in this position.
+
+316
+00:27:12,330 --> 00:27:13,190
+Here it is.
+
+317
+00:27:16,700 --> 00:27:18,500
+Such an oscillogram with us now.
+
+318
+00:27:20,140 --> 00:27:22,300
+This is the moment before combination.
+
+319
+00:27:23,540 --> 00:27:26,020
+That is, full combination hasn't yet happened.
+
+320
+00:27:27,780 --> 00:27:28,920
+Watch the discharge.
+
+321
+00:27:30,380 --> 00:27:31,880
+See how its length increased.
+
+322
+00:27:32,880 --> 00:27:35,680
+Reminder that I don't change power in this parameter.
+
+323
+00:27:37,060 --> 00:27:37,820
+Intensity.
+
+324
+00:27:42,150 --> 00:27:45,170
+But the discharge color also has a reddish shade.
+
+325
+00:27:50,660 --> 00:27:52,400
+And now I'll do full combination.
+
+326
+00:27:54,680 --> 00:27:56,660
+Watch the oscillogram carefully.
+
+327
+00:28:07,270 --> 00:28:08,530
+Here's what happens.
+
+328
+00:28:14,060 --> 00:28:15,760
+Such a picture we have now.
+
+329
+00:28:20,200 --> 00:28:21,360
+Such fish.
+
+330
+00:28:23,160 --> 00:28:24,720
+Now look at the phenomenon.
+
+331
+00:28:24,720 --> 00:28:28,360
+I introduce the ferrite core further.
+
+332
+00:28:43,080 --> 00:28:43,840
+Here.
+
+333
+00:28:45,060 --> 00:28:46,900
+The color remained reddish.
+
+334
+00:28:48,320 --> 00:28:50,280
+And now we need to reduce the duration.
+
+335
+00:28:51,720 --> 00:28:53,680
+Reminder, now 10%.
+
+336
+00:28:54,500 --> 00:29:00,240
+Now I'll reduce the duration and show you this same combination effect at 1% duration.
+
+337
+00:29:02,080 --> 00:29:07,340
+So, duration 1%, frequency also at us 1 kHz modulation.
+
+338
+00:29:08,960 --> 00:29:11,240
+Accurate combination is absent now.
+
+339
+00:29:15,240 --> 00:29:18,980
+We have such a picture, quite standard, as we often see.
+
+340
+00:29:21,480 --> 00:29:23,260
+See the long damping tail.
+
+341
+00:29:25,220 --> 00:29:26,200
+Here it is.
+
+342
+00:29:28,880 --> 00:29:30,520
+Look at the discharge now.
+
+343
+00:29:31,440 --> 00:29:36,080
+That is, we reduce the duration to 1%, voltage remained the same.
+
+344
+00:29:37,300 --> 00:29:39,380
+And now we spend much less energy.
+
+345
+00:29:40,060 --> 00:29:41,420
+Observe the discharge.
+
+346
+00:29:44,740 --> 00:29:46,460
+Look what color it acquires.
+
+347
+00:29:47,460 --> 00:29:49,560
+It whitens, becomes static.
+
+348
+00:29:51,420 --> 00:29:53,600
+But this isn't yet full combination.
+
+349
+00:29:55,120 --> 00:29:56,840
+Amplitude now isn't at maximum.
+
+350
+00:30:01,100 --> 00:30:03,840
+It's clearly visible the discharge has a white color.
+
+351
+00:30:05,580 --> 00:30:08,720
+And now I'll introduce the ferrite rod into the coil.
+
+352
+00:30:15,350 --> 00:30:16,530
+Observe the oscillogram.
+
+353
+00:30:23,560 --> 00:30:25,220
+Here's what beauty comes out.
+
+354
+00:30:27,060 --> 00:30:28,640
+Look if the camera catches.
+
+355
+00:30:39,340 --> 00:30:42,200
+And sound appears, the coil starts breaking through.
+
+356
+00:30:44,420 --> 00:30:49,000
+Here is the maximum point of wave convergence of maximum system efficiency.
+
+357
+00:30:50,440 --> 00:30:53,420
+At that, observe the amplitude, how it grows.
+
+358
+00:30:57,700 --> 00:30:58,840
+Goes off screen.
+
+359
+00:31:02,760 --> 00:31:05,120
+And now look what discharge appeared for us.
+
+360
+00:31:09,310 --> 00:31:14,030
+Audible that the Tesla coil started clicking, breakdowns are already going in air.
+
+361
+00:31:18,720 --> 00:31:21,100
+See, the discharge length increased.
+
+362
+00:31:23,120 --> 00:31:23,940
+Observe the color.
+
+363
+00:31:28,200 --> 00:31:30,820
+And now I'm specifically starting to get hit by current.
+
+364
+00:31:34,710 --> 00:31:36,110
+Even very strongly.
+
+365
+00:31:37,330 --> 00:31:39,590
+The discharge became powerful, current.
+
+366
+00:31:40,350 --> 00:31:41,890
+Current component is present.
+
+367
+00:31:49,970 --> 00:31:52,090
+And the color became bright white.
+
+368
+00:32:01,280 --> 00:32:03,280
+Such a phenomenon happens for us.
+
+369
+00:32:04,680 --> 00:32:06,020
+What do we see here?
+
+370
+00:32:09,880 --> 00:32:12,960
+Now I pulled out the ferrite core and introduce it.
+
+371
+00:32:13,640 --> 00:32:14,700
+What happens?
+
+372
+00:32:15,900 --> 00:32:22,360
+The wave from LC resonance is an intermediary for transferring energy to the wave on wire length.
+
+373
+00:32:23,920 --> 00:32:25,280
+In our long line.
+
+374
+00:32:26,460 --> 00:32:33,540
+And here when maximum interaction and phase happens, you see the ringing now at the end from LC resonance fully disappears.
+
+375
+00:32:34,960 --> 00:32:40,200
+And we're left with only our maximum amplitude when two waves exchange energy.
+
+376
+00:32:42,980 --> 00:32:50,680
+Effectively in the Tesla coil, a funnel forms now, which we accelerate with short pulses at its resonance frequency combined.
+
+377
+00:32:53,220 --> 00:32:56,120
+And further, it starts drawing in physical charges.
+
+378
+00:33:02,460 --> 00:33:03,740
+Very well audible.
+
+379
+00:33:04,540 --> 00:33:07,020
+Here already at this distance, it starts breaking through.
+
+380
+00:33:09,700 --> 00:33:11,560
+Add voltage now, observe.
+
+381
+00:33:16,590 --> 00:33:18,570
+Intensity should increase still more.
+
+382
+00:33:19,530 --> 00:33:22,590
+Here already at this distance, the primary breakdown happens.
+
+383
+00:33:30,140 --> 00:33:32,560
+Well, and from the sphere naturally further.
+
+384
+00:33:51,450 --> 00:33:53,750
+I'll try to film the effect in darkness still.
+
+385
+00:33:55,050 --> 00:33:57,250
+Bring the neon bulb to the rod.
+
+386
+00:34:05,180 --> 00:34:06,940
+Observe what the discharge has become.
+
+387
+00:34:08,520 --> 00:34:09,540
+Pure static breakdown.
+
+388
+00:34:31,660 --> 00:34:32,860
+Now on the sphere.
+
+389
+00:35:11,910 --> 00:35:14,230
+Now a couple of words about making this coil.
+
+390
+00:35:15,450 --> 00:35:19,930
+After winding, I soaked the coil with brand name varnish shellac from Technoem.
+
+391
+00:35:22,900 --> 00:35:27,520
+I applied six layers here, including soaking the cardboard frame from inside.
+
+392
+00:35:28,700 --> 00:35:33,100
+It remains to apply several layers of PF231 varnish here.
+
+393
+00:35:34,100 --> 00:35:38,000
+It's recommended, it doesn't destroy the varnish film from shellac.
+
+394
+00:35:40,340 --> 00:35:48,640
+Well, and also, all the most interesting phenomena in the Tesla transformer will be in interruption mode, modulations of amplitude power.
+
+395
+00:35:49,860 --> 00:35:52,460
+There'll be a further video on my channel about this.
+
+396
+00:35:52,960 --> 00:35:56,840
+Now I want to say that the inductor here isn't matched with the secondary coil.
+
+397
+00:35:57,800 --> 00:36:02,000
+That is, I took the first one available, so I could just show you these experiments.
+
+398
+00:36:02,780 --> 00:36:10,520
+The inductor also needs to be introduced into resonance, picking its length as a multiple of the turn length of the high voltage coil.
+
+399
+00:36:10,920 --> 00:36:11,760
+But about that later.
+
+400
+00:36:12,880 --> 00:36:13,900
+On this I say goodbye.
+
+401
+00:36:14,360 --> 00:36:16,500
+I hope it was interesting and informative for you.
+
+402
+00:36:17,020 --> 00:36:18,180
+Best of luck to everyone.
+
+403
+00:36:18,600 --> 00:36:19,300
+Good experiments.
+
+404
+00:36:19,760 --> 00:36:21,100
+Strong health in the new year.
+

@@ -1,0 +1,1152 @@
+1
+00:00:01,000 --> 00:00:02,770
+Hi everyone, welcome to my channel.
+
+2
+00:00:04,290 --> 00:00:07,670
+Today we have a very interesting topic on the lab power supply.
+
+3
+00:00:09,510 --> 00:00:12,250
+Namely, we'll pick and tune the current protection.
+
+4
+00:00:13,310 --> 00:00:17,530
+A very important parameter that defines the whole idea of this device.
+
+5
+00:00:19,230 --> 00:00:24,010
+This is the moment when the device will hold a certain current passing through the power switches.
+
+6
+00:00:26,370 --> 00:00:30,370
+With this we'll regulate the output parameters and adjust under load.
+
+7
+00:00:33,110 --> 00:00:37,510
+Here in front of you is the schematic diagram, which for today looks like this.
+
+8
+00:00:39,850 --> 00:00:46,350
+It'll still get filled out, with some modifications, but the elements presented here won't be subject to changes.
+
+9
+00:00:48,810 --> 00:00:52,130
+So, let me dwell on the current protection in more detail.
+
+10
+00:00:52,130 --> 00:00:56,810
+I brought it to pin 9 of the UC3825N chip.
+
+11
+00:00:59,050 --> 00:01:09,330
+An interesting property of this chip is that when voltage of 0.9V is applied, the current protection trip starts, that is, the duration of output pulses reduces.
+
+12
+00:01:13,920 --> 00:01:19,700
+And this parameter, from 0.9V to 1.3V, sustains the width reduction.
+
+13
+00:01:19,700 --> 00:01:27,400
+When the voltage amplitude reaches 1.3V, generation of control pulses fully stops at the output.
+
+14
+00:01:28,620 --> 00:01:30,960
+That is, a small window of possibilities.
+
+15
+00:01:32,160 --> 00:01:36,680
+To fit into it, we need to do the wiring of this system and a sensitive current sensor.
+
+16
+00:01:37,920 --> 00:01:44,560
+The current sensor, this is schematically shown on the drawing, is a ring with wire wound around it as a spiral.
+
+17
+00:01:46,260 --> 00:01:47,740
+Physically, it's this ring.
+
+18
+00:01:48,140 --> 00:01:50,260
+Its dimensions are also shown on the drawing.
+
+19
+00:01:51,980 --> 00:01:56,220
+I'm making it on EPCO's ferrite, with permeability 2200.
+
+20
+00:01:57,660 --> 00:02:03,360
+If you use other ferrites, then accordingly the data I'll cite in this video will be slightly different for you.
+
+21
+00:02:05,240 --> 00:02:07,800
+In practice, everyone will need to pick this.
+
+22
+00:02:09,680 --> 00:02:21,620
+Experimentally, I found that for my ferrite, this core, for proper sensitivity, so I could regulate from 0.5A up to the point I want, and for me this will be 20A consumption from a 12V battery.
+
+23
+00:02:25,660 --> 00:02:31,340
+I needed to wind 120 turns of 0.35mm wire on this core.
+
+24
+00:02:32,840 --> 00:02:40,720
+I tried experiments on the same cores with other wire diameters, in particular 0.45, but that turn count turned out too small.
+
+25
+00:02:44,100 --> 00:02:51,280
+Here you'd have to wind in several layers, so I went experimentally toward reducing the wire gauge and stopped at the optimal mode.
+
+26
+00:02:52,340 --> 00:02:56,180
+That is, this core is wound fully around the circumference in one layer.
+
+27
+00:02:57,840 --> 00:03:06,340
+Before starting work on winding wire on this core, it won't be superfluous to calculate the total wire length that'll fit on this magnetic core.
+
+28
+00:03:07,480 --> 00:03:18,440
+For this, I use the known formula for circumference length expressed through diameter, where P is the circumference length, pi is the constant 3.14, and D is the diameter.
+
+29
+00:03:19,920 --> 00:03:23,880
+Measure this diameter with calipers and substitute it into the formula.
+
+30
+00:03:25,100 --> 00:03:29,280
+Multiply and get a circumference length of 42.39mm.
+
+31
+00:03:30,480 --> 00:03:33,800
+Next we need to decide on the wire diameter we'll wind with.
+
+32
+00:03:34,520 --> 00:03:37,600
+In my case, this is 0.35mm.
+
+33
+00:03:39,200 --> 00:03:40,800
+Then proceed like this.
+
+34
+00:03:41,860 --> 00:03:45,780
+Divide the circumference length by the wire diameter and get the turn count.
+
+35
+00:03:47,300 --> 00:03:49,440
+121 turns will fit on this core.
+
+36
+00:03:50,340 --> 00:03:52,360
+Now we should know the length of one turn.
+
+37
+00:03:53,040 --> 00:03:57,320
+For this, tightly wrap the core with wire, straighten it out, and measure it.
+
+38
+00:03:58,260 --> 00:04:01,400
+In this case, the turn length came out to 21mm.
+
+39
+00:04:02,580 --> 00:04:07,780
+Now multiply the turn count by the length of one turn and get the wire length in millimeters.
+
+40
+00:04:09,640 --> 00:04:14,520
+Then divide by 1000mm per meter and express the length now in meters.
+
+41
+00:04:15,660 --> 00:04:17,650
+In my case, it came to 2.54mm.
+
+42
+00:04:19,740 --> 00:04:21,570
+Approximately with leads I took 2.6mm.
+
+43
+00:04:23,000 --> 00:04:27,620
+I wound it with the help of a bobbin like this, from copper wire with flattened edges.
+
+44
+00:04:30,360 --> 00:04:33,520
+This is the product I got in the course of doing the work.
+
+45
+00:04:35,720 --> 00:04:38,080
+It took about an hour of continuous work.
+
+46
+00:04:39,820 --> 00:04:41,680
+Now you can see I brought out its leads.
+
+47
+00:04:43,300 --> 00:04:48,760
+The start lead is soldered directly to the start of the wire, and the end lead is in heat shrink.
+
+48
+00:04:51,040 --> 00:04:53,080
+Now this part should be well insulated.
+
+49
+00:04:54,820 --> 00:05:02,460
+I'll insulate it with the help of masking tape, to protect the wire with which the current pickup transformer is wound from mechanical damage.
+
+50
+00:05:07,260 --> 00:05:13,100
+I finished the insulation protection of the current sensor, and while the glue dries, fixing the tape end.
+
+51
+00:05:14,480 --> 00:05:16,200
+Let me explain a bit using the schematic.
+
+52
+00:05:17,620 --> 00:05:21,340
+On the schematic, you can notice graphic notations at various points.
+
+53
+00:05:24,040 --> 00:05:26,240
+This is nothing other than a terminal block.
+
+54
+00:05:28,000 --> 00:05:31,020
+At the boundary of these parts wire connections happen.
+
+55
+00:05:33,100 --> 00:05:37,620
+These are sold, cost not much, 40 rubles a piece with the mating part.
+
+56
+00:05:40,220 --> 00:05:42,760
+It connects like this, and is very convenient.
+
+57
+00:05:43,220 --> 00:05:45,420
+You can cut off any number of contact blocks.
+
+58
+00:05:48,770 --> 00:05:51,150
+This is how the board looks in finished form.
+
+59
+00:05:53,010 --> 00:05:54,830
+This is the backside of the board.
+
+60
+00:05:56,350 --> 00:05:58,230
+Wiring done by point-to-point mount.
+
+61
+00:06:00,530 --> 00:06:01,850
+Nothing super complex.
+
+62
+00:06:04,030 --> 00:06:09,250
+Also on the schematic there are leads 1, 2, I explained these in the previous video.
+
+63
+00:06:11,110 --> 00:06:11,720
+And letter notations.
+
+64
+00:06:13,270 --> 00:06:16,110
+Wires will also be connected to these letter notations.
+
+65
+00:06:17,050 --> 00:06:19,590
+I did it, so there wouldn't be a pile up of connectors.
+
+66
+00:06:20,830 --> 00:06:22,890
+That is, they'll be on another sheet.
+
+67
+00:06:23,730 --> 00:06:27,930
+The second part of the schematic, this is sheet 1, passes to sheet 2.
+
+68
+00:06:29,150 --> 00:06:32,310
+And their contacts will be connected with the corresponding letters.
+
+69
+00:06:33,870 --> 00:06:37,250
+These contacts at us are under designations EF.
+
+70
+00:06:38,290 --> 00:06:41,850
+This is for switching the PWM controller to standby mode.
+
+71
+00:06:44,130 --> 00:06:51,270
+That is, when voltage is applied here, I used current output, at pin 9 of the chip it stops generating control pulses.
+
+72
+00:06:52,890 --> 00:06:58,310
+You can notice that here the letter F and the F output are assembled on a divider from resistors.
+
+73
+00:06:59,110 --> 00:07:03,310
+Here I approximately picked the divider, so it'd be 2 to 2.5 volts.
+
+74
+00:07:04,370 --> 00:07:08,650
+From this point, here actually is located the switch and button that we close.
+
+75
+00:07:10,290 --> 00:07:13,770
+And when voltage potential is applied here, generation stops.
+
+76
+00:07:14,550 --> 00:07:22,270
+As soon as voltage potential from here is turned off, the chip switches back to operating mode, which will be quite convenient in practice.
+
+77
+00:07:23,290 --> 00:07:29,010
+Also with letters C and D are marked the inputs for the PC817 optocoupler.
+
+78
+00:07:31,110 --> 00:07:33,450
+Here voltage feedback will also be connected.
+
+79
+00:07:35,570 --> 00:07:41,610
+Anyone who finds it convenient can make voltage regulation feedback if they slightly change this scheme.
+
+80
+00:07:42,610 --> 00:07:47,930
+But I'll use this for stopping generation when 1000 volts is reached at the power supply output.
+
+81
+00:07:47,930 --> 00:07:56,050
+The voltage control at me is assembled on this chain of resistances.
+
+82
+00:07:57,730 --> 00:08:03,570
+Variable resistance of 2 ohm and limiting resistances of 1 ohm and 2.4 ohm.
+
+83
+00:08:07,820 --> 00:08:09,860
+Leads marked A and B.
+
+84
+00:08:10,460 --> 00:08:13,540
+Exactly here power will be supplied to the bridge from the switches.
+
+85
+00:08:16,000 --> 00:08:24,960
+Now I've already partly assembled the system, attached the power module, power pulse transformer to its regular place, cleaned up and soldered the leads.
+
+86
+00:08:28,700 --> 00:08:31,340
+Now we'll move on to fastening the current sensor.
+
+87
+00:08:32,300 --> 00:08:33,120
+You can see.
+
+88
+00:08:35,940 --> 00:08:45,280
+It's visible the wire is bent in such a way, going from this primary winding, that it forms a bend at 90 degrees and goes to the transistors.
+
+89
+00:08:46,660 --> 00:08:48,980
+That is, at this point we can hook in.
+
+90
+00:08:51,740 --> 00:08:54,120
+This goes further to the primary winding.
+
+91
+00:08:55,340 --> 00:08:57,460
+And at this point the current sensor will be placed.
+
+92
+00:08:59,000 --> 00:09:03,660
+Now I'll mount, solder, and move on to installing the board in its regular place.
+
+93
+00:09:04,760 --> 00:09:07,880
+The current sensor is installed in its regular place.
+
+94
+00:09:08,880 --> 00:09:10,020
+Here it is on the wire.
+
+95
+00:09:11,540 --> 00:09:13,280
+The board is also installed.
+
+96
+00:09:15,140 --> 00:09:16,180
+Everything connected.
+
+97
+00:09:16,760 --> 00:09:22,780
+Now for the next experiment, which consists of determining at what frequency our converter will work in steady mode.
+
+98
+00:09:23,200 --> 00:09:36,620
+We need a load, in this case a 60W 220V lamp, a diode bridge with a capacitor, to look at the DC voltage on this lamp, a voltmeter, in this case a tester that'll track the voltage on the lamp, a power
+
+99
+00:09:36,620 --> 00:09:43,180
+source, a battery, and an ammeter that'll show the consumption of the whole device from the battery.
+
+100
+00:09:47,520 --> 00:09:55,680
+To start, we disconnect the current sensor, break one of the wires, it doesn't matter which, in this case I unsoldered it from the board,
+
+101
+00:10:02,700 --> 00:10:09,820
+this wire, and we should connect these two wires together in the scheme, that is, connect pin 9 of the chip to ground.
+
+102
+00:10:10,340 --> 00:10:13,520
+These two wires I connect, in this case they go out connected,
+
+103
+00:10:16,660 --> 00:10:17,800
+to the board.
+
+104
+00:10:19,800 --> 00:10:30,880
+Next step is to switch the trim resistance on the scheme, this 10-comb resistor, to the extreme position, so that the frequency of pulses controlling the FET transistor gates would be.
+
+105
+00:10:32,980 --> 00:10:35,820
+Maximum, in this case 190kHz.
+
+106
+00:10:37,920 --> 00:10:48,920
+The course of work will go like this, track the consumption and track the voltage on the lamp, and when we find the moment at which the voltage on the lamp is maximum and the consumption is minimum,
+
+107
+00:10:50,700 --> 00:10:51,660
+we stop adjusting.
+
+108
+00:10:52,020 --> 00:11:01,820
+The chain is assembled, now we should switch this resistance responsible for pulse duration into the position where the duration of control pulses on the switches will be maximum.
+
+109
+00:11:03,020 --> 00:11:13,440
+I did this beforehand, this variable resistance, now I apply power to the DC-DC converter and see that the load lit up with some glow, and the voltage is slowly increasing.
+
+110
+00:11:15,100 --> 00:11:15,960
+Growing on it.
+
+111
+00:11:16,560 --> 00:11:22,600
+This growth will last some time, because right now the transformer isn't in its mode, the frequency is high.
+
+112
+00:11:23,840 --> 00:11:27,740
+And now observe the ammeter readings at the input and the voltage on the load.
+
+113
+00:11:29,880 --> 00:11:32,500
+We need to set the maximum voltage on the load.
+
+114
+00:11:34,800 --> 00:11:45,480
+Now I'll slowly drop the frequency, and here the frequency went down, and we see that the voltage at us had a moment when it jumped to 200 volts, but the consumption is around 5 amps.
+
+115
+00:11:52,430 --> 00:11:58,410
+I'm looking for the point where consumption will drop, here the ammeter needle is slowly moving to the left.
+
+116
+00:12:08,090 --> 00:12:09,810
+Here I reached a stable moment.
+
+117
+00:12:10,970 --> 00:12:16,270
+Consumption stopped at 4.5 amps, and the voltage is around 185 volts.
+
+118
+00:12:16,990 --> 00:12:18,670
+Now let's see if there's a lower one.
+
+119
+00:12:20,750 --> 00:12:22,710
+There's a moment where it jumps for us.
+
+120
+00:12:25,390 --> 00:12:28,570
+Raise a bit, consumption drops, and output drops.
+
+121
+00:12:30,390 --> 00:12:39,650
+Reduce a bit more, and here there's a moment, narrow, where minimum consumption is less than 4.5 amps and voltage is around 180 volts.
+
+122
+00:12:42,680 --> 00:12:43,820
+That's one point.
+
+123
+00:12:44,160 --> 00:12:46,900
+Now let's see if there's another with reducing frequency.
+
+124
+00:12:50,670 --> 00:12:53,370
+Here was a good mode, 190 volts.
+
+125
+00:12:54,710 --> 00:12:55,870
+Now go lower.
+
+126
+00:13:00,270 --> 00:13:01,910
+Here will be the second point.
+
+127
+00:13:03,750 --> 00:13:10,390
+Pay attention, 190 volts and consumption less than 4.5 amps, somewhere around 4.2 amps.
+
+128
+00:13:12,110 --> 00:13:21,870
+This will most likely be our operating point, but I did such tests beforehand, and for this core with three layers, this frequency is 55 kHz.
+
+129
+00:13:23,930 --> 00:13:27,350
+Frequency, we can already look at with the help of an oscilloscope.
+
+130
+00:13:28,430 --> 00:13:30,970
+I'll hook up the device, and we'll see this.
+
+131
+00:13:31,590 --> 00:13:32,070
+Now look.
+
+132
+00:13:32,970 --> 00:13:35,890
+I'll go down further, observing the operating mode.
+
+133
+00:13:38,650 --> 00:13:39,630
+Going down,
+
+134
+00:13:44,680 --> 00:13:47,500
+and we see the voltage starts to sag.
+
+135
+00:13:54,420 --> 00:13:55,760
+Consumption stays the same.
+
+136
+00:13:57,720 --> 00:14:00,300
+Going lower in frequency makes no sense already.
+
+137
+00:14:00,820 --> 00:14:04,440
+I'll return to the original position, where there'll be maximum voltage.
+
+138
+00:14:16,330 --> 00:14:17,910
+Here it's 185.
+
+139
+00:14:30,150 --> 00:14:31,010
+Skipped a bit.
+
+140
+00:14:33,410 --> 00:14:34,310
+Here it is.
+
+141
+00:14:34,610 --> 00:14:35,830
+This is the operating point.
+
+142
+00:14:36,970 --> 00:14:39,190
+And now let's measure it with the oscilloscope.
+
+143
+00:14:41,210 --> 00:14:44,690
+I hooked up the oscilloscope, and we can observe the oscillogram.
+
+144
+00:14:48,570 --> 00:14:51,910
+In this case, I stopped at a frequency of 50 kHz.
+
+145
+00:14:53,470 --> 00:14:58,110
+This is the working range of the core, somewhere 45 to 60 kHz.
+
+146
+00:14:58,910 --> 00:15:02,270
+On average, I'll stop at 55 kHz of system operation.
+
+147
+00:15:04,410 --> 00:15:07,370
+This will be the normal zone for the core to work in.
+
+148
+00:15:10,150 --> 00:15:11,610
+Raise the frequency slightly.
+
+149
+00:15:20,560 --> 00:15:27,100
+At this frequency, look now, consumption makes 4.2 A and 180 V on the load.
+
+150
+00:15:34,820 --> 00:15:38,240
+On a 12 V battery, got jolted by the current a bit.
+
+151
+00:15:39,900 --> 00:15:43,260
+It happens, the hot end uninsulated bites you.
+
+152
+00:15:51,600 --> 00:15:53,980
+Here we have voltage regulation present.
+
+153
+00:15:58,660 --> 00:16:01,420
+With this, the frequency adjustment ends.
+
+154
+00:16:02,280 --> 00:16:04,320
+Now we'll move on to tuning the current feedback.
+
+155
+00:16:06,500 --> 00:16:10,300
+For the next stage of tuning, we definitely need the oscilloscope.
+
+156
+00:16:10,800 --> 00:16:15,860
+With it we'll track whether the current protection is working or not, and how correctly it works.
+
+157
+00:16:16,940 --> 00:16:19,980
+The probes in this case, two channels will be used.
+
+158
+00:16:20,460 --> 00:16:25,000
+I connect it at these points that send the control signal to the drivers, point 1 and 2.
+
+159
+00:16:27,000 --> 00:16:30,300
+I start the system without applying power to the power module.
+
+160
+00:16:33,140 --> 00:16:35,660
+We see the oscillogram of the system's work.
+
+161
+00:16:38,460 --> 00:16:43,140
+And now I'll reduce the working duration to a position slightly less than half.
+
+162
+00:16:48,740 --> 00:16:54,460
+Next, we need a hefty load with small ohmic resistance, for example, a 300 W lamp.
+
+163
+00:16:55,540 --> 00:16:56,620
+And now what we'll do.
+
+164
+00:16:58,160 --> 00:17:05,260
+Tracking the desired consumption current at which we'd want to stop on the ammeter, I bring the ammeter reading slightly above that point.
+
+165
+00:17:05,980 --> 00:17:09,500
+In this case, I calculate that I'll have maximum consumption of 4.2 V.
+
+166
+00:17:09,500 --> 00:17:11,360
+Maybe slightly higher.
+
+167
+00:17:12,440 --> 00:17:21,300
+For a 12 V battery, this is already a hefty consumption, and going higher than that makes no sense, otherwise the battery will discharge very fast.
+
+168
+00:17:22,720 --> 00:17:24,180
+For my needs this is plenty.
+
+169
+00:17:25,300 --> 00:17:27,540
+The load will turn on between these leads.
+
+170
+00:17:28,480 --> 00:17:32,660
+First lead of the transformer and last, to give maximum load that can be.
+
+171
+00:17:34,480 --> 00:17:37,820
+Here is the duration now, and I'll briefly connect the lamp.
+
+172
+00:17:39,620 --> 00:17:40,740
+Ah, power.
+
+173
+00:17:41,220 --> 00:17:43,740
+Power can now be applied to the power module.
+
+174
+00:17:44,580 --> 00:17:45,280
+Apply power.
+
+175
+00:17:46,860 --> 00:17:47,960
+And now turn on.
+
+176
+00:17:49,920 --> 00:17:51,300
+Yes, power applied.
+
+177
+00:17:54,200 --> 00:17:56,780
+We see on the ammeter 11a consumption.
+
+178
+00:17:58,800 --> 00:18:00,200
+There's a discharge.
+
+179
+00:18:01,800 --> 00:18:04,140
+Add the duration of control pulses a bit.
+
+180
+00:18:11,160 --> 00:18:11,960
+14.
+
+181
+00:18:15,330 --> 00:18:16,390
+Add more.
+
+182
+00:18:22,060 --> 00:18:22,660
+19.
+
+183
+00:18:27,370 --> 00:18:27,970
+More.
+
+184
+00:18:36,880 --> 00:18:39,300
+Already flies past 30, a lot.
+
+185
+00:18:41,680 --> 00:18:46,380
+The converter can of course work in this mode, and more, but for that it'd need cooling air.
+
+186
+00:18:47,640 --> 00:18:50,680
+I wanted the system to work specifically without cooling.
+
+187
+00:18:52,960 --> 00:18:54,340
+21a at maximum.
+
+188
+00:18:55,760 --> 00:18:56,840
+Approximately what's needed.
+
+189
+00:18:58,140 --> 00:19:01,780
+Now, when it's tuned like this, we can open these contacts.
+
+190
+00:19:04,680 --> 00:19:05,980
+Right now they're closed.
+
+191
+00:19:07,440 --> 00:19:08,780
+And here we'll pick a resistance.
+
+192
+00:19:10,400 --> 00:19:11,920
+It connects at this point.
+
+193
+00:19:13,600 --> 00:19:18,680
+And this resistance, it's marked, determines the final trip current of the current protection.
+
+194
+00:19:19,980 --> 00:19:23,940
+That is, we need to tune this protection slightly above 20a.
+
+195
+00:19:26,840 --> 00:19:30,580
+Now I start picking the resistance starting from approximately 10 ohm.
+
+196
+00:19:31,900 --> 00:19:36,360
+Solder 10 ohm, and look at what amperage of consumption the current protection trips at.
+
+197
+00:19:38,140 --> 00:19:40,600
+So, I soldered a 10 ohm resistor.
+
+198
+00:19:41,460 --> 00:19:44,700
+I recommend you solder properly, so the contact is very good.
+
+199
+00:19:45,760 --> 00:19:47,680
+And now short the transformer output.
+
+200
+00:19:49,900 --> 00:19:52,760
+We see, observe the changes in duration.
+
+201
+00:19:53,680 --> 00:19:58,300
+The duration of control pulses, when load is connected, it reduces.
+
+202
+00:19:59,260 --> 00:20:03,660
+That is, the system starts confidently catching in the current protection trips.
+
+203
+00:20:04,360 --> 00:20:08,860
+Now I can add maximum duration of the control signal and test the current protection.
+
+204
+00:20:12,160 --> 00:20:13,740
+Here we see 10a.
+
+205
+00:20:14,780 --> 00:20:16,620
+Pay attention to the ammeter.
+
+206
+00:20:19,860 --> 00:20:21,300
+Now check on a short.
+
+207
+00:20:22,640 --> 00:20:25,240
+On a short, slightly above 10a.
+
+208
+00:20:26,360 --> 00:20:28,520
+The protection's already working.
+
+209
+00:20:28,900 --> 00:20:32,620
+We can confidently say the turn count of the transformer was picked correctly.
+
+210
+00:20:35,700 --> 00:20:40,620
+Now the task is to bring the consumption at current protection trip up to 20a.
+
+211
+00:20:41,900 --> 00:20:49,240
+For this, this resistance that I soldered, will smoothly reduce its rating in ohms until we bring it to this point.
+
+212
+00:20:51,860 --> 00:20:55,740
+The duration of control pulses, meanwhile, can be held at maximum.
+
+213
+00:20:56,440 --> 00:20:59,260
+Next test for us, 8.5 ohm.
+
+214
+00:21:00,540 --> 00:21:01,620
+Apply power.
+
+215
+00:21:03,080 --> 00:21:06,280
+We see the duration of pulses at maximum and the load.
+
+216
+00:21:08,160 --> 00:21:09,060
+Observe the ammeter.
+
+217
+00:21:11,440 --> 00:21:12,720
+11.5a.
+
+218
+00:21:14,820 --> 00:21:22,040
+Don't pay attention to the fact that the 300W lamp is glowing weakly, because this is the last lead, its high voltage.
+
+219
+00:21:22,880 --> 00:21:25,420
+You see for yourselves what voltage stretches here.
+
+220
+00:21:26,720 --> 00:21:30,120
+The lamp will burn normally on a reduced number of taps.
+
+221
+00:21:34,350 --> 00:21:36,450
+Short, 11.5a.
+
+222
+00:21:37,170 --> 00:21:39,410
+We can reduce the resistance rating further.
+
+223
+00:21:40,810 --> 00:21:43,330
+Next resistance, 4.6 ohm.
+
+224
+00:21:44,790 --> 00:21:46,830
+Apply power and test on load.
+
+225
+00:21:51,210 --> 00:21:52,790
+18a is the trip point.
+
+226
+00:21:54,750 --> 00:21:58,790
+As you can see on this high voltage tap, the lamp glow increases.
+
+227
+00:22:01,650 --> 00:22:04,350
+Now I test through the lamp, do a short circuit.
+
+228
+00:22:05,850 --> 00:22:07,490
+Same 18a on the case.
+
+229
+00:22:10,850 --> 00:22:15,070
+We're somewhere close, and now we need to reduce by 0.1 ohm.
+
+230
+00:22:17,250 --> 00:22:23,670
+I'll do this, so as not to drag out the video, I won't show the whole picking system by 0.1 ohm.
+
+231
+00:22:24,730 --> 00:22:28,510
+I picked it like this, now visible what a garland of resistances.
+
+232
+00:22:29,570 --> 00:22:32,610
+Its total resistance is 4.1 ohm.
+
+233
+00:22:34,530 --> 00:22:36,230
+Now I achieved what I need.
+
+234
+00:22:37,930 --> 00:22:39,850
+Apply power and on load.
+
+235
+00:22:43,940 --> 00:22:44,360
+20a.
+
+236
+00:22:45,540 --> 00:22:46,900
+And check on short.
+
+237
+00:22:48,920 --> 00:22:50,320
+Short also 20a.
+
+238
+00:22:51,500 --> 00:22:58,160
+On the oscilloscope, it's also well visible that the current protection trips, reduces the duration of control pulses.
+
+239
+00:22:59,120 --> 00:23:00,120
+All excellent.
+
+240
+00:23:02,140 --> 00:23:10,720
+I want to say that such an operating mode when a short circuit happens, this is the most complex mode for switch operation in such a current limiting mode.
+
+241
+00:23:12,300 --> 00:23:15,080
+And in this mode, the heat sink will heat up the most.
+
+242
+00:23:18,940 --> 00:23:28,080
+If, for example, you operate in such a mode, manually reduce, then here heating will be, here I set it, and in such a mode heating will be minimum.
+
+243
+00:23:30,810 --> 00:23:41,110
+And in the mode when the duration is at maximum, specifically when the system trips the current protection, at that moment heating of the heat sink will be exactly here.
+
+244
+00:23:41,710 --> 00:23:43,270
+But the heating shouldn't be strong.
+
+245
+00:23:45,070 --> 00:23:47,930
+Approximately at, now I'll short the system, look.
+
+246
+00:23:51,380 --> 00:23:54,080
+The battery is already draining of course.
+
+247
+00:23:59,560 --> 00:24:03,360
+Look, there's heat release on the order of 50 degrees.
+
+248
+00:24:05,340 --> 00:24:10,520
+This converter isn't planned to operate in such a tough mode, especially without cooling.
+
+249
+00:24:11,620 --> 00:24:12,860
+So everything's normal.
+
+250
+00:24:13,920 --> 00:24:17,560
+The next stage is that we need to tune the current protection trip.
+
+251
+00:24:20,140 --> 00:24:23,560
+We conducted the experiment, picked this resistance here.
+
+252
+00:24:25,000 --> 00:24:31,820
+To this we'll add a variable resistance, so we'd have smooth trip regulation from 0.10 A to 20 A.
+
+253
+00:24:32,920 --> 00:24:34,940
+Any regulation can be set.
+
+254
+00:24:35,440 --> 00:24:39,120
+I decided to stop on this circuit solution for current protection regulation.
+
+255
+00:24:41,000 --> 00:24:43,960
+It's done on two resistances connected in series.
+
+256
+00:24:45,880 --> 00:24:49,320
+And in parallel to one of them is connected a variable resistance.
+
+257
+00:24:51,060 --> 00:24:58,380
+Thus, in case the slider middle point fails, we have current protection that with the help of these two resistances remains functional.
+
+258
+00:24:59,040 --> 00:25:08,820
+And we don't risk getting into such a situation when, with where, if we simply connected this point here, at some moment our system would be left without current protection.
+
+259
+00:25:09,560 --> 00:25:16,100
+If you remove this resistance, then the system will operate in the mode of the smallest current passing through the power switches.
+
+260
+00:25:17,120 --> 00:25:19,860
+It'll supply the smallest duration on their opening.
+
+261
+00:25:21,360 --> 00:25:22,820
+Now I'll show how this works.
+
+262
+00:25:24,200 --> 00:25:25,440
+Approximately picked ratings.
+
+263
+00:25:26,320 --> 00:25:27,780
+Further they'll be slightly changed.
+
+264
+00:25:29,000 --> 00:25:33,920
+Announcing 0.7 ohm, 120 ohm and one comb.
+
+265
+00:25:34,360 --> 00:25:35,080
+This resistance.
+
+266
+00:25:36,640 --> 00:25:37,380
+Apply power.
+
+267
+00:25:40,490 --> 00:25:44,010
+Regulation starts from one amp and goes up to 19 amps.
+
+268
+00:25:47,480 --> 00:25:48,880
+Add with the slider.
+
+269
+00:25:54,000 --> 00:25:54,760
+Slowly moving.
+
+270
+00:25:56,140 --> 00:25:58,300
+See how the current protection works now.
+
+271
+00:26:00,380 --> 00:26:02,800
+Tune, for example, to two amps consumption.
+
+272
+00:26:06,430 --> 00:26:08,470
+Further, five amps consumption.
+
+273
+00:26:10,370 --> 00:26:12,530
+See the duration of control pulses.
+
+274
+00:26:18,020 --> 00:26:21,580
+And it doesn't matter anymore how we control the output voltage.
+
+275
+00:26:21,900 --> 00:26:23,080
+We can only reduce it.
+
+276
+00:26:24,120 --> 00:26:28,840
+But on increase to maximum, we'll have our desired one tuned with this slider.
+
+277
+00:26:30,200 --> 00:26:33,120
+Looks like the resistance turned out a bit low quality.
+
+278
+00:26:33,120 --> 00:26:34,880
+There are sharp jerks.
+
+279
+00:26:36,060 --> 00:26:36,800
+We'll need to replace.
+
+280
+00:26:38,020 --> 00:26:39,240
+But this is all fixable.
+
+281
+00:26:40,020 --> 00:26:41,080
+Now bring to maximum.
+
+282
+00:26:43,040 --> 00:26:43,760
+18 amps.
+
+283
+00:26:45,780 --> 00:26:50,120
+Yes, the resistance needs to be changed, but regulation is present.
+
+284
+00:26:53,610 --> 00:26:55,410
+So on this scheme we can stop.
+
+285
+00:26:58,980 --> 00:27:02,740
+At this point, we can consider tuning of the current protection finished.
+
+286
+00:27:04,800 --> 00:27:08,080
+The system successfully handles via feedback.
+
+287
+00:27:09,100 --> 00:27:10,820
+Until the next videos.
+
+288
+00:27:11,740 --> 00:27:14,520
+Successful experiments to everyone and all the best.
+

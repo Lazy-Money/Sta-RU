@@ -1,0 +1,1496 @@
+1
+00:00:00,000 --> 00:00:01,340
+Good day, dear viewers.
+
+2
+00:00:02,540 --> 00:00:08,000
+Today we'll examine a circuit designed for controlling a Tesla transformer based on a half-bridge inverter.
+
+3
+00:00:09,840 --> 00:00:23,780
+The master generator is assembled on the TL494 chip, and its frequency with ratings of 150 pF and 10K resistance can change in the range from 230kHz to 640kHz.
+
+4
+00:00:24,540 --> 00:00:37,120
+I don't recommend making Tesla transformers with frequency below 200kHz, since at this frequency the skin effect on human skin already disappears, and current is then able to penetrate under the skin
+
+5
+00:00:37,120 --> 00:00:38,500
+causing internal burns.
+
+6
+00:00:39,400 --> 00:00:42,000
+That is, below 200kHz we don't go.
+
+7
+00:00:44,380 --> 00:00:53,600
+Also, the chip when it works in push-pull mode, the maximum operating range in such a connection, I manage to push to 680-700kHz.
+
+8
+00:00:55,460 --> 00:00:59,880
+That is, if you use this variant, we won't be able to go above this frequency.
+
+9
+00:01:00,920 --> 00:01:02,460
+There's such a frequency damper.
+
+10
+00:01:04,260 --> 00:01:12,400
+Further, after the chip and the outputs, the signal goes to the TC4093 chip on which the modulation system is assembled.
+
+11
+00:01:13,460 --> 00:01:18,440
+The modulating signal we take through an HCPL31 20 opto driver.
+
+12
+00:01:20,140 --> 00:01:26,180
+This driver is installed here for the purpose of protecting our lab generator from high-frequency pickups.
+
+13
+00:01:26,880 --> 00:01:28,180
+Here there's optical isolation.
+
+14
+00:01:29,240 --> 00:01:32,620
+And pay attention, I marked common generator and common signal.
+
+15
+00:01:33,680 --> 00:01:37,200
+The generator common nowhere connects to common in the scheme.
+
+16
+00:01:37,880 --> 00:01:40,140
+That is, we have full system isolation.
+
+17
+00:01:40,700 --> 00:01:48,140
+If your rectangular pulse generator has an amplitude of 5V, then we put a resistance of 120 ohm at the input.
+
+18
+00:01:48,720 --> 00:01:54,120
+If amplitude is 12 to 15V, then resistance is 360 ohm.
+
+19
+00:01:55,340 --> 00:02:03,920
+Further, the modulating signal from the HCPL31 20 driver is supplied through a 47 ohm current limiting resistor to a switch.
+
+20
+00:02:04,520 --> 00:02:14,540
+The switch is introduced into the scheme so we could switch the whole system to continuous work mode or work in burst mode with the modulation frequency that's at the input.
+
+21
+00:02:15,940 --> 00:02:22,880
+Signal modulation is done directly on the TC4093 chip since at its input it has logic 2.
+
+22
+00:02:23,620 --> 00:02:29,100
+That is, if there's a logical 1 at each input of the logic element, the signal passes through.
+
+23
+00:02:29,920 --> 00:02:33,340
+If 1 and logical 0, the signal doesn't pass.
+
+24
+00:02:34,200 --> 00:02:35,620
+With this we do modulation.
+
+25
+00:02:36,340 --> 00:02:42,360
+See that the modulating signal comes to pin one of the logic element and the signal from the chip comes to pin two.
+
+26
+00:02:42,980 --> 00:02:49,640
+The logic element is inverting here, so from the output we need to supply to one more logic element and flip this signal.
+
+27
+00:02:50,640 --> 00:02:53,620
+That is, back from logical 0 to logical 1.
+
+28
+00:02:54,180 --> 00:02:59,120
+This way we get an analog of the signal that we had at the output of the TL494 chip.
+
+29
+00:03:00,400 --> 00:03:05,740
+And further this signal comes to the IR2110 or IR2113 driver.
+
+30
+00:03:07,860 --> 00:03:13,520
+This chip is a push-pull driver capable of working in half-bridge scheme mode with bootstrap power.
+
+31
+00:03:16,000 --> 00:03:18,400
+A driver up to 2A in pulse.
+
+32
+00:03:18,800 --> 00:03:19,580
+Not too powerful.
+
+33
+00:03:20,900 --> 00:03:22,780
+So here are the main moments.
+
+34
+00:03:23,480 --> 00:03:25,280
+Here we have a bootstrap diode.
+
+35
+00:03:25,860 --> 00:03:32,320
+I used a diode of brand UF4007, a fast-acting diode with 1000V voltage.
+
+36
+00:03:33,280 --> 00:03:35,620
+And pay special attention to this capacitor.
+
+37
+00:03:36,460 --> 00:03:38,220
+I marked it, tantalum capacitor.
+
+38
+00:03:38,820 --> 00:03:40,960
+Desirable to find exactly this kind here.
+
+39
+00:03:42,020 --> 00:03:45,760
+Its parameters are somewhere about 20F, 25V.
+
+40
+00:03:46,560 --> 00:03:52,500
+If you can't find such in stores, put an electrolytic here, also at 20 to 25F quality.
+
+41
+00:03:53,380 --> 00:03:58,300
+And parallel to it put a high-quality film capacitor, somewhere 2 to 5F.
+
+42
+00:04:00,000 --> 00:04:02,920
+You can replace this tantalum capacitor this way.
+
+43
+00:04:03,980 --> 00:04:05,600
+And the next important moment.
+
+44
+00:04:06,660 --> 00:04:07,280
+Here it's marked.
+
+45
+00:04:07,920 --> 00:04:15,320
+When the scheme works in continuous mode, track the temperature of the power keys driver, smoothly raising the supply voltage on the keys.
+
+46
+00:04:16,040 --> 00:04:17,700
+This is the very main moment.
+
+47
+00:04:18,340 --> 00:04:21,860
+The operating temperature of this driver is up to 150°.
+
+48
+00:04:22,620 --> 00:04:30,040
+Briefly, if this is a branded driver, not a Chinese fake, it can withstand overloads up to 300° for 10 seconds.
+
+49
+00:04:30,860 --> 00:04:33,200
+But I don't recommend subjecting it to such a test.
+
+50
+00:04:34,800 --> 00:04:38,360
+I, say, hold this chip in a mode up to 100°.
+
+51
+00:04:39,840 --> 00:04:41,440
+So, I track this moment.
+
+52
+00:04:43,020 --> 00:04:47,120
+Otherwise, there's a risk that the driver will fail from internal thermal breakdown.
+
+53
+00:04:49,960 --> 00:04:52,960
+Smoothly raise voltage on the keys and track the temperature.
+
+54
+00:04:53,560 --> 00:04:55,360
+This is a very important moment.
+
+55
+00:04:55,960 --> 00:05:02,460
+The transistors used in our half-bridge scheme will be the IRF series with a rating of possible voltage from 100V.
+
+56
+00:05:03,740 --> 00:05:07,680
+This is the voltage between source and drain of the FET key.
+
+57
+00:05:08,640 --> 00:05:10,440
+This is the source point, source.
+
+58
+00:05:12,720 --> 00:05:14,440
+So, 100V for us.
+
+59
+00:05:14,760 --> 00:05:23,320
+This is the IRF510 and the maximum rating for which the 2113 driver is designed is work with supplied voltage of 600V.
+
+60
+00:05:24,200 --> 00:05:30,260
+The 2110 driver, 500V can be supplied at the power key's input up to this value.
+
+61
+00:05:32,910 --> 00:05:36,410
+I recommend using the final transistor from the IRF series.
+
+62
+00:05:36,790 --> 00:05:38,450
+This is the IRF840.
+
+63
+00:05:38,810 --> 00:05:40,230
+I applied it here in my scheme.
+
+64
+00:05:42,010 --> 00:05:46,050
+Further, we see that here a divider is assembled on two capacitors.
+
+65
+00:05:47,290 --> 00:05:50,430
+These capacitors are desirable to take of big dimensions.
+
+66
+00:05:50,430 --> 00:05:54,090
+I took it 630V for 0.7F.
+
+67
+00:05:54,630 --> 00:05:56,470
+They also form for us the middle point.
+
+68
+00:05:57,550 --> 00:06:03,890
+The feature of the half-bridge scheme is that it divides the input voltage applied to the keys in half at this point.
+
+69
+00:06:05,610 --> 00:06:10,870
+If you wish, this half-bridge scheme can very easily be converted into a full bridge.
+
+70
+00:06:11,470 --> 00:06:13,790
+For this purpose, take one more analogous driver.
+
+71
+00:06:15,110 --> 00:06:19,710
+Assembled also this whole part with power keys and connected only these capacitors.
+
+72
+00:06:21,190 --> 00:06:25,090
+And the connection is all exactly the same as in this scheme.
+
+73
+00:06:25,730 --> 00:06:28,610
+Only there the control signal is supplied diagonally.
+
+74
+00:06:30,630 --> 00:06:38,290
+If here we see that from pin 11 to pin 10, then on the second chip the signal will be supplied from pin 11 to pin 12.
+
+75
+00:06:39,130 --> 00:06:43,050
+That is, supplied diagonally, so our keys also work diagonally.
+
+76
+00:06:44,090 --> 00:06:50,410
+Between the middle point that the capacitor dividers form and the middle point between the power keys is located our load.
+
+77
+00:06:50,950 --> 00:06:55,570
+In this case where this scheme was applied, this is the Tesla transformer inductor.
+
+78
+00:06:56,830 --> 00:07:08,410
+Since our inductor has a length on the order of several meters, in the range of 3 to 4, small resistance, small inductance, currents through power keys in continuous mode of the scheme's work can be
+
+79
+00:07:08,410 --> 00:07:08,930
+significant.
+
+80
+00:07:10,350 --> 00:07:14,950
+Generally, this scheme was developed specifically for work in modulation mode.
+
+81
+00:07:15,230 --> 00:07:26,390
+Since when the Tesla transformer works in continuous mode, all the interesting moments connected with the interaction of the Tesla transformer with the surrounding environment aren't observed at us.
+
+82
+00:07:27,590 --> 00:07:29,850
+So here it's applied in work with modulation.
+
+83
+00:07:32,730 --> 00:07:43,430
+Whoever will operate a Tesla transformer in continuous mode without modulation, then you must definitely track temperature here, an important moment so as not to burn the driver.
+
+84
+00:07:44,790 --> 00:07:49,490
+And this inductor wound to bigger meterage, picked according to your Tesla transformer.
+
+85
+00:07:51,090 --> 00:07:53,870
+Now let's examine our device directly in iron.
+
+86
+00:07:54,410 --> 00:07:58,730
+I made this build in the form of an étagère so I could do convenient repair if needed.
+
+87
+00:08:01,580 --> 00:08:11,380
+In the upper part of the device is the control, the TL-494 chip, TC-4093, and the HCPL-3120 optodriver.
+
+88
+00:08:12,020 --> 00:08:15,040
+This is the switch shown on the scheme that turns on modulation.
+
+89
+00:08:16,260 --> 00:08:19,300
+And see here, two multi-turn trim resistors.
+
+90
+00:08:20,280 --> 00:08:28,580
+One resistor is responsible for frequency, this is the 10 comb, and the other resistor is responsible for the duration of control signals.
+
+91
+00:08:29,960 --> 00:08:34,780
+Also if marked here as pulse duration, change the duration of control signals.
+
+92
+00:08:35,240 --> 00:08:38,660
+This way we can limit the current at the output of our half-bridge inverter.
+
+93
+00:08:40,260 --> 00:08:43,920
+This is one of the variants of adjustment that can be done in this scheme.
+
+94
+00:08:45,200 --> 00:08:49,060
+This is the regulator, the stabilizer, and auxiliary capacitors.
+
+95
+00:08:50,800 --> 00:08:57,140
+The keys are located on heat sinks opposite each other on dielectric substrates, smeared with thermal paste.
+
+96
+00:09:01,020 --> 00:09:06,840
+This is how the 4.7F capacitors at 630V look, here is the pair of them.
+
+97
+00:09:08,020 --> 00:09:11,200
+Here is one capacitor, and there inside is the second.
+
+98
+00:09:12,340 --> 00:09:16,020
+This is all assembled on one board, directly with the power keys.
+
+99
+00:09:17,260 --> 00:09:27,380
+Here you can see the IR2113 driver, and from the bottom of the scheme is screwed the DC-DC converter that converts 12V from the battery to 16V.
+
+100
+00:09:29,380 --> 00:09:35,180
+I try to work with a voltage of 16 to 18V, so there'd be quality opening of the power key gates.
+
+101
+00:09:36,700 --> 00:09:41,200
+If you don't have such a converter, it can also be acquired separately in radio stores.
+
+102
+00:09:41,900 --> 00:09:45,580
+Then you can apply 12V directly from the battery at this power point.
+
+103
+00:09:47,580 --> 00:09:50,340
+The scheme will work, nothing scary will happen.
+
+104
+00:09:51,340 --> 00:09:53,960
+I simply apply such systems, more convenient.
+
+105
+00:09:54,660 --> 00:10:01,780
+Here full galvanic isolation, and I can connect such a homemade converter, to the lab power supply, and not to the battery.
+
+106
+00:10:04,960 --> 00:10:07,480
+So, in principle there's nothing more here.
+
+107
+00:10:08,280 --> 00:10:12,900
+Here as positioned to each other on dielectric substrates, smeared with thermal paste.
+
+108
+00:10:15,860 --> 00:10:20,640
+So, this is how the 4.7F 630V capacitors look.
+
+109
+00:10:21,580 --> 00:10:24,940
+Here is one capacitor, and there inside is the second.
+
+110
+00:10:25,860 --> 00:10:29,720
+This is all assembled on one board, directly with the power keys.
+
+111
+00:10:31,140 --> 00:10:43,920
+Here you can see the IR2113 driver, and from the bottom of the scheme is screwed exactly the DC-DC converter, this one, which converts 12V from the battery to 16V.
+
+112
+00:10:44,460 --> 00:10:49,520
+I try to work with 16 to 18V voltage, so there'd be quality opening of power key gates.
+
+113
+00:10:52,100 --> 00:10:56,860
+But if you don't have such a converter, it can also be acquired separately in radio stores.
+
+114
+00:10:57,700 --> 00:11:01,140
+Then you can apply 12V directly from the battery at this power point.
+
+115
+00:11:03,240 --> 00:11:05,920
+The scheme will work, nothing scary will happen.
+
+116
+00:11:07,060 --> 00:11:09,980
+It's simply more convenient to apply such systems.
+
+117
+00:11:10,680 --> 00:11:17,720
+Here full galvanic isolation, and I can connect such a homemade converter to the lab power supply, and not to the battery.
+
+118
+00:11:19,600 --> 00:11:21,420
+Pay attention to this capacitor.
+
+119
+00:11:22,200 --> 00:11:23,260
+I recommend to use.
+
+120
+00:11:23,880 --> 00:11:27,340
+Here it's 150pF, this is on the scheme.
+
+121
+00:11:28,380 --> 00:11:37,660
+I recommend to use capacitors with small TK here, that is, this coefficient that shows the dependency of capacity drift of a capacitor on ambient temperature.
+
+122
+00:11:37,660 --> 00:11:41,540
+In this case, I used tubular soviet capacitors.
+
+123
+00:11:42,660 --> 00:11:47,160
+Now you can use SMD capacitors, available in radio parts and stores.
+
+124
+00:11:49,240 --> 00:11:52,440
+So, here the modulating signal input is supplied.
+
+125
+00:11:54,160 --> 00:11:57,460
+Well, and that's all, there's not much more here for us.
+
+126
+00:11:58,900 --> 00:12:02,320
+Now let's move to viewing as silograms of our devices work.
+
+127
+00:12:03,000 --> 00:12:08,540
+So, first I assembled this part of the device fully through the driver power and checked separately.
+
+128
+00:12:10,260 --> 00:12:15,140
+Now the oscilloscope probes stand at these points, after the 33 ohm resistor.
+
+129
+00:12:17,360 --> 00:12:20,960
+Power is supplied to the scheme, and we observe the oscillogram.
+
+130
+00:12:22,600 --> 00:12:28,220
+Here you see that we have two signals, they're antiphase, between them there's a mandatory pause.
+
+131
+00:12:29,360 --> 00:12:33,060
+We can also check the regulation of frequency and duration.
+
+132
+00:12:33,960 --> 00:12:35,840
+Now I'll rotate the trim resistor.
+
+133
+00:12:37,200 --> 00:12:39,260
+The frequency changes for us.
+
+134
+00:12:42,850 --> 00:12:44,210
+The system works.
+
+135
+00:12:45,730 --> 00:12:48,750
+Well, and you can also check how the pulse duration changes.
+
+136
+00:12:51,420 --> 00:12:54,320
+The second trim resistor should change smoothly.
+
+137
+00:13:07,490 --> 00:13:09,950
+The resistors here are multi-turn.
+
+138
+00:13:10,990 --> 00:13:13,050
+They won't unscrew to the end.
+
+139
+00:13:13,750 --> 00:13:16,210
+You can see the pulse clearly changes its duration.
+
+140
+00:13:17,170 --> 00:13:19,150
+And also in the reverse direction.
+
+141
+00:13:21,550 --> 00:13:22,890
+Here is our frequency.
+
+142
+00:13:24,890 --> 00:13:25,930
+Everything works.
+
+143
+00:13:26,670 --> 00:13:34,610
+Now when switching the switch to modulation mode, the signal should fully disappear because the modulation signal isn't supplied at the input.
+
+144
+00:13:35,190 --> 00:13:39,410
+Now let's connect the input signal and look at how the scheme will work with its presence.
+
+145
+00:13:40,250 --> 00:13:44,250
+Switch flipped to modulation mode and I apply the modulating signal.
+
+146
+00:13:46,880 --> 00:13:49,100
+Here you see a characteristic change.
+
+147
+00:13:52,260 --> 00:13:57,040
+Now I'll stop the signal and you can see that our scheme has switched to pulse bursts mode.
+
+148
+00:13:58,660 --> 00:14:04,600
+Since the oscilloscope now isn't synced with the input signal, we'll observe its jerk back and forth.
+
+149
+00:14:06,400 --> 00:14:09,600
+Now we'll change the duration of the modulating signal.
+
+150
+00:14:11,540 --> 00:14:14,860
+40%, 30%, 20%, 10%.
+
+151
+00:14:17,060 --> 00:14:21,120
+The sync caught the signal well and it's visible that we have a burst of pulses.
+
+152
+00:14:25,190 --> 00:14:27,190
+You can examine on the pause too.
+
+153
+00:14:27,730 --> 00:14:32,430
+Also in this burst the signal is clearly in antiphase, doesn't go anywhere.
+
+154
+00:14:33,270 --> 00:14:35,090
+That is, the system works stably.
+
+155
+00:14:35,710 --> 00:14:37,210
+Further, I reduce the duration.
+
+156
+00:14:38,630 --> 00:14:40,730
+The duration makes only 1%.
+
+157
+00:14:44,380 --> 00:14:45,740
+Such a short burst.
+
+158
+00:14:47,800 --> 00:14:49,020
+Further, I reduce.
+
+159
+00:14:52,620 --> 00:14:53,820
+You can examine too.
+
+160
+00:14:55,900 --> 00:14:57,700
+That is, the system works stably.
+
+161
+00:14:58,480 --> 00:15:02,620
+There are 4 pulses on one key, supplied, and 3 pulses on the other.
+
+162
+00:15:04,160 --> 00:15:05,320
+I reduce further.
+
+163
+00:15:11,690 --> 00:15:13,830
+0.4% pulse duration.
+
+164
+00:15:15,150 --> 00:15:16,790
+Here now 0.1%.
+
+165
+00:15:16,790 --> 00:15:20,930
+That is, you see effectively 1 signal remained.
+
+166
+00:15:23,010 --> 00:15:23,710
+Opening.
+
+167
+00:15:24,430 --> 00:15:25,210
+I add duration.
+
+168
+00:15:26,510 --> 00:15:31,150
+0.2% at modulation frequency done at frequency 1 kHz.
+
+169
+00:15:32,230 --> 00:15:33,710
+Such a signal we have.
+
+170
+00:15:34,410 --> 00:15:38,150
+But if I roll, you see effectively only peak signals remained.
+
+171
+00:15:39,470 --> 00:15:41,910
+Such as a check of our master logic part.
+
+172
+00:15:42,410 --> 00:15:44,370
+And we see that it's serviceable.
+
+173
+00:15:45,010 --> 00:15:48,510
+Now I can switch the switch to continuous generation mode of the scheme.
+
+174
+00:15:49,630 --> 00:15:51,150
+And return to the original.
+
+175
+00:15:52,510 --> 00:15:58,330
+After I check the master logic part, the signal is supplied already to the power part, to the driver.
+
+176
+00:15:59,030 --> 00:16:00,330
+And I move to its testing.
+
+177
+00:16:00,950 --> 00:16:05,270
+Now I'll move the oscilloscope to these points, on the FET transistor gates.
+
+178
+00:16:06,430 --> 00:16:09,670
+And immediately, I want to draw your attention to this moment.
+
+179
+00:16:10,290 --> 00:16:15,390
+That you need to look in the usual mode when we look at the oscilloscope relative to the common wire.
+
+180
+00:16:17,330 --> 00:16:23,410
+But in half-bridge and bridge systems, in no case can the second probe's common wire be put at this point.
+
+181
+00:16:24,130 --> 00:16:28,650
+Because you'll short-close this transistor through the common probe of the oscilloscope.
+
+182
+00:16:29,910 --> 00:16:31,510
+And the driver may fail.
+
+183
+00:16:32,670 --> 00:16:35,530
+Or the power key, if this system is under load.
+
+184
+00:16:36,170 --> 00:16:40,670
+That is, you do a direct short-circuit of the upper arm key on the common wire.
+
+185
+00:16:42,210 --> 00:16:46,570
+Now before you is the oscillogram of the driver's work on the power key gates.
+
+186
+00:16:47,590 --> 00:16:49,870
+You see here some sag on the front edge.
+
+187
+00:16:50,250 --> 00:16:52,090
+That is the gate charging goes for us.
+
+188
+00:16:52,870 --> 00:16:55,450
+The driver, reminder, is 2A at us.
+
+189
+00:16:55,730 --> 00:16:56,590
+Not very powerful.
+
+190
+00:16:56,990 --> 00:16:58,390
+So we have such an oscillogram.
+
+191
+00:16:59,470 --> 00:17:02,310
+The driver works through a 24-ohm resistance.
+
+192
+00:17:02,310 --> 00:17:07,250
+I picked it as optimal under these IRF840 transistors.
+
+193
+00:17:08,470 --> 00:17:09,650
+Here I circled it.
+
+194
+00:17:10,950 --> 00:17:13,230
+This resistor is marked with an asterisk.
+
+195
+00:17:13,870 --> 00:17:17,190
+It will generally need to be picked individually under your power keys.
+
+196
+00:17:18,790 --> 00:17:22,870
+What you choose here in this line from 510 to 840.
+
+197
+00:17:23,770 --> 00:17:26,170
+This resistance affects driver heating.
+
+198
+00:17:26,490 --> 00:17:29,910
+That is the final current that'll pass when charging the power key gate.
+
+199
+00:17:32,350 --> 00:17:33,930
+You'll play with this parameter.
+
+200
+00:17:34,930 --> 00:17:37,890
+The rear edge, you see, is quite sharp.
+
+201
+00:17:39,210 --> 00:17:42,050
+For this edge the power key gate discharge goes.
+
+202
+00:17:44,390 --> 00:17:49,710
+And for its sharp discharge is responsible this diode connected counter to the input pulse.
+
+203
+00:17:50,870 --> 00:17:54,370
+And through it the discharge bypass of this resistance is done.
+
+204
+00:17:54,870 --> 00:17:59,170
+So you see that the charge of the gate capacity is done more lengthily by time.
+
+205
+00:17:59,410 --> 00:18:00,970
+And the discharge very sharply.
+
+206
+00:18:03,110 --> 00:18:05,990
+The gate capacity discharges through the diode.
+
+207
+00:18:06,410 --> 00:18:10,290
+And inside on the driver's arm is located a forward-reverse transistor.
+
+208
+00:18:11,430 --> 00:18:13,670
+That is N-channel and P-channel.
+
+209
+00:18:14,190 --> 00:18:19,790
+And exactly through the P-channel transistor the discharge of gate capacity to scheme common happens.
+
+210
+00:18:21,230 --> 00:18:22,790
+This is for the lower key.
+
+211
+00:18:23,150 --> 00:18:28,110
+And here the gate discharge happens to the middle point for the key in the upper arm of our half bridge.
+
+212
+00:18:32,390 --> 00:18:34,810
+I convinced myself we have the oscillogram.
+
+213
+00:18:35,210 --> 00:18:36,970
+Also sweep through frequency.
+
+214
+00:18:37,510 --> 00:18:38,890
+Look that the frequency changes.
+
+215
+00:18:39,650 --> 00:18:41,250
+The driver should react adequately.
+
+216
+00:18:42,170 --> 00:18:42,950
+Duration changes.
+
+217
+00:18:43,730 --> 00:18:47,650
+And only after viewing all these parameters can we come to load connection.
+
+218
+00:18:48,510 --> 00:18:51,930
+Already test in power mode of this scheme on the oscillogram.
+
+219
+00:18:52,530 --> 00:18:53,910
+We look at the oscillogram now.
+
+220
+00:18:55,050 --> 00:18:57,350
+The oscilloscope is connected via AC.
+
+221
+00:18:57,830 --> 00:18:59,110
+That is an AC mode.
+
+222
+00:18:59,890 --> 00:19:06,790
+The initial launch under load of the system is done on a lamp of rating 25W, 220V.
+
+223
+00:19:07,510 --> 00:19:08,930
+I connected it at these points.
+
+224
+00:19:09,970 --> 00:19:11,390
+Instead of our future inductor.
+
+225
+00:19:14,010 --> 00:19:15,330
+What's the work algorithm?
+
+226
+00:19:15,990 --> 00:19:19,810
+Put the oscilloscope on the lamp terminals and observe the oscillogram.
+
+227
+00:19:20,630 --> 00:19:23,190
+And then smoothly raise the supply voltage.
+
+228
+00:19:24,190 --> 00:19:26,490
+I'll do this from my lab power supplies.
+
+229
+00:19:27,590 --> 00:19:30,090
+That is, each one applies what they have.
+
+230
+00:19:31,850 --> 00:19:33,290
+I raise the voltage.
+
+231
+00:19:35,770 --> 00:19:37,110
+I start with 50V.
+
+232
+00:19:38,570 --> 00:19:41,850
+Watch, such an oscillogram we get now during work.
+
+233
+00:19:43,890 --> 00:19:46,110
+You see the lamp doesn't start glowing.
+
+234
+00:19:47,510 --> 00:19:50,990
+The consumption is 0.04A at us.
+
+235
+00:19:52,810 --> 00:19:58,390
+If you have a lab block, then here it's desirable to set the current protection in an acceptable mode.
+
+236
+00:19:59,270 --> 00:20:02,810
+If there are some errors in the system, the current protection works for us.
+
+237
+00:20:04,310 --> 00:20:08,650
+So, voltage applied and I start temperature control directly on the driver.
+
+238
+00:20:09,990 --> 00:20:12,430
+Whoever has a pyrometer can control with it.
+
+239
+00:20:12,990 --> 00:20:14,250
+I don't have this device.
+
+240
+00:20:14,850 --> 00:20:19,490
+I control like this, directly touching the top of the driver, temperature by feel.
+
+241
+00:20:20,290 --> 00:20:22,330
+You see the system works.
+
+242
+00:20:23,250 --> 00:20:24,670
+Further, I increase voltage.
+
+243
+00:20:26,270 --> 00:20:27,430
+I increase.
+
+244
+00:20:28,510 --> 00:20:30,010
+So, 100V.
+
+245
+00:20:31,030 --> 00:20:32,030
+Our oscillogram.
+
+246
+00:20:32,910 --> 00:20:34,570
+I increase voltage.
+
+247
+00:20:35,930 --> 00:20:38,530
+The oscillogram also changes its amplitude.
+
+248
+00:20:40,090 --> 00:20:42,950
+In 100V mode, I also do temperature control.
+
+249
+00:20:45,330 --> 00:20:47,530
+Now the temperature has started rising.
+
+250
+00:20:48,030 --> 00:20:49,170
+We work in such modes.
+
+251
+00:20:51,650 --> 00:20:57,270
+Because in this scheme, the 840 transistors are already a big load for these drivers.
+
+252
+00:20:58,470 --> 00:21:03,150
+The scheme isn't made for work in continuous mode, but specifically with modulation.
+
+253
+00:21:05,750 --> 00:21:08,810
+In continuous mode, you need to optimize ratings.
+
+254
+00:21:09,150 --> 00:21:09,870
+Pick individually.
+
+255
+00:21:12,450 --> 00:21:14,970
+The test at 100V passed normally.
+
+256
+00:21:16,430 --> 00:21:18,410
+Now we can briefly give the rating.
+
+257
+00:21:21,010 --> 00:21:22,290
+I raise voltage.
+
+258
+00:21:24,010 --> 00:21:24,930
+200V higher.
+
+259
+00:21:26,550 --> 00:21:29,670
+You see the power supply already goes a bit to protection.
+
+260
+00:21:32,310 --> 00:21:33,510
+Briefly, 250V.
+
+261
+00:21:37,220 --> 00:21:38,600
+The temperature rises.
+
+262
+00:21:39,920 --> 00:21:41,760
+Now on the order of 70 degrees.
+
+263
+00:21:44,060 --> 00:21:46,400
+That is, the system goes to heating.
+
+264
+00:21:47,820 --> 00:21:51,100
+And now we can move to test in modulation mode on the lamp.
+
+265
+00:21:54,120 --> 00:21:57,480
+And further already connect the Tesla coil inductor.
+
+266
+00:21:58,100 --> 00:22:00,760
+The modulating signal frequency will be 10Hz.
+
+267
+00:22:01,840 --> 00:22:03,240
+The duration is 30%.
+
+268
+00:22:04,940 --> 00:22:07,480
+I raise the supply voltage on the system.
+
+269
+00:22:10,590 --> 00:22:11,290
+100V.
+
+270
+00:22:14,110 --> 00:22:18,350
+At voltage somewhere of 150V the lamp started glowing.
+
+271
+00:22:21,440 --> 00:22:24,640
+Now the voltage is the maximum of the power supply.
+
+272
+00:22:26,540 --> 00:22:29,860
+300V, 0.03A consumption.
+
+273
+00:22:30,680 --> 00:22:33,960
+Naturally, the block doesn't fix the consumption at us.
+
+274
+00:22:35,200 --> 00:22:39,760
+This is, by the way, consumption in this mode of the control part and power driver.
+
+275
+00:22:41,000 --> 00:22:47,000
+And already in such a mode, exactly pulse, our driver is in an acceptable temperature range.
+
+276
+00:22:48,240 --> 00:22:51,380
+It heats quite strongly when in continuous mode.
+
+277
+00:22:52,520 --> 00:22:55,700
+And in such a mode the temperature is slightly above room.
+
+278
+00:22:56,560 --> 00:22:58,300
+That's what the system was developed for.
+
+279
+00:22:59,180 --> 00:23:01,720
+We need modulation, not continuous mode.
+
+280
+00:23:02,980 --> 00:23:04,660
+Now I'll change the duration.
+
+281
+00:23:05,860 --> 00:23:06,080
+Here.
+
+282
+00:23:13,980 --> 00:23:14,660
+20%.
+
+283
+00:23:16,980 --> 00:23:18,740
+Look, the system works.
+
+284
+00:23:19,820 --> 00:23:20,720
+By frequency.
+
+285
+00:23:24,540 --> 00:23:25,960
+I change frequency.
+
+286
+00:23:27,980 --> 00:23:29,380
+You see flicker happens.
+
+287
+00:23:31,000 --> 00:23:32,460
+Now 20 Hz.
+
+288
+00:23:34,900 --> 00:23:36,040
+26 Hz.
+
+289
+00:23:37,180 --> 00:23:40,120
+Such an oscillogram in form of work and bursts.
+
+290
+00:23:45,950 --> 00:23:48,010
+Is our frequency that's inside.
+
+291
+00:23:49,630 --> 00:23:51,710
+325 kHz in the burst.
+
+292
+00:23:54,860 --> 00:23:56,660
+And I do temperature control.
+
+293
+00:23:59,620 --> 00:24:01,100
+That is, everything works.
+
+294
+00:24:01,640 --> 00:24:05,460
+When I convinced myself of this, already moved to test on the inductor.
+
+295
+00:24:05,460 --> 00:24:08,900
+I installed the inductor instead of the lamp.
+
+296
+00:24:09,480 --> 00:24:12,460
+The inductor consists of 8 turns of audio cable.
+
+297
+00:24:13,000 --> 00:24:14,240
+On a 110 pipe.
+
+298
+00:24:16,480 --> 00:24:19,360
+The same sequence of actions with the inductor.
+
+299
+00:24:20,120 --> 00:24:23,340
+Here you should be more careful if the lamp has fixed resistance.
+
+300
+00:24:24,660 --> 00:24:29,020
+Then the resistance of this inductor depends already also on frequency.
+
+301
+00:24:29,660 --> 00:24:31,900
+An inductor coil has reactive resistance.
+
+302
+00:24:32,680 --> 00:24:36,980
+So at the frequency I'll work at, I already approximately found out the parameters.
+
+303
+00:24:37,640 --> 00:24:40,320
+But the algorithm of actions is also like this.
+
+304
+00:24:40,940 --> 00:24:43,800
+Put the oscilloscope, watch the oscillogram that'll be.
+
+305
+00:24:44,860 --> 00:24:47,020
+And without fail control the driver temperature.
+
+306
+00:24:48,040 --> 00:24:49,780
+Now I smoothly raise the voltage.
+
+307
+00:24:51,200 --> 00:24:52,900
+Also 50 to 70 volts.
+
+308
+00:24:54,620 --> 00:24:57,180
+See the oscillogram directly on the inductor.
+
+309
+00:24:58,040 --> 00:24:59,580
+And control the temperature.
+
+310
+00:25:02,040 --> 00:25:04,780
+You see heating is present, but it's moderate.
+
+311
+00:25:05,420 --> 00:25:06,440
+We can add more voltage.
+
+312
+00:25:11,630 --> 00:25:13,750
+On the order of 100 degrees.
+
+313
+00:25:16,230 --> 00:25:17,550
+Also I do control.
+
+314
+00:25:20,650 --> 00:25:23,110
+At 100 degrees the driver started its heating.
+
+315
+00:25:24,570 --> 00:25:27,010
+I won't raise higher in continuous mode.
+
+316
+00:25:28,430 --> 00:25:29,770
+Such an oscillogram we have.
+
+317
+00:25:30,830 --> 00:25:35,490
+I recommend putting on the surface of this driver, when all the tuning work is finished.
+
+318
+00:25:36,010 --> 00:25:36,790
+A heat sink.
+
+319
+00:25:37,750 --> 00:25:39,510
+This will improve its heat removal.
+
+320
+00:25:40,730 --> 00:25:44,050
+On thermal paste, plant from the top and press tightly.
+
+321
+00:25:45,910 --> 00:25:46,490
+This watched.
+
+322
+00:25:47,150 --> 00:25:50,330
+And now already switching the system to modulation mode.
+
+323
+00:25:50,510 --> 00:25:53,230
+We can directly raise the voltage on the power keys.
+
+324
+00:25:55,250 --> 00:25:57,650
+And with this we'll swing the inductor well.
+
+325
+00:25:59,190 --> 00:26:04,290
+The tuning process when we work directly with the inductor without Tesla is quite simple.
+
+326
+00:26:04,860 --> 00:26:07,570
+We watch, control temperature, consumption.
+
+327
+00:26:09,150 --> 00:26:17,570
+And when we already work with Tesla at its resonance frequency, in such a continuous mode, there are quite dangerous moments because Tesla will consume.
+
+328
+00:26:18,710 --> 00:26:22,270
+But I'll show this in the next videos of the process of these tunings.
+
+329
+00:26:23,410 --> 00:26:24,610
+We'll move to them.
+
+330
+00:26:25,110 --> 00:26:26,930
+Now the test in modulation mode.
+
+331
+00:26:27,490 --> 00:26:32,570
+The sense of testing the device working on the inductor in modulation mode is the same.
+
+332
+00:26:32,570 --> 00:26:37,070
+Track the temperature mode of the driver and at what voltages its heating happens.
+
+333
+00:26:38,350 --> 00:26:41,450
+I apply modulation with frequency 1 kHz.
+
+334
+00:26:42,250 --> 00:26:44,080
+Modulating pulse duration 10%.
+
+335
+00:26:45,450 --> 00:26:46,770
+I raise voltage.
+
+336
+00:26:48,650 --> 00:26:50,850
+Same algorithm, 50 to 60 volts.
+
+337
+00:26:51,930 --> 00:26:52,690
+I do control.
+
+338
+00:26:54,370 --> 00:26:57,730
+By the way, with this you need to be careful not to climb.
+
+339
+00:26:58,490 --> 00:27:03,230
+There at the upper arm leads, here where we have pin 6, the bootstrap diode.
+
+340
+00:27:07,680 --> 00:27:13,460
+Everything connected with the upper arm key of the driver, it's under high potential, don't get into these points.
+
+341
+00:27:15,320 --> 00:27:16,800
+So observe caution.
+
+342
+00:27:18,440 --> 00:27:20,720
+Or use a pyrometer if available.
+
+343
+00:27:23,200 --> 00:27:25,340
+Temperature acceptable, doesn't rise.
+
+344
+00:27:27,200 --> 00:27:28,580
+Here we have such consumption.
+
+345
+00:27:30,780 --> 00:27:32,200
+100 volts.
+
+346
+00:27:33,900 --> 00:27:35,860
+A siligram amplitude grows.
+
+347
+00:27:37,240 --> 00:27:38,460
+Such a burst comes out.
+
+348
+00:27:42,760 --> 00:27:46,680
+Watch, also an acceptable temperature range, slightly above room.
+
+349
+00:27:48,580 --> 00:27:49,940
+150 volts.
+
+350
+00:27:53,660 --> 00:27:55,840
+Noticeable heating isn't observed.
+
+351
+00:27:58,560 --> 00:28:00,960
+Here already 200 volts I apply.
+
+352
+00:28:04,870 --> 00:28:09,030
+Reminder that the frequency now is 325 kilohertz applied.
+
+353
+00:28:09,650 --> 00:28:12,770
+This is the frequency of my Tesla coil, tuned for it.
+
+354
+00:28:13,930 --> 00:28:15,310
+And I track these parameters.
+
+355
+00:28:16,650 --> 00:28:19,830
+At 200 volts the driver started to heat slightly.
+
+356
+00:28:21,510 --> 00:28:23,090
+Now I apply 250.
+
+357
+00:28:26,910 --> 00:28:28,230
+Consumption grew slightly.
+
+358
+00:28:32,550 --> 00:28:36,410
+Heating is such insignificant, about 40 degrees in this mode.
+
+359
+00:28:36,410 --> 00:28:40,390
+8 turns on a 110-pipe audio cable.
+
+360
+00:28:42,250 --> 00:28:47,870
+Well, and I apply already the maximum that's possible, 300 V of my power supply.
+
+361
+00:28:49,650 --> 00:28:50,370
+Amplitude.
+
+362
+00:28:56,550 --> 00:28:58,210
+Temperature doesn't rise.
+
+363
+00:28:58,610 --> 00:29:01,490
+That means I conclude that everything's in order in this mode.
+
+364
+00:29:02,470 --> 00:29:06,490
+Now we have our capacitors charged to amplitude of 300 V.
+
+365
+00:29:09,850 --> 00:29:16,650
+Our pair, acting in the center, makes 150 V, commutated directly to the inductor.
+
+366
+00:29:17,690 --> 00:29:20,450
+Now look at how economically the scheme works in this mode.
+
+367
+00:29:21,350 --> 00:29:25,630
+I'll sharply stop supply of power voltage and look at the oscillogram fade.
+
+368
+00:29:27,390 --> 00:29:29,710
+I remove voltage to zero now.
+
+369
+00:29:31,470 --> 00:29:33,950
+And see how smoothly the decay happens.
+
+370
+00:29:39,410 --> 00:29:42,470
+That is, the system turned out quite economically.
+
+371
+00:29:42,490 --> 00:29:46,510
+What we need for swinging the Tesla transformer.
+
+372
+00:29:47,390 --> 00:29:49,310
+Reminder that we don't need big consumption.
+
+373
+00:29:50,550 --> 00:29:55,750
+We have no Tesla show, but we have no task of creating big streamers, light noise effects.
+
+374
+00:29:56,550 --> 00:30:00,650
+So the scheme is developed specifically for work in modulated mode.
+

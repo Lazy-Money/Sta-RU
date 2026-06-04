@@ -1,0 +1,900 @@
+1
+00:00:00,620 --> 00:00:01,260
+Hi everyone.
+
+2
+00:00:02,000 --> 00:00:03,580
+Today we'll be talking about the Push-Pull.
+
+3
+00:00:04,960 --> 00:00:10,980
+Push-Pull is a two-stroke converter on two transistors, highly efficient on low voltage power.
+
+4
+00:00:13,060 --> 00:00:16,660
+The main power components of this converter are two transistors.
+
+5
+00:00:19,480 --> 00:00:24,420
+They work on a center tap winding and then we get the result at the output to the loads.
+
+6
+00:00:24,420 --> 00:00:30,260
+But for this system, the ordinary Push-Pull doesn't suit us.
+
+7
+00:00:31,500 --> 00:00:32,720
+We have a few differences.
+
+8
+00:00:33,940 --> 00:00:39,420
+Our system works on natural energy, so our Push-Pull will also be slightly adapted for this.
+
+9
+00:00:41,920 --> 00:00:45,300
+Here a breadboard circuit is assembled, which we'll be testing.
+
+10
+00:00:48,820 --> 00:00:52,640
+The driving chip used is TL494.
+
+11
+00:00:53,280 --> 00:00:59,060
+You can use SG3525, UC3825 and others.
+
+12
+00:01:00,680 --> 00:01:04,720
+Any will work absolutely fine with the duty cycle regulation function.
+
+13
+00:01:05,620 --> 00:01:13,220
+The driver was specifically taken as 2AIR2113 to show that ordinary drivers calmly work in this system.
+
+14
+00:01:14,320 --> 00:01:22,220
+Here we have two transistors screwed on a heatsinks, and everyone's favorite well-known pot core from TVs.
+
+15
+00:01:25,020 --> 00:01:26,400
+Let's walk through the schematic.
+
+16
+00:01:28,520 --> 00:01:31,360
+This is what the Push-Pull wiring should look like to work.
+
+17
+00:01:32,640 --> 00:01:35,240
+No need to invent anything, no tricks.
+
+18
+00:01:36,400 --> 00:01:40,080
+The main thing, we have an RFP260N transistor.
+
+19
+00:01:42,680 --> 00:01:44,860
+Or similar high voltage transistors.
+
+20
+00:01:46,020 --> 00:01:47,120
+Why high voltage?
+
+21
+00:01:48,300 --> 00:01:51,220
+In this system during operation, there's a static spike.
+
+22
+00:01:52,720 --> 00:02:00,140
+And if the transistor is low voltage, then the reverse diode in it, also installed by the manufacturer, has low voltage.
+
+23
+00:02:01,120 --> 00:02:03,940
+And it will cut the static spike and convert it to heat.
+
+24
+00:02:04,680 --> 00:02:05,600
+We don't need this.
+
+25
+00:02:06,280 --> 00:02:09,640
+That's exactly why high voltage transistors work in our system.
+
+26
+00:02:10,540 --> 00:02:15,220
+No need to use too high voltage by transistors for too high supply current.
+
+27
+00:02:16,440 --> 00:02:18,780
+Because the currents in our system are small.
+
+28
+00:02:20,100 --> 00:02:27,520
+The task of this converter isn't to power lamps, isn't for them to burn, but only to launch wave processes in the resonator.
+
+29
+00:02:29,240 --> 00:02:35,880
+Moving through the wiring, we must have in the gate circuit to the common wire, a 1kΩ discharge resistor.
+
+30
+00:02:37,800 --> 00:02:41,260
+And must have counter-connected Zener diodes, 12V.
+
+31
+00:02:43,360 --> 00:02:47,400
+This is so the gate doesn't get punched through from a static voltage spike.
+
+32
+00:02:48,740 --> 00:02:52,080
+Next, the reverse diode between the circuit and drain drain.
+
+33
+00:02:52,980 --> 00:02:55,020
+The whole system is symmetric.
+
+34
+00:02:56,520 --> 00:02:57,340
+Fast acting diode.
+
+35
+00:02:58,440 --> 00:03:03,360
+In this case, and on this breadboard, MUR460 is used.
+
+36
+00:03:04,520 --> 00:03:07,840
+You can use any other fast-acting Schottky diodes.
+
+37
+00:03:11,190 --> 00:03:14,130
+Each arm of the push-pull is loaded with 10 turns.
+
+38
+00:03:15,590 --> 00:03:18,710
+And the result on the output is 3 to 4 turns.
+
+39
+00:03:20,430 --> 00:03:22,470
+Our power is 24V.
+
+40
+00:03:23,610 --> 00:03:25,190
+A capacitor is mandatory.
+
+41
+00:03:26,830 --> 00:03:30,150
+In this case, 4700μF.
+
+42
+00:03:31,590 --> 00:03:37,870
+And in the working circuit, you'll need to install a 2uF capacitor that dampens the static spike.
+
+43
+00:03:39,310 --> 00:03:43,150
+And it's needed for fast discharge, because the keys open sharply.
+
+44
+00:03:44,670 --> 00:03:47,650
+And these electrolytics, they generally serve as dampers.
+
+45
+00:03:48,730 --> 00:03:51,330
+They don't serve for pulsed extraction to come from them.
+
+46
+00:03:53,370 --> 00:03:54,790
+Electrolytics don't like this.
+
+47
+00:03:55,370 --> 00:04:03,630
+That's why a capacitor is installed that works as a gateway, responds much faster than the electrolytic, allows making a steeper leading edge.
+
+48
+00:04:04,830 --> 00:04:07,070
+This is the schematic symbol of the driver.
+
+49
+00:04:08,690 --> 00:04:13,030
+And from the driver, it charges the gate capacitance through a 5Ω resistor.
+
+50
+00:04:15,730 --> 00:04:16,830
+That's how it looks.
+
+51
+00:04:17,530 --> 00:04:19,770
+So here on power, there's a regulator installed.
+
+52
+00:04:20,110 --> 00:04:21,710
+This is for the TL chip power.
+
+53
+00:04:23,310 --> 00:04:26,030
+Regulator, filter, wiring capacitors.
+
+54
+00:04:27,730 --> 00:04:28,730
+Looking further.
+
+55
+00:04:30,210 --> 00:04:30,750
+Mandatory.
+
+56
+00:04:31,770 --> 00:04:35,650
+Why does everyone miss all the interesting effects that are on the push-pull?
+
+57
+00:04:36,670 --> 00:04:41,770
+Because we have a duty cycle adjustment resistor, and this is the frequency adjustment resistor.
+
+58
+00:04:43,130 --> 00:04:50,930
+You need to do it, so that over 10 turns of this trim resistor, our push-pull frequency changes by a maximum of 80 kHz.
+
+59
+00:04:54,860 --> 00:05:04,480
+Even better, when the operating range of the coil is known, select an even smaller resistor here and plug it in, so the regulation happens within 5 kHz.
+
+60
+00:05:05,100 --> 00:05:10,720
+Because all the circuits you're assembling, by quickly turning the frequency, you can't see anything interesting.
+
+61
+00:05:11,920 --> 00:05:14,620
+Next, here there's a capacitor.
+
+62
+00:05:15,360 --> 00:05:17,640
+Tube-type capacitor from Soviet production.
+
+63
+00:05:18,380 --> 00:05:23,100
+Now the analogs of such capacitors are tantalum capacitors for SMD mounting.
+
+64
+00:05:23,660 --> 00:05:31,260
+The advantage of these capacitors is that even if you heat them with a soldering iron, their capacitance doesn't drift.
+
+65
+00:05:32,060 --> 00:05:33,500
+They're high-temperature stable.
+
+66
+00:05:35,540 --> 00:05:40,580
+That's exactly why you need to use such capacitors here, so your frequency doesn't drift.
+
+67
+00:05:41,480 --> 00:05:51,360
+Because as soon as you tune to the effect and move away from the regulator with temperature rise, changing the place where this circuit is, the frequency will drift and you'll lose the effect.
+
+68
+00:05:53,480 --> 00:05:55,400
+The signal goes to the driver.
+
+69
+00:05:55,780 --> 00:05:58,520
+The driver amplifies it and goes to our transistor.
+
+70
+00:06:00,160 --> 00:06:01,660
+Now let's start the circuit.
+
+71
+00:06:04,000 --> 00:06:06,800
+Our power will be supplied from 15 volts.
+
+72
+00:06:09,160 --> 00:06:10,300
+Push-pull power.
+
+73
+00:06:11,440 --> 00:06:13,060
+These 24 volt batteries.
+
+74
+00:06:15,620 --> 00:06:16,960
+What else is important?
+
+75
+00:06:17,960 --> 00:06:22,820
+The voltage regulator is only on the power supply to the driving chip itself.
+
+76
+00:06:23,620 --> 00:06:26,560
+Never put voltage regulators on the driver power.
+
+77
+00:06:27,720 --> 00:06:33,320
+A regulator at most can pass through 3 amps, but the regulator is a very slow circuit.
+
+78
+00:06:34,180 --> 00:06:37,980
+And the driver needs to form a steep edge for charging gate capacitances.
+
+79
+00:06:39,060 --> 00:06:44,760
+That's exactly why even bought expensive drivers 6, 8, 12 amps people put in.
+
+80
+00:06:45,940 --> 00:06:53,880
+They can't control the transistors and the transistors blow even at low consumption powers because these regulators are in place.
+
+81
+00:06:55,020 --> 00:07:02,020
+And you must put on the driver channels power supply a ceramic capacitor of about 5 microfarads for forming a steep edge.
+
+82
+00:07:05,860 --> 00:07:08,680
+This especially applies to powerful drivers.
+
+83
+00:07:10,120 --> 00:07:12,040
+This is how the schematic looks.
+
+84
+00:07:13,400 --> 00:07:14,400
+See the diodes.
+
+85
+00:07:16,900 --> 00:07:18,680
+The zener diodes are here.
+
+86
+00:07:20,120 --> 00:07:22,860
+This is the 1k omega resistor working.
+
+87
+00:07:25,200 --> 00:07:25,920
+Starting.
+
+88
+00:07:26,700 --> 00:07:27,540
+Connecting power.
+
+89
+00:07:32,290 --> 00:07:37,470
+We see, the circuit's consumption is 15 volts, 0.04 amps.
+
+90
+00:07:39,050 --> 00:07:40,930
+That's quite enough for quality control.
+
+91
+00:07:42,150 --> 00:07:42,850
+And looking.
+
+92
+00:07:43,770 --> 00:07:50,130
+Now the yellow oscilloscope channel is sitting on the transistor's gate and the blue oscilloscope channel is sitting on the drain.
+
+93
+00:07:52,770 --> 00:07:54,130
+Let's see what's happening.
+
+94
+00:07:56,050 --> 00:07:58,230
+And here we see this interesting picture.
+
+95
+00:07:59,810 --> 00:08:01,590
+Yellow channel is the control.
+
+96
+00:08:02,890 --> 00:08:05,170
+And here's the blue, what we see here.
+
+97
+00:08:06,530 --> 00:08:09,450
+The spike amplitude is almost 250 volts.
+
+98
+00:08:10,170 --> 00:08:12,730
+It jumps 238 to 250.
+
+99
+00:08:14,530 --> 00:08:15,790
+Why does this happen?
+
+100
+00:08:17,870 --> 00:08:21,250
+This is done by tuning this core, adjusting its gap.
+
+101
+00:08:23,470 --> 00:08:31,130
+With this part of the gap in the core, you need to adjust this width, adjust the number of turns and restore the duty cycle on the channel.
+
+102
+00:08:35,130 --> 00:08:38,050
+So, the gap on the core shouldn't be made large.
+
+103
+00:08:38,810 --> 00:08:39,650
+These are your losses.
+
+104
+00:08:41,110 --> 00:08:44,230
+The core will heat up and nothing good will come of it.
+
+105
+00:08:44,690 --> 00:08:45,910
+But the gap is mandatory.
+
+106
+00:08:47,150 --> 00:08:51,550
+In this system, we need to form a static spike with a steep edge for further work.
+
+107
+00:08:53,150 --> 00:08:56,230
+The gap, maximum A4 printing paper.
+
+108
+00:08:57,810 --> 00:09:00,870
+In this case, the gap on the core is even smaller.
+
+109
+00:09:03,090 --> 00:09:03,950
+It's masking tape.
+
+110
+00:09:05,570 --> 00:09:06,870
+Here and here it's made.
+
+111
+00:09:07,810 --> 00:09:14,010
+The core is pulled together with electrical tape or other material, but not metal, so as not to short the halves.
+
+112
+00:09:15,150 --> 00:09:17,250
+Pay attention to how the system is wound.
+
+113
+00:09:20,020 --> 00:09:22,160
+The push-pull arms are on one half.
+
+114
+00:09:22,160 --> 00:09:24,580
+The pickup is always on the other half.
+
+115
+00:09:25,760 --> 00:09:27,000
+What's this done for?
+
+116
+00:09:28,620 --> 00:09:33,620
+The output winding forms a small magnetic field around itself, loading the core.
+
+117
+00:09:34,180 --> 00:09:36,900
+And it doesn't spread to the whole volume of the ferrite.
+
+118
+00:09:38,240 --> 00:09:41,380
+But the arm windings form a circular magnetic field.
+
+119
+00:09:42,040 --> 00:09:44,120
+This way isolation is achieved.
+
+120
+00:09:44,840 --> 00:09:52,920
+When on this side of the system, there are further static spikes and work, this provides transistor protection and prevents strong reverse effect.
+
+121
+00:09:54,240 --> 00:09:57,000
+These are so-called isolation transformers.
+
+122
+00:09:58,020 --> 00:10:02,820
+They have lower operating efficiency due to the windings being on different cores essentially.
+
+123
+00:10:03,660 --> 00:10:07,120
+But in this case, in this system, it's necessary to do.
+
+124
+00:10:07,840 --> 00:10:10,240
+You can't win the push-pull winding on one core.
+
+125
+00:10:11,160 --> 00:10:14,700
+You can also use such ferrites for the work, must be large.
+
+126
+00:10:17,990 --> 00:10:21,370
+Ferrites for this system must have large pass-through ability.
+
+127
+00:10:22,270 --> 00:10:24,850
+This ferrite specifically is the 2000 mark.
+
+128
+00:10:26,730 --> 00:10:32,510
+All static effects can be obtained on such rings too, but it's easier to get them on split ferrites.
+
+129
+00:10:33,770 --> 00:10:36,790
+Now let's look more closely at what's happening with the static.
+
+130
+00:10:39,510 --> 00:10:41,570
+Our power is 24 volts.
+
+131
+00:10:43,070 --> 00:10:48,970
+These spikes, these needles, this is exactly the medium's response to our system's operation.
+
+132
+00:10:49,950 --> 00:10:54,290
+We send a pulse with a steep edge there, and a response comes to it, a click.
+
+133
+00:10:56,050 --> 00:10:58,970
+The subsequent needles don't really interest us.
+
+134
+00:10:59,530 --> 00:11:00,490
+They're non-decaying.
+
+135
+00:11:01,390 --> 00:11:04,890
+We're interested in the amplitude of this leading edge of the spike.
+
+136
+00:11:06,370 --> 00:11:10,410
+This spike ultimately raises the overall amplitude of operation.
+
+137
+00:11:13,270 --> 00:11:16,150
+Right now the control duty cycle is 11%.
+
+138
+00:11:18,050 --> 00:11:21,330
+Now I'll change the duty cycle and we'll see what'll happen.
+
+139
+00:11:29,120 --> 00:11:32,200
+The system consumption at the moment is around zero.
+
+140
+00:11:34,700 --> 00:11:36,180
+Increasing the duty cycle.
+
+141
+00:11:47,400 --> 00:11:51,660
+Now duty cycle 20%, 25%, 27%.
+
+142
+00:11:54,160 --> 00:11:59,040
+You can see, at 27% duty cycle we have a nice formed signal.
+
+143
+00:12:01,500 --> 00:12:02,060
+Looking.
+
+144
+00:12:02,060 --> 00:12:04,640
+Consumption has gone up to 400 milliamperes.
+
+145
+00:12:08,480 --> 00:12:10,080
+And now look at the blue channel.
+
+146
+00:12:11,360 --> 00:12:12,880
+Now we'll remove the yellow.
+
+147
+00:12:14,960 --> 00:12:16,720
+We're interested in the blue channel.
+
+148
+00:12:18,080 --> 00:12:19,680
+This is the signal on the drain.
+
+149
+00:12:21,280 --> 00:12:24,080
+On the blue channel we have 50V per division.
+
+150
+00:12:28,860 --> 00:12:29,980
+50V per division.
+
+151
+00:12:31,620 --> 00:12:38,420
+The amplitude of the square wave when the static is working, the static spike from the medium and non-decaying peaks.
+
+152
+00:12:38,840 --> 00:12:41,780
+The amplitude rises from 24V to 70V.
+
+153
+00:12:44,380 --> 00:12:45,900
+That is, what are we doing?
+
+154
+00:12:46,960 --> 00:12:48,280
+We get a static spike.
+
+155
+00:12:48,620 --> 00:12:52,200
+And this static spike gives us a gain in the square up to 70V.
+
+156
+00:12:53,440 --> 00:12:56,720
+Essentially, we're getting a gain already on the push-pull itself.
+
+157
+00:12:58,020 --> 00:13:02,220
+That is, this interesting effect gives us what gain in this system.
+
+158
+00:13:03,080 --> 00:13:06,520
+Here, to the arms, we sent 24V power.
+
+159
+00:13:07,540 --> 00:13:10,420
+With the help of static, we raise it to 70V.
+
+160
+00:13:11,120 --> 00:13:13,600
+And our transformer works in step-down mode.
+
+161
+00:13:14,940 --> 00:13:18,760
+After this, we actually work with not 24V, but 70V.
+
+162
+00:13:19,720 --> 00:13:24,100
+Stepping this gain down, we send it to drive the circuit at such minimal consumption.
+
+163
+00:13:25,000 --> 00:13:29,120
+That is, you can see what duty cycle regulation is for in this system.
+
+164
+00:13:30,780 --> 00:13:35,920
+And also, now I'll switch the yellow oscilloscope channel to the second transistor drain.
+
+165
+00:13:37,580 --> 00:13:39,140
+Also set 50V.
+
+166
+00:13:46,550 --> 00:13:47,610
+Switch the channel.
+
+167
+00:13:51,290 --> 00:13:52,030
+Set the trigger.
+
+168
+00:14:01,610 --> 00:14:03,890
+Now we'll tune everything to the signal.
+
+169
+00:14:08,100 --> 00:14:09,680
+Adding duty cycle now.
+
+170
+00:14:10,780 --> 00:14:12,020
+And what do we see?
+
+171
+00:14:12,660 --> 00:14:13,480
+Interesting picture.
+
+172
+00:14:15,960 --> 00:14:21,960
+We see that static not only raised the amplitude of our signal, but also extended it in duration.
+
+173
+00:14:24,240 --> 00:14:30,960
+That is, actually the duration from the control, regardless of the control pulse length, it's 50% fill.
+
+174
+00:14:32,460 --> 00:14:35,780
+50% on one channel, 50% on the other.
+
+175
+00:14:38,060 --> 00:14:40,940
+This trick is very important to do on the push-pull.
+
+176
+00:14:42,320 --> 00:14:43,560
+You get this picture.
+
+177
+00:14:44,820 --> 00:14:48,980
+If we combine, we see that actually everything is filled with signal.
+
+178
+00:14:58,150 --> 00:14:59,550
+That's how static works.
+
+179
+00:15:00,270 --> 00:15:01,830
+If we expand, we see.
+
+180
+00:15:02,750 --> 00:15:05,170
+We're interested in, here it is, the width.
+
+181
+00:15:05,930 --> 00:15:08,350
+We're interested in this response, the strike.
+
+182
+00:15:09,450 --> 00:15:11,330
+The subsequent peaks, descending.
+
+183
+00:15:19,350 --> 00:15:21,370
+The same will be on the yellow channel.
+
+184
+00:15:26,580 --> 00:15:28,560
+Here, the leading edge is smaller.
+
+185
+00:15:30,140 --> 00:15:34,000
+It will also grow later when the push-pull is connected to the coil.
+
+186
+00:15:35,100 --> 00:15:42,660
+Because when working with static, with natural electricity, the coil on which these effects happen always splits into a suction zone.
+
+187
+00:15:43,360 --> 00:15:46,080
+In this case, this suction zone is on the blue channel.
+
+188
+00:15:47,460 --> 00:15:49,100
+And the energy dump zone.
+
+189
+00:15:49,600 --> 00:15:52,820
+In the suction zone, the amplitude is always higher.
+
+190
+00:15:52,820 --> 00:16:00,160
+But if we give an energy outflow which will then go to the coil from here, we'll have the same signal on both channels going forward.
+
+191
+00:16:00,800 --> 00:16:01,640
+Now let's see.
+
+192
+00:16:02,060 --> 00:16:05,120
+We see that the neon bulb glows very well on the static.
+
+193
+00:16:07,480 --> 00:16:08,000
+Static.
+
+194
+00:16:08,260 --> 00:16:11,960
+And on the dump zone, it's the actually cold end of the coil now.
+
+195
+00:16:12,340 --> 00:16:15,140
+These 10 plus 10 turns, the glow is less.
+
+196
+00:16:15,940 --> 00:16:18,200
+That's exactly why the pulse width is smaller.
+
+197
+00:16:19,240 --> 00:16:20,820
+Static should be present everywhere.
+
+198
+00:16:20,820 --> 00:16:24,040
+Here you can see some glow on the heat sink.
+
+199
+00:16:24,400 --> 00:16:25,660
+You can see glow on the power.
+
+200
+00:16:25,980 --> 00:16:27,100
+You can see on the control.
+
+201
+00:16:28,940 --> 00:16:32,920
+Wherever we connect, static is present in this system everywhere.
+
+202
+00:16:33,540 --> 00:16:35,200
+Touch the chip pins, anywhere.
+
+203
+00:16:36,940 --> 00:16:39,840
+That is, this static potential is present everywhere.
+
+204
+00:16:41,180 --> 00:16:46,500
+This is what we have to later transfer to the coil to activate high-frequency processes in it.
+
+205
+00:16:49,110 --> 00:16:54,850
+And this is the initial tuning, generally without anything, that you need to achieve from this core.
+
+206
+00:16:55,290 --> 00:16:57,770
+So it gives a static potential that we'll then work with.
+
+207
+00:16:59,470 --> 00:17:01,870
+Once more the oscillograms, how it looks.
+
+208
+00:17:07,950 --> 00:17:10,190
+And now I'll decrease the duty cycle.
+
+209
+00:17:12,570 --> 00:17:15,510
+Now duty cycle 46%, decreasing.
+
+210
+00:17:16,630 --> 00:17:18,670
+We can see what processes are happening.
+
+211
+00:17:20,690 --> 00:17:24,210
+That is, we see that the system's consumption is decreasing.
+
+212
+00:17:26,870 --> 00:17:29,470
+Look, the needle smoothly goes down.
+
+213
+00:17:30,710 --> 00:17:32,730
+And the static is working for us.
+
+214
+00:17:34,730 --> 00:17:38,170
+That's why duty cycle regulation is important in this system.
+
+215
+00:17:38,790 --> 00:17:40,010
+We don't need to light lamps.
+
+216
+00:17:42,910 --> 00:17:45,950
+The main thing for us is to get this static potential.
+
+217
+00:17:46,610 --> 00:17:49,170
+And we see that on each steep edge clicks happen.
+
+218
+00:17:54,510 --> 00:17:56,110
+Decreasing duty cycle more.
+
+219
+00:17:57,950 --> 00:18:00,110
+And we've practically gone down to zero.
+
+220
+00:18:01,510 --> 00:18:03,830
+Now duty cycle is around 3%.
+
+221
+00:18:03,830 --> 00:18:08,050
+Adding a tiny bit, and we see that the static spike is maximum.
+
+222
+00:18:28,060 --> 00:18:29,360
+And once more the schematic.
+
+223
+00:18:30,880 --> 00:18:33,480
+This schematic is tested, broken in.
+
+224
+00:18:34,420 --> 00:18:35,240
+You can use it.
+
+225
+00:18:35,980 --> 00:18:36,680
+Works great.
+
