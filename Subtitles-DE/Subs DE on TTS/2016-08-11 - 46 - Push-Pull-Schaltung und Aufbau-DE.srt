@@ -1,0 +1,876 @@
+1
+00:00:00,000 --> 00:00:01,420
+Hallo zusammen.
+
+2
+00:00:02,260 --> 00:00:04,140
+Heute geht es um den Gegentakt.
+
+3
+00:00:06,320 --> 00:00:12,360
+Gegentakt ist ein Zweitaktwandler auf zwei Transistoren, hocheffizient, bei Niederspannungsversorgung.
+
+4
+00:00:15,420 --> 00:00:18,680
+Die Hauptleistungsbauteile dieses Wandlers sind zwei Transistoren.
+
+5
+00:00:21,900 --> 00:00:26,920
+Sie arbeiten auf eine Mittelanzapfungswicklung und am Ausgang erhalten wir das Ergebnis für die Last.
+
+6
+00:00:28,760 --> 00:00:32,420
+Aber für dieses System passt uns der gewöhnliche Gegentakt nicht.
+
+7
+00:00:34,200 --> 00:00:36,080
+Wir haben einige Unterschiede.
+
+8
+00:00:38,060 --> 00:00:43,620
+Unser System arbeitet mit natürlicher Energie, daher wird auch unser Gegentakt dafür leicht angepasst.
+
+9
+00:00:45,820 --> 00:00:49,580
+Hier ist ein Versuchsaufbau zusammengesteckt, den wir testen werden.
+
+10
+00:00:52,420 --> 00:00:58,580
+Steuerplatine Der verwendete Treiberchip ist der TL494.
+
+11
+00:00:59,940 --> 00:01:06,980
+Du kannst es G3525, UC3825 und andere nutzen.
+
+12
+00:01:09,240 --> 00:01:12,820
+Jeder funktioniert mit der Tastverhältnisregelung absolut problemlos.
+
+13
+00:01:13,860 --> 00:01:22,980
+Der Treiber wurde gezielt als 2A, IR2113 gewählt, um zu zeigen, dass gewöhnliche Treiber in diesem System ruhig arbeiten.
+
+14
+00:01:25,020 --> 00:01:28,400
+Hier haben wir zwei Transistoren auf Kühlkörper geschraubt.
+
+15
+00:01:29,420 --> 00:01:33,440
+Und den von allen geliebten, bekannten Schalenkern aus alten Fernsehern.
+
+16
+00:01:35,840 --> 00:01:37,560
+Gehen wir die Schaltung durch.
+
+17
+00:01:39,780 --> 00:01:43,640
+So muss die Gegentaktbeschaltung aussehen, damit sie arbeitet.
+
+18
+00:01:45,600 --> 00:01:47,620
+Nichts erfinden, keine Tricks.
+
+19
+00:01:49,420 --> 00:01:53,800
+Das Wichtigste, wir haben einen RFP260N Transistor.
+
+20
+00:01:57,000 --> 00:01:59,200
+Oder ähnliche Hochspannungstransistoren.
+
+21
+00:02:01,200 --> 00:02:02,340
+Warum hochspannungsfest?
+
+22
+00:02:03,740 --> 00:02:06,840
+In diesem System entsteht im Betrieb ein statischer Spike.
+
+23
+00:02:09,020 --> 00:02:15,700
+Und wenn der Transistor niederspannungsfest ist, ist auch die vom Hersteller eingebaute Inverstiode niederspannungsfest.
+
+24
+00:02:17,020 --> 00:02:20,580
+Und sie kappt den statischen Spike und wandelt ihn in Wärme um.
+
+25
+00:02:22,100 --> 00:02:22,880
+Das brauchen wir nicht.
+
+26
+00:02:23,960 --> 00:02:27,780
+Genau deshalb arbeiten in unserem System hochspannungsfeste Transistoren.
+
+27
+00:02:29,480 --> 00:02:34,360
+Du musst keine zu hohe Spannung nehmen oder Transistoren für zu hohen Versorgungsstrom kaufen.
+
+28
+00:02:35,520 --> 00:02:38,320
+Denn die Ströme in unserem System sind gering.
+
+29
+00:02:40,360 --> 00:02:47,740
+Die Aufgabe dieses Wandlers ist nicht, Lampen zu speisen oder zum Leuchten zu bringen, sondern nur Wellenprozesse im Resonator anzustoßen.
+
+30
+00:02:50,020 --> 00:02:51,400
+Weiter durch die Schaltung.
+
+31
+00:02:52,840 --> 00:02:57,760
+Wir müssen im Gartekreis gegen die gemeinsame Leitung einen 1K Ohm Entladewiderstand haben.
+
+32
+00:02:59,440 --> 00:03:02,920
+Und antiparallel geschaltete Z-Dioden, 12 Volt.
+
+33
+00:03:05,340 --> 00:03:09,480
+Das ist dafür, dass das Gate nicht durch einen statischen Spannungsspike durchschlägt.
+
+34
+00:03:11,120 --> 00:03:14,660
+Weiter die Inverstiode zwischen der Schaltung und Dren Dren.
+
+35
+00:03:16,340 --> 00:03:18,060
+Das ganze System ist symmetrisch.
+
+36
+00:03:19,780 --> 00:03:20,300
+Schnelle Diode.
+
+37
+00:03:21,580 --> 00:03:26,920
+In diesem Fall, auf diesem Versuchsaufbau, wird die Mohr 460 verwendet.
+
+38
+00:03:28,540 --> 00:03:31,660
+Du kannst jede andere schnelle Schottky-Diode nutzen.
+
+39
+00:03:36,100 --> 00:03:39,200
+Jeder Zweig des Gegentakts ist mit 10 Windungen belastet.
+
+40
+00:03:41,140 --> 00:03:43,720
+Und am Ausgang sind es 3 bis 4 Windungen.
+
+41
+00:03:46,280 --> 00:03:49,300
+Unsere Versorgungsspannung beträgt 24 V.
+
+42
+00:03:50,720 --> 00:03:52,720
+Ein Kondensator ist Pflicht.
+
+43
+00:03:55,160 --> 00:03:57,560
+In diesem Fall 4700 µF.
+
+44
+00:03:59,620 --> 00:04:05,820
+Und im Arbeitskreis musst du einen 2 µF Kondensator einbauen, der den statischen Spike dämpft.
+
+45
+00:04:07,920 --> 00:04:11,300
+Er wird für schnelles Entladen gebraucht, weil die Schalter scharf öffnen.
+
+46
+00:04:13,380 --> 00:04:16,700
+Und diese Elektrolytkondensatoren dienen allgemein als Dämpfer.
+
+47
+00:04:17,980 --> 00:04:22,280
+Sie sind nicht dafür gedacht, dass aus ihnen impulsförmig entnommen wird.
+
+48
+00:04:23,820 --> 00:04:24,840
+Elkos mögen das nicht.
+
+49
+00:04:25,900 --> 00:04:31,600
+Deshalb wird ein Kondensator eingebaut, der als Tor arbeitet und viel schneller reagiert als der Elko.
+
+50
+00:04:32,980 --> 00:04:35,200
+Er ermöglicht eine steilere Anstiegsflanke.
+
+51
+00:04:37,300 --> 00:04:39,060
+Das ist das Schaltzeichen des Treibers.
+
+52
+00:04:39,940 --> 00:04:45,440
+Und vom Treiber wird die Gartekapazität über einen 5 Ohm Widerstand geladen.
+
+53
+00:04:48,300 --> 00:04:49,680
+So sieht das aus.
+
+54
+00:04:51,040 --> 00:04:53,700
+Hier an der Versorgung ist ein Spannungsregler eingebaut.
+
+55
+00:04:54,000 --> 00:04:55,980
+Der ist für die Versorgung des TL-Chips.
+
+56
+00:04:58,260 --> 00:05:00,960
+Regler, Filter, Beschaltungskondensatoren.
+
+57
+00:05:03,100 --> 00:05:04,300
+Schauen wir weiter.
+
+58
+00:05:05,960 --> 00:05:06,640
+Pflicht.
+
+59
+00:05:08,060 --> 00:05:12,280
+Warum verpassen alle die interessanten Effekte, die der Gegentakt zeigt?
+
+60
+00:05:13,640 --> 00:05:19,240
+Weil wir einen Tastverhältnisseinstellwiderstand haben, und das ist der Frequenzeinstellwiderstand.
+
+61
+00:05:21,000 --> 00:05:28,540
+Du musst es so machen, dass sich über 10 Umdrehungen dieses Trimmers unsere Gegentaktfrequenz maximal um 80 kHz ändert.
+
+62
+00:05:32,760 --> 00:05:42,700
+Noch besser ist, wenn der Arbeitsbereich der Spule bekannt ist, hier einen noch kleineren Widerstand zu wählen und einzubauen, sodass die Regelung innerhalb von 5 kHz erfolgt.
+
+63
+00:05:43,940 --> 00:05:49,660
+Denn bei all den Schaltungen, die du baust, siehst du beim schnellen Drehen an der Frequenz nichts interessantes.
+
+64
+00:05:51,180 --> 00:05:51,780
+Weiter.
+
+65
+00:05:53,120 --> 00:05:54,540
+Hier sitzt ein Kondensator.
+
+66
+00:05:56,060 --> 00:05:58,540
+Röhrenvermiger Kondensator aus sowjetischer Fertigung.
+
+67
+00:05:59,420 --> 00:06:04,480
+Heute sind die Pendants solcher Kondensatoren Tantal-Kondensatoren in SMD-Bauform.
+
+68
+00:06:06,800 --> 00:06:12,780
+Der Vorteil dieser Kondensatoren ist, dass selbst beim Erhitzen mit dem Lötkolben ihre Kapazität nicht driftet.
+
+69
+00:06:14,540 --> 00:06:15,980
+Sie sind temperaturstabil.
+
+70
+00:06:17,960 --> 00:06:22,780
+Genau deshalb sollst du hier solche Kondensatoren nehmen, damit deine Frequenz nicht driftet.
+
+71
+00:06:24,000 --> 00:06:34,160
+Denn sobald du den Effekt eingestellt hast und du dich mit Temperaturanstieg oder Durchlageänderung der Schaltung vom Regler entfernst, driftet die Frequenz und du verlierst den Effekt.
+
+72
+00:06:36,740 --> 00:06:41,400
+Das Signal geht zum Treiber, der Treiber verstärkt es und es geht zu unserem Transistor.
+
+73
+00:06:44,060 --> 00:06:45,440
+Jetzt starten wir die Schaltung.
+
+74
+00:06:48,880 --> 00:06:50,980
+Unsere Versorgung kommt aus 15 Volt.
+
+75
+00:06:54,420 --> 00:06:55,220
+Gegentaktversorgung.
+
+76
+00:06:56,440 --> 00:06:58,820
+Diese 24 Volt Akkus.
+
+77
+00:07:02,280 --> 00:07:03,180
+Was ist noch wichtig?
+
+78
+00:07:05,120 --> 00:07:08,600
+Der Spannungsregler sitzt nur an der Versorgung des Treiberchips selbst.
+
+79
+00:07:10,420 --> 00:07:13,100
+Setze niemals Spannungsregler an die Treiberversorgung.
+
+80
+00:07:14,840 --> 00:07:19,660
+Ein Regler kann höchstens 3 Ampere durchlassen, ist aber eine sehr langsame Schaltung.
+
+81
+00:07:20,680 --> 00:07:25,220
+Und der Treiber muss eine steile Flanke zum Laden der Gartekapazitäten formen.
+
+82
+00:07:27,180 --> 00:07:32,720
+Genau deshalb bauen Leute selbst gekaufte, teure Treiber mit 6, 8, 12 Ampere ein.
+
+83
+00:07:34,920 --> 00:07:42,540
+Sie können die Transistoren nicht steuern und die Transistoren brennen schon bei geringer Leistungsaufnahme durch, weil diese Regler verbaut sind.
+
+84
+00:07:43,940 --> 00:07:51,760
+Und du musst an die Versorgung des Treiberkanals einen Keramikondensator von etwa 5 Mikrofarad zum Formen der steilen Flanke setzen.
+
+85
+00:07:55,430 --> 00:07:57,970
+Das gilt besonders für leistungsstarke Treiber.
+
+86
+00:08:00,510 --> 00:08:02,010
+So sieht die Schaltung aus.
+
+87
+00:08:04,070 --> 00:08:04,950
+Siehst du die Dioden?
+
+88
+00:08:08,540 --> 00:08:09,880
+Die Z-Dioden sind hier.
+
+89
+00:08:12,200 --> 00:08:14,440
+Das ist der 1K Ohm-Widerstand am Werk.
+
+90
+00:08:17,220 --> 00:08:18,280
+Wir starten.
+
+91
+00:08:19,420 --> 00:08:20,280
+Versorgung anlegen.
+
+92
+00:08:25,690 --> 00:08:30,870
+Wir sehen, der Stromverbrauch der Schaltung ist 15 Volt, 0,04 Ampere.
+
+93
+00:08:32,550 --> 00:08:35,090
+Das reicht völlig für eine saubere Steuerung.
+
+94
+00:08:36,930 --> 00:08:37,510
+Und sehen wir.
+
+95
+00:08:38,610 --> 00:08:44,050
+Jetzt liegt der gelbe Oszilloskopkanal am Gate des Transistors und der blaue Kanal liegt am Drain.
+
+96
+00:08:47,660 --> 00:08:49,240
+Schauen wir, was passiert.
+
+97
+00:08:51,940 --> 00:08:54,240
+Und hier sehen wir dieses interessante Bild.
+
+98
+00:08:56,400 --> 00:08:58,320
+Gelber Kanal ist die Steuerung.
+
+99
+00:09:00,000 --> 00:09:02,540
+Und hier das blaue, was wir hier sehen.
+
+100
+00:09:04,280 --> 00:09:07,520
+Die Spike-Ampitude beträgt fast 250 Volt.
+
+101
+00:09:08,700 --> 00:09:11,060
+Sie schwankt zwischen 238 und 250.
+
+102
+00:09:13,200 --> 00:09:14,660
+Warum passiert das?
+
+103
+00:09:17,100 --> 00:09:21,800
+Das wird erreicht, indem man diesen Kern abstimmt, seinen Luftspalt einstellt.
+
+104
+00:09:23,440 --> 00:09:31,000
+Mit diesem Teil des Spalts im Kern musst du die Breite einstellen, die Windungszahl anpassen und das Tastverhältnis am Kanal wiederherstellen.
+
+105
+00:09:34,900 --> 00:09:38,140
+Also, der Luftspalt im Kern darf nicht zu groß sein.
+
+106
+00:09:39,460 --> 00:09:40,220
+Das sind deine Verluste.
+
+107
+00:09:42,060 --> 00:09:45,340
+Der Kern erhitzt sich und dabei kommt nichts Gutes heraus.
+
+108
+00:09:46,480 --> 00:09:47,440
+Aber der Spalt ist Pflicht.
+
+109
+00:09:48,980 --> 00:09:53,740
+In diesem System müssen wir einen statischen Spike mit steiler Flanke für die weitere Arbeit formen.
+
+110
+00:09:56,000 --> 00:09:59,180
+Der Spalt maximal so dick wie ein Blatt A4-Druckerpapier.
+
+111
+00:10:01,380 --> 00:10:04,040
+In diesem Fall ist der Spalt im Kern sogar noch kleiner.
+
+112
+00:10:06,560 --> 00:10:07,340
+Es ist Kreppband.
+
+113
+00:10:09,580 --> 00:10:11,340
+Hier und hier ist er gesetzt.
+
+114
+00:10:12,840 --> 00:10:20,100
+Der Kern wird mit Isolierband oder anderem Material zusammengezogen, aber nicht mit Metall, damit die Hälften nicht kurzgeschlossen werden.
+
+115
+00:10:21,780 --> 00:10:24,420
+Achte darauf, wie das System gewickelt ist.
+
+116
+00:10:27,950 --> 00:10:32,610
+Die Gegentaktzweige sind auf einer Hälfte, die Auskopplung ist immer auf der anderen Hälfte.
+
+117
+00:10:34,630 --> 00:10:35,470
+Wozu wird das gemacht?
+
+118
+00:10:37,770 --> 00:10:42,350
+Die Ausgangswicklung formt ein kleines Magnetfeld um sich, das den Kern belastet.
+
+119
+00:10:43,510 --> 00:10:46,750
+Und es breitet sich nicht über das ganze Volumen des Verriets aus.
+
+120
+00:10:48,290 --> 00:10:52,010
+Aber die Zweigwicklungen formen ein zirkulierendes Magnetfeld.
+
+121
+00:10:53,790 --> 00:10:55,450
+So wird die Isolation erreicht.
+
+122
+00:10:56,830 --> 00:11:05,090
+Wenn auf dieser Seite des Systems weitere statische Spikes auftreten und Arbeit geleistet wird, schützt das die Transistoren und verhindert starke Rückwirkungen.
+
+123
+00:11:06,550 --> 00:11:07,800
+Das sind sogenannte Trenntransformatoren.
+
+124
+00:11:10,130 --> 00:11:15,170
+Sie haben einen geringeren Wirkungsgrad, weil die Wicklungen praktisch auf verschiedenen Kernen liegen.
+
+125
+00:11:16,750 --> 00:11:19,650
+Aber in diesem System ist das nun mal notwendig.
+
+126
+00:11:21,030 --> 00:11:23,790
+Du kannst die Gegentaktwicklung nicht auf einen Kern wickeln.
+
+127
+00:11:25,390 --> 00:11:29,490
+Du kannst zur Arbeit auch solche Verriete verwenden, sie müssen groß sein.
+
+128
+00:11:32,530 --> 00:11:35,770
+Verriete für dieses System müssen eine hohe Durchlassfähigkeit haben.
+
+129
+00:11:37,270 --> 00:11:39,650
+Dieser Verriet hier ist Konkretsorte 2000.
+
+130
+00:11:42,150 --> 00:11:48,170
+Alle statischen Effekte kann man auch auf solchen Ringen bekommen, aber einfacher ist es beigeteilten Verrieten.
+
+131
+00:11:50,250 --> 00:11:53,670
+Jetzt schauen wir uns genauer an, was mit der Statik passiert.
+
+132
+00:11:57,130 --> 00:11:59,830
+Unsere Versorgung beträgt 24 Volt.
+
+133
+00:12:02,170 --> 00:12:07,470
+Diese Spikes, diese Nadeln, das ist genau die Antwort des Mediums auf den Betrieb unseres Systems.
+
+134
+00:12:08,810 --> 00:12:14,550
+Wir senden einen Impuls mit steiler Flanke dorthin und es kommt eine Antwort darauf, ein Klick.
+
+135
+00:12:16,630 --> 00:12:19,870
+Die nachfolgenden Nadeln interessieren uns nicht wirklich.
+
+136
+00:12:21,050 --> 00:12:22,270
+Sie klingen nicht ab.
+
+137
+00:12:23,790 --> 00:12:26,950
+Uns interessiert die Amplitude dieser Anstiegsflanke des Spikes.
+
+138
+00:12:29,190 --> 00:12:32,490
+Dieser Spike hebt letztlich die Gesamtamplitude im Betrieb an.
+
+139
+00:12:35,720 --> 00:12:38,960
+Im Moment liegt das Steuertastverhältnis bei 11%.
+
+140
+00:12:40,680 --> 00:12:44,840
+Jetzt ändere ich das Tastverhältnis und wir sehen, was passiert.
+
+141
+00:12:52,180 --> 00:12:55,540
+Der Stromverbrauch des Systems liegt momentan bei nahezu Null.
+
+142
+00:12:58,720 --> 00:12:59,920
+Tastverhältnis erhöhen.
+
+143
+00:13:12,160 --> 00:13:16,600
+Jetzt Tastverhältnis 20%, 25%, 27%.
+
+144
+00:13:18,020 --> 00:13:23,680
+Du siehst, bei 27% Tastverhältnis haben wir ein schön geformtes Signal.
+
+145
+00:13:25,320 --> 00:13:26,180
+Schauen wir.
+
+146
+00:13:27,200 --> 00:13:29,780
+Der Verbrauch ist auf 400 mA gestiegen.
+
+147
+00:13:34,270 --> 00:13:36,370
+Und jetzt schau auf den blauen Kanal.
+
+148
+00:13:38,090 --> 00:13:39,890
+Wir blenden den gelben aus.
+
+149
+00:13:42,570 --> 00:13:44,390
+Uns interessiert der blaue Kanal.
+
+150
+00:13:46,070 --> 00:13:47,850
+Das ist das Signal am Drain.
+
+151
+00:13:50,070 --> 00:13:53,430
+Auf dem blauen Kanal haben wir 50 V pro Teilung.
+
+152
+00:13:58,510 --> 00:13:59,850
+50 V pro Teilung.
+
+153
+00:14:02,350 --> 00:14:12,510
+Die Amplitude des Rechtecks, wenn die Statik arbeitet, der statische Spike vom Medium und die nicht abklingenden Spitzen, die Amplitude steigt von 24 V auf 70 V.
+
+154
+00:14:14,910 --> 00:14:16,650
+Das heißt, was machen wir?
+
+155
+00:14:18,050 --> 00:14:24,550
+Wir bekommen einen statischen Spike und dieser statische Spike gibt uns einen Gewinn im Rechteck bis auf 70 V.
+
+156
+00:14:26,170 --> 00:14:29,590
+Im Kern bekommen wir bereits am Gegentakt selbst einen Gewinn.
+
+157
+00:14:31,290 --> 00:14:35,470
+Das heißt, dieser interessante Effekt gibt uns Gewinn in diesem System.
+
+158
+00:14:37,310 --> 00:14:41,230
+Hier, an die Zweige, haben wir 24 V Versorgung gegeben.
+
+159
+00:14:43,090 --> 00:14:45,710
+Mithilfe der Statik heben wir sie auf 70 V.
+
+160
+00:14:46,910 --> 00:14:50,190
+Und unser Transformator arbeitet im Abwärtsmodus.
+
+161
+00:14:51,850 --> 00:14:56,110
+Danach arbeiten wir faktisch nicht mit 24 V, sondern mit 70 V.
+
+162
+00:14:57,590 --> 00:15:03,090
+Wir setzen diesen Gewinn herunter und schicken ihn zur Ansteuerung der Schaltung bei diesem minimalen Verbrauch.
+
+163
+00:15:04,810 --> 00:15:09,090
+Du siehst also, wofür die Tastverhältnisregelung in diesem System gut ist.
+
+164
+00:15:11,170 --> 00:15:16,530
+Und jetzt schalte ich noch den gelben Oszilloskopkanal auf den Drain des zweiten Transistors.
+
+165
+00:15:18,750 --> 00:15:20,890
+Auch auf 50 V einstellen.
+
+166
+00:15:28,730 --> 00:15:29,710
+Kanal umschalten.
+
+167
+00:15:34,090 --> 00:15:34,910
+Trigger setzen.
+
+168
+00:15:45,090 --> 00:15:47,250
+Jetzt stellen wir alles auf das Signal ein.
+
+169
+00:15:51,780 --> 00:15:53,300
+Jetzt Tastverhältnis erhöhen.
+
+170
+00:15:55,060 --> 00:15:56,140
+Und was sehen wir?
+
+171
+00:15:57,240 --> 00:15:58,080
+Interessantes Bild.
+
+172
+00:16:01,130 --> 00:16:07,610
+Wir sehen, dass die Statik nicht nur die Amplitude unseres Signals erhöht, sondern es auch in der Dauer verlängert hat.
+
+173
+00:16:09,370 --> 00:16:15,770
+Das heißt, faktisch ist die Dauer der Steuerung, unabhängig von der Steuerimpulslänge, 50% Füllung.
+
+174
+00:16:17,490 --> 00:16:20,730
+50% auf einem Kanal, 50% auf dem anderen.
+
+175
+00:16:23,690 --> 00:16:26,550
+Diesen Trick beim Gegentakt zu machen ist sehr wichtig.
+
+176
+00:16:28,490 --> 00:16:30,210
+Du bekommst dieses Bild.
+
+177
+00:16:32,310 --> 00:16:36,770
+Wenn wir kombinieren, sehen wir, dass tatsächlich alles mit Signal gefüllt ist.
+
+178
+00:16:45,500 --> 00:16:47,260
+So arbeitet die Statik.
+
+179
+00:16:48,480 --> 00:16:49,820
+Wenn wir hineinzoomen, sehen wir.
+
+180
+00:16:51,260 --> 00:16:52,820
+Uns interessiert hier die Breite.
+
+181
+00:16:54,420 --> 00:16:56,740
+Uns interessiert diese Antwort, der Schlag.
+
+182
+00:16:58,240 --> 00:17:00,620
+Die nachfolgenden Spitzen, abklingend.
+
+183
+00:17:09,530 --> 00:17:11,450
+Dasselbe gibt es auf dem gelben Kanal.
+
+184
+00:17:17,560 --> 00:17:19,260
+Hier ist die Anstiegsflanke kleiner.
+
+185
+00:17:20,980 --> 00:17:24,780
+Sie wird auch später wachsen, wenn der Gegentakt mit der Spule verbunden ist.
+
+186
+00:17:26,140 --> 00:17:34,680
+Denn wenn man mit Statik, mit natürlicher Elektrizität arbeitet, teilt sich die Spule, auf der diese Effekte auftreten, immer in eine Subzone auf.
+
+187
+00:17:36,000 --> 00:17:38,820
+In diesem Fall liegt diese Subzone auf dem blauen Kanal.
+
+188
+00:17:41,320 --> 00:17:42,840
+Und die Energieabgabezone.
+
+189
+00:17:44,280 --> 00:17:46,480
+In der Subzone ist die Amplitude immer höher.
+
+190
+00:17:48,140 --> 00:17:54,580
+Aber wenn wir einen Energieabfluss geben, der von hier zur Spule geht, haben wir auf beiden Kanälen das gleiche Signal.
+
+191
+00:17:56,180 --> 00:18:00,400
+Schauen wir jetzt, wir sehen, dass die Glimmlampe an der Statik sehr gut leuchtet.
+
+192
+00:18:02,660 --> 00:18:10,980
+Statik und an der Abgabezone, das ist gerade das tatsächlich kalte Ende der Spule mit diesen 10 plus 10 Bindungen, ist das Leuchten geringer.
+
+193
+00:18:12,440 --> 00:18:14,460
+Genau deshalb ist die Impulsbreite kleiner.
+
+194
+00:18:16,360 --> 00:18:18,100
+Statik muss überall vorhanden sein.
+
+195
+00:18:19,780 --> 00:18:25,300
+Hier siehst du etwas glühen am Kühlkörper, du siehst glühen an der Versorgung, du siehst es an der Steuerung.
+
+196
+00:18:27,320 --> 00:18:32,040
+Wo wir uns auch anschließen, Statik ist in diesem System überall vorhanden.
+
+197
+00:18:33,340 --> 00:18:35,240
+Berühr die Pins des Chips irgendwo.
+
+198
+00:18:37,140 --> 00:18:40,540
+Das heißt, dieses statische Potential ist überall vorhanden.
+
+199
+00:18:42,040 --> 00:18:47,860
+Das ist das, was wir später auf die Spule übertragen müssen, um die hochfrequenten Prozesse darin zu aktivieren.
+
+200
+00:18:51,120 --> 00:19:00,680
+Und das ist die anfängliche Abstimmung, ganz ohne alles, die du aus diesem Kern herausholen musst, damit er ein statisches Potential liefert, mit dem wir dann arbeiten.
+
+201
+00:19:03,300 --> 00:19:05,920
+Nochmal die Oszillogramme, wie das aussieht.
+
+202
+00:19:12,720 --> 00:19:14,980
+Und jetzt verringere ich das Tastverhältnis.
+
+203
+00:19:17,780 --> 00:19:20,380
+Tastverhältnis 46 Prozent, ich verringere.
+
+204
+00:19:21,980 --> 00:19:24,900
+Wir können sehen, welche Prozesse ablaufen.
+
+205
+00:19:27,040 --> 00:19:30,520
+Das heißt, wir sehen, dass der Verbrauch des Systems sinkt.
+
+206
+00:19:33,160 --> 00:19:35,720
+Schau, die Nadel geht sanft nach unten.
+
+207
+00:19:37,500 --> 00:19:39,700
+Und die Statik arbeitet für uns.
+
+208
+00:19:42,360 --> 00:19:45,820
+Deshalb ist die Tastverhältnisregelung in diesem System wichtig.
+
+209
+00:19:46,740 --> 00:19:49,180
+Wir müssen keine Lampen zum Leuchten bringen.
+
+210
+00:19:52,570 --> 00:19:56,510
+Das Wichtigste für uns ist, diese statische Potential zu bekommen.
+
+211
+00:19:57,590 --> 00:20:01,070
+Und wir sehen, dass bei jeder steilen Flanke Klicks entstehen.
+
+212
+00:20:06,310 --> 00:20:07,730
+Tastverhältnis weiter verringern.
+
+213
+00:20:10,130 --> 00:20:12,830
+Und wir sind praktisch auf Null heruntergegangen.
+
+214
+00:20:14,830 --> 00:20:17,870
+Jetzt liegt das Tastverhältnis bei etwa 3 Prozent.
+
+215
+00:20:18,790 --> 00:20:23,330
+Ein winziges bisschen mehr, und wir sehen, dass der statische Spike maximal ist.
+
+216
+00:20:42,300 --> 00:20:44,160
+Und noch einmal die Schaltung.
+
+217
+00:20:46,440 --> 00:20:48,680
+Diese Schaltung ist getestet, eingefahren.
+
+218
+00:20:50,340 --> 00:20:51,180
+Du kannst sie verwenden.
+
+219
+00:20:52,580 --> 00:20:53,420
+Funktioniert hervorragend.
+

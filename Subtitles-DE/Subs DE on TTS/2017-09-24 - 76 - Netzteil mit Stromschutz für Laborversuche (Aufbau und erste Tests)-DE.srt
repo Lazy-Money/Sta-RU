@@ -1,0 +1,1060 @@
+1
+00:00:00,000 --> 00:00:01,500
+Hallo zusammen.
+
+2
+00:00:02,940 --> 00:00:06,060
+Ich arbeite weiter am Aufbau des Labornetzteils.
+
+3
+00:00:07,780 --> 00:00:10,240
+Hier vor dir siehst du einen Teil seines Schaltplans.
+
+4
+00:00:12,160 --> 00:00:15,320
+Was wir schon umsetzen konnten, sozusagen in Hardware.
+
+5
+00:00:16,720 --> 00:00:19,160
+Und diesen Teil werden wir heute testen.
+
+6
+00:00:20,900 --> 00:00:23,120
+Ein kurzer Blick auf den Schaltplan.
+
+7
+00:00:24,280 --> 00:00:29,140
+Der Hauptoszillator basiert auf einem UC3825N Chip.
+
+8
+00:00:30,480 --> 00:00:35,660
+Der PWM-Regler ist ebenfalls darauf aufgebaut, mit Strom- und Spannungsrückkopplung.
+
+9
+00:00:37,020 --> 00:00:40,900
+Im Moment siehst du, dass die Stromrückkopplung noch nicht hinzugefügt ist.
+
+10
+00:00:42,580 --> 00:00:44,640
+Also testen wir das System ohne sie.
+
+11
+00:00:45,860 --> 00:00:49,420
+Die Stromrückkopplung geht über einen 1K-Widerstand an Pin 9.
+
+12
+00:00:50,900 --> 00:00:57,900
+Damit der Chip in dieser Konfiguration startet, muss Pin 9 über diesen Widerstand auf Masse gelegt werden, also auf Minus.
+
+13
+00:01:00,060 --> 00:01:04,320
+Du siehst auch, dass die Reglerausgänge von Pin 14 und Pin 11 kommen.
+
+14
+00:01:05,920 --> 00:01:11,360
+Im Schaltplan habe ich Pin 14 als 1 und Pin 11 als 2 im Kreis markiert.
+
+15
+00:01:12,980 --> 00:01:15,560
+Und jetzt können wir die Ansteuerung verfolgen.
+
+16
+00:01:16,980 --> 00:01:18,240
+1 geht zu diesem Optotreiber.
+
+17
+00:01:20,100 --> 00:01:23,500
+Und du siehst, dass 1 auch diagonal zu einem Treiber geht.
+
+18
+00:01:25,240 --> 00:01:26,760
+Die Schalter arbeiten auch so.
+
+19
+00:01:27,700 --> 00:01:30,660
+Das heißt, die Schalter arbeiten über Kreuz.
+
+20
+00:01:32,200 --> 00:01:33,760
+Ein Paar und das zweite Paar.
+
+21
+00:01:35,040 --> 00:01:39,920
+So erzeugen wir bipolare Stromimpulse durch die Primärwicklung des Impulstransformators.
+
+22
+00:01:42,220 --> 00:01:45,600
+Du siehst auch eine separate Versorgung für jeden der vier Treiber.
+
+23
+00:01:47,200 --> 00:01:49,300
+Mit Plus Minus im Schaltplan markiert.
+
+24
+00:01:51,120 --> 00:01:53,820
+Und an diesen Stellen werden 16V eingespeist.
+
+25
+00:01:55,040 --> 00:01:57,580
+Diese Versorgung ist galvanisch getrennt.
+
+26
+00:01:58,640 --> 00:02:02,300
+Und dieselbe Versorgung wird separat zum PWM-Regler selbst geführt.
+
+27
+00:02:04,720 --> 00:02:08,900
+Ich habe ihn aus einem DC-DC-Wandler mit 5 Ausgängen gespeist.
+
+28
+00:02:10,560 --> 00:02:12,680
+Den Schaltplan findest du auf meinem Kanal.
+
+29
+00:02:14,240 --> 00:02:15,620
+Und ein Video zum Aufbau.
+
+30
+00:02:19,560 --> 00:02:22,760
+Die optische Rückkopplung erfolgt bei uns auch über die Spannung.
+
+31
+00:02:23,500 --> 00:02:26,940
+Hier siehst du einen PC-817-Optokoppler.
+
+32
+00:02:29,580 --> 00:02:31,660
+Ich habe seinen Ausgang an Pin 1 geführt.
+
+33
+00:02:34,000 --> 00:02:38,160
+Und er bekommt Strom über einen 1K-Vorwiderstand von Pin 16.
+
+34
+00:02:40,280 --> 00:02:45,980
+Dieser Optokoppler ist als Sensor für die Spannungsgrenze des Netzteils vorgesehen, nämlich 1000V.
+
+35
+00:02:49,300 --> 00:02:55,000
+Bei 1000V am Ausgang soll der Wandler in den Begrenzungsmodus gehen, um dieses Potenzial zu halten.
+
+36
+00:02:57,040 --> 00:03:01,260
+Bis 1000V wird die Spannungsregelung mit diesem Trimpot-Drehwiderstand erfolgen.
+
+37
+00:03:04,000 --> 00:03:09,000
+Du siehst auch, dass ich die Werte der Widerstände in Reihe mit dem variablen Widerstand gewählt habe.
+
+38
+00:03:11,600 --> 00:03:16,500
+So dass die Regelung über den gesamten Verstellweg des Drehwiderstands gleichmäßig ist.
+
+39
+00:03:19,620 --> 00:03:21,720
+Was sehr praktisch zum Regeln ist.
+
+40
+00:03:22,780 --> 00:03:29,760
+Ich habe sie auch so gewählt, dass der Chip die Erzeugung stoppt, wenn der Schleifer ganz links steht und das Netzteil Instant-By geht.
+
+41
+00:03:31,960 --> 00:03:39,820
+Du siehst im Schaltplan, dass der PWM-Regler aus dem 16V-Potenzial gespeist wird, das an Pin 15 des Chips anliegt.
+
+42
+00:03:41,280 --> 00:03:47,100
+Pin 13 wird mit 12V versorgt, die von einem L7812-Regler kommen.
+
+43
+00:03:49,020 --> 00:03:53,240
+Das geschieht, um 12V an die Eingangs-LEDs der Opto-Treiber anzulegen.
+
+44
+00:03:57,300 --> 00:03:58,060
+Grenzspannung.
+
+45
+00:03:59,480 --> 00:04:03,060
+12V sind für diese Treiber reichlich und sie arbeiten hervorragend.
+
+46
+00:04:03,760 --> 00:04:19,300
+Ich habe dieses Potenzial über einen 470 V-Widerstand und auch einen 1K-Widerstand parallel zur LED im Treiber angelegt, was Fehlauslösungen des Opto-Treibers in diesem System ausschließt.
+
+47
+00:04:20,140 --> 00:04:25,720
+Jetzt zeige ich, wie es in Hardware aussieht, und gehe dann zum Testen und Abstimmen der Baugruppe über.
+
+48
+00:04:27,880 --> 00:04:29,300
+Das ist die Baugruppe im Zusammenbau.
+
+49
+00:04:31,600 --> 00:04:33,000
+Was siehst du hier?
+
+50
+00:04:34,620 --> 00:04:40,280
+Ich habe einen Bus gemacht, der die Versorgung führt und mit den anderen Steuerelementen des Geräts verbindet.
+
+51
+00:04:41,760 --> 00:04:43,780
+Das ist eine trennbare Einheit.
+
+52
+00:04:46,000 --> 00:04:49,740
+Weiter, die CDC-Wandler mit fünf galvanisch getrennten Ausgängen.
+
+53
+00:04:51,820 --> 00:04:55,160
+Vier HCP-L1 und 3020 Opto-Treiber.
+
+54
+00:04:56,400 --> 00:05:00,160
+Der PWM-Reglerchip selbst UC3825N.
+
+55
+00:05:02,720 --> 00:05:05,280
+Das ist unser L7812-Regler.
+
+56
+00:05:08,180 --> 00:05:10,520
+Von den Hauptstützkomponenten der Treiber.
+
+57
+00:05:12,580 --> 00:05:13,280
+Das sind Widerstandsketten.
+
+58
+00:05:15,540 --> 00:05:18,180
+Und hier sind ein Watt Widerstände zu sehen.
+
+59
+00:05:20,040 --> 00:05:21,940
+Diese Ketten gehen an das FET-Gate.
+
+60
+00:05:24,140 --> 00:05:28,500
+Du siehst hier auch Bündel von 15 V10ern, gegeneinander geschaltet.
+
+61
+00:05:29,800 --> 00:05:32,040
+Diese Bauteile liegen parallel zu den Transistoranschlüssen.
+
+62
+00:05:34,840 --> 00:05:39,120
+Im Schaltplan siehst du, dass ich einen der Vorwiderstandswerte festgelegt habe.
+
+63
+00:05:42,500 --> 00:05:44,440
+Das sind 4,7 Omega am Gate.
+
+64
+00:05:45,920 --> 00:05:47,900
+Der zweite Wert ist noch nicht angegeben.
+
+65
+00:05:50,340 --> 00:05:54,340
+Standardmäßig habe ich denselben 4,7 Widerstand auf der Platine.
+
+66
+00:05:55,640 --> 00:06:00,660
+In der Praxis werde ich auswählen, und falls nötig wird der Wert dieses Widerstands reduziert.
+
+67
+00:06:02,360 --> 00:06:06,980
+Für eine qualitativ bessere Öffnung des FET-Gates an der ansteigenden Flanke.
+
+68
+00:06:08,520 --> 00:06:10,040
+Aber wiederum nur, falls nötig.
+
+69
+00:06:11,160 --> 00:06:16,620
+Dieser Widerstand ist das Bauteil, das für die Steuerung des Spannungspotentials zuständig ist.
+
+70
+00:06:20,920 --> 00:06:23,500
+Sonst gibt es hier nichts ausführlich zu besprechen.
+
+71
+00:06:27,580 --> 00:06:29,760
+Der Leistungsimpulstransformator ist angeschlossen.
+
+72
+00:06:33,300 --> 00:06:38,780
+Ich habe entschieden, die Primärwicklung mit isoliertem Draht zu machen, mehradriges Reinkupfer.
+
+73
+00:06:41,180 --> 00:06:42,760
+In wärmebeständiger Isolierung.
+
+74
+00:06:44,840 --> 00:06:48,960
+7 Windungen, was etwa 14 V bei vollgeladener Batterie entspricht.
+
+75
+00:06:50,340 --> 00:06:52,240
+2 V pro Windung der Primärwicklung.
+
+76
+00:06:53,640 --> 00:06:55,700
+Also, alles bereit zum Testen.
+
+77
+00:06:56,920 --> 00:07:00,020
+Jetzt müssen wir sehen, wie die Opto-Treiber angesteuert werden.
+
+78
+00:07:02,260 --> 00:07:06,600
+Dafür schauen wir uns die anfängliche Arbeit des PWM-Reglers an diesen Punkten an.
+
+79
+00:07:08,260 --> 00:07:09,480
+Punkt 1 und Punkt 2.
+
+80
+00:07:11,060 --> 00:07:19,480
+Unsere Steuerimpulse werden gegen Fahrsicht zugeführt, und bei ihrer maximalen Dauer lässt der PWM-Regler eine Pause zwischen ihnen, die sogenannte Todzeit.
+
+81
+00:07:22,460 --> 00:07:25,840
+Ich habe die Oszilloskop-Tastköpfe an diesen Stellen angeschlossen.
+
+82
+00:07:27,140 --> 00:07:29,900
+Jetzt lege ich Spannung an den DC-DC-Wandler an.
+
+83
+00:07:31,420 --> 00:07:33,380
+Gleich hörst du den arbeitenden Kern.
+
+84
+00:07:35,560 --> 00:07:42,680
+Und wenn sich die Impulsdauer ändert, passt sich der DC-DC-Wandler dem Verbrauch an, und die Tonlage dieses Geräusches ändert sich.
+
+85
+00:07:44,660 --> 00:07:46,240
+Ich habe Spannung angelegt.
+
+86
+00:07:48,460 --> 00:07:50,560
+DC-DC-Wandler ist gestartet.
+
+87
+00:07:52,460 --> 00:07:55,580
+Du siehst, das Oszillogramm hat sich leicht geändert.
+
+88
+00:07:56,360 --> 00:08:02,800
+Und jetzt bewege ich den Schleifer des Drehwiderstands aus der Endposition, in der der PWM-Regler nicht arbeitet.
+
+89
+00:08:04,500 --> 00:08:05,540
+Sanft erhöhen.
+
+90
+00:08:08,460 --> 00:08:10,820
+Du siehst, ein minimaler Impuls erschien.
+
+91
+00:08:12,460 --> 00:08:16,620
+Und du hörst, dass der DC-DC-Wandler seine Tonlage geändert hat.
+
+92
+00:08:18,460 --> 00:08:19,760
+So ist seine Eigenart.
+
+93
+00:08:21,300 --> 00:08:25,340
+Uns interessiert, wie gleichmäßig sich die Dauer der Steuerimpulse ändert.
+
+94
+00:08:29,170 --> 00:08:30,330
+Bis zum Anschlag bringen.
+
+95
+00:08:32,070 --> 00:08:32,920
+Ende des Schleifers.
+
+96
+00:08:36,550 --> 00:08:40,430
+Und jetzt beobachte, ob es eine Pause zwischen den Steuerimpulsen gibt.
+
+97
+00:08:41,610 --> 00:08:44,430
+Ja, die Pause ist tatsächlich zeitlich vorhanden.
+
+98
+00:08:47,330 --> 00:08:49,510
+Schauen wir uns jetzt an, wie lang sie ist.
+
+99
+00:08:52,230 --> 00:08:54,930
+Zeitablenkung auf 100 NS pro Teilung gestellt.
+
+100
+00:08:56,890 --> 00:09:03,590
+Und es kommen 100, 200, 300, 400 NS Pause bei diesem PWM-Regler heraus.
+
+101
+00:09:05,770 --> 00:09:12,910
+Da wir bestätigt haben, dass alles funktioniert, können wir jetzt sehen, wie sich der Optotreiber unter Last am FET-Gate verhält.
+
+102
+00:09:16,290 --> 00:09:21,230
+Dafür schalte ich den blauen Oszilloskop-Kanal auf den Ausgang des Optotreibers um.
+
+103
+00:09:24,370 --> 00:09:26,190
+Lege ihn direkt ans FET-Gate.
+
+104
+00:09:31,570 --> 00:09:35,090
+Und hier können wir schon seine reale Arbeit unter Last beobachten.
+
+105
+00:09:39,490 --> 00:09:42,150
+Zuerst schauen wir uns an, wie sich die Dauer ändert.
+
+106
+00:09:49,970 --> 00:09:51,190
+Steuerkanal, gelb.
+
+107
+00:09:56,590 --> 00:09:58,350
+Der Optotreiber arbeitet ordentlich.
+
+108
+00:09:59,990 --> 00:10:03,130
+Jetzt können wir die Öffnungsflanke des Schalters beobachten.
+
+109
+00:10:06,490 --> 00:10:10,130
+Wir müssen die Flanke des blauen Oszilloskop-Kanals betrachten.
+
+110
+00:10:12,530 --> 00:10:14,490
+Auch bei 100 NS pro Teilung.
+
+111
+00:10:18,440 --> 00:10:22,520
+Diese kleinen Störungen, die du siehst, das ist die Arbeit des DC-DC-Wandlers.
+
+112
+00:10:24,300 --> 00:10:28,660
+Aber das ist absolut unkritisch und beeinflusst die Arbeit der gesamten Schaltung nicht.
+
+113
+00:10:32,560 --> 00:10:36,740
+Du siehst, dass beim Reduzieren der Impulsdauer die Flanke gleich bleibt.
+
+114
+00:10:43,470 --> 00:10:45,610
+Und du kannst sie zeitlich messen.
+
+115
+00:10:50,160 --> 00:10:59,360
+Mit dieser Kette im Gartekreis, 4,7 Omega und einem 4,7 Widerstand, beträgt die Anstiegsflanke des Signals am FET-Gate 300 NS.
+
+116
+00:11:06,360 --> 00:11:11,980
+Und die Flanke, mit der er angesteuert wird, ist sehr steil, sie kommt direkt vom PWM-Regler.
+
+117
+00:11:15,540 --> 00:11:17,980
+Uns interessiert genau dieser Parameter.
+
+118
+00:11:19,400 --> 00:11:22,680
+Und wir können auch die Rückflanke beim Schalterschließen betrachten.
+
+119
+00:11:27,910 --> 00:11:30,210
+Diese Flanke beträgt etwa 200 NS.
+
+120
+00:11:33,710 --> 00:11:39,610
+Jetzt zu dem Moment, von dem ich gesprochen habe, das Auswählen dieses nicht festgelegten Widerstands.
+
+121
+00:11:41,610 --> 00:11:47,090
+Wenn wir ihn kurz schließen, ich mache das jetzt mit einer Pinzette, siehst du, dass die Flanke wachsen wird.
+
+122
+00:11:51,520 --> 00:11:52,920
+Steilheit der Öffnungsflanke.
+
+123
+00:11:57,970 --> 00:12:02,410
+Du siehst, dass beim Kurzschließen die Steilheit der Öffnungsflanke zunimmt.
+
+124
+00:12:08,820 --> 00:12:11,780
+Von 300 NS auf 200 NS.
+
+125
+00:12:13,500 --> 00:12:21,520
+Das bedeutet, wir haben einen großen Bereich zum Auswählen dieser Gartewiderstände, um einen sauberen Betrieb des Leistungsschalters einzustellen.
+
+126
+00:12:24,020 --> 00:12:25,840
+Damit endet die Funktionsprüfung.
+
+127
+00:12:27,480 --> 00:12:30,260
+Die Schaltungen sind fertig, alles funktioniert.
+
+128
+00:12:31,980 --> 00:12:35,400
+Dieselben Prüfungen sollten an jedem Optotreiber durchgeführt werden.
+
+129
+00:12:36,740 --> 00:12:38,300
+Das Bild sollte erhalten bleiben.
+
+130
+00:12:39,560 --> 00:12:41,620
+Also machen wir den ersten Systemstart.
+
+131
+00:12:43,240 --> 00:12:46,060
+Ich empfehle das immer mit einer Glühlampe zu machen.
+
+132
+00:12:47,960 --> 00:12:55,620
+Prüfe sorgfältig nochmal das gesamte Versorgungsleitungsschema, die Polarität, die an die Anschlüsse der Elektrolytkondensatoren geführt wird.
+
+133
+00:12:56,600 --> 00:12:58,940
+Denn ein Umpolen kann zum Defekt führen.
+
+134
+00:13:00,760 --> 00:13:04,690
+Und ohne der Schaltung Spannung zuzuführen, prüfe zuerst das Leistungsmodul.
+
+135
+00:13:06,920 --> 00:13:09,220
+Dafür verbinde eines der Kabel mit der Batterie.
+
+136
+00:13:10,440 --> 00:13:13,460
+In diesem Fall habe ich den Minuspol der Stromquelle angeschlossen.
+
+137
+00:13:15,280 --> 00:13:22,060
+Und die Plusleitung, die zum Kondensatorbank und dann zu den Leistungsschaltern führt, schließe ich über eine Glühlampe an.
+
+138
+00:13:25,420 --> 00:13:27,900
+Sie zeigt sofort, ob eine Störung vorliegt.
+
+139
+00:13:29,920 --> 00:13:31,440
+Schau, ich schließe an.
+
+140
+00:13:33,840 --> 00:13:36,360
+Und du siehst, die Lampe blinkte kurz.
+
+141
+00:13:37,720 --> 00:13:40,460
+Und weiter führt ihr Anschluss nicht zum Glühen der Wendel.
+
+142
+00:13:42,800 --> 00:13:47,020
+Das erste Aufblinken bedeutete, dass die Kondensatoren aufgeladen wurden.
+
+143
+00:13:48,320 --> 00:13:57,060
+Und der Umstand, dass die Lampe nicht leuchtet, zeigt, dass das Leistungsmodul korrekt aufgebaut ist und die Schalter keinen Strom ohne Ansteuerung durchlassen.
+
+144
+00:13:59,420 --> 00:14:03,520
+Nachdem wir das bestätigt haben, können wir zum Test der Baugruppe übergehen.
+
+145
+00:14:06,160 --> 00:14:08,400
+Bestätige, dass das System aus ist.
+
+146
+00:14:09,880 --> 00:14:13,040
+Stelle mit dem Schleifer des Widerstands den Nicht-Arbeitsmodus ein.
+
+147
+00:14:15,640 --> 00:14:20,360
+Endposition, kleinste Impulsdauer oder vielmehr deren vollständige Abwesenheit.
+
+148
+00:14:21,940 --> 00:14:23,920
+Und jetzt schließe das System an.
+
+149
+00:14:26,000 --> 00:14:28,440
+Dafür kannst du ein Amperemeter verwenden.
+
+150
+00:14:30,620 --> 00:14:34,740
+Sehr nützlich, damit kannst du den Strom beobachten, den das System zieht.
+
+151
+00:14:36,460 --> 00:14:37,920
+Schließe die Batterie an.
+
+152
+00:14:39,960 --> 00:14:43,240
+Und jetzt können wir Spannung an den DC-DC-Wandler anlegen.
+
+153
+00:14:46,500 --> 00:14:47,420
+Spannung angelegt.
+
+154
+00:14:49,400 --> 00:14:54,300
+Lass mich gleich sagen, dass die Windungszahl im Impulstransformator ziemlich hoch ist.
+
+155
+00:14:55,840 --> 00:14:58,680
+Das Übersetzungsverhältnis ist bei steilen Impulsen hoch.
+
+156
+00:15:00,100 --> 00:15:02,100
+Und die Spannung wird hier ziemlich hoch sein.
+
+157
+00:15:03,420 --> 00:15:07,600
+Du siehst, dass das System nicht läuft und keine Entladung an den Ausgängen ist.
+
+158
+00:15:12,910 --> 00:15:17,750
+Jetzt habe ich den grünen Startdraht und das Ende der Transformatorwicklung kurz geschlossen.
+
+159
+00:15:19,290 --> 00:15:21,550
+Jetzt erhöhe ich die Impulsdauer leicht.
+
+160
+00:15:25,480 --> 00:15:28,300
+Und du siehst, eine kleine Entladung erschien.
+
+161
+00:15:30,580 --> 00:15:34,780
+Das System ist gestartet, du kannst es auch am Amperemeter kontrollieren.
+
+162
+00:15:36,380 --> 00:15:38,020
+Der Verbrauch ist jetzt sehr klein.
+
+163
+00:15:40,300 --> 00:15:40,920
+Mehr hinzufügen.
+
+164
+00:15:44,300 --> 00:15:44,980
+Schau!
+
+165
+00:15:48,530 --> 00:15:50,850
+Die Entladung hat schon ihre Länge erhöht.
+
+166
+00:15:52,450 --> 00:15:54,110
+Und sie streckt sich schon.
+
+167
+00:15:55,950 --> 00:15:57,470
+Das System arbeitet.
+
+168
+00:15:59,250 --> 00:16:03,110
+Auf diese visuelle Weise können wir sagen, wie die Spannung steigt.
+
+169
+00:16:09,220 --> 00:16:10,280
+Mehr hinzufügen.
+
+170
+00:16:18,890 --> 00:16:22,870
+Ich sage euch, das ist weit über 1000V bei einer solchen Entladung.
+
+171
+00:16:24,690 --> 00:16:26,650
+Bei Berührung kleben die Drähte zusammen.
+
+172
+00:16:29,690 --> 00:16:32,790
+Schade, dass ich das Amperemeter nicht ins Bild bekomme.
+
+173
+00:16:34,970 --> 00:16:36,150
+Versuche es jetzt.
+
+174
+00:16:38,750 --> 00:16:39,570
+Sonntag.
+
+175
+00:16:41,070 --> 00:16:42,750
+So ist es sichtbar.
+
+176
+00:16:43,690 --> 00:16:44,710
+Nadel bei Null.
+
+177
+00:17:00,860 --> 00:17:01,960
+Etwas schlechter Kontakt.
+
+178
+00:17:03,240 --> 00:17:04,020
+Hier ist es jetzt.
+
+179
+00:17:09,060 --> 00:17:12,120
+Wir sehen, dass beim Kurzschluss der Verbrauch 9A erreicht.
+
+180
+00:17:16,510 --> 00:17:18,330
+Mehr Impulsdauer hinzufügen.
+
+181
+00:17:27,160 --> 00:17:28,260
+10A-Kurzschluss.
+
+182
+00:17:30,580 --> 00:17:32,280
+Jetzt volle Dauer geben.
+
+183
+00:17:35,460 --> 00:17:38,180
+Wahrscheinlich bekommen wir eine spezifische Entladung.
+
+184
+00:17:41,800 --> 00:17:43,820
+Mit dieser Sache muss man vorsichtiger sein.
+
+185
+00:17:48,730 --> 00:17:53,430
+Solche Experimente macht man besser über eine Glühlampe, damit das System nicht ausfällt.
+
+186
+00:17:58,760 --> 00:18:00,560
+Du siehst das alles selbst.
+
+187
+00:18:03,960 --> 00:18:05,860
+Höllische Leistung in diesem System.
+
+188
+00:18:14,420 --> 00:18:16,420
+Auf Ausmodus umschalten.
+
+189
+00:18:19,280 --> 00:18:22,860
+Jetzt interessiert uns die Frequenzabstimmung dieses Systems.
+
+190
+00:18:24,220 --> 00:18:26,180
+Dafür brauchen wir ein Oszilloskop.
+
+191
+00:18:28,160 --> 00:18:33,220
+Schau dir das Oszillogramm an einer der Abgriffe des Transformators relativ zum Startabgriff an.
+
+192
+00:18:34,400 --> 00:18:36,600
+Und stelle die optimale Frequenz ein.
+
+193
+00:18:37,920 --> 00:18:40,020
+Stimme den Kern auf die Arbeitsfrequenz ab.
+
+194
+00:18:42,100 --> 00:18:46,520
+Dafür habe ich den gelben Oszilloskopkanal an einen der Abgriffe angeschlossen.
+
+195
+00:18:47,940 --> 00:18:52,120
+Speziell den dritten Abgriff des Transformators, da die Spannung hier hoch ist.
+
+196
+00:18:54,980 --> 00:18:57,000
+Wenn du vom Anfang der Wicklung zählst.
+
+197
+00:18:59,400 --> 00:19:03,740
+Meine Tastköpfe sind für 1500V, 100-fache Dämpfung ausgelegt.
+
+198
+00:19:05,060 --> 00:19:07,080
+Also habe ich keine Angst um das Gerät.
+
+199
+00:19:07,840 --> 00:19:13,440
+Wenn du Tastköpfe mit 10-facher Dämpfung hast, ist es besser, das am ersten Abgriff zu machen.
+
+200
+00:19:15,840 --> 00:19:18,900
+Jetzt wird Spannung von der Batterie an die Schalter geführt.
+
+201
+00:19:20,280 --> 00:19:23,200
+Und jetzt lege ich Spannung an den DC-DC-Wandler an.
+
+202
+00:19:25,460 --> 00:19:30,820
+Mit dem Schleifer des Widerstands, der für die Impulsdauer zuständig ist, auf System ausgeschaltet.
+
+203
+00:19:33,400 --> 00:19:35,060
+Spannung an den Wandler anlegen.
+
+204
+00:19:36,480 --> 00:19:40,420
+Und wir sehen, dass momentan am Transformator-Ausgang nichts ist.
+
+205
+00:19:41,560 --> 00:19:44,200
+Jetzt erhöhe ich sanft die Dauer der Steuerimpulse.
+
+206
+00:19:48,760 --> 00:19:50,320
+Und du siehst dieses Bild.
+
+207
+00:19:51,740 --> 00:19:55,440
+Bei steigender Dauer siehst du, dass die Zahl dieser Wellen ebenfalls zunimmt.
+
+208
+00:19:57,400 --> 00:20:01,360
+Das bedeutet, unser Kern ist nicht im optimalen Arbeitsmodus.
+
+209
+00:20:02,960 --> 00:20:03,980
+Impulsdauer auf voll.
+
+210
+00:20:05,460 --> 00:20:07,860
+Und wir können die Zahl dieser Wellen zählen.
+
+211
+00:20:08,880 --> 00:20:11,640
+Eins, zwei, drei, vier, fünf.
+
+212
+00:20:13,180 --> 00:20:16,300
+Das heißt, wir müssen die Frequenz fünffach erhöhen.
+
+213
+00:20:17,740 --> 00:20:19,140
+Für diesen Transformator.
+
+214
+00:20:21,680 --> 00:20:23,120
+Das machen wir jetzt.
+
+215
+00:20:28,530 --> 00:20:31,830
+Dieser Widerstand im Schaltplan ist für die Frequenz zuständig.
+
+216
+00:20:33,270 --> 00:20:35,690
+Bei den im Schaltplan gezeigten Werten.
+
+217
+00:20:37,490 --> 00:20:42,250
+Ein 10K an Pin 5 und 2200 pF an Pin 7.
+
+218
+00:20:44,870 --> 00:20:50,610
+Die Frequenz kann von 35 kHz bis 185 kHz geregelt werden.
+
+219
+00:20:52,130 --> 00:20:53,910
+Bei diesem PWM-Regler.
+
+220
+00:20:55,350 --> 00:20:56,450
+Und Frequenz erhöhen.
+
+221
+00:20:58,110 --> 00:21:01,070
+Schau, wie das Klingelphänomen im Transformator verschwindet.
+
+222
+00:21:04,700 --> 00:21:07,060
+Das ist eine vorläufige Abstimmung.
+
+223
+00:21:08,620 --> 00:21:11,820
+Als nächstes, nach Anschluss der Diodenbrücke.
+
+224
+00:21:13,560 --> 00:21:16,680
+Werden wir die Arbeit des Transformators korrigieren.
+
+225
+00:21:18,120 --> 00:21:19,520
+Direkt unter Gleichstromlast.
+
+226
+00:21:21,920 --> 00:21:24,340
+Jetzt beseitigen wir dieses negative Phänomen.
+
+227
+00:21:27,740 --> 00:21:28,440
+Der Schwingungen.
+
+228
+00:21:30,060 --> 00:21:30,860
+Frequenz erhöhen.
+
+229
+00:21:31,900 --> 00:21:33,720
+Wir brauchen jeweils einen Impuls.
+
+230
+00:21:40,440 --> 00:21:42,260
+Das Netzteil brummt etwas.
+
+231
+00:21:44,500 --> 00:21:47,900
+Da ist den Verbrauch des DC-DC-Wandlers nicht bewältigt.
+
+232
+00:21:49,100 --> 00:21:49,500
+Aber egal.
+
+233
+00:21:52,200 --> 00:21:53,240
+So bringen wir es.
+
+234
+00:21:59,480 --> 00:22:02,020
+Und hier, praktisch das, was wir brauchen.
+
+235
+00:22:05,720 --> 00:22:07,700
+Jetzt können wir die Impulsdauer steuern.
+
+236
+00:22:10,600 --> 00:22:12,200
+Von 0 bis Maximum.
+
+237
+00:22:15,760 --> 00:22:18,340
+Das Oszillogramm ist deutlich schöner geworden.
+
+238
+00:22:20,400 --> 00:22:23,360
+Jetzt müssen wir an diesen Stellen eine Last anschließen.
+
+239
+00:22:25,020 --> 00:22:27,160
+Und die Signalform unter Last betrachten.
+
+240
+00:22:28,540 --> 00:22:32,460
+Ich habe eine 60W-220V-Lampe angeschlossen.
+
+241
+00:22:34,420 --> 00:22:38,160
+Und wir werden das Oszillogramm und die Spannung an ihr beobachten.
+
+242
+00:22:40,800 --> 00:22:42,140
+Parallel zum Ausgang.
+
+243
+00:22:43,000 --> 00:22:44,140
+Spannung anlegen.
+
+244
+00:22:46,580 --> 00:22:49,320
+Und die Dauer der Steuerimpulse sanft erhöhen.
+
+245
+00:22:55,710 --> 00:22:58,450
+Du siehst, der Lampenfaden beginnt zu glühen.
+
+246
+00:23:00,890 --> 00:23:01,610
+Weiter.
+
+247
+00:23:08,610 --> 00:23:09,870
+Oszillogramm ändert sich.
+
+248
+00:23:11,210 --> 00:23:13,490
+Und hier ist die maximale Dauer der Steuerimpulse.
+
+249
+00:23:18,100 --> 00:23:19,460
+Solch ein Oszillogramm.
+
+250
+00:23:22,340 --> 00:23:24,000
+Du musst auf seine Symmetrie achten.
+
+251
+00:23:25,060 --> 00:23:26,860
+Du siehst symmetrische Arbeit.
+
+252
+00:23:30,320 --> 00:23:32,880
+Gleichmäßige Regelung, wenn wir den Schleifer drehen.
+
+253
+00:23:35,850 --> 00:23:36,850
+Ausgangsspannung.
+
+254
+00:23:39,470 --> 00:23:43,850
+In diesem Stadium können wir die vorläufige Systemabstimmung als abgeschlossen betrachten.
+
+255
+00:23:46,070 --> 00:23:50,590
+Die Frequenz ist bei uns ungefähr 93 kHz herausgekommen.
+
+256
+00:23:55,800 --> 00:23:57,740
+Wir können noch etwas hinzufügen.
+
+257
+00:24:01,760 --> 00:24:06,180
+Aber das machen wir, nachdem wir die Frequenz bis zum Ende durchgespielt haben.
+
+258
+00:24:07,160 --> 00:24:14,140
+Wenn wir hier die Gleichspannung betrachten, interessiert uns die maximale Spannung an der Last bei minimalem Verbrauch der Stromquelle.
+
+259
+00:24:17,150 --> 00:24:20,030
+Das heißt, wir müssen das Amperemeter beobachten.
+
+260
+00:24:22,290 --> 00:24:26,670
+In diesem Stadium haben wir bestätigt, dass das System voll funktionsfähig ist.
+
+261
+00:24:28,910 --> 00:24:30,570
+Interessant erhitzt es sich danach.
+
+262
+00:24:31,530 --> 00:24:33,490
+Der Kühlkörper ist absolut kalt.
+
+263
+00:24:36,290 --> 00:24:37,870
+Kühlung wird gar nicht benötigt.
+
+264
+00:24:40,330 --> 00:24:43,030
+Damit verabschieden wir uns bis zur nächsten Folge.
+
+265
+00:24:47,370 --> 00:24:50,190
+Alles Gute euch allen und erfolgreiche Experimente!
+

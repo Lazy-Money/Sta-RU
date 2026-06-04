@@ -1,0 +1,204 @@
+1
+00:00:00,900 --> 00:00:02,160
+Hallo, Oleg Herrmann.
+
+2
+00:00:03,380 --> 00:00:04,080
+Hallo, Kirill.
+
+3
+00:00:05,100 --> 00:00:10,860
+Ich möchte dir zeigen, wofür dieses Gerät da ist und was du damit machen kannst, wie du es abstimmst.
+
+4
+00:00:12,960 --> 00:00:18,560
+Wir haben einen Generator bei 16,6 kHz und 1,66 MHz.
+
+5
+00:00:20,940 --> 00:00:27,060
+Der Generator liefert einen Burst von 5 Pulsen mit einem Tastverhältnis von etwa...
+
+6
+00:00:27,060 --> 00:00:30,820
+Ich habe ihn am Tesla auf etwa 30% Tastverhältnis eingestellt.
+
+7
+00:00:33,060 --> 00:00:34,640
+Ziehen wir den Gerät heraus.
+
+8
+00:00:36,220 --> 00:00:38,740
+Ich zeige dir, was man normalerweise sieht.
+
+9
+00:00:41,120 --> 00:00:42,760
+Okay, schalten wir ein.
+
+10
+00:00:45,380 --> 00:00:47,260
+Und wir haben ein abklingendes Schwingen.
+
+11
+00:00:49,580 --> 00:00:51,120
+Na, das sieht man normalerweise.
+
+12
+00:00:52,900 --> 00:00:54,520
+Hier kommt die Antenne hin.
+
+13
+00:00:55,580 --> 00:01:00,240
+Die eine an die Drossel, die andere da drüben, damit es sichtbar ist, damit es nicht abdriftet.
+
+14
+00:01:01,800 --> 00:01:03,760
+Jetzt setzen wir den Verriet hier ein.
+
+15
+00:01:05,100 --> 00:01:06,800
+Ich habe das alles schon vorab abgestimmt.
+
+16
+00:01:08,680 --> 00:01:11,660
+Die Windungszahl ist hier und dort asymmetrisch ausgefallen.
+
+17
+00:01:13,960 --> 00:01:16,440
+Und jetzt schalten wir das Ganze ein und schauen.
+
+18
+00:01:17,900 --> 00:01:20,200
+Wir schalten ein, und das hier bekommen wir.
+
+19
+00:01:21,560 --> 00:01:23,880
+Schwingen, aber praktisch kein Schwingen.
+
+20
+00:01:25,640 --> 00:01:27,620
+Das heißt, es ist da, aber kaum.
+
+21
+00:01:29,800 --> 00:01:40,620
+Wenn du hier einen 2,2 nF Kondensator unterbringst, wenn du sowas reinsteckst, zwei parallel, einen nach dem anderen, werden sie sehr heiß, weil ich 100V auf dem Tesla habe.
+
+22
+00:01:44,070 --> 00:01:45,630
+Die Amplitude springt hoch.
+
+23
+00:01:47,770 --> 00:01:52,850
+Und am Ende bleibt uns nur noch, aus diesem Tesla einen Nanosekundenpulser zu machen.
+
+24
+00:01:54,570 --> 00:01:55,950
+Alles ganz einfach, gewissermaßen.
+
+25
+00:01:57,410 --> 00:01:59,690
+Dafür habe ich diese Dioden durchgebrannt.
+
+26
+00:01:59,970 --> 00:02:03,450
+Jetzt habe ich 26 von den X-108 gekauft.
+
+27
+00:02:06,410 --> 00:02:14,210
+Ich werde daraus eine kleine Reihe machen und parallel zu jeder Diode einen 330-470 K-Widerstand setzen.
+
+28
+00:02:15,610 --> 00:02:18,550
+Und ich werde einen unidirektionalen Puls haben.
+
+29
+00:02:21,150 --> 00:02:21,810
+Sonntag.
+
+30
+00:02:23,870 --> 00:02:26,550
+Ach übrigens, die Resonanz driftet hier nicht.
+
+31
+00:02:29,540 --> 00:02:36,660
+Um eine driftfreie Resonanz abzustimmen, kannst du sie sogar vor den Gleichrichter setzen, und die Resonanz driftet trotzdem nicht.
+
+32
+00:02:37,920 --> 00:02:40,960
+Dafür musst du diese Spule auf eine bestimmte Weise abstimmen.
+
+33
+00:02:42,980 --> 00:02:46,640
+Hier ist die Drossel mit 20 Metern, das hier sind 40 Meter.
+
+34
+00:02:48,080 --> 00:02:48,980
+Na, nur als Beispiel.
+
+35
+00:02:50,120 --> 00:02:50,500
+Auch der Tesla.
+
+36
+00:02:51,060 --> 00:02:52,800
+Also haben wir hier drei Resonanzen.
+
+37
+00:02:54,560 --> 00:02:56,020
+Resonanz in der Resonanz, im Grunde.
+
+38
+00:02:59,830 --> 00:03:04,010
+Der Tesla ist auf das Schwingen abgestimmt, aber du musst nur etwa drei Pulse machen.
+
+39
+00:03:05,570 --> 00:03:08,350
+Ich bin bei fünf Pulsen gelandet, anders geht es nicht.
+
+40
+00:03:10,330 --> 00:03:12,470
+Ach, ich bin vom Thema abgekommen.
+
+41
+00:03:13,890 --> 00:03:25,490
+Um eine driftfreie Resonanz zu bekommen, ohne eine automatische Frequenzregelung einbauen zu müssen, müssen wir eine Spule auf eine Frequenz von etwa 16 kHz abstimmen und die andere auf 8 kHz.
+
+42
+00:03:27,470 --> 00:03:35,390
+Und damit die Frequenz unter keinen Umständen driftet, müssen wir das Signal von der Spule abnehmen, die auf das niedrigere Band abgestimmt ist.
+
+43
+00:03:36,850 --> 00:03:41,970
+In diesem Fall driftet die Frequenz, sogar die Phase, nicht, sie steht felsenfest.
+
+44
+00:03:43,250 --> 00:03:47,990
+Sie steht felsenfest, egal welche Last du dranhängst, die Frequenz driftet nicht.
+
+45
+00:03:49,410 --> 00:03:49,870
+Getestet.
+
+46
+00:03:54,400 --> 00:03:59,360
+Was ich hier am Ende habe, sind drei Resonanzen auf der Drossel, auf der großen Spule.
+
+47
+00:04:01,560 --> 00:04:04,060
+Auf dem Tesla muss der Tesla zum Schwingen passen.
+
+48
+00:04:05,860 --> 00:04:06,420
+Unbedingt.
+
+49
+00:04:07,320 --> 00:04:09,460
+Wir machen einen unidirektionalen Puls.
+
+50
+00:04:10,940 --> 00:04:13,000
+Wir schlagen auf den Peak, auf den Peak.
+
+51
+00:04:30,060 --> 00:04:31,260
+Selbst schlagen wir.
+

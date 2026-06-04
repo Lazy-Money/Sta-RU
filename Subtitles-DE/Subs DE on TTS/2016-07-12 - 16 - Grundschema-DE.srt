@@ -1,0 +1,212 @@
+1
+00:00:01,670 --> 00:00:02,770
+Hallo, Kirill.
+
+2
+00:00:04,170 --> 00:00:05,610
+Hallo, Oleg Herrmann.
+
+3
+00:00:08,090 --> 00:00:09,610
+So eine Platine habe ich gebaut.
+
+4
+00:00:11,930 --> 00:00:15,050
+Das ist schon die endgültige, funktionierende Version.
+
+5
+00:00:17,610 --> 00:00:21,690
+Die erfolgreichste in all den Jahren, in denen ich überhaupt etwas gemacht habe.
+
+6
+00:00:23,950 --> 00:00:25,570
+Schalten wir die Spannung ein.
+
+7
+00:00:30,470 --> 00:00:33,190
+Hier kommen 12 Volt rein, hier 24.
+
+8
+00:00:35,370 --> 00:00:40,330
+Das ist die Batterie, damit sie laden kann, während das System im Selbstlauf arbeitet.
+
+9
+00:00:41,690 --> 00:00:43,410
+Die Batterie musst du nicht abschalten.
+
+10
+00:00:44,410 --> 00:00:46,030
+Du kannst sie abschalten, ganz wie du willst.
+
+11
+00:00:47,610 --> 00:00:48,370
+Schalten wir es ein.
+
+12
+00:00:49,750 --> 00:00:51,290
+Hier haben wir einen kleinen Stecker.
+
+13
+00:00:52,830 --> 00:00:55,730
+Ich will es genauso machen wie Akula VirusLAN.
+
+14
+00:00:56,630 --> 00:00:58,270
+Und ich habe so einen Taster gefunden.
+
+15
+00:01:02,340 --> 00:01:02,900
+Da.
+
+16
+00:01:05,120 --> 00:01:07,600
+Also, schauen wir uns das Logogramm an.
+
+17
+00:01:14,220 --> 00:01:16,400
+Das ist unser Gegentakt, das und das.
+
+18
+00:01:17,900 --> 00:01:20,280
+Das ist der Strobe und das ist der Tesla.
+
+19
+00:01:22,360 --> 00:01:24,880
+Diese Einheit kann in den Tesla-Modus geschaltet werden.
+
+20
+00:01:26,320 --> 00:01:27,980
+Wir setzen den Jumper so um.
+
+21
+00:01:29,720 --> 00:01:34,400
+Und jetzt kannst du auch noch einen Nanosekunden-Pulser auf dieselbe Platine setzen.
+
+22
+00:01:36,240 --> 00:01:36,840
+Sonntag.
+
+23
+00:01:41,600 --> 00:01:43,580
+Nanosekunden-Jumper, Tesla-Jumper.
+
+24
+00:01:45,420 --> 00:01:45,920
+Wer was hat?
+
+25
+00:01:47,820 --> 00:01:49,020
+Hier ist die Halbwelle.
+
+26
+00:01:50,640 --> 00:01:52,320
+Tja, da ist ein kleiner Jumper.
+
+27
+00:01:56,680 --> 00:01:58,100
+Linke Halbwelle, rechte.
+
+28
+00:01:59,380 --> 00:02:00,240
+Und das sind beide zusammen.
+
+29
+00:02:05,220 --> 00:02:06,460
+Ich schalte jetzt um.
+
+30
+00:02:12,860 --> 00:02:13,080
+Okay.
+
+31
+00:02:13,780 --> 00:02:14,900
+Und hier sind beide zusammen.
+
+32
+00:02:17,260 --> 00:02:19,320
+Okay, das ist der Nanosekunden-Pulser.
+
+33
+00:02:20,940 --> 00:02:22,340
+Jetzt schalte ich den Burst ein.
+
+34
+00:02:24,420 --> 00:02:26,520
+Im Grunde ist die Einheit universell.
+
+35
+00:02:28,740 --> 00:02:32,820
+Das ist der erfolgreichste Aufbau, den ich je gemacht habe, über all die Jahre.
+
+36
+00:02:35,700 --> 00:02:40,760
+Hier ist der IR2153, der IR2110.
+
+37
+00:02:42,980 --> 00:02:45,100
+Warum benutze ich gerade diese Chips?
+
+38
+00:02:46,120 --> 00:02:52,960
+Ich hätte den TL nehmen können, aber als ich es gebaut habe, habe ich gesehen, dass es ein Problem mit dieser Technologie gibt.
+
+39
+00:02:54,500 --> 00:02:59,120
+Das Problem bei dem ist, dass beim Frequenzdurchlauf die Phase nicht stabil bleibt.
+
+40
+00:02:59,980 --> 00:03:02,080
+Du kannst alles in Ruhe abstimmen.
+
+41
+00:03:04,500 --> 00:03:07,740
+Das ist der einzige Grund, warum ich auf den TL verzichtet habe.
+
+42
+00:03:08,860 --> 00:03:11,840
+Obwohl es damit viel einfacher gewesen wäre zu bauen.
+
+43
+00:03:13,580 --> 00:03:16,620
+Wir haben einen 74HC00 Chip.
+
+44
+00:03:18,580 --> 00:03:23,220
+Die Verzögerungen, Phasenschieber und der Tesla-Generator sind darauf aufgebaut.
+
+45
+00:03:25,020 --> 00:03:27,400
+Und das ist ein 74HC00.
+
+46
+00:03:31,540 --> 00:03:34,080
+Und das ist ein 74HC00.
+
+47
+00:03:35,060 --> 00:03:39,520
+Darauf sind die Tesla-Borstlänge und das Tastverhältnis der Tesla-Pulse aufgebaut.
+
+48
+00:03:56,880 --> 00:03:58,880
+Die Einheit ist herausgekommen.
+
+49
+00:03:59,180 --> 00:04:00,480
+Diese Platine funktioniert.
+
+50
+00:04:00,820 --> 00:04:05,040
+Sie kann im Bereich von 9kHz bis 52kHz arbeiten.
+
+51
+00:04:06,660 --> 00:04:13,740
+Und das Ausgangsgerät, der Treiber, der Ausgang des Treibers geht von 1,1MHz bis 5,5MHz.
+
+52
+00:04:19,290 --> 00:04:27,970
+Ich habe alle Kondensatorwerte für die Schaltung so ausgewählt, dass sie in jedem Modus, in dem sie arbeiten soll, ihre Funktionen und Aufgaben erfüllt.
+
+53
+00:04:29,990 --> 00:04:36,470
+Auf der linken Seite haben wir den Controller selbst und auf der rechten Seite die automatische Verzögerungszeitsteuerung.
+

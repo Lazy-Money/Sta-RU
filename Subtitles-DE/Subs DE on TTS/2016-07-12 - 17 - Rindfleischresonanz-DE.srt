@@ -1,0 +1,136 @@
+1
+00:00:04,840 --> 00:00:05,920
+Hallo, Kirill.
+
+2
+00:00:06,780 --> 00:00:09,860
+Okay, ich habe dir den kompletten Schaltplan gegeben.
+
+3
+00:00:11,660 --> 00:00:19,220
+Ich habe den Synchronisationsring hier noch nicht eingebaut, aber wenn es sich erwärmt, fängt es an, im Grunde verschwindet der Effekt.
+
+4
+00:00:20,720 --> 00:00:21,620
+Der Selbstlauf bricht ab.
+
+5
+00:00:23,420 --> 00:00:30,600
+Also, unsere Gradientenspule hier ist 38 Meter, Tesla 19 Meter, und die Drossel ist auch 19 Meter.
+
+6
+00:00:32,460 --> 00:00:40,380
+An der Gradientenspule sind drei Kondensatoren mit 0,1 Mikrofarad in Resonanz, und hier sind es 0,5 Mikrofarad.
+
+7
+00:00:41,780 --> 00:00:46,780
+Tja, es ist ein Satz von 5 Komma, im Grunde nur etwas mehr als 500 Nanofarad.
+
+8
+00:00:49,280 --> 00:00:58,740
+Wenn du am Ende diese Kapazität und die Spule abklemmst und nur eine einfache Drossel verwendest, kommt unsere Frequenz auf 8,6 bis 8,7 Kilohertz.
+
+9
+00:01:02,300 --> 00:01:10,460
+Und wenn du nur diese Spule, die Gradientenspule, separat mit 0,3 Mikrofarad anschließt, wird die Frequenz auch niedrig sein.
+
+10
+00:01:11,720 --> 00:01:22,660
+Aber am Ende, wenn du sie gleichzeitig anschließt, sie sind nicht gegensinnig gewickelt, bei dieser Spule, auf einer Seite bekommst du Strom, und an der Drossel auch Strom, und an der Gradientenspule
+
+11
+00:01:22,660 --> 00:01:23,780
+bekommst du...
+
+12
+00:01:24,920 --> 00:01:26,560
+...ein galvanisches Potenzial.
+
+13
+00:01:28,280 --> 00:01:30,840
+Und wir kreuzen den Strom mit dieser Spannung.
+
+14
+00:01:33,200 --> 00:01:39,340
+Interessant ist aber, dass bei dieser Konfiguration die Frequenz nicht 8 Kilohertz ist, sie verdoppelt sich.
+
+15
+00:01:41,280 --> 00:01:43,640
+Der Antrieb hier liegt bei 16 Kilohertz.
+
+16
+00:01:47,270 --> 00:01:58,250
+Und es stellt sich heraus, wenn bei 8 Kilohertz Resonanz herrscht, dann haben wir auf einer Seite der Spule Strom und Strom, auf der anderen Seite Spannung, das war's, und hier auch Spannung und
+
+17
+00:01:58,250 --> 00:01:58,550
+Strom.
+
+18
+00:02:00,290 --> 00:02:07,470
+Diese Phase ist nicht um 180 Grad gedreht, aber bei dieser Frequenz, der verdoppelten, resoniert sie darauf.
+
+19
+00:02:09,030 --> 00:02:12,430
+Wir bekommen einen Phasensprung, und diese Spule kann arbeiten.
+
+20
+00:02:14,910 --> 00:02:17,930
+Das ist der sehr interessante Effekt, den wir bekommen haben.
+
+21
+00:02:20,270 --> 00:02:25,690
+Meine Gleichrichterbrücken sind 150 IBU 04, das sind 150 Ampere.
+
+22
+00:02:27,070 --> 00:02:30,910
+Ich habe einen Lüfter eingebaut, aber ich habe ihn nicht mal gebraucht.
+
+23
+00:02:32,750 --> 00:02:33,710
+Die werden überhaupt nicht warm.
+
+24
+00:02:34,970 --> 00:02:36,210
+Nur leicht handwarm.
+
+25
+00:02:38,010 --> 00:02:43,110
+Hier, ja, habe ich einen am Gegentakt eingebaut, am Tesla, mit 8 Volt versorgt.
+
+26
+00:02:43,450 --> 00:02:45,250
+Der Lüfter dreht sich, das reicht.
+
+27
+00:02:47,790 --> 00:02:53,830
+Okay, diese Filterkondensatoren am Ausgang, wir haben hier Mikrofahrrad bei 450 Volt.
+
+28
+00:02:56,310 --> 00:03:00,050
+Das Netzteil ist 24 Volt, 8,5 Ampere.
+
+29
+00:03:02,290 --> 00:03:04,910
+Es läuft am Rand seiner Leistungskapazität.
+
+30
+00:03:08,490 --> 00:03:12,770
+Tja, so ist es gekommen, die erste Granate war falsch herum gewickelt.
+
+31
+00:03:14,530 --> 00:03:15,810
+Jetzt ist alles in eine Richtung.
+
+32
+00:03:17,070 --> 00:03:21,150
+Mit der Granate kamen wir ohne Funkenstrecke aus, mit dieser hier ging das nicht.
+
+33
+00:03:22,390 --> 00:03:25,010
+Hier zeigt sich, wenn du auf die Oszillogramme schaust.
+
+34
+00:03:25,910 --> 00:03:28,010
+Letztes Mal hat das Oszilloskop nicht geklappt.
+
