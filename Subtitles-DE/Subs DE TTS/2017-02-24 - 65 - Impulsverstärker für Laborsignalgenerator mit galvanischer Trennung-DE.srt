@@ -1,0 +1,2036 @@
+1
+00:00:00,250 --> 00:00:01,890
+Hallo zusammen.
+
+2
+00:00:03,490 --> 00:00:04,810
+Habe einen freien Tag.
+
+3
+00:00:06,610 --> 00:00:07,450
+Dreh am 23.
+
+4
+00:00:07,810 --> 00:00:08,230
+Februar.
+
+5
+00:00:09,390 --> 00:00:10,930
+Frontag des Verteidigers des Vaterlandes an alle Jungs.
+
+6
+00:00:13,090 --> 00:00:17,730
+Also, hier ist der Schaltplan des verbesserten Impulsverstärkers für den Signalgenerator.
+
+7
+00:00:20,510 --> 00:00:22,930
+Mein vorheriger Schaltplan, hier gezeigt.
+
+8
+00:00:24,610 --> 00:00:26,670
+Ein Video darüber ist auf meinem Kanal.
+
+9
+00:00:29,330 --> 00:00:32,730
+Warum habe ich beschlossen, diesen Schaltplan zu verbessern?
+
+10
+00:00:34,330 --> 00:00:38,510
+Die Sache ist, der Schaltplan selbst ist sehr interessant und nützlich.
+
+11
+00:00:39,590 --> 00:00:43,610
+Aber er hat einen gemeinsamen Punkt mit der Drossel, die die Spule antreibt.
+
+12
+00:00:47,860 --> 00:00:51,800
+Wenn die Spule vom Grenadetyp ist, kein Problem, alles ist in Ordnung.
+
+13
+00:00:53,620 --> 00:01:04,580
+Aber wenn du hier eine Tesla einsetzt, dann siehst du bei manchen Betriebsmodi, wenn du den Effekt triffst, zum Beispiel die Frequenz und das Tastverhältnis so abstimmst, dass du eine harmonische aus
+
+14
+00:01:04,580 --> 00:01:05,920
+der Wellenresonanz triffst.
+
+15
+00:01:06,160 --> 00:01:07,200
+Interessante Effekte.
+
+16
+00:01:08,500 --> 00:01:09,600
+Interessante Effekte.
+
+17
+00:01:13,250 --> 00:01:22,350
+Und mit diesen interessanten Effekten kannst du dich, wenn die Versorgung für diesen Schalter etwa 50 V beträgt, von deinem Laborsignalgenerator verabschieden.
+
+18
+00:01:24,130 --> 00:01:29,850
+Im Allgemeinen sind unsere Experimente ziemlich gefährlich für Oszilloskope und Signalgeneratoren.
+
+19
+00:01:32,310 --> 00:01:38,530
+Um das zu vermeiden, die Ausrüstung ist teuer, habe ich ein Upgrade dieses Schaltplans gemacht, das hier gezeigt wird.
+
+20
+00:01:43,600 --> 00:01:45,520
+Schauen wir den Schaltplan im Detail an.
+
+21
+00:01:47,400 --> 00:01:50,640
+Die Chipreihe ist dieselbe, TC4093BP.
+
+22
+00:01:53,760 --> 00:01:59,880
+Dieser Chip vermittelt zwischen dem Laborsignalgenerator und dem TC4420 Treiber.
+
+23
+00:02:01,880 --> 00:02:06,860
+Wenn du brauchst, dass diese Schaltung kontinuierlich läuft, kann dieser Vermittler entfernt werden.
+
+24
+00:02:08,940 --> 00:02:19,480
+Oder wenn du einen wirklich guten Laborsignalgenerator hast, der nicht nur Impulse mit eingestellter Frequenz und Tastverhältnis ausgeben kann, sondern diese Impulse auch zerhacken kann.
+
+25
+00:02:20,640 --> 00:02:22,760
+In Burst, dann brauchst du diesen Chip nicht.
+
+26
+00:02:24,540 --> 00:02:33,740
+Du kannst das Signal von einem solchen Laborgenerator direkt an Pin 2 des Treibers einspeisen, der den Transistor durch den Isolationstransformator steuert.
+
+27
+00:02:35,960 --> 00:02:37,980
+Und das vereinfacht den Schaltplan.
+
+28
+00:02:40,200 --> 00:02:46,400
+Aber ich lasse diesen Chip trotzdem drin, weil es in der Praxis passiert, dass der Laborsignalgenerator getrennt wird.
+
+29
+00:02:46,640 --> 00:02:49,060
+Sag, dieser Knoten wird woanders hin verlegt.
+
+30
+00:02:49,060 --> 00:02:54,360
+Damit die Tesla nahegelegene Geräte nicht beeinflusst.
+
+31
+00:02:56,040 --> 00:03:05,780
+Und du siehst, es gibt drei Eingänge, einer davon ist gemeinsam, und zwei Eingänge sind mit den Pins 1 und 2 des TC4093-Chips verbunden.
+
+32
+00:03:08,400 --> 00:03:11,080
+Das Logik-Element des Chips ist ein Schmitt-Trigger.
+
+33
+00:03:14,140 --> 00:03:19,260
+Sein Eingang ist ein Zwei-Eingang und, und dann wird das Signal nach dem Schmitt-Trigger invertiert.
+
+34
+00:03:22,320 --> 00:03:28,340
+Wenn wir also die Ausgänge 1 und 2 separat verwenden, können wir etwas wirklich interessantes machen.
+
+35
+00:03:28,560 --> 00:03:37,300
+Wenn ein Generator, sag, auf Logik-Gattern, eine Frequenz von, sagen wir, 100 kHz für uns einstellt, speisen wir sie...
+
+36
+00:03:37,300 --> 00:03:45,520
+in einen Eingang des Chips ein, und der zweite Generator auf Logik-Gattern erzeugt eine Frequenz von, sagen wir, 1 kHz.
+
+37
+00:03:47,040 --> 00:03:53,700
+Und mit dieser Logik macht der Chip Bursts mit einem kHz, und die Füllung dieser Bursts wird bei 100 kHz sein.
+
+38
+00:03:55,220 --> 00:04:05,920
+Und wenn die Signalgeneratoren, die diesen Chip steuern, auch eine Tastverhältnis-Anpassung haben, sagen wir am Niederfrequenzgenerator, dann fügt der Chip all diese Parameter in Burstform ein.
+
+39
+00:04:07,020 --> 00:04:08,560
+Und sendet sie an den Treiber.
+
+40
+00:04:11,100 --> 00:04:12,140
+Wirklich praktisch.
+
+41
+00:04:14,890 --> 00:04:25,750
+Wenn du brauchst, dass diese Schaltung ein kontinuierliches Signal erzeugt, verbindest du die Eingänge 1 und 2 zusammen an dieser Klemme, und der Chip überträgt das Signal vom steuernden Generator
+
+42
+00:04:29,770 --> 00:04:31,010
+direkt an den Treiber.
+
+43
+00:04:32,950 --> 00:04:41,670
+Du siehst, die zweite Inversion erfolgt, um das Signal in seine ursprüngliche Form am Eingang zurückzubringen, und die Steuerung geht an Pin 2 des Treibers.
+
+44
+00:04:44,780 --> 00:04:52,080
+Du kannst auch feststellen, dass dieser Schaltplan ein Prinzip verwendet, bei dem der gemeinsame Draht nur auf der Steuerseite ist.
+
+45
+00:04:53,660 --> 00:05:03,140
+Das heißt, der ansteuende Generator, oder Laborgenerator, der Vermittler-Chip, der Treiber, der DC-DC-Wandler und die Stromquelle sind miteinander verbunden.
+
+46
+00:05:05,140 --> 00:05:07,460
+Dieser ganze Teil hat einen gemeinsamen Draht.
+
+47
+00:05:09,060 --> 00:05:12,260
+Der Rest ist vollständig galvanisch vom Steuerblock isoliert.
+
+48
+00:05:15,160 --> 00:05:22,120
+Auf diese Weise verhindern wir mit Transformator-Isolation jede galvanische Verbindung des Steuerblocks mit der Versorgungsseite.
+
+49
+00:05:25,950 --> 00:05:32,050
+Schauen wir uns diesen Knoten, der den Steuerblock und die Versorgungsseite galvanisch isoliert, genauer an.
+
+50
+00:05:33,890 --> 00:05:37,050
+Du siehst, der Treiber arbeitet in eine induktive Last.
+
+51
+00:05:39,090 --> 00:05:47,310
+Um zu verhindern, dass der Treiber auf den gemeinsamen Draht kurzgeschlossen wird, liegt ein 1F-50V-Kondensator in Reihe.
+
+52
+00:05:49,230 --> 00:05:53,070
+Dieser Kondensator entfernt auch die Gleichstromkomponente vom Signal.
+
+53
+00:05:55,310 --> 00:05:59,910
+Und ein 12-4-Widerstand in Reihe begrenzt den Strom durch die Primärwicklung.
+
+54
+00:06:03,660 --> 00:06:07,840
+Als nächstes wird das Signal von der Primärwicklung von der Sekundärwicklung aufgenommen.
+
+55
+00:06:09,380 --> 00:06:13,120
+Durch einen weiteren 1F-Kondensator speist es das Transistorgate.
+
+56
+00:06:14,900 --> 00:06:24,680
+Aber hier siehst du einige Unterstützungsschaltungen, die schließlich das Signal formen, ihm eine rechteckige Form geben und die Maximalspannung begrenzen, damit der Transistor nicht durchbricht.
+
+57
+00:06:27,710 --> 00:06:33,230
+Um die negative Komponente zu entfernen, gibt es diese UF-4005-Diode.
+
+58
+00:06:36,150 --> 00:06:42,110
+Statt dieser Diode kannst du andere schnelle Dioden verwenden, zum Beispiel SF, hier und ähnliche.
+
+59
+00:06:44,910 --> 00:06:48,450
+Als nächstes sehen wir einen 1K-Gateentlade-Widerstand.
+
+60
+00:06:50,190 --> 00:06:55,790
+Und es ist in dieser Schaltung obligatorisch, gegensinnig verbundene 15V-10er-Dioden zu verwenden.
+
+61
+00:06:56,810 --> 00:07:05,910
+Diese 10er-Dioden schneiden die Spikes ab, die sich an der Sekundärwicklung bei Frequenzänderungen bilden können, und schützen das Transistorgate vor Durchbruch.
+
+62
+00:07:08,170 --> 00:07:15,210
+Für den Kern des Isolationstransformators, der das Gate des Leistungsschalters antreibt, habe ich diesen Verrietring verwendet.
+
+63
+00:07:17,330 --> 00:07:21,190
+Ich habe ihn hier umrandet, damit die tatsächlichen Abmessungen klar sind.
+
+64
+00:07:22,330 --> 00:07:29,730
+Der innere Lochdurchmesser beträgt 10 mm, der äußere Durchmesser 20 mm, und die Ringbreite ist 10 mm.
+
+65
+00:07:31,810 --> 00:07:34,030
+Seine Permeabilität ist Marke 2000.
+
+66
+00:07:36,570 --> 00:07:43,930
+Dieser Ring reicht, um ziemlich kräftige Schalter anzusteuern, und du kannst in dieser Schaltung nicht nur IRF-Serietransistoren verwenden.
+
+67
+00:07:45,990 --> 00:07:52,930
+Falls verfügbar, würde ich empfehlen, den IRF 840 gegen den IRF 510 zu tauschen.
+
+68
+00:07:54,570 --> 00:07:58,090
+Dieser Transistor hat nur 15 pF Gatekapazität.
+
+69
+00:07:59,310 --> 00:08:05,850
+Und der IRF 510 kann bei richtiger Gateansteuerungsverkabelung bei Frequenzen bis 30 MHz arbeiten.
+
+70
+00:08:11,000 --> 00:08:14,100
+Ich habe dieser Schaltung einen Klemmenblock hinzugefügt.
+
+71
+00:08:15,820 --> 00:08:22,880
+Das habe ich gemacht, damit ich zwischen verschiedenen Anschlussschemata der Transistoranschlüsse und der Stromquelle umschalten kann.
+
+72
+00:08:24,960 --> 00:08:35,560
+Wenn wir zum Beispiel das Minus der Stromquelle des Schalters mit seiner Source an diesem Klemmenblock verbinden, bekommen wir das Standardschema, bei dem Minus direkt zur Transistorsource geht, und
+
+73
+00:08:35,560 --> 00:08:36,000
+der Drain.
+
+74
+00:08:38,680 --> 00:08:43,080
+Mit der induktiven Last belastet wird, was in Tesla-Schaltungen die Primärwicklung ist.
+
+75
+00:08:47,060 --> 00:08:57,460
+Wenn wir jedoch den Drain mit dem Plus der Stromquelle an diesem Klemmenblock verbinden, bekommen wir Schaltungsvariante 2, Drosseleinbindung, bei der das Minus der Versorgung mit der Drossel der
+
+76
+00:08:57,460 --> 00:08:58,900
+Tesla-Spule verbunden ist.
+
+77
+00:09:00,040 --> 00:09:04,180
+Und das andere freie Ende der Drossel mit der Source dieses Schalters verbunden ist.
+
+78
+00:09:06,480 --> 00:09:15,160
+Ich möchte gleich darauf hinweisen, dass sich diese beiden Schaltungen beim Arbeiten mit der Tesla-Spule total unterschiedlich verhalten und verschiedene Effekte zeigen.
+
+79
+00:09:17,600 --> 00:09:22,140
+Wenige wissen davon, und diese Schaltung ist die, die am häufigsten verwendet wird.
+
+80
+00:09:22,960 --> 00:09:23,520
+Warum?
+
+81
+00:09:24,400 --> 00:09:33,080
+Weil es immer praktisch ist, einen Treiber zu setzen, kein Bedarf an einem Isolationstransformator, und die Last ist im Drängkreis des Leistungsschalters.
+
+82
+00:09:36,390 --> 00:09:41,710
+Und viele Schaltpläne, die einige Erfinder teilen, zeigen nur, sagen wir, einen Schalter.
+
+83
+00:09:42,990 --> 00:09:47,170
+Aber oft kann diese spezifische Steuerschaltung diejenige sein, die verwendet wird.
+
+84
+00:09:49,270 --> 00:09:52,450
+Diese beiden Schaltungen arbeiten absolut unterschiedlich.
+
+85
+00:09:53,770 --> 00:09:57,950
+Und die Phänomene, die an der Tesla-Spule passieren, sind unterschiedlich.
+
+86
+00:09:59,610 --> 00:10:02,590
+Das ist ein Tipp für zukünftige Experimentatoren.
+
+87
+00:10:03,870 --> 00:10:15,230
+Übrigens möchte ich erwähnen, dass alle interessanten Effekte in Tesla-Spulen und allgemein in den Freienergiegeneratorsystemen, die wir bauen, nur auftreten, wenn drei Frequenzen im System arbeiten.
+
+88
+00:10:15,990 --> 00:10:16,830
+Im System.
+
+89
+00:10:18,210 --> 00:10:28,570
+Sagen wir zum Beispiel, die Frequenz innerhalb eines Bursts, die Bürstwiederholungsfrequenz und eine dritte Frequenz, die sich in, sagen wir, der Tesla-Spule bildet.
+
+90
+00:10:31,150 --> 00:10:33,190
+Freie Schwingungen, Frequenzschwebungen.
+
+91
+00:10:35,150 --> 00:10:39,350
+Du kannst die interessanten Effekte nur mit der Interaktion von drei Frequenzen sehen.
+
+92
+00:10:41,130 --> 00:10:46,430
+Wenn wir nur eine Frequenz einspeisen, oder sogar zwei, bekommen wir nichts Interessantes.
+
+93
+00:10:48,990 --> 00:10:58,270
+Als Stromquelle für die Leistungsschalterlast in dieser Schaltung kannst du eine Batterie verwenden, oder einen mit einer Batterie verbundenen Wechselrichter, letzteres ist zum Erhöhen der
+
+94
+00:10:58,270 --> 00:10:59,830
+Versorgungsspannung vorzuziehen.
+
+95
+00:11:01,750 --> 00:11:06,330
+Und weniger vorzuziehen ist, wenn wir diese Schaltung von einem Labornetzgerät versorgen.
+
+96
+00:11:07,350 --> 00:11:11,730
+Es ist bequem, klar, bei mir gibt's Regelungen von 0 bis 300 V.
+
+97
+00:11:13,670 --> 00:11:17,550
+Aber mit dieser Art Verbindung zum Netz kannst du das System nicht abstimmen.
+
+98
+00:11:19,490 --> 00:11:24,230
+Die Effekte zeigen sich in den meisten Fällen, wenn wir Isolation vom Netz haben.
+
+99
+00:11:26,130 --> 00:11:34,850
+Und selbst mit dem im Schaltplan gezeigten Filter kannst du während des Betriebs immer noch bemerken, wenn du den Kühlkörper des Schalters berührst, spürst du 50 Hertz.
+
+100
+00:11:39,650 --> 00:11:42,390
+Du kannst es spüren, trotz des Filters.
+
+101
+00:11:44,330 --> 00:11:46,630
+Und das bringt eigene Verzerrungen ins System.
+
+102
+00:11:48,910 --> 00:11:58,710
+Also für präzise Abstimmung, besonders beim Arbeiten mit Tesla-Spulen, empfehle ich, Strom von separaten Versorgungen zu verwenden, die ihre Energie nicht aus dem Netz ziehen.
+
+103
+00:12:02,170 --> 00:12:04,150
+Schauen wir uns diesen Filter an.
+
+104
+00:12:05,850 --> 00:12:07,590
+Er ist auf der Platine gezeigt.
+
+105
+00:12:10,600 --> 00:12:17,600
+Diese induktiven Filter können aus alten Fernsehern, alten Netzteilen geborgen oder zu Hause auf gelben Ringen gewickelt werden.
+
+106
+00:12:22,490 --> 00:12:26,090
+Das heißt, zwei Wicklungen, nimm zwei Drähte und wickle sie parallel.
+
+107
+00:12:28,130 --> 00:12:30,330
+Du bekommst das Äquivalent dieses Filters.
+
+108
+00:12:32,290 --> 00:12:34,530
+Der erste Kondensatorwert ist 2 F.
+
+109
+00:12:36,270 --> 00:12:41,210
+Als nächstes der Filter selbst, dann ein weiterer Kondensator, 0,68 F.
+
+110
+00:12:42,150 --> 00:12:46,390
+Dann der Hauptreservoirkondensator, gezeigt als 230 F.
+
+111
+00:12:48,210 --> 00:12:50,410
+Die Werte können ganz unterschiedlich sein.
+
+112
+00:12:52,330 --> 00:12:57,570
+Hauptsache ist, die Spannung war 400 V, weil wir hier bis zu 300 V einspeisen.
+
+113
+00:12:59,850 --> 00:13:06,130
+In diesem Fall sind die Kondensatoren 200 V, ich habe sie in Reihe geschaltet, und die Kapazität halbiert sich.
+
+114
+00:13:07,030 --> 00:13:12,090
+Und der Filterkondensator nach den Elektrolytkondensatoren ist 28 nF.
+
+115
+00:13:14,230 --> 00:13:20,010
+Die Kondensatoren waren auf 2000 V bemessen, überdimensioniert, aber sie passten dimensional.
+
+116
+00:13:22,050 --> 00:13:25,310
+Nichts kompliziertes an diesem Filter, wird schnell genug zusammengebaut.
+
+117
+00:13:29,100 --> 00:13:33,840
+Hier auf meinem erfahrenen Gehäuse bin ich bei der neuesten Schaltungsimplementierung gelandet.
+
+118
+00:13:36,760 --> 00:13:39,640
+Du siehst frühere Löcher von früheren Arbeiten.
+
+119
+00:13:42,440 --> 00:13:44,780
+Den Leistungsschalter auf den Kühlkörper montiert.
+
+120
+00:13:47,600 --> 00:13:49,500
+Den Klemmenblockträger montiert.
+
+121
+00:13:51,160 --> 00:13:55,040
+Und Löcher gebohrt, damit die Drähte gemäß dem Verkabelungsschema laufen.
+
+122
+00:14:00,200 --> 00:14:06,400
+Und hier ist die Schaltung, die mit dem Laborsignalgenerator verbunden wird und den Leistungsschalter ansteuert.
+
+123
+00:14:10,580 --> 00:14:14,120
+Schau, wie der Isolationssteuertransformator aussieht.
+
+124
+00:14:15,920 --> 00:14:17,820
+Mit zwei Drähten gleichzeitig gewickelt.
+
+125
+00:14:20,100 --> 00:14:23,340
+Primär- und Sekundärwindungszahl ist gleich 11 Windungen.
+
+126
+00:14:24,880 --> 00:14:38,160
+Wenn wir am Eingang einen Spannungsstabilisator verwenden, nämlich den LM2596-DC-DC-Wandler, können wir den Spannungspunkt einstellen und ohne Windungen abzuwickeln die gewünschte Spannung am
+
+127
+00:14:38,160 --> 00:14:39,500
+Transistorgate einstellen.
+
+128
+00:14:40,780 --> 00:14:42,740
+Die gewünschte Spannung am Gate einstellen.
+
+129
+00:14:44,260 --> 00:14:45,860
+Also kannst du das so korrigieren.
+
+130
+00:14:48,260 --> 00:14:53,140
+Es gibt ein gewisses Vorurteil, dass Leute gegenüber Impulstransformatoren haben.
+
+131
+00:14:54,480 --> 00:14:57,160
+Aber ich sage dir, es ist eine wirklich gute Sache.
+
+132
+00:14:58,640 --> 00:15:03,060
+Wenn du lernst, ihn abzustimmen, kannst du sogar die Leistungsschaltertreiber vergessen.
+
+133
+00:15:04,980 --> 00:15:06,260
+Tolle Harmonikisolation.
+
+134
+00:15:08,800 --> 00:15:09,920
+Dieser Verriet funktioniert.
+
+135
+00:15:11,400 --> 00:15:13,820
+Ich habe ihn über 2 MHz getestet.
+
+136
+00:15:15,180 --> 00:15:17,900
+Ich zeige das Signal davon später am Oszilloskop.
+
+137
+00:15:19,460 --> 00:15:23,320
+Und du siehst diesen Teil, den kleinen Klemmenblock, der hier gezeigt wird.
+
+138
+00:15:24,820 --> 00:15:27,520
+Das ist der TC4093 Chip.
+
+139
+00:15:29,140 --> 00:15:38,160
+Und ich möchte darauf hinweisen, dass der TC4420 Treiber einen Kühlkörper hat, den ich mit zwei kleinen Drähten an die Platine gelötet habe.
+
+140
+00:15:40,220 --> 00:15:42,820
+Unter dem Kühlkörper haben wir Wärmeleitpaste.
+
+141
+00:15:43,820 --> 00:15:44,920
+Was ist der Sinn?
+
+142
+00:15:46,980 --> 00:15:51,100
+Diese Treiber sind vom Hersteller überhaupt nicht für diese hohen Frequenzen entwickelt.
+
+143
+00:15:52,300 --> 00:15:57,400
+Und diese Schaltung kann frei bis 2,5 MHz verwendet werden, vielleicht sogar höher.
+
+144
+00:15:58,720 --> 00:16:00,820
+Weil die Transistoren es erlauben.
+
+145
+00:16:02,520 --> 00:16:05,200
+Und der Chip selbst kann bei diesen Frequenzen arbeiten.
+
+146
+00:16:06,400 --> 00:16:12,980
+Der Treiber selbst beginnt sich zu erwärmen, wenn die Frequenz sich dem Bereich 1,6,1,7 MHz nährt.
+
+147
+00:16:14,460 --> 00:16:17,580
+Die Erwärmung wird merklich etwa 50 Grad.
+
+148
+00:16:19,400 --> 00:16:21,980
+Aber ich habe trotzdem einen Kühlkörper hinzugefügt.
+
+149
+00:16:23,280 --> 00:16:25,020
+Der Kühlkörper ist von Kabelschellen.
+
+150
+00:16:26,860 --> 00:16:31,000
+Du kannst sie kaufen, und sie passen sehr schön auf die Oberflächen dieser Chips.
+
+151
+00:16:33,400 --> 00:16:35,320
+Und im Grunde nicht super komplexes hier.
+
+152
+00:16:37,880 --> 00:16:43,400
+Du siehst, ich habe die Zenedioden hochgesetzt, weil in Experimenten alles passieren kann.
+
+153
+00:16:44,440 --> 00:16:48,320
+Wenn der Leistungsschalter durchbrennt, kann das Zenerpaar durchbrennen.
+
+154
+00:16:49,800 --> 00:16:56,960
+Um also nicht die ganze Schaltung auseinanderzunehmen, schneide einfach die Drähte mit kleinen Stücken ab und löte hier neue Zenerdioden ein.
+
+155
+00:16:58,240 --> 00:16:59,800
+Und die Schaltung funktioniert wieder.
+
+156
+00:17:01,700 --> 00:17:07,820
+Wenn der Schalter durchbrennt, passiert nichts mit dem Treiber, dem Transformator, geschweige denn mit dem Steuerblock.
+
+157
+00:17:09,420 --> 00:17:11,720
+Die Schaltung ist zuverlässig isoliert.
+
+158
+00:17:15,960 --> 00:17:18,360
+Die Schaltung für die Demonstration zusammengebaut.
+
+159
+00:17:19,640 --> 00:17:22,540
+Jetzt zeige ich die Frequenzfähigkeiten der Schaltung.
+
+160
+00:17:27,310 --> 00:17:31,050
+Die Oszilloskop-Sonde wird jetzt am Ausgang der Sekundärwicklung sein.
+
+161
+00:17:33,270 --> 00:17:35,330
+Der Rest der Schaltung ist getrennt.
+
+162
+00:17:37,110 --> 00:17:41,590
+Ich zeige die Signalform, damit sie dich nicht erschreckt, während all das nicht da ist.
+
+163
+00:17:43,570 --> 00:17:46,130
+Wir starten speziell bei einem Kilohertz.
+
+164
+00:17:50,330 --> 00:17:52,770
+Also, Strom an die Schaltung angelegt.
+
+165
+00:17:56,640 --> 00:17:57,440
+Da siehst du.
+
+166
+00:18:00,280 --> 00:18:02,420
+Jetzt vergrößere ich den Bildschirm.
+
+167
+00:18:08,400 --> 00:18:11,080
+Also, Impulswiederholungsfrequenz beträgt ein Kilohertz.
+
+168
+00:18:13,220 --> 00:18:16,200
+Denk dran, die Sekundärwicklung ist nirgendwo angeschlossen.
+
+169
+00:18:17,660 --> 00:18:20,240
+Und ich beginne, die Frequenz allmählich zu erhöhen.
+
+170
+00:18:21,280 --> 00:18:23,920
+Eins, zwei, drei, vier, fünf.
+
+171
+00:18:27,140 --> 00:18:32,760
+Und du kannst auch die maximale Amplitude der positiven und negativen Halbperiode beobachten.
+
+172
+00:18:34,480 --> 00:18:37,520
+Die Ablenkung ist jetzt 5 V pro Teilung.
+
+173
+00:18:39,960 --> 00:18:43,640
+5 Kilohertz, 6, 7, 8, 9, 10.
+
+174
+00:18:44,900 --> 00:18:46,520
+Schau, wie sich das Signal ändert.
+
+175
+00:18:48,800 --> 00:18:52,760
+Ich zeige diese Frequenzen, damit du einen wichtigen Punkt verstehst.
+
+176
+00:18:55,760 --> 00:18:57,760
+Dieser Ferrit hat eine minimale Betriebsfrequenz.
+
+177
+00:19:00,700 --> 00:19:09,460
+Wenn du eine Schaltung machen willst, die bei Frequenzen unter 15 Kilohertz arbeiten soll, solltest du einen Ferrit mit niedrigerer Permeabilitätsmarke verwenden.
+
+178
+00:19:10,920 --> 00:19:16,600
+Nicht 2000, gehe niedriger in der Permeabilität, damit er bei niedrigen Frequenzen arbeiten kann.
+
+179
+00:19:18,520 --> 00:19:20,640
+Dieser 2000 Ferrit verhält sich gut.
+
+180
+00:19:21,980 --> 00:19:24,720
+Jetzt bringe ich die Frequenz auf 15 Kilohertz.
+
+181
+00:19:27,410 --> 00:19:31,330
+Und du siehst, die Signale nehmen eine quadratischere Form an.
+
+182
+00:19:33,470 --> 00:19:36,990
+Und ab 20 Kilohertz kann dieser Ferrit stabil arbeiten.
+
+183
+00:19:40,190 --> 00:19:42,290
+Jetzt erhöhen wir die Frequenz schneller.
+
+184
+00:19:44,550 --> 00:19:47,730
+Frequenz 70, nun sagen wir 50 Kilohertz.
+
+185
+00:19:50,930 --> 00:19:54,050
+Das Signalplateau ist schon schön, es beginnt sich zu formen.
+
+186
+00:19:55,310 --> 00:19:56,810
+Jetzt 100 Kilohertz.
+
+187
+00:19:59,560 --> 00:20:01,360
+Eine schöne Signalform.
+
+188
+00:20:04,000 --> 00:20:08,340
+Übrigens, beachte die steigende Flanke, wir schauen sie uns später genauer an.
+
+189
+00:20:10,300 --> 00:20:12,200
+Jetzt ändere ich die Frequenz sofort.
+
+190
+00:20:13,900 --> 00:20:15,380
+Jetzt 600 Kilohertz.
+
+191
+00:20:19,700 --> 00:20:21,820
+Hier ist die Frequenz 1 Megahertz.
+
+192
+00:20:28,790 --> 00:20:31,510
+Hinzufügen, 1,5 Megahertz Signal so.
+
+193
+00:20:34,420 --> 00:20:37,980
+Denk dran, die Wicklung ist nicht mit dem Rest der Schaltung verbunden.
+
+194
+00:20:40,760 --> 00:20:43,620
+Und hier stelle ich die Frequenz auf 2 Megahertz ein.
+
+195
+00:20:44,700 --> 00:20:47,980
+Du siehst, der Ferrit handhabt 2 Megahertz ziemlich gut.
+
+196
+00:20:49,200 --> 00:20:51,180
+Jetzt schau dir die steigende Flanke an.
+
+197
+00:20:53,720 --> 00:20:55,460
+Wir haben 10 NS pro Teilung.
+
+198
+00:20:56,560 --> 00:20:57,580
+Eine Teilung.
+
+199
+00:20:59,200 --> 00:21:03,240
+Zwei Teilungen, 20 NS steigende Flanke bei 2 Megahertz.
+
+200
+00:21:05,480 --> 00:21:10,980
+Jetzt verbinden wir die Wicklung wieder mit der Schaltung und sehen, wie sie mit der nachfolgenden Kette arbeitet.
+
+201
+00:21:15,320 --> 00:21:19,000
+Also, die Sekundärwicklung wieder mit der nachfolgenden Kette verbunden.
+
+202
+00:21:20,760 --> 00:21:25,500
+Jetzt beobachten wir das Signal, das später das Gate des Leistungsschalters ansteuern wird.
+
+203
+00:21:27,220 --> 00:21:29,100
+Die Sonde wird an diesem Punkt sein.
+
+204
+00:21:31,920 --> 00:21:33,320
+Oszilloskopmasse an diesem Punkt.
+
+205
+00:21:35,200 --> 00:21:38,040
+Wir beobachten das Signal, Verbindung zu den Zehnern.
+
+206
+00:21:39,220 --> 00:21:41,720
+Du siehst, die Sonde ist mit den Zehnern verbunden.
+
+207
+00:21:43,320 --> 00:21:45,260
+Wechsle zum Oszilloskopbildschirm.
+
+208
+00:21:47,220 --> 00:21:49,600
+Und beginne wieder bei einem Kilohertz.
+
+209
+00:21:52,120 --> 00:21:53,440
+Da, ein durcheinander.
+
+210
+00:21:55,460 --> 00:21:56,760
+Wie kannst du damit arbeiten?
+
+211
+00:21:58,160 --> 00:22:01,300
+Das hat alles mit dem Frequenzgang des Ferrets zu tun.
+
+212
+00:22:06,560 --> 00:22:07,360
+10 Kilohertz.
+
+213
+00:22:10,430 --> 00:22:13,350
+Die Ablenkung ist wieder bei 5 V pro Teilung.
+
+214
+00:22:16,030 --> 00:22:18,830
+Du siehst, 10 Kilohertz ist zu niedrig.
+
+215
+00:22:20,470 --> 00:22:21,170
+Wechsle auf 20.
+
+216
+00:22:22,470 --> 00:22:28,270
+Und hier beginnst du zu sehen, dass das Signal eine ziemlich normale Form zum Ansteuern des Schalters annimmt.
+
+217
+00:22:29,910 --> 00:22:32,670
+Bei etwa 40 Kilohertz und darüber.
+
+218
+00:22:34,690 --> 00:22:35,490
+Jetzt 50.
+
+219
+00:22:36,590 --> 00:22:38,590
+Kann den Schalter leicht ansteuern.
+
+220
+00:22:40,970 --> 00:22:45,830
+Im Allgemeinen kann diese Schaltung mit diesem Ferrit ab 15 Kilohertz gut ansteuern.
+
+221
+00:22:48,230 --> 00:22:50,670
+Also gehen wir die Frequenzen schnell durch.
+
+222
+00:22:52,230 --> 00:22:57,330
+Du siehst, die nachfolgende Kette hat die negative Halbperiode bereits entfernt.
+
+223
+00:22:58,270 --> 00:23:00,910
+Sie ist jetzt nur minus 1,4 V.
+
+224
+00:23:03,040 --> 00:23:07,310
+Und die Amplitude der positiven Halbperiode beträgt 10 bis 13 V.
+
+225
+00:23:09,370 --> 00:23:10,590
+Und Frequenz erhöhen.
+
+226
+00:23:12,310 --> 00:23:13,230
+100 Kilohertz.
+
+227
+00:23:15,470 --> 00:23:16,170
+300.
+
+228
+00:23:19,560 --> 00:23:25,470
+Ich möchte darauf aufmerksam machen, was ich gesagt habe, bei manchen Frequenzen gibt der Ferrit einen Spike.
+
+229
+00:23:26,710 --> 00:23:34,290
+Und dieser Spike kann sehr groß sein, aber da im Gartekreis des Leistungsschalters 10er Dioden sind, werden diese Spikes abgeschnitten.
+
+230
+00:23:36,190 --> 00:23:42,430
+Und du siehst, die maximale Amplitude beträgt jetzt 15 bis 16 V, wo die 10er Dioden arbeiten.
+
+231
+00:23:45,210 --> 00:23:46,450
+500 Kilohertz.
+
+232
+00:23:51,690 --> 00:23:53,030
+1 Megahertz.
+
+233
+00:23:56,650 --> 00:23:57,170
+Frequenz.
+
+234
+00:23:57,170 --> 00:23:57,210
+1 Megahertz.
+
+235
+00:23:59,890 --> 00:24:04,410
+Beobachte, es gibt einen kleinen Übergang, aber er beeinflusst den Schalterbetrieb nicht.
+
+236
+00:24:06,370 --> 00:24:09,030
+Und hier stelle ich sofort 2 Megahertz ein.
+
+237
+00:24:10,470 --> 00:24:10,970
+Schaltung.
+
+238
+00:24:12,830 --> 00:24:13,830
+Jetzt gehen wir höher.
+
+239
+00:24:15,870 --> 00:24:17,310
+2,2 Megahertz.
+
+240
+00:24:19,430 --> 00:24:20,990
+2,4 Megahertz.
+
+241
+00:24:22,010 --> 00:24:23,350
+2,5 Megahertz.
+
+242
+00:24:24,250 --> 00:24:29,650
+Du siehst, die steigende Flanke und die Signalamplitude haben ziemlich gute Parameter.
+
+243
+00:24:31,390 --> 00:24:34,270
+Bei 20 NS pro Teilung eine Teilunganstieg.
+
+244
+00:24:40,990 --> 00:24:42,830
+Beobachte bei 3 Megahertz.
+
+245
+00:24:44,790 --> 00:24:48,670
+Die Schaltung funktioniert und sie passt sehr gut zu unseren Lösungen.
+
+246
+00:24:50,370 --> 00:24:53,330
+Und jetzt gehe ich zurück zu einem typischen Bereich.
+
+247
+00:24:54,130 --> 00:24:57,770
+Um 1 Megahertz prüfen wir die Tastverhältnisregelung.
+
+248
+00:25:00,290 --> 00:25:03,730
+Jetzt beträgt das Signaltastverhältnis 50%.
+
+249
+00:25:04,550 --> 00:25:05,890
+Ich senke es.
+
+250
+00:25:08,850 --> 00:25:09,570
+30%.
+
+251
+00:25:11,350 --> 00:25:12,070
+20%.
+
+252
+00:25:12,970 --> 00:25:13,690
+10%.
+
+253
+00:25:15,330 --> 00:25:21,750
+Und jetzt zeige, zum Beispiel, 9, 8, 7, 6, 5, 4, 3.
+
+254
+00:25:24,230 --> 00:25:29,750
+Also Tastverhältnis 3% bei einem Megahertz, was der Laborsignalgenerator zulassen kann.
+
+255
+00:25:32,690 --> 00:25:34,330
+Wir haben dieses Signal.
+
+256
+00:25:36,410 --> 00:25:38,090
+20 NS pro Teilung.
+
+257
+00:25:39,570 --> 00:25:42,410
+Die steigende Flanke liegt im Bereich von 10 an.
+
+258
+00:25:44,550 --> 00:25:45,230
+Jetzt 10 NS.
+
+259
+00:25:47,470 --> 00:25:49,530
+Ja, etwa 10 bis 12 NS.
+
+260
+00:25:53,740 --> 00:25:56,120
+Und regeln wir das Tastverhältnis höher.
+
+261
+00:26:01,470 --> 00:26:03,630
+Jetzt 90% einstellen.
+
+262
+00:26:05,530 --> 00:26:07,270
+90% Tastverhältnis.
+
+263
+00:26:08,370 --> 00:26:13,770
+Also ist die Schaltung praktisch von einem Prozent Tastverhältnis bis 90% betriebsfähig.
+
+264
+00:26:19,820 --> 00:26:22,500
+80, 70, 50, 40.
+
+265
+00:26:24,140 --> 00:26:30,640
+Du siehst also, der Isolationstransformator verhält sich ziemlich vorhersagbar und stabil über den Frequenzbereich.
+
+266
+00:26:34,400 --> 00:26:37,780
+Prüfen wir die Tastverhältnisregelung bei 2 Megahertz.
+
+267
+00:26:38,880 --> 00:26:41,260
+Jetzt schau, 50%.
+
+268
+00:26:42,040 --> 00:26:45,040
+40, 30, 20, 10%.
+
+269
+00:26:50,580 --> 00:26:51,380
+5%.
+
+270
+00:26:53,840 --> 00:26:55,560
+Und jetzt erhöhen wir.
+
+271
+00:27:00,600 --> 00:27:02,560
+60, 70, 80.
+
+272
+00:27:10,300 --> 00:27:16,160
+Du siehst, dass wir bei 2 Megahertz mit 80% Tastverhältnis schon Signalverzerrung haben.
+
+273
+00:27:20,430 --> 00:27:22,910
+Ein gewisser Frequenzgang überlappt sich.
+
+274
+00:27:24,110 --> 00:27:26,070
+Der Frequenzbereich ist ziemlich hoch.
+
+275
+00:27:27,370 --> 00:27:30,790
+Ich denke, du wirst diese Schaltung in deiner Arbeit zu schätzen wissen.
+
+276
+00:27:36,940 --> 00:27:41,860
+Also, ich habe den Aufbau des Aufsatzes für den Laborsignalgenerator beendet.
+
+277
+00:27:43,500 --> 00:27:46,960
+Ich habe die grafische Markierung für die Klemmenblockpinbelegung hinzugefügt.
+
+278
+00:27:49,260 --> 00:27:53,820
+Das Netzteil und den BNC-Anschluss für den Laborsignalgenerator angeschlossen.
+
+279
+00:27:55,420 --> 00:27:57,520
+So sieht der Aufbau von innen aus.
+
+280
+00:27:59,400 --> 00:28:01,840
+Die Platinen sind mit Schrauben fixiert.
+
+281
+00:28:04,220 --> 00:28:07,780
+Diese Platine ist mit zwei Schrauben fixiert, diese hier mit einer.
+
+282
+00:28:09,340 --> 00:28:10,960
+Und hier haben wir die Leistungsschalteranschlüsse.
+
+283
+00:28:14,120 --> 00:28:16,760
+Drennausgang ist rot, Sourceausgang ist blau.
+
+284
+00:28:19,160 --> 00:28:24,040
+Jetzt starte ich das System und schaue, wie es an einer ohmschen aktiven Last arbeitet.
+
+285
+00:28:30,120 --> 00:28:32,360
+Also, ich habe einen Teststand zusammengebaut.
+
+286
+00:28:33,860 --> 00:28:36,020
+Die Last wird eine 200W-Lampe sein.
+
+287
+00:28:38,020 --> 00:28:43,960
+Strom wird bei seiner Nennspannung für die Lampe sein, 220VDC von einem Labornetzgerät.
+
+288
+00:28:45,920 --> 00:28:51,260
+Ich beobachte das Oszillogramm auf dem Oszilloskop und steuere es mit dem Signalgenerator.
+
+289
+00:28:52,880 --> 00:28:55,240
+Jetzt siehst du, die Brücke ist gesetzt.
+
+290
+00:28:56,540 --> 00:28:59,980
+Das entspricht einer Brücke zwischen Source und dem Minus der Versorgung.
+
+291
+00:29:01,640 --> 00:29:04,760
+Die Last ist also am Drain des Leistungsschalters eingebunden.
+
+292
+00:29:08,280 --> 00:29:09,900
+Versorgungsspannung auf Nennwert erhöhen.
+
+293
+00:29:16,220 --> 00:29:17,780
+Ich fahre nicht niedrig.
+
+294
+00:29:20,240 --> 00:29:23,200
+Geht direkt auf den Nennwert 220V.
+
+295
+00:29:25,020 --> 00:29:28,240
+Tastverhältnis beträgt 5%, Frequenz 100kHz.
+
+296
+00:29:30,000 --> 00:29:31,540
+Es funktioniert.
+
+297
+00:29:35,800 --> 00:29:39,320
+Jetzt erhöhe ich das Tastverhältnis allmählich in Schritten.
+
+298
+00:29:42,480 --> 00:29:43,660
+Schau auf die Lampe.
+
+299
+00:29:51,020 --> 00:30:06,120
+10%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85% Tastverhältnis.
+
+300
+00:30:06,880 --> 00:30:08,160
+Jetzt dasselbe.
+
+301
+00:30:09,700 --> 00:30:11,740
+Wir schauen uns das Oszillogramm an.
+
+302
+00:30:13,680 --> 00:30:15,920
+Zurück auf 5% Tastverhältnis.
+
+303
+00:30:17,180 --> 00:30:22,500
+Ich möchte anmerken, dass wir spannungsmäßig auf den Ausgang schauen, wo unsere Sonde ist.
+
+304
+00:30:23,900 --> 00:30:25,860
+Die Sonde ist jetzt am Transistor drin.
+
+305
+00:30:27,500 --> 00:30:30,500
+Und die Oszilloskopmasse ist am Minus der Versorgung.
+
+306
+00:30:31,840 --> 00:30:35,680
+Spannungsmäßig haben wir ein invertiertes Signal relativ zum Steuersignal.
+
+307
+00:30:39,080 --> 00:30:44,300
+Also haben wir bei minimalem Steuertastverhältnis das maximale Spannungstastverhältnis am Ausgang.
+
+308
+00:30:50,700 --> 00:31:05,440
+10%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85% Tastverhältnis.
+
+309
+00:31:09,940 --> 00:31:13,600
+Mit hochwertigen Teilen und Aufbau erwärmt sich der Leistungsschalter kaum.
+
+310
+00:31:19,170 --> 00:31:20,670
+Leicht über Raumtemperatur.
+
+311
+00:31:22,730 --> 00:31:24,530
+Etwa 30 Grad bei dieser Last.
+
+312
+00:31:25,610 --> 00:31:29,670
+Die Schaltung handhabt den Nennwert bei 85% Systemverbrauch.
+
+313
+00:31:34,180 --> 00:31:36,620
+Also für Tests dieser Schaltung viel Spielraum.
+
+314
+00:31:42,300 --> 00:31:47,080
+Jetzt Tastverhältnis auf 55% schalten und durch die Frequenzen durchstimmen.
+
+315
+00:31:49,880 --> 00:31:53,520
+200 kHz, 300, 400, 500.
+
+316
+00:31:55,780 --> 00:31:57,780
+Du siehst, die Lampe leuchtet.
+
+317
+00:32:03,670 --> 00:32:05,690
+Sagen wir, Test bei Megahertz.
+
+318
+00:32:08,850 --> 00:32:11,630
+Jetzt schon auf Radiofrequenz umgeschaltet.
+
+319
+00:32:14,190 --> 00:32:18,510
+Schau das Signal bei einem Megahertz, 55% Tastverhältnis.
+
+320
+00:32:22,960 --> 00:32:27,940
+65, 75, 85% bei Megahertzverbrauch.
+
+321
+00:32:38,500 --> 00:32:43,720
+Als nächstes möchte ich den YouTube-Kanal eines Typen empfehlen, der sich Ruslan X nennt.
+
+322
+00:32:45,180 --> 00:32:49,720
+Er führt hochwertige Experimente im Bereich der alternativen Energie durch.
+
+323
+00:32:51,760 --> 00:32:54,060
+Ich empfehle allen, sie zu Hause nachzubauen.
+
+324
+00:32:55,560 --> 00:32:57,120
+Du wirst viele neue Dinge sehen.
+
+325
+00:32:59,520 --> 00:33:01,880
+Und besuche auch das Zajat-Forum.
+
+326
+00:33:03,600 --> 00:33:06,820
+Der Triad Ruslan-Akula-Buchhofs-BTG-Generator.
+
+327
+00:33:08,200 --> 00:33:11,160
+Aufbau-Prototyp-BTG-Akula-0083.
+
+328
+00:33:12,760 --> 00:33:16,120
+Ab Seite 161 liest seine Beiträge.
+
+329
+00:33:17,540 --> 00:33:21,580
+Er hat sich kürzlich auch dort registriert, auch unter dem Nickname Ruslan X.
+
+330
+00:33:22,780 --> 00:33:25,140
+Und er bringt seine Videos auch dorthin.
+
+331
+00:33:26,340 --> 00:33:28,060
+Hier ist dieses Video für ProWin.
+
+332
+00:33:29,980 --> 00:33:31,900
+Ich werde mein Video einbetten.
+
+333
+00:33:34,160 --> 00:33:40,640
+Darin zeigt Ruslan sehr deutlich, was passiert, wenn man eine Tesla-Spule im Catcher-Modus von einer Batterie versorgt.
+
+334
+00:33:44,360 --> 00:33:48,120
+Und warum man bei dieser Verkabelung keine Messgeräte anschließen kann.
+
+335
+00:33:50,140 --> 00:33:51,400
+Oszilloskop und so weiter.
+
+336
+00:33:53,620 --> 00:33:54,780
+Wie man sie verlieren kann.
+
+337
+00:33:56,400 --> 00:34:02,540
+Das passt sehr gut zu dem, was ich dir gezeigt habe, der Aufsatz für den Laborsignal-Generator, sein Schaltplan.
+
+338
+00:34:04,260 --> 00:34:05,520
+Und warum ich ihn mache.
+
+339
+00:34:08,620 --> 00:34:11,860
+Ich empfehle, seine Videos sorgfältig zu studieren.
+
+340
+00:34:18,870 --> 00:34:21,470
+Hallo, lieber Wladimir Ilyich ProWin.
+
+341
+00:34:23,390 --> 00:34:24,810
+Nun, und der Rest.
+
+342
+00:34:26,070 --> 00:34:27,810
+Jetzt demonstriere ich eine Sache.
+
+343
+00:34:29,670 --> 00:34:34,770
+Und dann entscheidet ihr selbst, ob eure Messungen richtig oder falsch sind.
+
+344
+00:34:36,350 --> 00:34:37,990
+Also, hier ist, was wir haben.
+
+345
+00:34:39,310 --> 00:34:41,370
+Wir haben eine Tesla, hier ist sie.
+
+346
+00:34:45,600 --> 00:34:46,900
+Dein normaler Catcher.
+
+347
+00:34:48,200 --> 00:34:48,960
+Hier ist der Catcher.
+
+348
+00:34:50,160 --> 00:34:51,940
+Catcher-Transistor 805.
+
+349
+00:34:53,340 --> 00:34:54,140
+Er ist da drin.
+
+350
+00:34:56,260 --> 00:34:58,420
+Das ist ein Aufwärtsspannungswandler.
+
+351
+00:35:00,340 --> 00:35:02,920
+2,5 Ampere bis 30 V.
+
+352
+00:35:04,160 --> 00:35:06,980
+In diesem Fall sind 25 V eingestellt.
+
+353
+00:35:08,580 --> 00:35:10,400
+Also gibt's unsere Stromquelle.
+
+354
+00:35:11,960 --> 00:35:12,900
+Hier ist die Stromquelle.
+
+355
+00:35:14,180 --> 00:35:15,580
+Und die Batterie.
+
+356
+00:35:17,620 --> 00:35:19,020
+Jetzt zeige ich den Unterschied.
+
+357
+00:35:20,520 --> 00:35:23,360
+Und ihr Jungs könnt rausfinden, was was ist.
+
+358
+00:35:24,980 --> 00:35:26,900
+Es gibt auch eine Oszilloskop-Sonde.
+
+359
+00:35:28,560 --> 00:35:28,980
+Hier ist sie.
+
+360
+00:35:29,480 --> 00:35:30,600
+Wird nirgendwo angeschlossen.
+
+361
+00:35:32,120 --> 00:35:34,880
+Ich bringe diese Sonde einfach nah an die Catcher-Punkte.
+
+362
+00:35:38,670 --> 00:35:40,330
+Nun, versuchen wir es.
+
+363
+00:35:42,450 --> 00:35:44,670
+Schließe die Stromquelle an den Catcher an.
+
+364
+00:35:47,010 --> 00:35:50,510
+Bei den von mir eingestellten 12 V ist kein Strom erforderlich.
+
+365
+00:35:53,290 --> 00:35:55,830
+Ein kleines Funken erscheint hier am Ende.
+
+366
+00:35:57,690 --> 00:35:57,930
+Catcher!
+
+367
+00:35:58,470 --> 00:36:01,410
+Der Transistor wechselt in den Catcher-Betriebsmodus.
+
+368
+00:36:03,030 --> 00:36:03,810
+Und beginnt zu laufen.
+
+369
+00:36:04,850 --> 00:36:08,890
+Du siehst deutlich, dass die Wandlung von 12 auf 25 V geht.
+
+370
+00:36:09,770 --> 00:36:12,510
+Und der Catcher läuft bei 25 V.
+
+371
+00:36:14,150 --> 00:36:16,310
+Wir verwenden die Batterie noch nicht.
+
+372
+00:36:17,330 --> 00:36:17,710
+Das haben wir.
+
+373
+00:36:19,290 --> 00:36:21,090
+Das ist ein Schraubendreher für uns.
+
+374
+00:36:23,410 --> 00:36:25,050
+Er dient als Anzeiger.
+
+375
+00:36:27,030 --> 00:36:28,430
+Du siehst es selbst.
+
+376
+00:36:30,790 --> 00:36:31,630
+Los geht's.
+
+377
+00:36:33,750 --> 00:36:34,130
+Hinzufügen.
+
+378
+00:36:37,020 --> 00:36:38,020
+Du siehst es da.
+
+379
+00:36:42,340 --> 00:36:43,840
+Höre, es hat gestartet.
+
+380
+00:36:45,380 --> 00:36:47,440
+Hier auf 12 V eingestellt.
+
+381
+00:36:48,860 --> 00:36:50,080
+Höre, das kleine Funken läuft.
+
+382
+00:36:51,280 --> 00:36:52,000
+Hier ist das kleine Funken.
+
+383
+00:36:53,320 --> 00:36:55,020
+Und hier ist unser Catcher.
+
+384
+00:36:56,380 --> 00:36:57,380
+Also habe ich gerade...
+
+385
+00:37:02,200 --> 00:37:04,220
+Anscheinend ist der Transistor ausgefallen.
+
+386
+00:37:06,220 --> 00:37:06,680
+Höchstwahrscheinlich.
+
+387
+00:37:07,320 --> 00:37:07,940
+Oder etwas anderes.
+
+388
+00:37:10,240 --> 00:37:10,780
+Da, funktioniert.
+
+389
+00:37:12,200 --> 00:37:13,060
+Siehst du, ja?
+
+390
+00:37:14,140 --> 00:37:14,880
+Alles funktioniert.
+
+391
+00:37:17,000 --> 00:37:17,840
+Geh zum Schaltplan.
+
+392
+00:37:19,160 --> 00:37:20,060
+Nähere dich dem Kühlkörper.
+
+393
+00:37:22,000 --> 00:37:22,760
+Siehe den Kühlkörper.
+
+394
+00:37:24,160 --> 00:37:25,260
+Du kannst hier anfassen.
+
+395
+00:37:26,180 --> 00:37:26,320
+Ja.
+
+396
+00:37:27,060 --> 00:37:30,380
+Wir können jeden Catcher-Punkt mit dem Schraubendreher berühren.
+
+397
+00:37:32,140 --> 00:37:33,820
+Und wir sehen nichts Besonderes.
+
+398
+00:37:35,840 --> 00:37:36,540
+Super.
+
+399
+00:37:38,340 --> 00:37:39,400
+Schalte den Catcher aus.
+
+400
+00:37:41,760 --> 00:37:45,900
+Und jetzt schließe ich denselben Catcher an eine autonome Batteriestromquelle an.
+
+401
+00:37:51,780 --> 00:37:53,320
+Das ist für einäugigen Bolotja.
+
+402
+00:37:54,580 --> 00:37:57,300
+Ich möchte, dass er darauf auch achtet.
+
+403
+00:37:58,160 --> 00:38:03,000
+Wenn er jemanden bittet, Messungen an einem funktionierenden Gerät für ihn zu machen.
+
+404
+00:38:04,960 --> 00:38:05,680
+Für die Zukunft.
+
+405
+00:38:07,380 --> 00:38:09,760
+Damit er versteht, wovon die Rede ist.
+
+406
+00:38:11,640 --> 00:38:12,800
+Mache den Wechsel jetzt.
+
+407
+00:38:14,520 --> 00:38:15,360
+Plus Ende.
+
+408
+00:38:17,500 --> 00:38:17,800
+Verbinden.
+
+409
+00:38:22,700 --> 00:38:23,700
+Alles eingestellt.
+
+410
+00:38:24,440 --> 00:38:25,280
+Muss es nur einschalten.
+
+411
+00:38:27,520 --> 00:38:29,920
+Nimm den kleinen Schraubendreher in die Hand.
+
+412
+00:38:32,160 --> 00:38:33,840
+Nun, schalte ein.
+
+413
+00:38:35,060 --> 00:38:35,760
+12V.
+
+414
+00:38:36,940 --> 00:38:38,780
+Wir haben ein kleines Funken.
+
+415
+00:38:41,280 --> 00:38:42,360
+Catcher läuft.
+
+416
+00:38:43,800 --> 00:38:44,620
+Nimm den Schraubendreher.
+
+417
+00:38:46,180 --> 00:38:46,620
+Und siehe.
+
+418
+00:38:48,220 --> 00:38:50,320
+Bring den Schraubendreher hierher.
+
+419
+00:38:52,160 --> 00:38:52,420
+Siehe.
+
+420
+00:38:54,400 --> 00:38:57,180
+Nimm eine Oszilloskop-Sonde, nirgendwo angeschlossen.
+
+421
+00:38:58,620 --> 00:38:59,240
+Ein kleines Ende.
+
+422
+00:39:00,780 --> 00:39:01,460
+Siehe.
+
+423
+00:39:03,320 --> 00:39:06,200
+Und jetzt sag mir, einäugiger Volotia.
+
+424
+00:39:07,420 --> 00:39:08,980
+Wie wirst du messen?
+
+425
+00:39:11,060 --> 00:39:14,660
+Willst du, dass all diese Ausrüstung auf die Müllhalde geht?
+
+426
+00:39:16,180 --> 00:39:17,780
+Von deinem Messen?
+
+427
+00:39:20,580 --> 00:39:21,820
+Sogar das hier.
+
+428
+00:39:23,740 --> 00:39:25,220
+Solche Sachen überstehen das nicht.
+
+429
+00:39:27,440 --> 00:39:29,020
+Danke fürs Zuschauen.
+
+430
+00:39:34,370 --> 00:39:38,670
+Und in unserer Freienergie-Community ist etwas Interessantes passiert.
+
+431
+00:39:39,990 --> 00:39:43,130
+Ich wusste natürlich schon lange davon, etwa ein halbes Jahr.
+
+432
+00:39:45,230 --> 00:39:49,610
+Ein Typ war immer noch nicht mit unserem bekannten Erfinder Ruslan Kulabukov einverstanden.
+
+433
+00:39:53,580 --> 00:39:55,840
+Und beschloss, ihn zu verklagen.
+
+434
+00:39:58,040 --> 00:40:00,640
+Ein Kommentar kam auf meinem Kanal rein.
+
+435
+00:40:02,280 --> 00:40:03,400
+Jetzt zeige ich es.
+
+436
+00:40:04,100 --> 00:40:07,360
+Hier siehst du allerlei interessante Kommentare auftauchen.
+
+437
+00:40:08,900 --> 00:40:11,240
+Der Kulabukov-Aufbau erwies sich als Fake.
+
+438
+00:40:12,880 --> 00:40:16,960
+Und hier ist ein Beitrag von Sergei selbst unter dem Nickname Sergei Sergei.
+
+439
+00:40:18,760 --> 00:40:20,980
+Er gibt einen Link zu seinem Video.
+
+440
+00:40:23,740 --> 00:40:24,560
+Wechsle dorthin.
+
+441
+00:40:28,860 --> 00:40:34,100
+Und in diesem Video mit dem Titel, wie meine Familie betrogen wurde, durch ein Freienergiegerät.
+
+442
+00:40:36,660 --> 00:40:40,900
+Er erzählt, wie er von Ruslan eine nicht funktionierende Probe gekauft hat.
+
+443
+00:40:42,560 --> 00:40:45,080
+Das Video ist etwa 44 Minuten lang.
+
+444
+00:40:46,320 --> 00:40:50,060
+Natürlich können wir nur Mitgefühl mit Sergei haben, weil er betrogen wurde.
+
+445
+00:40:53,180 --> 00:40:57,140
+Aber ich würde raten, deswegen keine besondere Hysterie zu beginnen.
+
+446
+00:40:59,020 --> 00:41:07,480
+Denn wenn eine unehrliche Person beschlossen hat, auf diese Weise Geld zu machen, heißt das nicht, dass die Technologie nicht existiert.
+
+447
+00:41:08,700 --> 00:41:11,300
+Und es heißt nicht, dass wir aufgeben sollten.
+
+448
+00:41:14,890 --> 00:41:17,130
+Weil funktionierende Systeme existieren.
+
+449
+00:41:20,950 --> 00:41:23,650
+Und ich erzähle dir ein bisschen über einen Punkt.
+
+450
+00:41:25,550 --> 00:41:30,310
+Leute, die mich auf Skype kontaktieren, fragen oft, wie viel Ausgang es liefert.
+
+451
+00:41:31,570 --> 00:41:34,610
+Wie viel du daran hängen kannst, ob du eins kaufen kannst.
+
+452
+00:41:35,910 --> 00:41:37,270
+Alles in diese Richtung.
+
+453
+00:41:38,690 --> 00:41:40,690
+Leute, ich sage euch das.
+
+454
+00:41:42,690 --> 00:41:45,190
+Wie viele andere, die mich kontaktiert haben.
+
+455
+00:41:46,630 --> 00:41:50,450
+Ich denke, Leute werden mich unterstützen, falls überhaupt.
+
+456
+00:41:52,730 --> 00:41:56,330
+Das Internet hat eine Art Heiligenschein um dieses Thema aufgebaut.
+
+457
+00:41:58,030 --> 00:42:01,770
+Dass die Technologie existiert, sie funktioniert seit Ewigkeiten.
+
+458
+00:42:02,990 --> 00:42:07,450
+Und nur eine gewisse Ignoranz hält sie davon ab, im Leben umgesetzt zu werden.
+
+459
+00:42:09,370 --> 00:42:11,650
+Tatsächlich funktioniert die Technologie wirklich.
+
+460
+00:42:13,090 --> 00:42:16,330
+Es gibt viele Richtungen, wie man diese Geräte umsetzen kann.
+
+461
+00:42:18,270 --> 00:42:20,930
+Und sie sind in verschiedenen Varianten umgesetzt.
+
+462
+00:42:22,090 --> 00:42:26,810
+Aber sie alle haben einen Punkt gemeinsam, die Technologie ist in ihrem frühesten Stadium.
+
+463
+00:42:28,590 --> 00:42:30,150
+Das heißt, der Output ist instabil.
+
+464
+00:42:31,210 --> 00:42:34,470
+Was du im Internet im Clip siehst, wo Lampen leuchten.
+
+465
+00:42:38,180 --> 00:42:39,700
+Das sind einmalige Starts.
+
+466
+00:42:41,560 --> 00:42:46,320
+Davor wird dir der Autor nicht sagen, dass er das Gerät mehrere Stunden lang abgestimmt hat.
+
+467
+00:42:47,320 --> 00:42:49,380
+Bevor es erfolgreich gestartet wurde.
+
+468
+00:42:51,120 --> 00:42:53,280
+Danach filmt er es und postet es online.
+
+469
+00:42:54,720 --> 00:42:56,380
+Wir schauen es uns an und denken.
+
+470
+00:42:58,340 --> 00:43:01,400
+Nur noch ein bisschen mehr und wir fangen an, das alles zu machen.
+
+471
+00:43:04,100 --> 00:43:05,860
+Ich möchte einen Rat geben.
+
+472
+00:43:07,300 --> 00:43:11,500
+Behandle das nicht wie eine Zauberbox, die Strom wie eine Steckdose liefern kann.
+
+473
+00:43:12,880 --> 00:43:15,500
+Behandle es als Forschung über die Welt um uns herum.
+
+474
+00:43:17,380 --> 00:43:20,560
+Das ist ein Hobby, wissenschaftliche Arbeit, Forschung.
+
+475
+00:43:23,910 --> 00:43:25,650
+Schnelle Ergebnisse passieren hier nicht.
+
+476
+00:43:28,470 --> 00:43:32,110
+Persönlich habe ich in dieser Richtung etwa 8,5 Jahre gearbeitet.
+
+477
+00:43:33,750 --> 00:43:37,550
+Bald werden es 9, ich habe den Überblick verloren, aber lange.
+
+478
+00:43:39,390 --> 00:43:41,110
+Um einige Ergebnisse zu bekommen.
+
+479
+00:43:42,990 --> 00:43:44,790
+Also musst du dich einbringen.
+
+480
+00:43:45,950 --> 00:43:47,230
+Und alle werden müssen.
+
+481
+00:43:49,630 --> 00:43:56,510
+Und der Hauptgrund, warum diese Geräte nicht verkauft werden, ist, dass es keine berüchtigte Verschwörung gibt.
+
+482
+00:43:58,630 --> 00:44:00,170
+Du wirst sie verkaufen können.
+
+483
+00:44:02,110 --> 00:44:04,090
+Es ist allerdings ein riskantes Geschäft.
+
+484
+00:44:06,070 --> 00:44:09,530
+Niemand wird dich daran hindern, eine einzelne Einheit zu verkaufen.
+
+485
+00:44:11,530 --> 00:44:15,630
+Der Widerstand beginnt, wenn du es patentieren und in Produktion bringen willst.
+
+486
+00:44:17,650 --> 00:44:18,150
+Dann ja.
+
+487
+00:44:19,450 --> 00:44:25,250
+Aber eins für jemanden zu machen oder dein eigenes Haus zu heizen, wenn du keine Aufmerksamkeit darauf lenkst.
+
+488
+00:44:27,270 --> 00:44:28,970
+Das ist durchaus möglich.
+
+489
+00:44:32,030 --> 00:44:36,250
+Und es stellt sich heraus, dass diese Geräte im Moment sehr instabil sind.
+
+490
+00:44:39,910 --> 00:44:43,750
+Und das ist genau der Grund, warum wir sie immer noch nicht kaufen können.
+
+491
+00:44:47,820 --> 00:44:56,340
+Es gibt objektive Gründe, sagen wir, ein Typ hat das Gerät bei sich zu Hause gemacht, und es an einen anderen Standort zu verlegen erfordert Neuabstimmung.
+
+492
+00:44:58,400 --> 00:45:02,960
+Ich würde den Kauf eines solchen Geräts mit dem Kauf eines Satellitenfernsehempfängers vergleichen.
+
+493
+00:45:05,640 --> 00:45:14,580
+Wenn du nicht die Fähigkeiten hast, musst du am Installationsort einen Techniker rufen, der den Empfänger einstellt und die Schüssel für dich auf den Satelliten richtet.
+
+494
+00:45:15,820 --> 00:45:16,500
+Solche Sachen.
+
+495
+00:45:18,140 --> 00:45:21,680
+Das sind die objektiven Gründe, warum die Geräte nicht verkauft werden.
+
+496
+00:45:23,520 --> 00:45:26,180
+Du kannst ein instabiles Gerät jetzt nicht verkaufen.
+
+497
+00:45:27,640 --> 00:45:28,920
+Niemand braucht es wirklich.
+
+498
+00:45:30,400 --> 00:45:35,860
+Selbst wenn es einmal bei 5 oder 10 startet, nun, es ist gestartet, und das war's.
+
+499
+00:45:37,360 --> 00:45:39,700
+Also arbeite weiter an dieser Technologie.
+
+500
+00:45:42,020 --> 00:45:44,980
+Ich wünsche dir Beharrlichkeit, verliere nicht den Mut.
+
+501
+00:45:46,100 --> 00:45:47,980
+Was jetzt passiert, ist trivial.
+
+502
+00:45:49,840 --> 00:45:52,760
+Große Grüße an unseren großen Spezialisten Ruslan.
+
+503
+00:45:55,200 --> 00:46:03,240
+Weil er sich auf die Brust geschlagen, an jeder Ecke geschrien hat, dass er der Spezialist sei, jetzt ist klar, warum er das gemacht hat.
+
+504
+00:46:04,780 --> 00:46:07,180
+Um eine Bewegung um sich herum zu schaffen.
+
+505
+00:46:09,920 --> 00:46:15,860
+Und wenn so viele Leute dir folgen, schafft das natürlich einen heiligen Schein, dass viele Dinge bei dir laufen.
+
+506
+00:46:18,280 --> 00:46:21,960
+Und wie wir sehen, ist der Typ den schlüpfrigen Weg des Betrugs gegangen.
+
+507
+00:46:24,800 --> 00:46:30,740
+Es ist nicht an uns, ihn zu beurteilen, das ist Sergejs Angelegenheit, und Gott wird sein Richter sein.
+
+508
+00:46:31,740 --> 00:46:32,920
+Und wir machen weiter.
+
+509
+00:46:35,000 --> 00:46:38,820
+Und damit wünsche ich allen erfolgreiche Experimente und alles Gute.
+

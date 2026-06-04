@@ -1,0 +1,1004 @@
+1
+00:00:01,090 --> 00:00:02,010
+Hallo zusammen.
+
+2
+00:00:03,190 --> 00:00:06,810
+Ich habe die Arbeit an der Abstimmung des Labornetzteils beendet.
+
+3
+00:00:08,690 --> 00:00:10,970
+Und jetzt vor dir ist sein Schaltplan.
+
+4
+00:00:12,510 --> 00:00:16,170
+Der Schaltplan ist groß geworden und passt auf zwei A4 Blätter.
+
+5
+00:00:18,330 --> 00:00:22,450
+Er befindet sich bereits im Ordner unter der bekannten Adresse auf Yandex.Disk.
+
+6
+00:00:23,350 --> 00:00:26,490
+Die Adresse wird auch in der Videobeschreibung dupliziert.
+
+7
+00:00:26,490 --> 00:00:35,570
+Im Laufe der Arbeit an diesem Aufbau kamen einige Besonderheiten auf, die sich in der Praxis in Änderungen am Schaltplan des Geräts widerspiegelten.
+
+8
+00:00:39,010 --> 00:00:44,530
+Die radikalste Änderung im Aufbau passierte, könnte man sagen, speziell im Leistungsmodul.
+
+9
+00:00:45,910 --> 00:00:47,870
+Die Leistungsschalter wurden ausgetauscht.
+
+10
+00:00:48,930 --> 00:00:56,470
+Ursprünglich wollte ich Leistungsschalter im TU247 Gehäuse Marke IRFP064N verwenden.
+
+11
+00:00:57,890 --> 00:01:11,410
+Aber im Laufe des Testens stellte sich heraus, dass diese HCPL1 und 3020 Treiber, die einen maximalen Impulsstrom von 2A haben, die Gartekapazität dieser Transistoren nicht qualitativ sättigen können.
+
+12
+00:01:13,750 --> 00:01:16,730
+Und so hatte ich zwei Lösungen für dieses Problem.
+
+13
+00:01:18,550 --> 00:01:25,470
+Entweder die Transistoren ersetzen oder Stromverstärker nach den Treibern auf komplementären Paaren bipolarer Transistoren verwenden.
+
+14
+00:01:26,970 --> 00:01:28,950
+Auf diese Art Schaltung gemacht.
+
+15
+00:01:30,510 --> 00:01:34,650
+Unser Treiber, ein gewählter Widerstand, dann gehen komplementäre Paare.
+
+16
+00:01:35,590 --> 00:01:45,370
+Zum Beispiel diese KT972, KT973 oder KT805 und KT835.
+
+17
+00:01:47,550 --> 00:01:53,150
+Naja, und weiter alles nach Schaltplan, Vorwiderstand, Dioden, Zehner und Leistungsschalter.
+
+18
+00:01:54,270 --> 00:01:55,810
+Aber ich ging diesen Weg nicht.
+
+19
+00:01:57,410 --> 00:02:00,550
+Es ist ein sehr guter Weg, um schwere Gates anzusteuern.
+
+20
+00:02:02,190 --> 00:02:09,570
+Ich nahm ihn aus einem Grund nicht, wegen der Montagedichte auf meiner Platine war die Installation von 8 Schaltern nicht mehr möglich.
+
+21
+00:02:10,890 --> 00:02:11,690
+Einfach kein Platz.
+
+22
+00:02:13,190 --> 00:02:17,310
+Deswegen blieb ich bei Transistoren der Marke IRFZ48N.
+
+23
+00:02:19,530 --> 00:02:31,270
+Diese Transistoren kommen im Tu-220-Gehäuse, solch ein Gehäuse ist viel kleiner, aber dennoch bewältigen sie die gestellte Aufgabe hervorragend und beeinträchtigen den Aufbau überhaupt nicht.
+
+24
+00:02:32,470 --> 00:02:36,570
+Und auch ihre Besonderheit ist, dass die Gartekapazität viel kleiner ist.
+
+25
+00:02:38,070 --> 00:02:46,050
+Wenn du den IRFP064N nimmst, gibt es dort 4000 pF und bei diesen 2500 pF.
+
+26
+00:02:47,770 --> 00:02:55,490
+Und im Laufe des Testens stellte ich fest, dass dieser Treiber mit einer Kapazität bis zu 2800 pF arbeiten kann.
+
+27
+00:03:00,850 --> 00:03:03,230
+Diese Schalter werden auf dem Kühlkörper platziert.
+
+28
+00:03:04,850 --> 00:03:10,470
+Alles genauso, wie ich es im Video gezeigt habe, alle gleichen Operationen am Leistungsmodul.
+
+29
+00:03:12,550 --> 00:03:17,570
+Der nächste Moment, an dem Änderungen vorgenommen wurden, das ist im Leistungstransformator.
+
+30
+00:03:19,850 --> 00:03:24,670
+Du kannst bemerken, dass ich die Windungszahl der Primärwicklung geändert habe, auf 4.
+
+31
+00:03:24,830 --> 00:03:28,910
+Juli reduziert habe, und ich verwende nur 7 Anschlüsse vom Transformator.
+
+32
+00:03:30,490 --> 00:03:34,270
+Ursprünglich waren 11 Windungen in 3 Lagen der Sekundärwicklung gewickelt.
+
+33
+00:03:35,510 --> 00:03:36,310
+Aber da am 11.
+
+34
+00:03:36,470 --> 00:03:47,590
+Anschluss und folgenden die Spannung schon zu weit die mir gestellte Aufgabe, 1000 Volt, überstieg, beschloss ich, diese Windungen abzuwickeln, und insgesamt eine Lage am Impulstransformator zu
+
+35
+00:03:47,590 --> 00:03:48,110
+entfernen.
+
+36
+00:03:51,450 --> 00:03:56,950
+Jetzt sieht dieser Aufbau so aus, nichts geändert, nur eine Lage entfernt, und du siehst 4 Windungen.
+
+37
+00:03:58,910 --> 00:04:04,550
+Es ist auch alles montiert und die Anschlüsse vom Transformator sind mit dem Verteilungsschalter verbunden.
+
+38
+00:04:06,830 --> 00:04:09,630
+Diese Schalter kommen mit solchen Metallteilen im Bausatz.
+
+39
+00:04:11,330 --> 00:04:13,710
+Du siehst, ich habe es hier leicht modifiziert.
+
+40
+00:04:15,770 --> 00:04:23,930
+Sie sitzen in diesen Löchern und haben eine Lasche, die beim Bewegen an die Metalllasche des Begrenzers stößt, und der Schalter kann nicht weiter umgeschaltet werden.
+
+41
+00:04:30,710 --> 00:04:33,990
+So bestimmen wir die endgültige Anzahl seiner Schaltungen.
+
+42
+00:04:35,390 --> 00:04:40,350
+Als nächstes haben wir die Kette abgestimmt, die für die Arbeit des Stromschutzes verantwortlich ist.
+
+43
+00:04:41,730 --> 00:04:44,070
+Das ist dieser Widerstand und der Vorwiderstand.
+
+44
+00:04:45,570 --> 00:04:48,290
+Und hier ist die Kette, die vom Stromsensor kommt.
+
+45
+00:04:51,990 --> 00:04:53,750
+Werte sind jetzt angegeben.
+
+46
+00:04:55,310 --> 00:05:06,230
+In früheren Experimenten habe ich als Widerstand variable Widerstände dieser Marke verwendet, aber es stellte sich heraus, dass sie sehr leistungsschwach sind und bei der Arbeit des Stromsensors die
+
+47
+00:05:06,230 --> 00:05:08,390
+Kontakte einfach auf der Leiterbahn verbrennen.
+
+48
+00:05:13,220 --> 00:05:20,720
+Obwohl der Strom nicht zu groß ist, bewältigen diese Transistoren die gestellte Aufgabe nicht, und es wurde entschieden, sie auszutauschen.
+
+49
+00:05:22,500 --> 00:05:27,780
+Ich fand Widerstände der Marke PPB1A, die Marke, die ich auch angegeben habe.
+
+50
+00:05:29,760 --> 00:05:33,960
+Der Widerstand, den ich installiert habe, beträgt 100 Omega.
+
+51
+00:05:35,100 --> 00:05:39,700
+Aber hier funktionieren Widerstände mit einem Wert ab 47 Omega gut.
+
+52
+00:05:41,900 --> 00:05:47,880
+Ich hätte einen solchen 47 Widerstand installiert, aber er ist bei den Lieferanten nicht verfügbar.
+
+53
+00:05:49,200 --> 00:05:52,480
+Diese Widerstände sind aus irgendeinem Grund mangelware.
+
+54
+00:05:54,240 --> 00:05:56,600
+Sie sind aus Nichromdraht hergestellt.
+
+55
+00:05:58,520 --> 00:06:01,840
+Die Leistungsbewertung dieser Widerstände ist ziemlich hoch.
+
+56
+00:06:03,820 --> 00:06:09,940
+Die Kontaktflächen sind auch sehr qualitativ gemacht, diese Laschen, was ihren Ausfall verhindert, Keramikgehäuse.
+
+57
+00:06:13,800 --> 00:06:17,440
+Also rate ich, genau solche Variablen Widerstände zu verwenden.
+
+58
+00:06:19,340 --> 00:06:21,220
+Um Arbeitsausfälle zu vermeiden.
+
+59
+00:06:22,680 --> 00:06:24,340
+Was kann ich hier noch sagen?
+
+60
+00:06:26,960 --> 00:06:32,640
+Dieser Widerstand, der zur Masse des Chips geht, ist für den endgültigen Auslösestrom des Schutzes verantwortlich.
+
+61
+00:06:36,370 --> 00:06:39,410
+In meinem Fall beträgt dieser Widerstand 2,7 Omega.
+
+62
+00:06:40,390 --> 00:06:45,270
+Und hier kannst du irgendwo bis 5 Omega einsetzen, das wird ein anderer Punkt sein.
+
+63
+00:06:46,630 --> 00:06:53,590
+Früher habe ich den Verbrauchspunkt auf 20 A abgestimmt, aber bei 2,7 Omega sind das 32 A.
+
+64
+00:06:55,170 --> 00:07:00,770
+Der Auslösepunkt kommt raus und diese Schalter bewältigen eine solche Kurzschlusslast hervorragend.
+
+65
+00:07:04,470 --> 00:07:09,450
+Übergang zu den Ketten, die für die Steuerung des Stoppens der Chiperzeugung verantwortlich sind.
+
+66
+00:07:15,010 --> 00:07:21,530
+Diese Kette ist auf einem Teiler aus Widerständen der Werte 1,3 K und 330 Omega aufgebaut.
+
+67
+00:07:25,090 --> 00:07:29,030
+Von ihnen bildet sich ein Potential von etwa 2,5 V.
+
+68
+00:07:31,330 --> 00:07:37,710
+Und wir können bemerken, dass dieses Potential über den Erzeugungsausschalter geht, er ist hier in meinem Aufbau dargestellt.
+
+69
+00:07:40,690 --> 00:07:46,130
+Weiter geht ein Drucktaster mit normalerweise geschlossenen Kontakten, nämlich geschlossen, nicht offen.
+
+70
+00:07:47,450 --> 00:07:54,190
+Und sichtbar, dass ich hier ein Koaxialkabel markiert habe, dessen Schirm zwingend mit der Masse mit dem Generator verbunden ist.
+
+71
+00:07:56,470 --> 00:08:05,510
+Wenn du das nicht tust, dann wird dieses Stück Draht vom Schalter, Knopf und dem hier markierten Punkt E, hier ist er, der Eingang zu Pin 9, eine Art Antenne bilden.
+
+72
+00:08:07,130 --> 00:08:15,850
+Und während des Betriebs werden darauf induzierte Störungen von der Arbeit der Primärwicklung erheblich sein, was zu viele Auslösungen des Stromschutzes führt.
+
+73
+00:08:17,050 --> 00:08:21,950
+Da Pin 9 des UC 3825N Chips ziemlich empfindlich ist.
+
+74
+00:08:23,910 --> 00:08:26,930
+Seine Arbeit ist von 0,9 bis 1,3 Volt.
+
+75
+00:08:28,390 --> 00:08:31,990
+1,3 Volt ist schon ein vollständiges Erzeugungsabschalten.
+
+76
+00:08:32,910 --> 00:08:35,450
+Also rate ich, das unbedingt zu machen.
+
+77
+00:08:37,430 --> 00:08:42,650
+Lass uns ausführlicher betrachten, wofür diese Kette aus Schalter und Knopf verwendet werden kann.
+
+78
+00:08:45,870 --> 00:08:56,790
+Erstens, beim Schließen des Schalters schalten wir unseren Chip in den Standby-Modus, die Lieferung von Steuerimpulsen von den Pins 14 und 11 des UC 3825N stoppt.
+
+79
+00:08:58,910 --> 00:09:04,930
+Das ist sehr praktisch, keine Notwendigkeit, die Stromversorgung des gesamten Laborblocks zu unterbrechen.
+
+80
+00:09:07,230 --> 00:09:17,310
+Auch wenn wir eine nach dem Labornetzteil an seinem Ausgang angeschlossene Schaltung testen wollen, und wir nicht sicher sind, wie sie auf langes Einschalten reagiert, drücken wir kurz diesen Knopf
+
+81
+00:09:17,310 --> 00:09:19,370
+mit normalerweise geschlossenen Kontakten.
+
+82
+00:09:19,690 --> 00:09:23,130
+Die Kontakte öffnen und der Chip schaltet zurück in den Arbeitsmodus.
+
+83
+00:09:28,730 --> 00:09:35,930
+Wir bestimmen, wie sich das nachfolgende Gerät verhält, ziehen Schlüsse und führen Korrekturen in der Labornetzteilsteuerung ein.
+
+84
+00:09:38,230 --> 00:09:42,330
+Auch mit diesem Knopf ist es sehr praktisch, das Spannungspotenzial einzustellen.
+
+85
+00:09:42,550 --> 00:09:51,090
+Schließe einen Spannungsmesser an den Netzteilausgang an, stelle den Punkt bei der gewünschten Spannung mit dem Schalter ein und stelle den Auslösepunkt des Spannungsschutzes ein.
+
+86
+00:09:56,820 --> 00:10:01,220
+Drücke den Knopf und fixiere das Spannungspotenzial, das am Ausgang herauskommt.
+
+87
+00:10:03,920 --> 00:10:05,520
+Funktional und praktisch.
+
+88
+00:10:06,700 --> 00:10:15,040
+Jetzt betrachten wir die Arbeit des Systems, das für die gleichmäßige Regelung der Spannung am Netzteilausgang und das Einstellen seines Endpunkts verantwortlich ist.
+
+89
+00:10:16,200 --> 00:10:19,960
+Dieses System erforderte eine zusätzliche galvanisch getrennte Stromquelle.
+
+90
+00:10:21,760 --> 00:10:25,500
+Ich habe sie schematisch als vier Windungen vom DC-DC-Wandler markiert.
+
+91
+00:10:26,580 --> 00:10:32,320
+Technisch habe ich es gemacht, siehe die DC-DC-Wandler, hier habe ich diese vier Windungen hinzugefügt.
+
+92
+00:10:34,240 --> 00:10:36,880
+Und weiter gehen sie zur nachfolgenden Schaltung.
+
+93
+00:10:39,020 --> 00:10:41,340
+Das ist eine Halbwellengleichrichterschaltung.
+
+94
+00:10:43,780 --> 00:10:46,800
+Hier bekommst du ein Potenzial von etwa 9 Volt.
+
+95
+00:10:47,980 --> 00:10:50,960
+Es gibt einen Begrenzungszehner von 8,2 Volt.
+
+96
+00:10:52,540 --> 00:10:55,960
+Weiter geht ein Regler in kleinem Gehäuse, 78L05.
+
+97
+00:10:58,940 --> 00:11:07,700
+Die hier verbrauchten Ströme sind ziemlich klein, weil letztendlich diese Kette nur arbeitet, um die LED im PC817 Optokoppler auszulösen.
+
+98
+00:11:09,000 --> 00:11:14,240
+Hier siehst du Punkte C, D und in der Schaltung gehen die Ausgänge auch zu diesen Punkten C, D.
+
+99
+00:11:17,920 --> 00:11:27,400
+Als Verfolgungselement für das Potenzial wurde entschieden, die Schaltungslösung zu verwenden, die sich gut empfohlen hat, nämlich den steuerbaren Zehner TL431.
+
+100
+00:11:30,120 --> 00:11:42,040
+Das Potenzial vom Widerstandsteiler wird an seinen Pin 1 geliefert, und wenn die Schwelle dieses Potenzials 2,5 Volt erreicht, wird es mit der Referenzspannung von 2,5 Volt verglichen und der Chip
+
+101
+00:11:42,040 --> 00:11:42,640
+löst aus.
+
+102
+00:11:43,880 --> 00:11:47,920
+Bei Auslösung lassen wir entsprechend die LED im Optokoppler leuchten.
+
+103
+00:11:49,920 --> 00:11:53,140
+Jetzt lass uns auf diesen Widerstandsteiler genauer eingehen.
+
+104
+00:11:55,600 --> 00:11:58,400
+Hier müssen 2 Watt Widerstände platziert werden.
+
+105
+00:12:00,020 --> 00:12:04,920
+Sie sind nicht nur ein Teiler, sondern entladen auch diese Kapazitäten am Netzteilausgang.
+
+106
+00:12:06,520 --> 00:12:07,980
+Diese arbeiten auch für uns.
+
+107
+00:12:09,420 --> 00:12:19,240
+Das wird auch aus Sicherheitsgründen gemacht, damit das Spannungspotenzial nach dem Abschalten des Netzteils nicht an den Ausgangsklemmen bleibt, damit habe ich ein Sicherheitssystem zur
+
+108
+00:12:19,240 --> 00:12:20,960
+Kondensatorentladung eingeführt.
+
+109
+00:12:24,460 --> 00:12:28,920
+Der Widerstand, der mit Minus verbunden ist, beträgt 4,7 K.
+
+110
+00:12:30,580 --> 00:12:38,840
+Solch ein Wert wurde nicht zufällig gewählt, bei diesem Wert beträgt die maximale Spannung, die an den Ausgangsklemmen sein kann, 1050 Volt.
+
+111
+00:12:40,020 --> 00:12:42,040
+Weiter geht der Variable Widerstand.
+
+112
+00:12:43,520 --> 00:12:45,180
+Ich habe dort 15 K.
+
+113
+00:12:48,220 --> 00:12:53,080
+Widerstandsmarke PP340, auch Draht gewickelt, dieser Widerstand, aus Nichrom.
+
+114
+00:12:57,700 --> 00:13:01,480
+Weil alle anderen Widerstände hier nur eine Weile arbeiten und ausfallen.
+
+115
+00:13:04,720 --> 00:13:10,620
+Obwohl die Ströme klein sind, lässt die Zuverlässigkeit anderer Variabler Widerstände viel zu wünschen übrig.
+
+116
+00:13:12,420 --> 00:13:15,680
+Und der Hauptvorwiderstand beträgt 2,2 M.
+
+117
+00:13:17,300 --> 00:13:22,100
+Solch ein Teile erlaubt uns, den Spannungspunkt am Ausgang qualitativ zu verfolgen.
+
+118
+00:13:24,100 --> 00:13:32,160
+Du kannst auch bemerken, dass parallel zum 2,2 M noch ein Widerstand von 2,2 M angeschlossen ist, nur über einen Schalter.
+
+119
+00:13:33,040 --> 00:13:40,380
+Beim Schließen dieses Schalters fällt der Wert und der Bereich des Variablen Ausgangsspannungspunkts am Netzteil verschiebt sich zur unteren Seite.
+
+120
+00:13:44,820 --> 00:13:52,700
+In meinem Fall ist die Regelung bei geschlossenem Schalter von 100 bis 500 Volt und bei offenem von 300 bis 1050 Volt.
+
+121
+00:13:55,280 --> 00:14:01,960
+Du kannst beliebige Werte für die gewünschte Spannung deines Aufbaus hier wählen, aber du musst diese Ketten in der Praxis auswählen.
+
+122
+00:14:04,100 --> 00:14:07,940
+Und jetzt halten wir bei der Versorgungskette der gesamten Schaltung an.
+
+123
+00:14:09,800 --> 00:14:13,340
+Die Versorgungskette beginnt mit einer Batterie, abnehmbaren Klemmen.
+
+124
+00:14:15,780 --> 00:14:23,280
+Dann, nach dem Blockschema, das ich früher gezeigt habe, haben wir am Eingang ein 12V40A Relais mit Diode.
+
+125
+00:14:24,540 --> 00:14:30,180
+Diese Diode bewirkt, dass das Relais nur bei richtiger Polarität des Batterieanschlusses auslöst.
+
+126
+00:14:31,560 --> 00:14:36,300
+Damit verhindern wir, dass das System bei einer Spannungseingangsumpolung ausfällt.
+
+127
+00:14:38,900 --> 00:14:42,960
+Eine Art Schutz, der die gesamte nachfolgende Schaltung nicht zerstören lässt.
+
+128
+00:14:45,200 --> 00:14:52,580
+Weiter haben wir am Eingang Elektrolytkondensatoren von 4700F25V in Reihe geschaltet, zwei Stück.
+
+129
+00:14:54,040 --> 00:14:55,200
+Dann kommt die Drossel.
+
+130
+00:14:56,840 --> 00:15:02,260
+Danach auch zwei Elektrolytkondensatoren von 4700F25V.
+
+131
+00:15:04,140 --> 00:15:09,140
+Und parallel zu ihnen ist ein 2-2F400V Kondensator.
+
+132
+00:15:11,020 --> 00:15:15,680
+So sieht der 2-2F400V Kondensator aus.
+
+133
+00:15:18,200 --> 00:15:19,220
+Ziemlich massiv.
+
+134
+00:15:20,340 --> 00:15:25,660
+Ich rate, an diesem Folienkondensator nicht zu sparen, ihn nicht für niedrigere Spannung zu nehmen.
+
+135
+00:15:27,080 --> 00:15:31,060
+Die Spannung dieses Kondensators bestimmt letztendlich seine Abmessungen.
+
+136
+00:15:32,660 --> 00:15:38,920
+Und diese Kapazität nimmt an der Arbeit des Leistungsmoduls teil, beim primären Spannungsabbau an den Schaltern.
+
+137
+00:15:42,070 --> 00:15:45,090
+Das heißt, sie beschleunigt die Arbeit in Impulsen des Leistungsmoduls.
+
+138
+00:15:47,710 --> 00:15:53,470
+Auch diese Kondensatoren, in Reihe geschaltete Elektrolyte, das ist auch keine zufällige Lösung.
+
+139
+00:15:54,930 --> 00:15:59,390
+Weil diese Kondensatoren bei Spitzenbelastungen sich während der Arbeit erwärmen.
+
+140
+00:16:00,750 --> 00:16:05,250
+Und wir müssen die Last, die auf sie fällt, auf vier Kondensatoren verteilen.
+
+141
+00:16:06,190 --> 00:16:08,730
+Die Filterdrossel nimmt auch an dieser Arbeit teil.
+
+142
+00:16:09,650 --> 00:16:18,130
+Und wenn wir uns die Schaltung anschauen, dann ist der DC-DC-Wandler, der letztendlich die gesamte Schaltung versorgt, auf unserer Seite angeschlossen.
+
+143
+00:16:19,750 --> 00:16:22,210
+Versorgung am Plus wird vor der Drossel zugeführt.
+
+144
+00:16:24,410 --> 00:16:26,820
+Die Drossel ist ein Filter von der Arbeit des Leistungsmoduls.
+
+145
+00:16:28,870 --> 00:16:29,890
+Siehe Punkte A und B.
+
+146
+00:16:31,890 --> 00:16:36,070
+Und das sind die Punkte, an denen A und B an das Leistungsmodul geliefert werden.
+
+147
+00:16:37,950 --> 00:16:40,210
+In Hardware sieht das wie folgt aus.
+
+148
+00:16:42,770 --> 00:16:43,990
+Jetzt betrachten wir.
+
+149
+00:16:45,930 --> 00:16:48,290
+Alles ist schon fertig und verpackt.
+
+150
+00:16:49,870 --> 00:16:51,910
+Hier am Eingang haben wir das Relais.
+
+151
+00:16:53,970 --> 00:16:57,750
+Als nächstes kommt zu uns das Kabel, das vom Relais auf Plus kommt.
+
+152
+00:16:59,730 --> 00:17:02,070
+Hier sind sie, Kondensatoren in Reihe.
+
+153
+00:17:03,870 --> 00:17:04,450
+Zwei Stück.
+
+154
+00:17:06,630 --> 00:17:08,590
+Als nächstes kommt die Drossel.
+
+155
+00:17:10,250 --> 00:17:12,890
+Und zwei weitere Elektrolyt-Kondensatoren.
+
+156
+00:17:14,410 --> 00:17:17,850
+Und weiter parallel steht der 2-2-F-Kondensator.
+
+157
+00:17:20,650 --> 00:17:23,110
+Hier sind zwei Metallteile mit M3-Gewinde.
+
+158
+00:17:25,190 --> 00:17:26,850
+Hier habe ich Muttern angelötet.
+
+159
+00:17:29,290 --> 00:17:35,330
+Damit, wenn ich diesen Aufbau zusammenbaue, siehe Kontakte in Form von Gabeln.
+
+160
+00:17:37,390 --> 00:17:40,270
+Sie senken sich ab und greifen in diese Kontaktflächen ein.
+
+161
+00:17:42,670 --> 00:17:46,230
+Und wenn der Deckel geschlossen wird, ziehen sich diese Schrauben fest.
+
+162
+00:17:47,610 --> 00:17:50,110
+So wird ein qualitativer Kontakt hergestellt.
+
+163
+00:17:52,590 --> 00:17:53,950
+Bei dieser Drossel.
+
+164
+00:17:56,490 --> 00:17:59,130
+Seine Kernabmessungen sind in der Zeichnung gezeigt.
+
+165
+00:18:01,410 --> 00:18:02,950
+Hier ist er, dieser Kern.
+
+166
+00:18:03,750 --> 00:18:05,870
+Ich habe ihn als F im Kreis markiert.
+
+167
+00:18:07,450 --> 00:18:09,150
+Und hier F mit Pfeil zeigt darauf.
+
+168
+00:18:11,810 --> 00:18:15,390
+Kernabmessungen sind 28,5 mm in der Länge.
+
+169
+00:18:16,650 --> 00:18:18,350
+13 mm innen Durchmesser.
+
+170
+00:18:20,510 --> 00:18:22,750
+Und Wandbreite 6,5 mm.
+
+171
+00:18:24,370 --> 00:18:26,570
+Außen sind es 26 mm.
+
+172
+00:18:28,010 --> 00:18:29,050
+Solch ein Fass.
+
+173
+00:18:31,410 --> 00:18:32,750
+Ich muss natürlich andere verwenden.
+
+174
+00:18:34,390 --> 00:18:40,230
+Einfach für die Abmessungen der Box, die ich ursprünglich gewählt habe, passten genau diese Kerne zu mir.
+
+175
+00:18:42,010 --> 00:18:44,030
+Die große Abmessungen in der Länge haben.
+
+176
+00:18:49,580 --> 00:18:50,960
+Was siehst du hier sonst noch?
+
+177
+00:18:53,520 --> 00:18:54,740
+Hier ist dieser Schalter.
+
+178
+00:18:57,380 --> 00:18:59,220
+Der die Bereichsregelung macht.
+
+179
+00:19:00,380 --> 00:19:02,580
+Das ist der Widerstandschalter.
+
+180
+00:19:04,220 --> 00:19:07,620
+Der den Auslösepunkt des Spannungsschutzes einstellt.
+
+181
+00:19:09,800 --> 00:19:11,760
+Hier ist er dargestellt.
+
+182
+00:19:13,020 --> 00:19:15,700
+Das ist der Widerstand der Stromschutzregelung.
+
+183
+00:19:17,560 --> 00:19:19,660
+Und das ist ein variabler Widerstand.
+
+184
+00:19:21,040 --> 00:19:23,880
+Das ist die gleichmäßige Regelung der Ausgangsspannung.
+
+185
+00:19:26,280 --> 00:19:28,640
+Effektiv regelt es die Dauer der Steuerimpulse.
+
+186
+00:19:29,840 --> 00:19:35,860
+Und dann stellt der Chip selbst, basierend auf allen Einstellungen, die endgültige Dauer des Steuerimpulses ein.
+
+187
+00:19:38,940 --> 00:19:39,520
+Weiter.
+
+188
+00:19:41,560 --> 00:19:42,600
+Die Diodenbrücke.
+
+189
+00:19:44,260 --> 00:19:49,080
+Ich habe hier markiert, dass sie aus schnellen Dioden der Marke Moor 860 besteht.
+
+190
+00:19:51,180 --> 00:19:56,120
+Und grafisch gezeichnet, dass im Brückenarm zwei Dioden in Reihe geschaltet sind.
+
+191
+00:19:56,860 --> 00:20:01,200
+Da die Diode für eine maximale Spannung von 600 Volt ausgelegt ist.
+
+192
+00:20:02,360 --> 00:20:05,760
+Und unser Netzteil hat eine Spannung über 1000 Volt.
+
+193
+00:20:06,880 --> 00:20:09,440
+Also sollten wir sie in zwei Stück anschließen.
+
+194
+00:20:11,300 --> 00:20:14,080
+Natürlich kannst du auch Dioden anderer Marken hier finden.
+
+195
+00:20:15,020 --> 00:20:16,740
+Aber sie müssen schnell sein.
+
+196
+00:20:19,400 --> 00:20:23,620
+Jetzt können wir auch das System des Ausgangsfilters des Netzteils betrachten.
+
+197
+00:20:26,740 --> 00:20:34,400
+Nach der Diodenbrücke haben wir nichtpolare Kondensatoren der Bewertung 4,8 F in Reihe bei 630 Volt angeschlossen.
+
+198
+00:20:36,340 --> 00:20:37,780
+Das sind Folienkondensatoren.
+
+199
+00:20:40,040 --> 00:20:43,120
+Und nach ihnen ist die Drossel am Ausgangs- und am Minus.
+
+200
+00:20:44,820 --> 00:20:48,000
+Als nächstes dieselben nichtpolaren Kondensatoren.
+
+201
+00:20:49,640 --> 00:20:55,800
+Und parallel zu ihnen ein kleiner Filterkondensator von 0,15 F bei 2000 Volt.
+
+202
+00:20:57,640 --> 00:20:59,120
+In Hardware sieht das so aus.
+
+203
+00:21:02,080 --> 00:21:04,100
+Hier sind die ersten beiden Kondensatoren.
+
+204
+00:21:05,720 --> 00:21:07,480
+Dann der Ausgang der Drossel.
+
+205
+00:21:09,620 --> 00:21:11,800
+Und die nächsten zwei Kondensatoren.
+
+206
+00:21:13,120 --> 00:21:15,540
+Hier parallel der 2KV Kondensator.
+
+207
+00:21:16,700 --> 00:21:19,340
+Und wir haben Ausgangs- und Minus.
+
+208
+00:21:21,260 --> 00:21:25,980
+Solch ein System erlaubte uns, ein qualitatives Signal vom Netzteil zu liefern.
+
+209
+00:21:27,200 --> 00:21:33,200
+Und während der Arbeit, auch bei großen Lasten, betragen die Welligkeiten dort 1,5 bis 2 Volt.
+
+210
+00:21:34,420 --> 00:21:37,120
+Bei einer Lastspannung von 200 Volt.
+
+211
+00:21:38,520 --> 00:21:43,820
+Das heißt, das Oszillogramm kommt ziemlich sauber heraus, wenn man durch ein Gerät beobachtet.
+
+212
+00:21:46,260 --> 00:21:51,320
+Und außerdem sind diese Drosseln auch für die korrekte Arbeit des Spannungsschutzes verantwortlich.
+
+213
+00:21:54,700 --> 00:21:59,200
+Das heißt, unabhängig davon, was wir hier am Ausgang anschließen, welche Geräte.
+
+214
+00:22:01,260 --> 00:22:05,040
+Du weißt, dieser Block wird bei mir in spezifischen Geräten arbeiten.
+
+215
+00:22:07,220 --> 00:22:11,040
+Verbunden mit großen hohen Frequenzen, statischen Potentialen.
+
+216
+00:22:13,400 --> 00:22:16,120
+Alles verbunden mit unserer spezifischen Arbeitsform.
+
+217
+00:22:17,680 --> 00:22:20,860
+Und so sollten wir diese Ketten vor Einflüssen am Ausgang schützen.
+
+218
+00:22:23,040 --> 00:22:26,120
+Die Drossel hier besteht aus 10 Windungen, Millimeter Draht.
+
+219
+00:22:29,700 --> 00:22:32,120
+Die verwendeten Ringabmessungen sind gezeigt.
+
+220
+00:22:33,240 --> 00:22:37,560
+Und hier habe ich angegeben, dass zwei Ringe in jeder Drossel verwendet werden.
+
+221
+00:22:39,520 --> 00:22:40,580
+Hier sind sie, diese Ringe.
+
+222
+00:22:41,740 --> 00:22:43,920
+Physikalisch habe ich sie übereinander gestapelt.
+
+223
+00:22:45,320 --> 00:22:46,640
+Eine Art Fass kam heraus.
+
+224
+00:22:48,160 --> 00:22:50,360
+Und ich habe es mit Kreppband umwickelt.
+
+225
+00:22:52,600 --> 00:22:55,260
+Danach wurde PVC-isolierter Draht aufgewickelt.
+
+226
+00:22:56,560 --> 00:22:58,060
+Hier sind sie, diese Drosseln.
+
+227
+00:22:59,020 --> 00:23:03,000
+Und auch sind sie mit Fluorkunststoffzusatzisolierung umwickelt.
+
+228
+00:23:04,360 --> 00:23:07,740
+Insgesamt habe ich die Hauptnuancen am Schaltplan erklärt.
+
+229
+00:23:10,020 --> 00:23:14,300
+Abmessungen des Kerns des Leistungsimpulstransformators sind ebenfalls angegeben.
+
+230
+00:23:16,300 --> 00:23:21,620
+Du kannst Verriet mit kleineren Abmessungen und anderen Marken, anderen Permeabilitäten verwenden.
+
+231
+00:23:22,580 --> 00:23:23,860
+Das ist nicht prinzipiell.
+
+232
+00:23:24,960 --> 00:23:28,580
+Nur die Frequenz des Taktgebers ändert sich unter jedem Verriet.
+
+233
+00:23:29,940 --> 00:23:30,740
+Du musst sie auswählen.
+
+234
+00:23:31,620 --> 00:23:35,120
+Ich habe das Prinzip in früheren Videos zum Labornetzteil gezeigt.
+
+235
+00:23:37,120 --> 00:23:39,440
+Jetzt noch ein paar Nuancen in Hardware.
+
+236
+00:23:40,940 --> 00:23:44,940
+Hier wenn du es genauso baust, wie ich es gemacht habe, das Leistungsmodul.
+
+237
+00:23:46,320 --> 00:23:48,120
+Und die Steuerplatine darüber.
+
+238
+00:23:49,100 --> 00:23:57,520
+Dann werden in solch einem Aufbau die Drähte, die von den Schaltern zur Primärwicklung gehen, unweigerlich unter der Platine und dem Masterchip vorbeilaufen.
+
+239
+00:23:59,360 --> 00:24:04,560
+In diesem Fall musst du unter der gesamten Platinenfläche eine Abschirmung aus Aluminiumfolie machen.
+
+240
+00:24:06,540 --> 00:24:09,920
+In diesem Fall habe ich die Folie auf Pappe auf der Rückseite geklebt.
+
+241
+00:24:11,140 --> 00:24:17,400
+Das verhindert Einkopplungen von der Primärwicklung auf den Master UC3825N Chip.
+
+242
+00:24:19,420 --> 00:24:24,920
+Einkopplungen passieren an den Pins 6 und 7, wo sich der frequenzbestimmende Kondensator befindet.
+
+243
+00:24:28,200 --> 00:24:29,160
+Noch eine Bedingung.
+
+244
+00:24:30,660 --> 00:24:39,400
+Wenn du solch eine Schaltung mit galvanisch getrennten unabhängigen Stromquellen hast, dann ist die Aluminiumabschirmung nicht mit der gemeinsamen Masse des Masterchips verbunden.
+
+245
+00:24:42,620 --> 00:24:51,900
+Weiter solltest du sicherstellen, dass kein zufälliger Kontakt zwischen offenen Metalloberflächen und Leistungsteilen besteht, durch die die Eingangsspannung und der Ausgang gehen.
+
+246
+00:24:59,520 --> 00:25:02,480
+Dafür sollten wir auch eine dielektrische Dichtung machen.
+
+247
+00:25:06,400 --> 00:25:11,400
+Ich habe sie aus geformtem Kunststoff gemacht, um auf diese Weise zufälligen Kontakt zu verhindern.
+
+248
+00:25:16,780 --> 00:25:19,100
+In diesem Fall befindet sich das alles hier.
+
+249
+00:25:21,900 --> 00:25:23,840
+Mit diesem Video beenden wir.
+
+250
+00:25:25,160 --> 00:25:27,000
+Jetzt gehen wir zur Montage über.
+
+251
+00:25:30,480 --> 00:25:41,560
+Alles Gute euch allen, erfolgreiche Experimente und das nächste Video zu diesem System wird schon darüber sein, wie ich es unter Last teste, das Ausgangsoszillogramm, über die Regelungsmöglichkeiten.
+

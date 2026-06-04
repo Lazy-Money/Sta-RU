@@ -1,0 +1,1080 @@
+1
+00:00:00,000 --> 00:00:01,040
+Hallo zusammen.
+
+2
+00:00:02,960 --> 00:00:13,360
+Heute möchte ich dir einen wunderbaren IC vorstellen, der sich verbreitet hat und auf dem du galvanisch getrennte Wandler mit Flyback-Topologie aufbauen kannst, also...
+
+3
+00:00:13,360 --> 00:00:14,600
+einen Sperrwandler.
+
+4
+00:00:16,580 --> 00:00:21,720
+Mit diesem IC bin ich zufällig bekannt geworden, bei einem Besuch bei einem Internetbekannten.
+
+5
+00:00:23,760 --> 00:00:28,100
+Und dort stießen wir auf das Problem, dass dieser Wandler am Ausgang unterspannt war.
+
+6
+00:00:31,000 --> 00:00:37,420
+Es vor Ort zu beheben war unrealistisch, es gab keine notwendige Ausrüstung und keine Erfahrung mit diesem IC.
+
+7
+00:00:38,660 --> 00:00:44,240
+Und nach der Rückkehr nach Hause beschloss ich, ihn zu meistern, da dieser IC viel Potenzial hat.
+
+8
+00:00:46,060 --> 00:00:48,320
+Was lässt sich zu diesem IC sagen?
+
+9
+00:00:50,160 --> 00:00:52,540
+Er wird in verschiedenen Gehäusen hergestellt.
+
+10
+00:00:54,580 --> 00:00:56,940
+Ich arbeite lieber in DIP-Gehäusen.
+
+11
+00:00:58,200 --> 00:01:00,640
+Er ist klein hier, achtpolig.
+
+12
+00:01:02,280 --> 00:01:05,240
+Es gibt auch eine SMD-Version im gleichen Gehäuse-Typ.
+
+13
+00:01:06,440 --> 00:01:13,980
+Die Hauptelemente der Schaltung sind der Controller-IC selbst, der Leistungsschalter, der Wandlerkern und eine Hochgeschwindigkeitsschottkidiode.
+
+14
+00:01:19,870 --> 00:01:25,910
+Ich möchte anmerken, dass dieses Teil in diesem Wandler kein Transformator, sondern eine Art Drossel ist.
+
+15
+00:01:28,170 --> 00:01:33,230
+Beim Schalten der Primärwicklung der Drossel mit dem Leistungsschalter geschieht ein scharfer Stoß.
+
+16
+00:01:37,100 --> 00:01:43,440
+Die Drossel speichert Energie im Kerneismagnetfeld und gibt sie dann in der Pause über die Sekundärwicklung an die Last ab.
+
+17
+00:01:47,920 --> 00:01:49,600
+Der IC hat zwei Rückführungen.
+
+18
+00:01:53,420 --> 00:01:58,120
+Erstens, Spannungsrückführung, implementiert über einen PC-817-Oktokoppler.
+
+19
+00:01:59,040 --> 00:02:01,300
+Und zweitens, Stromrückführung.
+
+20
+00:02:04,240 --> 00:02:07,940
+Sie wird über einen Widerstand im Source-Pfad des FET realisiert.
+
+21
+00:02:11,220 --> 00:02:17,420
+Durch Auswählen des Widerstandswerts regeln wir letztlich den Strom, der durch den Leistungsschalter fließt.
+
+22
+00:02:18,920 --> 00:02:23,600
+Nicht durch Begrenzung seines Widerstands, sondern durch die Rückführung, die zu Pin 3 geht.
+
+23
+00:02:25,100 --> 00:02:31,320
+Und der IC, der den Spannungsabfall an diesem Widerstand verfolgt, ändert die Pulsdauer am FET-Gate.
+
+24
+00:02:36,530 --> 00:02:40,470
+Als nächstes schauen wir uns die Teile an, die zum Bau dieses Wandlers passen.
+
+25
+00:02:42,970 --> 00:02:45,070
+Den IC haben wir abgehandelt.
+
+26
+00:02:46,630 --> 00:02:49,730
+Der PC-817-Oktokoppler sieht so aus.
+
+27
+00:02:52,070 --> 00:02:58,970
+Übrigens, für die, die nicht wissen, wie man Pins auf ICs oder Oktokopplern zählt, es gibt einen Punkt auf dem Gehäuse.
+
+28
+00:03:00,490 --> 00:03:02,090
+Das ist Pin 1 des ICs.
+
+29
+00:03:03,150 --> 00:03:05,350
+Ich habe den Punkt neben Pin 1 markiert.
+
+30
+00:03:07,190 --> 00:03:09,850
+Und die Oktokoppler-Pins entsprechen der Zeichnung.
+
+31
+00:03:12,070 --> 00:03:14,470
+Vollständige Pinübereinstimmung, genauso wie am IC.
+
+32
+00:03:15,650 --> 00:03:19,830
+Die Pins werden vom Punkt auf dem Gehäuse gegen den Uhrzeigersinn gezählt.
+
+33
+00:03:21,610 --> 00:03:25,530
+Über die Leistungsschalter, die du in dieser Schaltung verwenden kannst.
+
+34
+00:03:27,450 --> 00:03:34,170
+Da unser Versorgungsnennwert bis 18 V geht, arbeitet der Schalterimpulsbetrieb und es können Spannungsspitzen auftreten.
+
+35
+00:03:38,550 --> 00:03:45,150
+Und damit diese Spannungsspitze den Transistor nicht durchschlägt, müssen wir ihn mit etwas Spannungsreserve wellen, ab 60 V.
+
+36
+00:03:45,990 --> 00:03:48,690
+In diesem Fall habe ich den Namen hier genannt.
+
+37
+00:03:49,030 --> 00:03:53,490
+Dieser Transistor FR120N im Gehäuse für SN-Demontage.
+
+38
+00:03:57,190 --> 00:04:00,430
+Und einen IRF540 in diesem Gehäusetyp.
+
+39
+00:04:02,030 --> 00:04:04,950
+Diese Transistoren sind für 100 V spezifiziert.
+
+40
+00:04:05,730 --> 00:04:07,230
+Was uns gut passt.
+
+41
+00:04:08,630 --> 00:04:13,110
+Und außerdem haben sie ein ziemlich leichtes Gate mit minimaler Sättigungskapazität.
+
+42
+00:04:15,270 --> 00:04:17,210
+Als nächstes, die Diode.
+
+43
+00:04:19,330 --> 00:04:24,910
+Wenn du planst, ICS aus diesem Wandler zu versorgen, funktioniert diese Diode in diesem Gehäuse.
+
+44
+00:04:27,070 --> 00:04:30,730
+Das ist eine 1N5819, 1A-Diode.
+
+45
+00:04:32,650 --> 00:04:41,070
+Und wenn du ernstere Lasten an diesen Wandler anschließen wirst, empfehle ich eine Diode im größeren 1N5822, Gehäuse.
+
+46
+00:04:43,410 --> 00:04:44,590
+Das sind drei A.
+
+47
+00:04:46,430 --> 00:04:52,450
+Diese Diode reicht mehr als aus für die Versorgung einer 1015W-Last, sie schafft das mühelos.
+
+48
+00:04:55,680 --> 00:05:05,000
+Jetzt muss ich erwähnen, dass der Versorgungspin des ICS, hier, Pin 7, an dem Plusversorgung angelegt wird, direkt mit den Transistoren verbunden ist, die
+
+49
+00:05:08,300 --> 00:05:10,400
+das Gateöffnen des Schalters übernehmen.
+
+50
+00:05:11,300 --> 00:05:16,180
+Das heißt, die an Pin 7 angelegte Versorgungsspannung liegt auch an Pin 6 an.
+
+51
+00:05:18,080 --> 00:05:20,640
+Also kannst du hier 20V nicht überschreiten.
+
+52
+00:05:22,920 --> 00:05:24,880
+Das ist die Grenze durch Gatedurchbruch.
+
+53
+00:05:26,080 --> 00:05:34,860
+Wenn du beim Bau brauchst, dass diese Schaltung mit einer Spannung über 18V am Eingang arbeitet, musst du entweder einen zusätzlichen Vorwandler oder einen Regler
+
+54
+00:05:40,680 --> 00:05:42,900
+an der Versorgung zu Pin 7 setzen.
+
+55
+00:05:43,800 --> 00:05:50,280
+Wenn der Wert passt, sollte der Regler 18V sein, also nicht mehr als 18V an Pin 7 anlegen.
+
+56
+00:05:52,560 --> 00:05:56,240
+Und dann kannst du diesen IC mit höherem Versorgungsnennwert verwenden.
+
+57
+00:05:57,820 --> 00:06:01,800
+Und natürlich muss die Windungszahl auf deinen Versorgungsnennwert abgestimmt werden.
+
+58
+00:06:03,720 --> 00:06:06,900
+Jetzt zum wichtigsten Teil dieses Wandlers, dem Kern.
+
+59
+00:06:08,300 --> 00:06:14,400
+Der Kern in dieser Schaltung wird unipolaren Pulsen ausgesetzt, die ihn leicht in Sättigung bringen können.
+
+60
+00:06:16,280 --> 00:06:20,500
+Daher gibt es Mindestabmessungen des Kerns, die in dieser Schaltung funktionieren.
+
+61
+00:06:22,220 --> 00:06:27,740
+Ich habe das in der Praxis ausgewählt und die Kernabmessungen sind auf dieser Zeichnung gezeigt.
+
+62
+00:06:29,420 --> 00:06:38,000
+Die Länge beträgt 15,5 mm, Innenradius 18,5 mm, Außenradius 29,7 mm.
+
+63
+00:06:39,820 --> 00:06:41,920
+Die Wandstärke ist 5,6 mm.
+
+64
+00:06:43,300 --> 00:06:45,040
+Du kannst auch andere Kerne wählen.
+
+65
+00:06:47,400 --> 00:06:52,500
+Im Prinzip sind Kerne mit größeren Abmessungen willkommen, mit kleineren arbeitet der Wandler schlechter.
+
+66
+00:06:53,580 --> 00:06:57,120
+Du kannst auch Verrietschalenkerne entsprechender Größe verwenden.
+
+67
+00:06:59,200 --> 00:07:00,780
+Jetzt zur Primärwicklung.
+
+68
+00:07:02,240 --> 00:07:06,720
+Die Windungszahl der Primärwicklung wird nach der Versorgungsspannungsnennwert gewählt.
+
+69
+00:07:07,980 --> 00:07:11,440
+In diesem Fall wird die angelegte Spannung nicht höher als 18 V sein.
+
+70
+00:07:13,040 --> 00:07:15,840
+Praktisch wird sie ständig von 12 V aus arbeiten.
+
+71
+00:07:17,640 --> 00:07:20,840
+Bei diesem Kern war die optimale Windungszahl von 7 bis 11.
+
+72
+00:07:23,100 --> 00:07:25,040
+Mittelwert 8 bis 9 Windungen.
+
+73
+00:07:26,960 --> 00:07:32,620
+Wenn die Windungszahl zu groß ist, geht der Kern, selbst bei diesen Abmessungen, in Sättigung.
+
+74
+00:07:34,880 --> 00:07:44,400
+Und wenn du die Windungszahl reduzierst, zum Beispiel auf etwa 4 bei diesem Kern, löst die Stromrückführung zu früh aus, und der Wandler beginnt am Ausgang zu unterspannen.
+
+75
+00:07:46,720 --> 00:07:48,820
+Du musst also den goldenen Mittelweg finden.
+
+76
+00:07:50,420 --> 00:07:55,580
+Jeder macht das in der Praxis, indem er die Windungszahl für seinen eigenen Kern auswählt.
+
+77
+00:07:56,860 --> 00:07:58,700
+Das ist eine Eigenheit dieser Schaltungen.
+
+78
+00:08:02,040 --> 00:08:06,900
+Und alles weitere hängt von der Sekundärwicklung ab, von der Spannung, die wir bekommen wollen.
+
+79
+00:08:08,260 --> 00:08:12,360
+Das heißt, wenn du 5 V brauchst, dann ist die Windungszahl hier etwa 4.
+
+80
+00:08:14,060 --> 00:08:20,740
+Und wenn du, wie ich in diesem Fall, einen Versorgungsnennwert um die 16 V brauchst, sind das 12 Windungen.
+
+81
+00:08:23,860 --> 00:08:25,420
+Als nächstes kommt die Rückführung.
+
+82
+00:08:27,380 --> 00:08:34,460
+Ich habe angemerkt, dass der Ausgang mit Spannungsrückführung am energieintensivsten Abschnitt der Verbraucherkette anschließt.
+
+83
+00:08:35,960 --> 00:08:40,980
+Das heißt, wenn du die Schaltung ohne diesen Teil zusammenbaust, ist bei dir alles in Ordnung.
+
+84
+00:08:44,630 --> 00:08:47,050
+Die Rückführung arbeitet direkt an der Last.
+
+85
+00:08:47,970 --> 00:08:53,150
+Aber wenn du N-Sekundärwicklungen auf diesem Kern machen musst, dann musst du diese Regel befolgen.
+
+86
+00:08:57,280 --> 00:09:04,940
+Denn das Anschließen einer leistungsstärkeren Last an einen der Anschlüsse, an dem keine Rückführung erfolgt, führt zu einem Spannungsabfall an dieser.
+
+87
+00:09:06,260 --> 00:09:10,300
+Da der Einfluss auf die Rückführung über die Sekundärwicklung indirekt erfolgt.
+
+88
+00:09:12,060 --> 00:09:16,000
+Also wird der leistungsstärkste Verbraucher an diesen Punkt angeschlossen.
+
+89
+00:09:18,580 --> 00:09:22,140
+So wird auch an anderen Wicklungen stabile Spannung erreicht.
+
+90
+00:09:23,740 --> 00:09:29,240
+Du siehst auch hier, ich habe am Ausgang eine 18 V 10er Diode in die Schaltung eingeführt.
+
+91
+00:09:30,080 --> 00:09:39,280
+Wenn wir einen Verbraucher an eine der Wicklungen dieses Wandlers anschließen und der PWM-Controller beginnt, sich an diese Last anzupassen, ändert er die Pulsdauer.
+
+92
+00:09:43,250 --> 00:09:52,810
+Und bei Pulsänderung in die größere Richtung, was normalerweise beim Anschließen einer Last passiert, wächst die Spannung an den Sekundärwicklungen automatisch durch induktive Kopplung.
+
+93
+00:09:55,030 --> 00:10:01,550
+Und damit weiter unten in der Schaltung angeschlossene Elemente nicht durchschlagen, musst du hier eine 10er Diode einbauen.
+
+94
+00:10:02,770 --> 00:10:07,790
+In diesem Fall reicht eine 1 W 10er Diode, um diesen anwachsenden Potential zu bewältigen.
+
+95
+00:10:09,450 --> 00:10:16,150
+Bei diesen zwölf Windungswerten, mit einer 10 W Last hier, kann der Sprung bis zu 27 V betragen.
+
+96
+00:10:17,630 --> 00:10:21,510
+Und die 1 W 10er Diode bewältigt dieses Potential adäquat.
+
+97
+00:10:23,970 --> 00:10:25,450
+Vergiss diesen Punkt nicht.
+
+98
+00:10:27,690 --> 00:10:36,250
+Ich habe auch eine zusätzliche Drossel in die Schaltung eingebaut, das ist kein obligatorisches Systemelement, du kannst es weglassen, aber es ist ein Filter.
+
+99
+00:10:37,750 --> 00:10:42,830
+Wenn du Präzisionsgeräte wie ICS versorgen musst, die keine Versorgungsschwankungen vertragen.
+
+100
+00:10:46,100 --> 00:10:48,920
+Der Ausgangswert wird durch diese 10er Diode festgelegt.
+
+101
+00:10:50,780 --> 00:10:57,900
+Durch ändern der Durchbruchspannung, durch Wellen einer anderen 10er Diode, regeln wir die Ausgangsspannung des gesamten Wandlers.
+
+102
+00:11:00,000 --> 00:11:09,360
+Wenn ich hier eine 15 V 10er Diode gewählt habe, dann hält der Ausgang, berücksichtigt man, dass der Optokoppler etwas Spannung zum Auslösen braucht, etwa 16 V.
+
+103
+00:11:11,760 --> 00:11:19,460
+Wenn du 5 V Versorgung brauchst, dann setze hier eine 4,5 V 10er Diode, und du bekommst deine 5 V Versorgung.
+
+104
+00:11:22,020 --> 00:11:25,900
+Dabei solltest du die Sekundärwicklungswindungszahl dieser Drossel reduzieren.
+
+105
+00:11:27,200 --> 00:11:31,320
+In diesem Fall verwende ich diese Schaltung zur Versorgung eines Brückenwechselrichters.
+
+106
+00:11:33,720 --> 00:11:38,060
+Ich brauchte eine unabhängige Versorgung, die zum Mastergenerator geht.
+
+107
+00:11:39,800 --> 00:11:45,260
+Und vier separate galvanisch getrennte Versorgungen, die zur Steuerung von vier Brückenschaltern gehen.
+
+108
+00:11:48,300 --> 00:11:52,260
+Und deshalb habe ich mich für einen 16 V Versorgungsnennwert entschieden.
+
+109
+00:11:53,880 --> 00:12:08,840
+Und wenn du eine Schaltung baust, die andere Versorgungsnennwerte braucht, sagen wir 5 V, 9 V, änderst du die Sekundärwindungszahl und änderst den Ausgangs 10er Wert, der die Spannung an deiner Last
+
+110
+00:12:08,840 --> 00:12:09,580
+stabil hält.
+
+111
+00:12:12,140 --> 00:12:15,140
+Ich sollte auch ein paar Worte zu den Montageregeln sagen.
+
+112
+00:12:16,620 --> 00:12:22,380
+Da das ein Hochfrequenzsystem ist, beträgt die Schaltfrequenz hier etwa 160 kHz.
+
+113
+00:12:24,060 --> 00:12:35,780
+Bei diesen Werten an Pin 4, dieser frequenzbestimmende Kondensator von 1000 pF und ein Widerstand, der die notwendige Versorgungsspannung am Taktgenerator des ICS erzeugt.
+
+114
+00:12:37,500 --> 00:12:44,960
+Du solltest die Montage sorgfältig angehen, keine langen Drähte und großen Abstände zwischen Bauteilen auf der Platine zulassen.
+
+115
+00:12:45,800 --> 00:12:51,020
+Das kann zu unerwünschten Hochfrequenzeinstreuungen und unangemessenem Wandlerbetrieb führen.
+
+116
+00:12:53,320 --> 00:12:56,960
+In diesem Fall habe ich die Schaltung auf dieser Lochrasterplatine aufgebaut.
+
+117
+00:12:58,240 --> 00:13:02,680
+Eine kleine Lochrasterplatine wie diese reicht, um die ganze Einheit zu realisieren.
+
+118
+00:13:08,480 --> 00:13:09,900
+Lass mich ihre Größe zeigen.
+
+119
+00:13:11,940 --> 00:13:14,180
+Sie ist 6 cm mal 4 cm.
+
+120
+00:13:15,640 --> 00:13:19,220
+Praktisch die Hälfte der Platine wird von dieser Einheit eingenommen.
+
+121
+00:13:20,740 --> 00:13:23,520
+Die Abmessungen sind 11 Montagelöcher mal 14.
+
+122
+00:13:25,440 --> 00:13:29,100
+Du kannst sehen, wie dicht der Aufbau ist, ohne lange Drähte.
+
+123
+00:13:32,600 --> 00:13:38,820
+Die 10er Diode, die den Ausgangsleistungsnennwert festlegt und der 10, vor Widerstand sind herausgeführt.
+
+124
+00:13:41,640 --> 00:13:47,660
+Dann eine Kette von Kondensatoren der 10er Dioden, die als 18V im Schaltplan dargestellt sind.
+
+125
+00:13:49,320 --> 00:13:55,420
+Und an diesem Punkt haben wir den Kern mit gewickeltem Draht, 5 Anschlüsse und einen schwarzen Draht der Primärwicklung.
+
+126
+00:13:59,470 --> 00:14:01,990
+Er wird in diesem Fall in dieser Position montiert.
+
+127
+00:14:06,480 --> 00:14:09,280
+Jetzt ein interessanter Punkt zur Wickelphasenlage.
+
+128
+00:14:11,880 --> 00:14:21,660
+Du siehst, die Punkte sind in entgegengesetzte Richtungen, das heißt, die Drähte müssen beim Wickeln von Primär- und Sekundärwicklung der Drossel in eine Richtung vertauscht werden.
+
+129
+00:14:22,800 --> 00:14:30,200
+Wenn du das nicht machst, dann verbraucht der Wandler bei Anschluss stark, und falsche Wicklungsverbindung zeigt sich durch Erwärmung dieser Diode.
+
+130
+00:14:32,800 --> 00:14:38,020
+Das ist fühlbar, wenn du sie mit dem Finger berührst, sie kann sich bis etwa 50 Grad erwärmen.
+
+131
+00:14:39,340 --> 00:14:49,340
+Bei Polaritätsänderung siehst du sofort einen angemessenen Anstieg der Ausgangsspannung, diese Diode ist kalt, und der Wandler schaltet in den Leerlaufsparmodus bei 0,02 A.
+
+132
+00:14:54,440 --> 00:14:57,640
+Jetzt siehst du das Datenblatt dieser IC-Reihe auf dem Monitor.
+
+133
+00:14:59,200 --> 00:15:00,180
+Hier sind ihre Namen.
+
+134
+00:15:02,420 --> 00:15:06,920
+Sie werden in verschiedenen Gehäuse-Typen hergestellt, 8-polig und 14-polig.
+
+135
+00:15:09,100 --> 00:15:14,700
+Das 14-polige Gehäuse entspricht dem NCV 3843 IC.
+
+136
+00:15:16,540 --> 00:15:18,680
+Die PIN-Belegung ist gezeigt.
+
+137
+00:15:21,520 --> 00:15:28,460
+Du kannst diesen IC verwenden, er ist ein vollständiger Analog des 8-poligen, was die Funktionalität betrifft.
+
+138
+00:15:29,960 --> 00:15:39,460
+Das einzige, was hier eingeführt ist, ist die separate Versorgung am IC selbst und separate Versorgung für die Transistoren, die den FET-Schalter ansteuern.
+
+139
+00:15:41,840 --> 00:15:50,540
+Gesamtversorgung an PIN 12 markiert VCC, und VC, PIN 11, an dem begrenzte Versorgung anliegt, die weiter das FET-Gate ansteuert.
+
+140
+00:15:53,380 --> 00:16:00,980
+Und du siehst, die PINs 2, 4, 6 und 13 des ICs sind als NC markiert, was bedeutet No Connect.
+
+141
+00:16:01,340 --> 00:16:04,360
+Diese PINs im 14-poligen Gehäuse sind nicht verbunden.
+
+142
+00:16:07,820 --> 00:16:08,440
+Verbunden.
+
+143
+00:16:10,320 --> 00:16:14,120
+Hier sind die IC-Eigenschaften, für die, die interessiert sind.
+
+144
+00:16:16,680 --> 00:16:19,820
+Und uns interessiert die Betriebslogik dieses Systems.
+
+145
+00:16:22,400 --> 00:16:24,500
+Sie ist in diesem Bild gezeigt.
+
+146
+00:16:26,340 --> 00:16:27,560
+Etwas heranzoomen.
+
+147
+00:16:30,430 --> 00:16:37,370
+Und du siehst, die wichtigsten Logikelemente dieses ICs, die Strom und Spannung verfolgen, sind Komparatoren.
+
+148
+00:16:40,570 --> 00:16:43,810
+Hier ist der erste Komparator, sein Ausgang, PIN 3.
+
+149
+00:16:45,350 --> 00:16:53,430
+Beachte, dass er hier die Spannung vergleicht, die 1V an der 10er-Diode bildet, mit dem Spannungsabfall an diesem Widerstand im Sourcepfad.
+
+150
+00:16:54,690 --> 00:16:58,830
+Und der zweite Komparator, unser Anschluss von der 10er-Diode zu PIN 2.
+
+151
+00:17:01,010 --> 00:17:07,150
+Er vergleicht die Spannung mit den 2,5V der Versorgung, die am Teile aus dem Widerstand gebildet werden.
+
+152
+00:17:08,010 --> 00:17:15,070
+So senden Sie das verarbeitete Signal an das nächste Logikelement des ICs und die Schaltersteuerung wird durchgeführt.
+
+153
+00:17:16,510 --> 00:17:20,010
+Die Schaltung ist recht einfach, aber sie arbeitet ohne Fehler.
+
+154
+00:17:21,310 --> 00:17:30,670
+Und mit der ins System eingeführten Stromrückführung wird Schutz realisiert, sodass dieser Wandler nicht zum Ausfall gebracht werden kann, selbst wenn er kurz-kurz geschlossen wird.
+
+155
+00:17:32,050 --> 00:17:34,630
+Er kann in diesem Modus lange arbeiten.
+
+156
+00:17:36,950 --> 00:17:39,550
+Und der Schalter bleibt funktionsfähig.
+
+157
+00:17:44,900 --> 00:17:47,040
+Was ist hier sonst interessant?
+
+158
+00:17:48,460 --> 00:17:50,000
+Oszillogramme werden gezeigt.
+
+159
+00:17:52,000 --> 00:17:54,440
+Verdrahtung für verschiedene Schaltungslösungen.
+
+160
+00:17:59,170 --> 00:18:03,050
+Leider alles auf Englisch, aber ich habe online noch eine Beschreibung gefunden.
+
+161
+00:18:10,170 --> 00:18:18,890
+Seite flakebakker01.doc Hier ist auch eine PDF-Datei, ich hinterlasse den Link in der Videobeschreibung.
+
+162
+00:18:22,230 --> 00:18:25,470
+Dieses PDF wurde von Dmitry Makasho aus Moskau geschrieben.
+
+163
+00:18:27,570 --> 00:18:32,470
+Er widmete diese Arbeit Sperrwandlern, speziell der Topologie unserer Schaltungen.
+
+164
+00:18:35,210 --> 00:18:46,230
+Hier ist die Beschreibung, du kannst dich genauer damit vertraut machen, wie es funktioniert, wie es aufgebaut ist, welche Elemente, wie Oszillogramme berechnet werden, verschiedene Verbindungen.
+
+165
+00:18:47,550 --> 00:18:48,830
+Sehr nützliches Material.
+
+166
+00:18:50,970 --> 00:18:53,490
+46 Seiten ausführliche Informationen.
+
+167
+00:18:55,310 --> 00:18:59,190
+Es werden auch Varianten der Verdrahtung für diesen IC angegeben.
+
+168
+00:19:01,390 --> 00:19:09,170
+Du kannst verschiedene interessante Geräte erstellen, einschließlich Aufwärts- oder Abwärtswandler, die aus dem Netz versorgt werden können.
+
+169
+00:19:15,130 --> 00:19:17,130
+Formeln zur Berechnung sind sichtbar.
+
+170
+00:19:18,450 --> 00:19:20,430
+Dieses Zeug macht mich natürlich traurig.
+
+171
+00:19:22,330 --> 00:19:29,650
+Für mich ist es einfacher, Experimente in der Praxis zu machen, aber für Leute mit mathematischer Denkweise wird das sehr nützlich sein.
+
+172
+00:19:31,610 --> 00:19:36,830
+Insbesondere zeigt der Autor, wie Primär- und Sekundärwicklungen in Kernen zu liegen sind.
+
+173
+00:19:38,050 --> 00:19:39,850
+Es werden auch Montageregeln gegeben.
+
+174
+00:19:48,940 --> 00:19:50,260
+Was ist sonst interessant?
+
+175
+00:19:51,900 --> 00:19:52,940
+Formeln, Formeln.
+
+176
+00:19:54,280 --> 00:19:55,340
+Das überspringen wir.
+
+177
+00:20:03,480 --> 00:20:07,580
+Hier untersucht er die Verbindungstopologie und dann die Berechnung der Schaltungswerte.
+
+178
+00:20:10,460 --> 00:20:13,700
+Werte, die hier funktionieren können, sind gezeigt.
+
+179
+00:20:16,120 --> 00:20:18,300
+Identifiziere sie und finde sie im Schaltplan.
+
+180
+00:20:22,180 --> 00:20:25,120
+Und auch Montageregeln für Hochfrequenz-Schaltungslösungen.
+
+181
+00:20:27,740 --> 00:20:29,560
+In diesem Fall SMD-Kondensatoren.
+
+182
+00:20:30,900 --> 00:20:33,620
+Was in welchem Fall reinkommt und wie es funktioniert.
+
+183
+00:20:35,440 --> 00:20:38,280
+Umfangreiche Arbeit von Dimitri, großen Dank an ihn.
+
+184
+00:20:40,740 --> 00:20:43,060
+Weiter zur Prüfung der IC-Funktion.
+
+185
+00:20:44,880 --> 00:20:48,780
+Alles auf einer Lochrasterplatine zusammengebaut, außer der Drossel.
+
+186
+00:20:52,560 --> 00:20:55,260
+Wir beginnen die IC-Prüfung mit dem Taktgenerator.
+
+187
+00:20:56,700 --> 00:20:57,380
+Ausgang 4.
+
+188
+00:20:58,800 --> 00:21:00,640
+Ich habe eine Sonde daran angeschlossen.
+
+189
+00:21:02,440 --> 00:21:05,340
+Und wir können dieses Oszillogramm am Gerät beobachten.
+
+190
+00:21:07,200 --> 00:21:09,120
+Amplitude beträgt etwa 3 V.
+
+191
+00:21:11,780 --> 00:21:13,600
+Frequenz 161 kHz.
+
+192
+00:21:15,720 --> 00:21:19,820
+Jetzt sollten wir prüfen, ob das Signal zur FET-Gateansteuerung geht.
+
+193
+00:21:22,800 --> 00:21:25,480
+Dazu die Sonde an Pin 6 des ICS anschließen.
+
+194
+00:21:27,660 --> 00:21:28,260
+Verbinden.
+
+195
+00:21:33,520 --> 00:21:36,880
+Stelle die Zeitablenkung so ein, dass es leicht zu untersuchen ist.
+
+196
+00:21:37,540 --> 00:21:42,820
+Und du siehst, die Pulsfrequenz entspricht ebenfalls etwa 160 kHz.
+
+197
+00:21:46,050 --> 00:21:49,550
+Und du siehst, wie der IC bei getrennten Rückführungen arbeitet.
+
+198
+00:21:50,910 --> 00:21:54,910
+In diesem Fall behandelt er das so, als wäre maximale Last angeschlossen.
+
+199
+00:21:56,230 --> 00:21:59,290
+Die Pulsdauer ist maximal, mit kleinen Pausen dazwischen.
+
+200
+00:22:02,090 --> 00:22:08,110
+Im Betrieb wird der IC die Pulsdauer ständig ändern und die Ausgangswerte für Spannung und Strom begrenzen.
+
+201
+00:22:15,840 --> 00:22:21,640
+Wir haben bestätigt, dass das Signal das Gate erreicht und wir können jetzt den Drosselkreis einschalten.
+
+202
+00:22:27,260 --> 00:22:33,900
+Wenn du Pin 3 nicht über den Widerstand verbindest, der ihn auf den gemeinsamen Leiter bringt, kommt am Gate kein Signal an.
+
+203
+00:22:39,460 --> 00:22:47,080
+Und der Verbrauch in diesem Modus, während der IC auf der Prüfeinrichtung ist, beträgt 12,1 V und 0,02 A.
+
+204
+00:22:53,190 --> 00:22:58,830
+Praktisch der gleiche Wert wird der Leerlaufstrom sein, wenn wir die Drossel ohne angeschlossene Lasten installiert haben.
+
+205
+00:23:01,310 --> 00:23:09,470
+Jetzt schau dir die Spannungswerte an der fertigen Platine an, die zu meinem Internetbekannten gehen wird, mit dem wir uns mit diesem IC beschäftigt haben.
+
+206
+00:23:11,010 --> 00:23:13,130
+Sie ist für drei Ausgänge gemacht.
+
+207
+00:23:15,650 --> 00:23:21,950
+Eine Versorgung für den Mastergenerator, an dem zwei Schalter mit unabhängiger Versorgung kommutiert werden sollen.
+
+208
+00:23:23,270 --> 00:23:32,090
+Wir legen also 12 V am Eingang an und sehen, dass die 10er Diode hier genau die 15 V ist, die in diesem Schaltplan für die Rückführung angegeben sind.
+
+209
+00:23:33,910 --> 00:23:38,070
+Du siehst, die Spannung beträgt 16,4 V auf einem Kanal.
+
+210
+00:23:39,670 --> 00:23:45,090
+Jetzt schalten wir auf 16,2 V auf dem Kanal, der durch die Rückführung verfolgt wird.
+
+211
+00:23:52,480 --> 00:23:54,120
+Und der dritte Ausgang.
+
+212
+00:24:00,320 --> 00:24:00,760
+Verbinden.
+
+213
+00:24:04,530 --> 00:24:05,990
+Auch 16,4 V.
+
+214
+00:24:07,390 --> 00:24:09,790
+Jetzt machen wir einen Crashtest für das System.
+
+215
+00:24:11,970 --> 00:24:13,390
+Seine Ausgänge kurzschließen.
+
+216
+00:24:15,250 --> 00:24:17,710
+Mit einer Pinzette führen wir die Aktion aus.
+
+217
+00:24:19,090 --> 00:24:20,950
+Du siehst, Kurzschluss am Kanal.
+
+218
+00:24:24,210 --> 00:24:27,370
+Die Spannung sinkt, aber dem Wandler passiert nichts.
+
+219
+00:24:28,770 --> 00:24:29,270
+Zweiter Ausgang.
+
+220
+00:24:35,360 --> 00:24:40,400
+Jetzt versuche, größer zu zeigen, damit du siehst, dass ein Kurzschluss vorliegt.
+
+221
+00:24:45,670 --> 00:24:47,630
+Du siehst die Entladung passieren.
+
+222
+00:24:49,630 --> 00:24:50,330
+Und der dritte.
+
+223
+00:24:55,510 --> 00:25:01,870
+Du siehst, dass die Spannung am nicht kurzgeschlossenen Ausgangskanal bleibt, solange keine Last angeschlossen ist.
+
+224
+00:25:04,890 --> 00:25:11,690
+Aber wenn wir den, an den das Multimeter direkt angeschlossen ist, kurzschließen, sinkt die Spannung auf einen kleinen Wert.
+
+225
+00:25:14,190 --> 00:25:18,150
+Nach Entfernen des Kurzschlusses kehrt das System in den Betriebsmodus zurück.
+
+226
+00:25:20,170 --> 00:25:26,370
+Jetzt testen wir auch, wie sich Änderungen des Widerstandswerts auf den endgültigen Ausgangsstrom des Systems auswirken.
+
+227
+00:25:30,720 --> 00:25:33,640
+Empfohlen unter diesem IC sind 0,5 Ω.
+
+228
+00:25:34,920 --> 00:25:43,640
+Du kannst größer gehen, zum Beispiel der 1 Ω Widerstand hier, denn hier werden keine großen Lasten angeschlossen, nur Gartesteuerung und Mastertaktgenerator.
+
+229
+00:25:45,720 --> 00:25:52,040
+Du kannst auch kleiner gehen, 0,1 Ω einbauen, und dann kannst du hier ziemlich ernste Lasten anschließen.
+
+230
+00:25:53,600 --> 00:25:56,440
+Aber wir testen mit einer 12V 10W Lampe.
+
+231
+00:25:58,500 --> 00:26:04,960
+Jetzt prüfen wir die Spannungsrückführung und den Moment, in dem der IC einschaltet, von welchem Potential aus.
+
+232
+00:26:06,080 --> 00:26:11,460
+Wir legen 7V am Eingang an, du siehst, das Multimeter erfasst den Einschaltmoment nicht.
+
+233
+00:26:13,280 --> 00:26:14,760
+Das wird etwa 8V sein.
+
+234
+00:26:16,760 --> 00:26:17,920
+Die Spannung steigt.
+
+235
+00:26:25,010 --> 00:26:28,550
+8V, und bei 8,2V hat sich der IC eingeschaltet.
+
+236
+00:26:30,010 --> 00:26:33,850
+Also kann dieser Wandler durchaus von einer 9V Batterie laufen.
+
+237
+00:26:36,550 --> 00:26:39,650
+Und wir sehen, die Ausgangsspannung beträgt 16,3V.
+
+238
+00:26:41,410 --> 00:26:47,850
+Jetzt erhöhen wir die Spannung weiter, etwa 18V, und wir sehen, dass sich die Ausgangsspannung des ICs stabilisiert.
+
+239
+00:26:54,590 --> 00:26:58,090
+Beobachte den Wert am Multimeter und sieh, dass er sich nicht ändert.
+
+240
+00:27:02,860 --> 00:27:04,740
+Das ist Leerlaufverbrauch Strom.
+
+241
+00:27:18,770 --> 00:27:20,450
+Praktisch haben wir 19V.
+
+242
+00:27:22,810 --> 00:27:24,590
+Schon am Rand des FET-Gatedurchbruchs.
+
+243
+00:27:28,840 --> 00:27:34,380
+Wir erhöhen nicht weiter, aber wir haben bestätigt, dass dieser IC die Ausgangsspannung klar hält.
+
+244
+00:27:36,400 --> 00:27:39,260
+Jetzt schauen wir, wie sich der Stromschutz verhält.
+
+245
+00:27:41,000 --> 00:27:45,720
+Du siehst, ich habe hier mehrere Widerstände angelötet und sie sind nicht geschlossen.
+
+246
+00:27:46,520 --> 00:27:51,800
+Ich werde Widerstände parallel zu diesem Widerstand setzen und damit seinen Wert reduzieren.
+
+247
+00:27:54,900 --> 00:27:58,160
+Der Widerstand in der Schaltung beträgt jetzt 1Ω.
+
+248
+00:27:59,560 --> 00:28:06,480
+Das sind ebenfalls 1-Widerstände, zwei parallel ergeben 0,5Ω, und so weiter in Richtung Reduktion.
+
+249
+00:28:10,150 --> 00:28:11,310
+Schalte den Wandler ein.
+
+250
+00:28:13,110 --> 00:28:16,070
+Das Multimeter zeigt 4,8V an dieser Lampe.
+
+251
+00:28:20,290 --> 00:28:25,430
+Die Spannungsrückführung ist auf 15V abgestimmt und jetzt lässt sie den IC arbeiten.
+
+252
+00:28:26,750 --> 00:28:29,430
+Und hier reduziert die Stromrückführung die Pulsdauer.
+
+253
+00:28:30,710 --> 00:28:34,670
+Jetzt reduziere ich den Widerstand, füge 1Ω parallel hinzu.
+
+254
+00:28:37,050 --> 00:28:43,270
+Du siehst, wenn 0,5Ω angeschlossen sind, ist die Spannung an diesem Punkt auf 9,9V gestiegen.
+
+255
+00:28:47,450 --> 00:28:49,750
+Jetzt schließe noch einen Widerstand an.
+
+256
+00:28:56,300 --> 00:28:59,760
+Und wir bekommen den Wert 11,82, und so weiter.
+
+257
+00:29:02,540 --> 00:29:07,160
+Den Wert dieses Widerstands zu reduzieren erlaubt dir, die Spannung an der Last zu erhöhen.
+
+258
+00:29:09,420 --> 00:29:10,440
+Gleiche Effekte.
+
+259
+00:29:11,900 --> 00:29:15,660
+Das ist die Ausgangsspannung, die wir am Kanal mit Rückführung gesehen haben.
+
+260
+00:29:18,580 --> 00:29:22,400
+Dasselbe lässt sich an einem anderen Ausgangskanal des Wandlers demonstrieren.
+
+261
+00:29:28,070 --> 00:29:31,250
+Sagen wir, dieser, ohne installierte Rückführung.
+
+262
+00:29:32,410 --> 00:29:36,610
+Du siehst auch 4,9V, dann 9,9V und hier 10,5V.
+
+263
+00:29:43,600 --> 00:29:47,080
+Das heißt, durch induktive Kopplung gibt es einen kleinen Unterschied.
+
+264
+00:29:48,920 --> 00:29:54,680
+Aber da dieses System zur Versorgung von ICS und kleinen Verbrauchern arbeitet, passt es uns gut.
+
+265
+00:30:02,880 --> 00:30:11,120
+Zusammenfassend lässt sich sagen, dass diese IC-Reihe eine gute Lösung ist, wenn wir einen Wandler mit galvanischer Trennung und einem System brauchen, dass...
+
+266
+00:30:18,960 --> 00:30:20,820
+die Ausgangsspannung klar verfolgt.
+
+267
+00:30:22,860 --> 00:30:27,000
+Bei verschiedenen Tests habe ich keinen einzigen Ausfall dieses ICS bemerkt.
+
+268
+00:30:27,280 --> 00:30:31,940
+Die Spannung stieg, ich testete ihn zur Versorgung von ICS, alles war in Ordnung.
+
+269
+00:30:35,400 --> 00:30:40,220
+Das heißt, du kannst verschiedene Geräte bauen und zusammenbauen und ihn verwenden.
+
+270
+00:30:42,720 --> 00:30:48,620
+In dem Sinne, danke an alle, die zugeschaut haben, erfolgreiche Experimente und alles Gute.
+

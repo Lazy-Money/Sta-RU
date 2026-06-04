@@ -1,0 +1,860 @@
+1
+00:00:00,720 --> 00:00:03,520
+Hallo an alle Abonnenten und Zuschauer meines Kanals.
+
+2
+00:00:05,060 --> 00:00:09,980
+Heute schauen wir uns einige interessante Punkte an, auf die Leute beim Abstimmen stoßen.
+
+3
+00:00:12,360 --> 00:00:13,180
+Die Frage.
+
+4
+00:00:14,640 --> 00:00:20,380
+Die erste lautet sinngemäß, ich habe nach deinen Berechnungen den Tesla-Transformator auf Viertelwelle abgestimmt.
+
+5
+00:00:22,420 --> 00:00:24,340
+Jetzt will ich ihn auf Halbwelle umstimmen.
+
+6
+00:00:25,420 --> 00:00:29,140
+Aber wenn ich die Frequenzen ausrechne, geht die Mathematik nicht auf.
+
+7
+00:00:30,380 --> 00:00:36,640
+Und wenn ich auf die Frequenz wechsle, die ich mathematisch berechnet habe, stimmt sich die Spule überhaupt nicht ab.
+
+8
+00:00:37,920 --> 00:00:38,860
+Und was macht man damit?
+
+9
+00:00:40,280 --> 00:00:42,020
+Und sind die Berechnungen überhaupt richtig?
+
+10
+00:00:43,640 --> 00:00:51,040
+Auf dieser Schaltungsskizze, die ich hier zeige, ist schematisch die Verteilung der stehenden Welle im Tesla-Transformator dargestellt.
+
+11
+00:00:53,720 --> 00:00:56,700
+Dasselbe gilt für das System mit Massefläche und Erdung.
+
+12
+00:00:57,880 --> 00:01:04,160
+Wie sich Ströme und Spannung verteilen, wenn das System auf Viertelwelle steht und wenn es auf Halbwelle steht.
+
+13
+00:01:06,600 --> 00:01:17,560
+Das heißt, um den Moment festzuhalten, in dem unser System auf Viertelwelle steht, müssen wir das Spannungsmaximum am oberen heißen Ende des Tesla-Transformators erhalten, an seiner isolierten
+
+14
+00:01:17,560 --> 00:01:17,870
+Kapazität.
+
+15
+00:01:20,380 --> 00:01:24,600
+Dabei befindet sich das Strommaximum am unteren Ende des Tesla-Transformators.
+
+16
+00:01:26,020 --> 00:01:29,540
+Dieser Teil hier ist das Erdungskabel und seine Wellenverteilung.
+
+17
+00:01:30,740 --> 00:01:37,060
+Die Sache ist, dass man normalerweise nur diesen Teil betrachtet und vergisst, was in diesem Moment in der Erdung passiert.
+
+18
+00:01:38,400 --> 00:01:42,800
+Und in der Erdung läuft das Bild gegenphasig zu dem, was im Resonator passiert.
+
+19
+00:01:44,880 --> 00:01:53,740
+Wenn sich das System also komplett auf Viertelwelle eingestellt hat, bildet eigentlich das ganze System ein Gesamtbild und es ergibt sich diese Halbwellenverteilung.
+
+20
+00:01:55,380 --> 00:01:59,700
+Aber nur ein Viertel der stehenden Welle befindet sich in unserem Tesla-Transformator.
+
+21
+00:02:01,860 --> 00:02:07,720
+Eine andere, interessantere Situation ergibt sich, wenn sich das System auf Halbwelle einstellt.
+
+22
+00:02:09,500 --> 00:02:15,420
+In diesem Fall wandert der Punkt der maximalen Spannung vom heißen Ende des Tesla-Transformators in die Mitte der Spule.
+
+23
+00:02:16,640 --> 00:02:27,240
+Dabei verteilt sich der Strom anders, weil zwischen beiden eine Phasenverschiebung von 90 Grad liegt, und die Frequenz ist hier höher, damit sich dieser Punkt mit der Frequenzerhöhung verschiebt.
+
+24
+00:02:28,640 --> 00:02:33,080
+Die Wellenlänge verkürzt sich und sie verteilt sich anders über die Länge unserer Spule.
+
+25
+00:02:34,880 --> 00:02:37,180
+Deshalb ergibt sich auch dieses Verhältnis.
+
+26
+00:02:38,360 --> 00:02:43,680
+Bei der Halbwellenverteilung in unserem Tesla-Transformator ist der Strom an dessen Enden gegenphasig.
+
+27
+00:02:44,980 --> 00:02:49,020
+Dabei vergessen wir wie immer auch nicht den Erdungsteil, den wir hier haben.
+
+28
+00:02:50,920 --> 00:02:56,000
+Hier entsteht ebenfalls eine vollständige Figur, nur dass sich jetzt hier eine ganze Welle ergibt.
+
+29
+00:02:58,100 --> 00:03:03,040
+Betrachtet man das System als Ganzes, entfällt nur eine halbe Welle auf unseren Resonator.
+
+30
+00:03:05,960 --> 00:03:07,600
+Welche Berechnungen wird man machen?
+
+31
+00:03:09,220 --> 00:03:15,060
+Zum Beispiel zeige ich die Berechnungen für meine eigene Spule, damit es an ihrem Beispiel klar wird.
+
+32
+00:03:17,140 --> 00:03:19,440
+Die Logik des Vorgehens ist einfach.
+
+33
+00:03:22,060 --> 00:03:31,480
+Man berechnet den Tesla-Transformator, nimmt dann die Viertelwellenresonanzfrequenz, multipliziert sie mit 2 und erhält die Frequenz für die Halbwelle an diesem Resonator.
+
+34
+00:03:34,440 --> 00:03:43,440
+Die Sache ist, dass es hier schon um idealisierte Mathematik geht, und für die, die daran glauben, an all diese Formeln und so weiter, funktioniert sie nicht.
+
+35
+00:03:45,200 --> 00:03:55,700
+Während man für die Viertelwellenresonanz bis 1,5 MHz die Wellengeschwindigkeit noch über die bekannte Lichtgeschwindigkeit berechnen kann, lassen sich diese Berechnungen auf den Halbwellenresonator
+
+36
+00:03:55,700 --> 00:03:56,600
+nicht mehr anwenden.
+
+37
+00:03:58,660 --> 00:04:00,780
+Die Abweichungen werden sehr groß sein.
+
+38
+00:04:01,960 --> 00:04:07,140
+Und jetzt sehen wir uns in der Praxis an, welche Abweichungen sich in der Realität ergeben.
+
+39
+00:04:09,100 --> 00:04:17,060
+Um zum praktischen Teil überzugehen, müssen wir zunächst eine einfache Vorrichtung bauen, mit der wir den Bauch und die Spannung in unserer Spule verfolgen.
+
+40
+00:04:19,440 --> 00:04:23,700
+Sie wird aus einem 65 cm langen Stück Kupferdraht gemacht.
+
+41
+00:04:24,020 --> 00:04:33,040
+Der Draht wird fast in der Mitte gefaltet, sodass ein 30 cm langes System entsteht, von der Neonlampe bis zu der Stelle, an der wir es mit den Fingern halten.
+
+42
+00:04:36,120 --> 00:04:42,280
+Das System besteht aus Kupferdraht, an dessen Ende wird eine Neonlampe angelötet, und der Anschluss sieht so aus.
+
+43
+00:04:43,980 --> 00:04:48,760
+Einen Kontakt löten wir an das Kupfer, den anderen Kontakt biegen wir in diese Form.
+
+44
+00:04:50,020 --> 00:04:55,000
+Jetzt haben wir eine handliche Sonde, um den Spannungsbauch am Tesla-Transformator zu bestimmen.
+
+45
+00:04:57,280 --> 00:05:09,860
+Die Frequenz speisen wir mit einem Laborsignalgenerator in den Tesla-Transformator ein, und indem wir dessen Frequenz verändern, ermitteln wir diesen Wert, ob die Mathematik uns die Wahrheit zeigt,
+
+46
+00:05:10,140 --> 00:05:17,380
+dass wir durch Multiplikation der Viertelwellenresonanzfrequenz die Halbwellenfrequenz bestimmen, und welche Probleme damit verbunden sind.
+
+47
+00:05:18,820 --> 00:05:28,300
+Vor Ihnen steht unser Prüfling, mein Tesla-Transformator, mit einer Leiterlänge von 149 m und einer Berechnungsfrequenz von 500 kHz.
+
+48
+00:05:29,300 --> 00:05:37,520
+Dieser Transformator ist auf einem Trägergerüst aus Lüftungsrohren gebaut, weißer Kunststoff, mit Draht von 0,96 mm Querschnitt.
+
+49
+00:05:39,280 --> 00:05:49,400
+Dazu wurde auch eine passende isolierte Kapazität gewählt, und die Wellenverteilung über die Drahtlänge wurde mit der LC-Resonanz über eine zusätzliche isolierte Kapazität abgeglichen.
+
+50
+00:05:50,620 --> 00:06:02,400
+Der Tesla-Transformator ist in diesem Fall jetzt geerdet, und am Spulenfuß des Tesla-Transformators befindet sich eine Leiterwindung, an die wir das Signal vom Laborsignalgenerator anlegen.
+
+51
+00:06:05,260 --> 00:06:10,080
+Im ersten Fall betrachten wir das Abstimmen des Tesla-Transformators auf die Viertelwelle.
+
+52
+00:06:11,620 --> 00:06:16,160
+Zur Erinnerung, bei der Viertelwelle befindet sich der Spannungsbauch genau an diesem Punkt.
+
+53
+00:06:16,960 --> 00:06:24,560
+Und entsprechend muss an diesem Punkt die Neonlampe leuchten, und sobald wir sie zum Spulenfuß des Transformators verschieben, geht sie aus.
+
+54
+00:06:26,620 --> 00:06:28,960
+Ich gebe 500 kHz drauf.
+
+55
+00:06:32,460 --> 00:06:36,240
+Wir sehen, die Neonlampe leuchtet, und beim Absenken geht sie aus.
+
+56
+00:06:37,440 --> 00:06:42,800
+Das heißt, der Spannungsbauch am Ende der Wicklung des Hochspannungstransformators ist deutlich zu sehen.
+
+57
+00:06:44,220 --> 00:06:48,100
+Auch in der Nähe der isolierten Kapazität wird die Neonlampe leuchten.
+
+58
+00:06:50,100 --> 00:06:55,020
+Bei diesem Schritt gibt es keine besondere Schwierigkeit, und die meisten Leute schaffen das erfolgreich.
+
+59
+00:06:56,800 --> 00:07:04,340
+Wenn die Berechnungen gemacht werden, die ich früher auf meinem Kanal gezeigt habe, sind all diese Punkte da und man kann danach rechnen.
+
+60
+00:07:06,380 --> 00:07:08,880
+Halten wir auch die Frequenz in diesem Versuch fest.
+
+61
+00:07:10,120 --> 00:07:14,020
+Hier ist sie am Laborsignalgenerator zu sehen, 500 kHz.
+
+62
+00:07:16,760 --> 00:07:18,480
+Die Neonlampe leuchtet.
+
+63
+00:07:21,080 --> 00:07:23,900
+Jetzt versetzen wir unser System in den Halbwellenmodus.
+
+64
+00:07:25,560 --> 00:07:29,500
+Nach der idealisierten Mathematik multiplizieren wir unsere Frequenz mit 2.
+
+65
+00:07:32,200 --> 00:07:35,480
+Deshalb stelle ich hier die Frequenz auf einem Megahertz ein.
+
+66
+00:07:37,440 --> 00:07:42,620
+Jetzt ist bei dieser Frequenz die Neonlampe am heißen Ende des Tesla-Transformators erloschen.
+
+67
+00:07:43,780 --> 00:07:49,140
+Und wir können prüfen, ob sich der Spannungsbauch tatsächlich in die Mitte unserer Spule verschoben hat.
+
+68
+00:07:57,910 --> 00:08:00,150
+Ich fahre mit dem Indikator entlang.
+
+69
+00:08:06,050 --> 00:08:08,850
+Und wie wir sehen, leuchtet die Lampe nirgendwo.
+
+70
+00:08:11,430 --> 00:08:13,850
+Vielleicht haben wir ein paar kleine Abweichungen.
+
+71
+00:08:15,550 --> 00:08:17,910
+Jetzt versuchen wir, sie zu überprüfen.
+
+72
+00:08:19,090 --> 00:08:23,850
+Sagen wir, ich stelle die Frequenz auf ein Megahertz und 100 kHz um.
+
+73
+00:08:27,070 --> 00:08:29,030
+Es gibt keinerlei Verteilung.
+
+74
+00:08:31,750 --> 00:08:35,890
+Das heißt, es ist offensichtlich, dass die Mathematik bei uns nicht funktioniert.
+
+75
+00:08:37,290 --> 00:08:38,690
+Wie wird die Halbwelle berechnet?
+
+76
+00:08:39,770 --> 00:08:43,810
+Wir setzen unseren Indikator an die Mitte des Tesla-Transformators.
+
+77
+00:08:45,790 --> 00:08:47,370
+Etwa in der Mitte der Wicklung.
+
+78
+00:08:48,550 --> 00:08:50,910
+Und beginnen, die Frequenz zu erhöhen.
+
+79
+00:08:53,170 --> 00:08:55,750
+Wir gehen sanft in 10 kHz-Schritten.
+
+80
+00:08:59,240 --> 00:09:02,440
+Und wir sehen den Moment, in dem die Lampe hell aufleuchtet.
+
+81
+00:09:05,330 --> 00:09:12,430
+Der Moment des hellsten Leuchtens der Lampe entspricht bei uns der Frequenz des Tesla-Transformators, die der Halbwelle entspricht.
+
+82
+00:09:14,070 --> 00:09:18,750
+Schauen wir uns nun am Indikator an, das am heißen Ende die Neon-Lampe nicht leuchtet.
+
+83
+00:09:19,830 --> 00:09:21,450
+Das Leuchten ist in der Mitte.
+
+84
+00:09:23,430 --> 00:09:26,450
+Und ebenso leuchtet sie nicht am Spulenfuß des Tesla-Transformators.
+
+85
+00:09:29,730 --> 00:09:32,790
+Und nun, was wir tatsächlich herausbekommen haben.
+
+86
+00:09:34,390 --> 00:09:35,090
+Welche Frequenz?
+
+87
+00:09:37,690 --> 00:09:40,930
+Richten wir die Aufmerksamkeit auf den Laborsignalgenerator.
+
+88
+00:09:43,030 --> 00:09:48,870
+Und wir sehen, dass die Halbwellenresonanzfrequenz 1480 kHz beträgt.
+
+89
+00:09:50,690 --> 00:09:54,130
+Wir können also feststellen, was für ein Unterschied.
+
+90
+00:09:55,910 --> 00:09:59,090
+Wir verstehen klar, dass die Mathematik hier nicht funktioniert.
+
+91
+00:10:01,810 --> 00:10:08,250
+Jetzt führen wir außerdem eine Messung des Spektrums dieses Tesla-Transformators mit einem Spektrum-Analysator durch.
+
+92
+00:10:09,510 --> 00:10:17,490
+Vielleicht habe ich hier irgendwo etwas falsch gemacht, aber der Spektrum-Analysator zeigt uns das gesamte Spektrum zu 100%.
+
+93
+00:10:18,250 --> 00:10:21,450
+Wir gehen zum Versuch mit dem Spektrum-Analysator über.
+
+94
+00:10:22,750 --> 00:10:32,070
+Die optimale Methode, um die Frequenz des Resonanz-Transformators zu verfolgen, ist der Empfang per Antenne, ohne Tastköpfe an dieses System anzuschließen.
+
+95
+00:10:33,470 --> 00:10:39,410
+Ich möchte darauf hinweisen, dass der Laborsignalgenerator gerade von der einen Windung getrennt ist.
+
+96
+00:10:41,050 --> 00:10:45,010
+Und er ist komplett ausgeschaltet, um keine Störungen zu erzeugen.
+
+97
+00:10:46,190 --> 00:10:52,030
+Mit diesem Versuch prüfen wir gerade die Genauigkeit der Abstimmung unseres Tesla-Transformators auf die Viertelwelle.
+
+98
+00:10:54,770 --> 00:10:59,210
+Man kann beobachten, dass am Gerät periodisch eine Spektralspitze auftaucht.
+
+99
+00:11:01,150 --> 00:11:03,650
+Diese Spitze hier, die hoch springt.
+
+100
+00:11:05,230 --> 00:11:06,110
+Sie ist sehr gut zu sehen.
+
+101
+00:11:07,630 --> 00:11:09,450
+Darauf habe ich einen Marker gesetzt.
+
+102
+00:11:10,790 --> 00:11:16,210
+Die Frequenz des Markers, die im Maximum angezeigt wird, ist 500,1 kHz.
+
+103
+00:11:18,250 --> 00:11:20,750
+Was zeigt das Auftauchen dieser Spitze an?
+
+104
+00:11:21,890 --> 00:11:32,130
+Es zeigt, dass dieser Tesla-Transformator bei Einwirkung externer Funkwellen von entfernten Radiosendern reagiert oder, wie zu sehen war, eine einzelne Spitze auftauchte.
+
+105
+00:11:33,550 --> 00:11:36,110
+Sagen wir, irgendwo läuft gerade Gewittertätigkeit.
+
+106
+00:11:38,150 --> 00:11:40,230
+Indem er sie empfängt, reagiert er.
+
+107
+00:11:41,730 --> 00:11:45,050
+Und so legen wir unsere Frequenz von 500 kHz an.
+
+108
+00:11:47,190 --> 00:11:51,970
+Wir sehen, dass die Spektralspitze sofort um ein Vielfaches angewachsen ist.
+
+109
+00:11:53,690 --> 00:11:56,770
+Und wenn ich meine Hand nähere, sinkt die Amplitude.
+
+110
+00:11:59,230 --> 00:12:01,370
+Das deutet auf eine genaue Abstimmung hin.
+
+111
+00:12:03,270 --> 00:12:09,210
+Außerdem beginnen bei dieser Frequenz die folgenden Spektralspitzen der Reihe unseres Transformators zu erscheinen.
+
+112
+00:12:10,550 --> 00:12:15,090
+Jetzt verändere ich die Frequenz und wir beobachten das Spektrogramm weiter.
+
+113
+00:12:16,550 --> 00:12:19,130
+Ich beginne, die Frequenz zu erhöhen.
+
+114
+00:12:21,670 --> 00:12:23,510
+Der Schritt ist 10 kHz.
+
+115
+00:12:28,130 --> 00:12:29,990
+Wir sehen die Verstimmung.
+
+116
+00:12:32,030 --> 00:12:33,950
+Die Amplitude sinkt.
+
+117
+00:12:35,970 --> 00:12:37,850
+Und die Spitze wandert.
+
+118
+00:12:39,750 --> 00:12:44,110
+Jetzt sind wir bei unserer rechnerisch ermittelten Frequenz von einem Megahertz.
+
+119
+00:12:45,370 --> 00:12:48,390
+Wir sehen, wie schwach sie an diesem Transformator ist.
+
+120
+00:12:49,270 --> 00:12:50,410
+Ich erhöhe weiter.
+
+121
+00:12:52,410 --> 00:12:53,750
+Wir beobachten den Anstieg.
+
+122
+00:12:56,270 --> 00:12:59,530
+Und schauen wir, wo das Maximum bei dieser Frequenz liegt.
+
+123
+00:13:05,460 --> 00:13:06,860
+Unser Maximum...
+
+124
+00:13:11,840 --> 00:13:14,080
+liegt bei 1,5 MHz.
+
+125
+00:13:16,120 --> 00:13:19,260
+Unsere Messungen mit der Neonlampe waren praktisch genau.
+
+126
+00:13:21,100 --> 00:13:25,900
+Bei diesen Messungen wurde eine Frequenz von 1480 kHz ermittelt.
+
+127
+00:13:27,540 --> 00:13:31,180
+Jetzt verschiebe ich den Marker und wir sehen uns die Frequenz an.
+
+128
+00:13:37,480 --> 00:13:38,660
+Hier ist die Frequenz.
+
+129
+00:13:40,840 --> 00:13:43,520
+Wir sehen, dass der Marker nach oben gewandert ist.
+
+130
+00:13:44,420 --> 00:13:47,200
+Und sie beträgt 1500 kHz.
+
+131
+00:13:49,180 --> 00:13:56,980
+Wenn wir dabei zu unserem Tesla-Transformator zurückkehren, leuchtet die Neonlampe bei dieser Frequenz, wie wir uns erinnern, in der Mitte.
+
+132
+00:14:00,240 --> 00:14:03,460
+Jetzt erhöhe ich die Spannung etwas, damit sie aufleuchtet.
+
+133
+00:14:03,760 --> 00:14:07,480
+Denn für die Halbwellenverteilung habe ich buchstäblich 4 Volt dazu gegeben.
+
+134
+00:14:07,820 --> 00:14:10,200
+Und das hat schon gereicht, damit die Neonlampe...
+
+135
+00:14:14,520 --> 00:14:15,080
+aufleuchtet.
+
+136
+00:14:16,360 --> 00:14:21,320
+Denn das Signal der Viertelwelle ist beim Spannungsbauch höher als bei der Halbwellenverteilung.
+
+137
+00:14:30,670 --> 00:14:34,170
+Was Interessantes können wir am Spektrum-Analysator beobachten.
+
+138
+00:14:39,300 --> 00:14:42,440
+Wir sehen, dass die folgenden Frequenzen auftauchen.
+
+139
+00:14:43,800 --> 00:14:46,500
+Da sind sie, die Spektralspitzen, die sich zeigen.
+
+140
+00:14:48,240 --> 00:14:52,980
+Und diese Spitze, die hochspringt, ist unsere Frequenz von 500 kHz.
+
+141
+00:14:54,540 --> 00:15:04,980
+Das heißt, wir sehen die Frequenzreihe unseres Tesla-Transformators, wenn wir ihn auf Halbwelle gestellt haben, werden auch 500 kHz und die folgenden Frequenzen angeregt.
+
+142
+00:15:06,300 --> 00:15:10,260
+Jetzt fahre ich die Frequenz durch und wir notieren seinen Frequenzgang.
+
+143
+00:15:12,660 --> 00:15:14,200
+Wir gehen weiter vor.
+
+144
+00:15:16,420 --> 00:15:19,440
+Also, der Schritt ist ebenfalls 10 kHz.
+
+145
+00:15:28,670 --> 00:15:31,950
+Merkt euch anhand der Kästchen, wo die nächste Spitze war.
+
+146
+00:15:33,750 --> 00:15:37,250
+Und an der nächsten Spitze haben wir einen Anstieg der Amplitude.
+
+147
+00:15:38,630 --> 00:15:40,430
+Da fängt die Amplitude an zu wachsen.
+
+148
+00:15:42,590 --> 00:15:44,030
+Da ist ihr Maximum.
+
+149
+00:15:47,660 --> 00:15:52,700
+Laut dem Laborsignalgenerator beträgt die Frequenz 2.990 kHz.
+
+150
+00:15:57,010 --> 00:15:58,850
+Schauen wir uns die Frequenz an.
+
+151
+00:16:05,280 --> 00:16:06,620
+Die Spitze hat sich verschoben.
+
+152
+00:16:08,800 --> 00:16:12,460
+Und wir sehen 2.990 kHz.
+
+153
+00:16:13,620 --> 00:16:15,640
+Wir gehen weiter mit der Frequenz.
+
+154
+00:16:24,820 --> 00:16:27,320
+Und da sehen wir den Anstieg der Spitze.
+
+155
+00:16:28,880 --> 00:16:30,020
+Die nächste Frequenz.
+
+156
+00:16:36,210 --> 00:16:38,330
+3.840 kHz.
+
+157
+00:16:46,540 --> 00:16:48,440
+Schauen wir, ob es passt.
+
+158
+00:16:52,380 --> 00:16:53,520
+Alles passt.
+
+159
+00:16:54,620 --> 00:16:56,520
+3.840 kHz.
+
+160
+00:16:57,780 --> 00:17:01,800
+Jetzt kennen wir die Frequenzreihe dieses Tesla-Transformators vollständig.
+
+161
+00:17:02,700 --> 00:17:05,420
+In den Frequenzen, mit denen wir arbeiten können.
+
+162
+00:17:07,240 --> 00:17:14,580
+Die gesamte Skala reicht jetzt von 100 kHz am Anfang bis 5 MHz, ein Band, in dem wir die Spektralreihe erfassen.
+
+163
+00:17:15,460 --> 00:17:23,820
+Alle Versuche, die ich mit dem Spektrum-Analysator gemacht habe, lassen sich auch mit einem Oszilloskop und einem Laborsignalgenerator durchführen.
+
+164
+00:17:25,360 --> 00:17:27,800
+Nur dass der Versuchsablauf jetzt ein anderer ist.
+
+165
+00:17:29,740 --> 00:17:35,520
+Dieselbe Antenne, die sich jetzt am Spektrum-Analysator befindet, schließen wir an das Oszilloskop an.
+
+166
+00:17:37,180 --> 00:17:41,400
+Oder wir hängen seinen Tastkopf neben dem Tesla-Transformator in der Luft auf.
+
+167
+00:17:41,400 --> 00:17:46,840
+Und dann verändern wir die Frequenz an der einen Windung mit dem Laborsignalgenerator.
+
+168
+00:17:48,220 --> 00:17:56,680
+Und wir notieren uns ebenfalls alle Maxima und Amplituden, die das Oszilloskop beim Verändern der Frequenz am Laborsignalgenerator aufzeichnet.
+
+169
+00:17:58,480 --> 00:18:00,720
+Das Frequenzbild wird dasselbe sein.
+
+170
+00:18:01,960 --> 00:18:06,020
+Nur dass es mit einem Spektrum-Analysator viel effizienter und schneller geht.
+
+171
+00:18:07,040 --> 00:18:08,480
+Das ist der ganze Unterschied.
+
+172
+00:18:10,220 --> 00:18:13,760
+Jetzt können wir die Frequenzverteilungen tatsächlich beobachten.
+
+173
+00:18:15,240 --> 00:18:20,040
+Viertel, Halbwelle, Dreiviertel und Vierviertel, was eine ganze Welle ergibt.
+
+174
+00:18:21,760 --> 00:18:26,100
+Das sind die Frequenzen, mit denen wir mit Elektronik tatsächlich noch arbeiten können.
+
+175
+00:18:27,820 --> 00:18:30,700
+Wir sehen, dass sie der Mathematik nicht gehorchen.
+
+176
+00:18:33,100 --> 00:18:39,600
+Angenommen, wir würden die Wellenlänge mit Mathematik bestimmen, dann würden wir 500 kHz mit 4 multiplizieren.
+
+177
+00:18:41,040 --> 00:18:42,720
+Sie müsste 2 MHz entsprechen.
+
+178
+00:18:43,920 --> 00:18:46,340
+Und wir sehen, welche Frequenz wir tatsächlich haben.
+
+179
+00:18:48,460 --> 00:18:51,380
+Deshalb empfehle ich nicht, die Mathematik anzuwenden.
+
+180
+00:18:52,960 --> 00:18:56,820
+In diesem Fall streichen wir diese Frage, wie jemand die Berechnung gemacht hat.
+
+181
+00:18:59,300 --> 00:19:01,640
+Nun zum Kern des physikalischen Phänomens.
+
+182
+00:19:02,440 --> 00:19:06,160
+Warum es zu diesem interessanten Punkt mit der Frequenzverteilung kommt.
+
+183
+00:19:08,580 --> 00:19:13,220
+Die Sache ist, dass sich diese Effekte in Resonanzsystemen sehr deutlich zeigen.
+
+184
+00:19:15,040 --> 00:19:21,780
+In klassischen Systemen, in denen eine Wellenverteilung stattfindet, verhalten sie sich nicht so wie gerade in Wellenresonatoren.
+
+185
+00:19:23,740 --> 00:19:26,660
+Dort werden ebenfalls Verkürzungskoeffizienten verwendet.
+
+186
+00:19:27,360 --> 00:19:30,420
+Aber in unserem Fall zeigt sich das sehr ausgeprägt.
+
+187
+00:19:32,320 --> 00:19:36,420
+Schauen wir uns den ersten Fall an, wenn das System auf Viertelwelle steht.
+
+188
+00:19:37,580 --> 00:19:40,080
+Das Gesamtsystem mit Erdung ist eine Halbwelle.
+
+189
+00:19:42,200 --> 00:19:47,420
+Hier wirkt sich der spiralige Wellenresonator faktisch zweimal weniger aus als im Halbwellensystem.
+
+190
+00:19:49,180 --> 00:19:55,000
+Das heißt, in diesem Fall passt in die Spirale der Spule bereits eine Halbwelle, hier hingegen nur ein Viertel.
+
+191
+00:19:55,860 --> 00:19:58,120
+Deshalb steigt der Einfluss in diesem Fall.
+
+192
+00:20:00,400 --> 00:20:02,740
+Und es zeigt sich ein interessanter Effekt.
+
+193
+00:20:03,020 --> 00:20:09,480
+Die Wellengeschwindigkeit im spiraligen Wellenresonator nimmt im Vergleich zur Geschwindigkeit der Welle in einem geraden Leiter zu.
+
+194
+00:20:11,440 --> 00:20:14,020
+So paradox das auch ist, darin liegt das Spannende.
+
+195
+00:20:16,500 --> 00:20:24,160
+Außerdem ist zu erwähnen, dass sich die Welle nicht nur im Erdungskabel ausbreitet, sondern auch im Boden, an den diese Erdung angeschlossen ist.
+
+196
+00:20:25,880 --> 00:20:32,620
+Das heißt, vom kalten Ende bis zum Drahtende läuft die Welle eigentlich nicht nur in diesem Teil, sondern auch im Erdreich.
+
+197
+00:20:33,720 --> 00:20:35,220
+Alles hängt vom Untergrund ab.
+
+198
+00:20:37,060 --> 00:20:43,400
+Und es ergibt sich, dass wir jetzt wissen, mit steigender Frequenz nimmt die Wellenlänge in physikalischen Metern ab.
+
+199
+00:20:44,540 --> 00:20:52,900
+Und deshalb müssen wir, damit in unserem Fall in die Drahtlänge des spiraligen Wellenresonators genau eine Halbwelle hineinpasst, die Frequenz erhöhen.
+
+200
+00:20:53,780 --> 00:20:55,420
+Erst dann passt sie hinein.
+
+201
+00:20:56,720 --> 00:21:00,480
+Wir verkleinern die physikalischen Meter und legen sie in die Länge der Spule.
+
+202
+00:21:03,100 --> 00:21:07,140
+Jetzt entsteht bei den Zuschauern eine berechtigte Frage, oder wird entstehen.
+
+203
+00:21:08,380 --> 00:21:11,740
+Wozu der ganze Aufwand mit dem Umstellen der Spule auf Halbwelle?
+
+204
+00:21:13,520 --> 00:21:20,260
+Die Sache ist, dass für den Aufbau eines funktionierenden Systems das Vorhandensein eines Halbwellenvibrators zwingend nötig ist.
+
+205
+00:21:22,160 --> 00:21:25,140
+Ohne ihn bekommt man keine ernstzunehmende Energie.
+
+206
+00:21:26,560 --> 00:21:30,060
+Deshalb kommt niemand um die Halbwellenabstimmung der Empfängerspule herum.
+
+207
+00:21:32,380 --> 00:21:35,460
+Und ich möchte noch einmal auf den Aufbau dieser Spule hinweisen.
+
+208
+00:21:37,840 --> 00:21:42,580
+Sie ist aus dickem Kupferdraht gefertigt, um den Wirkwiderstand gerade an ihr zu beseitigen.
+
+209
+00:21:44,080 --> 00:21:46,920
+Ich werde später meinen eigenen Generator bauen.
+
+210
+00:21:50,050 --> 00:21:54,370
+Damit wünsche ich allen viel Erfolg bei den Experimenten und alles Gute.
+
+211
+00:21:55,530 --> 00:22:01,610
+Im nächsten Video, das ich versuchen werde, möglichst schnell zu drehen, wurde noch eine interessante Frage gestellt.
+
+212
+00:22:03,290 --> 00:22:07,890
+Wie beeinflusst ein Tesla-Transformator einen anderen über seine Felder?
+
+213
+00:22:09,710 --> 00:22:11,670
+Welche Verteilungen treten dabei auf?
+
+214
+00:22:13,310 --> 00:22:18,690
+Wie erzeugt man eine Modulation ohne Laborsignalgenerator und komplizierte Elektronik?
+
+215
+00:22:18,770 --> 00:22:20,450
+Wird spannend!
+

@@ -1,0 +1,1679 @@
+1
+00:00:02,020 --> 00:00:06,610
+Hallo zusammen, heute werden wir einen
+Hochfrequenz-Impulstransformator wickeln.
+
+2
+00:00:07,280 --> 00:00:13,010
+Da unser Gerät mit einer recht hohen Frequenz
+arbeitet, werden wir Ferrit als Kernmaterial
+
+3
+00:00:13,010 --> 00:00:13,660
+verwenden.
+
+4
+00:00:14,130 --> 00:00:18,710
+Das Ferrit ist als Torus oder Ring gepresst,
+was ideal für den Aufbau von
+
+5
+00:00:18,710 --> 00:00:20,490
+Leistungskonstruktionen ist.
+
+6
+00:00:21,360 --> 00:00:27,640
+Mehr über Ferritsorten, Permeabilität, den
+Curie-Punkt und andere Kernparameter erfahren
+
+7
+00:00:27,640 --> 00:00:33,850
+Sie im Internet. Ich empfehle Ihnen dazu ein
+Video, das ich unten verlinkt habe. Es ist
+
+8
+00:00:33,850 --> 00:00:40,060
+ein Video von jemandem namens Evgeniy. Sein
+Kanal heißt "Einfach über Komplexes", wo er
+
+9
+00:00:40,060 --> 00:00:45,760
+dieses Thema sehr detailliert behandelt.
+Dafür bin ich ihm sehr dankbar, denn er
+
+10
+00:00:45,760 --> 00:00:49,950
+erklärt komplizierte Dinge in einer ganz
+einfachen Sprache.
+
+11
+00:01:02,770 --> 00:01:03,610
+und so weiter.
+
+12
+00:01:04,490 --> 00:01:06,290
+Schauen Sie es sich genauer an.
+
+13
+00:01:07,870 --> 00:01:10,330
+Aber kommen wir nun zum Transformator.
+
+14
+00:01:10,550 --> 00:01:15,760
+In den Kommentaren machen sich Bekannte schon
+lustig. Ivan Russu schreibt etwa, man könne
+
+15
+00:01:15,760 --> 00:01:18,190
+mit so einem Kern ein Schweißgerät bauen.
+
+16
+00:01:18,880 --> 00:01:25,300
+Ja, tatsächlich, mit so einem Kern ließe sich
+ein wirklich gutes Schweißgerät konstruieren.
+
+17
+00:01:25,300 --> 00:01:31,280
+Ich folge jedoch der Regel: Wenn Gewicht und
+Maße nicht entscheidend sind, nehmen Sie
+
+18
+00:01:31,280 --> 00:01:36,490
+lieber einen größeren Kern. Er hat weniger
+Verluste und arbeitet stabiler.
+
+19
+00:01:37,920 --> 00:01:42,700
+Es gibt im Grunde zwei wesentliche
+Unterschiede. Es gibt Kerne, die vom
+
+20
+00:01:42,700 --> 00:01:48,690
+Hersteller hochwertiger gefertigt wurden. Das
+bezieht sich nicht auf das Material selbst,
+
+21
+00:01:48,690 --> 00:01:54,280
+sondern auf die Art der Verarbeitung. Bei
+diesen Kernen hier hat der Hersteller die
+
+22
+00:01:54,280 --> 00:01:57,150
+scharfen Kanten entfernt und sie lackiert.
+
+23
+00:01:58,720 --> 00:02:01,260
+Dieser Lack besitzt dielektrische
+Eigenschaften.
+
+24
+00:02:01,840 --> 00:02:07,940
+Auf so einen Kern kann man Lackdraht direkt
+ohne zusätzliche Isolierung aufwickeln. Kerne
+
+25
+00:02:07,940 --> 00:02:12,930
+dieses Typs hingegen muss man manuell
+nachbearbeiten. Ein unbeschichteter
+
+26
+00:02:12,930 --> 00:02:18,950
+Ferritkern mit größerem Durchmesser wäre hier
+passend. Hier müssen wir mit Schleifpapier
+
+27
+00:02:18,950 --> 00:02:20,760
+alle Unebenheiten glätten.
+
+28
+00:02:21,630 --> 00:02:27,830
+Das ist wichtig, damit die Lackisolierung des
+Drahtes beim Wickeln nicht beschädigt wird.
+
+29
+00:02:27,830 --> 00:02:33,750
+Und natürlich muss der Kern vor der ersten
+Lage mit Isoliermaterial umwickelt werden.
+
+30
+00:02:33,750 --> 00:02:39,320
+Insbesondere werden sie mit in Lack
+getränktem Transformatorpapier umwickelt. Es
+
+31
+00:02:39,320 --> 00:02:43,270
+gibt verschiedene Möglichkeiten der
+Isolierung im Alltag.
+
+32
+00:02:44,470 --> 00:02:50,040
+Die Leute isolieren tatsächlich sogar mit
+Isolierband, mit normalem Klebeband oder auch
+
+33
+00:02:50,040 --> 00:02:51,010
+mit Malerkrepp.
+
+34
+00:02:51,320 --> 00:02:53,320
+Es gibt also verschiedene Möglichkeiten.
+
+35
+00:02:54,340 --> 00:02:58,210
+Man kann darüber streiten, ob sie gut oder
+schlecht sind, aber man erhält
+
+36
+00:02:58,210 --> 00:02:59,450
+funktionierende Geräte.
+
+37
+00:03:01,180 --> 00:03:01,750
+So.
+
+38
+00:03:01,750 --> 00:03:03,140
+Womit fangen wir an?
+
+39
+00:03:03,380 --> 00:03:09,260
+Wir beginnen damit, dass wir die Parameter
+benötigen, um zu berechnen, wie viel Draht
+
+40
+00:03:09,260 --> 00:03:14,090
+wir für diesen Kern brauchen. Es gibt
+natürlich Programme im Internet,
+
+41
+00:03:14,090 --> 00:03:19,540
+Online-Rechner, die all diese Parameter
+berechnen können, wenn wir die Kernmaße
+
+42
+00:03:19,540 --> 00:03:20,170
+eingeben.
+
+43
+00:03:21,310 --> 00:03:26,530
+Und ich denke, wer diese Rechner kennt, kann
+Links dazu in den Kommentaren posten, was den
+
+44
+00:03:26,530 --> 00:03:28,580
+Leuten die Arbeit erleichtern wird.
+
+45
+00:03:29,200 --> 00:03:35,340
+Aber wir werden nach der alten Messmethode
+vorgehen. Sie ist genau genug, und man kann
+
+46
+00:03:35,340 --> 00:03:40,550
+immer rechnen, ohne auf zusätzliche
+Online-Tools zurückgreifen zu müssen.
+
+47
+00:03:42,820 --> 00:03:48,260
+Bevor wir mit dem Wickeln des Drahtes auf
+diesen Kern beginnen, müssen wir zunächst die
+
+48
+00:03:48,260 --> 00:03:53,370
+genaue Drahtmenge in Metern für die Wicklung
+bestimmen. Ich habe vor, den Draht in
+
+49
+00:03:53,370 --> 00:03:57,600
+insgesamt drei Schichten, also nacheinander,
+um den Kern zu wickeln.
+
+50
+00:03:58,880 --> 00:04:03,160
+In den ersten beiden Schichten gibt es
+jeweils vier Abgriffe, in der letzten drei.
+
+51
+00:04:03,350 --> 00:04:08,020
+Das macht insgesamt elf Abgriffe, genau das,
+was ich für diesen Schalter brauche.
+
+52
+00:04:09,980 --> 00:04:14,810
+Natürlich gibt es verschiedene Online-Rechner,
+in die man die Kerndaten eingeben kann und
+
+53
+00:04:14,810 --> 00:04:16,070
+die das dann berechnen.
+
+54
+00:04:16,940 --> 00:04:21,970
+Ich denke, die Zuschauer des Videos werden
+sie in den Kommentaren erwähnen, falls sie
+
+55
+00:04:21,970 --> 00:04:22,930
+solche benutzen.
+
+56
+00:04:23,670 --> 00:04:29,650
+Ich werde jedoch die alte Berechnungsmethode
+anwenden. Sie hat mich bei wenigen Schichten
+
+57
+00:04:29,650 --> 00:04:34,200
+und recht dickem Draht noch nie im Stich
+gelassen. Für die Wicklung.
+
+58
+00:04:34,500 --> 00:04:39,800
+Konkret werde ich mit einem lackisolierten
+Draht mit einem Querschnitt von null Komma
+
+59
+00:04:39,800 --> 00:04:44,780
+sechsundneunzig Millimetern wickeln. Diesen
+Parameter können wir hier eintragen,
+
+60
+00:04:44,780 --> 00:04:49,700
+Außendurchmesser des Drahtes null Komma
+sechsundneunzig. Nun müssen wir für die
+
+61
+00:04:49,700 --> 00:04:54,990
+Berechnungen den inneren Umfang ermitteln.
+Dazu verwende ich einen weichen Draht, der
+
+62
+00:04:54,990 --> 00:04:56,570
+seine Form gut beibehält.
+
+63
+00:04:57,590 --> 00:04:59,060
+Ich verwende Lötzinn.
+
+64
+00:04:59,860 --> 00:05:04,240
+Wir legen ihn vorsichtig um den gesamten
+Umfang und machen eine Markierung.
+
+65
+00:05:04,400 --> 00:05:08,020
+Hier sieht man, die Markierung habe ich
+vorher mit einem schwarzen Marker gemacht.
+
+66
+00:05:08,700 --> 00:05:15,200
+Nun können wir diesen Draht hier vorsichtig
+abwickeln und dann seine genaue Länge in
+
+67
+00:05:15,200 --> 00:05:16,690
+Millimetern messen.
+
+68
+00:05:19,210 --> 00:05:23,910
+Die Länge beträgt tatsächlich einhundertzwölf
+Millimeter, also genau einhundertzwölf
+
+69
+00:05:23,910 --> 00:05:24,530
+Millimeter.
+
+70
+00:05:27,650 --> 00:05:29,370
+Wir notieren diesen Parameter.
+
+71
+00:05:29,930 --> 00:05:34,890
+Der Innenumfang des Kerns beträgt
+einhundertzwölf Millimeter. Weiter,
+
+72
+00:05:34,960 --> 00:05:39,690
+Um die genaue Länge des Wickeldrahtes zu
+bestimmen, benötigen wir zunächst die exakte
+
+73
+00:05:39,690 --> 00:05:44,200
+Länge einer einzelnen Windung. Dafür
+verwenden wir ebenfalls einen weichen Draht,
+
+74
+00:05:44,200 --> 00:05:48,880
+der sich gut formen lässt. Dieser Draht
+sollte möglichst fest und gleichmäßig um den
+
+75
+00:05:48,880 --> 00:05:53,340
+Kern gewickelt werden, damit die Messung am
+Ende möglichst präzise ist. Außerdem
+
+76
+00:05:53,340 --> 00:05:58,130
+empfiehlt es sich, an einer gut sichtbaren
+Stelle eine Markierung zu machen, damit wir
+
+77
+00:05:58,130 --> 00:06:01,230
+genau erkennen können, wo die Windung beginnt
+und endet.
+
+78
+00:06:01,910 --> 00:06:05,020
+Nun, in diesem Fall geschieht das durch
+Biegen des Leiters.
+
+79
+00:06:07,300 --> 00:06:11,930
+Wir strecken ihn ganz vorsichtig glatt und
+messen dann noch einmal sorgfältig nach.
+
+80
+00:06:14,310 --> 00:06:16,510
+Es sind fünfundsiebzig Millimeter.
+
+81
+00:06:22,290 --> 00:06:27,250
+So, da wir nun den genauen Innenumfang und
+auch den Drahtdurchmesser kennen, können wir
+
+82
+00:06:27,250 --> 00:06:31,170
+jetzt, nachdem wir diese wichtigen Maße
+bestimmt haben, weitermachen.
+
+83
+00:06:31,340 --> 00:06:36,520
+können wir die Anzahl der Windungen berechnen,
+die Windung an Windung auf die Länge dieses
+
+84
+00:06:36,520 --> 00:06:37,270
+Kerns passen.
+
+85
+00:06:38,160 --> 00:06:43,850
+Dazu teilen wir den Innenumfang des Kerns von
+einhundertzwölf Millimetern durch den
+
+86
+00:06:43,850 --> 00:06:47,940
+Drahtdurchmesser von null Komma
+sechsundneunzig und erhalten
+
+87
+00:06:47,940 --> 00:06:49,950
+einhundertsechzehn Windungen.
+
+88
+00:06:51,100 --> 00:06:55,610
+Hier notieren wir die Windungszahl:
+einhundertsechzehn. Da wir nun die
+
+89
+00:06:55,610 --> 00:07:01,090
+Windungszahl und die Länge einer Windung
+kennen, können wir die Drahtmenge berechnen,
+
+90
+00:07:01,090 --> 00:07:04,430
+die in einer Schicht auf diesen Kern
+gewickelt wird.
+
+91
+00:07:07,720 --> 00:07:10,000
+Also, einhundertsechzehn Windungen
+
+92
+00:07:10,180 --> 00:07:14,120
+multiplizieren wir mit der Länge einer
+Windung von fünfundsiebzig Millimetern.
+
+93
+00:07:14,850 --> 00:07:16,800
+Das ergibt achttausendsiebenhundert.
+
+94
+00:07:19,780 --> 00:07:24,550
+Das entspricht, um es noch einmal klar zu
+sagen, genau acht Komma sieben Metern.
+
+95
+00:07:26,770 --> 00:07:32,590
+Ich werde ihn in drei Schichten wickeln. Und
+wir wissen, dass mit abnehmendem Innenumfang
+
+96
+00:07:32,590 --> 00:07:38,200
+die Anzahl der Windungen sinkt. Da aber auch
+die Länge einer Windung zunimmt, kann man
+
+97
+00:07:38,200 --> 00:07:43,350
+diesen Wert bei wenigen Schichten
+näherungsweise mit drei multiplizieren. Somit
+
+98
+00:07:43,350 --> 00:07:48,970
+beträgt die ungefähre Gesamtlänge des Drahtes
+in drei Schichten sechsundzwanzig Meter.
+
+99
+00:07:52,040 --> 00:07:58,030
+Aber man sollte ein wenig Reserve für die
+Anschlüsse und für Rechenfehler einplanen.
+
+100
+00:07:58,030 --> 00:08:03,520
+Insgesamt werde ich etwa achtundzwanzig Meter
+nehmen. Draht für die Wicklung.
+
+101
+00:08:05,430 --> 00:08:06,640
+Und noch eine Sache.
+
+102
+00:08:06,760 --> 00:08:11,140
+Da wir jeweils vier Abgriffe von den ersten
+beiden Lagen haben werden, müssen wir die
+
+103
+00:08:11,140 --> 00:08:13,900
+Windungszahl pro Viertel der Wicklungslänge
+bestimmen.
+
+104
+00:08:14,490 --> 00:08:19,560
+Dafür teile ich die Gesamtzahl von
+einhundertsechzehn Windungen durch vier, die
+
+105
+00:08:19,560 --> 00:08:21,060
+Anzahl der Abgriffe ...
+
+106
+00:08:21,120 --> 00:08:23,440
+...
+und erhalte so insgesamt neunundzwanzig
+
+107
+00:08:23,440 --> 00:08:27,910
+Windungen, also neunundzwanzig einzelne
+Wicklungen, die sich um den Kern legen ...
+
+108
+00:08:27,910 --> 00:08:30,400
+...
+zwischen den beiden Abgriffen, die sich in
+
+109
+00:08:30,400 --> 00:08:34,040
+der ersten Lage befinden, also in der
+allerersten Wicklungsschicht.
+
+110
+00:08:35,080 --> 00:08:39,530
+Die Basisdaten liegen vor, wir können nun mit
+dem Wickeln des Drahtes beginnen.
+
+111
+00:08:40,610 --> 00:08:46,970
+Den Draht habe ich bereits vorbereitet. Ich
+benutze diese Wickelvorrichtung hier. Sie ist
+
+112
+00:08:46,970 --> 00:08:49,220
+aus einem Kabelkanal gefertigt.
+
+113
+00:08:50,140 --> 00:08:54,770
+Der Draht wird herumgewickelt und fixiert,
+dann wird ein Außenteil darumgelegt, und es
+
+114
+00:08:54,770 --> 00:08:58,480
+ist sehr praktisch, das Wickeln mit so einem
+Schiffchen zu erledigen.
+
+115
+00:08:59,220 --> 00:09:03,730
+Man kann das wie mit einer Haspel in
+Gabelform machen, aber diese Methode gefällt
+
+116
+00:09:03,730 --> 00:09:08,580
+mir besser, weil wir den Draht mit dem Deckel
+des Kabelkanals sicher halten und er beim
+
+117
+00:09:08,580 --> 00:09:10,830
+Wickeln nicht aus den Windungen rutscht.
+
+118
+00:09:13,920 --> 00:09:18,930
+Man kann diesen Draht übrigens auch wiegen,
+um später seine tatsächlichen Kosten genauer
+
+119
+00:09:18,930 --> 00:09:19,680
+zu ermitteln.
+
+120
+00:09:21,430 --> 00:09:23,150
+Dazu benutze ich eine Waage.
+
+121
+00:09:28,290 --> 00:09:33,140
+Und wenn man das Gewicht des Schiffchens
+abzieht, dann wiegt der Draht, den ich in
+
+122
+00:09:33,140 --> 00:09:36,970
+diesem Versuch verwenden werde, ungefähr
+einhundertsechzig Gramm.
+
+123
+00:09:44,340 --> 00:09:46,100
+So, was die Abgriffe betrifft.
+
+124
+00:09:46,180 --> 00:09:51,120
+Wir werden elf Abgriffe haben, plus den
+ersten, also insgesamt zwölf. Zur besseren
+
+125
+00:09:51,120 --> 00:09:56,230
+Kennzeichnung verwende ich verschiedenfarbige
+Schrumpfschläuche mit möglichst kleinem
+
+126
+00:09:56,230 --> 00:09:56,960
+Querschnitt.
+
+127
+00:09:58,290 --> 00:10:03,090
+Hier ist er, ein Dreier-Schrumpfschlauch. Für
+den ersten Abgriff nehme ich die Farbe Grün,
+
+128
+00:10:03,090 --> 00:10:07,680
+das steht für das kalte Ende. Der zweite
+Abgriff, der mit einer etwas höheren Spannung
+
+129
+00:10:07,680 --> 00:10:11,350
+arbeitet – das ist die erste Lage – wird in
+diesem Fall weiß gewählt.
+
+130
+00:10:11,620 --> 00:10:14,760
+...
+die zweite Lage wird gelb sein und die letzte,
+
+131
+00:10:14,760 --> 00:10:20,270
+dritte Lage, da werden die Abgriffe rot sein.
+Da ich die Wicklung von links nach rechts
+
+132
+00:10:20,270 --> 00:10:25,980
+ausführe, wird die Nummerierung entsprechend
+im Uhrzeigersinn verlaufen. Und so werden wir
+
+133
+00:10:25,980 --> 00:10:31,950
+dank der unterschiedlichen Farbkennzeichnung
+bei den Abgriffen nicht durcheinanderkommen ...
+...
+
+134
+00:10:31,950 --> 00:10:34,060
+und auch nicht bei ihren Nummern.
+
+135
+00:10:34,510 --> 00:10:38,540
+Die Länge des Abzweigs am kalten Ende beträgt
+zweiundzwanzig Zentimeter.
+
+136
+00:10:38,900 --> 00:10:43,010
+Zwei Zentimeter ist die Dicke des Kerns, an
+dem er befestigt wird.
+
+137
+00:10:43,180 --> 00:10:47,760
+Und zwanzig Zentimeter brauche ich
+konstruktionsbedingt, um ihn vom Trafo zur
+
+138
+00:10:47,760 --> 00:10:49,140
+Diodenbrücke zu führen.
+
+139
+00:10:50,860 --> 00:10:56,210
+So. Habe den Schrumpfschlauch drübergezogen
+und mit dem Feuerzeug erhitzt.
+
+140
+00:10:56,790 --> 00:11:00,450
+Jetzt ist der Draht sicher isoliert und wir
+kommen zu seiner Montage.
+
+141
+00:11:01,800 --> 00:11:07,220
+Für die Montage legen wir den Draht an,
+biegen ihn vorsichtig um, und hier müssen wir
+
+142
+00:11:07,220 --> 00:11:12,520
+nun eine kleine Schlaufe aus Isolierband
+machen, damit dieser Draht sicher und fest
+
+143
+00:11:12,520 --> 00:11:18,460
+fixiert ist. Dafür nehmen wir das Isolierband
+zur Hand und wickeln es sorgfältig um den Draht.
+
+144
+00:11:21,140 --> 00:11:25,790
+Wir schneiden jetzt ein passendes Stück davon
+ab, und zwar ungefähr drei Zentimeter lang,
+
+145
+00:11:25,790 --> 00:11:27,210
+also so, dass es gut passt.
+
+146
+00:11:30,520 --> 00:11:35,210
+So. Jetzt nehmen wir das Material und bringen
+es ganz vorsichtig und sorgfältig, Schritt
+
+147
+00:11:35,210 --> 00:11:39,730
+für Schritt, in Verlaufsrichtung der Wicklung
+an. Dabei achten wir darauf, dass alles
+
+148
+00:11:39,730 --> 00:11:41,940
+richtig sitzt und keine Falten entstehen.
+
+149
+00:11:43,960 --> 00:11:45,400
+Bitte gut festdrücken.
+
+150
+00:11:49,800 --> 00:11:52,530
+Damit fixieren wir jetzt den Draht, ganz
+vorsichtig.
+
+151
+00:11:53,490 --> 00:11:54,320
+Genau so.
+
+152
+00:11:56,220 --> 00:12:01,880
+Und nach diesem Vorgang wird die nächste
+Windung das Isolierband festdrücken, sodass
+
+153
+00:12:01,880 --> 00:12:07,340
+der Draht wirklich sicher fixiert ist. Nach
+etwa anderthalb Stunden monotoner und
+
+154
+00:12:07,340 --> 00:12:13,010
+gleichförmiger Arbeit habe ich schließlich
+drei Sektionen mit jeweils neunundzwanzig
+
+155
+00:12:13,010 --> 00:12:14,370
+Windungen gewickelt.
+
+156
+00:12:16,180 --> 00:12:20,710
+So mache ich die Anschlüsse, indem ich sie
+zunächst zu einer kleinen Öse biege, dann
+
+157
+00:12:20,710 --> 00:12:25,510
+eine passende Schrumpfschlauch-Tülle darüber
+ziehe und sie anschließend mit dem Feuerzeug
+
+158
+00:12:25,510 --> 00:12:28,730
+vorsichtig erhitze, damit alles sicher und
+ordentlich sitzt.
+
+159
+00:12:32,900 --> 00:12:33,700
+Also, so.
+
+160
+00:12:37,400 --> 00:12:41,290
+Der Draht ist dick, man muss ihn mit
+erheblichem Kraftaufwand wickeln.
+
+161
+00:12:43,550 --> 00:12:48,050
+Ja, genau. So funktioniert das Ganze und so
+geht es Schritt für Schritt voran.
+
+162
+00:12:49,310 --> 00:12:54,670
+Und jede Windung muss man festhalten und nach
+unten strammziehen. Dann,
+
+163
+00:12:56,750 --> 00:13:01,990
+Während man das Garn festhält, noch einmal
+vorsichtig durchfädeln und so legen wir dann
+
+164
+00:13:01,990 --> 00:13:06,080
+Windung für Windung ganz gleichmäßig und
+sorgfältig die Wicklung an.
+
+165
+00:13:12,870 --> 00:13:16,430
+So. Genau so mühsam und anstrengend ist das
+eben wirklich.
+
+166
+00:13:18,710 --> 00:13:19,820
+Ach, die Arbeit.
+
+167
+00:13:23,320 --> 00:13:26,750
+Die Finger schmerzen, sie werden rot und
+fühlen sich unangenehm an.
+
+168
+00:13:28,500 --> 00:13:30,100
+aber da kann man nichts machen.
+
+169
+00:13:31,000 --> 00:13:35,950
+Nach dem Wickeln eines solchen Transformators
+spürt man die Folgen dieser Arbeit noch ein
+
+170
+00:13:35,950 --> 00:13:36,510
+paar Tage.
+
+171
+00:13:38,220 --> 00:13:43,170
+Und während man so einer Tätigkeit nachgeht,
+kann man sich im Internet etwas Interessantes
+
+172
+00:13:43,170 --> 00:13:46,900
+anhören. Ich bin nun zur Isolierung der
+ersten Schicht übergegangen.
+
+173
+00:13:47,560 --> 00:13:50,070
+Zuerst bringe ich eine Schicht aus Malerkrepp
+an.
+
+174
+00:13:50,120 --> 00:13:55,540
+Mit Hilfe dieser Vorrichtung auf einem
+flachen Stab lässt sich ein Stück Malerkrepp
+
+175
+00:13:55,540 --> 00:14:00,490
+sehr bequem aufwickeln. Und während ich
+wickelte, hörte ich mir interessante
+
+176
+00:14:00,490 --> 00:14:05,120
+Informationen an, sozusagen die
+Binsenweisheiten von Romanov. Die Leute
+
+177
+00:14:05,120 --> 00:14:10,730
+stehen ihm unterschiedlich gegenüber, aber
+ich persönlich sage aus Erfahrung, dass der
+
+178
+00:14:10,730 --> 00:14:13,110
+Mann sehr, sehr viel Richtiges sagt.
+
+179
+00:14:15,140 --> 00:14:19,700
+Das Video heißt„ Freie Energie um uns herum “,
+die Vollversion.
+
+180
+00:14:19,700 --> 00:14:21,860
+Ich werde dazu auch einen Link posten.
+
+181
+00:14:23,560 --> 00:14:27,400
+Das ist ein interessanter Moment, den wir
+hier sehen.
+
+182
+00:14:31,870 --> 00:14:36,880
+Hier, drei Punkte. Und wir müssen dieses Ding
+hier, also, genau kennen und beachten, also.
+
+183
+00:14:36,930 --> 00:14:42,230
+Und so berechnet man diese Dinge. Und nun zur
+Länge, deine Frage, Vadim, was du gesagt hast,
+
+184
+00:14:42,230 --> 00:14:45,660
+also. Wie sie ...
+Schau mal, wer Spulen gewickelt hat, also,
+
+185
+00:14:45,660 --> 00:14:48,520
+wenn man mir zeigt, die Spule ist so
+gewickelt ...
+
+186
+00:14:49,390 --> 00:14:52,780
+Ich fluche eigentlich nie, also, ja, aber
+innerlich ...
+
+187
+00:14:52,780 --> 00:14:53,970
+Ach, du meine Güte,
+
+188
+00:14:54,030 --> 00:14:58,400
+wenn du überhaupt irgendwas von dieser
+Technik verstehst, also, dann hättest du sie
+
+189
+00:14:58,400 --> 00:15:02,720
+doch so machen müssen, verdammt noch mal.
+Verstehst du den Unterschied, also, oder
+
+190
+00:15:02,720 --> 00:15:06,720
+nicht? Warum oder nicht? Also, die
+Induktivität und der ganze Kram gehen von
+
+191
+00:15:06,720 --> 00:15:11,100
+diesen Punkten aus, verstehst du? Aber die
+Länge geht von genau diesen Punkten aus,
+
+192
+00:15:11,470 --> 00:15:16,680
+verstehst du, also? Man muss die Spulen doch
+richtig machen, verstehst du? Und jetzt schau
+
+193
+00:15:16,680 --> 00:15:21,590
+mal, also, wegen dieser Kugeln und Tori, von
+denen ich dir erzählt habe. Die Frequenz
+
+194
+00:15:21,590 --> 00:15:26,620
+ändert sich nicht, aber die Länge, die wird
+sich ändern, also. Und so ergibt sich, dass
+
+195
+00:15:26,620 --> 00:15:31,300
+du immer nehmen musst, also, wenn du den
+Tesla-Transformator richtig studiert und
+
+196
+00:15:31,300 --> 00:15:32,180
+betrieben hast,
+
+197
+00:15:32,650 --> 00:15:36,780
+dann musst du eine Nuance kennen. Der
+Induktor korreliert mit der Länge, also,
+
+198
+00:15:36,780 --> 00:15:38,720
+verdammt, der Hochspannungswicklung.
+
+199
+00:15:39,730 --> 00:15:44,220
+Die Länge der Hochspannungswicklung muss
+einer exakten Anzahl von Induktoren in der
+
+200
+00:15:44,220 --> 00:15:46,630
+Länge entsprechen, also, nach diesem Schema.
+
+201
+00:15:47,040 --> 00:15:50,830
+Sinn verstanden? Und nun, also, da du das
+verstanden hast, also,
+
+202
+00:15:50,890 --> 00:15:54,700
+wird dein Empfänger genau so sein, zum
+Beispiel, also, das hier wird eine Länge sein,
+
+203
+00:15:55,050 --> 00:15:57,870
+und der Empfänger wird zum Beispiel vier
+dieser L sein.
+
+204
+00:15:58,530 --> 00:16:02,770
+Sinn verstanden, also? Und genau so wirst du
+es machen.
+
+205
+00:16:03,350 --> 00:16:06,180
+Wenn du lernst, sie rüberzuwerfen, sozusagen.
+
+206
+00:16:06,560 --> 00:16:10,180
+Dafür musst du, kurz gesagt, was, entweder
+den Kacher modulieren ...
+
+207
+00:16:11,250 --> 00:16:12,210
+Haben wir noch Zeit?
+
+208
+00:16:12,410 --> 00:16:14,510
+Ja. Fünf Minuten. Sieben.
+
+209
+00:16:15,160 --> 00:16:18,680
+Ich erkläre, was den Kacher, also, von einem
+Nicht-Kacher unterscheidet.
+
+210
+00:16:19,680 --> 00:16:21,970
+Und jetzt passen Sie mal ganz genau auf.
+
+211
+00:16:22,070 --> 00:16:27,240
+Ein wichtiger Punkt. Denn manchmal kommen
+Funkamateure auf den Kanal und fangen an,
+
+212
+00:16:27,240 --> 00:16:32,720
+ihre Bildung zur Schau zu stellen und sagen:
+Leute, ihr wisst ja gar nichts, warum nennt
+
+213
+00:16:32,720 --> 00:16:38,320
+ihr einen Autogenerator einen Kacher, das ist
+doch ein dämlicher Name. Aber die Sache ist,
+
+214
+00:16:38,320 --> 00:16:43,680
+dass diese Leute nie einen echten Kacher
+gebaut haben, ihn nicht untersucht haben, ihn
+
+215
+00:16:43,680 --> 00:16:44,500
+nicht kennen.
+
+216
+00:16:45,100 --> 00:16:50,380
+Und Alexander Romanov wird euch jetzt richtig
+erklären, was denn nun der Unterschied
+
+217
+00:16:50,380 --> 00:16:53,500
+zwischen einem Autogenerator und einem Kacher
+ist.
+
+218
+00:16:54,350 --> 00:16:56,010
+Wissenschaftlich und populär.
+
+219
+00:16:56,870 --> 00:17:02,260
+Was Brovin erfunden hat, sozusagen. Hier ist
+der Unterschied zum Autogenerator.
+
+220
+00:17:02,510 --> 00:17:06,840
+Das ist ja im Grunde ein Autogenerator. Aber
+der Witz ist, also. Wenn wir ihn uns von der
+
+221
+00:17:06,840 --> 00:17:08,220
+Stromversorgung her ansehen.
+
+222
+00:17:08,420 --> 00:17:09,440
+Plus, Minus.
+
+223
+00:17:10,200 --> 00:17:11,360
+Die Kacher-Schaltung.
+
+224
+00:17:13,760 --> 00:17:17,980
+Und bei ihm, da sieht es tatsächlich so aus,
+dass das Ganze am Ende wirklich auf Minus geht.
+
+225
+00:17:21,160 --> 00:17:24,920
+Dann haben die Jungs das Ganze genommen und
+umgewickelt, es wurde wie bei einem
+
+226
+00:17:24,920 --> 00:17:26,410
+Tesla-Transformator, sozusagen.
+
+227
+00:17:26,970 --> 00:17:32,250
+Das Prinzip bleibt gleich. Bei ihm ist es so,
+also: bei ihm ist dieser Impuls, er ist
+
+228
+00:17:32,250 --> 00:17:34,010
+phasenverschoben, sozusagen.
+
+229
+00:17:34,300 --> 00:17:37,260
+Kann in Phase sein, kann verschoben sein,
+also, ja.
+
+230
+00:17:40,520 --> 00:17:42,530
+Aber dieser Rücklaufimpuls ...
+
+231
+00:17:43,030 --> 00:17:43,920
+Vom Kollektor.
+
+232
+00:17:44,660 --> 00:17:49,130
+Bei ihm sind Strom und Spannung um
+einhundertachtzig Grad verschoben, deshalb
+
+233
+00:17:49,130 --> 00:17:50,720
+sagt er: stromloser Impuls.
+
+234
+00:17:51,930 --> 00:17:56,150
+Sobald ihr den Autogenerator in den Modus
+bringt, in dem der Rücklaufimpuls diese
+
+235
+00:17:56,150 --> 00:17:58,420
+Verschiebung hat, bekommt ihr einen Kacher.
+
+236
+00:17:58,730 --> 00:18:02,300
+Wenn keine Verschiebung da ist, habt ihr
+keinen Kacher. Dann habt ihr sonst was,
+
+237
+00:18:02,300 --> 00:18:02,890
+verstehst du.
+
+238
+00:18:03,550 --> 00:18:07,730
+Ich habe ein System gemacht, was meinen
+Kacher von Brovins Kacher unterscheidet, also.
+
+239
+00:18:08,690 --> 00:18:12,900
+Ich erkläre es für die absoluten Laien,
+sozusagen. Mein Kacher, also, hat eine
+
+240
+00:18:12,900 --> 00:18:15,200
+Verschiebung von Strom und Spannung, also.
+
+241
+00:18:17,520 --> 00:18:19,380
+Und zwar hier, und hier, also.
+
+242
+00:18:19,760 --> 00:18:24,800
+Und bei ihm nur hier. Deshalb, wenn es hier
+und hier ist — dann ist das mein Kacher.
+
+243
+00:18:25,160 --> 00:18:27,930
+Und wenn es, also, nur hier ist — dann ist es
+sein Kacher.
+
+244
+00:18:28,400 --> 00:18:32,520
+Und wenn weder hier noch da — dann ist es ein
+Autogenerator. Klar?
+
+245
+00:18:34,040 --> 00:18:36,270
+Verstanden? Das war 's.
+
+246
+00:18:36,770 --> 00:18:40,800
+Und das nervt: Da bauen sie irgendwas,
+wickeln was zusammen, zeigen es mir, dann
+
+247
+00:18:40,800 --> 00:18:45,040
+vergehen drei Jahre, also, ich bin der Idiot,
+und sie stellen die Frage: Was ist der
+
+248
+00:18:45,040 --> 00:18:47,940
+Unterschied zwischen einem Kacher und einem
+Autogenerator?
+
+249
+00:18:48,700 --> 00:18:53,000
+Da sitzt man dann, weißt du, lässt die Hände
+sinken, was soll man demjenigen sagen? Keine
+
+250
+00:18:53,000 --> 00:18:57,440
+Ahnung. Vasya sagt: Ich hab gerade keine Zeit,
+ich ruf dich zurück, wenn mir der Schweiß von
+
+251
+00:18:57,440 --> 00:19:01,050
+der Stirn getrocknet ist, verstehst du, wenn
+ich mich wieder beruhigt habe.
+
+252
+00:19:01,800 --> 00:19:03,050
+So sieht 's eben aus.
+
+253
+00:19:03,550 --> 00:19:08,550
+Es ist also nichts Schlimmes dabei. Man muss
+die Dinge einfach so sehen, wie sie sind.
+
+254
+00:19:13,220 --> 00:19:14,870
+Nun ja, so läuft das eben.
+
+255
+00:19:15,070 --> 00:19:20,760
+Während wir uns die Ausschnitte von Romanov
+angesehen haben, habe ich die Isolierung mit
+
+256
+00:19:20,760 --> 00:19:22,980
+Malerkrepp bereits fertiggestellt.
+
+257
+00:19:24,190 --> 00:19:28,490
+Ein ganz hübsches Ding ist das geworden, eine
+Mumie aus einem Transformator.
+
+258
+00:19:29,310 --> 00:19:34,280
+Und jetzt fahre ich mit der Isolierung
+darüber mit einer Fluoroplast-Folie fort.
+
+259
+00:19:34,280 --> 00:19:39,250
+Also, zuerst wird das Fluoroplast mit
+Klebeband fixiert, und dann führen wir die
+
+260
+00:19:39,250 --> 00:19:41,010
+vollständige Wicklung durch.
+
+261
+00:19:41,400 --> 00:19:46,760
+Und in dem Moment, in dem wir den Anschluss
+erreichen, wickeln wir das Fluoroplast um den
+
+262
+00:19:46,760 --> 00:19:47,730
+Anschluss herum.
+
+263
+00:19:48,830 --> 00:19:51,990
+Wir machen eine zusätzliche Isolierung in
+dieser Breite.
+
+264
+00:19:53,770 --> 00:19:57,110
+Vorsichtig wickeln wir es an dieser Stelle um,
+damit ...
+
+265
+00:19:59,000 --> 00:20:01,780
+...
+und führen es dann vorsichtig weiter in die
+
+266
+00:20:01,780 --> 00:20:07,110
+gewünschte Wickelrichtung. Das heißt, damit
+haben wir die Basis des Anschlusses mit einem
+
+267
+00:20:07,110 --> 00:20:12,070
+Schrumpfschlauch isoliert und zusätzlich noch
+mit einem speziellen Fluoroplast-Band
+
+268
+00:20:12,070 --> 00:20:13,340
+sorgfältig umwickelt.
+
+269
+00:20:13,840 --> 00:20:15,510
+Jetzt können wir weitermachen.
+
+270
+00:20:17,890 --> 00:20:21,700
+Auf diese Weise erhalten wir eine besonders
+hochwertige und zuverlässige
+
+271
+00:20:21,700 --> 00:20:22,990
+Hochspannungsisolierung.
+
+272
+00:20:25,100 --> 00:20:26,360
+...
+in diesem Bereich.
+
+273
+00:20:28,830 --> 00:20:33,340
+Und unser Transformator wird auf jeden Fall
+zuverlässig und sicher arbeiten. Deshalb
+
+274
+00:20:33,340 --> 00:20:37,800
+streichen wir das Material ganz sorgfältig
+glatt, ziehen es dann ganz leicht an und
+
+275
+00:20:37,800 --> 00:20:40,680
+wickeln es anschließend vorsichtig und
+gleichmäßig um.
+
+276
+00:20:43,910 --> 00:20:46,320
+Das ist eine eher gemächliche Arbeit,
+
+277
+00:20:48,370 --> 00:20:50,600
+aber von ihrer Qualität hängt viel ab.
+
+278
+00:20:59,470 --> 00:21:02,660
+So, das Stück ist zu Ende, jetzt fixiere ich
+das nächste.
+
+279
+00:21:03,340 --> 00:21:06,260
+Ich wickle es auch um den Anschluss, na ja,
+und so weiter.
+
+280
+00:21:08,120 --> 00:21:12,360
+Ich habe die Isolierung der ersten Schicht
+des Transformators mit Fluoroplast-Band
+
+281
+00:21:12,360 --> 00:21:12,990
+vorgenommen.
+
+282
+00:21:14,110 --> 00:21:19,070
+Es ist eigentlich sehr empfindlich, und wenn
+man direkt darüber wickelt, kann man es beim
+
+283
+00:21:19,070 --> 00:21:21,880
+Wickeln eines dicken Drahtes mit Kraft
+beschädigen.
+
+284
+00:21:22,140 --> 00:21:26,970
+Deshalb muss es jetzt zusätzlich mit
+Malerkrepp umwickelt werden. Damit schützen
+
+285
+00:21:26,970 --> 00:21:31,120
+wir es vor dem Reißen. Ich habe die
+Isolierung der ersten Schicht des
+
+286
+00:21:31,120 --> 00:21:35,340
+Transformators beendet und gehe zur Wicklung
+der zweiten Schicht über.
+
+287
+00:21:36,150 --> 00:21:40,940
+Ich empfehle, dass die Anschlüsse der zweiten
+Wicklung nicht in der Nähe der Anschlüsse der
+
+288
+00:21:40,940 --> 00:21:45,370
+ersten Wicklung liegen, damit es keinen
+Kurzschluss gibt, und auch zur Erleichterung
+
+289
+00:21:45,370 --> 00:21:46,010
+der Montage.
+
+290
+00:21:46,720 --> 00:21:51,060
+Wir müssen diese Anschlüsse an diesen Stellen
+zwischen ihnen herausführen.
+
+291
+00:21:51,620 --> 00:21:56,590
+Dazu versetzen wir den Draht bis zur Mitte
+zwischen den Abgriffen der Primärwicklung und
+
+292
+00:21:56,590 --> 00:21:58,300
+beginnen dann mit dem Wickeln.
+
+293
+00:21:58,920 --> 00:22:03,810
+Dabei muss dieser Draht, der hier quer
+verläuft, wirklich gut isoliert werden. Ich
+
+294
+00:22:03,810 --> 00:22:06,600
+habe ihn mit mehreren Schichten PTFE isoliert,
+
+295
+00:22:07,220 --> 00:22:11,910
+dann gehe ich noch mit Malerkrepp drüber und
+noch mal PTFE. Und erst danach lege ich das
+
+296
+00:22:11,910 --> 00:22:14,120
+Ende der zweiten Wicklungsschicht darauf.
+
+297
+00:22:14,530 --> 00:22:19,460
+So, ich wickle jetzt die zweite Schicht. Dem
+Plan entsprechend markiere ich die Anschlüsse
+
+298
+00:22:19,460 --> 00:22:22,070
+der zweiten Schicht mit gelbem
+Schrumpfschlauch.
+
+299
+00:22:22,740 --> 00:22:26,920
+Der Draht der zweiten Schicht lässt sich viel
+leichter wickeln, er läuft über die
+
+300
+00:22:26,920 --> 00:22:29,690
+abgerundeten Kanten des Kerns und liegt ganz
+weich an.
+
+301
+00:22:30,740 --> 00:22:32,970
+Das geht so viel bequemer und auch schneller.
+
+302
+00:22:33,190 --> 00:22:37,340
+Im Großen und Ganzen wickeln wir mit einem
+Lächeln, die Stimmung ist wirklich gut.
+
+303
+00:22:38,020 --> 00:22:42,630
+Ich wickle jetzt weiter, höre mir Infos aus
+dem Internet an, und ihr schaut euch das
+
+304
+00:22:42,630 --> 00:22:43,960
+Video einfach weiter an.
+
+305
+00:22:44,770 --> 00:22:49,510
+So, die zweite Schicht ist fertig, es fehlt
+nur noch eine und dann ist Feierabend.
+
+306
+00:22:49,570 --> 00:22:55,910
+Aber uns steht erst mal noch die Isolierung
+bevor. So sieht die Konstruktion im Moment aus.
+
+307
+00:22:56,970 --> 00:22:59,650
+Ich werde den Draht auch wieder quer
+rüberziehen.
+
+308
+00:22:59,950 --> 00:23:03,320
+Und jetzt müssen die Anschlüsse auf drei
+Punkte aufgeteilt werden.
+
+309
+00:23:04,470 --> 00:23:05,210
+Dreieck.
+
+310
+00:23:06,150 --> 00:23:08,470
+Das werden die letzten drei Anschlüsse sein.
+
+311
+00:23:09,410 --> 00:23:10,630
+Hier von diesem Teil.
+
+312
+00:23:11,950 --> 00:23:15,340
+Hier habe ich, wie gesagt, den quer gezogenen
+Draht bereits isoliert.
+
+313
+00:23:17,110 --> 00:23:19,750
+Und das ist der letzte Anschluss der zweiten
+Schicht.
+
+314
+00:23:21,800 --> 00:23:24,680
+Die zweite Schicht isoliere ich genauso wie
+die erste.
+
+315
+00:23:25,650 --> 00:23:32,170
+Zuerst eine Schicht Malerkrepp, dann mehrere
+Schichten PTFE und zum Schluss wieder eine
+
+316
+00:23:32,170 --> 00:23:38,840
+Schicht Malerkrepp. Los geht 's. So, ich habe
+die zweite Schicht des Transformators jetzt
+
+317
+00:23:38,840 --> 00:23:40,210
+mit PTFE isoliert.
+
+318
+00:23:41,110 --> 00:23:44,590
+Ich möchte darauf aufmerksam machen, wie die
+Anschlüsse isoliert sind.
+
+319
+00:23:46,680 --> 00:23:50,250
+Das heißt, sie sind zusätzlich umwickelt,
+jeder einzelne Anschluss.
+
+320
+00:23:54,760 --> 00:24:00,110
+Hier, nun ja, und der gesamte Transformator
+ist in mehreren Schichten PTFE-Isolierung
+
+321
+00:24:00,110 --> 00:24:00,810
+eingepackt.
+
+322
+00:24:07,250 --> 00:24:11,330
+Ich denke, der Sinn der Sache ist hier
+wirklich klar, damit wir an diesen wichtigen
+
+323
+00:24:11,330 --> 00:24:15,510
+Stellen auf keinen Fall, wirklich unter
+keinen Umständen, einen Durchschlag bekommen.
+
+324
+00:24:18,000 --> 00:24:21,900
+So, ich bin fast fertig mit dem Wickeln der
+dritten Schicht des Transformators.
+
+325
+00:24:22,050 --> 00:24:27,130
+Die Isolierung habe ich schon gemacht. Man
+sieht, dass hier noch eins, zwei, drei, vier,
+
+326
+00:24:27,130 --> 00:24:30,690
+fünf Windungen zu je dreißig Zentimetern
+übrig geblieben sind.
+
+327
+00:24:31,700 --> 00:24:33,100
+Etwa zwei Meter Draht.
+
+328
+00:24:33,220 --> 00:24:35,820
+Jetzt führe ich den Draht noch bis zu diesem
+Punkt hier.
+
+329
+00:24:37,150 --> 00:24:41,520
+Und genau das, was wir aus diesem Maß
+berechnet haben, sechsundzwanzig bis
+
+330
+00:24:41,520 --> 00:24:46,310
+achtundzwanzig Meter, nun, ich habe
+achtundzwanzig Meter genommen, das kommt laut
+
+331
+00:24:46,310 --> 00:24:47,920
+den Berechnungen genau hin.
+
+332
+00:24:48,320 --> 00:24:53,940
+Das heißt, wenn man die Drahtlänge der ersten
+Schicht, also die Länge des Drahtes, der ganz
+
+333
+00:24:53,940 --> 00:24:58,930
+am Anfang aufgewickelt wird, mit drei
+multipliziert, dann erhält man in der Regel
+
+334
+00:24:58,930 --> 00:25:03,980
+einen ziemlich passenden Wert für die
+berechnete Gesamtlänge des gesamten Drahtes.
+
+335
+00:25:06,170 --> 00:25:11,410
+Jetzt wickle ich den Draht ganz sorgfältig zu
+Ende, isoliere ihn ebenfalls mit PTFE, damit
+
+336
+00:25:11,410 --> 00:25:16,290
+ist die Wicklung dann auch schon komplett
+fertiggestellt und bereit für den nächsten
+
+337
+00:25:16,290 --> 00:25:16,760
+Schritt.
+
+338
+00:25:26,700 --> 00:25:31,610
+Hier sieht man auch das Rote. Die rote
+Markierung hier, das ist der Schrumpfschlauch,
+
+339
+00:25:31,610 --> 00:25:36,340
+das ist bereits die dritte Schicht. Ich bin
+nun endlich fertig mit dem Wickeln der
+
+340
+00:25:36,340 --> 00:25:40,140
+dritten Schicht des Transformators und habe
+sie komplett isoliert.
+
+341
+00:25:41,530 --> 00:25:44,590
+Es ist so eine Art interessante Qualle dabei
+herausgekommen.
+
+342
+00:25:46,000 --> 00:25:48,190
+Die Anschlüsse sind alle nummeriert.
+
+343
+00:25:49,390 --> 00:25:51,400
+So sieht das Ganze von oben aus.
+
+344
+00:25:52,580 --> 00:25:55,950
+Es ist also eine durchaus ansehnliche
+Konstruktion geworden.
+
+345
+00:25:58,140 --> 00:26:02,570
+Und nun zur Zeit, wie lange ich dafür
+gebraucht habe. Ich habe natürlich Pausen
+
+346
+00:26:02,570 --> 00:26:07,580
+gemacht, aber ich habe um zehn Uhr morgens
+angefangen und bin erst jetzt fertig geworden,
+
+347
+00:26:07,580 --> 00:26:09,460
+wie man sieht, um ein Uhr nachts.
+
+348
+00:26:11,430 --> 00:26:14,660
+Ihr könnt also selbst beurteilen, wie viel
+Zeit ihr
+
+349
+00:26:16,120 --> 00:26:18,280
+für so eine Arbeit einplanen müsst.
+
+350
+00:26:18,960 --> 00:26:24,530
+Dies ist eine der kritischsten Komponenten,
+genau wie das Leistungsmodul. Deshalb muss
+
+351
+00:26:24,530 --> 00:26:29,710
+man bei der Herstellung sehr sorgfältig
+vorgehen, da sie die Hauptlast trägt und
+
+352
+00:26:29,710 --> 00:26:33,370
+perfekt isoliert sein muss, um Durchschläge
+zu vermeiden.
+
+353
+00:26:37,280 --> 00:26:42,150
+Als Nächstes werde ich dann morgen ganz in
+Ruhe die Anschlüsse abisolieren, damit alles
+
+354
+00:26:42,150 --> 00:26:43,290
+gut vorbereitet ist.
+
+355
+00:26:46,740 --> 00:26:52,740
+und die Enden dann entsprechend verzinnen.
+Und das war 's dann auch schon, damit ist die
+
+356
+00:26:52,740 --> 00:26:54,530
+Herstellung abgeschlossen.
+

@@ -1,0 +1,1992 @@
+1
+00:00:00,990 --> 00:00:01,710
+Hallo zusammen!
+
+2
+00:00:03,170 --> 00:00:04,570
+Allen frohen Tag des Funks!
+
+3
+00:00:06,050 --> 00:00:11,690
+So oder so, jeder, der schon mal etwas gelötet hat, darf sich als Teil dieses Feiertags fühlen.
+
+4
+00:00:14,170 --> 00:00:23,270
+Es kommt manchmal vor, dass du im Alltag oder für Experimente irgendein kleines Gerät brauchst, idealerweise einfach, schnell zu bauen, das Spannung erhöht.
+
+5
+00:00:24,470 --> 00:00:28,370
+Insbesondere brauchte ich eine solche Schaltung für eine elektronische Zündung.
+
+6
+00:00:30,790 --> 00:00:34,750
+Die elektronische Zündplatine selbst schaltet über eine solche Spule.
+
+7
+00:00:36,630 --> 00:00:41,890
+Aber für ein erfolgreiches Schalten musste ich 70 Volt an die Primärwicklung dieser Spule anlegen.
+
+8
+00:00:43,230 --> 00:00:47,810
+Und die Bordstromversorgung beträgt 12 Volt, also muss ich einen solchen Wandler bauen.
+
+9
+00:00:50,070 --> 00:01:03,430
+Aber ich entschied gleich, dass mein Wandler nicht nur 70 Volt liefern wird, ich habe einen Abgriff dafür markiert, sondern ich werde auch volle 220 Volt machen, damit ich unterwegs ein Handy laden
+
+10
+00:01:03,430 --> 00:01:06,330
+oder eine 220 Volt Lampe anzünden kann.
+
+11
+00:01:07,550 --> 00:01:10,390
+Du kannst auch Laptops und anderes laden.
+
+12
+00:01:11,930 --> 00:01:15,710
+Die Aufgabe ist gestellt, jetzt müssen wir uns nur auf den Schaltplan einigen.
+
+13
+00:01:16,450 --> 00:01:23,170
+Ich blieb bei dieser Schaltungslösung, basierend auf dem recht verbreiteten IR2153 IC.
+
+14
+00:01:25,250 --> 00:01:28,650
+In der Funk-Amateur-Welt wird er seit langem RK genannt.
+
+15
+00:01:31,290 --> 00:01:34,730
+Der IC hat sich gut bewährt, aber hier musst du vorsichtig sein.
+
+16
+00:01:36,090 --> 00:01:41,910
+Es gibt die R2153 ICS und es gibt dieselbe Abkürzung mit dem Zusatz D.
+
+17
+00:01:42,810 --> 00:01:47,110
+Für diesen Wandler brauchen wir speziell den IR2153.
+
+18
+00:01:49,270 --> 00:01:54,410
+Der IC mit dem D-Zusatz hat eine Diode im Gehäuse zwischen den Pins 1 und 8.
+
+19
+00:01:56,770 --> 00:02:02,130
+Diese Lösungen sind im Gegensatz dazu nicht für Aufwärtswandler, sondern für Abwärtswandler ausgelegt.
+
+20
+00:02:03,630 --> 00:02:08,190
+Auf Halbbrücken oder Brückenbasis, wenn du zwei Steuer-Its für eine Brücke verwendest.
+
+21
+00:02:10,470 --> 00:02:13,830
+Achte beim Kauf darauf, dass hier kein D-Zusatz steht.
+
+22
+00:02:18,060 --> 00:02:30,020
+Wenn du Laborausrüstung hast, Netzteile, Oszilloskop und andere Geräte, ist es ziemlich einfach, diese Schaltung abzustimmen und ein erfahrener Funk-Amateur kommt damit problemlos zurecht.
+
+23
+00:02:31,580 --> 00:02:38,820
+Aber wenn du beschlossen hast, einfach einen Wandler für den Alltag zu bauen und keine Ausrüstung hast, ist das eigentlich kein Problem.
+
+24
+00:02:40,140 --> 00:02:42,220
+Ich zeige dir, wie es geht.
+
+25
+00:02:43,420 --> 00:02:45,000
+Wir befolgen ein paar Regeln.
+
+26
+00:02:47,740 --> 00:02:48,860
+Erste Grundregel.
+
+27
+00:02:51,000 --> 00:02:56,020
+Baue die Steuerseite mit den Transistoren zusammen, ohne den Aufwärts-Transformator selbst anzuschließen.
+
+28
+00:02:57,700 --> 00:03:01,420
+Und nimm sie in Betrieb, prüfe den Aufbau, und der Start ist Pflicht.
+
+29
+00:03:02,820 --> 00:03:07,880
+Schließe in Reihe in den Stromkreis eine 12V-Lampe von 10 bis 21W an.
+
+30
+00:03:09,900 --> 00:03:17,820
+Wenn die Lampe beim Starten leuchtet oder aufleuchtet, schalte sofort aus und verstehe, dass in der Schaltung irgendwo ein Fehler gemacht wurde.
+
+31
+00:03:19,160 --> 00:03:24,240
+Wenn die Lampe nicht leuchtet, kannst du als nächstes den Transformator anschließen und damit prüfen.
+
+32
+00:03:26,960 --> 00:03:33,020
+Ich empfehle, über eine Lampe zu starten, weil normalerweise zu Hause irgendeine Stromquelle vorhanden ist.
+
+33
+00:03:34,640 --> 00:03:37,860
+Normalerweise ist es dieselbe Batterie, die den Wandler versorgt.
+
+34
+00:03:38,820 --> 00:03:43,000
+Wenn du keine Lampe am Eingang setzt, kann das Ding sehr schnell durchbrennen.
+
+35
+00:03:44,500 --> 00:03:49,760
+Das ist frustrierend und nimmt einem Anfänger jeden Anreiz, sich weiter mit Elektronik zu beschäftigen.
+
+36
+00:03:53,040 --> 00:03:59,020
+Um die Schaltung ohne Instrumente zu prüfen, müssen wir eine Lampe in Reihe mit der Stromversorgung anlöten.
+
+37
+00:04:00,740 --> 00:04:04,840
+Und zwei weitere Lampen nehmen, die als Last für diese Transistoren dienen.
+
+38
+00:04:06,720 --> 00:04:09,180
+Sie werden anstelle dieser Wicklungen angeschlossen.
+
+39
+00:04:10,760 --> 00:04:12,660
+Prüfe unsere Schaltung auf Fehler.
+
+40
+00:04:14,920 --> 00:04:19,240
+Schließe den Minuspol der Stromversorgung an Minus, plus über die Lampe an Plus.
+
+41
+00:04:21,340 --> 00:04:26,960
+Du bemerkst, dass die Schaltung sich jetzt entlädt, sichtbar daran, dass hier ein kleiner Funke durchschlägt.
+
+42
+00:04:28,820 --> 00:04:32,960
+Sieh in der Praxis, das sind die Elektrolytkondensatoren, die sich aufladen.
+
+43
+00:04:34,840 --> 00:04:36,640
+Und die Lampe leuchtet nicht auf.
+
+44
+00:04:37,520 --> 00:04:42,940
+Wir können den Drehwiderstand drehen, und wie du siehst, leuchtet die Lampe in keinem Modus.
+
+45
+00:04:44,100 --> 00:04:49,860
+Das bestätigt, dass wir die Schaltung bereits korrekt zusammengebaut haben und sie höchstwahrscheinlich funktionieren wird.
+
+46
+00:04:51,420 --> 00:04:54,940
+Jetzt sollten wir prüfen, ob die Leistungsschalter funktionieren.
+
+47
+00:04:57,060 --> 00:04:59,240
+Jetzt löten wir Lampen an und prüfen.
+
+48
+00:05:01,500 --> 00:05:07,020
+Lampen sind angelötet, das heißt, die Lampen sind jetzt anstelle dieser Wicklungen angeschlossen.
+
+49
+00:05:08,880 --> 00:05:12,820
+Der Mittelpunkt, an den die Lampen anschließen, ist dieser Anschluss.
+
+50
+00:05:14,500 --> 00:05:16,260
+Er entspricht diesem Plusstromkabel.
+
+51
+00:05:17,780 --> 00:05:18,640
+Also dieser Punkt.
+
+52
+00:05:21,480 --> 00:05:25,580
+Bevor du Strom anlegst, stelle den Widerstandsschieber etwa in die Mittelstellung.
+
+53
+00:05:26,620 --> 00:05:29,280
+Das sind etwa 30 bis 40 kHz.
+
+54
+00:05:30,920 --> 00:05:33,140
+Und lege Strom an den Eingang an.
+
+55
+00:05:35,560 --> 00:05:38,540
+Wie du siehst, leuchtet die Lampe nicht, nichts passiert.
+
+56
+00:05:39,960 --> 00:05:41,440
+Prüfe den ersten Transistor.
+
+57
+00:05:42,800 --> 00:05:43,920
+Das ist sein Anschluss.
+
+58
+00:05:45,220 --> 00:05:46,420
+Das ist von seinem Drain.
+
+59
+00:05:48,880 --> 00:05:51,580
+Diese schwarzen Drähte kommen von dem Transistordrain.
+
+60
+00:05:52,600 --> 00:05:53,120
+Prüfen.
+
+61
+00:05:53,840 --> 00:05:55,920
+Du siehst, die Lampe leuchtet.
+
+62
+00:05:57,940 --> 00:06:00,300
+Der Transistor arbeitet im Betriebsmodus.
+
+63
+00:06:01,600 --> 00:06:03,400
+Jetzt prüfe den zweiten Transistor.
+
+64
+00:06:05,700 --> 00:06:07,380
+Die Lampe leuchtet auch.
+
+65
+00:06:09,100 --> 00:06:09,920
+Alles in Ordnung.
+
+66
+00:06:10,780 --> 00:06:13,840
+Mit einem Zweistrahloszilloskop können wir Folgendes prüfen.
+
+67
+00:06:15,240 --> 00:06:17,700
+Zuerst schauen wir das Signal an diesen Punkten an.
+
+68
+00:06:18,860 --> 00:06:20,260
+An den FET Gates.
+
+69
+00:06:21,840 --> 00:06:25,320
+Wir müssen bestätigen, dass die Schaltung korrekt arbeitet.
+
+70
+00:06:26,820 --> 00:06:30,180
+Und dass es eine sogenannte Todzeit zwischen den Steuersignalen gibt.
+
+71
+00:06:31,940 --> 00:06:35,220
+Also Zeit, in der sich die Steuerungen nicht überlappen.
+
+72
+00:06:37,120 --> 00:06:38,600
+Lege Strom an den Eingang an.
+
+73
+00:06:40,440 --> 00:06:41,410
+Beobachte die Steuersignale.
+
+74
+00:06:44,400 --> 00:06:45,840
+Du kannst mit der Frequenz spielen.
+
+75
+00:06:47,500 --> 00:06:48,160
+Schau.
+
+76
+00:06:49,160 --> 00:06:52,530
+Die Obergrenze liegt irgendwo bei 100 kHz.
+
+77
+00:06:55,520 --> 00:06:58,360
+Und das Minimum ist 12,8 kHz.
+
+78
+00:07:01,090 --> 00:07:04,000
+Uns interessiert der Betrieb ab 20 kHz.
+
+79
+00:07:05,960 --> 00:07:08,960
+Bleiben wir bei etwa 30 kHz stehen.
+
+80
+00:07:10,260 --> 00:07:11,380
+Und schau.
+
+81
+00:07:13,300 --> 00:07:15,380
+Das Signal ist rechteckig.
+
+82
+00:07:16,120 --> 00:07:18,860
+Jetzt prüfen wir das Vorhandensein der Todzeit.
+
+83
+00:07:21,080 --> 00:07:22,780
+Verschiebe die Signale gegeneinander.
+
+84
+00:07:24,120 --> 00:07:29,600
+Und beobachte, dass es tatsächlich Pausen zwischen dem Arbeiten des einen und des anderen Arms gibt.
+
+85
+00:07:31,160 --> 00:07:34,100
+Du kannst auf die flache Flanke achten.
+
+86
+00:07:35,760 --> 00:07:37,120
+Die Transistoröffnungsflanke.
+
+87
+00:07:38,320 --> 00:07:42,780
+Das ist die Arbeit der eingebauten internen Treiber über den Widerstand am Transistorgate.
+
+88
+00:07:44,780 --> 00:07:46,780
+Als nächstes ist die Gartekapazitätsentladung.
+
+89
+00:07:49,360 --> 00:07:50,180
+Sie ist steiler.
+
+90
+00:07:51,760 --> 00:07:53,660
+Fällt über den 1 k Widerstand.
+
+91
+00:07:56,480 --> 00:07:57,560
+Normales Signal.
+
+92
+00:08:01,200 --> 00:08:02,180
+Es wird funktionieren.
+
+93
+00:08:06,250 --> 00:08:09,410
+Jetzt schauen wir uns die Schalterfunktion unter Last an.
+
+94
+00:08:10,990 --> 00:08:13,450
+Wir schauen die Lampen an diesen Punkten an.
+
+95
+00:08:15,070 --> 00:08:16,330
+An den Transistordräng.
+
+96
+00:08:20,630 --> 00:08:23,430
+Ich habe die Sonden an diesen Punkten angeschlossen.
+
+97
+00:08:24,930 --> 00:08:27,290
+Du siehst, sie sind an den Lampen.
+
+98
+00:08:28,070 --> 00:08:30,710
+Die Messung erfolgt relativ zum gemeinsamen Leiter.
+
+99
+00:08:31,970 --> 00:08:35,330
+Der Oszilloskop gemeinsamen Leiter liegt am Minus der Stromquelle.
+
+100
+00:08:37,890 --> 00:08:38,670
+Strom anlegen.
+
+101
+00:08:42,440 --> 00:08:44,500
+Du siehst, die Last arbeitet.
+
+102
+00:08:46,060 --> 00:08:47,660
+Und was sagt uns dieses Oszillogramm?
+
+103
+00:08:51,090 --> 00:08:57,290
+Wenn wir uns das Oszillogramm an den Lampen ansehen, sehen wir, dass der Betrieb mit Überlappung stattfindet.
+
+104
+00:08:59,090 --> 00:09:04,550
+Das ist ein normales Oszillogramm, denn vergiss nicht, dass der FET die Spannung invertiert.
+
+105
+00:09:06,570 --> 00:09:10,870
+Der Schaltbetrieb wird also in dieser Zone sein, wenn die Spannung auf Null abfällt.
+
+106
+00:09:12,230 --> 00:09:13,590
+Jetzt komme ich zurück.
+
+107
+00:09:15,430 --> 00:09:16,770
+Der Schalter öffnet.
+
+108
+00:09:17,070 --> 00:09:18,130
+Die Spannung fällt ab.
+
+109
+00:09:19,730 --> 00:09:22,070
+Der Schalter arbeitet und schließt.
+
+110
+00:09:23,490 --> 00:09:28,690
+Wir können sehen, hier arbeitet der erste Schalter, eine Pause, und hier der zweite Schalter.
+
+111
+00:09:30,290 --> 00:09:34,030
+An dieser Last haben wir verifiziert, dass die Schaltung korrekt arbeitet.
+
+112
+00:09:35,490 --> 00:09:39,790
+Du kannst den Frequenzbereich durchgehen und prüfen, dass die Todzeit erhalten bleibt.
+
+113
+00:09:41,790 --> 00:09:43,030
+Das passt uns.
+
+114
+00:09:44,390 --> 00:09:45,090
+Nächster Schritt.
+
+115
+00:09:46,150 --> 00:09:49,350
+Schaltung geprüft, sie funktioniert, läuft korrekt.
+
+116
+00:09:51,450 --> 00:09:53,810
+Und weiter zum Aufwärtstransformator.
+
+117
+00:09:55,650 --> 00:10:00,550
+Sagen wir, ich habe Verriet genommen, einen Ring, und die Sekundärwicklung darauf gewickelt.
+
+118
+00:10:03,490 --> 00:10:05,910
+Die Aufwärtswindungszahl wird individuell gewählt.
+
+119
+00:10:07,270 --> 00:10:12,170
+Es gibt Programme, mit denen du das berechnen kannst, aber zu Hause kümmern wir uns nicht darum.
+
+120
+00:10:13,210 --> 00:10:18,910
+Wir haben die Wicklung gewickelt, angeschlossen, die Spannung am Ausgang mit einem Multimeter geprüft.
+
+121
+00:10:20,610 --> 00:10:22,250
+Wenn wir zufrieden sind, lass es.
+
+122
+00:10:23,330 --> 00:10:26,470
+Wenn nicht, füge weitere Windungen hinzu, bis du das Ziel erreichst.
+
+123
+00:10:27,930 --> 00:10:29,270
+Und wickle die Primärwicklung.
+
+124
+00:10:30,470 --> 00:10:33,310
+Die Primärwicklung wird komplett in eine Richtung gewickelt.
+
+125
+00:10:35,070 --> 00:10:36,650
+Gleiche Windungszahl pro Arm.
+
+126
+00:10:38,130 --> 00:10:39,530
+Mit einem Abgriff von der Mitte.
+
+127
+00:10:41,330 --> 00:10:50,230
+Vergiss nicht, dass die ganze Wicklung in eine Richtung geht, denn aus Unerfahrenheit könntest du in verschiedene Richtungen wickeln, und dann fliegt der Wandler in die Luft.
+
+128
+00:10:51,450 --> 00:10:56,690
+Ich habe die Schaltung zusammengebaut, eine 15 W Last bei 220 V angeschlossen.
+
+129
+00:10:58,390 --> 00:11:01,030
+Und hier sollte ich einen wichtigen Punkt erklären.
+
+130
+00:11:02,530 --> 00:11:10,510
+Selbst nachdem du verifiziert hast, dass die Schaltung funktioniert, trenne diese Lampe während der ersten Starts mit dem Aufwärtstransformator nicht.
+
+131
+00:11:11,710 --> 00:11:18,950
+Denn der Schaltbetrieb an Lampen, an aktivem Widerstand, ist völlig anders als wenn der Schalter an einer reaktiven Last arbeitet.
+
+132
+00:11:20,810 --> 00:11:21,990
+Also an einer Spule.
+
+133
+00:11:24,730 --> 00:11:26,510
+Lass mich es dir visuell zeigen.
+
+134
+00:11:28,330 --> 00:11:28,830
+Strom anlegen.
+
+135
+00:11:31,390 --> 00:11:32,610
+Wie wir dachten.
+
+136
+00:11:33,790 --> 00:11:36,850
+Wir brauchen keinen großen Kern für die Leistung.
+
+137
+00:11:37,770 --> 00:11:38,810
+Unsere Lasten sind klein.
+
+138
+00:11:39,890 --> 00:11:42,870
+Handy laden, eine kleine Lampe mit geringer Leistung.
+
+139
+00:11:44,470 --> 00:11:45,410
+Bei 20 W.
+
+140
+00:11:47,250 --> 00:11:48,170
+Strom anlegen.
+
+141
+00:11:49,510 --> 00:11:52,070
+Hier siehst du, die Lampe hat aufgeleuchtet.
+
+142
+00:11:53,430 --> 00:11:53,730
+Am Eingang.
+
+143
+00:11:54,550 --> 00:11:55,910
+Aber die Last leuchtet kaum.
+
+144
+00:11:58,050 --> 00:11:58,850
+Was ist los?
+
+145
+00:12:01,030 --> 00:12:03,330
+Hier kannst du einen großen Fehler machen.
+
+146
+00:12:04,990 --> 00:12:07,730
+Du musst auf die Anzeichen dessen achten, was passiert.
+
+147
+00:12:08,790 --> 00:12:11,530
+Zuerst musst du den Kühlkörper und die Schalter berühren.
+
+148
+00:12:13,430 --> 00:12:16,070
+Du siehst, der Kühlkörper erwärmt sich stark.
+
+149
+00:12:17,270 --> 00:12:19,610
+Plus der Kern selbst erwärmt sich stark.
+
+150
+00:12:21,610 --> 00:12:25,850
+Wäre hier keine Strombegrenzungslampe, würde Rauch aus diesem Kern aufsteigen.
+
+151
+00:12:27,530 --> 00:12:29,510
+Und die Schalter wären vielleicht durchgebrannt.
+
+152
+00:12:30,210 --> 00:12:33,790
+Denn in dieser Situation ist dieser Kern in Sättigung gegangen.
+
+153
+00:12:36,030 --> 00:12:39,290
+Sättigung ist ein unangenehmer Betriebsmodus für den Ferritkern.
+
+154
+00:12:41,150 --> 00:12:43,750
+Schalte aus, denn er hat sich schon stark erwärmt.
+
+155
+00:12:45,290 --> 00:12:49,530
+Ein Modus, in dem der Kern die Eigenschaft des Ummagnetisierens verliert.
+
+156
+00:12:50,250 --> 00:12:54,010
+Da unsere Schaltung keine Regelung der Steuerpulsdauer erlaubt.
+
+157
+00:12:57,850 --> 00:13:01,370
+Was eigentlich die Dauer der Schalteröffnung beim Arbeiten an der Last ist?
+
+158
+00:13:02,450 --> 00:13:07,450
+Dann können wir die optimalen Parameter für diesen Kern nicht durch Anpassen der Dauer auswählen.
+
+159
+00:13:09,350 --> 00:13:13,730
+Selbst das Erhöhen der Windungszahl oder Ändern der Betriebsfrequenz führt nirgendwohin.
+
+160
+00:13:15,430 --> 00:13:20,070
+Es gibt einen Ausweg, den Kern des Aufwärtstransformators selbst zu ändern.
+
+161
+00:13:21,710 --> 00:13:23,390
+Bis die Schaltung korrekt startet.
+
+162
+00:13:24,830 --> 00:13:30,990
+Für diese Schaltung habe ich Ferrit gewählt, ebenfalls der Marke 2000 wie dieser, aber du siehst seine Abmessungen.
+
+163
+00:13:31,790 --> 00:13:35,610
+Er ist im Außendurchmesser etwas größer und im Inneren größer.
+
+164
+00:13:37,070 --> 00:13:42,330
+Aber wonach man sich richten sollte, ist nicht der Durchmesser, sondern der Querschnitt des Kerns.
+
+165
+00:13:43,410 --> 00:13:50,190
+Wenn dieser Magnetkern einen Querschnitt von 9x9 mm hat, hat dieser einen Querschnitt von 10x13 mm.
+
+166
+00:13:51,890 --> 00:13:57,250
+Und nur ein solches Ferrit ist der mindestens mögliche Kern, damit diese Schaltung korrekt arbeitet.
+
+167
+00:13:59,250 --> 00:14:01,350
+Beachte auch noch einen wichtigen Punkt.
+
+168
+00:14:03,190 --> 00:14:09,290
+Du kannst nur prüfen, ob dein Kern für diese Schaltung geeignet ist, wenn die Sekundärwicklung vorhanden ist.
+
+169
+00:14:11,030 --> 00:14:16,150
+Wenn du die Primärwicklung ohne die Sekundärwicklung auf den Kern wickelst, wird es funktionieren.
+
+170
+00:14:18,430 --> 00:14:22,050
+Und kann den Eindruck erwecken, dass dieser Kern geeignet ist.
+
+171
+00:14:22,950 --> 00:14:27,150
+Aber sobald du die Sekundärwicklung darauf wickelst, geht er auch in Sättigung.
+
+172
+00:14:28,910 --> 00:14:34,650
+Also musst du ausschließlich mit mindestens mehreren Dutzend Windungen der Sekundärwicklung auf dem Kern prüfen.
+
+173
+00:14:37,490 --> 00:14:42,470
+Also habe ich den Aufwärtstransformator mit einem Magnetkern größeren Querschnitt installiert.
+
+174
+00:14:44,430 --> 00:14:46,110
+Und jetzt testen wir ihn.
+
+175
+00:14:47,330 --> 00:14:49,730
+Achte darauf, wie diese Last jetzt leuchtet.
+
+176
+00:14:52,940 --> 00:14:56,900
+Und achte darauf, wie sich die Wende der Strombegrenzungslampe erwärmt.
+
+177
+00:14:59,240 --> 00:15:07,100
+Wenn wir in jenem Experiment angeschlossen haben und die Last kaum geleuchtet hat, während die Lampe sofort leuchtete, schau in diesem Fall.
+
+178
+00:15:09,260 --> 00:15:13,440
+Du siehst, die Lampe erwärmt sich nicht sofort und die Last leuchtet viel heller.
+
+179
+00:15:15,680 --> 00:15:18,760
+Das bestätigt, dass die Schaltung bereits gestartet ist.
+
+180
+00:15:19,940 --> 00:15:22,800
+Und du hörst, wie der Aufwärtstransformator arbeitet.
+
+181
+00:15:24,380 --> 00:15:30,680
+Da wir wollen, dass das System unhörbar arbeitet, verschieben wir seine Frequenz in den unhörbaren Bereich.
+
+182
+00:15:35,370 --> 00:15:37,250
+Und das System läuft leise.
+
+183
+00:15:39,110 --> 00:15:42,390
+Jetzt beträgt der Verbrauch 13 V 0,9 A.
+
+184
+00:15:44,090 --> 00:15:48,470
+Und jetzt können wir bereits prüfen, wie sich das System bei direkter Verbindung verhält.
+
+185
+00:15:51,010 --> 00:15:55,590
+Du siehst, die Lampe leuchtet mit voller Helligkeit und das System arbeitet.
+
+186
+00:16:00,190 --> 00:16:04,230
+Jetzt zeige ich eine kleine Nuance, mit der viele nicht vertraut sind.
+
+187
+00:16:07,130 --> 00:16:08,670
+Achte auf diesen Kondensator.
+
+188
+00:16:10,950 --> 00:16:13,370
+1F bei 50 V, Keramik.
+
+189
+00:16:15,010 --> 00:16:18,030
+Der an Pin 8 sitzt, direkt neben dem IC selbst.
+
+190
+00:16:20,230 --> 00:16:22,090
+Auf der Platine ist er hier.
+
+191
+00:16:23,850 --> 00:16:24,650
+Sehr nah.
+
+192
+00:16:26,350 --> 00:16:32,910
+Seine Anwesenheit ist Pflicht, denn Keramikkondensatoren geben Ladung schneller ab als Elektrolytkondensatoren.
+
+193
+00:16:34,170 --> 00:16:38,930
+Das verbessert das Garteöffnungssystem, das heißt, es sättigt die Gartekapazität schneller.
+
+194
+00:16:40,790 --> 00:16:44,470
+Und die im IC eingebauten Treiber können die Schalter schärfer öffnen.
+
+195
+00:16:46,130 --> 00:16:49,410
+Da der Schalter schärfer öffnet, ist seine Schaltzeit viel kürzer.
+
+196
+00:16:50,850 --> 00:16:54,630
+Also tendiert die im Schalter freigesetzte Wärme gegen ein Minimum.
+
+197
+00:16:56,990 --> 00:17:00,470
+Jetzt können wir die Schaltung an einer ernsteren Last prüfen.
+
+198
+00:17:01,450 --> 00:17:06,630
+In diesem Fall verwende ich eine 60 W Last, da mein Labornetzteil maximal 5 A liefert.
+
+199
+00:17:10,260 --> 00:17:14,420
+Jetzt zeige ich, wie man den Ausgang für die Last mit der Windungszahl abstimmt.
+
+200
+00:17:16,280 --> 00:17:19,420
+Lege es direkt am Eingang an und schau, die Lampe leuchtet.
+
+201
+00:17:20,640 --> 00:17:23,140
+Jetzt beträgt der Verbrauch 4 A bei 13 V.
+
+202
+00:17:28,200 --> 00:17:33,440
+In diesem Modus mit einer kleinen Last solltest du den Wandler etwa 20 Minuten laufen lassen.
+
+203
+00:17:38,460 --> 00:17:40,700
+Um den Wärmebetrieb der Schalter zu prüfen.
+
+204
+00:17:42,520 --> 00:17:44,820
+Die Schalter sollten sich nicht stark erwärmen.
+
+205
+00:17:46,720 --> 00:17:50,460
+Mit einem Kühlkörper wie diesem sollte praktisch keine Erwärmung stattfinden.
+
+206
+00:17:52,300 --> 00:17:55,360
+Vielleicht etwas über Raumtemperatur bei einer solchen Last.
+
+207
+00:17:56,980 --> 00:17:59,480
+Du musst testen und den Wandler beobachten.
+
+208
+00:18:01,340 --> 00:18:07,560
+Nach dieser Zeit, wenn du bestätigt hast, dass alles funktioniert, kannst du zu größeren Lasten übergehen.
+
+209
+00:18:09,980 --> 00:18:12,360
+Jetzt messen wir auch die Spannung an der Last.
+
+210
+00:18:15,600 --> 00:18:17,420
+Dafür brauchen wir ein Multimeter.
+
+211
+00:18:36,730 --> 00:18:41,030
+Wir sehen also, dass wir jetzt 195 V an der Last haben.
+
+212
+00:18:45,880 --> 00:18:50,480
+Es gibt einen Spannungsabfall, das heißt, wir haben jetzt 5 Windungen pro Arm.
+
+213
+00:18:51,540 --> 00:18:55,580
+Wenn es einen Spannungsabfall gibt, müssen wir die Windungszahl reduzieren.
+
+214
+00:18:56,880 --> 00:19:01,800
+Wir sahen in der vorherigen Messung, dass es einen Spannungsabfall an der Versorgungsspannung gab.
+
+215
+00:19:03,920 --> 00:19:07,480
+Um die Spannung an der Lampe zu erhöhen, haben wir zwei Optionen.
+
+216
+00:19:09,220 --> 00:19:14,060
+Entweder Windungen an der Sekundärwicklung hinzufügen oder die Primärwindungszahl reduzieren.
+
+217
+00:19:15,220 --> 00:19:20,600
+Mit der Primärwicklung musst du sorgfältig arbeiten, entferne immer eine Windung nach der anderen.
+
+218
+00:19:21,900 --> 00:19:24,560
+Ich hatte 5 Windungen, jetzt habe ich 4 gemacht.
+
+219
+00:19:25,720 --> 00:19:27,760
+Und beobachte, Strom anlegen.
+
+220
+00:19:31,750 --> 00:19:34,210
+Und wir sehen 230 V an der Lampe.
+
+221
+00:19:35,390 --> 00:19:37,310
+Ich habe nur eine Windung entfernt.
+
+222
+00:19:38,950 --> 00:19:43,450
+Jetzt ist der Verbrauch gestiegen, unser Wandler hat die 60 W Lastleistung erreicht.
+
+223
+00:19:46,970 --> 00:19:49,730
+Hier ist der Aufbau, mit dem ich gelandet bin.
+
+224
+00:19:52,250 --> 00:19:57,010
+Der Aufwärtstransformator ist mit einer Schraube am Kühlkörper über eine Kartondichtung montiert.
+
+225
+00:19:58,810 --> 00:20:02,030
+Ich blieb bei 5,5 Windungen für die Primärwicklung.
+
+226
+00:20:03,510 --> 00:20:05,290
+Hier ist sie, der weiße Draht.
+
+227
+00:20:08,350 --> 00:20:12,590
+Einen regulären Gleichrichter installiert, 4 Dioden und Ladekondensator.
+
+228
+00:20:13,330 --> 00:20:17,430
+Auch einen Entladewiderstand von 820 K bei 1 W.
+
+229
+00:20:21,270 --> 00:20:25,670
+Er ist für die Sicherheit, damit sich diese Kondensatoren nach einiger Zeit entladen.
+
+230
+00:20:28,170 --> 00:20:31,230
+Der ganze Aufbau ist als freitragende Montage gemacht.
+
+231
+00:20:33,230 --> 00:20:37,490
+Du siehst die Leitungsführung, der einfachste Aufbau ohne Platinenätzung.
+
+232
+00:20:42,120 --> 00:20:44,600
+Jetzt stimmen wir zuerst die Schaltung ab.
+
+233
+00:20:46,360 --> 00:20:49,100
+Wellen den optimalen Modus mit einem Trimporti.
+
+234
+00:20:50,280 --> 00:20:51,640
+Ich zeige, wie das gemacht wird.
+
+235
+00:20:53,000 --> 00:20:55,720
+Und gehen dann zum vollständigen Test unter Last über.
+
+236
+00:20:58,520 --> 00:21:04,520
+Um das System nach der Frequenz abzustimmen, die optimal zu diesem Kern passt, brauchen wir eine Last.
+
+237
+00:21:06,100 --> 00:21:07,780
+Eine 40 Volt Lampe.
+
+238
+00:21:09,180 --> 00:21:15,020
+Oder ein Multimeter, das an den Ausgang gehängt ist, es zeigt direkt das Potenzial an der Lampe.
+
+239
+00:21:16,200 --> 00:21:18,140
+Nun, oder eine Stromquelle.
+
+240
+00:21:20,360 --> 00:21:25,580
+Für jeden, der keine hat, kannst du eine gut geladene Batterie und ein Amperemeter nehmen.
+
+241
+00:21:26,980 --> 00:21:29,020
+Uns interessiert der Wert am Amperemeter.
+
+242
+00:21:30,260 --> 00:21:37,680
+Der Sinn der Abstimmung ist, dass wir die Spannung an der Lampe beobachten und den minimalen Verbrauch finden, bei dem diese Spannung erhalten bleibt.
+
+243
+00:21:39,560 --> 00:21:43,960
+Schalte vor dem Experiment den Trimporti-Schieber in den Minimum-Frequenz-Modus.
+
+244
+00:21:45,360 --> 00:21:46,800
+Das sind etwa 12 Kilohertz.
+
+245
+00:21:49,000 --> 00:21:51,260
+Du hörst, wie der Transformator arbeitet.
+
+246
+00:21:53,160 --> 00:21:54,300
+Strom anlegen.
+
+247
+00:21:59,320 --> 00:22:00,380
+Hier ist der Verbrauch.
+
+248
+00:22:02,880 --> 00:22:05,300
+2,86 A bei 13,9 V.
+
+249
+00:22:06,500 --> 00:22:08,820
+Und die Spannung an der Lampe beträgt 220 V.
+
+250
+00:22:09,600 --> 00:22:14,020
+Jetzt schiebe ich die Lampe leicht zur Seite, damit sie nicht ins Objektiv leuchtet.
+
+251
+00:22:15,420 --> 00:22:20,220
+Der Aufwärtstransformator quietscht leicht und ich beginne langsam, den Trimporti zu drehen.
+
+252
+00:22:26,340 --> 00:22:28,100
+Strom und Spannung beobachten.
+
+253
+00:22:34,000 --> 00:22:37,460
+Der Strom, du siehst, beginnt zu fallen und die Spannung bleibt.
+
+254
+00:22:41,900 --> 00:22:46,480
+Es gibt einen Punkt, 221 V, 2,8 A Verbrauch.
+
+255
+00:22:50,210 --> 00:22:52,870
+Weiter steigt mit Frequenzerhöhung der Verbrauch.
+
+256
+00:22:54,310 --> 00:22:56,650
+Geh zurück und finde den Minimalverbrauchspunkt.
+
+257
+00:23:00,740 --> 00:23:05,080
+Das sind 2,8 A und die Spannung an der Lampe 221 V.
+
+258
+00:23:07,680 --> 00:23:08,380
+Nächste Aktion.
+
+259
+00:23:09,820 --> 00:23:15,800
+Den Widerstand auslöten, messen und einen festen Arbeitswiderstand wählen, der ihn auf der Platine ersetzt.
+
+260
+00:23:19,420 --> 00:23:21,180
+Dieser kommt anstelle des 10 K.
+
+261
+00:23:23,580 --> 00:23:28,000
+Ich habe den Widerstand ausgelötet, hier ist er, jetzt messen wir ihn.
+
+262
+00:23:31,390 --> 00:23:34,710
+Wir sehen, der Widerstand beträgt 3,2 K.
+
+263
+00:23:38,330 --> 00:23:42,290
+Und ich habe diesen Widerstand für mich gefunden, am nächsten an diesem Wert.
+
+264
+00:23:50,370 --> 00:23:52,970
+Sein Widerstand beträgt 3,28 K.
+
+265
+00:23:55,110 --> 00:23:55,950
+Was gut passt.
+
+266
+00:23:57,970 --> 00:24:00,130
+Du kannst auch diese Trimportis verwenden.
+
+267
+00:24:02,310 --> 00:24:06,390
+Du kannst sie mit 10 K kaufen und sie sofort auf die Platine setzen.
+
+268
+00:24:07,790 --> 00:24:10,890
+Sie sind mehrgängig und du kannst den Arbeitspunkt einstellen.
+
+269
+00:24:12,350 --> 00:24:17,990
+Aber da dieses Gerät unterwegs verwendet wird, habe ich beschlossen, diesen Widerstandstyp zu verwenden.
+
+270
+00:24:19,690 --> 00:24:22,910
+Ich habe also den Widerstand auf der Platine installiert.
+
+271
+00:24:24,870 --> 00:24:26,950
+Jetzt können wir den Verbrauch prüfen.
+
+272
+00:24:28,430 --> 00:24:29,310
+Strom anlegen.
+
+273
+00:24:30,970 --> 00:24:33,930
+Du siehst, 221 V.
+
+274
+00:24:35,710 --> 00:24:38,070
+Und Verbrauch von 2,8 A.
+
+275
+00:24:40,210 --> 00:24:41,910
+Das passt uns voll und ganz.
+
+276
+00:24:44,820 --> 00:24:46,880
+Also, jetzt zu den Tests.
+
+277
+00:24:48,040 --> 00:24:54,540
+Ich glaube, ich hatte geplant, diese Platine im Bereich von 120 bis 150 W zu testen.
+
+278
+00:24:55,560 --> 00:24:59,660
+Denn mein Laptop-Ladegerät verbraucht maximal 120 W.
+
+279
+00:25:03,000 --> 00:25:06,360
+Und ich werde es immer im Bereich bis zu 50 W betreiben.
+
+280
+00:25:07,480 --> 00:25:10,020
+Also lass uns einen Check für es organisieren.
+
+281
+00:25:11,760 --> 00:25:12,900
+Bei 200 W.
+
+282
+00:25:14,040 --> 00:25:17,260
+Ich denke, eine so kleine Schaltung wird das schaffen.
+
+283
+00:25:19,840 --> 00:25:23,080
+200 W werden Verbrauch bei 12 V Versorgung sein.
+
+284
+00:25:25,440 --> 00:25:27,020
+Höchstwahrscheinlich etwa 15 A.
+
+285
+00:25:28,980 --> 00:25:30,640
+Dieses Netzteil zieht das nicht.
+
+286
+00:25:31,740 --> 00:25:34,860
+Also hole ich ein Autobatterieladegerät heraus.
+
+287
+00:25:36,520 --> 00:25:39,220
+Weiter zum Test an einer 200 W Lampe.
+
+288
+00:25:41,040 --> 00:25:45,200
+Während ich vorbereitete und prüfte, ist ein kleiner Unfall passiert.
+
+289
+00:25:47,560 --> 00:25:52,160
+Diese EFR 207 Dioden im Gleichrichter haben es nicht ausgehalten.
+
+290
+00:25:54,140 --> 00:26:00,100
+Bei 150 W hat es großartig funktioniert, aber die 200 W Lampe hat das nicht standgehalten.
+
+291
+00:26:01,180 --> 00:26:07,380
+Obwohl bei 230 V an einer 200 W Lampe der Strom durch sie 0,87 A beträgt.
+
+292
+00:26:11,120 --> 00:26:15,000
+Und dieser Strom geteilt auf 4 Dioden, sie sollten das normal verkraften.
+
+293
+00:26:16,080 --> 00:26:18,280
+Aber eine davon hat es nicht überlebt.
+
+294
+00:26:20,100 --> 00:26:22,360
+Außerdem ist sie auf interessante Weise ausgefallen.
+
+295
+00:26:24,660 --> 00:26:27,100
+Das Multimeter zeigt, dass sie intakt ist.
+
+296
+00:26:27,700 --> 00:26:32,980
+Und wenn du einen Leitfähigkeitstest bei etwa 100 V machst, fängt sie an durchzuschlagen.
+
+297
+00:26:34,800 --> 00:26:39,020
+Entweder habe ich eine Defekte erwischt, oder sie hat es tatsächlich nicht ausgehalten.
+
+298
+00:26:40,500 --> 00:26:44,180
+Aber jedenfalls habe ich sie durch hier 508 Dioden ersetzt.
+
+299
+00:26:45,680 --> 00:26:47,800
+Das wird sich auch im Schaltplan widerspiegeln.
+
+300
+00:26:50,930 --> 00:26:51,270
+Start.
+
+301
+00:26:53,450 --> 00:26:54,610
+200 W Lampe.
+
+302
+00:26:56,550 --> 00:26:58,710
+Ich empfehle Netzteile wie diese.
+
+303
+00:27:00,390 --> 00:27:01,630
+Also ein Ladegerät.
+
+304
+00:27:02,930 --> 00:27:05,030
+Du kannst es auch als Netzteil verwenden.
+
+305
+00:27:06,390 --> 00:27:08,730
+Es stellt den Batterieladestrom ein.
+
+306
+00:27:09,970 --> 00:27:13,050
+Aber es funktioniert auch für unsere Zwecke.
+
+307
+00:27:15,210 --> 00:27:15,470
+Start.
+
+308
+00:27:16,710 --> 00:27:19,690
+Du siehst 222 V an der Lampe.
+
+309
+00:27:21,630 --> 00:27:23,670
+Verbrauch etwas weniger als 15 A.
+
+310
+00:27:25,270 --> 00:27:28,970
+Es gibt einen kleinen Spannungsabfall an der 200 W Lampe.
+
+311
+00:27:31,790 --> 00:27:33,610
+Du kannst um eine Windung reduzieren.
+
+312
+00:27:34,990 --> 00:27:36,770
+Dann hätten wir 230 V nominal.
+
+313
+00:27:37,990 --> 00:27:41,270
+Oder einige weitere Windungen an der Sekundärwicklung hinzufügen.
+
+314
+00:27:43,030 --> 00:27:45,310
+Aber ich muss es nicht bei dieser Leistung betreiben.
+
+315
+00:27:49,270 --> 00:27:51,870
+Also ist das ein Test bereits mit Überlast.
+
+316
+00:27:51,870 --> 00:27:52,770
+Auf
+
+317
+00:27:59,130 --> 00:28:06,470
+einer Reise oder unter Feldbedingungen wird das Ziehen von 15 A aus einer Batterie sie schnell entladen.
+
+318
+00:28:07,490 --> 00:28:10,510
+Und außerdem, heutzutage gibt es LED-Lampen.
+
+319
+00:28:13,510 --> 00:28:14,590
+Blühlampen machen keinen Sinn.
+
+320
+00:28:15,830 --> 00:28:17,410
+Denn sie geben viel Wärme ab.
+
+321
+00:28:19,430 --> 00:28:20,630
+Verbrauchen viel...
+
+322
+00:28:20,630 --> 00:28:21,050
+Licht, ja.
+
+323
+00:28:24,070 --> 00:28:26,290
+Aber der Rest interessiert uns nicht.
+
+324
+00:28:27,310 --> 00:28:29,150
+Also funktioniert es besser.
+
+325
+00:28:30,970 --> 00:28:34,990
+Lass mich zeigen, wie dieses System an einer LED-Lampe aussieht.
+
+326
+00:28:36,430 --> 00:28:37,670
+Sie verbraucht nur 11 W.
+
+327
+00:28:39,350 --> 00:28:42,470
+Und leuchtet mehrmals heller als diese 15 W Lampe.
+
+328
+00:28:44,190 --> 00:28:46,530
+Dutzendfach, es gibt überhaupt keinen Vergleich.
+
+329
+00:28:48,350 --> 00:28:50,790
+Du siehst, die Schaltung arbeitet an der Lampe.
+
+330
+00:28:52,150 --> 00:28:52,950
+Die Lampe leuchtet.
+
+331
+00:28:54,890 --> 00:28:59,290
+Das Ladegerät-Netzteil ist bei 15 A am Maximum.
+
+332
+00:29:02,240 --> 00:29:04,260
+Wie steht es mit dem Kühlkörper?
+
+333
+00:29:05,540 --> 00:29:08,480
+Der Kühlkörper, ich würde sagen etwa 60 Grad.
+
+334
+00:29:10,720 --> 00:29:12,620
+Die Finger fangen an zu brennen.
+
+335
+00:29:14,760 --> 00:29:18,640
+Also ja, 200 W ist eine schwere Last für diesen Wandler.
+
+336
+00:29:19,940 --> 00:29:21,160
+Aber trotzdem funktioniert er.
+
+337
+00:29:21,760 --> 00:29:24,520
+Und außerdem funktioniert er ohne aktive Kühlung.
+
+338
+00:29:26,100 --> 00:29:31,160
+Bis zu 150 W liegt er also in einem akzeptablen Temperaturbereich.
+
+339
+00:29:32,460 --> 00:29:33,940
+Kann ohne Lüfter arbeiten.
+
+340
+00:29:35,380 --> 00:29:38,700
+Und bei 50 W oder 80 W Betrieb...
+
+341
+00:29:40,100 --> 00:29:42,920
+braucht er absolut keine zusätzliche Belüftung.
+
+342
+00:29:50,930 --> 00:29:52,150
+So ein D-Y-D.
+
+343
+00:29:52,890 --> 00:29:54,830
+Ein fauler Wandler eigentlich.
+
+344
+00:29:58,030 --> 00:30:00,530
+Wem es gefallen hat, baut ihn nach.
+
+345
+00:30:11,060 --> 00:30:11,760
+Abschalten.
+
+346
+00:30:14,760 --> 00:30:17,960
+Jetzt zeige ich, wie die Lampe an diesem Wandler arbeitet.
+
+347
+00:30:19,280 --> 00:30:19,700
+LED.
+
+348
+00:30:21,880 --> 00:30:23,460
+Ihr Verbrauch ist hier markiert.
+
+349
+00:30:25,240 --> 00:30:25,640
+11 W.
+
+350
+00:30:27,860 --> 00:30:31,500
+Und vergleiche ihre Helligkeit mit einer 15 W Glühlampe.
+
+351
+00:30:33,700 --> 00:30:35,720
+Strom an den Eingang anlegen.
+
+352
+00:30:38,520 --> 00:30:40,780
+Schau, wie diese Lampe leuchtet.
+
+353
+00:30:42,940 --> 00:30:44,080
+Einfach eine Lichtflut.
+
+354
+00:30:45,840 --> 00:30:47,780
+Unter Feldbedingungen ist das reichlich.
+
+355
+00:30:48,940 --> 00:30:50,180
+Und hier ist der Verbrauch.
+
+356
+00:30:52,340 --> 00:30:54,020
+Wir haben 13,1 W.
+
+357
+00:30:55,400 --> 00:30:57,740
+Multipliziere mit 0,72 A.
+
+358
+00:31:01,980 --> 00:31:04,040
+Wir bekommen 9,5 W.
+
+359
+00:31:06,100 --> 00:31:12,540
+Darüber hinaus hat der IC Selbstschutz vor Versorgungsspannungsabfall, damit die Schalter im optimalen Bereich arbeiten.
+
+360
+00:31:16,630 --> 00:31:20,830
+Wenn wir also die Spannung absenken, sagen wir, die Batterie entlädt sich.
+
+361
+00:31:23,890 --> 00:31:25,310
+10,6 V.
+
+362
+00:31:25,570 --> 00:31:26,490
+Die Lampe leuchtet.
+
+363
+00:31:31,090 --> 00:31:32,650
+Schwelle 8,4 V.
+
+364
+00:31:34,290 --> 00:31:35,850
+Die Lampe leuchtet noch.
+
+365
+00:31:38,190 --> 00:31:41,650
+Aber die Batterie entlädt sich für uns nie bis zu diesem Niveau.
+
+366
+00:31:43,230 --> 00:31:44,070
+Das wäre dann hin.
+
+367
+00:31:45,370 --> 00:31:46,410
+8,3 V.
+
+368
+00:31:48,610 --> 00:31:50,710
+Der Start erfolgt um die 9 V.
+
+369
+00:31:53,970 --> 00:31:57,210
+Und jetzt vergleiche mit einem Test einer 15 W Glühlampe.
+
+370
+00:32:01,010 --> 00:32:01,510
+Anschließen.
+
+371
+00:32:04,820 --> 00:32:07,000
+Und es gibt natürlich keinen Vergleich.
+
+372
+00:32:08,900 --> 00:32:14,100
+Also macht es unter Feldbedingungen keinen Sinn, diese Wandler für Glühlampen zu verwenden.
+
+373
+00:32:15,980 --> 00:32:18,440
+Jetzt der Verbrauch von zwei Lampen.
+
+374
+00:32:21,870 --> 00:32:22,930
+12,8 V.
+
+375
+00:32:24,970 --> 00:32:26,670
+1,74 A.
+
+376
+00:32:31,370 --> 00:32:33,590
+Etwa 22,3 W.
+
+377
+00:32:38,000 --> 00:32:40,800
+Also empfehle ich, LED-Lampen zu verwenden.
+
+378
+00:32:43,720 --> 00:32:45,340
+Nächster Teil des Videos.
+
+379
+00:32:46,940 --> 00:32:48,060
+Eine kurze Fortsetzung.
+
+380
+00:32:49,420 --> 00:32:53,180
+Höchstwahrscheinlich wird sie für die in diesen Dingen Erfahrenen uninteressant sein.
+
+381
+00:32:54,740 --> 00:32:56,900
+Ich gebe einige Tipps für Anfänger.
+
+382
+00:32:58,840 --> 00:33:02,520
+Welche Werkzeuge man braucht, um dieses faule DIY zu bauen.
+
+383
+00:33:05,860 --> 00:33:08,000
+Jetzt noch ein Moment, Messen.
+
+384
+00:33:09,160 --> 00:33:10,640
+Wie viel zieht er ohne Last?
+
+385
+00:33:12,660 --> 00:33:14,780
+Diese Lampe abklemmen.
+
+386
+00:33:16,220 --> 00:33:17,180
+Das Abklemmen.
+
+387
+00:33:21,200 --> 00:33:22,160
+Und schau.
+
+388
+00:33:27,240 --> 00:33:28,560
+Jetzt multiplizieren.
+
+389
+00:33:34,450 --> 00:33:36,350
+12,8 mal 0,07.
+
+390
+00:33:42,730 --> 00:33:43,930
+Was haben wir?
+
+391
+00:33:46,030 --> 00:33:48,250
+0,9 W im Leerlauf.
+
+392
+00:33:50,850 --> 00:33:52,730
+Eigentlich ziemlich gut.
+
+393
+00:33:52,730 --> 00:33:57,690
+Für so ein Ding, ohne jegliche Stabilisierung.
+
+394
+00:34:00,470 --> 00:34:04,550
+Eine minimale Grundausstattung an Werkzeug für einen Anfängerfunk-Amateur.
+
+395
+00:34:06,590 --> 00:34:08,730
+Der diesen Wandler nachbauen will.
+
+396
+00:34:12,170 --> 00:34:15,330
+Entsprechend brauchen wir einen Schraubendreher oder eine Bohrmaschine.
+
+397
+00:34:17,630 --> 00:34:20,430
+Denn wir müssen Löcher für Befestigungsschrauben bohren.
+
+398
+00:34:22,910 --> 00:34:25,830
+Befestigung der Platine selbst und der Transistoren.
+
+399
+00:34:27,450 --> 00:34:30,910
+Und ich habe den Aufwärtstransformatoren mit einer Schraube befestigt.
+
+400
+00:34:33,110 --> 00:34:34,670
+Das ist die erste Sache.
+
+401
+00:34:36,850 --> 00:34:38,190
+Welche Bohrer brauchen wir?
+
+402
+00:34:40,770 --> 00:34:43,290
+Wir brauchen einen 3,2 mm Bohrer.
+
+403
+00:34:45,790 --> 00:34:48,630
+Damit diese Bolzen mit 3 mm Außenmaß durchpassen.
+
+404
+00:34:53,680 --> 00:34:56,920
+Und wir brauchen auch einen 2,6 mm Bohrer.
+
+405
+00:35:08,200 --> 00:35:10,840
+In Geschäften kannst du 2,5 mm kaufen.
+
+406
+00:35:13,520 --> 00:35:16,380
+Also haben wir ein Loch in den Kühlkörper gebohrt.
+
+407
+00:35:18,760 --> 00:35:24,020
+Und wir könnten mit dem Gewindeschneider, dem M3-Gewinde, dort ein Gewinde schneiden.
+
+408
+00:35:25,580 --> 00:35:27,240
+Schneide das Gewinde vorsichtig.
+
+409
+00:35:28,060 --> 00:35:33,280
+Wenn es Aluminium ist, ist das Metall zäh, und du kannst leicht den Gewindeschneider brechen.
+
+410
+00:35:34,680 --> 00:35:38,640
+Also würde ich vorschlagen, ihn beim Schneiden mit etwas Schmiermittel zu schmieren.
+
+411
+00:35:40,380 --> 00:35:42,120
+Am einfachsten ist WD-40.
+
+412
+00:35:46,960 --> 00:35:49,580
+Zwei Bohrer und der Gewindeschneider nicht vergessen.
+
+413
+00:35:50,840 --> 00:35:53,900
+Pinzette boxen, sehr hilfreich beim Löten kleiner Teile.
+
+414
+00:36:00,210 --> 00:36:02,590
+Schneidwerkzeuge, Seitenschneider und kleine Rundzangen.
+
+415
+00:36:05,430 --> 00:36:10,010
+Der Draht, den ich für die 5,5 Windungsprimärwicklung verwendet habe.
+
+416
+00:36:12,310 --> 00:36:15,050
+Ein Kern, sein Kern ist 1,1 mm.
+
+417
+00:36:22,630 --> 00:36:25,330
+Und außen mit Isolierung 1,8 mm.
+
+418
+00:36:27,890 --> 00:36:32,410
+Der Draht, mit dem ich die Aufwärtssekundärwicklung gewickelt habe, dieser rote.
+
+419
+00:36:35,570 --> 00:36:37,050
+Jetzt messen wir den auch.
+
+420
+00:36:41,060 --> 00:36:45,500
+0,7 mm Kern und 1,4 mm mit Isolierung.
+
+421
+00:36:56,910 --> 00:37:00,250
+Wenn er auf diesen Kern gewickelt ist, wird er so gelegt.
+
+422
+00:37:02,890 --> 00:37:06,550
+Erste Lage Windung an Windung, ohne Lücken über den ganzen Umfang.
+
+423
+00:37:08,150 --> 00:37:11,130
+Dann die zweite Lage auch von innen, Windung an Windung.
+
+424
+00:37:12,350 --> 00:37:15,610
+Und die dritte Lage wird mit diesen Draht Windung an Windung gelegt.
+
+425
+00:37:16,850 --> 00:37:18,690
+Sie wird also in drei Lagen gewickelt.
+
+426
+00:37:19,670 --> 00:37:25,130
+Und das hat auf diesen Kern gereicht, um 220 V an der Lampe unter Last zu bekommen.
+
+427
+00:37:27,810 --> 00:37:31,030
+Die Spannung passt du individuell über die Windungszahl an.
+
+428
+00:37:32,550 --> 00:37:35,070
+Wenn der Draht etwas anders ist, kein Problem.
+
+429
+00:37:37,170 --> 00:37:40,410
+Außerdem kauft der Funkteile gemäß der Liste dieses Schaltplans.
+
+430
+00:37:40,630 --> 00:37:43,850
+Vergiss nicht, unbedingt KPT Wärmeleitpaste zu besorgen.
+
+431
+00:37:48,680 --> 00:37:51,740
+Meine ist nicht trocknende Wärmeleitpaste KPT 19.
+
+432
+00:37:53,620 --> 00:37:59,100
+Und wenn du Glimmeisolierscheiben für Transistoren finden kannst, obwohl sie heute selten sind.
+
+433
+00:38:01,140 --> 00:38:04,820
+Am häufigsten findest du dieses Material, das oben Polyethylen hat.
+
+434
+00:38:06,840 --> 00:38:08,000
+Es schützt vor Staub.
+
+435
+00:38:10,280 --> 00:38:13,620
+Das ist ein wärmeleitendes Material, dabei aber isolierend.
+
+436
+00:38:15,280 --> 00:38:18,660
+Denn du kannst Transistoren nicht direkt auf dem Kühlkörper montieren.
+
+437
+00:38:19,380 --> 00:38:24,480
+Denn dieser Anschluss, an dem die Schraube befestigt wird, ist mit dem Stromkreis verbunden.
+
+438
+00:38:27,740 --> 00:38:31,180
+Und wenn du direkt am Metall befestigst, gibt es einen Kurzschluss.
+
+439
+00:38:32,380 --> 00:38:34,400
+Also ist eine Dichtung obligatorisch.
+
+440
+00:38:36,040 --> 00:38:41,060
+Die Dichtung wird mindestens 3 mm über diesen Kontakt hinaus platziert, die Kühlfläche.
+
+441
+00:38:45,940 --> 00:38:50,520
+Mit Wärmeleitpaste bestrichen und der Transistor wird auf diese Unterlage gesetzt.
+
+442
+00:38:51,480 --> 00:38:54,780
+Und es gibt noch eine Kleinigkeit, die du vergessen könntest.
+
+443
+00:38:56,740 --> 00:38:57,820
+Diese Kunststoffisolierscheiben.
+
+444
+00:39:01,570 --> 00:39:05,450
+Sie kommen auf die Schraube, die den Transistor am Kühlkörper befestigt.
+
+445
+00:39:09,210 --> 00:39:12,710
+Und wenn sie sitzen, sitzt die Dichtung im Auge des Transistors.
+
+446
+00:39:15,410 --> 00:39:20,830
+Und verhindert Kontakt zwischen der Befestigungsschraube und dem Metallanschluss des Transistors.
+
+447
+00:39:25,260 --> 00:39:30,480
+Auch eine kritische Sache, denn wenn du sie einfach festschraubst, gibt es einen Kurzschluss.
+
+448
+00:39:33,380 --> 00:39:34,660
+Und im Grunde war's das.
+
+449
+00:39:36,300 --> 00:39:37,320
+Lötkolben und Lot.
+
+450
+00:39:40,500 --> 00:39:45,900
+Wenn du keine Erfahrung hast, brauchst du vielleicht etwa einen Tag mit Pausen, um dieses Ding zu bauen.
+
+451
+00:39:48,300 --> 00:39:49,500
+Für mich war es ein Tag.
+
+452
+00:39:52,580 --> 00:39:56,460
+Buchstäblich 5 bis 6 Stunden zum Wickeln, Zusammenbauen und Abstimmen.
+
+453
+00:39:58,440 --> 00:39:59,820
+Jetzt zur Montage.
+
+454
+00:40:02,180 --> 00:40:05,220
+Es gibt ein paar Regeln, die für Anfänger nützlich sind.
+
+455
+00:40:07,180 --> 00:40:09,560
+Das ist Leistungselektronikmontage.
+
+456
+00:40:11,820 --> 00:40:16,680
+Die Leitungen vom IC über den Widerstand zu den Transistoren sollten so kurz wie möglich sein.
+
+457
+00:40:17,960 --> 00:40:22,520
+Generell sollte alles, was die Transistoren steuert, so kurz wie möglich sein.
+
+458
+00:40:23,860 --> 00:40:26,940
+Das heißt, der IC liegt so nah wie möglich an den Leistungsschaltern.
+
+459
+00:40:30,260 --> 00:40:37,740
+So reduzierst du Einstreuungen, parasitäres Klingeln und andere negative Phänomene, die im Wandlerbetrieb auftreten können.
+
+460
+00:40:40,200 --> 00:40:43,900
+Ich habe schon erklärt, warum dieser Kondensator nötig ist.
+
+461
+00:40:45,960 --> 00:40:47,200
+Unbedingt einbauen.
+
+462
+00:40:48,780 --> 00:40:50,740
+Das ist ein Keramikkondensator.
+
+463
+00:40:54,120 --> 00:40:57,460
+Keramikkondensatoren bei 50V, wie diese gelbe Farbe.
+
+464
+00:40:58,600 --> 00:41:01,360
+Und arbeite mit so dichter Montage wie möglich.
+
+465
+00:41:02,500 --> 00:41:05,520
+Damit wir keine großen Abstände zwischen den Teilen haben.
+
+466
+00:41:07,260 --> 00:41:09,140
+Sie liegen praktisch alle nebeneinander.
+
+467
+00:41:13,500 --> 00:41:15,720
+Den Gleichrichter, egal wie du ihn machst.
+
+468
+00:41:18,340 --> 00:41:18,860
+Ladekondensator.
+
+469
+00:41:19,860 --> 00:41:22,780
+Und vergiss nicht, diesen Widerstand einzusetzen.
+
+470
+00:41:25,320 --> 00:41:32,340
+Denn Restladung an den Kondensatoren, wenn sie sich nicht entlädt, kann dir einen Schlag versetzen, und das wird sehr unangenehm.
+
+471
+00:41:35,400 --> 00:41:38,380
+Nach diesem Ding kann die Spannung hoch sein, und hier ist Rest.
+
+472
+00:41:40,680 --> 00:41:44,300
+Achte nicht auf diese Anschlüsse, das sind meine Abgriffe für später.
+
+473
+00:41:46,420 --> 00:41:49,300
+Hier 70V und hier 135V.
+
+474
+00:41:50,800 --> 00:41:52,460
+Relativ zum Anfang des Drahts.
+
+475
+00:41:55,100 --> 00:42:00,500
+Und beim Betrieb bis zu 50W kannst du es vollständig in ein Gehäuse setzen, sogar ohne Kühlungsöffnungen.
+
+476
+00:42:03,780 --> 00:42:09,740
+Bei mehr als 50W kannst du den Kühlkörper so positionieren, dass er zur Kühlung aus dem Gehäuse herausragt.
+
+477
+00:42:12,100 --> 00:42:15,000
+Die Kühlkörperabmessungen sind 6cm in der Länge.
+
+478
+00:42:20,410 --> 00:42:22,770
+Breite praktisch 3,5cm.
+
+479
+00:42:24,770 --> 00:42:27,530
+Und diese Abmessung ist 1,7cm.
+
+480
+00:42:31,700 --> 00:42:37,500
+Wenn du einen Kühlkörper wählst, sollte dieser Teil so dick wie möglich relativ zu diesen Kühlreppen sein.
+
+481
+00:42:40,400 --> 00:42:43,380
+Und im Grunde war's das, nichts kniffliges hier.
+
+482
+00:42:44,520 --> 00:42:46,820
+Du kannst alles ohne Instrumente abstimmen.
+
+483
+00:42:48,640 --> 00:42:52,740
+Ich habe schon gezeigt, wie das geht, und dieses Ding startet sofort.
+
+484
+00:42:55,260 --> 00:42:59,340
+Ein kleiner Nachteil ist, dass diese Schaltung im offenen Regelkreis ist.
+
+485
+00:43:00,480 --> 00:43:04,040
+Wenn du sie ohne Last lässt, kann sich hier hohes Potential aufbauen.
+
+486
+00:43:05,960 --> 00:43:07,840
+Deutlich über 350V.
+
+487
+00:43:10,100 --> 00:43:14,200
+Ich habe einen 450V Kondensator genommen, das reicht.
+
+488
+00:43:16,900 --> 00:43:19,800
+Aber ich werde noch etwas an dieser Schaltung tüfteln.
+
+489
+00:43:22,140 --> 00:43:25,580
+Ich werde diese Schaltung darlegen und dann zeigen, wie sie funktioniert.
+
+490
+00:43:27,480 --> 00:43:29,860
+Dieser IC hat eine wunderbare Eigenschaft.
+
+491
+00:43:31,320 --> 00:43:37,120
+Wenn du an Pin 3 logisch Null anlegst, einfach Minus der Stromquelle anlegst, stoppt er die Erzeugung.
+
+492
+00:43:38,540 --> 00:43:42,080
+Ich denke, nach diesem Prinzip kannst du eine Spannungsrückführung machen.
+
+493
+00:43:42,920 --> 00:43:47,420
+Zum Beispiel, um 330V Gleichspannung am Ausgang zu halten.
+
+494
+00:43:49,180 --> 00:43:53,480
+Der Kondensator erreicht 330V und der IC stoppt die Erzeugung.
+
+495
+00:43:55,420 --> 00:43:59,200
+Ich werde etwas Einfaches machen, dann teile ich den Schaltplan.
+
+496
+00:44:01,440 --> 00:44:06,560
+Markierung hier, bevor ich diesen Schaltplan drucke, sende ich ihn an meine Yandex-Disk.
+
+497
+00:44:08,060 --> 00:44:10,860
+Ich markiere auch die HER508-Dioden.
+
+498
+00:44:12,420 --> 00:44:13,900
+Und im Grunde war's das.
+

@@ -1,0 +1,1300 @@
+1
+00:00:01,340 --> 00:00:02,280
+Hallo zusammen!
+
+2
+00:00:03,460 --> 00:00:08,220
+Heute zeige ich, wie man eine gesteuerte Katscher-Schaltung für unsere Systeme baut.
+
+3
+00:00:09,880 --> 00:00:12,480
+Die Schaltung kam funktionsdüchtig raus.
+
+4
+00:00:14,460 --> 00:00:22,660
+Die Modulation der Schaltung kann per Impuls erfolgen, eingestellt durch Tastverhältnis bei Frequenzen von 0,1 Hz bis 50 kHz.
+
+5
+00:00:23,460 --> 00:00:31,220
+Im Betrieb auf der Katscher-Schaltung, das heißt, schalten der Tesla-Hochspannungsspule mit Rückkopplung vom kalten Ende zur Transistorbasis
+
+6
+00:00:36,000 --> 00:00:43,120
+oder bis 100 kHz, wenn diese Schaltung als Schalter für eine Ohmsche Last verwendet wird, zum Beispiel eine Glühlampe.
+
+7
+00:00:46,080 --> 00:00:49,020
+Hier siehst du, die Teile-Widerstandswerte sind markiert.
+
+8
+00:00:51,400 --> 00:00:52,680
+Werte in Klammern.
+
+9
+00:00:54,740 --> 00:00:56,240
+Die Widerstände sind so gewählt.
+
+10
+00:00:57,680 --> 00:01:01,520
+Das ist für diejenigen, die das System als Schalter für eine Ohmsche Last bauen.
+
+11
+00:01:02,820 --> 00:01:15,820
+Mit 350 Ω und 740 Ω erzeugt das System einen Bias von 4,7 V an der Transistorbasis, wenn wir die Spannung mit von der 2SC5200 Transistor getrennter Basis messen.
+
+12
+00:01:20,480 --> 00:01:27,600
+Das heißt, dieser Teile erzeugt 4,7 V bei der angelegten Versorgungsspannung von 15 V in diesem System.
+
+13
+00:01:29,740 --> 00:01:30,720
+Der Wert in Klammern.
+
+14
+00:01:32,340 --> 00:01:40,300
+Und unser Hauptwert, der auf der Katscher-Schaltung arbeitet, ähnlich der vorherigen Schaltung, die ich gezeigt habe, beträgt 3,3 K.
+
+15
+00:01:46,580 --> 00:01:57,300
+Die Kette, durch die der Katscher mit Strom versorgt wird, ist dieselbe, und in diesem System wird gezeigt, außer dass hier ein DC-zu-erhöhter DC-Wandler eingezeichnet ist, der sogenannte
+
+16
+00:01:57,300 --> 00:01:58,380
+DC-DC-Wandler.
+
+17
+00:02:00,820 --> 00:02:02,140
+DC-DC-Wandler.
+
+18
+00:02:04,740 --> 00:02:11,500
+Sein Schema habe ich auch in meinen Videos gezeigt, 12 V Eingang, Ausgang einstellbar von 50 bis 200 V.
+
+19
+00:02:13,060 --> 00:02:21,080
+Diese Katscher-Schaltung startet im gesteuerten Modus bei etwa 10 V Versorgungsspannung an diesem Punkt, und ich habe sie bis 100 V getestet.
+
+20
+00:02:25,220 --> 00:02:30,480
+Insbesondere ist unser Transistor bis 200 V einsatzfähig, das ist der Hauptleistungsschalter.
+
+21
+00:02:33,560 --> 00:02:40,820
+Die Schaltung ist vollständig kompatibel mit der, die ich auch gezeigt habe, siehe das Video, BTG-Controller, bis auf einen Moment.
+
+22
+00:02:46,600 --> 00:02:52,540
+So passiert die Kompatibilität zum selben Anschluss und die Verbindung geht auch hierher zur Steuerung.
+
+23
+00:02:54,460 --> 00:03:01,000
+Der Punkt ist, dass wir zum Steuern der Tesla, die im gesteuerten Pulsmodus läuft, einen Impuls dieser Form brauchten.
+
+24
+00:03:04,100 --> 00:03:06,860
+Ein langes Signal mit einer kleinen Pause zwischen ihnen.
+
+25
+00:03:08,840 --> 00:03:14,500
+Diese Pause für die gesteuerte Tesla legte den Betriebsmodus fest, bildete diese Bursts.
+
+26
+00:03:16,040 --> 00:03:19,820
+Nach der Betriebslogik haben wir das auch in vorherigen Videos behandelt.
+
+27
+00:03:21,400 --> 00:03:27,640
+Für den Katscher ist das nicht geeignet, also müssen wir eine Inversion entfernen, damit sie kompatibel werden.
+
+28
+00:03:28,600 --> 00:03:35,300
+In diesem Fall verbinden wir dafür nicht mit Pin 10 des Chips, der zum Steuerblockausgang führt, sondern mit Pin 11.
+
+29
+00:03:39,920 --> 00:03:45,740
+Das heißt, wir entfernen ein invertiertes Signal und dann bekommen wir am Chip-Eingang ein Signal dieser Form.
+
+30
+00:03:47,560 --> 00:03:53,100
+Und indem wir sein Tastverhältnis ändern, können wir die Einschaltzeit der gesteuerten Katscher-Schaltung einstellen.
+
+31
+00:03:54,840 --> 00:04:04,860
+Um diese gesteuerte Katscher-Schaltung zu implementieren, brauchen wir zwei Chips, einer davon der IR2113-Treiber, schon aus vorherigen Videos bekannt.
+
+32
+00:04:06,820 --> 00:04:11,940
+Es ist ein Zweikanaltreiber, der keine Todzeit zwischen den Steuersignalen einfügt.
+
+33
+00:04:12,900 --> 00:04:15,680
+Und ein TC4093-Chip.
+
+34
+00:04:18,720 --> 00:04:23,640
+Das sind vier Schmitt-Trigger mit zwei Eingang- und Nicht-Ausgängen, invertierend.
+
+35
+00:04:25,780 --> 00:04:30,080
+Das heißt, zwei und nicht-logik-kombiniert mit Schmitt-Triggern in einem Chip.
+
+36
+00:04:32,840 --> 00:04:34,080
+Ein paar Widerstände.
+
+37
+00:04:35,680 --> 00:04:41,400
+Besondere Aufmerksamkeit den Widerständen schenken, die den Bias am Gate des P-Kanal-Transistors erzeugen.
+
+38
+00:04:44,420 --> 00:04:50,600
+Weil ein P-Kanal-Transistor ein negatives Spannungspotenzial an seinem Gate braucht, um gesteuert zu werden.
+
+39
+00:04:51,880 --> 00:04:55,680
+Und N-Kanal-Transistoren werden durch positives Potenzial gesteuert.
+
+40
+00:04:56,920 --> 00:04:57,580
+Sie sind einfacher.
+
+41
+00:04:59,180 --> 00:05:04,080
+Mit P-Kanal musst du ein System bauen, das ihn speziell mit negativer Spannung ansteuert.
+
+42
+00:05:05,540 --> 00:05:09,940
+Dieser Teiler legt letztlich den Verbrauch und die Stabilität der Schaltung fest.
+
+43
+00:05:14,740 --> 00:05:22,880
+Der Teiler am Gate des RF4905-Transistors ist so gewählt, dass die steuernde negative Spannung etwa 14,7 V beträgt.
+
+44
+00:05:25,620 --> 00:05:31,160
+Wie N-Kanal-Transistoren können P-Kanal-Transistoren durch Spannungen bis 20 V gesteuert werden.
+
+45
+00:05:32,240 --> 00:05:43,240
+Aber am wichtigsten ist, dass dieser Teiler so gewählt ist, dass dieser Transistor während des Betriebs die Signalzeit relativ zur Zeit erhöht, die vom Drenn des N-Kanal-Steuertransistors kommt.
+
+46
+00:05:48,880 --> 00:05:49,320
+Steuertransistor!
+
+47
+00:05:50,080 --> 00:05:52,040
+Das ist ein Merkmal dieser Schaltung.
+
+48
+00:05:53,400 --> 00:05:57,840
+Wir brauchen außerdem eine schnelle Schottky-Diode, in diesem Fall SR510.
+
+49
+00:05:59,600 --> 00:06:04,380
+Und natürlich den zwei SC5200 und zwei N-Kanal-Transistoren.
+
+50
+00:06:06,580 --> 00:06:09,160
+Jetzt gehen wir die Logik dieser Schaltung durch.
+
+51
+00:06:11,120 --> 00:06:16,420
+Ich habe eine Zeichnung gemacht, die es einfacher macht zu verstehen, wie die Schaltung arbeitet.
+
+52
+00:06:20,860 --> 00:06:27,480
+Laut Schema, Treiber, ATS4093, Chip und die in der Schaltung schematisch gezeigten Schalter.
+
+53
+00:06:29,100 --> 00:06:34,340
+Das ist Transistor 1, Transistor 2, Transistor 3 und der Hauptschalter, 4.
+
+54
+00:06:35,800 --> 00:06:40,480
+Er ist hier nicht gezeigt, er beteiligt sich nicht an der Aktionslogik, er ist nur Strom.
+
+55
+00:06:42,700 --> 00:06:43,080
+Beobachten!
+
+56
+00:06:44,380 --> 00:06:49,720
+Das Steuersignal kommt mit einem von uns auf einem externen Generator eingestellten Tastverhältnis rein.
+
+57
+00:06:51,440 --> 00:06:56,920
+Es trifft den ersten Treiberkanal direkt, sein Ausgang geht von Pin 1 zum Transistor 2.
+
+58
+00:07:02,720 --> 00:07:06,960
+Transistor 2 ist in unserem Fall der, der den P-Kanal FET steuert.
+
+59
+00:07:10,400 --> 00:07:12,600
+Jetzt analysieren wir die Aktionslogik.
+
+60
+00:07:13,980 --> 00:07:24,480
+Aber um Transistor 1 zu steuern, der die Basis des Leistungstransistors zum Minuschord schließt, leiten wir seine Steuerung durch die Logikelemente des TC4093-Chips.
+
+61
+00:07:28,460 --> 00:07:29,620
+Warum wird das gemacht?
+
+62
+00:07:30,480 --> 00:07:40,840
+Um durch mehrere Inversionen eine gewisse Zeitverzögerung zu erzeugen, wir arbeiten mit der Verzögerung der Logikelemente des Chips, um Signale zeitlich zu verschieben.
+
+63
+00:07:42,760 --> 00:07:48,620
+Analysieren wir, was direkt an den Treiberausgängen passiert, nachdem wir dieses Signal eingespeist haben.
+
+64
+00:07:49,940 --> 00:07:55,020
+An Pin 7 bildet sich ein Signal mit Verzögerung, an Pin 1 ein Signal ohne Verzögerung.
+
+65
+00:07:56,060 --> 00:08:03,940
+An Pin 1 eilt das am Eingang ankommende Signal dem Signal voraus, das nach der Verarbeitung durch die Logikelemente des Chips erschienen ist.
+
+66
+00:08:05,040 --> 00:08:10,280
+Es ist schematisch gezeigt, dass das Signal an Pin 1 dem an Pin 7 des Treiberchips vorauseilt.
+
+67
+00:08:12,940 --> 00:08:15,640
+Als nächstes erreicht das Signal die Transistoren.
+
+68
+00:08:18,380 --> 00:08:19,560
+Sie sind hier markiert.
+
+69
+00:08:21,000 --> 00:08:21,920
+Und was passiert hier?
+
+70
+00:08:21,920 --> 00:08:28,480
+Du musst verstehen, FETS haben Eigenschaften ähnlich Logikelementen, sie invertieren das Signal.
+
+71
+00:08:29,760 --> 00:08:31,040
+Diesen Prozess untersuchen.
+
+72
+00:08:32,500 --> 00:08:36,100
+Wir hatten dieses Signal an Transistor 2, es wurde invertiert.
+
+73
+00:08:37,860 --> 00:08:44,480
+Es transformierte sich unser schattiertes Signal, gleichzeitig invertierte sich auch das Signal an Transistor 1 zu diesem Signal.
+
+74
+00:08:45,220 --> 00:08:54,220
+Aber die Zeit zwischen ihnen, die Verzögerung, blieb erhalten, da diese Transistoren dieselbe Teilenummer haben, also ihre Verzögerungszeiten übereinstimmen.
+
+75
+00:08:56,500 --> 00:08:58,200
+Transistoren aus derselben Serie.
+
+76
+00:09:01,260 --> 00:09:06,640
+Bisher behalten wir die Verzögerungszeit nur dank der Elemente des 4093 Chips bei.
+
+77
+00:09:07,480 --> 00:09:12,960
+Als nächstes geht das Signal von Transistor 2 durch einen Widerstandsteiler zu Transistor 3.
+
+78
+00:09:14,900 --> 00:09:23,160
+Und der Widerstandsteiler ist so gewählt, dass er an Transistor 3, markiert, Tastverhältnis wächst, das Tastverhältnis dieses Signals erhöht.
+
+79
+00:09:24,320 --> 00:09:26,180
+Er invertiert unser schattiertes Signal.
+
+80
+00:09:28,080 --> 00:09:31,640
+Aber gleichzeitig mit dem Invertieren dehnt er es zeitlich aus.
+
+81
+00:09:33,180 --> 00:09:40,060
+Während Transistor 1 das Signal invertiert lässt, aber die Zeit relativ zum Eingangssignal, seine Zeit ändert sich nicht.
+
+82
+00:09:41,720 --> 00:09:51,040
+Und wenn du an diesen Punkten mit einem Zweikanaloszilloskop stehst, siehst du deutlich, dass sich das Signal am Trenn von Transistor 3 relativ zum Eingang verlängert hat.
+
+83
+00:09:54,430 --> 00:09:56,570
+Du wirst auch die Zeitverschiebung bemerken.
+
+84
+00:09:58,750 --> 00:10:02,470
+Das wird gemacht, damit die Transistoren mit Überlappung arbeiten.
+
+85
+00:10:03,830 --> 00:10:09,110
+Wir erzeugen künstlich das, was als Querstrom zwischen den beiden Transistoren bezeichnet wird.
+
+86
+00:10:10,870 --> 00:10:17,670
+In diesem Fall ist es nicht gefährlich, weil die Transistoren im Querstrommodus durch einen Widerstand und eine Diode arbeiten.
+
+87
+00:10:19,130 --> 00:10:23,430
+Das heißt, dieser Widerstand wandelt den Querstrom über die Zeit in Wärme um.
+
+88
+00:10:24,990 --> 00:10:27,490
+Der Transistor erwärmt sich nicht zu stark.
+
+89
+00:10:28,790 --> 00:10:32,190
+Ich empfehle, in diese Ketten zwei Watt Widerstände einzubauen.
+
+90
+00:10:35,330 --> 00:10:37,410
+Entladewiderstände von einem W sind in Ordnung.
+
+91
+00:10:39,110 --> 00:10:41,490
+Und hier kannst du auch ein W-Widerstände verwenden.
+
+92
+00:10:43,450 --> 00:10:45,910
+Wenn wir also zu den nächsten Punkten gehen.
+
+93
+00:10:47,990 --> 00:10:50,170
+Habe hier die Oszillogramme gezeichnet.
+
+94
+00:10:51,710 --> 00:10:54,230
+Trenn-Transistor 1 vom Widerstandsteiler.
+
+95
+00:10:56,130 --> 00:10:57,750
+Wir sehen dieses Signal.
+
+96
+00:10:59,110 --> 00:11:00,730
+Seine Form hier ist genau diese.
+
+97
+00:11:03,150 --> 00:11:07,190
+Das ist das Steuersignal, das vom Trenn des Transistors 3 herauskommt.
+
+98
+00:11:08,310 --> 00:11:10,410
+Also von unserem P-Kanal-Transistor.
+
+99
+00:11:11,910 --> 00:11:16,010
+Es hat diese Flanke und einen gewissen Abfall, aber es ist zeitlich länger.
+
+100
+00:11:17,970 --> 00:11:22,550
+Und jetzt schau dir das Signal an, das vom Trenn des Transistors 1 herauskommt.
+
+101
+00:11:24,430 --> 00:11:28,670
+Es hat eine Verzögerung, da wir sie hier gebildet haben, diese Verzögerung.
+
+102
+00:11:30,410 --> 00:11:32,990
+Und seine Vorderflanke landet an diesem Punkt.
+
+103
+00:11:34,570 --> 00:11:37,390
+Das ist der Moment, in dem sich dieser Transistor öffnet.
+
+104
+00:11:39,510 --> 00:11:43,090
+Eine Zeitspanne, in der die Transistoren mit Überlappung arbeiten.
+
+105
+00:11:44,470 --> 00:11:47,270
+Und tatsächlich nimmt unser Signal diese Form an.
+
+106
+00:11:48,950 --> 00:11:50,730
+Das ist die Form, die wir wollen.
+
+107
+00:11:52,150 --> 00:11:53,950
+Ein sanft steigender Punkt.
+
+108
+00:11:55,650 --> 00:12:00,030
+Der Transistor handhabt es wirklich gut und arbeitet hervorragend im Schaltmodus.
+
+109
+00:12:01,230 --> 00:12:03,350
+Sorge dich nicht um diese steigende Flanke.
+
+110
+00:12:05,230 --> 00:12:07,670
+Besonders wenn das System im Katschermodus läuft.
+
+111
+00:12:10,480 --> 00:12:14,060
+Es spielt keine wirkliche Rolle, wie diese Flanke aussieht.
+
+112
+00:12:15,200 --> 00:12:20,940
+Weil der Katscher, wie jede Tesla-Spule, eine gewisse Zeit braucht, um auf sein Maximum hochzufahren.
+
+113
+00:12:22,240 --> 00:12:25,340
+Selbst diese kurze Zeit reicht aus, damit er hochfährt.
+
+114
+00:12:26,520 --> 00:12:30,560
+Und außerdem zeigt sich diese sanfte Flanke nur ab 40 kHz und höher.
+
+115
+00:12:32,800 --> 00:12:35,900
+Bei niedrigeren Frequenzen ist sie praktisch rechteckig.
+
+116
+00:12:38,890 --> 00:12:42,190
+Also warum haben wir diese Überlappung hinzugefügt?
+
+117
+00:12:43,430 --> 00:12:48,150
+Erstens erlaubt uns die Überlappung, diesen Widerstand aus der Schaltung herauszuschneiden.
+
+118
+00:12:48,850 --> 00:12:52,810
+Und die Basis unseres Leistungsschalters scharf nach Minus zu ziehen.
+
+119
+00:12:54,210 --> 00:12:56,810
+Da der Schalter in der Leitfähigkeit N-Kanal ist.
+
+120
+00:12:58,850 --> 00:13:02,390
+Ein negatives Spannungspotenzial an seiner Basis schließt ihn scharf.
+
+121
+00:13:03,990 --> 00:13:06,810
+Dieser Schalter spielt auch eine sehr wichtige Rolle.
+
+122
+00:13:08,890 --> 00:13:11,270
+Er verhindert, dass der Katscher anschwingt.
+
+123
+00:13:12,230 --> 00:13:16,010
+In dem Sinne, dass der gemeinsame Minusleiter auch der Erdungsdraht ist.
+
+124
+00:13:20,200 --> 00:13:23,020
+Da die Erdung mit dem Transistoremitter verbunden ist.
+
+125
+00:13:25,360 --> 00:13:28,580
+Und so schließt dieser Transistor nicht nur diesen Widerstand aus.
+
+126
+00:13:30,660 --> 00:13:32,640
+Er zieht auch die Basis nach Minus.
+
+127
+00:13:33,440 --> 00:13:37,080
+Und verbindet das kalte Ende der Tesla direkt mit der Erdung.
+
+128
+00:13:39,400 --> 00:13:46,460
+Und alle nachfolgenden Schwingungen, die den Leistungsschalter zur Selbstoszillation auslösen könnten, können die Basis nicht erreichen.
+
+129
+00:13:47,300 --> 00:13:51,740
+Weil die Basissemitterstrecke des Leistungsschalters einen gewissen Widerstand hat.
+
+130
+00:13:53,420 --> 00:13:56,920
+Der größer ist als der Widerstand des offenen FET-Schalters.
+
+131
+00:13:59,120 --> 00:14:03,280
+Und so wird die Erdung am kalten Ende der Hochspannungsspule kurz geschlossen.
+
+132
+00:14:05,180 --> 00:14:09,720
+Und keine Schwingungen können diesen Transistor in den Selbstoszillationsmodus bringen.
+
+133
+00:14:11,920 --> 00:14:18,020
+Das einzige, was du beim Arbeiten bei hohen Frequenzen von 20 bis 50 kHz sehen kannst.
+
+134
+00:14:19,400 --> 00:14:24,940
+Wenn deine Hochspannungskatscherspule einen guten Q-Faktor hat, kannst du den Hochfahrmoment beobachten.
+
+135
+00:14:26,960 --> 00:14:30,660
+Den wir in den Oszillogrammen weiter sehen, bis zum Maximum.
+
+136
+00:14:31,860 --> 00:14:33,180
+Und dann ein abklingender Schwanz.
+
+137
+00:14:34,100 --> 00:14:45,340
+Und wenn die Modulation zeitlich nah genug bei Frequenzen über 20 kHz ist, dann kannst du den abklingenden Schwanz mit der ansteigenden Flanke über Lappen sehen.
+
+138
+00:14:47,080 --> 00:14:52,980
+In diesem Moment läuft der Katscher nicht mehr, aber dank seines Q-Faktors existieren noch abklingende Schwingungen in ihm.
+
+139
+00:14:53,820 --> 00:14:57,360
+Aber mit dieser Schaltung sind abklingende Schwingungen nur die freien.
+
+140
+00:14:59,180 --> 00:15:02,320
+Der Katscher läuft in diesem Moment nicht, verbraucht nichts.
+
+141
+00:15:04,660 --> 00:15:06,500
+Untersuchen wir die Schaltungslösungen.
+
+142
+00:15:08,180 --> 00:15:16,140
+In diesem Fall siehst du, die Kette, die den Leistungsschalter mit Strom versorgt, ist die gleiche wie in der vorherigen gewöhnlichen Katscherschaltung.
+
+143
+00:15:17,460 --> 00:15:19,100
+Sie ist in diesem Schema gezeigt.
+
+144
+00:15:20,840 --> 00:15:22,320
+Das ist die Kette.
+
+145
+00:15:24,780 --> 00:15:26,660
+Hier sind die Eingangsklemmen.
+
+146
+00:15:28,060 --> 00:15:30,940
+Plus- und Minusstromanschlüsse.
+
+147
+00:15:32,580 --> 00:15:33,080
+Kondensator.
+
+148
+00:15:33,740 --> 00:15:35,760
+Dann der Filter mit Gegenwicklungen.
+
+149
+00:15:37,200 --> 00:15:38,140
+Dann ein weiterer Kondensator.
+
+150
+00:15:39,020 --> 00:15:41,240
+Der Hauptreservoirelektrolytkondensator.
+
+151
+00:15:42,900 --> 00:15:45,300
+Und der Hochfrequenzfolienkondensator.
+
+152
+00:15:46,300 --> 00:15:48,100
+Diesen Teil haben wir behandelt.
+
+153
+00:15:50,200 --> 00:15:55,740
+Und zu dieser Platine habe ich eine weitere Platine hinzugefügt, die unseren Leistungsschalter steuert.
+
+154
+00:15:57,260 --> 00:15:58,900
+Der Schalter ist auf dem Kühlkörper.
+
+155
+00:16:00,600 --> 00:16:02,060
+Du siehst ihn deutlich.
+
+156
+00:16:03,320 --> 00:16:04,080
+Hier reingeschraubt.
+
+157
+00:16:05,200 --> 00:16:07,400
+Der Kühlkörper für ihn ist überdimensioniert.
+
+158
+00:16:09,020 --> 00:16:09,980
+Er wird nicht so warm.
+
+159
+00:16:12,890 --> 00:16:14,690
+Du kannst einen kleineren verwenden.
+
+160
+00:16:15,630 --> 00:16:17,550
+Also, was sehen wir hier?
+
+161
+00:16:18,870 --> 00:16:21,770
+Unser Chip, der die Zeitverzögerung erzeugt.
+
+162
+00:16:22,910 --> 00:16:23,550
+TC4093.
+
+163
+00:16:25,950 --> 00:16:26,830
+Zwei Kanaltreiber.
+
+164
+00:16:29,710 --> 00:16:30,970
+Eingangsverkabelung mit Filtern.
+
+165
+00:16:32,810 --> 00:16:36,330
+Und hier haben wir den Hauptteiler zur Basis unseres Leistungsschalters.
+
+166
+00:16:36,570 --> 00:16:38,890
+3,3K, 2,7K.
+
+167
+00:16:40,650 --> 00:16:42,450
+SR510, Schottky, Diode.
+
+168
+00:16:44,250 --> 00:16:47,610
+Und hier drei Transistoren auf einem gemeinsamen Kühlkörper.
+
+169
+00:16:50,270 --> 00:16:54,450
+Sie werden ein bisschen warm, also habe ich sie auf einen Kühlkörper gesetzt.
+
+170
+00:16:55,890 --> 00:16:57,610
+Könnte auf einem kleineren Einzelnen sein.
+
+171
+00:16:59,490 --> 00:17:02,090
+Erwärmung ist nicht signifikant, aber sie ist da.
+
+172
+00:17:03,170 --> 00:17:06,950
+Als solider Aufbau ist es an die Prototyping-Platine selbst gelötet.
+
+173
+00:17:10,960 --> 00:17:15,740
+Das heißt, minimale Teile, das System läuft und Strom geht zur Drossel.
+
+174
+00:17:17,720 --> 00:17:23,680
+Statt der Drossel kannst du, wie gesagt, eine Umschellast anschließen und die Schaltung nur im Schaltmodus verwenden.
+
+175
+00:17:25,740 --> 00:17:30,300
+Jetzt schließen wir die Schaltung an den Katscher an und schauen, was sie in Aktion kann.
+
+176
+00:17:31,960 --> 00:17:33,040
+Also, der Aufbau ist zusammengebaut.
+
+177
+00:17:33,880 --> 00:17:38,700
+Erdung ist angeschlossen, weil die Erdung für dieses System eine wichtige Rolle spielt.
+
+178
+00:17:41,220 --> 00:17:42,280
+Strom angeschlossen.
+
+179
+00:17:43,760 --> 00:17:46,060
+Strom von zwei separaten Labornetzteilen.
+
+180
+00:17:47,400 --> 00:17:49,400
+Eines ist auf 15V eingestellt.
+
+181
+00:17:50,820 --> 00:17:54,620
+Hier siehst du den Verbrauch des Logikteils ohne am Eingang angelegtes Signal.
+
+182
+00:17:57,560 --> 00:18:02,560
+Hier ändern wir die Versorgungsspannung mit diesem Trimpoti und beobachten den Verbrauch.
+
+183
+00:18:04,860 --> 00:18:08,220
+Das Signal kommt direkt von einem Laborsignalgenerator.
+
+184
+00:18:10,000 --> 00:18:11,880
+Er ist jetzt im Pulsmodus.
+
+185
+00:18:13,300 --> 00:18:14,900
+Pulsamplitude ist 10V.
+
+186
+00:18:17,160 --> 00:18:20,640
+Mit 10% Tastverhältnis in der positiven Halbperiode.
+
+187
+00:18:24,260 --> 00:18:27,660
+Wir beobachten die Oszillogramme am Oszilloskop.
+
+188
+00:18:29,720 --> 00:18:33,100
+Hauptstrom für den Leistungsschalter wird an diesem Punkt angelegt.
+
+189
+00:18:34,560 --> 00:18:36,060
+Und geht dann in die Schaltung.
+
+190
+00:18:37,780 --> 00:18:38,800
+Schaltung läuft.
+
+191
+00:18:40,280 --> 00:18:44,440
+Stabiler Betrieb setzt bei 17% Tastverhältnis des Steuersignals ein.
+
+192
+00:18:46,660 --> 00:18:50,620
+Jetzt in diesem Fall 10kHz für eine bessere Sichtbarkeit des Signals.
+
+193
+00:18:51,720 --> 00:18:53,320
+Die Logikseite zieht nicht viel.
+
+194
+00:18:56,860 --> 00:19:02,640
+Und hier sind die Versorgungsspannung und der Stromverbrauch, bei denen das System in stabile Schwingung kam.
+
+195
+00:19:04,940 --> 00:19:08,280
+Jetzt siehst du, das Feld um das System ist nicht zu groß.
+
+196
+00:19:10,080 --> 00:19:13,440
+Wenn du eine Glimmlampe daran hältst, leuchtet sie auf.
+
+197
+00:19:14,580 --> 00:19:18,720
+Die Oszilloskop-Sonde ist in der Nähe und wir können das Oszillogramm beobachten.
+
+198
+00:19:22,040 --> 00:19:24,740
+Wie der Katscher bei dieser Versorgungsspannung läuft.
+
+199
+00:19:27,320 --> 00:19:29,980
+Du siehst, der Co-Faktor ist sehr hoch.
+
+200
+00:19:32,120 --> 00:19:37,060
+Du siehst auch die zusätzliche Welle, die im System eine gewisse Amplitudenmodulation macht.
+
+201
+00:19:38,820 --> 00:19:41,580
+Und wir experimentieren mit interessanten Dingen.
+
+202
+00:19:43,020 --> 00:19:47,700
+Wenn du eine Handnah an die Hochspannungsspule bringst, schau, wie das System reagiert.
+
+203
+00:19:49,620 --> 00:19:54,140
+Für einen vollständigen Test erhöhen wir jetzt die Versorgungsspannung unseres Systems.
+
+204
+00:19:57,200 --> 00:20:00,080
+Zum Beispiel, ja, läuft zu verlässig.
+
+205
+00:20:01,800 --> 00:20:04,080
+Wir speisen 55 V ein.
+
+206
+00:20:06,640 --> 00:20:08,840
+Die Stromaufnahme ist etwas gestiegen.
+
+207
+00:20:10,860 --> 00:20:13,200
+Das Signal ist natürlich aus dem Bild raus.
+
+208
+00:20:18,400 --> 00:20:21,260
+Und du hörst schon ein kleines Funken an der Antennenspitze.
+
+209
+00:20:23,860 --> 00:20:26,420
+Jetzt hörst du den Klang bei 10 Hz Rate.
+
+210
+00:20:30,750 --> 00:20:34,190
+Versuche, das Tastverhältnis des Steuerimpulses zu erhöhen.
+
+211
+00:20:39,260 --> 00:20:42,680
+Erhöhe das Tastverhältnis, beobachte die Oszillogrammänderung.
+
+212
+00:20:45,260 --> 00:20:48,520
+Jetzt siehst du, wie der Verbrauch mit dem Tastverhältnis wächst.
+
+213
+00:20:50,100 --> 00:20:55,980
+Du siehst, das kleine Funken ist kräftig geworden, streckt sich auf 1, 2, 1, 5 cm.
+
+214
+00:21:00,040 --> 00:21:04,100
+Beobachte das Oszillogramm, die Betriebszeit in unserem System wächst.
+
+215
+00:21:05,960 --> 00:21:09,100
+Erhöhe das Tastverhältnis des Steuerimpulses weiter.
+
+216
+00:21:12,940 --> 00:21:16,720
+Jetzt stellen wir den Steuerimpuls auf 40% Tastverhältnis ein.
+
+217
+00:21:21,120 --> 00:21:23,020
+Das Oszillogramm hat diese Form.
+
+218
+00:21:24,380 --> 00:21:29,860
+Aber dieser Modus ist für unser System nicht mehr nützlich, weil das Tastverhältnis zu groß ist.
+
+219
+00:21:31,820 --> 00:21:34,920
+Optisch siehst du, das kleine Funken ist sehr kräftig geworden.
+
+220
+00:21:36,080 --> 00:21:39,100
+Du siehst, die Glimmlampe leuchtet auf großem Abstand.
+
+221
+00:21:41,360 --> 00:21:43,940
+Und sie leuchtet sehr gut bei dieser Frequenz.
+
+222
+00:21:46,440 --> 00:21:51,940
+Übrigens, du kannst aus dieser Schaltung eine singende Tesla bauen, die eine MIDI-Datei abspielt.
+
+223
+00:21:54,040 --> 00:21:56,800
+Ich zeige das jetzt durch Änderung der Frequenz.
+
+224
+00:21:58,160 --> 00:21:58,980
+Du hörst den Klang.
+
+225
+00:22:03,060 --> 00:22:05,000
+Jetzt haben wir 3 kHz.
+
+226
+00:22:06,280 --> 00:22:10,120
+Und du hörst den Klang, den das kleine Funken des Systems abgibt.
+
+227
+00:22:14,440 --> 00:22:17,580
+Du siehst, es funktioniert bei 3 kHz.
+
+228
+00:22:19,500 --> 00:22:21,260
+Wir können verschieben.
+
+229
+00:22:24,780 --> 00:22:25,700
+1 kHz.
+
+230
+00:22:27,220 --> 00:22:27,740
+Tonaler Klang.
+
+231
+00:22:32,270 --> 00:22:33,070
+Frequenz ändern.
+
+232
+00:22:34,870 --> 00:22:37,010
+Und es geht in den unhörbaren Bereich.
+
+233
+00:22:39,290 --> 00:22:42,510
+Jetzt 25 kHz Steuerfrequenz.
+
+234
+00:22:44,250 --> 00:22:47,750
+Und du siehst, der Katscher moduliert zuverlässig.
+
+235
+00:22:50,030 --> 00:22:52,970
+Reduziere das Tastverhältnis auf 30%.
+
+236
+00:22:53,510 --> 00:22:55,270
+Das System läuft stabil.
+
+237
+00:22:57,510 --> 00:22:59,610
+Kleines Funken ist ziemlich kräftig.
+
+238
+00:23:02,390 --> 00:23:06,450
+Bei 30%, bei 25 kHz Frequenz.
+
+239
+00:23:08,670 --> 00:23:11,530
+Wir haben diese Spannung und Stromaufnahme.
+
+240
+00:23:20,150 --> 00:23:22,490
+Tastverhältnis auf 20% stellen.
+
+241
+00:23:24,450 --> 00:23:26,530
+Der Verbrauch ist sofort merklich gesunken.
+
+242
+00:23:28,850 --> 00:23:31,710
+Im Allgemeinen läuft das System irgendwo bei diesem Verbrauch.
+
+243
+00:23:33,010 --> 00:23:36,130
+23 bis 25% Steuerimpuls.
+
+244
+00:23:39,410 --> 00:23:41,610
+Du siehst seinen vollen Verbrauch.
+
+245
+00:23:46,180 --> 00:23:49,660
+Jetzt schauen wir die Frequenzfähigkeiten an.
+
+246
+00:23:53,940 --> 00:23:55,720
+Jetzt 25 kHz.
+
+247
+00:23:57,640 --> 00:24:00,060
+35 kHz.
+
+248
+00:24:03,740 --> 00:24:05,960
+45 kHz.
+
+249
+00:24:07,640 --> 00:24:09,920
+Du siehst, das System moduliert.
+
+250
+00:24:13,300 --> 00:24:15,200
+55 kHz.
+
+251
+00:24:18,900 --> 00:24:25,460
+Der Betrieb stoppt bei 55%, weil wir Tastverhältnis am Steuerimpuls hinzufügen müssen.
+
+252
+00:24:27,160 --> 00:24:30,880
+Habe das Tastverhältnis auf 35% erhöht.
+
+253
+00:24:31,700 --> 00:24:33,760
+Und das System ist wieder gestartet.
+
+254
+00:24:35,800 --> 00:24:36,980
+Großer Einstellbereich.
+
+255
+00:24:45,760 --> 00:24:47,940
+Wieder im musikalischen Tesla-Modus spielen.
+
+256
+00:24:55,120 --> 00:24:56,980
+Wirklich interessante Sache.
+
+257
+00:24:58,540 --> 00:25:00,640
+Jetzt können wir in Hertz gehen.
+
+258
+00:25:05,770 --> 00:25:06,690
+100 Hz.
+
+259
+00:25:08,030 --> 00:25:11,210
+Du kannst 50 Hz für die Modulation machen.
+
+260
+00:25:13,230 --> 00:25:14,010
+50 Hz.
+
+261
+00:25:15,130 --> 00:25:17,230
+Jetzt zeige ich das Oszillogramm.
+
+262
+00:25:19,550 --> 00:25:21,050
+Da sind Bursts.
+
+263
+00:25:24,310 --> 00:25:25,970
+Du siehst diese Form.
+
+264
+00:25:31,640 --> 00:25:32,680
+Tastverhältnis senken.
+
+265
+00:25:36,060 --> 00:25:36,720
+15%.
+
+266
+00:25:36,720 --> 00:25:39,760
+Du hörst deutlich den Transformator-Klang.
+
+267
+00:25:42,420 --> 00:25:43,800
+Genauso wie er läuft.
+
+268
+00:25:45,620 --> 00:25:48,980
+Er beginnt bei 50 Hz auf das Metallobjekt zu funken.
+
+269
+00:25:52,730 --> 00:25:55,450
+Die Schaltung ist wirklich gut, auch für Experimente.
+
+270
+00:25:59,340 --> 00:26:03,220
+Für diejenigen, die sich vertraut machen und so etwas bauen wollen.
+
+271
+00:26:05,840 --> 00:26:07,400
+Interessant sogar nur zur Demo.
+
+272
+00:26:34,300 --> 00:26:36,580
+Dieser Klang kommt vom kleinen Funken.
+
+273
+00:26:48,100 --> 00:26:48,940
+Genug gespielt.
+
+274
+00:26:50,040 --> 00:26:52,380
+Du baust ihn zusammen und spielst damit.
+
+275
+00:26:53,900 --> 00:26:55,280
+Das Ding ist ziemlich cool.
+
+276
+00:26:58,040 --> 00:27:00,360
+Schalte die Pulszuführung aus.
+
+277
+00:27:02,060 --> 00:27:03,320
+Kanal aus.
+
+278
+00:27:06,160 --> 00:27:08,320
+Nur der Verbrauch der Logikseite ist übrig.
+
+279
+00:27:09,660 --> 00:27:11,620
+Und du siehst den Stromverbrauch.
+
+280
+00:27:13,840 --> 00:27:14,820
+Ampere bei 0.
+
+281
+00:27:15,780 --> 00:27:17,800
+Weiter zu unseren konkreten Aufgaben.
+
+282
+00:27:19,800 --> 00:27:23,680
+Der Betrieb wird bei Anschluss einer ziemlich großen Antenne aufrechterhalten.
+
+283
+00:27:25,460 --> 00:27:30,940
+Wir können auch sehen, dass es bei derselben Modulationsfrequenz an der Antenne selbst funkt.
+
+284
+00:27:32,980 --> 00:27:35,500
+Die Antenne funkt auf ein Metallobjekt.
+
+285
+00:27:37,440 --> 00:27:42,780
+Wenn die Antenne angeschlossen ist, beobachten wir einen großen Durchmesser des elektrischen Felds.
+
+286
+00:27:44,120 --> 00:27:48,400
+Die Glimmlampe reagiert in ziemlich großem Abstand von diesem System mit der Antenne.
+
+287
+00:27:51,590 --> 00:27:55,850
+Und jetzt wollte ich auf ein wichtiges Merkmal der Katscher-Schaltung hinweisen.
+
+288
+00:27:57,230 --> 00:27:59,370
+Ich habe auf das Trägersignal erweitert.
+
+289
+00:28:00,550 --> 00:28:02,290
+Du siehst eine saubere Sinuswelle.
+
+290
+00:28:04,970 --> 00:28:06,410
+Eine Hand einbringen.
+
+291
+00:28:07,570 --> 00:28:09,850
+Du siehst, die Frequenz driftet.
+
+292
+00:28:12,810 --> 00:28:14,030
+Auf dem Oszilloskop.
+
+293
+00:28:15,530 --> 00:28:20,390
+Der Katscher ist eine Selbstoszillatorschaltung mit Rückkopplung zur Transistorbasis.
+
+294
+00:28:21,530 --> 00:28:26,650
+Und in unserem System ist es nützlich, wenn die Antenne direkt über der Drossel des Systems steht.
+
+295
+00:28:28,130 --> 00:28:31,810
+Das Magnetfeld der Drossel erzeugt eine Einkopplung an der Antenne.
+
+296
+00:28:34,050 --> 00:28:39,290
+Und dieses Spannungspotenzial geht durch die Hochspannungsspule zur Basis unseres Leistungstransistors.
+
+297
+00:28:40,070 --> 00:28:44,470
+So hat der Katscher einen unersetzlichen Vorteil gegenüber der gesteuerten Tesla.
+
+298
+00:28:47,130 --> 00:28:51,790
+Speziell für die sogenannte TL494-Chip-Glitch-Gruppe.
+
+299
+00:28:54,150 --> 00:28:57,870
+Dieser Effekt, die Rückkopplung, wenn du eine Hand nah heranbringst.
+
+300
+00:28:58,870 --> 00:29:01,890
+Er funktioniert auch mit Einkopplung von der Drossel.
+
+301
+00:29:02,820 --> 00:29:08,750
+Und es stellt sich heraus, dass der Katscher die Phasenabstimmung zwischen den niederfrequenten Frequenzen erleichtert.
+
+302
+00:29:11,030 --> 00:29:13,550
+Was im Gegentakt-Drosselkreis passiert.
+
+303
+00:29:15,170 --> 00:29:17,430
+Und unser Hochspannungs-Hochfrequenz-System.
+
+304
+00:29:19,670 --> 00:29:21,550
+Genau, weil es ein Selbstoszillator ist.
+
+305
+00:29:23,230 --> 00:29:25,870
+Leider erlaubt die gesteuerte Tesla das nicht.
+
+306
+00:29:26,910 --> 00:29:28,970
+Du musst diesen Moment manuell korrigieren.
+
+307
+00:29:30,070 --> 00:29:35,010
+Also macht die Arbeit am Katscher unter sonst gleichen Bedingungen den Systemstart einfacher.
+
+308
+00:29:38,400 --> 00:29:42,380
+Eine andere Sache, du kannst deutlich sehen, dass der Katscher klingelt.
+
+309
+00:29:46,640 --> 00:29:50,180
+Das Signal, das du jetzt siehst, hat das Maximum erreicht.
+
+310
+00:29:51,740 --> 00:29:56,980
+Selbst wenn wir jetzt das Tastverhältnis des Steuersignals ändern, sagen wir auf 20%.
+
+311
+00:29:58,200 --> 00:30:04,400
+Du siehst auch, dass der Schwanz dieses Klingelns ziemlich groß ist, wenn das System einen guten Q-Faktor hat.
+
+312
+00:30:05,860 --> 00:30:08,060
+Wie werden wir es im System los?
+
+313
+00:30:09,820 --> 00:30:14,000
+Wir sehen, wir haben einen Anstieg zum Maximum und dann einen Abfall.
+
+314
+00:30:16,820 --> 00:30:21,420
+Um diesen Schwanz loszuwerden, kannst du einfach eine übliche Schaltungslösung anwenden.
+
+315
+00:30:22,360 --> 00:30:26,720
+Hier an der Antennenspitze, wo das kleine Funken zum Metallobjekt ist.
+
+316
+00:30:28,440 --> 00:30:30,920
+Eine Funkenstrecke zur Erde hinzufügen.
+
+317
+00:30:32,780 --> 00:30:36,020
+Und durch Anpassen des Abstands der Funkenstrecke das erreichen.
+
+318
+00:30:39,040 --> 00:30:40,960
+Schau dir das Oszillogramm an.
+
+319
+00:30:42,660 --> 00:30:46,780
+Du kannst sehen, das Metallobjekt nah heranbringen und das Klingeln verschwindet.
+
+320
+00:30:48,800 --> 00:30:51,440
+Das Klingeln verschwindet in unserem System.
+
+321
+00:30:53,340 --> 00:30:57,720
+Jetzt versuche ich präziser abzustimmen, damit du diesen Moment sehen kannst.
+
+322
+00:31:07,760 --> 00:31:11,060
+Du siehst deutlich, wie das Klingeln abgeschnitten wird.
+
+323
+00:31:13,260 --> 00:31:17,720
+Und hier mit der Funkenstrecke kannst du diesen ganzen Schwanz wirklich effektiv abschneiden.
+
+324
+00:31:19,000 --> 00:31:24,220
+Übrigens, die Funkenstrecke wird auch die endgültige Amplitude an der Hochspannungsklemme regulieren.
+
+325
+00:31:27,800 --> 00:31:32,220
+Viel Erfolg euch allen bei euren Experimenten, alles Gute, weitermachen!
+

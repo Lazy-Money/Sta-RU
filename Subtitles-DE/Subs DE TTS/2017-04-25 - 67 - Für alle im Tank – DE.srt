@@ -1,0 +1,744 @@
+1
+00:00:00,250 --> 00:00:01,510
+Hallo zusammen.
+
+2
+00:00:02,350 --> 00:00:06,350
+Schau, im Kanal entbrennen heftige Streitereien über dieses Gerät.
+
+3
+00:00:08,610 --> 00:00:15,050
+Es gibt viele interessante Kommentare und genug Unsinn, wie du kannst das Gerät nicht bedienen, die Messung ist falsch.
+
+4
+00:00:16,230 --> 00:00:19,770
+Oder die Tastköpfe an deinem Oszilloskop sind durchgebrannt.
+
+5
+00:00:21,190 --> 00:00:23,370
+Übrigens, das sind 1500 Volt Tastköpfe.
+
+6
+00:00:24,410 --> 00:00:26,330
+Diese Tastköpfe haben 100x Dämpfung.
+
+7
+00:00:27,650 --> 00:00:29,630
+Die können hier auf keinen Fall durchbrennen.
+
+8
+00:00:31,270 --> 00:00:33,990
+Egal, ich zeige es dir, damit du es siehst.
+
+9
+00:00:35,210 --> 00:00:44,110
+Ich zeige es dir, obwohl ich in jenem Video gezeigt habe, dass beim gelben Kanal am Transistorgate das Oszillogramm klar sichtbar war, also nicht durchgebrannt.
+
+10
+00:00:45,850 --> 00:00:47,710
+Okay, genug Unsinn geredet.
+
+11
+00:00:49,050 --> 00:00:57,110
+Ein Kerl schreibt, endlich überzeugt, dass 99,9% ähnlicher Videos rein zum Geldverdienen mit Aufrufen sind.
+
+12
+00:00:57,970 --> 00:00:59,930
+Naja, wenn du das denkst, gut.
+
+13
+00:01:01,490 --> 00:01:03,750
+Und hier ist ein interessanter Kommentar.
+
+14
+00:01:05,710 --> 00:01:10,470
+Natürlich hat sich die Impulspolarität nicht geändert, du hast den Tastkopf nicht getauscht.
+
+15
+00:01:12,150 --> 00:01:12,830
+Ja, keine Frage.
+
+16
+00:01:12,830 --> 00:01:17,690
+Ich tausche jetzt den Tastkopf, du wirst diesen Impuls dort überhaupt nicht sehen.
+
+17
+00:01:18,750 --> 00:01:21,470
+Du siehst nur den Schalter arbeiten, das war's.
+
+18
+00:01:23,910 --> 00:01:27,210
+Der Impuls passiert bei uns ausschließlich an diesem Punkt.
+
+19
+00:01:28,570 --> 00:01:30,010
+Warum nehme ich ihn von hier?
+
+20
+00:01:31,190 --> 00:01:33,530
+Ausschließlich hier, nirgends sonst im Schaltplan.
+
+21
+00:01:34,850 --> 00:01:37,750
+Verdammt, ich bin es leid zu wiederholen, dass das keine Gegen-EMK ist.
+
+22
+00:01:38,590 --> 00:01:39,070
+Naja, gut.
+
+23
+00:01:39,850 --> 00:01:41,270
+Was sich die Leute nicht alles ausdenken.
+
+24
+00:01:41,270 --> 00:01:42,910
+Und Aufwärtswandler, dieser.
+
+25
+00:01:43,750 --> 00:01:44,690
+Ich kenne seinen Schaltplan.
+
+26
+00:01:45,570 --> 00:01:46,610
+Und Flyback, kenne ich.
+
+27
+00:01:47,390 --> 00:01:48,790
+Und ich habe solche Schaltungen gebaut.
+
+28
+00:01:50,370 --> 00:01:51,230
+Alles sieht für mich super aus.
+
+29
+00:01:52,050 --> 00:01:55,270
+Diesen Impuls, wir drehen ihn jetzt um und du siehst ihn dort nicht.
+
+30
+00:01:56,370 --> 00:01:57,710
+Er ist nur hier an diesem Punkt.
+
+31
+00:01:59,170 --> 00:02:00,090
+Also, Messung 1.
+
+32
+00:02:01,210 --> 00:02:04,030
+Ich bestätige, dass meine Tastköpfe noch intakt sind.
+
+33
+00:02:06,470 --> 00:02:07,710
+Oszilloskopmasse liegt am Minus.
+
+34
+00:02:09,090 --> 00:02:12,630
+Jetzt sehen wir uns das Oszillogramm an den Transistor-Gates an.
+
+35
+00:02:13,870 --> 00:02:16,150
+Also nach den Treibern.
+
+36
+00:02:16,730 --> 00:02:20,490
+Hier, zwei Tastköpfe und du siehst, das Bild ist identisch.
+
+37
+00:02:21,850 --> 00:02:22,730
+Ja, verdammt, es funktioniert.
+
+38
+00:02:24,330 --> 00:02:26,490
+Das Potential beträgt 15 Volt.
+
+39
+00:02:27,990 --> 00:02:29,710
+Und hier sehen wir die Leistung.
+
+40
+00:02:32,010 --> 00:02:35,310
+Genau 15 Volt, zieht 0,15 A.
+
+41
+00:02:37,970 --> 00:02:39,910
+Tastköpfe normal, Test bestanden.
+
+42
+00:02:41,870 --> 00:02:48,870
+Also, jetzt ist der Tastkopf umgesetzt, ebenfalls relativ zum Minus der Masse, auf den Ausgang einer der Bifilarwicklungen.
+
+43
+00:02:50,410 --> 00:02:53,450
+Ich mache alle Messungen direkt vor der Diode, nicht danach.
+
+44
+00:02:54,670 --> 00:02:57,430
+Danach ist nutzlos, am Kondensator liegt DC an.
+
+45
+00:02:58,410 --> 00:03:00,030
+Also strikt vor der Diode.
+
+46
+00:03:02,490 --> 00:03:08,510
+Jetzt lege ich an, Spannung liegt noch nicht an den Schaltern, hier ist das Oszillogramm, ich lege Spannung an.
+
+47
+00:03:11,010 --> 00:03:15,650
+Denk dran, wir haben so ein Oszillogramm.
+
+48
+00:03:16,070 --> 00:03:16,570
+Hier ist es.
+
+49
+00:03:18,190 --> 00:03:18,970
+Merk es dir gut.
+
+50
+00:03:21,010 --> 00:03:22,450
+Das ist keine Gegen-EMK.
+
+51
+00:03:24,090 --> 00:03:26,550
+Jetzt schau, ich schalte die Masse auf Plus.
+
+52
+00:03:30,760 --> 00:03:31,280
+Umgeschaltet.
+
+53
+00:03:33,980 --> 00:03:35,280
+Das Oszillogramm ist immer noch da.
+
+54
+00:03:37,000 --> 00:03:37,420
+Hier ist es.
+
+55
+00:03:38,880 --> 00:03:40,240
+Jetzt schau, sogar ein Witz.
+
+56
+00:03:41,260 --> 00:03:44,640
+So macht man keine Messungen, aber schau, ich trenne die Masse.
+
+57
+00:03:47,120 --> 00:03:48,580
+Nur der Tastkopf hängt.
+
+58
+00:03:51,620 --> 00:03:52,140
+Positiv.
+
+59
+00:03:53,360 --> 00:03:55,080
+Das Oszillogramm ist immer noch da.
+
+60
+00:03:56,180 --> 00:03:59,380
+Dieser Strom gehört nicht zu diesem System, nicht zur Stromquelle.
+
+61
+00:04:01,940 --> 00:04:03,820
+Jetzt tausche ich den Tastkopf.
+
+62
+00:04:05,760 --> 00:04:06,760
+Schau, im Gegenteil.
+
+63
+00:04:08,420 --> 00:04:11,680
+Du wirst dieses Signal dort nicht sehen, nichts davon an diesem Punkt.
+
+64
+00:04:13,500 --> 00:04:14,620
+Tastkopf umgedreht.
+
+65
+00:04:15,660 --> 00:04:17,620
+Jetzt liegt er am Minus der Versorgung.
+
+66
+00:04:19,360 --> 00:04:21,440
+Masse an derselben Bifilarwicklung.
+
+67
+00:04:23,140 --> 00:04:23,880
+Hier das Bild.
+
+68
+00:04:26,100 --> 00:04:30,260
+Kein umgekehrtes Signal mit großer Amplitude, das wir vorher gesehen haben.
+
+69
+00:04:31,880 --> 00:04:33,800
+Achte auf die Ablenkung Volt pro Kästchen.
+
+70
+00:04:34,960 --> 00:04:36,600
+Jetzt 20V pro Kästchen.
+
+71
+00:04:37,920 --> 00:04:38,760
+Nichts von diesem Signal.
+
+72
+00:04:41,080 --> 00:04:43,200
+Jetzt schalte ich den Tastkopf auf Plus.
+
+73
+00:04:44,260 --> 00:04:47,460
+In diesem Sinne sehe ich nichts, aber lass mich umschalten.
+
+74
+00:04:48,860 --> 00:04:49,620
+Hier ist er am Plus.
+
+75
+00:04:53,000 --> 00:04:54,220
+Hier ist der Betrieb.
+
+76
+00:04:55,880 --> 00:04:56,840
+Nichts von diesem Signal.
+
+77
+00:04:59,080 --> 00:05:00,240
+Es ist nur an einer Stelle.
+
+78
+00:05:04,690 --> 00:05:06,590
+Plätze tauschen, alles wie es sein soll.
+
+79
+00:05:11,200 --> 00:05:12,160
+Tastkopf platzieren.
+
+80
+00:05:15,620 --> 00:05:17,120
+Noch nicht mal angeschlossen.
+
+81
+00:05:18,380 --> 00:05:20,980
+Schau, wir müssen die Volt pro Kästchen Ablenkung ändern.
+
+82
+00:05:22,500 --> 00:05:24,040
+Die Amplitude ist hier sehr hoch.
+
+83
+00:05:28,200 --> 00:05:30,900
+Müssen es ändern, weil wir es sonst nicht sehen.
+
+84
+00:05:35,690 --> 00:05:37,810
+Hier ist das Oszillogramm.
+
+85
+00:05:40,210 --> 00:05:43,590
+Egal, wozu wir relativ messen, das habe ich schon gezeigt.
+
+86
+00:05:44,310 --> 00:05:46,410
+Hier relativ zu Plus platzieren.
+
+87
+00:05:48,650 --> 00:05:49,990
+Das Signal bleibt.
+
+88
+00:05:51,090 --> 00:05:52,610
+Keine Einstellungen ändern.
+
+89
+00:05:54,470 --> 00:05:57,490
+Und relativ zu Minus auch keine Einstellungen ändern.
+
+90
+00:05:58,990 --> 00:06:00,110
+Das Signal bleibt.
+
+91
+00:06:02,310 --> 00:06:03,650
+Diesen Tastkopf umdrehen.
+
+92
+00:06:05,050 --> 00:06:10,590
+Bringt nichts, denn wir brauchen diesen Effekt speziell an diesem Punkt, wo der Bruch am Schalter passiert.
+
+93
+00:06:12,050 --> 00:06:13,750
+Machen wir die nächste Messung.
+
+94
+00:06:15,630 --> 00:06:18,850
+Der gelbe Kanal hängt wie vorher an einer der Bifilarwicklungen.
+
+95
+00:06:20,350 --> 00:06:24,430
+Die Oszilloskopmessung wird relativ zum Minus der gemeinsamen Leitung gemacht.
+
+96
+00:06:26,330 --> 00:06:29,030
+Der blaue Kanal hängt am Eingang.
+
+97
+00:06:30,410 --> 00:06:30,890
+Plus Minus.
+
+98
+00:06:31,830 --> 00:06:34,890
+Schau, eigentlich wird der Systemeingang mit DC versorgt.
+
+99
+00:06:36,950 --> 00:06:38,590
+Hier die Oszillogramme.
+
+100
+00:06:39,510 --> 00:06:40,510
+Erstmal nichts.
+
+101
+00:06:42,130 --> 00:06:43,030
+0V angelegt.
+
+102
+00:06:44,270 --> 00:06:46,110
+Lege Spannung an, jetzt schauen wir.
+
+103
+00:06:52,220 --> 00:06:54,960
+Schau, das Potential am blauen Kanal steigt.
+
+104
+00:06:56,420 --> 00:06:56,620
+DC.
+
+105
+00:06:57,880 --> 00:07:00,240
+Die Ablenkung beträgt 10V pro Kästchen.
+
+106
+00:07:03,160 --> 00:07:05,680
+Jetzt macht es etwas mehr als ein Kästchen.
+
+107
+00:07:06,860 --> 00:07:09,440
+Und die Spannung beträgt hier genau 17V.
+
+108
+00:07:10,960 --> 00:07:12,200
+Alles passt zusammen.
+
+109
+00:07:14,560 --> 00:07:17,000
+Lege mehr an, dieses Potential wächst.
+
+110
+00:07:18,220 --> 00:07:22,640
+Und am gelben Kanal haben wir die Ablenkung, hier ist sie, 50V pro Kästchen.
+
+111
+00:07:24,740 --> 00:07:29,140
+Das heißt, wir sehen eine klassische normale Messung relativ zum gemeinsamen Punkt.
+
+112
+00:07:31,860 --> 00:07:35,020
+Eigentlich DC, hier ist es, schau den blauen Kanal.
+
+113
+00:07:36,740 --> 00:07:37,060
+DC.
+
+114
+00:07:39,000 --> 00:07:42,120
+Noch eine Sache, vielleicht geht DC nicht zur Lampe.
+
+115
+00:07:43,600 --> 00:07:46,160
+Messen wir auch an der Lampe, geht DC dorthin.
+
+116
+00:07:48,020 --> 00:07:52,320
+Hier habe ich die Lampe angeschlossen, in dem Fall haben wir uns 100W angeschaut.
+
+117
+00:07:52,600 --> 00:07:54,060
+Hier fand ich 200W.
+
+118
+00:07:56,940 --> 00:07:58,720
+Habe 200W darauf bekommen.
+
+119
+00:08:00,260 --> 00:08:04,500
+Hier siehst du den Ausgang und wir messen direkt, hier liegt der Tastkopf an der Lampe.
+
+120
+00:08:06,240 --> 00:08:09,360
+Schau, Spannung anlegen, Lampe leuchtet, schau.
+
+121
+00:08:11,160 --> 00:08:16,920
+Anlegen, du siehst, wie das Potential an der Lampe wächst, DC, keine Einbrüche, nichts.
+
+122
+00:08:18,280 --> 00:08:20,900
+Schau, die Lampe läuft am Ausgang, hängt dort.
+
+123
+00:08:24,060 --> 00:08:25,940
+Messung strickt mit DC durchgeführt.
+
+124
+00:08:27,440 --> 00:08:32,080
+Wäre das nicht der Fall, würde ich die Messung nicht hochladen und den Wirkungsgrad berechnen.
+
+125
+00:08:35,300 --> 00:08:36,320
+Es funktioniert alles.
+
+126
+00:08:37,800 --> 00:08:40,960
+Also denk dir nichts aus, wenn du nicht weißt, wie man misst.
+
+127
+00:08:41,120 --> 00:08:43,400
+Mir gefällt, wie ich messe, miss selbst.
+
+128
+00:08:47,760 --> 00:08:55,620
+Und hier ein kleiner Crash-Test, damit klar ist, dass deine Gegen-EMK niemals so viel und so schnell auf diesen Kondensator werfen wird.
+
+129
+00:08:56,920 --> 00:09:01,900
+Schau, ich lege nur 20V am Eingang an und schau, wie es hier ankommt, 20V.
+
+130
+00:09:09,700 --> 00:09:13,520
+Gegen-EMK kann hier niemals einen Kondensator so schnell laden.
+
+131
+00:09:15,280 --> 00:09:18,560
+Such sie dort nicht, wer daran arbeitet, bekommt nichts.
+
+132
+00:09:20,020 --> 00:09:22,080
+Schau, wie schnell der Kondensator lehnt.
+
+133
+00:09:24,020 --> 00:09:26,760
+Und hier eine Diskussion, mir gefiel ein Kommentar.
+
+134
+00:09:27,760 --> 00:09:34,200
+Ein Kerl schreibt, naja, man kann ein Fass mit einem Eimer leer schöpfen oder man kann es auch auf einmal ausschütten.
+
+135
+00:09:35,440 --> 00:09:38,280
+Und der andere antwortet, das Fass ist schon voll.
+
+136
+00:09:39,540 --> 00:09:43,120
+Absolut richtig, das Fass ist schon voll, wir müssen den Überschuss nehmen.
+
+137
+00:09:45,020 --> 00:09:46,120
+Und zum vollen Fass.
+
+138
+00:09:48,220 --> 00:09:50,800
+Das System muss beschleunigen, wirk es nicht ab.
+
+139
+00:09:51,620 --> 00:09:56,500
+Hier habe ich dir direkt gezeigt, wie es funktioniert, 90% Wirkungsgrad.
+
+140
+00:09:59,500 --> 00:10:03,260
+Das Fass ist voll und im richtigen Moment nehmen wir einfach den Überschuss.
+
+141
+00:10:04,500 --> 00:10:06,300
+Schau, aus demselben 20V.
+
+142
+00:10:10,460 --> 00:10:15,140
+Und stell dir vor, jetzt füge ich hier 44V hinzu, was passiert?
+
+143
+00:10:17,540 --> 00:10:23,100
+Das System braucht etwa 200-300V am Eingang, dann gibt es ein echtes Festival.
+
+144
+00:10:25,200 --> 00:10:25,520
+Schau.
+
+145
+00:10:39,940 --> 00:10:43,200
+Wie auch immer, wer es kapiert hat, hat es kapiert.
+
+146
+00:10:43,200 --> 00:10:47,700
+Der Rest kann weiter Booster, Flybacks und andere klassische Schaltungen bauen.
+
+147
+00:10:49,880 --> 00:10:52,140
+Jetzt noch ein interessantes Experiment.
+
+148
+00:10:53,660 --> 00:10:58,740
+Schau, ich habe eine Glimmlampe genommen, jetzt sehen wir, wo dieses Potential vorhanden ist.
+
+149
+00:11:00,600 --> 00:11:05,660
+Ich lege hier 56V am Eingang an und schau, wird die Glimmlampe leuchten?
+
+150
+00:11:07,620 --> 00:11:09,260
+Berühre Minus, leuchtet nicht.
+
+151
+00:11:10,660 --> 00:11:12,520
+Berühre Plus, leuchtet nicht.
+
+152
+00:11:15,000 --> 00:11:18,080
+Berühre den Ausgang, leuchtet nicht, weil hier DC.
+
+153
+00:11:18,440 --> 00:11:21,380
+Keine Impulse, schon DC auf diesem Kondensator.
+
+154
+00:11:22,700 --> 00:11:25,140
+Jetzt schau, was an den Kühlkörpern passiert.
+
+155
+00:11:26,520 --> 00:11:33,160
+Übrigens sind die Transistoren von den Kühlkörpern isoliert, aber die Kühlkörper sind auch Teil der Saugzone bei diesem Effekt.
+
+156
+00:11:34,320 --> 00:11:36,640
+Berühre, schau, die Glimmlampe leuchtet.
+
+157
+00:11:38,200 --> 00:11:40,340
+Und an den Bifilaranschlüssen hier.
+
+158
+00:11:42,980 --> 00:11:45,080
+Es ist überall an den Bifilarwicklungen.
+
+159
+00:11:47,100 --> 00:11:48,960
+Dieser Effekt ist an jeder einzelnen.
+
+160
+00:11:51,620 --> 00:11:55,280
+Das ist, was BD nicht gezeigt hat, bei ihm leuchtet das Ding.
+
+161
+00:11:57,960 --> 00:12:02,460
+Und an der Masse, wo wir anschließen, kein Leuchten, es geht zum Kondensator.
+
+162
+00:12:04,280 --> 00:12:08,180
+Aber wenn wir jetzt diesen Draht trennen, der zum Kondensator geht.
+
+163
+00:12:15,620 --> 00:12:18,900
+Ausschalten, herausziehen, diese Impulse kommen nach den Dioden.
+
+164
+00:12:20,400 --> 00:12:24,560
+Natürlich glättet der Kondensator es hier nicht, deshalb ist der Effekt vorhanden.
+
+165
+00:12:26,500 --> 00:12:28,000
+Das Phänomen ist ein anderes.
+
+166
+00:12:29,280 --> 00:12:31,960
+Man muss keine gegen EMK und den Rest erfinden.
+
+167
+00:12:33,220 --> 00:12:37,220
+Echte Funkamateure haben schon viele Experimente gemacht und es abgehakt.
+
+168
+00:12:39,660 --> 00:12:41,780
+Ich habe mit ihnen darüber gesprochen.
+
+169
+00:12:43,580 --> 00:12:46,760
+Und niemand hat deine Flybacks in dieser Schaltung gesehen.
+
+170
+00:12:47,720 --> 00:12:48,820
+Der Effekt ist anders.
+
+171
+00:12:50,340 --> 00:12:58,080
+Außerdem, schau genau hin, wo du gegen EMK gesehen hast, wo sie funktioniert, wo hast du jemals gegen EMK mit solcher Breite gesehen.
+
+172
+00:12:59,920 --> 00:13:02,600
+Sie ist dünn wie eine Nadel und klingt danach ab.
+
+173
+00:13:04,700 --> 00:13:06,240
+Das ist keine gegen EMK.
+
+174
+00:13:07,900 --> 00:13:10,160
+Mach das Experiment und probiere es.
+
+175
+00:13:11,400 --> 00:13:15,040
+Der Schaltplan ist schon da für das Experiment, alles ist verfügbar.
+
+176
+00:13:17,300 --> 00:13:18,800
+Ich weiß nicht, was du sonst noch brauchst.
+
+177
+00:13:21,460 --> 00:13:27,180
+Zeig ein Wunder, aber ich bin nicht so blöd, Wunder zu zeigen und mir dann das Hirn darüber kaputt reden zu lassen.
+
+178
+00:13:29,880 --> 00:13:34,620
+Wie auch immer, okay, das ist alles Kleinkram, was die Leute hier schreiben.
+
+179
+00:13:36,300 --> 00:13:38,920
+Ich lese das und staune, wie man so sagt.
+
+180
+00:13:40,520 --> 00:13:43,800
+Jetzt nach diesem Clip baue ich ein interessantes Video ein.
+
+181
+00:13:45,380 --> 00:13:52,580
+Du hast es wahrscheinlich schon oft gesehen, und wer nicht und auch wer es gesehen hat, dem würde ich empfehlen, mehrmals nochmal zu schauen.
+
+182
+00:13:54,680 --> 00:13:59,020
+Sehr interessantes Material darüber, wie das funktioniert und was passiert.
+
+183
+00:14:00,420 --> 00:14:02,220
+Wohin die Energie tatsächlich geht.
+
+184
+00:14:03,640 --> 00:14:09,300
+Wo Elektronen und Positronen entstehen, ihre Wechselwirkung, was ein Elektron-Positron-Dipol ist.
+
+185
+00:14:11,320 --> 00:14:18,420
+Es ist Zeit aufzuwachen, Zeit, den Tatsachen ins Auge zu sehen, sonst werden wir lange brauchen, um zum Erfolg zu kommen.
+
+186
+00:14:24,620 --> 00:14:26,440
+Vielen Dank für's Zuschauen und bis zum nächsten Mal.
+

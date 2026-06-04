@@ -1,0 +1,472 @@
+1
+00:00:00,000 --> 00:00:00,980
+Hallo zusammen!
+
+2
+00:00:02,780 --> 00:00:09,840
+In diesem Video betrachten wir den Leistungsteil einer Vollbrückenschaltung zum Schwingen einer Tesla-Transformator-Drossel im Resonanzmodus.
+
+3
+00:00:11,900 --> 00:00:16,020
+Wir beginnen mit den Elementen, die den Transformator für uns ansteuern.
+
+4
+00:00:17,600 --> 00:00:20,640
+Das sind zwei TC4420 Treiber.
+
+5
+00:00:21,840 --> 00:00:26,880
+Diese Treiber können bis zu 6A im Impuls arbeiten, also passen sie gut zu uns.
+
+6
+00:00:28,880 --> 00:00:33,880
+Und sie steuern weiter die Gates nicht nur von IRF840-Transistoren.
+
+7
+00:00:35,840 --> 00:00:47,740
+Hier kannst du anstelle dieser Transistoren beliebige andere FET- oder IGBT-Transistoren mit einer Spannung von nicht weniger als 600V einsetzen, naja, und entsprechende Stromstärken, abhängig davon,
+
+8
+00:00:48,020 --> 00:00:50,180
+welche Aufgaben du weiter verfolgen willst.
+
+9
+00:00:51,400 --> 00:00:56,480
+Auch wenn du die Transistoren auf andere wechselst, musst du nur die Begrenzungswiderstände auswählen.
+
+10
+00:00:56,480 --> 00:00:59,100
+Die zur Seite des FET-Transistor-Gates gehen.
+
+11
+00:01:04,400 --> 00:01:09,780
+Je größer die Gartekapazität des von dir gewählten Transistors, desto kleiner dieser Widerstand.
+
+12
+00:01:11,080 --> 00:01:17,560
+Entsprechend wird die Last an diesen beiden Treibern größer sein, und das Steuersystem wird letztendlich einen größeren Verbrauch haben.
+
+13
+00:01:19,240 --> 00:01:26,460
+Der Transformator selbst ist auf Verrieb mit Permeabilität 2500 in Form eines Topfkerns aus zwei Hälften hergestellt.
+
+14
+00:01:28,280 --> 00:01:30,040
+Abmessungen sind im Bild gezeigt.
+
+15
+00:01:30,780 --> 00:01:33,340
+So sieht der Kern in der Realität aus.
+
+16
+00:01:34,920 --> 00:01:43,960
+Zwei Hälften mit kleinen Abmessungen, die nach dem Liegen des Drahts im Inneren mithilfe einer Gewindeverbindung fixiert werden, die direkt an der Platine festgezogen wird.
+
+17
+00:01:47,040 --> 00:01:53,260
+Anstelle dieses Kerns, wenn du keinen solchen findest, kannst du einen Verrietring mit derselben Permeabilität verwenden.
+
+18
+00:01:55,920 --> 00:02:02,620
+Die Primärwicklung beträgt bei uns 12,5 Windungen und 4 Sekundärwicklungen mit je 11,5 Windungen.
+
+19
+00:02:05,440 --> 00:02:13,800
+Der Draht nach Länge, der in diese Wicklung ging, wir haben 5 Wicklungen, letztendlich gingen 60 cm Draht, einschließlich dieser Anschlüsse.
+
+20
+00:02:15,840 --> 00:02:21,540
+Wie der Draht gewickelt ist, zu einem Bündel von 5 parallelen Drecken gesammelt und gleichzeitig gewickelt.
+
+21
+00:02:23,040 --> 00:02:27,940
+Nach dem Wickeln wählst du einen der Leiter aus und machst eine weitere zusätzliche Windung.
+
+22
+00:02:30,040 --> 00:02:34,660
+Das heißt, das wird weiter unsere Primärwicklung sein, die 12,5 Windungen hat.
+
+23
+00:02:36,960 --> 00:02:41,400
+Die Primärwicklung wird von unseren Treibern über den Trenntransformator geschwungen.
+
+24
+00:02:43,300 --> 00:02:47,260
+Ihre Kapazität beträgt 1,5 F bei 250 Volt.
+
+25
+00:02:48,100 --> 00:02:52,800
+Ich habe ihn als Folienkondensator entsprechender Abmessungen in Hardware markiert.
+
+26
+00:02:53,900 --> 00:02:55,660
+Du wirst ihn weiter auch sehen.
+
+27
+00:02:56,900 --> 00:03:00,340
+An den Treiberausgängen sind zwei Dioden mit entsprechendem Einschluss.
+
+28
+00:03:02,540 --> 00:03:11,920
+Entsprechend der Leistung des Treibers werden sie in der Schaltung so genannt, um Spitzen zu glätten, die sich während der Arbeit unter Last der Primärwicklung des Impulstransformators bilden.
+
+29
+00:03:13,720 --> 00:03:20,040
+Die Impulse, die zur Steuerung der Treiber zugeführt werden, haben eine 180 Grad Verschiebung.
+
+30
+00:03:21,760 --> 00:03:24,620
+Und durch die Wicklung sind sie gegeneinander gerichtet.
+
+31
+00:03:25,980 --> 00:03:30,320
+Also werden wir an der Primär- und Sekundärwicklung ein bipolares Signal sehen.
+
+32
+00:03:34,350 --> 00:03:41,410
+Indem wir solch ein Signal durch den Impulstransformator steuern, sichern wir die entsprechende Arbeit der Brückenschaltung des Wechselrichters.
+
+33
+00:03:42,930 --> 00:03:47,210
+Es stellt sich heraus, unsere Transistoren arbeiten diagonal in Paaren.
+
+34
+00:03:49,590 --> 00:03:54,190
+In der Schaltung ist sichtbar, dass ich den Start der Wicklungen mit Punkten markiert habe.
+
+35
+00:03:56,350 --> 00:03:58,470
+Während der Montage achte auf diesen Moment.
+
+36
+00:03:59,790 --> 00:04:04,090
+Es ist sehr wichtig, dass deine Transistoren speziell paarweise diagonal arbeiten.
+
+37
+00:04:05,550 --> 00:04:06,490
+Zum Beispiel, schau.
+
+38
+00:04:07,710 --> 00:04:10,850
+Der Punkt am Start der Wicklung geht zum Gate eines der Schalter.
+
+39
+00:04:14,030 --> 00:04:21,550
+Entsprechend ist das Gate des zweiten Schalters diagonal, wenn du durch die Schaltung gehst, auch über einen Vorwiderstand mit dem Start der Wicklung verbunden.
+
+40
+00:04:23,570 --> 00:04:27,490
+Das andere Paar dieser Transistor-Gates ist mit den Enden der Wicklungen verbunden.
+
+41
+00:04:30,530 --> 00:04:31,750
+Verfolge diesen Moment.
+
+42
+00:04:33,830 --> 00:04:39,270
+Der IRF 840 Transistor ist in einem Gehäuse für Durchsteckmontage hergestellt.
+
+43
+00:04:39,270 --> 00:04:42,050
+Hat drei Anschlüsse.
+
+44
+00:04:42,870 --> 00:04:46,010
+Die Anschlüsse werden entsprechend von links nach rechts gezählt.
+
+45
+00:04:47,130 --> 00:04:49,450
+Das wird der erste Anschluss sein, zweiter und dritter.
+
+46
+00:04:50,490 --> 00:04:53,190
+Der erste Anschluss in der Schaltung ist das Gate.
+
+47
+00:04:54,830 --> 00:04:55,470
+Dieser Punkt hier.
+
+48
+00:04:56,670 --> 00:04:58,610
+Der zweite Anschluss ist der Drain.
+
+49
+00:05:00,410 --> 00:05:01,950
+Dieser Punkt hier am Transistor.
+
+50
+00:05:03,490 --> 00:05:05,210
+Und der dritte Anschluss ist die Source.
+
+51
+00:05:06,450 --> 00:05:08,350
+Entsprechend dieser Anschluss in der Schaltung.
+
+52
+00:05:10,390 --> 00:05:14,290
+Parallel zum Transistor ist eine MUR 460 Diode.
+
+53
+00:05:17,590 --> 00:05:21,110
+Sie ist in einem standardmäßigen zylindrischen Gehäuse hergestellt.
+
+54
+00:05:23,170 --> 00:05:29,350
+Sie dient dazu, OIDS-Spitzen während der Arbeit des Wechselrichters an induktiver Last kurz zu schließen.
+
+55
+00:05:31,270 --> 00:05:40,290
+Unter anderen Transistoren, wenn du leistungsstärkere verwendest, empfehle ich, MUR 860 Dioden schon in solch einem Gehäuse zu installieren.
+
+56
+00:05:41,790 --> 00:05:45,350
+Sie sind 8 Ampere und erfordern Installation an einem Kühlkörper.
+
+57
+00:05:46,870 --> 00:05:51,750
+Das heißt, am selben Kühlkörper installiert, an dem sich der Leistungsschalter selbst befindet.
+
+58
+00:05:53,090 --> 00:05:54,830
+In unmittelbarer Nähe zu ihm.
+
+59
+00:05:56,110 --> 00:06:00,290
+Diese Elemente, 10er gegenphasig bei 15 Volt geschaltet.
+
+60
+00:06:03,960 --> 00:06:05,800
+Entladungswiderstand 1,2 K.
+
+61
+00:06:07,040 --> 00:06:12,680
+Und Vorwiderstand, installiert an der Platine in unmittelbarer Nähe zum Gate des FET-Schalters.
+
+62
+00:06:14,220 --> 00:06:19,380
+Der 1,2 K Widerstand dient zur Entladung der Gartekapazität des FET-Schalters.
+
+63
+00:06:20,560 --> 00:06:28,660
+Gegenphasig geschaltete 10er dienen dazu, Spitzen abzuschneiden, die sich während der Impulskommutierung des Isolationssteuertransformators bilden.
+
+64
+00:06:30,380 --> 00:06:35,460
+Die Spannung am Leistungsteil der Brücke wird an diesen Punkten zugeführt, markiert 1,2.
+
+65
+00:06:36,720 --> 00:06:43,660
+Und hier ist auch ein Glättungsakkumulator Elektrolytkondensator von 470 F bei 450 V angeschlossen.
+
+66
+00:06:45,160 --> 00:06:51,380
+Die maximale Spannung, die ich empfehle, an diesen Punkten zuzuführen, beträgt bis zu 400 V.
+
+67
+00:06:53,860 --> 00:07:01,860
+Dieses System arbeitet erfolgreich mit 150 W Verbrauch, das ist in der Größenordnung von 300 V, ein halbes Ampere bei DC.
+
+68
+00:07:03,680 --> 00:07:08,880
+Das System überhitzt nicht, die Kühlkörpertemperatur ist im Bereich von 45 Grad.
+
+69
+00:07:09,800 --> 00:07:16,140
+In der Schaltung ist sichtbar, dass ich einen Kondensator in Reihe mit der Tesla-Transformator-Drossel installiert habe.
+
+70
+00:07:17,780 --> 00:07:21,520
+Es ist geschrieben, dass er in Resonanz ausgewählt werden muss.
+
+71
+00:07:23,040 --> 00:07:27,580
+Ich habe diesen Schwingkreis nach der Trägerfrequenz des Haupt-Tesla-Transformators ausgewählt.
+
+72
+00:07:28,780 --> 00:07:31,800
+Du kannst diesen Wandler auch ohne diesen Kondensator verwenden.
+
+73
+00:07:33,620 --> 00:07:38,500
+Dann wird das Schwingen des Tesla-Transformators speziell mit solchen bipolaren Impulsen gemacht.
+
+74
+00:07:40,960 --> 00:07:46,340
+Wenn ein Kondensator hier in der Schaltung verwendet wird, können wir den Drosselanschluss betrachten.
+
+75
+00:07:48,720 --> 00:07:52,180
+Hier zum Kondensator ist die Drossel mit ihrem oberen Punkt verbunden.
+
+76
+00:07:54,100 --> 00:07:58,460
+Hier, an dieses Transistorpaar, ist die Drossel mit dem unteren Punkt verbunden.
+
+77
+00:07:59,780 --> 00:08:09,640
+Der obere Drosselpunkt, wenn sie zylindrisch um den Tesla-Transformator gewickelt ist, wird für dich der Punkt sein, der zum heißen Ende des Tesla-Transformators gerichtet ist.
+
+78
+00:08:10,560 --> 00:08:13,160
+Und der untere Punkt entsprechend zum kalten Ende.
+
+79
+00:08:16,630 --> 00:08:23,710
+Die Kompatibilität dieser Schaltung ist voll kompatibel mit der vorherigen Halbbrückenwandlerschaltung, die ich früher gegeben habe.
+
+80
+00:08:27,020 --> 00:08:30,120
+Wie sie anstelle dieses Leistungsteils anzuschließen?
+
+81
+00:08:33,120 --> 00:08:41,980
+Diese TC4420-Treibeeingänge werden über einen 16-Widerstand verbunden, entsprechend diese Punkte nach dem TC4093-Chip.
+
+82
+00:08:43,840 --> 00:08:45,000
+Pin 11 und Pin 10.
+
+83
+00:08:47,180 --> 00:08:53,700
+Die Versorgung erfolgt auch von einem DC-DC-Wandler 12-400V oder einem Laborblock, wer was hat.
+
+84
+00:08:55,480 --> 00:09:00,080
+Und das ist ein separater DC-DC-Wandler, auch derselbe wie in dieser Schaltung.
+
+85
+00:09:01,080 --> 00:09:03,200
+Das ist die Versorgung für den Logikteil.
+
+86
+00:09:05,240 --> 00:09:10,960
+Und diese 16V kommen zur Versorgung der Treiber, die die Primärwicklung des Impulstransformators schwingen.
+
+87
+00:09:13,400 --> 00:09:16,370
+Insgesamt ist die Schaltung ziemlich einfach, zuverlässig.
+
+88
+00:09:18,460 --> 00:09:25,260
+Sie hat hauptsächlich das Problem mit dem IR2110 und IR2113 Treiber ausgeschlossen.
+
+89
+00:09:27,540 --> 00:09:34,140
+Die Treibertemperatur muss in jener Schaltung sehr klar beobachtet werden, da die ganze Schaltung durch Überhitzung ausfällt.
+
+90
+00:09:36,220 --> 00:09:43,300
+Die Leute hatten solche Momente, also wurde entschieden, eine weitere Schaltung zu entwickeln, die frei von diesen Mängeln ist.
+
+91
+00:09:45,720 --> 00:09:53,380
+Die Halbbrückenschaltung hat den Moment, dass sie die Versorgungsspannung in der Hälfte teilt, und die Vollbrückenschaltung leidet nicht unter solch einem Mangel.
+
+92
+00:09:55,260 --> 00:10:01,940
+Das heißt, die gesamte an diesen Punkten angelegte Spannung wird auf die Primärwicklung des Tesla-Transformators kommutiert.
+
+93
+00:10:03,820 --> 00:10:10,140
+Wenn diese Schaltung nicht an einen Tesla-Transformator angeschlossen ist, kannst du sie erfolgreich für andere Zwecke verwenden.
+
+94
+00:10:11,620 --> 00:10:18,040
+Zum Beispiel diesen Kondensator loswerden, eine entsprechende Drossel hier einsetzen und eine Art Wandler herstellen.
+
+95
+00:10:20,380 --> 00:10:27,180
+Das heißt, du kannst hier erfolgreich gleichgerichtete Netzspannung zuführen und Abwärts- oder Aufwärtswandler erstellen.
+
+96
+00:10:29,540 --> 00:10:31,460
+Vor dir ist die Geräteplatine.
+
+97
+00:10:32,600 --> 00:10:36,680
+Du siehst die Treiber, den Steuertransformator und den Folienkondensator.
+
+98
+00:10:39,520 --> 00:10:43,280
+Alle Gartekomponenten befinden sich direkt an den Transistoranschlüssen.
+
+99
+00:10:44,440 --> 00:10:48,340
+Die Transistoren selbst befinden sich am Kühlkörper unter der Platine.
+
+100
+00:10:50,880 --> 00:10:55,520
+Die Leistungstransistorkomponenten befinden sich auch in Form von Oberflächenmontage an den Transistorbeinen.
+
+101
+00:10:57,780 --> 00:11:06,360
+Und diese herausgeführten Punkte sind die Stellen, an denen die Tesla-Transformatordrossel oder eine andere Primärwicklung eines Leistungswandlers weiter angeschlossen wird.
+
+102
+00:11:08,560 --> 00:11:11,520
+Wie du siehst, ist die Platine ziemlich einfach.
+
+103
+00:11:13,460 --> 00:11:19,480
+Die Hauptschwierigkeit hier ist der Moment, dass die Anschlüsse des Steuertransformators korrekt verbunden werden müssen.
+
+104
+00:11:22,160 --> 00:11:26,320
+Noch einmal werde ich erinnern, sie werden diagonal nach dem Steuerschema verbunden.
+
+105
+00:11:28,040 --> 00:11:30,280
+So sieht das Bridge-Leistungsmodul aus.
+
+106
+00:11:32,200 --> 00:11:34,340
+Vier IRF840-Transistoren.
+
+107
+00:11:35,480 --> 00:11:41,300
+Parallel zu jedem Transistor an seinen Drenn- und Surceausgängen ist eine Mur-460-Diode.
+
+108
+00:11:52,910 --> 00:11:56,410
+Hier habe ich zusätzlich Hülsen angebracht, die die Anschlüsse schützen.
+
+109
+00:12:02,100 --> 00:12:06,280
+Jetzt kannst du sehen, wie die Wicklungen im Steuertransformator gelegt sind.
+
+110
+00:12:07,500 --> 00:12:10,720
+Wie du siehst, nehmen sie das ganze Volumen im Topfkern ein.
+
+111
+00:12:12,760 --> 00:12:19,180
+Um fünf Leiter in diesen Kern zu legen, wählte ich Draht mit Außendurchmesser durch Isolierung von 0,7 mm.
+
+112
+00:12:21,320 --> 00:12:22,460
+Isolierung ist Flurkunststoff.
+
+113
+00:12:23,220 --> 00:12:26,620
+Diese Leiter sind qualitativ aus Reingupfer hergestellt.
+
+114
+00:12:28,140 --> 00:12:34,180
+Außerdem hat die Flurkunststoffisolierung hervorragende Eigenschaften, die den Durchschlag von Hochspannung verhindern.
+
+115
+00:12:35,820 --> 00:12:43,080
+Das ist es, was wir brauchen, da große Versorgungsspannungspotenziale an diesen Wechselrichter in unserem Aufbau angelegt werden.
+
+116
+00:12:45,500 --> 00:12:50,460
+Und wenn du minderwertige Leiter verwendest, riskieren wir einen Kurzschluss im Steuertransformator.
+
+117
+00:12:52,680 --> 00:12:55,900
+Damit sind alle Feinheiten mit dieser Schaltung erschöpft.
+
+118
+00:12:57,640 --> 00:13:01,700
+Gute Stimmung an alle, alles Gute und ausgezeichnete Experimente!
+
