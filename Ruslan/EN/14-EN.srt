@@ -1,0 +1,575 @@
+1
+00:00:01,040 --> 00:00:01,760
+Hi everyone.
+
+2
+00:00:03,380 --> 00:00:08,220
+Let's wrap up this topic about this setup once more.
+
+3
+00:00:08,920 --> 00:00:12,200
+No atomic processes happen in the coils.
+
+4
+00:00:12,880 --> 00:00:15,400
+More precisely, a magnetic field happens.
+
+5
+00:00:15,680 --> 00:00:18,720
+I don't think a magnetic field relates to an atomic process.
+
+6
+00:00:18,840 --> 00:00:22,040
+Although I'm not very familiar with nuclear physics.
+
+7
+00:00:22,640 --> 00:00:25,380
+More precisely, I am familiar, but I probably don't remember much anymore.
+
+8
+00:00:26,420 --> 00:00:30,260
+And generally it's not worth getting into those weeds.
+
+9
+00:00:30,660 --> 00:00:31,700
+Forget about it.
+
+10
+00:00:32,520 --> 00:00:38,140
+Work on simplifying this whole process.
+
+11
+00:00:39,620 --> 00:00:44,440
+And I'll say honestly, it really is that simple.
+
+12
+00:00:44,820 --> 00:00:51,240
+But those gurus, the so-called specialists.
+
+13
+00:00:51,580 --> 00:00:56,580
+Take the same Romanov, Kapanadze, Akula.
+
+14
+00:00:56,740 --> 00:00:58,960
+They will under no circumstances tell you this.
+
+15
+00:00:59,060 --> 00:01:01,920
+For the reason that it's a crime for them.
+
+16
+00:01:02,060 --> 00:01:05,940
+If all this gets out, they'll just be left without money.
+
+17
+00:01:07,500 --> 00:01:09,600
+Accordingly, chaos will start in the world.
+
+18
+00:01:09,900 --> 00:01:13,100
+Because you can't give this system to everyone.
+
+19
+00:01:14,020 --> 00:01:16,740
+I mean you can't let everyone build it.
+
+20
+00:01:16,840 --> 00:01:24,440
+Because people, unfortunately, are the kind of creature that depends on money.
+
+21
+00:01:24,620 --> 00:01:29,840
+And anything to do with money — they immediately jump on it and start making a business.
+
+22
+00:01:29,840 --> 00:01:36,900
+They'll start cooking things up in garages, in basements, soldering any old way at home.
+
+23
+00:01:37,140 --> 00:01:46,080
+And in the end this will create dangers for those around and a nightmare will start.
+
+24
+00:01:46,080 --> 00:01:52,360
+That's why people are divided into categories.
+
+25
+00:01:53,360 --> 00:02:14,300
+And if you think about the prospects of this development at all, then of course many of us have been trying really hard to do this for many years, spending a ton of parts on it all.
+
+26
+00:02:15,160 --> 00:02:17,740
+MOSFETs, without understanding what to do.
+
+27
+00:02:17,960 --> 00:02:19,340
+I want to say once again.
+
+28
+00:02:19,880 --> 00:02:31,040
+To even begin this whole post-mortem and the whole argument about the system, you first of all have to know how it works.
+
+29
+00:02:31,160 --> 00:02:35,400
+In order to just sit down and stupidly wind the coil and know what to wind.
+
+30
+00:02:36,340 --> 00:02:43,380
+And not ask questions like what coil is wound, what gauge, how many turns.
+
+31
+00:02:44,260 --> 00:02:47,680
+Forget entirely about talk of turns and so on.
+
+32
+00:02:47,780 --> 00:02:48,660
+It's all silliness.
+
+33
+00:02:50,020 --> 00:02:53,380
+A normal specialist knows that you have to…
+
+34
+00:02:54,700 --> 00:03:03,800
+First the process, and he knows what he has to get in order to get a certain effect.
+
+35
+00:03:04,200 --> 00:03:12,820
+For example, to get a magnetic field, you just stupidly feed either AC or DC into the coil.
+
+36
+00:03:12,820 --> 00:03:13,500
+That's it.
+
+37
+00:03:14,020 --> 00:03:15,240
+You get a magnet.
+
+38
+00:03:15,920 --> 00:03:17,220
+Or a magnetic field.
+
+39
+00:03:19,920 --> 00:03:25,180
+For a bulb to light up, everyone knows perfectly well that you have to plug it into the outlet.
+
+40
+00:03:25,280 --> 00:03:27,660
+Accordingly, here it's the same story.
+
+41
+00:03:27,880 --> 00:03:35,340
+Here you have to know what to do, and not stupidly copy and count turns, what's wound here.
+
+42
+00:03:35,780 --> 00:03:38,440
+I'll say right away, this isn't a Kapanadze coil.
+
+43
+00:03:38,660 --> 00:03:40,720
+Forget about this Kapanadze coil.
+
+44
+00:03:40,720 --> 00:03:43,300
+It's very similar here, it's wound nicely.
+
+45
+00:03:43,840 --> 00:03:46,380
+Similar, but it's not a Kapanadze coil.
+
+46
+00:03:47,300 --> 00:03:53,760
+Here everything's wound in one direction, and wound by frequency ratios.
+
+47
+00:03:53,840 --> 00:03:56,540
+Right there is the hint that actually exists.
+
+48
+00:03:57,240 --> 00:04:07,260
+Experiments show that we have to forget about all these Kapanadze things that Kapanadze showed.
+
+49
+00:04:07,260 --> 00:04:14,060
+It's all very simple, as easy as pie, as they say.
+
+50
+00:04:14,740 --> 00:04:16,620
+Everything works, everything's great.
+
+51
+00:04:16,920 --> 00:04:28,960
+But Roma used a slightly different system here, which he then never showed anywhere.
+
+52
+00:04:29,400 --> 00:04:42,480
+In general, I have the impression that folks rushed to build this system, having believed Roma in his fairy tales that he was telling all the time in his videos.
+
+53
+00:04:42,680 --> 00:04:47,360
+I mean about explaining how it works, the Earth's frequencies and so on.
+
+54
+00:04:47,780 --> 00:04:49,560
+Forget about the Earth's frequencies.
+
+55
+00:04:50,280 --> 00:04:51,960
+Forget about this nonsense entirely.
+
+56
+00:04:52,860 --> 00:05:00,200
+I mean the Earth is a support source onto which all, so to speak, the pulse charge will drain.
+
+57
+00:05:01,080 --> 00:05:05,520
+And you suck nothing out of the Earth, no current, absolutely nothing.
+
+58
+00:05:05,740 --> 00:05:07,320
+I mean that doesn't happen.
+
+59
+00:05:08,100 --> 00:05:26,940
+I mean the Earth is needed as a support, a clear support, so that — like a concrete wall against which the pulse strikes and moves the wave, which has its own peculiar force.
+
+60
+00:05:26,940 --> 00:05:31,020
+As for the coil itself.
+
+61
+00:05:32,340 --> 00:05:34,700
+What's happening in the coil at all?
+
+62
+00:05:35,380 --> 00:05:43,640
+We feed the generators — in this case it's a regular push-pull — we feed oscillations here.
+
+63
+00:05:44,000 --> 00:05:49,940
+I mean a regular standing wave that stands in place, not moving.
+
+64
+00:05:50,140 --> 00:05:53,540
+I mean with this circuit that's wound on top.
+
+65
+00:05:53,540 --> 00:06:01,640
+This circuit — we feed energy, that is, voltage, into this circuit from here.
+
+66
+00:06:02,380 --> 00:06:03,160
+A square wave.
+
+67
+00:06:03,940 --> 00:06:07,100
+This square wave has to be turned into a sinusoidal signal.
+
+68
+00:06:09,440 --> 00:06:11,460
+The square wave won't work on its own here.
+
+69
+00:06:11,640 --> 00:06:15,520
+We need to create a standing wave, accordingly there has to be a sinusoid here.
+
+70
+00:06:16,360 --> 00:06:24,120
+On the pickup coil a sinusoid arises, from which we tap all the energy.
+
+71
+00:06:24,640 --> 00:06:27,480
+How do you tap energy from this coil?
+
+72
+00:06:27,680 --> 00:06:28,480
+It's very simple.
+
+73
+00:06:29,180 --> 00:06:41,360
+The thing is, by creating a standing wave with one generator, we create it — I mean we have a reflected and a moving wave, that is, a traveling and a reflected one.
+
+74
+00:06:41,840 --> 00:06:53,320
+We stupidly create a standing wave in the coil, and the coil starts to heat up, because it has nowhere to go and it turns out we're heating it.
+
+75
+00:06:53,980 --> 00:06:55,960
+The wires heat up and you can feel it.
+
+76
+00:06:56,100 --> 00:06:57,300
+It just stands in place.
+
+77
+00:06:57,560 --> 00:07:10,780
+Right now it oscillates, because two waves, the traveling and the reflected, move against each other and, coinciding in phase, you get movement of the standing wave.
+
+78
+00:07:12,380 --> 00:07:26,400
+To make this moving standing wave — which is exactly what will, with its antinodes, do for us what we need to happen in this coil, that is, cause movement of the magnetic
+
+79
+00:07:26,400 --> 00:07:36,180
+field and electric current, the movement of electrons in the conductor — for this we have to make two generators work here.
+
+80
+00:07:36,940 --> 00:07:45,140
+If we just stupidly start antiphasing, or just coincide in phase with two generators here, we won't really get anything.
+
+81
+00:07:45,140 --> 00:07:53,060
+I mean we'll have a regular standing wave, even if it's traveling, because one generator will have something lagging.
+
+82
+00:07:53,220 --> 00:07:58,500
+I mean they'll coincide in phase while their synchronization lags between each other.
+
+83
+00:07:58,940 --> 00:08:04,320
+Either way we'll be spending double the energy, I mean nothing, we won't get any gain.
+
+84
+00:08:04,420 --> 00:08:05,820
+So what do you have to do?
+
+85
+00:08:06,540 --> 00:08:13,780
+The thing is — one generator and two uncoupled LC circuits, in this system.
+
+86
+00:08:13,780 --> 00:08:20,140
+I mean one LC circuit will be absolutely unchanged at that moment, you don't need to affect it.
+
+87
+00:08:20,300 --> 00:08:27,160
+But the second circuit, which we'll affect — the Tesla will affect it with its pulses.
+
+88
+00:08:27,780 --> 00:08:42,980
+That's quite enough to periodically align this standing wave — more precisely the forward and reflected wave — between each other, shifting them out of phase and moving them back.
+
+89
+00:08:42,980 --> 00:08:49,000
+I mean we cause movement of the standing wave in this coil.
+
+90
+00:08:49,480 --> 00:08:52,420
+This way we get energy here.
+
+91
+00:08:52,600 --> 00:08:53,580
+So how do you do it?
+
+92
+00:08:53,680 --> 00:08:54,700
+Think with your head.
+
+93
+00:08:55,600 --> 00:09:08,360
+Frankly, I just noticed that folks divide into a category of people who believe in this thing — those who build it, and those who build it with distrust, and those who don't believe at all.
+
+94
+00:09:08,360 --> 00:09:14,120
+Trolls who constantly leave dislikes on my videos — well, let them.
+
+95
+00:09:14,640 --> 00:09:16,040
+It'll make them feel better, let them.
+
+96
+00:09:16,720 --> 00:09:21,060
+And those who've already lost hope.
+
+97
+00:09:21,260 --> 00:09:23,940
+That's just total, hopeless stupidity.
+
+98
+00:09:24,860 --> 00:09:34,760
+And then there are folks who don't believe in this at all and rub your nose in classical physics, without understanding the processes happening here at all.
+
+99
+00:09:35,060 --> 00:09:36,840
+And why they happen here.
+
+100
+00:09:36,840 --> 00:09:38,200
+And where the gain comes from.
+
+101
+00:09:39,020 --> 00:09:39,680
+And all that.
+
+102
+00:09:39,820 --> 00:09:44,600
+I mean folks who study physics have absolutely no idea how to apply it.
+
+103
+00:09:44,740 --> 00:09:46,540
+And here this physics is applicable.
+
+104
+00:09:46,600 --> 00:09:48,700
+Here it's regular classical physics.
+
+105
+00:09:49,640 --> 00:09:56,640
+You just have to get so deep into its weeds to find out what's happening and how.
+
+106
+00:09:56,940 --> 00:09:59,060
+Classical physics is very heavily tangled.
+
+107
+00:10:00,620 --> 00:10:12,860
+Folks will hardly be able to connect the knowledge of, let's say, ninth grade or whatever grade this physics starts in, together with the physics they're at in the final stage.
+
+108
+00:10:14,060 --> 00:10:15,640
+I mean he's already forgotten everything long ago.
+
+109
+00:10:16,540 --> 00:10:19,040
+And that's the whole problem.
+
+110
+00:10:20,220 --> 00:10:25,960
+To connect this whole combination of all these processes happening here.
+
+111
+00:10:26,000 --> 00:10:28,340
+And the process here is a regular magnetic field.
+
+112
+00:10:28,340 --> 00:10:36,460
+Which we, under the influence of this Tesla, jerk around by shifting the frequency.
+
+113
+00:10:36,800 --> 00:10:39,760
+This way one wave lags behind the other.
+
+114
+00:10:40,380 --> 00:10:49,600
+And when they coincide in phase, shifting back, movement of the standing wave happens.
+
+115
+00:10:50,360 --> 00:10:59,520
+Its antinodes, at the moment when the two waves join and a standing wave happens, these antinodes have a very high potential, that is, current.
+
+116
+00:10:59,980 --> 00:11:02,820
+Here there's strong current, here current, current here.
+
+117
+00:11:03,360 --> 00:11:04,720
+Here's an overtone, here nothing.
+
+118
+00:11:05,440 --> 00:11:15,140
+So, by striking with a pulse at these antinodes, we jerk them and get exactly what we need.
+
+119
+00:11:15,220 --> 00:11:16,620
+We tap from the antinode.
+
+120
+00:11:16,620 --> 00:11:18,900
+Just like with the Tesla, by the way.
+
+121
+00:11:18,960 --> 00:11:21,380
+I made this for school, but didn't finish.
+
+122
+00:11:21,460 --> 00:11:24,460
+They sort of refused to explain to me how it works.
+
+123
+00:11:24,640 --> 00:11:26,520
+There it stands, this thing.
+
+124
+00:11:27,280 --> 00:11:29,960
+So, how does the Tesla work?
+
+125
+00:11:30,500 --> 00:11:40,060
+Recall, not everyone can even make a normal Tesla, bring it into resonance, so that at its end you get a normal corona discharge or whatever.
+
+126
+00:11:40,160 --> 00:11:42,120
+But no corona — that's a loss of energy.
+
+127
+00:11:42,980 --> 00:11:45,960
+Most likely there are normal streamers on the toroid here.
+
+128
+00:11:45,960 --> 00:11:47,660
+I mean, how do you do it?
+
+129
+00:11:47,740 --> 00:11:48,560
+Nobody knows.
+
+130
+00:11:49,040 --> 00:11:54,420
+Everyone forgets that you must observe the quarter-wave of the coil.
+
+131
+00:11:54,980 --> 00:12:01,180
+And you have to know that the standing wave, that is, the antinode, has to be at maximum here, at the top.
+
+132
+00:12:01,460 --> 00:12:05,300
+Only then will we get a normal streamer here.
+
+133
+00:12:05,880 --> 00:12:09,720
+And at the bottom the minimum, so, this value.
+
+134
+00:12:10,480 --> 00:12:12,000
+But, alas, nobody knows.
+
+135
+00:12:13,120 --> 00:12:25,500
+I mean, here the traveling wave goes up at the moment of the strike here, so, with current, a DC pulse.
+
+136
+00:12:26,540 --> 00:12:28,040
+Reflecting, it goes down.
+
+137
+00:12:28,320 --> 00:12:35,100
+This thing we see on the screen — it's exactly what's happening here in this coil.
+
+138
+00:12:35,740 --> 00:12:38,940
+But few know how to do this, unfortunately.
+
+139
+00:12:38,940 --> 00:12:45,500
+I mean to make a regular Tesla so that here, yeah, tune it into such resonance that it does this.
+
+140
+00:12:46,160 --> 00:12:53,200
+And what's to say about this one — I mean everyone says, oh forget it, that's silliness, why bother with a Tesla.
+
+141
+00:12:54,020 --> 00:12:55,700
+And they can't build this.
+
+142
+00:12:56,100 --> 00:12:57,440
+Well, alas.
+
+143
+00:12:58,140 --> 00:13:03,280
+I explained to you very briefly what a standing wave is and how it's done.
+
+144
+00:13:04,520 --> 00:13:04,960
+Go for it!
