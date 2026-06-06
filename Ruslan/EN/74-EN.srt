@@ -1,0 +1,599 @@
+1
+00:00:00,910 --> 00:00:02,490
+So, guys, hi everyone.
+
+2
+00:00:02,810 --> 00:00:04,050
+Finally I finished it off.
+
+3
+00:00:04,210 --> 00:00:08,750
+But, true, I can say that you'll need to work a bit more on this stuff.
+
+4
+00:00:09,410 --> 00:00:13,330
+Because there are its glitches, there are its quirks.
+
+5
+00:00:13,550 --> 00:00:18,010
+And for now... It seems to me that the system destroyed my ground.
+
+6
+00:00:18,110 --> 00:00:19,730
+Because something happened with the ground.
+
+7
+00:00:20,010 --> 00:00:21,790
+The voltage drops very strongly.
+
+8
+00:00:22,830 --> 00:00:24,250
+Nothing good happens.
+
+9
+00:00:24,590 --> 00:00:25,010
+Well, okay.
+
+10
+00:00:25,590 --> 00:00:31,010
+So, two 600-watt bulbs... So, two 300-watt bulbs.
+
+11
+00:00:31,070 --> 00:00:32,550
+Yeah, these are these ones.
+
+12
+00:00:32,670 --> 00:00:34,110
+These are 300-watt bulbs.
+
+13
+00:00:34,290 --> 00:00:34,810
+Now I'll show.
+
+14
+00:00:36,010 --> 00:00:37,690
+Here, this is 300 watts.
+
+15
+00:00:37,810 --> 00:00:38,950
+And one 500.
+
+16
+00:00:39,910 --> 00:00:42,070
+Another 300 and another 100.
+
+17
+00:00:42,850 --> 00:00:47,130
+Yeah, I mean let's try to turn all this on, but something happened with the ground.
+
+18
+00:00:48,010 --> 00:00:50,110
+I'll probably have to hook onto the battery.
+
+19
+00:00:51,190 --> 00:00:53,070
+Here, I hooked onto this thing.
+
+20
+00:00:53,230 --> 00:00:56,450
+I mean, as it goes, there's really a destructive process happening there.
+
+21
+00:00:56,630 --> 00:01:00,950
+Or I have to go altogether, dig up the hole and look at what happened.
+
+22
+00:01:01,170 --> 00:01:02,650
+In general, well, doesn't matter.
+
+23
+00:01:03,390 --> 00:01:05,590
+Most likely, or something's just leaking away.
+
+24
+00:01:06,450 --> 00:01:20,090
+Alas, I... Well, I'll open the boxes, yeah, I'll show, so you don't think here that...
+
+25
+00:01:20,810 --> 00:01:22,010
+There's the schematic.
+
+26
+00:01:22,950 --> 00:01:24,890
+Yeah, I mean the battery won't fit there.
+
+27
+00:01:24,970 --> 00:01:25,710
+I'll show later.
+
+28
+00:01:25,850 --> 00:01:31,010
+There's an ordinary push-pull there, there's nothing more there except diodes and the push-pull and resonant caps.
+
+29
+00:01:31,630 --> 00:01:33,970
+So, what did I want to show.
+
+30
+00:01:34,490 --> 00:01:40,990
+So, for now I just kind of, as they say, slapped it together.
+
+31
+00:01:41,630 --> 00:01:44,230
+Here the inductor isn't even properly attached yet, nothing.
+
+32
+00:01:44,370 --> 00:01:46,470
+I mean, all this is for now at the stage.
+
+33
+00:01:46,470 --> 00:01:54,870
+I mean, at the stage of, let's say, the development stage.
+
+34
+00:01:55,450 --> 00:02:01,010
+This is very important, how much capacitance the antenna has with the coil.
+
+35
+00:02:01,330 --> 00:02:02,190
+This is very important.
+
+36
+00:02:02,430 --> 00:02:05,170
+I mean, first, the frequency, second, everything else.
+
+37
+00:02:05,310 --> 00:02:05,670
+Well, okay.
+
+38
+00:02:06,790 --> 00:02:09,570
+So, about this antenna.
+
+39
+00:02:09,630 --> 00:02:10,010
+Tesla.
+
+40
+00:02:10,330 --> 00:02:12,850
+It's wound, so, here 9 centimeters came out.
+
+41
+00:02:14,190 --> 00:02:15,590
+0.8 wire.
+
+42
+00:02:15,990 --> 00:02:18,710
+0.81 or 0.8, I think, something like that.
+
+43
+00:02:19,850 --> 00:02:26,030
+So, 6 square and it's wound, so, in one direction.
+
+44
+00:02:26,290 --> 00:02:28,110
+Here 4 turns of busbar.
+
+45
+00:02:28,570 --> 00:02:31,630
+Wound in the other direction, the opposite.
+
+46
+00:02:31,750 --> 00:02:33,790
+Easier to regulate the frequency, by the way.
+
+47
+00:02:33,790 --> 00:02:34,650
+Further.
+
+48
+00:02:34,650 --> 00:02:35,810
+Well, naturally, a connector.
+
+49
+00:02:35,930 --> 00:02:40,650
+Counter-winding, so, this is the regulation.
+
+50
+00:02:41,130 --> 00:02:43,490
+You shift it and change the frequency.
+
+51
+00:02:44,090 --> 00:02:45,250
+There less, more.
+
+52
+00:02:45,590 --> 00:02:46,730
+I mean, like this it's more.
+
+53
+00:02:47,570 --> 00:02:49,090
+Further all this onto the antenna.
+
+54
+00:02:49,270 --> 00:02:56,090
+And the antenna irradiates, gives pulses and charges the capacitor, which is here, in this box.
+
+55
+00:02:56,090 --> 00:02:59,190
+So, here's the Kacher, as usual.
+
+56
+00:02:59,470 --> 00:03:08,950
+The Kacher, as I said, with a trimmer, so, a resistor, more precisely, variable, but I tune with it, so, the whole system, the base.
+
+57
+00:03:09,270 --> 00:03:18,770
+I mean, there's a small problem here connected with this so-called base.
+
+58
+00:03:18,770 --> 00:03:27,930
+I mean, at 24 volts the base is too much, you have to lower it manually, but I'll handle this system later.
+
+59
+00:03:28,330 --> 00:03:34,030
+And at 12 volts, the power is too small, the system sometimes doesn't start.
+
+60
+00:03:34,890 --> 00:03:35,310
+Well, okay.
+
+61
+00:03:35,310 --> 00:03:37,050
+So, well, for now I say.
+
+62
+00:03:37,490 --> 00:03:41,590
+I burned a bunch of these diodes and a problem arose.
+
+63
+00:03:41,770 --> 00:03:47,470
+I mean, no diodes were left and I had to slap diodes of this type on the output.
+
+64
+00:03:47,970 --> 00:03:51,210
+They don't withstand long, unfortunately, and heat up very strongly.
+
+65
+00:03:51,930 --> 00:03:54,690
+And the powerful diodes all burned out, I'll go buy them now.
+
+66
+00:03:55,890 --> 00:04:02,850
+Before, let's say, buying, I'll show you how this works, because I toiled very late.
+
+67
+00:04:02,970 --> 00:04:14,230
+Yesterday I finished the idea, but I want to say that I think the problem is in the schematic, so you have to fiddle a bit.
+
+68
+00:04:14,230 --> 00:04:17,790
+So, let's turn on this stuff.
+
+69
+00:04:19,890 --> 00:04:23,190
+We started the system.
+
+70
+00:04:24,270 --> 00:04:26,330
+Here the fan spins, if you see.
+
+71
+00:04:27,930 --> 00:04:36,590
+Now it turned on and right away crackled in the speakers, sound appeared, humming.
+
+72
+00:04:36,590 --> 00:04:39,550
+Here, I can disconnect the battery now.
+
+73
+00:04:40,310 --> 00:04:42,110
+The system works calmly.
+
+74
+00:04:43,570 --> 00:04:44,850
+We remove the battery.
+
+75
+00:04:45,010 --> 00:04:46,230
+The LED burns.
+
+76
+00:04:46,990 --> 00:04:49,850
+Power went.
+
+77
+00:04:50,290 --> 00:04:51,930
+So, we turn on the load.
+
+78
+00:04:53,790 --> 00:04:55,830
+Right away the crackle disappeared a little.
+
+79
+00:04:56,310 --> 00:04:57,050
+Here's the load.
+
+80
+00:04:57,450 --> 00:04:58,850
+The load lit up.
+
+81
+00:04:58,970 --> 00:05:01,450
+Let's tweak something a little more.
+
+82
+00:05:01,450 --> 00:05:03,330
+Here there's a sag, by the way.
+
+83
+00:05:03,550 --> 00:05:06,950
+There's a small sag.
+
+84
+00:05:07,570 --> 00:05:11,290
+Unfortunately, it seems to me it's the diodes.
+
+85
+00:05:11,890 --> 00:05:17,190
+Here now we have three 300-watt bulbs.
+
+86
+00:05:17,290 --> 00:05:18,830
+This is 900 watts.
+
+87
+00:05:18,870 --> 00:05:19,530
+We turn on the 500.
+
+88
+00:05:20,750 --> 00:05:21,570
+It turned off.
+
+89
+00:05:21,850 --> 00:05:23,070
+I mean a sharp surge.
+
+90
+00:05:24,610 --> 00:05:26,870
+We'll have to start anew.
+
+91
+00:05:31,450 --> 00:05:35,870
+Yesterday I, I'm starting to suspect something, that the problem is in the ground.
+
+92
+00:05:38,850 --> 00:05:46,670
+The problem is in the ground, because yesterday all this stuff worked very well for me.
+
+93
+00:05:46,810 --> 00:05:47,070
+Well, okay.
+
+94
+00:06:02,030 --> 00:06:05,390
+Okay, let's screw in bit by bit.
+
+95
+00:06:06,070 --> 00:06:07,190
+So, 100 watts.
+
+96
+00:06:08,150 --> 00:06:10,170
+Let's remove the 500, dammit.
+
+97
+00:06:11,630 --> 00:06:15,570
+We'll screw in something here... Oh, let's another one.
+
+98
+00:06:16,370 --> 00:06:17,430
+We'll screw in 300 watts.
+
+99
+00:06:18,170 --> 00:06:18,710
+Let's try.
+
+100
+00:06:19,490 --> 00:06:21,890
+Four at 300 watts.
+
+101
+00:06:22,310 --> 00:06:23,190
+Oh, it lit up.
+
+102
+00:06:23,290 --> 00:06:24,290
+Yeah, there's a sag.
+
+103
+00:06:25,270 --> 00:06:26,250
+There's a sag.
+
+104
+00:06:26,430 --> 00:06:29,310
+They don't all burn at full brightness.
+
+105
+00:06:30,250 --> 00:06:31,390
+Yeah, I mean there's a sag.
+
+106
+00:06:31,570 --> 00:06:35,050
+For now the power supply holds, then everything works.
+
+107
+00:06:35,210 --> 00:06:40,990
+Yeah, after all something's happening with the ground, I sense it.
+
+108
+00:06:43,150 --> 00:06:44,910
+What I wanted to say.
+
+109
+00:06:50,710 --> 00:06:51,430
+It burns.
+
+110
+00:06:51,830 --> 00:06:52,610
+It seems to burn.
+
+111
+00:06:53,290 --> 00:06:55,230
+So, now what we'll do.
+
+112
+00:06:55,990 --> 00:07:00,630
+Probably I have to move all this stuff to another room now.
+
+113
+00:07:00,850 --> 00:07:03,290
+There it'll be farther from all the wires.
+
+114
+00:07:03,290 --> 00:07:11,870
+Now all kinds of unbelievers will watch, who'll say that I ran a 220 wire here somewhere and connected it.
+
+115
+00:07:11,910 --> 00:07:13,810
+I want to say that everything's absolutely turned off.
+
+116
+00:07:14,230 --> 00:07:16,250
+Don't believe it, no need, I won't prove it.
+
+117
+00:07:16,430 --> 00:07:17,610
+In short, the system works.
+
+118
+00:07:20,150 --> 00:07:21,790
+Here there's high [voltage].
+
+119
+00:07:23,310 --> 00:07:25,050
+You can see it.
+
+120
+00:07:27,590 --> 00:07:32,070
+The most interesting thing is that the high [voltage] is quite small.
+
+121
+00:07:32,550 --> 00:07:36,050
+It seems that here there's 4-5 kilovolts.
+
+122
+00:07:36,070 --> 00:07:36,910
+More, probably, there isn't.
+
+123
+00:07:36,990 --> 00:07:37,990
+Maybe even less.
+
+124
+00:07:38,570 --> 00:07:39,390
+Maybe I'm mistaken.
+
+125
+00:07:39,390 --> 00:07:41,230
+But it works.
+
+126
+00:07:41,810 --> 00:07:42,770
+The system works.
+
+127
+00:07:43,370 --> 00:07:44,510
+Works not badly.
+
+128
+00:07:46,610 --> 00:07:51,370
+I have to move it farther from here out of the lab, because here there's a ton of wires.
+
+129
+00:07:52,050 --> 00:07:56,530
+So that you don't have any doubts that I deceived you or something else.
+
+130
+00:07:56,530 --> 00:08:00,190
+We turn off the system, put it out.
+
+131
+00:08:02,030 --> 00:08:05,490
+It doesn't start.
+
+132
+00:08:11,030 --> 00:08:14,230
+This we disconnected.
+
+133
+00:08:15,670 --> 00:08:20,450
+Now I'll actually connect everything else.
+
+134
+00:08:22,170 --> 00:08:24,210
+I have such a connector here.
+
+135
+00:08:27,290 --> 00:08:28,370
+Hard to hold.
+
+136
+00:08:28,370 --> 00:08:30,630
+Now I'll unscrew it.
+
+137
+00:08:32,250 --> 00:08:36,310
+Well there, the setup.
+
+138
+00:08:38,210 --> 00:08:39,610
+This is the grounding.
+
+139
+00:08:39,950 --> 00:08:42,090
+Maybe even this end has an influence.
+
+140
+00:08:43,470 --> 00:08:48,170
+We carried the system to another room.
+
+141
+00:08:49,890 --> 00:08:51,350
+We took it and carried it.
+
+142
+00:08:54,490 --> 00:08:59,410
+It'll be quite hard to carry through the doors.
+
+143
+00:09:00,010 --> 00:09:00,850
+The device will fall.
+
+144
+00:09:04,430 --> 00:09:08,930
+Well there, this kind of wonder stuff.
+
+145
+00:09:10,210 --> 00:09:12,910
+Now we'll carry it there.
+
+146
+00:09:13,830 --> 00:09:15,270
+We'll put it on the stool.
+
+147
+00:09:15,550 --> 00:09:19,570
+Now I'll prepare everything and turn on the big bulbs there already.
+
+148
+00:09:19,750 --> 00:09:23,270
+At 500 watts each.
+
+149
+00:09:23,350 --> 00:09:24,010
+Four of them.
+
+150
+00:09:25,330 --> 00:09:26,890
+That's it, until the next video.
