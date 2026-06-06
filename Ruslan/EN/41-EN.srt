@@ -1,0 +1,419 @@
+1
+00:00:02,020 --> 00:00:06,840
+Hi, gentlemen, seekers of free energy.
+
+2
+00:00:08,200 --> 00:00:14,300
+I'm assembling the setup and at the same time changing its design, practically.
+
+3
+00:00:14,860 --> 00:00:16,460
+Gave up on a lot of things.
+
+4
+00:00:17,060 --> 00:00:22,500
+In particular, the inductor that was around here, it's lying around somewhere nearby.
+
+5
+00:00:23,680 --> 00:00:25,040
+Why did I do that?
+
+6
+00:00:25,180 --> 00:00:28,000
+First, because I completely gave up the Kacher.
+
+7
+00:00:28,560 --> 00:00:29,940
+I don't have the Kacher anymore.
+
+8
+00:00:30,300 --> 00:00:35,700
+I've got a controlled Tesla transformer working, or a high-voltage Tesla.
+
+9
+00:00:36,260 --> 00:00:40,200
+It works on the principle of an ignition coil, you could say.
+
+10
+00:00:40,400 --> 00:00:42,600
+But, by the way, it works better.
+
+11
+00:00:42,840 --> 00:00:45,000
+I don't use any TVS transformers either.
+
+12
+00:00:46,060 --> 00:00:49,880
+Because this option is much better, believe me.
+
+13
+00:00:50,220 --> 00:00:57,560
+Yes, it's long, big, but it's a high-frequency transformer, which can also give very useful things.
+
+14
+00:00:58,000 --> 00:01:00,780
+So, my transistor blew, I had to replace it.
+
+15
+00:01:01,000 --> 00:01:06,900
+I tinkered a bit too much here, but I power the whole Tesla system from 100 volts.
+
+16
+00:01:06,960 --> 00:01:10,300
+Here I've got an inverter, I mean assembled.
+
+17
+00:01:10,620 --> 00:01:19,140
+And a fuse, which is 0.5 amps, specifically 500 milliamps, installed so that, just in case, the transistor doesn't blow.
+
+18
+00:01:19,840 --> 00:01:32,840
+And at the input there's also a 3-amp fuse to not burn out the switches, because a transistor blew on me once, yeah, it happened that while I was digging around, I shorted it, and the whole works went.
+
+19
+00:01:33,000 --> 00:01:34,520
+So there's a bit of protection.
+
+20
+00:01:36,040 --> 00:01:40,300
+Well, here's a relay, but for now it's all kind of in this state, yeah, everything's just lying around.
+
+21
+00:01:40,400 --> 00:01:42,860
+This, of course, I rigged it all up nicely.
+
+22
+00:01:42,900 --> 00:01:44,300
+Here are the diodes, by the way, I burned them.
+
+23
+00:01:45,480 --> 00:01:47,620
+My own, so to speak, the ones that were here.
+
+24
+00:01:47,760 --> 00:01:49,360
+Now I took different diodes.
+
+25
+00:01:49,580 --> 00:01:53,940
+These are MUR 860, yeah, I mean, but they're a bit worse.
+
+26
+00:01:54,080 --> 00:02:09,320
+And I had to, by the way, use a spacer between them here, yeah, and sleeves, because otherwise you can't screw them to the case, like those that are STTH or some kind of
+
+27
+00:02:09,320 --> 00:02:09,960
+STTH-T.
+
+28
+00:02:10,560 --> 00:02:11,400
+Damn, I don't remember.
+
+29
+00:02:11,520 --> 00:02:13,120
+Those diodes have a huge name.
+
+30
+00:02:13,840 --> 00:02:15,320
+Couldn't they write it short.
+
+31
+00:02:15,400 --> 00:02:16,640
+They took such a huge one.
+
+32
+00:02:17,300 --> 00:02:18,180
+Well, whatever.
+
+33
+00:02:18,700 --> 00:02:22,000
+So, well, this whole system works.
+
+34
+00:02:22,400 --> 00:02:28,120
+There's no argument here at all, yeah, as they say, what else do we have here, decoupling capacitors.
+
+35
+00:02:28,260 --> 00:02:30,180
+Yeah, I'm thinking, are they needed here or not.
+
+36
+00:02:30,280 --> 00:02:33,120
+Well, kind of, judging by the schematic, they're needed.
+
+37
+00:02:33,780 --> 00:02:35,560
+So, what else did I want to say.
+
+38
+00:02:35,680 --> 00:02:40,020
+So, I'm going to get rid of this so-called, as everyone calls it, antenna.
+
+39
+00:02:40,080 --> 00:02:44,960
+It's not an antenna, it's, I mean, a very important element, an attribute here, it's a capacitor.
+
+40
+00:02:45,660 --> 00:02:54,940
+It's wound exactly over the inductor and works solely to, so to speak, deliver pulses to the inductor itself.
+
+41
+00:02:55,320 --> 00:02:59,320
+It irradiates this spot here, charges the coil and everything happens.
+
+42
+00:02:59,540 --> 00:03:00,600
+But no such luck.
+
+43
+00:03:01,740 --> 00:03:06,660
+Its capacitance isn't suitable and, unfortunately, I have to get rid of it.
+
+44
+00:03:06,780 --> 00:03:15,740
+So, what's here, I say again, a unipolar pulse here means that at the output you get almost a constant voltage.
+
+45
+00:03:15,920 --> 00:03:17,940
+I mean, it zaps you good, for real.
+
+46
+00:03:18,020 --> 00:03:22,200
+It'll zap here so hard you won't know what hit you, honestly, right in this spot.
+
+47
+00:03:23,540 --> 00:03:25,940
+But that's not what we're talking about now.
+
+48
+00:03:26,120 --> 00:03:27,860
+I'll show later how this works.
+
+49
+00:03:28,360 --> 00:03:34,880
+So, here, here, all this stuff, yeah, it'll be modified.
+
+50
+00:03:35,780 --> 00:03:49,460
+And how, from that little setup, from which I made something different by the Wasmus system, yeah, I want to honestly say that Wasmus got everything quite complicated there, yeah, I mean there
+
+51
+00:03:49,460 --> 00:04:06,560
+it turns out that he gets from the knocking medium, so to speak, what he knocks on the transformer with, yeah, in short, he gets pulses, with which he knocks on the transformer and does,
+
+52
+00:04:06,900 --> 00:04:07,560
+basically, the same thing.
+
+53
+00:04:07,680 --> 00:04:10,480
+Here everything turns out much simpler, yeah.
+
+54
+00:04:11,060 --> 00:04:23,040
+Yeah, the only thing many, of course, ask about these matters, guys, let me finish assembling this to the end and then I'll explain.
+
+55
+00:04:23,160 --> 00:04:26,260
+Maybe something else, some elements will drop out of it...
+
+56
+00:04:26,840 --> 00:04:28,620
+and it'll be a bit simpler.
+
+57
+00:04:30,240 --> 00:04:34,120
+Here many advise me to assemble it on relays and not bother.
+
+58
+00:04:34,320 --> 00:04:41,580
+Here Red, as they say, advised to try the circuit, yeah, maybe it's so, it works.
+
+59
+00:04:41,900 --> 00:04:43,500
+I don't want to say anything, yeah.
+
+60
+00:04:43,980 --> 00:04:47,960
+I have nothing against Red either, I have nothing against anyone at all.
+
+61
+00:04:48,640 --> 00:05:04,480
+I just want to say, the thing is, I'm assembling an electronic Tesla generator, not the thing that's electronic-mechanical, yeah, a relay is kind of a slightly mechanical way, so to speak,
+
+62
+00:05:04,560 --> 00:05:21,360
+of getting so-called SE, whoever talks about SE, I don't know here, but I kind of don't want to comment on this now, well, let's think about who of you would connect, for example, well,
+
+63
+00:05:23,060 --> 00:05:33,720
+say, would set up such a setup together with a relay, yeah, it'll click there every so often and switch it all on as needed and that's it, okay.
+
+64
+00:05:34,980 --> 00:05:48,760
+The setup works, there's self-feeding there, everything, the gain, all that, yeah, well, it works, there's something to build on, but such crap crops up as failed relays.
+
+65
+00:05:49,540 --> 00:05:53,700
+You, well, how long, well, it'll work a week until the contacts burn out.
+
+66
+00:05:54,460 --> 00:05:55,660
+What's there to burn out here?
+
+67
+00:05:56,180 --> 00:06:14,500
+There's nothing to burn out here, everything's electronic, plus it has a good reserve, and, well, what can, as they say, this thing, the parts are all high-quality, high, let's say, their cost is quite
+
+68
+00:06:14,500 --> 00:06:25,340
+not small, yeah, I took transistors with a reserve and everything else, kind of, what's there to say about wear?
+
+69
+00:06:25,740 --> 00:06:37,780
+Here you have to make a generator that will work, kind of, well, not forever, but at least for a long time, where your head won't ache about us fixing or
+
+70
+00:06:37,780 --> 00:06:50,980
+repairing something constantly, here that won't happen, except, well, okay, the fan will conk out, well, whatever, the transistors here are completely cold, in fact, when the system works, the fan is just,
+
+71
+00:06:51,220 --> 00:06:57,820
+like Akula's, well, for looks, yeah, honestly, the system will look completely unlike Akula's.
+
+72
+00:06:57,920 --> 00:07:07,120
+I say that I experimented a bit here, an idea popped up for me to remove this damn antenna and wind everything a bit differently here.
+
+73
+00:07:07,680 --> 00:07:13,320
+And, basically, there are people who tested everything and checked it, and everything worked out.
+
+74
+00:07:13,840 --> 00:07:15,100
+We're not talking about that now.
+
+75
+00:07:15,580 --> 00:07:18,080
+We're now talking about what I'll demonstrate to you.
+
+76
+00:07:18,160 --> 00:07:31,620
+So, about the pickup, the pickup, here's the most important moment, I started making the high-voltage, yeah, I achieved everything, everything worked out, started it all up and got stuck on the fact that a problem cropped up with the pickup,
+
+77
+00:07:31,760 --> 00:07:43,080
+it turns out, yeah, by turning off the load, I burned the power supply, because the voltage rose so strongly that the power supply just, not only did the diodes blow right away, yeah, I burned a whole
+
+78
+00:07:43,080 --> 00:07:43,880
+bunch of parts.
+
+79
+00:07:43,980 --> 00:07:48,600
+I've got, kind of, right here now all the burned parts lying.
+
+80
+00:07:49,200 --> 00:08:04,140
+This, starting from the push-pull, yeah, it's visible and the push-pull transistors RFP 260, yeah, one just exploded, there's the hole, yeah, it's visible if you look from the side, I don't know, well, kind of
+
+81
+00:08:04,140 --> 00:08:04,480
+visible.
+
+82
+00:08:05,320 --> 00:08:19,300
+Here, a bunch of these diodes, just a colossal thing, yeah, and fuses are lying around, yeah, different ones, and various junk there, and this transistor 460, yeah, and
+
+83
+00:08:20,240 --> 00:08:36,920
+even a capacitor, there, blew there, yeah, all this is the aftermath of me a bit, well, I just decided that the system came up without a load, yeah, the power supply pulled the system well,
+
+84
+00:08:37,100 --> 00:08:52,260
+because it consumed little, and I burned the power supply, had to repair it, unscrew it, what can I say about all this stuff, as they say, yeah, I just took this
+
+85
+00:08:52,260 --> 00:09:07,460
+button, turned off the power, so to speak, the load, yeah, the load in this case is these bulbs we use, absolutely all of them, here we have 300 watts, 200 watts, 500 watts, 60 watts and 200 watts,
+
+86
+00:09:07,540 --> 00:09:21,140
+yeah, all this stuff I lit up, it burned calmly, everything shone brightly just great, well, with the pickup I overdid it a bit here, I mean, I kind of didn't think of the fact that, when I
+
+87
+00:09:21,140 --> 00:09:32,340
+disconnect, the voltage will rise, what did I even want to show, right now there's no self-feeding, I say right away, the power supply is disconnected on one terminal, yeah, so as not to burn it again, I'll show
+
+88
+00:09:32,340 --> 00:09:46,200
+about the pickup, so, I've got 24 volts, yeah so, here it rose, so, to 6 amps this thing, yeah, look, at the oscilloscope, yeah, and here's the load, it's not burning now, now we'll
+
+89
+00:09:46,200 --> 00:10:02,440
+turn it on, look what happens, watch the oscilloscope, yeah the load turned on, as you see the frequency changed, well it sagged a little, that's understandable, with high pulses all this won't sag
+
+90
+00:10:02,440 --> 00:10:18,660
+anywhere, it'll all rise, here the bulb burns, yeah, let's screw in another 500, here, everything lit up, yeah, the voltage came back, it didn't get much dimmer, look, the frequency changed,
+
+91
+00:10:18,660 --> 00:10:31,400
+yeah, see, the frequency changed, now I'll disconnect, I turn off, yeah, the power, well, disconnected the load, naturally, everything rose, see, the frequency changed, but the resonance stayed in place I turn on,
+
+92
+00:10:32,040 --> 00:10:52,440
+it crept a little, but the resonance is in place, 28.7 824 kilohertz this thing, I mean, all this, in short, contraption, see how, yeah, the PLL works I released 27 and there 17, yeah, kilohertz,
+
+93
+00:10:53,000 --> 00:11:07,100
+so 28, now it'll change, 28.78 45, yeah, 43, there it changes so it'll be more, yeah, here, I can now take, screw in another bulb, note, well yeah, there's sag, of course,
+
+94
+00:11:07,100 --> 00:11:23,280
+I mean, that's natural, but the frequency rose a bit, but there's resonance, now we'll slap in another one, no problem, all this now, of course, so, more, here, all these, in short, five of them burn well
+
+95
+00:11:23,280 --> 00:11:39,960
+here, please, 29.68, yeah, the frequency we disconnect the heck out of it, here, it came back, that's what the PLL should do this is the most important thing, yeah, you have to achieve this moment then it'll be easy for us to hit
+
+96
+00:11:39,960 --> 00:11:54,300
+with a pulse there, where we need to hit, here in this spot and then, then you'll get your SE, but again, I say once more, for all this to work you need on this Tesla, right now I can't
+
+97
+00:11:54,300 --> 00:12:07,660
+show, the transistor isn't rigged up yet, I just barely screwed it on here there should be, here there should be an almost static voltage, I mean, in fact, charging the coil, we knock out
+
+98
+00:12:07,660 --> 00:12:23,300
+electrons by a static way, it in tact with this push-pull system, yeah, with this SE, hammers clearly into the needed spot at that moment knocking out adding electrons from the medium, knocking them out by a static
+
+99
+00:12:23,300 --> 00:12:36,340
+way, this is the pulse technology of Tesla I think I've told you a lot just now, a lot, and many, I think, know what it's about, yeah, by the way, they asked me here, how much
+
+100
+00:12:36,340 --> 00:12:50,840
+this device, so to speak, consumes, when I screw in all these bulbs, yeah, and everything burns, yeah, and all this works, no problem, I'll show how much all this
+
+101
+00:12:51,780 --> 00:13:09,720
+contraption consumes, look, it consumes less than at the moment when I turn off the load, look, I turn off the load, see the ammeter shows 6 amps I turn on with a jerk, yeah, here, everything
+
+102
+00:13:09,720 --> 00:13:18,680
+rose, everything, well, about half less, yeah, I mean 500 milliamps less but why does this happen?
+
+103
+00:13:19,400 --> 00:13:36,680
+This, well, after all, kind of, this thing, resonance, the coils work differently this is a long procedure, why this is and how to explain it all, I won't now I just want to say, so, everything that needs
+
+104
+00:13:36,680 --> 00:13:49,780
+to be done in order to get this, first of all, not slapdash long wires, thick ones and all that, no, you need everything neat, like here, yeah, it's neat here, for now
+
+105
+00:13:49,780 --> 00:14:01,300
+all this is kind of topsy-turvy, pulled out all assbackwards, but that's all, thanks, let's go for it and watch the next videos for now
