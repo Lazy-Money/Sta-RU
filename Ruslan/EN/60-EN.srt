@@ -1,0 +1,259 @@
+1
+00:00:00,000 --> 00:00:00,740
+Hi everyone!
+
+2
+00:00:01,300 --> 00:00:03,160
+Now I'll show you a new setup.
+
+3
+00:00:03,960 --> 00:00:12,000
+I made it by Dali's schematic, I say right away, because I used the damn nanosecond generator, which really fries the bridge.
+
+4
+00:00:12,620 --> 00:00:15,840
+The frequency drifts, but that's not even the lousiest part.
+
+5
+00:00:15,960 --> 00:00:20,280
+The lousy thing is that I already burned a bunch of these 926 transistors.
+
+6
+00:00:21,560 --> 00:00:25,560
+So, in general, I wanted to fit all this in one box, it didn't fit.
+
+7
+00:00:25,840 --> 00:00:29,540
+Unfortunately, even the circuit capacitor from the inductor didn't fit either.
+
+8
+00:00:30,960 --> 00:00:37,260
+This is the coaxial that solders to it, I mean it dangles here, this is the board, in short.
+
+9
+00:00:37,680 --> 00:00:43,640
+I even opened it, because the frequency constantly has to be tuned with this resistor that's here.
+
+10
+00:00:43,960 --> 00:00:46,480
+This is a multi-turn frequency tuning.
+
+11
+00:00:47,320 --> 00:00:51,660
+A 5-volt stabilizer, in short, I had to rig up a separate one.
+
+12
+00:00:52,820 --> 00:00:54,160
+So, what else did I want to say.
+
+13
+00:00:54,160 --> 00:01:08,840
+So, here I have a generator, a transformer on a ring on ferrite, I had to cram it here too, in another place.
+
+14
+00:01:09,440 --> 00:01:12,200
+Well, there's just no room here, I had to put it.
+
+15
+00:01:12,640 --> 00:01:20,600
+Here there's a diode bridge, two capacitors and a 5-volt stabilizer for the logic, which turns on all these various buttons here.
+
+16
+00:01:21,260 --> 00:01:25,020
+The power supply burned out, unfortunately, because I disconnected the grounding.
+
+17
+00:01:25,180 --> 00:01:34,260
+You must not disconnect the grounding under any circumstances, bad grounding kills the power supply, and it kills it, you know what, the optocoupler for some reason, evidently it punches through it.
+
+18
+00:01:35,000 --> 00:01:37,020
+I don't know how this happens, but it happens.
+
+19
+00:01:37,180 --> 00:01:46,940
+I already burned one, had to put a 5-amp one, but it's quite enough, because the system guzzles very little and is quite enough for a 500-watt load.
+
+20
+00:01:47,040 --> 00:01:50,780
+Today we'll test this floodlight, the notorious one, yeah?
+
+21
+00:01:50,920 --> 00:01:51,680
+I'll show right away.
+
+22
+00:01:52,360 --> 00:02:02,060
+Here, please, look, the floodlight is absolutely not connected anywhere, just its plug and that's it.
+
+23
+00:02:02,540 --> 00:02:05,320
+This is the outlet and the load switch.
+
+24
+00:02:05,620 --> 00:02:07,420
+So, what else?
+
+25
+00:02:08,320 --> 00:02:10,100
+Let's go by the grounding, yeah?
+
+26
+00:02:10,440 --> 00:02:12,460
+Now so, here I'll connect the battery for now.
+
+27
+00:02:13,480 --> 00:02:15,860
+This is the grounding, yeah?
+
+28
+00:02:16,220 --> 00:02:19,820
+This is the grounding, here it is, connected to the battery, look here.
+
+29
+00:02:20,480 --> 00:02:27,720
+Here it's stripped and it's desirable that it be well connected, because the power supply will burn out again, I won't be able to demonstrate for you.
+
+30
+00:02:27,900 --> 00:02:31,100
+So, well, let's turn it on.
+
+31
+00:02:32,000 --> 00:02:36,700
+We turn on the system, the LED lights up, which you all love to look at, see?
+
+32
+00:02:37,100 --> 00:02:47,580
+The LED burns, burns, so, now I'll connect the load, look, I turn on the load, I turn on, the floodlight burns.
+
+33
+00:02:47,580 --> 00:02:49,060
+500 watts.
+
+34
+00:02:49,580 --> 00:03:01,140
+So, the nanosecond generator, I say right away, drifts off completely, you can't even breathe, drifts off completely, accordingly, everything starts to wander and the system doesn't work.
+
+35
+00:03:01,720 --> 00:03:10,940
+Now tell me, what to do with the battery, we disconnect it, dammit, from here, that's it, please, it's here, not needed, we remove it, dammit.
+
+36
+00:03:11,680 --> 00:03:27,200
+Here it is, look, the system works, works and now tell me that this is a fake, please, this is the ground, I don't want to tug it, because I already burned the power supply, yeah, obviously something goes back.
+
+37
+00:03:28,380 --> 00:03:47,840
+Well, okay, well there, this kind of contraption, please, 500 watts, works, but it has to be put out, because this transistor heats up and will soon blow, although here it's only 110 volts, as it goes, so that's exactly what'll
+
+38
+00:03:47,840 --> 00:03:48,660
+happen soon.
+
+39
+00:03:49,440 --> 00:03:58,820
+That's it, in short, here, we turn on, it doesn't turn on, please, you have to bring the battery up again and then everything will happen.
+
+40
+00:03:59,540 --> 00:04:02,740
+If you want to see, I can show.
+
+41
+00:04:03,740 --> 00:04:11,600
+Look, here, I turn on, the propeller starts, I turn on, you have to turn off the load.
+
+42
+00:04:12,310 --> 00:04:18,680
+So, we hold it, the system starts and the floodlight burns.
+
+43
+00:04:18,900 --> 00:04:27,040
+Please, I connected 550 watts, I turn off, everything cuts out.
+
+44
+00:04:27,700 --> 00:04:37,360
+I connected 550 watts of load, it worked calmly, but this gizmo, frankly speaking, is total rubbish, something has to be replaced.
+
+45
+00:04:38,500 --> 00:04:50,540
+How this worked for Dali, I don't know, but, most likely, because something wandered there for him, most likely, because of this it synchronized or somehow.
+
+46
+00:04:50,620 --> 00:04:57,240
+I'll honestly tell you, you need, in this respect you need a matching block, otherwise this whole system won't work.
+
+47
+00:04:57,400 --> 00:05:04,440
+However much you hammer it with pulses and whatever kind, it won't give anything, don't torment yourselves.
+
+48
+00:05:05,070 --> 00:05:15,960
+You have to study the whole theory and only then know, but here, darn, I see, a lot of specialists sit on the forums, shoot the breeze, do squat.
+
+49
+00:05:16,120 --> 00:05:28,600
+So then, get a grip on your reason, your own, listen to scientists, what they say, study the theory of the magnetic field, and then you'll know where to hammer and with what, and how to make it so that this magnetic field rotates in
+
+50
+00:05:28,600 --> 00:05:29,340
+this coil.
+
+51
+00:05:29,920 --> 00:05:33,540
+It's empty, yeah, there's nothing there, wires go.
+
+52
+00:05:34,160 --> 00:05:34,680
+Here.
+
+53
+00:05:35,300 --> 00:05:40,640
+And so, to make everything work here, you just have to study the theory.
+
+54
+00:05:41,200 --> 00:05:52,140
+I don't sit on these forums and don't read all this gibberish, I listen to scientists and listen to people who know how the magnetic field goes, how this donut spreads and the like.
+
+55
+00:05:52,760 --> 00:05:57,920
+So I recommend you start with exactly this too, and only then think about everything else.
+
+56
+00:05:58,760 --> 00:06:00,020
+Then everything will work out for you.
+
+57
+00:06:00,020 --> 00:06:09,040
+I thought up the schematic myself, worked, I'll honestly say, assembled it relying on Dali, thought that all this works for him.
+
+58
+00:06:09,820 --> 00:06:15,940
+But I think that the second schematic, if he assembles it, won't work, because here matching is required.
+
+59
+00:06:16,280 --> 00:06:27,980
+It just happened for him by chance, it's unlikely to happen again, I'll honestly say, because this whole system requires specific matching.
+
+60
+00:06:28,730 --> 00:06:31,820
+Everything must be synchronized and done as it should be.
+
+61
+00:06:32,400 --> 00:06:34,760
+This generator needs to be urgently stabilized.
+
+62
+00:06:35,280 --> 00:06:43,680
+The frequency drifts a little, that's it, the system stalls, turns off, because something's not enough, the power supply doesn't work.
+
+63
+00:06:44,260 --> 00:06:58,400
+The voltage came out for me here at the output somewhere 270 volts, just barely enough for the power supply, it has a diode bridge inside there and too little comes, you understand yourselves, too little.
+
+64
+00:06:59,400 --> 00:07:02,340
+Well, this kind of thing, in short, came out.
+
+65
+00:07:02,940 --> 00:07:03,380
+Go for it!
