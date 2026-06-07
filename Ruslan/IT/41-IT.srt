@@ -1,0 +1,419 @@
+1
+00:00:02,020 --> 00:00:06,840
+Ciao, signori, cercatori di energia libera.
+
+2
+00:00:08,200 --> 00:00:14,300
+Sto assemblando il setup e allo stesso tempo ne sto cambiando praticamente il design.
+
+3
+00:00:14,860 --> 00:00:16,460
+Ho abbandonato un sacco di cose.
+
+4
+00:00:17,060 --> 00:00:22,500
+In particolare, l'induttore che era qui intorno, è da qualche parte nelle vicinanze.
+
+5
+00:00:23,680 --> 00:00:25,040
+Perché l'ho fatto?
+
+6
+00:00:25,180 --> 00:00:28,000
+Primo, perché ho completamente abbandonato il Kacher.
+
+7
+00:00:28,560 --> 00:00:29,940
+Non ho più il Kacher.
+
+8
+00:00:30,300 --> 00:00:35,700
+Ho messo in funzione un trasformatore Tesla controllato, ovvero un Tesla ad alta tensione.
+
+9
+00:00:36,260 --> 00:00:40,200
+Funziona secondo il principio di una bobina di accensione, si potrebbe dire.
+
+10
+00:00:40,400 --> 00:00:42,600
+Ma, tra l'altro, funziona meglio.
+
+11
+00:00:42,840 --> 00:00:45,000
+Non uso nemmeno trasformatori TVS.
+
+12
+00:00:46,060 --> 00:00:49,880
+Perché questa opzione è molto migliore, credetemi.
+
+13
+00:00:50,220 --> 00:00:57,560
+Sì, è lungo, grande, ma è un trasformatore ad alta frequenza, che può anche dare cose molto utili.
+
+14
+00:00:58,000 --> 00:01:00,780
+Allora, il mio transistor si è bruciato, ho dovuto sostituirlo.
+
+15
+00:01:01,000 --> 00:01:06,900
+Ho armeggiato un po' troppo qui, ma alimento l'intero sistema Tesla da 100 volt.
+
+16
+00:01:06,960 --> 00:01:10,300
+Qui ho un inverter, cioè assemblato.
+
+17
+00:01:10,620 --> 00:01:19,140
+E un fusibile da 0,5 ampere, precisamente 500 milliampere, installato affinché, per ogni evenienza, il transistor non si bruci.
+
+18
+00:01:19,840 --> 00:01:32,840
+E all'ingresso c'è anche un fusibile da 3 ampere per non bruciare gli interruttori, perché una volta mi si è bruciato un transistor, sì, è successo che mentre armeggiavo, l'ho messo in cortocircuito, e tutto è andato.
+
+19
+00:01:33,000 --> 00:01:34,520
+Quindi c'è un po' di protezione.
+
+20
+00:01:36,040 --> 00:01:40,300
+Beh, qui c'è un relè, ma per ora è tutto in questo stato, sì, tutto è sparso in giro.
+
+21
+00:01:40,400 --> 00:01:42,860
+Questo, ovviamente, l'ho sistemato tutto bene.
+
+22
+00:01:42,900 --> 00:01:44,300
+Qui ci sono i diodi, tra l'altro, li ho bruciati.
+
+23
+00:01:45,480 --> 00:01:47,620
+I miei, per così dire, quelli che erano qui.
+
+24
+00:01:47,760 --> 00:01:49,360
+Ora ho preso diodi diversi.
+
+25
+00:01:49,580 --> 00:01:53,940
+Questi sono MUR 860, sì, cioè, ma sono un po' peggiori.
+
+26
+00:01:54,080 --> 00:02:09,320
+E ho dovuto, tra l'altro, usare un distanziale tra di loro qui, sì, e boccole, perché altrimenti non si possono avvitare al telaio, come quelli che sono STTH o qualche tipo di
+
+27
+00:02:09,320 --> 00:02:09,960
+STTH-T.
+
+28
+00:02:10,560 --> 00:02:11,400
+Accidenti, non ricordo.
+
+29
+00:02:11,520 --> 00:02:13,120
+Quei diodi hanno un nome enorme.
+
+30
+00:02:13,840 --> 00:02:15,320
+Non potevano scriverlo corto.
+
+31
+00:02:15,400 --> 00:02:16,640
+Hanno preso uno così enorme.
+
+32
+00:02:17,300 --> 00:02:18,180
+Beh, comunque.
+
+33
+00:02:18,700 --> 00:02:22,000
+Allora, bene, tutto questo sistema funziona.
+
+34
+00:02:22,400 --> 00:02:28,120
+Non c'è assolutamente nessuna discussione qui, sì, come si dice, cos'altro abbiamo qui, condensatori di disaccoppiamento.
+
+35
+00:02:28,260 --> 00:02:30,180
+Sì, sto pensando, se sono necessari qui o no.
+
+36
+00:02:30,280 --> 00:02:33,120
+Beh, più o meno, a giudicare dallo schema, sono necessari.
+
+37
+00:02:33,780 --> 00:02:35,560
+Allora, cos'altro volevo dire.
+
+38
+00:02:35,680 --> 00:02:40,020
+Beh, mi libererò di questa cosiddetta, come la chiamano tutti, antenna.
+
+39
+00:02:40,080 --> 00:02:44,960
+Non è un'antenna, è, cioè, un elemento molto importante, un attributo qui, è un condensatore.
+
+40
+00:02:45,660 --> 00:02:54,940
+È avvolto esattamente sopra l'induttore e funziona esclusivamente per, per così dire, consegnare impulsi all'induttore stesso.
+
+41
+00:02:55,320 --> 00:02:59,320
+Irradia questo punto qui, carica la bobina e succede tutto.
+
+42
+00:02:59,540 --> 00:03:00,600
+Ma niente da fare.
+
+43
+00:03:01,740 --> 00:03:06,660
+La sua capacità non è adatta e, purtroppo, devo liberarmene.
+
+44
+00:03:06,780 --> 00:03:15,740
+Allora, cosa c'è qui, dico di nuovo, un impulso unipolare qui significa che all'uscita si ottiene quasi una tensione continua.
+
+45
+00:03:15,920 --> 00:03:17,940
+Cioè, vi dà una bella scossa, davvero.
+
+46
+00:03:18,020 --> 00:03:22,200
+Vi darà una scossa così forte che non saprete cosa vi ha colpito, onestamente, proprio in questo punto.
+
+47
+00:03:23,540 --> 00:03:25,940
+Ma non è di questo che stiamo parlando ora.
+
+48
+00:03:26,120 --> 00:03:27,860
+Mostrerò dopo come funziona.
+
+49
+00:03:28,360 --> 00:03:34,880
+Allora, qui, qui, tutta questa roba, sì, sarà modificata.
+
+50
+00:03:35,780 --> 00:03:49,460
+E come, da quel piccolo setup, da cui ho fatto qualcosa di diverso con il sistema Wasmus, sì, voglio dire onestamente che Wasmus ha complicato abbastanza tutto lì, sì, cioè là
+
+51
+00:03:49,460 --> 00:04:06,560
+risulta che ottiene dal mezzo di percussione, per così dire, con cui percuote il trasformatore, sì, in breve, ottiene impulsi, con cui percuote il trasformatore e fa,
+
+52
+00:04:06,900 --> 00:04:07,560
+fondamentalmente, la stessa cosa.
+
+53
+00:04:07,680 --> 00:04:10,480
+Qui tutto risulta molto più semplice, sì.
+
+54
+00:04:11,060 --> 00:04:23,040
+Sì, l'unica cosa che molti, naturalmente, chiedono su queste questioni, ragazzi, lasciatemi finire di assemblare questo fino in fondo e poi spiego.
+
+55
+00:04:23,160 --> 00:04:26,260
+Forse qualcos'altro, alcuni elementi ne usciranno...
+
+56
+00:04:26,840 --> 00:04:28,620
+e sarà un po' più semplice.
+
+57
+00:04:30,240 --> 00:04:34,120
+Qui molti mi consigliano di assemblarlo su relè e non preoccuparsi.
+
+58
+00:04:34,320 --> 00:04:41,580
+Qui Red, come si dice, ha consigliato di provare il circuito, sì, forse è così, funziona.
+
+59
+00:04:41,900 --> 00:04:43,500
+Non voglio dire niente, sì.
+
+60
+00:04:43,980 --> 00:04:47,960
+Non ho niente contro Red, non ho niente contro nessuno in assoluto.
+
+61
+00:04:48,640 --> 00:05:04,480
+Voglio solo dire, la cosa è che sto assemblando un generatore Tesla elettronico, non la cosa che è elettromeccanica, sì, un relè è in qualche modo un metodo un po' più meccanico, per così dire,
+
+62
+00:05:04,560 --> 00:05:21,360
+per ottenere il cosiddetto SE, chiunque parli di SE, non so qui, ma in qualche modo non voglio commentarlo adesso, beh, pensiamo chi di voi collegherebbe, per esempio, beh,
+
+63
+00:05:23,060 --> 00:05:33,720
+diciamo, allestisse un tale setup insieme a un relè, sì, lì farà clic ogni tanto e accenderà tutto al momento giusto e basta, okay.
+
+64
+00:05:34,980 --> 00:05:48,760
+Il setup funziona, c'è autoalimentazione lì, tutto, il guadagno, tutto quanto, sì, beh, funziona, c'è qualcosa su cui costruire, ma viene fuori tutta quella porcaria come i relè rotti.
+
+65
+00:05:49,540 --> 00:05:53,700
+Voi, beh, per quanto tempo, beh, funzionerà una settimana finché i contatti non si bruciano.
+
+66
+00:05:54,460 --> 00:05:55,660
+Cosa c'è da bruciarsi qui?
+
+67
+00:05:56,180 --> 00:06:14,500
+Non c'è niente da bruciarsi qui, tutto è elettronico, in più ha una buona riserva, e, beh, cosa può, come si dice, questa cosa, i pezzi sono tutti di alta qualità, alto, diciamo, il loro costo è abbastanza
+
+68
+00:06:14,500 --> 00:06:25,340
+non piccolo, sì, ho preso transistor con riserva e tutto il resto, più o meno, cosa c'è da dire sull'usura?
+
+69
+00:06:25,740 --> 00:06:37,780
+Qui bisogna fare un generatore che funzioni, più o meno, beh, non per sempre, ma almeno per molto tempo, dove non vi faccia mal di testa per riparare o
+
+70
+00:06:37,780 --> 00:06:50,980
+riparare qualcosa costantemente, qui non succederà, tranne, beh, okay, la ventola si fermerà, beh, comunque, i transistor qui sono completamente freddi, di fatto, quando il sistema funziona, la ventola è solo,
+
+71
+00:06:51,220 --> 00:06:57,820
+come quella di Akula, beh, per la bella figura, sì, onestamente, il sistema sembrerà completamente diverso da quello di Akula.
+
+72
+00:06:57,920 --> 00:07:07,120
+Dico che ho sperimentato un po' qui, mi è venuta l'idea di rimuovere questa maledetta antenna e avvolgere tutto un po' diversamente qui.
+
+73
+00:07:07,680 --> 00:07:13,320
+E, fondamentalmente, ci sono persone che hanno testato tutto e verificato, e tutto ha funzionato.
+
+74
+00:07:13,840 --> 00:07:15,100
+Non stiamo parlando di quello ora.
+
+75
+00:07:15,580 --> 00:07:18,080
+Stiamo parlando di quello che vi dimostrerò.
+
+76
+00:07:18,160 --> 00:07:31,620
+Allora, riguardo al pickup, il pickup, qui è il momento più importante, ho cominciato a fare l'alta tensione, sì, ho raggiunto tutto, tutto ha funzionato, ho messo in moto tutto e mi sono bloccato sul fatto che è emerso un problema con il pickup,
+
+77
+00:07:31,760 --> 00:07:43,080
+risulta che, sì, spegnendo il carico, ho bruciato l'alimentatore, perché la tensione è salita così forte che l'alimentatore semplicemente, non solo i diodi si sono bruciati subito, sì, ho bruciato tutta una
+
+78
+00:07:43,080 --> 00:07:43,880
+quantità di pezzi.
+
+79
+00:07:43,980 --> 00:07:48,600
+Ho, più o meno, proprio qui ora tutti i pezzi bruciati.
+
+80
+00:07:49,200 --> 00:08:04,140
+Questo, a partire dallo stadio push-pull, sì, è visibile e i transistor push-pull RFP 260, sì, uno è semplicemente esploso, c'è il buco, sì, è visibile se si guarda di lato, non so, beh, più o meno
+
+81
+00:08:04,140 --> 00:08:04,480
+visibile.
+
+82
+00:08:05,320 --> 00:08:19,300
+Qui, un mucchio di questi diodi, una cosa colossale, sì, e fusibili sparsi in giro, sì, diversi, e varie cianfrusaglie lì, e questo transistor 460, sì, e
+
+83
+00:08:20,240 --> 00:08:36,920
+persino un condensatore, là, è esploso là, sì, tutto questo è la conseguenza che io un po', beh, ho semplicemente deciso che il sistema è partito senza carico, sì, l'alimentatore tirava bene il sistema,
+
+84
+00:08:37,100 --> 00:08:52,260
+perché consumava poco, e ho bruciato l'alimentatore, ho dovuto ripararlo, smontarlo, cosa si può dire di tutta questa roba, come si dice, sì, ho semplicemente preso questo
+
+85
+00:08:52,260 --> 00:09:07,460
+pulsante, ho spento l'alimentazione, per così dire, il carico, sì, il carico in questo caso sono queste lampadine che usiamo, assolutamente tutte, qui abbiamo 300 watt, 200 watt, 500 watt, 60 watt e 200 watt,
+
+86
+00:09:07,540 --> 00:09:21,140
+sì, ho acceso tutto questo, ha bruciato tranquillamente, tutto ha brillato intensamente semplicemente benissimo, beh, con il pickup ho esagerato un po' qui, cioè, in qualche modo non ho pensato al fatto che, quando
+
+87
+00:09:21,140 --> 00:09:32,340
+disconnetto, la tensione salirà, cosa volevo mostrare, in questo momento non c'è autoalimentazione, lo dico subito, l'alimentatore è disconnesso su un terminale, sì, per non bruciarlo di nuovo, mostrerò
+
+88
+00:09:32,340 --> 00:09:46,200
+riguardo al pickup, allora, ho 24 volt, sì allora, qui è salito, allora, a 6 ampere questa cosa, sì, guardate, all'oscilloscopio, sì, e qui c'è il carico, non sta bruciando ora, ora lo
+
+89
+00:09:46,200 --> 00:10:02,440
+accendiamo, guardate cosa succede, osservate l'oscilloscopio, sì il carico si è acceso, come vedete la frequenza è cambiata, beh è calata un po', è comprensibile, con impulsi alti tutto questo non calerà
+
+90
+00:10:02,440 --> 00:10:18,660
+da nessuna parte, salirà tutto, qui la lampadina brucia, sì, mettiamo un'altra da 500, qui, tutto si è acceso, sì, la tensione è tornata, non si è molto oscurata, guardate, la frequenza è cambiata,
+
+91
+00:10:18,660 --> 00:10:31,400
+sì, vedete, la frequenza è cambiata, ora disconnetto, spengo, sì, l'alimentazione, beh, ho disconnesso il carico, naturalmente, tutto è salito, vedete, la frequenza è cambiata, ma la risonanza è rimasta al suo posto, accendo,
+
+92
+00:10:32,040 --> 00:10:52,440
+è un po' avanzata, ma la risonanza è al suo posto, 28,7 824 kilohertz questa cosa, cioè, tutto questo, insomma, aggeggio, vedete come, sì, il PLL funziona, ho lasciato 27 e là 17, sì, kilohertz,
+
+93
+00:10:53,000 --> 00:11:07,100
+quindi 28, ora cambierà, 28,78 45, sì, 43, là cambia quindi sarà di più, sì, qui, posso ora prendere, avvitare un'altra lampadina, notate, beh sì, c'è calo, certo,
+
+94
+00:11:07,100 --> 00:11:23,280
+cioè, è naturale, ma la frequenza è salita un po', ma c'è risonanza, ora ne butteremo un'altra, nessun problema, tutto questo ora, certo, così, di più, qui, tutte queste, insomma, cinque bruciano bene
+
+95
+00:11:23,280 --> 00:11:39,960
+qui, prego, 29,68, sì, la frequenza la stacchiamo del tutto, qui, è tornata, è quello che il PLL deve fare, questa è la cosa più importante, sì, bisogna raggiungere questo momento e poi sarà facile per noi colpire
+
+96
+00:11:39,960 --> 00:11:54,300
+con un impulso là, dove dobbiamo colpire, qui in questo punto e poi, allora otterrete il vostro SE, ma di nuovo, dico ancora una volta, affinché tutto questo funzioni avete bisogno su questo Tesla, ora non posso
+
+97
+00:11:54,300 --> 00:12:07,660
+mostrare, il transistor non è ancora collegato, l'ho appena avvitato qui, lì dovrebbe esserci, qui dovrebbe esserci una tensione quasi statica, cioè, di fatto, caricando la bobina, tiriamo fuori
+
+98
+00:12:07,660 --> 00:12:23,300
+elettroni in modo statico, in sincronia con questo sistema push-pull, sì, con questo SE, colpisce chiaramente nel punto necessario in quel momento tirando fuori e aggiungendo elettroni dal mezzo, tirandoli fuori in modo statico
+
+99
+00:12:23,300 --> 00:12:36,340
+così, questa è la tecnologia degli impulsi di Tesla, penso di avervi detto molto adesso, molto, e molti, penso, sanno di cosa si tratta, sì, tra l'altro, mi hanno chiesto qui, quanto
+
+100
+00:12:36,340 --> 00:12:50,840
+questo dispositivo, per così dire, consuma, quando avvito tutte queste lampadine, sì, e tutto brucia, sì, e tutto questo funziona, nessun problema, mostro quanto tutto questo
+
+101
+00:12:51,780 --> 00:13:09,720
+consuma l'aggeggio, guardate, consuma meno che nel momento in cui spengo il carico, guardate, spengo il carico, vedete che l'amperometro mostra 6 ampere, accendo con uno strappo, sì, qui, tutto
+
+102
+00:13:09,720 --> 00:13:18,680
+è salito, tutto, beh, circa la metà in meno, sì, cioè 500 milliampere in meno, ma perché succede questo?
+
+103
+00:13:19,400 --> 00:13:36,680
+Questo, beh, dopotutto, più o meno, questa cosa, risonanza, le bobine funzionano diversamente, questa è una lunga procedura, perché è così e come spiegare tutto questo, non lo farò adesso, voglio solo dire, così, tutto quello che bisogna
+
+104
+00:13:36,680 --> 00:13:49,780
+fare per ottenere questo, prima di tutto, niente fili lunghi e disordinati, spessi e tutto il resto, no, avete bisogno di tutto in ordine, come qui, sì, qui è in ordine, per ora
+
+105
+00:13:49,780 --> 00:14:01,300
+tutto questo è più o meno sottosopra, tirato fuori tutto al contrario, ma è tutto, grazie, andiamo e guardate i prossimi video per ora
