@@ -1,0 +1,259 @@
+1
+00:00:00,000 --> 00:00:00,740
+Ciao a tutti!
+
+2
+00:00:01,300 --> 00:00:03,160
+Ora vi mostro una nuova configurazione.
+
+3
+00:00:03,960 --> 00:00:12,000
+L'ho fatta secondo lo schema di Dali, lo dico subito, perché ho usato quel maledetto generatore di nanosecondi che frigge davvero il ponte.
+
+4
+00:00:12,620 --> 00:00:15,840
+La frequenza deriva, ma non è neanche la cosa peggiore.
+
+5
+00:00:15,960 --> 00:00:20,280
+La cosa peggiore è che ho già bruciato un sacco di questi transistor 926.
+
+6
+00:00:21,560 --> 00:00:25,560
+Allora, in generale, volevo infilare tutto questo in una scatola, ma non ci entrava.
+
+7
+00:00:25,840 --> 00:00:29,540
+Purtroppo, non ci entrava neanche il condensatore del circuito dall'induttore.
+
+8
+00:00:30,960 --> 00:00:37,260
+Questo è il cavo coassiale che vi è saldato, voglio dire che pende così, questa è la scheda, insomma.
+
+9
+00:00:37,680 --> 00:00:43,640
+L'ho anche aperto, perché la frequenza va continuamente regolata con questo resistore che è qui.
+
+10
+00:00:43,960 --> 00:00:46,480
+Questo è un regolatore di frequenza multigiro.
+
+11
+00:00:47,320 --> 00:00:51,660
+Un regolatore da 5 volt, insomma, ho dovuto improvvisarne uno separato.
+
+12
+00:00:52,820 --> 00:00:54,160
+Beh, cos'altro volevo dire.
+
+13
+00:00:54,160 --> 00:01:08,840
+Allora, qui ho un generatore, un trasformatore su un anello di ferrite, ho dovuto metterlo anche qui, in un altro posto.
+
+14
+00:01:09,440 --> 00:01:12,200
+Beh, è che qui non c'è proprio spazio, ho dovuto sistemarlo altrove.
+
+15
+00:01:12,640 --> 00:01:20,600
+Qui c'è un ponte di diodi, due condensatori e un regolatore da 5 volt per la logica, che attiva tutti questi vari pulsanti qui.
+
+16
+00:01:21,260 --> 00:01:25,020
+L'alimentatore si è bruciato, purtroppo, perché ho scollegato la messa a terra.
+
+17
+00:01:25,180 --> 00:01:34,260
+Non bisogna scollegare la messa a terra in nessun caso, una cattiva messa a terra brucia l'alimentatore, e lo brucia, sapete cosa, l'optoaccoppiatore per qualche motivo, evidentemente lo fora.
+
+18
+00:01:35,000 --> 00:01:37,020
+Non so come succede, ma succede.
+
+19
+00:01:37,180 --> 00:01:46,940
+Ne ho già bruciato uno, ho dovuto mettere uno da 5 ampere, ma è più che sufficiente, perché il sistema consuma pochissimo ed è sufficiente per un carico da 500 watt.
+
+20
+00:01:47,040 --> 00:01:50,780
+Oggi testeremo questo faro, quello famoso, sì?
+
+21
+00:01:50,920 --> 00:01:51,680
+Lo mostro subito.
+
+22
+00:01:52,360 --> 00:02:02,060
+Qui, prego, guardate, il faro non è collegato da nessuna parte, solo la sua spina e basta.
+
+23
+00:02:02,540 --> 00:02:05,320
+Questa è la presa e l'interruttore di carico.
+
+24
+00:02:05,620 --> 00:02:07,420
+Allora, cos'altro?
+
+25
+00:02:08,320 --> 00:02:10,100
+Andiamo con la messa a terra, sì?
+
+26
+00:02:10,440 --> 00:02:12,460
+Adesso quindi, qui collegherò la batteria per ora.
+
+27
+00:02:13,480 --> 00:02:15,860
+Questa è la messa a terra, sì?
+
+28
+00:02:16,220 --> 00:02:19,820
+Questa è la messa a terra, eccola, collegata alla batteria, guardate qui.
+
+29
+00:02:20,480 --> 00:02:27,720
+Qui è spellato ed è preferibile che sia ben collegato, perché l'alimentatore si brucerà di nuovo e non potrò dimostrarvelo.
+
+30
+00:02:27,900 --> 00:02:31,100
+Beh, allora, accendiamo.
+
+31
+00:02:32,000 --> 00:02:36,700
+Accendiamo il sistema, il LED si accende, quello che a tutti voi piace guardare, vedete?
+
+32
+00:02:37,100 --> 00:02:47,580
+Il LED brucia, brucia, allora, ora collegherò il carico, guardate, accendo il carico, accendo, il faro brucia.
+
+33
+00:02:47,580 --> 00:02:49,060
+500 watt.
+
+34
+00:02:49,580 --> 00:03:01,140
+Allora, il generatore di nanosecondi, lo dico subito, deriva completamente, non si riesce nemmeno a respirare, deriva del tutto, di conseguenza tutto inizia a vagare e il sistema non funziona.
+
+35
+00:03:01,720 --> 00:03:10,940
+Ditemi ora, cosa fare con la batteria, la scolleghiamo, caspita, da qui, ecco, prego, è qui, non serve, la togliamo, caspita.
+
+36
+00:03:11,680 --> 00:03:27,200
+Eccolo, guardate, il sistema funziona, funziona e ora ditemi che questo è un falso, prego, questa è la terra, non voglio tirarla, perché ho già bruciato l'alimentatore, sì, evidentemente qualcosa torna indietro.
+
+37
+00:03:28,380 --> 00:03:47,840
+Beh, va bene, allora, questo aggeggio, prego, 500 watt, funziona, ma bisogna spegnerlo, perché questo transistor si scalda e presto scoppierà, anche se qui ci sono solo 110 volt, come va, quindi è esattamente quello che succederà
+
+38
+00:03:47,840 --> 00:03:48,660
+presto.
+
+39
+00:03:49,440 --> 00:03:58,820
+Ecco, insomma, qui, accendiamo, non si accende, prego, bisogna riavvicinare la batteria e poi tutto succederà.
+
+40
+00:03:59,540 --> 00:04:02,740
+Se volete vedere, posso mostrare.
+
+41
+00:04:03,740 --> 00:04:11,600
+Guardate, qui, accendo, l'elica parte, accendo, bisogna spegnere il carico.
+
+42
+00:04:12,310 --> 00:04:18,680
+Allora, lo teniamo, il sistema parte e il faro brucia.
+
+43
+00:04:18,900 --> 00:04:27,040
+Prego, ho collegato 550 watt, spengo, tutto si stacca.
+
+44
+00:04:27,700 --> 00:04:37,360
+Ho collegato 550 watt di carico, ha funzionato tranquillamente, ma questo aggeggio, francamente, è una robaccia totale, bisogna sostituire qualcosa.
+
+45
+00:04:38,500 --> 00:04:50,540
+Come ha funzionato per Dali, non lo so, ma molto probabilmente perché qualcosa è derivato da lui, molto probabilmente per questo si è sincronizzato o in qualche modo.
+
+46
+00:04:50,620 --> 00:04:57,240
+Vi dico onestamente, avete bisogno, a questo proposito avete bisogno di un blocco di adattamento, altrimenti tutto questo sistema non funzionerà.
+
+47
+00:04:57,400 --> 00:05:04,440
+Per quanto lo martelliate con impulsi di qualsiasi tipo, non darà nulla, non tormentatevi.
+
+48
+00:05:05,070 --> 00:05:15,960
+Dovete studiare tutta la teoria e solo allora saprete, ma qui, accidenti, vedo che molti specialisti stanno sui forum, chiacchierano, non fanno niente.
+
+49
+00:05:16,120 --> 00:05:28,600
+Allora, prendete in mano la vostra ragione, la vostra, ascoltate gli scienziati, quello che dicono, studiate la teoria del campo magnetico, e poi saprete dove colpire e con cosa, e come fare in modo che questo campo magnetico ruoti in
+
+50
+00:05:28,600 --> 00:05:29,340
+questa bobina.
+
+51
+00:05:29,920 --> 00:05:33,540
+È vuota, sì, non c'è niente, ci passano dei fili.
+
+52
+00:05:34,160 --> 00:05:34,680
+Qui.
+
+53
+00:05:35,300 --> 00:05:40,640
+E così, affinché tutto funzioni qui, dovete semplicemente studiare la teoria.
+
+54
+00:05:41,200 --> 00:05:52,140
+Non sto su questi forum e non leggo tutte queste sciocchezze, ascolto gli scienziati e le persone che sanno come va il campo magnetico, come si espande questo toroide e simili.
+
+55
+00:05:52,760 --> 00:05:57,920
+Quindi vi raccomando di iniziare esattamente da questo anche voi, e solo poi pensate a tutto il resto.
+
+56
+00:05:58,760 --> 00:06:00,020
+Allora tutto vi andrà bene.
+
+57
+00:06:00,020 --> 00:06:09,040
+Ho ideato lo schema da solo, ho lavorato, lo dico onestamente, l'ho assemblato basandomi su Dali, pensavo che tutto questo funzionasse per lui.
+
+58
+00:06:09,820 --> 00:06:15,940
+Ma penso che il secondo schema, se lo assembla, non funzionerà, perché qui è richiesto un adattamento.
+
+59
+00:06:16,280 --> 00:06:27,980
+È successo per caso da lui, è improbabile che succeda di nuovo, lo dico onestamente, perché tutto questo sistema richiede un adattamento specifico.
+
+60
+00:06:28,730 --> 00:06:31,820
+Tutto deve essere sincronizzato e fatto come si deve.
+
+61
+00:06:32,400 --> 00:06:34,760
+Questo generatore deve essere stabilizzato urgentemente.
+
+62
+00:06:35,280 --> 00:06:43,680
+La frequenza deriva un po', ecco, il sistema si blocca, si spegne, perché qualcosa non basta, l'alimentatore non funziona.
+
+63
+00:06:44,260 --> 00:06:58,400
+La tensione mi è uscita qui all'uscita da qualche parte a 270 volt, appena sufficiente per l'alimentatore, ha un ponte di diodi dentro e arriva troppo poco, lo capite da soli, troppo poco.
+
+64
+00:06:59,400 --> 00:07:02,340
+Beh, questo tipo di cosa, insomma, è venuto fuori.
+
+65
+00:07:02,940 --> 00:07:03,380
+Avanti!

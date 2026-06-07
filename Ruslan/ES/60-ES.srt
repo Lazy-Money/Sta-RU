@@ -1,0 +1,259 @@
+1
+00:00:00,000 --> 00:00:00,740
+¡Hola a todos!
+
+2
+00:00:01,300 --> 00:00:03,160
+Ahora les voy a mostrar una nueva configuración.
+
+3
+00:00:03,960 --> 00:00:12,000
+La hice según el esquema de Dali, lo digo de entrada, porque usé ese maldito generador de nanosegundos que de verdad fríe el puente.
+
+4
+00:00:12,620 --> 00:00:15,840
+La frecuencia se desvía, pero eso ni siquiera es lo peor.
+
+5
+00:00:15,960 --> 00:00:20,280
+Lo peor es que ya quemé un montón de estos transistores 926.
+
+6
+00:00:21,560 --> 00:00:25,560
+Entonces, en general, quería meter todo esto en una caja, pero no entró.
+
+7
+00:00:25,840 --> 00:00:29,540
+Lamentablemente, tampoco entró el condensador del circuito del inductor.
+
+8
+00:00:30,960 --> 00:00:37,260
+Este es el cable coaxial que va soldado aquí, quiero decir que cuelga así, esta es la placa, en resumen.
+
+9
+00:00:37,680 --> 00:00:43,640
+Incluso lo abrí, porque la frecuencia constantemente hay que ajustarla con este resistor que está aquí.
+
+10
+00:00:43,960 --> 00:00:46,480
+Este es un ajuste de frecuencia multivuelta.
+
+11
+00:00:47,320 --> 00:00:51,660
+Un estabilizador de 5 voltios, en fin, tuve que armar uno separado.
+
+12
+00:00:52,820 --> 00:00:54,160
+Bueno, qué más quería decir.
+
+13
+00:00:54,160 --> 00:01:08,840
+Entonces, aquí tengo un generador, un transformador en un anillo de ferrita, tuve que meterlo también aquí, en otro lugar.
+
+14
+00:01:09,440 --> 00:01:12,200
+Bueno, es que simplemente no había espacio aquí, tuve que ponerlo.
+
+15
+00:01:12,640 --> 00:01:20,600
+Aquí hay un puente de diodos, dos condensadores y un estabilizador de 5 voltios para la lógica, que enciende todos estos botones de aquí.
+
+16
+00:01:21,260 --> 00:01:25,020
+La fuente de alimentación se quemó, lamentablemente, porque desconecté la toma de tierra.
+
+17
+00:01:25,180 --> 00:01:34,260
+Bajo ninguna circunstancia hay que desconectar la toma de tierra, una mala toma de tierra quema la fuente de alimentación, y la quema, saben qué, el optoacoplador por alguna razón, evidentemente lo atraviesa.
+
+18
+00:01:35,000 --> 00:01:37,020
+No sé cómo pasa esto, pero pasa.
+
+19
+00:01:37,180 --> 00:01:46,940
+Ya quemé uno, tuve que poner uno de 5 amperios, pero es más que suficiente, porque el sistema consume muy poco y es suficiente para una carga de 500 vatios.
+
+20
+00:01:47,040 --> 00:01:50,780
+Hoy vamos a probar este foco, el famoso, ¿sí?
+
+21
+00:01:50,920 --> 00:01:51,680
+Lo muestro enseguida.
+
+22
+00:01:52,360 --> 00:02:02,060
+Aquí, por favor, miren, el foco no está conectado a nada, solo su enchufe y ya.
+
+23
+00:02:02,540 --> 00:02:05,320
+Este es el tomacorriente y el interruptor de carga.
+
+24
+00:02:05,620 --> 00:02:07,420
+Bueno, ¿qué más?
+
+25
+00:02:08,320 --> 00:02:10,100
+Vayamos por la toma de tierra, ¿sí?
+
+26
+00:02:10,440 --> 00:02:12,460
+Ahora entonces, aquí voy a conectar la batería por ahora.
+
+27
+00:02:13,480 --> 00:02:15,860
+Esta es la toma de tierra, ¿sí?
+
+28
+00:02:16,220 --> 00:02:19,820
+Esta es la toma de tierra, aquí está, conectada a la batería, miren aquí.
+
+29
+00:02:20,480 --> 00:02:27,720
+Aquí está pelado y es deseable que esté bien conectado, porque la fuente de alimentación se va a quemar de nuevo y no voy a poder demostrarlo.
+
+30
+00:02:27,900 --> 00:02:31,100
+Bueno, pues, vamos a encenderlo.
+
+31
+00:02:32,000 --> 00:02:36,700
+Encendemos el sistema, se enciende el LED, ese que a todos les encanta mirar, ¿ven?
+
+32
+00:02:37,100 --> 00:02:47,580
+El LED arde, arde, bueno, ahora voy a conectar la carga, miren, enciendo la carga, enciendo, el foco arde.
+
+33
+00:02:47,580 --> 00:02:49,060
+500 vatios.
+
+34
+00:02:49,580 --> 00:03:01,140
+Entonces, el generador de nanosegundos, lo digo de entrada, se desvía completamente, ni se puede respirar, se desvía del todo, en consecuencia, todo empieza a vagar y el sistema no funciona.
+
+35
+00:03:01,720 --> 00:03:10,940
+Ahora díganme, qué hacer con la batería, la desconectamos, caramba, de aquí, eso es, por favor, está aquí, no se necesita, la quitamos, caramba.
+
+36
+00:03:11,680 --> 00:03:27,200
+Aquí está, miren, el sistema funciona, funciona y ahora díganme que esto es un fraude, por favor, esta es la tierra, no quiero jalarla, porque ya quemé la fuente de alimentación, sí, evidentemente algo regresa.
+
+37
+00:03:28,380 --> 00:03:47,840
+Bueno, está bien, bueno, ahí está, este artefacto, por favor, 500 vatios, funciona, pero hay que apagarlo, porque este transistor se calienta y pronto va a estallar, aunque aquí solo hay 110 voltios, como va, así que exactamente eso es lo que va a
+
+38
+00:03:47,840 --> 00:03:48,660
+pasar pronto.
+
+39
+00:03:49,440 --> 00:03:58,820
+Eso es, en resumen, aquí, encendemos, no enciende, por favor, hay que volver a acercar la batería y entonces todo va a pasar.
+
+40
+00:03:59,540 --> 00:04:02,740
+Si quieren ver, puedo mostrar.
+
+41
+00:04:03,740 --> 00:04:11,600
+Miren, aquí, enciendo, arranca el propulsor, enciendo, hay que apagar la carga.
+
+42
+00:04:12,310 --> 00:04:18,680
+Entonces, lo sostenemos, el sistema arranca y el foco arde.
+
+43
+00:04:18,900 --> 00:04:27,040
+Por favor, conecté 550 vatios, apago, todo se corta.
+
+44
+00:04:27,700 --> 00:04:37,360
+Conecté 550 vatios de carga, funcionó tranquilamente, pero este cacharro, francamente hablando, es una completa porquería, hay que reemplazar algo.
+
+45
+00:04:38,500 --> 00:04:50,540
+Cómo le funcionó esto a Dali, no sé, pero lo más probable es que algo se desvió allá en su caso, lo más probable, por eso se sincronizó o algo así.
+
+46
+00:04:50,620 --> 00:04:57,240
+Les digo honestamente, necesitan, en este sentido necesitan un bloque de adaptación, de lo contrario todo el sistema no va a funcionar.
+
+47
+00:04:57,400 --> 00:05:04,440
+Por más que lo martilleen con pulsos y del tipo que sea, no va a dar nada, no se torturen.
+
+48
+00:05:05,070 --> 00:05:15,960
+Tienen que estudiar toda la teoría y solo entonces saberlo, pero aquí, caramba, veo que muchos especialistas se sientan en los foros, charlan, no hacen nada.
+
+49
+00:05:16,120 --> 00:05:28,600
+Entonces, agarren su razón, la propia, escuchen a los científicos, lo que dicen, estudien la teoría del campo magnético, y entonces sabrán dónde golpear y con qué, y cómo hacer para que este campo magnético rote en
+
+50
+00:05:28,600 --> 00:05:29,340
+esta bobina.
+
+51
+00:05:29,920 --> 00:05:33,540
+Está vacía, sí, no hay nada allí, van cables.
+
+52
+00:05:34,160 --> 00:05:34,680
+Aquí.
+
+53
+00:05:35,300 --> 00:05:40,640
+Y así, para que todo funcione aquí, simplemente tienen que estudiar la teoría.
+
+54
+00:05:41,200 --> 00:05:52,140
+No me siento en estos foros y no leo toda esa palabrería, escucho a los científicos y a las personas que saben cómo va el campo magnético, cómo se extiende este toroide y similares.
+
+55
+00:05:52,760 --> 00:05:57,920
+Así que les recomiendo que empiecen exactamente con esto también, y solo entonces piensen en todo lo demás.
+
+56
+00:05:58,760 --> 00:06:00,020
+Entonces todo les va a salir bien.
+
+57
+00:06:00,020 --> 00:06:09,040
+Yo pensé el esquema yo solo, trabajé, lo digo honestamente, lo ensambé apoyándome en Dali, pensé que todo eso le funcionaba.
+
+58
+00:06:09,820 --> 00:06:15,940
+Pero creo que el segundo esquema, si lo ensambla, no va a funcionar, porque aquí se requiere adaptación.
+
+59
+00:06:16,280 --> 00:06:27,980
+Solo le pasó por casualidad, es poco probable que vuelva a pasar, lo digo honestamente, porque todo este sistema requiere una adaptación específica.
+
+60
+00:06:28,730 --> 00:06:31,820
+Todo debe estar sincronizado y hecho como debe ser.
+
+61
+00:06:32,400 --> 00:06:34,760
+Este generador necesita ser estabilizado urgentemente.
+
+62
+00:06:35,280 --> 00:06:43,680
+La frecuencia se desvía un poco, eso es todo, el sistema se para, se apaga, porque algo no alcanza, la fuente de alimentación no funciona.
+
+63
+00:06:44,260 --> 00:06:58,400
+El voltaje me salió aquí en la salida en algún lugar de 270 voltios, justo lo suficiente para la fuente de alimentación, tiene un puente de diodos adentro y llega muy poco, lo entienden ustedes mismos, muy poco.
+
+64
+00:06:59,400 --> 00:07:02,340
+Bueno, este tipo de cosa, en resumen, salió.
+
+65
+00:07:02,940 --> 00:07:03,380
+¡Adelante!

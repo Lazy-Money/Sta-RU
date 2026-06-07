@@ -1,0 +1,259 @@
+1
+00:00:00,000 --> 00:00:00,740
+Hallo zusammen!
+
+2
+00:00:01,300 --> 00:00:03,160
+Jetzt zeige ich euch eine neue Aufbau.
+
+3
+00:00:03,960 --> 00:00:12,000
+Ich habe ihn nach Dalis Schaltplan gemacht, sag ich gleich, weil ich diesen verdammten Nanosekunden-Generator benutzt habe, der die Brücke wirklich brät.
+
+4
+00:00:12,620 --> 00:00:15,840
+Die Frequenz driftet, aber das ist noch nicht mal das Schlimmste.
+
+5
+00:00:15,960 --> 00:00:20,280
+Das Schlimme ist, dass ich schon eine ganze Menge dieser 926er Transistoren durchgebrannt habe.
+
+6
+00:00:21,560 --> 00:00:25,560
+Also, im Grunde wollte ich das alles in eine Box packen, aber es hat nicht gepasst.
+
+7
+00:00:25,840 --> 00:00:29,540
+Leider hat auch der Schaltkreiskondensator vom Induktor nicht hineingepasst.
+
+8
+00:00:30,960 --> 00:00:37,260
+Das ist das Koaxialkabel, das daran gelötet ist, also hängt es so hier, das ist die Platine, kurz gesagt.
+
+9
+00:00:37,680 --> 00:00:43,640
+Ich habe es sogar geöffnet, weil die Frequenz ständig mit diesem Widerstand hier abgestimmt werden muss.
+
+10
+00:00:43,960 --> 00:00:46,480
+Das ist eine Mehrgang-Frequenzabstimmung.
+
+11
+00:00:47,320 --> 00:00:51,660
+Ein 5-Volt-Stabilisator, kurzum, ich musste mir einen separaten zusammenbasteln.
+
+12
+00:00:52,820 --> 00:00:54,160
+Also, was wollte ich noch sagen.
+
+13
+00:00:54,160 --> 00:01:08,840
+Also, hier habe ich einen Generator, einen Transformator auf einem Ferritkern-Ring, den musste ich auch hier unterbringen, an einem anderen Ort.
+
+14
+00:01:09,440 --> 00:01:12,200
+Na ja, hier ist einfach kein Platz, ich musste ihn woanders hinlegen.
+
+15
+00:01:12,640 --> 00:01:20,600
+Hier ist eine Diodenbrücke, zwei Kondensatoren und ein 5-Volt-Stabilisator für die Logik, die all diese verschiedenen Knöpfe hier einschaltet.
+
+16
+00:01:21,260 --> 00:01:25,020
+Das Netzteil ist leider durchgebrannt, weil ich die Erdung getrennt habe.
+
+17
+00:01:25,180 --> 00:01:34,260
+Ihr dürft die Erdung unter keinen Umständen trennen, eine schlechte Erdung zerstört das Netzteil, und es zerstört, wißt ihr was, den Optokoppler aus irgendeinem Grund, offensichtlich schlägt es durch.
+
+18
+00:01:35,000 --> 00:01:37,020
+Ich weiß nicht, wie das passiert, aber es passiert.
+
+19
+00:01:37,180 --> 00:01:46,940
+Ich habe schon eines durchgebrannt, musste ein 5-Ampere-Exemplar einbauen, aber das reicht vollkommen, weil das System sehr wenig frisst und für eine 500-Watt-Last völlig ausreicht.
+
+20
+00:01:47,040 --> 00:01:50,780
+Heute testen wir diesen Strahler, den berühmten, ja?
+
+21
+00:01:50,920 --> 00:01:51,680
+Ich zeige es gleich.
+
+22
+00:01:52,360 --> 00:02:02,060
+Hier, bitte, schaut, der Strahler ist überhaupt nirgends angeschlossen, nur sein Stecker und das war's.
+
+23
+00:02:02,540 --> 00:02:05,320
+Das ist die Steckdose und der Lastschalter.
+
+24
+00:02:05,620 --> 00:02:07,420
+Also, was noch?
+
+25
+00:02:08,320 --> 00:02:10,100
+Gehen wir zur Erdung, ja?
+
+26
+00:02:10,440 --> 00:02:12,460
+Jetzt also, hier schließe ich erst mal die Batterie an.
+
+27
+00:02:13,480 --> 00:02:15,860
+Das ist die Erdung, ja?
+
+28
+00:02:16,220 --> 00:02:19,820
+Das ist die Erdung, hier ist sie, an die Batterie angeschlossen, schaut hier.
+
+29
+00:02:20,480 --> 00:02:27,720
+Hier ist sie abisoliert und es ist wünschenswert, dass sie gut angeschlossen ist, weil das Netzteil sonst wieder durchbrennt und ich es euch nicht vorführen kann.
+
+30
+00:02:27,900 --> 00:02:31,100
+Also, na ja, schalten wir es ein.
+
+31
+00:02:32,000 --> 00:02:36,700
+Wir schalten das System ein, die LED leuchtet auf, die ihr alle so gerne anschaut, seht ihr?
+
+32
+00:02:37,100 --> 00:02:47,580
+Die LED brennt, brennt, also, jetzt schließe ich die Last an, schaut, ich schalte die Last ein, schalte ein, der Strahler brennt.
+
+33
+00:02:47,580 --> 00:02:49,060
+500 Watt.
+
+34
+00:02:49,580 --> 00:03:01,140
+Also, der Nanosekunden-Generator, sag ich gleich, driftet vollständig weg, man kann nicht mal atmen, driftet komplett weg, entsprechend beginnt alles zu wandern und das System funktioniert nicht.
+
+35
+00:03:01,720 --> 00:03:10,940
+Sagt mir jetzt, was mit der Batterie zu tun ist, wir trennen sie, verdammt, von hier, das ist es, bitte, sie ist hier, nicht nötig, wir nehmen sie weg, verdammt.
+
+36
+00:03:11,680 --> 00:03:27,200
+Hier ist es, schaut, das System funktioniert, funktioniert und sagt mir jetzt, das ist ein Fake, bitte, das ist die Erdung, ich will nicht daran ziehen, weil ich das Netzteil schon durchgebrannt habe, ja, offensichtlich kommt etwas zurück.
+
+37
+00:03:28,380 --> 00:03:47,840
+Na gut, also, dieses Gerät hier, bitte, 500 Watt, funktioniert, aber es muss ausgeschaltet werden, weil dieser Transistor sich erhitzt und bald durchbrennt, obwohl hier nur 110 Volt anliegen, wie es geht, also genau das wird
+
+38
+00:03:47,840 --> 00:03:48,660
+bald passieren.
+
+39
+00:03:49,440 --> 00:03:58,820
+Das ist es, kurzum, hier, wir schalten ein, es schaltet nicht ein, bitte, man muss die Batterie wieder heranführen und dann passiert alles.
+
+40
+00:03:59,540 --> 00:04:02,740
+Wenn ihr es sehen wollt, kann ich es zeigen.
+
+41
+00:04:03,740 --> 00:04:11,600
+Schaut, hier, ich schalte ein, der Propeller startet, ich schalte ein, man muss die Last ausschalten.
+
+42
+00:04:12,310 --> 00:04:18,680
+Also, wir halten es, das System startet und der Strahler brennt.
+
+43
+00:04:18,900 --> 00:04:27,040
+Bitte, ich habe 550 Watt angeschlossen, ich schalte aus, alles fällt ab.
+
+44
+00:04:27,700 --> 00:04:37,360
+Ich habe 550 Watt Last angeschlossen, es hat ruhig funktioniert, aber dieses Ding ist, ehrlich gesagt, totaler Schrott, da muss etwas ausgetauscht werden.
+
+45
+00:04:38,500 --> 00:04:50,540
+Wie das bei Dali funktioniert hat, weiß ich nicht, aber höchstwahrscheinlich, weil bei ihm etwas gewandert ist, höchstwahrscheinlich hat es sich deswegen synchronisiert oder irgendwie so.
+
+46
+00:04:50,620 --> 00:04:57,240
+Ich sag euch ehrlich, ihr braucht, in dieser Hinsicht braucht ihr einen Anpassungsblock, sonst wird dieses ganze System nicht funktionieren.
+
+47
+00:04:57,400 --> 00:05:04,440
+Egal wie sehr ihr es mit Impulsen jeder Art bombardiert, es wird nichts bringen, quält euch nicht.
+
+48
+00:05:05,070 --> 00:05:15,960
+Ihr müsst die gesamte Theorie studieren und erst dann Bescheid wissen, aber hier, verdammt, sehe ich, dass viele Spezialisten in den Foren sitzen, klönen, nichts tun.
+
+49
+00:05:16,120 --> 00:05:28,600
+Also dann, nehmt euren Verstand zusammen, euren eigenen, hört auf die Wissenschaftler, was sie sagen, studiert die Theorie des Magnetfelds, und dann wisst ihr, wo ihr hämmern müsst und womit, und wie man es macht, dass dieses Magnetfeld sich in
+
+50
+00:05:28,600 --> 00:05:29,340
+dieser Spule dreht.
+
+51
+00:05:29,920 --> 00:05:33,540
+Sie ist leer, ja, da ist nichts, Drähte gehen rein.
+
+52
+00:05:34,160 --> 00:05:34,680
+Hier.
+
+53
+00:05:35,300 --> 00:05:40,640
+Und so, damit hier alles funktioniert, müsst ihr einfach die Theorie studieren.
+
+54
+00:05:41,200 --> 00:05:52,140
+Ich sitze nicht in diesen Foren und lese nicht all diesen Unsinn, ich höre auf Wissenschaftler und auf Menschen, die wissen, wie das Magnetfeld verläuft, wie sich dieser Torus ausbreitet und so weiter.
+
+55
+00:05:52,760 --> 00:05:57,920
+Also empfehle ich euch, genau damit anzufangen, und erst dann über alles andere nachzudenken.
+
+56
+00:05:58,760 --> 00:06:00,020
+Dann wird bei euch alles klappen.
+
+57
+00:06:00,020 --> 00:06:09,040
+Ich habe die Schaltung selbst entwickelt, habe gearbeitet, ich sage ehrlich, habe sie angelehnt an Dali zusammengebaut, dachte, dass das alles bei ihm funktioniert.
+
+58
+00:06:09,820 --> 00:06:15,940
+Aber ich denke, dass die zweite Schaltung, wenn er sie zusammenbaut, nicht funktionieren wird, weil hier eine Anpassung erforderlich ist.
+
+59
+00:06:16,280 --> 00:06:27,980
+Es hat sich bei ihm nur zufällig ergeben, es ist unwahrscheinlich, dass es wieder passiert, ich sag es ehrlich, weil dieses ganze System eine spezifische Anpassung erfordert.
+
+60
+00:06:28,730 --> 00:06:31,820
+Alles muss synchronisiert und so gemacht sein, wie es sein soll.
+
+61
+00:06:32,400 --> 00:06:34,760
+Dieser Generator muss dringend stabilisiert werden.
+
+62
+00:06:35,280 --> 00:06:43,680
+Die Frequenz driftet ein bisschen, das ist alles, das System stockt, schaltet sich aus, weil etwas nicht reicht, das Netzteil arbeitet nicht.
+
+63
+00:06:44,260 --> 00:06:58,400
+Die Spannung kam bei mir hier am Ausgang irgendwo bei 270 Volt raus, gerade genug für das Netzteil, drinnen ist eine Diodenbrücke und es kommt zu wenig an, ihr versteht das selbst, zu wenig.
+
+64
+00:06:59,400 --> 00:07:02,340
+Na ja, so eine Sache ist dabei herausgekommen.
+
+65
+00:07:02,940 --> 00:07:03,380
+Los geht's!
