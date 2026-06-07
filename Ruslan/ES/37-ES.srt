@@ -1,0 +1,483 @@
+1
+00:00:00,910 --> 00:00:06,250
+Bueno, metí el driver aquí, ya encendí todo este equipo y lo ajusté un poco.
+
+2
+00:00:07,050 --> 00:00:08,830
+Así que aquí van los paquetes de pulsos.
+
+3
+00:00:08,950 --> 00:00:13,170
+Probablemente no se ve bien, pero ahora lo voy a ampliar un poco mejor.
+
+4
+00:00:13,230 --> 00:00:14,730
+Aquí están los paquetes de pulsos.
+
+5
+00:00:14,950 --> 00:00:18,350
+O sea, si lo miran así, aquí están.
+
+6
+00:00:18,950 --> 00:00:20,910
+Aquí los amplían, están aquí.
+
+7
+00:00:21,170 --> 00:00:23,910
+O sea, aquí están, los paquetes de pulsos.
+
+8
+00:00:23,990 --> 00:00:25,670
+Se pueden ajustar como quieran.
+
+9
+00:00:26,750 --> 00:00:29,250
+Todo el mundo conoce este circuito.
+
+10
+00:00:29,250 --> 00:00:34,690
+O sea, aquí pueden mover su ancho.
+
+11
+00:00:34,770 --> 00:00:35,830
+Ahora mismo no lo vemos.
+
+12
+00:00:36,070 --> 00:00:41,530
+Solo podemos reducir los paquetes, aumentar los paquetes.
+
+13
+00:00:42,310 --> 00:00:48,250
+Bueno, y si amplío el paquete en sí, aquí están los pulsos.
+
+14
+00:00:49,050 --> 00:00:52,810
+Luego pueden ver lo que está pasando.
+
+15
+00:00:52,950 --> 00:00:57,190
+Pueden reducirlo, moverlo a donde quieran.
+
+16
+00:00:57,190 --> 00:01:01,310
+Ahí está, aquí lo tienen.
+
+17
+00:01:03,010 --> 00:01:04,870
+Ampliar, reducir y todo eso.
+
+18
+00:01:04,930 --> 00:01:05,910
+Todo está en los paquetes.
+
+19
+00:01:06,870 --> 00:01:08,550
+Así que este sistema funciona.
+
+20
+00:01:08,670 --> 00:01:11,650
+El osciloscopio, digo, es muy difícil trabajar con este osciloscopio.
+
+21
+00:01:11,790 --> 00:01:15,710
+Ya pedí otro, así que me chamuscé el flequillo encima de él.
+
+22
+00:01:15,790 --> 00:01:18,810
+Ya es hora de actualizar mi laboratorio.
+
+23
+00:01:19,770 --> 00:01:20,850
+Eso es.
+
+24
+00:01:21,170 --> 00:01:24,310
+No sé cómo Roma trabaja con placas como estas.
+
+25
+00:01:26,210 --> 00:01:28,670
+Nunca ensamblé nada más que un solo chip.
+
+26
+00:01:28,870 --> 00:01:30,570
+Solo una linterna, esa primera que hice.
+
+27
+00:01:31,410 --> 00:01:33,270
+Su linterna la ensamblé yo.
+
+28
+00:01:33,290 --> 00:01:34,070
+Ahí está.
+
+29
+00:01:34,990 --> 00:01:36,410
+Destrozada y completamente desarmada.
+
+30
+00:01:36,850 --> 00:01:37,730
+Por cierto, funcionó.
+
+31
+00:01:38,530 --> 00:01:39,470
+Solo que algo falló.
+
+32
+00:01:41,410 --> 00:01:44,250
+En fin, es la linterna que ensamblé y le mostré a todos.
+
+33
+00:01:44,650 --> 00:01:48,730
+Y, por cierto, aquí está el foco de ella que anda por ahí, que también brilló.
+
+34
+00:01:50,310 --> 00:01:54,840
+Ya me olvidé de la linterna, porque ni me interesa.
+
+35
+00:01:55,350 --> 00:01:58,770
+Porque todo son ferroimanes y estos anillos de ferrita.
+
+36
+00:01:58,830 --> 00:02:03,270
+Ahí está, aquí está la salchicha de ferrita que estaba usando.
+
+37
+00:02:03,370 --> 00:02:07,070
+Se desmoronó, se cayó a pedazos, se rajó.
+
+38
+00:02:07,450 --> 00:02:08,590
+Y aquí se despegó.
+
+39
+00:02:08,870 --> 00:02:11,150
+Porque todo esto es basura.
+
+40
+00:02:11,230 --> 00:02:13,310
+No quiero lidiar con eso.
+
+41
+00:02:13,430 --> 00:02:17,570
+Hay un par de configuraciones más que ensamblé con ferroresonancia también.
+
+42
+00:02:18,770 --> 00:02:20,810
+No sale nada bueno de ahí.
+
+43
+00:02:21,590 --> 00:02:23,130
+En fin, lo tiré a un lado.
+
+44
+00:02:23,430 --> 00:02:26,310
+No quiero lidiar con esta tontería.
+
+45
+00:02:26,810 --> 00:02:32,490
+Así que metí el driver aquí, a la salida.
+
+46
+00:02:32,630 --> 00:02:33,930
+Aquí están los paquetes de pulsos.
+
+47
+00:02:34,070 --> 00:02:37,170
+Ahora hay que crear las condiciones.
+
+48
+00:02:37,350 --> 00:02:41,190
+Por eso surgirán preguntas de dónde está el filtro para todo en general.
+
+49
+00:02:42,010 --> 00:02:49,310
+El caso es que yo nunca pongo la formación de señales en la placa.
+
+50
+00:02:49,310 --> 00:02:58,430
+Nunca pongo equipos de alta tensión y alta frecuencia.
+
+51
+00:02:59,190 --> 00:03:03,290
+Más precisamente, todo lo que es de alta tensión, fuerte y potente.
+
+52
+00:03:04,750 --> 00:03:11,090
+Todos los procesos que ocurren más adelante deben mantenerse un poco más lejos de todo este equipo.
+
+53
+00:03:11,210 --> 00:03:14,710
+Por eso no le recomiendo a nadie lidiar con…
+
+54
+00:03:15,950 --> 00:03:19,850
+Meter todo en una sola placa y luego tratar de averiguar qué está dónde.
+
+55
+00:03:20,170 --> 00:03:22,930
+Especialmente, digo una vez más, esto realmente no me gusta.
+
+56
+00:03:24,310 --> 00:03:30,950
+Aquí lo resolví, coloqué todo de manera compacta, elegí condensadores normales.
+
+57
+00:03:31,130 --> 00:03:32,770
+Parece que todo está estable, no se calienta.
+
+58
+00:03:32,770 --> 00:03:40,970
+Y el consumo, juzgando por el amperímetro, bueno, claro que muestra cero.
+
+59
+00:03:41,510 --> 00:03:43,690
+Algunos miliamperios, claro, existen.
+
+60
+00:03:43,810 --> 00:03:46,090
+Ahora mismo el circuito está funcionando de todas formas.
+
+61
+00:03:46,650 --> 00:03:50,810
+Veremos qué pasa cuando alimentemos desde este terminal al transistor.
+
+62
+00:03:53,070 --> 00:03:53,750
+A ver qué pasa.
+
+63
+00:03:56,050 --> 00:03:57,710
+Más adelante se verá ahí.
+
+64
+00:03:58,530 --> 00:03:59,990
+Y alimentaremos la Tesla.
+
+65
+00:03:59,990 --> 00:04:05,450
+Pero ahora mismo hay un momento así en que hay que trabajar un poco.
+
+66
+00:04:05,590 --> 00:04:09,050
+Así que voy a cortar un trozo de la placa, probablemente ya no se necesitará aquí.
+
+67
+00:04:09,770 --> 00:04:11,010
+No voy a poner nada ahí.
+
+68
+00:04:11,150 --> 00:04:13,010
+Una vez más digo, aquí hay tres chips.
+
+69
+00:04:14,230 --> 00:04:22,230
+Así que, TL, 74HC14N y un driver TC4420.
+
+70
+00:04:22,390 --> 00:04:23,270
+Aquí está.
+
+71
+00:04:24,050 --> 00:04:28,210
+Un driver muy bueno, aguanta hasta 6, creo que hasta 9 amperios incluso.
+
+72
+00:04:28,210 --> 00:04:29,990
+Una cosa muy buena.
+
+73
+00:04:30,450 --> 00:04:32,770
+Le recomiendo a todos instalarlo, si acaso.
+
+74
+00:04:33,350 --> 00:04:33,970
+Veremos.
+
+75
+00:04:34,070 --> 00:04:37,950
+Ahora quizás incluso necesito hacer una cadena.
+
+76
+00:04:38,410 --> 00:04:39,250
+Una muy importante.
+
+77
+00:04:39,610 --> 00:04:44,550
+Creo que no fue en vano que Roma hizo todo esto aquí.
+
+78
+00:04:45,450 --> 00:04:46,010
+Veremos.
+
+79
+00:04:46,070 --> 00:04:48,490
+Ahora voy a ver cómo funciona todo esto.
+
+80
+00:04:49,030 --> 00:04:50,530
+Voy a tener que vigilar los instrumentos.
+
+81
+00:04:51,350 --> 00:04:52,890
+Contaré más adelante.
+
+82
+00:04:52,890 --> 00:04:54,250
+Lo digo una vez más.
+
+83
+00:04:54,290 --> 00:04:56,910
+Estamos ensamblando el equipo justo ante sus ojos.
+
+84
+00:04:57,070 --> 00:05:01,310
+Lo ensamblaré y lo pondré en marcha con este tipo de cosa.
+
+85
+00:05:01,550 --> 00:05:03,030
+El segundo está todo desarmado.
+
+86
+00:05:03,130 --> 00:05:06,550
+Para estos fines preparé otro un poco.
+
+87
+00:05:06,790 --> 00:05:08,070
+Ya lo calculé.
+
+88
+00:05:08,950 --> 00:05:10,470
+Lo puse en bucle, solo hay que pegarlo.
+
+89
+00:05:10,730 --> 00:05:11,050
+Eso es todo.
+
+90
+00:05:11,170 --> 00:05:13,330
+Funcionará perfectamente.
+
+91
+00:05:13,890 --> 00:05:15,090
+Bobinamos la Tesla.
+
+92
+00:05:15,310 --> 00:05:15,890
+Perfecto.
+
+93
+00:05:17,210 --> 00:05:19,490
+Por cierto, sobre el inductor.
+
+94
+00:05:19,730 --> 00:05:22,510
+El inductor debe mantenerse más lejos de la bobina.
+
+95
+00:05:22,510 --> 00:05:25,030
+En ningún caso encima, no se puede bobinar por encima.
+
+96
+00:05:25,210 --> 00:05:27,470
+Para que no haya acoplamientos capacitivos.
+
+97
+00:05:28,070 --> 00:05:32,630
+Así que la Tesla es controlada por los pulsos existentes.
+
+98
+00:05:33,050 --> 00:05:37,770
+Directamente desde el campo magnético que surge del inductor.
+
+99
+00:05:38,310 --> 00:05:41,790
+En eso, como dijo el mismo Nikola Tesla.
+
+100
+00:05:42,050 --> 00:05:43,630
+Que más lejos.
+
+101
+00:05:44,290 --> 00:05:46,750
+Una bobina no debe afectar a la otra.
+
+102
+00:05:47,210 --> 00:05:49,850
+Usé estos palitos aquí.
+
+103
+00:05:50,410 --> 00:05:51,730
+Son tapones.
+
+104
+00:05:53,050 --> 00:05:58,270
+Esta cosa se vende en tiendas de construcción.
+
+105
+00:05:58,410 --> 00:05:59,050
+Tenemos muchos.
+
+106
+00:05:59,330 --> 00:06:02,830
+Compré un montón para estos fines.
+
+107
+00:06:03,130 --> 00:06:04,210
+Para usarlos.
+
+108
+00:06:04,390 --> 00:06:05,970
+Así que es muy conveniente.
+
+109
+00:06:06,170 --> 00:06:06,650
+Por cierto.
+
+110
+00:06:08,350 --> 00:06:10,850
+Pronto verán lo que preparé aquí.
+
+111
+00:06:11,310 --> 00:06:13,470
+Salió algo muy interesante.
+
+112
+00:06:13,790 --> 00:06:14,690
+Lo digo una vez más.
+
+113
+00:06:15,030 --> 00:06:17,670
+Lo ensamblé, estuve luchando con esta placa.
+
+114
+00:06:18,050 --> 00:06:18,550
+Lo hice.
+
+115
+00:06:19,270 --> 00:06:20,430
+Pasé un día, lo hice.
+
+116
+00:06:21,310 --> 00:06:23,550
+Veremos cómo sigue todo esto.
+
+117
+00:06:23,650 --> 00:06:25,030
+Pronto estará el siguiente video.
+
+118
+00:06:25,230 --> 00:06:26,990
+Donde vamos a poner esto en marcha.
+
+119
+00:06:27,150 --> 00:06:27,310
+Hasta luego.
+
+120
+00:06:27,570 --> 00:06:27,870
+Eso es todo.
+
+121
+00:06:29,690 --> 00:06:30,210
+Hasta la próxima.
