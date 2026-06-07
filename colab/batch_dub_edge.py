@@ -867,7 +867,6 @@ def run_batch_multilang(
                             target_lang=primary.lower())
 
     selected = parse_range(range_expr, max((it.n for it in items), default=0))
-    single = sum(1 for it in items if it.status != "failed") == 1
 
     primary_voice = resolve_voice(primary, gender, voice)
     print(f"\nPrimary:   {primary}  (voice: {primary_voice})")
@@ -880,13 +879,8 @@ def run_batch_multilang(
     print(f"strict_tts={strict_tts}  |  youtube_dead_threshold={youtube_dead_threshold}")
 
     def pair_srt(item: VideoItem, lang: str):
-        # Single-video + primary-only run keeps the 'newest SRT wins'
-        # convenience. Anything multi-video or multi-language needs the
-        # numbered {N#}-{LANG}.srt convention to tell files apart.
-        if single and not secondaries:
-            p = newest_srt(srt_dir_path, lang)
-            if p is not None:
-                return p
+        # Strict naming: always pair by {N#}-{LANG}.srt, even with one video.
+        # Predictable, no surprise from picking up an unrelated SRT.
         p = srt_dir_path / f"{item.n}-{lang.upper()}.srt"
         return p if p.exists() else None
 
