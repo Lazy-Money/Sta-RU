@@ -1,0 +1,251 @@
+1
+00:00:02,320 --> 00:00:06,980
+Hola de nuevo a todos, y el hecho de que publiqué en el video.
+
+2
+00:00:07,260 --> 00:00:12,460
+Empiezan toda clase de comentarios sobre cómo no puedo explicar y cosas así.
+
+3
+00:00:14,060 --> 00:00:17,960
+No se molesten si no logro expresar algo bien.
+
+4
+00:00:18,780 --> 00:00:22,300
+Fue bastante difícil sostenerlo con una sola mano.
+
+5
+00:00:22,740 --> 00:00:30,400
+Hoy encontré un soporte y esbocé un par de esquemas cuyo principio puede ser relevante.
+
+6
+00:00:31,400 --> 00:00:33,020
+Un push-pull ordinario.
+
+7
+00:00:33,560 --> 00:00:35,020
+Lo dibujé como lo dibujé.
+
+8
+00:00:35,640 --> 00:00:37,100
+¿Qué pasa después?
+
+9
+00:00:37,320 --> 00:00:39,540
+Esta bobina está en resonancia.
+
+10
+00:00:40,760 --> 00:00:45,900
+Y a través de nuestra famosa granada se pasa la carga.
+
+11
+00:00:46,260 --> 00:00:55,100
+Es decir, el voltaje, la carga y los golpes vienen de la bobina TT.
+
+12
+00:00:55,620 --> 00:00:55,860
+Tesla.
+
+13
+00:00:55,860 --> 00:00:57,140
+Transformador Tesla.
+
+14
+00:00:58,880 --> 00:01:00,180
+¿Qué hay aquí?
+
+15
+00:01:00,280 --> 00:01:01,280
+Aquí también hay una antena.
+
+16
+00:01:02,620 --> 00:01:15,980
+Pero noten que en rojo está indicado el inductor, que está devanado sobre esta bobina.
+
+17
+00:01:15,980 --> 00:01:23,980
+Está devanado, si toman esta granada, justo aquí.
+
+18
+00:01:24,980 --> 00:01:30,020
+Devanado en la otra dirección, no como estas capas de aquí, sino en la dirección contraria.
+
+19
+00:01:30,880 --> 00:01:35,160
+Y aquí habrá una mitad, es decir 37,5 dividido entre 2.
+
+20
+00:01:35,540 --> 00:01:38,740
+Respetar estas proporciones es obligatorio.
+
+21
+00:01:39,560 --> 00:01:42,340
+Aquí sale aproximadamente semejante artefacto.
+
+22
+00:01:43,520 --> 00:01:48,020
+Y esto, por cierto, puede funcionar todo, más precisamente debería funcionar, básicamente.
+
+23
+00:01:48,520 --> 00:02:01,520
+Pero de nuevo quiero decir que aquí los pulsos, más precisamente aquí el funcionamiento de este generador debe operar sincrónicamente junto con este generador, es decir con estos pulsos.
+
+24
+00:02:01,520 --> 00:02:10,880
+En otras palabras, desde esta bobina hacia esta antena deben enviarse pulsos cortos.
+
+25
+00:02:12,220 --> 00:02:15,160
+Exactamente pulsos, nada más.
+
+26
+00:02:15,900 --> 00:02:18,060
+Deben tener un solo período.
+
+27
+00:02:18,060 --> 00:02:20,560
+Es decir, saltó, desapareció.
+
+28
+00:02:21,440 --> 00:02:22,480
+Saltó, desapareció.
+
+29
+00:02:23,100 --> 00:02:24,280
+Esto es obligatorio.
+
+30
+00:02:25,760 --> 00:02:32,220
+Y además, como ya les dije en uno de los videos, sobre esta bobina.
+
+31
+00:02:34,100 --> 00:02:46,400
+Volviendo al hecho de que si toman un cable, punto A y punto B, y conectan una bombilla a ello.
+
+32
+00:02:47,320 --> 00:02:47,980
+Ya lo dije.
+
+33
+00:02:49,160 --> 00:02:55,140
+Es decir el cable, si lo golpean con pulsos así nomás, no pasará nada.
+
+34
+00:02:55,140 --> 00:03:12,540
+Pero si lo golpean a su frecuencia específica, donde aquí aparece una onda, ese será exactamente el punto donde aparece la energía libre, donde esta bombilla se enciende.
+
+35
+00:03:12,540 --> 00:03:15,140
+Aquí es la misma historia.
+
+36
+00:03:15,940 --> 00:03:18,460
+Hay que conocer la frecuencia de esta bobina.
+
+37
+00:03:19,320 --> 00:03:30,900
+A qué frecuencia la duración del pulso coincidirá con esta bobina, donde empezará a resonar y, en consecuencia, sumará, hará una ganancia.
+
+38
+00:03:31,660 --> 00:03:34,480
+Este condensador, también estará, claro.
+
+39
+00:03:34,580 --> 00:03:37,780
+Con él esto repele bastante.
+
+40
+00:03:38,360 --> 00:03:44,140
+La HF no pasará más allá, porque este transformador ya dará un voltaje de baja frecuencia.
+
+41
+00:03:44,340 --> 00:03:46,680
+No pasará más allá, con él no habrá.
+
+42
+00:03:47,300 --> 00:03:55,400
+Pero, de nuevo, aquí la frecuencia debe ser múltiplo de la frecuencia de este transformador y su operación.
+
+43
+00:03:56,820 --> 00:03:58,320
+Hay una opción más.
+
+44
+00:03:58,500 --> 00:03:59,280
+Este tipo de opción.
+
+45
+00:03:59,860 --> 00:04:09,200
+Arrancar todo el sistema, devanar un bifilar ordinario y pasarlo y hacer lo mismo abajo.
+
+46
+00:04:11,180 --> 00:04:14,740
+La tierra debe obligatoriamente estar desvinculada del sistema completo.
+
+47
+00:04:15,220 --> 00:04:20,900
+No debe conectarse ni con el TT, como en un caso, ni en el otro.
+
+48
+00:04:20,900 --> 00:04:24,040
+Y, por cierto, en este caso aquí se usa un interruptor de chispa.
+
+49
+00:04:24,260 --> 00:04:24,560
+Aquí está.
+
+50
+00:04:25,620 --> 00:04:26,840
+Lo dibujé.
+
+51
+00:04:27,940 --> 00:04:29,940
+Un esquema muy similar al de Kapanadze.
+
+52
+00:04:30,740 --> 00:04:32,760
+Aquí está, 50 Hz.
+
+53
+00:04:33,220 --> 00:04:34,960
+Sobre esto les contaré un poco más adelante.
+
+54
+00:04:35,760 --> 00:04:38,700
+Y por ahora solo tienen que ser un poco pacientes.
+
+55
+00:04:39,460 --> 00:04:44,920
+Voy a lanzar uno de estos esquemas para contarles ya cómo terminó todo esto.
+
+56
+00:04:45,460 --> 00:04:49,120
+Por ahora sean un poco pacientes y no escuchen a los imbéciles.
+
+57
+00:04:49,120 --> 00:04:53,540
+A todos los demás trolls les quiero decir, me importa un bledo sus comentarios.
+
+58
+00:04:54,020 --> 00:04:54,780
+Hagan lo que quieran.
+
+59
+00:04:54,960 --> 00:05:04,140
+Le daré a la gente la opción más sencilla, donde puedan obtener al menos algún efecto, por el que lucharon años y gastaron dinero y tiempo.
+
+60
+00:05:04,740 --> 00:05:10,360
+Yo también gasto tiempo, aunque no tengo tiempo para explicar todo tipo de tonterías.
+
+61
+00:05:10,520 --> 00:05:14,380
+Pero en este caso hay que trabajar un poco.
+
+62
+00:05:14,380 --> 00:05:15,260
+Eso es todo.
+
+63
+00:05:15,780 --> 00:05:19,200
+Cuídense todos y dejen de decir tonterías.
