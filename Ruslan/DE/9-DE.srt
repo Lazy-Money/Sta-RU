@@ -1,0 +1,1411 @@
+1
+00:00:01,780 --> 00:00:03,520
+Einen schönen Tag euch allen.
+
+2
+00:00:04,040 --> 00:00:05,720
+Ich wollte euch die Oszillogramme zeigen.
+
+3
+00:00:05,880 --> 00:00:07,840
+So funktioniert dieses System.
+
+4
+00:00:08,080 --> 00:00:10,280
+Hier ist gerade nichts in Resonanz.
+
+5
+00:00:10,420 --> 00:00:12,840
+Wundert euch nicht — hier springt alles und ist falsch eingestellt.
+
+6
+00:00:13,380 --> 00:00:14,840
+Aber ungefähr so.
+
+7
+00:00:14,940 --> 00:00:15,700
+Hier kommen die Impulse.
+
+8
+00:00:16,600 --> 00:00:18,540
+Hier kommt der Stromanteil.
+
+9
+00:00:18,660 --> 00:00:20,440
+Hier beginnt er anzusteigen.
+
+10
+00:00:21,400 --> 00:00:23,840
+Also, man hat mich nach dem TL-Chip gefragt.
+
+11
+00:00:23,960 --> 00:00:25,060
+Da ist er, der TL sitzt dort.
+
+12
+00:00:25,280 --> 00:00:25,520
+Da ist er.
+
+13
+00:00:26,740 --> 00:00:29,180
+Hier sind die Kondensatoren.
+
+14
+00:00:30,380 --> 00:00:31,700
+Hier ist der TL.
+
+15
+00:00:31,980 --> 00:00:33,300
+Ich zeige mit dem Finger drauf.
+
+16
+00:00:33,980 --> 00:00:36,640
+Der TL liefert 1,5, 4.
+
+17
+00:00:36,940 --> 00:00:38,160
+Da ist die Frequenz.
+
+18
+00:00:38,760 --> 00:00:39,720
+Ich decke es jetzt ab.
+
+19
+00:00:39,940 --> 00:00:41,000
+Ich glaube, es ist sichtbar.
+
+20
+00:00:41,600 --> 00:00:44,060
+Das ist gerade Teslas Frequenz.
+
+21
+00:00:44,120 --> 00:00:44,880
+Es ist nicht eingestellt.
+
+22
+00:00:44,960 --> 00:00:52,040
+Ich stelle es gerade speziell mit einem Kunststoff-Schraubendreher ein, den ich gekauft habe.
+
+23
+00:00:52,360 --> 00:00:57,560
+Denn wenn man einen normalen Schraubendreher reinsteckt, nimmt er Störungen auf und stimmt nichts ein.
+
+24
+00:00:57,560 --> 00:01:01,080
+Also sitze ich hier, sweep die Frequenz und überprüfe alles.
+
+25
+00:01:02,840 --> 00:01:06,620
+Ich kann die Frequenz ändern — ich greife es einfach und drehe es.
+
+26
+00:01:07,020 --> 00:01:10,640
+Ich kann jede Frequenz am Tesla einstellen.
+
+27
+00:01:12,240 --> 00:01:13,260
+Ich kann runtergehen.
+
+28
+00:01:13,580 --> 00:01:14,100
+1,3.
+
+29
+00:01:14,280 --> 00:01:16,220
+Ich kann 1,5, 1,6 machen.
+
+30
+00:01:17,060 --> 00:01:18,560
+Bitte — 1,7.
+
+31
+00:01:19,500 --> 00:01:20,400
+Na, 1,8.
+
+32
+00:01:20,760 --> 00:01:22,100
+Da ist mein TL am Laufen.
+
+33
+00:01:22,580 --> 00:01:28,120
+Fast bis 1,9, bis 2 MHz kann ich diesen TL problemlos pushen.
+
+34
+00:01:29,320 --> 00:01:31,520
+Es hängt also von der Marke ab, die ihr gekauft habt.
+
+35
+00:01:32,540 --> 00:01:34,820
+Ich habe nachgeschaut, es macht wirklich
+
+36
+00:01:38,400 --> 00:01:39,080
+sehr viel aus…
+
+37
+00:01:40,860 --> 00:01:42,560
+Okay, das stelle ich später ein.
+
+38
+00:01:43,340 --> 00:01:43,960
+Ist nichts.
+
+39
+00:01:44,740 --> 00:01:54,420
+Ich meine, wenn ihr einen TL genommen habt, auf dem ON steht, die gehen nicht über 1,3 MHz.
+
+40
+00:01:54,420 --> 00:01:56,120
+Es ist ein einfacher TL.
+
+41
+00:01:57,800 --> 00:02:02,240
+494UVX 00, also kurz, 3004 steht drauf.
+
+42
+00:02:03,240 --> 00:02:04,900
+Na, den könnt ihr nehmen.
+
+43
+00:02:04,980 --> 00:02:10,060
+Dieser hat bei mir bei Frequenzen über 1,6 hervorragend funktioniert.
+
+44
+00:02:10,480 --> 00:02:17,580
+Aber die CN-Teile, die ich hatte, die mit dieser Aufschrift, funktionieren nicht über 1,3 MHz.
+
+45
+00:02:17,700 --> 00:02:18,660
+Die gehen nicht höher.
+
+46
+00:02:19,000 --> 00:02:19,860
+Das ist der Deal.
+
+47
+00:02:20,160 --> 00:02:27,960
+Und übrigens habe ich hier speziell Sockel zum Wechseln gemacht, sonst gibt es nur Ärger.
+
+48
+00:02:28,360 --> 00:02:31,860
+Es hängt auch von den Chips ab, welche ihr kauft und was.
+
+49
+00:02:32,400 --> 00:02:33,340
+Als nächstes, der Treiber.
+
+50
+00:02:34,460 --> 00:02:40,940
+Hier verwende ich einen TC4451-Treiber, da er als 13-Ampere eingestuft ist.
+
+51
+00:02:41,320 --> 00:02:48,780
+Na, vielleicht ist dieser spezifische nicht 13 Ampere, aber sein Impuls ist zumindest schon sauberer.
+
+52
+00:02:49,240 --> 00:02:54,320
+Und er bricht die Flanken nicht, wenn er auf das Gate des Transistors trifft.
+
+53
+00:02:54,660 --> 00:03:00,040
+Das Transistorgate muss immer mit einer kleineren MOSFET-Kapazität gewählt werden.
+
+54
+00:03:00,180 --> 00:03:06,700
+Genau hier ist ein Transistor, damit alle verstehen — K1162.
+
+55
+00:03:07,500 --> 00:03:12,820
+Also funktioniert dieser Transistor hier viel besser, in diesem System.
+
+56
+00:03:13,520 --> 00:03:15,340
+Und er macht sich nicht mal Mühe.
+
+57
+00:03:16,780 --> 00:03:18,140
+Was wollte ich noch sagen?
+
+58
+00:03:18,140 --> 00:03:19,280
+Was mache ich also hier?
+
+59
+00:03:19,420 --> 00:03:19,980
+Einstellen.
+
+60
+00:03:20,540 --> 00:03:23,860
+Na, mit der Kamera wird es mir schwer fallen einzustellen und etwas zu zeigen.
+
+61
+00:03:24,620 --> 00:03:25,960
+Ich zeige es lieber in Betrieb.
+
+62
+00:03:26,340 --> 00:03:29,420
+Also habe ich es etwas stärker angetrieben als gewollt.
+
+63
+00:03:30,400 --> 00:03:32,380
+Ich habe die Dioden durch neue ersetzt.
+
+64
+00:03:32,680 --> 00:03:39,340
+Ich gehe jetzt nicht in die Box, weil ich die Resonanz dort ziemlich hässlich gelötet habe.
+
+65
+00:03:40,260 --> 00:03:43,320
+Und es liegt da und hängt hier und da rum.
+
+66
+00:03:44,200 --> 00:03:47,520
+Na, das ist gerade nicht so wichtig.
+
+67
+00:03:47,880 --> 00:03:52,180
+Ich habe die Frequenz gerade auf 14 kHz gesenkt.
+
+68
+00:03:52,360 --> 00:03:55,920
+Und man fragt mich, ob dieses System bei 50 kHz betrieben werden kann.
+
+69
+00:03:56,540 --> 00:03:57,580
+Genauer gesagt, 50 Hz.
+
+70
+00:03:57,780 --> 00:03:59,820
+Es kann, aber nicht genau dieses.
+
+71
+00:03:59,880 --> 00:04:03,040
+Leider sind alle Generatoren in diesem System bereits Hochfrequenz.
+
+72
+00:04:03,160 --> 00:04:06,400
+Man kann nicht unter 9 kHz gehen.
+
+73
+00:04:06,740 --> 00:04:14,180
+Und trotzdem ist sogar dieser Ferrit gerade warm, weil seine Frequenz…
+
+74
+00:04:14,180 --> 00:04:16,380
+Er ist in Sättigung, seine Frequenz ist zu niedrig.
+
+75
+00:04:16,500 --> 00:04:21,800
+14 kHz ist nicht, sagen wir, 30 oder 25.
+
+76
+00:04:22,020 --> 00:04:29,220
+Sein Start und Schwellenwert des Betriebs, für diese Ferrite, liegt bei etwa 25-20 kHz.
+
+77
+00:04:29,340 --> 00:04:30,560
+Dort fühlen sie sich noch gut.
+
+78
+00:04:30,640 --> 00:04:36,300
+Sobald man etwas runtergeht, fangen sie an sich zu erhitzen und, kurz gesagt, das System beginnt überschüssigen Strom zu ziehen.
+
+79
+00:04:36,440 --> 00:04:39,400
+Das ist absolut unnötig.
+
+80
+00:04:40,100 --> 00:04:42,660
+Also, man hat mich nach dem Push-Pull-Generator gefragt.
+
+81
+00:04:42,860 --> 00:04:45,040
+Na, mein Gott, das Internet ist voll von Push-Pull-Generatoren.
+
+82
+00:04:45,140 --> 00:04:45,920
+Baut einfach irgendeinen.
+
+83
+00:04:46,920 --> 00:04:46,940
+Ja.
+
+84
+00:04:47,020 --> 00:04:52,740
+Na, hier hat Oleg das gebaut — ja, der Generator selbst.
+
+85
+00:04:54,000 --> 00:04:57,620
+Ich habe ihn ein bisschen angepasst, es anders gemacht, aber das ist nicht wichtig.
+
+86
+00:04:57,860 --> 00:04:59,780
+Ich meine, das Wesen selbst ist einfach.
+
+87
+00:04:59,820 --> 00:05:01,380
+Es ist keine Magie, es ist gewöhnlich.
+
+88
+00:05:02,160 --> 00:05:03,040
+Nichts Besonderes.
+
+89
+00:05:03,220 --> 00:05:04,840
+Na, diesen habe ich selbst gebaut, ja.
+
+90
+00:05:05,160 --> 00:05:06,760
+Ich meine, die Platine wurde geätzt.
+
+91
+00:05:08,000 --> 00:05:10,960
+Ich habe das alles gelötet, und dasselbe gelötet.
+
+92
+00:05:11,060 --> 00:05:13,800
+Na, es ist nicht wirklich wichtig, wer es gelötet hat.
+
+93
+00:05:14,040 --> 00:05:14,960
+Wer den Effekt erzielt hat.
+
+94
+00:05:15,020 --> 00:05:20,600
+Wahrscheinlich ist derjenige, der weiß, wie man das einstellt, wahrscheinlich wichtiger als der Generator zu löten.
+
+95
+00:05:20,720 --> 00:05:21,960
+Ich meine, es gibt Helfer, ja.
+
+96
+00:05:22,040 --> 00:05:25,380
+Zum Beispiel hat mir Oleg aus Saransk das geschickt.
+
+97
+00:05:26,280 --> 00:05:28,180
+Ich meine, herzlichen Dank an ihn, Kumpel.
+
+98
+00:05:28,740 --> 00:05:29,920
+Generator dieses Typs.
+
+99
+00:05:30,620 --> 00:05:31,400
+Schaut euch das auch an.
+
+100
+00:05:31,560 --> 00:05:33,120
+Vollbild, ja.
+
+101
+00:05:33,200 --> 00:05:34,800
+Ich meine, qualitativ gebaut.
+
+102
+00:05:35,500 --> 00:05:37,280
+Da ist auch ein TL-Chip drin, ja.
+
+103
+00:05:37,360 --> 00:05:39,420
+Ich meine, seht ihr, ihr könnt das Ding rausziehen.
+
+104
+00:05:39,960 --> 00:05:41,920
+Etwas anderes rein — hat er gesagt.
+
+105
+00:05:42,640 --> 00:05:42,820
+Richtig.
+
+106
+00:05:42,920 --> 00:05:47,160
+Das System ist auf einem IR2113 aufgebaut.
+
+107
+00:05:47,640 --> 00:05:49,380
+Also gibt es anscheinend Ausgänge.
+
+108
+00:05:49,520 --> 00:05:51,080
+Hier ist der Stabilisierungschip.
+
+109
+00:05:51,900 --> 00:05:57,220
+Und, na, die Sache selbst — was wir hier haben, ist ein kleiner Ferrit.
+
+110
+00:05:57,380 --> 00:06:01,920
+Es ist anscheinend nur eine Art Schutz-Drossel.
+
+111
+00:06:02,360 --> 00:06:02,480
+Ja.
+
+112
+00:06:02,580 --> 00:06:04,380
+Ich meine, die Tastgrade sind hier alle einstellbar.
+
+113
+00:06:04,500 --> 00:06:04,660
+Alles.
+
+114
+00:06:05,220 --> 00:06:06,860
+Ich meine, wunderschön.
+
+115
+00:06:07,260 --> 00:06:08,640
+Auch schön gemacht, und alles.
+
+116
+00:06:08,760 --> 00:06:10,100
+Es gibt hier viele verschiedene Platinen.
+
+117
+00:06:10,240 --> 00:06:10,680
+Es gibt alles.
+
+118
+00:06:10,780 --> 00:06:11,400
+Danke, ja.
+
+119
+00:06:11,540 --> 00:06:12,000
+Ich meine, es gibt.
+
+120
+00:06:12,380 --> 00:06:15,900
+Ja, und im Grunde ist es nicht der Generator, ja.
+
+121
+00:06:16,200 --> 00:06:21,040
+Danke an die Jungs, die einfach geholfen haben, es sozusagen alles auf eine Platine zu bringen.
+
+122
+00:06:21,160 --> 00:06:23,400
+Da ich selbst nicht viel Platinenätzen mache.
+
+123
+00:06:24,080 --> 00:06:26,520
+Aber ich habe schon gelernt etwas zu machen.
+
+124
+00:06:27,080 --> 00:06:27,300
+Richtig.
+
+125
+00:06:27,380 --> 00:06:32,080
+Ich habe mich einfach nicht speziell mit Platinenätzen befasst.
+
+126
+00:06:32,160 --> 00:06:35,960
+Weil, na, na, es keinen Bedarf dafür gab.
+
+127
+00:06:36,240 --> 00:06:36,280
+Ja.
+
+128
+00:06:36,400 --> 00:06:40,460
+Ich meine, wenn ich etwas gebaut habe, habe ich es einfach gebaut, na, die Sache.
+
+129
+00:06:42,160 --> 00:06:45,960
+Sachen repariert, Dinge fertig montiert, wenn es dort kleine Details gab.
+
+130
+00:06:46,140 --> 00:06:49,240
+Ich meine, ich hätte nie gedacht, dass ich das auch machen würde.
+
+131
+00:06:49,820 --> 00:06:50,160
+Richtig.
+
+132
+00:06:50,220 --> 00:06:55,180
+Und ich habe mein Zimmer speziell für freie Energie in ein Labor verwandelt.
+
+133
+00:06:55,300 --> 00:06:57,640
+Für das, was ihr hier seht, ja.
+
+134
+00:06:58,620 --> 00:07:08,060
+Ich meine, ich speziell — gerade jetzt wahrscheinlich meistens — wickle Spulen und experimentiere mit all dem.
+
+135
+00:07:09,020 --> 00:07:12,540
+Also, was wollte ich noch hinzufügen.
+
+136
+00:07:12,720 --> 00:07:18,600
+Also, man schreibt auch, ob man die Anlage dort oder dort oder dort aufstellen kann.
+
+137
+00:07:19,320 --> 00:07:20,140
+Ja, sogar auf dem Mond.
+
+138
+00:07:20,760 --> 00:07:22,240
+Es wird gute Erdung geben.
+
+139
+00:07:22,580 --> 00:07:25,400
+Und was die Erdung betrifft, sage ich es nochmal — das ist die Erdung.
+
+140
+00:07:26,000 --> 00:07:26,860
+Alles wird gut sein.
+
+141
+00:07:27,440 --> 00:07:30,920
+Es startet überall, jederzeit.
+
+142
+00:07:31,160 --> 00:07:33,520
+Ich meine, es hängt von der Erdung ab.
+
+143
+00:07:33,760 --> 00:07:35,560
+Gute Erdung, und es funktioniert.
+
+144
+00:07:35,860 --> 00:07:38,840
+Keine gute Erdung, dann funktioniert es nicht.
+
+145
+00:07:39,400 --> 00:07:41,620
+Es gibt nichts Besonderes an diesem System.
+
+146
+00:07:41,840 --> 00:07:43,840
+Es ist kinderleicht herzustellen.
+
+147
+00:07:44,380 --> 00:07:50,320
+Ihr müsst nur etwas Fantasie einschalten, euren Verstand, und etwas Cleverness nutzen.
+
+148
+00:07:50,800 --> 00:07:54,740
+Ich habe natürlich alle möglichen Theorien durchgesehen.
+
+149
+00:07:54,840 --> 00:07:55,580
+Ich habe mir alles angeschaut.
+
+150
+00:07:55,580 --> 00:08:00,940
+Na, ja, die Theorien änderten sich ständig, aber das bedeutet nicht, dass ich dort stehen geblieben bin.
+
+151
+00:08:01,540 --> 00:08:03,460
+Viele Menschen sind stehengeblieben und machen nichts.
+
+152
+00:08:04,080 --> 00:08:07,380
+Nochmal, dieses System ist ein Experimentiersystem.
+
+153
+00:08:07,500 --> 00:08:10,340
+Es kann nicht stabil funktionieren.
+
+154
+00:08:10,780 --> 00:08:24,260
+Es hat eine Menge Nuancen, die ihr leider einfach blödsinnig verstehen müsst, was passiert, und dann selbst daran arbeiten müsst, es zu stabilisieren.
+
+155
+00:08:27,560 --> 00:08:37,520
+Natürlich müsst ihr auf Spezialisten zurückgreifen, die digitale Chips verstehen, da dieses System eine andere Platine als diese erfordern wird.
+
+156
+00:08:37,580 --> 00:08:48,560
+Das ist nur eine Demo-Platine mit einer Menge dieser Spulen, Boxen in denen die Elektronik angeordnet ist.
+
+157
+00:08:48,680 --> 00:08:52,740
+Aber es gibt nicht genug Elektronik zur Stabilisierung, für dieses System.
+
+158
+00:08:53,860 --> 00:08:57,700
+Hier braucht man etwas mehr von allem, wie man so sagt.
+
+159
+00:08:57,820 --> 00:09:15,860
+Ich meine, wenn ihr die Schaltung und das System verkompliziert, dann wird natürlich alles hier anders und stabiler funktionieren, und an jedem Ort, wo ihr irgendeine Erde anschließt — ich meine, das System wird sich selbst einstellen, alles wird
+
+160
+00:09:15,860 --> 00:09:16,340
+funktionieren.
+
+161
+00:09:16,860 --> 00:09:18,560
+Na, im Rahmen des Vernünftigen, natürlich.
+
+162
+00:09:18,560 --> 00:09:22,380
+Ich meine, einige Parameter müssen definitiv eingehalten werden.
+
+163
+00:09:23,280 --> 00:09:23,540
+Richtig.
+
+164
+00:09:23,940 --> 00:09:25,320
+Was wollte ich noch sagen?
+
+165
+00:09:25,460 --> 00:09:38,280
+Na, über den Clip, den ich gedreht habe — es gab viele Fans von, sozusagen, Trollen, Suchen.
+
+166
+00:09:38,460 --> 00:09:40,040
+Dort lag Stroh rum.
+
+167
+00:09:40,400 --> 00:09:42,700
+Ich werde nicht über dieses Stroh sprechen.
+
+168
+00:09:42,800 --> 00:09:44,000
+Dort war nichts versteckt.
+
+169
+00:09:44,680 --> 00:09:50,440
+Und überhaupt, ich meine, wenn ihr logisch denkt, habe ich keine Schweißmaschinen umfunktioniert.
+
+170
+00:09:50,960 --> 00:09:51,280
+Keine einzige.
+
+171
+00:09:51,420 --> 00:09:53,300
+Ich habe nicht mal überhaupt einen Schweißer.
+
+172
+00:09:53,540 --> 00:10:03,620
+Ich meine, ich habe ihn nie benutzt und hatte immer Angst vor dem Schweißen, weil man mir als Kind beigebracht wurde, dass es die Augen ruiniert.
+
+173
+00:10:04,360 --> 00:10:09,340
+Und so habe ich mich irgendwie nie daran herangetastet, also bin ich ein mieser Schweißer.
+
+174
+00:10:09,940 --> 00:10:12,180
+Genauso wie als Kameramann, im Grunde.
+
+175
+00:10:12,320 --> 00:10:15,380
+Ich mache keine Videoaufnahmen und so weiter.
+
+176
+00:10:15,680 --> 00:10:17,320
+Ich meine, professionell.
+
+177
+00:10:17,320 --> 00:10:19,140
+Also, was rauskommt, kommt raus.
+
+178
+00:10:20,380 --> 00:10:22,260
+Und ich habe keine Schweißmaschine.
+
+179
+00:10:22,780 --> 00:10:25,280
+Nochmal, ich habe dieses Kabel gekauft.
+
+180
+00:10:25,800 --> 00:10:26,180
+Dieses.
+
+181
+00:10:26,720 --> 00:10:28,520
+Übrigens ist das da im Keller geblieben.
+
+182
+00:10:29,640 --> 00:10:30,880
+Ich habe es nicht mitgebracht.
+
+183
+00:10:31,060 --> 00:10:31,760
+Hier ist es — das Kabel.
+
+184
+00:10:32,380 --> 00:10:33,820
+Das ist das Kabel, das ich gekauft habe.
+
+185
+00:10:33,900 --> 00:10:34,960
+Hier, es steht drauf.
+
+186
+00:10:35,700 --> 00:10:44,940
+100 Volt, 25 mm², Elektrokabel, TUREK 04201, was haben wir noch hier…
+
+187
+00:10:44,940 --> 00:10:46,840
+Na, da ist seine Kennzeichnung.
+
+188
+00:10:47,860 --> 00:10:49,840
+Ich meine, es ist massiv.
+
+189
+00:10:50,320 --> 00:10:52,720
+Da sind keine kleinen Litzen, die ihr euch eingebildet habt.
+
+190
+00:10:53,260 --> 00:10:54,320
+Dann noch etwas.
+
+191
+00:10:54,380 --> 00:11:00,160
+Ich bin speziell in den Wald gegangen, in einen dichten, wo es auf 5 Kilometern keinen einzigen Mast oder sonst etwas gibt.
+
+192
+00:11:00,980 --> 00:11:03,580
+Hinter dem Wald ist ein Sumpf, überwachsene Torffelder.
+
+193
+00:11:04,300 --> 00:11:06,540
+Ich meine, nichts Gutes dort.
+
+194
+00:11:07,020 --> 00:11:10,600
+Ja, ich meine, dort wurde nie Strom verlegt und es gibt keinen.
+
+195
+00:11:10,600 --> 00:11:20,220
+Der Ort, an dem ich stand, war der alte Damm einer Schmalspurbahn, die früher zum Torfabtransport betrieben wurde.
+
+196
+00:11:20,760 --> 00:11:21,580
+Sehr einfach.
+
+197
+00:11:22,780 --> 00:11:27,400
+Ich meine, wenn ihr interessiert seid, kann ich euch die Koordinaten bei Google geben.
+
+198
+00:11:27,760 --> 00:11:30,060
+Ihr werdet alles mit eigenen Augen sehen.
+
+199
+00:11:30,300 --> 00:11:31,840
+Es gab dort nichts dergleichen.
+
+200
+00:11:31,960 --> 00:11:36,100
+Diese Felder wurden wahrscheinlich einfach irgendeinem Hof gegeben.
+
+201
+00:11:36,200 --> 00:11:38,660
+Die sammeln dort jetzt irgendwie Heu.
+
+202
+00:11:38,660 --> 00:11:45,200
+Ich weiß nicht, alles dort ist gemäht, abgeholzt und es liegt überall nur Gras rum.
+
+203
+00:11:45,700 --> 00:11:47,040
+Also ist es nicht nötig, sich etwas auszudenken.
+
+204
+00:11:47,100 --> 00:11:48,080
+Und ich musste auch nicht.
+
+205
+00:11:48,160 --> 00:11:52,080
+Ich bin einfach dorthin gegangen, habe einen Videoclip gedreht.
+
+206
+00:11:52,380 --> 00:11:54,640
+Zweimal hat es nicht geklappt, weil es geregnet hat.
+
+207
+00:11:55,100 --> 00:11:58,480
+Ich musste schnell die ganze Anlage in den Kofferraum des Autos werfen.
+
+208
+00:11:59,300 --> 00:11:59,580
+Richtig.
+
+209
+00:11:59,740 --> 00:12:02,040
+Und über die Batterien.
+
+210
+00:12:02,460 --> 00:12:05,260
+Das sind meine maximalen Batterien, die ich habe.
+
+211
+00:12:05,780 --> 00:12:06,440
+Da sind sie, dort.
+
+212
+00:12:06,440 --> 00:12:07,260
+Schaut, ja.
+
+213
+00:12:07,400 --> 00:12:08,740
+Ich meine, sie selbst, sechs davon am Fenster.
+
+214
+00:12:09,600 --> 00:12:10,880
+Nicht mehr, nicht weniger.
+
+215
+00:12:11,100 --> 00:12:16,700
+Sechs davon würden diese Anlage nicht mit 198 Volt versorgen, 100%.
+
+216
+00:12:16,700 --> 00:12:20,700
+Und mit diesen Glühbirnen wären diese Batterien praktisch sofort gestorben.
+
+217
+00:12:21,480 --> 00:12:22,460
+Das ist der zweite Punkt.
+
+218
+00:12:22,700 --> 00:12:25,000
+Dritter Punkt, den ich sagen wollte.
+
+219
+00:12:25,780 --> 00:12:28,740
+Also, die Hälfte davon ist schon tot, kaum am Leben.
+
+220
+00:12:29,220 --> 00:12:32,540
+Hier, na, hier ist noch eine, auf die ein Lötkolben gefallen ist.
+
+221
+00:12:33,000 --> 00:12:35,700
+Mein Kleiner hat hier Unsinn angestellt.
+
+222
+00:12:36,060 --> 00:12:36,120
+Richtig.
+
+223
+00:12:36,300 --> 00:12:36,780
+Na, das ist es.
+
+224
+00:12:36,940 --> 00:12:39,340
+Ich meine, es ist einfach so rausgekommen.
+
+225
+00:12:40,080 --> 00:12:40,240
+Das ist es.
+
+226
+00:12:40,420 --> 00:12:41,720
+Ich habe keine Batterien mehr.
+
+227
+00:12:41,900 --> 00:12:41,900
+Ja.
+
+228
+00:12:42,000 --> 00:12:47,700
+Ich meine, ihr versteht selbst, von sieben Ampere dieser Batterien gibt es überhaupt keinen Sinn.
+
+229
+00:12:48,100 --> 00:12:48,540
+Absolut.
+
+230
+00:12:48,640 --> 00:12:49,960
+Ich habe nur eine mitgenommen.
+
+231
+00:12:51,380 --> 00:12:51,720
+Richtig.
+
+232
+00:12:51,820 --> 00:12:52,240
+Was noch?
+
+233
+00:12:52,860 --> 00:12:54,720
+Ich will mich eigentlich gar nicht rechtfertigen.
+
+234
+00:12:56,380 --> 00:12:58,040
+Alles funktioniert bei mir, es klappt.
+
+235
+00:12:58,240 --> 00:13:00,740
+Ich weiß einfach, was der Deal ist und was getan werden muss.
+
+236
+00:13:01,220 --> 00:13:01,320
+Ja.
+
+237
+00:13:01,400 --> 00:13:08,780
+Ich meine, ihr — neulich habe ich noch einen Punkt über Frequenzverhältnisse gelesen.
+
+238
+00:13:08,960 --> 00:13:13,320
+Es hat mich sehr überrascht, dass es anscheinend andere Verhältnisse gibt.
+
+239
+00:13:13,520 --> 00:13:18,000
+Ich habe versucht mit diesen Verhältnissen zu arbeiten, und das System hat nicht funktioniert.
+
+240
+00:13:18,740 --> 00:13:24,020
+Dementsprechend habe ich den Verdacht, dass der Typ alle einfach in die Irre führt.
+
+241
+00:13:25,120 --> 00:13:25,400
+Richtig.
+
+242
+00:13:25,560 --> 00:13:27,180
+Na, nochmal.
+
+243
+00:13:27,300 --> 00:13:44,100
+Wenn ihr einfach blödsinnig so einen Generator rein für das Experiment und zum Verstehen des Wesens seines Betriebs bauen wollt — das kann man machen. Speziell hier, ich meine kein Akula-artiges System.
+
+244
+00:13:44,460 --> 00:13:44,720
+Nein.
+
+245
+00:13:45,900 --> 00:13:46,260
+Na, ja.
+
+246
+00:13:46,420 --> 00:13:56,220
+Akula hat alles auf einem Rohr gewickelt — Tesla, und die Pickup-Spule, und im Grunde diesen Induktionsreaktor selbst.
+
+247
+00:13:56,480 --> 00:13:56,540
+Ja.
+
+248
+00:13:56,680 --> 00:13:59,780
+Was im Grunde dort ist, wo all diese Reaktionen stattfinden.
+
+249
+00:14:02,020 --> 00:14:02,660
+Richtig.
+
+250
+00:14:02,720 --> 00:14:06,360
+Ich meine, was machen wir hier genau?
+
+251
+00:14:06,480 --> 00:14:08,140
+Wir treiben einen LC-Kreis hoch.
+
+252
+00:14:08,700 --> 00:14:09,120
+Das ist es.
+
+253
+00:14:09,280 --> 00:14:10,420
+Wir treiben den Strom darin hoch.
+
+254
+00:14:10,560 --> 00:14:14,600
+Eine Bifilar-Spule — da sie keine kleine Induktivität hat.
+
+255
+00:14:14,760 --> 00:14:17,260
+Sie beeinflusst die Induktivität des LC-Kreises nicht.
+
+256
+00:14:17,380 --> 00:14:20,880
+Dementsprechend beeinflussen wir beim Hochtreiben des Stroms die Resonanz nicht.
+
+257
+00:14:21,620 --> 00:14:21,880
+Richtig.
+
+258
+00:14:22,200 --> 00:14:27,920
+Und gleichzeitig zapfen wir diesen Strom in die Last ab.
+
+259
+00:14:28,420 --> 00:14:28,580
+Richtig.
+
+260
+00:14:28,960 --> 00:14:32,540
+Unter Arbeitsbetrieb sieht dieses System so aus.
+
+261
+00:14:32,720 --> 00:14:34,560
+Ich meine, die Glühbirnen leuchten kaum mit halber Helligkeit.
+
+262
+00:14:34,960 --> 00:14:38,920
+Sobald wir alles einstellen, leuchtet alles hell auf und brennt.
+
+263
+00:14:39,500 --> 00:14:44,640
+Trotz der Tatsache, dass ihr welche Glühbirne auch immer einschraubt, der Strom wird immer da sein.
+
+264
+00:14:45,480 --> 00:14:49,660
+Also im LC-Kreis gelang es mir, den Strom auf 100 A hochzutreiben.
+
+265
+00:14:50,560 --> 00:14:50,780
+Ja.
+
+266
+00:14:50,900 --> 00:14:53,480
+Ich meine, so ein verrückter Strom, ihr würdet es nicht glauben.
+
+267
+00:14:53,720 --> 00:15:00,860
+Aber dieser 100-A-Strom ist alles schön und gut, nur wie zapft man ihn ab?
+
+268
+00:15:01,020 --> 00:15:03,640
+Ihr werdet nicht alle 100 A abzapfen können.
+
+269
+00:15:04,040 --> 00:15:05,600
+Ihr könnt einen Teil abzapfen.
+
+270
+00:15:06,160 --> 00:15:09,260
+Ich meine, am Ausgang, max habe ich 16-20 A abgezapft.
+
+271
+00:15:09,880 --> 00:15:11,460
+Aber die Spannung war niedrig.
+
+272
+00:15:12,240 --> 00:15:13,780
+Daran musste ich auch arbeiten.
+
+273
+00:15:14,080 --> 00:15:14,540
+Na, das ist es.
+
+274
+00:15:14,680 --> 00:15:16,620
+Ich meine, ich habe an beidem gearbeitet.
+
+275
+00:15:16,680 --> 00:15:25,200
+Am Ende kam mein Verhältnis auf ungefähr 16, 10 bis 16 A raus, Spannung dort 190 V, zum Beispiel.
+
+276
+00:15:25,460 --> 00:15:25,460
+Ja.
+
+277
+00:15:26,160 --> 00:15:36,900
+Dann habe ich den Tesla dort weiter eingestellt, herumgespielt, ausprobiert — gerade habe ich die Idee, diese Sammelschiene zu entfernen und 10 mm² direkt angelötet hier reinzulegen.
+
+278
+00:15:37,160 --> 00:15:39,940
+Das wäre richtiger, damit diese Sammelschiene die Dinge nicht dämpft.
+
+279
+00:15:40,000 --> 00:15:41,580
+Sie hat schon Verluste daran.
+
+280
+00:15:42,140 --> 00:15:43,700
+Ich meine, die Erdung ist schlecht.
+
+281
+00:15:43,900 --> 00:15:45,360
+Übrigens stört dieses Ding hier.
+
+282
+00:15:45,620 --> 00:15:47,220
+Das muss entfernt werden.
+
+283
+00:15:47,240 --> 00:15:47,620
+Richtig.
+
+284
+00:15:47,620 --> 00:15:49,160
+Was habe ich bekommen?
+
+285
+00:15:49,340 --> 00:15:56,400
+Als ich diese Sammelschiene anstelle eines Drahtstücks hier angelötet habe, gelang es mir, die Spannung weiter hochzutreiben.
+
+286
+00:15:57,080 --> 00:16:01,220
+Der Strom fiel auf etwa 10 A.
+
+287
+00:16:01,400 --> 00:16:01,400
+Ja.
+
+288
+00:16:01,500 --> 00:16:05,600
+Und die Spannung wurde 210-216 V.
+
+289
+00:16:05,820 --> 00:16:06,240
+Na.
+
+290
+00:16:06,400 --> 00:16:06,900
+Schaut.
+
+291
+00:16:07,080 --> 00:16:11,280
+Das ist schon ungefähr eine 8-kW-Last.
+
+292
+00:16:11,280 --> 00:16:11,860
+Kein Problem.
+
+293
+00:16:12,180 --> 00:16:12,280
+Ja.
+
+294
+00:16:12,380 --> 00:16:13,940
+Ich meine, ihr könnt es einfach dran hängen.
+
+295
+00:16:14,000 --> 00:16:21,480
+Diese Glühbirnen, die dort brannten, brannten ruhig dank der Tatsache, dass der Strom normal war.
+
+296
+00:16:21,620 --> 00:16:21,900
+Und das ist es.
+
+297
+00:16:22,500 --> 00:16:28,800
+Dabei war am Induktor hier der Stromanstieg… er ist dort ein bisschen gefallen.
+
+298
+00:16:28,900 --> 00:16:29,320
+Na, natürlich.
+
+299
+00:16:29,480 --> 00:16:32,200
+Ich meine, ich habe 10 A genommen, also hatte ich noch 90 übrig.
+
+300
+00:16:32,320 --> 00:16:32,740
+Keine Chance.
+
+301
+00:16:33,280 --> 00:16:34,540
+Etwa 80 blieben übrig.
+
+302
+00:16:34,900 --> 00:16:39,420
+Ich meine, offensichtlich findet eine Transformation zwischen den Spulen statt.
+
+303
+00:16:39,500 --> 00:16:41,000
+Also gibt es Verluste.
+
+304
+00:16:41,340 --> 00:16:42,040
+Das ist klar.
+
+305
+00:16:42,240 --> 00:16:45,660
+Aber wir haben schon einen konkreten Gewinn.
+
+306
+00:16:46,580 --> 00:16:47,660
+Es gibt einen hochgetriebenen Strom.
+
+307
+00:16:48,440 --> 00:16:51,600
+Ich werde euch nicht über atomare Prozesse erzählen, wie Akula es tut.
+
+308
+00:16:51,680 --> 00:16:55,200
+Das ist mir alles ein komplettes Rätsel.
+
+309
+00:16:55,600 --> 00:16:57,220
+Ich will nicht mal darüber nachdenken.
+
+310
+00:16:57,780 --> 00:16:59,540
+Hier ist es einfach blödsinnig Strom-Hochtreiben.
+
+311
+00:17:00,220 --> 00:17:01,080
+Jetzt eine Frage.
+
+312
+00:17:01,280 --> 00:17:02,200
+Was ist diese Antenne?
+
+313
+00:17:02,640 --> 00:17:05,320
+Fragt Kapanadze, was seine Antenne ist.
+
+314
+00:17:05,580 --> 00:17:06,540
+Es ist dasselbe.
+
+315
+00:17:07,040 --> 00:17:10,640
+Es ist dieselbe Spule, die mit Impulsen angeschlagen wird.
+
+316
+00:17:10,740 --> 00:17:16,220
+Zum richtigen Zeitpunkt zeige ich hier auf dieser gebogenen Sinuskurve.
+
+317
+00:17:16,340 --> 00:17:18,260
+Ich meine, sie trifft gerade nicht zum richtigen Zeitpunkt.
+
+318
+00:17:18,340 --> 00:17:20,320
+Ihr müsst das alles hier ein bisschen verschieben.
+
+319
+00:17:20,940 --> 00:17:22,620
+Übrigens arbeite ich gerade daran.
+
+320
+00:17:23,440 --> 00:17:26,040
+Ich meine, der Impuls muss in die Mitte verschoben werden.
+
+321
+00:17:26,140 --> 00:17:30,400
+Der Topfkern wird anfangen zu rauschen.
+
+322
+00:17:30,460 --> 00:17:34,360
+Oder es wird anfangen, dass die Glühbirnen dimmen.
+
+323
+00:17:34,440 --> 00:17:35,900
+Das bedeutet, ihr macht es falsch.
+
+324
+00:17:36,020 --> 00:17:38,020
+Die Verhältniseinstellung ist falsch.
+
+325
+00:17:38,100 --> 00:17:39,400
+Sie werden stattdessen anfangen zu dimmen.
+
+326
+00:17:39,400 --> 00:17:42,720
+Das bedeutet, wir treffen das Teilchen nicht.
+
+327
+00:17:42,820 --> 00:17:50,760
+Genauer gesagt, wir treffen zwischen Teilchen mit zwei Impulsen und bremsen sie gegeneinander.
+
+328
+00:17:51,000 --> 00:17:52,900
+Deshalb fängt der Mist an.
+
+329
+00:17:53,660 --> 00:17:54,960
+Macht das nicht.
+
+330
+00:17:55,320 --> 00:18:03,280
+Stattdessen müsst ihr einen Marker einrichten und schauen, wie die Impulse gehen.
+
+331
+00:18:03,400 --> 00:18:07,620
+Wenn sie gleichmäßig voneinander entfernt gehen, speziell am Ausgang des Tesla.
+
+332
+00:18:07,620 --> 00:18:08,760
+Nicht am Eingang.
+
+333
+00:18:08,780 --> 00:18:09,600
+Am Eingang ist es verständlich.
+
+334
+00:18:09,900 --> 00:18:10,440
+Am Ausgang.
+
+335
+00:18:11,320 --> 00:18:16,100
+Wenn sie dort hintereinander hinken, dann ist es nicht in Resonanz, was totalen Mist bedeutet.
+
+336
+00:18:16,920 --> 00:18:19,020
+Na, und spielt mit dieser Erdung.
+
+337
+00:18:19,340 --> 00:18:20,380
+Die Erdung ist sehr wichtig.
+
+338
+00:18:20,520 --> 00:18:23,520
+Hier soll der Strom am Ausgang maximal sein.
+
+339
+00:18:23,640 --> 00:18:25,700
+Und hier die maximale Spannung.
+
+340
+00:18:25,940 --> 00:18:27,500
+Ich meine, nur dann wird alles funktionieren.
+
+341
+00:18:28,580 --> 00:18:31,640
+Warum hat diese Anlage keinen Funkenunterbrecher?
+
+342
+00:18:32,700 --> 00:18:35,160
+Wisst ihr überhaupt, warum Kapanadze einen Funkenunterbrecher verwendet?
+
+343
+00:18:35,160 --> 00:18:39,060
+Damit er an diesem Ende einen Funkenunterbrecher zur Erde hat.
+
+344
+00:18:39,180 --> 00:18:41,140
+Das ist damit es keinen Überschuss gibt.
+
+345
+00:18:41,280 --> 00:18:41,860
+Das ist es.
+
+346
+00:18:43,140 --> 00:18:44,100
+Das ist alles daran.
+
+347
+00:18:44,180 --> 00:18:46,880
+Ihr müsst nur das Wesen des Prozesses verstehen.
+
+348
+00:18:47,440 --> 00:18:49,160
+Man sagt, diese Anlage frisst die Erde.
+
+349
+00:18:49,260 --> 00:18:50,360
+Sie frisst nichts.
+
+350
+00:18:51,160 --> 00:18:54,720
+Ihr müsst nur die richtigen Rohre und die richtige Erdung wählen.
+
+351
+00:18:55,240 --> 00:18:56,160
+Und alles wird funktionieren.
+
+352
+00:18:56,640 --> 00:18:58,320
+Aber leider ist es Hochfrequenz.
+
+353
+00:18:59,140 --> 00:19:00,000
+So ungefähr.
