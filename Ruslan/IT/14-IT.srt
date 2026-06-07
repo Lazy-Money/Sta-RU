@@ -1,0 +1,575 @@
+1
+00:00:01,040 --> 00:00:01,760
+Ciao a tutti.
+
+2
+00:00:03,380 --> 00:00:08,220
+Chiudiamo ancora una volta questo argomento su questa configurazione.
+
+3
+00:00:08,920 --> 00:00:12,200
+Nelle bobine non avvengono processi atomici.
+
+4
+00:00:12,880 --> 00:00:15,400
+Più precisamente, avviene un campo magnetico.
+
+5
+00:00:15,680 --> 00:00:18,720
+Non credo che il campo magnetico abbia a che fare con un processo atomico.
+
+6
+00:00:18,840 --> 00:00:22,040
+Anche se non sono molto familiare con la fisica nucleare.
+
+7
+00:00:22,640 --> 00:00:25,380
+Più precisamente, lo sono, ma probabilmente non ricordo più molto.
+
+8
+00:00:26,420 --> 00:00:30,260
+E in generale non vale la pena addentrarsi in quei dettagli.
+
+9
+00:00:30,660 --> 00:00:31,700
+Dimenticatelo.
+
+10
+00:00:32,520 --> 00:00:38,140
+Lavorate a semplificare tutto questo processo.
+
+11
+00:00:39,620 --> 00:00:44,440
+E vi dico onestamente, è davvero così semplice.
+
+12
+00:00:44,820 --> 00:00:51,240
+Ma quei guru, i cosiddetti specialisti.
+
+13
+00:00:51,580 --> 00:00:56,580
+Come lo stesso Romanov, Kapanadze, Akula.
+
+14
+00:00:56,740 --> 00:00:58,960
+Non ve lo diranno in nessuna circostanza.
+
+15
+00:00:59,060 --> 00:01:01,920
+Per il motivo che per loro sarebbe un crimine.
+
+16
+00:01:02,060 --> 00:01:05,940
+Se tutto questo viene fuori, rimarranno semplicemente senza soldi.
+
+17
+00:01:07,500 --> 00:01:09,600
+Di conseguenza, inizierà il caos nel mondo.
+
+18
+00:01:09,900 --> 00:01:13,100
+Perché non si può dare questo sistema a tutti.
+
+19
+00:01:14,020 --> 00:01:16,740
+Voglio dire, non si può permettere a tutti di costruirlo.
+
+20
+00:01:16,840 --> 00:01:24,440
+Perché le persone, purtroppo, sono il tipo di creature che dipendono dal denaro.
+
+21
+00:01:24,620 --> 00:01:29,840
+E tutto ciò che riguarda il denaro — ci si buttano subito sopra e cominciano a fare affari.
+
+22
+00:01:29,840 --> 00:01:36,900
+Inizieranno a costruire cose in garage, in scantinati, saldando in qualsiasi modo a casa.
+
+23
+00:01:37,140 --> 00:01:46,080
+E alla fine questo creerà pericoli per chi sta intorno e inizierà un incubo.
+
+24
+00:01:46,080 --> 00:01:52,360
+Ecco perché le persone si dividono in categorie.
+
+25
+00:01:53,360 --> 00:02:14,300
+E se pensate alle prospettive di questo sviluppo, allora naturalmente molti di noi ci hanno provato duramente per molti anni, spendendo un sacco di componenti per tutto questo.
+
+26
+00:02:15,160 --> 00:02:17,740
+MOSFET, senza capire cosa fare.
+
+27
+00:02:17,960 --> 00:02:19,340
+Voglio dirlo ancora una volta.
+
+28
+00:02:19,880 --> 00:02:31,040
+Per iniziare tutta questa analisi e tutta la discussione sul sistema, prima di tutto dovete sapere come funziona.
+
+29
+00:02:31,160 --> 00:02:35,400
+Per potersi semplicemente sedere e avvolgere stupidamente la bobina sapendo cosa avvolgere.
+
+30
+00:02:36,340 --> 00:02:43,380
+E non fare domande come quale bobina è avvolta, quale calibro, quante spire.
+
+31
+00:02:44,260 --> 00:02:47,680
+Dimenticate completamente il parlare di spire e via dicendo.
+
+32
+00:02:47,780 --> 00:02:48,660
+È tutta una sciocchezza.
+
+33
+00:02:50,020 --> 00:02:53,380
+Uno specialista normale sa che bisogna…
+
+34
+00:02:54,700 --> 00:03:03,800
+Prima il processo, e sa cosa deve ottenere per ottenere un determinato effetto.
+
+35
+00:03:04,200 --> 00:03:12,820
+Per esempio, per ottenere un campo magnetico, si alimenta stupidamente la bobina con corrente alternata o continua.
+
+36
+00:03:12,820 --> 00:03:13,500
+Ecco tutto.
+
+37
+00:03:14,020 --> 00:03:15,240
+Si ottiene un magnete.
+
+38
+00:03:15,920 --> 00:03:17,220
+O un campo magnetico.
+
+39
+00:03:19,920 --> 00:03:25,180
+Perché una lampadina si accenda, tutti sanno benissimo che bisogna inserirla nella presa.
+
+40
+00:03:25,280 --> 00:03:27,660
+Qui è la stessa storia.
+
+41
+00:03:27,880 --> 00:03:35,340
+Qui bisogna sapere cosa fare, e non copiare stupidamente e contare le spire, cosa è avvolto qui.
+
+42
+00:03:35,780 --> 00:03:38,440
+Dico subito, questa non è una bobina di Kapanadze.
+
+43
+00:03:38,660 --> 00:03:40,720
+Dimenticate questa bobina di Kapanadze.
+
+44
+00:03:40,720 --> 00:03:43,300
+Qui è molto simile, è avvolta bene.
+
+45
+00:03:43,840 --> 00:03:46,380
+Simile, ma non è una bobina di Kapanadze.
+
+46
+00:03:47,300 --> 00:03:53,760
+Qui tutto è avvolto in una direzione e avvolto per rapporti di frequenza.
+
+47
+00:03:53,840 --> 00:03:56,540
+Proprio lì c'è il suggerimento che esiste davvero.
+
+48
+00:03:57,240 --> 00:04:07,260
+Gli esperimenti mostrano che dobbiamo dimenticare tutte queste cose di Kapanadze che Kapanadze ha mostrato.
+
+49
+00:04:07,260 --> 00:04:14,060
+È tutto molto semplice, un gioco da ragazzi, come si dice.
+
+50
+00:04:14,740 --> 00:04:16,620
+Tutto funziona, tutto è ottimo.
+
+51
+00:04:16,920 --> 00:04:28,960
+Ma Roma ha usato qui un sistema leggermente diverso, che poi non ha mai mostrato da nessuna parte.
+
+52
+00:04:29,400 --> 00:04:42,480
+In generale, ho l'impressione che la gente si sia affrettata a costruire questo sistema, avendo creduto a Roma nelle sue favole che raccontava continuamente nei suoi video.
+
+53
+00:04:42,680 --> 00:04:47,360
+Voglio dire, su come spiegare come funziona, le frequenze della Terra e così via.
+
+54
+00:04:47,780 --> 00:04:49,560
+Dimenticate le frequenze della Terra.
+
+55
+00:04:50,280 --> 00:04:51,960
+Dimenticate completamente queste sciocchezze.
+
+56
+00:04:52,860 --> 00:05:00,200
+Voglio dire, la Terra è una sorgente di supporto sulla quale, per così dire, si scaricherà la carica impulsiva.
+
+57
+00:05:01,080 --> 00:05:05,520
+E dalla Terra non succhiate nulla, nessuna corrente, assolutamente nulla.
+
+58
+00:05:05,740 --> 00:05:07,320
+Voglio dire, questo non accade.
+
+59
+00:05:08,100 --> 00:05:26,940
+Voglio dire, la Terra è necessaria come supporto, un supporto chiaro, affinché — come una parete di cemento contro cui l'impulso colpisce e muove l'onda, che ha la sua propria forza peculiare.
+
+60
+00:05:26,940 --> 00:05:31,020
+Quanto alla bobina stessa.
+
+61
+00:05:32,340 --> 00:05:34,700
+Cosa succede nella bobina in generale?
+
+62
+00:05:35,380 --> 00:05:43,640
+Alimentiamo i generatori — in questo caso è un normale push-pull — alimentiamo qui le oscillazioni.
+
+63
+00:05:44,000 --> 00:05:49,940
+Voglio dire, una normale onda stazionaria che sta ferma, che non si muove.
+
+64
+00:05:50,140 --> 00:05:53,540
+Voglio dire, con questo circuito che è avvolto sopra.
+
+65
+00:05:53,540 --> 00:06:01,640
+Questo circuito — alimentiamo energia, cioè tensione, in questo circuito da qui.
+
+66
+00:06:02,380 --> 00:06:03,160
+Un'onda quadra.
+
+67
+00:06:03,940 --> 00:06:07,100
+Questa onda quadra deve essere trasformata in un segnale sinusoidale.
+
+68
+00:06:09,440 --> 00:06:11,460
+L'onda quadra non funzionerà da sola qui.
+
+69
+00:06:11,640 --> 00:06:15,520
+Dobbiamo creare un'onda stazionaria, di conseguenza qui deve esserci una sinusoide.
+
+70
+00:06:16,360 --> 00:06:24,120
+Sulla bobina di prelievo sorge una sinusoide, dalla quale preleviamo tutta l'energia.
+
+71
+00:06:24,640 --> 00:06:27,480
+Come si preleva l'energia da questa bobina?
+
+72
+00:06:27,680 --> 00:06:28,480
+È molto semplice.
+
+73
+00:06:29,180 --> 00:06:41,360
+Il punto è — creando un'onda stazionaria con un generatore, la creiamo — voglio dire, abbiamo un'onda riflessa e una che si muove, cioè un'onda viaggiante e una riflessa.
+
+74
+00:06:41,840 --> 00:06:53,320
+Creiamo stupidamente un'onda stazionaria nella bobina, e la bobina inizia a scaldarsi, perché non ha dove andare e risulta che la stiamo riscaldando.
+
+75
+00:06:53,980 --> 00:06:55,960
+I fili si scaldano e lo si può sentire.
+
+76
+00:06:56,100 --> 00:06:57,300
+Sta semplicemente ferma al suo posto.
+
+77
+00:06:57,560 --> 00:07:10,780
+In questo momento oscilla, perché due onde, la viaggiante e la riflessa, si muovono l'una contro l'altra e, coincidendo in fase, si ottiene il movimento dell'onda stazionaria.
+
+78
+00:07:12,380 --> 00:07:26,400
+Per rendere questa onda stazionaria in movimento — che è esattamente ciò che, con i suoi ventri, farà per noi ciò che dobbiamo far succedere in questa bobina, cioè il movimento del campo magnetico
+
+79
+00:07:26,400 --> 00:07:36,180
+e della corrente elettrica, il movimento degli elettroni nel conduttore — per questo dobbiamo far funzionare qui due generatori.
+
+80
+00:07:36,940 --> 00:07:45,140
+Se semplicemente iniziamo stupidamente ad anti-fasare, o semplicemente coincidiamo in fase con due generatori qui, non otterremo praticamente nulla.
+
+81
+00:07:45,140 --> 00:07:53,060
+Voglio dire, avremo una normale onda stazionaria, anche se viaggiante, perché un generatore avrà qualcosa in ritardo.
+
+82
+00:07:53,220 --> 00:07:58,500
+Voglio dire, coincideranno in fase mentre la loro sincronizzazione è in ritardo tra loro.
+
+83
+00:07:58,940 --> 00:08:04,320
+In ogni caso spenderemo il doppio dell'energia, voglio dire nulla, non otterremo alcun guadagno.
+
+84
+00:08:04,420 --> 00:08:05,820
+Quindi, cosa bisogna fare?
+
+85
+00:08:06,540 --> 00:08:13,780
+Il punto è — un generatore e due circuiti LC disaccoppiati, in questo sistema.
+
+86
+00:08:13,780 --> 00:08:20,140
+Voglio dire, un circuito LC sarà assolutamente invariato in quel momento, non dovete influenzarlo.
+
+87
+00:08:20,300 --> 00:08:27,160
+Ma il secondo circuito, che influenzeremo — la Tesla lo influenzerà con i suoi impulsi.
+
+88
+00:08:27,780 --> 00:08:42,980
+È abbastanza per allineare periodicamente questa onda stazionaria — più precisamente l'onda avanzante e quella riflessa — tra loro, sfasandole e riportandole al posto.
+
+89
+00:08:42,980 --> 00:08:49,000
+Voglio dire, causiamo il movimento dell'onda stazionaria in questa bobina.
+
+90
+00:08:49,480 --> 00:08:52,420
+In questo modo otteniamo energia qui.
+
+91
+00:08:52,600 --> 00:08:53,580
+Quindi come si fa?
+
+92
+00:08:53,680 --> 00:08:54,700
+Pensate con la testa.
+
+93
+00:08:55,600 --> 00:09:08,360
+Francamente, ho appena notato che le persone si dividono in una categoria di persone che credono in questa cosa — quelli che la costruiscono, e quelli che la costruiscono con sfiducia, e quelli che non ci credono per niente.
+
+94
+00:09:08,360 --> 00:09:14,120
+I troll che lasciano continuamente dislike sui miei video — beh, che lo facciano.
+
+95
+00:09:14,640 --> 00:09:16,040
+Gli farà stare meglio, che lo facciano.
+
+96
+00:09:16,720 --> 00:09:21,060
+E quelli che hanno già perso la speranza.
+
+97
+00:09:21,260 --> 00:09:23,940
+È semplicemente una stupidità totale e senza speranza.
+
+98
+00:09:24,860 --> 00:09:34,760
+E poi ci sono persone che non credono affatto a questo e vi mettono sotto il naso la fisica classica, senza capire affatto i processi che avvengono qui.
+
+99
+00:09:35,060 --> 00:09:36,840
+E perché avvengono qui.
+
+100
+00:09:36,840 --> 00:09:38,200
+E da dove viene il guadagno.
+
+101
+00:09:39,020 --> 00:09:39,680
+E tutto questo.
+
+102
+00:09:39,820 --> 00:09:44,600
+Voglio dire, la gente che studia fisica non ha assolutamente idea di come applicarla.
+
+103
+00:09:44,740 --> 00:09:46,540
+E qui questa fisica è applicabile.
+
+104
+00:09:46,600 --> 00:09:48,700
+Qui è normale fisica classica.
+
+105
+00:09:49,640 --> 00:09:56,640
+Bisogna solo addentrarsi così profondamente nei suoi dettagli per scoprire cosa succede e come.
+
+106
+00:09:56,940 --> 00:09:59,060
+La fisica classica è molto intricata.
+
+107
+00:10:00,620 --> 00:10:12,860
+La gente farà fatica a collegare la conoscenza di, diciamo, la nona classe o qualsiasi classe in cui inizia questa fisica, con la fisica in cui si trovano nella fase finale.
+
+108
+00:10:14,060 --> 00:10:15,640
+Voglio dire, ha già dimenticato tutto da tempo.
+
+109
+00:10:16,540 --> 00:10:19,040
+E questo è tutto il problema.
+
+110
+00:10:20,220 --> 00:10:25,960
+Collegare tutta questa combinazione di tutti questi processi che avvengono qui.
+
+111
+00:10:26,000 --> 00:10:28,340
+E il processo qui è un normale campo magnetico.
+
+112
+00:10:28,340 --> 00:10:36,460
+Che noi, sotto l'influenza di questa Tesla, facciamo scattare spostando la frequenza.
+
+113
+00:10:36,800 --> 00:10:39,760
+In questo modo un'onda rimane indietro rispetto all'altra.
+
+114
+00:10:40,380 --> 00:10:49,600
+E quando coincidono in fase, spostandosi di nuovo, avviene il movimento dell'onda stazionaria.
+
+115
+00:10:50,360 --> 00:10:59,520
+I suoi ventri, nel momento in cui le due onde si uniscono e si forma un'onda stazionaria, questi ventri hanno un potenziale molto alto, cioè corrente.
+
+116
+00:10:59,980 --> 00:11:02,820
+Qui c'è corrente forte, qui corrente, qui corrente.
+
+117
+00:11:03,360 --> 00:11:04,720
+Qui c'è un armonico, qui niente.
+
+118
+00:11:05,440 --> 00:11:15,140
+Quindi, colpendo con un impulso questi ventri, li facciamo scattare e otteniamo esattamente quello che ci serve.
+
+119
+00:11:15,220 --> 00:11:16,620
+Preleviamo dal ventre.
+
+120
+00:11:16,620 --> 00:11:18,900
+Proprio come con la Tesla, tra l'altro.
+
+121
+00:11:18,960 --> 00:11:21,380
+Ho fatto questo per la scuola, ma non l'ho finito.
+
+122
+00:11:21,460 --> 00:11:24,460
+Per così dire, si sono rifiutati di spiegarmi come funziona.
+
+123
+00:11:24,640 --> 00:11:26,520
+Eccola lì, questa cosa.
+
+124
+00:11:27,280 --> 00:11:29,960
+Quindi, come funziona la Tesla?
+
+125
+00:11:30,500 --> 00:11:40,060
+Ricordate, non tutti riescono nemmeno a fare una Tesla normale, portarla in risonanza, in modo da ottenere alla sua estremità una normale scarica corona o qualsiasi cosa.
+
+126
+00:11:40,160 --> 00:11:42,120
+Ma nessuna corona — è una perdita di energia.
+
+127
+00:11:42,980 --> 00:11:45,960
+Molto probabilmente ci sono normali streamer sul toroide qui.
+
+128
+00:11:45,960 --> 00:11:47,660
+Voglio dire, come si fa?
+
+129
+00:11:47,740 --> 00:11:48,560
+Nessuno lo sa.
+
+130
+00:11:49,040 --> 00:11:54,420
+Tutti dimenticano che bisogna rispettare il quarto d'onda della bobina.
+
+131
+00:11:54,980 --> 00:12:01,180
+E bisogna sapere che l'onda stazionaria, cioè il ventre, deve essere al massimo qui, in cima.
+
+132
+00:12:01,460 --> 00:12:05,300
+Solo allora otterremo uno streamer normale qui.
+
+133
+00:12:05,880 --> 00:12:09,720
+E in basso il minimo, cioè questo valore.
+
+134
+00:12:10,480 --> 00:12:12,000
+Ma, purtroppo, nessuno lo sa.
+
+135
+00:12:13,120 --> 00:12:25,500
+Voglio dire, qui l'onda viaggiante sale nel momento del colpo qui, così, con corrente, un impulso di corrente continua.
+
+136
+00:12:26,540 --> 00:12:28,040
+Riflettendosi, scende.
+
+137
+00:12:28,320 --> 00:12:35,100
+Quello che vediamo sullo schermo — è esattamente quello che succede qui in questa bobina.
+
+138
+00:12:35,740 --> 00:12:38,940
+Ma pochi sanno come farlo, purtroppo.
+
+139
+00:12:38,940 --> 00:12:45,500
+Voglio dire, fare una Tesla normale affinché qui, sì, sintonizzarla in tale risonanza che faccia questo.
+
+140
+00:12:46,160 --> 00:12:53,200
+E cosa dire di questa — voglio dire, tutti dicono, ah lascia perdere, è sciocchezza, perché occuparsi di una Tesla.
+
+141
+00:12:54,020 --> 00:12:55,700
+E non riescono a costruire questo.
+
+142
+00:12:56,100 --> 00:12:57,440
+Beh, purtroppo.
+
+143
+00:12:58,140 --> 00:13:03,280
+Vi ho spiegato molto brevemente cos'è un'onda stazionaria e come si fa.
+
+144
+00:13:04,520 --> 00:13:04,960
+Forza!
