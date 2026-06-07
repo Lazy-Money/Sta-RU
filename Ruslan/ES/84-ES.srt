@@ -1,0 +1,251 @@
+1
+00:00:00,000 --> 00:00:00,580
+¡Hola!
+
+2
+00:00:01,600 --> 00:00:10,460
+Hoy les hablaré sobre un pequeño generador SE que ensambié con el microchip TL494.
+
+3
+00:00:10,620 --> 00:00:13,940
+El circuito es bastante simple, en general no hay nada complicado aquí.
+
+4
+00:00:15,060 --> 00:00:19,720
+Una linterna de 30 vatios como esta, pueden usar LEDs, pueden usar una bombilla incandescente.
+
+5
+00:00:20,540 --> 00:00:24,780
+En cualquier caso aquí todo es muy simple, nada complicado, se devana el núcleo.
+
+6
+00:00:24,780 --> 00:00:30,600
+En general, este es el circuito de Akula, que encontré en internet.
+
+7
+00:00:32,160 --> 00:00:33,440
+Todo está hecho de manera muy simple.
+
+8
+00:00:33,680 --> 00:00:38,940
+Un circuito completamente simple, honestamente, no lo creía hasta que un colega lo ensambló siguiendo a Dangerous Craft.
+
+9
+00:00:39,480 --> 00:00:40,180
+Pero, sin embargo.
+
+10
+00:00:40,640 --> 00:00:42,260
+Quiero demostrar cómo enciende.
+
+11
+00:00:42,360 --> 00:00:47,640
+Usé por el momento este reflector, un reflector ordinario de 10 vatios.
+
+12
+00:00:47,880 --> 00:01:00,780
+Lo desarmé, digo de una vez, en la parte de atrás dos cables simplemente sobresalen de la matriz LED, porque tuve que arrancar esta maravilla de él.
+
+13
+00:01:00,980 --> 00:01:05,020
+Había un driver, lo corté descuidadamente, bueno, que le vaya bien.
+
+14
+00:01:05,660 --> 00:01:07,060
+Aquí está el reflector de 10 vatios.
+
+15
+00:01:08,120 --> 00:01:11,160
+Creo que todos lo conocen muy bien.
+
+16
+00:01:11,580 --> 00:01:15,040
+Usamos para el arranque una batería ordinaria, un acumulador de 12 voltios.
+
+17
+00:01:15,120 --> 00:01:18,520
+Solo tocando... aquí, 12 voltios.
+
+18
+00:01:20,060 --> 00:01:26,900
+Solo toco este diodo ahora, enciendo el reflector, y ya está ajustado.
+
+19
+00:01:27,020 --> 00:01:39,440
+Aquí hay un resistor de ajuste de frecuencia, un resistor de ajuste, según entendí, en este circuito, del nivel de voltaje de salida en sí.
+
+20
+00:01:39,940 --> 00:01:41,440
+Entonces, lo toco, miren.
+
+21
+00:01:42,660 --> 00:01:44,880
+Entonces, algo aquí para mí... Oh, todo encendió.
+
+22
+00:01:45,500 --> 00:01:47,900
+Entonces, y... oop, ya está.
+
+23
+00:01:48,500 --> 00:01:51,140
+Miren, retiro la batería completamente, del todo.
+
+24
+00:01:51,300 --> 00:01:55,140
+Aquí, la desconecto, la retiro completamente de la mesa.
+
+25
+00:01:55,320 --> 00:02:00,960
+Y el reflector sigue ardiendo tranquilamente, sí, es decir sin cables, excepto...
+
+26
+00:02:00,960 --> 00:02:02,360
+ahora lo retiro especialmente.
+
+27
+00:02:02,940 --> 00:02:07,680
+Miren, aquí, sin cables, sin alimentación ya.
+
+28
+00:02:08,860 --> 00:02:13,040
+Aquí, solo la placa desnuda está, sí, y el reflector está alimentado.
+
+29
+00:02:13,140 --> 00:02:15,580
+Aquí, miren, sí, aquí el reflector arde.
+
+30
+00:02:15,720 --> 00:02:19,120
+El reflector está conectado a esta placa.
+
+31
+00:02:19,960 --> 00:02:24,800
+Aquí, nada, aquí no hay acumuladores, baterías, nada, aquí está, solo una placa desnuda.
+
+32
+00:02:25,480 --> 00:02:40,000
+Aquí, aquí hay dos condensadores de 2200 microfaradios, un transistor, eso es todo, aquí, entonces, el circuito funciona completamente, sí, y un transformador ordinario de una fuente de alimentación de pulso de un televisor, uno soviético.
+
+33
+00:02:40,060 --> 00:02:44,740
+Por cierto, mi núcleo se ha desarmado solo varias veces ya.
+
+34
+00:02:45,240 --> 00:02:48,620
+Lo pegué, bueno, no sé cómo, este simplemente lo devaé al azar.
+
+35
+00:02:49,100 --> 00:02:52,440
+Aquí, por favor, una linterna que arderá toda la vida y nunca se apagará.
+
+36
+00:02:52,820 --> 00:02:56,180
+Bueno, quizás se apague algún día, quizás, algo definitivamente se desgastará.
+
+37
+00:02:56,760 --> 00:03:02,740
+No quiero decir que esto es un motor de movimiento perpetuo, pero el reflector arde de tal forma que, honestamente, es difícil hasta filmar video.
+
+38
+00:03:03,980 --> 00:03:09,940
+Eso es todo, lancé el sistema, no sé cómo detenerlo, muy probablemente tendré que cortocircuitarlo con algo, sí.
+
+39
+00:03:10,140 --> 00:03:17,680
+Es decir, bueno, este pequeño circuito, bastante simple, nada complicado.
+
+40
+00:03:18,540 --> 00:03:24,480
+Es decir, aquí hay una linterna que pueden colgar afuera, sí, es decir una linterna de 30 vatios.
+
+41
+00:03:24,820 --> 00:03:27,700
+Se arranca normalmente con una batería, se enciende.
+
+42
+00:03:28,160 --> 00:03:31,680
+Aquí hay un botón de parada, sí, es decir lo ven en el esquema.
+
+43
+00:03:32,060 --> 00:03:37,400
+No lo preví aquí, así que arderá ahora, y hasta tendré que irme de aquí.
+
+44
+00:03:38,860 --> 00:03:45,520
+Aquí, como ven, qué desorden tengo, sí, esto está relacionado con el hecho de que me dediqué a la búsqueda de energía libre.
+
+45
+00:03:46,020 --> 00:03:48,060
+Y, honestamente, la encontré.
+
+46
+00:03:48,120 --> 00:03:52,880
+Aquí está la batería, sí, aquí está, la batería, aquí la estoy sosteniendo en mis manos.
+
+47
+00:03:53,020 --> 00:03:55,640
+La acabo de lanzar, y eso es todo, aquí arde, eso es todo.
+
+48
+00:03:56,680 --> 00:03:58,100
+No lo crean, no es necesario.
+
+49
+00:03:58,180 --> 00:04:03,340
+Es decir, la gente, por supuesto, dice todo tipo de tonterías en los foros, escribe todo tipo de disparates en todas partes.
+
+50
+00:04:03,720 --> 00:04:06,140
+A todos les gusta escribir esto, bueno, escriban.
+
+51
+00:04:07,240 --> 00:04:17,940
+Solo diré una cosa, que si ustedes, comentaristas, nunca hicieron nada excepto hablar, entonces discúlpenme.
+
+52
+00:04:19,560 --> 00:04:24,360
+Bueno, más poder para ustedes, y para nosotros el soldador, sí.
+
+53
+00:04:24,920 --> 00:04:30,320
+Así con la ayuda de estas cosas ensamblamos y soldamos todo.
+
+54
+00:04:30,520 --> 00:04:39,200
+Lo principal es, lo principal es que haya, bueno, es decir obtener ES es el deseo.
+
+55
+00:04:39,860 --> 00:04:50,120
+Cuando entienden cómo funciona este sistema, cuando entienden qué es un campo electromagnético, entonces podrán ensamblar cosas similares, y les funcionarán.
+
+56
+00:04:50,480 --> 00:04:55,840
+Y aquí, como ven, el reflector arde tan brillantemente que es imposible mirar este sistema.
+
+57
+00:04:55,900 --> 00:04:59,740
+Aquí un LED arde, sí, es decir lo soldé aquí.
+
+58
+00:05:00,140 --> 00:05:03,420
+En el esquema estaba indicado, lo puse, aquí está.
+
+59
+00:05:04,040 --> 00:05:08,660
+Si miran el esquema, este LED, aquí está, sí, es decir arde, aquí hay un estabilizador.
+
+60
+00:05:09,700 --> 00:05:19,220
+Honestamente, es decir el colega que lo ensambló tampoco entiende todavía cómo esto puede funcionar, pero, obviamente, funciona, sí.
+
+61
+00:05:19,280 --> 00:05:22,740
+Es decir digo una vez más que hay un campo electromagnético.
+
+62
+00:05:23,360 --> 00:05:29,660
+Si aquí descifran el sistema de campo electromagnético más resonancia, siempre sabrán cómo funciona esto.
+
+63
+00:05:30,140 --> 00:05:31,040
+¡Gracias por su atención!
