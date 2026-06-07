@@ -1,0 +1,795 @@
+1
+00:00:01,390 --> 00:00:04,220
+Bueno, señores, hola a todos.
+
+2
+00:00:05,420 --> 00:00:15,060
+Y aquí está lo que quería mostrarles sobre el Kacher y cómo ajustarlo para que este generador sin combustible, entre comillas, pueda ponerse en marcha.
+
+3
+00:00:15,240 --> 00:00:16,220
+¿Por qué entre comillas?
+
+4
+00:00:16,340 --> 00:00:29,260
+Porque su combustible es el medio, o la energía, por así decirlo, se podría decir energía atómica, o energía radiante.
+
+5
+00:00:29,260 --> 00:00:33,940
+Bueno, ahora no vamos a analizar, por así decirlo, hacer una autopsia sobre la energía radiante.
+
+6
+00:00:34,040 --> 00:00:37,000
+Hablaremos ahora del Kacher y de cómo funciona en general.
+
+7
+00:00:38,820 --> 00:00:45,800
+Desacoplé, quizás, no todo como me gustaría desacoplar, pero con uno es suficiente, básicamente.
+
+8
+00:00:46,280 --> 00:00:58,200
+En mi placa aquí hay dos diodos zener conectados en antiparalelo, protegen la base del transistor para no quemarla con un pulso de esta bobina Tesla secundaria.
+
+9
+00:00:59,260 --> 00:00:59,760
+¿Qué más?
+
+10
+00:00:59,880 --> 00:01:03,000
+Un resistor de ajuste de polarización de base.
+
+11
+00:01:04,220 --> 00:01:08,720
+Y tuve que soldar un poco, así que, lo dije una vez más, sobre la base.
+
+12
+00:01:08,800 --> 00:01:10,040
+Lo esquematizaré después.
+
+13
+00:01:10,260 --> 00:01:15,540
+Hay varios condensadores de bloqueo, o sea, un electrolítico a la salida de este aparato.
+
+14
+00:01:15,540 --> 00:01:22,540
+Y antes de esto también hay un condensador de bloqueo, 1000 nanos.
+
+15
+00:01:24,320 --> 00:01:36,060
+Aquí también hay un condensador de bloqueo y al terminal negativo, o sea al terminal del emisor, la tierra está conectada a través de un diodo por el momento.
+
+16
+00:01:36,240 --> 00:01:38,900
+Básicamente no importa, porque ahí está colgado el osciloscopio.
+
+17
+00:01:39,660 --> 00:01:43,660
+Y ya está claro que la tierra aquí no va a servir.
+
+18
+00:01:43,660 --> 00:01:55,960
+Conectar aquí al positivo de la fuente de alimentación ahora sería poco recomendable, ya que el desacoplamiento se produce y a través de la bobina comenzarán todo tipo de mediciones falsas del osciloscopio.
+
+19
+00:01:57,120 --> 00:02:03,240
+Así que, ya dije, que hay que hacer un buen Kacher para que dé pulsos normales.
+
+20
+00:02:03,400 --> 00:02:12,940
+Por eso hay que ajustarlo, y no simplemente así, lo arrollaste, lo conectaste con resistores, o sea conectaste el transistor.
+
+21
+00:02:13,660 --> 00:02:15,980
+Lo armaste todo junto.
+
+22
+00:02:16,960 --> 00:02:20,880
+Parece que zumba, sí, o ahí, bueno, este Kacher no zumba.
+
+23
+00:02:21,440 --> 00:02:27,940
+Tiene en general un voltaje de salida bastante pequeño, digamos.
+
+24
+00:02:29,060 --> 00:02:32,300
+Bueno, básicamente, esto ni siquiera es, digamos, importante.
+
+25
+00:02:32,780 --> 00:02:35,680
+De todos modos podrán conseguir todo lo que necesitan.
+
+26
+00:02:36,080 --> 00:02:38,580
+Si necesitan subir el voltaje, lo subiremos después.
+
+27
+00:02:40,760 --> 00:02:47,720
+Ahora el punto es que, entonces, aquí tenemos las baterías, sí, ahora mediremos el voltaje en ellas.
+
+28
+00:02:47,880 --> 00:03:03,260
+No sé si bajó o no, sí, veamos cuánto voltaje queda allí ahora, para que en general, bueno, en base a todo esto entendamos qué estamos midiendo aquí y
+
+29
+00:03:03,260 --> 00:03:03,780
+cosas así.
+
+30
+00:03:03,780 --> 00:03:11,600
+Entonces, nuestro voltaje es 24,9 voltios, o sea las baterías están bien cargadas, todo está bien.
+
+31
+00:03:12,360 --> 00:03:18,780
+Bueno, básicamente, sí, las cargo aquí periódicamente para poder usarlas para ajustes y similares.
+
+32
+00:03:18,840 --> 00:03:27,760
+Sin baterías será bastante difícil alimentar la fuente de alimentación desde el enchufe y, digamos, desacoplar el sistema de la tierra.
+
+33
+00:03:27,760 --> 00:03:29,860
+O sea es, bueno, prácticamente imposible.
+
+34
+00:03:30,000 --> 00:03:36,680
+En la fuente de alimentación hay condensadores, todo esto sigue siendo una captación y no se puede ajustar correctamente.
+
+35
+00:03:36,800 --> 00:03:47,620
+Por eso les recomiendo a todos ajustar todo esto con dos baterías de 24 voltios, sí, las conectamos, o sea cuando logramos todo este, digamos, sistema, cuando todo ya está bien, entonces solo.
+
+36
+00:03:47,940 --> 00:03:53,660
+Bueno, la etapa inicial, por supuesto, una fuente de alimentación de laboratorio, tengo dos de estas aquí.
+
+37
+00:03:55,020 --> 00:04:08,300
+Así que, bueno, empecé con, así que, el ahorrador de energía está ahí tirado, es solo un indicador, como dicen, del lanzamiento del Kacher, para no agarrarlo con los dedos, porque ya me quemé el dedo, sí, o sea, bueno, el voltaje
+
+38
+00:04:08,300 --> 00:04:11,300
+es bajo al fin y al cabo, pica.
+
+39
+00:04:11,460 --> 00:04:18,980
+Y aquí hay dos sondas conectadas, sí, azul y amarilla, simplemente marcadas para ver en el oscilograma qué pasará allí ahora.
+
+40
+00:04:18,980 --> 00:04:20,060
+Así que, ahora les mostraré todo.
+
+41
+00:04:20,400 --> 00:04:27,880
+Entonces, encendemos el positivo de la fuente de alimentación, sí, aquí nuestro indicador se enciende, sí, porque el campo comenzó.
+
+42
+00:04:28,020 --> 00:04:38,280
+Aquí ahora en este caso, sí, o sea aquí tenemos otro tester así, sí, que muestra la frecuencia ahí mismo, su sonda está sola, así que, cerca.
+
+43
+00:04:38,280 --> 00:04:39,820
+Y aquí está su frecuencia.
+
+44
+00:04:40,280 --> 00:04:46,820
+La frecuencia es bastante, digamos, incluso si la agarras, no baja mucho.
+
+45
+00:04:47,160 --> 00:04:49,220
+La antena, si la conectas, todo estará bien.
+
+46
+00:04:49,360 --> 00:04:50,700
+Solo que el voltaje bajó.
+
+47
+00:04:50,700 --> 00:04:52,920
+Bueno, pica fuerte.
+
+48
+00:04:53,560 --> 00:04:59,060
+Así que, casi 4 MHz, sí, o sea 3200 kHz.
+
+49
+00:04:59,060 --> 00:05:01,400
+¿Y qué vemos en el osciloscopio?
+
+50
+00:05:01,520 --> 00:05:05,980
+Este tipo de desastre, sí, o sea, básicamente, esto está mal.
+
+51
+00:05:06,140 --> 00:05:17,240
+Entonces, el superior para nosotros, este aparato, así que, el amarillo, esta es la base, sí, es pequeño, ahí está, y el inferior es el colector.
+
+52
+00:05:17,240 --> 00:05:31,340
+Y aquí miren, ahora empiezo a girar el resistor, qué pasa, sí, o sea esto hay que nivelarlo hasta tal grado, aquí, sí, o sea miren, ups, miren cómo se niveló todo, bellamente
+
+53
+00:05:31,340 --> 00:05:44,340
+funciona, sí, o sea hay que seleccionar esto con resistores, o sea la amplitud máxima del pico, en este momento la bombilla empieza a arder incluso mejor, y en general arde muy brillantemente, sí.
+
+54
+00:05:45,860 --> 00:05:57,560
+La frecuencia cambió un poco, pero eso no importa, sí, o sea pueden ajustar todo esto, regularlo, todo funcionará, sí, o sea lo más importante es que, como ven, funciona, sí, funciona no mal.
+
+55
+00:05:57,560 --> 00:06:06,660
+Hay que jugar un poco con el inductor, o sea esto también afectará la amplitud.
+
+56
+00:06:06,840 --> 00:06:15,820
+Afectará fuertemente la amplitud, o sea diría que todo esto sucederá durante el ajuste.
+
+57
+00:06:16,280 --> 00:06:22,540
+Y así qué quería decir a todo esto, agregar a todo este esquema.
+
+58
+00:06:22,880 --> 00:06:24,400
+Esto obligatoriamente tiene que ajustarse.
+
+59
+00:06:24,580 --> 00:06:28,520
+Y, por cierto, así que, el transistor no se calienta mucho aquí.
+
+60
+00:06:29,460 --> 00:06:34,500
+Está caliente, pero no hay nada así como que no lo puedas agarrar.
+
+61
+00:06:34,980 --> 00:06:37,420
+Naturalmente necesitará enfriarse.
+
+62
+00:06:37,600 --> 00:06:39,200
+Necesitará enfriarse.
+
+63
+00:06:39,800 --> 00:06:45,800
+Eso es lógico y qué puedo agregar a todo esto.
+
+64
+00:06:46,040 --> 00:06:55,320
+Para hacer girar este tipo de, esta especie de belleza aparece para nosotros en el oscilograma.
+
+65
+00:06:55,560 --> 00:07:00,880
+Estos picos inferiores, no es difícil sostener y mostrar ahora.
+
+66
+00:07:01,240 --> 00:07:04,380
+Estos picos inferiores, aquí está lo que hay que obtener.
+
+67
+00:07:06,160 --> 00:07:08,200
+Ahora lo expandiremos un poco.
+
+68
+00:07:10,920 --> 00:07:15,040
+Aquí están, o sea aquí está lo que hay que obtener.
+
+69
+00:07:15,760 --> 00:07:19,580
+Esta semionla y entonces todo estará bien.
+
+70
+00:07:19,980 --> 00:07:21,620
+Entonces funcionará como debe.
+
+71
+00:07:22,600 --> 00:07:25,480
+Aquí ahora ven, aquí en cuanto empiezo a cambiar la base.
+
+72
+00:07:26,140 --> 00:07:26,980
+Vean qué tonterías.
+
+73
+00:07:27,380 --> 00:07:30,700
+Y de inmediato todo funciona mal.
+
+74
+00:07:31,320 --> 00:07:33,200
+Así que, cómo medir todo esto.
+
+75
+00:07:33,960 --> 00:07:37,920
+Conectan una sonda a la tierra.
+
+76
+00:07:38,600 --> 00:07:43,820
+Una, así que, la sonda principal la conectan al colector del transistor, la otra a la base.
+
+77
+00:07:44,980 --> 00:07:48,040
+De esta manera podrán saber qué pasa.
+
+78
+00:07:48,480 --> 00:07:53,780
+Así que, ahora salgamos de la base y pongamos la sonda cerca.
+
+79
+00:07:54,320 --> 00:08:00,500
+Bueno sí, aquí la amplitud es bastante grande y ahora veo que aquí todo se sale de escala, caramba.
+
+80
+00:08:01,420 --> 00:08:03,740
+Y está bien que se salga de escala.
+
+81
+00:08:04,600 --> 00:08:06,680
+Ahora veremos qué muestra.
+
+82
+00:08:07,300 --> 00:08:12,080
+Aquí muestra una onda sinusoidal, básicamente.
+
+83
+00:08:13,260 --> 00:08:14,240
+Y esto es normal.
+
+84
+00:08:15,420 --> 00:08:27,380
+O sea, lo que nosotros, básicamente, enviamos son picos, o sea enviamos, y a la salida obtenemos este tipo de onda sinusoidal limpia.
+
+85
+00:08:27,960 --> 00:08:31,460
+Si ahora apagan específicamente este aparato, aquí está.
+
+86
+00:08:32,600 --> 00:08:34,960
+Es una onda sinusoidal limpia, hermosa.
+
+87
+00:08:35,540 --> 00:08:37,260
+3,1 y 6 megahercios.
+
+88
+00:08:37,800 --> 00:08:40,320
+Este tipo de imagen deberían obtener.
+
+89
+00:08:41,060 --> 00:08:43,840
+De lo contrario no obtendrán nada bueno.
+
+90
+00:08:44,140 --> 00:08:52,140
+Si ajustan la base, se nota de inmediato que hay algún tipo de redondeo, algo aparece.
+
+91
+00:08:52,900 --> 00:09:04,980
+Si ajustamos todo normalmente, o sea el valor máximo sale cuando la amplitud crece con la ayuda del resistor.
+
+92
+00:09:05,820 --> 00:09:15,220
+No giren de más, hagan la máxima protección para no quemar el transistor por polarización.
+
+93
+00:09:15,940 --> 00:09:18,700
+Y les digo de inmediato, también tendrán que jugar con la base.
+
+94
+00:09:19,180 --> 00:09:24,820
+Aquí, si miran de cerca, se ve que hay dos resistores soldados juntos.
+
+95
+00:09:25,140 --> 00:09:29,420
+Su resistencia total es un kilo y medio de ohmios.
+
+96
+00:09:29,780 --> 00:09:30,640
+¿Para qué?
+
+97
+00:09:30,940 --> 00:09:31,680
+Ahora explicaré.
+
+98
+00:09:32,260 --> 00:09:42,580
+Esto también ajusta la base y la polarización, también ajusta la resistencia de la Tesla que tendrán aquí.
+
+99
+00:09:42,760 --> 00:09:45,880
+O sea muchos ponen 460 ahí, muchos algo más.
+
+100
+00:09:46,420 --> 00:09:50,700
+De ninguna manera, todo esto tiene que ajustarse, de lo contrario no funcionará.
+
+101
+00:09:51,300 --> 00:09:54,080
+Necesitan obtener una onda sinusoidal limpia a la salida.
+
+102
+00:09:54,540 --> 00:09:57,440
+O sea el Kacher da una onda sinusoidal justo aquí.
+
+103
+00:09:58,140 --> 00:10:01,700
+Aquí está, vean, qué mordida tiene.
+
+104
+00:10:02,460 --> 00:10:08,640
+Cuando conectan una carga normal a la antena, o sea hacen una onda estacionaria normal y todo lo demás.
+
+105
+00:10:08,780 --> 00:10:11,500
+O sea el voltaje subirá un poco, la amplitud saltará.
+
+106
+00:10:12,960 --> 00:10:16,520
+Hay que ocuparse de esto, trabajar un poco.
+
+107
+00:10:16,680 --> 00:10:20,360
+O sea hacer un Kacher simplemente así, pegar un transistor, funcionará.
+
+108
+00:10:20,360 --> 00:10:22,340
+Esto es lo que no está ajustado.
+
+109
+00:10:22,420 --> 00:10:25,120
+Aquí ahora lo enciendo, ya que no está ajustado.
+
+110
+00:10:25,800 --> 00:10:27,440
+Prácticamente no está ajustado.
+
+111
+00:10:27,660 --> 00:10:30,060
+O sea la polarización está removida y todo eso.
+
+112
+00:10:30,160 --> 00:10:31,200
+Aquí miren qué pasa.
+
+113
+00:10:31,420 --> 00:10:32,380
+Ahora presiono.
+
+114
+00:10:32,840 --> 00:10:35,920
+Aquí está, este tipo de chisme, no muy bueno.
+
+115
+00:10:36,220 --> 00:10:38,020
+O sea no se puede hacer así.
+
+116
+00:10:40,140 --> 00:10:41,580
+Apagaré este aparato ahora.
+
+117
+00:10:42,020 --> 00:10:43,780
+Este disparate no debería ser.
+
+118
+00:10:44,540 --> 00:10:48,300
+Este resistor de polarización, miren lo que hace.
+
+119
+00:10:49,160 --> 00:10:50,440
+Lo nivela.
+
+120
+00:10:51,200 --> 00:10:52,500
+Y esto es lo que hay que obtener.
+
+121
+00:10:53,100 --> 00:10:56,240
+Este tipo de pico limpio en la parte inferior.
+
+122
+00:10:56,300 --> 00:10:57,780
+Esta es una semionla que sale.
+
+123
+00:10:58,160 --> 00:10:59,960
+Parece que no lo es.
+
+124
+00:11:00,440 --> 00:11:02,860
+Pero aquí el transistor se cierra, obtienes una caída.
+
+125
+00:11:03,100 --> 00:11:05,880
+Luego de nuevo un aumento brusco, una caída.
+
+126
+00:11:06,340 --> 00:11:07,580
+Este tipo de cosa.
+
+127
+00:11:08,160 --> 00:11:11,100
+En resumen, esto es lo más importante.
+
+128
+00:11:11,440 --> 00:11:13,820
+Muchos se apresuraron ahora, arrollaron Kachers.
+
+129
+00:11:14,000 --> 00:11:15,960
+Todo ya empezó allí, se fue, se alejó.
+
+130
+00:11:16,420 --> 00:11:19,200
+No, chicos, no todo simplemente volará.
+
+131
+00:11:19,500 --> 00:11:21,440
+Digo de inmediato, hay que trabajar un poco.
+
+132
+00:11:22,080 --> 00:11:22,960
+Trabajar, es decir.
+
+133
+00:11:23,080 --> 00:11:23,800
+Y aquí está la medición.
+
+134
+00:11:23,980 --> 00:11:25,640
+Una sonda simplemente la ponemos cerca.
+
+135
+00:11:25,700 --> 00:11:32,160
+De ninguna manera la toquen aquí, porque no todos los osciloscopios, no todas las sondas permiten pinchar aquí en absoluto.
+
+136
+00:11:32,240 --> 00:11:33,720
+Y en general ni siquiera hay que hacer esto.
+
+137
+00:11:34,820 --> 00:11:37,480
+Por cierto, la frecuencia se mantiene muy bien en el Kacher.
+
+138
+00:11:38,440 --> 00:11:46,780
+No olviden que todo está determinado por la longitud del cable, o sea y la longitud de onda.
+
+139
+00:11:47,240 --> 00:11:50,600
+Y será tal, como todo esto está hecho.
+
+140
+00:11:50,660 --> 00:11:53,880
+En cuanto alarguen algo aquí, comienza el baile.
+
+141
+00:11:54,380 --> 00:11:54,700
+Eso es todo.
+
+142
+00:11:55,440 --> 00:11:58,120
+Bueno y naturalmente todo esto irá a la ferrita.
+
+143
+00:12:00,340 --> 00:12:02,220
+Realmente pica, muy doloroso.
+
+144
+00:12:02,760 --> 00:12:07,420
+O sea sienten aquí todo bastante poderoso.
+
+145
+00:12:07,600 --> 00:12:10,700
+La lámpara arde, bueno arde muy brillantemente.
+
+146
+00:12:10,860 --> 00:12:12,540
+O sea prácticamente como en el enchufe.
+
+147
+00:12:13,340 --> 00:12:13,980
+La tocan.
+
+148
+00:12:14,080 --> 00:12:17,360
+Un pequeño arco, da un chispazo, básicamente.
+
+149
+00:12:18,660 --> 00:12:19,560
+Parece que.
+
+150
+00:12:19,740 --> 00:12:25,000
+Pero esto es suficiente para que puedan lanzar el generador.
+
+151
+00:12:25,640 --> 00:12:27,400
+En general adelante, hay que ensamblar el Kacher.
+
+152
+00:12:27,600 --> 00:12:28,600
+Esta es la cosa más importante.
+
+153
+00:12:28,840 --> 00:12:34,720
+O sea un convertidor de alto voltaje.
+
+154
+00:12:35,280 --> 00:12:40,240
+Un generador, que les dará a ustedes y a mí la posibilidad de trabajar con energía radiante más adelante.
+
+155
+00:12:41,140 --> 00:12:45,980
+Quiero recordar una vez más, este generador funciona con energía radiante.
+
+156
+00:12:46,140 --> 00:12:52,260
+Digámoslo como lo dijo Tesla, y no como está en general en todas partes.
+
+157
+00:12:53,960 --> 00:13:01,360
+Por cierto, una refutación más interesante sobre las bombillas atornilladas y que brillan desde una Tesla, resulta que no.
+
+158
+00:13:02,160 --> 00:13:06,180
+O sea Akula publicó un nuevo video donde hay detalles.
+
+159
+00:13:06,520 --> 00:13:07,000
+Curioso.
+
+160
+00:13:07,080 --> 00:13:09,280
+Si acaso, miren su canal.
+
+161
+00:13:11,380 --> 00:13:30,380
+Esto finalmente empieza a disipar todos los rumores que danzan por todas partes y no dan paz a muchas personas envidiosas y gente de la SE, y los copiadores de nombres, por así decirlo, y similares.
+
+162
+00:13:30,780 --> 00:13:33,740
+Una vez más digo, no vendo el esquema por dinero.
+
+163
+00:13:34,280 --> 00:13:35,880
+No cobro ningún dinero por esto.
+
+164
+00:13:36,360 --> 00:13:43,320
+Específicamente la configuración que vieron, BTG No. 2 de Akula, ayudaré a ensamblarla como pueda.
+
+165
+00:13:43,440 --> 00:13:46,200
+Porque ya lo verifiqué una vez, funciona.
+
+166
+00:13:46,960 --> 00:13:48,280
+Sé cómo ajustarlo.
+
+167
+00:13:49,700 --> 00:13:53,360
+Muchas cosas, como dicen, adiviné cómo hacerlas.
+
+168
+00:13:53,860 --> 00:14:07,200
+Y a los aficionados, radioaficionados que entienden algo en este sistema, más precisamente saben cómo, como dicen, sostener un soldador en sus manos y no solo eso, entienden todos los generadores, cómo se ensambla esto.
+
+169
+00:14:07,880 --> 00:14:16,900
+Intentaré ayudarles a ensamblar todo esto, por así decirlo, sin recurrir a ninguna medida especial, como viajes, demostraciones y similares.
+
+170
+00:14:17,480 --> 00:14:20,660
+Todo lo que haya que mostrar en video, lo mostraré.
+
+171
+00:14:21,200 --> 00:14:28,100
+Reuniré a colegas que no están interesados en apoyarme y a todos los que piensan que esto es una falsificación.
+
+172
+00:14:28,760 --> 00:14:38,580
+Chicos, bueno de hecho, aquí ahora ven el funcionamiento de la misma bobina Tesla, sí, o sea por el sistema Kacher de Brovin.
+
+173
+00:14:40,140 --> 00:14:53,580
+Ya es estúpido decir que la energética sin combustible no existe, sí, y un sistema que permite obtener energía del aire.
+
+174
+00:14:53,880 --> 00:14:59,340
+En este caso el medio funciona, sí, o sea la energía radiante funciona.
+
+175
+00:14:59,440 --> 00:15:04,740
+Justo aquí, justo aquí en este extremo, esto es lo radiante y está picando ahora.
+
+176
+00:15:05,220 --> 00:15:05,440
+¿Por qué?
+
+177
+00:15:05,960 --> 00:15:09,120
+Porque, por qué siquiera hablo sobre lo radiante y sobre todo esto.
+
+178
+00:15:09,680 --> 00:15:17,480
+Es así, sí, aquí está lo radiante y lo ven ahora, sí, o sea Tesla lo llamó así.
+
+179
+00:15:18,340 --> 00:15:32,080
+De todos modos, me quedaré con esto y a quien no le guste, lo siento, ese no es mi problema, simplemente digo que este es el inductor, no está conectado a nada en absoluto, debería hacerse incluso más grande de lo que
+
+180
+00:15:32,080 --> 00:15:33,220
+es ahora.
+
+181
+00:15:33,700 --> 00:15:34,800
+Aquí, ¿qué más?
+
+182
+00:15:35,700 --> 00:15:41,760
+Así que, todo esto tiene que ajustarse, miren la amplitud, qué amplitud habrá y ajusten todo esto.
+
+183
+00:15:42,180 --> 00:15:54,020
+Así que, aquí trabaja solo un transistor, bueno y un montón de partes, esto es solo ajuste y desacoplamiento, para que no vayan tonterías aquí a estos, a los terminales.
+
+184
+00:15:54,520 --> 00:16:01,240
+Pero puedo decirles con certeza que este radiante puede convertirse y obtener energía útil de él.
+
+185
+00:16:01,820 --> 00:16:02,800
+Solo hay que saber cómo.
+
+186
+00:16:02,900 --> 00:16:08,280
+Muchos no saben, pero intentaré mostrar.
+
+187
+00:16:08,660 --> 00:16:14,760
+Pero quiero decir de inmediato, la pulcritud de ejecución debe estar allí y las imágenes que les mostré.
+
+188
+00:16:15,600 --> 00:16:22,580
+Eso es todo, buena suerte, adelante y definitivamente nos encontraremos de nuevo en las explicaciones en video y todos podrán ensamblar esto.
+
+189
+00:16:23,020 --> 00:16:27,100
+Sí, aquí hay una cosa más, por cierto, sobre este sistema que devora la tierra.
+
+190
+00:16:27,600 --> 00:16:34,940
+Bueno, posiblemente, si la tubería no está galvanizada, tragará, por supuesto, por eso ahora empezó el alboroto sobre esto.
+
+191
+00:16:35,780 --> 00:16:42,800
+Quiero decir que tendrán que trabajar más, tendrán que deshacerse de este esquema, pero eso es primero.
+
+192
+00:16:43,080 --> 00:16:48,240
+Primero ensamblemos esto, lancémoslo y luego modernizaremos.
+
+193
+00:16:48,400 --> 00:16:57,840
+Y no como, obtuvieron el esquema de Roma-Akula de inmediato, sí, o sea en el que ya ocurrió la modernización y este esquema, no funcionará.
+
+194
+00:16:57,840 --> 00:17:03,680
+Hay una gran cantidad de errores allí que simplemente no les dejarán lanzarlo.
+
+195
+00:17:04,120 --> 00:17:08,800
+Eso es todo, buena suerte y lo más importante, digo una vez más, debe haber ajuste aquí.
+
+196
+00:17:09,080 --> 00:17:22,500
+Hay que ajustar el transistor para que esté en modo normal y desacoplar este choke, este filtro, sí, desacopla completamente la alimentación de este aparato y del positivo y del negativo.
+
+197
+00:17:22,580 --> 00:17:26,060
+Esto es obligatorio, porque en el sistema todo esto será importante.
+
+198
+00:17:27,080 --> 00:17:27,720
+¡Buena suerte!
+
+199
+00:17:27,840 --> 00:17:29,720
+Continuará...
