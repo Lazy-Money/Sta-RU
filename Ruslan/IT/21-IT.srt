@@ -1,0 +1,1255 @@
+1
+00:00:00,990 --> 00:00:04,190
+Ciao a tutti, buona giornata a tutti.
+
+2
+00:00:04,670 --> 00:00:16,330
+Chi guarderà questo video — avevo promesso di rigirarlo, ed eccoci qua a rigirarlo per raccontarvi alcuni dettagli e mostrare in generale come funziona il sistema, come l'ho assemblato e come l'ho capito.
+
+3
+00:00:17,290 --> 00:00:18,770
+Andiamo con ordine.
+
+4
+00:00:19,130 --> 00:00:25,210
+Parliamo di questo schema, lo discutiamo adesso.
+
+5
+00:00:25,330 --> 00:00:26,670
+È un interruttore elettronico.
+
+6
+00:00:26,830 --> 00:00:27,830
+L'ha mostrato Akula.
+
+7
+00:00:28,530 --> 00:00:31,010
+L'ha collegato in un modo e nell'altro, il terzo e il decimo.
+
+8
+00:00:32,310 --> 00:00:34,830
+Fondamentalmente, qui tutto è abbastanza elementare.
+
+9
+00:00:35,550 --> 00:00:37,150
+Due chip lavorano.
+
+10
+00:00:37,470 --> 00:00:42,710
+Uno funziona tramite un comparatore, controllato da un comparatore attraverso un comparatore.
+
+11
+00:00:42,870 --> 00:00:44,530
+Il terzo sul GI è un TL.
+
+12
+00:00:44,790 --> 00:00:50,090
+E sull'ottavo, un HC-14E viene alimentato al GI,
+
+13
+00:00:53,470 --> 00:00:55,010
+C-74HC-14E.
+
+14
+00:00:55,170 --> 00:00:59,210
+Questo chip fornisce il controllo al comparatore di quest'altro chip.
+
+15
+00:00:59,310 --> 00:01:00,710
+È tutto abbastanza semplice.
+
+16
+00:01:00,890 --> 00:01:07,910
+Questo circuito esatto con il comunismo di Akula — praticamente, l'ho assemblato per mostrarlo visivamente.
+
+17
+00:01:08,050 --> 00:01:11,790
+Beh, visto che lo facciamo secondo il suo schema, bisogna farlo tutto in una volta.
+
+18
+00:01:11,970 --> 00:01:15,230
+L'unica cosa che non ho usato è lo stabilizzatore.
+
+19
+00:01:15,310 --> 00:01:16,930
+Al suo posto ho piazzato un componente al silicio qui.
+
+20
+00:01:17,750 --> 00:01:18,290
+Cos'altro?
+
+21
+00:01:18,670 --> 00:01:22,790
+Ho un transistor RFP-460.
+
+22
+00:01:23,690 --> 00:01:29,630
+E i diodi qui non sono FR-607 ma da 10 ampere in questo punto.
+
+23
+00:01:30,150 --> 00:01:34,590
+Tra l'altro, proteggono bene questo punto.
+
+24
+00:01:35,070 --> 00:01:38,590
+Voglio dire, qui questo è esattamente molto importante.
+
+25
+00:01:39,170 --> 00:01:41,330
+Tra l'altro, qui è preferibile selezionare i diodi.
+
+26
+00:01:41,990 --> 00:01:43,590
+Molto importante qui.
+
+27
+00:01:44,110 --> 00:01:47,930
+Non ne servono 2 qui, un diodo è più che sufficiente.
+
+28
+00:01:48,570 --> 00:01:53,150
+Bisogna selezionarlo per non tormentare il diodo interno del transistor.
+
+29
+00:01:53,910 --> 00:01:57,650
+Anche se, in sostanza, si può anche non usarli.
+
+30
+00:01:57,850 --> 00:01:58,750
+Ma meglio metterli.
+
+31
+00:01:59,430 --> 00:02:01,230
+Un diodo di protezione va qui.
+
+32
+00:02:02,130 --> 00:02:04,410
+Voglio dire, preferibilmente più potente è, meglio è.
+
+33
+00:02:04,830 --> 00:02:07,330
+Lo mettiamo e poi alimentiamo tutto questo all'induttore.
+
+34
+00:02:07,970 --> 00:02:11,590
+Proprio qui, in questo punto, uso un condensatore da 1 nanofarad.
+
+35
+00:02:12,030 --> 00:02:12,790
+Proprio qui.
+
+36
+00:02:13,050 --> 00:02:14,870
+Lo disegno adesso, lo mostro.
+
+37
+00:02:15,130 --> 00:02:17,390
+È la regolazione della risonanza.
+
+38
+00:02:18,190 --> 00:02:21,250
+Akula non ce l'ha qui, ma io ce l'ho.
+
+39
+00:02:22,250 --> 00:02:25,050
+Gli impulsi escono un po' più netti, un po' meglio.
+
+40
+00:02:25,190 --> 00:02:27,390
+Ma questo è, come si dice, dipende da come si regola.
+
+41
+00:02:27,990 --> 00:02:30,130
+Fondamentalmente non dovrebbe essere qui.
+
+42
+00:02:30,730 --> 00:02:31,110
+Avanti.
+
+43
+00:02:31,390 --> 00:02:33,250
+L'ingresso del transistor.
+
+44
+00:02:33,370 --> 00:02:39,170
+Ho tolto tutto questo ambaradan da qui e ho messo un driver TC-4420 qui.
+
+45
+00:02:39,290 --> 00:02:47,490
+Funziona meglio e fondamentalmente funziona bene con qualsiasi MOSFET e apre il transistor a effetto di campo bene, come dovrebbe.
+
+46
+00:02:47,610 --> 00:02:48,110
+Cos'altro?
+
+47
+00:02:49,710 --> 00:02:51,110
+Beh, qui è tutto chiaro.
+
+48
+00:02:51,630 --> 00:02:56,170
+Questo chip crea questi impulsi.
+
+49
+00:02:56,470 --> 00:03:02,850
+Cioè, crea un segnale quadro, e il TL crea i burst da solo.
+
+50
+00:03:03,070 --> 00:03:04,890
+È considerato anche quello di uscita.
+
+51
+00:03:05,190 --> 00:03:08,850
+Cioè all'uscita è esattamente questo coso.
+
+52
+00:03:10,490 --> 00:03:15,330
+Come appare questo coso sull'oscilloscopio, se espandi questo all'interno.
+
+53
+00:03:15,810 --> 00:03:16,030
+Così.
+
+54
+00:03:17,630 --> 00:03:19,730
+Qui sono disegnati 4 impulsi.
+
+55
+00:03:19,870 --> 00:03:24,430
+Fondamentalmente puoi renderli grandi, puoi allungarli come vuoi.
+
+56
+00:03:24,550 --> 00:03:27,950
+Si regola tutto con questo chip e questi resistori.
+
+57
+00:03:28,030 --> 00:03:31,550
+Questo allunga, questo imposta la frequenza.
+
+58
+00:03:32,510 --> 00:03:33,410
+O forse il contrario.
+
+59
+00:03:33,530 --> 00:03:36,890
+Non ricordo adesso com'era.
+
+60
+00:03:37,950 --> 00:03:40,950
+Comunque non è molto importante adesso.
+
+61
+00:03:41,690 --> 00:03:42,710
+Selezioniamo i componenti.
+
+62
+00:03:43,650 --> 00:03:49,550
+Qui, se ci pensi un po', puoi fondamentalmente anche metterci 2 TL interi.
+
+63
+00:03:49,710 --> 00:03:50,670
+Cioè uno dentro l'altro.
+
+64
+00:03:50,930 --> 00:03:52,770
+Sarà un generatore dentro un generatore.
+
+65
+00:03:53,130 --> 00:03:55,310
+Beh, questo è fondamentalmente quello che abbiamo.
+
+66
+00:03:56,170 --> 00:03:57,710
+Cos'altro funziona per noi?
+
+67
+00:03:58,510 --> 00:04:03,810
+Quindi, abbiamo questi burst di impulsi, lavorano sulla Tesla.
+
+68
+00:04:04,170 --> 00:04:10,190
+Cioè, alimentando l'induttore della Tesla qui, otteniamo energia qui.
+
+69
+00:04:10,350 --> 00:04:10,590
+Perché?
+
+70
+00:04:10,750 --> 00:04:13,590
+Perché la Tesla entra immediatamente in risonanza.
+
+71
+00:04:13,650 --> 00:04:16,250
+Cioè la facciamo risonare sui burst.
+
+72
+00:04:16,970 --> 00:04:22,710
+Ma la seconda frequenza che la Tesla trasmette è la frequenza di ripetizione di questi burst.
+
+73
+00:04:22,850 --> 00:04:25,910
+Cioè quanto veloce, lentamente va.
+
+74
+00:04:26,250 --> 00:04:27,430
+Cioè a quale frequenza.
+
+75
+00:04:27,670 --> 00:04:33,670
+La Tesla, tra l'altro, faceva questo anche sui suoi tamburi rotanti con spazzole e così via.
+
+76
+00:04:34,150 --> 00:04:37,690
+Noi adesso, naturalmente, da persone civili, facciamo tutto questo su chip.
+
+77
+00:04:37,810 --> 00:04:40,930
+Cioè non ci serve più tutta questa roba.
+
+78
+00:04:41,570 --> 00:04:53,770
+Cos'altro vorrei aggiungere a tutto questo, a tutto questo sistema — beh, di questo hanno scritto che Romanov ha le sue preferenze e considerazioni al riguardo.
+
+79
+00:04:54,270 --> 00:05:02,110
+Per me qui è, tipo, trasmissione di energia elettrica attraverso l'aria, viene fuori, su una distanza.
+
+80
+00:05:02,470 --> 00:05:14,370
+Naturalmente, nessuno ci permetterà di fare un tale sistema in aria adesso e trasmettere elettricità, perché voi stessi capite che l'ispettorato statale delle telecomunicazioni chiuderebbe tutto questo
+
+81
+00:05:14,370 --> 00:05:16,770
+velocemente, perché intasa le frequenze radio.
+
+82
+00:05:17,030 --> 00:05:36,130
+A quei tempi, nel 1900, il 20 marzo, quando questo dispositivo fu brevettato, per così dire, o questo mezzo elettrico di comunicazione, come capiamo, non interferiva in alcun modo con il funzionamento di nessun
+
+83
+00:05:36,130 --> 00:05:39,970
+canale radio, perché in quel momento, apparentemente, non ce n'erano.
+
+84
+00:05:40,550 --> 00:05:48,750
+Non discuteremo dei canali radio e così via adesso, anche se, fondamentalmente, è anche la mia professione, lo faccio a pieno.
+
+85
+00:05:49,230 --> 00:05:50,750
+Radio, FM e così via.
+
+86
+00:05:51,170 --> 00:05:52,930
+Ma questo qui non riguarda l'FM.
+
+87
+00:05:53,110 --> 00:05:54,850
+Più le onde medie, probabilmente, dopotutto.
+
+88
+00:05:55,010 --> 00:05:58,270
+Che, tra l'altro, nel nostro paese hanno spento tutte le onde medie.
+
+89
+00:05:58,370 --> 00:06:01,730
+Una stazione lì pompa qualche propaganda tedesca.
+
+90
+00:06:02,190 --> 00:06:02,790
+Non è importante.
+
+91
+00:06:03,210 --> 00:06:09,270
+Quindi, cosa volevo dire a tutto questo.
+
+92
+00:06:10,370 --> 00:06:13,630
+Come si applica tutto questo per me in generale?
+
+93
+00:06:14,510 --> 00:06:20,170
+La Tesla funziona in modalità di tensione statica, come ho già detto.
+
+94
+00:06:20,390 --> 00:06:21,590
+Non è un Kacher.
+
+95
+00:06:22,070 --> 00:06:23,210
+E non è un Kacher.
+
+96
+00:06:23,490 --> 00:06:24,630
+Un Kacher incontrollato.
+
+97
+00:06:24,690 --> 00:06:32,730
+Non chiamatelo così, perché questo sistema non ha nulla, nulla in comune con un Kacher.
+
+98
+00:06:32,890 --> 00:06:33,490
+Assolutamente.
+
+99
+00:06:33,630 --> 00:06:36,890
+Qui non c'è un oscillatore a blocco, come ho detto.
+
+100
+00:06:37,050 --> 00:06:37,910
+Eccolo, prego.
+
+101
+00:06:38,770 --> 00:06:43,850
+C'è il driver, c'è il TL, qui c'è il chip NC-14.
+
+102
+00:06:44,010 --> 00:06:52,190
+Ci sono degli switch per i condensatori, così si possono cambiare le posizioni in banda larga.
+
+103
+00:06:52,270 --> 00:06:53,510
+Cos'altro ho qui?
+
+104
+00:06:53,770 --> 00:06:55,250
+È la scheda di alimentazione.
+
+105
+00:06:55,630 --> 00:06:59,730
+Qui c'è una specie di distribuzione e tutto converge in un punto.
+
+106
+00:07:00,010 --> 00:07:02,050
+Cioè con tutti questi condensatori.
+
+107
+00:07:02,410 --> 00:07:05,690
+Qui, dunque, i fusibili necessari.
+
+108
+00:07:06,450 --> 00:07:08,550
+Si potrebbe dirlo così.
+
+109
+00:07:08,670 --> 00:07:12,250
+È sia il driver che l'alimentatore per la Tesla allo stesso tempo.
+
+110
+00:07:12,490 --> 00:07:21,610
+Su questo trasformatore ho avvolto diverse bobine per alimentare la Tesla con alta tensione.
+
+111
+00:07:22,010 --> 00:07:24,730
+Era molto necessario qui.
+
+112
+00:07:25,550 --> 00:07:29,710
+E qui va anche al driver.
+
+113
+00:07:30,210 --> 00:07:33,410
+Questo va a questa bobina e anche a quest'altra.
+
+114
+00:07:33,630 --> 00:07:41,990
+Questa bobina è importante perché funge da induttore, su cui fondamentalmente agisce tutto.
+
+115
+00:07:42,350 --> 00:07:45,530
+È difficile chiamarla induttore — probabilmente non la chiameremo induttore.
+
+116
+00:07:45,730 --> 00:07:52,730
+È semplicemente una Tesla avvolta alla lunghezza d'onda per questa Tesla.
+
+117
+00:07:52,790 --> 00:07:53,370
+Cos'altro?
+
+118
+00:07:53,890 --> 00:07:54,670
+L'alimentatore.
+
+119
+00:07:54,890 --> 00:08:00,310
+Qualcuno ha detto che ho nascosto delle batterie dentro.
+
+120
+00:08:00,710 --> 00:08:02,030
+Beh, pura idiozia.
+
+121
+00:08:02,150 --> 00:08:04,270
+Prima di tutto, è sigillato.
+
+122
+00:08:04,690 --> 00:08:07,530
+Per meglio dire, incollato.
+
+123
+00:08:07,650 --> 00:08:08,830
+Non l'ho nemmeno smontato.
+
+124
+00:08:08,930 --> 00:08:13,890
+L'ho tirato fuori dalla confezione, ed è quello che è.
+
+125
+00:08:13,990 --> 00:08:19,130
+Posso tastarlo con un tester e misurare e mostrare che qui non c'è tensione.
+
+126
+00:08:19,630 --> 00:08:22,710
+Nessuna da nessuna parte adesso, niente.
+
+127
+00:08:23,090 --> 00:08:28,130
+E non la troverete da nessuna parte qui finché non colleghiamo l'alimentatore.
+
+128
+00:08:28,270 --> 00:08:31,450
+Chiedono perché è collegato qui da me.
+
+129
+00:08:31,570 --> 00:08:33,830
+Beh, il fatto è che questo vetronite è monostrato.
+
+130
+00:08:34,370 --> 00:08:36,890
+Qui tutto è bello, e su quell'altro lato è solo liscio.
+
+131
+00:08:37,530 --> 00:08:39,550
+Beh, foglio di rame.
+
+132
+00:08:39,750 --> 00:08:40,170
+Beh, che vuoi farci.
+
+133
+00:08:40,290 --> 00:08:42,270
+Qui lo aggancio con una clip a coccodrillo.
+
+134
+00:08:42,350 --> 00:08:43,210
+È il terminale negativo.
+
+135
+00:08:43,310 --> 00:08:44,090
+È come il comune.
+
+136
+00:08:44,470 --> 00:08:47,690
+Beh, qualcosa di non… Questo l'hanno chiamato batteria.
+
+137
+00:08:47,830 --> 00:08:49,210
+Beh, scusate, ragazzi.
+
+138
+00:08:49,370 --> 00:08:50,430
+Cioè, fesserie totali.
+
+139
+00:08:50,570 --> 00:08:51,750
+È un condensatore.
+
+140
+00:08:52,210 --> 00:08:53,490
+L'ho girato, mostro.
+
+141
+00:08:54,050 --> 00:08:55,310
+12 microfarad.
+
+142
+00:08:55,830 --> 00:08:57,350
+Perché c'è un ponte di diodi?
+
+143
+00:08:58,010 --> 00:09:02,050
+Tutta questa roba va direttamente all'alimentatore.
+
+144
+00:09:02,450 --> 00:09:08,910
+Il ponte di diodi c'è perché, essendo ad alta frequenza, ci sono grandi perdite sul filo in quel momento.
+
+145
+00:09:09,130 --> 00:09:15,110
+Cioè, io tipo… Beh, capite voi stessi, ad alta frequenza le perdite sui fili sono grandi.
+
+146
+00:09:15,230 --> 00:09:17,870
+Cioè, bisogna capire che distanza.
+
+147
+00:09:17,910 --> 00:09:19,130
+Ancora, la lunghezza d'onda.
+
+148
+00:09:19,250 --> 00:09:20,410
+Pur avvolgi bobine, dopotutto.
+
+149
+00:09:20,950 --> 00:09:24,550
+Per questo motivo c'è un filo lungo fino alle lampadine.
+
+150
+00:09:24,630 --> 00:09:26,970
+Posso spostarle fuori, invece di montarle proprio qui.
+
+151
+00:09:27,450 --> 00:09:29,670
+Che è fondamentalmente quello che ho fatto con il vecchio impianto.
+
+152
+00:09:30,230 --> 00:09:33,150
+Ho preso queste lampadine che avevo preparato sulla scheda.
+
+153
+00:09:33,810 --> 00:09:34,790
+Eccole, qui.
+
+154
+00:09:35,510 --> 00:09:36,450
+Il sistema è seduto qui.
+
+155
+00:09:36,550 --> 00:09:38,490
+Sono venuto appositamente a rigirare il video.
+
+156
+00:09:39,630 --> 00:09:41,570
+E a vedere in generale come funziona.
+
+157
+00:09:42,250 --> 00:09:46,710
+Prima di venire qui, dovevo fare altre cose.
+
+158
+00:09:47,430 --> 00:09:50,290
+E l'ho acceso, non voleva funzionare.
+
+159
+00:09:50,770 --> 00:09:51,870
+C'era qualcosa.
+
+160
+00:09:51,990 --> 00:09:53,330
+Ma l'ho regolato più o meno.
+
+161
+00:09:53,510 --> 00:09:59,370
+Cioè, ne ho uno di questi — venduto con le sonde — un aggeggio interessante, un cacciavite di plastica così.
+
+162
+00:09:59,450 --> 00:10:01,010
+L'ho ritoccato, tutto è partito.
+
+163
+00:10:02,510 --> 00:10:05,710
+Allora, cos'altro vorrei dire.
+
+164
+00:10:06,550 --> 00:10:10,070
+Chiedono perché si parte dall'alimentatore e non da una batteria.
+
+165
+00:10:10,170 --> 00:10:14,350
+Beh, le batterie sono da qualche parte qui sul mio davanzale.
+
+166
+00:10:14,490 --> 00:10:20,190
+Io, dopo aver comprato l'alimentatore, ho smesso del tutto di caricare queste batterie.
+
+167
+00:10:20,230 --> 00:10:22,210
+Da questi piccoli alimentatori.
+
+168
+00:10:22,330 --> 00:10:23,970
+Perché sono un ampere ciascuno e questo è poco.
+
+169
+00:10:24,650 --> 00:10:28,970
+Era per esperimenti, capite voi stessi, e soprattutto 15 volt da uno.
+
+170
+00:10:28,970 --> 00:10:33,570
+Se ne metti due in parallelo, allora 15 volt è anche troppo poco.
+
+171
+00:10:33,650 --> 00:10:37,810
+Posso avviarlo da una batteria, fondamentalmente, senza accendere l'alimentatore.
+
+172
+00:10:37,950 --> 00:10:40,090
+Qui è da parte adesso.
+
+173
+00:10:40,370 --> 00:10:41,270
+Tutto è scollegato.
+
+174
+00:10:42,450 --> 00:10:49,470
+Adesso prendiamo delle sonde e colleghiamo.
+
+175
+00:10:49,550 --> 00:10:50,090
+Nessun problema.
+
+176
+00:10:50,770 --> 00:10:52,910
+Cioè, nessun problema di nessun tipo.
+
+177
+00:10:53,090 --> 00:10:54,390
+Eccola, questa è una sonda.
+
+178
+00:10:55,250 --> 00:10:57,790
+Beh, cioè, sono due clip a coccodrillo su entrambe le estremità.
+
+179
+00:10:58,070 --> 00:11:03,050
+Adesso agganciamo tutto questo impianto qui e colleghiamo e avviamo.
+
+180
+00:11:03,450 --> 00:11:04,690
+Proviamo, almeno.
+
+181
+00:11:05,730 --> 00:11:07,430
+Si fa tutto allo stesso modo.
+
+182
+00:11:08,530 --> 00:11:11,290
+Poi tolgo la batteria, se volete.
+
+183
+00:11:11,630 --> 00:11:12,190
+Nessun problema.
+
+184
+00:11:13,050 --> 00:11:17,210
+Okay, beh, proviamo ad accenderlo.
+
+185
+00:11:18,370 --> 00:11:21,130
+In qualche modo
+
+186
+00:11:26,660 --> 00:11:30,720
+non vuole, non parte nemmeno.
+
+187
+00:11:31,380 --> 00:11:32,000
+Strano.
+
+188
+00:11:33,980 --> 00:11:37,860
+Ah, capito, è da 12 volt.
+
+189
+00:11:38,120 --> 00:11:42,780
+Ho bisogno di circa 15 volt perché il sistema parta.
+
+190
+00:11:43,380 --> 00:11:44,620
+Capito, okay.
+
+191
+00:11:44,880 --> 00:11:49,060
+Quindi, scusate, ragazzi, da una batteria non vola.
+
+192
+00:11:49,420 --> 00:11:50,940
+Il coso non parte.
+
+193
+00:11:51,940 --> 00:11:54,540
+Okay, non vuole, pazienza.
+
+194
+00:11:54,920 --> 00:11:56,380
+Probabilmente è morta lì.
+
+195
+00:11:56,480 --> 00:11:57,700
+Non la carico da molto tempo.
+
+196
+00:11:58,480 --> 00:12:00,440
+Beh, proviamo dall'alimentatore.
+
+197
+00:12:00,780 --> 00:12:03,320
+Lo prendiamo, si parte a 15 volt.
+
+198
+00:12:03,660 --> 00:12:06,340
+Sì, cioè, beh, da questo ho 14 volt.
+
+199
+00:12:07,200 --> 00:12:11,160
+Più c'è un diodo, ma senza il diodo non riesco ad avviarlo.
+
+200
+00:12:11,600 --> 00:12:14,000
+Questo è sbagliato, già.
+
+201
+00:12:14,140 --> 00:12:19,240
+Cioè, sull'alimentatore in quel momento la protezione scatta e basta, e non riesce ad avviarsi.
+
+202
+00:12:19,980 --> 00:12:22,460
+Quindi, aha, si è acceso.
+
+203
+00:12:23,820 --> 00:12:25,220
+Quindi, e dov'è l'autoalimentazione?
+
+204
+00:12:26,840 --> 00:12:27,840
+Non vuole.
+
+205
+00:12:28,780 --> 00:12:29,440
+Che cavolo?
+
+206
+00:12:30,600 --> 00:12:31,960
+Aha, qui la corrente è alta.
+
+207
+00:12:33,480 --> 00:12:34,700
+Si è rotto l'alimentatore?
+
+208
+00:12:34,700 --> 00:12:35,360
+No.
+
+209
+00:12:36,800 --> 00:12:38,520
+No, c'è un picco.
+
+210
+00:12:38,740 --> 00:12:39,860
+Ah, forse no.
+
+211
+00:12:40,040 --> 00:12:40,480
+Strano.
+
+212
+00:12:41,680 --> 00:12:42,400
+Che cavolo?
+
+213
+00:12:42,700 --> 00:12:43,880
+Sembra che tutto sia acceso.
+
+214
+00:12:47,540 --> 00:12:48,800
+Capito, insomma.
+
+215
+00:12:49,100 --> 00:12:51,380
+Bisogna accenderlo, regolarlo.
+
+216
+00:12:51,560 --> 00:12:54,240
+La solita storia di prima.
+
+217
+00:12:55,560 --> 00:12:57,700
+Beh, comunque, adesso facciamo questo.
+
+218
+00:12:58,520 --> 00:13:01,140
+Non è un grosso problema.
+
+219
+00:13:01,540 --> 00:13:06,740
+Quindi, avevo un'altra prolunga per la sonda da qualche parte qui.
+
+220
+00:13:06,980 --> 00:13:07,620
+La troviamo adesso.
+
+221
+00:13:07,800 --> 00:13:08,320
+Un momento.
+
+222
+00:13:09,780 --> 00:13:11,480
+Molto difficile.
+
+223
+00:13:21,230 --> 00:13:21,630
+Non c'è.
+
+224
+00:13:21,870 --> 00:13:22,230
+Ah, eccola.
+
+225
+00:13:22,510 --> 00:13:23,030
+Beh, okay.
+
+226
+00:13:25,770 --> 00:13:28,910
+Quindi, proviamo a collegare.
+
+227
+00:13:30,770 --> 00:13:32,970
+Adesso sto avviando il sistema, privatamente.
+
+228
+00:13:33,650 --> 00:13:33,650
+Guardate.
+
+229
+00:13:36,190 --> 00:13:38,210
+Quindi, adesso lo ritocchiamo.
+
+230
+00:13:39,150 --> 00:13:40,910
+È molto probabile che la Tesla si sia spostata.
+
+231
+00:13:43,050 --> 00:13:47,890
+Qui prendo il duty cycle sugli impulsi adesso.
+
+232
+00:13:48,170 --> 00:13:49,130
+Lo ritocco adesso.
+
+233
+00:13:49,170 --> 00:13:50,870
+Qui, guardate cosa sta succedendo per noi.
+
+234
+00:13:52,490 --> 00:13:54,210
+Quindi, sì, sta andando spazzatura.
+
+235
+00:13:54,450 --> 00:13:55,510
+Davvero spazzatura.
+
+236
+00:13:56,410 --> 00:13:58,350
+Ecco perché lui, il maledetto, non vuole.
+
+237
+00:13:58,670 --> 00:13:59,010
+Bene.
+
+238
+00:14:00,590 --> 00:14:01,230
+Aha, ecco.
+
+239
+00:14:03,210 --> 00:14:03,770
+Quindi.
+
+240
+00:14:06,930 --> 00:14:08,990
+Quindi, e guardiamo cosa abbiamo.
+
+241
+00:14:11,070 --> 00:14:11,850
+Lo ritocchiamo adesso.
+
+242
+00:14:12,070 --> 00:14:12,590
+Proviamo.
+
+243
+00:14:12,590 --> 00:14:18,050
+Quindi, beh, il sistema, già, in qualche modo non vuole.
+
+244
+00:14:18,190 --> 00:14:18,670
+Niente da fare.
+
+245
+00:14:20,010 --> 00:14:21,210
+Adesso proviamo.
+
+246
+00:14:25,370 --> 00:14:26,050
+Quindi.
+
+247
+00:14:26,050 --> 00:14:27,630
+Ah, ecco, quindi.
+
+248
+00:14:30,210 --> 00:14:31,630
+Quindi, quindi, quindi, quindi, quindi.
+
+249
+00:14:33,150 --> 00:14:35,710
+Proviamo a ritoccarlo un po' ancora una volta.
+
+250
+00:14:37,290 --> 00:14:38,690
+Ho questo.
+
+251
+00:14:40,910 --> 00:14:41,430
+Proviamo.
+
+252
+00:14:43,370 --> 00:14:47,870
+Quindi, beh, tipo, a giudicare — ho questo tipo di oscilloscopio, onestamente.
+
+253
+00:14:48,050 --> 00:14:50,870
+Lui, qui, vedi, mi avvicino, tutto cambia.
+
+254
+00:14:52,210 --> 00:14:54,850
+Quindi, ah, tra l'altro, è partito, la corrente è scesa.
+
+255
+00:14:55,170 --> 00:14:57,410
+Vedi, la corrente è scesa, si può lasciare.
+
+256
+00:14:58,270 --> 00:14:58,850
+La corrente è scesa.
+
+257
+00:14:59,350 --> 00:15:01,970
+Ecco, funziona in ordine.
+
+258
+00:15:02,930 --> 00:15:05,690
+Beh, come sempre, bisogna prendere la lampadina, già.
+
+259
+00:15:05,870 --> 00:15:07,210
+Ecco, è in autoalimentazione.
+
+260
+00:15:07,330 --> 00:15:08,610
+Posso spegnere l'alimentatore.
+
+261
+00:15:09,230 --> 00:15:09,710
+La corrente è scesa.
+
+262
+00:15:10,350 --> 00:15:10,910
+Tutto bene.
+
+263
+00:15:11,730 --> 00:15:11,930
+Ecco.
+
+264
+00:15:13,030 --> 00:15:13,730
+Il sistema funziona.
+
+265
+00:15:14,650 --> 00:15:16,890
+Ecco, questo è già successo una volta oggi.
+
+266
+00:15:17,710 --> 00:15:22,330
+Ma vi dico, tra l'altro, ha dei glitch, vedo.
+
+267
+00:15:23,230 --> 00:15:24,330
+E adesso si spegnerà.
+
+268
+00:15:25,470 --> 00:15:27,490
+Ecco, vedi, cioè, tutti questi.
+
+269
+00:15:28,070 --> 00:15:33,890
+Quindi, ecco, la nostra autoalimentazione è finita.
+
+270
+00:15:35,650 --> 00:15:36,830
+Non funziona niente.
+
+271
+00:15:37,510 --> 00:15:40,230
+Beh, okay, adesso lo accendiamo ancora una volta.
+
+272
+00:15:42,070 --> 00:15:42,970
+Aha, la corrente è scesa.
+
+273
+00:15:44,270 --> 00:15:46,070
+Bisogna regolare un pochino.
+
+274
+00:15:47,350 --> 00:15:49,790
+Perché qui, fondamentalmente, si fa così.
+
+275
+00:15:49,870 --> 00:15:53,070
+Vedi, mostra corrente zero, già, cioè non c'è corrente.
+
+276
+00:15:53,770 --> 00:15:57,670
+Beh, c'è qualcosa di debole, ma è solo ausiliario.
+
+277
+00:15:57,770 --> 00:16:03,570
+Ecco, adesso se cresce, significa che non va bene, cioè si spegnerà presto.
+
+278
+00:16:04,530 --> 00:16:06,950
+Quindi, osserviamo.
+
+279
+00:16:06,950 --> 00:16:08,030
+Aha, ecco.
+
+280
+00:16:09,930 --> 00:16:11,270
+Ecco, in ordine.
+
+281
+00:16:11,850 --> 00:16:12,950
+Ah, là la corrente è salita.
+
+282
+00:16:13,910 --> 00:16:14,910
+La corrente è salita.
+
+283
+00:16:17,010 --> 00:16:18,010
+Quindi, questo fa schifo.
+
+284
+00:16:19,890 --> 00:16:21,390
+Questo fa molto schifo.
+
+285
+00:16:23,570 --> 00:16:24,550
+Per essere sinceri.
+
+286
+00:16:27,670 --> 00:16:30,450
+Quindi, regolo.
+
+287
+00:16:32,650 --> 00:16:34,590
+Qualcosa non va qui per me.
+
+288
+00:16:35,750 --> 00:16:37,650
+Quindi, è diventato solo mezzo ampere.
+
+289
+00:16:38,950 --> 00:16:40,670
+Beh, potrebbe finire male.
+
+290
+00:16:44,850 --> 00:16:54,390
+Quindi, mostro cosa sto regolando, così voi… Fondamentalmente, tocco solo la regolazione della Tesla.
+
+291
+00:16:56,230 --> 00:16:57,970
+Qui è iniziato qualche glitch.
+
+292
+00:16:59,830 --> 00:17:02,170
+Che cazzo è questo, non riesco a capirlo.
+
+293
+00:17:06,620 --> 00:17:07,620
+Spazzatura totale.
+
+294
+00:17:07,860 --> 00:17:08,760
+Ah, capito.
+
+295
+00:17:09,780 --> 00:17:13,760
+Beh, adesso forse tutto si fermerà.
+
+296
+00:17:15,600 --> 00:17:17,420
+Già, esattamente, quello era un fallimento.
+
+297
+00:17:18,700 --> 00:17:19,280
+Okay.
+
+298
+00:17:21,840 --> 00:17:24,180
+Beh, comunque, sono iniziati i glitch.
+
+299
+00:17:24,820 --> 00:17:31,540
+Già, cioè posso dire che il sistema è instabile nel senso che c'è qualcosa da regolare qui.
+
+300
+00:17:32,060 --> 00:17:35,600
+Lo regolerò adesso e girerò di nuovo il video, perché è molto difficile.
+
+301
+00:17:35,680 --> 00:17:39,520
+Non ho un treppiede su cui appoggiarlo.
+
+302
+00:17:41,160 --> 00:17:45,040
+E non c'è neanche motivo di tenervi inutilmente.
+
+303
+00:17:45,500 --> 00:17:49,360
+Quindi, adesso nel prossimo video mostrerò come il sistema funziona correttamente e tutto il resto.
+
+304
+00:17:49,560 --> 00:17:54,580
+Dovrò regolarlo un po', perché qualcosa non va qui.
+
+305
+00:17:55,840 --> 00:18:10,820
+Beh, come ho detto, i generatori qui si spostano e bisogna regolare, perché ho spostato un po' la Tesla qui e lei, purtroppo, dà dei guasti.
+
+306
+00:18:11,140 --> 00:18:11,480
+Adesso di nuovo.
+
+307
+00:18:12,900 --> 00:18:13,860
+Quindi, ancora una volta dico.
+
+308
+00:18:14,500 --> 00:18:22,200
+Non ci sono fili qui, nessun filo extra e non è collegata a niente.
+
+309
+00:18:22,940 --> 00:18:25,020
+Qui tutto è com'è.
+
+310
+00:18:25,300 --> 00:18:27,960
+Lo avvio dall'alimentatore, perché 15 volt.
+
+311
+00:18:28,920 --> 00:18:32,880
+12 è troppo poco, chiaramente la batteria lì è morta.
+
+312
+00:18:33,840 --> 00:18:34,860
+Quindi, un momento adesso.
+
+313
+00:18:35,680 --> 00:18:36,620
+Proviamo ancora una volta.
+
+314
+00:18:36,620 --> 00:18:41,200
+Il prossimo video sarà, penso, già completamente in autoalimentazione.
