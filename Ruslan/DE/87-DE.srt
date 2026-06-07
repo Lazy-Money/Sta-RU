@@ -1,0 +1,1303 @@
+1
+00:00:01,840 --> 00:00:02,980
+Hallo an alle.
+
+2
+00:00:03,560 --> 00:00:05,020
+Ich habe das Schema versprochen.
+
+3
+00:00:05,260 --> 00:00:06,640
+Hier habe ich es gezeichnet.
+
+4
+00:00:06,740 --> 00:00:08,360
+Leider ist mein sPlan abgestürzt.
+
+5
+00:00:09,480 --> 00:00:11,120
+Ich muss den Computer neu installieren.
+
+6
+00:00:11,380 --> 00:00:13,860
+Und leider bin ich jetzt hier mit meinem sPlan so weit.
+
+7
+00:00:14,160 --> 00:00:15,500
+Ich zeichne keine Schaltpläne.
+
+8
+00:00:15,600 --> 00:00:17,460
+Ich bin kein besonderer Zeichner.
+
+9
+00:00:17,720 --> 00:00:21,660
+Ich zeichne es so, wie es ist.
+
+10
+00:00:21,740 --> 00:00:25,440
+Ich erzähle euch ein bisschen und stelle dieses Schema ein, damit ihr es sehen könnt.
+
+11
+00:00:27,980 --> 00:00:30,900
+Also, fangen wir mit dem Wichtigsten an.
+
+12
+00:00:31,000 --> 00:00:32,080
+Der Pumpgenerator.
+
+13
+00:00:32,460 --> 00:00:35,880
+Der Pumpgenerator ist mit zwei Push-Pull-Transistoren aufgebaut.
+
+14
+00:00:36,560 --> 00:00:43,680
+Das Wichtigste ist, vergess nicht, wenn ihr einen TL verwendet, vergesst nicht, einen Treiber einzubauen.
+
+15
+00:00:43,940 --> 00:00:47,600
+Ein Treiber ist eine sehr gute Sache, sehr zuverlässig.
+
+16
+00:00:47,960 --> 00:00:50,940
+So einer, ein TC4420.
+
+17
+00:00:51,640 --> 00:00:54,700
+Ein Kollege hat mich hier wirklich gut unterrichtet.
+
+18
+00:00:54,740 --> 00:00:56,340
+So ein kleiner Mikrochip.
+
+19
+00:00:56,620 --> 00:00:58,220
+Das ist sehr praktisch.
+
+20
+00:00:58,300 --> 00:01:01,120
+Wenn ihr ihn einbaut, wird es einfach wunderbar.
+
+21
+00:01:01,260 --> 00:01:03,440
+Die Transistoren öffnen und schließen so, wie sie sollen.
+
+22
+00:01:04,520 --> 00:01:06,700
+Das System macht man am besten mit 12 Volt.
+
+23
+00:01:06,740 --> 00:01:07,960
+Kein Grund, sich jetzt zu beeilen.
+
+24
+00:01:08,120 --> 00:01:10,220
+Später dreht ihr die Leistung hoch und so weiter.
+
+25
+00:01:10,320 --> 00:01:12,480
+Nun, wenn ihr wollt, könnt ihr auch 24 Volt machen.
+
+26
+00:01:12,700 --> 00:01:18,160
+Und der RF260 und die Transistoren erlauben es, diese Leistung gut zu entwickeln.
+
+27
+00:01:18,480 --> 00:01:21,180
+Ich meine, bei dieser Spannung hochzudrehen.
+
+28
+00:01:21,480 --> 00:01:24,900
+Die brennen nicht durch, so wie andere durchbrennen.
+
+29
+00:01:25,400 --> 00:01:30,920
+Hier ist noch einer, der sich sehr gut bewährt hat, ich bringe meine Worte durcheinander, der Transistor 3710.
+
+30
+00:01:31,200 --> 00:01:34,020
+Ich meine, er ist auch sehr zuverlässig.
+
+31
+00:01:34,080 --> 00:01:36,040
+Den ich jedem empfehle zu verwenden.
+
+32
+00:01:36,880 --> 00:01:38,540
+Über den Push-Pull.
+
+33
+00:01:42,940 --> 00:01:49,600
+Diese Art von Generator, also, das Einzige ist, der Ring hat hier natürlich nicht gepasst, das ist falsch.
+
+34
+00:01:49,720 --> 00:01:50,780
+Das alles funktioniert.
+
+35
+00:01:51,340 --> 00:01:53,400
+Hier ist auch ein TL, das heißt, man sieht ihn.
+
+36
+00:01:53,800 --> 00:01:55,340
+Hier könnt ihr schauen.
+
+37
+00:01:55,780 --> 00:01:58,220
+Dort ist der Treiber versteckt.
+
+38
+00:01:58,600 --> 00:01:59,480
+Hier, so.
+
+39
+00:02:00,420 --> 00:02:06,460
+Hier hat mir ein Kollege geholfen, er hat diesen Generator gebaut.
+
+40
+00:02:07,540 --> 00:02:11,920
+Das Einzige ist, dieses Zeug muss entfernt und ein normales Poti eingebaut werden.
+
+41
+00:02:12,620 --> 00:02:15,260
+Wie wir beide es grundsätzlich verwenden.
+
+42
+00:02:15,440 --> 00:02:16,520
+Warum ein Poti?
+
+43
+00:02:16,600 --> 00:02:17,320
+Jetzt sag ich's euch.
+
+44
+00:02:19,880 --> 00:02:21,520
+Was ist gut an dem Poti?
+
+45
+00:02:21,860 --> 00:02:23,720
+Das Poti muss groß sein.
+
+46
+00:02:24,060 --> 00:02:27,580
+Ich meine die Spannung an den Wicklungen genau an dieser Stelle.
+
+47
+00:02:28,560 --> 00:02:31,560
+Hier, vergesst nicht, 2 Volt pro Windung.
+
+48
+00:02:31,680 --> 00:02:37,540
+Wenn ihr ein 24-Volt-System macht, dann natürlich 12 Windungen hier jedes Mal.
+
+49
+00:02:37,820 --> 00:02:38,880
+Ich meine genau an dieser Stelle.
+
+50
+00:02:39,480 --> 00:02:43,840
+Wenn ihr 24 Volt macht, dann 12 Windungen.
+
+51
+00:02:43,960 --> 00:02:47,360
+Wenn 12 Volt, dann sind 6 Windungen je durchaus ausreichend.
+
+52
+00:02:48,220 --> 00:02:49,100
+Was noch?
+
+53
+00:02:49,340 --> 00:02:52,200
+Hier 25-28 Windungen.
+
+54
+00:02:52,360 --> 00:02:54,400
+2,5 Quadratmillimeter Draht.
+
+55
+00:02:54,880 --> 00:02:59,240
+Wir wickeln es hier in Isolierung und gewinnen Energie.
+
+56
+00:02:59,420 --> 00:03:02,220
+Ich meine, eine gewisse Spannung wird definitiv da sein.
+
+57
+00:03:03,280 --> 00:03:04,380
+Die Resonanzspule.
+
+58
+00:03:04,680 --> 00:03:07,140
+Sie wird auch über dem Poti gewickelt, wie üblich.
+
+59
+00:03:07,460 --> 00:03:08,720
+Und sie hat irgendwo um die 3 Windungen.
+
+60
+00:03:09,020 --> 00:03:10,860
+Ihr könnt 4 machen, aber besser 3 Windungen.
+
+61
+00:03:10,980 --> 00:03:11,560
+Mehr wird nicht gebraucht.
+
+62
+00:03:11,740 --> 00:03:14,180
+Die Hauptsache für uns ist, Resonanz zu bekommen.
+
+63
+00:03:14,900 --> 00:03:16,040
+Wir wählen den Kondensator aus.
+
+64
+00:03:16,200 --> 00:03:20,760
+Kondensatoren, nochmals, ich rate euch, empfehle, diese Art von Kondensatoren zu verwenden.
+
+65
+00:03:20,860 --> 00:03:24,120
+Er hat 2000 Volt Gleichspannung, 700 Volt Wechselspannung.
+
+66
+00:03:24,820 --> 00:03:27,160
+Ich meine 0,47 Mikrofarad.
+
+67
+00:03:27,160 --> 00:03:29,600
+Ideal geeignet für diese Zwecke.
+
+68
+00:03:29,720 --> 00:03:32,140
+Ich habe einen Haufen davon gekauft und sie funktionieren sehr gut.
+
+69
+00:03:32,460 --> 00:03:33,980
+Ich empfehle sie zu verwenden.
+
+70
+00:03:35,020 --> 00:03:36,480
+Alle anderen funktionieren schlecht.
+
+71
+00:03:37,440 --> 00:03:39,540
+Was wollte ich noch sagen?
+
+72
+00:03:40,780 --> 00:03:43,220
+Diese Spule wisst ihr alle, wie man sie wickelt.
+
+73
+00:03:43,500 --> 00:03:46,060
+Der Bifilar wurde bereits bei Strannik gepostet.
+
+74
+00:03:46,600 --> 00:03:48,080
+Vergesst nicht, die Drossel zu wickeln.
+
+75
+00:03:48,180 --> 00:03:55,900
+Sie muss so gewählt werden, dass die Frequenz... Ihr müsst die Frequenz hier nicht hochdrehen.
+
+76
+00:03:56,080 --> 00:03:58,940
+Wenn ihr die Frequenz hochdreht, seid ihr an die Erde gebunden.
+
+77
+00:03:59,620 --> 00:04:03,960
+Hier wohnt jemand im fünften Stock, das heißt, da gibt es schon Probleme mit der Erde.
+
+78
+00:04:04,620 --> 00:04:06,300
+Macht euch keinen Kopf über diesen Unsinn.
+
+79
+00:04:06,500 --> 00:04:09,960
+Die Frequenz muss 15 Kilohertz sein, gut 18 maximal.
+
+80
+00:04:10,020 --> 00:04:11,840
+Man muss nicht hoch klettern.
+
+81
+00:04:12,420 --> 00:04:14,300
+Entsprechend wickeln wir die Spule so.
+
+82
+00:04:14,600 --> 00:04:17,960
+Hier, nun, wie viel Draht hatte ich ungefähr?
+
+83
+00:04:18,420 --> 00:04:19,800
+Das sind ungefähr 20 Meter Draht.
+
+84
+00:04:20,000 --> 00:04:22,560
+Ich meine, ihr wickelt es auf dieses hier.
+
+85
+00:04:23,440 --> 00:04:25,200
+Berechnet auch diesen Bifilar.
+
+86
+00:04:25,860 --> 00:04:27,600
+Das heißt, das ist eine Bifilarspule.
+
+87
+00:04:28,640 --> 00:04:37,520
+Sie muss, nun, ihre Frequenz muss irgendwo bei 4,6 Megahertz liegen, unter Berücksichtigung aller Verkürzungen und dergleichen.
+
+88
+00:04:37,840 --> 00:04:42,020
+Das heißt, die dritte Harmonische muss dann an eurem Kacher liegen.
+
+89
+00:04:42,300 --> 00:04:43,200
+Der Kacher wird hier sein.
+
+90
+00:04:43,380 --> 00:04:46,240
+Das heißt, ich erzähle über mein System, wie es bei mir funktioniert.
+
+91
+00:04:47,000 --> 00:04:48,880
+Also ist dieses Ding bei mir nicht eingebaut.
+
+92
+00:04:49,220 --> 00:04:50,420
+Aber vielleicht wird es gebraucht.
+
+93
+00:04:50,640 --> 00:04:52,880
+Das heißt, damit muss experimentiert werden.
+
+94
+00:04:52,900 --> 00:04:53,840
+Das ist die Antenne.
+
+95
+00:04:53,980 --> 00:04:58,080
+Dann geht es genau hier hin und kommt beim Kacher an.
+
+96
+00:04:58,140 --> 00:04:59,800
+Der Kacher verwendet einen Transistor.
+
+97
+00:04:59,880 --> 00:05:00,840
+So einen empfehle ich.
+
+98
+00:05:00,920 --> 00:05:05,460
+Der Transistor verwendet den 2SC5200 Toshiba.
+
+99
+00:05:05,620 --> 00:05:06,680
+Eine sehr gute Sache.
+
+100
+00:05:07,040 --> 00:05:09,260
+Funktioniert zuverlässig, überhitzt nicht, nichts.
+
+101
+00:05:09,520 --> 00:05:14,540
+Einfach zu montieren und im Allgemeinen muss man dort nicht herumwerkeln und alle möglichen Kühlkörper montieren.
+
+102
+00:05:16,000 --> 00:05:18,140
+Also, was noch über die Abstimmung?
+
+103
+00:05:18,240 --> 00:05:19,700
+Über die Abstimmung sage ich jetzt.
+
+104
+00:05:19,700 --> 00:05:21,560
+Hier ist das Wichtigste.
+
+105
+00:05:22,040 --> 00:05:28,480
+Wie ich gesagt habe, von diesen 25-28 Windungen, so viele ihr schafft zu wickeln, so viele ihr könnt.
+
+106
+00:05:28,680 --> 00:05:31,260
+Wir müssen Resonanz in der Resonanz bekommen.
+
+107
+00:05:31,400 --> 00:05:34,200
+Ich meine, jetzt kommt dieser Draht heraus.
+
+108
+00:05:34,800 --> 00:05:36,740
+Er wird genau hier eingespeist.
+
+109
+00:05:37,100 --> 00:05:42,440
+Von hier aus geht er direkt zu dieser Spule, zur Energie.
+
+110
+00:05:42,740 --> 00:05:43,860
+Wo werdet ihr ihn hernehmen?
+
+111
+00:05:43,860 --> 00:05:44,460
+Das ist der Wechselrichter.
+
+112
+00:05:44,820 --> 00:05:45,780
+Das ist ein gewöhnlicher Wechselrichter.
+
+113
+00:05:45,960 --> 00:05:47,640
+Das heißt, da war es, wo der Panzerzug geheult hat.
+
+114
+00:05:49,000 --> 00:05:50,240
+Hier ist der Wechselrichter.
+
+115
+00:05:50,960 --> 00:05:52,400
+Ihr könnt einen beliebigen nehmen.
+
+116
+00:05:52,520 --> 00:05:57,920
+Ihr könnt auch 50 Hertz machen, nur dann braucht ihr diese Drossel hier nicht, so wie es jetzt gemacht ist.
+
+117
+00:06:00,140 --> 00:06:03,480
+Das System ähnelt sehr Akulas erstem Aufbau, den stehenden Röhren.
+
+118
+00:06:03,600 --> 00:06:07,140
+Er funktionierte auch absolut so wie dieser, über den ich euch jetzt erzähle.
+
+119
+00:06:08,280 --> 00:06:12,680
+Dieser Anschluss geht zur Diodenbrücke oder zu einer Diode.
+
+120
+00:06:13,900 --> 00:06:17,400
+Zu einer oder zu zwei, parallel geschaltet.
+
+121
+00:06:17,660 --> 00:06:18,120
+Wozu?
+
+122
+00:06:18,560 --> 00:06:19,280
+Jetzt sage ich es.
+
+123
+00:06:19,420 --> 00:06:20,820
+Ihr könnt es auch so machen.
+
+124
+00:06:20,900 --> 00:06:22,720
+Nehmt eine Diodenbrücke und schließt sie an.
+
+125
+00:06:22,960 --> 00:06:24,240
+Aber für HF, eine Diodenbrücke.
+
+126
+00:06:24,860 --> 00:06:26,860
+Ich habe diese Art von Dioden verwendet.
+
+127
+00:06:27,320 --> 00:06:28,420
+Hier seht ihr sie jetzt.
+
+128
+00:06:28,840 --> 00:06:29,940
+Das ist eine Diode.
+
+129
+00:06:30,300 --> 00:06:33,920
+Hier ist ihre Bezeichnung aufgeschrieben, 12R06DI.
+
+130
+00:06:35,660 --> 00:06:36,500
+Was ist gut daran?
+
+131
+00:06:37,140 --> 00:06:38,980
+Sie kann direkt auf dem Kühlkörper montiert werden.
+
+132
+00:06:41,080 --> 00:06:50,020
+Dieser Montageteil am Kühlkörper ist von beiden Seiten isoliert.
+
+133
+00:06:50,540 --> 00:06:53,400
+Wenn ihr es nicht glaubt, kann ich diesen Moment hier jetzt zeigen.
+
+134
+00:06:54,440 --> 00:06:55,480
+Nehmen wir ein Prüfgerät.
+
+135
+00:06:56,760 --> 00:07:00,260
+Wir schalten es auf Diodenmessung um.
+
+136
+00:07:00,900 --> 00:07:05,660
+Es wird schwer für mich sein, das natürlich alles zu machen.
+
+137
+00:07:06,380 --> 00:07:07,540
+Jetzt versuchen wir es.
+
+138
+00:07:12,560 --> 00:07:13,660
+Es piept.
+
+139
+00:07:14,360 --> 00:07:17,620
+Hier schaut, ich berühre es, damit es sichtbar ist.
+
+140
+00:07:18,600 --> 00:07:21,080
+Ich berühre mit dem Kontakt.
+
+141
+00:07:21,740 --> 00:07:23,300
+Hier berühre ich beide.
+
+142
+00:07:23,500 --> 00:07:24,020
+Es piept.
+
+143
+00:07:25,280 --> 00:07:26,840
+Ich berühre einen Anschluss.
+
+144
+00:07:26,840 --> 00:07:28,420
+Hier bewege ich es.
+
+145
+00:07:29,720 --> 00:07:31,400
+Ich berühre den zweiten Anschluss.
+
+146
+00:07:31,680 --> 00:07:32,560
+Nichts passiert.
+
+147
+00:07:33,540 --> 00:07:34,620
+Und umgekehrt.
+
+148
+00:07:35,160 --> 00:07:35,500
+Seht ihr?
+
+149
+00:07:36,320 --> 00:07:36,680
+Nichts.
+
+150
+00:07:37,580 --> 00:07:39,900
+Während wenn man so berührt.
+
+151
+00:07:40,480 --> 00:07:44,820
+Wenn ich jetzt so berühre, damit ihr versteht, dass die Diode intakt ist.
+
+152
+00:07:45,420 --> 00:07:46,280
+Hier zeigt es.
+
+153
+00:07:46,860 --> 00:07:49,080
+Das ist, dass die Diode intakt ist.
+
+154
+00:07:49,580 --> 00:07:50,160
+Hier, bitte.
+
+155
+00:07:50,820 --> 00:07:53,200
+Ihr könnt es umdrehen, dann ist da nichts.
+
+156
+00:07:54,540 --> 00:07:56,760
+Im Allgemeinen,
+
+157
+00:08:09,320 --> 00:08:11,200
+ist das eine coole Sache.
+
+158
+00:08:11,840 --> 00:08:12,600
+Ich empfehle sie.
+
+159
+00:08:12,700 --> 00:08:14,900
+Ihr könnt diese Art von Diode verwenden.
+
+160
+00:08:15,040 --> 00:08:16,700
+Problemlos für diese Zwecke.
+
+161
+00:08:16,740 --> 00:08:17,980
+Grundsätzlich auch geeignet.
+
+162
+00:08:19,060 --> 00:08:22,420
+Schließt diese beiden Beine so an.
+
+163
+00:08:22,560 --> 00:08:23,900
+Und sie wird hier auch funktionieren.
+
+164
+00:08:24,940 --> 00:08:27,000
+Also, was ist die Hauptsache, die wir hier tun müssen?
+
+165
+00:08:27,500 --> 00:08:36,780
+Hier, genau an dieser Stelle auf dieser Spule, müssen wir eine Halbwelle erzeugen, die mit der Sinuswelle übereinstimmt.
+
+166
+00:08:36,960 --> 00:08:40,340
+Ich meine, hier wird an dieser Stelle eine Halbwelle sein.
+
+167
+00:08:41,020 --> 00:08:42,420
+Hier wird eine Sinuswelle sein.
+
+168
+00:08:42,760 --> 00:08:45,000
+Und vom Kacher wird auch eine Sinuswelle kommen.
+
+169
+00:08:45,600 --> 00:08:50,120
+Wenn ihr das alles zusammenbringt, bekommen wir einen Generator.
+
+170
+00:08:50,280 --> 00:09:00,020
+Der einzige Haken ist, dass der Kacher ständig läuft und die Schläge in die Erde gehen.
+
+171
+00:09:02,240 --> 00:09:11,260
+Plus dass diese Pumpe so funktioniert, dass die Dioden, diese Dioden die hier sind, die Energie direkt in diesen Kondensator leiten.
+
+172
+00:09:11,600 --> 00:09:15,020
+10 Mikrofarad, 630 Volt, mindestens, habe ich hier.
+
+173
+00:09:15,340 --> 00:09:16,960
+Zwei parallel geschaltet.
+
+174
+00:09:17,800 --> 00:09:19,540
+Hier muss man vorsichtig sein.
+
+175
+00:09:19,540 --> 00:09:28,520
+Mit dieser ganzen Sache, weil es nicht gut ist.
+
+176
+00:09:28,560 --> 00:09:30,980
+Ich sage jetzt nur, wie man die Selbstversorgung erreicht.
+
+177
+00:09:33,380 --> 00:09:36,800
+Hier macht auf jeden Fall eine kleine Drossel.
+
+178
+00:09:37,300 --> 00:09:39,380
+Ihr könnt auch einen Fernseher nehmen.
+
+179
+00:09:41,300 --> 00:09:46,380
+Macht eine Entkopplung für all das, damit es dort ist.
+
+180
+00:09:48,120 --> 00:09:51,220
+Übrigens, hier habe ich einen kleinen Fehler gemacht.
+
+181
+00:09:52,740 --> 00:09:56,120
+Eine der Spulen muss geerdet sein.
+
+182
+00:10:00,740 --> 00:10:04,760
+Eine der Spulen geht zur Erde und zu dieser Sache, durch das ganze Rohr.
+
+183
+00:10:05,860 --> 00:10:07,400
+Was wollte ich noch?
+
+184
+00:10:07,400 --> 00:10:10,180
+Grundsätzlich ist hier nichts Kompliziertes.
+
+185
+00:10:10,300 --> 00:10:11,160
+Es wird funktionieren.
+
+186
+00:10:11,280 --> 00:10:13,400
+Die Hauptsache, die ich sagen will.
+
+187
+00:10:13,480 --> 00:10:14,380
+Da ist ein Fehler.
+
+188
+00:10:14,980 --> 00:10:15,600
+Die Erde.
+
+189
+00:10:16,060 --> 00:10:17,480
+Hier ist alles verbunden.
+
+190
+00:10:17,560 --> 00:10:19,140
+Das Gehäuse, die Erde, alles in einem Haufen.
+
+191
+00:10:19,360 --> 00:10:20,020
+Das ist kein Problem.
+
+192
+00:10:20,120 --> 00:10:23,720
+Legt alle Minuspole auch an die Erde.
+
+193
+00:10:24,560 --> 00:10:26,400
+Aber da ist ein Fehler an der Erde.
+
+194
+00:10:27,120 --> 00:10:28,240
+Was ist das Problem?
+
+195
+00:10:30,680 --> 00:10:32,060
+Das System funktioniert möglicherweise nicht.
+
+196
+00:10:32,540 --> 00:10:34,460
+Ihr müsst mit dem Draht spielen.
+
+197
+00:10:35,100 --> 00:10:39,900
+Einen längeren finden, den Moment, wenn die Gratisfreude erscheint.
+
+198
+00:10:40,120 --> 00:10:41,960
+Auch über die Stromversorgung.
+
+199
+00:10:42,060 --> 00:10:43,700
+Ich verwende diese Art von Netzteilen.
+
+200
+00:10:43,960 --> 00:10:46,240
+12 Volt und 10 Ampere.
+
+201
+00:10:46,640 --> 00:10:47,580
+Das ist etwas viel.
+
+202
+00:10:47,760 --> 00:10:48,980
+Das wird richtig leistungsstark sein.
+
+203
+00:10:49,560 --> 00:10:50,820
+Übrigens habe ich es repariert.
+
+204
+00:10:56,660 --> 00:10:58,240
+Die Kondensatoren sind geplatzt.
+
+205
+00:10:58,960 --> 00:11:02,760
+Was ich sagen will.
+
+206
+00:11:05,340 --> 00:11:08,320
+Die Schaltung ist absolut simpel.
+
+207
+00:11:10,320 --> 00:11:13,960
+Die Hauptsache ist, sie richtig zu machen.
+
+208
+00:11:14,100 --> 00:11:15,780
+Wir halten diese Proportionen ein.
+
+209
+00:11:15,900 --> 00:11:18,660
+Denkt daran, dass die Drahtlänge der Wellenlänge entspricht.
+
+210
+00:11:20,000 --> 00:11:21,820
+Ihr müsst den Verkürzungskoeffizienten berechnen.
+
+211
+00:11:24,800 --> 00:11:28,120
+Irgendwo 38 bis 40 Meter.
+
+212
+00:11:28,500 --> 00:11:30,940
+Das sind ungefähr 4,6 Megahertz.
+
+213
+00:11:33,040 --> 00:11:35,780
+Und ihr stimmt den Kacher auf die dritte Harmonische ab.
+
+214
+00:11:36,140 --> 00:11:37,460
+Sehr schwer.
+
+215
+00:11:37,520 --> 00:11:38,660
+Ich weiß, es ist schwer.
+
+216
+00:11:39,060 --> 00:11:41,940
+Ihr müsst die Induktivität des Kachers verringern.
+
+217
+00:11:42,680 --> 00:11:44,520
+Genauer gesagt nicht die Induktivität, was sage ich da.
+
+218
+00:11:45,180 --> 00:11:46,820
+Die Kapazität, der Spule.
+
+219
+00:11:46,960 --> 00:11:49,520
+Weil zwischen den Windungen Probleme entstehen.
+
+220
+00:11:50,280 --> 00:11:54,720
+Wegen der Kapazität sinkt die Frequenz beim Anschließen der Antenne sofort auf die Hälfte.
+
+221
+00:11:55,080 --> 00:11:57,160
+Das verdirbt alles.
+
+222
+00:11:57,660 --> 00:12:01,460
+Um damit umzugehen, muss man den Kacher mit weniger Windungen wickeln.
+
+223
+00:12:01,580 --> 00:12:03,600
+Und mit weniger Windungen hat er nicht genug Leistung.
+
+224
+00:12:03,720 --> 00:12:04,700
+Ich will es so sagen.
+
+225
+00:12:05,300 --> 00:12:07,800
+Man muss den Kacher nicht bis auf den letzten Tropfen auspressen.
+
+226
+00:12:07,960 --> 00:12:08,420
+Das braucht man nicht.
+
+227
+00:12:09,420 --> 00:12:10,800
+Das macht keinen Sinn.
+
+228
+00:12:11,140 --> 00:12:13,680
+Der Kacher gibt euch einen kleinen Gewinn.
+
+229
+00:12:14,840 --> 00:12:17,820
+Stimmt die Frequenz mit diesem Kern ab.
+
+230
+00:12:18,000 --> 00:12:19,600
+Manchmal trifft er es einfach sofort.
+
+231
+00:12:19,700 --> 00:12:21,220
+Er rastet dort ein.
+
+232
+00:12:21,640 --> 00:12:23,040
+Ihr werdet es auf dem Oszillogramm sehen.
+
+233
+00:12:23,820 --> 00:12:25,040
+Was wollte ich noch sagen.
+
+234
+00:12:26,140 --> 00:12:27,680
+Wir stellen das Oszilloskop auf.
+
+235
+00:12:29,240 --> 00:12:31,000
+Relativ zur Erde genau hier.
+
+236
+00:12:32,020 --> 00:12:33,820
+Genau an dieser Stelle wird das Messgerät platziert.
+
+237
+00:12:34,520 --> 00:12:36,700
+Und dort schauen wir uns all diese Impulse an.
+
+238
+00:12:36,820 --> 00:12:37,720
+Mit einem Strahl.
+
+239
+00:12:38,080 --> 00:12:39,420
+Und nicht zwei, wie wir es machen.
+
+240
+00:12:39,640 --> 00:12:41,620
+Wir legen einen zusammen mit dem anderen.
+
+241
+00:12:41,740 --> 00:12:42,220
+Und so weiter.
+
+242
+00:12:42,800 --> 00:12:43,280
+Und wir schauen.
+
+243
+00:12:43,800 --> 00:12:47,000
+Hier an der Drossel eine saubere Sinuswelle.
+
+244
+00:12:47,020 --> 00:12:49,240
+Hier habe ich auch einen kleinen Fehler gemacht.
+
+245
+00:12:49,340 --> 00:12:50,320
+Jetzt zeige ich, was.
+
+246
+00:12:50,980 --> 00:12:53,940
+Dieser Anschluss, der vom Kondensator kommt.
+
+247
+00:12:54,440 --> 00:12:56,680
+Er sollte auch an der Erde sein.
+
+248
+00:12:57,220 --> 00:12:59,840
+Das heißt, wir werden ihn jetzt an die Erde anschließen.
+
+249
+00:13:00,900 --> 00:13:01,220
+Hier, an diesen.
+
+250
+00:13:01,560 --> 00:13:04,240
+Das heißt, er muss definitiv an der Erde sein.
+
+251
+00:13:05,220 --> 00:13:07,040
+Dieser Kondensator.
+
+252
+00:13:07,800 --> 00:13:09,900
+Und die Erde, und dann der Bifilar.
+
+253
+00:13:11,960 --> 00:13:15,100
+Hier eine einfache Spule.
+
+254
+00:13:15,340 --> 00:13:17,200
+Wir gehen einfach zurück und machen weiter.
+
+255
+00:13:19,440 --> 00:13:20,040
+Auf jeden Fall.
+
+256
+00:13:20,200 --> 00:13:21,240
+Das muss so gemacht werden.
+
+257
+00:13:21,320 --> 00:13:23,780
+Ich bin mit diesen Bifilaren völlig durcheinander geraten, ehrlich gesagt.
+
+258
+00:13:25,200 --> 00:13:25,620
+Was was ist.
+
+259
+00:13:26,000 --> 00:13:27,060
+Im Allgemeinen habt ihr mich verstanden.
+
+260
+00:13:27,780 --> 00:13:30,460
+Also, über das Poti.
+
+261
+00:13:30,740 --> 00:13:33,240
+Das Poti, unter 15 Kilohertz.
+
+262
+00:13:33,280 --> 00:13:34,880
+Es wird nicht empfohlen, die Frequenz zu senken.
+
+263
+00:13:34,880 --> 00:13:35,680
+Es funktioniert schlecht.
+
+264
+00:13:35,780 --> 00:13:36,680
+Es fängt an sich zu erhitzen.
+
+265
+00:13:36,900 --> 00:13:39,100
+Bei 15-16 Kilohertz funktioniert es noch.
+
+266
+00:13:39,700 --> 00:13:41,540
+Ihr müsst die Spezifikationen prüfen.
+
+267
+00:13:41,780 --> 00:13:42,380
+Auf jeden Fall.
+
+268
+00:13:43,160 --> 00:13:46,140
+Aber dreht die Frequenz nicht auf 30 Kilohertz und höher hoch.
+
+269
+00:13:46,280 --> 00:13:52,600
+Wenn ihr nicht wollt, ein Erdungskabel mit euch herumzuschleppen und nicht wollt, dass ihr an einem anderen Ort ankommt, es einsteckt und überhaupt nichts funktioniert.
+
+270
+00:13:53,640 --> 00:13:56,260
+Das ist alles die Bindung an die Erde.
+
+271
+00:13:56,620 --> 00:13:57,260
+Das ist Quatsch.
+
+272
+00:13:57,740 --> 00:14:08,980
+Plus, also, wenn hier auch die Drähte lang sind, das heißt, wenn ihr hier keine Drossel einbaut und all das nicht mit diesen langen Drähten entkoppelt, gibt es auch ein Problem.
+
+273
+00:14:09,400 --> 00:14:13,200
+Lange Drähte zu dieser Lampe und es fängt auch an.
+
+274
+00:14:13,540 --> 00:14:18,300
+Es funktioniert wie eine Antenne oder Dämpfung, weil die Hochfrequenz auf den Drähten auf die Hälfte sinkt.
+
+275
+00:14:18,720 --> 00:14:20,060
+Dann brennt es nicht so hell.
+
+276
+00:14:20,260 --> 00:14:22,960
+Ihr legt eine Last an und es gibt Einbrüche und so weiter.
+
+277
+00:14:23,660 --> 00:14:26,800
+Ich habe diese Art von Unsinn kurz so skizziert.
+
+278
+00:14:27,140 --> 00:14:29,740
+Ich klebe es jetzt irgendwo hin.
+
+279
+00:14:30,380 --> 00:14:33,200
+Hier habe ich versucht, Oszillogramme zu zeichnen, das hat bei mir nicht funktioniert.
+
+280
+00:14:33,460 --> 00:14:35,840
+Kurz gesagt, alles ist schief.
+
+281
+00:14:35,980 --> 00:14:37,460
+Also achtet nicht darauf, bitte.
+
+282
+00:14:38,320 --> 00:14:41,040
+Das alles wurde rein von Hand so gemacht.
+
+283
+00:14:41,160 --> 00:14:42,900
+Ich habe das alles aus dem Kopf gemacht.
+
+284
+00:14:43,160 --> 00:14:47,000
+Ich zeichne nie irgendwelche Schaltpläne, aber ich hatte es versprochen.
+
+285
+00:14:47,100 --> 00:14:51,160
+Also poste ich dieses Schema hier so, wie es ist.
+
+286
+00:14:51,620 --> 00:14:51,980
+Seht ihr?
+
+287
+00:14:52,200 --> 00:14:54,700
+So habe ich es gemacht.
+
+288
+00:14:55,820 --> 00:15:00,960
+Ich weiß, dass die Abstimmer, viele Jungs schon verstehen, was zu tun ist.
+
+289
+00:15:01,660 --> 00:15:06,360
+Und es gibt vier Personen, die es nach meinen Angaben bereits gemacht haben, ein Ergebnis erzielt haben.
+
+290
+00:15:06,500 --> 00:15:08,220
+Das heißt, die Effekte, sie funktionieren weiterhin.
+
+291
+00:15:08,360 --> 00:15:09,920
+Ich freue mich, euch zu begrüßen.
+
+292
+00:15:10,080 --> 00:15:13,120
+Ich grüße herzlich Slava und Kirill.
+
+293
+00:15:13,300 --> 00:15:14,360
+Und alle anderen.
+
+294
+00:15:15,660 --> 00:15:19,920
+Ich hoffe, ihr, Jungs, unterstützt mich und schreibt im Forum.
+
+295
+00:15:20,140 --> 00:15:26,620
+Das heißt, zumindest werde ich keinen besonders starken Dank verlangen.
+
+296
+00:15:26,700 --> 00:15:28,300
+Ich werde versuchen zu helfen.
+
+297
+00:15:29,280 --> 00:15:35,640
+Und an die, die noch keine Effekte erzielt haben, Jungs, arbeitet.
+
+298
+00:15:35,760 --> 00:15:36,460
+Es wird alles klappen.
+
+299
+00:15:38,020 --> 00:15:41,520
+An den Guru, der versucht, mir zu schreiben, dass ich im Weg bin.
+
+300
+00:15:43,940 --> 00:15:44,660
+Nur zu.
+
+301
+00:15:45,920 --> 00:15:47,940
+Lasst die Jungs arbeiten.
+
+302
+00:15:48,280 --> 00:15:55,960
+Wer Elektronik nicht versteht oder schwach ist, muss jedes Teil einzeln lernen.
+
+303
+00:15:56,240 --> 00:15:57,420
+Wie der Kacher funktioniert.
+
+304
+00:15:57,480 --> 00:16:00,320
+Wie der Wechselrichter funktioniert.
+
+305
+00:16:01,540 --> 00:16:03,340
+Wie der Bifilar funktioniert.
+
+306
+00:16:03,500 --> 00:16:06,580
+Was passiert, wenn wir hier einspeisen und so weiter.
+
+307
+00:16:06,720 --> 00:16:07,580
+Versteht ihr die Sache?
+
+308
+00:16:07,760 --> 00:16:10,000
+Ja, die atomaren Prozesse werde ich nicht erklären.
+
+309
+00:16:10,600 --> 00:16:15,560
+Ich selbst weiß wenig über die atomaren Prozesse, die in dieser Spule passieren.
+
+310
+00:16:15,680 --> 00:16:17,420
+Aber das ist noch nicht die ganze Schaltung.
+
+311
+00:16:17,480 --> 00:16:19,740
+Ich werde auch über andere Schaltungen erzählen.
+
+312
+00:16:20,140 --> 00:16:28,940
+Auf jeden Fall erinnern wir uns an die Schaltung unseres Roma, der nicht wollte, dass wir das alles hier wissen.
+
+313
+00:16:29,540 --> 00:16:30,960
+Hier ist seine Spule.
+
+314
+00:16:31,400 --> 00:16:33,640
+Er hat ihre Leistung an den Kacher weitergegeben.
+
+315
+00:16:33,860 --> 00:16:40,200
+Das ist kein Kacher, das ist im Grunde ein Pulstransformatorsystem.
+
+316
+00:16:41,020 --> 00:16:42,380
+Ein Pulsgenerator, genauer gesagt.
+
+317
+00:16:42,460 --> 00:16:43,360
+Hier werden Impulse gebraucht.
+
+318
+00:16:43,480 --> 00:16:44,480
+Und grundsätzlich hat er recht.
+
+319
+00:16:44,940 --> 00:16:46,440
+Alles okay, hier hat er das gemacht.
+
+320
+00:16:46,920 --> 00:16:52,040
+Aber ohne, dass ihr die Energie von hier durch diese Spule führt, wird hier nichts sein.
+
+321
+00:16:52,120 --> 00:16:52,640
+Wird es nicht geben.
+
+322
+00:16:53,620 --> 00:16:57,840
+Das war's, die Batterie meiner Kamera stirbt gerade.
+
+323
+00:16:58,100 --> 00:17:00,060
+Das ist einfach irgendeine Katastrophe insgesamt.
+
+324
+00:17:01,380 --> 00:17:06,020
+Das heißt, ich stoppe die Aufnahme und werde versuchen, alle Fragen zu beantworten.
+
+325
+00:17:06,120 --> 00:17:07,940
+Ein bisschen Geduld und hier ist das Schema.
+
+326
+00:17:08,240 --> 00:17:09,000
+Das war's, passt auf euch auf.
