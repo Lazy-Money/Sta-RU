@@ -1,0 +1,1891 @@
+1
+00:00:02,080 --> 00:00:09,720
+Also, hallo zusammen, ihr Fans von freie-Energie-Generatoren und alle, die versuchen, etwas zu erschaffen.
+
+2
+00:00:10,440 --> 00:00:16,860
+Also, wie wir alle schon wissen, bauen wir alle ständig weiter.
+
+3
+00:00:17,160 --> 00:00:18,480
+Mal klappt es, mal nicht.
+
+4
+00:00:18,640 --> 00:00:21,220
+Alle löten dieses Gerät.
+
+5
+00:00:21,360 --> 00:00:23,100
+Dieses hier, das auf dem Bild auf dem Bildschirm.
+
+6
+00:00:23,700 --> 00:00:25,700
+Und nichts klappt überhaupt.
+
+7
+00:00:25,940 --> 00:00:27,400
+Irgendwie schustert jemand irgendwas zusammen.
+
+8
+00:00:28,580 --> 00:00:33,940
+Nun, ich habe das alles zusammen mit euch erforscht, nur ein bisschen schneller als alle anderen.
+
+9
+00:00:34,580 --> 00:00:39,700
+Und ich hab es bereits zusammengebaut, auseinandergenommen und wieder zusammengebaut — also nochmal auseinandergenommen.
+
+10
+00:00:40,260 --> 00:00:46,540
+Und diesmal habe ich endlich, wie man so sagt, verstanden, was ich jetzt bauen soll, damit es so wird, wie es ist.
+
+11
+00:00:46,720 --> 00:00:49,400
+Ob es da 2 Kilowatt oder einen Kilowatt bringt.
+
+12
+00:00:50,200 --> 00:00:53,980
+Und kurz gesagt, es fallen lassen und komplett vergessen — ich meine, dieses Gerät.
+
+13
+00:00:53,980 --> 00:00:59,760
+Und, wie man sagt, es endgültig fertigstellen und einfach als Ausstellungsstück beiseitelegen.
+
+14
+00:01:01,620 --> 00:01:10,220
+Kürzlich habe ich im Forum einen Kommentar von Akula gelesen, angeblich, wo er schrieb, dass ich nichts verstanden hätte.
+
+15
+00:01:11,680 --> 00:01:12,720
+Okay, okay.
+
+16
+00:01:12,780 --> 00:01:16,760
+Jetzt erzähle ich, was ich sozusagen in diesem Aufbau nicht verstanden habe.
+
+17
+00:01:16,920 --> 00:01:22,600
+Und warum ich so aktiv versuche, ihn zu bauen, wie eigentlich alle anderen auch.
+
+18
+00:01:22,600 --> 00:01:24,140
+Und die ganze Sache ist einfach.
+
+19
+00:01:24,720 --> 00:01:32,100
+Es ist nämlich unmöglich, diesen ganzen Apparat nicht zu verstehen, wie man so sagt.
+
+20
+00:01:32,440 --> 00:01:34,060
+Es ist sehr einfach, wie sich herausstellt.
+
+21
+00:01:34,900 --> 00:01:36,720
+Und generell, ich meine das Funktionsprinzip.
+
+22
+00:01:36,840 --> 00:01:43,680
+Wisst ihr, ich spreche euch an, Roman, und alle anderen generell, die dieses Zeug bauen...
+
+23
+00:01:43,680 --> 00:01:48,040
+Das Bild selbst und das Gerät generell sind sehr schön gemacht.
+
+24
+00:01:48,040 --> 00:01:54,900
+Ich meine eine gute Ausstellung, eine gute, sozusagen, Schauversion, die man jemandem einfach zeigen kann.
+
+25
+00:01:56,920 --> 00:01:59,680
+Und einfach damit angeben, dass man so ein Gerät hat.
+
+26
+00:02:00,280 --> 00:02:05,600
+Nochmal, ich sage noch einmal, ich bestreite nicht, dass es Roман Akulas Design ist.
+
+27
+00:02:06,040 --> 00:02:09,540
+Das ist hier praktisch eins zu eins umgesetzt.
+
+28
+00:02:09,700 --> 00:02:17,280
+Nein, nicht eins zu eins, aber manche Elemente sind vorhanden, die sehr ähnlich sind.
+
+29
+00:02:17,280 --> 00:02:22,100
+Ich meine, wenn ihr dieses Gerät und jenes anschaut, wie unterscheiden sie sich?
+
+30
+00:02:22,420 --> 00:02:23,480
+Praktisch gar nicht.
+
+31
+00:02:23,600 --> 00:02:24,160
+Naja, okay.
+
+32
+00:02:24,360 --> 00:02:26,800
+Der Kühlkörper ist nicht derselbe, der Lüfter auch nicht.
+
+33
+00:02:27,240 --> 00:02:38,140
+Hier ist der sogenannte Gegentakt-Generator etwas anders gemacht, mit leistungsstärkeren Transistoren.
+
+34
+00:02:38,140 --> 00:02:53,540
+Also, hier wird ein Hochspannungswandler für eine höhere Spannung verwendet, damit die Tesla-Spule eine höhere Spannung bekommt und wir einen besseren Effekt erzielen können.
+
+35
+00:02:53,880 --> 00:02:57,160
+Allerdings wird das alles nicht gebraucht, und ich denke, dass...
+
+36
+00:02:57,160 --> 00:03:03,060
+Ich habe es schon versucht, ich werde jetzt versuchen, diesen Wandler hier rauszuschmeißen, zum Teufel.
+
+37
+00:03:03,200 --> 00:03:04,820
+Vielleicht wird er hier gar nicht gebraucht.
+
+38
+00:03:05,460 --> 00:03:05,980
+Schauen wir mal.
+
+39
+00:03:05,980 --> 00:03:09,540
+Also, ich verwende einen MOSFET, keinen KT-805-Transistor wie Roma.
+
+40
+00:03:10,120 --> 00:03:13,920
+Anscheinend hatte er damals einfach keine anderen Transistoren.
+
+41
+00:03:14,240 --> 00:03:15,720
+Und was er gebaut hat — gut für ihn.
+
+42
+00:03:15,980 --> 00:03:17,320
+Also, das Gerät hat wirklich funktioniert.
+
+43
+00:03:17,560 --> 00:03:19,920
+Stimmt, es war wählerisch, wie man sagt.
+
+44
+00:03:20,040 --> 00:03:20,500
+Naja, egal.
+
+45
+00:03:23,180 --> 00:03:33,380
+Wie ich aus einigen Gesprächen verstanden habe, reden die Leute viel, sozusagen, und viele haben allerlei Gedanken.
+
+46
+00:03:33,380 --> 00:03:44,600
+Im Großen und Ganzen sind mir all diese Gespräche egal, denn ich handle nach dem, was bei meinen Experimenten funktioniert.
+
+47
+00:03:44,780 --> 00:03:49,440
+Wenn meine Experimente Erfolg haben, sehe ich, was meine Instrumente zeigen.
+
+48
+00:03:49,880 --> 00:03:54,960
+Ich meine, ich sehe, was bei mir passiert, sozusagen, dabei — dieses, jenes, das Dritte.
+
+49
+00:03:56,340 --> 00:03:57,300
+Ich habe lange gebastelt.
+
+50
+00:03:57,800 --> 00:03:59,320
+Ungefähr 6 Monate gebastelt.
+
+51
+00:03:59,320 --> 00:04:00,980
+Jetzt baue ich dieses Gerät zusammen.
+
+52
+00:04:01,240 --> 00:04:02,920
+Ich meine, speziell dieses hier.
+
+53
+00:04:03,600 --> 00:04:05,480
+Und ein Replikat davon.
+
+54
+00:04:06,140 --> 00:04:08,500
+Ich habe Kacher verwendet, und was auch immer.
+
+55
+00:04:08,720 --> 00:04:10,440
+Und ich will euch sagen, Leute.
+
+56
+00:04:10,540 --> 00:04:16,980
+Also, unser Fehler war — meiner auch —, dass hier ein Kacher lief.
+
+57
+00:04:17,240 --> 00:04:20,100
+Ihr könnt hier keinen Kacher verwenden.
+
+58
+00:04:20,300 --> 00:04:21,860
+Hier ist das System sehr einfach.
+
+59
+00:04:22,360 --> 00:04:24,140
+Hier arbeitet ein Impulsgenerator.
+
+60
+00:04:24,140 --> 00:04:30,940
+Und von diesem Ende sollte ein guter, klarer, unipolarer Impuls kommen.
+
+61
+00:04:31,020 --> 00:04:33,800
+Alle anderen Schwingungen sollten gedämpft werden.
+
+62
+00:04:34,920 --> 00:04:36,520
+Jetzt erkläre ich, wie das gemacht wird.
+
+63
+00:04:36,640 --> 00:04:42,040
+Zunächst sollte der Generator durch einen Impuls über diese Drossel gesteuert werden.
+
+64
+00:04:42,240 --> 00:04:45,840
+Was der KT-805-Transistor für Roma im Grunde getan hat.
+
+65
+00:04:46,520 --> 00:04:47,680
+Warum er ihn verwendet hat.
+
+66
+00:04:47,780 --> 00:04:50,800
+Ja, im Grunde ist es der Transistor mit der höchsten Frequenz.
+
+67
+00:04:50,880 --> 00:04:52,500
+Er hält die Flanken ziemlich gut.
+
+68
+00:04:53,000 --> 00:04:54,700
+Und schaltet ziemlich gut durch.
+
+69
+00:04:54,780 --> 00:05:02,640
+Nun, ich habe entschieden, den 805 nicht zu verwenden, keinen 2SC5200, da man einen durch den anderen ersetzen kann.
+
+70
+00:05:02,740 --> 00:05:05,700
+Ich meine, ich habe mich für einen ERFP460 entschieden.
+
+71
+00:05:06,160 --> 00:05:09,540
+Er ist Hochspannung, also braucht er eine höhere Spannung.
+
+72
+00:05:10,720 --> 00:05:13,680
+Hier ist er, jetzt am Kühlkörper verschraubt.
+
+73
+00:05:14,660 --> 00:05:16,140
+Also, was ich sagen wollte.
+
+74
+00:05:16,240 --> 00:05:16,960
+Na, was gut ist.
+
+75
+00:05:17,100 --> 00:05:23,260
+Erstens, der KT-805-Transistor — sein Kollektor ist diese große Unterlegscheibe, die man irgendwie vom Kühlkörper isolieren muss.
+
+76
+00:05:24,760 --> 00:05:27,800
+Und den Kühlkörper erden, damit so etwas nicht passiert.
+
+77
+00:05:27,920 --> 00:05:31,860
+Hier ist alles geerdet, ja, also gute Isolierung.
+
+78
+00:05:32,000 --> 00:05:34,460
+Da wäre es schwer gewesen, ja, drei Bolzen zu drehen.
+
+79
+00:05:34,540 --> 00:05:35,280
+Hier nur einen.
+
+80
+00:05:35,520 --> 00:05:38,240
+Eine Unterlegscheibe reinlegen, ja, also eine Hülse reingeschraubt.
+
+81
+00:05:38,360 --> 00:05:40,920
+Oder man braucht dort gar keine Hülse, nur einen Bolzen.
+
+82
+00:05:41,140 --> 00:05:45,380
+Moderne Transistoren ermöglichen es einem, all das ruhig und ohne großen Aufwand zu erledigen.
+
+83
+00:05:46,240 --> 00:05:46,920
+Was kommt als Nächstes.
+
+84
+00:05:47,940 --> 00:05:56,080
+Also, und Kühlung, dazu keine parasitären Impulse, die auf den Lüfter induziert werden, die eigentlich vom Kollektor des KT-805 kommen.
+
+85
+00:05:56,480 --> 00:05:57,680
+Darum geht es nicht mal.
+
+86
+00:05:58,260 --> 00:06:01,520
+Es geht darum, wie man eine Tesla-Spule macht, damit sie funktioniert.
+
+87
+00:06:01,560 --> 00:06:07,300
+Achtet auf Romas Bilder, ja, also, jetzt...
+
+88
+00:06:08,660 --> 00:06:10,380
+Hier ist sie, das Gerät selbst, ja.
+
+89
+00:06:10,520 --> 00:06:11,760
+Die Tesla-Spule ist ziemlich kurz.
+
+90
+00:06:11,960 --> 00:06:12,300
+Warum?
+
+91
+00:06:12,800 --> 00:06:13,780
+Das ist alles sehr einfach.
+
+92
+00:06:14,480 --> 00:06:19,600
+Sie ist kurz, weil ihre Länge, die Drahtlänge, höchstwahrscheinlich 0,8 ist.
+
+93
+00:06:19,700 --> 00:06:20,780
+Ich habe eine solche gewickelt.
+
+94
+00:06:20,880 --> 00:06:25,000
+Es ist durch Experimente bestätigt, dass es bei 0,8 gut funktioniert.
+
+95
+00:06:25,200 --> 00:06:29,600
+Vielleicht könnte man auch 0,9 und eins wickeln, ja.
+
+96
+00:06:29,700 --> 00:06:33,100
+Aber die Leistung sinkt, ja.
+
+97
+00:06:33,200 --> 00:06:38,540
+Ich meine, dort muss man basteln, um einen guten Impuls am Ausgang zu erreichen, damit die Leistung groß ist.
+
+98
+00:06:39,220 --> 00:06:40,120
+Darum geht es jetzt nicht.
+
+99
+00:06:40,960 --> 00:06:43,280
+Jetzt geht es darum, was generell passiert.
+
+100
+00:06:43,280 --> 00:06:46,500
+Schauen wir uns nicht Bilder an, sondern mein Gerät.
+
+101
+00:06:46,860 --> 00:06:49,380
+Ich baue es jetzt endlich zusammen, ja.
+
+102
+00:06:49,520 --> 00:06:50,420
+Ich meine, unumkehrbar.
+
+103
+00:06:50,500 --> 00:06:52,000
+Weil ich es satt habe, damit zu basteln.
+
+104
+00:06:52,160 --> 00:06:54,420
+Ich habe schon so viel Zeit verloren, das ist einfach wahnsinnig.
+
+105
+00:06:55,360 --> 00:06:55,720
+Da.
+
+106
+00:06:55,980 --> 00:06:57,920
+Ob es da 2-3 Kilowatt bringt, es bringt es.
+
+107
+00:06:58,000 --> 00:07:00,520
+Es soll so viel bringen, wie es für mich rausgekommen ist.
+
+108
+00:07:01,160 --> 00:07:03,300
+Also, was ist hier, ja.
+
+109
+00:07:03,880 --> 00:07:08,780
+Hier ist eine Tesla-Spule mit 0,8-Draht gewickelt.
+
+110
+00:07:09,220 --> 00:07:11,620
+Und dieser Transformator ist Hochspannung.
+
+111
+00:07:11,620 --> 00:07:15,380
+Er ist genauso viel gewickelt, wie die Drossel selbst gewickelt ist, ja.
+
+112
+00:07:15,840 --> 00:07:23,400
+Die Drossel hier — wenn die Granate selbst mit 38 Metern gewickelt ist, also haben wir 38 Meter Draht verbraucht, 38 Meter.
+
+113
+00:07:24,020 --> 00:07:28,740
+Also, wir teilen durch 2, bekommen 19 Meter.
+
+114
+00:07:28,860 --> 00:07:30,280
+Das ist unsere Drossel.
+
+115
+00:07:30,380 --> 00:07:32,120
+Also, wir wickeln hier 19 Meter.
+
+116
+00:07:33,040 --> 00:07:35,800
+Also, im Grunde diese Art von Kombination.
+
+117
+00:07:36,260 --> 00:07:36,500
+Warum?
+
+118
+00:07:36,720 --> 00:07:41,060
+Weil wir die Frequenzen auf dieser sogenannten Antenne abstimmen müssen.
+
+119
+00:07:41,060 --> 00:07:44,200
+Das ist keine Antenne, das ist eine Platte eines Kondensators, könnte man sagen.
+
+120
+00:07:44,340 --> 00:07:46,060
+Und die Spule aufladen...
+
+121
+00:07:46,640 --> 00:07:47,460
+Das ist ein Kondensator.
+
+122
+00:07:47,960 --> 00:07:48,660
+Das ist keine Antenne.
+
+123
+00:07:48,920 --> 00:07:50,980
+Es sieht nur so aus, ja, also, wie dieses Ding.
+
+124
+00:07:51,120 --> 00:07:54,200
+Es ist im Grunde wie ein Kondensator, weil zwischen...
+
+125
+00:07:54,200 --> 00:08:03,700
+Die Drossel wird an einem Ende geerdet, und so ergibt sich, dass zwischen diesem und jenem, hier ist es sozusagen dieses Ding, also kommt eine Kapazität raus.
+
+126
+00:08:04,700 --> 00:08:06,040
+Diese Kapazität muss aufgeladen werden.
+
+127
+00:08:07,380 --> 00:08:11,240
+Nun, die Abstimmungsdetails werde ich im nächsten Video posten.
+
+128
+00:08:11,300 --> 00:08:15,160
+Jetzt erkläre ich, wie das System funktioniert, und Roma wird es, denke ich, bestätigen.
+
+129
+00:08:15,560 --> 00:08:20,740
+Ich erzähle nur, was ich gesehen habe, was die Instrumente zeigen und wie es funktioniert.
+
+130
+00:08:21,600 --> 00:08:26,380
+Und zum Schluss sage ich, ob ich empfehle, es zu bauen oder nicht.
+
+131
+00:08:27,320 --> 00:08:30,480
+Also, was ist das Wichtigste generell?
+
+132
+00:08:30,640 --> 00:08:32,500
+Also, hier speisen wir eine Induktionsspule.
+
+133
+00:08:32,560 --> 00:08:34,020
+Warum hier überhaupt eine Induktionsspule?
+
+134
+00:08:34,020 --> 00:08:36,000
+Also, von hier haben wir den Impuls bekommen.
+
+135
+00:08:36,060 --> 00:08:37,280
+Schließen wir mit der Tesla-Spule ab.
+
+136
+00:08:37,700 --> 00:08:40,400
+Also, wir speisen der Drossel einen unipolaren Impuls ein.
+
+137
+00:08:41,220 --> 00:08:45,080
+Wir erhalten einen unipolaren Impuls vom Ausgang.
+
+138
+00:08:45,600 --> 00:08:52,960
+Aber wieder, die Spule beginnt unten zu wickeln, ging hier rauf, ging, ging, ging, ging, ging.
+
+139
+00:08:53,760 --> 00:08:54,440
+Wickelt bis zum Ende.
+
+140
+00:08:55,120 --> 00:08:57,240
+Und dann muss man zurückwickeln.
+
+141
+00:08:57,960 --> 00:08:58,620
+Warum zurück?
+
+142
+00:08:58,800 --> 00:08:59,520
+Ich erkläre jetzt.
+
+143
+00:08:59,520 --> 00:09:04,220
+Wie wir alle wissen, dämpfen gegenläufig gewickelte Spulen Schwingungen.
+
+144
+00:09:04,780 --> 00:09:08,600
+Schwingungen, die entstehen, wenn ihr versucht, zum Beispiel...
+
+145
+00:09:08,600 --> 00:09:10,320
+Nun, ich meine, die Spule klingelt.
+
+146
+00:09:10,640 --> 00:09:15,940
+Also, der Impuls sprang hoch, und dann kommen abklingende Schwingungen.
+
+147
+00:09:16,080 --> 00:09:17,160
+Die brauchen wir nicht.
+
+148
+00:09:17,540 --> 00:09:18,500
+Wir müssen sie beseitigen.
+
+149
+00:09:19,020 --> 00:09:22,460
+Auf diese Weise funktioniert das System sehr einfach.
+
+150
+00:09:22,460 --> 00:09:28,280
+Wir wickeln mehrere Windungen eines anderen Drahts zurück.
+
+151
+00:09:28,580 --> 00:09:31,020
+Wir dämpfen diese Schwingungen.
+
+152
+00:09:31,720 --> 00:09:36,680
+Wenn sie nicht dämpfen, hilft uns dieser Müll, wie Roma es nannte.
+
+153
+00:09:37,220 --> 00:09:39,200
+Er dämpft die verbleibenden Schwingungen.
+
+154
+00:09:39,780 --> 00:09:48,280
+Und am Ende erhalten wir einen unipolaren Impuls an der Antenne, der bei seiner Frequenz wirklich schön arbeitet.
+
+155
+00:09:48,280 --> 00:09:56,160
+Nachdem wir die Arbeitsfrequenzen der Drossel und dieses unipolaren Impulses abgestimmt haben, was tun wir?
+
+156
+00:09:57,480 --> 00:10:00,080
+Die Tesla-Drosseln, sie sind auf ihrer Frequenz.
+
+157
+00:10:00,240 --> 00:10:05,580
+Dementsprechend wird die Drossel sehr gut absorbieren, was ihr eingeschlagen wird.
+
+158
+00:10:06,500 --> 00:10:07,340
+Weiter.
+
+159
+00:10:07,380 --> 00:10:14,660
+Was muss man also tatsächlich tun, damit dieses ganze Ding weiter funktioniert?
+
+160
+00:10:15,520 --> 00:10:22,020
+Vom Gegentakt-Generator, vom Generator, geht eine Induktionsspule hierher.
+
+161
+00:10:22,840 --> 00:10:25,260
+Wie eine Induktionsspule funktioniert, so auch diese.
+
+162
+00:10:27,320 --> 00:10:33,740
+Durch die Spule lassen wir ein unklares Sinussignal, ein sinusförmiges Signal, durch.
+
+163
+00:10:33,860 --> 00:10:36,500
+Man könnte sagen, es kommt hier nicht sinusförmig raus.
+
+164
+00:10:36,500 --> 00:10:38,600
+Was grundsätzlich auch der Grund ist, warum Roma das gemacht hat.
+
+165
+00:10:39,580 --> 00:10:47,260
+Also, von diesem Topfkern hat er keinen Sinus bekommen, er hat ihn aus diesen drei Windungen bekommen, wie bei einer Induktionsspule.
+
+166
+00:10:47,540 --> 00:10:51,360
+Am Ende erhalten wir hier den Sinus.
+
+167
+00:10:51,640 --> 00:10:53,160
+Und der Sinus ist sehr wichtig.
+
+168
+00:10:53,740 --> 00:10:57,500
+Ich meine ein sinusförmiges Signal in zwei Momenten.
+
+169
+00:10:58,260 --> 00:10:59,840
+Es ist Strom und Spannung.
+
+170
+00:10:59,840 --> 00:11:08,300
+Wo die Spannung abfällt, kreuzt sich der Strom mit der Spannung, dort schlagen wir die Impulse ein.
+
+171
+00:11:08,420 --> 00:11:12,200
+Das ist genau diese sogenannte Kondensatorplatte, das ist die Tesla-Spule.
+
+172
+00:11:12,740 --> 00:11:15,080
+Die Tesla-Spule ist das Toroid, das hier hängt.
+
+173
+00:11:15,920 --> 00:11:25,720
+Genau die, die das Medium trifft und Elektronen mit Impulsen herausschlägt und sie addiert — daher kommt, wie man sagt, der Gewinn.
+
+174
+00:11:25,720 --> 00:11:30,820
+Die Elektronenbewegung beginnt genau an dieser Stelle.
+
+175
+00:11:30,920 --> 00:11:33,160
+Warum hängt die Drossel hier und nicht da, ja?
+
+176
+00:11:33,420 --> 00:11:35,240
+Warum hat Roma sie nicht hier aufgehängt?
+
+177
+00:11:35,720 --> 00:11:38,320
+Obwohl er hier erklärt hat, dass angeblich hier an diesem Ding...
+
+178
+00:11:38,320 --> 00:11:38,980
+Das ist alles Unsinn.
+
+179
+00:11:39,560 --> 00:11:43,560
+Es muss genau hier stehen, ja, weil hier der Sinus erzeugt wird.
+
+180
+00:11:43,740 --> 00:11:50,000
+Wenn ihr mit einem Oszilloskop messt, was hier passiert, wenn hier ein unklarer Sinus arbeitet, wird das System nicht klar sein.
+
+181
+00:11:50,140 --> 00:11:54,720
+Man muss einen guten, schönen Sinus auf dieser Drossel erreichen.
+
+182
+00:11:56,140 --> 00:12:01,680
+Also, diese Drähte sind im Grunde Bypass-Drähte.
+
+183
+00:12:01,900 --> 00:12:10,200
+Ich meine, durch die Spule leiten wir die Spannung, die wir von 25 Windungen dieser roten Wicklung erhalten.
+
+184
+00:12:10,340 --> 00:12:12,060
+Sie ist hier mit rotem Klebeband markiert.
+
+185
+00:12:12,160 --> 00:12:19,520
+Sowohl Roma als auch ich haben hier jeweils 12 kleine Windungen, da eine Windung 2 Volt ist, und am Ende bekommen wir 24.
+
+186
+00:12:19,520 --> 00:12:24,700
+Ich meine, weil das System 24-Volt ist und es dieses Netzteil für die Eigenversorgung speist.
+
+187
+00:12:25,640 --> 00:12:27,300
+Als Nächstes, was ich sagen wollte.
+
+188
+00:12:27,500 --> 00:12:35,980
+Also, hier speisen wir Spannung von diesem Topfkern und kommen durch ihn zum Diodenbrückengleichrichter raus, ja, und erhalten es.
+
+189
+00:12:36,200 --> 00:12:43,080
+Aber da wieder ein Rechteckimpuls hier rauskommt, ja, also kommt er nicht da raus.
+
+190
+00:12:43,220 --> 00:12:47,560
+Man muss ihn ein bisschen nicht rechteckig machen, aber ein wenig, nun, dort gibt es ein Durcheinander.
+
+191
+00:12:47,560 --> 00:12:51,780
+Das Durcheinander zeige ich später am Oszilloskop im nächsten Video, wenn ich das alles zusammengebaut habe.
+
+192
+00:12:51,900 --> 00:12:53,700
+Es zeigt dort verschiedenen Müll.
+
+193
+00:12:54,340 --> 00:12:56,020
+Aber wieder, was müssen wir tun?
+
+194
+00:12:56,560 --> 00:13:01,080
+Wir müssen es so machen, dass hier die Tesla-Spule und die Drossel die Hauptrolle spielen.
+
+195
+00:13:01,760 --> 00:13:02,520
+Wo schlagen wir ein?
+
+196
+00:13:02,820 --> 00:13:03,580
+Wir schlagen hier ein.
+
+197
+00:13:04,020 --> 00:13:06,640
+Übrigens möchte ich sofort an alle Fans sagen.
+
+198
+00:13:06,840 --> 00:13:15,860
+Ihr habt es zusammengebaut, es ist euch gelungen einzuschlagen, hier ging es los, also HF — genauer gesagt dieses HF-Ding — also, die Frequenzen haben sich abgestimmt, alles gut.
+
+199
+00:13:15,860 --> 00:13:20,380
+Alles richtig gemacht, bum-bam, diese Transistoren sind rausgeflogen, der Gegentakt hat gebrannt, ja.
+
+200
+00:13:20,960 --> 00:13:24,800
+Und was schlimmer ist, die Treiber sind rausgeflogen, natürlich, wegen der Transistoren.
+
+201
+00:13:25,300 --> 00:13:27,860
+Wieder möchte ich sagen, also, das alles muss geschützt werden.
+
+202
+00:13:29,800 --> 00:13:30,680
+Schützt mit Zenerdioden.
+
+203
+00:13:31,180 --> 00:13:36,240
+Die Zenerdioden fliegen raus, ihr verbrennt die Treiber nicht an diesem Ding, also, was noch?
+
+204
+00:13:36,380 --> 00:13:37,360
+Ich öffne die Box, ja.
+
+205
+00:13:37,860 --> 00:13:41,240
+Also, ich hatte dieses ganze Rig oben hier sitzen.
+
+206
+00:13:41,460 --> 00:13:44,700
+Ich habe alles nach unten verlegt, weil es Einstreuungen gab, ja.
+
+207
+00:13:44,700 --> 00:13:46,640
+Ich meine, ich habe die Einstreuungen beseitigt.
+
+208
+00:13:47,800 --> 00:13:58,740
+Abschirmung oben, Abschirmung unten, also, und natürlich arbeitet der Gegentakt selbst als, er ist auch ein PLL, ja, er hat einen PLL.
+
+209
+00:13:59,020 --> 00:14:02,140
+Das ist alles erledigt, alles schön arrangiert.
+
+210
+00:14:02,240 --> 00:14:05,860
+Wie ihr seht, hat die Box keinen Platz für irgendwelche Batterien.
+
+211
+00:14:06,420 --> 00:14:09,940
+Hier ist der Resonanzkondensator und all das.
+
+212
+00:14:09,940 --> 00:14:14,260
+Also, nun, und ein Niederfrequenzfilter.
+
+213
+00:14:14,760 --> 00:14:18,300
+Also, was möchte ich noch zu allem anderen hinzufügen.
+
+214
+00:14:18,860 --> 00:14:28,180
+Also, hier, also, jetzt schließen wir dieses Rig, damit es hier so aussieht, wie es auf dem Bild aussah.
+
+215
+00:14:29,080 --> 00:14:36,880
+Also, die wichtigsten Momente sind, diese ganze Strombewegung in der Drossel anzutreiben.
+
+216
+00:14:36,880 --> 00:14:42,920
+Sobald diese Bewegung begann, findet eine Flussverkettung oder Transformation mit dieser Spule statt.
+
+217
+00:14:43,080 --> 00:14:45,000
+Das ist keine Magie, das ist gewöhnlich.
+
+218
+00:14:45,700 --> 00:14:50,920
+Sobald ihr es durchlässt, bekommt ihr einen Leistungsgewinn, der kommen wird.
+
+219
+00:14:51,060 --> 00:15:01,880
+Natürlich ist es möglich, dass ihr keine 220-230 Volt bekommt, ja, also am Ausgang, da es dort einige Störungen geben wird, also die Leistung wird...
+
+220
+00:15:01,880 --> 00:15:13,660
+Nun, ihr könnt eine Spannung von 203 Volt bekommen, 202, so ist es mir rausgekommen, ja, also 200 Volt, ja, also einmal habe ich es geschafft, 240 zu bekommen, ja, und es stand sehr klar.
+
+221
+00:15:13,740 --> 00:15:20,100
+Nun, ich habe es irgendwie auf einem Oberton abgestimmt, und dann hat dieses ganze Ding kein zweites Mal funktioniert.
+
+222
+00:15:20,100 --> 00:15:25,240
+Nun, okay, also jetzt habe ich entschieden, dass ich mit dieser hier fertig werde, so wie es ist, so ist es.
+
+223
+00:15:25,840 --> 00:15:37,280
+Es soll mit mehr als zwei Kilowatt arbeiten, und selbst wenn es nicht klappt, zum Teufel damit, ich stelle es beiseite und baue weiter, weil das rein, sagen wir, ich bin schon, nun, parallel daran arbeitend
+
+224
+00:15:37,280 --> 00:15:48,680
+an anderen Geräten, aber dieses Gerät, ich will es nur in den Zustand bringen, in dem es bei Akula war, ja, also dasselbe.
+
+225
+00:15:48,680 --> 00:16:01,560
+Also, noch einmal sage ich, das Wichtigste hier ist der Sinus, ja, dann messen wir den Strom — den Strominus und den Spannungssinus.
+
+226
+00:16:01,760 --> 00:16:05,840
+Wir sehen, wo sie sich kreuzen, wir bringen den Impuls dort hin und schlagen ein, das war's.
+
+227
+00:16:06,580 --> 00:16:14,280
+Ich meine, wenn ihr mit diesen Impulsen herumspielt, also werden sie jede zweite Periode sein, nicht jede Periode, jede zweite Periode.
+
+228
+00:16:15,260 --> 00:16:16,320
+Jetzt über die Erdung.
+
+229
+00:16:16,640 --> 00:16:20,100
+Die Erde muss dick sein, muss definitiv dick sein.
+
+230
+00:16:20,680 --> 00:16:28,080
+Geschichten über Erdfrequenzen und so weiter, vergisst diesen Unsinn, er funktioniert absolut nicht.
+
+231
+00:16:28,400 --> 00:16:42,880
+Ich möchte euch sagen, ihr nehmt so einen dicken Draht, 25 Quadratmillimeter, schraubt ihn ruhig ein, sozusagen, verbindet ihn mit dem System und erdet das ganze System auf diesen Anschluss.
+
+232
+00:16:43,840 --> 00:16:49,200
+Ich meine, dementsprechend, übrigens, geht dieser blaue Draht auch zur Erdung.
+
+233
+00:16:49,280 --> 00:16:53,380
+Er ist noch nicht verbunden, ich verbinde ihn jetzt, bald starte ich dieses Rig.
+
+234
+00:16:55,100 --> 00:17:02,820
+Warum habe ich entschieden, das alles, diese Drosseln, all das, so wie es ist, wiederzubeleben — weil es so funktioniert hat.
+
+235
+00:17:03,500 --> 00:17:12,040
+Ich habe es hier anders gewickelt und diese ähnlichen kleinen Stäbe darunter gelegt — also das sind die, die ich gekauft habe.
+
+236
+00:17:12,040 --> 00:17:18,420
+Diesen hier werde ich später in ein anderes System einbauen, ich habe hier etwas, zeige es noch nicht, ich habe es.
+
+237
+00:17:18,700 --> 00:17:29,060
+Jetzt stelle ich es beiseite, ich arbeite daran, das hier endlich in Ordnung zu bringen, weil es mich einfach belastet und ich es fertigstellen will.
+
+238
+00:17:29,660 --> 00:17:33,940
+Wieder, das ist ein Kabel, ein normales Schweißkabel, 25 Quadratmillimeter.
+
+239
+00:17:33,940 --> 00:17:38,200
+Es ist hier, hier eingeschraubt.
+
+240
+00:17:38,780 --> 00:17:53,960
+Damit jetzt niemand glaubt, dass dieses Kabel nicht mehradrig, sondern ein normales ist, nun, wie man sagt, ein einzelner Strang, nur viele dieser, also, nicht viele Drähte, sondern nur Litzen.
+
+241
+00:17:54,060 --> 00:18:00,180
+Hier ist es ruhig gelötet, ja, also das ist, damit ihr glaubt, dass es ein normales Kabel ist.
+
+242
+00:18:00,180 --> 00:18:10,660
+Damit später keine Fragen entstehen — öffnet die Box, schraubt das Kabel ab, ihr habt hier 220 angelegt, ihr habt einen Haufen Geld für Klebeband ausgegeben, Idiotie.
+
+243
+00:18:11,080 --> 00:18:17,120
+Wie müde ich es bin, es Vollidioten zu beweisen, die einfach von Einsteins moderner Physik gehirngewaschen sind.
+
+244
+00:18:17,120 --> 00:18:23,400
+Also, weil sie nicht verstehen, dass die Sonne scheint und die Erde sich kostenlos dreht, und niemand sie bewegt.
+
+245
+00:18:24,020 --> 00:18:29,740
+Sie bewegt sich selbst, weil es erneuerbare Energie gibt, Elektronen, die sich selbst erzeugen und so weiter.
+
+246
+00:18:29,800 --> 00:18:33,560
+Aber wir werden jetzt nicht auf atomare Prozesse eingehen.
+
+247
+00:18:33,720 --> 00:18:38,660
+Ja, atomare Prozesse existieren in diesem Aufbau, aber auf der Basis von Elektronen.
+
+248
+00:18:38,780 --> 00:18:43,080
+Also, Roma, ich bin nicht in irgendeinen atomaren Prozess vertieft.
+
+249
+00:18:43,820 --> 00:18:49,840
+Ich beschäftige mich nur mit dem Magnetfeld, das in diesem System entsteht, und wie es rotiert.
+
+250
+00:18:50,020 --> 00:18:54,540
+Ich meine, wenn irgendwo ein elektrischer Strom durch einen Leiter fließt, dann gibt es dementsprechend dort auch ein Magnetfeld.
+
+251
+00:18:55,180 --> 00:18:56,600
+Also, was wollte ich noch sagen?
+
+252
+00:18:57,840 --> 00:19:01,380
+Also, hier müssen wir einen klaren Impuls erhalten.
+
+253
+00:19:01,560 --> 00:19:04,020
+Der Impuls muss ohne jegliche Schwingungen sein.
+
+254
+00:19:04,160 --> 00:19:08,200
+Wenn nach ihm abklingende Schwingungen kommen, stören sie den Betrieb des gesamten Systems.
+
+255
+00:19:08,860 --> 00:19:11,960
+Und je weniger davon, desto besser und stabiler arbeitet das System.
+
+256
+00:19:12,420 --> 00:19:15,220
+Glaubt mir, ich habe das alles am Oszilloskop gesehen.
+
+257
+00:19:15,360 --> 00:19:16,600
+Mein Oszilloskop ist einfach.
+
+258
+00:19:16,800 --> 00:19:22,060
+Ich habe noch keine allerlei ausgefallenen Knöpfe und so weiter gekauft, die alle haben.
+
+259
+00:19:22,560 --> 00:19:24,100
+Ich habe das einfachste bekommen.
+
+260
+00:19:24,200 --> 00:19:27,900
+Ich habe noch ein altes, das ich vorerst selten einschalte.
+
+261
+00:19:28,220 --> 00:19:32,500
+Ein zweikanaliges reicht mir völlig, um zu sehen, wie dieses System funktioniert.
+
+262
+00:19:32,500 --> 00:19:37,000
+Ich werde dieses System etwas fertigstellen, wie man so sagt.
+
+263
+00:19:37,240 --> 00:19:43,220
+Ich habe entschieden, mein Arsenal etwas aufzurüsten, sozusagen, an Generatoren und diesem Zeug.
+
+264
+00:19:43,420 --> 00:19:46,760
+Und da werde ich schon ernsthafter experimentieren.
+
+265
+00:19:47,460 --> 00:19:49,730
+Jetzt also, an die Fans des Geschwätzes.
+
+266
+00:19:50,480 --> 00:19:54,320
+Ich möchte einen großen Gruß schicken und sagen, also, dieses Ding.
+
+267
+00:19:55,060 --> 00:19:57,060
+Gib den Leuten das, gib das, gib das.
+
+268
+00:19:57,140 --> 00:19:58,820
+Ich habe jetzt schon viel gesagt.
+
+269
+00:19:59,200 --> 00:20:00,610
+Im nächsten Video zeige ich Oszillogramme.
+
+270
+00:20:00,610 --> 00:20:03,410
+Wenn es mir gelingt, hier alles schnell zu starten.
+
+271
+00:20:04,010 --> 00:20:06,390
+Ich zeige Oszillogramme, wie das funktioniert.
+
+272
+00:20:08,270 --> 00:20:16,090
+Für diejenigen, die Elektronik nicht begreifen oder alles schlecht verstehen, müsst ihr, wie man sagt, auffrischen und das alles studieren.
+
+273
+00:20:16,150 --> 00:20:21,690
+Was ich über ein Jahr nicht wusste oder in meiner Praxis einfach nicht angewendet habe.
+
+274
+00:20:23,070 --> 00:20:25,310
+Ich habe das alles aufgefrischt, studiert.
+
+275
+00:20:26,290 --> 00:20:34,690
+Ich habe gelernt, viele, sozusagen, Dinge zu nutzen, die für mich vielleicht einfach unnötig oder unklar waren.
+
+276
+00:20:35,330 --> 00:20:37,570
+Was ich euch im Grunde empfehle.
+
+277
+00:20:37,810 --> 00:20:46,050
+Setzt euch ein bisschen hin, denkt mit eurem Kopf, sprecht sozusagen mit den richtigen Leuten, die sich mit diesem oder jenem befassen.
+
+278
+00:20:46,410 --> 00:20:49,690
+Und vergesst nicht, dass die Spule... die Spule...
+
+279
+00:20:50,290 --> 00:20:51,830
+Die Spule kann viel.
+
+280
+00:20:52,390 --> 00:20:59,290
+Aber in diesem Fall solltet ihr euch nicht zu sehr täuschen.
+
+281
+00:20:59,630 --> 00:21:11,030
+Und nicht denken, dass Leute, die sich mit dieser Sache befassen, kaufen werden, Geld ausgeben, einen Haufen Geld für diesen Müll ausgeben.
+
+282
+00:21:11,370 --> 00:21:14,050
+Ich meine diese Drähte, all das aufwickeln.
+
+283
+00:21:14,190 --> 00:21:16,630
+Ihr könnt euch nicht vorstellen, wie viel Zeit das braucht.
+
+284
+00:21:16,630 --> 00:21:22,770
+Ich habe auch ein Geschäft, mit dem ich beschäftigt bin.
+
+285
+00:21:23,030 --> 00:21:29,030
+Und ich würde keine Zeit auf etwas verwenden wollen, das nichts bringt.
+
+286
+00:21:29,490 --> 00:21:31,870
+Aber das ist mein Hobby, ich mache es an den Wochenenden.
+
+287
+00:21:32,390 --> 00:21:37,370
+Und ich möchte sagen, dass dieses Gerät natürlich modernisiert wird.
+
+288
+00:21:37,730 --> 00:21:39,590
+Nicht wie das, was Roma dort hatte.
+
+289
+00:21:40,050 --> 00:21:43,070
+Seines war das zweite Gerät oder das erste.
+
+290
+00:21:45,010 --> 00:21:46,350
+Eines der ersten.
+
+291
+00:21:47,110 --> 00:21:51,810
+Seine erfolgreiche Version, die auch Vitalik der Tiger gesehen hat.
+
+292
+00:21:52,310 --> 00:21:57,950
+Das Unternehmen Stecho Energy hat es auch gesehen, und alle anderen.
+
+293
+00:21:58,570 --> 00:22:00,090
+Sie haben gesehen, wie es funktioniert.
+
+294
+00:22:03,030 --> 00:22:08,330
+Ich glaube daran, deshalb versucht jeder, dieses Gerät zu bauen.
+
+295
+00:22:08,410 --> 00:22:10,150
+Es ist ziemlich nett.
+
+296
+00:22:10,150 --> 00:22:14,670
+Und grundsätzlich, was ich sagen wollte.
+
+297
+00:22:15,150 --> 00:22:17,350
+Ich wollte sagen, es ist Zeit, aufzuhören.
+
+298
+00:22:17,910 --> 00:22:19,590
+Es ist Zeit, an die Arbeit zu gehen.
+
+299
+00:22:20,270 --> 00:22:25,750
+Und zum Schluss möchte ich nur noch ein paar Abschiedsworte sagen.
+
+300
+00:22:26,830 --> 00:22:35,290
+Leute, vergesst nicht, dass die Antenne ihren Abstand haben muss.
+
+301
+00:22:35,370 --> 00:22:38,050
+Ihr wickelt ruhig ein 110er-Rohr.
+
+302
+00:22:38,050 --> 00:22:42,750
+Ihr nehmt ein 110er-Rohr, wickelt es mit dickem Kabel.
+
+303
+00:22:42,890 --> 00:22:44,670
+Es sind 6 Quadratmillimeter.
+
+304
+00:22:45,230 --> 00:22:45,970
+Starr.
+
+305
+00:22:47,250 --> 00:22:48,810
+Das reicht völlig aus.
+
+306
+00:22:48,950 --> 00:22:49,550
+6 Windungen.
+
+307
+00:22:50,150 --> 00:22:51,550
+Ihr könnt 7 machen, aber besser nicht.
+
+308
+00:22:51,850 --> 00:22:54,910
+Weil der Impuls nicht auf diese Spule gelangen sollte.
+
+309
+00:22:55,070 --> 00:23:01,310
+Diese Spule hat absolut nichts mit den Impulsen zu tun.
+
+310
+00:23:01,390 --> 00:23:05,890
+Durch sie fließt Niederfrequenzspannung.
+
+311
+00:23:05,890 --> 00:23:11,510
+Wechselstrom, der dann das ganze Rig erreicht.
+
+312
+00:23:11,570 --> 00:23:12,570
+Hier ist ein Kondensator.
+
+313
+00:23:12,950 --> 00:23:14,290
+12 Mikrofarad.
+
+314
+00:23:14,370 --> 00:23:15,790
+Das ist bereits ein Glättungskondensator am Ausgang.
+
+315
+00:23:15,930 --> 00:23:19,010
+Weil ich hier Gleichspannung bekommen muss.
+
+316
+00:23:19,430 --> 00:23:21,090
+Vollständig für die Steckdose und alles.
+
+317
+00:23:21,570 --> 00:23:24,030
+Hier Wechselstrom zu bekommen wäre dumm.
+
+318
+00:23:24,110 --> 00:23:31,270
+Weil, wenn es Wechselstrom ist, das Einschalten einer Last das System beeinflusst.
+
+319
+00:23:32,510 --> 00:23:34,770
+Also hilft mir der Diodenbrückengleichrichter dabei.
+
+320
+00:23:35,350 --> 00:23:38,790
+Dieses ganze Rig sehr gut zu trennen, sozusagen.
+
+321
+00:23:38,910 --> 00:23:42,050
+Übrigens denke ich, dass bei Roma das genauso gemacht wurde.
+
+322
+00:23:42,170 --> 00:23:44,390
+Weil es dem hier wirklich ähnlich sieht.
+
+323
+00:23:45,910 --> 00:23:49,990
+Jedenfalls, Roma, wenn du möchtest, kommentiere diesen Punkt natürlich.
+
+324
+00:23:50,210 --> 00:23:55,810
+Ich habe, wie man so sagt, den Betrieb dieses eures Systems geknackt.
+
+325
+00:23:56,050 --> 00:24:00,610
+Und über die Luft fange ich schon an zu ahnen, wie das alles funktioniert.
+
+326
+00:24:01,850 --> 00:24:06,770
+An die Fans, über allerlei Solitonen und so weiter zu erzählen.
+
+327
+00:24:07,550 --> 00:24:11,530
+Leute, hört auf, in Mystik und Fantasie abzugleiten.
+
+328
+00:24:12,150 --> 00:24:13,590
+Hier ist es ein Magnetfeld.
+
+329
+00:24:14,130 --> 00:24:20,890
+Hier, also, die Wirkung des Impulses und das Herausschlagen von Elektronen aus dem Medium.
+
+330
+00:24:20,990 --> 00:24:21,470
+Das war's.
+
+331
+00:24:22,190 --> 00:24:25,770
+Aus dem Metall, das im Grunde Kupfer ist.
+
+332
+00:24:26,370 --> 00:24:30,050
+Und so bekommen wir einen Gewinn.
+
+333
+00:24:30,050 --> 00:24:34,310
+Hier ist das System viel einfacher, als es euch allen scheint.
+
+334
+00:24:34,890 --> 00:24:37,610
+Wir alle versuchen nur, uns da reinzuarbeiten.
+
+335
+00:24:37,710 --> 00:24:39,790
+Dort versucht SvetoLuk, klug zu sein.
+
+336
+00:24:39,930 --> 00:24:41,170
+Stellt eine Tesla-Spule daneben.
+
+337
+00:24:41,350 --> 00:24:41,990
+All dieses Zeug.
+
+338
+00:24:42,830 --> 00:24:43,870
+Noch einmal möchte ich sagen.
+
+339
+00:24:43,950 --> 00:24:46,050
+Übrigens, über diese langen Tesla-Spulen.
+
+340
+00:24:46,910 --> 00:24:49,130
+Ich habe einige Bilder im Internet ausgegraben.
+
+341
+00:24:49,230 --> 00:24:49,770
+Ich zeige jetzt.
+
+342
+00:24:50,890 --> 00:24:52,770
+Irgendwo habe ich...
+
+343
+00:24:58,510 --> 00:25:02,510
+Dieser Aufbau hier.
+
+344
+00:25:03,350 --> 00:25:05,230
+Nun, speziell dieser Aufbau.
+
+345
+00:25:05,790 --> 00:25:07,310
+Ich weiß nicht, wie er funktioniert hat.
+
+346
+00:25:07,390 --> 00:25:08,370
+Wahrscheinlich hat er funktioniert.
+
+347
+00:25:08,930 --> 00:25:11,130
+Nur war die Leistung gering.
+
+348
+00:25:11,270 --> 00:25:12,790
+Weil hier kein Toroid ist.
+
+349
+00:25:15,430 --> 00:25:17,570
+Und der Einfluss auf dieses System...
+
+350
+00:25:17,570 --> 00:25:19,110
+Warum hat Roma übrigens gewechselt?
+
+351
+00:25:19,110 --> 00:25:21,170
+Er hat versucht, die Leistung zu erhöhen.
+
+352
+00:25:21,650 --> 00:25:24,310
+Er hat versucht, große Leistung aus diesem System zu quetschen.
+
+353
+00:25:24,410 --> 00:25:25,950
+Aber anscheinend hat es nicht geklappt.
+
+354
+00:25:26,230 --> 00:25:27,290
+Und ich weiß sogar warum.
+
+355
+00:25:28,210 --> 00:25:31,810
+Ich habe einige Gedanken dazu.
+
+356
+00:25:32,530 --> 00:25:33,990
+Also, das ist alles Unsinn.
+
+357
+00:25:34,110 --> 00:25:37,230
+Hier, übrigens, ist noch ein interessanter Moment.
+
+358
+00:25:37,730 --> 00:25:40,090
+Wo er den Kondensator doch oben drauf gesetzt hat.
+
+359
+00:25:40,230 --> 00:25:41,710
+Und es klar zusammengebaut hat.
+
+360
+00:25:41,870 --> 00:25:43,070
+Ich weiß nicht, woher diese Fotos sind.
+
+361
+00:25:43,970 --> 00:25:46,590
+Nun, wisst ihr, es kursiert viel Zeug, sozusagen.
+
+362
+00:25:47,330 --> 00:25:50,090
+Wir werden es jetzt nicht diskutieren.
+
+363
+00:25:50,170 --> 00:25:51,230
+Ich wollte nur sagen.
+
+364
+00:25:51,710 --> 00:25:55,210
+Das ist ein Hochspannungstransformator.
+
+365
+00:25:55,790 --> 00:25:57,330
+Der mit Impulsen schlägt.
+
+366
+00:25:57,490 --> 00:25:59,170
+Er ist hier, natürlich...
+
+367
+00:25:59,170 --> 00:26:02,830
+Übrigens, in manchen Systemen...
+
+368
+00:26:02,830 --> 00:26:10,710
+In dem letzten System, das er in Deutschland demonstriert hat, kann man sehen, dass ein Hochspannungswandler eingebaut ist.
+
+369
+00:26:11,710 --> 00:26:14,590
+Er hat anscheinend versucht, die Spannung für die Tesla-Spule zu erhöhen.
+
+370
+00:26:14,590 --> 00:26:20,610
+Um einen starken Impuls in das umgebende Medium zu schicken.
+
+371
+00:26:20,730 --> 00:26:23,130
+Damit es eine gute Aufnahme auf diese Spule gibt.
+
+372
+00:26:23,990 --> 00:26:29,930
+Also, der Schlag war gut rund um das Medium, das im Grunde das gesamte Magnetfeld dieser Spule zum Schwingen bringt.
+
+373
+00:26:30,730 --> 00:26:32,450
+Zum richtigen Moment, natürlich.
+
+374
+00:26:32,610 --> 00:26:33,670
+Ich meine, ich wollte sagen.
+
+375
+00:26:35,590 --> 00:26:39,990
+Und er hat das alles im manuellen Modus abgestimmt, anscheinend.
+
+376
+00:26:40,130 --> 00:26:49,410
+Und dann, als er, wie man sagt, das Ergebnis bekommen hat, hat er gesehen, wie das alles zusammengestellt werden kann.
+
+377
+00:26:50,910 --> 00:26:52,690
+Nun, im Grunde war das alles für jetzt.
+
+378
+00:26:53,710 --> 00:26:55,450
+Ich habe schon viel gesagt.
+
+379
+00:26:55,930 --> 00:26:57,570
+Ich hoffe, niemand wird mir böse sein.
+
+380
+00:26:58,370 --> 00:27:06,010
+Dafür, dass ich sozusagen einige Geheimnisse verraten habe, die ich sowieso schon herausgefunden hatte, nach den Konstruktionen zu urteilen.
+
+381
+00:27:06,290 --> 00:27:09,350
+Ich meine, durch... nun, das ist alles sehr einfach.
+
+382
+00:27:09,550 --> 00:27:11,990
+Man muss nur seinen Verstand einschalten.
+
+383
+00:27:11,990 --> 00:27:14,110
+Und alles wird funktionieren.
+
+384
+00:27:15,190 --> 00:27:17,310
+Also, über diese Spule.
+
+385
+00:27:17,430 --> 00:27:19,870
+Das ist genau die Spule, die wir diese nennen.
+
+386
+00:27:20,370 --> 00:27:21,090
+Hier ist sie.
+
+387
+00:27:22,090 --> 00:27:25,550
+Er hat einfach alles groß gemacht, um große Leistung zu bekommen.
+
+388
+00:27:25,670 --> 00:27:26,750
+Und die Frequenzen gesenkt.
+
+389
+00:27:27,470 --> 00:27:32,450
+Es stellt sich heraus, dass diese Spule dementsprechend mit dünnem Draht gewickelt ist, niedrigere Frequenz.
+
+390
+00:27:33,070 --> 00:27:36,830
+Er hat versucht, sagen wir, etwas Leistungsstärkeres zu erreichen.
+
+391
+00:27:36,870 --> 00:27:38,970
+Aber es hat offensichtlich nicht geklappt.
+
+392
+00:27:39,150 --> 00:27:43,450
+Ich meine, etwas Großes rauszuquetschen, weil es in Deutschland 20 Watt waren.
+
+393
+00:27:43,670 --> 00:27:44,570
+Da waren einige wenige.
+
+394
+00:27:45,570 --> 00:27:51,490
+Hier, in diesem Aufbau, denke ich, nach meinen Berechnungen, 800 Watt.
+
+395
+00:27:51,510 --> 00:27:52,810
+Anscheinend klappt etwas nicht.
+
+396
+00:27:53,730 --> 00:27:55,010
+Jedenfalls, gut für ihn.
+
+397
+00:27:56,090 --> 00:27:59,930
+Und ich würde nicht in eine schlechte Richtung kommentieren wollen.
+
+398
+00:28:00,070 --> 00:28:02,450
+Ja, er bringt alle durcheinander, alle.
+
+399
+00:28:02,730 --> 00:28:06,270
+Ich meine, wie man es baut, damit die Leute nicht verstehen.
+
+400
+00:28:06,350 --> 00:28:07,390
+Jedoch sage ich noch einmal.
+
+401
+00:28:08,170 --> 00:28:09,050
+Ein Spezialist wird es herausfinden.
+
+402
+00:28:09,050 --> 00:28:10,850
+Jeder normale.
+
+403
+00:28:11,030 --> 00:28:12,370
+Ich meine, noch einmal sage ich.
+
+404
+00:28:13,430 --> 00:28:17,030
+Ich werde definitiv ein Oszillogramm zeigen, wie es gemacht wird.
+
+405
+00:28:17,570 --> 00:28:21,410
+Ich verspreche natürlich nicht, dass — ich habe leider kein 3-Kanal-Oszilloskop.
+
+406
+00:28:21,630 --> 00:28:23,370
+Also werde ich es nicht in 3 Kanälen zeigen.
+
+407
+00:28:23,490 --> 00:28:25,070
+Aber in 2 Kanälen zeige ich es definitiv.
+
+408
+00:28:25,690 --> 00:28:27,390
+Wo man mit dem Impuls einschlagen muss.
+
+409
+00:28:27,690 --> 00:28:33,270
+Aber wieder, ich erinnere noch einmal daran, dass der Impuls klar sein muss.
+
+410
+00:28:34,790 --> 00:28:36,970
+Einer bestimmten Länge und Anstieg.
+
+411
+00:28:37,430 --> 00:28:38,210
+Das ist sehr wichtig.
+
+412
+00:28:38,210 --> 00:28:40,210
+Weil, wenn ihr es nicht abstimmt...
+
+413
+00:28:40,970 --> 00:28:42,230
+Wieder, noch einmal sage ich.
+
+414
+00:28:43,110 --> 00:28:46,130
+Ein bestimmter Impuls arbeitet bei einer bestimmten Frequenz.
+
+415
+00:28:46,410 --> 00:28:52,990
+Dementsprechend stimmt sich hier die Frequenz mit der Arbeitsfrequenz der Drossel ab.
+
+416
+00:28:53,330 --> 00:28:56,330
+Indem ihr die Frequenzen abstimmt, bekommt ihr den Betrieb.
+
+417
+00:28:56,810 --> 00:28:59,590
+Wenn ihr das alles nicht bekommt, aber einfach so, auf Biegen und Brechen.
+
+418
+00:29:00,650 --> 00:29:02,050
+Es wird nichts funktionieren.
+
+419
+00:29:02,170 --> 00:29:03,690
+Übrigens, über Kapanadze.
+
+420
+00:29:04,270 --> 00:29:06,130
+Viele funken mit Funkenstrecken.
+
+421
+00:29:06,130 --> 00:29:08,030
+Hört auf mit diesem Unsinn.
+
+422
+00:29:08,510 --> 00:29:19,130
+Kapanadzes Funkenunterbrecher ist ein sogenanntes Element zur Dämpfung des Überschusses.
+
+423
+00:29:19,410 --> 00:29:28,930
+Wenn ihr nicht bemerkt habt, dass Kapanadzes Funkenunterbrecher ständig zu verschiedenen Zeiten, mit verschiedener Periodizität, funkelt.
+
+424
+00:29:30,250 --> 00:29:36,450
+Seine Klicks hängen nur davon ab, wie sich die Kapazität oder die Spule aufgeladen hat.
+
+425
+00:29:37,330 --> 00:29:40,250
+Ich werde jetzt nicht auf Details eingehen.
+
+426
+00:29:40,410 --> 00:29:41,830
+Das Video wird jetzt einfach enden.
+
+427
+00:29:42,470 --> 00:29:44,150
+Und dann muss ich es hochladen.
+
+428
+00:29:44,630 --> 00:29:45,570
+Diese ganze halbe Stunde.
+
+429
+00:29:46,410 --> 00:29:47,750
+Also, was ich sagen wollte.
+
+430
+00:29:52,070 --> 00:29:52,710
+Kapanadze...
+
+431
+00:29:52,710 --> 00:29:57,710
+Viele dort versuchen, gute Ergebnisse mit einem Funkenunterbrecher zu erzielen.
+
+432
+00:29:57,710 --> 00:29:59,070
+Ihr werdet sie nie bekommen.
+
+433
+00:30:00,010 --> 00:30:01,730
+Also, kein Bedarf, über Spulen zu funken.
+
+434
+00:30:02,430 --> 00:30:03,190
+Nutzlos.
+
+435
+00:30:03,510 --> 00:30:06,550
+Und TDKSe zu quälen.
+
+436
+00:30:07,150 --> 00:30:09,190
+Ein TDKS taugt für diese Zwecke nichts.
+
+437
+00:30:09,570 --> 00:30:11,610
+Ihr könnt ihn sofort wegwerfen, nachdem ihr die Ferrite entfernt habt.
+
+438
+00:30:12,430 --> 00:30:13,910
+TVSe könnt ihr verwenden.
+
+439
+00:30:14,030 --> 00:30:16,630
+Aber wieder muss man wissen, wie man die Frequenzen abstimmt.
+
+440
+00:30:17,410 --> 00:30:18,970
+Kapanadze weiß das sehr gut.
+
+441
+00:30:20,210 --> 00:30:23,450
+Bestimmte Generatoren funktionieren für das alles.
+
+442
+00:30:24,850 --> 00:30:29,410
+Schaut euch noch einige Videos über Roma Akula an, übrigens.
+
+443
+00:30:29,690 --> 00:30:32,610
+Er hat dort etwas Nützliches.
+
+444
+00:30:32,790 --> 00:30:34,690
+Wenn ihr Spezialisten seid, werdet ihr es herausfinden.
+
+445
+00:30:35,210 --> 00:30:38,010
+Wenn nicht, leider müsst ihr studieren.
+
+446
+00:30:38,190 --> 00:30:42,930
+Weil niemand es euch vorkaut und in den Mund legt.
+
+447
+00:30:43,090 --> 00:30:49,550
+Leute, wir Spezialisten, wie man sagt, auf diesem Gebiet sitzen nachts.
+
+448
+00:30:50,710 --> 00:30:51,270
+Basteln.
+
+449
+00:30:51,270 --> 00:30:52,730
+Und wir brauchen die richtige Stimmung.
+
+450
+00:30:53,310 --> 00:30:54,350
+Und das dauert Jahre.
+
+451
+00:30:54,650 --> 00:30:55,950
+Also versteht uns richtig.
+
+452
+00:30:57,030 --> 00:31:06,190
+Einfach den Schaltplan, mit dem wir experimentiert haben, auszuhändigen, ist nicht nur falsch zu verlangen.
+
+453
+00:31:06,850 --> 00:31:11,330
+Und trotzdem, lasst uns einen abschließenden Moment haben.
+
+454
+00:31:11,550 --> 00:31:28,830
+Ich werde die Fans von Fakes, oder Fans, die spotten und von irgendwelchen dubiosen E-Mails an Leute schreiben und meine Schaltpläne für 100 Dollar verkaufen, bitten.
+
+455
+00:31:29,690 --> 00:31:33,870
+Ich möchte sagen, ich verkaufe keine Schaltpläne für irgendwelches Geld.
+
+456
+00:31:33,870 --> 00:31:35,910
+Und Aufbauten auch nicht.
+
+457
+00:31:36,970 --> 00:31:43,610
+Wenn ihr so etwas braucht, kann ich nur Empfehlungen geben, was zu tun ist.
+
+458
+00:31:44,210 --> 00:31:49,850
+Kein Verkauf über E-Mails, über das Internet, habe ich nicht gemacht und mache ich nicht.
+
+459
+00:31:50,390 --> 00:31:52,530
+Und kein Spezialist macht das.
+
+460
+00:31:52,930 --> 00:31:59,030
+Weil diese Geräte Entwicklung und reine Laborarbeit sind.
+
+461
+00:32:00,130 --> 00:32:00,710
+Das ist erstens.
+
+462
+00:32:00,710 --> 00:32:01,530
+Zweitens.
+
+463
+00:32:02,750 --> 00:32:09,290
+Diejenigen, die euch angeboten haben, etwas für Geld in meinem Namen zu kaufen, fallt unter keinen Umständen darauf herein.
+
+464
+00:32:09,510 --> 00:32:14,990
+Das sind Betrüger, die euch so berauben werden und ihr bekommt nichts.
+
+465
+00:32:15,150 --> 00:32:15,890
+Keine Schaltpläne.
+
+466
+00:32:16,410 --> 00:32:19,190
+Weil das alles unsinnig und falsch sein wird.
+
+467
+00:32:19,770 --> 00:32:22,750
+Alle meine Videos sind nur auf meinem Kanal veröffentlicht.
+
+468
+00:32:23,530 --> 00:32:28,990
+Und, gemäß meiner Erlaubnis, auf dem Kanal Tesla Knowledge.
+
+469
+00:32:28,990 --> 00:32:32,290
+Und vielleicht hat jemand anders es irgendwo kopiert.
+
+470
+00:32:32,530 --> 00:32:33,670
+Noch einmal sage ich.
+
+471
+00:32:34,250 --> 00:32:36,670
+Alle meine Videos nur auf meinem Kanal.
+
+472
+00:32:37,450 --> 00:32:45,970
+Sonst nichts erzähle ich jemandem, geschweige denn verkaufe ich, und ich bitte niemanden um irgendwelches Geld.
+
+473
+00:32:46,730 --> 00:32:47,610
+Danke für eure Aufmerksamkeit.
