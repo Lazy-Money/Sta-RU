@@ -279,6 +279,7 @@ def _generate_tts(
     subs: list, voice: str, pitch_st: int, seg_dir: Path,
     dynamic_duration: bool = False,
     voice_mask: list[bool] | None = None,
+    strict_tts: bool = False,
 ) -> tuple[list[tuple[np.ndarray, int] | None], int]:
     """Render all SRT segments. Returns (per-segment audios, sr_master).
 
@@ -319,6 +320,16 @@ def _generate_tts(
             results.append((audio, sr))
             sr_master = sr
         except Exception as e:
+            if strict_tts:
+                # A genuine synthesis failure on a needed segment: abort the
+                # whole video rather than silently shipping a dub with a hole
+                # in it. (Empty/silent/zero-slot segments never reach here —
+                # they short-circuit to None above and are legitimate.)
+                raise RuntimeError(
+                    f"TTS synthesis failed at segment {i+1}/{len(subs)} "
+                    f"(voice={voice}): {e}. Aborting this video so it is not "
+                    f"produced incomplete."
+                ) from e
             print(f"  [WARN] seg {i+1}: {e}")
             results.append(None)
     print(f"  Generated: {sum(1 for r in results if r)}/{len(subs)}  (sped up: {n_sped_up}, slowed down: {n_slowed})")
@@ -380,6 +391,7 @@ def dub_one(
     demucs_segment: int | None = None,
     allow_no_ambient: bool = False,
     prefetched_video: Path | None = None,
+    strict_tts: bool = False,
 ) -> None:
     work_dir.mkdir(parents=True, exist_ok=True)
     seg_dir = work_dir / "segments"
@@ -404,7 +416,7 @@ def dub_one(
         if n_skipped:
             print(f"  Skipping TTS for {n_skipped}/{len(subs)} segments where the original is silent")
 
-    tts_audios, sr_master = _generate_tts(subs, voice, pitch_st, seg_dir, dynamic_duration, voice_mask)
+    tts_audios, sr_master = _generate_tts(subs, voice, pitch_st, seg_dir, dynamic_duration, voice_mask, strict_tts=strict_tts)
     if not any(r is not None for r in tts_audios):
         raise RuntimeError("No TTS generated for any segment")
 
@@ -482,6 +494,7 @@ def dub_one_split_aware(
     allow_no_ambient: bool = False,
     max_part_seconds: int | None = None,
     normalize_local: bool = False,
+    strict_tts: bool = False,
 ) -> None:
     """Wrap dub_one with a pre-pipeline split for long videos.
 
@@ -543,6 +556,7 @@ def dub_one_split_aware(
             demucs_model=demucs_model, demucs_segment=demucs_segment,
             allow_no_ambient=allow_no_ambient,
             prefetched_video=full_video,
+            strict_tts=strict_tts,
         )
         shutil.rmtree(download_dir, ignore_errors=True)
         return
@@ -590,6 +604,7 @@ def dub_one_split_aware(
             demucs_model=demucs_model, demucs_segment=demucs_segment,
             allow_no_ambient=allow_no_ambient,
             prefetched_video=vp_path,
+            strict_tts=strict_tts,
         )
         dubbed_parts.append(sub_output)
 
@@ -634,6 +649,7 @@ def run_batch(
     max_part_seconds: int | None = 35 * 60,
     source_paths: list[str | Path] | None = None,
     normalize_local: bool = False,
+    strict_tts: bool = False,
 ) -> list[VideoItem]:
     """Main entry point. `voice` overrides `gender` if provided.
     `max_part_seconds`: split videos longer than this at silences so each
@@ -736,6 +752,7 @@ def run_batch(
                 allow_no_ambient=allow_no_ambient,
                 max_part_seconds=max_part_seconds,
                 normalize_local=normalize_local,
+                strict_tts=strict_tts,
             )
             it.status = "done"
             print(f"  Elapsed: {time.time() - t0:.1f}s")
@@ -752,6 +769,241 @@ def run_batch(
             print(f"{_RED}{line}{_RESET}" if s == "failed" else line)
     print(f"\nOutputs in: {output_dir_path}")
     return items
+
+
+def run_batch_multilang(
+    urls=None,
+    srt_dir=None,
+    output_dir=None,
+    primary_lang: str = "EN",
+    secondary_langs: list[str] | None = None,
+    gender: str = "M",
+    voice: str | None = None,
+    pitch_st: int = 0,
+    translate_titles: bool = False,
+    remove_voice: bool = True,
+    range_expr: str = "all",
+    work_root: str | Path = "/tmp/sta-ru-edge",
+    dynamic_duration: bool = False,
+    cache_root: str | Path | None = "/tmp/sta-ru-cache",
+    skip_silent_segments: bool = True,
+    burn_in_subs: bool = False,
+    demucs_model: str = "htdemucs",
+    demucs_segment: int | None = None,
+    allow_no_ambient: bool = False,
+    max_part_seconds: int | None = 35 * 60,
+    source_paths: list[str | Path] | None = None,
+    normalize_local: bool = False,
+    strict_tts: bool = True,
+    youtube_dead_threshold: int = 2,
+) -> list[VideoItem]:
+    """Breadth-first, multi-language, YouTube-resilient batch.
+
+    The expensive YouTube-dependent work (download + Demucs ambient) is done
+    ONCE per video and cached under {cache_root}/{key}/. Producing the same
+    video in another language reuses that cache — no yt-dlp, no Demucs, just
+    TTS + mux. This function exploits that to squeeze the most out of a Colab
+    session even when YouTube's cloud-IP bot wall kills downloads mid-run.
+
+    Order (breadth-first — the primary language is the priority):
+      1. PRIMARY pass over every video, in `primary_lang` with the configured
+         voice. If downloads start hitting the bot wall on
+         `youtube_dead_threshold` consecutive videos, stop downloading; the
+         remaining un-cached videos are left 'skipped'.
+      2. SECONDARY passes, one per language in `secondary_langs` (in order),
+         each dubbing ONLY the already-cached videos with that language's
+         DEFAULT voice and the same options. Videos that never downloaded are
+         skipped (can't fetch them without YouTube).
+
+    So: if YouTube dies after N videos, you still get primary+secondaries for
+    those N; and if Colab itself dies, whatever finished is intact. Secondary
+    languages are pure bonus and never block the primary.
+
+    `strict_tts=True`: a genuine TTS synthesis failure aborts that video (no
+    partial dub) rather than warning and leaving a silent gap.
+
+    Returns a flat list of VideoItem (one record per video+language attempted),
+    each with its own status/output_path — drop-in for the download cell.
+    """
+    import dataclasses
+
+    primary = primary_lang.upper()
+    secondaries: list[str] = []
+    for lg in (secondary_langs or []):
+        u = (lg or "").upper()
+        if u and u != primary and u not in secondaries:
+            secondaries.append(u)
+
+    cache_root_p = Path(cache_root) if cache_root else None
+    work_root_path = Path(work_root)
+    srt_dir_path = Path(srt_dir)
+
+    # Output base: if output_dir already ends in the primary lang (…/Dubbing/EN),
+    # use its parent so every language lands in …/Dubbing/{LANG}.
+    out_base = Path(output_dir)
+    if out_base.name.upper() == primary:
+        out_base = out_base.parent
+
+    def out_dir_for(lang: str) -> Path:
+        return out_base / lang.upper()
+
+    # Build items ONCE (single metadata sweep) and reuse for every language, so
+    # the secondary passes never call YouTube again (real titles preserved).
+    using_files = bool(source_paths)
+    if using_files:
+        items = build_items_from_files(list(source_paths))
+        print(f"\n{'='*60}\nLoaded {len(items)} local video file(s)\n{'='*60}\n")
+    else:
+        url_entries = load_urls(urls)
+        if not url_entries:
+            print("No URLs to process.")
+            return []
+        print(f"\n{'='*60}\nLoaded {len(url_entries)} URLs\n{'='*60}\n")
+        print("Fetching metadata from YouTube...")
+        items = build_items(url_entries, translate_titles=translate_titles,
+                            target_lang=primary.lower())
+
+    selected = parse_range(range_expr, max((it.n for it in items), default=0))
+    single = sum(1 for it in items if it.status != "failed") == 1
+
+    primary_voice = resolve_voice(primary, gender, voice)
+    print(f"\nPrimary:   {primary}  (voice: {primary_voice})")
+    if secondaries:
+        print("Secondary: " + ", ".join(
+            f"{lg}->{resolve_voice(lg, gender, None)}" for lg in secondaries)
+            + "   (default voice; cached videos only)")
+    else:
+        print("Secondary: (none)")
+    print(f"strict_tts={strict_tts}  |  youtube_dead_threshold={youtube_dead_threshold}")
+
+    def pair_srt(item: VideoItem, lang: str):
+        # Single-video + primary-only run keeps the 'newest SRT wins'
+        # convenience. Anything multi-video or multi-language needs the
+        # numbered {N#}-{LANG}.srt convention to tell files apart.
+        if single and not secondaries:
+            p = newest_srt(srt_dir_path, lang)
+            if p is not None:
+                return p
+        p = srt_dir_path / f"{item.n}-{lang.upper()}.srt"
+        return p if p.exists() else None
+
+    def video_cached(item: VideoItem) -> bool:
+        if not cache_root_p:
+            return False
+        return (cache_root_p / batch_dub.item_cache_key(item) / "video.mp4").exists()
+
+    def run_one(item: VideoItem, lang: str, voice_name: str, idx: int, total: int):
+        """Process one (video, language). Returns a VideoItem result record."""
+        rec = dataclasses.replace(item)
+        out_path = out_dir_for(lang) / build_output_name(item, lang, translate_titles, ext="mp4")
+        rec.output_path = out_path
+        if out_path.exists():
+            rec.status, rec.error = "done", "already exists"
+            print(f"  (skip) N#{item.n} [{lang}] already exists")
+            return rec
+        srt_path = pair_srt(item, lang)
+        if srt_path is None:
+            rec.status, rec.error = "skipped", f"no SRT: {item.n}-{lang.upper()}.srt"
+            return rec
+        item.srt_path = rec.srt_path = srt_path
+        print(f"\n[{idx}/{total}] N#{item.n} [{lang}] — {(item.title or '')[:55]}")
+        t0 = time.time()
+        dub_one_split_aware(
+            item=item, lang=lang.lower(), voice=voice_name, pitch_st=pitch_st,
+            work_dir=work_root_path / f"n{item.n}_{lang.upper()}",
+            output_path=out_path,
+            remove_voice=remove_voice, dynamic_duration=dynamic_duration,
+            cache_root=cache_root_p,
+            skip_silent_segments=skip_silent_segments,
+            burn_in_subs=burn_in_subs,
+            demucs_model=demucs_model, demucs_segment=demucs_segment,
+            allow_no_ambient=allow_no_ambient,
+            max_part_seconds=max_part_seconds,
+            normalize_local=normalize_local,
+            strict_tts=strict_tts,
+        )
+        rec.status = "done"
+        print(f"  Elapsed: {time.time() - t0:.1f}s")
+        return rec
+
+    all_results: list[VideoItem] = []
+    youtube_dead = False
+    consecutive_botwall = 0
+
+    # ---------- PRIMARY PASS ----------
+    print(f"\n{'='*60}\nPRIMARY pass — {primary}\n{'='*60}")
+    pending = [it for it in items if it.status != "failed" and it.n in selected]
+    for i, it in enumerate(pending, start=1):
+        if youtube_dead and not video_cached(it):
+            rec = dataclasses.replace(it)
+            rec.output_path = out_dir_for(primary) / build_output_name(it, primary, translate_titles, ext="mp4")
+            rec.status, rec.error = "skipped", "youtube blocked (download halted)"
+            all_results.append(rec)
+            continue
+        try:
+            rec = run_one(it, primary, primary_voice, i, len(pending))
+            if rec.status == "done":
+                consecutive_botwall = 0
+            all_results.append(rec)
+        except Exception as e:
+            rec = dataclasses.replace(it)
+            rec.output_path = out_dir_for(primary) / build_output_name(it, primary, translate_titles, ext="mp4")
+            rec.status, rec.error = "failed", str(e)
+            print(f"{_RED}  ✗ FAILED [{primary}] N#{it.n}: {e}{_RESET}")
+            all_results.append(rec)
+            # Only a download-stage bot wall (video not cached) counts toward
+            # 'YouTube is dead'. A strict_tts abort or a cached-video error
+            # never trips it.
+            if (not video_cached(it)) and batch_dub._is_botcheck(str(e)):
+                consecutive_botwall += 1
+                if consecutive_botwall >= youtube_dead_threshold and not youtube_dead:
+                    youtube_dead = True
+                    print(f"{_RED}  ⚠ YouTube appears blocked after "
+                          f"{consecutive_botwall} consecutive bot-wall failures. "
+                          f"Halting downloads — will finish CACHED videos in the "
+                          f"other languages.{_RESET}")
+
+    # ---------- SECONDARY PASSES (cache-gated, no YouTube) ----------
+    for lang in secondaries:
+        lang_voice = resolve_voice(lang, gender, None)
+        cached_items = [it for it in items
+                        if it.status != "failed" and it.n in selected and video_cached(it)]
+        print(f"\n{'='*60}\nSECONDARY pass — {lang}  (voice {lang_voice}; "
+              f"{len(cached_items)} cached video(s))\n{'='*60}")
+        if not cached_items:
+            print("  No cached videos available — nothing to do in this language.")
+            continue
+        if translate_titles:
+            batch_dub._translate_titles_inplace(items, lang.lower())
+        for i, it in enumerate(cached_items, start=1):
+            try:
+                all_results.append(run_one(it, lang, lang_voice, i, len(cached_items)))
+            except Exception as e:
+                rec = dataclasses.replace(it)
+                rec.output_path = out_dir_for(lang) / build_output_name(it, lang, translate_titles, ext="mp4")
+                rec.status, rec.error = "failed", str(e)
+                print(f"{_RED}  ✗ FAILED [{lang}] N#{it.n}: {e}{_RESET}")
+                all_results.append(rec)
+
+    # ---------- SUMMARY ----------
+    print(f"\n{'='*60}\nSummary (by language)\n{'='*60}")
+
+    def _lang_of(r: VideoItem) -> str:
+        return r.output_path.parent.name.upper() if r.output_path else "?"
+
+    for lg in [primary] + secondaries:
+        grp = [r for r in all_results if _lang_of(r) == lg]
+        done = sorted(r.n for r in grp if r.status == "done")
+        skip = sorted(r.n for r in grp if r.status == "skipped")
+        fail = sorted(r.n for r in grp if r.status == "failed")
+        line = f"  {lg}:  done={len(done)} {done}  |  skipped={len(skip)} {skip}  |  failed={len(fail)} {fail}"
+        print(f"{_RED}{line}{_RESET}" if fail else line)
+    if youtube_dead:
+        print(f"\n{_RED}YouTube blocked mid-run: un-cached videos were left "
+              f"un-downloaded; cached ones were completed in every requested "
+              f"language.{_RESET}")
+    print(f"\nOutputs base: {out_base}")
+    return all_results
 
 
 # ============================================================
