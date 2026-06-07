@@ -1,0 +1,999 @@
+1
+00:00:03,570 --> 00:00:06,130
+Il mito dei nanosecondi.
+
+2
+00:00:06,630 --> 00:00:13,550
+Non voglio dire niente di male sull'autore del circuito, ma insisteva che i nanosecondi funzionano per lui.
+
+3
+00:00:15,410 --> 00:00:19,890
+E secondo l'autore, il circuito funziona a una frequenza di 5 kHz.
+
+4
+00:00:20,350 --> 00:00:23,930
+Non faremo 5 kHz, faremo 10, di più.
+
+5
+00:00:24,830 --> 00:00:27,350
+Così va più potenza alla lampadina.
+
+6
+00:00:28,190 --> 00:00:34,770
+Cioè, in questo momento la frequenza di ripetizione degli impulsi è di 10 kHz.
+
+7
+00:00:37,810 --> 00:00:42,450
+Questa sonda è ora direttamente sulla lampadina.
+
+8
+00:00:46,350 --> 00:00:51,850
+Questo oscilloscopio mostra cosa succede alla base dell'interruttore.
+
+9
+00:00:58,820 --> 00:01:00,880
+Allora, quello che abbiamo alla base.
+
+10
+00:01:01,140 --> 00:01:03,940
+La nostra base dei tempi è di 50 nanosecondi.
+
+11
+00:01:09,380 --> 00:01:12,840
+Base dei tempi 10 nanosecondi.
+
+12
+00:01:15,780 --> 00:01:19,500
+Cioè 10 nanosecondi per divisione.
+
+13
+00:01:20,360 --> 00:01:20,840
+Ecco.
+
+14
+00:01:24,440 --> 00:01:29,600
+Adesso, quello che abbiamo direttamente sulla lampadina stessa.
+
+15
+00:01:33,500 --> 00:01:37,180
+Che bel impulso.
+
+16
+00:01:38,440 --> 00:01:39,360
+Adesso ci arriviamo.
+
+17
+00:01:39,780 --> 00:01:39,780
+Ecco.
+
+18
+00:01:42,000 --> 00:01:45,280
+Questo rimbalzo qui è già il transistor che si chiude.
+
+19
+00:01:45,840 --> 00:01:47,500
+Poi viene l'autoinduzione del choke.
+
+20
+00:01:49,040 --> 00:01:51,020
+Base dei tempi 50 nanosecondi.
+
+21
+00:01:52,540 --> 00:01:55,740
+Il fronte è quasi 50 nanosecondi.
+
+22
+00:01:55,960 --> 00:01:56,560
+Un po' di più.
+
+23
+00:01:57,440 --> 00:01:58,240
+Forse un po' meno.
+
+24
+00:01:58,420 --> 00:01:58,840
+Non importa.
+
+25
+00:02:00,020 --> 00:02:03,200
+Ma a quel loro fronte…
+
+26
+00:02:03,200 --> 00:02:04,300
+E noto.
+
+27
+00:02:05,000 --> 00:02:07,100
+10 nanosecondi alla base.
+
+28
+00:02:09,720 --> 00:02:12,380
+La lampadina non pensa nemmeno ad arrossarsi.
+
+29
+00:02:19,610 --> 00:02:20,470
+Così.
+
+30
+00:02:21,610 --> 00:02:23,690
+Naturalmente anche questo è lo stesso.
+
+31
+00:02:24,370 --> 00:02:26,170
+Il consumo dell'inverter in quel momento.
+
+32
+00:02:27,130 --> 00:02:28,130
+Modalità a vuoto.
+
+33
+00:02:29,490 --> 00:02:30,130
+Praticamente.
+
+34
+00:02:30,170 --> 00:02:32,230
+1 ampere, 20 volt.
+
+35
+00:02:33,910 --> 00:02:34,930
+Ecco.
+
+36
+00:02:36,210 --> 00:02:38,270
+Mettiamo una da 100 watt.
+
+37
+00:02:42,170 --> 00:02:43,130
+Ecco.
+
+38
+00:02:43,250 --> 00:02:47,850
+Adesso vi mostro l'oscillogramma — ho tolto la lampadina e il nostro rimbalzo è cambiato.
+
+39
+00:02:47,910 --> 00:02:49,040
+Modalità a vuoto.
+
+40
+00:02:50,590 --> 00:02:52,790
+Mettiamo una da 100 watt.
+
+41
+00:02:56,060 --> 00:02:58,670
+Questo è a 50 nanosecondi.
+
+42
+00:03:01,500 --> 00:03:03,480
+Adesso vi mostro cosa cambia.
+
+43
+00:03:03,600 --> 00:03:04,400
+La sto installando.
+
+44
+00:03:06,060 --> 00:03:11,340
+Questa lampadina ha già un'autoinduzione e un rimbalzo diversi.
+
+45
+00:03:15,300 --> 00:03:16,500
+Di nuovo noto.
+
+46
+00:03:17,040 --> 00:03:19,720
+Il fronte è inferiore a 50 nanosecondi.
+
+47
+00:03:21,860 --> 00:03:24,320
+Cioè il transistor si è appena aperto e si chiude subito.
+
+48
+00:03:24,660 --> 00:03:25,680
+Scaricata la capacitanza.
+
+49
+00:03:26,900 --> 00:03:27,200
+Zero.
+
+50
+00:03:33,400 --> 00:03:34,980
+Mettiamo un'altra da 100 watt.
+
+51
+00:03:39,750 --> 00:03:40,970
+Ecco.
+
+52
+00:03:41,130 --> 00:03:42,370
+Quindi una da 100 watt.
+
+53
+00:03:43,530 --> 00:03:44,560
+240 volt.
+
+54
+00:03:45,870 --> 00:03:47,470
+100 volt.
+
+55
+00:03:53,420 --> 00:03:55,060
+Vediamo come cambia.
+
+56
+00:03:57,380 --> 00:03:57,840
+Eccola.
+
+57
+00:03:59,660 --> 00:04:01,360
+Il tempo di scarica della capacitanza.
+
+58
+00:04:01,640 --> 00:04:02,540
+Il nostro.
+
+59
+00:04:03,420 --> 00:04:05,040
+È rimasto uguale anche questo.
+
+60
+00:04:05,680 --> 00:04:09,000
+È cambiata solo l'autoinduzione propria della lampadina.
+
+61
+00:04:10,100 --> 00:04:11,940
+Ma il fronte di scarica della capacitanza.
+
+62
+00:04:12,900 --> 00:04:13,520
+Di questa.
+
+63
+00:04:15,060 --> 00:04:15,740
+È rimasto.
+
+64
+00:04:16,120 --> 00:04:18,240
+Questi sono 2000 volt.
+
+65
+00:04:19,620 --> 00:04:20,980
+2 nanofarad.
+
+66
+00:04:26,930 --> 00:04:27,510
+Ah, 2500.
+
+67
+00:04:30,810 --> 00:04:33,870
+Questo è il fronte principale.
+
+68
+00:04:34,470 --> 00:04:35,610
+Cioè già il condensatore.
+
+69
+00:04:36,330 --> 00:04:44,650
+Se fate il transistor ancora più piccolo, fino a 5, allora la capacitanza non si scarica completamente e otteniamo un picco inverso molto grande.
+
+70
+00:04:45,610 --> 00:04:46,430
+Il fronte di scarica della capacitanza.
+
+71
+00:04:48,510 --> 00:04:48,930
+Beh, ecco.
+
+72
+00:04:51,330 --> 00:04:52,450
+50.
+
+73
+00:04:52,910 --> 00:04:54,730
+Prendiamo nanosecondi.
+
+74
+00:04:55,270 --> 00:04:56,270
+Niente di niente.
+
+75
+00:04:57,410 --> 00:04:58,230
+La tensione.
+
+76
+00:04:59,090 --> 00:04:59,850
+Eccola.
+
+77
+00:05:00,670 --> 00:05:02,170
+354 volt.
+
+78
+00:05:02,550 --> 00:05:04,070
+Questo è già dopo la lampadina.
+
+79
+00:05:04,770 --> 00:05:05,010
+Questa.
+
+80
+00:05:05,910 --> 00:05:06,430
+Dopo di essa.
+
+81
+00:05:07,170 --> 00:05:08,090
+Così.
+
+82
+00:05:10,130 --> 00:05:10,950
+Scriviamo.
+
+83
+00:05:12,210 --> 00:05:13,790
+40 watt.
+
+84
+00:05:14,650 --> 00:05:15,350
+50.
+
+85
+00:05:16,770 --> 00:05:17,270
+Nanosec.
+
+86
+00:05:18,790 --> 00:05:20,730
+Non è riuscita ad accendersi.
+
+87
+00:05:21,690 --> 00:05:22,430
+I volt passano.
+
+88
+00:05:25,110 --> 00:05:25,810
+354.
+
+89
+00:05:27,070 --> 00:05:28,010
+100 watt anche.
+
+90
+00:05:29,130 --> 00:05:29,830
+50.
+
+91
+00:05:30,870 --> 00:05:31,870
+Nanosec.
+
+92
+00:05:32,790 --> 00:05:33,810
+Non si è accesa.
+
+93
+00:05:35,010 --> 00:05:35,750
+La tensione.
+
+94
+00:05:36,770 --> 00:05:37,210
+Anche.
+
+95
+00:05:40,840 --> 00:05:41,360
+Così.
+
+96
+00:05:43,240 --> 00:05:46,720
+E adesso proviamo ad accendere ognuna di esse.
+
+97
+00:05:47,600 --> 00:05:50,820
+E vedere quale tempo di apertura del transistor sarà necessario.
+
+98
+00:05:56,380 --> 00:05:57,120
+Beh, ecco.
+
+99
+00:05:57,680 --> 00:05:59,020
+Abbiamo 40 watt.
+
+100
+00:06:00,280 --> 00:06:02,040
+A malapena respira.
+
+101
+00:06:03,220 --> 00:06:05,960
+Degli impulsi così belli ci entrano.
+
+102
+00:06:07,480 --> 00:06:07,880
+Ecco.
+
+103
+00:06:08,600 --> 00:06:12,060
+E adesso proveremo a scaldarla.
+
+104
+00:06:12,560 --> 00:06:14,160
+Beh, così si scalda per bene.
+
+105
+00:06:14,160 --> 00:06:14,840
+40 watt.
+
+106
+00:06:15,020 --> 00:06:17,500
+Aumentiamo la durata del fronte.
+
+107
+00:06:18,840 --> 00:06:20,340
+Ho cambiato il condensatore.
+
+108
+00:06:20,800 --> 00:06:22,340
+Cioè ne ho messo uno 10 volte più grande.
+
+109
+00:06:22,900 --> 00:06:24,520
+A 23 nF.
+
+110
+00:06:25,420 --> 00:06:29,440
+Per avere la possibilità di aumentare la durata del fronte.
+
+111
+00:06:29,640 --> 00:06:30,780
+Cioè la durata dell'impulso.
+
+112
+00:06:31,020 --> 00:06:31,700
+Per aumentarla.
+
+113
+00:06:32,460 --> 00:06:34,160
+Prima era stato sostituito.
+
+114
+00:06:34,400 --> 00:06:34,700
+Adesso.
+
+115
+00:06:35,280 --> 00:06:37,320
+Aumentiamo il duty cycle.
+
+116
+00:06:38,020 --> 00:06:39,700
+Fino a quando la lampadina parte.
+
+117
+00:06:39,800 --> 00:06:40,660
+Si può vedere il filamento.
+
+118
+00:06:50,290 --> 00:06:51,040
+Beh, ecco.
+
+119
+00:06:53,430 --> 00:06:53,900
+Guarda.
+
+120
+00:06:54,240 --> 00:06:54,800
+La lampadina.
+
+121
+00:06:55,280 --> 00:06:56,100
+Ha iniziato.
+
+122
+00:06:56,760 --> 00:06:57,300
+Ad arrossarsi.
+
+123
+00:06:59,700 --> 00:06:59,860
+Ecco.
+
+124
+00:07:02,490 --> 00:07:03,160
+Beh, ecco.
+
+125
+00:07:04,290 --> 00:07:04,760
+Vediamo.
+
+126
+00:07:04,860 --> 00:07:05,990
+La nostra lampadina si è arrossata.
+
+127
+00:07:06,580 --> 00:07:06,860
+Adesso.
+
+128
+00:07:08,230 --> 00:07:11,120
+La nostra tensione è di 354 volt.
+
+129
+00:07:11,480 --> 00:07:12,940
+Cioè a 40 watt.
+
+130
+00:07:13,120 --> 00:07:13,940
+Alimentiamo.
+
+131
+00:07:16,140 --> 00:07:17,600
+354 volt.
+
+132
+00:07:18,600 --> 00:07:19,340
+Frequenza.
+
+133
+00:07:20,020 --> 00:07:21,100
+Di ripetizione degli impulsi.
+
+134
+00:07:23,260 --> 00:07:24,820
+100 kHz.
+
+135
+00:07:25,580 --> 00:07:25,840
+Cioè.
+
+136
+00:07:28,240 --> 00:07:29,800
+100 kHz.
+
+137
+00:07:30,300 --> 00:07:31,800
+E adesso quale tempo.
+
+138
+00:07:31,980 --> 00:07:32,960
+Ci vuole.
+
+139
+00:07:33,840 --> 00:07:34,520
+Parte.
+
+140
+00:07:34,640 --> 00:07:36,480
+A cui inizia ad arrossarsi.
+
+141
+00:07:37,860 --> 00:07:38,580
+Vediamo.
+
+142
+00:07:46,680 --> 00:07:49,320
+100 ns per divisione.
+
+143
+00:07:49,940 --> 00:07:51,500
+Ecco la durata dell'impulso.
+
+144
+00:07:52,580 --> 00:07:53,660
+Cioè si potrebbe dire.
+
+145
+00:07:54,160 --> 00:07:54,560
+200.
+
+146
+00:07:55,600 --> 00:07:56,760
+E rotti ns.
+
+147
+00:07:58,100 --> 00:07:58,980
+Beh, ecco.
+
+148
+00:07:59,280 --> 00:08:00,740
+La lampadina inizia ad arrossarsi.
+
+149
+00:08:01,860 --> 00:08:02,700
+A.
+
+150
+00:08:03,380 --> 00:08:03,960
+200.
+
+151
+00:08:05,240 --> 00:08:06,580
+Beh, giù intorno a 230 lì.
+
+152
+00:08:07,140 --> 00:08:08,200
+Beh, scriviamo 200.
+
+153
+00:08:09,700 --> 00:08:10,220
+ns.
+
+154
+00:08:12,000 --> 00:08:13,040
+Ecco.
+
+155
+00:08:13,840 --> 00:08:15,320
+Proviamo a scaldarla.
+
+156
+00:08:15,580 --> 00:08:16,440
+Alla piena luminosità.
+
+157
+00:08:16,960 --> 00:08:17,300
+Cioè.
+
+158
+00:08:17,740 --> 00:08:18,580
+Noto.
+
+159
+00:08:18,740 --> 00:08:21,020
+Inizia ad arrossarsi a questi ns.
+
+160
+00:08:22,460 --> 00:08:22,840
+200.
+
+161
+00:08:24,160 --> 00:08:24,880
+La scaldiamo.
+
+162
+00:08:39,190 --> 00:08:40,140
+Beh, eccola.
+
+163
+00:08:40,640 --> 00:08:41,800
+Quasi alla piena luminosità.
+
+164
+00:08:43,350 --> 00:08:43,820
+Vediamo.
+
+165
+00:08:44,680 --> 00:08:46,680
+Cosa succede con il nostro tempo.
+
+166
+00:08:51,110 --> 00:08:52,890
+Ecco il nostro fronte.
+
+167
+00:08:53,870 --> 00:08:54,890
+Quindi ecco una divisione.
+
+168
+00:08:55,570 --> 00:08:55,830
+Uno.
+
+169
+00:08:56,090 --> 00:08:56,270
+Due.
+
+170
+00:08:56,750 --> 00:08:57,030
+Tre.
+
+171
+00:08:57,770 --> 00:08:58,590
+E rotti.
+
+172
+00:08:58,670 --> 00:08:59,110
+350.
+
+173
+00:09:00,650 --> 00:09:01,590
+Il fronte.
+
+174
+00:09:02,150 --> 00:09:03,970
+E la durata dell'impulso.
+
+175
+00:09:04,930 --> 00:09:05,510
+Uno e mezzo.
+
+176
+00:09:05,790 --> 00:09:07,190
+Cioè 500 ns per divisione.
+
+177
+00:09:08,990 --> 00:09:08,990
+Uno.
+
+178
+00:09:08,990 --> 00:09:08,990
+Due.
+
+179
+00:09:09,250 --> 00:09:09,590
+Tre.
+
+180
+00:09:10,450 --> 00:09:11,930
+Cioè uno e mezzo ns.
+
+181
+00:09:12,660 --> 00:09:13,210
+Millisecondi.
+
+182
+00:09:14,210 --> 00:09:14,630
+Cioè.
+
+183
+00:09:16,500 --> 00:09:17,710
+Alla piena luminosità.
+
+184
+00:09:18,070 --> 00:09:18,550
+Della lampadina.
+
+185
+00:09:20,430 --> 00:09:21,830
+Quando brilla.
+
+186
+00:09:22,770 --> 00:09:23,470
+Noi.
+
+187
+00:09:24,150 --> 00:09:24,750
+Ci vuole.
+
+188
+00:09:25,930 --> 00:09:27,310
+1,5.
+
+189
+00:09:28,620 --> 00:09:29,170
+Micro.
+
+190
+00:09:29,790 --> 00:09:30,590
+Secondi.
+
+191
+00:09:32,990 --> 00:09:33,470
+Così.
+
+192
+00:09:37,270 --> 00:09:38,460
+Adesso la da 100 watt.
+
+193
+00:09:42,700 --> 00:09:43,760
+Ecco.
+
+194
+00:09:46,620 --> 00:09:48,160
+Degli impulsi così belli ci entrano.
+
+195
+00:09:48,340 --> 00:09:49,200
+Da nanosecondi.
+
+196
+00:09:50,220 --> 00:09:51,280
+Aggiungiamo.
+
+197
+00:09:51,460 --> 00:09:51,980
+Tempo.
+
+198
+00:09:53,400 --> 00:09:54,140
+Fino a.
+
+199
+00:09:54,320 --> 00:09:55,770
+Che inizia a scaldarsi.
+
+200
+00:10:13,950 --> 00:10:14,480
+Ecco.
+
+201
+00:10:15,870 --> 00:10:17,470
+La nostra lampadina.
+
+202
+00:10:18,290 --> 00:10:19,610
+Era visibile.
+
+203
+00:10:19,710 --> 00:10:21,850
+Che si era appena arrossata.
+
+204
+00:10:23,870 --> 00:10:24,230
+Ecco.
+
+205
+00:10:24,510 --> 00:10:25,510
+Adesso vediamo.
+
+206
+00:10:26,870 --> 00:10:27,930
+Quale tempo.
+
+207
+00:10:28,590 --> 00:10:31,310
+A cui ha iniziato ad arrossarsi appena.
+
+208
+00:10:40,090 --> 00:10:41,370
+250.
+
+209
+00:10:42,070 --> 00:10:43,290
+Nanosecondi.
+
+210
+00:10:43,790 --> 00:10:45,490
+La lampadina ha iniziato ad arrossarsi.
+
+211
+00:10:49,050 --> 00:10:49,390
+Ecco.
+
+212
+00:10:50,130 --> 00:10:50,770
+Così.
+
+213
+00:10:51,310 --> 00:10:52,210
+Alimentiamo lo stesso.
+
+214
+00:10:54,130 --> 00:10:55,470
+354 volt.
+
+215
+00:10:57,010 --> 00:10:57,550
+Eccoli.
+
+216
+00:10:57,550 --> 00:10:58,390
+Tempo.
+
+217
+00:10:59,890 --> 00:11:00,810
+Abbiamo.
+
+218
+00:11:02,330 --> 00:11:03,010
+Ecco.
+
+219
+00:11:03,410 --> 00:11:05,870
+Anche 100 kilohertz.
+
+220
+00:11:05,930 --> 00:11:06,830
+Abbiamo.
+
+221
+00:11:09,190 --> 00:11:10,790
+100 kilohertz.
+
+222
+00:11:11,030 --> 00:11:12,110
+Ripetizione degli impulsi.
+
+223
+00:11:13,350 --> 00:11:14,230
+Viene fuori.
+
+224
+00:11:15,130 --> 00:11:15,810
+250.
+
+225
+00:11:17,350 --> 00:11:18,030
+Nanosecondi.
+
+226
+00:11:19,090 --> 00:11:19,750
+La da 100 watt.
+
+227
+00:11:20,290 --> 00:11:21,250
+Ha iniziato ad arrossarsi.
+
+228
+00:11:22,710 --> 00:11:23,210
+Ecco.
+
+229
+00:11:24,110 --> 00:11:26,970
+Adesso aumentiamo il tempo di durata dell'impulso.
+
+230
+00:11:27,110 --> 00:11:29,790
+Fino a quando inizia a bruciare quasi alla piena luminosità.
+
+231
+00:11:41,670 --> 00:11:42,110
+Beh, ecco.
+
+232
+00:11:47,370 --> 00:11:48,050
+Vediamo.
+
+233
+00:11:49,090 --> 00:11:51,330
+Dico quasi alla piena luminosità.
+
+234
+00:11:51,410 --> 00:11:52,350
+Non sto confrontando adesso.
+
+235
+00:11:52,530 --> 00:11:53,250
+Solo visivamente.
+
+236
+00:11:54,210 --> 00:11:55,490
+Cioè per farla accendere.
+
+237
+00:11:56,470 --> 00:11:57,470
+La durata del fronte.
+
+238
+00:11:59,190 --> 00:12:00,550
+2 millisecondi.
+
+239
+00:12:02,470 --> 00:12:03,070
+Così.
+
+240
+00:12:03,070 --> 00:12:04,870
+Cioè.
+
+241
+00:12:05,250 --> 00:12:07,230
+Per farla accendere quasi alla piena luminosità.
+
+242
+00:12:07,890 --> 00:12:08,190
+2.
+
+243
+00:12:09,230 --> 00:12:10,030
+Milli.
+
+244
+00:12:10,350 --> 00:12:10,830
+Secondi.
+
+245
+00:12:13,230 --> 00:12:14,490
+Beh, ecco.
+
+246
+00:12:16,190 --> 00:12:16,450
+Il mito.
+
+247
+00:12:16,890 --> 00:12:17,750
+Dei nanosec.
+
+248
+00:12:18,090 --> 00:12:18,610
+Sfatato.
+
+249
+00:12:20,030 --> 00:12:20,850
+Nanosec.
+
+250
+00:12:21,430 --> 00:12:21,930
+Sciocchezze.

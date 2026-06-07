@@ -1,0 +1,467 @@
+1
+00:00:04,120 --> 00:00:07,240
+Propongo eliminar por completo los nanosegundos.
+
+2
+00:00:08,360 --> 00:00:12,620
+Ensambié un circuito por analogía con un multivibrador.
+
+3
+00:00:19,240 --> 00:00:23,040
+Aquí está lo que tenemos.
+
+4
+00:00:24,380 --> 00:00:28,100
+Tenemos nuestro condensador de carga.
+
+5
+00:00:29,080 --> 00:00:33,280
+Ahora mediremos cuánto llega a la bombilla y cuánto hay después de la bombilla.
+
+6
+00:00:33,460 --> 00:00:35,720
+El MOT, el devanado de alta tensión.
+
+7
+00:00:37,740 --> 00:00:49,440
+Y nuestro circuito está construido sobre un RF 840, capacidad de descarga de 2,2 nF, carga de 100 W, lectura de 100 W.
+
+8
+00:00:50,480 --> 00:01:04,900
+Divisor de tensión de 300 ohmios, dos KT315, protección de corriente de 50 ohmios cuando se activan dos zeners de 18 V, y 300 ohmios controlando el RF.
+
+9
+00:01:07,600 --> 00:01:15,520
+A todos los que ahora intentan iniciar un circuito así, les aconsejo usar este divisor con estabilización de base.
+
+10
+00:01:15,920 --> 00:01:18,680
+Protege tanto el RF como cualquier interruptor.
+
+11
+00:01:19,760 --> 00:01:23,980
+Estos dos resistores protegen nuestros KT315.
+
+12
+00:01:24,520 --> 00:01:31,040
+Ahora veremos cuánto voltaje se necesita para activar los dos KT315.
+
+13
+00:01:31,260 --> 00:01:32,840
+Es un 315G.
+
+14
+00:01:34,820 --> 00:01:37,780
+Aquí están, dos de ellos.
+
+15
+00:01:39,280 --> 00:01:41,740
+Aquí están nuestros divisores con estabilización.
+
+16
+00:01:46,660 --> 00:01:48,460
+Naturalmente, 7 kOhm.
+
+17
+00:01:50,600 --> 00:01:51,440
+Lo ponemos en marcha.
+
+18
+00:01:54,540 --> 00:01:55,900
+¿Qué vemos?
+
+19
+00:01:57,140 --> 00:02:11,200
+Vemos que tenemos un voltaje de 287 V y no hay activación de estos dos transistores.
+
+20
+00:02:12,920 --> 00:02:20,440
+Este está antes de la bombilla, este después de la bombilla, antes del MOT.
+
+21
+00:02:22,900 --> 00:02:27,620
+Ahora empezamos a agregar voltaje hasta que se active.
+
+22
+00:02:30,750 --> 00:02:35,050
+Luego lo quitaremos, dejándolo en modo libre.
+
+23
+00:02:36,750 --> 00:02:40,590
+Vemos la bombilla y el voltaje, y agregamos.
+
+24
+00:02:42,910 --> 00:02:44,550
+Ahí, hay un disparo.
+
+25
+00:02:46,350 --> 00:02:54,790
+Ahora quito el voltaje para dejar que el circuito funcione en modo libre.
+
+26
+00:02:58,570 --> 00:03:01,230
+Listo, nuestra bombilla se encendió.
+
+27
+00:03:03,170 --> 00:03:07,770
+Esta bombilla está un poco rojiza, esta es de 100 V y esta también es de 100 V.
+
+28
+00:03:08,170 --> 00:03:09,910
+Bombillas absolutamente idénticas.
+
+29
+00:03:12,410 --> 00:03:20,950
+Voltaje antes de la bombilla 296, después de la bombilla aproximadamente 230.
+
+30
+00:03:22,890 --> 00:03:35,470
+Anotamos el 296 en funcionamiento, escribimos 296 V antes de la bombilla.
+
+31
+00:03:36,030 --> 00:03:38,510
+Después de la bombilla, aproximadamente 230.
+
+32
+00:03:39,470 --> 00:03:42,550
+Cambia a medida que la bombilla se calienta.
+
+33
+00:03:47,430 --> 00:03:48,850
+228 V.
+
+34
+00:03:51,030 --> 00:03:52,750
+A continuación viene el MOT.
+
+35
+00:03:54,210 --> 00:04:00,330
+Bueno, a ver qué tenemos en la base de nuestro transistor.
+
+36
+00:04:01,850 --> 00:04:02,730
+Aquí está la sonda.
+
+37
+00:04:04,470 --> 00:04:06,190
+Va a la base.
+
+38
+00:04:08,170 --> 00:04:10,970
+En la base vemos este tipo de señal pequeña.
+
+39
+00:04:11,930 --> 00:04:14,670
+5 nanosegundos por división.
+
+40
+00:04:15,910 --> 00:04:17,870
+Total 1, 2, 3.
+
+41
+00:04:19,350 --> 00:04:23,790
+15 nanosegundos, y luego el rebote de control.
+
+42
+00:04:27,050 --> 00:04:33,150
+La señal en la base es de 15 nanosegundos.
+
+43
+00:04:35,970 --> 00:04:37,250
+Y ahora la frecuencia.
+
+44
+00:04:38,570 --> 00:04:40,270
+Vemos lo que tenemos aquí.
+
+45
+00:04:41,030 --> 00:04:41,950
+Qué belleza.
+
+46
+00:04:45,150 --> 00:04:48,330
+406 kHz.
+
+47
+00:04:50,330 --> 00:05:05,850
+Esta frecuencia es la resonancia de la bobina de alta tensión de este condensador, en la que el aumento de voltaje —es decir, la resonancia de voltaje— da un disparo de 320 V.
+
+48
+00:05:06,610 --> 00:05:12,590
+Ahora anotaremos que son 403 kHz.
+
+49
+00:05:13,170 --> 00:05:19,590
+Es decir, nuestra frecuencia es de 403 kHz.
+
+50
+00:05:21,570 --> 00:05:27,190
+Qué vemos en el colector.
+
+51
+00:05:28,670 --> 00:05:31,030
+Este es el colector.
+
+52
+00:05:32,830 --> 00:05:35,750
+Y esta ya es la señal misma después del condensador.
+
+53
+00:05:38,550 --> 00:05:43,770
+Ahora miramos por los flancos.
+
+54
+00:05:49,820 --> 00:05:52,460
+10 nanosegundos.
+
+55
+00:05:53,760 --> 00:06:01,920
+El flanco en el colector y la descarga del condensador son 20 nanosegundos.
+
+56
+00:06:02,920 --> 00:06:09,800
+Este es el límite de este transistor y el tiempo de descarga de este condensador.
+
+57
+00:06:10,120 --> 00:06:11,140
+2 nanofaradios.
+
+58
+00:06:12,080 --> 00:06:14,800
+Es decir, tenemos 10 nanosegundos.
+
+59
+00:06:15,600 --> 00:06:28,520
+Así que en total obtenemos 10 nanosegundos a nuestra frecuencia de 403 kHz.
+
+60
+00:06:30,380 --> 00:06:34,340
+403 kHz.
+
+61
+00:06:35,700 --> 00:06:38,440
+Bien, ahora lo principal.
+
+62
+00:06:39,800 --> 00:06:47,960
+¿Cuánto consumimos dado que nuestra bombilla de 100 vatios arde al 30%?
+
+63
+00:06:47,960 --> 00:06:49,360
+Eso es incluso exagerado.
+
+64
+00:06:49,900 --> 00:06:53,200
+Incluso si también se tiene en cuenta el enrojecimiento de esta bombilla.
+
+65
+00:06:53,360 --> 00:06:56,300
+Es decir, aquí es el 30% del brillo de una bombilla de 100 vatios.
+
+66
+00:06:57,700 --> 00:06:58,200
+No más.
+
+67
+00:06:59,580 --> 00:07:00,080
+Entonces.
+
+68
+00:07:00,860 --> 00:07:07,200
+Nuestra bombilla de 100 vatios arde al 30%.
+
+69
+00:07:07,200 --> 00:07:08,600
+Está amarillenta.
+
+70
+00:07:08,940 --> 00:07:10,140
+Apenas brilla.
+
+71
+00:07:12,580 --> 00:07:15,800
+Es decir, el 30% es
+
+72
+00:07:20,240 --> 00:07:21,020
+lo que nos arde.
+
+73
+00:07:22,180 --> 00:07:24,700
+Así que son 30 vatios.
+
+74
+00:07:25,360 --> 00:07:28,760
+Tomé una bombilla de 100 vatios para que sea más fácil calcular.
+
+75
+00:07:29,600 --> 00:07:30,540
+30 vatios.
+
+76
+00:07:32,260 --> 00:07:34,840
+¿Y qué gastamos en esto?
+
+77
+00:07:35,220 --> 00:07:40,600
+Gastamos un poco más de 4 amperios, aproximadamente.
+
+78
+00:07:41,260 --> 00:07:42,300
+20 voltios.
+
+79
+00:07:43,480 --> 00:07:48,820
+4 amperios, 20 voltios son 80 vatios.
+
+80
+00:07:52,100 --> 00:08:02,020
+Ahora la eficiencia del inversor es del 83, 82, 81, 80%, según el voltaje.
+
+81
+00:08:02,580 --> 00:08:03,560
+Lo medí.
+
+82
+00:08:03,560 --> 00:08:04,820
+Hagamos esto.
+
+83
+00:08:04,900 --> 00:08:12,120
+Restaremos no el 20%, sino el 25% de eficiencia de este consumo.
+
+84
+00:08:12,480 --> 00:08:13,580
+Para no pensar demasiado.
+
+85
+00:08:14,840 --> 00:08:18,260
+Restamos aproximadamente 20 vatios.
+
+86
+00:08:18,260 --> 00:08:20,920
+Es decir, de aquí menos 20 vatios.
+
+87
+00:08:21,340 --> 00:08:27,120
+Eso es el 25% para la eficiencia del inversor.
+
+88
+00:08:28,160 --> 00:08:31,180
+Y nos quedan 60 vatios.
+
+89
+00:08:33,120 --> 00:08:39,260
+Es decir, para obtener 30 vatios en este sistema.
+
+90
+00:08:39,380 --> 00:08:40,940
+Muestro de nuevo.
+
+91
+00:08:41,420 --> 00:08:49,420
+Con un pulso de 20 nanosegundos gastamos 60 vatios.
+
+92
+00:08:50,000 --> 00:08:51,200
+60 a 30.
+
+93
+00:08:52,000 --> 00:08:53,960
+Incluso si me equivoqué.
+
+94
+00:08:54,140 --> 00:08:56,400
+Incluso si arde no al 30, sino un poco más.
+
+95
+00:08:56,640 --> 00:08:58,280
+Al 35%.
+
+96
+00:08:58,280 --> 00:09:02,880
+La eficiencia sigue siendo del 50-60%.
+
+97
+00:09:02,880 --> 00:09:11,260
+Es decir, nuestra eficiencia resultó ser
+
+98
+00:09:14,940 --> 00:09:16,420
+50-60%.
+
+99
+00:09:16,420 --> 00:09:20,020
+Definitivamente.
+
+100
+00:09:20,200 --> 00:09:21,440
+Todo eso es una tontería.
+
+101
+00:09:23,900 --> 00:09:26,080
+Lo que puedo decir de mi parte.
+
+102
+00:09:27,620 --> 00:09:34,080
+En general, estudiando el funcionamiento de todo este circuito, no hay que decepcionarse demasiado.
+
+103
+00:09:35,140 --> 00:09:48,840
+Porque precisamente, en las lecturas del vatímetro a 50 Hz de CA, vemos que nuestros vatímetros muestran menos de lo que realmente vemos brillar las bombillas.
+
+104
+00:09:50,520 --> 00:09:51,300
+Y eso es bueno.
+
+105
+00:09:51,940 --> 00:10:08,320
+Solo hay que pensar por qué el vatímetro no registra la carga del condensador —es decir, la acción de las corrientes reactivas que son capaces de cargar el condensador, y luego usamos esa energía.
+
+106
+00:10:09,640 --> 00:10:10,940
+¿Qué es la potencia reactiva?
+
+107
+00:10:11,340 --> 00:10:12,300
+Bueno, simplemente diré.
+
+108
+00:10:12,540 --> 00:10:20,240
+Es decir, es voltaje sin corriente capaz de cargar condensadores potentes, y luego usamos esto.
+
+109
+00:10:21,060 --> 00:10:25,640
+Entiendo que Wasmus se acercó muy bien a esta solución.
+
+110
+00:10:25,980 --> 00:10:29,180
+O Wasmus, como quiera que lo llamen.
+
+111
+00:10:30,060 --> 00:10:35,120
+En general, entiendo su sistema, ya que trabajo de la misma manera con esto.
+
+112
+00:10:35,440 --> 00:10:50,120
+Es decir, uso las queridas Teslas de todos para activar o poner en movimiento átomos o moléculas específicos de una sustancia concreta que son capaces de crear corrientes eléctricas.
+
+113
+00:10:51,620 --> 00:10:57,660
+Bueno, y luego el sistema para convertirlos por el sistema Tesla u otra forma.
+
+114
+00:10:58,240 --> 00:11:03,520
+Acumular estos electrones y usarlos en una carga.
+
+115
+00:11:04,260 --> 00:11:05,420
+Pero eso ya es otro tema.
+
+116
+00:11:06,400 --> 00:11:08,540
+Esto es solo comida para el pensamiento.
+
+117
+00:11:09,420 --> 00:11:10,000
+¡Buena suerte a todos!

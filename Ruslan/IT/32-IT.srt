@@ -1,0 +1,467 @@
+1
+00:00:04,120 --> 00:00:07,240
+Propongo di eliminare completamente i nanosecond.
+
+2
+00:00:08,360 --> 00:00:12,620
+Ho assemblato un circuito per analogia con un multivibratore.
+
+3
+00:00:19,240 --> 00:00:23,040
+Ecco cosa abbiamo qui.
+
+4
+00:00:24,380 --> 00:00:28,100
+Abbiamo il nostro condensatore ricaricabile.
+
+5
+00:00:29,080 --> 00:00:33,280
+Ora misureremo quanto arriva alla lampada e quanto c'è dopo la lampada.
+
+6
+00:00:33,460 --> 00:00:35,720
+MOT, l'avvolgimento ad alta tensione.
+
+7
+00:00:37,740 --> 00:00:49,440
+Il nostro circuito è costruito su un RF 840, capacità di scarica 2,2 nF, carico da 100 W, lettura di 100 W.
+
+8
+00:00:50,480 --> 00:01:04,900
+Divisore di tensione 300 ohm, due KT315, protezione di corrente da 50 ohm quando scattano due zener da 18 V, e 300 ohm a controllare il RF.
+
+9
+00:01:07,600 --> 00:01:15,520
+A tutti quelli che ora cercano di avviare un tale circuito, consiglio di usare questo divisore con stabilizzazione di base.
+
+10
+00:01:15,920 --> 00:01:18,680
+Protegge sia il RF che qualsiasi interruttore.
+
+11
+00:01:19,760 --> 00:01:23,980
+Questi due resistori proteggono i nostri KT315.
+
+12
+00:01:24,520 --> 00:01:31,040
+Ora vedremo quanta tensione serve per far scattare i due KT315.
+
+13
+00:01:31,260 --> 00:01:32,840
+È un 315G.
+
+14
+00:01:34,820 --> 00:01:37,780
+Eccoli, due di loro.
+
+15
+00:01:39,280 --> 00:01:41,740
+Ecco i nostri divisori con stabilizzazione.
+
+16
+00:01:46,660 --> 00:01:48,460
+Naturalmente, 7 kOhm.
+
+17
+00:01:50,600 --> 00:01:51,440
+Lo avviamo.
+
+18
+00:01:54,540 --> 00:01:55,900
+Cosa vediamo?
+
+19
+00:01:57,140 --> 00:02:11,200
+Vediamo che abbiamo una tensione di 287 V e non c'è scatto di questi due transistor.
+
+20
+00:02:12,920 --> 00:02:20,440
+Questo è prima della lampada, questo dopo la lampada, prima del MOT.
+
+21
+00:02:22,900 --> 00:02:27,620
+Ora cominciamo ad aggiungere tensione finché non scatta.
+
+22
+00:02:30,750 --> 00:02:35,050
+Poi la toglieremo, lasciandolo in modalità libera.
+
+23
+00:02:36,750 --> 00:02:40,590
+Vediamo la lampada e la tensione, e aggiungiamo.
+
+24
+00:02:42,910 --> 00:02:44,550
+Ecco, c'è uno scatto.
+
+25
+00:02:46,350 --> 00:02:54,790
+Ora tolgo la tensione per impostare il circuito in modalità libera.
+
+26
+00:02:58,570 --> 00:03:01,230
+Ecco fatto, la nostra lampada si è accesa.
+
+27
+00:03:03,170 --> 00:03:07,770
+Questa lampada è un po' rossastra, questa è da 100 V, e questa è da 100 V.
+
+28
+00:03:08,170 --> 00:03:09,910
+Lampade assolutamente identiche.
+
+29
+00:03:12,410 --> 00:03:20,950
+Tensione prima della lampada 296, dopo la lampada circa 230.
+
+30
+00:03:22,890 --> 00:03:35,470
+Annotiamo il 296 in funzione, scriviamo 296 V prima della lampada.
+
+31
+00:03:36,030 --> 00:03:38,510
+Dopo la lampada circa 230.
+
+32
+00:03:39,470 --> 00:03:42,550
+Cambia man mano che la lampada si scalda.
+
+33
+00:03:47,430 --> 00:03:48,850
+228 V.
+
+34
+00:03:51,030 --> 00:03:52,750
+Poi viene il MOT.
+
+35
+00:03:54,210 --> 00:04:00,330
+Be', vediamo cosa abbiamo sulla base del nostro transistor.
+
+36
+00:04:01,850 --> 00:04:02,730
+Ecco la sonda.
+
+37
+00:04:04,470 --> 00:04:06,190
+Va alla base.
+
+38
+00:04:08,170 --> 00:04:10,970
+Sulla base vediamo questo tipo di piccolo segnale.
+
+39
+00:04:11,930 --> 00:04:14,670
+5 nanosecondi per divisione.
+
+40
+00:04:15,910 --> 00:04:17,870
+Totale 1, 2, 3.
+
+41
+00:04:19,350 --> 00:04:23,790
+15 nanosecondi, e poi il rimbalzo di controllo.
+
+42
+00:04:27,050 --> 00:04:33,150
+Il segnale sulla base è di 15 nanosecondi.
+
+43
+00:04:35,970 --> 00:04:37,250
+E ora la frequenza.
+
+44
+00:04:38,570 --> 00:04:40,270
+Vediamo cosa abbiamo qui.
+
+45
+00:04:41,030 --> 00:04:41,950
+Che bellezza.
+
+46
+00:04:45,150 --> 00:04:48,330
+406 kHz.
+
+47
+00:04:50,330 --> 00:05:05,850
+Questa frequenza è la risonanza della bobina ad alta tensione di questo condensatore, alla quale l'aumento di tensione — cioè la risonanza di tensione — dà uno scatto di 320 V.
+
+48
+00:05:06,610 --> 00:05:12,590
+Ora annotiamo che sono 403 kHz.
+
+49
+00:05:13,170 --> 00:05:19,590
+Cioè la nostra frequenza è di 403 kHz.
+
+50
+00:05:21,570 --> 00:05:27,190
+Cosa vediamo sul collettore.
+
+51
+00:05:28,670 --> 00:05:31,030
+Questo è il collettore.
+
+52
+00:05:32,830 --> 00:05:35,750
+E questo è già il segnale stesso dopo il condensatore.
+
+53
+00:05:38,550 --> 00:05:43,770
+Ora guardiamo dai fronti.
+
+54
+00:05:49,820 --> 00:05:52,460
+10 nanosecondi.
+
+55
+00:05:53,760 --> 00:06:01,920
+Il fronte sul collettore e la scarica del condensatore sono 20 nanosecondi.
+
+56
+00:06:02,920 --> 00:06:09,800
+Questo è il limite di questo transistor e il tempo di scarica di questo condensatore.
+
+57
+00:06:10,120 --> 00:06:11,140
+2 nanofarad.
+
+58
+00:06:12,080 --> 00:06:14,800
+Cioè abbiamo 10 nanosecondi.
+
+59
+00:06:15,600 --> 00:06:28,520
+Quindi in totale otteniamo 10 nanosecondi alla nostra frequenza di 403 kHz.
+
+60
+00:06:30,380 --> 00:06:34,340
+403 kHz.
+
+61
+00:06:35,700 --> 00:06:38,440
+Be', ora la cosa principale.
+
+62
+00:06:39,800 --> 00:06:47,960
+Quanto consumiamo dato che la nostra lampada da 100 watt brucia al 30%.
+
+63
+00:06:47,960 --> 00:06:49,360
+È persino esagerato.
+
+64
+00:06:49,900 --> 00:06:53,200
+Anche se si tiene conto anche dell'arrossamento di questa lampada.
+
+65
+00:06:53,360 --> 00:06:56,300
+Cioè qui è il 30% della luminosità di una lampada da 100 watt.
+
+66
+00:06:57,700 --> 00:06:58,200
+Non di più.
+
+67
+00:06:59,580 --> 00:07:00,080
+Allora.
+
+68
+00:07:00,860 --> 00:07:07,200
+La nostra lampada da 100 watt brucia al 30%.
+
+69
+00:07:07,200 --> 00:07:08,600
+È giallastra.
+
+70
+00:07:08,940 --> 00:07:10,140
+Brilla appena.
+
+71
+00:07:12,580 --> 00:07:15,800
+Cioè il 30% è
+
+72
+00:07:20,240 --> 00:07:21,020
+quello che brucia per noi.
+
+73
+00:07:22,180 --> 00:07:24,700
+Quindi sono 30 watt.
+
+74
+00:07:25,360 --> 00:07:28,760
+Ho preso una lampada da 100 watt per facilitare il calcolo.
+
+75
+00:07:29,600 --> 00:07:30,540
+30 watt.
+
+76
+00:07:32,260 --> 00:07:34,840
+E cosa spendiamo per questo?
+
+77
+00:07:35,220 --> 00:07:40,600
+Spendiamo un po' più di 4 ampere, circa.
+
+78
+00:07:41,260 --> 00:07:42,300
+20 volt.
+
+79
+00:07:43,480 --> 00:07:48,820
+4 ampere, 20 volt fanno 80 watt.
+
+80
+00:07:52,100 --> 00:08:02,020
+Ora il rendimento dell'inverter è del 83, 82, 81, 80%, a seconda della tensione.
+
+81
+00:08:02,580 --> 00:08:03,560
+L'ho misurato.
+
+82
+00:08:03,560 --> 00:08:04,820
+Facciamo così.
+
+83
+00:08:04,900 --> 00:08:12,120
+Sottrarremo non il 20%, ma il 25% di rendimento da questo consumo.
+
+84
+00:08:12,480 --> 00:08:13,580
+Per non pensarci troppo.
+
+85
+00:08:14,840 --> 00:08:18,260
+Sottraiamo circa 20 watt.
+
+86
+00:08:18,260 --> 00:08:20,920
+Cioè da qui meno 20 watt.
+
+87
+00:08:21,340 --> 00:08:27,120
+Questo è il 25% per il rendimento dell'inverter.
+
+88
+00:08:28,160 --> 00:08:31,180
+E ci restano 60 watt.
+
+89
+00:08:33,120 --> 00:08:39,260
+Cioè per ottenere 30 watt in questo sistema.
+
+90
+00:08:39,380 --> 00:08:40,940
+Mostro di nuovo.
+
+91
+00:08:41,420 --> 00:08:49,420
+Con un impulso da 20 nanosecondi spendiamo 60 watt.
+
+92
+00:08:50,000 --> 00:08:51,200
+60 a 30.
+
+93
+00:08:52,000 --> 00:08:53,960
+Anche se mi sono sbagliato.
+
+94
+00:08:54,140 --> 00:08:56,400
+Anche se brucia non al 30, un po' di più.
+
+95
+00:08:56,640 --> 00:08:58,280
+Al 35%.
+
+96
+00:08:58,280 --> 00:09:02,880
+Il rendimento è comunque del 50-60%.
+
+97
+00:09:02,880 --> 00:09:11,260
+Cioè il nostro rendimento è risultato
+
+98
+00:09:14,940 --> 00:09:16,420
+50-60%.
+
+99
+00:09:16,420 --> 00:09:20,020
+Di sicuro.
+
+100
+00:09:20,200 --> 00:09:21,440
+È tutto una sciocchezza.
+
+101
+00:09:23,900 --> 00:09:26,080
+Cosa posso dire da parte mia.
+
+102
+00:09:27,620 --> 00:09:34,080
+In sostanza, studiando il funzionamento di tutto questo circuito, non bisogna restare troppo delusi.
+
+103
+00:09:35,140 --> 00:09:48,840
+Perché precisamente, alle letture del wattmetro a 50 Hz in corrente alternata, vediamo che i nostri wattmetri mostrano meno di quanto vediamo brillare le lampade nella realtà.
+
+104
+00:09:50,520 --> 00:09:51,300
+E questo è positivo.
+
+105
+00:09:51,940 --> 00:10:08,320
+Bisogna solo pensare al perché il wattmetro non registra la carica del condensatore — cioè l'azione delle correnti reattive capaci di caricare il condensatore, e poi usiamo questa energia.
+
+106
+00:10:09,640 --> 00:10:10,940
+Cos'è la potenza reattiva?
+
+107
+00:10:11,340 --> 00:10:12,300
+Be', dico solo questo.
+
+108
+00:10:12,540 --> 00:10:20,240
+Cioè è tensione senza corrente capace di caricare potenti condensatori, e poi usiamo questo.
+
+109
+00:10:21,060 --> 00:10:25,640
+Capisco che Wasmus abbia affrontato molto bene questa soluzione.
+
+110
+00:10:25,980 --> 00:10:29,180
+O Wasmus, come lo chiamino.
+
+111
+00:10:30,060 --> 00:10:35,120
+In sostanza capisco il suo sistema, dato che lavoro nello stesso modo con questo.
+
+112
+00:10:35,440 --> 00:10:50,120
+Cioè uso le amate Tesla di tutti per attivare o mettere in moto specifici atomi o molecole di una specifica sostanza che sono capaci di creare correnti elettriche.
+
+113
+00:10:51,620 --> 00:10:57,660
+Be', e poi il sistema per convertirli tramite il sistema Tesla, o in qualche altro modo.
+
+114
+00:10:58,240 --> 00:11:03,520
+Accumulare questi elettroni e usarli su un carico.
+
+115
+00:11:04,260 --> 00:11:05,420
+Ma questo è già un altro argomento.
+
+116
+00:11:06,400 --> 00:11:08,540
+Questo è solo cibo per i pensieri.
+
+117
+00:11:09,420 --> 00:11:10,000
+Buona fortuna a tutti!

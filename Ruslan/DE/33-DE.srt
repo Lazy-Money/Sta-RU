@@ -1,0 +1,999 @@
+1
+00:00:03,570 --> 00:00:06,130
+Der Mythos der Nanosekunden.
+
+2
+00:00:06,630 --> 00:00:13,550
+Ich will nichts Schlechtes über den Schaltungsautor sagen, aber er bestand darauf, dass Nanosekunden bei ihm funktionieren.
+
+3
+00:00:15,410 --> 00:00:19,890
+Und laut dem Autor arbeitet die Schaltung bei einer Frequenz von 5 kHz.
+
+4
+00:00:20,350 --> 00:00:23,930
+Wir machen keine 5 kHz, wir machen 10, mehr.
+
+5
+00:00:24,830 --> 00:00:27,350
+So geht mehr Leistung in die Birne.
+
+6
+00:00:28,190 --> 00:00:34,770
+Also im Moment liegt die Pulswiederholungsfrequenz bei 10 kHz.
+
+7
+00:00:37,810 --> 00:00:42,450
+Diese Sonde liegt jetzt direkt an der Birne.
+
+8
+00:00:46,350 --> 00:00:51,850
+Dieses Oszilloskop zeigt, was an der Basis des Schalters passiert.
+
+9
+00:00:58,820 --> 00:01:00,880
+Also, was wir an der Basis haben.
+
+10
+00:01:01,140 --> 00:01:03,940
+Unsere Zeitbasis ist 50 Nanosekunden.
+
+11
+00:01:09,380 --> 00:01:12,840
+Zeitbasis 10 Nanosekunden.
+
+12
+00:01:15,780 --> 00:01:19,500
+Also 10 Nanosekunden pro Division.
+
+13
+00:01:20,360 --> 00:01:20,840
+So.
+
+14
+00:01:24,440 --> 00:01:29,600
+Jetzt, was wir direkt an der Birne selbst haben.
+
+15
+00:01:33,500 --> 00:01:37,180
+So ein schöner Impuls.
+
+16
+00:01:38,440 --> 00:01:39,360
+Jetzt kommen wir dazu.
+
+17
+00:01:39,780 --> 00:01:39,780
+So.
+
+18
+00:01:42,000 --> 00:01:45,280
+Dieses Klingeln hier ist bereits der schließende Transistor.
+
+19
+00:01:45,840 --> 00:01:47,500
+Als nächstes kommt die Selbstinduktion der Drossel.
+
+20
+00:01:49,040 --> 00:01:51,020
+Zeitbasis 50 Nanosekunden.
+
+21
+00:01:52,540 --> 00:01:55,740
+Die Flanke ist fast 50 Nanosekunden.
+
+22
+00:01:55,960 --> 00:01:56,560
+Etwas mehr.
+
+23
+00:01:57,440 --> 00:01:58,240
+Vielleicht etwas weniger.
+
+24
+00:01:58,420 --> 00:01:58,840
+Egal.
+
+25
+00:02:00,020 --> 00:02:03,200
+Aber dabei ihre Flanke…
+
+26
+00:02:03,200 --> 00:02:04,300
+Und ich merke an.
+
+27
+00:02:05,000 --> 00:02:07,100
+10 Nanosekunden an der Basis.
+
+28
+00:02:09,720 --> 00:02:12,380
+Die Birne denkt nicht mal daran zu glühen.
+
+29
+00:02:19,610 --> 00:02:20,470
+So.
+
+30
+00:02:21,610 --> 00:02:23,690
+Das ist natürlich auch dasselbe.
+
+31
+00:02:24,370 --> 00:02:26,170
+Der Verbrauch des Wechselrichters dabei.
+
+32
+00:02:27,130 --> 00:02:28,130
+Leerlauf.
+
+33
+00:02:29,490 --> 00:02:30,130
+Praktisch.
+
+34
+00:02:30,170 --> 00:02:32,230
+1 Ampere, 20 Volt.
+
+35
+00:02:33,910 --> 00:02:34,930
+So.
+
+36
+00:02:36,210 --> 00:02:38,270
+Wir stecken eine 100-Watt-Birne ein.
+
+37
+00:02:42,170 --> 00:02:43,130
+So.
+
+38
+00:02:43,250 --> 00:02:47,850
+Jetzt zeige ich euch das Oszillogramm — ich habe die Birne entfernt und unser Klingeln hat sich geändert.
+
+39
+00:02:47,910 --> 00:02:49,040
+Leerlauf.
+
+40
+00:02:50,590 --> 00:02:52,790
+Wir stecken eine 100-Watt-Birne ein.
+
+41
+00:02:56,060 --> 00:02:58,670
+Das ist bei 50 Nanosekunden.
+
+42
+00:03:01,500 --> 00:03:03,480
+Jetzt zeige ich, was sich ändert.
+
+43
+00:03:03,600 --> 00:03:04,400
+Ich installiere sie.
+
+44
+00:03:06,060 --> 00:03:11,340
+Diese Birne hat bereits eine andere Selbstinduktion und ein anderes Klingeln.
+
+45
+00:03:15,300 --> 00:03:16,500
+Nochmals merke ich an.
+
+46
+00:03:17,040 --> 00:03:19,720
+Die Flanke ist kürzer als 50 Nanosekunden.
+
+47
+00:03:21,860 --> 00:03:24,320
+Das heißt, der Transistor hat gerade geöffnet und schließt sofort.
+
+48
+00:03:24,660 --> 00:03:25,680
+Die Kapazität entladen.
+
+49
+00:03:26,900 --> 00:03:27,200
+Null.
+
+50
+00:03:33,400 --> 00:03:34,980
+Wir stecken noch eine 100-Watt-Birne ein.
+
+51
+00:03:39,750 --> 00:03:40,970
+So.
+
+52
+00:03:41,130 --> 00:03:42,370
+Also eine 100-Watt-Birne.
+
+53
+00:03:43,530 --> 00:03:44,560
+240 Volt.
+
+54
+00:03:45,870 --> 00:03:47,470
+100 Volt.
+
+55
+00:03:53,420 --> 00:03:55,060
+Wir schauen, wie es sich ändert.
+
+56
+00:03:57,380 --> 00:03:57,840
+Da ist sie.
+
+57
+00:03:59,660 --> 00:04:01,360
+Die Entladezeit der Kapazität.
+
+58
+00:04:01,640 --> 00:04:02,540
+Unsere.
+
+59
+00:04:03,420 --> 00:04:05,040
+Blieb auch gleich.
+
+60
+00:04:05,680 --> 00:04:09,000
+Nur die eigene Selbstinduktion der Birne hat sich geändert.
+
+61
+00:04:10,100 --> 00:04:11,940
+Aber die Entladeflanke der Kapazität.
+
+62
+00:04:12,900 --> 00:04:13,520
+Von dieser.
+
+63
+00:04:15,060 --> 00:04:15,740
+Blieb.
+
+64
+00:04:16,120 --> 00:04:18,240
+Das sind 2000 Volt.
+
+65
+00:04:19,620 --> 00:04:20,980
+2 Nanofarad.
+
+66
+00:04:26,930 --> 00:04:27,510
+Ah, 2500.
+
+67
+00:04:30,810 --> 00:04:33,870
+Das ist die Hauptflanke.
+
+68
+00:04:34,470 --> 00:04:35,610
+Also bereits der Kondensator.
+
+69
+00:04:36,330 --> 00:04:44,650
+Wenn ihr den Transistor noch kleiner macht, auf 5 runter, dann entlädt sich die Kapazität nicht vollständig und wir bekommen einen sehr großen Rückwärtsimpuls.
+
+70
+00:04:45,610 --> 00:04:46,430
+Die Entladeflanke der Kapazität.
+
+71
+00:04:48,510 --> 00:04:48,930
+Na, so.
+
+72
+00:04:51,330 --> 00:04:52,450
+50.
+
+73
+00:04:52,910 --> 00:04:54,730
+Nehmen wir Nanosekunden.
+
+74
+00:04:55,270 --> 00:04:56,270
+Überhaupt nichts.
+
+75
+00:04:57,410 --> 00:04:58,230
+Die Spannung.
+
+76
+00:04:59,090 --> 00:04:59,850
+Da ist sie.
+
+77
+00:05:00,670 --> 00:05:02,170
+354 Volt.
+
+78
+00:05:02,550 --> 00:05:04,070
+Das ist bereits nach der Birne.
+
+79
+00:05:04,770 --> 00:05:05,010
+Diese.
+
+80
+00:05:05,910 --> 00:05:06,430
+Nach ihr.
+
+81
+00:05:07,170 --> 00:05:08,090
+So.
+
+82
+00:05:10,130 --> 00:05:10,950
+Wir schreiben.
+
+83
+00:05:12,210 --> 00:05:13,790
+40 Watt.
+
+84
+00:05:14,650 --> 00:05:15,350
+50.
+
+85
+00:05:16,770 --> 00:05:17,270
+Nanosek.
+
+86
+00:05:18,790 --> 00:05:20,730
+Hat nicht geschafft zu leuchten.
+
+87
+00:05:21,690 --> 00:05:22,430
+Die Volt gehen durch.
+
+88
+00:05:25,110 --> 00:05:25,810
+354.
+
+89
+00:05:27,070 --> 00:05:28,010
+100 Watt auch.
+
+90
+00:05:29,130 --> 00:05:29,830
+50.
+
+91
+00:05:30,870 --> 00:05:31,870
+Nanosek.
+
+92
+00:05:32,790 --> 00:05:33,810
+Hat nicht geleuchtet.
+
+93
+00:05:35,010 --> 00:05:35,750
+Die Spannung.
+
+94
+00:05:36,770 --> 00:05:37,210
+Auch.
+
+95
+00:05:40,840 --> 00:05:41,360
+So.
+
+96
+00:05:43,240 --> 00:05:46,720
+Und jetzt versuchen wir, jede einzelne davon zum Leuchten zu bringen.
+
+97
+00:05:47,600 --> 00:05:50,820
+Und schauen, welche Transistoröffnungszeit dafür benötigt wird.
+
+98
+00:05:56,380 --> 00:05:57,120
+Na, so.
+
+99
+00:05:57,680 --> 00:05:59,020
+Wir haben 40 Watt.
+
+100
+00:06:00,280 --> 00:06:02,040
+Kaum atmend.
+
+101
+00:06:03,220 --> 00:06:05,960
+Solch schöne kleine Impulse gehen rein.
+
+102
+00:06:07,480 --> 00:06:07,880
+So.
+
+103
+00:06:08,600 --> 00:06:12,060
+Und jetzt versuchen wir, sie aufzuheizen.
+
+104
+00:06:12,560 --> 00:06:14,160
+Na, damit sie richtig heiß wird.
+
+105
+00:06:14,160 --> 00:06:14,840
+40 Watt.
+
+106
+00:06:15,020 --> 00:06:17,500
+Wir erhöhen die Flankendauer.
+
+107
+00:06:18,840 --> 00:06:20,340
+Ich habe den Kondensator gewechselt.
+
+108
+00:06:20,800 --> 00:06:22,340
+Also einen 10-mal größeren eingesetzt.
+
+109
+00:06:22,900 --> 00:06:24,520
+Auf 23 nF.
+
+110
+00:06:25,420 --> 00:06:29,440
+Um die Möglichkeit zu haben, die Flankendauer zu erhöhen.
+
+111
+00:06:29,640 --> 00:06:30,780
+Also die Impulsdauer.
+
+112
+00:06:31,020 --> 00:06:31,700
+Um sie zu erhöhen.
+
+113
+00:06:32,460 --> 00:06:34,160
+Davor war er ersetzt worden.
+
+114
+00:06:34,400 --> 00:06:34,700
+Jetzt.
+
+115
+00:06:35,280 --> 00:06:37,320
+Wir erhöhen das Tastverhältnis.
+
+116
+00:06:38,020 --> 00:06:39,700
+Bis die Birne anläuft.
+
+117
+00:06:39,800 --> 00:06:40,660
+Man kann das Glühfaden sehen.
+
+118
+00:06:50,290 --> 00:06:51,040
+Na, so.
+
+119
+00:06:53,430 --> 00:06:53,900
+Schau.
+
+120
+00:06:54,240 --> 00:06:54,800
+Die Birne.
+
+121
+00:06:55,280 --> 00:06:56,100
+Startete.
+
+122
+00:06:56,760 --> 00:06:57,300
+Zu glühen.
+
+123
+00:06:59,700 --> 00:06:59,860
+So.
+
+124
+00:07:02,490 --> 00:07:03,160
+Na, so.
+
+125
+00:07:04,290 --> 00:07:04,760
+Schauen wir.
+
+126
+00:07:04,860 --> 00:07:05,990
+Unsere Birne hat angefangen zu glühen.
+
+127
+00:07:06,580 --> 00:07:06,860
+Jetzt.
+
+128
+00:07:08,230 --> 00:07:11,120
+Unsere Spannung beträgt 354 Volt.
+
+129
+00:07:11,480 --> 00:07:12,940
+Also bei 40 Watt.
+
+130
+00:07:13,120 --> 00:07:13,940
+Speisen wir.
+
+131
+00:07:16,140 --> 00:07:17,600
+354 Volt.
+
+132
+00:07:18,600 --> 00:07:19,340
+Frequenz.
+
+133
+00:07:20,020 --> 00:07:21,100
+Der Pulswiederholung.
+
+134
+00:07:23,260 --> 00:07:24,820
+100 kHz.
+
+135
+00:07:25,580 --> 00:07:25,840
+Also.
+
+136
+00:07:28,240 --> 00:07:29,800
+100 kHz.
+
+137
+00:07:30,300 --> 00:07:31,800
+Und jetzt welche Zeit.
+
+138
+00:07:31,980 --> 00:07:32,960
+Brauchen wir.
+
+139
+00:07:33,840 --> 00:07:34,520
+Sie startet.
+
+140
+00:07:34,640 --> 00:07:36,480
+Bei der sie anfängt zu glühen.
+
+141
+00:07:37,860 --> 00:07:38,580
+Schauen wir.
+
+142
+00:07:46,680 --> 00:07:49,320
+100 ns pro Division.
+
+143
+00:07:49,940 --> 00:07:51,500
+Hier ist die Impulsdauer.
+
+144
+00:07:52,580 --> 00:07:53,660
+Also könnte man sagen.
+
+145
+00:07:54,160 --> 00:07:54,560
+200.
+
+146
+00:07:55,600 --> 00:07:56,760
+Und etwas ns.
+
+147
+00:07:58,100 --> 00:07:58,980
+Na, so.
+
+148
+00:07:59,280 --> 00:08:00,740
+Die Birne fängt an zu glühen.
+
+149
+00:08:01,860 --> 00:08:02,700
+Bei.
+
+150
+00:08:03,380 --> 00:08:03,960
+200.
+
+151
+00:08:05,240 --> 00:08:06,580
+Na, so um die 230 da.
+
+152
+00:08:07,140 --> 00:08:08,200
+Na, wir schreiben 200.
+
+153
+00:08:09,700 --> 00:08:10,220
+ns.
+
+154
+00:08:12,000 --> 00:08:13,040
+So.
+
+155
+00:08:13,840 --> 00:08:15,320
+Versuchen wir, sie aufzuheizen.
+
+156
+00:08:15,580 --> 00:08:16,440
+Bis zur vollen Helligkeit.
+
+157
+00:08:16,960 --> 00:08:17,300
+Also.
+
+158
+00:08:17,740 --> 00:08:18,580
+Ich merke an.
+
+159
+00:08:18,740 --> 00:08:21,020
+Bei diesen ns fängt sie an zu glühen.
+
+160
+00:08:22,460 --> 00:08:22,840
+200.
+
+161
+00:08:24,160 --> 00:08:24,880
+Wir heizen sie auf.
+
+162
+00:08:39,190 --> 00:08:40,140
+Na, da ist sie.
+
+163
+00:08:40,640 --> 00:08:41,800
+Fast bei voller Helligkeit.
+
+164
+00:08:43,350 --> 00:08:43,820
+Schauen wir.
+
+165
+00:08:44,680 --> 00:08:46,680
+Was mit unserer Zeit ist.
+
+166
+00:08:51,110 --> 00:08:52,890
+Hier ist unsere Flanke.
+
+167
+00:08:53,870 --> 00:08:54,890
+Also hier ist eine Division.
+
+168
+00:08:55,570 --> 00:08:55,830
+Eins.
+
+169
+00:08:56,090 --> 00:08:56,270
+Zwei.
+
+170
+00:08:56,750 --> 00:08:57,030
+Drei.
+
+171
+00:08:57,770 --> 00:08:58,590
+Und etwas.
+
+172
+00:08:58,670 --> 00:08:59,110
+350.
+
+173
+00:09:00,650 --> 00:09:01,590
+Die Flanke.
+
+174
+00:09:02,150 --> 00:09:03,970
+Und die Impulsdauer.
+
+175
+00:09:04,930 --> 00:09:05,510
+Eineinhalb.
+
+176
+00:09:05,790 --> 00:09:07,190
+Also 500 ns pro Division.
+
+177
+00:09:08,990 --> 00:09:08,990
+Eins.
+
+178
+00:09:08,990 --> 00:09:08,990
+Zwei.
+
+179
+00:09:09,250 --> 00:09:09,590
+Drei.
+
+180
+00:09:10,450 --> 00:09:11,930
+Also eineinhalb ns.
+
+181
+00:09:12,660 --> 00:09:13,210
+Millisekunden.
+
+182
+00:09:14,210 --> 00:09:14,630
+Also.
+
+183
+00:09:16,500 --> 00:09:17,710
+Bei voller Helligkeit.
+
+184
+00:09:18,070 --> 00:09:18,550
+Der Birne.
+
+185
+00:09:20,430 --> 00:09:21,830
+Wenn sie leuchtet.
+
+186
+00:09:22,770 --> 00:09:23,470
+Wir.
+
+187
+00:09:24,150 --> 00:09:24,750
+Es dauert.
+
+188
+00:09:25,930 --> 00:09:27,310
+1,5.
+
+189
+00:09:28,620 --> 00:09:29,170
+Mikro.
+
+190
+00:09:29,790 --> 00:09:30,590
+Sekunden.
+
+191
+00:09:32,990 --> 00:09:33,470
+So.
+
+192
+00:09:37,270 --> 00:09:38,460
+Jetzt die 100-Watt-Birne.
+
+193
+00:09:42,700 --> 00:09:43,760
+So.
+
+194
+00:09:46,620 --> 00:09:48,160
+Solch schöne kleine Impulse gehen rein.
+
+195
+00:09:48,340 --> 00:09:49,200
+Nanosekunden-Impulse.
+
+196
+00:09:50,220 --> 00:09:51,280
+Wir addieren.
+
+197
+00:09:51,460 --> 00:09:51,980
+Zeit.
+
+198
+00:09:53,400 --> 00:09:54,140
+Bis.
+
+199
+00:09:54,320 --> 00:09:55,770
+Sie anfängt aufzuheizen.
+
+200
+00:10:13,950 --> 00:10:14,480
+So.
+
+201
+00:10:15,870 --> 00:10:17,470
+Unsere Birne.
+
+202
+00:10:18,290 --> 00:10:19,610
+Es war sichtbar.
+
+203
+00:10:19,710 --> 00:10:21,850
+Dass sie gerade rot wurde.
+
+204
+00:10:23,870 --> 00:10:24,230
+So.
+
+205
+00:10:24,510 --> 00:10:25,510
+Jetzt schauen wir.
+
+206
+00:10:26,870 --> 00:10:27,930
+Welche Zeit.
+
+207
+00:10:28,590 --> 00:10:31,310
+Bei der sie gerade anfing zu glühen.
+
+208
+00:10:40,090 --> 00:10:41,370
+250.
+
+209
+00:10:42,070 --> 00:10:43,290
+Nanosekunden.
+
+210
+00:10:43,790 --> 00:10:45,490
+Die Birne fing an zu glühen.
+
+211
+00:10:49,050 --> 00:10:49,390
+So.
+
+212
+00:10:50,130 --> 00:10:50,770
+Also.
+
+213
+00:10:51,310 --> 00:10:52,210
+Wir speisen dasselbe.
+
+214
+00:10:54,130 --> 00:10:55,470
+354 Volt.
+
+215
+00:10:57,010 --> 00:10:57,550
+Da sind sie.
+
+216
+00:10:57,550 --> 00:10:58,390
+Zeit.
+
+217
+00:10:59,890 --> 00:11:00,810
+Wir haben.
+
+218
+00:11:02,330 --> 00:11:03,010
+So.
+
+219
+00:11:03,410 --> 00:11:05,870
+Auch 100 Kilohertz.
+
+220
+00:11:05,930 --> 00:11:06,830
+Wir haben.
+
+221
+00:11:09,190 --> 00:11:10,790
+100 Kilohertz.
+
+222
+00:11:11,030 --> 00:11:12,110
+Pulswiederholung.
+
+223
+00:11:13,350 --> 00:11:14,230
+Es kommt raus.
+
+224
+00:11:15,130 --> 00:11:15,810
+250.
+
+225
+00:11:17,350 --> 00:11:18,030
+Nanosekunden.
+
+226
+00:11:19,090 --> 00:11:19,750
+Die 100-Watt-Birne.
+
+227
+00:11:20,290 --> 00:11:21,250
+Fing an zu glühen.
+
+228
+00:11:22,710 --> 00:11:23,210
+So.
+
+229
+00:11:24,110 --> 00:11:26,970
+Jetzt erhöhen wir die Impulsdauerzeit.
+
+230
+00:11:27,110 --> 00:11:29,790
+Bis sie bei fast voller Helligkeit brennt.
+
+231
+00:11:41,670 --> 00:11:42,110
+Na, so.
+
+232
+00:11:47,370 --> 00:11:48,050
+Schauen wir.
+
+233
+00:11:49,090 --> 00:11:51,330
+Ich sage, fast bei voller Helligkeit.
+
+234
+00:11:51,410 --> 00:11:52,350
+Ich vergleiche jetzt nicht.
+
+235
+00:11:52,530 --> 00:11:53,250
+Nur visuell.
+
+236
+00:11:54,210 --> 00:11:55,490
+Also damit sie leuchtet.
+
+237
+00:11:56,470 --> 00:11:57,470
+Die Flankendauer.
+
+238
+00:11:59,190 --> 00:12:00,550
+2 Millisekunden.
+
+239
+00:12:02,470 --> 00:12:03,070
+So.
+
+240
+00:12:03,070 --> 00:12:04,870
+Also.
+
+241
+00:12:05,250 --> 00:12:07,230
+Damit sie bei fast voller Helligkeit leuchtet.
+
+242
+00:12:07,890 --> 00:12:08,190
+2.
+
+243
+00:12:09,230 --> 00:12:10,030
+Milli.
+
+244
+00:12:10,350 --> 00:12:10,830
+Sekunden.
+
+245
+00:12:13,230 --> 00:12:14,490
+Na, so.
+
+246
+00:12:16,190 --> 00:12:16,450
+Der Mythos.
+
+247
+00:12:16,890 --> 00:12:17,750
+Über die Nanosek.
+
+248
+00:12:18,090 --> 00:12:18,610
+Widerlegt.
+
+249
+00:12:20,030 --> 00:12:20,850
+Nanosek.
+
+250
+00:12:21,430 --> 00:12:21,930
+Unsinn.
