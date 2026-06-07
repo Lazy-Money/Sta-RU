@@ -1,0 +1,811 @@
+1
+00:00:02,530 --> 00:00:05,580
+Hola a todos, y aquí está lo que quería mostrarles.
+
+2
+00:00:05,680 --> 00:00:07,360
+Armé este tipo de instalación.
+
+3
+00:00:07,880 --> 00:00:13,100
+Les mostraré un poco ahora, encenderé la luz, ya que afuera ya está oscureciendo.
+
+4
+00:00:13,880 --> 00:00:20,060
+Lo armé durante mucho tiempo, me costó bastante... Bueno, la instalación es del tipo Nikola Tesla.
+
+5
+00:00:20,860 --> 00:00:25,300
+Funciona según el principio de dos bobinas: receptora y transmisora.
+
+6
+00:00:25,300 --> 00:00:31,000
+La transmisora es este sistema, y sobre ella va, en consecuencia, este aparato.
+
+7
+00:00:31,220 --> 00:00:40,280
+O sea, un generador de ráfagas de pulsos, el estudio del generador, el estudio de estos pulsos.
+
+8
+00:00:40,420 --> 00:00:41,920
+Bueno, y en consecuencia, la parte de alta tensión.
+
+9
+00:00:42,540 --> 00:00:45,420
+Este es el interruptor y el diodo de protección.
+
+10
+00:00:45,680 --> 00:00:49,460
+Por cierto, vi que Akula usaba un diodo de 150 voltios.
+
+11
+00:00:49,460 --> 00:00:52,760
+Yo no recomendaría usarlo.
+
+12
+00:00:52,900 --> 00:00:55,660
+Se quema con bastante frecuencia y no tiene sentido.
+
+13
+00:00:56,040 --> 00:00:57,960
+En general, básicamente, ni siquiera hace falta ponerlo.
+
+14
+00:00:58,220 --> 00:01:04,120
+Si el transistor es bueno, pueden ponerlo o no usarlo.
+
+15
+00:01:04,320 --> 00:01:07,120
+No entiendo cómo él usa uno de 150 voltios.
+
+16
+00:01:07,220 --> 00:01:11,980
+En modo de pulsos este transistor no puede soportar la carga que hay en los condensadores.
+
+17
+00:01:12,120 --> 00:01:12,900
+O sea, se quema.
+
+18
+00:01:12,900 --> 00:01:15,760
+Puse uno más potente.
+
+19
+00:01:16,500 --> 00:01:17,440
+Bueno, ¿y ahora qué?
+
+20
+00:01:19,360 --> 00:01:22,720
+Usamos una bombilla de 63 vatios.
+
+21
+00:01:23,320 --> 00:01:28,480
+Y el voltaje aquí ahora será de 210 voltios.
+
+22
+00:01:29,380 --> 00:01:31,480
+No lo voy a medir, lo mostraré más tarde.
+
+23
+00:01:31,660 --> 00:01:38,580
+Voy a rebobinar un poco la bobina captadora y la rehago, porque era una bobina transmisora.
+
+24
+00:01:38,720 --> 00:01:40,440
+La usé como tal.
+
+25
+00:01:40,440 --> 00:01:46,380
+Y así, este es mi sistema de transmisión.
+
+26
+00:01:46,580 --> 00:01:48,260
+Esto también lo hice un poco mal.
+
+27
+00:01:48,420 --> 00:01:52,000
+No debería haber ensanchado inmediatamente el agujero aquí y perforado.
+
+28
+00:01:52,080 --> 00:01:58,760
+Debería haberlo dejado así y luego simplemente separarlos, hacer como un cuarto o algo así.
+
+29
+00:01:59,060 --> 00:02:05,640
+La distancia tiene que ser correcta, porque si hacemos una distancia equivocada, primero, empieza un consumo grande.
+
+30
+00:02:05,780 --> 00:02:09,720
+Segundo, la eficiencia de esta instalación disminuye inmediatamente.
+
+31
+00:02:09,720 --> 00:02:11,540
+Ahora no se trata de eso.
+
+32
+00:02:11,920 --> 00:02:15,620
+Ahora se trata de cómo funciona el sistema en general.
+
+33
+00:02:15,900 --> 00:02:16,420
+Lo encendemos.
+
+34
+00:02:19,580 --> 00:02:24,120
+Entonces, el voltaje aquí ahora hace que la lámpara brille prácticamente a plena potencia.
+
+35
+00:02:24,380 --> 00:02:26,720
+A plena potencia el voltaje aquí es de 210 voltios.
+
+36
+00:02:27,480 --> 00:02:28,680
+¿Qué más me gustaría?
+
+37
+00:02:28,780 --> 00:02:30,380
+Entonces, miramos el amperímetro.
+
+38
+00:02:30,460 --> 00:02:31,920
+24 voltios, 2 amperios.
+
+39
+00:02:31,920 --> 00:02:34,280
+Por cierto, miente un poco.
+
+40
+00:02:34,400 --> 00:02:35,540
+Es un amperímetro de fábrica.
+
+41
+00:02:35,620 --> 00:02:38,960
+Miren, aquí, está conectado aquí.
+
+42
+00:02:39,540 --> 00:02:41,240
+Miente un poco.
+
+43
+00:02:41,640 --> 00:02:58,040
+En realidad, el consumo de este sistema es de 1,8 amperios; si calculamos el consumo: 1,8 multiplicado por 24, es decir, obtenemos 43 vatios, aunque brilla mucho más.
+
+44
+00:02:59,320 --> 00:03:02,180
+Entonces, la ganancia aquí es aproximadamente del doble.
+
+45
+00:03:03,220 --> 00:03:05,680
+Pero quiero decir que esto hay que sintonizarlo.
+
+46
+00:03:05,900 --> 00:03:08,180
+Y esta instalación es un poco crítica.
+
+47
+00:03:08,820 --> 00:03:09,980
+Primero que todo, a la tierra.
+
+48
+00:03:10,320 --> 00:03:11,480
+Tiene que haber conexión a tierra.
+
+49
+00:03:11,540 --> 00:03:14,640
+Aquí tengo dos tierras conectadas a la vez.
+
+50
+00:03:14,960 --> 00:03:16,620
+Por cierto, una y la segunda.
+
+51
+00:03:18,420 --> 00:03:20,140
+Una está en el suelo, pueden verla.
+
+52
+00:03:21,780 --> 00:03:25,560
+La segunda, aquí está, también conectada.
+
+53
+00:03:25,960 --> 00:03:32,500
+Entonces, el voltaje de salida y cómo funcionará este sistema en general dependen mucho de la tierra.
+
+54
+00:03:33,120 --> 00:03:37,300
+En fin, aquí todo está mal ajustado ahora y no está realmente sintonizado.
+
+55
+00:03:37,440 --> 00:03:38,720
+Y ya hay una ganancia.
+
+56
+00:03:39,160 --> 00:03:40,480
+Bastante considerable.
+
+57
+00:03:41,380 --> 00:03:47,060
+Básicamente, se puede organizar la autoalimentación, pero ya no encenderá una bombilla aquí.
+
+58
+00:03:47,180 --> 00:03:53,640
+Aquí habrá mucho menos voltaje, más precisamente, mucho menos carga.
+
+59
+00:03:53,640 --> 00:03:58,040
+Pero se puede organizar la autoalimentación, ya preparé una fuente de alimentación.
+
+60
+00:03:58,720 --> 00:04:02,200
+Pero por ahora quiero mencionar los inconvenientes de este sistema.
+
+61
+00:04:02,340 --> 00:04:08,900
+Que no se puede acercar a él, inmediatamente cae el voltaje, los parámetros caen.
+
+62
+00:04:08,900 --> 00:04:17,220
+Y, básicamente, quería decir que cualquier dispositivo cercano y demás lo afecta mucho.
+
+63
+00:04:18,620 --> 00:04:35,840
+La electrónica lo afecta muy fuertemente, así que lo puse de lado así, porque, por ejemplo, estando en el banco de trabajo, afectaba este estante donde están las bombillas, las de hierro, los
+
+64
+00:04:35,840 --> 00:04:36,720
+cables, todo.
+
+65
+00:04:36,720 --> 00:04:47,780
+O sea, era prácticamente imposible sintonizarlo normalmente para que estas influencias no impidieran que la bobina receptora captara el campo que se crea a su alrededor.
+
+66
+00:04:48,860 --> 00:04:57,840
+Otro inconveniente de este sistema es que tiene una gran radiación, así que estar cerca de una instalación así durante mucho tiempo, bueno, no lo recomendaría.
+
+67
+00:04:58,680 --> 00:05:18,880
+La frecuencia de operación de esta instalación ahora mismo, en este momento, resulta ser una frecuencia de repetición de pulsos de 400 Hz, repetición, digamos, los propios pulsos a una frecuencia de 20, en algún lugar 27 kHz, y el
+
+68
+00:05:18,880 --> 00:05:21,880
+la duración del pulso, ya no recuerdo, hay que medirlo, encender el osciloscopio.
+
+69
+00:05:21,880 --> 00:05:27,980
+La duración del pulso corresponde a la frecuencia de resonancia de esta bobina, sin eso no funcionará, en consecuencia.
+
+70
+00:05:29,360 --> 00:05:45,420
+Entonces, el generador de ráfagas de pulsos, la bombilla a plena potencia, bueno, ahora en realidad solo brilla un poco, sí, o sea, bueno, ¿qué más me gustaría añadir a esto, a todo este sistema, bueno, la corriente, entonces,
+
+71
+00:05:45,580 --> 00:05:52,540
+la corriente, una corriente enorme en esta bobina, digo, que hice algo un poco mal, así que, bueno, ya veremos.
+
+72
+00:05:52,540 --> 00:06:07,660
+Entonces, miren aquí, sí, o sea, aquí uno amarillo se estira bastante fuerte y miramos la bombilla, se apaga prácticamente de inmediato, sí, o sea, en esta bobina hay una captación bastante fuerte ahora, hasta chilla,
+
+73
+00:06:07,660 --> 00:06:19,920
+sí, o sea, esto es — aquí, aquí acerco mi mano ahora, ven, inmediatamente se oscurece, sí, o sea, mejor no acercar la cámara en absoluto, porque esto simplemente arruina la cámara
+
+74
+00:06:19,920 --> 00:06:22,460
+por completo, ya me ha pasado.
+
+75
+00:06:22,540 --> 00:06:25,360
+Hubo un incidente con esto.
+
+76
+00:06:25,720 --> 00:06:37,920
+Entonces, bueno, lo que quiero decir, bueno, esto es básicamente muy similar a esa instalación que Akula armó en Alemania y la puso en marcha allí y se la mostró a todos, sí, cómo funciona, usó bombillas del
+
+77
+00:06:37,920 --> 00:06:50,540
+tipo de ahorro de energía, como estas, sí, o sea, así, bueno, es prolijo — o sea, bueno, no importa, conecté esta placa, que tengo hecha aquí de madera contrachapada especialmente para estos fines,
+
+78
+00:06:50,620 --> 00:06:52,360
+bueno, los cables son simplemente largos.
+
+79
+00:06:52,360 --> 00:06:54,620
+Aquí hay que trabajar un poco en todo esto.
+
+80
+00:06:54,780 --> 00:07:02,300
+¿Por qué bombillas de ahorro de energía? — creo que incluso las agarraba con las manos para encenderlas, el voltaje no era suficiente, lo más probable.
+
+81
+00:07:03,420 --> 00:07:17,460
+Lo que quiero decir es que una simple lámpara incandescente, si la pones aquí, consume — primero, tiene una gran corriente de arranque, sí, lo que afecta mucho a todo esto.
+
+82
+00:07:17,460 --> 00:07:28,020
+Bueno, y segundo, por qué él no la usó allá — porque si te acercas a la instalación, miren, no sé si se ve en la cámara o no, pero el brillo cambia, el voltaje cambia el doble
+
+83
+00:07:28,020 --> 00:07:28,620
+inmediatamente, sí.
+
+84
+00:07:28,960 --> 00:07:32,060
+Y la mano, por cierto, algo de calor cerca.
+
+85
+00:07:32,620 --> 00:07:36,640
+Aquí la acerco del todo — si hubiera autoalimentación ahora, se habría cortado completamente.
+
+86
+00:07:37,220 --> 00:07:49,440
+Una bombilla de ahorro de energía tiene un estabilizador dentro, así que el voltaje está más o menos estabilizado, así que creo que no se nota, si caminan alrededor de esta instalación, no afecta realmente tanto, digamos
+
+87
+00:07:49,440 --> 00:07:52,040
+así, a su brillo.
+
+88
+00:07:52,040 --> 00:08:10,420
+Bueno, además, las propias fuentes de alimentación que tiene en su instalación, lo más probable es que estén modificadas, o su voltaje de disparo puede ser desde 120 voltios, quizás incluso menor, así que básicamente
+
+89
+00:08:10,420 --> 00:08:13,820
+no se cortan, sí, o sea, si caminas por allí.
+
+90
+00:08:13,820 --> 00:08:25,680
+Caminar cerca de esta instalación, sí, o sea, afecta fuertemente a todo, así que la puse de lado así, lejos de todas las fuentes, sí, o sea, de las paredes, y está sobre una silla.
+
+91
+00:08:26,180 --> 00:08:39,960
+Honestamente, solo decidí jugar, armé esto, solo para divertirme, sí, o sea, terminaré de construirlo ahora hasta la autoalimentación y simplemente lo llevaré a algún lugar afuera, lo mostraré, o sea, e invitaré también a un colega,
+
+92
+00:08:40,020 --> 00:08:43,560
+para que eche un vistazo, por así decirlo, y lo tenga en sus manos.
+
+93
+00:08:43,560 --> 00:08:46,320
+Lo filmaré especialmente para ustedes.
+
+94
+00:08:46,920 --> 00:09:00,000
+Hoy lo único — rebobinaré las bobinas, sí, o sea, cambiaré un poco diferente la frecuencia de operación de este sistema, para obtener un poco más de potencia.
+
+95
+00:09:00,000 --> 00:09:09,020
+Aunque aquí, básicamente, la potencia no juega un papel particular, y no se puede extraer mucho de aquí.
+
+96
+00:09:09,500 --> 00:09:12,780
+Este es un sistema puramente pasivo, sin ningún accionador.
+
+97
+00:09:12,900 --> 00:09:18,460
+Bueno, el accionador, de cierto modo, es ese sistema que ven allí, sí, o sea, en la placa.
+
+98
+00:09:18,460 --> 00:09:19,160
+Allí.
+
+99
+00:09:19,600 --> 00:09:29,800
+Lo que quiero añadir a todo esto es que no se puede hacer funcionar este dispositivo durante mucho tiempo.
+
+100
+00:09:31,220 --> 00:09:40,240
+Más precisamente, se puede hacer funcionar, pero no se puede estar cerca de él durante mucho tiempo, porque es algo terriblemente peligroso en términos de radiación, sí, o sea, tengan cuidado.
+
+101
+00:09:40,240 --> 00:09:49,160
+O sea, la cabeza empieza a doler por eso, y me parece que puede crear algunos procesos incorrectos en el cuerpo.
+
+102
+00:09:49,620 --> 00:09:49,860
+Allí.
+
+103
+00:09:50,000 --> 00:09:58,780
+Su frecuencia es baja, sí, o sea, quizás la corriente de alta frecuencia no es muy peligrosa, pero en este caso, sí, o sea, a tales frecuencias.
+
+104
+00:09:59,220 --> 00:10:02,720
+Quizás los megahercios y más son más peligrosos.
+
+105
+00:10:04,500 --> 00:10:06,520
+Pero, en cualquier caso, no lo recomiendo.
+
+106
+00:10:07,280 --> 00:10:08,000
+Allí.
+
+107
+00:10:08,080 --> 00:10:13,600
+Entonces, ¿qué más quería añadir a todo esto, así que, este es el condensador.
+
+108
+00:10:13,700 --> 00:10:31,800
+Simplemente, el condensador, lo saqué de una caja interesante llamada — incluso se la mostraré — este tipo de cosa, vendida en todas partes para el enchufe, Dispositivo de Ahorro de Energía, sí, o sea, un dispositivo que se conecta al
+
+109
+00:10:31,800 --> 00:10:34,860
+enchufe, y supuestamente les ahorra electricidad.
+
+110
+00:10:34,860 --> 00:10:41,500
+Bueno, básicamente, esta bobina crea una impedancia reactiva, al parecer, en la red, y algo así.
+
+111
+00:10:41,660 --> 00:10:41,740
+Allí.
+
+112
+00:10:41,800 --> 00:10:43,600
+Compré una de estas cosas, la probé.
+
+113
+00:10:44,220 --> 00:10:51,620
+Bueno, hay algún ahorro, pero de alguna manera no lo noté mucho, así que decidí abrirlo y sacar un condensador bastante bueno.
+
+114
+00:10:51,700 --> 00:10:55,900
+450 voltios y 12 microfaradios.
+
+115
+00:10:56,000 --> 00:10:56,980
+Una cosa muy buena.
+
+116
+00:10:57,900 --> 00:11:01,360
+Resultó útil exactamente para rectificar el voltaje en esta bombilla.
+
+117
+00:11:02,080 --> 00:11:05,100
+Bueno, en fin, así es como, en resumen, se ve todo esto.
+
+118
+00:11:05,480 --> 00:11:14,720
+Todo este sistema funciona, hay una ganancia, y si calculan bien esta distancia y las bobinas, funcionará aún mejor.
+
+119
+00:11:14,960 --> 00:11:18,280
+O sea, créanme, solo hay que trabajar un poquito.
+
+120
+00:11:18,280 --> 00:11:19,120
+Eso es.
+
+121
+00:11:19,640 --> 00:11:21,600
+Lo que quería contar, lo conté.
+
+122
+00:11:21,940 --> 00:11:23,460
+Hasta la próxima en los siguientes videos.
+
+123
+00:11:23,620 --> 00:11:29,580
+Les mostraré la esencia de cómo funciona todo lo demás.
+
+124
+00:11:30,340 --> 00:11:33,000
+Quiero decir que la conexión a tierra es muy importante para ello.
+
+125
+00:11:33,820 --> 00:11:37,080
+No sé si se ve ahora o no.
+
+126
+00:11:38,520 --> 00:11:40,020
+Pueden ver que está fluctuando.
+
+127
+00:11:42,120 --> 00:11:45,700
+El voltaje prácticamente, bueno, cambia unos buenos 20-30 voltios con seguridad.
+
+128
+00:11:45,940 --> 00:11:49,540
+Si la tierra es mala, entonces todo funcionará mal en general.
+
+129
+00:11:50,360 --> 00:11:53,200
+Tengo una mala tierra conectada allí, en realidad.
+
+130
+00:11:53,300 --> 00:11:57,620
+No sé por qué, pero ahora mismo eso no es realmente importante.
+
+131
+00:11:58,660 --> 00:12:01,500
+Lo que importa — es lo que es.
+
+132
+00:12:02,440 --> 00:12:05,700
+Aquí hay disipadores de calor, los pegué aquí.
+
+133
+00:12:08,300 --> 00:12:13,440
+Con esta bobina, cuando está en resonancia, hay que ajustar todo correctamente.
+
+134
+00:12:14,080 --> 00:12:20,380
+No sé qué está hecho en el laboratorio de Akula allá, quizás bobinado con papel de aluminio, lo más probable, y cerrado con cinta aislante.
+
+135
+00:12:21,440 --> 00:12:23,780
+También trabajé en esta opción.
+
+136
+00:12:24,400 --> 00:12:28,840
+Lo intentaremos más tarde para inventar algo para esto.
+
+137
+00:12:29,280 --> 00:12:33,300
+Por ahora los disipadores están como receptores, y aquí está más o menos la bobina.
+
+138
+00:12:34,420 --> 00:12:37,060
+Bueno, lo digo de nuevo, aquí está hecho un poco mal.
+
+139
+00:12:38,140 --> 00:12:47,480
+Aunque se puede tocar con las manos, pero hay que bobinar todo este transformador un poco diferente, entonces creo que habrá más voltaje.
+
+140
+00:12:47,480 --> 00:12:58,340
+Entonces, cable de dos y medio mm cuadrados aquí, aquí un cable, así que, no uno, sino 0,4, entonces hay 0,5 de cable bobinado allí.
+
+141
+00:12:58,840 --> 00:13:07,760
+Básicamente hay que bobinarlos iguales, o sea, esta bobina es la mitad de la onda de esta bobina, así que resulta uno y medio.
+
+142
+00:13:08,200 --> 00:13:11,520
+Y la captación hay que hacerla bifilar.
+
+143
+00:13:12,820 --> 00:13:15,660
+Probablemente, todo esto, de cierto modo, no puedo decirlo.
+
+144
+00:13:16,340 --> 00:13:23,760
+Solo puedo decir que este sistema es muy fácil de hacer y cualquiera puede armarlo y sintonizarlo.
+
+145
+00:13:25,960 --> 00:13:39,620
+Mostraré el orden de sintonización más adelante, lo contaré en cuanto sintonice el nuevo sistema, más precisamente en cuanto rebobine ambas bobinas, porque hay algo aquí que no me gusta, e incluso si arranco una o dos
+
+146
+00:13:39,620 --> 00:13:44,040
+bombillas de ahorro de energía con este sistema, me gustaría un poco más.
+
+147
+00:13:44,040 --> 00:13:46,000
+Sí, o sea por eso voy a trabajar en ello.
+
+148
+00:13:46,920 --> 00:14:02,680
+Hoy, para otros experimentos, compré un paquete entero de condensadores para el inductor, para sintonizar su frecuencia de resonancia, porque estos condensadores soviéticos, quiero alejarme de ellos gradualmente,
+
+149
+00:14:02,780 --> 00:14:03,920
+me tienen harto.
+
+150
+00:14:04,620 --> 00:14:07,460
+En fin, ese es el tipo de sistema.
+
+151
+00:14:07,640 --> 00:14:22,160
+Sí, por cierto, en el laboratorio de Akula también era notable en la placa, aquí el sistema está completamente alimentado por 24 voltios, sí, o sea la parte de alta tensión también, o sea en el transistor, en el inductor, el inductor ahora recibe
+
+152
+00:14:22,160 --> 00:14:33,900
+alrededor de 650 voltios, aquí hay un transistor de alta tensión y los pulsos van con un voltaje que alcanza los 650 voltios.
+
+153
+00:14:33,920 --> 00:14:36,120
+Así que todo está bien aquí, sí.
+
+154
+00:14:36,640 --> 00:14:50,080
+No veo el sentido de poner un convertidor, ya lo hice, tengo un convertidor, ya lo puse aquí, pero los transistores de salida se quemaron, intentaré una vez más como que solucionar este momento
+
+155
+00:14:50,080 --> 00:14:57,700
+aquí, quizás pueda incluso obtener más potencia, pero no tiene sentido.
+
+156
+00:14:57,700 --> 00:15:14,300
+Es bastante suficiente trabajar correctamente con esto mismo, con 24 voltios, y obtener una potencia bastante considerable, digamos, potencia considerable, sí, o sea, no tiene sentido.
+
+157
+00:15:14,300 --> 00:15:20,280
+Pero intentaré experimentar y les mostraré lo que logré hacer con ello.
+
+158
+00:15:20,780 --> 00:15:31,220
+Aunque tengo un plan de hacer la autoalimentación con todo esto y hacerlo funcionar por sí mismo, y también que esté alimentado por una carga y mostrarlo, sí.
+
+159
+00:15:31,220 --> 00:15:45,160
+Pero tengo un espacio especial aquí en la fibra de vidrio que dejé, sí, o sea, para poner otro convertidor aquí y alimentar este sistema desde un voltaje más alto.
+
+160
+00:15:45,160 --> 00:15:49,100
+Eso es, ese es el tipo de artilugio que se me ocurrió.
+
+161
+00:15:49,480 --> 00:15:58,120
+Este escalón aquí, probablemente, lo alargaré un poco, porque está en el borde.
+
+162
+00:15:58,240 --> 00:15:59,720
+Bueno, aunque quién sabe, ya veremos.
+
+163
+00:15:59,920 --> 00:16:10,420
+O sea, si aumento los turnos ahora, el número de vueltas en estas bobinas, o sea tendré que separarlas más en cualquier caso, porque la longitud de onda probablemente será mayor.
+
+164
+00:16:10,420 --> 00:16:12,060
+Y la placa es demasiado corta.
+
+165
+00:16:12,620 --> 00:16:13,140
+Bueno, ya veremos.
+
+166
+00:16:13,560 --> 00:16:17,040
+En resumen, eso es todo por hoy.
+
+167
+00:16:17,920 --> 00:16:18,940
+Lo que pude, lo mostré.
+
+168
+00:16:19,940 --> 00:16:28,440
+Estoy trabajando — honestamente, jugando, porque, bueno, simplemente me apeteció jugar con estos Teslas.
+
+169
+00:16:29,620 --> 00:16:35,480
+Habiendo visto la patente de Tesla, entendí por qué Akula lo hizo exactamente según este principio.
+
+170
+00:16:35,860 --> 00:16:39,140
+Porque, básicamente, no hay nada complicado.
+
+171
+00:16:39,860 --> 00:16:50,440
+Bueno, y con la llegada, por así decirlo, de este sistema, se me formaron algunos conceptos con respecto al sistema con la tubería horizontal.
+
+172
+00:16:50,440 --> 00:17:11,640
+Y, así, me puse a armar esta placa, que será exactamente para la instalación horizontal, con el Tesla horizontal, donde, bueno, la corriente será mayor allí, sí, o sea, y habrá
+
+173
+00:17:11,640 --> 00:17:16,800
+una frecuencia más alta también, bueno, ya que el Tesla es corto, sí, aproximadamente 14 centímetros.
+
+174
+00:17:16,800 --> 00:17:35,500
+Y el cable es más grueso, así que la frecuencia allí será en algún lugar de 1,6-1,8 MHz, correspondiendo exactamente a la frecuencia de resonancia, creo, 1,3, la frecuencia de resonancia de la bobina captadora bifilar.
+
+175
+00:17:36,420 --> 00:17:39,700
+Entonces, y la operación allí es un poco diferente.
+
+176
+00:17:40,080 --> 00:17:48,680
+Bueno, en fin, recomiendo intentarlo, si quieren, claro, experimentar.
+
+177
+00:17:48,800 --> 00:17:55,200
+El sistema es bastante simple, el generador de ráfagas de pulsos, creo que cualquiera puede hacerlo.
+
+178
+00:17:57,340 --> 00:18:11,180
+Akula publicó — Roma, sí, o sea, en su canal este mismo sistema de interruptor, les bastará con simplemente tomarlo y empezar a armar todo esto.
+
+179
+00:18:11,180 --> 00:18:12,600
+Aquí todo es muy sencillo.
+
+180
+00:18:12,780 --> 00:18:22,860
+Aquí un chip TL, aquí un chip 74NS14, y allá un driver en lugar de su transistor que usa allí.
+
+181
+00:18:22,940 --> 00:18:23,760
+Puse un driver.
+
+182
+00:18:24,140 --> 00:18:26,680
+Me gusta más el driver TC4420.
+
+183
+00:18:27,390 --> 00:18:28,180
+Eso es.
+
+184
+00:18:29,400 --> 00:18:30,740
+Ese es el tipo de sistema.
+
+185
+00:18:31,280 --> 00:18:35,340
+Aquí no oculto nada, echen un vistazo si quieren.
+
+186
+00:18:42,360 --> 00:18:47,660
+Aquí estos son pequeños condensadores de 2,2 nF.
+
+187
+00:18:48,560 --> 00:18:49,140
+Diodos.
+
+188
+00:18:50,780 --> 00:18:51,420
+Tipo F.
+
+189
+00:18:53,120 --> 00:18:54,840
+Ah no, no son tipo F, son MUR.
+
+190
+00:18:56,660 --> 00:18:57,380
+MUR860.
+
+191
+00:18:58,140 --> 00:19:04,560
+Entonces, bueno, también armé esta placa en una placa perforada.
+
+192
+00:19:04,740 --> 00:19:07,080
+Es simplemente como experimental.
+
+193
+00:19:07,220 --> 00:19:13,900
+Ya tengo ordenada esta variante de placa, una grande, donde todo esto cabrá tranquilamente.
+
+194
+00:19:14,200 --> 00:19:15,960
+Pero eso es un poco más adelante.
+
+195
+00:19:16,840 --> 00:19:18,680
+Bueno, el consumo, entonces.
+
+196
+00:19:20,300 --> 00:19:24,740
+El consumo del sistema es un poco menos de 2 A.
+
+197
+00:19:25,520 --> 00:19:31,660
+Digo, muestra 1,8, sí, o sea, este amperímetro miente en 200 mA.
+
+198
+00:19:33,680 --> 00:19:34,280
+Bueno, eso es.
+
+199
+00:19:35,120 --> 00:19:35,800
+Buena suerte.
+
+200
+00:19:36,400 --> 00:19:39,580
+Seguiremos adelante, intentando, como dicen, arrancarlo.
+
+201
+00:19:39,580 --> 00:19:48,680
+Hoy obtuve más, el cable de 0,4 se acabó, 0,95, no le hagan caso, aquí está la sección transversal de este cable.
+
+202
+00:19:49,560 --> 00:19:58,500
+En resumen, voy a bobinar 2 Teslas más para arrancarlo.
+
+203
+00:19:59,000 --> 00:19:59,640
+Eso es, ¡buena suerte!
