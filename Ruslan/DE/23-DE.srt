@@ -1,0 +1,439 @@
+1
+00:00:00,960 --> 00:00:01,760
+Hallo zusammen.
+
+2
+00:00:02,980 --> 00:00:04,880
+Ich mache einen Aufbautest.
+
+3
+00:00:05,940 --> 00:00:11,060
+Für heute Nacht ist das der letzte, denn ich hab die Nase voll und, ehrlich gesagt, hab ich die Spule fallen lassen.
+
+4
+00:00:11,160 --> 00:00:13,980
+Ich musste eine etwas andere nehmen, die ist nicht in Resonanz.
+
+5
+00:00:14,580 --> 00:00:15,520
+Aber das ist nicht mal wichtig.
+
+6
+00:00:16,080 --> 00:00:18,620
+Die Spannung, also, hier ist das einfach dickes Kabel.
+
+7
+00:00:19,140 --> 00:00:20,140
+Zu dick.
+
+8
+00:00:20,560 --> 00:00:22,860
+Hier ist praktisch 0,71 gewickelt.
+
+9
+00:00:23,020 --> 00:00:27,920
+Und das ist für die Arbeit in diesem System nicht geeignet.
+
+10
+00:00:28,980 --> 00:00:34,260
+Zu hohe Frequenz, da muss man weg davon, weil meine Empfängerspule auf eine andere gewickelt ist.
+
+11
+00:00:35,200 --> 00:00:36,240
+Na ja, egal.
+
+12
+00:00:36,360 --> 00:00:39,400
+Morgen leg ich den Empfänger wieder an diese Stelle.
+
+13
+00:00:39,520 --> 00:00:41,700
+Wie auch immer, diese Birnen haben ruhig geleuchtet.
+
+14
+00:00:41,940 --> 00:00:42,680
+Es gab Selbstspeisung.
+
+15
+00:00:45,440 --> 00:00:56,280
+Der Moment und der Fehler in diesem ganzen System ist, dass es pfeift und seine Frequenz am Treiber auf 8-9 kHz rauskommt.
+
+16
+00:00:56,280 --> 00:01:00,080
+Und die Pulswiederholfrequenz geht halb so hoch.
+
+17
+00:01:00,300 --> 00:01:02,140
+Also 4,5-4 kHz.
+
+18
+00:01:02,280 --> 00:01:05,940
+Ich hab hier 4,5 eingestellt, an diesem Block.
+
+19
+00:01:06,560 --> 00:01:09,640
+Und, wie ihr seht, hab ich alles etwas umgebaut.
+
+20
+00:01:10,260 --> 00:01:19,340
+Erstens gibt es hier jetzt einen gemeinsamen Konverter, den ich nicht extra einzeln auf eine Platine löten wollte.
+
+21
+00:01:19,540 --> 00:01:21,940
+Ich hab mich entschieden, das einfach draufzuklatschen.
+
+22
+00:01:21,940 --> 00:01:24,880
+Die Transistoren direkt auf den Kühlkörper montiert.
+
+23
+00:01:25,540 --> 00:01:30,380
+Und einen Generator zu nehmen, den ich früher schon mal auf einem TL aufgebaut hatte.
+
+24
+00:01:30,900 --> 00:01:33,160
+Und einen Transformator zu nehmen.
+
+25
+00:01:33,380 --> 00:01:37,520
+Genau wie bei Roma Akula, den kennt ja jeder.
+
+26
+00:01:37,940 --> 00:01:39,460
+Ich hab genau so einen gekauft.
+
+27
+00:01:39,920 --> 00:01:41,240
+Ich hab Taschenlampen damit gemacht.
+
+28
+00:01:41,740 --> 00:01:48,960
+Ich bin in den Laden gegangen, hab auch ein paar von diesen interessanten Rahmen gekauft.
+
+29
+00:01:48,960 --> 00:01:52,260
+Hier gibt es auch neue Halterungen.
+
+30
+00:01:52,640 --> 00:01:54,160
+Das war nur eine Testversion.
+
+31
+00:01:54,520 --> 00:02:00,220
+Weil es keine Info über den Kern gab, was das für ein super-duper Kern ist.
+
+32
+00:02:01,140 --> 00:02:09,140
+Schien wie 2000, hmm, aber ich glaube viel höher.
+
+33
+00:02:09,600 --> 00:02:10,520
+Vielleicht tausend.
+
+34
+00:02:11,000 --> 00:02:13,540
+Auf jeden Fall, hier ist ein neuer Kern.
+
+35
+00:02:14,040 --> 00:02:16,340
+Ich hab einen ausgepackt, einer liegt hier.
+
+36
+00:02:16,340 --> 00:02:18,820
+Zwei brandneue Hälften und hier sind die Halterungen.
+
+37
+00:02:19,620 --> 00:02:21,680
+Ich hab es ausprobiert, mit dem hier getestet.
+
+38
+00:02:22,120 --> 00:02:24,580
+Dann hab ich all diese Kerne hier reingeworfen.
+
+39
+00:02:24,860 --> 00:02:26,380
+Und alles so zusammengebaut.
+
+40
+00:02:27,100 --> 00:02:29,720
+Und meinen ganzen Aufbau etwas überarbeitet.
+
+41
+00:02:30,640 --> 00:02:32,080
+Was haben wir am Ende bekommen?
+
+42
+00:02:32,380 --> 00:02:37,040
+Dieser ganze Aufbau läuft jetzt mit 12 Volt.
+
+43
+00:02:37,100 --> 00:02:38,680
+Er startet ruhig.
+
+44
+00:02:39,520 --> 00:02:43,560
+Man braucht keine 24 Volt, weil ich mit 24 Volt Probleme hatte.
+
+45
+00:02:43,840 --> 00:02:45,540
+Also ich konnte es nicht normal starten.
+
+46
+00:02:45,540 --> 00:02:49,860
+Ich musste zwei Akkus anschließen und da hat es gehakt.
+
+47
+00:02:50,080 --> 00:02:51,720
+Und, kurz gesagt…
+
+48
+00:02:51,720 --> 00:02:53,200
+Ach, übrigens, ich hab die Kamera abgebrannt.
+
+49
+00:02:53,480 --> 00:02:57,900
+Musste mal wieder eine andere schnappen.
+
+50
+00:02:58,440 --> 00:03:00,340
+Also, was wollte ich noch sagen?
+
+51
+00:03:00,800 --> 00:03:04,440
+Na ja, das ist der letzte Test, den ich heute Nacht mache.
+
+52
+00:03:04,580 --> 00:03:06,500
+Es ist höchstens drei, halb vier.
+
+53
+00:03:06,720 --> 00:03:07,680
+Also auf der Uhr.
+
+54
+00:03:08,520 --> 00:03:09,320
+Wahnsinnig müde.
+
+55
+00:03:09,980 --> 00:03:22,920
+Und ich will morgen fertig werden, damit ich die Kameraden reinrufen kann, die an keinerlei Fälschungen interessiert sind und die diesen Aufbau in die Hände nehmen und euch allen beweisen werden, dass er funktioniert.
+
+56
+00:03:23,760 --> 00:03:27,480
+Also, warum bin ich auf 12 Volt statt 24 gegangen?
+
+57
+00:03:27,880 --> 00:03:32,420
+Na ja, zunächst mal wären 24 Volt für diesen Aufbau zu viel.
+
+58
+00:03:32,740 --> 00:03:33,100
+Das ist erstens.
+
+59
+00:03:33,860 --> 00:03:35,660
+Zweitens, die Tatsache, dass…
+
+60
+00:03:35,660 --> 00:03:38,500
+Na ja, die Leistung hier ist völlig…
+
+61
+00:03:38,500 --> 00:03:41,060
+Ich will nicht mehr als 200 Watt maximal.
+
+62
+00:03:41,620 --> 00:03:43,420
+Na ja, und die Netzteile, ja.
+
+63
+00:03:43,420 --> 00:03:46,220
+Also ich hab noch ein einziges 24-Volt-Netzteil übrig.
+
+64
+00:03:46,400 --> 00:03:47,820
+Von den 12-Volt-Netzteilen hab ich jede Menge.
+
+65
+00:03:48,440 --> 00:03:49,760
+Also, irgendwie, ohne Bedauern.
+
+66
+00:03:49,960 --> 00:03:50,980
+Auf jeden Fall machen wir den Test.
+
+67
+00:03:51,980 --> 00:03:52,560
+Wir schalten ein, ja.
+
+68
+00:03:52,660 --> 00:03:53,720
+Also, da hat es angefangen.
+
+69
+00:03:54,460 --> 00:03:55,800
+Gerade zeigt es an.
+
+70
+00:03:56,100 --> 00:03:57,640
+Was es uns zeigt, also…
+
+71
+00:03:57,640 --> 00:04:00,640
+Na ja, hier ist es nicht in Resonanz, also zeigt es Quatsch.
+
+72
+00:04:01,100 --> 00:04:04,340
+Hier liegt die Messspitze, hier hängt sie gleich daneben, ja.
+
+73
+00:04:04,480 --> 00:04:05,280
+Also, das Oszilloskop.
+
+74
+00:04:06,680 --> 00:04:07,080
+Da.
+
+75
+00:04:07,280 --> 00:04:09,020
+Na ja, und hier läuft es jetzt, ja.
+
+76
+00:04:09,320 --> 00:04:11,700
+Also alles funktioniert im Grunde genommen einwandfrei.
+
+77
+00:04:11,700 --> 00:04:12,560
+Ausgezeichnet.
+
+78
+00:04:12,920 --> 00:04:15,420
+Also es läuft, dieser Transformator pfeift gerade.
+
+79
+00:04:16,120 --> 00:04:17,780
+Weil die Frequenz zu niedrig ist.
+
+80
+00:04:17,860 --> 00:04:22,260
+Wie ich schon sagte, hier haben wir gerade im Moment.
+
+81
+00:04:22,520 --> 00:04:26,280
+9 Kilohertz und 4,5 Pulswiederholfrequenz.
+
+82
+00:04:27,640 --> 00:04:27,740
+Da.
+
+83
+00:04:27,880 --> 00:04:29,420
+Also, der Verbrauch, übrigens.
+
+84
+00:04:29,600 --> 00:04:32,020
+Hier, ich hab mit 15 Volt gespeist.
+
+85
+00:04:32,420 --> 00:04:34,240
+Und der Verbrauch ist etwas weniger als ein Ampere.
+
+86
+00:04:34,700 --> 00:04:35,160
+Gut.
+
+87
+00:04:35,280 --> 00:04:40,800
+Also das ist ein absolut angemessener Verbrauch, damit dieses System normal läuft.
+
+88
+00:04:40,800 --> 00:04:41,780
+Da.
+
+89
+00:04:41,860 --> 00:04:47,440
+Na ja, ich schließ auch dieses Ding an, die Empfangsspule, wo der Treiber erscheint, ja.
+
+90
+00:04:47,540 --> 00:04:49,840
+Also und die kapazitiven Kondensatoren.
+
+91
+00:04:49,920 --> 00:04:51,660
+Ich glaube, die hier werden nicht gebraucht.
+
+92
+00:04:51,780 --> 00:04:53,740
+Es werden etwas kleinere gebraucht.
+
+93
+00:04:54,640 --> 00:04:54,920
+Da.
+
+94
+00:04:54,980 --> 00:04:59,240
+Morgen leg ich diese Empfangsspule hier rein.
+
+95
+00:04:59,480 --> 00:05:02,200
+Und ich teste alles.
+
+96
+00:05:02,280 --> 00:05:03,980
+Und dann zeig ich, wie es funktioniert.
+
+97
+00:05:04,680 --> 00:05:09,240
+Na ja, mit 24 Volt hab ich Ergebnisse bis zu 200 Watt erreicht.
+
+98
+00:05:09,240 --> 00:05:15,280
+Leider werden wir mit 12 Volt sehen, was passiert.
+
+99
+00:05:15,480 --> 00:05:20,140
+Ich glaube, nichts wird sich ändern, weil, na ja, der Treiber gibt dasselbe.
+
+100
+00:05:20,560 --> 00:05:22,800
+Und die Tesla funktioniert.
+
+101
+00:05:23,100 --> 00:05:26,480
+Ich hab die Versorgungsspannung der Tesla sogar ein kleines bisschen erhöht.
+
+102
+00:05:26,560 --> 00:05:33,680
+Jetzt werden dem Induktor hier, im Puls, etwa 800 Volt zugeführt.
+
+103
+00:05:35,060 --> 00:05:41,040
+Und die Versorgungsspannung des Schalters beträgt gerade im Moment 120 Volt.
+
+104
+00:05:41,120 --> 00:05:43,580
+Statt der 100, die ich hatte.
+
+105
+00:05:43,720 --> 00:05:47,220
+Na ja, etwas höher, ja, und deshalb funktioniert es etwas besser.
+
+106
+00:05:48,180 --> 00:05:51,400
+Das war's, okay, wir schalten ab und bis morgen.
+
+107
+00:05:52,320 --> 00:05:58,040
+Also, demnächst gibt es ein bisschen Konkretes zu dieser ganzen Sache und wie es funktioniert.
+
+108
+00:05:58,980 --> 00:06:00,260
+Viel Erfolg an alle und los geht's.
+
+109
+00:06:00,560 --> 00:06:02,000
+Und reden wir weniger Blödsinn.
+
+110
+00:06:02,000 --> 00:06:02,680
+Tschüss.

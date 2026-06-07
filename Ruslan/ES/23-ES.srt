@@ -1,0 +1,439 @@
+1
+00:00:00,960 --> 00:00:01,760
+Hola a todos.
+
+2
+00:00:02,980 --> 00:00:04,880
+Estoy haciendo una prueba del equipo.
+
+3
+00:00:05,940 --> 00:00:11,060
+Por esta noche será la última, porque ya estoy harto y, la verdad, se me cayó la bobina.
+
+4
+00:00:11,160 --> 00:00:13,980
+Tuve que usar una un poco diferente, no está en resonancia.
+
+5
+00:00:14,580 --> 00:00:15,520
+Pero eso ni siquiera importa.
+
+6
+00:00:16,080 --> 00:00:18,620
+El voltaje, bueno, aquí es solo cable grueso.
+
+7
+00:00:19,140 --> 00:00:20,140
+Demasiado grueso.
+
+8
+00:00:20,560 --> 00:00:22,860
+Aquí prácticamente está enrollado 0,71.
+
+9
+00:00:23,020 --> 00:00:27,920
+Y no es apta para trabajar en este sistema.
+
+10
+00:00:28,980 --> 00:00:34,260
+Frecuencia demasiado alta, hay que alejarse de eso, porque mi receptor está enrollado para una diferente.
+
+11
+00:00:35,200 --> 00:00:36,240
+Bueno, da igual.
+
+12
+00:00:36,360 --> 00:00:39,400
+Mañana vuelvo a poner el receptor en este lugar.
+
+13
+00:00:39,520 --> 00:00:41,700
+Total, estas bombillas estaban brillando tranquilamente.
+
+14
+00:00:41,940 --> 00:00:42,680
+Había autoalimentación.
+
+15
+00:00:45,440 --> 00:00:56,280
+El momento y el fallo en todo este sistema es que chilla y su frecuencia en el driver llega a 8-9 kHz.
+
+16
+00:00:56,280 --> 00:01:00,080
+Y la frecuencia de repetición de pulsos sale a la mitad.
+
+17
+00:01:00,300 --> 00:01:02,140
+O sea, 4,5-4 kHz.
+
+18
+00:01:02,280 --> 00:01:05,940
+Aquí ajusté 4,5, en este bloque.
+
+19
+00:01:06,560 --> 00:01:09,640
+Y, como ven, modifiqué todo un poco.
+
+20
+00:01:10,260 --> 00:01:19,340
+Primero, aquí ahora hay un convertidor común, que decidí no soldar todo por separado en una placa.
+
+21
+00:01:19,540 --> 00:01:21,940
+Decidí simplemente pegarlo encima.
+
+22
+00:01:21,940 --> 00:01:24,880
+Monté los transistores directamente sobre el disipador.
+
+23
+00:01:25,540 --> 00:01:30,380
+Y usar un generador que ya había armado antes con un TL.
+
+24
+00:01:30,900 --> 00:01:33,160
+Y usar un transformador.
+
+25
+00:01:33,380 --> 00:01:37,520
+Igual al de Roma Akula, todo el mundo lo conoce.
+
+26
+00:01:37,940 --> 00:01:39,460
+Compré exactamente este tipo.
+
+27
+00:01:39,920 --> 00:01:41,240
+Hice linternas con ellos.
+
+28
+00:01:41,740 --> 00:01:48,960
+Fui a la tienda, también compré un par de estos marcos interesantes.
+
+29
+00:01:48,960 --> 00:01:52,260
+Aquí también hay nuevos soportes.
+
+30
+00:01:52,640 --> 00:01:54,160
+Era solo una versión de prueba.
+
+31
+00:01:54,520 --> 00:02:00,220
+Como no había info sobre el núcleo, qué tipo de núcleo tan super-duper era.
+
+32
+00:02:01,140 --> 00:02:09,140
+Parecía como 2000, mmm, pero creo que mucho más.
+
+33
+00:02:09,600 --> 00:02:10,520
+Quizás mil.
+
+34
+00:02:11,000 --> 00:02:13,540
+En todo caso, aquí hay un núcleo nuevo.
+
+35
+00:02:14,040 --> 00:02:16,340
+Desempaqué uno, uno está aquí.
+
+36
+00:02:16,340 --> 00:02:18,820
+Dos mitades nuevas y aquí están los soportes.
+
+37
+00:02:19,620 --> 00:02:21,680
+Lo probé, lo ensayé con este.
+
+38
+00:02:22,120 --> 00:02:24,580
+Luego metí todos estos núcleos aquí.
+
+39
+00:02:24,860 --> 00:02:26,380
+Y lo armé todo de esta manera.
+
+40
+00:02:27,100 --> 00:02:29,720
+Y reelaboré toda mi construcción un poco.
+
+41
+00:02:30,640 --> 00:02:32,080
+¿Qué obtuvimos al final?
+
+42
+00:02:32,380 --> 00:02:37,040
+Toda esta construcción ahora funciona a 12 voltios.
+
+43
+00:02:37,100 --> 00:02:38,680
+Arranca tranquilamente.
+
+44
+00:02:39,520 --> 00:02:43,560
+No hacen falta 24 voltios, porque con 24 voltios tenía problemas.
+
+45
+00:02:43,840 --> 00:02:45,540
+O sea, no podía arrancar normalmente.
+
+46
+00:02:45,540 --> 00:02:49,860
+Tenía que conectar dos baterías y ahí fallaba.
+
+47
+00:02:50,080 --> 00:02:51,720
+Y, en resumen…
+
+48
+00:02:51,720 --> 00:02:53,200
+Ah, por cierto, se me quemó la cámara.
+
+49
+00:02:53,480 --> 00:02:57,900
+Tuve que buscar otra una vez más.
+
+50
+00:02:58,440 --> 00:03:00,340
+Entonces, ¿qué más quería decir?
+
+51
+00:03:00,800 --> 00:03:04,440
+Bueno, esta es la última prueba que hago por esta noche.
+
+52
+00:03:04,580 --> 00:03:06,500
+Son pasadas las tres como mucho, las tres y media.
+
+53
+00:03:06,720 --> 00:03:07,680
+O sea, en el reloj.
+
+54
+00:03:08,520 --> 00:03:09,320
+Increíblemente cansado.
+
+55
+00:03:09,980 --> 00:03:22,920
+Y quiero terminar mañana para poder llamar a los compañeros que no están interesados en ninguna mentira y que van a tener este equipo en sus manos y les van a demostrar a todos que funciona.
+
+56
+00:03:23,760 --> 00:03:27,480
+Entonces, ¿por qué me fui a 12 voltios en vez de 24?
+
+57
+00:03:27,880 --> 00:03:32,420
+Bueno, primero que nada, 24 voltios sería demasiado para este equipo.
+
+58
+00:03:32,740 --> 00:03:33,100
+Eso es uno.
+
+59
+00:03:33,860 --> 00:03:35,660
+Segundo, el hecho de que…
+
+60
+00:03:35,660 --> 00:03:38,500
+Bueno, la potencia aquí es completamente…
+
+61
+00:03:38,500 --> 00:03:41,060
+No quiero más de 200 vatios como máximo.
+
+62
+00:03:41,620 --> 00:03:43,420
+Bueno, y las fuentes de alimentación, sí.
+
+63
+00:03:43,420 --> 00:03:46,220
+O sea, me queda una sola fuente de alimentación de 24 voltios.
+
+64
+00:03:46,400 --> 00:03:47,820
+Tengo un montón de las de 12 voltios.
+
+65
+00:03:48,440 --> 00:03:49,760
+Así que, más o menos, sin pena.
+
+66
+00:03:49,960 --> 00:03:50,980
+Total, hacemos la prueba.
+
+67
+00:03:51,980 --> 00:03:52,560
+Lo encendemos, sí.
+
+68
+00:03:52,660 --> 00:03:53,720
+O sea, ahí arrancó.
+
+69
+00:03:54,460 --> 00:03:55,800
+Ahora mismo está mostrando.
+
+70
+00:03:56,100 --> 00:03:57,640
+Lo que nos muestra, bueno…
+
+71
+00:03:57,640 --> 00:04:00,640
+Bueno, aquí no está en resonancia, así que muestra disparates.
+
+72
+00:04:01,100 --> 00:04:04,340
+Aquí está la sonda, aquí cuelga justo al lado, sí.
+
+73
+00:04:04,480 --> 00:04:05,280
+O sea, el osciloscopio.
+
+74
+00:04:06,680 --> 00:04:07,080
+Ahí.
+
+75
+00:04:07,280 --> 00:04:09,020
+Bueno, y aquí funciona ahora, sí.
+
+76
+00:04:09,320 --> 00:04:11,700
+O sea, todo funciona perfectamente en general.
+
+77
+00:04:11,700 --> 00:04:12,560
+Excelente.
+
+78
+00:04:12,920 --> 00:04:15,420
+O sea, funciona, este transformador está chillando ahora.
+
+79
+00:04:16,120 --> 00:04:17,780
+Porque la frecuencia es demasiado baja.
+
+80
+00:04:17,860 --> 00:04:22,260
+Como ya dije, aquí tenemos en este momento.
+
+81
+00:04:22,520 --> 00:04:26,280
+9 kilohertz y 4,5 de frecuencia de repetición de pulsos.
+
+82
+00:04:27,640 --> 00:04:27,740
+Ahí.
+
+83
+00:04:27,880 --> 00:04:29,420
+Entonces, el consumo, por cierto.
+
+84
+00:04:29,600 --> 00:04:32,020
+Aquí, alimenté con 15 voltios.
+
+85
+00:04:32,420 --> 00:04:34,240
+Y el consumo es un poco menos de un amperio.
+
+86
+00:04:34,700 --> 00:04:35,160
+Bien.
+
+87
+00:04:35,280 --> 00:04:40,800
+O sea, es un consumo perfectamente adecuado para que este sistema funcione normalmente.
+
+88
+00:04:40,800 --> 00:04:41,780
+Ahí.
+
+89
+00:04:41,860 --> 00:04:47,440
+Bueno, voy a conectar este chisme también, la bobina receptora, donde va a aparecer el drive, sí.
+
+90
+00:04:47,540 --> 00:04:49,840
+O sea, y los condensadores capacitivos.
+
+91
+00:04:49,920 --> 00:04:51,660
+Creo que estos no van a hacer falta.
+
+92
+00:04:51,780 --> 00:04:53,740
+Harán falta unos un poco más pequeños.
+
+93
+00:04:54,640 --> 00:04:54,920
+Ahí.
+
+94
+00:04:54,980 --> 00:04:59,240
+Mañana voy a poner aquí esta bobina receptora.
+
+95
+00:04:59,480 --> 00:05:02,200
+Y voy a probar todo.
+
+96
+00:05:02,280 --> 00:05:03,980
+Y luego mostraré cómo funciona.
+
+97
+00:05:04,680 --> 00:05:09,240
+Bueno, con 24 voltios logré resultados de hasta 200 vatios.
+
+98
+00:05:09,240 --> 00:05:15,280
+Desafortunadamente, con 12 voltios veremos qué pasa.
+
+99
+00:05:15,480 --> 00:05:20,140
+Creo que nada va a cambiar, porque, bueno, el drive da lo mismo.
+
+100
+00:05:20,560 --> 00:05:22,800
+Y la Tesla funciona.
+
+101
+00:05:23,100 --> 00:05:26,480
+Incluso subí el voltaje de alimentación de la Tesla un poquito.
+
+102
+00:05:26,560 --> 00:05:33,680
+Ahora al inductor aquí, en pulso, se alimentan unos 800 voltios.
+
+103
+00:05:35,060 --> 00:05:41,040
+Y el voltaje de alimentación del switch en este momento es de 120 voltios.
+
+104
+00:05:41,120 --> 00:05:43,580
+En vez de esos 100 que tenía.
+
+105
+00:05:43,720 --> 00:05:47,220
+Bueno, un poco más alto, sí, y por eso funciona un poco mejor.
+
+106
+00:05:48,180 --> 00:05:51,400
+Listo, okay, lo apagamos y hasta mañana.
+
+107
+00:05:52,320 --> 00:05:58,040
+O sea, uno de estos días habrá un poco de detalle sobre todo esto y cómo funciona.
+
+108
+00:05:58,980 --> 00:06:00,260
+Buena suerte a todos y adelante.
+
+109
+00:06:00,560 --> 00:06:02,000
+Y hablemos menos estupideces.
+
+110
+00:06:02,000 --> 00:06:02,680
+Chao.

@@ -1,0 +1,903 @@
+1
+00:00:06,490 --> 00:00:07,550
+Hola a todos.
+
+2
+00:00:08,330 --> 00:00:10,690
+Me alegra darles la bienvenida a mi mini-laboratorio.
+
+3
+00:00:12,210 --> 00:00:18,130
+Y hoy voy a ensamblar una muestra de prueba de un interruptor de chispa.
+
+4
+00:00:18,450 --> 00:00:19,870
+Según este esquema de aquí.
+
+5
+00:00:20,490 --> 00:00:24,090
+Para mis próximos experimentos y pruebas.
+
+6
+00:00:25,150 --> 00:00:31,770
+Me pidieron que explicara cómo se ensambla todo esto, cómo funciona y cómo se prueba.
+
+7
+00:00:32,570 --> 00:00:35,570
+Cualquiera puede usarlo luego para sus propios fines.
+
+8
+00:00:35,750 --> 00:00:45,010
+Esto les concierne a todos los que son seguidores de los accionamientos de chispa con descargadores, con interruptores.
+
+9
+00:00:47,210 --> 00:00:55,490
+Para los que ahora intentan interrumpir la chispa, es decir el movimiento de la corriente, con imanes — yo tomé una ruta diferente desde el principio.
+
+10
+00:00:55,830 --> 00:00:57,150
+Seguí el camino de Smith.
+
+11
+00:01:00,670 --> 00:01:04,550
+Smith siempre limita la corriente en los circuitos primarios.
+
+12
+00:01:04,630 --> 00:01:06,730
+Básicamente eso es lo que vamos a hacer.
+
+13
+00:01:07,790 --> 00:01:10,190
+Un análogo del interruptor de Tesla.
+
+14
+00:01:10,710 --> 00:01:11,490
+Exactamente igual.
+
+15
+00:01:11,730 --> 00:01:14,710
+Todas sus bobinas giratorias, exactamente igual.
+
+16
+00:01:15,330 --> 00:01:18,010
+Van pulsos, ráfagas de pulsos.
+
+17
+00:01:18,170 --> 00:01:27,970
+Los pulsos corresponden a la frecuencia de resonancia, y las ráfagas corresponden a los otros procesos que ocurren en todos sus sistemas.
+
+18
+00:01:29,230 --> 00:01:31,210
+Bueno, vamos a ensamblar.
+
+19
+00:01:32,570 --> 00:01:35,830
+Un esquema bastante sencillo, simple.
+
+20
+00:01:36,610 --> 00:01:39,370
+Empecemos a ensamblar y a probar.
+
+21
+00:01:41,250 --> 00:01:43,490
+Aquí ya tengo preparada la placa.
+
+22
+00:01:43,870 --> 00:01:47,290
+Aquí ya estoy planeando qué va dónde.
+
+23
+00:01:48,450 --> 00:01:50,690
+Bueno, vamos a ensamblar.
+
+24
+00:01:54,600 --> 00:02:00,220
+Entonces, tenemos una pequeña digresión, o más bien un refinamiento de este esquema.
+
+25
+00:02:01,860 --> 00:02:04,120
+Entonces, ahora todo en orden desde el principio.
+
+26
+00:02:05,440 --> 00:02:20,440
+Es decir, primero por el esquema, y luego, como me pidieron, una pequeña explicación de su esencia y sobre el principio de Tesla.
+
+27
+00:02:22,160 --> 00:02:38,940
+Ahora este esquema, esto es, como dije, un análogo del interruptor de Tesla, es decir, crea ráfagas de pulsos, y dentro de las ráfagas de pulsos — es decir, el número de pulsos en una ráfaga corresponde a las oscilaciones
+
+28
+00:02:38,940 --> 00:02:45,920
+resonantes, bueno, y la duración o los intervalos entre ráfagas ya corresponden exactamente a los procesos internos.
+
+29
+00:02:46,080 --> 00:02:47,060
+Pero eso es un poco más adelante.
+
+30
+00:02:47,320 --> 00:02:48,900
+Ahora, sobre el bloque.
+
+31
+00:02:50,460 --> 00:02:57,420
+Aquí está el esquema, básicamente es el mismo análogo, solo con algo agregado para mejorar el funcionamiento.
+
+32
+00:02:58,340 --> 00:03:06,680
+Para aumentar los parámetros de alimentación de 15 a 36 voltios, se agregó un estabilizador de tensión en este esquema.
+
+33
+00:03:07,680 --> 00:03:14,560
+Es decir, permite alimentar desde 15 hasta 36 voltios, el sistema lo estabiliza normalmente.
+
+34
+00:03:15,940 --> 00:03:16,400
+Siguiente.
+
+35
+00:03:17,320 --> 00:03:27,720
+Lo más importante — se agregó este diodo protector al esquema, para que los circuitos resonantes puedan trabajar tranquilamente, sin chocar con estos diodos.
+
+36
+00:03:28,020 --> 00:03:36,140
+El diodo en el transistor y este diodo directamente, el limitador, que ayuda al transistor.
+
+37
+00:03:36,380 --> 00:03:44,060
+Por esto fue posible instalar un transistor de menor tensión, con mejor control.
+
+38
+00:03:44,420 --> 00:03:49,640
+Bueno, y en consecuencia, con mejor control de todos estos sistemas.
+
+39
+00:03:50,580 --> 00:03:52,880
+Ahora, cómo se ve nuestro bloque.
+
+40
+00:03:53,680 --> 00:03:56,660
+Nuestro bloque se ve así.
+
+41
+00:03:59,240 --> 00:04:05,660
+Me pidieron que mostrara exactamente cómo están implementados los circuitos principales, los que presentaron problemas.
+
+42
+00:04:06,900 --> 00:04:16,840
+Aquí está nuestro circuito LC — uy, no LC sino CR — en el colector del transistor de disparo.
+
+43
+00:04:17,300 --> 00:04:18,620
+Para mí se ve así.
+
+44
+00:04:19,120 --> 00:04:23,660
+Aquí está el capacitor, aquí están estos dos resistores.
+
+45
+00:04:24,100 --> 00:04:28,080
+Puse dos solo para tener la potencia nominal necesaria.
+
+46
+00:04:28,380 --> 00:04:28,840
+Y ya está.
+
+47
+00:04:29,700 --> 00:04:33,180
+No había un solo resistor para la potencia necesaria.
+
+48
+00:04:33,480 --> 00:04:34,460
+Tuve que poner dos.
+
+49
+00:04:35,340 --> 00:04:36,400
+Siguiendo.
+
+50
+00:04:36,480 --> 00:04:39,400
+Aquí está el divisor de base.
+
+51
+00:04:40,540 --> 00:04:41,160
+Aquí está.
+
+52
+00:04:42,420 --> 00:04:50,940
+Pasa muy bien el frente de subida, también baja el frente de disparo, y el resistor está ahí exactamente para la corriente.
+
+53
+00:04:52,080 --> 00:04:53,180
+La protección del transistor.
+
+54
+00:04:53,280 --> 00:04:54,000
+El transistor en sí.
+
+55
+00:04:54,120 --> 00:04:54,400
+Aquí está.
+
+56
+00:04:55,860 --> 00:04:58,080
+Y este diodo.
+
+57
+00:04:59,500 --> 00:04:59,880
+Aquí está.
+
+58
+00:05:00,560 --> 00:05:02,420
+Aquí está, montado en el disipador.
+
+59
+00:05:06,910 --> 00:05:08,010
+Así se ve.
+
+60
+00:05:08,310 --> 00:05:12,070
+Aquí está nuestro estabilizador de tensión.
+
+61
+00:05:14,150 --> 00:05:15,390
+Aquí está todo este esquema.
+
+62
+00:05:16,350 --> 00:05:21,570
+Aquí está ese resistor con el que tuviste problemas la última vez y no podías seleccionar correctamente.
+
+63
+00:05:21,790 --> 00:05:23,610
+Así se ve mi choke.
+
+64
+00:05:28,650 --> 00:05:28,650
+Ahí.
+
+65
+00:05:30,070 --> 00:05:30,750
+Entonces.
+
+66
+00:05:31,050 --> 00:05:34,510
+Bueno, ahora un oscilograma de cómo funciona todo esto.
+
+67
+00:05:34,990 --> 00:05:36,570
+Y luego la explicación.
+
+68
+00:05:37,490 --> 00:05:38,570
+Las que me pidieron.
+
+69
+00:05:39,430 --> 00:05:40,670
+Para tu grupo.
+
+70
+00:05:46,890 --> 00:05:49,990
+Entonces, ahora sobre el funcionamiento del generador en sí.
+
+71
+00:05:51,250 --> 00:05:53,090
+Entonces, ahora primero el esquema.
+
+72
+00:05:54,210 --> 00:05:54,770
+Ahí.
+
+73
+00:05:54,930 --> 00:06:00,890
+Ahora veremos qué señal sale exactamente del oscilador maestro de baja frecuencia.
+
+74
+00:06:00,990 --> 00:06:01,890
+Desde este pin de aquí.
+
+75
+00:06:03,830 --> 00:06:03,850
+Ahí.
+
+76
+00:06:04,070 --> 00:06:06,270
+Y en consecuencia habrá una segunda traza.
+
+77
+00:06:06,750 --> 00:06:10,010
+Esto ya está aquí en la salida.
+
+78
+00:06:10,210 --> 00:06:15,290
+Exactamente la que forma la duración de nuestro pulso para controlar el TL.
+
+79
+00:06:15,490 --> 00:06:17,930
+Es decir, ahora estamos mirando el primer maestro de aquí.
+
+80
+00:06:18,730 --> 00:06:20,230
+Exactamente el primer generador en sí.
+
+81
+00:06:22,390 --> 00:06:23,250
+Aquí está.
+
+82
+00:06:24,230 --> 00:06:26,810
+Es decir, su ciclo de trabajo resultó así.
+
+83
+00:06:27,470 --> 00:06:33,630
+Es decir, en algún lugar entre 40-35%, eso es suficiente para el correcto funcionamiento del formador.
+
+84
+00:06:34,370 --> 00:06:37,430
+Esta primera traza de aquí es el primer generador maestro.
+
+85
+00:06:37,870 --> 00:06:37,870
+Ahí.
+
+86
+00:06:38,690 --> 00:06:42,510
+La segunda traza es el formador del pulso de operación de nuestro TL en sí.
+
+87
+00:06:43,210 --> 00:06:45,490
+Exactamente la forma que tiene.
+
+88
+00:06:47,210 --> 00:06:48,630
+Aquí está su temporización.
+
+89
+00:06:49,650 --> 00:06:53,070
+Esto ya llega al TL en sí.
+
+90
+00:06:55,850 --> 00:07:01,090
+Esto ya está directamente en el tercer pin de nuestro TL.
+
+91
+00:07:03,250 --> 00:07:06,230
+Luego viene la base del transistor.
+
+92
+00:07:06,510 --> 00:07:07,850
+Esta es ya la salida del TL.
+
+93
+00:07:08,250 --> 00:07:08,610
+Aquí está.
+
+94
+00:07:09,710 --> 00:07:10,890
+Ahora lo expandiremos.
+
+95
+00:07:13,110 --> 00:07:17,190
+Ahora vamos a fijar la sincronización en ese.
+
+96
+00:07:19,070 --> 00:07:24,700
+Y nuestra tercera traza — aquí está.
+
+97
+00:07:26,360 --> 00:07:27,340
+Ahí.
+
+98
+00:07:27,500 --> 00:07:29,660
+Estos son los pulsos en la base.
+
+99
+00:07:30,720 --> 00:07:33,940
+Estos son los pulsos en el colector.
+
+100
+00:07:35,200 --> 00:07:40,300
+Puse un resistor de 22 ohmios para la carga.
+
+101
+00:07:41,940 --> 00:07:42,960
+O de 27 ohmios.
+
+102
+00:07:42,960 --> 00:07:43,680
+27 ohmios.
+
+103
+00:07:43,800 --> 00:07:44,100
+Aquí está.
+
+104
+00:07:45,280 --> 00:07:48,720
+Esto es lo que tenemos en el colector.
+
+105
+00:07:49,020 --> 00:07:50,140
+Esto está en la base.
+
+106
+00:07:51,140 --> 00:07:55,120
+Ahora nos moveremos directamente a este osciloscopio.
+
+107
+00:07:55,240 --> 00:07:56,880
+Veamos qué hay dentro para nosotros.
+
+108
+00:07:58,380 --> 00:08:01,140
+Esto ya está directamente aquí en la base.
+
+109
+00:08:01,780 --> 00:08:04,620
+Y aquí está en el colector después del resistor.
+
+110
+00:08:05,000 --> 00:08:07,320
+Antes de estos diodos.
+
+111
+00:08:09,220 --> 00:08:12,940
+Ahora lo colapsaré, mostraré que es una ráfaga.
+
+112
+00:08:13,440 --> 00:08:13,780
+Aquí está.
+
+113
+00:08:21,490 --> 00:08:22,270
+Una vez más.
+
+114
+00:08:22,690 --> 00:08:23,650
+Este es el colector.
+
+115
+00:08:23,930 --> 00:08:25,010
+Esta es la base.
+
+116
+00:08:25,810 --> 00:08:26,890
+Aquí están, estas ráfagas.
+
+117
+00:08:27,650 --> 00:08:29,710
+Ahora mostraré que son ajustables.
+
+118
+00:08:29,890 --> 00:08:35,630
+Este resistor, directamente.
+
+119
+00:08:36,570 --> 00:08:37,270
+Aquí está.
+
+120
+00:08:39,790 --> 00:08:41,310
+Ajusta las ráfagas.
+
+121
+00:08:41,650 --> 00:08:47,190
+Ahora voy a apagar ese osciloscopio para que no me estorbe al girar las cosas aquí.
+
+122
+00:08:48,910 --> 00:08:51,110
+Dejaré solo este osciloscopio.
+
+123
+00:08:51,510 --> 00:08:54,070
+Y en ese colector están ajustadas.
+
+124
+00:08:54,730 --> 00:08:55,570
+Lo desconecté.
+
+125
+00:08:57,310 --> 00:09:01,790
+Una vez más miramos la base y la bobina en el colector.
+
+126
+00:09:01,910 --> 00:09:02,850
+Justo aquí, antes de los diodos.
+
+127
+00:09:04,150 --> 00:09:07,190
+Aquí está el ajuste de frecuencia de ráfaga.
+
+128
+00:09:11,510 --> 00:09:14,410
+La frecuencia mínima de este bloque.
+
+129
+00:09:16,030 --> 00:09:17,530
+Exactamente de las ráfagas de pulsos.
+
+130
+00:09:20,510 --> 00:09:21,630
+Error.
+
+131
+00:09:22,110 --> 00:09:23,630
+40 kHz.
+
+132
+00:09:23,710 --> 00:09:26,990
+Esto hay que mirarlo directamente en la primera sonda.
+
+133
+00:09:28,250 --> 00:09:32,890
+Estas frecuencias prácticamente coinciden.
+
+134
+00:09:33,050 --> 00:09:34,390
+Funcionan uno a uno.
+
+135
+00:09:37,150 --> 00:09:40,550
+Aquí podemos formar las ráfagas.
+
+136
+00:09:42,950 --> 00:09:44,310
+Aquí están.
+
+137
+00:09:46,450 --> 00:09:46,450
+Aquí están.
+
+138
+00:09:46,990 --> 00:09:48,210
+Estas serán las frecuencias.
+
+139
+00:09:48,350 --> 00:09:54,330
+La frecuencia corresponderá exactamente a la frecuencia de descarga resonante.
+
+140
+00:09:55,370 --> 00:09:57,370
+Ahora veremos qué tenemos en la ráfaga.
+
+141
+00:09:59,050 --> 00:10:00,490
+Esto es lo que tenemos en la ráfaga.
+
+142
+00:10:00,850 --> 00:10:05,750
+Ahora estoy mejorando un poco la sincronización.
+
+143
+00:10:06,110 --> 00:10:12,330
+Cambiaré al segundo canal en la base.
+
+144
+00:10:13,930 --> 00:10:16,550
+La señal ahí es más estable, sin el resistor.
+
+145
+00:10:16,610 --> 00:10:21,850
+El resistor también tiene su propia inductancia, así que ahí se forma un pico de fuerza contraelectromotriz.
+
+146
+00:10:24,110 --> 00:10:24,370
+Ahí.
+
+147
+00:10:27,670 --> 00:10:29,110
+Bueno ahí, una ráfaga.
+
+148
+00:10:29,870 --> 00:10:33,650
+Ahora miramos qué tenemos en la ráfaga directamente.
+
+149
+00:10:35,770 --> 00:10:39,230
+Así.
+
+150
+00:10:43,180 --> 00:10:43,180
+Así.
+
+151
+00:10:43,180 --> 00:10:43,200
+Ahí, así.
+
+152
+00:10:43,200 --> 00:10:54,980
+En la ráfaga podemos ajustar tanto el ciclo de trabajo del pulso como la frecuencia.
+
+153
+00:10:57,520 --> 00:11:01,200
+Es decir, en consecuencia, el número de pulsos en la ráfaga.
+
+154
+00:11:01,720 --> 00:11:07,460
+Además esta temporización también es ajustable.
+
+155
+00:11:13,160 --> 00:11:14,340
+Lo mostraré ahora.
+
+156
+00:11:16,880 --> 00:11:29,000
+Es decir, habiendo fijado la frecuencia directa y el ciclo de trabajo en la salida hacia el TL, también podemos ajustar la temporización de esta ráfaga.
+
+157
+00:11:29,560 --> 00:11:31,660
+Ahora la estoy reduciendo.
+
+158
+00:11:32,740 --> 00:11:34,800
+La reduje, ahí la aumenté.
+
+159
+00:11:38,690 --> 00:11:41,590
+Ahora lo haré una vez más para que sea visible.
+
+160
+00:11:41,910 --> 00:11:46,150
+Es decir, este es el máximo que fijé, y este es el mínimo.
+
+161
+00:11:46,250 --> 00:11:49,910
+Es decir, podemos ajustar la duración en la ráfaga.
+
+162
+00:11:54,620 --> 00:11:54,620
+Entonces.
+
+163
+00:11:56,940 --> 00:11:58,280
+Bueno, qué puedo decir.
+
+164
+00:11:58,420 --> 00:12:01,240
+Este resistor de aquí, este.
+
+165
+00:12:03,720 --> 00:12:13,620
+Puse menos de 4 kOhm, pero te aconsejo poner 4, para tener mayor capacidad de ajustar exactamente la duración de la ráfaga.
+
+166
+00:12:14,700 --> 00:12:20,420
+Yo ya lo estoy haciendo para un modelo específico, para frecuencias específicas, y puse 1 kOhm.
+
+167
+00:12:20,480 --> 00:12:21,800
+El mío está un poco limitado.
+
+168
+00:12:22,660 --> 00:12:24,660
+Te aconsejo poner 4.
+
+169
+00:12:25,200 --> 00:12:27,980
+Bueno, y en consecuencia, variarlo con este capacitor.
+
+170
+00:12:28,500 --> 00:12:30,560
+Ponerlo más pequeño significa que la ráfaga es más pequeña.
+
+171
+00:12:30,900 --> 00:12:32,740
+Ponerlo más grande en los parámetros.
+
+172
+00:12:33,360 --> 00:12:35,720
+Es decir, puedes jugar entre 20 y 100 nanofaradios.
+
+173
+00:12:37,600 --> 00:12:39,560
+Bueno, lo demás es todo estándar.
+
+174
+00:12:40,280 --> 00:12:41,520
+No hay nada nuevo aquí.
+
+175
+00:12:44,480 --> 00:12:45,220
+Bueno, eso es todo.
+
+176
+00:12:49,260 --> 00:12:50,960
+Entonces, y la explicación.
+
+177
+00:12:52,080 --> 00:12:53,160
+¿Cuál es la esencia, verdad?
+
+178
+00:12:53,280 --> 00:12:56,840
+Es decir, ¿cómo resulta que este esquema es un análogo?
+
+179
+00:12:57,840 --> 00:12:59,840
+Un análogo de este sistema Tesla.
+
+180
+00:13:00,260 --> 00:13:06,280
+Es decir, él, exactamente como este chisme, crea — exactamente fija la temporización.
+
+181
+00:13:06,340 --> 00:13:11,660
+Es decir, este fija la temporización de las ráfagas de pulsos.
+
+182
+00:13:12,760 --> 00:13:16,580
+Este chisme fija exactamente el número de ráfagas de pulsos.
+
+183
+00:13:16,780 --> 00:13:18,920
+Es decir, las ráfagas de pulsos.
+
+184
+00:13:19,520 --> 00:13:23,600
+Es decir, resulta un análogo completo.
+
+185
+00:13:24,720 --> 00:13:27,560
+Y además, más rígida y claramente controlable.
+
+186
+00:13:27,680 --> 00:13:29,380
+Con alimentación de menor tensión.
+
+187
+00:13:30,220 --> 00:13:32,020
+Exactamente para el sistema en sí.
+
+188
+00:13:32,220 --> 00:13:37,900
+Bueno, y este mecanismo en sí, esta esencia, hay que verlo como un circuito LC.
+
+189
+00:13:38,000 --> 00:13:39,580
+Es decir, un circuito LC en el accionamiento.
+
+190
+00:13:40,380 --> 00:13:48,220
+Por qué exactamente el sistema — la última vez que les estaba mostrando, exactamente las pruebas que hicimos, ¿por qué la eficiencia resultó prácticamente 1 a 300?
+
+191
+00:13:48,500 --> 00:13:54,700
+Porque lo llevamos a resonancia, y aquí tenemos la corriente en resonancia.
+
+192
+00:13:54,700 --> 00:13:59,540
+Sí, no podemos tomarlo si simplemente lo cargamos como un transformador.
+
+193
+00:13:59,620 --> 00:14:13,940
+Pero conduciendo directamente el circuito LC, dándole — es decir, cuando hemos acumulado en estos capacitores una potencia 300 veces superior a la potencia de entrada, los dejamos descargar a través de nuestro
+
+194
+00:14:13,940 --> 00:14:14,560
+descargador.
+
+195
+00:14:15,960 --> 00:14:20,220
+Así es como este sistema resultó con una eficiencia de 1 a 300.
+
+196
+00:14:21,020 --> 00:14:34,600
+Incluso en él, es decir, solo calculando correctamente el inductor, y calculando correctamente el secundario por tensión, digamos, para 220 voltios, que es lo que mostré la última vez, es decir, para 220 voltios solo
+
+197
+00:14:34,600 --> 00:14:39,060
+calculándolo, logramos la autoalimentación, porque tenemos eficiencia 1 a 300.
+
+198
+00:14:40,020 --> 00:14:43,800
+Hicimos la autoalimentación e iluminamos prácticamente 300 vatios.
+
+199
+00:14:44,800 --> 00:14:49,720
+Bueno, está claro que hay que tener en cuenta el proceso en sí que ocurre aquí, y sin él no hay manera.
+
+200
+00:14:50,800 --> 00:14:53,980
+Sobre este proceso hay ahora una pequeña explicación.
+
+201
+00:14:54,120 --> 00:14:58,920
+Brevemente, ya que muchos verán este video para entender.
+
+202
+00:15:01,160 --> 00:15:10,900
+Empecemos exactamente con esta patente de Tesla, ya que no hay una sola patente de Tesla donde encuentres un dispositivo para crear energía radiante.
+
+203
+00:15:12,300 --> 00:15:20,180
+De nuevo, entendiendo que la energía radiante se crea, no se toma del entorno, sí, es decir, esto ya no es el éter.
+
+204
+00:15:21,040 --> 00:15:30,380
+Bueno, y en general aconsejo olvidarse de tal cosa como la palabrería del éter, y pueden incluso olvidarse de tal concepto como la energía radiante.
+
+205
+00:15:30,500 --> 00:15:36,100
+Tesla la llamó energía radiante porque en su época no existía tal ciencia como la física de la radiación.
+
+206
+00:15:36,560 --> 00:15:38,060
+Todo es radiación.
+
+207
+00:15:38,780 --> 00:15:47,700
+Cada elemento, lo que sea que tomemos, atómico, molecular, tiene o puede tener un cierto fondo de radiación, sí.
+
+208
+00:15:48,820 --> 00:15:57,780
+Bueno, ahora, para entender, volvamos a este esquema probado.
+
+209
+00:15:58,620 --> 00:16:04,560
+Pero ahora vamos a elaborar directamente el dispositivo en sí para crear energía de radiación, o radiante.
+
+210
+00:16:04,560 --> 00:16:06,680
+Bueno, llamémosla radiante para simplificar.
+
+211
+00:16:07,860 --> 00:16:21,900
+Exactamente por qué recurrimos al sistema Tesla — porque este dispositivo, exactamente con el descargador, te permite polarizar muy bien el espacio y activar directamente este proceso atómico que ocurre aquí.
+
+212
+00:16:21,900 --> 00:16:22,520
+ocurre.
+
+213
+00:16:24,640 --> 00:16:36,080
+Bueno, y para entender por qué esto no fue creado en los laboratorios modernos, estos modernos, creado, creado hace mucho — pero ahí trabajan con materiales muy radiactivos.
+
+214
+00:16:37,880 --> 00:16:47,320
+Espero que haya otro video con este dispositivo funcionando, directamente con instrumentos midiendo la radiación.
+
+215
+00:16:48,140 --> 00:16:56,720
+Y en ese video habrá una explicación de qué es la radiación peligrosa, qué es la radiación pacífica.
+
+216
+00:16:57,000 --> 00:17:03,680
+Es decir, un entendimiento de esto — que la radiación puede ser incontrolada, y puede ser controlada.
+
+217
+00:17:03,780 --> 00:17:08,560
+Lo que exactamente prueban los primeros dispositivos de Nikola Tesla.
+
+218
+00:17:09,500 --> 00:17:13,360
+Que cualquier dispositivo de energía de radiación puede ser controlable.
+
+219
+00:17:13,500 --> 00:17:17,400
+Y además su fondo y dirección, eso también puede ser controlable.
+
+220
+00:17:17,680 --> 00:17:19,740
+Y eso es lo que distingue a todos estos dispositivos.
+
+221
+00:17:22,560 --> 00:17:23,120
+Ahí.
+
+222
+00:17:23,460 --> 00:17:28,620
+Y a todos los demás les aconsejo olvidarse de tal entendimiento como el éter y los disparates.
+
+223
+00:17:30,800 --> 00:17:36,180
+Incluso de tal entendimiento como la energía radiante.
+
+224
+00:17:36,300 --> 00:17:38,580
+Todo es energía de radiación.
+
+225
+00:17:39,620 --> 00:17:43,000
+Y son todas estructuras atómicas y moleculares.
+
+226
+00:17:43,780 --> 00:17:44,660
+Con las que trabajamos.

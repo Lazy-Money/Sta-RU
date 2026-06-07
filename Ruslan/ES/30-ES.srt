@@ -1,0 +1,811 @@
+1
+00:00:01,580 --> 00:00:02,940
+Hola a todos una vez más.
+
+2
+00:00:03,260 --> 00:00:05,500
+Video número 2 sobre el ajuste.
+
+3
+00:00:05,540 --> 00:00:14,940
+Remodelé un poco mi sistema Tesla, y todos los drivers que están aquí en este equipo, que ya mostré.
+
+4
+00:00:15,540 --> 00:00:24,820
+Para conseguir una buena ganancia, primero que nada usé al final un convertidor de 100 voltios.
+
+5
+00:00:24,820 --> 00:00:26,760
+Aquí está el convertidor de 100 voltios.
+
+6
+00:00:26,880 --> 00:00:28,480
+Es de este tipo, bastante simple.
+
+7
+00:00:28,960 --> 00:00:30,560
+Aquí los LEDs brillan un poco.
+
+8
+00:00:30,660 --> 00:00:34,140
+Bueno, LEDs indicadores, la placa de alimentación está aquí.
+
+9
+00:00:35,240 --> 00:00:38,780
+Bien, la misma placa de ráfagas de pulsos en tres chips.
+
+10
+00:00:39,620 --> 00:00:41,380
+Bueno, aquí están los reguladores de voltaje.
+
+11
+00:00:42,140 --> 00:00:43,460
+Y la parte de alto voltaje.
+
+12
+00:00:43,580 --> 00:00:48,600
+Lo único que reemplazé fue meter un transistor de alto voltaje aquí, en lugar del que había antes.
+
+13
+00:00:48,600 --> 00:00:51,920
+Ahora hay un nombre bastante largo aquí.
+
+14
+00:00:52,060 --> 00:00:53,120
+No lo recuerdo de memoria ahora.
+
+15
+00:00:53,300 --> 00:00:56,900
+Bueno, esto es el ajuste del inductor, porque es muy importante.
+
+16
+00:00:57,660 --> 00:01:00,100
+Bueno, ahora se le alimentan 110 voltios.
+
+17
+00:01:00,180 --> 00:01:01,360
+Aquí el LED está encendido.
+
+18
+00:01:01,920 --> 00:01:05,940
+Bueno, este LED nos indica la presencia de un fusible quemado.
+
+19
+00:01:05,940 --> 00:01:09,300
+Aquí igual, un fusible quemado.
+
+20
+00:01:09,340 --> 00:01:17,840
+Puse un fusible, ya que realmente no quiero soldar protección en el sistema, así que tengo cuatro fusibles aquí en las placas.
+
+21
+00:01:19,800 --> 00:01:21,860
+Bueno, el sistema está ajustado.
+
+22
+00:01:22,020 --> 00:01:22,620
+Y aquí está la Tesla.
+
+23
+00:01:23,020 --> 00:01:29,780
+La Tesla, este es el ajuste inicial, lo que necesitamos conseguir para que todo funcione.
+
+24
+00:01:31,100 --> 00:01:32,520
+El proceso ocurrió.
+
+25
+00:01:32,760 --> 00:01:36,980
+No olvides que necesitamos una descarga estática.
+
+26
+00:01:38,140 --> 00:01:40,940
+Y ahora voy a mostrar exactamente esta descarga estática.
+
+27
+00:01:41,080 --> 00:01:42,060
+Encendemos la Tesla.
+
+28
+00:01:43,160 --> 00:01:44,440
+El sistema comenzó a funcionar.
+
+29
+00:01:44,500 --> 00:01:46,580
+Inmediatamente escuchan que algo empezó a crujir por todas partes.
+
+30
+00:01:47,780 --> 00:01:56,040
+La Tesla está muy cerca del rack y los focos, así que hay algunas pérdidas aquí y es difícil de ajustar.
+
+31
+00:01:56,040 --> 00:01:59,460
+Tomamos el extremo de la toma de tierra y lo acercamos.
+
+32
+00:01:59,600 --> 00:02:00,800
+Miramos qué pasa.
+
+33
+00:02:03,920 --> 00:02:09,240
+La chispa es bastante... una chispa blanca-blanca, larga.
+
+34
+00:02:11,600 --> 00:02:14,580
+Bastante larga, como unos 10 centímetros.
+
+35
+00:02:14,940 --> 00:02:16,840
+Rompe sin dejar rastros.
+
+36
+00:02:18,340 --> 00:02:20,180
+Muy fuerte, muy fuerte.
+
+37
+00:02:20,200 --> 00:02:22,060
+Todo este equipo se puede ajustar.
+
+38
+00:02:22,140 --> 00:02:22,880
+Voy a mostrar cómo ahora.
+
+39
+00:02:24,580 --> 00:02:26,520
+La cámara es difícil de sostener.
+
+40
+00:02:28,300 --> 00:02:33,520
+Y en general, sinceramente, realmente no querría acercar la cámara a este equipo.
+
+41
+00:02:33,580 --> 00:02:34,520
+Ya quemé una.
+
+42
+00:02:35,220 --> 00:02:36,380
+Aquí funciona.
+
+43
+00:03:15,000 --> 00:03:16,900
+Vemos que es una chispa blanca.
+
+44
+00:03:17,380 --> 00:03:19,320
+A pesar de eso, aquí se estira.
+
+45
+00:03:22,860 --> 00:03:24,700
+Y el consumo, bueno, miramos.
+
+46
+00:03:25,240 --> 00:03:27,540
+El consumo de la Tesla, ahí está, es menor.
+
+47
+00:03:27,780 --> 00:03:31,180
+Está como en 600 miliamperios.
+
+48
+00:03:31,920 --> 00:03:40,400
+No aumenta más, a pesar de que con el esquema que mostré en el primer video inicial, era peor allí.
+
+49
+00:03:40,400 --> 00:03:41,280
+Aquí está.
+
+50
+00:03:41,580 --> 00:03:43,160
+Lo acerco.
+
+51
+00:03:47,920 --> 00:03:52,520
+Durante estos cortocircuitos cortos la corriente aumenta.
+
+52
+00:03:58,270 --> 00:04:00,010
+Pero no mucho, como vemos.
+
+53
+00:04:00,010 --> 00:04:01,910
+Pero el oscilograma.
+
+54
+00:04:02,130 --> 00:04:04,170
+Es simplemente una sonda que está cerca.
+
+55
+00:04:04,510 --> 00:04:06,550
+Es difícil determinar algo ahora mismo.
+
+56
+00:04:07,130 --> 00:04:08,490
+Un poco sin sentido.
+
+57
+00:04:09,030 --> 00:04:10,050
+No es así.
+
+58
+00:04:10,350 --> 00:04:12,170
+Hay que acercarlo un poco más.
+
+59
+00:04:18,870 --> 00:04:21,230
+Voltaje de alimentación 24 voltios.
+
+60
+00:04:22,190 --> 00:04:24,570
+Y, como vemos, la corriente de consumo es la mitad.
+
+61
+00:04:24,690 --> 00:04:26,150
+Bueno, o sea, más o menos 600 miliamperios.
+
+62
+00:04:27,150 --> 00:04:35,830
+Mi fusible en la placa de entrada es de 4,2 amperios cada uno.
+
+63
+00:04:36,310 --> 00:04:40,930
+Aquí se fija un fusible de protección de 600 miliamperios.
+
+64
+00:04:53,240 --> 00:04:57,580
+La alimentación de pulsos, las ráfagas de pulsos, se pueden ajustar como quieras.
+
+65
+00:04:57,580 --> 00:04:59,500
+Aquí voy a mostrarles ahora.
+
+66
+00:05:00,080 --> 00:05:07,040
+Así nunca vas a conseguir un ajuste de frecuencia si tu Tesla trabaja solo en modo lineal.
+
+67
+00:05:07,300 --> 00:05:09,220
+Constantemente tendrás que volver a ajustar la resonancia.
+
+68
+00:05:09,480 --> 00:05:12,720
+Y no vas a conseguir este tipo de cosa.
+
+69
+00:05:39,610 --> 00:05:43,010
+Aquí está ese tipo de chispa blanca, va un arco blanco.
+
+70
+00:05:43,190 --> 00:05:44,690
+Y así es como la Tesla trabaja limpiamente.
+
+71
+00:05:48,180 --> 00:05:49,600
+No necesitamos más.
+
+72
+00:05:49,780 --> 00:05:52,460
+Así que todo este equipo se ajusta fácilmente.
+
+73
+00:05:54,310 --> 00:05:55,520
+Voy a mostrar ahora.
+
+74
+00:05:56,200 --> 00:05:56,900
+Aquí, miren.
+
+75
+00:05:59,240 --> 00:06:04,440
+Con esta resistencia cambiamos la frecuencia de repetición de pulsos.
+
+76
+00:06:32,720 --> 00:06:36,150
+Aquí alrededor de 60 hertz, más o menos.
+
+77
+00:06:38,550 --> 00:06:44,940
+En algún lugar quizás hasta 46 hertz de frecuencia de pulsos.
+
+78
+00:06:45,900 --> 00:06:48,700
+Así es como funciona en resonancia.
+
+79
+00:06:48,840 --> 00:06:51,200
+Básicamente puedes conseguir un efecto aún mejor.
+
+80
+00:06:58,700 --> 00:07:03,580
+Ahora voy a apagar la luz para mostrarlo aún más bonito.
+
+81
+00:07:30,180 --> 00:07:32,420
+Necesito un soporte para la cámara.
+
+82
+00:09:07,690 --> 00:09:13,250
+Aquí está el tipo de belleza que conseguimos.
+
+83
+00:09:17,790 --> 00:09:19,470
+Pero no nos pongamos locos.
+
+84
+00:09:25,410 --> 00:09:30,290
+Ya puedes sentir cómo se quema el aislamiento del cable en el extremo.
+
+85
+00:09:31,070 --> 00:09:34,190
+Digo, puedo subir bastante la frecuencia.
+
+86
+00:09:37,090 --> 00:09:39,270
+El efecto puede ser... potente.
+
+87
+00:09:40,370 --> 00:09:44,890
+No sé si me pudieron escuchar o no, porque esos sonidos son potentes.
+
+88
+00:09:46,370 --> 00:09:47,730
+Todo está chispeando como loco.
+
+89
+00:09:48,640 --> 00:09:50,950
+Sobre el transistor.
+
+90
+00:09:52,670 --> 00:09:56,850
+Por cierto, todos mis dedos se excitan inmediatamente.
+
+91
+00:09:58,370 --> 00:10:02,150
+El transistor está completamente frío, a pesar de que el disipador lo enfría.
+
+92
+00:10:03,490 --> 00:10:04,250
+Y el diodo también.
+
+93
+00:10:04,250 --> 00:10:07,250
+Carajo, el voltaje aquí es alto.
+
+94
+00:10:08,170 --> 00:10:09,630
+Sacude con corriente de inmediato.
+
+95
+00:10:10,030 --> 00:10:10,550
+El chisme ese.
+
+96
+00:10:11,130 --> 00:10:12,390
+Bueno, ese es el tipo de sistema.
+
+97
+00:10:13,110 --> 00:10:16,770
+Está en funcionamiento ahora, está trabajando completamente.
+
+98
+00:10:26,760 --> 00:10:31,940
+Esto es lo que tienes que conseguir de una Tesla para obtener energía gratis.
+
+99
+00:10:32,060 --> 00:10:37,000
+Porque en este caso hay polarización de todos los espines y demás.
+
+100
+00:10:38,140 --> 00:10:49,020
+En todo tipo de Kachers, generadores que manejan esta Tesla en modo lineal, todo esto no va a funcionar, así que puedes olvidarte completamente de eso.
+
+101
+00:10:49,140 --> 00:10:50,920
+De toda esta, como dicen, estupidez.
+
+102
+00:10:51,800 --> 00:10:56,640
+Que quizás alguien te está vendiendo y diciendo que todo va a funcionar.
+
+103
+00:10:57,620 --> 00:10:59,560
+Va a ser bastante difícil con un Kacher.
+
+104
+00:10:59,740 --> 00:11:01,460
+Intenté arrancarlo con un Kacher.
+
+105
+00:11:07,140 --> 00:11:10,920
+La Tesla cruje, pero desafortunadamente la mía se cayó.
+
+106
+00:11:11,100 --> 00:11:14,000
+Rompí la Tesla hoy, se me cayó al suelo.
+
+107
+00:11:14,080 --> 00:11:17,300
+Aquí ya tengo una ruptura, así que voy a tener que rebobinarla.
+
+108
+00:11:17,420 --> 00:11:18,760
+Ya preparé el tubo.
+
+109
+00:11:19,400 --> 00:11:20,720
+Aquí tengo una máquina especial.
+
+110
+00:11:21,680 --> 00:11:23,520
+La voy a bobinar hoy más tarde.
+
+111
+00:11:24,860 --> 00:11:25,680
+Bueno, qué más.
+
+112
+00:11:26,380 --> 00:11:29,080
+Ahí, en resumen, adelante, lo que les mostré.
+
+113
+00:11:29,760 --> 00:11:33,560
+Una vez más digo, el consumo creció un poquito por la frecuencia.
+
+114
+00:11:33,700 --> 00:11:35,880
+Pero todo esto se puede ajustar, lo digo de nuevo.
+
+115
+00:11:37,000 --> 00:11:38,140
+Lo principal, ¿saben qué?
+
+116
+00:11:38,280 --> 00:11:42,000
+Los condensadores resonantes en este inductor.
+
+117
+00:11:43,080 --> 00:11:45,960
+Hay un pulso bastante fuerte aquí en este punto ahora.
+
+118
+00:11:46,820 --> 00:11:50,640
+O sea, el voltaje aquí a la salida es una barbaridad.
+
+119
+00:11:50,860 --> 00:12:00,720
+Porque, bueno, al fin y al cabo, vi que una persona escribió allí, preguntando, de dónde a 24 voltios, de dónde salen 650 voltios aquí.
+
+120
+00:12:02,020 --> 00:12:06,800
+Toco, bueno, el inductor, la bobina, este voltaje sale.
+
+121
+00:12:07,300 --> 00:12:09,200
+Y pensé, voy a comparar esto con la contra-FEM.
+
+122
+00:12:10,260 --> 00:12:14,160
+La contra-FEM no tiene absolutamente nada parecido a esto aquí.
+
+123
+00:12:14,200 --> 00:12:16,860
+Aquí es exactamente un circuito LC lo que sale.
+
+124
+00:12:18,440 --> 00:12:22,660
+Y el pulso va desde el transistor a través de este driver.
+
+125
+00:12:22,960 --> 00:12:25,140
+O sea, voy a mostrar más de cerca, realmente debería apagarlo.
+
+126
+00:12:25,680 --> 00:12:30,000
+Al carajo, si no probablemente afecta la cámara de alguna manera y quizás algo no quede grabado.
+
+127
+00:12:31,380 --> 00:12:36,240
+Bueno, aquí estos condensadores, seleccioné estos soviéticos.
+
+128
+00:12:36,240 --> 00:12:40,600
+En general, básicamente, compré un paquete entero y estuve probando con ellos.
+
+129
+00:12:40,740 --> 00:12:44,040
+Allí ya tengo un condensador así de 2 kV.
+
+130
+00:12:45,000 --> 00:12:56,240
+Y en general es preferible, bueno, 2 kV y 2 nF, tienes que empezar con esto y definitivamente hacer resonancia para el inductor.
+
+131
+00:12:56,360 --> 00:12:57,700
+Es muy importante aquí.
+
+132
+00:12:58,100 --> 00:13:00,740
+Sin esta resonancia el sistema no va a funcionar.
+
+133
+00:13:01,560 --> 00:13:05,940
+O, muy probablemente, todo se va a descargar en el transistor.
+
+134
+00:13:06,420 --> 00:13:10,700
+O sea, la idea del feedback fuera de la resonancia del circuito.
+
+135
+00:13:10,920 --> 00:13:19,780
+Básicamente va a llevar todo el proceso de trabajo a estos diodos de protección y al transistor.
+
+136
+00:13:20,460 --> 00:13:21,960
+Bueno, voy a mostrar un poco.
+
+137
+00:13:22,300 --> 00:13:23,980
+El esquema estaba por aquí en algún lado.
+
+138
+00:13:24,440 --> 00:13:28,160
+Un poco de desorden, ya que estoy trabajando al fin y al cabo.
+
+139
+00:13:28,400 --> 00:13:30,080
+Bueno, ¿dónde está nuestro esquema?
+
+140
+00:13:30,740 --> 00:13:32,860
+Esquema, esquema, esquema.
+
+141
+00:13:34,640 --> 00:13:35,920
+No, eso no es.
+
+142
+00:13:35,980 --> 00:13:37,040
+Ese no es el esquema correcto.
+
+143
+00:13:37,400 --> 00:13:38,840
+Bueno, el esquema desapareció en algún lado.
+
+144
+00:13:39,760 --> 00:13:40,260
+Desafortunadamente.
+
+145
+00:13:41,660 --> 00:13:42,380
+Desapareció.
+
+146
+00:13:43,380 --> 00:13:44,940
+Fuera de la vista.
+
+147
+00:13:46,200 --> 00:13:46,920
+No lo veo.
+
+148
+00:13:48,480 --> 00:13:49,820
+No tengo el esquema.
+
+149
+00:13:50,960 --> 00:13:52,220
+A dónde fue, no está claro.
+
+150
+00:13:53,520 --> 00:13:54,240
+Bueno.
+
+151
+00:13:55,760 --> 00:13:56,220
+Okay.
+
+152
+00:13:56,620 --> 00:13:59,280
+Esto, por cierto, es donde puse un transistor de alto voltaje.
+
+153
+00:13:59,280 --> 00:14:02,720
+Y de inmediato lo quemé, ya que no pudo aguantar la corriente.
+
+154
+00:14:03,580 --> 00:14:04,060
+Bueno, no importa.
+
+155
+00:14:04,560 --> 00:14:04,580
+Bueno.
+
+156
+00:14:05,920 --> 00:14:08,220
+Lo que quisiera...
+
+157
+00:14:08,220 --> 00:14:10,640
+Mierda, quisiera mostrarte con el esquema.
+
+158
+00:14:10,720 --> 00:14:11,420
+Pero no hay esquema.
+
+159
+00:14:11,460 --> 00:14:11,740
+No sé.
+
+160
+00:14:12,400 --> 00:14:14,060
+Ahora como que...
+
+161
+00:14:14,060 --> 00:14:14,540
+Bueno, no es el punto.
+
+162
+00:14:14,620 --> 00:14:15,680
+Luego, en el próximo video.
+
+163
+00:14:16,220 --> 00:14:19,720
+Bueno, seleccionamos los condensadores resonantes.
+
+164
+00:14:19,980 --> 00:14:22,280
+O simplemente juntamos un montón.
+
+165
+00:14:23,200 --> 00:14:24,780
+Luego miramos cómo funciona.
+
+166
+00:14:24,900 --> 00:14:28,900
+Y ponemos una de las capacitancias que resultó aquí.
+
+167
+00:14:29,600 --> 00:14:30,640
+Durante el cálculo.
+
+168
+00:14:31,500 --> 00:14:32,420
+Bueno, el inductor.
+
+169
+00:14:32,600 --> 00:14:34,620
+Preferiblemente, claro, bobinarlo con cable grueso.
+
+170
+00:14:34,740 --> 00:14:35,940
+El mío lo bobiné con grueso.
+
+171
+00:14:36,620 --> 00:14:37,440
+Bueno, ¿qué más?
+
+172
+00:14:37,580 --> 00:14:38,420
+Bueno, todo está apagado.
+
+173
+00:14:38,860 --> 00:14:39,880
+Puedes agarrarlo con las manos.
+
+174
+00:14:41,040 --> 00:14:42,440
+Si no, todo esto muerde.
+
+175
+00:14:42,580 --> 00:14:42,920
+Como loco.
+
+176
+00:14:43,340 --> 00:14:47,040
+Bueno, para sintonizar la bobina a resonancia, basta...
+
+177
+00:14:47,040 --> 00:14:50,240
+Aquí hay un chip 7414.
+
+178
+00:14:50,360 --> 00:14:51,140
+Lo sacamos.
+
+179
+00:14:51,980 --> 00:14:53,260
+La TL sigue funcionando.
+
+180
+00:14:53,380 --> 00:14:55,260
+Aquí hay una TL494.
+
+181
+00:14:55,360 --> 00:14:55,660
+Aquí está.
+
+182
+00:14:55,880 --> 00:14:57,360
+Se ajusta con ella.
+
+183
+00:14:57,360 --> 00:14:59,600
+Bueno, simplemente la sacamos.
+
+184
+00:15:00,500 --> 00:15:04,440
+Giramos el ciclo de trabajo y todo al modo más mínimo.
+
+185
+00:15:05,120 --> 00:15:06,240
+Y empezamos a ajustar.
+
+186
+00:15:06,400 --> 00:15:07,400
+Buscamos la frecuencia.
+
+187
+00:15:09,090 --> 00:15:11,140
+Preferiblemente, claro, calcular la Tesla de entrada.
+
+188
+00:15:11,720 --> 00:15:14,100
+Hay un programita especial para calcular Teslas.
+
+189
+00:15:14,940 --> 00:15:17,520
+Y muestra todo bastante correctamente y con precisión.
+
+190
+00:15:17,680 --> 00:15:19,100
+Qué Tesla, qué secundario.
+
+191
+00:15:19,420 --> 00:15:20,940
+Todo esto hay que calcularlo.
+
+192
+00:15:21,380 --> 00:15:24,540
+Si no calculas, la bobina va a trabajar fuera de resonancia.
+
+193
+00:15:24,620 --> 00:15:26,480
+Vas a quemar los transistores de salida.
+
+194
+00:15:27,360 --> 00:15:28,480
+Que están aquí.
+
+195
+00:15:29,080 --> 00:15:29,720
+En el disipador.
+
+196
+00:15:30,020 --> 00:15:31,020
+Esto es muy importante.
+
+197
+00:15:31,760 --> 00:15:34,400
+El esquema es básicamente muy similar a...
+
+198
+00:15:34,880 --> 00:15:36,320
+Lo remodelé un poco.
+
+199
+00:15:36,780 --> 00:15:40,800
+Pero el esquema es similar al que Akula demostró en el video.
+
+200
+00:15:41,160 --> 00:15:42,320
+El interruptor electrónico.
+
+201
+00:15:42,440 --> 00:15:43,980
+Este es básicamente el mismo.
+
+202
+00:15:44,860 --> 00:15:46,060
+El interruptor electrónico.
+
+203
+00:15:46,260 --> 00:15:48,340
+Bueno, mi video se está acabando el tiempo.

@@ -1,0 +1,811 @@
+1
+00:00:01,580 --> 00:00:02,940
+Hallo an alle, nochmal.
+
+2
+00:00:03,260 --> 00:00:05,500
+Video Nummer 2 zum Thema Abstimmung.
+
+3
+00:00:05,540 --> 00:00:14,940
+Ich hab mein Tesla-System ein bisschen überarbeitet, und alle Treiber, die hier in diesem Aufbau sind, den ich schon gezeigt hab.
+
+4
+00:00:15,540 --> 00:00:24,820
+Um eine gute Verstärkung zu bekommen, hab ich vor allem doch einen 100-Volt-Konverter verwendet.
+
+5
+00:00:24,820 --> 00:00:26,760
+Hier ist der 100-Volt-Konverter.
+
+6
+00:00:26,880 --> 00:00:28,480
+Der ist so, ziemlich einfach.
+
+7
+00:00:28,960 --> 00:00:30,560
+Hier leuchten die LEDs ein bisschen.
+
+8
+00:00:30,660 --> 00:00:34,140
+Also, Indikator-LEDs, das Netzteil-Board ist hier.
+
+9
+00:00:35,240 --> 00:00:38,780
+Na, dasselbe Pulsburst-Board mit drei Chips.
+
+10
+00:00:39,620 --> 00:00:41,380
+Also, hier sind bei uns die Spannungsregler.
+
+11
+00:00:42,140 --> 00:00:43,460
+Und der Hochspannungsteil.
+
+12
+00:00:43,580 --> 00:00:48,600
+Das Einzige, was ich getauscht hab, ist ein Hochspannungstransistor hier reingeknallt, statt dem, der vorher drin war.
+
+13
+00:00:48,600 --> 00:00:51,920
+Jetzt steht hier ein ziemlich langer Name.
+
+14
+00:00:52,060 --> 00:00:53,120
+Den kenn ich gerade nicht auswendig.
+
+15
+00:00:53,300 --> 00:00:56,900
+Also, das ist die Induktor-Anpassung, weil das sehr wichtig ist.
+
+16
+00:00:57,660 --> 00:01:00,100
+Also, jetzt werden 110 Volt daran angelegt.
+
+17
+00:01:00,180 --> 00:01:01,360
+Hier ist die LED an.
+
+18
+00:01:01,920 --> 00:01:05,940
+Also, diese LED zeigt uns das Vorhandensein einer durchgebrannten Sicherung.
+
+19
+00:01:05,940 --> 00:01:09,300
+Hier dasselbe, eine durchgebrannte Sicherung.
+
+20
+00:01:09,340 --> 00:01:17,840
+Ich hab eine Sicherung eingebaut, da ich keinen Schutz ins System einlöten will, also hab ich vier Sicherungen hier auf den Boards.
+
+21
+00:01:19,800 --> 00:01:21,860
+Also, das System ist eingestellt.
+
+22
+00:01:22,020 --> 00:01:22,620
+Und hier ist die Tesla.
+
+23
+00:01:23,020 --> 00:01:29,780
+Die Tesla, das ist die erste Grundabstimmung, was wir überhaupt brauchen, damit irgendwas passiert.
+
+24
+00:01:31,100 --> 00:01:32,520
+Der Prozess hat stattgefunden.
+
+25
+00:01:32,760 --> 00:01:36,980
+Vergiss nicht, dass wir eine statische Entladung brauchen.
+
+26
+00:01:38,140 --> 00:01:40,940
+Und jetzt zeig ich genau diese statische Entladung.
+
+27
+00:01:41,080 --> 00:01:42,060
+Wir schalten die Tesla ein.
+
+28
+00:01:43,160 --> 00:01:44,440
+Das System hat angefangen zu arbeiten.
+
+29
+00:01:44,500 --> 00:01:46,580
+Man hört sofort, dass irgendwas überall anfängt zu knacken.
+
+30
+00:01:47,780 --> 00:01:56,040
+Die Tesla steht sehr nah am Rack und den Lampen, also gibt's hier einige Verluste und es ist schwer abzustimmen.
+
+31
+00:01:56,040 --> 00:01:59,460
+Wir nehmen das Ende der Erdung und bringen es näher ran.
+
+32
+00:01:59,600 --> 00:02:00,800
+Wir schauen, was passiert.
+
+33
+00:02:03,920 --> 00:02:09,240
+Der Funke ist ziemlich... ein weißer, weißer Funke, langer.
+
+34
+00:02:11,600 --> 00:02:14,580
+Ziemlich lang, irgendwo vielleicht 10 Zentimeter.
+
+35
+00:02:14,940 --> 00:02:16,840
+Er schlägt durch ohne Spuren zu hinterlassen.
+
+36
+00:02:18,340 --> 00:02:20,180
+Sehr stark, sehr stark.
+
+37
+00:02:20,200 --> 00:02:22,060
+Dieser ganze Aufbau kann eingestellt werden.
+
+38
+00:02:22,140 --> 00:02:22,880
+Ich zeig jetzt wie.
+
+39
+00:02:24,580 --> 00:02:26,520
+Die Kamera ist umständlich zu halten.
+
+40
+00:02:28,300 --> 00:02:33,520
+Und generell, ehrlich gesagt, würde ich die Kamera wirklich nicht gerne an diesen Aufbau ranbringen.
+
+41
+00:02:33,580 --> 00:02:34,520
+Eine hab ich schon abgefackelt.
+
+42
+00:02:35,220 --> 00:02:36,380
+Hier läuft's.
+
+43
+00:03:15,000 --> 00:03:16,900
+Wir sehen, dass es ein weißer Funke ist.
+
+44
+00:03:17,380 --> 00:03:19,320
+Trotzdem zieht er sich hier.
+
+45
+00:03:22,860 --> 00:03:24,700
+Und der Verbrauch, also, wir schauen.
+
+46
+00:03:25,240 --> 00:03:27,540
+Der Verbrauch der Tesla, da, der ist geringer.
+
+47
+00:03:27,780 --> 00:03:31,180
+Irgendwo um die 600 Milliampere.
+
+48
+00:03:31,920 --> 00:03:40,400
+Er steigt nicht weiter, obwohl es bei der Schaltung, die ich im ersten Anfangsvideo gezeigt hab, dort schlechter war.
+
+49
+00:03:40,400 --> 00:03:41,280
+Da ist er.
+
+50
+00:03:41,580 --> 00:03:43,160
+Ich bring ihn näher ran.
+
+51
+00:03:47,920 --> 00:03:52,520
+Bei solchen Kurzschlüssen steigt die Stromstärke.
+
+52
+00:03:58,270 --> 00:04:00,010
+Aber nicht viel, wie wir sehen.
+
+53
+00:04:00,010 --> 00:04:01,910
+Aber das Oszillogramm.
+
+54
+00:04:02,130 --> 00:04:04,170
+Das ist einfach eine Sonde, die daneben liegt.
+
+55
+00:04:04,510 --> 00:04:06,550
+Gerade ist es schwer, irgendetwas zu bestimmen.
+
+56
+00:04:07,130 --> 00:04:08,490
+Ein bisschen sinnlos.
+
+57
+00:04:09,030 --> 00:04:10,050
+So ist das nicht.
+
+58
+00:04:10,350 --> 00:04:12,170
+Muss ein bisschen näher ranziehen.
+
+59
+00:04:18,870 --> 00:04:21,230
+Versorgungsspannung 24 Volt.
+
+60
+00:04:22,190 --> 00:04:24,570
+Und, wie wir sehen, ist die Stromaufnahme die Hälfte.
+
+61
+00:04:24,690 --> 00:04:26,150
+Na ja, ich mein, ungefähr 600 Milliampere.
+
+62
+00:04:27,150 --> 00:04:35,830
+Meine Sicherung auf dem Eingangsboard ist 4,2 Ampere pro Stück.
+
+63
+00:04:36,310 --> 00:04:40,930
+Hier ist eine Schutzsicherung von 600 Milliampere eingestellt.
+
+64
+00:04:53,240 --> 00:04:57,580
+Die Pulseinspeisung, die Pulsbursts, können beliebig eingestellt werden.
+
+65
+00:04:57,580 --> 00:04:59,500
+Hier zeig ich euch das jetzt.
+
+66
+00:05:00,080 --> 00:05:07,040
+So wirst du nie eine Frequenzeinstellung hinbekommen, wenn deine Tesla nur im linearen Betrieb läuft.
+
+67
+00:05:07,300 --> 00:05:09,220
+Du musst ständig die Resonanz neu abstimmen.
+
+68
+00:05:09,480 --> 00:05:12,720
+Und das hier wirst du nicht hinbekommen.
+
+69
+00:05:39,610 --> 00:05:43,010
+Hier ist so ein weißer Funke, ein weißer Lichtbogen zieht sich.
+
+70
+00:05:43,190 --> 00:05:44,690
+Und so arbeitet die Tesla sauber.
+
+71
+00:05:48,180 --> 00:05:49,600
+Mehr brauchen wir nicht.
+
+72
+00:05:49,780 --> 00:05:52,460
+Also dieser ganze Aufbau lässt sich einfach einstellen.
+
+73
+00:05:54,310 --> 00:05:55,520
+Ich zeig's jetzt.
+
+74
+00:05:56,200 --> 00:05:56,900
+Hier, schau.
+
+75
+00:05:59,240 --> 00:06:04,440
+Mit diesem Widerstand ändern wir die Pulswiederholfrequenz.
+
+76
+00:06:32,720 --> 00:06:36,150
+Hier irgendwo um 60 Hertz, grob.
+
+77
+00:06:38,550 --> 00:06:44,940
+Irgendwo vielleicht sogar 46 Hertz Pulsfrequenz.
+
+78
+00:06:45,900 --> 00:06:48,700
+So arbeitet das in Resonanz.
+
+79
+00:06:48,840 --> 00:06:51,200
+Grundsätzlich kann man einen noch besseren Effekt erzielen.
+
+80
+00:06:58,700 --> 00:07:03,580
+Jetzt schalte ich das Licht aus, um es noch schöner zu zeigen.
+
+81
+00:07:30,180 --> 00:07:32,420
+Ich brauch ein Stativ für die Kamera.
+
+82
+00:09:07,690 --> 00:09:13,250
+So eine Schönheit kriegen wir hier raus.
+
+83
+00:09:17,790 --> 00:09:19,470
+Aber lasst uns nicht wild werden.
+
+84
+00:09:25,410 --> 00:09:30,290
+Man kann schon die brennende Isolation des Drahts am Ende riechen.
+
+85
+00:09:31,070 --> 00:09:34,190
+Ich sag, ich kann die Frequenz ziemlich weit raufdrehen.
+
+86
+00:09:37,090 --> 00:09:39,270
+Der Effekt kann... heftig sein.
+
+87
+00:09:40,370 --> 00:09:44,890
+Keine Ahnung ob ihr mich gehört habt oder nicht, weil solche Geräusche, heftig.
+
+88
+00:09:46,370 --> 00:09:47,730
+Alles sprüht wie verrückt.
+
+89
+00:09:48,640 --> 00:09:50,950
+Zum Transistor.
+
+90
+00:09:52,670 --> 00:09:56,850
+Übrigens, alle meine Finger sind sofort aufgedreht.
+
+91
+00:09:58,370 --> 00:10:02,150
+Der Transistor ist komplett kalt, obwohl der Kühlkörper ihn kühlt.
+
+92
+00:10:03,490 --> 00:10:04,250
+Und die Diode auch.
+
+93
+00:10:04,250 --> 00:10:07,250
+Verdammt, die Spannung hier ist hoch.
+
+94
+00:10:08,170 --> 00:10:09,630
+Gibt sofort einen Stromschlag.
+
+95
+00:10:10,030 --> 00:10:10,550
+Das beschissene Ding.
+
+96
+00:10:11,130 --> 00:10:12,390
+Na ja, so ein System ist das.
+
+97
+00:10:13,110 --> 00:10:16,770
+Es ist jetzt im Betrieb, läuft voll.
+
+98
+00:10:26,760 --> 00:10:31,940
+Das musst du aus einer Tesla rausholen, um freie Energie zu bekommen.
+
+99
+00:10:32,060 --> 00:10:37,000
+Weil es in diesem Fall eine Polarisierung aller Spins und so weiter gibt.
+
+100
+00:10:38,140 --> 00:10:49,020
+Bei allen möglichen Kachers, Generatoren, die diese Tesla im linearen Betrieb antreiben, funktioniert das alles nicht, also kannst du das vollständig vergessen.
+
+101
+00:10:49,140 --> 00:10:50,920
+Diesen ganzen, wie man sagt, Blödsinn.
+
+102
+00:10:51,800 --> 00:10:56,640
+Den dir vielleicht jemand verkauft und sagt, alles wird funktionieren.
+
+103
+00:10:57,620 --> 00:10:59,560
+Auf einem Kacher wird's ziemlich schwer sein.
+
+104
+00:10:59,740 --> 00:11:01,460
+Ich hab versucht, es auf einem Kacher zu starten.
+
+105
+00:11:07,140 --> 00:11:10,920
+Die Tesla knackt, aber leider ist meine abgefallen.
+
+106
+00:11:11,100 --> 00:11:14,000
+Ich hab die Tesla heute kaputtgemacht, sie auf den Boden fallen lassen.
+
+107
+00:11:14,080 --> 00:11:17,300
+Hier hab ich schon einen Durchschlag, also muss ich sie neu wickeln.
+
+108
+00:11:17,420 --> 00:11:18,760
+Das Rohr hab ich schon vorbereitet.
+
+109
+00:11:19,400 --> 00:11:20,720
+Hier hab ich eine Spezialmaschine.
+
+110
+00:11:21,680 --> 00:11:23,520
+Ich wickle sie heute später.
+
+111
+00:11:24,860 --> 00:11:25,680
+Also, na was.
+
+112
+00:11:26,380 --> 00:11:29,080
+Da, kurz gesagt, leg los, was ich euch gezeigt hab.
+
+113
+00:11:29,760 --> 00:11:33,560
+Ich sag nochmal, der Verbrauch ist ein kleines bisschen durch die Frequenz gestiegen.
+
+114
+00:11:33,700 --> 00:11:35,880
+Aber das alles kann eingestellt werden, sag ich nochmal.
+
+115
+00:11:37,000 --> 00:11:38,140
+Das Wichtigste, wisst ihr was?
+
+116
+00:11:38,280 --> 00:11:42,000
+Die Resonanzkondensatoren in diesem Induktor.
+
+117
+00:11:43,080 --> 00:11:45,960
+Hier an dieser Stelle gibt's gerade einen ziemlich starken Puls.
+
+118
+00:11:46,820 --> 00:11:50,640
+Ich mein, die Spannung hier am Ausgang ist der Wahnsinn.
+
+119
+00:11:50,860 --> 00:12:00,720
+Weil, na ja, immerhin hab ich gesehen, eine Person hat dort geschrieben und gefragt, woher bei 24 Volt, woher kommen hier 650 Volt.
+
+120
+00:12:02,020 --> 00:12:06,800
+Ich tappe, also, auf den Induktor, auf die Spule, diese Spannung kommt raus.
+
+121
+00:12:07,300 --> 00:12:09,200
+Und ich dachte, ich vergleich das mal mit der Gegen-EMK.
+
+122
+00:12:10,260 --> 00:12:14,160
+Die Gegen-EMK hat damit hier absolut nichts gemeinsam.
+
+123
+00:12:14,200 --> 00:12:16,860
+Hier kommt genau ein LC-Schwingkreis raus.
+
+124
+00:12:18,440 --> 00:12:22,660
+Und der Puls geht vom Transistor über diesen Treiber.
+
+125
+00:12:22,960 --> 00:12:25,140
+Ich mein, ich zeig's näher, sollte es eigentlich ausschalten.
+
+126
+00:12:25,680 --> 00:12:30,000
+Scheiß drauf, sonst beeinflusst es die Kamera irgendwie und vielleicht wird irgendwas nicht aufgezeichnet.
+
+127
+00:12:31,380 --> 00:12:36,240
+Also, hier diese Kondensatoren, die hab ich ausgesucht, diese sowjetischen.
+
+128
+00:12:36,240 --> 00:12:40,600
+Generell, grundsätzlich, hab ich ein ganzes Paket gekauft und rumexperimentiert.
+
+129
+00:12:40,740 --> 00:12:44,040
+Da hab ich schon so einen Kondensator mit 2 kV Nennspannung.
+
+130
+00:12:45,000 --> 00:12:56,240
+Und generell ist es vorzuziehen, also, 2 kV und 2 nF, damit musst du anfangen und unbedingt Resonanz für den Induktor herstellen.
+
+131
+00:12:56,360 --> 00:12:57,700
+Das ist hier sehr wichtig.
+
+132
+00:12:58,100 --> 00:13:00,740
+Ohne diese Resonanz funktioniert das System nicht.
+
+133
+00:13:01,560 --> 00:13:05,940
+Oder, höchstwahrscheinlich, wird alles auf den Transistor entladen.
+
+134
+00:13:06,420 --> 00:13:10,700
+Ich mein, die Idee der Rückkopplung aus der Kreisresonanz raus.
+
+135
+00:13:10,920 --> 00:13:19,780
+Das treibt grundsätzlich den ganzen Arbeitsprozess auf diese Schutzdioden und auf den Transistor.
+
+136
+00:13:20,460 --> 00:13:21,960
+Also, ich zeig kurz.
+
+137
+00:13:22,300 --> 00:13:23,980
+Die Schaltung lag hier irgendwo.
+
+138
+00:13:24,440 --> 00:13:28,160
+Ein bisschen Durcheinander, da ich schließlich arbeite.
+
+139
+00:13:28,400 --> 00:13:30,080
+Also, wo ist unsere Schaltung?
+
+140
+00:13:30,740 --> 00:13:32,860
+Schaltung, Schaltung, Schaltung.
+
+141
+00:13:34,640 --> 00:13:35,920
+Nein, das ist sie nicht.
+
+142
+00:13:35,980 --> 00:13:37,040
+Das ist nicht die richtige Schaltung.
+
+143
+00:13:37,400 --> 00:13:38,840
+Also, die Schaltung ist irgendwo verschwunden.
+
+144
+00:13:39,760 --> 00:13:40,260
+Leider.
+
+145
+00:13:41,660 --> 00:13:42,380
+Verschwunden.
+
+146
+00:13:43,380 --> 00:13:44,940
+Nicht zu sehen.
+
+147
+00:13:46,200 --> 00:13:46,920
+Ich seh sie nicht.
+
+148
+00:13:48,480 --> 00:13:49,820
+Ich hab die Schaltung nicht.
+
+149
+00:13:50,960 --> 00:13:52,220
+Wo sie hin ist, unklar.
+
+150
+00:13:53,520 --> 00:13:54,240
+Also.
+
+151
+00:13:55,760 --> 00:13:56,220
+Okay.
+
+152
+00:13:56,620 --> 00:13:59,280
+Das hier, übrigens, ist wo ich einen Hochspannungstransistor eingebaut hab.
+
+153
+00:13:59,280 --> 00:14:02,720
+Und ihn sofort abgefackelt hab, weil er die Stromstärke nicht aushielt.
+
+154
+00:14:03,580 --> 00:14:04,060
+Na ja, egal.
+
+155
+00:14:04,560 --> 00:14:04,580
+Also.
+
+156
+00:14:05,920 --> 00:14:08,220
+Was ich gerne würde...
+
+157
+00:14:08,220 --> 00:14:10,640
+Verdammt, ich würde gerne mit der Schaltung zeigen.
+
+158
+00:14:10,720 --> 00:14:11,420
+Aber es gibt keine Schaltung.
+
+159
+00:14:11,460 --> 00:14:11,740
+Keine Ahnung.
+
+160
+00:14:12,400 --> 00:14:14,060
+Jetzt irgendwie...
+
+161
+00:14:14,060 --> 00:14:14,540
+Na ja, nicht so wichtig.
+
+162
+00:14:14,620 --> 00:14:15,680
+Später, im nächsten Video.
+
+163
+00:14:16,220 --> 00:14:19,720
+Also, wir wählen Resonanzkondensatoren aus.
+
+164
+00:14:19,980 --> 00:14:22,280
+Oder wir sammeln einfach einen ganzen Haufen.
+
+165
+00:14:23,200 --> 00:14:24,780
+Dann schauen wir, wie es läuft.
+
+166
+00:14:24,900 --> 00:14:28,900
+Und bauen einen mit der Kapazität ein, die sich hier ergeben hat.
+
+167
+00:14:29,600 --> 00:14:30,640
+Bei der Berechnung.
+
+168
+00:14:31,500 --> 00:14:32,420
+Also, der Induktor.
+
+169
+00:14:32,600 --> 00:14:34,620
+Am besten natürlich mit dickem Draht wickeln.
+
+170
+00:14:34,740 --> 00:14:35,940
+Meinen hab ich mit dickem gewickelt.
+
+171
+00:14:36,620 --> 00:14:37,440
+Also, was noch?
+
+172
+00:14:37,580 --> 00:14:38,420
+Also, alles ist aus.
+
+173
+00:14:38,860 --> 00:14:39,880
+Du kannst es mit den Händen anfassen.
+
+174
+00:14:41,040 --> 00:14:42,440
+Sonst beißt das ganze Zeug.
+
+175
+00:14:42,580 --> 00:14:42,920
+Wie verrückt.
+
+176
+00:14:43,340 --> 00:14:47,040
+Also, um die Spule auf Resonanz abzustimmen, reicht es...
+
+177
+00:14:47,040 --> 00:14:50,240
+Hier ist ein 7414-Chip.
+
+178
+00:14:50,360 --> 00:14:51,140
+Den ziehen wir raus.
+
+179
+00:14:51,980 --> 00:14:53,260
+Die TL bleibt in Betrieb.
+
+180
+00:14:53,380 --> 00:14:55,260
+Hier ist eine TL494.
+
+181
+00:14:55,360 --> 00:14:55,660
+Hier ist sie.
+
+182
+00:14:55,880 --> 00:14:57,360
+Damit wird eingestellt.
+
+183
+00:14:57,360 --> 00:14:59,600
+Also, wir ziehen sie einfach raus.
+
+184
+00:15:00,500 --> 00:15:04,440
+Wir drehen das Tastverhältnis und alles auf den minimalen Modus.
+
+185
+00:15:05,120 --> 00:15:06,240
+Und fangen an zu tweaken.
+
+186
+00:15:06,400 --> 00:15:07,400
+Wir suchen die Frequenz.
+
+187
+00:15:09,090 --> 00:15:11,140
+Am besten natürlich die Tesla sofort berechnen.
+
+188
+00:15:11,720 --> 00:15:14,100
+Es gibt ein spezielles kleines Programm zur Berechnung von Teslas.
+
+189
+00:15:14,940 --> 00:15:17,520
+Und es zeigt alles ziemlich korrekt und präzise.
+
+190
+00:15:17,680 --> 00:15:19,100
+Welche Tesla, welche Sekundärwicklung.
+
+191
+00:15:19,420 --> 00:15:20,940
+Das alles muss berechnet werden.
+
+192
+00:15:21,380 --> 00:15:24,540
+Wenn du nicht berechnest, arbeitet die Spule außer Resonanz.
+
+193
+00:15:24,620 --> 00:15:26,480
+Du verbrennst die Ausgangstransistoren.
+
+194
+00:15:27,360 --> 00:15:28,480
+Die hier sind.
+
+195
+00:15:29,080 --> 00:15:29,720
+Auf dem Kühlkörper.
+
+196
+00:15:30,020 --> 00:15:31,020
+Das ist sehr wichtig.
+
+197
+00:15:31,760 --> 00:15:34,400
+Die Schaltung ist grundsätzlich sehr ähnlich zu...
+
+198
+00:15:34,880 --> 00:15:36,320
+Ich hab sie ein bisschen überarbeitet.
+
+199
+00:15:36,780 --> 00:15:40,800
+Aber die Schaltung ähnelt der, die Akula im Video gezeigt hat.
+
+200
+00:15:41,160 --> 00:15:42,320
+Der elektronische Unterbrecher.
+
+201
+00:15:42,440 --> 00:15:43,980
+Das ist grundsätzlich derselbe.
+
+202
+00:15:44,860 --> 00:15:46,060
+Der elektronische Unterbrecher.
+
+203
+00:15:46,260 --> 00:15:48,340
+Also, mein Video läuft gleich aus.

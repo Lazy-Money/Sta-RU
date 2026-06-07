@@ -1,0 +1,419 @@
+1
+00:00:02,420 --> 00:00:10,610
+Hallo an alle, alle Suchenden, alle die mit Tesla-Technologien arbeiten.
+
+2
+00:00:10,850 --> 00:00:12,230
+Ich traue mich schon kaum, es anzufassen.
+
+3
+00:00:12,390 --> 00:00:13,870
+Das hier habe ich hier eingestellt.
+
+4
+00:00:14,530 --> 00:00:15,550
+Die Spule neu gewickelt.
+
+5
+00:00:15,650 --> 00:00:18,550
+Ich habe jetzt diesen 0,3er Draht aufgewickelt.
+
+6
+00:00:19,290 --> 00:00:25,030
+Das heißt, ich hab mal wieder bestätigt, was ich euch sage: dass das alles kein totaler Blödsinn ist.
+
+7
+00:00:25,330 --> 00:00:28,210
+Im Allgemeinen ist es für Anfänger und für viele.
+
+8
+00:00:28,210 --> 00:00:37,410
+Denn viele versuchen eine Nikola-Tesla-Spule zu bauen, ohne zu wissen, wie man sie überhaupt in Betrieb nimmt und was man damit macht.
+
+9
+00:00:38,130 --> 00:00:43,510
+Also, ich möchte sagen, dass die Spule in verschiedenen Modi arbeiten kann.
+
+10
+00:00:43,750 --> 00:00:55,130
+Und sie hat quasi den Aspekt, mit vielen Prozessen zu arbeiten, die ich im Grunde nicht ankündigen werde.
+
+11
+00:00:55,130 --> 00:00:59,430
+Es ist sowieso klar, dass sie existieren, und jeder weiß das.
+
+12
+00:00:59,710 --> 00:01:03,750
+Eine Teslaspule ist also nicht bloß Draht, der auf ein Rohr gewickelt ist.
+
+13
+00:01:04,050 --> 00:01:12,250
+Das bedeutet praktisch einen LC-Schwingkreis, der sowohl einen Kondensator als auch seine eigene Kapazität hat, und so weiter.
+
+14
+00:01:13,230 --> 00:01:16,270
+Diese Details werde ich jetzt nicht erzählen.
+
+15
+00:01:17,350 --> 00:01:20,670
+Ich werde nur eine Sache sagen: was ich jetzt gemacht habe.
+
+16
+00:01:20,670 --> 00:01:24,290
+Also, die Spule, mit der ich experimentiert habe — hier ist sie.
+
+17
+00:01:25,090 --> 00:01:26,630
+Das heißt, das ist das, was ich euch gezeigt habe.
+
+18
+00:01:27,410 --> 00:01:30,090
+Na, und grob ihr Betrieb.
+
+19
+00:01:30,230 --> 00:01:33,010
+Das heißt, ihre Resonanzfrequenz beträgt 400 kHz.
+
+20
+00:01:33,630 --> 00:01:39,170
+Die Resonanzfrequenz dieser Spule liegt bei ungefähr 200-irgendwas kHz.
+
+21
+00:01:39,290 --> 00:01:41,790
+Ich glaube sogar weniger, 192 kHz.
+
+22
+00:01:42,290 --> 00:01:46,510
+Sie funktioniert sogar besser als die, die ich hier gewickelt habe.
+
+23
+00:01:46,510 --> 00:01:49,010
+Ich habe generell viele gewickelt, aber…
+
+24
+00:01:49,710 --> 00:01:54,750
+Ich musste ein Experiment bestätigen, was ich im Grunde getan habe, und es hat geklappt.
+
+25
+00:01:55,050 --> 00:01:58,010
+Und ich empfehle, wie man so sagt, im Grunde damit anzufangen.
+
+26
+00:01:58,710 --> 00:02:02,050
+Damit es für alle klappt.
+
+27
+00:02:03,590 --> 00:02:05,450
+Also, das wissen wir.
+
+28
+00:02:05,590 --> 00:02:08,030
+Das ist der elektronische Unterbrecher.
+
+29
+00:02:08,650 --> 00:02:14,290
+Das heißt, in diesem Fall arbeitet er auf die Teslaspule hier.
+
+30
+00:02:14,290 --> 00:02:20,490
+Hier, wie ich schon gesagt habe, die Resonanzkondensatoren.
+
+31
+00:02:21,030 --> 00:02:23,010
+Sie sind am Induktor obligatorisch.
+
+32
+00:02:23,330 --> 00:02:36,570
+Und am wichtigsten: Vergesst nicht, dass ihr hier die Diode und den Transistor nach Spannung auswählen müsst — nach Spitzenspannung, das heißt nach Impulsspannung.
+
+33
+00:02:36,770 --> 00:02:46,170
+Hier habe ich — ihr werdet staunen — 100 Volt; ich kann es euch extra messen, damit alle glauben, dass es so ist.
+
+34
+00:02:47,170 --> 00:02:49,110
+Gerade ist das System nicht eingeschaltet, ich habe es ausgeschaltet.
+
+35
+00:02:49,910 --> 00:02:51,970
+Das heißt, ich schalte den Tester für euch ein und zeige es.
+
+36
+00:02:51,990 --> 00:02:54,950
+Hier ein Messgerät eingestellt auf 200 Volt DC.
+
+37
+00:02:57,130 --> 00:03:03,290
+Und also messen wir die Spannung, die hier bei uns ankommt.
+
+38
+00:03:03,610 --> 00:03:05,910
+Gehen wir hier und hier.
+
+39
+00:03:06,370 --> 00:03:07,450
+Schwierig zu halten.
+
+40
+00:03:08,130 --> 00:03:14,510
+Mehr als 111,6 Volt kommen gerade in diesem Moment an diesen Transistor.
+
+41
+00:03:14,930 --> 00:03:17,630
+Es ist ein ERFP460-Transistor eingebaut.
+
+42
+00:03:17,790 --> 00:03:19,130
+Jetzt werdet ihr sehen, wie es funktioniert.
+
+43
+00:03:19,270 --> 00:03:27,070
+Übrigens funktioniert er ganz gut, im Gegensatz zu all den Hochspannungs- und leistungsstarken Transistoren, die ich verwendet habe.
+
+44
+00:03:27,150 --> 00:03:31,570
+Die sind alle durchgebrannt, und ich will damit überhaupt nicht mehr zu tun haben.
+
+45
+00:03:31,570 --> 00:03:33,490
+Also, das Oszilloskop.
+
+46
+00:03:35,790 --> 00:03:37,490
+Und hier liegt die Messspitze.
+
+47
+00:03:38,410 --> 00:03:41,930
+Die Messspitze liegt da, liegt einfach oben auf dem Kondensator.
+
+48
+00:03:42,610 --> 00:03:42,910
+Hier ist sie.
+
+49
+00:03:44,510 --> 00:03:56,990
+Das heißt, diese Messspitze ist die Kontrollsonde, die jetzt für uns das Feld messen wird, das uns in diesem Raum umgeben wird, wo wir jetzt sind.
+
+50
+00:03:57,730 --> 00:04:03,030
+Also, um die Teslaspule überhaupt einzustellen — hier sind 24 Volt.
+
+51
+00:04:03,090 --> 00:04:06,350
+Leider sind meine Labornetzteile schwach.
+
+52
+00:04:06,430 --> 00:04:10,310
+Ich benutze Akkus, weil ich sie mit eben diesen Netzteilen lade.
+
+53
+00:04:10,490 --> 00:04:10,710
+Hier sind sie.
+
+54
+00:04:11,430 --> 00:04:12,630
+Und genau da, dieses Ding.
+
+55
+00:04:12,790 --> 00:04:14,570
+Mein großes Labor-Netzteil ist durchgebrannt.
+
+56
+00:04:15,070 --> 00:04:15,730
+Und das schon lange.
+
+57
+00:04:17,070 --> 00:04:20,850
+Und das war's, ich komme einfach nicht dazu, das alles fertig zu machen.
+
+58
+00:04:20,890 --> 00:04:21,470
+Aber das ist für später.
+
+59
+00:04:21,470 --> 00:04:24,310
+Also, was ich sagen wollte.
+
+60
+00:04:24,410 --> 00:04:27,570
+Also, gerade läuft das System auf 12 Volt.
+
+61
+00:04:28,210 --> 00:04:30,730
+Der Verbrauch liegt bei etwa 100 Milliampere.
+
+62
+00:04:31,270 --> 00:04:34,650
+Und jetzt werden wir die Tesla einstellen.
+
+63
+00:04:34,990 --> 00:04:37,630
+Also, hier sind zwei Generatoren.
+
+64
+00:04:38,630 --> 00:04:41,910
+Das ist der eine, der die Burst-Impulse selbst erzeugt.
+
+65
+00:04:42,670 --> 00:04:47,790
+Und der, der das Rechtecksignal gibt, in dem im Grunde all diese Impulse laufen.
+
+66
+00:04:47,790 --> 00:04:51,970
+Also, jetzt trenne ich die Stromversorgung, um den Chip herauszuziehen.
+
+67
+00:04:52,570 --> 00:05:06,950
+Wir ziehen ihn heraus, ja, das heißt das sofort — bei uns fällt sofort hier ein Generator weg, der gibt — na, das heißt er gibt uns die Möglichkeit für die Wiederholfrequenz.
+
+68
+00:05:07,170 --> 00:05:09,710
+Es ist ein 74NC14-Chip.
+
+69
+00:05:10,430 --> 00:05:11,570
+Ja, ich weiß nicht, ob man es sieht oder nicht.
+
+70
+00:05:11,930 --> 00:05:14,770
+Na, im Grunde, glaubt mir einfach, so ist es.
+
+71
+00:05:14,770 --> 00:05:20,630
+Jetzt verbinden wir die Stromversorgung und schauen auf das Oszilloskop, ja.
+
+72
+00:05:20,950 --> 00:05:23,910
+Wie stellt man überhaupt die Resonanzfrequenz dieser Spule ein?
+
+73
+00:05:24,730 --> 00:05:28,570
+Ja, das heißt, natürlich muss man das alles berechnen, aber wie stellt man es ein?
+
+74
+00:05:29,210 --> 00:05:33,510
+Bekanntlich habe ich hier die Frequenz und das Tastverhältnis der Bursts.
+
+75
+00:05:34,350 --> 00:05:39,330
+Gerade in diesem Moment wird das ein linearer Generator sein, ein normaler Generator, den wir jetzt starten.
+
+76
+00:05:39,410 --> 00:05:40,170
+Also, wir schalten ihn ein.
+
+77
+00:05:40,950 --> 00:05:43,210
+Also, eingeschaltet — die Sicherung ist durchgebrannt.
+
+78
+00:05:43,890 --> 00:05:48,490
+Nach allem Anschein, ja, so ist es.
+
+79
+00:05:48,810 --> 00:05:52,430
+Die Sicherung ist durchgebrannt, zu viel Strom.
+
+80
+00:05:53,690 --> 00:05:55,370
+Also, Scheiße, natürlich, ja.
+
+81
+00:05:55,970 --> 00:06:00,690
+Also, was ich sagen will: Ich will es gerade nicht anfassen, ja, ich meine das ganze Herumdrehen hier.
+
+82
+00:06:00,810 --> 00:06:04,350
+Im nächsten Video zeige ich, wie die Tesla funktioniert, aber ich werde es erklären.
+
+83
+00:06:05,010 --> 00:06:18,510
+Also, jetzt wird man die Sicherung durch eine neue ersetzen müssen, weil beim ersten Einstellen das Tastverhältnis, das minimale Tastverhältnis eingestellt ist — sowohl das Minimum, als auch die Frequenz irgendwo in der Mitte.
+
+84
+00:06:18,670 --> 00:06:21,510
+Aber das Tastverhältnis wird auf Minimum gedreht und man beobachtet den Strom.
+
+85
+00:06:22,730 --> 00:06:35,610
+Sobald du die Frequenz hochdrehst, das Tastverhältnis ein kleines bisschen angehoben hast, fängst du an, die Frequenz zu drehen — die Messspitze liegt irgendwo in der Nähe und du schaust auf das Oszilloskop.
+
+86
+00:06:35,610 --> 00:06:49,130
+Sobald hier eine saubere Sinuskurve erscheint, ja, das heißt eine saubere Sinuskurve erscheint, die nicht schief ist, keine Knicke drin, sondern eine saubere Sinuskurve erscheint, läuft man durch die Frequenz und
+
+87
+00:06:49,130 --> 00:06:53,330
+schaut, in welchen Bereichen diese saubere Sinuskurve noch existiert.
+
+88
+00:06:53,850 --> 00:06:59,230
+Und gleichzeitig — das ist die einfachste Methode zum Einstellen — beobachtest du den Strom, wie viel das System verbraucht.
+
+89
+00:06:59,350 --> 00:07:03,350
+Nochmals sage ich: In diesem Moment muss man das System nicht auf Volldampf fahren.
+
+90
+00:07:04,410 --> 00:07:05,690
+Beobachte den Strom.
+
+91
+00:07:05,770 --> 00:07:09,350
+Du musst den Strom so wählen, dass er minimal ist.
+
+92
+00:07:10,350 --> 00:07:13,250
+Und hier die maximale Amplitude der Sinuskurve.
+
+93
+00:07:13,910 --> 00:07:22,670
+In diesem Moment, wenn du die Tesla einstellst, muss die Tesla so an einem Platz stehen — befestigt, mit nichts in der Nähe — na, ich habe hier allerlei Zeug.
+
+94
+00:07:23,310 --> 00:07:28,530
+Ich empfehle nicht, irgendetwas in der Nähe zu haben, kein Eisen, keine Wand, nichts.
+
+95
+00:07:28,530 --> 00:07:29,850
+Alles weiter weg.
+
+96
+00:07:30,890 --> 00:07:34,390
+Also, eingestellt, das heißt, eine saubere Sinuskurve gesehen.
+
+97
+00:07:34,890 --> 00:07:35,330
+Was dann?
+
+98
+00:07:36,070 --> 00:07:40,950
+Als Nächstes schalten wir die Stromversorgung ab und setzen unseren Chip zurück.
+
+99
+00:07:41,850 --> 00:07:49,450
+NC74, NC14, das ist der zweite Generator, der den ersten Burst-Impulsgenerator steuern wird.
+
+100
+00:07:50,090 --> 00:07:51,450
+Das heißt, er ist Pflicht.
+
+101
+00:07:51,990 --> 00:07:57,430
+Also, von quietschenden Teslas ist hier keine Rede — das ist etwas völlig anderes, verwechselt das nicht, bitte.
+
+102
+00:07:57,430 --> 00:08:02,490
+Eine quietschende Tesla — ihr Schaltplan ist absolut anders als dieser hier.
+
+103
+00:08:03,210 --> 00:08:07,090
+Also, im nächsten Video zeige ich, wie das ganze System funktioniert.
+
+104
+00:08:07,970 --> 00:08:16,110
+Jetzt muss ich schnell eine Sicherung finden, alles ersetzen, und ich zeige, wie es anläuft und wie es funktioniert.
+
+105
+00:08:16,910 --> 00:08:19,230
+Das war's, bis zum nächsten Video auf meinem Kanal.

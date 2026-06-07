@@ -1,0 +1,903 @@
+1
+00:00:06,490 --> 00:00:07,550
+Hallo zusammen.
+
+2
+00:00:08,330 --> 00:00:10,690
+Schön, euch in meinem Mini-Labor begrüßen zu dürfen.
+
+3
+00:00:12,210 --> 00:00:18,130
+Und heute werde ich eine Testversion eines Funkenunterbrechers zusammenbauen.
+
+4
+00:00:18,450 --> 00:00:19,870
+Nach diesem Schema hier.
+
+5
+00:00:20,490 --> 00:00:24,090
+Für meine weiteren Experimente und Versuche.
+
+6
+00:00:25,150 --> 00:00:31,770
+Man hat mich gebeten zu erklären, wie das alles zusammengebaut wird, wie es funktioniert und wie es getestet wird.
+
+7
+00:00:32,570 --> 00:00:35,570
+Jeder kann es dann für seine eigenen Zwecke nutzen.
+
+8
+00:00:35,750 --> 00:00:45,010
+Das betrifft alle, die Anhänger von Funkenantrieben mit Entladern und Unterbrechern sind.
+
+9
+00:00:47,210 --> 00:00:55,490
+Für diejenigen, die jetzt versuchen, den Funken, also die Strombewegung, mit Magneten zu unterbrechen — ich bin von Anfang an einen anderen Weg gegangen.
+
+10
+00:00:55,830 --> 00:00:57,150
+Ich bin den Smith-Weg gegangen.
+
+11
+00:01:00,670 --> 00:01:04,550
+Smith begrenzt immer den Strom in den Primärkreisen.
+
+12
+00:01:04,630 --> 00:01:06,730
+Das ist im Grunde das, was wir machen werden.
+
+13
+00:01:07,790 --> 00:01:10,190
+Ein Analogon des Tesla-Unterbrechers.
+
+14
+00:01:10,710 --> 00:01:11,490
+Genau dasselbe.
+
+15
+00:01:11,730 --> 00:01:14,710
+Alle seine Drehspulen, genau dasselbe.
+
+16
+00:01:15,330 --> 00:01:18,010
+Es kommen Impulse, Impulsgruppen.
+
+17
+00:01:18,170 --> 00:01:27,970
+Die Impulse entsprechen der Resonanzfrequenz, und die Gruppen entsprechen den anderen Prozessen, die in allen seinen Systemen ablaufen.
+
+18
+00:01:29,230 --> 00:01:31,210
+Na, fangen wir an zusammenzubauen.
+
+19
+00:01:32,570 --> 00:01:35,830
+Ein ziemlich unkompliziertes Schema, einfach.
+
+20
+00:01:36,610 --> 00:01:39,370
+Fangen wir an, zusammenzubauen und zu testen.
+
+21
+00:01:41,250 --> 00:01:43,490
+Hier habe ich die Platine schon vorbereitet.
+
+22
+00:01:43,870 --> 00:01:47,290
+Hier plane ich schon, was wohin kommt.
+
+23
+00:01:48,450 --> 00:01:50,690
+Na, los geht's mit dem Zusammenbau.
+
+24
+00:01:54,600 --> 00:02:00,220
+Also, wir haben eine kleine Abschweifung, oder besser gesagt eine Präzisierung dieses Schemas.
+
+25
+00:02:01,860 --> 00:02:04,120
+Also, jetzt alles der Reihe nach von Anfang an.
+
+26
+00:02:05,440 --> 00:02:20,440
+Das heißt, erst nach dem Schema, und dann, wie ihr es gewünscht habt, eine kleine Erklärung seines Wesens und des Tesla-Prinzips.
+
+27
+00:02:22,160 --> 00:02:38,940
+Dieses Schema jetzt — das ist, wie ich gesagt habe, ein Analogon des Tesla-Unterbrechers, das heißt, es erzeugt Impulsgruppen, und innerhalb der Impulsgruppen — also die Anzahl der Impulse in einer Gruppe entspricht den
+
+28
+00:02:38,940 --> 00:02:45,920
+Resonanzschwingungen, und die Dauer oder die Lücken zwischen den Gruppen entsprechen schon genau den internen Prozessen.
+
+29
+00:02:46,080 --> 00:02:47,060
+Aber das kommt etwas später.
+
+30
+00:02:47,320 --> 00:02:48,900
+Jetzt, zum Block.
+
+31
+00:02:50,460 --> 00:02:57,420
+Hier ist das Schema, im Grunde dasselbe Analogon, nur mit etwas ergänzt, um den Betrieb zu verbessern.
+
+32
+00:02:58,340 --> 00:03:06,680
+Um die Versorgungsparameter von 15 auf 36 Volt zu erhöhen, wurde in diesem Schema ein Spannungsstabilisator hinzugefügt.
+
+33
+00:03:07,680 --> 00:03:14,560
+Das heißt, es erlaubt die Speisung von 15 bis 36 Volt, das System stabilisiert es normal.
+
+34
+00:03:15,940 --> 00:03:16,400
+Weiter.
+
+35
+00:03:17,320 --> 00:03:27,720
+Am wichtigsten — diese Schutzdiode wurde dem Schema hinzugefügt, damit die Resonanzkreise ruhig arbeiten können, ohne gegen diese Dioden zu stoßen.
+
+36
+00:03:28,020 --> 00:03:36,140
+Die Diode im Transistor und diese Diode direkt, der Begrenzer, der dem Transistor hilft.
+
+37
+00:03:36,380 --> 00:03:44,060
+Dadurch wurde es möglich, einen Transistor mit niedrigerer Spannung einzubauen, mit besserer Steuerung.
+
+38
+00:03:44,420 --> 00:03:49,640
+Na und entsprechend mit besserer Steuerung all dieser Systeme.
+
+39
+00:03:50,580 --> 00:03:52,880
+Jetzt, wie unser Block aussieht.
+
+40
+00:03:53,680 --> 00:03:56,660
+Unser Block sieht so aus.
+
+41
+00:03:59,240 --> 00:04:05,660
+Ihr habt gebeten, genau zu zeigen, wie die Hauptkreise realisiert sind, die, bei denen die Probleme auftraten.
+
+42
+00:04:06,900 --> 00:04:16,840
+Hier ist unser LC-Kreis — hoppla, nicht LC sondern CR — im Kollektor des Steuerungstransistors.
+
+43
+00:04:17,300 --> 00:04:18,620
+Bei mir sieht das so aus.
+
+44
+00:04:19,120 --> 00:04:23,660
+Hier ist der Kondensator, hier sind diese zwei Widerstände.
+
+45
+00:04:24,100 --> 00:04:28,080
+Ich habe zwei genommen, nur um die nötige Leistungsaufnahme zu erreichen.
+
+46
+00:04:28,380 --> 00:04:28,840
+Das war's.
+
+47
+00:04:29,700 --> 00:04:33,180
+Es gab keinen einzelnen Widerstand für die benötigte Leistung.
+
+48
+00:04:33,480 --> 00:04:34,460
+Ich musste zwei nehmen.
+
+49
+00:04:35,340 --> 00:04:36,400
+Weiter.
+
+50
+00:04:36,480 --> 00:04:39,400
+Hier ist der Basisteiler.
+
+51
+00:04:40,540 --> 00:04:41,160
+Hier ist er.
+
+52
+00:04:42,420 --> 00:04:50,940
+Er lässt die ansteigende Flanke sehr gut durch, senkt auch die Steuerflanke, und der Widerstand ist genau für den Strom da.
+
+53
+00:04:52,080 --> 00:04:53,180
+Der Schutz des Transistors.
+
+54
+00:04:53,280 --> 00:04:54,000
+Der Transistor selbst.
+
+55
+00:04:54,120 --> 00:04:54,400
+Hier ist er.
+
+56
+00:04:55,860 --> 00:04:58,080
+Und diese Diode.
+
+57
+00:04:59,500 --> 00:04:59,880
+Hier ist sie.
+
+58
+00:05:00,560 --> 00:05:02,420
+Hier ist sie, auf dem Kühlkörper montiert.
+
+59
+00:05:06,910 --> 00:05:08,010
+So sieht das aus.
+
+60
+00:05:08,310 --> 00:05:12,070
+Hier ist unser Spannungsstabilisator.
+
+61
+00:05:14,150 --> 00:05:15,390
+Hier ist das ganze Schema.
+
+62
+00:05:16,350 --> 00:05:21,570
+Hier ist der Widerstand, mit dem du letztes Mal Probleme hattest und den du nicht richtig auswählen konntest.
+
+63
+00:05:21,790 --> 00:05:23,610
+So sieht meine Drossel aus.
+
+64
+00:05:28,650 --> 00:05:28,650
+Da.
+
+65
+00:05:30,070 --> 00:05:30,750
+Also.
+
+66
+00:05:31,050 --> 00:05:34,510
+Na, jetzt ein Oszillogramm, wie das alles funktioniert.
+
+67
+00:05:34,990 --> 00:05:36,570
+Und dann die Erklärung.
+
+68
+00:05:37,490 --> 00:05:38,570
+Die ihr gefragt habt.
+
+69
+00:05:39,430 --> 00:05:40,670
+Für deine Gruppe.
+
+70
+00:05:46,890 --> 00:05:49,990
+Also, jetzt über den Betrieb des Generators selbst.
+
+71
+00:05:51,250 --> 00:05:53,090
+Also, jetzt erst das Schema.
+
+72
+00:05:54,210 --> 00:05:54,770
+Da.
+
+73
+00:05:54,930 --> 00:06:00,890
+Jetzt schauen wir, welches Signal genau vom Niederfrequenz-Hauptoszillator kommt.
+
+74
+00:06:00,990 --> 00:06:01,890
+Von diesem Pin hier.
+
+75
+00:06:03,830 --> 00:06:03,850
+Da.
+
+76
+00:06:04,070 --> 00:06:06,270
+Und entsprechend gibt es eine zweite Spur.
+
+77
+00:06:06,750 --> 00:06:10,010
+Das ist schon hier am Ausgang.
+
+78
+00:06:10,210 --> 00:06:15,290
+Genau die, die die Dauer unseres Impulses zur Steuerung des TL bildet.
+
+79
+00:06:15,490 --> 00:06:17,930
+Das heißt, jetzt schauen wir uns den ersten Hauptoszillator hier an.
+
+80
+00:06:18,730 --> 00:06:20,230
+Genau den ersten Generator selbst.
+
+81
+00:06:22,390 --> 00:06:23,250
+Hier ist er.
+
+82
+00:06:24,230 --> 00:06:26,810
+Das heißt, sein Tastverhältnis ist so herausgekommen.
+
+83
+00:06:27,470 --> 00:06:33,630
+Also irgendwo 40-35%, das reicht für den korrekten Betrieb des Formers.
+
+84
+00:06:34,370 --> 00:06:37,430
+Diese erste Spur hier ist der erste Hauptgenerator.
+
+85
+00:06:37,870 --> 00:06:37,870
+Da.
+
+86
+00:06:38,690 --> 00:06:42,510
+Die zweite Spur ist der Former des Betriebsimpulses unseres TL selbst.
+
+87
+00:06:43,210 --> 00:06:45,490
+Genau die Form, die er hat.
+
+88
+00:06:47,210 --> 00:06:48,630
+Hier ist sein Timing.
+
+89
+00:06:49,650 --> 00:06:53,070
+Das geht schon zum TL selbst.
+
+90
+00:06:55,850 --> 00:07:01,090
+Das ist schon direkt am dritten Pin unseres TL.
+
+91
+00:07:03,250 --> 00:07:06,230
+Als nächstes kommt die Transistorbasis.
+
+92
+00:07:06,510 --> 00:07:07,850
+Das ist schon der Ausgang des TL.
+
+93
+00:07:08,250 --> 00:07:08,610
+Hier ist er.
+
+94
+00:07:09,710 --> 00:07:10,890
+Jetzt werden wir es aufzoomen.
+
+95
+00:07:13,110 --> 00:07:17,190
+Jetzt stellen wir die Synchronisation darauf ein.
+
+96
+00:07:19,070 --> 00:07:24,700
+Und unsere dritte Spur — hier ist sie.
+
+97
+00:07:26,360 --> 00:07:27,340
+Da.
+
+98
+00:07:27,500 --> 00:07:29,660
+Das sind die Impulse an der Basis.
+
+99
+00:07:30,720 --> 00:07:33,940
+Das sind die Impulse am Kollektor.
+
+100
+00:07:35,200 --> 00:07:40,300
+Ich habe einen 22-Ohm-Widerstand als Last genommen.
+
+101
+00:07:41,940 --> 00:07:42,960
+Oder 27 Ohm.
+
+102
+00:07:42,960 --> 00:07:43,680
+27 Ohm.
+
+103
+00:07:43,800 --> 00:07:44,100
+Hier ist er.
+
+104
+00:07:45,280 --> 00:07:48,720
+Das ist, was wir am Kollektor haben.
+
+105
+00:07:49,020 --> 00:07:50,140
+Das ist an der Basis.
+
+106
+00:07:51,140 --> 00:07:55,120
+Jetzt gehen wir direkt zu diesem Oszilloskop.
+
+107
+00:07:55,240 --> 00:07:56,880
+Schauen wir, was wir drinnen haben.
+
+108
+00:07:58,380 --> 00:08:01,140
+Das ist schon direkt hier an der Basis.
+
+109
+00:08:01,780 --> 00:08:04,620
+Und hier ist es am Kollektor nach dem Widerstand.
+
+110
+00:08:05,000 --> 00:08:07,320
+Vor diesen Dioden.
+
+111
+00:08:09,220 --> 00:08:12,940
+Jetzt komprimiere ich es, zeige, dass es eine Gruppe ist.
+
+112
+00:08:13,440 --> 00:08:13,780
+Hier ist sie.
+
+113
+00:08:21,490 --> 00:08:22,270
+Noch einmal.
+
+114
+00:08:22,690 --> 00:08:23,650
+Das ist der Kollektor.
+
+115
+00:08:23,930 --> 00:08:25,010
+Das ist die Basis.
+
+116
+00:08:25,810 --> 00:08:26,890
+Hier sind sie, diese Gruppen.
+
+117
+00:08:27,650 --> 00:08:29,710
+Jetzt zeige ich, dass sie einstellbar sind.
+
+118
+00:08:29,890 --> 00:08:35,630
+Dieser Widerstand, direkt.
+
+119
+00:08:36,570 --> 00:08:37,270
+Hier ist er.
+
+120
+00:08:39,790 --> 00:08:41,310
+Er stellt die Gruppen ein.
+
+121
+00:08:41,650 --> 00:08:47,190
+Jetzt schalte ich das Oszilloskop aus, damit es mir nicht im Weg ist, wenn ich hier an den Dingen drehe.
+
+122
+00:08:48,910 --> 00:08:51,110
+Ich lasse nur dieses Oszilloskop.
+
+123
+00:08:51,510 --> 00:08:54,070
+Und am Kollektor sind sie eingestellt.
+
+124
+00:08:54,730 --> 00:08:55,570
+Ich habe es abgetrennt.
+
+125
+00:08:57,310 --> 00:09:01,790
+Noch einmal schauen wir auf die Basis und auf die Spule am Kollektor.
+
+126
+00:09:01,910 --> 00:09:02,850
+Genau hier, vor den Dioden.
+
+127
+00:09:04,150 --> 00:09:07,190
+Hier ist die Einstellung der Gruppenfrequenz.
+
+128
+00:09:11,510 --> 00:09:14,410
+Die Mindestfrequenz dieses Blocks.
+
+129
+00:09:16,030 --> 00:09:17,530
+Genau der Impulsgruppen.
+
+130
+00:09:20,510 --> 00:09:21,630
+Fehler.
+
+131
+00:09:22,110 --> 00:09:23,630
+40 kHz.
+
+132
+00:09:23,710 --> 00:09:26,990
+Das muss man direkt an der ersten Sonde ansehen.
+
+133
+00:09:28,250 --> 00:09:32,890
+Diese Frequenzen stimmen praktisch überein.
+
+134
+00:09:33,050 --> 00:09:34,390
+Sie arbeiten eins zu eins.
+
+135
+00:09:37,150 --> 00:09:40,550
+Hier können wir die Gruppen formen.
+
+136
+00:09:42,950 --> 00:09:44,310
+Hier sind sie.
+
+137
+00:09:46,450 --> 00:09:46,450
+Hier sind sie.
+
+138
+00:09:46,990 --> 00:09:48,210
+Das werden die Frequenzen sein.
+
+139
+00:09:48,350 --> 00:09:54,330
+Die Frequenz wird genau der Resonanzentladefrequenz entsprechen.
+
+140
+00:09:55,370 --> 00:09:57,370
+Jetzt schauen wir, was wir in der Gruppe haben.
+
+141
+00:09:59,050 --> 00:10:00,490
+Das ist, was wir in der Gruppe haben.
+
+142
+00:10:00,850 --> 00:10:05,750
+Jetzt verbessere ich die Synchronisation ein bisschen.
+
+143
+00:10:06,110 --> 00:10:12,330
+Ich wechsle zum zweiten Kanal an der Basis.
+
+144
+00:10:13,930 --> 00:10:16,550
+Das Signal dort ist stabiler, ohne den Widerstand.
+
+145
+00:10:16,610 --> 00:10:21,850
+Der Widerstand hat auch seine eigene Induktivität, also bildet sich dort eine Gegenspannungsspitze.
+
+146
+00:10:24,110 --> 00:10:24,370
+Da.
+
+147
+00:10:27,670 --> 00:10:29,110
+Na da, eine Gruppe.
+
+148
+00:10:29,870 --> 00:10:33,650
+Jetzt schauen wir, was wir in der Gruppe direkt haben.
+
+149
+00:10:35,770 --> 00:10:39,230
+So.
+
+150
+00:10:43,180 --> 00:10:43,180
+So.
+
+151
+00:10:43,180 --> 00:10:43,200
+Da, so.
+
+152
+00:10:43,200 --> 00:10:54,980
+In der Gruppe können wir sowohl das Tastverhältnis des Impulses als auch die Frequenz einstellen.
+
+153
+00:10:57,520 --> 00:11:01,200
+Das heißt entsprechend die Anzahl der Impulse in der Gruppe.
+
+154
+00:11:01,720 --> 00:11:07,460
+Plus dieses Timing ist auch einstellbar.
+
+155
+00:11:13,160 --> 00:11:14,340
+Ich zeige es jetzt.
+
+156
+00:11:16,880 --> 00:11:29,000
+Das heißt, nachdem wir die direkte Frequenz und das Tastverhältnis am Ausgang zum TL eingestellt haben, können wir auch das Timing dieser Gruppe einstellen.
+
+157
+00:11:29,560 --> 00:11:31,660
+Jetzt reduziere ich es.
+
+158
+00:11:32,740 --> 00:11:34,800
+Reduziert, da habe ich es vergrößert.
+
+159
+00:11:38,690 --> 00:11:41,590
+Jetzt mache ich es noch einmal, damit es sichtbar ist.
+
+160
+00:11:41,910 --> 00:11:46,150
+Das heißt, das ist das Maximum, das ich eingestellt habe, und das ist das Minimum.
+
+161
+00:11:46,250 --> 00:11:49,910
+Das heißt, wir können die Dauer in der Gruppe einstellen.
+
+162
+00:11:54,620 --> 00:11:54,620
+Also.
+
+163
+00:11:56,940 --> 00:11:58,280
+Na, was soll ich sagen.
+
+164
+00:11:58,420 --> 00:12:01,240
+Dieser Widerstand hier, dieser.
+
+165
+00:12:03,720 --> 00:12:13,620
+Ich habe weniger als 4 kOhm eingebaut, aber ich rate euch, 4 zu nehmen, um einen größeren Spielraum bei der Einstellung genau der Gruppendauer zu haben.
+
+166
+00:12:14,700 --> 00:12:20,420
+Ich mache es schon für ein bestimmtes Modell, für bestimmte Frequenzen, und habe 1 kOhm eingebaut.
+
+167
+00:12:20,480 --> 00:12:21,800
+Meins ist etwas eingeschränkt.
+
+168
+00:12:22,660 --> 00:12:24,660
+Ich rate euch, 4 zu nehmen.
+
+169
+00:12:25,200 --> 00:12:27,980
+Na und entsprechend mit diesem Kondensator variieren.
+
+170
+00:12:28,500 --> 00:12:30,560
+Ihn kleiner einstellen bedeutet, die Gruppe ist kleiner.
+
+171
+00:12:30,900 --> 00:12:32,740
+Ihn größer einstellen bei den Parametern.
+
+172
+00:12:33,360 --> 00:12:35,720
+Das heißt, ihr könnt von 20 bis 100 Nanofarad spielen.
+
+173
+00:12:37,600 --> 00:12:39,560
+Na, sonst ist alles Standard.
+
+174
+00:12:40,280 --> 00:12:41,520
+Hier gibt es nichts Neues.
+
+175
+00:12:44,480 --> 00:12:45,220
+Na, das war's.
+
+176
+00:12:49,260 --> 00:12:50,960
+Also, und die Erklärung.
+
+177
+00:12:52,080 --> 00:12:53,160
+Was ist das Wesentliche, oder?
+
+178
+00:12:53,280 --> 00:12:56,840
+Das heißt, wie kommt es, dass dieses Schema ein Analogon ist?
+
+179
+00:12:57,840 --> 00:12:59,840
+Ein Analogon dieses Tesla-Systems.
+
+180
+00:13:00,260 --> 00:13:06,280
+Das heißt, er, genau wie dieses Ding hier, erzeugt — stellt genau das Timing ein.
+
+181
+00:13:06,340 --> 00:13:11,660
+Das heißt, dieses stellt das Timing der Impulsgruppen ein.
+
+182
+00:13:12,760 --> 00:13:16,580
+Dieses Ding stellt genau die Anzahl der Impulsgruppen ein.
+
+183
+00:13:16,780 --> 00:13:18,920
+Das heißt, die Impulsgruppen.
+
+184
+00:13:19,520 --> 00:13:23,600
+Das heißt, es kommt ein vollständiges Analogon heraus.
+
+185
+00:13:24,720 --> 00:13:27,560
+Und dabei, starrer und klarer steuerbar.
+
+186
+00:13:27,680 --> 00:13:29,380
+Mit Versorgung mit niedrigerer Spannung.
+
+187
+00:13:30,220 --> 00:13:32,020
+Genau für das System selbst.
+
+188
+00:13:32,220 --> 00:13:37,900
+Na und dieser Mechanismus selbst, dieses Wesen, muss als LC-Kreis betrachtet werden.
+
+189
+00:13:38,000 --> 00:13:39,580
+Das heißt, ein LC-Kreis am Antrieb.
+
+190
+00:13:40,380 --> 00:13:48,220
+Warum genau das System — letztes Mal als ich euch gezeigt habe, genau die Tests, die wir gemacht haben, warum kam die Effizienz praktisch 1 zu 300 heraus?
+
+191
+00:13:48,500 --> 00:13:54,700
+Weil wir es in Resonanz treiben, und hier haben wir den Strom in Resonanz.
+
+192
+00:13:54,700 --> 00:13:59,540
+Ja, wir können es nicht abgreifen, wenn wir es einfach wie einen Transformator belasten.
+
+193
+00:13:59,620 --> 00:14:13,940
+Aber indem wir den LC-Kreis direkt antreiben, ihm geben — das heißt, wenn wir in diesen Kondensatoren eine Leistung akkumuliert haben, die 300-mal die Eingangsleistung übersteigt, lassen wir sie durch unseren
+
+194
+00:14:13,940 --> 00:14:14,560
+Entlader entladen.
+
+195
+00:14:15,960 --> 00:14:20,220
+So ist dieses System mit einer Effizienz von 1 zu 300 herausgekommen.
+
+196
+00:14:21,020 --> 00:14:34,600
+Sogar damit, das heißt, nur durch korrektes Berechnen des Induktors, und korrektes Berechnen der Sekundärseite nach Spannung, sagen wir, für 220 Volt, was ich letztes Mal gezeigt habe, das heißt, für 220 Volt einfach
+
+197
+00:14:34,600 --> 00:14:39,060
+durch Berechnen erreichten wir Selbstspeisung, weil wir Effizienz 1 zu 300 haben.
+
+198
+00:14:40,020 --> 00:14:43,800
+Wir haben die Selbstspeisung gemacht und praktisch 300 Watt erleuchtet.
+
+199
+00:14:44,800 --> 00:14:49,720
+Na, klar ist, dass man den Prozess selbst berücksichtigen muss, der hier passiert, und ohne ihn geht es nicht.
+
+200
+00:14:50,800 --> 00:14:53,980
+Über diesen Prozess gibt es jetzt eine kleine Erklärung.
+
+201
+00:14:54,120 --> 00:14:58,920
+Kurz, da viele dieses Video zum Verstehen anschauen werden.
+
+202
+00:15:01,160 --> 00:15:10,900
+Fangen wir genau mit diesem Tesla-Patent an, da es kein einziges Tesla-Patent gibt, in dem man ein Gerät zur Erzeugung von Strahlungsenergie findet.
+
+203
+00:15:12,300 --> 00:15:20,180
+Nochmals, im Verständnis, dass Strahlungsenergie erzeugt wird, nicht aus der Umgebung entnommen wird, ja, das heißt, das ist kein Äther mehr.
+
+204
+00:15:21,040 --> 00:15:30,380
+Na und generell rate ich, so etwas wie Äther-Geschwätz zu vergessen, und ihr könnt auch so ein Konzept wie Strahlungsenergie vergessen.
+
+205
+00:15:30,500 --> 00:15:36,100
+Tesla nannte es Strahlungsenergie, weil es in seiner Zeit keine solche Wissenschaft wie die Strahlungsphysik gab.
+
+206
+00:15:36,560 --> 00:15:38,060
+Es ist alles Strahlung.
+
+207
+00:15:38,780 --> 00:15:47,700
+Jedes Element, was auch immer wir nehmen, atomar, molekular, hat oder kann einen bestimmten Strahlungshintergrund haben, ja.
+
+208
+00:15:48,820 --> 00:15:57,780
+Na, jetzt, zum Verstehen, kommen wir zu diesem bewährten Schema zurück.
+
+209
+00:15:58,620 --> 00:16:04,560
+Aber jetzt werden wir direkt das Gerät selbst zur Erzeugung von Strahlungsenergie, oder Strahlungsenergie, ausarbeiten.
+
+210
+00:16:04,560 --> 00:16:06,680
+Na, nennen wir es der Einfachheit halber Strahlungsenergie.
+
+211
+00:16:07,860 --> 00:16:21,900
+Genau deshalb sind wir zum Tesla-System gegangen — weil dieses Gerät, genau mit dem Entlader, es erlaubt, den Raum sehr gut zu polarisieren und diesen atomaren Prozess direkt auszulösen, der hier passiert.
+
+212
+00:16:21,900 --> 00:16:22,520
+passiert.
+
+213
+00:16:24,640 --> 00:16:36,080
+Na und um zu verstehen, warum das in modernen Labors nicht entwickelt wurde, diese modernen, entwickelt, schon lange entwickelt — aber dort arbeiten sie mit sehr radioaktiven Materialien.
+
+214
+00:16:37,880 --> 00:16:47,320
+Ich hoffe, es wird ein weiteres Video mit diesem Gerät in Betrieb geben, direkt mit Instrumenten zur Strahlungsmessung.
+
+215
+00:16:48,140 --> 00:16:56,720
+Und in diesem Video wird eine Erklärung geben, was gefährliche Strahlung ist, was friedliche Strahlung ist.
+
+216
+00:16:57,000 --> 00:17:03,680
+Das heißt, ein Verständnis davon — dass Strahlung unkontrolliert sein kann, und kontrolliert sein kann.
+
+217
+00:17:03,780 --> 00:17:08,560
+Was genau die frühen Geräte von Nikola Tesla beweisen.
+
+218
+00:17:09,500 --> 00:17:13,360
+Dass jedes Strahlungsenergie-Gerät steuerbar sein kann.
+
+219
+00:17:13,500 --> 00:17:17,400
+Und dabei auch sein Hintergrund und seine Richtung, das kann auch steuerbar sein.
+
+220
+00:17:17,680 --> 00:17:19,740
+Und das unterscheidet all diese Geräte.
+
+221
+00:17:22,560 --> 00:17:23,120
+Da.
+
+222
+00:17:23,460 --> 00:17:28,620
+Und allen anderen rate ich, so ein Verständnis wie Äther und Blödsinn zu vergessen.
+
+223
+00:17:30,800 --> 00:17:36,180
+Sogar so ein Verständnis wie Strahlungsenergie.
+
+224
+00:17:36,300 --> 00:17:38,580
+Es ist alles Strahlungsenergie.
+
+225
+00:17:39,620 --> 00:17:43,000
+Und das sind alles atomare und molekulare Strukturen.
+
+226
+00:17:43,780 --> 00:17:44,660
+An denen wir arbeiten.
