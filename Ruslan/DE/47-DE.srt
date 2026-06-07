@@ -1,0 +1,1031 @@
+1
+00:00:02,020 --> 00:00:07,640
+Hallo an alle Enthusiasten und Sammler von freier Energie.
+
+2
+00:00:07,780 --> 00:00:15,900
+Genauer gesagt, Generatoren, die grundsätzlich für verschiedene Leistungen und Ähnliches zusammengebaut werden können.
+
+3
+00:00:16,200 --> 00:00:17,420
+Ich meine, das irgendwie zu realisieren.
+
+4
+00:00:18,660 --> 00:00:22,220
+Im Allgemeinen, was gerade aktuell ist.
+
+5
+00:00:22,620 --> 00:00:31,940
+Im Moment habe ich sehr stark verstanden und bin von allen Foren enttäuscht worden, einschließlich derer, in denen ich registriert war.
+
+6
+00:00:32,080 --> 00:00:36,120
+Dass es viel Gerede gibt und eigentlich nichts passiert.
+
+7
+00:00:37,140 --> 00:00:41,200
+Nun, ich verberge es nicht, natürlich habe ich mich an manchen Stellen geirrt und so weiter.
+
+8
+00:00:41,400 --> 00:00:44,380
+Ich meine, ich kam zu einem Schluss und habe das gesamte System genau studiert.
+
+9
+00:00:44,540 --> 00:00:48,280
+Ich kann mit Sicherheit sagen, dass es bei mir klappt.
+
+10
+00:00:48,620 --> 00:00:52,940
+Und hier habe ich meinen sogenannten Generator überarbeitet.
+
+11
+00:00:53,220 --> 00:00:57,660
+Und herausgefunden, wo das Problem liegt.
+
+12
+00:00:57,880 --> 00:01:02,040
+Warum es zum Beispiel die Schaltung gibt, die wir nach Akula zusammengebaut haben.
+
+13
+00:01:02,160 --> 00:01:04,200
+Hier ist gerade alles auseinandergebaut.
+
+14
+00:01:04,300 --> 00:01:07,160
+Aber es sind ein paar Tage und es wird vollständig so funktionieren, wie es soll.
+
+15
+00:01:08,120 --> 00:01:08,840
+Ein Experiment.
+
+16
+00:01:08,960 --> 00:01:10,000
+Hier ist die Schaltung.
+
+17
+00:01:10,480 --> 00:01:11,520
+Aber die Schaltung später.
+
+18
+00:01:13,420 --> 00:01:14,980
+Was am wichtigsten ist.
+
+19
+00:01:15,520 --> 00:01:17,940
+Hier ist irgendwie nichts Besonderes.
+
+20
+00:01:17,940 --> 00:01:18,980
+Ihr habt das alles schon gesehen.
+
+21
+00:01:25,920 --> 00:01:27,220
+Das ist nicht die Frage.
+
+22
+00:01:27,340 --> 00:01:29,300
+Die Frage ist, dass der Generator.
+
+23
+00:01:30,140 --> 00:01:34,280
+Wir werden jetzt etwas mit euch zeichnen und dann wieder hierher kommen.
+
+24
+00:01:36,960 --> 00:01:43,500
+Nehmen wir jetzt ein Blatt Papier und ich zeichne euch etwas.
+
+25
+00:01:43,500 --> 00:01:45,760
+Obwohl ihr es auch direkt hier machen könnt.
+
+26
+00:01:50,320 --> 00:02:00,200
+Hier haben wir ein Sinussignal.
+
+27
+00:02:03,020 --> 00:02:05,360
+Ich habe es schief gezeichnet.
+
+28
+00:02:06,200 --> 00:02:10,920
+Viele denken, wie das gemacht wird.
+
+29
+00:02:12,380 --> 00:02:16,880
+Die Pulsschläge müssen an dieser Stelle erzeugt werden.
+
+30
+00:02:18,580 --> 00:02:20,320
+Mindestens über eine Periode.
+
+31
+00:02:20,680 --> 00:02:23,400
+Ihr müsst nicht den unteren treffen, sondern mindestens so den oberen.
+
+32
+00:02:23,740 --> 00:02:28,720
+Um ein rotierendes Magnetfeld zu erzeugen.
+
+33
+00:02:28,840 --> 00:02:30,700
+Was ist überhaupt ein Magnetfeld?
+
+34
+00:02:30,940 --> 00:02:31,840
+Von Wechselstrom.
+
+35
+00:02:31,880 --> 00:02:34,000
+Das Magnetfeld von Wechselstrom rotiert.
+
+36
+00:02:35,120 --> 00:02:39,500
+Warum hat Tesla Asynchronmotoren gebaut?
+
+37
+00:02:41,020 --> 00:02:42,700
+Womit hängt das zusammen?
+
+38
+00:02:42,760 --> 00:02:46,240
+Damit, dass das Magnetfeld eine Rotation hat.
+
+39
+00:02:49,720 --> 00:02:54,440
+Dieses ganze Bild sieht etwas anders aus.
+
+40
+00:02:54,580 --> 00:02:55,220
+Jetzt finde ich es.
+
+41
+00:02:55,620 --> 00:03:01,220
+Ich hatte hier solche Bilder der Magnetfeldrotation.
+
+42
+00:03:03,640 --> 00:03:08,740
+Hier ist sie, die Sinuswelle.
+
+43
+00:03:10,260 --> 00:03:13,500
+Wie rotiert sie?
+
+44
+00:03:14,020 --> 00:03:15,640
+Hier seht ihr.
+
+45
+00:03:16,420 --> 00:03:25,320
+Das ist die Bewegung, die in der Zeichnung stattfindet.
+
+46
+00:03:29,540 --> 00:03:32,420
+Wo müsst ihr mit den Pulsen treffen?
+
+47
+00:03:34,540 --> 00:03:39,080
+Was haben wir mit diesen Pulsen nicht gemacht.
+
+48
+00:03:39,660 --> 00:03:43,060
+Wenn wir anfangen, genau hier zu treffen.
+
+49
+00:03:43,600 --> 00:03:44,860
+Was machen wir?
+
+50
+00:03:44,940 --> 00:03:45,700
+Wo treffen wir?
+
+51
+00:03:45,780 --> 00:03:46,300
+Wir treffen genau hier.
+
+52
+00:03:47,660 --> 00:03:48,880
+Praktisch nirgendwo.
+
+53
+00:03:49,280 --> 00:03:51,920
+Wir bremsen das Feld, wenn wir hier treffen.
+
+54
+00:03:52,200 --> 00:03:53,060
+Hier darf man nicht treffen.
+
+55
+00:03:53,780 --> 00:03:54,760
+Ihr müsst von der Seite treffen.
+
+56
+00:03:55,240 --> 00:03:55,720
+Das ist eins.
+
+57
+00:03:56,300 --> 00:03:56,880
+Zweites.
+
+58
+00:03:57,880 --> 00:04:02,280
+Zunächst müsst ihr eine Sinuswelle erzeugen.
+
+59
+00:04:02,580 --> 00:04:04,920
+Natürlich wird sie nicht halten.
+
+60
+00:04:06,240 --> 00:04:06,920
+Resonanz.
+
+61
+00:04:07,020 --> 00:04:08,620
+Erinnert ihr euch, was Kapanadze sagte?
+
+62
+00:04:08,840 --> 00:04:12,400
+Haltet die Resonanz und dann wird alles bei uns klappen.
+
+63
+00:04:13,200 --> 00:04:15,300
+Schauen wir uns jetzt die Schaltung an.
+
+64
+00:04:16,600 --> 00:04:22,200
+Hier ist sie gezeichnet, um den Prozess zu verstehen.
+
+65
+00:04:24,200 --> 00:04:28,600
+Genau hier, an dieser Stelle, ist das LC-Schwingkreis.
+
+66
+00:04:29,000 --> 00:04:31,560
+Oder die sogenannte Induktionsspule.
+
+67
+00:04:31,660 --> 00:04:37,040
+Wenn wir die Resonanz hier nicht halten, wird diese Sinuswelle wegrutschen.
+
+68
+00:04:38,420 --> 00:04:40,320
+Ihr habt eine Last angeschlossen.
+
+69
+00:04:40,360 --> 00:04:42,680
+Warum haben sich bei mir dort die Glühbirnen gedimmt?
+
+70
+00:04:43,300 --> 00:04:46,700
+Ich hatte Synchronisation mit all dem.
+
+71
+00:04:49,380 --> 00:04:52,820
+Der gesteuerte Kacher und die Kacher-Schläge haben genau hier funktioniert.
+
+72
+00:04:53,400 --> 00:04:55,260
+Sie sind ein bisschen weggekrochen.
+
+73
+00:04:55,560 --> 00:05:03,320
+Da die Frequenz beobachtet wurde und die Mikrochips das Aufholen ermöglichten, hat es irgendwie so gemacht.
+
+74
+00:05:03,420 --> 00:05:17,940
+Aber mehr Last, also ein scharfer Ruck, als die Sinuswelle von ihrem Platz gerutscht ist und dieser Aufprallpuls nicht dahin getroffen hat, wo er sollte, konnten wir das Magnetfeld nicht antreiben.
+
+75
+00:05:18,040 --> 00:05:20,640
+Ich meine diese Ringe, diese Rotationen.
+
+76
+00:05:20,860 --> 00:05:28,240
+Ich meine, wir konnten von dieser Seite kein Rotationsmoment erzeugen.
+
+77
+00:05:29,480 --> 00:05:31,860
+Es hat dementsprechend nicht funktioniert.
+
+78
+00:05:34,320 --> 00:05:39,380
+Wenn man tief in das System eindringt, wie das überhaupt passiert, ist das ein sehr langer Prozess.
+
+79
+00:05:39,800 --> 00:05:42,920
+Natürlich funktioniert es auf atomarer Ebene, das ist eins.
+
+80
+00:05:43,060 --> 00:05:57,500
+Und zweitens, hier sind die Elektronen des Mediums beteiligt und das Medium selbst wirkt im Allgemeinen als solches auf die Spule, auf das, was wir schlagen, auf das, was wir treffen.
+
+81
+00:05:58,280 --> 00:06:02,540
+Speziell korrekt, wenn ihr den Moment betrachtet, ist es auf diese Spule.
+
+82
+00:06:05,880 --> 00:06:07,640
+Hier ist die Induktionsspule.
+
+83
+00:06:07,700 --> 00:06:10,900
+Warum hängt die Antenne über der Induktionsspule?
+
+84
+00:06:11,140 --> 00:06:12,820
+Speziell über der Induktionsspule.
+
+85
+00:06:13,620 --> 00:06:16,760
+Das hängt alles damit zusammen, dass von hier kurze Pulse ausgehen.
+
+86
+00:06:16,820 --> 00:06:18,520
+Er hat darüber in einem der Videos gesprochen.
+
+87
+00:06:18,600 --> 00:06:20,860
+Er hat erklärt, was dieses Ferrit macht.
+
+88
+00:06:22,260 --> 00:06:26,600
+Es akkumuliert Entladungen und macht hier einen Schlag.
+
+89
+00:06:28,420 --> 00:06:33,540
+Das kann stimmen, genauer gesagt, sagen wir, das Ferrit hilft auf jeden Fall.
+
+90
+00:06:33,840 --> 00:06:36,720
+Hier funktioniert ein normaler gesteuerter Kacher.
+
+91
+00:06:37,140 --> 00:06:38,120
+Wie ein normaler.
+
+92
+00:06:38,520 --> 00:06:42,780
+Im Grunde ist das ein System, das dem System von Bedini sehr ähnlich ist.
+
+93
+00:06:43,060 --> 00:06:44,980
+Übrigens hat er auch darüber gesprochen.
+
+94
+00:06:45,600 --> 00:06:49,880
+Aber hier gibt es einen Haken.
+
+95
+00:06:50,560 --> 00:06:53,560
+Warum das System speziell die Erde gefressen hat.
+
+96
+00:06:55,940 --> 00:07:07,700
+Seine Stabilität war grundsätzlich nicht so hoch, wie sie zum Beispiel sein würde, wenn ihr den Kacher-Betrieb ein bisschen ändern würdet.
+
+97
+00:07:07,840 --> 00:07:14,620
+Also den Kacher von hier herauswerfen und eine gesteuerte Tesla machen, die zum richtigen Moment korrekt trifft.
+
+98
+00:07:15,180 --> 00:07:18,820
+Wieder müsstet ihr diese Tesla nicht auswählen.
+
+99
+00:07:19,020 --> 00:07:29,700
+Also nach Frequenz, ich meine, ihr könntet die Spule wickeln, einfach die Pulsbreite zur Frequenz messen und damit schlagen.
+
+100
+00:07:30,940 --> 00:07:46,600
+Aber viele, die denken, dass man diese Antenne nehmen und mit Pulsen schlagen muss, haben bereits einen TDKS-Funkenunterbrecher hier eingebaut, was übrigens unzulässig ist.
+
+101
+00:07:47,520 --> 00:07:50,200
+Und Kapanadze verwendet übrigens auch keinen TDKS.
+
+102
+00:07:50,320 --> 00:07:51,660
+Das ist totaler Mist, Leute.
+
+103
+00:07:52,420 --> 00:07:54,580
+Und ich rate TDKS überhaupt nicht zu empfehlen.
+
+104
+00:07:54,760 --> 00:07:58,340
+Es wird auf diesem System nicht funktionieren, weil im TDKS ein Diode ist.
+
+105
+00:07:59,020 --> 00:08:01,860
+Also kehren wir jetzt wieder zum Magnetfeld zurück.
+
+106
+00:08:05,420 --> 00:08:10,800
+Das Magnetfeld rotiert auf diese Weise.
+
+107
+00:08:10,920 --> 00:08:12,320
+Hier ist unsere Sinuswelle.
+
+108
+00:08:12,820 --> 00:08:15,180
+Sie geht in diesen Kreisen, funktioniert.
+
+109
+00:08:15,920 --> 00:08:19,080
+Aber ihr müsst sie zum richtigen Moment antreiben.
+
+110
+00:08:20,080 --> 00:08:21,720
+Das verstehen wir alle irgendwie.
+
+111
+00:08:22,000 --> 00:08:23,080
+Wie passiert das?
+
+112
+00:08:23,480 --> 00:08:24,700
+Also der Pulsschlag.
+
+113
+00:08:24,820 --> 00:08:29,500
+Viele sagen, ich komme wieder auf diese Idee zurück, der Schlag genau hier.
+
+114
+00:08:30,080 --> 00:08:32,660
+Genau hier kann man nichts erzeugen.
+
+115
+00:08:33,240 --> 00:08:35,580
+Und überhaupt muss man Logik betreiben.
+
+116
+00:08:36,160 --> 00:08:40,000
+Ich hatte fertige Platinen.
+
+117
+00:08:40,120 --> 00:08:42,600
+Eine Person hat mir geholfen, das herauszufinden.
+
+118
+00:08:42,840 --> 00:08:43,860
+Oleg, danke ihm.
+
+119
+00:08:46,520 --> 00:08:50,220
+All diese Synchronisation ist jetzt dort gemacht.
+
+120
+00:08:50,660 --> 00:08:54,080
+Also der Puls geht klar.
+
+121
+00:08:54,880 --> 00:08:57,520
+Der Schlag genau hier, von der Seite.
+
+122
+00:08:58,240 --> 00:08:59,860
+Das alles muss abgestimmt werden.
+
+123
+00:08:59,960 --> 00:09:02,480
+Die Pulsbreite ist auch sehr wichtig.
+
+124
+00:09:02,680 --> 00:09:04,060
+Was macht der Puls?
+
+125
+00:09:04,300 --> 00:09:05,720
+Der Puls macht die Tesla.
+
+126
+00:09:06,120 --> 00:09:10,060
+Um die Tesla zu starten, müsst ihr natürlich den Puls steuern.
+
+127
+00:09:10,500 --> 00:09:18,180
+Der Puls muss an dieser Stelle sein.
+
+128
+00:09:19,340 --> 00:09:23,880
+Hier muss ein kurzer Puls sein.
+
+129
+00:09:24,040 --> 00:09:27,380
+Ungefähr 500-600 Nanosekunden.
+
+130
+00:09:27,620 --> 00:09:29,380
+Ihr könnt bei 300 anfangen.
+
+131
+00:09:29,440 --> 00:09:30,720
+Es fängt schon an zu funktionieren.
+
+132
+00:09:31,120 --> 00:09:32,180
+Der Effekt zeigt sich.
+
+133
+00:09:32,440 --> 00:09:38,400
+Wieder, hier, ich sage noch einmal, an dieser Stelle muss Synchronisation sein.
+
+134
+00:09:38,540 --> 00:09:42,100
+Genauer gesagt, die Phasenregelschleife muss funktionieren.
+
+135
+00:09:42,220 --> 00:09:44,300
+Damit diese Sache nicht wegläuft.
+
+136
+00:09:44,960 --> 00:09:52,040
+Sonst, an dieser Stelle, wenn wir anfangen zu schlagen, ist alles gut, alles läuft, die Verstärkung, das alles.
+
+137
+00:09:52,980 --> 00:09:57,040
+Und dann bam, so, ihr habt eine Last angeschlossen, das alles wird wegrutschen.
+
+138
+00:09:57,960 --> 00:09:59,040
+Das alles wird wegrutschen.
+
+139
+00:09:59,680 --> 00:10:04,440
+Dementsprechend muss der Puls auch zusammen mit dieser Sinuswelle wegrutschen.
+
+140
+00:10:05,720 --> 00:10:06,680
+Akula hat es gezeichnet.
+
+141
+00:10:06,780 --> 00:10:13,400
+Ich habe leider keine gedruckte Kopie von Akulas Schaltung, von Romas, die er uns allen gezeigt hat.
+
+142
+00:10:13,620 --> 00:10:16,480
+Dieses System, was dort war.
+
+143
+00:10:17,880 --> 00:10:19,580
+Ich will nicht mal darauf zurückkommen.
+
+144
+00:10:19,760 --> 00:10:24,240
+Es gibt uns ungefähr ein Verständnis, aber es ist falsch.
+
+145
+00:10:24,340 --> 00:10:27,300
+Diese Schaltung wird nicht funktionieren und es hat keinen Sinn, sie zusammenzubauen.
+
+146
+00:10:27,420 --> 00:10:30,960
+Ihr müsst nur verstehen, was dort gegeben war und wofür.
+
+147
+00:10:34,500 --> 00:10:45,800
+Also, über diese Schaltung, also über dieses System im Allgemeinen, werde ich etwas erzählen.
+
+148
+00:10:46,560 --> 00:10:48,580
+Hier ist der Generator nicht einfach.
+
+149
+00:10:48,680 --> 00:10:49,780
+Das ist nicht nur ein Push-Pull.
+
+150
+00:10:50,040 --> 00:10:51,060
+Das ist ein PLL.
+
+151
+00:10:51,660 --> 00:10:52,740
+Er hat ihn hier.
+
+152
+00:10:53,280 --> 00:11:00,880
+Drinnen ist höchstwahrscheinlich ein Niederfrequenzring, obligatorisch auf diesen drei Windungen.
+
+153
+00:11:02,620 --> 00:11:10,600
+Damit es keine Aufnahmen gibt, eines der Anschlüsse von all dem.
+
+154
+00:11:10,840 --> 00:11:18,460
+Ich denke, dass es irgendwo hier oder hier obligatorisch am Gehäuse sein muss oder ganz geerdet sein muss.
+
+155
+00:11:20,260 --> 00:11:25,000
+Das ist obligatorisch, weil hier das Medium arbeitet.
+
+156
+00:11:26,040 --> 00:11:31,380
+Die Pulse werden schlagen, alles wird zucken, also das Magnetfeld zusammenbrechen.
+
+157
+00:11:31,480 --> 00:11:33,400
+Das alles wird passieren.
+
+158
+00:11:33,640 --> 00:11:37,620
+Hier müsst ihr, sagen wir, zunächst den Ring.
+
+159
+00:11:38,220 --> 00:11:40,180
+Hier machen wir einen Schnitt.
+
+160
+00:11:41,020 --> 00:11:44,420
+Hier oder an einer anderen Stelle, wo die Erdung sein wird.
+
+161
+00:11:45,200 --> 00:11:59,700
+Besser natürlich hier, wo die Erde ist, hier einen Schnitt machen und den Ring pro Windung setzen und auf den Ring setzen, wo 100 Windungen Draht für den PLL aufgewickelt werden.
+
+162
+00:12:00,560 --> 00:12:03,320
+Wer ein Spezialist ist, versteht, wovon ich spreche.
+
+163
+00:12:04,600 --> 00:12:20,340
+Erstens, der Aufnahme auf der Antenne, durch die die Pulse gehen, wird den PLL nicht beeinflussen, weil einer dieser Anschlüsse entweder hier oder hier, wo dieses Ding funktionieren wird.
+
+164
+00:12:20,340 --> 00:12:22,240
+Es wird nicht überall funktionieren.
+
+165
+00:12:24,300 --> 00:12:32,720
+Dort müsst ihr es obligatorisch erden, damit an dieser Stelle die Hochfrequenz, diese Pulse nicht auf den PLL gelangen, sonst wird dort alles reißen.
+
+166
+00:12:33,040 --> 00:12:34,660
+Das System wird auch nicht stabil sein.
+
+167
+00:12:35,600 --> 00:12:38,580
+Also, was noch zu diesem Thema?
+
+168
+00:12:39,280 --> 00:12:44,360
+Natürlich hat Roma uns nichts von diesen 26-28 Windungen gesagt, die an seinem Topf hängen.
+
+169
+00:12:44,760 --> 00:12:48,040
+Das ist diese rote Wicklung, sie ist hier markiert.
+
+170
+00:12:48,760 --> 00:12:55,640
+Wir bauen dieses System zusammen, also ich kämpfe damit, obwohl ich andere Systeme zusammengebaut habe, die erfolgreich funktioniert haben.
+
+171
+00:12:56,320 --> 00:12:59,500
+Dieses habe ich auch zusammengebaut, nur war es nicht nach seinem Prinzip.
+
+172
+00:12:59,680 --> 00:13:06,260
+Jetzt mache ich es speziell nach seinem Prinzip, weil es bei mir dort nicht nach seinem Prinzip instabil war.
+
+173
+00:13:06,440 --> 00:13:08,240
+Einige Dinge dort, Dioden sind durchgebrannt und so weiter.
+
+174
+00:13:08,720 --> 00:13:09,920
+Hier wird alles stabil sein.
+
+175
+00:13:11,840 --> 00:13:16,940
+Also, hier diese rote Wicklung hat irgendwo 26-28 Windungen Draht.
+
+176
+00:13:17,940 --> 00:13:27,580
+In meinem Fall habe ich 4 Quadratmillimeter aufgewickelt, in eurem Fall kann es eine andere Wicklung sein, aber besser natürlich, dass sie dicker ist als das, was hier auf dieser Spule gewickelt ist.
+
+177
+00:13:27,620 --> 00:13:28,360
+Hier sind es 2,5.
+
+178
+00:13:29,040 --> 00:13:32,680
+38 Meter, 2,5 mm.
+
+179
+00:13:34,820 --> 00:13:37,000
+Also, diese drei Windungen sind auch 2,5.
+
+180
+00:13:37,220 --> 00:13:44,720
+Dort darf man es nicht übertreiben und grundsätzlich muss man hier nichts mehr hineintreiben, um das Magnetfeld hier zu schwingen.
+
+181
+00:13:44,780 --> 00:13:47,740
+Dieses ganze System wird eine wahnsinnige Spannung verbrauchen, auf keinen Fall.
+
+182
+00:13:48,700 --> 00:14:00,780
+Also, diese Windungen, oben gehen dann die Windungen dieser Sache zu den Transistoren, also das sind 12 Windungen, weil es ein 24-Volt-System ist.
+
+183
+00:14:01,020 --> 00:14:13,280
+Wenn wir verstehen, worum es geht, also ein 24-Volt-System, so ist eine Windung 2 Volt, also 12 Windungen von der Mitte zur Mitte obligatorisch.
+
+184
+00:14:13,940 --> 00:14:18,780
+Nicht in Gegenphase, sondern ihr wickelt, wickelt, einen Abgriff und dann weiter wickeln.
+
+185
+00:14:19,100 --> 00:14:25,320
+Sonst haben hier manche eine Gegenwicklung genommen, gewickelt und Unsinn bekommen.
+
+186
+00:14:25,480 --> 00:14:32,680
+Nun, also haben sie den Transistor durchgebrannt und sind überrascht, was ist das, ja, also schreiben sie mir, wie ist das, warum funktioniert es nicht, also muss man eine Gegenwicklung machen.
+
+187
+00:14:33,080 --> 00:14:34,880
+Ich sage, man darf niemals eine Gegenwicklung machen.
+
+188
+00:14:35,260 --> 00:14:41,340
+Alles geht weiter, nur ein Abgriff der Mitte und dann gehen 12 Windungen also eine Gesamtanzahl von 24 Windungen.
+
+189
+00:14:42,080 --> 00:14:50,740
+Was als nächstes, hier gibt es so ein Ding, schaut, 26-28 Windungen, die Spannung kommt hier heraus, hier ein Kondensator.
+
+190
+00:14:51,600 --> 00:14:55,100
+Mit dem Kondensator stellen wir die Sinuswelle ein, das machen wir hier.
+
+191
+00:14:55,360 --> 00:15:07,640
+Das ist sehr wichtig, hier muss an dieser Stelle eine Sinuswelle erscheinen, also wählen wir den Kondensator so aus, dass das System nicht zu viel verbraucht, also machen wir Resonanz, aber keine starke Resonanz, also
+
+192
+00:15:07,640 --> 00:15:18,260
+ein bisschen, weil dieses ganze Durcheinander wahnsinnig viel Strom verbrauchen wird, ja, also erschaffen wir hier sozusagen einen Schwingkreis.
+
+193
+00:15:19,160 --> 00:15:23,000
+Das darf man nicht stark machen, ja, also, aber die Sinuswelle muss herauskommen.
+
+194
+00:15:23,100 --> 00:15:34,980
+Am Ende, was wir bekommen, wir bekommen eine Sinuswelle, ja, also bekommen wir Pump-Sinuswellen, die sich auch irgendwie hier zeigen.
+
+195
+00:15:35,500 --> 00:15:49,680
+Und hier, übrigens, hat er dort an einer der Stellen gezeichnet, dass er dort eine Kurve hat, diese Sinuswelle, sie fallen miteinander zusammen und hier genau der Schlag, ja, der Pulsschlag geht.
+
+196
+00:15:50,000 --> 00:16:03,420
+Dort reicht ein Puls aus, und nicht ein ganzer Haufen von Kacher-Pulsen, die dort gehen und grundsätzlich der gesteuerte Kacher, wenn ihr versucht, seine Basis mit einem Transistor kurzzuschließen und dann wieder zu öffnen, das ist totaler
+
+197
+00:16:03,420 --> 00:16:05,180
+Unsinn, dort wird nichts Gutes sein.
+
+198
+00:16:05,300 --> 00:16:09,660
+Ich habe das durchgemacht, dort ist das totaler Mist.
+
+199
+00:16:10,340 --> 00:16:12,940
+Also, was als nächstes?
+
+200
+00:16:13,240 --> 00:16:18,840
+Also, den Transistor KT-805 ersetzen wir durch einen FET IRFP-460.
+
+201
+00:16:19,460 --> 00:16:27,140
+Die Versorgungsspannung dieses gesamten Systems beträgt 24 Volt, bei 12 fängt es an zu starten, alles gut, also müsst ihr den Topf nicht für die Stromversorgung verwenden.
+
+202
+00:16:27,720 --> 00:16:31,680
+Der Topf, nun, wir nennen ihn Topf, ja, er sieht wie ein Topf aus.
+
+203
+00:16:33,000 --> 00:16:38,600
+Also, mit diesen 28 Windungen speisen wir die Spule, durch die die gesamte Last gespeist wird.
+
+204
+00:16:38,940 --> 00:16:43,600
+Aber ich sage wieder, vergesst den Kondensator nicht, hier parallel ein Kondensator.
+
+205
+00:16:43,920 --> 00:16:52,480
+Dann geht es zur Spule, ja, und durch die Spule setzen wir bereits am Ausgang, nun, hier ist es bei mir falsch gezeichnet, wir setzen eine Diodenbrücke.
+
+206
+00:16:52,660 --> 00:17:05,260
+Weil, grundsätzlich, wenn ihr das System von Akula von oben genau betrachtet, ist seine Stromversorgung nicht geerdet, beachtet das, ja, also die Stromversorgung ist nicht geerdet.
+
+207
+00:17:06,000 --> 00:17:11,160
+Hier ist sie, übrigens, im Betrieb fotografiert, weil hier die Neonlampe brennt.
+
+208
+00:17:12,080 --> 00:17:19,660
+Von diesen Enden aus ist es sichtbar, dass es hier eingespeist wird und der Ausgang auch von hier, von hier brennt die Neonlampe auch.
+
+209
+00:17:19,740 --> 00:17:23,260
+Als er demonstrierte, drückte er den Knopf, er sagt, das ist ein Start.
+
+210
+00:17:23,920 --> 00:17:25,160
+Warum wusste er das?
+
+211
+00:17:25,540 --> 00:17:29,980
+Weil das Neon bereits von 220 brennt, also von diesen Klemmen, also ist das hier klar.
+
+212
+00:17:30,580 --> 00:17:31,280
+Was als nächstes?
+
+213
+00:17:31,780 --> 00:17:36,060
+Die Stromversorgung selbst ist nicht geerdet, beachtet das, sie hat kein Erdungskabel.
+
+214
+00:17:36,160 --> 00:17:36,380
+Warum?
+
+215
+00:17:36,520 --> 00:17:39,980
+Weil in dieser Box, in dieser Box eine Diodenbrücke ist, das ist klar.
+
+216
+00:17:41,380 --> 00:17:48,920
+Hier ist die Diodenbrücke genau hier und ein Kondensator, höchstwahrscheinlich, der den Ausgang glättet und wir speisen bereits Gleichstrom sowohl dort als auch hier.
+
+217
+00:17:49,080 --> 00:17:57,380
+Sonst, wenn Wechselstrom direkt von der Spule hierher ginge... Nun, zunächst, die Stromversorgung, stellt euch vor, hier gibt es ein Filter.
+
+218
+00:17:57,960 --> 00:18:04,720
+Es ist sofort sichtbar, also am Siegel, dass Akula das Siegel nicht abgerissen hat.
+
+219
+00:18:04,820 --> 00:18:09,160
+Also, die Stromversorgung ist original, er hat dort nichts gemacht, nicht herumgebohrt, nicht gegraben.
+
+220
+00:18:10,500 --> 00:18:11,140
+Also, was?
+
+221
+00:18:11,540 --> 00:18:13,560
+Also, hier läuft alles und funktioniert.
+
+222
+00:18:15,300 --> 00:18:20,660
+Nun, was den Ausgang betrifft.
+
+223
+00:18:20,940 --> 00:18:24,320
+Stellt euch vor, wir schließen hier eine Last mit einem langen Kabel an.
+
+224
+00:18:24,560 --> 00:18:29,960
+Wenn ihr es hier nicht mit der Diodenbrücke trennt, dieses System überhaupt nicht trennt, dann verlängern wir die Spule.
+
+225
+00:18:30,780 --> 00:18:33,440
+Dementsprechend werden wir nichts Gutes bekommen.
+
+226
+00:18:33,700 --> 00:18:35,520
+Totaler Mist fängt an.
+
+227
+00:18:36,820 --> 00:18:39,380
+Wir haben die Spule verlängert, die Windungen verlängert.
+
+228
+00:18:40,120 --> 00:18:45,420
+Hier ist alles weggerutscht und es wird unmöglich sein, das System abzustimmen.
+
+229
+00:18:46,480 --> 00:18:51,400
+Nun, um auf all das zurückzukommen, hier gibt es dementsprechend eine Diodenbrücke am Ausgang.
+
+230
+00:18:52,200 --> 00:18:56,960
+Und diese Diodenbrücke, natürlich, durch einen Kondensator speisen wir weiter genau hier, hier die Leistung, hier auf all diese.
+
+231
+00:18:57,080 --> 00:18:59,200
+Also, wir nehmen die Last ab.
+
+232
+00:19:00,160 --> 00:19:01,440
+Scheint irgendwie alles einfach.
+
+233
+00:19:01,960 --> 00:19:03,360
+Keine Fehler, nichts.
+
+234
+00:19:04,500 --> 00:19:06,380
+Das zusammenzubauen ist kein Problem.
+
+235
+00:19:07,380 --> 00:19:13,760
+Im nächsten Video werde ich erzählen, wie ich den Push-Pull gemacht habe, irgendwie, oberflächlich.
+
+236
+00:19:14,200 --> 00:19:18,100
+Ich werde nach und nach erzählen, damit klar ist, was warum und warum.
+
+237
+00:19:20,140 --> 00:19:25,300
+Ich möchte sagen, viele versuchen, dieses schöne Gerät zusammenzubauen.
+
+238
+00:19:25,380 --> 00:19:29,320
+Es ist wirklich schön zusammengebaut, aber vielleicht könnte die Platine durch eine andere ersetzt werden.
+
+239
+00:19:29,400 --> 00:19:33,980
+Aber ich habe genau so eine Platine, Boxen, Schalter und alles andere gefunden.
+
+240
+00:19:34,180 --> 00:19:35,320
+Sogar Knöpfe und alles andere.
+
+241
+00:19:35,320 --> 00:19:37,660
+Hier, übrigens, fragen sie, was das für eine Glühbirne ist.
+
+242
+00:19:38,720 --> 00:19:45,480
+Ich habe den Verdacht, dass die Glühbirne wie an einem Stromwandler an die Erde angeschlossen ist.
+
+243
+00:19:45,720 --> 00:19:50,800
+Höchstwahrscheinlich so, weil jemand gesehen hat, dass drinnen zwei Stromringe waren.
+
+244
+00:19:51,320 --> 00:19:55,660
+Einer an der Erde, der andere weiß ich sicher, war ein PLL.
+
+245
+00:19:56,540 --> 00:19:58,840
+Ohne einen PLL ist dieses System sehr komplex.
+
+246
+00:19:59,360 --> 00:20:01,280
+Es ist sehr schwer, die Last zu halten.
+
+247
+00:20:01,400 --> 00:20:09,080
+Sogar Glühbirnen, deren Glühfaden sich erhitzt und seinen Widerstand ändert.
+
+248
+00:20:09,440 --> 00:20:12,440
+Diese Sinuswellen werden springen und schwimmen.
+
+249
+00:20:12,620 --> 00:20:14,360
+Die ganze Resonanz.
+
+250
+00:20:14,720 --> 00:20:15,780
+Was hat Kapanadze gesagt?
+
+251
+00:20:15,900 --> 00:20:17,300
+Haltet die Resonanz.
+
+252
+00:20:17,880 --> 00:20:23,400
+Hier in diesem Fall ist die Rede von Resonanz in der Resonanz.
+
+253
+00:20:23,580 --> 00:20:24,340
+Was ist das?
+
+254
+00:20:24,340 --> 00:20:25,220
+Etwas später.
+
+255
+00:20:26,100 --> 00:20:27,540
+Für jetzt beende ich dieses Video.
+
+256
+00:20:29,000 --> 00:20:30,800
+Ich habe einige Dinge ungefähr erzählt.
+
+257
+00:20:30,940 --> 00:20:37,060
+Wenn Spezialisten, die versuchen, etwas zu machen, dieses Ding, mich richtig verstehen.
+
+258
+00:20:37,200 --> 00:20:39,760
+Wenn etwas unklar ist, werden wir es weiter erklären.
