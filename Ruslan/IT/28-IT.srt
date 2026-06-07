@@ -1,0 +1,419 @@
+1
+00:00:02,420 --> 00:00:10,610
+Ciao a tutti, a tutti i ricercatori, a tutti quelli che lavorano con le tecnologie Tesla.
+
+2
+00:00:10,850 --> 00:00:12,230
+Ho già paura di toccarlo.
+
+3
+00:00:12,390 --> 00:00:13,870
+Ecco cosa ho messo a punto qui.
+
+4
+00:00:14,530 --> 00:00:15,550
+Ho riavvolto la bobina.
+
+5
+00:00:15,650 --> 00:00:18,550
+Ora ho questo filo da 0,3 avvolto.
+
+6
+00:00:19,290 --> 00:00:25,030
+Insomma, ho confermato ancora una volta quello che vi dico, che tutto questo non è pura fesseria.
+
+7
+00:00:25,330 --> 00:00:28,210
+È in generale per i principianti e per molti.
+
+8
+00:00:28,210 --> 00:00:37,410
+Perché, diciamo, molti cercano di costruire una bobina di Nikola Tesla senza sapere affatto come avviarla e cosa farsene.
+
+9
+00:00:38,130 --> 00:00:43,510
+Quindi, voglio dire che la bobina può funzionare in modalità diverse.
+
+10
+00:00:43,750 --> 00:00:55,130
+E ha sotto di sé, per così dire, l'aspetto di lavorare con molti processi che, fondamentalmente, non annuncerò.
+
+11
+00:00:55,130 --> 00:00:59,430
+È chiaro comunque che esistono e tutti lo sanno.
+
+12
+00:00:59,710 --> 00:01:03,750
+Quindi una bobina Tesla non è solo del filo avvolto su un tubo.
+
+13
+00:01:04,050 --> 00:01:12,250
+Significa praticamente un circuito LC, che ha sia un condensatore sia la propria capacità e così via.
+
+14
+00:01:13,230 --> 00:01:16,270
+Non vi dirò questi dettagli adesso.
+
+15
+00:01:17,350 --> 00:01:20,670
+Vi dirò solo una cosa, quello che ho fatto ora.
+
+16
+00:01:20,670 --> 00:01:24,290
+Quindi, la bobina con cui stavo sperimentando, eccola qui.
+
+17
+00:01:25,090 --> 00:01:26,630
+Cioè, questo è quello che vi ho mostrato.
+
+18
+00:01:27,410 --> 00:01:30,090
+Beh, e grosso modo il suo funzionamento.
+
+19
+00:01:30,230 --> 00:01:33,010
+Cioè, la sua frequenza di risonanza è 400 kHz.
+
+20
+00:01:33,630 --> 00:01:39,170
+La frequenza di risonanza di questa bobina è circa 200 e qualcosa kHz.
+
+21
+00:01:39,290 --> 00:01:41,790
+Penso anche meno, 192 kHz.
+
+22
+00:01:42,290 --> 00:01:46,510
+Funziona anche meglio di quella che ho avvolto qui.
+
+23
+00:01:46,510 --> 00:01:49,010
+Ne ho avvolte tante in generale, ma…
+
+24
+00:01:49,710 --> 00:01:54,750
+Avevo bisogno di confermare un esperimento, che fondamentalmente ho fatto, e mi è riuscito.
+
+25
+00:01:55,050 --> 00:01:58,010
+E consiglio, come si dice, di cominciare fondamentalmente da qui.
+
+26
+00:01:58,710 --> 00:02:02,050
+Così che riesca a tutti.
+
+27
+00:02:03,590 --> 00:02:05,450
+Quindi, questo lo sappiamo.
+
+28
+00:02:05,590 --> 00:02:08,030
+Questo è l'interruttore elettronico.
+
+29
+00:02:08,650 --> 00:02:14,290
+Cioè, in questo caso, lavora sulla bobina Tesla qui.
+
+30
+00:02:14,290 --> 00:02:20,490
+Qui, come ho già detto, i condensatori di risonanza.
+
+31
+00:02:21,030 --> 00:02:23,010
+Sono obbligatori sull'induttore.
+
+32
+00:02:23,330 --> 00:02:36,570
+E soprattutto, non dimenticate che qui dovete scegliere in base alla tensione, alla tensione di picco, cioè alla tensione di impulso, il diodo e il transistor.
+
+33
+00:02:36,770 --> 00:02:46,170
+Qui ho, vi sorprenderete, 100 volt — posso misurarlo appositamente per voi così ci credete tutti.
+
+34
+00:02:47,170 --> 00:02:49,110
+In questo momento il sistema non è acceso, l'ho spento.
+
+35
+00:02:49,910 --> 00:02:51,970
+Cioè, accendo il tester per voi e mostro.
+
+36
+00:02:51,990 --> 00:02:54,950
+Ecco un multimetro impostato su 200 volt CC.
+
+37
+00:02:57,130 --> 00:03:03,290
+E quindi, misuriamo la tensione che arriva qui da noi.
+
+38
+00:03:03,610 --> 00:03:05,910
+Andiamo qui e qui.
+
+39
+00:03:06,370 --> 00:03:07,450
+È scomodo da tenere.
+
+40
+00:03:08,130 --> 00:03:14,510
+Anche più di 111,6 volt arrivano a questo transistor in questo momento.
+
+41
+00:03:14,930 --> 00:03:17,630
+È installato un transistor ERFP460.
+
+42
+00:03:17,790 --> 00:03:19,130
+Ora vedrete come funziona.
+
+43
+00:03:19,270 --> 00:03:27,070
+Tra l'altro, funziona piuttosto bene, a differenza di tutti i transistor ad alta tensione e potenti che ho usato.
+
+44
+00:03:27,150 --> 00:03:31,570
+Si sono bruciati tutti e non voglio assolutamente tornare a quello.
+
+45
+00:03:31,570 --> 00:03:33,490
+Quindi, l'oscilloscopio.
+
+46
+00:03:35,790 --> 00:03:37,490
+E qui la sonda è appoggiata.
+
+47
+00:03:38,410 --> 00:03:41,930
+La sonda è appoggiata, semplicemente appoggiata sopra il condensatore.
+
+48
+00:03:42,610 --> 00:03:42,910
+Eccola.
+
+49
+00:03:44,510 --> 00:03:56,990
+Cioè, questa sonda è la sonda di controllo che misurerà per noi il campo che ci circonderà in questo spazio dove siamo adesso.
+
+50
+00:03:57,730 --> 00:04:03,030
+Quindi, per mettere a punto la bobina Tesla, ecco, qui ci sono 24 volt.
+
+51
+00:04:03,090 --> 00:04:06,350
+Purtroppo i miei alimentatori da laboratorio sono deboli.
+
+52
+00:04:06,430 --> 00:04:10,310
+Uso le batterie, perché le carico con questi stessi alimentatori.
+
+53
+00:04:10,490 --> 00:04:10,710
+Eccole.
+
+54
+00:04:11,430 --> 00:04:12,630
+E lì vicino, questo coso.
+
+55
+00:04:12,790 --> 00:04:14,570
+Il mio grande alimentatore da laboratorio si è bruciato.
+
+56
+00:04:15,070 --> 00:04:15,730
+E da un bel po'.
+
+57
+00:04:17,070 --> 00:04:20,850
+E così, non riesco proprio a trovare il tempo per finire tutta questa cosa.
+
+58
+00:04:20,890 --> 00:04:21,470
+Ma quello è per dopo.
+
+59
+00:04:21,470 --> 00:04:24,310
+Quindi, cosa volevo dire.
+
+60
+00:04:24,410 --> 00:04:27,570
+Quindi, in questo momento il sistema è a 12 volt.
+
+61
+00:04:28,210 --> 00:04:30,730
+Il consumo è circa 100 milliampere.
+
+62
+00:04:31,270 --> 00:04:34,650
+E adesso metteremo a punto la Tesla.
+
+63
+00:04:34,990 --> 00:04:37,630
+Quindi, qui ci sono due generatori.
+
+64
+00:04:38,630 --> 00:04:41,910
+Questo è quello che dà gli impulsi a raffica.
+
+65
+00:04:42,670 --> 00:04:47,790
+E quello che dà il segnale quadro, in cui, fondamentalmente, girano tutti questi impulsi.
+
+66
+00:04:47,790 --> 00:04:51,970
+Quindi, adesso stacco l'alimentazione, per togliere il chip.
+
+67
+00:04:52,570 --> 00:05:06,950
+Lo togliamo, sì, cioè questo subito, per noi subito qui cade un generatore, che dà — beh, cioè ci dà la possibilità per la frequenza di ripetizione.
+
+68
+00:05:07,170 --> 00:05:09,710
+È un chip 74NC14.
+
+69
+00:05:10,430 --> 00:05:11,570
+Sì, non so se si vede o no.
+
+70
+00:05:11,930 --> 00:05:14,770
+Beh, fondamentalmente, fidatevi, è così.
+
+71
+00:05:14,770 --> 00:05:20,630
+Adesso colleghiamo l'alimentazione e guardiamo l'oscilloscopio, sì.
+
+72
+00:05:20,950 --> 00:05:23,910
+Come si fa a mettere a punto la frequenza di risonanza di questa bobina?
+
+73
+00:05:24,730 --> 00:05:28,570
+Sì, cioè, certo, bisogna calcolare tutto il coso, ma come si mette a punto?
+
+74
+00:05:29,210 --> 00:05:33,510
+Come è noto, qui ho la frequenza e il duty cycle delle raffiche.
+
+75
+00:05:34,350 --> 00:05:39,330
+In questo momento, adesso, questo sarà un generatore lineare, un generatore normale, che avvieremo ora.
+
+76
+00:05:39,410 --> 00:05:40,170
+Quindi, lo accendiamo.
+
+77
+00:05:40,950 --> 00:05:43,210
+Quindi, l'ho acceso, ha saltato il fusibile.
+
+78
+00:05:43,890 --> 00:05:48,490
+A quanto pare, sì, è così.
+
+79
+00:05:48,810 --> 00:05:52,430
+Ha saltato il fusibile, troppa corrente.
+
+80
+00:05:53,690 --> 00:05:55,370
+Insomma, una merda, certo, sì.
+
+81
+00:05:55,970 --> 00:06:00,690
+Quindi, quello che voglio dire, non voglio toccarlo adesso, sì, cioè mettere in moto tutto questo.
+
+82
+00:06:00,810 --> 00:06:04,350
+Nel prossimo video mostrerò come funziona la Tesla, ma lo spiego.
+
+83
+00:06:05,010 --> 00:06:18,510
+Quindi, adesso il fusibile dovrà essere sostituito con uno nuovo, perché durante la messa a punto iniziale il duty cycle, il duty cycle minimo è impostato, sia minimo, sia la frequenza da qualche parte nel mezzo.
+
+84
+00:06:18,670 --> 00:06:21,510
+Ma il duty cycle è portato al minimo e si guarda la corrente.
+
+85
+00:06:22,730 --> 00:06:35,610
+Non appena, quindi, alzate la frequenza, alzato il duty cycle di pochissimo, cominciate a ruotare la frequenza, la sonda è appoggiata da qualche parte vicino e guardate l'oscilloscopio.
+
+86
+00:06:35,610 --> 00:06:49,130
+Non appena appare qui una sinusoide pulita, sì, cioè appare una sinusoide pulita che non è storta, niente kink lì, ma appare una sinusoide pulita, scorrete la frequenza e
+
+87
+00:06:49,130 --> 00:06:53,330
+guardate in quali range esiste ancora questa sinusoide pulita.
+
+88
+00:06:53,850 --> 00:06:59,230
+E allo stesso tempo — questo è il modo più semplice per mettere a punto — guardate la corrente, quanto consuma il sistema.
+
+89
+00:06:59,350 --> 00:07:03,350
+Ripeto ancora, in questo momento non dovete spingere il sistema a tutto gas.
+
+90
+00:07:04,410 --> 00:07:05,690
+Guardate la corrente.
+
+91
+00:07:05,770 --> 00:07:09,350
+Dovete scegliere la corrente in modo che sia minima.
+
+92
+00:07:10,350 --> 00:07:13,250
+E qui l'ampiezza massima della sinusoide.
+
+93
+00:07:13,910 --> 00:07:22,670
+In questo momento, mentre mettete a punto la Tesla, la Tesla deve stare ferma in un posto così, fissata, senza niente vicino — beh, qui ho tutta una serie di roba.
+
+94
+00:07:23,310 --> 00:07:28,530
+Non vi consiglio di tenere niente vicino, né ferro, né pareti, niente.
+
+95
+00:07:28,530 --> 00:07:29,850
+Tutto più lontano.
+
+96
+00:07:30,890 --> 00:07:34,390
+Quindi, l'avete messa a punto, cioè, avete visto una sinusoide pulita.
+
+97
+00:07:34,890 --> 00:07:35,330
+Cosa dopo?
+
+98
+00:07:36,070 --> 00:07:40,950
+Dopo, togliamo l'alimentazione e rimettiamo il nostro chip.
+
+99
+00:07:41,850 --> 00:07:49,450
+NC74, NC14, è il secondo generatore che controllerà il primo generatore a impulsi a raffica.
+
+100
+00:07:50,090 --> 00:07:51,450
+Cioè, è obbligatorio.
+
+101
+00:07:51,990 --> 00:07:57,430
+Quindi, qui non si parla di Tesla che strillano, questo è qualcosa di completamente diverso, non confondetelo, per favore.
+
+102
+00:07:57,430 --> 00:08:02,490
+Una Tesla che strilla, il suo schema è assolutamente diverso da questo.
+
+103
+00:08:03,210 --> 00:08:07,090
+Quindi, nel prossimo video mostrerò come funziona tutto questo sistema.
+
+104
+00:08:07,970 --> 00:08:16,110
+Per adesso ho bisogno di trovare rapidamente un fusibile, sostituire tutto e mostrerò come si avvia e come funziona.
+
+105
+00:08:16,910 --> 00:08:19,230
+Ecco, ci vediamo nel prossimo video sul mio canale.
