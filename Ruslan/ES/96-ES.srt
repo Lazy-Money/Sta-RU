@@ -1,0 +1,363 @@
+1
+00:00:01,320 --> 00:00:07,960
+Hoy les voy a contar cómo armé un generador de energía libre sin combustible.
+
+2
+00:00:08,220 --> 00:00:12,860
+Quizá a alguien le parezca raro, pero el hecho está a la vista.
+
+3
+00:00:12,980 --> 00:00:18,480
+Todo este sistema funciona, si no, no habría gastado dinero ni tiempo en esto.
+
+4
+00:00:19,260 --> 00:00:26,060
+De todos modos, por ahora es un aparato de banco que, lamentablemente, todavía hace caprichos.
+
+5
+00:00:26,200 --> 00:00:29,480
+Simplemente no lo terminé, no me alcanza el tiempo para todo.
+
+6
+00:00:30,400 --> 00:00:36,680
+Todo esto hay que meterlo apretado en una cajita, cerrarlo, para que no quede todo tirado.
+
+7
+00:00:37,300 --> 00:00:42,520
+Aquí ya me compré una bien linda, así que pronto va a estar montado.
+
+8
+00:00:42,820 --> 00:00:47,700
+De todos modos, solo quiero mostrarles el principio de funcionamiento de todo este sistema.
+
+9
+00:00:47,700 --> 00:01:01,420
+Aquí, en este momento, tenemos una fuente de alimentación conmutada de 24 V, 10 A.
+
+10
+00:01:02,240 --> 00:01:07,520
+Un bloque de alta tensión del Kacher de 15 kV.
+
+11
+00:01:08,040 --> 00:01:11,660
+Un sistema de automatización y control.
+
+12
+00:01:12,500 --> 00:01:21,080
+Y un generador de impulsos rectangulares con aislamiento a través de un transformador de ferrita de alta frecuencia.
+
+13
+00:01:21,580 --> 00:01:24,360
+Aquí tiene 12 vueltas en cada uno.
+
+14
+00:01:25,100 --> 00:01:30,740
+Y condensadores de filtrado, un puente de diodos a la salida de la bobina.
+
+15
+00:01:31,820 --> 00:01:33,820
+Que es justamente la bobina.
+
+16
+00:01:34,060 --> 00:01:35,560
+Y después la bobina Tesla, el Kacher.
+
+17
+00:01:36,260 --> 00:01:37,080
+Bueno, ¿qué?
+
+18
+00:01:37,520 --> 00:01:42,620
+Todo este aparataje, claro, hay que saber cómo bobinarlo y ajustarlo, porque no es tan simple.
+
+19
+00:01:42,880 --> 00:01:46,880
+Así que no intenten calcular las vueltas, bobinar y ajustar.
+
+20
+00:01:47,660 --> 00:01:49,680
+No va a salir todo así nomás.
+
+21
+00:01:49,820 --> 00:01:50,340
+Créanme.
+
+22
+00:01:51,240 --> 00:01:59,900
+Estuve un mes peleándome para estudiarlo y otro mes para experimentar y lograr algún resultado.
+
+23
+00:02:00,020 --> 00:02:02,440
+Bueno, encendamos ahora el sistema.
+
+24
+00:02:03,780 --> 00:02:04,960
+Así, aquí arrancó.
+
+25
+00:02:05,100 --> 00:02:07,320
+Están encendidas tres lámparas de 100 vatios.
+
+26
+00:02:08,660 --> 00:02:13,380
+Y aquí está la batería, que ahora podemos simplemente desconectar.
+
+27
+00:02:13,760 --> 00:02:16,400
+Como vemos, el sistema sigue funcionando.
+
+28
+00:02:16,960 --> 00:02:18,500
+Y la batería la saqué.
+
+29
+00:02:19,440 --> 00:02:22,880
+Todo funciona de manera estable.
+
+30
+00:02:23,200 --> 00:02:29,520
+El voltaje, eso sí, lamentablemente, aquí a la salida no es de 220 voltios, un poco menos, 172 voltios.
+
+31
+00:02:29,600 --> 00:02:34,440
+Pero por ahora es un problema temporal.
+
+32
+00:02:34,580 --> 00:02:36,600
+Como ven, el tester está enchufado en el toma.
+
+33
+00:02:37,460 --> 00:02:39,680
+Y aquí está la carga.
+
+34
+00:02:40,360 --> 00:02:45,280
+Se puede apagar, se puede encender.
+
+35
+00:02:46,100 --> 00:02:46,960
+Todo pasa.
+
+36
+00:02:47,300 --> 00:02:48,560
+172 voltios.
+
+37
+00:02:48,820 --> 00:02:49,800
+Se mantienen estables.
+
+38
+00:02:50,120 --> 00:02:53,240
+Por ahora sí, hay que trastear un poco.
+
+39
+00:02:54,220 --> 00:03:01,660
+Llevé todo este sistema a resonancia, pero hay algunas cosas que hay que, vale la pena, pulir.
+
+40
+00:03:02,380 --> 00:03:06,560
+Y, lamentablemente, por ahora.
+
+41
+00:03:07,080 --> 00:03:08,720
+Pero el sistema funciona.
+
+42
+00:03:09,140 --> 00:03:12,560
+Aquí quería poner fusibles.
+
+43
+00:03:14,060 --> 00:03:17,300
+Hice una bornera de 24 voltios para la batería.
+
+44
+00:03:18,160 --> 00:03:19,560
+La cajita la cerramos después.
+
+45
+00:03:20,980 --> 00:03:25,320
+El voltaje, como ven, marca el consumo.
+
+46
+00:03:25,360 --> 00:03:26,440
+Miente un poco, claro.
+
+47
+00:03:26,780 --> 00:03:32,060
+Seguramente, por las interferencias, unos 10 amperios.
+
+48
+00:03:33,180 --> 00:03:35,060
+Aquí la bobina está funcionando.
+
+49
+00:03:35,640 --> 00:03:37,980
+No se recomienda acercarse mucho.
+
+50
+00:03:40,120 --> 00:03:42,120
+Este es el generador que salió.
+
+51
+00:03:42,340 --> 00:03:49,920
+Ahora lo apagamos e intentamos arrancarlo de nuevo.
+
+52
+00:03:50,240 --> 00:03:55,620
+Ven, no enciende, porque hay que poner la batería y dar un impulso desde la batería.
+
+53
+00:03:55,880 --> 00:03:57,440
+Así no arranca.
+
+54
+00:03:58,440 --> 00:04:03,680
+La batería la desconecté, pero puedo ponerla otra vez, mostrar cómo pasa.
+
+55
+00:04:04,280 --> 00:04:08,320
+Ahora busco los cables que ya tiré para abajo.
+
+56
+00:04:12,420 --> 00:04:14,240
+Se va a escapar ahora.
+
+57
+00:04:16,940 --> 00:04:19,600
+Qué sistema más asqueroso.
+
+58
+00:04:20,140 --> 00:04:22,260
+Se cae constantemente.
+
+59
+00:04:28,620 --> 00:04:30,020
+Se sostiene.
+
+60
+00:04:30,680 --> 00:04:31,300
+Maravilloso.
+
+61
+00:04:32,360 --> 00:04:37,400
+En fin, conectado.
+
+62
+00:04:38,480 --> 00:04:40,140
+Arranquemos otra vez.
+
+63
+00:04:41,500 --> 00:04:43,480
+El sistema se encendió.
+
+64
+00:04:44,380 --> 00:04:46,980
+Ahora se puede desconectar.
+
+65
+00:04:47,160 --> 00:04:49,560
+Todo va a funcionar de manera estable.
+
+66
+00:04:50,220 --> 00:04:50,920
+Ningún problema.
+
+67
+00:04:51,040 --> 00:04:52,020
+La batería se puede sacar.
+
+68
+00:04:53,740 --> 00:04:54,880
+Todo igual.
+
+69
+00:04:54,960 --> 00:04:59,560
+Ah, ya se estabilizó más o menos el voltaje, 172 voltios.
+
+70
+00:04:59,800 --> 00:05:00,580
+Las lámparas están encendidas.
+
+71
+00:05:02,080 --> 00:05:04,380
+No arden a pleno, pero arden.
+
+72
+00:05:05,380 --> 00:05:13,040
+Todo el voltaje está cayendo ahora en estos diodos, lamentablemente, porque los diodos no se pueden tener mucho tiempo en funcionamiento.
+
+73
+00:05:13,220 --> 00:05:14,340
+Se calientan muchísimo.
+
+74
+00:05:14,440 --> 00:05:16,200
+Hay que poner diodos de alta frecuencia.
+
+75
+00:05:17,020 --> 00:05:22,720
+Diodos de alta frecuencia para semejante potencia, lamentablemente, no logré conseguir.
+
+76
+00:05:22,880 --> 00:05:34,920
+Por eso pienso que hay que bajar la frecuencia del generador y buscar la manera de hacer un sistema más estable.
+
+77
+00:05:35,800 --> 00:05:47,260
+Se va a poder arrancar también con diodos simples, o incluso, digamos, usar un diodo así, de 50 amperios y 50 hercios.
+
+78
+00:05:49,100 --> 00:05:53,500
+Eso sí, aquí, apenas lo puse, empezó a calentarse todavía peor.
+
+79
+00:05:53,860 --> 00:05:55,160
+Empezó la caída de corriente.
+
+80
+00:05:55,340 --> 00:05:58,220
+Sí, funciona un rato, después se calienta y empieza todo.
+
+81
+00:05:58,860 --> 00:06:00,940
+Aquí están los medidores.
+
+82
+00:06:01,500 --> 00:06:04,600
+Ahora en realidad tenemos 23 voltios de alimentación.
+
+83
+00:06:05,520 --> 00:06:14,720
+Entonces, 10 amperios de corriente y marca un voltaje de alimentación de 13,5 voltios al ventilador y a todo el sistema.
+
+84
+00:06:14,760 --> 00:06:29,220
+Entonces, este es el estabilizador que marca... Mejor dicho, el voltímetro que marca la estabilización para el sistema de automatización y para el generador previo.
+
+85
+00:06:29,660 --> 00:06:32,520
+A los transistores de conmutación ya les va otro voltaje.
+
+86
+00:06:33,260 --> 00:06:34,300
+24 voltios.
+
+87
+00:06:34,840 --> 00:06:36,040
+Bueno, ahí está, este tipo de sistema.
+
+88
+00:06:36,320 --> 00:06:37,100
+Así funciona.
+
+89
+00:06:37,520 --> 00:06:38,400
+Ahora lo apagamos.
+
+90
+00:06:40,560 --> 00:06:42,020
+Anímense, si a alguien le interesa.
+
+91
+00:06:43,100 --> 00:06:43,600
+Así nomás.
