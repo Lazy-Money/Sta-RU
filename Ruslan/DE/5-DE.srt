@@ -1,0 +1,1243 @@
+1
+00:00:01,210 --> 00:00:05,170
+Hallo zusammen, und das möchte ich euch zeigen.
+
+2
+00:00:05,450 --> 00:00:15,830
+Hier ist die Synchronisationsplatine und die Generatoren — Push-Pull, wie man so sagt — und ihr Zubehör: Nanosekunden-Stufen und so weiter.
+
+3
+00:00:15,970 --> 00:00:20,910
+Zuerst eine nicht ganz fertige Platine, und dann diese hier, die vollständig aufgebaut ist.
+
+4
+00:00:22,150 --> 00:00:35,630
+Die Bauqualität ist im Großen und Ganzen ganz gut, aber es fehlt ein Kondensator — derjenige, der die Versorgung glättet und parasitäres Rauschen entfernt.
+
+5
+00:00:36,750 --> 00:00:55,930
+Das ist ein Hinweis für Bastler, die gerne alles mit langen Drähten löten, ohne Entkopplungskondensatoren zu verwenden und, wie man sagt, auf Lochrasterplatinen herumstümpern. Also,
+
+6
+00:00:55,930 --> 00:00:57,150
+das ist noch mehr oder weniger okay.
+
+7
+00:00:57,370 --> 00:01:06,390
+Auf einem Steckbrett, wenn sie etwas machen, in dem weißen, das sie verkaufen, stecken sie Sachen rein und verbinden den Chip mit kleinen Drähten.
+
+8
+00:01:07,230 --> 00:01:12,630
+Stellt euch vor, was da passieren kann, wenn sie sich später beschweren, dass nichts bei ihnen funktioniert.
+
+9
+00:01:13,710 --> 00:01:19,170
+Also möchte ich euch das Wichtigste zeigen — das Oszilloskop ist eingeschaltet.
+
+10
+00:01:19,390 --> 00:01:22,250
+Zwei Kanäle und das Netzteil.
+
+11
+00:01:22,330 --> 00:01:23,490
+Wir schalten das Netzteil ein.
+
+12
+00:01:23,890 --> 00:01:24,610
+Und das sehen wir.
+
+13
+00:01:25,330 --> 00:01:30,710
+Wir sehen eine Impulsfolge, die völlig überall verteilt ist, einfach zum Teufel.
+
+14
+00:01:31,450 --> 00:01:37,190
+Und was am unangenehmsten ist: Wir sehen hier einen extra Impuls auftauchen.
+
+15
+00:01:37,490 --> 00:01:40,810
+Ja, ich meine, das ist kompletter Unsinn.
+
+16
+00:01:41,230 --> 00:01:47,070
+Also, damit das nicht passiert, muss man die Platine erst mal genau so löten.
+
+17
+00:01:47,470 --> 00:01:49,470
+Schaut, da hängen zwei Kondensatoren.
+
+18
+00:01:49,570 --> 00:01:54,450
+Diese Kondensatoren werden entfernt, weil ich beim Einstellen einfach welche dazustecken und beobachten musste.
+
+19
+00:01:55,150 --> 00:01:56,610
+Also sitzt hier ein Treiber.
+
+20
+00:01:56,690 --> 00:01:59,910
+Ich zeige ihn euch etwas später von dieser Seite.
+
+21
+00:02:00,030 --> 00:02:00,830
+Hier ist seine Versorgung.
+
+22
+00:02:01,770 --> 00:02:04,130
+Also ist kein Entkopplungskondensator drauf.
+
+23
+00:02:04,290 --> 00:02:10,170
+Da, bitte, ihr seht jetzt Störimpulse, die herumspringen, alles mögliche Zeug.
+
+24
+00:02:10,690 --> 00:02:22,230
+Also, ihr müsst verstehen: Wenn die Platine im Grunde zusammengewürfelt und alles falsch gemacht ist, wird nichts funktionieren, erst recht nicht.
+
+25
+00:02:22,390 --> 00:02:26,590
+Ganz zu schweigen davon, dass viele Leute das Wesentliche überhaupt nicht verstehen.
+
+26
+00:02:27,130 --> 00:02:33,570
+Das heißt, sie haben das alles auf einem Steckbrett zusammengelötet und dann die Spule noch näher herangebracht.
+
+27
+00:02:33,730 --> 00:02:42,910
+Das heißt, sie haben Hochspannung angelegt und völlig vergessen, dass diese Hochspannung anfangen wird, die gesamte Konstruktion eures Generators und so weiter zu beeinflussen.
+
+28
+00:02:42,990 --> 00:02:43,770
+Und alles fällt auseinander.
+
+29
+00:02:44,010 --> 00:02:47,650
+Und dann schreien sie, dass nichts funktioniert, das Schema sei Mist.
+
+30
+00:02:48,850 --> 00:02:51,930
+Ruslan erklärt es falsch und versteht nichts.
+
+31
+00:02:52,570 --> 00:02:52,890
+Da.
+
+32
+00:02:53,030 --> 00:02:56,970
+Aber zuallererst möchte ich sagen: Bei manchen Leuten wachsen die Hände aus dem falschen Ende.
+
+33
+00:02:57,070 --> 00:02:59,030
+Das ist das Hauptproblem.
+
+34
+00:02:59,150 --> 00:03:02,570
+Ich sage es ehrlich und offen — anders geht es nicht.
+
+35
+00:03:02,830 --> 00:03:16,890
+Also, dieser Kanal ist für alle, die daran interessiert sind, diese Art von Umgebungsenergie-Generatoren zu bauen.
+
+36
+00:03:17,690 --> 00:03:24,670
+Das Hauptproblem ist, dass Leute nicht mit dem Klassischen, dem Elementaren anfangen können.
+
+37
+00:03:24,950 --> 00:03:27,350
+Das heißt, sie können nicht mal ordentlich etwas löten.
+
+38
+00:03:27,590 --> 00:03:29,890
+Was soll man da noch über alles andere sagen?
+
+39
+00:03:30,570 --> 00:03:41,590
+Also, nehmen wir einen 100-nF-Bypass-Kondensator und klatschen ihn hier drauf, an die Versorgung des Treiber-ICs.
+
+40
+00:03:41,730 --> 00:03:42,850
+Und wir beobachten, was passiert.
+
+41
+00:03:42,950 --> 00:03:43,910
+Schaut genau hin.
+
+42
+00:03:45,510 --> 00:03:47,470
+Seht ihr, der Impuls ist normal geworden.
+
+43
+00:03:47,850 --> 00:03:51,250
+Wie es sein soll, kein Störsignal drumherum.
+
+44
+00:03:51,970 --> 00:03:53,210
+Ich lasse los — da haben wir's.
+
+45
+00:03:54,130 --> 00:03:55,470
+Totaler Schwachsinn.
+
+46
+00:03:55,870 --> 00:03:57,210
+Und er wandert hier auch herum.
+
+47
+00:03:57,270 --> 00:04:05,490
+Aber stellt euch vor, wie der Schaltkreis arbeiten wird, wenn ich Hochspannung in die Nähe bringe — das ist der Treiber, der die Tesla antreibt.
+
+48
+00:04:05,590 --> 00:04:07,070
+Hier hängt die Messspitze.
+
+49
+00:04:07,350 --> 00:04:09,650
+Das andere Ende an ihr selbst.
+
+50
+00:04:09,710 --> 00:04:14,530
+Jetzt schalte ich die Versorgung ab, damit ich euch zeigen kann, was ich hier vorbereitet habe.
+
+51
+00:04:15,290 --> 00:04:20,210
+Also in diesem System wird Push-Pull verwendet.
+
+52
+00:04:20,670 --> 00:04:22,710
+Das heißt, es ist ein Generator auf einem TL-Chip.
+
+53
+00:04:22,830 --> 00:04:23,570
+Da ist er, auf einem TL.
+
+54
+00:04:23,750 --> 00:04:25,370
+Das ist der Generator.
+
+55
+00:04:25,970 --> 00:04:26,850
+Hier sind die Arme.
+
+56
+00:04:26,950 --> 00:04:32,550
+Einer davon hängt an einem Draht an der Messspitze.
+
+57
+00:04:32,650 --> 00:04:37,630
+Hier ist ein Drei-Arm-Anschluss und das Gehäuse.
+
+58
+00:04:38,590 --> 00:04:43,050
+Und hier ist der Treiber, an den wir gerade eben den Kondensator gehängt haben.
+
+59
+00:04:43,170 --> 00:04:45,710
+Das heißt an diese Pins.
+
+60
+00:04:46,950 --> 00:04:48,590
+Was passiert hier?
+
+61
+00:04:49,370 --> 00:04:51,530
+Was passiert, ist das, was viele Leute nicht verstehen.
+
+62
+00:04:51,770 --> 00:04:53,630
+Dass man Entkopplungskondensatoren braucht.
+
+63
+00:04:53,770 --> 00:05:00,130
+Man muss den Minus-Pin korrekt führen.
+
+64
+00:05:00,410 --> 00:05:03,390
+Auf dieser Platine ist er absolut korrekt geführt.
+
+65
+00:05:04,210 --> 00:05:06,770
+Er führt quer über die ganze Platine.
+
+66
+00:05:07,670 --> 00:05:08,550
+Läuft ringsherum.
+
+67
+00:05:08,990 --> 00:05:10,670
+Außerdem kommt das Plus in der Mitte rein.
+
+68
+00:05:10,810 --> 00:05:13,530
+Genauso wie die Versorgung auch in der Mitte reinkommt.
+
+69
+00:05:13,970 --> 00:05:20,710
+Und alle Plus- und Minus-Leitungen für die Chipversorgung werden von einem einzigen Punkt abgenommen.
+
+70
+00:05:20,790 --> 00:05:22,010
+Deshalb ist hier alles in Ordnung.
+
+71
+00:05:22,650 --> 00:05:29,950
+Aber es gibt einen Chip — da ich alles auf eine kleine Platine gepackt habe — der hier oben gelandet ist.
+
+72
+00:05:30,670 --> 00:05:35,410
+Das heißt, bei ihm taucht jetzt dieser Fehler auf.
+
+73
+00:05:35,930 --> 00:05:38,530
+Das heißt, ihr habt am Oszilloskop gesehen, was ich gezeigt habe.
+
+74
+00:05:39,130 --> 00:05:48,330
+Also, ein Hinweis für Bastler, die auf Gott weiß was löten — auf Pappe — und mit Drähten verbinden und so weiter.
+
+75
+00:05:48,430 --> 00:05:52,270
+Stellt euch vor, was ihr da für Störsignale aufnehmt.
+
+76
+00:05:52,470 --> 00:06:02,730
+Natürlich braucht man dafür ordentliche Ausrüstung und muss alles ordentlich zusammenbauen, sozusagen alles zusammen.
+
+77
+00:06:03,190 --> 00:06:04,450
+Um zu verstehen.
+
+78
+00:06:05,730 --> 00:06:06,430
+Das ist erstens.
+
+79
+00:06:06,770 --> 00:06:07,350
+Zweitens.
+
+80
+00:06:08,970 --> 00:06:14,810
+Ich habe es schon viele Male gesagt, ich wiederhole es noch einmal: Dieses Schema ist voll funktionsfähig.
+
+81
+00:06:15,650 --> 00:06:27,190
+Wenn ihr einfach versteht, was in diesem Schaltkreis passiert, wie dieser Knoten funktioniert, diese Spule, wie sie mit diesem Knoten gekoppelt ist.
+
+82
+00:06:27,290 --> 00:06:31,430
+Das heißt, dieser Knoten kann leicht durch einen Schalenkern ersetzt werden, kein Problem.
+
+83
+00:06:32,010 --> 00:06:38,570
+Und die Spule wickeln, berechnen — außer für L4.
+
+84
+00:06:38,730 --> 00:06:42,330
+L4 ist die Pickup-Spule; die interessiert uns nicht.
+
+85
+00:06:42,490 --> 00:06:44,790
+Was passiert hier in diesem ganzen System?
+
+86
+00:06:44,930 --> 00:06:47,690
+Hier kann man es sowohl mit einer Tesla als auch mit einem Nanosekunden-Generator antreiben.
+
+87
+00:06:47,970 --> 00:06:57,590
+Im Grunde reicht der Nanosekunden-Generator aus, um anzufangen, das Magnetfeld zu beeinflussen, das sich hier in Resonanz mit dieser Spule bildet.
+
+88
+00:06:58,290 --> 00:07:06,990
+Und wenn man den Strom an dieser Stelle misst, sehen wir sofort diese Spitzen.
+
+89
+00:07:07,290 --> 00:07:09,310
+Am Oszilloskop sind sie sehr gut zu sehen.
+
+90
+00:07:09,490 --> 00:07:15,450
+Hier, mit diesem Ring, legt ihr ihn auf den Draht, stellt maximale Empfindlichkeit ein, und das war's.
+
+91
+00:07:16,430 --> 00:07:18,290
+Wo bekommt man so einen Ring?
+
+92
+00:07:18,410 --> 00:07:22,210
+Indem man ein Schaltnetzteil eines Computers ausschlachtet.
+
+93
+00:07:22,310 --> 00:07:24,010
+Und man kann ihn dort leicht herausziehen.
+
+94
+00:07:24,610 --> 00:07:26,130
+Das heißt, im Grunde mache ich das so.
+
+95
+00:07:26,230 --> 00:07:31,450
+Sozusagen schlachte ich alte Netzteile aus und hole den Ring heraus.
+
+96
+00:07:31,590 --> 00:07:33,090
+Da saß er, an dieser Stelle.
+
+97
+00:07:33,670 --> 00:07:42,410
+Alles andere ist Schrott, denn die Ausgangskondensatoren sollte man auf keinen Fall verwenden — die sind alle schon ausgetrocknet.
+
+98
+00:07:42,810 --> 00:07:45,790
+Und diese beiden sind sogar aufgebläht.
+
+99
+00:07:46,730 --> 00:07:49,110
+Und viele Leute verwenden von hier einen TL-Chip.
+
+100
+00:07:49,310 --> 00:07:51,870
+Viele alte Netzteile haben einen TL-Chip drin.
+
+101
+00:07:52,570 --> 00:07:56,270
+Und sie finden ihn darin und fangen an, ihn direkt in dieses Ding einzulöten.
+
+102
+00:07:56,850 --> 00:07:58,210
+Na, was kann man noch alles hier herausreißen?
+
+103
+00:07:58,710 --> 00:08:05,130
+Man kann Drosseln, unpolare Kondensatoren, die Diodenbrücke herausziehen, man kann den Thyristor herausziehen.
+
+104
+00:08:05,450 --> 00:08:09,550
+Man kann die Dioden da entnehmen, wenn man wirklich überhaupt keine Bauteile hat.
+
+105
+00:08:10,190 --> 00:08:20,110
+Hier in Europa zum Beispiel haben wir keine Probleme mit Bauteilen, also wenn ihr wirklich mit irgendetwas anfangen wollt, fangt damit an, Kits zu kaufen.
+
+106
+00:08:20,790 --> 00:08:23,730
+Hier zum Beispiel ist ein Kit mit Keramikkondensatoren.
+
+107
+00:08:24,590 --> 00:08:34,070
+Im Grunde empfehle ich nicht, diese Art von Keramik bei hochpräzisen Generatoren zu verwenden, weil alles driftet.
+
+108
+00:08:34,430 --> 00:08:41,490
+Aber für Bypass irgendwo, oder wo man keine hochpräzisen Systeme braucht, reicht es völlig aus.
+
+109
+00:08:42,070 --> 00:08:42,810
+Und Widerstände.
+
+110
+00:08:43,370 --> 00:08:44,610
+Das ist ein Kit mit Widerständen.
+
+111
+00:08:44,750 --> 00:08:46,610
+Die haben hier verschiedene Werte.
+
+112
+00:08:47,270 --> 00:08:48,670
+Da gibt es eine ganze Menge davon.
+
+113
+00:08:48,750 --> 00:08:50,930
+Man kann mit diesen Widerständen anfangen.
+
+114
+00:08:51,390 --> 00:08:53,510
+Und dann weiter kaufen oder auffüllen.
+
+115
+00:08:53,710 --> 00:08:58,790
+Einfach, sagen wir mal, sucht euch solche kleinen Fächer.
+
+116
+00:08:58,870 --> 00:09:02,550
+Ich habe noch Boxen aus meiner Kindheit da oben.
+
+117
+00:09:02,710 --> 00:09:07,490
+Das heißt, das ist aus ungefähr '92-'93, als ich das alles gemacht habe.
+
+118
+00:09:07,570 --> 00:09:11,670
+Solche Stapel zusammengestellt, und diese Boxen haben bis heute überlebt.
+
+119
+00:09:11,870 --> 00:09:14,610
+Und die Widerstände darin sind alt.
+
+120
+00:09:14,810 --> 00:09:16,950
+Das heißt, ihr könnt mal reinschauen.
+
+121
+00:09:17,250 --> 00:09:20,090
+Es gibt keine 300-Kiloohm-Widerstände mehr.
+
+122
+00:09:20,250 --> 00:09:23,470
+Aber schaut — UdSSR.
+
+123
+00:09:23,710 --> 00:09:24,910
+Moderne UdSSR.
+
+124
+00:09:26,450 --> 00:09:28,550
+Die Boxen sind eigentlich aus Sowjetzeiten.
+
+125
+00:09:29,310 --> 00:09:30,890
+Und die Widerstände sind natürlich auch sowjetisch.
+
+126
+00:09:30,990 --> 00:09:35,050
+Wie eine seltene Sammlung von Widerständen.
+
+127
+00:09:35,110 --> 00:09:42,090
+Ich verwende sie nicht, aber ihr könnt mal schauen — es gibt auch viele Widerstände aus Funkgeräten.
+
+128
+00:09:43,070 --> 00:09:44,870
+Und da gibt es auch Boxen — schaut mal rein.
+
+129
+00:09:45,510 --> 00:09:47,590
+Im Moment benutze ich diese Art von kleinen Boxen.
+
+130
+00:09:47,730 --> 00:09:48,530
+Die sind sehr praktisch.
+
+131
+00:09:49,210 --> 00:09:55,650
+Zuallererst wird Bastlern empfohlen, diese Art zu kaufen.
+
+132
+00:09:55,770 --> 00:09:57,010
+Die kosten nicht so viel.
+
+133
+00:09:57,170 --> 00:09:59,810
+Na ja, ihr füllt sie mit Transistoren, Widerständen.
+
+134
+00:10:00,530 --> 00:10:00,970
+Da haben wir's.
+
+135
+00:10:01,250 --> 00:10:06,770
+Das heißt, alles schön und, sozusagen, totale Ordnung.
+
+136
+00:10:07,110 --> 00:10:09,650
+Na ja, und Ordnung beim Umsetzen von Schemata.
+
+137
+00:10:09,750 --> 00:10:10,770
+Dann wird alles gut.
+
+138
+00:10:13,850 --> 00:10:17,230
+Ihr seht, dass Akula schön und ordentlich lötet.
+
+139
+00:10:18,090 --> 00:10:20,350
+Er hat beim Löten immer die Taschenlampe gedreht.
+
+140
+00:10:20,470 --> 00:10:22,010
+Das heißt, alles ist schön gelötet.
+
+141
+00:10:22,550 --> 00:10:24,010
+Deshalb funktioniert alles.
+
+142
+00:10:25,110 --> 00:10:27,010
+Na ja, und natürlich die Prozesse verstehen.
+
+143
+00:10:27,210 --> 00:10:28,450
+Da kommt man nicht drum herum.
+
+144
+00:10:29,010 --> 00:10:34,630
+Aber zuallererst möchte ich sagen: Wenn ihr einen Prozess starten wollt, stellt euch vor — hier ist so eine Platine.
+
+145
+00:10:35,270 --> 00:10:36,750
+Das heißt, diese Platine ist noch okay.
+
+146
+00:10:36,990 --> 00:10:37,930
+Die hält alles aus.
+
+147
+00:10:38,870 --> 00:10:40,870
+Natürlich muss man Glasfaser darunter legen.
+
+148
+00:10:41,030 --> 00:10:42,170
+Wie zum Beispiel hier.
+
+149
+00:10:43,790 --> 00:10:46,690
+Der Impulsfolgen-Generator war hier und ist es noch.
+
+150
+00:10:46,850 --> 00:10:47,990
+Im Grunde funktioniert er sogar.
+
+151
+00:10:48,110 --> 00:10:49,210
+Das ist der Schalter.
+
+152
+00:10:49,570 --> 00:10:52,070
+Ein Lüfter hängt daran.
+
+153
+00:10:52,610 --> 00:10:54,450
+Ich habe damit die Tesla betrieben.
+
+154
+00:10:54,770 --> 00:10:56,310
+Worauf ist er aufgebaut?
+
+155
+00:10:57,150 --> 00:10:59,350
+Er ist auf einem Stück Glasfaser wie diesem aufgebaut.
+
+156
+00:10:59,410 --> 00:11:00,310
+Auf einem gebohrten Loch.
+
+157
+00:11:00,390 --> 00:11:01,770
+Das heißt auf einem Abstandshalter.
+
+158
+00:11:02,130 --> 00:11:03,070
+Und da sitzt alles.
+
+159
+00:11:03,230 --> 00:11:04,910
+Das heißt auf diesem Ding.
+
+160
+00:11:05,070 --> 00:11:05,950
+Na gut.
+
+161
+00:11:06,350 --> 00:11:11,430
+Das heißt, Glasfaser beseitigt mehr oder weniger alle Einstreuung und Störsignale und so weiter.
+
+162
+00:11:11,530 --> 00:11:13,350
+Wenn man es erdet, natürlich.
+
+163
+00:11:13,410 --> 00:11:14,450
+Ordentlich.
+
+164
+00:11:15,070 --> 00:11:19,510
+Und der Lüfter, der Kühlkörper, alles ist geerdet, ordentlich gemacht.
+
+165
+00:11:19,930 --> 00:11:21,230
+Deshalb funktioniert das alles.
+
+166
+00:11:22,210 --> 00:11:30,110
+Aber wenn es um die zusammengewürfelten Chaos-Aufbauten geht, die ich bei vielen Leuten sehe, ist das einfach ein Albtraum.
+
+167
+00:11:30,550 --> 00:11:36,250
+Und danach beschimpft ihr Ruslan und sagt, er hat irgendein falsches, unklares Schema gegeben oder so was.
+
+168
+00:11:37,190 --> 00:11:38,150
+Oder ihr versteht nicht.
+
+169
+00:11:38,770 --> 00:11:42,230
+Tatsächlich gibt es im Internet absolut funktionsfähige Schemata.
+
+170
+00:11:42,330 --> 00:11:42,730
+Es gibt viele davon.
+
+171
+00:11:43,410 --> 00:11:45,610
+Sie enthüllen das gesamte Wesentliche des Verständnisses.
+
+172
+00:11:45,730 --> 00:11:48,110
+Das Einzige ist, dass die Leute nicht verstehen wie und was.
+
+173
+00:11:49,010 --> 00:11:51,530
+Aber ich sage es noch einmal: In der Spule ist Strom.
+
+174
+00:11:52,650 --> 00:11:54,270
+Eine Strombewegung findet statt.
+
+175
+00:11:54,550 --> 00:11:58,370
+Genauer gesagt, der Strom erzeugt ein Magnetfeld.
+
+176
+00:11:58,430 --> 00:11:59,810
+Das Magnetfeld erzeugt Strom.
+
+177
+00:12:00,430 --> 00:12:04,510
+Das heißt, wenn ein starkes Magnetfeld vorhanden ist, erzeugt es natürlich eine Strombewegung.
+
+178
+00:12:05,010 --> 00:12:12,970
+Das Magnetfeld, wenn ein Impuls auf das Medium trifft — genauer gesagt, direkt neben dem Magnetfeld — nun, das Magnetfeld in der Spule.
+
+179
+00:12:13,690 --> 00:12:16,150
+Und was machen wir?
+
+180
+00:12:16,230 --> 00:12:22,610
+Wir schlagen — übrigens, diese Glühbirnen, die ihr gesehen habt.
+
+181
+00:12:23,010 --> 00:12:24,070
+Hier ist zum Beispiel die Spule.
+
+182
+00:12:24,430 --> 00:12:25,150
+Da ist sie.
+
+183
+00:12:25,750 --> 00:12:27,330
+Was passiert hier?
+
+184
+00:12:27,830 --> 00:12:29,650
+Hier entsteht ein Magnetfeld.
+
+185
+00:12:29,970 --> 00:12:31,950
+Speziell in dieser Drossel.
+
+186
+00:12:32,010 --> 00:12:32,790
+Was machen wir?
+
+187
+00:12:32,850 --> 00:12:35,010
+Wir schlagen hier, an dieser Stelle.
+
+188
+00:12:36,850 --> 00:12:41,110
+So deformieren wir das Magnetfeld, das anfängt zu schwingen.
+
+189
+00:12:41,870 --> 00:12:50,570
+Wenn wir es einfach in einer Sinuswelle auslöschen, sozusagen — wir schauen auf das Oszilloskop, es verschiebt es um 90 Grad, und na ja, eigentlich passiert nichts.
+
+190
+00:12:52,010 --> 00:12:55,390
+Wir brauchen dieses Magnetfeld, damit es hin und her schwingt.
+
+191
+00:12:56,210 --> 00:13:05,370
+Damit es schwingt, müssen wir die Spule korrekt in ihre eigene Resonanz bringen, wo dieses Magnetfeld genau gebildet wird.
+
+192
+00:13:05,530 --> 00:13:10,290
+Aber viele Leute verstehen das nicht — sie hängen einen Haufen Kondensatoren und so weiter dran.
+
+193
+00:13:11,710 --> 00:13:15,030
+Sie haben bereits einen Haufen dieser Kondensatoren irgendwo gekauft, bestellt.
+
+194
+00:13:15,810 --> 00:13:19,810
+Es gibt hier auch einen ganzen Stapel MKP-Typen.
+
+195
+00:13:20,610 --> 00:13:24,450
+Und sie verwenden sie, ohne zu wissen, wofür dieser Kondensator in meinem Aufbau da ist.
+
+196
+00:13:25,090 --> 00:13:28,250
+Na ja, das ist totaler Unsinn.
+
+197
+00:13:28,550 --> 00:13:33,130
+Man muss das Wesentliche des Prozesses verstehen — was passiert, warum und wie.
+
+198
+00:13:33,250 --> 00:13:41,190
+Und dieses Schema legt wirklich alle Karten auf den Tisch, na ja, für Fans und diejenigen, die das alles tatsächlich verstehen, sozusagen.
+
+199
+00:13:41,350 --> 00:13:48,330
+Aber leider sind diejenigen, die diese Schemata tatsächlich aufgebaut haben — die kann man an den Fingern abzählen, leider.
+
+200
+00:13:49,210 --> 00:13:57,370
+Und ja, alle schimpfen, schreien, so wie Angry Pirate da schreibt, wie 'oh, schon wieder angeben' und so was.
+
+201
+00:13:57,470 --> 00:13:59,050
+Aber ich bin es leid, alles vorzukauen.
+
+202
+00:13:59,770 --> 00:14:05,010
+Glaubt ihr, ich gebe kein Geld, Zeit und Mühe dafür aus?
+
+203
+00:14:05,090 --> 00:14:07,510
+Ich arbeite genauso wie alle anderen.
+
+204
+00:14:08,090 --> 00:14:14,710
+Ich arbeite, und ich sitze nachts — schaut, es ist halb drei Uhr, ja, die Nacht ist draußen vor dem Fenster.
+
+205
+00:14:15,250 --> 00:14:17,050
+Ich arbeite, ich sitze und arbeite.
+
+206
+00:14:18,550 --> 00:14:20,190
+Lasst uns zusammenarbeiten.
+
+207
+00:14:20,650 --> 00:14:21,650
+Ihr arbeitet auch.
+
+208
+00:14:22,930 --> 00:14:25,170
+Na ja, so in der Art, ja.
+
+209
+00:14:28,430 --> 00:14:36,290
+Ihr müsst einfach verstehen, dass all diese Dinge — Entkopplungskondensatoren, das alles.
+
+210
+00:14:36,430 --> 00:14:46,950
+Ich habe ein ganzes Paket gekauft, um sie genau hier einzusetzen, zum Entkoppeln, damit auf den Chips, untereinander, dieser Mist nicht vorhanden ist, den ihr gerade
+
+211
+00:14:46,950 --> 00:14:47,350
+gesehen habt.
+
+212
+00:14:48,210 --> 00:14:49,650
+Das stört den Betrieb.
+
+213
+00:14:49,810 --> 00:14:57,350
+Und all diese Störsignale werden noch mehr auftauchen, wenn ihr eine Tesla in der Nähe einschaltet oder, ich weiß nicht, einen Nanosekunden-Generator.
+
+214
+00:14:57,490 --> 00:14:58,490
+Was passiert dann?
+
+215
+00:14:59,310 --> 00:15:03,430
+Das alles muss abgedichtet, entkoppelt, behoben werden.
+
+216
+00:15:03,510 --> 00:15:05,570
+Übrigens, hier ist der Nanosekunden-Generator.
+
+217
+00:15:05,690 --> 00:15:07,710
+Ich habe gezeigt, wie dieses ganze System funktioniert.
+
+218
+00:15:08,450 --> 00:15:11,090
+Schaut, alles ist schön gelötet.
+
+219
+00:15:11,390 --> 00:15:14,330
+Das heißt, alle Bauteile — Bypass-Kondensatoren.
+
+220
+00:15:15,110 --> 00:15:16,610
+Was haben wir noch hier?
+
+221
+00:15:17,090 --> 00:15:22,910
+Eine Drossel, dann der Versorgungsanschluss, der Eingangsanschluss, der Ausgangsanschluss.
+
+222
+00:15:23,470 --> 00:15:25,210
+Hier ist alles schön.
+
+223
+00:15:25,490 --> 00:15:28,830
+Das heißt, es ist sogar schön anzusehen, man möchte es nicht auseinandernehmen.
+
+224
+00:15:29,570 --> 00:15:32,910
+Hier ist noch eine, die ich noch nicht fertig gelötet habe.
+
+225
+00:15:33,870 --> 00:15:39,130
+Aber trotzdem, merkt euch — Plus, Minus, wie sie verlegt sind, wo sie reinkommen.
+
+226
+00:15:39,210 --> 00:15:44,790
+In der Mitte des Systems, damit man anfangen kann, die Chips von einem einzigen Punkt aus zu versorgen.
+
+227
+00:15:45,950 --> 00:15:54,190
+Korrekt verteilte und positionierte Chips lassen uns sozusagen ein normales Gerät bauen, das normal ist.
+
+228
+00:15:54,510 --> 00:15:55,830
+Damit alles funktioniert.
+
+229
+00:15:56,930 --> 00:16:03,910
+Viele Leute verstehen das nicht — wahrscheinlich haben sie in der Kindheit keine Leistungsverstärker gelötet, keine Lautsprecher angetrieben.
+
+230
+00:16:04,230 --> 00:16:15,910
+Aber wenn ihr das gemacht habt, sogar mit dem gleichen UN-7- oder UN-4-Chip, wenn man keine Entkopplungskondensatoren an seine Pins und so weiter setzt, fängt er an zu schwingen.
+
+231
+00:16:16,770 --> 00:16:24,330
+Und wir bekommen nichts Gutes heraus, nur Überhitzung des Chips selbst, Versagen des Dies und so weiter.
+
+232
+00:16:26,770 --> 00:16:29,930
+Nur um zu erklären, worum es in diesem Video geht.
+
+233
+00:16:29,990 --> 00:16:35,470
+Viele knirschen mit den Zähnen, schreien, dass ihr es falsch erklärt oder so was.
+
+234
+00:16:36,450 --> 00:16:38,890
+Aber ihr arbeitet einfach nicht.
+
+235
+00:16:39,550 --> 00:16:39,970
+Das ist es.
+
+236
+00:16:40,830 --> 00:16:43,370
+Es dreht sich alles um die Arbeit.
+
+237
+00:16:44,010 --> 00:16:46,810
+Viele zählen Windungen auf Spulen, das alles.
+
+238
+00:16:47,150 --> 00:16:50,150
+Ich sage euch ehrlich — ihr braucht keine Windungen zu zählen.
+
+239
+00:16:50,770 --> 00:17:01,690
+Wenn ihr versteht, welcher Prozess in diesem Knoten zusammen mit dem Generatorknoten abläuft, werdet ihr sofort sehen, wo die Lösung liegt.
+
+240
+00:17:01,750 --> 00:17:03,790
+Und diese Lösung liegt genau hier in diesem Schema.
+
+241
+00:17:04,050 --> 00:17:06,530
+Es kursiert überall im Internet, volles Programm.
+
+242
+00:17:07,410 --> 00:17:10,950
+Und dann baut ihr diesen Generator ohne Probleme.
+
+243
+00:17:11,730 --> 00:17:16,790
+Natürlich ist die Leistung dieses gesamten Aufbaus sehr begrenzt.
+
+244
+00:17:18,130 --> 00:17:23,670
+Und der Prozess hier ist natürlich auch begrenzt.
+
+245
+00:17:23,990 --> 00:17:28,350
+Aber er deutet auf das Wesentliche von Hochleistungsaufbauten hin.
+
+246
+00:17:28,450 --> 00:17:29,390
+Das sage ich euch direkt.
+
+247
+00:17:30,070 --> 00:17:31,810
+Ich verrate euch dieses kleine Geheimnis.
+
+248
+00:17:32,310 --> 00:17:41,370
+Nun, alles Weitere — wenn ihr etwas bauen wollt, das eine 30-40-Watt-Glühbirne zum Leuchten bringt, oder größer, vielleicht 100-200 Watt.
+
+249
+00:17:41,430 --> 00:17:48,710
+Na ja, im Grunde wird euch dieses Ding sehr helfen, Dinge herauszufinden.
+
+250
+00:17:49,150 --> 00:18:00,990
+Natürlich ist es Unsinn, einen Belkin-Generator als antreibenden Generator zu verwenden — das heißt, als Nano-Impuls-Generator in diesem System.
+
+251
+00:18:01,530 --> 00:18:03,630
+Draht übrigens, ihr könnt jede Art verwenden.
+
+252
+00:18:03,890 --> 00:18:05,810
+Ihr müsst nur wissen, wie man ihn anpasst.
+
+253
+00:18:06,050 --> 00:18:07,930
+Und das ist auch leicht gemacht.
+
+254
+00:18:09,250 --> 00:18:11,250
+Was die Dioden betrifft.
+
+255
+00:18:11,430 --> 00:18:12,050
+Ja, Dioden.
+
+256
+00:18:12,290 --> 00:18:14,030
+Das Einzige — die Dioden hier sind gut.
+
+257
+00:18:14,570 --> 00:18:18,490
+Diese KD-203A sitzen sehr gut.
+
+258
+00:18:18,630 --> 00:18:21,610
+Sie halten den Lawinendurchbruch sehr gut aus.
+
+259
+00:18:22,290 --> 00:18:25,770
+Na ja, was würde ich noch gerne zu all dem hinzufügen?
+
+260
+00:18:25,910 --> 00:18:26,470
+Na ja, der Ring.
+
+261
+00:18:26,690 --> 00:18:28,310
+Mit dem Ring müsst ihr spielen.
+
+262
+00:18:29,030 --> 00:18:37,190
+Und es ist vorzuziehen, einen kleineren Ring zu nehmen, denn mit der Gegeninduktionsspannung hier ist es genau das, was diesen Impuls erzeugt.
+
+263
+00:18:37,530 --> 00:18:42,830
+Ach und, übrigens, im Schema ist er als 1 Nanosekunde eingezeichnet.
+
+264
+00:18:42,910 --> 00:18:44,150
+Na ja, das sind 500 MHz.
+
+265
+00:18:44,230 --> 00:18:44,770
+Leute, was habt ihr euch dabei gedacht?
+
+266
+00:18:45,330 --> 00:18:46,250
+Oder wie viel ist es?
+
+267
+00:18:46,750 --> 00:18:47,570
+Das ist unmöglich.
+
+268
+00:18:47,850 --> 00:18:50,770
+Das heißt, 1 Nanosekunde — natürlich kann das hier nicht sein.
+
+269
+00:18:51,290 --> 00:18:51,970
+Mikrosekunde, ja.
+
+270
+00:18:52,350 --> 00:18:55,090
+Aber Nanosekunde — das glaube ich nicht wirklich.
+
+271
+00:18:55,570 --> 00:18:56,610
+Und 1 Kilovolt.
+
+272
+00:18:56,710 --> 00:18:57,810
+Ihr braucht kein 1 Kilovolt.
+
+273
+00:18:57,810 --> 00:19:00,310
+Sogar etwas weniger als 1 kV reicht aus.
+
+274
+00:19:00,530 --> 00:19:03,870
+Das Wichtigste ist, dass der Draht korrekt auf der Drossel gewickelt ist.
+
+275
+00:19:05,130 --> 00:19:12,650
+Also, was 1 Nanosekunde betrifft, sage ich noch einmal: Das alles wird zusammen mit dem System abgestimmt.
+
+276
+00:19:12,770 --> 00:19:19,490
+Das heißt, wenn es hier 1 Mikrosekunde ist, dann ist es hier irgendwo um die 4 oder wie vielmal mehr?
+
+277
+00:19:19,550 --> 00:19:20,250
+40 Mal.
+
+278
+00:19:20,690 --> 00:19:22,590
+Na ja, man muss die Proportionen betrachten.
+
+279
+00:19:22,710 --> 00:19:25,770
+Das heißt, es liegt irgendwo zwischen dem 4- und 40-fachen ungefähr.
+
+280
+00:19:26,230 --> 00:19:29,990
+Ja, es sollte einen Unterschied zwischen den Frequenzen geben.
+
+281
+00:19:30,790 --> 00:19:32,170
+Na ja, das war's im Grunde.
+
+282
+00:19:32,990 --> 00:19:36,450
+Wenn ihr anfangt, euren Kopf zu benutzen, wird alles gut.
+
+283
+00:19:36,810 --> 00:19:45,190
+Das ist im Grunde... Edward Daly hat erzählt, wie er es gemacht hat, wie er es versorgt hat.
+
+284
+00:19:46,090 --> 00:19:48,110
+Was er mit diesem Generator gemacht hat.
+
+285
+00:19:48,190 --> 00:19:57,590
+Es ist das einfachste TL, ein normaler Generator — das heißt, ein Wandler, der uns die Spule auflädt.
+
+286
+00:19:58,170 --> 00:20:01,650
+Wir müssen wissen, wie viel Spannung wir von hier nach hier einspeisen müssen.
+
+287
+00:20:02,730 --> 00:20:03,830
+Das ist es, was ihr herausfinden müsst.
+
+288
+00:20:03,970 --> 00:20:05,910
+Das heißt, diese Spannung hier ist sehr wichtig.
+
+289
+00:20:06,450 --> 00:20:09,250
+Das heißt, dieser Generator liefert sie hier in diese Spule.
+
+290
+00:20:09,350 --> 00:20:17,470
+Wie viel ihr dieser Spule geben müsst, damit sie eine Rotation dieser Teilchen um ihre Achse erzeugt.
+
+291
+00:20:18,250 --> 00:20:21,490
+Und natürlich dieser Transformator.
+
+292
+00:20:23,910 --> 00:20:25,570
+Er teilt sich in zwei Teile.
+
+293
+00:20:25,690 --> 00:20:30,350
+Der zweite Teil versorgt diesen Nanosekunden-Generator selbst.
+
+294
+00:20:30,630 --> 00:20:35,650
+Der Nanosekunden-Generator braucht natürlich Hochspannung, sonst funktioniert er nicht.
+
+295
+00:20:36,350 --> 00:20:37,190
+Na ja, das war's erst mal.
+
+296
+00:20:37,410 --> 00:20:38,770
+Los geht's.
+
+297
+00:20:38,890 --> 00:20:43,570
+Was soll ich sagen — zuallererst, bitte baut alles sorgfältig zusammen.
+
+298
+00:20:43,650 --> 00:20:52,590
+Aber beeilt euch nicht, und macht diese Dinge nicht auf Steckbrettern, und schickt mir keine Videos oder Bilder mehr davon.
+
+299
+00:20:52,790 --> 00:20:55,850
+Das ist totaler Unsinn; das heißt, es wird nie funktionieren.
+
+300
+00:20:56,410 --> 00:21:00,510
+Ich garantiere euch direkt, dass solche Dinge nie funktionieren werden.
+
+301
+00:21:01,150 --> 00:21:03,890
+Das ist brutal, Leute.
+
+302
+00:21:06,130 --> 00:21:07,610
+So werden Dinge nicht gemacht.
+
+303
+00:21:08,190 --> 00:21:13,730
+Alles sollte sorgfältig gemacht werden, wie auf meinem Tisch, wie ihr seht.
+
+304
+00:21:13,910 --> 00:21:19,830
+Das ist eine mehr oder weniger normale Platine, die ohne jegliche Probleme oder Störungen funktionieren wird.
+
+305
+00:21:20,490 --> 00:21:25,110
+Schaut, ich habe euch absichtlich gezeigt, dass ich vergessen habe, einen Kondensator draufzuklatschen, und schon gibt es ein Problem.
+
+306
+00:21:25,650 --> 00:21:29,330
+Schon — und stellt euch vor, bei vielen Leuten gibt es die überhaupt nicht.
+
+307
+00:21:29,650 --> 00:21:33,090
+Sie verbinden einfach die Versorgung mit dem Chip und denken, es sei alles ganz einfach.
+
+308
+00:21:33,830 --> 00:21:34,170
+Das darf man nicht machen.
+
+309
+00:21:35,330 --> 00:21:36,970
+Na ja, das war's erst mal.
+
+310
+00:21:37,450 --> 00:21:40,770
+Ich habe es so gut ich konnte erklärt — gefällt es euch oder nicht, aber es ist eine Tatsache.
+
+311
+00:21:41,250 --> 00:21:41,450
+Tschüss.
