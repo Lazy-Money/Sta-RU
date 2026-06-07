@@ -1,0 +1,363 @@
+1
+00:00:01,320 --> 00:00:07,960
+Oggi vi racconto come ho assemblato un generatore di energia libera senza carburante.
+
+2
+00:00:08,220 --> 00:00:12,860
+Magari a qualcuno sembrerà strano, ma il fatto è sotto gli occhi di tutti.
+
+3
+00:00:12,980 --> 00:00:18,480
+Questo sistema funziona, altrimenti non avrei speso soldi e tempo.
+
+4
+00:00:19,260 --> 00:00:26,060
+In ogni caso, per ora è un'unità da banco che, purtroppo, fa ancora i capricci.
+
+5
+00:00:26,200 --> 00:00:29,480
+Non l'ho ancora finita, il tempo non basta mai per tutto.
+
+6
+00:00:30,400 --> 00:00:36,680
+Bisogna infilare tutto in una scatoletta, chiuderla, così non resta tutto sparso in giro.
+
+7
+00:00:37,300 --> 00:00:42,520
+Ne ho già comprata una bella piccola, quindi presto si sistema.
+
+8
+00:00:42,820 --> 00:00:47,700
+In ogni caso, voglio solo mostrarvi il principio di funzionamento di tutto il sistema.
+
+9
+00:00:47,700 --> 00:01:01,420
+Qui in questo momento abbiamo un alimentatore switching, 24 V, 10 A.
+
+10
+00:01:02,240 --> 00:01:07,520
+Un blocco Kacher ad alta tensione, 15 kV.
+
+11
+00:01:08,040 --> 00:01:11,660
+Un sistema di automazione e controllo.
+
+12
+00:01:12,500 --> 00:01:21,080
+E un generatore di impulsi rettangolari con isolamento tramite trasformatore ferrite ad alta frequenza.
+
+13
+00:01:21,580 --> 00:01:24,360
+Qui ha 12 spire per lato.
+
+14
+00:01:25,100 --> 00:01:30,740
+E condensatori di livellamento, un ponte di diodi all'uscita dalla bobina.
+
+15
+00:01:31,820 --> 00:01:33,820
+Che è esattamente la bobina.
+
+16
+00:01:34,060 --> 00:01:35,560
+E poi la bobina Tesla, il Kacher.
+
+17
+00:01:36,260 --> 00:01:37,080
+Allora, e quindi?
+
+18
+00:01:37,520 --> 00:01:42,620
+Tutta questa roba, naturalmente, bisogna sapere come avvolgerla e regolarla, perché non è così semplice.
+
+19
+00:01:42,880 --> 00:01:46,880
+Quindi non provare a contare le spire, avvolgere e regolare.
+
+20
+00:01:47,660 --> 00:01:49,680
+Non viene tutto così, da solo.
+
+21
+00:01:49,820 --> 00:01:50,340
+Credimi.
+
+22
+00:01:51,240 --> 00:01:59,900
+Ci ho pasticciato un mese per studiarlo e un altro mese per fare esperimenti e ottenere qualsiasi risultato.
+
+23
+00:02:00,020 --> 00:02:02,440
+Okay, adesso accendiamo il sistema.
+
+24
+00:02:03,780 --> 00:02:04,960
+Ecco, si è avviato.
+
+25
+00:02:05,100 --> 00:02:07,320
+Tre lampadine da 100 watt stanno bruciando.
+
+26
+00:02:08,660 --> 00:02:13,380
+E qui c'è la batteria, che possiamo adesso semplicemente scollegare.
+
+27
+00:02:13,760 --> 00:02:16,400
+Come vediamo, il sistema continua a funzionare.
+
+28
+00:02:16,960 --> 00:02:18,500
+E ho rimosso la batteria.
+
+29
+00:02:19,440 --> 00:02:22,880
+Tutto funziona in modo stabile.
+
+30
+00:02:23,200 --> 00:02:29,520
+La tensione, però, purtroppo, qui all'uscita non è 220 volt, un po' meno, 172 volt.
+
+31
+00:02:29,600 --> 00:02:34,440
+Ma questo è un problema temporaneo per ora.
+
+32
+00:02:34,580 --> 00:02:36,600
+Come vedi, il tester è collegato alla presa.
+
+33
+00:02:37,460 --> 00:02:39,680
+E qui c'è il carico.
+
+34
+00:02:40,360 --> 00:02:45,280
+Puoi spegnerlo, puoi accenderlo.
+
+35
+00:02:46,100 --> 00:02:46,960
+Tutto funziona.
+
+36
+00:02:47,300 --> 00:02:48,560
+172 volt.
+
+37
+00:02:48,820 --> 00:02:49,800
+Tengono.
+
+38
+00:02:50,120 --> 00:02:53,240
+Per ora sì, bisogna armeggiare un po'.
+
+39
+00:02:54,220 --> 00:03:01,660
+Ho portato tutto il sistema in risonanza, ma ci sono alcune cose che vale la pena raffinare.
+
+40
+00:03:02,380 --> 00:03:06,560
+E, purtroppo, per ora è così.
+
+41
+00:03:07,080 --> 00:03:08,720
+Ma il sistema funziona.
+
+42
+00:03:09,140 --> 00:03:12,560
+Qui volevo mettere i fusibili.
+
+43
+00:03:14,060 --> 00:03:17,300
+Ho fatto una morsettiera a 24 volt per la batteria.
+
+44
+00:03:18,160 --> 00:03:19,560
+La scatoletta la chiudiamo dopo.
+
+45
+00:03:20,980 --> 00:03:25,320
+La tensione, come vedi, mostra il consumo.
+
+46
+00:03:25,360 --> 00:03:26,440
+Mente un po', certo.
+
+47
+00:03:26,780 --> 00:03:32,060
+Probabilmente, per via delle interferenze, circa 10 ampere.
+
+48
+00:03:33,180 --> 00:03:35,060
+Qui la bobina sta lavorando.
+
+49
+00:03:35,640 --> 00:03:37,980
+Avvicinarsi non è raccomandato.
+
+50
+00:03:40,120 --> 00:03:42,120
+Questo è il tipo di generatore che è venuto fuori.
+
+51
+00:03:42,340 --> 00:03:49,920
+Adesso lo spegniamo e proviamo a riavviarlo.
+
+52
+00:03:50,240 --> 00:03:55,620
+Vedi, non si accende, perché devi mettere la batteria e dare un impulso dalla batteria.
+
+53
+00:03:55,880 --> 00:03:57,440
+Così non parte.
+
+54
+00:03:58,440 --> 00:04:03,680
+Ho scollegato la batteria, ma posso reinserirla, mostrare come succede.
+
+55
+00:04:04,280 --> 00:04:08,320
+Adesso trovo i cavi che ho già buttato giù.
+
+56
+00:04:12,420 --> 00:04:14,240
+Adesso scappa.
+
+57
+00:04:16,940 --> 00:04:19,600
+Che sistema del cazzo.
+
+58
+00:04:20,140 --> 00:04:22,260
+Cade continuamente.
+
+59
+00:04:28,620 --> 00:04:30,020
+Tiene.
+
+60
+00:04:30,680 --> 00:04:31,300
+Meraviglioso.
+
+61
+00:04:32,360 --> 00:04:37,400
+Insomma, è collegato.
+
+62
+00:04:38,480 --> 00:04:40,140
+Proviamo ad avviarlo ancora una volta.
+
+63
+00:04:41,500 --> 00:04:43,480
+Il sistema si è acceso.
+
+64
+00:04:44,380 --> 00:04:46,980
+Adesso puoi scollegare.
+
+65
+00:04:47,160 --> 00:04:49,560
+Tutto funzionerà in modo stabile.
+
+66
+00:04:50,220 --> 00:04:50,920
+Nessun problema.
+
+67
+00:04:51,040 --> 00:04:52,020
+La batteria si può togliere.
+
+68
+00:04:53,740 --> 00:04:54,880
+Tutto uguale.
+
+69
+00:04:54,960 --> 00:04:59,560
+Ah, adesso la tensione si è più o meno stabilizzata, 172 volt.
+
+70
+00:04:59,800 --> 00:05:00,580
+Le lampadine bruciano.
+
+71
+00:05:02,080 --> 00:05:04,380
+Non bruciano a piena luminosità, ma bruciano.
+
+72
+00:05:05,380 --> 00:05:13,040
+Tutta la tensione adesso si abbassa su questi diodi, purtroppo, perché i diodi non si possono far girare a lungo.
+
+73
+00:05:13,220 --> 00:05:14,340
+Si scaldano moltissimo.
+
+74
+00:05:14,440 --> 00:05:16,200
+Bisogna mettere diodi ad alta frequenza.
+
+75
+00:05:17,020 --> 00:05:22,720
+Diodi ad alta frequenza per questa potenza, purtroppo, non sono riuscito a trovare.
+
+76
+00:05:22,880 --> 00:05:34,920
+Quindi penso che bisogna abbassare la frequenza del generatore e trovare un modo per fare un sistema più stabile.
+
+77
+00:05:35,800 --> 00:05:47,260
+Potrai farlo girare anche su diodi semplici, o anche, diciamo, usare un diodo così, 50 ampere e 50 hertz.
+
+78
+00:05:49,100 --> 00:05:53,500
+È vero, qui, non appena l'ho inserito, ha iniziato a scaldarsi ancora di più.
+
+79
+00:05:53,860 --> 00:05:55,160
+È iniziata una caduta di corrente.
+
+80
+00:05:55,340 --> 00:05:58,220
+Sì, funziona un po', poi si scalda e ricomincia tutto.
+
+81
+00:05:58,860 --> 00:06:00,940
+Ecco i misuratori.
+
+82
+00:06:01,500 --> 00:06:04,600
+In questo momento abbiamo effettivamente 23 volt di alimentazione.
+
+83
+00:06:05,520 --> 00:06:14,720
+Quindi, 10 ampere di corrente, e mostra una tensione di alimentazione di 13,5 volt per il ventilatore e per tutto il sistema.
+
+84
+00:06:14,760 --> 00:06:29,220
+Quindi, questo è lo stabilizzatore che mostra... Più precisamente, il voltmetro che mostra la stabilizzazione per il sistema di automazione e per il generatore preliminare.
+
+85
+00:06:29,660 --> 00:06:32,520
+Ai transistor di commutazione arriva già una tensione diversa.
+
+86
+00:06:33,260 --> 00:06:34,300
+24 volt.
+
+87
+00:06:34,840 --> 00:06:36,040
+Beh, ecco, questo tipo di sistema.
+
+88
+00:06:36,320 --> 00:06:37,100
+Ecco come funziona.
+
+89
+00:06:37,520 --> 00:06:38,400
+Adesso lo spegniamo.
+
+90
+00:06:40,560 --> 00:06:42,020
+Provateci, se a qualcuno interessa.
+
+91
+00:06:43,100 --> 00:06:43,600
+Ecco così.
