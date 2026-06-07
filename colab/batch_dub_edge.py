@@ -793,6 +793,7 @@ def run_batch_multilang(
     allow_no_ambient: bool = False,
     max_part_seconds: int | None = 35 * 60,
     source_paths: list[str | Path] | None = None,
+    n_overrides: list[int | None] | None = None,
     normalize_local: bool = False,
     strict_tts: bool = True,
     youtube_dead_threshold: int = 2,
@@ -849,9 +850,11 @@ def run_batch_multilang(
 
     # Build items ONCE (single metadata sweep) and reuse for every language, so
     # the secondary passes never call YouTube again (real titles preserved).
+    # `n_overrides` lets the local-folder flow pin each file's N# (parsed from
+    # its filename) so SRTs pair by {N#}-{LANG}.srt instead of upload order.
     using_files = bool(source_paths)
     if using_files:
-        items = build_items_from_files(list(source_paths))
+        items = build_items_from_files(list(source_paths), n_overrides)
         print(f"\n{'='*60}\nLoaded {len(items)} local video file(s)\n{'='*60}\n")
     else:
         url_entries = load_urls(urls)
