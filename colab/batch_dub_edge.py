@@ -794,6 +794,7 @@ def run_batch_multilang(
     max_part_seconds: int | None = 35 * 60,
     source_paths: list[str | Path] | None = None,
     n_overrides: list[int | None] | None = None,
+    srt_dirs: dict[str, str] | None = None,
     normalize_local: bool = False,
     strict_tts: bool = True,
     youtube_dead_threshold: int = 2,
@@ -878,10 +879,20 @@ def run_batch_multilang(
         print("Secondary: (none)")
     print(f"strict_tts={strict_tts}  |  youtube_dead_threshold={youtube_dead_threshold}")
 
+    def srt_dir_for(lang: str) -> Path:
+        # Optional per-language folders (e.g. Subs_EN/, Subs_ES/): the caller
+        # passes {LANG: dir} so the cascade can dub several languages in one run,
+        # each reading its own folder. Falls back to the single srt_dir.
+        if srt_dirs:
+            d = srt_dirs.get(lang.upper())
+            if d:
+                return Path(d)
+        return srt_dir_path
+
     def pair_srt(item: VideoItem, lang: str):
         # Strict naming: always pair by {N#}-{LANG}.srt, even with one video.
         # Predictable, no surprise from picking up an unrelated SRT.
-        p = srt_dir_path / f"{item.n}-{lang.upper()}.srt"
+        p = srt_dir_for(lang) / f"{item.n}-{lang.upper()}.srt"
         return p if p.exists() else None
 
     def video_cached(item: VideoItem) -> bool:
