@@ -1,0 +1,676 @@
+1
+00:00:01,780 --> 00:00:04,780
+Also, hallo an alle, guten Abend.
+
+2
+00:00:04,780 --> 00:00:13,780
+Ich arbeite heute ziemlich spät, die Uhr zeigt schon 1.52 Uhr, und im Grunde bin ich beschäftigt mit, also, womit beschäftigt.
+
+3
+00:00:13,780 --> 00:00:28,780
+Dieses Teil, also, dieses hier, ja, ich meine den sogenannten Tesla Transistor, und das Bestrahlungssystem, genauer gesagt, die Antenne, und das ist schon unsere abnehmbare, sozusagen, unsere abnehmbare Spule, die
+
+4
+00:00:29,780 --> 00:00:41,780
+Das Wichtigste in diesem System ist, mit anderen Worten, die Empfangsantenne, das ist die Sendende, ich meine das ist der Sender, das ist der Empfänger, der die Energie absorbieren muss.
+
+5
+00:00:42,780 --> 00:00:44,780
+Warum erkläre ich das anhand dieses Schemas?
+
+6
+00:00:44,780 --> 00:00:57,780
+Ich zeichne ehrlich gesagt keine Schemas, besonders nicht in speziellen Programmen, mein S-Plan hat leider aus irgendeinem Grund aufgehört, auf diesem Computer überhaupt zu öffnen, wahrscheinlich muss ich Windows neu installieren.
+
+7
+00:00:58,780 --> 00:01:04,780
+Weil ich dort allerlei Zeug geladen habe, heruntergeladen, und kurz gesagt, S-Plan funktioniert nicht.
+
+8
+00:01:05,780 --> 00:01:11,780
+Nun gut, S-Plan ist jetzt nicht so wichtig, man kann ein Stück Papier nehmen und zeichnen, nichts Schlimmes.
+
+9
+00:01:12,780 --> 00:01:20,780
+Ich denke, dass mein Freund und Kollege mir helfen wird, das Schema später in der Zukunft zu zeichnen, wie wir es mit ihm beschlossen haben.
+
+10
+00:01:21,780 --> 00:01:22,780
+Großen Dank an ihn!
+
+11
+00:01:23,780 --> 00:01:33,780
+Das sind im Grunde seine Entwicklungen, und in diesem Schema, also in dieser ganzen Konstruktion gibt es auch seine Entwicklungen, mit denen er sehr geholfen hat, hier möchte ich zeigen.
+
+12
+00:01:34,780 --> 00:01:49,780
+Ich meine das ist das gesamte System, das hier ist, auf der anderen Seite, hier ist eine Abschirmung gemacht, damit Einkopplungen auf den Generator nicht von oben kommen, hier ist auch alles geerdet, was geerdet werden muss, also die Kühlkörper, nicht nur.
+
+13
+00:01:50,780 --> 00:01:56,780
+Sind sie geerdet, sie sind auch zusätzlich von den Transistoren isoliert, das versteht sich, das weiß jeder.
+
+14
+00:01:57,780 --> 00:02:07,780
+Und, also, hier ist das Verriet, also das wichtigste, das wir richtig wickeln müssen, damit das alles funktioniert, irgendwie ist das ein schwerer Aufbau geworden, offengesagt.
+
+15
+00:02:07,780 --> 00:02:36,780
+Nun gut, also, ich war heute generell beschäftigt, also mit dem Verliegen aller Drähte und hier, also, was ich jetzt tue, das ist einsetzen, also, die Platine, der Anschluss des Transistors, also, der Drossel, den Hochspannungslufttransformator und, also, wie ihr verstanden habt, haben wir hier so eine dünne Stromschiene, ja, die Stromschiene ist obligatorisch, obwohl hier, offengesagt, leider wenig Energie drin ist.
+
+16
+00:02:38,780 --> 00:02:49,700
+Nun, ich werde herausfinden, wie ich das mache, es anzutreiben, ich habe es schon versucht, jetzt baue ich das alles schrittweise zusammen, so ein schönes.
+
+17
+00:02:51,700 --> 00:03:05,700
+Also, hier ist ein KT805 oder, mit anderen Worten, 2SC5200, dieser Transistor ist ein bisschen besser, ich habe den Kühlkörper schon geklebt, hier ist es schon fertig, mit der Pistole da, der speziellen.
+
+18
+00:03:06,700 --> 00:03:10,700
+Nun, mit diesem Kunststoffkleber, also, sehr praktisch.
+
+19
+00:03:12,700 --> 00:03:14,700
+Roma Akula hat das alles so richtig angewendet.
+
+20
+00:03:16,700 --> 00:03:19,700
+Nun, und natürlich sind schon einige Träume aufgetaucht.
+
+21
+00:03:20,700 --> 00:03:31,700
+Morgen übrigens gehe ich für abgeschirmtes Kabel, denn von diesem, von diesem Anschluss muss abgeschirmtes Kabel zur Steuerung kommen, ja, also, damit nicht alles, das ganze Zeug nicht.
+
+22
+00:03:32,700 --> 00:03:44,700
+Einkoppelt, ich habe, also, hier, ich halte einen Mülleimer speziell, ja, in der Nähe, damit alle Drähte, alle Schnipsel dorthin fliegen, dann in den Hauptmülleimer, um Ordnung am Arbeitsplatz zu halten.
+
+23
+00:03:45,700 --> 00:03:50,890
+Nun gut.
+
+24
+00:03:51,890 --> 00:04:07,890
+Also, was ich sagen wollte, hier, über dieses System, ja, also, ich repliziere das System vollständig, ja, natürlich habe ich, sagen wir, meine eigenen Gedanken dazu, ja, also, habe ich meinen eigenen, sozusagen, Lösungsansatz.
+
+25
+00:04:08,890 --> 00:04:19,890
+Also, die Glühbirne steht hier für ihn, ja, also, die Glühbirne, ich versuche jetzt zu erraten, wofür sie da ist, genauer gesagt, ich habe es schon erraten, aber ich werde es nicht sagen.
+
+26
+00:04:21,890 --> 00:04:26,890
+Was hier im Schema gezeichnet ist, ist hier mit diesem System verbunden, ich glaube es nicht.
+
+27
+00:04:27,890 --> 00:04:33,890
+Ich glaube es nicht, weil es bei ihm verbrannt wäre, als das Setup funktionierte, aber es brennt nicht.
+
+28
+00:04:34,890 --> 00:04:46,890
+Also, es wird wahrscheinlich entweder zur Überprüfung der Entladung dieses Ferrits im Auto verwendet, in dem Moment, wenn über Einheit, genauer gesagt, freie Energie erscheint, oder etwas anderes.
+
+29
+00:04:47,890 --> 00:04:55,890
+Ich habe noch nicht herausgefunden, wo diese Glühbirne angeschlossen ist, und ehrlich gesagt, ist mir das egal, wo sie angeschlossen ist.
+
+30
+00:04:56,890 --> 00:05:00,890
+Ich werde sie nicht mal installieren, um diesen dummen Schritt überhaupt nicht zu haben.
+
+31
+00:05:01,890 --> 00:05:03,890
+Also, was noch?
+
+32
+00:05:04,890 --> 00:05:10,890
+Nun, das Netzteil kennt ihr alle, ja, also 24 Volt und 6,5 Ampere.
+
+33
+00:05:11,890 --> 00:05:16,890
+Es sind höchstwahrscheinlich nicht 10, weil ich nicht glaube, dass dieses Netzteil 10 Ampere hatte.
+
+34
+00:05:17,890 --> 00:05:24,890
+Ich habe zumindest hier ein 150 Watt Netzteil, 24 Volt, also 6,5 Ampere.
+
+35
+00:05:25,890 --> 00:05:30,890
+Das reicht vollkommen, damit dieses System funktioniert, so arbeitet, wie es soll.
+
+36
+00:05:31,890 --> 00:05:39,890
+Also, die Spule ist, wie immer, sehr, sagen wir, auf die richtige Weise gewickelt, damit alles ordentlich und gut sein sollte.
+
+37
+00:05:40,890 --> 00:05:45,890
+Also, eure Aufmerksamkeit, da, warum filme ich dieses Video überhaupt?
+
+38
+00:05:46,890 --> 00:05:51,890
+Ich bemerkte, dass eine Person, also, mir so eine Nachricht privat geschrieben hat.
+
+39
+00:05:51,890 --> 00:06:01,890
+Jemand hat in eurem Namen von der Adresse russlankolabukow bei Mail.ru geschrieben, dass sie das Schema schicken und beim Abstimmen des BTG für 100 Credits helfen können.
+
+40
+00:06:02,890 --> 00:06:08,890
+Ich habe festgestellt, dass Betrüger aufgetaucht sind, die in eurem Namen, also, Profit machen wollen.
+
+41
+00:06:09,890 --> 00:06:10,890
+Absolut richtig.
+
+42
+00:06:11,890 --> 00:06:17,890
+Das sind Betrüger, denn ich verkaufe keine Schemas und werde mich nie mit diesem Unsinn beschäftigen, um euch zu täuschen.
+
+43
+00:06:18,890 --> 00:06:19,890
+Das brauche ich nicht.
+
+44
+00:06:19,890 --> 00:06:20,890
+Das brauche ich nicht.
+
+45
+00:06:21,890 --> 00:06:23,890
+Und euer Geld brauche ich auch nicht.
+
+46
+00:06:24,890 --> 00:06:26,890
+Ich komme irgendwie selbst zurecht.
+
+47
+00:06:27,890 --> 00:06:39,890
+Aber um genau diesen Generator zusammenzubauen, über den unser wunderbarer Roma Konukow so fleißig Schemas verteilt und geholfen hat, oder falls ich seinen Nachnamen falsch gesagt habe, entschuldige ich mich sehr.
+
+48
+00:06:40,890 --> 00:06:44,890
+Obwohl das auf Russisch auch nicht korrekt ist, aber trotzdem.
+
+49
+00:06:44,890 --> 00:07:01,050
+Roma muss das Verdienst gegeben werden, danke dafür, unseren Ameisenhaufen aufgemischt zu haben, sodass viele von uns wirklich an die Arbeit gegangen sind und darüber nachgedacht haben, was wir überhaupt brauchen.
+
+50
+00:07:02,050 --> 00:07:05,050
+Also, was wollte ich noch über diesen Aufbau sagen?
+
+51
+00:07:07,050 --> 00:07:09,050
+Jungs, helft mit diesen Halterungen.
+
+52
+00:07:10,050 --> 00:07:13,050
+Wer hat überhaupt solche Halterungen, wo werden sie verkauft?
+
+53
+00:07:14,050 --> 00:07:16,050
+Lasst uns irgendwie miteinander einigen.
+
+54
+00:07:17,050 --> 00:07:18,050
+Schreibt mir privat.
+
+55
+00:07:20,050 --> 00:07:25,050
+Ich würde diese Halterungen gerne irgendwie erwerben, weil sie hier in Lettland nicht verkauft werden.
+
+56
+00:07:26,050 --> 00:07:29,050
+Sie verkaufen irgendwelchen Schrott, offengesagt.
+
+57
+00:07:31,050 --> 00:07:33,050
+Diese Halterungen gefallen mir besser.
+
+58
+00:07:34,050 --> 00:07:36,050
+Wenn ihr könnt, reagiert auf die Anfrage.
+
+59
+00:07:38,050 --> 00:07:39,050
+Ich werde mich erkenntlich zeigen.
+
+60
+00:07:41,050 --> 00:07:42,050
+Also, was noch?
+
+61
+00:07:45,290 --> 00:07:46,290
+Ich verkaufe keine Schemas.
+
+62
+00:07:47,290 --> 00:07:50,290
+Ich sage gleich, hört auf keine Betrüger.
+
+63
+00:07:51,290 --> 00:07:53,290
+Das ist alles ein totaler Betrug.
+
+64
+00:07:54,290 --> 00:08:01,290
+Ich beschäftige mich damit, dieses ganze System für mich selbst zu entwickeln und werde denen helfen, die es suchen.
+
+65
+00:08:02,290 --> 00:08:15,290
+Ich möchte auch noch zu allem hinzufügen, dass, Jungs, wenn ihr nicht wisst, wie die Komponentenbasis funktioniert, wie all diese Mikrochips, Transistoren und dergleichen funktionieren, ihr dieses Material noch ein bisschen lernen müsst.
+
+66
+00:08:16,290 --> 00:08:24,290
+Ihr müsst wissen, was ein Push-Pull-Generator ist, was ein Treiber ist, was ein Feldeffekt-Transistor, eine Diode und das alles generell ist.
+
+67
+00:08:25,290 --> 00:08:26,290
+Wie es funktioniert.
+
+68
+00:08:27,290 --> 00:08:35,290
+All diese Dinge müssen gelernt werden, denn beim Abstimmen werden so viele Feinheiten und Nuancen auftauchen, dass ihr einfach platt sein werdet.
+
+69
+00:08:37,790 --> 00:08:38,790
+Das ist nicht das Schlimmste.
+
+70
+00:08:39,790 --> 00:08:45,790
+Das Schlimmste wird sein, dass viele schreiben, wenn sie sagen, dass sie nicht wissen, wie man ein Oszilloskop benutzt.
+
+71
+00:08:46,790 --> 00:08:58,790
+Freunde, die Sache ist, dass das Nicht-Wissen, wie man ein Oszilloskop benutzt, wisst ihr, ehrlich gesagt, ich selbst wusste eine Zeit lang nicht, wie man es benutzt, weil ich es nicht so oft benutzen musste.
+
+72
+00:08:59,790 --> 00:09:02,260
+Aber ich musste es lernen.
+
+73
+00:09:03,260 --> 00:09:08,310
+Ich habe das alles aufgefrischt und es klappt bei mir alles.
+
+74
+00:09:09,310 --> 00:09:11,310
+Jetzt rate ich euch, es doch anzugehen.
+
+75
+00:09:12,310 --> 00:09:21,310
+Ich sage noch einmal, um freie Energie um uns herum zu bekommen, damit dieser Aufbau zu euren Gunsten beginnt zu wirken, müsst ihr ihn sehr ordentlich zusammenbauen.
+
+76
+00:09:22,310 --> 00:09:32,310
+Natürlich braucht ihr 16 Quadratdraht, hier ist er, irgendwo um die 16, die Erdung verliehen, das wird ein Stück Draht irgendwo 20 bis 25 Meter sein.
+
+77
+00:09:33,310 --> 00:09:34,310
+Rechnet damit.
+
+78
+00:09:34,310 --> 00:09:38,310
+Und dieser 25 Meter Draht muss direkt von dem Stab verlaufen, der in der Erde ist.
+
+79
+00:09:39,310 --> 00:09:43,310
+Das sind nicht weniger als vierter Meimeter, sage ich euch gleich.
+
+80
+00:09:44,310 --> 00:09:46,310
+Ein gutes Rohr, eingeschlagen.
+
+81
+00:09:47,310 --> 00:09:57,310
+Es muss ein guter Kontakt mit der Erde sichergestellt werden und die Ankunft dieses Drahtes nicht irgendwo hin, nicht durch irgendwelche dieser Dinge, sondern die Ankunft zu euch.
+
+82
+00:09:57,310 --> 00:10:03,310
+Und am wichtigsten, denkt nicht mal daran, irgendetwas anderes an diesen Draht anzuschließen.
+
+83
+00:10:04,310 --> 00:10:07,310
+Das sage ich euch gleich, weil es nicht funktionieren wird.
+
+84
+00:10:08,310 --> 00:10:19,310
+Wenn hier eine Einkopplung auftritt, wenn hier eine Quelle auftritt, die neben eurem, wie ihr es nennt, BTG sein wird, ich nenne es auch so, weil der Treibstoff die Umgebung ist.
+
+85
+00:10:19,310 --> 00:10:22,310
+Das ist ein Generator der reinen Umwandlung von freier Energie.
+
+86
+00:10:24,310 --> 00:10:29,310
+Also dann, dieses Kabel, es muss nur als Erdung für diesen Generator dienen, nichts anderes.
+
+87
+00:10:30,310 --> 00:10:48,010
+Die Elektroverteilerschränke da, ich weiß nicht, diese Heizungsradiatoren, ihr wisst nicht, was der Nachbar an diesen Heizungsradiator angeschlossen hat, oder welchen Kühlschrank er dagegen geschoben hat, der gegen den Radiator reibt, schon längst.
+
+88
+00:10:48,010 --> 00:10:51,010
+Ein Loch abgenutzt hat und schon berührt, sich erdet.
+
+89
+00:10:52,010 --> 00:10:59,010
+Ruhig, ja, also der Kondensator, der sich im Kühlschrank befindet, leitet die Störung auf eure Erdung ab.
+
+90
+00:11:00,010 --> 00:11:02,010
+Das alles muss obligatorisch sein.
+
+91
+00:11:03,010 --> 00:11:08,010
+Beachtet, wo hat Akula seine Experimente durchgeführt, wo hat er das alles gemacht?
+
+92
+00:11:09,010 --> 00:11:10,010
+An seinem Landhaus.
+
+93
+00:11:11,010 --> 00:11:12,010
+Warum?
+
+94
+00:11:12,010 --> 00:11:17,010
+Weil es dort kein Stadtgetümmel gibt, kein Stadt, irgendwelchen Stadtmüll und dergleichen.
+
+95
+00:11:18,010 --> 00:11:31,010
+Entsprechend hatte er dort eine ausgezeichnete Erdung, ja, also wenn wir von Videos seine Videos ansehen können, allen sehr bekannt, ja, also und so ist in diesen Videos sehr gut sichtbar, ja, also wo er.
+
+96
+00:11:32,010 --> 00:11:33,010
+Und was?
+
+97
+00:11:34,010 --> 00:11:36,010
+Also er hat, ja, also wie?
+
+98
+00:11:36,010 --> 00:11:37,010
+Und was?
+
+99
+00:11:38,010 --> 00:11:40,010
+Also er hat, ja, also wie?
+
+100
+00:11:42,420 --> 00:11:45,420
+Wie es passiert ist, also, jetzt werden wir es hier finden.
+
+101
+00:11:52,720 --> 00:11:55,580
+Hier.
+
+102
+00:11:55,580 --> 00:11:56,580
+Hier ist er selbst, Roma.
+
+103
+00:11:58,890 --> 00:12:00,890
+Also, ihr habt das wahrscheinlich gesehen, ja.
+
+104
+00:12:04,060 --> 00:12:05,060
+Hebt es sich, hebt es sich nicht?
+
+105
+00:12:06,060 --> 00:12:07,060
+Arthur, ich filme für dich.
+
+106
+00:12:09,470 --> 00:12:12,470
+Ich schwöre, ich bürge dafür, dass es hier nichts gibt.
+
+107
+00:12:13,470 --> 00:12:14,470
+Also, los geht's.
+
+108
+00:12:16,750 --> 00:12:17,750
+Lasst uns vorspulen.
+
+109
+00:12:20,320 --> 00:12:21,320
+Also, hier.
+
+110
+00:12:21,320 --> 00:12:24,320
+Also, stopp, stopp, stopp, stopp, stopp, stopp.
+
+111
+00:12:25,320 --> 00:12:30,320
+Beachtet, also, die Erdung, das Rohr ist eingeschlagen, ja, also und geschweißt.
+
+112
+00:12:31,320 --> 00:12:36,320
+Und hier buchstäblich, wenn wir jetzt ein bisschen zurückspulen, ja, also ein bisschen zurückspulen.
+
+113
+00:12:37,320 --> 00:12:49,210
+Das ist ein Vorschlaghammer, ja, so einer, mit dem er dieses arme Rohr, das schon zu einem Brezel gebogen ist, einschlägt, ja, also schlägt er mit aller Kraft darauf.
+
+114
+00:12:50,210 --> 00:12:52,210
+Es ist sichtbar, dass hier alles gebogen ist.
+
+115
+00:12:54,210 --> 00:12:59,210
+Also, hier ist irgendwas befestigt, ja, also parallel, aber das stört die Erdung nicht.
+
+116
+00:13:00,210 --> 00:13:01,210
+Es ist schon dort.
+
+117
+00:13:02,210 --> 00:13:06,210
+Und ich bin sicher, dass an dieser Erdung jetzt nichts angeschlossen ist.
+
+118
+00:13:07,210 --> 00:13:12,210
+Selbst wenn etwas angeschlossen ist, ja, also gibt es hier keine Einkopplung.
+
+119
+00:13:13,210 --> 00:13:19,210
+Hier ist eine ausgezeichnete Erdung, weil alles fließt, Wasser fließt dort, ja, und so weiter.
+
+120
+00:13:20,210 --> 00:13:22,210
+Was wollte ich dazu sagen?
+
+121
+00:13:24,550 --> 00:13:28,550
+Natürlich wird dieser Generator unter Stadtbedingungen mit sehr großen Problemen funktionieren.
+
+122
+00:13:29,550 --> 00:13:36,550
+Und ich empfehle euch, noch darüber nachzudenken, eine Erdung in der Nähe des Hauses zu vergraben, einen großen Stab einzuschlagen.
+
+123
+00:13:37,550 --> 00:13:45,550
+Ihn dort zu vergraben und einen Draht unterirdisch zu eurem, ich weiß nicht, Keller, zum Fenster dort, zu so etwas zu verlegen.
+
+124
+00:13:46,550 --> 00:13:50,550
+Denkt darüber nach, das ist nicht so schwer und nicht so eine große Sache.
+
+125
+00:13:51,550 --> 00:14:05,550
+Also in jedem Fall, Erdung auf den Radiator, ich sage noch einmal, dass, nun, ich gebe nur etwa 20%, dass dieser Radiator bei euch funktioniert, ja, also, und er funktioniert vielleicht nicht wegen Kunststoffrohren.
+
+126
+00:14:06,550 --> 00:14:08,550
+Dem Einsatz von Kunststoffrohren und dergleichen.
+
+127
+00:14:09,550 --> 00:14:18,550
+Also das spezifische Gerät, das ihr und ich jetzt betrachten, für große Leistung bis zu einem Kilowatt, wird nichts fliegen, wenn ihr das nicht beachtet.
+
+128
+00:14:18,550 --> 00:14:23,550
+Wir haben uns damit beschäftigt, das mit euch zu tun, lasst uns genau das tun.
+
+129
+00:14:24,550 --> 00:14:29,550
+Lasst uns keine off-topic Gespräche über Kachers diskutieren, vergesst das Wort Kacher ganz.
+
+130
+00:14:30,550 --> 00:14:44,550
+Im Moment kann ich was muss Aufbau nicht kommentieren, ich weiß ungefähr, was und wie es dort ist, aber ich habe das Schema weder in meinem Kopf gezeichnet, noch anderweitig, und ich weiß, offengesagt, nicht, was dort getan werden muss.
+
+131
+00:14:45,550 --> 00:14:51,550
+Ja, also ich werde es früher oder später herausfinden, aber der Kacher interessiert mich nicht.
+
+132
+00:14:52,550 --> 00:14:56,550
+Und euch auch möchte ich sozusagen von dieser Kachersache und dergleichen wegziehen.
+
+133
+00:14:58,550 --> 00:15:00,550
+Also, jetzt was ich sagen wollte.
+
+134
+00:15:01,550 --> 00:15:09,550
+Also, noch einmal warne ich, ich verkaufe keine Schemas, ich treibe mit euch keinen Handel und keine 100 Kredits und dergleichen.
+
+135
+00:15:10,550 --> 00:15:12,550
+Bitte fallt nicht auf diesen Unsinn herein.
+
+136
+00:15:12,550 --> 00:15:24,550
+Also, falls ihr plötzlich sowas bekommt, nun, ignoriert diese Briefe, denn Betrüger haben sich vermehrt, jemand versucht jetzt, von dem, was ich erzähle und was ich mache, Geld zu verdienen.
+
+137
+00:15:25,550 --> 00:15:29,550
+Offensichtlich haben sie auch von Akula verdient, und von allen anderen.
+
+138
+00:15:30,550 --> 00:15:34,550
+Es gibt jede Menge Idioten, und die verdienen sich damit ihren Lebensunterhalt.
+
+139
+00:15:35,550 --> 00:15:42,110
+Was würde ich euch noch über diesen Aufbau sagen wollen, ich weiß es gar nicht.
+
+140
+00:15:42,110 --> 00:15:49,110
+Nun, also, nun, das Farid ist ein gewöhnlicher Radioempfänger, Farid, ja, also, ihr könnt es verwenden.
+
+141
+00:15:50,110 --> 00:15:52,110
+Das ist nur Frequenzabstimmung, ja.
+
+142
+00:15:53,110 --> 00:15:55,110
+Die Frequenzabstimmung ist eine triviale Sache.
+
+143
+00:15:56,110 --> 00:16:05,110
+Dort ist es übrigens ein bisschen angesenkt, es ist sichtbar, Roma, als er abstimmte, tippte er mit einem Schraubenzieher darauf und dort sprang ein Lichtbogen.
+
+144
+00:16:05,110 --> 00:16:07,110
+Vielleicht war es so, wer weiß das schon.
+
+145
+00:16:08,110 --> 00:16:10,110
+Also, viele dachten, da sei ein Funkenunterbrecher.
+
+146
+00:16:11,110 --> 00:16:13,110
+Das stimmt nicht, hier gibt es keine Funkenunterbrecher.
+
+147
+00:16:14,110 --> 00:16:17,110
+So ist es, ja, es gibt nichts, wogegen man entladen könnte.
+
+148
+00:16:18,110 --> 00:16:20,110
+Weil die Antenne grundsätzlich in der Luft hängt.
+
+149
+00:16:21,110 --> 00:16:26,110
+Wir bauen genau dieses Gerät jetzt zusammen, wir denken jetzt an kein anderes Gerät.
+
+150
+00:16:27,110 --> 00:16:29,110
+Alles andere stellen wir erstmal beiseite.
+
+151
+00:16:29,110 --> 00:16:31,110
+Ja, also, wir werden das zusammenbauen.
+
+152
+00:16:32,110 --> 00:16:40,460
+Ich werde sagen, wie man es abstimmt, und so, wer geschickt ist, ja, wer Amateurfunkzeug versteht, wird dieses Gerät machen.
+
+153
+00:16:41,460 --> 00:16:51,460
+Aber, wieder, ich sage noch einmal, bereitet euch auf die Antenne vor, uh, Antenne, Gott, was sage ich, die Erdung, bereitet euch auf eine normale Antenne vor.
+
+154
+00:16:51,460 --> 00:17:01,460
+Aber, wieder, ich sage noch einmal, bereitet euch auf die Antenne vor, uh, Antenne, Gott, was sage ich, die Erdung, bereitet euch auf eine normale Stromversorgung vor.
+
+155
+00:17:02,460 --> 00:17:05,460
+Einen normalen, also, Rahmen, auf dem das alles montiert wird.
+
+156
+00:17:06,460 --> 00:17:20,460
+Kästen, nun, kauft sie richtig, macht sie, also, sammelt alles, was gebraucht wird, ja, also, Teile, dort, Lüfter, Kühlung, dort, sie werden gebraucht, ja, besonders dieser Transistor, wie schon.
+
+157
+00:17:21,460 --> 00:17:35,460
+Gezeigt habe, ja, dieser, er wird sich aufheizen, ja, weil auf ihm, das ist ein bipolarer Transistor, das ist kein FET, er wird sich aufheizen, und bei mir hat er sich sehr stark aufgeheizt, ja, also, ihr werdet
+
+158
+00:17:36,460 --> 00:17:49,460
+ein bisschen mit den Windungen hier herum probieren müssen, richtig, also, ihr versteht die Sache, so zusammengeklatscht auf dem Tisch wird es nicht funktionieren, das muss sofort zusammengebaut werden, schön, klar und dann einfach abgestimmt.
+
+159
+00:17:51,460 --> 00:17:55,460
+Die Spule zu wickeln auch, das ist einfach generell, also, das ist kinderleicht.
+
+160
+00:17:57,460 --> 00:18:13,460
+Also, was wollte ich noch sagen, also, wir werden diese Glühbirnen einschalten, diese mit 500 Watt, vier davon, und wir werden sie mit euch einschalten, ja, hier, sie leuchten schön, ich habe sie hier in einem Haufen gesammelt, hier, jetzt stecke ich sie
+
+161
+00:18:14,460 --> 00:18:28,460
+in die Steckdose, ich zeige, wie das alles, hoppla, nun, sie leuchten, nicht schlecht, würde ich sagen, ja, also, sehr hell, hier zu sitzen ist es praktisch unmöglich, sich das alles anzusehen, wir schalten aus und wir werden
+
+162
+00:18:29,460 --> 00:18:40,460
+Strom sparen, umsonst, generell, das Zeug, ich nehme noch eine solche kleine Platine und mache noch vier, es werden acht sein, und wir werden sie alle ohne Probleme starten.
+
+163
+00:18:40,460 --> 00:19:01,470
+Hier, also, was möchte ich noch hinzufügen, also, zu allem, das ist Geduld haben, Geduld haben und alles wird für euch klappen, und wir werden schrittweise, ja, also, ich, wie ihr seht, habe es nicht besonders eilig, denn, die Sache ist, dass ihr dieses System schön und klar herrichten müsst.
+
+164
+00:19:02,470 --> 00:19:16,470
+Also, nun, noch einmal möchte ich erinnern, ja, also, über die Halterungen, wenn jemand plötzlich genau solche Halterungen bekommen kann, schaut genau hin, ich werde sehr dankbar sein, wir einigen uns, ja, also, nun,
+
+165
+00:19:16,470 --> 00:19:31,470
+die Steckdose, wenn ihr so eine bekommt, ja, also, von diesem Typ werde ich auch sehr dankbar sein, die Knöpfe, gut, wir regeln das mit ihnen, mit den Knöpfen, nun, hier ist die Steckdose, ich würde sehr gerne, ja, also, auch so eine, hier,
+
+166
+00:19:31,470 --> 00:19:49,470
+Verkaufen sie solche nicht, hier verkaufen sie einen etwas anderen Typ, diese, ja, nun, gut, nun, was, nun, grundsätzlich kann man auch so eine verwenden, nun, ein wenig, ein Anteil von Änderungen muss gemacht werden, sonst wäre es eine vollständige Kopie.
+
+167
+00:19:49,470 --> 00:20:05,880
+Hier, nun, Spaß beiseite, so ist es, also, nun, und am wichtigsten, ja, also, ich bin mit Nachrichten einer Art überschwemmt worden, manche davon sehr dumm, nun, ich versuche auf alle zu antworten, aber, jedoch, Jungs,
+
+168
+00:20:05,880 --> 00:20:22,880
+nun, ich habe nicht genug Zeit, ich habe auch andere Dinge, die gemacht werden müssen, ja, also, tut mir leid, wenn ich hinterher hinke, kurz gesagt, ich verkaufe keine Schemas, ich gebe sie kostenlos, ja, also, wir werden arbeiten, versuchen,
+
+169
+00:20:22,880 --> 00:20:49,540
+freie Energie direkt aus der Luft zu bekommen und alles zu starten, was ihr braucht, gute Laune, also, kämpferische Aktion, in Bezug auf Kampfgeist, ja, sagen wir, in Bezug auf die Entwicklung von Generatoren für freie Energie, viel Glück an alle und einen schönen Abend, Tschüss.
+

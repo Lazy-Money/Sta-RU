@@ -1,0 +1,240 @@
+1
+00:00:00,460 --> 00:00:30,570
+Okay, Leute, hallo. Anscheinend hat er es auf Glas gemacht. Das ist ein Niedrigleistungsgenerator.
+
+2
+00:00:30,570 --> 00:00:38,570
+Man könnte ein Kilowatt daraus herausholen, aber ich erkläre euch, warum ich kein Kilowatt davon bekomme.
+
+3
+00:00:38,570 --> 00:00:44,630
+Aus einem einfachen Grund.
+
+4
+00:00:44,630 --> 00:00:52,630
+Ich habe etwas daraus geholt, aber im Moment liegt die Gesamtleistung irgendwo zwischen 550 und 600 Watt, nicht mehr.
+
+5
+00:00:52,630 --> 00:00:58,920
+Also, kurz gesagt.
+
+6
+00:00:58,920 --> 00:01:05,920
+Ich habe absichtlich keine Klemmenblöcke eingebaut, damit ihr mir nicht sagen könnt, dass hier etwas angeschlossen ist.
+
+7
+00:01:05,920 --> 00:01:25,420
+Ich spule.
+
+8
+00:01:25,420 --> 00:01:33,820
+Roma, du sagtest, es gibt hier keine Induktivität.
+
+9
+00:01:33,820 --> 00:01:42,990
+Normales Koaxialkabel.
+
+10
+00:01:42,990 --> 00:01:49,090
+Also, ihr könnt alles einstellen.
+
+11
+00:01:49,090 --> 00:01:58,300
+Oh leck, hör mal, dieser Kern ist Mist.
+
+12
+00:01:58,300 --> 00:02:07,270
+Na gut, und?
+
+13
+00:02:07,270 --> 00:02:10,270
+Hier ist ein normaler Bifilar.
+
+14
+00:02:10,270 --> 00:02:15,760
+Nichts Besonderes.
+
+15
+00:02:15,760 --> 00:02:17,760
+Ein Zweiarme-Generator.
+
+16
+00:02:17,760 --> 00:02:24,760
+Ein Ansteuertransformator, der die Frequenz für den Betrieb dieses Wandlers festlegt, wo alles passiert.
+
+17
+00:02:24,760 --> 00:02:44,980
+Roma, damit ihr es versteht, ich verstehe sehr gut, was hier passiert und warum das alles funktioniert.
+
+18
+00:02:44,980 --> 00:02:46,980
+Also, was noch?
+
+19
+00:02:46,980 --> 00:02:53,980
+Nun, im Grunde 29 Windungendraht und obendrauf sind je 12 Windungen für diese Arme.
+
+20
+00:02:53,980 --> 00:03:06,850
+Also, die Synchronisation hier ist mit einem TL-Chip gekoppelt, das heißt, zwei ICS-Treiber, TL-Treiber.
+
+21
+00:03:06,850 --> 00:03:09,850
+Nun, das ist der Wandler, der Relaisblock.
+
+22
+00:03:09,850 --> 00:03:20,100
+Der Hochspannungsteil läuft nicht.
+
+23
+00:03:20,100 --> 00:03:23,100
+Das zweite Relais klickt einfach die Tasten.
+
+24
+00:03:23,100 --> 00:03:26,380
+Also, hier passiert gerade nichts.
+
+25
+00:03:26,380 --> 00:03:54,130
+Kurz gesagt, da ist es, es funktioniert.
+
+26
+00:03:58,190 --> 00:04:00,190
+Der Generator läuft jetzt.
+
+27
+00:04:00,190 --> 00:04:05,490
+Und die Arme funktionieren.
+
+28
+00:04:05,490 --> 00:04:13,510
+Also, dieses System funktioniert gerade nicht.
+
+29
+00:04:13,510 --> 00:04:19,740
+Ja, das Netzteil.
+
+30
+00:04:19,740 --> 00:04:22,740
+Also, natürlich ist die LED an.
+
+31
+00:04:22,740 --> 00:04:26,740
+Jetzt werden alle fragen, warum sie an ist.
+
+32
+00:04:26,740 --> 00:04:28,740
+Ich trenne die Batterie.
+
+33
+00:04:28,740 --> 00:04:37,340
+Das ist für die besonders Langsamen, weil das Netzteil über eine Diode aus der Batterie gespeist wird.
+
+34
+00:04:37,340 --> 00:04:41,220
+Okay, was kommt als nächstes?
+
+35
+00:04:41,220 --> 00:04:48,250
+Gut, wir schalten es ein.
+
+36
+00:04:48,250 --> 00:04:49,250
+Da ist es.
+
+37
+00:04:49,250 --> 00:04:54,250
+Und sofort geht die Hochspannung an und das System steigt auf volle Leistung.
+
+38
+00:04:54,250 --> 00:05:00,250
+Also, das Netzteil beginnt zu arbeiten und gibt ruhig 23,5 Volt aus.
+
+39
+00:05:00,250 --> 00:05:02,250
+Nun, fast 24.
+
+40
+00:05:02,250 --> 00:05:06,970
+Gut, wir haben die Batterie getrennt.
+
+41
+00:05:06,970 --> 00:05:12,520
+Das ist die Erdung.
+
+42
+00:05:12,520 --> 00:05:21,500
+Ihr habt die Glühbirnen gesehen.
+
+43
+00:05:21,500 --> 00:05:28,780
+Richtig, ich kann die großen nicht anschließen.
+
+44
+00:05:28,780 --> 00:05:38,620
+Die, die ihr damals auf der Wiese gesehen habt.
+
+45
+00:05:38,620 --> 00:05:45,400
+Er ist vorerst auseinandergebaut worden.
+
+46
+00:05:46,400 --> 00:05:48,400
+In einem zerlegten Zustand.
+
+47
+00:05:48,400 --> 00:05:51,400
+Also, ich werde es später wieder zusammenbauen.
+
+48
+00:05:51,400 --> 00:06:00,320
+Ich möchte sie jetzt nicht umdrehen, die Schrauben würden wegfliegen.
+
+49
+00:06:00,320 --> 00:06:27,730
+Da, das ist alles für diejenigen, die nicht glauben, dass hier etwas funktionieren kann.
+
+50
+00:06:27,730 --> 00:06:28,730
+Da ist nichts.
+
+51
+00:06:28,730 --> 00:06:42,090
+Ich habe es bereits zweimal versucht.
+
+52
+00:06:42,090 --> 00:07:15,340
+Die Kamera schaltet ab, stirbt und sagt, die Batterien sind leer.
+
+53
+00:07:15,340 --> 00:07:24,340
+Also, wie ich bereits erwähnte, was wir hier haben und Kappernatze sind praktisch dieselbe Sache.
+
+54
+00:07:24,340 --> 00:07:29,340
+Sie sind nicht bei voller Helligkeit, aber sie sind ordentlich.
+
+55
+00:07:29,340 --> 00:07:46,700
+Nun, was bedeutet voll?
+
+56
+00:07:46,700 --> 00:07:47,700
+So ist das.
+
+57
+00:07:47,700 --> 00:08:05,000
+Einen großen Olek.
+
+58
+00:08:05,000 --> 00:08:14,230
+Ich werde jetzt noch einen bauen.
+
+59
+00:08:14,230 --> 00:08:17,580
+Ich zeige es euch später.
+
+60
+00:08:17,580 --> 00:08:19,580
+Gut, gute Laune an alle.
+

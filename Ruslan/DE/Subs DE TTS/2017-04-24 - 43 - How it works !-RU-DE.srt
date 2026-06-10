@@ -1,0 +1,1724 @@
+1
+00:00:01,710 --> 00:00:11,710
+Na, hallo zusammen. Ich sehe, die haben schon meinen Generatorschaltplan geklaut, also haben sie ihn aus dem Video rausgezogen.
+
+2
+00:00:11,710 --> 00:00:17,710
+Naja, sie haben eigentlich fast alles richtig gezeichnet, außer dieser Diode hier.
+
+3
+00:00:17,710 --> 00:00:24,710
+Diese Diode habe ich später eingezeichnet, also hier sollte eigentlich eine Sinuswelle sein.
+
+4
+00:00:24,710 --> 00:00:27,710
+Ich meine, die haben das ohne nachzudenken gezeichnet.
+
+5
+00:00:27,710 --> 00:00:32,710
+Hier bekommt ihr eigentlich eine Halbperiode, wenn da eine Diode ist.
+
+6
+00:00:32,710 --> 00:00:34,710
+Wozu ist diese Diode?
+
+7
+00:00:34,710 --> 00:00:39,710
+Die Diode war dazu gedacht, dass wir diese Spule nicht verlängern müssen.
+
+8
+00:00:39,710 --> 00:00:42,710
+Ich meine diese Spule hier.
+
+9
+00:00:42,710 --> 00:00:45,710
+Ich meine konkret diese eine.
+
+10
+00:00:45,710 --> 00:00:49,710
+Also, was ich jetzt zeigen wollte.
+
+11
+00:00:49,710 --> 00:00:53,710
+Hier überprüfe ich gerade den PLL, wie er funktioniert.
+
+12
+00:00:53,710 --> 00:00:56,710
+Und hier ist sein Oszillogramm.
+
+13
+00:00:56,710 --> 00:00:59,710
+Genauer gesagt, ist es noch nicht dort.
+
+14
+00:00:59,710 --> 00:01:04,500
+Also, ich habe hier ein bisschen gebastelt.
+
+15
+00:01:04,500 --> 00:01:09,320
+Den Schraubenzieher ruiniert.
+
+16
+00:01:09,320 --> 00:01:12,320
+Er ist ganz mit irgendwas gelbem bedeckt.
+
+17
+00:01:12,320 --> 00:01:15,320
+Ich weiß nicht, ob das auf der Kamera sichtbar ist.
+
+18
+00:01:15,320 --> 00:01:19,320
+Mit so einer gelblich-weißen Beschichtung.
+
+19
+00:01:19,320 --> 00:01:22,320
+Ich habe ihn reingesteckt in dieses Loch hier.
+
+20
+00:01:22,320 --> 00:01:25,320
+Hab geschaut, wie die Resonanz gehalten hat und das war's.
+
+21
+00:01:25,320 --> 00:01:27,320
+Okay, egal.
+
+22
+00:01:27,320 --> 00:01:28,320
+Kurz gesagt.
+
+23
+00:01:28,320 --> 00:01:33,180
+Ich habe das System ein bisschen auseinander genommen.
+
+24
+00:01:33,180 --> 00:01:36,180
+Es gestartet, wieder auseinander genommen.
+
+25
+00:01:36,180 --> 00:01:41,180
+Ich muss was machen, weil manchmal das Autotuning nicht anspringt.
+
+26
+00:01:41,180 --> 00:01:44,180
+Ich habe verstanden, worum es geht.
+
+27
+00:01:44,180 --> 00:01:48,180
+Ich habe diesen kleinen Ring schon neu gewickelt, alles gut.
+
+28
+00:01:48,180 --> 00:01:51,180
+Es hat angefangen wie gewünscht zu funktionieren und das war's.
+
+29
+00:01:51,180 --> 00:01:55,180
+Also, damit ihr überhaupt irgendein Verständnis habt.
+
+30
+00:01:55,180 --> 00:01:59,180
+Ich erkläre jetzt kurz, worum es dabei überhaupt geht.
+
+31
+00:01:59,180 --> 00:02:11,220
+Ich meine, Akula hat versucht, die Nanoimpulstheorie zu widerlegen, sozusagen.
+
+32
+00:02:11,220 --> 00:02:15,220
+Aber er hat versucht, sie an der falschen Stelle zu widerlegen.
+
+33
+00:02:15,220 --> 00:02:22,690
+Er hat nur klar gemacht, dass es nichts bringt, überall drauf zu hauen.
+
+34
+00:02:22,690 --> 00:02:26,690
+Übrigens, bei Dali hat das System damals funktioniert.
+
+35
+00:02:26,690 --> 00:02:28,690
+Übrigens, bei mir hat es auch funktioniert.
+
+36
+00:02:28,690 --> 00:02:30,690
+Ich habe auch einen Generator gebaut.
+
+37
+00:02:30,690 --> 00:02:32,690
+Ich habe irgendwo noch.
+
+38
+00:02:32,690 --> 00:02:39,350
+In diesen Kisten liegt sogar irgendwo ein zusammengebauter Nanosekundengenerator.
+
+39
+00:02:39,350 --> 00:02:43,350
+Den ich leider nie ganz fertiggestellt habe.
+
+40
+00:02:43,350 --> 00:02:46,350
+Hier liegt er, genau hier.
+
+41
+00:02:46,350 --> 00:02:49,350
+Olek hat ihn hier zusammengebaut, hat geholfen.
+
+42
+00:02:49,350 --> 00:02:52,350
+Jetzt ziehe ich ihn raus.
+
+43
+00:02:52,350 --> 00:02:54,350
+Hier ist er, ja.
+
+44
+00:02:54,350 --> 00:03:01,080
+Das ist der Nanosekundengenerator, der für das Dali-System gedacht war.
+
+45
+00:03:01,080 --> 00:03:03,080
+Also, hier sind zwei Dioden.
+
+46
+00:03:03,080 --> 00:03:13,300
+Also, hier ist der Dali-Generator, er hat funktioniert.
+
+47
+00:03:13,300 --> 00:03:14,300
+Warum hat er funktioniert?
+
+48
+00:03:14,300 --> 00:03:18,300
+Weil wir, im Grunde, was Dali gemacht hat.
+
+49
+00:03:18,300 --> 00:03:22,300
+Er hat starke verwendet.
+
+50
+00:03:22,300 --> 00:03:25,300
+Nun, besonders starke funktionieren da nicht.
+
+51
+00:03:25,300 --> 00:03:30,300
+Aber ein normaler Impuls mit einer Halbperiode von fast konstanter Spannung.
+
+52
+00:03:30,300 --> 00:03:33,310
+Ja.
+
+53
+00:03:33,310 --> 00:03:35,310
+Was haben wir hier?
+
+54
+00:03:35,310 --> 00:03:38,310
+Also, zunächst einmal, ja.
+
+55
+00:03:38,310 --> 00:03:45,830
+Dann werde ich über all diese Fragen sprechen, die sie hier stellen.
+
+56
+00:03:45,830 --> 00:03:49,170
+Also.
+
+57
+00:03:49,170 --> 00:03:52,170
+Mein Setup ist gerade völlig durcheinander.
+
+58
+00:03:52,170 --> 00:04:02,660
+Das ist passiert, weil es die Last nicht ganz hält.
+
+59
+00:04:02,660 --> 00:04:12,190
+Und ich will etwas Leistungsstärkeres bauen.
+
+60
+00:04:12,190 --> 00:04:14,190
+Den Push-Pull habe ich schon gezeigt, ja?
+
+61
+00:04:14,190 --> 00:04:34,370
+Also, ich habe das Oszilloskop an den Widerstand gehängt, der zum Transistor führt.
+
+62
+00:04:34,370 --> 00:04:36,370
+Also, schauen wir das jetzt nicht an.
+
+63
+00:04:36,370 --> 00:04:39,370
+Wir schauen an, also, was hier überhaupt ist.
+
+64
+00:04:39,370 --> 00:04:43,370
+Hier ist die 12-Volt-Stabilisator-Platine für das System.
+
+65
+00:04:43,370 --> 00:04:56,810
+Also, 12 Volt gehen hier vom Mikrochip zum Treiber.
+
+66
+00:04:56,810 --> 00:05:04,150
+Hier haben wir einen Treiber, R2184.
+
+67
+00:05:04,150 --> 00:05:08,150
+Hier, wie immer, ein 4046-Mikrochip.
+
+68
+00:05:08,150 --> 00:05:21,580
+Und wieder ein Treiber.
+
+69
+00:05:21,580 --> 00:05:24,580
+Von hier geht der Antrieb zum Transistor.
+
+70
+00:05:24,580 --> 00:05:34,540
+Aber das kommt später.
+
+71
+00:05:34,540 --> 00:05:36,540
+Darum geht es jetzt nicht.
+
+72
+00:05:36,540 --> 00:05:41,540
+Jetzt geht es darum, was wir überhaupt von diesem System hier bekommen müssen.
+
+73
+00:05:41,540 --> 00:05:43,540
+Also, hier ist die Spule.
+
+74
+00:05:43,540 --> 00:05:45,540
+Gerade ist sie angeschlossen, ja?
+
+75
+00:05:45,540 --> 00:05:48,540
+Ich meine, wir bekommen noch nichts ordentliches davon, ja?
+
+76
+00:05:48,540 --> 00:05:51,540
+Ich meine, wir stimmen nur den Induktionsherd ab.
+
+77
+00:05:51,540 --> 00:06:09,940
+Ich meine, naja, man kann natürlich ein Thermometer nehmen und es dort hinlegen.
+
+78
+00:06:09,940 --> 00:06:10,940
+Nun, okay.
+
+79
+00:06:10,940 --> 00:06:16,940
+Kurz gesagt, ich schließe jetzt an und speise 12 Volt in das System.
+
+80
+00:06:16,940 --> 00:06:23,160
+Ja.
+
+81
+00:06:23,160 --> 00:06:25,160
+Ich meine, also, ich sag gleich.
+
+82
+00:06:25,160 --> 00:06:50,610
+Ich stecke ihn rein.
+
+83
+00:06:50,610 --> 00:06:59,740
+Die Frequenz ist gesunken.
+
+84
+00:06:59,740 --> 00:07:13,860
+Ich meine, ja, der Strom sinkt, ja?
+
+85
+00:07:13,860 --> 00:07:14,860
+Der Strom sinkt.
+
+86
+00:07:14,860 --> 00:07:33,500
+Er wandert, ja.
+
+87
+00:07:33,500 --> 00:07:37,500
+Das ist überhaupt nicht gut, weil der Verriet sehr schnell degradiert.
+
+88
+00:07:37,500 --> 00:07:42,500
+Nehmen wir diesen abgenutzten, leicht verbeulten Schraubenzieher.
+
+89
+00:07:42,500 --> 00:07:44,500
+Und hier stecke ich ihn rein, ja?
+
+90
+00:07:44,500 --> 00:07:47,500
+Schaut, der Strom, der Strom ist gesunken.
+
+91
+00:07:47,500 --> 00:08:09,850
+Ich meine, das System funktioniert.
+
+92
+00:08:09,850 --> 00:08:13,960
+Er ist heiß.
+
+93
+00:08:13,960 --> 00:08:14,960
+Sehr heiß.
+
+94
+00:08:14,960 --> 00:08:27,300
+Was sind das für Kontakte, die die verkaufen?
+
+95
+00:08:27,300 --> 00:08:41,910
+Wir schließen 24 Volt an.
+
+96
+00:08:41,910 --> 00:09:14,240
+Ja.
+
+97
+00:09:14,240 --> 00:09:18,810
+Jetzt hat sich der Schraubenzieher richtig erhitzt.
+
+98
+00:09:18,810 --> 00:09:20,810
+Dort ist er schon schwarz geworden.
+
+99
+00:09:20,810 --> 00:09:35,780
+Hier, kurz gesagt, was ich sagen wollte.
+
+100
+00:09:35,780 --> 00:09:37,780
+Der PLL für dieses System.
+
+101
+00:09:37,780 --> 00:09:43,780
+Nun, natürlich braucht ihr nichts dort reinzustecken, während die Spule arbeitet.
+
+102
+00:09:43,780 --> 00:09:45,780
+Ja.
+
+103
+00:09:45,780 --> 00:09:48,780
+Nun, lass uns jetzt versuchen, es kurz zu schließen.
+
+104
+00:09:49,780 --> 00:09:50,780
+Ja.
+
+105
+00:09:50,780 --> 00:10:02,290
+Wir haben es kurz geschossen, ja?
+
+106
+00:10:02,290 --> 00:10:04,290
+Nun, es ist gesunken, ja.
+
+107
+00:10:04,290 --> 00:10:07,290
+Die Frequenz ist sofort gestiegen.
+
+108
+00:10:07,290 --> 00:10:10,290
+Das ist genau das, worüber Akula gesprochen hat.
+
+109
+00:10:10,290 --> 00:10:11,290
+Ja.
+
+110
+00:10:11,290 --> 00:10:15,340
+Wir haben eine Last angelegt.
+
+111
+00:10:15,340 --> 00:10:17,340
+Hier, ich lege eine Last an.
+
+112
+00:10:17,340 --> 00:10:22,020
+Die Frequenz ist gestiegen.
+
+113
+00:10:22,020 --> 00:10:34,070
+Also.
+
+114
+00:10:34,070 --> 00:10:36,070
+Der PLL hat sie zurückgebracht.
+
+115
+00:10:36,070 --> 00:10:40,070
+Aber die Resonanz auf dieser Spule wird immer da sein.
+
+116
+00:10:40,070 --> 00:10:43,070
+Was übrigens genau das war, was bewiesen werden musste, ja?
+
+117
+00:10:43,070 --> 00:10:46,070
+Ich meine die Resonanz hier.
+
+118
+00:10:46,070 --> 00:10:51,070
+Wir erfüllen damit die Theorie, die Kapanaze aufgestellt hat.
+
+119
+00:10:51,070 --> 00:10:53,070
+Die Resonanz halten.
+
+120
+00:10:53,070 --> 00:10:54,070
+Wir halten sie.
+
+121
+00:10:54,070 --> 00:10:55,070
+Da ist sie.
+
+122
+00:10:55,070 --> 00:10:57,070
+Der PLL hält sie souverän.
+
+123
+00:10:57,070 --> 00:10:59,860
+Also.
+
+124
+00:10:59,860 --> 00:11:02,860
+Jetzt schalten wir das alles aus.
+
+125
+00:11:02,860 --> 00:11:04,860
+Und ich zeige euch jetzt etwas.
+
+126
+00:11:04,860 --> 00:11:06,860
+Also, nehmen wir.
+
+127
+00:11:06,860 --> 00:11:07,860
+Ich weiß nicht.
+
+128
+00:11:07,860 --> 00:11:10,860
+Nun, natürlich wird hier alles sinken.
+
+129
+00:11:11,860 --> 00:11:13,860
+Die Glühbirne wird schwach leuchten.
+
+130
+00:11:13,860 --> 00:11:17,860
+Jetzt eine Glühbirne hier an dieses Ding anschließen.
+
+131
+00:11:17,860 --> 00:11:21,860
+Ich meine, eine weitere Glühbirne anschließen.
+
+132
+00:11:21,860 --> 00:11:22,860
+Ja.
+
+133
+00:11:22,860 --> 00:11:27,860
+Ich meine die Frequenz wird driften, aber die Resonanz wird immer da sein.
+
+134
+00:11:27,860 --> 00:11:32,300
+Jetzt werde ich versuchen, das irgendwie anzuschließen.
+
+135
+00:11:32,300 --> 00:11:34,300
+Leider gibt es keinen Ständer.
+
+136
+00:11:34,300 --> 00:11:36,300
+Jetzt mache ich das.
+
+137
+00:11:36,300 --> 00:11:46,130
+Damit ihr versteht, was hier passiert und wie es läuft.
+
+138
+00:11:46,130 --> 00:11:55,780
+Ich meine, was getan werden muss, damit überhaupt irgendetwas funktioniert.
+
+139
+00:11:55,780 --> 00:11:59,780
+Denn, wieder, Resonanz ist eine wichtige Sache.
+
+140
+00:11:59,780 --> 00:12:01,780
+Ein wichtiges Detail in all dem.
+
+141
+00:12:01,780 --> 00:12:05,780
+Ich meine, ihr dürft es unter keinen Umständen vernachlässigen.
+
+142
+00:12:05,780 --> 00:12:17,070
+Also, ich meine Resonanz ist sehr wichtig.
+
+143
+00:12:17,070 --> 00:12:22,070
+Ohne Resonanz, ein LC zumindest, auf den ersten Blick.
+
+144
+00:12:22,070 --> 00:12:28,070
+Ich meine ohne, dass es auf diesem Stromkreis gibt, wo die Induktion für uns wirkt.
+
+145
+00:12:28,070 --> 00:12:32,070
+Die Induktion erzeugt für uns ein Wirbelmagnetfeld.
+
+146
+00:12:32,070 --> 00:12:39,070
+Das ist genau das, was wir brauchen, um überhaupt die Strombewegung entlang der Spule zu starten.
+
+147
+00:12:39,070 --> 00:12:43,070
+Weil die Spule sozusagen von selbst arbeitet.
+
+148
+00:12:43,070 --> 00:12:46,070
+Hier müssen wir den Strom antreiben.
+
+149
+00:12:46,070 --> 00:12:51,350
+Bei hoher Frequenz eilt der Strom der Spannung hinterher.
+
+150
+00:12:51,350 --> 00:12:55,350
+Das werde ich euch definitiv im nächsten Film zeigen.
+
+151
+00:12:55,350 --> 00:13:01,350
+Versuchen wir jetzt, einfach eine Glühbirne direkt an die Kontakte der Spule anzuschließen.
+
+152
+00:13:01,350 --> 00:13:05,460
+Ich hatte das hier alles am Laufen.
+
+153
+00:13:05,460 --> 00:13:10,460
+Ich kann schon ruhig, ganz ohne Mühe, einen Generator zusammenbauen.
+
+154
+00:13:10,460 --> 00:13:19,980
+Also, schalten wir, kurz gesagt, dieses Ding hier ein.
+
+155
+00:13:19,980 --> 00:13:21,980
+Hier leuchtet die Glühbirne.
+
+156
+00:13:21,980 --> 00:13:23,980
+Das ist eine 100 Watt Glühbirne.
+
+157
+00:13:24,980 --> 00:13:27,980
+Unser Verbrauch liegt bei ungefähr 3 Ampere.
+
+158
+00:13:27,980 --> 00:13:30,980
+Die Glühbirne leuchtet natürlich nicht mit voller Helligkeit.
+
+159
+00:13:30,980 --> 00:13:34,980
+Frequenz 27,388 Kilohertz.
+
+160
+00:13:34,980 --> 00:13:39,480
+Also, was machen wir jetzt?
+
+161
+00:13:39,480 --> 00:13:44,480
+Jetzt stecken wir eine weitere Glühbirne an diese Glühbirne.
+
+162
+00:13:44,480 --> 00:13:48,480
+Ich weiß nicht, wir werden jetzt irgendwas improvisieren.
+
+163
+00:13:48,480 --> 00:13:52,480
+Nehmen wir eine 60 Watt Glühbirne.
+
+164
+00:13:52,480 --> 00:13:55,920
+Jetzt berühren wir hier.
+
+165
+00:13:55,920 --> 00:13:57,920
+Hier, schaut was passiert.
+
+166
+00:13:57,920 --> 00:13:59,920
+Sie ist ein bisschen dunkler geworden.
+
+167
+00:13:59,920 --> 00:14:03,460
+Resonanz.
+
+168
+00:14:03,460 --> 00:14:04,460
+Da ist sie.
+
+169
+00:14:04,460 --> 00:14:10,140
+Es gibt immer Resonanz.
+
+170
+00:14:10,140 --> 00:14:15,140
+Ja, die Helligkeit der Glühbirne verändert sich natürlich.
+
+171
+00:14:15,140 --> 00:14:19,140
+Der Verbrauch verändert sich dementsprechend auch.
+
+172
+00:14:19,140 --> 00:14:22,140
+Aber es gibt immer Resonanz.
+
+173
+00:14:22,140 --> 00:14:29,140
+Ja, was ich sagen will ist, die Resonanz muss auf diesem System immer vorhanden sein.
+
+174
+00:14:29,140 --> 00:14:32,140
+Die Frequenz wird sich ändern.
+
+175
+00:14:32,140 --> 00:14:35,140
+Nun, über die Frequenzänderung.
+
+176
+00:14:35,140 --> 00:14:40,140
+Von diesem Ganzen den 100 Watt ausgeschaltet.
+
+177
+00:14:40,140 --> 00:14:43,480
+Frequenz 27,37.
+
+178
+00:14:43,480 --> 00:14:48,170
+27,38.
+
+179
+00:14:48,170 --> 00:14:50,170
+Seht, sie ändert sich.
+
+180
+00:14:50,170 --> 00:14:55,170
+Sie wird sich ändern, aber die Resonanz stimmt sich immer ab.
+
+181
+00:14:55,170 --> 00:14:59,170
+Die Resonanz braucht nicht unter Last abgestimmt zu werden.
+
+182
+00:14:59,170 --> 00:15:02,170
+Denn sie driftet natürlich.
+
+183
+00:15:02,170 --> 00:15:04,170
+Natürlich.
+
+184
+00:15:04,170 --> 00:15:08,170
+Jetzt schrauben wir eine 60 Watt Glühbirne rein.
+
+185
+00:15:08,170 --> 00:15:11,170
+Wie sie sich verhält, weiß ich nicht.
+
+186
+00:15:11,170 --> 00:15:13,170
+Nun, sie leuchtet ein bisschen heller.
+
+187
+00:15:13,170 --> 00:15:16,170
+Nun, im Allgemeinen leuchtet sie mit voller Helligkeit.
+
+188
+00:15:16,170 --> 00:15:17,170
+Ehrlich gesagt.
+
+189
+00:15:17,170 --> 00:15:19,170
+Nun okay, soll sie leuchten.
+
+190
+00:15:19,170 --> 00:15:22,170
+27,37 Kilohertz, ja.
+
+191
+00:15:22,170 --> 00:15:26,700
+Also, jetzt das Wichtigste.
+
+192
+00:15:26,700 --> 00:15:28,700
+Wir trennen die Sonde.
+
+193
+00:15:28,700 --> 00:15:31,700
+Also, wir schließen die Sonde unseres.
+
+194
+00:15:31,700 --> 00:15:46,700
+Dieses Ding anbringen.
+
+195
+00:15:46,700 --> 00:15:48,700
+Jetzt schalten wir den zweiten Strahl ein.
+
+196
+00:15:48,700 --> 00:16:09,900
+Also, jetzt schließen wir es hier an.
+
+197
+00:16:09,900 --> 00:16:17,740
+Also, der Peak eilt in der Phase hinterher.
+
+198
+00:16:17,740 --> 00:16:19,740
+Lassen wir die Sinuswelle expandieren.
+
+199
+00:16:19,740 --> 00:16:30,830
+Ich meine, der Peak sitzt irgendwo dort seitlich.
+
+200
+00:16:30,830 --> 00:16:42,890
+Hier sind wir irgendwie reingekommen.
+
+201
+00:16:42,890 --> 00:16:44,890
+Das ist es, was getan werden muss.
+
+202
+00:16:44,890 --> 00:16:47,890
+Wieder denken viele, dass.
+
+203
+00:17:14,450 --> 00:17:15,450
+Also.
+
+204
+00:17:15,450 --> 00:17:20,450
+Nun da, ungefähr so ein Bild sollte für uns entstehen.
+
+205
+00:17:20,450 --> 00:17:23,450
+Hier seht ihr, Peaks oben.
+
+206
+00:17:23,450 --> 00:17:25,450
+Da sind sie.
+
+207
+00:17:25,450 --> 00:17:27,980
+Da ist er.
+
+208
+00:17:27,980 --> 00:17:28,980
+Er kriecht heraus.
+
+209
+00:17:28,980 --> 00:17:31,980
+Deshalb müssen wir drauf hauen.
+
+210
+00:17:31,980 --> 00:17:34,980
+Aber, wieder, wir messen jetzt Spannung, nicht Strom.
+
+211
+00:17:34,980 --> 00:17:41,020
+Und bei Spannung braucht man nirgendwo drauf zu hauen.
+
+212
+00:17:41,020 --> 00:17:44,020
+Und den Strom antreiben, nicht die Spannung.
+
+213
+00:17:44,020 --> 00:17:47,020
+Jetzt schließe ich eine 100 Watt Glühbirne an.
+
+214
+00:17:47,020 --> 00:17:52,130
+Und achtet darauf.
+
+215
+00:17:52,130 --> 00:17:54,130
+Also.
+
+216
+00:17:54,130 --> 00:17:57,130
+Seht, der Peak bleibt an seinem Platz.
+
+217
+00:17:57,130 --> 00:17:58,130
+Ja.
+
+218
+00:17:58,130 --> 00:18:01,570
+Er geht nirgendwo hin.
+
+219
+00:18:01,570 --> 00:18:03,570
+Die Sinuswelle zuckt, ja.
+
+220
+00:18:03,570 --> 00:18:05,570
+Aber er bleibt.
+
+221
+00:18:05,570 --> 00:18:08,570
+Ich habe eine 100 Watt Glühbirne angeschlossen.
+
+222
+00:18:08,570 --> 00:18:11,570
+Seht, da leuchtet sie.
+
+223
+00:18:11,570 --> 00:18:13,570
+Meine Hände brennen auch natürlich mit ihr.
+
+224
+00:18:13,570 --> 00:18:16,810
+Seht ihr?
+
+225
+00:18:16,810 --> 00:18:19,810
+Alles ist in Resonanz.
+
+226
+00:18:19,810 --> 00:18:22,810
+Deshalb ist das System im Kreis eingebunden.
+
+227
+00:18:22,810 --> 00:18:26,810
+Ich meine, sie interagieren miteinander.
+
+228
+00:18:27,810 --> 00:18:37,810
+Deshalb, egal welche Last angeschlossen ist, wohin die Sinuswelle verschoben ist, bei welcher Frequenz, der Peak wird immer an seinem Platz sein.
+
+229
+00:18:37,810 --> 00:18:39,810
+Das ist es, was der PLL macht.
+
+230
+00:18:39,810 --> 00:18:46,810
+Im Allgemeinen diese Synchronisation, die nötig ist, damit dieses System anfängt zu funktionieren.
+
+231
+00:18:46,810 --> 00:18:49,810
+Sonst bekommt ihr nichts ordentliches.
+
+232
+00:18:49,810 --> 00:18:53,810
+Jetzt versuchen wir, was bei uns passiert.
+
+233
+00:18:53,810 --> 00:18:57,810
+Hört mal, es ist interessant, wisst ihr was?
+
+234
+00:18:57,810 --> 00:19:01,810
+Wenn man den Farid reinsteckt, leuchtet sie heller, verbraucht weniger.
+
+235
+00:19:01,810 --> 00:19:06,940
+Nun ja.
+
+236
+00:19:06,940 --> 00:19:13,650
+Alles verändert sich wild.
+
+237
+00:19:13,650 --> 00:19:21,420
+Nun ja, der Farid hilft der Glühbirne heller zu leuchten.
+
+238
+00:19:21,420 --> 00:19:32,420
+Übrigens, der Verbrauch, achtet, der Verbrauch mit dem Farid, ich meine der PLL stimmt ab, mit dem Farid zeigt er fast 4A, naja 3,5A.
+
+239
+00:19:32,420 --> 00:19:39,410
+Und so, 4 bis 5A, und die Glühbirne leuchtet viel dunkler als so.
+
+240
+00:19:39,410 --> 00:19:41,410
+Sonntag.
+
+241
+00:19:41,410 --> 00:19:45,410
+Ich meine, jetzt verbraucht es weniger Ampere, leuchtet aber heller.
+
+242
+00:19:45,410 --> 00:19:53,410
+Nun okay, wir werden jetzt keine Momente einfangen.
+
+243
+00:19:53,410 --> 00:20:03,200
+Das nächste, was ich tun wollte, wie man den Strom auf diesem Wundergerät messen kann, genauer gesagt, im Induktionskreislauf.
+
+244
+00:20:03,200 --> 00:20:10,200
+Warum man, im Grunde, mit einem Impuls draufhauen muss, sonst klappt bei uns nichts.
+
+245
+00:20:10,200 --> 00:20:13,200
+Also, wir machen so ein Ding.
+
+246
+00:20:13,200 --> 00:20:23,200
+Wir nehmen einen Ring, das ist ein Niederfrequenzring, und dementsprechend werden wir auf dem Oszilloskop sehen, dass er in die Sättigung geht, und dementsprechend wird ein Peak entstehen.
+
+247
+00:20:23,200 --> 00:20:27,640
+Das ist genau das, was wir brauchen.
+
+248
+00:20:27,640 --> 00:20:31,640
+So wird es einfacher abzustimmen sein.
+
+249
+00:20:31,640 --> 00:20:39,640
+Wir löten, kurz gesagt, jetzt diesen kleinen Draht vom Resonanzkondensator ab, legen diesen kleinen Ring hier ein und schließen ihn wieder an.
+
+250
+00:20:39,640 --> 00:20:55,750
+Ich hab das ein bisschen zerbrochen.
+
+251
+00:20:55,750 --> 00:21:28,040
+Und hier ist, was wir auf unserem Oszilloskop bekommen.
+
+252
+00:21:28,040 --> 00:22:05,750
+Aber das ist nicht für uns.
+
+253
+00:22:05,750 --> 00:22:08,750
+Nun da, wieder, der Strom eilt der Spannung hinterher.
+
+254
+00:22:08,750 --> 00:23:06,890
+Hier schlagen wir jetzt dort, wo wir müssen.
+
+255
+00:23:06,890 --> 00:23:35,890
+Diese Dauer, ja, ich meine diese Dauer muss definitiv in diesen Peak passen.
+
+256
+00:23:35,890 --> 00:23:39,890
+Gerade klappt nichts, und wir bekommen hier keine freie Energie.
+
+257
+00:23:39,890 --> 00:23:57,050
+Nun, das ist verständlich.
+
+258
+00:23:57,050 --> 00:24:13,280
+Also dann.
+
+259
+00:24:13,280 --> 00:24:19,280
+Dieser Peak ist genau das, was den Strom antreiben soll, ich meine um den Umfang herum, ja.
+
+260
+00:24:19,280 --> 00:24:26,590
+Ich meine, indem wir den Strom antreiben, bekommen wir genau dieses.
+
+261
+00:24:26,590 --> 00:24:32,590
+Wieder stellt sich für viele Enthusiasten, Sucher und dergleichen eine weitere Frage, sozusagen.
+
+262
+00:24:32,590 --> 00:24:37,540
+Was soll man überhaupt tun?
+
+263
+00:24:37,540 --> 00:24:43,980
+Wie man all das bekommt, ja, ich meine wie man den Push-Pull macht.
+
+264
+00:24:43,980 --> 00:24:46,980
+Leute, einigen wir uns so.
+
+265
+00:24:46,980 --> 00:24:49,980
+Ich erkläre euch nur die Theorie, ja.
+
+266
+00:24:49,980 --> 00:24:54,980
+Ich meine alles andere, die Schaltpläne, sucht.
+
+267
+00:24:54,980 --> 00:25:01,980
+Also, sucht zunächst mal im Internet, wie man einen Push-Pull macht, wie man diesen beweglichen Impuls macht.
+
+268
+00:25:01,980 --> 00:25:06,980
+Nur zwei Mikrochips, nichts kompliziertes.
+
+269
+00:25:06,980 --> 00:25:13,980
+Akula hat übrigens diesen Schaltplan veröffentlicht, man kann auch einige Ideen von dort übernehmen, sozusagen.
+
+270
+00:25:13,980 --> 00:25:19,980
+Er hat die Idee korrekt skizziert, irgendwie kurz, aber es gibt ein Aber.
+
+271
+00:25:19,980 --> 00:25:26,980
+Wie denn, trotzdem, so einen Impuls aus der Tesla zu bekommen, wie es da war, nun, im Grunde, man kann.
+
+272
+00:25:26,980 --> 00:25:37,710
+Ich meine jemand hat diesen Schaltplan nachgezeichnet, großen Dank dafür.
+
+273
+00:25:37,710 --> 00:25:46,340
+Nun, es ist schön.
+
+274
+00:25:46,340 --> 00:25:51,340
+Ich bin kein Schaltplanzeichner, ehrlich gesagt, hab sie nie gezeichnet.
+
+275
+00:25:51,340 --> 00:25:57,340
+Nur von Hand, auf dem Computer hab ich jetzt ein Programm installiert, es ist abgestürzt.
+
+276
+00:25:57,340 --> 00:26:01,650
+Nun, darum geht es uns jetzt nicht.
+
+277
+00:26:01,650 --> 00:26:04,650
+Wir sprechen jetzt darüber, wie dieses System funktioniert.
+
+278
+00:26:04,650 --> 00:26:07,650
+Nun, und diese Spule, ja.
+
+279
+00:26:07,650 --> 00:26:09,650
+Ich meine, was hier genau passiert.
+
+280
+00:26:09,650 --> 00:26:11,650
+Hier gehen Impulse.
+
+281
+00:26:14,060 --> 00:26:21,060
+Die Impulse an der Antenne können, im Grunde, zu klaren Impulsen gemacht werden, wenn man diesen Farid auswählt.
+
+282
+00:26:21,060 --> 00:26:29,060
+Der Farid ist dieses Ding, das jeder bei uns aufhängt, wie Akula sagte, und sie wissen nicht, wo es gelegen hat.
+
+283
+00:26:29,060 --> 00:26:32,690
+Da ist er.
+
+284
+00:26:32,690 --> 00:26:34,690
+Da ist der Farid.
+
+285
+00:26:34,690 --> 00:26:37,690
+Was macht er im Grunde?
+
+286
+00:26:37,690 --> 00:26:47,690
+Er, gegensinnig gewickelte Spulen, wie wir wissen, bilden genau so einen klaren Peak, der den gesamten Abfall dieser Tesla und dergleichen abschneidet.
+
+287
+00:26:47,690 --> 00:26:54,690
+Im Grunde, irgendwie, hier könnte man ruhig diese TVs verwenden, ja, nicht TDKS.
+
+288
+00:26:54,690 --> 00:27:04,690
+TDKS werfet alle eure in den Müll, sogar Capanazze hat sie nicht verwendet, weil innen ein Multiplizierer ist, Dioden da, das alles.
+
+289
+00:27:04,690 --> 00:27:11,690
+Was uns im Grunde daran hindert, überhaupt zu arbeiten, wir können das TDKS dort nicht steuern.
+
+290
+00:27:11,690 --> 00:27:13,690
+Ich meine, es schießt, wohin es will.
+
+291
+00:27:13,690 --> 00:27:27,300
+Ja, also, ich meine, ich riskiere jetzt, dass ich euch sogar solche Dinge erzähle, ehrlich gesagt, weil ich absolut alles sage.
+
+292
+00:27:27,300 --> 00:27:37,580
+Nehmen wir ein Stück Papier zum Zeichnen, damit ich euch ein bisschen das Wesen davon erklären kann, wie dieses ganze System funktioniert.
+
+293
+00:27:37,580 --> 00:27:40,580
+Hier, zum Beispiel, haben wir eine Tesla.
+
+294
+00:27:40,580 --> 00:27:50,550
+Tesla, das ist unser Ausgang, genauer gesagt, das ist unsere Erde, das ist unsere Tesla.
+
+295
+00:27:50,550 --> 00:27:54,550
+Das ist unser Ende, irgendwie, von dem wir ausgehen werden.
+
+296
+00:27:54,550 --> 00:27:57,550
+Hier ist die Induktionsspule.
+
+297
+00:27:57,550 --> 00:27:58,550
+Da.
+
+298
+00:27:58,550 --> 00:28:03,550
+Was muss getan werden, damit, sagen wir, hier ein Impuls herauskommt?
+
+299
+00:28:03,550 --> 00:28:08,990
+Natürlich muss man hier eine Halbperiode einspeisen.
+
+300
+00:28:08,990 --> 00:28:18,440
+Unter keinen Umständen darf man hier normale Impulse treiben.
+
+301
+00:28:18,440 --> 00:28:24,440
+Ich meine, jedenfalls wird hier am Ausgang eine klare Sinuswelle erscheinen, wir bekommen sie.
+
+302
+00:28:24,440 --> 00:28:26,440
+Ich meine, es wird gehen.
+
+303
+00:28:26,440 --> 00:28:29,440
+Warum brauchen wir das?
+
+304
+00:28:29,440 --> 00:28:34,440
+Wir brauchen hier keine Sinuswelle, wir brauchen hier einen Impuls.
+
+305
+00:28:34,440 --> 00:28:42,440
+Also, wenn man einen Impuls hier, in diese Spule, einspeist, hier, natürlich, wird eine Sache dieser Art entstehen.
+
+306
+00:28:42,440 --> 00:28:47,900
+Abklingend.
+
+307
+00:28:47,900 --> 00:28:49,900
+Peng.
+
+308
+00:28:49,900 --> 00:28:58,230
+Diesen Abfall, den wir hier haben, dieses Ding, wie man es nennt, handhabt es sehr leicht.
+
+309
+00:28:58,230 --> 00:29:02,230
+Dieses Ding, es handhabt ruhig diese Abfälle, die hier sind.
+
+310
+00:29:02,230 --> 00:29:06,830
+Am Ende bekommen wir einen klaren Impuls.
+
+311
+00:29:06,830 --> 00:29:11,830
+Einen klaren Impuls, der genau das ist, was wir brauchen.
+
+312
+00:29:11,830 --> 00:29:17,170
+Und seine Dauer ist souverän einstellbar.
+
+313
+00:29:17,170 --> 00:29:20,170
+Ich meine, die Tesla ist steuerbar.
+
+314
+00:29:20,170 --> 00:29:24,170
+Und die Dauer können wir ruhig mit diesem Widerstand einstellen.
+
+315
+00:29:24,170 --> 00:29:29,170
+Ich meine, den Impuls breiter oder schmäler machen.
+
+316
+00:29:29,170 --> 00:29:33,170
+All das wird ruhig auf eurem Oszilloskop angezeigt.
+
+317
+00:29:33,170 --> 00:29:38,170
+Und, im Grunde, wird die Tesla selbst folgsam sein.
+
+318
+00:29:38,170 --> 00:29:40,170
+Wovon ich spreche?
+
+319
+00:29:40,170 --> 00:29:43,170
+Damit ihr keine Kascher jeder Art lötet.
+
+320
+00:29:43,170 --> 00:29:48,900
+Denn mit Kaschern, ehrlich gesagt, dreht man schon durch.
+
+321
+00:29:48,900 --> 00:29:52,900
+Es ist mir leid, den Leuten zu erklären, dass der Kascher ...
+
+322
+00:29:52,900 --> 00:29:55,900
+Von einem Kascher kommt da nichts leicht.
+
+323
+00:29:55,900 --> 00:29:57,900
+Ich meine, der Kascher ist Mist.
+
+324
+00:29:57,900 --> 00:29:59,900
+Im Großen und Ganzen.
+
+325
+00:29:59,900 --> 00:30:01,900
+Ja, er funktioniert.
+
+326
+00:30:01,900 --> 00:30:07,900
+Wenn man ihn steuert, besonders ihn im richtigen Moment schließt, ausschaltet, öffnet.
+
+327
+00:30:07,900 --> 00:30:11,900
+Ihr werdet euch beim Abstimmen verausgaben.
+
+328
+00:30:11,900 --> 00:30:13,900
+Das braucht man nicht zu tun.
+
+329
+00:30:13,900 --> 00:30:17,900
+Hier ist ein KT805-Transistor.
+
+330
+00:30:17,900 --> 00:30:23,900
+Und, übrigens, hier von der Tesla hat Akula gesagt, dass hier 30 Kilowolt sind.
+
+331
+00:30:23,900 --> 00:30:27,900
+Mehr als die TVS-Einheiten und dergleichen.
+
+332
+00:30:27,900 --> 00:30:37,900
+Nein, hier reichen etwa 5 Kilowolt, damit dieses ganze System anfängt zu funktionieren und euch genau anderthalb Kilowatt Leistung gibt.
+
+333
+00:30:37,900 --> 00:30:41,400
+Es gibt ein Problem.
+
+334
+00:30:41,400 --> 00:30:45,400
+Also, hier ist alles nicht so einfach.
+
+335
+00:30:45,400 --> 00:30:48,400
+Die Spule ist auch gewickelt.
+
+336
+00:30:48,400 --> 00:30:51,400
+Ihr dürft es nicht übertreiben.
+
+337
+00:30:51,400 --> 00:30:53,400
+Jetzt nicht neu wickeln.
+
+338
+00:30:53,400 --> 00:30:56,400
+Sofort einen dünnen Draht greifen und neu wickeln.
+
+339
+00:30:56,400 --> 00:30:59,400
+Am Ausgang bekommt ihr 30 Kilowolt.
+
+340
+00:30:59,400 --> 00:31:02,400
+Das wird hier knallen.
+
+341
+00:31:02,400 --> 00:31:04,400
+Wickelt es gut.
+
+342
+00:31:04,400 --> 00:31:07,400
+Ich werde nicht sagen, was dort passiert.
+
+343
+00:31:07,400 --> 00:31:10,400
+Aber ihr verbrennt alles auf der Welt.
+
+344
+00:31:10,400 --> 00:31:14,400
+Kein Bedarf, ein solches Experiment durchzuführen.
+
+345
+00:31:14,400 --> 00:31:17,400
+Ich empfehle es nicht, ich rate davon ab.
+
+346
+00:31:17,400 --> 00:31:21,400
+Weil ihr hier keine große Leistung bekommt.
+
+347
+00:31:21,400 --> 00:31:23,400
+All das muss berechnet werden.
+
+348
+00:31:23,400 --> 00:31:25,400
+Ich sage noch einmal.
+
+349
+00:31:25,400 --> 00:31:31,400
+Von 4, von 2 bis 5 Kilowolt reicht aus, um das System zu starten.
+
+350
+00:31:31,400 --> 00:31:33,400
+Es funktioniert ruhig.
+
+351
+00:31:33,400 --> 00:31:36,400
+Die Spule reagiert darauf, alles.
+
+352
+00:31:36,400 --> 00:31:40,400
+Noch einmal, noch ein Moment.
+
+353
+00:31:40,400 --> 00:31:46,400
+Viele denken, ein Kamerad hat mir geschrieben, dass Nullresonanz Nullwiderstand hat.
+
+354
+00:31:46,400 --> 00:31:51,960
+Er fing an, dort irgendwelchen Unsinn zu erzählen.
+
+355
+00:31:51,960 --> 00:31:55,300
+Hört mit diesem Unsinn auf.
+
+356
+00:31:55,300 --> 00:31:57,300
+Elektronen aus dem Medium.
+
+357
+00:31:57,300 --> 00:32:04,300
+Wir können die Ströme und Spannungen der Kalkelektrizität nicht zu der warmen addieren, die wir hier verwenden.
+
+358
+00:32:04,300 --> 00:32:05,300
+Das können wir nicht.
+
+359
+00:32:05,300 --> 00:32:07,300
+Und das muss nicht getan werden.
+
+360
+00:32:07,300 --> 00:32:18,060
+Und beide Spannungen haben natürlich denselben Einfluss, genauso wie beide, sowohl das eine als auch das andere, ein Magnetfeld erzeugen.
+
+361
+00:32:19,340 --> 00:32:26,340
+Also, hier wird dieses Magnetfeld in Kombination mit der Antenne und der Induktionsspule erzeugt.
+
+362
+00:32:26,340 --> 00:32:32,340
+Was wichtig für euch ist, ist hier eine Bewegung des Mediums zu erzeugen.
+
+363
+00:32:32,340 --> 00:32:36,340
+Jetzt werden sie wieder sagen, dass das unmöglich ist.
+
+364
+00:32:36,340 --> 00:32:42,340
+Aber wenn es unmöglich ist, dann baut keine Generatoren und schaut diesen Kanal überhaupt nicht.
+
+365
+00:32:42,340 --> 00:32:45,340
+Dann werde ich nichts erzählen.
+
+366
+00:32:45,340 --> 00:32:50,340
+Diese Klugscheißer, die nichts tun außer zu reden, haben mich aufgereben.
+
+367
+00:32:50,340 --> 00:32:55,070
+Verlasst den Kanal und hört auf zu kommentieren.
+
+368
+00:32:55,070 --> 00:33:00,070
+Ich schalte Kommentare aus, weil ich das alles nicht mehr erzählen will.
+
+369
+00:33:00,070 --> 00:33:05,070
+Ich möchte den Leuten eine normale Idee vermitteln, damit etwas klappt.
+
+370
+00:33:05,070 --> 00:33:12,580
+Weil das System begrenzte Möglichkeiten hat, wenn ihr weiterarbeitet, bekommt ihr vielleicht etwas.
+
+371
+00:33:12,580 --> 00:33:17,580
+Aber, wie man sagt, jetzt habe ich alles vollständig ausgeführt.
+
+372
+00:33:17,580 --> 00:33:20,580
+Das wichtigste ist, jetzt die Gehirne einzuschalten.
+
+373
+00:33:20,580 --> 00:33:22,580
+Also.
+
+374
+00:33:22,580 --> 00:33:24,580
+Was wollte ich?
+
+375
+00:33:24,580 --> 00:33:27,580
+Was wollte ich vermitteln?
+
+376
+00:33:27,580 --> 00:33:32,580
+Ich wollte vermitteln, dass ihr hier eine Bewegung des Mediums erzeugen müsst.
+
+377
+00:33:32,580 --> 00:33:36,580
+Ein elektromagnetisches Feld, das das Medium bereits erzeugt.
+
+378
+00:33:36,580 --> 00:33:39,580
+Woher kommt hier der Gewinn?
+
+379
+00:33:39,580 --> 00:33:42,580
+Aus dem Medium. Darum geht es.
+
+380
+00:33:42,580 --> 00:33:44,580
+Alles andere macht der Generator.
+
+381
+00:33:44,580 --> 00:33:49,270
+Die Spule auf diesen verrät.
+
+382
+00:33:49,270 --> 00:33:54,270
+Hier, wie bei mir, gibt es eine zusätzliche Spule.
+
+383
+00:33:54,270 --> 00:33:56,270
+Vier Quadratmillimeter Draht.
+
+384
+00:33:56,270 --> 00:34:03,700
+Von hier die Drähte, hier wird der Resonanzkondensator sein.
+
+385
+00:34:03,700 --> 00:34:06,700
+Ich zeige es kurz so.
+
+386
+00:34:06,700 --> 00:34:08,700
+Das ist dieser Kondensator.
+
+387
+00:34:08,700 --> 00:34:10,700
+Er wird ausgewählt werden müssen.
+
+388
+00:34:10,700 --> 00:34:13,700
+Das System wird natürlich anfangen, Strom zu fressen.
+
+389
+00:34:13,700 --> 00:34:14,700
+Erschreckend.
+
+390
+00:34:14,700 --> 00:34:20,700
+Aber ihr müsst es so auswählen, dass es kein Fressen gibt, keine Gefressigkeit.
+
+391
+00:34:20,700 --> 00:34:23,700
+Setzt einen Kondensator genau hier.
+
+392
+00:34:23,700 --> 00:34:26,700
+Ich habe 0,15 installiert.
+
+393
+00:34:26,700 --> 00:34:31,700
+Ich habe installiert, jetzt zeige ich, so einen Kondensator.
+
+394
+00:34:31,700 --> 00:34:37,700
+Meine sind alle Wima, weil sie die hochwertigsten Kondensatoren sind.
+
+395
+00:34:37,700 --> 00:34:40,700
+So einen Kondensator hatte ich installiert.
+
+396
+00:34:40,700 --> 00:34:46,700
+Seht, er hat eine normale Blindspannung, normale Blindleistung.
+
+397
+00:34:46,700 --> 00:34:49,700
+Er handhabt MKP 10 ruhig.
+
+398
+00:34:49,700 --> 00:34:52,700
+So einen Kondensator hatte ich genau hier.
+
+399
+00:34:52,700 --> 00:34:54,700
+Genau an dieser Stelle.
+
+400
+00:34:54,700 --> 00:34:57,700
+Also, alles ruhig.
+
+401
+00:34:57,700 --> 00:35:01,700
+Und weiter stimmen die Phasen überein.
+
+402
+00:35:01,700 --> 00:35:03,700
+Wir treiben das hier alles rein.
+
+403
+00:35:03,700 --> 00:35:06,700
+Am Ausgang natürlich eine Diodenbrücke.
+
+404
+00:35:06,700 --> 00:35:13,700
+Die, wie ihr seht, die Spule geerdet ist, aber die Diodenbrücke unter keinen Umständen irgendwo geerdet ist.
+
+405
+00:35:13,700 --> 00:35:16,700
+Sie geht einfach zum Netzteil.
+
+406
+00:35:16,700 --> 00:35:19,700
+Das Netzteil ist auch nicht geerdet.
+
+407
+00:35:19,700 --> 00:35:22,700
+Und übrigens, bei Roma war es auch nicht geerdet.
+
+408
+00:35:22,700 --> 00:35:24,700
+Achtet darauf.
+
+409
+00:35:24,700 --> 00:35:26,700
+Nirgendwo. Nirgendwo.
+
+410
+00:35:26,700 --> 00:35:29,700
+Alles ist getrennt und nicht verbunden.
+
+411
+00:35:29,700 --> 00:35:31,700
+Ich meine, kein Bedarf zu erden.
+
+412
+00:35:31,700 --> 00:35:34,700
+Hier hat es eine konstante Spannung.
+
+413
+00:35:34,700 --> 00:35:38,700
+Hier geht direkt von diesen Bolzen die Spannung zur Steckdose.
+
+414
+00:35:38,700 --> 00:35:41,700
+Und zur Neonlampe, die hier ist.
+
+415
+00:35:41,700 --> 00:35:45,140
+Also, nun da. Das ist es.
+
+416
+00:35:45,140 --> 00:35:48,140
+Sozusagen in zwei Worten habe ich es erzählt.
+
+417
+00:35:51,220 --> 00:35:56,220
+Das Wichtigste ist, dass ihr versteht, was zu tun ist, und aufhört, Unsinn zu reden.
+
+418
+00:35:56,220 --> 00:36:04,220
+Wenn jemand nicht an freie Energie glaubt, nicht glaubt, dass das möglich ist, nun, verdammt, nun was?
+
+419
+00:36:04,220 --> 00:36:07,220
+Worüber streiten wir hier eigentlich?
+
+420
+00:36:07,220 --> 00:36:10,220
+Nun, haut ab. Das ist es.
+
+421
+00:36:10,220 --> 00:36:12,220
+Macht dann etwas anderes.
+
+422
+00:36:12,220 --> 00:36:24,040
+Und alle Funk-Amateure, die sich damit beschäftigen, wie man sagt, mit eben diesem, dann werden wir und ich dieses Setup doch noch fertigstellen.
+
+423
+00:36:24,040 --> 00:36:27,040
+Es ist schön, nett.
+
+424
+00:36:27,040 --> 00:36:32,040
+Sein Design, sozusagen, und alles andere ist beeindruckend.
+
+425
+00:36:32,040 --> 00:36:35,040
+Niemand will besonders Kapanatze nachbauen.
+
+426
+00:36:35,040 --> 00:36:40,040
+Aber sie haben es versucht, natürlich, haben an diesen Spulen gezündet und so.
+
+427
+00:36:40,040 --> 00:36:43,040
+Leute, ihr müsst wissen, wo man zündet.
+
+428
+00:36:43,040 --> 00:36:45,040
+Das Wichtigste.
+
+429
+00:36:45,040 --> 00:36:48,040
+Ich habe in diesem Video viel gesagt.
+
+430
+00:36:48,040 --> 00:36:50,040
+Sehr viel.
+
+431
+00:36:50,040 --> 00:36:53,040
+Das ist es. Bis zum nächsten Mal.
+

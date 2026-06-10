@@ -1,0 +1,492 @@
+1
+00:00:03,950 --> 00:00:09,420
+Ich schlage vor, die Nanosekunden komplett zu eliminieren.
+
+2
+00:00:09,420 --> 00:00:13,420
+Ich habe eine Schaltung nach dem Prinzip eines Multivibrators aufgebaut.
+
+3
+00:00:13,420 --> 00:00:25,260
+Hier ist das, was wir haben.
+
+4
+00:00:25,260 --> 00:00:29,760
+Wir haben unseren aufladbaren Kondensator.
+
+5
+00:00:29,760 --> 00:00:34,760
+Jetzt messen wir, wie viel zur Glühbirne geht und wie viel nach der Glühbirne.
+
+6
+00:00:34,760 --> 00:00:37,760
+MOT, die Hochspannungswicklung.
+
+7
+00:00:37,760 --> 00:00:43,190
+Unsere Schaltung basiert auf einem RF 840.
+
+8
+00:00:43,190 --> 00:00:46,190
+Entladekapazität 2,2 Nanofarad.
+
+9
+00:00:46,190 --> 00:00:47,190
+100W Last.
+
+10
+00:00:47,190 --> 00:00:49,190
+100W Anzeige.
+
+11
+00:00:49,190 --> 00:00:52,790
+Spannungsteiler 300 Ohm.
+
+12
+00:00:52,790 --> 00:00:54,790
+2KT 315.
+
+13
+00:00:54,790 --> 00:00:58,790
+50 Ohm Stromschutz, wenn 218 V10er ansprechen.
+
+14
+00:00:58,790 --> 00:01:05,410
+Und 300 Ohm zur Steuerung des RF.
+
+15
+00:01:05,410 --> 00:01:13,410
+Die jetzt versuchen, eine solche Schaltung zu starten, rate ich, diesen Teiler mit Basisstabilisierung zu verwenden.
+
+16
+00:01:13,410 --> 00:01:16,410
+Er schützt sowohl den RF als auch jeden Schalter.
+
+17
+00:01:16,410 --> 00:01:22,910
+Diese zwei Widerstände schützen unsere KT 315.
+
+18
+00:01:22,910 --> 00:01:29,910
+Jetzt sehen wir, wie viel Spannung nötig ist, um die 2KT 315 auszulösen.
+
+19
+00:01:29,910 --> 00:01:31,910
+Es ist ein 315G.
+
+20
+00:01:31,910 --> 00:01:39,230
+Hier sind sie, zwei davon.
+
+21
+00:01:39,230 --> 00:01:47,610
+Hier sind unsere Teiler mit Stabilisierung.
+
+22
+00:01:47,610 --> 00:01:49,610
+Natürlich, 7K Ohm.
+
+23
+00:01:49,610 --> 00:01:53,170
+Wir starten es.
+
+24
+00:01:53,170 --> 00:01:59,900
+Was sehen wir?
+
+25
+00:01:59,900 --> 00:02:06,900
+Wir sehen, dass wir eine Spannung von 287 V haben und die zwei Transistoren nicht ansprechen.
+
+26
+00:02:06,900 --> 00:02:19,650
+Dieser ist vor der Glühbirne, dieser nach der Glühbirne, vor dem MOT.
+
+27
+00:02:19,650 --> 00:02:27,230
+Jetzt fangen wir an, die Spannung zu erhöhen, bis er anspricht.
+
+28
+00:02:27,230 --> 00:02:33,570
+Dann entfernen wir sie und lassen den Freilaufmodus laufen.
+
+29
+00:02:33,570 --> 00:02:36,570
+Wir sehen die Glühbirne und die Spannung und wir erhöhen.
+
+30
+00:02:36,570 --> 00:02:41,290
+Da, es gibt einen Auslöser.
+
+31
+00:02:41,290 --> 00:02:48,340
+Jetzt entferne ich die Spannung, um die Schaltung im freien Modus laufen zu lassen.
+
+32
+00:02:48,340 --> 00:02:59,500
+Das war's, unsere Glühbirne hat sich eingeschaltet.
+
+33
+00:02:59,500 --> 00:03:05,500
+Diese Glühbirne ist etwas rötlich, das ist 100 V und das ist 100 V.
+
+34
+00:03:05,500 --> 00:03:07,500
+Absolut identische Glühbirne.
+
+35
+00:03:07,500 --> 00:03:16,540
+Spannung vor der Glühbirne 296, nach der Glühbirne ungefähr 230.
+
+36
+00:03:16,540 --> 00:03:25,940
+Wir notieren das laufende 296, wir schreiben 296 V vor der Glühbirne.
+
+37
+00:03:25,940 --> 00:03:32,120
+Nach der Glühbirne ungefähr 230.
+
+38
+00:03:33,120 --> 00:03:36,120
+Es ändert sich, wenn die Glühbirne sich aufheizt.
+
+39
+00:03:36,120 --> 00:03:43,270
+228 V.
+
+40
+00:03:43,270 --> 00:03:47,670
+Als nächstes kommt der MOT.
+
+41
+00:03:47,670 --> 00:03:53,430
+Na, was haben wir an der Basis unseres Transistors?
+
+42
+00:03:53,430 --> 00:03:57,480
+Hier ist eine Sonde.
+
+43
+00:03:57,480 --> 00:04:03,580
+Sie geht zur Basis.
+
+44
+00:04:03,580 --> 00:04:06,580
+An der Basis sehen wir so ein kleines Signal.
+
+45
+00:04:06,580 --> 00:04:10,050
+5 Nanosekunden pro Division.
+
+46
+00:04:10,050 --> 00:04:14,680
+Insgesamt 1, 2, 3.
+
+47
+00:04:14,680 --> 00:04:24,220
+15 Nanosekunden und dann das Steuersignal prellen.
+
+48
+00:04:24,220 --> 00:04:27,220
+Das Signal an der Basis beträgt 15 Nanosekunden.
+
+49
+00:04:27,220 --> 00:04:32,860
+Und jetzt die Frequenz.
+
+50
+00:04:32,860 --> 00:04:37,400
+Schauen wir, was wir hier haben.
+
+51
+00:04:37,400 --> 00:04:39,400
+So eine Schönheit.
+
+52
+00:04:39,400 --> 00:04:44,540
+406 Kilohertz.
+
+53
+00:04:44,540 --> 00:04:59,100
+Diese Frequenz ist die Resonanz der Hochspannungsspule dieses Kondensators, bei der der Spannungsanstieg, also Spannungsresonanz, einen Auslöser von 320 V ergibt.
+
+54
+00:04:59,100 --> 00:05:04,100
+Jetzt notieren wir, dass es 403 Kilohertz sind.
+
+55
+00:05:04,100 --> 00:05:08,100
+Das heißt, unsere Frequenz beträgt 403 Kilohertz.
+
+56
+00:05:08,100 --> 00:05:12,590
+Was sehen wir am Kollektor?
+
+57
+00:05:12,590 --> 00:05:17,920
+Das ist der Kollektor.
+
+58
+00:05:17,920 --> 00:05:24,190
+Und das ist bereits das Signal selbst nach dem Kondensator.
+
+59
+00:05:24,190 --> 00:05:29,390
+Jetzt schauen wir auf die Flanken.
+
+60
+00:05:29,390 --> 00:05:40,910
+10 Nanosekunden.
+
+61
+00:05:40,910 --> 00:05:45,910
+Die Flanke am Kollektor und die Kondensatorentladung betragen 20 Nanosekunden.
+
+62
+00:05:45,910 --> 00:05:53,350
+Das ist die Grenze dieses Transistors und die Entladezeit dieses Kondensators.
+
+63
+00:05:53,350 --> 00:05:55,350
+2 Nanofarad.
+
+64
+00:05:55,350 --> 00:06:00,350
+Das heißt, wir haben 10 Nanosekunden.
+
+65
+00:06:00,350 --> 00:06:06,350
+Also bekommen wir insgesamt 10 Nanosekunden bei unserer Frequenz von 403 Kilohertz.
+
+66
+00:06:06,350 --> 00:06:13,310
+403 Kilohertz.
+
+67
+00:06:13,310 --> 00:06:20,180
+Na gut, jetzt das Wichtigste.
+
+68
+00:06:20,180 --> 00:06:25,180
+Wie viel verbrauchen wir, wenn unsere 100 Watt Glühbirne mit 30% brennt?
+
+69
+00:06:25,180 --> 00:06:28,180
+Das ist sogar übertrieben.
+
+70
+00:06:28,180 --> 00:06:32,180
+Selbst wenn ihr auch die Rötung dieser Glühbirne berücksichtigt.
+
+71
+00:06:32,180 --> 00:06:36,180
+Das heißt, hier sind es 30% des Leuchtens einer 100 Watt Glühbirne.
+
+72
+00:06:36,180 --> 00:06:39,690
+Nicht mehr.
+
+73
+00:06:39,690 --> 00:06:41,690
+Also.
+
+74
+00:06:41,690 --> 00:06:46,690
+Unsere 100 Watt Glühbirne brennt mit 30%.
+
+75
+00:06:46,690 --> 00:06:48,690
+Sie ist gelblich.
+
+76
+00:06:48,690 --> 00:06:50,690
+Sie leuchtet gerade so.
+
+77
+00:06:50,690 --> 00:07:02,950
+Das heißt, 30% sind, was bei uns brennt.
+
+78
+00:07:02,950 --> 00:07:05,950
+Also sind das 30 Watt.
+
+79
+00:07:05,950 --> 00:07:11,950
+Ich habe eine 100 Watt Glühbirne genommen, um die Berechnung zu vereinfachen.
+
+80
+00:07:11,950 --> 00:07:13,950
+30 Watt.
+
+81
+00:07:13,950 --> 00:07:18,840
+Und was geben wir dafür aus?
+
+82
+00:07:18,840 --> 00:07:23,840
+Wir geben etwas mehr als 4 Ampere aus, ungefähr.
+
+83
+00:07:23,840 --> 00:07:27,310
+20 Volt.
+
+84
+00:07:27,310 --> 00:07:34,060
+4 Ampere, 20 Volt sind 80 Watt.
+
+85
+00:07:34,060 --> 00:07:44,060
+Jetzt liegt der Wirkungsgrad des Wechselrichters bei 83, 82, 81, 80%, je nach Spannung.
+
+86
+00:07:44,060 --> 00:07:46,060
+Ich habe das gemessen.
+
+87
+00:07:46,060 --> 00:07:48,060
+Wir machen das so.
+
+88
+00:07:48,060 --> 00:07:55,060
+Wir ziehen nicht einmal 20%, sondern 25% Wirkungsgrad von diesem Verbrauch ab.
+
+89
+00:07:55,060 --> 00:07:58,400
+Um nicht zu viel nachzudenken.
+
+90
+00:07:58,400 --> 00:08:01,400
+Wir ziehen ungefähr 20 Watt ab.
+
+91
+00:08:01,400 --> 00:08:05,400
+Das heißt, von hier minus 20 Watt.
+
+92
+00:08:05,400 --> 00:08:10,810
+Das sind 25% für den Wirkungsgrad des Wechselrichters.
+
+93
+00:08:10,810 --> 00:08:16,080
+Und wir haben 60 Watt übrig.
+
+94
+00:08:16,080 --> 00:08:20,080
+Das heißt, um 30 Watt in diesem System zu bekommen.
+
+95
+00:08:20,080 --> 00:08:23,080
+Ich zeige es nochmal.
+
+96
+00:08:23,080 --> 00:08:27,080
+Mit einem 20 Nanosekunden Impuls verbrauchen wir 60 Watt.
+
+97
+00:08:27,080 --> 00:08:32,060
+60 zu 30.
+
+98
+00:08:32,060 --> 00:08:35,060
+Selbst wenn ich mich geirrt habe.
+
+99
+00:08:35,060 --> 00:08:38,060
+Selbst wenn er nicht mit 30 brennt, sondern etwas mehr.
+
+100
+00:08:38,060 --> 00:08:41,060
+Mit 35%.
+
+101
+00:08:41,060 --> 00:08:45,060
+Der Wirkungsgrad beträgt trotzdem 50 bis 60%.
+
+102
+00:08:45,060 --> 00:08:48,060
+Das heißt, unser Wirkungsgrad betrug.
+
+103
+00:08:48,060 --> 00:08:56,820
+50 bis 60%.
+
+104
+00:08:56,820 --> 00:09:00,130
+Definitiv.
+
+105
+00:09:00,130 --> 00:09:04,820
+Das ist alles Unsinn.
+
+106
+00:09:04,820 --> 00:09:08,770
+Was ich von mir aussagen kann.
+
+107
+00:09:08,770 --> 00:09:16,270
+Im Großen und Ganzen solltet ihr beim Studium des Betriebs dieser ganzen Schaltung nicht zu enttäuscht sein.
+
+108
+00:09:16,270 --> 00:09:25,270
+Denn genau bei den Wattmetermessungen bei 50 Hz Wechselstrom sehen wir, dass unsere Wattmeter weniger anzeigen als wir die Glühbirnen tatsächlich leuchten sehen.
+
+109
+00:09:25,270 --> 00:09:29,320
+Und das ist gut.
+
+110
+00:09:29,320 --> 00:09:34,320
+Man muss nur darüber nachdenken, warum das Wattmeter die Kondensatorladung nicht registriert.
+
+111
+00:09:34,320 --> 00:09:44,080
+Also die Wirkung von Blindströmen, die in der Lage sind, den Kondensator aufzuladen, und dann nutzen wir diese Energie.
+
+112
+00:09:44,080 --> 00:09:46,080
+Was ist Blindleistung?
+
+113
+00:09:46,080 --> 00:09:48,080
+Na, ich sage es einfach.
+
+114
+00:09:48,080 --> 00:09:57,080
+Das heißt, es ist stromlose Spannung, die in der Lage ist, leistungsstarke Kondensatoren aufzuladen, und dann nutzen wir das.
+
+115
+00:09:57,080 --> 00:10:02,080
+Ich verstehe, dass Wasmus diese Lösung sehr gut angegangen ist.
+
+116
+00:10:02,080 --> 00:10:06,080
+Oder Wasmus, wie auch immer er genannt wird.
+
+117
+00:10:06,080 --> 00:10:12,080
+Im Grunde verstehe ich sein System, da ich auf die gleiche Weise damit arbeite.
+
+118
+00:10:12,080 --> 00:10:24,080
+Das heißt, ich verwende alle geliebten Teslas, um bestimmte Atome oder Moleküle einer bestimmten Substanz zu aktivieren oder in Bewegung zu setzen, die in der Lage sind, elektrische Ströme zu erzeugen.
+
+119
+00:10:24,080 --> 00:10:33,030
+Na, und dann das System zur Umwandlung durch das Teslasystem oder auf irgendeine andere Weise.
+
+120
+00:10:33,030 --> 00:10:38,030
+Diese Elektronen anzusammeln und sie in eine Last zu nutzen.
+
+121
+00:10:38,030 --> 00:10:41,030
+Aber das ist schon ein anderes Thema.
+
+122
+00:10:41,030 --> 00:10:43,030
+Das ist nur Nahrung für Gedanken.
+
+123
+00:10:43,030 --> 00:10:46,380
+Viel Erfolg allerseits!
+
