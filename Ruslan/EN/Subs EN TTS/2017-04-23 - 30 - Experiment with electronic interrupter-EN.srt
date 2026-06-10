@@ -1,0 +1,776 @@
+1
+00:00:01,620 --> 00:00:02,760
+Hi everyone once more.
+
+2
+00:00:03,640 --> 00:00:05,100
+Video number 2 on tuning.
+
+3
+00:00:05,720 --> 00:00:11,080
+I reworked my Tesla system a bit, and all the drives that are here in this setup, which I already showed.
+
+4
+00:00:12,640 --> 00:00:17,100
+To get a good gain, first of all I did after all use a 100V converter.
+
+5
+00:00:19,380 --> 00:00:21,120
+Here's a 100V converter.
+
+6
+00:00:21,820 --> 00:00:23,380
+It's this kind, quite simple.
+
+7
+00:00:24,400 --> 00:00:26,000
+Here the LEDs glow a bit.
+
+8
+00:00:26,600 --> 00:00:29,640
+So, indicator LEDs, the power board is here.
+
+9
+00:00:31,020 --> 00:00:33,860
+Well, the same pulse burst board on three chips.
+
+10
+00:00:35,200 --> 00:00:37,680
+So, the voltage regulators are here for us.
+
+11
+00:00:38,640 --> 00:00:40,000
+And the high voltage part.
+
+12
+00:00:40,680 --> 00:00:46,080
+The only thing I replaced, I slapped a high voltage transistor in here, instead of the one that was here.
+
+13
+00:00:46,660 --> 00:00:48,140
+Now there's a fairly long name here.
+
+14
+00:00:48,940 --> 00:00:50,380
+I don't remember it by heart now.
+
+15
+00:00:51,020 --> 00:00:54,320
+So, this is the inductor matching, because it's very important.
+
+16
+00:00:55,380 --> 00:00:57,740
+So 110V is fed to it now.
+
+17
+00:00:57,740 --> 00:00:59,520
+Here the LEDs on.
+
+18
+00:01:00,580 --> 00:01:04,080
+So, this LED shows us the presence of a blown fuse.
+
+19
+00:01:04,600 --> 00:01:06,400
+Here the same, a blown fuse.
+
+20
+00:01:07,080 --> 00:01:10,900
+I put in a fuse, since I don't really want to solder protection into the system.
+
+21
+00:01:11,300 --> 00:01:13,280
+So I have four fuses here on the boards.
+
+22
+00:01:15,680 --> 00:01:17,300
+So, the system's adjusted.
+
+23
+00:01:18,000 --> 00:01:18,600
+And here's the Tesla.
+
+24
+00:01:19,300 --> 00:01:24,220
+The Tesla, this is the initial tuning, what we need to get it all for anything to happen.
+
+25
+00:01:25,680 --> 00:01:27,040
+The process happened.
+
+26
+00:01:27,580 --> 00:01:29,820
+Don't forget that we need a static discharge.
+
+27
+00:01:31,680 --> 00:01:34,480
+And now I'll show exactly this static discharge.
+
+28
+00:01:35,240 --> 00:01:36,200
+We turn on the Tesla.
+
+29
+00:01:37,460 --> 00:01:39,000
+The system started working.
+
+30
+00:01:39,660 --> 00:01:42,300
+You immediately hear that something started crackling everywhere.
+
+31
+00:01:43,620 --> 00:01:46,960
+The Tesla is standing very close to the rack and the bulbs.
+
+32
+00:01:47,240 --> 00:01:49,640
+So there are some losses here, and it's hard to tune.
+
+33
+00:01:50,040 --> 00:01:52,620
+We take the end of the grounding and bring it close.
+
+34
+00:01:53,220 --> 00:01:54,380
+We watch what happens.
+
+35
+00:01:57,550 --> 00:02:01,050
+The spark is fairly, a white, white spark, long.
+
+36
+00:02:03,960 --> 00:02:06,540
+Fairly long, somewhere maybe 10 centimeters.
+
+37
+00:02:07,240 --> 00:02:09,260
+It breaks through without tracks.
+
+38
+00:02:11,000 --> 00:02:12,980
+Very strong, very strong.
+
+39
+00:02:13,620 --> 00:02:15,040
+This whole rig can be adjusted.
+
+40
+00:02:15,700 --> 00:02:16,460
+I'll show how now.
+
+41
+00:02:18,140 --> 00:02:20,080
+The camera is awkward to hold.
+
+42
+00:02:22,000 --> 00:02:26,860
+And in general, honestly, I really wouldn't want to bring the camera close to this rig.
+
+43
+00:02:27,400 --> 00:02:28,500
+I already burned out one.
+
+44
+00:02:29,580 --> 00:02:30,200
+Here it works.
+
+45
+00:03:09,300 --> 00:03:10,740
+You see that it's a white spark.
+
+46
+00:03:11,660 --> 00:03:13,680
+Regardless of that, here it stretches.
+
+47
+00:03:17,740 --> 00:03:19,920
+And the consumption, so, we look.
+
+48
+00:03:20,860 --> 00:03:23,740
+The Tesla's consumption, there you go, it's less.
+
+49
+00:03:24,440 --> 00:03:26,640
+It's somewhere around 600 milliamps.
+
+50
+00:03:27,680 --> 00:03:34,260
+It doesn't increase more, but it's still despite the fact that with the schematic I showed in the first initial video, it was worse there.
+
+51
+00:03:34,780 --> 00:03:35,340
+Here it is.
+
+52
+00:03:35,920 --> 00:03:36,920
+I bring it close.
+
+53
+00:03:42,000 --> 00:03:44,620
+During such short circuits, the current increases.
+
+54
+00:03:50,960 --> 00:03:52,940
+But not much, as we see.
+
+55
+00:03:53,400 --> 00:03:54,300
+But the oscillogram.
+
+56
+00:03:55,020 --> 00:03:56,500
+It's just a probe lying nearby.
+
+57
+00:03:57,380 --> 00:03:59,520
+It's hard to determine anything right now.
+
+58
+00:04:00,620 --> 00:04:01,560
+A bit nonsensical.
+
+59
+00:04:02,400 --> 00:04:03,380
+It's not like that.
+
+60
+00:04:04,120 --> 00:04:05,440
+Have to drag it a bit closer.
+
+61
+00:04:12,540 --> 00:04:14,600
+Supply voltage 24 volts.
+
+62
+00:04:15,820 --> 00:04:19,140
+And, as we see, the consumption current is half.
+
+63
+00:04:19,800 --> 00:04:21,620
+Well, I mean, roughly 600 milliamps.
+
+64
+00:04:22,640 --> 00:04:26,100
+My fuse on the input board is 4.2 amps each.
+
+65
+00:04:29,350 --> 00:04:32,810
+Here a protective fuse of 600 milliamps is set.
+
+66
+00:04:45,250 --> 00:04:49,890
+The pulse feed, the bursts of pulses, can be adjusted however you want.
+
+67
+00:04:49,890 --> 00:04:51,310
+Here I'll show you now.
+
+68
+00:04:52,410 --> 00:04:56,910
+Like this you'll never get frequency adjustment if your Tesla works just in linear mode.
+
+69
+00:04:57,630 --> 00:04:59,870
+You'll constantly have to retune the resonance.
+
+70
+00:05:00,770 --> 00:05:02,410
+And you won't achieve this kind of thing.
+
+71
+00:05:29,880 --> 00:05:32,680
+Here's this kind of white spark, a white art ghost.
+
+72
+00:05:33,480 --> 00:05:35,320
+And this is how the Tesla works cleanly.
+
+73
+00:05:38,890 --> 00:05:39,930
+We don't need more.
+
+74
+00:05:40,530 --> 00:05:42,850
+So this whole rig is adjusted easily.
+
+75
+00:05:44,770 --> 00:05:45,970
+I'll show now.
+
+76
+00:05:46,830 --> 00:05:47,630
+Here, look.
+
+77
+00:05:49,990 --> 00:05:53,590
+With this resistor we change the pulse repetition frequency.
+
+78
+00:06:22,080 --> 00:06:24,720
+Here's somewhere around 60 hertz, roughly.
+
+79
+00:06:27,460 --> 00:06:30,740
+Somewhere, maybe even 46 hertz pulse frequency.
+
+80
+00:06:32,820 --> 00:06:34,800
+This is how it works in resonance.
+
+81
+00:06:35,600 --> 00:06:37,840
+Basically you can get an even better effect.
+
+82
+00:06:45,590 --> 00:06:47,810
+Now I'll cut the light to show it even prettier.
+
+83
+00:07:15,740 --> 00:07:17,120
+Need a stand for the camera.
+
+84
+00:08:52,840 --> 00:08:54,500
+Here's the kind of beauty we get.
+
+85
+00:09:01,420 --> 00:09:02,600
+But let's not get rowdy.
+
+86
+00:09:08,820 --> 00:09:12,420
+You can already feel the wire's insulation burning at the end.
+
+87
+00:09:13,660 --> 00:09:16,300
+I'm saying, I can raise the frequency quite a lot.
+
+88
+00:09:19,520 --> 00:09:21,120
+The effect can be hefty.
+
+89
+00:09:22,480 --> 00:09:26,720
+I don't know if you could hear me or not, because such sounds, hefty.
+
+90
+00:09:28,400 --> 00:09:30,120
+Everything's sparking like crazy.
+
+91
+00:09:31,360 --> 00:09:32,460
+About the transistor.
+
+92
+00:09:34,500 --> 00:09:37,840
+By the way, all my fingers immediately get excited.
+
+93
+00:09:39,520 --> 00:09:43,880
+The transistor's completely cold, despite the heatsink cooling it.
+
+94
+00:09:45,680 --> 00:09:46,500
+And the diode too.
+
+95
+00:09:46,920 --> 00:09:48,780
+Oh dear, the voltage here is high.
+
+96
+00:09:50,020 --> 00:09:51,620
+Shocks with current right away.
+
+97
+00:09:52,420 --> 00:09:52,900
+Damn thing.
+
+98
+00:09:53,800 --> 00:09:55,360
+Well, that's the kind of system.
+
+99
+00:09:56,480 --> 00:09:58,700
+It's in operation now, it's fully working.
+
+100
+00:10:08,960 --> 00:10:12,140
+This is what you have to get from a Tesla to get free energy.
+
+101
+00:10:13,060 --> 00:10:17,240
+Because in this case there's polarization of all the spins and so on.
+
+102
+00:10:18,560 --> 00:10:26,900
+On all kinds of catchers, generators that drive this Tesla in linear mode, this whole thing won't work, so you forget about it entirely.
+
+103
+00:10:27,600 --> 00:10:29,860
+About this whole, as they say, baloney.
+
+104
+00:10:31,160 --> 00:10:34,380
+Which maybe someone is peddling to you and saying it'll all work.
+
+105
+00:10:35,640 --> 00:10:37,580
+It'll be fairly hard on a catcher.
+
+106
+00:10:38,180 --> 00:10:39,620
+I tried to start it on a catcher.
+
+107
+00:10:45,460 --> 00:10:48,700
+The Tesla crackles, but unfortunately mine came off.
+
+108
+00:10:49,340 --> 00:10:51,880
+I broke the Tesla today, dropped it on the floor.
+
+109
+00:10:52,500 --> 00:10:55,240
+Here I already have a breakdown, so I'll have to rewind it.
+
+110
+00:10:55,740 --> 00:10:57,160
+I already prepared the pipe.
+
+111
+00:10:57,960 --> 00:10:59,460
+Here I have a special machine.
+
+112
+00:11:00,860 --> 00:11:01,940
+I'll wind it today later.
+
+113
+00:11:03,740 --> 00:11:04,560
+So well what?
+
+114
+00:11:05,540 --> 00:11:08,300
+There, in short, go for it what I showed you.
+
+115
+00:11:09,420 --> 00:11:13,260
+Once again I say, the consumption grew a tiny bit because of the frequency.
+
+116
+00:11:13,780 --> 00:11:16,180
+But all this can be adjusted, I say again.
+
+117
+00:11:17,440 --> 00:11:18,860
+The main thing you know what?
+
+118
+00:11:19,420 --> 00:11:21,740
+The resonant capacitors in this inductor.
+
+119
+00:11:23,120 --> 00:11:25,640
+There's a fairly strong pulse here at this spot now.
+
+120
+00:11:26,540 --> 00:11:29,500
+I mean the voltage here at the output is insane.
+
+121
+00:11:30,340 --> 00:11:40,120
+Because, well, after all, I saw, one person wrote there, asking, we're from at 24 volts, where does 650 volts come from here?
+
+122
+00:11:41,480 --> 00:11:46,720
+I tap, so, onto the inductor, onto the coil, this voltage comes out.
+
+123
+00:11:47,460 --> 00:11:50,040
+And I thought, I'll compare this with back EMF.
+
+124
+00:11:51,280 --> 00:11:54,260
+Back EMF has absolutely nothing close to this here.
+
+125
+00:11:54,880 --> 00:11:57,540
+Here it's exactly an LC circuit that comes out.
+
+126
+00:11:59,120 --> 00:12:02,260
+And the pulse goes from the transistor via this driver.
+
+127
+00:12:03,180 --> 00:12:05,600
+I mean I'll show closer, should really turn it off.
+
+128
+00:12:06,680 --> 00:12:11,620
+To heck with it, otherwise it probably affects the camera somehow, and maybe something won't record.
+
+129
+00:12:13,260 --> 00:12:17,060
+So, here these capacitors, I selected these Soviet ones.
+
+130
+00:12:17,560 --> 00:12:21,680
+In general, basically, I bought a whole pack and poked around with them.
+
+131
+00:12:22,320 --> 00:12:24,940
+There I already have one such cap rated 2kV.
+
+132
+00:12:26,260 --> 00:12:34,140
+And in general it's preferable, so, 2kV and 2nF, you have to start with this and definitely make resonance for the inductor.
+
+133
+00:12:34,880 --> 00:12:36,000
+It's very important here.
+
+134
+00:12:37,000 --> 00:12:39,100
+Without this resonance the system won't work.
+
+135
+00:12:40,260 --> 00:12:43,840
+Or, most likely, everything will dump onto the transistor.
+
+136
+00:12:43,840 --> 00:12:48,380
+I mean the idea of the feedback being out of the circuit's resonance.
+
+137
+00:12:49,380 --> 00:12:54,900
+It'll basically drive the whole working process onto these protective diodes and onto the transistor.
+
+138
+00:12:56,000 --> 00:12:57,280
+So, I'll show a bit.
+
+139
+00:12:57,980 --> 00:13:00,160
+The schematic was lying around somewhere here.
+
+140
+00:13:00,940 --> 00:13:03,380
+A bit of a mess, since I'm working after all.
+
+141
+00:13:04,140 --> 00:13:05,340
+So, where's our schematic?
+
+142
+00:13:06,500 --> 00:13:08,640
+Schematic, schematic, schematic.
+
+143
+00:13:12,080 --> 00:13:13,520
+That's not the right schematic.
+
+144
+00:13:14,350 --> 00:13:16,200
+So, the schematic disappeared somewhere.
+
+145
+00:13:17,500 --> 00:13:17,960
+Unfortunately.
+
+146
+00:13:19,360 --> 00:13:20,300
+It vanished.
+
+147
+00:13:21,440 --> 00:13:22,460
+Out of sight.
+
+148
+00:13:28,820 --> 00:13:30,220
+Where it went unclear.
+
+149
+00:13:34,450 --> 00:13:42,590
+Okay, this, by the way, is where I put a high voltage transistor, and immediately burned it out, since it couldn't handle the current.
+
+150
+00:13:43,950 --> 00:13:44,470
+Well, never mind.
+
+151
+00:13:45,210 --> 00:13:47,270
+So, what I'd like.
+
+152
+00:13:48,230 --> 00:13:50,410
+Damn, I'd like to show you by the schematic.
+
+153
+00:13:54,240 --> 00:13:55,060
+Well, not the point.
+
+154
+00:13:55,460 --> 00:13:56,640
+Later, in the next video.
+
+155
+00:13:57,680 --> 00:13:59,500
+So, we select resonant caps.
+
+156
+00:14:00,200 --> 00:14:01,720
+Or just gather a whole bunch.
+
+157
+00:14:02,980 --> 00:14:04,380
+Then we watch how it works.
+
+158
+00:14:04,840 --> 00:14:07,220
+And put in one of the capacitance that came up here.
+
+159
+00:14:08,560 --> 00:14:09,520
+During calculation.
+
+160
+00:14:11,000 --> 00:14:11,880
+So, the inductor.
+
+161
+00:14:12,620 --> 00:14:15,120
+Preferably, of course, wind it with thick wire.
+
+162
+00:14:15,720 --> 00:14:16,920
+I wound mine with thick.
+
+163
+00:14:17,800 --> 00:14:18,720
+So, what else?
+
+164
+00:14:22,860 --> 00:14:24,520
+Otherwise, this whole thing bites.
+
+165
+00:14:25,140 --> 00:14:25,540
+Like crazy.
+
+166
+00:14:26,260 --> 00:14:29,300
+So, to tune the coil to resonance, it's enough.
+
+167
+00:14:29,920 --> 00:14:32,600
+Here there's a 7,414 ship.
+
+168
+00:14:33,080 --> 00:14:33,860
+We pull it out.
+
+169
+00:14:35,040 --> 00:14:36,300
+The TL stays working.
+
+170
+00:14:36,940 --> 00:14:38,880
+Here there's a TL-494.
+
+171
+00:14:39,380 --> 00:14:39,760
+Here it is.
+
+172
+00:14:40,180 --> 00:14:41,080
+It's adjusted with it.
+
+173
+00:14:41,560 --> 00:14:42,580
+So, we just pull it out.
+
+174
+00:14:43,860 --> 00:14:47,700
+We crank the duty cycle and everything to the most minimal mode.
+
+175
+00:14:47,700 --> 00:14:49,760
+And we start tweaking.
+
+176
+00:14:50,480 --> 00:14:51,460
+We look for the frequency.
+
+177
+00:14:53,700 --> 00:14:56,340
+Preferably, of course, calculate the Tesla right away.
+
+178
+00:14:57,180 --> 00:15:00,240
+There's a special little program for calculating Teslas.
+
+179
+00:15:01,240 --> 00:15:04,580
+And it shows everything fairly correctly and precisely.
+
+180
+00:15:05,420 --> 00:15:05,980
+Which Tesla?
+
+181
+00:15:06,320 --> 00:15:06,740
+Which second?
+
+182
+00:15:07,480 --> 00:15:08,880
+All this has to be calculated.
+
+183
+00:15:09,700 --> 00:15:12,680
+If you don't calculate, the coil will work out of resonance.
+
+184
+00:15:13,400 --> 00:15:15,220
+You'll burn the output transistors.
+
+185
+00:15:16,240 --> 00:15:17,320
+Which are here.
+
+186
+00:15:18,200 --> 00:15:19,020
+On the heatsink.
+
+187
+00:15:19,520 --> 00:15:20,760
+This is very important.
+
+188
+00:15:21,980 --> 00:15:24,320
+The schematic is basically very similar too.
+
+189
+00:15:25,280 --> 00:15:26,180
+I reworked it a bit.
+
+190
+00:15:27,040 --> 00:15:31,000
+But the schematic is similar to the one Akula demonstrated in the video.
+
+191
+00:15:31,840 --> 00:15:33,120
+The electronic interrupter.
+
+192
+00:15:33,620 --> 00:15:35,160
+This is basically the same one.
+
+193
+00:15:36,060 --> 00:15:37,900
+The electronic interrupter.
+
+194
+00:15:38,520 --> 00:15:40,380
+So, my video's running out of time.
+

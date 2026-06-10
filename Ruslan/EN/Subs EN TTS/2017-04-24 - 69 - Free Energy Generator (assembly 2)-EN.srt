@@ -1,0 +1,876 @@
+1
+00:00:02,090 --> 00:00:03,730
+So, hi everyone, good evening.
+
+2
+00:00:04,550 --> 00:00:11,470
+I'm working fairly late today, the clock already shows 1.52, and basically, I'm busy with, so busy with what?
+
+3
+00:00:12,110 --> 00:00:25,690
+This part, so, this one here, yeah, I mean the so-called Tesla transistor and the irradiation system, more precisely, the antenna, and this is already our removable, kind of, our removable coil, which
+
+4
+00:00:25,690 --> 00:00:28,050
+is, the most important thing in this system.
+
+5
+00:00:29,070 --> 00:00:38,990
+In other words, the receiving antenna, this is the transmitting one, I mean, this is the transmitter, this is the receiver, which will have to absorb the energy.
+
+6
+00:00:39,630 --> 00:00:41,410
+Why do I explain by this schematic?
+
+7
+00:00:41,950 --> 00:00:53,730
+I, honestly, don't draw schematics, especially in special programs, my splan, unfortunately, for some reason stopped opening on this computer at all, probably I'll just have to reinstall Windows,
+
+8
+00:00:54,310 --> 00:00:59,730
+because I loaded all kinds of stuff there, downloaded, and, in short, splan doesn't work.
+
+9
+00:01:00,250 --> 00:01:06,130
+Well, okay, splan isn't that important now, you can take a piece of paper and draw, nothing terrible.
+
+10
+00:01:06,950 --> 00:01:12,130
+I think that my friend colleague will help me draw the schematic later in the future, as we decided with him.
+
+11
+00:01:12,570 --> 00:01:13,470
+Big thanks to him.
+
+12
+00:01:14,550 --> 00:01:22,590
+This is basically his developments, and in this schematic, I mean in this whole construction there are also his developments, which he helped a lot with.
+
+13
+00:01:22,890 --> 00:01:23,730
+Here I want to show.
+
+14
+00:01:24,630 --> 00:01:34,950
+I mean, this is the whole system that's here, on the other side, here a screen is made so that pickups onto the generator don't come from above, here everything's also grounded that needs to be
+
+15
+00:01:34,950 --> 00:01:37,530
+grounded, I mean the heatsinks, not only.
+
+16
+00:01:38,070 --> 00:01:44,330
+Are they grounded, they're also additionally insulated from the transistors, that's a given, known to any fool.
+
+17
+00:01:44,930 --> 00:01:51,590
+And, so, here's the ferrite, I mean the most important thing that we have to wind correctly, so that all this stuff works.
+
+18
+00:01:51,970 --> 00:01:54,930
+Somehow it turned out to be a heavy setup, frankly speaking.
+
+19
+00:01:55,910 --> 00:02:09,570
+Well, ok, so, I was busy today in general, I mean with routing all the wires in here, so, what I'm doing now, this is inserting, so, the board, the connection of the transistor, so, of the inductor,
+
+20
+00:02:09,890 --> 00:02:23,770
+the high voltage, air transformer, and, so, as you understood, here we have this kind of thin busbar, yeah, the busbar is mandatory, although here, frankly speaking, energy, unfortunately, is released
+
+21
+00:02:23,770 --> 00:02:24,030
+little.
+
+22
+00:02:25,810 --> 00:02:34,250
+Well, I'll figure out how to do this, to rock it, I already tried, now I'm assembling all this gradually, this kind of beautiful one.
+
+23
+00:02:35,190 --> 00:02:50,650
+So, here's a KT805, or, in other words, 2SC5200, this transistor is a bit better, I already glued the heatsink, here it's already done, with that gun there, the special one, well, with that plastic
+
+24
+00:02:50,650 --> 00:02:52,830
+glue, so, very convenient.
+
+25
+00:02:54,310 --> 00:02:57,130
+Roma Akula applied all this correctly like this.
+
+26
+00:02:57,870 --> 00:03:01,110
+Well, and of course, some dreams have already appeared.
+
+27
+00:03:01,830 --> 00:03:13,610
+Tomorrow, by the way, I'll go for shielded cable, because from this, from this connector shielded cable will have to come to control, yeah, I mean, so that not everything, all this stuff doesn't.
+
+28
+00:03:14,130 --> 00:03:26,970
+Pick up, I made, so, here, I keep a trash bin specially, yeah, nearby, so that all the wires, all the scraps fly there, then into the main trash bin, in order to keep order at the workplace.
+
+29
+00:03:31,300 --> 00:03:31,820
+Well, ok.
+
+30
+00:03:32,920 --> 00:03:47,120
+So, what I wanted to say here about this system, yeah, I mean, I'm replicating the system fully, yeah, naturally, I have, let's say, my own thoughts on this, yeah, I mean, I have my own, so, kind of,
+
+31
+00:03:47,260 --> 00:03:57,240
+solution, so, the bulb here stands for him, yeah, I mean, the bulb, I'm now trying to guess what it's there for, more precisely, I already guessed, but I won't say.
+
+32
+00:03:57,940 --> 00:04:02,320
+What's drawn here in the schematic, it's connected here to this system, I don't believe it.
+
+33
+00:04:03,020 --> 00:04:08,100
+I don't believe it for the reason that it would have burned for him there when the setup worked, but it doesn't burn.
+
+34
+00:04:09,060 --> 00:04:19,780
+So, it's used, most likely, either to check the unloading of this ferrite in the car, at the moment when over unity, more precisely, free energy appears, or something else.
+
+35
+00:04:20,480 --> 00:04:25,880
+I haven't figured out yet where this bulb is connected, and honestly, I don't give a damn where it's connected.
+
+36
+00:04:26,380 --> 00:04:30,060
+I won't even install it, in order not to have this stupid move at all.
+
+37
+00:04:31,560 --> 00:04:32,580
+So, what else?
+
+38
+00:04:33,380 --> 00:04:39,020
+Well, the power supply, you all know, yeah, I mean, 24 volts and 6.5 amps.
+
+39
+00:04:39,520 --> 00:04:45,620
+It's most likely not 10 for sure, because, well, I don't believe that this power supply was 10 amps.
+
+40
+00:04:46,260 --> 00:04:53,560
+I, at least, have here a 150 watt power supply, 24 volts, in other words, 6.5 amps.
+
+41
+00:04:54,060 --> 00:04:57,440
+It's quite enough for this system to function, to work as it should.
+
+42
+00:04:58,460 --> 00:05:06,440
+So, the coil, as always, is wound very, let's say, in the correct manner, so that everything should be neat and good.
+
+43
+00:05:07,000 --> 00:05:10,940
+So, your attention, since, why am I even filming this video?
+
+44
+00:05:11,380 --> 00:05:15,260
+I noticed that a person, so, wrote me such a message in private.
+
+45
+00:05:17,460 --> 00:05:26,200
+Someone in your name wrote from the address ruslankulabukov at mile.ru, that they can send the schematic and help tune the BTG for 100 credits.
+
+46
+00:05:26,820 --> 00:05:31,740
+I gathered that scammers have appeared who, in your name, so, want to profit.
+
+47
+00:05:33,220 --> 00:05:34,300
+Absolutely correct.
+
+48
+00:05:34,960 --> 00:05:41,780
+These are scammers, because I don't sell any schematics and will never engage in this kind of nonsense in order to deceive you.
+
+49
+00:05:42,280 --> 00:05:43,080
+I don't need this.
+
+50
+00:05:43,840 --> 00:05:45,100
+And I don't need your money.
+
+51
+00:05:45,660 --> 00:05:47,440
+I'll figure it out somehow myself.
+
+52
+00:05:48,180 --> 00:05:59,840
+But to assemble exactly this generator, about which our wonderful Roma Kornikov so diligently scattered schematics and helped, or, if I said his surname wrong, I apologize very much.
+
+53
+00:06:01,460 --> 00:06:04,540
+Although that's also incorrect in Russian, but nevertheless.
+
+54
+00:06:09,020 --> 00:06:10,680
+Roma should be given his due.
+
+55
+00:06:11,160 --> 00:06:16,920
+Thanks for stirring up our anthill, so that many of us really got down to work and thought about what we even need.
+
+56
+00:06:19,860 --> 00:06:22,040
+So, what else did I want about this setup?
+
+57
+00:06:24,580 --> 00:06:26,540
+Guys, help with these mountings.
+
+58
+00:06:27,080 --> 00:06:28,600
+Who even has such mountings?
+
+59
+00:06:28,940 --> 00:06:29,620
+Where are they sold?
+
+60
+00:06:30,220 --> 00:06:31,540
+Let's somehow agree with you.
+
+61
+00:06:32,160 --> 00:06:32,860
+Write me in private.
+
+62
+00:06:34,060 --> 00:06:38,960
+About these mountings I'd like to somehow acquire them, because in Latvia they don't sell them here.
+
+63
+00:06:39,400 --> 00:06:41,960
+They sell some kind of rubbish, frankly speaking.
+
+64
+00:06:43,160 --> 00:06:44,820
+These mountings appeal to me more.
+
+65
+00:06:45,880 --> 00:06:48,040
+If you can, respond to the request.
+
+66
+00:06:49,200 --> 00:06:50,560
+I'll make it worth your while.
+
+67
+00:06:51,900 --> 00:06:52,580
+So, what else?
+
+68
+00:06:54,960 --> 00:06:56,400
+I don't sell any schematics.
+
+69
+00:06:57,260 --> 00:06:59,740
+I say right away, don't listen to any scammers.
+
+70
+00:07:00,500 --> 00:07:01,760
+This is all a total scam.
+
+71
+00:07:02,520 --> 00:07:07,320
+I'm engaged in developing this whole system for myself and will help those who are looking for it.
+
+72
+00:07:09,760 --> 00:07:20,440
+I'd also like to add to all this that, guys, if you don't know how the component base works, how all these microchips, transistors and the like work, you still have to study this a bit.
+
+73
+00:07:21,460 --> 00:07:28,860
+You have to know what a push-pull generator is, what a driver is, what a field effect transistor, a diode and all this in general is.
+
+74
+00:07:29,380 --> 00:07:30,100
+How it works.
+
+75
+00:07:31,440 --> 00:07:37,680
+All these things have to be studied, because so many subtleties and nuances will pop up during tuning that you'll just be floored.
+
+76
+00:07:39,120 --> 00:07:40,300
+This isn't the worst.
+
+77
+00:07:41,560 --> 00:07:46,660
+The worst will be that many write, when they say that they don't know how to use an oscilloscope.
+
+78
+00:07:47,240 --> 00:07:57,080
+Friends, the thing is that not knowing how to use an oscilloscope, you know, honestly, I myself didn't know how to use it for some time, because I didn't have to use it so often.
+
+79
+00:07:58,440 --> 00:07:59,460
+But I had to learn.
+
+80
+00:08:01,420 --> 00:08:04,260
+I brushed up on all this and everything works out for me.
+
+81
+00:08:04,860 --> 00:08:06,960
+Now I advise you to get down to it after all.
+
+82
+00:08:07,460 --> 00:08:10,500
+I say once again, to get free energy around us.
+
+83
+00:08:10,760 --> 00:08:15,260
+In order for this setup to start acting in your favor, you'll need to assemble it very neatly.
+
+84
+00:08:16,240 --> 00:08:18,860
+Naturally, you'll need to get 16 square wire.
+
+85
+00:08:19,260 --> 00:08:21,300
+Here it is, somewhere around 16.
+
+86
+00:08:21,680 --> 00:08:22,300
+Run the ground.
+
+87
+00:08:22,780 --> 00:08:25,860
+This will be a piece of wire somewhere 20 to 25 meters.
+
+88
+00:08:26,840 --> 00:08:27,460
+Count on this.
+
+89
+00:08:28,820 --> 00:08:32,920
+And this 25 meter wire must go straight from the rod that's in the ground.
+
+90
+00:08:33,560 --> 00:08:36,880
+This is no less than 4 to 5 meters, I tell you right away.
+
+91
+00:08:37,460 --> 00:08:38,900
+A good pipe, driven in.
+
+92
+00:08:39,940 --> 00:08:48,480
+Good contact must be ensured with the ground, and the arrival of this wire not just anywhere, not through some of these things, but the arrival to you.
+
+93
+00:08:49,520 --> 00:08:53,860
+And most importantly, don't even think of connecting anything else to this wire.
+
+94
+00:08:55,020 --> 00:08:57,680
+This I tell you right away, because it won't work.
+
+95
+00:08:58,140 --> 00:09:08,500
+If some pickup appears here, if some source appears here, which will be besides your, as you call it, BTG, I'll call it that too, because the fuel is the surrounding environment.
+
+96
+00:09:09,500 --> 00:09:12,820
+This is a generator of just conversion of free energy.
+
+97
+00:09:13,780 --> 00:09:19,160
+So then, this cable, it must serve only as grounding for this generator, nothing else.
+
+98
+00:09:20,900 --> 00:09:30,980
+The electrical panels there, I don't know, these heating radiators, you don't know what the neighbor connected to this heating radiator, or what refrigerator he pushed up against it, that it rubs
+
+99
+00:09:30,980 --> 00:09:36,980
+against the radiator, has, long since worn a hole, and is already touching, grounding itself.
+
+100
+00:09:37,600 --> 00:09:44,040
+Calmly, yeah, I mean the capacitor that's inside the refrigerator drains the interference onto the grounding for you.
+
+101
+00:09:44,880 --> 00:09:46,480
+All this must mandatorily be.
+
+102
+00:09:47,000 --> 00:09:49,380
+Note, where did Akula conduct his experiments?
+
+103
+00:09:49,920 --> 00:09:50,960
+Where did he do all this?
+
+104
+00:09:51,460 --> 00:09:52,400
+At his country house.
+
+105
+00:09:52,880 --> 00:09:53,180
+Why?
+
+106
+00:09:53,880 --> 00:09:58,420
+Because there's no city hustle there, there's no city, some city junk and the like.
+
+107
+00:09:59,700 --> 00:10:01,820
+Accordingly, there he had an excellent ground.
+
+108
+00:10:02,360 --> 00:10:06,680
+Yeah, I mean if from videos we can look at his videos, very well known to everyone.
+
+109
+00:10:07,300 --> 00:10:10,720
+Yeah, I mean, and so in these videos it's very well visible.
+
+110
+00:10:11,340 --> 00:10:13,560
+Yeah, I mean where he, and what.
+
+111
+00:10:14,000 --> 00:10:14,760
+I mean he did.
+
+112
+00:10:15,260 --> 00:10:16,220
+Yeah, I mean how.
+
+113
+00:10:17,680 --> 00:10:18,620
+How it happened.
+
+114
+00:10:19,000 --> 00:10:20,380
+So, now we'll find it here.
+
+115
+00:10:28,850 --> 00:10:31,030
+Here he is himself, Roma.
+
+116
+00:10:32,490 --> 00:10:34,370
+So, you've probably seen this, yeah?
+
+117
+00:10:36,490 --> 00:10:37,350
+Will it lift?
+
+118
+00:10:37,650 --> 00:10:38,150
+Won't it lift?
+
+119
+00:10:38,750 --> 00:10:40,270
+Artur, I'm filming for you.
+
+120
+00:10:41,650 --> 00:10:44,130
+I swear, I vouch that there's nothing here.
+
+121
+00:10:44,850 --> 00:10:45,550
+So, let's go.
+
+122
+00:10:47,450 --> 00:10:48,570
+Let's fast forward.
+
+123
+00:10:50,290 --> 00:10:51,070
+So, here.
+
+124
+00:10:52,190 --> 00:10:55,190
+So, stop, stop, stop, stop, stop, stop.
+
+125
+00:10:56,070 --> 00:10:59,390
+Note, so, the ground, the pipe is driven in.
+
+126
+00:10:59,790 --> 00:11:01,330
+Yeah, I mean and welded.
+
+127
+00:11:01,810 --> 00:11:04,150
+And here literally, if we now roll back a bit.
+
+128
+00:11:04,650 --> 00:11:06,310
+Yeah, I mean roll back a bit.
+
+129
+00:11:08,010 --> 00:11:09,410
+This is a sledgehammer.
+
+130
+00:11:09,890 --> 00:11:14,770
+Yeah, this kind, with which he drives in this poor pipe already bent into a pretzel.
+
+131
+00:11:15,250 --> 00:11:17,650
+Yeah, I mean he pounds on with all his might.
+
+132
+00:11:18,190 --> 00:11:20,450
+It's visible that here everything's bent.
+
+133
+00:11:21,730 --> 00:11:23,890
+So, here some thingy is attached.
+
+134
+00:11:24,410 --> 00:11:27,590
+Yeah, I mean in parallel, but this doesn't bother the ground.
+
+135
+00:11:28,070 --> 00:11:28,930
+It's already there.
+
+136
+00:11:29,910 --> 00:11:32,770
+And I'm sure that on this ground nothing is connected now.
+
+137
+00:11:33,750 --> 00:11:37,690
+Even if something is connected, yeah, I mean it doesn't give a pick up here.
+
+138
+00:11:38,790 --> 00:11:42,890
+Here it's an excellent ground, because everything flows, water flows there.
+
+139
+00:11:43,330 --> 00:11:44,470
+Yeah, and all that.
+
+140
+00:11:45,010 --> 00:11:46,290
+What did I want to say on this matter?
+
+141
+00:11:47,890 --> 00:11:57,250
+Naturally, in city conditions this generator will work with very big problems and I recommend you still think about burying a ground near the house, driving in a big rod.
+
+142
+00:11:58,330 --> 00:12:05,490
+Burying it there and running a wire underground to your, I don't know, to the basement, to the window there, to something of that sort.
+
+143
+00:12:06,470 --> 00:12:10,070
+Think about this, it's not so hard and not so much of a thing.
+
+144
+00:12:10,630 --> 00:12:19,470
+I mean in any case, grounding onto the radiator, I say once again, this, well, I give just about 20% that this radiator will work for you.
+
+145
+00:12:19,930 --> 00:12:23,350
+Yeah, I mean, and it may not work because of plastic pipes.
+
+146
+00:12:23,850 --> 00:12:26,110
+The use of plastic pipes and the like.
+
+147
+00:12:26,590 --> 00:12:29,490
+I mean the specific device that you and I are now considering.
+
+148
+00:12:29,870 --> 00:12:33,990
+For big power up to a kilowatt, nothing will fly if you don't observe this.
+
+149
+00:12:35,190 --> 00:12:37,010
+We got down to doing this with you.
+
+150
+00:12:37,370 --> 00:12:38,550
+Let's do exactly this.
+
+151
+00:12:39,470 --> 00:12:42,850
+Let's not discuss some off-topic conversations about catchers.
+
+152
+00:12:43,210 --> 00:12:44,930
+Forget about the word catcher altogether.
+
+153
+00:12:45,910 --> 00:12:48,790
+At the moment Wasmus' setup I can't comment on.
+
+154
+00:12:49,050 --> 00:12:58,310
+For now I approximately know what and how there, but I didn't draw the schematic either in my head or otherwise and I don't know, frankly speaking, what needs to be done there.
+
+155
+00:12:58,910 --> 00:13:03,150
+Yeah, I mean I'll figure it out sooner or later, but the catcher doesn't interest me.
+
+156
+00:13:03,730 --> 00:13:08,110
+And you too I want a kind of, I mean, pull off this catcher thing and the like.
+
+157
+00:13:09,110 --> 00:13:10,850
+So, now what I wanted to say.
+
+158
+00:13:11,510 --> 00:13:13,090
+So, once again I warn.
+
+159
+00:13:13,470 --> 00:13:14,650
+I don't sell any schematics.
+
+160
+00:13:15,110 --> 00:13:18,410
+I don't do commerce on you and number 100 credits and the like.
+
+161
+00:13:18,950 --> 00:13:20,930
+Please, don't fall for this nonsense.
+
+162
+00:13:21,870 --> 00:13:28,030
+I mean, if you suddenly get something like this, well, ignore these letters, because scammers have multiplied.
+
+163
+00:13:28,550 --> 00:13:31,710
+Someone's now trying to earn dough off what I tell and what I do.
+
+164
+00:13:33,170 --> 00:13:37,070
+Obviously, they also earned off Akula's and off everyone else.
+
+165
+00:13:37,950 --> 00:13:41,310
+There are plenty of morons, and they cook up a living off this.
+
+166
+00:13:43,790 --> 00:13:45,990
+What else would I like to tell you about this setup?
+
+167
+00:13:46,310 --> 00:13:47,050
+I don't even know.
+
+168
+00:13:47,790 --> 00:13:51,890
+Well, so, well, the ferrite is an ordinary radio receiver.
+
+169
+00:13:52,390 --> 00:13:54,970
+Ferrite, yeah, I mean, you can use it.
+
+170
+00:13:55,470 --> 00:13:57,270
+This is just frequency tuning, yeah.
+
+171
+00:13:57,890 --> 00:14:00,190
+The frequency tuning is a trivial thing.
+
+172
+00:14:00,190 --> 00:14:03,270
+There, by the way, it's a bit charred.
+
+173
+00:14:03,650 --> 00:14:04,210
+It's visible.
+
+174
+00:14:04,630 --> 00:14:08,670
+Roma, when he tuned, touched it with a screwdriver and an arc jumped there.
+
+175
+00:14:09,610 --> 00:14:12,270
+Maybe, that's how it was, who the heck knows.
+
+176
+00:14:12,970 --> 00:14:15,130
+I mean, many thought there was a spark gap there.
+
+177
+00:14:15,610 --> 00:14:16,490
+That's not true.
+
+178
+00:14:16,830 --> 00:14:18,110
+There are no spark gaps here.
+
+179
+00:14:18,570 --> 00:14:19,450
+That's how it is.
+
+180
+00:14:19,810 --> 00:14:21,770
+Yeah, there's nothing to discharge against.
+
+181
+00:14:22,250 --> 00:14:25,290
+Because the antenna, basically, hangs in the air.
+
+182
+00:14:25,850 --> 00:14:28,270
+We're assembling exactly this device now.
+
+183
+00:14:28,610 --> 00:14:30,790
+We're not thinking about any other devices now.
+
+184
+00:14:32,050 --> 00:14:34,130
+Everything else we'll set aside for now.
+
+185
+00:14:34,270 --> 00:14:35,830
+We're doing exactly this.
+
+186
+00:14:36,850 --> 00:14:39,290
+Yeah, I mean, we'll assemble this.
+
+187
+00:14:39,530 --> 00:14:46,830
+I'll tell how to tune it, and so, whoever's handy, yeah, whoever understands radio amateur stuff, will make this device.
+
+188
+00:14:47,410 --> 00:14:51,150
+But, again, I say once more, prepare for the antenna.
+
+189
+00:14:51,590 --> 00:14:52,650
+Ugh, antenna.
+
+190
+00:14:53,110 --> 00:14:54,610
+God, what am I saying?
+
+191
+00:14:54,910 --> 00:14:55,390
+The grounding.
+
+192
+00:14:55,830 --> 00:14:57,410
+Prepare for a normal power supply.
+
+193
+00:14:57,730 --> 00:15:01,230
+A normal, so, frame, on which all this will be mounted.
+
+194
+00:15:01,950 --> 00:15:04,150
+Boxes, well, buy them properly.
+
+195
+00:15:04,550 --> 00:15:07,310
+Make them, I mean, gather everything that's needed.
+
+196
+00:15:07,790 --> 00:15:13,270
+Yeah, I mean, parts, there, fans, cooling, there, they'll be needed.
+
+197
+00:15:13,690 --> 00:15:17,350
+Yeah, especially that transistor, as I already showed.
+
+198
+00:15:17,750 --> 00:15:28,450
+Yeah, this one, it'll heat up, yeah, because on it there'll be, this is a bipolar transistor, this isn't a FET, it'll heat up, and for me it heated up very strongly.
+
+199
+00:15:29,070 --> 00:15:31,170
+Yeah, I mean, you'll have to select.
+
+200
+00:15:31,730 --> 00:15:43,070
+And fiddle a bit with the turns here, properly, I mean, you understand the thing, slap together on the table it won't work, this has to be assembled right away, beautifully, clearly, and then just
+
+201
+00:15:43,070 --> 00:15:43,470
+tuned.
+
+202
+00:15:44,670 --> 00:15:49,050
+Winding the coil too, it's easy there in general, I mean, it's dead easy.
+
+203
+00:15:50,270 --> 00:16:03,050
+So, what else did I want to say, so, we'll light these bulbs, these at 500 watts, four of them, and we'll light them with you, yeah, here, they burn beautifully, I gathered them in a heap here, here,
+
+204
+00:16:03,350 --> 00:16:17,030
+now I'll plug, into the outlet, I'll show how all this, whoops, well, they shine, no joke, I'd say, yeah, I mean, very brightly, sitting here it's practically impossible to look at all this stuff, we
+
+205
+00:16:17,030 --> 00:16:28,590
+turn off and wheel, save, electricity, in vain, in general, this stuff, I'll take one more little board like this and make four more, there'll be eight of them, and we'll launch them all without
+
+206
+00:16:28,590 --> 00:16:29,150
+problems.
+
+207
+00:16:31,090 --> 00:16:44,970
+Here, so, what else would I like to add, so, to everything, this is be patient, be patient, and everything will work out for you, and will gradually, yeah, I mean, I, as you see, am not in much of a
+
+208
+00:16:44,970 --> 00:16:49,590
+hurry for, the reason that you'll have to spruce up this system beautifully and clearly.
+
+209
+00:16:50,770 --> 00:17:04,250
+So, well, once again I want to remind, yeah, I mean, about the mountings, if someone can suddenly get exactly such mountings, look carefully, I'll be very grateful, we'll agree, yeah, I mean, well,
+
+210
+00:17:04,810 --> 00:17:17,550
+the outlet, if you get such a one, yeah, I mean, of this type, I'll also be very grateful, the buttons, ok, we'll settle, with them, with the buttons, well, here's the outlet, I'd really like, yeah, I
+
+211
+00:17:17,550 --> 00:17:18,910
+mean, also such a one here.
+
+212
+00:17:19,330 --> 00:17:33,570
+They don't sell such ones, here they sell a slightly different type, these, yeah, well, ok, well, what, well, basically, you can use such a one too, well, a little, some share of changes has to be
+
+213
+00:17:33,570 --> 00:17:35,850
+made, otherwise it'll be a complete copy.
+
+214
+00:17:37,110 --> 00:17:51,470
+Here, well, jokes aside, that's how it is, so, well, and most importantly, yeah, I mean, I've been swamped with messages of a sort, some of them very stupid, well, I try to answer all, but however,
+
+215
+00:17:51,650 --> 00:18:05,250
+guys, well, I don't have enough time, I have other things too that need to be done, yeah, I mean, so, sorry if I lag, in short, I don't sell schematics, I'll give it for free, yeah, I mean, will work,
+
+216
+00:18:05,350 --> 00:18:05,570
+try?
+
+217
+00:18:06,130 --> 00:18:09,970
+To get free energy straight from the air and launch everything you need.
+
+218
+00:18:11,230 --> 00:18:20,370
+Good mood, so, fighting action, in terms of fighting spirit, yeah, let's say, in terms of free energy generators.
+
+219
+00:18:25,330 --> 00:18:28,070
+Good luck to everyone and a good evening, bye.
+

@@ -1,0 +1,1428 @@
+1
+00:00:01,740 --> 00:00:02,440
+Hi everyone.
+
+2
+00:00:03,520 --> 00:00:05,720
+Let's talk a bit about what you and I are doing.
+
+3
+00:00:06,480 --> 00:00:07,920
+I just assembled an inverter.
+
+4
+00:00:10,560 --> 00:00:13,460
+Here it has both synchronization and a generator.
+
+5
+00:00:15,000 --> 00:00:17,120
+And here's the whole system that's on this side.
+
+6
+00:00:20,280 --> 00:00:20,880
+RFP260N.
+
+7
+00:00:21,380 --> 00:00:23,260
+We use 24 volt transistors.
+
+8
+00:00:24,740 --> 00:00:25,100
+Coolers.
+
+9
+00:00:25,460 --> 00:00:27,380
+I decided to copy Akula's setup.
+
+10
+00:00:29,800 --> 00:00:33,880
+Roma, I really like your design, so I decided to make all this like this.
+
+11
+00:00:34,580 --> 00:00:38,800
+Now you'll be able to say, what the heck to copy here, if there's no use.
+
+12
+00:00:39,820 --> 00:00:40,720
+All this won't work.
+
+13
+00:00:41,400 --> 00:00:41,940
+No it will.
+
+14
+00:00:42,900 --> 00:00:43,840
+All this is tested.
+
+15
+00:00:46,780 --> 00:00:48,620
+One system I already disassembled.
+
+16
+00:00:49,160 --> 00:00:50,700
+I just had too few turns wound.
+
+17
+00:00:51,480 --> 00:00:53,180
+I overdid it here with this pot.
+
+18
+00:00:54,960 --> 00:00:56,660
+Also I wanted to say about all this.
+
+19
+00:00:57,380 --> 00:00:59,200
+Here it is, fully assembled.
+
+20
+00:01:01,040 --> 00:01:03,480
+I just now poked and pried it apart a bit.
+
+21
+00:01:04,060 --> 00:01:04,720
+But it'll be.
+
+22
+00:01:05,800 --> 00:01:06,480
+Soon it'll be.
+
+23
+00:01:07,720 --> 00:01:09,560
+Now we'll set this aside a bit.
+
+24
+00:01:10,720 --> 00:01:12,160
+And talk about your schematics.
+
+25
+00:01:13,560 --> 00:01:17,480
+We watched your schematics, calculations and the like very carefully.
+
+26
+00:01:18,100 --> 00:01:25,140
+Here's the inverter, which by your design was made with stabilization of the resonance frequency.
+
+27
+00:01:26,060 --> 00:01:30,660
+The system is practically all the time in resonance, if you assemble all this.
+
+28
+00:01:31,280 --> 00:01:33,520
+I assembled all this stuff a bit differently.
+
+29
+00:01:41,640 --> 00:01:44,540
+Therefore this schematic is basically very good.
+
+30
+00:01:45,720 --> 00:01:47,580
+Would be good to shorten all this stuff a bit.
+
+31
+00:01:48,460 --> 00:01:49,860
+But ok, I won't comment.
+
+32
+00:01:50,720 --> 00:01:51,640
+Now about this comment.
+
+33
+00:01:53,140 --> 00:01:54,160
+About this setup.
+
+34
+00:01:54,940 --> 00:01:55,880
+We all know it.
+
+35
+00:01:56,600 --> 00:01:58,700
+I want to assemble it one of these days now.
+
+36
+00:02:00,060 --> 00:02:01,060
+What's the point?
+
+37
+00:02:02,580 --> 00:02:03,680
+Here's the inverter.
+
+38
+00:02:04,920 --> 00:02:05,580
+This schematic.
+
+39
+00:02:06,340 --> 00:02:07,220
+This thing.
+
+40
+00:02:13,180 --> 00:02:14,680
+You didn't draw it in here.
+
+41
+00:02:15,420 --> 00:02:15,720
+Well ok.
+
+42
+00:02:16,640 --> 00:02:18,580
+This is the synchronization block.
+
+43
+00:02:19,420 --> 00:02:20,300
+Tesla operation.
+
+44
+00:02:21,300 --> 00:02:22,140
+It's here in full.
+
+45
+00:02:22,660 --> 00:02:24,060
+If you now take this schematic.
+
+46
+00:02:24,620 --> 00:02:25,280
+This schematic.
+
+47
+00:02:26,000 --> 00:02:27,060
+Assemble all this together.
+
+48
+00:02:27,600 --> 00:02:28,400
+And it'll be great.
+
+49
+00:02:29,020 --> 00:02:31,720
+However, yeah, all of them separately.
+
+50
+00:02:32,340 --> 00:02:33,440
+These schematics work.
+
+51
+00:02:34,420 --> 00:02:35,300
+But here's the question.
+
+52
+00:02:35,720 --> 00:02:37,460
+How to tune all this so that it works?
+
+53
+00:02:38,400 --> 00:02:39,340
+There's a problem.
+
+54
+00:02:40,300 --> 00:02:43,380
+The thing is that even if you take a high voltage generator.
+
+55
+00:02:46,570 --> 00:02:48,210
+A so-called induction heater.
+
+56
+00:02:49,570 --> 00:02:49,950
+Induction.
+
+57
+00:02:50,550 --> 00:02:53,190
+More precisely, it's after all a resonant coil.
+
+58
+00:02:53,590 --> 00:02:54,590
+And our favorite coil.
+
+59
+00:02:55,850 --> 00:02:57,850
+Here it's drawn not the way you make it.
+
+60
+00:03:00,570 --> 00:03:02,790
+It'll probably after all look like this.
+
+61
+00:03:04,070 --> 00:03:05,470
+It's already wound here.
+
+62
+00:03:06,430 --> 00:03:08,050
+Proportionally everything's observed.
+
+63
+00:03:09,010 --> 00:03:11,590
+It remains to wind the Tesla on this piece.
+
+64
+00:03:12,490 --> 00:03:13,830
+And all this will work.
+
+65
+00:03:15,390 --> 00:03:16,770
+This coil remains.
+
+66
+00:03:17,850 --> 00:03:18,930
+The secondary winding.
+
+67
+00:03:19,470 --> 00:03:22,190
+For the primary, I already prepared everything here.
+
+68
+00:03:23,510 --> 00:03:25,470
+The same kind of gizmo as yours.
+
+69
+00:03:27,710 --> 00:03:29,150
+I have plenty of junk.
+
+70
+00:03:30,210 --> 00:03:33,010
+Both wires and boxes and these parts.
+
+71
+00:03:34,030 --> 00:03:35,410
+They stand in boxes.
+
+72
+00:03:36,090 --> 00:03:36,710
+All this is fine.
+
+73
+00:03:38,810 --> 00:03:39,910
+What can I say?
+
+74
+00:03:41,230 --> 00:03:42,870
+Here's some things aren't drawn in.
+
+75
+00:03:43,990 --> 00:03:45,730
+The schematic is confusing.
+
+76
+00:03:46,310 --> 00:03:46,950
+It's wrong.
+
+77
+00:03:47,730 --> 00:03:49,950
+Working separately, the blocks all will.
+
+78
+00:03:50,950 --> 00:03:51,510
+Absolutely.
+
+79
+00:03:52,470 --> 00:03:55,190
+But the schematic by itself won't give a result.
+
+80
+00:03:55,930 --> 00:03:56,690
+The ones that are here.
+
+81
+00:03:57,390 --> 00:03:58,370
+This I tell you right away.
+
+82
+00:03:58,890 --> 00:04:00,130
+This was clear right away.
+
+83
+00:04:00,150 --> 00:04:02,470
+I just studied a bit.
+
+84
+00:04:02,810 --> 00:04:03,110
+Studied.
+
+85
+00:04:03,770 --> 00:04:04,270
+And thought.
+
+86
+00:04:04,690 --> 00:04:05,490
+How interesting.
+
+87
+00:04:05,990 --> 00:04:08,250
+How do you intend to get voltage here from this circuit?
+
+88
+00:04:09,030 --> 00:04:10,930
+And plus to feed with an inductance.
+
+89
+00:04:11,650 --> 00:04:13,110
+More precisely, not with an inductance.
+
+90
+00:04:13,750 --> 00:04:15,310
+To put a capacitive load here.
+
+91
+00:04:16,890 --> 00:04:18,790
+For me this was just a bit of a nonsense.
+
+92
+00:04:19,690 --> 00:04:21,270
+I thought that here there were some diodes.
+
+93
+00:04:22,530 --> 00:04:24,230
+Power supplies of course they exist.
+
+94
+00:04:25,950 --> 00:04:27,510
+But here there's none of all this.
+
+95
+00:04:28,290 --> 00:04:29,010
+Well ok.
+
+96
+00:04:29,670 --> 00:04:31,190
+You can reason, of course.
+
+97
+00:04:31,970 --> 00:04:34,670
+You also said that here energy accumulation happens.
+
+98
+00:04:35,390 --> 00:04:37,870
+I think that here no energy accumulation happens.
+
+99
+00:04:38,730 --> 00:04:40,250
+This is known to any fool.
+
+100
+00:04:41,150 --> 00:04:42,770
+And this doohickey, as you say?
+
+101
+00:04:44,050 --> 00:04:44,690
+This joke.
+
+102
+00:04:45,250 --> 00:04:47,930
+It's drawn here not by Filer, but regular.
+
+103
+00:04:49,030 --> 00:04:51,410
+And it's very clear what we hook it up here for.
+
+104
+00:04:52,450 --> 00:04:54,230
+We remove the excess a bit.
+
+105
+00:04:55,050 --> 00:04:56,130
+We leave only this peak.
+
+106
+00:04:57,590 --> 00:04:59,010
+Which you drew in the schematic.
+
+107
+00:05:00,630 --> 00:05:02,290
+I mean if you draw a sine wave.
+
+108
+00:05:02,930 --> 00:05:04,250
+Then you get a bit of this.
+
+109
+00:05:07,150 --> 00:05:08,390
+Everything else goes there.
+
+110
+00:05:09,430 --> 00:05:10,490
+I mean smaller.
+
+111
+00:05:10,950 --> 00:05:11,810
+In this spot a bit.
+
+112
+00:05:14,530 --> 00:05:15,010
+Why?
+
+113
+00:05:15,650 --> 00:05:17,050
+Because the bi-Filer coil.
+
+114
+00:05:17,730 --> 00:05:19,590
+We know that its wound also counter.
+
+115
+00:05:21,030 --> 00:05:22,910
+These very ones form only this.
+
+116
+00:05:23,630 --> 00:05:24,770
+Here kind of a peak happens.
+
+117
+00:05:25,350 --> 00:05:26,990
+And everything else is quenched.
+
+118
+00:05:28,150 --> 00:05:29,530
+These mutual oscillations.
+
+119
+00:05:30,410 --> 00:05:30,750
+Well ok.
+
+120
+00:05:31,750 --> 00:05:34,290
+We've all kind of been studying this for a long time.
+
+121
+00:05:35,110 --> 00:05:36,290
+And many get stuck.
+
+122
+00:05:37,070 --> 00:05:39,790
+Roma, I don't know why you lead everyone astray here.
+
+123
+00:05:40,330 --> 00:05:41,430
+Maybe this is your task.
+
+124
+00:05:43,550 --> 00:05:45,650
+We should generally say thanks to you.
+
+125
+00:05:46,170 --> 00:05:48,030
+That you spur people to such feats.
+
+126
+00:05:48,890 --> 00:05:51,430
+As they say, to decipher your schematics.
+
+127
+00:05:52,330 --> 00:05:53,750
+Here for example this schematic.
+
+128
+00:05:54,770 --> 00:05:56,110
+Known to everyone painfully well.
+
+129
+00:05:56,810 --> 00:05:58,810
+Well of course the catch is right away here.
+
+130
+00:06:00,090 --> 00:06:01,510
+The ground from the coil.
+
+131
+00:06:03,190 --> 00:06:04,530
+I mean these ends here.
+
+132
+00:06:05,450 --> 00:06:07,010
+Then the diodes will be toast.
+
+133
+00:06:07,990 --> 00:06:08,990
+They'll just overheat.
+
+134
+00:06:10,290 --> 00:06:12,110
+In short, this is total nonsense.
+
+135
+00:06:13,130 --> 00:06:14,990
+You definitely shouldn't connect it this way.
+
+136
+00:06:15,730 --> 00:06:18,050
+Therefore this was drawn in as superfluous.
+
+137
+00:06:20,830 --> 00:06:21,570
+Well ok.
+
+138
+00:06:22,470 --> 00:06:23,930
+So we see that from the pot.
+
+139
+00:06:25,070 --> 00:06:26,070
+I call it the pot.
+
+140
+00:06:31,050 --> 00:06:33,390
+And here I'm observing such an interesting thing.
+
+141
+00:06:36,220 --> 00:06:38,300
+Here 26 turns of wire.
+
+142
+00:06:40,060 --> 00:06:42,100
+One goes for some reason to the diode.
+
+143
+00:06:42,760 --> 00:06:43,520
+And to the inverter.
+
+144
+00:06:44,340 --> 00:06:46,300
+The second goes to the bifiler coil.
+
+145
+00:06:46,760 --> 00:06:47,980
+And then to the bulbs.
+
+146
+00:06:49,480 --> 00:06:50,420
+Absolutely correct.
+
+147
+00:06:50,920 --> 00:06:51,660
+That's how it is.
+
+148
+00:06:53,600 --> 00:06:54,700
+That's how it is here.
+
+149
+00:06:55,740 --> 00:06:56,680
+And here it's also so.
+
+150
+00:06:57,400 --> 00:06:57,920
+Right Roma?
+
+151
+00:06:58,780 --> 00:06:59,860
+I can say for sure.
+
+152
+00:07:00,860 --> 00:07:02,120
+Otherwise what will we spin up?
+
+153
+00:07:02,740 --> 00:07:03,100
+What current?
+
+154
+00:07:03,660 --> 00:07:04,860
+What electrons in this coil?
+
+155
+00:07:05,640 --> 00:07:08,340
+How will we even get anything here from this bifiler?
+
+156
+00:07:08,800 --> 00:07:10,040
+We won't get anything here.
+
+157
+00:07:10,380 --> 00:07:12,260
+If we don't take power from the inverter.
+
+158
+00:07:15,500 --> 00:07:17,260
+And don't run it through this coil first.
+
+159
+00:07:18,060 --> 00:07:18,700
+Next question.
+
+160
+00:07:20,540 --> 00:07:22,380
+And where's the energy accumulator?
+
+161
+00:07:22,380 --> 00:07:23,760
+Where did you put it?
+
+162
+00:07:24,760 --> 00:07:25,260
+Is it this?
+
+163
+00:07:25,860 --> 00:07:26,740
+This is resonance.
+
+164
+00:07:28,100 --> 00:07:29,360
+Of this so-called circuit.
+
+165
+00:07:30,980 --> 00:07:32,420
+And where's the accumulator?
+
+166
+00:07:33,080 --> 00:07:34,160
+You didn't draw it in here.
+
+167
+00:07:34,700 --> 00:07:36,900
+I mean the accumulator could be at your frequency.
+
+168
+00:07:38,140 --> 00:07:38,920
+Specifically here.
+
+169
+00:07:39,540 --> 00:07:40,900
+This is 4 microfarads.
+
+170
+00:07:41,600 --> 00:07:42,400
+Maybe a bit more.
+
+171
+00:07:43,740 --> 00:07:44,260
+Possibly.
+
+172
+00:07:44,780 --> 00:07:45,620
+I don't even know.
+
+173
+00:07:47,100 --> 00:07:48,760
+Experimentally I got different results.
+
+174
+00:07:49,420 --> 00:07:50,480
+I won't talk about them.
+
+175
+00:07:51,440 --> 00:07:53,700
+I use slightly different capacitors.
+
+176
+00:07:54,420 --> 00:07:54,940
+Of this type.
+
+177
+00:07:55,920 --> 00:07:57,140
+Everyone probably noticed.
+
+178
+00:07:58,060 --> 00:08:00,020
+0.47 microfarads.
+
+179
+00:08:00,600 --> 00:08:02,320
+And these are 1 microfarad caps.
+
+180
+00:08:04,880 --> 00:08:06,240
+These are a bit better.
+
+181
+00:08:06,940 --> 00:08:07,960
+They're 700 volts.
+
+182
+00:08:08,720 --> 00:08:10,060
+And up to 2000 volts.
+
+183
+00:08:10,860 --> 00:08:12,780
+DC or 700 volts AC.
+
+184
+00:08:13,820 --> 00:08:14,540
+In any case.
+
+185
+00:08:15,880 --> 00:08:16,940
+What's the point?
+
+186
+00:08:18,040 --> 00:08:19,380
+All this is kind of needed.
+
+187
+00:08:20,900 --> 00:08:22,720
+And where's the capacitance drawn?
+
+188
+00:08:23,320 --> 00:08:24,040
+Why isn't it here?
+
+189
+00:08:25,380 --> 00:08:27,960
+Into what will we drain the electrons from the medium?
+
+190
+00:08:29,460 --> 00:08:31,420
+Here's where many seekers got caught.
+
+191
+00:08:33,500 --> 00:08:34,980
+I won't draw in here now.
+
+192
+00:08:35,700 --> 00:08:36,380
+All this stuff.
+
+193
+00:08:36,800 --> 00:08:38,580
+I just know where, what and how.
+
+194
+00:08:39,640 --> 00:08:40,000
+Honestly.
+
+195
+00:08:40,660 --> 00:08:42,640
+And I've already launched more than one setup.
+
+196
+00:08:43,340 --> 00:08:44,040
+Three already, in fact.
+
+197
+00:08:44,040 --> 00:08:47,020
+I experiment, of course.
+
+198
+00:08:47,660 --> 00:08:48,120
+I disassemble.
+
+199
+00:08:48,680 --> 00:08:50,780
+I mean that setup that I recently demonstrated.
+
+200
+00:08:51,360 --> 00:08:52,820
+I don't have it here in stock yet.
+
+201
+00:08:53,360 --> 00:08:55,040
+In order to disassemble and show.
+
+202
+00:08:55,640 --> 00:08:58,120
+But there the capacitances are exactly in place.
+
+203
+00:08:58,700 --> 00:08:59,680
+Into what is this drain?
+
+204
+00:09:00,440 --> 00:09:01,320
+There it's a bit different.
+
+205
+00:09:04,540 --> 00:09:05,480
+Twice as many.
+
+206
+00:09:06,420 --> 00:09:07,240
+In any case.
+
+207
+00:09:08,500 --> 00:09:09,780
+It's unclear, Rome.
+
+208
+00:09:10,780 --> 00:09:12,420
+Why are you fooling people's heads?
+
+209
+00:09:13,280 --> 00:09:14,720
+You won't earn more money.
+
+210
+00:09:15,460 --> 00:09:16,340
+And let people get.
+
+211
+00:09:17,120 --> 00:09:17,740
+Some knowledge.
+
+212
+00:09:18,520 --> 00:09:20,420
+Anyway it won't be so simple to tune.
+
+213
+00:09:21,780 --> 00:09:22,340
+But.
+
+214
+00:09:23,160 --> 00:09:25,600
+The experiment will succeed for anyone.
+
+215
+00:09:26,140 --> 00:09:27,760
+Of those who understand the processes.
+
+216
+00:09:28,900 --> 00:09:29,100
+People.
+
+217
+00:09:29,540 --> 00:09:30,940
+Who's a radio amateur at all.
+
+218
+00:09:31,620 --> 00:09:33,680
+Who understands how to assemble a generator.
+
+219
+00:09:37,010 --> 00:09:38,790
+How to assemble everything at all.
+
+220
+00:09:39,310 --> 00:09:40,570
+When to coil and the like.
+
+221
+00:09:41,130 --> 00:09:42,110
+Calculate the turns.
+
+222
+00:09:42,830 --> 00:09:45,290
+I, for example, don't count turns.
+
+223
+00:09:45,790 --> 00:09:47,010
+I count the wire length.
+
+224
+00:09:47,570 --> 00:09:48,550
+I never count turns.
+
+225
+00:09:49,170 --> 00:09:51,170
+It's absolutely uninteresting to me.
+
+226
+00:09:53,330 --> 00:09:54,690
+All this is of course good.
+
+227
+00:09:55,590 --> 00:09:56,430
+All this is great.
+
+228
+00:09:56,970 --> 00:09:57,710
+Honestly, thanks.
+
+229
+00:09:58,670 --> 00:10:00,110
+For the schematic that you posted.
+
+230
+00:10:00,990 --> 00:10:02,390
+Now let's return to that.
+
+231
+00:10:03,510 --> 00:10:04,330
+About this coil.
+
+232
+00:10:05,350 --> 00:10:06,450
+Here the turns are wound.
+
+233
+00:10:07,790 --> 00:10:09,190
+They told about the turns.
+
+234
+00:10:10,390 --> 00:10:11,030
+Friends.
+
+235
+00:10:16,440 --> 00:10:17,720
+Specifically in this one.
+
+236
+00:10:18,720 --> 00:10:20,220
+Don't forget about this.
+
+237
+00:10:21,240 --> 00:10:21,780
+Now.
+
+238
+00:10:22,560 --> 00:10:24,180
+Here's one more good schematic.
+
+239
+00:10:26,180 --> 00:10:27,560
+Here kind of everything.
+
+240
+00:10:28,540 --> 00:10:29,260
+Quite interesting.
+
+241
+00:10:29,980 --> 00:10:31,020
+And here we see what.
+
+242
+00:10:31,920 --> 00:10:32,660
+To the output.
+
+243
+00:10:33,620 --> 00:10:35,280
+This kind of chain connects.
+
+244
+00:10:36,760 --> 00:10:37,880
+Which controls.
+
+245
+00:10:38,600 --> 00:10:39,180
+Or kills.
+
+246
+00:10:40,360 --> 00:10:41,320
+And you know why it's here?
+
+247
+00:10:42,960 --> 00:10:43,640
+It's nowhere.
+
+248
+00:10:44,120 --> 00:10:45,160
+Not in a single schematic.
+
+249
+00:10:45,640 --> 00:10:46,820
+That you and I will look at.
+
+250
+00:10:48,180 --> 00:10:48,700
+Nowhere.
+
+251
+00:10:49,380 --> 00:10:49,980
+Not here.
+
+252
+00:10:52,460 --> 00:10:53,740
+Right here it's not there.
+
+253
+00:10:54,920 --> 00:10:55,640
+You know what for.
+
+254
+00:10:56,320 --> 00:10:57,340
+This chain is here.
+
+255
+00:10:58,580 --> 00:10:59,480
+About this schematic.
+
+256
+00:11:01,960 --> 00:11:03,040
+The thing is that.
+
+257
+00:11:03,840 --> 00:11:05,060
+The system can spin up.
+
+258
+00:11:05,740 --> 00:11:06,360
+I say once again.
+
+259
+00:11:08,520 --> 00:11:10,080
+Correct draining of energy.
+
+260
+00:11:11,880 --> 00:11:12,320
+Entails.
+
+261
+00:11:13,180 --> 00:11:14,100
+Spin up of the system.
+
+262
+00:11:14,700 --> 00:11:15,880
+And it starts to spin up.
+
+263
+00:11:16,500 --> 00:11:18,000
+And can spin up to such a degree.
+
+264
+00:11:18,660 --> 00:11:19,080
+That'll just.
+
+265
+00:11:20,720 --> 00:11:21,720
+Burn out your load.
+
+266
+00:11:22,300 --> 00:11:23,640
+Or just burn out the power supply.
+
+267
+00:11:24,640 --> 00:11:25,160
+Here it is.
+
+268
+00:11:26,040 --> 00:11:26,560
+Here it is.
+
+269
+00:11:27,100 --> 00:11:27,680
+This chain.
+
+270
+00:11:28,980 --> 00:11:30,440
+It of course may be done differently.
+
+271
+00:11:31,180 --> 00:11:32,280
+But Roma made it here.
+
+272
+00:11:33,540 --> 00:11:34,900
+Again confusingly.
+
+273
+00:11:35,680 --> 00:11:37,480
+And here he introduced all this.
+
+274
+00:11:38,200 --> 00:11:38,680
+Into this block.
+
+275
+00:11:39,620 --> 00:11:40,760
+Impulse power supplies.
+
+276
+00:11:41,600 --> 00:11:42,300
+As we all know.
+
+277
+00:11:43,120 --> 00:11:43,700
+There's also.
+
+278
+00:11:44,660 --> 00:11:45,960
+A so-called such chain.
+
+279
+00:11:46,720 --> 00:11:48,340
+In order for there to be no spin up.
+
+280
+00:11:48,880 --> 00:11:49,520
+I'm just saying.
+
+281
+00:11:54,840 --> 00:11:57,480
+The schematic that's more familiar to everyone.
+
+282
+00:11:57,920 --> 00:11:58,440
+Romanoff's.
+
+283
+00:11:59,540 --> 00:12:00,560
+It's full of holes.
+
+284
+00:12:01,300 --> 00:12:02,020
+This is my first one.
+
+285
+00:12:02,520 --> 00:12:03,440
+It was lying here.
+
+286
+00:12:04,340 --> 00:12:05,420
+I drew on it.
+
+287
+00:12:06,100 --> 00:12:06,920
+Oh well.
+
+288
+00:12:08,240 --> 00:12:09,520
+Here's kind of the question.
+
+289
+00:12:10,520 --> 00:12:11,620
+Will this schematic work?
+
+290
+00:12:13,200 --> 00:12:14,740
+Because the energy drain.
+
+291
+00:12:15,280 --> 00:12:16,540
+On this schematic there is.
+
+292
+00:12:18,000 --> 00:12:18,260
+Note.
+
+293
+00:12:18,720 --> 00:12:19,260
+It's here.
+
+294
+00:12:20,180 --> 00:12:20,960
+C4 capacitor.
+
+295
+00:12:22,000 --> 00:12:23,700
+This is exactly the energy drain.
+
+296
+00:12:24,240 --> 00:12:24,900
+The main thing what?
+
+297
+00:12:25,620 --> 00:12:26,900
+To make it correctly.
+
+298
+00:12:27,520 --> 00:12:28,400
+No one made it.
+
+299
+00:12:29,020 --> 00:12:31,280
+Because everyone's too lazy to count coils.
+
+300
+00:12:32,020 --> 00:12:32,240
+Caps.
+
+301
+00:12:33,040 --> 00:12:34,800
+And in general where to take what from?
+
+302
+00:12:35,780 --> 00:12:37,580
+Everyone replicated very well.
+
+303
+00:12:38,280 --> 00:12:39,300
+This multivibrator.
+
+304
+00:12:40,400 --> 00:12:41,620
+As Romanoff called it.
+
+305
+00:12:41,800 --> 00:12:42,260
+The multi.
+
+306
+00:12:43,120 --> 00:12:44,420
+It assembles very well.
+
+307
+00:12:45,220 --> 00:12:45,860
+All the parts.
+
+308
+00:12:46,660 --> 00:12:48,480
+Here while I was starting work with FETs.
+
+309
+00:12:48,900 --> 00:12:49,780
+I couldn't memorize.
+
+310
+00:12:50,640 --> 00:12:51,780
+I drew this kind of thing.
+
+311
+00:12:53,140 --> 00:12:55,200
+Labeled 1, 2, 3.
+
+312
+00:12:57,040 --> 00:12:58,100
+This is a beginning.
+
+313
+00:12:59,220 --> 00:13:02,180
+With these FETs I practically never dealt before.
+
+314
+00:13:03,000 --> 00:13:04,780
+I worked on Soviet transistors.
+
+315
+00:13:05,480 --> 00:13:06,660
+As Roma also used.
+
+316
+00:13:09,320 --> 00:13:10,360
+Soviet transistors.
+
+317
+00:13:11,520 --> 00:13:12,340
+Maybe not Soviet.
+
+318
+00:13:12,980 --> 00:13:14,280
+But IGBT for sure.
+
+319
+00:13:18,660 --> 00:13:19,120
+Well ok.
+
+320
+00:13:20,060 --> 00:13:21,580
+What else interesting to show you?
+
+321
+00:13:22,460 --> 00:13:24,120
+There's not really anything more to show.
+
+322
+00:13:25,440 --> 00:13:27,060
+I just want to say that I'm working.
+
+323
+00:13:28,060 --> 00:13:30,400
+And the nearest video will be about a working setup.
+
+324
+00:13:31,460 --> 00:13:32,680
+I'll tell how it works.
+
+325
+00:13:33,680 --> 00:13:34,280
+And what and how.
+
+326
+00:13:34,800 --> 00:13:35,080
+And why.
+
+327
+00:13:36,540 --> 00:13:37,860
+Roma, don't be offended.
+
+328
+00:13:38,460 --> 00:13:39,840
+That I replicated your design.
+
+329
+00:13:40,460 --> 00:13:41,740
+I replicated it exactly.
+
+330
+00:13:43,260 --> 00:13:45,020
+Bought up all kinds of insulating tape.
+
+331
+00:13:46,820 --> 00:13:49,160
+In order to wind all this beautifully.
+
+332
+00:13:49,840 --> 00:13:50,980
+Even found the same board.
+
+333
+00:13:52,880 --> 00:13:54,160
+I have plenty of boards.
+
+334
+00:13:55,040 --> 00:13:56,480
+But I found this kind of board.
+
+335
+00:13:56,480 --> 00:13:57,740
+In order to.
+
+336
+00:13:58,680 --> 00:13:59,320
+Let's say.
+
+337
+00:14:00,320 --> 00:14:01,760
+The setup resembled yours.
+
+338
+00:14:02,440 --> 00:14:03,160
+The only thing.
+
+339
+00:14:03,440 --> 00:14:04,160
+I have a problem.
+
+340
+00:14:10,720 --> 00:14:12,360
+Maybe somewhere they do sell them.
+
+341
+00:14:12,920 --> 00:14:13,500
+I didn't look.
+
+342
+00:14:13,980 --> 00:14:14,420
+And anyway.
+
+343
+00:14:15,560 --> 00:14:16,780
+It's not even important.
+
+344
+00:14:18,600 --> 00:14:19,320
+That's all.
+
+345
+00:14:19,860 --> 00:14:20,720
+Let's go for it.
+
+346
+00:14:21,920 --> 00:14:23,660
+To be continued one of these days.
+
+347
+00:14:24,780 --> 00:14:25,680
+And here.
+
+348
+00:14:26,420 --> 00:14:27,400
+What I just assembled.
+
+349
+00:14:28,060 --> 00:14:28,560
+The inverter.
+
+350
+00:14:29,040 --> 00:14:29,920
+It's fully working.
+
+351
+00:14:31,080 --> 00:14:31,760
+Tested.
+
+352
+00:14:32,520 --> 00:14:33,520
+And soon.
+
+353
+00:14:34,520 --> 00:14:35,980
+I'll basically take on.
+
+354
+00:14:37,080 --> 00:14:38,780
+All the other most important stuff.
+
+355
+00:14:40,940 --> 00:14:41,840
+That's all.
+
+356
+00:14:42,840 --> 00:14:43,340
+Take care.
+
+357
+00:14:44,200 --> 00:14:45,060
+And let's go for it.
+

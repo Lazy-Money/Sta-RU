@@ -1,0 +1,264 @@
+1
+00:00:00,000 --> 00:00:00,700
+Hi everyone.
+
+2
+00:00:01,660 --> 00:00:02,960
+Now I'll show you a new setup.
+
+3
+00:00:03,960 --> 00:00:11,360
+I made it by DALI's schematic, I say right away, because I used the damn nanosecond generator, which really fries the bridge.
+
+4
+00:00:12,400 --> 00:00:15,760
+The frequency drifts, but that's not even the lousiest part.
+
+5
+00:00:16,400 --> 00:00:20,900
+The lousy thing is that I already burned a bunch of these 926 transistors.
+
+6
+00:00:22,700 --> 00:00:27,160
+So, in general, I wanted to fit all this in one box, it didn't fit.
+
+7
+00:00:27,920 --> 00:00:32,180
+Unfortunately, even the circuit capacitor from the inductor didn't fit either.
+
+8
+00:00:33,780 --> 00:00:39,520
+This is the coaxial that solders to it, I mean it dangles here, this is the board, in short.
+
+9
+00:00:40,280 --> 00:00:45,800
+I even opened it, because the frequency constantly has to be tuned with this resistor that's here.
+
+10
+00:00:46,680 --> 00:00:48,980
+This is a multi-turn frequency tuning.
+
+11
+00:00:50,020 --> 00:00:54,300
+A 5V stabilizer, in short, I had to rig up a separate one.
+
+12
+00:00:55,760 --> 00:00:57,480
+So, what else did I want to say?
+
+13
+00:00:58,020 --> 00:01:04,560
+So, here I have a generator, a transformer on a ring on ferrite, I had to cram it here too, in another place.
+
+14
+00:01:08,780 --> 00:01:11,480
+Well, there's just no room here, I had to put it.
+
+15
+00:01:12,200 --> 00:01:20,000
+Here there's a diode bridge, two capacitors, and a 5V stabilizer for the logic, which turns on all these various buttons here.
+
+16
+00:01:20,800 --> 00:01:25,240
+The power supply burned out, unfortunately, because I disconnected the grounding.
+
+17
+00:01:25,240 --> 00:01:37,060
+You must not disconnect the grounding under any circumstances, bad grounding kills the power supply, and it kills it, you know what, the optocoupler for some reason, evidently it punches through it.
+
+18
+00:01:37,880 --> 00:01:40,340
+I don't know how this happens, but it happens.
+
+19
+00:01:40,980 --> 00:01:49,560
+I already burned one, had to put a 5A one, but it's quite enough, because the system guzzles very little, and is quite enough for a 500W load.
+
+20
+00:01:50,220 --> 00:01:53,060
+Today we'll test this floodlight, the notorious one, yeah?
+
+21
+00:01:53,700 --> 00:01:54,520
+I'll show right away.
+
+22
+00:01:55,420 --> 00:02:01,940
+Here, please, look, the floodlight is absolutely not connected anywhere, just its plug, and that's it.
+
+23
+00:02:03,040 --> 00:02:04,880
+This is the outlet and the load switch.
+
+24
+00:02:05,680 --> 00:02:06,380
+So what else?
+
+25
+00:02:07,740 --> 00:02:09,180
+Let's go by the grounding, yeah?
+
+26
+00:02:10,040 --> 00:02:12,460
+Now so, here I'll connect the battery for now.
+
+27
+00:02:13,820 --> 00:02:15,000
+This is the grounding, yeah?
+
+28
+00:02:15,820 --> 00:02:16,920
+This is the grounding.
+
+29
+00:02:17,380 --> 00:02:20,000
+Here it is, connected to the battery, look here.
+
+30
+00:02:20,880 --> 00:02:28,600
+Here it's stripped, and it's desirable that it be well connected, because the power supply will burn out again, I won't be able to demonstrate for you.
+
+31
+00:02:29,280 --> 00:02:31,120
+So, well, let's turn it on.
+
+32
+00:02:32,260 --> 00:02:36,820
+We turn on the system, the LED lights up, which you all love to look at, see?
+
+33
+00:02:37,640 --> 00:02:45,560
+The LED burns, burns, so, now I'll connect the load, look, I turn on the load, I turn on, the floodlight burns.
+
+34
+00:02:46,480 --> 00:02:59,720
+500W So, the nanosecond generator, I say right away, drifts off completely, you can't even breathe, drifts off completely, accordingly, everything starts to wander, and the system doesn't work.
+
+35
+00:03:00,740 --> 00:03:10,400
+Now tell me, what to do with the battery, we disconnect it, damn it, from here, that's it, please, it's here, not needed, we remove it, damn it.
+
+36
+00:03:11,360 --> 00:03:23,620
+Here it is, look, the system works, works, and now tell me that this is a fake, please, this is the ground, I don't want to tug it, because I already burned the power supply, yeah, obviously something
+
+37
+00:03:23,620 --> 00:03:24,260
+goes back.
+
+38
+00:03:25,700 --> 00:03:40,740
+Well, okay, well there, this kind of contraption, please, 500W, works, but it has to be put out, because this transistor heats up, and will soon blow, although here it's only 110V, as it goes, so
+
+39
+00:03:40,740 --> 00:03:41,800
+that's exactly waddle.
+
+40
+00:03:42,380 --> 00:03:42,980
+Happens soon.
+
+41
+00:03:44,180 --> 00:03:53,140
+That's it, in short, here, we turn on, it doesn't turn on, please, you have to bring the battery up again, and then everything will happen.
+
+42
+00:03:58,330 --> 00:04:04,550
+Look, here, I turn on, the propeller starts, I turn on, you have to turn off the load.
+
+43
+00:04:05,690 --> 00:04:09,470
+So, we hold it, the system starts, and the floodlight burns.
+
+44
+00:04:10,510 --> 00:04:15,330
+Please, I connected 550W, I turn off, everything cuts out.
+
+45
+00:04:16,650 --> 00:04:25,690
+I connected 550W of load, it worked calmly, but this gizmo, frankly speaking, is total rubbish, something has to be replaced.
+
+46
+00:04:26,770 --> 00:04:36,250
+How this worked for Dali, I don't know, but, most likely, because something wandered there for him, most likely, because of this it's synchronized, or somehow.
+
+47
+00:04:37,030 --> 00:04:43,330
+I'll honestly tell you, you need, in this respect you need a matching block, otherwise this whole system won't work.
+
+48
+00:04:44,030 --> 00:04:50,050
+However much you hammer it with pulses, and whatever kind, it won't give anything, don't torment yourselves.
+
+49
+00:04:51,030 --> 00:05:00,830
+You have to study the whole theory, and only then know, but here, darn, I see, a lot of specialists sit on the forms, shoot the breeze, do squat.
+
+50
+00:05:01,550 --> 00:05:12,870
+So then, get a grip on your reason, your own, listen to scientists, what they say, study the theory of the magnetic field, and then you'll know where to hammer, and with what, and how to make it, so
+
+51
+00:05:12,870 --> 00:05:14,690
+that this magnetic field rotates in.
+
+52
+00:05:14,690 --> 00:05:21,390
+This coil, it's empty, yeah, there's nothing there, wires go, here.
+
+53
+00:05:22,570 --> 00:05:26,370
+And so, to make everything work here, you just have to study the theory.
+
+54
+00:05:27,270 --> 00:05:37,390
+I don't sit on these forms and don't read all this gibberish, I listen to scientists and listen to people who know how the magnetic field goes, how this donut spreads, and the like.
+
+55
+00:05:38,310 --> 00:05:43,250
+So I recommend you start with exactly this too, and only then think about everything else.
+
+56
+00:05:44,690 --> 00:05:46,110
+Then everything will work out for you.
+
+57
+00:05:46,570 --> 00:05:53,890
+I thought up the schematic myself, worked, I'll honestly say, assembled it relying on Dali, thought that all this works for him.
+
+58
+00:05:54,890 --> 00:06:00,910
+But I think that the second schematic, if he assembles it, won't work, because here matching is required.
+
+59
+00:06:01,630 --> 00:06:09,430
+It just happened for him by chance, it's unlikely to happen again, I'll honestly say, because this whole system requires specific matching.
+
+60
+00:06:10,670 --> 00:06:13,830
+Everything must be synchronized and done as it should be.
+
+61
+00:06:14,690 --> 00:06:17,290
+This generator needs to be urgently stabilized.
+
+62
+00:06:18,310 --> 00:06:26,270
+The frequency drifts a little, that's it, the system stalls, turns off, because something's not enough, the power supply doesn't work.
+
+63
+00:06:27,390 --> 00:06:38,530
+The voltage came out for me here at the output somewhere 270 volts, just barely enough for the power supply, it has a diode bridge inside there, and too little comes, you understand yourselves, too
+
+64
+00:06:38,530 --> 00:06:38,750
+little.
+
+65
+00:06:40,010 --> 00:06:43,170
+Well, this kind of thing, in short, came out.
+
+66
+00:06:44,010 --> 00:06:44,650
+Go for it.
+

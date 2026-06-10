@@ -1,0 +1,548 @@
+1
+00:00:01,680 --> 00:00:10,600
+Hi, everyone. I promised the schematic. Here I drew it. Unfortunately, my splan crashed.
+
+2
+00:00:10,600 --> 00:00:16,680
+I have to reinstall the computer. And, unfortunately, here I am for now with my splan. I don't
+
+3
+00:00:16,680 --> 00:00:23,480
+draw schematics. I'm not a particular draftsman. I'll draw it in the form it's in. I'll
+
+4
+00:00:23,480 --> 00:00:29,160
+tell a bit and post this schematic so you can see it.
+
+5
+00:00:29,240 --> 00:00:35,040
+So, let's start with the most important thing, the pumping generator. The pumping generator
+
+6
+00:00:35,040 --> 00:00:40,560
+is made on two push-pull transistors. Most importantly, don't forget that if you'll
+
+7
+00:00:40,560 --> 00:00:47,040
+use a TL, don't forget to put a driver. A driver is a very good thing, very reliable.
+
+8
+00:00:47,040 --> 00:00:59,040
+This kind, a TC4420, such a small microchip. It's very convenient. If you put it, it'll
+
+9
+00:00:59,040 --> 00:01:05,880
+be just wonderful. The transistors will open and close as they should. The system is better
+
+10
+00:01:05,880 --> 00:01:12,400
+made 12V. No need to rush for now. Later, you'll rev up the power and all that. Well,
+
+11
+00:01:12,400 --> 00:01:18,960
+if you want, you can make 24V too. An RF260 and the transistors allow developing this
+
+12
+00:01:18,960 --> 00:01:26,400
+power well. I mean to rev up at this voltage. They don't burn out the way others burn out.
+
+13
+00:01:26,400 --> 00:01:33,520
+Here's one more that proved itself very well. I'm mixing up my words. The 3710 transistor.
+
+14
+00:01:33,520 --> 00:01:38,840
+I mean it's also very reliable. Which I advise everyone to use.
+
+15
+00:01:38,840 --> 00:01:48,230
+About the push-pull. This kind of generator. I mean, the only thing is, the ring of course
+
+16
+00:01:48,230 --> 00:01:52,870
+didn't come in handy here. It's wrong. This all works.
+
+17
+00:01:52,870 --> 00:01:59,910
+Here too there's a TL. I mean it's visible. Here you can look. There the driver is hidden.
+
+18
+00:01:59,910 --> 00:02:08,860
+Here like this. Here a colleague helped me, he made this generator. The only thing is,
+
+19
+00:02:08,860 --> 00:02:15,220
+this stuff has to be removed and a normal pot put in. As you and I basically use. Why
+
+20
+00:02:15,220 --> 00:02:24,410
+a pot? Now I'll tell. What's good about the pot? The pot must be big. I mean the voltage
+
+21
+00:02:24,410 --> 00:02:31,290
+on the winding's right in this spot. Here, don't forget, 2V per turn. If you make
+
+22
+00:02:31,290 --> 00:02:41,190
+a 24V system, then naturally 12 turns here each time. If you make a 24V, then 12 turns.
+
+23
+00:02:41,190 --> 00:02:51,510
+If a 12V, then 6 turns each is quite enough. What else? Here 25-28 turns. 2.5 square mm
+
+24
+00:02:51,510 --> 00:02:57,830
+of wire. We wind it right here in insulation and get energy. I mean some voltage will definitely
+
+25
+00:02:57,830 --> 00:03:02,710
+be there. The resonant coil. It's also wound over the
+
+26
+00:03:02,710 --> 00:03:10,110
+pot, as usual. And it has somewhere around 3 turns. You can do 4, but better 3 turns.
+
+27
+00:03:10,110 --> 00:03:14,670
+More isn't needed. The main thing for us is to get resonance.
+
+28
+00:03:14,670 --> 00:03:22,010
+We select the capacitor. Capacitors, again, I advise. Recommend using these kinds of capacitors.
+
+29
+00:03:22,010 --> 00:03:32,730
+It has 2000V DC, AC 700V. I mean 0.47uF. Ideally suited for these purposes. I bought
+
+30
+00:03:32,730 --> 00:03:38,250
+a bunch of them, and they work very well. I recommend using them.
+
+31
+00:03:38,250 --> 00:03:43,770
+Others all work badly. What else did I want to say?
+
+32
+00:03:43,770 --> 00:03:49,930
+This coil you all know how to wind. The bi-filer was already posted on Stranik. Don't forget
+
+33
+00:03:49,930 --> 00:03:54,790
+to wind the inductor. It must be selected so that the frequency, you don't have to rev
+
+34
+00:03:54,790 --> 00:04:01,610
+up the frequency here. If you'll rev up the frequency, you'll be tied to the ground.
+
+35
+00:04:01,610 --> 00:04:06,970
+Here someone lives on the 5th floor, I mean there'll already be trouble with the ground.
+
+36
+00:04:06,970 --> 00:04:13,710
+Don't bother with this nonsense. The frequency must be 15kHz, while 18 maximum. No need to
+
+37
+00:04:13,710 --> 00:04:20,550
+climb high. Accordingly, wind the coil like this. Here, well, how much wire did I have
+
+38
+00:04:20,550 --> 00:04:27,670
+approximately? It's about 20m of wire. I mean you wind onto this one.
+
+39
+00:04:27,670 --> 00:04:35,590
+Calculate this bi-filer too. I mean this is a bi-filer coil. It must be, well, its frequency
+
+40
+00:04:35,590 --> 00:04:42,070
+must be somewhere 4.6MHz, accounting for all the shortenings, and the like. I mean the
+
+41
+00:04:42,070 --> 00:04:47,270
+3rd harmonic must then be on your catcher. The catcher will be here. I mean this is
+
+42
+00:04:47,270 --> 00:04:51,230
+me telling about my system, how it works for me.
+
+43
+00:04:51,230 --> 00:04:56,090
+So this thing isn't installed for me. But maybe it'll be needed. I mean this will have
+
+44
+00:04:56,090 --> 00:05:01,390
+to be experimented with. This is the antenna. Then it goes right here and arrives at the
+
+45
+00:05:01,390 --> 00:05:08,430
+catcher. The catcher uses a transistor. This kind I advise. The transistor uses 2SC5200
+
+46
+00:05:09,430 --> 00:05:16,510
+Toshiba. A very good thing. Works reliably, doesn't overheat, nothing. Easy to mount it,
+
+47
+00:05:16,510 --> 00:05:22,470
+and in general no need to fuss there and mount all kinds of heatsinks.
+
+48
+00:05:22,470 --> 00:05:28,310
+So what else about the tuning? About the tuning I'll tell now. Here's the most important thing.
+
+49
+00:05:28,310 --> 00:05:36,250
+As I said, from these 25 to 28 turns, however many you manage to wind, however many you can.
+
+50
+00:05:36,250 --> 00:05:42,330
+You need to get resonance within resonance. I mean now this wire comes out. It's fed exactly
+
+51
+00:05:42,330 --> 00:05:48,370
+right here. From here it starts going straight to this coil, to the energy. Where will you
+
+52
+00:05:48,370 --> 00:05:52,930
+get it from? This is the inverter. This is an ordinary inverter. I mean that's where
+
+53
+00:05:52,930 --> 00:06:01,710
+the armor train was howling. Here's the inverter. You can take any. You can make 50Hz too. Only
+
+54
+00:06:01,710 --> 00:06:08,780
+then you won't need this inductor here, like it's done here now. The system is very similar
+
+55
+00:06:08,780 --> 00:06:14,460
+to Akula's first setup, the standing tubes. It also worked absolutely like this one that
+
+56
+00:06:14,460 --> 00:06:22,540
+I'm telling you about now. This terminal goes to the diode bridge, or to a diode. To
+
+57
+00:06:22,540 --> 00:06:29,780
+1 or to 2, connected in parallel. What for? Now I'll say. You can do it like this too.
+
+58
+00:06:29,780 --> 00:06:37,460
+Take a diode bridge and connect it. But for HF, a diode bridge. I use these kinds of diodes.
+
+59
+00:06:37,460 --> 00:06:46,660
+Here now you see them. This is a diode. Here its rating is written 12 or 06 DI. What's
+
+60
+00:06:46,660 --> 00:06:54,630
+good about it? It can be mounted right on the heatsink. This mounting part on the heatsink
+
+61
+00:06:54,630 --> 00:07:04,060
+is insulated from both ends. If you don't believe it, here I can show this moment now.
+
+62
+00:07:04,060 --> 00:07:24,060
+Let's take a tester. We'll turn it on to diode measurement. Now we'll try. Here look,
+
+63
+00:07:24,060 --> 00:07:33,300
+I touch it so it's visible. I touch with the contact. Here I touch both. It beeps. I touch
+
+64
+00:07:33,300 --> 00:07:41,700
+one terminal. Here I move it. I touch the second terminal. Nothing happens. And vice
+
+65
+00:07:41,700 --> 00:07:50,660
+versa. See, nothing. Whereas if you touch like this. If now I touch like this, so you understand
+
+66
+00:07:50,660 --> 00:07:59,580
+that the diode is intact. Here it shows. This is that the diode is intact. Here please. You
+
+67
+00:07:59,580 --> 00:08:21,300
+can flip it, then there it won't be. In general, this is a cool thing. You can use this kind of
+
+68
+00:08:21,300 --> 00:08:28,900
+diode. Easily for these purposes. Also basically suitable. Connect these two legs like this. And
+
+69
+00:08:28,900 --> 00:08:36,900
+it'll work here too. So what's the main thing for us to do here? Here, right in this spot on
+
+70
+00:08:36,900 --> 00:08:42,780
+this coil, we have to create a half wave that will coincide with the sine wave. I mean here
+
+71
+00:08:42,780 --> 00:08:48,540
+there will be a half wave in this spot. Here there'll be a sine wave. And from the catcher
+
+72
+00:08:48,580 --> 00:08:55,220
+there'll also be a sine wave. If you bring all this together, we get a generator. The only
+
+73
+00:08:55,220 --> 00:09:05,320
+trouble is that the catcher works constantly and hits go to the ground. Plus that this pump works
+
+74
+00:09:05,320 --> 00:09:12,080
+so that the diode, these diodes that are here, drain the energy right into this capacitor. 10
+
+75
+00:09:12,080 --> 00:09:20,360
+microfarads, 630 volts, at least, are here for me. Two parallel together. Here you have to be
+
+76
+00:09:20,360 --> 00:09:29,210
+careful with all this thing because it's not good. I'm just telling how to get self-feeding
+
+77
+00:09:29,210 --> 00:09:40,690
+now. Here definitely make a small choke. You can take a TV altogether. Make a decoupling for all
+
+78
+00:09:40,690 --> 00:09:50,650
+this so it's there. By the way, here I made a small screw up. One of the coils must be grounded.
+
+79
+00:09:50,650 --> 00:10:02,510
+One of the coils goes to the ground and to this thing through the whole tube. What else did I want?
+
+80
+00:10:02,670 --> 00:10:08,190
+Basically, there's nothing complicated here. It'll work. The main thing I want to say,
+
+81
+00:10:08,190 --> 00:10:15,030
+there's one screw up. The ground. Here everything's connected. The case, the ground,
+
+82
+00:10:15,030 --> 00:10:20,430
+all in one heap. That's no problem. Stick all the minus terminals onto the ground too.
+
+83
+00:10:20,430 --> 00:10:30,890
+But there's one screw up in the ground. What's the problem? The system may not work. You have
+
+84
+00:10:30,890 --> 00:10:37,290
+to play with the wire. Find a longer one the moment when the freebie appears. Also about the
+
+85
+00:10:37,290 --> 00:10:47,060
+power supply. I use these kinds of power supplies. 12 volts and 10 amps. This is a bit much. By the
+
+86
+00:10:47,060 --> 00:11:06,450
+way, I fixed it. The capacitors blew up. What I want to say, the circuit is dirt simple. The
+
+87
+00:11:06,450 --> 00:11:12,610
+main thing is to make it correctly. We observe these proportions. Remember that the wire length
+
+88
+00:11:12,610 --> 00:11:23,370
+equals the wavelength. You have to calculate the shortening coefficient. Somewhere 38 to 40 meters.
+
+89
+00:11:23,370 --> 00:11:33,470
+This is approximately 4.6 megahertz. And you tune the catcher to the third harmonic. Very hard. I
+
+90
+00:11:33,470 --> 00:11:40,470
+know it's hard. You have to lower the inductance of the catcher. More precisely, not the inductance.
+
+91
+00:11:40,470 --> 00:11:46,630
+What am I saying? The capacitance of the coil. Because between the turns trouble starts.
+
+92
+00:11:47,430 --> 00:11:57,070
+Because of the capacitance connecting the antenna, the frequency drops in half right away. To handle
+
+93
+00:11:57,070 --> 00:12:02,190
+this, you have to wind the catcher with fewer turns. And with fewer turns it doesn't have enough
+
+94
+00:12:02,190 --> 00:12:08,550
+power. I want to say it this way. No need to squeeze the last juices out of the catcher. No
+
+95
+00:12:08,550 --> 00:12:16,670
+need. It makes no sense. The catcher gives you a small gain. Tune the frequency with this core.
+
+96
+00:12:16,790 --> 00:12:23,950
+Sometimes it just hits right away. It locks on there. You'll see on the oscillogram. What else
+
+97
+00:12:23,950 --> 00:12:32,930
+did I want to say? We put the oscilloscope relative to the ground right here. Right in
+
+98
+00:12:32,930 --> 00:12:40,010
+this spot the scope is placed. And there we look at all these pulses. With one beam. And not two,
+
+99
+00:12:40,010 --> 00:12:47,690
+like we do. We bring one together with the other together. And all that. And we look. Here on the
+
+100
+00:12:47,690 --> 00:12:54,610
+inductor a clean sine wave. Here too I made a small screw up. Now I'll show what. This terminal
+
+101
+00:12:54,610 --> 00:13:01,010
+that goes from the capacitor. It should also be on the ground. I mean we'll connect it now to the
+
+102
+00:13:01,010 --> 00:13:09,970
+ground. Here, this one. I mean it must definitely be on the ground. This capacitor. And the ground.
+
+103
+00:13:09,970 --> 00:13:22,470
+And then the bifiler. Here a simple coil. We just return back and go on. Definitely. This has to be
+
+104
+00:13:22,470 --> 00:13:30,270
+done this way. I got completely confused with these bifilers. Honestly. What's what? In general,
+
+105
+00:13:30,270 --> 00:13:38,710
+you understood me. So about the pot. The pot below 15 kilohertz. It's not recommended to lower the
+
+106
+00:13:38,710 --> 00:13:46,510
+frequency. It works badly. It starts to heat up. At 15 to 16 kilohertz it still works. You have to
+
+107
+00:13:46,510 --> 00:13:53,790
+look at the specs. Definitely. But don't crank the frequency up to 30 kilohertz and higher. If you
+
+108
+00:13:53,790 --> 00:13:57,950
+don't want to drag a ground wire around with you and don't want it so that you arrive at another
+
+109
+00:13:57,950 --> 00:14:06,350
+place. Plug it in and nothing works at all. This is all the tie to the ground. It's rubbish. Plus,
+
+110
+00:14:06,510 --> 00:14:11,710
+so, if here too the wires are long. I mean if you don't put a choke here and don't decouple
+
+111
+00:14:11,710 --> 00:14:18,070
+all this with these long wires. There'll also be a screw up. Long wires to this very lamp and it
+
+112
+00:14:18,070 --> 00:14:23,950
+starts to. It works like an antenna or quenching because of the fact that the high frequency drops
+
+113
+00:14:23,950 --> 00:14:29,990
+in half on the wires. Then it doesn't burn as brightly. You apply a load and there are sags
+
+114
+00:14:30,070 --> 00:14:36,230
+and all that. I sketched this kind of nonsense briefly like this. I'll stick it somewhere now.
+
+115
+00:14:37,670 --> 00:14:46,410
+Here I tried to draw a silograms. It didn't work out for me. In short, everything's crooked. All
+
+116
+00:14:46,410 --> 00:14:52,650
+this was done purely by hand like this. I did all this from my head. I never draw any schematics,
+
+117
+00:14:52,650 --> 00:14:59,210
+but I promised. So here I'm posting this schematic as it is. See, this is how I did it.
+
+118
+00:15:01,190 --> 00:15:04,390
+I know that the tuners, many guys already understand what to do.
+
+119
+00:15:05,590 --> 00:15:11,110
+And there are four people who already made it by my accounts, got a result. I mean the effects,
+
+120
+00:15:11,110 --> 00:15:17,910
+they keep working. I'm glad to greet them. I give a big hello to Slava and Kirill. And everyone else.
+
+121
+00:15:19,670 --> 00:15:25,430
+I hope you, guys, will support me and write on the forum. I mean at least I won't demand
+
+122
+00:15:25,430 --> 00:15:32,710
+any particularly strong thanks. I'll try to help. Well, and to those who haven't achieved
+
+123
+00:15:32,710 --> 00:15:40,070
+any effects yet, guys, work. Everything will work out. To the guru who tries to write to
+
+124
+00:15:40,070 --> 00:15:49,660
+me that I'm getting in the way, go for it. Let the guys work. Whoever doesn't understand
+
+125
+00:15:49,660 --> 00:15:55,180
+electronics or is weak will have to study each part separately. How the catcher works,
+
+126
+00:15:55,740 --> 00:16:03,000
+how the inverter works, how the bifiler works, what happens when we feed here and all that.
+
+127
+00:16:03,720 --> 00:16:07,640
+Do you understand the thing? Yeah, the atomic processes I won't tell.
+
+128
+00:16:08,680 --> 00:16:12,680
+I myself know little about the atomic processes that happen in this coil.
+
+129
+00:16:13,320 --> 00:16:17,160
+But this isn't the whole schematic yet. I'll tell about other schematics too.
+
+130
+00:16:18,040 --> 00:16:23,880
+In any case, we recall the schematic of our Roma, who didn't quite want us all to know all this here.
+
+131
+00:16:24,840 --> 00:16:28,840
+Here's this coil of his. He launched its power to the catcher.
+
+132
+00:16:29,640 --> 00:16:33,160
+This isn't a catcher, this is basically a pulse transformer system.
+
+133
+00:16:34,920 --> 00:16:41,160
+A pulse generator, more precisely. Here pulses are needed. And basically he's right. Everything's
+
+134
+00:16:41,160 --> 00:16:46,760
+okay, here he did this. But there'll be nothing here without you passing the energy from here
+
+135
+00:16:46,760 --> 00:16:52,600
+through this coil. There won't be. That's it, my camera battery is actually dying.
+
+136
+00:16:53,400 --> 00:16:59,000
+It's just some kind of disaster altogether. I mean I'm stopping the filming and I'll
+
+137
+00:16:59,000 --> 00:17:03,640
+try to answer all the questions. A bit of patience and here's the schematic.
+

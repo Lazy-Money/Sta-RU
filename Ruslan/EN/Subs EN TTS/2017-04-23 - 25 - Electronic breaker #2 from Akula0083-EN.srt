@@ -1,0 +1,952 @@
+1
+00:00:06,520 --> 00:00:07,180
+Hi everyone.
+
+2
+00:00:08,400 --> 00:00:10,180
+Glad to welcome you to my mini lab.
+
+3
+00:00:11,880 --> 00:00:15,640
+And today I'll be assembling a test sample of a spark interrupter.
+
+4
+00:00:16,740 --> 00:00:17,940
+By this schematic here.
+
+5
+00:00:18,960 --> 00:00:20,840
+For my further experiments and runs.
+
+6
+00:00:22,280 --> 00:00:27,160
+I was asked to explain how this all gets assembled, how it works, and how it's tested.
+
+7
+00:00:28,380 --> 00:00:30,600
+Everyone can then use it for their own purposes.
+
+8
+00:00:31,360 --> 00:00:37,140
+This concerns all those people who are adherents of spark drives with dischargers, with interrupters.
+
+9
+00:00:40,000 --> 00:00:47,700
+For those who are now trying to interrupt the spark, that is the movement of current with magnets, I went a different route from the start.
+
+10
+00:00:48,620 --> 00:00:49,580
+I went the Smith way.
+
+11
+00:00:53,680 --> 00:00:56,660
+Smith always limits the current on the primary circuits.
+
+12
+00:00:57,500 --> 00:00:58,820
+That's basically what we'll be doing.
+
+13
+00:00:59,980 --> 00:01:02,140
+An analog of the Tesla interrupter.
+
+14
+00:01:02,860 --> 00:01:04,020
+Exactly the same.
+
+15
+00:01:04,720 --> 00:01:07,240
+All his rotating coils, exactly the same.
+
+16
+00:01:08,280 --> 00:01:10,260
+Pulses go, bursts of pulses.
+
+17
+00:01:10,940 --> 00:01:18,520
+The pulses correspond to the resonance frequency, and the bursts correspond to the other processes happening in all his systems.
+
+18
+00:01:20,060 --> 00:01:21,940
+Well, let's get to assembling.
+
+19
+00:01:23,400 --> 00:01:25,760
+A fairly uncomplicated schematic.
+
+20
+00:01:26,320 --> 00:01:26,580
+Simple.
+
+21
+00:01:27,560 --> 00:01:29,720
+Let's start assembling and testing.
+
+22
+00:01:32,140 --> 00:01:33,720
+Here I've already prepared the board.
+
+23
+00:01:34,600 --> 00:01:36,560
+This is me already planning what will go where.
+
+24
+00:01:38,100 --> 00:01:39,560
+Well, let's go assemble.
+
+25
+00:01:44,000 --> 00:01:48,100
+So, we have a small digression, or rather a refinement of this schematic.
+
+26
+00:01:50,360 --> 00:01:52,900
+So, now everything in order from the start.
+
+27
+00:01:54,380 --> 00:02:01,280
+I mean first by the schematic, and then, as you asked, a small explanation of its essence, and on the Tesla principle.
+
+28
+00:02:06,700 --> 00:02:08,060
+Now this schematic.
+
+29
+00:02:08,520 --> 00:02:12,160
+This is, as I said, an analog of the Tesla interrupter.
+
+30
+00:02:12,540 --> 00:02:21,020
+That is, it creates bursts of pulses, and within the bursts of pulses, that is, the number of pulses in a burst corresponds to the resonant.
+
+31
+00:02:21,780 --> 00:02:22,340
+Oscillations.
+
+32
+00:02:22,680 --> 00:02:28,780
+Well, and the duration, or the gaps between bursts, already correspond exactly to the internal processes.
+
+33
+00:02:29,320 --> 00:02:30,420
+But that's a bit later.
+
+34
+00:02:31,020 --> 00:02:32,180
+Now about the block.
+
+35
+00:02:33,920 --> 00:02:35,080
+Here's the schematic.
+
+36
+00:02:35,600 --> 00:02:39,800
+Basically, it's the same analog, just with something added to improve operation.
+
+37
+00:02:41,380 --> 00:02:47,980
+To increase the supply parameters from 15 to 36 volts, a voltage stabilizer was added in this schematic.
+
+38
+00:02:49,360 --> 00:02:52,880
+I mean, it allows feeding power from 15 to 36 volts.
+
+39
+00:02:53,340 --> 00:02:55,060
+The system stabilizes it normally.
+
+40
+00:02:56,720 --> 00:02:57,400
+Next.
+
+41
+00:02:58,400 --> 00:03:02,160
+Most important, this protective diode was added to the schematic.
+
+42
+00:03:02,650 --> 00:03:06,980
+So the resonant circuits can work calmly without bumping into these diodes.
+
+43
+00:03:07,620 --> 00:03:11,200
+The diode in the transistor, and this diode directly.
+
+44
+00:03:11,680 --> 00:03:13,500
+The limiter, helping the transistor.
+
+45
+00:03:14,500 --> 00:03:19,660
+Because of this, it became possible to install a lower voltage transistor with better control.
+
+46
+00:03:20,520 --> 00:03:24,200
+Well, and accordingly, with better control of all these systems.
+
+47
+00:03:25,440 --> 00:03:27,040
+Now, how our block looks.
+
+48
+00:03:28,000 --> 00:03:29,600
+Our block looks like this.
+
+49
+00:03:32,780 --> 00:03:38,240
+You asked to show exactly how the main circuits are implemented, the ones where the problems arose.
+
+50
+00:03:39,880 --> 00:03:41,400
+Here's our LC circuit.
+
+51
+00:03:41,920 --> 00:03:44,420
+Oops, not LC, but CR circuit.
+
+52
+00:03:44,760 --> 00:03:46,580
+In the collector of the gating transistor.
+
+53
+00:03:47,560 --> 00:03:48,720
+For me, it looks like this.
+
+54
+00:03:49,580 --> 00:03:50,520
+Here's the capacitor.
+
+55
+00:03:51,060 --> 00:03:52,360
+Here are these two resistors.
+
+56
+00:03:53,300 --> 00:03:55,860
+I put two only to make the necessary power rating.
+
+57
+00:03:56,680 --> 00:03:57,080
+That's it.
+
+58
+00:03:57,920 --> 00:04:00,600
+There wasn't a single resistor for the needed power.
+
+59
+00:04:00,600 --> 00:04:02,320
+I had to put two.
+
+60
+00:04:03,640 --> 00:04:04,300
+Moving on.
+
+61
+00:04:04,740 --> 00:04:05,920
+Here's the base divider.
+
+62
+00:04:07,660 --> 00:04:08,660
+Here it is.
+
+63
+00:04:09,880 --> 00:04:12,600
+It passes the leading edge very well.
+
+64
+00:04:13,020 --> 00:04:14,660
+Also lowers the gating edge.
+
+65
+00:04:15,020 --> 00:04:17,260
+And the resistor is there exactly for the current.
+
+66
+00:04:18,540 --> 00:04:20,160
+The transistor's protection.
+
+67
+00:04:20,740 --> 00:04:21,520
+The transistor itself.
+
+68
+00:04:22,020 --> 00:04:22,300
+Here it is.
+
+69
+00:04:23,480 --> 00:04:24,720
+And this diode.
+
+70
+00:04:26,540 --> 00:04:27,480
+Here it is.
+
+71
+00:04:28,100 --> 00:04:30,140
+Here it is, sitting on the heatsink.
+
+72
+00:04:34,800 --> 00:04:35,920
+That's how it looks.
+
+73
+00:04:36,520 --> 00:04:38,360
+Here's our voltage stabilizer.
+
+74
+00:04:41,260 --> 00:04:42,660
+Here's this whole schematic.
+
+75
+00:04:43,960 --> 00:04:47,920
+Here's that resistor you ran into last time and couldn't select properly.
+
+76
+00:04:48,720 --> 00:04:49,900
+Here's how my choke looks.
+
+77
+00:04:57,100 --> 00:05:00,700
+So, well, now an oscillogram of how this all works.
+
+78
+00:05:01,580 --> 00:05:02,800
+And then the explanation.
+
+79
+00:05:03,880 --> 00:05:05,380
+The ones you asked for.
+
+80
+00:05:06,260 --> 00:05:07,280
+For your group.
+
+81
+00:05:13,800 --> 00:05:16,980
+So, now about the operation of the generator itself.
+
+82
+00:05:18,560 --> 00:05:20,580
+So, now the schematic first.
+
+83
+00:05:21,980 --> 00:05:22,540
+There.
+
+84
+00:05:23,100 --> 00:05:27,520
+Now we'll look at what signal comes out exactly from the low frequency master oscillator.
+
+85
+00:05:28,100 --> 00:05:29,060
+From this pin here.
+
+86
+00:05:31,020 --> 00:05:31,580
+There.
+
+87
+00:05:31,740 --> 00:05:33,720
+And accordingly, there will be a second trace.
+
+88
+00:05:34,440 --> 00:05:36,260
+This is already here at the output.
+
+89
+00:05:37,340 --> 00:05:41,360
+Exactly the one forming the duration of our pulse to control the TL.
+
+90
+00:05:42,100 --> 00:05:44,520
+I mean, now we're looking at the first master one here.
+
+91
+00:05:45,660 --> 00:05:47,580
+Exactly the first generator itself.
+
+92
+00:05:49,840 --> 00:05:50,760
+Here it is.
+
+93
+00:05:52,060 --> 00:05:54,200
+I mean, its duty cycle came out like this.
+
+94
+00:05:55,320 --> 00:05:57,820
+I mean, somewhere 40 to 35 percent.
+
+95
+00:05:58,140 --> 00:06:00,420
+That's enough for correct operation of the shaper.
+
+96
+00:06:01,440 --> 00:06:04,480
+This first trace here is the first master generator.
+
+97
+00:06:05,980 --> 00:06:10,280
+The second trace is the shaper of our TL's operating pulse itself.
+
+98
+00:06:11,400 --> 00:06:12,880
+Exactly the form it has.
+
+99
+00:06:14,920 --> 00:06:15,920
+Here's its timing.
+
+100
+00:06:17,200 --> 00:06:19,360
+This already comes to the TL itself.
+
+101
+00:06:22,500 --> 00:06:25,620
+This is already directly on the third pin of our TL.
+
+102
+00:06:28,540 --> 00:06:30,500
+Next comes the transistor's base.
+
+103
+00:06:31,340 --> 00:06:33,020
+This is already the output from the TL.
+
+104
+00:06:33,860 --> 00:06:34,240
+Here it is.
+
+105
+00:06:35,260 --> 00:06:36,580
+Now we'll expand it.
+
+106
+00:06:38,940 --> 00:06:41,260
+Now we'll set synchronization on that one.
+
+107
+00:06:43,700 --> 00:06:45,160
+And our third trace.
+
+108
+00:06:45,480 --> 00:06:45,960
+Here it is.
+
+109
+00:06:49,500 --> 00:06:50,060
+There.
+
+110
+00:06:50,800 --> 00:06:52,200
+These are the pulses on the base.
+
+111
+00:06:53,600 --> 00:06:55,360
+These are the pulses on the collector.
+
+112
+00:06:57,340 --> 00:06:59,620
+I put a 22 ohm resistor for the load.
+
+113
+00:07:02,500 --> 00:07:03,920
+Or 27 ohm.
+
+114
+00:07:04,240 --> 00:07:05,100
+27 ohm.
+
+115
+00:07:05,440 --> 00:07:05,800
+Here it is.
+
+116
+00:07:06,920 --> 00:07:08,120
+This is what we have on the base.
+
+117
+00:07:08,140 --> 00:07:08,660
+This is what we have on the collector.
+
+118
+00:07:09,780 --> 00:07:10,940
+This is on the base.
+
+119
+00:07:12,240 --> 00:07:14,660
+Now we'll move directly to this oscilloscope.
+
+120
+00:07:15,480 --> 00:07:17,040
+Let's look at what's inside for us.
+
+121
+00:07:18,800 --> 00:07:21,100
+This is already directly here on the base.
+
+122
+00:07:22,340 --> 00:07:24,360
+And here it's on the collector after the resistor.
+
+123
+00:07:25,360 --> 00:07:26,440
+Before these diodes.
+
+124
+00:07:28,760 --> 00:07:31,220
+Now I'll collapse it, show that it's a burst.
+
+125
+00:07:32,240 --> 00:07:32,600
+Here it is.
+
+126
+00:07:40,380 --> 00:07:41,120
+Once more.
+
+127
+00:07:41,800 --> 00:07:42,880
+This is the collector.
+
+128
+00:07:43,520 --> 00:07:44,600
+This is the base.
+
+129
+00:07:45,920 --> 00:07:47,200
+Here they are, these bursts.
+
+130
+00:07:48,140 --> 00:07:49,720
+Now I'll show that they're adjustable.
+
+131
+00:07:50,480 --> 00:07:51,860
+This resistor directly.
+
+132
+00:07:55,500 --> 00:07:56,240
+Here it is.
+
+133
+00:07:58,840 --> 00:08:00,220
+It adjusts the bursts.
+
+134
+00:08:01,000 --> 00:08:05,280
+Now I'll turn off that oscilloscope, so it doesn't get in the way of me turning things here.
+
+135
+00:08:07,300 --> 00:08:09,200
+I'll leave only this oscilloscope.
+
+136
+00:08:10,240 --> 00:08:11,540
+And on that collector they're set.
+
+137
+00:08:12,580 --> 00:08:13,820
+I disconnected it.
+
+138
+00:08:15,520 --> 00:08:18,680
+Once more we look at the base and at the coil on the collector.
+
+139
+00:08:19,420 --> 00:08:20,540
+Right here, before the diodes.
+
+140
+00:08:22,260 --> 00:08:24,280
+Here's the burst frequency adjustment.
+
+141
+00:08:29,140 --> 00:08:31,100
+The minimum frequency of this block.
+
+142
+00:08:33,300 --> 00:08:34,900
+Exactly of the pulse bursts.
+
+143
+00:08:38,490 --> 00:08:38,850
+Error.
+
+144
+00:08:39,770 --> 00:08:40,650
+40 kilohertz.
+
+145
+00:08:41,170 --> 00:08:44,010
+This has to be looked at directly on the first probe.
+
+146
+00:08:45,490 --> 00:08:48,310
+These frequencies, they practically coincide.
+
+147
+00:08:49,250 --> 00:08:50,410
+They work one-to-one.
+
+148
+00:08:53,420 --> 00:08:54,940
+Here we can form the bursts.
+
+149
+00:08:58,180 --> 00:08:59,140
+Here they are.
+
+150
+00:09:02,060 --> 00:09:03,440
+These will be the frequencies.
+
+151
+00:09:04,320 --> 00:09:08,400
+The frequency will correspond exactly to the resonance discharge frequency.
+
+152
+00:09:09,740 --> 00:09:11,820
+Now we'll look at what we have in the burst.
+
+153
+00:09:13,800 --> 00:09:15,420
+Here's what we have in the burst.
+
+154
+00:09:16,000 --> 00:09:18,340
+Now I'm making the synchronization a bit better.
+
+155
+00:09:19,940 --> 00:09:22,140
+I'll switch to the second channel on the base.
+
+156
+00:09:25,950 --> 00:09:28,950
+The signal there is more stable without the resistor.
+
+157
+00:09:29,730 --> 00:09:31,970
+The resistor also has its own inductance.
+
+158
+00:09:32,250 --> 00:09:34,370
+So a back EMF spike forms there.
+
+159
+00:09:36,950 --> 00:09:37,270
+There.
+
+160
+00:09:40,510 --> 00:09:41,990
+Well there, a burst.
+
+161
+00:09:43,070 --> 00:09:45,630
+Now we look at what we have in the burst directly.
+
+162
+00:09:47,910 --> 00:09:48,950
+Like this.
+
+163
+00:09:54,860 --> 00:09:58,800
+In the burst, we can adjust both the pulse duty cycle and the frequency.
+
+164
+00:10:05,720 --> 00:10:09,000
+I mean, accordingly, the number of pulses in the burst.
+
+165
+00:10:10,000 --> 00:10:11,960
+Plus this timing is adjustable too.
+
+166
+00:10:19,430 --> 00:10:20,550
+I'll show it now.
+
+167
+00:10:23,210 --> 00:10:31,010
+I mean, having set the direct frequency and duty cycle at the output to the TL, we can also adjust the timing of this burst.
+
+168
+00:10:32,590 --> 00:10:34,110
+Now I'm reducing it.
+
+169
+00:10:35,490 --> 00:10:36,930
+Reduced it, there I add it.
+
+170
+00:10:41,100 --> 00:10:43,100
+Now I'll do it once more so it's visible.
+
+171
+00:10:44,160 --> 00:10:47,560
+I mean, this is the maximum I've set, and this is the minimum.
+
+172
+00:10:48,340 --> 00:10:50,840
+I mean, we can adjust the duration in the burst.
+
+173
+00:10:58,340 --> 00:10:59,420
+Well, what can I say?
+
+174
+00:11:00,000 --> 00:11:01,740
+This resistor here, this one.
+
+175
+00:11:04,000 --> 00:11:11,780
+I put in less than four comb, but I advise you to put four, to have a greater ability to adjust exactly the burst duration.
+
+176
+00:11:13,100 --> 00:11:18,620
+I'm just already making it for a specific model, for specific frequencies, and I put in one comb.
+
+177
+00:11:19,280 --> 00:11:20,120
+Mine's a bit limited.
+
+178
+00:11:21,460 --> 00:11:22,840
+I advise you to put in four.
+
+179
+00:11:23,960 --> 00:11:26,900
+Well, and accordingly, vary it with this capacitor.
+
+180
+00:11:28,000 --> 00:11:30,320
+Setting it smaller means the burst is smaller.
+
+181
+00:11:31,080 --> 00:11:33,000
+Setting it larger in the parameters.
+
+182
+00:11:34,320 --> 00:11:37,140
+I mean, you can play from 20 to 100 nanofarads.
+
+183
+00:11:39,400 --> 00:11:41,340
+Well, otherwise it's all standard.
+
+184
+00:11:42,560 --> 00:11:43,620
+There's nothing new here.
+
+185
+00:11:46,820 --> 00:11:47,760
+Well, that's it.
+
+186
+00:11:52,120 --> 00:11:53,680
+So, and the explanation.
+
+187
+00:11:55,140 --> 00:11:56,340
+What's the essence, right?
+
+188
+00:11:56,960 --> 00:11:59,740
+I mean, how does this schematic turn out to be an analog?
+
+189
+00:12:01,000 --> 00:12:03,020
+An analog of this Tesla system.
+
+190
+00:12:03,880 --> 00:12:08,860
+I mean, it, exactly like this thing, creates, exactly sets the timing.
+
+191
+00:12:09,540 --> 00:12:12,400
+I mean, this one sets the timing of the pulse bursts.
+
+192
+00:12:14,100 --> 00:12:17,100
+This thing sets exactly the number of pulse bursts.
+
+193
+00:12:17,920 --> 00:12:19,360
+I mean, the pulse bursts.
+
+194
+00:12:20,240 --> 00:12:22,620
+I mean, it turns out a complete analog.
+
+195
+00:12:24,320 --> 00:12:27,800
+And at that, more rigidly and clearly controllable.
+
+196
+00:12:28,360 --> 00:12:29,780
+With lower voltage supply.
+
+197
+00:12:31,040 --> 00:12:32,640
+Exactly for the system itself.
+
+198
+00:12:33,480 --> 00:12:38,780
+Well, in this mechanism itself, this essence has to be viewed as an LC circuit.
+
+199
+00:12:39,360 --> 00:12:41,420
+I mean, an LC circuit on the drive.
+
+200
+00:12:42,460 --> 00:12:44,040
+Why exactly the system?
+
+201
+00:12:44,480 --> 00:12:50,760
+Last time when I was showing you, exactly the tests we did, why did the efficiency come out practically 1 to 300?
+
+202
+00:12:51,400 --> 00:12:55,460
+Because we drive it into resonance, and here we have the current in resonance.
+
+203
+00:12:55,460 --> 00:12:59,180
+Yeah, we can't tap it if we just load it like a transformer.
+
+204
+00:13:00,020 --> 00:13:12,240
+But by directly driving up the LC circuit, giving it, I mean, when we've accumulated in these capacitors power 300 times exceeding the input power, we let them discharge through our, discharger.
+
+205
+00:13:13,880 --> 00:13:17,620
+This is how this system came out with efficiency 1 to 300.
+
+206
+00:13:18,800 --> 00:13:32,880
+Even on it, I mean, just by correctly calculating the inductor, and correctly calculating the secondary by voltage, say, for 220 volts, which is what I showed last time, I mean, for 220 volts just, by
+
+207
+00:13:32,880 --> 00:13:37,640
+calculating it, we achieve self-feeding, because we have efficiency 1 to 300.
+
+208
+00:13:38,940 --> 00:13:42,500
+We made self-feeding and lit up practically 300 watts.
+
+209
+00:13:43,880 --> 00:13:49,520
+Well, it's clear that you have to account for the process itself happening here, and without it there's no way.
+
+210
+00:13:50,700 --> 00:13:53,720
+About this process, there's now a small explanation.
+
+211
+00:13:54,560 --> 00:13:57,620
+Lightly, since many will be watching this video for understanding.
+
+212
+00:14:00,120 --> 00:14:07,580
+Let's start exactly with this Tesla patent, since there's not a single Tesla patent where you'd find a device for creating radiant energy.
+
+213
+00:14:09,820 --> 00:14:15,140
+Again, understanding that radiant energy is created, not taken from the surrounding environment.
+
+214
+00:14:15,680 --> 00:14:18,260
+Yeah, I mean, this is no longer the ether.
+
+215
+00:14:19,380 --> 00:14:28,020
+Well, and in general, I advise forgetting about such a thing as ether mumbo-jumbo, and you can even forget about such a concept as radiant energy.
+
+216
+00:14:28,800 --> 00:14:34,220
+Tesla called it radiant energy because in his time there was no such science as radiation physics.
+
+217
+00:14:34,840 --> 00:14:36,180
+It's all radiation.
+
+218
+00:14:37,240 --> 00:14:43,560
+Every element, whatever we take, atomic, molecular, it has or can have a certain radiation background.
+
+219
+00:14:43,980 --> 00:14:44,120
+Yeah.
+
+220
+00:14:45,420 --> 00:14:50,020
+Well, now, to understand, let's get back to this proven schematic.
+
+221
+00:14:52,520 --> 00:14:58,420
+But now we'll be working out directly the device itself for creating radiation energy, or radiant.
+
+222
+00:14:58,940 --> 00:15:01,200
+Well, let's call it radiant for simplicity.
+
+223
+00:15:02,780 --> 00:15:05,200
+Exactly why we turned to the Tesla system.
+
+224
+00:15:05,560 --> 00:15:14,100
+Because this device, exactly with the discharger, lets you polarize space very well and directly trigger this atomic process that happens here.
+
+225
+00:15:14,120 --> 00:15:15,180
+Happens.
+
+226
+00:15:17,420 --> 00:15:27,960
+Well, and to understand why this wasn't created in modern labs, these modern ones, created, created long ago, but there they work with very radioactive materials.
+
+227
+00:15:29,900 --> 00:15:35,640
+I hope there'll be another video with this device working directly with instruments measuring radiation.
+
+228
+00:15:37,440 --> 00:15:43,920
+And in that video, there'll be an explanation of what dangerous radiation is, what peaceful radiation is.
+
+229
+00:15:44,740 --> 00:15:54,420
+I mean, an understanding of this, that radiation can be uncontrolled and can be controlled, which is exactly what Nikola Tesla's early devices prove.
+
+230
+00:15:55,750 --> 00:15:58,960
+That any radiation energy device can be controllable.
+
+231
+00:15:59,660 --> 00:16:03,180
+And that it's background and direction that can also be controllable.
+
+232
+00:16:03,720 --> 00:16:06,060
+And that's what distinguishes all these devices.
+
+233
+00:16:09,100 --> 00:16:09,860
+There.
+
+234
+00:16:10,820 --> 00:16:15,680
+And everyone else I advise to forget about such an understanding as the aether and nonsense.
+
+235
+00:16:18,080 --> 00:16:21,460
+Even about such an understanding as radiant energy.
+
+236
+00:16:22,280 --> 00:16:24,060
+It's all radiation energy.
+
+237
+00:16:25,360 --> 00:16:27,920
+And it's all atomic and molecular structures.
+
+238
+00:16:29,140 --> 00:16:30,020
+We work on.
+

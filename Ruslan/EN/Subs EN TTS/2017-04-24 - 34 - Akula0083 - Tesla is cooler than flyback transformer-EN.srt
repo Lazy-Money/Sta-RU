@@ -1,0 +1,364 @@
+1
+00:00:00,970 --> 00:00:01,690
+Vitaly, hi?
+
+2
+00:00:02,910 --> 00:00:07,150
+After all, with the TVS I barely got to sell feeding only just.
+
+3
+00:00:07,830 --> 00:00:11,270
+So I dropped it aside, I'm finishing this setup, building it up.
+
+4
+00:00:12,210 --> 00:00:14,410
+Right now I'm just reworking it for the receiver.
+
+5
+00:00:15,230 --> 00:00:16,030
+Here's the receiver.
+
+6
+00:00:17,150 --> 00:00:18,930
+There I changed the operating frequency.
+
+7
+00:00:19,670 --> 00:00:21,690
+Now I'm fitting the transmitting one to it.
+
+8
+00:00:22,270 --> 00:00:23,290
+I just finished it now.
+
+9
+00:00:24,250 --> 00:00:26,070
+I'll explain why I'm making this one.
+
+10
+00:00:26,610 --> 00:00:29,630
+It has a 320kHz resonant frequency.
+
+11
+00:00:30,250 --> 00:00:33,310
+I mean, with it the bursts of pulses that I can create.
+
+12
+00:00:34,130 --> 00:00:36,270
+I mean, it works for the low frequency one.
+
+13
+00:00:37,090 --> 00:00:39,430
+I can do from 20 to 27kHz.
+
+14
+00:00:40,050 --> 00:00:43,430
+I mean, it can work from 27 to 30kHz.
+
+15
+00:00:43,910 --> 00:00:46,630
+I mean, it fits, unlike a TVS.
+
+16
+00:00:47,390 --> 00:00:52,390
+I mean, with a TVS at 100kHz you still won't reach the supersonic frequency.
+
+17
+00:00:52,950 --> 00:00:53,550
+On this one you can.
+
+18
+00:00:54,390 --> 00:00:56,130
+Right now it's disconnected for me.
+
+19
+00:00:57,330 --> 00:00:58,830
+Here I have a manual mode.
+
+20
+00:00:58,830 --> 00:01:00,710
+This is the lower threshold.
+
+21
+00:01:01,190 --> 00:01:02,370
+It'll be enough on it.
+
+22
+00:01:02,950 --> 00:01:03,290
+I'll show.
+
+23
+00:01:03,910 --> 00:01:06,050
+Right now no signals come to it from the receiver.
+
+24
+00:01:07,090 --> 00:01:08,670
+It'll work at a low frequency.
+
+25
+00:01:10,390 --> 00:01:11,830
+It's a 100V one.
+
+26
+00:01:12,650 --> 00:01:15,530
+I mean, 100V goes to these 4 turns now.
+
+27
+00:01:16,310 --> 00:01:19,050
+Here there's a 330uF capacitor.
+
+28
+00:01:20,150 --> 00:01:20,590
+Here it is.
+
+29
+00:01:21,390 --> 00:01:21,830
+Working.
+
+30
+00:01:22,290 --> 00:01:23,670
+A filter, as it should be.
+
+31
+00:01:24,150 --> 00:01:25,670
+Here it is, the primary filter.
+
+32
+00:01:26,230 --> 00:01:26,490
+The choke.
+
+33
+00:01:27,470 --> 00:01:28,410
+All as it should be.
+
+34
+00:01:28,830 --> 00:01:30,550
+Now I'll show how much it consumes.
+
+35
+00:01:31,050 --> 00:01:32,510
+It's a 100V one.
+
+36
+00:01:33,270 --> 00:01:34,570
+I'll give 75 now.
+
+37
+00:01:35,350 --> 00:01:39,010
+After the diode bridge, it'll be exactly 100V at idle.
+
+38
+00:01:39,970 --> 00:01:41,330
+Now I'll give 50V.
+
+39
+00:01:42,210 --> 00:01:43,610
+I'm feeding 50V.
+
+40
+00:01:45,530 --> 00:01:46,730
+It's also in the setup.
+
+41
+00:01:47,230 --> 00:01:48,690
+It's not heard, not seen.
+
+42
+00:01:49,250 --> 00:01:50,010
+And here it works.
+
+43
+00:01:50,810 --> 00:01:52,010
+Here it is, the probe hanging.
+
+44
+00:01:53,190 --> 00:01:54,610
+Almost more than half a meter.
+
+45
+00:01:55,890 --> 00:01:56,670
+Here's the yellow.
+
+46
+00:01:56,670 --> 00:01:59,030
+I mean, here it reaches.
+
+47
+00:01:59,610 --> 00:02:01,270
+And here it already cuts out for me.
+
+48
+00:02:02,810 --> 00:02:04,290
+Now watch how it consumes.
+
+49
+00:02:05,050 --> 00:02:07,830
+I raise the voltage to the needed level, to 100V.
+
+50
+00:02:08,430 --> 00:02:09,610
+I set 75.
+
+51
+00:02:10,650 --> 00:02:13,230
+This is 100V after the diode bridge.
+
+52
+00:02:14,010 --> 00:02:14,710
+I mean, here it is.
+
+53
+00:02:16,950 --> 00:02:19,750
+And here, to understand how much it consumes.
+
+54
+00:02:20,510 --> 00:02:24,530
+But here it's clear, it's in a very low mode now, frequency-wise.
+
+55
+00:02:24,530 --> 00:02:27,070
+And it'll still be clear.
+
+56
+00:02:27,990 --> 00:02:30,650
+I mean, I take it, turn off the power completely.
+
+57
+00:02:31,010 --> 00:02:32,070
+And it's still working.
+
+58
+00:02:32,890 --> 00:02:33,470
+Watch how much.
+
+59
+00:02:35,690 --> 00:02:38,150
+I mean, it's discharging this capacitor now.
+
+60
+00:02:39,710 --> 00:02:44,630
+I mean, if I take the grounding cable and bring it close, it'll even still spark.
+
+61
+00:02:45,350 --> 00:02:46,990
+Watch how much it works on the capacitor.
+
+62
+00:02:49,070 --> 00:02:51,610
+Still, I mean, it consumes next to nothing.
+
+63
+00:02:52,440 --> 00:02:59,810
+In full mode, at 25kHz it consumes 100V, 150, 170mA.
+
+64
+00:03:00,570 --> 00:03:02,570
+Well, sometimes it goes up to 200mA.
+
+65
+00:03:04,290 --> 00:03:07,890
+I mean, less, basically, than any TVS.
+
+66
+00:03:08,770 --> 00:03:10,910
+Well, and what it outputs, I'll show now.
+
+67
+00:03:11,750 --> 00:03:14,210
+Now I'll turn off the light, so it's visible.
+
+68
+00:03:23,550 --> 00:03:24,130
+There.
+
+69
+00:03:24,660 --> 00:03:27,210
+We feed our 75V.
+
+70
+00:03:29,970 --> 00:03:30,750
+There they are.
+
+71
+00:03:31,710 --> 00:03:32,290
+There it started.
+
+72
+00:03:35,110 --> 00:03:37,210
+I mean, this is how it sits in the setup.
+
+73
+00:03:37,570 --> 00:03:39,130
+It's not seen and not heard.
+
+74
+00:03:39,630 --> 00:03:43,070
+But, if you bring the discharge grounding close, we'll see this.
+
+75
+00:03:54,920 --> 00:03:56,820
+Right now it's in manual mode for me.
+
+76
+00:03:58,060 --> 00:03:59,800
+Well, I'll add a bit of frequency.
+
+77
+00:04:11,710 --> 00:04:16,710
+Now at the same frequency, everything here gets excited, and everything shocks with current.
+
+78
+00:04:17,310 --> 00:04:18,570
+Here I'll show my finger now.
+
+79
+00:04:20,190 --> 00:04:24,710
+Even right now I'm standing, and I'm shocking myself to ground with this same frequency.
+
+80
+00:04:25,350 --> 00:04:27,010
+I mean, in me there arises.
+
+81
+00:04:27,670 --> 00:04:30,310
+And this synchronizes with the low frequency for me.
+
+82
+00:04:32,330 --> 00:04:33,130
+Well, like that.
+
+83
+00:04:34,870 --> 00:04:36,570
+Well, now a higher mode.
+
+84
+00:05:05,480 --> 00:05:09,540
+Well, and this is how it is in the setup, it's not seen and not heard.
+
+85
+00:05:10,760 --> 00:05:15,400
+It consumes in maximum mode 100V, 150mA.
+
+86
+00:05:16,620 --> 00:05:19,280
+Well, 160, maybe up to 200 something.
+
+87
+00:05:20,240 --> 00:05:25,640
+Now at the maximum frequency I can do here, I'll turn off the power to see how much longer it'll run.
+
+88
+00:05:29,660 --> 00:05:32,080
+Well, it works another 2 seconds or so.
+
+89
+00:05:32,680 --> 00:05:34,360
+I mean, it consumes nothing.
+
+90
+00:05:35,700 --> 00:05:36,200
+Practically.
+
+91
+00:05:37,380 --> 00:05:39,080
+That's why I don't use a TVS.
+

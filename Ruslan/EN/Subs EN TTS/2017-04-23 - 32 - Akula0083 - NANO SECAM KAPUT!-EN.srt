@@ -1,0 +1,484 @@
+1
+00:00:04,060 --> 00:00:06,880
+I propose to shoot the nanoseconds dead entirely.
+
+2
+00:00:08,120 --> 00:00:11,480
+I assembled a circuit by analogy with a multivibrator.
+
+3
+00:00:18,420 --> 00:00:19,660
+Here's what we got here.
+
+4
+00:00:22,440 --> 00:00:24,280
+We have our chargeable capacitor.
+
+5
+00:00:26,180 --> 00:00:29,920
+Now we'll measure how much goes to the bulb, how much after the bulb.
+
+6
+00:00:30,740 --> 00:00:32,380
+MOT, the HV winding.
+
+7
+00:00:34,460 --> 00:00:37,800
+And our circuit is built on an RF840.
+
+8
+00:00:38,220 --> 00:00:43,700
+Discharge capacitance 2.2 nF, 100W load, 100W reading.
+
+9
+00:00:45,400 --> 00:00:55,240
+Voltage divider 300 ohm, 2KT315, 50 ohm current protection when two 18Vs enters trigger, and 300 ohm gating the RF.
+
+10
+00:00:58,360 --> 00:01:03,820
+Everyone who's trying to start such a circuit now, I advise using this divider with base stabilization.
+
+11
+00:01:04,360 --> 00:01:07,480
+It protects both the RF and any switch.
+
+12
+00:01:08,980 --> 00:01:12,820
+These two resistors protect our KT315S.
+
+13
+00:01:13,540 --> 00:01:18,320
+Now we'll see how much voltage is needed to trigger the 2KT315S.
+
+14
+00:01:18,980 --> 00:01:20,740
+It's a 315G.
+
+15
+00:01:22,760 --> 00:01:24,600
+Here they are, two of them.
+
+16
+00:01:26,840 --> 00:01:28,800
+Here are our dividers with stabilization.
+
+17
+00:01:34,390 --> 00:01:35,630
+Naturally, 7K.
+
+18
+00:01:38,110 --> 00:01:39,130
+We start it up.
+
+19
+00:01:42,260 --> 00:01:43,240
+What do we see?
+
+20
+00:01:44,740 --> 00:01:51,060
+We see that we have a voltage of 287V, and there's no triggering of these two transistors.
+
+21
+00:01:56,700 --> 00:02:00,680
+This one is before the bulb, this one after the bulb, before the MOT.
+
+22
+00:02:04,250 --> 00:02:06,810
+Now we start adding voltage until it triggers.
+
+23
+00:02:10,800 --> 00:02:12,180
+And then we'll remove it.
+
+24
+00:02:12,460 --> 00:02:13,700
+Leaving free running mode.
+
+25
+00:02:15,620 --> 00:02:18,600
+We see the bulb and the voltage, and we add.
+
+26
+00:02:21,180 --> 00:02:22,620
+There, there's a trigger.
+
+27
+00:02:24,540 --> 00:02:28,800
+Now I remove the voltage in order to set the circuit to run in free mode.
+
+28
+00:02:34,390 --> 00:02:36,150
+That's it, our bulb lit up.
+
+29
+00:02:38,310 --> 00:02:40,350
+This bulb is a bit reddish.
+
+30
+00:02:40,690 --> 00:02:43,410
+This is 100V, and this is 100V.
+
+31
+00:02:44,210 --> 00:02:45,890
+Absolutely identical bulbs.
+
+32
+00:02:48,930 --> 00:02:53,670
+Voltage before the bulb 296, after the bulb roughly 230.
+
+33
+00:02:56,650 --> 00:02:59,310
+We write down the working 296.
+
+34
+00:02:59,510 --> 00:03:02,270
+We write 296V before the bulb.
+
+35
+00:03:06,230 --> 00:03:08,450
+After the bulb roughly 230.
+
+36
+00:03:09,590 --> 00:03:11,710
+It changes as the bulb heats up.
+
+37
+00:03:17,800 --> 00:03:18,400
+228V.
+
+38
+00:03:20,780 --> 00:03:22,100
+Next comes the MOT.
+
+39
+00:03:24,360 --> 00:03:27,760
+Well now, after all, what we got on the base of our transistor.
+
+40
+00:03:29,940 --> 00:03:30,920
+Here's the probe.
+
+41
+00:03:32,880 --> 00:03:34,140
+It goes to the base.
+
+42
+00:03:36,360 --> 00:03:38,900
+On the base we see this kind of little signal.
+
+43
+00:03:40,300 --> 00:03:42,060
+5 nanoseconds per division.
+
+44
+00:03:43,660 --> 00:03:45,620
+Total 1, 2, 3.
+
+45
+00:03:47,500 --> 00:03:50,260
+15 nanoseconds, and then the gating bounce.
+
+46
+00:03:53,540 --> 00:03:56,250
+The signal on the base is 15 nanoseconds.
+
+47
+00:04:00,980 --> 00:04:02,240
+And now the frequency.
+
+48
+00:04:03,660 --> 00:04:05,320
+We look at what we have here.
+
+49
+00:04:06,460 --> 00:04:07,240
+Such beauty.
+
+50
+00:04:10,940 --> 00:04:12,160
+406 kilohertz.
+
+51
+00:04:14,760 --> 00:04:24,390
+This frequency is the resonance of the HV coil of this capacitor at which the voltage rise, that is, voltage resonance, gives a trigger of 320V.
+
+52
+00:04:25,990 --> 00:04:29,650
+Now we'll write down that it's 403 kilohertz.
+
+53
+00:04:31,330 --> 00:04:34,590
+I mean our frequency is 403 kilohertz.
+
+54
+00:04:37,940 --> 00:04:39,620
+What do we see on the collector?
+
+55
+00:04:43,500 --> 00:04:44,760
+This is the collector.
+
+56
+00:04:47,000 --> 00:04:50,280
+And this is already the signal itself after the capacitor.
+
+57
+00:04:53,220 --> 00:04:54,840
+Now we look by the edges.
+
+58
+00:05:03,150 --> 00:05:04,410
+10 nanoseconds.
+
+59
+00:05:04,410 --> 00:05:10,930
+The edge on the collector and the capacitor discharge is 20 nanoseconds.
+
+60
+00:05:13,190 --> 00:05:17,790
+This is the limit of this transistor and the discharge time of this capacitor.
+
+61
+00:05:18,750 --> 00:05:19,730
+2 nanofarads.
+
+62
+00:05:21,110 --> 00:05:22,710
+I mean we have 10 nanoseconds.
+
+63
+00:05:23,730 --> 00:05:28,490
+So in total we get 10 nanoseconds at our frequency of 403 kilohertz.
+
+64
+00:05:35,210 --> 00:05:36,570
+403 kilohertz.
+
+65
+00:05:39,090 --> 00:05:40,770
+Well, now the main thing.
+
+66
+00:05:42,410 --> 00:05:46,970
+How much do we consume given that our 100-watt bulb burns at 30%?
+
+67
+00:05:48,270 --> 00:05:49,550
+That's even a stretch.
+
+68
+00:05:50,510 --> 00:05:53,430
+That's even if you also account for the reddening of this bulb.
+
+69
+00:05:54,110 --> 00:05:57,050
+I mean here it's 30% of a 100-watt bulb's glow.
+
+70
+00:05:58,530 --> 00:05:59,370
+No more.
+
+71
+00:06:01,770 --> 00:06:05,330
+So, our 100-watt bulb burns at 30%.
+
+72
+00:06:06,910 --> 00:06:08,030
+It's yellowish.
+
+73
+00:06:08,550 --> 00:06:09,950
+It just barely glows.
+
+74
+00:06:12,450 --> 00:06:14,170
+I mean 30% is.
+
+75
+00:06:19,260 --> 00:06:20,540
+What burns for us?
+
+76
+00:06:21,880 --> 00:06:23,340
+So that's 30 watts.
+
+77
+00:06:24,420 --> 00:06:27,560
+I took a 100-watt bulb to make it easier to calculate.
+
+78
+00:06:28,800 --> 00:06:29,580
+30 watts.
+
+79
+00:06:31,380 --> 00:06:33,020
+And what do we spend on this?
+
+80
+00:06:33,860 --> 00:06:36,380
+We spend a bit more than 4 amps, roughly.
+
+81
+00:06:38,200 --> 00:06:39,380
+20 volts.
+
+82
+00:06:40,640 --> 00:06:43,860
+For amps, 20 volts is 80 watts.
+
+83
+00:06:47,800 --> 00:06:55,440
+Now the efficiency of the far inverter is 83, 82, 81, 80% depending on the voltage.
+
+84
+00:06:56,720 --> 00:06:57,420
+I measured it.
+
+85
+00:06:57,840 --> 00:06:58,440
+We'll do this.
+
+86
+00:06:59,100 --> 00:07:04,340
+We'll subtract not even 20% but 25% efficiency from this consumption.
+
+87
+00:07:04,760 --> 00:07:06,480
+So as not to think too much.
+
+88
+00:07:07,760 --> 00:07:10,060
+We subtract roughly 20 watts.
+
+89
+00:07:10,700 --> 00:07:12,540
+I mean from here minus 20 watts.
+
+90
+00:07:13,480 --> 00:07:16,120
+That's 25% for the inverter's efficiency.
+
+91
+00:07:18,260 --> 00:07:20,220
+And we're left with 60 watts.
+
+92
+00:07:22,480 --> 00:07:25,220
+I mean, to get 30 watts in this system.
+
+93
+00:07:27,140 --> 00:07:28,240
+Again I show.
+
+94
+00:07:29,180 --> 00:07:32,060
+With a 20-nanosecond pulse, we spend 60 watts.
+
+95
+00:07:35,450 --> 00:07:36,550
+60 to 30.
+
+96
+00:07:37,470 --> 00:07:38,790
+Even if I was wrong.
+
+97
+00:07:39,470 --> 00:07:41,790
+Even if it burns not at 30, a bit more.
+
+98
+00:07:42,550 --> 00:07:46,630
+At 35%, the efficiency is still 50 to 60%.
+
+99
+00:07:47,270 --> 00:07:49,310
+I mean our efficiency came out too.
+
+100
+00:07:57,150 --> 00:07:58,190
+50 to 60%.
+
+101
+00:07:58,950 --> 00:07:59,510
+Definitely.
+
+102
+00:08:01,630 --> 00:08:02,790
+It's all nonsense.
+
+103
+00:08:05,430 --> 00:08:07,010
+What I can say for myself.
+
+104
+00:08:09,070 --> 00:08:13,770
+Basically, studying the operation of this whole circuit, you shouldn't get too disappointed.
+
+105
+00:08:15,130 --> 00:08:23,670
+Because precisely at the wattmeter readings at 50 hertz AC, we see that our wattmeters show less than we actually see the bulbs glow.
+
+106
+00:08:26,330 --> 00:08:27,430
+And that's good.
+
+107
+00:08:28,250 --> 00:08:32,730
+You just have to think about why the wattmeter doesn't register the capacitor charge.
+
+108
+00:08:32,990 --> 00:08:37,230
+That is the action of reactive currents that are capable of charging the capacitor.
+
+109
+00:08:37,550 --> 00:08:38,910
+And then we use this energy.
+
+110
+00:08:40,950 --> 00:08:42,530
+What is reactive power?
+
+111
+00:08:43,330 --> 00:08:44,350
+Well, I'll just say.
+
+112
+00:08:45,050 --> 00:08:50,130
+I mean it's currentless voltage capable of charging powerful capacitors, and then we use this.
+
+113
+00:08:51,490 --> 00:08:54,750
+I understand that Wasmus approached this solution very well.
+
+114
+00:08:55,590 --> 00:08:57,550
+Or Wasmus, however he's dubbed.
+
+115
+00:08:58,910 --> 00:09:03,030
+Basically, I understand his system, since I work the same way with this.
+
+116
+00:09:03,790 --> 00:09:14,050
+I mean I use everyone's beloved Teslas to activate or set in motion specific atoms or molecules of a specific substance that are capable of creating electric currents.
+
+117
+00:09:16,090 --> 00:09:20,610
+Well, and then the system of converting them by the Tesla system or some other way.
+
+118
+00:09:21,790 --> 00:09:24,910
+Accumulating these electrons and using them into a load.
+
+119
+00:09:25,790 --> 00:09:27,490
+But that's already another topic.
+
+120
+00:09:28,590 --> 00:09:30,250
+This is just food for thought.
+
+121
+00:09:31,270 --> 00:09:32,210
+Good luck everyone.
+

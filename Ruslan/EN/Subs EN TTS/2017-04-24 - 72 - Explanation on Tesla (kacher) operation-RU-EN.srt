@@ -1,0 +1,936 @@
+1
+00:00:01,230 --> 00:00:05,530
+So, gentlemen, hello everyone.
+
+2
+00:00:05,530 --> 00:00:10,030
+And here's what I wanted to show about the Catcher and how to tune it so that this fuel-free,
+
+3
+00:00:10,030 --> 00:00:13,230
+in quotes, generator can be launched at all.
+
+4
+00:00:13,230 --> 00:00:14,870
+Why in quotes?
+
+5
+00:00:14,870 --> 00:00:18,710
+Because its fuel is the medium, or energy, so to speak.
+
+6
+00:00:18,710 --> 00:00:23,540
+You could say atomic energy, or radiant energy.
+
+7
+00:00:23,540 --> 00:00:29,340
+Well, now we won't analyze, so to speak, do a post-mortem about radiant energy.
+
+8
+00:00:29,340 --> 00:00:34,040
+We'll talk now about the Catcher and how it works at all.
+
+9
+00:00:34,040 --> 00:00:39,920
+I decoupled, maybe, not quite everything as I'd like to decouple, but one is enough,
+
+10
+00:00:39,920 --> 00:00:41,040
+basically.
+
+11
+00:00:41,040 --> 00:00:44,660
+On my board here, there are two Zinner diodes connected back to back.
+
+12
+00:00:44,660 --> 00:00:48,640
+They protect the transistor's base, so as not to burn it out with a pulse from this
+
+13
+00:00:48,640 --> 00:00:51,680
+secondary Tesla coil.
+
+14
+00:00:51,680 --> 00:00:52,680
+What else?
+
+15
+00:00:52,680 --> 00:00:56,240
+A base bias adjustment resistor.
+
+16
+00:00:56,240 --> 00:01:01,080
+And I had to solder on a bit, so I said once again about the base.
+
+17
+00:01:01,080 --> 00:01:02,940
+I'll sketch this later.
+
+18
+00:01:02,940 --> 00:01:08,240
+There are several blocking caps there, so, an electrolytic at the output of this thing.
+
+19
+00:01:08,240 --> 00:01:15,050
+And before this, there's also a blocking cap, 1000 nanos.
+
+20
+00:01:15,050 --> 00:01:19,450
+Here too, there's a blocking cap, and onto the minus terminal, I mean onto the emitter
+
+21
+00:01:19,450 --> 00:01:23,250
+terminal the ground is hooked through a diode at the moment now.
+
+22
+00:01:23,250 --> 00:01:28,330
+Basically, it doesn't matter, because the oscilloscope is hanging there.
+
+23
+00:01:28,330 --> 00:01:31,490
+And it's already clear that the ground here will be no good.
+
+24
+00:01:31,490 --> 00:01:36,490
+The hook here onto the plus of the power supply now would be inadvisable, since the decoupling
+
+25
+00:01:36,490 --> 00:01:42,090
+goes and through the coil, all kinds of bogus oscilloscope measurements will start.
+
+26
+00:01:42,090 --> 00:01:48,930
+So, I said, yeah, that you have to make a decent catcher so that it gives normal pulses.
+
+27
+00:01:48,930 --> 00:01:54,690
+Accordingly, it has to be adjusted, and not just, like, you wound it, connected with resistors,
+
+28
+00:01:54,690 --> 00:02:01,250
+yeah, I mean hooked up the transistor, slapped it all together.
+
+29
+00:02:01,250 --> 00:02:06,890
+Sometimes it buzzes, yeah, or there, well, this catcher doesn't buzz.
+
+30
+00:02:06,890 --> 00:02:11,970
+It has in general a fairly small, let's say, small output voltage.
+
+31
+00:02:11,970 --> 00:02:17,010
+Well, basically, this is even, let's say, not important.
+
+32
+00:02:17,010 --> 00:02:20,730
+Anyway, you'll be able to get everything you need.
+
+33
+00:02:20,730 --> 00:02:25,850
+If you need to raise the voltage, we'll raise it later.
+
+34
+00:02:25,850 --> 00:02:30,770
+Now the point is that, so, here we have the batteries, yeah, now we'll measure the voltage
+
+35
+00:02:30,770 --> 00:02:31,770
+on them.
+
+36
+00:02:31,850 --> 00:02:36,890
+I don't know whether it dropped or not, yeah, let's see how much voltage is left there now,
+
+37
+00:02:36,890 --> 00:02:41,570
+so that in general, well, based on all this to understand what you and I are measuring
+
+38
+00:02:41,570 --> 00:02:49,090
+here in the, so, our voltage is 24.9 volts, I mean the batteries are well charged, everything's
+
+39
+00:02:49,090 --> 00:02:50,090
+fine.
+
+40
+00:02:50,090 --> 00:02:55,650
+Well, basically, yeah, I kind of charge them here periodically in order to use them for
+
+41
+00:02:55,650 --> 00:02:57,810
+tuning and the like.
+
+42
+00:02:57,810 --> 00:03:01,690
+With 24-volt batteries, it'll be quite hard to power the power supply from the outlet
+
+43
+00:03:01,690 --> 00:03:05,210
+and, let's say, decouple the system from the ground.
+
+44
+00:03:05,210 --> 00:03:08,210
+I mean it's, well, practically impossible.
+
+45
+00:03:08,210 --> 00:03:13,210
+In the power supply there are capacitors, all this is still a pickup and you can't properly
+
+46
+00:03:13,210 --> 00:03:14,210
+tune.
+
+47
+00:03:14,210 --> 00:03:18,690
+Therefore, I recommend everyone tune all this with two 24-volt batteries.
+
+48
+00:03:18,690 --> 00:03:24,530
+Yeah, we connect them, I mean when we achieve this whole, let's say, system, when everything's
+
+49
+00:03:24,530 --> 00:03:26,970
+already good, then it itself.
+
+50
+00:03:27,130 --> 00:03:33,050
+Well, the initial stage, of course, a lab power supply, I have two of these here.
+
+51
+00:03:33,050 --> 00:03:40,370
+So, well, I started with, so, the energy saver is lying there, it's just an indicator, as
+
+52
+00:03:40,370 --> 00:03:45,370
+they say, of the catcher's launch, so as not to grab with fingers, because I already scorched
+
+53
+00:03:45,370 --> 00:03:49,610
+my finger, yeah, I mean, well, the voltage.
+
+54
+00:03:49,610 --> 00:03:52,010
+Is low after all, it bites.
+
+55
+00:03:52,050 --> 00:03:57,090
+And here two probes are connected, yeah, blue and yellow, just marked in order to see on
+
+56
+00:03:57,090 --> 00:03:59,530
+the oscillogram what'll happen there now.
+
+57
+00:03:59,530 --> 00:04:01,770
+So, now I'll show you everything.
+
+58
+00:04:01,770 --> 00:04:07,730
+So then, we turn on the plus of the power supply, yeah, here our indicator lights up, yeah,
+
+59
+00:04:07,730 --> 00:04:09,650
+because the field began.
+
+60
+00:04:09,650 --> 00:04:14,770
+Here now in this case, yeah, I mean here we have another such tester, yeah, which shows
+
+61
+00:04:14,770 --> 00:04:19,290
+the frequency right there, its probe is lying alone, so nearby.
+
+62
+00:04:19,290 --> 00:04:21,330
+And here's its frequency.
+
+63
+00:04:21,330 --> 00:04:27,330
+The frequency is fairly, let's say, even if you grab it, it doesn't drop much.
+
+64
+00:04:27,330 --> 00:04:30,570
+The antenna, if you connect it, everything will be fine.
+
+65
+00:04:30,570 --> 00:04:35,130
+The only thing, the voltage dropped, well, it bites strongly.
+
+66
+00:04:35,130 --> 00:04:40,490
+So almost 4 megahertz, yeah, I mean 3200 kilohertz.
+
+67
+00:04:40,490 --> 00:04:42,970
+And what do we see on the oscilloscope?
+
+68
+00:04:42,970 --> 00:04:47,090
+This kind of mess, yeah, I mean, basically, this is wrong.
+
+69
+00:04:47,410 --> 00:04:54,250
+So, the upper one for us, this thing, so, the yellow, this is the base, yeah, it's small,
+
+70
+00:04:54,250 --> 00:05:11,070
+there it is, and the lower is the collector.
+
+71
+00:05:11,070 --> 00:05:16,450
+It works, yeah, I mean you have to select this with resistors, I mean the maximum amplitude
+
+72
+00:05:16,450 --> 00:05:21,210
+of the peak, at this moment the bulb starts to burn even better, and in general it burns
+
+73
+00:05:21,210 --> 00:05:24,530
+very brightly, yeah.
+
+74
+00:05:24,530 --> 00:05:29,330
+The frequency changed a little, but that's not important, yeah, I mean you can tune all
+
+75
+00:05:29,330 --> 00:05:34,570
+this, adjust it, everything will work, yeah, I mean the most important thing is that, as
+
+76
+00:05:34,570 --> 00:05:38,410
+you see, it works, yeah, works not badly.
+
+77
+00:05:38,410 --> 00:05:45,030
+You have to fiddle a bit with the inductor, I mean this will also affect the amplitude.
+
+78
+00:05:45,030 --> 00:05:49,510
+It'll strongly affect the amplitude, I mean I'd say that all this will happen during
+
+79
+00:05:49,510 --> 00:05:51,860
+tuning.
+
+80
+00:05:51,860 --> 00:05:57,500
+And so what I wanted to say to all this, add to this whole schematic, this mandatorily
+
+81
+00:05:57,500 --> 00:06:04,540
+has to be tuned, and, by the way, so, the transistor doesn't heat up much here.
+
+82
+00:06:04,540 --> 00:06:09,020
+It's warm, but there's nothing like you can't grab it.
+
+83
+00:06:09,020 --> 00:06:10,940
+Naturally it'll need to be cooled.
+
+84
+00:06:10,940 --> 00:06:13,060
+It'll need to be cooled.
+
+85
+00:06:13,060 --> 00:06:17,530
+That's logical, and what can I add to all this?
+
+86
+00:06:17,530 --> 00:06:35,170
+In order to spin up this kind of, this kind of beauty appears for us on the oscillogram.
+
+87
+00:06:35,170 --> 00:06:39,570
+Now we'll expand it a bit.
+
+88
+00:06:39,570 --> 00:06:43,330
+Here they are, I mean here's what you have to get.
+
+89
+00:06:43,330 --> 00:06:49,340
+This half wave, and then everything will be good.
+
+90
+00:06:49,340 --> 00:06:58,990
+Here now you see, here as soon as I start to change the base.
+
+91
+00:06:58,990 --> 00:07:06,140
+So how to measure all this stuff?
+
+92
+00:07:06,140 --> 00:07:13,360
+One, so, the main probe you connect to the transistor's collector, the other to the base.
+
+93
+00:07:13,360 --> 00:07:16,780
+In this manner you'll be able to find out what happens.
+
+94
+00:07:16,780 --> 00:07:21,140
+So now let's get off the base and put the probe nearby.
+
+95
+00:07:21,140 --> 00:07:25,860
+Well yeah, here the amplitude is fairly big, and now I see that here everything goes off
+
+96
+00:07:25,860 --> 00:07:34,620
+the scale, dammit.
+
+97
+00:07:34,620 --> 00:07:39,310
+So here it shows a sine wave, basically.
+
+98
+00:07:39,310 --> 00:07:41,710
+And this is normal.
+
+99
+00:07:41,710 --> 00:07:47,550
+I mean, what we, basically, send is peaks, I mean we send, and at the output we get this
+
+100
+00:07:47,550 --> 00:07:50,830
+kind of clean sine wave.
+
+101
+00:07:50,830 --> 00:07:55,630
+If you now turn off specifically this one thing, here it is.
+
+102
+00:07:55,630 --> 00:08:01,590
+It's a clean sine wave, beautiful, 3.1 and 6 MHz.
+
+103
+00:08:01,590 --> 00:08:07,310
+This kind of picture you should get.
+
+104
+00:08:07,310 --> 00:08:11,910
+If you adjust the base, it's visible right away that there's some kind of rounding there,
+
+105
+00:08:11,910 --> 00:08:14,110
+something appears.
+
+106
+00:08:14,110 --> 00:08:18,910
+If we adjust everything normally, I mean the maximum value comes out when the amplitude
+
+107
+00:08:18,910 --> 00:08:23,610
+grows with the help of the resistor.
+
+108
+00:08:23,610 --> 00:08:30,940
+Don't over twist, make the maximum protection, so as not to burn the transistor by bias.
+
+109
+00:08:30,940 --> 00:08:34,220
+And I say right away, you'll have to play with the base too.
+
+110
+00:08:34,220 --> 00:08:40,000
+Here, if you look closely, it's visible that two resistors are soldered together.
+
+111
+00:08:40,000 --> 00:08:43,840
+Their total resistance is one and a half kilohms.
+
+112
+00:08:43,840 --> 00:08:45,200
+What for?
+
+113
+00:08:45,200 --> 00:08:47,040
+Now I'll explain.
+
+114
+00:08:47,040 --> 00:08:51,680
+This also adjusts the base and the bias, also adjusts the resistance of the Tesla that you'll
+
+115
+00:08:51,680 --> 00:08:54,440
+have here.
+
+116
+00:08:54,440 --> 00:08:58,800
+I mean many put 460 there, many something else.
+
+117
+00:08:58,800 --> 00:09:04,400
+Under no circumstances, all this has to be tuned, otherwise it won't work.
+
+118
+00:09:04,400 --> 00:09:07,520
+You need to get a clean sine wave at the output.
+
+119
+00:09:07,520 --> 00:09:15,420
+I mean the catcher gives a sine wave right here.
+
+120
+00:09:15,420 --> 00:09:20,260
+When you connect a normal load to the antenna, I mean make a normal standing wave and everything
+
+121
+00:09:20,260 --> 00:09:21,420
+else.
+
+122
+00:09:21,420 --> 00:09:26,700
+I mean the voltage will rise a bit, the amplitude will jump up.
+
+123
+00:09:26,700 --> 00:09:29,340
+You have to deal with this, work a bit.
+
+124
+00:09:29,340 --> 00:09:33,900
+I mean to make a catcher just like that, slap on a transistor, it'll work.
+
+125
+00:09:33,900 --> 00:09:35,660
+This is what's not tuned.
+
+126
+00:09:35,660 --> 00:09:39,060
+Here now I turn it on, since it's not tuned.
+
+127
+00:09:39,060 --> 00:09:41,020
+It's practically not tuned.
+
+128
+00:09:41,020 --> 00:09:44,080
+I mean the bias is removed and all that.
+
+129
+00:09:44,080 --> 00:09:45,680
+Here look what happens.
+
+130
+00:09:45,680 --> 00:09:47,480
+Now I press.
+
+131
+00:09:47,480 --> 00:09:51,000
+Here it is, this kind of thingamajig, not very good.
+
+132
+00:09:51,000 --> 00:09:56,940
+I mean you can't do it this way.
+
+133
+00:09:56,940 --> 00:09:59,560
+This gibberish shouldn't be.
+
+134
+00:09:59,560 --> 00:10:03,120
+This bias resistor, look what it does.
+
+135
+00:10:03,120 --> 00:10:05,120
+It levels it.
+
+136
+00:10:05,120 --> 00:10:07,380
+And this is what you have to get.
+
+137
+00:10:07,380 --> 00:10:09,740
+This kind of clean peak at the bottom.
+
+138
+00:10:09,740 --> 00:10:12,200
+This is a half wave that comes out.
+
+139
+00:10:12,200 --> 00:10:14,220
+Kind of looks like it's not.
+
+140
+00:10:14,220 --> 00:10:17,400
+But here the transistor closes, you get a drop.
+
+141
+00:10:17,400 --> 00:10:22,310
+Then again a sharp surge, a drop.
+
+142
+00:10:22,310 --> 00:10:25,470
+In short, this is the most important thing.
+
+143
+00:10:25,470 --> 00:10:28,230
+Many rushed off now, wound catchers.
+
+144
+00:10:28,230 --> 00:10:31,510
+There it all already began, off it went, away it went.
+
+145
+00:10:31,510 --> 00:10:34,350
+No, guys it won't all just fly.
+
+146
+00:10:34,350 --> 00:10:37,630
+I say right away, you have to work a bit.
+
+147
+00:10:37,630 --> 00:10:38,630
+Work that is.
+
+148
+00:10:38,630 --> 00:10:40,170
+And here's the measurement.
+
+149
+00:10:40,170 --> 00:10:42,210
+One probe we just put nearby.
+
+150
+00:10:42,210 --> 00:10:46,830
+Under no circumstances touch it here, because not all oscilloscopes, not all probes allow
+
+151
+00:10:46,830 --> 00:10:48,570
+poking here at all.
+
+152
+00:10:48,570 --> 00:10:51,930
+And in general, you don't even have to do this.
+
+153
+00:10:51,930 --> 00:10:56,690
+By the way, the frequency holds very well on the catcher.
+
+154
+00:10:56,690 --> 00:11:00,650
+Don't forget that everything's determined by the length of the wire, I mean, and the
+
+155
+00:11:00,650 --> 00:11:03,050
+wavelength.
+
+156
+00:11:03,050 --> 00:11:05,970
+And it'll be such, as all this is made.
+
+157
+00:11:05,970 --> 00:11:09,290
+As soon as you lengthen something here, the dance begins.
+
+158
+00:11:09,290 --> 00:11:16,570
+Well, and naturally, all this will go to the ferrite.
+
+159
+00:11:16,570 --> 00:11:19,330
+It really bites, very painful.
+
+160
+00:11:19,330 --> 00:11:22,930
+I mean you feel here a fairly powerful everything.
+
+161
+00:11:22,930 --> 00:11:26,030
+The lamp burns, well it burns very brightly.
+
+162
+00:11:26,030 --> 00:11:29,130
+I mean practically like in the outlet.
+
+163
+00:11:29,130 --> 00:11:30,210
+You touch it.
+
+164
+00:11:30,210 --> 00:11:34,410
+A small arc, it zaps, basically.
+
+165
+00:11:34,410 --> 00:11:35,690
+It seems like.
+
+166
+00:11:35,690 --> 00:11:40,060
+But this is enough for you to launch the generator.
+
+167
+00:11:40,060 --> 00:11:42,980
+In general go for it, you have to assemble the catcher.
+
+168
+00:11:42,980 --> 00:11:44,660
+This is the most important thing.
+
+169
+00:11:44,660 --> 00:11:49,420
+I mean a high voltage converter.
+
+170
+00:11:49,420 --> 00:11:55,620
+A generator, which will give you and me the possibility to work with radiant energy further.
+
+171
+00:11:55,620 --> 00:12:00,160
+I want to remind once again, this generator works on radiant energy.
+
+172
+00:12:00,160 --> 00:12:06,150
+Let's say it the way Tesla said it, and not the way it is in general everywhere.
+
+173
+00:12:06,150 --> 00:12:11,550
+By the way, one more interesting refutation about bulbs screwed in and glowing from a Tesla,
+
+174
+00:12:11,550 --> 00:12:13,590
+it turns out no.
+
+175
+00:12:13,590 --> 00:12:17,390
+I mean Akula posted a new video where there are details.
+
+176
+00:12:17,390 --> 00:12:18,390
+Curious.
+
+177
+00:12:18,390 --> 00:12:22,550
+If anything, look at his channel.
+
+178
+00:12:22,550 --> 00:12:27,190
+This finally begins to dispel all the rumors that dance around everywhere and don't give
+
+179
+00:12:27,190 --> 00:12:36,360
+peace to many envious people and SE folks, and name copiers, so to speak, and the like.
+
+180
+00:12:36,360 --> 00:12:40,000
+Once again I say, I don't sell the schematic for money.
+
+181
+00:12:40,000 --> 00:12:42,960
+I don't take any money for this.
+
+182
+00:12:42,960 --> 00:12:47,720
+Specifically the setup that you saw, BTG number 2 by Akula, I'll help assemble it however
+
+183
+00:12:47,720 --> 00:12:49,080
+I can.
+
+184
+00:12:49,080 --> 00:12:52,160
+Because I already checked it once, it works.
+
+185
+00:12:52,160 --> 00:12:55,080
+I know how to tune it.
+
+186
+00:12:55,080 --> 00:12:58,780
+Many things, as they say, I guessed how to make.
+
+187
+00:12:58,780 --> 00:13:03,760
+And to amateurs, radio amateurs who understand something in this system, more precisely
+
+188
+00:13:03,760 --> 00:13:09,760
+know how, as they say, to hold a soldering iron in their hands, and not only, understand
+
+189
+00:13:09,760 --> 00:13:13,280
+all generators, how this is assembled.
+
+190
+00:13:13,280 --> 00:13:18,120
+I'll try to help you assemble all this, so to speak, without resorting to any special
+
+191
+00:13:18,120 --> 00:13:22,760
+measures, like trips, demonstrations and the like.
+
+192
+00:13:22,760 --> 00:13:26,200
+Everything that'll need to be shown on video, I'll show.
+
+193
+00:13:26,200 --> 00:13:30,000
+I'll gather colleagues who aren't interested in supporting me, and everyone who thinks
+
+194
+00:13:30,000 --> 00:13:31,640
+this is a fake.
+
+195
+00:13:31,640 --> 00:13:37,760
+Guys, well actually, here now you see the operation of the same Tesla coil, yeah, I
+
+196
+00:13:37,760 --> 00:13:41,440
+mean by the Broven catcher system.
+
+197
+00:13:41,440 --> 00:13:46,800
+It's already stupid to say that fuel-free energetics doesn't exist, yeah, in a system
+
+198
+00:13:46,800 --> 00:13:51,240
+that allows getting energy from the air.
+
+199
+00:13:51,240 --> 00:13:56,160
+In this case, the medium works, yeah, I mean radiant energy works.
+
+200
+00:13:56,160 --> 00:14:01,100
+Right here, right here on this end, this is the radiant, and it's biting now.
+
+201
+00:14:01,100 --> 00:14:02,100
+Why?
+
+202
+00:14:02,100 --> 00:14:06,980
+Because, why do I even talk about the radiant and about all this?
+
+203
+00:14:06,980 --> 00:14:13,260
+It's so, yeah, here's the radiant, and you see it now, yeah, I mean Tesla called it that.
+
+204
+00:14:13,860 --> 00:14:17,220
+Anyway, I'll stick with this and whoever doesn't like it.
+
+205
+00:14:17,220 --> 00:14:21,900
+Sorry, that's not my problem, I just say that this is the inductor, it's not connected
+
+206
+00:14:21,900 --> 00:14:27,440
+to anything at all, it should even be made bigger than it.
+
+207
+00:14:27,440 --> 00:14:28,960
+Here what else?
+
+208
+00:14:28,960 --> 00:14:34,440
+So, all this has to be tuned, look at the amplitude, what amplitude there'll be, and
+
+209
+00:14:34,440 --> 00:14:36,320
+tune all this.
+
+210
+00:14:36,320 --> 00:14:42,980
+So here just one transistor works, well, and a bunch of parts, this is just tuning and decoupling,
+
+211
+00:14:42,980 --> 00:14:47,300
+so that no nonsense goes here onto these, onto the terminals.
+
+212
+00:14:47,300 --> 00:14:51,660
+But I can tell you for sure that this radiant can be converted and useful energy obtained
+
+213
+00:14:51,660 --> 00:14:53,300
+from it.
+
+214
+00:14:53,300 --> 00:14:59,060
+You just have to know how, many don't know, but I'll try to show.
+
+215
+00:14:59,060 --> 00:15:03,700
+But I want to say right away, neatness of execution must be there in the pictures that
+
+216
+00:15:03,700 --> 00:15:05,860
+I showed you.
+
+217
+00:15:05,860 --> 00:15:11,060
+That's all, good luck, go for it, and we'll definitely meet again in the video explanations
+
+218
+00:15:11,060 --> 00:15:13,620
+and everyone will be able to assemble this.
+
+219
+00:15:14,020 --> 00:15:19,500
+Yeah, here's one more thing, by the way, about this system devouring the ground.
+
+220
+00:15:19,500 --> 00:15:24,820
+Well, possibly, if the pipe isn't galvanized it'll guzzle, of course, that's why now
+
+221
+00:15:24,820 --> 00:15:27,820
+hype has started about this.
+
+222
+00:15:27,820 --> 00:15:31,780
+I want to say that you'll have to work further, you'll have to get rid of this schematic,
+
+223
+00:15:31,780 --> 00:15:33,580
+but that's first.
+
+224
+00:15:33,580 --> 00:15:37,680
+Let's first assemble this, launch it, and then we'll modernize.
+
+225
+00:15:37,680 --> 00:15:43,100
+And not like, you got the Roma-Kula schematic right away, yeah, I mean on which modernization
+
+226
+00:15:43,100 --> 00:15:46,420
+already happened in this schematic, it won't work.
+
+227
+00:15:46,420 --> 00:15:51,180
+There are a lot of some screw-ups there that just won't let you launch it.
+
+228
+00:15:51,180 --> 00:15:56,020
+That's all, good luck, and most importantly, I say once again, there must be adjustment
+
+229
+00:15:56,020 --> 00:15:57,060
+here.
+
+230
+00:15:57,060 --> 00:16:01,540
+You have to adjust the transistor so that it's in normal mode and decouple this choke,
+
+231
+00:16:01,540 --> 00:16:06,860
+this filter, yeah, it fully decouples the power from this thing, and from the plus,
+
+232
+00:16:06,860 --> 00:16:08,400
+and from the minus.
+
+233
+00:16:08,400 --> 00:16:13,480
+This is mandatory, because in the system this will all be important.
+
+234
+00:16:13,480 --> 00:16:13,880
+Good luck.
+

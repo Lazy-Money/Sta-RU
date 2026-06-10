@@ -1,0 +1,1240 @@
+1
+00:00:00,540 --> 00:00:03,440
+Hi everyone, and here's what I'd like to show.
+
+2
+00:00:04,240 --> 00:00:12,480
+Here's the synchronization board and the generators, pushpulls, as they say, and their accessories, nanosecond stages and so on.
+
+3
+00:00:13,100 --> 00:00:17,080
+First of all, a slightly underbuilt board, and then this fully built one.
+
+4
+00:00:18,500 --> 00:00:26,700
+Its build quality is generally just fine, but it's missing one capacitor, the one that smooths the power and removes parasitic noise.
+
+5
+00:00:29,260 --> 00:00:38,440
+This is a note for hobbyists who like to solder things up on long wires without using decoupling caps and, as they say, hack stuff together on perfboard.
+
+6
+00:00:38,920 --> 00:00:44,540
+Okay, this is still more or less fine.
+
+7
+00:00:45,100 --> 00:00:52,280
+On a breadboard, when they're doing something, on that white one they sell, they stick stuff in and connect the chip with little wires.
+
+8
+00:00:53,800 --> 00:00:57,640
+Imagine what can be there, when later they complain that nothing works for them.
+
+9
+00:00:58,900 --> 00:01:02,800
+So I'd like to show you the most important thing, the oscilloscope is on.
+
+10
+00:01:03,640 --> 00:01:05,380
+Two channels, and the power supply.
+
+11
+00:01:06,020 --> 00:01:07,280
+We turn on the power supply.
+
+12
+00:01:09,300 --> 00:01:14,300
+We see a burst of pulses that's actually smeared all over the place, just to hell.
+
+13
+00:01:15,620 --> 00:01:19,380
+And what's most unpleasant is that we see some extra pulse popping out here.
+
+14
+00:01:20,260 --> 00:01:21,980
+Yeah, I mean it's complete nonsense.
+
+15
+00:01:22,960 --> 00:01:28,480
+So, to make sure this doesn't happen, first of all you have to solder the board exactly this way.
+
+16
+00:01:29,460 --> 00:01:31,300
+Look, there are two caps hanging here.
+
+17
+00:01:31,940 --> 00:01:36,160
+These caps will be removed, because during tuning I just had to add and watch.
+
+18
+00:01:37,180 --> 00:01:38,820
+So there's a driver sitting here.
+
+19
+00:01:39,380 --> 00:01:40,940
+I'll show it from this side a bit later.
+
+20
+00:01:41,940 --> 00:01:42,660
+Here's its power.
+
+21
+00:01:43,980 --> 00:01:45,820
+So there's no decoupling cap on it.
+
+22
+00:01:46,540 --> 00:01:51,240
+There, please, you're seeing now stray pulses, jumping, all kinds of crap.
+
+23
+00:01:51,980 --> 00:02:00,800
+I mean, you have to understand, if the board is basically slapped together and everything's done-ass backwards, nothing will work, even more so.
+
+24
+00:02:01,460 --> 00:02:04,740
+Not to mention that many people don't understand the essence at all.
+
+25
+00:02:05,660 --> 00:02:10,700
+I mean they soldered all this together on a breadboard, then brought the coil even closer.
+
+26
+00:02:11,520 --> 00:02:19,020
+I mean they launched high voltage and completely forgot that this high voltage will start to affect the whole construction of your generator, and so on.
+
+27
+00:02:19,560 --> 00:02:20,400
+And everything will go to pieces.
+
+28
+00:02:20,400 --> 00:02:24,080
+And then they shout that nothing works, the schematic's crap.
+
+29
+00:02:25,920 --> 00:02:28,900
+Ruslan explains it wrong and doesn't understand anything.
+
+30
+00:02:29,660 --> 00:02:30,260
+There.
+
+31
+00:02:30,740 --> 00:02:35,300
+But first of all, I'd like to say that for some people, their hands grow out of their backside.
+
+32
+00:02:36,020 --> 00:02:36,960
+That's the main problem.
+
+33
+00:02:37,680 --> 00:02:40,320
+I'll say it honestly and frankly, there's no other way.
+
+34
+00:02:41,040 --> 00:02:46,500
+I mean, this channel is for everyone who's into building this kind of environmental energy generators.
+
+35
+00:02:51,080 --> 00:02:55,420
+The main thing is that folks can't start with the classic, elementary stuff.
+
+36
+00:02:56,940 --> 00:02:59,380
+I mean they can't even solder anything properly.
+
+37
+00:03:00,160 --> 00:03:01,780
+What's there to say about anything else?
+
+38
+00:03:02,820 --> 00:03:09,440
+So, let's take a 100nF bypass capacitor and slap it on here, on the power of the driver I see.
+
+39
+00:03:10,660 --> 00:03:12,080
+And we watch what happens.
+
+40
+00:03:15,160 --> 00:03:17,280
+See, the pulse became normal.
+
+41
+00:03:18,020 --> 00:03:20,920
+As it should be, no garbage lighting up around it.
+
+42
+00:03:21,920 --> 00:03:23,280
+I let go, there you go.
+
+43
+00:03:24,600 --> 00:03:25,460
+Total idiocy.
+
+44
+00:03:26,380 --> 00:03:28,060
+And it's wandering around in here too.
+
+45
+00:03:28,680 --> 00:03:32,060
+But imagine how the circuit will work when I bring high voltage in nearby.
+
+46
+00:03:32,600 --> 00:03:34,500
+This is the driver that drives the Tesla.
+
+47
+00:03:39,210 --> 00:03:42,190
+Now I'll turn off the power so I can show you what I've cooked up here.
+
+48
+00:03:43,490 --> 00:03:45,770
+So in this system, push-pull is used.
+
+49
+00:03:47,450 --> 00:03:49,590
+I mean it's a generator on a TL chip.
+
+50
+00:03:50,230 --> 00:03:51,030
+There it is, on a TL.
+
+51
+00:03:51,450 --> 00:03:52,530
+This is the generator.
+
+52
+00:03:53,390 --> 00:03:54,550
+Here are the arms.
+
+53
+00:03:55,170 --> 00:03:57,450
+One of them is hanging from a wire on the probe.
+
+54
+00:03:59,110 --> 00:04:01,510
+Here's a 3-arm terminal and the case.
+
+55
+00:04:03,570 --> 00:04:07,610
+And here's the driver, on which we just hung the capacitor a moment ago.
+
+56
+00:04:08,270 --> 00:04:09,190
+I mean on these pins.
+
+57
+00:04:11,150 --> 00:04:12,030
+What's happening?
+
+58
+00:04:13,210 --> 00:04:16,070
+What's happening is what many people don't understand.
+
+59
+00:04:16,650 --> 00:04:18,490
+That you need bypass capacitors.
+
+60
+00:04:18,950 --> 00:04:21,070
+You have to route the negative pin correctly.
+
+61
+00:04:23,710 --> 00:04:26,450
+On this board it's routed absolutely correctly.
+
+62
+00:04:27,590 --> 00:04:29,530
+It reaches it across the whole board.
+
+63
+00:04:30,910 --> 00:04:31,870
+Travels all around.
+
+64
+00:04:32,790 --> 00:04:34,110
+Plus it enters in the middle.
+
+65
+00:04:34,770 --> 00:04:36,950
+Just as power also enters through the middle.
+
+66
+00:04:37,770 --> 00:04:42,110
+And all the pluses and minuses for powering the chips are taken from a single point.
+
+67
+00:04:42,870 --> 00:04:44,330
+That's why everything's fine here.
+
+68
+00:04:45,110 --> 00:04:50,830
+But there's one chip, since I packed everything onto one small board, that ended up higher up here.
+
+69
+00:04:51,430 --> 00:04:52,750
+I mean on it.
+
+70
+00:04:53,070 --> 00:04:54,730
+Right now, this glitch shows up.
+
+71
+00:04:56,090 --> 00:04:58,370
+I mean you saw on the oscilloscope what I was showing.
+
+72
+00:04:59,410 --> 00:05:05,590
+So, a note for hobbyists who solder on god knows what, on cardboard, and connect with wires and so on.
+
+73
+00:05:06,190 --> 00:05:08,470
+Imagine what parasites you're picking up at that moment.
+
+74
+00:05:09,350 --> 00:05:16,770
+Naturally, in order to see this you need proper equipment and you need to assemble everything properly, as they say, all together.
+
+75
+00:05:17,490 --> 00:05:18,790
+In order to understand.
+
+76
+00:05:20,270 --> 00:05:21,290
+That's first.
+
+77
+00:05:22,050 --> 00:05:22,410
+Second.
+
+78
+00:05:24,270 --> 00:05:27,570
+I've said it many times already, I'll repeat once more.
+
+79
+00:05:28,030 --> 00:05:29,810
+This schematic is fully functional.
+
+80
+00:05:31,170 --> 00:05:37,870
+If you just understand what's happening in this circuit, how this node works, this coil, how it's coupled with this node.
+
+81
+00:05:39,130 --> 00:05:43,270
+I mean this node can easily be replaced with a pot core, no problem.
+
+82
+00:05:44,350 --> 00:05:47,530
+And when the coil, calculating, except for L4.
+
+83
+00:05:49,170 --> 00:05:52,010
+L4 is the pickup coil, we're not interested in it.
+
+84
+00:05:52,710 --> 00:05:54,330
+What's happening here in this whole system?
+
+85
+00:05:55,050 --> 00:05:58,530
+Here you can drive it both with a Tesla and with a nanosecond generator.
+
+86
+00:05:59,350 --> 00:06:06,350
+Basically, the nanosecond generator is enough to start affecting the magnetic field that's formed here in resonance with this coil.
+
+87
+00:06:07,490 --> 00:06:12,770
+And here, if you measure the current at this spot, we immediately see those very spikes.
+
+88
+00:06:13,710 --> 00:06:16,250
+On the oscilloscope, they show up really well.
+
+89
+00:06:23,700 --> 00:06:25,060
+Where can you get such a ring?
+
+90
+00:06:25,500 --> 00:06:28,280
+From scrapping a switching power supply from a computer.
+
+91
+00:06:28,940 --> 00:06:30,340
+And you can pull it out easily there.
+
+92
+00:06:31,260 --> 00:06:32,940
+I mean basically that's what I do.
+
+93
+00:06:33,540 --> 00:06:36,960
+As they say, I scrap old power supplies and pull the ring out of there.
+
+94
+00:06:39,680 --> 00:06:45,940
+Everything else is junk, because you definitely shouldn't use the output capacitors, they're all dried out already.
+
+95
+00:06:46,620 --> 00:06:48,520
+And these two have actually gone bulgy.
+
+96
+00:06:49,960 --> 00:06:52,040
+And many people use a TL chip from here.
+
+97
+00:06:52,600 --> 00:06:55,300
+Lots of old power supplies have a TL chip in them.
+
+98
+00:06:56,180 --> 00:06:59,740
+And they find it in there and start soldering it straight into this thing.
+
+99
+00:07:00,780 --> 00:07:02,440
+Well, what else can you rip out of here?
+
+100
+00:07:03,300 --> 00:07:08,640
+You can pull chokes, non-polar capacitors, the diode bridge, you can pull out the SCR.
+
+101
+00:07:09,360 --> 00:07:12,760
+You can take out the diodes there, if you're really completely out of parts.
+
+102
+00:07:13,900 --> 00:07:21,120
+Here in Europe, for example, we don't have problems with parts, so if you really want to start with something, then start by buying kits.
+
+103
+00:07:22,320 --> 00:07:25,700
+Here, for example, is a kit of ceramic capacitors.
+
+104
+00:07:27,000 --> 00:07:32,740
+Basically, I don't recommend putting this kind of ceramic on high-precision generators, because it all drifts.
+
+105
+00:07:34,020 --> 00:07:39,440
+But for bypass somewhere, or where you don't need any high-precision systems, it's plenty enough.
+
+106
+00:07:40,480 --> 00:07:41,260
+And resistors.
+
+107
+00:07:42,040 --> 00:07:43,740
+This is a kit of resistors.
+
+108
+00:07:44,240 --> 00:07:45,860
+They come in different values here.
+
+109
+00:07:46,760 --> 00:07:48,080
+There's a whole bunch of them.
+
+110
+00:07:48,640 --> 00:07:50,180
+You can start with these resistors.
+
+111
+00:07:50,180 --> 00:07:53,040
+And then keep buying or topping up.
+
+112
+00:07:53,760 --> 00:07:57,340
+Just, let's say, find yourself little compartments like these.
+
+113
+00:08:10,880 --> 00:08:12,660
+And the resistors in there are old.
+
+114
+00:08:13,540 --> 00:08:15,180
+I mean, you can take a look inside.
+
+115
+00:08:15,920 --> 00:08:18,140
+There are number 300 kiloohms left.
+
+116
+00:08:18,840 --> 00:08:20,080
+But look, USSR.
+
+117
+00:08:21,480 --> 00:08:22,360
+Modern USSR.
+
+118
+00:08:24,240 --> 00:08:26,760
+The boxes are actually from Soviet times.
+
+119
+00:08:27,640 --> 00:08:30,040
+And the resistors are Soviet too, of course.
+
+120
+00:08:30,040 --> 00:08:32,600
+Just like a rare collection of resistors.
+
+121
+00:08:41,370 --> 00:08:42,990
+And there are boxes there too.
+
+122
+00:08:43,350 --> 00:08:43,830
+Take a look.
+
+123
+00:08:44,950 --> 00:08:46,890
+Right now I use these kinds of little boxes.
+
+124
+00:08:47,530 --> 00:08:48,450
+They're very convenient.
+
+125
+00:08:49,730 --> 00:08:52,970
+First and foremost, hobbyists are recommended to buy this kind.
+
+126
+00:08:54,030 --> 00:08:55,470
+They don't cost that much.
+
+127
+00:08:56,250 --> 00:08:59,150
+Well, you fill them with transistors, resistors.
+
+128
+00:09:00,410 --> 00:09:00,850
+There you go.
+
+129
+00:09:01,470 --> 00:09:05,750
+I mean, everything beautiful, and, so to speak, total order.
+
+130
+00:09:06,430 --> 00:09:09,030
+Well, in order when implementing schematics.
+
+131
+00:09:09,650 --> 00:09:11,050
+Then everything will be fine.
+
+132
+00:09:14,100 --> 00:09:16,920
+You can see Akula solders nicely and properly.
+
+133
+00:09:18,220 --> 00:09:20,640
+He kept flipping the flashlight when he was soldering.
+
+134
+00:09:21,320 --> 00:09:22,760
+I mean, everything soldered nicely.
+
+135
+00:09:23,640 --> 00:09:25,060
+That's why everything works.
+
+136
+00:09:26,460 --> 00:09:28,940
+Well, and of course understanding the processes.
+
+137
+00:09:29,640 --> 00:09:31,000
+There's no getting around that.
+
+138
+00:09:31,680 --> 00:09:37,940
+But first of all I'd like to say, if you want to launch any process, just imagine, here's a board like this.
+
+139
+00:09:38,800 --> 00:09:40,460
+I mean this board is still okay.
+
+140
+00:09:41,220 --> 00:09:42,300
+It'll endure everything.
+
+141
+00:09:43,360 --> 00:09:45,660
+Of course you have to put fiberglass underneath.
+
+142
+00:09:46,560 --> 00:09:47,880
+Like, for example, here.
+
+143
+00:09:49,640 --> 00:09:52,500
+The pulse-burst generator was here and still is.
+
+144
+00:09:53,180 --> 00:09:54,340
+Basically it even works.
+
+145
+00:09:55,020 --> 00:09:55,840
+This is the switch.
+
+146
+00:09:56,600 --> 00:09:57,760
+A fan hangs from it.
+
+147
+00:09:58,840 --> 00:10:00,600
+I was running the Tesla on this.
+
+148
+00:10:01,380 --> 00:10:02,320
+What is it built on?
+
+149
+00:10:03,480 --> 00:10:06,020
+It's built on a piece of fiberglass like this.
+
+150
+00:10:06,560 --> 00:10:07,420
+On a drilled hole.
+
+151
+00:10:08,060 --> 00:10:08,980
+I mean on a standoff.
+
+152
+00:10:09,540 --> 00:10:10,740
+And there it all sits.
+
+153
+00:10:11,480 --> 00:10:12,300
+I mean on this thing.
+
+154
+00:10:13,000 --> 00:10:13,620
+Well, fine.
+
+155
+00:10:14,500 --> 00:10:19,160
+I mean fiberglass more or less removes all the pickup and noise and so on.
+
+156
+00:10:19,720 --> 00:10:21,020
+If you ground it, of course.
+
+157
+00:10:21,720 --> 00:10:22,200
+Properly.
+
+158
+00:10:22,980 --> 00:10:27,340
+And the fan, the heatsink, everything's grounded, done properly.
+
+159
+00:10:28,120 --> 00:10:29,340
+That's why it all works.
+
+160
+00:10:29,960 --> 00:10:35,920
+But when it comes to the slapped-together messes I see on many people's setups, it's just a nightmare.
+
+161
+00:10:36,960 --> 00:10:42,300
+And then after that you trash Ruslan, saying he gave some wrong, unclear schematic or something.
+
+162
+00:10:43,300 --> 00:10:44,700
+Or you don't understand.
+
+163
+00:10:45,840 --> 00:10:49,240
+Actually, there are absolutely functional schematics on the internet.
+
+164
+00:10:49,800 --> 00:10:50,260
+There are lots of them.
+
+165
+00:10:50,920 --> 00:10:53,840
+They reveal the whole essence of understanding.
+
+166
+00:10:54,440 --> 00:10:57,160
+The only thing is people don't understand how and what.
+
+167
+00:10:58,060 --> 00:11:01,280
+But once again I'll say, in the coil there's current.
+
+168
+00:11:02,640 --> 00:11:04,280
+Movement of current happens.
+
+169
+00:11:05,200 --> 00:11:07,880
+More precisely, current creates a magnetic field.
+
+170
+00:11:08,560 --> 00:11:10,220
+The magnetic field creates current.
+
+171
+00:11:11,300 --> 00:11:15,820
+I mean if there's a strong magnetic field, it naturally produces a movement of current.
+
+172
+00:11:16,640 --> 00:11:22,680
+The magnetic field, when a pulse hits the medium, more precisely, right next to the magnetic field.
+
+173
+00:11:23,180 --> 00:11:25,220
+Well, the magnetic field in the coil.
+
+174
+00:11:25,220 --> 00:11:27,240
+And what are we doing?
+
+175
+00:11:28,160 --> 00:11:30,940
+We strike, by the way, those bulbs you saw.
+
+176
+00:11:33,060 --> 00:11:34,580
+Here's the coil, for example.
+
+177
+00:11:35,420 --> 00:11:35,960
+Here it is.
+
+178
+00:11:36,960 --> 00:11:37,840
+What's happening here?
+
+179
+00:11:38,760 --> 00:11:40,600
+A magnetic field is happening here.
+
+180
+00:11:41,440 --> 00:11:43,060
+Specifically, in this inductor.
+
+181
+00:11:43,680 --> 00:11:44,340
+What are we doing?
+
+182
+00:11:44,840 --> 00:11:46,640
+We strike here, in this spot.
+
+183
+00:11:48,720 --> 00:11:52,440
+This way we deform the magnetic field, which starts to oscillate.
+
+184
+00:11:53,340 --> 00:12:02,340
+If we just kill it in a sinusoid, so to speak, we look at the oscilloscope, it shifts at 90 degrees, and well, nothing really happens.
+
+185
+00:12:04,000 --> 00:12:07,460
+We need this magnetic field to oscillate back and forth.
+
+186
+00:12:08,600 --> 00:12:16,280
+For it to oscillate, we have to correctly bring the coil into its own resonance, where this magnetic field is precisely formed.
+
+187
+00:12:16,860 --> 00:12:18,620
+But many people don't understand.
+
+188
+00:12:19,080 --> 00:12:21,200
+They hang a bunch of capacitors and so on.
+
+189
+00:12:22,820 --> 00:12:25,820
+They've already bought, ordered a bunch of these caps somewhere.
+
+190
+00:12:27,120 --> 00:12:29,460
+There's a whole pile of MKP types here too.
+
+191
+00:12:30,700 --> 00:12:34,320
+And they use them without knowing what such a capacitor is for in my setup.
+
+192
+00:12:35,300 --> 00:12:37,040
+Well, this is total nonsense.
+
+193
+00:12:37,980 --> 00:12:42,400
+You have to understand the essence of the process, what's happening, why and how.
+
+194
+00:12:42,920 --> 00:12:50,600
+And this schematic really lays all the cards on the table, well, for fans, and the ones who actually understand all this, so to speak.
+
+195
+00:12:50,600 --> 00:12:56,760
+But alas, the ones who've actually built these schematics, you can count them on your fingers, unfortunately.
+
+196
+00:12:58,340 --> 00:13:05,700
+And yeah, everyone curses, shouts, like angry pirate writes there, like, oh, more showing off and all that.
+
+197
+00:13:06,320 --> 00:13:07,900
+But I'm tired of spoon-feeding it.
+
+198
+00:13:09,100 --> 00:13:11,900
+Do you think I'm not spending money, time and effort on this?
+
+199
+00:13:12,640 --> 00:13:14,840
+I work the same as everyone else.
+
+200
+00:13:14,840 --> 00:13:17,560
+I work, and I sit at night.
+
+201
+00:13:18,040 --> 00:13:20,060
+Look, the time is half past two.
+
+202
+00:13:20,560 --> 00:13:22,240
+Yeah, the night's outside the window.
+
+203
+00:13:23,160 --> 00:13:24,900
+I'm working, I'm sitting working.
+
+204
+00:13:26,600 --> 00:13:27,640
+Let's work together.
+
+205
+00:13:28,440 --> 00:13:29,260
+You work too.
+
+206
+00:13:30,900 --> 00:13:32,640
+Well, something like that, yeah?
+
+207
+00:13:36,040 --> 00:13:41,020
+You just have to understand that all these things, decoupling capacitors, all that.
+
+208
+00:13:41,740 --> 00:13:49,820
+I bought a whole pack to put right here, to decouple, so on the chips, between each other, there isn't this junk you just... saw.
+
+209
+00:13:50,800 --> 00:13:52,500
+It interferes with operation.
+
+210
+00:13:53,240 --> 00:14:00,160
+And all these parasites will pop out even more if you turn on a Tesla nearby, or, I don't know, a nanosecond generator.
+
+211
+00:14:01,000 --> 00:14:01,800
+What'll happen then?
+
+212
+00:14:02,960 --> 00:14:05,920
+This all has to be sealed, decoupled, fixed.
+
+213
+00:14:06,580 --> 00:14:08,900
+By the way, here's the nanosecond generator.
+
+214
+00:14:08,900 --> 00:14:11,180
+I showed how this whole system works.
+
+215
+00:14:12,540 --> 00:14:14,400
+Look, everything's nicely soldered.
+
+216
+00:14:15,240 --> 00:14:17,700
+I mean, all the parts, bypass capacitors.
+
+217
+00:14:18,800 --> 00:14:20,140
+What else do we have here?
+
+218
+00:14:21,080 --> 00:14:25,460
+A choke, then the power terminal, the input terminal, the output terminal.
+
+219
+00:14:26,400 --> 00:14:27,540
+Here it's all beautiful.
+
+220
+00:14:28,400 --> 00:14:31,480
+I mean, it's even nice to look at, you don't want to take it apart.
+
+221
+00:14:32,520 --> 00:14:35,140
+Here's another one I haven't finished soldering yet.
+
+222
+00:14:36,260 --> 00:14:41,600
+But still, notice, plus, minus, how they're laid out, where they enter.
+
+223
+00:14:42,240 --> 00:14:46,060
+In the middle of the system, so you can start powering the chips from a single point.
+
+224
+00:14:47,860 --> 00:14:53,620
+Correctly distributed and positioned chips let us, so to speak, make a normal device that's normal.
+
+225
+00:14:54,440 --> 00:14:55,560
+So that everything works.
+
+226
+00:14:56,880 --> 00:14:58,520
+Many people don't understand.
+
+227
+00:14:59,020 --> 00:15:02,860
+Probably in childhood, they didn't solder power amps, didn't drive speakers.
+
+228
+00:15:03,520 --> 00:15:13,000
+But if you did drive them, even the same UN, 7 or UN, 4 chip, if you don't put decoupling caps on its pins and so on, it starts oscillating.
+
+229
+00:15:14,120 --> 00:15:16,060
+And we don't get anything good out of it.
+
+230
+00:15:16,420 --> 00:15:20,300
+Only overheating of the chip itself, the die failing, and so on.
+
+231
+00:15:22,980 --> 00:15:25,160
+Just to explain what this video is about.
+
+232
+00:15:25,840 --> 00:15:29,320
+Many gnash their teeth, shout that you're explaining it wrong or something.
+
+233
+00:15:30,580 --> 00:15:31,780
+But you're just not working.
+
+234
+00:15:33,000 --> 00:15:33,680
+That's it.
+
+235
+00:15:34,580 --> 00:15:35,900
+It's all about the work.
+
+236
+00:15:37,520 --> 00:15:39,700
+Many count turns on coils, all that.
+
+237
+00:15:40,600 --> 00:15:43,380
+I'll tell you honestly, you don't need to count any turns.
+
+238
+00:15:44,360 --> 00:15:51,720
+When you understand what process is happening in this node together with the generator node, you'll immediately see where the solution is.
+
+239
+00:15:52,240 --> 00:15:54,620
+And that solution is right here in this schematic.
+
+240
+00:15:55,280 --> 00:15:58,440
+It's circulating all over the internet, full program.
+
+241
+00:15:59,460 --> 00:16:01,720
+And then you'll build this generator node problem.
+
+242
+00:16:01,720 --> 00:16:06,440
+Of course, the power of this whole setup is very limited.
+
+243
+00:16:07,960 --> 00:16:11,340
+And the process here is, of course, also limited.
+
+244
+00:16:12,300 --> 00:16:15,060
+But it does hint at the essence of high-power setups.
+
+245
+00:16:17,360 --> 00:16:19,500
+I'll reveal that little secret to you.
+
+246
+00:16:20,420 --> 00:16:27,980
+Now, all the rest, if you want to build something to make a 30-40 watt bulb glow, or bigger, maybe 100-200 watts.
+
+247
+00:16:27,980 --> 00:16:32,000
+Well, basically this thing will help you a lot to figure things out.
+
+248
+00:16:34,380 --> 00:16:42,180
+Naturally, using a Belkin generator as the driving generator, that is, as the nanopulse generator in this system, is nonsense.
+
+249
+00:16:43,440 --> 00:16:45,940
+Cable, by the way, you can use any kind.
+
+250
+00:16:46,620 --> 00:16:48,040
+You just have to know how to match it.
+
+251
+00:16:48,800 --> 00:16:50,060
+And that's also done easily.
+
+252
+00:16:51,660 --> 00:16:52,820
+As for the diodes.
+
+253
+00:16:53,640 --> 00:16:54,180
+Yeah, diodes.
+
+254
+00:16:54,680 --> 00:16:56,960
+The only thing, diodes here are good.
+
+255
+00:16:57,980 --> 00:17:00,820
+These KD-203A sit very well.
+
+256
+00:17:01,320 --> 00:17:03,720
+They hold that avalanche breakdown really well.
+
+257
+00:17:04,760 --> 00:17:07,100
+Well, what else would I like to add to all this?
+
+258
+00:17:07,700 --> 00:17:08,480
+Well, the ring.
+
+259
+00:17:08,960 --> 00:17:10,160
+You'll have to play with the ring.
+
+260
+00:17:11,420 --> 00:17:17,020
+And it's preferable to take a smaller ring, because with the back EMF here it's precisely what makes this pulse.
+
+261
+00:17:18,060 --> 00:17:21,900
+Oh and, by the way, in the schematic it's drawn as 1 nanosecond.
+
+262
+00:17:22,520 --> 00:17:24,040
+Well, that's 500 megahertz.
+
+263
+00:17:24,520 --> 00:17:25,640
+Guys, what do you want about it?
+
+264
+00:17:26,040 --> 00:17:26,840
+Or how much is it?
+
+265
+00:17:27,980 --> 00:17:28,460
+It's impossible.
+
+266
+00:17:29,400 --> 00:17:33,060
+I mean, 1 nanosecond, naturally, it can't be that here.
+
+267
+00:17:34,120 --> 00:17:34,800
+Microsecond, yeah.
+
+268
+00:17:35,540 --> 00:17:37,720
+But nanosecond, I don't really believe it.
+
+269
+00:17:38,620 --> 00:17:39,480
+And 1 kilovolt.
+
+270
+00:17:40,100 --> 00:17:41,340
+You don't need 1 kilovolt.
+
+271
+00:17:41,860 --> 00:17:44,040
+Even a little less than 1 kV is enough.
+
+272
+00:17:44,740 --> 00:17:48,040
+The main thing is the cable being wound on the inductor correctly.
+
+273
+00:17:49,720 --> 00:17:55,040
+So, as for 1 nanosecond, I'll say it again, all this is tuned together with the system.
+
+274
+00:17:55,040 --> 00:18:00,680
+I mean, if it's 1 microsecond here, then here it's somewhere around 4, or however many times.
+
+275
+00:18:01,260 --> 00:18:01,900
+40 times.
+
+276
+00:18:02,880 --> 00:18:04,800
+Well, you have to look at the proportions.
+
+277
+00:18:05,580 --> 00:18:08,300
+I mean, it's somewhere between 4 and 40 times roughly.
+
+278
+00:18:13,570 --> 00:18:15,530
+Well, basically that's about it.
+
+279
+00:18:16,530 --> 00:18:19,530
+If you start using your head, everything will be fine.
+
+280
+00:18:20,350 --> 00:18:24,610
+This is basically, Edward Daly told how he did it, how he powered it.
+
+281
+00:18:26,950 --> 00:18:28,670
+What he was doing with this generator.
+
+282
+00:18:29,150 --> 00:18:35,070
+It's the simplest TL, a regular generator, that is, a converter that pumps up the coil for us.
+
+283
+00:18:36,370 --> 00:18:39,470
+We have to know how much voltage we need to feed from here to here.
+
+284
+00:18:40,950 --> 00:18:42,410
+That's what you need to figure out.
+
+285
+00:18:42,990 --> 00:18:45,010
+I mean, this voltage here is very important.
+
+286
+00:18:46,050 --> 00:18:48,990
+I mean, this generator delivers it here into this coil.
+
+287
+00:18:48,990 --> 00:18:54,830
+How much you have to give this coil, so it produces a rotation of these particles around their axis.
+
+288
+00:18:56,010 --> 00:18:58,310
+And, of course, this transformer.
+
+289
+00:19:00,970 --> 00:19:02,610
+It splits into two parts.
+
+290
+00:19:03,390 --> 00:19:06,290
+The second part feeds this nanosecond generator itself.
+
+291
+00:19:07,250 --> 00:19:11,490
+The nanosecond generator naturally needs high voltage, otherwise it won't work.
+
+292
+00:19:12,570 --> 00:19:13,630
+Well, that's all for now.
+
+293
+00:19:14,050 --> 00:19:14,850
+Go for it.
+
+294
+00:19:14,850 --> 00:19:16,310
+What can I say?
+
+295
+00:19:16,730 --> 00:19:19,750
+First of all, let's please assemble everything carefully.
+
+296
+00:19:20,370 --> 00:19:26,130
+But don't rush, and don't make these things on breadboards, and don't send me any more videos or pictures like that.
+
+297
+00:19:26,710 --> 00:19:27,910
+It's complete nonsense.
+
+298
+00:19:28,530 --> 00:19:30,290
+That is, it's never going to work.
+
+299
+00:19:31,130 --> 00:19:34,110
+I'll guarantee you straight up that such things will never work.
+
+300
+00:19:35,230 --> 00:19:36,470
+It's just brutal, guys.
+
+301
+00:19:39,310 --> 00:19:40,830
+That's not how things get done.
+
+302
+00:19:41,750 --> 00:19:45,510
+Everything should be done carefully, like on my table, as you see.
+
+303
+00:19:46,130 --> 00:19:50,910
+This is a more or less normal board that will work without any problems or interference.
+
+304
+00:19:52,350 --> 00:19:57,210
+Look, I deliberately showed you that I forgot to slap on a capacitor, and already there's a problem.
+
+305
+00:19:58,350 --> 00:20:01,730
+Already, and imagine, lots of people don't have these at all.
+
+306
+00:20:02,250 --> 00:20:05,410
+They just hook power to the chip and think it's all very simple.
+
+307
+00:20:06,590 --> 00:20:07,170
+You can't do that.
+
+308
+00:20:08,470 --> 00:20:09,870
+Well, that's about it for now.
+
+309
+00:20:10,830 --> 00:20:14,490
+I explained as best I could, like it or not, but it's a fact.
+
+310
+00:20:15,210 --> 00:20:15,650
+Bye.
+
