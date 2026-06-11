@@ -101,17 +101,26 @@ def syl_en(t):
 
 # ---------------- cliente API local ----------------
 class LocalLLM:
+    """Si el modelo devuelve contenido vacio (tipico con arquitecturas nuevas en
+    Ollama: template que no banca el rol system, o modelos que gastan el budget
+    'pensando'), reintenta en modos degradados y recuerda el primero que funciona:
+      modo 0: system + user (normal)
+      modo 1: todo fusionado en un solo mensaje user
+      modo 2: fusionado + 'no pienses, responde ya' + max_tokens 512
+    El detalle del fallo queda en self.last_diag para el .flags.txt."""
+
     def __init__(self, base_url, model, timeout):
         self.url = base_url.rstrip('/') + '/chat/completions'
         self.model = model
         self.timeout = timeout
+        self.mode = 0
+        self.last_diag = ''
 
-    def chat(self, system, user, max_tokens=220):
+    def _post(self, messages, max_tokens):
         body = json.dumps({
             "model": self.model, "stream": False,
             "temperature": 0.2, "max_tokens": max_tokens,
-            "messages": [{"role": "system", "content": system},
-                         {"role": "user", "content": user}],
+            "messages": messages,
         }).encode('utf-8')
         delays = [0, 10, 30, 60, 120]
         for i, d in enumerate(delays):
@@ -121,11 +130,37 @@ class LocalLLM:
                                              headers={'Content-Type': 'application/json'})
                 with urllib.request.urlopen(req, timeout=self.timeout) as r:
                     out = json.loads(r.read().decode('utf-8'))
-                return out['choices'][0]['message']['content']
+                ch = out['choices'][0]
+                return ch.get('message', {}), ch.get('finish_reason', '?')
             except Exception as e:
                 if i == len(delays) - 1:
                     raise SystemExit(f"ERROR: la API local no responde tras {len(delays)} intentos: {e}")
                 print(f"  (API fallo: {e} — reintento en {delays[i+1]}s)", flush=True)
+
+    def chat(self, system, user, max_tokens=220):
+        modes = [
+            lambda: ([{"role": "system", "content": system},
+                      {"role": "user", "content": user}], max_tokens),
+            lambda: ([{"role": "user", "content": system + "\n\n" + user}], max_tokens),
+            lambda: ([{"role": "user", "content": system + "\n\n" + user +
+                       "\nAnswer immediately with the translation only — do not think step by step."}],
+                     max(512, max_tokens)),
+        ]
+        diags = []
+        for m in range(self.mode, len(modes)):
+            messages, mt = modes[m]()
+            msg, fin = self._post(messages, mt)
+            content = (msg.get('content') or '').strip()
+            if content:
+                if m != self.mode:
+                    print(f"  (endpoint OK en modo {m}; lo uso de ahora en mas)", flush=True)
+                    self.mode = m
+                self.last_diag = ''
+                return content
+            extra = [k for k, v in msg.items() if k not in ('role', 'content') and v]
+            diags.append(f"modo{m}: finish={fin} campos_extra={extra or 'no'}")
+        self.last_diag = '; '.join(diags)
+        return ''
 
 # ---------------- traduccion de un cue ----------------
 CYR = re.compile(r'[а-яА-ЯёЁ]')
@@ -197,7 +232,8 @@ def translate_cue(llm, cfg, cue, context):
         out = P_RE.sub(' ', out)
         out = re.sub(r'\s+', ' ', out).strip()
     if not out:
-        return '…', flags + ['SIN TRADUCCION — revisar']
+        diag = f' ({llm.last_diag})' if llm.last_diag else ''
+        return '…', flags + [f'SIN TRADUCCION{diag} — revisar']
     if CYR.search(out):
         flags.append('CIRILICO en salida — revisar')
 
@@ -233,7 +269,7 @@ def out_name(stem, lang):
     base = re.sub(r'-RU$', '', stem)
     return f"{base}-{lang.upper()}.srt"
 
-def process_video(llm, cfg, lang, srt_path, json_path, out_dir, limit):
+def process_video(llm, cfg, lang, srt_path, json_path, out_dir, limit, redo_empty=False):
     stem = os.path.splitext(os.path.basename(srt_path))[0]
     dst = os.path.join(out_dir, out_name(stem, lang))
     parts_path = os.path.join(out_dir, stem + '.parts.txt')
@@ -250,6 +286,12 @@ def process_video(llm, cfg, lang, srt_path, json_path, out_dir, limit):
             if '|' in line:
                 n, t = line.split('|', 1)
                 done[int(n)] = t
+    if redo_empty:
+        vacios = [n for n, t in done.items() if t.strip() in ('', '…', '...')]
+        for n in vacios:
+            del done[n]
+        if vacios:
+            print(f"  --redo-empty: {len(vacios)} cues vacios se rehacen", flush=True)
     print(f"\n=== {stem}: {total} cues, {len(done)} ya hechos ===", flush=True)
 
     todo = [i for i in range(total) if (i + 1) not in done]
@@ -297,6 +339,8 @@ def main():
     ap.add_argument('--limit', type=int, default=0, help='traducir solo N cues por video (prueba)')
     ap.add_argument('--timeout', type=int, default=300)
     ap.add_argument('--force', action='store_true', help='rehacer videos ya completados')
+    ap.add_argument('--redo-empty', action='store_true',
+                    help='re-traducir cues que quedaron vacios ("…") en el parts.txt')
     a = ap.parse_args()
 
     cfg = LANGS[a.lang]
@@ -317,10 +361,10 @@ def main():
     for srt_path, json_path in pairs:
         stem = os.path.splitext(os.path.basename(srt_path))[0]
         dst = os.path.join(a.outdir, out_name(stem, a.lang))
-        if os.path.exists(dst) and not a.force:
+        if os.path.exists(dst) and not a.force and not a.redo_empty:
             print(f"\n=== {stem}: ya completado ({dst}) — salteo ===")
             continue
-        process_video(llm, cfg, a.lang, srt_path, json_path, a.outdir, a.limit)
+        process_video(llm, cfg, a.lang, srt_path, json_path, a.outdir, a.limit, a.redo_empty)
 
 if __name__ == '__main__':
     main()
