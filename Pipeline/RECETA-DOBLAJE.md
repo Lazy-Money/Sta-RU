@@ -78,6 +78,22 @@ Do not read any other files. Reply "done" plus the line count.
 Para un video de ~550 cues: 6–10 subagentes en paralelo, ~55–90 cues cada uno, luego
 `assemble_qa.py` junta todo y el QA dice si algún bloque necesita retoque.
 
+## Variante local (modelo chico, ej. Gemma 3n E4B)
+
+`traducir_local.py` ejecuta los pasos 2–4 contra un modelo local via API OpenAI-compatible
+(Ollama, LM Studio, llama.cpp). Un cue por vez, reanudable (progreso en `.parts.txt`),
+con garantias mecanicas para compensar al modelo chico (pausas por construccion, presupuesto
+con reintentos, sanitizado, deteccion de cirilico) y `.flags.txt` con los cues a revisar.
+
+```
+python3 Pipeline/traducir_local.py --in CARPETA_SRT_JSON --out CARPETA_SALIDA \
+    --model gemma3n:e4b --base-url http://localhost:11434/v1 --lang en
+```
+
+Validar la calidad del modelo local ANTES de producir en masa: correrlo sobre un video que ya
+tenga traduccion de referencia hecha por Claude y comparar con `compare_dub.py` (fidelidad
+semantica no aplica ahi, pero sirve `--limit 30` + revision manual de esos 30 contra el gold).
+
 ## Estado conocido / pendientes
 
 - **Cobertura y fidelidad: resueltas** con esta receta + skip-silent OFF.
