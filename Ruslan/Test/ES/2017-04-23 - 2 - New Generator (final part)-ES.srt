@@ -1,0 +1,560 @@
+1
+00:00:00,700 --> 00:00:01,960
+Bueno, chicos, hola.
+
+2
+00:00:03,340 --> 00:00:04,540
+Acá está la instalación.
+
+3
+00:00:05,000 --> 00:00:10,420
+La puse en orden para que vean que aquí no hay ninguna conexión rara.
+
+4
+00:00:11,380 --> 00:00:15,060
+No hay nada, todo como siempre, en fin.
+
+5
+00:00:17,340 --> 00:00:19,620
+La de él está montada sobre vidrio.
+
+6
+00:00:20,240 --> 00:00:24,540
+Yo no voy a usar vidrio, ya metí todo el equipo en una caja industrial.
+
+7
+00:00:26,760 --> 00:00:28,640
+Este es un generador débil.
+
+8
+00:00:28,640 --> 00:00:34,880
+Se podría sacar hasta un kilovatio, pero les voy a explicar por qué no lo estoy logrando.
+
+9
+00:00:35,120 --> 00:00:36,360
+Por una sola razón, sencilla.
+
+10
+00:00:36,560 --> 00:00:38,120
+El nanosegundero trabaja muy flojo.
+
+11
+00:00:38,780 --> 00:00:40,200
+Se podría bombear con más fuerza.
+
+12
+00:00:40,300 --> 00:00:48,560
+Ahí me salía algo, pero la potencia total ahora es de unos 550 a 600 W, no consigo más.
+
+13
+00:00:48,760 --> 00:00:51,500
+Además, … si toman en cuenta que tengo un puente de diodos.
+
+14
+00:00:52,500 --> 00:00:53,580
+Bueno, en fin.
+
+15
+00:00:54,060 --> 00:01:01,560
+No puse ningún borne a propósito, para que no me digan que hay algo conectado aquí.
+
+16
+00:01:01,980 --> 00:01:03,500
+Acá hay una unión simple.
+
+17
+00:01:04,380 --> 00:01:06,580
+No había otro cable, usé este.
+
+18
+00:01:07,600 --> 00:01:08,820
+Ahora les muestro lo que hay adentro.
+
+19
+00:01:12,300 --> 00:01:16,040
+Acá el borne, acá el cable normal atornillado.
+
+20
+00:01:16,400 --> 00:01:17,460
+Nada especial.
+
+21
+00:01:19,380 --> 00:01:19,920
+La bobina.
+
+22
+00:01:20,880 --> 00:01:23,280
+Que todos conocen de sobra.
+
+23
+00:01:25,260 --> 00:01:27,320
+Roma, decías que aquí no hay inductor.
+
+24
+00:01:27,500 --> 00:01:28,780
+Sí, te digo de una, sí hay.
+
+25
+00:01:28,980 --> 00:01:30,920
+Abajo está enrollado a lo largo de todo.
+
+26
+00:01:32,040 --> 00:01:33,200
+Bueno, ¿qué más?
+
+27
+00:01:34,360 --> 00:01:35,760
+Cable coaxial normal.
+
+28
+00:01:36,860 --> 00:01:39,140
+De 50… 75 ohmios, más exactamente.
+
+29
+00:01:39,680 --> 00:01:41,140
+O sea, se puede ajustar con cualquiera.
+
+30
+00:01:41,820 --> 00:01:45,180
+Depende de qué condensador vayan a poner aquí.
+
+31
+00:01:45,300 --> 00:01:47,160
+Bueno, abajo hay un par más enrollados.
+
+32
+00:01:47,160 --> 00:01:50,820
+Oleg, escucha, ese núcleo es una porquería.
+
+33
+00:01:51,340 --> 00:01:52,400
+Sí, o sea, esta ferrita.
+
+34
+00:01:52,560 --> 00:01:54,720
+Hay que volver a poner la blanca.
+
+35
+00:01:54,820 --> 00:01:56,040
+Con esa todo era más potente.
+
+36
+00:01:57,440 --> 00:01:58,220
+Bueno, ¿y qué?
+
+37
+00:01:58,320 --> 00:02:01,580
+Aquí hay como que un bifilar normal.
+
+38
+00:02:01,880 --> 00:02:02,960
+Nada especial.
+
+39
+00:02:03,400 --> 00:02:05,340
+Nada especial, lo repito.
+
+40
+00:02:06,300 --> 00:02:07,620
+Generador de dos ramas.
+
+41
+00:02:08,440 --> 00:02:14,760
+El transformador de bombeo, … que da la frecuencia de trabajo a este convertidor, que es donde ocurre todo.
+
+42
+00:02:15,720 --> 00:02:21,800
+Roma, para que entiendas, sé muy bien lo que está pasando aquí y por qué funciona todo esto.
+
+43
+00:02:22,020 --> 00:02:32,440
+Qué se acciona con qué, … y por qué, … digamos, … no están esos condensadores de resonancia que en su momento yo andaba probando.
+
+44
+00:02:33,320 --> 00:02:35,020
+Bueno, ¿qué más hay?
+
+45
+00:02:35,380 --> 00:02:42,820
+Son como que 29 vueltas de cable, y encima van 12 vueltas por cada rama.
+
+46
+00:02:42,820 --> 00:02:49,040
+La sincronización está junta con el TL, o sea, dos circuitos integrados: driver, TL, driver.
+
+47
+00:02:49,760 --> 00:02:51,760
+Todo este conjunto funciona así.
+
+48
+00:02:52,480 --> 00:02:54,640
+Bueno, esto es el convertidor, el bloque de relés.
+
+49
+00:02:55,320 --> 00:03:01,560
+Un relé corta la salida para no arrancar cuando todavía no está lista.
+
+50
+00:03:02,640 --> 00:03:03,960
+Cuando la alta no funciona.
+
+51
+00:03:04,480 --> 00:03:06,320
+El segundo relé simplemente activa los botones.
+
+52
+00:03:06,340 --> 00:03:06,480
+Listo.
+
+53
+00:03:07,300 --> 00:03:08,800
+O sea, aquí no pasa nada.
+
+54
+00:03:09,560 --> 00:03:13,120
+Ahora mismo no hay ninguna alimentación aquí.
+
+55
+00:03:13,260 --> 00:03:17,180
+Absolutamente ninguna, se puede medir, … si quieren.
+
+56
+00:03:17,880 --> 00:03:25,720
+Pero tengo mucho sueño porque son las 5 de la mañana, … y estuve trabajando hasta ahorita.
+
+57
+00:03:26,020 --> 00:03:30,340
+Todavía me toca levantarme a las 6, así que mejor ni me acuesto ya.
+
+58
+00:03:31,200 --> 00:03:31,360
+Bueno.
+
+59
+00:03:32,260 --> 00:03:35,280
+En fin, … acá está funcionando.
+
+60
+00:03:36,760 --> 00:03:38,360
+El arranque ya empezó.
+
+61
+00:03:39,020 --> 00:03:40,940
+Ahora el generador está funcionando.
+
+62
+00:03:41,680 --> 00:03:43,680
+El LED encandila horrible.
+
+63
+00:03:43,820 --> 00:03:46,000
+Y las ramas están funcionando.
+
+64
+00:03:46,280 --> 00:03:48,700
+Muestra que las ramas están recibiendo alimentación.
+
+65
+00:03:48,900 --> 00:03:49,700
+Son simples LEDs.
+
+66
+00:03:50,580 --> 00:03:52,640
+O sea, este sistema ahorita no funciona.
+
+67
+00:03:52,860 --> 00:03:56,140
+Cuando presione el botón, … claro, todo se va a encender.
+
+68
+00:03:56,720 --> 00:03:57,560
+Sí, la fuente de alimentación.
+
+69
+00:03:57,940 --> 00:04:00,120
+O sea, claro, … el LED está encendido.
+
+70
+00:04:00,260 --> 00:04:02,520
+Ahora todos van a preguntar por qué está encendido ahí.
+
+71
+00:04:02,740 --> 00:04:03,200
+Miren.
+
+72
+00:04:03,320 --> 00:04:04,300
+Desconecto la batería.
+
+73
+00:04:04,300 --> 00:04:06,600
+Para los que no entendieron.
+
+74
+00:04:06,720 --> 00:04:07,580
+Ahí, se apagó.
+
+75
+00:04:07,720 --> 00:04:13,500
+Porque la fuente de alimentación recibe corriente de la batería a través de un diodo.
+
+76
+00:04:15,120 --> 00:04:16,320
+Bueno, ¿qué más?
+
+77
+00:04:16,520 --> 00:04:17,460
+Listo, encendemos.
+
+78
+00:04:18,080 --> 00:04:21,460
+Como les dije, ahora arranca el generador de pulsos nanosegundos.
+
+79
+00:04:22,560 --> 00:04:23,140
+Acá, listo.
+
+80
+00:04:23,320 --> 00:04:29,560
+Y de una arranca lo de alta frecuencia y el sistema sube a plena potencia.
+
+81
+00:04:29,560 --> 00:04:34,160
+O sea, la fuente empieza a trabajar dando tranquilamente 23,5 voltios.
+
+82
+00:04:34,240 --> 00:04:35,740
+Casi 24.
+
+83
+00:04:36,320 --> 00:04:38,120
+El sistema es de 24 voltios.
+
+84
+00:04:38,360 --> 00:04:39,760
+Bueno, la batería la desconectamos.
+
+85
+00:04:41,620 --> 00:04:43,100
+¿Qué tenemos?
+
+86
+00:04:43,260 --> 00:04:46,100
+Esto es la tierra.
+
+87
+00:04:47,680 --> 00:04:51,700
+Y este es el cable del foco.
+
+88
+00:04:52,580 --> 00:04:53,700
+Los focos ya los vieron.
+
+89
+00:04:56,500 --> 00:04:58,220
+Bueno, en principio no importa.
+
+90
+00:04:58,880 --> 00:05:00,940
+Acá, los grandes no los puedo conectar.
+
+91
+00:05:01,500 --> 00:05:06,680
+Porque… por desgracia… este equipo simplemente no los aguanta.
+
+92
+00:05:07,000 --> 00:05:10,020
+Ese que vieron en el campo aquella vez.
+
+93
+00:05:11,200 --> 00:05:12,940
+Ese equipo era el que funcionaba justamente.
+
+94
+00:05:13,460 --> 00:05:15,020
+Por ahora está desarmado.
+
+95
+00:05:15,820 --> 00:05:17,180
+En estado desarmado.
+
+96
+00:05:17,440 --> 00:05:19,460
+O sea, después lo voy a armar de nuevo.
+
+97
+00:05:19,540 --> 00:05:24,980
+Por cierto… la tapa de vidrio, fíjense, acá va a ir una tapa de vidrio.
+
+98
+00:05:25,100 --> 00:05:26,760
+Ahora no quiero voltearlo, se van a escapar los tornillos.
+
+99
+00:05:27,680 --> 00:05:35,320
+Acá, esto es para los… que no creen que acá puede funcionar algo.
+
+100
+00:05:36,500 --> 00:05:38,840
+Bueno, acá… así quedó la cosa.
+
+101
+00:05:41,270 --> 00:05:43,210
+Listo, en fin, acá está funcionando.
+
+102
+00:05:44,010 --> 00:05:45,530
+Todo este asunto.
+
+103
+00:05:47,570 --> 00:05:52,550
+Miren de nuevo si quieren contar las vueltas de las bobinas.
+
+104
+00:05:53,670 --> 00:05:54,690
+Pueden contarlas.
+
+105
+00:05:55,690 --> 00:05:56,710
+No hay nada ahí.
+
+106
+00:05:57,650 --> 00:06:01,490
+No voy a acercarme mucho, la cámara se vuelve loca con este nanosegundero.
+
+107
+00:06:01,630 --> 00:06:02,890
+A veces simplemente se cierra.
+
+108
+00:06:03,050 --> 00:06:04,930
+Me harté de grabar el video.
+
+109
+00:06:05,030 --> 00:06:06,070
+Ya lo intenté dos veces.
+
+110
+00:06:06,890 --> 00:06:08,610
+Lo acercás y listo, adiós.
+
+111
+00:06:08,750 --> 00:06:11,530
+La cámara se cierra, se apaga y dice que la batería está muerta.
+
+112
+00:06:11,750 --> 00:06:14,950
+Aunque en principio las baterías… los acumuladores están cargados.
+
+113
+00:06:16,330 --> 00:06:20,170
+Acá, o sea… listo… por favor… todo funciona.
+
+114
+00:06:21,170 --> 00:06:22,050
+Todo perfecto.
+
+115
+00:06:23,410 --> 00:06:25,550
+Acá, sin condensadores resonantes.
+
+116
+00:06:25,550 --> 00:06:28,670
+Los condensadores acá se usan para filtrar la alimentación.
+
+117
+00:06:30,130 --> 00:06:36,230
+Como se dice, para absorber el ruido y que no afecte al resto, funciona.
+
+118
+00:06:37,230 --> 00:06:39,850
+En fin, este sistema se parece mucho al de Kapanadze.
+
+119
+00:06:40,030 --> 00:06:46,290
+O sea, como ya mencioné, lo que dio Kapanadze es prácticamente lo mismo.
+
+120
+00:06:46,910 --> 00:06:47,930
+Miren, los focos están encendidos.
+
+121
+00:06:48,830 --> 00:06:52,090
+No están al máximo, pero bien.
+
+122
+00:06:53,170 --> 00:06:53,990
+Bueno, ¿cómo al máximo?
+
+123
+00:06:53,990 --> 00:06:57,430
+Bueno… casi al máximo, se puede decir así.
+
+124
+00:06:58,310 --> 00:07:00,310
+No sé, se podría medir la alimentación, claro.
+
+125
+00:07:01,610 --> 00:07:03,690
+En principio eso se podría medir.
+
+126
+00:07:06,010 --> 00:07:07,730
+Bueno, hoy ya no lo hacemos.
+
+127
+00:07:09,350 --> 00:07:10,310
+Así quedó la cosa.
+
+128
+00:07:12,170 --> 00:07:12,930
+Saludos a Oleg.
+
+129
+00:07:13,190 --> 00:07:15,050
+La próxima vez atiende el teléfono cuando llaman.
+
+130
+00:07:16,130 --> 00:07:18,990
+Quería mostrarte… pero…
+
+131
+00:07:19,530 --> 00:07:21,870
+Bueno, me refiero al Oleg que vive en Letonia.
+
+132
+00:07:22,950 --> 00:07:25,170
+Así que así, bueno…
+
+133
+00:07:25,170 --> 00:07:26,050
+Así son las cosas.
+
+134
+00:07:26,150 --> 00:07:27,470
+Voy a hacer otra ahora.
+
+135
+00:07:28,090 --> 00:07:30,270
+Un dispositivo con el que estoy trabajando ahora.
+
+136
+00:07:30,630 --> 00:07:33,630
+Estoy trabajando en su montaje.
+
+137
+00:07:34,390 --> 00:07:37,050
+Lo voy a mostrar después.
+
+138
+00:07:37,950 --> 00:07:40,570
+Listo, buen ánimo a todos.
+
+139
+00:07:41,130 --> 00:07:45,010
+Y lo más importante… éxitos en el trabajo.
+
+140
+00:07:45,550 --> 00:07:46,310
+Chau.
+

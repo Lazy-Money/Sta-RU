@@ -1,0 +1,560 @@
+1
+00:00:00,700 --> 00:00:01,960
+So, Leute, hey.
+
+2
+00:00:03,340 --> 00:00:04,540
+Hier die Anlage.
+
+3
+00:00:05,000 --> 00:00:10,420
+Hab alles offen hingelegt, damit ihr seht, dass hier keine versteckten Anschlüsse sind.
+
+4
+00:00:11,380 --> 00:00:15,060
+Nichts, alles ganz normal, kurz gesagt.
+
+5
+00:00:17,340 --> 00:00:19,620
+Er hat's auf Glas aufgebaut.
+
+6
+00:00:20,240 --> 00:00:24,540
+Ich mach das nicht auf Glas — ich hab alles einfach in eine Industriegehäuse gepackt.
+
+7
+00:00:26,760 --> 00:00:28,640
+Das ist ein schwacher Generator.
+
+8
+00:00:28,640 --> 00:00:34,880
+Man könnte auch ein Kilowatt rausholen, aber ich erklär euch, warum ich das nicht hinbekomme.
+
+9
+00:00:35,120 --> 00:00:36,360
+Aus einem einfachen Grund.
+
+10
+00:00:36,560 --> 00:00:38,120
+Der Nanosekunden-Treiber arbeitet zu schwach.
+
+11
+00:00:38,780 --> 00:00:40,200
+Man könnte ihn stärker antreiben.
+
+12
+00:00:40,300 --> 00:00:48,560
+Irgendwas hatte ich da, aber die Gesamtleistung liegt jetzt irgendwo bei 550 bis 600 Watt — mehr geht nicht.
+
+13
+00:00:48,760 --> 00:00:51,500
+Dazu kommt noch… wenn man bedenkt, dass ich eine Diodenbrücke drin hab.
+
+14
+00:00:52,500 --> 00:00:53,580
+Na gut, kurz gesagt.
+
+15
+00:00:54,060 --> 00:01:01,560
+Ich hab absichtlich keine Klemmen verwendet, damit ihr mir nicht sagt, dass hier irgendwas angeschlossen ist.
+
+16
+00:01:01,980 --> 00:01:03,500
+Hier eine normale Drillverbindung.
+
+17
+00:01:04,380 --> 00:01:06,580
+Anderes Kabel hab ich nicht gehabt, also hab ich das so verdrillt.
+
+18
+00:01:07,600 --> 00:01:08,820
+Ich zeig euch jetzt, was drin ist.
+
+19
+00:01:12,300 --> 00:01:16,040
+Hier die Klemme, hier ist ein normales Kabel angeschraubt.
+
+20
+00:01:16,400 --> 00:01:17,460
+Nichts Besonderes.
+
+21
+00:01:19,380 --> 00:01:19,920
+Spule.
+
+22
+00:01:20,880 --> 00:01:23,280
+Die kennt doch jeder.
+
+23
+00:01:25,260 --> 00:01:27,320
+Roma, du sagtest, hier ist keine Induktivität. Doch.
+
+24
+00:01:27,500 --> 00:01:28,780
+Ich sag dir gleich: doch, ist da.
+
+25
+00:01:28,980 --> 00:01:30,920
+Unten aufgewickelt, über die ganze Länge.
+
+26
+00:01:32,040 --> 00:01:33,200
+So, was noch?
+
+27
+00:01:34,360 --> 00:01:35,760
+Normales Koaxialkabel.
+
+28
+00:01:36,860 --> 00:01:39,140
+50… 75 Ohm, genauer gesagt.
+
+29
+00:01:39,680 --> 00:01:41,140
+Ich mein, man kann jeden einstellen.
+
+30
+00:01:41,820 --> 00:01:45,180
+Das hängt davon ab, welchen Kondensator ihr hier einsetzt.
+
+31
+00:01:45,300 --> 00:01:47,160
+Na, unten sind noch ein paar Windungen drauf.
+
+32
+00:01:47,160 --> 00:01:50,820
+Oleg, hör mal, dieser beschissene Kern.
+
+33
+00:01:51,340 --> 00:01:52,400
+Ja, ich mein, dieses Ferrit.
+
+34
+00:01:52,560 --> 00:01:54,720
+Man müsste den weißen wieder reinsetzen.
+
+35
+00:01:54,820 --> 00:01:56,040
+Damit war alles stärker.
+
+36
+00:01:57,440 --> 00:01:58,220
+So, na und?
+
+37
+00:01:58,320 --> 00:02:01,580
+Hier ist sozusagen eine normale bifiläre Wicklung.
+
+38
+00:02:01,880 --> 00:02:02,960
+Nichts Besonderes.
+
+39
+00:02:03,400 --> 00:02:05,340
+Nichts Besonderes, ich wiederhol's.
+
+40
+00:02:06,300 --> 00:02:07,620
+Zweiseitiger Generator.
+
+41
+00:02:08,440 --> 00:02:14,760
+Der schwingende Transformator… gibt die Frequenz für diesen Wandler vor, in dem das alles passiert.
+
+42
+00:02:15,720 --> 00:02:21,800
+Roma, damit du's weißt — ich versteh sehr gut, was hier passiert und warum das alles funktioniert.
+
+43
+00:02:22,020 --> 00:02:32,440
+Was wodurch angetrieben wird… und warum… hier, wie gesagt… die Resonanz-Kondensatoren nicht verbaut sind, die ich früher ausprobiert hab.
+
+44
+00:02:33,320 --> 00:02:35,020
+So, also, was noch?
+
+45
+00:02:35,380 --> 00:02:42,820
+Na, sozusagen 29 Windungen Draht, und obendrauf kommen jeweils 12 Windungen für die Seiten.
+
+46
+00:02:42,820 --> 00:02:49,040
+Also, die Synchronisation läuft hier zusammen mit dem TL-Chip — zwei ICs, Treiber, TL-Chip, Treiber.
+
+47
+00:02:49,760 --> 00:02:51,760
+Das ganze Zeug hier arbeitet zusammen.
+
+48
+00:02:52,480 --> 00:02:54,640
+Na, das ist der Wandler, der Relaisblock.
+
+49
+00:02:55,320 --> 00:03:01,560
+Ein Relais schaltet den Ausgang ab, damit nichts startet, solange die Hochspannung noch nicht da ist.
+
+50
+00:03:02,640 --> 00:03:03,960
+Die Hochspannung arbeitet noch nicht.
+
+51
+00:03:04,480 --> 00:03:06,320
+Das zweite Relais klickt einfach die Tasten.
+
+52
+00:03:06,340 --> 00:03:06,480
+Das war's.
+
+53
+00:03:07,300 --> 00:03:08,800
+Also, hier passiert gerade nichts.
+
+54
+00:03:09,560 --> 00:03:13,120
+Gerade gibt's hier überhaupt keine Stromversorgung.
+
+55
+00:03:13,260 --> 00:03:17,180
+Absolut gar nichts — das kann man messen… wenn ihr wollt.
+
+56
+00:03:17,880 --> 00:03:25,720
+Ich bin aber mega müde, weil es 5 Uhr morgens ist… und ich bis jetzt dran rumgebastelt hab.
+
+57
+00:03:26,020 --> 00:03:30,340
+Ich muss um 6 aufstehen, also leg ich mich wohl besser gar nicht mehr hin.
+
+58
+00:03:31,200 --> 00:03:31,360
+Na gut.
+
+59
+00:03:32,260 --> 00:03:35,280
+Kurz gesagt… so, sie läuft.
+
+60
+00:03:36,760 --> 00:03:38,360
+Der Start ist losgegangen.
+
+61
+00:03:39,020 --> 00:03:40,940
+Jetzt läuft der Generator.
+
+62
+00:03:41,680 --> 00:03:43,680
+Die LED blendet brutal.
+
+63
+00:03:43,820 --> 00:03:46,000
+Und die Seiten laufen.
+
+64
+00:03:46,280 --> 00:03:48,700
+Er zeigt an, dass die Seiten mit Strom versorgt werden.
+
+65
+00:03:48,900 --> 00:03:49,700
+Das sind einfach LEDs.
+
+66
+00:03:50,580 --> 00:03:52,640
+Also, das System läuft gerade noch nicht.
+
+67
+00:03:52,860 --> 00:03:56,140
+Wenn ich die Taste drücke… schaltet sich natürlich alles ein.
+
+68
+00:03:56,720 --> 00:03:57,560
+Ja, Netzteil.
+
+69
+00:03:57,940 --> 00:04:00,120
+Ich mein, klar… die LED leuchtet.
+
+70
+00:04:00,260 --> 00:04:02,520
+Jetzt werden alle fragen, warum die da leuchtet.
+
+71
+00:04:02,740 --> 00:04:03,200
+Na, schaut mal.
+
+72
+00:04:03,320 --> 00:04:04,300
+Ich trenn den Akku ab.
+
+73
+00:04:04,300 --> 00:04:06,600
+Das ist für die ganz Begriffsstutzigen.
+
+74
+00:04:06,720 --> 00:04:07,580
+Ja, er ist aus gegangen.
+
+75
+00:04:07,720 --> 00:04:13,500
+Weil das Netzteil über ne Diode vom Akku gespeist wird.
+
+76
+00:04:15,120 --> 00:04:16,320
+So, weiter — was noch?
+
+77
+00:04:16,520 --> 00:04:17,460
+Na gut, wir schalten ein.
+
+78
+00:04:18,080 --> 00:04:21,460
+Wie ich sagte — jetzt startet der Nanosekundenimpuls-Generator.
+
+79
+00:04:22,560 --> 00:04:23,140
+Bitte sehr.
+
+80
+00:04:23,320 --> 00:04:29,560
+Und sofort zieht die Hochspannung an, das System läuft auf volle Leistung hoch.
+
+81
+00:04:29,560 --> 00:04:34,160
+Das heißt, das Netzteil arbeitet und gibt ruhig 23,5 Volt.
+
+82
+00:04:34,240 --> 00:04:35,740
+Na, fast 24.
+
+83
+00:04:36,320 --> 00:04:38,120
+Das ist ein 24-Volt-System.
+
+84
+00:04:38,360 --> 00:04:39,760
+So, den Akku haben wir abgetrennt.
+
+85
+00:04:41,620 --> 00:04:43,100
+Was haben wir jetzt?
+
+86
+00:04:43,260 --> 00:04:46,100
+Das hier ist die Erdung.
+
+87
+00:04:47,680 --> 00:04:51,700
+Und das ist das Kabel an der Lampe.
+
+88
+00:04:52,580 --> 00:04:53,700
+Die Lampen habt ihr ja gesehen.
+
+89
+00:04:56,500 --> 00:04:58,220
+Na, das ist eigentlich nicht so wichtig.
+
+90
+00:04:58,880 --> 00:05:00,940
+So, die großen kann ich hier nicht anschließen.
+
+91
+00:05:01,500 --> 00:05:06,680
+Weil… leider… zieht diese Anlage die einfach nicht.
+
+92
+00:05:07,000 --> 00:05:10,020
+Die, die ihr damals auf dem Feld gesehen habt.
+
+93
+00:05:11,200 --> 00:05:12,940
+Genau diese Anlage lief damals.
+
+94
+00:05:13,460 --> 00:05:15,020
+Die ist gerade auseinandergebaut.
+
+95
+00:05:15,820 --> 00:05:17,180
+Im zerlegten Zustand.
+
+96
+00:05:17,440 --> 00:05:19,460
+Ich mein, die bau ich dann später wieder zusammen.
+
+97
+00:05:19,540 --> 00:05:24,980
+Übrigens… die Glasabdeckung — achtet drauf — da kommt ne Glasabdeckung drauf.
+
+98
+00:05:25,100 --> 00:05:26,760
+Jetzt will ich nicht umdrehen, die Schrauben fallen raus.
+
+99
+00:05:27,680 --> 00:05:35,320
+So, das hier ist für alle… die nicht glauben, dass das funktioniert.
+
+100
+00:05:36,500 --> 00:05:38,840
+Na, so ist das halt… so läuft's.
+
+101
+00:05:41,270 --> 00:05:43,210
+Kurz gesagt — da, sie läuft.
+
+102
+00:05:44,010 --> 00:05:45,530
+Der ganze Kram.
+
+103
+00:05:47,570 --> 00:05:52,550
+Schaut nochmal hin, wenn ihr die Windungen der Spulen zählen wollt.
+
+104
+00:05:53,670 --> 00:05:54,690
+Könnt ihr gerne zählen.
+
+105
+00:05:55,690 --> 00:05:56,710
+Da ist nix dabei.
+
+106
+00:05:57,650 --> 00:06:01,490
+Nah ranhalten geht nicht — die Kamera dreht durch wegen dem Nanosekundenimpulsgenerator.
+
+107
+00:06:01,630 --> 00:06:02,890
+Manchmal schaltet sie einfach ab.
+
+108
+00:06:03,050 --> 00:06:04,930
+Ich hab's satt, das Video aufzunehmen.
+
+109
+00:06:05,030 --> 00:06:06,070
+Zweimal hab ich's schon versucht.
+
+110
+00:06:06,890 --> 00:06:08,610
+Hältst du sie nah ran — und tschüss.
+
+111
+00:06:08,750 --> 00:06:11,530
+Die Kamera fährt runter, schaltet ab und sagt, der Akku ist leer.
+
+112
+00:06:11,750 --> 00:06:14,950
+Obwohl die Akkus eigentlich… voll geladen sind.
+
+113
+00:06:16,330 --> 00:06:20,170
+So, also bitte… alles läuft.
+
+114
+00:06:21,170 --> 00:06:22,050
+Alles prima.
+
+115
+00:06:23,410 --> 00:06:25,550
+Keine Resonanzkondensatoren.
+
+116
+00:06:25,550 --> 00:06:28,670
+Die Kondensatoren hier dienen zur Glättung der Versorgung.
+
+117
+00:06:30,130 --> 00:06:36,230
+Sozusagen zum Abfangen von Störungen — damit der Rest läuft.
+
+118
+00:06:37,230 --> 00:06:39,850
+Übrigens ähnelt dieses System stark dem Kapanadze.
+
+119
+00:06:40,030 --> 00:06:46,290
+Ich mein, wie ich schon erwähnte — das was Kapanadze gezeigt hat, ist praktisch dasselbe.
+
+120
+00:06:46,910 --> 00:06:47,930
+Da, die Lampen leuchten.
+
+121
+00:06:48,830 --> 00:06:52,090
+Nicht auf voller Helligkeit, aber geht schon.
+
+122
+00:06:53,170 --> 00:06:53,990
+Na, wie — voll?
+
+123
+00:06:53,990 --> 00:06:57,430
+Na… fast voll, kann man sagen.
+
+124
+00:06:58,310 --> 00:07:00,310
+Keine Ahnung, man könnte natürlich die Spannung messen.
+
+125
+00:07:01,610 --> 00:07:03,690
+Im Prinzip könnte man das schon messen.
+
+126
+00:07:06,010 --> 00:07:07,730
+Na gut, heute machen wir das nicht mehr.
+
+127
+00:07:09,350 --> 00:07:10,310
+So ein Ding.
+
+128
+00:07:12,170 --> 00:07:12,930
+Hallo an Oleg.
+
+129
+00:07:13,190 --> 00:07:15,050
+Nächstes Mal geh ran, wenn jemand anruft.
+
+130
+00:07:16,130 --> 00:07:18,990
+Wollte dir's zeigen… aber…
+
+131
+00:07:19,530 --> 00:07:21,870
+Ich mein den Oleg, der in Lettland wohnt.
+
+132
+00:07:22,950 --> 00:07:25,170
+Na ja, so ist das halt.
+
+133
+00:07:25,170 --> 00:07:26,050
+So ist das eben.
+
+134
+00:07:26,150 --> 00:07:27,470
+Ich bau jetzt ne neue.
+
+135
+00:07:28,090 --> 00:07:30,270
+Die Maschine, mit der ich gerade arbeite.
+
+136
+00:07:30,630 --> 00:07:33,630
+Ich arbeite am Aufbau.
+
+137
+00:07:34,390 --> 00:07:37,050
+Zeigen tu ich das dann später.
+
+138
+00:07:37,950 --> 00:07:40,570
+So, allen ne gute Laune.
+
+139
+00:07:41,130 --> 00:07:45,010
+Und das Wichtigste… viel Erfolg bei der Arbeit.
+
+140
+00:07:45,550 --> 00:07:46,310
+Tschüss.
+
