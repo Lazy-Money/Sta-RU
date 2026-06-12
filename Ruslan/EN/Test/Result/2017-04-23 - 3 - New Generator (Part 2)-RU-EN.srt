@@ -1,0 +1,172 @@
+1
+00:00:06,900 --> 00:00:11,420
+Right now we're going to look at, this here is the generator controlling the power switch
+
+2
+00:00:11,420 --> 00:00:17,540
+of the Tesla coil, the controlled, you know, the whole setup.
+
+3
+00:00:17,540 --> 00:00:22,300
+The scope probe is sitting on the transistor gate.
+
+4
+00:00:22,300 --> 00:00:25,420
+So we can see bursts of pulses coming through.
+
+5
+00:00:25,420 --> 00:00:30,660
+Let's zoom in now.
+
+6
+00:00:30,660 --> 00:00:35,060
+We're using four pulses per burst, 40% duty cycle.
+
+7
+00:00:35,060 --> 00:00:40,820
+That's enough for pulses to get the system up to speed.
+
+8
+00:00:40,820 --> 00:00:44,140
+Next, the ammeter will be reading the current draw.
+
+9
+00:00:44,140 --> 00:00:46,420
+We move the probe over to the antenna.
+
+10
+00:00:46,420 --> 00:00:58,890
+We'll bring the voltage up a bit and apply power.
+
+11
+00:00:58,890 --> 00:01:03,650
+Power comes from the inverter with a pad underneath so it doesn't short the ammeter.
+
+12
+00:01:03,650 --> 00:01:07,020
+Supply is 12 volts.
+
+13
+00:01:07,020 --> 00:01:08,620
+Here's the inverter feeding it.
+
+14
+00:01:08,620 --> 00:01:17,460
+I mean, right now it's at 130 volts feeding into this power switch here, the circuit.
+
+15
+00:01:17,460 --> 00:01:22,580
+So we've got the power switch, a shocky diode, current limiting resistors, and this output
+
+16
+00:01:22,580 --> 00:01:26,680
+goes to the inductor.
+
+17
+00:01:26,680 --> 00:01:33,030
+Applying power.
+
+18
+00:01:33,030 --> 00:01:40,430
+So we can see that in operating mode, it's drawing almost one amp, I mean, 12 Watts.
+
+19
+00:01:40,430 --> 00:01:43,800
+Let's see what's going on here.
+
+20
+00:01:43,800 --> 00:01:50,480
+And here we've got signals that look like this.
+
+21
+00:01:50,480 --> 00:01:51,720
+There you go.
+
+22
+00:01:51,720 --> 00:01:54,160
+Bursts of pulses coming through.
+
+23
+00:01:54,160 --> 00:02:05,720
+Now we can expand this signal and here we see this retina shaped waveform and we can
+
+24
+00:02:05,720 --> 00:02:08,480
+freeze that right there.
+
+25
+00:02:08,480 --> 00:02:14,460
+That's how it ramps up just four pulses.
+
+26
+00:02:14,460 --> 00:02:19,310
+The system turned out great, nice and balanced.
+
+27
+00:02:19,310 --> 00:02:33,800
+The lamps are lit, striking nicely on the screwdriver.
+
+28
+00:02:33,800 --> 00:02:34,800
+Good.
+
+29
+00:02:34,800 --> 00:02:43,420
+The neon lamps are also on, but that's pretty standard.
+
+30
+00:02:43,420 --> 00:02:48,640
+Zoom in and we can see it's a sine wave here.
+
+31
+00:02:48,640 --> 00:02:50,280
+Just four drive cycles.
+
+32
+00:02:50,280 --> 00:02:53,080
+Well, this is something we've seen before.
+
+33
+00:02:53,080 --> 00:03:01,420
+Ruslan showed us this same retina shaped signal.
+
+34
+00:03:01,420 --> 00:03:06,300
+The assumption is that this isn't the working mode yet.
+
+35
+00:03:06,300 --> 00:03:09,620
+This is just the balanced tuning stage for the system right now.
+
+36
+00:03:09,980 --> 00:03:15,380
+I mean, here we can see a counter wound transformer on a ferrite core.
+
+37
+00:03:15,380 --> 00:03:19,180
+It looks like this ferrite core isn't performing up to spec.
+
+38
+00:03:19,180 --> 00:03:27,200
+It's not doing what it needs to do to give us any kind of pulse signal at the antenna.
+
+39
+00:03:27,200 --> 00:03:30,040
+We're going to swap it out, try some others.
+
+40
+00:03:30,040 --> 00:03:34,430
+Now let's watch and see what happens next.
+
+41
+00:03:34,430 --> 00:03:40,770
+Here the system adjusts the frequency and duty cycle of the signal, those four pulses.
+
+42
+00:03:40,770 --> 00:03:46,490
+And over here is the control for the burst duration and where the burst lands.
+
+43
+00:03:46,490 --> 00:03:47,450
+All pretty standard stuff.
+
