@@ -1,0 +1,584 @@
+1
+00:00:00,460 --> 00:00:03,640
+Alright guys, hey?
+
+2
+00:00:03,640 --> 00:00:04,640
+Here's the setup.
+
+3
+00:00:04,640 --> 00:00:10,520
+I laid it all out in the open so you can see there are no hidden connections here.
+
+4
+00:00:10,520 --> 00:00:15,970
+Nothing sketchy, everything's normal, basically.
+
+5
+00:00:15,970 --> 00:00:18,250
+He built his on glass.
+
+6
+00:00:18,250 --> 00:00:25,220
+I'm not doing glass, I just shoved everything into an industrial enclosure.
+
+7
+00:00:25,220 --> 00:00:29,420
+This is a weak little generator, could have squeezed out a kilowatt, but I'll explain
+
+8
+00:00:29,420 --> 00:00:32,280
+why I'm not getting a kilowatt out of it.
+
+9
+00:00:32,280 --> 00:00:33,920
+For one simple reason.
+
+10
+00:00:33,920 --> 00:00:36,940
+The nanosecond driver barely works.
+
+11
+00:00:36,940 --> 00:00:41,420
+You could pump it harder, I was getting something out of it, but the total power right now is
+
+12
+00:00:41,420 --> 00:00:46,620
+somewhere around 550-600 watts, can't get more than that.
+
+13
+00:00:46,620 --> 00:00:49,300
+Plus if you factor in my diode bridge.
+
+14
+00:00:49,300 --> 00:00:51,940
+Anyway, whatever.
+
+15
+00:00:51,940 --> 00:00:56,380
+I deliberately didn't use any terminal blocks, so you can't tell me something's connected
+
+16
+00:00:56,380 --> 00:00:57,820
+there.
+
+17
+00:00:57,820 --> 00:01:01,060
+Just a plain twisted splice, you know.
+
+18
+00:01:01,060 --> 00:01:05,280
+Didn't have any other wire, so I just twisted this one on.
+
+19
+00:01:05,280 --> 00:01:10,720
+I'll show you what's inside now.
+
+20
+00:01:10,720 --> 00:01:14,600
+Here's the terminal block, here's a plain wire screwed on.
+
+21
+00:01:14,600 --> 00:01:17,520
+Nothing special.
+
+22
+00:01:17,520 --> 00:01:19,640
+The coil.
+
+23
+00:01:19,640 --> 00:01:22,930
+Everyone knows it well.
+
+24
+00:01:22,930 --> 00:01:25,650
+Roma, you said there's no inductor here.
+
+25
+00:01:25,650 --> 00:01:28,330
+Yeah, I'll tell you right now there is.
+
+26
+00:01:28,330 --> 00:01:31,430
+Wound all the way along the bottom.
+
+27
+00:01:31,430 --> 00:01:33,810
+So what else?
+
+28
+00:01:33,810 --> 00:01:36,450
+Just a regular coaxial cable.
+
+29
+00:01:36,790 --> 00:01:40,870
+50, 75 ohm, to be more precise.
+
+30
+00:01:40,870 --> 00:01:43,790
+I mean, you can tune it either way.
+
+31
+00:01:43,790 --> 00:01:46,310
+It depends on what capacitor you put here.
+
+32
+00:01:46,310 --> 00:01:48,510
+A couple more turns wound at the bottom.
+
+33
+00:01:48,510 --> 00:01:51,470
+Oleg, listen, that crappy core though.
+
+34
+00:01:51,470 --> 00:01:53,830
+Yeah, I mean that ferrite.
+
+35
+00:01:53,830 --> 00:01:55,630
+Gotta put the white one back in.
+
+36
+00:01:55,630 --> 00:01:59,050
+It made everything stronger.
+
+37
+00:01:59,050 --> 00:02:00,210
+So what of it?
+
+38
+00:02:00,210 --> 00:02:03,650
+This is kind of a regular bifiler winding here.
+
+39
+00:02:03,650 --> 00:02:05,310
+Nothing special.
+
+40
+00:02:05,310 --> 00:02:08,370
+Nothing special, I'm telling you.
+
+41
+00:02:08,370 --> 00:02:10,810
+It's a dual arm generator.
+
+42
+00:02:10,810 --> 00:02:14,770
+A pumping transformer, that sets the frequency for this converter.
+
+43
+00:02:14,770 --> 00:02:16,770
+That's where it all happens.
+
+44
+00:02:16,770 --> 00:02:23,450
+Roma, just so you know, I understand very well what's going on here and why all of this works.
+
+45
+00:02:23,450 --> 00:02:28,530
+What's driving what, and why, as they say here, those resonant caps I was poking around
+
+46
+00:02:28,530 --> 00:02:31,690
+with back in the day aren't needed.
+
+47
+00:02:31,690 --> 00:02:33,250
+So what else is there?
+
+48
+00:02:33,270 --> 00:02:39,110
+Well, basically 29 turns of wire, and on top of that, each arm has 12 turns wound over
+
+49
+00:02:39,110 --> 00:02:40,110
+it.
+
+50
+00:02:40,110 --> 00:02:47,910
+So, the sink here is all together with the TL chip, 2 ICs, driver, TL chip, driver.
+
+51
+00:02:47,910 --> 00:02:49,830
+All this stuff here is running.
+
+52
+00:02:49,830 --> 00:02:54,390
+Well, that's the converter, and the relay block.
+
+53
+00:02:54,390 --> 00:03:00,470
+One relay cuts the output, so it doesn't fire when the high voltage isn't up yet.
+
+54
+00:03:00,470 --> 00:03:02,670
+High voltage isn't running.
+
+55
+00:03:02,670 --> 00:03:05,210
+The second relay just clicks the buttons.
+
+56
+00:03:05,210 --> 00:03:06,550
+That's it.
+
+57
+00:03:06,550 --> 00:03:09,330
+So nothing's happening here right now.
+
+58
+00:03:09,330 --> 00:03:12,830
+Right now there's absolutely no power to this thing at all.
+
+59
+00:03:12,830 --> 00:03:13,830
+Totally zero.
+
+60
+00:03:13,830 --> 00:03:16,470
+You can measure it, if you want.
+
+61
+00:03:16,470 --> 00:03:20,270
+But I'm really damn sleepy because it's 5 in the morning, and I've been tinkering away
+
+62
+00:03:20,270 --> 00:03:22,270
+till now.
+
+63
+00:03:22,270 --> 00:03:27,150
+I still have to get up at 6, so I probably shouldn't even bother going to bed.
+
+64
+00:03:27,150 --> 00:03:28,150
+Alright.
+
+65
+00:03:28,150 --> 00:03:32,390
+Anyway, here it is, running.
+
+66
+00:03:32,390 --> 00:03:35,350
+The startup sequence just kicked in.
+
+67
+00:03:35,350 --> 00:03:38,150
+The generator is running now.
+
+68
+00:03:38,150 --> 00:03:42,810
+That LED is blindingly bright, and the arms are running.
+
+69
+00:03:42,810 --> 00:03:46,070
+It shows that power is being fed to the arms.
+
+70
+00:03:46,070 --> 00:03:48,230
+These are just indicator LEDs.
+
+71
+00:03:48,230 --> 00:03:51,390
+So this part of the system isn't active right now.
+
+72
+00:03:51,390 --> 00:03:55,230
+When I press the button, naturally, everything will switch on.
+
+73
+00:03:55,230 --> 00:03:57,390
+Yeah, the power supply.
+
+74
+00:03:57,390 --> 00:04:00,770
+I mean, of course, the LED is lit.
+
+75
+00:04:00,770 --> 00:04:03,290
+Now everyone's gonna ask why it's glowing over there.
+
+76
+00:04:03,290 --> 00:04:04,530
+Whoa, watch this.
+
+77
+00:04:04,530 --> 00:04:06,170
+I'm disconnecting the battery.
+
+78
+00:04:06,170 --> 00:04:07,690
+This one's for the slow folks.
+
+79
+00:04:07,690 --> 00:04:09,810
+Yeah, see, it went out.
+
+80
+00:04:09,810 --> 00:04:15,110
+Because the power supply gets fed through a diode from the battery.
+
+81
+00:04:15,110 --> 00:04:17,070
+Right, so what's next?
+
+82
+00:04:17,070 --> 00:04:19,470
+Okay, let's fire it up.
+
+83
+00:04:19,470 --> 00:04:24,230
+Like I said, the nanosecond pulse generator's kicking in now.
+
+84
+00:04:24,230 --> 00:04:25,430
+There you go.
+
+85
+00:04:25,430 --> 00:04:30,310
+And right away the high voltage side fires up, and the system comes up to full power.
+
+86
+00:04:30,310 --> 00:04:35,590
+I mean, the power supply starts running fine, putting out 23.5 volts.
+
+87
+00:04:35,590 --> 00:04:38,470
+Well, almost 24.
+
+88
+00:04:38,470 --> 00:04:40,230
+It's a 24-volt system.
+
+89
+00:04:40,230 --> 00:04:44,500
+Right, so we've disconnected the battery.
+
+90
+00:04:44,500 --> 00:04:46,180
+So what do we got here?
+
+91
+00:04:46,180 --> 00:04:49,920
+That's the grounding, right there.
+
+92
+00:04:49,920 --> 00:04:53,720
+And that's the wire going to the bulbs.
+
+93
+00:04:53,720 --> 00:04:57,870
+You've already seen the bulbs.
+
+94
+00:04:57,870 --> 00:05:00,630
+Well, that part doesn't really matter.
+
+95
+00:05:00,630 --> 00:05:03,870
+Yeah, the big ones I just can't hook up.
+
+96
+00:05:04,070 --> 00:05:08,510
+Because, unfortunately, this setup just won't handle them.
+
+97
+00:05:08,510 --> 00:05:12,230
+That one you saw out in the field back then.
+
+98
+00:05:12,230 --> 00:05:14,870
+That's the setup that was actually running.
+
+99
+00:05:14,870 --> 00:05:17,270
+Right now it's disassembled.
+
+100
+00:05:17,270 --> 00:05:18,510
+In pieces at the moment.
+
+101
+00:05:18,510 --> 00:05:21,670
+I mean, I'll put it back together later.
+
+102
+00:05:21,670 --> 00:05:24,110
+By the way, notice the glass lid.
+
+103
+00:05:24,110 --> 00:05:26,390
+There's going to be a glass lid on here.
+
+104
+00:05:26,390 --> 00:05:29,870
+Don't want to flip it now, the bolts will go flying.
+
+105
+00:05:29,870 --> 00:05:36,200
+So, all of this is for those who don't believe something like this can actually work.
+
+106
+00:05:36,200 --> 00:05:41,740
+Well, that's kind of how it is, more or less.
+
+107
+00:05:41,740 --> 00:05:45,660
+Anyway, bottom line, there it is, it's running.
+
+108
+00:05:45,660 --> 00:05:48,950
+This whole thing.
+
+109
+00:05:48,950 --> 00:05:53,630
+Take another look if you want to count the coil turns.
+
+110
+00:05:53,630 --> 00:05:56,190
+Go ahead and count them.
+
+111
+00:05:56,190 --> 00:05:58,590
+There's nothing hidden in there.
+
+112
+00:05:58,590 --> 00:06:00,110
+I won't get too close.
+
+113
+00:06:00,110 --> 00:06:03,150
+The camera goes nuts from the nanosecond pulser.
+
+114
+00:06:03,150 --> 00:06:05,110
+Sometimes it just shuts itself off.
+
+115
+00:06:05,150 --> 00:06:08,230
+I've been killing myself trying to record this video.
+
+116
+00:06:08,230 --> 00:06:10,550
+Already tried twice.
+
+117
+00:06:10,550 --> 00:06:12,830
+You get close and that's it, goodbye.
+
+118
+00:06:12,830 --> 00:06:17,230
+The camera shuts down, cuts out, and says the battery's dead.
+
+119
+00:06:17,230 --> 00:06:21,950
+Even though the batteries, the cells are fully charged.
+
+120
+00:06:21,950 --> 00:06:25,990
+So yeah, that's it, everything's working.
+
+121
+00:06:25,990 --> 00:06:27,750
+Everything's great.
+
+122
+00:06:27,750 --> 00:06:30,890
+See, no resonant caps at all.
+
+123
+00:06:30,890 --> 00:06:35,650
+The caps here are just for smoothing the power supply.
+
+124
+00:06:35,650 --> 00:06:38,990
+Basically soaking up interference so nothing else gets messed up.
+
+125
+00:06:38,990 --> 00:06:41,530
+It works fine.
+
+126
+00:06:41,530 --> 00:06:44,850
+Actually this system is very similar to Kapanadze.
+
+127
+00:06:44,850 --> 00:06:49,930
+I mean, like I already mentioned, what Kapanadze did is basically the same thing.
+
+128
+00:06:49,930 --> 00:06:52,930
+Look, the bulbs are lit.
+
+129
+00:06:52,930 --> 00:06:56,730
+They're not at full brightness, but decent.
+
+130
+00:06:56,730 --> 00:06:58,050
+Well what do I mean full?
+
+131
+00:06:58,050 --> 00:07:01,850
+Well almost full brightness, you could say.
+
+132
+00:07:01,850 --> 00:07:06,170
+I don't know, you could measure the supply, I guess.
+
+133
+00:07:06,170 --> 00:07:11,440
+I mean, in principle we could measure the power.
+
+134
+00:07:11,440 --> 00:07:15,150
+Alright not doing that today.
+
+135
+00:07:15,150 --> 00:07:17,750
+That's the deal.
+
+136
+00:07:17,750 --> 00:07:23,070
+Hey Oleg, next time pick up the phone when someone calls.
+
+137
+00:07:23,070 --> 00:07:25,530
+Wanted to show you, but oh well.
+
+138
+00:07:25,530 --> 00:07:29,190
+I mean the Oleg who lives in Latvia.
+
+139
+00:07:29,190 --> 00:07:32,230
+So yeah well, that's just how it goes.
+
+140
+00:07:32,230 --> 00:07:34,910
+I'm gonna build another one now.
+
+141
+00:07:34,910 --> 00:07:37,830
+Working on a new rig that I'm figuring out.
+
+142
+00:07:37,830 --> 00:07:40,510
+Working on putting it all together.
+
+143
+00:07:40,510 --> 00:07:43,130
+I'll show it later.
+
+144
+00:07:43,130 --> 00:07:46,210
+Alright, good vibes to everyone.
+
+145
+00:07:46,210 --> 00:07:49,890
+And most importantly, good luck with your projects.
+
+146
+00:07:49,890 --> 00:07:50,170
+See ya!
+
