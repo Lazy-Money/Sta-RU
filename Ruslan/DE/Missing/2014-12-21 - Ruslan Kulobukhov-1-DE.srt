@@ -1,0 +1,852 @@
+1
+00:00:00,000 --> 00:00:01,120
+Hey Leute!
+
+2
+00:00:01,120 --> 00:00:03,720
+Ich zeige euch jetzt eine neue Anlage.
+
+3
+00:00:03,720 --> 00:00:06,400
+Gebaut nach dem Daly-Schaltplan — ich sag's euch gleich — weil
+
+4
+00:00:06,400 --> 00:00:08,960
+ich einen Nanosekunden-
+
+5
+00:00:08,960 --> 00:00:11,240
+verdammten Generator hatte, der einem den letzten Nerv raubt,
+
+6
+00:00:11,240 --> 00:00:12,400
+ernsthaft.
+
+7
+00:00:12,400 --> 00:00:15,160
+Die Frequenz driftet, aber das ist noch nicht mal das Schlimmste —
+
+8
+00:00:15,160 --> 00:00:18,080
+das Schlimmste ist, ich hab schon eine Menge von diesen
+
+9
+00:00:18,080 --> 00:00:21,400
+926-Transistoren geschrottet.
+
+10
+00:00:21,400 --> 00:00:22,520
+Jedenfalls,
+
+11
+00:00:22,520 --> 00:00:24,480
+ich wollte das alles in eine Box packen,
+
+12
+00:00:24,480 --> 00:00:25,760
+aber das hat nicht gepasst.
+
+13
+00:00:25,760 --> 00:00:27,760
+Leider hat auch der Tankkondensator
+
+14
+00:00:27,760 --> 00:00:29,840
+von der Drossel nicht reingepasst. Na gut.
+
+15
+00:00:30,400 --> 00:00:32,560
+Also, das hier ist das Koax,
+
+16
+00:00:32,560 --> 00:00:34,520
+das dran angelötet ist — ja, also
+
+17
+00:00:34,520 --> 00:00:35,600
+im Grunde hängt die Platine
+
+18
+00:00:35,600 --> 00:00:38,000
+einfach so da drin, aber
+
+19
+00:00:38,000 --> 00:00:39,720
+ich hab sie sogar offen gelassen, weil ich ständig die
+
+20
+00:00:39,720 --> 00:00:41,440
+Frequenz mit diesem
+
+21
+00:00:41,440 --> 00:00:42,480
+Widerstand einstellen muss,
+
+22
+00:00:42,480 --> 00:00:44,680
+dem hier — das ist ein
+
+23
+00:00:44,680 --> 00:00:46,840
+Mehrgangpoti zur Frequenzeinstellung.
+
+24
+00:00:46,840 --> 00:00:48,680
+Also, der 5-Volt-Regler —
+
+25
+00:00:48,680 --> 00:00:50,920
+ich musste im Grunde
+
+26
+00:00:50,920 --> 00:00:52,560
+einen separaten draufklatschen.
+
+27
+00:00:52,560 --> 00:00:54,480
+Also, was wollte ich noch sagen?
+
+28
+00:00:54,480 --> 00:00:56,240
+Also hier,
+
+29
+00:00:56,240 --> 00:00:57,640
+hier hab ich
+
+30
+00:00:57,800 --> 00:00:59,760
+den Generator hier,
+
+31
+00:00:59,760 --> 00:01:01,840
+das Ding da, also,
+
+32
+00:01:01,840 --> 00:01:05,080
+der Transformator — der hier auf einem Ringkern, auf Ferrit —
+
+33
+00:01:05,080 --> 00:01:07,480
+den musste ich auch hier rüberschieben.
+
+34
+00:01:07,480 --> 00:01:09,200
+Hier — anderen Platz,
+
+35
+00:01:09,200 --> 00:01:11,680
+hier ist einfach kein Platz, also musste er
+
+36
+00:01:11,680 --> 00:01:12,440
+da hin.
+
+37
+00:01:12,440 --> 00:01:14,560
+Hier ist eine Dioden-Brücke, zwei
+
+38
+00:01:14,560 --> 00:01:17,040
+Kondensatoren und ein 5-Volt-Regler
+
+39
+00:01:17,040 --> 00:01:19,200
+für die Logik, genau da — und die Taster
+
+40
+00:01:19,200 --> 00:01:21,080
+schalten verschiedene Sachen und das war's.
+
+41
+00:01:21,080 --> 00:01:23,480
+Das Netzteil ist leider abgeraucht — weil
+
+42
+00:01:23,480 --> 00:01:25,040
+ich die Masse abgeklemmt hab.
+
+43
+00:01:25,040 --> 00:01:26,640
+Man darf die Masse niemals abklemmen,
+
+44
+00:01:26,640 --> 00:01:28,640
+niemals. Schlechte Masse — und das Netzteil
+
+45
+00:01:28,640 --> 00:01:31,120
+stirbt, und weißt du wie es stirbt?
+
+46
+00:01:31,120 --> 00:01:33,560
+Der Optokoppler — da muss irgendwas
+
+47
+00:01:33,560 --> 00:01:34,800
+durchschlagen.
+
+48
+00:01:34,800 --> 00:01:36,360
+Ich weiß nicht wie das passiert, aber
+
+49
+00:01:36,360 --> 00:01:38,200
+es passiert. Schon einen geschrottet,
+
+50
+00:01:38,200 --> 00:01:40,120
+musste einen 5-Ampere-Typ reinsetzen, aber
+
+51
+00:01:40,120 --> 00:01:41,960
+das ist mehr als genug, weil das System
+
+52
+00:01:41,960 --> 00:01:43,680
+sehr wenig Strom zieht
+
+53
+00:01:43,680 --> 00:01:46,760
+und das locker reicht für eine 500-Watt-
+
+54
+00:01:46,760 --> 00:01:47,840
+Last. Heute werden wir
+
+55
+00:01:47,840 --> 00:01:49,720
+den Scheinwerfer testen —
+
+56
+00:01:49,720 --> 00:01:53,080
+den berühmten — ich zeige ihn euch gleich.
+
+57
+00:01:53,080 --> 00:01:54,800
+Schaut, hier ist er —
+
+58
+00:01:54,800 --> 00:01:58,000
+der Scheinwerfer
+
+59
+00:01:58,000 --> 00:02:00,680
+ist nirgendwo angeschlossen — nur
+
+60
+00:02:00,680 --> 00:02:02,320
+sein Stecker, das war's.
+
+61
+00:02:02,320 --> 00:02:03,880
+Das hier ist die Steckdose
+
+62
+00:02:03,880 --> 00:02:06,680
+und der Lastschalter.
+
+63
+00:02:06,680 --> 00:02:08,360
+Was noch?
+
+64
+00:02:08,360 --> 00:02:10,280
+Gehen wir zum Masseanschluss, ja.
+
+65
+00:02:10,280 --> 00:02:13,280
+Einen Moment — ich klemme jetzt erst mal die Batterie an.
+
+66
+00:02:13,280 --> 00:02:16,200
+Das ist die Masse, klar.
+
+67
+00:02:16,200 --> 00:02:18,400
+Das ist die Masse — hier ist sie — angeschlossen an
+
+68
+00:02:18,400 --> 00:02:20,520
+den Heizkörper, schaut mal her.
+
+69
+00:02:20,520 --> 00:02:22,560
+Hier ist sie abisoliert, und sie muss wirklich
+
+70
+00:02:22,560 --> 00:02:24,520
+richtig angeschlossen sein, sonst
+
+71
+00:02:24,520 --> 00:02:26,480
+fliegt das Netzteil wieder raus und ich kann
+
+72
+00:02:26,480 --> 00:02:28,520
+nichts vorführen.
+
+73
+00:02:28,520 --> 00:02:30,000
+Also gut —
+
+74
+00:02:30,000 --> 00:02:31,840
+einschalten.
+
+75
+00:02:31,840 --> 00:02:34,280
+Wir schalten das System ein — die LED leuchtet auf,
+
+76
+00:02:34,280 --> 00:02:35,680
+die, die ihr alle
+
+77
+00:02:35,680 --> 00:02:38,040
+so gerne seht — seht ihr? Die LED ist an,
+
+78
+00:02:38,040 --> 00:02:39,840
+an, gut.
+
+79
+00:02:39,840 --> 00:02:41,040
+Jetzt
+
+80
+00:02:41,040 --> 00:02:44,840
+klemme ich die Last an — schaut.
+
+81
+00:02:44,840 --> 00:02:46,840
+Last einschalten, einschalten — der
+
+82
+00:02:46,840 --> 00:02:47,880
+Scheinwerfer ist an —
+
+83
+00:02:47,880 --> 00:02:50,480
+500 Watt.
+
+84
+00:02:50,480 --> 00:02:52,120
+Klar, Nanosekundengenerator.
+
+85
+00:02:52,120 --> 00:02:53,480
+Ich sag's euch gleich —
+
+86
+00:02:53,480 --> 00:02:55,320
+die Frequenz driftet.
+
+87
+00:02:55,320 --> 00:02:57,120
+Man kann nicht mal in der Nähe atmen.
+
+88
+00:02:57,120 --> 00:02:59,280
+Die Frequenz driftet, also fängt alles an
+
+89
+00:02:59,280 --> 00:03:01,560
+zu wandern und das System hört auf zu funktionieren.
+
+90
+00:03:01,560 --> 00:03:03,080
+Sagt mir jetzt — was macht ihr mit
+
+91
+00:03:03,080 --> 00:03:03,920
+der Batterie?
+
+92
+00:03:03,920 --> 00:03:06,600
+Klemmen wir sie ab — scheiß drauf.
+
+93
+00:03:06,600 --> 00:03:08,240
+Da, fertig.
+
+94
+00:03:08,240 --> 00:03:13,240
+Wird hier nicht gebraucht — weg damit.
+
+95
+00:03:13,240 --> 00:03:15,880
+Schaut — das System läuft.
+
+96
+00:03:15,880 --> 00:03:17,160
+Es läuft,
+
+97
+00:03:17,160 --> 00:03:19,960
+na dann sagt mir doch, das ist ein Fake.
+
+98
+00:03:19,960 --> 00:03:21,360
+Das ist die Masse.
+
+99
+00:03:21,360 --> 00:03:22,880
+Ich will sie nicht rausreißen,
+
+100
+00:03:22,880 --> 00:03:25,400
+weil ich das Netzteil schon einmal geschrottet hab.
+
+101
+00:03:25,400 --> 00:03:28,200
+Offensichtlich kommt da irgendwas zurück.
+
+102
+00:03:28,200 --> 00:03:30,360
+Naja, egal.
+
+103
+00:03:30,360 --> 00:03:31,840
+Das ist das
+
+104
+00:03:31,840 --> 00:03:34,400
+Ding — da habt ihr's.
+
+105
+00:03:34,400 --> 00:03:36,120
+500 Watt
+
+106
+00:03:36,120 --> 00:03:37,640
+am Laufen.
+
+107
+00:03:37,640 --> 00:03:39,200
+Aber ich muss es abschalten,
+
+108
+00:03:39,200 --> 00:03:40,600
+weil der Transistor
+
+109
+00:03:40,600 --> 00:03:42,600
+sich aufheizt und bald abraucht.
+
+110
+00:03:42,600 --> 00:03:45,600
+Obwohl hier nur 110 Volt anliegen.
+
+111
+00:03:45,600 --> 00:03:47,160
+Sieht so aus, als
+
+112
+00:03:47,160 --> 00:03:49,960
+würde das bald passieren.
+
+113
+00:03:49,960 --> 00:03:51,040
+Jedenfalls —
+
+114
+00:03:51,040 --> 00:03:53,360
+wir drücken Start — es startet nicht.
+
+115
+00:03:53,360 --> 00:03:55,280
+Da.
+
+116
+00:03:55,280 --> 00:03:57,600
+Die Batterie muss wieder ran,
+
+117
+00:03:57,600 --> 00:03:59,480
+und dann passiert alles.
+
+118
+00:03:59,480 --> 00:04:01,800
+Wenn ihr's sehen wollt,
+
+119
+00:04:01,800 --> 00:04:03,760
+kann ich's euch zeigen.
+
+120
+00:04:03,760 --> 00:04:06,320
+Schaut — hier, ich drücke Start,
+
+121
+00:04:06,320 --> 00:04:08,760
+der Lüfter dreht hoch,
+
+122
+00:04:08,760 --> 00:04:09,760
+ich drücke,
+
+123
+00:04:09,760 --> 00:04:12,440
+oh warte — ich muss erst die Last ausschalten.
+
+124
+00:04:12,440 --> 00:04:13,840
+Okay, Moment,
+
+125
+00:04:13,840 --> 00:04:15,960
+es startet,
+
+126
+00:04:15,960 --> 00:04:17,800
+das System läuft an und
+
+127
+00:04:17,800 --> 00:04:21,610
+der Scheinwerfer ist an — da habt ihr's.
+
+128
+00:04:21,610 --> 00:04:24,010
+Ich hatte 550 Watt angeschlossen,
+
+129
+00:04:24,010 --> 00:04:26,170
+ich schalte ab,
+
+130
+00:04:26,170 --> 00:04:27,530
+alles geht aus.
+
+131
+00:04:27,530 --> 00:04:29,090
+Hatte 550 Watt angeschlossen
+
+132
+00:04:29,090 --> 00:04:31,010
+als Last — lief prima.
+
+133
+00:04:31,010 --> 00:04:33,050
+Aber das Ding hier —
+
+134
+00:04:33,050 --> 00:04:34,650
+ehrlich gesagt —
+
+135
+00:04:34,650 --> 00:04:36,090
+ist totaler Schrott.
+
+136
+00:04:36,090 --> 00:04:38,690
+Da muss was ausgetauscht werden.
+
+137
+00:04:38,690 --> 00:04:40,650
+Wie Daly das zum Laufen gebracht hat,
+
+138
+00:04:40,650 --> 00:04:41,690
+weiß ich nicht,
+
+139
+00:04:41,690 --> 00:04:43,130
+aber höchstwahrscheinlich
+
+140
+00:04:43,130 --> 00:04:44,890
+deshalb,
+
+141
+00:04:44,890 --> 00:04:47,250
+weil bei seiner Anlage
+
+142
+00:04:47,250 --> 00:04:49,170
+irgendwas rumgedriftet ist, und wahrscheinlich hat sich das deshalb
+
+143
+00:04:49,170 --> 00:04:50,570
+synchronisiert, oder so was in der Richtung.
+
+144
+00:04:50,570 --> 00:04:52,570
+Ich sag's euch ehrlich —
+
+145
+00:04:52,570 --> 00:04:55,050
+dafür braucht man einen Anpassungsblock,
+
+146
+00:04:55,050 --> 00:04:57,330
+sonst funktioniert das ganze System nicht.
+
+147
+00:04:57,330 --> 00:04:59,490
+Egal wie viele Impulse und welche Art
+
+148
+00:04:59,490 --> 00:05:01,130
+ihr da reinknallt,
+
+149
+00:05:01,130 --> 00:05:03,570
+es bringt nichts.
+
+150
+00:05:03,570 --> 00:05:04,970
+Quält euch nicht.
+
+151
+00:05:04,970 --> 00:05:06,810
+Ihr müsst die ganze
+
+152
+00:05:06,810 --> 00:05:08,930
+Theorie studieren und dann werdet ihr's wissen.
+
+153
+00:05:08,930 --> 00:05:10,370
+Inzwischen — verdammt —
+
+154
+00:05:10,370 --> 00:05:12,410
+ich schau mich um und da sitzen so viele "Experten"
+
+155
+00:05:12,410 --> 00:05:14,090
+in Foren,
+
+156
+00:05:14,090 --> 00:05:16,090
+labern einfach rum, machen eigentlich nichts.
+
+157
+00:05:16,090 --> 00:05:18,930
+Also — reißt euch zusammen, benutzt euren Kopf,
+
+158
+00:05:18,930 --> 00:05:21,410
+hört auf Wissenschaftler, studiert
+
+159
+00:05:21,410 --> 00:05:23,490
+die Theorie der Magnetfelder — und dann werdet ihr
+
+160
+00:05:23,490 --> 00:05:25,650
+wissen, wo ihr ansetzen müsst und womit,
+
+161
+00:05:25,650 --> 00:05:27,650
+und wie ihr das Magnetfeld
+
+162
+00:05:27,650 --> 00:05:29,730
+in dieser Spule zum Rotieren bringt.
+
+163
+00:05:29,730 --> 00:05:31,130
+Die ist hohl, oder?
+
+164
+00:05:31,130 --> 00:05:32,690
+Da ist nichts drin.
+
+165
+00:05:32,690 --> 00:05:35,250
+Kabel gehen durch.
+
+166
+00:05:35,250 --> 00:05:37,770
+Und um alles
+
+167
+00:05:37,770 --> 00:05:38,610
+hier zum Laufen zu bringen,
+
+168
+00:05:38,610 --> 00:05:41,010
+müsst ihr einfach die Theorie studieren.
+
+169
+00:05:41,010 --> 00:05:43,410
+Ich sitze nicht in diesen Foren und lese all
+
+170
+00:05:43,410 --> 00:05:44,730
+den Blödsinn.
+
+171
+00:05:44,730 --> 00:05:47,090
+Ich hör auf Wissenschaftler und auf Leute, die
+
+172
+00:05:47,090 --> 00:05:49,970
+wissen, wie sich ein Magnetfeld bewegt, wie dieser
+
+173
+00:05:49,970 --> 00:05:51,570
+Torus sich ausbreitet und so
+
+174
+00:05:51,570 --> 00:05:52,650
+weiter.
+
+175
+00:05:52,650 --> 00:05:54,290
+Deshalb empfehle ich euch,
+
+176
+00:05:54,290 --> 00:05:55,690
+genau damit
+
+177
+00:05:55,690 --> 00:05:58,610
+anzufangen, und dann alles andere herzuleiten.
+
+178
+00:05:58,610 --> 00:06:00,250
+Dann wird sich alles für euch fügen.
+
+179
+00:06:00,250 --> 00:06:01,850
+Den Schaltplan hab ich mir selbst ausgedacht,
+
+180
+00:06:01,850 --> 00:06:03,890
+daran gearbeitet — ich sag's ehrlich —
+
+181
+00:06:03,890 --> 00:06:05,730
+aufgebaut,
+
+182
+00:06:05,730 --> 00:06:07,210
+basierend auf Daly.
+
+183
+00:06:07,210 --> 00:06:09,690
+Ich bin davon ausgegangen, dass sein ganzes Ding funktioniert.
+
+184
+00:06:09,690 --> 00:06:11,490
+Aber ich denke, wenn er den zweiten Schaltplan baut,
+
+185
+00:06:11,490 --> 00:06:13,370
+wird er nicht funktionieren — weil
+
+186
+00:06:13,370 --> 00:06:14,330
+hier
+
+187
+00:06:14,330 --> 00:06:16,130
+Anpassung erforderlich ist.
+
+188
+00:06:16,130 --> 00:06:19,330
+Bei ihm hat's einfach zufällig geklappt,
+
+189
+00:06:19,330 --> 00:06:21,370
+und ehrlich gesagt, wird das so wohl kein zweites Mal passieren —
+
+190
+00:06:21,370 --> 00:06:22,850
+ich sag's euch gerade heraus — weil
+
+191
+00:06:22,850 --> 00:06:24,530
+dieses ganze System
+
+192
+00:06:24,530 --> 00:06:26,410
+eine
+
+193
+00:06:26,410 --> 00:06:28,570
+genaue Anpassung erfordert.
+
+194
+00:06:28,570 --> 00:06:30,930
+Alles muss synchronisiert und
+
+195
+00:06:30,930 --> 00:06:32,290
+ordentlich gemacht sein.
+
+196
+00:06:32,290 --> 00:06:33,930
+Dieser Generator muss dringend
+
+197
+00:06:33,930 --> 00:06:35,130
+stabilisiert werden.
+
+198
+00:06:35,130 --> 00:06:37,570
+Sobald die Frequenz auch nur minimal driftet —
+
+199
+00:06:37,570 --> 00:06:39,930
+ist das System weg und fällt aus, weil
+
+200
+00:06:39,930 --> 00:06:40,970
+irgendwas
+
+201
+00:06:40,970 --> 00:06:43,210
+fehlt, das Netzteil
+
+202
+00:06:43,210 --> 00:06:44,170
+arbeitet nicht.
+
+203
+00:06:44,170 --> 00:06:46,010
+Die Spannung, die ich hier am
+
+204
+00:06:46,010 --> 00:06:48,050
+Ausgang bekomme, liegt irgendwo bei
+
+205
+00:06:48,050 --> 00:06:51,010
+270 Volt — gerade noch genug für das Netzteil.
+
+206
+00:06:51,010 --> 00:06:53,730
+Das hat eine Diodenbrücke drin.
+
+207
+00:06:53,730 --> 00:06:54,730
+Und
+
+208
+00:06:54,730 --> 00:06:56,050
+reicht nicht ganz,
+
+209
+00:06:56,050 --> 00:06:56,850
+was reinkommt,
+
+210
+00:06:56,850 --> 00:06:59,210
+wie ihr versteht — reicht nicht ganz.
+
+211
+00:06:59,210 --> 00:07:01,610
+Also, das ist die Sache, im Grunde,
+
+212
+00:07:01,610 --> 00:07:02,770
+das ist passiert.
+
+213
+00:07:02,770 --> 00:07:03,370
+Legt los!
+

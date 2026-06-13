@@ -1,0 +1,852 @@
+1
+00:00:00,000 --> 00:00:01,120
+Ciao a tutti!
+
+2
+00:00:01,120 --> 00:00:03,720
+Vi mostro un nuovo setup adesso.
+
+3
+00:00:03,720 --> 00:00:06,400
+L'ho costruito basandomi sullo schema di Daly — ve lo dico subito — perché
+
+4
+00:00:06,400 --> 00:00:08,960
+stavo usando un maledetto
+
+5
+00:00:08,960 --> 00:00:11,240
+generatore a nanosecondi che è un vero grattacapo,
+
+6
+00:00:11,240 --> 00:00:12,400
+sul serio.
+
+7
+00:00:12,400 --> 00:00:15,160
+La frequenza deriva, ma non è nemmeno il problema peggiore
+
+8
+00:00:15,160 --> 00:00:18,080
+in assoluto. Il problema peggiore è che ho già bruciato un sacco di
+
+9
+00:00:18,080 --> 00:00:21,400
+quei transistor 926.
+
+10
+00:00:21,400 --> 00:00:22,520
+Comunque,
+
+11
+00:00:22,520 --> 00:00:24,480
+volevo mettere tutto questo in una scatola sola,
+
+12
+00:00:24,480 --> 00:00:25,760
+ma non ci stava.
+
+13
+00:00:25,760 --> 00:00:27,760
+Purtroppo nemmeno il condensatore del serbatoio
+
+14
+00:00:27,760 --> 00:00:29,840
+dell'induttore ci stava. Be', okay.
+
+15
+00:00:30,400 --> 00:00:32,560
+Allora, questo è il cavo coassiale,
+
+16
+00:00:32,560 --> 00:00:34,520
+che è saldato lì — sì, quindi
+
+17
+00:00:34,520 --> 00:00:35,600
+praticamente la scheda
+
+18
+00:00:35,600 --> 00:00:38,000
+è lì appesa, ma
+
+19
+00:00:38,000 --> 00:00:39,720
+l'ho lasciata addirittura aperta perché ho continuamente bisogno di regolare
+
+20
+00:00:39,720 --> 00:00:41,440
+la frequenza con questo
+
+21
+00:00:41,440 --> 00:00:42,480
+resistore,
+
+22
+00:00:42,480 --> 00:00:44,680
+quello che c'è qui — è un
+
+23
+00:00:44,680 --> 00:00:46,840
+trimmer di frequenza multigiro.
+
+24
+00:00:46,840 --> 00:00:48,680
+Allora il regolatore da 5 volt —
+
+25
+00:00:48,680 --> 00:00:50,920
+praticamente ho dovuto
+
+26
+00:00:50,920 --> 00:00:52,560
+attaccarne uno separato.
+
+27
+00:00:52,560 --> 00:00:54,480
+Allora, cos'altro volevo dire?
+
+28
+00:00:54,480 --> 00:00:56,240
+Quindi qui,
+
+29
+00:00:56,240 --> 00:00:57,640
+qui ho
+
+30
+00:00:57,800 --> 00:00:59,760
+il generatore qui,
+
+31
+00:00:59,760 --> 00:01:01,840
+questa cosa, allora,
+
+32
+00:01:01,840 --> 00:01:05,080
+il trasformatore — questo su un toroide, in ferrite —
+
+33
+00:01:05,080 --> 00:01:07,480
+ho dovuto spostarlo anche lì.
+
+34
+00:01:07,480 --> 00:01:09,200
+Qui — in un altro posto,
+
+35
+00:01:09,200 --> 00:01:11,680
+non c'è proprio spazio qui, quindi è dovuto andare
+
+36
+00:01:11,680 --> 00:01:12,440
+là.
+
+37
+00:01:12,440 --> 00:01:14,560
+Qui c'è un ponte raddrizzatore, due
+
+38
+00:01:14,560 --> 00:01:17,040
+condensatori, e un regolatore da 5 volt
+
+39
+00:01:17,040 --> 00:01:19,200
+per la logica, proprio lì — e i pulsanti
+
+40
+00:01:19,200 --> 00:01:21,080
+commutano varie cose e basta.
+
+41
+00:01:21,080 --> 00:01:23,480
+L'alimentatore è esploso, purtroppo — perché
+
+42
+00:01:23,480 --> 00:01:25,040
+ho scollegato la massa.
+
+43
+00:01:25,040 --> 00:01:26,640
+Non bisogna mai scollegare la massa,
+
+44
+00:01:26,640 --> 00:01:28,640
+mai. Massa difettosa — e l'alimentatore
+
+45
+00:01:28,640 --> 00:01:31,120
+muore, e sapete come muore?
+
+46
+00:01:31,120 --> 00:01:33,560
+L'optoaccoppiatore — qualcosa deve perforarlo
+
+47
+00:01:33,560 --> 00:01:34,800
+in qualche modo.
+
+48
+00:01:34,800 --> 00:01:36,360
+Non so come succede, ma
+
+49
+00:01:36,360 --> 00:01:38,200
+succede. Ne ho già bruciato uno,
+
+50
+00:01:38,200 --> 00:01:40,120
+ho dovuto mettere uno da 5 ampere, ma
+
+51
+00:01:40,120 --> 00:01:41,960
+è più che sufficiente, perché il sistema
+
+52
+00:01:41,960 --> 00:01:43,680
+assorbe pochissima corrente
+
+53
+00:01:43,680 --> 00:01:46,760
+ed è abbondante per un carico da 500 watt.
+
+54
+00:01:46,760 --> 00:01:47,840
+Oggi testeremo
+
+55
+00:01:47,840 --> 00:01:49,720
+quel faro —
+
+56
+00:01:49,720 --> 00:01:53,080
+quello famoso — ve lo mostro subito.
+
+57
+00:01:53,080 --> 00:01:54,800
+Guardate, eccolo —
+
+58
+00:01:54,800 --> 00:01:58,000
+il faro
+
+59
+00:01:58,000 --> 00:02:00,680
+non è collegato a niente di niente — solo
+
+60
+00:02:00,680 --> 00:02:02,320
+la sua spina, tutto qui.
+
+61
+00:02:02,320 --> 00:02:03,880
+Questa è la presa
+
+62
+00:02:03,880 --> 00:02:06,680
+e l'interruttore del carico.
+
+63
+00:02:06,680 --> 00:02:08,360
+Cos'altro?
+
+64
+00:02:08,360 --> 00:02:10,280
+Andiamo al collegamento di massa, sì.
+
+65
+00:02:10,280 --> 00:02:13,280
+Un attimo — collego intanto la batteria.
+
+66
+00:02:13,280 --> 00:02:16,200
+Questa è la massa, giusto.
+
+67
+00:02:16,200 --> 00:02:18,400
+Questa è la massa — eccola — collegata al
+
+68
+00:02:18,400 --> 00:02:20,520
+radiatore, guardate qui.
+
+69
+00:02:20,520 --> 00:02:22,560
+È scoperta qui, e bisogna davvero
+
+70
+00:02:22,560 --> 00:02:24,520
+collegarla bene, perché altrimenti
+
+71
+00:02:24,520 --> 00:02:26,480
+l'alimentatore esploderà di nuovo e non riuscirò
+
+72
+00:02:26,480 --> 00:02:28,520
+a dimostrare niente.
+
+73
+00:02:28,520 --> 00:02:30,000
+Okay, allora —
+
+74
+00:02:30,000 --> 00:02:31,840
+accendiamolo.
+
+75
+00:02:31,840 --> 00:02:34,280
+Accendiamo il sistema — il LED si illumina,
+
+76
+00:02:34,280 --> 00:02:35,680
+quello che amate tutti
+
+77
+00:02:35,680 --> 00:02:38,040
+vedere — vedete? Il LED è acceso,
+
+78
+00:02:38,040 --> 00:02:39,840
+acceso, bene.
+
+79
+00:02:39,840 --> 00:02:41,040
+Ora
+
+80
+00:02:41,040 --> 00:02:44,840
+collego il carico — guardate.
+
+81
+00:02:44,840 --> 00:02:46,840
+Accendo il carico, lo accendo — il
+
+82
+00:02:46,840 --> 00:02:47,880
+faro è acceso —
+
+83
+00:02:47,880 --> 00:02:50,480
+500 watt.
+
+84
+00:02:50,480 --> 00:02:52,120
+Giusto, generatore a nanosecondi.
+
+85
+00:02:52,120 --> 00:02:53,480
+Ve lo dico subito —
+
+86
+00:02:53,480 --> 00:02:55,320
+la frequenza deriva.
+
+87
+00:02:55,320 --> 00:02:57,120
+Non ci si può nemmeno avvicinare.
+
+88
+00:02:57,120 --> 00:02:59,280
+La frequenza deriva, e tutto comincia
+
+89
+00:02:59,280 --> 00:03:01,560
+a vagare e il sistema smette di funzionare.
+
+90
+00:03:01,560 --> 00:03:03,080
+Adesso ditemi — cosa fate con
+
+91
+00:03:03,080 --> 00:03:03,920
+la batteria?
+
+92
+00:03:03,920 --> 00:03:06,600
+Scolleghiamola — vaffanculo.
+
+93
+00:03:06,600 --> 00:03:08,240
+Ecco, fatto.
+
+94
+00:03:08,240 --> 00:03:13,240
+Non serve qui — portatela via.
+
+95
+00:03:13,240 --> 00:03:15,880
+Guardate — il sistema sta girando.
+
+96
+00:03:15,880 --> 00:03:17,160
+Gira,
+
+97
+00:03:17,160 --> 00:03:19,960
+quindi avanti, ditemi che è un falso.
+
+98
+00:03:19,960 --> 00:03:21,360
+Questa è la massa.
+
+99
+00:03:21,360 --> 00:03:22,880
+Non voglio staccarla,
+
+100
+00:03:22,880 --> 00:03:25,400
+perché ho già bruciato l'alimentatore una volta.
+
+101
+00:03:25,400 --> 00:03:28,200
+Evidentemente c'è qualcosa che retroalimenta.
+
+102
+00:03:28,200 --> 00:03:30,360
+Be', pazienza.
+
+103
+00:03:30,360 --> 00:03:31,840
+Questo è
+
+104
+00:03:31,840 --> 00:03:34,400
+il marchingegno — ecco fatto.
+
+105
+00:03:34,400 --> 00:03:36,120
+500 watt
+
+106
+00:03:36,120 --> 00:03:37,640
+in funzione.
+
+107
+00:03:37,640 --> 00:03:39,200
+Ma devo spegnerlo,
+
+108
+00:03:39,200 --> 00:03:40,600
+perché quel transistor
+
+109
+00:03:40,600 --> 00:03:42,600
+si sta scaldando e salta presto.
+
+110
+00:03:42,600 --> 00:03:45,600
+Anche se qui ci sono solo 110 volt.
+
+111
+00:03:45,600 --> 00:03:47,160
+Sembra che
+
+112
+00:03:47,160 --> 00:03:49,960
+succederà a breve.
+
+113
+00:03:49,960 --> 00:03:51,040
+Comunque —
+
+114
+00:03:51,040 --> 00:03:53,360
+premiamo start — non parte.
+
+115
+00:03:53,360 --> 00:03:55,280
+Ecco.
+
+116
+00:03:55,280 --> 00:03:57,600
+Bisogna riavvicinare la batteria,
+
+117
+00:03:57,600 --> 00:03:59,480
+e poi succederà tutto.
+
+118
+00:03:59,480 --> 00:04:01,800
+Se volete vederlo,
+
+119
+00:04:01,800 --> 00:04:03,760
+posso mostrarvelo.
+
+120
+00:04:03,760 --> 00:04:06,320
+Guardate — ecco, premo start,
+
+121
+00:04:06,320 --> 00:04:08,760
+il ventilatore si avvia,
+
+122
+00:04:08,760 --> 00:04:09,760
+premo,
+
+123
+00:04:09,760 --> 00:04:12,440
+ah aspetta — devo prima spegnere il carico.
+
+124
+00:04:12,440 --> 00:04:13,840
+Okay, aspetta,
+
+125
+00:04:13,840 --> 00:04:15,960
+si sta avviando,
+
+126
+00:04:15,960 --> 00:04:17,800
+il sistema va e
+
+127
+00:04:17,800 --> 00:04:21,610
+il faro è acceso — ecco fatto.
+
+128
+00:04:21,610 --> 00:04:24,010
+Avevo collegato 550 watt,
+
+129
+00:04:24,010 --> 00:04:26,170
+lo spengo,
+
+130
+00:04:26,170 --> 00:04:27,530
+tutto si spegne.
+
+131
+00:04:27,530 --> 00:04:29,090
+Avevo collegato 550 watt
+
+132
+00:04:29,090 --> 00:04:31,010
+come carico — ha girato bene.
+
+133
+00:04:31,010 --> 00:04:33,050
+Ma questa cosa qui —
+
+134
+00:04:33,050 --> 00:04:34,650
+onestamente —
+
+135
+00:04:34,650 --> 00:04:36,090
+è una vera schifezza.
+
+136
+00:04:36,090 --> 00:04:38,690
+Bisogna sostituire qualcosa.
+
+137
+00:04:38,690 --> 00:04:40,650
+Come Daly sia riuscito a farlo funzionare,
+
+138
+00:04:40,650 --> 00:04:41,690
+non lo so,
+
+139
+00:04:41,690 --> 00:04:43,130
+ma molto probabilmente
+
+140
+00:04:43,130 --> 00:04:44,890
+perché
+
+141
+00:04:44,890 --> 00:04:47,250
+nel suo setup
+
+142
+00:04:47,250 --> 00:04:49,170
+qualcosa derivava, e probabilmente per questo
+
+143
+00:04:49,170 --> 00:04:50,570
+si è sincronizzato, o qualcosa del genere.
+
+144
+00:04:50,570 --> 00:04:52,570
+Vi dico la verità —
+
+145
+00:04:52,570 --> 00:04:55,050
+in questo caso serve un blocco di adattamento,
+
+146
+00:04:55,050 --> 00:04:57,330
+altrimenti tutto il sistema non funzionerà.
+
+147
+00:04:57,330 --> 00:04:59,490
+Non importa quanti impulsi e di che tipo
+
+148
+00:04:59,490 --> 00:05:01,130
+ci sbattete dentro,
+
+149
+00:05:01,130 --> 00:05:03,570
+non farà niente.
+
+150
+00:05:03,570 --> 00:05:04,970
+Non tormentatevi.
+
+151
+00:05:04,970 --> 00:05:06,810
+Bisogna studiare tutta la
+
+152
+00:05:06,810 --> 00:05:08,930
+teoria e poi lo saprete.
+
+153
+00:05:08,930 --> 00:05:10,370
+Nel frattempo — cavolo —
+
+154
+00:05:10,370 --> 00:05:12,410
+mi guardo intorno e ci sono così tanti "esperti"
+
+155
+00:05:12,410 --> 00:05:14,090
+seduti sui forum,
+
+156
+00:05:14,090 --> 00:05:16,090
+a chiacchierare, senza fare niente di concreto.
+
+157
+00:05:16,090 --> 00:05:18,930
+Allora — mettetevi sotto, usate la testa,
+
+158
+00:05:18,930 --> 00:05:21,410
+ascoltate quello che dicono gli scienziati, studiate
+
+159
+00:05:21,410 --> 00:05:23,490
+la teoria dei campi magnetici — e poi saprete
+
+160
+00:05:23,490 --> 00:05:25,650
+dove colpire e con cosa,
+
+161
+00:05:25,650 --> 00:05:27,650
+e come far ruotare quel campo
+
+162
+00:05:27,650 --> 00:05:29,730
+magnetico in questa bobina.
+
+163
+00:05:29,730 --> 00:05:31,130
+È cava, no?
+
+164
+00:05:31,130 --> 00:05:32,690
+Non c'è niente dentro.
+
+165
+00:05:32,690 --> 00:05:35,250
+I fili ci passano attraverso.
+
+166
+00:05:35,250 --> 00:05:37,770
+E quindi, per far funzionare tutto
+
+167
+00:05:37,770 --> 00:05:38,610
+qui,
+
+168
+00:05:38,610 --> 00:05:41,010
+basta studiare la teoria.
+
+169
+00:05:41,010 --> 00:05:43,410
+Io non sto su quei forum a leggere tutte
+
+170
+00:05:43,410 --> 00:05:44,730
+quelle stupidaggini.
+
+171
+00:05:44,730 --> 00:05:47,090
+Ascolto gli scienziati e le persone che
+
+172
+00:05:47,090 --> 00:05:49,970
+sanno come viaggia un campo magnetico, come si propaga
+
+173
+00:05:49,970 --> 00:05:51,570
+questo toro e così
+
+174
+00:05:51,570 --> 00:05:52,650
+via.
+
+175
+00:05:52,650 --> 00:05:54,290
+Quindi vi consiglio di
+
+176
+00:05:54,290 --> 00:05:55,690
+partire esattamente
+
+177
+00:05:55,690 --> 00:05:58,610
+da lì, e poi elaborare tutto il resto.
+
+178
+00:05:58,610 --> 00:06:00,250
+Poi si sistemerà tutto.
+
+179
+00:06:00,250 --> 00:06:01,850
+Ho elaborato lo schema da solo,
+
+180
+00:06:01,850 --> 00:06:03,890
+ci ho lavorato — ve lo dico chiaramente —
+
+181
+00:06:03,890 --> 00:06:05,730
+l'ho costruito,
+
+182
+00:06:05,730 --> 00:06:07,210
+basandomi su Daly.
+
+183
+00:06:07,210 --> 00:06:09,690
+Ho pensato che tutto il suo schema funzionasse.
+
+184
+00:06:09,690 --> 00:06:11,490
+Ma credo che se costruisce il secondo schema,
+
+185
+00:06:11,490 --> 00:06:13,370
+non funzionerà — perché
+
+186
+00:06:13,370 --> 00:06:14,330
+qui
+
+187
+00:06:14,330 --> 00:06:16,130
+è necessario l'adattamento.
+
+188
+00:06:16,130 --> 00:06:19,330
+Per lui è successo per caso,
+
+189
+00:06:19,330 --> 00:06:21,370
+e onestamente è difficile che accada di nuovo —
+
+190
+00:06:21,370 --> 00:06:22,850
+ve lo dico chiaro — perché
+
+191
+00:06:22,850 --> 00:06:24,530
+tutto questo sistema
+
+192
+00:06:24,530 --> 00:06:26,410
+richiede
+
+193
+00:06:26,410 --> 00:06:28,570
+un adattamento preciso.
+
+194
+00:06:28,570 --> 00:06:30,930
+Tutto deve essere sincronizzato e
+
+195
+00:06:30,930 --> 00:06:32,290
+fatto per bene.
+
+196
+00:06:32,290 --> 00:06:33,930
+Questo generatore deve essere stabilizzato
+
+197
+00:06:33,930 --> 00:06:35,130
+urgentemente.
+
+198
+00:06:35,130 --> 00:06:37,570
+Nel momento in cui la frequenza deriva anche di poco —
+
+199
+00:06:37,570 --> 00:06:39,930
+il sistema si blocca e si spegne, perché
+
+200
+00:06:39,930 --> 00:06:40,970
+qualcosa
+
+201
+00:06:40,970 --> 00:06:43,210
+manca, l'alimentatore non
+
+202
+00:06:43,210 --> 00:06:44,170
+funziona.
+
+203
+00:06:44,170 --> 00:06:46,010
+La tensione che ottengo qui in
+
+204
+00:06:46,010 --> 00:06:48,050
+uscita è intorno ai
+
+205
+00:06:48,050 --> 00:06:51,010
+270 volt — appena sufficiente per l'alimentatore.
+
+206
+00:06:51,010 --> 00:06:53,730
+Ha un ponte raddrizzatore dentro.
+
+207
+00:06:53,730 --> 00:06:54,730
+E
+
+208
+00:06:54,730 --> 00:06:56,050
+non è proprio sufficiente
+
+209
+00:06:56,050 --> 00:06:56,850
+quello che entra,
+
+210
+00:06:56,850 --> 00:06:59,210
+come capite — non è proprio sufficiente.
+
+211
+00:06:59,210 --> 00:07:01,610
+Quindi è questa la situazione, praticamente,
+
+212
+00:07:01,610 --> 00:07:02,770
+è quello che è successo.
+
+213
+00:07:02,770 --> 00:07:03,370
+Forza!
+
