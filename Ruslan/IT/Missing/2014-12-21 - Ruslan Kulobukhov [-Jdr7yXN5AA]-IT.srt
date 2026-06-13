@@ -1,0 +1,416 @@
+1
+00:00:00,000 --> 00:00:04,640
+Ciao a tutti — cercatori di energia libera e chiunque sia appassionato di queste cose.
+
+2
+00:00:04,640 --> 00:00:08,340
+Allora, beh, ecco cosa vi posso dire.
+
+3
+00:00:08,340 --> 00:00:11,840
+Per cominciare, ho assemblato alcune schede.
+
+4
+00:00:11,840 --> 00:00:17,840
+Questo è il generatore di pompaggio — quindi sì, c'è un anello di ferrite qui.
+
+5
+00:00:17,840 --> 00:00:22,840
+Allora questo sarà il generatore, questo sarà lo stabilizzatore di tensione,
+
+6
+00:00:22,840 --> 00:00:28,840
+e collegato alla sua uscita ci sarà questo bellissimo piccolo blocco
+
+7
+00:00:28,840 --> 00:00:32,840
+chiamato generatore di impulsi a nanosecondi.
+
+8
+00:00:32,840 --> 00:00:34,840
+Sì, e qui c'è la sua scheda, tra l'altro.
+
+9
+00:00:34,840 --> 00:00:36,840
+Va direttamente lì, sì.
+
+10
+00:00:36,840 --> 00:00:40,840
+Quindi il prossimo passo — ho un alimentatore pronto.
+
+11
+00:00:40,840 --> 00:00:45,840
+Ho preso uno più potente questa volta — ops, per poco non lo cadevo.
+
+12
+00:00:45,840 --> 00:00:50,840
+12 volt, 10 ampere — più che sufficienti per alimentare tutto questo setup.
+
+13
+00:00:50,840 --> 00:00:52,840
+Tutto questo andrà proprio qui.
+
+14
+00:00:52,840 --> 00:00:58,840
+Quindi ho già avvolto la bobina completamente in condizioni di laboratorio.
+
+15
+00:00:58,840 --> 00:01:02,840
+Tutti i suoi parametri sono perfettamente a norma.
+
+16
+00:01:02,840 --> 00:01:10,840
+C'è un cavo coassiale all'interno — è costruita a forma di granata.
+
+17
+00:01:10,840 --> 00:01:17,840
+I terminali dell'induttore sono da 1,5 mm² e l'uscita è da 1 mm².
+
+18
+00:01:17,840 --> 00:01:20,840
+Anche 1,5, beh in realtà — sì, è un 1,5.
+
+19
+00:01:20,840 --> 00:01:24,840
+Comunque, tutta questa roba verrà installata insieme.
+
+20
+00:01:24,840 --> 00:01:27,840
+Sarà come un mini generatore, diciamo.
+
+21
+00:01:27,840 --> 00:01:33,840
+Onestamente non so come andrà la messa a punto, ma ci proviamo.
+
+22
+00:01:34,840 --> 00:01:39,840
+Posterò i risultati online presto — come va a finire tutto quanto.
+
+23
+00:01:39,840 --> 00:01:42,840
+Vedremo come va.
+
+24
+00:01:42,840 --> 00:01:46,840
+Voglio dire una cosa a quelli che parlano troppo.
+
+25
+00:01:46,840 --> 00:01:52,840
+Buttati dentro, lavora, e costruisci prima i tuoi blocchi separati.
+
+26
+00:01:52,840 --> 00:01:55,840
+Non roba buttata insieme su qualche basetta a caso, come questo tipo di cose.
+
+27
+00:01:55,840 --> 00:01:57,840
+Ve lo mostro adesso.
+
+28
+00:01:57,840 --> 00:02:04,840
+Anch'io prima ero così — attaccavo tutto alla bell'e meglio — ma l'ho superata.
+
+29
+00:02:04,840 --> 00:02:10,840
+Beh, il nostro Roman preferisce farlo per bene — e lo fa, bisogna riconoscerlo.
+
+30
+00:02:10,840 --> 00:02:17,840
+Voglio dire, anch'io ho costruito tutto questo prima su schede del genere.
+
+31
+00:02:17,840 --> 00:02:21,840
+Avevo anche un Kacher costruito su una di quelle, tra l'altro.
+
+32
+00:02:21,840 --> 00:02:23,840
+Non ne è venuto fuori niente di buono, sì.
+
+33
+00:02:23,840 --> 00:02:26,840
+Poi sono passato a questo tipo di approccio.
+
+34
+00:02:26,840 --> 00:02:34,840
+Eccola qui, quella pasticciata — l'ho costruita lì, buttata insieme, c'è persino una sonda dell'oscilloscopio rimasta saldata.
+
+35
+00:02:34,840 --> 00:02:37,840
+Non funzionava un granché — c'era qualcosa che non andava.
+
+36
+00:02:37,840 --> 00:02:40,840
+Così ho deciso di metterla da parte per ora.
+
+37
+00:02:40,840 --> 00:02:43,840
+Ho fatto un po' di calcoli con la calcolatrice.
+
+38
+00:02:43,840 --> 00:02:46,840
+Per ora l'ho lasciata lì.
+
+39
+00:02:46,840 --> 00:02:51,840
+Ci tornerò dopo — lavorando con questi chip TL.
+
+40
+00:02:51,840 --> 00:02:56,840
+Ho deciso di aggiungere un driver perché funzionerà meglio con uno.
+
+41
+00:02:57,840 --> 00:02:59,840
+Allora, cos'altro?
+
+42
+00:02:59,840 --> 00:03:01,840
+Cos'altro?
+
+43
+00:03:03,840 --> 00:03:06,840
+I piani sono tanti, di ogni tipo.
+
+44
+00:03:06,840 --> 00:03:08,840
+Ma per ora — esperimenti.
+
+45
+00:03:08,840 --> 00:03:14,840
+Esperimenti — e raccomando a tutti di sperimentare, di scrivere tutto su un quaderno:
+
+46
+00:03:14,840 --> 00:03:16,840
+cosa non ha funzionato, cosa ha funzionato.
+
+47
+00:03:16,840 --> 00:03:18,840
+E poi andrà tutto bene.
+
+48
+00:03:18,840 --> 00:03:22,840
+Tra l'altro, eccola qui questa mini bobina per ora.
+
+49
+00:03:22,840 --> 00:03:26,840
+Ho già avvolto un'altra bobina — una come questa, sì.
+
+50
+00:03:26,840 --> 00:03:28,840
+Quella sarà per il generatore più grande.
+
+51
+00:03:28,840 --> 00:03:32,840
+È anch'essa costruita a forma di granata.
+
+52
+00:03:32,840 --> 00:03:34,840
+Credo che si veda, no.
+
+53
+00:03:34,840 --> 00:03:36,840
+Questa è da 2,5 mm².
+
+54
+00:03:36,840 --> 00:03:40,840
+Il filo — questo non mi funziona un granché.
+
+55
+00:03:40,840 --> 00:03:42,840
+L'ho buttato lì da parte.
+
+56
+00:03:42,840 --> 00:03:44,840
+Lo sistemo dopo.
+
+57
+00:03:44,840 --> 00:03:46,840
+C'è qualcosa che non mi convince.
+
+58
+00:03:46,840 --> 00:03:49,840
+Per qualche ragione le repliche più piccole vengono meglio.
+
+59
+00:03:49,840 --> 00:03:51,840
+Funzionano in modo più affidabile.
+
+60
+00:03:51,840 --> 00:03:56,840
+Una di esse — un generatore — è attualmente in fase di test da un'altra parte.
+
+61
+00:03:56,840 --> 00:03:59,840
+Purtroppo non posso mostrarvela adesso.
+
+62
+00:03:59,840 --> 00:04:02,840
+È quella che ho mostrato prima.
+
+63
+00:04:02,840 --> 00:04:08,840
+Ma penso che nel prossimo futuro la mostrerò di sicuro.
+
+64
+00:04:08,840 --> 00:04:13,840
+Sto pensando di smontarla in realtà, perché c'è del lavoro da fare.
+
+65
+00:04:13,840 --> 00:04:18,840
+E voglio anche collegare tutta questa roba qui —
+
+66
+00:04:18,840 --> 00:04:19,840
+tutto quello che vedete qui —
+
+67
+00:04:19,840 --> 00:04:21,840
+tutte queste lampadine che ci sono qui.
+
+68
+00:04:21,840 --> 00:04:23,840
+Ne ho un bel po' di tipi diversi.
+
+69
+00:04:23,840 --> 00:04:26,840
+Sono tipo un carico di qualità.
+
+70
+00:04:26,840 --> 00:04:28,840
+Soprattutto questa.
+
+71
+00:04:28,840 --> 00:04:30,840
+Tutte queste dovrebbero essere accese.
+
+72
+00:04:30,840 --> 00:04:34,840
+Beh, questa si accendeva su quel generatore senza problemi, tra l'altro.
+
+73
+00:04:34,840 --> 00:04:39,840
+E voglio davvero fare in modo che tutto questo continui a funzionare e a brillare.
+
+74
+00:04:39,840 --> 00:04:40,840
+Sì.
+
+75
+00:04:40,840 --> 00:04:49,840
+Quindi voglio dire — avrò presto qualcosa di estremo per i fan della FE.
+
+76
+00:04:49,840 --> 00:04:51,840
+Adesso sto lavorando al mini generatore.
+
+77
+00:04:51,840 --> 00:04:53,840
+Penso che andrà tutto bene.
+
+78
+00:04:53,840 --> 00:04:55,840
+Ho qui le custodie vuote pronte.
+
+79
+00:04:55,840 --> 00:04:58,840
+Volevo infilare il pezzo grosso in questa.
+
+80
+00:04:58,840 --> 00:05:02,840
+Ma non verrà un granché bene lì dentro.
+
+81
+00:05:02,840 --> 00:05:04,840
+Non che si tratti di estetica.
+
+82
+00:05:04,840 --> 00:05:06,840
+Vado con le più piccole.
+
+83
+00:05:06,840 --> 00:05:09,840
+Cerco di infilarci dentro tutta questa roba.
+
+84
+00:05:09,840 --> 00:05:11,840
+Dovrebbe starci tutta benissimo.
+
+85
+00:05:11,840 --> 00:05:14,840
+Non credo che serva niente di grande.
+
+86
+00:05:14,840 --> 00:05:17,840
+Questi scatolini vanno benissimo.
+
+87
+00:05:17,840 --> 00:05:20,840
+Così non sporge niente e basta.
+
+88
+00:05:20,840 --> 00:05:22,840
+Ok.
+
+89
+00:05:22,840 --> 00:05:24,840
+Allora, per concludere, ecco cosa voglio dire.
+
+90
+00:05:24,840 --> 00:05:27,840
+Nei commenti mi insultano e via dicendo.
+
+91
+00:05:27,840 --> 00:05:29,840
+Dicono che faccio dei falsi.
+
+92
+00:05:29,840 --> 00:05:34,840
+Ragazzi, guardate quanto lavoro c'è voluto per mettere insieme queste cose.
+
+93
+00:05:34,840 --> 00:05:35,840
+Così funzionino davvero.
+
+94
+00:05:35,840 --> 00:05:39,840
+A un certo punto potrei anche mostrarvi un oscillogramma.
+
+95
+00:05:39,840 --> 00:05:41,840
+Come appare tutto questo.
+
+96
+00:05:41,840 --> 00:05:43,840
+Per ora è troppo presto per fare i fanfaroni.
+
+97
+00:05:43,840 --> 00:05:52,840
+Non iniziamo con questo dramma inutile.
+
+98
+00:05:52,840 --> 00:05:55,840
+Lo capisco — tutti vogliono costruire qualcosa.
+
+99
+00:05:55,840 --> 00:05:58,840
+Quando lo vuoi davvero, di solito ce la fai.
+
+100
+00:05:58,840 --> 00:06:00,840
+È tutto quello che ho da dire su questo.
+
+101
+00:06:00,840 --> 00:06:03,840
+Avendolo capito da solo, per così dire.
+
+102
+00:06:03,840 --> 00:06:04,840
+Bene allora.
+
+103
+00:06:04,840 --> 00:06:06,840
+I miei pensieri sono tutti sparsi.
+
+104
+00:06:06,840 --> 00:06:08,840
+Bisogna solo sedersi e costruire. Tutto qui.
+
