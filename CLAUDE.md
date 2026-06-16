@@ -4,6 +4,22 @@ Subtítulos del canal de Ruslan (electrónica DIY, generadores, "free energy",
 bobina Kacher) en RU, EN, DE, ES, IT — más infraestructura de transcripción
 y doblaje en `colab/`. Mantenedor en Argentina; idioma de la conversación: ES.
 
+### Regla de oro: NO actuar sin un "Sí" explícito del mantenedor
+
+Esto pesa más que cualquier otra cosa en este archivo.
+
+- **Libre, sin pedir permiso:** leer/buscar código, diagnosticar, explicar,
+  proponer, correr comandos de solo-lectura.
+- **Requiere un "Sí" explícito del mantenedor en su último mensaje** ("sí",
+  "dale", "hacelo", o equivalente claro), para ESA acción concreta:
+  crear/editar/borrar archivos, (re)generar el notebook, `git add/commit/push`,
+  o mandar cualquier cosa afuera.
+- Que YO escriba "voy a X", "lo dejo andando" o "lo veníamos acordando" **NO es
+  autorización**. El OK lo da el mantenedor, no yo.
+- Un "Sí" para una cosa **no se extiende** a la siguiente: cada cambio nuevo
+  necesita su propio OK.
+- Ante cualquier duda: propongo, muestro el plan/diff, y **freno** hasta el "Sí".
+
 ### Estructura
 
 - `Ruslan/{RU,EN,DE,ES,IT}/<N>-<LANG>.srt` — los subs numerados 1..N son la
