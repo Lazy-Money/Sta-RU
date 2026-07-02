@@ -1,0 +1,759 @@
+1
+00:00:00,891 --> 00:00:07,121
+Ok, gente, ora vi faccio vedere come appare davvero l'oscillogramma — quello che tutti volete vedere.
+
+2
+00:00:07,281 --> 00:00:12,001
+Allora, questa è la bobina, ci colleghiamo a questa.
+
+3
+00:00:13,761 --> 00:00:17,721
+Frequenza 67,53, dove si osserva questo effetto.
+
+4
+00:00:18,181 --> 00:00:25,681
+E il duty cycle che otteniamo — ve lo dico esattamente — il duty cycle è solo l'1%.
+
+5
+00:00:26,521 --> 00:00:29,741
+Quindi, lo applichiamo, e cosa vediamo?
+
+6
+00:00:29,961 --> 00:00:30,761
+Ecco cosa vediamo.
+
+7
+00:00:31,381 --> 00:00:33,601
+Allora, è proprio questo qui.
+
+8
+00:00:34,241 --> 00:00:36,841
+Questa non è ferrorisonanza, questa è magnetostrizione.
+
+9
+00:00:37,801 --> 00:00:42,661
+Non capisco perché Roma l'abbia chiamata ferrorisonanza.
+
+10
+00:00:43,601 --> 00:00:44,581
+Ecco come funziona.
+
+11
+00:00:44,961 --> 00:00:47,121
+Un sacco di gente ve l'ha già mostrato.
+
+12
+00:00:47,961 --> 00:00:52,341
+Allora, la ferrite sale, scende, e poi risale dolcemente di nuovo.
+
+13
+00:00:52,341 --> 00:00:54,881
+Ecco come dovrebbe apparire l'oscillogramma.
+
+14
+00:00:55,321 --> 00:00:56,761
+Qualcosa del genere, diciamo.
+
+15
+00:00:56,981 --> 00:01:01,661
+E tra l'altro, la frequenza di pilotaggio non corrisponde esattamente.
+
+16
+00:01:01,741 --> 00:01:02,021
+Beh, fa niente.
+
+17
+00:01:02,861 --> 00:01:08,541
+La cosa principale, lo ripeto, è il principio di funzionamento...
+
+18
+00:01:08,541 --> 00:01:12,681
+E ora se comincio ad aumentare il duty cycle, guardate cosa succede.
+
+19
+00:01:14,881 --> 00:01:15,401
+Visto?
+
+20
+00:01:15,921 --> 00:01:18,001
+Ma non bisogna esagerare.
+
+21
+00:01:18,001 --> 00:01:24,661
+Questo collasso che parte dall'alto — non va bene.
+
+22
+00:01:25,001 --> 00:01:26,881
+Vuol dire che la corrente comincia a strozzare il transistor.
+
+23
+00:01:29,961 --> 00:01:31,361
+Non bisogna spingersi così tanto.
+
+24
+00:01:32,841 --> 00:01:37,021
+Quindi bisogna tenerlo d'occhio sulla scansione.
+
+25
+00:01:37,101 --> 00:01:42,161
+Qui il transistor si accende, e appena si spegne, la ferrite comincia a lavorare.
+
+26
+00:01:42,941 --> 00:01:43,761
+Tutto qui.
+
+27
+00:01:43,901 --> 00:01:49,501
+Quindi bisogna fare di tutto per evitare che questo generatore ingurgiti corrente.
+
+28
+00:01:49,881 --> 00:01:54,061
+Perché da questa ferrite non tirerete fuori molto.
+
+29
+00:01:54,801 --> 00:01:55,321
+Giusto.
+
+30
+00:01:55,661 --> 00:01:57,781
+Ed è per questo che il transistor qui è di questo tipo.
+
+31
+00:01:58,381 --> 00:01:58,901
+Questo è uno.
+
+32
+00:01:59,361 --> 00:01:59,881
+Secondo.
+
+33
+00:02:00,561 --> 00:02:04,081
+Quindi, anche tutto questo circuito qui ingurgita corrente.
+
+34
+00:02:04,321 --> 00:02:06,361
+Perché ci serve a 12 volt.
+
+35
+00:02:06,401 --> 00:02:08,701
+L'ho costruito per illuminare a 12 volt.
+
+36
+00:02:08,701 --> 00:02:11,901
+Vedete, mi serviva accendere la torcia a 12 volt.
+
+37
+00:02:12,581 --> 00:02:15,161
+Maledizione, perché dovrei volere 3 volt e compagnia bella.
+
+38
+00:02:15,581 --> 00:02:18,781
+Avrei potuto semplicemente prendere l'energia direttamente da qui.
+
+39
+00:02:19,341 --> 00:02:22,481
+Ottenete 6-7 volt qui da questa bobina.
+
+40
+00:02:22,601 --> 00:02:23,421
+Non potete ottenere di più.
+
+41
+00:02:23,541 --> 00:02:35,341
+Se cominciate ad avvolgere sopra, allora, siccome avete avvolto sopra, il campo magnetico non si trasferisce bene ad alta frequenza al secondo strato di spire.
+
+42
+00:02:35,341 --> 00:02:39,341
+Quindi è semplicemente uno schema che si ripete con tutte queste cose.
+
+43
+00:02:40,121 --> 00:02:41,521
+Prendete un nucleo più grande.
+
+44
+00:02:41,621 --> 00:02:42,401
+Beh, io ne ho preso uno.
+
+45
+00:02:42,581 --> 00:02:42,921
+E allora?
+
+46
+00:02:43,381 --> 00:02:44,081
+Niente di buono.
+
+47
+00:02:44,621 --> 00:02:48,841
+Ecco perché la bobina L3 è avvolta lungo tutta la lunghezza.
+
+48
+00:02:50,041 --> 00:02:51,801
+Più spire riuscite a farci stare, meglio è.
+
+49
+00:02:51,941 --> 00:02:52,741
+Ma lo ripeto.
+
+50
+00:02:53,221 --> 00:02:59,021
+A causa del PVC, probabilmente potreste usare un filo più sottile qui e avvolgere più spire.
+
+51
+00:02:59,181 --> 00:03:00,421
+Sì, la tensione salirebbe.
+
+52
+00:03:00,421 --> 00:03:06,601
+Ma comunque non accenderebbe quattro LED, quindi ho dovuto usare un secondo chip come inverter.
+
+53
+00:03:07,201 --> 00:03:11,561
+Quindi questo è un inverter flyback, 14 spire di filo.
+
+54
+00:03:12,381 --> 00:03:14,681
+Può dare praticamente qualsiasi tensione qui.
+
+55
+00:03:15,901 --> 00:03:16,841
+Vedete di cosa si tratta?
+
+56
+00:03:17,141 --> 00:03:18,621
+Quindi diciamo che mi servono 60 volt.
+
+57
+00:03:18,681 --> 00:03:22,721
+Posso tranquillamente tirare fuori 60 volt da questo flyback.
+
+58
+00:03:22,721 --> 00:03:30,821
+E a queste frequenze, la ferrite non "vede" niente di quello che succede.
+
+59
+00:03:31,381 --> 00:03:32,561
+Non si rimagnetizza.
+
+60
+00:03:32,701 --> 00:03:35,961
+Soprattutto considerando che questo generatore è in funzione.
+
+61
+00:03:36,761 --> 00:03:37,741
+Questo è tutto, gente.
+
+62
+00:03:39,121 --> 00:03:40,781
+La frequenza di questa ferrite, eccola qui.
+
+63
+00:03:40,881 --> 00:03:41,861
+67,53.
+
+64
+00:03:42,361 --> 00:03:42,501
+Giusto?
+
+65
+00:03:42,961 --> 00:03:44,221
+E il 2% di duty cycle.
+
+66
+00:03:45,581 --> 00:03:46,241
+Ecco qua.
+
+67
+00:03:47,561 --> 00:03:48,841
+Quindi, tipo...
+
+68
+00:03:48,841 --> 00:03:51,121
+Guardate, osservate, adesso lo scollego, tutto si spegnerà.
+
+69
+00:03:51,121 --> 00:03:51,841
+Ecco.
+
+70
+00:03:52,361 --> 00:03:52,921
+Ecco fatto.
+
+71
+00:03:53,261 --> 00:03:53,581
+Visto?
+
+72
+00:03:54,321 --> 00:03:54,581
+Ecco.
+
+73
+00:03:56,161 --> 00:03:57,281
+Lo ricollego.
+
+74
+00:03:57,381 --> 00:04:00,121
+Tutto, esattamente come sull'oscilloscopio.
+
+75
+00:04:01,021 --> 00:04:01,901
+Questo è il quadro.
+
+76
+00:04:04,881 --> 00:04:07,021
+Beh, è tutto abbastanza semplice, maledizione.
+
+77
+00:04:07,121 --> 00:04:08,121
+Niente di speciale.
+
+78
+00:04:08,561 --> 00:04:10,881
+Ed è così che si fa.
+
+79
+00:04:12,181 --> 00:04:13,001
+Non mi dispiace condividerlo.
+
+80
+00:04:13,121 --> 00:04:14,001
+Andate, costruitelo.
+
+81
+00:04:14,101 --> 00:04:17,121
+In un certo senso ho studiato l'argomento, ma so che questa torcia...
+
+82
+00:04:17,121 --> 00:04:18,661
+Beh, cioè...
+
+83
+00:04:20,641 --> 00:04:22,421
+Questo è un progetto mio.
+
+84
+00:04:22,641 --> 00:04:25,321
+Non è quello che aveva Akula con due generatori.
+
+85
+00:04:25,421 --> 00:04:30,901
+Quello per cui postava questi schemi dappertutto su internet.
+
+86
+00:04:31,161 --> 00:04:34,141
+Tipo, a quanto pare ci aveva messo questo...
+
+87
+00:04:34,141 --> 00:04:36,061
+Sarebbe stato meglio e compagnia bella, a quanto pare.
+
+88
+00:04:37,841 --> 00:04:42,201
+Non so cosa volesse ottenere, lavorando con una cosa del genere.
+
+89
+00:04:42,281 --> 00:04:44,021
+Tra l'altro, questo generatore l'ho effettivamente costruito.
+
+90
+00:04:44,021 --> 00:04:45,381
+Non sono mai riuscito a capire cosa...
+
+91
+00:04:46,001 --> 00:04:48,201
+avesse collegato male qui, o dove.
+
+92
+00:04:48,821 --> 00:04:50,081
+E perché esattamente così.
+
+93
+00:04:51,101 --> 00:04:54,061
+Ma questo mio generatore, sì, a me ha funzionato, tutto qui.
+
+94
+00:04:54,281 --> 00:04:56,101
+Ma come lo si regola?
+
+95
+00:04:56,701 --> 00:04:59,241
+Con un condensatore trimmer da 0,22 nF.
+
+96
+00:05:00,001 --> 00:05:01,761
+Viene da chiedersi, che razza di condensatore è poi?
+
+97
+00:05:03,081 --> 00:05:04,201
+Per regolare la frequenza?
+
+98
+00:05:05,021 --> 00:05:06,061
+Boh, non ne ho idea.
+
+99
+00:05:07,021 --> 00:05:11,301
+Onestamente, penso che tutti questi schemi siano assurdamente inverosimili.
+
+100
+00:05:11,401 --> 00:05:13,101
+Cioè, semplicemente non possono funzionare.
+
+101
+00:05:13,101 --> 00:05:15,881
+Molto probabilmente, questo circuito in particolare era effettivamente uno che funzionava.
+
+102
+00:05:17,001 --> 00:05:23,301
+Ma qui anche il trasformatore usa la risonanza di magnetostrizione.
+
+103
+00:05:24,921 --> 00:05:29,461
+Una delle bobine, molto probabilmente, sta usando questa risonanza di magnetostrizione.
+
+104
+00:05:30,061 --> 00:05:30,941
+Perché lo penso?
+
+105
+00:05:31,061 --> 00:05:32,101
+Perché...
+
+106
+00:05:32,661 --> 00:05:35,141
+Beh, lo schema è sbagliato, ma...
+
+107
+00:05:36,761 --> 00:05:39,301
+Manca qualcosa nel disegno qui.
+
+108
+00:05:41,141 --> 00:05:45,601
+Nello specifico, delle piastre che non sono disegnate su entrambi i lati, per creare un condensatore proprio dentro la bobina.
+
+109
+00:05:46,461 --> 00:05:49,501
+In modo che la bobina si carichi ed entri in risonanza per magnetostrizione.
+
+110
+00:05:50,241 --> 00:05:54,481
+In pratica, è quello che volevo realizzare qui, in questo sistema.
+
+111
+00:05:55,761 --> 00:05:56,401
+Ma...
+
+112
+00:05:56,401 --> 00:06:01,621
+Ha funzionato anche senza, quindi non ci ho mai lavorato oltre davvero.
+
+113
+00:06:02,061 --> 00:06:05,381
+Ho anche provato a far avvenire la magnetostrizione su qualcos'altro.
+
+114
+00:06:05,641 --> 00:06:08,081
+Su questa bobina proprio qui.
+
+115
+00:06:09,301 --> 00:06:12,581
+Sono riuscito a farla funzionare una volta, quindi ho riprovato.
+
+116
+00:06:13,581 --> 00:06:16,221
+Vedete, qui la stavo riavvolgendo, controllando come si comporta la ferrite.
+
+117
+00:06:16,461 --> 00:06:18,181
+Comunque, non fateci caso.
+
+118
+00:06:18,341 --> 00:06:19,981
+Cioè, non è avvolta nel modo giusto.
+
+119
+00:06:20,701 --> 00:06:20,981
+Ecco.
+
+120
+00:06:21,241 --> 00:06:26,861
+Poi, per farla breve, ho fatto due piastre e ho provato a portarla in risonanza.
+
+121
+00:06:26,981 --> 00:06:28,001
+Beh, non ha funzionato.
+
+122
+00:06:28,941 --> 00:06:31,361
+Non ne è venuto fuori niente di buono, per così dire.
+
+123
+00:06:31,501 --> 00:06:33,781
+Semplicemente non voleva funzionare, non collaborava.
+
+124
+00:06:33,901 --> 00:06:36,081
+Quindi, tipo...
+
+125
+00:06:36,081 --> 00:06:37,161
+E lasciamo perdere.
+
+126
+00:06:37,801 --> 00:06:38,101
+Giusto.
+
+127
+00:06:38,101 --> 00:06:41,081
+Per quanto riguarda questa ferrite, lo ripeto.
+
+128
+00:06:41,581 --> 00:06:42,621
+Beh, semplicemente non funziona.
+
+129
+00:06:43,501 --> 00:06:44,381
+Non funziona.
+
+130
+00:06:45,181 --> 00:06:48,641
+Cioè, certo, mostra questi bei picchi e tutto quanto.
+
+131
+00:06:48,741 --> 00:06:50,221
+Ecco, tra l'altro, questi picchi, eccoli lì.
+
+132
+00:06:50,821 --> 00:06:54,401
+Hanno un bel, ehm...
+
+133
+00:06:55,221 --> 00:06:58,701
+Sono così piccoli che semplicemente non riescono a caricare questo condensatore.
+
+134
+00:06:59,781 --> 00:07:00,221
+Quindi...
+
+135
+00:07:00,221 --> 00:07:01,261
+Purtroppo, questo è...
+
+136
+00:07:02,521 --> 00:07:04,201
+un'opzione che non funziona.
+
+137
+00:07:04,921 --> 00:07:07,161
+Ok, la gente ha chiesto anche di questa radio qui.
+
+138
+00:07:07,161 --> 00:07:08,361
+Quella Wi-Fi, come l'ho fatta.
+
+139
+00:07:09,141 --> 00:07:09,701
+E quella cosa.
+
+140
+00:07:09,861 --> 00:07:15,441
+Ragazzi, tutte le info su questo sono su GitHub.
+
+141
+00:07:16,321 --> 00:07:17,741
+Come fare una radio Wi-Fi.
+
+142
+00:07:17,861 --> 00:07:20,681
+O più precisamente, quel particolare progetto di radio.
+
+143
+00:07:20,801 --> 00:07:22,001
+Sì, basta cercarlo online.
+
+144
+00:07:22,221 --> 00:07:23,561
+Ci sono tutti i dettagli lì.
+
+145
+00:07:23,681 --> 00:07:24,941
+Cioè, ci sono un sacco di hobbisti che lo fanno.
+
+146
+00:07:25,881 --> 00:07:27,621
+Il progetto gira su Arduino.
+
+147
+00:07:28,321 --> 00:07:31,261
+Il case è una specie di mia invenzione.
+
+148
+00:07:32,301 --> 00:07:32,621
+Ecco.
+
+149
+00:07:33,141 --> 00:07:35,961
+C'è anche l'altoparlante e tutto il resto lì dentro.
+
+150
+00:07:35,961 --> 00:07:40,461
+Al suo interno, c'è anche una lettura, diciamo, della scarica della batteria.
+
+151
+00:07:40,621 --> 00:07:43,401
+Mostra sia quando si carica sia quando si scarica.
+
+152
+00:07:43,481 --> 00:07:44,561
+Tutta quella faccenda.
+
+153
+00:07:45,481 --> 00:07:45,781
+Ecco.
+
+154
+00:07:45,861 --> 00:07:47,061
+E cos'altro volevo dire.
+
+155
+00:07:47,221 --> 00:07:48,781
+Che è una cosa davvero comoda.
+
+156
+00:07:49,561 --> 00:07:51,801
+Il mondo intero, per così dire, proprio nel vostro ricevitore.
+
+157
+00:07:52,021 --> 00:07:53,021
+E la qualità del suono è fantastica.
+
+158
+00:07:53,561 --> 00:07:54,641
+In più ho anche fatto...
+
+159
+00:07:54,641 --> 00:07:56,721
+Potete collegare qui delle cuffie stereo.
+
+160
+00:07:56,801 --> 00:07:58,441
+Da qui esce un vero suono stereo.
+
+161
+00:07:59,381 --> 00:08:01,441
+E una porta di ricarica Type-C standard.
+
+162
+00:08:01,921 --> 00:08:04,001
+Quindi, ne ho fatti parecchi di questi.
+
+163
+00:08:04,001 --> 00:08:07,821
+Onestamente ho già perso il conto, per così dire.
+
+164
+00:08:07,961 --> 00:08:11,161
+O meglio, di quanti ne ho già prodotti.
+
+165
+00:08:11,521 --> 00:08:14,481
+Vengono sempre più belli.
+
+166
+00:08:14,941 --> 00:08:15,221
+Ecco.
+
+167
+00:08:15,281 --> 00:08:17,601
+Cioè, ormai sto già facendo quelli tipo rosso.
+
+168
+00:08:18,021 --> 00:08:19,201
+Con un altoparlante rosso.
+
+169
+00:08:19,341 --> 00:08:19,741
+Questo è tutto lì.
+
+170
+00:08:20,921 --> 00:08:23,241
+È diventata un po' una passione, per così dire.
+
+171
+00:08:23,321 --> 00:08:23,841
+Ma è semplicemente così.
+
+172
+00:08:24,261 --> 00:08:25,521
+Quello è per quando ho tempo libero.
+
+173
+00:08:26,421 --> 00:08:26,701
+Giusto.
+
+174
+00:08:26,761 --> 00:08:29,341
+Quindi, questo è quello che c'è ancora su questa torcia.
+
+175
+00:08:29,461 --> 00:08:32,121
+Ah, e tra l'altro, ne ho anche costruita una con i driver.
+
+176
+00:08:32,121 --> 00:08:35,271
+Ho anche provato a costruirla con due transistor.
+
+177
+00:08:36,021 --> 00:08:38,181
+In modo che il driver funzionasse sul secondo.
+
+178
+00:08:38,701 --> 00:08:40,481
+E questo circuito non mi ha funzionato.
+
+179
+00:08:41,041 --> 00:08:42,821
+Perché non potete semplicemente collegare un FET proprio qui.
+
+180
+00:08:43,821 --> 00:08:44,561
+Proprio in questo punto.
+
+181
+00:08:45,361 --> 00:08:46,661
+È qui che avevo il driver.
+
+182
+00:08:47,401 --> 00:08:48,411
+L'ho provato in quel modo.
+
+183
+00:08:48,981 --> 00:08:49,821
+L'ho copiato qui.
+
+184
+00:08:49,941 --> 00:08:52,241
+Ho visto qualcuno disegnare lo schema così da qualche parte.
+
+185
+00:08:53,281 --> 00:08:54,381
+Non funziona in quel modo.
+
+186
+00:08:54,901 --> 00:08:58,501
+Funziona solo quando il transistor bipolare è configurato correttamente.
+
+187
+00:08:59,161 --> 00:09:00,141
+In modalità composta.
+
+188
+00:09:00,141 --> 00:09:06,041
+Cioè dentro il chip TL qui c'è un transistor che potete abbinare a questo.
+
+189
+00:09:06,201 --> 00:09:07,541
+E allora funzionano.
+
+190
+00:09:09,081 --> 00:09:10,321
+Beh, più o meno è tutto.

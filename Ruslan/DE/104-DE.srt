@@ -1,0 +1,895 @@
+1
+00:00:01,001 --> 00:00:01,941
+Hallo zusammen.
+
+2
+00:00:02,381 --> 00:00:04,941
+Alle schreien: „Schaltplan posten, Schaltplan posten."
+
+3
+00:00:05,081 --> 00:00:06,121
+Kein Problem.
+
+4
+00:00:06,821 --> 00:00:08,121
+Hier ist euer Schaltplan, bitte schön.
+
+5
+00:00:09,361 --> 00:00:11,901
+Ich meine, ich hab das Ganze einfach davon abgezeichnet.
+
+6
+00:00:13,001 --> 00:00:18,581
+Hier ist der Schaltplan, wie das Ding funktioniert.
+
+7
+00:00:18,981 --> 00:00:25,721
+Ich hab hier einen kleinen Fehler gemacht, es sind 2200 Mikrofarad.
+
+8
+00:00:25,841 --> 00:00:30,321
+Der Kondensator von hier ist gerade leider im Müll gelandet.
+
+9
+00:00:30,921 --> 00:00:32,681
+Der liegt hier einfach so rum.
+
+10
+00:00:33,861 --> 00:00:34,041
+Hier ist er.
+
+11
+00:00:35,261 --> 00:00:37,001
+Das ist mit ihm passiert.
+
+12
+00:00:37,261 --> 00:00:41,961
+Er ist aufgequollen, und, kurz gesagt, ich erklär gleich warum.
+
+13
+00:00:41,961 --> 00:00:45,001
+Deshalb funktioniert die Taschenlampe nicht.
+
+14
+00:00:47,101 --> 00:00:49,781
+Hier ist der Schaltplan.
+
+15
+00:00:49,941 --> 00:01:01,481
+Hier ist eine Nahaufnahme vom ganzen Schaltplan — ich hab alles von diesem Gerät abgepaust, weil ich im Grunde alles aus dem Gedächtnis gemacht hab, direkt von der Taschenlampe selbst.
+
+16
+00:01:03,341 --> 00:01:07,301
+Jedenfalls, hier haben wir eine Diodenbrücke.
+
+17
+00:01:08,281 --> 00:01:11,281
+Und dieser Kondensator sitzt auch genau hier.
+
+18
+00:01:11,901 --> 00:01:12,661
+Hier ist die Diodenbrücke.
+
+19
+00:01:12,801 --> 00:01:13,761
+Da ist noch kein Kondensator.
+
+20
+00:01:14,681 --> 00:01:15,201
+Was kommt als Nächstes.
+
+21
+00:01:17,441 --> 00:01:18,161
+Schalter.
+
+22
+00:01:19,021 --> 00:01:19,841
+Noch eine Diode.
+
+23
+00:01:20,201 --> 00:01:20,921
+Irgendeine.
+
+24
+00:01:21,001 --> 00:01:25,021
+Man kann diese 40-irgendwas nehmen, glaub 4007.
+
+25
+00:01:25,741 --> 00:01:26,221
+Die funktioniert.
+
+26
+00:01:26,341 --> 00:01:27,181
+Hier ist der Schalter.
+
+27
+00:01:28,141 --> 00:01:29,141
+Spule L1.
+
+28
+00:01:29,621 --> 00:01:30,661
+Hier ist sie beschriftet.
+
+29
+00:01:31,201 --> 00:01:31,901
+Hier ist die Spule.
+
+30
+00:01:31,901 --> 00:01:34,441
+Sie hat 7 Windungen Draht.
+
+31
+00:01:36,561 --> 00:01:38,501
+0.75 mm².
+
+32
+00:01:38,841 --> 00:01:40,621
+PVC-Isolierung, das ist ein Muss.
+
+33
+00:01:40,901 --> 00:01:41,201
+Warum?
+
+34
+00:01:41,441 --> 00:01:46,121
+Weil wir es mit Vibration des Kerns zu tun haben.
+
+35
+00:01:46,581 --> 00:01:50,481
+Damit ich nichts aufhalte, erklär ich das mit dem Kern gleich separat.
+
+36
+00:01:50,641 --> 00:01:57,981
+Also, damit der Prozess nicht behindert wird, muss der Kern, sagen wir, ein bisschen Spiel haben.
+
+37
+00:01:58,601 --> 00:02:00,721
+Deshalb geht er im Grunde am Ende auch kaputt.
+
+38
+00:02:00,841 --> 00:02:01,921
+Machen wir weiter.
+
+39
+00:02:02,201 --> 00:02:03,201
+Spule L2.
+
+40
+00:02:03,681 --> 00:02:05,701
+Sie hat 14 Windungen, doppelt so viele.
+
+41
+00:02:05,861 --> 00:02:07,421
+Warum genau dieser Abstand?
+
+42
+00:02:08,121 --> 00:02:13,521
+Also, diese Spule ist seitlich versetzt gewickelt, damit es zirkuliert.
+
+43
+00:02:14,081 --> 00:02:17,161
+Dadurch entsteht Vibration nur auf einer Hälfte des Kerns.
+
+44
+00:02:17,721 --> 00:02:21,281
+Also, der zweite Teil sind die 14 Windungen.
+
+45
+00:02:21,601 --> 00:02:26,821
+Diese Spule läuft mit einer sehr hohen Frequenz, und der Ferrit „sieht" so eine hohe Frequenz nicht.
+
+46
+00:02:28,021 --> 00:02:30,841
+Also bewegt sich da vielleicht nur ein kleines bisschen was.
+
+47
+00:02:31,701 --> 00:02:40,361
+Aber je höher die Frequenz dieses Generators wird — achtet drauf, an Pin fünf ist ein 4.7-Nanofarad-Kondensator.
+
+48
+00:02:41,041 --> 00:02:54,241
+Und mit Frequenz und Tastverhältnis stellen wir das so ein, dass dieser Generator für uns als Wandler für die LEDs funktioniert, um 12 Volt zu bekommen.
+
+49
+00:02:55,081 --> 00:03:01,781
+Und schaut, da ist diese kleine Rückkopplungsschleife, die ist eigentlich ziemlich sinnlos — ich meine, man könnte es stattdessen einfach so machen.
+
+50
+00:03:02,081 --> 00:03:04,841
+Man kann es einfach direkt anschließen und sich das hier und das hier sparen.
+
+51
+00:03:05,001 --> 00:03:07,501
+Das funktioniert auch alles bestens.
+
+52
+00:03:07,581 --> 00:03:13,001
+Also dieser Kondensator — na ja, ich hab 47 Mikrofarad eingezeichnet — hier ist er.
+
+53
+00:03:13,241 --> 00:03:15,221
+Lass mich die Pinzette holen, ich zeig's euch.
+
+54
+00:03:15,521 --> 00:03:17,401
+Hier ist er, dieser Kondensator.
+
+55
+00:03:18,321 --> 00:03:25,801
+Dieser Kondensator, nach dem alle die ganze Zeit gefragt haben — das ist der, um den es geht.
+
+56
+00:03:26,701 --> 00:03:33,441
+Hier ist er, ja — es gibt hier zwei 100-Mikrofarad-Kondensatoren, aber eigentlich geht's nur um diesen einen.
+
+57
+00:03:35,381 --> 00:03:36,101
+Was kommt als Nächstes?
+
+58
+00:03:37,181 --> 00:03:39,361
+Ach ja, genau, da klebt noch einer hier dran.
+
+59
+00:03:40,961 --> 00:03:42,741
+Der kleine hier, ich glaub der ist da drüben.
+
+60
+00:03:42,981 --> 00:03:43,761
+Muss mal schauen.
+
+61
+00:03:44,081 --> 00:03:51,161
+Im Grunde ist das egal — ich sag's euch ganz ehrlich, der Effekt ändert sich wegen dieser Kondensatoren nicht.
+
+62
+00:03:51,301 --> 00:03:51,821
+Was kommt als Nächstes?
+
+63
+00:03:52,541 --> 00:04:05,021
+Jetzt haben wir den zweiten Magnetostriktionsgenerator, das Ding da drüben — ich nenn ihn gar nicht erst beim Namen, nur so ein sturer Dickschädel, der sich immer weiter reinsteigert und keine Ahnung hat, was das überhaupt ist.
+
+64
+00:04:05,761 --> 00:04:11,661
+Er denkt, Magnetostriktion passiert nur, wenn man hier ein kleines Stück Magnet reinsteckt.
+
+65
+00:04:12,401 --> 00:04:16,541
+Klar, das stimmt, aber in diesem Fall braucht man das nicht.
+
+66
+00:04:17,821 --> 00:04:25,681
+Also hier, das Auslösen — sagen wir, das Auslösen der Erzeugung, der Vibration dieses Kerns — passiert mithilfe dieses Generators.
+
+67
+00:04:26,681 --> 00:04:35,381
+Also hier haben wir einen Transistor verbaut, sowas wie diesen KT837 oder BD244, den kann man nehmen.
+
+68
+00:04:36,141 --> 00:04:44,201
+Also in diesem System verwendet es, wie soll ich sagen, den Transistor, der genau hier sitzt.
+
+69
+00:04:44,361 --> 00:04:56,121
+Also er wird als Verbundtransistor verwendet, ein Anschluss geht auf Masse, der andere auf die Basis, und es funktioniert sofort.
+
+70
+00:04:56,341 --> 00:05:01,181
+Also mehr braucht's nicht — man kann sozusagen alles genau hier sehen.
+
+71
+00:05:01,461 --> 00:05:05,561
+Hier ist die Basis des Transistors, die geht direkt zu diesem Ding.
+
+72
+00:05:06,421 --> 00:05:07,221
+Schauen wir mal.
+
+73
+00:05:07,361 --> 00:05:10,841
+Hier ist es, hier ist der Pin, und der geht direkt zur Basis des Transistors.
+
+74
+00:05:11,021 --> 00:05:23,461
+Als Nächstes kommt das Gehäuse — ja, zum Gehäuse, und das Plus geht durch die Spule, weil dieser Anschluss hier, der hier, das gemeinsame Plus ist.
+
+75
+00:05:24,161 --> 00:05:28,001
+Also gemeinsames Plus eins und gemeinsames Plus zwei.
+
+76
+00:05:28,661 --> 00:05:33,561
+Diese Verbindung hier, die hier und die hier, die ist genau hier.
+
+77
+00:05:35,721 --> 00:05:44,261
+Okay, was wollte ich noch zeigen — die Leute checken's einfach nicht, na gut, gehen wir's der Reihe nach durch.
+
+78
+00:05:45,681 --> 00:05:51,061
+Was kommt als Nächstes — die abnehmbare Spule, hier ist sie, L3, genau da beschriftet.
+
+79
+00:05:52,241 --> 00:06:01,741
+Letztes Mal war dieser Anschluss hier — lass mich das umdrehen, ich zeig's euch — er war genau hier an die gemeinsame Masse gelötet, also läuft er bei mir im Kreis.
+
+80
+00:06:02,101 --> 00:06:06,641
+Ja, das ist hier ein bisschen schlampig, weil das schon so 200 Mal umgebaut wurde, sozusagen immer wieder getestet.
+
+81
+00:06:07,721 --> 00:06:12,481
+Also jedenfalls, was kommt als Nächstes, was wollte ich sagen.
+
+82
+00:06:12,561 --> 00:06:18,821
+Genau, hier ist L3, bitte schön, und das ist L3, hier ist sie.
+
+83
+00:06:20,241 --> 00:06:36,121
+Was ist noch unklar — hier wäre es gut, noch einen, sagen wir, 0.1-Mikrofarad-, also 100-Nanofarad-Kondensator parallel zu diesem hier zu setzen, um einige der verschiedenen Spitzen abzufangen, aber die
+
+84
+00:06:36,121 --> 00:06:39,241
+sind sowieso da, diese Spitzen, ihr wisst schon, was ich meine.
+
+85
+00:06:39,821 --> 00:06:53,361
+Diese Spule, diese Spule, die funktioniert in diesem System nicht so, wie man denken würde, also dass da eine Transformation von der oberen Spule kommt.
+
+86
+00:06:53,941 --> 00:06:59,861
+Nein, von der oberen Spule, von L2, der mit den 14 Windungen, kommt überhaupt keine Transformation.
+
+87
+00:06:59,941 --> 00:07:05,101
+Der Ferrit „sieht" den Betrieb bei dieser Frequenz nicht, das liegt da über 32 Kilohertz.
+
+88
+00:07:05,681 --> 00:07:11,221
+Dieses quietschende, klingelnde Geräusch, das ihr hört, das kommt von der Harmonischen, von der niedrigen Frequenz dieses Dings.
+
+89
+00:07:11,941 --> 00:07:15,801
+Achtet drauf, an Pin fünf ist ein 68-Nanofarad-Kondensator,
+
+90
+00:07:19,141 --> 00:07:32,241
+also für diesen Generator hier ist es eine gute Idee, die Beschaltung ordentlich aufzubauen, sowas wie 100 Nanofarad da reinzusetzen — all diese Kondensatoren müssen hier sein, damit es weniger Restwelligkeit von allen Sorten gibt.
+
+91
+00:07:33,021 --> 00:07:43,181
+Als Nächstes — ich mag es überhaupt nicht, wenn der Chip auf jede kleine Welligkeit, jede kleine Störung reagiert, weil man dann nichts mehr richtig einstellen kann.
+
+92
+00:07:43,241 --> 00:07:45,961
+Man kann nicht sagen, was, wie man so sagt, das durcheinanderbringt.
+
+93
+00:07:46,341 --> 00:07:49,081
+Also jedenfalls, alle fragen dauernd, was ist mit dem Oszillogramm, was ist mit dem Oszillogramm?
+
+94
+00:07:49,081 --> 00:07:53,261
+Leute, ehrlich gesagt, da oben zeigt sich nur ein Chaos, ein Chaos.
+
+95
+00:07:53,341 --> 00:07:53,641
+Warum?
+
+96
+00:07:54,241 --> 00:08:03,081
+Weil diese Magnetostriktion, wenn sie diese Wirkung auf den Ferrit erzeugt, was dann passiert, ist, dass der Ferrit zittert.
+
+97
+00:08:04,441 --> 00:08:08,221
+Dementsprechend kippen diese magnetischen Domänen ständig um.
+
+98
+00:08:09,101 --> 00:08:18,301
+Und weil diese Spule das alles macht, ist das, was passiert, im Grunde eine Bewegung der magnetischen Domänen überall herum.
+
+99
+00:08:19,341 --> 00:08:24,701
+Und weil das passiert, wird hier eine EMK induziert.
+
+100
+00:08:25,181 --> 00:08:32,821
+Aber diese EMK ist instabil, weil da noch eine andere Spule mit drauf arbeitet, die hat halt auch ein bisschen Einfluss.
+
+101
+00:08:33,001 --> 00:08:35,021
+Nicht viel, aber es passiert schon etwas.
+
+102
+00:08:35,781 --> 00:08:45,221
+Und so entsteht diese Kombination, und deswegen gibt es diesen wirklich großen, sagen wir, Aufruhr im Kern.
+
+103
+00:08:45,961 --> 00:08:50,641
+Und das verursacht eine große EMK-Spitze auf der unteren Spule.
+
+104
+00:08:51,741 --> 00:08:58,381
+Dank dem gleichrichten wir das dann und laden diesen 2200er-Kondensator auf, der gerade nicht hier ist.
+
+105
+00:08:58,441 --> 00:08:59,501
+Na ja, der ist hochgegangen, scheiß drauf.
+
+106
+00:08:59,501 --> 00:09:01,801
+Der ist einfach aufgequollen und hat aufgehört zu funktionieren.
+
+107
+00:09:02,841 --> 00:09:04,621
+Darum kümmere ich mich später.
+
+108
+00:09:04,861 --> 00:09:08,861
+Es gibt einfach ein paar Typen, die mich mit ihrer Dummheit total fertiggemacht haben.
+
+109
+00:09:09,341 --> 00:09:17,001
+Diese Person hat nicht nur noch nie in ihrem Leben irgendwas gemacht oder gebaut und hat keine Ahnung, sie labert auch noch Unsinn — ich nenn keine Namen, aber trotzdem.
+
+110
+00:09:17,261 --> 00:09:19,561
+Und er hetzt auch noch all die anderen Deppen auf.
+
+111
+00:09:20,201 --> 00:09:21,821
+Leute, versucht nicht, mich zu verarschen.
+
+112
+00:09:21,921 --> 00:09:37,741
+Ehrlich gesagt stört mich das alles nicht, aber die Idioten tun mir leid, die sich das schnappen und anfangen — ohne wirklich was erreicht zu haben, ohne jemals wirklich ihren Kopf benutzt zu haben — loszurennen, um dies und das zu verkaufen,
+
+113
+00:09:38,821 --> 00:09:40,861
+sagen wir, und sich das ganze Verdienst selbst unter den Nagel reißen.
+
+114
+00:09:40,941 --> 00:09:42,521
+Das ist nicht richtig.
+
+115
+00:09:42,601 --> 00:09:42,841
+Genau.
+
+116
+00:09:42,941 --> 00:09:47,701
+Also früher oder später kommt so ein Mist raus, und ihr werdet euch ordentlich die Finger verbrennen.
+
+117
+00:09:47,821 --> 00:09:49,761
+Also benutzt euren Kopf.
+
+118
+00:09:50,441 --> 00:09:50,841
+Was kommt als Nächstes?
+
+119
+00:09:51,001 --> 00:09:52,041
+Diese Dioden hier, ja?
+
+120
+00:09:52,181 --> 00:09:54,841
+Also, na ja, ich hab da sowas wie eine STTH, oder?
+
+121
+00:09:56,481 --> 00:10:11,761
+Genau an dieser Stelle, diese Diode hab ich, diese STTH, ja — das war's, überall sonst gibt's keine mehr, ich meine, was ich meinte war, hier hab ich eine Diodenbrücke eingebaut, man sieht's, und dort kann man jede
+
+122
+00:10:11,761 --> 00:10:16,761
+Art einbauen, die hohe Frequenz einigermaßen gut durchlässt — genauer gesagt, durchlässt sie.
+
+123
+00:10:17,781 --> 00:10:18,761
+Okay, was kommt als Nächstes?
+
+124
+00:10:19,941 --> 00:10:20,541
+Transistoren.
+
+125
+00:10:21,201 --> 00:10:23,001
+Na ja, die Transistoren sind hier alle beschriftet.
+
+126
+00:10:23,001 --> 00:10:33,181
+BD140, oder dieser KT814, KT816, IRF3205, ich meine, was ist daran unklar.
+
+127
+00:10:33,601 --> 00:10:39,641
+Die Diode, da ist sie, versteckt sich neben dem Transistor — man kann sie sehen, hoffe ich, genau dort.
+
+128
+00:10:41,901 --> 00:10:44,601
+Vierundvierzig, einundvierzig, achtundvierzig, ja, da ist sie.
+
+129
+00:10:45,441 --> 00:10:47,501
+Einundvierzig, achtundvierzig, was ist daran falsch?
+
+130
+00:10:49,581 --> 00:10:52,581
+Okay, was wollte ich noch sagen?
+
+131
+00:10:53,321 --> 00:11:00,701
+Okay, das war's, die LEDs, hier sind sie, schaut, in Reihe geschaltet.
+
+132
+00:11:01,161 --> 00:11:08,961
+Hier sind sie, man kann sehen, sie sind angelötet, sie laufen in Reihe durch einen Widerstand.
+
+133
+00:11:08,961 --> 00:11:21,701
+Na ja, ich hab den Widerstand hier nicht eingezeichnet, also zeichnen wir ihn ein, weil, wie man so sagt, manche Leute an allem rummäkeln werden — ja, na jedenfalls, genau hier, hier sitzt der Widerstand.
+
+134
+00:11:21,701 --> 00:11:26,161
+Ach, 220, okay, gut.
+
+135
+00:11:27,741 --> 00:11:41,541
+Der ist sozusagen zum Schutz, den muss man einbauen, weil, wenn man die Spannung an den LEDs über 12 treibt, brennen die Dioden durch, weil jede LED eine Schwelle von 3 Volt hat.
+
+136
+00:11:42,301 --> 00:11:43,021
+Was noch?
+
+137
+00:11:44,021 --> 00:11:52,981
+Und das war's im Grunde, kurz gesagt — Tastverhältnis, Frequenz, das wird hier alles eingestellt, das ist der Hauptgenerator, ich meine, auf dem Schaltplan ist dieser Generator hier der Hauptgenerator.
+
+138
+00:11:54,101 --> 00:11:59,081
+Und denkt bloß nicht, dass ihr das einfach baut und es sofort funktioniert.
+
+139
+00:11:59,081 --> 00:12:15,381
+Ihr müsst den Kern zum Klingen bringen — auf seiner eigenen Striktionsresonanzfrequenz klingen — ich meine, deshalb nenn ich es Magnetostriktion und nicht anders, weil es klingt und
+
+140
+00:12:15,381 --> 00:12:16,261
+sich ausdehnt.
+
+141
+00:12:16,261 --> 00:12:19,841
+Und jetzt der wichtigste Punkt, den ich euch sagen wollte.
+
+142
+00:12:20,341 --> 00:12:27,641
+Genau hier, im Original, gibt es diese Plastikteile, die hier reinkommen, und die nutzen sich komplett ab, und man kann es sehen.
+
+143
+00:12:28,661 --> 00:12:35,761
+Und sie zermahlen sich dadurch einfach zu Pulver, wegen dieser ganzen Sache.
+
+144
+00:12:35,761 --> 00:12:45,701
+Und der Ferrit fängt an, na ja, kurz gesagt, er fängt an sich zu zersetzen, ja, ich meine, er bröckelt auseinander — wie hier, dieses Stück ist abgesplittert, dieser Ferrit funktioniert nicht mehr.
+
+145
+00:12:46,081 --> 00:12:46,241
+Das war's.
+
+146
+00:12:47,281 --> 00:12:58,621
+Also was ich sagen will ist, man nimmt ein Material, das sich nicht abnutzt, idealerweise sowas wie Getinax oder was auch immer.
+
+147
+00:12:58,621 --> 00:13:11,541
+Also man macht so einen, na, ungefähr 0.5 bis 0.6 Millimeter Spalt und setzt das ein.
+
+148
+00:13:11,641 --> 00:13:12,421
+Wofür ist der Spalt?
+
+149
+00:13:12,901 --> 00:13:20,621
+Der Spalt ist dafür da, dass die ganze Sache klingt, dass das Magnetfeld übertragen wird, versteht ihr?
+
+150
+00:13:20,761 --> 00:13:27,941
+Mit dem Spalt bekommen wir vor allem keinen geschlossenen magnetischen Kreis — das ist die Hauptsache, das ist ein wirklich wichtiger Punkt.
+
+151
+00:13:29,001 --> 00:13:39,981
+Weil gleich irgendein Typ anfängt, mir zu erklären, wie Transformatoren funktionieren, verdammt, das ist einfach... Ich war gestern platt, als ich das gelesen hab, oder vorgestern, wann auch immer, ich meine, das war...
+
+152
+00:13:39,981 --> 00:13:55,761
+Mann, komm schon, Alter — geh nicht einfach zur Schule, lies die ganze Literatur und versteh sie auf deine eigene Art, du solltest auch mal wirklich was tun, wahrscheinlich, und deine eigenen Schlüsse daraus ziehen, verdammt, oder
+
+153
+00:13:55,761 --> 00:13:58,201
+sonst ist es einfach unglaublich verkorkst, da geht's nirgendwo mehr weiter, verdammt noch mal.
+
+154
+00:13:58,201 --> 00:14:05,521
+Und es gibt so viele dumme Leute da draußen, die rumsitzen und versuchen, alle zu verarschen, die Leuten Mist an den Kopf werfen — ja, geht zur Hölle, ihr wisst schon wohin, ihr kriegt überhaupt nichts.
+
+155
+00:14:06,021 --> 00:14:21,541
+Ein normaler Mensch findet das raus, aber ihr, ihr verdammten Idioten, ihr werdet einfach weiter rumsitzen und labern, und dabei kommt nichts raus, und ihr werdet weiter mit den Zähnen knirschen, und, wie man so sagt, das bringt alles nichts
+
+156
+00:14:21,541 --> 00:14:21,941
+Gutes.
+
+157
+00:14:21,941 --> 00:14:24,161
+Okay, jetzt zu den vernünftigen Leuten da draußen.
+
+158
+00:14:24,341 --> 00:14:30,301
+Also, der Kern, der Kern — ich sag's noch mal — ihr müsst unbedingt mit einem Spalt arbeiten.
+
+159
+00:14:30,741 --> 00:14:39,761
+Falls an beiden Enden ein Spalt sein muss, sag ich euch gleich, alle reden da ständig drüber, und natürlich funktioniert so ein Kern einfach nicht.
+
+160
+00:14:39,761 --> 00:14:43,141
+Ich hab versucht, mit so einem Kern zu arbeiten.
+
+161
+00:14:43,741 --> 00:14:50,301
+Also seine Resonanzfrequenz ist noch niedriger, weil die Spalte groß sind, und ihr werdet es nicht zum Laufen bringen.
+
+162
+00:14:50,441 --> 00:14:53,321
+Also müsst ihr einen möglichst kleinen Kern nehmen.
+
+163
+00:14:54,201 --> 00:14:59,661
+Und je kleiner er ist, desto mehr könnt ihr ihn in die Magnetostriktions-Sättigung treiben.
+
+164
+00:15:00,201 --> 00:15:07,981
+Ich weiß, das klingt komisch, ich weiß, das ist nicht wissenschaftlich, aber Leute, nicht alles Wissenschaftliche wird euch erzählt.
+
+165
+00:15:08,141 --> 00:15:13,541
+Man erzählt euch nur, was praktisch anwendbar ist, aber was wirklich passiert — das bekommt ihr nicht mit.
+
+166
+00:15:14,301 --> 00:15:20,621
+Also nehmt es einfach als gegeben hin, dass diese Kerne in diesem System nicht funktionieren.
+
+167
+00:15:20,621 --> 00:15:22,881
+Kleiner ist besser, ich wiederhol's.
+
+168
+00:15:22,921 --> 00:15:24,961
+Schaut her, der hier ist wirklich winzig.
+
+169
+00:15:25,621 --> 00:15:28,041
+Ich musste einen Transformator auseinanderreißen.
+
+170
+00:15:28,281 --> 00:15:28,941
+Ich zeig's euch jetzt.
+
+171
+00:15:29,601 --> 00:15:30,881
+Das hab ich gemacht.
+
+172
+00:15:31,821 --> 00:15:35,061
+Ich hab den Transformator auseinandergerissen, in zwei Hälften geteilt.
+
+173
+00:15:36,461 --> 00:15:37,601
+Seht ihr, was für eine Plage das war?
+
+174
+00:15:38,681 --> 00:15:39,721
+Seht ihr, was passiert?
+
+175
+00:15:50,621 --> 00:15:51,601
+Hier ist dieser Kleber.
+
+176
+00:15:51,841 --> 00:15:57,861
+Und ein Transformator, den ich hatte, war wirklich... lass mich den finden.
+
+177
+00:15:59,081 --> 00:16:00,961
+Also, das ist passiert.
+
+178
+00:16:01,861 --> 00:16:06,581
+Seht, ich hab versucht, das rauszureißen, ein bisschen gehebelt, und es ist einfach gesprungen.
+
+179
+00:16:07,761 --> 00:16:08,961
+So läuft das.
+
+180
+00:16:09,221 --> 00:16:15,981
+Ich musste den TDKS einfach in zwei Hälften sägen, um den Kern rauszureißen.
+
+181
+00:16:16,061 --> 00:16:20,041
+So hab ich das mit dem Winkelschleifer zerlegt und rausbekommen.
+
+182
+00:16:22,621 --> 00:16:26,721
+Also, denkt euch nicht irgendeinen Blödsinn aus.
+
+183
+00:16:27,041 --> 00:16:29,121
+Batterien und sowas in der Art.
+
+184
+00:16:30,041 --> 00:16:31,701
+Da sind überhaupt keine Batterien drin.
+
+185
+00:16:31,861 --> 00:16:37,361
+Das ist einfach ein ganz normaler physikalischer Prozess, der leider nicht lange anhält.
+
+186
+00:16:38,201 --> 00:16:39,341
+Egal wie sehr man das will.
+
+187
+00:16:39,341 --> 00:16:43,021
+Ich hab diese Taschenlampe mit einem bestimmten Zweck gebaut, das sag ich euch.
+
+188
+00:16:43,681 --> 00:16:50,401
+Ich wollte Beleuchtung für Orte machen, wo es keinen Strom gibt.
+
+189
+00:16:50,661 --> 00:16:54,961
+Und Beleuchtung für diese kleinen Werbestände.
+
+190
+00:16:55,661 --> 00:17:04,341
+Da irgendeinen Generator mit Erdung hinzustellen wäre übertrieben, aber so eine Lösung wäre eigentlich ziemlich anständig.
+
+191
+00:17:05,001 --> 00:17:10,701
+Aber leider hab ich sozusagen wieder mal bestätigt, dass das alles Quatsch ist.
+
+192
+00:17:10,781 --> 00:17:14,821
+Ich mein's ernst — na ja, dabei kommt nichts Gutes raus.
+
+193
+00:17:16,601 --> 00:17:18,061
+So ist das, Leute.
+
+194
+00:17:18,321 --> 00:17:20,621
+Also der Schaltplan, hier ist er.
+
+195
+00:17:21,741 --> 00:17:23,041
+Was, soll ich ihn etwa verstecken?
+
+196
+00:17:23,081 --> 00:17:24,001
+Hier, schaut euch das an.
+
+197
+00:17:24,281 --> 00:17:26,241
+Das Einzige, wie gesagt, ist, dass hier eine Diode war.
+
+198
+00:17:26,341 --> 00:17:29,921
+Ich hab hier stattdessen eine Diodenbrücke eingebaut, also dementsprechend diese Stellen hier.
+
+199
+00:17:29,921 --> 00:17:32,821
+Na ja, ihr wisst ja, was eine Diodenbrücke ist.
+
+200
+00:17:32,881 --> 00:17:36,941
+Genau hier, hier kommt sozusagen Wechselstrom rein, und von da an ist alles Gleichstrom.
+
+201
+00:17:38,281 --> 00:17:43,121
+Na ja, verdammt, das sind Grundlagen, dabei halt ich mich gar nicht erst auf.
+
+202
+00:17:44,781 --> 00:17:45,501
+Mehr ist da nicht dran.
+
+203
+00:17:45,581 --> 00:17:46,541
+So funktioniert das.
+
+204
+00:17:46,541 --> 00:17:49,041
+Der wichtigste Teil ist genau hier.
+
+205
+00:17:49,481 --> 00:17:55,661
+Ja, übrigens, warum es eine gibt — genau hier hab ich an dieser Stelle eine Schutzdiode.
+
+206
+00:17:56,821 --> 00:18:01,881
+Also, na ja, sozusagen eingezeichnet, ja, so.
+
+207
+00:18:04,481 --> 00:18:07,081
+Einhändig, mit der linken Hand, verdammt, ich krieg das nicht hin.
+
+208
+00:18:07,721 --> 00:18:09,661
+Also, eigentlich müsst ihr diese Diode gar nicht einbauen.
+
+209
+00:18:10,261 --> 00:18:12,841
+Der Transistor verkraftet all diese Spitzen, das ist nichts Ernstes.
+
+210
+00:18:12,901 --> 00:18:15,941
+Das ist da nur der Rückstoß von einer 7-Windungen-Spule, ja.
+
+211
+00:18:16,061 --> 00:18:19,381
+Also es ist nicht nur so, dass man sich diese Diode sparen kann — man sollte sie gar nicht erst einbauen.
+
+212
+00:18:19,441 --> 00:18:23,421
+Bei mir sitzt sie zwar da, aber sie ist nicht angeschlossen, ja, bei diesem hier.
+
+213
+00:18:23,421 --> 00:18:27,981
+Also, warum ein Bipolartransistor, warum könnte man's nicht stattdessen so machen?
+
+214
+00:18:28,541 --> 00:18:29,201
+Macht's nicht so.
+
+215
+00:18:29,521 --> 00:18:37,521
+Die Sache ist, dass diese Diode genau hier und die eigene Diode des Transistors stören, wie diese Spule arbeitet.
+
+216
+00:18:37,641 --> 00:18:41,141
+Da gibt es einen Rückstrom, und der dämpft dieses Klingeln.
+
+217
+00:18:41,541 --> 00:18:46,861
+Ihr braucht einen Transistor, der komplett abschaltet, so als wäre überhaupt nichts an dieser Spule.
+
+218
+00:18:47,861 --> 00:18:49,201
+Das ist genau der wichtigste Punkt.
+
+219
+00:18:50,681 --> 00:18:57,941
+Also, ich weiß nicht, ich seh ehrlich gesagt keinen Sinn darin, mich mit diesem Unsinn rumzuschlagen, um ehrlich zu sein.
+
+220
+00:18:57,961 --> 00:19:03,801
+Tatsächlich ist es sinnvoller, stattdessen das hier zu bauen, ja — dieses Internetradio-Ding ist echt cool geworden.
+
+221
+00:19:06,701 --> 00:19:16,581
+Es zeigt auch das Wetter, es ist ein kleiner Empfänger, den man mit in die Küche nehmen kann, und man kann im Grunde dieses Wi-Fi-Radio aufladen, kurz gesagt.
+
+222
+00:19:17,261 --> 00:19:22,581
+Das ist viel nützlicher, als sich mit dem anderen Ding rumzuärgern.
+
+223
+00:19:23,861 --> 00:19:25,461
+So ist das, Leute.
+
+224
+00:19:26,521 --> 00:19:27,481
+Na dann, legt los.
