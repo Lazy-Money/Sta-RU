@@ -1,0 +1,759 @@
+1
+00:00:00,891 --> 00:00:07,121
+Okay, folks, now I'll show you what the oscillogram actually looks like — the one you all want to see.
+
+2
+00:00:07,281 --> 00:00:12,001
+So, this is the coil, we hook up to it.
+
+3
+00:00:13,761 --> 00:00:17,721
+Frequency 67.53, where this effect is observed.
+
+4
+00:00:18,181 --> 00:00:25,681
+And the duty cycle we get — let me tell you exactly — the duty cycle is just 1%.
+
+5
+00:00:26,521 --> 00:00:29,741
+So, we apply it, and what do we see?
+
+6
+00:00:29,961 --> 00:00:30,761
+Here's what we see.
+
+7
+00:00:31,381 --> 00:00:33,601
+So, this is it right here.
+
+8
+00:00:34,241 --> 00:00:36,841
+This isn't ferroresonance, this is magnetostriction.
+
+9
+00:00:37,801 --> 00:00:42,661
+I don't get why Roma called this ferroresonance.
+
+10
+00:00:43,601 --> 00:00:44,581
+This is how it works.
+
+11
+00:00:44,961 --> 00:00:47,121
+A lot of people have shown you this.
+
+12
+00:00:47,961 --> 00:00:52,341
+So, the ferrite ramps up, dips down, and then smoothly ramps up again.
+
+13
+00:00:52,341 --> 00:00:54,881
+This is what the oscillogram is supposed to look like.
+
+14
+00:00:55,321 --> 00:00:56,761
+Something like that, let's say.
+
+15
+00:00:56,981 --> 00:01:01,661
+And by the way, the drive frequency doesn't quite match.
+
+16
+00:01:01,741 --> 00:01:02,021
+Well, whatever.
+
+17
+00:01:02,861 --> 00:01:08,541
+The main thing, I'll say it again, is the operating principle...
+
+18
+00:01:08,541 --> 00:01:12,681
+And now if I start increasing the duty cycle, watch what happens.
+
+19
+00:01:14,881 --> 00:01:15,401
+See?
+
+20
+00:01:15,921 --> 00:01:18,001
+But you shouldn't overdo it.
+
+21
+00:01:18,001 --> 00:01:24,661
+This collapse that starts from the top — that's not good.
+
+22
+00:01:25,001 --> 00:01:26,881
+That means the current starts clamping down on the transistor.
+
+23
+00:01:29,961 --> 00:01:31,361
+You shouldn't push it that far.
+
+24
+00:01:32,841 --> 00:01:37,021
+So you need to watch it on the sweep.
+
+25
+00:01:37,101 --> 00:01:42,161
+Here the transistor turns on, and as soon as it turns off, the ferrite starts working.
+
+26
+00:01:42,941 --> 00:01:43,761
+That's all there is to it.
+
+27
+00:01:43,901 --> 00:01:49,501
+So you need to do everything you can to keep this generator from guzzling current.
+
+28
+00:01:49,881 --> 00:01:54,061
+Because you're not going to get much out of this ferrite.
+
+29
+00:01:54,801 --> 00:01:55,321
+Right.
+
+30
+00:01:55,661 --> 00:01:57,781
+Which is why the transistor here is the type it is.
+
+31
+00:01:58,381 --> 00:01:58,901
+That's one.
+
+32
+00:01:59,361 --> 00:01:59,881
+Second.
+
+33
+00:02:00,561 --> 00:02:04,081
+So, this whole circuit here, it guzzles current too.
+
+34
+00:02:04,321 --> 00:02:06,361
+Because we need it at 12 volts.
+
+35
+00:02:06,401 --> 00:02:08,701
+I built this to light things up at 12 volts.
+
+36
+00:02:08,701 --> 00:02:11,901
+You see, I needed to light the flashlight at 12 volts.
+
+37
+00:02:12,581 --> 00:02:15,161
+Damn, why would I want 3 volts and all that.
+
+38
+00:02:15,581 --> 00:02:18,781
+I could've just taken the energy straight from here.
+
+39
+00:02:19,341 --> 00:02:22,481
+You get 6-7 volts here from this coil.
+
+40
+00:02:22,601 --> 00:02:23,421
+You can't get more than that.
+
+41
+00:02:23,541 --> 00:02:35,341
+If you start winding on top, then because you wound on top, the magnetic field doesn't transfer well at high frequency to the second layer of turns.
+
+42
+00:02:35,341 --> 00:02:39,341
+So that's just a pattern with any of these things.
+
+43
+00:02:40,121 --> 00:02:41,521
+Take a bigger core.
+
+44
+00:02:41,621 --> 00:02:42,401
+Well I did take one.
+
+45
+00:02:42,581 --> 00:02:42,921
+So what?
+
+46
+00:02:43,381 --> 00:02:44,081
+Nothing good.
+
+47
+00:02:44,621 --> 00:02:48,841
+That's why the L3 coil is wound along the whole length.
+
+48
+00:02:50,041 --> 00:02:51,801
+The more turns you can fit, the better.
+
+49
+00:02:51,941 --> 00:02:52,741
+But I'll say it again.
+
+50
+00:02:53,221 --> 00:02:59,021
+Because of the PVC, you could probably use thinner wire here and wind more turns.
+
+51
+00:02:59,181 --> 00:03:00,421
+Yes, the voltage would go up.
+
+52
+00:03:00,421 --> 00:03:06,601
+But it still won't light up four LEDs, so I had to use a second chip as an inverter.
+
+53
+00:03:07,201 --> 00:03:11,561
+So this is a flyback inverter, 14 turns of wire.
+
+54
+00:03:12,381 --> 00:03:14,681
+It can put out pretty much any voltage here.
+
+55
+00:03:15,901 --> 00:03:16,841
+You see what the deal is?
+
+56
+00:03:17,141 --> 00:03:18,621
+So say I need 60 volts.
+
+57
+00:03:18,681 --> 00:03:22,721
+I can easily pull 60 volts out of this flyback.
+
+58
+00:03:22,721 --> 00:03:30,821
+And at these frequencies, the ferrite doesn't "see" anything going on.
+
+59
+00:03:31,381 --> 00:03:32,561
+It doesn't remagnetize.
+
+60
+00:03:32,701 --> 00:03:35,961
+Especially considering that this generator is running.
+
+61
+00:03:36,761 --> 00:03:37,741
+That's all, folks.
+
+62
+00:03:39,121 --> 00:03:40,781
+The frequency of this ferrite, here it is.
+
+63
+00:03:40,881 --> 00:03:41,861
+67.53.
+
+64
+00:03:42,361 --> 00:03:42,501
+Right?
+
+65
+00:03:42,961 --> 00:03:44,221
+And 2% duty cycle.
+
+66
+00:03:45,581 --> 00:03:46,241
+There you go.
+
+67
+00:03:47,561 --> 00:03:48,841
+So, like...
+
+68
+00:03:48,841 --> 00:03:51,121
+Look, watch, I'll disconnect it now, everything will go out.
+
+69
+00:03:51,121 --> 00:03:51,841
+There.
+
+70
+00:03:52,361 --> 00:03:52,921
+That's it.
+
+71
+00:03:53,261 --> 00:03:53,581
+See that?
+
+72
+00:03:54,321 --> 00:03:54,581
+There.
+
+73
+00:03:56,161 --> 00:03:57,281
+Connecting it back.
+
+74
+00:03:57,381 --> 00:04:00,121
+Everything, just like on the oscilloscope.
+
+75
+00:04:01,021 --> 00:04:01,901
+That's the picture.
+
+76
+00:04:04,881 --> 00:04:07,021
+Well, it's all pretty basic, damn.
+
+77
+00:04:07,121 --> 00:04:08,121
+Nothing special.
+
+78
+00:04:08,561 --> 00:04:10,881
+And that's how it's done.
+
+79
+00:04:12,181 --> 00:04:13,001
+I don't mind sharing it.
+
+80
+00:04:13,121 --> 00:04:14,001
+Go ahead, build it.
+
+81
+00:04:14,101 --> 00:04:17,121
+I've kind of studied this topic, but I know that this flashlight...
+
+82
+00:04:17,121 --> 00:04:18,661
+Well, I mean...
+
+83
+00:04:20,641 --> 00:04:22,421
+This is my own design.
+
+84
+00:04:22,641 --> 00:04:25,321
+This isn't the one Akula had with two generators.
+
+85
+00:04:25,421 --> 00:04:30,901
+The one where he was posting these schematics all over the internet.
+
+86
+00:04:31,161 --> 00:04:34,141
+Like, he supposedly put in this...
+
+87
+00:04:34,141 --> 00:04:36,061
+It was supposedly better and all that.
+
+88
+00:04:37,841 --> 00:04:42,201
+I don't know what he was going for, working with something like that.
+
+89
+00:04:42,281 --> 00:04:44,021
+I actually built this generator, by the way.
+
+90
+00:04:44,021 --> 00:04:45,381
+I never did figure out what...
+
+91
+00:04:46,001 --> 00:04:48,201
+he'd hooked up wrong here, or where.
+
+92
+00:04:48,821 --> 00:04:50,081
+And why exactly like that.
+
+93
+00:04:51,101 --> 00:04:54,061
+But this generator of mine, yeah, it worked for me, that's it.
+
+94
+00:04:54,281 --> 00:04:56,101
+But how do you tune it?
+
+95
+00:04:56,701 --> 00:04:59,241
+With a 0.22 nF trimmer capacitor.
+
+96
+00:05:00,001 --> 00:05:01,761
+Makes you wonder, what kind of capacitor is that anyway?
+
+97
+00:05:03,081 --> 00:05:04,201
+To dial in the frequency?
+
+98
+00:05:05,021 --> 00:05:06,061
+Beats me.
+
+99
+00:05:07,021 --> 00:05:11,301
+Honestly, I think all these schematics are insanely far-fetched.
+
+100
+00:05:11,401 --> 00:05:13,101
+I mean, they just can't work.
+
+101
+00:05:13,101 --> 00:05:15,881
+Most likely, this particular circuit was actually a working one.
+
+102
+00:05:17,001 --> 00:05:23,301
+But here the transformer also uses magnetostriction resonance.
+
+103
+00:05:24,921 --> 00:05:29,461
+One of the coils, most likely, is using this magnetostriction resonance.
+
+104
+00:05:30,061 --> 00:05:30,941
+Why do I think that?
+
+105
+00:05:31,061 --> 00:05:32,101
+Because...
+
+106
+00:05:32,661 --> 00:05:35,141
+Well, the schematic's wrong, but...
+
+107
+00:05:36,761 --> 00:05:39,301
+There's something missing from the drawing here.
+
+108
+00:05:41,141 --> 00:05:45,601
+Specifically, plates that aren't drawn in on both sides, to create a capacitor right inside the coil.
+
+109
+00:05:46,461 --> 00:05:49,501
+So that the coil would charge up and go into resonance from magnetostriction.
+
+110
+00:05:50,241 --> 00:05:54,481
+Basically, that's what I wanted to implement here, in this system.
+
+111
+00:05:55,761 --> 00:05:56,401
+But...
+
+112
+00:05:56,401 --> 00:06:01,621
+It worked without it too, so I never really took it any further.
+
+113
+00:06:02,061 --> 00:06:05,381
+I also tried making magnetostriction happen on something else.
+
+114
+00:06:05,641 --> 00:06:08,081
+On this coil right here.
+
+115
+00:06:09,301 --> 00:06:12,581
+I managed to get it to work on it once, so I tried again.
+
+116
+00:06:13,581 --> 00:06:16,221
+See, here I was rewinding it, checking how the ferrite behaves.
+
+117
+00:06:16,461 --> 00:06:18,181
+So anyway, don't pay attention to that.
+
+118
+00:06:18,341 --> 00:06:19,981
+I mean, this isn't wound the right way.
+
+119
+00:06:20,701 --> 00:06:20,981
+There.
+
+120
+00:06:21,241 --> 00:06:26,861
+Then, long story short, I made two plates and tried to get it into resonance.
+
+121
+00:06:26,981 --> 00:06:28,001
+Well, didn't work out.
+
+122
+00:06:28,941 --> 00:06:31,361
+Nothing good came of it, so to speak.
+
+123
+00:06:31,501 --> 00:06:33,781
+It just didn't want to work, wouldn't cooperate.
+
+124
+00:06:33,901 --> 00:06:36,081
+So, like...
+
+125
+00:06:36,081 --> 00:06:37,161
+And forget about it.
+
+126
+00:06:37,801 --> 00:06:38,101
+Right.
+
+127
+00:06:38,101 --> 00:06:41,081
+As for this ferrite, I'll say it again.
+
+128
+00:06:41,581 --> 00:06:42,621
+Well, it just doesn't work.
+
+129
+00:06:43,501 --> 00:06:44,381
+Doesn't work.
+
+130
+00:06:45,181 --> 00:06:48,641
+I mean, sure, it shows these nice-looking spikes and everything.
+
+131
+00:06:48,741 --> 00:06:50,221
+Here, by the way, these spikes, there they are.
+
+132
+00:06:50,821 --> 00:06:54,401
+They've got a pretty big, um...
+
+133
+00:06:55,221 --> 00:06:58,701
+They're so small that they just can't charge up this cap.
+
+134
+00:06:59,781 --> 00:07:00,221
+So...
+
+135
+00:07:00,221 --> 00:07:01,261
+Sadly, this is...
+
+136
+00:07:02,521 --> 00:07:04,201
+not a working option.
+
+137
+00:07:04,921 --> 00:07:07,161
+Okay, people also asked about this radio here.
+
+138
+00:07:07,161 --> 00:07:08,361
+The Wi-Fi one, how I made it.
+
+139
+00:07:09,141 --> 00:07:09,701
+And that thing.
+
+140
+00:07:09,861 --> 00:07:15,441
+Guys, all the info about that is on GitHub.
+
+141
+00:07:16,321 --> 00:07:17,741
+How to make a Wi-Fi radio.
+
+142
+00:07:17,861 --> 00:07:20,681
+Or more specifically, that particular radio project.
+
+143
+00:07:20,801 --> 00:07:22,001
+Yeah, just search it up online.
+
+144
+00:07:22,221 --> 00:07:23,561
+All the details are there.
+
+145
+00:07:23,681 --> 00:07:24,941
+I mean, there's a lot of hobbyists doing it.
+
+146
+00:07:25,881 --> 00:07:27,621
+The project runs on Arduino.
+
+147
+00:07:28,321 --> 00:07:31,261
+The case is kind of my own invention.
+
+148
+00:07:32,301 --> 00:07:32,621
+There.
+
+149
+00:07:33,141 --> 00:07:35,961
+It's got the speaker and everything else in there too.
+
+150
+00:07:35,961 --> 00:07:40,461
+Inside it, there's also a readout, say, of the battery discharge.
+
+151
+00:07:40,621 --> 00:07:43,401
+It shows both when it's charging and when it's discharging.
+
+152
+00:07:43,481 --> 00:07:44,561
+All that whole business.
+
+153
+00:07:45,481 --> 00:07:45,781
+There.
+
+154
+00:07:45,861 --> 00:07:47,061
+And what else did I want to say.
+
+155
+00:07:47,221 --> 00:07:48,781
+That it's a really handy thing.
+
+156
+00:07:49,561 --> 00:07:51,801
+The whole world, so to speak, right in your receiver.
+
+157
+00:07:52,021 --> 00:07:53,021
+And the sound quality is amazing.
+
+158
+00:07:53,561 --> 00:07:54,641
+Plus I also made...
+
+159
+00:07:54,641 --> 00:07:56,721
+You can plug in stereo headphones here.
+
+160
+00:07:56,801 --> 00:07:58,441
+Actual stereo sound comes out of here.
+
+161
+00:07:59,381 --> 00:08:01,441
+And a standard Type-C charging port.
+
+162
+00:08:01,921 --> 00:08:04,001
+So, I've made quite a lot of these.
+
+163
+00:08:04,001 --> 00:08:07,821
+I've honestly lost count already, so to speak.
+
+164
+00:08:07,961 --> 00:08:11,161
+Or rather, how many I've already produced.
+
+165
+00:08:11,521 --> 00:08:14,481
+They keep coming out nicer and nicer.
+
+166
+00:08:14,941 --> 00:08:15,221
+There.
+
+167
+00:08:15,281 --> 00:08:17,601
+I mean, I'm already making the red-type ones now.
+
+168
+00:08:18,021 --> 00:08:19,201
+With a red speaker.
+
+169
+00:08:19,341 --> 00:08:19,741
+That's everything there.
+
+170
+00:08:20,921 --> 00:08:23,241
+It's turned into a bit of a passion, so to speak.
+
+171
+00:08:23,321 --> 00:08:23,841
+But that's just how it is.
+
+172
+00:08:24,261 --> 00:08:25,521
+That's for when I've got free time.
+
+173
+00:08:26,421 --> 00:08:26,701
+Right.
+
+174
+00:08:26,761 --> 00:08:29,341
+So, that's what else there is about this flashlight.
+
+175
+00:08:29,461 --> 00:08:32,121
+Oh, and by the way, I also built one with drivers.
+
+176
+00:08:32,121 --> 00:08:35,271
+Also tried to build it with two transistors.
+
+177
+00:08:36,021 --> 00:08:38,181
+So that the driver would run on the second one.
+
+178
+00:08:38,701 --> 00:08:40,481
+And this circuit didn't work out for me.
+
+179
+00:08:41,041 --> 00:08:42,821
+Because you can't just plug a FET in right here.
+
+180
+00:08:43,821 --> 00:08:44,561
+Right in this spot.
+
+181
+00:08:45,361 --> 00:08:46,661
+This is where I had the driver.
+
+182
+00:08:47,401 --> 00:08:48,411
+I did try it that way.
+
+183
+00:08:48,981 --> 00:08:49,821
+Copied it over here.
+
+184
+00:08:49,941 --> 00:08:52,241
+I saw someone draw the schematic that way somewhere.
+
+185
+00:08:53,281 --> 00:08:54,381
+It doesn't work like that.
+
+186
+00:08:54,901 --> 00:08:58,501
+It only works when the bipolar transistor is set up correctly.
+
+187
+00:08:59,161 --> 00:09:00,141
+In compound mode.
+
+188
+00:09:00,141 --> 00:09:06,041
+I mean inside the TL chip here there's a transistor that you can pair up with this one.
+
+189
+00:09:06,201 --> 00:09:07,541
+And then they work.
+
+190
+00:09:09,081 --> 00:09:10,321
+Well, that's about it.

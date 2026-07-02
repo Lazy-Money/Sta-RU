@@ -1,0 +1,895 @@
+1
+00:00:01,001 --> 00:00:01,941
+Hi everyone.
+
+2
+00:00:02,381 --> 00:00:04,941
+Everyone's yelling, "post the schematic, post the schematic."
+
+3
+00:00:05,081 --> 00:00:06,121
+No problem.
+
+4
+00:00:06,821 --> 00:00:08,121
+Here's your schematic, here you go.
+
+5
+00:00:09,361 --> 00:00:11,901
+I mean, I copied it all off of this.
+
+6
+00:00:13,001 --> 00:00:18,581
+Here's the schematic of how this gadget works.
+
+7
+00:00:18,981 --> 00:00:25,721
+I made a small mistake here, so it's 2200 microfarads.
+
+8
+00:00:25,841 --> 00:00:30,321
+Right now the capacitor from here, unfortunately, ended up in the trash.
+
+9
+00:00:30,921 --> 00:00:32,681
+It's just lying around here.
+
+10
+00:00:33,861 --> 00:00:34,041
+Here it is.
+
+11
+00:00:35,261 --> 00:00:37,001
+Here's what happened to it.
+
+12
+00:00:37,261 --> 00:00:41,961
+It swelled up, and, long story short, I'll explain why in a second.
+
+13
+00:00:41,961 --> 00:00:45,001
+As a result, the flashlight doesn't work.
+
+14
+00:00:47,101 --> 00:00:49,781
+Here's the schematic.
+
+15
+00:00:49,941 --> 00:01:01,481
+Here's a close-up of the whole schematic — I traced it all off this unit, because basically I did everything from memory, working off the flashlight itself.
+
+16
+00:01:03,341 --> 00:01:07,301
+Anyway, so here we've got a diode bridge.
+
+17
+00:01:08,281 --> 00:01:11,281
+And this capacitor sits right here too.
+
+18
+00:01:11,901 --> 00:01:12,661
+Here's the diode bridge.
+
+19
+00:01:12,801 --> 00:01:13,761
+There's no capacitor yet.
+
+20
+00:01:14,681 --> 00:01:15,201
+What's next.
+
+21
+00:01:17,441 --> 00:01:18,161
+Switch.
+
+22
+00:01:19,021 --> 00:01:19,841
+One more diode.
+
+23
+00:01:20,201 --> 00:01:20,921
+Any kind.
+
+24
+00:01:21,001 --> 00:01:25,021
+You can use this 40-something, 4007 I think.
+
+25
+00:01:25,741 --> 00:01:26,221
+That one works.
+
+26
+00:01:26,341 --> 00:01:27,181
+Here's the switch.
+
+27
+00:01:28,141 --> 00:01:29,141
+Coil L1.
+
+28
+00:01:29,621 --> 00:01:30,661
+Here it's labeled.
+
+29
+00:01:31,201 --> 00:01:31,901
+Here's the coil.
+
+30
+00:01:31,901 --> 00:01:34,441
+It has 7 turns of wire.
+
+31
+00:01:36,561 --> 00:01:38,501
+0.75 mm².
+
+32
+00:01:38,841 --> 00:01:40,621
+PVC insulation, that's a must.
+
+33
+00:01:40,901 --> 00:01:41,201
+Why?
+
+34
+00:01:41,441 --> 00:01:46,121
+Because we're dealing with vibration of the core.
+
+35
+00:01:46,581 --> 00:01:50,481
+So I don't hold things up, I'll explain about the core separately in a bit.
+
+36
+00:01:50,641 --> 00:01:57,981
+So, to not hinder the process, the core needs to have, let's say, a bit of give to it.
+
+37
+00:01:58,601 --> 00:02:00,721
+Which is basically why it ends up breaking down.
+
+38
+00:02:00,841 --> 00:02:01,921
+Now let's keep going.
+
+39
+00:02:02,201 --> 00:02:03,201
+Coil L2.
+
+40
+00:02:03,681 --> 00:02:05,701
+It has 14 turns, twice as many.
+
+41
+00:02:05,861 --> 00:02:07,421
+Why exactly this spacing?
+
+42
+00:02:08,121 --> 00:02:13,521
+So, this coil is wound off to the side, to make it circulate.
+
+43
+00:02:14,081 --> 00:02:17,161
+So it only creates vibration on one half of the core.
+
+44
+00:02:17,721 --> 00:02:21,281
+So, the second part is the 14 turns.
+
+45
+00:02:21,601 --> 00:02:26,821
+This coil runs at a very high frequency, and the ferrite doesn't "see" that high a frequency.
+
+46
+00:02:28,021 --> 00:02:30,841
+So maybe something moves there just a tiny bit.
+
+47
+00:02:31,701 --> 00:02:40,361
+But the higher the frequency of this generator gets — notice, on pin five there's a 4.7 nanofarad capacitor.
+
+48
+00:02:41,041 --> 00:02:54,241
+And using frequency and duty cycle we tune it so this generator works for us as an inverter for the LEDs, to get 12 volts.
+
+49
+00:02:55,081 --> 00:03:01,781
+And notice, there's this small feedback loop, it's pretty pointless — I mean you could just do it like this instead.
+
+50
+00:03:02,081 --> 00:03:04,841
+You can just connect it directly and skip doing this and this.
+
+51
+00:03:05,001 --> 00:03:07,501
+It'll all work perfectly fine too.
+
+52
+00:03:07,581 --> 00:03:13,001
+So this capacitor — well, I've drawn 47 microfarads — here it is.
+
+53
+00:03:13,241 --> 00:03:15,221
+Let me grab the tweezers, I'll show you.
+
+54
+00:03:15,521 --> 00:03:17,401
+Here it is, this capacitor.
+
+55
+00:03:18,321 --> 00:03:25,801
+This capacitor, the one everyone kept asking about — this is the one it'll be.
+
+56
+00:03:26,701 --> 00:03:33,441
+Here it is, yeah — there are two 100-microfarad ones here, but really it's all just this one capacitor.
+
+57
+00:03:35,381 --> 00:03:36,101
+What's next?
+
+58
+00:03:37,181 --> 00:03:39,361
+Oh right, yeah, there's another one stuck on here.
+
+59
+00:03:40,961 --> 00:03:42,741
+This little one, I think it's over there.
+
+60
+00:03:42,981 --> 00:03:43,761
+Gotta take a look.
+
+61
+00:03:44,081 --> 00:03:51,161
+Basically it doesn't matter — I'll tell you straight up, the effect won't change because of these capacitors.
+
+62
+00:03:51,301 --> 00:03:51,821
+What's next?
+
+63
+00:03:52,541 --> 00:04:05,021
+Now we've got the second magnetostriction generator, that thing over there — I won't even name him, just some stubborn blockhead who keeps digging in and has no idea what it even is.
+
+64
+00:04:05,761 --> 00:04:11,661
+He thinks magnetostriction only happens if you stick a little piece of magnet in here.
+
+65
+00:04:12,401 --> 00:04:16,541
+Sure, that's true, but in this case you don't need that.
+
+66
+00:04:17,821 --> 00:04:25,681
+So here, triggering — let's say, triggering the generation, the vibration of this core — happens by means of this generator.
+
+67
+00:04:26,681 --> 00:04:35,381
+So here we've got a transistor installed, like this KT837 or BD244, you can use that.
+
+68
+00:04:36,141 --> 00:04:44,201
+So in this system it uses, how should I put it, the transistor that's sitting right here.
+
+69
+00:04:44,361 --> 00:04:56,121
+So it's used as a compound transistor, so one lead goes to ground, the other lead to the base, and it just works right away.
+
+70
+00:04:56,341 --> 00:05:01,181
+So there's nothing else needed — you can see it all right here, so to speak.
+
+71
+00:05:01,461 --> 00:05:05,561
+Here's the transistor's base, it goes straight to this thing.
+
+72
+00:05:06,421 --> 00:05:07,221
+Let's take a look.
+
+73
+00:05:07,361 --> 00:05:10,841
+Here it is, here's the pin, and it goes straight to the transistor's base.
+
+74
+00:05:11,021 --> 00:05:23,461
+Next comes the case — yeah, to the case, and the plus goes through the coil, because this lead here, this one, is the common plus.
+
+75
+00:05:24,161 --> 00:05:28,001
+So common plus one and common plus two.
+
+76
+00:05:28,661 --> 00:05:33,561
+This connection here, this one and this one, it's right here.
+
+77
+00:05:35,721 --> 00:05:44,261
+Okay, what else did I want to show — people just don't get it, well, fine, let's just go through it in order.
+
+78
+00:05:45,681 --> 00:05:51,061
+What's next — the removable coil, here it is, L3, labeled right there.
+
+79
+00:05:52,241 --> 00:06:01,741
+Last time this lead was here — let me flip it over, I'll show you — it was soldered right here to the common ground, so it runs around in a loop for me.
+
+80
+00:06:02,101 --> 00:06:06,641
+Yeah, it's a bit sloppy here, because it's been redone like 200 times, tested over and over, so to speak.
+
+81
+00:06:07,721 --> 00:06:12,481
+So anyway, what's next, what did I want to say.
+
+82
+00:06:12,561 --> 00:06:18,821
+Right, here's L3, there you go, and this is L3, here it is.
+
+83
+00:06:20,241 --> 00:06:36,121
+What else isn't clear — here it would be good to put another, say, 0.1 microfarad, so 100 nanofarad, in parallel with this capacitor, to kill off some of the various spikes, but they
+
+84
+00:06:36,121 --> 00:06:39,241
+are actually there anyway, these spikes, you see what I mean.
+
+85
+00:06:39,821 --> 00:06:53,361
+This coil, this coil, it works in this system not the way you'd think, like there's transformation coming from the top coil.
+
+86
+00:06:53,941 --> 00:06:59,861
+No, from the top coil, from L2, the 14-turn one, there's no transformation at all.
+
+87
+00:06:59,941 --> 00:07:05,101
+The ferrite doesn't "see" operation at that frequency, it's above 32 kilohertz there.
+
+88
+00:07:05,681 --> 00:07:11,221
+That squealing, ringing sound you hear, that's from the harmonic, from the low frequency of this thing.
+
+89
+00:07:11,941 --> 00:07:15,801
+Notice, there's a 68 nanofarad capacitor on pin five,
+
+90
+00:07:19,141 --> 00:07:32,241
+so for this generator here, it's a good idea to build out the support circuitry properly, put like 100 nanofarads there — all these capacitors need to be here so there's less ripple of all kinds.
+
+91
+00:07:33,021 --> 00:07:43,181
+Next — I really don't like it when the chip reacts to every little ripple, every little glitch, because then you can't tune anything properly.
+
+92
+00:07:43,241 --> 00:07:45,961
+You can't tell what's, as they say, throwing it off.
+
+93
+00:07:46,341 --> 00:07:49,081
+So anyway, everyone keeps asking, what about the oscillogram, what about the oscillogram?
+
+94
+00:07:49,081 --> 00:07:53,261
+Guys, honestly, it just shows a mess up there, a mess.
+
+95
+00:07:53,341 --> 00:07:53,641
+Why?
+
+96
+00:07:54,241 --> 00:08:03,081
+Because this magnetostriction, when it creates this action on the ferrite, what happens is the ferrite trembles.
+
+97
+00:08:04,441 --> 00:08:08,221
+Accordingly, these magnetic domains keep flipping constantly.
+
+98
+00:08:09,101 --> 00:08:18,301
+And because this coil is doing all that, what happens is basically a movement of the magnetic domains all around.
+
+99
+00:08:19,341 --> 00:08:24,701
+And because that's happening, an EMF gets induced here.
+
+100
+00:08:25,181 --> 00:08:32,821
+But this EMF is unstable, because there's another coil working on top of it too, it, well, has a bit of an effect.
+
+101
+00:08:33,001 --> 00:08:35,021
+Not much, but there is some effect going on.
+
+102
+00:08:35,781 --> 00:08:45,221
+And so this combination happens, and because of it there's this really big, let's say, commotion in the core.
+
+103
+00:08:45,961 --> 00:08:50,641
+And that's what causes a big EMF spike on the bottom coil.
+
+104
+00:08:51,741 --> 00:08:58,381
+Thanks to that, it turns out, we rectify and charge this 2200 capacitor, which isn't here right now.
+
+105
+00:08:58,441 --> 00:08:59,501
+Well, it blew up, screw it.
+
+106
+00:08:59,501 --> 00:09:01,801
+It just puffed up and stopped working.
+
+107
+00:09:02,841 --> 00:09:04,621
+I'll deal with that later.
+
+108
+00:09:04,861 --> 00:09:08,861
+There are just some characters who've completely worn me out with how dumb they are.
+
+109
+00:09:09,341 --> 00:09:17,001
+Not only has this person never actually done or built anything in his life and doesn't have a clue, he's also spouting nonsense — I won't point fingers, but still.
+
+110
+00:09:17,261 --> 00:09:19,561
+And he's riling up all the other fools.
+
+111
+00:09:20,201 --> 00:09:21,821
+Guys, don't try to con me.
+
+112
+00:09:21,921 --> 00:09:37,741
+Honestly, I don't mind any of it, but I feel bad for the idiots who'll grab onto this and start — without actually achieving anything, without ever really using their heads — running off to sell this and that,
+
+113
+00:09:38,821 --> 00:09:40,861
+let's say, and take all the credit for themselves.
+
+114
+00:09:40,941 --> 00:09:42,521
+That's not right.
+
+115
+00:09:42,601 --> 00:09:42,841
+Right.
+
+116
+00:09:42,941 --> 00:09:47,701
+So sooner or later this kind of crap comes out, and you'll get seriously burned.
+
+117
+00:09:47,821 --> 00:09:49,761
+So use your head.
+
+118
+00:09:50,441 --> 00:09:50,841
+What's next?
+
+119
+00:09:51,001 --> 00:09:52,041
+These diodes here, right?
+
+120
+00:09:52,181 --> 00:09:54,841
+So, well, I've got like an STTH there, right?
+
+121
+00:09:56,481 --> 00:10:11,761
+Right here in this spot, this diode is what I've got, this STTH, yeah — so that's it, everywhere else there isn't one anymore, I mean what I meant was here I put a diode bridge, you can see it, and there you can put any
+
+122
+00:10:11,761 --> 00:10:16,761
+kind that handles high frequency reasonably well passing through it — passes it, more precisely.
+
+123
+00:10:17,781 --> 00:10:18,761
+Okay, what's next?
+
+124
+00:10:19,941 --> 00:10:20,541
+Transistors.
+
+125
+00:10:21,201 --> 00:10:23,001
+Well, the transistors are all labeled here.
+
+126
+00:10:23,001 --> 00:10:33,181
+BD140, or this KT814, KT816, IRF3205, I mean what's unclear about that.
+
+127
+00:10:33,601 --> 00:10:39,641
+The diode, there it is, hiding next to the transistor — you can see it, I hope, right there.
+
+128
+00:10:41,901 --> 00:10:44,601
+Forty-four, forty-one, forty-eight, yeah, there it is.
+
+129
+00:10:45,441 --> 00:10:47,501
+Forty-one, forty-eight, what's wrong with that?
+
+130
+00:10:49,581 --> 00:10:52,581
+Okay, what else did I want to say?
+
+131
+00:10:53,321 --> 00:11:00,701
+Okay that's it, the LEDs, here they are, look, connected in series.
+
+132
+00:11:01,161 --> 00:11:08,961
+Here they are, you can see, they're soldered on, they run in series through a resistor.
+
+133
+00:11:08,961 --> 00:11:21,701
+Well, I didn't draw the resistor here, so let's draw it in, since, as they say, some people are going to nitpick everything — yeah, well anyway, right here, this is where the resistor sits.
+
+134
+00:11:21,701 --> 00:11:26,161
+Oh, 220, okay, good.
+
+135
+00:11:27,741 --> 00:11:41,541
+It's kind of a protective one, you need to put it in, because if you overdo the voltage on the LEDs past 12, the diodes will burn out, because each LED has a threshold of 3 volts.
+
+136
+00:11:42,301 --> 00:11:43,021
+What else?
+
+137
+00:11:44,021 --> 00:11:52,981
+And that's basically it, long story short — duty cycle, frequency, it's all tuned here, this is the main generator, I mean on the schematic this generator here is the main one.
+
+138
+00:11:54,101 --> 00:11:59,081
+And don't think that you'll just build this and it'll work right off the bat.
+
+139
+00:11:59,081 --> 00:12:15,381
+You need to get the core ringing — ring at its own resonant striction frequency — I mean that's why I call it magnetostriction and not something else, because it rings and
+
+140
+00:12:15,381 --> 00:12:16,261
+expands.
+
+141
+00:12:16,261 --> 00:12:19,841
+And now the most important point I wanted to tell you.
+
+142
+00:12:20,341 --> 00:12:27,641
+Right here, in the original, there are these plastic bits that go here, and they wear through everything, and you can see it.
+
+143
+00:12:28,661 --> 00:12:35,761
+And they just grind themselves down to powder because of this, because of this whole thing.
+
+144
+00:12:35,761 --> 00:12:45,701
+And the ferrite starts, well, long story short, it starts to degrade, yeah, I mean it crumbles apart — like here, this piece chipped off, this ferrite doesn't work anymore.
+
+145
+00:12:46,081 --> 00:12:46,241
+That's it.
+
+146
+00:12:47,281 --> 00:12:58,621
+So what I'm saying is, you take a material that doesn't wear down, ideally something like Getinax or whatever.
+
+147
+00:12:58,621 --> 00:13:11,541
+So you make, like, a 0, around 0.5 to 0.6 millimeter gap, and put it in.
+
+148
+00:13:11,641 --> 00:13:12,421
+What's the gap for?
+
+149
+00:13:12,901 --> 00:13:20,621
+The gap is there so this whole thing rings, so the magnetic field gets transferred, you see?
+
+150
+00:13:20,761 --> 00:13:27,941
+With the gap, first of all, we don't get a closed magnetic loop — that's the main thing, that's a really important point.
+
+151
+00:13:29,001 --> 00:13:39,981
+Because some guy is about to start telling me how transformers work, damn, that's just... I was floored yesterday when I read that, or the day before, whenever, I mean it was...
+
+152
+00:13:39,981 --> 00:13:55,761
+Man, come on, dude — don't just go to school and read all that literature and understand it your own way, you should also, like, actually go do something too, probably, and draw your own conclusions from it, damn, or
+
+153
+00:13:55,761 --> 00:13:58,201
+else it's just messed up beyond belief, there's nowhere further to go, damn it.
+
+154
+00:13:58,201 --> 00:14:05,521
+And there's so many dumb people out there sitting around trying to con everyone, slinging crap at people — yeah, go to hell, you know where, you're not getting anything at all.
+
+155
+00:14:06,021 --> 00:14:21,541
+A normal person will figure it out, but you, you damn morons, you'll just keep sitting there running your mouths, and nothing will come of it, and you'll keep grinding your teeth, and, as they say, none of it will do any
+
+156
+00:14:21,541 --> 00:14:21,941
+good.
+
+157
+00:14:21,941 --> 00:14:24,161
+Okay, now, to the reasonable people out there.
+
+158
+00:14:24,341 --> 00:14:30,301
+So, the core, the core — I'll say it again — you absolutely need to work with a gap.
+
+159
+00:14:30,741 --> 00:14:39,761
+If there needs to be a gap on both ends, I'll tell you straight away, everyone's been going on and on about this, and naturally, that core just doesn't work.
+
+160
+00:14:39,761 --> 00:14:43,141
+I tried working with a core like this.
+
+161
+00:14:43,741 --> 00:14:50,301
+So its resonant frequency is even lower, because the gaps are big, and you won't be able to get it started.
+
+162
+00:14:50,441 --> 00:14:53,321
+So you need to take as small a core as possible.
+
+163
+00:14:54,201 --> 00:14:59,661
+And the smaller it is, the more you can push it into magnetostriction saturation.
+
+164
+00:15:00,201 --> 00:15:07,981
+I know that sounds strange, I know it's not scientific, but guys, not everything scientific gets told to you.
+
+165
+00:15:08,141 --> 00:15:13,541
+They only tell you what's practically applicable, but what actually happens — that, you don't get.
+
+166
+00:15:14,301 --> 00:15:20,621
+So take it as a given that these cores won't work in this system.
+
+167
+00:15:20,621 --> 00:15:22,881
+Smaller is better, I'll repeat.
+
+168
+00:15:22,921 --> 00:15:24,961
+Look here, this one's really tiny.
+
+169
+00:15:25,621 --> 00:15:28,041
+I had to tear apart a transformer.
+
+170
+00:15:28,281 --> 00:15:28,941
+I'll show you now.
+
+171
+00:15:29,601 --> 00:15:30,881
+Here's what I did.
+
+172
+00:15:31,821 --> 00:15:35,061
+I tore the transformer apart, split it in half.
+
+173
+00:15:36,461 --> 00:15:37,601
+See what a pain that was?
+
+174
+00:15:38,681 --> 00:15:39,721
+See what's happening?
+
+175
+00:15:50,621 --> 00:15:51,601
+Here's this glue.
+
+176
+00:15:51,841 --> 00:15:57,861
+And one transformer I had was really... let me find it.
+
+177
+00:15:59,081 --> 00:16:00,961
+So here's what happened.
+
+178
+00:16:01,861 --> 00:16:06,581
+See, I tried to yank it out of there, pried it a little, and it just cracked.
+
+179
+00:16:07,761 --> 00:16:08,961
+That's how it goes.
+
+180
+00:16:09,221 --> 00:16:15,981
+I just had to saw the TDKS in half in order to rip the core out of it.
+
+181
+00:16:16,061 --> 00:16:20,041
+So that's how, with the angle grinder, I wrecked it and got it out.
+
+182
+00:16:22,621 --> 00:16:26,721
+So, don't go making up all kinds of nonsense.
+
+183
+00:16:27,041 --> 00:16:29,121
+Batteries and that sort of thing.
+
+184
+00:16:30,041 --> 00:16:31,701
+There are no batteries in here at all.
+
+185
+00:16:31,861 --> 00:16:37,361
+It's just a plain physical process that, unfortunately, doesn't last long.
+
+186
+00:16:38,201 --> 00:16:39,341
+However much you might want it to.
+
+187
+00:16:39,341 --> 00:16:43,021
+I built this flashlight with a purpose in mind, I'll tell you that.
+
+188
+00:16:43,681 --> 00:16:50,401
+I wanted to make lighting for places where electricity isn't available.
+
+189
+00:16:50,661 --> 00:16:54,961
+And lighting for those small advertising stands.
+
+190
+00:16:55,661 --> 00:17:04,341
+Putting some generator with grounding out there would be overkill, but a solution like this would actually be pretty decent.
+
+191
+00:17:05,001 --> 00:17:10,701
+But alas, so to speak, I've once again confirmed that this is all a load of nonsense.
+
+192
+00:17:10,781 --> 00:17:14,821
+I mean it — well, nothing good is going to come of it.
+
+193
+00:17:16,601 --> 00:17:18,061
+So that's how it is, folks.
+
+194
+00:17:18,321 --> 00:17:20,621
+So the schematic, here it is.
+
+195
+00:17:21,741 --> 00:17:23,041
+What, am I gonna hide it or something?
+
+196
+00:17:23,081 --> 00:17:24,001
+Here, take a look.
+
+197
+00:17:24,281 --> 00:17:26,241
+The only thing, like I said, is there was a diode here.
+
+198
+00:17:26,341 --> 00:17:29,921
+I put a diode bridge in here instead, so accordingly, these spots here.
+
+199
+00:17:29,921 --> 00:17:32,821
+Well, you know what a diode bridge is.
+
+200
+00:17:32,881 --> 00:17:36,941
+Right here, here, so to speak, AC comes in, and from there on it's all DC.
+
+201
+00:17:38,281 --> 00:17:43,121
+Well, damn, these are basic things, I won't even dwell on them.
+
+202
+00:17:44,781 --> 00:17:45,501
+That's all there is to it.
+
+203
+00:17:45,581 --> 00:17:46,541
+That's how it works.
+
+204
+00:17:46,541 --> 00:17:49,041
+The most important part is this right here.
+
+205
+00:17:49,481 --> 00:17:55,661
+Yeah, by the way, why there's one — right here I've got a protection diode in this spot.
+
+206
+00:17:56,821 --> 00:18:01,881
+Like, well, kind of drawn in, yeah, like this.
+
+207
+00:18:04,481 --> 00:18:07,081
+One-handed, with my left hand, damn, I can't do it.
+
+208
+00:18:07,721 --> 00:18:09,661
+So, you don't actually need to put this diode in.
+
+209
+00:18:10,261 --> 00:18:12,841
+The transistor can handle all these spikes, it's nothing serious.
+
+210
+00:18:12,901 --> 00:18:15,941
+That's only a 7-turn coil's worth of kickback there, yeah.
+
+211
+00:18:16,061 --> 00:18:19,381
+So it's not just that you can skip this diode — you shouldn't put it in at all.
+
+212
+00:18:19,441 --> 00:18:23,421
+I've got it sitting there, but it's not connected, yeah, on this one.
+
+213
+00:18:23,421 --> 00:18:27,981
+So, why a bipolar transistor, why couldn't it be done like this instead?
+
+214
+00:18:28,541 --> 00:18:29,201
+Don't do it that way.
+
+215
+00:18:29,521 --> 00:18:37,521
+The thing is that this diode right here, and the transistor's own diode, they interfere with how this coil operates.
+
+216
+00:18:37,641 --> 00:18:41,141
+There's a reverse current, and it damps this ringing.
+
+217
+00:18:41,541 --> 00:18:46,861
+You need the transistor to be such that it shuts off completely, as if there's nothing at all on this coil.
+
+218
+00:18:47,861 --> 00:18:49,201
+That's the most important point right there.
+
+219
+00:18:50,681 --> 00:18:57,941
+So, I don't know, I honestly don't see the point in messing with this nonsense, I'll be honest.
+
+220
+00:18:57,961 --> 00:19:03,801
+In fact, it's more useful to build this instead, yeah — this internet radio thing turned out really cool.
+
+221
+00:19:06,701 --> 00:19:16,581
+It shows the weather too, it's a little receiver you can take to the kitchen, and you can, basically, charge up this Wi-Fi radio, long story short.
+
+222
+00:19:17,261 --> 00:19:22,581
+This is way more useful than messing around with that other thing.
+
+223
+00:19:23,861 --> 00:19:25,461
+So that's how it is, folks.
+
+224
+00:19:26,521 --> 00:19:27,481
+Well, go for it.
